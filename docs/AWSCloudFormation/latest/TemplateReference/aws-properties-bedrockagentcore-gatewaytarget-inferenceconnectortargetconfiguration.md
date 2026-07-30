@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::BedrockAgentCore::GatewayTarget InferenceConnectorTargetConfiguration
+<a name="aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration"></a>
+
+The configuration for a connector-based inference target. This configuration uses a built-in connector that provides predefined rules for a large language model (LLM) provider.
+
+## Syntax
+<a name="aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-syntax.json"></a>
+
+```
+{
+  "[Source](#cfn-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-source)" : {{InferenceConnectorSource}}
+}
+```
+
+### YAML
+<a name="aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-syntax.yaml"></a>
+
+```
+  [Source](#cfn-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-source): {{
+    InferenceConnectorSource}}
+```
+
+## Properties
+<a name="aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-properties"></a>
+
+`Source`  <a name="cfn-bedrockagentcore-gatewaytarget-inferenceconnectortargetconfiguration-source"></a>
+The source configuration identifying which inference connector to use.
+*Required*: Yes
+*Type*: [InferenceConnectorSource](aws-properties-bedrockagentcore-gatewaytarget-inferenceconnectorsource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

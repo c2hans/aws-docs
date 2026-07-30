@@ -1,0 +1,55 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_SageMaker.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# Amazon SageMaker AI
+<a name="AWS_SageMaker"></a>
+
+**Resource types**
++ [AWS::SageMaker::Action](aws-resource-sagemaker-action.md)
++ [AWS::SageMaker::Algorithm](aws-resource-sagemaker-algorithm.md)
++ [AWS::SageMaker::App](aws-resource-sagemaker-app.md)
++ [AWS::SageMaker::AppImageConfig](aws-resource-sagemaker-appimageconfig.md)
++ [AWS::SageMaker::Cluster](aws-resource-sagemaker-cluster.md)
++ [AWS::SageMaker::CodeRepository](aws-resource-sagemaker-coderepository.md)
++ [AWS::SageMaker::Context](aws-resource-sagemaker-context.md)
++ [AWS::SageMaker::DataQualityJobDefinition](aws-resource-sagemaker-dataqualityjobdefinition.md)
++ [AWS::SageMaker::Device](aws-resource-sagemaker-device.md)
++ [AWS::SageMaker::DeviceFleet](aws-resource-sagemaker-devicefleet.md)
++ [AWS::SageMaker::Domain](aws-resource-sagemaker-domain.md)
++ [AWS::SageMaker::Endpoint](aws-resource-sagemaker-endpoint.md)
++ [AWS::SageMaker::EndpointConfig](aws-resource-sagemaker-endpointconfig.md)
++ [AWS::SageMaker::Experiment](aws-resource-sagemaker-experiment.md)
++ [AWS::SageMaker::ExperimentTrialComponent](aws-resource-sagemaker-experimenttrialcomponent.md)
++ [AWS::SageMaker::FeatureGroup](aws-resource-sagemaker-featuregroup.md)
++ [AWS::SageMaker::Hub](aws-resource-sagemaker-hub.md)
++ [AWS::SageMaker::Image](aws-resource-sagemaker-image.md)
++ [AWS::SageMaker::ImageVersion](aws-resource-sagemaker-imageversion.md)
++ [AWS::SageMaker::InferenceComponent](aws-resource-sagemaker-inferencecomponent.md)
++ [AWS::SageMaker::InferenceExperiment](aws-resource-sagemaker-inferenceexperiment.md)
++ [AWS::SageMaker::MlflowApp](aws-resource-sagemaker-mlflowapp.md)
++ [AWS::SageMaker::MlflowTrackingServer](aws-resource-sagemaker-mlflowtrackingserver.md)
++ [AWS::SageMaker::Model](aws-resource-sagemaker-model.md)
++ [AWS::SageMaker::ModelBiasJobDefinition](aws-resource-sagemaker-modelbiasjobdefinition.md)
++ [AWS::SageMaker::ModelCard](aws-resource-sagemaker-modelcard.md)
++ [AWS::SageMaker::ModelCardExportJob](aws-resource-sagemaker-modelcardexportjob.md)
++ [AWS::SageMaker::ModelExplainabilityJobDefinition](aws-resource-sagemaker-modelexplainabilityjobdefinition.md)
++ [AWS::SageMaker::ModelPackage](aws-resource-sagemaker-modelpackage.md)
++ [AWS::SageMaker::ModelPackageGroup](aws-resource-sagemaker-modelpackagegroup.md)
++ [AWS::SageMaker::ModelQualityJobDefinition](aws-resource-sagemaker-modelqualityjobdefinition.md)
++ [AWS::SageMaker::MonitoringSchedule](aws-resource-sagemaker-monitoringschedule.md)
++ [AWS::SageMaker::MonitoringScheduleAlert](aws-resource-sagemaker-monitoringschedulealert.md)
++ [AWS::SageMaker::NotebookInstance](aws-resource-sagemaker-notebookinstance.md)
++ [AWS::SageMaker::NotebookInstanceLifecycleConfig](aws-resource-sagemaker-notebookinstancelifecycleconfig.md)
++ [AWS::SageMaker::PartnerApp](aws-resource-sagemaker-partnerapp.md)
++ [AWS::SageMaker::Pipeline](aws-resource-sagemaker-pipeline.md)
++ [AWS::SageMaker::ProcessingJob](aws-resource-sagemaker-processingjob.md)
++ [AWS::SageMaker::Project](aws-resource-sagemaker-project.md)
++ [AWS::SageMaker::Space](aws-resource-sagemaker-space.md)
++ [AWS::SageMaker::StudioLifecycleConfig](aws-resource-sagemaker-studiolifecycleconfig.md)
++ [AWS::SageMaker::TransformJob](aws-resource-sagemaker-transformjob.md)
++ [AWS::SageMaker::TrialComponent](aws-resource-sagemaker-trialcomponent.md)
++ [AWS::SageMaker::UserProfile](aws-resource-sagemaker-userprofile.md)
++ [AWS::SageMaker::Workteam](aws-resource-sagemaker-workteam.md)

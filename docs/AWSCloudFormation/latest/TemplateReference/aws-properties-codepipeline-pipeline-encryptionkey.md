@@ -1,0 +1,51 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-codepipeline-pipeline-encryptionkey.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::CodePipeline::Pipeline EncryptionKey
+<a name="aws-properties-codepipeline-pipeline-encryptionkey"></a>
+
+Represents information about the key used to encrypt data in the artifact store, such as an AWS Key Management Service (AWS KMS) key.
+
+`EncryptionKey` is a property of the [ArtifactStore](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codepipeline-pipeline-artifactstore.html) property type.
+
+## Syntax
+<a name="aws-properties-codepipeline-pipeline-encryptionkey-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-codepipeline-pipeline-encryptionkey-syntax.json"></a>
+
+```
+{
+  "[Id](#cfn-codepipeline-pipeline-encryptionkey-id)" : {{String}},
+  "[Type](#cfn-codepipeline-pipeline-encryptionkey-type)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-codepipeline-pipeline-encryptionkey-syntax.yaml"></a>
+
+```
+  [Id](#cfn-codepipeline-pipeline-encryptionkey-id): {{String}}
+  [Type](#cfn-codepipeline-pipeline-encryptionkey-type): {{String}}
+```
+
+## Properties
+<a name="aws-properties-codepipeline-pipeline-encryptionkey-properties"></a>
+
+`Id`  <a name="cfn-codepipeline-pipeline-encryptionkey-id"></a>
+The ID used to identify the key. For an AWS KMS key, you can use the key ID, the key ARN, or the alias ARN.
+Aliases are recognized only in the account that created the AWS KMS key. For cross-account actions, you can only use the key ID or key ARN to identify the key. Cross-account actions involve using the role from the other account (AccountB), so specifying the key ID will use the key from the other account (AccountB).
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Type`  <a name="cfn-codepipeline-pipeline-encryptionkey-type"></a>
+The type of encryption key, such as an AWS KMS key. When creating or updating a pipeline, the value must be set to 'KMS'.
+*Required*: Yes
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

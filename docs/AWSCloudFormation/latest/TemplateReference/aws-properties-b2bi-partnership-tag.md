@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-b2bi-partnership-tag.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::B2BI::Partnership Tag
+<a name="aws-properties-b2bi-partnership-tag"></a>
+
+Specifies the key-value pairs assigned to ARNs that you can use to group and search for resources by type. You can attach this metadata to resources (capabilities, partnerships, and so on) for any purpose.
+
+## Syntax
+<a name="aws-properties-b2bi-partnership-tag-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-b2bi-partnership-tag-syntax.json"></a>
+
+```
+{
+  "[Key](#cfn-b2bi-partnership-tag-key)" : {{String}},
+  "[Value](#cfn-b2bi-partnership-tag-value)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-b2bi-partnership-tag-syntax.yaml"></a>
+
+```
+  [Key](#cfn-b2bi-partnership-tag-key): {{String}}
+  [Value](#cfn-b2bi-partnership-tag-value): {{String}}
+```
+
+## Properties
+<a name="aws-properties-b2bi-partnership-tag-properties"></a>
+
+`Key`  <a name="cfn-b2bi-partnership-tag-key"></a>
+Specifies the name assigned to the tag that you create.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Value`  <a name="cfn-b2bi-partnership-tag-value"></a>
+Contains one or more values that you assigned to the key name that you create.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

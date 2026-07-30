@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-bedrock-datasource-sharepointcrawlerconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Bedrock::DataSource SharePointCrawlerConfiguration
+<a name="aws-properties-bedrock-datasource-sharepointcrawlerconfiguration"></a>
+
+The configuration of the SharePoint content. For example, configuring specific types of SharePoint content.
+
+## Syntax
+<a name="aws-properties-bedrock-datasource-sharepointcrawlerconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-bedrock-datasource-sharepointcrawlerconfiguration-syntax.json"></a>
+
+```
+{
+  "[FilterConfiguration](#cfn-bedrock-datasource-sharepointcrawlerconfiguration-filterconfiguration)" : {{CrawlFilterConfiguration}}
+}
+```
+
+### YAML
+<a name="aws-properties-bedrock-datasource-sharepointcrawlerconfiguration-syntax.yaml"></a>
+
+```
+  [FilterConfiguration](#cfn-bedrock-datasource-sharepointcrawlerconfiguration-filterconfiguration): {{
+    CrawlFilterConfiguration}}
+```
+
+## Properties
+<a name="aws-properties-bedrock-datasource-sharepointcrawlerconfiguration-properties"></a>
+
+`FilterConfiguration`  <a name="cfn-bedrock-datasource-sharepointcrawlerconfiguration-filterconfiguration"></a>
+The configuration of filtering the SharePoint content. For example, configuring regular expression patterns to include or exclude certain content.
+*Required*: No
+*Type*: [CrawlFilterConfiguration](aws-properties-bedrock-datasource-crawlfilterconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

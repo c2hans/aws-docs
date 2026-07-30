@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::ApplicationAutoScaling::ScalingPolicy PredictiveScalingCustomizedLoadMetric
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric"></a>
+
+ The customized load metric specification.
+
+## Syntax
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-syntax.json"></a>
+
+```
+{
+  "[MetricDataQueries](#cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-metricdataqueries)" : {{[ PredictiveScalingMetricDataQuery, ... ]}}
+}
+```
+
+### YAML
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-syntax.yaml"></a>
+
+```
+  [MetricDataQueries](#cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-metricdataqueries): {{
+    - PredictiveScalingMetricDataQuery}}
+```
+
+## Properties
+<a name="aws-properties-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-properties"></a>
+
+`MetricDataQueries`  <a name="cfn-applicationautoscaling-scalingpolicy-predictivescalingcustomizedloadmetric-metricdataqueries"></a>
+Property description not available.
+*Required*: Yes
+*Type*: Array of [PredictiveScalingMetricDataQuery](aws-properties-applicationautoscaling-scalingpolicy-predictivescalingmetricdataquery.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

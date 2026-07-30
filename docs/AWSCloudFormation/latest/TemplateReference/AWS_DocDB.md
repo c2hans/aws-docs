@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_DocDB.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# Amazon DocumentDB (with MongoDB compatibility)
+<a name="AWS_DocDB"></a>
+
+**Resource types**
++ [AWS::DocDB::DBCluster](aws-resource-docdb-dbcluster.md)
++ [AWS::DocDB::DBClusterParameterGroup](aws-resource-docdb-dbclusterparametergroup.md)
++ [AWS::DocDB::DBInstance](aws-resource-docdb-dbinstance.md)
++ [AWS::DocDB::DBSubnetGroup](aws-resource-docdb-dbsubnetgroup.md)
++ [AWS::DocDB::EventSubscription](aws-resource-docdb-eventsubscription.md)
++ [AWS::DocDB::GlobalCluster](aws-resource-docdb-globalcluster.md)

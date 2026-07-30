@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_ResilienceHubV2.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS Resilience Hub V2
+<a name="AWS_ResilienceHubV2"></a>
+
+**Resource types**
++ [AWS::ResilienceHubV2::Policy](aws-resource-resiliencehubv2-policy.md)
++ [AWS::ResilienceHubV2::Service](aws-resource-resiliencehubv2-service.md)
++ [AWS::ResilienceHubV2::ServiceFunction](aws-resource-resiliencehubv2-servicefunction.md)
++ [AWS::ResilienceHubV2::System](aws-resource-resiliencehubv2-system.md)
++ [AWS::ResilienceHubV2::UserJourney](aws-resource-resiliencehubv2-userjourney.md)

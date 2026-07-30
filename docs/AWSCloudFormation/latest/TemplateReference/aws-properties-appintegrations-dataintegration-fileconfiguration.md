@@ -1,0 +1,53 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-appintegrations-dataintegration-fileconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::AppIntegrations::DataIntegration FileConfiguration
+<a name="aws-properties-appintegrations-dataintegration-fileconfiguration"></a>
+
+The configuration for what files should be pulled from the source.
+
+## Syntax
+<a name="aws-properties-appintegrations-dataintegration-fileconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-appintegrations-dataintegration-fileconfiguration-syntax.json"></a>
+
+```
+{
+  "[Filters](#cfn-appintegrations-dataintegration-fileconfiguration-filters)" : {{{{{Key}}: {{Value}}, ...}}},
+  "[Folders](#cfn-appintegrations-dataintegration-fileconfiguration-folders)" : {{[ String, ... ]}}
+}
+```
+
+### YAML
+<a name="aws-properties-appintegrations-dataintegration-fileconfiguration-syntax.yaml"></a>
+
+```
+  [Filters](#cfn-appintegrations-dataintegration-fileconfiguration-filters): {{
+    {{Key}}: {{Value}}}}
+  [Folders](#cfn-appintegrations-dataintegration-fileconfiguration-folders): {{
+    - String}}
+```
+
+## Properties
+<a name="aws-properties-appintegrations-dataintegration-fileconfiguration-properties"></a>
+
+`Filters`  <a name="cfn-appintegrations-dataintegration-fileconfiguration-filters"></a>
+Restrictions for what files should be pulled from the source.
+*Required*: No
+*Type*: Object of Array
+*Pattern*: `^[A-Za-z]`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Folders`  <a name="cfn-appintegrations-dataintegration-fileconfiguration-folders"></a>
+Identifiers for the source folders to pull all files from recursively.
+*Required*: Yes
+*Type*: Array of String
+*Minimum*: `1 | 1`
+*Maximum*: `200 | 10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

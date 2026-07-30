@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_PinpointEmail.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# Amazon Pinpoint Email
+<a name="AWS_PinpointEmail"></a>
+
+**Resource types**
++ [AWS::PinpointEmail::ConfigurationSet](aws-resource-pinpointemail-configurationset.md)
++ [AWS::PinpointEmail::ConfigurationSetEventDestination](aws-resource-pinpointemail-configurationseteventdestination.md)
++ [AWS::PinpointEmail::DedicatedIpPool](aws-resource-pinpointemail-dedicatedippool.md)
++ [AWS::PinpointEmail::Identity](aws-resource-pinpointemail-identity.md)

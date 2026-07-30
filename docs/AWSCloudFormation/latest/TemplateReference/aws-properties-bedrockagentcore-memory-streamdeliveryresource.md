@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-bedrockagentcore-memory-streamdeliveryresource.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::BedrockAgentCore::Memory StreamDeliveryResource
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresource"></a>
+
+Supported stream delivery resource types.
+
+## Syntax
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresource-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresource-syntax.json"></a>
+
+```
+{
+  "[Kinesis](#cfn-bedrockagentcore-memory-streamdeliveryresource-kinesis)" : {{KinesisResource}}
+}
+```
+
+### YAML
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresource-syntax.yaml"></a>
+
+```
+  [Kinesis](#cfn-bedrockagentcore-memory-streamdeliveryresource-kinesis): {{
+    KinesisResource}}
+```
+
+## Properties
+<a name="aws-properties-bedrockagentcore-memory-streamdeliveryresource-properties"></a>
+
+`Kinesis`  <a name="cfn-bedrockagentcore-memory-streamdeliveryresource-kinesis"></a>
+Kinesis Data Stream configuration.
+*Required*: No
+*Type*: [KinesisResource](aws-properties-bedrockagentcore-memory-kinesisresource.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

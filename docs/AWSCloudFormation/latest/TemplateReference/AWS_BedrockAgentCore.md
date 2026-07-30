@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_BedrockAgentCore.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# Bedrock AgentCore
+<a name="AWS_BedrockAgentCore"></a>
+
+**Resource types**
++ [AWS::BedrockAgentCore::ApiKeyCredentialProvider](aws-resource-bedrockagentcore-apikeycredentialprovider.md)
++ [AWS::BedrockAgentCore::Browser](aws-resource-bedrockagentcore-browser.md)
++ [AWS::BedrockAgentCore::BrowserCustom](aws-resource-bedrockagentcore-browsercustom.md)
++ [AWS::BedrockAgentCore::BrowserProfile](aws-resource-bedrockagentcore-browserprofile.md)
++ [AWS::BedrockAgentCore::CodeInterpreter](aws-resource-bedrockagentcore-codeinterpreter.md)
++ [AWS::BedrockAgentCore::CodeInterpreterCustom](aws-resource-bedrockagentcore-codeinterpretercustom.md)
++ [AWS::BedrockAgentCore::ConfigurationBundle](aws-resource-bedrockagentcore-configurationbundle.md)
++ [AWS::BedrockAgentCore::Dataset](aws-resource-bedrockagentcore-dataset.md)
++ [AWS::BedrockAgentCore::Evaluator](aws-resource-bedrockagentcore-evaluator.md)
++ [AWS::BedrockAgentCore::Gateway](aws-resource-bedrockagentcore-gateway.md)
++ [AWS::BedrockAgentCore::GatewayTarget](aws-resource-bedrockagentcore-gatewaytarget.md)
++ [AWS::BedrockAgentCore::Harness](aws-resource-bedrockagentcore-harness.md)
++ [AWS::BedrockAgentCore::Memory](aws-resource-bedrockagentcore-memory.md)
++ [AWS::BedrockAgentCore::OAuth2CredentialProvider](aws-resource-bedrockagentcore-oauth2credentialprovider.md)
++ [AWS::BedrockAgentCore::OnlineEvaluationConfig](aws-resource-bedrockagentcore-onlineevaluationconfig.md)
++ [AWS::BedrockAgentCore::PaymentConnector](aws-resource-bedrockagentcore-paymentconnector.md)
++ [AWS::BedrockAgentCore::PaymentCredentialProvider](aws-resource-bedrockagentcore-paymentcredentialprovider.md)
++ [AWS::BedrockAgentCore::PaymentManager](aws-resource-bedrockagentcore-paymentmanager.md)
++ [AWS::BedrockAgentCore::Policy](aws-resource-bedrockagentcore-policy.md)
++ [AWS::BedrockAgentCore::PolicyEngine](aws-resource-bedrockagentcore-policyengine.md)
++ [AWS::BedrockAgentCore::ResourcePolicy](aws-resource-bedrockagentcore-resourcepolicy.md)
++ [AWS::BedrockAgentCore::Runtime](aws-resource-bedrockagentcore-runtime.md)
++ [AWS::BedrockAgentCore::RuntimeEndpoint](aws-resource-bedrockagentcore-runtimeendpoint.md)
++ [AWS::BedrockAgentCore::TokenVault](aws-resource-bedrockagentcore-tokenvault.md)
++ [AWS::BedrockAgentCore::WorkloadIdentity](aws-resource-bedrockagentcore-workloadidentity.md)

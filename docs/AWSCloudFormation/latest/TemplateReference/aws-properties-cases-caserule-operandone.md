@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-cases-caserule-operandone.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Cases::CaseRule OperandOne
+<a name="aws-properties-cases-caserule-operandone"></a>
+
+Represents the left hand operand in the condition. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
+
+## Syntax
+<a name="aws-properties-cases-caserule-operandone-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-cases-caserule-operandone-syntax.json"></a>
+
+```
+{
+  "[FieldId](#cfn-cases-caserule-operandone-fieldid)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-cases-caserule-operandone-syntax.yaml"></a>
+
+```
+  [FieldId](#cfn-cases-caserule-operandone-fieldid): {{String}}
+```
+
+## Properties
+<a name="aws-properties-cases-caserule-operandone-properties"></a>
+
+`FieldId`  <a name="cfn-cases-caserule-operandone-fieldid"></a>
+The field ID that this operand should take the value of.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `500`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

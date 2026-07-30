@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-billing-billingview-dimensions.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Billing::BillingView Dimensions
+<a name="aws-properties-billing-billingview-dimensions"></a>
+
+ The specific `Dimension` to use for `Expression`.
+
+## Syntax
+<a name="aws-properties-billing-billingview-dimensions-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-billing-billingview-dimensions-syntax.json"></a>
+
+```
+{
+  "[Key](#cfn-billing-billingview-dimensions-key)" : {{String}},
+  "[Values](#cfn-billing-billingview-dimensions-values)" : {{[ String, ... ]}}
+}
+```
+
+### YAML
+<a name="aws-properties-billing-billingview-dimensions-syntax.yaml"></a>
+
+```
+  [Key](#cfn-billing-billingview-dimensions-key): {{String}}
+  [Values](#cfn-billing-billingview-dimensions-values): {{
+    - String}}
+```
+
+## Properties
+<a name="aws-properties-billing-billingview-dimensions-properties"></a>
+
+`Key`  <a name="cfn-billing-billingview-dimensions-key"></a>
+ The key that's associated with the tag.
+*Required*: No
+*Type*: String
+*Allowed values*: `LINKED_ACCOUNT`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Values`  <a name="cfn-billing-billingview-dimensions-values"></a>
+ The metadata that you can use to filter and group your results.
+*Required*: No
+*Type*: Array of String
+*Minimum*: `1`
+*Maximum*: `1024 | 200`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

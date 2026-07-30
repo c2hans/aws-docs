@@ -1,0 +1,43 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-cleanrooms-configuredtable-differentialprivacycolumn.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::CleanRooms::ConfiguredTable DifferentialPrivacyColumn
+<a name="aws-properties-cleanrooms-configuredtable-differentialprivacycolumn"></a>
+
+Specifies the name of the column that contains the unique identifier of your users, whose privacy you want to protect.
+
+## Syntax
+<a name="aws-properties-cleanrooms-configuredtable-differentialprivacycolumn-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-cleanrooms-configuredtable-differentialprivacycolumn-syntax.json"></a>
+
+```
+{
+  "[Name](#cfn-cleanrooms-configuredtable-differentialprivacycolumn-name)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-cleanrooms-configuredtable-differentialprivacycolumn-syntax.yaml"></a>
+
+```
+  [Name](#cfn-cleanrooms-configuredtable-differentialprivacycolumn-name): {{String}}
+```
+
+## Properties
+<a name="aws-properties-cleanrooms-configuredtable-differentialprivacycolumn-properties"></a>
+
+`Name`  <a name="cfn-cleanrooms-configuredtable-differentialprivacycolumn-name"></a>
+The name of the column, such as user\_id, that contains the unique identifier of your users, whose privacy you want to protect. If you want to turn on differential privacy for two or more tables in a collaboration, you must configure the same column as the user identifier column in both analysis rules.
+*Required*: Yes
+*Type*: String
+*Pattern*: `[a-z0-9_](([a-z0-9_ ]+-)*([a-z0-9_ ]+))?`
+*Minimum*: `0`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

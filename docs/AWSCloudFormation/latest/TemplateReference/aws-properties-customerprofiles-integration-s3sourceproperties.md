@@ -1,0 +1,53 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-customerprofiles-integration-s3sourceproperties.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::CustomerProfiles::Integration S3SourceProperties
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties"></a>
+
+The properties that are applied when Amazon S3 is being used as the flow source.
+
+## Syntax
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax.json"></a>
+
+```
+{
+  "[BucketName](#cfn-customerprofiles-integration-s3sourceproperties-bucketname)" : {{String}},
+  "[BucketPrefix](#cfn-customerprofiles-integration-s3sourceproperties-bucketprefix)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-syntax.yaml"></a>
+
+```
+  [BucketName](#cfn-customerprofiles-integration-s3sourceproperties-bucketname): {{String}}
+  [BucketPrefix](#cfn-customerprofiles-integration-s3sourceproperties-bucketprefix): {{String}}
+```
+
+## Properties
+<a name="aws-properties-customerprofiles-integration-s3sourceproperties-properties"></a>
+
+`BucketName`  <a name="cfn-customerprofiles-integration-s3sourceproperties-bucketname"></a>
+The Amazon S3 bucket name where the source files are stored.
+*Required*: Yes
+*Type*: String
+*Pattern*: `\S+`
+*Minimum*: `3`
+*Maximum*: `63`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`BucketPrefix`  <a name="cfn-customerprofiles-integration-s3sourceproperties-bucketprefix"></a>
+The object key for the Amazon S3 bucket in which the source files are stored.
+*Required*: No
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

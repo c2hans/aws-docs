@@ -1,0 +1,72 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-bedrock-flow-flownodeinput.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Bedrock::Flow FlowNodeInput
+<a name="aws-properties-bedrock-flow-flownodeinput"></a>
+
+Contains configurations for an input in an Amazon Bedrock Flows node.
+
+## Syntax
+<a name="aws-properties-bedrock-flow-flownodeinput-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-bedrock-flow-flownodeinput-syntax.json"></a>
+
+```
+{
+  "[Category](#cfn-bedrock-flow-flownodeinput-category)" : {{String}},
+  "[Expression](#cfn-bedrock-flow-flownodeinput-expression)" : {{String}},
+  "[Name](#cfn-bedrock-flow-flownodeinput-name)" : {{String}},
+  "[Type](#cfn-bedrock-flow-flownodeinput-type)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-bedrock-flow-flownodeinput-syntax.yaml"></a>
+
+```
+  [Category](#cfn-bedrock-flow-flownodeinput-category): {{String}}
+  [Expression](#cfn-bedrock-flow-flownodeinput-expression): {{String}}
+  [Name](#cfn-bedrock-flow-flownodeinput-name): {{String}}
+  [Type](#cfn-bedrock-flow-flownodeinput-type): {{String}}
+```
+
+## Properties
+<a name="aws-properties-bedrock-flow-flownodeinput-properties"></a>
+
+`Category`  <a name="cfn-bedrock-flow-flownodeinput-category"></a>
+Specifies how input data flows between iterations in a DoWhile loop.
++ `LoopCondition` - Controls whether the loop continues by evaluating condition expressions against the input data. Use this category to define the condition that determines if the loop should continue.
++ `ReturnValueToLoopStart` - Defines data to pass back to the start of the loop's next iteration. Use this category for variables that you want to update for each loop iteration.
++ `ExitLoop` - Defines the value that's available once the loop ends. Use this category to expose loop results to nodes outside the loop.
+*Required*: No
+*Type*: String
+*Allowed values*: `LoopCondition | ReturnValueToLoopStart | ExitLoop`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Expression`  <a name="cfn-bedrock-flow-flownodeinput-expression"></a>
+An expression that formats the input for the node. For an explanation of how to create expressions, see [Expressions in Prompt flows in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/flows-expressions.html).
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Name`  <a name="cfn-bedrock-flow-flownodeinput-name"></a>
+Specifies a name for the input that you can reference.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^[a-zA-Z]([_]?[0-9a-zA-Z]){1,50}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Type`  <a name="cfn-bedrock-flow-flownodeinput-type"></a>
+Specifies the data type of the input. If the input doesn't match this type at runtime, a validation error will be thrown.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `String | Number | Boolean | Object | Array`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
