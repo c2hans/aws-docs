@@ -1,0 +1,92 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html
+---
+
+# AWS NVMe Windows driver version history
+<a name="nvme-driver-version-history"></a>
+
+The following table shows which AWS NVMe drivers run on each version of Windows Server on Amazon EC2.
+
+| Windows Server version | AWS NVMe driver version |
+| --- | --- |
+| Windows Server 2025 | latest version |
+| Windows Server 2022 | latest version |
+| Windows Server 2019 | latest version |
+| Windows Server 2016 | latest version |
+| Windows Server 2012 R2 | version 1.5.1 and earlier |
+| Windows Server 2012  | version 1.5.1 and earlier |
+| Windows Server 2008 R2 | version 1.3.2 and earlier |
+| Windows Server 2008 | version 1.3.2 and earlier |
+
+The following table describes the released versions of the AWS NVMe driver.
+
+| Package version | Driver version | Details | Release date |
+| --- | --- | --- | --- |
+|  [1.8.2](https://s3.amazonaws.com/ec2-windows-drivers-downloads/NVMe/1.8.2/AWSNVMe.zip)  | 1.8.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html)  | June 15, 2026 |
+|  [1.8.1](https://s3.amazonaws.com/ec2-windows-drivers-downloads/NVMe/1.8.1/AWSNVMe.zip)  | 1.8.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html)  | February 24, 2026 |
+| 1.8.0 | 1.8.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html)  | January 16, 2026 |
+|  [1.7.0](https://s3.amazonaws.com/ec2-windows-drivers-downloads/NVMe/1.7.0/AWSNVMe.zip)  | 1.7.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html)  | September 17, 2025 |
+|  [1.6.0](https://s3.amazonaws.com/ec2-windows-drivers-downloads/NVMe/1.6.0/AWSNVMe.zip)  | 1.6.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html)  | October 25, 2024 |
+|  [1.5.1](https://s3.amazonaws.com/ec2-windows-drivers-downloads/NVMe/1.5.1/AWSNVMe.zip)  | 1.5.0 | Fixed the install script to create a folder for the `ebsnvme-id` tool if it is not present. | November 17, 2023 |
+| 1.5.0 | 1.5.0 | Added support for Small Computer System Interface (SCSI) persistent reservations for instances running Windows Server 2016 and later. The ebsnvme-id tool (`ebsnvme-id.exe`) is now installed by default. | August 31, 2023 |
+| 1.4.2 | 1.4.2 | Fixed a bug where the AWS NVMe driver did not support instance store volumes on D3 instances. | March 16, 2023 |
+| 1.4.1 | 1.4.1 | Reports Namespace Preferred Write Granularity (NPGW) for EBS volumes that support this optional NVMe feature. For more information, see section 8.25, "Improving Performance through I/O Size and Alignment Adherence," in the [NVMe Base Specification, version 1.4](https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4b-2020.09.21-Ratified.pdf). | May 20, 2022 |
+| 1.4.0 | 1.4.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/nvme-driver-version-history.html)  | November 23, 2021 |
+|  [1.3.2](https://s3.amazonaws.com/ec2-windows-drivers-downloads/NVMe/1.3.2/AWSNVMe.zip)  | 1.3.2 | Fixed issue with modifying EBS volumes actively processing IO, which may result in data corruption. Customers who do not modify online EBS volumes (for example, resizing or changing type) are not impacted.<br />This is the last version that can run on Windows Server 2008 and 2008 R2. This version is available for download but no longer supported. Windows Server 2008 and 2008 R2 has reached end-of-life, and is no longer supported by Microsoft. | September 10, 2019 |
+| 1.3.1 | 1.3.1 | Reliability Improvements. | May 21, 2019 |
+| 1.3.0 | 1.3.0 | Device optimization improvements. | August 31, 2018 |
+| 1.2.0 | 1.2.0 | Performance and reliability improvements for AWS NVMe devices on all supported instances, including bare metal instances. | June 13, 2018 |
+| >1.0.0 | >1.0.0 | AWS NVMe driver for supported instance types running Windows Server. | February 12, 2018 |
+
+## Subscribe to notifications
+<a name="nvme-drivers-subscribe-notifications"></a>
+
+Amazon SNS can notify you when new versions of EC2 Windows Drivers are released. Use the following procedure to subscribe to these notifications.
+
+**To subscribe to EC2 notifications from the console**
+
+1. Open the Amazon SNS console at [https://console.aws.amazon.com/sns/v3/home](https://console.aws.amazon.com/sns/v3/home).
+
+1. In the navigation bar, change the Region to **US East (N. Virginia)**, if necessary. You must select this Region because the SNS notifications that you are subscribing to are in this Region.
+
+1. In the navigation pane, choose **Subscriptions**.
+
+1. Choose **Create subscription**.
+
+1. In the **Create subscription** dialog box, do the following:
+
+   1. For **TopicARN**, copy the following Amazon Resource Name (ARN):
+
+      arn:aws:sns:us-east-1:801119661308:ec2-windows-drivers
+
+   1. For **Protocol**, choose `Email`.
+
+   1. For **Endpoint**, type an email address that you can use to receive the notifications.
+
+   1. Choose **Create subscription**.
+
+1. You'll receive a confirmation email. Open the email and follow the directions to complete your subscription.
+
+Whenever new EC2 Windows drivers are released, we send notifications to subscribers. If you no longer want to receive these notifications, use the following procedure to unsubscribe.
+
+**To unsubscribe from Amazon EC2 Windows driver notification**
+
+1. Open the Amazon SNS console at [https://console.aws.amazon.com/sns/v3/home](https://console.aws.amazon.com/sns/v3/home).
+
+1. In the navigation pane, choose **Subscriptions**.
+
+1. Select the checkbox for the subscription and then choose **Actions**, **Delete subscriptions**. When prompted for confirmation, choose **Delete**.
+
+**To subscribe to EC2 notifications using the AWS CLI**
+To subscribe to EC2 notifications with the AWS CLI, use the following command.
+
+```
+aws sns subscribe --topic-arn {{arn:aws:sns:us-east-1:801119661308:ec2-windows-drivers}} --protocol {{email}} --notification-endpoint {{YourUserName@YourDomainName.ext}}
+```
+
+**To subscribe to EC2 notifications using AWS Tools for Windows PowerShell**
+To subscribe to EC2 notifications with AWS Tools for Windows PowerShell, use the following command.
+
+```
+Connect-SNSNotification -TopicArn {{'arn:aws:sns:us-east-1:801119661308:ec2-windows-drivers'}} -Protocol {{email}} -Region {{us-east-1}} -Endpoint {{'YourUserName@YourDomainName.ext'}}
+```

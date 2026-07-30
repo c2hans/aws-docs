@@ -1,0 +1,73 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html
+---
+
+# EC2Launch version history
+<a name="ec2launch-version-details"></a>
+
+To download and install the latest version of EC2Launch, see [Install the latest version of EC2Launch](ec2launch-download.md).
+
+The following table describes the released versions of EC2Launch.
+
+| Version | Details | Release date |
+| --- | --- | --- |
+| 1.4.299 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 3 March 2026 |
+| 1.4.183 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 4 February 2026 |
+| 1.4.6 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 13 October 2025 |
+| 1.3.2005119 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 11 February 2025 |
+| 1.3.2005065 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 22 October 2024 |
+| 1.3.2005008 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 6 August 2024 |
+| 1.3.2004959 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 2 July 2024 |
+| 1.3.2004891 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 31 May 2024 |
+| 1.3.2004617 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 15 January 2024 |
+| 1.3.2004592 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)For more information about access permissions and user account permissions of EC2Launch directories, see [EC2Launch directory structure](ec2launch.md#ec2launch-directories). | 2 January 2024 |
+| 1.3.2004491 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 9 November 2023 |
+| 1.3.2004462 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 18 October 2023 |
+| 1.3.2004438 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 4 October 2023 |
+| 1.3.2004256 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 7 July 2023 |
+| 1.3.2004052 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 8 March 2023 |
+| 1.3.2003975 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 24 December 2022 |
+| 1.3.2003961 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 6 December 2022 |
+| 1.3.2003923 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 9 November 2022 |
+| 1.3.2003919  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 8 November 2022 |
+| 1.3.2003857 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 3 October 2022 |
+| 1.3.2003824 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 30 August 2022 |
+| 1.3.2003691 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 21 June 2022 |
+| 1.3.2003639 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 10 May 2022 |
+| 1.3.2003498 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 31 January 2022 |
+| 1.3.2003411 | Changed password generation logic to exclude passwords with low complexity. | 04 August 2021 |
+| 1.3.2003364 | Updated Install-EgpuManager with IMDSv2 support. | 07 June 2021 |
+| 1.3.2003312 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 04 May 2021 |
+| 1.3.2003284 | Improved permission model by updating location for storing user data to LocalAppData. | 23 March 2021 |
+| 1.3.2003236 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html) | 11 February 2021 |
+| 1.3.2003210 | Localization fix for install.ps1. | 7 January 2021 |
+| 1.3.2003205 | Security fix for install.ps1 to update permissions on %ProgramData%AmazonEC2-WindowsLaunchModuleScripts directory. | 28 December 2020 |
+| 1.3.2003189 | Added w32tm resync after adding routes. | 4 December 2020 |
+| 1.3.2003155 | Updated instance type information. | 25 August 2020 |
+| 1.3.2003150 | Added OsCurrentBuild and OsReleaseId to console output . | 22 April 2020 |
+| 1.3.2003040 | Fixed IMDS version 1 fallback logic. | 7 April 2020 |
+| 1.3.2002730 | Added support for IMDS V2. | 3 March 2020 |
+| 1.3.2002240 | Fixed minor issues.  | 31 October 2019 |
+| 1.3.2001660 | Fixed automatic login issue for users without password after first time executing Sysprep.  | 2 July 2019 |
+| 1.3.2001360 | Fixed minor issues.  | 27 March 2019 |
+| 1.3.2001220 | All PowerShell scripts signed.  | 28 February 2019 |
+| 1.3.2001200 | Fixed issue with InitializeDisks.ps1 where running the script on a node in a Windows Server Failover Cluster would format drives on remote nodes whose drive letter matched the local drive letter.  | 27 February 2019 |
+| 1.3.2001160 | Fixed missing wallpaper in Windows 2019. | 22 February 2019 |
+| 1.3.2001040 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 21 January 2019 |
+| 1.3.2000930 | Fix for adding routes to metadata on ipv6-enabled ENIs.  | 2 January 2019 |
+| 1.3.2000760 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 5 December 2018 |
+| 1.3.2000630 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 9 November 2018 |
+| 1.3.2000430.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 19 September 2018 |
+| 1.3.200039.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  | 15 August 2018 |
+| 1.3.2000080 | Fixed minor issues. |  |
+| 1.3.610 | Fixed issue with redirecting output and errors to files from user data. |  |
+| 1.3.590 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  |  |
+| 1.3.580 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  |  |
+| 1.3.550 | Added a `-NoShutdown` option to enable Sysprep with no shutdown. |  |
+| 1.3.540 | Fixed minor issues. |  |
+| 1.3.530 | Fixed minor issues. |  |
+| 1.3.521 | Fixed minor issues. |  |
+| 1.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  |  |
+| 1.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  |  |
+| 1.1.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-version-details.html)  |  |
+| 1.1.1 | Initial release. |  |

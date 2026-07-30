@@ -1,0 +1,145 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-type-boot-mode.html
+---
+
+# Determine the supported boot modes of an EC2 instance type
+<a name="instance-type-boot-mode"></a>
+
+You can determine the supported boot modes of an instance type.
+
+The Amazon EC2 console does not display the supported boot modes of an instance type.
+
+------
+#### [ AWS CLI ]
+
+Use the [https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command to determine the supported boot modes of an instance type. The `--query` parameter filters the output to return only the supported boot modes.
+
+The following example shows that the specified instance type supports both UEFI and Legacy BIOS boot modes.
+
+```
+aws ec2 describe-instance-types \
+    --instance-types {{m5.2xlarge}} \
+    --query "InstanceTypes[*].SupportedBootModes"
+```
+
+The following is example output.
+
+```
+[
+    [
+        "legacy-bios",
+        "uefi"
+    ]
+]
+```
+
+The following example shows that `t2.xlarge` supports only Legacy BIOS.
+
+```
+aws ec2 describe-instance-types \
+    --instance-types t2.xlarge \
+    --query "InstanceTypes[*].SupportedBootModes"
+```
+
+The following is example output.
+
+```
+[
+    [
+        "legacy-bios"
+    ]
+]
+```
+
+------
+#### [ PowerShell ]
+
+Use the [https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet to determine the supported boot modes of an instance type.
+
+The following example shows that `m5.2xlarge` supports both UEFI and Legacy BIOS boot modes.
+
+```
+Get-EC2InstanceType -InstanceType m5.2xlarge | Format-List InstanceType, SupportedBootModes
+```
+
+The following is example output.
+
+```
+InstanceType       : m5.2xlarge
+SupportedBootModes : {legacy-bios, uefi}
+```
+
+The following example shows that `t2.xlarge` supports only Legacy BIOS.
+
+```
+Get-EC2InstanceType -InstanceType t2.xlarge | Format-List InstanceType, SupportedBootModes
+```
+
+The following is example output.
+
+```
+InstanceType       : t2.xlarge
+SupportedBootModes : {legacy-bios}
+```
+
+------
+
+**To determine the instance types that support UEFI**
+You can determine the instance types that support UEFI. The Amazon EC2 console does not display the UEFI support of an instance type.
+
+------
+#### [ AWS CLI ]
+
+The available instance types vary by AWS Region. To see the available instance types that support UEFI in a Region, use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command. Include the `--filters` parameter to scope the results to the instance types that support UEFI and the `--query` parameter to scope the output to the value of `InstanceType`.
+
+```
+aws ec2 describe-instance-types \
+    --filters Name=supported-boot-mode,Values=uefi \
+    --query "InstanceTypes[*].[InstanceType]" \
+    --output text | sort
+```
+
+------
+#### [ PowerShell ]
+
+The available instance types vary by AWS Region. To see the available instance types that support UEFI in a Region, use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet.
+
+```
+Get-EC2InstanceType -Filter @{Name="supported-boot-mode"; Values="uefi"} |
+	Sort-Object @{E={$_.ProcessorInfo.SupportedArchitectures}}, InstanceType |
+	Format-Table InstanceType, SupportedBootModes, `
+      @{Name="SupportedArchitectures"; E={$_.ProcessorInfo.SupportedArchitectures}}
+```
+
+------
+
+**To determine the instance types that support UEFI Secure Boot and persist non-volatile variables**
+Bare metal instances do not support UEFI Secure Boot and non-volatile variables, so these examples exclude them from the output. For information about UEFI Secure Boot, see [UEFI Secure Boot for Amazon EC2 instances](uefi-secure-boot.md).
+
+------
+#### [ AWS CLI ]
+
+Use the [describe-instance-types](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-types.html) command, and exclude the bare metal instances from the output.
+
+```
+aws ec2 describe-instance-types \
+    --filters Name=supported-boot-mode,Values=uefi Name=bare-metal,Values=false \
+    --query "InstanceTypes[*].[InstanceType]" \
+    --output text | sort
+```
+
+------
+#### [ PowerShell ]
+
+Use the [Get-EC2InstanceType](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceType.html) cmdlet, and exclude the bare metal instances from the output.
+
+```
+Get-EC2InstanceType -Filter `
+      @{Name="supported-boot-mode"; Values="uefi"}, `
+      @{Name="bare-metal"; Values="false"} |
+	Sort-Object @{E={$_.ProcessorInfo.SupportedArchitectures}}, InstanceType |
+	Format-Table InstanceType, SupportedBootModes, `
+      @{Name="SupportedArchitectures"; E={$_.ProcessorInfo.SupportedArchitectures}}
+```
+
+------

@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/fleet-tutorials.html
+---
+
+# Tutorials for EC2 Fleet
+<a name="fleet-tutorials"></a>
+
+There are different ways to configure an EC2 Fleet. The configuration you choose depends on your specific use case.
+
+The following tutorials cover some of the possible use cases and provide the tasks required to implement them.
+
+| Use case | Link to tutorial |
+| --- | --- |
+| **Use instance weighting to manage the availability and performance of your EC2 Fleet.**<br />With instance weighting, you assign a weight to each instance type in your EC2 Fleet to represent their compute capacity and performance relative to each other. Based on the weights, the fleet can use any combination of the specified instance types, as long as it can fulfil the desired target capacity. | [Tutorial: Configure EC2 Fleet to use instance weighting](ec2-fleet-instance-weighting-walkthrough.md) |
+| **Use On-Demand capacity to ensure availability during peak periods, but benefit from additional Spot capacity at a lower cost.**<br />Configure your EC2 Fleet to use On-Demand Instances as the primary capacity to ensure available capacity during peak periods. In addition, allocate some capacity to Spot Instances to benefit from discounted pricing, while keeping in mind that Spot Instances can be interrupted if Amazon EC2 needs the capacity back. | [Tutorial: Configure EC2 Fleet to use On-Demand Instances as the primary capacity](ec2-fleet-on-demand-walkthrough.md) |
+| **Use Capacity Reservations to reserve compute capacity for your On-Demand Instances.**<br />Configure your EC2 Fleet to use `targeted` Capacity Reservations first when launching On-Demand Instances. If you have strict capacity requirements, and are running business-critical workloads that require a certain level of long or short-term capacity assurance, we recommend that you create a Capacity Reservation to ensure that you always have access to Amazon EC2 capacity when you need it, for as long as you need it. | [Tutorial: Configure EC2 Fleet to launch On-Demand Instances using targeted Capacity Reservations](ec2-fleet-launch-on-demand-instances-using-targeted-capacity-reservations-walkthrough.md) |
+| **Use Capacity Blocks to reserve highly sought-after GPU instances for your ML workloads.**<br />Configure your EC2 Fleet to launch instances into Capacity Blocks. | [Tutorial: Configure your EC2 Fleet to launch instances into Capacity Blocks](ec2-fleet-launch-instances-capacity-blocks-walkthrough.md) |
+| **Use Interruptible Capacity Reservations to temporarily repurpose idle capacity across your AWS Organization and save costs.**<br />Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations, which represent spare capacity within your AWS organization. Capacity owners can reclaim the capacity at any time. Once reclaimed, EC2 terminates the instances after a 2-minute notice. | [Tutorial: Configure your EC2 Fleet to launch instances into Interruptible Capacity Reservations](ec2-fleet-launch-instances-interruptible-cr-walkthrough.md) |

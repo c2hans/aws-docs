@@ -1,0 +1,266 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-ipv6-addresses.html
+---
+
+# Manage the IPv6 addresses for your EC2 instances
+<a name="working-with-ipv6-addresses"></a>
+
+If your VPC and subnet have IPv6 CIDR blocks associated with them, you can assign an IPv6 address to your instance during or after launch. You can access the IPv6 addresses for your instances in the console on either the **Instances** page or the **Network Interfaces** page. The following tasks configure IP addresses for your instances. To configure IP addresses for your network interfaces instead, see [Manage the IP addresses for your network interface](managing-network-interface-ip-addresses.md).
+
+**Topics**
++ [Assign an IPv6 address to an instance](#assign-ipv6-address)
++ [View the IPv6 addresses for an instance](#view-ipv6-addresses)
++ [View IPv6 addresses using instance metadata](#view-ipv6-addresses-imds)
++ [Unassign an IPv6 address from an instance](#unassign-ipv6-address)
+
+## Assign an IPv6 address to an instance
+<a name="assign-ipv6-address"></a>
+
+You can specify an IPv6 address from the IPv6 address range of the subnet, or let Amazon EC2 choose one for you. This address is assigned to the primary network interface. Note that the following instance types do not support IPv6 addresses: C1, M1, M2, M3, and T1.
+
+------
+#### [ Console ]
+
+**To assign an IPv6 address at launch**
+Follow the procedure to [launch an instance](ec2-launch-instance-wizard.md). When you configure [Network Settings](ec2-instance-launch-parameters.md#liw-network-settings), choose the option to **Auto-assign IPv6 IP**. If you don't see this option, the selected subnet does not have an associated IPv6 CIDR block.
+
+**To assign an IPv6 address after launch**
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, choose **Instances**.
+
+1. Select your instance, and choose **Actions**, **Networking**, **Manage IP addresses**.
+
+1. Expand the network interface. Under **IPv6 addresses**, choose **Assign new IP address**.
+
+1. Enter an IPv6 address from the range of the subnet, or leave the field blank to let Amazon EC2 choose the IPv6 address for you. If you don't see this option, the instance subnet does not have an associated IPv6 CIDR block.
+
+1. Choose **Save**.
+
+------
+#### [ AWS CLI ]
+
+**To assign an IPv6 address at launch**
+Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command with the `--ipv6-addresses` option. The following example assigns two IPv6 addresses.
+
+```
+--ipv6-addresses Ipv6Address={{2001:db8::1234:5678:1.2.3.4}} Ipv6Address={{2001:db8::1234:5678:5.6.7.8}}
+```
+
+To let Amazon EC2 choose the IPv6 addresses, use the `--ipv6-address-count` option instead. The following example assigns two IPv6 addresses.
+
+```
+--ipv6-address-count 2
+```
+
+**To assign an IPv6 address after launch**
+Use the [assign-ipv6-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/assign-ipv6-addresses.html) command. The following example assigns two IPv6 addresses.
+
+```
+aws ec2 assign-ipv6-addresses \
+    --network-interface-id {{eni-1234567890abcdef0}} \
+    --ipv6-addresses {{2001:db8::1234:5678:1.2.3.4}} {{2001:db8::1234:5678:5.6.7.8}}
+```
+
+To let Amazon EC2 choose the IPv6 addresses, use the `--ipv6-address-count` option instead. The following example assigns two IPv6 addresses.
+
+```
+aws ec2 assign-ipv6-addresses \
+    --network-interface-id {{eni-1234567890abcdef0}} \
+    --ipv6-address-count 2
+```
+
+------
+#### [ PowerShell ]
+
+**To assign an IPv6 address at launch**
+Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) cmdlet with the `-Ipv6Address` parameter. The following example assigns two IPv6 addresses.
+
+```
+-Ipv6Address $ipv6addr1,$ipv6addr2
+```
+
+Define the IPv6 addresses as follows.
+
+```
+$ipv6addr1 = New-Object Amazon.EC2.Model.InstanceIpv6Address
+$ipv6addr1.Ipv6Address = "{{2001:db8::1234:5678:1.2.3.4}}"
+$ipv6addr2 = New-Object Amazon.EC2.Model.InstanceIpv6Address
+$ipv6addr2.Ipv6Address = "{{2001:db8::1234:5678:5.6.7.8}}"
+```
+
+To let Amazon EC2 choose the IPv6 addresses, use the `-Ipv6AddressCount` parameter instead. The following example assigns two IPv6 addresses.
+
+```
+-Ipv6AddressCount 2
+```
+
+**To assign an IPv6 address after launch**
+Use the [Register-EC2Ipv6AddressList](https://docs.aws.amazon.com/powershell/latest/reference/items/Register-EC2Ipv6AddressList.html) cmdlet. The following example assigns two IPv6 addresses.
+
+```
+Register-EC2Ipv6AddressList `
+    -NetworkInterfaceId {{eni-1234567890abcdef0}} `
+    -Ipv6Address "{{2001:db8::1234:5678:1.2.3.4}}","{{2001:db8::1234:5678:5.6.7.8}}"
+```
+
+To let Amazon EC2 choose the IPv6 addresses, use the `-Ipv6AddressCount` parameter instead. The following example assigns two IPv6 addresses.
+
+```
+Register-EC2Ipv6AddressList `
+    -NetworkInterfaceId {{eni-1234567890abcdef0}} `
+    -Ipv6AddressCount 2
+```
+
+------
+
+## View the IPv6 addresses for an instance
+<a name="view-ipv6-addresses"></a>
+
+You can view the IPv6 addresses for your instances.
+
+------
+#### [ Console ]
+
+**To view the IPv6 addresses for an instance**
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, choose **Instances**.
+
+1. Select the instance.
+
+1. On the **Networking** tab, locate **IPv6 addresses**.
+
+------
+#### [ AWS CLI ]
+
+**To view the IPv6 address for an instance**
+Use the [describe-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html) command.
+
+```
+aws ec2 describe-instances \
+    --instance-ids {{i-1234567890abcdef0}} \
+    --query "Reservations[*].Instances[].Ipv6Address" \
+    --output text
+```
+
+The following is example output.
+
+```
+2001:db8::1234:5678:1.2.3.4
+```
+
+------
+#### [ PowerShell ]
+
+**To view the IPv6 address for an instance**
+Use the [Get-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2Instance.html) cmdlet.
+
+```
+(Get-EC2Instance `
+    -InstanceId {{i-1234567890abcdef0}}).Instances.Ipv6Address
+```
+
+The following is example output.
+
+```
+2001:db8::1234:5678:1.2.3.4
+```
+
+------
+
+## View IPv6 addresses using instance metadata
+<a name="view-ipv6-addresses-imds"></a>
+
+After you connect to your instance, you can retrieve the IPv6 addresses using instance metadata. First, you must get the MAC address of the instance from `http://169.254.169.254/latest/meta-data/network/interfaces/macs/`.
+
+------
+#### [ IMDSv2 ]
+
+**Linux**
+Run the following command from your Linux instance.
+
+```
+TOKEN=`curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600"` \
+&& curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
+```
+
+**Windows**
+Run the following cmdlets from your Windows instance.
+
+```
+[string]$token = Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token-ttl-seconds" = "21600"} `
+    -Method PUT -Uri http://169.254.169.254/latest/api/token
+```
+
+```
+Invoke-RestMethod -Headers @{"X-aws-ec2-metadata-token" = $token} `
+    -Method GET -Uri http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
+```
+
+------
+#### [ IMDSv1 ]
+
+**Linux**
+Run the following command from your Linux instance.
+
+```
+curl http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
+```
+
+**Windows**
+Run the following cmdlet from your Windows instance.
+
+```
+Invoke-RestMethod -Uri http://169.254.169.254/latest/meta-data/network/interfaces/macs/{{mac-address}}/ipv6s
+```
+
+------
+
+## Unassign an IPv6 address from an instance
+<a name="unassign-ipv6-address"></a>
+
+You can unassign an IPv6 address from an instance at any time.
+
+------
+#### [ Console ]
+
+**To unassign an IPv6 address from an instance**
+
+1. Open the Amazon EC2 console at [https://console.aws.amazon.com/ec2/](https://console.aws.amazon.com/ec2/).
+
+1. In the navigation pane, choose **Instances**.
+
+1. Select your instance, and choose **Actions**, **Networking**, **Manage IP addresses**.
+
+1. Expand the network interface. Under **IPv6 addresses**, choose **Unassign** next to the IPv6 address.
+
+1. Choose **Save**.
+
+------
+#### [ AWS CLI ]
+
+**To unassign an IPv6 address from an instance**
+Use the [unassign-ipv6-addresses](https://docs.aws.amazon.com/cli/latest/reference/ec2/unassign-ipv6-addresses.html) command.
+
+```
+aws ec2 unassign-ipv6-addresses \
+    --network-interface-id {{eni-1234567890abcdef0}} \
+    --ipv6-addresses {{2001:db8::1234:5678:1.2.3.4}}
+```
+
+------
+#### [ PowerShell ]
+
+**To unassign an IPv6 address from an instance**
+Use the [Unregister-EC2Ipv6AddressList](https://docs.aws.amazon.com/powershell/latest/reference/items/Unregister-EC2Ipv6AddressList.html) cmdlet.
+
+```
+Unregister-EC2Ipv6AddressList `
+    -NetworkInterfaceId {{eni-1234567890abcdef0}} `
+    -Ipv6Address {{2001:db8::1234:5678:1.2.3.4}}
+```
+
+------

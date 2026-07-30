@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/which-fleet-method-to-use.html
+---
+
+# Which is the best fleet method to use?
+<a name="which-fleet-method-to-use"></a>
+
+As a general best practice, we recommend launching fleets of Spot and On-Demand Instances with Amazon EC2 Auto Scaling because it provides additional features you can use to manage your fleet. The list of additional features includes automatic health check replacements for both Spot and On-Demand Instances, application-based health checks, and an integration with Elastic Load Balancing to ensure an even distribution of application traffic to your healthy instances. You can also use Auto Scaling groups when you use AWS services such as Amazon ECS, Amazon EKS (self-managed node groups), and Amazon VPC Lattice. For more information, see the [Amazon EC2 Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/ec2/userguide/).
+
+If you can't use Amazon EC2 Auto Scaling, then you might consider using EC2 Fleet or Spot Fleet. EC2 Fleet and Spot Fleet offer the same core functionality. However, EC2 Fleet is only available using a command line and does not provide console support. Spot Fleet provides console support, but uses a legacy API with no planned investment.
+
+Use the following table to determine which fleet method to use.
+
+****
+
+| Fleet method | When to use? | Use case |
+| --- | --- | --- |
+| [Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/which-fleet-method-to-use.html)  | Create an Auto Scaling group that manages the lifecycle of your instances while maintaining the desired number of instances. Supports horizontal scaling (adding more instances) between specified minimum and maximum limits. |
+| [EC2 Fleet](manage-ec2-fleet.md) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/which-fleet-method-to-use.html)  | Create an `instant` fleet of both On-Demand Instances and Spot Instances in a single operation, with multiple launch specifications that vary by instance type, AMI, Availability Zone, or subnet. The Spot Instance allocation strategy defaults to `lowest-price` per unit, but we recommend changing it to `price-capacity-optimized`. |
+| [Spot Fleet](work-with-spot-fleets.md) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/which-fleet-method-to-use.html)  | Use Spot Fleet only if you need console support for a use case for when you would use EC2 Fleet. |
