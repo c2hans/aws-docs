@@ -1,0 +1,51 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-aps-scraper-scraperloggingconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::APS::Scraper ScraperLoggingConfiguration
+<a name="aws-properties-aps-scraper-scraperloggingconfiguration"></a>
+
+<a name="aws-properties-aps-scraper-scraperloggingconfiguration-description"></a>The `ScraperLoggingConfiguration` property type specifies Property description not available. for an [AWS::APS::Scraper](aws-resource-aps-scraper.md).
+
+## Syntax
+<a name="aws-properties-aps-scraper-scraperloggingconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-aps-scraper-scraperloggingconfiguration-syntax.json"></a>
+
+```
+{
+  "[LoggingDestination](#cfn-aps-scraper-scraperloggingconfiguration-loggingdestination)" : {{ScraperLoggingDestination}},
+  "[ScraperComponents](#cfn-aps-scraper-scraperloggingconfiguration-scrapercomponents)" : {{[ ScraperComponent, ... ]}}
+}
+```
+
+### YAML
+<a name="aws-properties-aps-scraper-scraperloggingconfiguration-syntax.yaml"></a>
+
+```
+  [LoggingDestination](#cfn-aps-scraper-scraperloggingconfiguration-loggingdestination): {{
+    ScraperLoggingDestination}}
+  [ScraperComponents](#cfn-aps-scraper-scraperloggingconfiguration-scrapercomponents): {{
+    - ScraperComponent}}
+```
+
+## Properties
+<a name="aws-properties-aps-scraper-scraperloggingconfiguration-properties"></a>
+
+`LoggingDestination`  <a name="cfn-aps-scraper-scraperloggingconfiguration-loggingdestination"></a>
+Property description not available.
+*Required*: Yes
+*Type*: [ScraperLoggingDestination](aws-properties-aps-scraper-scraperloggingdestination.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ScraperComponents`  <a name="cfn-aps-scraper-scraperloggingconfiguration-scrapercomponents"></a>
+Property description not available.
+*Required*: Yes
+*Type*: Array of [ScraperComponent](aws-properties-aps-scraper-scrapercomponent.md)
+*Minimum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
