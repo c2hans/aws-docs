@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-post-training-bias-metric-dppl.html
+---
+
+# Difference in Positive Proportions in Predicted Labels (DPPL)
+<a name="clarify-post-training-bias-metric-dppl"></a>
+
+**Note**
+Amazon SageMaker Clarify is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Clarify, but we do not plan to introduce new features. For more information, see [Clarify availability change](clarify-availability-change.md).
+
+The difference in positive proportions in predicted labels (DPPL) metric determines whether the model predicts outcomes differently for each facet. It is defined as the difference between the proportion of positive predictions (y’ = 1) for facet *a* and the proportion of positive predictions (y’ = 1) for facet *d*. For example, if the model predictions grant loans to 60% of a middle-aged group (facet *a*) and 50% other age groups (facet *d*), it might be biased against facet *d*. In this example, you must determine whether the 10% difference is material to a case for bias.
+
+A comparison of difference in proportions of labels (DPL), a measure of pre-training bias, with DPPL, a measure of post-training bias, assesses whether bias in positive proportions that are initially present in the dataset changes after training. If DPPL is larger than DPL, then bias in positive proportions increased after training. If DPPL is smaller than DPL, the model did not increase bias in positive proportions after training. Comparing DPL against DPPL does not guarantee that the model reduces bias along all dimensions. For example, the model may still be biased when considering other metrics such as [Counterfactual Fliptest (FT)](clarify-post-training-bias-metric-ft.md) or [Accuracy Difference (AD)](clarify-post-training-bias-metric-ad.md). For more information about bias detection, see the blog post [Learn how Amazon SageMaker Clarify helps detect bias](https://aws.amazon.com/blogs/machine-learning/learn-how-amazon-sagemaker-clarify-helps-detect-bias/). See [Difference in Proportions of Labels (DPL)](clarify-data-bias-metric-true-label-imbalance.md) for more information about DPL.
+
+The formula for the DPPL is:
+
+        DPPL = q'a - q'd
+
+Where:
++ q'a = n'a(1)/na is the predicted proportion of facet *a* who get a positive outcome of value 1. In our example, the proportion of a middle-aged facet predicted to get granted a loan. Here n'a(1) represents the number of members of facet *a* who get a positive predicted outcome of value 1 and na the is number of members of facet *a*.
++ q'd = n'd(1)/nd is the predicted proportion of facet *d* who get a positive outcome of value 1. In our example, a facet of older and younger people predicted to get granted a loan. Here n'd(1) represents the number of members of facet *d* who get a positive predicted outcome and nd the is number of members of facet *d*.
+
+If DPPL is close enough to 0, it means that post-training *demographic parity* has been achieved.
+
+For binary and multicategory facet labels, the normalized DPL values range over the interval [-1, 1]. For continuous labels, the values vary over the interval (-∞, \+∞).
++ Positive DPPL values indicate that facet *a* has a higher proportion of predicted positive outcomes when compared with facet *d*.
+
+  This is referred to as *positive bias*.
++ Values of DPPL near zero indicate a more equal proportion of predicted positive outcomes between facets *a* and *d* and a value of zero indicates perfect demographic parity.
++ Negative DPPL values indicate that facet *d* has a higher proportion of predicted positive outcomes when compared with facet *a*. This is referred to as *negative bias*.

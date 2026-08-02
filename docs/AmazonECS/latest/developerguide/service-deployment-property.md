@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment-property.html
+---
+
+# Properties included in an Amazon ECS service deployment
+<a name="service-deployment-property"></a>
+
+The following properties are included in a service deployment.
+
+| Property | Description |
+| --- | --- |
+| Service deployment ARN | The ARN of the service deployment. |
+| Service ARN | The ARN of the service for this service deployment. |
+| Cluster ARN | The ARN for the cluster that hosts the service. |
+| Service deployment creation time | The time the service deployment was created.  |
+| Service deployment start time | The time the service deployment started.  |
+| Service deployment finish time | The time the service deployment finished. |
+| Service deployment stopped time | The time the service deployment stopped.  |
+| Service deployment update time | The time that the service deployment was last updated.  |
+| Source service revisions | The currently running service revisions. <br />For information about the included properties, see [Properties included in an Amazon ECS service revision](service-revision-property.md). |
+| Deployment configuration | The deployment parameters including the circuit breaker configuration, the alarms that determine.[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment-property.html) |
+| Target service revision | The service revision to deploy. After the deployment completes successfully, the target service revision is the running service revision. |
+| Service deployment status | The service deployment state.The valid values are PENDING, SUCCESSFUL, STOPPED, STOP\_REQUESTED, STOP\_IN\_PROGRESS, IN\_PROGRESS, ROLLBACK\_IN\_PROGRESS, ROLLBACK\_SUCCESSFUL, and ROLLBACK\_FAILED. |
+| Service deployment status information | Information about why the service deployment is in the current status. For example, the circuit breaker detected a failure. |
+|  Rollback information | The rollback options the service deployment uses when the deployment fails. |
+| Service deployment circuit breaker options | The circuit breaker that determines a service deployment failed. |
+| CloudWatch alarms for the service deployment | The CloudWatch alarms that determine when a service deployment fails. |

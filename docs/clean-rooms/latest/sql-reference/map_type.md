@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/map_type.html
+---
+
+# MAP type
+<a name="map_type"></a>
+
+Use the MAP type to represent values comprising a set of key-value pairs.
+
+```
+map(keyType, valueType, valueContainsNull)
+```
+
+`keyType`: the data type of keys
+
+`valueType`: the data type of values
+
+Keys aren't allowed to have `null` values. Use `valueContainsNull` to indicate if values of a MAP type value can have `null` values.

@@ -1,0 +1,167 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-dimensions.html
+---
+
+# Metrics and dimensions
+<a name="metrics-dimensions"></a>
+
+The storage metrics and dimensions that Amazon S3 sends to Amazon CloudWatch are listed in the following tables.
+
+**Best-effort CloudWatch metrics delivery**
+ CloudWatch metrics are delivered on a best-effort basis. Most requests for an Amazon S3 object that have request metrics result in a data point being sent to CloudWatch.
+
+The completeness and timeliness of metrics are not guaranteed. The data point for a particular request might be returned with a timestamp that is later than when the request was actually processed. The data point for a minute might be delayed before being available through CloudWatch, or it might not be delivered at all. CloudWatch request metrics give you an idea of the nature of traffic against your bucket in near-real time. It is not meant to be a complete accounting of all requests.
+
+It follows from the best-effort nature of this feature that the reports available at the [Billing & Cost Management Dashboard](https://console.aws.amazon.com/billing/home?#/) might include one or more access requests that do not appear in the bucket metrics.
+
+**Topics**
++ [Amazon S3 daily storage metrics for buckets in CloudWatch](#s3-cloudwatch-metrics)
++ [Amazon S3 request metrics in CloudWatch](#s3-request-cloudwatch-metrics)
++ [S3 Replication metrics in CloudWatch](#s3-cloudwatch-replication-metrics)
++ [S3 Storage Lens metrics in CloudWatch](#storage-lens-metrics-cloudwatch-publish)
++ [S3 Object Lambda request metrics in CloudWatch](#olap-cloudwatch-metrics)
++ [Amazon S3 dimensions in CloudWatch](#s3-cloudwatch-dimensions)
++ [S3 Replication dimensions in CloudWatch](#s3-replication-dimensions)
++ [S3 Storage Lens dimensions in CloudWatch](#storage-lens-dimensions)
++ [S3 Object Lambda request dimensions in CloudWatch](#olap-dimensions)
++ [Amazon S3 usage metrics](#s3-service-quota-metrics)
+
+## Amazon S3 daily storage metrics for buckets in CloudWatch
+<a name="s3-cloudwatch-metrics"></a>
+
+The `AWS/S3` namespace includes the following daily storage metrics for buckets.
+
+| Metric | Description |
+| --- | --- |
+| BucketSizeBytes | The amount of data in bytes that is stored in a bucket in the following storage classes: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-dimensions.html)<br />This value is calculated by summing the size of all objects and metadata (such as bucket names) in the bucket (both current and noncurrent objects), including the size of all parts for all incomplete multipart uploads to the bucket.  The S3 Express One Zone storage class is available only for directory buckets. <br />Valid storage-type filters (see the `StorageType` dimension): [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-dimensions.html)<br />Units: Bytes<br />Valid statistics: Average<br />For more information about the `StorageType` dimensions, see [Amazon S3 dimensions in CloudWatch](#s3-cloudwatch-dimensions). |
+| NumberOfObjects | The total number of objects stored in a general purpose bucket for all storage classes. This value is calculated by counting all objects in the bucket, which includes current and noncurrent objects, delete markers, and the total number of parts for all incomplete multipart uploads to the bucket. For directory buckets with objects in the S3 Express One Zone storage class, this value is calculated by counting all objects in the bucket, but it doesn't include incomplete multipart uploads to the bucket.<br />Valid storage type filters: `AllStorageTypes` (see the `StorageType` dimension)<br />Units: Count<br />Valid statistics: Average |
+
+## Amazon S3 request metrics in CloudWatch
+<a name="s3-request-cloudwatch-metrics"></a>
+
+The `AWS/S3` namespace includes the following request metrics. These metrics include non-billable requests (in the case of `GET` requests from `CopyObject` and Replication).
+
+| Metric | Description |
+| --- | --- |
+| AllRequests | The total number of HTTP requests made to an Amazon S3 bucket, regardless of type. If you're using a metrics configuration with a filter, then this metric returns only the HTTP requests that meet the filter's requirements.<br />Units: Count<br />Valid statistics: Sum |
+| GetRequests | The number of HTTP `GET` requests made for objects in an Amazon S3 bucket. This doesn't include list operations. This metric is incremented for the source of each `CopyObject` request.<br />Units: Count<br />Valid statistics: Sum Paginated list-oriented requests, such as [https://docs.aws.amazon.com/AmazonS3/latest/API/mpUploadListMPUpload.html](https://docs.aws.amazon.com/AmazonS3/latest/API/mpUploadListMPUpload.html), [https://docs.aws.amazon.com/AmazonS3/latest/API/mpUploadListParts.html](https://docs.aws.amazon.com/AmazonS3/latest/API/mpUploadListParts.html), [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETVersion.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGETVersion.html), and others, are not included in this metric.  |
+| PutRequests | The number of HTTP `PUT` requests made for objects in an Amazon S3 bucket. This metric is incremented for the destination of each `CopyObject` request.<br />Units: Count<br />Valid statistics: Sum |
+| DeleteRequests | The number of HTTP `DELETE` requests made for objects in an Amazon S3 bucket. This metric also includes [https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html](https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html) requests. This metric shows the number of requests made, not the number of objects deleted.<br />Units: Count<br />Valid statistics: Sum |
+| HeadRequests | The number of HTTP `HEAD` requests made to an Amazon S3 bucket.<br />Units: Count<br />Valid statistics: Sum |
+| PostRequests | The number of HTTP `POST` requests made to an Amazon S3 bucket.<br />Units: Count<br />Valid statistics: Sum [https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html](https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html) and [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html) requests are not included in this metric.   |
+| SelectRequests | The number of Amazon S3 [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html) requests made for objects in an Amazon S3 bucket. <br />Units: Count<br />Valid statistics: Sum |
+| SelectBytesScanned | The number of bytes of data scanned with Amazon S3 [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html) requests in an Amazon S3 bucket. <br /> Units: Bytes <br />Valid statistics: Average (bytes per request), Sum (bytes per period), Sample Count, Min, Max (same as p100), any percentile between p0.0 and p99.9 |
+| SelectBytesReturned | The number of bytes of data returned with Amazon S3 [https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectSELECTContent.html) requests in an Amazon S3 bucket. <br /> Units: Bytes <br />Valid statistics: Average (bytes per request), Sum (bytes per period), Sample Count, Min, Max (same as p100), any percentile between p0.0 and p99.9 |
+| ListRequests | The number of HTTP requests that list the contents of a bucket.<br />Units: Count<br />Valid statistics: Sum |
+| BytesDownloaded | The number of bytes downloaded for requests made to an Amazon S3 bucket, where the response includes a body.<br />Units: Bytes<br />Valid statistics: Average (bytes per request), Sum (bytes per period), Sample Count, Min, Max (same as p100), any percentile between p0.0 and p99.9 |
+| BytesUploaded | The number of bytes uploaded for requests made to an Amazon S3 bucket, where the request includes a body.<br />Units: Bytes<br />Valid statistics: Average (bytes per request), Sum (bytes per period), Sample Count, Min, Max (same as p100), any percentile between p0.0 and p99.9 |
+| 4xxErrors | The number of HTTP 4*xx* client error status code requests made to an Amazon S3 bucket with a value of either 0 or 1. The Average statistic shows the error rate, and the Sum statistic shows the count of that type of error, during each period.<br />Units: Count<br />Valid statistics: Average (reports per request), Sum (reports per period), Min, Max, Sample Count |
+| 5xxErrors | The number of HTTP 5*xx* server error status code requests made to an Amazon S3 bucket with a value of either 0 or 1. The Average statistic shows the error rate, and the Sum statistic shows the count of that type of error, during each period.<br />Units: Count<br />Valid statistics: Average (reports per request), Sum (reports per period), Min, Max, Sample Count |
+| FirstByteLatency | The per-request time from the complete request being received by an Amazon S3 bucket to when the response starts to be returned.<br />Units: Milliseconds<br />Valid statistics: Average, Sum, Min, Max (same as p100), Sample Count, any percentile between p0.0 and p100 |
+| TotalRequestLatency | The elapsed per-request time from the first byte received to the last byte sent to an Amazon S3 bucket. This metric includes the time taken to receive the request body and send the response body, which is not included in `FirstByteLatency`.<br />Units: Milliseconds<br />Valid statistics: Average, Sum, Min, Max (same as p100), Sample Count, any percentile between p0.0 and p100 |
+
+## S3 Replication metrics in CloudWatch
+<a name="s3-cloudwatch-replication-metrics"></a>
+
+You can monitor the progress of replication with S3 Replication metrics by tracking bytes pending, operations pending, and replication latency. For more information, see [Monitoring progress with replication metrics](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-metrics.html).
+
+**Note**
+You can enable alarms for your replication metrics in Amazon CloudWatch. When you set up alarms for your replication metrics, set the **Missing data treatment** field to **Treat missing data as ignore (maintain the alarm state)**.
+
+| Metric | Description |
+| --- | --- |
+| ReplicationLatency | The maximum number of seconds by which the replication destination AWS Region is behind the source AWS Region for a given replication rule. <br />Units: Seconds<br />Valid statistics: Max |
+| BytesPendingReplication | The total number of bytes of objects pending replication for a given replication rule.<br />Units: Bytes<br />Valid statistics: Max |
+| OperationsPendingReplication | The number of operations pending replication for a given replication rule.<br />Units: Count<br />Valid statistics: Max |
+| OperationsFailedReplication | The number of operations that failed to replicate for a given replication rule.<br />Units: Count<br /> Valid statistics: Sum (total number of failed operations), Average (failure rate), Sample Count (total number of replication operations) |
+
+## S3 Storage Lens metrics in CloudWatch
+<a name="storage-lens-metrics-cloudwatch-publish"></a>
+
+You can publish S3 Storage Lens usage and activity metrics to Amazon CloudWatch to create a unified view of your operational health in [CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html). S3 Storage Lens metrics are published to the `AWS/S3/Storage-Lens` namespace in CloudWatch. The CloudWatch publishing option is available for S3 Storage Lens dashboards that have been upgraded to advanced metrics and recommendations.
+
+For a list of S3 Storage Lens metrics that are published to CloudWatch, see [Amazon S3 Storage Lens metrics glossary](storage_lens_metrics_glossary.md). For a complete list of dimensions, see [Dimensions](storage-lens-cloudwatch-metrics-dimensions.md#storage-lens-cloudwatch-dimensions).
+
+## S3 Object Lambda request metrics in CloudWatch
+<a name="olap-cloudwatch-metrics"></a>
+
+S3 Object Lambda includes the following request metrics.
+
+| Metric | Description |
+| --- | --- |
+| AllRequests | The total number of HTTP requests made to an Amazon S3 bucket by using an Object Lambda Access Point.<br />Units: Count<br />Valid statistics: Sum |
+| GetRequests | The number of HTTP `GET` requests made for objects by using an Object Lambda Access Point. This metric does not include list operations.<br />Units: Count<br />Valid statistics: Sum |
+| BytesUploaded | The number of bytes uploaded to an Amazon S3 bucket by using an Object Lambda Access Point, where the request includes a body.<br />Units: Bytes<br />Valid statistics: Average (bytes per request), Sum (bytes per period), Sample Count, Min, Max (same as p100), any percentile between p0.0 and p99.9 |
+| PostRequests | The number of HTTP `POST` requests made to an Amazon S3 bucket by using an Object Lambda Access Point.<br />Units: Count<br />Valid statistics: Sum |
+| PutRequests | The number of HTTP `PUT` requests made for objects in an Amazon S3 bucket by using an Object Lambda Access Point. <br />Units: Count <br />Valid statistics: Sum |
+| DeleteRequests | The number of HTTP `DELETE` requests made for objects in an Amazon S3 bucket by using an Object Lambda Access Point. This metric includes [https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html](https://docs.aws.amazon.com/AmazonS3/latest/API/multiobjectdeleteapi.html) requests. This metric shows the number of requests made, not the number of objects deleted.<br />Units: Count<br />Valid statistics: Sum |
+| BytesDownloaded | The number of bytes downloaded for requests made to an Amazon S3 bucket by using an Object Lambda Access Point, where the response includes a body.<br />Units: Bytes <br />Valid statistics: Average (bytes per request), Sum (bytes per period), Sample Count, Min, Max (same as p100), any percentile between p0.0 and p99.9 |
+| FirstByteLatency | The per-request time from the complete request being received by an Amazon S3 bucket through an Object Lambda Access Point to when the response starts to be returned. This metric is dependent on the AWS Lambda function's running time to transform the object before the function returns the bytes to the Object Lambda Access Point.<br />Units: Milliseconds <br />Valid statistics: Average, Sum, Min, Max (same as p100), Sample Count, any percentile between p0.0 and p100 |
+| TotalRequestLatency | The elapsed per-request time from the first byte received to the last byte sent to an Object Lambda Access Point. This metric includes the time taken to receive the request body and send the response body, which is not included in `FirstByteLatency`.<br />Units: Milliseconds<br />Valid statistics: Average, Sum, Min, Max (same as p100), Sample Count, any percentile between p0.0 and p100 |
+| HeadRequests | The number of HTTP `HEAD` requests made to an Amazon S3 bucket by using an Object Lambda Access Point.<br />Units: Count<br />Valid statistics: Sum |
+| ListRequests | The number of HTTP `GET` requests that list the contents of an Amazon S3 bucket. This metric includes both `ListObjects` and `ListObjectsV2` operations.<br />Units: Count<br />Valid statistics: Sum |
+| 4xxErrors | The number of HTTP 4*xx* client error status code requests made to an Amazon S3 bucket by using an Object Lambda Access Point with a value of either 0 or 1. The Average statistic shows the error rate, and the Sum statistic shows the count of that type of error, during each period.<br />Units: Count <br />Valid statistics: Average (reports per request), Sum (reports per period), Min, Max, Sample Count |
+| 5xxErrors | The number of HTTP 5*xx* server error status code requests made to an Amazon S3 bucket by using an Object Lambda Access Point with a value of either 0 or 1. The Average statistic shows the error rate, and the Sum statistic shows the count of that type of error, during each period.<br />Units: Count <br />Valid statistics: Average (reports per request), Sum (reports per period), Min, Max, Sample Count |
+| ProxiedRequests | The number of HTTP requests to an Object Lambda Access Point that return the standard Amazon S3 API response. (Such requests do not have a Lambda function configured.)<br />Units: Count<br />Valid statistics: Sum |
+| InvokedLambda | The number of HTTP requests to an S3 object where a Lambda function was invoked.<br />Units: Count<br />Valid statistics: Sum |
+| LambdaResponseRequests | The number of `WriteGetObjectResponse` requests made by the Lambda function. This metric applies only to `GetObject` requests. |
+| LambdaResponse4xx | The number of HTTP 4*xx* client errors that occur when calling `WriteGetObjectResponse` from a Lambda function. This metric provides the same information as `4xxErrors`, but only for `WriteGetObjectResponse` calls. |
+| LambdaResponse5xx | The number of HTTP 5*xx* server errors that occur when calling `WriteGetObjectResponse` from a Lambda function. This metric provides the same information as `5xxErrors`, but only for `WriteGetObjectResponse` calls. |
+
+## Amazon S3 dimensions in CloudWatch
+<a name="s3-cloudwatch-dimensions"></a>
+
+The following dimensions are used to filter Amazon S3 metrics.
+
+|  Dimension  |  Description  |
+| --- | --- |
+|  BucketName  | This dimension filters the data that you request for the identified bucket only. |
+|  StorageType  | This dimension filters the data that you have stored in a bucket by the following types of storage: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-dimensions.html) |
+| FilterId | This dimension filters metrics configurations that you specify for the request metrics on a bucket. When you create a metrics configuration, you specify a filter ID (for example, a prefix, a tag, or an access point). For more information, see [Creating a metrics configuration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/metrics-configurations.html). |
+
+## S3 Replication dimensions in CloudWatch
+<a name="s3-replication-dimensions"></a>
+
+The following dimensions are used to filter S3 Replication metrics.
+
+|  Dimension  |  Description  |
+| --- | --- |
+|  SourceBucket  | The name of the bucket objects are replicated from. |
+|  DestinationBucket  | The name of the bucket objects are replicated to. |
+|  RuleId  | A unique identifier for the rule that triggered this replication metric to update. |
+
+## S3 Storage Lens dimensions in CloudWatch
+<a name="storage-lens-dimensions"></a>
+
+For a list of dimensions that are used to filter S3 Storage Lens metrics in CloudWatch, see [Dimensions](storage-lens-cloudwatch-metrics-dimensions.md#storage-lens-cloudwatch-dimensions).
+
+## S3 Object Lambda request dimensions in CloudWatch
+<a name="olap-dimensions"></a>
+
+The following dimensions are used to filter data from an Object Lambda Access Point.
+
+| Dimension | Description |
+| --- | --- |
+| AccessPointName | The name of the access point of which requests are being made. |
+| DataSourceARN | The source the Object Lambda Access Point is retrieving the data from. If the request invokes a Lambda function this refers to the Lambda Amazon Resource Name (ARN). Otherwise this refers to the access point ARN. |
+
+## Amazon S3 usage metrics
+<a name="s3-service-quota-metrics"></a>
+
+You can use CloudWatch usage metrics to provide visibility into your account's usage of resources. Use these metrics to visualize your current service usage on CloudWatch graphs and dashboards.
+
+Amazon S3 usage metrics correspond to AWS service quotas. You can configure alarms that alert you when your usage approaches a service quota. For more information about CloudWatch integration with service quotas, see [AWS usage metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Service-Quota-Integration.html) in the *Amazon CloudWatch User Guide*.
+
+Amazon S3 publishes the following metrics in the `AWS/Usage` namespace.
+
+| Metric | Description |
+| --- | --- |
+| `ResourceCount` | The number of the specified resources running in your account. The resources are defined by the dimensions associated with the metric. |
+
+The following dimensions are used to refine the usage metrics that are published by Amazon S3.
+
+| Dimension | Description |
+| --- | --- |
+|  Service  | The name of the AWS service containing the resource. For Amazon S3 usage metrics, the value for this dimension is `S3`. |
+|  Type  | The type of entity that is being reported. Currently, the only valid value for Amazon S3 usage metrics is `Resource`. |
+|  Resource  | The type of resource that is running. Currently, the only valid value for Amazon S3 usage metrics is `GeneralPurposeBuckets`, which returns the number of general purpose buckets in an AWS account. General purpose buckets allow objects that are stored across all storage classes, except S3 Express One Zone. |

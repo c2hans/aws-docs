@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ResourcesTrendsValues.html
+---
+
+# ResourcesTrendsValues
+<a name="API_ResourcesTrendsValues"></a>
+
+Contains the aggregated resource count values for a specific point in the resources trend timeline.
+
+## Contents
+<a name="API_ResourcesTrendsValues_Contents"></a>
+
+ ** ResourcesCount **   <a name="securityhub-Type-ResourcesTrendsValues-ResourcesCount"></a>
+The resource count statistics for this data point in the trend timeline.
+Type: [ResourcesCount](API_ResourcesCount.md) object
+Required: Yes
+
+## See Also
+<a name="API_ResourcesTrendsValues_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/ResourcesTrendsValues)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/ResourcesTrendsValues)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/ResourcesTrendsValues)

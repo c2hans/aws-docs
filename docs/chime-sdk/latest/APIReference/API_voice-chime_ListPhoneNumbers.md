@@ -1,0 +1,153 @@
+---
+source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_ListPhoneNumbers.html
+---
+
+# ListPhoneNumbers
+<a name="API_voice-chime_ListPhoneNumbers"></a>
+
+Lists the phone numbers for the specified Amazon Chime SDK account, Amazon Chime SDK user, Amazon Chime SDK Voice Connector, or Amazon Chime SDK Voice Connector group.
+
+## Request Syntax
+<a name="API_voice-chime_ListPhoneNumbers_RequestSyntax"></a>
+
+```
+GET /phone-numbers?filter-name={{FilterName}}&filter-value={{FilterValue}}&max-results={{MaxResults}}&next-token={{NextToken}}&product-type={{ProductType}}&status={{Status}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_voice-chime_ListPhoneNumbers_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [FilterName](#API_voice-chime_ListPhoneNumbers_RequestSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-request-uri-FilterName"></a>
+The filter to limit the number of results.
+Valid Values: `VoiceConnectorId | VoiceConnectorGroupId | SipRuleId`
+
+ ** [FilterValue](#API_voice-chime_ListPhoneNumbers_RequestSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-request-uri-FilterValue"></a>
+The filter value.
+
+ ** [MaxResults](#API_voice-chime_ListPhoneNumbers_RequestSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-request-uri-MaxResults"></a>
+The maximum number of results to return in a single call.
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+ ** [NextToken](#API_voice-chime_ListPhoneNumbers_RequestSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-request-uri-NextToken"></a>
+The token used to return the next page of results.
+
+ ** [ProductType](#API_voice-chime_ListPhoneNumbers_RequestSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-request-uri-ProductType"></a>
+The phone number product types.
+Valid Values: `VoiceConnector | SipMediaApplicationDialIn`
+
+ ** [Status](#API_voice-chime_ListPhoneNumbers_RequestSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-request-uri-Status"></a>
+The status of your organization's phone numbers.
+
+## Request Body
+<a name="API_voice-chime_ListPhoneNumbers_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_voice-chime_ListPhoneNumbers_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "NextToken": "string",
+   "PhoneNumbers": [
+      {
+         "Associations": [
+            {
+               "AssociatedTimestamp": "string",
+               "Name": "string",
+               "Value": "string"
+            }
+         ],
+         "CallingName": "string",
+         "CallingNameStatus": "string",
+         "Capabilities": {
+            "InboundCall": boolean,
+            "InboundMMS": boolean,
+            "InboundSMS": boolean,
+            "OutboundCall": boolean,
+            "OutboundMMS": boolean,
+            "OutboundSMS": boolean
+         },
+         "Country": "string",
+         "CreatedTimestamp": "string",
+         "DeletionTimestamp": "string",
+         "E164PhoneNumber": "string",
+         "Name": "string",
+         "OrderId": "string",
+         "PhoneNumberId": "string",
+         "ProductType": "string",
+         "Status": "string",
+         "Type": "string",
+         "UpdatedTimestamp": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_voice-chime_ListPhoneNumbers_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [NextToken](#API_voice-chime_ListPhoneNumbers_ResponseSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-response-NextToken"></a>
+The token used to return the next page of results.
+Type: String
+
+ ** [PhoneNumbers](#API_voice-chime_ListPhoneNumbers_ResponseSyntax) **   <a name="chimesdk-voice-chime_ListPhoneNumbers-response-PhoneNumbers"></a>
+The phone number details.
+Type: Array of [PhoneNumber](API_voice-chime_PhoneNumber.md) objects
+
+## Errors
+<a name="API_voice-chime_ListPhoneNumbers_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Errors](CommonErrors.md).
+
+ ** BadRequestException **
+The input parameters don't match the service's restrictions.
+HTTP Status Code: 400
+
+ ** ForbiddenException **
+The client is permanently forbidden from making the request.
+HTTP Status Code: 403
+
+ ** NotFoundException **
+The requested resource couldn't be found.
+HTTP Status Code: 404
+
+ ** ServiceFailureException **
+The service encountered an unexpected error.
+HTTP Status Code: 500
+
+ ** ServiceUnavailableException **
+The service is currently unavailable.
+HTTP Status Code: 503
+
+ ** ThrottledClientException **
+The number of customer requests exceeds the request rate limit.
+HTTP Status Code: 429
+
+ ** UnauthorizedClientException **
+The client isn't authorized to request a resource.
+HTTP Status Code: 401
+
+## See Also
+<a name="API_voice-chime_ListPhoneNumbers_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/chime-sdk-voice-2022-08-03/ListPhoneNumbers)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/chime-sdk-voice-2022-08-03/ListPhoneNumbers)

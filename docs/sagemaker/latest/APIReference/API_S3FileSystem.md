@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_S3FileSystem.html
+---
+
+# S3FileSystem
+<a name="API_S3FileSystem"></a>
+
+A custom file system in Amazon S3. This is only supported in Amazon SageMaker Unified Studio.
+
+## Contents
+<a name="API_S3FileSystem_Contents"></a>
+
+ ** S3Uri **   <a name="sagemaker-Type-S3FileSystem-S3Uri"></a>
+The Amazon S3 URI that specifies the location in S3 where files are stored, which is mounted within the Studio environment. For example: `s3://<bucket-name>/<prefix>/`.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+Pattern: `(s3)://([^/]+)/?(.*)`
+Required: Yes
+
+## See Also
+<a name="API_S3FileSystem_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/S3FileSystem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/S3FileSystem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/S3FileSystem)

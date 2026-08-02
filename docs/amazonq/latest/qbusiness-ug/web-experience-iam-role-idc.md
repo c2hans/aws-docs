@@ -1,0 +1,83 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-experience-iam-role-idc.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# IAM role for an Amazon Q Business web experience using IAM Identity Center
+<a name="web-experience-iam-role-idc"></a>
+
+**Important**
+This page only applies to Amazon Q Business web experiences connected to IAM Identity Center-integrated Amazon Q Business applications.
+
+**Policy history**
++ **Latest policy update:** — December 3, 2024
+
+The following table list and describes the changes to this policy over time.
+
+| Change | Description | Date |
+| --- | --- | --- |
+| Amazon Q Business now supports deleting attachments | To enable delete attachments support on chats, modify your *Web experience IAM role* by adding the permission `qbusiness:DeleteAttachment`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, users can remove attached files in conversations. | 2/27/2025 |
+| Amazon Q Business plugin actions support | To allow Amazon Q Business to list plugin actions and to allow end users to discover plugins in their web experience, modify the existing *Web experience IAM role* by adding the following permissions: `qbusiness:ListPluginActions`, `qbusiness:ListPluginTypeMetadata`, and `qbusiness:ListPluginTypeActions`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, Amazon Q Business can list plugin actions and web experience users can discover plugins in their web experience. For more information, see [Prerequisites for configuring Amazon Q Business built-in plugins](basic-plugins-prereqs.md). | 12/03/2024 |
+| Amazon Quick plugin support | To allow the Quick plugin to include visuals from Amazon Quick, modify the existing *Web experience IAM role* to add permission for `quicksight:GenerateEmbedUrlForRegisteredUserWithIdentity`. <br />With this change, web experience users can view visuals from Quick. For more information about the Quick plugin, see [Using the Quick plugin to get insights from structured data](quicksight-plugin.md).  | 12/03/2024 |
+| Embedded visual content support | To enable extracting semantic meaning from embedded visual content, modify the existing *Web experience IAM role* by adding the permission `qbusiness:GetMedia`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, if you enable content extraction for a data source, web experience users can ask questions and get answers related to the images. When an end user asks a question, Amazon Q Business retrieves relevant answers from the text and the images. Answers include the images and links for the documents that contain them. For more information, see [Extracting semantic meaning from embedded visual content with Amazon Q Business](extracting-meaning-from-images.md). | 12/01/2024 |
+| Recent files support | To enable recent files support on web experiences, modify the existing *Web experience IAM role* by adding the permission `qbusiness:ListAttachments`. The scoping for this new permission should be similar to other `qbusiness:` conversation permissions.<br />With this change, users can find and reuse any recently attached files in new conversations without uploading the files again. Additionally, users can now drag and drop files they want to upload directly into any conversation inside their Amazon Q web experience. | 11/21/2024 |
+
+**Note**
+To find the IAM role ARN for your web experience you can go to ****Amazon Q Business** → **Applications** → *choose your application* **Name** → **Web experience settings**** in the Amazon Q Business console.
+
+The following section lists the IAM policies required to allow you to invoke the API operations required to integrate your application environment with IAM Identity Center.
+
+To allow an Amazon Q Business web experience to invoke the API operations required to integrate your application environment and deploy your web experience with an IAM Identity Center instance, use the following policy:
+
+**Note**
+ To make use of the Clickable URL feature, add the following permissions to the IAM role for your Amazon Q web experience.
+
+```
+
+{
+    "Sid": "QBusinessGetDocumentContentPermission",
+    "Effect": "Allow",
+    "Action": ["qbusiness:GetDocumentContent"],
+    "Resource": [
+        "arn:aws:qbusiness:{{region}}:{{source_account}}:application/{{application_id}}",
+        "arn:aws:qbusiness:{{region}}:{{source_account}}:application/{{application_id}}/index/*"
+    ]
+}
+```
+
+To allow Amazon Q to assume this role, use the following trust policy:
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "QBusinessTrustPolicy",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "application.qbusiness.amazonaws.com"
+            },
+            "Action": [
+                "sts:AssumeRole",
+                "sts:SetContext"
+            ],
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": "111122223333"
+                },
+                "ArnEquals": {
+                    "aws:SourceArn": "arn:aws:qbusiness:us-east-1:111122223333:application/{{application-id}}"
+                }
+            }
+        }
+    ]
+}
+```
+
+------

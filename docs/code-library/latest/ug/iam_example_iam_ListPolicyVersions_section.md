@@ -1,0 +1,103 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_ListPolicyVersions_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListPolicyVersions` with an AWS SDK or CLI
+<a name="iam_example_iam_ListPolicyVersions_section"></a>
+
+The following code examples show how to use `ListPolicyVersions`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code examples:
++  [Manage policies](iam_example_iam_Scenario_PolicyManagement_section.md)
++  [Roll back a policy version](iam_example_iam_Scenario_RollbackPolicyVersion_section.md)
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list information about the versions of the specified managed policy**
+This example returns the list of available versions of the policy whose ARN is `arn:aws:iam::123456789012:policy/MySamplePolicy`.
+
+```
+aws iam list-policy-versions \
+    --policy-arn {{arn:aws:iam::123456789012:policy/MySamplePolicy}}
+```
+Output:
+
+```
+{
+    "IsTruncated": false,
+    "Versions": [
+        {
+        "VersionId": "v2",
+        "IsDefaultVersion": true,
+        "CreateDate": "2015-06-02T23:19:44Z"
+        },
+        {
+        "VersionId": "v1",
+        "IsDefaultVersion": false,
+        "CreateDate": "2015-06-02T22:30:47Z"
+        }
+    ]
+}
+```
+For more information, see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *AWS IAM User Guide*.
++  For API details, see [ListPolicyVersions](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-policy-versions.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example returns the list of available versions of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyManagedPolicy`. To get the policy document for a specific version, use the `Get-IAMPolicyVersion` command and specify the `VersionId` of the one you want.**
+
+```
+Get-IAMPolicyVersionList -PolicyArn arn:aws:iam::123456789012:policy/MyManagedPolicy
+```
+**Output:**
+
+```
+CreateDate                   Document                 IsDefaultVersion                  VersionId
+----------                   --------                 ----------------                  ---------
+2/12/2015 9:39:53 AM                                  True                              v2
+2/12/2015 9:39:09 AM                                  False                             v1
+```
++  For API details, see [ListPolicyVersions](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example returns the list of available versions of the policy whose ARN is `arn:aws:iam::123456789012:policy/MyManagedPolicy`. To get the policy document for a specific version, use the `Get-IAMPolicyVersion` command and specify the `VersionId` of the one you want.**
+
+```
+Get-IAMPolicyVersionList -PolicyArn arn:aws:iam::123456789012:policy/MyManagedPolicy
+```
+**Output:**
+
+```
+CreateDate                   Document                 IsDefaultVersion                  VersionId
+----------                   --------                 ----------------                  ---------
+2/12/2015 9:39:53 AM                                  True                              v2
+2/12/2015 9:39:09 AM                                  False                             v1
+```
++  For API details, see [ListPolicyVersions](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
+
+```
+    TRY.
+        oo_result = lo_iam->listpolicyversions(
+          iv_policyarn = iv_policy_arn ).
+        MESSAGE 'Retrieved policy versions list.' TYPE 'I'.
+      CATCH /aws1/cx_iamnosuchentityex.
+        MESSAGE 'Policy does not exist.' TYPE 'E'.
+      CATCH /aws1/cx_iamservicefailureex.
+        MESSAGE 'Service failure when listing policy versions.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [ListPolicyVersions](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

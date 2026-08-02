@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsS3AccessPointVpcConfigurationDetails.html
+---
+
+# AwsS3AccessPointVpcConfigurationDetails
+<a name="API_AwsS3AccessPointVpcConfigurationDetails"></a>
+
+ The virtual private cloud (VPC) configuration for an Amazon S3 access point.
+
+## Contents
+<a name="API_AwsS3AccessPointVpcConfigurationDetails_Contents"></a>
+
+ ** VpcId **   <a name="securityhub-Type-AwsS3AccessPointVpcConfigurationDetails-VpcId"></a>
+ If this field is specified, this access point will only allow connections from the specified VPC ID.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+## See Also
+<a name="API_AwsS3AccessPointVpcConfigurationDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/AwsS3AccessPointVpcConfigurationDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/AwsS3AccessPointVpcConfigurationDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/AwsS3AccessPointVpcConfigurationDetails)

@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_ProductInformation.html
+---
+
+# ProductInformation
+<a name="API_marketplace-discovery_ProductInformation"></a>
+
+Summary information about a product, including the identifier, name, and manufacturer.
+
+## Contents
+<a name="API_marketplace-discovery_ProductInformation_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** manufacturer **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ProductInformation-manufacturer"></a>
+The entity who manufactured the product.
+Type: [SellerInformation](API_marketplace-discovery_SellerInformation.md) object
+Required: Yes
+
+ ** productId **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ProductInformation-productId"></a>
+The unique identifier of the product.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\w\-]+`
+Required: Yes
+
+ ** productName **   <a name="AWSMarketplaceService-Type-marketplace-discovery_ProductInformation-productName"></a>
+The human-readable display name of the product.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `.*\S.*`
+Required: Yes
+
+## See Also
+<a name="API_marketplace-discovery_ProductInformation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/marketplace-discovery-2026-02-05/ProductInformation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-discovery-2026-02-05/ProductInformation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-discovery-2026-02-05/ProductInformation)

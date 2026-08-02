@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ContactFlowAttributeAndCondition.html
+---
+
+# ContactFlowAttributeAndCondition
+<a name="API_ContactFlowAttributeAndCondition"></a>
+
+ A list of conditions which would be applied together with an AND condition.
+
+## Contents
+<a name="API_ContactFlowAttributeAndCondition_Contents"></a>
+
+ ** ContactFlowTypeCondition **   <a name="connect-Type-ContactFlowAttributeAndCondition-ContactFlowTypeCondition"></a>
+ Contact flow type condition.
+Type: [ContactFlowTypeCondition](API_ContactFlowTypeCondition.md) object
+Required: No
+
+ ** TagConditions **   <a name="connect-Type-ContactFlowAttributeAndCondition-TagConditions"></a>
+ Tag-based conditions for contact flow filtering.
+Type: Array of [TagCondition](API_TagCondition.md) objects
+Required: No
+
+## See Also
+<a name="API_ContactFlowAttributeAndCondition_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/ContactFlowAttributeAndCondition)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/ContactFlowAttributeAndCondition)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/ContactFlowAttributeAndCondition)

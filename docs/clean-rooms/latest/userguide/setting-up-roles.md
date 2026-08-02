@@ -1,0 +1,744 @@
+---
+source_url: https://docs.aws.amazon.com/clean-rooms/latest/userguide/setting-up-roles.html
+---
+
+# Set up service roles for AWS Clean Rooms
+<a name="setting-up-roles"></a>
+
+The following sections describe the roles needed to perform each task.
+
+**Topics**
++ [Create an IAM role for a collaboration member](#create-role-DP)
++ [Create a service role to read data from Amazon S3](#create-service-role-procedure)
++ [Create a service role to read data from Amazon Athena](#create-service-role-athena)
++ [Create a service role to read data from Snowflake](#create-service-role-third-party)
++ [Create a service role to read code from an S3 bucket (PySpark analysis template role)](#create-role-pyspark-analysis-template)
++ [Create a service role to write results of a PySpark job](#create-role-pyspark-job)
++ [Create a service role to receive results](#create-role-write-results)
+
+## Create an IAM role for a collaboration member
+<a name="create-role-DP"></a>
+
+A member is an AWS customer who is a participant in a collaboration.
+
+**To create an IAM role for a collaboration member**
+
+1. Follow the [Creating a role to delegate permissions to an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. For the **Create policy** step, select the **JSON** tab in the **Policy editor**, and then add policies depending on the abilities granted to the collaboration member.
+
+   AWS Clean Rooms offers the following managed policies based on common use cases.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/clean-rooms/latest/userguide/setting-up-roles.html)
+
+   For information about the different managed policies offered by AWS Clean Rooms, see [AWS managed policies for AWS Clean Rooms](security-iam-awsmanpol.md),
+
+## Create a service role to read data from Amazon S3
+<a name="create-service-role-procedure"></a>
+
+AWS Clean Rooms uses a service role to read the data from Amazon S3.
+
+There are two ways to create this service role.
++ If you have the necessary IAM permissions to create a service role, use the AWS Clean Rooms console to create a service role.
++ If you don't have `iam:CreateRole`, `iam:CreatePolicy` and `iam:AttachRolePolicy` permissions or want to create the IAM roles manually, do one of the following:
+  + Use the following procedure to create a service role using custom trust policies.
+  + Ask your administrator to create the service role using the following procedure.
+
+**Note**
+You or your IAM administrator should follow this procedure only if you don't have the necessary permissions to create a service role using the AWS Clean Rooms console.
+
+**To create a service role to read data from Amazon S3 using custom trust policies**
+
+1. Create a role using custom trust policies. For more information, see the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. Use the following custom trust policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+If you want to help ensure that the role is used only in the context of a certain collaboration membership, you can scope down the trust policy further. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Sid": "RoleTrustPolicyForCleanRoomsService",
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole"
+           }
+        ]
+   }
+   ```
+
+------
+
+1. Use the following permissions policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+The following example policy supports the permissions needed to read AWS Glue metadata and its corresponding Amazon S3 data. However, you might need to modify this policy depending on how you've set up your Amazon S3 data. For instance, if you have set up a custom KMS key for your Amazon S3 data, you may need to amend this policy with additional AWS Key Management Service (AWS KMS) permissions.
+Your AWS Glue resources and underlying Amazon S3 resources must be in the same AWS Region as the AWS Clean Rooms collaboration.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Sid": "NecessaryGluePermissions",
+               "Effect": "Allow",
+               "Action": [
+                   "glue:GetDatabase",
+                   "glue:GetDatabases",
+                   "glue:GetTable",
+                   "glue:GetTables",
+                   "glue:GetPartition",
+                   "glue:GetPartitions",
+                   "glue:BatchGetPartition"
+               ],
+               "Resource": [
+                   "arn:aws:glue:{{us-east-1}}:{{111122223333}}:database/{{databaseName}}",
+                   "arn:aws:glue:{{us-east-1}}:{{111122223333}}:table/{{databaseName}}/{{tableName}}",
+                   "arn:aws:glue:{{us-east-1}}:{{111122223333}}:catalog"
+               ]
+           },
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "glue:GetSchema",
+                   "glue:GetSchemaVersion"
+               ],
+               "Resource": [
+                   "*"
+               ]
+           },
+           {
+               "Sid": "NecessaryS3BucketPermissions",
+               "Effect": "Allow",
+               "Action": [
+                   "s3:GetBucketLocation",
+                   "s3:ListBucket"
+               ],
+               "Resource": [
+                   "arn:aws:s3:::{{bucket}}"
+               ],
+               "Condition": {
+                   "StringEquals": {
+                       "s3:ResourceAccount": [
+                           "{{444455556666}}"
+                       ]
+                   }
+               }
+           },
+           {
+               "Sid": "NecessaryS3ObjectPermissions",
+               "Effect": "Allow",
+               "Action": [
+                   "s3:GetObject"
+               ],
+               "Resource": [
+                   "arn:aws:s3:::{{bucket}}/{{prefix}}/*"
+               ],
+               "Condition": {
+                   "StringEquals": {
+                       "s3:ResourceAccount": [
+                           "{{444455556666}}"
+                       ]
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+**Note**
+This policy references two different AWS account IDs to support a AWS Clean Rooms collaboration where data catalog metadata and actual data storage are managed by different parties:
+**111122223333** - This is the account that owns the AWS Glue Data Catalog resources (databases, tables, and catalog). The first statement grants permissions to access table schemas, partition information, and metadata from this account's AWS Glue catalog.
+**444455556666** - This is the account that owns the Amazon S3 bucket containing the actual data files. The Amazon S3 permissions (statements 3 and 4) are restricted to buckets owned by this account through the `s3:ResourceAccount` condition.
+This configuration supports common enterprise data architectures where one team manages the data catalog and schema definitions while another team owns the underlying data storage infrastructure. The `s3:ResourceAccount` condition provides an additional security layer by ensuring Amazon S3 operations only work on buckets owned by the designated account.
+
+1. Replace each {{placeholder}} with your own information.
+
+1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.
+
+## Create a service role to read data from Amazon Athena
+<a name="create-service-role-athena"></a>
+
+AWS Clean Rooms uses a service role to read the data from Amazon Athena.
+
+**To create a service role to read data from Athena using custom trust policies**
+
+1. Create a role using custom trust policies. For more information, see the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. Use the following custom trust policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+If you want to help ensure that the role is used only in the context of a certain collaboration membership, you can scope down the trust policy further. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Sid": "RoleTrustPolicyForCleanRoomsService",
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole"
+           }
+        ]
+   }
+   ```
+
+------
+
+1. Use the following permissions policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+The following example policy supports the permissions needed to read AWS Glue metadata and its corresponding Athena data. However, you might need to modify this policy depending on how you've set up your Amazon S3 data. For instance, if you've already set up a custom KMS key for your Amazon S3 data, you may need to amend this policy with additional AWS KMS permissions.
+
+   ```
+   {
+       "Version": "2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "athena:GetWorkGroup",
+                   "athena:GetTableMetadata",
+                   "athena:GetDataCatalog",
+                   "athena:StartQueryExecution",
+                   "athena:GetQueryExecution",
+                   "athena:GetQueryResults"
+               ],
+               "Resource": [
+                   "arn:aws:athena:{{region}}:{{accountId}}:workgroup/{{workgroup}}",
+                   "arn:aws:athena:{{region}}:{{accountId}}:datacatalog/{{federatedCatalogName}}"
+               ]
+           },
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "glue:GetDatabase",
+                   "glue:GetTable",
+                   "glue:GetCatalog"
+               ],
+               "Resource": [
+                   "arn:aws:glue:{{region}}:{{accountId}}:catalog",
+                   "arn:aws:glue:{{region}}:{{accountId}}:catalog/{{federatedCatalogName}}",
+                   "arn:aws:glue:{{region}}:{{accountId}}:database/{{federatedCatalogName}}/{{databaseName}}",
+                   "arn:aws:glue:{{region}}:{{accountId}}:table/{{federatedCatalogName}}/{{databaseName}}/{{tableName}}"
+               ]
+           },
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "s3:GetObject",
+                   "s3:GetBucketLocation",
+                   "s3:AbortMultipartUpload",
+                   "s3:ListBucket",
+                   "s3:PutObject",
+                   "s3:ListMultipartUploadParts"
+               ],
+               "Resource": [
+                   "arn:aws:s3:::{{athenaResultsBucket}}",
+                   "arn:aws:s3:::{{athenaResultsBucket}}/*"
+               ],
+               "Condition": {
+                   "StringEquals": {
+                       "aws:ResourceAccount": "{{accountId}}"
+                   }
+               }
+           },
+           {
+               "Effect": "Allow",
+               "Action": "lakeformation:GetDataAccess",
+               "Resource": "*"
+           }
+       ]
+   }
+   ```
+
+1. Replace each {{placeholder}} with your own information.
+
+1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.
+
+### Set up Lake Formation permissions
+<a name="setup-lakeformation-permissions"></a>
+
+If you query resources protected with Lake Formation permissions, the service role must have **Select** and **Describe** access permissions on the table/view/catalog and **Describe** permissions on the AWS Glue database.
+
+For more information, see:
++ [Use Athena to query data registered with AWS Lake Formation](https://docs.aws.amazon.com/athena/latest/ug/security-athena-lake-formation.html) in the *Amazon Athena User Guide*
++ [Onboarding to Lake Formation permissions](https://docs.aws.amazon.com/lake-formation/latest/dg/onboarding-lf-permissions.html) in the *AWS Lake Formation Developer Guide*
+
+## Create a service role to read data from Snowflake
+<a name="create-service-role-third-party"></a>
+
+AWS Clean Rooms uses a service role to retrieve your credentials for Snowflake to read your data from this source.
+
+There are two ways to create this service role:
++ If you have the necessary IAM permissions to create a service role, use the AWS Clean Rooms console to create a service role.
++ If you don't have `iam:CreateRole`, `iam:CreatePolicy` and `iam:AttachRolePolicy` permissions or want to create the IAM roles manually, do one of the following:
+  + Use the following procedure to create a service role using custom trust policies.
+  + Ask your administrator to create the service role using the following procedure.
+
+**Note**
+You or your IAM administrator should follow this procedure only if you don't have the necessary permissions to create a service role using the AWS Clean Rooms console.
+
+**To create a service role to read data from Snowflake using custom trust policies**
+
+1. Create a role using custom trust policies. For more information, see the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. Use the following custom trust policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+If you want to help ensure that the role is used only in the context of a certain collaboration membership, you can scope down the trust policy further. For more information, see [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md).
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Sid": "AllowIfSourceArnMatches",
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "ForAnyValue:ArnEquals": {
+                       "aws:SourceArn": [
+                           "arn:aws:cleanrooms:{{us-east-1}}:{{111122223333}}:membership/{{membershipId}}",
+                           "arn:aws:cleanrooms:{{us-east-1}}:{{444455556666}}:membership/{{queryRunnerMembershipId}}"
+                       ]
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+**Note**
+This trust policy references two different AWS account IDs to support a AWS Clean Rooms collaboration where query execution responsibilities are distributed across multiple parties:
+**111122223333** - This is the account that contains a membership participating in the collaboration. This membership may own data tables, analysis rules, or other collaboration resources that require role access.
+**444455556666** - This is the account that contains the membership responsible for running queries (the "query runner"). This membership executes protected queries and needs to assume this role to access the necessary compute and data resources.
+This configuration enables scenarios where one party provides data or analysis templates while another party runs the actual queries. Both roles require different but complementary permissions through the same execution role. The `aws:SourceArn` condition ensures that only AWS Clean Rooms operations originating from these two specific memberships can assume the role, maintaining security while supporting the distributed job execution and result management workflow.
+
+1. Use one of the following permissions policies according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+
+   **Permission policy for secrets encrypted with a customer-owned KMS key**
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Action": "secretsmanager:GetSecretValue",
+               "Resource": "arn:aws:secretsmanager:{{us-east-1}}:{{111122223333}}:secret:{{secretIdentifier}}",
+               "Effect": "Allow"
+           },
+           {
+               "Sid": "AllowDecryptViaSecretsManagerForKey",
+               "Action": "kms:Decrypt",
+               "Resource": "arn:aws:kms:{{us-east-1}}:{{444455556666}}:key/{{keyIdentifier}}",
+               "Effect": "Allow",
+               "Condition": {
+                   "StringEquals": {
+                       "kms:ViaService": "secretsmanager.{{us-east-1}}.amazonaws.com",
+                       "kms:EncryptionContext:SecretARN": "arn:aws:secretsmanager:{{us-east-1}}:{{111122223333}}:secret:{{secretIdentifier}}"
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+**Note**
+This policy references two different AWS account IDs to support a cross-account secrets management scenario:
+**111122223333** - This is the account that owns and stores the secret in . The first statement grants permission to retrieve the secret value from this account.
+**444455556666** - This is the account that owns the AWS KMS key used to encrypt the secret. The second statement grants permission to decrypt the secret using the AWS KMS key from this account.
+This configuration is common in enterprise environments where:
+Secrets are centrally managed in one account (Account 1)
+Encryption keys are managed by a separate security or shared services account (Account 2)
+The AWS KMS key policy in Account 2 must also allow the service in Account 1 to use the key for encryption/decryption operations
+The `kms:EncryptionContext:SecretARN` condition ensures that the AWS KMS key can only be used to decrypt this specific secret, providing an additional layer of security for cross-account access.
+
+   **Permission policy for secrets encrypted with an AWS managed key**
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Action": "secretsmanager:GetSecretValue",
+               "Resource": "arn:aws:secretsmanager:{{us-east-1}}:{{111122223333}}:secret:{{secretIdentifier}}",
+               "Effect": "Allow"
+           }
+       ]
+   }
+   ```
+
+------
+
+1. Replace each {{placeholder}} with your own information.
+
+1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.
+
+## Create a service role to read code from an S3 bucket (PySpark analysis template role)
+<a name="create-role-pyspark-analysis-template"></a>
+
+AWS Clean Rooms uses a service role to read code from a collaboration member's specified S3 bucket when using a PySpark analysis template.
+
+**To create a service role to read code from an S3 bucket**
+
+1. Create a role using custom trust policies. For more information, see the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. Use the following custom trust policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "ForAnyValue:ArnEquals": {
+                       "aws:SourceArn": [
+                           "arn:aws:cleanrooms:{{us-east-1}}:{{111122223333}}:membership/{{jobRunnerMembershipId}}",
+                           "arn:aws:cleanrooms:{{us-east-1}}:{{444455556666}}:membership/{{analysisTemplateOwnerMembershipId}}"
+                       ]
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+**Note**
+This trust policy references two different AWS account IDs to support a multi-party AWS Clean Rooms collaboration scenario:
+**111122223333** - This is the account that contains the membership responsible for running queries (the "job runner"). This membership executes the analysis jobs and needs to assume this role to access the necessary resources.
+**444455556666** - This is the account that owns the analysis template and its associated membership (the "analysis template owner"). This membership defines what queries can be run and also needs to assume this role to manage and execute the analysis.
+This configuration is typical in AWS Clean Rooms collaborations where multiple parties participate in the same collaboration, each with their own AWS account and membership. Both the query executor and the analysis template owner need access to shared resources. The `aws:SourceArn` condition ensures that only AWS Clean Rooms operations originating from these two specific memberships can assume the role, providing precise access control for the multi-party collaboration.
+
+1. Use the following permissions policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+The following example policy supports the permissions needed to read your code from Amazon S3. However, you might need to modify this policy depending on how you've set up your S3 data.
+Your Amazon S3 resources must be in the same AWS Region as the AWS Clean Rooms collaboration.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "s3:GetObject",
+                   "s3:GetObjectVersion"
+               ],
+               "Resource": ["arn:aws:s3:::{{s3Path}}"],
+               "Condition":{
+                   "StringEquals":{
+                       "s3:ResourceAccount":[
+                           "{{s3BucketOwnerAccountId}}"
+                       ]
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+
+1. Replace each {{placeholder}} with your own information:
+   + {{s3Path}} – The S3 bucket location of your code.
+   + {{s3BucketOwnerAccountId}} – The AWS account ID of the S3 bucket owner.
+   + {{region}} – The name of the AWS Region. For example, **us-east-1**.
+   + {{jobRunnerAccountId}} – The AWS account ID of the member who can run queries and jobs.
+   + {{jobRunnerMembershipId}} – The **Membership ID** of the member who can query and run jobs. The **Membership ID** can be found on the **Details** tab of the collaboration. This ensures that AWS Clean Rooms is assuming the role only when this member runs the analysis in this collaboration.
+   + {{analysisTemplateAccountId}} – The AWS account ID of the analysis template.
+   + {{analysisTemplateOwnerMembershipId}} – The **Membership ID** of the member who owns the analysis template. The **Membership ID** can be found on the **Details** tab of the collaboration.
+
+1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.
+
+## Create a service role to write results of a PySpark job
+<a name="create-role-pyspark-job"></a>
+
+AWS Clean Rooms uses a service role to write the results of a PySpark job to a specified S3 bucket.
+
+**To create a service role to write results of a PySpark job**
+
+1. Create a role using custom trust policies. For more information, see the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. Use the following custom trust policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "ForAnyValue:ArnEquals": {
+                       "aws:SourceArn": [
+                           "arn:aws:cleanrooms:{{us-east-1}}:{{111122223333}}:membership/{{jobRunnerMembershipId}}",
+                           "arn:aws:cleanrooms:{{us-east-1}}:{{444455556666}}:membership/{{rrMembershipId}}"
+                       ]
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+**Note**
+This trust policy references two different AWS account IDs to support a AWS Clean Rooms collaboration with distinct operational roles:
+**111122223333** - This is the account that contains the membership responsible for running analysis jobs (the "job runner"). This membership executes the computational workloads and needs to assume this role to access processing resources.
+**444455556666** - This is the account that contains the membership with result receiver (RR) responsibilities. This membership is authorized to receive and access the output of analysis jobs, and needs role access to write results to designated locations.
+This configuration enables AWS Clean Rooms scenarios where one party runs the computational analysis while another party receives and manages the results. Both roles require different but complementary permissions through the same execution role. The `aws:SourceArn` condition ensures that only AWS Clean Rooms operations originating from these two specific memberships can assume the role, maintaining security while supporting the distributed job execution and result management workflow.
+
+1. Use the following permissions policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+The following example policy supports the permissions needed to write to Amazon S3. However, you might need to modify this policy depending on how you've set up S3.
+Your Amazon S3 resources must be in the same AWS Region as the AWS Clean Rooms collaboration.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "s3:PutObject"
+               ],
+               "Resource": "arn:aws:s3:::{{bucket/optionalPrefix/*}}",
+               "Condition":{
+                   "StringEquals":{
+                       "s3:ResourceAccount":[
+                           "{{s3BucketOwnerAccountId}}"
+                       ]
+                   }
+               }
+           },
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "s3:GetBucketLocation",
+                   "s3:ListBucket"
+               ],
+               "Resource": "arn:aws:s3:::{{bucket}}",
+               "Condition":{
+                   "StringEquals":{
+                       "s3:ResourceAccount":[
+                           "{{s3BucketOwnerAccountId}}"
+                       ]
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+
+1. Replace each {{placeholder}} with your own information:
+   + {{region}} – The name of the AWS Region. For example, **us-east-1**.
+   + {{jobRunnerAccountId}} – The AWS account ID in which the S3 bucket is located.
+   + {{jobRunnerMembershipId}} – The **Membership ID** of the member who can query and run jobs. The **Membership ID** can be found on the **Details** tab of the collaboration. This ensures that AWS Clean Rooms is assuming the role only when this member runs the analysis in this collaboration.
+   + {{rrAccountId}} – The AWS account ID in which the S3 bucket is located.
+   + {{rrMembershipId}} – The **Membership ID** of the member who can receive results. The **Membership ID** can be found on the **Details** tab of the collaboration. This ensures that AWS Clean Rooms is assuming the role only when this member runs the analysis in this collaboration.
+   + {{bucket}} – The name and location of the S3 bucket.
+   + {{optionalPrefix}} – An optional prefix if you want to save your results under a specific S3 prefix.
+   + {{s3BucketOwnerAccountId}} – The AWS account ID of the S3 bucket owner.
+
+1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.
+
+## Create a service role to receive results
+<a name="create-role-write-results"></a>
+
+**Note**
+If you are the member who can only receive results (in the console, **Your member abilities** is only **Receive results**), follow this procedure.
+If you are a member who can both query and receive results (in the console, **Your member abilities** is both **Query** and **Receive results**), you can skip this procedure.
+
+For collaboration members who can only receive results, AWS Clean Rooms uses a service role to write results of the queried data in the collaboration to the specified S3 bucket.
+
+There are two ways to create this service role:
++ If you have the necessary IAM permissions to create a service role, use the AWS Clean Rooms console to create a service role.
++ If you don't have `iam:CreateRole`, `iam:CreatePolicy` and `iam:AttachRolePolicy` permissions or want to create the IAM roles manually, do one of the following:
+  + Use the following procedure to create a service role using custom trust policies.
+  + Ask your administrator to create the service role using the following procedure.
+
+**Note**
+You or your IAM administrator should follow this procedure only if you don't have the necessary permissions to create a service role using the AWS Clean Rooms console.
+
+**To create a service role to receive results using custom trust policies**
+
+1. Create a role using custom trust policies. For more information, see the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure in the *AWS Identity and Access Management User Guide*.
+
+1. Use the following custom trust policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Sid": "AllowIfExternalIdMatches",
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "ArnLike": {
+                       "sts:ExternalId": "arn:aws:*:{{region}}:*:dbuser:*/{{a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa}}*"
+                   }
+               }
+           },
+           {
+               "Sid": "AllowIfSourceArnMatches",
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "cleanrooms.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole",
+               "Condition": {
+                   "ForAnyValue:ArnEquals": {
+                       "aws:SourceArn": [
+                           "{{arn:aws:cleanrooms:us-east-1:555555555555:membership/a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa}}"
+                       ]
+
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+
+1. Use the following permissions policy according to the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure.
+**Note**
+The following example policy supports the permissions needed to read AWS Glue metadata and its corresponding Amazon S3 data. However, you might need to modify this policy depending on how you've set up your S3 data.
+Your AWS Glue resources and underlying Amazon S3 resources must be in the same AWS Region as the AWS Clean Rooms collaboration.
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "s3:GetBucketLocation",
+                   "s3:ListBucket"
+               ],
+               "Resource": [
+                   "arn:aws:s3:::{{bucket_name}}"
+               ],
+               "Condition": {
+                   "StringEquals": {
+                       "aws:ResourceAccount":"{{accountId}}"
+                   }
+               }
+           },
+           {
+               "Effect": "Allow",
+               "Action": [
+                   "s3:PutObject"
+               ],
+               "Resource": [
+                   "arn:aws:s3:::{{bucket_name/optional_key_prefix/*}}"
+               ],
+               "Condition": {
+                   "StringEquals": {
+                       "aws:ResourceAccount":"{{accountId}}"
+                   }
+               }
+           }
+       ]
+   }
+   ```
+
+------
+
+1. Replace each {{placeholder}} with your own information:
+   + {{region}} – The name of the AWS Region. For example, **us-east-1**.
+   + {{a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa}} – The **Membership ID** of the member who can query. The **Membership ID** can be found on the **Details** tab of the collaboration. This ensures that AWS Clean Rooms is assuming the role only when this member runs the analysis in this collaboration.
+   + {{arn:aws:cleanrooms:us-east-1:555555555555:membership/a1b2c3d4-5678-90ab-cdef-EXAMPLEaaaaa}} – The single **Membership ARN** of the member who can query. The **Membership ARN** can be found on the **Details** tab of the collaboration. This ensures AWS Clean Rooms is assuming the role only when this member runs the analysis in this collaboration.
+   + {{bucket\_name}} – The **Amazon Resource Name (ARN)** of the S3 bucket. The **Amazon Resource Name (ARN)** can be found on the **Properties** tab of the bucket in Amazon S3.
+   + {{accountId}} – The AWS account ID in which the S3 bucket is located.
+
+     {{bucket\_name/optional\_key\_prefix}} – The **Amazon Resource Name (ARN)** of the results destination in Amazon S3. The **Amazon Resource Name (ARN)** can be found on the **Properties** tab of the bucket in Amazon S3.
+
+1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.

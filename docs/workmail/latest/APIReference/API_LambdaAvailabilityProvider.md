@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_LambdaAvailabilityProvider.html
+---
+
+# LambdaAvailabilityProvider
+<a name="API_LambdaAvailabilityProvider"></a>
+
+**Important**
+End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the WorkMail console or WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
+
+Describes a Lambda based availability provider.
+
+## Contents
+<a name="API_LambdaAvailabilityProvider_Contents"></a>
+
+ ** LambdaArn **   <a name="workmail-Type-LambdaAvailabilityProvider-LambdaArn"></a>
+The Amazon Resource Name (ARN) of the Lambda that acts as the availability provider.
+Type: String
+Length Constraints: Minimum length of 49. Maximum length of 256.
+Pattern: `arn:aws:lambda:[a-z]{2}-[a-z]+-\d{1}:\d{12}:function:[a-zA-Z0-9\-_\.]+(:(\$LATEST|[a-zA-Z0-9\-_]+))?`
+Required: Yes
+
+## See Also
+<a name="API_LambdaAvailabilityProvider_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/workmail-2017-10-01/LambdaAvailabilityProvider)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/workmail-2017-10-01/LambdaAvailabilityProvider)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/workmail-2017-10-01/LambdaAvailabilityProvider)

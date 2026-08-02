@@ -1,0 +1,130 @@
+---
+source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_QueryGraph.html
+---
+
+# QueryGraph
+<a name="API_QueryGraph"></a>
+
+Queries entities in the graph store.
+
+## Request Syntax
+<a name="API_QueryGraph_RequestSyntax"></a>
+
+```
+POST /v2/domains/{{domainIdentifier}}/graph/query?maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+Content-type: application/json
+
+{
+   "additionalAttributes": {
+      "formNames": [ "{{string}}" ]
+   },
+   "match": [
+      { ... }
+   ]
+}
+```
+
+## URI Request Parameters
+<a name="API_QueryGraph_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [domainIdentifier](#API_QueryGraph_RequestSyntax) **   <a name="datazone-QueryGraph-request-uri-domainIdentifier"></a>
+The identifier of the Amazon DataZone domain.
+Pattern: `dzd[-_][a-zA-Z0-9_-]{1,36}`
+Required: Yes
+
+ ** [maxResults](#API_QueryGraph_RequestSyntax) **   <a name="datazone-QueryGraph-request-uri-maxResults"></a>
+The maximum number of entities to return in a single call to `QueryGraph`. When the number of entities to be listed is greater than the value of `MaxResults`, the response contains a `NextToken` value that you can use in a subsequent call to `QueryGraph` to list the next set of entities.
+Valid Range: Minimum value of 1. Maximum value of 50.
+
+ ** [nextToken](#API_QueryGraph_RequestSyntax) **   <a name="datazone-QueryGraph-request-uri-nextToken"></a>
+When the number of entities is greater than the default value for the `MaxResults` parameter, or if you explicitly specify a value for `MaxResults` that is less than the number of entities, the response includes a pagination token named `NextToken`. You can specify this `NextToken` value in a subsequent call to `QueryGraph` to list the next set of entities.
+Length Constraints: Minimum length of 1. Maximum length of 8192.
+
+## Request Body
+<a name="API_QueryGraph_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [additionalAttributes](#API_QueryGraph_RequestSyntax) **   <a name="datazone-QueryGraph-request-additionalAttributes"></a>
+Additional details on the queried entity that can be requested in the response.
+Type: [AdditionalAttributes](API_AdditionalAttributes.md) object
+Required: No
+
+ ** [match](#API_QueryGraph_RequestSyntax) **   <a name="datazone-QueryGraph-request-match"></a>
+List of query match clauses.
+Type: Array of [MatchClause](API_MatchClause.md) objects
+Array Members: Fixed number of 2 items.
+Required: Yes
+
+## Response Syntax
+<a name="API_QueryGraph_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "items": [
+      { ... }
+   ],
+   "nextToken": "string"
+}
+```
+
+## Response Elements
+<a name="API_QueryGraph_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [items](#API_QueryGraph_ResponseSyntax) **   <a name="datazone-QueryGraph-response-items"></a>
+The results of the `QueryGraph` action.
+Type: Array of [ResultItem](API_ResultItem.md) objects
+
+ ** [nextToken](#API_QueryGraph_ResponseSyntax) **   <a name="datazone-QueryGraph-response-nextToken"></a>
+When the number of entities is greater than the default value for the `MaxResults` parameter, or if you explicitly specify a value for `MaxResults` that is less than the number of entities, the response includes a pagination token named `NextToken`. You can specify this `NextToken` value in a subsequent call to `QueryGraph` to list the next set of entities.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 8192.
+
+## Errors
+<a name="API_QueryGraph_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+The request has failed because of an unknown error, exception or failure.
+HTTP Status Code: 500
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** UnauthorizedException **
+You do not have permission to perform this action.
+HTTP Status Code: 401
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by the AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_QueryGraph_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/datazone-2018-05-10/QueryGraph)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/datazone-2018-05-10/QueryGraph)

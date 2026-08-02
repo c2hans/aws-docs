@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_RefreshFailureEmailAlert.html
+---
+
+# RefreshFailureEmailAlert
+<a name="API_RefreshFailureEmailAlert"></a>
+
+The configuration settings for the email alerts that are sent when a dataset refresh fails.
+
+## Contents
+<a name="API_RefreshFailureEmailAlert_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** AlertStatus **   <a name="QS-Type-RefreshFailureEmailAlert-AlertStatus"></a>
+The status value that determines if email alerts are sent.
+Type: String
+Valid Values: `ENABLED | DISABLED`
+Required: No
+
+## See Also
+<a name="API_RefreshFailureEmailAlert_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/RefreshFailureEmailAlert)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/RefreshFailureEmailAlert)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/RefreshFailureEmailAlert)

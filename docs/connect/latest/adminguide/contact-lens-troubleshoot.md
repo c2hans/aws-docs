@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-troubleshoot.html
+---
+
+# Troubleshoot issues in Connect Customer Contact Lens
+<a name="contact-lens-troubleshoot"></a>
+
+## Why don't I see or hear unredacted content?
+<a name="where-is-unredacted-content"></a>
+
+If your organization is using the Contact Lens redaction feature, by default only redacted content appears in the Connect Customer admin website.
+
+You must have permissions to view unredacted content. For more information, see [Assign permissions to use Contact Lens conversational analytics in Connect Customer](permissions-for-contact-lens.md).

@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_VoiceAnalyticsProcessorConfiguration.html
+---
+
+# VoiceAnalyticsProcessorConfiguration
+<a name="API_media-pipelines-chime_VoiceAnalyticsProcessorConfiguration"></a>
+
+The configuration settings for a voice analytics processor.
+
+## Contents
+<a name="API_media-pipelines-chime_VoiceAnalyticsProcessorConfiguration_Contents"></a>
+
+ ** SpeakerSearchStatus **   <a name="chimesdk-Type-media-pipelines-chime_VoiceAnalyticsProcessorConfiguration-SpeakerSearchStatus"></a>
+The status of the speaker search task.
+Type: String
+Valid Values: `Enabled | Disabled`
+Required: No
+
+ ** VoiceToneAnalysisStatus **   <a name="chimesdk-Type-media-pipelines-chime_VoiceAnalyticsProcessorConfiguration-VoiceToneAnalysisStatus"></a>
+The status of the voice tone analysis task.
+Type: String
+Valid Values: `Enabled | Disabled`
+Required: No
+
+## See Also
+<a name="API_media-pipelines-chime_VoiceAnalyticsProcessorConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/chime-sdk-media-pipelines-2021-07-15/VoiceAnalyticsProcessorConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/chime-sdk-media-pipelines-2021-07-15/VoiceAnalyticsProcessorConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/chime-sdk-media-pipelines-2021-07-15/VoiceAnalyticsProcessorConfiguration)

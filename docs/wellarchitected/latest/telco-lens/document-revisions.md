@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/document-revisions.html
+---
+
+# Document revisions
+<a name="document-revisions"></a>
+
+The following table describes the documentation releases for the Telco Lens.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Initial release](#document-revisions) | Initial release of the Telco Lens. | December 30, 2025 |

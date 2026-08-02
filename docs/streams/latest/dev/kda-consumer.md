@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/streams/latest/dev/kda-consumer.html
+---
+
+# Develop consumers using Amazon Managed Service for Apache Flink
+<a name="kda-consumer"></a>
+
+You can use an Amazon Managed Service for Apache Flink application to process and analyze data in a Kinesis stream using SQL, Java, or Scala. Managed Service for Apache Flink applications can enrich data using reference sources, aggregate data over time, or use machine learning to find data anomalies. Then you can write the analysis results to another Kinesis stream, a Firehose delivery stream, or a Lambda function. For more information, see the [Managed Service for Apache Flink Developer Guide for SQL Applications](/kinesisanalytics/latest/dev/what-is.html) or the [Managed Service for Apache Flink Developer Guide for Flink Applications](/kinesisanalytics/latest/java/what-is.html).

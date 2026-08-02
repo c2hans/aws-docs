@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-experimentation-creating-prerequisites.html
+---
+
+# Step 1: Configuring prerequisites
+<a name="appconfig-experimentation-creating-prerequisites"></a>
+
+Before you begin, complete the following tasks:
++ **[Install and configure AWS AppConfig Agent](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-agent.html)**: AWS AppConfig experimentation requires AWS AppConfig Agent to deliver treatments to users. The agent retrieves feature flag and other configuration data from AWS AppConfig, caches it locally, and asynchronously polls the AWS AppConfig data plane for updates. This approach keeps feature flag and other configuration data readily available to your application while reducing latency and cost. The following topics describe how to install and configure AWS AppConfig Agent for each supported compute environment:
+  + [Using AWS AppConfig Agent with AWS Lambda](appconfig-integration-lambda-extensions.md)
+  + [Using AWS AppConfig Agent with Amazon EC2 and on-premises machines](appconfig-integration-ec2.md)
+  + [Using AWS AppConfig Agent with Amazon ECS and Amazon EKS](appconfig-integration-containers-agent.md)
+
+  Note that each section includes information about configuring IAM permissions so the agent can retrieve feature flags and other configuration data.

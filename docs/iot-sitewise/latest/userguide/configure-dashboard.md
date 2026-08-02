@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/configure-dashboard.html
+---
+
+# Configure dashboard
+<a name="configure-dashboard"></a>
+
+**Note**
+The SiteWise Monitor feature is no longer available to new customers. Existing customers can continue to use the service as normal. For more information, see [SiteWise Monitor availability change](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/iotsitewise-monitor-availability-change.html).
+
+ The **Dashboards** section lists the dashboards in the project. Select a dashboard from the list. The **Edit** mode allows you to configure your dashboard by adding widgets and configuring them. The **Preview** button lets you visualize your changes.
+
+![The IoT dashboard Project page with Edit highlighted.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/ai-dashboard-edit.png)
+
+Steps to configure your dashboard:
++ Drag and drop different type of data widgets to the dashboard canvas for data visualization.
++  Add data to the desired widgets, from the **Resource explorer** on the left. The **Resource explorer** consists of **Modeled**, **Unmodeled**, and **Dynamic assets** sections. Search by asset name or property name. Select the property to add and choose **Add**.
++  Fine tune the layout and style by changing the **Configurations** on widgets. Configure components including title, thresholds and other configuration specifics.
++  Configure the time range over which data is displayed.
+  +  Choose the time range over which data is displayed. Choose a **Time range** and **Refresh rate** from the top right hand corner, and personalize the range. Choose a rate at which the data is to be refreshed from the menu.
+  +  Select the **Time range** on a widget, by using your trackball mouse scroll wheel or Right-click. This moves the time range of display.
++ Choose **Save**.
+
+**Topics**
++ [Resource explorer](resource-exp.md)
++ [Widgets](dashboard-widgets.md)
++ [Configure widgets](dashboard-widgets-conf.md)
++ [Use widgets](dashboard-widgets-manip.md)
++ [Alarms in widgets](alarm-widgets.md)
++ [AWS IoT SiteWise Assistant use in widgets](assistant-widgets.md)
++ [Sample questions to ask AWS IoT SiteWise Assistant](assistant-questions.md)

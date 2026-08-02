@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/oe-definition.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# Definition
+<a name="oe-definition"></a>
+
+ There are four best practice areas for operational excellence in the cloud:
++  **Organization**
++  **Prepare**
++  **Operate**
++  **Evolve**
+
+ Your organization’s leadership defines business objectives. Your organization must understand requirements and priorities and use these to organize and conduct work to support the achievement of business outcomes. Your workload must emit the information necessary to support it. Implementing services to enable integration, deployment, and delivery of your workload will enable an increased ﬂow of beneficial changes into production by automating repetitive processes.
+
+ There may be risks inherent in the operation of your workload. You must understand those risks and make an informed decision to enter production. Your teams must be able to support your workload. Business and operational metrics derived from desired business outcomes will enable you to understand the health of your workload, your operations activities, and respond to incidents. Your priorities will change as your business needs and business environment changes. Use these as a feedback loop to continually drive improvement for your organization and the operation of your workload.

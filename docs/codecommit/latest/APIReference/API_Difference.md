@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_Difference.html
+---
+
+# Difference
+<a name="API_Difference"></a>
+
+Returns information about a set of differences for a commit specifier.
+
+## Contents
+<a name="API_Difference_Contents"></a>
+
+ ** afterBlob **   <a name="CodeCommit-Type-Difference-afterBlob"></a>
+Information about an `afterBlob` data type object, including the ID, the file mode permission code, and the path.
+Type: [BlobMetadata](API_BlobMetadata.md) object
+Required: No
+
+ ** beforeBlob **   <a name="CodeCommit-Type-Difference-beforeBlob"></a>
+Information about a `beforeBlob` data type object, including the ID, the file mode permission code, and the path.
+Type: [BlobMetadata](API_BlobMetadata.md) object
+Required: No
+
+ ** changeType **   <a name="CodeCommit-Type-Difference-changeType"></a>
+Whether the change type of the difference is an addition (A), deletion (D), or modification (M).
+Type: String
+Valid Values: `A | M | D`
+Required: No
+
+## See Also
+<a name="API_Difference_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/codecommit-2015-04-13/Difference)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/codecommit-2015-04-13/Difference)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/codecommit-2015-04-13/Difference)

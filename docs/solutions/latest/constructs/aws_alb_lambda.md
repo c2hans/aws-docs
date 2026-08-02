@@ -1,0 +1,186 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_alb_lambda.html
+---
+
+# aws-alb-lambda
+<a name="aws_alb_lambda"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_alb_lambda`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-alb-lambda`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.alblambda`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an an Application Load Balancer to an AWS Lambda function
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { AlbToLambda, AlbToLambdaProps } from '@aws-solutions-constructs/aws-alb-lambda';
+import * as acm from 'aws-cdk-lib/aws-certificatemanager';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+
+// Obtain a pre-existing certificate from your account
+const certificate = acm.Certificate.fromCertificateArn(
+    this,
+    'existing-cert',
+    "arn:aws:acm:us-east-1:123456789012:certificate/11112222-3333-1234-1234-123456789012"
+);
+
+const constructProps: AlbToLambdaProps = {
+  lambdaFunctionProps: {
+    code: lambda.Code.fromAsset(`lambda`),
+    runtime: lambda.Runtime.NODEJS_22_X,
+    handler: 'index.handler'
+  },
+  listenerProps: {
+    certificates: [certificate]
+  },
+  publicApi: true
+};
+
+// Note - all alb constructs turn on ELB logging by default, so require that an environment including account
+// and region be provided when creating the stack
+//
+// new MyStack(app, 'id', {env: {account: '123456789012', region: 'us-east-1' }});
+new AlbToLambda(this, 'new-construct', constructProps);
+```
+
+```
+from aws_solutions_constructs.aws_alb_lambda import AlbToLambda, AlbToLambdaProps
+from aws_cdk import (
+    aws_certificatemanager as acm,
+    aws_lambda as _lambda,
+    aws_elasticloadbalancingv2 as alb,
+    Stack
+)
+from constructs import Construct
+
+# Obtain a pre-existing certificate from your account
+certificate = acm.Certificate.from_certificate_arn(
+  self,
+  'existing-cert',
+  "arn:aws:acm:us-east-1:123456789012:certificate/11112222-3333-1234-1234-123456789012"
+)
+
+# Note - all alb constructs turn on ELB logging by default, so require that an environment including account
+# and region be provided when creating the stack
+#
+# MyStack(app, 'id', env=cdk.Environment(account='123456789012', region='us-east-1'))
+AlbToLambda(self, 'new-construct',
+            lambda_function_props=_lambda.FunctionProps(
+                runtime=_lambda.Runtime.PYTHON_3_14,
+                code=_lambda.Code.from_asset('lambda'),
+                handler='index.handler',
+            ),
+            listener_props=alb.BaseApplicationListenerProps(
+                certificates=[certificate]
+            ),
+            public_api=True)
+```
+
+```
+import software.constructs.Construct;
+import java.util.List;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awscdk.services.elasticloadbalancingv2.*;
+import software.amazon.awscdk.services.lambda.*;
+import software.amazon.awscdk.services.lambda.Runtime;
+import software.amazon.awsconstructs.services.alblambda.*;
+
+// Obtain a pre-existing certificate from your account
+ListenerCertificate listenerCertificate = ListenerCertificate
+        .fromArn("arn:aws:acm:us-east-1:123456789012:certificate/11112222-3333-1234-1234-123456789012");
+
+// Note - all alb constructs turn on ELB logging by default, so require that an environment including account
+// and region be provided when creating the stack
+//
+// new MyStack(app, "id", StackProps.builder()
+//         .env(Environment.builder()
+//                 .account("123456789012")
+//                 .region("us-east-1")
+//                 .build());
+new AlbToLambda(this, "AlbToLambdaPattern", new AlbToLambdaProps.Builder()
+        .lambdaFunctionProps(new FunctionProps.Builder()
+                .runtime(Runtime.NODEJS_22_X)
+                .code(Code.fromAsset("lambda"))
+                .handler("index.handler")
+                .build())
+        .listenerProps(new BaseApplicationListenerProps.Builder()
+                .certificates(List.of(listenerCertificate))
+                .build())
+        .publicApi(true)
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| loadBalancerProps? |  [elasticloadbalancingv2.ApplicationLoadBalancerProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationLoadBalancerProps.html)  | Optional custom properties for a new loadBalancer. Providing both this and existingLoadBalancer causes an error. This cannot specify a VPC, it will use the VPC in existingVpc or the VPC created by the construct. |
+| existingLoadBalancerObj? |  [elasticloadbalancingv2.ApplicationLoadBalancer](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationLoadBalancer.html)  | Existing Application Load Balancer to incorporate into the construct architecture. Providing both this and loadBalancerProps causes an error. The VPC containing this loadBalancer must match the VPC provided in existingVpc. |
+| listenerProps? |  [ApplicationListenerProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationListenerProps.html)  | Props to define the listener. Must be provided when adding the listener to an ALB (eg - when creating the alb), may not be provided when adding a second target to an already established listener. When provided, must include either a certificate or protocol: HTTP |
+| targetProps? |  [ApplicationTargetGroupProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationTargetGroupProps.html)  | Optional custom properties for a new target group. While this is a standard attribute of props for ALB constructs, there are few pertinent properties for a Lambda target. |
+| ruleProps? |  [AddRuleProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.AddRuleProps.html)  | Rules for directing traffic to the target being created. May not be specified for the first listener added to an ALB, and must be specified for the second target added to a listener. Add a second target by instantiating this construct a second time and providing the existingAlb from the first instantiation. |
+| vpcProps? |  [ec2.VpcProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.VpcProps.html)  | Optional custom properties for a VPC the construct will create. This VPC will be used by the new ALB and any Private Hosted Zone the construct creates (that’s why loadBalancerProps and privateHostedZoneProps can’t include a VPC). Providing both this and existingVpc causes an error. |
+| existingLambdaObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Optional - instance of an existing Lambda Function object, providing both this and `lambdaFunctionProps` will cause an error. |
+| lambdaFunctionProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html)  | Optional - user provided props to override the default props for the Lambda function. Providing both this and `existingLambdaObj` causes an error. |
+| existingVpc? |  [ec2.IVpc](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html)  | An existing VPC in which to deploy the construct. Providing both this and vpcProps causes an error. If the client provides an existing load balancer and/or existing Private Hosted Zone, those constructs must exist in this VPC. |
+| logAlbAccessLogs? | boolean | Whether to turn on Access Logs for the Application Load Balancer. Uses an S3 bucket with associated storage costs.Enabling Access Logging is a best practice. default - true |
+| albLoggingBucketProps? |  [s3.BucketProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | Optional properties to customize the bucket used to store the ALB Access Logs. Supplying this and setting logAccessLogs to false is an error. @default - none |
+| publicApi | boolean | Whether the construct is deploying a private or public API. This has implications for the VPC and ALB. |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| vpc |  [ec2.IVpc](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html)  | The VPC used by the construct (whether created by the construct or providedb by the client) |
+| loadBalancer |  [elasticloadbalancingv2.ApplicationLoadBalancer](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationLoadBalancer.html)  | The Load Balancer used by the construct (whether created by the construct or provided by the client) |
+| lambdaFunction |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Returns an instance of the Lambda function used in the pattern. |
+| listener |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationListener.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_elasticloadbalancingv2.ApplicationListener.html)  | The listener used by this pattern. |
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Application Load Balancer
+<a name="_application_load_balancer"></a>
++ Creates or configures an Application Load Balancer with:
+  + Required listeners
+  + New target group with routing rules if appropriate
+
+### AWS Lambda Function
+<a name="_aws_lambda_function"></a>
++ Configure limited privilege access IAM role for Lambda function
++ Enable reusing connections with Keep-Alive for NodeJs Lambda function
++ Enable X-Ray Tracing
++ Set Environment Variables
+  + AWS\_NODEJS\_CONNECTION\_REUSE\_ENABLED (for Node 10.x and higher functions)
+
+## Architecture
+<a name="_architecture"></a>
+
+![AWS architecture diagram showing Application Load Balancer, Lambda function, S3, and CloudWatch interactions.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-alb-lambda.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-alb-lambda) for this pattern to view the code, read/create issues and pull requests and more.

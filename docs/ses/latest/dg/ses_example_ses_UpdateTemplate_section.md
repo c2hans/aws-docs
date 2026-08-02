@@ -1,0 +1,188 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_UpdateTemplate_section.html
+---
+
+# Use `UpdateTemplate` with an AWS SDK
+<a name="ses_example_ses_UpdateTemplate_section"></a>
+
+The following code examples show how to use `UpdateTemplate`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Verify an email identity and send messages](ses_example_ses_Scenario_SendEmail_section.md)
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
+
+```
+//! Update an Amazon Simple Email Service (Amazon SES) template.
+/*!
+  \param templateName: The name of the template.
+  \param htmlPart: The HTML body of the email.
+  \param subjectPart: The subject line of the email.
+  \param textPart: The plain text version of the email.
+  \param clientConfiguration: AWS client configuration.
+  \return bool: Function succeeded.
+ */
+bool AwsDoc::SES::updateTemplate(const Aws::String &templateName,
+                                 const Aws::String &htmlPart,
+                                 const Aws::String &subjectPart,
+                                 const Aws::String &textPart,
+                                 const Aws::Client::ClientConfiguration &clientConfiguration) {
+    Aws::SES::SESClient sesClient(clientConfiguration);
+
+    Aws::SES::Model::Template templateValues;
+
+    templateValues.SetTemplateName(templateName);
+    templateValues.SetSubjectPart(subjectPart);
+    templateValues.SetHtmlPart(htmlPart);
+    templateValues.SetTextPart(textPart);
+
+    Aws::SES::Model::UpdateTemplateRequest updateTemplateRequest;
+    updateTemplateRequest.SetTemplate(templateValues);
+
+    Aws::SES::Model::UpdateTemplateOutcome outcome = sesClient.UpdateTemplate(updateTemplateRequest);
+
+    if (outcome.IsSuccess()) {
+        std::cout << "Successfully updated template." << std::endl;
+    } else {
+        std::cerr << "Error updating template. " << outcome.GetError().GetMessage()
+                  << std::endl;
+    }
+
+    return outcome.IsSuccess();
+}
+```
++  For API details, see [UpdateTemplate](https://docs.aws.amazon.com/goto/SdkForCpp/email-2010-12-01/UpdateTemplate) in *AWS SDK for C\+\+ API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
+
+```
+import { UpdateTemplateCommand } from "@aws-sdk/client-ses";
+import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
+import { sesClient } from "./libs/sesClient.js";
+
+const TEMPLATE_NAME = getUniqueName("TemplateName");
+const HTML_PART = "<h1>Hello, World!</h1>";
+
+const createUpdateTemplateCommand = () => {
+  return new UpdateTemplateCommand({
+    Template: {
+      TemplateName: TEMPLATE_NAME,
+      HtmlPart: HTML_PART,
+      SubjectPart: "Example",
+      TextPart: "Updated template text.",
+    },
+  });
+};
+
+const run = async () => {
+  const updateTemplateCommand = createUpdateTemplateCommand();
+
+  try {
+    return await sesClient.send(updateTemplateCommand);
+  } catch (err) {
+    console.log("Failed to update template.", err);
+    return err;
+  }
+};
+```
++  For API details, see [UpdateTemplate](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/ses/command/UpdateTemplateCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
+
+```
+class SesTemplate:
+    """Encapsulates Amazon SES template functions."""
+
+    def __init__(self, ses_client):
+        """
+        :param ses_client: A Boto3 Amazon SES client.
+        """
+        self.ses_client = ses_client
+        self.template = None
+        self.template_tags = set()
+
+    def _extract_tags(self, subject, text, html):
+        """
+        Extracts tags from a template as a set of unique values.
+
+        :param subject: The subject of the email.
+        :param text: The text version of the email.
+        :param html: The html version of the email.
+        """
+        self.template_tags = set(re.findall(TEMPLATE_REGEX, subject + text + html))
+        logger.info("Extracted template tags: %s", self.template_tags)
+
+    def update_template(self, name, subject, text, html):
+        """
+        Updates a previously created email template.
+
+        :param name: The name of the template.
+        :param subject: The subject of the email.
+        :param text: The plain text version of the email.
+        :param html: The HTML version of the email.
+        """
+        try:
+            template = {
+                "TemplateName": name,
+                "SubjectPart": subject,
+                "TextPart": text,
+                "HtmlPart": html,
+            }
+            self.ses_client.update_template(Template=template)
+            logger.info("Updated template %s.", name)
+            self.template = template
+            self._extract_tags(subject, text, html)
+        except ClientError:
+            logger.exception("Couldn't update template %s.", name)
+            raise
+```
++  For API details, see [UpdateTemplate](https://docs.aws.amazon.com/goto/boto3/email-2010-12-01/UpdateTemplate) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
+
+```
+    DATA(lo_template) = NEW /aws1/cl_sestemplate(
+      iv_templatename = iv_name
+      iv_subjectpart = iv_subject
+      iv_textpart = iv_text
+      iv_htmlpart = iv_html
+    ).
+
+    TRY.
+        lo_ses->updatetemplate( io_template = lo_template ).
+        MESSAGE 'Template updated successfully' TYPE 'I'.
+      CATCH /aws1/cx_sestmpldoesnotexistex INTO DATA(lo_ex1).
+        DATA(lv_error) = |Template does not exist: { lo_ex1->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex1.
+      CATCH /aws1/cx_sesinvalidtemplateex INTO DATA(lo_ex2).
+        lv_error = |Invalid template: { lo_ex2->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex2.
+      CATCH /aws1/cx_rt_generic INTO DATA(lo_ex_generic).
+        lv_error = |An error occurred: { lo_ex_generic->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex_generic.
+    ENDTRY.
+```
++  For API details, see [UpdateTemplate](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using Amazon SES with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

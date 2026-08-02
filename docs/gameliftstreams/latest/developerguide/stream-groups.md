@@ -1,0 +1,484 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/stream-groups.html
+---
+
+# Manage streaming with an Amazon GameLift Streams stream group
+<a name="stream-groups"></a>
+
+After you set up an Amazon GameLift Streams application, you're ready to manage and deploy compute resources to run and stream your application. An Amazon GameLift Streams *stream group* represents a collection of these compute resources. You specify the maximum number of concurrent streams to support by scaling the stream capacity.
+
+Amazon GameLift Streams allocates compute resources in the AWS Region where you create a stream group. You can also add remote locations to a stream group and manage capacity per location. It's a best practice to host stream sessions in locations that are geographically near your end users. This helps minimize latency and improve stream quality. For more information, refer to [AWS Regions and streaming locations supported by Amazon GameLift Streams](regions-quotas-rande.md).
+
+ In a stream group, you can specify one or more Amazon GameLift Streams applications that the stream group can stream. A single application can be in multiple stream groups, so you can set up different configurations or types of compute resources to stream the same application. For example, to provide two graphics-quality options for streaming an application, you can set up two stream groups with different stream class configurations and link them to the same application.
+
+ Conversely, a single stream group can have multiple applications: the *default application*, which you can set when you create the stream group, and additional *linked applications*. For more information, refer to [Overview of multi-application stream groups](multi-apps.md).
+
+How you relate your stream groups and applications together depends on your use case, but the relationship can be many-to-many.
+
+Stream groups should be recreated every 3-4 weeks to pick up important service updates and fixes. For more information, refer to [Stream group lifecycle](#stream-groups-lifecycle).
+
+## About stream capacity
+<a name="about-stream-capacity"></a>
+
+You manage the number of streams you can deliver concurrently to end-users by setting the stream group's capacity, or *stream capacity*. Stream capacity represents the number of concurrent stream sessions a stream group can support. It is configured at each location.
++  **Always-on capacity:** This setting, if non-zero, indicates minimum streaming capacity which is allocated to you and is never released back to the service. You pay for this base level of capacity at all times, whether used or idle.
++  **Maximum capacity:** This indicates the maximum capacity that the service can allocate for you. Newly created streams may take a few minutes to start. Capacity is released back to the service when idle. You pay for capacity that is allocated to you until it is released.
++  **Target-idle capacity:** This indicates idle capacity which the service pre-allocates and hold for you in anticipation of future activity. This helps to insulate your users from capacity-allocation delays. You pay for capacity which is held in this intentional idle state.
+
+If you have a stream group with an maximum capacity set to 100 at a location, this means the stream group has enough resources to stream to 100 end-users concurrently at that location. You can increase or decrease the stream capacity at any time, at each location (up to your current quota amount) to meet changes in user demand.
+
+Amazon GameLift Streams first tries to fulfill new session requests using idle capacity which is already allocated to you. If this causes the amount of idle capacity to drop below your target idle capacity, then new capacity is allocated asynchronously. If no idle capacity is available, the request is paused while new capacity is allocated on demand, up to the maximum capacity for the stream group. If the maximum is reached and there is still no idle capacity available, the session request will wait for an existing session to terminate and free capacity.
+
+When sessions terminate, the corresponding capacity is marked as idle. If there is more idle capacity than the target idle value, the excess capacity will be deallocated and returned to the service after a brief delay. The service will not deallocate idle capacity if that would drop your capacity level below the configured minimum (which could be zero).
+
+When specifying the stream capacity in stream groups with multi-tenant stream classes (which can stream more than 1 session per compute resource), the capacity must be a multiple of the tenancy. For example, the `gen6n_high` stream class has a multi-tenancy of 2. That means each compute resource that gets allocated in your stream group can stream to 2 clients. Therefore, the capacity you request must be in multiples of 2.
+
+Scaling the capacity reflects in your total cost for the stream group. Ensure that you set up billing alerts to manage your Amazon GameLift Streams costs. Refer to [Create billing alerts to monitor usage](pricing.md#pricing-billing-alerts).
+
+To change stream group capacity, edit your stream group settings and enter new values for the capacity settings. When you change always-on capacity, Amazon GameLift Streams adjusts allocated resources to match the new value by provisioning new resources or shutting down existing ones. Increasing always-on capacity can take more than a few minutes if resources aren't immediately available. Decreasing always-on capacity takes a few minutes to deprovision allocated resources.
+
+### Example: Stream capacity configurations
+<a name="capacity-configuration-examples"></a>
+
+The following examples demonstrate common stream capacity configurations for different use cases:
+
+1. **Cost-conscious development phase:** You are a developer who wants to save costs. You set `Minimum (always-on) capacity` = 0, `Maximum capacity` = 10, and `Target Idle (pre-warmed) capacity` = 1. This keeps at least one session available for fast start up.
+
+1. **Planned event with fixed demand:** You want fast session starts for a planned event with known demand. You set `Minimum (always-on) capacity` = 200, `Maximum capacity` = 200, and `Target Idle (pre-warmed) capacity` = 0. You pay only for 200 capacity. No scaling delays happen because demand is known.
+
+1. **Large-scale event with burst capacity:** You are planning for 1,000 users with 100 new sessions per minute at peak times. You set `Minimum` = 0, `Maximum` = 1,000, and `Target Idle` = 100. This saves money when idle. This keeps at least 100 sessions available for fast start up.
+
+**Note**
+The `OnDemandCapacity` input parameter is deprecated. Use `MaximumCapacity` instead when configuring capacity through the API.
+
+## Capacity and service quotas
+<a name="capacity-and-service-quotas"></a>
+
+Usage of Amazon GameLift Streams is subject to service quotas that limit the total number of GPUs (compute resources) you can configure for streaming in your account. The default quotas and the utilization of the quotas can be viewed in the Service Quota Console for GameLift Streams. Understanding how these quotas interact with stream capacity helps you plan your streaming infrastructure and avoid capacity limitations.
+
+More specifically, the GPU service quotas specify the maximum number of GPUs of a particular stream class family you can request per location across all stream groups in your account. For example, if your account has a limit of 5 `gen6n` GPUs in `us-west-2`, the sum of `gen6n` GPUs needed to provide the total stream capacity in `us-west-2` for all of your stream groups must be less than or equal to 5. This includes GPUs for both always-on and on-demand capacity.
+
+ Amazon GameLift Streams measures your service quotas in terms of allocated GPU totals. It is important to remember that some stream classes (such as `gen6n_high` or `gen6n_small`) share a GPU across concurrent sessions. Other stream classes such as `gen6n_ultra` and `gen6n_ultra_win2022` use one full GPU per concurrent session. Therefore, 10 GPUs can be allocated as a MaximumCapacity of 10 on a `gen6n_ultra` stream group, or a MaximumCapacity of 40 on a `gen6n_medium` stream class.
+
+### Example: How quotas affect capacity
+<a name="quota-capacity-example"></a>
+
+The following example demonstrates how service quotas interact with stream capacity across multiple stream groups and locations. In this example, assume your account has a quota of 10 `gen6n` GPUs per location.
+
+1. **Create a single-tenant stream group:** You create a stream group using the `gen6n_ultra` stream class with 5 total capacity (always-on plus on-demand) in `us-east-2`. Because this stream class has 1:1 tenancy (1 stream per GPU), you need 5 GPUs for 5 total capacity. This leaves you with 5 remaining GPUs in `us-east-2`.
+
+1. **Create a multi-tenant stream group:** You create another stream group using the `gen6n_high` stream class with 6 total capacity in `us-east-2`. Because this stream class has 1:2 tenancy (2 streams per GPU), you only need 3 GPUs for 6 total capacity. This leaves you with 2 remaining GPUs in `us-east-2`.
+
+1. **Add capacity in other locations:** After creating these stream groups, you have 2 remaining GPUs in `us-east-2`, but you still have 10 GPUs available in other locations such as `us-west-2` or `eu-west-1`. You can add these locations to either of the stream groups you created earlier or create new stream groups that have these locations.
+
+This example shows that quotas are enforced per location and across all of your stream groups, allowing you to distribute your streaming capacity across multiple geographic regions while staying within service limits.
+
+**Note**
+You can view your Applied account level or default quota, including the utilization of those quotas, in the Service Quotas console by selecting the GameLift Streams as the AWS service. For more information, see [Amazon GameLift Streams service quotas](quotas.md).
+
+## About locations
+<a name="about-hosting-locations"></a>
+
+ The location is where Amazon GameLift Streams allocates compute resources to host your application and stream to users. For lower latency and better quality, you should choose locations closer to your users. By default, you can stream from the AWS Region where you created your stream group, known as the *primary location*. Additionally, a stream group can extend its coverage to stream from other supported locations, known as *remote locations*.
+
+ For a complete list of supported locations, refer to [AWS Regions and streaming locations](regions-quotas-rande.md).
+
+**Multi-location stream group**
+ A stream group that's configured to host applications and stream sessions from multiple locations, in addition to the primary location (the AWS Region where you created the stream group). You manage capacity for each location.
+
+## Create a stream group
+<a name="stream-groups-create"></a>
+
+------
+#### [ Console ]
+
+**To create a stream group in the Amazon GameLift Streams console**
+
+1.  Sign in to the AWS Management Console and open the [Amazon GameLift Streams console](https://console.aws.amazon.com/gameliftstreams/). Choose the AWS Region where you want to create your stream group. This Region must be the same as that of the application that you want to stream with the stream group. For more information, refer to [Choosing a Region](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/select-region.html) in the *AWS Management Console Getting Started Guide*.
+
+1.  To open the creation workflow, in the navigation pane, choose **Stream groups**, and then choose **Create stream group**.
+
+1. In **Define stream group**, enter the following:
+
+   1. **Description**
+
+       A human-readable label for your stream group. This value doesn't have to be unique. As a best practice, use a meaningful description, name, or label for the stream group. You can edit this field at any time.
+
+   1. **Tags**
+
+       Tags are labels that can help you organize your AWS resources. For more information, refer to [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html).
+
+1.  In **Select stream class**, choose a stream class for the stream group.
+
+   1. **Stream class options**
+
+      The type of compute resources to run and stream applications with. This choice impacts the quality of the streaming experience and the cost. You can specify only one stream class per stream group. Choose the class that best fits your application.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftstreams/latest/developerguide/stream-groups.html)
+
+   To continue, choose **Next**.
+
+1.  In **Link application**, choose an application that you want to stream, or select "**No application**" to choose one at a later time. You can edit the stream group after it has been created to add or remove applications. You can only link an application that's in `Ready` status and has a runtime that's compatible with the stream class you've chosen. By default, these are the only applications that are shown in the table. To see all applications in `Ready` status, choose `All runtimes` in the drop down list.
+**Note**
+ If you don't see your application listed, then check the current AWS Region setting. You can only link an application to a stream group that's in the same Region.
+
+    To continue, choose **Next**.
+
+1.  In **Configure stream settings**, under **Locations and capacity**, choose one or more locations where your stream group will have capacity to stream your application. By default, the region where you create the stream group, known as the *primary location*, has already been added to your stream group and cannot be removed. You can add additional locations by checking the box next to each location that you want to add. For lower latency and better quality streaming, you should choose locations closer to your users.
+
+    For each location, you can specify its *streaming capacity*. Stream capacity represents the number of concurrent streams that can be active at a time. You set stream capacity per location in each stream group.
+   +  **Always-on capacity:** This setting, if non-zero, indicates minimum streaming capacity which is allocated to you and is never released back to the service. You pay for this base level of capacity at all times, whether used or idle.
+   +  **Maximum capacity:** This indicates the maximum capacity that the service can allocate for you. Newly created streams may take a few minutes to start. Capacity is released back to the service when idle. You pay for capacity that is allocated to you until it is released.
+   +  **Target-idle capacity:** This indicates idle capacity which the service pre-allocates and hold for you in anticipation of future activity. This helps to insulate your users from capacity-allocation delays. You pay for capacity which is held in this intentional idle state.
+
+    You can increase or decrease your total stream capacity at any time to meet changes in user demand for a location by adjusting either capacity. Amazon GameLift Streams fulfills streaming requests using the idle, pre-allocated resources in the always-on capacity pool if any are available. If all always-on capacity is in use, Amazon GameLift Streams will provision additional compute resources up to the maximum number specified in on-demand capacity. As allocated capacity scales, the change is reflected in your total cost for the stream group.
+
+    Linked applications will be automatically replicated to each enabled location. An application must finish replicating in a remote location before the remote location can host a stream. To check on the replication status, open the stream group after it has been created and refer to the **Replication status** column in the table of linked applications. Click on the current status to see the replication status for each added location.
+**Note**
+ Application data will be stored in all enabled locations including the primary location for this stream group. Stream session data will be stored in both the primary location and the location where the streaming occurred.
+
+1.  In **Review and create stream group**, verify your stream group configuration and make changes as needed. When everything is correct, choose **Create stream group**.
+
+------
+#### [ CLI ]
+
+**Prerequisite**
+
+ You must configure the AWS CLI with your user credentials and your chosen AWS Region. For setup instructions, refer to [Download the AWS CLI](setting-up.md#setting-up-prereqs).
+
+**To create a stream group using the AWS CLI**
+
+ In your AWS CLI use the [CreateStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamGroup.html) command, customized for your content.
+
+```
+aws gameliftstreams create-stream-group \
+    --description "{{Test_gen4_high}}" \
+    --default-application-identifier {{arn:aws:gameliftstreams:us-west-2:111122223333:application/a-9ZY8X7Wv6}} \
+    --stream-class {{gen4n_high}} \
+    --location-configurations '[{"LocationName": "{{us-east-1}}", "AlwaysOnCapacity": {{2}}, "MaximumCapacity": {{6}}, "TargetIdleCapacity": {{1}}}]'
+```
+
+where
+
+`description`:
+ A human-readable label for your stream group. This value doesn't have to be unique. As a best practice, use a meaningful description, name, or label for the stream group. You can edit this field at any time.
+
+`default-application-identifier`
+ The [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) value or ID assigned to an Amazon GameLift Streams application resource. The application must be in `READY` status.
+ARN example: `arn:aws:gameliftstreams:us-west-2:111122223333:application/a-9ZY8X7Wv6`
+ID example: `a-9ZY8X7Wv6`
+
+`stream-class`
+**Stream class options**
+The type of compute resources to run and stream applications with. This choice impacts the quality of the streaming experience and the cost. You can specify only one stream class per stream group. Choose the class that best fits your application.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftstreams/latest/developerguide/stream-groups.html)
+
+`location-configurations`
+A set of locations to add to this stream group, and their capacities. By default, if no capacities are specified, Amazon GameLift Streams will only allocate enough always-on stream capacity to start one stream in the location where the stream group is created. For a complete list of locations that Amazon GameLift Streams supports, refer to [AWS Regions and streaming locations supported by Amazon GameLift Streams](regions-quotas-rande.md).
+Values for capacity must be whole number multiples of the tenancy value of the stream group's stream class.
+
+ If the request is successful, then Amazon GameLift Streams returns a response similar to the following:
+
+```
+{
+    "Arn": "arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4",
+    "Description": "Test_gen4_high",
+    "DefaultApplication": {
+        "Id": "a-9ZY8X7Wv6"
+    },
+    "StreamClass": "gen4n_high",
+    "Id": "sg-1AB2C3De4",
+    "Status": "ACTIVATING",
+    "LastUpdatedAt": "2024-11-18T15:49:01.482000-08:00",
+    "CreatedAt": "2024-11-18T15:49:01.482000-08:00"
+}
+```
+
+------
+
+ Amazon GameLift Streams begins searching for unallocated computing resources and provisioning them for the new stream group, which can take several minutes. During this time, the new stream group is in **Activating** status.
+
+ You can adjust the stream group's capacity when its status is **Active**. For more information, refer to [Edit capacity](#stream-groups-edit-capacity).
+
+ When the stream group is in **Active** status, it's ready to deploy resources for streaming. To start streaming, refer to [Start stream sessions with Amazon GameLift Streams](stream-sessions.md).
+
+## Edit general settings
+<a name="stream-groups-edit-general"></a>
+
+ Amazon GameLift Streams groups the following settings together in the console under **Stream group settings**: **Status**, **Stream group ID**, **Description**, **Stream group ARN**, and **Stream class**. Of these, the only one that you can update without creating a new stream group is **Description**.
+
+------
+#### [ Console ]
+
+1. Sign in to the AWS Management Console and open the [Amazon GameLift Streams console](https://console.aws.amazon.com/gameliftstreams/).
+
+1. In the navigation bar, choose **Stream groups** to view a list of your existing stream groups. Choose the stream group you want to edit.
+
+1. In the stream group detail page, choose **Edit settings**.
+
+1. To update the description, enter a new value.
+
+------
+#### [ CLI ]
+
+**Prerequisite**
+
+ You must configure the AWS CLI with your user credentials and your chosen AWS Region. For setup instructions, refer to [Download the AWS CLI](setting-up.md#setting-up-prereqs).
+
+**To edit a stream group's description using the AWS CLI**
+
+ In your AWS CLI use the [UpdateStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_UpdateStreamGroup.html) command, customized for your content.
+
+```
+aws gameliftstreams update-stream-group \
+    --identifier {{arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4}} \
+    --description "{{MyGame - Ultra}}"
+```
+
+where
+
+`identifier`
+ An [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) or ID that uniquely identifies the stream group resource.
+ARN example: `arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4`
+ID example: `sg-1AB2C3De4`
+
+`description`
+ A human-readable label for your stream group. This value doesn't have to be unique. As a best practice, use a meaningful description, name, or label for the stream group. You can edit this field at any time.
+
+------
+
+## Edit capacity
+<a name="stream-groups-edit-capacity"></a>
+
+Scale your stream groups by adjusting the capacity for each location.
+
+ Refer to [Amazon GameLift Streams service quotas](quotas.md) to learn more about stream group capacity quotas per AWS account, per location, and how to increase these quotas.
+
+------
+#### [ Console ]
+
+1. Sign in to the AWS Management Console and open the [Amazon GameLift Streams console](https://console.aws.amazon.com/gameliftstreams/).
+
+1. In the navigation bar, choose **Stream groups** to view a list of your existing stream groups. Choose the stream group you want to edit.
+
+1. In the stream group detail page, choose **Edit configuration**.
+
+1. For each location, enter new always-on capacity, maximum capacity, and target-idle capacity values in the relevant cells in the table. Values for capacity must be whole number multiples of the tenancy value of the stream group's stream class.
+
+   If you set the always-on capacity value to zero, the stream group won't allocate any hosts to stream.
+
+------
+#### [ CLI ]
+
+**Prerequisite**
+
+ You must configure the AWS CLI with your user credentials and your chosen AWS Region. For setup instructions, refer to [Download the AWS CLI](setting-up.md#setting-up-prereqs).
+
+**To edit stream capacity using the AWS CLI**
+
+ In your AWS CLI use the [UpdateStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_UpdateStreamGroup.html) command, customized for your content.
+
+```
+aws gameliftstreams update-stream-group \
+    --identifier {{arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4}} \
+    --location-configurations '[{"LocationName": "{{us-east-1}}", "AlwaysOnCapacity": {{4}}, "MaximumCapacity": {{8}}}, \
+        {"LocationName": "{{ap-northeast-1}}", "AlwaysOnCapacity": {{0}}, "MaximumCapacity": {{2}}, "TargetIdleCapacity": {{1}}}]'
+```
+
+where
+
+`identifier`
+ An [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) or ID that uniquely identifies the stream group resource.
+ARN example: `arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4`
+ID example: `sg-1AB2C3De4`
+
+`location-configurations`
+A set of locations to update in this stream group with their new capacities. Values for capacity must be whole number multiples of the tenancy value of the stream group's stream class.
+
+------
+
+ When you update a stream group location's capacity, Amazon GameLift Streams will begin processing your request, which can take a some time. During this time, Amazon GameLift Streams works to allocate or release resources in the stream group as needed to meet the desired always-on stream capacity you set. You can view the provisioning status of your stream capacity by viewing the **Stream group details** page in the Amazon GameLift Streams console, or by calling the [GetStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetStreamGroup.html) API.
+
+ When your stream group is in **Active** status, has available stream capacity, and the application has finished replicating to the location where you want to stream, you can start streaming. For more information, refer to [Start stream sessions with Amazon GameLift Streams](stream-sessions.md).
+
+## Capacity scale-down behavior
+<a name="stream-group-scaling-behavior"></a>
+
+ When you scale down capacity, Amazon GameLift Streams waits until the host is idle before releasing it. Since a host can support 1 or 2 sessions, the host is idle only when all active sessions on the host end. A stream session ends when the user ends their session or the session times out. Therefore, in extreme situations when existing sessions are allowed to reach the maximum possible duration, it may take up to 24 hours to reach the desired capacity. If you want to force all active stream sessions in a stream group to end, you can delete the stream group in the console or by using the [DeleteStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_DeleteStreamGroup.html) API, or you can use the [TerminateStreamSession](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_TerminateStreamSession.html) API to end active sessions one at a time.
+
+## Add locations in a stream group
+<a name="stream-groups-add-locations"></a>
+
+------
+#### [ Console ]
+
+**To add locations to a stream group using the Amazon GameLift Streams console**
+
+1.  In the navigation bar, choose **Stream groups** to view a list of your existing stream groups. Choose the stream group you want to add new locations to.
+
+1. In the **Stream group details** page, choose **Edit configuration**.
+
+1.  Select the checkbox next to the location(s) you want to add to this stream group, and then set their capacities.
+
+1.  Review the summary of your selected locations, including the cost for stream capacity. Choose **Save ** to confirm your selection.
+
+------
+#### [ CLI ]
+
+**Prerequisite**
+
+ You must configure the AWS CLI with your user credentials and your chosen AWS Region. For setup instructions, refer to [Download the AWS CLI](setting-up.md#setting-up-prereqs).
+
+ **To add locations to a stream group using the AWS CLI**
+
+ In your AWS CLI use the [AddStreamGroupLocations](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_AddStreamGroupLocations.html) command, customized for your content.
+
+```
+aws gameliftstreams add-stream-group-locations \
+    --identifier {{arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4}}
+    --location-configurations '[{"LocationName": "{{us-east-1}}", "AlwaysOnCapacity": {{2}}, "MaximumCapacity": {{4}}, "TargetIdleCapacity": {{1}}}]'
+```
+
+where
+
+`identifier`
+ An [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) or ID that uniquely identifies the stream group resource.
+ARN example: `arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4`
+ID example: `sg-1AB2C3De4`
+
+`location-configurations`
+A set of locations to add to this stream group, and their capacities. For a complete list of locations that Amazon GameLift Streams supports, refer to [AWS Regions and streaming locations supported by Amazon GameLift Streams](regions-quotas-rande.md).
+Values for capacity must be whole number multiples of the tenancy value of the stream group's stream class.
+
+------
+
+ When your application has completed replicating to the new location(s) and your stream group has available stream capacity, you can start streaming from the new location(s). For more information on streaming, refer to [Start stream sessions with Amazon GameLift Streams](stream-sessions.md). Amazon GameLift Streams will begin processing your request. During this time, Amazon GameLift Streams works to replicate your application and allocate compute resources in the new locations. You can view the status of the replication from the **Linked applications** section of the **Stream group details** page by clicking on the status in the **Replication status** column.
+
+## Remove locations in a stream group
+<a name="stream-groups-delete-locations"></a>
+
+ To stop using compute resources from specific locations, you can remove the locations from your stream group. You cannot remove the primary location of a stream group. However, if you don't want compute resources in that location, then you can set the stream capacities to zero.
+
+**Warning**
+ When you remove a location in a stream group, Amazon GameLift Streams disconnects active streams in that location, which stops the stream of any connected end users.
+
+------
+#### [ Console ]
+
+**To remove locations from a stream group using the Amazon GameLift Streams console**
+
+1. In the navigation pane, choose **Stream groups** to view a list of your existing stream groups.
+
+1. Choose the name of the stream group that you want to remove locations from.
+
+1. In the **Stream group details** page, choose **Edit configuration**.
+
+1. Uncheck the checkbox next to the name of the location that you want to remove.
+
+1. Choose **Save**.
+
+------
+#### [ CLI ]
+
+**Prerequisite**
+
+ You must configure the AWS CLI with your user credentials and your chosen AWS Region. For setup instructions, refer to [Download the AWS CLI](setting-up.md#setting-up-prereqs).
+
+ **To remove locations from a stream group using the AWS CLI**
+
+ In your AWS CLI use the [RemoveStreamGroupLocations](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_RemoveStreamGroupLocations.html) command, customized for your content.
+
+```
+aws gameliftstreams remove-stream-group-locations \
+    --identifier {{arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4}}
+    --locations {{us-east-1 eu-central-1}}
+```
+
+where
+
+`identifier`
+ An [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) or ID that uniquely identifies the stream group resource.
+ARN example: `arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4`
+ID example: `sg-1AB2C3De4`
+
+`locations`
+ A set of locations to remove from this stream group. For a complete list of locations that Amazon GameLift Streams supports, refer to [AWS Regions and streaming locations supported by Amazon GameLift Streams](regions-quotas-rande.md).
+
+------
+
+## Delete a stream group
+<a name="stream-groups-delete"></a>
+
+You can delete a stream group that's in any status. This action permanently deletes the stream group and releases its compute resources. If there are streams in process, then this action stops them and your end users can no longer view the stream.
+
+As a best practice, before you delete a stream group, check for streams in process and take steps to stop them.
+
+------
+#### [ Console ]
+
+**To delete a stream group using the Amazon GameLift Streams console**
+
+1.  Sign in to the AWS Management Console and open the [Amazon GameLift Streams console](https://console.aws.amazon.com/gameliftstreams/).
+
+1.  To view a list of your existing stream groups, in the navigation pane, choose **Stream groups**.
+
+1.  Choose the name of the stream group that you want to delete.
+
+1.  On the stream group detail page, choose **Delete**.
+
+1.  In the **Delete** dialog box, confirm the delete action.
+
+------
+#### [ CLI ]
+
+**Prerequisite**
+
+ You must configure the AWS CLI with your user credentials and your chosen AWS Region. For setup instructions, refer to [Download the AWS CLI](setting-up.md#setting-up-prereqs).
+
+ **To delete your stream group using the AWS CLI**
+
+ In your AWS CLI use the [DeleteStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_DeleteStreamGroup.html) command, customized for your content.
+
+```
+aws gameliftstreams delete-stream-group \
+    --identifier {{arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4}}
+```
+
+ where
+
+`identifier`
+ An [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html) or ID that uniquely identifies the stream group resource.
+ARN example: `arn:aws:gameliftstreams:us-west-2:111122223333:streamgroup/sg-1AB2C3De4`
+ID example: `sg-1AB2C3De4`
+
+------
+
+ Amazon GameLift Streams begins releasing compute resources and deleting the stream group. During this time, the stream group is in **Deleting** status. After Amazon GameLift Streams deletes the stream group, you can no longer retrieve it.
+
+## Linked applications
+<a name="stream-groups-linking"></a>
+
+ If you want to stream multiple application using the same pool of compute resources, then you can link multiple applications to the same stream group. Similarly, if you want to stream an application using different sets of compute resources, then you can link an application to multiple stream groups.
+
+ For more information about linking applications to stream groups, refer to [Overview of multi-application stream groups](multi-apps.md).
+
+## Stream group lifecycle
+<a name="stream-groups-lifecycle"></a>
+
+ Stream groups have a maximum lifespan of 365 days. As a best practice, we recommend that you recreate stream groups every 3-4 weeks to receive important service updates and fixes and ensure optimal performance. Recreating a stream group does not affect your uploaded applications.
+
+ As stream groups age, the following restrictions apply:
++ **At 180 days**: You can no longer update the stream group with new application associations
++ **At 365 days**: The stream group expires and can no longer stream sessions
+
+The account associated with the stream group will receive two reminder notifications from AWS Health: one on the 45-day and a second reminder on the 150-day. These notifications will remind you that application association functionality will be lost on the 180-day. There will also be one final notification on 335-day reminding you that stream groups will expire on 365-day. Maintenance warnings also appear on the AWS Health dashboard and on stream group pages in the Amazon GameLift Streams console.
+
+ To find the expiration date of a stream group, view the **Stream group details** page on the console, or use the `ExpiresAt` field in the [GetStreamGroup](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetStreamGroup.html) API response.
+
+ An expired stream group has a status of `EXPIRED` and becomes read-only. You cannot update it or start new stream sessions. To regain functionality, recreate the stream group.
+
+## Stream group maintenance
+<a name="stream-groups-maintenance"></a>
+
+ Whenever a feature is released that requires a new stream group to use it, you will see a "Maintenance required" message at the top of the stream group's detail page to inform you that it is outdated. Recreating a stream group is a manual process, but to help you do it, use the **Create Stream Group** button in the message to start the process. Some of the fields will be filled in for you.
+
+ Stream group maintenance is also required when the stream group is over 180 days old. You will no longer be able to link new applications to these older stream groups until they are recreated. At 365 days, streaming from the stream group will not be possible, and no changes to the stream group will be permitted.

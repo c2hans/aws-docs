@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/developerguide/search-nearby-how-to.html
+---
+
+# How to use SearchNearby
+<a name="search-nearby-how-to"></a>
+
+This section contains a variety of how to guides and examples for how to use SearchNearby.
+
+**Topics**
++ [How to search nearby from a position](how-to-search-nearby.md)
++ [How to search nearby places based on category](how-to-search-nearby-category.md)
++ [How to search nearby places based on food type](how-to-search-nearby-food.md)
++ [How to search nearby based on business chain](how-to-search-nearby-business.md)
++ [How to search nearby within a country](how-to-search-nearby-country.md)
++ [How to search nearby using geospatial context](how-to-search-nearby-geospatial.md)
++ [How to get cross-references for nearby places](how-to-search-nearby-cross-references.md)

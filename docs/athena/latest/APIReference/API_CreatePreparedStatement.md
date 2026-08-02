@@ -1,0 +1,87 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/APIReference/API_CreatePreparedStatement.html
+---
+
+# CreatePreparedStatement
+<a name="API_CreatePreparedStatement"></a>
+
+Creates a prepared statement for use with SQL queries in Athena.
+
+## Request Syntax
+<a name="API_CreatePreparedStatement_RequestSyntax"></a>
+
+```
+{
+   "Description": "{{string}}",
+   "QueryStatement": "{{string}}",
+   "StatementName": "{{string}}",
+   "WorkGroup": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_CreatePreparedStatement_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [Description](#API_CreatePreparedStatement_RequestSyntax) **   <a name="athena-CreatePreparedStatement-request-Description"></a>
+The description of the prepared statement.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+ ** [QueryStatement](#API_CreatePreparedStatement_RequestSyntax) **   <a name="athena-CreatePreparedStatement-request-QueryStatement"></a>
+The query string for the prepared statement.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 262144.
+Required: Yes
+
+ ** [StatementName](#API_CreatePreparedStatement_RequestSyntax) **   <a name="athena-CreatePreparedStatement-request-StatementName"></a>
+The name of the prepared statement.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[a-zA-Z_][a-zA-Z0-9_@:]{1,256}`
+Required: Yes
+
+ ** [WorkGroup](#API_CreatePreparedStatement_RequestSyntax) **   <a name="athena-CreatePreparedStatement-request-WorkGroup"></a>
+The name of the workgroup to which the prepared statement belongs.
+Type: String
+Pattern: `[a-zA-Z0-9._-]{1,128}`
+Required: Yes
+
+## Response Elements
+<a name="API_CreatePreparedStatement_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+<a name="API_CreatePreparedStatement_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalServerException **
+Indicates a platform issue, which may be due to a transient condition or outage.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+Indicates that something is wrong with the input to the request. For example, a required parameter may be missing or out of range.
+ ** AthenaErrorCode **
+The error code returned when the query execution failed to process, or when the processing request for the named query failed.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_CreatePreparedStatement_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/athena-2017-05-18/CreatePreparedStatement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/athena-2017-05-18/CreatePreparedStatement)

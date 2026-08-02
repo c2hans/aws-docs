@@ -1,0 +1,94 @@
+---
+source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/customer-agreements-dashboard.html
+---
+
+# Customer agreements dashboard
+<a name="customer-agreements-dashboard"></a>
+
+The Customer agreements dashboard provides an overview of the agreements and customers who subscribe to your products in AWS Marketplace. The dashboard provides data on your new and active agreements, plus customer trends and profiles.
+
+**Note**
+To unlock this dashboard, you must enroll the [AWS Marketplace Seller Prime](https://pages.awscloud.com/aws-marketplace-seller-prime.html) program.
+To open this dashboard, sign in to the [AWS Marketplace Management Portal](https://us-east-1.console.aws.amazon.com/partnercentral/home), choose **Insights**, **Marketing**, and then choose the **Customer agreements** tab.
+
+For more information about using the AWS Marketplace dashboards, see [Seller dashboards](dashboards.md), earlier in this section.
+
+**Topics**
++ [Section 1: Filters](#customer-agreements-filters)
++ [Section 2: Date filter deep dive](#customer-agreements-date-deep-dive)
++ [Section 3:  Public and private offer agreements](#customer-agreements-public-private-agreements)
++ [Section 4:  Customer metrics](#section-5-customer-metrics)
+
+## Section 1: Filters
+<a name="customer-agreements-filters"></a>
+
+You can use the following filters to refine your agreements data.
+
+|  Control name  |  Description  |
+| --- | --- |
+|  Product title  |  The title of the product.  |
+|  Date filter  |  Includes data for the past 30, 60, and 90 days, the trailing 12 months (TTM), and year to date (YTD). Choose custom to define a specific start and end date.  |
+|  Customer industry  |  The industry that AWS defines for a customer who subscribed a seller product.  |
+|  Customer segment  |  The segment that AWS defines for a customer who subscribed a seller product. Customer segments include: [See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/customer-agreements-dashboard.html)  |
+
+For more information about filtering, see [Filtering data on Quick](https://docs.aws.amazon.com/quicksight/latest/user/adding-a-filter.html) in the *Amazon Quick User Guide*.
+
+## Section 2: Date filter deep dive
+<a name="customer-agreements-date-deep-dive"></a>
+
+This date filter applies to all the metrics on the customer agreement dashboards.
+
+For example, when you use the default year-to-date filter value, the follpwing metrics appear:
+
+|  Metric  |  Description  |
+| --- | --- |
+|  Public offer agreement count  |  Number of agreements with public offer as offer visibility that have at least 1 active day within YTD.  |
+|  Private offer agreement count  |  Number of agreements with private offer as offer visibility that have at least 1 active day within YTD.  |
+|  New public offer agreement count  |  Number of agreements with public offer as offer visibility that have acceptance date within YTD.  |
+|  New private offer agreement count  |  Number of agreements with private offer as offer visibility that have acceptance date within YTD.  |
+|  Active customers  |  Number of unique customers, identified as subscriber AWS account ID, that have at least 1 active agreement within YTD. Active agreement is defined as an agreement with at least 1 active day during the time period.  |
+|  New paying customers  |  Number of unique customers, identified as subscriber AWS account ID, who have their first billing month within YTD.  |
+
+## Section 3:  Public and private offer agreements
+<a name="customer-agreements-public-private-agreements"></a>
+
+This section of the dashboard displays an overview of your agreements. Key performance indicators (KPIs) include the number of public offer agreements, the number of private offer agreements, the number of new public offer agreements, and the number of new private offer agreements. You can see the year-over-year or period-over-period changes in volume and percentage. You can update the date range by updating the date filter in the filter section.
+
+ An *agreement* is a contract signed between a proposer (the product or service owner) and an accepter (the customer) to start using a product.
+
+**Note**
+New agreement metrics include active, expired, cancelled, and terminated agreements.
+
+ The following table lists and describes the agreement statuses.
+
+|  Status  |  Description  |
+| --- | --- |
+|  Active  |  Some or all of the terms of the agreement are in-force.  |
+|  Expired  |  The agreement ended on its pre-agreed end date.  |
+|  Canceled  |  The acceptor chooses to end the agreement before its end date.  |
+|  Terminated  |  The agreement ended before its pre-agreed end date due to an  AWS-initiated termination event, such as a payment failure.  |
+|  Renewed  |  The agreement was renewed into a new agreement using functionality such as auto-renewal.  |
+|  Replaced  |  The agreement was replaced using a replacement offer.  |
+
+## Section 4:  Customer metrics
+<a name="section-5-customer-metrics"></a>
+
+This section of the dashboard provides customer trends for a specified date range. KPIs include the number of active customers and the number of new paying customers.
++ **Monthly trend** – Provides the monthly view for the number of active customers and the number of new paying customers based on the filter within the chart.
++ **Customer metrics** – Provides data on the number of active customers and the number of new paying customers, based on the chosen metric filter. You can select a customer segment or an industry to understand how each contributes to the total customer metric.
+
+**Note**
+Agreements have a given status. For information about the statuses, see the [ table in the previous section](#customer-agreements-public-private-agreements).
+
+The following table lists and describes the metrics.
+
+|  Metrics  |  Description  |
+| --- | --- |
+|  Public offer agreements  | The number of agreements identified as agreement IDs with public offer visibility; the length of the agreement has at least one day of overlap with the selected date range; the length is identified between the agreement start date and agreement end date. |
+|  Private offer agreements  | The number of agreements identified as agreement IDs with private offer visibility; the length of the agreement has at least one day of overlap with the selected date range; the length is identified between agreement start date and agreement end date.  |
+|  New public offer agreements  | The number of agreements identified as agreement ID with public offer visibility; the agreement acceptance date falls within the selected date range.  |
+|  New private offer agreements  |  The number of agreements identified as agreement IDs with private offer visibility; the agreement acceptance date falls within the selected date range.  |
+|  Active customers  | The number of customers identified as subscriber AWS account IDs with at least 1 active agreement; the length of agreement has at least one day overlap with the selected date range  |
+| New paying customers  |  The number of customers identified as subscriber AWS account IDs that have their first billing month within the selected date range.  |
+
+ For more information about agreements and revenue, see [Agreements and renewals dashboard](agreements-renewals-dashboard.md) and   [Billed revenue dashboard](billed-revenue-dashboard.md), both in this section.

@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/cloudwatchrum/latest/APIReference/API_CustomEvents.html
+---
+
+# CustomEvents
+<a name="API_CustomEvents"></a>
+
+A structure that contains information about custom events for this app monitor.
+
+## Contents
+<a name="API_CustomEvents_Contents"></a>
+
+ ** Status **   <a name="cloudwatchrum-Type-CustomEvents-Status"></a>
+Specifies whether this app monitor allows the web client to define and send custom events. The default is for custom events to be `DISABLED`.
+Type: String
+Valid Values: `ENABLED | DISABLED`
+Required: No
+
+## See Also
+<a name="API_CustomEvents_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rum-2018-05-10/CustomEvents)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rum-2018-05-10/CustomEvents)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rum-2018-05-10/CustomEvents)

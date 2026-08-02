@@ -1,0 +1,118 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/account-requirements.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Account requirements
+<a name="account-requirements"></a>
+
+**Topics**
++ [AWS account](#aws-account)
++ [VMware Customer Connect account](#myvmware-account)
++ [VMware Cloud on AWS account](#vmware-cloud-on-aws-account)
++ [Infrastructure preparation and planning](#infrastructure-preparation-and-planning)
+
+## AWS account
+<a name="aws-account"></a>
+
+ One of the requirements of VMware Cloud on AWS is that all deployed SDDCs must be linked to your AWS account. If you have a pre-existing account, you can use it for this purpose. If you don’t have an AWS account, see [How do I create and activate a new AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/) for instructions.
+
+**Important**
+After an AWS account has been associated with a VMware Organization as the seller of record, the AWS account number cannot be updated. There can be only one AWS seller of record per VMware Organization.
+
+ Once you have an AWS account, ensure that all technical personnel have been added to the account and that they have been configured with the permissions necessary to properly manage the account. At minimum, there must be one user within the AWS account who has sufficient permissions to run the [AWS CloudFormation](https://aws.amazon.com/cloudformation/) template, which performs account linking to the SDDC.
+
+ When creating a stack, AWS CloudFormation makes underlying service calls to AWS to provision and configure your resources. You can use [AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/) (IAM) to manage permissions.
+
+### AWS account management: explore AWS Organizations
+<a name="aws-account-management-explore-aws-organizations"></a>
+
+ AWS accounts that host the Connected VPC can belong to [AWS Organizations](https://aws.amazon.com/organizations/). This enables you to centrally govern your AWS Cloud resources.
+
+ If you are using AWS Organizations, you should determine which accounts you want to associate with VMware Cloud on AWS in advance. You can then create an [organization unit (OU)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_ous.html) and associate those accounts with the account identified for VMware Cloud on AWS.
+
+ The [Connected VPC](https://aws.amazon.com/blogs/apn/account-and-vpc-considerations-for-vmware-cloud-on-aws/) or AWS customer account is owned, operated, and paid for directly by the you, if you choose to utilize any AWS services within that account. To successfully attach the AWS customer-owned account to the SDDC, the AWS account should have at least one VPC within that account. This attachment enables you to use native AWS services to compliment whatever service you use to run on VMware Cloud on AWS.
+
+### Multi-account governance: AWS Control Tower and Landing Zones
+<a name="multi-account-governance-aws-control-tower-and-landing-zones"></a>
+
+ You may want to utilize [AWS Control Tower](https://aws.amazon.com/controltower/) to manage the AWS Organization to enforce governance across multi-account environments. In this scenario, create a separate OU for the account to use with VMware Cloud on AWS. On the OU, ensure the guardrail rules you put into place do not restrict CloudFormation from creating the necessary resources in the connected VPC.
+
+ The CloudFormation template used by VMware has the prefix `vmware-sddc-formation`. The CloudFormation stack does the following in the connected VPC within the connected account:
++  It creates immutable IAM roles in the VPC; namely `RemoteRole`, `RemoteRolePlayer`, `RemoveRoleService`, and `BasicLambdaRole`.
++  It creates an IAM policy called `AmazonVPCCrossAccountNetworkOperations` for the above roles.
++  It creates [AWS Lambda](https://aws.amazon.com/lambda/) functions for event notifications.
+
+ whether you use AWS Organizations or AWS Control Tower with landing zones, you need to configure your policies to allow the account that will be associated with VMware Cloud on AWS to complete these operations in the VPC.
+
+### Standalone accounts
+<a name="standalone-accounts"></a>
+
+ Standalone accounts can be added to an AWS Organizations or AWS Control Tower landing zone later. When using standalone accounts, ensure you have set your governance policies to allow you to run any native AWS service you may require in your connected VPC.
+
+## VMware Customer Connect account
+<a name="myvmware-account"></a>
+
+ You will require a VMware Customer Connect (formerly MyVMware) profile to access the VMware Cloud on AWS service. If you do not have a profile, you can create one at [VMware Customer Connect](https://customerconnect.vmware.com/home).
+
+ Once created, ensure that your account is up-to-date and all required fields are filled in. If required fields are missing, you will not be able to create your first SDDC.
+
+## VMware Cloud on AWS account
+<a name="vmware-cloud-on-aws-account"></a>
+
+ During the deal process, your Cloud Sales Specialist or Client Executive requests that you identify a Fund Owner and a Fund User. After your deal is processed, a service welcome email is sent to the Fund Owner and Fund User. This email contains the link you must use to sign up for a VMware Cloud on AWS account. This link can be used only once. The link will redirect you to the VMware Cloud Services Portal (CSP) website where you can log in into the VMware Cloud on AWS service using your VMware Customer Connect credentials.
+
+ VMware Cloud on AWS accounts are based on an Organization, which corresponds to a group or line of business subscribed to VMware Cloud on AWS services. Your VMware Customer Connect account is used to create the Organization and will make you an Organization Owner. Organizational Owners are assigned the Organization Owner’s role and have complete administrative access to their Organization. They grant roles to access the Organization and its services, manage billing and subscription, and file support requests. New users can be assigned the Organization Owner role or the Organization Member role. Both types of users can manage the SDDC cloud, but only those with the Organizational Owner role can invite more users.
+
+ VMware Cloud on AWS has its own set of roles within IAM that need to be enabled manually:
++  Administrator
++  Administrator (delete restricted)
++  NSX Cloud Administrator
++  NSX Cloud Auditor
+
+ The major tasks performed by Organization users include, but are not limited to:
++  Adding hosts to the SDDC
++  Removing hosts from the SDDC
++  Configuring the management network for vCenter access / administration: VPN, DNS, Firewall rules
++  Configuring and maintaining the compute network for workloads: logical networks, firewall rules, NAT, VPN, DNS, Public IP addresses
+
+## Infrastructure preparation and planning
+<a name="infrastructure-preparation-and-planning"></a>
+
+ Before you begin, examine the deployment requirements as specified in the following table.
+
+* Table 1 — Design considerations*
+
+|  Resource  |  This deployment uses  |
+| --- | --- |
+|  Component  |  Value  |   |
+| --- | --- | --- |
+|  Area  |  Description  |
+|  Region  |  VMware Cloud on AWS isn’t currently supported in all AWS Regions. For a current list of supported Regions for VMware Cloud on AWS, see [Available AWS Regions](https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-9708C514-30FE-4D75-A3E4-E358166EEB1F.html).  |
+|  Availability Zone (AZ)  |  It is good practice to deploy the SDDC to the same Region and AZ as your current or planned native AWS workloads. Traffic between the SDDC and the AWS resources in the same AZ as your customer-owned VPC will not incur cross-AZ traffic charges. Traffic between different AZs in the same Region is billable to the customer-owned AWS account. This is according to the standard [pricing](https://aws.amazon.com/pricing/) of AWS.  |
+|  VPC and subnet  |  Within a Region, a [VPC and subnet](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html) are required to facilitate cross-account linking to the SDDC. Here are some things to consider when selecting these resources: [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/account-requirements.html) |
+|  VPC route table  |  When VMware Cloud on AWS is connected to your VPC, it always uses the main route table in the VPC. The main route table should be dedicated to VMware Cloud on AWS. Where applicable, the route table is updated by VMware with new networks created within the SDDC. <br /> There are scenarios where customers create separate route tables within a VPC for different reasons. In these instances, remember that the custom route table will **not** be automatically updated when the main route table is updated based on any network changes within the SDDC. You’ll have to manually update the custom route table in the connected VPC.  |
+|  Security groups  |  The Cross-account ENIs exist within the customer-owned AWS account, and you have full access to apply security groups to the ENIs, which should otherwise not be touched. These actions can permanently undermine connectivity between the AWS environment and the SDDC. These can be identified in the AWS console with the description VMware VMC Interface DO NOT USE.  |
+|  [Resources](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)  |  If necessary, request [service quota increases](https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/) for the following resources. You might need to do this if an existing deployment uses these resources, and you might exceed the default quotas with this deployment. The [Service Quotas console](https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/) displays your usage and quotas. For more information, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html). The deployment requires the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/account-requirements.html) |
+|  IAM permissions  |  For a summary of the permissions required to run the CloudFormation template, see [AWS Roles and Permissions](https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-DE8E80A3-5EED-474C-AECD-D30534926615.html). Some of the initial permissions required to create the SDDC are removed from the role after the SDDC is has created. These can be seen in the [Appendix](appendix.md) of this document.  |
+|  SDDC management IP planning  |  When you create an SDDC, you are required to specify an IP range for your management network. This IP address range cannot be changed after the SDDC is created. As a result, it is critical to carefully plan out this IP range. In single-AZ deployment, a /23 CIDR can support 27 ESXi hosts, while a /20 can support up to 251, and a /16 up to 4091, but the number of hosts is currently limited to the SDDC maximum of 300. When deploying a multi-AZ (or stretched cluster) SDDC, the limits are 22 hosts, 246 hosts, and the SDDC maximum hosts for /23, /20 and /16 CIDRs, respectively.  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/account-requirements.html) |
+|  SDDC compute IP planning  |  To provision compute workloads within the SDDC, you must create at least one compute network segment. Although it is not required to provision an SDDC, VMware recommends allocating at least one IP address range for the SDDC compute network. After the SDDC has been provisioned, you can create a network segment using this address range. <br /> Compute networks are used for all VM traffic within the SDDC and are defined as individual segments in NSX. VMware Cloud on AWS supports three types of logical network segments: routed, extended, and disconnected. [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/account-requirements.html) |
+|  Prepare DNS strategy  |  VMware Cloud on AWS customers have many options to implement hybrid DNS solutions, ranging from self-hosted to fully managed native services from AWS. <br /> **Considerations**: <br /> Google DNS servers are set up initially when the SDDC is first deployed. <br /> NSX-T Tier 1 gateways, the management gateway (MGW) and the compute gateway (CGW) in VMware Cloud on AWS, act only as forwarders, relaying the queries from VMs to the actual DNS servers specified. The devices also cache the responses, improving performance. DNS servers configured under the MGW DNS Forwarder are used by the management components such as vCenter to resolve the on-premises fully qualified domain names (FQDNs). Features such as Hybrid Linked Mode (HLM) or Site Recovery may not work until the customer-managed DNS servers are configured here, as the management VMs using Google DNS cannot resolve the on-premises resources by default. <br /> **On-premises DNS servers** <br /> This is an option for customers who have on-premises DNS servers they wish to leverage. The benefit of this setup is that you can quickly get started, but because the SDDC VMs send DNS queries back to these servers over a IPSEC VPN or Direct Connect (Private VIF), you should be aware that a potential latency can be introduced. <br /> The subnets containing these DNS servers must be permitted or advertised over VPN or Direct Connect. This makes them dependent on the network connectivity. In addition to the network connectivity, both firewalls (VMware Cloud on AWS and the on-premises firewall) must allow DNS traffic UDP/53 and TCP/53). Both the primary and secondary DNS servers should be reachable and provide consistent results. <br /> **Local DNS servers** <br /> In this configuration, DNS servers reside in one or more logical networks of the VMware Cloud on AWS SDDC. To avoid single points of failure and to prevent traffic going back to the on-premises data center, ensure that additional DNS servers are available in the cloud SDDC. Placing local AD/DNS servers in the SDDC could be a preferred method for increased availability and performance because workloads are catered locally. <br /> If you are syncing with on-premises AD/DNS, both primary and secondary DNS servers should be reachable and provide consistent results. Subnets containing these DNS servers must be permitted or advertised over VPN or Direct Connect along with the firewalls configured to allow DNS traffic (UDP/53 & TCP/53) on the MGW of the SDDC. <br /> **DNS server in AWS** <br /> In this configuration, customers can leverage DNS servers that reside in AWS. Examples of this are Amazon EC2 instances with DNS configured, or making use of Amazon DNS services. This is useful for customers who already use DNS in their AWS environment. The benefit of this is you can take advantage of cross-VPC connectivity. Take into considerations the DNS design with VMC and the following DNS options, as described in [this blog](https://aws.amazon.com/blogs/apn/choosing-the-right-dns-architecture-for-vmware-cloud-on-aws/).  |
+|  Summary of IP Planning  |  The following table is an example of how to plan your IP addresses and subnets. <br /> For customers planning to deploy multiple SDDCs, it is important to ensure the CIDRs do not overlap. <br /> When deploying SDDCs into different AZs and subnets, ensure that you plan properly using unique subnets on each site. [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-best-practices/account-requirements.html) |
+|  NTP planning  |  Ensure that your on-premises data center and your cloud SDDC are synchronized to an NTP service or other authoritative time source.  |
+|  Security audit  |  Because VMware Cloud requires certain permissions within the customer-owned AWS account, you may be required to perform a security audit prior to onboarding. Most typically, security auditors want to review the [CloudFormation template](https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-DE8E80A3-5EED-474C-AECD-D30534926615.html) used by VMware Cloud.  |
+|  Release notes  |  VMware Cloud on AWS is able to release new features at a faster pace than traditional on premises software products. Check the release notes page frequently to keep updated on the new features that have been released. <br /> Bookmark the [VMware Cloud on AWS release notes](https://docs.vmware.com/en/VMware-Cloud-on-AWS/0/rn/vmc-on-aws-relnotes.html) page.  |
+|  Service alerts  |  The VMware Cloud Operations team posts updates on planned maintenance events, maintenance start and end times, and service incidents on the VMware Cloud Services status page. <br /> Bookmark the [VMware Cloud Services Status page](https://status.vmware-services.io/). <br /> (Optional) Subscribe to receive real time alerts and updates.  |
+|  Service Level Agreement (SLA)  |  The Service Level Agreement (SLA) for VMware Cloud on AWS defines the service components that have an availability commitment as well as their associated targets. <br /> You may be eligible for an SLA credit if one of the service components is unavailable and breaches the target SLA. The amount of the SLA credit you may be eligible for is dependent on the monthly uptime percentage for the affected availability component. <br /> Read and bookmark the [Service Level Agreement for VMware Cloud on AWS](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/support/vmw-cloud-aws-service-level-agreement.pdf).  |
+|  VPCs  |  1  |
+|  Subnet  |  1  |
+|  ENIs  |  17  |
+|  Route Table  |  1  |
+|  AWS Region  |  Frankfurt  |   |
+|  VPC Name  |  VMC-VPC  |   |
+|  VPC CIDR Block  |  172.31.0.0/16  |   |
+|  SDDC Name  |  VMC-SDDC01  |   |
+|  SDDC Management CIDR block  |  10.3.0.0/16  |   |
+|  Subnet Purpose  |  Availability Zone A  |  Availability Zone B  |
+|  Connected SDDC  |  172.31.1.0/24  |  172.31.2.0/24  |

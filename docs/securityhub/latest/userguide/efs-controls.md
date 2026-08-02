@@ -1,0 +1,230 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/efs-controls.html
+---
+
+# Security Hub CSPM controls for Amazon EFS
+<a name="efs-controls"></a>
+
+These Security Hub CSPM controls evaluate the Amazon Elastic File System (Amazon EFS) service and resources. The controls might not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
+
+## [EFS.1] Elastic File System should be configured to encrypt file data at-rest using AWS KMS
+<a name="efs-1"></a>
+
+**Related requirements:** CIS AWS Foundations Benchmark v5.0.0/2.3.1, CIS AWS Foundations Benchmark v3.0.0/2.4.1, NIST.800-53.r5 CA-9(1), NIST.800-53.r5 CM-3(6), NIST.800-53.r5 SC-13, NIST.800-53.r5 SC-28, NIST.800-53.r5 SC-28(1), NIST.800-53.r5 SC-7(10), NIST.800-53.r5 SI-7(6)
+
+**Category:** Protect > Data Protection > Encryption of data-at-rest
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::FileSystem`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html)
+
+**Schedule type:** Periodic
+
+**Parameters:** None
+
+This control checks whether Amazon Elastic File System is configured to encrypt the file data using AWS KMS. The check fails in the following cases.
++ `Encrypted` is set to `false` in the [https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html) response.
++ The `KmsKeyId` key in the [https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html](https://docs.aws.amazon.com/efs/latest/ug/API_DescribeFileSystems.html) response does not match the `KmsKeyId` parameter for [https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html).
+
+Note that this control does not use the `KmsKeyId` parameter for [https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-encrypted-check.html). It only checks the value of `Encrypted`.
+
+For an added layer of security for your sensitive data in Amazon EFS, you should create encrypted file systems. Amazon EFS supports encryption for file systems at-rest. You can enable encryption of data at rest when you create an Amazon EFS file system. To learn more about Amazon EFS encryption, see[ Data encryption in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/encryption.html) in the *Amazon Elastic File System User Guide*.
+
+### Remediation
+<a name="efs-1-remediation"></a>
+
+For details on how to encrypt a new Amazon EFS file system, see [Encrypting data at rest](https://docs.aws.amazon.com/efs/latest/ug/encryption-at-rest.html) in the *Amazon Elastic File System User Guide*.
+
+## [EFS.2] Amazon EFS volumes should be in backup plans
+<a name="efs-2"></a>
+
+**Related requirements:** NIST.800-53.r5 CP-10, NIST.800-53.r5 CP-6, NIST.800-53.r5 CP-6(1), NIST.800-53.r5 CP-6(2), NIST.800-53.r5 CP-9, NIST.800-53.r5 SC-5(2), NIST.800-53.r5 SI-12, NIST.800-53.r5 SI-13(5)
+
+**Category:** Recover > Resilience > Backup
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::FileSystem`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-in-backup-plan.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-in-backup-plan.html)
+
+**Schedule type:** Periodic
+
+**Parameters:** None
+
+This control checks whether Amazon Elastic File System (Amazon EFS) file systems are added to the backup plans in AWS Backup. The control fails if Amazon EFS file systems are not included in the backup plans.
+
+Including EFS file systems in the backup plans helps you to protect your data from deletion and data loss.
+
+### Remediation
+<a name="efs-2-remediation"></a>
+
+To enable automatic backups for an existing Amazon EFS file system, see [Getting started 4: Create Amazon EFS automatic backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/create-auto-backup.html) in the *AWS Backup Developer Guide*.
+
+## [EFS.3] EFS access points should enforce a root directory
+<a name="efs-3"></a>
+
+**Related requirements:** NIST.800-53.r5 AC-6(10)
+
+**Category:** Protect > Secure access management
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::AccessPoint`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-root-directory.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-root-directory.html)
+
+**Schedule type:** Change triggered
+
+**Parameters:** None
+
+This control checks if Amazon EFS access points are configured to enforce a root directory. The control fails if the value of `Path` is set to `/` (the default root directory of the file system).
+
+When you enforce a root directory, the NFS client using the access point uses the root directory configured on the access point instead of the file system's root directory. Enforcing a root directory for an access point helps restrict data access by ensuring that users of the access point can only reach files of the specified subdirectory.
+
+### Remediation
+<a name="efs-3-remediation"></a>
+
+For instructions on how to enforce a root directory for an Amazon EFS access point, see [Enforcing a root directory with an access point](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html#enforce-root-directory-access-point) in the *Amazon Elastic File System User Guide*.
+
+## [EFS.4] EFS access points should enforce a user identity
+<a name="efs-4"></a>
+
+**Related requirements:** NIST.800-53.r5 AC-6(2), PCI DSS v4.0.1/7.3.1
+
+**Category:** Protect > Secure access management
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::AccessPoint`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-user-identity.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-access-point-enforce-user-identity.html)
+
+**Schedule type:** Change triggered
+
+**Parameters:** None
+
+This control checks whether Amazon EFS access points are configured to enforce a user identity. This control fails if a POSIX user identity is not defined while creating the EFS access point.
+
+Amazon EFS access points are application-specific entry points into an EFS file system that make it easier to manage application access to shared datasets. Access points can enforce a user identity, including the user's POSIX groups, for all file system requests that are made through the access point. Access points can also enforce a different root directory for the file system so that clients can only access data in the specified directory or its subdirectories.
+
+### Remediation
+<a name="efs-4-remediation"></a>
+
+To enforce a user identity for an Amazon EFS access point, see [Enforcing a user identity using an access point](https://docs.aws.amazon.com/efs/latest/ug/efs-access-points.html#enforce-identity-access-points) in the *Amazon Elastic File System User Guide*.
+
+## [EFS.5] EFS access points should be tagged
+<a name="efs-5"></a>
+
+**Category:** Identify > Inventory > Tagging
+
+**Severity:** Low
+
+**Resource type:** `AWS::EFS::AccessPoint`
+
+**AWS Configrule:** `tagged-efs-accesspoint` (custom Security Hub CSPM rule)
+
+**Schedule type:** Change triggered
+
+**Parameters:**
+
+| Parameter | Description | Type | Allowed custom values | Security Hub CSPM default value |
+| --- | --- | --- | --- | --- |
+|  requiredTagKeys  | List of non-system tag keys that the evaluated resource must contain. Tag keys are case sensitive.  | StringList (maximum of 6 items)  | 1–6 tag keys that meet [AWS requirements](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-conventions).  | No default value  |
+
+This control checks whether an Amazon EFS access point has tags with the specific keys defined in the parameter `requiredTagKeys`. The control fails if the access point doesn’t have any tag keys or if it doesn’t have all the keys specified in the parameter `requiredTagKeys`. If the parameter `requiredTagKeys` isn't provided, the control only checks for the existence of a tag key and fails if the access point isn't tagged with any key. System tags, which are automatically applied and begin with `aws:`, are ignored.
+
+A tag is a label that you assign to an AWS resource, and it consists of a key and an optional value. You can create tags to categorize resources by purpose, owner, environment, or other criteria. Tags can help you identify, organize, search for, and filter resources. Tagging also helps you track accountable resource owners for actions and notifications. When you use tagging, you can implement attribute-based access control (ABAC) as an authorization strategy, which defines permissions based on tags. You can attach tags to IAM entities (users or roles) and to AWS resources. You can create a single ABAC policy or a separate set of policies for your IAM principals. You can design these ABAC policies to allow operations when the principal's tag matches the resource tag. For more information, see [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) in the *IAM User Guide*.
+
+**Note**
+Don’t add personally identifiable information (PII) or other confidential or sensitive information in tags. Tags are accessible to many AWS services, including AWS Billing. For more tagging best practices, see [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-best-practices) in the *AWS General Reference*.
+
+### Remediation
+<a name="efs-5-remediation"></a>
+
+To add tags to an EFS access point, see [Tagging Amazon EFS resources](https://docs.aws.amazon.com/efs/latest/ug/manage-fs-tags.html) in the *Amazon Elastic File System User Guide*.
+
+## [EFS.6] EFS mount targets should not be associated with subnets that assign public IP addresses on launch
+<a name="efs-6"></a>
+
+**Related requirements:** NIST.800-53.r5 SC-7, NIST.800-171.r2 3.1.20, PCI DSS v4.0.1/1.4.4
+
+**Category:** Protect > Network security > Resources not publicly accessible
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::FileSystem`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-mount-target-public-accessible.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-mount-target-public-accessible.html)
+
+**Schedule type:** Periodic
+
+**Parameters:** None
+
+This control checks whether an Amazon EFS mount target is associated with subnets that assign public IP addresses on launch. The control fails if the mount target is associated with subnets that assign public IP addresses on launch.
+
+Subnets have attributes that determine whether network interfaces created in the subnet automatically receive public IP addresses. For IPv4, the `MapPublicIpOnLaunch` attribute is set to `TRUE` for default subnets and `FALSE` for nondefault subnets (with an exception for nondefault subnets created through the EC2 launch instance wizard, where it's set to `TRUE`). For IPv6, the `AssignIpv6AddressOnCreation` attribute is set to `FALSE` for all subnets by default.
+
+While Amazon EFS mount targets cannot be assigned public IPv4 addresses, placing them in subnets configured to assign public IP addresses on launch indicates that co-located instances launched in such subnets that may mount the EFS file system could automatically receive public IP addresses, which could risk the file system data becoming accessible from publicly-addressed hosts.
+
+Mount targets in subnets with auto-assign public IPv6 addresses enabled can receive globally-routable IPv6 addresses.
+
+**Note**
+On July 30, 2026, Security Hub CSPM will remove this control from the [AWS Foundational Security Best Practices (FSBP) standard](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html). This control will now be available in the [NIST SP 800-53 Rev. 5 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/nist-standard.html), the [NIST SP 800-171 Revision 2 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.html), and the [PCI DSS v4.0.1 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html).
+
+### Remediation
+<a name="efs-6-remediation"></a>
+
+To associate an existing mount target with a different subnet, you must create a new mount target in a subnet that does not assign public IP addresses on launch and then remove the old mount target. For information about managing mount targets, see [Creating and managing mount targets and security groups](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs.html) in the *Amazon Elastic File System User Guide*.
+
+## [EFS.7] EFS file systems should have automatic backups enabled
+<a name="efs-7"></a>
+
+**Category:** Recover > Resilience > Backups enabled
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::FileSystem`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-automatic-backups-enabled.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-automatic-backups-enabled.html)
+
+**Schedule type:** Change triggered
+
+**Parameters:** None
+
+This control checks whether an Amazon EFS file system has automatic backups enabled. This control fails if the EFS file system doesn't have automatic backups enabled.
+
+A data backup is a copy of your system, configuration, or application data that's stored separately from the original. Enabling regular backups helps you safeguard valuable data against unforeseen events like system failures, cyberattacks, or accidental deletions. Having a robust backup strategy also facilitates quicker recovery, business continuity, and peace of mind in the face of potential data loss.
+
+### Remediation
+<a name="efs-7-remediation"></a>
+
+For information about using AWS Backup for EFS file systems, see [Backing up EFS file systems](https://docs.aws.amazon.com/efs/latest/ug/awsbackup.html) in the *Amazon Elastic File System User Guide*.
+
+## [EFS.8] EFS file systems should be encrypted at rest
+<a name="efs-8"></a>
+
+**Related requirements:** CIS AWS Foundations Benchmark v5.0.0/2.3.1
+
+**Category:** Protect > Data Protection > Encryption of data-at-rest
+
+**Severity:** Medium
+
+**Resource type:** `AWS::EFS::FileSystem`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/efs-filesystem-ct-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/efs-filesystem-ct-encrypted.html)
+
+**Schedule type:** Change triggered
+
+**Parameters:** None
+
+This control checks whether an Amazon EFS file system encrypts data with AWS Key Management Service (AWS KMS). The control fails if a file system isn't encrypted.
+
+Data at rest refers to data that's stored in persistent, non-volatile storage for any duration. Encrypting data at rest helps you protect its confidentiality, which reduces the risk that an unauthorized user can access it.
+
+### Remediation
+<a name="efs-8-remediation"></a>
+
+To enable encryption at rest for a new EFS file system, see [Encrypting data at rest](https://docs.aws.amazon.com/efs/latest/ug/encryption-at-rest.html) in the *Amazon Elastic File System User Guide*.

@@ -1,0 +1,77 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteExperiment.html
+---
+
+# DeleteExperiment
+<a name="API_DeleteExperiment"></a>
+
+Deletes an SageMaker experiment. All trials associated with the experiment must be deleted first. Use the [ListTrials](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrials.html) API to get a list of the trials associated with the experiment.
+
+## Request Syntax
+<a name="API_DeleteExperiment_RequestSyntax"></a>
+
+```
+{
+   "ExperimentName": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_DeleteExperiment_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ExperimentName](#API_DeleteExperiment_RequestSyntax) **   <a name="sagemaker-DeleteExperiment-request-ExperimentName"></a>
+The name of the experiment to delete.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 120.
+Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,119}`
+Required: Yes
+
+## Response Syntax
+<a name="API_DeleteExperiment_ResponseSyntax"></a>
+
+```
+{
+   "ExperimentArn": "string"
+}
+```
+
+## Response Elements
+<a name="API_DeleteExperiment_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [ExperimentArn](#API_DeleteExperiment_ResponseSyntax) **   <a name="sagemaker-DeleteExperiment-response-ExperimentArn"></a>
+The Amazon Resource Name (ARN) of the experiment that is being deleted.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:experiment/.*`
+
+## Errors
+<a name="API_DeleteExperiment_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** ResourceNotFound **
+Resource being access is not found.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DeleteExperiment_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sagemaker-2017-07-24/DeleteExperiment)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/DeleteExperiment)

@@ -1,0 +1,105 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSGlobalAcceleratorSLRPolicy.html
+---
+
+# AWSGlobalAcceleratorSLRPolicy
+<a name="AWSGlobalAcceleratorSLRPolicy"></a>
+
+**Description**: Policy granting permissions to AWS Global Accelerator to manage EC2 Elastic Network Interfaces and Security Groups.
+
+`AWSGlobalAcceleratorSLRPolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWSGlobalAcceleratorSLRPolicy-how-to-use"></a>
+
+This policy is attached to a service-linked role that allows the service to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+<a name="AWSGlobalAcceleratorSLRPolicy-details"></a>
++ **Type**: Service-linked role policy
++ **Creation time**: April 05, 2019, 19:39 UTC
++ **Edited time:** October 29, 2024, 18:23 UTC
++ **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSGlobalAcceleratorSLRPolicy`
+
+## Policy version
+<a name="AWSGlobalAcceleratorSLRPolicy-version"></a>
+
+**Policy version:** v9 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWSGlobalAcceleratorSLRPolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "EC2Action1",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateNetworkInterface",
+        "ec2:DescribeNetworkInterfaces",
+        "ec2:DescribeInstances",
+        "ec2:DescribeInternetGateways",
+        "ec2:DescribeSubnets",
+        "ec2:DescribeRegions",
+        "ec2:ModifyNetworkInterfaceAttribute",
+        "ec2:DeleteNetworkInterface",
+        "ec2:DescribeAddresses"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "EC2Action2",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DeleteSecurityGroup",
+        "ec2:AssignIpv6Addresses",
+        "ec2:UnassignIpv6Addresses"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "ec2:ResourceTag/AWSServiceName" : "GlobalAccelerator"
+        }
+      }
+    },
+    {
+      "Sid" : "EC2Action3",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:CreateSecurityGroup",
+        "ec2:DescribeSecurityGroups",
+        "ec2:GetSecurityGroupsForVpc"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "ElbAction1",
+      "Effect" : "Allow",
+      "Action" : [
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeTargetGroups"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "EC2Action4",
+      "Effect" : "Allow",
+      "Action" : "ec2:CreateTags",
+      "Resource" : [
+        "arn:aws:ec2:*:*:security-group/*",
+        "arn:aws:ec2:*:*:network-interface/*"
+      ]
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWSGlobalAcceleratorSLRPolicy-learn-more"></a>
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

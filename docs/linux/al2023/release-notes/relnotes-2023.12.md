@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/relnotes-2023.12.html
+---
+
+# Amazon Linux 2023 2023.12 release notes
+<a name="relnotes-2023.12"></a>
+
+The following releases are updates to the 12th quarterly release of AL2023.
+
+**Topics**
++ [AL2023 version 2023.12.20260727](relnotes-2023.12.20260727.md)
++ [AL2023 version 2023.12.20260724](relnotes-2023.12.20260724.md)
++ [AL2023 version 2023.12.20260720](relnotes-2023.12.20260720.md)
++ [AL2023 version 2023.12.20260710](relnotes-2023.12.20260710.md)
++ [AL2023 version 2023.12.20260706](relnotes-2023.12.20260706.md)
++ [AL2023 version 2023.12.20260629](relnotes-2023.12.20260629.md)
++ [AL2023 version 2023.12.20260622](relnotes-2023.12.20260622.md)
++ [AL2023 version 2023.12.20260611](relnotes-2023.12.20260611.md)
++ [AL2023 version 2023.12.20260608](relnotes-2023.12.20260608.md)

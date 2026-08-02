@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/notifications-personal.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Configuring email notifications
+<a name="notifications-personal"></a>
+
+You can choose to have email notifications sent to you about events in any project where you are a member. These emails will be sent to the email address configured in your AWS Builder ID. By default, you will receive emails about all project events for which emails can be sent.<a name="notifications-personal-email"></a>
+
+**To configure email notifications for project events**
+
+1. Open the CodeCatalyst console at [https://codecatalyst.aws/](https://codecatalyst.aws/).
+
+1. In the top menu bar, choose your profile badge, and then choose **My settings**. The CodeCatalyst **My settings** page opens.
+**Tip**
+You can also find your user profile by going to the members page for a project or space and choosing your name from the members list.
+
+1. In **Email notifications**, find the project in the list where you want to configure email notifications, and choose **Edit**.
+
+1. Select the events for which you want to receive emails, and then choose **Save**.

@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/corretto/latest/corretto-21-ug/windows-info.html
+---
+
+# Amazon Corretto 21 Guide on Windows
+<a name="windows-info"></a>
+
+The topics in this section describe installation instructions for Amazon Corretto 21 on the Windows operating system. Windows builds are supported on versions 10 and later, Server 2016, Server 2019, Server 2022, and Server 2025.
+
+**Topics**
++ [Amazon Corretto 21 Installation Instructions for Windows 10 or Later](windows-install.md)

@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/personalize/latest/dg/cloudwatch-metrics.html
+---
+
+# CloudWatch metrics for Amazon Personalize
+<a name="cloudwatch-metrics"></a>
+
+This section contains information about the Amazon CloudWatch metrics available for Amazon Personalize. For more information, see [Monitoring Amazon Personalize with Amazon CloudWatch](personalize-monitoring.md).
+
+The following table lists the Amazon Personalize metrics. All metrics except GetRecommendations and GetPersonalizedRanking support these statistics: `Average, Minimum, Maximum, Sum`. GetRecommendations and GetPersonalizedRanking support `Sum` only.
+
+| Metric | Description |
+| --- | --- |
+| DatasetImportJobRequests | The number of successful [CreateDatasetImportJob](API_CreateDatasetImportJob.md) API calls.<br />Dimensions: `DatasetGroupArn, DatasetArn, DatasetImportJobArn` |
+| DatasetImportJobError | The number of `CreateDatasetImportJob` API calls that resulted in an error.<br />Dimensions: `DatasetGroupArn, DatasetArn, DatasetImportJobArn` |
+| DatasetImportJobExecutionTime | The time between the `CreateDatasetImportJob` API call and the completion (or failure) of the operation.<br />Dimensions: `DatasetGroupArn, DatasetArn, DatasetImportJobArn`<br />Unit: Seconds |
+| DatasetSize | The size of data imported by the dataset import job.<br />Dimensions: `DatasetGroupArn, DatasetArn, DatasetImportJobArn`<br />Unit: Bytes |
+| SolutionTrainingJobRequests | The number of successful [CreateSolutionVersion](API_CreateSolutionVersion.md) API calls.<br />Dimensions: `SolutionArn, SolutionVersionArn` |
+| SolutionTrainingJobError | The number of `CreateSolutionVersion` API calls that resulted in an error.<br />Dimensions: `SolutionArn, SolutionVersionArn` |
+| SolutionTrainingJobExecutionTime | The time between the `CreateSolutionVersion` API call and the completion (or failure) of the operation.<br />Dimensions: `SolutionArn, SolutionVersionArn`<br />Unit: Seconds |
+| GetPersonalizedRanking | Whether a [GetPersonalizedRanking](API_RS_GetPersonalizedRanking.md) API call is successful. Use the `sum` statistic to view total count of successful GetPersonalizedRanking API calls. This metric doesn't support other statistics.<br />Dimension: `CampaignArn` |
+| GetPersonalizedRanking4xxErrors | The number of `GetPersonalizedRanking` API calls that returned a 4xx HTTP response code.<br />Dimension: `CampaignArn` |
+| GetPersonalizedRanking5xxErrors | The number of `GetPersonalizedRanking` API calls that returned a 5xx HTTP response code.<br />Dimension: `CampaignArn` |
+| GetPersonalizedRankingLatency | The time between receiving the `GetPersonalizedRanking` API call and the sending of recommendations (excludes 4xx and 5xx errors).<br />Dimension: `CampaignArn`<br />Unit: Milliseconds |
+| GetRecommendations | Whether a [GetRecommendations](API_RS_GetRecommendations.md) API calls is successful. Use the `sum` statistic to view total count of successful GetRecommendations API calls. This metric doesn't support other statistics.<br />Dimension: `CampaignArn` |
+| GetRecommendations4xxErrors | The number of `GetRecommendations` API calls that returned a 4xx HTTP response code.<br />Dimension: `CampaignArn` |
+| GetRecommendations5xxErrors | The number of `GetRecommendations` API calls that returned a 5xx HTTP response code.<br />Dimension: CampaignArn |
+| GetRecommendationsLatency | The time between receiving the `GetRecommendations` API call and the sending of recommendations (excludes 4xx and 5xx errors).<br />Dimension: `CampaignArn`<br />Unit: Milliseconds |
+| PutEventsRequests | The number of successful [PutEvents](API_UBS_PutEvents.md) API calls.<br />Dimension:` DatasetGroupArn, DatasetArn, EventTrackerArn` |
+| PutEvents4xxErrors | The number of `PutEvents` API calls that returned a 4xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn, EventTrackerArn` |
+| PutEvents5xxErrors | The number of `PutEvents` API calls that returned a 5xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn, EventTrackerArn` |
+| PutEventLatency | The time taken for the completion of the `PutEvents` API call (excludes 4xx and 5xx errors).<br />Dimension: ` DatasetGroupArn, DatasetArn, EventTrackerArn`<br />Unit: Milliseconds |
+| PutItemsRequests | The number of successful [PutItems](API_UBS_PutItems.md) API calls.<br />Dimension:` DatasetGroupArn, DatasetArn` |
+| PutItems4xxErrors | The number of `PutItems` API calls that returned a 4xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn` |
+| PutItems5xxErrors | The number of `PutItems` API calls that returned a 5xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn` |
+| PutItemsLatency | The time taken for the completion of the `PutItems` API call (excludes 4xx and 5xx errors).<br />Dimension: ` DatasetGroupArn, DatasetArn`<br />Unit: Milliseconds |
+| PutUsersRequests | The number of successful [PutUsers](API_UBS_PutUsers.md) API calls.<br />Dimension:` DatasetGroupArn, DatasetArn` |
+| PutUsers4xxErrors | The number of `PutUsers` API calls that returned a 4xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn` |
+| PutUsers5xxErrors | The number of `PutUsers` API calls that returned a 5xx HTTP response code.<br />Dimension: ` DatasetGroupArn, DatasetArn` |
+| PutUsersLatency | The time taken for the completion of the `PutUsers` API call (excludes 4xx and 5xx errors).<br />Dimension: ` DatasetGroupArn, DatasetArn`<br />Unit: Milliseconds |

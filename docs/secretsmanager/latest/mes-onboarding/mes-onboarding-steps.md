@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/secretsmanager/latest/mes-onboarding/mes-onboarding-steps.html
+---
+
+# How to onboard with managed external secrets
+<a name="mes-onboarding-steps"></a>
+
+To onboard your secrets, you must:
+
+1. Evaluate your use case with the AWS Secrets Manager team.
+
+1. Submit the required details.
+
+1. Roll out your integration to the public.
+
+In addition, you must monitor how your customers use managed external secrets and support them if there are any production issues. The following sections provide the details.

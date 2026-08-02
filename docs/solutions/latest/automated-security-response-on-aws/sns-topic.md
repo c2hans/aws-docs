@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/sns-topic.html
+---
+
+# Amazon SNS topic - Remediation Progress
+<a name="sns-topic"></a>
+
+Automated Security Response on AWS creates an Amazon SNS topic, SO0111-ASR\_Topic. This topic is used to post updates about remediation progress. Following are the three possible notifications sent to this topic.
+
+```
+Remediation queued for [.replaceable]`<standard>` control [.replaceable]`<control_ID>` in account [.replaceable]`<account_ID>`
+```
+
+```
+Remediation failed for [.replaceable]`<standard>` control [.replaceable]`<control_ID>` in account [.replaceable]`<account_ID>`
+```
+
+```
+[.replaceable]`<control_ID>` remediation was successfully invoke via AWS Systems Manager in account [.replaceable]`<account_ID>`
+```
+
+This is the completion message. It indicates that the remediation completed without error; however, the definitive test for successful remediation is the AWS Config check and/or manual validation.

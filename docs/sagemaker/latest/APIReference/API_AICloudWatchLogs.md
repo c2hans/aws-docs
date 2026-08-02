@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AICloudWatchLogs.html
+---
+
+# AICloudWatchLogs
+<a name="API_AICloudWatchLogs"></a>
+
+CloudWatch log information for an AI benchmark or recommendation job.
+
+## Contents
+<a name="API_AICloudWatchLogs_Contents"></a>
+
+ ** LogGroupArn **   <a name="sagemaker-Type-AICloudWatchLogs-LogGroupArn"></a>
+The Amazon Resource Name (ARN) of the CloudWatch log group.
+Type: String
+Required: No
+
+ ** LogStreamName **   <a name="sagemaker-Type-AICloudWatchLogs-LogStreamName"></a>
+The name of the CloudWatch log stream.
+Type: String
+Required: No
+
+## See Also
+<a name="API_AICloudWatchLogs_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/AICloudWatchLogs)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/AICloudWatchLogs)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/AICloudWatchLogs)

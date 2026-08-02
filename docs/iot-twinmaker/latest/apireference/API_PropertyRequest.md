@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_PropertyRequest.html
+---
+
+# PropertyRequest
+<a name="API_PropertyRequest"></a>
+
+An object that sets information about a property.
+
+## Contents
+<a name="API_PropertyRequest_Contents"></a>
+
+ ** definition **   <a name="tm-Type-PropertyRequest-definition"></a>
+An object that specifies information about a property.
+Type: [PropertyDefinitionRequest](API_PropertyDefinitionRequest.md) object
+Required: No
+
+ ** updateType **   <a name="tm-Type-PropertyRequest-updateType"></a>
+The update type of the update property request.
+Type: String
+Valid Values: `UPDATE | DELETE | CREATE`
+Required: No
+
+ ** value **   <a name="tm-Type-PropertyRequest-value"></a>
+The value of the property.
+Type: [DataValue](API_DataValue.md) object
+Required: No
+
+## See Also
+<a name="API_PropertyRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iottwinmaker-2021-11-29/PropertyRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iottwinmaker-2021-11-29/PropertyRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iottwinmaker-2021-11-29/PropertyRequest)

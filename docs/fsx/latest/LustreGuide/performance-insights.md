@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/fsx/latest/LustreGuide/performance-insights.html
+---
+
+# Performance warnings and recommendations
+<a name="performance-insights"></a>
+
+FSx for Lustre displays a warning for CloudWatch metrics when one of these metrics approaches or crosses a predetermined threshold for multiple consecutive data points. These warnings provide you with actionable recommendations that you can use to optimize your file system's performance.
+
+Warnings are accessible in several areas of the **Monitoring & performance** dashboard on the Amazon FSx for Lustre console. All active or recent Amazon FSx performance warnings and CloudWatch alarms configured for the file system that are in an alarm state appear in the **Monitoring & performance** panel in the **Summary** section. The warning also appears in the section of the dashboard where the metric graph is displayed. These warnings automatically disappear from the dashboard 24 hours after the underlying metrics fall below the warning threshold.
+
+You can create CloudWatch alarms for any of the Amazon FSx metrics. For more information, see [Creating CloudWatch alarms to monitor metrics](creating_alarms.md).
+
+## Use performance warnings to improve file system performance
+<a name="resolve-warnings"></a>
+
+Amazon FSx provides actionable recommendations that you can use to optimize your file system's performance. You can take the recommended action if you expect the issue to continue, or if it's causing an impact to your file system's performance. Depending on which metric has triggered a warning, you can resolve it by increasing the file system's throughput capacity, storage capacity, or metadata IOPS, as described in the following table.
+
+- **Storage**
+  - **If there's a warning for this metric:** Storage capacity utilization / **Do this:** [Increase your file system's storage capacity](increase-storage-capacity.md).<br />If your storage capacity utilization is only higher for a subset of your file system's Object Storage Targets (OSTs), then you can also [rebalance your workload](lfs-migrate-ts.md#lfs-migrate-unbalanced-storage) so that your storage capacity utilization is more evenly balanced across your file system.
+  - **If there's a warning for this metric:** Storage capacity utilization with cached writes / **Do this:** [Reduce the size of your client write cache](performance-tips.md) by configuring the max\_dirty\_mb parameter on your clients.
+
+- **Object storage performance**
+  - **If there's a warning for this metric:** Network throughput / **Do this:** [Increase your file system's throughput capacity](increase-throughput-capacity.md).<br />If your throughput utilization is higher for a subset of your file system's Object Storage Servers (OSSs), then you can also [rebalance your workload](lfs-migrate-ts.md#lfs-migrate-unbalanced-storage) so that your throughput utilization is more evenly balanced across your file system.
+  - **If there's a warning for this metric:** Disk throughput / **Do this:** [Increase your file system's throughput capacity](increase-throughput-capacity.md).<br />If your disk throughput utilization is higher for a subset of your file system's Object Storage Servers (OSSs), then you can also [rebalance your workload](lfs-migrate-ts.md#lfs-migrate-unbalanced-storage) so that your disk throughput utilization is more evenly balanced across your file system.
+  - **If there's a warning for this metric:** Disk IOPS / **Do this:** [Increase your file system's storage capacity](increase-storage-capacity.md).<br />If your disk IOPS utilization is higher for a subset of your file system's Object Storage Targets (OSTs), then you can also [rebalance your workload](lfs-migrate-ts.md#lfs-migrate-unbalanced-storage) so that your disk IOPS utilization is more evenly balanced across your file system.
+
+- **Metadata performance**
+  - **If there's a warning for this metric:** CPU utilization / **Do this:** [Increase your file system's storage capacity](increase-storage-capacity.md).<br />If you need to [scale metadata performance](managing-metadata-performance.md) independent of the storage capacity, you can migrate to a new file system that supports provisioning metadata performance independent of the storage capacity using the MetadataConfiguration parameter.
+  - **If there's a warning for this metric:** Metadata IOPS / **Do this:** [Increase your file system's metadata IOPS](modify-metadata-performance.md).
+
+For more information about file system performance, see [Amazon FSx for Lustre performance](performance.md).

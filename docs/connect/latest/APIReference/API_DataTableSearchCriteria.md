@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTableSearchCriteria.html
+---
+
+# DataTableSearchCriteria
+<a name="API_DataTableSearchCriteria"></a>
+
+A data table search criteria.
+
+## Contents
+<a name="API_DataTableSearchCriteria_Contents"></a>
+
+ ** AndConditions **   <a name="connect-Type-DataTableSearchCriteria-AndConditions"></a>
+The criteria's and conditions.
+Type: Array of [DataTableSearchCriteria](#API_DataTableSearchCriteria) objects
+Required: No
+
+ ** OrConditions **   <a name="connect-Type-DataTableSearchCriteria-OrConditions"></a>
+The criteria's or conditions.
+Type: Array of [DataTableSearchCriteria](#API_DataTableSearchCriteria) objects
+Required: No
+
+ ** StringCondition **   <a name="connect-Type-DataTableSearchCriteria-StringCondition"></a>
+A leaf node condition which can be used to specify a string condition.
+Type: [StringCondition](API_StringCondition.md) object
+Required: No
+
+## See Also
+<a name="API_DataTableSearchCriteria_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/DataTableSearchCriteria)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/DataTableSearchCriteria)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/DataTableSearchCriteria)

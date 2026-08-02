@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_DatabaseLFTagPolicyAndPermissions.html
+---
+
+# DatabaseLFTagPolicyAndPermissions
+<a name="API_DatabaseLFTagPolicyAndPermissions"></a>
+
+The LF-tag policy and permissions for database resources.
+
+## Contents
+<a name="API_DatabaseLFTagPolicyAndPermissions_Contents"></a>
+
+ ** Expression **   <a name="dataexchange-Type-DatabaseLFTagPolicyAndPermissions-Expression"></a>
+A list of LF-tag conditions that apply to database resources.
+Type: Array of [LFTag](API_LFTag.md) objects
+Required: Yes
+
+ ** Permissions **   <a name="dataexchange-Type-DatabaseLFTagPolicyAndPermissions-Permissions"></a>
+The permissions granted to subscribers on database resources.
+Type: Array of strings
+Valid Values: `DESCRIBE`
+Required: Yes
+
+## See Also
+<a name="API_DatabaseLFTagPolicyAndPermissions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dataexchange-2017-07-25/DatabaseLFTagPolicyAndPermissions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dataexchange-2017-07-25/DatabaseLFTagPolicyAndPermissions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dataexchange-2017-07-25/DatabaseLFTagPolicyAndPermissions)

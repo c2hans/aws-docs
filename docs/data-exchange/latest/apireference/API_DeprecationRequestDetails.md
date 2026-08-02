@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_DeprecationRequestDetails.html
+---
+
+# DeprecationRequestDetails
+<a name="API_DeprecationRequestDetails"></a>
+
+Extra details specific to a deprecation type notification.
+
+## Contents
+<a name="API_DeprecationRequestDetails_Contents"></a>
+
+ ** DeprecationAt **   <a name="dataexchange-Type-DeprecationRequestDetails-DeprecationAt"></a>
+A datetime in the future when the data set will be deprecated.
+Type: Timestamp
+Required: Yes
+
+## See Also
+<a name="API_DeprecationRequestDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dataexchange-2017-07-25/DeprecationRequestDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dataexchange-2017-07-25/DeprecationRequestDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dataexchange-2017-07-25/DeprecationRequestDetails)

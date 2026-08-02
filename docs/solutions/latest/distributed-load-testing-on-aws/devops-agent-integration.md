@@ -1,0 +1,62 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/devops-agent-integration.html
+---
+
+# AWS DevOps Agent integration
+<a name="devops-agent-integration"></a>
+
+With [AWS DevOps Agent](https://aws.amazon.com/devops-agent/), you can automate investigation of your load test results directly from the Distributed Load Testing on AWS solution. When you connect an Agent Space, you can send completed test runs to the agent for analysis. The agent proactively identifies performance bottlenecks, determines root causes, and suggests remediation steps—without requiring you to manually correlate Amazon CloudWatch metrics, logs, and traces.
+
+## Prerequisites
+<a name="devops-agent-prerequisites"></a>
+
+Before connecting an Agent Space to Distributed Load Testing on AWS (DLT), complete the following:
++ The Agent Space must be in the same AWS account as your DLT deployment.
++ The Agent Space must be tagged with the key `dlt-integration` and value `allowed`. This tag establishes dual consent—both the DLT operator and the Agent Space administrator must take explicit action before DLT can access the Agent Space.
++ The `dlt-integration: allowed` tag must be present before DLT can accept test-connection or investigation requests, even if the Agent Space ARN is valid.
+
+To add the tag, choose the [AWS DevOps Agent console](https://console.aws.amazon.com/aidevops) and choose your Agent Space. Choose the **Configuration** tab. Scroll down to the **Tags** section, choose **Add new tag**, enter `dlt-integration` as the key and `allowed` as the value, then choose **Save**.
+
+## Register an Agent Space
+<a name="devops-agent-register"></a>
+
+After your Agent Space is tagged, complete the following steps to register it with DLT:
+
+1. Choose **Agent Integration** in the DLT web console left sidebar.
+
+1. In the **DevOps Agent Connections** section, choose **Register Agent Space**.
+
+1. Enter a display name and paste the Agent Space ARN from the AWS DevOps Agent console.
+
+1. Choose **Test Connection** to verify that the ARN is reachable and that the `dlt-integration: allowed` tag is present.
+
+1. After the connection is confirmed, choose **Save**.
+
+You can register multiple Agent Spaces and select between them when triggering an investigation.
+
+## Investigate a test run
+<a name="devops-agent-investigate"></a>
+
+After registering at least one Agent Space, you can start an investigation from any completed test run. The **Investigate with DevOps Agent** button appears on each test run detail page. Complete the following steps:
+
+1. Choose **Investigate with DevOps Agent** after a test run completes—successful, failed, or partial.
+
+1. If you registered multiple Agent Spaces, choose one from the list.
+
+1. Optionally, provide additional context such as a description of recent infrastructure changes or the expected performance baseline.
+
+1. Choose **Submit**.
+
+The investigation appears in the **Investigations** tab of the test run detail page, where you can track its status and choose the link to view findings in the AWS DevOps Agent console.
+
+## Review findings
+<a name="devops-agent-findings"></a>
+
+AWS DevOps Agent investigations typically complete within a few minutes but might differ depending on the Agent Space configuration. When complete, choose **View findings** in the **Investigations** tab to open the findings in the AWS DevOps Agent console.
+
+Findings include the following:
++ A structured root-cause analysis that identifies which components contributed to latency or errors.
++ A list of symptoms observed during the test window.
++ Concrete remediation suggestions.
+
+Investigations remain in the DLT **Investigations** tab for the lifetime of the test run record, so you can refer back to prior analyses as your application evolves.

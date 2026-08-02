@@ -1,0 +1,170 @@
+---
+source_url: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/reading-service-price-list-file-for-savings-plans.html
+---
+
+# Reading the service price list file for a Savings Plan
+<a name="reading-service-price-list-file-for-savings-plans"></a>
+
+|  |
+| --- |
+| To provide feedback about AWS Price List, complete this [short survey](https://amazonmr.au1.qualtrics.com/jfe/form/SV_cO0deTMyKyFeezA). Your responses will be anonymous. **Note:** This survey is in English only. |
+
+The service price list files for an AWS service includes the following types of information:
++ Service price list file details – Metadata about the service price list file, such as the version, AWS Region, and publication date
++ Product details – Product metadata that lists the products in a service price list file along with product information
++ Pricing details (terms) – Prices for all products in the service price list file
+
+**Contents**
++ [CSV file](#service-price-list-file-for-saving-plans-csv)
++ [JSON file](#service-price-list-file-for-saving-plans-json)
++ [Service price list definitions](#service-price-list-file-definitions-savings-plan)
++ [Product details (products) definitions](#service-price-list-file-definitions-products-savings-plan)
++ [Pricing details (terms) definitions](#service-price-list-file-definitions-terms-savings-plan)
+
+## CSV file
+<a name="service-price-list-file-for-saving-plans-csv"></a>
+
+The first five rows of the CSV file are the metadata for the price list file. The sixth row has the column names for the products and their attributes, such as `SKU`, `RateCode`, and more.
+
+The number of columns varies depends on the Savings Plan. The first few columns contain the pricing details, while other columns contain the product details for a Savings Plan.
+
+## JSON file
+<a name="service-price-list-file-for-saving-plans-json"></a>
+
+The product details and pricing details are in separate sections. A JSON service price list file looks like the following example.
+
+```
+{
+   "version" : "The version of the price list file",
+   "publicationDate" : "The publication date of the price list file",
+   "regionCode" : "Region for which price list file is valid for",
+   "products" : [
+      {
+         "sku" : "The SKU of the product",
+         "productFamily" : "The product family of the product",
+         "serviceCode" : "Savings plan code",
+         "attributes" : {
+            "attributeName":"attributeValue",
+         }
+      },
+      ...
+   ],
+   "terms" : {
+      "savingsPlan" : [
+         {
+            "sku" : "The SKU of the product",
+            "description" : "Description of the product",
+            "effectiveDate" : "The effective date of the pricing details",
+            "leaseContractLength" : {
+                "duration" : "Length of the lease contract - it is a number",
+                "unit" : "Unit of the duration"
+            },
+            "rates" : [
+                {
+                    "discountedSku" : "The SKU of the discounted on demand product",
+                    "discountedUsageType" : "Usage type of the discounted product",
+                    "discountedOperation" : "Operation of the discounted product",
+                    "discountedServiceCode" : "Service code of the discounted product",
+                    "rateCode" : "The rate code of this price detail",
+                    "unit" : "Unit used to measure usage of the product",
+                    "discountedRate" : {
+                        "price" : "Price of the product",
+                        "currency" : "Currency of the price"
+                    }
+                },
+                ...
+            ]
+        },
+        ...
+      ]
+   }
+}
+```
+
+## Service price list definitions
+<a name="service-price-list-file-definitions-savings-plan"></a>
+
+The following list defines the terms in the service price list files.
+
+**regionCode**
+The Region code of the Region for which the price list is valid for.
+
+**version**
+An attribute that tracks the version of the price list file. Each time a new file is published, it contains a new version number. For example, `20150409022205` and `20150910182105`.
+
+**publicationDate**
+The date and time in UTC format when a service price list file was published. For example, `2015-04-09T02:22:05Z` and `2015-09-10T18:21:05Z`.
+
+## Product details (products) definitions
+<a name="service-price-list-file-definitions-products-savings-plan"></a>
+
+This section provides information about products in a price list file for a Savings Plan. Products are indexed by SKU.
+
+**products:product:sku**
+A unique code for a product. Use the `SKU` code to correlate product details and pricing.
+For example, a product with a SKU of `HCNSHWWAJSGVAHMH` is available only for a price that also lists `HCNSHWWAJSGVAHMH` as a SKU.
+
+**products:product:productFamily**
+The category for the type of product. For example, `EC2InstanceSavingsPlans` for Compute Savings Plans.
+
+**products:product:serviceCode**
+The service code of the Savings Plan. For example, `ComputeSavingsPlans`.
+
+**products:product:attributes**
+A list of all product attributes.
+
+**products:product:attributes:attributeName**
+The name of a product attribute. For example, `Instance Type`, `Location Type`, or `Purchase Option`.
+
+**products:product:attributes:attributeValue**
+The value of a product attribute. For example, `m1.small` (instance type), AWS Local Zone (type of location), or `No Upfront` (type of purchase option).
+
+## Pricing details (terms) definitions
+<a name="service-price-list-file-definitions-terms-savings-plan"></a>
+
+This section provides information about the prices for products in a price list file for a Savings Plan.
+
+ Prices are indexed first by the terms (`savingsPlan`).
+
+**terms:termType**
+The specific type of term that a term definition describes. The valid term type is `savingsPlan`.
+
+**terms:termType:sku**
+A unique code for a product. Use the `SKU` code to correlate product details and pricing.
+For example, a product with a SKU of `T496KPMD8YQ8RZNC` is available only for a price that also lists `496KPMD8YQ8RZNC` as a SKU.
+
+**terms:termType:sku:description**
+The description of the product.
+
+**terms:termType:sku:effectiveDate**
+The date that an service price list file goes into effect. For example, if a term has an `EffectiveDate` of November 1, 2017, the price isn't valid before that date.
+
+**terms:termType:sku:leaseContractLength:duration**
+The length of the lease contract. This value is a number. For example, 1 or 3.
+
+**terms:termType:sku:rates**
+A list all of the discounted rates that are applicable to a Savings Plan product. One Savings Plan product is a combination of multiple products from other services and this contains multiple rates for the combination.
+
+**terms:termType:sku:rates:discountedSku**
+The SKU of the discounted on demand product.
+
+**terms:termType:sku:rates:discountedUsageType**
+The usage type of the discounted on-demand product.
+
+**terms:termType:sku:rates:discountedOperation**
+The operation of the discounted on-demand product.
+
+**terms:termType:sku:rates:discountedServiceCode**
+The service code of the discounted on-demand product.
+
+**terms:termType:sku:rates:rateCode**
+The rate code of this rate offered under the Savings Plan product. For example,`T496KPMD8YQ8RZNC.26PW7ZDSYZZ6YBTZ`
+
+**terms:termType:sku:rates:unit**
+The unit used to measure usage of the product. For example, `Hrs` for an Amazon EC2 instance.
+
+**terms:termType:sku:rates:discountedRate:price**
+The price of the offered discounted product under Savings Plan product. For example, `3.434`.
+
+**terms:termType:sku:rates:discountedRate:currency**
+The currency of the price of the offered discounted product under a Savings Plan product. For example, `USD`.

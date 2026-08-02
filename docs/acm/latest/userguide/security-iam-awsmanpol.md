@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/acm/latest/userguide/security-iam-awsmanpol.html
+---
+
+# AWS managed policies for AWS Certificate Manager
+<a name="security-iam-awsmanpol"></a>
+
+An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
+
+Keep in mind that AWS managed policies might not grant least-privilege permissions for your specific use cases because they're available for all AWS customers to use. We recommend that you reduce permissions further by defining [ customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#customer-managed-policies) that are specific to your use cases.
+
+You cannot change the permissions defined in AWS managed policies. If AWS updates the permissions defined in an AWS managed policy, the update affects all principal identities (users, groups, and roles) that the policy is attached to. AWS is most likely to update an AWS managed policy when a new AWS service is launched or new API operations become available for existing services.
+
+For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
+
+## AWSCertificateManagerReadOnly
+<a name="acm-read-only-managed-policy"></a>
+
+This policy provides read–only access to ACM certificates; it allows users to describe, list, search, and retrieve ACM certificates. The policy also includes describe and list permissions for ACME certificate automation resources.
+
+To view this AWS managed policy in the console, go to [https://console.aws.amazon.com/iam/home\#policies/arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AWSCertificateManagerReadOnly).
+
+For a JSON listing of the policy details, see [AWSCertificateManagerReadOnly](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCertificateManagerReadOnly.html).
+
+## AWSCertificateManagerFullAccess
+<a name="acm-full-access-managed-policy"></a>
+
+ This policy provides full access to all ACM actions and resources.
+
+To view this AWS managed policy in the console, go to [https://console.aws.amazon.com/iam/home\#policies/arn:aws:iam::aws:policy/AWSCertificateManagerFullAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AWSCertificateManagerFullAccess).
+
+For a JSON listing of the policy details, see [AWSCertificateManagerFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSCertificateManagerFullAccess.html).
+
+## ACM updates to AWS managed policies
+<a name="security-iam-awsmanpol-updates"></a>
+
+View details about updates to AWS managed policies for ACM since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the ACM [Document history](dochistory.md) page.
+
+| Change | Description | Date |
+| --- | --- | --- |
+| Added ACME read action support to the [AWSCertificateManagerReadOnly](#acm-read-only-managed-policy) policy. | The AWSCertificateManagerReadOnly policy now includes permission to call the DescribeAcmeAccount, DescribeAcmeDomainValidation, DescribeAcmeEndpoint, DescribeAcmeExternalAccountBinding, ListAcmeAccounts, ListAcmeDomainValidations, ListAcmeEndpoints, ListAcmeExternalAccountBindings, and ListTagsForResource API actions. | June 30, 2026 |
+| Added SearchCertificates support to the [AWSCertificateManagerReadOnly](#acm-read-only-managed-policy) policy. | The AWSCertificateManagerReadOnly policy now includes permission to call the SearchCertificates API action. | March 31, 2026 |
+| Added GetAccountConfiguration support to the [AWSCertificateManagerReadOnly](#acm-read-only-managed-policy) policy. | The AWSCertificateManagerReadOnly policy now includes permission to call the GetAccountConfiguration API action. | March 3, 2021 |
+| ACM starts tracking changes | ACM starts tracking changes for AWS managed policies. | March 3, 2021 |

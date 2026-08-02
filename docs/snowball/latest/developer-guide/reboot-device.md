@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/snowball/latest/developer-guide/reboot-device.html
+---
+
+AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
+
+# Rebooting the device with AWS OpsHub
+<a name="reboot-device"></a>
+
+Follow these steps to use AWS OpsHub to reboot your Snow device.
+
+**Important**
+We highly recommend that you suspend all activities on the device before you reboot the device. Rebooting a device stops running instances and interrupts any writing to Amazon S3 buckets on the device.
+
+**To reboot a device**
+
+1. On the AWS OpsHub dashboard, find your device under **Devices**. Then choose the device to open the device details page.
+
+1. Choose the **Device Power** menu, then choose **Reboot**. A dialog box appears.
+![Device details page showing Device Power menu open with Reboot chosen.](http://docs.aws.amazon.com/snowball/latest/developer-guide/images/opshub-device-reboot-console.png)
+
+1. In the dialog box, choose **Reboot**. Your device starts to reboot.
+![Reboot device window showing Reboot button at lower right.](http://docs.aws.amazon.com/snowball/latest/developer-guide/images/opshub-reboot-window-console.png)
+
+   While the device shuts down, the LCD screen displays a message indicating the device is shutting down.
+![Shutdown message on LCD screen.](http://docs.aws.amazon.com/snowball/latest/developer-guide/images/shutdown-screen.png)

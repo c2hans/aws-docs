@@ -1,0 +1,125 @@
+---
+source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-updatewindowsami.html
+---
+
+# `AWS-UpdateWindowsAmi`
+<a name="automation-aws-updatewindowsami"></a>
+
+**Description**
+
+Update a Microsoft Windows Amazon Machine Image (AMI). By default, this runbook installs all Windows updates, Amazon software, and Amazon drivers. It then runs Sysprep to create a new AMI. Supports Windows Server 2008 R2 through Windows Server 2022.
+
+**Important**
+This runbook does not support Windows Server 2025 and later versions, as AWS Paravirtual drivers are not compatible with these versions. For more information, see [Paravirtual drivers for Windows instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/xen-drivers-overview.html).
+
+**Important**
+If your instances connect to AWS Systems Manager using VPC endpoints, this runbook will fail unless used in the us-east-1 Region. Instances must have TLS 1.2 enabled to use this runbook.
+
+[Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWS-UpdateWindowsAmi)
+
+**Document type**
+
+Automation
+
+**Owner**
+
+Amazon
+
+**Platforms**
+
+Windows
+
+**Parameters**
++ AutomationAssumeRole
+
+  Type: String
+
+  Description: (Optional) The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that allows Systems Manager Automation to perform the actions on your behalf. If no role is specified, Systems Manager Automation uses the permissions of the user that starts this runbook.
++ Categories
+
+  Type: String
+
+  Description: (Optional) Specify one or more update categories. You can filter categories using comma-separated values. Options: Application, Connectors, CriticalUpdates, DefinitionUpdates, DeveloperKits, Drivers, FeaturePacks, Guidance, Microsoft, SecurityUpdates, ServicePacks, Tools, UpdateRollups, Updates. Valid formats include a single entry, for example: CriticalUpdates. Or you can specify a comma separated list: CriticalUpdates,SecurityUpdates. NOTE: There cannot be any spaces around the commas.
++ ExcludeKbs
+
+  Type: String
+
+  Description: (Optional) Specify one or more Microsoft Knowledge Base (KB) article IDs to exclude. You can exclude multiple IDs using comma-separated values. Valid formats: KB9876543 or 9876543.
++ IamInstanceProfileName
+
+  Type: String
+
+  Default: ManagedInstanceProfile
+
+  Description: (Required) The name of the role that enables Systems Manager to manage the instance.
++ IncludeKbs
+
+  Type: String
+
+  Description: (Optional) Specify one or more Microsoft Knowledge Base (KB) article IDs to include. You can install multiple IDs using comma-separated values. Valid formats: KB9876543 or 9876543.
++ InstanceType
+
+  Type: String
+
+  Default: t2.medium
+
+  Description: (Optional) Type of instance to launch as the workspace host. Instance types vary by region. Default is t2.medium.
++ MetadataOptions
+
+  Type: StringMap
+
+  Default: {"HttpEndpoint": "enabled", "HttpTokens": "optional"}
+
+  Description: (Optional) The metadata options for the instance. For more information, see [InstanceMetadataOptionsRequest](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceMetadataOptionsRequest.html).
++ PostUpdateScript
+
+  Type: String
+
+  Description: (Optional) A script provided as a string. It will run after installing OS updates.
++ PreUpdateScript
+
+  Type: String
+
+  Description: (Optional) A script provided as a string. It will run prior to installing OS updates.
++ PublishedDateAfter
+
+  Type: String
+
+  Description: (Optional) Specify the date that the updates should be published after. For example, if 01/01/2017 is specified, any updates that were found during the Windows Update search that have been published on or after 01/01/2017 will be returned.
++ PublishedDateBefore
+
+  Type: String
+
+  Description: (Optional) Specify the date that the updates should be published before. For example, if 01/01/2017 is specified, any updates that were found during the Windows Update search that have been published on or before 01/01/2017 will be returned.
++ PublishedDaysOld
+
+  Type: String
+
+  Description: (Optional) Specify the amount of days old the updates must be from the published date. For example, if 10 is specified, any updates that were found during the Windows Update search that have been published 10 or more days ago will be returned.
++ SecurityGroupIds
+
+  Type: String
+
+  Description: (Required) A comma separated list of the IDs of the security groups you want to apply to the AMI.
++ SeverityLevels
+
+  Type: String
+
+  Description: (Optional) Specify one or more MSRC severity levels associated with an update. You can filter severity levels using comma-separated values. By default patches for all security levels are selected. If value supplied, the update list is filtered by those values. Options: Critical, Important, Low, Moderate or Unspecified. Valid formats include a single entry, for example: Critical. Or, you can specify a comma separated list: Critical,Important,Low.
++ SourceAmiId
+
+  Type: String
+
+  Description: (Required) The source AMI ID.
++ SubnetId
+
+  Type: String
+
+  Description: (Optional) The ID of the subnet you want to launch the instance into. If you have deleted your default VPC, this parameter is required.
++ TargetAmiName
+
+  Type: String
+
+  Default: UpdateWindowsAmi\_from\_{{SourceAmiId}}\_on\_{{global:DATE\_TIME}}
+
+  Description: (Optional) The name of the new AMI that will be created. Default is a system-generated string including the source AMI id, and the creation time and date.

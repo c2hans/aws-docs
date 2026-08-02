@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteTransitBeforeTravelStep.html
+---
+
+# RouteTransitBeforeTravelStep
+<a name="API_RouteTransitBeforeTravelStep"></a>
+
+A step that must be performed before the travel portion of the leg.
+
+## Contents
+<a name="API_RouteTransitBeforeTravelStep_Contents"></a>
+
+ ** Duration **   <a name="location-Type-RouteTransitBeforeTravelStep-Duration"></a>
+Duration of the step.
+ **Unit**: `seconds`
+Type: Long
+Valid Range: Minimum value of 0. Maximum value of 4294967295.
+Required: Yes
+
+ ** Type **   <a name="location-Type-RouteTransitBeforeTravelStep-Type"></a>
+Type of the step.
+Type: String
+Valid Values: `Board`
+Required: Yes
+
+ ** Instruction **   <a name="location-Type-RouteTransitBeforeTravelStep-Instruction"></a>
+Brief description of the step in the requested language.
+Type: String
+Required: No
+
+## See Also
+<a name="API_RouteTransitBeforeTravelStep_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/geo-routes-2020-11-19/RouteTransitBeforeTravelStep)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/geo-routes-2020-11-19/RouteTransitBeforeTravelStep)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/geo-routes-2020-11-19/RouteTransitBeforeTravelStep)

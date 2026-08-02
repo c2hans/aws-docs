@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/advops01.html
+---
+
+# Organization
+<a name="advops01"></a>
+
+| ADVOPS01: What organizational mechanisms do you have to support your advertising outcomes? |
+| --- |
+|   |
+
+ Effective organizational mechanisms are important for supporting successful advertising outcomes. It is important to assess the processes, roles, responsibilities, and performance management practices in place within the organization to ensure the efficient and reliable delivery of advertising workloads.
+
+**Topics**
++ [ADVOPS01-BP01 Assess trade-offs between ad serving architecture options and associated risks](advops01-bp01.md)
++ [ADVOPS01-BP02 Create RACI matrices that define the roles and responsibilities for each key advertising process like infrastructure monitoring](advops01-bp02.md)
++ [ADVOPS01-BP03 Establish performance metrics by defining key performance indicators (KPIs) and service-level objectives (SLOs)](advops01-bp03.md)
++ [ADVOPS01-BP04 Establish data governance and compliance operations](advops01-bp04.md)

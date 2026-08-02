@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/copy-image-different-region.html
+---
+
+# Copy an Image That You Own to Another AWS Region in Amazon WorkSpaces Applications
+<a name="copy-image-different-region"></a>
+
+**Important**
+For Asia Pacific (Malaysia), Europe (Milan), Europe (Spain), and Israel (Tel Aviv) AWS Regions: Cross-region image copying is only supported for images with WorkSpaces Applications agent versions released on/after October 02, 2025, or images using managed updates released on/after September 05, 2025. Older versions are not eligible for copying between regions. Update your images to meet these minimum version requirements to enable cross-region copy functionality.
+
+You can copy images that you own to another AWS Region. Using the same image across different AWS Regions can help simplify global deployments of your applications on WorkSpaces Applications. By deploying your applications in the AWS Regions that are geographically closest to your users, you can help provide your users with a more responsive experience.
+
+**To copy an image that you own to another AWS Region**
+
+1. Open the WorkSpaces Applications console at [https://console.aws.amazon.com/appstream2](https://console.aws.amazon.com/appstream2).
+
+1. In the navigation pane, choose **Images**, **Image Registry**.
+
+1. In the image list, select the image that you want to copy to another AWS Region.
+
+1. Choose **Actions**, **Copy**.
+
+1. In the **Copy image** dialog box, in **Destination region**, select the AWS Region that you want to copy the image to.
+
+1. Type a unique name and optionally, a description for the image in **Destination region**.
+
+1. Choose **Copy Image**.

@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-ios-tests.html
+---
+
+# iOS tests in AWS Device Farm
+<a name="test-types-ios-tests"></a>
+
+Device Farm provides support for several automation test types for iOS devices, and a built-in test.
+
+For more information about testing in Device Farm, see [Test frameworks and built-in tests in AWS Device Farm](test-types.md).
+
+## iOS application testing frameworks
+<a name="test-types-framework-ios"></a>
+
+The following tests are available for iOS devices.
++ [Automatic Appium testsIntegrating with Appium tests](test-types-appium.md)
++ [XCTest](test-types-ios-xctest.md)
++ [XCTest UI](test-types-ios-xctest-ui.md)
+
+## Built-in test types for iOS
+<a name="test-types-built-in-ios"></a>
+
+There is currently one built-in test type available for iOS devices.
++ [Built-in: fuzz (Android and iOS)](test-types-built-in-fuzz.md)

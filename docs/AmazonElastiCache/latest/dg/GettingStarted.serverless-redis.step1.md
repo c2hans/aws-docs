@@ -1,0 +1,64 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.serverless-redis.step1.html
+---
+
+# Create a Redis OSS serverless cache
+<a name="GettingStarted.serverless-redis.step1"></a>
+
+In this step, you create a new cache in Amazon ElastiCache.
+
+**AWS Management Console**
+
+To create a new cache using the ElastiCache console:
+
+1. Sign in to the AWS Management Console and open the ElastiCache console at [https://console.aws.amazon.com/elasticache/](https://console.aws.amazon.com/elasticache/).
+
+1. In the navigation pane on the left side of the console, choose **Redis OSS caches**.
+
+1. On the right side of the console, choose **Create Redis OSS cache**
+
+1. In the **Cache settings** enter a **Name**. You can optionally enter a **description** for the cache.
+
+1. Leave the default settings selected.
+
+1. Click **Create** to create the cache.
+
+1. Once the cache is in "ACTIVE" status, you can begin writing and reading data to the cache. .
+
+**AWS CLI**
+
+The following AWS CLI example creates a new cache using create-serverless-cache.
+
+**Linux**
+
+```
+aws elasticache create-serverless-cache \
+    --serverless-cache-name CacheName \
+    --engine redis
+```
+
+**Windows**
+
+```
+aws elasticache create-serverless-cache ^
+    --serverless-cache-name CacheName ^
+    --engine redis
+```
+
+Note that the value of the Status field is set to `CREATING`.
+
+To verify that ElastiCache has finished creating the cache, use the `describe-serverless-caches` command.
+
+**Linux**
+
+```
+aws elasticache describe-serverless-caches --serverless-cache-name CacheName
+```
+
+**Windows**
+
+```
+aws elasticache describe-serverless-caches --serverless-cache-name CacheName
+```
+
+After creating the new cache, proceed to [Read and write data to the cache](GettingStarted.serverless-redis.step2.md).

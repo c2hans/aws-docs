@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/migrationhub-strategy/latest/userguide/service-integrations.html
+---
+
+AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
+
+# Working with other services
+<a name="service-integrations"></a>
+
+This section describes other AWS services that interact with Migration Hub Strategy Recommendations.
+
+**Topics**
++ [AWS CloudTrail](logging-using-cloudtrail.md)

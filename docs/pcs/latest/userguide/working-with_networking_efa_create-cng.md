@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/pcs/latest/userguide/working-with_networking_efa_create-cng.html
+---
+
+# Create or update compute node groups for EFA
+<a name="working-with_networking_efa_create-cng"></a>
+
+Your AWS PCS compute node groups must contain instances that have the same number of vCPUs, processor architecture, and EFA support. Configure the compute node group to use the AMI with the EFA software installed on it, and to use the launch template that configures EFA-enabled network interfaces.

@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/location/previous/developerguide/cross-service-confused-deputy-prevention.html
+---
+
+# Cross-service confused deputy prevention
+<a name="cross-service-confused-deputy-prevention"></a>
+
+The confused deputy problem is a security issue where an entity that doesn't have permission to perform an action can coerce a more-privileged entity to perform the action. In AWS, cross-service impersonation can result in the confused deputy problem. Cross-service impersonation can occur when one service (the *calling service*) calls another service (the *called service*). The calling service can be manipulated to use its permissions to act on another customer's resources in a way it should not otherwise have permission to access. To prevent this, AWS provides tools that help you protect your data for all services with service principals that have been given access to resources in your account.
+
+Amazon Location Service does not act as a calling service on your behalf to other AWS services, so you do not need to add these protections in this case. To learn more about confused deputy, see [The confused deputy problem](https://docs.aws.amazon.com/IAM/latest/UserGuide/confused-deputy.html) in the *AWS Identity and Access Management User Guide*.

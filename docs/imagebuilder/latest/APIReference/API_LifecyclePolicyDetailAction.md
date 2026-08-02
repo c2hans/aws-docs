@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_LifecyclePolicyDetailAction.html
+---
+
+# LifecyclePolicyDetailAction
+<a name="API_LifecyclePolicyDetailAction"></a>
+
+Contains selection criteria for the lifecycle policy.
+
+## Contents
+<a name="API_LifecyclePolicyDetailAction_Contents"></a>
+
+ ** type **   <a name="imagebuilder-Type-LifecyclePolicyDetailAction-type"></a>
+Specifies the lifecycle action to take.
+Type: String
+Valid Values: `DELETE | DEPRECATE | DISABLE`
+Required: Yes
+
+ ** includeResources **   <a name="imagebuilder-Type-LifecyclePolicyDetailAction-includeResources"></a>
+Specifies the resources that the lifecycle policy applies to.
+Type: [LifecyclePolicyDetailActionIncludeResources](API_LifecyclePolicyDetailActionIncludeResources.md) object
+Required: No
+
+## See Also
+<a name="API_LifecyclePolicyDetailAction_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/imagebuilder-2019-12-02/LifecyclePolicyDetailAction)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/imagebuilder-2019-12-02/LifecyclePolicyDetailAction)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/LifecyclePolicyDetailAction)

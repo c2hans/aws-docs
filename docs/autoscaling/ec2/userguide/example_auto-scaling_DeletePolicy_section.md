@@ -1,0 +1,72 @@
+---
+source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/example_auto-scaling_DeletePolicy_section.html
+---
+
+# Use `DeletePolicy` with a CLI
+<a name="example_auto-scaling_DeletePolicy_section"></a>
+
+The following code examples show how to use `DeletePolicy`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To delete a scaling policy**
+This example deletes the specified scaling policy.
+
+```
+aws autoscaling delete-policy \
+    --auto-scaling-group-name {{my-asg}} \
+    --policy-name {{alb1000-target-tracking-scaling-policy}}
+```
+This command produces no output.
++  For API details, see [DeletePolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/delete-policy.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example deletes the specified policy for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
+
+```
+Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy
+```
+**Output:**
+
+```
+Confirm
+Are you sure you want to perform this action?
+Performing operation "Remove-ASPolicy (DeletePolicy)" on Target "myScaleInPolicy".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
+```
+**Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
+
+```
+Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy -Force
+```
++  For API details, see [DeletePolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example deletes the specified policy for the specified Auto Scaling group. You are prompted for confirmation before the operation proceeds.**
+
+```
+Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy
+```
+**Output:**
+
+```
+Confirm
+Are you sure you want to perform this action?
+Performing operation "Remove-ASPolicy (DeletePolicy)" on Target "myScaleInPolicy".
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
+```
+**Example 2: If you specify the Force parameter, you are not prompted for confirmation before the operation proceeds.**
+
+```
+Remove-ASPolicy -AutoScalingGroupName my-asg -PolicyName myScaleInPolicy -Force
+```
++  For API details, see [DeletePolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using this service with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

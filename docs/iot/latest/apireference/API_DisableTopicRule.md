@@ -1,0 +1,93 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DisableTopicRule.html
+---
+
+# DisableTopicRule
+<a name="API_DisableTopicRule"></a>
+
+Disables the rule.
+
+Requires permission to access the [DisableTopicRule](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
+
+## Request Syntax
+<a name="API_DisableTopicRule_RequestSyntax"></a>
+
+```
+POST /rules/{{ruleName}}/disable HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_DisableTopicRule_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [ruleName](#API_DisableTopicRule_RequestSyntax) **   <a name="iot-DisableTopicRule-request-uri-ruleName"></a>
+The name of the rule to disable.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `^[a-zA-Z0-9_]+$`
+Required: Yes
+
+## Request Body
+<a name="API_DisableTopicRule_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_DisableTopicRule_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+```
+
+## Response Elements
+<a name="API_DisableTopicRule_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+<a name="API_DisableTopicRule_Errors"></a>
+
+ ** ConflictingResourceUpdateException **
+A conflicting resource update exception. This exception is thrown when two pending updates cause a conflict.
+ ** message **
+The message for the exception.
+HTTP Status Code: 409
+
+ ** InternalException **
+An unexpected error has occurred.
+ ** message **
+The message for the exception.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+The request is not valid.
+ ** message **
+The message for the exception.
+HTTP Status Code: 400
+
+ ** ServiceUnavailableException **
+The service is temporarily unavailable.
+ ** message **
+The message for the exception.
+HTTP Status Code: 503
+
+ ** UnauthorizedException **
+You are not authorized to perform this operation.
+ ** message **
+The message for the exception.
+HTTP Status Code: 401
+
+## See Also
+<a name="API_DisableTopicRule_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iot-2015-05-28/DisableTopicRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/DisableTopicRule)

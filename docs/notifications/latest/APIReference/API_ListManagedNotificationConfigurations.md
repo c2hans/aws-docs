@@ -1,0 +1,120 @@
+---
+source_url: https://docs.aws.amazon.com/notifications/latest/APIReference/API_ListManagedNotificationConfigurations.html
+---
+
+# ListManagedNotificationConfigurations
+<a name="API_ListManagedNotificationConfigurations"></a>
+
+Returns a list of Managed Notification Configurations according to specified filters, ordered by creation time in reverse chronological order (newest first).
+
+## Request Syntax
+<a name="API_ListManagedNotificationConfigurations_RequestSyntax"></a>
+
+```
+GET /managed-notification-configurations?channelIdentifier={{channelIdentifier}}&maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListManagedNotificationConfigurations_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [channelIdentifier](#API_ListManagedNotificationConfigurations_RequestSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-request-uri-channelIdentifier"></a>
+The identifier or ARN of the notification channel to filter configurations by.
+Pattern: `ACCOUNT_PRIMARY|ACCOUNT_ALTERNATE_BILLING|ACCOUNT_ALTERNATE_OPERATIONS|ACCOUNT_ALTERNATE_SECURITY|arn:[a-z-]{3,10}:(chatbot|consoleapp|notifications-contacts):[a-zA-Z0-9-]*:[0-9]{12}:[a-zA-Z0-9-_.@]+/[a-zA-Z0-9/_.@:-]+`
+
+ ** [maxResults](#API_ListManagedNotificationConfigurations_RequestSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-request-uri-maxResults"></a>
+The maximum number of results to be returned in this call. Defaults to 20.
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+ ** [nextToken](#API_ListManagedNotificationConfigurations_RequestSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-request-uri-nextToken"></a>
+The start token for paginated calls. Retrieved from the response of a previous ListManagedNotificationChannelAssociations call. Next token uses Base64 encoding.
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `[\w+-/=]+`
+
+## Request Body
+<a name="API_ListManagedNotificationConfigurations_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListManagedNotificationConfigurations_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "managedNotificationConfigurations": [
+      {
+         "arn": "string",
+         "description": "string",
+         "name": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
+## Response Elements
+<a name="API_ListManagedNotificationConfigurations_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [managedNotificationConfigurations](#API_ListManagedNotificationConfigurations_ResponseSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-response-managedNotificationConfigurations"></a>
+A list of Managed Notification Configurations matching the request criteria.
+Type: Array of [ManagedNotificationConfigurationStructure](API_ManagedNotificationConfigurationStructure.md) objects
+
+ ** [nextToken](#API_ListManagedNotificationConfigurations_ResponseSyntax) **   <a name="Notifications-ListManagedNotificationConfigurations-response-nextToken"></a>
+A pagination token. If a non-null pagination token is returned in a result, pass its value in another request to retrieve more entries.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `[\w+-/=]+`
+
+## Errors
+<a name="API_ListManagedNotificationConfigurations_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+User does not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+Unexpected error during processing of request.
+HTTP Status Code: 500
+
+ ** ThrottlingException **
+Request was denied due to request throttling.
+ ** quotaCode **
+Identifies the quota that is being throttled.
+ ** retryAfterSeconds **
+The number of seconds a client should wait before retrying the request.
+ ** serviceCode **
+Identifies the service being throttled.
+HTTP Status Code: 429
+
+ ** ValidationException **
+This exception is thrown when the notification event fails validation.
+ ** fieldList **
+The list of input fields that are invalid.
+ ** reason **
+The reason why your input is considered invalid.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListManagedNotificationConfigurations_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/notifications-2018-05-10/ListManagedNotificationConfigurations)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/notifications-2018-05-10/ListManagedNotificationConfigurations)

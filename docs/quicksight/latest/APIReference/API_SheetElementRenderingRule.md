@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SheetElementRenderingRule.html
+---
+
+# SheetElementRenderingRule
+<a name="API_SheetElementRenderingRule"></a>
+
+The rendering rules of a sheet that uses a free-form layout.
+
+## Contents
+<a name="API_SheetElementRenderingRule_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** ConfigurationOverrides **   <a name="QS-Type-SheetElementRenderingRule-ConfigurationOverrides"></a>
+The override configuration of the rendering rules of a sheet.
+Type: [SheetElementConfigurationOverrides](API_SheetElementConfigurationOverrides.md) object
+Required: Yes
+
+ ** Expression **   <a name="QS-Type-SheetElementRenderingRule-Expression"></a>
+The expression of the rendering rules of a sheet.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: Yes
+
+## See Also
+<a name="API_SheetElementRenderingRule_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/SheetElementRenderingRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/SheetElementRenderingRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/SheetElementRenderingRule)

@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/pinwheel.html
+---
+
+This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
+
+# Pinwheel (Quick Access) for ATAK
+<a name="pinwheel"></a>
+
+The pinwheel or quick access feature is used for one-one-one conversations or direct messages.
+
+Complete the following procedure to use the pinwheel.
+
+1. Open the split screen view of the ATAK map and the Wickr for ATAK plugin simultaneously. The map displays your teammates or assets on the map view.
+
+1. Choose the user icon to open the pinwheel.
+
+1. Choose the Wickr icon to view the available options for the selected user.
+![Wickr icon.](http://docs.aws.amazon.com/wickr/latest/adminguide/images/atak-pinwheel-wickr-icon.png)
+
+1. On the pinwheel, choose one of the following icons:
+   + **Phone**: Choose to call.
+![Pinwheel call icon.](http://docs.aws.amazon.com/wickr/latest/adminguide/images/atak-pinwheel-call.png)
+   + **Message**: Choose to chat.
+![Pinwheel chat icon.](http://docs.aws.amazon.com/wickr/latest/adminguide/images/atak-pinwheel-message.png)
+   + **File send**: Choose to send a file.
+![Pinwheel send a file icon.](http://docs.aws.amazon.com/wickr/latest/adminguide/images/atak-pinwheel-send.png)

@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PanelTitleOptions.html
+---
+
+# PanelTitleOptions
+<a name="API_PanelTitleOptions"></a>
+
+The options that determine the title styles for each small multiples panel.
+
+## Contents
+<a name="API_PanelTitleOptions_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** FontConfiguration **   <a name="QS-Type-PanelTitleOptions-FontConfiguration"></a>
+Configures the display properties of the given text.
+Type: [FontConfiguration](API_FontConfiguration.md) object
+Required: No
+
+ ** HorizontalTextAlignment **   <a name="QS-Type-PanelTitleOptions-HorizontalTextAlignment"></a>
+Sets the horizontal text alignment of the title within each panel.
+Type: String
+Valid Values: `LEFT | CENTER | RIGHT | AUTO`
+Required: No
+
+ ** Visibility **   <a name="QS-Type-PanelTitleOptions-Visibility"></a>
+Determines whether or not panel titles are displayed.
+Type: String
+Valid Values: `HIDDEN | VISIBLE`
+Required: No
+
+## See Also
+<a name="API_PanelTitleOptions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/PanelTitleOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/PanelTitleOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/PanelTitleOptions)

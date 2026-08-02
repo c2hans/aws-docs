@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_LifecyclePolicyStats.html
+---
+
+# LifecyclePolicyStats
+<a name="API_LifecyclePolicyStats"></a>
+
+Statistics for an OpenSearch Serverless lifecycle policy.
+
+## Contents
+<a name="API_LifecyclePolicyStats_Contents"></a>
+
+ ** RetentionPolicyCount **   <a name="opensearchserverless-Type-LifecyclePolicyStats-RetentionPolicyCount"></a>
+The number of retention lifecycle policies in the current account.
+Type: Long
+Required: No
+
+## See Also
+<a name="API_LifecyclePolicyStats_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/opensearchserverless-2021-11-01/LifecyclePolicyStats)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/opensearchserverless-2021-11-01/LifecyclePolicyStats)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/opensearchserverless-2021-11-01/LifecyclePolicyStats)

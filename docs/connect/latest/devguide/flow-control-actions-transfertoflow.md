@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/devguide/flow-control-actions-transfertoflow.html
+---
+
+# TransferToFlow
+<a name="flow-control-actions-transfertoflow"></a>
+
+Execution jumps to a different flow, and continues running at that flow's beginning.
+
+## Parameter object
+<a name="transfertoflow-parameter"></a>
+
+```
+{
+    "ContactFlowId": A flow ID or flow ARN. *Must be either fully static or a single valid JSONPath identifier*
+}
+```
+
+## Execution results and conditions
+<a name="transfertoflow-results"></a>
+
+None.
+
+## Errors
+<a name="transfertoflow-errors"></a>
++ NoMatchingError - if no other Error matches.
+
+## Restrictions
+<a name="transfertoflow-restrictions"></a>
+
+This action is available in inbound flows and transfer flows. It is not available to hold flows, customer queue flows, or whisper flows.
+
+## Corresponding block in the UI
+<a name="transfertoflow-ui"></a>
+
+[Transfer to flow](https://docs.aws.amazon.com/connect/latest/adminguide/transfer-to-flow.html)

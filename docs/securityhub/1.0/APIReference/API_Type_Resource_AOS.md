@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Resource_AOS.html
+---
+
+# Amazon OpenSearch Service
+<a name="API_Type_Resource_AOS"></a>
+
+****Amazon OpenSearch Service objects****
++ [AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetails](API_AwsOpenSearchServiceDomainAdvancedSecurityOptionsDetails.md)
++ [AwsOpenSearchServiceDomainClusterConfigDetails](API_AwsOpenSearchServiceDomainClusterConfigDetails.md)
++ [AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetails](API_AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetails.md)
++ [AwsOpenSearchServiceDomainDetails](API_AwsOpenSearchServiceDomainDetails.md)
++ [AwsOpenSearchServiceDomainDomainEndpointOptionsDetails](API_AwsOpenSearchServiceDomainDomainEndpointOptionsDetails.md)
++ [AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails](API_AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails.md)
++ [AwsOpenSearchServiceDomainLogPublishingOption](API_AwsOpenSearchServiceDomainLogPublishingOption.md)
++ [AwsOpenSearchServiceDomainLogPublishingOptionsDetails](API_AwsOpenSearchServiceDomainLogPublishingOptionsDetails.md)
++ [AwsOpenSearchServiceDomainMasterUserOptionsDetails](API_AwsOpenSearchServiceDomainMasterUserOptionsDetails.md)
++ [AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetails](API_AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetails.md)
++ [AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails](API_AwsOpenSearchServiceDomainServiceSoftwareOptionsDetails.md)
++ [AwsOpenSearchServiceDomainVpcOptionsDetails](API_AwsOpenSearchServiceDomainVpcOptionsDetails.md)

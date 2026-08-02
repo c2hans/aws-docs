@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/aliases-editing.html
+---
+
+# Edit an alias
+<a name="aliases-editing"></a>
+
+You can edit an alias using the Amazon GameLift Servers console or with the AWS CLI command [update-alias](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-alias.html).
+
+This topic describes how to edit an Amazon GameLift Servers alias for use with game session placement. You can make the following edits:
+
+**To edit an alias**
+
+Use either the Amazon GameLift Servers console or the AWS Command Line Interface (AWS CLI) to edit an alias.
+
+------
+#### [ Console ]
+
+In the [Amazon GameLift Servers console](https://console.aws.amazon.com/gamelift/), use the navigation pane to open the **Aliases** page.
+
+1. Select the alias you want to edit and choose **Edit**. If you don't see the alias you want to edit, check your currently selected AWS Region.
+
+1. On the **Edit alias** page, you can make the following edits:
+   + Change the alias name.
+   + Change the alias description.
+   + Change the routing strategy from simple to terminal, or from terminal to simple.
+   + For an alias with a simple routing strategy, change the fleet ID the alias is associated with.
+   + For an alias with a terminal routing strategy, change the message text.
+
+1. Choose **Save changes**. When updating the fleet ID for an alias with a simple routing strategy, it may take up to 2 minutes for the transition to complete. During this time, new game session placements might take place on the old fleet.
+
+------
+#### [ AWS CLI ]
+
+Use the [https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-alias.html](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-alias.html) command to make changes to an alias resource. You can update an alias resource in your current default AWS Region, or you can add a `--region` tag to specify a different AWS Region.
+
+You can change the following properties:
++ Alias name.
++ Alias description.
++ Routing strategy type. Be sure to provide a fleet ID or a message string for the new routing strategy.
++ Fleet ID for an existing simple routing strategy. The fleet ID must be in the same region as the alias.
++ Message string for an existing terminal routing strategy.
+
+------

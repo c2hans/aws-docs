@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-quicksight-dashboard-pivottablefieldsubtotaloptions.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::QuickSight::Dashboard PivotTableFieldSubtotalOptions
+<a name="aws-properties-quicksight-dashboard-pivottablefieldsubtotaloptions"></a>
+
+The optional configuration of subtotals cells.
+
+## Syntax
+<a name="aws-properties-quicksight-dashboard-pivottablefieldsubtotaloptions-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-quicksight-dashboard-pivottablefieldsubtotaloptions-syntax.json"></a>
+
+```
+{
+  "[FieldId](#cfn-quicksight-dashboard-pivottablefieldsubtotaloptions-fieldid)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-quicksight-dashboard-pivottablefieldsubtotaloptions-syntax.yaml"></a>
+
+```
+  [FieldId](#cfn-quicksight-dashboard-pivottablefieldsubtotaloptions-fieldid): {{String}}
+```
+
+## Properties
+<a name="aws-properties-quicksight-dashboard-pivottablefieldsubtotaloptions-properties"></a>
+
+`FieldId`  <a name="cfn-quicksight-dashboard-pivottablefieldsubtotaloptions-fieldid"></a>
+The field ID of the subtotal options.
+*Required*: No
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `512`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/edit-dashboards.html
+---
+
+# Editing dashboards
+<a name="edit-dashboards"></a>
+
+You can modify existing dashboards to keep them relevant and useful as your needs change.
+
+**To edit a dashboard**
+
+1. Open the Billing and Cost Management console at [https://console.aws.amazon.com/costmanagement/](https://console.aws.amazon.com/costmanagement/).
+
+1. In the navigation pane, choose **Dashboards**.
+
+1. Select the dashboard you want to edit.

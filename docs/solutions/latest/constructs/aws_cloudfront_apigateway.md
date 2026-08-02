@@ -1,0 +1,163 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_cloudfront_apigateway.html
+---
+
+# aws-cloudfront-apigateway
+<a name="aws_cloudfront_apigateway"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_cloudfront_apigateway`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-cloudfront-apigateway`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.cloudfrontapigateway`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an AWS CloudFront fronting an Amazon API Gateway REST API.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { CloudFrontToApiGateway } from '@aws-solutions-constructs/aws-cloudfront-apigateway';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import * as api from 'aws-cdk-lib/aws-apigateway';
+
+const lambdaProps: lambda.FunctionProps = {
+  code: lambda.Code.fromAsset(`lambda`),
+  runtime: lambda.Runtime.NODEJS_22_X,
+  handler: 'index.handler'
+};
+
+const lambdafunction = new lambda.Function(this, 'LambdaFunction', lambdaProps);
+
+const apiGatewayProps: api.LambdaRestApiProps = {
+  handler: lambdafunction,
+  endpointConfiguration: {
+    types: [api.EndpointType.REGIONAL]
+  },
+  defaultMethodOptions: {
+    authorizationType: api.AuthorizationType.NONE
+  }
+};
+
+const apiGateway = new api.LambdaRestApi(this, 'LambdaRestApi', apiGatewayProps);
+
+new CloudFrontToApiGateway(this, 'test-cloudfront-apigateway', {
+  existingApiGatewayObj: apiGateway
+});
+```
+
+```
+from aws_solutions_constructs.aws_cloudfront_apigateway import CloudFrontToApiGateway
+from aws_cdk import (
+    aws_lambda as _lambda,
+    aws_apigateway as api,
+    Stack
+)
+from constructs import Construct
+
+lambda_function = _lambda.Function(self, 'LambdaFunction',
+                                    code=_lambda.Code.from_asset(
+                                        'lambda'),
+                                    runtime=_lambda.Runtime.PYTHON_3_14,
+                                    handler='index.handler')
+
+api_gateway = api.LambdaRestApi(self, 'LambdaRestApi',
+                                handler=lambda_function,
+                                endpoint_configuration=api.EndpointConfiguration(
+                                    types=[api.EndpointType.REGIONAL]
+                                ),
+                                default_method_options=api.MethodOptions(
+                                    authorization_type=api.AuthorizationType.NONE
+                                ))
+
+CloudFrontToApiGateway(self, 'test-cloudfront-apigateway',
+                        existing_api_gateway_obj=api_gateway
+                        )
+```
+
+```
+import software.constructs.Construct;
+import java.util.List;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awscdk.services.lambda.*;
+import software.amazon.awscdk.services.lambda.Runtime;
+import software.amazon.awscdk.services.apigateway.*;
+import software.amazon.awsconstructs.services.cloudfrontapigateway.*;
+
+final Function lambdaFunction = Function.Builder.create(this, "IndexHandler")
+        .runtime(Runtime.NODEJS_22_X)
+        .code(Code.fromAsset("lambda"))
+        .handler("index.handler")
+        .build();
+
+final LambdaRestApi apiGateway = LambdaRestApi.Builder.create(this, "myapi")
+        .handler(lambdaFunction)
+        .endpointConfiguration(new EndpointConfiguration.Builder()
+                .types(List.of(EndpointType.REGIONAL))
+                .build())
+        .build();
+
+new CloudFrontToApiGateway(this, "test-cloudfront-apigateway", new CloudFrontToApiGatewayProps.Builder()
+        .existingApiGatewayObj(apiGateway)
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| existingApiGatewayObj |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | The regional API Gateway that will be fronted with the CloudFront |
+| cloudFrontDistributionProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.DistributionProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.DistributionProps.html) \| any | Optional user provided props to override the default props for CloudFront Distribution |
+| insertHttpSecurityHeaders? |  `boolean`  | Optional user provided props to turn on/off the automatic injection of best practice HTTP security headers in all responses from CloudFront |
+| responseHeadersPolicyProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.ResponseHeadersPolicyProps.html)  | Optional user provided configuration that cloudfront applies to all http responses. |
+| cloudFrontLoggingBucketProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | Optional user provided props to override the default props for the CloudFront Logging Bucket. |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| cloudFrontWebDistribution |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Distribution.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Distribution.html)  | Returns an instance of cloudfront.Distribution created by the construct |
+| apiGateway |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | Returns an instance of the API Gateway REST API created by the pattern. |
+| cloudFrontFunction? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudfront.Function.html)  | Returns an instance of the Cloudfront function created by the pattern. |
+| cloudFrontLoggingBucket |  [https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html)  | Returns an instance of the logging bucket for CloudFront Distribution. |
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon CloudFront
+<a name="_amazon_cloudfront"></a>
++ Configure Access logging for CloudFront Distribution
++ Enable automatic injection of best practice HTTP security headers in all responses from CloudFront Distribution
+
+### Amazon API Gateway
+<a name="_amazon_api_gateway"></a>
++ User provided API Gateway object is used as-is
++ Enable X-Ray Tracing
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing data flow between network, code, storage, and cloud search components.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-cloudfront-apigateway.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-cloudfront-apigateway) for this pattern to view the code, read/create issues and pull requests and more.

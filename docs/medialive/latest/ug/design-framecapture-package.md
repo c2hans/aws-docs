@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/design-framecapture-package.html
+---
+
+# Organize encodes in a Frame capture output group
+<a name="design-framecapture-package"></a>
+
+A Frame capture output group can contain the following:
++ One or more outputs.
+
+Each output can contain only one video JPEG encode.

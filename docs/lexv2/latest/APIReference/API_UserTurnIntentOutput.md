@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UserTurnIntentOutput.html
+---
+
+# UserTurnIntentOutput
+<a name="API_UserTurnIntentOutput"></a>
+
+Contains information about the intent that is output for the turn by the test execution.
+
+## Contents
+<a name="API_UserTurnIntentOutput_Contents"></a>
+
+ ** name **   <a name="lexv2-Type-UserTurnIntentOutput-name"></a>
+The name of the intent.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `^([0-9a-zA-Z][_-]?){1,100}$`
+Required: Yes
+
+ ** slots **   <a name="lexv2-Type-UserTurnIntentOutput-slots"></a>
+The slots associated with the intent.
+Type: String to [UserTurnSlotOutput](API_UserTurnSlotOutput.md) object map
+Key Length Constraints: Minimum length of 1. Maximum length of 100.
+Key Pattern: `^([0-9a-zA-Z][_-]?){1,100}$`
+Required: No
+
+## See Also
+<a name="API_UserTurnIntentOutput_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/models.lex.v2-2020-08-07/UserTurnIntentOutput)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/models.lex.v2-2020-08-07/UserTurnIntentOutput)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/models.lex.v2-2020-08-07/UserTurnIntentOutput)

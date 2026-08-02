@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/user-pool-admin-enabling.html
+---
+
+# Enabling Users in Amazon WorkSpaces Applications
+<a name="user-pool-admin-enabling"></a>
+
+You can enable one or more users in the user pool, one at a time. After they are enabled, users can log in to WorkSpaces Applications and launch applications from the stacks to which they are assigned. If the users were disabled, these assignments are retained.
+
+**To enable users**
+
+1. Open the WorkSpaces Applications console at [https://console.aws.amazon.com/appstream2](https://console.aws.amazon.com/appstream2).
+
+1. In the left navigation pane, choose **User Pool** and select the user you want.
+
+1. Choose **Actions**, **Enable user**.
+
+1. Confirm that the correct user is specified, and choose **Enable User**.

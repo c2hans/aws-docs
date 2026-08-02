@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-rtbfabric-link-linkapplicationlogsampling.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::RTBFabric::Link LinkApplicationLogSampling
+<a name="aws-properties-rtbfabric-link-linkapplicationlogsampling"></a>
+
+Describes a link application log sample.
+
+## Syntax
+<a name="aws-properties-rtbfabric-link-linkapplicationlogsampling-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-rtbfabric-link-linkapplicationlogsampling-syntax.json"></a>
+
+```
+{
+  "[ErrorLog](#cfn-rtbfabric-link-linkapplicationlogsampling-errorlog)" : {{Number}},
+  "[FilterLog](#cfn-rtbfabric-link-linkapplicationlogsampling-filterlog)" : {{Number}}
+}
+```
+
+### YAML
+<a name="aws-properties-rtbfabric-link-linkapplicationlogsampling-syntax.yaml"></a>
+
+```
+  [ErrorLog](#cfn-rtbfabric-link-linkapplicationlogsampling-errorlog): {{Number}}
+  [FilterLog](#cfn-rtbfabric-link-linkapplicationlogsampling-filterlog): {{Number}}
+```
+
+## Properties
+<a name="aws-properties-rtbfabric-link-linkapplicationlogsampling-properties"></a>
+
+`ErrorLog`  <a name="cfn-rtbfabric-link-linkapplicationlogsampling-errorlog"></a>
+An error log entry.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`FilterLog`  <a name="cfn-rtbfabric-link-linkapplicationlogsampling-filterlog"></a>
+A filter log entry.
+*Required*: Yes
+*Type*: Number
+*Minimum*: `0`
+*Maximum*: `100`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_MLSyntheticDataParameters.html
+---
+
+# MLSyntheticDataParameters
+<a name="API_MLSyntheticDataParameters"></a>
+
+Parameters that control the generation of synthetic data for machine learning, including privacy settings and column classification details.
+
+## Contents
+<a name="API_MLSyntheticDataParameters_Contents"></a>
+
+ ** columnClassification **   <a name="API-Type-MLSyntheticDataParameters-columnClassification"></a>
+Classification details for data columns that specify how each column should be treated during synthetic data generation.
+Type: [ColumnClassificationDetails](API_ColumnClassificationDetails.md) object
+Required: Yes
+
+ ** epsilon **   <a name="API-Type-MLSyntheticDataParameters-epsilon"></a>
+The epsilon value for differential privacy when generating synthetic data. Lower values provide stronger privacy guarantees but may reduce data utility.
+Type: Double
+Valid Range: Minimum value of 0.0001. Maximum value of 10.
+Required: Yes
+
+ ** maxMembershipInferenceAttackScore **   <a name="API-Type-MLSyntheticDataParameters-maxMembershipInferenceAttackScore"></a>
+The maximum acceptable score for membership inference attack vulnerability. Synthetic data generation fails if the score for the resulting data exceeds this threshold.
+Type: Double
+Valid Range: Minimum value of 0.5. Maximum value of 1.
+Required: Yes
+
+## See Also
+<a name="API_MLSyntheticDataParameters_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cleanrooms-2022-02-17/MLSyntheticDataParameters)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cleanrooms-2022-02-17/MLSyntheticDataParameters)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cleanrooms-2022-02-17/MLSyntheticDataParameters)

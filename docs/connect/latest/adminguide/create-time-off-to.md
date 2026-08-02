@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/create-time-off-to.html
+---
+
+# Create a time off request in Connect Customer
+<a name="create-time-off-to"></a>
+
+Time off requests can be created by supervisors, managers, or agents in the published schedule. Once created, time off requests are visible in both published and draft schedules. Edits to time off requests can only be done in published schedules.
+
+## Supervisor or manager initiated time off request
+<a name="to-supervisor"></a>
+
+1. Supervisors or managers can create a time off request by choosing the requests icon and then selecting **Request Time off**.
+![The Published schedule calendar tab, the request time off section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create-time-off-to.png)
+
+1. Select **Staff** and the time off **Type**. To select a time off range, you can either select **All day** or select specific start and end date times. Select **Override time off rules** if you wish to override the system and allow time off while dismissing group allowance and other rules specified in Staff, Staffing Group or Shift profile rules. Enter a **Reason** and choose **Request**.
+
+1. **Hourly Availability**
+   + **Hourly Availability** shows if there is adequate allowance for the time-off activity during that day.
+   + **Not tracked** implies no hourly availability has been uploaded for that hour. **Not available** implies all available allowance has been used for that hour. Available implies there is time-off allowance available for that hour.
+
+1. The request will enter a *pending* state to allow the system to analyze existing rules (even thought rules checks are overridden) and will display a list of any rule failures.
+
+1. The agent will see the pending request in their schedule UI and will receive an in-app notification next to the **Request** icon which displays as an inbox icon at the top right above the metrics view. This allows the agent to view the request details under the **Time off** tab.
+
+1. After the rules validation completes, the time off request status of **Approved** or **Rejected** will be displayed in both the agent and supervisor views.
+**Tip**
+When Connect Customer evaluates time off requests, it factors in the [Forecast group allowance for time off](config-group-allowance-to.md) and the [individual agent's allowance for time off](config-group-allowance-to.md), if they've been specified.
+
+## Agent initiated time off request
+<a name="to-agent"></a>
+
+Agents can go to the schedule calendar view and choose the floating icon to create a time off request. The request drawer opens and allows the agent to enter details related to their time off request.
+
+![The schedule calendar view, the request time off section for agents.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create-time-off-to-agent.png)

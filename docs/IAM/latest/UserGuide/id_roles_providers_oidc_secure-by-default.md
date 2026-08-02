@@ -1,0 +1,61 @@
+---
+source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_secure-by-default.html
+---
+
+# Identity-provider controls for shared OIDC providers
+<a name="id_roles_providers_oidc_secure-by-default"></a>
+
+For recognized shared OpenID Connect (OIDC) identity providers (IdPs), IAM requires explicit evaluation of specific claims in role trust policies. These required claims, called *identity-provider controls*, are evaluated by IAM during role creation and trust policy updates. If the role trust policy does not evaluate the controls required by the shared OIDC IdP, the role creation or update would fail. This ensures that only authorized identities from the intended organization can assume roles and access AWS resources. This security control is crucial when OIDC providers are shared across multiple AWS customers.
+
+Identity-provider controls will not be evaluated by IAM for existing OIDC role trust policies. For any modifications to the role trust policy for existing OIDC roles, IAM will require that identity-provider controls be included in the role trust policy.
+
+## OIDC provider types
+<a name="id_roles_providers_oidc_idp_types"></a>
+
+IAM categorizes OIDC identity providers into two distinct types: **private** and **shared**. A private OIDC IdP can be owned and managed by a single organization or can be a tenant of a SaaS provider, with its OIDC Issuer URL serving as a unique identifier specific to that organization. In contrast, a shared OIDC IdP is utilized across multiple organizations, where the OIDC Issuer URL might be identical for all organizations using that shared identity provider.
+
+The table below outlines the key differences between private and shared OIDC providers:
+
+| Characteristic | Private OIDC Provider | Shared OIDC Provider |
+| --- | --- | --- |
+| Issuer | Unique to the organization | Shared across multiple organizations |
+| Tenancy Information | Communicated through unique Issuer | Communicated through claims in JWT |
+| Trust Policy Requirements | No specific claim evaluation required | Evaluation of specific claims required |
+
+## Shared OIDC identity providers with identity-provider controls
+<a name="id_roles_providers_oidc_idp_shared_oidc_secure_support"></a>
+
+When you create or modify an OIDC provider in IAM, the system automatically identifies and evaluates required claims for recognized shared OIDC providers. If identity-provider controls are not configured in the role trust policy, the role creation or update will fail with a MalformedPolicyDocument error.
+
+The following table lists the shared OIDC providers that require identity-provider controls in role trust policies and additional information to help you configure identity-provider controls.
+
+| OIDC IdP | OIDC URL | Tenancy Claim | Required Claims |
+| --- | --- | --- | --- |
+| [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/iam-roles.html) | `cognito-identity.amazonaws.com` | aud | `cognito-identity.amazonaws.com:aud` |
+| [Azure Sentinel](https://learn.microsoft.com/en-us/azure/defender-for-cloud/sentinel-connected-aws) |  https://sts.windows.net/33e01921-4d64-4f8c-a055-5bdaffd5e33d  |  sts:RoleSessionName  |  sts:RoleSessionName  |
+| [Buildkite](https://buildkite.com/docs/pipelines/security/oidc/aws) |  https://agent.buildkite.com  | sub |  agent.buildkite.com:sub  |
+| [Codefresh SaaS](https://codefresh.io/docs/docs/integrations/oidc-pipelines/) | https://oidc.codefresh.io | sub |  oidc.codefresh.io:sub  |
+| [DVC Studio](https://dvc.org/doc/studio/user-guide/openid-connect) | https://studio.datachain.ai/api | sub |  studio.datachain.ai/api:sub  |
+| [GitHub actions](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services) | https://token.actions.githubusercontent.com | sub |  token.actions.githubusercontent.com:sub  |
+| [GitHub audit log streaming](https://docs.github.com/en/enterprise-cloud@latest/admin/monitoring-activity-in-your-enterprise/reviewing-audit-logs-for-your-enterprise/streaming-the-audit-log-for-your-enterprise) | https://oidc-configuration.audit-log.githubusercontent.com | sub |  oidc-configuration.audit-log.githubusercontent.com:sub  |
+| [GitHub vstoken](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services) | https://vstoken.actions.githubusercontent.com | sub |  vstoken.actions.githubusercontent.com:sub  |
+| [GitLab](https://docs.gitlab.com/ci/cloud_services/aws/) | https://gitlab.com | sub |  gitlab.com:sub  |
+| [IBM Turbonomic SaaS\*](https://www.ibm.com/docs/en/tarm/8.16.x?topic=turbonomic-setting-up-aws-iam-role-saas-deployments) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_secure-by-default.html)  | sub |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_oidc_secure-by-default.html)  |
+| [Pulumi Cloud](https://www.pulumi.com/docs/pulumi-cloud/deployments/oidc/aws/) | https://api.pulumi.com/oidc | aud |  api.pulumi.com/oidc:aud  |
+| [sandboxes.cloud](https://docs.sandboxes.cloud/docs/cloud-resources-setup) | https://sandboxes.cloud | aud |  sandboxes.cloud:aud  |
+| [Scalr](https://docs.scalr.io/docs/aws) | https://scalr.io | sub |  scalr.io:sub  |
+| [Shisho Cloud](https://shisho.dev/docs/g/getting-started/integrate-apps/aws/) | https://tokens.cloud.shisho.dev | sub |  tokens.cloud.shisho.dev:sub  |
+| [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration) | https://app.terraform.io | sub |  app.terraform.io:sub  |
+| [Upbound](https://docs.upbound.io/providers/provider-aws/authentication/) | https://proidc.upbound.io | sub |  proidc.upbound.io:sub  |
+| [Vercel global endpoint](https://vercel.com/docs/oidc/reference) | https://oidc.vercel.com | aud |  oidc.vercel.com:aud  |
+
+\* IBM Turbonomic periodically updates their OIDC Issuer URL with new versions of the platform. We will add additional Turbonomic OIDC issuers in scope as a shared provider as needed.
+
+For any new OIDC IdPs that IAM identifies as shared, the required identity-provider controls for role trust policies will be documented and enforced in a similar manner.
+
+## Additional resources
+<a name="concept_additional_resources"></a>
+
+Additional resources:
++ For more information about creating an IAM role for OIDC federation, see [Create a role for OpenID Connect federation (console)](id_roles_create_for-idp_oidc.md).
++ For a list of IAM condition keys that can be used for claims, see [Available keys for AWS OIDC federation](reference_policies_iam-condition-keys.md#condition-keys-wif).

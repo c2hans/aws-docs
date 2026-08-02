@@ -1,0 +1,122 @@
+---
+source_url: https://docs.aws.amazon.com/migrationhub-orchestrator/latest/APIReference/API_ListWorkflowStepGroups.html
+---
+
+# ListWorkflowStepGroups
+<a name="API_ListWorkflowStepGroups"></a>
+
+**Note**
+ AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Migration Hub](https://aws.amazon.com/transform).
+
+List the step groups in a migration workflow.
+
+## Request Syntax
+<a name="API_ListWorkflowStepGroups_RequestSyntax"></a>
+
+```
+GET /workflowstepgroups?maxResults={{maxResults}}&nextToken={{nextToken}}&workflowId={{workflowId}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListWorkflowStepGroups_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [maxResults](#API_ListWorkflowStepGroups_RequestSyntax) **   <a name="migrationhuborchestrator-ListWorkflowStepGroups-request-uri-maxResults"></a>
+The maximum number of results that can be returned.
+Valid Range: Minimum value of 0. Maximum value of 100.
+
+ ** [nextToken](#API_ListWorkflowStepGroups_RequestSyntax) **   <a name="migrationhuborchestrator-ListWorkflowStepGroups-request-uri-nextToken"></a>
+The pagination token.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `.*\S.*`
+
+ ** [workflowId](#API_ListWorkflowStepGroups_RequestSyntax) **   <a name="migrationhuborchestrator-ListWorkflowStepGroups-request-uri-workflowId"></a>
+The ID of the migration workflow.
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[a-zA-Z0-9-]+`
+Required: Yes
+
+## Request Body
+<a name="API_ListWorkflowStepGroups_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListWorkflowStepGroups_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "nextToken": "string",
+   "workflowStepGroupsSummary": [
+      {
+         "id": "string",
+         "name": "string",
+         "next": [ "string" ],
+         "owner": "string",
+         "previous": [ "string" ],
+         "status": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_ListWorkflowStepGroups_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [nextToken](#API_ListWorkflowStepGroups_ResponseSyntax) **   <a name="migrationhuborchestrator-ListWorkflowStepGroups-response-nextToken"></a>
+The pagination token.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `.*\S.*`
+
+ ** [workflowStepGroupsSummary](#API_ListWorkflowStepGroups_ResponseSyntax) **   <a name="migrationhuborchestrator-ListWorkflowStepGroups-response-workflowStepGroupsSummary"></a>
+The summary of step groups in a migration workflow.
+Type: Array of [WorkflowStepGroupSummary](API_WorkflowStepGroupSummary.md) objects
+
+## Errors
+<a name="API_ListWorkflowStepGroups_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+An internal error has occurred.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The resource is not available.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by an AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListWorkflowStepGroups_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/migrationhuborchestrator-2021-08-28/ListWorkflowStepGroups)

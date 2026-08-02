@@ -1,0 +1,135 @@
+---
+source_url: https://docs.aws.amazon.com/transfer/latest/userguide/as2-for-transfer-family.html
+---
+
+# AWS Transfer Family for AS2
+<a name="as2-for-transfer-family"></a>
+
+Applicability Statement 2 (AS2) is an RFC-defined file-transmission specification that includes strong message protection and verification mechanisms. Protecting an AS2 payload in transit uses Cryptographic Message Syntax (CMS) with encryption and digital signatures to provide data protection and peer authentication. A signed Message Disposition Notice (MDN) response payload provides verification (non-repudiation) that a message was received and successfully decrypted.
+
+The AS2 protocol is critical for workflows with compliance requirements that rely on having data protection and security features built into the protocol. AWS Transfer Family AS2 endpoints are [Drummond certified](https://aws.amazon.com/about-aws/whats-new/2023/06/aws-transfer-family-drummond-group-as2-certification/), enabling customers in industries such as retail, life sciences, manufacturing, financial services, and utilities to securely transact with their business partners.
+
+When you use AS2 with Transfer Family, the transacted data is natively accessible in AWS for:
++ Processing, analysis, and machine learning
++ Integration with enterprise resource planning (ERP) systems
++ Integration with customer relationship management (CRM) systems
+
+To exchange files with a partner who has an AS2-enabled server, you must:
++ Generate a public-private key pair for encryption
++ Generate a public-private key pair for signing
++ Exchange the public keys with your partner
+
+**Important**
+HTTPS AS2 server endpoints are not currently supported. You are responsible for TLS termination.
+
+Transfer Family provides a workshop that you can attend, in which you can configure a Transfer Family endpoint with AS2 enabled, and a Transfer Family AS2 connector. You can view the details for this workshop [here](https://catalog.workshops.aws/transfer-family-as2/en-US).
+
+For step-by-step instructions to configure AS2 in Transfer Family, see the following:
+
+1. [Import AS2 certificates](managing-as2-partners.md#configure-as2-certificate)
+
+1. [Create AS2 profiles](configure-as2-profile.md)
+
+1. [Create an AS2 server](create-as2-transfer-server.md)
+
+1. [Create an AS2 agreement](create-as2-transfer-server.md#as2-agreements)
+
+1. [Configure AS2 connectors](configure-as2-connector.md)
+
+For a complete example, see [Setting up an AS2 configuration](as2-example-tutorial.md).
+
+**Note**
+To show support for AS2 Terraform templates, add a thumbs up reaction (👍) to the [Transfer Family Terraform templates feature request](https://github.com/aws-ia/terraform-aws-transfer-family/issues/62#issue-3364703944). You can also add a comment describing your use case.
+
+## AS2 use cases
+<a name="as2-use-cases"></a>
+
+If you are an AWS Transfer Family customer who wants to exchange files with a partner who has an AS2-enabled server, the most complex part of the setup involves generating one public-private key pair for encryption and another for signing and exchanging the public keys with the partner.
+
+![Diagram that shows the use of public-private key pairs for encryption and signing.](http://docs.aws.amazon.com/transfer/latest/userguide/images/as2-architecture-high-level.png)
+
+Consider the following variations for using AWS Transfer Family with AS2.
+
+**Note**
+*Trading partner* is the partner associated with that partner profile.
+All mentions of *MDN* in the following table assume *signed* MDNs.
+
+**AS2 use cases**
+
+|  |
+| --- |
+| Inbound-only use cases[See the AWS documentation website for more details](http://docs.aws.amazon.com/transfer/latest/userguide/as2-for-transfer-family.html) |
+| Outbound-only use cases[See the AWS documentation website for more details](http://docs.aws.amazon.com/transfer/latest/userguide/as2-for-transfer-family.html) |
+| Inbound and outbound use cases[See the AWS documentation website for more details](http://docs.aws.amazon.com/transfer/latest/userguide/as2-for-transfer-family.html) |
+
+## AS2 CloudFormation templates
+<a name="as2-templates-section"></a>
+
+This topic provides information about AWS CloudFormation templates that you can use to quickly deploy AS2 servers and configurations for AWS Transfer Family. These templates automate the setup process and help you implement best practices for AS2 file transfers.
++ The basic AS2 template is described in [Use a template to create a demo Transfer Family AS2 stack](create-as2-transfer-server.md#as2-cfn-demo-template)
++ The AS2 template for customizing HTTP headers is described in [Customize HTTP headers for AS2 messages](as2-custom-http-headers.md).
+
+### Customizing AS2 templates
+<a name="as2-template-customization"></a>
+
+You can customize the provided templates to meet your specific requirements:
+
+1. Download the template from the S3 URL.
+
+1. Modify the YAML code to adjust configurations such as:
+   + Security settings and certificate configurations
+   + Network architecture and VPC settings
+   + Storage options and file handling
+   + Monitoring and notification preferences
+
+1. Upload your modified template to your own S3 bucket.
+
+1. Deploy the customized template using the CloudFormation console or AWS CLI.
+
+**Important**
+When customizing templates, ensure that you maintain the dependencies between resources and follow security best practices.
+
+### Testing your AS2 deployment
+<a name="as2-template-testing"></a>
+
+After deploying an AS2 server using a template, you can test the configuration:
+
+1. Check the CloudFormation stack outputs for sample commands and endpoint information.
+
+1. Use the AWS CLI to send a test file:
+
+   ```
+   aws s3api put-object --bucket {{your-bucket-name}} --key test.txt --body test.txt
+   aws transfer start-file-transfer --connector-id {{your-connector-id}} --send-file-paths /{{your-bucket-name}}/test.txt
+   ```
+
+1. Verify file delivery in the destination S3 bucket.
+
+1. Check CloudWatch logs for successful processing and MDN responses.
+
+For more comprehensive testing, consider using third-party AS2 clients to send files to your Transfer Family AS2 server.
+
+### Best practices for AS2 template deployment
+<a name="as2-template-best-practices"></a>
+
+Follow these best practices when using AS2 CloudFormation templates:
+
+Security
+Use strong certificates and rotate them regularly.
+Implement least-privilege IAM policies.
+Restrict network access using security groups.
+
+Reliability
+Deploy across multiple Availability Zones.
+Implement monitoring and alerting for failed transfers.
+Set up automated retries for failed transfers.
+
+Performance
+Choose appropriate instance types for your transfer volume.
+Implement S3 lifecycle policies for efficient file management.
+Monitor and optimize network configurations.
+
+Cost Optimization
+Use auto-scaling for variable workloads.
+Implement S3 storage classes for older files.
+Monitor and adjust resources based on actual usage.

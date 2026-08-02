@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_limits.html
+---
+
+# Amazon GuardDuty quotas
+<a name="guardduty_limits"></a>
+
+Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for some quotas, and other quotas can't be increased.
+
+To view the quotas for GuardDuty, open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home). In the navigation pane, choose **AWS services** and select **Amazon GuardDuty**.
+
+To request a quota increase, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
+
+Your AWS account has the following quotas for Amazon GuardDuty per Region.
+
+**Note**
+For quotas specific to GuardDuty Malware Protection for EC2, see [Quotas in Malware Protection for EC2](malware-protection-limitations.md).
+For quotas specific to Malware Protection for S3, see [Quotas in Malware Protection for S3](malware-protection-s3-quotas-guardduty.md).
+
+**GuardDuty quotas per Region**
+
+| Resource | Default | Comments |
+| --- | --- | --- |
+| Detectors | 1 | The maximum number of detector resources that you can create per AWS account per Region.<br />You can't request a quota increase. |
+| Filters | 100 | The maximum number of saved filters per AWS account per Region.<br />You can't request a quota increase. |
+| Finding retention period | 90 days | The maximum number of days a finding is retained.<br />You can't request a quota increase. |
+| IP addresses and CIDR ranges per trusted IP address list | 2,000 | The maximum number of IP addresses and CIDR ranges that you can include in a single trusted IP address list.<br />You can't request a quota increase. |
+| IP addresses and CIDR ranges per threat IP address list | 250,000 | The maximum number of IP address and CIDR ranges that you can include in a threat IP address list.<br />You can't request a quota increase. |
+| Entities per threat entity list | 1,000 | The maximum number of entities that you can include in a single threat entity list.<br />You can't request a quota increase. |
+| Entities per trusted entity list | 1,000 | The maximum number of entities that you can include in a trusted entity list.<br />You can't request a quota increase. |
+| Maximum file size | 35 MB | The maximum file size for the file used to upload an entity list or an IP address list.<br />You can't request a quota increase. |
+| Member accounts (by invitation) | 5000 | The maximum number of member accounts associated with a administrator account.<br />You can't request a quota increase. |
+| Member accounts | 50,000 | The maximum number of member accounts associated with a administrator account through AWS Organizations. This includes member accounts that are added to the organization by invitation.<br />This default value depends on your current quota for member accounts in AWS Organizations. The number of member accounts in GuardDuty that are added through AWS Organizations can't exceed the number of member accounts in your organization. For information about number of AWS accounts in an organization, see [Maximum and minimum values](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html#min-max-values) in the *AWS Organizations User Guide*. |
+| Threat intel sets (IP address list) | 6 | The maximum number of threat IP address list that you can add per AWS account per Region.<br />You can't request a quota increase. |
+| Trusted IP sets (IP address list) | 1 | The maximum number of trusted IP address list that can be uploaded and activated per AWS account per Region.<br />You can't request a quota increase. |
+| Threat entity lists | 6 | The maximum number of threat entity lists that you can add per AWS account per Region.<br />You can't request a quota increase. |
+| Trusted entity list | 1 | The maximum number of trusted entity list that can be uploaded and activated per AWS account per Region.<br />You can't request a quota increase. |

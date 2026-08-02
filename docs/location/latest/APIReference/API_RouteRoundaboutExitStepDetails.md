@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteRoundaboutExitStepDetails.html
+---
+
+# RouteRoundaboutExitStepDetails
+<a name="API_RouteRoundaboutExitStepDetails"></a>
+
+Details about the roundabout step.
+
+## Contents
+<a name="API_RouteRoundaboutExitStepDetails_Contents"></a>
+
+ ** Intersection **   <a name="location-Type-RouteRoundaboutExitStepDetails-Intersection"></a>
+Name of the intersection, if applicable to the step.
+Type: Array of [LocalizedString](API_LocalizedString.md) objects
+Required: Yes
+
+ ** RelativeExit **   <a name="location-Type-RouteRoundaboutExitStepDetails-RelativeExit"></a>
+Exit to be taken.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 12.
+Required: No
+
+ ** RoundaboutAngle **   <a name="location-Type-RouteRoundaboutExitStepDetails-RoundaboutAngle"></a>
+Angle of the roundabout.
+Type: Double
+Valid Range: Minimum value of -360. Maximum value of 360.
+Required: No
+
+ ** SteeringDirection **   <a name="location-Type-RouteRoundaboutExitStepDetails-SteeringDirection"></a>
+Steering direction for the step.
+Type: String
+Valid Values: `Left | Right | Straight`
+Required: No
+
+## See Also
+<a name="API_RouteRoundaboutExitStepDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/geo-routes-2020-11-19/RouteRoundaboutExitStepDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/geo-routes-2020-11-19/RouteRoundaboutExitStepDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/geo-routes-2020-11-19/RouteRoundaboutExitStepDetails)

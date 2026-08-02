@@ -1,0 +1,65 @@
+---
+source_url: https://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html
+---
+
+# Supported instance types in Amazon OpenSearch Service
+<a name="supported-instance-types"></a>
+
+Amazon OpenSearch Service supports the following instance types. Not all Regions support all instance types. For availability details, see [Amazon OpenSearch Service pricing](https://aws.amazon.com/opensearch-service/pricing/).
+
+For information about which instance type is appropriate for your use case, see [Sizing Amazon OpenSearch Service domains](sizing-domains.md), [EBS volume size quotas](limits.md#ebsresource), and [Network quotas](limits.md#network-limits).
+
+ Please note that following instance families do not support VPC Encryption Controls: T2, T3, R3, I3, C4, M4, R4, C5, M5, R5, C6g, M6g, R6g, and R6gd. VPC Encryption Controls is a security and compliance feature that offers you centralized authoritative control to monitor the encryption status of your traffic flows, helps you identify resources that allow cleartext communication, and eventually gives you mechanisms to enforce encryption in transit within and across your VPCs in a region. To learn more details visit [ VPC Encryption Controls documentation.](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html)
+
+## Current generation instance types
+<a name="latest-gen"></a>
+
+For the best performance, we recommend that you use the following instance types when you create new OpenSearch Service domains.
+
+| Instance type | Instances | Restrictions |
+| --- | --- | --- |
+| i4i | i4i.large.search<br />i4i.xlarge.search<br />i4i.2xlarge.search<br />i4i.4xlarge.search<br />i4i.8xlarge.search<br />i4i.12xlarge.search<br />i4i.16xlarge.search<br />i4i.24xlarge.search<br />i4i.32xlarge.search | The i4i instance types require Elasticsearch 5.1 or later or any version of OpenSearch, and do not support EBS volume storage. |
+| i7i | i7i.large.search<br />i7i.xlarge.search<br />i7i.2xlarge.search<br />i7i.4xlarge.search<br />i7i.8xlarge.search<br />i7i.12xlarge.search<br />i7i.16xlarge.search | The i7i instance types require Elasticsearch 5.1 or later or any version of OpenSearch, and do not support EBS volume storage. |
+| i8g | i8g.large.search<br />i8g.xlarge.search<br />i8g.2xlarge.search<br />i8g.4xlarge.search<br />i8g.8xlarge.search<br />i8g.12xlarge.search<br />i8g.16xlarge.search | The i8g instance types require Elasticsearch 7.9 or later or any version of OpenSearch, and do not support EBS storage volumes. |
+| i8ge | i8ge.large.search<br />i8ge.xlarge.search<br />i8ge.2xlarge.search<br />i8ge.3xlarge.search<br />i8ge.6xlarge.search<br />i8ge.12xlarge.search<br />i8ge.18xlarge.search | The i8ge instance types require Elasticsearch 7.9 or later or any version of OpenSearch, and do not support EBS storage volumes. |
+| Graviton3 | c7g.large.search<br />c7g.xlarge.search<br />c7g.2xlarge.search<br />c7g.4xlarge.search<br />c7g.8xlarge.search<br />c7g.12xlarge.search<br />c7g.16xlarge.search<br />m7g.medium.search<br />m7g.large.search<br />m7g.xlarge.search<br />m7g.2xlarge.search<br />m7g.4xlarge.search<br />m7g.8xlarge.search<br />m7g.12xlarge.search<br />m7g.16xlarge.search<br />r7g.medium.search<br />r7g.large.search<br />r7g.xlarge.search<br />r7g.2xlarge.search<br />r7g.4xlarge.search<br />r7g.8xlarge.search<br />r7g.12xlarge.search<br />r7g.16xlarge.search<br />r7gd.large.search<br />r7gd.xlarge.search<br />r7gd.2xlarge.search<br />r7gd.4xlarge.search<br />r7gd.8xlarge.search<br />r7gd.12xlarge.search<br />r7gd.16xlarge.search | Graviton3 only supports gp3 storage. Graviton3 instances (c7g, m7g, r7g) support all OpenSearch versions and Elasticsearch versions 7.9 and 7.10. |
+| OR1 | `or1.medium.search`<br />`or1.large.search`<br />`or1.xlarge.search`<br />`or1.2xlarge.search`<br />`or1.4xlarge.search`<br />`or1.8xlarge.search`<br />`or1.12xlarge.search`<br />`or1.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| OR2 | `or2.medium.search`<br />`or2.large.search`<br />`or2.xlarge.search`<br />`or2.2xlarge.search`<br />`or2.4xlarge.search`<br />`or2.8xlarge.search `<br />`or2.12xlarge.search`<br />`or2.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| OM2 | `om2.large.search`<br />`om2.xlarge.search`<br />`om2.2xlarge.search`<br />`om2.4xlarge.search`<br />`om2.8xlarge.search`<br />`om2.12xlarge.search`<br />`om2.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| OI2 | `oi2.large.search`<br />`oi2.xlarge.search`<br />`oi2.2xlarge.search`<br />`oi2.4xlarge.search`<br />`oi2.8xlarge.search`<br />`oi2.12xlarge.search`<br />`oi2.16xlarge.search`<br />`oi2.24xlarge.search`<br />`oi2.32xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| Im4gn | `im4gn.large.search`<br />`im4gn.xlarge.search`<br />`im4gn.2xlarge.search`<br />`im4gn.4xlarge.search`<br />`im4gn.8xlarge.search`<br />`im4gn.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| T3 | `t3.small.search`<br />`t3.medium.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| c7i | `c7i.large.search`<br />`c7i.xlarge.search`<br />`c7i.2xlarge.search`<br />`c7i.4xlarge.search`<br />`c7i.8xlarge.search`<br />`c7i.12xlarge.search`<br />`c7i.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| m7i | `m7i.large.search`<br />`m7i.xlarge.search`<br />`m7i.2xlarge.search`<br />`m7i.4xlarge.search`<br />`m7i.8xlarge.search`<br />`m7i.12xlarge.search`<br />`m7i.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| r7i | `r7i.large.search`<br />`r7i.xlarge.search`<br />`r7i.2xlarge.search`<br />`r7i.4xlarge.search`<br />`r7i.8xlarge.search`<br />`r7i.12xlarge.search`<br />`r7i.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| c8g | `c8g.large.search`<br />`c8g.xlarge.search`<br />`c8g.2xlarge.search`<br />`c8g.4xlarge.search`<br />`c8g.8xlarge.search`<br />`c8g.12xlarge.search`<br />`c8g.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| m8g | `m8g.medium.search`<br />`m8g.large.search`<br />`m8g.xlarge.search`<br />`m8g.2xlarge.search`<br />`m8g.4xlarge.search`<br />`m8g.8xlarge.search`<br />`m8g.12xlarge.search`<br />`m8g.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| r8g | `r8g.medium.search`<br />`r8g.large.search`<br />`r8g.xlarge.search`<br />`r8g.2xlarge.search`<br />`r8g.4xlarge.search`<br />`r8g.8xlarge.search`<br />`r8g.12xlarge.search`<br />`r8g.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| r8gd | `r8gd.medium.search`<br />`r8gd.large.search`<br />`r8gd.2xlarge.search`<br />`r8gd.4xlarge.search`<br />`r8gd.8xlarge.search`<br />`r8gd.12xlarge.search`<br />`r8gd.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+
+## Previous generation instance types
+<a name="previous-gen"></a>
+
+OpenSearch Service offers previous generation instance types for users who have optimized their applications around them and have yet to upgrade. We encourage you to use current generation instance types to get the best performance, but we continue to support the following previous generation instance types.
+
+| Instance type | Instances | Restrictions |
+| --- | --- | --- |
+| C4 | `c4.large.search`<br />`c4.xlarge.search`<br />`c4.2xlarge.search`<br />`c4.4xlarge.search`<br />`c4.8xlarge.search` |  |
+| I2 | `i2.xlarge.search`<br />`i2.2xlarge.search` |  |
+| M3 | `m3.medium.search`<br />`m3.large.search`<br />`m3.xlarge.search`<br />`m3.2xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| M4 | `m4.large.search`<br />`m4.xlarge.search`<br />`m4.2xlarge.search`<br />`m4.4xlarge.search`<br />`m4.10xlarge.search` |  |
+| R3 | `r3.large.search`<br />`r3.xlarge.search`<br />`r3.2xlarge.search`<br />`r3.4xlarge.search`<br />`r3.8xlarge.search` | The R3 instance types do not support encryption of data at rest or fine-grained access control. |
+| R4 | `r4.large.search`<br />`r4.xlarge.search`<br />`r4.2xlarge.search`<br />`r4.4xlarge.search`<br />`r4.8xlarge.search`<br />`r4.16xlarge.search` |  |
+| i4g | i4g.large.search<br />i4g.xlarge.search<br />i4g.2xlarge.search<br />i4g.4xlarge.search<br />i4g.8xlarge.search<br />i4g.16xlarge.search | The i4g instance types require Elasticsearch 7.9 or later or any version of OpenSearch, and do not support EBS storage volumes. |
+| C5 | `c5.large.search`<br />`c5.xlarge.search`<br />`c5.2xlarge.search`<br />`c5.4xlarge.search`<br />`c5.9xlarge.search`<br />`c5.18xlarge.search` | The C5 instance types require Elasticsearch 5.1 or later or any version of OpenSearch. |
+| C6g | `c6g.large.search`<br />`c6g.xlarge.search`<br />`c6g.2xlarge.search`<br />`c6g.4xlarge.search`<br />`c6g.8xlarge.search`<br />`c6g.12xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| I3 | `i3.large.search`<br />`i3.xlarge.search`<br />`i3.2xlarge.search`<br />`i3.4xlarge.search`<br />`i3.8xlarge.search`<br />`i3.16xlarge.search` |   |
+| M5 | `m5.large.search`<br />`m5.xlarge.search`<br />`m5.2xlarge.search`<br />`m5.4xlarge.search`<br />`m5.12xlarge.search` | The M5 instance types require Elasticsearch 5.1 or later or any version of OpenSearch. |
+| M6g | `m6g.large.search`<br />`m6g.xlarge.search`<br />`m6g.2xlarge.search`<br />`m6g.4xlarge.search`<br />`m6g.8xlarge.search`<br />`m6g.12xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| R5 | `r5.large.search`<br />`r5.xlarge.search`<br />`r5.2xlarge.search`<br />`r5.4xlarge.search`<br />`r5.12xlarge.search` | The R5 instance types require Elasticsearch 5.1 or later or any version of OpenSearch. |
+| R6g | `r6g.large.search`<br />`r6g.xlarge.search`<br />`r6g.2xlarge.search`<br />`r6g.4xlarge.search`<br />`r6g.8xlarge.search`<br />`r6g.12xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| R6gd | `r6gd.large.search`<br />`r6gd.xlarge.search`<br />`r6gd.2xlarge.search`<br />`r6gd.4xlarge.search`<br />`r6gd.8xlarge.search`<br />`r6gd.12xlarge.search`<br />`r6gd.16xlarge.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+| T2 | `t2.micro.search`<br />`t2.small.search`<br />`t2.medium.search` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/supported-instance-types.html)  |
+
+**Tip**
+We often recommend different instance types for [dedicated master nodes](managedomains-dedicatedmasternodes.md) and data nodes.

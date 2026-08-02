@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/firehose/latest/dev/data-transformation-source-record-backup.html
+---
+
+# Back up source records
+<a name="data-transformation-source-record-backup"></a>
+
+Amazon Data Firehose can back up all untransformed records to your S3 bucket concurrently while delivering transformed records to the destination. You can enable source record backup when you create or update your Firehose stream. You cannot disable source record backup after you enable it.

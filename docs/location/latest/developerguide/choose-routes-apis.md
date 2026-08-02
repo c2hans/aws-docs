@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html
+---
+
+# Route APIs
+<a name="choose-routes-apis"></a>
+
+Routes provide capabilities for calculating optimized paths between locations. These features support applications requiring logistics planning, distance calculations, and route optimization. Users can also snap location points to roads for improved accuracy. For more information, See [Amazon Location Service Routes](routes.md).
++ **CalculateIsolines**: Generates isolines based on travel time or distance, useful for defining service areas or reachability zones. For more information, See [Calculate isolines](calculate-isolines.md).
++ **CalculateRouteMatrix**: Provides a matrix of distances and travel times between multiple origins and destinations, supporting logistics and trip planning. For more information, See [Calculate route matrix](calculate-route-matrix.md).
++ **CalculateRoutes**: Calculates optimized routes for point-to-point or multi-stop navigation, including customizable routing preferences. For more information, See [Calculate routes](calculate-routes.md).
++ **OptimizeWaypoints**: Optimizes the order of waypoints for the most efficient travel route, minimizing distance or time. For more information, See [Optimize waypoints](actions-optimize-waypoints.md).
++ **SnapToRoads**: Aligns coordinates to the nearest road paths, enhancing GPS accuracy by snapping points to known roads. For more information, See [Snap to Roads](snap-to-roads.md).
+
+The following table presents a number of business use cases that are best solved with Routes APIs.
+
+| **Business need** | **Useful API** | **Examples** |
+| --- | --- | --- |
+| **Calculate the travel distance and time for a origins and a destination**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find route polyline for a origins and a destination **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find routes turn by turn direction for an origin and a destination**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find a route by departing now**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find a route if you depart at specific time**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find a route if you need to arrival at specific time**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find shortest routes **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find fastest routes **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find alternative routes**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find traffic aware routes **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find routes with avoidance such as toll, u-turn, ferry, highway, tunnel, and more **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Find routes with custom avoidance by passing polyline or polygon**Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Calculate toll cost **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` | [Calculate toll cost](calculate-toll-cost.md) |
+| **Find speed limit of a road span on a route **Supports the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRoutes` |  |
+| **Draw a route on a map**Supports waypoint marking. | `GetTile` and `GetStyleDescriptor` with rendering engine (MapLibre) with Calculate route |  |
+| **Calculate route matrix of distance and time for multiple origins and destinations**Supports the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRouteMatrix` | [How to calculate a route matrix of distance and time for multiple origins and destinations](calculate-route-matrix-distance.md) |
+| **Calculate route matrix with avoidance **Supports the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/location/latest/developerguide/choose-routes-apis.html) | `CalculateRouteMatrix` | [How to calculate route matrix with avoidance](calculate-route-matrix-with-avoidance.md) |
+| **Calculate a service area based on time (isochrones)**Supports travel modes, such as truck, pedestrian, car, and scooter.  | `CalculateIsolines` | [How to calculate a service area based on ranges of time](calculate-service-area-based-on-time.md) |
+| **Calculate a service area based on distance (isodistance)**Supports travel modes, such as truck, pedestrian, car, and scooter.  | `CalculateIsolines` |  |
+| **Calculate a service area with avoidance**Supports travel modes, such as truck, pedestrian, car, and scooter.  | `CalculateIsolines` |  |
+| **Calculate a service area from reverse direction**<br />Supports travel modes, such as truck, pedestrian, car, and scooter. | `CalculateIsolines` |  |
+| **Calculate service area for multi-range of time or distance**<br />Supports travel modes, such as truck, pedestrian, car, and scooter. | `CalculateIsolines` |  |
+| **Optimize waypoints for routes (traveling salesman problem)**<br />Supports travel modes, such as truck, pedestrian, car, and scooter. | `OptimizeWaypoint` | [How to optimize waypoints for a route](optimize-waypoints.md) |
+| **Optimize waypoints for a route with traffic awareness **<br />Supports travel modes, such as truck, pedestrian, car, and scooter. | `OptimizeWaypoint` |  |
+| **Optimize waypoints for a route with access hour awareness**<br />Supports travel modes, such as truck, pedestrian, car, and scooter. | `OptimizeWaypoint` |  |
+| **Match GPS traces to road network **Supports travel modes, such as truck, pedestrian, car, and scooter. | Snap to road | [How to match GPS traces to a road network](how-to-match-gps-traces.md) |
+| **Visualize matched GPS traces on a map **Supports travel modes, such as truck, pedestrian, car, and scooter. | `GetStyleDescriptor` with rendering engine (MapLibre) with Snap to road |  |

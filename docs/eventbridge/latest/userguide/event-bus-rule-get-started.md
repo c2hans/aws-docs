@@ -1,0 +1,614 @@
+---
+source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/event-bus-rule-get-started.html
+---
+
+# Getting started: Create an Amazon EventBridge event bus rule
+<a name="event-bus-rule-get-started"></a>
+
+To get familiar with EventBridge rules and their capabilities, we'll use a CloudFormation template to set up an event bus rule and associated components, including an event source, event pattern, and target. Then we can explore how rules work to select the events you want.
+
+The template creates a rule on the default event bus. This rule uses an event pattern to filter for events from a specific Amazon S3 bucket. The rule sends matching events to the specified target, an Amazon SNS topic. Every time an object is created in the bucket, the rule sends a notification to the topic, which then sends an email to your specified email address.
+
+The deployed resources consist of:
++ An Amazon S3 bucket with EventBridge notifications enabled to act as the event source.
++ An Amazon SNS topic and email subscription as the target for notifications.
++ An execution role that grants EventBridge the necessary permissions to publish to the Amazon SNS topic.
++ The rule itself, which:
+  + Defines an event pattern that matches only `Object Created` events from the specific Amazon S3 bucket.
+  + Specifies the Amazon SNS topic as a target to which EventBridge delivers matching events.
+
+For specific technical details of the template, see [Template details](#event-bus-rule-get-started-template-details).
+
+![Amazon S3 events are matched to the rule's event pattern, and sent to an SNS topic if they match.](http://docs.aws.amazon.com/eventbridge/latest/userguide/images/rule-get-started_eventbridge_architectural.svg)
+
+## Before you begin
+<a name="event-bus-rule-get-started-create-prereqs"></a>
+
+To receive Amazon S3 events in EventBridge, you must enable EventBridge within Amazon S3. This topic assumes EventBridge is enabled. For more information, see [Enabling EventBridge](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-event-notifications-eventbridge.html) in the *Amazon S3 User Guide*.
+
+## Creating the rule using CloudFormation
+<a name="event-bus-rule-get-started-create"></a>
+
+To create the rule and its associated resources, we'll create a CloudFormation template and use it to create a stack containing a sample rule, complete with source and target.
+
+**Important**
+You will be billed for the Amazon resources used if you create a stack from this template.
+
+### Creating the template
+<a name="event-bus-rule-get-started-file"></a>
+
+First, create the CloudFormation template.
+
+1. In the [Template](#event-bus-rule-get-started-template) section, click the copy icon on the **JSON** or **YAML** tab to copy the template contents.
+
+1. Paste the template contents into a new file.
+
+1. Save the file locally.
+
+### Creating the stack
+<a name="event-bus-rule-get-started-stack"></a>
+
+Next, use the template you've saved to provision a CloudFormation stack.
+
+**Create the stack using CloudFormation (console)**
+
+1. Open the CloudFormation console at [https://console.aws.amazon.com/cloudformation/](https://console.aws.amazon.com/cloudformation/).
+
+1. On the **Stacks** page, from the **Create stack** menu, choose **with new resources (standard)**.
+
+1. Specify the template:
+
+   1. Under **Prerequisite**, choose **Choose an existing template**.
+
+   1. Under **Specify template**, choose **Upload a template file**.
+
+   1. Choose **Choose file**, navigate to the template file, and choose it.
+
+   1. Choose **Next**.
+
+1. Specify the stack details:
+
+   1. Enter a stack name.
+
+   1. For **BucketName**, enter a globally unique bucket name. Amazon S3 bucket names must be unique across all AWS accounts.
+
+   1. For **SNSTopicDisplayName**, **SNSTopicName**, and **RuleName**, accept the default values or enter your own.
+
+   1. For **EmailAddress**, enter a valid email address where you want to receive notifications.
+
+   1. Choose **Next**.
+
+1. Configure the stack options:
+
+   1. Under **Stack failure options**, choose **Delete all newly created resources**.
+**Note**
+Choosing this option prevents you from possibly being billed for resources whose deletion policy specifies they be retained even if the stack creation fails. For more information, see [`DeletionPolicy` attribute](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) in the *CloudFormation User Guide*.
+
+   1. Accept all other default values.
+
+   1. Under **Capabilities**, check the box to acknowledge that CloudFormation might create IAM resources in your account.
+
+   1. Choose **Next**.
+
+1. Review the stack details and choose **Submit**.
+
+**Create the stack using CloudFormation (AWS CLI)**
+
+You can also use the AWS CLI to create the stack.
++ Use the [https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html](https://docs.aws.amazon.com/cli/latest/reference/cloudformation/create-stack.html) command.
+  +  Accept the default template parameter values, specifying the stack name, email address, and bucket name. Use the `template-body` parameter to pass the template contents, or `template-url` to specify a URL location.
+
+    ```
+    aws cloudformation create-stack \
+      --stack-name {{eventbridge-rule-tutorial}} \
+      --template-body {{template-contents}} \
+      --parameters \
+        ParameterKey=EmailAddress,ParameterValue={{your.email@example.com}} \
+        ParameterKey=BucketName,ParameterValue={{my-unique-bucket-name}} \
+      --capabilities CAPABILITY_IAM
+    ```
+  + Override the default value(s) of one or more template parameters. For example:
+
+    ```
+    aws cloudformation create-stack \
+      --stack-name {{eventbridge-rule-tutorial}} \
+      ----template-body {{template-contents}} \
+      --parameters \
+        ParameterKey=EmailAddress,ParameterValue={{your.email@example.com}} \
+        ParameterKey=BucketName,ParameterValue={{my-custom-bucket-name}} \
+        ParameterKey=RuleName,ParameterValue={{my-custom-rule-name}} \
+      --capabilities CAPABILITY_IAM
+    ```
+
+CloudFormation creates the stack. Once the stack creation is complete, the stack resources are ready to use. You can use the **Resources** tab on the stack detail page to view the resources that were provisioned in your account.
+
+After the stack is created, you will receive a subscription confirmation email at the address you provided. You must confirm this subscription to receive notifications.
+
+## Exploring rule capabilities
+<a name="event-bus-rule-get-started-using"></a>
+
+Once the rule has been created, you can use the EventBridge console to observe rule operation and test event delivery.
+
+1. Open the EventBridge console at [https://console.aws.amazon.com/events/home?\#/rules](https://console.aws.amazon.com/events/home?#/rules).
+
+1. Choose the rule you created.
+
+   On the rule detail page, the **Rule details** section displays information about the rule, including its event pattern and targets.
+
+### Examining the event pattern
+<a name="event-bus-rule-get-started-using-pattern"></a>
+
+Before we test the rule operation, let's examine the event pattern we've specified to control which events are sent to the target. The rule will only send events that match the pattern criteria to the target. In this case, we only want the event that Amazon S3 generates when an object is created in our specific bucket.
++ On the rule detail page, under **Event pattern**, you can see the event pattern selects only events where:
+  + The source is the Amazon S3 service (`aws.s3`)
+  + The detail-type is `Object Created`
+  + The bucket name matches the name of the bucket we created
+
+  ```
+  {
+    "source": ["aws.s3"],
+    "detail-type": ["Object Created"],
+    "detail": {
+      "bucket": {
+        "name": ["{{eventbridge-rule-example-source}}"]
+      }
+    }
+  }
+  ```
+
+### Sending events through the rule
+<a name="event-bus-rule-get-started-using-source"></a>
+
+Next, we'll generate events in the event source to test that the rule matching and delivery is operating correctly. To do this, we'll upload an object to the S3 bucket we specified as the event source.
+
+1. Open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).
+
+1. In the **Buckets** list, choose the bucket you created with the template.
+
+1. Choose **Upload**.
+
+1. Upload a test file to generate an `Object Created` event:
+
+   1. Choose **Add files** and select a file from your computer.
+
+   1. Choose **Upload**.
+
+1. Wait a few moments for the event to be processed by EventBridge and for the notification to be sent.
+
+1. Check your email for a notification about the object creation event. The email will contain details about the S3 event, including the bucket name and the object key.
+
+### Viewing rule metrics
+<a name="event-bus-rule-get-started-using-metrics"></a>
+
+You can view metrics for your rule to confirm that events are being processed correctly.
+
+1. In the [EventBridge console](https://console.aws.amazon.com/events/home?#/rules), choose your rule.
+
+1. Choose the **Metrics** tab.
+
+1. You can view metrics such as:
+   + **Invocations**: the number of times the rule was triggered.
+   + **TriggeredRules**: the number of rules that were triggered by matching events.
+
+## Clean up: deleting resources
+<a name="event-bus-rule-get-started-delete"></a>
+
+As a final step, we'll delete the stack and the resources it contains.
+
+**Important**
+You will be billed for the Amazon resources contained in the stack for as long as it exists.
+
+1. Open the CloudFormation console at [https://console.aws.amazon.com/cloudformation/](https://console.aws.amazon.com/cloudformation/).
+
+1. On the **Stacks** page, choose the stack created from the template, and choose **Delete**, then confirm **Delete**.
+
+   CloudFormation initiates deletion of the stack and all resources it includes.
+
+## CloudFormation template details
+<a name="event-bus-rule-get-started-template-details"></a>
+
+This template creates resources and grants permissions in your account.
+
+### Resources
+<a name="event-bus-rule-get-started-template-resources"></a>
+
+The CloudFormation template for this tutorial will create the following resources in your account:
+
+**Important**
+You will be billed for the Amazon resources used if you create a stack from this template.
++ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html): An Amazon S3 bucket that acts as the event source for the rule, with EventBridge notifications enabled.
++ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-topic.html): An Amazon SNS topic that acts as the target for the events matched by the rule.
++ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-subscription.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-sns-subscription.html): An email subscription to the SNS topic.
++ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-iam-role.html): IAM execution roles granting permissions to the EventBridge service and Lambda cleanup function.
++ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-events-rule.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-events-rule.html): The rule connecting the Amazon S3 bucket events to the Amazon SNS topic.
++ [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-lambda-function.html): A Lambda function that empties the Amazon S3 bucket when the stack is deleted, enabling clean deletion of all resources.
+
+### Permissions
+<a name="event-bus-rule-get-started-template-perms"></a>
+
+The template includes an `AWS::IAM::Role` resource that represents an execution role. This role grants the EventBridge service (`events.amazonaws.com`) the following permissions in your account.
+
+The following permissions are granted through the managed policy `AmazonSNSFullAccess`:
++ Full access to Amazon SNS resources and operations
+
+## CloudFormation template
+<a name="event-bus-rule-get-started-template"></a>
+
+Save the following YAML code as a separate file to use as the CloudFormation template for this tutorial.
+
+------
+#### [ YAML ]
+
+```
+AWSTemplateFormatVersion: '2010-09-09'
+Description: '[AWSDocs] EventBridge: event-bus-rule-get-started'
+
+Parameters:
+  BucketName:
+    Type: String
+    Description: Name of the S3 bucket (must be globally unique)
+
+  SNSTopicDisplayName:
+    Type: String
+    Description: Display name for the SNS topic
+    Default: eventbridge-rule-example-target
+
+  SNSTopicName:
+    Type: String
+    Description: Name for the SNS topic
+    Default: eventbridge-rule-example-target
+
+  RuleName:
+    Type: String
+    Description: Name for the EventBridge rule
+    Default: eventbridge-rule-example
+
+  EmailAddress:
+    Type: String
+    Description: Email address to receive notifications
+    AllowedPattern: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[a-zA-Z0-9-]*(\\.[a-zA-Z0-9-]+)*$'
+
+Resources:
+  # S3 Bucket with notifications enabled
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketName
+      NotificationConfiguration:
+        EventBridgeConfiguration:
+          EventBridgeEnabled: true
+
+  # Lambda function to empty the S3 bucket before deletion
+  EmptyBucketFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Runtime: python3.12
+      Handler: index.handler
+      Timeout: 60
+      Role: !GetAtt EmptyBucketRole.Arn
+      Code:
+        ZipFile: |
+          import boto3
+          import cfnresponse
+          def handler(event, context):
+              bucket = event['ResourceProperties']['BucketName']
+              if event['RequestType'] == 'Delete':
+                  s3 = boto3.resource('s3')
+                  bucket_resource = s3.Bucket(bucket)
+                  bucket_resource.objects.all().delete()
+              cfnresponse.send(event, context, cfnresponse.SUCCESS, {})
+
+  # IAM Role for the bucket cleanup Lambda function
+  EmptyBucketRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: EmptyBucketPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:DeleteObject
+                  - s3:ListBucket
+                Resource:
+                  - !Sub arn:aws:s3:::${BucketName}
+                  - !Sub arn:aws:s3:::${BucketName}/*
+
+  # Custom resource to trigger bucket cleanup on stack deletion
+  EmptyBucketOnDelete:
+    Type: Custom::EmptyBucket
+    Properties:
+      ServiceToken: !GetAtt EmptyBucketFunction.Arn
+      BucketName: !Ref S3Bucket
+
+  # SNS Topic for email notifications
+  SNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      DisplayName: !Ref SNSTopicDisplayName
+      TopicName: !Ref SNSTopicName
+
+  # SNS Subscription for email
+  SNSSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Protocol: email
+      Endpoint: !Ref EmailAddress
+      TopicArn: !Ref SNSTopic
+
+  # EventBridge Rule to match S3 object creation events and send them to the SNS topic
+  EventBridgeRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: !Ref RuleName
+      Description: "Rule to detect S3 object creation and send email notification"
+      EventPattern:
+        source:
+          - aws.s3
+        detail-type:
+          - "Object Created"
+        detail:
+          bucket:
+            name:
+              - !Ref BucketName
+      State: ENABLED
+      Targets:
+        - Id: SendToSNS
+          Arn: !Ref SNSTopic
+          RoleArn: !GetAtt EventBridgeRole.Arn
+
+  # IAM Role for EventBridge to publish to SNS
+  EventBridgeRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: events.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSNSFullAccess
+
+Outputs:
+  BucketName:
+    Description: Name of the S3 bucket
+    Value: !Ref S3Bucket
+  SNSTopicARN:
+    Description: ARN of the SNS topic
+    Value: !Ref SNSTopic
+  EmailSubscription:
+    Description: Email address for notifications
+    Value: !Ref EmailAddress
+```
+
+------
+#### [ JSON ]
+
+```
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "[AWSDocs] EventBridge: event-bus-rule-get-started",
+  "Parameters": {
+    "BucketName": {
+      "Type": "String",
+      "Description": "Name of the S3 bucket (must be globally unique)"
+    },
+    "SNSTopicDisplayName": {
+      "Type": "String",
+      "Description": "Display name for the SNS topic",
+      "Default": "eventbridge-rule-example-target"
+    },
+    "SNSTopicName": {
+      "Type": "String",
+      "Description": "Name for the SNS topic",
+      "Default": "eventbridge-rule-example-target"
+    },
+    "RuleName": {
+      "Type": "String",
+      "Description": "Name for the EventBridge rule",
+      "Default": "eventbridge-rule-example"
+    },
+    "EmailAddress": {
+      "Type": "String",
+      "Description": "Email address to receive notifications",
+      "AllowedPattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[a-zA-Z0-9-]*(\\.[a-zA-Z0-9-]+)*$"
+    }
+  },
+  "Resources": {
+    "S3Bucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": {
+          "Ref": "BucketName"
+        },
+        "NotificationConfiguration": {
+          "EventBridgeConfiguration": {
+            "EventBridgeEnabled": true
+          }
+        }
+      }
+    },
+    "EmptyBucketFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Runtime": "python3.12",
+        "Handler": "index.handler",
+        "Timeout": 60,
+        "Role": {
+          "Fn::GetAtt": ["EmptyBucketRole", "Arn"]
+        },
+        "Code": {
+          "ZipFile": "import boto3\nimport cfnresponse\ndef handler(event, context):\n    bucket = event['ResourceProperties']['BucketName']\n    if event['RequestType'] == 'Delete':\n        s3 = boto3.resource('s3')\n        bucket_resource = s3.Bucket(bucket)\n        bucket_resource.objects.all().delete()\n    cfnresponse.send(event, context, cfnresponse.SUCCESS, {})"
+        }
+      }
+    },
+    "EmptyBucketRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "ManagedPolicyArns": [
+          "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+        ],
+        "Policies": [
+          {
+            "PolicyName": "EmptyBucketPolicy",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": ["s3:DeleteObject", "s3:ListBucket"],
+                  "Resource": [
+                    {"Fn::Sub": "arn:aws:s3:::${BucketName}"},
+                    {"Fn::Sub": "arn:aws:s3:::${BucketName}/*"}
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "EmptyBucketOnDelete": {
+      "Type": "Custom::EmptyBucket",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": ["EmptyBucketFunction", "Arn"]
+        },
+        "BucketName": {
+          "Ref": "S3Bucket"
+        }
+      }
+    },
+    "SNSTopic": {
+      "Type": "AWS::SNS::Topic",
+      "Properties": {
+        "DisplayName": {
+          "Ref": "SNSTopicDisplayName"
+        },
+        "TopicName": {
+          "Ref": "SNSTopicName"
+        }
+      }
+    },
+    "SNSSubscription": {
+      "Type": "AWS::SNS::Subscription",
+      "Properties": {
+        "Protocol": "email",
+        "Endpoint": {
+          "Ref": "EmailAddress"
+        },
+        "TopicArn": {
+          "Ref": "SNSTopic"
+        }
+      }
+    },
+    "EventBridgeRule": {
+      "Type": "AWS::Events::Rule",
+      "Properties": {
+        "Name": {
+          "Ref": "RuleName"
+        },
+        "Description": "Rule to detect S3 object creation and send email notification",
+        "EventPattern": {
+          "source": [
+            "aws.s3"
+          ],
+          "detail-type": [
+            "Object Created"
+          ],
+          "detail": {
+            "bucket": {
+              "name": [
+                {
+                  "Ref": "BucketName"
+                }
+              ]
+            }
+          }
+        },
+        "State": "ENABLED",
+        "Targets": [
+          {
+            "Id": "SendToSNS",
+            "Arn": {
+              "Ref": "SNSTopic"
+            },
+            "RoleArn": {
+              "Fn::GetAtt": [
+                "EventBridgeRole",
+                "Arn"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "EventBridgeRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "events.amazonaws.com"
+              },
+              "Action": "sts:AssumeRole"
+            }
+          ]
+        },
+        "ManagedPolicyArns": [
+          "arn:aws:iam::aws:policy/AmazonSNSFullAccess"
+        ]
+      }
+    }
+  },
+  "Outputs": {
+    "BucketName": {
+      "Description": "Name of the S3 bucket",
+      "Value": {
+        "Ref": "S3Bucket"
+      }
+    },
+    "SNSTopicARN": {
+      "Description": "ARN of the SNS topic",
+      "Value": {
+        "Ref": "SNSTopic"
+      }
+    },
+    "EmailSubscription": {
+      "Description": "Email address for notifications",
+      "Value": {
+        "Ref": "EmailAddress"
+      }
+    }
+  }
+}
+```
+
+------

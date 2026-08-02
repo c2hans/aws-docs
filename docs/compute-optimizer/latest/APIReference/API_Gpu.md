@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_Gpu.html
+---
+
+# Gpu
+<a name="API_Gpu"></a>
+
+ Describes the GPU accelerators for the instance type.
+
+## Contents
+<a name="API_Gpu_Contents"></a>
+
+ ** gpuCount **   <a name="computeoptimizer-Type-Gpu-gpuCount"></a>
+ The number of GPUs for the instance type.
+Type: Integer
+Required: No
+
+ ** gpuMemorySizeInMiB **   <a name="computeoptimizer-Type-Gpu-gpuMemorySizeInMiB"></a>
+ The total size of the memory for the GPU accelerators for the instance type, in MiB.
+Type: Integer
+Required: No
+
+## See Also
+<a name="API_Gpu_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/compute-optimizer-2019-11-01/Gpu)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/compute-optimizer-2019-11-01/Gpu)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/compute-optimizer-2019-11-01/Gpu)

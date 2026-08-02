@@ -1,0 +1,193 @@
+---
+source_url: https://docs.aws.amazon.com/panorama/latest/api/API_DescribePackageVersion.html
+---
+
+# DescribePackageVersion
+<a name="API_DescribePackageVersion"></a>
+
+**Important**
+End of support notice: On May 31, 2026, AWS will end support for AWS Panorama. After May 31, 2026, you will no longer be able to access the AWS Panorama console or AWS Panorama resources. For more information, see [AWS Panorama end of support](https://docs.aws.amazon.com/panorama/latest/dev/panorama-end-of-support.html).
+
+Returns information about a package version.
+
+## Request Syntax
+<a name="API_DescribePackageVersion_RequestSyntax"></a>
+
+```
+GET /packages/metadata/{{PackageId}}/versions/{{PackageVersion}}?OwnerAccount={{OwnerAccount}}&PatchVersion={{PatchVersion}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_DescribePackageVersion_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [OwnerAccount](#API_DescribePackageVersion_RequestSyntax) **   <a name="panorama-DescribePackageVersion-request-uri-OwnerAccount"></a>
+The version's owner account.
+Length Constraints: Minimum length of 1. Maximum length of 12.
+Pattern: `[0-9a-z\_]+`
+
+ ** [PackageId](#API_DescribePackageVersion_RequestSyntax) **   <a name="panorama-DescribePackageVersion-request-uri-PackageId"></a>
+The version's ID.
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9\-\_\/]+`
+Required: Yes
+
+ ** [PackageVersion](#API_DescribePackageVersion_RequestSyntax) **   <a name="panorama-DescribePackageVersion-request-uri-PackageVersion"></a>
+The version's version.
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `([0-9]+)\.([0-9]+)`
+Required: Yes
+
+ ** [PatchVersion](#API_DescribePackageVersion_RequestSyntax) **   <a name="panorama-DescribePackageVersion-request-uri-PatchVersion"></a>
+The version's patch version.
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-z0-9]+`
+
+## Request Body
+<a name="API_DescribePackageVersion_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_DescribePackageVersion_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "IsLatestPatch": boolean,
+   "OwnerAccount": "string",
+   "PackageArn": "string",
+   "PackageId": "string",
+   "PackageName": "string",
+   "PackageVersion": "string",
+   "PatchVersion": "string",
+   "RegisteredTime": number,
+   "Status": "string",
+   "StatusDescription": "string"
+}
+```
+
+## Response Elements
+<a name="API_DescribePackageVersion_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [IsLatestPatch](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-IsLatestPatch"></a>
+Whether the version is the latest available.
+Type: Boolean
+
+ ** [OwnerAccount](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-OwnerAccount"></a>
+The account ID of the version's owner.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 12.
+Pattern: `[0-9a-z\_]+`
+
+ ** [PackageArn](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-PackageArn"></a>
+The ARN of the package.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+
+ ** [PackageId](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-PackageId"></a>
+The version's ID.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-zA-Z0-9\-\_\/]+`
+
+ ** [PackageName](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-PackageName"></a>
+The version's name.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9\-\_]+`
+
+ ** [PackageVersion](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-PackageVersion"></a>
+The version's version.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `([0-9]+)\.([0-9]+)`
+
+ ** [PatchVersion](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-PatchVersion"></a>
+The version's patch version.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[a-z0-9]+`
+
+ ** [RegisteredTime](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-RegisteredTime"></a>
+The version's registered time.
+Type: Timestamp
+
+ ** [Status](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-Status"></a>
+The version's status.
+Type: String
+Valid Values: `REGISTER_PENDING | REGISTER_COMPLETED | FAILED | DELETING`
+
+ ** [StatusDescription](#API_DescribePackageVersion_ResponseSyntax) **   <a name="panorama-DescribePackageVersion-response-StatusDescription"></a>
+The version's status description.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+
+## Errors
+<a name="API_DescribePackageVersion_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+The requestor does not have permission to access the target action or resource.
+HTTP Status Code: 403
+
+ ** ConflictException **
+The target resource is in use.
+ ** ErrorArguments **
+A list of attributes that led to the exception and their values.
+ ** ErrorId **
+A unique ID for the error.
+ ** ResourceId **
+The resource's ID.
+ ** ResourceType **
+The resource's type.
+HTTP Status Code: 409
+
+ ** InternalServerException **
+An internal error occurred.
+ ** RetryAfterSeconds **
+The number of seconds a client should wait before retrying the call.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The target resource was not found.
+ ** ResourceId **
+The resource's ID.
+ ** ResourceType **
+The resource's type.
+HTTP Status Code: 404
+
+ ** ValidationException **
+The request contains an invalid parameter value.
+ ** ErrorArguments **
+A list of attributes that led to the exception and their values.
+ ** ErrorId **
+A unique ID for the error.
+ ** Fields **
+A list of request parameters that failed validation.
+ ** Reason **
+The reason that validation failed.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DescribePackageVersion_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/panorama-2019-07-24/DescribePackageVersion)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/panorama-2019-07-24/DescribePackageVersion)

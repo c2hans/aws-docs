@@ -1,0 +1,117 @@
+---
+source_url: https://docs.aws.amazon.com/managed-blockchain/latest/ambq-dg/security_iam_id-based-policy-examples.html
+---
+
+# Identity-based policy examples for Amazon Managed Blockchain (AMB) Query
+<a name="security_iam_id-based-policy-examples"></a>
+
+By default, users and roles don't have permission to create or modify AMB Query resources. To grant users permission to perform actions on the resources that they need, an IAM administrator can create IAM policies.
+
+To learn how to create an IAM identity-based policy by using these example JSON policy documents, see [Create IAM policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create-console.html) in the *IAM User Guide*.
+
+For details about actions and resource types defined by AMB Query, including the format of the ARNs for each of the resource types, see [Actions, Resources, and Condition Keys for Amazon Managed Blockchain (AMB) Query ](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_your_service.html) in the *Service Authorization Reference*.
+
+**Topics**
++ [Policy best practices](#security_iam_service-with-iam-policy-best-practices)
++ [Allow users to view their own permissions](#security_iam_id-based-policy-examples-view-own-permissions)
++ [Accessing specific Amazon Managed Blockchain (AMB) Query API actions](#security_iam_id-based-policy-examples-access-ambquery-apis)
+
+## Policy best practices
+<a name="security_iam_service-with-iam-policy-best-practices"></a>
+
+Identity-based policies determine whether someone can create, access, or delete AMB Query resources in your account. These actions can incur costs for your AWS account. When you create or edit identity-based policies, follow these guidelines and recommendations:
++ **Get started with AWS managed policies and move toward least-privilege permissions** – To get started granting permissions to your users and workloads, use the *AWS managed policies* that grant permissions for many common use cases. They are available in your AWS account. We recommend that you reduce permissions further by defining AWS customer managed policies that are specific to your use cases. For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) or [AWS managed policies for job functions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) in the *IAM User Guide*.
++ **Apply least-privilege permissions** – When you set permissions with IAM policies, grant only the permissions required to perform a task. You do this by defining the actions that can be taken on specific resources under specific conditions, also known as *least-privilege permissions*. For more information about using IAM to apply permissions, see [ Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) in the *IAM User Guide*.
++ **Use conditions in IAM policies to further restrict access** – You can add a condition to your policies to limit access to actions and resources. For example, you can write a policy condition to specify that all requests must be sent using SSL. You can also use conditions to grant access to service actions if they are used through a specific AWS service, such as CloudFormation. For more information, see [ IAM JSON policy elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
++ **Use IAM Access Analyzer to validate your IAM policies to ensure secure and functional permissions** – IAM Access Analyzer validates new and existing policies so that the policies adhere to the IAM policy language (JSON) and IAM best practices. IAM Access Analyzer provides more than 100 policy checks and actionable recommendations to help you author secure and functional policies. For more information, see [Validate policies with IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-policy-validation.html) in the *IAM User Guide*.
++ **Require multi-factor authentication (MFA)** – If you have a scenario that requires IAM users or a root user in your AWS account, turn on MFA for additional security. To require MFA when API operations are called, add MFA conditions to your policies. For more information, see [ Secure API access with MFA](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_configure-api-require.html) in the *IAM User Guide*.
+
+For more information about best practices in IAM, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) in the *IAM User Guide*.
+
+## Allow users to view their own permissions
+<a name="security_iam_id-based-policy-examples-view-own-permissions"></a>
+
+This example shows how you might create a policy that allows IAM users to view the inline and managed policies that are attached to their user identity. This policy includes permissions to complete this action on the console or programmatically using the AWS CLI or AWS API.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ViewOwnUserInfo",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetUserPolicy",
+                "iam:ListGroupsForUser",
+                "iam:ListAttachedUserPolicies",
+                "iam:ListUserPolicies",
+                "iam:GetUser"
+            ],
+            "Resource": ["arn:aws:iam::*:user/${aws:username}"]
+        },
+        {
+            "Sid": "NavigateInConsole",
+            "Effect": "Allow",
+            "Action": [
+                "iam:GetGroupPolicy",
+                "iam:GetPolicyVersion",
+                "iam:GetPolicy",
+                "iam:ListAttachedGroupPolicies",
+                "iam:ListGroupPolicies",
+                "iam:ListPolicyVersions",
+                "iam:ListPolicies",
+                "iam:ListUsers"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+## Accessing specific Amazon Managed Blockchain (AMB) Query API actions
+<a name="security_iam_id-based-policy-examples-access-ambquery-apis"></a>
+
+**Note**
+In order to access the AMB Query to make API calls, you will need user credentials (`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`) that have the appropriate IAM permissions for AMB Query.
+
+**Example IAM Policy to access all Amazon Managed Blockchain (AMB) Query APIs**
+This example grants an IAM user in your AWS account access to all AMB Query APIs.
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AccessAllAMBQueryAPIs",
+            "Effect": "Allow",
+            "Action": [
+                "managedblockchain-query:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+**Example IAM Policy to access Amazon Managed Blockchain (AMB) Query `ListTransactions` and `GetTransaction` APIs**
+This example grants an IAM user in your AWS account access to the AMB Query `ListTransaction` and `GetTransaction` APIs
+You can replace or add on the APIs in the example with other APIs to give access to other or more APIs. For a list of AMB Query APIs, see the *Amazon Managed Blockchain (AMB) Query API Reference Guide*.
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AccessAMBQueryAPIs",
+            "Effect": "Allow",
+            "Action": [
+                "managedblockchain-query:ListTransactions",
+                "managedblockchain-query:GetTransaction"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```

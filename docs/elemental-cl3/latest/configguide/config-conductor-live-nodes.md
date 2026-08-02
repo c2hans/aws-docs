@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cl3/latest/configguide/config-conductor-live-nodes.html
+---
+
+# Configuring the cluster
+<a name="config-conductor-live-nodes"></a>
+
+A AWS Elemental Conductor Live cluster consists of Conductor Live, Elemental Live, and Elemental Statmux nodes. To set up a cluster, you must add these nodes to the cluster. If you are implementing node redundancy, you must also create redundancy groups, then add each node to its redundancy group.
+
+**Topics**
++ [Managing nodes in the Conductor Live cluster](conductor-live-config-nodes.md)
++ [Creating redundancy groups](conductor-live-config-redundancy.md)
++ [High availability (HA)](conductor-live-config-ha-about.md)

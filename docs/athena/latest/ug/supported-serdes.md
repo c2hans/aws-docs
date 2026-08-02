@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/ug/supported-serdes.html
+---
+
+# Choose a SerDe for your data
+<a name="supported-serdes"></a>
+
+The following table lists the data formats supported in Athena and their corresponding SerDe libraries.
+
+**Supported data formats and SerDes**
+
+| Data format | Description | SerDe types supported in Athena |
+| --- | --- | --- |
+| Amazon Ion | Amazon Ion is a richly-typed, self-describing data format that is a superset of JSON, developed and open-sourced by Amazon. | Use the [Amazon Ion Hive SerDe](ion-serde.md). |
+| Apache Avro | A format for storing data in Hadoop that uses JSON-based schemas for record values. | Use the [Avro SerDe](avro-serde.md). |
+| Apache Parquet | A format for columnar storage of data in Hadoop. | Use the [Parquet SerDe](parquet-serde.md) and SNAPPY compression. |
+| Apache WebServer logs | A format for storing logs in Apache WebServer. | Use the [Grok SerDe](grok-serde.md) or [Regex SerDe](regex-serde.md). |
+| CloudTrail logs | A format for storing logs in CloudTrail. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/supported-serdes.html)  |
+| CSV (Comma-Separated Values) | For data in CSV, each line represents a data record, and each record consists of one or more fields, separated by commas. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/supported-serdes.html)  |
+| Custom-Delimited | For data in this format, each line represents a data record, and records are separated by a custom single-character delimiter. | Use the [Lazy Simple SerDe for CSV, TSV, and custom-delimited files](lazy-simple-serde.md) and specify a custom single-character delimiter. |
+| JSON (JavaScript Object Notation) | For JSON data, each line represents a data record, and each record consists of attribute-value pairs and arrays, separated by commas. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/supported-serdes.html)  |
+| Logstash logs | A format for storing logs in Logstash. | Use the [Grok SerDe](grok-serde.md). |
+| ORC (Optimized Row Columnar) | A format for optimized columnar storage of Hive data. | Use the [ORC SerDe](orc-serde.md) and ZLIB compression. |
+| TSV (Tab-Separated Values) | For data in TSV, each line represents a data record, and each record consists of one or more fields, separated by tabs. | Use the [Lazy Simple SerDe for CSV, TSV, and custom-delimited files](lazy-simple-serde.md) and specify the separator character as `FIELDS TERMINATED BY '\t'`. |

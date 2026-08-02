@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_SummaryMetricConfiguration.html
+---
+
+# SummaryMetricConfiguration
+<a name="API_SummaryMetricConfiguration"></a>
+
+The configuration of summary metrics.
+
+## Contents
+<a name="API_SummaryMetricConfiguration_Contents"></a>
+
+ ** Status **   <a name="iotwireless-Type-SummaryMetricConfiguration-Status"></a>
+The status of the configuration of summary metrics.
+Type: String
+Valid Values: `Enabled | Disabled`
+Required: No
+
+## See Also
+<a name="API_SummaryMetricConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/SummaryMetricConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/SummaryMetricConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/SummaryMetricConfiguration)

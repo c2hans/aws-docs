@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html
+---
+
+# Where to shut down resources per SageMaker AI features
+<a name="sm-shut-down-resources-per-feature"></a>
+
+You can shut down your Amazon SageMaker AI resources to avoid incurring unwanted charges. In the following table we list the SageMaker AI features or resources and provide links to the documentation on how to shut down SageMaker AI resources.
+
+You can also use the [APIs, CLI, and SDKs](api-and-sdk-reference-overview.md) provided by SageMaker AI. For example, you can search the [Amazon SageMaker API Reference](https://docs.aws.amazon.com/sagemaker/latest/APIReference/Welcome.html) for `Delete*` commands to delete some of the resources you have created. More specifically, you can search for the [DeleteDomain](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteDomain.html) API to learn how to delete a Amazon SageMaker AI domain.
+
+**Note**
+This is not a complete list of active resources on your domain. For all active SageMaker AI resources, see [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/).
+
+| SageMaker AI feature, infrastructure, resources | Instructions to shutting down |
+| --- | --- |
+|  [Canvas](canvas.md)  |  [Logging out of Amazon SageMaker Canvas](canvas-log-out.md)  |
+|  [Code Editor](code-editor.md)  |  [Shut down Code Editor resources](code-editor-use-log-out.md)  |
+|  [Domain](sm-domain.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [EMR in Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster.html)  |  [Terminate an Amazon EMR cluster from Studio or Studio Classic](terminate-emr-clusters.md)  |
+|  [Experiments](mlflow.md)  |  [Clean up MLflow resources](mlflow-cleanup.md)  |
+|  [HyperPod](sagemaker-hyperpod.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [Inference endpoints](realtime-endpoints-options.md)  |  [Delete Endpoints and Resources](realtime-endpoints-delete-resources.md)  |
+|  [JupyterLab](studio-updated-jl.md)  |  [Delete unused resources](studio-updated-jl-admin-guide-clean-up.md)  |
+|  [MLOps](mlops.md)  |  [Delete a MLOps Project using Amazon SageMaker Studio or Studio Classic](sagemaker-projects-delete.md)  |
+|  [Notebook instances](nbi.md)  |  [Clean up Amazon SageMaker notebook instance resources](ex1-cleanup.md)  |
+|  [Pipelines](pipelines.md)  |  [Stop a pipeline](pipelines-studio-stop.md)  |
+|  [Projects](sagemaker-projects.md)  |  [Delete a MLOps Project using Amazon SageMaker Studio or Studio Classic](sagemaker-projects-delete.md)  |
+|  [RStudio on Amazon SageMaker AI](rstudio.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [Studio](studio-updated.md)  |  [View your Studio running instances, applications, and spaces](studio-updated-running.md)  |
+|  [Studio Classic](studio.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [Stacks in AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html)  |  [Deleting a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html)  |
+|  [TensorBoard in SageMaker AI](tensorboard-on-sagemaker.md)  |  [Delete unused TensorBoard applications](debugger-htb-delete-app.md)  |

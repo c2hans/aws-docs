@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-utilities.html
+---
+
+AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
+
+# Utilities
+<a name="dp-object-utilities"></a>
+
+The following utility objects configure other pipeline objects:
+
+**Topics**
++ [ShellScriptConfig](dp-object-shellscriptconfig.md)
++ [EmrConfiguration](dp-object-emrconfiguration.md)
++ [Property](dp-object-property.md)

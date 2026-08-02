@@ -1,0 +1,38 @@
+---
+source_url: https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-start-new-project.html
+---
+
+Version 4 (V4) of the AWS SDK for .NET has been released\!
+
+For information about breaking changes and migrating your applications, see the [migration topic](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html).
+
+ [https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-v4.html)
+
+# Start a new project
+<a name="net-dg-start-new-project"></a>
+
+There are several techniques you can use to start a new project to access AWS services. The following are some of those techniques:
++ If you're new to .NET development on AWS or at least new to the AWS SDK for .NET, you can see complete examples in [Creating a simple application](quick-start.md). It gives you an introduction to the SDK.
++ You can start a basic project by using the .NET CLI. To see an example of this, open a command prompt or terminal, create a folder or directory and navigate to it, and then enter the following.
+
+  ```
+  dotnet new console --name [SOME-NAME]
+  ```
+
+  An empty project is created to which you can add code and NuGet packages. For more information, see the [.NET Core guide](https://learn.microsoft.com/en-us/dotnet/fundamentals/).
+
+  To see a list of project templates, use the following: `dotnet new --list`
++ The AWS Toolkit for Visual Studio includes C\# project templates for a variety of AWS services. After you [install the toolkit](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/setup.html) in Visual Studio, you can access the templates while creating a new project.
+
+  To see this, go to [Working with AWS services](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/working-with-services.html) in the [AWS Toolkit for Visual Studio User Guide](https://docs.aws.amazon.com/AWSToolkitVS/latest/UserGuide/). Several of the examples in that section create new projects.
++ If you develop with Visual Studio on Windows but without the AWS Toolkit for Visual Studio, use your typical techniques for creating a new project.
+
+  To see an example, open Visual Studio and choose **File**, **New**, **Project**. Search for ".net core" and choose the C\# version of the **Console App (.NET Core)** or **WPF App (.NET Core)** template. An empty project is created to which you can add code and NuGet packages.
+
+You can find some examples of how to work with AWS services in [Guided code examplesHigh-level libraries and frameworks](tutorials-examples.md).
+
+**Important**
+If you're using AWS IAM Identity Center for authentication, your application must reference the following NuGet packages so that SSO resolution can work:
+`AWSSDK.SSO`
+`AWSSDK.SSOOIDC`
+Failure to reference these packages will result in a *runtime* exception.

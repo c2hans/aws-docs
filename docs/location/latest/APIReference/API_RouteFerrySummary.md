@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteFerrySummary.html
+---
+
+# RouteFerrySummary
+<a name="API_RouteFerrySummary"></a>
+
+Summarized details for the leg including travel steps only. The Distance for the travel only portion of the journey is the same as the Distance within the Overview summary.
+
+## Contents
+<a name="API_RouteFerrySummary_Contents"></a>
+
+ ** Overview **   <a name="location-Type-RouteFerrySummary-Overview"></a>
+Summarized details for the leg including before travel, travel and after travel steps.
+Type: [RouteFerryOverviewSummary](API_RouteFerryOverviewSummary.md) object
+Required: No
+
+ ** TravelOnly **   <a name="location-Type-RouteFerrySummary-TravelOnly"></a>
+Summarized details for the leg including travel steps only. The Distance for the travel only portion of the journey is in meters
+Type: [RouteFerryTravelOnlySummary](API_RouteFerryTravelOnlySummary.md) object
+Required: No
+
+## See Also
+<a name="API_RouteFerrySummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/geo-routes-2020-11-19/RouteFerrySummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/geo-routes-2020-11-19/RouteFerrySummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/geo-routes-2020-11-19/RouteFerrySummary)

@@ -1,0 +1,119 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-pyspark-transforms-FlagDuplicateRows.html
+---
+
+# FlagDuplicateRows class
+<a name="aws-glue-api-pyspark-transforms-FlagDuplicateRows"></a>
+
+The `FlagDuplicateRows` transform returns a new column with a specified value in each row that indicates whether that row is an exact match of an earlier row in the dataset. When matches are found, they are flagged as duplicates. The initial occurrence is not flagged, because it doesn't match an earlier row.
+
+## Example
+<a name="pyspark-FlagDuplicateRows-examples"></a>
+
+```
+from pyspark.context import SparkContext
+from pyspark.sql import SparkSession
+from awsgluedi.transforms import *
+
+sc = SparkContext()
+spark = SparkSession(sc)
+
+input_df = spark.createDataFrame(
+    [
+        (105.111, 13.12),
+        (13.12, 13.12),
+        (None, 13.12),
+        (13.12, 13.12),
+        (None, 13.12),
+    ],
+    ["source_column_1", "source_column_2"],
+)
+
+try:
+    df_output = data_quality.FlagDuplicateRows.apply(
+        data_frame=input_df,
+        spark_context=sc,
+        target_column="flag_row",
+        true_string="True",
+        false_string="False",
+        target_index=1
+    )
+except:
+    print("Unexpected Error happened ")
+    raise
+```
+
+## Output
+<a name="pyspark-FlagDuplicateRows-output"></a>
+
+ The output will be a PySpark DataFrame with an additional column `flag_row` that indicates whether a row is a duplicate or not, based on the `source_column_1` column. The resulting `df\_output` DataFrame will contain the following rows:
+
+```
+```
++---------------+---------------+--------+
+|source_column_1|source_column_2|flag_row|
++---------------+---------------+--------+
+| 105.111| 13.12| False|
+| 13.12| 13.12| True|
+| null| 13.12| True|
+| 13.12| 13.12| True|
+| null| 13.12| True|
++---------------+---------------+--------+
+```
+```
+
+ The `flag_row` column indicates whether a row is a duplicate or not. The `true\_string` is set to "True", and the `false\_string` is set to "False". The `target\_index` is set to 1, which means that the `flag_row` column will be inserted at the second position (index 1) in the output DataFrame.
+
+## Methods
+<a name="aws-glue-api-pyspark-transforms-FlagDuplicateRows-_methods"></a>
++ [\_\_call\_\_](#aws-glue-api-pyspark-transforms-FlagDuplicateRows-__call__)
++ [apply](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-apply)
++ [name](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-name)
++ [describeArgs](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeArgs)
++ [describeReturn](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeReturn)
++ [describeTransform](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeTransform)
++ [describeErrors](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeErrors)
++ [describe](#aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describe)
+
+## \_\_call\_\_(spark\_context, data\_frame, target\_column, true\_string=DEFAULT\_TRUE\_STRING, false\_string=DEFAULT\_FALSE\_STRING, target\_index=None)
+<a name="aws-glue-api-pyspark-transforms-FlagDuplicateRows-__call__"></a>
+
+The `FlagDuplicateRows` transform returns a new column with a specified value in each row that indicates whether that row is an exact match of an earlier row in the dataset. When matches are found, they are flagged as duplicates. The initial occurrence is not flagged, because it doesn't match an earlier row.
++ `true_string` – Value to be inserted if the row matches an earlier row.
++ `false_string` – Value to be inserted if the row is unique.
++  `target_column` – Name of the new column that is inserted in the dataset.
+
+## apply(cls, \*args, \*\*kwargs)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-apply"></a>
+
+Inherited from `GlueTransform` [apply](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-apply).
+
+## name(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-name"></a>
+
+Inherited from `GlueTransform` [name](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-name).
+
+## describeArgs(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeArgs"></a>
+
+Inherited from `GlueTransform` [describeArgs](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeArgs).
+
+## describeReturn(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeReturn"></a>
+
+Inherited from `GlueTransform` [describeReturn](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeReturn).
+
+## describeTransform(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeTransform"></a>
+
+Inherited from `GlueTransform` [describeTransform](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeTransform).
+
+## describeErrors(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describeErrors"></a>
+
+Inherited from `GlueTransform` [describeErrors](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeErrors).
+
+## describe(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-FlagDuplicateRows-describe"></a>
+
+Inherited from `GlueTransform` [describe](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describe).

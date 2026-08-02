@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/tageditor.html
+---
+
+# Data retrieval APIs for Tag Editor
+<a name="tageditor"></a>
+
+Tag Editor provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="resource-explorer-ListResourceTypes"></a>[https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te) | Retrieve the resource types currently supported by Tag Editor | List |
+| <a name="resource-explorer-ListResources"></a>[https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te) | Retrieve the identifiers of the resources in the AWS account | List |
+| <a name="resource-explorer-ListTags"></a>[https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te](https://docs.aws.amazon.com/ARG/latest/userguide/gettingstarted-prereqs.html#rg-permissions-te) | Retrieve the tags attached to the specified resource identifiers | Read |

@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remove-github-enterprise-server.html
+---
+
+# Remove a GitHub Enterprise Server integration
+<a name="remove-github-enterprise-server"></a>
+
+Remove a GitHub Enterprise Server integration when you no longer need AWS Security Agent to access repositories from a specific GHES instance.
+
+## Prerequisites for removal
+<a name="_prerequisites_for_removal"></a>
+
+Before removing a GHES integration:
++ Check which Agent Spaces have repositories connected from this integration
++ Understand the impact: Removing will break code review, penetration testing context, threat modeling, and automated remediation for all connected repositories
+
+## Remove the integration
+<a name="_remove_the_integration"></a>
+
+1. In the AWS Security Agent Management Console, navigate to **Integrations**.
+
+1. Locate the GitHub Enterprise Server integration you want to remove.
+
+1. Select the integration.
+
+1. Choose **Remove**.
+
+1. Review the confirmation dialog and choose **Confirm removal**.
+
+**Note**
+After removal, you may also want to revoke the OAuth application on your GHES instance. Navigate to your GHES organization settings and remove the authorized application.

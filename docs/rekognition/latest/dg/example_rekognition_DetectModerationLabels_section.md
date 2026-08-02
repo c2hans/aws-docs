@@ -1,0 +1,316 @@
+---
+source_url: https://docs.aws.amazon.com/rekognition/latest/dg/example_rekognition_DetectModerationLabels_section.html
+---
+
+# Use `DetectModerationLabels` with an AWS SDK or CLI
+<a name="example_rekognition_DetectModerationLabels_section"></a>
+
+The following code examples show how to use `DetectModerationLabels`.
+
+For more information, see [Detecting inappropriate images](https://docs.aws.amazon.com/rekognition/latest/dg/procedure-moderate-images.html).
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Rekognition/#code-examples).
+
+```
+    using System;
+    using System.Threading.Tasks;
+    using Amazon.Rekognition;
+    using Amazon.Rekognition.Model;
+
+    /// <summary>
+    /// Uses the Amazon Rekognition Service to detect unsafe content in a
+    /// JPEG or PNG format image.
+    /// </summary>
+    public class DetectModerationLabels
+    {
+        public static async Task Main(string[] args)
+        {
+            string photo = "input.jpg";
+            string bucket = "amzn-s3-demo-bucket";
+
+            var rekognitionClient = new AmazonRekognitionClient();
+
+            var detectModerationLabelsRequest = new DetectModerationLabelsRequest()
+            {
+                Image = new Image()
+                {
+                    S3Object = new S3Object()
+                    {
+                        Name = photo,
+                        Bucket = bucket,
+                    },
+                },
+                MinConfidence = 60F,
+            };
+
+            try
+            {
+                var detectModerationLabelsResponse = await rekognitionClient.DetectModerationLabelsAsync(detectModerationLabelsRequest);
+                Console.WriteLine("Detected labels for " + photo);
+                foreach (ModerationLabel label in detectModerationLabelsResponse.ModerationLabels)
+                {
+                    Console.WriteLine($"Label: {label.Name}");
+                    Console.WriteLine($"Confidence: {label.Confidence}");
+                    Console.WriteLine($"Parent: {label.ParentName}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+    }
+```
++  For API details, see [DetectModerationLabels](https://docs.aws.amazon.com/goto/DotNetSDKV3/rekognition-2016-06-27/DetectModerationLabels) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To detect unsafe content in an image**
+The following `detect-moderation-labels` command detects unsafe content in the specified image stored in an Amazon S3 bucket.
+
+```
+aws rekognition detect-moderation-labels \
+    --image {{"S3Object={Bucket=MyImageS3Bucket,Name=gun.jpg}"}}
+```
+Output:
+
+```
+{
+    "ModerationModelVersion": "3.0",
+    "ModerationLabels": [
+        {
+            "Confidence": 97.29618072509766,
+            "ParentName": "Violence",
+            "Name": "Weapon Violence"
+        },
+        {
+            "Confidence": 97.29618072509766,
+            "ParentName": "",
+            "Name": "Violence"
+        }
+    ]
+}
+```
+For more information, see [Detecting Unsafe Images](https://docs.aws.amazon.com/rekognition/latest/dg/procedure-moderate-images.html) in the *Amazon Rekognition Developer Guide*.
++  For API details, see [DetectModerationLabels](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/rekognition/detect-moderation-labels.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/rekognition/#code-examples).
+
+```
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.rekognition.RekognitionClient;
+import software.amazon.awssdk.services.rekognition.model.*;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+import java.util.List;
+
+/**
+ * Before running this Java V2 code example, set up your development
+ * environment, including your credentials.
+ *
+ * For more information, see the following documentation topic:
+ *
+ * https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html
+ */
+public class DetectModerationLabels {
+
+    public static void main(String[] args) {
+        final String usage = """
+            Usage:  <bucketName>  <sourceImage>
+
+            Where:
+                bucketName - The name of the S3 bucket where the images are stored.
+                sourceImage - The name of the image (for example, pic1.png).\s
+            """;
+
+        if (args.length != 2) {
+            System.out.println(usage);
+            System.exit(1);
+        }
+
+        String bucketName = args[0];
+        String sourceImage = args[1];
+        Region region = Region.US_WEST_2;
+        RekognitionClient rekClient = RekognitionClient.builder()
+                .region(region)
+                .build();
+
+        detectModLabels(rekClient, bucketName, sourceImage);
+        rekClient.close();
+    }
+
+    /**
+     * Detects moderation labels in an image stored in an Amazon S3 bucket.
+     *
+     * @param rekClient      the Amazon Rekognition client to use for the detection
+     * @param bucketName     the name of the Amazon S3 bucket where the image is stored
+     * @param sourceImage    the name of the image file to be analyzed
+     *
+     * @throws RekognitionException if there is an error during the image detection process
+     */
+    public static void detectModLabels(RekognitionClient rekClient, String bucketName, String sourceImage) {
+        try {
+            S3Object s3ObjectTarget = S3Object.builder()
+                    .bucket(bucketName)
+                    .name(sourceImage)
+                    .build();
+
+            Image targetImage = Image.builder()
+                    .s3Object(s3ObjectTarget)
+                    .build();
+
+            DetectModerationLabelsRequest moderationLabelsRequest = DetectModerationLabelsRequest.builder()
+                    .image(targetImage)
+                    .minConfidence(60F)
+                    .build();
+
+            DetectModerationLabelsResponse moderationLabelsResponse = rekClient
+                    .detectModerationLabels(moderationLabelsRequest);
+            List<ModerationLabel> labels = moderationLabelsResponse.moderationLabels();
+            System.out.println("Detected labels for image");
+            for (ModerationLabel label : labels) {
+                System.out.println("Label: " + label.name()
+                        + "\n Confidence: " + label.confidence().toString() + "%"
+                        + "\n Parent:" + label.parentName());
+            }
+
+        } catch (RekognitionException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+    }
+}
+```
++  For API details, see [DetectModerationLabels](https://docs.aws.amazon.com/goto/SdkForJavaV2/rekognition-2016-06-27/DetectModerationLabels) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Kotlin ]
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/rekognition#code-examples).
+
+```
+suspend fun detectModLabels(sourceImage: String) {
+    val myImage =
+        Image {
+            this.bytes = (File(sourceImage).readBytes())
+        }
+
+    val request =
+        DetectModerationLabelsRequest {
+            image = myImage
+            minConfidence = 60f
+        }
+
+    RekognitionClient.fromEnvironment { region = "us-east-1" }.use { rekClient ->
+        val response = rekClient.detectModerationLabels(request)
+        response.moderationLabels?.forEach { label ->
+            println("Label: ${label.name} - Confidence: ${label.confidence} % Parent: ${label.parentName}")
+        }
+    }
+}
+```
++  For API details, see [DetectModerationLabels](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/rekognition#code-examples).
+
+```
+class RekognitionImage:
+    """
+    Encapsulates an Amazon Rekognition image. This class is a thin wrapper
+    around parts of the Boto3 Amazon Rekognition API.
+    """
+
+    def __init__(self, image, image_name, rekognition_client):
+        """
+        Initializes the image object.
+
+        :param image: Data that defines the image, either the image bytes or
+                      an Amazon S3 bucket and object key.
+        :param image_name: The name of the image.
+        :param rekognition_client: A Boto3 Rekognition client.
+        """
+        self.image = image
+        self.image_name = image_name
+        self.rekognition_client = rekognition_client
+
+    def detect_moderation_labels(self):
+        """
+        Detects moderation labels in the image. Moderation labels identify content
+        that may be inappropriate for some audiences.
+
+        :return: The list of moderation labels found in the image.
+        """
+        try:
+            response = self.rekognition_client.detect_moderation_labels(
+                Image=self.image
+            )
+            labels = [
+                RekognitionModerationLabel(label)
+                for label in response["ModerationLabels"]
+            ]
+            logger.info(
+                "Found %s moderation labels in %s.", len(labels), self.image_name
+            )
+        except ClientError:
+            logger.exception(
+                "Couldn't detect moderation labels in %s.", self.image_name
+            )
+            raise
+        else:
+            return labels
+```
++  For API details, see [DetectModerationLabels](https://docs.aws.amazon.com/goto/boto3/rekognition-2016-06-27/DetectModerationLabels) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rek#code-examples).
+
+```
+    TRY.
+        " Create S3 object reference for the image
+        DATA(lo_s3object) = NEW /aws1/cl_reks3object(
+          iv_bucket = iv_s3_bucket
+          iv_name = iv_s3_key ).
+
+        " Create image object
+        DATA(lo_image) = NEW /aws1/cl_rekimage(
+          io_s3object = lo_s3object ).
+
+        " Detect moderation labels
+        oo_result = lo_rek->detectmoderationlabels(
+          io_image = lo_image ).
+
+        DATA(lt_moderation_labels) = oo_result->get_moderationlabels( ).
+        DATA(lv_mod_count) = lines( lt_moderation_labels ).
+        DATA(lv_msg10) = |{ lv_mod_count } moderation label(s) detected.|.
+        MESSAGE lv_msg10 TYPE 'I'.
+      CATCH /aws1/cx_rekinvalids3objectex.
+        MESSAGE 'Invalid S3 object.' TYPE 'E'.
+      CATCH /aws1/cx_rekinvalidparameterex.
+        MESSAGE 'Invalid parameter value.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [DetectModerationLabels](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using Rekognition with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

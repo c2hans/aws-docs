@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/containers-on-aws/storage.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Storage
+<a name="storage"></a>
+
+By default, all files created inside a container write to a thin writable container layer. This data doesn’t persist when the container no longer exists and it is tightly coupled to the host where a container is running. Amazon ECS supports the following data volume options for containers:
++  **Bind mounts**: With a bind mount, a file or directory on a host is mounted onto one or more containers. For tasks hosted on Amazon EC2 instances, the data can be tied to the lifecycle of the host Amazon EC2 instance by specifying a host and optional `sourcePath` value in your task definition. Within the container, writes to the `containerPath` are persisted to the underlying volume defined in the `sourcePath` independently from the container’s lifecycle. You can also share data from a source container with other containers in the same task. Tasks hosted on AWS Fargate using platform version 1.4.0 or later receive by default a minimum of 20 GB of ephemeral storage for bind mounts, which can be increased to a maximum of 200 GB. Review the [Amazon ECS developer guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bind-mounts.html) for more use cases and considerations.
++  **Docker Volumes**: With the support for Docker volumes, you can have the flexibility to configure the lifecycle of the Docker volume and specify whether it’s a scratch space volume specific to a single instantiation of a task, or a persistent volume that persists beyond the lifecycle of a unique instantiation of the task. You can use volume drivers (also referred to as plugins) to integrate the volumes with external storage systems, such as Amazon EBS. To learn more, visit the [Amazon ECS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-volumes.html).
++  **Amazon EFS**: It provides simple, scalable, and persistent file storage for use with your Amazon ECS tasks. With Amazon EFS, storage capacity is elastic, growing and shrinking automatically as you add and remove files. Your applications can have the storage they need, when they need it. Amazon EFS volumes are supported for tasks hosted on Fargate or Amazon EC2 instances. For more information, see [Amazon EFS volumes](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-volumes.html).
+
+ Amazon FSx for Windows File Server volumes is available for your Windows tasks on Amazon ECS with Amazon EC2 launch type. This provides fully managed Windows file servers backed by a Windows file system.
+
+ Kubernetes supports many types of volumes. Ephemeral volume types have a lifetime of a pod, but persistent volumes exist beyond the lifetime of a pod. When a pod ceases to exist, Kubernetes destroys ephemeral volumes; however, Kubernetes does not destroy persistent volumes. For any kind of volume in a given pod, data is preserved across container restarts. For Amazon EKS, the Container Storage Interface (CSI) allows exposing storage systems/backends to containerized workloads as persistent storage. CSI driver provides an interface to manage the lifecycle of Amazon EBS, Amazon EFS, and Amazon FSx for persistent volumes. For more information, see [https://kubernetes.io/docs/concepts/storage/volumes/](https://kubernetes.io/docs/concepts/storage/volumes/).

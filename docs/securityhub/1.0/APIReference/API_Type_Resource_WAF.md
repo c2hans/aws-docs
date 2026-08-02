@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Resource_WAF.html
+---
+
+# AWS WAF objects
+<a name="API_Type_Resource_WAF"></a>
+
+****AWS WAF objects****
++ [AwsWafRateBasedRuleDetails](API_AwsWafRateBasedRuleDetails.md)
++ [AwsWafRateBasedRuleMatchPredicate](API_AwsWafRateBasedRuleMatchPredicate.md)
++ [AwsWafRegionalRateBasedRuleDetails](API_AwsWafRegionalRateBasedRuleDetails.md)
++ [AwsWafRegionalRateBasedRuleMatchPredicate](API_AwsWafRegionalRateBasedRuleMatchPredicate.md)
++ [AwsWafRegionalRuleDetails](API_AwsWafRegionalRuleDetails.md)
++ [AwsWafRegionalRuleGroupDetails](API_AwsWafRegionalRuleGroupDetails.md)
++ [AwsWafRegionalRuleGroupRulesActionDetails](API_AwsWafRegionalRuleGroupRulesActionDetails.md)
++ [AwsWafRegionalRuleGroupRulesDetails](API_AwsWafRegionalRuleGroupRulesDetails.md)
++ [AwsWafRegionalRulePredicateListDetails](API_AwsWafRegionalRulePredicateListDetails.md)
++ [AwsWafRegionalWebAclDetails](API_AwsWafRegionalWebAclDetails.md)
++ [AwsWafRegionalWebAclRulesListActionDetails](API_AwsWafRegionalWebAclRulesListActionDetails.md)
++ [AwsWafRegionalWebAclRulesListDetails](API_AwsWafRegionalWebAclRulesListDetails.md)
++ [AwsWafRegionalWebAclRulesListOverrideActionDetails](API_AwsWafRegionalWebAclRulesListOverrideActionDetails.md)
++ [AwsWafRuleDetails](API_AwsWafRuleDetails.md)
++ [AwsWafRuleGroupDetails](API_AwsWafRuleGroupDetails.md)
++ [AwsWafRuleGroupRulesActionDetails](API_AwsWafRuleGroupRulesActionDetails.md)
++ [AwsWafRuleGroupRulesDetails](API_AwsWafRuleGroupRulesDetails.md)
++ [AwsWafRulePredicateListDetails](API_AwsWafRulePredicateListDetails.md)
++ [AwsWafv2ActionAllowDetails](API_AwsWafv2ActionAllowDetails.md)
++ [AwsWafv2ActionBlockDetails](API_AwsWafv2ActionBlockDetails.md)
++ [AwsWafv2CustomHttpHeader](API_AwsWafv2CustomHttpHeader.md)
++ [AwsWafv2CustomRequestHandlingDetails](API_AwsWafv2CustomRequestHandlingDetails.md)
++ [AwsWafv2CustomResponseDetails](API_AwsWafv2CustomResponseDetails.md)
++ [AwsWafv2RuleGroupDetails](API_AwsWafv2RuleGroupDetails.md)
++ [AwsWafv2RulesActionCaptchaDetails](API_AwsWafv2RulesActionCaptchaDetails.md)
++ [AwsWafv2RulesActionCountDetails](API_AwsWafv2RulesActionCountDetails.md)
++ [AwsWafv2RulesActionDetails](API_AwsWafv2RulesActionDetails.md)
++ [AwsWafv2RulesDetails](API_AwsWafv2RulesDetails.md)
++ [AwsWafv2VisibilityConfigDetails](API_AwsWafv2VisibilityConfigDetails.md)
++ [AwsWafv2WebAclActionDetails](API_AwsWafv2WebAclActionDetails.md)
++ [AwsWafv2WebAclCaptchaConfigDetails](API_AwsWafv2WebAclCaptchaConfigDetails.md)
++ [AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails](API_AwsWafv2WebAclCaptchaConfigImmunityTimePropertyDetails.md)
++ [AwsWafv2WebAclDetails](API_AwsWafv2WebAclDetails.md)
++ [AwsWafWebAclDetails](API_AwsWafWebAclDetails.md)
++ [AwsWafWebAclRule](API_AwsWafWebAclRule.md)
++ [WafAction](API_WafAction.md)
++ [WafExcludedRule](API_WafExcludedRule.md)
++ [WafOverrideAction](API_WafOverrideAction.md)

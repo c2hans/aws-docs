@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [AcceptDataGrant](API_AcceptDataGrant.md)
++  [CancelJob](API_CancelJob.md)
++  [CreateDataGrant](API_CreateDataGrant.md)
++  [CreateDataSet](API_CreateDataSet.md)
++  [CreateEventAction](API_CreateEventAction.md)
++  [CreateJob](API_CreateJob.md)
++  [CreateRevision](API_CreateRevision.md)
++  [DeleteAsset](API_DeleteAsset.md)
++  [DeleteDataGrant](API_DeleteDataGrant.md)
++  [DeleteDataSet](API_DeleteDataSet.md)
++  [DeleteEventAction](API_DeleteEventAction.md)
++  [DeleteRevision](API_DeleteRevision.md)
++  [GetAsset](API_GetAsset.md)
++  [GetDataGrant](API_GetDataGrant.md)
++  [GetDataSet](API_GetDataSet.md)
++  [GetEventAction](API_GetEventAction.md)
++  [GetJob](API_GetJob.md)
++  [GetReceivedDataGrant](API_GetReceivedDataGrant.md)
++  [GetRevision](API_GetRevision.md)
++  [ListDataGrants](API_ListDataGrants.md)
++  [ListDataSetRevisions](API_ListDataSetRevisions.md)
++  [ListDataSets](API_ListDataSets.md)
++  [ListEventActions](API_ListEventActions.md)
++  [ListJobs](API_ListJobs.md)
++  [ListReceivedDataGrants](API_ListReceivedDataGrants.md)
++  [ListRevisionAssets](API_ListRevisionAssets.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [RevokeRevision](API_RevokeRevision.md)
++  [SendApiAsset](API_SendApiAsset.md)
++  [SendDataSetNotification](API_SendDataSetNotification.md)
++  [StartJob](API_StartJob.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateAsset](API_UpdateAsset.md)
++  [UpdateDataSet](API_UpdateDataSet.md)
++  [UpdateEventAction](API_UpdateEventAction.md)
++  [UpdateRevision](API_UpdateRevision.md)

@@ -1,0 +1,203 @@
+---
+source_url: https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html
+---
+
+# CloudWatch metrics for AWS PrivateLink
+<a name="privatelink-cloudwatch-metrics"></a>
+
+AWS PrivateLink publishes data points to Amazon CloudWatch for your interface endpoints, Gateway Load Balancer endpoints, and endpoint services. CloudWatch enables you to retrieve statistics about those data points as an ordered set of time series data, known as *metrics*. Think of a metric as a variable to monitor, and the data points as the values of that variable over time. Each data point has an associated timestamp and an optional unit of measurement.
+
+You can use metrics to verify that your system is performing as expected. For example, you can create a CloudWatch alarm to monitor a specified metric and initiate an action (such as sending a notification to an email address) if the metric goes outside what you consider an acceptable range.
+
+Metrics are published for all interface endpoints, Gateway Load Balancer endpoints, and endpoint services. They are not published for gateway endpoints or for endpoint service consumers that use cross-Region access. By default, AWS PrivateLink sends metrics to CloudWatch in one-minute intervals, at no additional cost.
+
+For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
+
+**Topics**
++ [Endpoint metrics and dimensions](#endpoint-metrics-dimensions)
++ [Endpoint service metrics and dimensions](#endpoint-service-metrics-dimensions)
++ [View the CloudWatch metrics](#view-privatelink-metrics)
++ [Use built-in Contributor Insights rules](#privatelink-contributor-insights)
+
+## Endpoint metrics and dimensions
+<a name="endpoint-metrics-dimensions"></a>
+
+The `AWS/PrivateLinkEndpoints` namespace includes the following metrics for interface endpoints and Gateway Load Balancer endpoints.
+
+| Metric | Description |
+| --- | --- |
+| ActiveConnections | The number of concurrent active connections. This includes connections in the SYN\_SENT and ESTABLISHED states.<br />**Reporting criteria**: The endpoint received traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Maximum`, and `Minimum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| BytesProcessed | The number of bytes exchanged between endpoints and endpoint services, aggregated in both directions. This is the number of bytes billed to the owner of the endpoint. The bill displays this value in GB.<br />**Reporting criteria**: The endpoint received traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, `Maximum`, and `Minimum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| NewConnections | The number of new connections established through the endpoint.<br />**Reporting criteria**: The endpoint received traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, `Maximum`, and `Minimum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| PacketsDropped | The number of packets dropped by the endpoint. This metric might not capture all packet drops. Increasing values could indicate that the endpoint or endpoint service is unhealthy.<br />**Reporting criteria**: The endpoint received traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| RstPacketsReceived | The number of RST packets received by the endpoint. Increasing values could indicate that the endpoint service is unhealthy.<br />**Reporting criteria**: The endpoint received traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+
+To filter these metrics, use the following dimensions.
+
+| Dimension | Description |
+| --- | --- |
+| Endpoint Type | Filters the metric data by endpoint type (Interface \| GatewayLoadBalancer). |
+| Service Name | Filters the metric data by service name. |
+| Subnet Id | Filters the metric data by subnet. |
+| VPC Endpoint Id | Filters the metric data by VPC endpoint. |
+| VPC Id | Filters the metric data by VPC. |
+
+## Endpoint service metrics and dimensions
+<a name="endpoint-service-metrics-dimensions"></a>
+
+The `AWS/PrivateLinkServices` namespace includes the following metrics for endpoint services.
+
+| Metric | Description |
+| --- | --- |
+| ActiveConnections | The maximum number of active connections from clients to targets through the endpoints. Increasing values could indicate the need to add targets to the load balancer.<br />**Reporting criteria**: An endpoint connected to the endpoint service sent traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average` and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| BytesProcessed | The number of bytes exchanged between endpoint services and endpoints, in both directions.<br />**Reporting criteria**: An endpoint connected to the endpoint service sent traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| EndpointsCount | The number of endpoints connected to the endpoint service.<br />**Reporting criteria**: There is a nonzero value during the five-minute period.<br />**Statistics**: The most useful statistics are `Average` and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| NewConnections | The number of new connections established from clients to targets through the endpoints. Increasing values could indicate the need to add targets to the load balancer.<br />**Reporting criteria**: An endpoint connected to the endpoint service sent traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+| RstPacketsSent | The number of RST packets sent to endpoints by the endpoint service. Increasing values could indicate that there are unhealthy targets.<br />**Reporting criteria**: An endpoint connected to the endpoint service sent traffic during the one-minute period.<br />**Statistics**: The most useful statistics are `Average`, `Sum`, and `Maximum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-cloudwatch-metrics.html) |
+
+To filter these metrics, use the following dimensions.
+
+| Dimension | Description |
+| --- | --- |
+| Az | Filters the metric data by Availability Zone. |
+| Load Balancer Arn | Filters the metric data by load balancer. |
+| Service Id | Filters the metric data by endpoint service. |
+| VPC Endpoint Id | Filters the metric data by VPC endpoint. |
+
+## View the CloudWatch metrics
+<a name="view-privatelink-metrics"></a>
+
+You can view these CloudWatch metrics using the Amazon VPC console, the CloudWatch console, or the AWS CLI as follows.
+
+**To view metrics using the Amazon VPC console**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the navigation pane, choose **Endpoints**. Select your endpoint and then choose the **Monitoring** tab.
+
+1. In the navigation pane, choose **Endpoint services**. Select your endpoint service and then choose the **Monitoring** tab.
+
+**To view metrics using the CloudWatch console**
+
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
+
+1. In the navigation pane, choose **Metrics**.
+
+1. Select the **AWS/PrivateLinkEndpoints** namespace.
+
+1. Select the **AWS/PrivateLinkServices** namespace.
+
+**To view metrics using the AWS CLI**
+Use the following [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command to list the available metrics for interface endpoints and Gateway Load Balancer endpoints:
+
+```
+aws cloudwatch list-metrics --namespace AWS/PrivateLinkEndpoints
+```
+
+Use the following [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command to list the available metrics for endpoint services:
+
+```
+aws cloudwatch list-metrics --namespace AWS/PrivateLinkServices
+```
+
+## Use built-in Contributor Insights rules
+<a name="privatelink-contributor-insights"></a>
+
+AWS PrivateLink provides built-in Contributor Insights rules for your endpoint services to help you find which endpoints are the largest contributors to each supported metric. For more information, see [Contributor Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContributorInsights.html) in the *Amazon CloudWatch User Guide*.
+
+AWS PrivateLink provides the following rules:
++ `VpcEndpointService-ActiveConnectionsByEndpointId-v1` – Ranks endpoints by the number of active connections.
++ `VpcEndpointService-BytesByEndpointId-v1` – Ranks endpoints by the number of bytes processed.
++ `VpcEndpointService-NewConnectionsByEndpointId-v1` – Ranks endpoints by the number of new connections.
++ `VpcEndpointService-RstPacketsByEndpointId-v1` – Ranks endpoints by the number of RST packets sent to endpoints.
+
+Before you can use a built-in rule, you must enable it. After you enable a rule, it starts collecting contributor data. For information about the charges for Contributor Insights, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
+
+You must have the following permissions to use Contributor Insights:
++ `cloudwatch:DeleteInsightRules` – To delete Contributor Insights rules.
++ `cloudwatch:DisableInsightRules` – To disable Contributor Insights rules.
++ `cloudwatch:GetInsightRuleReport` – To get the data.
++ `cloudwatch:ListManagedInsightRules` – To list the available Contributor Insights rules.
++ `cloudwatch:PutManagedInsightRules` – To enable Contributor Insights rules.
+
+**Topics**
++ [Enable Contributor Insights rules](#enable-contributor-insights)
++ [Disable Contributor Insights rules](#disable-contributor-insights)
++ [Delete Contributor Insights rules](#delete-contributor-insights)
+
+### Enable Contributor Insights rules
+<a name="enable-contributor-insights"></a>
+
+Use the following procedures to enable the built-in rules for AWS PrivateLink using either the AWS Management Console or the AWS CLI.
+
+**To enable the Contributor Insights rules for AWS PrivateLink using the console**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the navigation pane, choose **Endpoint services**.
+
+1. Select your endpoint service.
+
+1. On the **Contributor Insights** tab, choose **Enable**.
+
+1. (Optional) By default, all rules are enabled. To enable only specific rules, select the rules that should not be enabled and then choose **Actions**, **Disable rule**. When prompted for confirmation, choose **Disable**.
+
+**To enable the Contributor Insights rules for AWS PrivateLink using the AWS CLI**
+
+1. Use the [list-managed-insight-rules](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-managed-insight-rules.html) command as follows to enumerate the available rules. For the `--resource-arn` option, specify the ARN of your endpoint service.
+
+   ```
+   aws cloudwatch list-managed-insight-rules --resource-arn arn:aws:ec2:{{region}}:{{account-id}}:vpc-endpoint-service/{{vpc-svc-0123456789EXAMPLE}}
+   ```
+
+1. In the output of the `list-managed-insight-rules` command, copy the name of the template from the `TemplateName` field. The following is an example of this field.
+
+   ```
+   "TemplateName": "VpcEndpointService-NewConnectionsByEndpointId-v1"
+   ```
+
+1. Use the [put-managed-insight-rules](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-managed-insight-rules.html) command as follows to enable the rule. You must specify the template name and the ARN of your endpoint service.
+
+   ```
+   aws cloudwatch put-managed-insight-rules --managed-rules TemplateName={{VpcEndpointService-NewConnectionsByEndpointId-v1}},ResourceARN=arn:aws:ec2:{{region}}:{{account-id}}:vpc-endpoint-service/{{vpc-svc-0123456789EXAMPLE}}
+   ```
+
+### Disable Contributor Insights rules
+<a name="disable-contributor-insights"></a>
+
+You can disable the built-in rules for AWS PrivateLink at any time. After you disable a rule, it stops collecting contributor data, but existing contributor data is kept until it is 15 days old. After you disable a rule, you can enable it again to resume collecting contributor data.
+
+**To disable the Contributor Insights rules for AWS PrivateLink using the console**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the navigation pane, choose **Endpoint services**.
+
+1. Select your endpoint service.
+
+1. On the **Contributor Insights** tab, choose **Disable all** to disable all rules. Alternatively, expand the **Rules** panel, select the rules to disable, and then choose **Actions**, **Disable rule**
+
+1. When prompted for confirmation, choose **Disable**.
+
+**To disable the Contributor Insights rules for AWS PrivateLink using the AWS CLI**
+Use the [disable-insight-rules](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/disable-insight-rules.html) command to disable a rule.
+
+### Delete Contributor Insights rules
+<a name="delete-contributor-insights"></a>
+
+Use the following procedures to delete the built-in rules for AWS PrivateLink using either the AWS Management Console or the AWS CLI. After you delete a rule, it stops collecting contributor data and we delete the existing contributor data.
+
+**To delete Contributor Insights rules for AWS PrivateLink using the console**
+
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
+
+1. In the navigation pane, choose **Insights**, **Contributor Insights**.
+
+1. Expand the **Rules** panel and select the rules.
+
+1. Choose **Actions**, **Delete rule**.
+
+1. When prompted for confirmation, choose **Delete**.
+
+**To delete Contributor Insights rules for AWS PrivateLink using the AWS CLI**
+Use the [delete-insight-rules](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/delete-insight-rules.html) command to delete a rule.

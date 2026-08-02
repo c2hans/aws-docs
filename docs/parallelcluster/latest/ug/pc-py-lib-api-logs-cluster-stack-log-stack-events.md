@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/pc-py-lib-api-logs-cluster-stack-log-stack-events.html
+---
+
+# `get_cluster_stack_events`
+<a name="pc-py-lib-api-logs-cluster-stack-log-stack-events"></a>
+
+```
+get_cluster_stack_events(cluster_name, region, next_token)
+```
+
+Get stack events for a given cluster.Parameters:
+
+**`cluster_name` (required)**
+The cluster name.
+
+**`region`**
+The cluster AWS Region.
+
+**`next_token`**
+The token for the next set of results.

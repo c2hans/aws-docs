@@ -1,0 +1,142 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy.html
+---
+
+# AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy
+<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy"></a>
+
+**Description**: Provide permission for Diagnosing issues with SSM services by executing activities defined within Automation Documents, primarily used for running the Automation documents in a cross-account cross-region setup by triggering child automations within member accounts.
+
+`AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy-how-to-use"></a>
+
+You can attach `AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy` to your users, groups, and roles.
+
+## Policy details
+<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy-details"></a>
++ **Type**: AWS managed policy
++ **Creation time**: November 16, 2024, 00:01 UTC
++ **Edited time:** February 12, 2026, 18:01 UTC
++ **ARN**: `arn:aws:iam::aws:policy/AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy`
+
+## Policy version
+<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy-version"></a>
+
+**Policy version:** v4 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "AllowReadOnlyAccessSSMResource",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:DescribeAutomationExecutions",
+        "ssm:DescribeAutomationStepExecutions",
+        "ssm:GetAutomationExecution"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowExecuteSSMAutomation",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:StartAutomationExecution"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:document/AWS-*UnmanagedEC2*",
+        "arn:aws:ssm:*:*:automation-execution/*",
+        "arn:aws:ssm:*:*:automation-definition/AWS-*UnmanagedEC2*:*"
+      ]
+    },
+    {
+      "Sid" : "AllowKMSOperations",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt",
+        "kms:GenerateDataKey"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceTag/SystemsManagerManaged" : "true"
+        },
+        "ArnLike" : {
+          "kms:EncryptionContext:aws:s3:arn" : "arn:aws:s3:::do-not-delete-ssm-diagnosis-*"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "s3.*.amazonaws.com"
+        },
+        "Bool" : {
+          "aws:ViaAWSService" : "true"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowAssumeDiagnosisExecutionRoleWithinAccount",
+      "Effect" : "Allow",
+      "Action" : "sts:AssumeRole",
+      "Resource" : "arn:aws:iam::*:role/AWS-SSM-DiagnosisExecutionRole*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowPassRoleOnSelfToSsm",
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "arn:aws:iam::*:role/AWS-SSM-DiagnosisAdminRole*",
+      "Condition" : {
+        "StringEquals" : {
+          "iam:PassedToService" : "ssm.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowReadWriteToSsmDiagnosisBucketInSameAccount",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:PutObject",
+        "s3:GetObject",
+        "s3:DeleteObject"
+      ],
+      "Resource" : "arn:aws:s3:::do-not-delete-ssm-diagnosis-*/actions/*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowListBucketOnSsmDiagnosisBucketInSameAccount",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:ListBucket"
+      ],
+      "Resource" : "arn:aws:s3:::do-not-delete-ssm-diagnosis-*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

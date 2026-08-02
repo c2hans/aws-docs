@@ -1,0 +1,109 @@
+---
+source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/sample-gitlab-runners-gitlab-ci.images.html
+---
+
+# Compute images supported with the CodeBuild-hosted GitLab runner
+<a name="sample-gitlab-runners-gitlab-ci.images"></a>
+
+In the label you configured in [Tutorial: Configure a CodeBuild-hosted GitLab runner](sample-gitlab-runners.md), you can override your Amazon EC2 environment settings by using the values in the first three columns. CodeBuild provides the following Amazon EC2 compute images. For more information about
+
+<a name="build-env-ref.supported-images"></a>
+
+- **`linux`**
+  - **Image identifier:** `4.0`
+  - **Instance size:** `small`<br />`medium`<br />`large`<br />`xlarge`<br />`2xlarge`<br />`gpu_small`<br />`gpu_large`
+  - **Platform:** Amazon Linux 2
+  - **Image:** aws/codebuild/amazonlinux-x86\_64-standard:4.0
+  - **Definition:** [al/standard/4.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/al/x86_64/standard/4.0)
+
+- **`linux`**
+  - **Image identifier:** `5.0`
+  - **Platform:** Amazon Linux 2023
+  - **Image:** aws/codebuild/amazonlinux-x86\_64-standard:5.0
+  - **Definition:** [al/standard/5.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/al/x86_64/standard/5.0)
+
+- ** `linux-ec2` **
+  - **Image identifier:** `latest`
+  - **Instance size:** `small`<br />`medium`<br />`large`
+  - **Platform:**  Amazon Linux 2023
+  - **Image:** aws/codebuild/ami/amazonlinux-x86\_64-base:latest
+  - **Definition:**  None
+
+- **`arm`**
+  - **Image identifier:** `2.0`
+  - **Instance size:** `small`<br />`medium`<br />`large`<br />`xlarge`<br />`2xlarge`
+  - **Platform:** Amazon Linux 2
+  - **Image:** aws/codebuild/amazonlinux-aarch64-standard:2.0
+  - **Definition:** [al/aarch64/standard/2.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/al/aarch64/standard/2.0)
+
+- **`arm`**
+  - **Image identifier:** `3.0`
+  - **Platform:** Amazon Linux 2023
+  - **Image:** aws/codebuild/amazonlinux-aarch64-standard:3.0
+  - **Definition:** [al/aarch64/standard/3.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/al/aarch64/standard/3.0)
+
+- ** `arm-ec2` **
+  - **Image identifier:** `latest`
+  - **Instance size:** `small`<br />`medium`<br />`large`
+  - **Platform:**  Amazon Linux 2023
+  - **Image:** aws/codebuild/ami/amazonlinux-arm-base:latest
+  - **Definition:**  None
+
+- **`ubuntu`**
+  - **Image identifier:** `5.0`
+  - **Instance size:** `small`<br />`medium`<br />`large`<br />`xlarge`<br />`2xlarge`<br />`gpu_small`<br />`gpu_large`
+  - **Platform:** Ubuntu 20.04
+  - **Image:** aws/codebuild/standard:5.0
+  - **Definition:** [ubuntu/standard/5.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/ubuntu/standard/5.0)
+
+- **`ubuntu`**
+  - **Image identifier:** `6.0`
+  - **Platform:** Ubuntu 22.04
+  - **Image:** aws/codebuild/standard:6.0
+  - **Definition:** [ubuntu/standard/6.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/ubuntu/standard/6.0)
+
+- **`ubuntu`**
+  - **Image identifier:** `7.0`
+  - **Platform:** Ubuntu 22.04
+  - **Image:** aws/codebuild/standard:7.0
+  - **Definition:** [ubuntu/standard/7.0](https://github.com/aws/aws-codebuild-docker-images/tree/master/ubuntu/standard/7.0)
+
+- **`windows`**
+  - **Image identifier:** `1.0`
+  - **Instance size:** `medium`<br />`large`
+  - **Platform:** Windows Server Core 2019 / **Image:** aws/codebuild/windows-base:2019-1.0 / **Definition:** N/A
+  - **Platform:** Windows Server Core 2022 / **Image:** aws/codebuild/windows-base:2022-1.0 / **Definition:** N/A
+
+- **`windows`**
+  - **Image identifier:** `2.0`
+  - **Platform:** Windows Server Core 2019
+  - **Image:** aws/codebuild/windows-base:2019-2.0
+  - **Definition:** N/A
+
+- **`windows`**
+  - **Image identifier:** `3.0`
+  - **Platform:** Windows Server Core 2019
+  - **Image:** aws/codebuild/windows-base:2019-3.0
+  - **Definition:** N/A
+
+- ** `windows-ec2` **
+  - **Image identifier:** `2022`
+  - **Instance size:** `medium`<br />`large`
+  - **Platform:** Windows Server Core 2022
+  - **Image:** aws/codebuild/ami/windows-base:2022
+  - **Definition:**  None
+
+In addition, you can override your Lambda environment settings by using the following values. For more information about CodeBuild Lambda compute, see [Run builds on AWS Lambda compute](lambda.md). CodeBuild supports the following Lambda compute images:
+
+<a name="lambda.supported-images"></a>
+<table>
+<thead>
+  <tr><th>Environment type</th><th>Runtime version</th><th>Instance size</th><th></th><th></th><th></th></tr>
+</thead>
+<tbody>
+  <tr><td>`linux-lambda`</td><td rowspan="2">`dotnet6`<br />`go1.21`<br />`corretto11`<br />`corretto17`<br />`corretto21`<br />`nodejs18`<br />`nodejs20`<br />`python3.11`<br />`python3.12`<br />`ruby3.2`</td><td rowspan="2">`1GB`<br />`2GB`<br />`4GB`<br />`8GB`<br />`10GB`</td><td></td><td></td><td></td></tr>
+  <tr><td>`arm-lambda`</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+For more information, see [Build environment compute modes and types](build-env-ref-compute-types.md) and [Docker images provided by CodeBuild](build-env-ref-available.md).

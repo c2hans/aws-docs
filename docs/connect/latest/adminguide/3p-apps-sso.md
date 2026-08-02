@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/3p-apps-sso.html
+---
+
+# Set up SSO Federation for third-party apps in your Connect Customer instance
+<a name="3p-apps-sso"></a>
+
+A user can use Single-Sign-On to federate into multiple third-party applications that have been setup within their Connect Customer instance without the need to authenticate separately for each application.
+
+**Note**
+Your third-party (3P) application can seamlessly complete the Sign-On flow within an iframe, provided that the Identity Provider supports iframing their sign-in page. Refer to the Identity Provider guides for detailed information on iframing capabilities.
+
+**Setup SSO for third-party apps that exist within your Connect Customer instances**
+
+1. Set up an Identity Provider or use an existing Identity Provider.
+
+1. Set up users within the Identity Provider.
+
+1. Set up an Connect Customer instance and [Configure SAML with IAM for Connect Customer](configure-saml.md).
+
+1. Set up other applications within your Identity Provider which you will be integrating with your Connect Customer instance.
+
+1. Attach each individual user identity to any applications within the Identity Provider that will be integrated with your Connect Customer instance. You can control which agent has access to an application on the Connect Customer agent workspace by providing more granular application specific permissions in security profiles. For more information, see [Security profile permissions for using third-party applications in Connect Customer](assign-security-profile-3p-apps.md).
+
+1. After a user has signed into their Identity Provider, they can federate into their Connect Customer instance which has third-party applications configured and they can federate into each application (if the application has been setup for SSO) without the need of their username and password.

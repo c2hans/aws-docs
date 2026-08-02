@@ -1,0 +1,38 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-proxy-cfn.html
+---
+
+# Using RDS Proxy with AWS CloudFormation
+<a name="rds-proxy-cfn"></a>
+
+ You can use RDS Proxy with AWS CloudFormation. This helps you to create groups of related resources. Such a group can include a proxy that can connect to a newly created Aurora DB cluster. RDS Proxy support in CloudFormation involves two new registry types: `DBProxy` and `DBProxyTargetGroup`.
+
+ The following listing shows a sample CloudFormation template for RDS Proxy.
+
+```
+Resources:
+ DBProxy:
+   Type: AWS::RDS::DBProxy
+   Properties:
+     DBProxyName: CanaryProxy
+     EngineFamily: MYSQL
+     RoleArn:
+      Fn::ImportValue: SecretReaderRoleArn
+     Auth:
+       - {AuthScheme: SECRETS, SecretArn: !ImportValue ProxySecret, IAMAuth: DISABLED}
+     VpcSubnetIds:
+       Fn::Split: [",", "Fn::ImportValue": SubnetIds]
+
+ ProxyTargetGroup:
+   Type: AWS::RDS::DBProxyTargetGroup
+   Properties:
+     DBProxyName: CanaryProxy
+     TargetGroupName: default
+     DBInstanceIdentifiers:
+       - Fn::ImportValue: DBInstanceName
+   DependsOn: DBProxy
+```
+
+ For more information about the resources in this sample, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxy.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxy.html) and [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-dbproxytargetgroup.html).
+
+ For more information about resources that you can create using CloudFormation, see [RDS resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_RDS.html).

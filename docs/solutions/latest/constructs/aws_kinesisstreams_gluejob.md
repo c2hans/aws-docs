@@ -1,0 +1,170 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_kinesisstreams_gluejob.html
+---
+
+# aws-kinesisstreams-gluejob
+<a name="aws_kinesisstreams_gluejob"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_kinesis_streams_gluejob`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-kinesisstreams-gluejob`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.kinesisstreamsgluejob`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct deploys a Kinesis Stream and configures a AWS Glue Job to perform custom ETL transformation with the appropriate resources/properties for interaction and security. It also creates an S3 bucket where the python script for the AWS Glue Job can be uploaded.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import * as glue from "@aws-cdk/aws-glue";
+import * as s3assets from "@aws-cdk/aws-s3-assets";
+import { KinesisstreamsToGluejob } from "@aws-solutions-constructs/aws-kinesisstreams-gluejob";
+
+const fieldSchema: glue.CfnTable.ColumnProperty[] = [
+  {
+    name: "id",
+    type: "int",
+    comment: "Identifier for the record",
+  },
+  {
+    name: "name",
+    type: "string",
+    comment: "Name for the record",
+  },
+  {
+    name: "address",
+    type: "string",
+    comment: "Address for the record",
+  },
+  {
+    name: "value",
+    type: "int",
+    comment: "Value for the record",
+  },
+];
+
+const customEtlJob = new KinesisstreamsToGluejob(this, "CustomETL", {
+  glueJobProps: {
+    command: {
+      name: "gluestreaming",
+      pythonVersion: "3",
+    },
+  },
+  fieldSchema: fieldSchema,
+  etlCodeAsset: new s3assets.Asset(this, "ScriptLocation", {
+    path: `${__dirname}/../etl/transform.py`,
+  }),
+});
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| existingStreamObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html)  | Existing instance of Kinesis Stream, providing both this and `kinesisStreamProps` will cause an error. |
+| kinesisStreamProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.StreamProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.StreamProps.html)  | Optional user-provided props to override the default props for the Kinesis stream. |
+| glueJobProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJobProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJobProps.html)  | User provided props to override the default props for the AWS Glue Job. |
+| existingGlueJob? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html)  | Existing instance of AWS Glue Job, providing both this and `glueJobProps` will cause an error. |
+| fieldSchema? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.ColumnProperty.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.ColumnProperty.html)  | User provided schema structure to create an AWS Glue Table. |
+| existingTable? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html)  | Existing instance of AWS Glue Table. If this is set, tableProps and fieldSchema are ignored. |
+| tableProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.TableProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.TableProps.html)  | User provided AWS Glue Table props to override default props used to create a Glue Table. |
+| existingDatabase? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html)  | Existing instance of AWS Glue Database. If this is set, then databaseProps is ignored. |
+| databaseProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabaseProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabaseProps.html)  | User provided Glue Database Props to override the default props used to create the Glue Database. |
+| outputDataStore? |  [#sinkdatastoreprops](#sinkdatastoreprops)  | User provided properties for S3 bucket that stores Glue Job output. Current datastore types supported is only S3. |
+| createCloudWatchAlarms? |  `boolean`  | Whether to create recommended CloudWatch alarms for Kinesis Data Stream. Default value is set to `true`. |
+| etlCodeAsset? |  [s3assets.Asset](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3_assets.Asset.html)  | User provided instance of the Asset class that represents the ETL code on the local filesystem |
+
+### SinkDataStoreProps
+<a name="_sinkdatastoreprops"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| existingS3OutputBucket? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.Bucket.html)  | Existing instance of S3 bucket where the data should be written. Providing both this and `outputBucketProps` will cause an error. |
+| outputBucketProps |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3.BucketProps.html)  | User provided bucket properties to create the S3 bucket to store the output from the AWS Glue Job. |
+| datastoreType |  [#sinkstoretype](#sinkstoretype)  | Sink data store type. |
+
+### SinkStoreType
+<a name="_sinkstoretype"></a>
+
+Enumeration of data store types that could include S3, DynamoDB, DocumentDB, RDS or Redshift. Current construct implementation only supports S3, but potential to add other output types in the future.
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| S3 |  `string`  | S3 storage type |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| kinesisStream |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kinesis.Stream.html)  | Returns an instance of the Kinesis stream created or used by the pattern. |
+| glueJob |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnJob.html)  | Returns an instance of AWS Glue Job created by the construct. |
+| glueJobRole |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the IAM Role created by the construct for the Glue Job. |
+| database |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnDatabase.html)  | Returns an instance of AWS Glue Database created by the construct. |
+| table |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_glue.CfnTable.html)  | Returns an instance of the AWS Glue Table created by the construct |
+| outputBucket? |  [https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-s3-readme.html)  | Returns an instance of the output bucket created by the construct for the AWS Glue Job. |
+| cloudwatchAlarms? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html)  | Returns an array of recommended CloudWatch Alarms created by the construct for Kinesis Data stream. |
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon Kinesis Stream
+<a name="_amazon_kinesis_stream"></a>
++ Configure least privilege access IAM role for Kinesis Stream
++ Enable server-side encryption for Kinesis Stream using AWS Managed KMS Key
++ Deploy best practices CloudWatch Alarms for the Kinesis Stream
+
+### Glue Job
+<a name="_glue_job"></a>
++ Create a Glue Security Config that configures encryption for CloudWatch, Job Bookmarks, and S3. CloudWatch and Job Bookmarks are encrypted using AWS Managed KMS Key created for AWS Glue Service. The S3 bucket is configured with SSE-S3 encryption mode
++ Configure service role policies that allow AWS Glue to read from Kinesis Data Streams
+
+### Glue Database
+<a name="_glue_database"></a>
++ Create an AWS Glue database. An AWS Glue Table will be added to the database. This table defines the schema for the records buffered in the Amazon Kinesis Data Streams
+
+### Glue Table
+<a name="_glue_table"></a>
++ Create an AWS Glue table. The table schema definition is based on the JSON structure of the records buffered in the Amazon Kinesis Data Streams
+
+### IAM Role
+<a name="_iam_role"></a>
++ A job execution role that has privileges to 1) read the ETL script from the S3 bucket location, 2) read records from the Kinesis Stream, and 3) execute the Glue Job
+
+### Output S3 Bucket
+<a name="_output_s3_bucket"></a>
++ An S3 bucket to store the output of the ETL transformation. This bucket will be passed as an argument to the created glue job so that it can be used in the ETL script to write data into it
+
+### Cloudwatch Alarms
+<a name="_cloudwatch_alarms"></a>
++ A CloudWatch Alarm to report when consumer application is reading data slower than expected
++ A CloudWatch Alarm to report when consumer record processing is falling behind (to avoid risk of data loss due to record expiration)
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing the Kinesis data stream, Glue job, S3 bucket, storage destinations and IAM role created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-kinesisstreams-gluejob.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-kinesisstreams-gluejob) for this pattern to view the code, read/create issues and pull requests and more.
+
+## Reference Implementation
+<a name="_reference_implementation"></a>
+
+A sample use case which uses this pattern is available under [https://github.com/awslabs/aws-solutions-constructs/tree/master/source/use_cases/aws-custom-glue-etl](https://github.com/awslabs/aws-solutions-constructs/tree/master/source/use_cases/aws-custom-glue-etl).

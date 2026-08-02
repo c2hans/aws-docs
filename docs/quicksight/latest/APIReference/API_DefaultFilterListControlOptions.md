@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DefaultFilterListControlOptions.html
+---
+
+# DefaultFilterListControlOptions
+<a name="API_DefaultFilterListControlOptions"></a>
+
+The default options that correspond to the `List` filter control type.
+
+## Contents
+<a name="API_DefaultFilterListControlOptions_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** ControlSortConfigurations **   <a name="QS-Type-DefaultFilterListControlOptions-ControlSortConfigurations"></a>
+The sort configuration for the values displayed in the control. Only one sort configuration can be applied per control.
+Type: Array of [ControlSortConfiguration](API_ControlSortConfiguration.md) objects
+Array Members: Maximum number of 1 item.
+Required: No
+
+ ** DisplayOptions **   <a name="QS-Type-DefaultFilterListControlOptions-DisplayOptions"></a>
+The display options of a control.
+Type: [ListControlDisplayOptions](API_ListControlDisplayOptions.md) object
+Required: No
+
+ ** SelectableValues **   <a name="QS-Type-DefaultFilterListControlOptions-SelectableValues"></a>
+A list of selectable values that are used in a control.
+Type: [FilterSelectableValues](API_FilterSelectableValues.md) object
+Required: No
+
+ ** Type **   <a name="QS-Type-DefaultFilterListControlOptions-Type"></a>
+The type of the `DefaultFilterListControlOptions`. Choose one of the following options:
++  `MULTI_SELECT`: The user can select multiple entries from the list.
++  `SINGLE_SELECT`: The user can select a single entry from the list.
+Type: String
+Valid Values: `MULTI_SELECT | SINGLE_SELECT`
+Required: No
+
+## See Also
+<a name="API_DefaultFilterListControlOptions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/DefaultFilterListControlOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/DefaultFilterListControlOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/DefaultFilterListControlOptions)

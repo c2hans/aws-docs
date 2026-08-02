@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_SageMakerPipelineParameters.html
+---
+
+# SageMakerPipelineParameters
+<a name="API_SageMakerPipelineParameters"></a>
+
+These are custom parameters to use when the target is a SageMaker AI Model Building Pipeline that starts based on EventBridge events.
+
+## Contents
+<a name="API_SageMakerPipelineParameters_Contents"></a>
+
+ ** PipelineParameterList **   <a name="eventbridge-Type-SageMakerPipelineParameters-PipelineParameterList"></a>
+List of Parameter names and values for SageMaker AI Model Building Pipeline execution.
+Type: Array of [SageMakerPipelineParameter](API_SageMakerPipelineParameter.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 200 items.
+Required: No
+
+## See Also
+<a name="API_SageMakerPipelineParameters_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/eventbridge-2015-10-07/SageMakerPipelineParameters)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/eventbridge-2015-10-07/SageMakerPipelineParameters)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/eventbridge-2015-10-07/SageMakerPipelineParameters)

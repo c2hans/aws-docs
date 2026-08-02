@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterInstanceStatusDetails.html
+---
+
+# ClusterInstanceStatusDetails
+<a name="API_ClusterInstanceStatusDetails"></a>
+
+Details of an instance in a SageMaker HyperPod cluster.
+
+## Contents
+<a name="API_ClusterInstanceStatusDetails_Contents"></a>
+
+ ** Status **   <a name="sagemaker-Type-ClusterInstanceStatusDetails-Status"></a>
+The status of an instance in a SageMaker HyperPod cluster.
+Type: String
+Valid Values: `Running | Failure | Pending | ShuttingDown | SystemUpdating | DeepHealthCheckInProgress | NotFound`
+Required: Yes
+
+ ** Message **   <a name="sagemaker-Type-ClusterInstanceStatusDetails-Message"></a>
+The message from an instance in a SageMaker HyperPod cluster.
+Type: String
+Required: No
+
+## See Also
+<a name="API_ClusterInstanceStatusDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/ClusterInstanceStatusDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/ClusterInstanceStatusDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/ClusterInstanceStatusDetails)

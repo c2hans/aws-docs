@@ -1,0 +1,160 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_DescribeAuditFinding.html
+---
+
+# DescribeAuditFinding
+<a name="API_DescribeAuditFinding"></a>
+
+Gets information about a single audit finding. Properties include the reason for noncompliance, the severity of the issue, and the start time when the audit that returned the finding.
+
+Requires permission to access the [DescribeAuditFinding](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
+
+## Request Syntax
+<a name="API_DescribeAuditFinding_RequestSyntax"></a>
+
+```
+GET /audit/findings/{{findingId}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_DescribeAuditFinding_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [findingId](#API_DescribeAuditFinding_RequestSyntax) **   <a name="iot-DescribeAuditFinding-request-uri-findingId"></a>
+A unique identifier for a single audit finding. You can use this identifier to apply mitigation actions to the finding.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9_-]+`
+Required: Yes
+
+## Request Body
+<a name="API_DescribeAuditFinding_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_DescribeAuditFinding_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "finding": {
+      "checkName": "string",
+      "findingId": "string",
+      "findingTime": number,
+      "isSuppressed": boolean,
+      "nonCompliantResource": {
+         "additionalInfo": {
+            "string" : "string"
+         },
+         "resourceIdentifier": {
+            "account": "string",
+            "caCertificateId": "string",
+            "clientId": "string",
+            "cognitoIdentityPoolId": "string",
+            "deviceCertificateArn": "string",
+            "deviceCertificateId": "string",
+            "iamRoleArn": "string",
+            "issuerCertificateIdentifier": {
+               "issuerCertificateSerialNumber": "string",
+               "issuerCertificateSubject": "string",
+               "issuerId": "string"
+            },
+            "policyVersionIdentifier": {
+               "policyName": "string",
+               "policyVersionId": "string"
+            },
+            "roleAliasArn": "string"
+         },
+         "resourceType": "string"
+      },
+      "reasonForNonCompliance": "string",
+      "reasonForNonComplianceCode": "string",
+      "relatedResources": [
+         {
+            "additionalInfo": {
+               "string" : "string"
+            },
+            "resourceIdentifier": {
+               "account": "string",
+               "caCertificateId": "string",
+               "clientId": "string",
+               "cognitoIdentityPoolId": "string",
+               "deviceCertificateArn": "string",
+               "deviceCertificateId": "string",
+               "iamRoleArn": "string",
+               "issuerCertificateIdentifier": {
+                  "issuerCertificateSerialNumber": "string",
+                  "issuerCertificateSubject": "string",
+                  "issuerId": "string"
+               },
+               "policyVersionIdentifier": {
+                  "policyName": "string",
+                  "policyVersionId": "string"
+               },
+               "roleAliasArn": "string"
+            },
+            "resourceType": "string"
+         }
+      ],
+      "severity": "string",
+      "taskId": "string",
+      "taskStartTime": number
+   }
+}
+```
+
+## Response Elements
+<a name="API_DescribeAuditFinding_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [finding](#API_DescribeAuditFinding_ResponseSyntax) **   <a name="iot-DescribeAuditFinding-response-finding"></a>
+The findings (results) of the audit.
+Type: [AuditFinding](API_AuditFinding.md) object
+
+## Errors
+<a name="API_DescribeAuditFinding_Errors"></a>
+
+ ** InternalFailureException **
+An unexpected error has occurred.
+ ** message **
+The message for the exception.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+The request is not valid.
+ ** message **
+The message for the exception.
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+The specified resource does not exist.
+ ** message **
+The message for the exception.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The rate exceeds the limit.
+ ** message **
+The message for the exception.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DescribeAuditFinding_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iot-2015-05-28/DescribeAuditFinding)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/DescribeAuditFinding)

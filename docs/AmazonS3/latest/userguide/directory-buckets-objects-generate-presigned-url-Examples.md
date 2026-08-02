@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-buckets-objects-generate-presigned-url-Examples.html
+---
+
+# Generating presigned URLs to share objects directory bucket
+<a name="directory-buckets-objects-generate-presigned-url-Examples"></a>
+
+ The following code examples show how to generate presigned URLs to share objects from an Amazon S3 directory bucket.
+
+## Using the AWS CLI
+<a name="directory-download-object-cli"></a>
+
+The following example command shows how you can use the AWS CLI to generate a presigned URL for an object from Amazon S3. This command generates a presigned URL for an object `{{KEY_NAME}}` from the directory bucket `{{bucket-base-name}}--{{zone-id}}--x-s3`. To run this command, replace the `{{user input placeholders}}` with your own information.
+
+```
+aws s3 presign s3://{{bucket-base-name}}--{{zone-id}}--x-s3/{{KEY_NAME}} --expires-in 7200
+```
+
+For more information, see [https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3/presign.html) in the *AWS CLI Command Reference*.

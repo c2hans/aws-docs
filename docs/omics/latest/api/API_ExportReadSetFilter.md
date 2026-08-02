@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/omics/latest/api/API_ExportReadSetFilter.html
+---
+
+# ExportReadSetFilter
+<a name="API_ExportReadSetFilter"></a>
+
+An read set export job filter.
+
+## Contents
+<a name="API_ExportReadSetFilter_Contents"></a>
+
+ ** createdAfter **   <a name="omics-Type-ExportReadSetFilter-createdAfter"></a>
+The filter's start date.
+Type: Timestamp
+Required: No
+
+ ** createdBefore **   <a name="omics-Type-ExportReadSetFilter-createdBefore"></a>
+The filter's end date.
+Type: Timestamp
+Required: No
+
+ ** status **   <a name="omics-Type-ExportReadSetFilter-status"></a>
+A status to filter on.
+Type: String
+Valid Values: `SUBMITTED | IN_PROGRESS | CANCELLING | CANCELLED | FAILED | COMPLETED | COMPLETED_WITH_FAILURES`
+Required: No
+
+## See Also
+<a name="API_ExportReadSetFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/omics-2022-11-28/ExportReadSetFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/omics-2022-11-28/ExportReadSetFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/ExportReadSetFilter)

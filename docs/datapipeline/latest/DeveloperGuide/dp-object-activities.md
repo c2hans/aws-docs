@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-activities.html
+---
+
+AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
+
+# Activities
+<a name="dp-object-activities"></a>
+
+The following are the AWS Data Pipeline activity objects:
+
+**Topics**
++ [CopyActivity](dp-object-copyactivity.md)
++ [EmrActivity](dp-object-emractivity.md)
++ [HadoopActivity](dp-object-hadoopactivity.md)
++ [HiveActivity](dp-object-hiveactivity.md)
++ [HiveCopyActivity](dp-object-hivecopyactivity.md)
++ [PigActivity](dp-object-pigactivity.md)
++ [RedshiftCopyActivity](dp-object-redshiftcopyactivity.md)
++ [ShellCommandActivity](dp-object-shellcommandactivity.md)
++ [SqlActivity](dp-object-sqlactivity.md)

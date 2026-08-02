@@ -1,0 +1,106 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonFISServiceRolePolicy.html
+---
+
+# AmazonFISServiceRolePolicy
+<a name="AmazonFISServiceRolePolicy"></a>
+
+**Description**: Policy to enable AWS FIS to manage monitoring and resource selection for experiments.
+
+`AmazonFISServiceRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AmazonFISServiceRolePolicy-how-to-use"></a>
+
+This policy is attached to a service-linked role that allows the service to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+<a name="AmazonFISServiceRolePolicy-details"></a>
++ **Type**: Service-linked role policy
++ **Creation time**: December 21, 2020, 21:18 UTC
++ **Edited time:** October 25, 2022, 09:05 UTC
++ **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AmazonFISServiceRolePolicy`
+
+## Policy version
+<a name="AmazonFISServiceRolePolicy-version"></a>
+
+**Policy version:** v7 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AmazonFISServiceRolePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "EventBridge",
+      "Effect" : "Allow",
+      "Action" : [
+        "events:PutRule",
+        "events:DeleteRule",
+        "events:PutTargets",
+        "events:RemoveTargets"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "events:ManagedBy" : "fis.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "EventBridgeDescribe",
+      "Effect" : "Allow",
+      "Action" : [
+        "events:DescribeRule"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "Tagging",
+      "Effect" : "Allow",
+      "Action" : [
+        "tag:GetResources"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "CloudWatch",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:DescribeAlarmHistory"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "DescribeUserResources",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DescribeInstances",
+        "ec2:DescribeSubnets",
+        "iam:GetUser",
+        "iam:GetRole",
+        "iam:ListUsers",
+        "iam:ListRoles",
+        "rds:DescribeDBClusters",
+        "rds:DescribeDBInstances",
+        "ecs:DescribeClusters",
+        "ecs:DescribeTasks",
+        "ecs:ListTasks",
+        "eks:DescribeNodegroup",
+        "eks:DescribeCluster"
+      ],
+      "Resource" : "*"
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AmazonFISServiceRolePolicy-learn-more"></a>
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

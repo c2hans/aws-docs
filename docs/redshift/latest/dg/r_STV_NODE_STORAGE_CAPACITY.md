@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_STV_NODE_STORAGE_CAPACITY.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# STV\_NODE\_STORAGE\_CAPACITY
+<a name="r_STV_NODE_STORAGE_CAPACITY"></a>
+
+The STV\_NODE\_STORAGE\_CAPACITY table shows details of total storage capacity and total used capacity for each node in a cluster. It contains a row for each node.
+
+STV\_NODE\_STORAGE\_CAPACITY is visible only to superusers. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
+
+## Table columns
+<a name="r_STV_NODE_STORAGE_CAPACITY-table-columns"></a>
+
+| Column name  | Data type  | Description  |
+| --- | --- | --- |
+| node  | integer  | The node number.  |
+| used  | integer  | The number of 1 MB disk blocks currently in use on the node. For RG and RA3 node types, used blocks include both locally cached blocks and blocks persisted in Amazon S3.  |
+| capacity  | integer  | The total storage capacity provisioned for the node in 1 MB blocks. The capacity includes space that is reserved by Amazon Redshift on DC2 node types for internal use. The capacity is larger than the nominal node capacity, which is the amount of node space available for user data. For RG and RA3 node types, this capacity is the same as the total managed storage quota for the cluster. For more information about capacity by node type, see [Node type details](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-clusters.html#working-with-clusters-overview) in the Amazon Redshift Management Guide.  |
+
+## Sample queries
+<a name="r_STV_NODE_STORAGE_CAPACITY-sample-query"></a>
+
+**Note**
+The results of the following examples vary based on the node specifications of your cluster. Add column `capacity` to your SQL SELECT to retrieve the capacity of your cluster.
+
+The following query returns used space and total capacity in 1 MB disk blocks. This example ran on a two-node dc2.8xlarge cluster.
+
+```
+select node, used from stv_node_storage_capacity order by node;
+```
+
+This query returns the following sample output.
+
+```
+
+ node | used
+------+-------
+    0 | 30597
+    1 | 27089
+```
+
+The following query returns used space and total capacity in 1 MB disk blocks. This example ran on a two-node ra3.16xlarge cluster.
+
+```
+select node, used from stv_node_storage_capacity order by node;
+```
+
+This query returns the following sample output.
+
+```
+
+ node | used
+------+-------
+    0 | 30591
+    1 | 27103
+```

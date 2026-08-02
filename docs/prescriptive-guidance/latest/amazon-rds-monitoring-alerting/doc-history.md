@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-rds-monitoring-alerting/doc-history.html
+---
+
+# Document history
+<a name="doc-history"></a>
+
+The following table describes significant changes to this guide.
+
+|
+|
+| Change | Description | Date |
+| --- |--- |--- |
+| Updated information about Performance Insights | Updated the [section about publishing Performance Insights metrics to CloudWatch](publishing-performance-insights-to-cloudwatch.md) with the latest information. | March 11, 2025 |
+| Updated information about exporters | Updated the [information about exporters](third-party-monitoring-tools.md) and added guidelines for choosing an exporter. | June 13, 2024 |
+| Initial publication | — | June 30, 2023 |

@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sles-netweaver-ha-diagrams.html
+---
+
+# Architecture diagrams
+<a name="sles-netweaver-ha-diagrams"></a>
+
+This guide covers two architectures for SAP cluster solutions on SLES for SAP – simple-mount and classic (previous standard). See the following images to learn more.
+
+**Topics**
++ [Pacemaker - simple-mount architecture](#simple-mount-diagram-nw-sles)
++ [Pacemaker - classic architecture](#classic-diagram-nw-sles)
+
+## Pacemaker - simple-mount architecture
+<a name="simple-mount-diagram-nw-sles"></a>
+
+See the following image for more details.
+
+![Simple Mount Achitecture](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-sles-simplemount.png)
+
+## Pacemaker - classic architecture
+<a name="classic-diagram-nw-sles"></a>
+
+See the following image for more details.
+
+![Classic Architecture.](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/image-pacemaker-nw-sles-classic.png)

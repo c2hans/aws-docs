@@ -1,0 +1,110 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/kinesis_example_kinesis_PutRecords_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `PutRecords` with an AWS SDK or CLI
+<a name="kinesis_example_kinesis_PutRecords_section"></a>
+
+The following code examples show how to use `PutRecords`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To write multiple records into a data stream**
+The following `put-records` example writes a data record using the specified partition key and another data record using a different partition key in a single call.
+
+```
+aws kinesis put-records \
+    --stream-name {{samplestream}} \
+    --records {{Data=blob1,PartitionKey=partitionkey1}} {{Data=blob2,PartitionKey=partitionkey2}}
+```
+Output:
+
+```
+{
+    "FailedRecordCount": 0,
+    "Records": [
+        {
+            "SequenceNumber": "49600883331171471519674795588238531498465399900093808706",
+            "ShardId": "shardId-000000000004"
+        },
+        {
+            "SequenceNumber": "49600902273357540915989931256902715169698037101720764562",
+            "ShardId": "shardId-000000000009"
+        }
+    ],
+    "EncryptionType": "KMS"
+}
+```
+For more information, see [Developing Producers Using the Amazon Kinesis Data Streams API with the AWS SDK for Java](https://docs.aws.amazon.com/streams/latest/dev/developing-producers-with-sdk.html) in the *Amazon Kinesis Data Streams Developer Guide*.
++  For API details, see [PutRecords](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kinesis/put-records.html) in *AWS CLI Command Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/kinesis#code-examples).
+
+```
+import { PutRecordsCommand, KinesisClient } from "@aws-sdk/client-kinesis";
+
+/**
+ * Put multiple records into a Kinesis stream.
+ * @param {{ streamArn: string }} config
+ */
+export const main = async ({ streamArn }) => {
+  const client = new KinesisClient({});
+  try {
+    await client.send(
+      new PutRecordsCommand({
+        StreamARN: streamArn,
+        Records: [
+          {
+            Data: new Uint8Array(),
+            /**
+             * Determines which shard in the stream the data record is assigned to.
+             * Partition keys are Unicode strings with a maximum length limit of 256
+             * characters for each key. Amazon Kinesis Data Streams uses the partition
+             * key as input to a hash function that maps the partition key and
+             * associated data to a specific shard.
+             */
+            PartitionKey: "TEST_KEY",
+          },
+          {
+            Data: new Uint8Array(),
+            PartitionKey: "TEST_KEY",
+          },
+        ],
+      }),
+    );
+  } catch (caught) {
+    if (caught instanceof Error) {
+      //
+    } else {
+      throw caught;
+    }
+  }
+};
+
+// Call function if run directly.
+import { fileURLToPath } from "node:url";
+import { parseArgs } from "node:util";
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  const options = {
+    streamArn: {
+      type: "string",
+      description: "The ARN of the stream.",
+    },
+  };
+
+  const { values } = parseArgs({ options });
+  main(values);
+}
+```
++  For API details, see [PutRecords](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/kinesis/command/PutRecordsCommand) in *AWS SDK for JavaScript API Reference*.
+
+------

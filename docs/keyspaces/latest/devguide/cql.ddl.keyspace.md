@@ -1,0 +1,143 @@
+---
+source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/cql.ddl.keyspace.html
+---
+
+# Keyspaces
+<a name="cql.ddl.keyspace"></a>
+
+A *keyspace* groups related tables that are relevant for one or more applications. In terms of a relational database management system (RDBMS), keyspaces are roughly similar to databases, tablespaces, or similar constructs.
+
+**Note**
+In Apache Cassandra, keyspaces determine how data is replicated among multiple storage nodes. However, Amazon Keyspaces is a fully managed service: The details of its storage layer are managed on your behalf. For this reason, keyspaces in Amazon Keyspaces are logical constructs only, and aren't related to the underlying physical storage.
+
+For information about quota limits and constraints for Amazon Keyspaces keyspaces, see [Quotas for Amazon Keyspaces (for Apache Cassandra)](quotas.md).
+
+**Topics**
++ [CREATE KEYSPACE](#cql.ddl.keyspace.create)
++ [ALTER KEYSPACE](#cql.ddl.keyspace.alter)
++ [DROP KEYSPACE](#cql.ddl.keyspace.drop)
++ [USE](#cql.ddl.keyspace.use)
+
+## CREATE KEYSPACE
+<a name="cql.ddl.keyspace.create"></a>
+
+Use the `CREATE KEYSPACE` statement to create a new keyspace.
+
+**Syntax**
+
+```
+create_keyspace_statement ::=
+    CREATE KEYSPACE [ IF NOT EXISTS ] keyspace_name
+    WITH options
+```
+
+Where:
++ `keyspace_name` is the name of the keyspace to be created.
++ *options* are one or more of the following:
+  + `REPLICATION` – A map that indicates the replication strategy for the keyspace:
+    + `SingleRegionStrategy` – For a single-Region keyspace. (Required)
+    + `NetworkTopologyStrategy` – Specify at least two AWS Regions. The replication factor for each Region is three. (Optional)
+  + `DURABLE_WRITES` – Writes to Amazon Keyspaces are always durable, so this option isn't required. However, if specified, the value must be `true`.
+  + `TAGS` – A list of key-value pair tags to be attached to the resource when you create it. (Optional)
+
+**Example**
+
+Create a keyspace as follows.
+
+```
+CREATE KEYSPACE {{my_keyspace}}
+    WITH REPLICATION = {'class': 'SingleRegionStrategy'} and TAGS ={'key1':'val1', 'key2':'val2'} ;
+```
+
+To create a multi-Region keyspace, specify `NetworkTopologyStrategy` and include at least two AWS Regions. The replication factor for each Region is three.
+
+```
+CREATE KEYSPACE {{my_keyspace}}
+    WITH REPLICATION = {'class':'NetworkTopologyStrategy', 'us-east-1':'3', 'ap-southeast-1':'3','eu-west-1':'3'};
+```
+
+## ALTER KEYSPACE
+<a name="cql.ddl.keyspace.alter"></a>
+
+You can use the `ALTER KEYSPACE WITH` statement for the following *options*
++ `REPLICATION` – Use this option to add a new AWS Region replica to a keyspace. You can add a new Region to a single-Region or to a multi-Region keyspace.
++ `TAGS` – Use this option to add or remove tags from a keyspace.
+
+**Syntax**
+
+```
+alter_keyspace_statement ::=
+    ALTER KEYSPACE keyspace_name
+    WITH options
+```
+
+Where:
++ `keyspace_name` is the name of the keyspace to be altered.
++ *options* are one of the following:
+  + `ADD | DROP TAGS` – A list of key-value pair tags to be added or removed from the keyspace.
+  + `REPLICATION` – A map that indicates the replication strategy for the keyspace;
+    + `class`– `NetworkTopologyStrategy` defines the keyspace as a multi-Region keyspace.
+    + `region`– Specify one additional AWS Region for this keyspace. The replication factor for each Region is three.
+    + `CLIENT_SIDE_TIMESTAMPS` – The default is `DISABLED`. You can only change the status to `ENABLED`.
+
+**Examples**
+
+Alter a keyspace as shown in the following example to add tags.
+
+```
+ALTER KEYSPACE {{my_keyspace}} ADD TAGS {'key1':'val1', 'key2':'val2'};
+```
+
+To add a third Region to a multi-Region keyspace, you can use the following statement.
+
+```
+ALTER KEYSPACE {{my_keyspace}}
+WITH REPLICATION = {
+    'class': 'NetworkTopologyStrategy',
+    'us-east-1': '3',
+    'us-west-2': '3',
+    'us-west-1': '3'
+} AND CLIENT_SIDE_TIMESTAMPS = {'status': 'ENABLED'};
+```
+
+## DROP KEYSPACE
+<a name="cql.ddl.keyspace.drop"></a>
+
+Use the `DROP KEYSPACE` statement to remove a keyspace—including all of its contents, such as tables.
+
+**Syntax**
+
+```
+drop_keyspace_statement ::=
+    DROP KEYSPACE [ IF EXISTS ] keyspace_name
+```
+
+Where:
++ *keyspace\_name* is the name of the keyspace to be dropped.
+
+**Example**
+
+```
+DROP KEYSPACE my_keyspace;
+```
+
+## USE
+<a name="cql.ddl.keyspace.use"></a>
+
+Use the `USE` statement to define the current keyspace. This allows you to refer to objects bound to a specific keyspace, for example tables and types, without using the fully qualified name that includes the keyspace prefix.
+
+**Syntax**
+
+```
+use_statement ::=
+    USE keyspace_name
+```
+
+Where:
++ *keyspace\_name* is the name of the keyspace to be used.
+
+**Example**
+
+```
+USE my_keyspace;
+```

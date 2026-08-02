@@ -1,0 +1,61 @@
+---
+source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_media-pipelines-chime_MediaConcatenationPipeline.html
+---
+
+# MediaConcatenationPipeline
+<a name="API_media-pipelines-chime_MediaConcatenationPipeline"></a>
+
+Concatenates audio and video data from one or more data streams.
+
+## Contents
+<a name="API_media-pipelines-chime_MediaConcatenationPipeline_Contents"></a>
+
+ ** CreatedTimestamp **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-CreatedTimestamp"></a>
+The time at which the concatenation pipeline was created.
+Type: Timestamp
+Required: No
+
+ ** MediaPipelineArn **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-MediaPipelineArn"></a>
+The ARN of the media pipeline that you specify in the `SourceConfiguration` object.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1011.
+Pattern: `^arn[\/\:\-\_\.a-zA-Z0-9]+$`
+Required: No
+
+ ** MediaPipelineId **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-MediaPipelineId"></a>
+The ID of the media pipeline being concatenated.
+Type: String
+Length Constraints: Fixed length of 36.
+Pattern: `[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}`
+Required: No
+
+ ** Sinks **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-Sinks"></a>
+The data sinks of the concatenation pipeline.
+Type: Array of [ConcatenationSink](API_media-pipelines-chime_ConcatenationSink.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
+
+ ** Sources **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-Sources"></a>
+The data sources being concatenated.
+Type: Array of [ConcatenationSource](API_media-pipelines-chime_ConcatenationSource.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
+
+ ** Status **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-Status"></a>
+The status of the concatenation pipeline.
+Type: String
+Valid Values: `Initializing | InProgress | Failed | Stopping | Stopped | Paused | NotStarted`
+Required: No
+
+ ** UpdatedTimestamp **   <a name="chimesdk-Type-media-pipelines-chime_MediaConcatenationPipeline-UpdatedTimestamp"></a>
+The time at which the concatenation pipeline was last updated.
+Type: Timestamp
+Required: No
+
+## See Also
+<a name="API_media-pipelines-chime_MediaConcatenationPipeline_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/chime-sdk-media-pipelines-2021-07-15/MediaConcatenationPipeline)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/chime-sdk-media-pipelines-2021-07-15/MediaConcatenationPipeline)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/chime-sdk-media-pipelines-2021-07-15/MediaConcatenationPipeline)

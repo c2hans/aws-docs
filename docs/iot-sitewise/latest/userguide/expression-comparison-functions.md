@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/expression-comparison-functions.html
+---
+
+# Use comparison functions in formula expressions
+<a name="expression-comparison-functions"></a>
+
+In [transforms](transforms.md) and [metrics](metrics.md), you can use the following comparison functions to compare two values and output `1` (true) or `0` (false). AWS IoT SiteWise compares strings by [lexicographic order](https://en.wikipedia.org/wiki/Lexicographic_order).
+
+| Function | Description |
+| --- | --- |
+| `gt(x, y)` | Returns `1` if `x` is greater than `y`, otherwise `0` (`x > y`).<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
+| `gte(x, y)` | Returns `1` if `x` is greater than or equal to `y`, otherwise `0` (`x ≥ y`).<br /><a name="comparison-function-relative-tolerance"></a>AWS IoT SiteWise considers the arguments equal if they are within a relative tolerance of `1E-9`. This behaves similar to the [isclose](https://docs.python.org/3/library/math.html#math.isclose) function in Python.<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
+| `eq(x, y)` | Returns `1` if `x` is equal to `y`, otherwise `0` (`x == y`).<br /><a name="comparison-function-relative-tolerance"></a>AWS IoT SiteWise considers the arguments equal if they are within a relative tolerance of `1E-9`. This behaves similar to the [isclose](https://docs.python.org/3/library/math.html#math.isclose) function in Python.<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
+| `lt(x, y)` | Returns `1` if `x` is less than `y`, otherwise `0` (`x < y`).<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
+| `lte(x, y)` | Returns `1` if `x` is less than or equal to `y`, otherwise `0` (`x ≤ y`).<br /><a name="comparison-function-relative-tolerance"></a>AWS IoT SiteWise considers the arguments equal if they are within a relative tolerance of `1E-9`. This behaves similar to the [isclose](https://docs.python.org/3/library/math.html#math.isclose) function in Python.<br /><a name="comparison-function-incompatible-types"></a>This function doesn't return a value if `x` and `y` are incompatible types, such as a number and a string. |
+| `isnan(x)` | Returns `1` if `x` is equal to `NaN`, otherwise `0`.<br />This function doesn't return a value if `x` is a string. |

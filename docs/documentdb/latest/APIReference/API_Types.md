@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/documentdb/latest/APIReference/API_Types.html
+---
+
+# Data Types
+<a name="API_Types"></a>
+
+The following data types are supported by Amazon DocumentDB (with MongoDB compatibility):
++  [AvailabilityZone](API_AvailabilityZone.md)
++  [Certificate](API_Certificate.md)
++  [CertificateDetails](API_CertificateDetails.md)
++  [CloudwatchLogsExportConfiguration](API_CloudwatchLogsExportConfiguration.md)
++  [ClusterMasterUserSecret](API_ClusterMasterUserSecret.md)
++  [DBCluster](API_DBCluster.md)
++  [DBClusterMember](API_DBClusterMember.md)
++  [DBClusterParameterGroup](API_DBClusterParameterGroup.md)
++  [DBClusterRole](API_DBClusterRole.md)
++  [DBClusterSnapshot](API_DBClusterSnapshot.md)
++  [DBClusterSnapshotAttribute](API_DBClusterSnapshotAttribute.md)
++  [DBClusterSnapshotAttributesResult](API_DBClusterSnapshotAttributesResult.md)
++  [DBEngineVersion](API_DBEngineVersion.md)
++  [DBInstance](API_DBInstance.md)
++  [DBInstanceStatusInfo](API_DBInstanceStatusInfo.md)
++  [DBSubnetGroup](API_DBSubnetGroup.md)
++  [Endpoint](API_Endpoint.md)
++  [EngineDefaults](API_EngineDefaults.md)
++  [Event](API_Event.md)
++  [EventCategoriesMap](API_EventCategoriesMap.md)
++  [EventSubscription](API_EventSubscription.md)
++  [FailoverState](API_FailoverState.md)
++  [Filter](API_Filter.md)
++  [GlobalCluster](API_GlobalCluster.md)
++  [GlobalClusterMember](API_GlobalClusterMember.md)
++  [OrderableDBInstanceOption](API_OrderableDBInstanceOption.md)
++  [Parameter](API_Parameter.md)
++  [PendingCloudwatchLogsExports](API_PendingCloudwatchLogsExports.md)
++  [PendingMaintenanceAction](API_PendingMaintenanceAction.md)
++  [PendingModifiedValues](API_PendingModifiedValues.md)
++  [ResourcePendingMaintenanceActions](API_ResourcePendingMaintenanceActions.md)
++  [ServerlessV2FeaturesSupport](API_ServerlessV2FeaturesSupport.md)
++  [ServerlessV2ScalingConfiguration](API_ServerlessV2ScalingConfiguration.md)
++  [ServerlessV2ScalingConfigurationInfo](API_ServerlessV2ScalingConfigurationInfo.md)
++  [Subnet](API_Subnet.md)
++  [Tag](API_Tag.md)
++  [UpgradeTarget](API_UpgradeTarget.md)
++  [VpcSecurityGroupMembership](API_VpcSecurityGroupMembership.md)
+
+The following data types are supported by Amazon DocumentDB Elastic Clusters:
++  [Cluster](API_elastic_Cluster.md)
++  [ClusterInList](API_elastic_ClusterInList.md)
++  [ClusterSnapshot](API_elastic_ClusterSnapshot.md)
++  [ClusterSnapshotInList](API_elastic_ClusterSnapshotInList.md)
++  [PendingMaintenanceActionDetails](API_elastic_PendingMaintenanceActionDetails.md)
++  [ResourcePendingMaintenanceAction](API_elastic_ResourcePendingMaintenanceAction.md)
++  [Shard](API_elastic_Shard.md)
++  [ValidationExceptionField](API_elastic_ValidationExceptionField.md)

@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/entityresolution/latest/apireference/API_IncrementalRunConfig.html
+---
+
+# IncrementalRunConfig
+<a name="API_IncrementalRunConfig"></a>
+
+Optional. An object that defines the incremental run type. This object contains only the `incrementalRunType` field, which appears as "Automatic" in the console.
+
+**Important**
+For workflows where `resolutionType` is `PROVIDER`, incremental processing is not supported.
+
+## Contents
+<a name="API_IncrementalRunConfig_Contents"></a>
+
+ ** incrementalRunType **   <a name="API-Type-IncrementalRunConfig-incrementalRunType"></a>
+The type of incremental run. The only valid value is `IMMEDIATE`. This appears as "Automatic" in the console.
+For workflows where `resolutionType` is `PROVIDER`, incremental processing is not supported.
+Type: String
+Valid Values: `IMMEDIATE`
+Required: No
+
+## See Also
+<a name="API_IncrementalRunConfig_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/entityresolution-2018-05-10/IncrementalRunConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/entityresolution-2018-05-10/IncrementalRunConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/entityresolution-2018-05-10/IncrementalRunConfig)

@@ -1,0 +1,76 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_PutExternalEvaluation.html
+---
+
+# PutExternalEvaluation
+<a name="API_PutExternalEvaluation"></a>
+
+Add or updates the evaluations for process checks. This API checks if the rule is a process check when the name of the AWS Config rule is provided.
+
+## Request Syntax
+<a name="API_PutExternalEvaluation_RequestSyntax"></a>
+
+```
+{
+   "ConfigRuleName": "{{string}}",
+   "ExternalEvaluation": {
+      "Annotation": "{{string}}",
+      "ComplianceResourceId": "{{string}}",
+      "ComplianceResourceType": "{{string}}",
+      "ComplianceType": "{{string}}",
+      "OrderingTimestamp": {{number}}
+   }
+}
+```
+
+## Request Parameters
+<a name="API_PutExternalEvaluation_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ConfigRuleName](#API_PutExternalEvaluation_RequestSyntax) **   <a name="config-PutExternalEvaluation-request-ConfigRuleName"></a>
+The name of the AWS Config rule.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `.*\S.*`
+Required: Yes
+
+ ** [ExternalEvaluation](#API_PutExternalEvaluation_RequestSyntax) **   <a name="config-PutExternalEvaluation-request-ExternalEvaluation"></a>
+An `ExternalEvaluation` object that provides details about compliance.
+Type: [ExternalEvaluation](API_ExternalEvaluation.md) object
+Required: Yes
+
+## Response Elements
+<a name="API_PutExternalEvaluation_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+<a name="API_PutExternalEvaluation_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InvalidParameterValueException **
+One or more of the specified parameters are not valid. Verify that your parameters are valid and try again.
+HTTP Status Code: 400
+
+ ** NoSuchConfigRuleException **
+The AWS Config rule in the request is not valid. Verify that the rule is an AWS Config Process Check rule, that the rule name is correct, and that valid Amazon Resouce Names (ARNs) are used before trying again.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_PutExternalEvaluation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/config-2014-11-12/PutExternalEvaluation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/config-2014-11-12/PutExternalEvaluation)

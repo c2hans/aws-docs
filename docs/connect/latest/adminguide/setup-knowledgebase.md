@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/setup-knowledgebase.html
+---
+
+# Set up an Connect Customer knowledge base to store quick responses
+<a name="setup-knowledgebase"></a>
+
+You must create an [Connect Customer knowledge base](connect-ai-agent.md) to store quick responses. You can use the Connect Customer admin website to create the knowledge base with a single choose. The site uses AWS owned keys to encrypt data.
+
+**Note**
+You can create your own key by providing a custom [ ServerSideEncryptionConfiguration](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_ServerSideEncryptionConfiguration.html#wisdom-Type-ServerSideEncryptionConfiguration-kmsKeyId) in an [CreateKnowledgeBase](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_CreateKnowledgeBase.html) API call. For more information, see [Initial set-up for AI agents](ai-agent-initial-setup.md), in this guide.
+
+The following steps explain how to use the Connect Customer admin website to create an Connect Customer knowledge base.
+
+**To create a knowledge base**
+
+1. Log in to the Connect Customer admin website at https://*instance name*.my.connect.aws/. Use an admin account, or an account with **Content Management - Quick responses - Create** permission in its security profile.
+
+1. On the navigation bar, choose **Content Management**, then **Quick responses**.
+
+1. On the **Quick responses** page, choose **Get started**.
+**Note**
+If the **Get started** button isn't available, sign in with an account that has the admin security profile, or ask another admin for help.
+
+1. Remain on the page until the process ends. Do not refresh the page until the process ends. An indicator shows the status.
+![A horizontal green status bar.](http://docs.aws.amazon.com/connect/latest/adminguide/images/agent-application-3.png)
+
+The finished knowledge base provides two sample quick responses.
++ The sample responses are associated with the [basic routing profile](https://docs.aws.amazon.com/connect/latest/adminguide/concepts-routing.html), if that exists in your Connect Customer instance.
++ The sample responses are set to **Inactive**, meaning agents can't see or search for them. Activating a sample quick response makes it visible and searchable by agents assigned to the basic routing profile.
++  If the basic routing profile is not present in your Connect Customer instance, the sample quick responses are associated with **All** routing profiles. After you activate a sample quick response, all agents can see and search for that response, regardless of their assigned routing profiles.
+
+**Note**
+Quick responses are only available in the **Chat** and **Email** channels.

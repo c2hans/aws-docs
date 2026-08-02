@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_geospatial_Filter.html
+---
+
+# Filter
+<a name="API_geospatial_Filter"></a>
+
+The structure representing the filters supported by a RasterDataCollection.
+
+## Contents
+<a name="API_geospatial_Filter_Contents"></a>
+
+ ** Name **   <a name="sagemaker-Type-geospatial_Filter-Name"></a>
+The name of the filter.
+Type: String
+Required: Yes
+
+ ** Type **   <a name="sagemaker-Type-geospatial_Filter-Type"></a>
+The type of the filter being used.
+Type: String
+Required: Yes
+
+ ** Maximum **   <a name="sagemaker-Type-geospatial_Filter-Maximum"></a>
+The maximum value of the filter.
+Type: Float
+Required: No
+
+ ** Minimum **   <a name="sagemaker-Type-geospatial_Filter-Minimum"></a>
+The minimum value of the filter.
+Type: Float
+Required: No
+
+## See Also
+<a name="API_geospatial_Filter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-geospatial-2020-05-27/Filter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-geospatial-2020-05-27/Filter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-geospatial-2020-05-27/Filter)

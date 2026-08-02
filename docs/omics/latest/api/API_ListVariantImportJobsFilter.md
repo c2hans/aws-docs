@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/omics/latest/api/API_ListVariantImportJobsFilter.html
+---
+
+# ListVariantImportJobsFilter
+<a name="API_ListVariantImportJobsFilter"></a>
+
+A filter for variant import jobs.
+
+## Contents
+<a name="API_ListVariantImportJobsFilter_Contents"></a>
+
+ ** status **   <a name="omics-Type-ListVariantImportJobsFilter-status"></a>
+A status to filter on.
+Type: String
+Valid Values: `SUBMITTED | IN_PROGRESS | CANCELLED | COMPLETED | FAILED | COMPLETED_WITH_FAILURES`
+Required: No
+
+ ** storeName **   <a name="omics-Type-ListVariantImportJobsFilter-storeName"></a>
+A store name to filter on.
+Type: String
+Required: No
+
+## See Also
+<a name="API_ListVariantImportJobsFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/omics-2022-11-28/ListVariantImportJobsFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/omics-2022-11-28/ListVariantImportJobsFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/ListVariantImportJobsFilter)

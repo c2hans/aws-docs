@@ -1,0 +1,158 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_lambda_sqs_lambda.html
+---
+
+# aws-lambda-sqs-lambda
+<a name="aws_lambda_sqs_lambda"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_lambda_sqs_lambda`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-lambda-sqs-lambda`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.lambdasqslambda`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements (1) an AWS Lambda function that is configured to send messages to a queue; (2) an Amazon SQS queue; and (3) an AWS Lambda function configured to consume messages from the queue.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { LambdaToSqsToLambda, LambdaToSqsToLambdaProps } from "@aws-solutions-constructs/aws-lambda-sqs-lambda";
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+
+new LambdaToSqsToLambda(this, 'LambdaToSqsToLambdaPattern', {
+  producerLambdaFunctionProps: {
+      runtime: lambda.Runtime.NODEJS_22_X,
+      handler: 'index.handler',
+      code: lambda.Code.fromAsset(`producer-lambda`)
+  },
+  consumerLambdaFunctionProps: {
+    runtime: lambda.Runtime.NODEJS_22_X,
+    handler: 'index.handler',
+    code: lambda.Code.fromAsset(`consumer-lambda`)
+  }
+});
+```
+
+```
+from aws_solutions_constructs.aws_lambda_sqs_lambda import LambdaToSqsToLambda
+from aws_cdk import (
+    aws_lambda as _lambda,
+    Stack
+)
+from constructs import Construct
+
+LambdaToSqsToLambda(
+    self, 'LambdaToSqsToLambdaPattern',
+    producer_lambda_function_props=_lambda.FunctionProps(
+        code=_lambda.Code.from_asset('producer_lambda'),
+        runtime=_lambda.Runtime.PYTHON_3_14,
+        handler='index.handler'
+    ),
+    consumer_lambda_function_props=_lambda.FunctionProps(
+        code=_lambda.Code.from_asset('consumer_lambda'),
+        runtime=_lambda.Runtime.PYTHON_3_14,
+        handler='index.handler'
+    )
+)
+```
+
+```
+import software.constructs.Construct;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awscdk.services.lambda.*;
+import software.amazon.awscdk.services.lambda.Runtime;
+import software.amazon.awsconstructs.services.lambdasqslambda.*;
+
+new LambdaToSqsToLambda(this, "LambdaToSqsToLambdaPattern", new LambdaToSqsToLambdaProps.Builder()
+        .producerLambdaFunctionProps(new FunctionProps.Builder()
+                .runtime(Runtime.NODEJS_22_X)
+                .code(Code.fromAsset("producer-lambda"))
+                .handler("index.handler")
+                .build())
+        .consumerLambdaFunctionProps(new FunctionProps.Builder()
+                .runtime(Runtime.NODEJS_22_X)
+                .code(Code.fromAsset("consumer-lambda"))
+                .handler("index.handler")
+                .build())
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| existingProducerLambdaObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | An optional, existing Lambda function to be used instead of the default function for sending messages to the queue. Providing both this and `producerLambdaFunctionProps` will cause an error. |
+| producerLambdaFunctionProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html)  | Optional user-provided properties to override the default properties for the producer Lambda function. |
+| existingQueueObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html)  | An optional, existing SQS queue to be used instead of the default queue. Providing both this and `queueProps` will cause an error. |
+| queueProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html)  | Optional - user provided properties to override the default properties for the SQS queue. Providing both this and `existingQueueObj` will cause an error. |
+| deployDeadLetterQueue? |  `boolean`  | Whether to create a secondary queue to be used as a dead letter queue. Defaults to `true`. |
+| deadLetterQueueProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html)  | Optional user-provided props to override the default props for the dead letter queue. Only used if the `deployDeadLetterQueue` property is set to `true`. |
+| maxReceiveCount? |  `number`  | The number of times a message can be unsuccessfully dequeued before being moved to the dead letter queue. Defaults to `15`. |
+| existingConsumerLambdaObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | An optional, existing Lambda function to be used instead of the default function for receiving/consuming messages from the queue. Providing both this and `consumerLambdaFunctionProps` will cause an error. |
+| consumerLambdaFunctionProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html)  | Optional user-provided properties to override the default properties for the consumer Lambda function. |
+| queueEnvironmentVariableName? |  `string`  | Optional Name for the Lambda function environment variable set to the URL of the queue. Default: SQS\_QUEUE\_URL |
+| sqsEventSourceProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda_event_sources.SqsEventSourceProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda_event_sources.SqsEventSourceProps.html)  | Optional user provided properties for the queue event source. |
+| existingVpc? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html)  | An optional, existing VPC into which this pattern should be deployed. When deployed in a VPC, the Lambda function will use ENIs in the VPC to access network resources and an Interface Endpoint will be created in the VPC for Amazon SQS. If an existing VPC is provided, the `deployVpc` property cannot be `true`. This uses `ec2.IVpc` to allow clients to supply VPCs that exist outside the stack using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.Vpc.html#static-fromwbrlookupscope-id-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.Vpc.html#static-fromwbrlookupscope-id-options) method. |
+| vpcProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.VpcProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.VpcProps.html)  | Optional user-provided properties to override the default properties for the new VPC. `enableDnsHostnames`, `enableDnsSupport`, `natGateways` and `subnetConfiguration` are set by the pattern, so any values for those properties supplied here will be overridden. If `deployVpc` is not `true` then this property will be ignored. |
+| deployVpc? |  `boolean`  | Whether to create a new VPC based on `vpcProps` into which to deploy this pattern. Setting this to true will deploy the minimal, most private VPC to run the pattern: |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| producerLambdaFunction |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Returns an instance of the producer Lambda function created by the pattern. |
+| sqsQueue |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html)  | Returns an instance of the SQS queue created by the pattern. |
+| deadLetterQueue? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html)  | Returns an instance of the dead letter queue created by the pattern, if one is deployed. |
+| consumerLambdaFunction |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Returns an instance of the consumer Lambda function created by the pattern. |
+| vpc? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html)  | Returns an interface on the VPC used by the pattern (if any). This may be a VPC created by the pattern or the VPC supplied to the pattern constructor. |
+
+## Default Settings
+<a name="_default_settings"></a>
+
+Out-of-the-box implementation of this Construct (without any overridden properties) will adhere to the following defaults:
+
+### AWS Lambda Functions
+<a name="_aws_lambda_functions"></a>
++ Configure limited privilege access IAM role for Lambda functions.
++ Enable reusing connections with Keep-Alive for NodeJs Lambda functions.
++ Enable X-Ray Tracing
++ Set Environment Variables
+  + AWS\_NODEJS\_CONNECTION\_REUSE\_ENABLED (for Node 10.x and higher functions)
+
+### Amazon SQS Queue
+<a name="_amazon_sqs_queue"></a>
++ Deploy a dead letter queue for the primary queue.
++ Enable server-side encryption for the primary queue using an AWS Managed KMS Key.
++ Enforce encryption of data in transit
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing the Lambda functions, SQS queue and dlq, CloudWatch log groups and IAM roles created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-lambda-sqs-lambda.png)
+
+## Example Lambda Function Implementation
+<a name="_example_lambda_function_implementation"></a>
+
+While Solutions Constructs does not publish code for the Lambda function interact with SQS, here many examples: [examples](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/sqs/actions). (these examples are in JavaScript, but examples in other languages can also be found at this site)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-lambda-sqs-lambda) for this pattern to view the code, read/create issues and pull requests and more.

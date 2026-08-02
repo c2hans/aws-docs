@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_SendMessageContentBlockStopEvent.html
+---
+
+# SendMessageContentBlockStopEvent
+<a name="API_SendMessageContentBlockStopEvent"></a>
+
+Event emitted when a content block is complete
+
+## Contents
+<a name="API_SendMessageContentBlockStopEvent_Contents"></a>
+
+ ** index **   <a name="devopsagent-Type-SendMessageContentBlockStopEvent-index"></a>
+Zero-based index of the content block
+Type: Integer
+Required: No
+
+ ** last **   <a name="devopsagent-Type-SendMessageContentBlockStopEvent-last"></a>
+Whether this is the final content block in the response
+Type: Boolean
+Required: No
+
+ ** sequenceNumber **   <a name="devopsagent-Type-SendMessageContentBlockStopEvent-sequenceNumber"></a>
+Event sequence number
+Type: Integer
+Required: No
+
+ ** text **   <a name="devopsagent-Type-SendMessageContentBlockStopEvent-text"></a>
+The accumulated complete content text
+Type: String
+Required: No
+
+ ** type **   <a name="devopsagent-Type-SendMessageContentBlockStopEvent-type"></a>
+The type of content in this block
+Type: String
+Required: No
+
+## See Also
+<a name="API_SendMessageContentBlockStopEvent_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/devops-agent-2026-01-01/SendMessageContentBlockStopEvent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/devops-agent-2026-01-01/SendMessageContentBlockStopEvent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/SendMessageContentBlockStopEvent)

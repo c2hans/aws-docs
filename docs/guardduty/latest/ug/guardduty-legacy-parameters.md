@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/guardduty/latest/ug/guardduty-legacy-parameters.html
+---
+
+# GuardDuty legacy actions and parameters
+<a name="guardduty-legacy-parameters"></a>
+
+Amazon GuardDuty has deprecated the some of the API actions and parameters but still supports them. The best practice is to use the new API actions and parameters that replace the legacy options. The following table compares the legacy and new actions and parameters.
+
+| Legacy actions/parameters | New actions/parameters | Comparison |
+| --- | --- | --- |
+| [DisassociateFromMasterAccount](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateFromMasterAccount.html) | [DisassociateFromAdministratorAccount](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DisassociateFromAdministratorAccount.html) | With the same implementation in both the actions, GuardDuty uses the term `Administrator` in `DisassociateFromAdministratorAccount`. |
+| `autoEnable` parameter in [DescribeOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DescribeOrganizationConfiguration.html) and [UpdateOrganizationConfiguration](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html) | `[autoEnableOrganizationMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html#guardduty-UpdateOrganizationConfiguration-request-autoEnableOrganizationMembers)` | With `autoEnableOrganizationMembers`, the GuardDuty administrator account can audit and enforce GuardDuty for all member accounts to either of the values. Using the APIs, it may take up to 24 hours to update the configuration for all the member accounts. For more information about the possible values of the `autoEnableOrganizationMembers` field, see [autoEnableOrganizationMembers](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_UpdateOrganizationConfiguration.html#guardduty-UpdateOrganizationConfiguration-request-autoEnableOrganizationMembers) |
+| `dataSources` parameter in the APIs listed in [GuardDuty API changes in March 2023](guardduty-feature-object-api-changes-march2023.md). | [https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DetectorFeatureConfiguration.html](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_DetectorFeatureConfiguration.html) | Starting March 2023, you can configure [GuardDuty Malware Protection for EC2](malware-protection.md) and the new GuardDuty protection plans using `features`. The protection plans launched prior to March 2023, including Malware Protection for EC2 still support configuration using `dataSources`. If you use APIs to configure a protection plan, each API request can either include `dataSources` or `features`, not both. |

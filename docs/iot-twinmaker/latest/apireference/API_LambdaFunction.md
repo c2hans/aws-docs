@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_LambdaFunction.html
+---
+
+# LambdaFunction
+<a name="API_LambdaFunction"></a>
+
+The Lambda function.
+
+## Contents
+<a name="API_LambdaFunction_Contents"></a>
+
+ ** arn **   <a name="tm-Type-LambdaFunction-arn"></a>
+The ARN of the Lambda function.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:((aws)|(aws-cn)|(aws-us-gov)):lambda:[a-z0-9-]+:[0-9]{12}:function:[\/a-zA-Z0-9_-]+`
+Required: Yes
+
+## See Also
+<a name="API_LambdaFunction_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iottwinmaker-2021-11-29/LambdaFunction)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iottwinmaker-2021-11-29/LambdaFunction)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iottwinmaker-2021-11-29/LambdaFunction)

@@ -1,0 +1,99 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html
+---
+
+# Monitoring AWS Glue using Amazon CloudWatch metrics
+<a name="monitoring-awsglue-with-cloudwatch-metrics"></a>
+
+You can profile and monitor AWS Glue operations using AWS Glue job profiler. It collects and processes raw data from AWS Glue jobs into readable, near real-time metrics stored in Amazon CloudWatch. These statistics are retained and aggregated in CloudWatch so that you can access historical information for a better perspective on how your application is performing.
+
+**Note**
+ You may incur additional charges when you enable job metrics and CloudWatch custom metrics are created. For more information, see [ Amazon CloudWatch pricing ](https://aws.amazon.com/cloudwatch/pricing/).
+
+## AWS Glue metrics overview
+<a name="metrics-overview"></a>
+
+When you interact with AWS Glue, it sends metrics to CloudWatch. You can view these metrics using the AWS Glue console (the preferred method), the CloudWatch console dashboard, or the AWS Command Line Interface (AWS CLI).
+
+**To view metrics using the AWS Glue console dashboard**
+
+You can view summary or detailed graphs of metrics for a job, or detailed graphs for a job run.
+
+1. Sign in to the AWS Management Console and open the AWS Glue console at [https://console.aws.amazon.com/glue/](https://console.aws.amazon.com/glue/).
+
+1. In the navigation pane, choose **Job run monitoring**.
+
+1. In **Job runs** choose **Actions** to stop a job that is currently running, view a job, or rewind job bookmark.
+
+1. Select a job, then choose **View run details** to view additional information about the job run.
+
+**To view metrics using the CloudWatch console dashboard**
+
+Metrics are grouped first by the service namespace, and then by the various dimension combinations within each namespace.
+
+1. Open the CloudWatch console at [https://console.aws.amazon.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/).
+
+1. In the navigation pane, choose **Metrics**.
+
+1. Choose the **Glue** namespace.
+
+**To view metrics using the AWS CLI**
++ At a command prompt, use the following command.
+
+  ```
+  1. aws cloudwatch list-metrics --namespace Glue
+  ```
+
+AWS Glue reports metrics to CloudWatch every 30 seconds, and the CloudWatch metrics dashboards are configured to display them every minute. The AWS Glue metrics represent delta values from the previously reported values. Where appropriate, metrics dashboards aggregate (sum) the 30-second values to obtain a value for the entire last minute.
+
+### AWS Glue metrics behavior for Spark jobs
+<a name="metrics-overview-spark"></a>
+
+ AWS Glue metrics are enabled at initialization of a `GlueContext` in a script and are generally updated only at the end of an Apache Spark task. They represent the aggregate values across all completed Spark tasks so far.
+
+However, the Spark metrics that AWS Glue passes on to CloudWatch are generally absolute values representing the current state at the time they are reported. AWS Glue reports them to CloudWatch every 30 seconds, and the metrics dashboards generally show the average across the data points received in the last 1 minute.
+
+AWS Glue metrics names are all preceded by one of the following types of prefix:
++ `glue.driver.` – Metrics whose names begin with this prefix either represent AWS Glue metrics that are aggregated from all executors at the Spark driver, or Spark metrics corresponding to the Spark driver.
++ `glue.`*executorId*`.` – The *executorId* is the number of a specific Spark executor. It corresponds with the executors listed in the logs.
++ `glue.ALL.` – Metrics whose names begin with this prefix aggregate values from all Spark executors.
+
+## AWS Glue metrics
+<a name="awsglue-metrics"></a>
+
+AWS Glue profiles and sends the following metrics to CloudWatch every 30 seconds, and the AWS Glue Metrics Dashboard report them once a minute:
+
+| Metric | Description |
+| --- | --- |
+| `glue.driver.aggregate.bytesRead` | The number of bytes read from all data sources by all completed Spark tasks running in all executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation. <br />Unit: Bytes<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />This metric can be used the same way as the `glue.ALL.s3.filesystem.read_bytes` metric, with the difference that this metric is updated at the end of a Spark task and captures non-S3 data sources as well. |
+| `glue.driver.aggregate.elapsedTime` | The ETL elapsed time in milliseconds (does not include the job bootstrap times).<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Milliseconds<br />Can be used to determine how long it takes a job run to run on average.<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.aggregate.numCompletedStages` | The number of completed stages in the job.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.aggregate.numCompletedTasks` | The number of completed tasks in the job.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.aggregate.numFailedTasks` | The number of failed tasks.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />The data can be used to set alarms for increased failures that might suggest abnormalities in data, cluster or scripts. |
+| `glue.driver.aggregate.numKilledTasks` | The number of tasks killed.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.aggregate.recordsRead` | The number of records read from all data sources by all completed Spark tasks running in all executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />This metric can be used in a similar way to the `glue.ALL.s3.filesystem.read_bytes` metric, with the difference that this metric is updated at the end of a Spark task. |
+| `glue.driver.aggregate.shuffleBytesWritten` | The number of bytes written by all executors to shuffle data between them since the previous report (aggregated by the AWS Glue Metrics Dashboard as the number of bytes written for this purpose during the previous minute).<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Bytes<br />Can be used to monitor: Data shuffle in jobs (large joins, groupBy, repartition, coalesce).<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.aggregate.shuffleLocalBytesRead` | The number of bytes read by all executors to shuffle data between them since the previous report (aggregated by the AWS Glue Metrics Dashboard as the number of bytes read for this purpose during the previous minute).<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard, a SUM statistic is used for aggregation.<br />Unit: Bytes<br />Can be used to monitor: Data shuffle in jobs (large joins, groupBy, repartition, coalesce).<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.BlockManager.disk.diskSpaceUsed_MB` | The number of megabytes of disk space used across all executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (gauge).<br />Valid Statistics: Average. This is a Spark metric, reported as an absolute value.<br />Unit: Megabytes<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.ExecutorAllocationManager.executors.numberAllExecutors` | The number of actively running job executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (gauge).<br />Valid Statistics: Average. This is a Spark metric, reported as an absolute value.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.ExecutorAllocationManager.executors.numberMaxNeededExecutors` | The number of maximum (actively running and pending) job executors needed to satisfy the current load.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (gauge).<br />Valid Statistics: Maximum. This is a Spark metric, reported as an absolute value.<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.jvm.heap.usage`<br />`glue.`*executorId*`.jvm.heap.usage`<br />`glue.ALL.jvm.heap.usage` | The fraction of memory used by the JVM heap for this driver (scale: 0-1) for driver, executor identified by executorId, or ALL executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (gauge).<br />Valid Statistics: Average. This is a Spark metric, reported as an absolute value.<br />Unit: Percentage<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.jvm.heap.used`<br />`glue.`*executorId*`.jvm.heap.used`<br />`glue.ALL.jvm.heap.used` | The number of memory bytes used by the JVM heap for the driver, the executor identified by *executorId*, or ALL executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue Job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (gauge).<br />Valid Statistics: Average. This is a Spark metric, reported as an absolute value.<br />Unit: Bytes<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.s3.filesystem.read_bytes`<br />`glue.`*executorId*`.s3.filesystem.read_bytes`<br />`glue.ALL.s3.filesystem.read_bytes` | The number of bytes read from Amazon S3 by the driver, an executor identified by *executorId*, or ALL executors since the previous report (aggregated by the AWS Glue Metrics Dashboard as the number of bytes read during the previous minute).<br />Valid dimensions: `JobName`, `JobRunId`, and `Type` (gauge).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard a SUM statistic is used for aggregation. The area under the curve on the AWS Glue Metrics Dashboard can be used to visually compare bytes read by two different job runs.<br />Unit: Bytes.<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Resulting data can be used for:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.s3.filesystem.write_bytes`<br />`glue.`*executorId*`.s3.filesystem.write_bytes`<br />`glue.ALL.s3.filesystem.write_bytes` | The number of bytes written to Amazon S3 by the driver, an executor identified by *executorId*, or ALL executors since the previous report (aggregated by the AWS Glue Metrics Dashboard as the number of bytes written during the previous minute).<br />Valid dimensions: `JobName`, `JobRunId`, and `Type` (gauge).<br />Valid Statistics: SUM. This metric is a delta value from the last reported value, so on the AWS Glue Metrics Dashboard a SUM statistic is used for aggregation. The area under the curve on the AWS Glue Metrics Dashboard can be used to visually compare bytes written by two different job runs.<br />Unit: Bytes<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.streaming.numRecords` | The number of records that are received in a micro-batch. This metric is only available for AWS Glue streaming jobs with AWS Glue version 2.0 and above.<br />Valid dimensions: `JobName` (the name of the AWS Glue job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: Sum, Maximum, Minimum, Average, Percentile<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.streaming.batchProcessingTimeInMs` | The time it takes to process the batches in milliseconds. This metric is only available for AWS Glue streaming jobs with AWS Glue version 2.0 and above.<br />Valid dimensions: `JobName` (the name of the AWS Glue job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (count).<br />Valid Statistics: Sum, Maximum, Minimum, Average, Percentile<br />Unit: Count<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+| `glue.driver.system.cpuSystemLoad`<br />`glue.`*executorId*`.system.cpuSystemLoad`<br />`glue.ALL.system.cpuSystemLoad` | The fraction of CPU system load used (scale: 0-1) by the driver, an executor identified by *executorId*, or ALL executors.<br />Valid dimensions: `JobName` (the name of the AWS Glue job), `JobRunId` (the JobRun ID. or `ALL`), and `Type` (gauge).<br />Valid Statistics: Average. This metric is reported as an absolute value.<br />Unit: Percentage<br />Can be used to monitor:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html)<br />Some ways to use the data:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/monitoring-awsglue-with-cloudwatch-metrics.html) |
+
+## Dimensions for AWS Glue Metrics
+<a name="awsglue-metricdimensions"></a>
+
+AWS Glue metrics use the AWS Glue namespace and provide metrics for the following dimensions:
+
+| Dimension | Description |
+| --- | --- |
+| `JobName` | This dimension filters for metrics of all job runs of a specific AWS Glue job. |
+| `JobRunId` | This dimension filters for metrics of a specific AWS Glue job run by a JobRun ID, or `ALL`. |
+| `Type` | This dimension filters for metrics by either `count` (an aggregate number) or `gauge` (a value at a point in time). |
+
+For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).

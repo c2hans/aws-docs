@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_Stream.html
+---
+
+# Stream
+<a name="API_Stream"></a>
+
+Describes a group of files that can be streamed.
+
+## Contents
+<a name="API_Stream_Contents"></a>
+
+ ** fileId **   <a name="iot-Type-Stream-fileId"></a>
+The ID of a file associated with a stream.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 255.
+Required: No
+
+ ** streamId **   <a name="iot-Type-Stream-streamId"></a>
+The stream ID.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9_-]+`
+Required: No
+
+## See Also
+<a name="API_Stream_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/Stream)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/Stream)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/Stream)

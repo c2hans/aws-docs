@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/ug/step-4-use-named-queries.html
+---
+
+# Step 4: Use named queries
+<a name="step-4-use-named-queries"></a>
+
+You can save the queries that you create or edit in the query editor with a name. Athena stores these queries on the **Saved queries** tab. You can use the **Saved queries** tab to recall, run, rename, or delete your saved queries. For more information, see [Use saved queries](saved-queries.md).

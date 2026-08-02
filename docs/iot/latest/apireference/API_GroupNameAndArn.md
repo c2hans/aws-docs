@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_GroupNameAndArn.html
+---
+
+# GroupNameAndArn
+<a name="API_GroupNameAndArn"></a>
+
+The name and ARN of a group.
+
+## Contents
+<a name="API_GroupNameAndArn_Contents"></a>
+
+ ** groupArn **   <a name="iot-Type-GroupNameAndArn-groupArn"></a>
+The group ARN.
+Type: String
+Required: No
+
+ ** groupName **   <a name="iot-Type-GroupNameAndArn-groupName"></a>
+The group name.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9:_-]+`
+Required: No
+
+## See Also
+<a name="API_GroupNameAndArn_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/GroupNameAndArn)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/GroupNameAndArn)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/GroupNameAndArn)

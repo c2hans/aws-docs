@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_GeneratedReport.html
+---
+
+# GeneratedReport
+<a name="API_GeneratedReport"></a>
+
+Information about a generated execution report.
+
+## Contents
+<a name="API_GeneratedReport_Contents"></a>
+
+ ** reportGenerationTime **   <a name="regionswitch-Type-GeneratedReport-reportGenerationTime"></a>
+The timestamp when the report was generated.
+Type: Timestamp
+Required: No
+
+ ** reportOutput **   <a name="regionswitch-Type-GeneratedReport-reportOutput"></a>
+The output location or cause of a failure in report generation.
+Type: [ReportOutput](API_ReportOutput.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+## See Also
+<a name="API_GeneratedReport_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/arc-region-switch-2022-07-26/GeneratedReport)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/arc-region-switch-2022-07-26/GeneratedReport)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/arc-region-switch-2022-07-26/GeneratedReport)

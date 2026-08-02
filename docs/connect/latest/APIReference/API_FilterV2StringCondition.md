@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_FilterV2StringCondition.html
+---
+
+# FilterV2StringCondition
+<a name="API_FilterV2StringCondition"></a>
+
+ System defined filtering condition. For example, the NOT\_EXISTS StringCondition returns documents where the field specified by FilterKey does not exist in the document.
+
+When the NOT\_EXISTS StringCondition is added to a FilterV2 object, FilterValues must be null or empty.
+
+## Contents
+<a name="API_FilterV2StringCondition_Contents"></a>
+
+ ** Comparison **   <a name="connect-Type-FilterV2StringCondition-Comparison"></a>
+ The string condition.
+Type: String
+Valid Values: `NOT_EXISTS`
+Required: No
+
+## See Also
+<a name="API_FilterV2StringCondition_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/FilterV2StringCondition)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/FilterV2StringCondition)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/FilterV2StringCondition)

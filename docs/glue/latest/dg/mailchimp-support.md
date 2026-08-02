@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/mailchimp-support.html
+---
+
+# AWS Glue support for Mailchimp
+<a name="mailchimp-support"></a>
+
+AWS Glue supports Mailchimp as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Mailchimp.
+
+**Supported as a target?**
+No.
+
+**Supported Mailchimp API versions**
+ 3.0

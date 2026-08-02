@@ -1,0 +1,55 @@
+---
+source_url: https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/resources.html
+---
+
+# Resources
+<a name="resources"></a>
+
+The Amazon API Gateway REST API includes the following resources.
+
+**Topics**
++ [AccessLogSettings](apis-apiid-stages-stagename-accesslogsettings.md)
++ [Api](apis-apiid.md)
++ [ApiMapping](domainnames-domainname-apimappings-apimappingid.md)
++ [ApiMappings](domainnames-domainname-apimappings.md)
++ [Apis](apis.md)
++ [Authorizer](apis-apiid-authorizers-authorizerid.md)
++ [Authorizers](apis-apiid-authorizers.md)
++ [AuthorizersCache](apis-apiid-stages-stagename-cache-authorizers.md)
++ [Cors](apis-apiid-cors.md)
++ [Deployment](apis-apiid-deployments-deploymentid.md)
++ [Deployments](apis-apiid-deployments.md)
++ [DomainName](domainnames-domainname.md)
++ [DomainNames](domainnames.md)
++ [ExportedAPI](apis-apiid-exports-specification.md)
++ [Integration](apis-apiid-integrations-integrationid.md)
++ [IntegrationResponse](apis-apiid-integrations-integrationid-integrationresponses-integrationresponseid.md)
++ [IntegrationResponses](apis-apiid-integrations-integrationid-integrationresponses.md)
++ [Integrations](apis-apiid-integrations.md)
++ [Model](apis-apiid-models-modelid.md)
++ [Models](apis-apiid-models.md)
++ [ModelTemplate](apis-apiid-models-modelid-template.md)
++ [Portal](portals-portalid.md)
++ [Portal product](portalproducts-portalproductid.md)
++ [Portal products](portalproducts.md)
++ [Portals](portals.md)
++ [Preview](portals-portalid-preview.md)
++ [Product page](portalproducts-portalproductid-productpages-productpageid.md)
++ [Product pages](portalproducts-portalproductid-productpages.md)
++ [Product REST endpoint page](portalproducts-portalproductid-productrestendpointpages-productrestendpointpageid.md)
++ [Product REST endpoint pages](portalproducts-portalproductid-productrestendpointpages.md)
++ [Publish](portals-portalid-publish.md)
++ [Route](apis-apiid-routes-routeid.md)
++ [RouteRequestParameter](apis-apiid-routes-routeid-requestparameters-requestparameterkey.md)
++ [RouteResponse](apis-apiid-routes-routeid-routeresponses-routeresponseid.md)
++ [RouteResponses](apis-apiid-routes-routeid-routeresponses.md)
++ [Routes](apis-apiid-routes.md)
++ [RouteSettings](apis-apiid-stages-stagename-routesettings-routekey.md)
++ [RoutingRule](domainnames-domainname-routingrules-routingruleid.md)
++ [RoutingRules](domainnames-domainname-routingrules.md)
++ [Sharing policy](portalproducts-portalproductid-sharingpolicy.md)
++ [Stage](apis-apiid-stages-stagename.md)
++ [Stages](apis-apiid-stages.md)
++ [Tags](tags-resource-arn.md)
++ [VPCLink](vpclinks-vpclinkid.md)
++ [VPCLinks](vpclinks.md)

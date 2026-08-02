@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/cases/latest/APIReference/API_EventBridgeConfiguration.html
+---
+
+# EventBridgeConfiguration
+<a name="API_connect-cases_EventBridgeConfiguration"></a>
+
+Configuration to enable EventBridge case event delivery and determine what data is delivered.
+
+## Contents
+<a name="API_connect-cases_EventBridgeConfiguration_Contents"></a>
+
+ ** enabled **   <a name="connect-Type-connect-cases_EventBridgeConfiguration-enabled"></a>
+Indicates whether the to broadcast case event data to the customer.
+Type: Boolean
+Required: Yes
+
+ ** includedData **   <a name="connect-Type-connect-cases_EventBridgeConfiguration-includedData"></a>
+Details of what case and related item data is published through the case event stream.
+Type: [EventIncludedData](API_connect-cases_EventIncludedData.md) object
+Required: No
+
+## See Also
+<a name="API_connect-cases_EventBridgeConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connectcases-2022-10-03/EventBridgeConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connectcases-2022-10-03/EventBridgeConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connectcases-2022-10-03/EventBridgeConfiguration)

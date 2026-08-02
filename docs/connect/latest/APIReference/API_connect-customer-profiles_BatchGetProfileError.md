@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_BatchGetProfileError.html
+---
+
+# BatchGetProfileError
+<a name="API_connect-customer-profiles_BatchGetProfileError"></a>
+
+Error object describing why a specific profile failed.
+
+## Contents
+<a name="API_connect-customer-profiles_BatchGetProfileError_Contents"></a>
+
+ ** Code **   <a name="connect-Type-connect-customer-profiles_BatchGetProfileError-Code"></a>
+Status code for why a specific profile failed.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: Yes
+
+ ** Message **   <a name="connect-Type-connect-customer-profiles_BatchGetProfileError-Message"></a>
+Message describing why a specific profile failed.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1000.
+Required: Yes
+
+ ** ProfileId **   <a name="connect-Type-connect-customer-profiles_BatchGetProfileError-ProfileId"></a>
+The profile id that failed.
+Type: String
+Pattern: `[a-f0-9]{32}`
+Required: Yes
+
+## See Also
+<a name="API_connect-customer-profiles_BatchGetProfileError_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/customer-profiles-2020-08-15/BatchGetProfileError)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/customer-profiles-2020-08-15/BatchGetProfileError)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/customer-profiles-2020-08-15/BatchGetProfileError)

@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/location/previous/APIReference/API_SearchForPositionResult.html
+---
+
+# SearchForPositionResult
+<a name="API_SearchForPositionResult"></a>
+
+Contains a search result from a position search query that is run on a place index resource.
+
+## Contents
+<a name="API_SearchForPositionResult_Contents"></a>
+
+ ** Distance **   <a name="location-Type-SearchForPositionResult-Distance"></a>
+The distance in meters of a great-circle arc between the query position and the result.
+A great-circle arc is the shortest path on a sphere, in this case the Earth. This returns the shortest distance between two locations.
+Type: Double
+Valid Range: Minimum value of 0.
+Required: Yes
+
+ ** Place **   <a name="location-Type-SearchForPositionResult-Place"></a>
+Details about the search result, such as its address and position.
+Type: [Place](API_Place.md) object
+Required: Yes
+
+ ** PlaceId **   <a name="location-Type-SearchForPositionResult-PlaceId"></a>
+The unique identifier of the place. You can use this with the `GetPlace` operation to find the place again later.
+For `SearchPlaceIndexForPosition` operations, the `PlaceId` is returned only by place indexes that use HERE or Grab as a data provider.
+Type: String
+Required: No
+
+## See Also
+<a name="API_SearchForPositionResult_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/location-2020-11-19/SearchForPositionResult)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/location-2020-11-19/SearchForPositionResult)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/location-2020-11-19/SearchForPositionResult)

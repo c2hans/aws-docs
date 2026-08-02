@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/resource-matching-placeholder-filtering.html
+---
+
+# Placeholder value filtering
+<a name="resource-matching-placeholder-filtering"></a>
+
+Resource matching automatically ignores identifier values that are:
++ all zeros (for example, `0`, `000000000`, `00-000-0000`);
++ common placeholders, case-insensitive (`unknown`, `n/a`, `na`, `none`, `null`, `unassigned`, `pending`, `temp`, `test`);
++ fewer than three characters; or
++ empty or whitespace only.

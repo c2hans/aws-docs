@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_RollingDeploymentPolicy.html
+---
+
+# RollingDeploymentPolicy
+<a name="API_RollingDeploymentPolicy"></a>
+
+The configurations that SageMaker uses when updating the AMI versions.
+
+## Contents
+<a name="API_RollingDeploymentPolicy_Contents"></a>
+
+ ** MaximumBatchSize **   <a name="sagemaker-Type-RollingDeploymentPolicy-MaximumBatchSize"></a>
+The maximum amount of instances in the cluster that SageMaker can update at a time.
+Type: [CapacitySizeConfig](API_CapacitySizeConfig.md) object
+Required: Yes
+
+ ** RollbackMaximumBatchSize **   <a name="sagemaker-Type-RollingDeploymentPolicy-RollbackMaximumBatchSize"></a>
+The maximum amount of instances in the cluster that SageMaker can roll back at a time.
+Type: [CapacitySizeConfig](API_CapacitySizeConfig.md) object
+Required: No
+
+## See Also
+<a name="API_RollingDeploymentPolicy_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/RollingDeploymentPolicy)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/RollingDeploymentPolicy)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/RollingDeploymentPolicy)

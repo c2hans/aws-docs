@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/pcs/latest/APIReference/API_JwtKey.html
+---
+
+# JwtKey
+<a name="API_JwtKey"></a>
+
+The JWT key stored in AWS Secrets Manager for Slurm REST API authentication.
+
+## Contents
+<a name="API_JwtKey_Contents"></a>
+
+ ** secretArn **   <a name="PCS-Type-JwtKey-secretArn"></a>
+The Amazon Resource Name (ARN) of the AWS Secrets Manager secret containing the JWT key.
+Type: String
+Required: Yes
+
+ ** secretVersion **   <a name="PCS-Type-JwtKey-secretVersion"></a>
+The version of the AWS Secrets Manager secret containing the JWT key.
+Type: String
+Required: Yes
+
+## See Also
+<a name="API_JwtKey_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/pcs-2023-02-10/JwtKey)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/pcs-2023-02-10/JwtKey)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/pcs-2023-02-10/JwtKey)

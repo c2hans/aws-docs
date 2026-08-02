@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsappmeshpreview.html
+---
+
+# Data retrieval APIs for AWS App Mesh Preview
+<a name="awsappmeshpreview"></a>
+
+AWS App Mesh Preview provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="appmesh-preview-DescribeGatewayRoute"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeGatewayRoute.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeGatewayRoute.html) | Describe an existing gateway route | Read |
+| <a name="appmesh-preview-DescribeMesh"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeMesh.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeMesh.html) | Describe an existing service mesh | Read |
+| <a name="appmesh-preview-DescribeRoute"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeRoute.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeRoute.html) | Describe an existing route | Read |
+| <a name="appmesh-preview-DescribeVirtualGateway"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualGateway.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualGateway.html) | Describe an existing virtual gateway | Read |
+| <a name="appmesh-preview-DescribeVirtualNode"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualNode.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualNode.html) | Describe an existing virtual node | Read |
+| <a name="appmesh-preview-DescribeVirtualRouter"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualRouter.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualRouter.html) | Describe an existing virtual router | Read |
+| <a name="appmesh-preview-DescribeVirtualService"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualService.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_DescribeVirtualService.html) | Describe an existing virtual service | Read |
+| <a name="appmesh-preview-GetMeshPolicy"></a>[https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html](https://docs.aws.amazon.com/app-mesh/latest/userguide/sharing.html) | Read the RAM access control policy for a mesh | Read |
+| <a name="appmesh-preview-ListGatewayRoutes"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListGatewayRoutes.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListGatewayRoutes.html) | List existing gateway routes in a service mesh | List |
+| <a name="appmesh-preview-ListMeshes"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListMeshes.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListMeshes.html) | List existing service meshes | List |
+| <a name="appmesh-preview-ListRoutes"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListRoutes.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListRoutes.html) | List existing routes in a service mesh | List |
+| <a name="appmesh-preview-ListVirtualGateways"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualGateways.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualGateways.html) | List existing virtual gateways in a service mesh | List |
+| <a name="appmesh-preview-ListVirtualNodes"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualNodes.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualNodes.html) | List existing virtual nodes | List |
+| <a name="appmesh-preview-ListVirtualRouters"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualRouters.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualRouters.html) | List existing virtual routers in a service mesh | List |
+| <a name="appmesh-preview-ListVirtualServices"></a>[https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualServices.html](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualServices.html) | List existing virtual services in a service mesh | List |
+| <a name="appmesh-preview-StreamAggregatedResources"></a>[https://docs.aws.amazon.com/app-mesh/latest/userguide/envoy.html](https://docs.aws.amazon.com/app-mesh/latest/userguide/envoy.html) | Receive streamed resources for an App Mesh endpoint (VirtualNode/VirtualGateway) | Read |

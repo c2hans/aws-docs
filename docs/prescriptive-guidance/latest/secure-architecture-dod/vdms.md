@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-architecture-dod/vdms.html
+---
+
+# Virtual Data Center Managed Services
+<a name="vdms"></a>
+
+The purpose of Virtual Data Center Managed Services (VDMS) is to provide host security and shared data center services. The functions of VDMS can either run in the hub of your SCCA, or the mission owner can deploy parts of it in their own AWS accounts. This component can be provided within your AWS environment. For more information about the VDMS, see the [DoD Cloud Computing Security Requirements Guide](https://public.cyber.mil/dccs/dccs-documents/).
+
+The following table contains the minimum requirements for the VDMS. It explains whether the LZA addresses each requirement and which AWS services you can use to meet these requirements.
+
+|
+|
+| ID | VDMS security requirement | AWS technologies | Additional resources | Covered by LZA |
+| --- |--- |--- |--- |--- |
+| 2.1.3.1 | The VDMS shall provide Assured Compliance Assessment Solution (ACAS), or approved equivalent, to conduct continuous monitoring for all enclaves within the CSE. | [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)<br />[AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)<br />[AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html)<br />[Amazon Inspector](https://docs.aws.amazon.com/inspector/latest/user/what-is-inspector.html) | [Vulnerability scanning with Amazon Inspector](https://catalog.us-east-1.prod.workshops.aws/secure-windows/en-US/vulnerability-management/inspector) | Partially covered |
+| 2.1.3.2 | The VDMS shall provide Host Based Security System (HBSS), or approved equivalent, to manage endpoint security for all enclaves within the CSE. | N/A | N/A | Not covered |
+| 2.1.3.3 | The VDMS shall provide identity services to include an Online Certificate Status Protocol (OCloud Workload Security) responder for remote system DoD Common Access Card (CAC) two-factor authentication of DoD privileged users to systems instantiated within the CSE. | Multi-factor authentication (MFA) available through:<br />[AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br />[AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html)<br />[AWS Directory Service for Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)<br />[AWS Private Certificate Authority](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html) | [Configure a CAC card for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/smart-cards.html) | Partially covered |
+| 2.1.3.4 | The VDMS shall provide a configuration and update management system to serve systems and applications for all enclaves within the CSE. | [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html)<br />[AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html) | [Automating patch management with AWS Systems Manager](https://www.youtube.com/watch?v=1bLJdJ4zryU) (YouTube video) | Partially covered |
+| 2.1.3.5 | The VDMS shall provide logical domain services to include directory access, directory federation, Dynamic Host Configuration Protocol (DHCP), and Domain Name System (DNS) for all enclaves within the CSE. | [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)<br />[Amazon Virtual Private Cloud (Amazon VPC)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)<br />[Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) | [Configure DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) | Partially covered |
+| 2.1.3.6 | The VDMS shall provide a network for managing systems and applications within the CSE that is logically separate from the user and data networks. | [Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html)<br />[Amazon VPC subnets](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html) | N/A | Covered |
+| 2.1.3.7 | The VDMS shall provide a system, security, application, and user activity event logging and archiving system for common collection, storage, and access to event logs by privileged users performing BCP and MCP activities. | [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)<br />[AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)<br />[Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)<br />[Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) | [Centralized Logging with OpenSearch](https://aws.amazon.com/solutions/implementations/centralized-logging-with-opensearch/) | Covered |
+| 2.1.3.8 | The VDMS shall provide for the exchange of DoD privileged user authentication and authorization attributes with the CSP's Identity and access management system to enable cloud system provisioning, deployment, and configuration. | [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) | [Enhance your AWS Managed Microsoft AD security configuration](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_network_security.html) | Not covered |
+| 2.1.3.9 | The VDMS shall implement the technical capabilities necessary to execute the mission and objectives of the TCCM role. | [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html)<br />[IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br />[IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | N/A | Partially covered |
+
+As shown in the following image, the LZA lays the foundational components to meet the VDMS base requirements. There are some additional components that you need to configure after the LZA is deployed to help you meet VDMS standards. In the previous table, make sure that you review the links in the **Additional resources** column. These links either help you configure these additional items or provide further security enhancements.
+
+![Architecture diagram of the LZA components that help you meet the SCCA VDMS requirements.](http://docs.aws.amazon.com/prescriptive-guidance/latest/secure-architecture-dod/images/guide-img/9ef8ed3c-685a-4e51-9cc4-4701568d9bae/images/f6be98dd-5b0b-46de-bb69-34938621b995.png)
+
+## Supplemental service integration
+<a name="supplemental-service-integration"></a>
+
+The **Additional resources** column of the previous table lists resources to help you expand on the LZA to meet VDMS requirements. AWS additionally offers some workshop materials to help you configure a secure cloud architecture. Without modification, the LZA meets the IL4/IL5 requirements, but you can deploy additional services to enhance the security of your AWS environment.
+
+For example, Amazon Inspector is a vulnerability management service that continuously scans your AWS workloads for software vulnerabilities and unintended network exposure. You can use it to identify and investigate vulnerabilities in host operating systems, such as Windows and Linux. Although Amazon Inspector might not fully incorporate all necessary requirements for an Host Based Security System (HBSS), it at least provides a base-level vulnerability assessment of instances.
+
+## Operating system patching
+<a name="operating-system-patching"></a>
+
+Operating system patching is a core component of operating a secure environment. AWS offers and recommends using [Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html), a capability of AWS Systems Manager, to maintain consistent patch baselines and automate patch deployment. Patch Manager automates the process of patching managed nodes with both security-related updates and other types of updates.
+
+You can use Patch Manager to apply patches for both operating systems and applications. (On Windows Server, application support is limited to updates for applications released by Microsoft.) For more information, see [Orchestrating multi-step, custom patch processes using AWS Systems Manager Patch Manager](https://aws.amazon.com/blogs/mt/orchestrating-custom-patch-processes-aws-systems-manager-patch-manager/) on the AWS Cloud Operations and Migrations Blog.
+
+For step-by-step instructions on using Patch Manager, see the [AWS Management and Governance Tools Workshop](https://mng.workshop.aws/ssm/use-case-labs/inventory_patch_management/patch.html).
+
+For more information about securing Microsoft Windows workloads on AWS, see the [Securing Windows Workloads on AWS Workshop.](https://catalog.us-east-1.prod.workshops.aws/secure-windows)

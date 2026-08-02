@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/identity-and-access-management.html
+---
+
+# Identity and access management
+<a name="identity-and-access-management"></a>
+
+| DRHCSEC03: Have you implemented controls designed to enhance your digital sovereignty governance posture? |
+| --- |
+|   |
+
+ Digital sovereignty means control over digital assets. Data residency is control over the location of your data.
+
+| DRHCSEC04: How do you control access to support data residency requirements? |
+| --- |
+|   |
+
+ While some least privilege review processes focus decisions on access to actions and data, even more scrutiny is needed on actions that can move data. This helps you reduce the risk of non-compliance with data residency by restricting access using the resources of policies.
+
+**Topics**
++ [DRHCSEC03-BP01 Implement controls that enhance your digital sovereignty governance posture](drhcsec03-bp01.md)
++ [DRHCSEC04-BP01 Restrict access by location of resource](drhcsec04-bp01.md)
++ [DRHCSEC04-BP02 Grant least privilege access with a strong focus on actions that enable the storage of data](drhcsec04-bp02.md)

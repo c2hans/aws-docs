@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PI_metrics_export_CW.individual_widget.html
+---
+
+# Viewing a Performance Insights metric widget in CloudWatch
+<a name="PI_metrics_export_CW.individual_widget"></a>
+
+Select a Performance Insights metric widget in the Amazon RDS Performance Insights dashboard and view the metric data in the CloudWatch console.
+
+**To export a metric widget and view the metrics data in the CloudWatch console**
+
+1. Open the Amazon RDS console at [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds/).
+
+1. In the left navigation pane, choose **Performance Insights**.
+
+1. Choose a DB instance.
+
+   The Performance Insights dashboard appears for the DB instance.
+
+1. Scroll down to **Metrics**.
+
+   By default, the preconfigured dashboard with Performance Insights metrics appears.
+
+1. Choose a metric widget and then choose **View in CloudWatch** in the menu.
+![Selected widget with menu to view in CloudWatch.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/PI-ExprtToCW-SelectedMetric.png)
+
+   The metric data appears in the CloudWatch console.

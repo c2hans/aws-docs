@@ -1,0 +1,38 @@
+---
+source_url: https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-sites-view.html
+---
+
+# View site details in an AWS Cloud WAN global network
+<a name="cloudwan-sites-view"></a>
+
+View details about a Cloud WAN global network site.
+
+**To view details about a site**
+
+1. Access the Network Manager console at [https://console.aws.amazon.com/networkmanager/home/](https://console.aws.amazon.com/networkmanager/home).
+
+1. Under **Connectivity**, choose **Global Networks**.
+
+1. On the **Global networks** page, choose the global network ID.
+
+1. In the navigation pane, choose **Sites**.
+
+1. Choose the link that you want to see site details for.
+
+1. The **General details** page provides information about the site.
+
+1. Choose the **Devices** tab. This page displays information about the devices that are connected to the site. If you don't see a device listed, you'll need to add it. For more information on adding devices, see [Add a device to an AWS Cloud WAN global network](cloudwan-devices-add.md).
+
+1. Choose the **Links** tab. This page displays the links that represent a connection from a device. If you don't see a link listed, you'll need to create the link. For the steps to create a link, see [Create a link for a site in an AWS Cloud WAN global network](cloudwan-site-link-add.md).
+
+1. Choose the **VPNs** tab. This page displays site-related VPN information.
+
+1. Choose the **Monitoring** tab. This page displays **Data In** and **Data Out** information for your links.
+
+1. From the dropdown list, choose the link that you want to view information for.
+
+1. (Optional) Metrics and events use the default time set up in the CloudWatch Events event. To set a custom time frame, choose **Custom** and then choose a **Relative** or **Absolute** time, and then choose if you want to see that date range in **UTC** or the edge location's **Local time zone**.
+
+   Choose **Add to dashboard** to add this metric to your CloudWatch dashboard. For more information about using CloudWatch dashboards, see [Using Amazon CloudWatch Dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html) in the *Amazon CloudWatch User Guide*.
+**Note**
+The **Add to dashboard** option only works if your registered transit gateway is in the US West (Oregon) Region.

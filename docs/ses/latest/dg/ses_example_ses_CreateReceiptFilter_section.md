@@ -1,0 +1,194 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_CreateReceiptFilter_section.html
+---
+
+# Use `CreateReceiptFilter` with an AWS SDK
+<a name="ses_example_ses_CreateReceiptFilter_section"></a>
+
+The following code examples show how to use `CreateReceiptFilter`.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
+
+```
+//! Create an Amazon Simple Email Service (Amazon SES) receipt filter..
+/*!
+  \param receiptFilterName: The name for the receipt filter.
+  \param cidr: IP address or IP address range in Classless Inter-Domain Routing (CIDR) notation.
+  \param policy: Block or allow enum of type ReceiptFilterPolicy.
+  \param clientConfiguration: AWS client configuration.
+  \return bool: Function succeeded.
+ */
+bool AwsDoc::SES::createReceiptFilter(const Aws::String &receiptFilterName,
+                                      const Aws::String &cidr,
+                                      Aws::SES::Model::ReceiptFilterPolicy policy,
+                                      const Aws::Client::ClientConfiguration &clientConfiguration) {
+    Aws::SES::SESClient sesClient(clientConfiguration);
+    Aws::SES::Model::CreateReceiptFilterRequest createReceiptFilterRequest;
+    Aws::SES::Model::ReceiptFilter receiptFilter;
+    Aws::SES::Model::ReceiptIpFilter receiptIpFilter;
+    receiptIpFilter.SetCidr(cidr);
+    receiptIpFilter.SetPolicy(policy);
+    receiptFilter.SetName(receiptFilterName);
+    receiptFilter.SetIpFilter(receiptIpFilter);
+    createReceiptFilterRequest.SetFilter(receiptFilter);
+    Aws::SES::Model::CreateReceiptFilterOutcome createReceiptFilterOutcome = sesClient.CreateReceiptFilter(
+            createReceiptFilterRequest);
+    if (createReceiptFilterOutcome.IsSuccess()) {
+        std::cout << "Successfully created receipt filter." << std::endl;
+    }
+    else {
+        std::cerr << "Error creating receipt filter: " <<
+                  createReceiptFilterOutcome.GetError().GetMessage() << std::endl;
+    }
+
+    return createReceiptFilterOutcome.IsSuccess();
+}
+```
++  For API details, see [CreateReceiptFilter](https://docs.aws.amazon.com/goto/SdkForCpp/email-2010-12-01/CreateReceiptFilter) in *AWS SDK for C\+\+ API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
+
+```
+import {
+  CreateReceiptFilterCommand,
+  ReceiptFilterPolicy,
+} from "@aws-sdk/client-ses";
+import { sesClient } from "./libs/sesClient.js";
+import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
+
+const createCreateReceiptFilterCommand = ({ policy, ipOrRange, name }) => {
+  return new CreateReceiptFilterCommand({
+    Filter: {
+      IpFilter: {
+        Cidr: ipOrRange, // string, either a single IP address (10.0.0.1) or an IP address range in CIDR notation (10.0.0.1/24)).
+        Policy: policy, // enum ReceiptFilterPolicy, email traffic from the filtered addressesOptions.
+      },
+      /*
+        The name of the IP address filter. Only ASCII letters, numbers, underscores, or dashes.
+        Must be less than 64 characters and start and end with a letter or number.
+       */
+      Name: name,
+    },
+  });
+};
+
+const FILTER_NAME = getUniqueName("ReceiptFilter");
+
+const run = async () => {
+  const createReceiptFilterCommand = createCreateReceiptFilterCommand({
+    policy: ReceiptFilterPolicy.Allow,
+    ipOrRange: "10.0.0.1",
+    name: FILTER_NAME,
+  });
+
+  try {
+    return await sesClient.send(createReceiptFilterCommand);
+  } catch (caught) {
+    if (caught instanceof Error && caught.name === "MessageRejected") {
+      /** @type { import('@aws-sdk/client-ses').MessageRejected} */
+      const messageRejectedError = caught;
+      return messageRejectedError;
+    }
+    throw caught;
+  }
+};
+```
++  For API details, see [CreateReceiptFilter](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/ses/command/CreateReceiptFilterCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
+
+```
+class SesReceiptHandler:
+    """Encapsulates Amazon SES receipt handling functions."""
+
+    def __init__(self, ses_client, s3_resource):
+        """
+        :param ses_client: A Boto3 Amazon SES client.
+        :param s3_resource: A Boto3 Amazon S3 resource.
+        """
+        self.ses_client = ses_client
+        self.s3_resource = s3_resource
+
+    def create_receipt_filter(self, filter_name, ip_address_or_range, allow):
+        """
+        Creates a filter that allows or blocks incoming mail from an IP address or
+        range.
+
+        :param filter_name: The name to give the filter.
+        :param ip_address_or_range: The IP address or range to block or allow.
+        :param allow: When True, incoming mail is allowed from the specified IP
+                      address or range; otherwise, it is blocked.
+        """
+        try:
+            policy = "Allow" if allow else "Block"
+            self.ses_client.create_receipt_filter(
+                Filter={
+                    "Name": filter_name,
+                    "IpFilter": {"Cidr": ip_address_or_range, "Policy": policy},
+                }
+            )
+            logger.info(
+                "Created receipt filter %s to %s IP of %s.",
+                filter_name,
+                policy,
+                ip_address_or_range,
+            )
+        except ClientError:
+            logger.exception("Couldn't create receipt filter %s.", filter_name)
+            raise
+```
++  For API details, see [CreateReceiptFilter](https://docs.aws.amazon.com/goto/boto3/email-2010-12-01/CreateReceiptFilter) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
+
+```
+    " iv_allow = abap_true means 'Allow', abap_false means 'Block'
+    DATA(lv_policy) = COND /aws1/sesreceiptfilterpolicy(
+      WHEN iv_allow = abap_true THEN 'Allow'
+      ELSE 'Block'
+    ).
+
+    DATA(lo_ip_filter) = NEW /aws1/cl_sesreceiptipfilter(
+      iv_policy = lv_policy
+      iv_cidr = iv_ip_address_or_range
+    ).
+
+    DATA(lo_filter) = NEW /aws1/cl_sesreceiptfilter(
+      iv_name = iv_filter_name
+      io_ipfilter = lo_ip_filter
+    ).
+
+    TRY.
+        lo_ses->createreceiptfilter( io_filter = lo_filter ).
+        MESSAGE 'Receipt filter created successfully' TYPE 'I'.
+      CATCH /aws1/cx_sesalreadyexistsex INTO DATA(lo_ex1).
+        DATA(lv_error) = |Filter already exists: { lo_ex1->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex1.
+      CATCH /aws1/cx_rt_generic INTO DATA(lo_ex_generic).
+        lv_error = |An error occurred: { lo_ex_generic->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex_generic.
+    ENDTRY.
+```
++  For API details, see [CreateReceiptFilter](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using Amazon SES with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

@@ -1,0 +1,158 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_eventbridge_sns.html
+---
+
+# aws-eventbridge-sns
+<a name="aws_eventbridge_sns"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_eventbridge_sns`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-eventbridge-sns`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.eventbridgesns`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an AWS Events rule and an AWS SNS Topic.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps, Duration } from 'aws-cdk-lib';
+import * as events from 'aws-cdk-lib/aws-events';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import { EventbridgeToSnsProps, EventbridgeToSns } from "@aws-solutions-constructs/aws-eventbridge-sns";
+
+const constructProps: EventbridgeToSnsProps = {
+  eventRuleProps: {
+    schedule: events.Schedule.rate(Duration.minutes(5))
+  }
+};
+
+const constructStack = new EventbridgeToSns(this, 'test-construct', constructProps);
+
+// Grant yourself permissions to use the Customer Managed KMS Key
+const policyStatement = new iam.PolicyStatement({
+  actions: ["kms:Encrypt", "kms:Decrypt"],
+  effect: iam.Effect.ALLOW,
+  principals: [new iam.AccountRootPrincipal()],
+  resources: ["*"]
+});
+
+constructStack.encryptionKey?.addToResourcePolicy(policyStatement);
+```
+
+```
+from aws_solutions_constructs.aws_eventbridge_sns import EventbridgeToSns, EventbridgeToSnsProps
+from aws_cdk import (
+    aws_events as events,
+    aws_iam as iam,
+    Duration,
+    Stack
+)
+from constructs import Construct
+
+construct_stack = EventbridgeToSns(self, 'test-construct',
+                                    event_rule_props=events.RuleProps(
+                                        schedule=events.Schedule.rate(
+                                            Duration.minutes(5))
+                                    ))
+
+# Grant yourself permissions to use the Customer Managed KMS Key
+policy_statement = iam.PolicyStatement(
+    actions=["kms:Encrypt", "kms:Decrypt"],
+    effect=iam.Effect.ALLOW,
+    principals=[iam.AccountRootPrincipal()],
+    resources=["*"]
+)
+
+construct_stack.encryption_key.add_to_resource_policy(policy_statement)
+```
+
+```
+import software.constructs.Construct;
+import java.util.List;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awscdk.Duration;
+import software.amazon.awscdk.services.events.*;
+import software.amazon.awscdk.services.iam.*;
+import software.amazon.awsconstructs.services.eventbridgesns.*;
+
+final EventbridgeToSns constructStack = new EventbridgeToSns(this, "test-construct",
+        new EventbridgeToSnsProps.Builder()
+                .eventRuleProps(new RuleProps.Builder()
+                        .schedule(Schedule.rate(Duration.minutes(5)))
+                        .build())
+                .build());
+
+// Grant yourself permissions to use the Customer Managed KMS Key
+final PolicyStatement policyStatement = PolicyStatement.Builder.create()
+        .actions(List.of("kms:Encrypt", "kms:Decrypt"))
+        .effect(Effect.ALLOW)
+        .principals(List.of(new AccountRootPrincipal()))
+        .resources(List.of("*"))
+        .build();
+
+constructStack.getEncryptionKey().addToResourcePolicy(policyStatement);
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| eventRuleProps |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.RuleProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.RuleProps.html)  | User provided eventRuleProps to override the defaults. |
+| existingTopicObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Existing instance of SNS Topic object, providing both this and `topicProps` will cause an error. |
+| topicProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sns.TopicProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sns.TopicProps.html)  | User provided props to override the default props for the SNS Topic. |
+| existingEventBusInterface? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.IEventBus.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.IEventBus.html)  | Optional - user provided custom EventBus for this construct to use. Providing both this and `eventBusProps` causes an error. |
+| eventBusProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.EventBusProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.EventBusProps.html)  | Optional - user provided properties to override the default properties when creating a custom EventBus. Setting this value to `{}` will create a custom EventBus using all default properties. If neither this nor `existingEventBusInterface` is provided the construct will use the default EventBus. Providing both this and `existingEventBusInterface` causes an error. |
+| enableEncryptionWithCustomerManagedKey? |  `boolean`  | If no key is provided, this flag determines whether the SNS Topic is encrypted with a new CMK or an AWS managed key. This flag is ignored if any of the following are defined: topicProps.masterKey, encryptionKey or encryptionKeyProps. |
+| encryptionKey? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html)  | An optional, imported encryption key to encrypt the SNS Topic with. |
+| encryptionKeyProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html#construct-props](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html#construct-props)  | Optional user provided properties to override the default properties for the KMS encryption key used to encrypt the SNS Topic with. |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| eventBus? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.IEventBus.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.IEventBus.html)  | Returns the instance of events.IEventBus used by the construct |
+| eventsRule |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.Rule.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.Rule.html)  | Returns an instance of events.Rule created by the construct |
+| snsTopic |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sns.Topic.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sns.Topic.html)  | Returns an instance of sns.Topic created by the construct |
+| encryptionKey? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html)  | Returns an instance of kms Key used for the SNS Topic. |
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon EventBridge Rule
+<a name="_amazon_eventbridge_rule"></a>
++ Grant least privilege permissions to EventBridge Rule to publish to the SNS Topic.
+
+### Amazon SNS Topic
+<a name="_amazon_sns_topic"></a>
++ Configure least privilege access permissions for SNS Topic.
++ Enable server-side encryption forSNS Topic using Customer managed KMS Key.
++ Enforce encryption of data in transit.
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing the EventBridge rule, SNS topic, and IAM role created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-eventbridge-sns.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-eventbridge-sns) for this pattern to view the code, read/create issues and pull requests and more.

@@ -1,0 +1,310 @@
+---
+source_url: https://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html
+---
+
+# Security policies for your Application Load Balancer
+<a name="describe-ssl-policies"></a>
+
+Elastic Load Balancing uses a Secure Socket Layer (SSL) negotiation configuration, known as a security policy, to negotiate SSL connections between a client and the load balancer. A security policy is a combination of protocols and ciphers. The protocol establishes a secure connection between a client and a server and ensures that all data passed between the client and your load balancer is private. A cipher is an encryption algorithm that uses encryption keys to create a coded message. Protocols use several ciphers to encrypt data over the internet. During the connection negotiation process, the client and the load balancer present a list of ciphers and protocols that they each support, in order of preference. By default, the first cipher on the server's list that matches any one of the client's ciphers is selected for the secure connection.
+
+**Considerations**
++ An HTTPS listener requires a security policy. If you do not specify a security policy when you create the listener, we use the default security policy. The default security policy depends on how you created the HTTPS listener:
+  + **Console** – The default security policy is `ELBSecurityPolicy-TLS13-1-2-Res-PQ-2025-09`.
+  + **Other methods** (for example, the AWS CLI, AWS CloudFormation, and the AWS CDK) – The default security policy is `ELBSecurityPolicy-2016-08`.
+  + To view the TLS protocol version (log field position 5) and key exchange (log field position 13) for connection requests to your load balancer, enable connection logging and examine the corresponding log entries. For more information, see [Connection logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-connection-logs.html).
+  + Security policies with PQ in their names offer hybrid post-quantum key exchange. For compatibility, they support both classical and post-quantum ML-KEM key exchange algorithms. Clients must support the ML-KEM key exchange to use hybrid post-quantum TLS for key exchange. The hybrid post-quantum policies support SecP256r1MLKEM768, SecP384r1MLKEM1024 and X25519MLKEM768 algorithms. For more information, see [Post-quantum Cryptography](https://aws.amazon.com/security/post-quantum-cryptography/).
+  + AWS recommends implementing the new post-quantum TLS (PQ-TLS) based security policy  `ELBSecurityPolicy-TLS13-1-2-Res-PQ-2025-09` or `ELBSecurityPolicy-TLS13-1-2-Res-FIPS-PQ-2025-09`. This policy ensures backward compatibility by supporting clients capable of negotiating hybrid PQ-TLS, TLS 1.3 only, or TLS 1.2 only, thereby minimizing service disruption during the transition to post-quantum cryptography. You can progressively migrate to more restrictive security policies as your client applications develop the capability to negotiate PQ-TLS for key exchange operations.
++ To meet compliance and security standards that require disabling certain TLS protocol versions, or to support legacy clients requiring deprecated ciphers, you can use one of the `ELBSecurityPolicy-TLS-` security policies. To view the TLS protocol version for requests to your Application Load Balancer, enable access logging for your load balancer and examine the corresponding access log entries. For more information, see [Access logs](load-balancer-access-logs.md).
++ You can restrict which security policies are available to users across your AWS accounts and AWS Organizations by using the [ Elastic Load Balancing condition keys](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.html) in your IAM and service control policies (SCPs), respectively. For more information, see [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.
++ Policies that support only TLS 1.3 support Forward Secrecy (FS). Policies that support TLS 1.3 and TLS 1.2 that have only ciphers of the form TLS\_\* and ECDHE\_\* also provide FS.
++ Application Load Balancers support TLS resumption using PSK (TLS 1.3) and session IDs/session Tickets (TLS 1.2 and older). Resumptions are only supported in connections to the same Application Load Balancer IP address. The 0-RTT Data feature and early\_data extension are not implemented.
++ Application Load Balancers do not support custom security policies.
++ Application Load Balancers support SSL renegotiation for target connections only.
+
+**Backend connections**
++ You can choose the security policy that is used for front-end connections, but not backend connections. The security policy for backend connections depends on the listener security policy. If any of your listeners are using:
+  + **FIPS post-quantum TLS policy** - Backend connections use `ELBSecurityPolicy-TLS13-1-0-FIPS-PQ-2025-09`
+  + **FIPS policy** - Backend connections use `ELBSecurityPolicy-TLS13-1-0-FIPS-2023-04`
+  + **Post-quantum TLS policy** - Backend connections use `ELBSecurityPolicy-TLS13-1-0-PQ-2025-09`
+  + **TLS 1.3 policy** - Backend connections use `ELBSecurityPolicy-TLS13-1-0-2021-06`
+  + **Other TLS policy** - Backend connections use `ELBSecurityPolicy-2016-08`
+
+**Contents**
++ [Example describe-ssl-policies commands](#describe-ssl-policies-examples)
++ [TLS security policies](#tls-security-policies)
+  + [Protocols by policy](#tls-protocols)
+  + [Ciphers by policy](#tls-policy-ciphers)
+  + [Policies by cipher](#tls-cipher-policies)
++ [FIPS security policies](#fips-security-policies)
+  + [Protocols by policy](#fips-protocols)
+  + [Ciphers by policy](#fips-policy-ciphers)
+  + [Policies by cipher](#fips-cipher-policies)
++ [FS supported policies](#fs-supported-policies)
+  + [Protocols by policy](#fs-protocols)
+  + [Ciphers by policy](#fs-policy-ciphers)
+  + [Policies by cipher](#fs-cipher-policies)
+
+## Example describe-ssl-policies commands
+<a name="describe-ssl-policies-examples"></a>
+
+You can describe the protocols and ciphers for a security policy, or find a policy that meets your needs, using the [describe-ssl-policies](https://docs.aws.amazon.com/cli/latest/reference/elbv2/describe-ssl-policies.html) AWS CLI command.
+
+The following example describes the specified policy.
+
+```
+aws elbv2 describe-ssl-policies \
+    --names "{{ELBSecurityPolicy-TLS13-1-2-Res-2021-06}}"
+```
+
+The following example lists policies with the specified string in the policy name.
+
+```
+aws elbv2 describe-ssl-policies \
+    --query "SslPolicies[?contains(Name,'{{FIPS}}')].Name"
+```
+
+The following example lists policies that support the specified protocol.
+
+```
+aws elbv2 describe-ssl-policies \
+    --query "SslPolicies[?contains(SslProtocols,'{{TLSv1.3}}')].Name"
+```
+
+The following example lists policies that support the specified cipher.
+
+```
+aws elbv2 describe-ssl-policies \
+    --query "SslPolicies[?Ciphers[?contains(Name,'{{TLS_AES_128_GCM_SHA256}}')]].Name"
+```
+
+The following example lists policies that do not support the specified cipher.
+
+```
+aws elbv2 describe-ssl-policies \
+    --query 'SslPolicies[?length(Ciphers[?starts_with(Name,`{{AES128-GCM-SHA256}}`)]) == `0`].Name'
+```
+
+## TLS security policies
+<a name="tls-security-policies"></a>
+
+You can use the TLS security policies to meet compliance and security standards that require disabling certain TLS protocol versions, or to support legacy clients that require deprecated ciphers.
+
+Policies that support only TLS 1.3 support Forward Secrecy (FS). Policies that support TLS 1.3 and TLS 1.2 that have only ciphers of the form TLS\_\* and ECDHE\_\* also provide FS.
+
+**Topics**
++ [Protocols by policy](#tls-protocols)
++ [Ciphers by policy](#tls-policy-ciphers)
++ [Policies by cipher](#tls-cipher-policies)
+
+### Protocols by policy
+<a name="tls-protocols"></a>
+
+The following table describes the protocols that each TLS security policy supports.
+
+| Security policies | TLS 1.3 | TLS 1.2 | TLS 1.1 | TLS 1.0 |
+| --- | --- | --- | --- | --- |
+| ELBSecurityPolicy-TLS13-1-3-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-3-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Res-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Res-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext2-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext2-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext1-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext1-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-1-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-0-2021-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes |
+| ELBSecurityPolicy-TLS13-1-0-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes |
+| ELBSecurityPolicy-TLS-1-2-Ext-2018-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS-1-2-2017-01 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS-1-1-2017-01 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-2016-08 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes |
+
+### Ciphers by policy
+<a name="tls-policy-ciphers"></a>
+
+The following table describes the ciphers that each TLS security policy supports.
+
+| Security policy | Ciphers |
+| --- | --- |
+| ELBSecurityPolicy-TLS13-1-3-2021-06<br />ELBSecurityPolicy-TLS13-1-3-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-2021-06<br />ELBSecurityPolicy-TLS13-1-2-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Res-2021-06<br />ELBSecurityPolicy-TLS13-1-2-Res-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Ext2-2021-06<br />ELBSecurityPolicy-TLS13-1-2-Ext2-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Ext1-2021-06<br />ELBSecurityPolicy-TLS13-1-2-Ext1-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-1-2021-06 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-0-2021-06<br />ELBSecurityPolicy-TLS13-1-0-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS-1-2-Ext-2018-06 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS-1-2-2017-01 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS-1-1-2017-01 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-2016-08 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+
+### Policies by cipher
+<a name="tls-cipher-policies"></a>
+
+The following table describes the TLS security policies that support each cipher.
+
+| Cipher name | Security policies | Cipher suite |
+| --- | --- | --- |
+| **OpenSSL** – TLS\_AES\_128\_GCM\_SHA256<br />**IANA** – TLS\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 1301 |
+| **OpenSSL** – TLS\_AES\_256\_GCM\_SHA384<br />**IANA** – TLS\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 1302 |
+| **OpenSSL** – TLS\_CHACHA20\_POLY1305\_SHA256<br />**IANA** – TLS\_CHACHA20\_POLY1305\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 1303 |
+| **OpenSSL** – ECDHE-ECDSA-AES128-GCM-SHA256<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02b |
+| **OpenSSL** – ECDHE-RSA-AES128-GCM-SHA256<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02f |
+| **OpenSSL** – ECDHE-ECDSA-AES128-SHA256<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c023 |
+| **OpenSSL** – ECDHE-RSA-AES128-SHA256<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c027 |
+| **OpenSSL** – ECDHE-ECDSA-AES128-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c009 |
+| **OpenSSL** – ECDHE-RSA-AES128-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c013 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-GCM-SHA384<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02c |
+| **OpenSSL** – ECDHE-RSA-AES256-GCM-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c030 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c024 |
+| **OpenSSL** – ECDHE-RSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c028 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c00a |
+| **OpenSSL** – ECDHE-RSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c014 |
+| **OpenSSL** – AES128-GCM-SHA256<br />**IANA** – TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 9c |
+| **OpenSSL** – AES128-SHA256<br />**IANA** – TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 3c |
+| **OpenSSL** – AES128-SHA<br />**IANA** – TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 2f |
+| **OpenSSL** – AES256-GCM-SHA384<br />**IANA** – TLS\_RSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 9d |
+| **OpenSSL** – AES256-SHA256<br />**IANA** – TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 3d |
+| **OpenSSL** – AES256-SHA<br />**IANA** – TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 35 |
+
+## FIPS security policies
+<a name="fips-security-policies"></a>
+
+The Federal Information Processing Standard (FIPS) is a US and Canadian government standard that specifies the security requirements for cryptographic modules that protect sensitive information. To learn more, see [Federal Information Processing Standard (FIPS) 140](https://aws.amazon.com/compliance/fips/) on the *AWS Cloud Security Compliance* page.
+
+All FIPS policies leverage the AWS-LC FIPS validated cryptographic module. To learn more, see the [ AWS-LC Cryptographic Module](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4631) page on the *NIST Cryptographic Module Validation Program* site.
+
+**Important**
+Policies `ELBSecurityPolicy-TLS13-1-1-FIPS-2023-04` and `ELBSecurityPolicy-TLS13-1-0-FIPS-2023-04` are provided for legacy compatibility only. While they utilize FIPS cryptography using the FIPS140 module, they may not conform to the latest NIST guidance for TLS configuration.
+
+**Topics**
++ [Protocols by policy](#fips-protocols)
++ [Ciphers by policy](#fips-policy-ciphers)
++ [Policies by cipher](#fips-cipher-policies)
+
+### Protocols by policy
+<a name="fips-protocols"></a>
+
+The following table describes the protocols that each FIPS security policy supports.
+
+| Security policies | TLS 1.3 | TLS 1.2 | TLS 1.1 | TLS 1.0 |
+| --- | --- | --- | --- | --- |
+| ELBSecurityPolicy-TLS13-1-3-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-3-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Res-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Res-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext2-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext2-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext1-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext1-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext0-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-2-Ext0-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-1-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-TLS13-1-0-FIPS-2023-04 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes |
+| ELBSecurityPolicy-TLS13-1-0-FIPS-PQ-2025-09 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes |
+
+### Ciphers by policy
+<a name="fips-policy-ciphers"></a>
+
+The following table describes the ciphers that each FIPS security policy supports.
+
+| Security policy | Ciphers |
+| --- | --- |
+| ELBSecurityPolicy-TLS13-1-3-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-3-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-2-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Res-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-2-Res-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Ext2-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-2-Ext2-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Ext1-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-2-Ext1-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-2-Ext0-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-2-Ext0-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-1-FIPS-2023-04 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-TLS13-1-0-FIPS-2023-04<br />ELBSecurityPolicy-TLS13-1-0-FIPS-PQ-2025-09 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+
+### Policies by cipher
+<a name="fips-cipher-policies"></a>
+
+The following table describes the FIPS security policies that support each cipher.
+
+| Cipher name | Security policies | Cipher suite |
+| --- | --- | --- |
+| **OpenSSL** – TLS\_AES\_128\_GCM\_SHA256<br />**IANA** – TLS\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 1301 |
+| **OpenSSL** – TLS\_AES\_256\_GCM\_SHA384<br />**IANA** – TLS\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 1302 |
+| **OpenSSL** – ECDHE-ECDSA-AES128-GCM-SHA256<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02b |
+| **OpenSSL** – ECDHE-RSA-AES128-GCM-SHA256<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02f |
+| **OpenSSL** – ECDHE-ECDSA-AES128-SHA256<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c023 |
+| **OpenSSL** – ECDHE-RSA-AES128-SHA256<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c027 |
+| **OpenSSL** – ECDHE-ECDSA-AES128-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c009 |
+| **OpenSSL** – ECDHE-RSA-AES128-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c013 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-GCM-SHA384<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02c |
+| **OpenSSL** – ECDHE-RSA-AES256-GCM-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c030 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c024 |
+| **OpenSSL** – ECDHE-RSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c028 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c00a |
+| **OpenSSL** – ECDHE-RSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c014 |
+| **OpenSSL** – AES128-GCM-SHA256<br />**IANA** – TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 9c |
+| **OpenSSL** – AES128-SHA256<br />**IANA** – TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 3c |
+| **OpenSSL** – AES128-SHA<br />**IANA** – TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 2f |
+| **OpenSSL** – AES256-GCM-SHA384<br />**IANA** – TLS\_RSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 9d |
+| **OpenSSL** – AES256-SHA256<br />**IANA** – TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 3d |
+| **OpenSSL** – AES256-SHA<br />**IANA** – TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | 35 |
+
+## FS supported policies
+<a name="fs-supported-policies"></a>
+
+FS (Forward Secrecy) supported security policies provide additional safeguards against the eavesdropping of encrypted data, through the use of a unique random session key. This prevents the decoding of captured data, even if the secret long-term key is compromised.
+
+The policies in this section support FS, and "FS" is included in their names. However, these are not the only policies that support FS. Policies that support only TLS 1.3 support FS. Policies that support TLS 1.3 and TLS 1.2 that have only ciphers of the form TLS\_\* and ECDHE\_\* also provide FS.
+
+**Topics**
++ [Protocols by policy](#fs-protocols)
++ [Ciphers by policy](#fs-policy-ciphers)
++ [Policies by cipher](#fs-cipher-policies)
+
+### Protocols by policy
+<a name="fs-protocols"></a>
+
+The following table describes the protocols that each FS supported security policy supports.
+
+| Security policies | TLS 1.3 | TLS 1.2 | TLS 1.1 | TLS 1.0 |
+| --- | --- | --- | --- | --- |
+| ELBSecurityPolicy-FS-1-2-Res-2020-10 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-FS-1-2-Res-2019-08 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-FS-1-2-2019-08 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-FS-1-1-2019-08 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No |
+| ELBSecurityPolicy-FS-2018-06 | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/images/success_icon.png) Yes |
+
+### Ciphers by policy
+<a name="fs-policy-ciphers"></a>
+
+The following table describes the ciphers that each FS supported security policy supports.
+
+| Security policy | Ciphers |
+| --- | --- |
+| ELBSecurityPolicy-FS-1-2-Res-2020-10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-FS-1-2-Res-2019-08 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-FS-1-2-2019-08 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-FS-1-1-2019-08 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+| ELBSecurityPolicy-FS-2018-06 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  |
+
+### Policies by cipher
+<a name="fs-cipher-policies"></a>
+
+The following table describes the FS supported security policies that support each cipher.
+
+| Cipher name | Security policies | Cipher suite |
+| --- | --- | --- |
+| **OpenSSL** – ECDHE-ECDSA-AES128-GCM-SHA256<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02b |
+| **OpenSSL** – ECDHE-RSA-AES128-GCM-SHA256<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02f |
+| **OpenSSL** – ECDHE-ECDSA-AES128-SHA256<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c023 |
+| **OpenSSL** – ECDHE-RSA-AES128-SHA256<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA256 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c027 |
+| **OpenSSL** – ECDHE-ECDSA-AES128-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c009 |
+| **OpenSSL** – ECDHE-RSA-AES128-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c013 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-GCM-SHA384<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c02c |
+| **OpenSSL** – ECDHE-RSA-AES256-GCM-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c030 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c024 |
+| **OpenSSL** – ECDHE-RSA-AES256-SHA384<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA384 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c028 |
+| **OpenSSL** – ECDHE-ECDSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_ECDSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c00a |
+| **OpenSSL** – ECDHE-RSA-AES256-SHA<br />**IANA** – TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html)  | c014 |

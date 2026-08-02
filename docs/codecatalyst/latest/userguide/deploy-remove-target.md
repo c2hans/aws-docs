@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-remove-target.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Removing a deployment target
+<a name="deploy-remove-target"></a>
+
+You can remove a deployment target such as an Amazon ECS cluster or CloudFormation stack from the **Deployment targets** page in the CodeCatalyst console.
+
+**Important**
+When you remove a deployment target, it is removed from the CodeCatalyst console, but remains available in the AWS service that hosts it (if it still exists).
+
+Consider removing a deployment target if the target has become stale in CodeCatalyst. Targets might become stale if:
++ You deleted the workflow that deployed to the target.
++ You changed the stack or cluster that you're deploying to.
++ You deleted the stack or cluster from the CloudFormation or Amazon ECS service in the AWS console.
+
+**To remove a deployment target**
+
+1. Open the CodeCatalyst console at [https://codecatalyst.aws/](https://codecatalyst.aws/).
+
+1. Choose your project.
+
+1. In the navigation pane, choose **CI/CD**, and then choose **Environments**.
+
+1. Choose the name of the environment that contains the deployment target you want to remove. For information about environments, see [Deploying into AWS accounts and VPCs](deploy-environments.md).
+
+1. Choose the **Deployment targets** tab.
+
+1. Choose the radio button next to the deployment target you want to remove.
+
+1. Choose **Remove**.
+
+   The target is removed from the page.

@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/freertos/latest/userguide/getting-started-next-steps.html
+---
+
+# Next steps with FreeRTOS
+<a name="getting-started-next-steps"></a>
+
+**Important**  <a name="deprecation-message-general"></a>
+This page refers to the Amazon-FreeRTOS repository which is deprecated. We recommend that you [start here](freertos-getting-started-modular.md) when you create a new project. If you already have an existing FreeRTOS project based on the now deprecated Amazon-FreeRTOS repository, see the [Amazon-FreeRTOS Github Repository Migration Guide](github-repo-migration.md).
+
+After you build, flash, and run the FreeRTOS demo project for your board, you can visit the FreeRTOS.org website to learn more about [ Creating a New FreeRTOS Project](https://www.freertos.org/Creating-a-new-FreeRTOS-project.html). There are also demos for many FreeRTOS libraries that show how to perform important tasks, interact with AWS IoT services, and program board-specific capabilities (such as cellular modems). For more information, see the [FreeRTOS Library Categories](https://www.freertos.org/libraries/categories.html) page.
+
+The FreeRTOS.org website also has in-depth information on [ the FreeRTOS Kernel](https://www.freertos.org/RTOS.html) as well as fundamental real-time operating system concepts. For more information, see the [FreeRTOS Kernel Developer Docs](https://www.freertos.org/features.html) and [FreeRTOS Kernel Secondary Docs](https://www.freertos.org/kernel/secondarydocs.html) pages.

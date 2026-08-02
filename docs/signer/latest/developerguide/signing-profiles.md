@@ -1,0 +1,102 @@
+---
+source_url: https://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html
+---
+
+# Create a Signer signing profile
+<a name="signing-profiles"></a>
+
+Before you can perform signing jobs, you must create a *signing profile*. A signing profile is unique AWS Signer resource that you can use to perform signing jobs. Signing profiles enable you to sign and verify code artifacts, such as container images and AWS Lambda deployment bundles. Each signing profile designates the signing platform to sign for, a platform ID, and other platform-specific information.
+
+You can create, list, and cancel signing profiles using the Signer console, AWS CLI, or API. Signer manages the code signing certificate and keys associated for only [AWS Lambda](lambda-workflow.md) and [Container images](container-workflow.md) workflows. For [Internet of Things (IoT)](iot-workflow.md) workflows, you can import your own code signing certificate into AWS Certificate Manager.
+
+------
+#### [ Console ]
+
+This section describes the procedures and options for creating a signing profile from the AWS console.
+
+**To create a signing profile**
+
+1. Log into the AWS Signer [console](https://console.aws.amazon.com/signer).
+
+1. Choose **Create signing profile**.
+
+1. On the **Create signing profile** page, provide a unique **Profile name** for your signing profile. Valid characters include uppercase A-Z, lowercase a-z, numbers 0-9, and underscore (\_).
+
+1. For **Signing platform**, choose one of the listed platforms.
+****
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html)
+
+1. Specify the **Signature validity period** in months, days, or years. The default value is 135 months (11 years and 6 months).
+
+1. In the **Tags - optional** section, you can create a **Tag key** and a **Tag value**, then save it with the **Add tag** button. When you assign tags to your signing profile, you can use tag-based resource policies to manage access to the profile.
+
+   You can assign up to 50 tags to a profile.
+
+1. Choose **Create profile**.
+
+------
+#### [ CLI ]
+
+This section describes the procedures and options for creating and managing signing profiles using the AWS CLI. A signing profile is a template that defines the following settings for associated signing jobs:
++ The *signing platform* that designates the file type to be signed. The following platforms are available in the AWS CLI.
+****
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/signer/latest/developerguide/signing-profiles.html)
+
+  For more information about the configurations and parameters that are contained in signing platforms, see [SigningPlatform](https://docs.aws.amazon.com/signer/latest/api/API_SigningPlatform.html) in the *AWS Signer API Reference*.
++ The signature format.
++ The signature algorithms.
++ The validity period of signatures. By default, signature validity is set to 135 months (11 years and 3 months), which is the maximum validity supported. The signature validity period is only applicable for `AWSLambda-SHA384-ECDSA` and `Notation-OCI-SHA384-ECDSA` signing platforms.
+
+After you create the signing profile, you can delegate control of it using [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html). For more information about managing user permissions in AWS Signer, see [Identity and Access Management for AWS Signer](authen-overview.md).
+
+Signing profiles can be created, inspected, listed, and canceled as shown in the following examples.
++ [https://docs.aws.amazon.com/cli/latest/reference/signer/put-signing-profile.html](https://docs.aws.amazon.com/cli/latest/reference/signer/put-signing-profile.html)
+
+  This command creates and saves an AWS Signer signing profile.
+
+  Signatures generated using this platform will expire after the time specified by `--signature-validity-period`. This value may be specified using `DAYS`, `MONTHS`, or `YEARS`. If no validity period is specified, the default value is 135 months.
+
+  In this example, the specified signing platform is `AWSLambda-SHA384-ECDSA`.
+
+  ```
+  $ aws signer put-signing-profile \
+       --profile-name {{my_lambda_signing_profile}} \
+       --platform-id AWSLambda-SHA384-ECDSA \
+       --signature-validity-period value={{10}}, type='{{MONTHS}}'
+  ```
++ [https://docs.aws.amazon.com/cli/latest/reference/signer/get-signing-profile.html](https://docs.aws.amazon.com/cli/latest/reference/signer/get-signing-profile.html)
+
+  This command retrieves a signing profile for inspection.
+
+  ```
+  $ aws signer get-signing-profile --profile-name {{my_lambda_signing_profile}}
+  ```
++ [https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-profiles.html](https://docs.aws.amazon.com/cli/latest/reference/signer/list-signing-profiles.html)
+
+  This command lists the signing profiles that you own or control.
+
+  ```
+  $ aws signer list-signing-profiles
+  ```
++ [https://docs.aws.amazon.com/cli/latest/reference/signer/cancel-signing-profile.html](https://docs.aws.amazon.com/cli/latest/reference/signer/cancel-signing-profile.html)
+
+  This command deletes a signing profile.
+
+  ```
+  $ aws signer cancel-signing-profile \
+       --profile-name {{my_lambda_signing_profile}} \
+       --profile-version {{profile_version}} \
+       --reason "{{e2e notation testing}}" \
+       --effective-time {{1111111111}}
+  ```
+
+------
+#### [ API ]
+
+Signing profiles can be created, inspected, listed, and deleted using the following Signer API actions.
++ [https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_PutSigningProfile.html)
++ [https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_CancelSigningProfile.html)
++ [https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html](https://docs.aws.amazon.com/signer/latest/api/API_GetSigningProfile.html)
++ [https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html](https://docs.aws.amazon.com/signer/latest/api/API_ListSigningProfiles.html)
+
+------

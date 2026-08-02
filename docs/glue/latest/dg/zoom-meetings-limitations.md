@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/zoom-meetings-limitations.html
+---
+
+# Zoom Meetings limitations
+<a name="zoom-meetings-limitations"></a>
+
+The following are limitations or notes for Zoom Meetings:
++ Zoom Meetings does not support orderby.
++ Zoom Meetings does not support filter-based partitioning because there is no field that can satisfy the required criteria.
++ Zoom Meetings does not support record-based partitioning because the pagination limit and offset-based pagination is not supported.

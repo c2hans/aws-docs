@@ -1,0 +1,120 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ListWirelessGateways.html
+---
+
+# ListWirelessGateways
+<a name="API_ListWirelessGateways"></a>
+
+Lists the wireless gateways registered to your AWS account.
+
+## Request Syntax
+<a name="API_ListWirelessGateways_RequestSyntax"></a>
+
+```
+GET /wireless-gateways?maxResults={{MaxResults}}&nextToken={{NextToken}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListWirelessGateways_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [MaxResults](#API_ListWirelessGateways_RequestSyntax) **   <a name="iotwireless-ListWirelessGateways-request-uri-MaxResults"></a>
+The maximum number of results to return in this operation.
+Valid Range: Minimum value of 0. Maximum value of 250.
+
+ ** [NextToken](#API_ListWirelessGateways_RequestSyntax) **   <a name="iotwireless-ListWirelessGateways-request-uri-NextToken"></a>
+To retrieve the next set of results, the `nextToken` value from a previous response; otherwise **null** to receive the first set of results.
+Length Constraints: Maximum length of 4096.
+
+## Request Body
+<a name="API_ListWirelessGateways_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListWirelessGateways_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "NextToken": "string",
+   "WirelessGatewayList": [
+      {
+         "Arn": "string",
+         "Description": "string",
+         "Id": "string",
+         "LastUplinkReceivedAt": "string",
+         "LoRaWAN": {
+            "Beaconing": {
+               "DataRate": number,
+               "Frequencies": [ number ]
+            },
+            "GatewayEui": "string",
+            "JoinEuiFilters": [
+               [ "string" ]
+            ],
+            "MaxEirp": number,
+            "NetIdFilters": [ "string" ],
+            "RfRegion": "string",
+            "SubBands": [ number ]
+         },
+         "Name": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_ListWirelessGateways_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [NextToken](#API_ListWirelessGateways_ResponseSyntax) **   <a name="iotwireless-ListWirelessGateways-response-NextToken"></a>
+The token to use to get the next set of results, or **null** if there are no additional results.
+Type: String
+Length Constraints: Maximum length of 4096.
+
+ ** [WirelessGatewayList](#API_ListWirelessGateways_ResponseSyntax) **   <a name="iotwireless-ListWirelessGateways-response-WirelessGatewayList"></a>
+The ID of the wireless gateway.
+Type: Array of [WirelessGatewayStatistics](API_WirelessGatewayStatistics.md) objects
+
+## Errors
+<a name="API_ListWirelessGateways_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+User does not have permission to perform this action.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+An unexpected error occurred while processing a request.
+HTTP Status Code: 500
+
+ ** ThrottlingException **
+The request was denied because it exceeded the allowed API request rate.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The input did not meet the specified constraints.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListWirelessGateways_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iotwireless-2025-11-06/ListWirelessGateways)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/ListWirelessGateways)

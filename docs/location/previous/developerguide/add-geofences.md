@@ -1,0 +1,293 @@
+---
+source_url: https://docs.aws.amazon.com/location/previous/developerguide/add-geofences.html
+---
+
+# Add geofences with Amazon Location
+<a name="add-geofences"></a>
+
+Geofences contain points and vertices that form a closed boundary, which defines an area of interest. Geofence collections store and manage one or multiple geofences.
+
+Amazon Location geofence collections stores geofences defined by using a standard geospatial data format called [GeoJSON (RFC 7946)](https://geojson.org/). You can use tools, such as [geojson.io](http://geojson.io/), at no charge to draw your geofences graphically and save the output GeoJSON file.
+
+**Note**
+Amazon Location doesn't support clockwise polygons and geofences that cross the antimeridian.
+
+**Topics**
++ [Create a geofence collection](#create-geofence-collection)
++ [Draw geofences](#draw-geofences)
++ [Adding polygon geofences](#draw-polygon-geofences)
++ [Adding circular geofences](#draw-circle-geofences)
+
+## Create a geofence collection
+<a name="create-geofence-collection"></a>
+
+Create a geofence collection to store and manage geofences by using the Amazon Location console, the AWS CLI, or the Amazon Location APIs.
+
+------
+#### [ Console ]
+
+**To create a geofence collection using the Amazon Location console**
+
+1. Open the Amazon Location Service console at [https://console.aws.amazon.com/location/](https://console.aws.amazon.com/location/home).
+
+1. In the left navigation pane, choose **Geofence collections**.
+
+1. Choose **Create geofence collection**.
+
+1. Fill out the following boxes:
+   + ****Name **** – Enter a unique name. For example, {{ExampleGeofenceCollection}}. Maximum 100 characters. Valid entries include alphanumeric characters, hyphens, periods, and underscores.
+   + ****Description **** – Enter an optional description to differentiate your resources.
+
+1. Under **EventBridge rule with CloudWatch as a target**, you can create an optional EventBridge rule to get started [reacting to geofence events.](location-events.md) This enables Amazon Location to publish events to Amazon CloudWatch Logs.
+
+1. (Optional) Under **Tags**, enter a tag **Key** and **Value**. This adds a tag your new geofence collection. For more information, see [Tag your Amazon Location Service resources](tagging.md).
+
+1. (Optional) Under **Customer managed key encryption**, you can choose to **Add a customer managed key**. This adds a symmetric customer managed key that you create, own, and manage over the default AWS owned encryption. For more information, see [Encrypting data at rest](encryption-at-rest.md).
+
+1. Choose **Create geofence collection**.
+
+------
+#### [ API ]
+
+**To create a geofence collection using the Amazon Location APIs**
+
+Use the `[CreateGeofenceCollection](https://docs.aws.amazon.com/location-geofences/latest/APIReference/API_CreateGeofenceCollection.html)` operation from the Amazon Location Geofences APIs.
+
+The following example uses an API request to create a geofence collection called {{ExampleGeofenceCollection}}. The geofence collection is associated with a [customer managed AWS KMS key to encrypt customer data](encryption-at-rest.md).
+
+```
+POST /geofencing/v0/collections
+Content-type: application/json
+
+{
+   "CollectionName": "{{ExampleGeofenceCollection}}",
+   "Description": "Geofence collection 1 for shopping center",
+   "KmsKeyId": "{{1234abcd-12ab-34cd-56ef-1234567890ab}}",
+   "Tags": {
+      "Tag1" : "Value1"
+   }
+}
+```
+
+------
+#### [ AWS CLI ]
+
+**To create a geofence collection using AWS CLI commands**
+
+Use the `[create-geofence-collection](https://docs.aws.amazon.com/cli/latest/reference/location/create-geofence-collection.html)` command.
+
+The following example uses an AWS CLI to create a geofence collection called {{ExampleGeofenceCollection}}. The geofence collection is associated with a [customer managed AWS KMS key to encrypt customer data](encryption-at-rest.md).
+
+```
+aws location \
+  create-geofence-collection \
+  --collection-name "{{{{ExampleGeofenceCollection}}}}" \
+  --description "Shopping center geofence collection" \
+  --kms-key-id "{{1234abcd-12ab-34cd-56ef-1234567890ab}}" \
+  --tags Tag1=Value1
+```
+
+------
+
+**Note**
+Billing depends on your usage. You may incur fees for the use of other AWS services. For more information, see [Amazon Location Service pricing](https://aws.amazon.com/location/pricing/).
+
+## Draw geofences
+<a name="draw-geofences"></a>
+
+Now that you've created your geofence collection, you can define your geofences. Geofences are defined either as a polygon or as a circle. To draw a polygon geofence you can use a GeoJSON editing tool, such as [geojson.io](http://geojson.io/).
+
+To create a geofence as a circle, you must define the center point of the circle, and the radius. For example, if you want to create a geofence to be notified whenever a device comes within 50 meters of a specific location, you would use the latitude and longitude of that location and specify the radius as 50 meters.
+
+Using the Amazon Location Service APIs, you can also add metadata to your geofence, in the form of key-value pairs. These can be useful for storing information about the geofence, such as its type, or other information that is specific to your application. You can use this metadata when [Reacting to Amazon Location Service events with Amazon EventBridge](location-events.md).
+
+## Adding polygon geofences
+<a name="draw-polygon-geofences"></a>
+
+This section describes creating polygon geofences
+
+### Draw geofences using a GeoJSON tool
+<a name="draw-geofences-geojson"></a>
+
+Now that you've created your geofence collection, you can define your geofences by using a GeoJSON editing tool, such as [geojson.io](http://geojson.io/).
+
+**To create a GeoJSON file**
+
+1. Open a GeoJSON editing tool. For example, geojson.io.
+
+1. Choose the **Draw a polygon** icon and draw your area of interest.
+
+1. Choose **Save**, then choose **GeoJSON** from the dropdown menu.
+
+### Put GeoJSON geofences in a geofence collection
+<a name="put-geofences"></a>
+
+ You can use the resulting GeoJSON file to upload your geofences using the Amazon Location Service console, the AWS CLI, or the Amazon Location APIs:
+
+------
+#### [ Console ]
+
+**To add a geofence to a geofence collection using the Amazon Location Service console**
+
+1. Open the Amazon Location Service console at [https://console.aws.amazon.com/location/](https://console.aws.amazon.com/location/home).
+
+1. In the left navigation pane, choose **Geofence collections**.
+
+1. From the **Geofence collections** list, select the name link for the target geofence collection.
+
+1. Under **Geofences**, choose **Create geofences**.
+
+1. In the **Add geofences** window, drag, and drop your GeoJSON into the window.
+
+1. Choose **Add geofences**.
+
+------
+#### [ API ]
+
+**To add geofences using the Amazon Location APIs**
+
+Use the `[PutGeofence](https://docs.aws.amazon.com/location-geofences/latest/APIReference/API_PutGeofence.html)` operation from the Amazon Location Geofences APIs.
+
+The following example uses an API request to add a geofence given the ID {{GEOFENCE-EXAMPLE1}} to a geofence collection called {{ExampleGeofenceCollection}}. It also specifies a single geofence metadata property with the key `Type` and value `loadingArea`.
+
+```
+PUT /geofencing/v0/collections/{{ExampleGeofenceCollection}}/geofences/{{GEOFENCE-EXAMPLE1}}
+    Content-type: application/json
+
+    {
+       "GeofenceProperties": {
+          "Type" : "loadingArea"
+       },
+       "Geometry": {
+          "Polygon": [
+            [
+                [-5.716667, -15.933333],
+                [-14.416667, -7.933333],
+                [-12.316667, -37.066667],
+                [-5.716667, -15.933333]
+            ]
+          ]
+       }
+    }
+```
+
+Alternatively, you can add more than one geofence using the `[BatchPutGeofence](https://docs.aws.amazon.com/location-geofences/latest/APIReference/API_BatchPutGeofence.html)` operation.
+
+```
+POST /geofencing/v0/collections/{{ExampleGeofenceCollection}}/put-geofences
+    Content-type: application/json
+
+    {
+       "Entries": [
+          {
+             "GeofenceProperties": {
+                "Type" : "loadingArea"
+             },
+             "GeofenceId": "{{GEOFENCE-EXAMPLE1}}",
+             "Geometry": {
+                "Polygon": [
+                   [
+                      [-5.716667, -15.933333],
+                      [-14.416667, -7.933333],
+                      [-12.316667, -37.066667],
+                      [-5.716667, -15.933333]
+                   ]
+                ]
+             }
+          }
+       ]
+    }
+```
+
+------
+#### [ AWS CLI ]
+
+**To add a geofence to a geofence collection using AWS CLI commands**
+
+Use the `[put-geofence](https://docs.aws.amazon.com/cli/latest/reference/location/put-geofence.html)` command.
+
+The following example uses an AWS CLI to add a geofence to a geofence collection called {{ExampleGeofenceCollection}}.
+
+```
+$ aws location \
+        put-geofence \
+            --collection-name {{ExampleGeofenceCollection}} \
+            --geofence-id {{ExampleGeofenceTriangle}} \
+            --geofence-properties '{"Type": "loadingArea"}' \
+            --geometry 'Polygon=[[[-5.716667, -15.933333],[-14.416667, -7.933333],[-12.316667, -37.066667],[-5.716667, -15.933333]]]'
+    {
+        "CreateTime": "2020-11-11T00:16:14.487000+00:00",
+        "GeofenceId": "{{ExampleGeofenceTriangle}}",
+        "UpdateTime": "2020-11-11T00:19:59.894000+00:00"
+    }
+```
+
+------
+
+## Adding circular geofences
+<a name="draw-circle-geofences"></a>
+
+This section describes creating circular geofences. You must know the latitude and longitude of the point that you want to be the center of the circle, and the radius in meters of the circle. You can create circular geofences with the Amazon Location APIs or the AWS CLI.
+
+------
+#### [ API ]
+
+**To add circular geofences using the Amazon Location APIs**
+
+Use the `[PutGeofence](https://docs.aws.amazon.com/location/previous/APIReference/API_PutGeofence.html)` operation from the Amazon Location Geofences APIs.
+
+The following example uses an API request to add a geofence given the ID {{GEOFENCE-EXAMPLE2}} to a geofence collection called {{ExampleGeofenceCollection}}:
+
+```
+PUT /geofencing/v0/collections/{{ExampleGeofenceCollection}}/geofences/{{GEOFENCE-EXAMPLE2}}
+    Content-type: application/json
+
+    {
+       "Geometry": {
+          "Circle": {
+            "Center": [-5.716667, -15.933333],
+            "Radius": 50
+          }
+       }
+    }
+```
+
+------
+#### [ AWS CLI ]
+
+**To add a circular geofence to a geofence collection using AWS CLI commands**
+
+Use the `[put-geofence](https://docs.aws.amazon.com/cli/latest/reference/location/put-geofence.html)` command.
+
+The following example uses an AWS CLI to add a geofence to a geofence collection called {{ExampleGeofenceCollection}}.
+
+```
+$ aws location \
+        put-geofence \
+            --collection-name {{ExampleGeofenceCollection}} \
+            --geofence-id {{ExampleGeofenceCircle}} \
+            --geometry 'Circle={Center=[-5.716667, -15.933333], Radius=50}'
+```
+
+**Note**
+You can also put JSON for complex geometry into its own file as in the following example.
+
+```
+$ aws location \
+        put-geofence \
+            --collection-name {{ExampleGeofenceCollection}} \
+            --geofence-id {{ExampleGeofenceCircle}} \
+            --geometry file:circle.json
+```
+In the example, the circle.json file includes JSON for the circle geometry.
+
+```
+{
+    "Circle": {
+        "Center": [-74.006975, 40.717127],
+        "Radius": 287.7897969218057
+    }
+}
+```
+
+------

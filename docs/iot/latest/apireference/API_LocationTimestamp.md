@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_LocationTimestamp.html
+---
+
+# LocationTimestamp
+<a name="API_LocationTimestamp"></a>
+
+Describes how to interpret an application-defined timestamp value from an MQTT message payload and the precision of that value.
+
+## Contents
+<a name="API_LocationTimestamp_Contents"></a>
+
+ ** value **   <a name="iot-Type-LocationTimestamp-value"></a>
+An expression that returns a long epoch time value.
+Type: String
+Required: Yes
+
+ ** unit **   <a name="iot-Type-LocationTimestamp-unit"></a>
+The precision of the timestamp value that results from the expression described in `value`.
+Valid values: `SECONDS` \| `MILLISECONDS` \| `MICROSECONDS` \| `NANOSECONDS`. The default is `MILLISECONDS`.
+Type: String
+Required: No
+
+## See Also
+<a name="API_LocationTimestamp_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/LocationTimestamp)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/LocationTimestamp)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/LocationTimestamp)

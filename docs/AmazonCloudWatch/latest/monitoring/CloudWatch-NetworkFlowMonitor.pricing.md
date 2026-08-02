@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-NetworkFlowMonitor.pricing.html
+---
+
+# Pricing for Network Flow Monitor
+<a name="CloudWatch-NetworkFlowMonitor.pricing"></a>
+
+With Network Flow Monitor, there are no upfront costs or long-term commitments. Pricing for Network Flow Monitor has two components: resources monitored (agents installed and actively sending data) and CloudWatch metrics vended. Note that you are also charged standard CloudWatch prices for any additional metrics, dashboards, alarms, or insights that you create.
+
+For more information about Network Flow Monitor and Amazon CloudWatch pricing, see Network Monitoring on the [Amazon CloudWatch pricing](https://aws.amazon.com//cloudwatch/pricing/) page.

@@ -1,0 +1,78 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/personalize_example_personalize_CreateSolution_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `CreateSolution` with an AWS SDK
+<a name="personalize_example_personalize_CreateSolution_section"></a>
+
+The following code examples show how to use `CreateSolution`.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/personalize#code-examples).
+
+```
+    public static String createPersonalizeSolution(PersonalizeClient personalizeClient,
+            String datasetGroupArn,
+            String solutionName,
+            String recipeArn) {
+
+        try {
+            CreateSolutionRequest solutionRequest = CreateSolutionRequest.builder()
+                    .name(solutionName)
+                    .datasetGroupArn(datasetGroupArn)
+                    .recipeArn(recipeArn)
+                    .build();
+
+            CreateSolutionResponse solutionResponse = personalizeClient.createSolution(solutionRequest);
+            return solutionResponse.solutionArn();
+
+        } catch (PersonalizeException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+        return "";
+    }
+```
++  For API details, see [CreateSolution](https://docs.aws.amazon.com/goto/SdkForJavaV2/personalize-2018-05-22/CreateSolution) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize#code-examples).
+
+```
+// Get service clients module and commands using ES6 syntax.
+import { CreateSolutionCommand } from "@aws-sdk/client-personalize";
+import { personalizeClient } from "./libs/personalizeClients.js";
+// Or, create the client here.
+// const personalizeClient = new PersonalizeClient({ region: "REGION"});
+
+// Set the solution parameters.
+export const createSolutionParam = {
+  datasetGroupArn: "DATASET_GROUP_ARN" /* required */,
+  recipeArn: "RECIPE_ARN" /* required */,
+  name: "NAME" /* required */,
+};
+
+export const run = async () => {
+  try {
+    const response = await personalizeClient.send(
+      new CreateSolutionCommand(createSolutionParam),
+    );
+    console.log("Success", response);
+    return response; // For unit tests.
+  } catch (err) {
+    console.log("Error", err);
+  }
+};
+run();
+```
++  For API details, see [CreateSolution](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/personalize/command/CreateSolutionCommand) in *AWS SDK for JavaScript API Reference*.
+
+------

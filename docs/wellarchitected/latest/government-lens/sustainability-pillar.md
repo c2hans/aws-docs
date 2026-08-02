@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/sustainability-pillar.html
+---
+
+# Sustainability pillar
+<a name="sustainability-pillar"></a>
+
+The sustainability pillar focuses on environmental impacts from government systems, services, and policies, especially energy consumption and efficiency. The government typically has the largest information and communications technology (ICT) expenditure in a jurisdiction, so environmentally sustainable practices in government is key to driving a national sustainability agenda.
+
+ The following questions and best practices are designed to complement the best practices in the [Sustainability Pillar whitepaper](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html).

@@ -1,0 +1,105 @@
+---
+source_url: https://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html
+---
+
+# Amazon Redshift Serverless restore
+<a name="redshift-serverless-restore"></a>
+
+You can restore manual snapshots of databases or tables using the AWS Backup console or AWS CLI.
+
+Redshift Serverless and AWS Backup support *interchangeable restore* for data warehouse snapshots. This means you can restore Redshift Serverless backups to [Amazon Redshift provisioned clusters](redshift-backups.md) or restore provisioned backups to Redshift Serverless namespaces. This applies only to full database restore, not single table restore.
+
+**Restore capabilities for Redshift Serverless**
+
+| Restore capabilities | Namespace | Single table |
+| --- | --- | --- |
+| Type of snapshot | Manual | Manual |
+| Information needed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html)  |
+| Restore target effect | Restores to an existing namespace through a destructive restore that overwrites existing data | Restores to a new table |
+| Interchangeable restore? | Yes.[See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html) | Not supported. |
+
+For more information about configurations, see [Snapshots and recovery points](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-snapshots-recovery-points.html) in the *Amazon Redshift Management Guide*.
+
+## Considerations before restoring
+<a name="redshift-serverless-restore-considerations"></a>
+
+Before you begin a restore job, review the following:
+
+**Configurations**
+
+When you restore an Redshift Serverless snapshot, you choose the target namespace to where you want to restore all the databases or a single table.
+
+When you restore the databases in a snapshot to a Serverless namespace, it is a destructive restore. This means all previously extant data in the target restore namespace is overwritten when you restore to that namespace.
+
+When you restore a single table, it is not a destructive restore. To restore a table, specify the workgroup, snapshot, source database, source table, target restore namespace, and the new table name.
+
+**Permissions**
+
+The permissions required are determined by the target data warehouse (that is, the namespace or provisioned cluster where you will restore the databases or table). The following table can help you determine the permissions, role, and policy to use. For more information on managing IAM policies, see [Identity and access management in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-authentication-access-control.html).
+
+**Required permissions and roles for restore operations**
+
+| Restore target | Needed permission(s) | IAM role and policy |
+| --- | --- | --- |
+| Amazon Redshift provisioned cluster | redshift:RestoreFromClusterSnapshot | AWSBackupServiceRolePolicyForRestores contains this permission; it can be used for aws backup start-restore-job. |
+| Redshift Serverless namespace | redshift-serverless:RestoreFromSnapshot | You must add this permission to the role and policy you will use to call **aws backup start-restore-job**.<br />Since this is a destructive restore job, the service role policy for restores cannot be used. |
+
+## Redshift Serverless restore procedure
+<a name="redshift-serverless-restore-procedure"></a>
+
+Follow these steps to restore Redshift Serverless backups using the AWS Backup console or AWS CLI:
+
+------
+#### [ Console ]
+
+1. Open the AWS Backup console at [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup).
+
+1. In the navigation pane, choose **Settings** and select the Redshift Serverless resource ID to restore.
+
+1. On the **Resource details** page, select the recovery point ID in the **Recovery Points** pane, then choose **Restore**.
+
+1. In the **Restore options** pane, choose to restore the entire data warehouse or a single table.
+
+1. Select the destination target in the **Target data warehouse configuration** pane.
+   + For a full data warehouse restore, choose between Amazon Redshift provisioned cluster or Redshift Serverless namespace.
+   + For a single table restore, specify the source snapshot, database, schema, table name, and target details.
+
+1. Choose the IAM restore role for the job. If not using the default role, ensure the selected role includes the `iam:PassRole` permission.
+
+------
+#### [ AWS CLI ]
+
+Use the **aws backup start-restore-job** command.
+
+AWS Backup works with Redshift Serverless to orchestrate the restore job. The CLI command will be prepended with `aws backup` but will also contain metadata relevant to Redshift Serverless or Amazon Redshift.
+
+The required and optional metadata depends on whether you're restoring a whole data warehouse or a single table.
++ For single table restore, see [restore-table-from-snapshot](https://docs.aws.amazon.com/cli/latest/reference/redshift-serverless/restore-table-from-snapshot.html) in the *AWS CLI Command Reference*.
++ For namespace restore, see [restore-from-snapshot](https://docs.aws.amazon.com/cli/latest/reference/redshift-serverless/restore-from-snapshot.html) in the *AWS CLI Command Reference*.
++ To restore to a Amazon Redshift provisioned cluster, see [restore-from-cluster-snapshot](https://docs.aws.amazon.com/cli/latest/reference/redshift/restore-from-cluster-snapshot.html) in the *AWS CLI Command Reference*.
+
+**Example template for `start-restore-job` to restore to a Serverless namespace:**
+
+```
+aws backup start-restore-job \
+--recovery-point-arn "arn:aws:backup:region:account:snapshot:name--iam-role-arn "arn:aws:iam:account:role/role-name" \
+--metadata \
+--resource-type Redshift Serverless \
+--region {{Region}} \
+--endpoint-url {{URL}}
+```
+
+**Example for `start-restore-job` to restore to a Serverless namespace:**
+
+```
+aws backup start-restore-job \
+--recovery-point-arn "arn:aws:redshift-serverless:us-east-1:123456789012:snapshot/a12bc34d-567e-890f-123g-h4ijk56l78m9" \
+--iam-role-arn "arn:aws:iam::974288443796:role/Backup-Redshift-Role" \
+--metadata 'RestoreType=NAMESPACE_RESTORE,NamespaceIdentifier=redshift-namespace-1-restore' \
+--resource-type "RedshiftServerless" \
+--region us-west-2
+```
+
+After starting the restore job, use **describe-restore-job** to monitor progress.
+
+------

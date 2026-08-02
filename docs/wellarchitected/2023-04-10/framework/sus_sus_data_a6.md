@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/sus_sus_data_a6.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# SUS04-BP05 Remove unneeded or redundant data
+<a name="sus_sus_data_a6"></a>
+
+Remove unneeded or redundant data to minimize the storage resources required to store your datasets.
+
+ **Common anti-patterns:**
++  You duplicate data that can be easily obtained or recreated.
++  You back up all data without considering its criticality.
++  You only delete data irregularly, on operational events, or not at all.
++  You store data redundantly irrespective of the storage service's durability.
++  You turn on Amazon S3 versioning without any business justification.
+
+ **Benefits of establishing this best practice:** Removing unneeded data reduces the storage size required for your workload and the workload environmental impact.
+
+ **Level of risk exposed if this best practice is not established:** Medium
+
+## Implementation guidance
+<a name="implementation-guidance"></a>
+
+ Do not store data that you do not need. Automate the deletion of unneeded data. Use technologies that deduplicate data at the file and block level. Leverage native data replication and redundancy features of services.
+
+ **Implementation steps**
++  Evaluate if you can avoid storing data by using existing publicly available datasets in [AWS Data Exchange](https://aws.amazon.com/data-exchange/) and [Open Data on AWS](https://registry.opendata.aws/).
++  Use mechanisms that can deduplicate data at the block and object level. Here are some examples of how to deduplicate data on AWS:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/sus_sus_data_a6.html)
++  Analyze the data access to identify unneeded data. Automate lifecycle policies. Leverage native service features like [Amazon DynamoDB Time To Live](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html), [Amazon S3 Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html), or [Amazon CloudWatch log retention](https://docs.aws.amazon.com/managedservices/latest/userguide/log-customize-retention.html) for deletion.
++  Use data virtualization capabilities on AWS to maintain data at its source and avoid data duplication.
+  +  [Cloud Native Data Virtualization on AWS](https://www.youtube.com/watch?v=BM6sMreBzoA)
+  +  [Lab: Optimize Data Pattern Using Amazon Redshift Data Sharing](https://wellarchitectedlabs.com/sustainability/300_labs/300_optimize_data_pattern_using_redshift_data_sharing/)
++  Use backup technology that can make incremental backups.
++  Leverage the durability of [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html) and [replication of Amazon EBS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html) to meet your durability goals instead of self-managed technologies (such as a redundant array of independent disks (RAID)).
++  Centralize log and trace data, deduplicate identical log entries, and establish mechanisms to tune verbosity when needed.
++  Pre-populate caches only where justified.
++  Establish cache monitoring and automation to resize the cache accordingly.
++  Remove out-of-date deployments and assets from object stores and edge caches when pushing new versions of your workload.
+
+## Resources
+<a name="resources"></a>
+
+ **Related documents:**
++  [Change log data retention in CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention)
++  [Data deduplication on Amazon FSx for Windows File Server](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/using-data-dedup.html)
++  [Features of Amazon FSx for ONTAP including data deduplication](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html#features-overview)
++  [Invalidating Files on Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html)
++  [Using AWS Backup to back up and restore Amazon EFS file systems](https://docs.aws.amazon.com/efs/latest/ug/awsbackup.html)
++  [What is Amazon CloudWatch Logs?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
++  [Working with backups on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html)
+
+ **Related videos:**
++  [Fuzzy Matching and Deduplicating Data with ML Transforms for AWS Lake Formation](https://www.youtube.com/watch?v=g34xUaJ4WI4)
+
+ **Related examples:**
++  [How do I analyze my Amazon S3 server access logs using Amazon Athena?](https://aws.amazon.com/premiumsupport/knowledge-center/analyze-logs-athena/)

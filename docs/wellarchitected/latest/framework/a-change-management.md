@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/a-change-management.html
+---
+
+# Change management
+<a name="a-change-management"></a>
+
+**Topics**
++ [REL 6. How do you monitor workload resources?](rel-06.md)
++ [REL 7. How do you design your workload to adapt to changes in demand?](rel-07.md)
++ [REL 8. How do you implement change?](rel-08.md)

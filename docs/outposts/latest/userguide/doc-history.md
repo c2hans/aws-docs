@@ -1,0 +1,48 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/userguide/doc-history.html
+---
+
+# Document history for Outposts racks
+<a name="doc-history"></a>
+
+The following table describes the documentation updates for Outposts racks.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [AWS Outposts supports external block volumes from Dell and HPE storage arrays](https://docs.aws.amazon.com/outposts/latest/userguide/outpost-third-party-block-storage.html) | You can use external block data and boot volumes backed by third-party vendors such as, Dell PowerStore and HPE Alletra Storage MP B10000. | September 30, 2025 |
+| [Metrics available for VIF connection status and BGP session state.](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | You can monitor the status of your AWS Outposts VIF connection and BGP session on the CloudWatch console with the **ConnectionStatus** and the **BGPSessionState** metrics.  | July 31, 2025 |
+| [Renewing your subscription and preparing racks for return](https://docs.aws.amazon.com/outposts/latest/userguide/term-end-racks.html) | To renew a subscription or return a rack, you must complete the process at least 10 business days before the current subscription ends. | July 16, 2025 |
+| [Support for AWS services](https://docs.aws.amazon.com/outposts/latest/userguide/what-is-outposts.html#service-available) | AWS Outposts supports AWS services based on the AWS Region in which your Outpost operates. | July 14, 2025 |
+| [Updates to static stability](https://docs.aws.amazon.com/outposts/latest/userguide/outpost-maintenance.html#outpost-network-equipment-maintenance) | In the event that your network is interrupted, instance metrics and logs will be cached locally for up to 7 days. Previously, Outposts could cache logs for just a few hours. | May 1, 2025 |
+| [Updates to the AWS Identity and Access Management service-linked role AWSServiceRoleForOutposts\_{{OutpostID}}](https://docs.aws.amazon.com/outposts/latest/userguide/using-service-linked-roles.html) | The **AWSServiceRoleForOutposts\_{{OutpostID}}** service-linked role permissions are updated to refine how AWS Outposts manages networking resources for private connectivity, with more precise controls over network interface and security group operations needed for service link endpoint instances. | April 17, 2025 |
+| [Capacity management at the asset level](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-capacity.html) | You can modify capacity configuration at the asset level. | March 31, 2025 |
+| [Private connectivity using Direct Connect transit VIF](https://docs.aws.amazon.com/outposts/latest/userguide/private-connectivity.html) | You can now configure the service link to use a Direct Connect transit VIF to enable private connectivity between the Outposts and the home AWS Region. | December 11, 2024 |
+| [External block volumes backed by third-party storage](https://aws.amazon.com/blogs/compute/new-simplifying-the-use-of-third-party-block-storage-with-aws-outposts/) | You can now attach block data volumes backed by compatible third-party block storage systems during the instance-launch process on Outpost. | December 1, 2024 |
+| [Capacity management](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-capacity.html) | You can modify capacity configuration for an instance. | November 11, 2024 |
+| [Capacity management](https://docs.aws.amazon.com/outposts/latest/userguide/order-outpost-capacity.html#modify-instance-capacity) | You can modify the default capacity configuration for your new Outposts order. | April 16, 2024 |
+| [AWS Outposts rack supports service link interface throughput metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html#outposts-metrics) | You can now monitor throughput usage between your Outposts rack service link virtual interfaces (VIFs) and your local network devices, by leveraging `IfTrafficIn` and `IfTrafficOut` Amazon CloudWatch metrics. | November 17, 2023 |
+| [Intra-VPC communication across AWS Outposts with local gateway](https://docs.aws.amazon.com/outposts/latest/userguide/how-outposts-works.html#routing-hiw) | You can establish communication between subnets in the same VPC across different Outposts with local gateways. | August 30, 2023 |
+| [End-of-term options for AWS Outposts racks](https://docs.aws.amazon.com/outposts/latest/userguide/term-end-racks.html) | At the end of your AWS Outposts term, you can renew, end, or convert your subscription. | August 1, 2023 |
+| [Amazon Route 53 on Outposts is available on AWS Outposts racks.](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outpost-resolver.html) | Amazon Route 53 on Outposts includes a Resolver that caches all DNS queries that originate from the AWS Outposts. You can also set up hybrid connectivity between an Outpost and an on-premises DNS resolver when you deploy inbound and outbound endpoints. | July 20, 2023 |
+| [Local gateway inbound routes](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) | You can create and modify local gateway inbound routes to elastic network interfaces on your Outpost. | September 15, 2022 |
+| [Introducing direct VPC routing for AWS Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) | Uses the private IP address of instances in your VPC to facilitate communication with your on-premises network. | September 14, 2022 |
+| [Created AWS Outposts User Guide for Outposts racks](https://docs.aws.amazon.com/outposts/index.html) | AWS Outposts User Guide broke into separate guides for rack and servers.  | September 14, 2022 |
+| [Create and manage local gateway route tables](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html) | Create and modify local gateway route tables and CoIP pools. Manage VIF group associations. | September 14, 2022 |
+| [Placement groups on AWS Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-optimizations.html) | Placement groups that use a spread strategy can distribute instances across hosts.  | June 30, 2022 |
+| [Dedicated Hosts on AWS Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-optimizations.html) | You can now use Dedicated Hosts on Outposts.  | May 31, 2022 |
+| [Shared Outpost sites](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) | Create and manage Outpost sites and share them with other AWS accounts in your organization.  | October 18, 2021 |
+| [New CloudWatch dimension](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | A new CloudWatch dimension for metrics in the AWS Outposts namespace. | October 13, 2021 |
+| [Share S3 buckets](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) | Share and manage S3 buckets on your Outpost. | August 5, 2021 |
+| [Support for some placement groups](https://docs.aws.amazon.com/outposts/latest/userguide/launch-instance.html) | You can use cluster, partition, or spread placement strategies just as you would in a Region.  | July 28, 2021 |
+| [Additional CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | Additional CloudWatch metrics are available for Reserved Instances.  | May 24, 2021 |
+| [Network troubleshooting checklist](https://docs.aws.amazon.com/outposts/latest/userguide/network-troubleshoot.html) | A network troubleshooting checklist is available.  | February 22, 2021 |
+| [Additional CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | Additional CloudWatch metrics for EBS volumes are available.  | February 2, 2021 |
+| [Console ordering updates](https://docs.aws.amazon.com/outposts/latest/userguide/order-outpost-capacity.html) | The console ordering process is updated.  | January 14, 2021 |
+| [Private connectivity](https://docs.aws.amazon.com/outposts/latest/userguide/how-outposts-works.html) | You can configure private connectivity for your Outpost when you create it in the AWS Outposts console.  | December 21, 2020 |
+| [Network readiness checklist](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-requirements.html) | Use the network readiness checklist when you are gathering the information for your Outpost configuration.  | October 28, 2020 |
+| [Shared AWS Outposts resources](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) | With Outpost sharing, Outpost owners can share their Outposts and Outpost resources, including local gateway route tables, with other AWS accounts under the same AWS organization. | October 15, 2020 |
+| [Additional CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | Additional CloudWatch metrics for instance type counts are available.  | September 21, 2020 |
+| [Additional CloudWatch metric](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | An additional CloudWatch metric for service link connected status is available.  | September 11, 2020 |
+| [Support for sharing customer-owned IPv4 addresses](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) | Use AWS Resource Access Manager to share customer-owned IPv4 addresses.  | April 20, 2020 |
+| [Additional CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | Additional CloudWatch metrics for EBS volumes are available. | April 4, 2020 |
+| [Initial release](#doc-history) | This is the initial release of AWS Outposts. | December 3, 2019 |

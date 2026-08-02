@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/dcv/latest/gw-admin/manage-reload.html
+---
+
+# Reloading the Connection Gateway configuration
+<a name="manage-reload"></a>
+
+To reload the configuration of the Connection Gateway using the command line.
+
+**To reload the configuration of the Connection Gateway**
+Use the following command:
+
+```
+$ sudo systemctl reload dcv-connection-gateway
+```

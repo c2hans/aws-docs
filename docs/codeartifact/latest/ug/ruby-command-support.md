@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/ruby-command-support.html
+---
+
+# RubyGems command support
+<a name="ruby-command-support"></a>
+
+CodeArtifact supports the `gem install` and `gem push` commands.
+
+CodeArtifact does not support the following `gem` commands:
++ `gem fetch`
++ `gem info --remote`
++ `gem list --remote`
++ `gem mirror`
++ `gem outdated`
++ `gem owner`
++ `gem query`
++ `gem search`
++ `gem signin`
++ `gem signout`
++ `gem sources --add`
++ `gem sources --update`
++ `gem specification --remote`
++ `gem update`
++ `gem yank`

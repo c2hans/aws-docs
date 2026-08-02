@@ -1,0 +1,68 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ssm_example_ssm_RegisterPatchBaselineForPatchGroup_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `RegisterPatchBaselineForPatchGroup` with a CLI
+<a name="ssm_example_ssm_RegisterPatchBaselineForPatchGroup_section"></a>
+
+The following code examples show how to use `RegisterPatchBaselineForPatchGroup`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To register a patch baseline for a patch group**
+The following `register-patch-baseline-for-patch-group` example registers a patch baseline for a patch group.
+
+```
+aws ssm register-patch-baseline-for-patch-group \
+    --baseline-id {{"pb-045f10b4f382baeda"}} \
+    --patch-group {{"Production"}}
+```
+Output:
+
+```
+{
+    "BaselineId": "pb-045f10b4f382baeda",
+    "PatchGroup": "Production"
+}
+```
+For more information, see Create a Patch Group <https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-group-tagging.html>\_\_ and [Add a Patch Group to a Patch Baseline](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-group-patchbaseline.html) in the *AWS Systems Manager User Guide*.
++  For API details, see [RegisterPatchBaselineForPatchGroup](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/register-patch-baseline-for-patch-group.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example registers a patch baseline for a patch group.**
+
+```
+Register-SSMPatchBaselineForPatchGroup -BaselineId "pb-03da896ca3b68b639" -PatchGroup "Production"
+```
+**Output:**
+
+```
+BaselineId           PatchGroup
+----------           ----------
+pb-03da896ca3b68b639 Production
+```
++  For API details, see [RegisterPatchBaselineForPatchGroup](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example registers a patch baseline for a patch group.**
+
+```
+Register-SSMPatchBaselineForPatchGroup -BaselineId "pb-03da896ca3b68b639" -PatchGroup "Production"
+```
+**Output:**
+
+```
+BaselineId           PatchGroup
+----------           ----------
+pb-03da896ca3b68b639 Production
+```
++  For API details, see [RegisterPatchBaselineForPatchGroup](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-rhel-planning.html
+---
+
+# Planning
+<a name="sap-hana-pacemaker-rhel-planning"></a>
+
+Review the following prerequisites carefully before beginning your high availability cluster deployment, ensuring all infrastructure, operating system, and access requirements are met. Familiarize yourself with linked references, supported configurations and the core concepts which are used in this solution.
+
+**Topics**
++ [Setup Overview](sap-hana-pacemaker-rhel-setup-overview.md)
++ [Vendor Support](sap-hana-pacemaker-rhel-references.md)
++ [Concepts](sap-hana-pacemaker-rhel-concepts.md)
++ [Automated Deployment](sap-hana-pacemaker-rhel-automation.md)
++ [Parameter Reference](sap-hana-pacemaker-rhel-parameters.md)
++ [Architecture Diagrams](sap-hana-pacemaker-rhel-arch-diagrams.md)

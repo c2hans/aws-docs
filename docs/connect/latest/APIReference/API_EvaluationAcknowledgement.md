@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EvaluationAcknowledgement.html
+---
+
+# EvaluationAcknowledgement
+<a name="API_EvaluationAcknowledgement"></a>
+
+Information about the evaluation acknowledgement.
+
+## Contents
+<a name="API_EvaluationAcknowledgement_Contents"></a>
+
+ ** AcknowledgedBy **   <a name="connect-Type-EvaluationAcknowledgement-AcknowledgedBy"></a>
+The agent who acknowledged the evaluation.
+Type: String
+Required: Yes
+
+ ** AcknowledgedTime **   <a name="connect-Type-EvaluationAcknowledgement-AcknowledgedTime"></a>
+When the agent acknowledged the evaluation.
+Type: Timestamp
+Required: Yes
+
+ ** AcknowledgerComment **   <a name="connect-Type-EvaluationAcknowledgement-AcknowledgerComment"></a>
+A comment from the agent when they confirmed they acknowledged the evaluation.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 3072.
+Required: No
+
+## See Also
+<a name="API_EvaluationAcknowledgement_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/EvaluationAcknowledgement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/EvaluationAcknowledgement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/EvaluationAcknowledgement)

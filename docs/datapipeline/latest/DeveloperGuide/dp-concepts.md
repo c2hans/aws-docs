@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-concepts.html
+---
+
+AWS Data Pipeline is no longer available to new customers. Existing customers of AWS Data Pipeline can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/big-data/migrate-workloads-from-aws-data-pipeline/)
+
+# AWS Data Pipeline Concepts
+<a name="dp-concepts"></a>
+
+Before you begin, read about the key concepts and components for AWS Data Pipeline.
+
+**Topics**
++ [Pipeline Definition](dp-how-pipeline-definition.md)
++ [Pipeline Components, Instances, and Attempts](dp-how-tasks-scheduled.md)
++ [Task Runners](dp-how-remote-taskrunner-client.md)
++ [Data Nodes](dp-concepts-datanodes.md)
++ [Databases](dp-concepts-databases.md)
++ [Activities](dp-concepts-activities.md)
++ [Preconditions](dp-concepts-preconditions.md)
++ [Resources](dp-concepts-resources.md)
++ [Actions](dp-concepts-actions.md)

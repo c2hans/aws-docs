@@ -1,0 +1,109 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html
+---
+
+# Event notifications for AWS IoT Wireless
+<a name="iot-wireless-events"></a>
+
+AWS IoT Wireless can publish messages to notify you of events for your LoRaWAN and Sidewalk devices. For example, the device registration event notifies you when the Sidewalk devices in your account have been registered.
+
+## How your resources can be notified of events
+<a name="iot-wireless-events-mqtt"></a>
+
+When certain events occur, AWS IoT Wireless publishes event notifications. For example, when you've provisioned your Sidewalk device, it generates an event. Each event causes a single event notification to be sent. Event notifications are published over MQTT with a JSON payload. The content of the payload depends on the type of event.
+
+**Note**
+Event notifications are published at least once. It's possible for them to be published more than once. The ordering of event notifications is not guaranteed.
+
+### Events and resource types
+<a name="iot-wireless-events-types"></a>
+
+The following table shows the different types of events for which you'll receive notifications. The event types depend on whether the resource type is a wireless device, a wireless gateway, or a Sidewalk account. You can also enable events for your resources at the resource level. This applies to all resources of a particular type, or for select resources, as described in the following section. For more information, see [Event notifications for LoRaWAN resources](iot-wireless-events-notifications.md#iot-lorawan-events) and [Event notifications for Sidewalk resources](iot-wireless-events-notifications.md#iot-sidewalk-events).
+
+**Event types based on resources**
+
+- **Wireless device**
+  - **Resource type:** LoRaWAN / **Event type:** Join
+  - **Resource type:** Sidewalk / **Event type:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)
+
+- **Wireless gateway**
+  - **Resource type:** LoRaWAN
+  - **Event type:** Connection status
+
+- **Sidewalk account**
+  - **Resource type:** Sidewalk
+  - **Event type:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)
+
+### Policy for receiving wireless event notifications
+<a name="iot-wireless-events-policy"></a>
+
+To receive event notifications, your device must use an appropriate policy. The policy allows it to connect to the AWS IoT device gateway and subscribe to MQTT event topics. You must also subscribe to the appropriate topic filters.
+
+The following is an example policy.
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iot:Subscribe",
+                "iot:Receive"
+            ],
+            "Resource": [
+                "arn:aws:iotwireless:{{us-east-1}}:{{111122223333}}:/$aws/iotwireless/events/join/*",
+                "arn:aws:iotwireless:{{us-east-1}}:{{111122223333}}:/$aws/iotwireless/events/connection_status/*",
+                "arn:aws:iotwireless:{{us-east-1}}:{{111122223333}}:/$aws/iotwireless/events/device_registration_state/*",
+                "arn:aws:iotwireless:{{us-east-1}}:{{111122223333}}:/$aws/iotwireless/events/proximity/*"
+            ]
+        }
+    ]
+}
+```
+
+### Format of MQTT topics for wireless events
+<a name="iot-wireless-message-format"></a>
+
+To send you event notifications, AWS IoT uses MQTT reserved topics that begin with a dollar sign ($). You can publish and subscribe to these reserved topics. However, you can't create new topics that begin with a dollar sign.
+
+**Note**
+MQTT topics are specific to your AWS account and use the format `arn:aws:iotwireless:{{aws-region:AWS-account-ID}}:topic/Topic`. For more information, see [MQTT topics](https://docs.aws.amazon.com/iot/latest/developerguide/topics.html) in the *AWS IoT developer guide*.
+
+Reserved MQTT topics for wireless devices use the following format:
++
+
+**Resource-level topics**
+These topics apply to all resources of a particular type in your AWS account.
+
+  `$aws/iotwireless/events/{eventName}/{eventType}/{resourceType}/resources`
++
+
+**Identifier-level topics**
+These topics apply to select resources of a particular type, specified by the resource identifier.
+
+  `$aws/iotwireless/events/{eventName}/{eventType}/{resourceType}/{resourceIdentifierType}/{resourceID}/{id}`
+
+For more information about topics at resource and identifier levels, see [Event configurations](iot-wireless-control-events.md#iot-wireless-control-events-config).
+
+The following table shows examples of MQTT topics for the various events:
+
+**Events and MQTT topics**
+
+| Event | MQTT topic | Notes |
+| --- | --- | --- |
+| Sidewalk device registration state |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
+| Sidewalk proximity |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
+| LoRaWAN join |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
+| LoRaWAN gateway connection status |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
+
+For more information about the different events, see [Event notifications for LoRaWAN resources](iot-wireless-events-notifications.md#iot-lorawan-events) and [Event notifications for Sidewalk resources](iot-wireless-events-notifications.md#iot-sidewalk-events).
+
+If you've subscribed to these topics, you'll be notified when a message is published to one of the topics. For more information, see [MQTT reserved topics](https://docs.aws.amazon.com/iot/latest/developerguide/reserved-topics.html) in the *AWS IoT developer guide*.
+
+## Pricing for wireless events
+<a name="iot-wireless-events-pricing"></a>
+
+For information about pricing for subscribing to events and for receiving notifications, see [AWS IoT Core pricing](https://aws.amazon.com/iot-core/pricing/).

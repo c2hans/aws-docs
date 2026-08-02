@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/RequesterUI/ManagingYourHITs.html
+---
+
+# Manage batches
+<a name="ManagingYourHITs"></a>
+
+On the **Manage** tab, you can manage your batch results, the Workers who work on your batches, and your Qualification Types. On the **Results** page on the **Manage** tab you can view the following:
++ Progress of your batch
++ Batch details
++ Batch results
+
+**Topics**
++ [Display batch progress, details, and results](DisplayingBatchResults.md)
++ [Approve and reject assignments](ApprovingandRejectingWork.md)
++ [Cancel a batch](CancelingaBatch.md)

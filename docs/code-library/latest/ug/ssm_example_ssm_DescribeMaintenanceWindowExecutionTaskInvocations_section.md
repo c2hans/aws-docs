@@ -1,0 +1,95 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ssm_example_ssm_DescribeMaintenanceWindowExecutionTaskInvocations_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `DescribeMaintenanceWindowExecutionTaskInvocations` with a CLI
+<a name="ssm_example_ssm_DescribeMaintenanceWindowExecutionTaskInvocations_section"></a>
+
+The following code examples show how to use `DescribeMaintenanceWindowExecutionTaskInvocations`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To get the specific task invocations performed for a maintenance window task execution**
+The following `describe-maintenance-window-execution-task-invocations` example lists the invocations for the specified task executed as part of the specified maintenance window execution.
+
+```
+aws ssm describe-maintenance-window-execution-task-invocations \
+    --window-execution-id {{"518d5565-5969-4cca-8f0e-da3b2a638355"}} \
+    --task-id {{"ac0c6ae1-daa3-4a89-832e-d384503b6586"}}
+```
+Output:
+
+```
+{
+    "WindowExecutionTaskInvocationIdentities": [
+        {
+            "Status": "SUCCESS",
+            "Parameters": "{\"documentName\":\"AWS-RunShellScript\",\"instanceIds\":[\"i-0000293ffd8c57862\"],\"parameters\":{\"commands\":[\"df\"]},\"maxConcurrency\":\"1\",\"maxErrors\":\"1\"}",
+            "InvocationId": "e274b6e1-fe56-4e32-bd2a-8073c6381d8b",
+            "StartTime": 1487692834.723,
+            "EndTime": 1487692834.871,
+            "WindowExecutionId": "518d5565-5969-4cca-8f0e-da3b2a638355",
+            "TaskExecutionId": "ac0c6ae1-daa3-4a89-832e-d384503b6586"
+        }
+    ]
+}
+```
+For more information, see [View Information About Tasks and Task Executions (AWS CLI)](https://docs.aws.amazon.com/systems-manager/latest/userguide/mw-cli-tutorial-task-info.html) in the *AWS Systems Manager User Guide*.
++  For API details, see [DescribeMaintenanceWindowExecutionTaskInvocations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/describe-maintenance-window-execution-task-invocations.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example lists the invocations for a task executed as part of a maintenance window execution.**
+
+```
+Get-SSMMaintenanceWindowExecutionTaskInvocationList -TaskId "ac0c6ae1-daa3-4a89-832e-d384503b6586" -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
+```
+**Output:**
+
+```
+EndTime           : 2/21/2017 4:00:34 PM
+ExecutionId       :
+InvocationId      : e274b6e1-fe56-4e32-bd2a-8073c6381d8b
+OwnerInformation  :
+Parameters        : {"documentName":"AWS-RunShellScript","instanceIds":["i-0000293ffd8c57862"],"parameters":{"commands":["df"]},"maxConcurrency":"1",
+                    "maxErrors":"1"}
+StartTime         : 2/21/2017 4:00:34 PM
+Status            : FAILED
+StatusDetails     : The instance IDs list contains an invalid entry.
+TaskExecutionId   : ac0c6ae1-daa3-4a89-832e-d384503b6586
+WindowExecutionId : 518d5565-5969-4cca-8f0e-da3b2a638355
+WindowTargetId    :
+```
++  For API details, see [DescribeMaintenanceWindowExecutionTaskInvocations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example lists the invocations for a task executed as part of a maintenance window execution.**
+
+```
+Get-SSMMaintenanceWindowExecutionTaskInvocationList -TaskId "ac0c6ae1-daa3-4a89-832e-d384503b6586" -WindowExecutionId "518d5565-5969-4cca-8f0e-da3b2a638355"
+```
+**Output:**
+
+```
+EndTime           : 2/21/2017 4:00:34 PM
+ExecutionId       :
+InvocationId      : e274b6e1-fe56-4e32-bd2a-8073c6381d8b
+OwnerInformation  :
+Parameters        : {"documentName":"AWS-RunShellScript","instanceIds":["i-0000293ffd8c57862"],"parameters":{"commands":["df"]},"maxConcurrency":"1",
+                    "maxErrors":"1"}
+StartTime         : 2/21/2017 4:00:34 PM
+Status            : FAILED
+StatusDetails     : The instance IDs list contains an invalid entry.
+TaskExecutionId   : ac0c6ae1-daa3-4a89-832e-d384503b6586
+WindowExecutionId : 518d5565-5969-4cca-8f0e-da3b2a638355
+WindowTargetId    :
+```
++  For API details, see [DescribeMaintenanceWindowExecutionTaskInvocations](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

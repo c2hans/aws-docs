@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/access-tokens-github-overview.html
+---
+
+# GitHub and GitHub Enterprise Server access in CodeBuild
+<a name="access-tokens-github-overview"></a>
+
+For GitHub, you can use a personal access token, an OAuth app, a Secrets Manager secret, or a GitHub App connection to access the source provider. For GitHub Enterprise Server, you can use a personal access token, a Secrets Manager secret, or a GitHub App connection to access the source provider.
+
+**Topics**
++ [GitHub App connections for GitHub and GitHub Enterprise Server](connections-github-app.md)
++ [GitHub and GitHub Enterprise Server access token](access-tokens-github.md)
++ [GitHub OAuth app](oauth-app-github.md)

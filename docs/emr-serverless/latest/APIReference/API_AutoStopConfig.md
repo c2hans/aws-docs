@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/emr-serverless/latest/APIReference/API_AutoStopConfig.html
+---
+
+# AutoStopConfig
+<a name="API_AutoStopConfig"></a>
+
+The configuration for an application to automatically stop after a certain amount of time being idle.
+
+## Contents
+<a name="API_AutoStopConfig_Contents"></a>
+
+ ** enabled **   <a name="emrserverless-Type-AutoStopConfig-enabled"></a>
+Enables the application to automatically stop after a certain amount of time being idle. Defaults to true.
+Type: Boolean
+Required: No
+
+ ** idleTimeoutMinutes **   <a name="emrserverless-Type-AutoStopConfig-idleTimeoutMinutes"></a>
+The amount of idle time in minutes after which your application will automatically stop. Defaults to 15 minutes.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 10080.
+Required: No
+
+## See Also
+<a name="API_AutoStopConfig_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/emr-serverless-2021-07-13/AutoStopConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/emr-serverless-2021-07-13/AutoStopConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/emr-serverless-2021-07-13/AutoStopConfig)

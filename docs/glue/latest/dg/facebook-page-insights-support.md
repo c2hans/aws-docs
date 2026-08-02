@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-page-insights-support.html
+---
+
+# AWS Glue support for Facebook Page Insights
+<a name="facebook-page-insights-support"></a>
+
+AWS Glue supports Facebook Page Insights as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Facebook Page Insights.
+
+**Supported as a target?**
+No.
+
+**Supported Facebook Page Insights API versions**
+The following Facebook Page Insights API versions are supported:
++ v17
++ v18
++ v19
++ v20
++ v21

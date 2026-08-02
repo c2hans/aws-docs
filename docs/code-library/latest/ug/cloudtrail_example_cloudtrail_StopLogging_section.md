@@ -1,0 +1,53 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudtrail_example_cloudtrail_StopLogging_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `StopLogging` with a CLI
+<a name="cloudtrail_example_cloudtrail_StopLogging_section"></a>
+
+The following code examples show how to use `StopLogging`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To stop logging a trail**
+The following `stop-logging` command turns off logging for `Trail1`:
+
+```
+aws cloudtrail stop-logging --name {{Trail1}}
+```
++  For API details, see [StopLogging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudtrail/stop-logging.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: Suspends the recording of AWS API calls and log file delivery for the trail named 'myExampleTrail'. This example assumes the trail was created in the same region as the current shell default.**
+
+```
+Stop-CTLogging -Name myExampleTrail
+```
+**Example 2: Suspends the recording of AWS API calls and log file delivery for a trail that was created in a region other than the current shell default (in this case, the Frankfurt (eu-central-1) region).**
+
+```
+Stop-CTLogging -Name myExampleTrail -Region eu-central-1
+```
++  For API details, see [StopLogging](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: Suspends the recording of AWS API calls and log file delivery for the trail named 'myExampleTrail'. This example assumes the trail was created in the same region as the current shell default.**
+
+```
+Stop-CTLogging -Name myExampleTrail
+```
+**Example 2: Suspends the recording of AWS API calls and log file delivery for a trail that was created in a region other than the current shell default (in this case, the Frankfurt (eu-central-1) region).**
+
+```
+Stop-CTLogging -Name myExampleTrail -Region eu-central-1
+```
++  For API details, see [StopLogging](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

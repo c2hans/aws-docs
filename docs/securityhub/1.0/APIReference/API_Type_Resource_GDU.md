@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Type_Resource_GDU.html
+---
+
+# Amazon GuardDuty objects
+<a name="API_Type_Resource_GDU"></a>
+
+****Amazon GuardDuty objects****
++ [AwsGuardDutyDetectorDetails](API_AwsGuardDutyDetectorDetails.md)
++ [AwsGuardDutyDetectorFeaturesDetails](API_AwsGuardDutyDetectorFeaturesDetails.md)
++ [AwsGuardDutyDetectorDataSourcesCloudTrailDetails](API_AwsGuardDutyDetectorDataSourcesCloudTrailDetails.md)
++ [AwsGuardDutyDetectorDataSourcesDetails](API_AwsGuardDutyDetectorDataSourcesDetails.md)
++ [AwsGuardDutyDetectorDataSourcesDnsLogsDetails](API_AwsGuardDutyDetectorDataSourcesDnsLogsDetails.md)
++ [AwsGuardDutyDetectorDataSourcesFlowLogsDetails](API_AwsGuardDutyDetectorDataSourcesFlowLogsDetails.md)
++ [AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails](API_AwsGuardDutyDetectorDataSourcesKubernetesAuditLogsDetails.md)
++ [AwsGuardDutyDetectorDataSourcesKubernetesDetails](API_AwsGuardDutyDetectorDataSourcesKubernetesDetails.md)
++ [AwsGuardDutyDetectorDataSourcesMalwareProtectionDetails](API_AwsGuardDutyDetectorDataSourcesMalwareProtectionDetails.md)
++ [AwsGuardDutyDetectorDataSourcesMalwareProtectionScanEc2InstanceWithFindingsDetails](API_AwsGuardDutyDetectorDataSourcesMalwareProtectionScanEc2InstanceWithFindingsDetails.md)
++ [AwsGuardDutyDetectorDataSourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesDetails](API_AwsGuardDutyDetectorDataSourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesDetails.md)
++ [AwsGuardDutyDetectorDataSourcesS3LogsDetails](API_AwsGuardDutyDetectorDataSourcesS3LogsDetails.md)

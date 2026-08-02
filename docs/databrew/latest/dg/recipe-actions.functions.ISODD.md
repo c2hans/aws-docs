@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.functions.ISODD.html
+---
+
+# IS\_ODD
+<a name="recipe-actions.functions.ISODD"></a>
+
+Returns a Boolean value in a new column that indicates whether the source column or value is odd. If the source column or value is a decimal, the result is false.
+
+**Parameters**
++ `sourceColumn` – The name of an existing column.
++ `targetColumn` – The name of the new column to be created.
++ `trueString` – A string that indicates whether the value is odd.
++ `falseString` – A string that indicates whether the value is *not* odd.
+
+**Example**
+
+```
+{
+    "RecipeAction": {
+        "Operation": "IS_ODD",
+        "Parameters": {
+            "falseString": "Value is even",
+            "sourceColumn": "weight_kg",
+            "targetColumn": "weight_kg_IS_ODD",
+            "trueString": "Value is odd"
+        }
+    }
+}
+```

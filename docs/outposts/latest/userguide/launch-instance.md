@@ -1,0 +1,530 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/userguide/launch-instance.html
+---
+
+# Launch an instance on your Outposts rack
+<a name="launch-instance"></a>
+
+After your Outpost is installed and the compute and storage capacity is available for use, you can get started by creating resources. Launch Amazon EC2 instances and create Amazon EBS volumes on your Outpost using an Outpost subnet. You can also create snapshots of Amazon EBS volumes on your Outpost. For more information, see [Amazon EBS local snapshots on AWS Outposts](https://docs.aws.amazon.com/ebs/latest/userguide/snapshots-outposts.html) in the *Amazon EBS User Guide*.
+
+**Prerequisite**
+You must have an Outpost installed at your site. For more information, see [Create an order for an Outposts rack](https://docs.aws.amazon.com/outposts/latest/userguide/launch-instance.html).
+
+**Topics**
++ [Step 1: Create a VPC](#create-vpc)
++ [Step 2: Create a subnet and custom route table](#create-subnet)
++ [Step 3: Configure local gateway connectivity](#configure-lgw-connectivity)
++ [Step 4: Configure the on-premises network](#configure-on-prem)
++ [Step 5: Launch an instance on the Outpost](#launch-instances)
++ [Step 6: Test the connectivity](#test-connecitivity)
+
+## Step 1: Create a VPC
+<a name="create-vpc"></a>
+
+You can extend any VPC in the AWS Region to your Outpost. Skip this step if you already have a VPC that you can use.
+
+**To create a VPC for your Outpost**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. Choose the same Region as the Outposts rack.
+
+1. On the navigation pane, choose **Your VPCs** and then choose **Create VPC**.
+
+1. Choose **VPC only**.
+
+1. (Optional) for **Name tag** enter a name for the VPC.
+
+1. For **IPv4 CIDR block**, choose **IPv4 CIDR manual input** and enter the IPv4 address range for the VPC in the **IPv4 CIDR** text box.
+**Note**
+If you want to use Direct VPC routing, specify a CIDR range that does not overlap with the IP range that you use in your on-premises network.
+
+1. For **IPv6 CIDR block**, choose **No IPv6 CIDR block**.
+
+1. For **Tenancy**, choose **Default**.
+
+1. (Optional) To add a tag to your VPC, choose **Add tag**, and enter a key and a value.
+
+1. Choose **Create VPC**.
+
+## Step 2: Create a subnet and custom route table
+<a name="create-subnet"></a>
+
+You can create and add an Outpost subnet to any VPC in the AWS Region that the Outpost is homed to. When you do so, the VPC includes the Outpost. For more information, see [Network components](https://docs.aws.amazon.com/outposts/latest/userguide/how-outposts-works.html#outposts-networking-components).
+
+**Note**
+If you are launching an instance in an Outpost subnet that has been shared with you by another AWS account, skip to [Step 5: Launch an instance on the Outpost](https://docs.aws.amazon.com/outposts/latest/userguide/launch-instance.html#launch-instances).
+
+**Topics**
+
+### 2a: Create an Outpost subnet
+<a name="create-outpost-subnet"></a>
+
+**To create an Outpost subnet**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. On the navigation pane, choose **Outposts**.
+
+1. Select the Outpost, and then choose **Actions**, **Create subnet**. You are redirected to create a subnet in the Amazon VPC console. We select the Outpost for you and the Availability Zone that the Outpost is homed to.
+
+1. Select a VPC.
+
+1. In **Subnet settings**, optionally name your subnet and specify an IP address range for the subnet.
+
+1. Choose **Create subnet**.
+
+1. (Optional) To make it easier to identify Outpost subnets, enable the **Outpost ID** column on the **Subnets** page. To enable the column, choose the **Preferences** icon, select **Outpost ID**, and choose **Confirm**.
+
+### 2b: Create a custom route table
+<a name="create-custom-routetable"></a>
+
+Use the following procedure to create a custom route table with a route to the local gateway. You can't use the same route table as the Availability Zone subnets.
+
+**To create a custom route table**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. On the navigation pane, choose **Route tables**.
+
+1. Choose **Create route table**.
+
+1. (Optional) For **Name**, enter a name for your route table.
+
+1. For **VPC**, choose your VPC.
+
+1. (Optional) To add a tag, choose **Add new tag** and enter the tag key and tag value.
+
+1. Choose **Create route table**.
+
+### 2c: Associate the Outpost subnet and custom route table
+<a name="associate-routetable-subnet"></a>
+
+To apply route table routes to a particular subnet, you must associate the route table with the subnet. A route table can be associated with multiple subnets. However, a subnet can only be associated with one route table at a time. Any subnet not explicitly associated with a table is implicitly associated with the main route table by default.
+
+**To associate the Outpost subnet and custom route table**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. From the navigation pane, choose **Route tables**.
+
+1. On the **Subnet associations** tab, choose **Edit subnet associations**.
+
+1. Select the check box for the subnet to associate with the route table.
+
+1. Choose **Save associations**.
+
+## Step 3: Configure local gateway connectivity
+<a name="configure-lgw-connectivity"></a>
+
+The local gateway (LGW) enables connectivity between your Outpost subnets and your on-premises network.
+
+For more information about the LGW, see [Local gateways](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-local-gateways.html).
+
+To provide connectivity between an instance in the Outposts subnet and your local network, you must complete the following tasks.
+
+**Topics**
+
+### 3a. Create a custom local gateway route table
+<a name="create-lgw-routetable"></a>
+
+Use the following procedure to create a custom route table for your local gateway.
+
+**To create a custom local gateway route table**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. To change the AWS Region, use the Region selector in the upper-right corner of the page.
+
+1. On the navigation pane, choose **Local gateway route table**.
+
+1. Choose **Create local gateway route table**.
+
+1. (Optional) For **Name**, enter a name for your route table.
+
+1. For **Local gateway**, choose your local gateway.
+
+1. For **Mode**, choose a mode for communication with your on-premises network.
+   + Choose **Direct VPC routing** to use the private IP addresses of your instances.
+   + Choose **CoIP** to use addresses from your customer-owned IP address pools. For more information, see [Create a CoIP pool](https://docs.aws.amazon.com/outposts/latest/userguide/coip-pools.html).
+
+1. (Optional) To add a tag, choose **Add new tag** and enter a tag key and a tag value.
+
+1. Choose **Create local gateway route table**.
+
+### 3b: Associate the VPC with the custom route table
+<a name="associate-vpc-with-route-table"></a>
+
+Use the following procedure to associate a VPC with your local gateway route table. They are not associated by default.
+
+**To associate a VPC with the custom local gateway route table**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. To change the AWS Region, use the Region selector in the upper-right corner of the page.
+
+1. On the navigation pane, choose **Local gateway route tables**.
+
+1. Select the route table, and then choose **Actions**, **Associate VPC**.
+
+1. For **VPC ID**, select the VPC to associate with the local gateway route table.
+
+1. (Optional) To add a tag, choose **Add new tag** and enter a tag key and a tag value.
+
+1. Choose **Associate VPC**.
+
+### 3c: Add a route entry in the Outpost subnet route table
+<a name="add-route-entry"></a>
+
+Add a route entry in the Outpost subnet route table to enable traffic between the Outpost subnets and the local gateway.
+
+Outpost subnets within a VPC, which is associated with a local gateway route table, can have an additional target type of a Outpost Local gateway ID for their route tables. Consider the case where you want route traffic with a destination address of 172.16.100.0/24 to the customer network through the local gateway. To do this, edit the Outpost subnet route table and add the following route with the destination network and a target of the local gateway.
+
+| Destination | Target |
+| --- | --- |
+| 172.16.100.0/24 | `lgw-id` |
+
+**To add a route entry with the local gateway as a target in the subnet route table**
+
+1. Open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the navigation pane, choose **Route tables**, and select the route table you created in [2b: Create a custom route table](#create-custom-routetable).
+
+1. Choose **Actions** and then **Edit routes**.
+
+1. To add a route, choose **Add route**.
+
+1. For **Destination** enter the destination CIDR block to the customer network.
+
+1. For **Target**, choose **Outpost local gateway ID**.
+
+1. Choose **Save changes**.
+
+### 3d: Create a local gateway routing domain by associating the custom route table with the VIF groups
+<a name="associate-route-table-vif-group"></a>
+
+VIF groups are logical groupings of virtual interfaces (VIFs). Associate the local gateway route table with the VIF group to create a local gateway routing domain.
+
+**To associate the custom route table with the VIF groups**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. To change the AWS Region, use the Region selector in the upper-right corner of the page.
+
+1. On the navigation pane, choose **Networking** and then **LGW routing domain**.
+
+1. Choose **Create LGW routing domain**.
+
+1. Enter a name for the local gateway routing domain.
+
+1. Choose the local gateway, the local gateway VIF group, and the local gateway route table.
+
+1. Choose **Create LGW routing domain**.
+
+### 3e: Add a route entry in the route table
+<a name="add-route-entry-lg-route-table"></a>
+
+Edit the local gateway route table to add a static route that has the VIF Group as the target and your on-premise subnet CIDR range (or 0.0.0.0/0) as the destination.
+
+| Destination | Target |
+| --- | --- |
+| 172.16.100.0/24 | `VIF-Group-ID` |
+
+**To add a route entry in the LGW route table**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. On the navigation pane, choose **Local gateway route table**.
+
+1. Select the local gateway route table, and then choose **Actions**, **Edit routes**.
+
+1. Choose **Add route**.
+
+1. For **Destination**, enter the destination CIDR block, a single IP address, or the ID of a prefix list.
+
+1. For **Target**, select the ID of the local gateway.
+
+1. Choose **Save routes**.
+
+### 3f: (Optional) Assign a customer-owned IP address to the instance
+<a name="allocate-coip"></a>
+
+If you configured your Outposts in the [3a. Create a custom local gateway route table](#create-lgw-routetable) to use a customer-owned IP (CoIP) address pool, you must allocate an Elastic IP address from the CoIP address pool and associate the Elastic IP address with the instance. For more information, see [Customer-owned IP addresses](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#ip-addressing).
+
+If you configured your Outposts to use Direct VPC routing (DVR), skip this step.
+
+**Shared customer-owned IP address pools**
+If you want to use a shared customer-owned IP address pool, the pool must be shared before you start the configuration. For information about how to share a customer-owned IPv4 address, see [Sharing an Outpost resource](sharing-outposts.md#sharing-share).
+
+## Step 4: Configure the on-premises network
+<a name="configure-on-prem"></a>
+
+The Outpost establishes an external BGP peering from each Outpost Networking Device (OND) to a Customer Local Network Device (CND) to send and receive traffic from your on-premise network to the Outposts.
+
+For more information, see [Local gateway BGP connectivity](https://docs.aws.amazon.com/outposts/latest/userguide/local-rack.html#local-gateway-bgp-connectivity).
+
+To send and receive traffic from your on-premises network to the Outpost, ensure that:
++ On your customer network devices, the BGP session on the Local gateway VLAN is in an ACTIVE state from your network devices.
++ For traffic going from on-premises to Outposts, ensure that you are receiving in your CND the BGP advertisements from Outposts. These BGP advertisements contain the routes that your on-premises network must use to route traffic from the on-premises to Outpost. Hence, ensure that your network has the right routing between Outposts and the on-prem resources.
++ For traffic going from Outposts to on-premises network, ensure that your CNDs are sending the BGP route advertisements of on-premises network subnets to Outposts (or 0.0.0.0/0). As an alternative, you can advertise a default route (e.g. 0.0.0.0/0) to Outposts. The on-premises subnets advertised by the CNDs must have a CIDR range that is equal to or included in the CIDR range that you configured in [3e: Add a route entry in the route table](#add-route-entry-lg-route-table).
+
+### Example: BGP advertisements in Direct VPC mode
+<a name="example-bgp-direct-vpc"></a>
+
+Consider the scenario where you have an Outpost, configured in Direct VPC mode, with two Outposts rack network devices connected by a local gateway VLAN to two customer local network devices. The following is configured:
++ A VPC with a CIDR block 10.0.0.0/16.
++ An Outpost subnet in the VPC with a CIDR block 10.0.3.0/24.
++ A subnet in the on-premises network with a CIDR block 172.16.100.0/24
++ Outposts uses the private IP address of the instances on the Outpost subnet, for example 10.0.3.0/24, to communicate with your on-premises network.
+
+In this scenario, the route advertised by:
++ The local gateway to your customer devices is 10.0.3.0/24.
++ Your customer devices to the Outpost local gateway is 172.16.100.0/24.
+
+As a result, the local gateway will send outbound traffic with destination network 172.16.100.0/24 to your customer devices. Ensure that your network has the correct routing configuration to deliver traffic to the destination host within your network.
+
+For the specific commands and configuration required to check the state of the BGP sessions and the advertised routes within those sessions, see the documentation from your networking vendor.
+
+For troubleshooting, see [AWS Outposts rack network troubleshooting checklist](https://docs.aws.amazon.com/outposts/latest/userguide/network-troubleshoot.html).
+
+### Example: BGP advertisements in CoIP mode
+<a name="example-bgp-coip"></a>
+
+Consider the scenario where you have an Outpost with two Outposts rack network devices connected by a local gateway VLAN to two customer local network devices. The following is configured:
++ A VPC with a CIDR block 10.0.0.0/16.
++ A subnet in the VPC with a CIDR block 10.0.3.0/24.
++ A customer-owned IP pool (10.1.0.0/26).
++ An Elastic IP address association that associates 10.0.3.112 to 10.1.0.2.
++ A subnet in the on-premises network with a CIDR block 172.16.100.0/24
++ Communication between your Outpost and on-premises network will use the CoIP Elastic IPs to address instances in the Outpost, the VPC CIDR range is not used.
+
+In this scenario the route advertised by:
++ The local gateway to your customer devices is 10.1.0.0/26.
++ Your customer devices to the Outpost local gateway is 172.16.100.0/24.
+
+As a result the local gateway will send outbound traffic with destination network 172.16.100.0/24 to your customer devices. Ensure that your network has the right routing configuration to deliver traffic to the destination host within your network.
+
+For the specific commands and configuration required to check the state of the BGP sessions and the advertised routes within those sessions, see the documentation from your networking vendor.
+
+For troubleshooting, see [AWS Outposts rack network troubleshooting checklist](https://docs.aws.amazon.com/outposts/latest/userguide/network-troubleshoot.html).
+
+For troubleshooting, see [AWS Outposts rack network troubleshooting checklist](https://docs.aws.amazon.com/outposts/latest/network-userguide/network-troubleshoot.html).
+
+## Step 5: Launch an instance on the Outpost
+<a name="launch-instances"></a>
+
+You can launch EC2 instances in the Outpost subnet that you created, or in an Outpost subnet that has been shared with you. Security groups control inbound and outbound VPC traffic for instances in an Outpost subnet, just as they do for instances in an Availability Zone subnet. To connect to an EC2 instance in an Outpost subnet, you can specify a key pair when you launch the instance, just as you do for instances in an Availability Zone subnet.
+
+**Considerations**
++ To use block data or boot volumes backed by compatible third-party storage, you must provision and configure these volumes for use with EC2 instances on Outposts. For more information, see [Third-party block storage on Outposts racks](outpost-third-party-block-storage.md).
++ You can create a [placement group](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-optimizations.html) to influence how Amazon EC2 should attempt to place groups of interdependent instances on the Outposts hardware. You can choose the placement group strategy that meets the needs of your workload.
++ If you add Amazon EBS volumes, you must use the gp2 volume type.
++ If your Outpost has been configured to use a customer-owned IP (CoIP) address pool, you must assign a customer-owned IP address to any instances that you launch.
+
+**To launch instances in your Outpost subnet**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. On the navigation pane, choose **Outposts**.
+
+1. Select the Outpost, and then choose **Actions, View details**.
+
+1. On the **Outpost summary** page, choose **Launch instance**. You are redirected to the instance launch wizard in the Amazon EC2 console. We select the Outpost subnet for you, and show you only the instance types that are supported by your Outposts rack.
+
+1. Choose an instance type that is supported by your Outposts rack. Note that instances that appear greyed out are not available.
+
+1. (Optional) To launch the instances into a placement group, expand **Advanced details** and scroll to **Placement group**. You can either select an existing placement group or create a new placement group.
+
+1. (Optional) You can add a [third-party data volume](outpost-third-party-block-storage.md).
+
+   1. Expand **Configure storage**. Next to **External storage volume**, choose **Edit**.
+
+   1. For **Storage Network Protocol**, choose **iSCSI**.
+
+   1. Enter the Initiator IQN, then add the target IP address, the port, and the IQN of the external storage array.
+
+1. Complete the wizard to launch the instance in your Outpost subnet. For more information, see [Launch an EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-instance-wizard.html) in the *Amazon EC2 User Guide*:
+
+## Step 6: Test the connectivity
+<a name="test-connecitivity"></a>
+
+You can test connectivity by using the appropriate use cases.
+
+**Test connectivity from your local network to the Outpost**
+From a computer in your local network, run the `ping` command to the Outpost instance's private IP address.
+
+```
+ping {{10.0.3.128}}
+```
+
+The following is example output.
+
+```
+Pinging 10.0.3.128
+
+Reply from 10.0.3.128:  bytes=32 time=<1ms TTL=128
+Reply from 10.0.3.128:  bytes=32 time=<1ms TTL=128
+Reply from 10.0.3.128:  bytes=32 time=<1ms TTL=128
+
+Ping statistics for 10.0.3.128
+Packets:  Sent = 3,  Received = 3,  Lost = 0 (0% lost)
+
+Approximate round trip time in milliseconds
+Minimum = 0ms,  Maximum = 0ms,  Average = 0ms
+```
+
+**Test the connectivity from an Outpost instance to your local network**
+Depending on your operating system, use **ssh** or **rdp** to connect to the private IP address of your Outpost instance. For information about connecting to a Linux instance, see [Connect to your EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect.html) in the *Amazon EC2 User Guide*.
+
+After the instance is running, run the `ping` command to an IP address of a computer in your local network. In the following example, the IP address is 172.16.0.130.
+
+```
+ping {{172.16.0.130}}
+```
+
+The following is example output.
+
+```
+Pinging 172.16.0.130
+
+Reply from 172.16.0.130:  bytes=32 time=<1ms TTL=128
+Reply from 172.16.0.130:  bytes=32 time=<1ms TTL=128
+Reply from 172.16.0.130:  bytes=32 time=<1ms TTL=128
+
+Ping statistics for 172.16.0.130
+Packets:  Sent = 3,  Received = 3,  Lost = 0 (0% lost)
+
+Approximate round trip time in milliseconds
+Minimum = 0ms,  Maximum = 0ms,  Average = 0ms
+```
+
+**Test connectivity between the AWS Region and the Outpost**
+Launch an instance in the subnet in the AWS Region. For example, use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command.
+
+```
+aws ec2 run-instances \
+    --image-id {{ami-abcdefghi1234567898}} \
+    --instance-type c5.large \
+    --key-name {{MyKeyPair}} \
+    --security-group-ids {{sg-1a2b3c4d123456787}} \
+    --subnet-id {{subnet-6e7f829e123445678}}
+```
+
+After the instance is running, perform the following operations:
+
+1. Get the private IP address of the instance in the AWS Region. This information is available in the Amazon EC2 console on the instance detail page.
+
+1. Depending on your operating system, use **ssh** or **rdp** to connect to the private IP address of your Outpost instance.
+
+1. Run the **ping** command from your Outpost instance, specifying the IP address of the instance in the AWS Region.
+
+   ```
+   ping {{10.0.1.5}}
+   ```
+
+   The following is example output.
+
+   ```
+   Pinging 10.0.1.5
+
+   Reply from 10.0.1.5:  bytes=32 time=<1ms TTL=128
+   Reply from 10.0.1.5:  bytes=32 time=<1ms TTL=128
+   Reply from 10.0.1.5:  bytes=32 time=<1ms TTL=128
+
+   Ping statistics for 10.0.1.5
+   Packets:  Sent = 3,  Received = 3,  Lost = 0 (0% lost)
+
+   Approximate round trip time in milliseconds
+   Minimum = 0ms,  Maximum = 0ms,  Average = 0ms
+   ```
+
+### Customer-owned IP address connectivity examples
+<a name="test-connecitivity-coip"></a>
+
+**Test the connectivity from your local network to the Outpost**
+From a computer in your local network, run the `ping` command to the Outpost instance's customer-owned IP address.
+
+```
+ping {{172.16.0.128}}
+```
+
+The following is example output.
+
+```
+Pinging 172.16.0.128
+
+Reply from 172.16.0.128:  bytes=32 time=<1ms TTL=128
+Reply from 172.16.0.128:  bytes=32 time=<1ms TTL=128
+Reply from 172.16.0.128:  bytes=32 time=<1ms TTL=128
+
+Ping statistics for 172.16.0.128
+Packets:  Sent = 3,  Received = 3,  Lost = 0 (0% lost)
+
+Approximate round trip time in milliseconds
+Minimum = 0ms,  Maximum = 0ms,  Average = 0ms
+```
+
+**Test the connectivity from an Outpost instance to your local network**
+Depending on your operating system, use **ssh** or **rdp** to connect to the private IP address of your Outpost instance. For information, see [Connect to your EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect.html) in the *Amazon EC2 User Guide*.
+
+After the Outpost instance is running, run the `ping` command to an IP address of a computer in your local network.
+
+```
+ping {{172.16.0.130}}
+```
+
+The following is example output.
+
+```
+Pinging 172.16.0.130
+
+Reply from 172.16.0.130:  bytes=32 time=<1ms TTL=128
+Reply from 172.16.0.130:  bytes=32 time=<1ms TTL=128
+Reply from 172.16.0.130:  bytes=32 time=<1ms TTL=128
+
+Ping statistics for 172.16.0.130
+Packets:  Sent = 3,  Received = 3,  Lost = 0 (0% lost)
+
+Approximate round trip time in milliseconds
+Minimum = 0ms,  Maximum = 0ms,  Average = 0ms
+```
+
+**Test connectivity between the AWS Region and the Outpost**
+Launch an instance in the subnet in the AWS Region. For example, use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command.
+
+```
+aws ec2 run-instances \
+    --image-id {{ami-abcdefghi1234567898}} \
+    --instance-type c5.large \
+    --key-name {{MyKeyPair}} \
+    --security-group-ids {{sg-1a2b3c4d123456787}} \
+    --subnet-id {{subnet-6e7f829e123445678}}
+```
+
+After the instance is running, perform the following operations:
+
+1. Get the AWS Region instance private IP address, for example 10.0.0.5. This information is available in the Amazon EC2 console on the instance detail page.
+
+1. Depending on your operating system, use **ssh** or **rdp** to connect to the private IP address of your Outpost instance.
+
+1. Run the `ping` command from your Outpost instance to the AWS Region instance IP address.
+
+   ```
+   ping {{10.0.0.5}}
+   ```
+
+   The following is example output.
+
+   ```
+   Pinging 10.0.0.5
+
+   Reply from 10.0.0.5:  bytes=32 time=<1ms TTL=128
+   Reply from 10.0.0.5:  bytes=32 time=<1ms TTL=128
+   Reply from 10.0.0.5:  bytes=32 time=<1ms TTL=128
+
+   Ping statistics for 10.0.0.5
+   Packets:  Sent = 3,  Received = 3,  Lost = 0 (0% lost)
+
+   Approximate round trip time in milliseconds
+   Minimum = 0ms,  Maximum = 0ms,  Average = 0ms
+   ```

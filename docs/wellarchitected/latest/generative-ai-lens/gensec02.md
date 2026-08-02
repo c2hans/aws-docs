@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/gensec02.html
+---
+
+# Response validation
+<a name="gensec02"></a>
+
+| GENSEC02: How do you stop generative AI applications from generating harmful, biased, or factually incorrect responses? |
+| --- |
+|   |
+
+ It is possible for foundation models to generate harmful, biased, or factually incorrect responses, particularly when guardrails are not implemented appropriately or at all. This risk creates additional considerations for generative AI applications before they are put into a production environment. This question addresses the best practices associated with mitigating risk of harmful, biased or factually incorrect responses.
+
+**Topics**
++ [GENSEC02-BP01 Implement guardrails to mitigate harmful or incorrect model responses](gensec02-bp01.md)

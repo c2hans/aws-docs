@@ -1,0 +1,150 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/keyspaces_example_keyspaces_CreateKeyspace_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `CreateKeyspace` with an AWS SDK
+<a name="keyspaces_example_keyspaces_CreateKeyspace_section"></a>
+
+The following code examples show how to use `CreateKeyspace`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Learn the basics](keyspaces_example_keyspaces_Scenario_GetStartedKeyspaces_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Keyspaces#code-examples).
+
+```
+    /// <summary>
+    /// Create a new keyspace.
+    /// </summary>
+    /// <param name="keyspaceName">The name for the new keyspace.</param>
+    /// <returns>The Amazon Resource Name (ARN) of the new keyspace.</returns>
+    public async Task<string> CreateKeyspace(string keyspaceName)
+    {
+        var response =
+            await _amazonKeyspaces.CreateKeyspaceAsync(
+                new CreateKeyspaceRequest { KeyspaceName = keyspaceName });
+        return response.ResourceArn;
+    }
+```
++  For API details, see [CreateKeyspace](https://docs.aws.amazon.com/goto/DotNetSDKV3/keyspaces-2022-02-10/CreateKeyspace) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/keyspaces#code-examples).
+
+```
+    public static void createKeySpace(KeyspacesClient keyClient, String keyspaceName) {
+        try {
+            CreateKeyspaceRequest keyspaceRequest = CreateKeyspaceRequest.builder()
+                    .keyspaceName(keyspaceName)
+                    .build();
+
+            CreateKeyspaceResponse response = keyClient.createKeyspace(keyspaceRequest);
+            System.out.println("The ARN of the KeySpace is " + response.resourceArn());
+
+        } catch (KeyspacesException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+```
++  For API details, see [CreateKeyspace](https://docs.aws.amazon.com/goto/SdkForJavaV2/keyspaces-2022-02-10/CreateKeyspace) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Kotlin ]
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/keyspaces#code-examples).
+
+```
+suspend fun createKeySpace(keyspaceNameVal: String) {
+    val keyspaceRequest =
+        CreateKeyspaceRequest {
+            keyspaceName = keyspaceNameVal
+        }
+
+    KeyspacesClient.fromEnvironment { region = "us-east-1" }.use { keyClient ->
+        val response = keyClient.createKeyspace(keyspaceRequest)
+        println("The ARN of the KeySpace is ${response.resourceArn}")
+    }
+}
+```
++  For API details, see [CreateKeyspace](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/keyspaces#code-examples).
+
+```
+class KeyspaceWrapper:
+    """Encapsulates Amazon Keyspaces (for Apache Cassandra) keyspace and table actions."""
+
+    def __init__(self, keyspaces_client):
+        """
+        :param keyspaces_client: A Boto3 Amazon Keyspaces client.
+        """
+        self.keyspaces_client = keyspaces_client
+        self.ks_name = None
+        self.ks_arn = None
+        self.table_name = None
+
+    @classmethod
+    def from_client(cls):
+        keyspaces_client = boto3.client("keyspaces")
+        return cls(keyspaces_client)
+
+    def create_keyspace(self, name):
+        """
+        Creates a keyspace.
+
+        :param name: The name to give the keyspace.
+        :return: The Amazon Resource Name (ARN) of the new keyspace.
+        """
+        try:
+            response = self.keyspaces_client.create_keyspace(keyspaceName=name)
+            self.ks_name = name
+            self.ks_arn = response["resourceArn"]
+        except ClientError as err:
+            logger.error(
+                "Couldn't create %s. Here's why: %s: %s",
+                name,
+                err.response["Error"]["Code"],
+                err.response["Error"]["Message"],
+            )
+            raise
+        else:
+            return self.ks_arn
+```
++  For API details, see [CreateKeyspace](https://docs.aws.amazon.com/goto/boto3/keyspaces-2022-02-10/CreateKeyspace) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kys#code-examples).
+
+```
+    TRY.
+        oo_result = lo_kys->createkeyspace(
+          iv_keyspacename = iv_keyspace_name ).
+        MESSAGE 'Keyspace created successfully.' TYPE 'I'.
+      CATCH /aws1/cx_kysconflictexception.
+        MESSAGE 'Keyspace already exists.' TYPE 'I'.
+      CATCH /aws1/cx_rt_service_generic INTO DATA(lo_exception).
+        DATA(lv_error) = |"{ lo_exception->av_err_code }" - { lo_exception->av_err_msg }|.
+        MESSAGE lv_error TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [CreateKeyspace](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

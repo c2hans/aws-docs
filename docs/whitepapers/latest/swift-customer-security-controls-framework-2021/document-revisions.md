@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/document-revisions.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Document Revisions
+<a name="document-revisions"></a>
+
+To be notified about updates to this whitepaper, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Update whitepaper](#document-revisions) | Updated for v2022 changes from SWIFT | October 4, 2022 |
+| [Initial publication](#document-revisions) | Whitepaper published. | July 21, 2021 |

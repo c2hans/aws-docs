@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ConsumerDescription.html
+---
+
+# ConsumerDescription
+<a name="API_ConsumerDescription"></a>
+
+An object that represents the details of a registered consumer. This type of object is returned by [DescribeStreamConsumer](API_DescribeStreamConsumer.md).
+
+## Contents
+<a name="API_ConsumerDescription_Contents"></a>
+
+ ** ConsumerARN **   <a name="Streams-Type-ConsumerDescription-ConsumerARN"></a>
+When you register a consumer, Kinesis Data Streams generates an ARN for it. You need this ARN to be able to call [SubscribeToShard](API_SubscribeToShard.md).
+If you delete a consumer and then create a new one with the same name, it won't have the same ARN. That's because consumer ARNs contain the creation timestamp. This is important to keep in mind if you have IAM policies that reference consumer ARNs.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `^(arn):aws.*:kinesis:.*:\d{12}:.*stream\/[a-zA-Z0-9_.-]+\/consumer\/[a-zA-Z0-9_.-]+:[0-9]+`
+Required: Yes
+
+ ** ConsumerCreationTimestamp **   <a name="Streams-Type-ConsumerDescription-ConsumerCreationTimestamp"></a>
+
+Type: Timestamp
+Required: Yes
+
+ ** ConsumerName **   <a name="Streams-Type-ConsumerDescription-ConsumerName"></a>
+The name of the consumer is something you choose when you register the consumer.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9_.-]+`
+Required: Yes
+
+ ** ConsumerStatus **   <a name="Streams-Type-ConsumerDescription-ConsumerStatus"></a>
+A consumer can't read data while in the `CREATING` or `DELETING` states.
+Type: String
+Valid Values: `CREATING | DELETING | ACTIVE`
+Required: Yes
+
+ ** StreamARN **   <a name="Streams-Type-ConsumerDescription-StreamARN"></a>
+The ARN of the stream with which you registered the consumer.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:aws.*:kinesis:.*:\d{12}:stream/\S+`
+Required: Yes
+
+## See Also
+<a name="API_ConsumerDescription_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/kinesis-2013-12-02/ConsumerDescription)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/kinesis-2013-12-02/ConsumerDescription)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/kinesis-2013-12-02/ConsumerDescription)

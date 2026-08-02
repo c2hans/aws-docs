@@ -1,0 +1,60 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::SES::MailManagerTrafficPolicy IngressIpv6Expression
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression"></a>
+
+The union type representing the allowed types for the left hand side of an IPv6 condition.
+
+## Syntax
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression-syntax.json"></a>
+
+```
+{
+  "[Evaluate](#cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-evaluate)" : {{IngressIpv6ToEvaluate}},
+  "[Operator](#cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-operator)" : {{String}},
+  "[Values](#cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-values)" : {{[ String, ... ]}}
+}
+```
+
+### YAML
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression-syntax.yaml"></a>
+
+```
+  [Evaluate](#cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-evaluate): {{
+    IngressIpv6ToEvaluate}}
+  [Operator](#cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-operator): {{String}}
+  [Values](#cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-values): {{
+    - String}}
+```
+
+## Properties
+<a name="aws-properties-ses-mailmanagertrafficpolicy-ingressipv6expression-properties"></a>
+
+`Evaluate`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-evaluate"></a>
+The left hand side argument of an IPv6 condition expression.
+*Required*: Yes
+*Type*: [IngressIpv6ToEvaluate](aws-properties-ses-mailmanagertrafficpolicy-ingressipv6toevaluate.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Operator`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-operator"></a>
+The matching operator for an IPv6 condition expression.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `CIDR_MATCHES | NOT_CIDR_MATCHES`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Values`  <a name="cfn-ses-mailmanagertrafficpolicy-ingressipv6expression-values"></a>
+The right hand side argument of an IPv6 condition expression.
+*Required*: Yes
+*Type*: Array of String
+*Maximum*: `49`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

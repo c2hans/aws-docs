@@ -1,0 +1,76 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/route-53_example_route-53_ListQueryLoggingConfigs_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListQueryLoggingConfigs` with a CLI
+<a name="route-53_example_route-53_ListQueryLoggingConfigs_section"></a>
+
+The following code examples show how to use `ListQueryLoggingConfigs`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list query logging configurations**
+The following `list-query-logging-configs` example lists information about the first 100 query logging configurations in your AWS account, for the hosted zone `Z1OX3WQEXAMPLE`.
+
+```
+aws route53 list-query-logging-configs \
+    --hosted-zone-id {{Z1OX3WQEXAMPLE}}
+```
+Output:
+
+```
+{
+    "QueryLoggingConfigs": [
+        {
+            "Id": "964ff34e-ae03-4f06-80a2-9683cexample",
+            "HostedZoneId": "Z1OX3WQEXAMPLE",
+            "CloudWatchLogsLogGroupArn": "arn:aws:logs:us-east-1:111122223333:log-group:/aws/route53/example.com:*"
+        }
+    ]
+}
+```
+For more information, see [Logging DNS queries](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/query-logs.html) in the *Amazon Route 53 Developer Guide*.
++  For API details, see [ListQueryLoggingConfigs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/route53/list-query-logging-configs.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example returns all the configurations for DNS query logging that are associated with the current AWS account.**
+
+```
+Get-R53QueryLoggingConfigList
+```
+**Output:**
+
+```
+Id                                   HostedZoneId   CloudWatchLogsLogGroupArn
+--                                   ------------   -------------------------
+59b0fa33-4fea-4471-a88c-926476aaa40d Z385PDS6EAAAZR arn:aws:logs:us-east-1:111111111112:log-group:/aws/route53/example1.com:*
+ee528e95-4e03-4fdc-9d28-9e24ddaaa063 Z94SJHBV1AAAAZ arn:aws:logs:us-east-1:111111111112:log-group:/aws/route53/example2.com:*
+e38dddda-ceb6-45c1-8cb7-f0ae56aaaa2b Z3MEQ8T7AAA1BF arn:aws:logs:us-east-1:111111111112:log-group:/aws/route53/example3.com:*
+```
++  For API details, see [ListQueryLoggingConfigs](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example returns all the configurations for DNS query logging that are associated with the current AWS account.**
+
+```
+Get-R53QueryLoggingConfigList
+```
+**Output:**
+
+```
+Id                                   HostedZoneId   CloudWatchLogsLogGroupArn
+--                                   ------------   -------------------------
+59b0fa33-4fea-4471-a88c-926476aaa40d Z385PDS6EAAAZR arn:aws:logs:us-east-1:111111111112:log-group:/aws/route53/example1.com:*
+ee528e95-4e03-4fdc-9d28-9e24ddaaa063 Z94SJHBV1AAAAZ arn:aws:logs:us-east-1:111111111112:log-group:/aws/route53/example2.com:*
+e38dddda-ceb6-45c1-8cb7-f0ae56aaaa2b Z3MEQ8T7AAA1BF arn:aws:logs:us-east-1:111111111112:log-group:/aws/route53/example3.com:*
+```
++  For API details, see [ListQueryLoggingConfigs](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

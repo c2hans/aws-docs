@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-analysis.html
+---
+
+# Configuration and vulnerability analysis in Amazon EventBridge
+<a name="eb-analysis"></a>
+
+Configuration and IT controls are a shared responsibility between AWS and you, our customer. For more information, see the AWS [shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/).

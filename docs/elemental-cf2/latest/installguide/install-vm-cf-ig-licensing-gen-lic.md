@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cf2/latest/installguide/install-vm-cf-ig-licensing-gen-lic.html
+---
+
+This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
+
+# Step b: Generate a License Activation Key File
+<a name="install-vm-cf-ig-licensing-gen-lic"></a>
+
+The operating system that you installed on your virtual machine (VM) has a utility you can use to generate an activation key file.
+
+**To generate an activation key file**
+
+1. From the VMware vSphere client, choose **Open Console** and access the desired VM, using the *elemental* user credentials.
+
+   You are logged in at the home directory (/elemental).
+
+1. Enter this command.
+
+   ```
+   [elemental@hostname ~] ./keygen
+   ```
+
+1. At the prompt, enter the activation code for the first VM, including the dashes. The following file is created in the home directory: `activation_<hostname of the system>.key `
+
+1. Copy the activation key file from the VM to your workstation using SCP.
+
+   Use the *elemental* user credentials.
+
+1. Repeat these steps for each VM.
+   + Make sure to repeat step 1 for each AWS Elemental Conductor File activation key file that you want to generate: each key file must contain the hostname of the individual VM.
+   + Make sure to use a different activation code on each VM.

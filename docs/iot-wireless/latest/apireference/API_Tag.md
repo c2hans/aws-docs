@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Tag.html
+---
+
+# Tag
+<a name="API_Tag"></a>
+
+A simple label consisting of a customer-defined key-value pair
+
+## Contents
+<a name="API_Tag_Contents"></a>
+
+ ** Key **   <a name="iotwireless-Type-Tag-Key"></a>
+The tag's key value.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Required: Yes
+
+ ** Value **   <a name="iotwireless-Type-Tag-Value"></a>
+The tag's value.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: Yes
+
+## See Also
+<a name="API_Tag_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/Tag)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/Tag)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/Tag)

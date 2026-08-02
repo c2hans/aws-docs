@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/ad-ds-deployment-scenarios.html
+---
+
+# AD DS deployment scenarios
+<a name="ad-ds-deployment-scenarios"></a>
+
+ Backing Amazon WorkSpaces is the AWS Directory Service, and the proper design and deployment of the directory service is critical. The following six scenarios build on the [Active Directory Domain Services](https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/architecture.html) *in the AWS Quick Start guide*, and describe the best practice deployment options for AD DS when used with Amazon WorkSpaces. The [Design Considerations](using-multi-region-aws-managed-active-directory-with-amazon-workspaces.md) section of this document details the specific requirements and best practices of using AD Connector for WorkSpaces, which is an integral part of the overall WorkSpaces design concept.
++  **Scenario 1: Using AD Connector to proxy authentication to on-premises AD DS** — In this scenario, network connectivity (VPN/Direct Connect) is in place to the customer, with all authentication proxied via AWS Directory Service (AD Connector) to the customer on-premises AD DS.
++  **Scenario 2: Extending on-premises AD DS into AWS (Replica)** — This scenario is similar to scenario 1, but here a replica of the customer AD DS is deployed on AWS in combination with AD Connector, reducing latency of authentication/query requests to AD DS and the AD DS global catalog.
++  **Scenario 3: Standalone isolated deployment using AWS Directory Service in the AWS Cloud** — This is an isolated scenario and doesn’t include connectivity back to the customer for authentication. This approach uses AWS Directory Service (Microsoft AD) and AD Connector. Although this scenario doesn’t rely on connectivity to the customer for authentication, it does make provision for application traffic where required over VPN or Direct Connect.
++  **Scenario 4: AWS Microsoft AD and a Two-Way Transitive Trust to On-Premises** — This scenario includes the AWS Managed Microsoft AD Service (MAD) with a two-way transitive trust to the on-premises Microsoft AD Forest.
++  **Scenario 5: AWS Microsoft AD using a Shared Services VPC** — This scenario uses AWS Managed Microsoft AD in a Shared Services VPC to be used as an Identity Domain for multiple AWS Services (Amazon EC2, Amazon WorkSpaces, and so on.) while using the AD Connector to proxy Lightweight Directory Access Protocol (LDAP) user authentication requests to the AD domain controllers.
++  **Scenario 6: AWS Microsoft AD, Shared Services VPC, and a One-Way Trust to On-Premises AD** — This scenario is similar to Scenario 5, but it includes disparate identity and resource domains using a one-way trust to on-premises.
+
+You need to make several considerations when selecting your deployment scenario for Active Directory Domain Services (ADDS). This section explains the role of the AD Connector with Amazon WorkSpaces, and covers some important considerations when selecting an ADDS deployment scenario. For further guidance on design and planning of ADDS on AWS, please consult the [ Active Directory Domain Services on AWS Design and Planning Guide](https://d1.awsstatic.com/whitepapers/adds-on-aws.pdf).

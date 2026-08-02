@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/remember-settings-mac.html
+---
+
+# Remember My Settings
+<a name="remember-settings-mac"></a>
+
+The WorkSpaces Applications macOS client application can save the preferences you configured in **Settings** for future sessions, except for **Audio & Video** settings. If you want to remember your audio (microphone) and video (webcam) settings for future sessions, choose **Settings**, **Audio & Video**, and **Remember Audio & Video (enabled/disabled) for future sessions**. When you enable this function, your audio (microphone) and video (webcam) settings are saved and persist across sessions when you access the same stack from the macOS client on the same device.

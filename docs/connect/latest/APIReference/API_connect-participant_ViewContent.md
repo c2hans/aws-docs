@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-participant_ViewContent.html
+---
+
+# ViewContent
+<a name="API_connect-participant_ViewContent"></a>
+
+View content containing all content necessary to render a view except for runtime input data.
+
+## Contents
+<a name="API_connect-participant_ViewContent_Contents"></a>
+
+ ** Actions **   <a name="connect-Type-connect-participant_ViewContent-Actions"></a>
+A list of actions possible from the view
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `^([\p{L}\p{N}_.:\/=+\-@()']+[\p{L}\p{Z}\p{N}_.:\/=+\-@()']*)$`
+Required: No
+
+ ** InputSchema **   <a name="connect-Type-connect-participant_ViewContent-InputSchema"></a>
+The schema representing the input data that the view template must be supplied to render.
+Type: String
+Required: No
+
+ ** Template **   <a name="connect-Type-connect-participant_ViewContent-Template"></a>
+The view template representing the structure of the view.
+Type: String
+Required: No
+
+## See Also
+<a name="API_connect-participant_ViewContent_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connectparticipant-2018-09-07/ViewContent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connectparticipant-2018-09-07/ViewContent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connectparticipant-2018-09-07/ViewContent)

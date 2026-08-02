@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/elastic.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Elastic
+<a name="elastic"></a>
+
+ [Elasticity](https://wa.aws.amazon.com/wat.concept.elasticity.en.html) is *“The ability to acquire resources as you need them and release resources when you no longer need them. In the cloud, you want to do this automatically.”* Depending on the service, elasticity is sometimes part of the service itself. Other services require vertical scaling. A third group of services integrate with AWS Auto Scaling. The following section discusses elasticity for different AWS services and how this can be implemented.
+
+## AWS Lambda
+<a name="aws-lambda"></a>
+
+ AWS Lambda has elastic scalability already built in: the service executes your code only when needed and scales automatically, from a few requests per day to thousands per second. The first time you invoke your function, AWS Lambda creates an instance of the function and runs its handler method to process the event. When the function returns a response, it stays active and waits to process additional events. If you invoke the function again while the first event is being processed, Lambda initializes another instance, and the function processes the two events concurrently. As more events come in, Lambda routes them to available instances and creates new instances as needed. When the number of requests decreases, Lambda stops unused instances to free up scaling capacity for other functions. The functions *concurrency* is the number of instances that serve requests at a given time. Concurrency is subject to a regional quota that is shared by all functions in a region. AWS Lambda offers [Reserved concurrency and Provisioned concurrency](https://docs.aws.amazon.com/lambda/latest/dg/configuration-concurrency.html) to control concurrency. Reserved concurrency guarantees the maximum number of concurrent instances for the function. When a function has reserved concurrency, other function can’t use that concurrency. Provisioned concurrency initializes a requested number of execution environments so that they are prepared to respond immediately to your function's invocations. For more information, see [AWS Lambda function scaling](https://docs.aws.amazon.com/lambda/latest/dg/invocation-scaling.html).
+
+## Amazon ECS and Amazon EKS
+<a name="ecs-and-eks"></a>
+
+ [Amazon ECS cluster auto scaling](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-auto-scaling.html) gives you control over how you scale tasks within a cluster. Each cluster has one or more capacity providers and an optional default capacity provider strategy. The capacity providers determine the infrastructure to use for the tasks, and the capacity provider strategy determines how the tasks are spread across the capacity providers. When you run a task or create a service, you can either use the cluster's default capacity provider strategy or specify a capacity provider strategy that overrides the cluster's default strategy.
+
+ Amazon ECS publishes Amazon CloudWatch metrics with your service’s average CPU and memory usage. You can use these and other CloudWatch metrics to scale out your service (add more tasks) to deal with high demand at peak times, and to scale in your service (run fewer tasks) to reduce costs during periods of low utilization. In order to scale the underlying infrastructure, Amazon ECS offers integration into Auto Scaling with ECS Cluster Auto Scaling. ECS Cluster Auto Scaling uses the ECS Capacity Provider construct in ECS to manage Amazon EC2 Auto Scaling groups on your behalf. For Amazon EKS, there is a similar approach with the [Kubernetes Cluster Autoscaler](https://docs.aws.amazon.com/eks/latest/userguide/cluster-autoscaler.html). It automatically adjusts the number of nodes in a cluster when pods fail to launch due to lack of resources or when nodes in the cluster are underutilized and their pods can be rescheduled onto other nodes in the cluster.
+
+ Amazon ECS Service Auto Scaling supports several types of automatic scaling that influence the number of tasks for a given ECS service. Amazon ECS cluster auto scaling however is a capability for ECS to manage the scaling of Amazon EC2 Auto Scaling groups. With Amazon ECS cluster auto scaling you can configure ECS to scale your Auto Scaling groups automatically, and just focus on running your tasks. ECS will ensure the Auto Scaling groups scale in and out as needed with no further intervention required. ECS cluster auto scaling relies on ECS capacity providers, which provide the link between your ECS cluster and the Auto Scaling groups you want to use. For more information, refer to [Amazon ECS Cluster Auto Scaling](https://aws.amazon.com/blogs/containers/deep-dive-on-amazon-ecs-cluster-auto-scaling/).
+
+![Diagram showing Scaling with Amazon ECS](http://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/scaling-with-ecs.png)
+
+ A similar approach is available for [Amazon EKS with Horizontal Pod Autoscaler](https://docs.aws.amazon.com/eks/latest/userguide/horizontal-pod-autoscaler.html). The Horizontal Pod Autoscaler is a standard API resource in Kubernetes that simply requires that a metrics source (such as the Kubernetes metrics server) is installed on your Amazon EKS cluster to work. You do not need to deploy or install the Horizontal Pod Autoscaler on your cluster to begin scaling your applications.
+
+ The Horizontal Pod Autoscaler automatically scales the number of pods in a deployment, replication controller, or replica set based on that resource's CPU or memory utilization, custom metrics are also supported. This can help your applications scale out to meet increased demand or scale in when resources are not needed, thus freeing up your worker nodes for other applications. When you set a target CPU utilization percentage, the Horizontal Pod Autoscaler scales your application in or out to try to meet that target.
+
+![Diagram showing Scaling with Amazon EKS](http://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-aws/images/scaling-with-eks.png)
+
+## Amazon Kinesis Data Streams
+<a name="kds"></a>
+
+ [Amazon Kinesis Data Streams](https://aws.amazon.com/kinesis/data-streams/) offers provisioned capacity: each data stream is composed of one or more shards that act as units of capacity. Shards make it easy to design and scale a streaming pipeline by providing a predefined write and read capacity. As workloads grow, an application may read or write to a shard at a rate that exceeds its capacity, creating a *hot shard* and requiring you to add capacity quickly. As your streaming information increases, you require a scaling solution to accommodate all requests. If you have a decrease in streaming information, you might use scaling to reduce costs. Currently, you scale an Amazon Kinesis Data Stream shard programmatically. AWS Lambda integrates natively with Kinesis Data Streams, the integration abstracts polling, checkpointing, and error handling complexities. By default, Lambda invocates one instance per Kinesis shard. Lambda invokes your function as soon as it has gathered a full batch, or until the batch window expires. For more information, see [Reading Data from Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/building-consumers.html).

@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsElbAppCookieStickinessPolicy.html
+---
+
+# AwsElbAppCookieStickinessPolicy
+<a name="API_AwsElbAppCookieStickinessPolicy"></a>
+
+Contains information about a stickiness policy that was created using `CreateAppCookieStickinessPolicy`.
+
+## Contents
+<a name="API_AwsElbAppCookieStickinessPolicy_Contents"></a>
+
+ ** CookieName **   <a name="securityhub-Type-AwsElbAppCookieStickinessPolicy-CookieName"></a>
+The name of the application cookie used for stickiness.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+ ** PolicyName **   <a name="securityhub-Type-AwsElbAppCookieStickinessPolicy-PolicyName"></a>
+The mnemonic name for the policy being created. The name must be unique within the set of policies for the load balancer.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+## See Also
+<a name="API_AwsElbAppCookieStickinessPolicy_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/AwsElbAppCookieStickinessPolicy)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/AwsElbAppCookieStickinessPolicy)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/AwsElbAppCookieStickinessPolicy)

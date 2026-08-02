@@ -1,0 +1,226 @@
+---
+source_url: https://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html
+---
+
+# Use AWS managed policies for EC2 Image Builder
+<a name="security-iam-awsmanpol"></a>
+
+An AWS managed policy is a standalone policy that is created and administered by AWS. AWS managed policies are designed to provide permissions for many common use cases so that you can start assigning permissions to users, groups, and roles.
+
+Keep in mind that AWS managed policies might not grant least-privilege permissions for your specific use cases because they're available for all AWS customers to use. We recommend that you reduce permissions further by defining [ customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#customer-managed-policies) that are specific to your use cases.
+
+You cannot change the permissions defined in AWS managed policies. If AWS updates the permissions defined in an AWS managed policy, the update affects all principal identities (users, groups, and roles) that the policy is attached to. AWS is most likely to update an AWS managed policy when a new AWS service is launched or new API operations become available for existing services.
+
+For more information, see [AWS managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies) in the *IAM User Guide*.
+
+## AWSImageBuilderFullAccess policy
+<a name="sec-iam-manpol-AWSImageBuilderFullAccess"></a>
+
+The **AWSImageBuilderFullAccess** policy grants full access to Image Builder resources for the role it's attached to, allowing the role to list, describe, create, update, and delete Image Builder resources. The policy also grants targeted permissions to related AWS services that are needed, for example, to verify resources, or to display current resources for the account in the AWS Management Console.
+
+### Permissions details
+<a name="sec-iam-manpol-AWSImageBuilderFullAccess-details"></a>
+
+This policy includes the following permissions:
++ **Image Builder** – Administrative access is granted, so that the role can list, describe, create, update, and delete Image Builder resources.
++ **Amazon EC2** – Access is granted for Amazon EC2 Describe actions that are needed to verify resource existence or get lists of resources belonging to the account.
++ **IAM** – Access is granted to get and use instance profiles whose name contains "imagebuilder", to verify the existence of the Image Builder service-linked role via the `iam:GetRole` API action, and to create the Image Builder service-linked role.
++ **License Manager** – Access is granted to list license configurations or licenses for a resource.
++ **Amazon S3** – Access is granted to list buckets belonging to the account, and also Image Builder buckets with "imagebuilder" in their names.
++ **Amazon SNS** – Write permissions are granted to Amazon SNS to verify topic ownership for topics containing "imagebuilder".
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderFullAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderFullAccess.html) in the *AWS Managed Policy Reference*.
+
+## AWSImageBuilderReadOnlyAccess policy
+<a name="sec-iam-manpol-AWSImageBuilderReadOnlyAccess"></a>
+
+The **AWSImageBuilderReadOnlyAccess** policy provides read-only access to all Image Builder resources. Permissions are granted to verify that the Image Builder service-linked role exists via the `iam:GetRole` API action.
+
+### Permissions details
+<a name="sec-iam-manpol-AWSImageBuilderReadOnlyAccess-details"></a>
+
+This policy includes the following permissions:
++ **Image Builder** – Access is granted for read-only access to Image Builder resources.
++ **IAM** – Access is granted to verify the existence of the Image Builder service-linked role via the `iam:GetRole` API action.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderReadOnlyAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSImageBuilderReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
+
+## AWSServiceRoleForImageBuilder policy
+<a name="sec-iam-manpol-AWSServiceRoleForImageBuilder"></a>
+
+The **AWSServiceRoleForImageBuilder** policy allows Image Builder to call AWS services on your behalf.
+
+### Permissions details
+<a name="sec-iam-manpol-AWSServiceRoleForImageBuilder-details"></a>
+
+This policy is attached to the Image Builder service-linked role when the role is created through Systems Manager. For more information about the Image Builder service-linked role, see [Use IAM service-linked roles for Image Builder](image-builder-service-linked-role.md).
+
+The policy includes the following permissions:
++ **CloudWatch Logs** – Access is granted to create and upload CloudWatch Logs to any log group whose name starts with `/aws/imagebuilder/`.
++ **Amazon EC2** – Access is granted for Image Builder to create, take snapshots of and register images (AMIs) that it creates and launch EC2 instances in your account. Image Builder uses related snapshots, volumes, network interfaces, subnets, security groups, license configuration and key pairs as required, as long as the image, instance, and volumes that are being created or used are tagged with `CreatedBy: EC2 Image Builder` or `CreatedBy: EC2 Fast Launch`.
+
+  Image Builder can get information about Amazon EC2 images, instance attributes, instance status, the instance types that are available to your account, launch templates, subnets, hosts, and tags on your Amazon EC2 resources.
+
+  Image Builder can update image settings to enable or disable faster launching of Windows instances in your account, where the image is tagged with `CreatedBy: EC2 Image Builder`.
+
+  Additionally, Image Builder can start, stop, and terminate instances that are running in your account, share Amazon EBS snapshots, create and update images and launch templates, de-register existing images, add tags, and replicate images across accounts that you have granted permissions to via the **Ec2ImageBuilderCrossAccountDistributionAccess** policy. Image Builder tagging is required for all of these actions, as described previously.
+
+  Image Builder can also attach AMI watermarks to images tagged `CreatedBy: EC2 Image Builder`, so that watermarks propagate to derivative AMIs.
++ **Amazon ECR** – Access is granted for Image Builder to create a repository if needed for container image vulnerability scans, and tag the resources it creates to limit the scope of its operations. Access is also granted for Image Builder to delete the container images that it created for the scans after it takes snapshots of the vulnerabilities.
++ **EventBridge** – Access is granted for Image Builder to create and manage EventBridge rules.
++ **IAM** – Access is granted for Image Builder to pass any role in your account to Amazon EC2, and to VM Import/Export.
++ **Image Builder** – Access is granted for Image Builder to automatically trigger pipelines on the user's behalf on a user-provided schedule and apply tags to the resulting images. Only used when the `imageTags` property is set on a pipeline and that pipeline is configured to run on a schedule.
++ **Amazon Inspector** – Access is granted for Image Builder to determine when Amazon Inspector completes build instance scans, and to collect findings for images that are configured to allow it.
++ **AWS KMS** – Access is granted for Amazon EBS to encrypt, decrypt, or re-encrypt Amazon EBS volumes. This is crucial to ensure that encrypted volumes work when Image Builder builds an image.
++ **License Manager** – Access is granted for Image Builder to update License Manager specifications via `license-manager:UpdateLicenseSpecificationsForResource`.
++ **Amazon SNS** – Write permissions are granted for any Amazon SNS topic in your account.
++ **Systems Manager** – Access is granted for Image Builder to list Systems Manager commands and their invocations, inventory entries , describe instance information and automation execution statuses, describe hosts for instance placement support, and get command invocation details. Image Builder can also send automation signals, and stop automation executions for any resource in your account.
+
+  Image Builder is able to issue run command invocations to any instance that is tagged `"CreatedBy": "EC2 Image Builder"` for the following script files: `AWS-RunPowerShellScript`, `AWS-RunShellScript`, or `AWSEC2-RunSysprep`. Image Builder is able to start an Systems Manager automation execution in your account for automation documents where the name starts with `ImageBuilder`.
+
+  Image Builder is also able to create or delete State Manager associations for any instance in your account, as long as the association document is `AWS-GatherSoftwareInventory`, and to create the Systems Manager service-linked role in your account.
+
+  Image Builder is able to read public Parameter Store Parameters, and read and update private Parameters prefixed with `/imagebuilder/` so that it can update the Parameter value with the output AMI IDs that Image Builder creates from a new build.
++ **AWS STS** – Access is granted for Image Builder to assume roles named **EC2ImageBuilderDistributionCrossAccountRole** from your account to any account where the Trust policy on the role permits it. This is used for cross-account image distribution.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSServiceRoleForImageBuilder.html) in the *AWS Managed Policy Reference*.
+
+## EC2ImageBuilderExecutionPolicy policy
+<a name="sec-iam-manpol-EC2ImageBuilderExecutionPolicy"></a>
+
+The **EC2ImageBuilderExecutionPolicy** policy grants permissions that allow Image Builder to call AWS services on your behalf. You can attach this policy to IAM roles that you pass to Image Builder as an execution role instead of using the service-linked role.
+
+### Permissions details
+<a name="sec-iam-manpol-EC2ImageBuilderExecutionPolicy-details"></a>
+
+The policy includes the following permissions:
++ **CloudWatch Logs** – Access is granted to create and upload CloudWatch Logs to any log group whose name starts with `/aws/imagebuilder/`.
++ **Amazon EC2** – Access is granted for Image Builder to create, take snapshots of, and register images (AMIs) that it creates, and launch EC2 instances in your account. Image Builder uses related snapshots, volumes, network interfaces, subnets, security groups, license configurations, and key pairs as required, as long as the image, instance, and volumes that are being created or used are tagged with `CreatedBy: EC2 Image Builder` or `CreatedBy: EC2 Fast Launch`.
+
+  Image Builder can get information about Amazon EC2 images, instance attributes, instance status, the instance types that are available to your account, launch templates, subnets, hosts, and tags on your Amazon EC2 resources.
+
+  Image Builder can update image settings to enable or disable faster launching of Windows instances in your account, where the image is tagged with `CreatedBy: EC2 Image Builder`.
+
+  Additionally, Image Builder can start, stop, and terminate instances that are running in your account, share Amazon EBS snapshots, create and update images, update launch templates, de-register existing images, add tags, and replicate images across accounts that you have granted permissions to via the **Ec2ImageBuilderCrossAccountDistributionAccess** policy. Image Builder tagging is required for all of these actions, as described previously.
+
+  Image Builder can also attach AMI watermarks to images tagged `CreatedBy: EC2 Image Builder`, so that watermarks propagate to derivative AMIs.
++ **Amazon ECR** – Access is granted for Image Builder to create a repository if needed for container image vulnerability scans, and tag the resources it creates to limit the scope of its operations. Access is also granted for Image Builder to delete the container images that it created for the scans after it takes snapshots of the vulnerabilities.
++ **EventBridge** – Access is granted for Image Builder to create and manage EventBridge rules.
++ **IAM** – Access is granted for Image Builder to pass any role in your account to Amazon EC2, and to VM Import/Export.
++ **Image Builder** – Access is granted for Image Builder to automatically trigger pipelines on the user's behalf on a user-provided schedule and apply tags to the resulting images. Only used when the `imageTags` property is set on a pipeline and that pipeline is configured to run on a schedule.
++ **Amazon Inspector** – Access is granted for Image Builder to determine when Amazon Inspector completes build instance scans, and to collect findings for images that are configured to allow it.
++ **AWS KMS** – Access is granted for Amazon EBS to encrypt, decrypt, or re-encrypt Amazon EBS volumes. This is crucial to ensure that encrypted volumes work when Image Builder builds an image.
++ **License Manager** – Access is granted for Image Builder to update License Manager specifications via `license-manager:UpdateLicenseSpecificationsForResource`.
++ **Amazon SNS** – Write permissions are granted for any Amazon SNS topic in your account.
++ **Systems Manager** – Access is granted for Image Builder to list Systems Manager command invocations, inventory entries, describe instance information and association execution statuses, describe hosts for instance placement support, and get command invocation details.
+
+  Image Builder can issue run command invocations to any instance that is tagged `"CreatedBy": "EC2 Image Builder"` for the following script files: `AWS-RunPowerShellScript`, `AWS-RunShellScript`, or `AWSEC2-RunSysprep`.
+
+  Image Builder can also create or delete State Manager associations for any instance in your account that is tagged `"CreatedBy": "EC2 Image Builder"`, as long as the association document is `AWS-GatherSoftwareInventory`, and to create the Systems Manager service-linked role in your account.
+
+  Image Builder can read public Parameter Store Parameters, and read and update private Parameters prefixed with `/imagebuilder/` so that it can update the Parameter value with the output AMI IDs that Image Builder creates from a new build.
++ **AWS STS** – Access is granted for Image Builder to assume roles named **EC2ImageBuilderDistributionCrossAccountRole** from your account to any account where the Trust policy on the role permits it. This is used for cross-account image distribution.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderExecutionPolicy.html) in the *AWS Managed Policy Reference*.
+
+## Ec2ImageBuilderCrossAccountDistributionAccess policy
+<a name="sec-iam-manpol-Ec2ImageBuilderCrossAccountDistributionAccess"></a>
+
+The **Ec2ImageBuilderCrossAccountDistributionAccess** policy grants permissions for Image Builder to distribute images across accounts in target Regions. Additionally, Image Builder can describe, copy, and apply tags to any Amazon EC2 image in the account. The policy also grants the ability to modify AMI permissions via the `ec2:ModifyImageAttribute` API action.
+
+### Permissions details
+<a name="sec-iam-manpol-Ec2ImageBuilderCrossAccountDistributionAccess-details"></a>
+
+This policy includes the following permissions:
++ **Amazon EC2** – Access is granted for Amazon EC2 to describe, copy, and modify attributes for an image, and to create tags for any Amazon EC2 images in the account.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2ImageBuilderCrossAccountDistributionAccess.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/Ec2ImageBuilderCrossAccountDistributionAccess.html) in the *AWS Managed Policy Reference*.
+
+## EC2ImageBuilderLifecycleExecutionPolicy policy
+<a name="sec-iam-manpol-EC2ImageBuilderLifecycleExecutionPolicy"></a>
+
+The **EC2ImageBuilderLifecycleExecutionPolicy** policy grants permissions for Image Builder to perform actions such as deprecate, disable, or delete Image Builder image resources and their underlying resources (AMIs, snapshots) to support automated rules for image lifecycle management tasks.
+
+### Permissions details
+<a name="sec-iam-manpol-EC2ImageBuilderLifecycleExecutionPolicy-details"></a>
+
+This policy includes the following permissions:
++ **Amazon EC2** – Access is granted for Amazon EC2 to perform the following actions for Amazon Machine Images (AMIs) in the account that are tagged with `CreatedBy: EC2 Image Builder`.
+  + Enable and disable an AMI.
+  + Enable and disable image deprecation.
+  + Describe and deregister an AMI.
+  + Describe and modify AMI image attributes.
+  + Delete volume snapshots that are associated with the AMI.
+  + Retrieve tags for a resource.
+  + Add or remove tags from an AMI for deprecation.
++ **Amazon ECR** – Access is granted for Amazon ECR to perform the following batch actions on ECR repositories with the `LifecycleExecutionAccess: EC2 Image Builder` tag. Batch actions support automated container image lifecycle rules.
+  + `ecr:BatchGetImage`
+  + `ecr:BatchDeleteImage`
+
+  Access is granted at the repository level for ECR repositories that are tagged with `LifecycleExecutionAccess: EC2 Image Builder`.
++ **AWS Resource groups** – Access is granted for Image Builder to get resources based on tags.
++ **EC2 Image Builder** – Access is granted for Image Builder to delete Image Builder image resources.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderLifecycleExecutionPolicy.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2ImageBuilderLifecycleExecutionPolicy.html) in the *AWS Managed Policy Reference*.
+
+## EC2InstanceProfileForImageBuilder policy
+<a name="sec-iam-manpol-EC2InstanceProfileForImageBuilder"></a>
+
+The **EC2InstanceProfileForImageBuilder** policy grants the minimum permissions required for an EC2 instance to work with Image Builder. This does not include permissions required to use the Systems Manager Agent.
+
+### Permissions details
+<a name="sec-iam-manpol-EC2InstanceProfileForImageBuilder-details"></a>
+
+This policy includes the following permissions:
++ **CloudWatch Logs** – Access is granted to create and upload CloudWatch Logs to any log group whose name starts with `/aws/imagebuilder/`.
++ **Amazon EC2** – Access is granted to describe volumes and snapshots, to create snapshots of volume or snapshot resources that Image Builder created, and to create tags for Image Builder resources.
++ **Image Builder** – Access is granted to get any Image Builder or AWS Marketplace component.
++ **AWS KMS** – Access is granted to decrypt an Image Builder component, if it was encrypted via AWS KMS.
++ **Amazon S3** – Access is granted to get objects stored in an Amazon S3 bucket whose name starts with `ec2imagebuilder-`, or resources that have an ISO file extension.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilder.html) in the *AWS Managed Policy Reference*.
+
+## EC2InstanceProfileForImageBuilderECRContainerBuilds policy
+<a name="sec-iam-manpol-EC2InstanceProfileForImageBuilderECRContainerBuilds"></a>
+
+The **EC2InstanceProfileForImageBuilderECRContainerBuilds** policy grants the minimum permissions required for an EC2 instance when working with Image Builder to build Docker images and then register and store the images in an Amazon ECR container repository. This does not include permissions required to use the Systems Manager Agent.
+
+### Permissions details
+<a name="sec-iam-manpol-EC2InstanceProfileForImageBuilderECRContainerBuilds-details"></a>
+
+This policy includes the following permissions:
++ **CloudWatch Logs** – Access is granted to create and upload CloudWatch Logs to any log group whose name starts with `/aws/imagebuilder/`.
++ **Amazon ECR** – Access is granted for Amazon ECR to get, register, and store a container image, and to get an authorization token.
++ **Image Builder** – Access is granted to get an Image Builder component or container recipe.
++ **AWS KMS** – Access is granted to decrypt an Image Builder component or container recipe, if it was encrypted via AWS KMS.
++ **Amazon S3** – Access is granted to get objects stored in an Amazon S3 bucket whose name starts with `ec2imagebuilder-`.
+
+To view the permissions for this policy, see [https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilderECRContainerBuilds.html](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/EC2InstanceProfileForImageBuilderECRContainerBuilds.html) in the *AWS Managed Policy Reference*.
+
+## Image Builder updates to AWS managed policies
+<a name="security-iam-awsmanpol-updates"></a>
+
+This section provides information about updates to AWS managed policies for Image Builder since this service began tracking these changes. For automatic alerts about changes to this page, subscribe to the RSS feed on the Image Builder [document history](doc-history.md) page.
+
+| Change | Description | Date |
+| --- | --- | --- |
+| [EC2ImageBuilderExecutionPolicy](#sec-iam-manpol-EC2ImageBuilderExecutionPolicy) – Update to an existing policy | Image Builder added `ec2:AttachImageWatermark` to allow Image Builder to attach AMI watermarks to output images tagged `CreatedBy: EC2 Image Builder`. | June 22, 2026 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder added `ec2:AttachImageWatermark` to allow Image Builder to attach AMI watermarks to output images tagged `CreatedBy: EC2 Image Builder`. | June 22, 2026 |
+| [EC2ImageBuilderExecutionPolicy](#sec-iam-manpol-EC2ImageBuilderExecutionPolicy) – New policy | Image Builder added the new `EC2ImageBuilderExecutionPolicy` policy that contains permissions for Image Builder to call AWS services on your behalf. You can attach this policy to IAM roles that you pass to Image Builder as an execution role instead of using the service-linked role. | June 4, 2026 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role to support the automated tagging of output images when the `imageTags` property is set on a pipeline.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | March 18, 2026 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | February 26, 2026 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role to support the use of AWS Systems Manager (SSM) Parameter Store Parameters in recipes and during image distribution.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | July 23, 2025 |
+| [EC2InstanceProfileForImageBuilder](#sec-iam-manpol-EC2InstanceProfileForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the instance profile policy to support more file extensions for ISO file downloads.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | May 19, 2025 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role to support the import of Microsoft client OS ISO files as the base image.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | December 30, 2024 |
+| [EC2InstanceProfileForImageBuilder](#sec-iam-manpol-EC2InstanceProfileForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the instance profile policy to support image creation from disk image files.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | December 30, 2024 |
+| [EC2InstanceProfileForImageBuilder](#sec-iam-manpol-EC2InstanceProfileForImageBuilder) – Updated policy | Image Builder updated the `EC2InstanceProfileForImageBuilder` policy to allow Image Builder to get AWS Marketplace components. | December 2, 2024 |
+| [EC2ImageBuilderLifecycleExecutionPolicy](#sec-iam-manpol-EC2ImageBuilderLifecycleExecutionPolicy) – New policy | Image Builder added the new `EC2ImageBuilderLifecycleExecutionPolicy` policy that contains permissions for image lifecycle management. | November 17, 2023 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role to provide instance placement support.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | October 19, 2023 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role to provide instance placement support.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | September 28, 2023 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role to allow Image Builder workflows to collect vulnerability findings for both AMI and ECR container image builds. The new permissions support the CVE detection and reporting feature.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | March 30, 2023 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | March 22, 2022 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | February 21, 2022 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder made the following changes to the service role:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | November 20, 2021 |
+| [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder added new permissions to fix issues where more than one inventory association causes the image build to get stuck. | August 11, 2021 |
+| [AWSImageBuilderFullAccess](#sec-iam-manpol-AWSImageBuilderFullAccess) – Update to an existing policy | Image Builder made the following changes to the full access role:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/security-iam-awsmanpol.html) | April 13, 2021 |
+| Image Builder started tracking changes | Image Builder started tracking changes for its AWS managed policies. | April 02, 2021 |

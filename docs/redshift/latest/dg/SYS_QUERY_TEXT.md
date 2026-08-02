@@ -1,0 +1,71 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/SYS_QUERY_TEXT.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# SYS\_QUERY\_TEXT
+<a name="SYS_QUERY_TEXT"></a>
+
+Use SYS\_QUERY\_TEXT to view the query text of all queries. Each row represents the query text of queries up to 4000 characters starting with sequence number 0. When the query statement contains more than 4000 characters, additional rows are logged for the statement by incrementing the sequence number for each row. This view logs all user query text such as DDL, utility, Amazon Redshift queries, and leader-node only queries.
+
+SYS\_QUERY\_TEXT is visible to all users. Superusers can see all rows; regular users can see only their own data. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
+
+## Table columns
+<a name="SYS_QUERY_TEXT-table-columns"></a>
+
+| Column name  | Data type  | Description  |
+| --- | --- | --- |
+| user\_id | integer | The identifier of the user who submitted the query. |
+| query\_id | bigint | The query identifier. |
+| transaction\_id | bigint | The identifier of the transaction associated with the statement. |
+| session\_id | integer | The process identifier of the session running the query. |
+| start\_time | timestamp | The time when the query starts. |
+| sequence | integer | When a single statement contains more than 4000 characters, additional rows are logged for the statement. Sequence 0 is the first row, 1 is the second row, and so on. |
+| text | character (4000) | The text of the SQL query that is in 4000-character increments. This field might contain special characters, such as backslash (\\) and newline (\\n). |
+
+## Sample queries
+<a name="SYS_QUERY_TEXT-sample-queries"></a>
+
+The following query returns running and queued queries.
+
+```
+SELECT user_id,
+ query_id,
+ transaction_id,
+ session_id, start_time,
+ sequence, trim(text) as text from sys_query_text
+ ORDER BY sequence;
+```
+
+Sample output.
+
+```
+ user_id | query_id | transaction_id | session_id |        start_time          | sequence |                                                        text
+--------+----------+-----------------+------------+----------------------------+----------+----------------------------------------------------------------------------------------------------------------------
+   100  |     4    |       1396      | 1073750220 | 2023-04-28 16:44:55.887184 |     0    | SELECT trim(text) as text, sequence FROM sys_query_text WHERE query_id = pg_last_query_id() AND user_id > 1 AND start
+_time > '2023-04-28 16:44:55.922705+00:00'::timestamp order by sequence;
+```
+
+The following query returns the permissions that have been granted or revoked from groups in your database.
+
+```
+SELECT
+    SPLIT_PART(text, ' ', 1) as grantrevoke,
+    SPLIT_PART((SUBSTRING(text, STRPOS(UPPER(text), 'GROUP'))), ' ', 2) as group,
+    SPLIT_PART((SUBSTRING(text, STRPOS(UPPER(text), ' '))), 'ON', 1) as type,
+    SPLIT_PART((SUBSTRING(text, STRPOS(UPPER(text), 'ON'))), ' ', 2) || ' ' || SPLIT_PART((SUBSTRING(text, STRPOS(UPPER(text), 'ON'))), ' ', 3) as entity
+FROM SYS_QUERY_TEXT
+WHERE (text LIKE 'GRANT%' OR text LIKE 'REVOKE%') AND text LIKE '%GROUP%';
+
++-------------+----------+--------+----------+
+| grantrevoke |  group   |  type  |  entity  |
++-------------+----------+--------+----------+
+| GRANT       | bi_group | SELECT | TABLE t1 |
+| GRANT       | bi_group | SELECT | TABLE t1 |
+| GRANT       | bi_group | SELECT | TABLE t1 |
+| GRANT       | bi_group | USAGE  | TABLE t1 |
+| GRANT       | bi_group | SELECT | TABLE t1 |
+| GRANT       | bi_group | SELECT | TABLE t1 |
++-------------+----------+--------+----------+
+```

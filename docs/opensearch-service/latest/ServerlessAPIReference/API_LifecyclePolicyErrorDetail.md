@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_LifecyclePolicyErrorDetail.html
+---
+
+# LifecyclePolicyErrorDetail
+<a name="API_LifecyclePolicyErrorDetail"></a>
+
+Error information for an OpenSearch Serverless request.
+
+## Contents
+<a name="API_LifecyclePolicyErrorDetail_Contents"></a>
+
+ ** errorCode **   <a name="opensearchserverless-Type-LifecyclePolicyErrorDetail-errorCode"></a>
+The error code for the request. For example, `NOT_FOUND`.
+Type: String
+Required: No
+
+ ** errorMessage **   <a name="opensearchserverless-Type-LifecyclePolicyErrorDetail-errorMessage"></a>
+A description of the error. For example, `The specified Lifecycle Policy is not found`.
+Type: String
+Required: No
+
+ ** name **   <a name="opensearchserverless-Type-LifecyclePolicyErrorDetail-name"></a>
+The name of the lifecycle policy.
+Type: String
+Length Constraints: Minimum length of 3. Maximum length of 32.
+Pattern: `[a-z][a-z0-9-]+`
+Required: No
+
+ ** type **   <a name="opensearchserverless-Type-LifecyclePolicyErrorDetail-type"></a>
+The type of lifecycle policy.
+Type: String
+Valid Values: `retention`
+Required: No
+
+## See Also
+<a name="API_LifecyclePolicyErrorDetail_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/opensearchserverless-2021-11-01/LifecyclePolicyErrorDetail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/opensearchserverless-2021-11-01/LifecyclePolicyErrorDetail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/opensearchserverless-2021-11-01/LifecyclePolicyErrorDetail)

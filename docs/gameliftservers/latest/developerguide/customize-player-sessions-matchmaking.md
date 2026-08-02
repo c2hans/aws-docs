@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/customize-player-sessions-matchmaking.html
+---
+
+# Player sessions and matchmaking customizations
+<a name="customize-player-sessions-matchmaking"></a>
+
+Player session and matchmaking customizations give you the opportunity to develop sophisticated player management workflows, including a nuanced matchmaking system that helps you deliver balanced, engaging multiplayer experiences.

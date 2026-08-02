@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/pkcs11-library.html
+---
+
+# PKCS \#11 library for AWS CloudHSM Client SDK 5
+<a name="pkcs11-library"></a>
+
+PKCS \#11 is a standard for performing cryptographic operations on hardware security modules (HSMs). AWS CloudHSM offers implementations of the PKCS \#11 library that are compliant with PKCS \#11 version 2.40.
+
+For information about bootstrapping, see [Connecting to the cluster](cluster-connect.md). For troubleshooting, see [Known issues for the PKCS \#11 library for AWS CloudHSMKnown issues for the PKCS \#11 library](ki-pkcs11-sdk.md).
+
+For information on using Client SDK 3, see [Using previous SDK version to work with AWS CloudHSM](choose-client-sdk.md).
+
+**Topics**
++ [Install the PKCS \#11 library](pkcs11-library-install.md)
++ [Authenticate to the PKCS \#11 library](pkcs11-pin.md)
++ [Key types](pkcs11-key-types.md)
++ [Mechanisms](pkcs11-mechanisms.md)
++ [API operations](pkcs11-apis.md)
++ [Key attributes](pkcs11-attributes.md)
++ [Code samples](pkcs11-samples.md)
++ [Advanced configurations](pkcs11-library-configs.md)
++ [Certificate storage](pkcs11-certificate-storage.md)

@@ -1,0 +1,463 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/marketplace-catalog_example_marketplace-catalog_CreateLimitedSaasProductAndPublicOfferWithSubscriptionPricing_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Create a public or limited SaaS product and public offer with subscription pricing using an AWS SDK
+<a name="marketplace-catalog_example_marketplace-catalog_CreateLimitedSaasProductAndPublicOfferWithSubscriptionPricing_section"></a>
+
+The following code examples show how to create a public or limited SaaS product and public offer with subscription pricing. This examples creates either a standard or custom EULA.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/tree/main/java#catalog-api-reference-code) repository.
+To run this example, pass the following JSON changeset to `RunChangesets` in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "CreateProduct",
+            "Entity": {
+                "Type": "SaaSProduct@1.0"
+            },
+            "ChangeName": "CreateProductChange",
+            "DetailsDocument": {}
+        },
+        {
+            "ChangeType": "UpdateInformation",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "ProductTitle": "Sample product",
+                "ShortDescription": "Brief description",
+                "LongDescription": "Detailed description",
+                "Highlights": [
+                    "Sample highlight"
+                ],
+                "SearchKeywords": [
+                    "Sample keyword"
+                ],
+                "Categories": [
+                    "Data Catalogs"
+                ],
+                "LogoUrl": "https://s3.amazonaws.com/logos/sample.png",
+                "VideoUrls": [
+                    "https://sample.amazonaws.com/awsmp-video-1"
+                ],
+                "AdditionalResources": []
+            }
+        },
+        {
+            "ChangeType": "UpdateTargeting",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "PositiveTargeting": {
+                    "BuyerAccounts": [
+                        "111111111111",
+                        "222222222222"
+                    ]
+                }
+            }
+        },
+        {
+            "ChangeType": "AddDeliveryOptions",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "DeliveryOptions": [
+                    {
+                        "Details": {
+                            "SaaSUrlDeliveryOptionDetails": {
+                                "FulfillmentUrl":"https://sample.amazonaws.com/sample-saas-fulfillment-url"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "AddDimensions",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": [
+                {
+                    "Key": "WorkloadSmall",
+                    "Description": "Workload: Per medium instance",
+                    "Name": "Workload: Per medium instance",
+                    "Types": [
+                        "ExternallyMetered"
+                    ],
+                    "Unit": "Units"
+                },
+                {
+                    "Key": "WorkloadMedium",
+                    "Description": "Workload: Per large instance",
+                    "Name": "Workload: Per large instance",
+                    "Types": [
+                        "ExternallyMetered"
+                    ],
+                    "Unit": "Units"
+                }
+            ]
+        },
+        {
+            "ChangeType": "ReleaseProduct",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {}
+        },
+        {
+            "ChangeType": "CreateOffer",
+            "Entity": {
+                "Type": "Offer@1.0"
+            },
+            "ChangeName": "CreateOfferChange",
+            "DetailsDocument": {
+                "ProductId": "$CreateProductChange.Entity.Identifier"
+            }
+        },
+        {
+            "ChangeType": "UpdateInformation",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Name": "Test public offer for SaaSProduct using AWS Marketplace API Reference Code",
+                "Description": "Test public offer with contract pricing for SaaSProduct using AWS Marketplace API Reference Code"
+            }
+        },
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Usage",
+                "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "UpdateLegalTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Terms": [
+                    {
+                        "Type": "LegalTerm",
+                        "Documents": [
+                            {
+                                "Type": "StandardEula",
+                                "Version": "2022-07-14"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "UpdateSupportTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Terms": [
+                    {
+                        "Type": "SupportTerm",
+                        "RefundPolicy": "Absolutely no refund, period."
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "ReleaseOffer",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {}
+        }
+    ]
+}
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Marketplace API Reference Code Library](https://github.com/aws-samples/aws-marketplace-reference-code/blob/main/python##catalog-api-reference-code) repository.
+
+```
+{
+    "Catalog": "AWSMarketplace",
+    "ChangeSet": [
+        {
+            "ChangeType": "CreateProduct",
+            "Entity": {
+                "Type": "SaaSProduct@1.0"
+            },
+            "ChangeName": "CreateProductChange",
+            "DetailsDocument": {}
+        },
+        {
+            "ChangeType": "UpdateInformation",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "ProductTitle": "Sample product",
+                "ShortDescription": "Brief description",
+                "LongDescription": "Detailed description",
+                "Highlights": [
+                    "Sample highlight"
+                ],
+                "SearchKeywords": [
+                    "Sample keyword"
+                ],
+                "Categories": [
+                    "Data Catalogs"
+                ],
+                "LogoUrl": "https://s3.amazonaws.com/logos/sample.png",
+                "VideoUrls": [
+                    "https://sample.amazonaws.com/awsmp-video-1"
+                ],
+                "AdditionalResources": []
+            }
+        },
+        {
+            "ChangeType": "UpdateTargeting",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "PositiveTargeting": {
+                    "BuyerAccounts": [
+                        "111111111111",
+                        "222222222222"
+                    ]
+                }
+            }
+        },
+        {
+            "ChangeType": "AddDeliveryOptions",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "DeliveryOptions": [
+                    {
+                        "Details": {
+                            "SaaSUrlDeliveryOptionDetails": {
+                                "FulfillmentUrl":"https://sample.amazonaws.com/sample-saas-fulfillment-url"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "AddDimensions",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": [
+                {
+                    "Key": "WorkloadSmall",
+                    "Description": "Workload: Per medium instance",
+                    "Name": "Workload: Per medium instance",
+                    "Types": [
+                        "ExternallyMetered"
+                    ],
+                    "Unit": "Units"
+                },
+                {
+                    "Key": "WorkloadMedium",
+                    "Description": "Workload: Per large instance",
+                    "Name": "Workload: Per large instance",
+                    "Types": [
+                        "ExternallyMetered"
+                    ],
+                    "Unit": "Units"
+                }
+            ]
+        },
+        {
+            "ChangeType": "ReleaseProduct",
+            "Entity": {
+                "Type": "SaaSProduct@1.0",
+                "Identifier": "$CreateProductChange.Entity.Identifier"
+            },
+            "DetailsDocument": {}
+        },
+        {
+            "ChangeType": "CreateOffer",
+            "Entity": {
+                "Type": "Offer@1.0"
+            },
+            "ChangeName": "CreateOfferChange",
+            "DetailsDocument": {
+                "ProductId": "$CreateProductChange.Entity.Identifier"
+            }
+        },
+        {
+            "ChangeType": "UpdateInformation",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Name": "Test public offer for SaaSProduct using AWS Marketplace API Reference Code",
+                "Description": "Test public offer with contract pricing for SaaSProduct using AWS Marketplace API Reference Code"
+            }
+        },
+        {
+            "ChangeType": "UpdatePricingTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "PricingModel": "Usage",
+                "Terms": [
+                    {
+                        "Type": "UsageBasedPricingTerm",
+                        "CurrencyCode": "USD",
+                        "RateCards": [
+                            {
+                                "RateCard": [
+                                    {
+                                        "DimensionKey": "WorkloadSmall",
+                                        "Price": "0.15"
+                                    },
+                                    {
+                                        "DimensionKey": "WorkloadMedium",
+                                        "Price": "0.25"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "UpdateLegalTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Terms": [
+                    {
+                        "Type": "LegalTerm",
+                        "Documents": [
+                            {
+                                "Type": "StandardEula",
+                                "Version": "2022-07-14"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "UpdateSupportTerms",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {
+                "Terms": [
+                    {
+                        "Type": "SupportTerm",
+                        "RefundPolicy": "Absolutely no refund, period."
+                    }
+                ]
+            }
+        },
+        {
+            "ChangeType": "ReleaseOffer",
+            "Entity": {
+                "Type": "Offer@1.0",
+                "Identifier": "$CreateOfferChange.Entity.Identifier"
+            },
+            "DetailsDocument": {}
+        }
+    ]
+}
+```
+Run this script to start the changeset. Helper functions are defined in *Utilities to start a changeset* from the **Utilities** section.
+
+```
+# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
+# SPDX-License-Identifier: Apache-2.0
+"""
+Purpose
+Shows how to use the AWS SDK for Python (Boto3) to create a
+public or limited SaaS product and public offer with subscription(usage) pricing and standard EULA
+CAPI-09
+"""
+
+import os
+
+import utils.start_changeset as sc
+import utils.stringify_details as sd
+
+fname = "changeset.json"
+change_set_file = os.path.join(os.path.dirname(__file__), fname)
+
+change_set = sd.stringify_changeset(change_set_file)
+
+def main():
+    sc.usage_demo(change_set, "public saas public offer with subscription pricing")
+
+if __name__ == "__main__":
+    main()
+```
++  For API details, see [StartChangeSet](https://docs.aws.amazon.com/goto/boto3/marketplace-catalog-2018-09-17/StartChangeSet) in *AWS SDK for Python (Boto3) API Reference*.
+
+------

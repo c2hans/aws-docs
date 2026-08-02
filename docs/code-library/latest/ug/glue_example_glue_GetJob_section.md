@@ -1,0 +1,76 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/glue_example_glue_GetJob_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `GetJob` with an AWS SDK or CLI
+<a name="glue_example_glue_GetJob_section"></a>
+
+The following code examples show how to use `GetJob`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Learn the basics](glue_example_glue_Scenario_GetStartedCrawlersJobs_section.md)
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To retrieve information about a job**
+The following `get-job` example retrieves information about a job.
+
+```
+aws glue get-job \
+    --job-name {{my-testing-job}}
+```
+Output:
+
+```
+{
+    "Job": {
+        "Name": "my-testing-job",
+        "Role": "Glue_DefaultRole",
+        "CreatedOn": 1602805698.167,
+        "LastModifiedOn": 1602805698.167,
+        "ExecutionProperty": {
+            "MaxConcurrentRuns": 1
+        },
+        "Command": {
+            "Name": "gluestreaming",
+            "ScriptLocation": "s3://janetst-bucket-01/Scripts/test_script.scala",
+            "PythonVersion": "2"
+        },
+        "DefaultArguments": {
+            "--class": "GlueApp",
+            "--job-language": "scala"
+        },
+        "MaxRetries": 0,
+        "AllocatedCapacity": 10,
+        "MaxCapacity": 10.0,
+        "GlueVersion": "1.0"
+    }
+}
+```
+For more information, see [Jobs](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-jobs-job.html) in the *AWS Glue Developer Guide*.
++  For API details, see [GetJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/glue/get-job.html) in *AWS CLI Command Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/glue#code-examples).
+
+```
+const getJob = (jobName) => {
+  const client = new GlueClient({});
+
+  const command = new GetJobCommand({
+    JobName: jobName,
+  });
+
+  return client.send(command);
+};
+```
++  For API details, see [GetJob](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/glue/command/GetJobCommand) in *AWS SDK for JavaScript API Reference*.
+
+------

@@ -1,0 +1,121 @@
+---
+source_url: https://docs.aws.amazon.com/finspace/latest/data-api/API_ResetUserPassword.html
+---
+
+After careful consideration, we decided to end support for Amazon FinSpace, effective October 7, 2026. Amazon FinSpace will no longer accept new customers beginning October 7, 2025. As an existing customer with an Amazon FinSpace environment created before October 7, 2025, you can continue to use the service as normal. After October 7, 2026, you will no longer be able to use Amazon FinSpace. For more information, see [Amazon FinSpace end of support](https://docs.aws.amazon.com/finspace/latest/data-api/amazon-finspace-end-of-support.html).
+
+# ResetUserPassword
+<a name="API_ResetUserPassword"></a>
+
+Resets the password for a specified user ID and generates a temporary one. Only a superuser can reset password for other users. Resetting the password immediately invalidates the previous password associated with the user.
+
+## Request Syntax
+<a name="API_ResetUserPassword_RequestSyntax"></a>
+
+```
+POST /user/{{userId}}/password HTTP/1.1
+Content-type: application/json
+
+{
+   "clientToken": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_ResetUserPassword_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [userId](#API_ResetUserPassword_RequestSyntax) **   <a name="finspace-ResetUserPassword-request-uri-userId"></a>
+The unique identifier of the user that a temporary password is requested for.
+Length Constraints: Minimum length of 1. Maximum length of 26.
+Pattern: `.*\S.*`
+Required: Yes
+
+## Request Body
+<a name="API_ResetUserPassword_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [clientToken](#API_ResetUserPassword_RequestSyntax) **   <a name="finspace-ResetUserPassword-request-clientToken"></a>
+A token that ensures idempotency. This token expires in 10 minutes.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `.*\S.*`
+Required: No
+
+## Response Syntax
+<a name="API_ResetUserPassword_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "temporaryPassword": "string",
+   "userId": "string"
+}
+```
+
+## Response Elements
+<a name="API_ResetUserPassword_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [temporaryPassword](#API_ResetUserPassword_ResponseSyntax) **   <a name="finspace-ResetUserPassword-response-temporaryPassword"></a>
+A randomly generated temporary password for the requested user. This password expires in 7 days.
+Type: String
+Length Constraints: Minimum length of 8. Maximum length of 20.
+Pattern: `.*\S.*`
+
+ ** [userId](#API_ResetUserPassword_ResponseSyntax) **   <a name="finspace-ResetUserPassword-response-userId"></a>
+The unique identifier of the user that a new password is generated for.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 26.
+Pattern: `.*\S.*`
+
+## Errors
+<a name="API_ResetUserPassword_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** ConflictException **
+The request conflicts with an existing resource.
+HTTP Status Code: 409
+
+ ** InternalServerException **
+The request processing has failed because of an unknown error, exception or failure.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+One or more resources can't be found.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by an AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ResetUserPassword_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/finspace-2020-07-13/ResetUserPassword)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/finspace-2020-07-13/ResetUserPassword)

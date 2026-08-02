@@ -1,0 +1,114 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/comprehend_example_comprehend_DescribeDocumentClassificationJob_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `DescribeDocumentClassificationJob` with an AWS SDK or CLI
+<a name="comprehend_example_comprehend_DescribeDocumentClassificationJob_section"></a>
+
+The following code examples show how to use `DescribeDocumentClassificationJob`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Train a custom classifier and classify documents](comprehend_example_comprehend_Usage_ComprehendClassifier_section.md)
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To describe a document classification job**
+The following `describe-document-classification-job` example gets the properties of an asynchronous document classification job.
+
+```
+aws comprehend describe-document-classification-job \
+    --job-id {{123456abcdeb0e11022f22a11EXAMPLE}}
+```
+Output:
+
+```
+{
+    "DocumentClassificationJobProperties": {
+        "JobId": "123456abcdeb0e11022f22a11EXAMPLE",
+        "JobArn": "arn:aws:comprehend:us-west-2:111122223333:document-classification-job/123456abcdeb0e11022f22a11EXAMPLE",
+        "JobName": "exampleclassificationjob",
+        "JobStatus": "COMPLETED",
+        "SubmitTime": "2023-06-14T17:09:51.788000+00:00",
+        "EndTime": "2023-06-14T17:15:58.582000+00:00",
+        "DocumentClassifierArn": "arn:aws:comprehend:us-west-2:111122223333:document-classifier/mymodel/version/1",
+        "InputDataConfig": {
+            "S3Uri": "s3://amzn-s3-demo-bucket/jobdata/",
+            "InputFormat": "ONE_DOC_PER_LINE"
+        },
+        "OutputDataConfig": {
+            "S3Uri": "s3://amzn-s3-demo-destination-bucket/testfolder/111122223333-CLN-123456abcdeb0e11022f22a11EXAMPLE/output/output.tar.gz"
+        },
+        "DataAccessRoleArn": "arn:aws:iam::111122223333:role/service-role/AmazonComprehendServiceRole-servicerole"
+    }
+}
+```
+For more information, see [Custom Classification](https://docs.aws.amazon.com/comprehend/latest/dg/how-document-classification.html) in the *Amazon Comprehend Developer Guide*.
++  For API details, see [DescribeDocumentClassificationJob](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/describe-document-classification-job.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
+
+```
+class ComprehendClassifier:
+    """Encapsulates an Amazon Comprehend custom classifier."""
+
+    def __init__(self, comprehend_client):
+        """
+        :param comprehend_client: A Boto3 Comprehend client.
+        """
+        self.comprehend_client = comprehend_client
+        self.classifier_arn = None
+
+    def describe_job(self, job_id):
+        """
+        Gets metadata about a classification job.
+
+        :param job_id: The ID of the job to look up.
+        :return: Metadata about the job.
+        """
+        try:
+            response = self.comprehend_client.describe_document_classification_job(
+                JobId=job_id
+            )
+            job = response["DocumentClassificationJobProperties"]
+            logger.info("Got classification job %s.", job["JobName"])
+        except ClientError:
+            logger.exception("Couldn't get classification job %s.", job_id)
+            raise
+        else:
+            return job
+```
++  For API details, see [DescribeDocumentClassificationJob](https://docs.aws.amazon.com/goto/boto3/comprehend-2017-11-27/DescribeDocumentClassificationJob) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
+
+```
+    TRY.
+        oo_result = lo_cpd->describedocclassificationjob(
+          iv_jobid = iv_job_id
+        ).
+        MESSAGE 'Document classification job described.' TYPE 'I'.
+      CATCH /aws1/cx_cpdinvalidrequestex.
+        MESSAGE 'Invalid request.' TYPE 'E'.
+      CATCH /aws1/cx_cpdjobnotfoundex.
+        MESSAGE 'Job not found.' TYPE 'E'.
+      CATCH /aws1/cx_cpdtoomanyrequestsex.
+        MESSAGE 'Too many requests.' TYPE 'E'.
+      CATCH /aws1/cx_cpdinternalserverex.
+        MESSAGE 'Internal server error occurred.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [DescribeDocumentClassificationJob](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

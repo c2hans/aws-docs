@@ -1,0 +1,127 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ssm_code_examples.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Code examples for Systems Manager using AWS SDKs
+<a name="ssm_code_examples"></a>
+
+The following code examples show you how to use AWS Systems Manager with an AWS software development kit (SDK).
+
+*Basics* are code examples that show you how to perform the essential operations within a service.
+
+*Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
+
+*Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
+
+**More resources**
++  **[ Systems Manager User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)** – More information about Systems Manager.
++ **[Systems Manager API Reference](https://docs.aws.amazon.com/systems-manager/latest/APIReference/Welcome.html)** – Details about all available Systems Manager actions.
++ **[AWS Developer Center](https://aws.amazon.com/developer/code-examples/?awsf.sdk-code-examples-product=product%23systems-mgr)** – Code examples that you can filter by category or full-text search.
++ **[AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)** – GitHub repo with complete code in preferred languages. Includes instructions for setting up and running the code.
+
+**Contents**
++ [Basics](ssm_code_examples_basics.md)
+  + [Hello Systems Manager](ssm_example_ssm_Hello_section.md)
+  + [Learn the basics](ssm_example_ssm_Scenario_section.md)
+  + [Actions](ssm_code_examples_actions.md)
+    + [`AddTagsToResource`](ssm_example_ssm_AddTagsToResource_section.md)
+    + [`CancelCommand`](ssm_example_ssm_CancelCommand_section.md)
+    + [`CreateActivation`](ssm_example_ssm_CreateActivation_section.md)
+    + [`CreateAssociation`](ssm_example_ssm_CreateAssociation_section.md)
+    + [`CreateAssociationBatch`](ssm_example_ssm_CreateAssociationBatch_section.md)
+    + [`CreateDocument`](ssm_example_ssm_CreateDocument_section.md)
+    + [`CreateMaintenanceWindow`](ssm_example_ssm_CreateMaintenanceWindow_section.md)
+    + [`CreateOpsItem`](ssm_example_ssm_CreateOpsItem_section.md)
+    + [`CreatePatchBaseline`](ssm_example_ssm_CreatePatchBaseline_section.md)
+    + [`DeleteActivation`](ssm_example_ssm_DeleteActivation_section.md)
+    + [`DeleteAssociation`](ssm_example_ssm_DeleteAssociation_section.md)
+    + [`DeleteDocument`](ssm_example_ssm_DeleteDocument_section.md)
+    + [`DeleteMaintenanceWindow`](ssm_example_ssm_DeleteMaintenanceWindow_section.md)
+    + [`DeleteOpsItem`](ssm_example_ssm_DeleteOpsItem_section.md)
+    + [`DeleteParameter`](ssm_example_ssm_DeleteParameter_section.md)
+    + [`DeletePatchBaseline`](ssm_example_ssm_DeletePatchBaseline_section.md)
+    + [`DeregisterManagedInstance`](ssm_example_ssm_DeregisterManagedInstance_section.md)
+    + [`DeregisterPatchBaselineForPatchGroup`](ssm_example_ssm_DeregisterPatchBaselineForPatchGroup_section.md)
+    + [`DeregisterTargetFromMaintenanceWindow`](ssm_example_ssm_DeregisterTargetFromMaintenanceWindow_section.md)
+    + [`DeregisterTaskFromMaintenanceWindow`](ssm_example_ssm_DeregisterTaskFromMaintenanceWindow_section.md)
+    + [`DescribeActivations`](ssm_example_ssm_DescribeActivations_section.md)
+    + [`DescribeAssociation`](ssm_example_ssm_DescribeAssociation_section.md)
+    + [`DescribeAssociationExecutionTargets`](ssm_example_ssm_DescribeAssociationExecutionTargets_section.md)
+    + [`DescribeAssociationExecutions`](ssm_example_ssm_DescribeAssociationExecutions_section.md)
+    + [`DescribeAutomationExecutions`](ssm_example_ssm_DescribeAutomationExecutions_section.md)
+    + [`DescribeAutomationStepExecutions`](ssm_example_ssm_DescribeAutomationStepExecutions_section.md)
+    + [`DescribeAvailablePatches`](ssm_example_ssm_DescribeAvailablePatches_section.md)
+    + [`DescribeDocument`](ssm_example_ssm_DescribeDocument_section.md)
+    + [`DescribeDocumentPermission`](ssm_example_ssm_DescribeDocumentPermission_section.md)
+    + [`DescribeEffectiveInstanceAssociations`](ssm_example_ssm_DescribeEffectiveInstanceAssociations_section.md)
+    + [`DescribeEffectivePatchesForPatchBaseline`](ssm_example_ssm_DescribeEffectivePatchesForPatchBaseline_section.md)
+    + [`DescribeInstanceAssociationsStatus`](ssm_example_ssm_DescribeInstanceAssociationsStatus_section.md)
+    + [`DescribeInstanceInformation`](ssm_example_ssm_DescribeInstanceInformation_section.md)
+    + [`DescribeInstancePatchStates`](ssm_example_ssm_DescribeInstancePatchStates_section.md)
+    + [`DescribeInstancePatchStatesForPatchGroup`](ssm_example_ssm_DescribeInstancePatchStatesForPatchGroup_section.md)
+    + [`DescribeInstancePatches`](ssm_example_ssm_DescribeInstancePatches_section.md)
+    + [`DescribeMaintenanceWindowExecutionTaskInvocations`](ssm_example_ssm_DescribeMaintenanceWindowExecutionTaskInvocations_section.md)
+    + [`DescribeMaintenanceWindowExecutionTasks`](ssm_example_ssm_DescribeMaintenanceWindowExecutionTasks_section.md)
+    + [`DescribeMaintenanceWindowExecutions`](ssm_example_ssm_DescribeMaintenanceWindowExecutions_section.md)
+    + [`DescribeMaintenanceWindowTargets`](ssm_example_ssm_DescribeMaintenanceWindowTargets_section.md)
+    + [`DescribeMaintenanceWindowTasks`](ssm_example_ssm_DescribeMaintenanceWindowTasks_section.md)
+    + [`DescribeMaintenanceWindows`](ssm_example_ssm_DescribeMaintenanceWindows_section.md)
+    + [`DescribeOpsItems`](ssm_example_ssm_DescribeOpsItems_section.md)
+    + [`DescribeParameters`](ssm_example_ssm_DescribeParameters_section.md)
+    + [`DescribePatchBaselines`](ssm_example_ssm_DescribePatchBaselines_section.md)
+    + [`DescribePatchGroupState`](ssm_example_ssm_DescribePatchGroupState_section.md)
+    + [`DescribePatchGroups`](ssm_example_ssm_DescribePatchGroups_section.md)
+    + [`GetAutomationExecution`](ssm_example_ssm_GetAutomationExecution_section.md)
+    + [`GetCommandInvocation`](ssm_example_ssm_GetCommandInvocation_section.md)
+    + [`GetConnectionStatus`](ssm_example_ssm_GetConnectionStatus_section.md)
+    + [`GetDefaultPatchBaseline`](ssm_example_ssm_GetDefaultPatchBaseline_section.md)
+    + [`GetDeployablePatchSnapshotForInstance`](ssm_example_ssm_GetDeployablePatchSnapshotForInstance_section.md)
+    + [`GetDocument`](ssm_example_ssm_GetDocument_section.md)
+    + [`GetInventory`](ssm_example_ssm_GetInventory_section.md)
+    + [`GetInventorySchema`](ssm_example_ssm_GetInventorySchema_section.md)
+    + [`GetMaintenanceWindow`](ssm_example_ssm_GetMaintenanceWindow_section.md)
+    + [`GetMaintenanceWindowExecution`](ssm_example_ssm_GetMaintenanceWindowExecution_section.md)
+    + [`GetMaintenanceWindowExecutionTask`](ssm_example_ssm_GetMaintenanceWindowExecutionTask_section.md)
+    + [`GetParameter`](ssm_example_ssm_GetParameter_section.md)
+    + [`GetParameterHistory`](ssm_example_ssm_GetParameterHistory_section.md)
+    + [`GetParameters`](ssm_example_ssm_GetParameters_section.md)
+    + [`GetPatchBaseline`](ssm_example_ssm_GetPatchBaseline_section.md)
+    + [`GetPatchBaselineForPatchGroup`](ssm_example_ssm_GetPatchBaselineForPatchGroup_section.md)
+    + [`ListAssociationVersions`](ssm_example_ssm_ListAssociationVersions_section.md)
+    + [`ListAssociations`](ssm_example_ssm_ListAssociations_section.md)
+    + [`ListCommandInvocations`](ssm_example_ssm_ListCommandInvocations_section.md)
+    + [`ListCommands`](ssm_example_ssm_ListCommands_section.md)
+    + [`ListComplianceItems`](ssm_example_ssm_ListComplianceItems_section.md)
+    + [`ListComplianceSummaries`](ssm_example_ssm_ListComplianceSummaries_section.md)
+    + [`ListDocumentVersions`](ssm_example_ssm_ListDocumentVersions_section.md)
+    + [`ListDocuments`](ssm_example_ssm_ListDocuments_section.md)
+    + [`ListInventoryEntries`](ssm_example_ssm_ListInventoryEntries_section.md)
+    + [`ListResourceComplianceSummaries`](ssm_example_ssm_ListResourceComplianceSummaries_section.md)
+    + [`ListTagsForResource`](ssm_example_ssm_ListTagsForResource_section.md)
+    + [`ModifyDocumentPermission`](ssm_example_ssm_ModifyDocumentPermission_section.md)
+    + [`PutComplianceItems`](ssm_example_ssm_PutComplianceItems_section.md)
+    + [`PutInventory`](ssm_example_ssm_PutInventory_section.md)
+    + [`PutParameter`](ssm_example_ssm_PutParameter_section.md)
+    + [`RegisterDefaultPatchBaseline`](ssm_example_ssm_RegisterDefaultPatchBaseline_section.md)
+    + [`RegisterPatchBaselineForPatchGroup`](ssm_example_ssm_RegisterPatchBaselineForPatchGroup_section.md)
+    + [`RegisterTargetWithMaintenanceWindow`](ssm_example_ssm_RegisterTargetWithMaintenanceWindow_section.md)
+    + [`RegisterTaskWithMaintenanceWindow`](ssm_example_ssm_RegisterTaskWithMaintenanceWindow_section.md)
+    + [`RemoveTagsFromResource`](ssm_example_ssm_RemoveTagsFromResource_section.md)
+    + [`SendCommand`](ssm_example_ssm_SendCommand_section.md)
+    + [`StartAutomationExecution`](ssm_example_ssm_StartAutomationExecution_section.md)
+    + [`StartSession`](ssm_example_ssm_StartSession_section.md)
+    + [`StopAutomationExecution`](ssm_example_ssm_StopAutomationExecution_section.md)
+    + [`UpdateAssociation`](ssm_example_ssm_UpdateAssociation_section.md)
+    + [`UpdateAssociationStatus`](ssm_example_ssm_UpdateAssociationStatus_section.md)
+    + [`UpdateDocument`](ssm_example_ssm_UpdateDocument_section.md)
+    + [`UpdateDocumentDefaultVersion`](ssm_example_ssm_UpdateDocumentDefaultVersion_section.md)
+    + [`UpdateMaintenanceWindow`](ssm_example_ssm_UpdateMaintenanceWindow_section.md)
+    + [`UpdateManagedInstanceRole`](ssm_example_ssm_UpdateManagedInstanceRole_section.md)
+    + [`UpdateOpsItem`](ssm_example_ssm_UpdateOpsItem_section.md)
+    + [`UpdatePatchBaseline`](ssm_example_ssm_UpdatePatchBaseline_section.md)
++ [Scenarios](ssm_code_examples_scenarios.md)
+  + [Creating a container service for virtual machine instances](ssm_example_ecs_GettingStarted_018_section.md)
+  + [Getting started with virtual machines](ssm_example_ec2_GettingStarted_013_section.md)
+  + [Setting up systems management](ssm_example_iam_GettingStarted_046_section.md)

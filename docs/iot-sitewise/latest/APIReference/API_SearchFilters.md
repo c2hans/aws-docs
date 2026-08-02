@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_SearchFilters.html
+---
+
+# SearchFilters
+<a name="API_SearchFilters"></a>
+
+Optional filters that restrict a search to a subset of the workspace's data.
+
+## Contents
+<a name="API_SearchFilters_Contents"></a>
+
+ ** datasetIds **   <a name="iotsitewise-Type-SearchFilters-datasetIds"></a>
+Restricts the search to these datasets.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 100 items.
+Length Constraints: Fixed length of 36.
+Pattern: `^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+Required: No
+
+ ** timeIntervals **   <a name="iotsitewise-Type-SearchFilters-timeIntervals"></a>
+Restricts the search to these time intervals.
+Type: Array of [TimeInterval](API_TimeInterval.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 100 items.
+Required: No
+
+ ** timeSeriesIds **   <a name="iotsitewise-Type-SearchFilters-timeSeriesIds"></a>
+Restricts the search to these time series.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 100 items.
+Length Constraints: Minimum length of 36. Maximum length of 73.
+Required: No
+
+## See Also
+<a name="API_SearchFilters_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/SearchFilters)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/SearchFilters)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/SearchFilters)

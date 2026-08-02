@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/ug/using-trusted-identity-propagation-cloudformation.html
+---
+
+# Configure and deploy resources using AWS CloudFormation
+<a name="using-trusted-identity-propagation-cloudformation"></a>
+
+You can configure and deploy resources using CloudFormation templates to start using Trusted Identity Propagation with Athena drivers as following.
+
+1. Download an CloudFormation template to set up the IAM Identity Center customer managed application and access roles along with workgroup and IAM Identity Center application tags. You can download it from this [CloudFormation template link](https://downloads.athena.us-east-1.amazonaws.com/drivers/CFNTemplate/AthenaDriversTrustedIdentityPropagationCFNTemplate.yaml).
+
+1. Run the `create-stack` AWS CLI command to deploy the CloudFormation stack that will provision the configured resources as following.
+
+   ```
+   aws cloudformation create-stack \
+       --stack-name my-stack \
+       --template-url URL_of_the_file_that_contains_the_template_body \
+       --parameters file://params.json
+   ```
+
+1. To view the status of the resources provisioning, navigate to the CloudFormation console. After the cluster creation completes, view the new IAM Identity Center application in Identity Center console. You can view the IAM roles in the IAM console.
+
+   The tags will be associated in Workgroup as well as IAM Identity Center application.
+
+1. Using the created roles and application, you can use the Athena drivers immediately. To use JDBC driver, see [JDBC auth plugin connection parameters](jdbc-v3-driver-jwt-tip-credentials.md). To use ODBC driver, see [ODBC auth plugin connection parameters](odbc-v2-driver-jwt-tip.md).

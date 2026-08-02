@@ -1,0 +1,85 @@
+---
+source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/getting-started-chat-create-account.html
+---
+
+# Step 1: Do Initial Setup
+<a name="getting-started-chat-create-account"></a>
+
+Before proceeding, you must:
+
+1. Create an AWS account.
+
+1. Set up root and administrative users.
+
+1. Set up AWS IAM (Identity and Access Management) permissions. Use the policy specified below.
+
+For specific steps for all the above, see [Getting Started with IVS Low-Latency Streaming](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/getting-started.html) in the *Amazon IVS User Guide*. **Important**: In "Step 3: Set Up IAM Permissions," use this policy for IVS Chat:
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+   "Version":"2012-10-17",
+   "Statement": [
+      {
+         "Effect": "Allow",
+         "Action": [
+            "ivschat:CreateChatToken",
+            "ivschat:CreateLoggingConfiguration",
+            "ivschat:CreateRoom",
+            "ivschat:DeleteLoggingConfiguration",
+            "ivschat:DeleteMessage",
+            "ivschat:DeleteRoom",
+            "ivschat:DisconnectUser",
+            "ivschat:GetLoggingConfiguration",
+            "ivschat:GetRoom",
+            "ivschat:ListLoggingConfigurations",
+            "ivschat:ListRooms",
+            "ivschat:ListTagsForResource",
+            "ivschat:SendEvent",
+            "ivschat:TagResource",
+            "ivschat:UntagResource",
+            "ivschat:UpdateLoggingConfiguration",
+            "ivschat:UpdateRoom"
+          ],
+          "Resource": "*"
+      },
+      {
+         "Effect": "Allow",
+         "Action": [
+            "servicequotas:ListServiceQuotas",
+            "servicequotas:ListServices",
+            "servicequotas:ListAWSDefaultServiceQuotas",
+            "servicequotas:ListRequestedServiceQuotaChangeHistoryByQuota",
+            "servicequotas:ListTagsForResource",
+            "cloudwatch:GetMetricData",
+            "cloudwatch:DescribeAlarms"
+         ],
+         "Resource": "*"
+      },
+      {
+         "Effect": "Allow",
+         "Action": [
+            "logs:CreateLogDelivery",
+            "logs:GetLogDelivery",
+            "logs:UpdateLogDelivery",
+            "logs:DeleteLogDelivery",
+            "logs:ListLogDeliveries",
+            "logs:PutResourcePolicy",
+            "logs:DescribeResourcePolicies",
+            "logs:DescribeLogGroups",
+            "s3:PutBucketPolicy",
+            "s3:GetBucketPolicy",
+            "iam:CreateServiceLinkedRole",
+            "firehose:TagDeliveryStream"
+         ],
+         "Resource": "*"
+      }
+   ]
+}
+```
+
+------

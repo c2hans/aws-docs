@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/amazonworklink.html
+---
+
+# Data retrieval APIs for Amazon WorkLink
+<a name="amazonworklink"></a>
+
+Amazon WorkLink provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="worklink-DescribeAuditStreamConfiguration"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeAuditStreamConfiguration.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeAuditStreamConfiguration.html) | Describe the audit stream configuration for an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeCompanyNetworkConfiguration"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeCompanyNetworkConfiguration.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeCompanyNetworkConfiguration.html) | Describe the company network configuration for an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeDevice"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDevice.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDevice.html) | Describe details of a device associated with an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeDevicePolicyConfiguration"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDevicePolicyConfiguration.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDevicePolicyConfiguration.html) | Describe the device policy configuration for an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeDomain"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDomain.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeDomain.html) | Describe details about a domain associated with an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeFleetMetadata"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeFleetMetadata.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeFleetMetadata.html) | Describe metadata of an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeIdentityProviderConfiguration"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeIdentityProviderConfiguration.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeIdentityProviderConfiguration.html) | Describe the identity provider configuration for an Amazon WorkLink fleet | Read |
+| <a name="worklink-DescribeWebsiteCertificateAuthority"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_DescribeWebsiteCertificateAuthority.html](https://docs.aws.amazon.com/worklink/latest/api/API_DescribeWebsiteCertificateAuthority.html) | Describe a website certificate authority associated with an Amazon WorkLink fleet | Read |
+| <a name="worklink-ListDevices"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_ListDevices.html](https://docs.aws.amazon.com/worklink/latest/api/API_ListDevices.html) | List the devices associated with an Amazon WorkLink fleet | List |
+| <a name="worklink-ListDomains"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_ListDomains.html](https://docs.aws.amazon.com/worklink/latest/api/API_ListDomains.html) | List the associated domains for an Amazon WorkLink fleet | List |
+| <a name="worklink-ListFleets"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_ListFleets.html](https://docs.aws.amazon.com/worklink/latest/api/API_ListFleets.html) | List the Amazon WorkLink fleets associated with the account | List |
+| <a name="worklink-ListTagsForResource"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_ListTagsForResource.html](https://docs.aws.amazon.com/worklink/latest/api/API_ListTagsForResource.html) | List tags for a resource | Read |
+| <a name="worklink-ListWebsiteAuthorizationProviders"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteAuthorizationProviders.html](https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteAuthorizationProviders.html) | List the website authorization providers for an Amazon WorkLink fleet | List |
+| <a name="worklink-ListWebsiteCertificateAuthorities"></a>[https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteCertificateAuthorities.html](https://docs.aws.amazon.com/worklink/latest/api/API_ListWebsiteCertificateAuthorities.html) | List the website certificate authorities associated with an Amazon WorkLink fleet | List |
+| <a name="worklink-SearchEntity"></a>[https://docs.aws.amazon.com/worklink/latest/ag/manage-devices.html](https://docs.aws.amazon.com/worklink/latest/ag/manage-devices.html) | List devices for an Amazon WorkLink fleet | List |

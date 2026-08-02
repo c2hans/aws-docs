@@ -1,0 +1,170 @@
+---
+source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_UpdateEventAction.html
+---
+
+# UpdateEventAction
+<a name="API_UpdateEventAction"></a>
+
+This operation updates the event action.
+
+## Request Syntax
+<a name="API_UpdateEventAction_RequestSyntax"></a>
+
+```
+PATCH /v1/event-actions/{{EventActionId}} HTTP/1.1
+Content-type: application/json
+
+{
+   "Action": {
+      "ExportRevisionToS3": {
+         "Encryption": {
+            "KmsKeyArn": "{{string}}",
+            "Type": "{{string}}"
+         },
+         "RevisionDestination": {
+            "Bucket": "{{string}}",
+            "KeyPattern": "{{string}}"
+         }
+      }
+   }
+}
+```
+
+## URI Request Parameters
+<a name="API_UpdateEventAction_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [EventActionId](#API_UpdateEventAction_RequestSyntax) **   <a name="dataexchange-UpdateEventAction-request-uri-EventActionId"></a>
+The unique identifier for the event action.
+Required: Yes
+
+## Request Body
+<a name="API_UpdateEventAction_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [Action](#API_UpdateEventAction_RequestSyntax) **   <a name="dataexchange-UpdateEventAction-request-Action"></a>
+What occurs after a certain event.
+Type: [Action](API_Action.md) object
+Required: No
+
+## Response Syntax
+<a name="API_UpdateEventAction_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "Action": {
+      "ExportRevisionToS3": {
+         "Encryption": {
+            "KmsKeyArn": "string",
+            "Type": "string"
+         },
+         "RevisionDestination": {
+            "Bucket": "string",
+            "KeyPattern": "string"
+         }
+      }
+   },
+   "Arn": "string",
+   "CreatedAt": "string",
+   "Event": {
+      "RevisionPublished": {
+         "DataSetId": "string"
+      }
+   },
+   "Id": "string",
+   "UpdatedAt": "string"
+}
+```
+
+## Response Elements
+<a name="API_UpdateEventAction_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [Action](#API_UpdateEventAction_ResponseSyntax) **   <a name="dataexchange-UpdateEventAction-response-Action"></a>
+What occurs after a certain event.
+Type: [Action](API_Action.md) object
+
+ ** [Arn](#API_UpdateEventAction_ResponseSyntax) **   <a name="dataexchange-UpdateEventAction-response-Arn"></a>
+The ARN for the event action.
+Type: String
+
+ ** [CreatedAt](#API_UpdateEventAction_ResponseSyntax) **   <a name="dataexchange-UpdateEventAction-response-CreatedAt"></a>
+The date and time that the event action was created, in ISO 8601 format.
+Type: Timestamp
+
+ ** [Event](#API_UpdateEventAction_ResponseSyntax) **   <a name="dataexchange-UpdateEventAction-response-Event"></a>
+What occurs to start an action.
+Type: [Event](API_Event.md) object
+
+ ** [Id](#API_UpdateEventAction_ResponseSyntax) **   <a name="dataexchange-UpdateEventAction-response-Id"></a>
+The unique identifier for the event action.
+Type: String
+Pattern: `[a-zA-Z0-9]{30,40}`
+
+ ** [UpdatedAt](#API_UpdateEventAction_ResponseSyntax) **   <a name="dataexchange-UpdateEventAction-response-UpdatedAt"></a>
+The date and time that the event action was last updated, in ISO 8601 format.
+Type: Timestamp
+
+## Errors
+<a name="API_UpdateEventAction_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+Access to the resource is denied.
+ ** Message **
+Access to the resource is denied.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+An exception occurred with the service.
+ ** Message **
+The message identifying the service exception that occurred.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The resource couldn't be found.
+ ** Message **
+The resource couldn't be found.
+ ** ResourceId **
+The unique identifier for the resource that couldn't be found.
+ ** ResourceType **
+The type of resource that couldn't be found.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The limit on the number of requests per second was exceeded.
+ ** Message **
+The limit on the number of requests per second was exceeded.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The request was invalid.
+ ** ExceptionCause **
+The unique identifier for the resource that couldn't be found.
+ ** Message **
+The message that informs you about what was invalid about the request.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_UpdateEventAction_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/dataexchange-2017-07-25/UpdateEventAction)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dataexchange-2017-07-25/UpdateEventAction)

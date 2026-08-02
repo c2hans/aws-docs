@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EvaluationFormNumericQuestionAutomation.html
+---
+
+# EvaluationFormNumericQuestionAutomation
+<a name="API_EvaluationFormNumericQuestionAutomation"></a>
+
+Information about the automation configuration in numeric questions.
+
+## Contents
+<a name="API_EvaluationFormNumericQuestionAutomation_Contents"></a>
+
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** AnswerSource **   <a name="connect-Type-EvaluationFormNumericQuestionAutomation-AnswerSource"></a>
+A source of automation answer for numeric question.
+Type: [EvaluationFormQuestionAutomationAnswerSource](API_EvaluationFormQuestionAutomationAnswerSource.md) object
+Required: No
+
+ ** PropertyValue **   <a name="connect-Type-EvaluationFormNumericQuestionAutomation-PropertyValue"></a>
+The property value of the automation.
+Type: [NumericQuestionPropertyValueAutomation](API_NumericQuestionPropertyValueAutomation.md) object
+Required: No
+
+## See Also
+<a name="API_EvaluationFormNumericQuestionAutomation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/EvaluationFormNumericQuestionAutomation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/EvaluationFormNumericQuestionAutomation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/EvaluationFormNumericQuestionAutomation)

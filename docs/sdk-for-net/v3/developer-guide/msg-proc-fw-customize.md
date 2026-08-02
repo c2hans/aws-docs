@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/sdk-for-net/v3/developer-guide/msg-proc-fw-customize.html
+---
+
+The AWS SDK for .NET V3 has reached end-of-support.
+
+We recommend that you migrate to [AWS SDK for .NET V4](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/welcome.html). For additional details and information on how to migrate, please refer to our [end-of-support announcement](https://aws.amazon.com/blogs/developer/aws-sdk-for-net-v3-end-of-support-announcement/).
+
+# Customize the AWS Message Processing Framework for .NET
+<a name="msg-proc-fw-customize"></a>
+
+The AWS Message Processing Framework for .NET builds, sends, and handles messages in three different "layers":
+
+1. At the outermost layer, the framework builds the AWS-native request or response specific to a service. With Amazon SQS for example, it builds [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html) requests, and works with the [https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Message.html](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_Message.html) objects that are defined by the service.
+
+1. Inside the SQS request and response, the framework sets the `MessageBody` element (or `Message` for Amazon SNS or `Detail` for Amazon EventBridge) to a [JSON-formatted CloudEvent](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md). This contains metadata set by the framework that is accessible on the `MessageEnvelope` object when handling a message.
+
+1. At the innermost layer, the `data` attribute inside the CloudEvent JSON object contains a JSON serialization of the .NET object that was sent or received as the message.
+
+   ```
+   {
+       "id":"b02f156b-0f02-48cf-ae54-4fbbe05cffba",
+       "source":"/aws/messaging",
+       "specversion":"1.0",
+       "type":"Publisher.Models.ChatMessage",
+       "time":"2023-11-21T16:36:02.8957126+00:00",
+       "data":"<the ChatMessage object serialized as JSON>"
+   }
+   ```
+
+You can customize how the message envelope is configured and read:
++ `"id"` uniquely identifies the message. By default it is set to a new GUID, but this can be overridden by implementing your own `IMessageIdGenerator` and injecting that into the DI container.
++ `"type"` controls how the message is routed to handlers. By default this uses the full name of the .NET type that corresponds to the message. You can override this via the `messageTypeIdentifier` parameter when mapping the message type to the destination via `AddSQSPublisher`, `AddSNSPublisher`, or `AddEventBridgePublisher`.
++ `"source"` indicates which system or server sent the message.
+  + This will be the function name if publishing from AWS Lambda, the cluster name and task ARN if on Amazon ECS, the instance ID if on Amazon EC2, otherwise a fallback value of `/aws/messaging`.
+  + You can override this via `AddMessageSource` or `AddMessageSourceSuffix` on the `MessageBusBuilder`.
++ `"time"` set to the current DateTime in UTC. This can be overridden by implementing your own `IDateTimeHandler` and injecting that into the DI container.
++ `"data"` contains a JSON representation of the .NET object that was sent or received as the message:
+  + `ConfigureSerializationOptions` on `MessageBusBuilder` allows you to configure the [https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions](https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializeroptions) that will be used when serializing and deserializing the message.
+  + To inject additional attributes or transform the message envelope once the framework builds it, you can implement `ISerializationCallback` and register that via `AddSerializationCallback` on `MessageBusBuilder`.

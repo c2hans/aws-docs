@@ -1,0 +1,142 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_apigateway_sqs.html
+---
+
+# aws-apigateway-sqs
+<a name="aws_apigateway_sqs"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_apigateway_sqs`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-apigateway-sqs`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.apigatewaysqs`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an Amazon API Gateway connected to an Amazon SQS queue pattern.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { ApiGatewayToSqs, ApiGatewayToSqsProps } from "@aws-solutions-constructs/aws-apigateway-sqs";
+
+new ApiGatewayToSqs(this, 'ApiGatewayToSqsPattern', {});
+```
+
+```
+from aws_solutions_constructs.aws_apigateway_sqs import ApiGatewayToSqs
+from aws_cdk import Stack
+from constructs import Construct
+
+ApiGatewayToSqs(self, 'ApiGatewayToSqsPattern')
+```
+
+```
+import software.constructs.Construct;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awsconstructs.services.apigatewaysqs.*;
+
+new ApiGatewayToSqs(this, "ApiGatewayToSqsPattern", new ApiGatewayToSqsProps.Builder()
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| apiGatewayProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiProps.html)  | Optional - user provided props to override the default props for the API Gateway. |
+| createUsagePlan? | boolean | Whether to create a Usage Plan attached to the API. Must be true if apiGatewayProps.defaultMethodOptions.apiKeyRequired is true. @default - true (to match legacy behavior) |
+| queueProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html)  | Optional - user provided properties to override the default properties for the SQS queue. Providing both this and `existingQueueObj` will cause an error. |
+| deployDeadLetterQueue? |  `boolean`  | Whether to deploy a secondary queue to be used as a dead letter queue. Defaults to `true`. |
+| maxReceiveCount |  `number`  | The number of times a message can be unsuccessfully dequeued before being moved to the dead-letter queue. |
+| allowCreateOperation? |  `boolean`  | Whether to deploy an API Gateway Method for POST HTTP operations on the queue (i.e. sqs:SendMessage). |
+| createRequestTemplate? |  `string`  | API Gateway Request Template for the create method for the default `application/json` content-type. This property is required if the `allowCreateOperation` property is set to true. |
+| additionalCreateRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Create Request Templates for content-types other than `application/json`. Use the `createRequestTemplate` property to set the request template for the `application/json` content-type. This property can only be specified if the `allowCreateOperation` property is set to true. |
+| createIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the create method. This property can only be specified if the `allowCreateOperation` property is set to true. |
+| createMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the create action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| allowReadOperation? |  `boolean`  | Whether to deploy an API Gateway Method for GET HTTP operations on the queue (i.e. sqs:ReceiveMessage). |
+| readRequestTemplate? |  `string`  | API Gateway Request Template for the read method for the default `application/json` content-type. |
+| additionalReadRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Read Request Templates for content-types other than `application/json`. Use the `readRequestTemplate` property to set the request template for the `application/json` content-type. |
+| readIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the read method. |
+| readMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the read action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| allowDeleteOperation? |  `boolean`  | Whether to deploy an API Gateway Method for HTTP DELETE operations on the queue (i.e. sqs:DeleteMessage). |
+| deleteRequestTemplate? |  `string`  | API Gateway Request Template for THE delete method for the default `application/json` content-type. This property can only be specified if the `allowDeleteOperation` property is set to true. |
+| additionalDeleteRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Delete request templates for content-types other than `application/json`. Use the `deleteRequestTemplate` property to set the request template for the `application/json` content-type. This property can only be specified if the `allowDeleteOperation` property is set to true. |
+| deleteIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the delete method. This property can only be specified if the `allowDeleteOperation` property is set to true. |
+| deleteMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the delete action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| logGroupProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html)  | User provided props to override the default props for for the CloudWatchLogs LogGroup. |
+| enableEncryptionWithCustomerManagedKey? |  `boolean`  | If no key is provided, this flag determines whether the queue is encrypted with a new CMK or an AWS managed key. This flag is ignored if any of the following are defined: queueProps.encryptionMasterKey, encryptionKey or encryptionKeyProps. |
+| encryptionKey? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html)  | An optional, imported encryption key to encrypt the SQS Queue with. |
+| encryptionKeyProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html#construct-props](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_kms.Key.html#construct-props)  | Optional user provided properties to override the default properties for the KMS encryption key used to encrypt the SQS queue with. |
+| messageSchema? | { [contentType: string]: [api.JsonSchema](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.JsonSchema.html); } | Optional schema to define format of incoming message in API request body. Example: { "application/json": { schema: api.JsonSchemaVersion.DRAFT4, title: "pollResponse", type: api.JsonSchemaType.OBJECT, required: ["firstProperty", "antotherProperty"], additionalProperties: false, properties: { firstProperty: { type: api.JsonSchemaType.STRING }, antotherProperty: { type: api.JsonSchemaType.STRING } } } Only relevant for create operation, if allowCreateOperation is not true, then supplying this causes an error. Sending this value causes this construct to turn on validation for the request body. @default - None |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| apiGateway |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | Returns an instance of the API Gateway REST API created by the pattern. |
+| apiGatewayRole |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the iam.Role created by the construct for API Gateway. |
+| apiGatewayCloudWatchRole? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the iam.Role created by the construct for API Gateway for CloudWatch access. |
+| apiGatewayLogGroup |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html)  | Returns an instance of the LogGroup created by the construct for API Gateway access logging to CloudWatch. |
+| sqsQueue |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.Queue.html)  | Returns an instance of the SQS queue created by the pattern. |
+| deadLetterQueue? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.DeadLetterQueue.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.DeadLetterQueue.html)  | Returns an instance of the DeadLetterQueue created by the pattern. |
+
+## Sample API Usage
+<a name="_sample_api_usage"></a>
+
+|  **Method**  |  **Request Path**  |  **Request Body**  |  **Queue Action**  |  **Description**  |
+| --- | --- | --- | --- | --- |
+| GET |  `/`  |  |  `sqs::ReceiveMessage`  | Retrieves a message from the queue. |
+| POST |  `/`  |  `{ "data": "Hello World!" }`  |  `sqs::SendMessage`  | Delivers a message to the queue. |
+| DELETE |  `/message?receiptHandle=[value]`  |  |  `sqs::DeleteMessage`  | Deletes a specified message from the queue |
+
+## API Gateway Request/Response Template Properties Overview
+<a name="_api_gateway_requestresponse_template_properties_overview"></a>
+
+This construct allows you to implement four DynamoDB API operations, CREATE/READ/DELETE (corresponding the HTTP POST/GET/DELETE requests respectively). They are completely independent and each follows the same pattern: \* Setting `allowCreateOperation` to true will implement the `application/json` content-type with default request and response templates \* The request template for `application/json` requests can be customized using the `createRequestTemplate` prop value \* *Additional* request templates can be specified using the `additionalCreateRequestTemplates` prop value. Note - these DO NOT replace the `application/json` content-type \* Customized integration responses can be specified for any content type in the `createIntegrationResponses` prop value.
+
+Supplying any of these values without setting allowCreateOperation to true will result in an error. This pattern is the same for all four API operations.
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon API Gateway
+<a name="_amazon_api_gateway"></a>
++ Deploy an edge-optimized API endpoint
++ Enable CloudWatch logging for API Gateway
++ Configure least privilege access IAM role for API Gateway
++ Set the default authorizationType for all API methods to IAM
++ Enable X-Ray Tracing
+
+### Amazon SQS Queue
+<a name="_amazon_sqs_queue"></a>
++ Deploy SQS dead-letter queue for the source SQS Queue
++ Enable server-side encryption for source SQS Queue using AWS Managed KMS Key
++ Enforce encryption of data in transit
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing Amazon API Gateway, CloudWatch, and Simple Queue Service interactions with roles.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-sqs.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-apigateway-sqs) for this pattern to view the code, read/create issues and pull requests and more.

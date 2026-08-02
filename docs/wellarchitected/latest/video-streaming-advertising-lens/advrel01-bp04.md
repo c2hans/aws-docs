@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/advrel01-bp04.html
+---
+
+# ADVREL01-BP04 Implement chaos engineering practices
+<a name="advrel01-bp04"></a>
+
+ Accept that "everything fails, all the time," (Dr. Werner Vogels, Amazon CTO), and safely disrupt things on your terms to discover faults and fragility so that you can later improve services.
+
+## Implementation guidance
+<a name="implementation-guidance-18"></a>
+
+ Advertising systems have components that are sensitive to disconnects, latency, and bandwidth changes. Use tools like [AWS Fault Injection Service (FIS)](https://aws.amazon.com/fis/) or open-source tools like [Chaos Monkey](https://netflix.github.io/chaosmonkey/) to inject failures into your workload which simulate network disruptions or resource unavailability. Based on the results, update responses to failure scenarios, how you monitor, and what you alert on, then adapt runbooks and playbooks before practicing failure response with relevant teams.
+
+## Key AWS services
+<a name="key-aws-services-4"></a>
++  [AWS Resilience Hub](https://aws.amazon.com/resilience-hub/)
+
+## Resources
+<a name="resources-13"></a>
+
+ **Related documentation:**
++  [AWS chaos engineering blogs](https://aws.amazon.com/blogs/architecture/tag/chaos-engineering/)
++  [Continuous integration and continuous delivery](https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-caf-platform-perspective/ci-cd.html)
++  [Leverage AWS Resilience Lifecycle Framework to assess and improve the resilience of application using AWS Resilience Hub](https://aws.amazon.com/blogs/mt/leverage-aws-resilience-lifecycle-framework-to-assess-and-improve-the-resilience-of-application-using-aws-resilience-hub/index.html)
++  [[QA.NT.6] Experiment with failure using resilience testing to build recovery preparedness](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/qa.nt.6-experiment-with-failure-using-resilience-testing-to-build-recovery-preparedness.html)
+
+ **Related videos:**
++  [AWS re:Invent 2020 - Developer Keynote with Dr. Werner Vogels](https://www.youtube.com/watch?v=jt-gV1YwmnI)

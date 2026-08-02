@@ -1,0 +1,89 @@
+---
+source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DeleteDBCluster.html
+---
+
+# DeleteDBCluster
+<a name="API_DeleteDBCluster"></a>
+
+The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.
+
+Note that the DB Cluster cannot be deleted if deletion protection is enabled. To delete it, you must first set its `DeletionProtection` field to `False`.
+
+## Request Parameters
+<a name="API_DeleteDBCluster_RequestParameters"></a>
+
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+ ** DBClusterIdentifier **
+The DB cluster identifier for the DB cluster to be deleted. This parameter isn't case-sensitive.
+Constraints:
++ Must match an existing DBClusterIdentifier.
+Type: String
+Required: Yes
+
+ ** FinalDBSnapshotIdentifier **
+ The DB cluster snapshot identifier of the new DB cluster snapshot created when `SkipFinalSnapshot` is set to `false`.
+ Specifying this parameter and also setting the `SkipFinalShapshot` parameter to true results in an error.
+Constraints:
++ Must be 1 to 255 letters, numbers, or hyphens.
++ First character must be a letter
++ Cannot end with a hyphen or contain two consecutive hyphens
+Type: String
+Required: No
+
+ ** SkipFinalSnapshot **
+ Determines whether a final DB cluster snapshot is created before the DB cluster is deleted. If `true` is specified, no DB cluster snapshot is created. If `false` is specified, a DB cluster snapshot is created before the DB cluster is deleted.
+You must specify a `FinalDBSnapshotIdentifier` parameter if `SkipFinalSnapshot` is `false`.
+Default: `false`
+Type: Boolean
+Required: No
+
+## Response Elements
+<a name="API_DeleteDBCluster_ResponseElements"></a>
+
+The following element is returned by the service.
+
+ ** DBCluster **
+Contains the details of an Amazon Neptune DB cluster.
+This data type is used as a response element in the [DescribeDBClusters](API_DescribeDBClusters.md).
+Type: [DBCluster](API_DBCluster.md) object
+
+## Errors
+<a name="API_DeleteDBCluster_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** DBClusterNotFoundFault **
+ *DBClusterIdentifier* does not refer to an existing DB cluster.
+HTTP Status Code: 404
+
+ ** DBClusterSnapshotAlreadyExistsFault **
+User already has a DB cluster snapshot with the given identifier.
+HTTP Status Code: 400
+
+ ** InvalidDBClusterSnapshotStateFault **
+The supplied value is not a valid DB cluster snapshot state.
+HTTP Status Code: 400
+
+ ** InvalidDBClusterStateFault **
+The DB cluster is not in a valid state.
+HTTP Status Code: 400
+
+ ** SnapshotQuotaExceeded **
+Request would result in user exceeding the allowed number of DB snapshots.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DeleteDBCluster_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/neptune-2014-10-31/DeleteDBCluster)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/neptune-2014-10-31/DeleteDBCluster)

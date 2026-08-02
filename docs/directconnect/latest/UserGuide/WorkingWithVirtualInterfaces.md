@@ -1,0 +1,98 @@
+---
+source_url: https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html
+---
+
+# Direct Connect virtual interfaces and hosted virtual interfaces
+<a name="WorkingWithVirtualInterfaces"></a>
+
+You must create one of the following virtual interfaces (VIFs) to begin using your Direct Connect connection.
++ Private virtual interface: A private virtual interface should be used to access an Amazon VPC using private IP addresses.
++ Public virtual interface: A public virtual interface can access all AWS public services using public IP addresses.
++ Transit virtual interface: A transit virtual interface should be used to access one or more Amazon VPC Transit Gateways associated with Direct Connect gateways. You can use transit virtual interfaces with any Direct Connect dedicated or hosted connection of any speed. For information about Direct Connect gateway configurations, see [Direct Connect gateways](direct-connect-gateways-intro.md).
+
+To connect to other AWS services using IPv6 addresses, check the service documentation to verify that IPv6 addressing is supported.
+
+## Public virtual interface prefix advertisement rules
+<a name="advertise-prefixes"></a>
+
+We advertise appropriate Amazon prefixes to you so that you can reach the public IP addresses of workloads in your VPCs and other AWS services. You can access all AWS prefixes through this connection; for example, public IP addresses used by Amazon EC2 instances, Amazon S3, API endpoints for AWS services, and Amazon.com. You do not have access to non-Amazon prefixes. For a current list of prefixes used by AWS, see [AWS IP Address Ranges](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) in the *Amazon VPC User Guide*. On this page you can download a `.json` file of the currently published AWS IP ranges. Note that for published IP address ranges:
++ Prefixes announced via BGP over a public virtual interface might be aggregated or de-aggregated compared to what is listed in the AWS IP address ranges list.
++ Any IP address ranges that you bring to AWS through your own IP addresses (BYOIP) are not included in the `.json` file, but AWS still advertises these BYOIP addresses over a public virtual interface.
++  AWS does not re-advertise customer prefixes that were received over Direct Connect public virtual interfaces to networks outside of AWS. Prefixes advertised on a public virtual interface will be visible to all customers on AWS.
+
+**Note**
+We recommend that you use a firewall filter (based on the source/destination address of packets) to control traffic to and from some prefixes.
+
+For more information about public virtual interfaces and routing policies, see [Public virtual interface routing policies](routing-and-bgp.md#routing-policies).
+
+## SiteLink
+<a name="dx-sitelink"></a>
+
+If you're creating a private or transit virtual interface, you can use SiteLink.
+
+SiteLink is an optional Direct Connect feature for private virtual interfaces that enables connectivity between any two Direct Connect points of presence (PoPs) in the same AWS partition using the shortest available path over the AWS network. This allows you to connect your on-premises network through the AWS global network without needing to route your traffic through a Region. For more information about SiteLink see [Introducing Direct Connect SiteLink](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-direct-connect-sitelink/).
+
+**Note**
+SiteLink is not available in AWS GovCloud (US) and the China Regions.
+SiteLink does not work if an on-premises router advertises the same route to AWS on multiple virtual interfaces.
+
+There's a separate pricing fee for using SiteLink. For more information, see [AWS Direct Connect Pricing](https://aws.amazon.com/directconnect/pricing/).
+
+SiteLink doesn't support all virtual interface types. The following table shows the interface type and whether it's supported.
+
+| Virtual interface type | Supported/Not supported |
+| --- | --- |
+|  Transit virtual interface  |  Supported  |
+|  Private virtual interface attached to a Direct Connect gateway with a virtual gateway  |  Supported  |
+|  Private virtual interface attached to a Direct Connect gateway not associated with a virtual gateway or Transit Gateway  |  Supported  |
+|  Private virtual interface attached to a virtual gateway  |  Not supported  |
+|  Public virtual interface  |  Not supported  |
+
+Traffic routing behavior for traffic from AWS Regions (virtual or Transit Gateways) to on-premises locations over a SiteLink enabled virtual interface varies slightly from the default Direct Connect virtual interface behavior with an AWS path prepend. When SiteLink is enabled, virtual interfaces from an AWS Region prefer a BGP path with a lower AS path length from a Direct Connect location, regardless of the associated Region. For example , an associated Region is advertised for each Direct Connect location. If SiteLink is disabled, by default traffic coming from a virtual or Transit Gateway prefers a Direct Connect location that is associated with that AWS Region, even if the router from Direct Connect locations associated with different Regions advertises a path with a shorter AS path length. The virtual or Transit Gateway still prefers the path from Direct Connect locations local to the associated AWS Region.
+
+SiteLink supports a maximum jumbo frame MTU size of either 8500 or 9001, depending on the virtual interface type. For more information, see [MTUs for private virtual interfaces or transit virtual interfaces](#set-jumbo-frames-vif).
+
+## Prerequisites for virtual interfaces
+<a name="vif-prerequisites"></a>
+
+Before you create a virtual interface, do the following:
++ Create a connection. For more information, see [Create a connection using the Connection wizard](create-connection.md).
++ Create a link aggregation group (LAG) when you have multiple connections that you want to treat as a single one. For information, see [Associate a connection with a LAG](associate-connection-with-lag.md).
+
+To create a virtual interface, you need the following information:
+
+| Resource | Required information |
+| --- | --- |
+| Connection | The Direct Connect connection or link aggregation group (LAG) for which you are creating the virtual interface. |
+| Virtual interface name | A name for the virtual interface. |
+| Virtual interface owner | If you're creating the virtual interface for another account, you need the AWS account ID of the other account. |
+| (Private virtual interface only) Connection | For connecting to a VPC in the same AWS Region, you need the virtual private gateway for your VPC. When you attach a private virtual interface directly to a virtual private gateway (with no Direct Connect gateway), the Amazon side of the BGP session uses the ASN that is configured on the virtual private gateway. When you attach the private virtual interface to a Direct Connect gateway instead, the Amazon side uses the Direct Connect gateway's ASN. When you create a virtual private gateway, you can specify your own private ASN. Otherwise, Amazon provides a default ASN. For more information, see [Create a Virtual Private Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/SetUpVPNConnections.html#vpn-create-vpg) in the Amazon VPC User Guide. For connecting to a VPC through a Direct Connect gateway, you need the Direct Connect gateway. For more information, see [Direct Connect Gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html).    You *can't* use the same ASN for the customer gateway and virtual gateway/Direct Connect gateway on the virtual interface.   You *can* use the same customer gateway ASN for multiple virtual interfaces.   Multiple virtual interfaces can have the same virtual gateway/Direct Connect gateway ASN and customer gateway ASN as long as they are a part of different Direct Connect connections. For example: <br />Virtual gateway (ASN 64,496) <---Virtual interface 1 (Direct Connect connection 1)---> Customer gateway (ASN 64,511) <br />Virtual gateway (ASN 64,496) <---Virtual interface 2 (Direct Connect connection 2)---> Customer gateway (ASN 64,511)     |
+| VLAN | A unique virtual local area network (VLAN) tag that's not already in use on your connection. The value must be between 1 and 4094 and must comply with the Ethernet 802.1Q standard. This tag is required for any traffic traversing the Direct Connect connection. If you have a hosted connection, your AWS Direct Connect Partner provides this value. You can’t modify the value after you have created the virtual interface. |
+| Peer IP addresses |  A virtual interface can support a BGP peering session for IPv4, IPv6, or one of each (dual-stack). Do not use Elastic IPs (EIPs) or Bring your own IP addresses (BYOIP) from the Amazon Pool to create a public virtual interface. You cannot create multiple BGP sessions for the same IP addressing family on the same virtual interface. The IP address ranges are assigned to each end of the virtual interface for the BGP peering session.[See the AWS documentation website for more details](http://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html)  |
+| Address family | Whether the BGP peering session will be over IPv4 or IPv6. |
+| BGP information | [See the AWS documentation website for more details](http://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) |
+| (Public virtual interface only) Prefixes you want to advertise |  Public IPv4 routes or IPv6 routes to advertise over BGP. You must advertise at least one prefix using BGP, up to a maximum of 1,000 prefixes.[See the AWS documentation website for more details](http://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) |
+| (Private and transit virtual interfaces only) Jumbo frames | The maximum transmission unit (MTU) of packets over Direct Connect. The default is 1500. Setting the MTU of a virtual interface to 8500 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. Jumbo frames are supported up to 8500 MTU for Direct Connect. Static routes and propagated routes configured in the Transit Gateway Route Table will support Jumbo Frames, including from EC2 instances with VPC static route table entries to the Transit Gateway Attachment. To check whether a connection or virtual interface supports jumbo frames, select it in the Direct Connect console and find Jumbo frame capable on the virtual interface General configuration page. |
+
+When you create a virtual interface, you can specify the account that owns the virtual interface. When you choose an AWS account that is not your account, the following rules apply:
++ For private VIFs and transit VIFs, the account applies to the virtual interface and the virtual private gateway/Direct Connect gateway destination.
++ For public VIFs, the account is used for virtual interface billing. The Data Transfer Out (DTO) usage is metered toward the resource owner at Direct Connect data transfer rate.
+
+**Note**
+31-Bit prefixes are supported on all Direct Connect virtual interface types. See [RFC 3021: Using 31-Bit Prefixes on IPv4 Point-to-Point Links](https://datatracker.ietf.org/doc/html/rfc3021) for more information.
+
+## MTUs for private virtual interfaces or transit virtual interfaces
+<a name="set-jumbo-frames-vif"></a>
+
+Direct Connect supports an Ethernet frame size of 1522 or 9023 bytes (14 bytes Ethernet header \+ 4 bytes VLAN tag \+ bytes for the IP datagram \+ 4 bytes FCS) at the link layer.
+
+The maximum transmission unit (MTU) of a network connection is the size, in bytes, of the largest permissible packet that can be passed over the connection. The MTU of a private virtual interface can be either 1500 or 9001 (jumbo frames). The MTU of a transit virtual interface can be either 1500 or 8500 (jumbo frames). You can specify the MTU when you create the interface or update it after you create it. Setting the MTU of a virtual interface to 8500 (jumbo frames) or 9001 (jumbo frames) can cause an update to the underlying physical connection if it wasn't updated to support jumbo frames. Updating the connection disrupts network connectivity for all virtual interfaces associated with the connection for up to 30 seconds. To check whether a connection or virtual interface supports jumbo frames, select it in the Direct Connect console and find **Jumbo Frame Capable** on the **Summary** tab.
+
+After you enable jumbo frames for your private virtual interface or transit virtual interface, you can only associate it with a connection or LAG that is jumbo frame capable. Jumbo frames are supported on a private virtual interface attached to either a virtual private gateway or a Direct Connect gateway, or on a transit virtual interface attached to a Direct Connect gateway. If you have two private virtual interfaces that advertise the same route but use different MTU values, or if you have a Site-to-Site VPN that advertise the same route, 1500 MTU is used.
+
+**Important**
+Jumbo frames will apply only to propagated routes via Direct Connect and static routes via Transit Gateways. Jumbo frames on Transit Gateways support only 8500 bytes.
+If an EC2 instance doesn't support jumbo frames, it drops jumbo frames from Direct Connect. All EC2 instance types support jumbo frames except for C1, CC1, T1, and M1. For more information, see [Network Maximum Transmission Unit (MTU) for Your EC2 Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/network_mtu.html) in the *Amazon EC2 User Guide*.
+For hosted connections, Jumbo frames can be enabled only if originally enabled on the Direct Connect hosted parent connection. If Jumbo frames isn't enabled on that parent connection, then it can't be enabled on any connection.
+
+For the steps to set the MTU for a private virtual interface, see [Set the MTU of a private virtual interface](interface-set-mtu.md).

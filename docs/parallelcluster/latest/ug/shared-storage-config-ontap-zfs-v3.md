@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/shared-storage-config-ontap-zfs-v3.html
+---
+
+# Configure FSx for ONTAP, FSx for OpenZFS, and File Cache shared storage
+<a name="shared-storage-config-ontap-zfs-v3"></a>
+
+For FSx for ONTAP, FSx for OpenZFS, and File Cache, you can use [`FsxOntapSettings`](SharedStorage-v3.md#SharedStorage-v3-FsxOntapSettings) / [`VolumeId`](SharedStorage-v3.md#yaml-SharedStorage-FsxOntapSettings-VolumeId), [`FsxOpenZfsSettings`](SharedStorage-v3.md#SharedStorage-v3-FsxOpenZfsSettings) / [`VolumeId`](SharedStorage-v3.md#yaml-SharedStorage-FsxOpenZfsSettings-VolumeId), and [`FileCacheSettings`](SharedStorage-v3.md#SharedStorage-v3-FsxFileCacheSettings) / [`FileCacheId`](SharedStorage-v3.md#yaml-SharedStorage-FsxFileCacheSettings-FileCacheId) to specify mounting an external existing volume or File Cache for your cluster.
+
+AWS ParallelCluster managed shared storage isn't supported for FSx for ONTAP, FSx for OpenZFS, and File Cache.

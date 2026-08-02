@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/license-manager/latest/APIReference/API_Entitlement.html
+---
+
+# Entitlement
+<a name="API_Entitlement"></a>
+
+Describes a resource entitled for use with a license.
+
+## Contents
+<a name="API_Entitlement_Contents"></a>
+
+ ** Name **   <a name="licensemanager-Type-Entitlement-Name"></a>
+Entitlement name.
+Type: String
+Required: Yes
+
+ ** Unit **   <a name="licensemanager-Type-Entitlement-Unit"></a>
+Entitlement unit.
+Type: String
+Valid Values: `Count | None | Seconds | Microseconds | Milliseconds | Bytes | Kilobytes | Megabytes | Gigabytes | Terabytes | Bits | Kilobits | Megabits | Gigabits | Terabits | Percent | Bytes/Second | Kilobytes/Second | Megabytes/Second | Gigabytes/Second | Terabytes/Second | Bits/Second | Kilobits/Second | Megabits/Second | Gigabits/Second | Terabits/Second | Count/Second`
+Required: Yes
+
+ ** AllowCheckIn **   <a name="licensemanager-Type-Entitlement-AllowCheckIn"></a>
+Indicates whether check-ins are allowed.
+Type: Boolean
+Required: No
+
+ ** MaxCount **   <a name="licensemanager-Type-Entitlement-MaxCount"></a>
+Maximum entitlement count. Use if the unit is not None.
+Type: Long
+Required: No
+
+ ** Overage **   <a name="licensemanager-Type-Entitlement-Overage"></a>
+Indicates whether overages are allowed.
+Type: Boolean
+Required: No
+
+ ** Value **   <a name="licensemanager-Type-Entitlement-Value"></a>
+Entitlement resource. Use only if the unit is None.
+Type: String
+Required: No
+
+## See Also
+<a name="API_Entitlement_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/license-manager-2018-08-01/Entitlement)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/license-manager-2018-08-01/Entitlement)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/license-manager-2018-08-01/Entitlement)

@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-cmp.html
+---
+
+# Amazon Comprehend in AWS GovCloud (US)
+<a name="govcloud-cmp"></a>
+
+Amazon Comprehend uses natural language processing (NLP) to extract insights about the content of documents without the need of any special preprocessing. Amazon Comprehend processes any text files in UTF-8 format. It develops insights by recognizing the entities, key phrases, language, sentiments, and other common elements in a document. Use Amazon Comprehend to create new products based on understanding the structure of documents. With Amazon Comprehend you can search social networking feeds for mentions of products, scan an entire document repository for key phrases, or determine the topics contained in a set of documents. To extract insights from clinical documents such as doctor’s notes or clinical trial reports, use Amazon Comprehend Medical.
+
+## Region availability
+<a name="_region_availability"></a>
+
+This service is available in the following AWS GovCloud (US) Regions:
++  AWS GovCloud (US-West)
+
+## How Amazon Comprehend differs
+<a name="govcloud-cmp-diffs"></a>
+
+The following differences apply to Amazon Comprehend:
++ In AWS GovCloud (US) Regions, AWS does not use or store AI Content processed by this AI Service to develop and improve that Service or technologies of AWS or its affiliates. Opt-out policies are not currently applicable to these Regions.
+
+## Documentation
+<a name="govcloud-cmp-docs"></a>
++  [Amazon Comprehend documentation](https://docs.aws.amazon.com/documentation/comprehend/)
+
+## Export-controlled content
+<a name="govcloud-cmp-itar"></a>
+
+For AWS Services architected within the AWS GovCloud (US) Regions, the following list explains how certain components of data may leave the AWS GovCloud (US) Regions in the normal course of the service offerings. The list can be used as a guide to help meet applicable customer compliance obligations. Data not included in the following list remains within the AWS GovCloud (US) Regions.
++ This service can generate metadata from customer-defined configurations. AWS suggests customers do not enter export-controlled information in console fields, descriptions, resource names, and tagging information.

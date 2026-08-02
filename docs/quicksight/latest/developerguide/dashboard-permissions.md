@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/dashboard-permissions.html
+---
+
+# Dashboard permissions
+<a name="dashboard-permissions"></a>
+
+With dashboard permissions API operations, you can view and update permissions for dashboards. For more information, see the following API operations.
+
+**Topics**
++ [DescribeDashboardPermissions](describe-dashboard-permissions.md)
++ [UpdateDashboardPermissions](update-dashboard-permissions.md)

@@ -1,0 +1,409 @@
+---
+source_url: https://docs.aws.amazon.com/iot-expresslink/archive/v1.1.1/programmersguide/elpg-iot-services.html
+---
+
+# 8 AWS IoT Services
+<a name="elpg-iot-services"></a>
+
+## 8.1 AWS IoT Device Defender
+<a name="elpg-device-defender"></a>
+
+ExpressLink devices support the [AWS IoT Device Defender](https://docs.aws.amazon.com/iot/latest/developerguide/device-defender.html) service. They can publish a basic set of metrics to AWS IoT Core at a configurable interval, including those shown in Table 6.
+
+**Table 6 - ExpressLink Defender metrics**
+
+| ExpressLink Custom Metric | Type | Description |
+| --- | --- | --- |
+| Bytes Out | Count | Number of bytes sent since last update. |
+| Messages sent | Count | Number of messages sent since last update. |
+| Messages received | Count | Number of messages received since last update. |
+| Hard Reset Event | Flag | Set to 1 if a hardware reset occurred since last update. |
+| Reconnect Events | Flag | Set to 1 if a reconnect occurred since last update. |
+| Flash Memory Writes | Count | Number of writes to flash memory since last update. |
+| <Module-Name Prefix> Custom Metric(s) |  | One or more manufacturer/module specific custom metrics... |
+
+All ExpressLink custom metrics are volatile in nature, as their values are reset to 0 after each periodic update (or set to 1 upon a device reset/reboot for the corresponding events).
+
+The device defender feature is activated by setting the *DefenderPeriod* configuration parameter (see [Table 2 - Configuration dictionary persistent keys](elpg-configuration-dictionary.md#elpg-table2)) to a value greater than 0 in the configuration dictionary (using the AT\+CONF command).
+
+The *DefenderPeriod* configuration parameter value indicates the *number of seconds* between successive updates of the Device Defender metrics. The maximum period value is an implementation detail that must be documented by the module manufacturer in the device data sheet. Note that the Device Defender service may choose to throttle down (reject) metric updates if they are too frequent.
+
+The latest metrics collected are sent to the Device Defender service as soon as the device connects and at each successive interval. The internal timer continues counting even when the device is disconnected. The internal timer is reset when the Device Defender feature is turned off (when the *DefenderPeriod* configuration parameter is set to 0).
+
+The *DefenderPeriod* parameter is non-volatile, so an ExpressLink device automatically resumes sending Device Defender metrics after a reset (using a RESET command, power cycle or the RST pin).
+
+Module manufacturers can offer additional custom metrics specific to their model. They must prefix the metric with the distinctive **Model** name and document the feature in the device datasheet. (See the "About" Configuration parameter in [Table 2 - Configuration dictionary persistent keys](elpg-configuration-dictionary.md#elpg-table2).)
+
+**Note**
+Access to the AWS IoT Device Defender service is available only when the device is in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)) and the customer/OEM AWS IoT account is properly configured.
+
+Examples:
+
+```
+AT+CONF DefenderPeriod=0     # Device Defender metrics are disabled
+                             # NOTE: this is the initialized value after a factory reset
+
+AT+CONF DefenderPeriod=60    # Device Defender metrics are updated every minute
+
+AT+CONF DefenderPeriod=3600  # Device Defender metrics are updated every hour
+```
+
+## 8.2 AWS IoT Device Shadow
+<a name="elpg-device-shadow"></a>
+
+SHADOW commands are provided to facilitate use of the [AWS IoT Device Shadow service](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html). Set the **EnableShadow** configuration parameter to 1 to enable support for these commands. (See [Table 3 - Configuration dictionary non-persistent keys](elpg-configuration-dictionary.md#elpg-table3).) To provide Shadow support, a module automatically handles subscriptions to the various Device Shadow MQTT topics, and parses and reports the responses provided by the service to the device in the form of SHADOW events.
+
+**Note**
+Access to the AWS IoT Device Shadow service is allowed only when the module is in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)), that is, when the module is connected to the customer's AWS account.
+
+The SHADOW INIT\# command manages subscriptions to Shadow topics. It must be invoked, and its actions completed, before you invoke any of the other SHADOW commands.
+
+Because the interaction with the Device Shadow service often requires a long messaging round trip, the module implements an asynchronous API to avoid blocking the host. SHADOW commands generate requests to the Device Shadow service and return immediately, while SHADOW GET commands can be used later to poll, and eventually retrieve, the responses of the service.
+
+**8.2.1.1**   Each ExpressLink manufacturer can choose to simultaneously support a maximum number of named shadow documents (**MaxShadow** ≥ 1). The chosen MaxShadow value will be documented in the manufacturer's module datasheet.
+
+The corresponding list of non-persistent parameters, **Shadow1 .. Shadow***{MaxShadow}*, will be prepopulated in the Configuration Dictionary and initialized to empty strings. (See [Table 3 - Configuration dictionary non-persistent keys](elpg-configuration-dictionary.md#elpg-table3).)
+
+Device Shadow support requires a continuous connection with the AWS IoT Core Service. Such a connection must be established before any SHADOW commands are issued and must be maintained uninterrupted until the completion of any of the requests. If the connection is lost at any point, the host has responsibility to re-initialize the SHADOW interface, re-issue any interrupted commands and, eventually, re-subscribe to shadows for which delta update notifications are expected.
+
+**8.2.1.2**   All SHADOW commands use a *client-token* defined by the non-volatile configuration parameter *ShadowToken* (factory default: "ExpressLink") to identify and manage requests and responses received on the relevant Device Shadow service topics. Any notifications received that do not match the client-token used in the request, and not generated by the SHADOW commands, are discarded.
+
+**8.2.1.3**   If the *ShadowToken* configuration parameter is set to an empty string, ANY subsequent notifications received from the Shadow service will NOT be managed by the module but will be added to the messaging queue for the host to handle with the GET0 command (see [4.1.5 GET0   »Request next message pending on an unassigned topic«](elpg-messaging.md#elpg-get0-command)).
+
+### 8.2.2 SHADOW*[\#]* INIT   »Initialize communication with the Device Shadow service«
+<a name="elpg-shadow-init-command"></a>
+
+Initialize the Device Shadow service communication interface for the specified shadow. This subscribes to various topics that are managed by other SHADOW commands such as SHADOW DOC, SHADOW UPDATE and SHADOW DELETE. Note that subscriptions to Shadow Deltas are controlled separately by the [SHADOW SUBSCRIBE](#elpg-shadow-subscribe-command) and [SHADOW UNSUBSCRIBE](#elpg-shadow-unsubscribe-command) commands.
+
+**8.2.2.1**   When the INIT process is completed successfully, a SHADOW INIT event is generated (see [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)) and further SHADOW commands can be issued.
+
+**8.2.2.2**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow interface is initialized.
+
+**8.2.2.3**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+**8.2.2.4**   If a Shadow\# entry is modified (AT\+CONF) before the corresponding SHADOW\# INIT process is completed, the initialization is aborted and no Shadow INIT event will be generated. Returns:
+
+**8.2.2.5**   `OK`
+The Device Shadow service initialization process has started.
+
+**8.2.2.6**   `ERR7 OUT OF RANGE`
+The specified shadow (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.2.7**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.2.8**   `ERR6 NO CONNECTION`
+The device is currently not connected and the request cannot be performed.
+
+**8.2.2.9**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0 or the device is not in the *onboarded* state, see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.3 SHADOW*[\#]* DOC   »Request a Device Shadow document«
+<a name="elpg-shadow-doc-command"></a>
+
+Send a request to the Device Shadow service to retrieve an entire shadow document for the device.
+
+**8.2.3.1**   A SHADOW DOC event is generated when the request is accepted or rejected.
+
+**8.2.3.2**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.3.3**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows. Returns:
+
+**8.2.3.4**   `OK`
+A shadow document request was sent to the Device Shadow service.
+
+**8.2.3.5**   `ERR7 OUT OF RANGE`
+The specified shadow (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.3.6**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.3.7**   `ERR6 NO CONNECTION`
+The device is currently not connected and the request cannot be performed.
+
+**8.2.3.8**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the maximum number of simultaneous asynchronous requests was exceeded, or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.4 SHADOW*[\#]* GET DOC   »Retrieve a device shadow document«
+<a name="elpg-shadow-get-doc-command"></a>
+
+Check if a (requested) Device Shadow document has arrived and retrieve its contents.
+
+**8.2.4.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.4.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+Example:
+
+```
+AT+SHADOW DOC{EOL}          # Request the entire (unnamed) device shadow document.
+OK{EOL}                     # Request submitted.
+AT+SHADOW GET DOC{EOL}      # Attempt to retrieve the entire device shadow document.
+OK{EOL}                     # No document has arrived yet.
+ ...later...
+OK 1 {"state": { "lamp": { "switch": "ON" } }, "version": 11, "timestamp": 1234 }{EOL}
+                            # The Device Shadow service response has arrived!
+ ...or...
+OK 0 {…} {EOL}              # The Device Shadow document request was rejected!
+```Returns:
+
+**8.2.4.3**   `OK`
+The requested shadow document has not arrived yet.
+
+**8.2.4.4**   `OK 1 {document}`
+The requested shadow document has arrived.
+
+**8.2.4.5**   `OK 0 {detail}`
+The shadow document request was rejected (0), additional detail is provided.
+
+**8.2.4.6**   `ERR7 OUT OF RANGE`
+The specified shadow (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.4.7**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.4.8**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.5 SHADOW*[\#]* UPDATE *{new state}*   »Request a device shadow document update«
+<a name="elpg-shadow-update-command"></a>
+
+Send a request to the Device Shadow service to update a device shadow. The *{new state}* is a JSON document and should NOT contain a "client-token" unless the *ShadowToken* configuration parameter is set to empty (see [Table 2 - Configuration dictionary persistent keys](elpg-configuration-dictionary.md#elpg-table2.title)), in which case all shadow notifications are left for the host to manage.
+
+**8.2.5.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is assumed.
+
+**8.2.5.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+**8.2.5.3**   A SHADOW UPDATE event is generated when the request is accepted (or rejected). Returns:
+
+**8.2.5.4**   `OK`
+A shadow document update request was sent to the Device Shadow service.
+
+**8.2.5.5**   `ERR4 PARAMETER ERROR`
+The *{new state}* parameter provided is not a valid JSON document.
+
+**8.2.5.6**   `ERR7 OUT OF RANGE`
+The specified shadow (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.5.7**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.5.8**   `ERR6 NO CONNECTION`
+The device is currently not connected and the request cannot be performed.
+
+**8.2.5.9**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0).
+
+**8.2.5.10**   `ERR24 SHADOW ERROR`
+If a client-token was present in the update document but *ShadowToken* is NOT empty (SHADOW notifications are managed), or if the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)), then the module returns 'SHADOW ERROR'.
+
+### 8.2.6 SHADOW*[\#]* GET UPDATE   »Retrieve a device shadow update response«
+<a name="elpg-shadow-get-update-command"></a>
+
+Check if a response to a (requested) Device Shadow update has arrived and retrieve the returned value.
+
+**8.2.6.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is assumed.
+
+**8.2.6.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+Example:
+
+```
+AT+SHADOW1 UPDATE {"state":{"desired":{"switch": "off" } } }{EOL}
+OK{EOL}                         # The request was sent.
+AT+SHADOW1 GET UPDATE{EOL}      # Check if the update was accepted/rejected.
+OK{EOL}                         # No response received yet.
+ ...later...
+AT+SHADOW1 GET UPDATE(EOL}      # Check if the update was accepted/rejected.
+OK 1 {"switch": "off"){EOL}     # The update was accepted.
+ ...or...
+OK 0 {..}{EOL}                  # The update was rejected.
+```Returns:
+
+**8.2.6.3**   `OK`
+A shadow document update response has not arrived yet.
+
+**8.2.6.4**   `OK {0/1} {document}`
+A response to the shadow document update request has arrived. A Boolean value indicates if it was accepted (1) or rejected (0). An additional document containing the update details is appended.
+
+**8.2.6.5**   `ERR7 OUT OF RANGE`
+The shadow specified (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.6.6**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.6.7**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.7 SHADOW*[\#]* SUBSCRIBE   »Subscribe to a device shadow document«
+<a name="elpg-shadow-subscribe-command"></a>
+
+Send a request to the Device Shadow service to receive Delta updates for a shadow document.
+
+**8.2.7.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.7.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+**8.2.7.3**   A SHADOW SUBACK or SHADOW SUBNACK event are generated when the subscription is accepted or rejected. Note that if a Shadow\# (configuration string) is modified before the subscription confirmation (or rejection) is received, the corresponding event will not be generated.
+
+Example:
+
+```
+AT+SHADOW2 SUBSCRIBE{EOL}         # Request subscription to the device Shadow2.
+OK{EOL}                           # Request submitted.
+ ...later...
+AT+EVENT?{EOL}                    # Check if the subscription was accepted.
+OK{EOL}                           # No response has arrived yet.
+ ...or...
+OK 26 2{EOL}                      # SHADOW SUBACK The subscription to Shadow2 was accepted.
+ ...or...
+OK 27 2{EOL}                      # SHADOW SUBNACK The subscription to Shadow2 was rejected.
+```Returns:
+
+**8.2.7.4**   `OK`
+A shadow subscribe request was sent to the Device Shadow service.
+
+**8.2.7.5**   `ERR7 OUT OF RANGE`
+The specified shadow parameter (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.7.6**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.7.7**   `ERR6 NO CONNECTION`
+The device is not currently connected and the request cannot be performed.
+
+**8.2.7.8**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.8 SHADOW*[\#]* UNSUBSCRIBE   »Unsubscribe from a device shadow document«
+<a name="elpg-shadow-unsubscribe-command"></a>
+
+Send a request to the Device Shadow service to stop receiving Delta updates for a shadow document. Note that no SHADOW event is generated following this request.
+
+**8.2.8.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.8.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+Example:
+
+```
+AT+SHADOW3 UNSUBSCRIBE{EOL}    # Request subscription to the device Shadow2.
+OK{EOL}                        # Request submitted.
+```Returns:
+
+**8.2.8.3**   `OK`
+A shadow document request was sent to the Device Shadow service.
+
+**8.2.8.4**   `ERR7 OUT OF RANGE`
+The shadow specified (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.8.5**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.8.6**   `ERR6 NO CONNECTION`
+The device is currently not connected and the request cannot be performed.
+
+**8.2.8.7**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.9 SHADOW*[\#]* GET DELTA   »Retrieve a Shadow Delta message«
+<a name="elpg-shadow-getdelta-command"></a>
+
+Query for the next pending shadow update message. This command can be used after receiving a DELTA event, or to poll the delta queue (the queue depth is implementation specific).
+
+**8.2.9.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.9.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows. Returns:
+
+**8.2.9.3**   `OK`
+An empty string indicates no delta pending.
+
+**8.2.9.4**   `OK {delta document}`
+A shadow delta update has arrived. A document containing the details is appended.
+
+**8.2.9.5**   `ERR7 OUT OF RANGE`
+The shadow specified (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.9.6**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.9.7**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.10 SHADOW*[\#]* DELETE   »Request the deletion of a Shadow document«
+<a name="elpg-shadow-delete-command"></a>
+
+Requests the Device Shadow Service to delete a device shadow document.
+
+**8.2.10.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.10.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows.
+
+**8.2.10.3**   A SHADOW DELETE event is generated when the request is accepted or rejected.Returns:
+
+**8.2.10.4**   `OK`
+The request was sent to the Device Shadow service.
+
+**8.2.10.5**   `ERR7 OUT OF RANGE`
+The shadow specified (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.10.6**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.10.7**   `ERR6 NO CONNECTION`
+The device is currently not connected and the request cannot be performed.
+
+**8.2.10.8**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the maximum number of simultaneous asynchronous requests was exceeded, or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.11 SHADOW*[\#]* GET DELETE   »Request a Shadow delete response«
+<a name="elpg-shadow-get-delete-command"></a>
+
+Check if a Device Shadow Delete request was accepted.
+
+**8.2.11.1**   If the numerical shadow parameter (*[\#]*) is not provided, the Unnamed Shadow document is requested.
+
+**8.2.11.2**   Otherwise, the corresponding Shadow\# entry in the Configuration Dictionary is used to specify one of the object's Named Shadows. Returns:
+
+**8.2.11.3**   `OK`
+The request was sent to the Device Shadow service.
+
+**8.2.11.4**   `OK {0/1} {payload}`
+The shadow delete request was accepted (1) or rejected (0). Additional detail may be present in the *{payload}*.
+
+**8.2.11.5**   `ERR7 OUT OF RANGE`
+The shadow specified (*[\#]*) exceeds the maximum number of shadows supported by this module.
+
+**8.2.11.6**   `ERR8 PARAMETER UNDEFINED`
+The specified shadow (*[\#]*) entry in the configuration dictionary is empty.
+
+**8.2.11.7**   `ERR24 SHADOW ERROR`
+Shadow support is disabled (the *EnableShadow* configuration parameter set to 0), or the device is not in the *onboarded* state (see [9.3.2 ExpressLink onboarding states and transitions](elpg-provisioning.md#elpg-provisioning-onboarding-states)).
+
+### 8.2.12 SHADOW EVENTS
+<a name="elpg-shadow-events"></a>
+
+When subscribing to shadow document messages, retrieving a shadow document, or requesting updates, the module communicates with the Device Shadow service using various MQTT topics. When it receives a response to a request or a shadow Delta update to which it has subscribed, the module reports this to the host *asynchronously* by generating a Shadow event (see [Table 4 - ExpressLink event codes](elpg-event-handling.md#elpg-table4)). Each Shadow event carries the *Shadow-Index* parameter:
++ **0**  indicates the unnamed Shadow
++ **1..MaxShadow**  indicates the corresponding Shadow\# entry in the configuration table
+
+Example1:
+
+```
+AT+EVENT?{EOL}                # Query events pending.
+OK 24 1{EOL}                  # A SHADOW DELTA event was received for the Shadow1.
+AT+SHADOW1 GET DELTA{EOL}     # Fetch the delta message.
+OK {delta document}{EOL}      # Returns the delta document received.
+```
+
+Example2:
+
+```
+AT+SHADOW SUBSCRIBE{EOL}      # Request a subscription to DELTA updates for the unnamed Shadow
+OK{EOL}                       # Request sent successfully.
+ ...later...
+AT+EVENT?{EOL}
+OK  26 0{EOL}                 # SHADOW SUBACK The subscription request was accepted.
+ ...or...
+OK 27 0{EOL}                  # SHADOW SUBNACK The subscription request was rejected.
+```

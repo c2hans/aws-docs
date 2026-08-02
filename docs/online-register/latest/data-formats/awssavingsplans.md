@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awssavingsplans.html
+---
+
+# Data retrieval APIs for AWS Savings Plans
+<a name="awssavingsplans"></a>
+
+AWS Savings Plans provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="savingsplans-DescribeSavingsPlanRates"></a>[https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlanRates.html](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlanRates.html) | Describe the rates associated with customers savings plan | Read |
+| <a name="savingsplans-DescribeSavingsPlans"></a>[https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlans.html](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlans.html) | Describe the savings plans associated with customers account | Read |
+| <a name="savingsplans-DescribeSavingsPlansOfferingRates"></a>[https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferingRates.html](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferingRates.html) | Describe the rates assciated with savings plans offerings | Read |
+| <a name="savingsplans-DescribeSavingsPlansOfferings"></a>[https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferings.html](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_DescribeSavingsPlansOfferings.html) | Describe the savings plans offerings that customer is eligible to purchase | Read |
+| <a name="savingsplans-ListTagsForResource"></a>[https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_ListTagsForResource.html) | List tags for a savings plan | List |

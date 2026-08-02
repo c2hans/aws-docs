@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/migrationhub/latest/ug/API_ProgressUpdateStreamSummary.html
+---
+
+AWS Migration Hub is no longer open to new customers as of November 7, 2025. For capabilities similar to AWS Migration Hub, explore [AWS Transform](https://aws.amazon.com/transform).
+
+# ProgressUpdateStreamSummary
+<a name="API_ProgressUpdateStreamSummary"></a>
+
+Summary of the AWS resource used for access control that is implicitly linked to your AWS account.
+
+## Contents
+<a name="API_ProgressUpdateStreamSummary_Contents"></a>
+
+ ** ProgressUpdateStreamName **   <a name="migrationhub-Type-ProgressUpdateStreamSummary-ProgressUpdateStreamName"></a>
+The name of the ProgressUpdateStream. *Do not store personal data in this field.*
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 50.
+Pattern: `[^/:|\000-\037]+`
+Required: No
+
+## See Also
+<a name="API_ProgressUpdateStreamSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/AWSMigrationHub-2017-05-31/ProgressUpdateStreamSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/AWSMigrationHub-2017-05-31/ProgressUpdateStreamSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/AWSMigrationHub-2017-05-31/ProgressUpdateStreamSummary)

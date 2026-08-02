@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html
+---
+
+# Agent Configuration File
+<a name="agent-file"></a>
+
+The agent configuration file (`/etc/dcv-session-manager-agent/agent.conf` for Linux and macOS, and `C:\Program Files\NICE\DCVSessionManagerAgent\conf\agent.conf` for Windows) includes parameters that can be configured to customize the Session Manager functionality. You can edit the configuration file using your preferred text editor.
+
+The following table lists the parameters in the agent configuration file.
+
+| Parameter name | Required | Default value | Description |
+| --- | --- | --- | --- |
+| agent.broker\_host | Yes |  | Specifies the DNS name of the broker host. |
+| agent.broker\_port | Yes | 8445 | Specifies the port over which to communicate with the broker. |
+| agent.ca\_file | No |  | Only needed if tls\_strict is set to true. Specifies the path to the certificate (.pem) file needed to validate the TLS certificate. Copy the self-signed certificate from the broker to the agent. |
+| agent.init\_folder | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html)  | Specifies the path to a folder on the host server used to store custom scripts allowed to initialize Amazon DCV server sessions when they are created. You must specify an absolute path. The folder must be accessible and the files must be executable by users who make use of the InitFile request parameter of the CreateSessions API.  |
+| agent.tls\_strict | No | true | Indicates whether strict TLS validation should be used. |
+| agent.software\_statement\_path | No |  | Only needed if the default software statement is not used. Specifies the path to the software statement file. For more information, see [generate-software-statement](generate-software-statement.md). |
+| agent.tags\_folder | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html)  | Specifies the path to the folder in which the tag files are located. For more information, see [Using tags to target Amazon DCV servers](targeting.md). |
+| agent.autorun\_folder | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html)  | Specifies the path to a folder on the host server used to store scripts and apps that are allowed to be automatically run at session startup. You must specify an absolute path. The folder must be accessible and the files must be executable by users who make use of the AutorunFile request parameter of the CreateSessions API. |
+| agent.max\_virtual\_sessions | No | -1 (no limit) | The maximum number of virtual sessions that can be created on a Amazon DCV server using Amazon DCV Session Manager. |
+| agent.max\_concurrent\_sessions\_per\_user | No | 1 | The maximum number of virtual sessions that can be created on a Amazon DCV server by a single user using Amazon DCV Session Manager. |
+| agent.broker\_update\_interval | No | 30 | Specifies the amount of seconds to wait before sending updated data to the broker. Sent data includes Amazon DCV server and host status, as well as updated session information. Lower values make the Session Manager more aware of changes happening on the system where the agent runs, but increase system load and network traffic. Higher values decrease system and network load, but the Session Manager becomes less responsive to system changes, thus values higher than 120 are not recommended.  |
+| agent.enable\_query\_logged\_in\_users | No | true | Enable getting logged users on Windows. When true, queries system for actual logged-in users. When false, returns "unknown"  |
+| agent.preferred\_network\_interface | No |  | Specifies the network interface name to use for host IP detection. Examples: eth0 (Linux), Ethernet 4 (Windows). Linux/macOS names are case-sensitive, Windows names are case-insensitive. If not specified or if the specified network interface is not found, first non-loopback interface is selected.  |
+| log.level | No | info | Specifies the verbosity level of the log files. The following verbosity levels are available: [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html)  |
+| log.directory | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html)  | Specifies the directory in which to create log files. |
+| log.rotation | No | daily | Specifies the log file rotation. Valid values are: [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html) |
+| log.max-file-size | No | 10485760 | When a log file size reaches the specified size in bytes, it will be rotated. A new log file will be created and further log events will be placed in the new file. |
+| log.rotate | No | 9 | The maximum number of log files preserved in the rotation. Each time a rotation happens and this number is reached, the oldest log file will be deleted. |

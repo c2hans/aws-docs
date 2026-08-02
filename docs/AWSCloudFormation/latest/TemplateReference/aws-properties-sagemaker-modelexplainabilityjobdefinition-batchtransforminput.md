@@ -1,0 +1,106 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::SageMaker::ModelExplainabilityJobDefinition BatchTransformInput
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput"></a>
+
+Input object for the batch transform job.
+
+## Syntax
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-syntax.json"></a>
+
+```
+{
+  "[DataCapturedDestinationS3Uri](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datacaptureddestinations3uri)" : {{String}},
+  "[DatasetFormat](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datasetformat)" : {{DatasetFormat}},
+  "[FeaturesAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-featuresattribute)" : {{String}},
+  "[InferenceAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-inferenceattribute)" : {{String}},
+  "[LocalPath](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-localpath)" : {{String}},
+  "[ProbabilityAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-probabilityattribute)" : {{String}},
+  "[S3DataDistributionType](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3datadistributiontype)" : {{String}},
+  "[S3InputMode](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3inputmode)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-syntax.yaml"></a>
+
+```
+  [DataCapturedDestinationS3Uri](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datacaptureddestinations3uri): {{String}}
+  [DatasetFormat](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datasetformat): {{
+    DatasetFormat}}
+  [FeaturesAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-featuresattribute): {{String}}
+  [InferenceAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-inferenceattribute): {{String}}
+  [LocalPath](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-localpath): {{String}}
+  [ProbabilityAttribute](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-probabilityattribute): {{String}}
+  [S3DataDistributionType](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3datadistributiontype): {{String}}
+  [S3InputMode](#cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3inputmode): {{String}}
+```
+
+## Properties
+<a name="aws-properties-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-properties"></a>
+
+`DataCapturedDestinationS3Uri`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datacaptureddestinations3uri"></a>
+The Amazon S3 location being used to capture the data.
+*Required*: Yes
+*Type*: String
+*Pattern*: `^(https|s3)://([^/]+)/?(.*)$`
+*Maximum*: `512`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`DatasetFormat`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-datasetformat"></a>
+The dataset format for your batch transform job.
+*Required*: Yes
+*Type*: [DatasetFormat](aws-properties-sagemaker-modelexplainabilityjobdefinition-datasetformat.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`FeaturesAttribute`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-featuresattribute"></a>
+The attributes of the input data that are the input features.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`InferenceAttribute`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-inferenceattribute"></a>
+The attribute of the input data that represents the ground truth label.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`LocalPath`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-localpath"></a>
+Path to the filesystem where the batch transform data is available to the container.
+*Required*: Yes
+*Type*: String
+*Pattern*: `.*`
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ProbabilityAttribute`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-probabilityattribute"></a>
+In a classification problem, the attribute that represents the class probability.
+*Required*: No
+*Type*: String
+*Maximum*: `256`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`S3DataDistributionType`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3datadistributiontype"></a>
+Whether input data distributed in Amazon S3 is fully replicated or sharded by an S3 key. Defaults to `FullyReplicated`
+*Required*: No
+*Type*: String
+*Allowed values*: `FullyReplicated | ShardedByS3Key`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`S3InputMode`  <a name="cfn-sagemaker-modelexplainabilityjobdefinition-batchtransforminput-s3inputmode"></a>
+Whether the `Pipe` or `File` is used as the input mode for transferring data for the monitoring job. `Pipe` mode is recommended for large datasets. `File` mode is useful for small files that fit in memory. Defaults to `File`.
+*Required*: No
+*Type*: String
+*Allowed values*: `Pipe | File`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

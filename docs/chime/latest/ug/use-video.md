@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/chime/latest/ug/use-video.html
+---
+
+# Using video during meetings
+<a name="use-video"></a>
+
+If you connect a web came to your computer or other device, you can start the camera at any time during an Amazon Chime meeting. Your video appears as a *tile*, a small window.
+
+You can also use cameras connected to conference call systems if they're compatible with Amazon Chime.
+
+Amazon Chime displays up to 25 attendee video tiles during a meeting. They appear on a first come, first shown basis as attendees turn on their cameras. You can take action on video tiles, such as undocking them, muting them, and pausing their video feed.
+
+**Note**
+Amazon Chime does not support virtual backgrounds.
+
+**Topics**
++ [Turning your camera on or off](turn-on-webcam.md)
++ [Changing video sources during a meeting](change-video-source.md)
++ [Blurring your video background](blur-background.md)
++ [Using your video tile](use-video-tile.md)
++ [Undocking video tiles (desktop client only)](undocking.md)
++ [Hiding attendee video tiles during a meeting](hide-all-video.md)
++ [Hiding your video tile during a meeting](hide-your-video.md)
++ [Changing the video row location](change-row-location.md)
++ [Sorting active speakers into view](sort-speaker.md)
++ [Unmirroring your self view](un-mirror-self.md)
++ [Uncropping your video tile](uncrop-video-tile.md)

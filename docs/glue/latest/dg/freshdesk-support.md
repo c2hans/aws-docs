@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/freshdesk-support.html
+---
+
+# AWS Glue support for Freshdesk
+<a name="freshdesk-support"></a>
+
+AWS Glue supports Freshdesk as follows:
+
+**Supported as a source?**
+Yes – Sync and Async. You can use AWS Glue ETL jobs to query data from Freshdesk.
+
+**Supported as a target?**
+No.
+
+**Supported Freshdesk API versions**
+The following Freshdesk API versions are supported:
++ v2

@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/connect-agents.html
+---
+
+# Set up your contact center agents in Connect Customer
+<a name="connect-agents"></a>
+
+You can manage and load-balance customer contacts using agent hierarchy organization and agent status management. These tools provide filtering and agent availability management per queue, skill set, and routing profiles.
+
+**Topics**
++ [Set up agent hierarchies](agent-hierarchy.md)
++ [Add custom agent statuses](agent-custom.md)
++ [Configure agent settings](configure-agents.md)
++ [Enable Audio Enhancement](audio-enhancement.md)
++ [Create predefined attributes for routing contacts to agents](predefined-attributes.md)
++ [Assign proficiencies to agents](assign-proficiencies-to-agents.md)
++ [Enable auto-accept](enable-auto-accept.md)
++ [Enable persistent connection](enable-persistent-connection.md)
++ [Set up agents to assign tasks to themselves](setup-agents-assign-tasks-themselves.md)

@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/xray/latest/api/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [BatchGetTraces](API_BatchGetTraces.md)
++  [CancelTraceRetrieval](API_CancelTraceRetrieval.md)
++  [CreateGroup](API_CreateGroup.md)
++  [CreateSamplingRule](API_CreateSamplingRule.md)
++  [DeleteGroup](API_DeleteGroup.md)
++  [DeleteResourcePolicy](API_DeleteResourcePolicy.md)
++  [DeleteSamplingRule](API_DeleteSamplingRule.md)
++  [GetEncryptionConfig](API_GetEncryptionConfig.md)
++  [GetGroup](API_GetGroup.md)
++  [GetGroups](API_GetGroups.md)
++  [GetIndexingRules](API_GetIndexingRules.md)
++  [GetInsight](API_GetInsight.md)
++  [GetInsightEvents](API_GetInsightEvents.md)
++  [GetInsightImpactGraph](API_GetInsightImpactGraph.md)
++  [GetInsightSummaries](API_GetInsightSummaries.md)
++  [GetRetrievedTracesGraph](API_GetRetrievedTracesGraph.md)
++  [GetSamplingRules](API_GetSamplingRules.md)
++  [GetSamplingStatisticSummaries](API_GetSamplingStatisticSummaries.md)
++  [GetSamplingTargets](API_GetSamplingTargets.md)
++  [GetServiceGraph](API_GetServiceGraph.md)
++  [GetTimeSeriesServiceStatistics](API_GetTimeSeriesServiceStatistics.md)
++  [GetTraceGraph](API_GetTraceGraph.md)
++  [GetTraceSegmentDestination](API_GetTraceSegmentDestination.md)
++  [GetTraceSummaries](API_GetTraceSummaries.md)
++  [ListResourcePolicies](API_ListResourcePolicies.md)
++  [ListRetrievedTraces](API_ListRetrievedTraces.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [PutEncryptionConfig](API_PutEncryptionConfig.md)
++  [PutResourcePolicy](API_PutResourcePolicy.md)
++  [PutTelemetryRecords](API_PutTelemetryRecords.md)
++  [PutTraceSegments](API_PutTraceSegments.md)
++  [StartTraceRetrieval](API_StartTraceRetrieval.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateGroup](API_UpdateGroup.md)
++  [UpdateIndexingRule](API_UpdateIndexingRule.md)
++  [UpdateSamplingRule](API_UpdateSamplingRule.md)
++  [UpdateTraceSegmentDestination](API_UpdateTraceSegmentDestination.md)

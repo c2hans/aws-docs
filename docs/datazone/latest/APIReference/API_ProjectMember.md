@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_ProjectMember.html
+---
+
+# ProjectMember
+<a name="API_ProjectMember"></a>
+
+The details of a project member.
+
+## Contents
+<a name="API_ProjectMember_Contents"></a>
+
+ ** designation **   <a name="datazone-Type-ProjectMember-designation"></a>
+The designated role of a project member.
+Type: String
+Valid Values: `PROJECT_OWNER | PROJECT_CONTRIBUTOR | PROJECT_CATALOG_VIEWER | PROJECT_CATALOG_CONSUMER | PROJECT_CATALOG_STEWARD`
+Required: Yes
+
+ ** memberDetails **   <a name="datazone-Type-ProjectMember-memberDetails"></a>
+The membership details of a project member.
+Type: [MemberDetails](API_MemberDetails.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: Yes
+
+## See Also
+<a name="API_ProjectMember_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/datazone-2018-05-10/ProjectMember)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/datazone-2018-05-10/ProjectMember)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/datazone-2018-05-10/ProjectMember)

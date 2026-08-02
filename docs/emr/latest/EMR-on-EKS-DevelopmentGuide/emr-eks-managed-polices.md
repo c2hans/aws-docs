@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-managed-polices.html
+---
+
+# Managed policies for Amazon EMR on EKS
+<a name="emr-eks-managed-polices"></a>
+
+View details about updates to AWS managed policies for Amazon EMR on EKS since March 1, 2021.
+
+| Change | Description | Date |
+| --- | --- | --- |
+| AmazonEMRContainersServiceRolePolicy ‐ Added read permissions to list EKS pod identity associations in a cluster, and another read permission to return descriptive information about pod identity associations in a cluster. For more information, see [AmazonEMRContainersServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonEMRContainersServiceRolePolicy.html). | The following permissions are added to the policy: `eks:ListPodIdentityAssociations`, `eks:DescribePodIdentityAssociation`.  | February 3, 2023 |
+| AmazonEMRContainersServiceRolePolicy ‐ Added permissions to describe and list Amazon EKS nodegroups, describe load balancer target groups, and describe load balancer target health. | The following permissions are added to the policy: `eks:ListNodeGroups`, `eks:DescribeNodeGroup`, `elasticloadbalancing:DescribeTargetGroups`, `elasticloadbalancing:DescribeTargetHealth`.  | March 13, 2023 |
+| AmazonEMRContainersServiceRolePolicy ‐ Added permissions to import and delete certificates in AWS Certificate Manager. | The following permissions are added to the policy: `acm:ImportCertificate`, `acm:AddTagsToCertificate`, `acm:DeleteCertificate`.  | Dec 3, 2021 |
+| Amazon EMR on EKS started tracking changes | Amazon EMR on EKS started tracking changes for its AWS managed policies. | March 1, 2021 |

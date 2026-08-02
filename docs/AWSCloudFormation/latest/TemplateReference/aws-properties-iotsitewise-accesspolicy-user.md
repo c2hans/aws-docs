@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-iotsitewise-accesspolicy-user.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::IoTSiteWise::AccessPolicy User
+<a name="aws-properties-iotsitewise-accesspolicy-user"></a>
+
+Contains information for a user identity in an access policy.
+
+## Syntax
+<a name="aws-properties-iotsitewise-accesspolicy-user-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-iotsitewise-accesspolicy-user-syntax.json"></a>
+
+```
+{
+  "[id](#cfn-iotsitewise-accesspolicy-user-id)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-iotsitewise-accesspolicy-user-syntax.yaml"></a>
+
+```
+  [id](#cfn-iotsitewise-accesspolicy-user-id): {{String}}
+```
+
+## Properties
+<a name="aws-properties-iotsitewise-accesspolicy-user-properties"></a>
+
+`id`  <a name="cfn-iotsitewise-accesspolicy-user-id"></a>
+The IAM Identity Center ID of the user.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

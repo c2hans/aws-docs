@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/definitions-sagemakermachinelearningmodelresourcedata.html
+---
+
+End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
+
+# SageMakerMachineLearningModelResourceData
+<a name="definitions-sagemakermachinelearningmodelresourcedata"></a>
+
+```
+{
+"SageMakerJobArn": "string",
+"DestinationPath": "string",
+"OwnerSetting": {
+  "GroupOwner": "string",
+  "GroupPermission": "ro|rw"
+}
+}
+```
+
+SageMakerMachineLearningModelResourceData
+Attributes that define an Amazon SageMaker machine learning resource.
+type: object
+
+SageMakerJobArn
+The ARN of the Amazon SageMaker training job that represents the source model.
+type: string
+
+DestinationPath
+The absolute local path of the resource inside the Lambda environment.
+type: string
+
+OwnerSetting
+The owner setting for the downloaded machine learning resource.
+type: object
+required: ["GroupOwner", "GroupPermission"]
+
+GroupOwner
+The group owner of the resource. This is the group ID (GID) of an existing Linux OS group on the system. The group's permissions are added to the Lambda process.
+type: string
+
+GroupPermission
+The permissions that the group owner has to the resource. Valid values are `rw` (read-write) or `ro` (read-only).
+type: string
+enum: ["ro", "rw"]

@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/step-create-mpts-tab-output.html
+---
+
+# Output tab
+<a name="step-create-mpts-tab-output"></a>
+
+| Field | Description |
+| --- | --- |
+| URI, Interface, Virtual Source Address | Required. The address to the destination on the downstream system. Conductor Live will deliver the MPTS to this address. |
+| Output listening | Check this field if you want to enable output listening, which is a form of resiliency that protects against failures within the muxing pipeline. You can only enable output listening if you have set up Elemental Statmux for 1-to-1 node redundancy because the feature requires two nodes.<br />For information about how this feature works when the MPTS is running, see [Resiliency features in Elemental Statmux](worker-nodes-other-resiliency.md). |
+| Add Destination | Choose this button if you are implementing statmux output redundancy. With this redundancy feature, you want the Elemental Statmux node to deliver the MPTS to two different downstream systems. You must specify the destination of the second downstream system.<br />For information about how this feature works when the MPTS is running, see [Resiliency features in Elemental Statmux](worker-nodes-other-resiliency.md). |

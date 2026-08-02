@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_BatchListIndex.html
+---
+
+Amazon Cloud Directory will no longer be open to new customers starting on November 7, 2025. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
+
+# BatchListIndex
+<a name="API_BatchListIndex"></a>
+
+Lists objects attached to the specified index inside a [BatchRead](API_BatchRead.md) operation. For more information, see [ListIndex](API_ListIndex.md) and [BatchRead:Operations](API_BatchRead.md#amazoncds-BatchRead-request-Operations).
+
+## Contents
+<a name="API_BatchListIndex_Contents"></a>
+
+ ** IndexReference **   <a name="amazoncds-Type-BatchListIndex-IndexReference"></a>
+The reference to the index to list.
+Type: [ObjectReference](API_ObjectReference.md) object
+Required: Yes
+
+ ** MaxResults **   <a name="amazoncds-Type-BatchListIndex-MaxResults"></a>
+The maximum number of results to retrieve.
+Type: Integer
+Valid Range: Minimum value of 1.
+Required: No
+
+ ** NextToken **   <a name="amazoncds-Type-BatchListIndex-NextToken"></a>
+The pagination token.
+Type: String
+Required: No
+
+ ** RangesOnIndexedValues **   <a name="amazoncds-Type-BatchListIndex-RangesOnIndexedValues"></a>
+Specifies the ranges of indexed values that you want to query.
+Type: Array of [ObjectAttributeRange](API_ObjectAttributeRange.md) objects
+Required: No
+
+## See Also
+<a name="API_BatchListIndex_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/clouddirectory-2017-01-11/BatchListIndex)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/clouddirectory-2017-01-11/BatchListIndex)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/clouddirectory-2017-01-11/BatchListIndex)

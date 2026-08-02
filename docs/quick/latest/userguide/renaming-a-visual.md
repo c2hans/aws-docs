@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/quick/latest/userguide/renaming-a-visual.html
+---
+
+# Renaming Amazon Quick Sight visuals
+<a name="renaming-a-visual"></a>
+
+Use the following procedure to rename a visual.
+
+**To rename a visual**
+
+1. On the analysis page, choose the visual that you want to rename.
+
+1. Select the visual name at the top left of the visual and enter a new name.
+
+1. Press **Enter** or click outside of the visual name field to save the new name.

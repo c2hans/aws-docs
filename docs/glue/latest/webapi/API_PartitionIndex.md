@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_PartitionIndex.html
+---
+
+# PartitionIndex
+<a name="API_PartitionIndex"></a>
+
+A structure for a partition index.
+
+## Contents
+<a name="API_PartitionIndex_Contents"></a>
+
+ ** IndexName **   <a name="Glue-Type-PartitionIndex-IndexName"></a>
+The name of the partition index.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: Yes
+
+ ** Keys **   <a name="Glue-Type-PartitionIndex-Keys"></a>
+The keys for the partition index.
+Type: Array of strings
+Array Members: Minimum number of 1 item.
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: Yes
+
+## See Also
+<a name="API_PartitionIndex_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/PartitionIndex)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/PartitionIndex)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/PartitionIndex)

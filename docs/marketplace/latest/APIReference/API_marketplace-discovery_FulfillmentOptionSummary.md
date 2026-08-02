@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_FulfillmentOptionSummary.html
+---
+
+# FulfillmentOptionSummary
+<a name="API_marketplace-discovery_FulfillmentOptionSummary"></a>
+
+A summary of a fulfillment option available for deploying or accessing a listing or product.
+
+## Contents
+<a name="API_marketplace-discovery_FulfillmentOptionSummary_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** displayName **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FulfillmentOptionSummary-displayName"></a>
+The human-readable name of the fulfillment option type.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `.*\S.*`
+Required: Yes
+
+ ** fulfillmentOptionType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_FulfillmentOptionSummary-fulfillmentOptionType"></a>
+The machine-readable type of the fulfillment option, such as `SAAS` or `AMAZON_MACHINE_IMAGE`.
+Type: String
+Valid Values: `AMAZON_MACHINE_IMAGE | API | CLOUDFORMATION_TEMPLATE | CONTAINER | HELM | EKS_ADD_ON | EC2_IMAGE_BUILDER_COMPONENT | DATA_EXCHANGE | PROFESSIONAL_SERVICES | SAAS | SAGEMAKER_ALGORITHM | SAGEMAKER_MODEL`
+Required: Yes
+
+## See Also
+<a name="API_marketplace-discovery_FulfillmentOptionSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/marketplace-discovery-2026-02-05/FulfillmentOptionSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-discovery-2026-02-05/FulfillmentOptionSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-discovery-2026-02-05/FulfillmentOptionSummary)

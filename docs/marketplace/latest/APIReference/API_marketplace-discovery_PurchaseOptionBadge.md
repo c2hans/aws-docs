@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/marketplace/latest/APIReference/API_marketplace-discovery_PurchaseOptionBadge.html
+---
+
+# PurchaseOptionBadge
+<a name="API_marketplace-discovery_PurchaseOptionBadge"></a>
+
+A badge indicating a special attribute of a purchase option, such as private pricing or future dated.
+
+## Contents
+<a name="API_marketplace-discovery_PurchaseOptionBadge_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** badgeType **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionBadge-badgeType"></a>
+The machine-readable type of the badge.
+Type: String
+Valid Values: `PRIVATE_PRICING | FUTURE_DATED | REPLACEMENT_OFFER`
+Required: Yes
+
+ ** displayName **   <a name="AWSMarketplaceService-Type-marketplace-discovery_PurchaseOptionBadge-displayName"></a>
+The human-readable name of the badge.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `.*\S.*`
+Required: Yes
+
+## See Also
+<a name="API_marketplace-discovery_PurchaseOptionBadge_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/marketplace-discovery-2026-02-05/PurchaseOptionBadge)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/marketplace-discovery-2026-02-05/PurchaseOptionBadge)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/marketplace-discovery-2026-02-05/PurchaseOptionBadge)

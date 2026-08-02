@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/r53recovery/latest/dg/security_iam_region_switch_lambda.html
+---
+
+# Custom action Lambda execution block sample policy
+<a name="security_iam_region_switch_lambda"></a>
+
+ The following is a sample policy to attach if you add execution blocks to a Region switch plan for Lambda functions.
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+  "Version":"2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "lambda:GetFunction",
+        "lambda:InvokeFunction"
+      ],
+      "Resource": [
+        "arn:aws:lambda:us-east-1:123456789012:function:app-recovery-primary",
+        "arn:aws:lambda:us-west-2:123456789012:function:app-recovery-secondary"
+      ]
+    }
+  ]
+}
+```
+
+------

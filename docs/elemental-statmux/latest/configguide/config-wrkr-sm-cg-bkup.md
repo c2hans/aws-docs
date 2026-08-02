@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-statmux/latest/configguide/config-wrkr-sm-cg-bkup.html
+---
+
+This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
+
+# Configure Database Backups for AWS Elemental Statmux
+<a name="config-wrkr-sm-cg-bkup"></a>
+
+During a database backup, AWS Elemental Statmux copies the data that's related to your framework (channels, profiles, nodes, MPTS outputs, and redundancy groups) from the Statmux node to another server. You can use this backup to restore the data to the node in case of a major hardware failure or if you have to re-install the software for any reason.
+
+Backup files are named in this format: `elemental-db-backup_{{yyyy}}-{{mm}}- {{dd}}_{{hh}}-{{mm}}-{{ ss}}.tar.bz2`
+
+AWS Elemental Statmux is configured by default to create database backups and store them on a local disk. This section describes how to view the backup configuration and modify it for your needs.
+
+For steps to restore a database backup, see [Database Backups for AWS Elemental Statmux](config-wrkr-sm-cg-bkup-chg.md)
+
+**To view and change the backup configuration**
+
+1. On the AWS Elemental Statmux web interface, go to the **Settings** page and choose **General**.
+
+1. In the **Cluster Tasks** section, the following fields configure the database backups:
+   + **Minutes between management database backups** indicates how often AWS Elemental Statmux creates backups.
+   + **Management database backups to keep** indicates how many backups Statmux keeps. When this number is reached, the oldest backup is removed so that the newest backup can be saved.
+   + **Path to store management database backups** indicates where Statmux stores backups.
+
+     The folder to receive backups must be the local disk or on a remote server that is mounted to the node. For assistance, see [Add Mount Points to AWS Elemental Statmux Nodes](config-wrkr-cf-cg-mount.md).
+
+1. Change any of these values as you need and choose **Save**.

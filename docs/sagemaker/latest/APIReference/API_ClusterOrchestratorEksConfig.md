@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterOrchestratorEksConfig.html
+---
+
+# ClusterOrchestratorEksConfig
+<a name="API_ClusterOrchestratorEksConfig"></a>
+
+The configuration settings for the Amazon EKS cluster used as the orchestrator for the SageMaker HyperPod cluster.
+
+## Contents
+<a name="API_ClusterOrchestratorEksConfig_Contents"></a>
+
+ ** ClusterArn **   <a name="sagemaker-Type-ClusterOrchestratorEksConfig-ClusterArn"></a>
+The Amazon Resource Name (ARN) of the Amazon EKS cluster associated with the SageMaker HyperPod cluster.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:eks:[a-z0-9\-]*:[0-9]{12}:cluster\/[0-9A-Za-z][A-Za-z0-9\-_]{0,99}`
+Required: Yes
+
+## See Also
+<a name="API_ClusterOrchestratorEksConfig_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/ClusterOrchestratorEksConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/ClusterOrchestratorEksConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/ClusterOrchestratorEksConfig)

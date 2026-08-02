@@ -1,0 +1,93 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSecurityIncidentResponseServiceRolePolicy.html
+---
+
+# AWSSecurityIncidentResponseServiceRolePolicy
+<a name="AWSSecurityIncidentResponseServiceRolePolicy"></a>
+
+**Description**: Provides access to AWS Resources managed or used by Security Incident Response
+
+`AWSSecurityIncidentResponseServiceRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWSSecurityIncidentResponseServiceRolePolicy-how-to-use"></a>
+
+This policy is attached to a service-linked role that allows the service to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+<a name="AWSSecurityIncidentResponseServiceRolePolicy-details"></a>
++ **Type**: Service-linked role policy
++ **Creation time**: December 01, 2024, 16:36 UTC
++ **Edited time:** February 12, 2026, 17:59 UTC
++ **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSSecurityIncidentResponseServiceRolePolicy`
+
+## Policy version
+<a name="AWSSecurityIncidentResponseServiceRolePolicy-version"></a>
+
+**Policy version:** v12 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWSSecurityIncidentResponseServiceRolePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "SecurityIncidentResponseOrganizationsPolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:ListAccounts",
+        "organizations:ListChildren",
+        "organizations:DescribeAccount",
+        "organizations:ListDelegatedAdministrators"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "SecurityIncidentResponseCreateCasePolicyTagOnCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "security-ir:TagResource",
+        "security-ir:CreateCase"
+      ],
+      "Condition" : {
+        "ForAllValues:StringEquals" : {
+          "aws:TagKeys" : [
+            "SecurityIncidentResponseManaged"
+          ]
+        },
+        "StringEquals" : {
+          "aws:RequestTag/SecurityIncidentResponseManaged" : "true",
+          "aws:ResourceTag/SecurityIncidentResponseManaged" : "true"
+        }
+      },
+      "Resource" : "arn:aws:security-ir:*:*:case/*"
+    },
+    {
+      "Sid" : "SecurityIncidentResponseOperationsPolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "security-ir:GetCase",
+        "security-ir:UpdateCase",
+        "security-ir:ListCases",
+        "security-ir:CreateCaseComment",
+        "security-ir:ListComments"
+      ],
+      "Resource" : "arn:aws:security-ir:*:*:case/*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWSSecurityIncidentResponseServiceRolePolicy-learn-more"></a>
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

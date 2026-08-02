@@ -1,0 +1,103 @@
+---
+source_url: https://docs.aws.amazon.com/omics/latest/api/API_DeleteAnnotationStore.html
+---
+
+# DeleteAnnotationStore
+<a name="API_DeleteAnnotationStore"></a>
+
+**Important**
+ AWS HealthOmics variant stores and annotation stores are no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [AWS HealthOmics variant store and annotation store availability change](https://docs.aws.amazon.com/omics/latest/dev/variant-store-availability-change.html).
+
+Deletes an annotation store.
+
+## Request Syntax
+<a name="API_DeleteAnnotationStore_RequestSyntax"></a>
+
+```
+DELETE /annotationStore/{{name}}?force={{force}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_DeleteAnnotationStore_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [force](#API_DeleteAnnotationStore_RequestSyntax) **   <a name="omics-DeleteAnnotationStore-request-uri-force"></a>
+Whether to force deletion.
+
+ ** [name](#API_DeleteAnnotationStore_RequestSyntax) **   <a name="omics-DeleteAnnotationStore-request-uri-name"></a>
+The store's name.
+Required: Yes
+
+## Request Body
+<a name="API_DeleteAnnotationStore_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_DeleteAnnotationStore_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "status": "string"
+}
+```
+
+## Response Elements
+<a name="API_DeleteAnnotationStore_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [status](#API_DeleteAnnotationStore_ResponseSyntax) **   <a name="omics-DeleteAnnotationStore-response-status"></a>
+The store's status.
+Type: String
+Valid Values: `CREATING | UPDATING | DELETING | ACTIVE | FAILED`
+
+## Errors
+<a name="API_DeleteAnnotationStore_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** ConflictException **
+The request cannot be applied to the target resource in its current state.
+HTTP Status Code: 409
+
+ ** InternalServerException **
+An unexpected error occurred. Try the request again.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The target resource was not found in the current Region.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by an AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DeleteAnnotationStore_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/omics-2022-11-28/DeleteAnnotationStore)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/DeleteAnnotationStore)

@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/amazonswf/latest/apireference/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [CountClosedWorkflowExecutions](API_CountClosedWorkflowExecutions.md)
++  [CountOpenWorkflowExecutions](API_CountOpenWorkflowExecutions.md)
++  [CountPendingActivityTasks](API_CountPendingActivityTasks.md)
++  [CountPendingDecisionTasks](API_CountPendingDecisionTasks.md)
++  [DeleteActivityType](API_DeleteActivityType.md)
++  [DeleteWorkflowType](API_DeleteWorkflowType.md)
++  [DeprecateActivityType](API_DeprecateActivityType.md)
++  [DeprecateDomain](API_DeprecateDomain.md)
++  [DeprecateWorkflowType](API_DeprecateWorkflowType.md)
++  [DescribeActivityType](API_DescribeActivityType.md)
++  [DescribeDomain](API_DescribeDomain.md)
++  [DescribeWorkflowExecution](API_DescribeWorkflowExecution.md)
++  [DescribeWorkflowType](API_DescribeWorkflowType.md)
++  [GetWorkflowExecutionHistory](API_GetWorkflowExecutionHistory.md)
++  [ListActivityTypes](API_ListActivityTypes.md)
++  [ListClosedWorkflowExecutions](API_ListClosedWorkflowExecutions.md)
++  [ListDomains](API_ListDomains.md)
++  [ListOpenWorkflowExecutions](API_ListOpenWorkflowExecutions.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [ListWorkflowTypes](API_ListWorkflowTypes.md)
++  [PollForActivityTask](API_PollForActivityTask.md)
++  [PollForDecisionTask](API_PollForDecisionTask.md)
++  [RecordActivityTaskHeartbeat](API_RecordActivityTaskHeartbeat.md)
++  [RegisterActivityType](API_RegisterActivityType.md)
++  [RegisterDomain](API_RegisterDomain.md)
++  [RegisterWorkflowType](API_RegisterWorkflowType.md)
++  [RequestCancelWorkflowExecution](API_RequestCancelWorkflowExecution.md)
++  [RespondActivityTaskCanceled](API_RespondActivityTaskCanceled.md)
++  [RespondActivityTaskCompleted](API_RespondActivityTaskCompleted.md)
++  [RespondActivityTaskFailed](API_RespondActivityTaskFailed.md)
++  [RespondDecisionTaskCompleted](API_RespondDecisionTaskCompleted.md)
++  [SignalWorkflowExecution](API_SignalWorkflowExecution.md)
++  [StartWorkflowExecution](API_StartWorkflowExecution.md)
++  [TagResource](API_TagResource.md)
++  [TerminateWorkflowExecution](API_TerminateWorkflowExecution.md)
++  [UndeprecateActivityType](API_UndeprecateActivityType.md)
++  [UndeprecateDomain](API_UndeprecateDomain.md)
++  [UndeprecateWorkflowType](API_UndeprecateWorkflowType.md)
++  [UntagResource](API_UntagResource.md)

@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/amazon-api-gateway.html
+---
+
+# Amazon API Gateway
+<a name="amazon-api-gateway"></a>
+
+This solution deploys an Amazon API Gateway REST API and uses the default API endpoint and SSL certificate. The default API endpoint supports TLSv1 security policy. It is recommended to use the TLS\_1\_2 security policy to enforce TLSv1.2\+ with your own custom domain name and custom SSL certificate. For more information, refer to choosing a minimum TLS version for a custom domain in API Gateway in the Amazon API Gateway Developer Guide.
+
+ [API Gateway custom domains TLS](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-custom-domain-tls-version.html)
+
+ [How to setup custom domains](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html)

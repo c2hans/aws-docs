@@ -1,0 +1,141 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html
+---
+
+# Manage AWS IAM Identity Center permission sets as code by using AWS CodePipeline
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline"></a>
+
+*Andre Cavalcante and Claison Amorim, Amazon Web Services*
+
+## Summary
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-summary"></a>
+
+AWS IAM Identity Center helps you centrally manage single sign-on (SSO) access to all of your AWS accounts and applications. You can create and manage user identities in IAM Identity Center, or you can connect an existing identity source, such as a Microsoft Active Directory domain or an external identity provider (IdP). IAM Identity Center provides a unified administration experience to define, customize, and assign fine-grained access to your AWS environment by using [permission sets](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetsconcept.html). Permission sets apply to the federated users and groups from your IAM Identity Center identity store or your external IdP.
+
+This pattern helps you to manage IAM Identity Center permission sets as code in your multi-account environment that is managed as an organization in AWS Organizations. With this pattern, you can achieve the following:
++ Create, delete, and update permission sets
++ Create, update, or delete permission set assignments to target AWS accounts, organizational units (OUs), or your organization root.
+
+To manage IAM Identity Center permissions and assignments as code, this solution deploys a continuous integration and continuous delivery (CI/CD) pipeline that uses AWS CodeBuild and AWS CodePipeline. You manage the permission sets and assignments in JSON templates that you store in a remote repository. When Amazon EventBridge rules detect a change to the repository or detect modifications to the accounts in the target OU, it starts an AWS Lambda function. The Lambda function initiates the CI/CD pipeline that updates the permission sets and assignments in IAM Identity Center.
+
+## Prerequisites and limitations
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-prereqs"></a>
+
+**Prerequisites**
++ A multi-account environment managed as an organization in AWS Organizations. For more information, see [Creating an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_create.html).
++ IAM Identity Center, enabled and configured with an identity source. For more information, see [Getting Started](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html) in the IAM Identity Center documentation.
++ A member account that is registered as the delegated administrator for the following AWS services:
+  + IAM Identity Center – For instructions, see [Register a member account](https://docs.aws.amazon.com/singlesignon/latest/userguide/delegated-admin.html#delegated-admin-how-to-register) in the IAM Identity Center documentation.
+  + AWS Organizations – For instructions, see [Delegated administrator for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_delegate_policies.html). This account must have permissions to list and describe accounts and OUs.
+**Note**
+You must use the same account as the delegated administrator for both services.
++ Permissions to deploy AWS CloudFormation stacks in the IAM Identity Center delegated administrator account and in the organization’s management account. For more information, see [Controlling access](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html) in the CloudFormation documentation.
++ An Amazon Simple Storage Service (Amazon S3) bucket in the IAM Identity Center delegated administrator account. You upload the artifact code into this bucket. For instructions, see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the Amazon S3 documentation.
++ The account ID of the organization’s management account. For instructions, see [Finding your AWS account ID](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-identifiers.html#FindAccountId).
++ A repository in your source code host, such as GitHub.
+
+**Limitations**
++ This pattern cannot be used to manage or assign permission sets for single-account environments or for accounts that are not managed as an organization in AWS Organizations.
++ Permission set names, assignment IDs, and IAM Identity Center principal types and IDs cannot be modified after deployment.
++ This pattern helps you create and manage [custom permissions](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetcustom.html). You cannot use this pattern to manage or assign [predefined permissions](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetpredefined.html).
++ This pattern cannot be used to manage a permission set for the organization’s management account.
+
+## Architecture
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-architecture"></a>
+
+**Target architecture**
+
+![Using a CI/CD pipeline to manage permission sets in IAM Identity Center.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/419aaa80-1b97-402d-9c74-c1b8c1ddd1cb/images/1f143bc4-c2c6-4ab6-8615-742fec617f18.png)
+
+The diagram shows the following workflow:
+
+1. A user makes one of the following changes:
+   + Commits one or more changes to the remote repository, such as GitHub
+   + Modifies the accounts in the OU in AWS Organizations
+
+1. If the user committed a change to the remote repository to the main branch, the pipeline starts.
+
+   If the user modified the accounts in the OU, then the `MoveAccount` EventBridge rule detects the change and starts a Lambda function in the organization’s management account.
+
+1. The initiated Lambda function starts the CI/CD pipeline in CodePipeline.
+
+1. CodePipeline starts the `TemplateValidation` CodeBuild project. The `TemplateValidation` CodeBuild project uses a Python script in the remote repository to validate the permission set templates. CodeBuild validates the following:
+   + The permission set names are unique.
+   + The assignment statement IDs (`Sid`) are unique.
+   + Policy definitions in the `CustomPolicy` parameter and valid. (This validation uses AWS Identity and Access Management Access Analyzer.)
+   + The Amazon Resource Names (ARNs) of the managed policies are valid.
+
+1. The `PermissionSet` action group in the `Deploy` CodeBuild project uses AWS SDK for Python (Boto3) to delete, create, or update the permission sets in IAM Identity Center. Only permission sets with the `SSOPipeline:true` tag are affected. All permission sets that are managed through this pipeline have this tag.
+
+1. The `Assignments` action group in the `Deploy` CodeBuild project uses Terraform to delete, create, or update the assignments in IAM Identity Center. The Terraform backend state files are stored in an Amazon S3 bucket in the same account.
+
+1. CodeBuild updates the permissions sets and assignments in IAM Identity Center.
+
+**Automation and scale**
+
+Because all new accounts in a multi-account environment are moved to a specific organizational unit in AWS Organizations, this solution automatically runs and grants the required permission sets to all accounts that you specify in the assignment templates. No additional automations or scaling actions are necessary.
+
+In large environments, the number of API requests to IAM Identity Center might cause this solution to run more slowly. Terraform and Boto3 automatically manage throttling to minimize any performance degradation.
+
+## Tools
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-tools"></a>
+
+**AWS services**
++ [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) helps you set up AWS resources, provision them quickly and consistently, and manage them throughout their lifecycle across AWS accounts and AWS Regions.
++ [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html) is a fully managed build service that helps you compile source code, run unit tests, and produce artifacts that are ready to deploy.
++ [AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html) helps you quickly model and configure the different stages of a software release and automate the steps required to release software changes continuously.
++ [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) is a serverless event bus service that helps you connect your applications with real-time data from a variety of sources. For example, AWS Lambda functions, HTTP invocation endpoints using API destinations, or event buses in other AWS accounts.
++ [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) helps you centrally manage single sign-on (SSO) access to all of your AWS accounts and cloud applications.
++ [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html) is an account management service that helps you consolidate multiple AWS accounts into an organization that you create and centrally manage.
++ [AWS SDK for Python (Boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html) is a software development kit that helps you integrate your Python application, library, or script with AWS services.
++ [Amazon Simple Storage Service (Amazon S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) is a cloud-based object storage service that helps you store, protect, and retrieve any amount of data.
+
+**Code repository **
+
+The code for this pattern is available in the [aws-iam-identity-center-pipeline](https://github.com/aws-samples/aws-iam-identity-center-pipeline) repository. The templates folder in the repository includes sample templates for both permission sets and assignments. It also includes AWS CloudFormation templates for deploying the CI/CD pipeline and AWS resources in the target accounts.
+
+## Best practices
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-best-practices"></a>
++ Before you start modifying the permission set and assignment templates, we recommend that you plan permission sets for your organization. Consider what the permissions should be, which accounts or OUs the permission set should apply to, and which IAM Identity Center principals (users or groups) should be affected by the permission set. Permission set names, association IDs, and IAM Identity Center principal types and IDs cannot be modified after deployment.
++ Adhere to the principle of least privilege and grant the minimum permissions required to perform a task. For more information, see [Grant least privilege](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#grant-least-priv) and [Security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPracticesAndUseCases.html) in the AWS Identity and Access Management (IAM) documentation.
+
+## Epics
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-epics"></a>
+
+### Plan permission sets and assignments
+<a name="plan-permission-sets-and-assignments"></a>
+
+| Task | Description | Skills required |
+| --- | --- | --- |
+| Clone the repository. | In a bash shell, enter the following command. This clones the [aws-iam-identity-center-pipeline](https://github.com/aws-samples/aws-iam-identity-center-pipeline) repository from GitHub.<pre>git clone https://github.com/aws-samples/aws-iam-identity-center-pipeline.git</pre> | DevOps engineer |
+| Define the permission sets. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html) | DevOps engineer |
+| Define the assignments. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html) | DevOps engineer |
+
+### Deploy the permission sets and assignments
+<a name="deploy-the-permission-sets-and-assignments"></a>
+
+| Task | Description | Skills required |
+| --- | --- | --- |
+| Deploy resources in the IAM Identity Center delegated administrator account. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html) | DevOps engineer |
+| Deploy resources in the AWS Organizations management account. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html) | DevOps engineer |
+| Finish the remote repository setup. | Change the status of the AWS CodeConnections connection from `PENDING` to `AVAILABLE`. This connection was created when you deployed the CloudFormation stack. For instructions, see [Update a pending connection](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-update.html) in the CodeConnections documentation.  | DevOps engineer |
+| Upload files to the remote repository. | Upload all of files you have downloaded from the `aws-samples` repository and edited in previous steps to the remote repository. Changes to the `main` branch start the pipeline, which creates or updates the permission sets and assignments. | DevOps engineer |
+
+### Updating the permission sets and assignments
+<a name="updating-the-permission-sets-and-assignments"></a>
+
+| Task | Description | Skills required |
+| --- | --- | --- |
+| Update the permission sets and assignments. | When the `MoveAccount` Amazon EventBridge rule detects modifications to the accounts in the organization, the CI/CD pipeline automatically starts and updates the permission sets. For example, if you add an account to an OU specified in the assignments JSON file, then the CI/CD pipeline will apply the permission set to the new account.<br />If you want to modify the deployed permission sets and assignments, update the JSON files and then commit them to the remote repository. <br />Note the following when using the CI/CD pipeline to manage previously deployed permission sets and associations:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html) | DevOps engineer |
+
+## Troubleshooting
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-troubleshooting"></a>
+
+| Issue | Solution |
+| --- | --- |
+| Access denied errors | Confirm that you have the permissions required to deploy the CloudFormation templates and the resources defined within them. For more information, see [Controlling access](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-iam-template.html) in the CloudFormation documentation. |
+| Pipeline errors in the validation phase | This error appears if there are any errors in the permission set or assignment templates.[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline.html) |
+
+## Related resources
+<a name="manage-aws-iam-identity-center-permission-sets-as-code-by-using-aws-codepipeline-resources"></a>
++ [Permission sets](https://docs.aws.amazon.com/singlesignon/latest/userguide/permissionsetsconcept.html) (IAM Identity Center documentation)

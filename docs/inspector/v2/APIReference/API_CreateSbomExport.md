@@ -1,0 +1,176 @@
+---
+source_url: https://docs.aws.amazon.com/inspector/v2/APIReference/API_CreateSbomExport.html
+---
+
+# CreateSbomExport
+<a name="API_CreateSbomExport"></a>
+
+Creates a software bill of materials (SBOM) report.
+
+## Request Syntax
+<a name="API_CreateSbomExport_RequestSyntax"></a>
+
+```
+POST /sbomexport/create HTTP/1.1
+Content-type: application/json
+
+{
+   "reportFormat": "{{string}}",
+   "resourceFilterCriteria": {
+      "accountId": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "ec2InstanceTags": [
+         {
+            "comparison": "{{string}}",
+            "key": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "ecrImageTags": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "ecrRepositoryName": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "lambdaFunctionName": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "lambdaFunctionTags": [
+         {
+            "comparison": "{{string}}",
+            "key": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "resourceId": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ],
+      "resourceType": [
+         {
+            "comparison": "{{string}}",
+            "value": "{{string}}"
+         }
+      ]
+   },
+   "s3Destination": {
+      "bucketName": "{{string}}",
+      "keyPrefix": "{{string}}",
+      "kmsKeyArn": "{{string}}"
+   }
+}
+```
+
+## URI Request Parameters
+<a name="API_CreateSbomExport_RequestParameters"></a>
+
+The request does not use any URI parameters.
+
+## Request Body
+<a name="API_CreateSbomExport_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [reportFormat](#API_CreateSbomExport_RequestSyntax) **   <a name="inspector2-CreateSbomExport-request-reportFormat"></a>
+The output format for the software bill of materials (SBOM) report.
+Type: String
+Valid Values: `CYCLONEDX_1_4 | SPDX_2_3`
+Required: Yes
+
+ ** [resourceFilterCriteria](#API_CreateSbomExport_RequestSyntax) **   <a name="inspector2-CreateSbomExport-request-resourceFilterCriteria"></a>
+The resource filter criteria for the software bill of materials (SBOM) report.
+Type: [ResourceFilterCriteria](API_ResourceFilterCriteria.md) object
+Required: No
+
+ ** [s3Destination](#API_CreateSbomExport_RequestSyntax) **   <a name="inspector2-CreateSbomExport-request-s3Destination"></a>
+Contains details of the Amazon S3 bucket and AWS KMS key used to export findings.
+Type: [Destination](API_Destination.md) object
+Required: Yes
+
+## Response Syntax
+<a name="API_CreateSbomExport_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "reportId": "string"
+}
+```
+
+## Response Elements
+<a name="API_CreateSbomExport_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [reportId](#API_CreateSbomExport_ResponseSyntax) **   <a name="inspector2-CreateSbomExport-response-reportId"></a>
+The report ID for the software bill of materials (SBOM) report.
+Type: String
+Pattern: `.*\b[a-f0-9]{8}\b-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-\b[a-f0-9]{12}\b.*`
+
+## Errors
+<a name="API_CreateSbomExport_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+ For `Enable`, you receive this error if you attempt to use a feature in an unsupported AWS Region.
+HTTP Status Code: 403
+
+ ** InternalServerException **
+The request has failed due to an internal failure of the Amazon Inspector service.
+ ** retryAfterSeconds **
+The number of seconds to wait before retrying the request.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The operation tried to access an invalid resource. Make sure the resource is specified correctly.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The limit on the number of requests per second was exceeded.
+ ** retryAfterSeconds **
+The number of seconds to wait before retrying the request.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The request has failed validation due to missing required fields or having invalid inputs.
+ ** fields **
+The fields that failed validation.
+ ** reason **
+The reason for the validation failure.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_CreateSbomExport_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/inspector2-2020-06-08/CreateSbomExport)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/inspector2-2020-06-08/CreateSbomExport)

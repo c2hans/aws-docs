@@ -1,0 +1,148 @@
+---
+source_url: https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_ListServices.html
+---
+
+# ListServices
+<a name="API_ListServices"></a>
+
+List a list of registered service on the account level.
+
+## Request Syntax
+<a name="API_ListServices_RequestSyntax"></a>
+
+```
+POST /v1/services/list?filterServiceType={{filterServiceType}}&maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListServices_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [filterServiceType](#API_ListServices_RequestSyntax) **   <a name="devopsagent-ListServices-request-uri-filterServiceType"></a>
+Optional filter to list only services of a specific type.
+Valid Values: `github | slack | azure | azuredevops | dynatrace | servicenow | pagerduty | gitlab | eventChannel | mcpservernewrelic | mcpservergrafana | mcpserverdatadog | mcpserver | mcpserversplunk | azureidentity | mcpserversigv4 | remoteagent | remoteagentsigv4`
+
+ ** [maxResults](#API_ListServices_RequestSyntax) **   <a name="devopsagent-ListServices-request-uri-maxResults"></a>
+Maximum number of results to return in a single call.
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+ ** [nextToken](#API_ListServices_RequestSyntax) **   <a name="devopsagent-ListServices-request-uri-nextToken"></a>
+Token for the next page of results.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+
+## Request Body
+<a name="API_ListServices_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListServices_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "nextToken": "string",
+   "services": [
+      {
+         "accessibleResources": [ JSON value ],
+         "additionalServiceDetails": { ... },
+         "kmsKeyArn": "string",
+         "name": "string",
+         "privateConnectionName": "string",
+         "serviceId": "string",
+         "serviceType": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_ListServices_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [nextToken](#API_ListServices_ResponseSyntax) **   <a name="devopsagent-ListServices-response-nextToken"></a>
+Token to retrieve the next page of results, if there are more results.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+
+ ** [services](#API_ListServices_ResponseSyntax) **   <a name="devopsagent-ListServices-response-services"></a>
+List of registered services.
+Type: Array of [RegisteredService](API_RegisteredService.md) objects
+
+## Errors
+<a name="API_ListServices_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+Access to the requested resource is denied due to insufficient permissions.
+ ** message **
+Detailed error message describing why access was denied.
+HTTP Status Code: 403
+
+ ** ConflictException **
+The request conflicts with the current state of the resource.
+ ** message **
+Detailed error message describing the conflict.
+HTTP Status Code: 409
+
+ ** ContentSizeExceededException **
+This exception is thrown when the content size exceeds the allowed limit.
+HTTP Status Code: 413
+
+ ** InternalServerException **
+This exception is thrown when an unexpected error occurs in the processing of a request.
+HTTP Status Code: 500
+
+ ** InvalidParameterException **
+One or more parameters provided in the request are invalid.
+ ** message **
+Detailed error message describing which parameter is invalid and why.
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+The requested resource could not be found.
+ ** message **
+Detailed error message describing which resource was not found.
+HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+The request would exceed the service quota limit.
+ ** message **
+Detailed error message describing which quota was exceeded.
+HTTP Status Code: 402
+
+ ** ThrottlingException **
+The request was throttled due to too many requests. Please slow down and try again.
+ ** message **
+Detailed error message describing the throttling condition.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by the service.
+ ** fieldList **
+A list of specific failures encountered while validating the input. A member can appear in this list more than once if it failed to satisfy multiple constraints.
+ ** message **
+A summary of the validation failure.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListServices_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/devops-agent-2026-01-01/ListServices)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/ListServices)

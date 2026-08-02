@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-image-transformation-for-amazon-cloudfront/restricted-operations.html
+---
+
+# Restricted operations
+<a name="restricted-operations"></a>
+
+Certain Sharp operations are restricted by the solution to help enhance security. This includes (but may not be limited to):
++ clone
++ metadata
++ stats
++ composite (Though this is permitted through the use of overlayWith)
++ certain [output options](https://sharp.pixelplumbing.com/api-output) (Including toFile, toBuffer, tile and raw)
+
+For an exact list of allow-listed Sharp operations, you can visit [constants.ts](https://github.com/aws-solutions/serverless-image-handler/blob/main/source/image-handler/lib/constants.ts) on the Solution GitHub repository.

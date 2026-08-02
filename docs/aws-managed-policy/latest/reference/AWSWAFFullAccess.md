@@ -1,0 +1,294 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSWAFFullAccess.html
+---
+
+# AWSWAFFullAccess
+<a name="AWSWAFFullAccess"></a>
+
+**Description**: Provides full access to AWS WAF actions.
+
+`AWSWAFFullAccess` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWSWAFFullAccess-how-to-use"></a>
+
+You can attach `AWSWAFFullAccess` to your users, groups, and roles.
+
+## Policy details
+<a name="AWSWAFFullAccess-details"></a>
++ **Type**: AWS managed policy
++ **Creation time**: October 06, 2015, 20:44 UTC
++ **Edited time:** July 28, 2026, 21:42 UTC
++ **ARN**: `arn:aws:iam::aws:policy/AWSWAFFullAccess`
+
+## Policy version
+<a name="AWSWAFFullAccess-version"></a>
+
+**Policy version:** v17 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWSWAFFullAccess-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "AllowUseOfAWSWAFClassic",
+      "Effect" : "Allow",
+      "Action" : [
+        "waf:*",
+        "waf-regional:*"
+      ],
+      "Resource" : [
+        "arn:aws:waf::*:bytematchset/*",
+        "arn:aws:waf::*:ipset/*",
+        "arn:aws:waf::*:ratebasedrule/*",
+        "arn:aws:waf::*:rule/*",
+        "arn:aws:waf::*:sizeconstraintset/*",
+        "arn:aws:waf::*:sqlinjectionset/*",
+        "arn:aws:waf::*:webacl/*",
+        "arn:aws:waf::*:xssmatchset/*",
+        "arn:aws:waf::*:regexmatch/*",
+        "arn:aws:waf::*:regexpatternset/*",
+        "arn:aws:waf::*:geomatchset/*",
+        "arn:aws:waf::*:rulegroup/*",
+        "arn:aws:waf::*:changetoken/*",
+        "arn:aws:waf-regional:*:*:bytematchset/*",
+        "arn:aws:waf-regional:*:*:ipset/*",
+        "arn:aws:waf-regional:*:*:ratebasedrule/*",
+        "arn:aws:waf-regional:*:*:rule/*",
+        "arn:aws:waf-regional:*:*:sizeconstraintset/*",
+        "arn:aws:waf-regional:*:*:sqlinjectionset/*",
+        "arn:aws:waf-regional:*:*:webacl/*",
+        "arn:aws:waf-regional:*:*:xssmatchset/*",
+        "arn:aws:waf-regional:*:*:regexmatch/*",
+        "arn:aws:waf-regional:*:*:regexpatternset/*",
+        "arn:aws:waf-regional:*:*:geomatchset/*",
+        "arn:aws:waf-regional:*:*:rulegroup/*",
+        "arn:aws:waf-regional:*:*:changetoken/*"
+      ]
+    },
+    {
+      "Sid" : "AllowWAFClassicGetWebACLForResource",
+      "Effect" : "Allow",
+      "Action" : [
+        "waf-regional:GetWebACLForResource"
+      ],
+      "Resource" : "arn:aws:waf-regional:*:*:*/*"
+    },
+    {
+      "Sid" : "AllowUseOfAWSWAF",
+      "Effect" : "Allow",
+      "Action" : [
+        "wafv2:*"
+      ],
+      "Resource" : [
+        "arn:aws:wafv2:*:*:*/webacl/*/*",
+        "arn:aws:wafv2:*:*:*/ipset/*/*",
+        "arn:aws:wafv2:*:*:*/managedruleset/*/*",
+        "arn:aws:wafv2:*:*:*/rulegroup/*/*",
+        "arn:aws:wafv2:*:*:*/regexpatternset/*/*"
+      ]
+    },
+    {
+      "Sid" : "AllowDisassociateWebACL",
+      "Effect" : "Allow",
+      "Action" : [
+        "wafv2:DisassociateWebACL"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowListActionsForALB",
+      "Effect" : "Allow",
+      "Action" : [
+        "elasticloadbalancing:DescribeWebACLAssociation"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowActionsForALB",
+      "Effect" : "Allow",
+      "Action" : [
+        "elasticloadbalancing:SetWebAcl",
+        "elasticloadbalancing:CreateWebACLAssociation",
+        "elasticloadbalancing:DeleteWebACLAssociation",
+        "elasticloadbalancing:GetLoadBalancerWebACL"
+      ],
+      "Resource" : "arn:aws:elasticloadbalancing:*:*:loadbalancer/app/*/*"
+    },
+    {
+      "Sid" : "AllowActionsForAPIGateway",
+      "Effect" : "Allow",
+      "Action" : [
+        "apigateway:SetWebACL"
+      ],
+      "Resource" : "arn:aws:apigateway:*::/restapis/*/stages/*"
+    },
+    {
+      "Sid" : "AllowListActionsForAppSync",
+      "Effect" : "Allow",
+      "Action" : [
+        "appsync:ListResourcesForWebACL"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowActionsForAppSync",
+      "Effect" : "Allow",
+      "Action" : [
+        "appsync:SetWebACL",
+        "appsync:AssociateWebACL",
+        "appsync:DisassociateWebACL",
+        "appsync:GetWebACLForResource"
+      ],
+      "Resource" : "arn:aws:appsync:*:*:apis/*"
+    },
+    {
+      "Sid" : "AllowActionsForCognito",
+      "Effect" : "Allow",
+      "Action" : [
+        "cognito-idp:AssociateWebACL",
+        "cognito-idp:DisassociateWebACL",
+        "cognito-idp:GetWebACLForResource"
+      ],
+      "Resource" : "arn:aws:cognito-idp:*:*:userpool/*"
+    },
+    {
+      "Sid" : "AllowListActionsForCognito",
+      "Effect" : "Allow",
+      "Action" : [
+        "cognito-idp:ListResourcesForWebACL"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowActionsForAppRunner",
+      "Effect" : "Allow",
+      "Action" : [
+        "apprunner:AssociateWebAcl",
+        "apprunner:DisassociateWebAcl",
+        "apprunner:DescribeWebAclForService"
+      ],
+      "Resource" : "arn:aws:apprunner:*:*:service/*/*"
+    },
+    {
+      "Sid" : "AllowListActionsForAppRunner",
+      "Effect" : "Allow",
+      "Action" : [
+        "apprunner:ListServices",
+        "apprunner:ListAssociatedServicesForWebAcl"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowActionsForAVA",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:AssociateVerifiedAccessInstanceWebAcl",
+        "ec2:DisassociateVerifiedAccessInstanceWebAcl",
+        "ec2:GetVerifiedAccessInstanceWebAcl"
+      ],
+      "Resource" : "arn:aws:ec2:*:*:verified-access-instance/*"
+    },
+    {
+      "Sid" : "AllowListActionsForAVA",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DescribeVerifiedAccessInstanceWebAclAssociations"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowActionsForAmplify",
+      "Effect" : "Allow",
+      "Action" : [
+        "amplify:AssociateWebACL",
+        "amplify:DisassociateWebACL",
+        "amplify:GetWebACLForResource"
+      ],
+      "Resource" : "arn:aws:amplify:*:*:apps/*"
+    },
+    {
+      "Sid" : "AllowListActionsForAmplify",
+      "Effect" : "Allow",
+      "Action" : [
+        "amplify:ListResourcesForWebACL"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowLogGroupDescribeActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:DescribeResourcePolicies",
+        "logs:DescribeLogGroups"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AllowLogDeliverySubscription",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:CreateLogDelivery",
+        "logs:DeleteLogDelivery"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "GrantLogDeliveryPermissionForS3Bucket",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:PutBucketPolicy",
+        "s3:GetBucketPolicy"
+      ],
+      "Resource" : [
+        "arn:aws:s3:::aws-waf-logs-*"
+      ]
+    },
+    {
+      "Sid" : "GrantLogDeliveryPermissionForCloudWatchLogGroup",
+      "Effect" : "Allow",
+      "Action" : [
+        "logs:PutResourcePolicy"
+      ],
+      "Resource" : "arn:aws:logs:*:*:log-group:*",
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "wafv2.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AllowActionsForAgentCoreGateway",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:GatewayAssociateWebACL",
+        "bedrock-agentcore:GatewayDisassociateWebACL",
+        "bedrock-agentcore:GatewayGetWebACLForResource"
+      ],
+      "Resource" : "arn:aws:bedrock-agentcore:*:*:gateway/*"
+    },
+    {
+      "Sid" : "AllowListActionsForAgentCoreGateway",
+      "Effect" : "Allow",
+      "Action" : [
+        "bedrock-agentcore:GatewayListResourcesForWebACL"
+      ],
+      "Resource" : "*"
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWSWAFFullAccess-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

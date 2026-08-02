@@ -1,0 +1,138 @@
+---
+source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_JobSummary.html
+---
+
+# JobSummary
+<a name="API_JobSummary"></a>
+
+A summary of job details.
+
+## Contents
+<a name="API_JobSummary_Contents"></a>
+
+ ** createdAt **   <a name="deadlinecloud-Type-JobSummary-createdAt"></a>
+The date and time the resource was created.
+Type: Timestamp
+Required: Yes
+
+ ** createdBy **   <a name="deadlinecloud-Type-JobSummary-createdBy"></a>
+The user or system that created this resource.
+Type: String
+Required: Yes
+
+ ** jobId **   <a name="deadlinecloud-Type-JobSummary-jobId"></a>
+The job ID.
+Type: String
+Pattern: `job-[0-9a-f]{32}`
+Required: Yes
+
+ ** lifecycleStatus **   <a name="deadlinecloud-Type-JobSummary-lifecycleStatus"></a>
+The life cycle status.
+Type: String
+Valid Values: `CREATE_IN_PROGRESS | CREATE_FAILED | CREATE_COMPLETE | UPLOAD_IN_PROGRESS | UPLOAD_FAILED | UPDATE_IN_PROGRESS | UPDATE_FAILED | UPDATE_SUCCEEDED | ARCHIVED`
+Required: Yes
+
+ ** lifecycleStatusMessage **   <a name="deadlinecloud-Type-JobSummary-lifecycleStatusMessage"></a>
+The life cycle status message.
+Type: String
+Required: Yes
+
+ ** name **   <a name="deadlinecloud-Type-JobSummary-name"></a>
+The job name.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Required: Yes
+
+ ** priority **   <a name="deadlinecloud-Type-JobSummary-priority"></a>
+The job priority.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 100.
+Required: Yes
+
+ ** endedAt **   <a name="deadlinecloud-Type-JobSummary-endedAt"></a>
+The date and time the resource ended running.
+Type: Timestamp
+Required: No
+
+ ** maxFailedTasksCount **   <a name="deadlinecloud-Type-JobSummary-maxFailedTasksCount"></a>
+The number of task failures before the job stops running and is marked as `FAILED`.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 2147483647.
+Required: No
+
+ ** maxRetriesPerTask **   <a name="deadlinecloud-Type-JobSummary-maxRetriesPerTask"></a>
+The maximum number of retries for a job.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 2147483647.
+Required: No
+
+ ** maxWorkerCount **   <a name="deadlinecloud-Type-JobSummary-maxWorkerCount"></a>
+The maximum number of worker hosts that can concurrently process a job. When the `maxWorkerCount` is reached, no more workers will be assigned to process the job, even if the fleets assigned to the job's queue has available workers.
+You can't set the `maxWorkerCount` to 0. If you set it to -1, there is no maximum number of workers.
+If you don't specify the `maxWorkerCount`, the default is -1.
+Type: Integer
+Valid Range: Minimum value of -1. Maximum value of 2147483647.
+Required: No
+
+ ** sourceJobId **   <a name="deadlinecloud-Type-JobSummary-sourceJobId"></a>
+The job ID for the source job.
+Type: String
+Pattern: `job-[0-9a-f]{32}`
+Required: No
+
+ ** startedAt **   <a name="deadlinecloud-Type-JobSummary-startedAt"></a>
+The date and time the resource started running.
+Type: Timestamp
+Required: No
+
+ ** targetTaskRunStatus **   <a name="deadlinecloud-Type-JobSummary-targetTaskRunStatus"></a>
+The task status to update the job's tasks to.
+Type: String
+Valid Values: `READY | FAILED | SUCCEEDED | CANCELED | SUSPENDED | PENDING`
+Required: No
+
+ ** taskFailureRetryCount **   <a name="deadlinecloud-Type-JobSummary-taskFailureRetryCount"></a>
+The total number of times tasks from the job failed and were retried.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 2147483647.
+Required: No
+
+ ** taskRunStatus **   <a name="deadlinecloud-Type-JobSummary-taskRunStatus"></a>
+The task run status for the job.
++  `PENDING`–pending and waiting for resources.
++  `READY`–ready to be processed.
++  `ASSIGNED`–assigned and will run next on a worker.
++  `SCHEDULED`–scheduled to be run on a worker.
++  `INTERRUPTING`–being interrupted.
++  `RUNNING`–running on a worker.
++  `SUSPENDED`–the task is suspended.
++  `CANCELED`–the task has been canceled.
++  `FAILED`–the task has failed.
++  `SUCCEEDED`–the task has succeeded.
+Type: String
+Valid Values: `PENDING | READY | ASSIGNED | STARTING | SCHEDULED | INTERRUPTING | RUNNING | SUSPENDED | CANCELED | FAILED | SUCCEEDED | NOT_COMPATIBLE`
+Required: No
+
+ ** taskRunStatusCounts **   <a name="deadlinecloud-Type-JobSummary-taskRunStatusCounts"></a>
+The number of tasks running on the job.
+Type: String to integer map
+Valid Keys: `PENDING | READY | ASSIGNED | STARTING | SCHEDULED | INTERRUPTING | RUNNING | SUSPENDED | CANCELED | FAILED | SUCCEEDED | NOT_COMPATIBLE`
+Required: No
+
+ ** updatedAt **   <a name="deadlinecloud-Type-JobSummary-updatedAt"></a>
+The date and time the resource was updated.
+Type: Timestamp
+Required: No
+
+ ** updatedBy **   <a name="deadlinecloud-Type-JobSummary-updatedBy"></a>
+The user or system that updated this resource.
+Type: String
+Required: No
+
+## See Also
+<a name="API_JobSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/deadline-2023-10-12/JobSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/deadline-2023-10-12/JobSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/deadline-2023-10-12/JobSummary)

@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/hybrid_directory_status_errors.html
+---
+
+# Directory Status Errors
+<a name="hybrid_directory_status_errors"></a>
+
+Directory Service directories can encounter various states that indicate different types of issues. Understanding these states helps you determine the appropriate troubleshooting steps.
+
+**Directory Status Types**
+
+| Status | Description | Action Required |
+| --- | --- | --- |
+| Active | Directory creation completed successfully and is operating normally. | No action required. |
+| Impaired | Directory was created successfully, but the domain controller encountered problems afterward. The system attempts automatic recovery. | Monitor the directory status. If the issue persists, contact AWS Support. |
+| Failed | Directory creation failed and is unrecoverable. | Delete the failed directory and create a new one. |
+| Inoperable (Hybrid AD only) | AWS detected a security issue and automatically isolated the directory for protection. The directory becomes completely unusable until restored. | Contact [AWS Support Center](https://console.aws.amazon.com/support/home#/) immediately. This status requires Support intervention to investigate and restore the directory. |

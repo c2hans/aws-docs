@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/md_sus-resources.html
+---
+
+# Resources
+<a name="md_sus-resources"></a>
+
+The following resources are specific to sustainability and can help you apply Māori data considerations.
++  [AWS Well Architected – Sustainability Pillar](file:///Users/judihann/Downloads/•%09https:/docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
++  [AWS customer carbon footprint calculator](https://aws.amazon.com/aws-cost-management/aws-customer-carbon-footprint-tool/)
++  [Sustainability at Amazon](https://sustainability.aboutamazon.com/)
++  [Sustainability in the Cloud](https://sustainability.aboutamazon.com/products-services/the-cloud?energyType=true)
++  [Water Stewardship](https://sustainability.aboutamazon.com/products-services/the-cloud?energyType=true#water-stewardship)

@@ -1,0 +1,48 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_WorkspaceSummary.html
+---
+
+# WorkspaceSummary
+<a name="API_WorkspaceSummary"></a>
+
+Contains summary information about a workspace.
+
+## Contents
+<a name="API_WorkspaceSummary_Contents"></a>
+
+ ** Arn **   <a name="connect-Type-WorkspaceSummary-Arn"></a>
+The Amazon Resource Name (ARN) of the workspace.
+Type: String
+Required: No
+
+ ** Id **   <a name="connect-Type-WorkspaceSummary-Id"></a>
+The unique identifier of the workspace.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
+ ** LastModifiedRegion **   <a name="connect-Type-WorkspaceSummary-LastModifiedRegion"></a>
+The AWS Region where the workspace was last modified.
+Type: String
+Pattern: `[a-z]{2}(-[a-z]+){1,2}(-[0-9])?`
+Required: No
+
+ ** LastModifiedTime **   <a name="connect-Type-WorkspaceSummary-LastModifiedTime"></a>
+The timestamp when the workspace was last modified.
+Type: Timestamp
+Required: No
+
+ ** Name **   <a name="connect-Type-WorkspaceSummary-Name"></a>
+The name of the workspace.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `.*\\S.*`
+Required: No
+
+## See Also
+<a name="API_WorkspaceSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/WorkspaceSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/WorkspaceSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/WorkspaceSummary)

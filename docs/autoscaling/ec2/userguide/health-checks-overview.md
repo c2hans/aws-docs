@@ -1,0 +1,118 @@
+---
+source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html
+---
+
+# About the health checks for your Auto Scaling group
+<a name="health-checks-overview"></a>
+
+This topic provides an overview of the available health check types and describes the key considerations for integrating Amazon EC2 Auto Scaling health checks with your applications.
+
+**Topics**
++ [Health check types](#available-health-checks)
++ [Amazon EC2 health checks](#instance-health-detection)
++ [Elastic Load Balancing health checks](#elastic-load-balancing-health-checks)
++ [VPC Lattice health checks](#vpc-lattice-health-checks)
++ [How Amazon EC2 Auto Scaling minimizes downtime](#minimize-downtime)
++ [Health checks for instances in a warm pool](#health-checks-for-instance-in-a-warm-pool)
++ [Health check considerations](#health-check-considerations)
+
+## Health check types
+<a name="available-health-checks"></a>
+
+Amazon EC2 Auto Scaling can determine the health status of an `InService` instance by using one or more of the following health checks:
+
+****
+
+| Health check type | What it checks |
+| --- | --- |
+| Amazon EC2 status checks and scheduled events | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)This is the default health check type for an Auto Scaling group.  |
+| Elastic Load Balancing health checks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)To run this health check type, you must turn it on for your Auto Scaling group. |
+| VPC Lattice health checks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)To run this health check type, you must turn it on for your Auto Scaling group. |
+| Amazon EBS health checks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)To run this health check type, you must turn it on for your Auto Scaling group. |
+| Custom health checks |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)  |
+
+## Amazon EC2 health checks
+<a name="instance-health-detection"></a>
+
+After an instance launches, it's attached to the Auto Scaling group and enters the `InService` state. For more information about the different lifecycle states for instances in an Auto Scaling group, see [Amazon EC2 Auto Scaling instance lifecycle](ec2-auto-scaling-lifecycle.md).
+
+Amazon EC2 Auto Scaling periodically checks the health status of all instances within the Auto Scaling group to make sure that they're running and in good condition.
+
+**Status checks**
+Amazon EC2 Auto Scaling uses the results of the Amazon EC2 instance status checks and system status checks to determine the health status of an instance. If the instance is in any Amazon EC2 state other than `running`, or if its status for the status checks becomes `impaired`, Amazon EC2 Auto Scaling considers the instance to be unhealthy and replaces it. This includes when the instance has any of the following states:
++  `stopping`
++  `stopped`
++  `shutting-down`
++  `terminated`
+
+The Amazon EC2 status checks do not require any special configuration and are always enabled. For more information, see [Types of status checks](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html#types-of-instance-status-checks) in the *Amazon EC2 User Guide*.
+
+**Important**
+Amazon EC2 Auto Scaling lets the status checks fail occasionally, without taking any action. When a status check fails, Amazon EC2 Auto Scaling waits a few minutes for AWS to fix the issue. It does not immediately mark an instance `Unhealthy` when its status for the status checks becomes `impaired`. Additionally, EC2 Auto Scaling doesn't mark the instance as `Unhealthy` if a status check returns `insufficient-data`.
+However, if Amazon EC2 Auto Scaling detects that an instance is no longer in the `running` state, this situation is treated as an immediate failure. In this case, it immediately marks the instance as `Unhealthy` and replaces it.
+
+**Scheduled events**
+Amazon EC2 can occasionally schedule events on your instances to be run after a particular timestamp. For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
+
+If one of your instances is affected by a scheduled event, Amazon EC2 Auto Scaling considers the instance to be unhealthy and replaces it. The instance doesn't start shutting down until the date and time that's specified in the timestamp is reached.
+
+## Elastic Load Balancing health checks
+<a name="elastic-load-balancing-health-checks"></a>
+
+When you turn on Elastic Load Balancing health checks for your Auto Scaling group, Amazon EC2 Auto Scaling can use the results of those health checks to determine the health status of an instance.
+
+Before you can turn on Elastic Load Balancing health checks for your Auto Scaling group, you must configure an Elastic Load Balancing load balancer and configure a health check for it to determine if your instances are healthy. For more information, see [Prepare to attach an Elastic Load Balancing load balancer](getting-started-elastic-load-balancing.md).
+
+After you attach the load balancer to your Auto Scaling group, the following occurs:
++ Amazon EC2 Auto Scaling registers the instances in the Auto Scaling group with the load balancer.
++ After an instance finishes registering, it enters the `InService` state and becomes available for use with the load balancer.
+
+By default, Amazon EC2 Auto Scaling ignores the results of the Elastic Load Balancing health checks. After you turn on these health checks for your Auto Scaling group, when Elastic Load Balancing reports a registered instance as `Unhealthy`, Amazon EC2 Auto Scaling marks the instance `Unhealthy` on its next periodic health check and replaces it.
+
+If connection draining (deregistration delay) is enabled for your load balancer, Amazon EC2 Auto Scaling waits for either in-flight requests to complete or the maximum timeout to expire before it terminates unhealthy instances.
+
+**Note**
+For instructions for how to attach the load balancer and turn on Elastic Load Balancing health checks for your Auto Scaling group, see [Attach an Elastic Load Balancing load balancer to your Auto Scaling group](attach-load-balancer-asg.md).
+When you turn on Elastic Load Balancing health checks for a group, Amazon EC2 Auto Scaling can replace instances that Elastic Load Balancing reports as unhealthy, but only after the load balancer is in the `InService` state. For more information, see [Verify the attachment status of your load balancer](load-balancer-status.md).
+
+## VPC Lattice health checks
+<a name="vpc-lattice-health-checks"></a>
+
+By default, Amazon EC2 Auto Scaling ignores the results of the VPC Lattice health checks. You can optionally turn on these health checks for your Auto Scaling group. After you do this, when VPC Lattice reports a registered instance as `Unhealthy`, Amazon EC2 Auto Scaling marks the instance `Unhealthy` on its next periodic health check and replaces it. The process of registering instances and then checking their health is the same as how Elastic Load Balancing health checks work.
+
+**Note**
+For instructions for how to attach the VPC Lattice target group and turn on VPC Lattice health checks for your Auto Scaling group, see [Attach a VPC Lattice target group to your Auto Scaling group](attach-vpc-lattice-target-group-asg.md).
+When you turn on VPC Lattice health checks for a group, Amazon EC2 Auto Scaling can replace instances that VPC Lattice reports as unhealthy, but only after the target group is in the `InService` state. For more information, see [Verify the attachment status of your VPC Lattice target group](verify-target-group-attachment-status.md).
+
+## How Amazon EC2 Auto Scaling minimizes downtime
+<a name="minimize-downtime"></a>
+
+By default, new instances are provisioned at the same time your existing instances are terminated, which might prevent new requests from being accepted until the new instances are fully operational.
+
+If Amazon EC2 Auto Scaling determines that any instances are no longer running (or they were marked `Unhealthy` with the [set-instance-health](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-instance-health.html) command), it immediately replaces them. However, if other instances are found to be unhealthy, Amazon EC2 Auto Scaling uses the following approach to recover from failures. This approach minimizes any downtime that might occur because of temporary issues or misconfigured health checks.
++ If a scaling activity is in progress and your Auto Scaling group is less than its desired capacity by 10 percent or more, Amazon EC2 Auto Scaling waits for the in-progress scaling activity before replacing the unhealthy instances.
++ When scaling out, Amazon EC2 Auto Scaling waits for the instances to pass an initial health check. It also waits for the default instance warmup to finish to make sure that the new instances are ready.
++ After the instances finish warming up and the group has risen to more than 90 percent of its desired capacity, Amazon EC2 Auto Scaling replaces the unhealthy instances as follows:
+  + Amazon EC2 Auto Scaling only replaces up to 10 percent of the group's desired capacity at a time. It does this until all of the unhealthy instances are replaced.
+  + When replacing instances, it waits for the new instances to pass an initial health check. It also waits for the default instance warmup to finish before continuing.
+
+**Note**
+If the size of an Auto Scaling group is small enough that the resulting value of 10 percent is less than one, Amazon EC2 Auto Scaling instead replaces the unhealthy instances one at a time. This might result in some downtime for the group.
+You can modify the default 10 percent value by [setting an instance maintenance policy](https://docs.aws.amazon.com//autoscaling/ec2/userguide/set-instance-maintenance-policy-on-group.html) to change the rate at which Auto Scaling replaces unhealthy instances. However, Auto Scaling might still throttle the rate it marks instances as unhealthy.
+For example, if all instances in an Auto Scaling group are reported unhealthy by Elastic Load Balancing health checks and the load balancer is in the `InService` state, Amazon EC2 Auto Scaling might mark fewer instances unhealthy at a time. This can result in much fewer instances replaced at a time than the 10 percent applied in other scenarios. This provides you with time to fix the problem without Amazon EC2 Auto Scaling automatically terminating the entire group.
+
+## Health checks for instances in a warm pool
+<a name="health-checks-for-instance-in-a-warm-pool"></a>
+
+Amazon EC2 Auto Scaling also performs health checks on instances in a warm pool. For more information, see [View health check status and the reason for health check failures](warm-pools-health-checks-monitor-view-status.md).
+
+## Health check considerations
+<a name="health-check-considerations"></a>
+
+The following are considerations when using Amazon EC2 Auto Scaling health checks.
++ If you need something to happen on the instance that is terminating, or on the instance that is starting up, you can use lifecycle hooks. These hooks let you perform a custom action as Amazon EC2 Auto Scaling launches or terminates instances. For more information, see [Amazon EC2 Auto Scaling lifecycle hooks](lifecycle-hooks.md).
++ Amazon EC2 Auto Scaling does not provide a way of removing the Amazon EC2 status checks and scheduled events from its health checks. If you do not want instances to be replaced, we recommend that you suspend the `ReplaceUnhealthy` and `HealthCheck` process for individual Auto Scaling groups. For more information, see [Suspend and resume Amazon EC2 Auto Scaling processes](as-suspend-resume-processes.md).
++ To manually set an unhealthy instance's health status back to `Healthy`, you can try to use the [set-instance-health](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-instance-health.html) command. If you get an error, this is probably because the instance is already terminating. Generally, setting an instance's health status back to `Healthy` with the [set-instance-health](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/set-instance-health.html) command is only useful in cases where either the `ReplaceUnhealthy` process or the `Terminate` process is suspended.
++ If you need to troubleshoot an instance without interference from health checks, you can put the instance in `Standby` state. Amazon EC2 Auto Scaling does not perform health checks on instances that are in the `Standby` state until you put the instances back in service. For more information, see [Temporarily remove instances from your Auto Scaling group](as-enter-exit-standby.md).
++ When your instance is terminated, any associated Elastic IP addresses are disassociated and are not automatically associated with the new instance. You must manually associate the Elastic IP addresses with the new instance, or do it automatically with a lifecycle hook-based solution. For more information, see [Elastic IP addresses](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html) in the *Amazon EC2 User Guide*.
++ Similarly, when your instance is terminated, its attached EBS volumes are detached (or deleted depending on the volume's `DeleteOnTermination` attribute). You must manually attach these EBS volumes to the new instance, or do it automatically with a lifecycle hook-based solution. For more information, see [Attach an Amazon EBS volume to an instance](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-attaching-volume.html) in the *Amazon EBS User Guide*.

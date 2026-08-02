@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_ExternalAccessFindingsStatistics.html
+---
+
+# ExternalAccessFindingsStatistics
+<a name="API_ExternalAccessFindingsStatistics"></a>
+
+Provides aggregate statistics about the findings for the specified external access analyzer.
+
+## Contents
+<a name="API_ExternalAccessFindingsStatistics_Contents"></a>
+
+ ** resourceTypeStatistics **   <a name="accessanalyzer-Type-ExternalAccessFindingsStatistics-resourceTypeStatistics"></a>
+The total number of active cross-account and public findings for each resource type of the specified external access analyzer.
+Type: String to [ResourceTypeDetails](API_ResourceTypeDetails.md) object map
+Valid Keys: `AWS::S3::Bucket | AWS::IAM::Role | AWS::SQS::Queue | AWS::Lambda::Function | AWS::Lambda::LayerVersion | AWS::KMS::Key | AWS::SecretsManager::Secret | AWS::EFS::FileSystem | AWS::EC2::Snapshot | AWS::ECR::Repository | AWS::RDS::DBSnapshot | AWS::RDS::DBClusterSnapshot | AWS::SNS::Topic | AWS::S3Express::DirectoryBucket | AWS::DynamoDB::Table | AWS::DynamoDB::Stream | AWS::IAM::User`
+Required: No
+
+ ** totalActiveFindings **   <a name="accessanalyzer-Type-ExternalAccessFindingsStatistics-totalActiveFindings"></a>
+The number of active findings for the specified external access analyzer.
+Type: Integer
+Required: No
+
+ ** totalArchivedFindings **   <a name="accessanalyzer-Type-ExternalAccessFindingsStatistics-totalArchivedFindings"></a>
+The number of archived findings for the specified external access analyzer.
+Type: Integer
+Required: No
+
+ ** totalResolvedFindings **   <a name="accessanalyzer-Type-ExternalAccessFindingsStatistics-totalResolvedFindings"></a>
+The number of resolved findings for the specified external access analyzer.
+Type: Integer
+Required: No
+
+## See Also
+<a name="API_ExternalAccessFindingsStatistics_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/ExternalAccessFindingsStatistics)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/ExternalAccessFindingsStatistics)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/ExternalAccessFindingsStatistics)

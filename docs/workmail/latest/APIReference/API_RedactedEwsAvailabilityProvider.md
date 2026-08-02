@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_RedactedEwsAvailabilityProvider.html
+---
+
+# RedactedEwsAvailabilityProvider
+<a name="API_RedactedEwsAvailabilityProvider"></a>
+
+**Important**
+End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the WorkMail console or WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
+
+Describes an EWS based availability provider when returned from the service. It does not contain the password of the endpoint.
+
+## Contents
+<a name="API_RedactedEwsAvailabilityProvider_Contents"></a>
+
+ ** EwsEndpoint **   <a name="workmail-Type-RedactedEwsAvailabilityProvider-EwsEndpoint"></a>
+The endpoint of the remote EWS server.
+Type: String
+Length Constraints: Maximum length of 256.
+Pattern: `https?://[A-Za-z0-9.-]+(:[0-9]+)?/.*`
+Required: No
+
+ ** EwsUsername **   <a name="workmail-Type-RedactedEwsAvailabilityProvider-EwsUsername"></a>
+The username used to authenticate the remote EWS server.
+Type: String
+Length Constraints: Maximum length of 256.
+Pattern: `[\u0020-\u00FF]+`
+Required: No
+
+## See Also
+<a name="API_RedactedEwsAvailabilityProvider_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/workmail-2017-10-01/RedactedEwsAvailabilityProvider)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/workmail-2017-10-01/RedactedEwsAvailabilityProvider)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/workmail-2017-10-01/RedactedEwsAvailabilityProvider)

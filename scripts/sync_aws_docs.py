@@ -4,12 +4,12 @@ Sync AWS documentation (docs.aws.amazon.com) into a local, diffable Markdown
 mirror under docs/, and commit any changes to git.
 
 Strategy per page:
-  1. Try the site's native Markdown export (<path>.md, Content-Type: text/markdown).
-  2. Fall back to fetching <path>.html and converting the main content area to
-     Markdown deterministically (fixed BeautifulSoup + markdownify settings).
-  3. Normalize whitespace identically regardless of source, so re-running the
-     script against unchanged upstream content always reproduces byte-identical
-     output (idempotent -> empty `git status`).
+  1. Fetch the site's native Markdown export (<path>.md, Content-Type: text/markdown).
+     Every public docs.aws.amazon.com page serves one; a page that doesn't is
+     logged as an error rather than scraped from HTML.
+  2. Normalize whitespace, so re-running the script against unchanged upstream
+     content always reproduces byte-identical output (idempotent -> empty
+     `git status`).
 
 Discovery: AWS publishes a sitemap index (https://docs.aws.amazon.com/sitemap_index.xml)
 listing ~10,900 per-guide sitemaps across 11 locales. By default only the
@@ -32,12 +32,10 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urlparse
 from xml.etree import ElementTree
 
 import requests
-from bs4 import BeautifulSoup
-from markdownify import markdownify as _markdownify
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
@@ -155,7 +153,12 @@ def discover_pages(sitemap_url: str, timeout: float) -> list[str]:
                 continue
     else:
         pages.extend(locs)
-    return [p for p in pages if urlparse(p).path.endswith(".html")]
+    base_host = urlparse(BASE).netloc
+    return [
+        p
+        for p in pages
+        if urlparse(p).path.endswith(".html") and urlparse(p).netloc == base_host
+    ]
 
 
 # --------------------------------------------------------------------------
@@ -167,59 +170,10 @@ class FetchResult:
     url: str
     local_path: Path
     markdown: str | None
-    source: str  # "md" | "html" | "cached" | "error"
+    source: str  # "md" | "cached" | "error"
     etag: str | None = None
     last_modified: str | None = None
     error: str | None = None
-
-
-NOISE_SELECTORS = [
-    "script",
-    "style",
-    "noscript",
-    "[class^='awsdocs-']",
-]
-NOISE_TAG_PREFIX = "awsdocs-"
-
-
-def _strip_noise(node) -> None:
-    for el in list(node.find_all(True)):
-        name = el.name or ""
-        if name in ("script", "style", "noscript"):
-            el.decompose()
-        elif name.startswith(NOISE_TAG_PREFIX):
-            el.decompose()
-
-
-def _absolutize_links(node, page_url: str) -> None:
-    for el in node.find_all(["a", "img"]):
-        attr = "href" if el.name == "a" else "src"
-        val = el.get(attr)
-        if val:
-            el[attr] = urljoin(page_url, val)
-
-
-def html_to_markdown(html: str, page_url: str) -> str:
-    soup = BeautifulSoup(html, "lxml")
-    main = (
-        soup.select_one("#main-col-body")
-        or soup.select_one("#main-content")
-        or soup.select_one("main")
-        or soup.body
-        or soup
-    )
-    _strip_noise(main)
-    _absolutize_links(main, page_url)
-    md = _markdownify(
-        str(main),
-        heading_style="ATX",
-        bullets="-",
-        escape_asterisks=False,
-        escape_underscores=False,
-        autolinks=False,
-        wrap=False,
-    )
-    return md
 
 
 def normalize_markdown(text: str) -> str:
@@ -248,8 +202,11 @@ def sha256(text: str) -> str:
 
 def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResult:
     local_path = url_to_local_path(url)
-    parsed = urlparse(url)
-    md_url = urljoin(url, parsed.path[: -len(".html")] + ".md")
+    # Plain suffix swap, not urljoin: some sitemap URLs (e.g. the /solutions/
+    # tree) contain a doubled slash right after the domain, and urljoin()
+    # treats a path starting with "//" as a protocol-relative reference,
+    # silently discarding the real host in favor of the first path segment.
+    md_url = url[: -len(".html")] + ".md"
 
     headers = {}
     if cache_entry:
@@ -284,21 +241,13 @@ def fetch_page(url: str, timeout: float, cache_entry: dict | None) -> FetchResul
             last_modified=resp.headers.get("Last-Modified"),
         )
 
-    try:
-        resp = session().get(url, timeout=timeout)
-        resp.raise_for_status()
-    except requests.RequestException as e:
-        return FetchResult(url, local_path, None, "error", error=str(e))
-
-    md_body = html_to_markdown(resp.text, url)
-    body = normalize_markdown(front_matter(url) + md_body)
     return FetchResult(
         url,
         local_path,
-        body,
-        "html",
-        etag=resp.headers.get("ETag"),
-        last_modified=resp.headers.get("Last-Modified"),
+        None,
+        "error",
+        error=f"no markdown export at {md_url} (status {resp.status_code}, "
+        f"content-type {resp.headers.get('Content-Type')!r})",
     )
 
 

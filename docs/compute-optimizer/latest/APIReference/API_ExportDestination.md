@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_ExportDestination.html
+---
+
+# ExportDestination
+<a name="API_ExportDestination"></a>
+
+Describes the destination of the recommendations export and metadata files.
+
+## Contents
+<a name="API_ExportDestination_Contents"></a>
+
+ ** s3 **   <a name="computeoptimizer-Type-ExportDestination-s3"></a>
+An object that describes the destination Amazon Simple Storage Service (Amazon S3) bucket name and object keys of a recommendations export file, and its associated metadata file.
+Type: [S3Destination](API_S3Destination.md) object
+Required: No
+
+## See Also
+<a name="API_ExportDestination_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/compute-optimizer-2019-11-01/ExportDestination)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/compute-optimizer-2019-11-01/ExportDestination)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/compute-optimizer-2019-11-01/ExportDestination)

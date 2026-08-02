@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/quick/latest/userguide/formatting-a-visual.html
+---
+
+# Formatting in Amazon Quick
+<a name="formatting-a-visual"></a>
+
+You choose from a variety of options to format and style your data visualizations. To format a visual, select the visual that you want to format and choose the **Format visual** icon on the upper-right corner of the visual. Once you have the format visual pane open, you can click on different visuals and controls to view formatting data for the specific visual or control. For more information about formatting a visual control, see [Using a control with a parameter in Amazon Quick](parameters-controls.md).
+
+Use the following sections to format and style your content:
+
+**Note**
+Any format changes applied from the field wells are applied only to the selected visual.
+
+**Topics**
++ [Analytics formatting per type in Quick](analytics-format-options.md)
++ [Table and pivot table formatting options in Quick](format-tables-pivot-tables.md)
++ [Adding data bars to tables in Quick](format-data-bars.md)
++ [Adding sparklines to tables in Quick](format-sparklines.md)
++ [Map and geospatial chart formatting options in Quick](geospatial-formatting.md)
++ [Axes and grid lines on visual types in Quick](showing-hiding-axis-grid-tick.md)
++ [Colors in visual types in Quick](changing-visual-colors.md)
++ [Working with field level coloring in Amazon Quick](format-field-colors.md)
++ [Conditional formatting on visual types in Quick](conditional-formatting-for-visuals.md)
++ [KPI options](KPI-options.md)
++ [Labels on visual types in Quick](customizing-visual-labels.md)
++ [Formatting visual numeric data based on language settings in Quick](customizing-visual-language-preferences.md)
++ [Legends on visual types in Quick](customizing-visual-legend.md)
++ [Line and marker styling on line charts in Quick](line-and-marker-styling.md)
++ [Missing data on visual types in Quick](customizing-missing-data-controls.md)
++ [Reference lines on visuals types in Quick](reference-lines.md)
++ [Formatting radar charts in Quick](format-radar-chart.md)
++ [Range and scale on visual types in Quick](changing-visual-scale-axis-range.md)
++ [Small multiples axis options](small-multiples-options.md)
++ [Titles and subtitles on visual types in Quick](customizing-a-visual-title.md)
++ [Tooltips on visual types in Quick](customizing-visual-tooltips.md)

@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ServiceReferenceChanges.html
+---
+
+# ServiceReferenceChanges
+<a name="API_ServiceReferenceChanges"></a>
+
+Describes changes to service references.
+
+## Contents
+<a name="API_ServiceReferenceChanges_Contents"></a>
+
+ ** added **   <a name="ngresiliencehub-Type-ServiceReferenceChanges-added"></a>
+The list of service references that were added.
+Type: Array of [ServiceReference](API_ServiceReference.md) objects
+Required: No
+
+ ** removed **   <a name="ngresiliencehub-Type-ServiceReferenceChanges-removed"></a>
+The list of service references that were removed.
+Type: Array of [ServiceReference](API_ServiceReference.md) objects
+Required: No
+
+## See Also
+<a name="API_ServiceReferenceChanges_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/resiliencehubv2-2026-02-17/ServiceReferenceChanges)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/resiliencehubv2-2026-02-17/ServiceReferenceChanges)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resiliencehubv2-2026-02-17/ServiceReferenceChanges)

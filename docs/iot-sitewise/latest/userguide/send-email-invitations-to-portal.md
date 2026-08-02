@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/send-email-invitations-to-portal.html
+---
+
+# Send email invitations to portal administrators
+<a name="send-email-invitations-to-portal"></a>
+
+**Note**
+The SiteWise Monitor feature is no longer available to new customers. Existing customers can continue to use the service as normal. For more information, see [SiteWise Monitor availability change](https://docs.aws.amazon.com/iot-sitewise/latest/appguide/iotsitewise-monitor-availability-change.html).
+
+You can send email invitations to portal administrators.
+
+1. On the portal details page, in the **Portal administrators** section, select the check boxes for the portal administrators.
+![Portal administrators section of the portal details page with "Send invitations" highlighted.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/sitewise-select-portal-administrator-console.png)
+
+1. Choose **Send invitations**. Your email client opens, and an invitation is populated in the message body.
+
+   You can customize the email before you send it to your portal administrators.

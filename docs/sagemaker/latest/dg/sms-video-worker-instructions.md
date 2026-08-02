@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-video-worker-instructions.html
+---
+
+# Worker Instructions
+<a name="sms-video-worker-instructions"></a>
+
+**Note**
+Amazon SageMaker Ground Truth is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Ground Truth, but we do not plan to introduce new features.
+
+This topic provides an overview of the Ground Truth worker portal and the tools available to complete your video frame labeling task. First, select the type of task you are working on from **Topics**.
+
+**Important**
+It is recommended that you complete your task using a Google Chrome or Firefox web browser.
+
+For adjustment jobs, select the original labeling job task type that produced the labels you are adjusting. Review and adjust the labels in your task as needed.
+
+**Topics**
++ [Navigate the UI](sms-video-worker-instructions-worker-ui-ot.md)
++ [Bulk Edit Label and Frame Attributes](sms-video-frame-worker-instructions-ot-bulk-edit.md)
++ [Tool Guide](sms-video-worker-instructions-tool-guide.md)
++ [Icons Guide](sms-video-worker-instructions-ot-icons.md)
++ [Shortcuts](sms-video-worker-instructions-ot-hot-keys.md)
++ [Understand Release, Stop and Resume, and Decline Task Options](sms-video-worker-instructions-skip-reject-ot.md)
++ [Saving Your Work and Submitting](sms-video-worker-instructions-saving-work-ot.md)
++ [Video Frame Object Tracking Tasks](sms-video-ot-worker-instructions.md)
++ [Video Frame Object Detection Tasks](sms-video-od-worker-instructions.md)

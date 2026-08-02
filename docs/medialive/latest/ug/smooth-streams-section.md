@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/smooth-streams-section.html
+---
+
+# Fields for the encodes
+<a name="smooth-streams-section"></a>
+
+The following fields relate to the encoding of the video, audio, and captions streams (encodes) in the output.
++ **Stream settings** section
+
+For information about creating encodes, see the following sections:
++ [Set up the video encode](creating-a-channel-step6.md)
++ [Set up the audio encodes](creating-a-channel-step7.md)
++  [Set up the captions encodes](creating-a-channel-step8.md)

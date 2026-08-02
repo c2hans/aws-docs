@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-describe-reachability.html
+---
+
+# describe-reachability
+<a name="oct-describe-reachability"></a>
+
+The **describe-reachability** command determines whether the Outposts server can reach the Outpost configuration endpoint in the Region. It requires a working DNS configuration, which you can determine by using [describe-resolve](oct-describe-resolve.md).
+
+**Syntax**
+
+```
+Outpost>describe-reachability
+```
+
+**Parameters**
+This command has no parameters.

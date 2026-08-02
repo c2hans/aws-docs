@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/ssm-sap/latest/userguide/deregister-sap-application.html
+---
+
+# Deregister SAP application
+<a name="deregister-sap-application"></a>
+
+The following steps will guide you through deregistration your SAP HANA application or of your single node setup of SAP ABAP application registered with Systems Manager for SAP.
+
+If a database has not been previously registered with AWS Systems Manager, the deregistration process will result in a `ValidationException`.
+
+## Step 1: Get ApplicationId of your SAP application
+<a name="step1-deregister-application"></a>
+
+ **Command template**
+
+```
+aws ssm-sap list-applications --region <REGION_ID>
+```
+
+Note the `ApplicationId` of your registration.
+
+## Step 2: Deregister SAP application
+<a name="step2-deregister-application"></a>
+
+You can use the AWS CLI command [deregister-application](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-sap/deregister-application.html) (API [DeregisterApplication](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_DeregisterApplication.html)) to deregister your SAP application.
+
+ **Command template**
+
+```
+aws ssm-sap deregister-application --application-id <APPLICATION_ID> --region <REGION>
+```
+
+The parameter `application-id` is required. As the value, use the ApplicationID retrieved in Step 1.
+
+## Step 3: Verify deregistration
+<a name="step3-deregister-application"></a>
+
+Run the command [list-applications](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm-sap/list-applications.html) ([ListApplications](https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListApplications.html) API) to verify your application is not present.

@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_TriggerNodeDetails.html
+---
+
+# TriggerNodeDetails
+<a name="API_TriggerNodeDetails"></a>
+
+The details of a Trigger node present in the workflow.
+
+## Contents
+<a name="API_TriggerNodeDetails_Contents"></a>
+
+ ** Trigger **   <a name="Glue-Type-TriggerNodeDetails-Trigger"></a>
+The information of the trigger represented by the trigger node.
+Type: [Trigger](API_Trigger.md) object
+Required: No
+
+## See Also
+<a name="API_TriggerNodeDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/TriggerNodeDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/TriggerNodeDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/TriggerNodeDetails)

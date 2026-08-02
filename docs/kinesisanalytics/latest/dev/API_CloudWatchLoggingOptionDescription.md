@@ -1,0 +1,48 @@
+---
+source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/dev/API_CloudWatchLoggingOptionDescription.html
+---
+
+After careful consideration, we have decided to discontinue Amazon Kinesis Data Analytics for SQL applications:
+
+1. From **September 1, 2025**, we won't provide any bug fixes for Amazon Kinesis Data Analytics for SQL applications because we will have limited support for it, given the upcoming discontinuation.
+
+2. From **October 15, 2025**, you will not be able to create new Kinesis Data Analytics for SQL applications.
+
+3. We will delete your applications starting **January 27, 2026**. You will not be able to start or operate your Amazon Kinesis Data Analytics for SQL applications. Support will no longer be available for Amazon Kinesis Data Analytics for SQL from that time. For more information, see [Amazon Kinesis Data Analytics for SQL Applications discontinuation](discontinuation.md).
+
+# CloudWatchLoggingOptionDescription
+<a name="API_CloudWatchLoggingOptionDescription"></a>
+
+Description of the CloudWatch logging option.
+
+## Contents
+<a name="API_CloudWatchLoggingOptionDescription_Contents"></a>
+
+ ** LogStreamARN **   <a name="analytics-Type-CloudWatchLoggingOptionDescription-LogStreamARN"></a>
+ARN of the CloudWatch log to receive application messages.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: Yes
+
+ ** RoleARN **   <a name="analytics-Type-CloudWatchLoggingOptionDescription-RoleARN"></a>
+IAM ARN of the role to use to send application messages. Note: To write application messages to CloudWatch, the IAM role used must have the `PutLogEvents` policy action enabled.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: Yes
+
+ ** CloudWatchLoggingOptionId **   <a name="analytics-Type-CloudWatchLoggingOptionDescription-CloudWatchLoggingOptionId"></a>
+ID of the CloudWatch logging option description.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 50.
+Pattern: `[a-zA-Z0-9_.-]+`
+Required: No
+
+## See Also
+<a name="API_CloudWatchLoggingOptionDescription_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/kinesisanalytics-2015-08-14/CloudWatchLoggingOptionDescription)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/kinesisanalytics-2015-08-14/CloudWatchLoggingOptionDescription)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/kinesisanalytics-2015-08-14/CloudWatchLoggingOptionDescription)

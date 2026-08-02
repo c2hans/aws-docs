@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/modular-cloud-studio-on-aws/third-party-module-issues.html
+---
+
+# Third-Party module issues
+<a name="third-party-module-issues"></a>
+
+This solution provides access to AWS Partner modules through the Module Library. For issues related to third-party modules, including: licensing questions, technical support, or implementation assistance, you can contact the partner company directly by:
+
+1. Navigating to the Module Library (see [Module Library](module-library.md))
+
+1. Locating the specific module
+
+1. Clicking **Support Info** to access the partner’s contact information

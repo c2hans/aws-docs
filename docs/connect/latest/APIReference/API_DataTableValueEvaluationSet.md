@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DataTableValueEvaluationSet.html
+---
+
+# DataTableValueEvaluationSet
+<a name="API_DataTableValueEvaluationSet"></a>
+
+A data table value evaluation set.
+
+## Contents
+<a name="API_DataTableValueEvaluationSet_Contents"></a>
+
+ ** AttributeNames **   <a name="connect-Type-DataTableValueEvaluationSet-AttributeNames"></a>
+The set's attribute names.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `^[\p{L}\p{Z}\p{N}\-_.:=@'|]+$`
+Required: Yes
+
+ ** PrimaryValues **   <a name="connect-Type-DataTableValueEvaluationSet-PrimaryValues"></a>
+The set's primary values.
+Type: Array of [PrimaryValue](API_PrimaryValue.md) objects
+Required: No
+
+## See Also
+<a name="API_DataTableValueEvaluationSet_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/DataTableValueEvaluationSet)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/DataTableValueEvaluationSet)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/DataTableValueEvaluationSet)

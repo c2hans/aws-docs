@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/codepipeline/latest/userguide/security-iam-permissions-console.html
+---
+
+# Permissions required to use the console
+<a name="security-iam-permissions-console"></a>
+
+To use in the console, you must have a minimum set of permissions from the following services:
++ AWS Identity and Access Management
++ Amazon Simple Storage Service
+
+These permissions allow you to describe other AWS resources for your AWS account.
+
+Depending on the other services you incorporate into your pipelines, you might need permissions from one or more of the following:
++ AWS CodeCommit
++ AWS CodeBuild
++ CloudFormation
++ AWS CodeDeploy
++ AWS Elastic Beanstalk
++ AWS Lambda
++ AWS OpsWorks
+
+If you create an IAM policy that is more restrictive than the minimum required permissions, the console won't function as intended for users with that IAM policy. To ensure that those users can still use the console, also attach the `AWSCodePipeline_ReadOnlyAccess` managed policy to the user, as described in [AWS managed policies for AWS CodePipeline](managed-policies.md).
+
+You don't need to allow minimum console permissions for users who are making calls to the AWS CLI or the API.

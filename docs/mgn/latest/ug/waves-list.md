@@ -1,0 +1,43 @@
+---
+source_url: https://docs.aws.amazon.com/mgn/latest/ug/waves-list.html
+---
+
+NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
+
+# Manage migration waves
+<a name="waves-list"></a>
+
+The **Waves** page lists all the waves that have been added to AWS Transform MGN. The **Waves** page allows you to manage your waves and perform a variety of commands for one or more waves (such as controlling replication and launching test and cutover instances).
+
+## Interacting with the Waves page
+<a name="waves-list-interacting"></a>
+
+The **Waves** page shows a list of waves. Each row on the list represents a single wave.
+
+The **Waves** page provides key information for each wave under each of the columns on the page.
+
+The columns include:
++  **Selector column** – This blank checkbox selector column allows you to select one or more waves. When a wave is selected, you can interact with the wave through the **Actions** menu, **Edit**, and **Delete** buttons. Selected waves are highlighted.
++  **Wave name** – This column shows the unique wave name for each wave.
++  **Migration status** – This column shows the migration status for each wave.
+  +  **Not started** – If none of the wave's associated servers has started replication yet.
+  +  **In progress** – At least one of the wave's associated applications has started replication and not all of its applications completed migration.
+  +  **Completed** – If all the wave associated applications completed migration (have been cutover).
++  **Alerts** – This column shows whether any alerts exist for the wave.
+
+  A wave that has at least one application that is experiencing significant issues, such as a stall, will display a **Stalled** status.
+
+  An wave that has at least one application that is experiencing a temporary issue such as lag or backlog will display a **Lagging** status.
+
+  A healthy active wave will display a **Healthy** status.
+
+  Archived waves do not display any alerts.
++  **Number of applications** – This column shows the total number of applications associated with each wave.
+
+**Topics**
++ [Interacting with the Waves page](#waves-list-interacting)
++ [Add wave](add-wave.md)
++ [Edit wave](edit-wave.md)
++ [Delete wave](delete-wave.md)
++ [Manage selected waves](wave-actions-menu.md)
++ [Filtering migration waves](waves-filtering.md)

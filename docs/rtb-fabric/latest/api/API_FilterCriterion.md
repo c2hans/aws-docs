@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_FilterCriterion.html
+---
+
+# FilterCriterion
+<a name="API_FilterCriterion"></a>
+
+Describes the criteria for a filter.
+
+## Contents
+<a name="API_FilterCriterion_Contents"></a>
+
+ ** path **   <a name="rtbfabric-Type-FilterCriterion-path"></a>
+The path to filter.
+Type: String
+Required: Yes
+
+ ** values **   <a name="rtbfabric-Type-FilterCriterion-values"></a>
+The value to filter.
+Type: Array of strings
+Array Members: Minimum number of 1 item.
+Required: Yes
+
+## See Also
+<a name="API_FilterCriterion_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rtbfabric-2023-05-15/FilterCriterion)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rtbfabric-2023-05-15/FilterCriterion)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rtbfabric-2023-05-15/FilterCriterion)

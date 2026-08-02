@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [ApplyArchiveRule](API_ApplyArchiveRule.md)
++  [CancelPolicyGeneration](API_CancelPolicyGeneration.md)
++  [CheckAccessNotGranted](API_CheckAccessNotGranted.md)
++  [CheckNoNewAccess](API_CheckNoNewAccess.md)
++  [CheckNoPublicAccess](API_CheckNoPublicAccess.md)
++  [CreateAccessPreview](API_CreateAccessPreview.md)
++  [CreateAnalyzer](API_CreateAnalyzer.md)
++  [CreateArchiveRule](API_CreateArchiveRule.md)
++  [DeleteAnalyzer](API_DeleteAnalyzer.md)
++  [DeleteArchiveRule](API_DeleteArchiveRule.md)
++  [GenerateFindingRecommendation](API_GenerateFindingRecommendation.md)
++  [GetAccessPreview](API_GetAccessPreview.md)
++  [GetAnalyzedResource](API_GetAnalyzedResource.md)
++  [GetAnalyzer](API_GetAnalyzer.md)
++  [GetArchiveRule](API_GetArchiveRule.md)
++  [GetFinding](API_GetFinding.md)
++  [GetFindingRecommendation](API_GetFindingRecommendation.md)
++  [GetFindingsStatistics](API_GetFindingsStatistics.md)
++  [GetFindingV2](API_GetFindingV2.md)
++  [GetGeneratedPolicy](API_GetGeneratedPolicy.md)
++  [ListAccessPreviewFindings](API_ListAccessPreviewFindings.md)
++  [ListAccessPreviews](API_ListAccessPreviews.md)
++  [ListAnalyzedResources](API_ListAnalyzedResources.md)
++  [ListAnalyzers](API_ListAnalyzers.md)
++  [ListArchiveRules](API_ListArchiveRules.md)
++  [ListFindings](API_ListFindings.md)
++  [ListFindingsV2](API_ListFindingsV2.md)
++  [ListPolicyGenerations](API_ListPolicyGenerations.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [StartPolicyGeneration](API_StartPolicyGeneration.md)
++  [StartResourceScan](API_StartResourceScan.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateAnalyzer](API_UpdateAnalyzer.md)
++  [UpdateArchiveRule](API_UpdateArchiveRule.md)
++  [UpdateFindings](API_UpdateFindings.md)
++  [ValidatePolicy](API_ValidatePolicy.md)

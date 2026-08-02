@@ -1,0 +1,87 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/array_intersection.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# ARRAY\_INTERSECTION function
+<a name="array_intersection"></a>
+
+Returns a new array containing only the elements that exist in both input arrays. The function is NULL-safe, meaning it treats NULLs are treated as known objects. The order of elements in the result is not guaranteed.
+
+## Syntax
+<a name="array_intersection-syntax"></a>
+
+```
+ARRAY_INTERSECTION( array1, array2 [, distinct] )
+```
+
+## Arguments
+<a name="array_intersection-arguments"></a>
+
+ *array1*
+A SUPER expression that specifies an array.
+
+ *array2*
+A SUPER expression that specifies an array.
+
+ *distinct*
+A boolean value that specifies whether to return distinct elements only:
++ *distinct* = FALSE: Multi-set semantics apply. Duplicate elements are preserved, and the frequency of each element in the result equals the minimum of its frequencies in the two input arrays.
++ *distinct* = TRUE: Set semantics apply. Only unique elements common to both arrays are returned, with no duplicates.
+The default is FALSE.
+
+## Return type
+<a name="array_intersection-return-type"></a>
+
+The ARRAY\_INTERSECTION function returns a SUPER type.
+
+## Example
+<a name="array_intersection-example"></a>
+
+The following examples show the ARRAY\_INTERSECTION function.
+
+```
+SELECT ARRAY_INTERSECTION(ARRAY('a','b','c'), ARRAY('b','c','d'));
+ array_intersection
+--------------------
+ ["b","c"]
+(1 row)
+```
+
+Multi-set semantics:
+
+```
+SELECT ARRAY_INTERSECTION(ARRAY('a','b','b'), ARRAY('b','b','b'));
+ array_intersection
+--------------------
+ ["b","b"]
+(1 row)
+```
+
+Set semantics:
+
+```
+SELECT ARRAY_INTERSECTION(ARRAY('a','b','b'), ARRAY('b','b','b'), TRUE);
+ array_intersection
+--------------------
+ ["b"]
+(1 row)
+```
+
+NULLs are treated as known object.
+
+```
+SELECT ARRAY_INTERSECTION(ARRAY('a',NULL), ARRAY('b',NULL));
+ array_intersection
+--------------------
+ [null]
+(1 row)
+```
+
+## See also
+<a name="array_intersection-see-also"></a>
++ [ARRAY\_EXCEPT function](array_except.md)
++ [ARRAYS\_OVERLAP function](arrays_overlap.md)
++ [ARRAY\_UNION function](array_union.md)
++ [ARRAY\_DISTINCT function](array_distinct.md)

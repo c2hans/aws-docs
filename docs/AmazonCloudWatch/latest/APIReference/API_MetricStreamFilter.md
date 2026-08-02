@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_MetricStreamFilter.html
+---
+
+# MetricStreamFilter
+<a name="API_MetricStreamFilter"></a>
+
+This structure contains a metric namespace and optionally, a list of metric names, to either include in a metric stream or exclude from a metric stream.
+
+A metric stream's filters can include up to 1000 total names. This limit applies to the sum of namespace names and metric names in the filters. For example, this could include 10 metric namespace filters with 99 metrics each, or 20 namespace filters with 49 metrics specified in each filter.
+
+## Contents
+<a name="API_MetricStreamFilter_Contents"></a>
+
+ ** MetricNames **   <a name="ACW-Type-MetricStreamFilter-MetricNames"></a>
+The names of the metrics to either include or exclude from the metric stream.
+If you omit this parameter, all metrics in the namespace are included or excluded, depending on whether this filter is specified as an exclude filter or an include filter.
+Each metric name can contain only ASCII printable characters (ASCII range 32 through 126). Each metric name must contain at least one non-whitespace character.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
+ ** Namespace **   <a name="ACW-Type-MetricStreamFilter-Namespace"></a>
+The name of the metric namespace for this filter.
+The namespace can contain only ASCII printable characters (ASCII range 32 through 126). It must contain at least one non-whitespace character.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[^:].*`
+Required: No
+
+## See Also
+<a name="API_MetricStreamFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/MetricStreamFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/MetricStreamFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/MetricStreamFilter)

@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial-data-technology-lens/change-management.html
+---
+
+# Change management
+<a name="change-management"></a>
+
+|  MIDAREL03: How do you design your workload to adapt to changes in demand?  |
+| --- |
+|   |
+
+ Manufacturing environments experience variable workloads due to production shifts, seasonal demands, and unforeseen changes. Designing systems that can automatically adjust to these fluctuations improves performance and cost efficiency.
+
+**Topics**
++ [MIDAREL03-BP01 Implement dynamic scaling for shop floor data ingestion pipelines](midarel03-bp01.md)

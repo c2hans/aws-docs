@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_BodySectionRepeatDimensionConfiguration.html
+---
+
+# BodySectionRepeatDimensionConfiguration
+<a name="API_BodySectionRepeatDimensionConfiguration"></a>
+
+Describes the dataset column and constraints for the dynamic values used to repeat the contents of a section. The dataset column is either **Category** or **Numeric** column configuration
+
+## Contents
+<a name="API_BodySectionRepeatDimensionConfiguration_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** DynamicCategoryDimensionConfiguration **   <a name="QS-Type-BodySectionRepeatDimensionConfiguration-DynamicCategoryDimensionConfiguration"></a>
+Describes the **Category** dataset column and constraints around the dynamic values that will be used in repeating the section contents.
+Type: [BodySectionDynamicCategoryDimensionConfiguration](API_BodySectionDynamicCategoryDimensionConfiguration.md) object
+Required: No
+
+ ** DynamicNumericDimensionConfiguration **   <a name="QS-Type-BodySectionRepeatDimensionConfiguration-DynamicNumericDimensionConfiguration"></a>
+Describes the **Numeric** dataset column and constraints around the dynamic values used to repeat the contents of a section.
+Type: [BodySectionDynamicNumericDimensionConfiguration](API_BodySectionDynamicNumericDimensionConfiguration.md) object
+Required: No
+
+## See Also
+<a name="API_BodySectionRepeatDimensionConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/BodySectionRepeatDimensionConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/BodySectionRepeatDimensionConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/BodySectionRepeatDimensionConfiguration)

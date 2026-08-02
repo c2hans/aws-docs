@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query_QueryTemporalRangeMax.html
+---
+
+# QueryTemporalRangeMax
+<a name="API_query_QueryTemporalRangeMax"></a>
+
+Provides insights into the table with the most sub-optimal temporal pruning scanned by your query.
+
+## Contents
+<a name="API_query_QueryTemporalRangeMax_Contents"></a>
+
+ ** TableArn **   <a name="timestream-Type-query_QueryTemporalRangeMax-TableArn"></a>
+The Amazon Resource Name (ARN) of the table which is queried with the largest time range.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: No
+
+ ** Value **   <a name="timestream-Type-query_QueryTemporalRangeMax-Value"></a>
+The maximum duration in nanoseconds between the start and end of the query.
+Type: Long
+Required: No
+
+## See Also
+<a name="API_query_QueryTemporalRangeMax_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/timestream-query-2018-11-01/QueryTemporalRangeMax)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/timestream-query-2018-11-01/QueryTemporalRangeMax)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/timestream-query-2018-11-01/QueryTemporalRangeMax)

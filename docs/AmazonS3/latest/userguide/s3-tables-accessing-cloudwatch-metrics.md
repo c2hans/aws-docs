@@ -1,0 +1,54 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-accessing-cloudwatch-metrics.html
+---
+
+# Accessing CloudWatch metrics
+<a name="s3-tables-accessing-cloudwatch-metrics"></a>
+
+You can monitor S3 Tables metrics using the CloudWatch Console, the AWS CLI, or the CloudWatch API. This section explains how to access your metrics using these different methods.
+
+## Using the S3 console
+<a name="tables-metrics-using-console"></a>
+
+1. Sign in to the AWS Management Console and open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).
+
+1. In the left navigation pane, choose **Table buckets**.
+
+1. In the buckets list, choose the name of the bucket that contains the tables you want to see metrics for.
+
+1. Choose the **Metrics** tab.
+
+1. Choose the **View in CloudWatch** in any metrics pane to navigate to the CloudWatch console and see your available metrics in the `AWS/S3/Tables` namespace.
+
+## Using the AWS CLI
+<a name="tables-metrics-using-cli"></a>
+
+To list metrics for S3 Tables using the AWS CLI, use the `list-metrics` command with the `--namespace` parameter set to `AWS/S3/Tables`:
+
+```
+aws cloudwatch list-metrics --namespace AWS/S3/Tables
+```
+
+To get statistics for a specific S3 Tables metric, use the `get-metric-statistics` command. For example:
+
+```
+aws cloudwatch get-metric-statistics \
+--namespace AWS/S3/Tables \
+--metric-name TotalBucketStorage \
+--dimensions Name=TableBucketName,Value=MyTableBucket \
+--start-time 2025-03-01T00:00:00 \
+--end-time 2025-03-02T00:00:00 \
+--period 86400 \
+--statistics Average
+```
+
+## Best Practices
+<a name="best-practices"></a>
++ When retrieving metrics, set the Period value based on the metric's granularity. For daily metrics (like storage metrics), use 86400 seconds (24 hours). For minute-level metrics (like request metrics), use 60 seconds.
++ Use dimensions appropriately to filter metrics to the desired scope (table bucket, namespace, or individual table level).
++ Consider using metric math to create derived metrics that better match your monitoring needs.
+
+## Related Resources
+<a name="related-resources"></a>
++ [Amazon CloudWatch Concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html)
++ [Using Amazon CloudWatch Dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html)

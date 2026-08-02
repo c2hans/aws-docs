@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_CommentsForComparedCommit.html
+---
+
+# CommentsForComparedCommit
+<a name="API_CommentsForComparedCommit"></a>
+
+Returns information about comments on the comparison between two commits.
+
+## Contents
+<a name="API_CommentsForComparedCommit_Contents"></a>
+
+ ** afterBlobId **   <a name="CodeCommit-Type-CommentsForComparedCommit-afterBlobId"></a>
+The full blob ID of the commit used to establish the after of the comparison.
+Type: String
+Required: No
+
+ ** afterCommitId **   <a name="CodeCommit-Type-CommentsForComparedCommit-afterCommitId"></a>
+The full commit ID of the commit used to establish the after of the comparison.
+Type: String
+Required: No
+
+ ** beforeBlobId **   <a name="CodeCommit-Type-CommentsForComparedCommit-beforeBlobId"></a>
+The full blob ID of the commit used to establish the before of the comparison.
+Type: String
+Required: No
+
+ ** beforeCommitId **   <a name="CodeCommit-Type-CommentsForComparedCommit-beforeCommitId"></a>
+The full commit ID of the commit used to establish the before of the comparison.
+Type: String
+Required: No
+
+ ** comments **   <a name="CodeCommit-Type-CommentsForComparedCommit-comments"></a>
+An array of comment objects. Each comment object contains information about a comment on the comparison between commits.
+Type: Array of [Comment](API_Comment.md) objects
+Required: No
+
+ ** location **   <a name="CodeCommit-Type-CommentsForComparedCommit-location"></a>
+Location information about the comment on the comparison, including the file name, line number, and whether the version of the file where the comment was made is BEFORE or AFTER.
+Type: [Location](API_Location.md) object
+Required: No
+
+ ** repositoryName **   <a name="CodeCommit-Type-CommentsForComparedCommit-repositoryName"></a>
+The name of the repository that contains the compared commits.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[\w\.-]+`
+Required: No
+
+## See Also
+<a name="API_CommentsForComparedCommit_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/codecommit-2015-04-13/CommentsForComparedCommit)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/codecommit-2015-04-13/CommentsForComparedCommit)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/codecommit-2015-04-13/CommentsForComparedCommit)

@@ -1,0 +1,174 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/sesv2_example_sesv2_DeleteContactList_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `DeleteContactList` with an AWS SDK
+<a name="sesv2_example_sesv2_DeleteContactList_section"></a>
+
+The following code examples show how to use `DeleteContactList`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Newsletter scenario](sesv2_example_sesv2_NewsletterWorkflow_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
+
+```
+    /// <summary>
+    /// Deletes a contact list and all contacts within it.
+    /// </summary>
+    /// <param name="contactListName">The name of the contact list to delete.</param>
+    /// <returns>True if successful.</returns>
+    public async Task<bool> DeleteContactListAsync(string contactListName)
+    {
+        var request = new DeleteContactListRequest
+        {
+            ContactListName = contactListName
+        };
+
+        try
+        {
+            var response = await _sesClient.DeleteContactListAsync(request);
+            return response.HttpStatusCode == HttpStatusCode.OK;
+        }
+        catch (ConcurrentModificationException ex)
+        {
+            Console.WriteLine($"The contact list {contactListName} is being modified by another operation or thread.");
+            Console.WriteLine(ex.Message);
+        }
+        catch (NotFoundException ex)
+        {
+            Console.WriteLine($"The contact list {contactListName} does not exist.");
+            Console.WriteLine(ex.Message);
+        }
+        catch (TooManyRequestsException ex)
+        {
+            Console.WriteLine("Too many requests were made. Please try again later.");
+            Console.WriteLine(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred while deleting the contact list: {ex.Message}");
+        }
+
+        return false;
+    }
+```
++  For API details, see [DeleteContactList](https://docs.aws.amazon.com/goto/DotNetSDKV3/sesv2-2019-09-27/DeleteContactList) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
+
+```
+    try {
+      // Delete the contact list
+      DeleteContactListRequest deleteContactListRequest = DeleteContactListRequest.builder()
+          .contactListName(CONTACT_LIST_NAME)
+          .build();
+
+      sesClient.deleteContactList(deleteContactListRequest);
+
+      System.out.println("Contact list deleted: " + CONTACT_LIST_NAME);
+    } catch (NotFoundException e) {
+      // If the contact list does not exist, log the error and proceed
+      System.out.println("Contact list not found. Skipping deletion...");
+    } catch (Exception e) {
+      System.err.println("Error occurred while deleting the contact list: " + e.getMessage());
+      e.printStackTrace();
+    }
+```
++  For API details, see [DeleteContactList](https://docs.aws.amazon.com/goto/SdkForJavaV2/sesv2-2019-09-27/DeleteContactList) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
+
+```
+def main():
+    """
+    The main function that orchestrates the execution of the workflow.
+    """
+    print(INTRO)
+    ses_client = boto3.client("sesv2")
+    workflow = SESv2Workflow(ses_client)
+    try:
+        workflow.prepare_application()
+        workflow.gather_subscriber_email_addresses()
+        workflow.send_coupon_newsletter()
+        workflow.monitor_and_review()
+    except ClientError as e:
+        print_error(e)
+    workflow.clean_up()
+
+class SESv2Workflow:
+    """
+    A class to manage the SES v2 Coupon Newsletter Workflow.
+    """
+
+    def __init__(self, ses_client, sleep=True):
+        self.ses_client = ses_client
+        self.sleep = sleep
+
+        try:
+            self.ses_client.delete_contact_list(ContactListName=CONTACT_LIST_NAME)
+            print(f"Contact list '{CONTACT_LIST_NAME}' deleted successfully.")
+        except ClientError as e:
+            # If the contact list doesn't exist, skip and proceed
+            if e.response["Error"]["Code"] == "NotFoundException":
+                print(f"Contact list '{CONTACT_LIST_NAME}' does not exist.")
+            else:
+                print(e)
+```
++  For API details, see [DeleteContactList](https://docs.aws.amazon.com/goto/boto3/sesv2-2019-09-27/DeleteContactList) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ Rust ]
+
+**SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
+
+```
+        match self
+            .client
+            .delete_contact_list()
+            .contact_list_name(CONTACT_LIST_NAME)
+            .send()
+            .await
+        {
+            Ok(_) => writeln!(self.stdout, "Contact list deleted successfully.")?,
+            Err(e) => return Err(anyhow!("Error deleting contact list: {e}")),
+        }
+```
++  For API details, see [DeleteContactList](https://docs.rs/aws-sdk-sesv2/latest/aws_sdk_sesv2/client/struct.Client.html#method.delete_contact_list) in *AWS SDK for Rust API reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
+
+```
+    TRY.
+        lo_se2->deletecontactlist(
+          iv_contactlistname = iv_contact_list_name ).
+        MESSAGE 'Contact list deleted successfully.' TYPE 'I'.
+      CATCH /aws1/cx_se2notfoundexception.
+        MESSAGE 'Contact list not found.' TYPE 'I'.
+      CATCH /aws1/cx_se2badrequestex INTO DATA(lo_bad_request).
+        MESSAGE 'Bad request.' TYPE 'I'.
+        RAISE EXCEPTION lo_bad_request.
+    ENDTRY.
+```
++  For API details, see [DeleteContactList](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

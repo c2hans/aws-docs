@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/pinpoint_code_examples_actions.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Actions for Amazon Pinpoint using AWS SDKs
+<a name="pinpoint_code_examples_actions"></a>
+
+The following code examples demonstrate how to perform individual Amazon Pinpoint actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
+
+These excerpts call the Amazon Pinpoint API and are code excerpts from larger programs that must be run in context. You can see actions in context in [Scenarios for Amazon Pinpoint using AWS SDKs](pinpoint_code_examples_scenarios.md).
+
+ The following examples include only the most commonly used actions. For a complete list, see the [Amazon Pinpoint API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference/welcome.html).
+
+**Topics**
++ [`CreateApp`](pinpoint_example_pinpoint_CreateApp_section.md)
++ [`CreateCampaign`](pinpoint_example_pinpoint_CreateCampaign_section.md)
++ [`CreateExportJob`](pinpoint_example_pinpoint_CreateExportJob_section.md)
++ [`CreateImportJob`](pinpoint_example_pinpoint_CreateImportJob_section.md)
++ [`CreateSegment`](pinpoint_example_pinpoint_CreateSegment_section.md)
++ [`DeleteApp`](pinpoint_example_pinpoint_DeleteApp_section.md)
++ [`DeleteEndpoint`](pinpoint_example_pinpoint_DeleteEndpoint_section.md)
++ [`GetEndpoint`](pinpoint_example_pinpoint_GetEndpoint_section.md)
++ [`GetSegments`](pinpoint_example_pinpoint_GetSegments_section.md)
++ [`GetSmsChannel`](pinpoint_example_pinpoint_GetSmsChannel_section.md)
++ [`GetUserEndpoints`](pinpoint_example_pinpoint_GetUserEndpoints_section.md)
++ [`SendMessages`](pinpoint_example_pinpoint_SendMessages_section.md)
++ [`UpdateEndpoint`](pinpoint_example_pinpoint_UpdateEndpoint_section.md)

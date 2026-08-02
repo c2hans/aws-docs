@@ -1,0 +1,62 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_ListRoleTags_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListRoleTags` with a CLI
+<a name="iam_example_iam_ListRoleTags_section"></a>
+
+The following code examples show how to use `ListRoleTags`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list the tags attached to a role**
+The following `list-role-tags` command retrieves the list of tags associated with the specified role.
+
+```
+aws iam list-role-tags \
+    --role-name {{production-role}}
+```
+Output:
+
+```
+{
+    "Tags": [
+        {
+            "Key": "Department",
+            "Value": "Accounting"
+        },
+        {
+            "Key": "DeptID",
+            "Value": "12345"
+        }
+    ],
+    "IsTruncated": false
+}
+```
+For more information, see [Tagging IAM resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *AWS IAM User Guide*.
++  For API details, see [ListRoleTags](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-role-tags.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example fetches the tag associated with the role..**
+
+```
+Get-IAMRoleTagList -RoleName MyRoleName
+```
++  For API details, see [ListRoleTags](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example fetches the tag associated with the role..**
+
+```
+Get-IAMRoleTagList -RoleName MyRoleName
+```
++  For API details, see [ListRoleTags](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

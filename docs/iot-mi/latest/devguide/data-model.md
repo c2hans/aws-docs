@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/data-model.html
+---
+
+# Data models
+<a name="data-model"></a>
+
+A data model represents the organizational hierarchy of how data is organized within a system. Additionally, it supports end-to-end communication across your entire device implementation. For Managed Integrations, there are two data models used. The Managed Integrations data model and the AWS implementation of the Matter Data Model. They have similarities, but also have subtle differences that are outlined in the following topics.
+
+For third-party devices, both data models are used for communication between the end user, Managed Integrations, and the third-party cloud provider. To translate messages such as device commands and device events from the two data models, the Cloud-to-Cloud Connector functionality is leveraged.
+
+**Topics**
++ [Managed Integrations data model](managedintegrations-data-model.md)
++ [AWS implementation of the Matter data model](matter-data-model.md)
++ [Data model schemas](data-model-schemas.md)

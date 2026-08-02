@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_FrameResolution.html
+---
+
+# FrameResolution
+<a name="API_FrameResolution"></a>
+
+ The frame resolution used by the video stream.
+
+## Contents
+<a name="API_FrameResolution_Contents"></a>
+
+ ** frameHeight **   <a name="mediaconnect-Type-FrameResolution-frameHeight"></a>
+ The number of pixels in the height of the video frame.
+Type: Integer
+Required: Yes
+
+ ** frameWidth **   <a name="mediaconnect-Type-FrameResolution-frameWidth"></a>
+ The number of pixels in the width of the video frame.
+Type: Integer
+Required: Yes
+
+## See Also
+<a name="API_FrameResolution_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/FrameResolution)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/FrameResolution)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/FrameResolution)

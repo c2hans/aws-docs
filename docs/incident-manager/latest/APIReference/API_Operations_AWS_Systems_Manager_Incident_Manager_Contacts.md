@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/incident-manager/latest/APIReference/API_Operations_AWS_Systems_Manager_Incident_Manager_Contacts.html
+---
+
+# AWS Systems Manager Incident Manager Contacts
+<a name="API_Operations_AWS_Systems_Manager_Incident_Manager_Contacts"></a>
+
+The following actions are supported by AWS Systems Manager Incident Manager Contacts:
++  [AcceptPage](API_SSMContacts_AcceptPage.md)
++  [ActivateContactChannel](API_SSMContacts_ActivateContactChannel.md)
++  [CreateContact](API_SSMContacts_CreateContact.md)
++  [CreateContactChannel](API_SSMContacts_CreateContactChannel.md)
++  [CreateRotation](API_SSMContacts_CreateRotation.md)
++  [CreateRotationOverride](API_SSMContacts_CreateRotationOverride.md)
++  [DeactivateContactChannel](API_SSMContacts_DeactivateContactChannel.md)
++  [DeleteContact](API_SSMContacts_DeleteContact.md)
++  [DeleteContactChannel](API_SSMContacts_DeleteContactChannel.md)
++  [DeleteRotation](API_SSMContacts_DeleteRotation.md)
++  [DeleteRotationOverride](API_SSMContacts_DeleteRotationOverride.md)
++  [DescribeEngagement](API_SSMContacts_DescribeEngagement.md)
++  [DescribePage](API_SSMContacts_DescribePage.md)
++  [GetContact](API_SSMContacts_GetContact.md)
++  [GetContactChannel](API_SSMContacts_GetContactChannel.md)
++  [GetContactPolicy](API_SSMContacts_GetContactPolicy.md)
++  [GetRotation](API_SSMContacts_GetRotation.md)
++  [GetRotationOverride](API_SSMContacts_GetRotationOverride.md)
++  [ListContactChannels](API_SSMContacts_ListContactChannels.md)
++  [ListContacts](API_SSMContacts_ListContacts.md)
++  [ListEngagements](API_SSMContacts_ListEngagements.md)
++  [ListPageReceipts](API_SSMContacts_ListPageReceipts.md)
++  [ListPageResolutions](API_SSMContacts_ListPageResolutions.md)
++  [ListPagesByContact](API_SSMContacts_ListPagesByContact.md)
++  [ListPagesByEngagement](API_SSMContacts_ListPagesByEngagement.md)
++  [ListPreviewRotationShifts](API_SSMContacts_ListPreviewRotationShifts.md)
++  [ListRotationOverrides](API_SSMContacts_ListRotationOverrides.md)
++  [ListRotations](API_SSMContacts_ListRotations.md)
++  [ListRotationShifts](API_SSMContacts_ListRotationShifts.md)
++  [ListTagsForResource](API_SSMContacts_ListTagsForResource.md)
++  [PutContactPolicy](API_SSMContacts_PutContactPolicy.md)
++  [SendActivationCode](API_SSMContacts_SendActivationCode.md)
++  [StartEngagement](API_SSMContacts_StartEngagement.md)
++  [StopEngagement](API_SSMContacts_StopEngagement.md)
++  [TagResource](API_SSMContacts_TagResource.md)
++  [UntagResource](API_SSMContacts_UntagResource.md)
++  [UpdateContact](API_SSMContacts_UpdateContact.md)
++  [UpdateContactChannel](API_SSMContacts_UpdateContactChannel.md)
++  [UpdateRotation](API_SSMContacts_UpdateRotation.md)

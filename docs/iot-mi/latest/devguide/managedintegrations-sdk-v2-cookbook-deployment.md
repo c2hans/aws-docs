@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/iot-mi/latest/devguide/managedintegrations-sdk-v2-cookbook-deployment.html
+---
+
+# Install and validate the managed integrations Hub SDK
+<a name="managedintegrations-sdk-v2-cookbook-deployment"></a>
+
+Choose between the following deployment methods to install the managed integrations Hub SDK on your devices—AWS IoT Greengrass for automated deployment or a manual script installation. This section describes the setup and validation steps for both approaches.
+
+**Topics**
++ [Install the Hub SDK with AWS IoT Greengrass](managedintegrations-sdk-v2-cookbook-deployment-gg.md)
++ [Deploy the Hub SDK with a script](managedintegrations-sdk-v2-cookbook-deployment-nogg.md)
++ [Deploy Hub SDK with systemd](managedintegrations-sdk-v2-cookbook-deployment-hub-deployment-scripts.md)

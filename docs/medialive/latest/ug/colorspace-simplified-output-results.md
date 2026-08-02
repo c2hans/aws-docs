@@ -1,0 +1,89 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html
+---
+
+# Results for different color space handling
+<a name="colorspace-simplified-output-results"></a>
+
+This section describes how MediaLive handles the color space and color space metadata that it encounters in the source input, depending on how you set up the color space in the output.
+
+**Topics**
++ [General process for handling color space conversion](#color-space-simplified-results-general)
++ [Result when passing through color space](#colorspace-simplified-output-passthrough)
++ [Result when converting color space to SDR](#color-space-simplified-output-sdr)
++ [Result when converting color space to HDR10](#colorspace-simplified-output-hdr10)
++ [Result when converting color space to Dolby Vision 8.1](#color-space-simplified-output-dolby81)
+
+## General process for handling color space conversion
+<a name="color-space-simplified-results-general"></a>
+
+In an output that specifies to convert the color space, MediaLive performs the following steps on each video frame in the output.
+
+**Initial verifications**
++ MediaLive verifies that the source video meets the [input requirements](color-space-simplified-supported-inputs.md) and that it is in a supported color space. If it fails this verification, MediaLive always passes through the color space.
++ If the source video does meet the requirements, MediaLive verifies that you have [correctly configured](color-space-simplified-output-handling.md) the output video and codec. If it fails this verification, MediaLive uses the specified codec, but it passes through the color space.
++ MediaLive determines if the channel has been configured to [use 3D LUTs files](color-space-simplified-output-handling.md#color-space-simplified-output-configure-lut).
+
+**Handling with 3D LUTs files configured**
+
+MediaLive looks at the source and output color space for each frame.
++ If the source and color space are identical, MediaLive doesn't change the color space and therefore doesn't look for a 3D LUTs file. For example, if the source is HDR10 and you set up an output for HDR10, MediaLive leaves the color space as it is in the source.
++ If the source and color space are different, MediaLive looks for a file that corresponds to the source/output color space combination:
+  + If it finds a file, it uses that file for conversion.
+  + If it doesn't find a file, it converts the color space using the standard mechanism.
+
+**Handling without 3D LUTs files configured**
+
+If the channel hasn't been configured to use 3D LUTs files, then MediaLive converts the color space using the standard mechanism.
+
+For detailed information about the results of each kind of source/output conversion, see the sections that follow.
+
+## Result when passing through color space
+<a name="colorspace-simplified-output-passthrough"></a>
+
+Read this section if you set up one or more outputs to [pass through the color space](color-space-simplified-output-handling.md#colorspace-simplified-output-setup-passthrough). The following table shows how MediaLive handles each type of color space that it encounters in the source.
+
+|  Color space that MediaLive encounters  |  How MediaLive handles the color space  |
+| --- | --- |
+| Content in any color space that MediaLive supports | Doesn't touch the color space or brightness in the output.<br />Passes through any of the three color format metadata fields that are present. |
+
+## Result when converting color space to SDR
+<a name="color-space-simplified-output-sdr"></a>
+
+Read this section if you set up one or more outputs to [convert the color space](color-space-simplified-output-handling.md#colorspace-simplified-output-setup-convert) to Rec. 601 or Rec. 709. The following table shows how MediaLive handles each type of color space that it encounters in the source.
+
+- ** Content in the same SDR color space **
+  -  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)
+
+- ** Content in the other SDR color space **
+  -  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)
+
+- **Content in HDR10**
+  - When the output codec is H.264 and if you have enabled enhanced VQ, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.<br />If you haven't enabled enhanced VQ, MediaLive doesn't convert anything. It passes through the color space metadata, any brightness metadata, and any display metadata.
+  - When the output codec is AV1 or H.265, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.
+
+- **Content in HLG**
+  - When the output codec is H.264 and if you have enabled enhanced VQ, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.<br />If you haven't enabled enhanced VQ, MediaLive doesn't convert anything. It passes through the color space metadata, and any brightness metadata.
+  - When the output codec is AV1 or H.265, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.
+
+## Result when converting color space to HDR10
+<a name="colorspace-simplified-output-hdr10"></a>
+
+Read this section if you set up one or more outputs to [convert the color space](color-space-simplified-output-handling.md#colorspace-simplified-output-setup-convert) to HDR10. The following table shows how MediaLive handles each type of color space that it encounters in the source.
+
+|  Color space that MediaLive encounters  |  How MediaLive handles the color space  |
+| --- | --- |
+| Content in an SDR color space | [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)There is no change to the pixel values of the content. In effect, this conversion fits the smaller SDR color space into the larger HDR color space and maps the pixels to new code values that represent the same color. <br />The conversion doesn't actually make the existing color richer. However, the bright parts of the content are brighter, and the dark parts are darker. |
+| Content in HDR10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)  |
+| Content in HLG |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)  |
+
+## Result when converting color space to Dolby Vision 8.1
+<a name="color-space-simplified-output-dolby81"></a>
+
+Read this section if you set up one or more outputs to [convert the color space](color-space-simplified-output-handling.md#colorspace-simplified-output-setup-convert) to Dolby Vision 8.1. The following table shows how MediaLive handles each type of color space that it encounters in the source.
+
+|  Color space that MediaLive encounters  |  How MediaLive handles the color space  |
+| --- | --- |
+| Content in an SDR color space | [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)There is no change to the pixel values of the content. In effect, this conversion fits the smaller SDR color space into the larger HDR color space and maps the pixels to new code values that represent the same color. <br />The conversion doesn't actually make the existing color richer. However, the bright parts of the content are brighter, and the dark parts are darker. |
+| Content in HDR10 | MediaLive makes the following changes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)After the conversion, the color space hasn't changed. However, the bright parts of the content are brighter, and the dark parts are darker. |
+| Content in HLG |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-simplified-output-results.html)  |

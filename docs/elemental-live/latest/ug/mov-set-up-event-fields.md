@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/mov-set-up-event-fields.html
+---
+
+# Fields for a MOV asset
+<a name="mov-set-up-event-fields"></a>
+
+| Field on web interface | Tag in the XML | Type | Description |
+| --- | --- | --- | --- |
+| Insertion Mode | <insertion\_mode> | String | Choose MOV. |
+| Input | <uri> | String | The location and file name of the MOV file.<br />For Amazon S3, use `sse=true` to turn on Amazon S3 Server Side Encryption (SSE) and `rrs=true `to turn on Reduced Redundancy Storage (RRS). Default values for RRS and SSE are `false`. |
+| Username Password | <username><password> |  | If access to your local or mounted directory requires a user name and password, click the lock icon next to the **Input** field to show the **Username** and **Password** fields.<br />For Amazon S3, enter the access key ID in the user name field. Enter the secret access key in the password field. |
+| Left | <image\_x> | Integer | Placement of the left edge of the motion overlay relative to the left edge of the video frame, in pixels. 0 is the left edge of the frame.<br />Take note of the width of the motion overlay and make sure that the position of the left edge of the motion overlay does not cause the right edge to be cropped. |
+| Top | <image\_y> | Integer | Placement of the top edge of the motion overlay relative to the top edge of the video frame, in pixels. 0 is the top edge of the frame. Default 0.<br />Take note of the height of the motion overlay and make sure that the position of the top edge of the motion overlay does not cause the bottom edge to be cropped. |
+| ActionTime | <action\_time> | String | The start time for the motion overlay. Specify the start time in one of the formats discussed in detail below this table. |
+| Loop Input | <loop\_input> | Boolean |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/mov-set-up-event-fields.html)  |
+| Full Frame | <full\_frame> | Boolean | Expand the motion overlay to fit the video frame. In this case, make sure Left and Top are set to 0.<br />If this field is selected and the motion overlay has a different aspect ratio to the underlying video, the motion overlay will be scaled until one of the following applies:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/mov-set-up-event-fields.html)<br />Note that the **Stretch to output** field in the **Stream** section does not affect the motion overlay; even if the video is stretched, the motion overlay is not stretched. |
+| Active | <active> | Boolean | Always select this box when initially setting up the motion overlay.<br />After the initial setup, the value of this tag can be changed via the REST API to manage the content and behavior of the motion overlay. |
+| Enable REST Control | <enable\_rest> | Boolean | Check this field only if you plan to manage motion overlays via the REST API, after this initial setup via the web interface. Typically, you will want this tag to be true. |
+
+**Action time formats**
+
+**Option 1: ** Timecode format (HH:MM:SS:FF).
+
+The value to enter for HH:MM:SS:FF depends on the method used to calculate the *output timecode*. This method is specified in the **Timecode Config > Source** field. Identify the Source method set for your event, then set the action time to match the timecode of the frame where you want the action to occur.
++ If **Source** is **Embedded**: The output timecode is extracted from the timecode that is carried with the input media. That timecode becomes the output timecode for the first transcoded frame. Then the output timecode counts up with each successive frame in the entire output. For example, 10:24:25:20, 10:24:25:21, and so on.
++  If **Source** is **Start at 0**: The output timecode for the first frame is 00:00:00:00 and then the output timecode counts up with each successive frame in the entire output. For example, 00:00:00;01: 00;00:00:02, and so on.
++ If **Source** is **System Clock **or **Local System Clock**: The output timecode for the first frame is the system time at which the frame is decoded. Then the output timecode counts up with each successive frame in the entire output. For example, if the first frame is decoded at 09:45:51, then that timecode is 09:45:51:01. The timecode for the next frame is 09:45:51:02, and so on.
++ If **Source** is **Specified Start**: The output timecode for the first frame is the time you specified when you selected this option as the timecode source. Then the output timecode counts up with each successive frame in the entire output. For example, if you set the time to 15:30;00, then the timecode for the first frame is 15;30:00:01, and so on.
++ If **Source** is **External Reference Connector**: The timecode is extracted from external LTC source. That timecode becomes the output timecode for the first transcoded frame. Then the output timecode counts up with each successive frame in the entire output. For example, the timecode for the first frame is 20:03:19:01, then 20:03:19:01, and so on.
+
+**Option 2:** ISO 8601 UTC time with no dashes or colons. For example, 20160102T030405.678Z. In this case, the start time for every motion overlay will be the UTC time.
+
+**Option 3:** You can only use this option while adding or modifying a motion overlay in a running event. Set the `action_time` tag to an empty string to set the start time to “now”. With this option, the start time is never exact. You cannot use this option when creating an event or modifying a non-running event.

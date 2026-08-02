@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.html
+---
+
+# Test set columns supported by Test Workbench
+<a name="file-input-test-sets"></a>
+
+Below is the complete list of test set columns supported by Test Workbench and the instruction on how to use them with Amazon Lex V2.
+
+| Column Name | Test set type | Value Type | Multiple Columns Support | Description |
+| --- | --- | --- | --- | --- |
+| Line Number | Text and Audio | Number | No | This is a user column which is ignored by Amazon Lex V2. It is intended to help a test set author to sort and filter the test-set rows. "Line \#" can be used as an alternative column name.  |
+| Conversation Number | Text and Audio | Number | No | This column allows you to put rows in a conversation together. "Conversation \#" can be used as an alternative column name.  |
+| Source | Text and Audio | Enum ("User", "Agent") | No | The value in this column indicates if the row is for a user or an agent. "Conversation Participant" can be used as an alternative column name.  |
+| Input | Text | String | No | This column is used to add the transcript for text test set. Text input should be used in User rows. The Agent prompt should be used in Agent rows. |
+| Expected Transcription | Audio | String | No | This column is used to add the transcript for the audio test set. Expected transcription of the audio file should be used in User rows with audio input. DTMF input can be used in User rows with DTMF input. The Agent prompt should be used in Agent rows. |
+| S3 Audio Location | Audio | String | No | This column is used to add the audio file location and is applicable only to audio test sets. The S3 path should be used in the User rows with the audio input. This field should be left empty in User rows with DTMF input. This field should be left empty in Agent rows. |
+| Input Context Tag | Text and Audio | String | Yes | This column is used to provide name of an input context which will be used in input to Lex while executing the row in the test set. This refers to input context in [Setting intent context for your Lex V2 bot](https://docs.aws.amazon.com/lexv2/latest/dg/context-mgmt-active-context.html). Note that Test Workbench only supports name of context. It does not support the parameters in a context. Multiple columns named such as 'Input Context Tag 1', 'Input Context Tag 2', and so on, may be used. |
+| Request Attribute | Text and Audio | String | Yes | This column is used to provide a request attribute which will be used in input to Lex while executing the row in the test set. Value in a column should be provided in format `<request-attribute-name> = <request-attribute-value>`. Spaces can be added around '=' for readability. For example: request-attribute-foo = this is a dummy response request-attribute-foo = 'this is a "dummy response"' request-attribute-foo = "this is a 'dummy response'". Multiple columns named such as 'Request Attribute 1', 'Request Attribute 2', and so on, may be used. |
+| Session Attribute | Text and Audio | String | Yes | This column is used to provide a session attribute which will be used in input to Lex while executing the row in the test set.[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.html) |
+| RunTime Hint | Text and Audio | String | Yes | This column is used to provide a Runtime Hint for a slot within an intent which will be used in input to Lex while executing the row in the test set. Below are examples:[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.html) |
+| Barge In | Audio | Boolean | No | This column is used specify if Test Workbench should barge-in when sending audio file to Lex Runtime for the row in the test set.[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.html) |
+| Expected Output Intent | Text and Audio | String | No | This column is used specify name of an intent expected in output from Lex for the row in the test set. |
+| Expected Output Slot | Text and Audio | String | Yes | This column is used to provide a slot value expected in output from Lex while executing the row in the test set.[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.html) |
+| Expected Output Context Tag | Text and Audio | String | Yes | This column is used to specify name of an output context expected in output from Lex for the row in the test set.[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/file-input-test-sets.html) |

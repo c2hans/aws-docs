@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/estimate-examples.html
+---
+
+# Estimate examples for services
+<a name="estimate-examples"></a>
+
+This section provides examples and tutorials that show how you can use AWS Pricing Calculator to generate estimates for certain services.
+
+**Topics**
++ [Generating Amazon EC2 estimates](ec2-estimates.md)
++ [Generating estimates for Windows Servers and SQL Servers on EC2](windows-workload-estimates.md)
++ [Generating estimates for Windows Servers and SQL Servers on EC2 Dedicated Hosts](windows-workload-ec2.md)
++ [Generating Microsoft estimates with AWS Modernization Calculator](modernization-calculator-microsoft-workloads.md)

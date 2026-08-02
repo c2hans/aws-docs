@@ -1,0 +1,74 @@
+---
+source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html
+---
+
+# Calculating resiliency scores
+<a name="calculate-score"></a>
+
+The tables in this section explains the formulas used by AWS Resilience Hub to determine the scoring components of each recommendation type and the resiliency score of your application. All the resultant values determined by AWS Resilience Hub for scoring components of each recommendation type and the resiliency score of your application are rounded to their nearest point. For example, if two out of three alarms were implemented, the score would be 13.33 ((2/3) \* 20) points. This value will be rounded to 13 points. For more information about weights used in the formulas within the tables, see [Weights](#weight) section.
+
+Some of the scoring components can be obtained only through the `ScoringComponentResiliencyScore` API. For more information about this API, see [ScoringComponentResiliencyScore](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ScoringComponentResiliencyScore.html).
+
+**Tables**
++ [**Formulas to calculate the scoring component of each recommendation type**](#recommendation-type-coverage)
++ [**Formula to calculate the resiliency score**](#resiliency-score)
++ [**Formulas to calculate resiliency score for AppComponents and disruption types**](#resiliency-score-AppComponents-disruption-types)
+
+The following table explains the formulas used by AWS Resilience Hub to calculate the scoring component of each recommendation type.
+
+**Formulas to calculate the scoring component of each recommendation type**
+
+| Scoring component | Description | Formula | Example |
+| --- | --- | --- | --- |
+| Test coverage (T) | A normalized score (0 -100 points) based on the number of tests that were successfully implemented and excluded, out of the total number of AWS Resilience Hub recommended tests. To calculate the resiliency score, the recommended tests must have run successfully in the last 30 days for AWS Resilience Hub to consider it as implemented.  | T = ((Total number of tests implemented) \+ (Total number of tests excluded)) / (Total number of tests recommended)Parts of the formula are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html) | If you have implemented 10 and excluded 5 tests out of 20 AWS Resilience Hub recommended tests, the test coverage is calculated as follows:`T = (10 + 5) / 20`<br />That is, `T = .75 or 75 points` |
+| Alarms coverage (A) | A normalized score (0 -100 points) based on the number of Amazon CloudWatch alarms that were successfully implemented and excluded, out of the total number of AWS Resilience Hub recommended Amazon CloudWatch alarms. To calculate the resiliency score, the recommended alarms should be in **Ready** state for AWS Resilience Hub to consider it as implemented.  | A = ((Total number of alarms implemented) \+ (Total number of alarms excluded)) / (Total number of alarms recommended)Parts of the formula are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html) | If you have implemented 10 and excluded 5 Amazon CloudWatch alarms out of 20 AWS Resilience Hub recommended Amazon CloudWatch alarms, the Amazon CloudWatch alarms coverage is calculated as follows:`A = (10 + 5) / 20`<br />That is, `A = .75 or 75 points` |
+| SOP coverage (S) | A normalized score (0 -100 points) based on the number of SOPs that were successfully implemented and excluded, out of the total number of AWS Resilience Hub recommended SOPs. | S = ((Total number of SOPs implemented) \+ (Total number of SOPs excluded)) / (Total number of SOPs recommended)Parts of the formula are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html) | If you have implemented 10 and excluded 5 SOPs out of 20 AWS Resilience Hub recommended SOPs, the SOP coverage is calculated as follows:`S = (10 + 5) / 20`<br />That is, `S = .75 or 75 points` |
+| RTO/RPO compliance (P) | A normalized score (0 -100 points) based on the application meeting its resiliency policy.  | P = Total weights of disruption types meeting the application's resiliency policy / Total weights of all disruption types. | If you application resiliency policy meets only for Availability Zone (AZ) and Infrastructure disruption types, the resiliency policy score (P) is calculated as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html) |
+
+The following table explains the formula used by AWS Resilience Hub to calculate the resiliency score for your entire application.
+
+**Formula to calculate the Resiliency score**
+
+| Scoring component | Description | Formula | Example |
+| --- | --- | --- | --- |
+| Resiliency score for application (RS) | A normalized resiliency score (0 -100 points) based on your application meeting its resiliency policy. Resiliency score per application is the weighted average of all the recommendation types. That is: RS = Weighted Average (T, A, S, P) | Resiliency score per application is calculated using the following formula: RS = (T \* Weight(T) \+`A * Weight(A) +`<br />`S * Weight(S) +`<br />`P * Weight(P)) /`<br />`(Weight(T) + Weight(A) + Weight(S) + Weight(P))` | Formulas to calculate the coverage of each recommendation type table are as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html)The resiliency score per application is calculated as follows: <br />`RS = ((.75 * .2) + (.75 * .2) + (.75 * .2) + (.5 * .4)) /(.2 + .2 + .2 + .4)`<br />That is, `RS = .65 or 65 points` |
+
+The following table explains the formulas used by AWS Resilience Hub to calculate the resiliency score for Application Components (AppComponents) and disruption types. However, you can obtain the resiliency score of AppComponents and disruption types only through the following AWS Resilience Hub APIs:
++ [DescribeAppAssessment](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_DescribeAppAssessment.html) to obtain `RSo`
++ [ListAppComponentCompliances](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListAppComponentCompliances.html) to obtain `RSao` and `RSA`
+
+**Formulas to calculate resiliency score for AppComponents and disruption types**
+
+| Scoring component | Description | Formula | Example |
+| --- | --- | --- | --- |
+| Resiliency score per AppComponent and per disruption type (RSao) | A normalized score (0 -100 points) based on the AppComponent meeting its resiliency policy per disruption type. Resiliency score per AppComponent and per disruption type is the weighted average of all the recommendation types. That is: `RSao = Weighted Average (T, A, S, P)`<br />The values for `T, A, S, P` are calculated for all the recommended tests, alarms, SOPs, and meeting resiliency policy of the AppComponent and the disruption type. | The resiliency score per AppComponent and per disruption type is calculated using the following formula:`RSao = (T * Weight(T) + `<br />`A * Weight(A) + `<br />`S * Weight(S) + `<br />`P * Weight(P)) /`<br />`(Weight(T) + Weight(A) + Weight(S) + Weight(P))` | `RSao` assumptions for all the recommendation types are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html)The resiliency score per AppComponent and disruption type is calculated as follows:<br />`RSao = ((.75 * .2) + (.75 * .2) + (.75 * .2) + (.5 * .4)) / `(.2 \+ .2 \+ .2 \+ .4)<br />That is, `RSao = .65 or 65 points`  |
+| Resiliency score per AppComponent ( RSa) | A normalized score (0 -100 points) based on meeting its resiliency policy. Resiliency score per AppComponent is the weighted average of all the recommendation types. That is: RSa = Weighted Average (T, A, S, P)The values for `T, A, S, P` are calculated for all the recommended tests, alarms, SOPs, and meeting resiliency policy of the AppComponent. | The resiliency score per AppComponent is calculated using the following formula: `RSa = ``(T * Weight(T) +`<br />`A * Weight(A) +`<br />`S * Weight(S) +`<br />`P * Weight(P)) /`<br />`(Weight(T) + Weight(A) + Weight(S) + Weight(P))` | `RSa` assumptions for all the recommendation types are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html)The resiliency score per AppComponent is calculated as follows:<br />`RSa = ((.75 * .2) + (.75 * .2) + (.75 * .2) + (.5 * .4)) / `(.2 \+ .2 \+ .2 \+ .4)<br />That is, `RSa = .65 or 65 points`  |
+| Resiliency score per disruption type ( RSo) | A normalized score (0 -100 points) based on meeting its resiliency policy. Resiliency score per disruption type is the weighted average of all the recommendation types. That is: RSo = Weighted Average (T, A, S, P)The values for `T, A, S, P` are calculated for all the recommended tests, alarms, SOPs, and meeting resiliency policy of the disruption type. | The resiliency score per disruption type is calculated using the following formula:`RSo = (T * Weight(T) + A * Weight(A) + `<br />`S * Weight(S) + P * Weight(P)) /` <br />`(Weight(T) + Weight(A) + Weight(S) + Weight(P))` | `RSo` assumptions for all the recommendation types are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/resilience-hub/latest/userguide/calculate-score.html)<br />The resiliency score per disruption type is calculated as follows:<br />`RSo = ((.75 * .2) + (.75 * .2) + (.75 * .2) + (.5 *.4)) /`<br />`(.2 + .2 + .2 + .4)`<br />That is, `RSo = .65 or 65 points` |
+
+## Weights
+<a name="weight"></a>
+
+AWS Resilience Hub assigns a weight to each recommendation type for the total resiliency score.
+
+The following tables show the weight for alarms, SOPs, tests, meeting resiliency policy, and disruption types. Disruptions type include Application, Infrastructure, AZ, and Region.
+
+**Note**
+If you choose not to define Regional RTO or RPO targets for your policy, the weights for the other disruption types are increased accordingly as shown in **Weight when Region is not defined** column.
+
+**Weights for alarms, SOPs, tests, policy target**
+
+| Recommendation type | Weight |
+| --- | --- |
+| Alarms | 20 points |
+| SOPs | 20 points |
+| Tests | 20 points |
+| Meeting resiliency policy | 40 points |
+
+**Weights for disruption type**
+
+| Disruption type | Weight when Region is defined | Weight when Region is not defined |
+| --- | --- | --- |
+| Application | 40 points | 44.44 points |
+| Infrastructure | 30 points | 33.33 points |
+| Availability Zone | 20 points | 22.22 points |
+| Region | 10 points | N/A |

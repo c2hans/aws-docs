@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_PivotTableFieldCollapseStateOption.html
+---
+
+# PivotTableFieldCollapseStateOption
+<a name="API_PivotTableFieldCollapseStateOption"></a>
+
+The collapse state options for the pivot table field options.
+
+## Contents
+<a name="API_PivotTableFieldCollapseStateOption_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** Target **   <a name="QS-Type-PivotTableFieldCollapseStateOption-Target"></a>
+A tagged-union object that sets the collapse state.
+Type: [PivotTableFieldCollapseStateTarget](API_PivotTableFieldCollapseStateTarget.md) object
+Required: Yes
+
+ ** State **   <a name="QS-Type-PivotTableFieldCollapseStateOption-State"></a>
+The state of the field target of a pivot table. Choose one of the following options:
++  `COLLAPSED`
++  `EXPANDED`
+Type: String
+Valid Values: `COLLAPSED | EXPANDED`
+Required: No
+
+## See Also
+<a name="API_PivotTableFieldCollapseStateOption_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/PivotTableFieldCollapseStateOption)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/PivotTableFieldCollapseStateOption)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/PivotTableFieldCollapseStateOption)

@@ -1,0 +1,163 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_ec2_DescribeImageAttribute_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `DescribeImageAttribute` with a CLI
+<a name="ec2_example_ec2_DescribeImageAttribute_section"></a>
+
+The following code examples show how to use `DescribeImageAttribute`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To describe the launch permissions for an AMI**
+This example describes the launch permissions for the specified AMI.
+Command:
+
+```
+aws ec2 describe-image-attribute --image-id {{ami-5731123e}} --attribute {{launchPermission}}
+```
+Output:
+
+```
+{
+    "LaunchPermissions": [
+        {
+            "UserId": "123456789012"
+        }
+    ],
+    "ImageId": "ami-5731123e",
+}
+```
+**To describe the product codes for an AMI**
+This example describes the product codes for the specified AMI. Note that this AMI has no product codes.
+Command:
+
+```
+aws ec2 describe-image-attribute --image-id {{ami-5731123e}} --attribute {{productCodes}}
+```
+Output:
+
+```
+{
+    "ProductCodes": [],
+    "ImageId": "ami-5731123e",
+}
+```
++  For API details, see [DescribeImageAttribute](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-image-attribute.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example gets the description for the specified AMI.**
+
+```
+Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute description
+```
+**Output:**
+
+```
+BlockDeviceMappings : {}
+Description         : My image description
+ImageId             : ami-12345678
+KernelId            :
+LaunchPermissions   : {}
+ProductCodes        : {}
+RamdiskId           :
+SriovNetSupport     :
+```
+**Example 2: This example gets the launch permissions for the specified AMI.**
+
+```
+Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute launchPermission
+```
+**Output:**
+
+```
+BlockDeviceMappings : {}
+Description         :
+ImageId             : ami-12345678
+KernelId            :
+LaunchPermissions   : {all}
+ProductCodes        : {}
+RamdiskId           :
+SriovNetSupport     :
+```
+**Example 3: This example test whether enhanced networking is enabled.**
+
+```
+Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute sriovNetSupport
+```
+**Output:**
+
+```
+BlockDeviceMappings : {}
+Description         :
+ImageId             : ami-12345678
+KernelId            :
+LaunchPermissions   : {}
+ProductCodes        : {}
+RamdiskId           :
+SriovNetSupport     : simple
+```
++  For API details, see [DescribeImageAttribute](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example gets the description for the specified AMI.**
+
+```
+Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute description
+```
+**Output:**
+
+```
+BlockDeviceMappings : {}
+Description         : My image description
+ImageId             : ami-12345678
+KernelId            :
+LaunchPermissions   : {}
+ProductCodes        : {}
+RamdiskId           :
+SriovNetSupport     :
+```
+**Example 2: This example gets the launch permissions for the specified AMI.**
+
+```
+Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute launchPermission
+```
+**Output:**
+
+```
+BlockDeviceMappings : {}
+Description         :
+ImageId             : ami-12345678
+KernelId            :
+LaunchPermissions   : {all}
+ProductCodes        : {}
+RamdiskId           :
+SriovNetSupport     :
+```
+**Example 3: This example test whether enhanced networking is enabled.**
+
+```
+Get-EC2ImageAttribute -ImageId ami-12345678 -Attribute sriovNetSupport
+```
+**Output:**
+
+```
+BlockDeviceMappings : {}
+Description         :
+ImageId             : ami-12345678
+KernelId            :
+LaunchPermissions   : {}
+ProductCodes        : {}
+RamdiskId           :
+SriovNetSupport     : simple
+```
++  For API details, see [DescribeImageAttribute](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

@@ -1,0 +1,144 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListSearches.html
+---
+
+# ListSearches
+<a name="API_ListSearches"></a>
+
+Lists the searches in a workspace, most recently started first. Results can be narrowed with optional filters (status, search type, group, and started-at time range) and are paginated: when `nextToken` is present, pass it on a subsequent call to retrieve the next page.
+
+## Request Syntax
+<a name="API_ListSearches_RequestSyntax"></a>
+
+```
+POST /workspaces/{{workspaceName}}/searches/list HTTP/1.1
+Content-type: application/json
+
+{
+   "listSearchesFilters": {
+      "groupIdFilter": [ "{{string}}" ],
+      "searchTypeFilter": [ "{{string}}" ],
+      "startedAfter": {{number}},
+      "startedBefore": {{number}},
+      "statusFilter": [ "{{string}}" ]
+   },
+   "maxResults": {{number}},
+   "nextToken": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_ListSearches_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [workspaceName](#API_ListSearches_RequestSyntax) **   <a name="iotsitewise-ListSearches-request-uri-workspaceName"></a>
+The name of the workspace whose searches are listed.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `^[a-zA-Z0-9_-]+$`
+Required: Yes
+
+## Request Body
+<a name="API_ListSearches_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [listSearchesFilters](#API_ListSearches_RequestSyntax) **   <a name="iotsitewise-ListSearches-request-listSearchesFilters"></a>
+Optional filters that restrict which searches are returned.
+Type: [ListSearchesFilters](API_ListSearchesFilters.md) object
+Required: No
+
+ ** [maxResults](#API_ListSearches_RequestSyntax) **   <a name="iotsitewise-ListSearches-request-maxResults"></a>
+The maximum number of searches to return in a single page. Valid range is 1 to 1,000; if omitted, a service-defined default is used.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 1000.
+Required: No
+
+ ** [nextToken](#API_ListSearches_RequestSyntax) **   <a name="iotsitewise-ListSearches-request-nextToken"></a>
+The pagination token returned by a previous ListSearches call. Provide it to retrieve the next page; omit it to retrieve the first page.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `[A-Za-z0-9+/=]+`
+Required: No
+
+## Response Syntax
+<a name="API_ListSearches_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "nextToken": "string",
+   "searchSummaries": [
+      {
+         "groupId": "string",
+         "queryStatement": "string",
+         "searchId": "string",
+         "searchType": "string",
+         "startedAt": number,
+         "status": "string",
+         "statusReason": "string",
+         "workspaceName": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_ListSearches_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [nextToken](#API_ListSearches_ResponseSyntax) **   <a name="iotsitewise-ListSearches-response-nextToken"></a>
+The pagination token to use in a subsequent ListSearches call to retrieve the next page. Absent when there are no more searches.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Pattern: `[A-Za-z0-9+/=]+`
+
+ ** [searchSummaries](#API_ListSearches_ResponseSyntax) **   <a name="iotsitewise-ListSearches-response-searchSummaries"></a>
+A page of search summaries, most recently started first.
+Type: Array of [SearchSummary](API_SearchSummary.md) objects
+
+## Errors
+<a name="API_ListSearches_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+Access is denied.
+HTTP Status Code: 403
+
+ ** InternalFailureException **
+ AWS IoT SiteWise can't process your request right now. Try again later.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+The request isn't valid. This can occur if your request contains malformed JSON or unsupported characters. Check your request and try again.
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+The requested resource can't be found.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+Your request exceeded a rate limit. For example, you might have exceeded the number of AWS IoT SiteWise assets that can be created per second, the allowed number of messages per second, and so on.
+For more information, see [Quotas](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/quotas.html) in the * AWS IoT SiteWise User Guide*.
+HTTP Status Code: 429
+
+## See Also
+<a name="API_ListSearches_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iotsitewise-2019-12-02/ListSearches)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/ListSearches)

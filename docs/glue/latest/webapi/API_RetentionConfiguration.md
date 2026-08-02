@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_RetentionConfiguration.html
+---
+
+# RetentionConfiguration
+<a name="API_RetentionConfiguration"></a>
+
+The configuration for a snapshot retention optimizer.
+
+## Contents
+<a name="API_RetentionConfiguration_Contents"></a>
+
+ ** icebergConfiguration **   <a name="Glue-Type-RetentionConfiguration-icebergConfiguration"></a>
+The configuration for an Iceberg snapshot retention optimizer.
+Type: [IcebergRetentionConfiguration](API_IcebergRetentionConfiguration.md) object
+Required: No
+
+## See Also
+<a name="API_RetentionConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/RetentionConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/RetentionConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/RetentionConfiguration)

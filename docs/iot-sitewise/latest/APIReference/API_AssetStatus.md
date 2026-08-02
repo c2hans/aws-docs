@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetStatus.html
+---
+
+# AssetStatus
+<a name="API_AssetStatus"></a>
+
+Contains information about the current status of an asset. For more information, see [Asset and model states](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/asset-and-model-states.html) in the * AWS IoT SiteWise User Guide*.
+
+## Contents
+<a name="API_AssetStatus_Contents"></a>
+
+ ** state **   <a name="iotsitewise-Type-AssetStatus-state"></a>
+The current status of the asset.
+Type: String
+Valid Values: `CREATING | ACTIVE | UPDATING | DELETING | FAILED`
+Required: Yes
+
+ ** error **   <a name="iotsitewise-Type-AssetStatus-error"></a>
+Contains associated error information, if any.
+Type: [ErrorDetails](API_ErrorDetails.md) object
+Required: No
+
+## See Also
+<a name="API_AssetStatus_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/AssetStatus)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/AssetStatus)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/AssetStatus)

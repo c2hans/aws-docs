@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/omics/latest/api/API_ActivateReadSetSourceItem.html
+---
+
+# ActivateReadSetSourceItem
+<a name="API_ActivateReadSetSourceItem"></a>
+
+A source for a read set activation job.
+
+## Contents
+<a name="API_ActivateReadSetSourceItem_Contents"></a>
+
+ ** readSetId **   <a name="omics-Type-ActivateReadSetSourceItem-readSetId"></a>
+The source's read set ID.
+Type: String
+Length Constraints: Minimum length of 10. Maximum length of 36.
+Pattern: `[0-9]+`
+Required: Yes
+
+ ** status **   <a name="omics-Type-ActivateReadSetSourceItem-status"></a>
+The source's status.
+Type: String
+Valid Values: `NOT_STARTED | IN_PROGRESS | FINISHED | FAILED`
+Required: Yes
+
+ ** statusMessage **   <a name="omics-Type-ActivateReadSetSourceItem-statusMessage"></a>
+The source's status message.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
+Required: No
+
+## See Also
+<a name="API_ActivateReadSetSourceItem_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/omics-2022-11-28/ActivateReadSetSourceItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/omics-2022-11-28/ActivateReadSetSourceItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/ActivateReadSetSourceItem)

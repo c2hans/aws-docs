@@ -1,0 +1,64 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cl3/latest/upgradeguide/upg-std-remove-w.html
+---
+
+# Step F: Remove worker nodes
+<a name="upg-std-remove-w"></a>
+
+Remove the worker nodes from the redundancy group, and then from the cluster. Perform these steps on for all worker nodes in the cluster.
+
+**Topics**
++ [Step A: Remove channel assignments](#upg-std-remove-w-channels)
++ [Step B: Remove workers from redundancy groups](#upg-std-remove-w-red)
++ [Step C: Remove workers from the cluster](#upg-std-remove-w-cluster)
+
+## Step A: Remove channel assignments
+<a name="upg-std-remove-w-channels"></a>
+
+Before you can remove a worker node, first make sure that no channels are assigned to the node.
+
+**To remove channels from the node**
+
+1.  On the primary Conductor Live node's web interface, go to the **Channels** page.
+
+1. Ensure that all channels are stopped.
+
+1.  Choose **Edit**(pencil icon) on a channel.
+
+1.  On the **Edit Channel** page, in **Node**, choose **None**.
+
+1.  Save the channel. Repeat this procedure to edit the remaining channels to have no node assignment.
+
+1. When all of the channels have no node assignments, go to the next step.
+
+## Step B: Remove workers from redundancy groups
+<a name="upg-std-remove-w-red"></a>
+
+Remove all nodes from the worker redundancy groups.
+
+**To remove workers from redundancy groups**
+
+1. On the primary Conductor Live node's web interface, go to the **Cluster** page.
+
+1.  On the **Cluster** page, choose **Redundancy**.
+
+1. In the navigation bar, choose the Elemental Live redundancy group.
+
+1. On the **Backup Nodes** tab, choose **Delete** (trash icon) for each node.
+
+1. When you've removed all backup nodes, choose the **Active Nodes** tab and choose **Delete** (trash icon) for each node.
+
+1. If you have multiple Elemental Live redundancy groups, repeat this procedure on each group, then go to the next step.
+
+## Step C: Remove workers from the cluster
+<a name="upg-std-remove-w-cluster"></a>
+
+Remove the nodes from the cluster so that you can perform the upgrade process.
+
+**To remove workers from the cluster**
+
+1. On the **Cluster** page, choose **Nodes**.
+
+1.  On each worker node, choose the downward triangle and select **Remove Node**.
+
+1. Remove all nodes from the cluster, then move on to the upgrade process.

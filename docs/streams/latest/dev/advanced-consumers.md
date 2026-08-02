@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/streams/latest/dev/advanced-consumers.html
+---
+
+# Optimize Amazon Kinesis Data Streams consumers
+<a name="advanced-consumers"></a>
+
+You can further optimize your Amazon Kinesis Data Streams consumer based on specific behavior you see.
+
+Review the following topics to identify solutions.
+
+**Topics**
++ [Improve low-latency processing](kinesis-low-latency.md)
++ [Process serialized data using AWS Lambda with the Amazon Kinesis Producer Library](kinesis-record-deaggregation.md)
++ [Use resharding, scaling, and parallel processing to change the number of shards](kinesis-record-processor-scaling.md)
++ [Handle duplicate records](kinesis-record-processor-duplicates.md)
++ [Handle startup, shutdown, and throttling](kinesis-record-processor-additional-considerations.md)

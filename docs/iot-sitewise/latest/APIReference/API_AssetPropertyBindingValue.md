@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetPropertyBindingValue.html
+---
+
+# AssetPropertyBindingValue
+<a name="API_AssetPropertyBindingValue"></a>
+
+Represents a data binding value referencing a specific asset property. It's used to bind computation model variables to actual asset property values for processing.
+
+## Contents
+<a name="API_AssetPropertyBindingValue_Contents"></a>
+
+ ** assetId **   <a name="iotsitewise-Type-AssetPropertyBindingValue-assetId"></a>
+The ID of the asset containing the property. This identifies the specific asset instance's property value used in the computation model.
+Type: String
+Length Constraints: Fixed length of 36.
+Pattern: `^(?!00000000-0000-0000-0000-000000000000)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+Required: Yes
+
+ ** propertyId **   <a name="iotsitewise-Type-AssetPropertyBindingValue-propertyId"></a>
+The ID of the property within the asset. This identifies the specific property's value used in the computation model.
+Type: String
+Length Constraints: Fixed length of 36.
+Pattern: `^(?!00000000-0000-0000-0000-000000000000)[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$`
+Required: Yes
+
+## See Also
+<a name="API_AssetPropertyBindingValue_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/AssetPropertyBindingValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/AssetPropertyBindingValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/AssetPropertyBindingValue)

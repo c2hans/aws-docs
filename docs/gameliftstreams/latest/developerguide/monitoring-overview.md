@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/monitoring-overview.html
+---
+
+# Monitoring Amazon GameLift Streams
+<a name="monitoring-overview"></a>
+
+Monitoring is an important part of maintaining the reliability, availability, and performance of Amazon GameLift Streams and your other AWS solutions. AWS provides the following monitoring tools to watch Amazon GameLift Streams, report when something is wrong, and take automatic actions when appropriate:
++  *Amazon CloudWatch* monitors your AWS resources and the applications you run on AWS in real time. You can collect and track metrics, create customized dashboards, and set alarms that notify you or take actions when a specified metric reaches a threshold that you specify. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
++ With *Amazon CloudWatch Logs* you can monitor, store, and access your log files from services like Amazon Elastic Compute Cloud, AWS CloudTrail, and other sources. CloudWatch Logs can monitor information in the log files and notify you when your services meet certain thresholds. You can also archive your log data in highly durable storage. For more information, see the [Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/).
++  *AWS CloudTrail* captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon Simple Storage Service bucket that you specify. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
++  *Real-time performance stats* collect application-level and shared system-level performance stats during stream sessions. You can receive these stats in real-time on the client or post-session as a CSV file in exported session files. Using this feature, you can monitor the CPU, memory, GPU, and VRAM utilization of your stream. For more information, see [Real-time performance stats](realtime-performance-stats.md).

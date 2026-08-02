@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/nova/latest/userguide/speech-code-examples.html
+---
+
+# Code examples for Amazon Nova Sonic
+<a name="speech-code-examples"></a>
+
+**Note**
+This documentation is for Amazon Nova Version 1. For the Amazon Nova 2 Sonic guide, visit [Code examples](https://docs.aws.amazon.com/nova/latest/nova2-userguide/sonic-code-examples.html).
+
+These code examples will help you quickly get started with Amazon Nova Sonic. You can access the complete list of examples in [Amazon Nova Sonic GitHub samples](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech) page.
+
+## Getting started examples
+<a name="speech-code-examples-basic"></a>
+
+For simple examples designed to get you started using Amazon Nova Sonic, refer to the following implementations:
++ [Basic Nova Sonic implementation (Python)](https://github.com/aws-samples/amazon-nova-samples/blob/main/speech-to-speech/sample-codes/console-python/nova_sonic_simple.py): A basic implementation that demonstrates how events are structured in the bidirectional streaming API. This version does not support barge-in functionality (interrupting the assistant while it's speaking) and does not implement true bidirectional communication.
++ [Full featured Nova Sonic implementation (Python)](https://github.com/aws-samples/amazon-nova-samples/blob/main/speech-to-speech/sample-codes/console-python/nova_sonic.py): The full-featured implementation with real bidirectional communication and barge-in support. This allows for more natural conversations where users can interrupt the assistant while it's speaking, similar to human conversations.
++ [Nova Sonic with tool use (Python)](https://github.com/aws-samples/amazon-nova-samples/blob/main/speech-to-speech/sample-codes/console-python/nova_sonic_tool_use.py): An advanced implementation that extends the bidirectional communication capabilities with tool use examples. This version demonstrates how Amazon Nova Sonic can interact with external tools and APIs to provide enhanced functionality.
++ [Java WebSocket implementation (Java)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/sample-codes/websocket-java): This example implements a bidirectional WebSocket-based audio streaming application that integrates with Amazon Nova Sonic model for real-time speech-to-speech conversation using Java. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful speech-to-speech model for processing and generating responses.
++ [NodeJS Websocket implementation (NodeJS)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/sample-codes/websocket-nodejs): This example implements a bidirectional WebSocket-based audio streaming application that integrates with Amazon Nova Sonic model for real-time speech-to-speech conversation by using NodeJS. The application enables natural conversational interactions through a web interface while leveraging Amazon's new powerful speech-to-speech model for processing and generating responses.
+
+## Advanced use cases
+<a name="speech-code-examples-advanced"></a>
+
+For advanced examples demonstrating more complex use cases, refer to the following implementations:
++ [Amazon Bedrock Knowledge Base implementation (NodeJS)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/repeatable-patterns/bedrock-knowledge-base): This example demonstrates how to build an intelligent conversational application by integrating Amazon Nova Sonic model with Amazon Bedrock Knowledge Base by using NodeJS.
++ [Chat History Management (Python)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/repeatable-patterns/chat-history-logger): This example includes a chat history logging system that captures and preserves all interactions between the user and Nova Sonic by using Python.
++ [Hotel Reservation Cancellation (NodeJS)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/repeatable-patterns/customer-service/hotel-cancellation-websocket): This example demonstrates a practical customer service use case for Amazon Nova Sonic model, implementing a hotel reservation cancellation system by using NodeJS.
++ [LangChain Knowledge Base integration (Python)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/repeatable-patterns/langchain-knowledge-base): This implementation demonstrates how to integrate Amazon Nova Sonic's speech-to-speech capabilities with a LangChain-powered knowledge base for enhanced conversational experiences by using Python.
++ [Conversation Resumption (NodeJS)](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/repeatable-patterns/resume-conversation): This example demonstrates how to implement conversation resumption capabilities with Amazon Nova Sonic model. Using a hotel reservation cancellation scenario as the context, the application shows how to maintain conversation state across sessions, allowing users to seamlessly continue interactions that were previously interrupted by using NodeJS.
+
+## Hands-on workshop
+<a name="speech-code-examples-workshop"></a>
+
+We also offer a hands-on workshop that guides you through building a voice chat application using Nova Sonic with a bidirectional streaming interface. You can [access the workshop here](https://catalog.us-east-1.prod.workshops.aws/workshops/5238419f-1337-4e0f-8cd7-02239486c40d/en-US) and find the [complete code examples of the workshop here](https://github.com/aws-samples/amazon-nova-samples/tree/main/speech-to-speech/workshops).

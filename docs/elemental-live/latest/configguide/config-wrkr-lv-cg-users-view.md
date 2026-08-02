@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/configguide/config-wrkr-lv-cg-users-view.html
+---
+
+# View user information
+<a name="config-wrkr-lv-cg-users-view"></a>
+
+Each user can log in to the AWS Elemental Live web interface and view their own profile. Go to **Settings** > **User Profile**. The following information is displayed:
++ The features and controls of Elemental Live that the user is allowed to use.
++ The user's API key.

@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_VisualInteractionOptions.html
+---
+
+# VisualInteractionOptions
+<a name="API_VisualInteractionOptions"></a>
+
+The general visual interactions setup for visual publish options
+
+## Contents
+<a name="API_VisualInteractionOptions_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** ContextMenuOption **   <a name="QS-Type-VisualInteractionOptions-ContextMenuOption"></a>
+The context menu options for a visual.
+Type: [ContextMenuOption](API_ContextMenuOption.md) object
+Required: No
+
+ ** VisualMenuOption **   <a name="QS-Type-VisualInteractionOptions-VisualMenuOption"></a>
+The on-visual menu options for a visual.
+Type: [VisualMenuOption](API_VisualMenuOption.md) object
+Required: No
+
+## See Also
+<a name="API_VisualInteractionOptions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/VisualInteractionOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/VisualInteractionOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/VisualInteractionOptions)

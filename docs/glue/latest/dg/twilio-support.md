@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/twilio-support.html
+---
+
+# AWS Glue support for Twilio
+<a name="twilio-support"></a>
+
+AWS Glue supports Twilio as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Twilio.
+
+**Supported as a target?**
+No.
+
+**Supported Twilio API versions**
+The following Twilio API versions are supported:
++ v1
++ 2010-04-01

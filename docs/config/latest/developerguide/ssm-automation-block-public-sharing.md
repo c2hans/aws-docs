@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/developerguide/ssm-automation-block-public-sharing.html
+---
+
+# ssm-automation-block-public-sharing
+<a name="ssm-automation-block-public-sharing"></a>
+
+Checks if AWS Systems Manager Documents has block public sharing enabled. The rule is NON\_COMPLIANT if Systems Manager Documents has block public sharing disabled.
+
+**Identifier:** SSM\_AUTOMATION\_BLOCK\_PUBLIC\_SHARING
+
+**Resource Types:** AWS::::Account
+
+**Trigger type:** Periodic
+
+**AWS Region:** All supported AWS regions except Asia Pacific (Thailand), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Mexico (Central), Asia Pacific (Taipei) Region
+
+**Parameters:**
+
+None
+
+## AWS CloudFormation template
+<a name="w2aac20c16c17b7e1547c19"></a>
+
+To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_ConsumedUsages.html
+---
+
+# ConsumedUsages
+<a name="API_ConsumedUsages"></a>
+
+The consumed usage for the resource.
+
+## Contents
+<a name="API_ConsumedUsages_Contents"></a>
+
+ ** approximateDollarUsage **   <a name="deadlinecloud-Type-ConsumedUsages-approximateDollarUsage"></a>
+The amount of the budget consumed.
+Type: Float
+Required: Yes
+
+## See Also
+<a name="API_ConsumedUsages_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/deadline-2023-10-12/ConsumedUsages)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/deadline-2023-10-12/ConsumedUsages)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/deadline-2023-10-12/ConsumedUsages)

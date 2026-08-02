@@ -1,0 +1,61 @@
+---
+source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_InstanceCollection.html
+---
+
+# InstanceCollection
+<a name="API_InstanceCollection"></a>
+
+ Contains details about a collection of instances launched in the Auto Scaling group.
+
+## Contents
+<a name="API_InstanceCollection_Contents"></a>
+
+ ** AvailabilityZone **
+ The Availability Zone where the instances were launched.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** AvailabilityZoneId **
+ The Availability Zone ID where the instances in this collection were launched.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** InstanceIds.member.N **
+ A list of instance IDs for the successfully launched instances.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 19.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** InstanceType **
+ The instance type of the launched instances.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** MarketType **
+ The market type for the instances (On-Demand or Spot).
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** SubnetId **
+ The ID of the subnet where the instances were launched.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+## See Also
+<a name="API_InstanceCollection_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/InstanceCollection)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/InstanceCollection)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/InstanceCollection)

@@ -20,6 +20,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::BedrockAgentCore::Gateway](aws-resource-bedrockagentcore-gateway.md)
 + [AWS::BedrockAgentCore::GatewayTarget](aws-resource-bedrockagentcore-gatewaytarget.md)
 + [AWS::BedrockAgentCore::Harness](aws-resource-bedrockagentcore-harness.md)
++ [AWS::BedrockAgentCore::HarnessEndpoint](aws-resource-bedrockagentcore-harnessendpoint.md)
 + [AWS::BedrockAgentCore::Memory](aws-resource-bedrockagentcore-memory.md)
 + [AWS::BedrockAgentCore::OAuth2CredentialProvider](aws-resource-bedrockagentcore-oauth2credentialprovider.md)
 + [AWS::BedrockAgentCore::OnlineEvaluationConfig](aws-resource-bedrockagentcore-onlineevaluationconfig.md)

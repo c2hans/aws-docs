@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_Ip.html
+---
+
+# Ip
+<a name="API_Ip"></a>
+
+IP address used for resolving device location.
+
+## Contents
+<a name="API_Ip_Contents"></a>
+
+ ** IpAddress **   <a name="iotwireless-Type-Ip-IpAddress"></a>
+IP address information.
+Type: String
+Required: Yes
+
+## See Also
+<a name="API_Ip_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/Ip)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/Ip)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/Ip)

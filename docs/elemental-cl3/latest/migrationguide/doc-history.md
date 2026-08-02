@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cl3/latest/migrationguide/doc-history.html
+---
+
+# Document history for migration guide
+<a name="doc-history"></a>
+
+The following table describes the main changes to this guide.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Installing on worker node](migrate-topic-install-worker.md) | The procedure to install software on a worker node has been updated to include the --cleandb in the command. | June 13, 2025 |
+| [Corrections](migration-guide-about.md) | General corrections and additions have been made to the guide. | July 29, 2024 |
+| [New guide](migration-guide-about.md) | First release of this guide | March 25, 2024 |

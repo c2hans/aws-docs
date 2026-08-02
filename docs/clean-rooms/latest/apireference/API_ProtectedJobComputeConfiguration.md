@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_ProtectedJobComputeConfiguration.html
+---
+
+# ProtectedJobComputeConfiguration
+<a name="API_ProtectedJobComputeConfiguration"></a>
+
+The configuration of the compute resources for a PySpark job.
+
+## Contents
+<a name="API_ProtectedJobComputeConfiguration_Contents"></a>
+
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** worker **   <a name="API-Type-ProtectedJobComputeConfiguration-worker"></a>
+The worker configuration for the compute environment.
+Type: [ProtectedJobWorkerComputeConfiguration](API_ProtectedJobWorkerComputeConfiguration.md) object
+Required: No
+
+## See Also
+<a name="API_ProtectedJobComputeConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cleanrooms-2022-02-17/ProtectedJobComputeConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cleanrooms-2022-02-17/ProtectedJobComputeConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cleanrooms-2022-02-17/ProtectedJobComputeConfiguration)

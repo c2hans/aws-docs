@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/evolve.html
+---
+
+# Evolve
+<a name="evolve"></a>
+
+| DRHCOPS07: How can you automate to streamline deployment, configuration, and monitoring processes across edge and cloud environments? |
+| --- |
+|   |
+
+ Use AWS services and tools for automation and infrastructure as code (IaC) to consistently provision, manage, and maintain hybrid and edge environments, including AWS Outposts and Local Zones, to streamline deployment, configuration, and monitoring processes across these environments.
+
+| DRHCOPS08: What processes have you implemented to regularly review and update data residency to align with evolving regulatory landscape and organizational needs? |
+| --- |
+|   |
+
+ Establish feedback loops to continuously adapt to evolving data residency requirements for Outposts and Local Zones, enabling proactive compliance with data sovereignty and localization mandates by facilitating timely adjustments to deployments as new AWS infrastructure becomes available.
+
+**Topics**
++ [DRHCOPS07-BP01 Use AWS services and tools for automation and infrastructure as code (IaC) across hybrid and edge environments](drhcops07-bp01.md)
++ [DRHCOPS08-BP01 Build feedback loops to adapt to changing data residency requirements](drhcops08-bp01.md)

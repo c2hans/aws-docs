@@ -1,0 +1,57 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/rel_backing_up_data_secured_backups_data.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# REL09-BP02 Secure and encrypt backups
+<a name="rel_backing_up_data_secured_backups_data"></a>
+
+ Control and detect access to backups using authentication and authorization, such as AWS IAM. Prevent and detect if data integrity of backups is compromised using encryption.
+
+ Amazon S3 supports several methods of encryption of your data at rest. Using server-side encryption, Amazon S3 accepts your objects as unencrypted data, and then encrypts them as they are stored. Using client-side encryption, your workload application is responsible for encrypting the data before it is sent to Amazon S3. Both methods allow you to use AWS Key Management Service (AWS KMS) to create and store the data key, or you can provide your own key, which you are then responsible for. Using AWS KMS, you can set policies using IAM on who can and cannot access your data keys and decrypted data.
+
+ For Amazon RDS, if you have chosen to encrypt your databases, then your backups are encrypted also. DynamoDB backups are always encrypted.
+
+ **Common anti-patterns:**
++  Having the same access to the backups and restoration automation as you do to the data.
++  Not encrypting your backups.
+
+ **Benefits of establishing this best practice:** Securing your backups prevents tampering with the data, and encryption of the data prevents access to that data if it is accidentally exposed.
+
+ **Level of risk exposed if this best practice is not established:** High
+
+## Implementation guidance
+<a name="implementation-guidance"></a>
++  Use encryption on each of your data stores. If your source data is encrypted, then the backup will also be encrypted.
+  +  Enable encryption in RDS. You can configure encryption at rest using AWS Key Management Service when you create an RDS instance.
+    +  [Encrypting Amazon RDS Resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)
+  +  Enable encryption on EBS volumes. You can configure default encryption or specify a unique key upon volume creation.
+    +  [Amazon EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+  +  Use the required Amazon DynamoDB encryption. DynamoDB encrypts all data at rest. You can either use an AWS owned AWS KMS key or an AWS managed KMS key, specifying a key that is stored in your account.
+    +  [DynamoDB Encryption at Rest](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html)
+    +  [Managing Encrypted Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/encryption.tutorial.html)
+  +  Encrypt your data stored in Amazon EFS. Configure the encryption when you create your file system.
+    +  [Encrypting Data and Metadata in EFS](https://docs.aws.amazon.com/efs/latest/ug/encryption.html)
+  +  Configure the encryption in the source and destination Regions. You can configure encryption at rest in Amazon S3 using keys stored in KMS, but the keys are Region-specific. You can specify the destination keys when you configure the replication.
+    +  [CRR Additional Configuration: Replicating Objects Created with Server-Side Encryption (SSE) Using Encryption Keys stored in AWS KMS](https://docs.aws.amazon.com/AmazonS3/latest/dev/crr-replication-config-for-kms-objects.html)
++  Implement least privilege permissions to access your backups. Follow best practices to limit the access to the backups, snapshots, and replicas in accordance with security best practices.
+  +  [Security Pillar: AWS Well-Architected](./wat.pillar.security.en.html)
+
+## Resources
+<a name="resources"></a>
+
+ **Related documents:**
++  [AWS Marketplace: products that can be used for backup](https://aws.amazon.com/marketplace/search/results?searchTerms=Backup)
++  [Amazon EBS Encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
++  [Amazon S3: Protecting Data Using Encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingEncryption.html)
++  [CRR Additional Configuration: Replicating Objects Created with Server-Side Encryption (SSE) Using Encryption Keys stored in AWS KMS](https://docs.aws.amazon.com/AmazonS3/latest/dev/crr-replication-config-for-kms-objects.html)
++  [DynamoDB Encryption at Rest](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html)
++  [Encrypting Amazon RDS Resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html)
++  [Encrypting Data and Metadata in EFS](https://docs.aws.amazon.com/efs/latest/ug/encryption.html)
++  [Encryption for Backups in AWS](https://docs.aws.amazon.com/aws-backup/latest/devguide/encryption.html)
++  [Managing Encrypted Tables](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/encryption.tutorial.html)
++  [Security Pillar: AWS Well-Architected](./wat.pillar.security.en.html)
+
+ **Related examples:**
++  [Well-Architected lab: Implementing Bi-Directional Cross-Region Replication (CRR) for Amazon S3](https://wellarchitectedlabs.com/reliability/200_labs/200_bidirectional_replication_for_s3/)

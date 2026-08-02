@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/theme-permissions.html
+---
+
+# Theme permissions
+<a name="theme-permissions"></a>
+
+With theme permissions API operations, you can view and update permissions for themes. For more information, see the following API operations.
++ [DescribeThemePermissions](describe-theme-permissions.md)
++ [UpdateThemePermissions](update-theme-permissions.md)

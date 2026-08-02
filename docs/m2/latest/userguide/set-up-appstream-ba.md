@@ -1,0 +1,159 @@
+---
+source_url: https://docs.aws.amazon.com/m2/latest/userguide/set-up-appstream-ba.html
+---
+
+**AWS Mainframe Modernization self-managed experience** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization self-managed experience, explore capabilities from vendor-direct offerings and from AWS Transform. Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
+
+**AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
+
+# Tutorial: Set up WorkSpaces Applications for AWS Transform for mainframe Developer IDE
+<a name="set-up-appstream-ba"></a>
+
+AWS Mainframe Modernization provides several tools through Amazon WorkSpaces Applications. WorkSpaces Applications is a fully managed, secure application streaming service that lets you stream desktop applications to users without rewriting applications. WorkSpaces Applications provides users with instant access to the applications that they need with a responsive, fluid user experience on the device of their choice. Using WorkSpaces Applications to host runtime engine-specific tools gives customer application teams the ability to use the tools directly from their web browsers, interacting with application files stored in either Amazon S3 buckets or CodeCommit repositories.
+
+For information about browser support in WorkSpaces Applications see [System Requirements and Feature Support (Web Browser)](https://docs.aws.amazon.com/appstream2/latest/developerguide/requirements-and-features-web-browser-admin.html) in the *Amazon WorkSpaces Applications Administration Guide*. If you have issues when you are using WorkSpaces Applications see [Troubleshooting AppStream 2.0 User Issues](https://docs.aws.amazon.com/appstream2/latest/developerguide/troubleshooting-user-issues.html) in the *Amazon WorkSpaces Applications Administration Guide*.
+
+This document describes how to set up AWS Transform for mainframe Developer IDE on an WorkSpaces Applications fleet.
+
+**Topics**
++ [Prerequisites](#set-up-aas2-ba-prereqs)
++ [Step 1: Create an Amazon S3 bucket](#set-up-aas2-ba-create-bucket)
++ [Step 2: Attach a policy to the S3 bucket](#set-up-aas2-ba-create-bucket-policy)
++ [Step 3: Upload files to the Amazon S3 bucket](#set-up-aas2-ba-upload)
++ [Step 4: Download CloudFormation templates](#set-up-aas2-ba-download-templates)
++ [Step 5: Create the fleet with CloudFormation](#set-up-appstream-ba-cfn)
++ [Step 6: Access an instance](#set-up-appstream-ba-access)
++ [Clean up resources](#set-up-appstream-ba-clean)
+
+## Prerequisites
+<a name="set-up-aas2-ba-prereqs"></a>
+
+For first time users, do this:
+
+1. Navigate to the AppStream 2.0 console at [https://console.aws.amazon.com/appstream2/home](https://console.aws.amazon.com/appstream2/home).
+
+1. Choose **Get Started**.
+
+1. Choose **Skip**.
+**Important**
+Amazon WorkSpaces Applications uses IAM roles to manage your WorkSpaces Applications resources and AWS will create these roles when you do this.
+
+Then, download the [archive file](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/appstream-bluage-developer-ide.zip) that contains the artifacts that you need to set up AWS Transform for mainframe Developer IDE under WorkSpaces Applications.
+
+**Note**
+This is a large file. If you have problems with the operation timing out, we recommend using an Amazon EC2 instance to improve the upload and download performance. For more information on launching and connecting to an Amazon EC2 instance, see [Get started with Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html).
+
+## Step 1: Create an Amazon S3 bucket
+<a name="set-up-aas2-ba-create-bucket"></a>
+
+Create an Amazon S3 bucket in the same AWS Region as the WorkSpaces Applications fleet that you will create. This bucket will contain the artifacts that you need to complete this tutorial. For more information on buckets, see [ Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html).
+
+## Step 2: Attach a policy to the S3 bucket
+<a name="set-up-aas2-ba-create-bucket-policy"></a>
+
+Attach the following policy to the bucket that you create for this tutorial. For more information on attaching a policy to S3 bucket, see [Adding a bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html).
+
+Make sure to replace `amzn-s3-demo-bucket` with the actual name of the bucket that you create.
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [{
+        "Sid": "AllowAppStream2.0ToRetrieveObjects",
+        "Effect": "Allow",
+        "Principal": {
+            "Service": "appstream.amazonaws.com"
+        },
+        "Action": "s3:GetObject",
+        "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}/*"
+    }]
+}
+```
+
+------
+
+## Step 3: Upload files to the Amazon S3 bucket
+<a name="set-up-aas2-ba-upload"></a>
+
+Unzip the files you downloaded in the Prerequisite and upload the `appstream` folder to your bucket. Uploading this folder creates the correct structure in your bucket. For more information, see [Uploading objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/upload-objects.html) in the *Amazon S3 User Guide*.
+
+## Step 4: Download CloudFormation templates
+<a name="set-up-aas2-ba-download-templates"></a>
+
+Download the following CloudFormation templates. You need these templates to create and populate the WorkSpaces Applications fleet.
++ [cfn-m2-appstream-elastic-fleet-linux.yaml](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/developer-ide/CloudFormation/cfn-m2-appstream-elastic-fleet-linux.yaml)
++ [cfn-m2-appstream-bluage-dev-tools-linux.yaml](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/developer-ide/CloudFormation/cfn-m2-appstream-bluage-dev-tools-linux.yaml)
++ [cfn-m2-appstream-bluage-shared-linux.yaml](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/developer-ide/CloudFormation/cfn-m2-appstream-bluage-shared-linux.yaml)
++ [cfn-m2-appstream-chrome-linux.yaml](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/developer-ide/CloudFormation/cfn-m2-appstream-chrome-linux.yaml)
++ [cfn-m2-appstream-eclipse-jee-linux.yaml](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/developer-ide/CloudFormation/cfn-m2-appstream-eclipse-jee-linux.yaml)
++ [cfn-m2-appstream-pgadmin-linux.yaml](https://d3lkpej5ajcpac.cloudfront.net/appstream/bluage/developer-ide/CloudFormation/cfn-m2-appstream-pgadmin-linux.yaml)
+
+## Step 5: Create the fleet with CloudFormation
+<a name="set-up-appstream-ba-cfn"></a>
+
+In this step, you use the `cfn-m2-appstream-elastic-fleet-linux.yaml` CloudFormation template to create an WorkSpaces Applications fleet and stack to host the AWS Transform for mainframe Developer IDE. After you create the fleet and stack, you will run the other CloudFormation templates you downloaded in the previous step to install the Developer IDE and other required tools.
+
+1. Navigate to CloudFormation in the AWS Management console, and choose **Stacks**.
+
+1. In **Stacks**, choose **Create stack** and **With new Resources (standard)**:
+![The Stacks page in CloudFormation with Create Stack and with new resources selected.](http://docs.aws.amazon.com/m2/latest/userguide/images/cfn-ba-stacks.png)
+
+1. In **Create stack**, choose **Choose an existing template** and **Upload a template file**:
+![The CloudFormation create stack page with template ready to upload selected file.](http://docs.aws.amazon.com/m2/latest/userguide/images/cfn-ba-create-stack.png)
+
+1. Choose **Choose file**, and navigate to file `cfn-m2-appstream-elastic-fleet-linux.yaml`. Choose **Next**.
+
+1. In **Specify stack details**, provide the following information:
+   + A name for the stack.
+   + Your default security group and two subnets of that security group.
+**Note**
+The two subnets of security group need to be in different availability zones.
+
+1. Choose **Next**.
+
+1. Navigate down the page and choose **I acknowledge that CloudFormation might create IAM resources with custom names.**.
+
+1. Choose **Next**.
+
+1. Review the details, and choose **Submit**.
+
+1. After you create the fleet, create CloudFormation stacks with all the other downloaded templates to finish setting up the applications. Make sure to update **BucketName** each time to point to the correct S3 bucket. You can edit the **BucketName** in the CloudFormation console. Alternatively, you can edit the template files directly and update the `S3Bucket` property.
+
+**Note**
+The downloaded templates expect to find assets in an S3 bucket with a folder structure called `appstream/bluage/developer-ide/`. The bucket must be in the same AWS Region as the fleet that you created.
+
+**Important**
+Run all the CloudFormation scripts downloaded in step 4 to set up your application correctly.
+
+## Step 6: Access an instance
+<a name="set-up-appstream-ba-access"></a>
+
+After you create and start the fleet, you can create a temporary link to access the fleet through the native client.
+
+1. Navigate to WorkSpaces Applications in the AWS Management Console and choose the previously created stack:
+![The Stacks page in WorkSpaces Applications showing the stack created for AWS Mainframe Modernization.](http://docs.aws.amazon.com/m2/latest/userguide/images/aas-ba-stacks.png)
+
+1. On the stack details page, choose the stack, and then choose **Associate fleet**.
+
+1. In the prompt, choose the fleet you created and started previously.
+
+1. Choose **Associate**.
+
+1. Choose the associated stack and from the **Actions** menu, choose **Create Streaming URL**, enter an arbitrary User ID and a URL expiration time, and then choose **Get URL**. You get an URL that you can use to stream to a browser or into the native client. We recommend that you stream into the native client.
+
+## Clean up resources
+<a name="set-up-appstream-ba-clean"></a>
+
+For the procedure to clean up the created stack and fleets, see [Create an WorkSpaces Applications Fleet and Stack](https://docs.aws.amazon.com/appstream2/latest/developerguide/set-up-stacks-fleets.html).
+
+When you've deleted the WorkSpaces Applications objects, you or the account administrator can also clean up the S3 buckets for Application Settings and Home Folders.
+
+**Note**
+The home folder for a given user is unique across all fleets, so you might need to retain it if other WorkSpaces Applications stacks are active in the same account.
+
+You can't use the WorkSpaces Applications console to delete users. Instead, you must use the service API with the AWS CLI. For more information, see [User Pool Administration](https://docs.aws.amazon.com/appstream2/latest/developerguide/user-pool-admin.html) in the *Amazon WorkSpaces Applications Administration Guide*.

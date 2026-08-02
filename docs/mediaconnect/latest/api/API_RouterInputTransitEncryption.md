@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_RouterInputTransitEncryption.html
+---
+
+# RouterInputTransitEncryption
+<a name="API_RouterInputTransitEncryption"></a>
+
+The transit encryption settings for a router input.
+
+## Contents
+<a name="API_RouterInputTransitEncryption_Contents"></a>
+
+ ** encryptionKeyConfiguration **   <a name="mediaconnect-Type-RouterInputTransitEncryption-encryptionKeyConfiguration"></a>
+Contains the configuration details for the encryption key used in transit encryption, including the key source and associated parameters.
+Type: [RouterInputTransitEncryptionKeyConfiguration](API_RouterInputTransitEncryptionKeyConfiguration.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: Yes
+
+ ** encryptionKeyType **   <a name="mediaconnect-Type-RouterInputTransitEncryption-encryptionKeyType"></a>
+Specifies the type of encryption key to use for transit encryption.
+Type: String
+Valid Values: `SECRETS_MANAGER | AUTOMATIC`
+Required: No
+
+## See Also
+<a name="API_RouterInputTransitEncryption_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/RouterInputTransitEncryption)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/RouterInputTransitEncryption)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/RouterInputTransitEncryption)

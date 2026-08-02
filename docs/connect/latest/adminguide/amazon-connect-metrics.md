@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/amazon-connect-metrics.html
+---
+
+# Metrics, dashboards, and reports in Connect Customer
+<a name="amazon-connect-metrics"></a>
+
+In Connect Customer, data about contacts are captured in contact records. This data can include the amount of time a contact spends in each state: customer on hold, customer in queue, agent interaction time.
+
+The basis for most historical and real-time metrics in Connect Customer is the data in the contact record. When you create metrics reports, the values displayed for **most** (not all) metrics in the report are calculated using the data in the contact records.
+
+Contact records are available within your instance for 24 months from the time when the associated contact was initiated. You can also stream contact records to Amazon Kinesis to retain the data longer, and perform advanced analysis on it.
+
+**Tip**
+For detailed information about the activity of agents in your contact center, use [Connect Customer agent event streams](agent-event-streams.md).
+
+**Topics**
++ [Metric definitions](metrics-definitions.md)
++ [Custom metric primitives](metric-primitive-definitions.md)
++ [Assign permissions](dashboard-required-permissions.md)
++ [Dashboards](dashboards.md)
++ [Real-time metrics reports](real-time-metrics-reports.md)
++ [Historical metrics reports](historical-metrics.md)
++ [Login/Logout reports for agents in Connect Customer](login-logout-reports.md)
++ [Agent event streams](agent-event-streams.md)
++ [Contacts, contact chains, and contact attributes](contacts-contact-chains-attributes.md)
++ [Contact events](contact-events.md)
++ [Contact records data model](ctr-data-model.md)
++ [Use contact segment attributes](use-contact-segment-attributes.md)
++ [Use predefined attributes in dashboards](use-predefined-attributes-dashboards.md)
++ [Change an agent's activity status](rtm-change-agent-activity-state.md)
++ [Apply hierarchy-based access control](dashboard-access-control.md)
++ [Apply tag-based access control](dashboard-tag-based-access-control.md)
++ [Identify conferences and transfers](identify-conferences-transfers.md)
++ [View a contact record in the Connect Customer admin website](sample-ctr.md)
++ [Agent status in the Contact Control Panel (CCP)](metrics-agent-status.md)
++ [About contact states](about-contact-states.md)
++ [About queued callbacks](about-queued-callbacks.md)
++ [Save custom reports](save-reports.md)
++ [Share saved reports](share-reports.md)
++ [View a shared report](view-a-shared-report.md)
++ [Make a report read-only](readonly-reports.md)
++ [Publish reports](publish-reports.md)
++ [Manage saved reports (admin)](manage-saved-reports-admin.md)
++ [Monitor CloudWatch metrics](monitoring-cloudwatch.md)
++ [Logging service API calls](logging-using-cloudtrail.md)
++ [EventBridge events emitted by Connect Customer](connect-eventbridge-events.md)

@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/mediaconnect_code_examples.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Code examples for MediaConnect using AWS SDKs
+<a name="mediaconnect_code_examples"></a>
+
+The following code examples show you how to use AWS Elemental MediaConnect with an AWS software development kit (SDK).
+
+*Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
+
+**More resources**
++  **[ MediaConnect Developer Guide](https://docs.aws.amazon.com/mediaconnect/latest/dev/what-is.html)** – More information about MediaConnect.
++ **[MediaConnect API Reference](https://docs.aws.amazon.com/mediaconnect/latest/APIReference/Welcome.html)** – Details about all available MediaConnect actions.
++ **[AWS Developer Center](https://aws.amazon.com/developer/code-examples/?awsf.sdk-code-examples-product=product%23)** – Code examples that you can filter by category or full-text search.
++ **[AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)** – GitHub repo with complete code in preferred languages. Includes instructions for setting up and running the code.
+
+**Contents**
++ [Scenarios](mediaconnect_code_examples_scenarios.md)
+  + [Getting started with video transport streaming](mediaconnect_example_mediaconnect_GettingStarted_081_section.md)

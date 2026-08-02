@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_Types.html
+---
+
+ On October 7, 2026, AWS will discontinue support for Amazon Lookout for Equipment. After October 7, 2026, you will no longer be able to access the Lookout for Equipment console or resources. For more information, [see the following](https://aws.amazon.com/blogs/machine-learning/preserve-access-and-explore-alternatives-for-amazon-lookout-for-equipment/).
+
+# Data Types
+<a name="API_Types"></a>
+
+The following data types are supported:
++  [CategoricalValues](API_CategoricalValues.md)
++  [CountPercent](API_CountPercent.md)
++  [DataIngestionJobSummary](API_DataIngestionJobSummary.md)
++  [DataPreProcessingConfiguration](API_DataPreProcessingConfiguration.md)
++  [DataQualitySummary](API_DataQualitySummary.md)
++  [DatasetSchema](API_DatasetSchema.md)
++  [DatasetSummary](API_DatasetSummary.md)
++  [DuplicateTimestamps](API_DuplicateTimestamps.md)
++  [InferenceEventSummary](API_InferenceEventSummary.md)
++  [InferenceExecutionSummary](API_InferenceExecutionSummary.md)
++  [InferenceInputConfiguration](API_InferenceInputConfiguration.md)
++  [InferenceInputNameConfiguration](API_InferenceInputNameConfiguration.md)
++  [InferenceOutputConfiguration](API_InferenceOutputConfiguration.md)
++  [InferenceS3InputConfiguration](API_InferenceS3InputConfiguration.md)
++  [InferenceS3OutputConfiguration](API_InferenceS3OutputConfiguration.md)
++  [InferenceSchedulerSummary](API_InferenceSchedulerSummary.md)
++  [IngestedFilesSummary](API_IngestedFilesSummary.md)
++  [IngestionInputConfiguration](API_IngestionInputConfiguration.md)
++  [IngestionS3InputConfiguration](API_IngestionS3InputConfiguration.md)
++  [InsufficientSensorData](API_InsufficientSensorData.md)
++  [InvalidSensorData](API_InvalidSensorData.md)
++  [LabelGroupSummary](API_LabelGroupSummary.md)
++  [LabelsInputConfiguration](API_LabelsInputConfiguration.md)
++  [LabelsS3InputConfiguration](API_LabelsS3InputConfiguration.md)
++  [LabelSummary](API_LabelSummary.md)
++  [LargeTimestampGaps](API_LargeTimestampGaps.md)
++  [MissingCompleteSensorData](API_MissingCompleteSensorData.md)
++  [MissingSensorData](API_MissingSensorData.md)
++  [ModelDiagnosticsOutputConfiguration](API_ModelDiagnosticsOutputConfiguration.md)
++  [ModelDiagnosticsS3OutputConfiguration](API_ModelDiagnosticsS3OutputConfiguration.md)
++  [ModelSummary](API_ModelSummary.md)
++  [ModelVersionSummary](API_ModelVersionSummary.md)
++  [MonotonicValues](API_MonotonicValues.md)
++  [MultipleOperatingModes](API_MultipleOperatingModes.md)
++  [RetrainingSchedulerSummary](API_RetrainingSchedulerSummary.md)
++  [S3Object](API_S3Object.md)
++  [SensorStatisticsSummary](API_SensorStatisticsSummary.md)
++  [SensorsWithShortDateRange](API_SensorsWithShortDateRange.md)
++  [Tag](API_Tag.md)
++  [UnsupportedTimestamps](API_UnsupportedTimestamps.md)

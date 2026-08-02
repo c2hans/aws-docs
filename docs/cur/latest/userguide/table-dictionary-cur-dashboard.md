@@ -1,0 +1,68 @@
+---
+source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html
+---
+
+# Cost and usage dashboard
+<a name="table-dictionary-cur-dashboard"></a>
+
+The SQL table name for cost and usage dashboard is `COST_AND_USAGE_DASHBOARD`.
+
+## Table configurations
+<a name="cur-dashboard-table-configurations"></a>
+
+Table configurations are user-controlled properties that a user can set to change the data or schema of a table before it's queried in Data Exports.
+
+The Cost and Usage Dashboard does not have any modifiable table configurations.
+
+## AWS Organizations support
+<a name="cur-dashboard-table-organizations"></a>
+
+The cost and usage dashboard table is generated from CUR 2.0 data, which means that it inherits the same AWS Organizations settings that apply to CUR 2.0 and the same behavior applies. To understand how AWS Organizations applies to the cost and usage dashboard, refer to [AWS Organizations support](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2.html#cur2-table-organizations) in the CUR 2.0 section.
+
+## Cost and usage dashboard columns
+<a name="cur-dashboard-columns"></a>
+
+****
+
+| Column name | Description |
+| --- | --- |
+| amortized\_cost | The effective cost of the upfront and monthly reservation fees spread across the billing period. This is the sum of costs based on the type of line item. The cost is determined as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| availability\_zone | The Availability Zone that hosts this line item. For example, us-east-1a or us-east-1b. |
+| billing\_entity | Helps you identify whether your invoices or transactions are for AWS Marketplace or for purchases of other AWS services. Possible values include:**AWS:** Identifies a transaction for AWS services other than in AWS Marketplace.<br />**AWS Marketplace:** Identifies a purchase in AWS Marketplace. |
+| billing\_period | The start date of the billing period that is covered by dashboard, in UTC. The format is `YYYY-MM-DDTHH:mm:ssZ`.<br />**Example:** 2023-10-01T00:00:00.000Z |
+| charge\_category | The category of the charge covered by this line item. The following are the possible categories:Running\_usage: When the charge\_type is one of the following: ‘DiscountedUsage’, SavingsPlanCoveredUsage’, or ‘Usage’.<br />Non\_Usage: For everything else under charge\_type. |
+| charge\_type | The type of charge covered by this line item. See lineItem/LineItemType here for all the possible values. |
+| current\_generation | Helps you identify whether your Amazon RDS instance is of current generation or not. |
+| database\_engine | Describes the database engine of your database.**Examples:** PostgreSQL, Oracle. |
+| instance\_type | Describes the instance type, size, and family, which define the CPU, networking, and storage capacity of your instance.**Examples:** t2.small, m4.xlarge, t2.micro, m4.large, t2.largeServices:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| instance\_type\_family | The instance family that is associated with the given usage.**Examples:** t2, m4, m3<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| invoice\_id | The ID associated with a specific line item. The invoice\_id remains blank until the export is final. |
+| item\_description | The description of the line item type. For example, the description of a usage line item summarizes what type of usage you incurred during a specific time period.For size-flexible RIs, the description corresponds to the RI the benefit was applied to. For example, if a line item corresponds to a t2.micro and a t2.small RI was applied to the usage, the lineItem/LineItemDescription displays t2.small.<br />The description for a usage line item with an RI discount contains the pricing plan covered by the line item. |
+| legal\_entity | The Seller of Record of a specific product or service. In most cases, the invoicing entity and legal entity are the same. The values might differ for third-party AWS Marketplace transactions. Possible values include:**Amazon Web Services, Inc. :** The entity that sells AWS services.<br />**Amazon Web Services India Private Limited :** The local Indian entity that acts as a reseller for AWS services in India. |
+| linked\_account\_id | The account ID of the account that used this line item. For organizations, this can be either the management account or a member account. You can use this field to track costs or usage by account. |
+| linked\_account\_name | The name of the account that used this line item. For organizations, this can be either the management account or a member account. You can use this field to track costs or usage by account. |
+| operation | The specific AWS operation covered by this line item. This describes the specific usage of the line item. For example, a value of RunInstances indicates the operation of an Amazon EC2 instance. |
+| payer\_account\_id | The account ID of the paying account. For an organization in AWS Organizations, this is the account ID of the management account. |
+| payer\_account\_name | The account name of the paying account. For an organization in AWS Organizations, this is the name of the management account. |
+| platform | Describes the operating system of your Amazon EC2 instance.**Examples:** Amazon Linux, Ubuntu, Windows Server, Oracle Linux, FreeBSD<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| pricing\_unit | The pricing unit that AWS used for calculating your usage cost. For example, the pricing unit for Amazon EC2 instance usage is in hours. |
+| processor | Describes the processor on your Amazon EC2 instance.**Examples:** High Frequency Intel Xeon E7-8880 v3 (Haswell), Intel Xeon E5-2670, AMD EPYC 7571<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| processor\_features | Describes the processor features of your instances.**Examples:** Intel AVX, Intel AVX2, Intel AVX512, Intel Turbo<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| product\_code | The code of the product measured. For example, AmazonEC2 is the product code for Amazon Elastic Compute Cloud. |
+| product\_family | The category for the type of product.**Examples:**Alarm, AWS Budgets, Stopped Instance, Storage Snapshot, Compute |
+| product\_from\_location | Describes the location where the usage originated from.**Sample values:** External, US East (N. Virginia), Global<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| product\_group | A construct of several products that are similar by definition, or grouped together. For example, the Amazon EC2 team can categorize their products into shared instances, dedicated host, and dedicated usage.**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| product\_name | The full name of the AWS service.**Examples:** AWS Backup, AWS Config, Amazon Registrar, Amazon Elastic File System, Amazon Elastic Compute Cloud |
+| product\_to\_location | Describes the location usage destination.**Sample values:** External, US East (N. Virginia)<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| public\_cost | The total cost for the line item based on public On-Demand Instance rates. If you have SKUs with multiple On-Demand public costs, the equivalent cost for the highest tier is displayed. For example, services offering free-tiers or tiered pricing. |
+| purchase\_option | The way in which you acquired and paid for the AWS resource in this line item. The purchase\_option column contains ‘SavingsPlan’, ‘Reserved’, or ‘Spot’ for savings plans, reserved instances, and spot instances respectively. The purchase\_option column has ‘OnDemand’ for the remaining records. |
+| region | The geographical area that hosts your AWS services. Use this field to analyze spend across a particular Region.**Examples:** eu-west-3, us-west-1, us-east-1, ap-northeast-2, sa-east-1<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| ri\_sp\_arn | The unique Savings Plan or Reserved Instance identifier. It typically follows the format arn: aws: savingsplans: <region>:<account-id>:savingsplan/<savings-plan-id> or arn: aws:ec2:<region>:<account>reserved-instances/<reserved-instance-id>. |
+| ri\_sp\_trueup | This is the sum of adjustments based on the type of line item. True-up represents the difference between total upfront fees incurred in the period using an unblended cost, and the smaller portion of upfront fees applicable to the period using an amortized cost. The adjustment is determined as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| ri\_sp\_upfront\_fee | The upfront fee refers to the initial payment you make when you choose certain types of Reserved Instances or Savings Plans. |
+| service | The name of the AWS service.**Examples:** AmazonVPC, AmazonRDS, AmazonRoute53 etc. |
+| tenancy | The type of tenancy allowed on the Amazon EC2 instance.**Examples:** Dedicated, Reserved, Shared, NA, Host<br />**Services:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur-dashboard.html) |
+| unblended\_cost | The UnblendedCost is the UnblendedRate multiplied by the UsageAmount. |
+| usage\_date | The start date and time for the line item in UTC. The format is `YYYY-MM-DDTHH:mm:ssZ`.<br />**Example:** 2023-10-01T00:00:00.000Z |
+| usage\_quantity | The amount of usage that you incurred during the specified time period. For size-flexible Reserved Instances, use the reservation/TotalReservedUnits column instead. Certain subscription charges will have a UsageAmount of 0.  |
+| usage\_type | The usage details of the line item. For example, USW2-BoxUsage:m2.2xlarge describes an M2 High Memory Double Extra Large instance in the US West (Oregon) Region. |

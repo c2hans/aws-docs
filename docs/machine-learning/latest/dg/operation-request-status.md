@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/machine-learning/latest/dg/operation-request-status.html
+---
+
+We are no longer updating the Amazon Machine Learning service or accepting new users for it. This documentation is available for existing users, but we are no longer updating it. For more information, see [ What is Amazon Machine Learning](https://docs.aws.amazon.com/machine-learning/latest/dg/what-is-amazon-machine-learning.html).
+
+# Checking Request Status
+<a name="operation-request-status"></a>
+
+When you submit a request, you can check its status with the Amazon Machine Learning (Amazon ML) API. For example, if you submit a `createMLModel` request, you can check its status by using the `describeMLModel` call. Amazon ML responds with one of the following statuses.
+
+|  **Status**  |  **Definition**  |
+| --- | --- |
+|  PENDING  |  Amazon ML is validating the request. <br /> OR <br /> Amazon ML is waiting for computational resources to become available before running the request. This might occur when your account has exceeded the maximum number of concurrent running batch operation requests. If this is the case, the status transitions to **InProgress** when other running requests have completed or get canceled. <br /> OR <br /> Amazon ML is waiting for a batch operation that your request depends on to complete.  |
+|  INPROGRESS  |  Your request is still running.  |
+|  COMPLETED  |  The request has finished, and the object is ready to be used (ML models and datasources) or viewed (batch predictions and evaluations).  |
+|  FAILED  |  There is something wrong with the data that you provided, or you have canceled the operation. For example, if you try to compute data statistics on a datasource that failed to complete, you might receive an Invalid or Failed status message. The error message explains why the operation did not complete successfully.  |
+|  DELETED  |  The object has already been deleted.  |
+
+Amazon ML also provides information about an object, such as when Amazon ML finished creating that object. For more information, see [Listing Objects](listing-objects.md).

@@ -1,0 +1,71 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetDashboard.html
+---
+
+# GetDashboard
+<a name="API_GetDashboard"></a>
+
+Displays the details of the dashboard that you specify.
+
+To copy an existing dashboard, use `GetDashboard`, and then use the data returned within `DashboardBody` as the template for the new dashboard when you call `PutDashboard` to create the copy.
+
+## Request Parameters
+<a name="API_GetDashboard_RequestParameters"></a>
+
+ ** DashboardName **
+The name of the dashboard to be described.
+Type: String
+Required: Yes
+
+## Response Elements
+<a name="API_GetDashboard_ResponseElements"></a>
+
+The following elements are returned by the service.
+
+ ** DashboardArn **
+The Amazon Resource Name (ARN) of the dashboard.
+Type: String
+
+ ** DashboardBody **
+The detailed information about the dashboard, including what widgets are included and their location on the dashboard. For more information about the `DashboardBody` syntax, see [Dashboard Body Structure and Syntax](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Dashboard-Body-Structure.html).
+Type: String
+
+ ** DashboardName **
+The name of the dashboard.
+Type: String
+
+## Errors
+<a name="API_GetDashboard_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalServiceError **
+Request processing has failed due to some unknown error, exception, or failure.
+ ** Message **
+
+HTTP Status Code: 500
+
+ ** InvalidParameterValue **
+The value of an input parameter is bad or out-of-range.
+ ** message **
+
+HTTP Status Code: 400
+
+ ** ResourceNotFound **
+The specified dashboard does not exist.
+HTTP Status Code: 404
+
+## See Also
+<a name="API_GetDashboard_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/GetDashboard)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/GetDashboard)

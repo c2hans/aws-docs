@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/standard-case-definition.html
+---
+
+# Customer Profiles standard case object fields
+<a name="standard-case-definition"></a>
+
+The following table lists all the fields in the Customer Profiles standard case object.
+
+| Standard case field | Data type | Description |
+| --- | --- | --- |
+| CaseId | String | The unique identifier of a standard case. |
+| Title | String | The case's title |
+| Summary | String | The case's summary. |
+| Status | String | The case's status. |
+| Reason | String | The case's reason. |
+| CreatedBy | String | The case's creator. |
+| CreatedDate | String | The case's date created. |
+| UpdatedDate | String | The case's date updated. |
+| ClosedDate | String | The case's date closed. |
+| AdditionalInformation | String | Any additional information relevant to the case. |
+| DataSource | String | The case's data source. |
+| Attributes | String-to-string map | Key-value pair of attributes of a standard case. |
+
+The standard case objects are indexed by the keys in the following table.
+
+| Standard index name | Standard case field |
+| --- | --- |
+| \_caseId | CaseId |
+
+For example, you can use `_caseId` as a key name with the [SearchProfiles API](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) to find a profile that has a case whose CaseId matches with the search value. You can find the standard case objects associated with a specific profile by using the [ListProfileObjects API](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileObjects.html) with the `ProfileId` and `ObjectTypeName` set to `_case`.

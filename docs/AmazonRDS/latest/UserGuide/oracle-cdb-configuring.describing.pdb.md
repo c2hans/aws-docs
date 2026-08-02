@@ -1,0 +1,176 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/oracle-cdb-configuring.describing.pdb.html
+---
+
+# Viewing tenant database details
+<a name="oracle-cdb-configuring.describing.pdb"></a>
+
+You can view details about a tenant database in the same way that you can for a non-CDB or CDB.
+
+## Console
+<a name="oracle-cdb-configuring.describing.pdb.console"></a>
+
+**To view details about a tenant database**
+
+1. Sign in to the AWS Management Console and open the Amazon RDS console at [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds/).
+
+1. In the Amazon RDS console, choose the AWS Region where your DB instance resides.
+
+1. In the navigation pane, choose **Databases**.
+![View details about a CDB.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/cdb-list.png)
+
+   In the preceding image, the sole tenant database (PDB) appears as a child of the DB instance.
+
+1. Choose the name of a tenant database.
+![View details about a PDB.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/pdb-details.png)
+
+## AWS CLI
+<a name="oracle-cdb-configuring.describing.pdb.cli"></a>
+
+To see details about your PDBs, use the AWS CLI command [describe-tenant-databases](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-tenant-databases.html).
+
+This following example describes all tenant databases in the specified Region.
+
+**Example**
+For Linux, macOS, or Unix:
+
+```
+1. aws rds describe-tenant-databases --region {{us-east-1}}
+```
+For Windows:
+
+```
+1. aws rds describe-tenant-databases --region {{us-east-1}}
+```
+This command produces output similar to the following.
+
+```
+    "TenantDatabases" : [
+         {
+            "DBInstanceIdentifier" : "my-cdb-inst",
+            "TenantDBName" : "pdb-test",
+            "Status" : "available",
+            "MasterUsername" : "pdb-test-admin",
+            "DbiResourceId" : "db-abc123",
+            "TenantDatabaseResourceId" : "tdb-bac456",
+            "TenantDatabaseARN" : "arn:aws:rds:us-east-1:123456789012:db:my-cdb-inst:pdb-test",
+            "CharacterSetName": "AL32UTF8",
+            "NcharCharacterSetName": "AL16UTF16",
+            "DeletionProtection": false,
+            "PendingModifiedValues": {
+                 "MasterUserPassword": "****"
+            },
+            "TagList": []
+         },
+         {
+
+            "DBInstanceIdentifier" : "my-cdb-inst2",
+            "TenantDBName" : "pdb-dev",
+            "Status" : "modifying",
+            "MasterUsername" : "masterrdsuser",
+            "DbiResourceId" : "db-xyz789",
+            "TenantDatabaseResourceId" : "tdb-ghp890",
+            "TenantDatabaseARN" : "arn:aws:rds:us-east-1:123456789012:db:my-cdb-inst2:pdb-dev",
+            "CharacterSetName": "AL32UTF8",
+            "NcharCharacterSetName": "AL16UTF16",
+            "DeletionProtection": false,
+            "PendingModifiedValues": {
+                 "MasterUserPassword": "****"
+            },
+            "TagList": []
+         },
+         ... other truncated data
+```
+
+The following example describes the tenant databases on DB instance `my-cdb-inst` in the specified Region.
+
+**Example**
+For Linux, macOS, or Unix:
+
+```
+1. aws rds describe-tenant-databases --region {{us-east-1}} \
+2.     --db-instance-identifier {{my-cdb-inst}}
+```
+For Windows:
+
+```
+1. aws rds describe-tenant-databases --region {{us-east-1}} ^
+2.     --db-instance-identifier {{my-cdb-inst}}
+```
+This command produces output similar to the following.
+
+```
+{
+    "TenantDatabase": {
+        "TenantDatabaseCreateTime": "2023-10-19T23:55:30.046Z",
+        "DBInstanceIdentifier": "my-cdb-inst",
+        "TenantDBName": "pdb-hr",
+        "Status": "creating",
+        "MasterUsername": "tenant-admin-user",
+        "DbiResourceId": "db-abc123",
+        "TenantDatabaseResourceId": "tdb-bac567",
+        "TenantDatabaseARN": "arn:aws:rds:us-west-2:579508833180:pdb-hr:tdb-abcdefghi1jklmno2p3qrst4uvw5xy6zabc7defghi8jklmn90op",
+        "CharacterSetName": "AL32UTF8",
+        "NcharCharacterSetName": "AL16UTF16",
+        "DeletionProtection": false,
+        "PendingModifiedValues": {
+            "MasterUserPassword": "****"
+        },
+        "TagList": [
+            {
+                "Key": "TEST",
+                "Value": "testValue"
+            }
+        ]
+    }
+}
+```
+
+The following example describes tenant database `pdb1` on DB instance `my-cdb-inst` in the US East (N. Virginia) Region.
+
+**Example**
+For Linux, macOS, or Unix:
+
+```
+1. aws rds describe-tenant-databases --region {{us-east-1}} \
+2. --db-instance-identifier {{my-cdb-inst}} \
+3. --tenant-db-name {{pdb1}}
+```
+For Windows:
+
+```
+1. aws rds describe-tenant-databases --region {{us-east-1}} ^
+2. --db-instance-identifier {{my-cdb-inst}} ^
+3. --tenant-db-name {{pdb1}}
+```
+This command produces output similar to the following.
+
+```
+{
+    "TenantDatabases" : [
+        {
+            "DbiResourceId" : "db-abc123",
+            "TenantDatabaseResourceId" : "tdb-bac567",
+            "TenantDatabaseARN" : "arn:aws:rds:us-east-1:123456789012:db:my-cdb-inst:pdb1",
+            "DBInstanceIdentifier" : "my-cdb-inst",
+            "TenantDBName" : "pdb1",
+            "Status" : "available",
+            "MasterUsername" : "masterawsuser",
+            "Port" : "1234",
+            "CharacterSetName": "UTF-8",
+            "ParameterGroups": [
+                {
+                    "ParameterGroupName": "tenant-custom-pg",
+                    "ParameterApplyStatus": "in-sync"
+                }
+            ],
+            "OptionGroupMemberships": [
+                {
+                    "OptionGroupName": "tenant-custom-og",
+                    "Status": "in-sync"
+                }
+            ]
+         }
+    ]
+}
+```

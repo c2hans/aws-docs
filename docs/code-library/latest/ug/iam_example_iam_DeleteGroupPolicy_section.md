@@ -1,0 +1,48 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_DeleteGroupPolicy_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `DeleteGroupPolicy` with a CLI
+<a name="iam_example_iam_DeleteGroupPolicy_section"></a>
+
+The following code examples show how to use `DeleteGroupPolicy`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To delete a policy from an IAM group**
+The following `delete-group-policy` command deletes the policy named `ExamplePolicy` from the group named `Admins`.
+
+```
+aws iam delete-group-policy \
+    --group-name {{Admins}} \
+    --policy-name {{ExamplePolicy}}
+```
+This command produces no output.
+To see the policies attached to a group, use the `list-group-policies` command.
+For more information, see [Managing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html) in the *AWS IAM User Guide*.
++  For API details, see [DeleteGroupPolicy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/delete-group-policy.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example removes the inline policy named `TesterPolicy` from the IAM group `Testers`. The users in that group immediately lose the permissions defined in that policy.**
+
+```
+Remove-IAMGroupPolicy -GroupName Testers -PolicyName TestPolicy
+```
++  For API details, see [DeleteGroupPolicy](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example removes the inline policy named `TesterPolicy` from the IAM group `Testers`. The users in that group immediately lose the permissions defined in that policy.**
+
+```
+Remove-IAMGroupPolicy -GroupName Testers -PolicyName TestPolicy
+```
++  For API details, see [DeleteGroupPolicy](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

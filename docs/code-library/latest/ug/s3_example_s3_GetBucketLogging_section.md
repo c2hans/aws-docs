@@ -1,0 +1,68 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/s3_example_s3_GetBucketLogging_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `GetBucketLogging` with a CLI
+<a name="s3_example_s3_GetBucketLogging_section"></a>
+
+The following code examples show how to use `GetBucketLogging`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To retrieve the logging status for a bucket**
+The following `get-bucket-logging` example retrieves the logging status for the specified bucket.
+
+```
+aws s3api get-bucket-logging \
+    --bucket {{amzn-s3-demo-bucket}}
+```
+Output:
+
+```
+{
+    "LoggingEnabled": {
+        "TargetPrefix": "",
+        "TargetBucket": "amzn-s3-demo-bucket-logs"
+          }
+}
+```
++  For API details, see [GetBucketLogging](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/s3api/get-bucket-logging.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This command returns the logging status for the specified bucket.**
+
+```
+Get-S3BucketLogging -BucketName 'amzn-s3-demo-bucket'
+```
+**Output:**
+
+```
+TargetBucketName   Grants TargetPrefix
+----------------   ------ ------------
+testbucket1        {}     testprefix
+```
++  For API details, see [GetBucketLogging](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This command returns the logging status for the specified bucket.**
+
+```
+Get-S3BucketLogging -BucketName 'amzn-s3-demo-bucket'
+```
+**Output:**
+
+```
+TargetBucketName   Grants TargetPrefix
+----------------   ------ ------------
+testbucket1        {}     testprefix
+```
++  For API details, see [GetBucketLogging](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

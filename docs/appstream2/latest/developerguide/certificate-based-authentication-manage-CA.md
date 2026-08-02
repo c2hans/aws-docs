@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/certificate-based-authentication-manage-CA.html
+---
+
+# Private CA Certificate
+<a name="certificate-based-authentication-manage-CA"></a>
+
+In a typical configuration, the private CA certificate has a validity period of 10 years. For more information about replacing a private CA with an expired certificate, or reissuing the private CA with a new validity period, see [Managing the private CA lifecycle ](https://docs.aws.amazon.com/privateca/latest/userguide/ca-lifecycle.html)

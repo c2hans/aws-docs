@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ToolOutputFilter.html
+---
+
+# ToolOutputFilter
+<a name="API_amazon-q-connect_ToolOutputFilter"></a>
+
+Filter configuration for tool output.
+
+## Contents
+<a name="API_amazon-q-connect_ToolOutputFilter_Contents"></a>
+
+ ** jsonPath **   <a name="connect-Type-amazon-q-connect_ToolOutputFilter-jsonPath"></a>
+The JSON path for filtering tool output.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: Yes
+
+ ** outputConfiguration **   <a name="connect-Type-amazon-q-connect_ToolOutputFilter-outputConfiguration"></a>
+The output configuration for the filter.
+Type: [ToolOutputConfiguration](API_amazon-q-connect_ToolOutputConfiguration.md) object
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_ToolOutputFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/ToolOutputFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/ToolOutputFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/ToolOutputFilter)

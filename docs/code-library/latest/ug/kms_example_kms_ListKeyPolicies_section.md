@@ -1,0 +1,132 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/kms_example_kms_ListKeyPolicies_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListKeyPolicies` with an AWS SDK or CLI
+<a name="kms_example_kms_ListKeyPolicies_section"></a>
+
+The following code examples show how to use `ListKeyPolicies`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To get the names of key policies for a KMS key**
+The following `list-key-policies` example gets the names of the key policies for a customer managed key in the example account and Region. You can use this command to find the names of key policies for AWS managed keys and customer managed keys.
+Because the only valid key policy name is `default`, this command is not useful.
+To specify the KMS key, use the `key-id` parameter. This example uses a key ID value, but you can use a key ID or key ARN in this command.
+
+```
+aws kms list-key-policies \
+    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}}
+```
+Output:
+
+```
+{
+    "PolicyNames": [
+    "default"
+    ]
+}
+```
+For more information about AWS KMS key policies, see [Using Key Policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html) in the *AWS Key Management Service Developer Guide*.
++  For API details, see [ListKeyPolicies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/list-key-policies.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
+
+```
+    /**
+     * Asynchronously retrieves the key policy for the specified key ID and policy name.
+     *
+     * @param keyId       the ID of the AWS KMS key for which to retrieve the policy
+     * @param policyName the name of the key policy to retrieve
+     * @return a {@link CompletableFuture} that, when completed, contains the key policy as a {@link String}
+     */
+    public CompletableFuture<String> getKeyPolicyAsync(String keyId, String policyName) {
+        GetKeyPolicyRequest policyRequest = GetKeyPolicyRequest.builder()
+            .keyId(keyId)
+            .policyName(policyName)
+            .build();
+
+        return getAsyncClient().getKeyPolicy(policyRequest)
+            .thenApply(response -> {
+                String policy = response.policy();
+                logger.info("The response is: " + policy);
+                return policy;
+            })
+            .exceptionally(ex -> {
+                throw new RuntimeException("Failed to get key policy", ex);
+            });
+    }
+```
++  For API details, see [ListKeyPolicies](https://docs.aws.amazon.com/goto/SdkForJavaV2/kms-2014-11-01/ListKeyPolicies) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
+
+```
+class KeyPolicy:
+    def __init__(self, kms_client):
+        self.kms_client = kms_client
+
+    @classmethod
+    def from_client(cls) -> "KeyPolicy":
+        """
+        Creates a KeyPolicy instance with a default KMS client.
+
+        :return: An instance of KeyPolicy initialized with the default KMS client.
+        """
+        kms_client = boto3.client("kms")
+        return cls(kms_client)
+
+    def list_policies(self, key_id):
+        """
+        Lists the names of the policies for a key.
+
+        :param key_id: The ARN or ID of the key to query.
+        """
+        try:
+            policy_names = self.kms_client.list_key_policies(KeyId=key_id)[
+                "PolicyNames"
+            ]
+        except ClientError as err:
+            logging.error(
+                "Couldn't list your policies. Here's why: %s",
+                err.response["Error"]["Message"],
+            )
+            raise
+        else:
+            print(f"The policies for key {key_id} are:")
+            pprint(policy_names)
+```
++  For API details, see [ListKeyPolicies](https://docs.aws.amazon.com/goto/boto3/kms-2014-11-01/ListKeyPolicies) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
+
+```
+    TRY.
+        " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
+        oo_result = lo_kms->listkeypolicies( iv_keyid = iv_key_id ).
+        MESSAGE 'Retrieved key policies list.' TYPE 'I'.
+      CATCH /aws1/cx_kmsnotfoundexception.
+        MESSAGE 'Key not found.' TYPE 'E'.
+      CATCH /aws1/cx_kmskmsinternalex.
+        MESSAGE 'An internal error occurred.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [ListKeyPolicies](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

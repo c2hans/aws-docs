@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/lambda/latest/api/API_CallbackFailedDetails.html
+---
+
+# CallbackFailedDetails
+<a name="API_CallbackFailedDetails"></a>
+
+Contains details about a failed callback operation, including error information and the reason for failure.
+
+## Contents
+<a name="API_CallbackFailedDetails_Contents"></a>
+
+ ** Error **   <a name="lambda-Type-CallbackFailedDetails-Error"></a>
+An error object that contains details about the failure.
+Type: [EventError](API_EventError.md) object
+Required: Yes
+
+## See Also
+<a name="API_CallbackFailedDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/lambda-2015-03-31/CallbackFailedDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/lambda-2015-03-31/CallbackFailedDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lambda-2015-03-31/CallbackFailedDetails)

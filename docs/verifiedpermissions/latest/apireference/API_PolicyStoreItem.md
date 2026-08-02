@@ -1,0 +1,54 @@
+---
+source_url: https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_PolicyStoreItem.html
+---
+
+# PolicyStoreItem
+<a name="API_PolicyStoreItem"></a>
+
+Contains information about a policy store.
+
+This data type is used as a response parameter for the [ListPolicyStores](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_ListPolicyStores.html) operation.
+
+## Contents
+<a name="API_PolicyStoreItem_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** arn **   <a name="verifiedpermissions-Type-PolicyStoreItem-arn"></a>
+The Amazon Resource Name (ARN) of the policy store.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2500.
+Pattern: `arn:[^:]*:[^:]*:[^:]*:[^:]*:.*`
+Required: Yes
+
+ ** createdDate **   <a name="verifiedpermissions-Type-PolicyStoreItem-createdDate"></a>
+The date and time the policy was created.
+Type: Timestamp
+Required: Yes
+
+ ** policyStoreId **   <a name="verifiedpermissions-Type-PolicyStoreItem-policyStoreId"></a>
+The unique identifier of the policy store.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 200.
+Pattern: `[a-zA-Z0-9-/_]*`
+Required: Yes
+
+ ** description **   <a name="verifiedpermissions-Type-PolicyStoreItem-description"></a>
+Descriptive text that you can provide to help with identification of the current policy store.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 150.
+Required: No
+
+ ** lastUpdatedDate **   <a name="verifiedpermissions-Type-PolicyStoreItem-lastUpdatedDate"></a>
+The date and time the policy store was most recently updated.
+Type: Timestamp
+Required: No
+
+## See Also
+<a name="API_PolicyStoreItem_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/verifiedpermissions-2021-12-01/PolicyStoreItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/verifiedpermissions-2021-12-01/PolicyStoreItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/verifiedpermissions-2021-12-01/PolicyStoreItem)

@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/ppi-support-enablement.html
+---
+
+# Attend enablement sessions
+<a name="ppi-support-enablement"></a>
+
+AWS hosts regular enablement sessions on:
++ Migration best practices
++ PPI optimization strategies
++ New program features
++ Top performer insights
+
+Check the AWS Partner Central events calendar for upcoming sessions.

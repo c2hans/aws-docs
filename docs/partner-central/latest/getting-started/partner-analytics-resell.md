@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-analytics-resell.html
+---
+
+# Resell revenue and discounts
+<a name="partner-analytics-resell"></a>
+
+For more information, review the channel partner specific guides: [Solution Provider Program](https://partnercentral.awspartner.com/partnercentral2/s/article?category=AWS_Solution_Provider_Program&article=User-Guide-Partner-Analytics-Dashboard-for-Channel-spp) & [Distribution Program](https://partnercentral.awspartner.com/partnercentral2/s/article?category=AWS_Distribution_Program&article=User-Guide-Partner-Analytics-Dashboard-for-Channel-dp).

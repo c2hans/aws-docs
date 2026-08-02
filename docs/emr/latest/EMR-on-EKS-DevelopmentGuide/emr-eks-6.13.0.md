@@ -1,0 +1,70 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-6.13.0.html
+---
+
+# Amazon EMR on EKS 6.13.0 releases
+<a name="emr-eks-6.13.0"></a>
+
+This page describes the new and updated functionality for Amazon EMR that is specific to the Amazon EMR on EKS deployment. For details about Amazon EMR running on Amazon EC2 and about the Amazon EMR 6.13.0 release in general, see [Amazon EMR 6.13.0](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-6130-release.html) in the *Amazon EMR Release Guide*.
+
+## Amazon EMR on EKS 6.13 releases
+<a name="emr-eks-6.13.0-releases"></a>
+
+The following Amazon EMR 6.13.0 releases are available for Amazon EMR on EKS. Select a specific **emr-6.13.0-XXXX** release to view more details such as the related container image tag.
++ [emr-6.13.0-latest](emr-eks-6.13.0-latest.md)
++ [emr-6.13.0-20230814](emr-eks-6.13.0-20230814.md)
++ emr-6.13.0-spark-rapids-latest
++ emr-6.13.0-spark-rapids-20230814
++ emr-6.13.0-java11-latest
++ emr-6.13.0-java11-20230814
++ emr-6.13.0-java17-latest
++ emr-6.13.0-java17-20230814
++ emr-6.13.0-java17-al2023-latest
++ emr-6.13.0-java17-al2023-20230814
++ emr-6.13.0-spark-rapids-java17-latest
++ emr-6.13.0-spark-rapids-java17-20230814
++ emr-6.13.0-spark-rapids-java17-al2023-latest
++ emr-6.13.0-spark-rapids-java17-al2023-20230814
++ notebook-spark/emr-6.13.0-latest
++ notebook-spark/emr-6.13.0-20230814
++ notebook-spark/emr-6.13.0-spark-rapids-latest
++ notebook-spark/emr-6.13.0-spark-rapids-20230814
++ notebook-spark/emr-6.13.0-java11-latest
++ notebook-spark/emr-6.13.0-java11-20230814
++ notebook-spark/emr-6.13.0-java17-latest
++ notebook-spark/emr-6.13.0-java17-20230814
++ notebook-spark/emr-6.13.0-java17-al2023-latest
++ notebook-spark/emr-6.13.0-java17-al2023-20230814
++ notebook-python/emr-6.13.0-latest
++ notebook-python/emr-6.13.0-20230814
++ notebook-python/emr-6.13.0-spark-rapids-latest
++ notebook-python/emr-6.13.0-spark-rapids-20230814
++ notebook-python/emr-6.13.0-java11-latest
++ notebook-python/emr-6.13.0-java11-20230814
++ notebook-python/emr-6.13.0-java17-latest
++ notebook-python/emr-6.13.0-java17-20230814
++ notebook-python/emr-6.13.0-java17-al2023-latest
++ notebook-python/emr-6.13.0-java17-al2023-20230814
+
+## Release notes
+<a name="emr-eks-6.13.0-rn"></a>
+
+Release notes for Amazon EMR on EKS 6.13.0
++ **Supported applications** ‐ AWS SDK for Java 1.12.513, Apache Spark 3.4.1-amzn-0, Apache Hudi 0.13.1-amzn-0, Apache Iceberg 1.3.0-amzn-0, Delta 2.4.0, Apache Spark RAPIDS 23.06.0-amzn-1, Jupyter Enterprise Gateway 2.6.0.amzn****
++ **Supported components** ‐ `aws-sagemaker-spark-sdk`, `emr-ddb`, `emr-goodies`, `emr-s3-select`, `emrfs`, `hadoop-client`, `hudi`, `hudi-spark`, `iceberg`, `spark-kubernetes`.
++ **Supported configuration classifications**
+
+  For use with [StartJobRun](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_StartJobRun.html) and [ CreateManagedEndpoint](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateManagedEndpoint.html) APIs:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-6.13.0.html)
+
+  For use specifically with [ CreateManagedEndpoint](https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_CreateManagedEndpoint.html) APIs:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-6.13.0.html)
+
+  Configuration classifications allow you to customize applications. These often correspond to a configuration XML file for the application, such as `spark-hive-site.xml`. For more information, see [Configure Applications](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-configure-apps.html).
+
+## Notable features
+<a name="emr-eks-6.13.0-features"></a>
+
+The following features are included with the 6.13 release of Amazon EMR on EKS.
++ **Amazon Linux 2023** - With Amazon EMR on EKS 6.13 and higher, you can launch Spark with AL2023 as operating system together with Java 17 runtime. To do this, use release label with `al2023` in its name. For example: `emr-6.13.0-java17-al2023-latest`. We recommend that you validate and run performance tests before you move your production workloads to AL2023 and Java 17.
++ **[Amazon EMR on EKS with Apache Flink](run-flink-jobs.md) (public preview)** - Amazon EMR on EKS releases 6.13 and higher support Apache Flink, available in public preview. With this launch, you can run your Apache Flink-based application along with other types of applications on the same Amazon EKS cluster. This helps improve resource utilization and simplify infrastructure management. If you already run big data frameworks on Amazon EKS, you can now let Amazon EMR automate your provisioning and management.

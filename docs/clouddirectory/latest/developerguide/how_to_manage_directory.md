@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/clouddirectory/latest/developerguide/how_to_manage_directory.html
+---
+
+Amazon Cloud Directory is no longer be open to new customers. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
+
+# Manage Your Directories
+<a name="how_to_manage_directory"></a>
+
+This section describes how to maintain common directory tasks for your Cloud Directory environment.
+
+**Topics**
++ [Create Your Directory](how_to_manage_directory_create.md)
++ [Delete Your Directory](how_to_manage_directory_delete.md)
++ [Disable Your Directory](how_to_manage_directory_disable.md)
++ [Enable Your Directory](how_to_manage_directory_enable.md)

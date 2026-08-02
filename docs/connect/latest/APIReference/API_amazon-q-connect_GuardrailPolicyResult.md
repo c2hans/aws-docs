@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_GuardrailPolicyResult.html
+---
+
+# GuardrailPolicyResult
+<a name="API_amazon-q-connect_GuardrailPolicyResult"></a>
+
+Per-policy guardrail assessment result. Captures which policy triggered, its outcome, and a policy-specific detail string.
+
+## Contents
+<a name="API_amazon-q-connect_GuardrailPolicyResult_Contents"></a>
+
+ ** action **   <a name="connect-Type-amazon-q-connect_GuardrailPolicyResult-action"></a>
+Outcome of this specific policy.
+Type: String
+Valid Values: `NONE | BLOCKED | MASKED`
+Required: Yes
+
+ ** policyType **   <a name="connect-Type-amazon-q-connect_GuardrailPolicyResult-policyType"></a>
+The type of guardrail policy that was evaluated.
+Type: String
+Valid Values: `CONTENT_FILTER | TOPIC | WORD | SENSITIVE_INFORMATION_PII | SENSITIVE_INFORMATION_REGEX | CONTEXTUAL_GROUNDING`
+Required: Yes
+
+ ** details **   <a name="connect-Type-amazon-q-connect_GuardrailPolicyResult-details"></a>
+Policy-specific detail.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_GuardrailPolicyResult_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/GuardrailPolicyResult)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/GuardrailPolicyResult)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/GuardrailPolicyResult)

@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VolumeStatusAction.html
+---
+
+# VolumeStatusAction
+<a name="API_VolumeStatusAction"></a>
+
+Describes a volume status operation code.
+
+## Contents
+<a name="API_VolumeStatusAction_Contents"></a>
+
+ ** code **
+The code identifying the operation, for example, `enable-volume-io`.
+Type: String
+Required: No
+
+ ** description **
+A description of the operation.
+Type: String
+Required: No
+
+ ** eventId **
+The ID of the event associated with this operation.
+Type: String
+Required: No
+
+ ** eventType **
+The event type associated with this operation.
+Type: String
+Required: No
+
+## See Also
+<a name="API_VolumeStatusAction_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VolumeStatusAction)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VolumeStatusAction)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VolumeStatusAction)

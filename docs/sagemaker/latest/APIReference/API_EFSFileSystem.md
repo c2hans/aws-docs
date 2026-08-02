@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_EFSFileSystem.html
+---
+
+# EFSFileSystem
+<a name="API_EFSFileSystem"></a>
+
+A file system, created by you in Amazon EFS, that you assign to a user profile or space for an Amazon SageMaker AI Domain. Permitted users can access this file system in Amazon SageMaker AI Studio.
+
+## Contents
+<a name="API_EFSFileSystem_Contents"></a>
+
+ ** FileSystemId **   <a name="sagemaker-Type-EFSFileSystem-FileSystemId"></a>
+The ID of your Amazon EFS file system.
+Type: String
+Length Constraints: Minimum length of 11. Maximum length of 21.
+Pattern: `(fs-[0-9a-f]{8,})`
+Required: Yes
+
+## See Also
+<a name="API_EFSFileSystem_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/EFSFileSystem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/EFSFileSystem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/EFSFileSystem)

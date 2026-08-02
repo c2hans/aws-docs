@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/s2110-nmos-configure.html
+---
+
+# Enable NMOS
+<a name="s2110-nmos-configure"></a>
+
+You must enable NMOS on your appliance. If you are using an NMOS registry, you must configure AWS Elemental Live to connect to it. Perform this configuration once, before you create the first SMPTE 2110 NMOS input.
+
+You perform this step once on each appliance where you will use SMPTE 2110 NMOS inputs.
+
+1. In the Elemental Live web interface, choose **Settings**. (Don't choose **Input Devices** or **Routers** from the submenu).
+
+1. Complete the fields as described in the following table, then choose **Save**.
+
+| Field |  |
+| --- | --- |
+| Enable NMOS Access | Choose Yes |
+| Use make-before-break | The value that you enter here applies to all the SMPTE 2110 receiver groups in events on the node. <br />There are two ways for Elemental Live to process receiver patching instructions from the NMOS controller:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/s2110-nmos-configure.html) |
+| NMOS Node and Device Label**NMOS Node UUID**<br />**NMOS Device UUID** | These fields must uniquely identify this node on the NMOS registry. You can enter values or leave the fields blank to let Elemental Live generate values. <br />The combination of label UUID for the node must be unique on the NMOS registry. The combination of device label and UUID must be unique on the NMOS registry.<br />When you create a SMPTE 2110 receiver group on this node, the values will be included in the data that Elemental Live sends to the NMOS registry. |
+| NMOS Registry Server URI | Obtain the URI of the NMOS registry from your organization’s registry operator.If your organization doesn't use an NMOS registry, leave the auto-populated default value for this field in place. |

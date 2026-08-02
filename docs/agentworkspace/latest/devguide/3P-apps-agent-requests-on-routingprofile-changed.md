@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-agent-requests-on-routingprofile-changed.html
+---
+
+# Subscribe to agent routing profile changes in Connect Customer agent workspace
+<a name="3P-apps-agent-requests-on-routingprofile-changed"></a>
+
+Creates a subscription for RoutingProfileChanged event. This gets triggered when an Agent's routing profile gets updated.
+
+ **Signature**
+
+```
+const handler: RoutingProfileChangedHandler = async (data: AgentRoutingProfileChanged) => {
+    console.log("Agent routing profile change occurred! " + data);
+};
+
+agentClient.onRoutingProfileChanged(handler);
+
+// AgentRoutingProfileChanged Structure
+{
+    routingProfile: AgentRoutingProfile;
+    previous?: {
+        routingProfile: AgentRoutingProfile;
+    };
+}
+```
+
+ **Permissions required:**
+
+```
+*
+```

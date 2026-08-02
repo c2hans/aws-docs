@@ -1,0 +1,81 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetSecurityGroupsForVpc.html
+---
+
+# GetSecurityGroupsForVpc
+<a name="API_GetSecurityGroupsForVpc"></a>
+
+Gets security groups that can be associated by the AWS account making the request with network interfaces in the specified VPC.
+
+## Request Parameters
+<a name="API_GetSecurityGroupsForVpc_RequestParameters"></a>
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
+
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
+Type: Boolean
+Required: No
+
+ **Filter.N**
+The filters. If using multiple filters, the results include security groups which match all filters.
++  `group-id`: The security group ID.
++  `description`: The security group's description.
++  `group-name`: The security group name.
++  `owner-id`: The security group owner ID.
++  `primary-vpc-id`: The VPC ID in which the security group was created.
+Type: Array of [Filter](API_Filter.md) objects
+Required: No
+
+ **MaxResults**
+The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see [Pagination](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/Query-Requests.html#api-pagination).
+Type: Integer
+Valid Range: Minimum value of 5. Maximum value of 1000.
+Required: No
+
+ **NextToken**
+The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
+Type: String
+Required: No
+
+ **VpcId**
+The VPC ID where the security group can be used.
+Type: String
+Required: Yes
+
+## Response Elements
+<a name="API_GetSecurityGroupsForVpc_ResponseElements"></a>
+
+The following elements are returned by the service.
+
+ **nextToken**
+The token to include in another request to get the next page of items. This value is `null` when there are no more items to return.
+Type: String
+
+ **requestId**
+The ID of the request.
+Type: String
+
+ **securityGroupForVpcSet**
+The security group that can be used by interfaces in the VPC.
+Type: Array of [SecurityGroupForVpc](API_SecurityGroupForVpc.md) objects
+
+## Errors
+<a name="API_GetSecurityGroupsForVpc_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+## See Also
+<a name="API_GetSecurityGroupsForVpc_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/GetSecurityGroupsForVpc)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/GetSecurityGroupsForVpc)

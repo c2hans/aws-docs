@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/managed-flink/latest/apiv2/API_ApplicationEncryptionConfigurationUpdate.html
+---
+
+# ApplicationEncryptionConfigurationUpdate
+<a name="API_ApplicationEncryptionConfigurationUpdate"></a>
+
+Describes configuration updates to encryption at rest.
+
+## Contents
+<a name="API_ApplicationEncryptionConfigurationUpdate_Contents"></a>
+
+ ** KeyTypeUpdate **   <a name="APIReference-Type-ApplicationEncryptionConfigurationUpdate-KeyTypeUpdate"></a>
+Specifies the type of key to be used for encryption at rest.
+Type: String
+Valid Values: `AWS_OWNED_KEY | CUSTOMER_MANAGED_KEY`
+Required: Yes
+
+ ** KeyIdUpdate **   <a name="APIReference-Type-ApplicationEncryptionConfigurationUpdate-KeyIdUpdate"></a>
+The key ARN, key ID, alias ARN, or alias name of the KMS key to be used for encryption at rest.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: No
+
+## See Also
+<a name="API_ApplicationEncryptionConfigurationUpdate_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/kinesisanalyticsv2-2018-05-23/ApplicationEncryptionConfigurationUpdate)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/kinesisanalyticsv2-2018-05-23/ApplicationEncryptionConfigurationUpdate)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/kinesisanalyticsv2-2018-05-23/ApplicationEncryptionConfigurationUpdate)

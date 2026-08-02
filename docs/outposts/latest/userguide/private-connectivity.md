@@ -1,0 +1,81 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/userguide/private-connectivity.html
+---
+
+# Service link private connectivity options
+<a name="private-connectivity"></a>
+
+You can configure the service link with a private connection for the traffic between the Outposts and home AWS Region. You can choose to use Direct Connect private or transit VIFs.
+
+Select the private connectivity option when you create your Outpost in the AWS Outposts console. For instructions, see [Create an Outpost](https://docs.aws.amazon.com/outposts/latest/userguide/order-outpost-capacity.html#create-outpost).
+
+When you select the private connectivity option, a service link VPN connection is established after the Outpost is installed, using a VPC and subnet that you specify. This allows private connectivity through the VPC and minimizes public internet exposure.
+
+The following image shows both options to establish a service link VPN private connection between your Outposts and the AWS Region:
+
+![The service link private connection options.](http://docs.aws.amazon.com/outposts/latest/userguide/images/outpost-rack-sl-private-connectivity-options.png)
+
+## Prerequisites
+<a name="private-connectivity-prerequisites"></a>
+
+The following prerequisites are required before you can configure private connectivity for your Outpost:
++ You must configure permissions for an IAM entity (user or role) to allow the user or role to create the service-linked role for private connectivity. The IAM entity needs permission to access the following actions:
+  + `iam:CreateServiceLinkedRole` on `arn:aws:iam::*:role/aws-service-role/outposts.amazonaws.com/AWSServiceRoleForOutposts*`
+  + `iam:PutRolePolicy` on `arn:aws:iam::*:role/aws-service-role/outposts.amazonaws.com/AWSServiceRoleForOutposts*`
+  + `ec2:DescribeVpcs`
+  + `ec2:DescribeSubnets`
+
+  For more information, see [AWS Identity and Access Management for AWS Outposts](https://docs.aws.amazon.com/outposts/latest/userguide/identity-access-management.html)
++ In the same AWS account and Availability Zone as your Outpost, create a VPC for the sole purpose of Outpost private connectivity with a subnet /25 or larger that does not conflict with 10.1.0.0/16. For example, you might use 10.3.0.0/16.
+**Important**
+Do not delete this VPC as it maintains the connection to your Outposts.
++ Use [Security control policies (SCP)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) to protect this VPC from being deleted.
+
+  The following sample SCP prevents the following from deletion:
+  + Subnet tagged **Outposts Anchor Subnet**
+  + VPC tagged **Outposts Anchor VPC**
+  + Route tables tagged **Outposts Anchor Route Table**
+  + Transit gateway tagged **Outposts Transit Gateway**
+  + Virtual Private Gateway tagged **Outposts Virtual Private Gateway**
+  + Transit gateway route table tagged **Outposts Transit Gateway Route Table**
+  + Any ENI with the tag **Outposts Anchor ENI**
++ Configure the security group attached to the network interface to allow the following inbound traffic:
+  + ICMP from your specified source
+  + TCP port 443 from your specified source
+  + UDP port 443 from your specified source
+**Note**
+Both TCP and UDP on port 443 are required for private connectivity to function properly.
++ Advertise the subnet CIDR to your on-premises network. You can use AWS Direct Connect to do so. For more information, see [Direct Connect virtual interfaces](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithVirtualInterfaces.html) and [Working with Direct Connect gateways](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html) in the *Direct Connect User Guide*.
+
+**Note**
+To select the private connectivity option when your Outpost is in **PENDING** status, choose **Outposts** from the AWS Outposts console and select your Outpost. Choose **Actions**, **Add private connectivity** and follow the steps.
+
+After you select the private connectivity option for your Outpost, AWS Outposts automatically creates a service-linked role in your account that enables it to complete the following tasks on your behalf:
++ Creates network interfaces in the subnet and VPC that you specify, and creates a security group for the network interfaces.
++ Grants permission to the AWS Outposts service to attach the network interfaces to a service link endpoint instance in the account.
++ Attaches the network interfaces to the service link endpoint instances from the account.
+
+**Important**
+After your Outpost is installed, confirm connectivity to the private IPs in your subnet from your Outpost.
+
+## Option 1. Private connectivity through Direct Connect private VIFs
+<a name="sl-dx-private-vif-option"></a>
+
+Create an AWS Direct Connect connection, private virtual interface, and virtual private gateway to allow your on-premises Outpost to access the VPC.
+
+For more information, see the following sections in the *Direct Connect User Guide*:
++ [Dedicated and hosted connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html)
++ [Create a private virtual interface](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-private-vif.html)
++ [Virtual private gateway associations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/virtualgateways.html)
+
+If the AWS Direct Connect connection is in a different AWS account from your VPC, see [Associating a virtual private gateway across accounts](https://docs.aws.amazon.com/directconnect/latest/UserGuide/multi-account-associate-vgw.html) in the *Direct Connect User Guide*.
+
+## Option 2. Private connectivity through Direct Connect transit VIFs
+<a name="sl-dx-transit-vif-option"></a>
+
+Create an AWS Direct Connect connection, transit virtual interface, and transit gateway to allow your on-premises Outpost to access the VPC.
+
+For more information, see the following sections in the *Direct Connect User Guide*:
++ [Dedicated and hosted connections](https://docs.aws.amazon.com/directconnect/latest/UserGuide/WorkingWithConnections.html)
++ [Create a transit virtual interface to the Direct Connect gateway](https://docs.aws.amazon.com/directconnect/latest/UserGuide/create-transit-vif-dx.html)
++ [Transit gateway associations](https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-transit-gateways.html)

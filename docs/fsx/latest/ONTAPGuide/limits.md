@@ -1,0 +1,81 @@
+---
+source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html
+---
+
+# Quotas
+<a name="limits"></a>
+
+Following, you can find out about quotas when working with Amazon FSx for NetApp ONTAP.
+
+**Topics**
++ [Quotas that you can increase](#soft-limits)
++ [Resource quotas for each file system](#limits-ontap-resources-file-system)
+
+## Quotas that you can increase
+<a name="soft-limits"></a>
+
+Following are the quotas for Amazon FSx for NetApp ONTAP for each AWS account, per AWS Region, that you can increase.
+
+****
+
+| Resource | Default | Description |
+| --- | --- | --- |
+| ONTAP file systems | 100 | The maximum number of Amazon FSx for NetApp ONTAP file systems that you can create in this account. |
+| ONTAP SSD storage capacity | 524,288 | The maximum amount of SSD storage capacity (in GiB) for all Amazon FSx for NetApp ONTAP file systems that you can have in this account. |
+| ONTAP throughput capacity | 10,240 | The maximum amount of throughput capacity (in MBps) for all Amazon FSx for NetApp ONTAP file systems that you can have in this account. |
+| ONTAP SSD IOPS | 1,000,000 | The maximum amount of SSD IOPS for all Amazon FSx for NetApp ONTAP file systems that you can have in this account. |
+| ONTAP backups | 10,000 | The maximum number of user-initiated volume backups for all Amazon FSx for NetApp ONTAP file systems that you can have in an AWS account. |
+| Amazon S3 access points | 10,000 | The maximum number of Amazon S3 access points for all supported data source types (e.g., FSx for NetApp ONTAP) that you can create per region in an AWS account. This is also maximum number of S3 access points that you can have attached to a single FSx for NetApp ONTAP file system or volume. This quota is an Amazon S3 service quota and adjustable using [Service Quotas](https://console.aws.amazon.com/servicequotas/home/services/s3/quotas/L-FAABEEBA). |
+
+**To request a quota increase**
+
+1. Open the [AWS Support](https://console.aws.amazon.com/support/home#/) page, sign in if necessary, and then choose **Create case**.
+
+1. For **Create case**, choose **Account and billing support**.
+
+1. In the **Case details** panel make the following entries:
+   + For **Type** choose **Account**.
+   + For **Category** choose **Other Account Issues**.
+   + For **Subject** enter **Amazon FSx for NetApp ONTAP service limit increase request**.
+   + Provide a detailed **Description** of your request, including:
+     + The FSx quota that you want increased, and the value you want it increased to, if known.
+     + The reason why you are seeking the quota increase.
+     + The file system ID and region for each file system you are requesting an increase for.
+
+1. Provide your preferred **Contact options** and choose **Submit**.
+
+## Resource quotas for each file system
+<a name="limits-ontap-resources-file-system"></a>
+
+The following table lists the quotas on Amazon FSx for NetApp ONTAP resources for each file system in an AWS Region.
+
+****
+
+| Resource | Limit per file system |
+| --- | --- |
+| Minimum SSD storage capacity | 1,024 GiB per high-availability (HA) pair |
+| Minimum SSD storage capacity for initiating a decrease operation | 1,126 GiB per HA pair |
+| Minimum SSD decrease percentage | 9% smaller than current capacity |
+| Maximum SSD storage capacity |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) |
+| Recommended maximum SSD utilization | 80% for optimal performance and tiering functionality |
+| Maximum SSD utilization for decrease operations | 80% before and after the decrease operation |
+| Maximum SSD IOPS | Second-generation file systems: [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)<br />First-generation file systems:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) |
+| Minimum throughput capacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) |
+| Maximum throughput capacity | Second-generation file systems: [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)<br />First-generation file systems: [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) |
+| Maximum number of volumes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)When using S3 access points with your file system:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) |
+| Maximum number of snapshots | 1,023 per volume3 |
+| Maximum number of backups | 4,091 per volume4 |
+| Maximum number of SVMs | Second-generation file systems with one HA pair and IPv4-only network type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)Second-generation file systems with one HA pair and dual-stack network type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)<br />Second-generation file systems with 2–12 HA pairs and either IPv4-only or dual-stack network type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)<br />First-generation file systems with IPv4-only network type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html)<br />First-generation file systems with dual-stack network type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) |
+| Maximum number of tags | 50 |
+| Maximum retention period for automated backups | 90 days |
+| Maximum retention period for user-initiated backups | No retention limit |
+| Maximum number of routes supported per file system | 505 |
+| Maximum number of client connections per file server6 | 100,000 |
+
+**Note**
+1 On a second-generation Single-AZ file system with 12 HA pairs (6,144 MBps per HA pair). For more information, see [Managing high-availability (HA) pairs](HA-pairs.md).
+2 To provision 4 GBps of throughput capacity, your FSx for ONTAP first-generation file system requires a configuration of the maximum SSD IOPS (160,000) and a minimum of 5,120 GiB of SSD storage capacity in a supported AWS Region. For more information about which AWS Regions support 4,096 MBps of throughput capacity, see [Impact of throughput capacity on performance](performance.md#impact-throughput-cap-performance).
+3 You can store up to 1,023 snapshots per volume at any point in time. Once you reach this limit, you must delete an existing snapshot before a new snapshot of your volume can be created.
+4 You can store up to 4,091 backups per volume at any point in time. Once you reach this limit, you must delete an existing backup before a new backup of your volume can be created.
+5 You can configure up to 50 routes per file system at any point in time. Once you reach this limit, you must delete an existing route before a new route can be configured. The number of routes your file system has is determined by the number of SVMs it has and the number of route tables associated with it. You can determine the existing number of routes to a file system using the following equation: (1 \+ number of SVMs in the file system) \* (route tables associated with the file system).
+6 A client connection is defined as a single TCP connection to a given file server. There is one active file server per HA pair in a file system. A client can have multiple TCP connections to a file server. For example, if a client is using multipathing.

@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-tutorials.html
+---
+
+# Amazon EMR tutorials
+<a name="emr-tutorials"></a>
+
+ An EMR cluster runs in a complex ecosystem. The following tutorial covers important use cases.
+
+**Topics**
++ [Amazon EMR on EC2 – Enhanced Monitoring with CloudWatch using custom metrics and logs](enhanced-custom-metrics.md)
++ [Monitor Apache Spark applications on Amazon EMR with Amazon CloudWatch](enhanced-custom-metrics-applications.md)
++ [Monitor Amazon EMR application status with CloudWatch integration](enhanced-custom-metrics-application-status.md)
++ [Debugging EMR steps Using YARN application IDs](debug-emr-yarn.md)
++ [Using Trusted Identity Propagation with EMR](emr-trusted-identity.md)
++ [Observability and additional logging features](emr-plan-debugging-logging-observability.md)

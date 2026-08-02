@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/batch/latest/userguide/fargate-job-queues.html
+---
+
+# Job queues on Fargate
+<a name="fargate-job-queues"></a>
+
+AWS Batch job queues on AWS Fargate are essentially unchanged. The only restriction is that the compute environments that are listed in `computeEnvironmentOrder` must all be Fargate compute environments (`FARGATE` or `FARGATE_SPOT`). EC2 and Fargate compute environments can't be mixed.

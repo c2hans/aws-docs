@@ -1,0 +1,140 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ssm_example_ssm_GetParameter_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `GetParameter` with an AWS SDK or CLI
+<a name="ssm_example_ssm_GetParameter_section"></a>
+
+The following code examples show how to use `GetParameter`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**Example 1: To display the value of a parameter**
+The following `get-parameter` example lists the value for the specified single parameter.
+
+```
+aws ssm get-parameter \
+    --name {{"MyStringParameter"}}
+```
+Output:
+
+```
+{
+    "Parameter": {
+        "Name": "MyStringParameter",
+        "Type": "String",
+        "Value": "Veni",
+        "Version": 1,
+        "LastModifiedDate": 1530018761.888,
+        "ARN": "arn:aws:ssm:us-east-2:111222333444:parameter/MyStringParameter"
+        "DataType": "text"
+    }
+}
+```
+For more information, see [Working with Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html) in the *AWS Systems Manager User Guide*.
+**Example 2: To decrypt the value of a SecureString parameter**
+The following `get-parameter` example decrypts the value of the specified `SecureString` parameter.
+
+```
+aws ssm get-parameter \
+    --name {{"MySecureStringParameter"}} \
+    --with-decryption
+```
+Output:
+
+```
+{
+    "Parameter": {
+        "Name": "MySecureStringParameter",
+        "Type": "SecureString",
+        "Value": "16679b88-310b-4895-a943-e0764EXAMPLE",
+        "Version": 2,
+        "LastModifiedDate": 1582155479.205,
+        "ARN": "arn:aws:ssm:us-east-2:111222333444:parameter/MySecureStringParameter"
+        "DataType": "text"
+    }
+}
+```
+For more information, see [Working with Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-working-with.html) in the *AWS Systems Manager User Guide*.
+**Example 3: To display the value of a parameter using labels**
+The following `get-parameter` example lists the value for the specified single parameter with a specified label.
+
+```
+aws ssm get-parameter \
+    --name {{"MyParameter:label"}}
+```
+Output:
+
+```
+{
+    "Parameter": {
+        "Name": "MyParameter",
+        "Type": "String",
+        "Value": "parameter version 2",
+        "Version": 2,
+        "Selector": ":label",
+        "LastModifiedDate": "2021-07-12T09:49:15.865000-07:00",
+        "ARN": "arn:aws:ssm:us-west-2:786973925828:parameter/MyParameter",
+        "DataType": "text"
+    }
+}
+```
+For more information, see [Working with parameter labels](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-labels.html) in the *AWS Systems Manager User Guide*.
+**Example 4: To display the value of a parameter using versions**
+The following `get-parameter` example lists the value for the specified single parameter version.
+
+```
+aws ssm get-parameter \
+    --name {{"MyParameter:2"}}
+```
+Output:
+
+```
+{
+    "Parameter": {
+        "Name": "MyParameter",
+        "Type": "String",
+        "Value": "parameter version 2",
+        "Version": 2,
+        "Selector": ":2",
+        "LastModifiedDate": "2021-07-12T09:49:15.865000-07:00",
+        "ARN": "arn:aws:ssm:us-west-2:786973925828:parameter/MyParameter",
+        "DataType": "text"
+    }
+}
+```
+For more information, see [Working with parameter labels](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-paramstore-labels.html) in the *AWS Systems Manager User Guide*.
++  For API details, see [GetParameter](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ssm/get-parameter.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Rust ]
+
+**SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ssm#code-examples).
+
+```
+    pub async fn list_path(&self, path: &str) -> Result<Vec<Parameter>, EC2Error> {
+        let maybe_params: Vec<Result<Parameter, _>> = TryFlatMap::new(
+            self.inner
+                .get_parameters_by_path()
+                .path(path)
+                .into_paginator()
+                .send(),
+        )
+        .flat_map(|item| item.parameters.unwrap_or_default())
+        .collect()
+        .await;
+        // Fail on the first error
+        let params = maybe_params
+            .into_iter()
+            .collect::<Result<Vec<Parameter>, _>>()?;
+        Ok(params)
+    }
+```
++  For API details, see [GetParameter](https://docs.rs/aws-sdk-ssm/latest/aws_sdk_ssm/client/struct.Client.html#method.get_parameter) in *AWS SDK for Rust API reference*.
+
+------

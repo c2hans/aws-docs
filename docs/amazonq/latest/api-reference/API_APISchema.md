@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_APISchema.html
+---
+
+# APISchema
+<a name="API_APISchema"></a>
+
+Contains details about the OpenAPI schema for a custom plugin. For more information, see [custom plugin OpenAPI schemas](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/custom-plugin.html#plugins-api-schema). You can either include the schema directly in the payload field or you can upload it to an S3 bucket and specify the S3 bucket location in the `s3` field.
+
+## Contents
+<a name="API_APISchema_Contents"></a>
+
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** payload **   <a name="qbusiness-Type-APISchema-payload"></a>
+The JSON or YAML-formatted payload defining the OpenAPI schema for a custom plugin.
+Type: String
+Required: No
+
+ ** s3 **   <a name="qbusiness-Type-APISchema-s3"></a>
+Contains details about the S3 object containing the OpenAPI schema for a custom plugin. The schema could be in either JSON or YAML format.
+Type: [S3](API_S3.md) object
+Required: No
+
+## See Also
+<a name="API_APISchema_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/APISchema)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/APISchema)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/APISchema)

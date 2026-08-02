@@ -1,0 +1,89 @@
+---
+source_url: https://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html
+---
+
+AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), and AWS Microservice Extractor (ME) for .NET is no longer open to new customers. If you would like to use the service, sign up prior to November 7, 2025. Alternatively use [AWS Transform](https://aws.amazon.com/transform/), which is an agentic AI service developed to accelerate enterprise modernization of .NET.
+
+# App2Container compatibility
+<a name="compatibility-a2c"></a>
+
+The following documentation provides information for the operating systems, software, and tooling that you can use with App2Container.
+
+**Topics**
++ [Operating system compatibility](#os-info-a2c)
++ [Containerization features](#containers-a2c)
++ [Deployment features](#deployments-a2c)
++ [Pipeline support](#pipelines-a2c)
+
+## Operating system compatibility
+<a name="os-info-a2c"></a>
+
+The following table contains information about the applications that App2Container supports for each operating system.
+
+| Compatibility item | Linux | Windows |
+| --- | --- | --- |
+| Supported application server operating systems 1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
+| Container hosts | The container host can be any supported application server operating system. The major kernel version of the container host must match with the container image. | The container host operating system must be either Windows Server 2016, 2019, or 2022. The Windows Server operating system version of the container host must match the container image. App2Container automatically deploys the container host using the same operating system used for the containerization process. |
+| Application types |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
+| Supported frameworks |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  | .NET Framework version 3.5 and 4.x |
+| Unsupported application features | High Availability (HA) clusters |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
+| Additional system requirements |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
+
+1 We have only tested the operating systems and configurations listed. Other operating systems could be compatible, but have not been tested.
+
+2 App2Container v1.47 is the last version that supports Windows 2008 and 2012. These operating systems also require a worker machine. We recommend using a later version of the Windows Server operating system to be able to use the latest version of App2Container. For more information, see [Applications you can containerize using AWS App2Container](supported-applications.md).
+
+3 Docker must be installed to use App2Container. For more information, see [Prerequisites: Set up your servers](start-intro.md#start-containerize-prereq).
+
+**Note**
+ Windows client operating systems such as Windows 7 and Windows 10 aren't supported.
+
+## Containerization features
+<a name="containers-a2c"></a>
+
+App2Container supports the following containerization features.
+
+|  Containerization feature  |  Linux  |  Windows  |
+| --- | --- | --- |
+| gMSA for connection with Active Directory | Not supported | Supported |
+| Containerization of multiple applications in the same container | Not supported | Supported \* |
+| Containerization of applications that use multiple ports | Not supported | Supported |
+
+\* Containerizing multiple applications in the same container for Windows requires that the applications are nested under a main IIS site.
+
+For more information about configuring Windows containers with additional ports and multiple applications, see [Configuring application containers](config-containers.md).
+
+For more information about group managed service accounts (gMSAs), see [Configuring container deployment](config-deployment.md).
+
+## Deployment features
+<a name="deployments-a2c"></a>
+
+The following table lists the deployment services that App2Container supports.
+
+| Deployment feature |  Linux  |  Windows  |
+| --- |--- |--- |
+|  |  Amazon ECS (AWS Fargate only)  |  Amazon EKS (Amazon EC2 only)  |  AWS App Runner  |  Amazon ECS (AWS Fargate)  |  Amazon ECS (Amazon EC2)  |  Amazon EKS (Amazon EC2 only)  |
+| --- |--- |--- |--- |--- |--- |--- |
+| Modify memory usage | Supported | Supported | Not supported | Supported 1 | Supported | Supported |
+| Modify CPU usage | Supported | Supported | Not supported | Supported | Supported | Supported |
+| Load balancer types | Application Load Balancer | Application Load Balancer, Network Load Balancer with Nginx | N/A | Application Load Balancer | Application Load Balancer | Application Load Balancer, Network Load Balancer with Nginx |
+| Reuse VPC ² | Supported | Supported | Not supported | Supported | Supported | Supported |
+| Reuse cluster previously deployed with App2Container 2 | Supported | Supported | N/A | Supported | Supported | Supported |
+| FireLens logging | Supported | Not supported | Not supported | Not supported | Not supported | Not supported |
+| gMSA for connection with Active Directory | Not supported | Not supported | Not supported | Not supported | Supported | Supported |
+| Deploy complex .NET applications 3 | N/A | N/A | N/A | Supported | Supported | Supported |
+
+1 AWS Fargate only supports certain Windows Server operating systems for running Windows containers. Select a Windows Server operating system that both Fargate and App2Container support. For more information, see [Windows platform versions](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform-windows-fargate.html) in the *Amazon ECS User Guide for AWS Fargate*.
+
+2 You can reuse certain components that App2Container created for a prior deployment. For more information about the `reuseResources` object, see [Configuring container deployment](config-deployment.md).
+
+3 A complex .NET application has multiple Windows .NET application components running in a single container. For more information, see [Containerizing complex Windows .NET applications with App2Container](summary-complex-win-apps.md).
+
+For more information about FireLens for Amazon ECS, see [Custom log routing](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html) in the *Amazon Elastic Container Service Developer Guide*.
+
+For more information about deployment settings for group managed service accounts (gMSAs), see [Configuring container deployment](config-deployment.md).
+
+## Pipeline support
+<a name="pipelines-a2c"></a>
+
+App2Container supports AWS CodePipeline, Jenkins, and Azure DevOps Services pipeline types for both Windows and Linux. For more information about configuring pipelines, see [Configuring container pipelines](config-pipeline.md) and [Examples](cmd-generate-pipeline.md#generate-pipeline-examples).

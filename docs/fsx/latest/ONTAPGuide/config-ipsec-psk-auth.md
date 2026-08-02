@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/config-ipsec-psk-auth.html
+---
+
+# Configuring IPsec using PSK authentication
+<a name="config-ipsec-psk-auth"></a>
+
+If you are using PSK for authentication, the steps for configuring IPsec encryption on both FSx for ONTAP and the client are as follows:
+
+1. Enable and configure IPsec on your file system.
+
+1. Install and configure IPsec on your client
+
+1. Configure IPsec for multiple client access
+
+For details on configuring IPsec using PSK, see [Configure IP security (IPsec) over wire encryption](https://docs.netapp.com/us-en/ontap/networking/configure_ip_security_@ipsec@_over_wire_encryption.html) in the NetApp ONTAP documentation center.

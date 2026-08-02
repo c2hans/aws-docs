@@ -1,0 +1,116 @@
+---
+source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html
+---
+
+# Generate a quorum token using CloudHSM CLI
+<a name="cloudhsm_cli-qm-token-gen"></a>
+
+Use the **quorum token-sign generate** command in CloudHSM CLI to generate a token for a quorum authorized service.
+
+There is a limit to obtaining one active token per user per service on an HSM cluster for services user and quorum. This limit does not apply to tokens related to key services.
+
+**Note**
+Only Admins and Crypto Users may generate specific service tokens. For more information about service types and names, see [Service names and types that support quorum authentication](quorum-auth-chsm-cli-service-names.md)
+
+**Admin Services**: Quorum authentication is used for admin privileged services like creating users, deleting users, changing user passwords, setting quorum values, and deactivating quorum and MFA capabilities.
+
+**Crypto User Services**: Quorum authentication is used for crypto-user privileged services associated with a specific key like signing with a key, sharing/unsharing a key, wrapping/unwrapping a key, and setting a key's attribute. The quorum value of an associated key is configured when the key is generated, imported, or unwrapped. The quorum value must be equal to or less than the number of users that the key is associated with, which includes users that the key is shared with and the key owner.
+
+Each service type is further broken down into a qualifying service name, which contains a specific set of quorum supported service operations that can be performed.
+
+****
+
+| Service name | Service type | Service operations |
+| --- | --- | --- |
+| user | Admin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
+| quorum | Admin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
+| cluster1 | Admin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
+| key-management | Crypto User |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
+| key-usage | Crypto User |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
+
+[1] Cluster service is exclusively available on hsm2m.medium
+
+## User type
+<a name="quorum-token-generate-user-type"></a>
+
+The following users can run this command.
++ Admin
++ Crypto user (CU)
+
+## Syntax
+<a name="quorum-token-generate-syntax"></a>
+
+```
+aws-cloudhsm > help quorum token-sign generate
+Generate a token
+
+Usage: quorum token-sign generate --service {{<SERVICE>}} --token {{<TOKEN>}}
+
+Options:
+      --cluster-id {{<CLUSTER_ID>}}
+          Unique Id to choose which of the clusters in the config file to run the operation against. If not provided, will fall back to the value provided when interactive mode was started, or error
+
+      --service {{<SERVICE>}}
+          Service the token will be used for
+
+          Possible values:
+          - user:
+            User management service is used for executing quorum authenticated user management operations
+          - quorum:
+            Quorum management service is used for setting quorum values for any quorum service
+          - cluster:
+            Cluster management service is used for executing quorum for cluster wide configuration managements like mtls enforcement, mtls registration and mtls deregistration
+          - registration:
+            Registration service is used for registering a public key for quorum authentication
+          - key-usage:
+            Key usage service is used for executing quorum authenticated key usage operations
+          - key-management:
+            Key management service is used for executing quorum authenticated key management operations
+
+      --token {{<TOKEN>}}
+          Filepath where the unsigned token file will be written
+  -h, --help                     Print help
+```
+
+## Example
+<a name="quorum-token-generate-examples"></a>
+
+This command will write one unsigned token per HSM in your cluster to the file specified by `token`.
+
+**Example : Write one unsigned token per HSM in your cluster**
+
+```
+aws-cloudhsm > quorum token-sign generate --service user --token /home/tfile
+{
+  "error_code": 0,
+  "data": {
+    "filepath": "/home/tfile"
+  }
+}
+```
+
+## Arguments
+<a name="quorum-token-generate-arguments"></a>
+
+**{{<CLUSTER\_ID>}}**
+The ID of the cluster to run this operation on.
+Required: If multiple clusters have been [configured.](cloudhsm_cli-configs-multi-cluster.md)
+
+**{{<SERVICE>}}**
+Specifies the quorum authorized service for which to generate a token. This parameter is required.
+**Valid values**
++ **user**: The user management service that is used for executing quorum authorized user management operations.
++ **quorum**: The quorum management service that is used for setting quorum authorized quorum values for any quorum authorized service.
++ **cluster**: The cluster management service that is used for executing quorum for cluster wide configuration managements like mtls enforcement, mtls registration and mtls deregistration.
++ **registration**: Generates an unsigned token for use in registering a public key for quorum authorization.
++ **key-usage**: Generates an unsigned token that is used for executing quorum authorized key usage operations.
++ **key-management**: Generates an unsigned token that is used for executing quorum authorized key management operations.
+**Required**: Yes
+
+**{{<TOKEN>}}**
+Filepath where the unsigned token file will be written.
+**Required**: Yes
+
+## Related topics
+<a name="quorum-token-generate-seealso"></a>
++ [Service names and types that support quorum authentication](quorum-auth-chsm-cli-service-names.md)

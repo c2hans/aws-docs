@@ -1,0 +1,839 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-cfn.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# Connecting Amazon Q Business to Jira using AWS CloudFormation
+<a name="jira-cfn"></a>
+
+You use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
+
+Use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
+
+To learn more about AWS CloudFormation, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in the *CloudFormation User Guide*.
+
+**Topics**
++ [Jira configuration properties](#jira-configuration-keys)
++ [Jira JSON schema for using the configuration property with AWS CloudFormation](#jira-cfn-json)
++ [Jira YAML schema for using the configuration property with AWS CloudFormation](#jira-cfn-yaml)
+
+## Jira configuration properties
+<a name="jira-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-property: `jiraAccountUrl`. | Yes |
+| `jiraAccountUrl` | Enter the Jira account URL from your Jira account settings. For example, {{https://company.atlassian.net/}}. | `string` | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties: `project`, `attachment`, `comment`, `issue`, `worklog`. | Yes |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-cfn.html)  | A list of objects that map the attributes or field names of your Jira pages and assets to Amazon Q index field names. | `object`<br />These properties have the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-cfn.html) | Yes |
+| `indexFieldName` | The field name of your Jira project, attachment, comment, issue, or worklog. | `string` | Yes |
+| `indexFieldType` | The field type of your Jira project, attachment, comment, issue, or worklog. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your Jira project, attachment, comment, issue, or worklog. | `string` | Yes |
+| `dateFieldFormat` | The date format of your Jira project, attachment, comment, issue, or worklog. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-cfn.html) | Yes |
+| `isCrawlAcl` | Specify true to crawl access control information from documents.  Amazon Q Business crawls ACL information by default to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | No |
+| `isRotateSecret` | Specify true if you want to automatically rotate the secret. | `boolean` | No |
+| `issuetype` | Customize the issue types to crawl. | `array`<br />The allowed values are `Bug`, `Story`, `Epic`, `Task`. | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-cfn.html)  | Customize the status types, projects, and additional elements to crawl. | `array` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `fieldForUserId` | Specify field to use for UserId for ACL crawling. | `string` | No |
+| `inclusionPatterns` | A list of regular expression patterns to include specific content in your Jira data source. Content that matches the patterns are included in the index. Contents that doesn't match the pattern are excluded from the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array` | No |
+| `exclusionPatterns` | A list of regular expression patterns to exclude specific content in your Jira data source. Content that matches the patterns are excluded from the index. Content that doesn't match the patterns are included in the index. If any content matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the content isn't included in the index. | `array` | No |
+| `type` | The type of data source. Specify JIRA as your data source type. | `string` | Yes |
+| `enableIdentityCrawler` | Specify true to use the Amazon Q identity crawler to sync identity/principal information on users and groups with access to specific documents.  Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. | `string`<br />You can choose between the following options:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-cfn.html) | Yes |
+| `secretArn` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Jira. | `string`<br />The secret must contain a JSON structure with the following keys:<pre>{<br />    "Jira ID": "{{Jira user name or email host URL}}",<br />    "Password/Token": "{{Jira API token}}"<br />}</pre> | Yes |
+| `version` | The version of this template that's currently supported. | `string` | No |
+
+## Jira JSON schema for using the configuration property with AWS CloudFormation
+<a name="jira-cfn-json"></a>
+
+The following is the Jira JSON schema and examples for the configuration property for AWS CloudFormation.
+
+**Topics**
++ [Jira JSON schema for using the configuration property with AWS CloudFormation](#jira-cfn-json-schema)
++ [Jira JSON schema example for using the configuration property with AWS CloudFormation](#jira-cfn-json-example)
+
+### Jira JSON schema for using the configuration property with AWS CloudFormation
+<a name="jira-cfn-json-schema"></a>
+
+The following is the Jira JSON schema for the configuration property for CloudFormation
+
+```
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "pattern": "JIRA"
+    },
+    "syncMode": {
+      "type": "string",
+      "enum": ["FULL_CRAWL", "FORCED_FULL_CRAWL", "CHANGE_LOG"]
+    },
+    "secretArn": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 2048
+    },
+    "enableIdentityCrawler": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "enum": ["true", "false"]
+        }
+      ]
+    },
+    "connectionConfiguration": {
+      "type": "object",
+      "properties": {
+        "repositoryEndpointMetadata": {
+          "type": "object",
+          "properties": {
+            "jiraAccountUrl": {
+              "type": "string",
+              "pattern": "https://.*"
+            }
+          },
+          "required": ["jiraAccountUrl"]
+        }
+      },
+      "required": ["repositoryEndpointMetadata"]
+    },
+    "repositoryConfigurations": {
+      "type": "object",
+      "properties": {
+        "attachment": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "comment": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "issue": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "project": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "worklog": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        }
+      }
+    },
+    "additionalProperties": {
+      "type": "object",
+      "properties": {
+        "isCrawlAcl": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "maxFileSizeInMegaBytes": {
+          "type": "string"
+        },
+        "fieldForUserId": {
+          "type": "string"
+        },
+        "issuetype": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["Bug", "Story", "Epic", "Task"]
+          }
+        },
+        "status": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "project": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "issueSubEntityFilter": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "enableDeletionProtection": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "deletionProtectionThreshold": {
+          "type": "string",
+          "default": "15"
+        }
+      },
+      "required": []
+    },
+    "version": {
+      "type": "string",
+      "anyOf": [
+        {
+          "pattern": "1.0.0"
+        }
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "syncMode",
+    "secretArn",
+    "enableIdentityCrawler",
+    "connectionConfiguration",
+    "repositoryConfigurations",
+    "additionalProperties"
+  ]
+}
+```
+
+### Jira JSON schema example for using the configuration property with AWS CloudFormation
+<a name="jira-cfn-json-example"></a>
+
+The following is the Jira JSON schema example for the configuration property for CloudFormation
+
+```
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "CloudFormation JIRA Data Source Template",
+  "Resources": {
+    "DataSourceJira": {
+      "Type": "AWS::QBusiness::DataSource",
+      "Properties": {
+        "ApplicationId": "app12345-1234-1234-1234-123456789012",
+        "IndexId": "indx1234-1234-1234-1234-123456789012",
+        "DisplayName": "MyJiraDataSource",
+        "RoleArn": "arn:aws:iam::123456789012:role/qbusiness-data-source-role",
+        "Configuration": {
+          "type": "JIRA",
+          "syncMode": "FULL_CRAWL",
+          "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-jira-secret",
+          "enableIdentityCrawler": "true",
+          "connectionConfiguration": {
+            "repositoryEndpointMetadata": {
+              "jiraAccountUrl": "https://mycompany.atlassian.net"
+            }
+          },
+          "repositoryConfigurations": {
+            "attachment": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "attachment_id",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "id",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "comment": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "comment_body",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "body",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "issue": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "issue_key",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "key",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "project": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "project_name",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "name",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "worklog": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "worklog_time_spent",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "timeSpent",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            }
+          },
+          "additionalProperties": {
+            "isCrawlAcl": "true",
+            "maxFileSizeInMegaBytes": "50",
+            "fieldForUserId": "user_id",
+            "issuetype": ["Bug", "Story"],
+            "status": ["Open", "In Progress"],
+            "project": ["Project1", "Project2"],
+            "issueSubEntityFilter": ["SubEntity1"],
+            "inclusionPatterns": ["*"],
+            "exclusionPatterns": ["*.tmp"],
+            "enableDeletionProtection": "false",
+            "deletionProtectionThreshold": "15"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## Jira YAML schema for using the configuration property with AWS CloudFormation
+<a name="jira-cfn-yaml"></a>
+
+The following is the Jira YAML schema and examples for the configuration property for AWS CloudFormation:
+
+**Topics**
++ [Jira YAML schema for using the configuration property with AWS CloudFormation](#jira-cfn-yaml-schema)
++ [Jira YAML schema example for using the configuration property with AWS CloudFormation](#jira-cfn-yaml-example)
+
+### Jira YAML schema for using the configuration property with AWS CloudFormation
+<a name="jira-cfn-yaml-schema"></a>
+
+The following is the Jira YAML schema for the configuration property for CloudFormation.
+
+```
+type: object
+properties:
+  type:
+    type: string
+    pattern: JIRA
+  syncMode:
+    type: string
+    enum:
+      - FULL_CRAWL
+      - FORCED_FULL_CRAWL
+      - CHANGE_LOG
+  secretArn:
+    type: string
+    minLength: 20
+    maxLength: 2048
+  enableIdentityCrawler:
+    anyOf:
+      - type: boolean
+      - type: string
+        enum:
+          - true
+          - false
+  connectionConfiguration:
+    type: object
+    properties:
+      repositoryEndpointMetadata:
+        type: object
+        properties:
+          jiraAccountUrl:
+            type: string
+            pattern: https://.*
+        required:
+          - jiraAccountUrl
+    required:
+      - repositoryEndpointMetadata
+  repositoryConfigurations:
+    type: object
+    properties:
+      attachment:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - STRING_LIST
+                    - DATE
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+      comment:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - STRING_LIST
+                    - DATE
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+      issue:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - STRING_LIST
+                    - DATE
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+      project:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - STRING_LIST
+                    - DATE
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+      worklog:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - STRING_LIST
+                    - DATE
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+  additionalProperties:
+    type: object
+    properties:
+      isCrawlAcl:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+      maxFileSizeInMegaBytes:
+        type: string
+      fieldForUserId:
+        type: string
+      issuetype:
+        type: array
+        items:
+          type: string
+          enum:
+            - Bug
+            - Story
+            - Epic
+            - Task
+      status:
+        type: array
+        items:
+          type: string
+      project:
+        type: array
+        items:
+          type: string
+      issueSubEntityFilter:
+        type: array
+        items:
+          type: string
+      inclusionPatterns:
+        type: array
+        items:
+          type: string
+      exclusionPatterns:
+        type: array
+        items:
+          type: string
+      enableDeletionProtection:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+        default: false
+      deletionProtectionThreshold:
+        type: string
+        default: "15"
+  version:
+    type: string
+    anyOf:
+      - pattern: 1.0.0
+required:
+  - type
+  - syncMode
+  - secretArn
+  - enableIdentityCrawler
+  - connectionConfiguration
+  - repositoryConfigurations
+  - additionalProperties
+```
+
+### Jira YAML schema example for using the configuration property with AWS CloudFormation
+<a name="jira-cfn-yaml-example"></a>
+
+The following is the Jira YAML example for the Configuration property for CloudFormation:
+
+```
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "CloudFormation JIRA Data Source Template",
+  "Resources": {
+    "DataSourceJira": {
+      "Type": "AWS::QBusiness::DataSource",
+      "Properties": {
+        "ApplicationId": "app12345-1234-1234-1234-123456789012",
+        "IndexId": "indx1234-1234-1234-1234-123456789012",
+        "DisplayName": "MyJiraDataSource",
+        "RoleArn": "arn:aws:iam::123456789012:role/qbusiness-data-source-role",
+        "Configuration": {
+          "type": "JIRA",
+          "syncMode": "FULL_CRAWL",
+          "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-jira-secret",
+          "enableIdentityCrawler": "true",
+          "connectionConfiguration": {
+            "repositoryEndpointMetadata": {
+              "jiraAccountUrl": "https://mycompany.atlassian.net"
+            }
+          },
+          "repositoryConfigurations": {
+            "attachment": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "attachment_id",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "id",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "comment": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "comment_body",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "body",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "issue": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "issue_key",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "key",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "project": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "project_name",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "name",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "worklog": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "worklog_time_spent",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "timeSpent",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            }
+          },
+          "additionalProperties": {
+            "isCrawlAcl": "true",
+            "maxFileSizeInMegaBytes": "50",
+            "fieldForUserId": "user_id",
+            "issuetype": ["Bug", "Story"],
+            "status": ["Open", "In Progress"],
+            "project": ["Project1", "Project2"],
+            "issueSubEntityFilter": ["SubEntity1"],
+            "inclusionPatterns": ["*"],
+            "exclusionPatterns": ["*.tmp"],
+            "enableDeletionProtection": "false",
+            "deletionProtectionThreshold": "15"
+          }
+        }
+      }
+    }
+  }
+}
+```

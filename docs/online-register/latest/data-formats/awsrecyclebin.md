@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsrecyclebin.html
+---
+
+# Data retrieval APIs for AWS Recycle Bin
+<a name="awsrecyclebin"></a>
+
+AWS Recycle Bin provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="rbin-GetRule"></a>[https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_GetRule.html](https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_GetRule.html) | Get detailed information about a Recycle Bin retention rule | Read |
+| <a name="rbin-ListRules"></a>[https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_ListRules.html](https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_ListRules.html) | List the Recycle Bin retention rules in the Region | Read |
+| <a name="rbin-ListTagsForResource"></a>[https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_ListTagsForResource.html](https://docs.aws.amazon.com/recyclebin/latest/APIReference/API_ListTagsForResource.html) | List the tags associated with a resource | Read |

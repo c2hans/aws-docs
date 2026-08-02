@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsapp2container.html
+---
+
+# Data retrieval APIs for AWS App2Container
+<a name="awsapp2container"></a>
+
+AWS App2Container provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="a2c-GetContainerizationJobDetails"></a>[https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html](https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html) | Get the details of all Containerization jobs | Read |
+| <a name="a2c-GetDeploymentJobDetails"></a>[https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html](https://docs.aws.amazon.com/tk-dotnet-refactoring/latest/userguide/what-is-tk-dotnet-refactoring.html) | Get the details of all Deployment jobs | Read |

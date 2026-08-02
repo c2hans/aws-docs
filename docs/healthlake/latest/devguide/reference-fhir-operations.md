@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-operations.html
+---
+
+# FHIR R4 `$operations` for HealthLake
+<a name="reference-fhir-operations"></a>
+
+ FHIR $ operations (also called "dollar operations") are special server-side functions that extend beyond standard CRUD (`Create`, `Read`, `Update`, `Delete`) operations in the FHIR specification. These operations are identified by the "$" prefix and enable complex processing, data transformation, and bulk operations that would be difficult or inefficient to perform using standard REST API calls. $ Operations can be invoked at the system level, resource type level, or on specific resource instances, providing flexible ways to interact with FHIR data. AWS HealthLake supports multiple FHIR `$operations`. Please refer to each individual pages below for additional details.
+
+**Topics**
++ [FHIR R4 `$attribution-status` operation for HealthLake](reference-fhir-operations-attribution-status.md)
++ [Deleting Resource Types with `$bulk-delete`](reference-fhir-operations-bulk-delete.md)
++ [`$bulk-member-match` operation for HealthLake](reference-fhir-operations-bulk-member-match.md)
++ [FHIR R4 `$confirm-attribution-list` operation for HealthLake](reference-fhir-operations-confirm-attribution-list.md)
++ [FHIR R4 `$davinci-data-export` operation for HealthLake](reference-fhir-operations-davinci-data-export.md)
++ [Generating Clinical Documents with `$document`](reference-fhir-operations-document.md)
++ [Permanently Removing Resources with `$erase`](reference-fhir-operations-erase.md)
++ [Getting patient data with `Patient/$everything`](reference-fhir-operations-everything.md)
++ [Retrieving ValueSet Codes with `$expand`](reference-fhir-operations-expand.md)
++ [Exporting HealthLake data with FHIR `$export`](reference-fhir-operations-export.md)
++ [FHIR `$inquire` operation for HealthLake](reference-fhir-operations-inquire.md)
++ [Retrieving Concept Details with `$lookup`](reference-fhir-operations-lookup.md)
++ [`$member-add` operation for HealthLake](reference-fhir-operations-member-add.md)
++ [`$member-match` operation for HealthLake](reference-fhir-operations-member-match.md)
++ [`$member-remove` operation for HealthLake](reference-fhir-operations-member-remove.md)
++ [Removing Patient Compartment Resources with `$purge`](reference-fhir-operations-purge.md)
++ [FHIR `$questionnaire-package` operation for HealthLake](reference-fhir-operations-questionnaire-package.md)
++ [FHIR `$submit` operation for HealthLake](reference-fhir-operations-submit.md)
++ [Mapping Codes Between Terminologies with `$translate`](reference-fhir-operations-translate.md)
++ [Validating FHIR Resources with `$validate`](reference-fhir-operations-validate.md)

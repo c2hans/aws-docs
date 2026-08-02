@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AgentStatusIdentifier.html
+---
+
+# AgentStatusIdentifier
+<a name="API_AgentStatusIdentifier"></a>
+
+Information about the agent status assigned to the user.
+
+## Contents
+<a name="API_AgentStatusIdentifier_Contents"></a>
+
+ ** Arn **   <a name="connect-Type-AgentStatusIdentifier-Arn"></a>
+The Amazon Resource Name (ARN) of the agent status.
+Type: String
+Required: No
+
+ ** Id **   <a name="connect-Type-AgentStatusIdentifier-Id"></a>
+The identifier of the agent status.
+Type: String
+Required: No
+
+## See Also
+<a name="API_AgentStatusIdentifier_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/AgentStatusIdentifier)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/AgentStatusIdentifier)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/AgentStatusIdentifier)

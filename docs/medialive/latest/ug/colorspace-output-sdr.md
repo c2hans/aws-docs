@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html
+---
+
+# Result when converting color space to SDR
+<a name="colorspace-output-sdr"></a>
+
+Read this section if you set up one or more MediaLive outputs to [convert the color space](colorspace-output-setup.md#colorspace-output-setup-convert) to Rec. 601 or Rec. 709. The following table shows how MediaLive handles each type of color space that it encounters in the source.
+
+- ** Content in the same SDR color space **
+  -  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)
+
+- ** Content in the other SDR color space **
+  -  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)
+
+- **Content in HDR10**
+  - When the output codec is H.264 and if you have enabled enhanced VQ, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.<br />If you haven't enabled VQ, MediaLive doesn't convert anything. It passes through the color space metadata, any brightness metadata, and any display metadata.
+  - When the output codec is H.265, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.
+
+- **Content in HLG**
+  - When the output codec is H.264 and if you have enabled enhanced VQ, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.<br />If you haven't enabled VQ, MediaLive doesn't convert anything. It passes through the color space metadata, and any brightness metadata.
+  - When the output codec is H.265, MediaLive does the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)<br />After the conversion, the content complies completely with the new color space. The color will be less rich. The color will match the new brightness function.
+
+- **Content in Dolby Vision 8.1**
+  - This conversion isn't supported. After conversion, the color map of the content will be completely wrong.
+
+- **Content marked with an unknown or unsupported color space**
+  - We can't make any promises about how MediaLive will handle input that is in an unsupported color space. Any of the following might apply:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)
+
+- ** Content with no color space metadata **
+  -  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/colorspace-output-sdr.html)

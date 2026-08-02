@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_S3ObjectSource.html
+---
+
+AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
+
+# S3ObjectSource
+<a name="API_S3ObjectSource"></a>
+
+Template bundle S3 bucket data.
+
+## Contents
+<a name="API_S3ObjectSource_Contents"></a>
+
+ ** bucket **   <a name="proton-Type-S3ObjectSource-bucket"></a>
+The name of the S3 bucket that contains a template bundle.
+Type: String
+Length Constraints: Minimum length of 3. Maximum length of 63.
+Pattern: `[a-z0-9]+[a-z0-9-\.]+[a-z0-9]+`
+Required: Yes
+
+ ** key **   <a name="proton-Type-S3ObjectSource-key"></a>
+The path to the S3 bucket that contains a template bundle.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: Yes
+
+## See Also
+<a name="API_S3ObjectSource_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/proton-2020-07-20/S3ObjectSource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/proton-2020-07-20/S3ObjectSource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/proton-2020-07-20/S3ObjectSource)

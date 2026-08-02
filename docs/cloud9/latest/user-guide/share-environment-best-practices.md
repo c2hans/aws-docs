@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/share-environment-best-practices.html
+---
+
+ AWS Cloud9 is no longer available to new customers. Existing customers of AWS Cloud9 can continue to use the service as normal. [Learn more](https://aws.amazon.com/blogs/devops/how-to-migrate-from-aws-cloud9-to-aws-ide-toolkits-or-aws-cloudshell/)
+
+# Environment sharing best practices
+<a name="share-environment-best-practices"></a>
+
+We recommend the following practices when sharing environments:
++ Only invite read/write members you trust to your environments.
++ For EC2 environments, read/write members can use the environment owner's AWS access credentials to make calls from the environment to AWS services. This is instead of their own credentials. To prevent this, the environment owner can disable AWS managed temporary credentials for the environment. However, this also prevents the environment owner from making calls. For more information, see [AWS Managed Temporary Credentials](security-iam.md#auth-and-access-control-temporary-managed-credentials).
++ Turn on AWS CloudTrail to track activity in your environments. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
++ Don't use your AWS account root user to create and share environments. Use IAM users in the account instead. For more information, see [First-Time Access Only: Your Root User Credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-first-time-access) and [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_identity-management.html#intro-identity-users) in the *IAM User Guide*.

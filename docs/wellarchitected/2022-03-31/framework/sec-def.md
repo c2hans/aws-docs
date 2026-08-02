@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/sec-def.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# Definition
+<a name="sec-def"></a>
+
+ There are six best practice areas for security in the cloud:
++  **Security**
++  **Identity and Access Management**
++  **Detection**
++  **Infrastructure Protection**
++  **Data Protection**
++  **Incident Response**
+
+ Before you architect any workload, you need to put in place practices that influence security. You will want to control who can do what. In addition, you want to be able to identify security incidents, protect your systems and services, and maintain the confidentiality and integrity of data through data protection. You should have a well-defined and practiced process for responding to security incidents. These tools and techniques are important because they support objectives such as preventing financial loss or complying with regulatory obligations.
+
+ The AWS Shared Responsibility Model enables organizations that adopt the cloud to achieve their security and compliance goals. Because AWS physically secures the infrastructure that supports our cloud services, as an AWS customer you can focus on using services to accomplish your goals. The AWS Cloud also provides greater access to security data and an automated approach to responding to security events.

@@ -1,0 +1,58 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_WaypointGeofencing_ListGeofenceCollectionsResponseEntry.html
+---
+
+# ListGeofenceCollectionsResponseEntry
+<a name="API_WaypointGeofencing_ListGeofenceCollectionsResponseEntry"></a>
+
+Contains the geofence collection details.
+
+**Note**
+The returned geometry will always match the geometry format used when the geofence was created.
+
+## Contents
+<a name="API_WaypointGeofencing_ListGeofenceCollectionsResponseEntry_Contents"></a>
+
+ ** CollectionName **   <a name="location-Type-WaypointGeofencing_ListGeofenceCollectionsResponseEntry-CollectionName"></a>
+The name of the geofence collection.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[-._\w]+`
+Required: Yes
+
+ ** CreateTime **   <a name="location-Type-WaypointGeofencing_ListGeofenceCollectionsResponseEntry-CreateTime"></a>
+The timestamp for when the geofence collection was created in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: `YYYY-MM-DDThh:mm:ss.sss`
+Type: Timestamp
+Required: Yes
+
+ ** Description **   <a name="location-Type-WaypointGeofencing_ListGeofenceCollectionsResponseEntry-Description"></a>
+The description for the geofence collection
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1000.
+Required: Yes
+
+ ** UpdateTime **   <a name="location-Type-WaypointGeofencing_ListGeofenceCollectionsResponseEntry-UpdateTime"></a>
+Specifies a timestamp for when the resource was last updated in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format: `YYYY-MM-DDThh:mm:ss.sss`
+Type: Timestamp
+Required: Yes
+
+ ** PricingPlan **   <a name="location-Type-WaypointGeofencing_ListGeofenceCollectionsResponseEntry-PricingPlan"></a>
+ *This member has been deprecated.*
+No longer used. Always returns `RequestBasedUsage`.
+Type: String
+Valid Values: `RequestBasedUsage | MobileAssetTracking | MobileAssetManagement`
+Required: No
+
+ ** PricingPlanDataSource **   <a name="location-Type-WaypointGeofencing_ListGeofenceCollectionsResponseEntry-PricingPlanDataSource"></a>
+ *This member has been deprecated.*
+No longer used. Always returns an empty string.
+Type: String
+Required: No
+
+## See Also
+<a name="API_WaypointGeofencing_ListGeofenceCollectionsResponseEntry_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/waypointgeofencing-2020-11-19/ListGeofenceCollectionsResponseEntry)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/waypointgeofencing-2020-11-19/ListGeofenceCollectionsResponseEntry)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/waypointgeofencing-2020-11-19/ListGeofenceCollectionsResponseEntry)

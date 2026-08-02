@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/ksp-library--key-types.html
+---
+
+# Supported key types for Key Storage Provider (KSP) for AWS CloudHSM Client SDK 5
+<a name="ksp-library--key-types"></a>
+
+The AWS CloudHSM Key Storage Provider (KSP) supports the following key types with Client SDK 5.
+
+****
+
+| Key Type | Description |
+| --- | --- |
+| EC | Generate keys with the secp256r1 (P-256), secp384r1 (P-384), and secp521r1 (P-521) curves. |
+| RSA | Generate 2048, 3072, and 4096-bit RSA keys. |

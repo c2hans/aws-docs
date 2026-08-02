@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InferenceDeviceInfo.html
+---
+
+# InferenceDeviceInfo
+<a name="API_InferenceDeviceInfo"></a>
+
+**Note**
+Amazon Elastic Inference is no longer available.
+
+Describes the Inference accelerators for the instance type.
+
+## Contents
+<a name="API_InferenceDeviceInfo_Contents"></a>
+
+ ** count **
+The number of Inference accelerators for the instance type.
+Type: Integer
+Required: No
+
+ ** manufacturer **
+The manufacturer of the Inference accelerator.
+Type: String
+Required: No
+
+ ** memoryInfo **
+Describes the memory available to the inference accelerator.
+Type: [InferenceDeviceMemoryInfo](API_InferenceDeviceMemoryInfo.md) object
+Required: No
+
+ ** name **
+The name of the Inference accelerator.
+Type: String
+Required: No
+
+## See Also
+<a name="API_InferenceDeviceInfo_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InferenceDeviceInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InferenceDeviceInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InferenceDeviceInfo)

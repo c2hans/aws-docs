@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_MV_INFO.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# SVV\_MV\_INFO
+<a name="r_SVV_MV_INFO"></a>
+
+The SVV\_MV\_INFO table contains a row for every materialized view, whether the data is stale, and state information.
+
+For more information about materialized views, see [Materialized views in Amazon Redshift](materialized-view-overview.md).
+
+SVV\_MV\_INFO is visible to all users. Superusers can see all rows; regular users can see only their own data. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
+
+## Table columns
+<a name="r_SVV_MV_INFO-table-columns"></a>
+
+| Column name  | Data type  | Description  |
+| --- | --- | --- |
+| database\_name  | char(128)  | The database that contains the materialized view.  |
+| schema\_name | char(128)  | The schema of the database.  |
+| user\_name | char(128)  | The user who owns the materialized view.  |
+| name  | char(128)  | The materialized view name.  |
+| is\_stale  | char(1)  | A t indicates that the materialized view is stale. A stale materialized view is one where the base tables have been updated but the materialized view hasn't been refreshed. An f indicates that the materialized view is up-to-date with the base table changes. A u indicates unknown staleness (e.g., in case of MVs on plain external tables). This information might not be accurate if a refresh hasn't been run since the last restart. |
+| state  | integer  | The state of the materialized view as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_SVV_MV_INFO.html) |
+| autorewrite | char(1) | A t indicates that the materialized view is eligible for automatic rewriting of queries.  |
+| autorefresh | char(1) | A t indicates that the materialized view can be automatically refreshed.  |
+
+## Sample query
+<a name="r_SVV_MV_INFO-sample-query"></a>
+
+To view the state of all materialized views, run the following query.
+
+```
+select * from svv_mv_info;
+```
+
+This query returns the following sample output.
+
+```
+
+database_name |       schema_name       | user_name |   name  |  is_stale | state | autorefresh | autorewrite
+--------------+-------------------------+-----------+---------+-----------+-------+-------------+----------------
+ dev          | test_ivm_setup          | catch-22  | mv      |   f       |     1 |           1 |           0
+ dev          | test_ivm_setup          | lotr      | old_mv  |   t       |     1 |           0 |           1
+```

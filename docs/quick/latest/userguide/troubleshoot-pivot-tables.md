@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/quick/latest/userguide/troubleshoot-pivot-tables.html
+---
+
+# My pivot table stops working
+<a name="troubleshoot-pivot-tables"></a>
+
+If your pivot table exceeds the computational limitations of the underlying database, this is usually caused by the combination of items in the field wells. That is, it's caused by a combination of rows, columns, metrics, and table calculations. To reduce the level of complexity and the potential for errors, simplify your pivot table. For more information, see [Pivot table best practices](pivot-table-best-practices.md).

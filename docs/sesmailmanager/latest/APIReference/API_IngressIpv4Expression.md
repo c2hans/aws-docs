@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressIpv4Expression.html
+---
+
+# IngressIpv4Expression
+<a name="API_IngressIpv4Expression"></a>
+
+The union type representing the allowed types for the left hand side of an IP condition.
+
+## Contents
+<a name="API_IngressIpv4Expression_Contents"></a>
+
+ ** Evaluate **   <a name="sesmailmanager-Type-IngressIpv4Expression-Evaluate"></a>
+The left hand side argument of an IP condition expression.
+Type: [IngressIpToEvaluate](API_IngressIpToEvaluate.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: Yes
+
+ ** Operator **   <a name="sesmailmanager-Type-IngressIpv4Expression-Operator"></a>
+The matching operator for an IP condition expression.
+Type: String
+Valid Values: `CIDR_MATCHES | NOT_CIDR_MATCHES`
+Required: Yes
+
+ ** Values **   <a name="sesmailmanager-Type-IngressIpv4Expression-Values"></a>
+The right hand side argument of an IP condition expression.
+Type: Array of strings
+Pattern: `((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)/([0-9]|[12][0-9]|3[0-2])`
+Required: Yes
+
+## See Also
+<a name="API_IngressIpv4Expression_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mailmanager-2023-10-17/IngressIpv4Expression)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mailmanager-2023-10-17/IngressIpv4Expression)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mailmanager-2023-10-17/IngressIpv4Expression)

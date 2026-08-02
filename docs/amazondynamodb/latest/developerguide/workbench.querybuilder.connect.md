@@ -1,0 +1,48 @@
+---
+source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.connect.html
+---
+
+# Connecting to live datasets
+<a name="workbench.querybuilder.connect"></a>
+
+To connect to your Amazon DynamoDB tables with NoSQL Workbench, you must first connect to your AWS account.
+
+**To add a connection to your database**
+
+1. In NoSQL Workbench, in the navigation pane on the left side, choose the **Operation builder** icon.
+
+1. Choose **Add connection**.
+
+1. Specify the following information:
+   + **Connection name**
+   + **AWS Region**
+   + **Access key ID**
+   + **Secret access key**
+
+   For more information about how to obtain the access keys, see [Getting an AWS access key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html#SettingUp.DynamoWebService.GetCredentials).
+
+   You can optionally, specify the following:
+   + [https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html)
+   + [https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns)
+
+1. Choose **Connect**.
+
+    If you don't want to sign up for a free tier account, and prefer to use [ DynamoDB local (downloadable version)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html):
+
+   1. Choose the **Local** tab on the connection screen.
+
+   1. Specify the following information:
+      + **Connection name**
+      + **Port**
+
+   1. Choose the **connect** button.
+**Note**
+To connect to DynamoDB local, either manually launch DynamoDB local using your terminal (see [deploying DynamoDB local on your computer](DynamoDBLocal.DownloadingAndRunning.md)) or launch DynamoDB local directly using the DDB local toggle in the NoSQL Workbench navigation menu. Ensure the connection port is the same as your DynamoDB local port.
+
+1. On the created connection, choose **Open**.
+
+After connecting to your DynamoDB database, the list of available tables appears in the left pane. Choose one of the tables to return a sample of the data stored in the table.
+
+You can now run queries against the selected table.
+
+To run queries on a table, see the next section on building operations see [Building complex operations](workbench.querybuilder.operationbuilder.md).

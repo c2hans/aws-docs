@@ -1,0 +1,193 @@
+---
+source_url: https://docs.aws.amazon.com/partner-central/latest/APIReference/API_StartEngagementByAcceptingInvitationTask.html
+---
+
+# StartEngagementByAcceptingInvitationTask
+<a name="API_StartEngagementByAcceptingInvitationTask"></a>
+
+This action starts the engagement by accepting an `EngagementInvitation`. The task is asynchronous and involves the following steps: accepting the invitation, creating an opportunity in the partner’s account from the AWS opportunity, and copying details for tracking. When completed, an `Opportunity Created` event is generated, indicating that the opportunity has been successfully created in the partner's account.
+
+## Request Syntax
+<a name="API_StartEngagementByAcceptingInvitationTask_RequestSyntax"></a>
+
+```
+{
+   "Catalog": "{{string}}",
+   "ClientToken": "{{string}}",
+   "Identifier": "{{string}}",
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
+## Request Parameters
+<a name="API_StartEngagementByAcceptingInvitationTask_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** [Catalog](#API_StartEngagementByAcceptingInvitationTask_RequestSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-request-Catalog"></a>
+Specifies the catalog related to the task. Use `AWS` for production engagements and `Sandbox` for testing scenarios.
+Type: String
+Pattern: `[a-zA-Z]+`
+Required: Yes
+
+ ** [ClientToken](#API_StartEngagementByAcceptingInvitationTask_RequestSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-request-ClientToken"></a>
+A unique, case-sensitive identifier provided by the client that helps to ensure the idempotency of the request. This can be a random or meaningful string but must be unique for each request.
+Type: String
+Pattern: `.{1,255}`
+Required: Yes
+
+ ** [Identifier](#API_StartEngagementByAcceptingInvitationTask_RequestSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-request-Identifier"></a>
+Specifies the unique identifier of the `EngagementInvitation` to be accepted. Providing the correct identifier helps ensure that the correct engagement is processed.
+Type: String
+Pattern: `(?=.{1,255}$)(arn:.*|engi-[0-9a-z]{13})`
+Required: Yes
+
+ ** [Tags](#API_StartEngagementByAcceptingInvitationTask_RequestSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-request-Tags"></a>
+A map of the key-value pairs of the tag or tags to assign.
+Type: Array of [Tag](API_Tag.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 200 items.
+Required: No
+
+## Response Syntax
+<a name="API_StartEngagementByAcceptingInvitationTask_ResponseSyntax"></a>
+
+```
+{
+   "EngagementInvitationId": "string",
+   "Message": "string",
+   "OpportunityId": "string",
+   "ReasonCode": "string",
+   "ResourceSnapshotJobId": "string",
+   "StartTime": "string",
+   "TaskArn": "string",
+   "TaskId": "string",
+   "TaskStatus": "string"
+}
+```
+
+## Response Elements
+<a name="API_StartEngagementByAcceptingInvitationTask_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [EngagementInvitationId](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-EngagementInvitationId"></a>
+Returns the identifier of the engagement invitation that was accepted and used to create the opportunity.
+Type: String
+Pattern: `engi-[0-9,a-z]{13}`
+
+ ** [Message](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-Message"></a>
+If the task fails, this field contains a detailed message describing the failure and possible recovery steps.
+Type: String
+
+ ** [OpportunityId](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-OpportunityId"></a>
+Returns the original opportunity identifier passed in the request. This is the unique identifier for the opportunity.
+Type: String
+Pattern: `O[0-9]{1,19}`
+
+ ** [ReasonCode](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-ReasonCode"></a>
+Indicates the reason for task failure using an enumerated code.
+Type: String
+Valid Values: `InvitationAccessDenied | InvitationValidationFailed | EngagementAccessDenied | OpportunityAccessDenied | ResourceSnapshotJobAccessDenied | ResourceSnapshotJobValidationFailed | ResourceSnapshotJobConflict | EngagementValidationFailed | EngagementConflict | OpportunitySubmissionFailed | EngagementInvitationConflict | InternalError | OpportunityValidationFailed | OpportunityConflict | ResourceSnapshotAccessDenied | ResourceSnapshotValidationFailed | ResourceSnapshotConflict | ServiceQuotaExceeded | RequestThrottled | ContextNotFound | CustomerProjectContextNotPermitted | DisqualifiedLeadNotPermitted`
+
+ ** [ResourceSnapshotJobId](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-ResourceSnapshotJobId"></a>
+The identifier of the Resource Snapshot Job created as part of this task.
+Type: String
+Pattern: `job-[0-9a-z]{13}`
+
+ ** [StartTime](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-StartTime"></a>
+The timestamp indicating when the task was initiated. The format follows RFC 3339 section 5.6.
+Type: Timestamp
+
+ ** [TaskArn](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-TaskArn"></a>
+The Amazon Resource Name (ARN) of the task, used for tracking and managing the task within AWS.
+Type: String
+Pattern: `arn:.*`
+
+ ** [TaskId](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-TaskId"></a>
+The unique identifier of the task, used to track the task’s progress.
+Type: String
+Pattern: `.*task-[0-9a-z]{13}`
+
+ ** [TaskStatus](#API_StartEngagementByAcceptingInvitationTask_ResponseSyntax) **   <a name="AWSPartnerCentral-StartEngagementByAcceptingInvitationTask-response-TaskStatus"></a>
+Indicates the current status of the task.
+Type: String
+Valid Values: `IN_PROGRESS | COMPLETE | FAILED`
+
+## Errors
+<a name="API_StartEngagementByAcceptingInvitationTask_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+This error occurs when you don't have permission to perform the requested action.
+You don’t have access to this action or resource. Review IAM policies or contact your AWS administrator for assistance.
+ ** Reason **
+The reason why access was denied for the requested operation.
+HTTP Status Code: 400
+
+ ** ConflictException **
+This error occurs when the request can’t be processed due to a conflict with the target resource's current state, which could result from updating or deleting the resource.
+Suggested action: Fetch the latest state of the resource, verify the state, and retry the request.
+HTTP Status Code: 400
+
+ ** InternalServerException **
+This error occurs when the specified resource can’t be found or doesn't exist. Resource ID and type might be incorrect.
+Suggested action: This is usually a transient error. Retry after the provided retry delay or a short interval. If the problem persists, contact AWS support.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+This error occurs when the specified resource can't be found. The resource might not exist, or isn't visible with the current credentials.
+Suggested action: Verify that the resource ID is correct and the resource is in the expected AWS region. Check IAM permissions for accessing the resource.
+HTTP Status Code: 400
+
+ ** ServiceQuotaExceededException **
+This error occurs when the request would cause a service quota to be exceeded. Service quotas represent the maximum allowed use of a specific resource, and this error indicates that the request would surpass that limit.
+Suggested action: Review the [Quotas](https://docs.aws.amazon.com/partner-central/latest/selling-api/quotas.html) for the resource, and either reduce usage or request a quota increase.
+HTTP Status Code: 400
+
+ ** ThrottlingException **
+This error occurs when there are too many requests sent. Review the provided quotas and adapt your usage to avoid throttling.
+This error occurs when there are too many requests sent. Review the provided [Quotas](https://docs.aws.amazon.com/partner-central/latest/selling-api/quotas.html) and retry after the provided delay.
+HTTP Status Code: 400
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by the service or business validation rules.
+Suggested action: Review the error message, including the failed fields and reasons, to correct the request payload.
+ ** ErrorList **
+A list of issues that were discovered in the submitted request or the resource state.
+ ** Reason **
+The primary reason for this validation exception to occur.
++  *REQUEST\_VALIDATION\_FAILED:* The request format is not valid.
+
+  Fix: Verify your request payload includes all required fields, uses correct data types and string formats.
++  *BUSINESS\_VALIDATION\_FAILED:* The requested change doesn't pass the business validation rules.
+
+  Fix: Check that your change aligns with the business rules defined by AWS Partner Central.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_StartEngagementByAcceptingInvitationTask_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/partnercentral-selling-2022-07-26/StartEngagementByAcceptingInvitationTask)

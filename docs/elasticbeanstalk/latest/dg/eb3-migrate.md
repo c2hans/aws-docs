@@ -1,0 +1,393 @@
+---
+source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-migrate.html
+---
+
+# **eb migrate**
+<a name="eb3-migrate"></a>
+
+## Description
+<a name="eb3-migratedescription"></a>
+
+Migrates Internet Information Services (IIS) sites and applications from a Windows server to Elastic Beanstalk. The command packages your applications, preserves their configurations, and deploys them to a new Elastic Beanstalk environment.
+
+For more information about migrating your IIS sites and applications, see [Migrating IIS applications to Elastic Beanstalk](dotnet-migrating-applications.md).
+
+**Note**
+Before using this command, ensure your system meets these requirements:
+Internet Information Services (IIS) version 7.0 or later
+Web Deploy 3.6 or later installed
+Administrative privileges on the Windows server
+AWS credentials configured with appropriate permissions
+Your source server has outbound internet access to AWS services.
+
+The following steps summarize the migration process:
+
+1. Discover IIS sites and their configurations.
+
+1. Package application content and configuration.
+
+1. Create Elastic Beanstalk environment and application.
+
+1. Deploy the application with preserved settings.
+
+The command creates migration artifacts in a structured directory as shown in the following listing:
+
+```
+C:\migration_workspace\
+└── .\migrations\latest\
+    ├── upload_target.zip
+    └── upload_target\
+        ├── [SiteName].zip                      # One ZIP per default application of IIS site
+        ├── [SiteName-ApplicationName].zip      # One ZIP per additional application
+        ├── aws-windows-deployment-manifest.json
+        └── ebmigrateScripts\
+            ├── site_installer.ps1              # Site installation scripts
+            ├── permission_handler.ps1          # Permission management
+            └── other helper scripts
+```
+
+Use **eb migrate cleanup** to manage these artifacts.
+
+## Syntax
+<a name="eb3-migratesyntax"></a>
+
+**eb migrate {{[options]}}**
+
+**eb migrate explore {{[options]}}**
+
+**eb migrate cleanup {{[options]}}**
+
+When run without arguments, **eb migrate** operates in non-interactive mode. To execute it in the interactive mode, run **eb migrate --interactive**.
+
+The interactive mode command prompts for the following information:
++ Selection of IIS sites to migrate
++ Environment and application names
++ Platform version selection
++ Instance type and other configuration options
+
+## Subcommands
+<a name="eb3-migratesubcommands"></a>
+
+### explore
+<a name="eb3-migrateexplore"></a>
+
+The **eb migrate explore** subcommand examines your IIS server and lists available sites.
+
+Use this command to display the following information:
++ View all IIS sites on the server
++ With `--verbose`, inspect detailed configuration including:
+  + Site bindings and ports
+  + Application pools
+  + Virtual directories and their physical paths
+  + Authentication settings
+
+```
+PS C:\migrations_workspace >  eb migrate explore
+Default Web Site
+Site2
+site3
+router
+```
+
+```
+PS C:\migrations_workspace >  eb migrate explore --verbose
+1: Default Web Site:
+  - Bindings:
+    - *:8083:
+  - Application '/':
+    - Application Pool: DefaultAppPool
+    - Enabled Protocols: http
+    - Virtual Directories:
+      - /:
+        - Physical Path: C:\inetpub\wwwroot
+        - Logon Method: ClearText
+  - Application '/dotnet-6-0':
+    - Application Pool: DefaultAppPool
+    - Enabled Protocols: http
+    - Virtual Directories:
+      - /:
+        - Physical Path: C:\inetpub\AspNetCoreWebApps\CoreWebApp-6-0
+        - Logon Method: ClearText
+  - Application '/dotnet-8-0':
+    - Application Pool: DefaultAppPool
+    - Enabled Protocols: http
+    - Virtual Directories:
+      - /:
+        - Physical Path: C:\inetpub\AspNetCoreWebApps\CoreWebApp-8-0
+        - Logon Method: ClearText
+2: Site2:
+  - Bindings:
+    - *:8081:
+...
+```
+
+### cleanup
+<a name="eb3-migratecleanup"></a>
+
+The **eb migrate cleanup** subcommand manages migration artifacts with the following actions:
++ Preserving the most recent successful migration in `./migrations/latest`
++ Removing older migration directories
++ Maintaining critical configuration files
+
+```
+PS C:\migrations_workspace >   eb migrate cleanup
+Are you sure you would like to cleanup older artifacts within `./migrations/`? (y/N):
+```
+
+Use `--force` to skip confirmation prompts during cleanup.
+
+```
+PS C:\migrations_workspace >   eb migrate cleanup --force
+```
+
+## Options
+<a name="eb3-migrateoptions"></a>
+
+None of these options are required. If you run **eb migrate** without any options, the EB CLI will execute in the non-interactive mode. With **eb migrate --interactive**, the EB CLI prompts you to enter or select a value for required settings.
+
+****
+
+|  Name  |  Description  |
+| --- | --- |
+| `-a` {{application-name}}<br />or<br />`--application-name` {{application-name}} | Name for the new Elastic Beanstalk application.<br />Type: String<br />Default: EBMigratedApp |
+| `--archive` {{directory-or-zip}} | The directory or ZIP file containing source code previously generated by **eb migrate --archive-only**.<br />Use this option to deploy a previously created migration package.<br />Example: `--archive .\migrations\latest\upload_target` or `--archive .\migrations\latest\upload_target.zip` |
+| `-ao`<br />or<br />`--archive-only` | Create only the destination archive directory without deployment.<br />The resulting directory can be manually deployed using **eb migrate** with the `archive` option, or **eb deploy**. |
+| `-c` {{subdomain-name}}<br />or<br />`--cname` {{subdomain-name}} | The subdomain name to prefix the CNAME DNS entry for your migrated application.<br />Type: String<br />Default: The environment name |
+| `-cf`<br />or<br />`--copy-firewall-config` | Copy source server firewall configuration to the destination for all HTTP ports with active bindings.<br />Creates corresponding security group rules in AWS. |
+| `-es` {{snapshot-id}} [{{snapshot-id}} ...]<br />or<br />`--ebs-snapshots` {{snapshot-id}} [{{snapshot-id}} ...] | Comma-separated list of Amazon EBS snapshot IDs to associate with the environment.<br />Example: `--ebs-snapshots snap-1234567890abcdef0, snap-0987654321fedcba1` |
+| `--encrypt-ebs-volumes` | Enforce encryption for all new Amazon EBS volumes. This is an account-wide setting that affects all future Amazon EBS volume creation.  |
+| `-e` {{environment-name}}<br />or<br />`--environment-name` {{environment-name}} | Name for the new Elastic Beanstalk environment.<br />Type: String<br />Default: EBMigratedEnv<br />Constraints: Must be between 4 and 40 characters in length. Can only contain letters, numbers, and hyphens. Cannot start or end with a hyphen. |
+| `--force` | Skip confirmation prompts during operations.<br />When used with **cleanup** subcommand, removes migration artifacts without confirmation. |
+| `-ip` {{profile-name}}<br />or<br />`--instance-profile` {{profile-name}} | Instance Profile to associate with the environment's Amazon EC2 instances.<br />If not specified, creates a default instance profile with permissions to access Elastic Beanstalk resources. For more information, see [Elastic Beanstalk instance profile](concepts-roles-instance.md).  |
+| `-i` {{instance-type}}<br />or<br />`--instance-type` {{instance-type}} | The Amazon EC2 instance type for your Elastic Beanstalk environment.<br />Type: String<br />Default: c5.2xlarge<br />For available instance types, see [Amazon EC2 instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the *Amazon EC2 User Guide*. |
+| `-in`<br />or<br />`--interactive` | Force interactive mode for the migration process.<br />Prompts for configuration values even when defaults are available. |
+| `-k` {{key-name}}<br />or<br />`--keyname` {{key-name}} | Amazon EC2 key pair to enable RDP access to environment instances.<br />Useful for investigating instance-level issues not visible in logs.<br />Valid values: An existing key pair name registered with Amazon EC2 |
+| `-p` {{platform-version}}<br />or<br />`--platform` {{platform-version}} | Elastic Beanstalk platform runtime for the environment. If not specified, automatically detected from host Windows Server version.<br />Example: `"64bit Windows Server 2016 v2.16.2 running IIS 10.0"`<br />For a list of available platform versions, use [eb platform list](eb3-platform.md#eb3-platform-list). |
+| `--remote` | Indicates to execute the migration in remote mode. This option allows execution from a bastion host, which connects to the target server that contains the application and configurations to be migrated to Elastic Beanstalk. Running from the bastion server, `eb migrate` discovers configurations, stages migration logic on the bastion host, then deploys your application to a new Elastic Beanstalk environment. <br />This option eliminates the need to install the EB CLI and Python on the Windows server that you need to migrate. You install Python and the EB CLI on a bastion host instead, where you run the **eb migrate** command with the `--remote` option. Use the `--target-ip` option to specify the host with the IIS configurations to migrate.<br />Must be used with `--target-ip`, `--username`, and `--password`. |
+| `--target-ip` {{ip-address}} | Public IP address of the remote Windows machine that contains the IIS servers to be migrated.<br />Required when using `--remote`. Can only be specified when using `--remote`. |
+| `--username` {{username}} | Username of the user profile to access the remote Windows machine that contains the IIS servers to be migrated.<br />Required when using `--remote`. Can only be specified when using `--remote`. |
+| `--password` {{password}} | Password of the user profile to access the remote Windows machine that contains the IIS servers to be migrated.<br />Required when using `--remote`. Can only be specified when using `--remote`. |
+| `-sr` {{role-name}}<br />or<br />`--service-role` {{role-name}} | IAM service role for Elastic Beanstalk to manage related AWS services.<br />If not specified, creates a default service role with necessary permissions. For more information, see [Elastic Beanstalk service role](concepts-roles-service.md). Specify only the role name, not the full ARN. Elastic Beanstalk automatically creates the complete ARN.  |
+| `-s` {{site-names}}<br />or<br />`--sites` {{site-names}} | Comma-separated list of IIS sites to migrate. If not specified, migrates all available sites on the server.<br />Example: `--sites "Default Web Site,Intranet,API"` |
+| `--ssl-certificates` {{certificate-arn}}[,{{certificate-arn}} ...] | Comma-separated list of ACM SSL certificate ARNs to associate with the Application Load Balancer.<br />Required when migrating sites with HTTPS bindings.<br />Example: `--ssl-certificates arn:aws:acm:region:account:certificate/certificate-id` |
+| `-t {{key1}}={{value1}}[,{{key2}}={{value2}} ...]`<br />or<br />`-﻿-﻿tags {{key1}}={{value1}}[,{{key2}}={{value2}} ...]` | Comma-separated list of `key=value` pairs to tag new resources in your environment: Environment, Elastic Beanstalk application, Application version.<br />For more information, see [Tagging environments](using-features.tagging.md). |
+| `--verbose` | Show detailed information during migration process.<br />When used with **explore** subcommand, displays comprehensive site configuration details. |
+| `-vpc` {{config-file-or-string}}<br />or<br />`--vpc-config` {{config-file-or-string}} | VPC configuration for the environment, specified either as a JSON file path or a JSON string.<br />Configuration must include:<pre>{<br />    "id": "vpc-1234567890abcdef0",<br />    "publicip": "true|false",<br />    "elbscheme": "public|private",<br />    "ec2subnets": ["subnet-a1b2c3d4", "subnet-e5f6g7h8"],<br />    "securitygroups": "sg-123456,sg-789012",<br />    "elbsubnets": ["subnet-a1b2c3d4", "subnet-e5f6g7h8"]<br />}</pre>[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-migrate.html) *The migration will ignore any existing VPC settings from the source environment when you specify the *`--vpc-config` *parameter*. When you use this parameter, the migration will only use the VPC settings specified in the configuration file that you're passing in. Using this parameter overrides the default behavior of discovering the source instance's VPC configuration or using the default VPC.  |
+| [Common options](eb3-cmd-options.md) |  |
+
+## Output
+<a name="eb3-migrateoutput"></a>
+
+The command provides status updates throughout the migration process:
+
+1. VPC configuration detection (when running on an EC2 instance)
+
+1. Source bundle generation progress for each site
+
+1. Environment creation status
+
+1. Deployment progress
+
+If successful, displays the new environment's details including:
++ Environment name and ID
++ Application name
++ Region
++ Platform version
++ Environment CNAME
+
+For issues during migration, use the [**eb events**](eb3-events.md) and [**eb health**](eb3-health.md) commands to get detailed information.
+
+## Examples
+<a name="eb3-migrateexamples"></a>
+
+### Basic Usage
+<a name="eb3-migrateexamples-basic"></a>
+
+Basic migration in interactive mode:
+
+```
+PS C:\migrations_workspace >  eb migrate
+Identifying VPC configuration of this EC2 instance (i-0123456789abcdef0):
+  id: vpc-1234567890abcdef0
+  publicip: true
+  elbscheme: public
+  ec2subnets: subnet-123,subnet-456,subnet-789
+  securitygroups: sg-123,sg-456
+  elbsubnets: subnet-123,subnet-456,subnet-789
+
+Using .\migrations\latest to contain artifacts for this migration run.
+Generating source bundle for sites, applications, and virtual directories...
+  Default Web Site/ -> .\migrations\latest\upload_target\DefaultWebSite.zip
+
+Creating application version
+Creating environment
+
+Environment details for: EBMigratedEnv
+  Application name: EBMigratedApp
+  Region: us-west-2
+  Deployed Version: app-230320_153045
+  Environment ID: e-abcdef1234
+  Platform: 64bit Windows Server 2019 v2.7.0 running IIS 10.0
+  Tier: WebServer-Standard-1.0
+  CNAME: ebmigratedenv.us-west-2.elasticbeanstalk.com
+  Updated: 2023-03-20 15:30:45
+```
+
+Migrating specific sites with custom configuration:
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --sites "Default Web Site,InternalAPI" `
+    --application-name "CorporateApp" `
+    --environment-name "Production" `
+    --instance-type "c5.xlarge" `
+    --tags "Environment=Production,Team=WebOps" `
+    --copy-firewall-config
+```
+
+Creating migration archive without deployment:
+
+```
+PS C:\migrations_workspace >  eb migrate --archive-only
+Using .\migrations\latest to contain artifacts for this migration run.
+Generating source bundle for sites, applications, and virtual directories...
+  Default Web Site/ -> .\migrations\latest\upload_target\DefaultWebSite.zip
+
+Generated destination archive directory at .\migrations\latest\upload_target
+You can execute `eb init` and `eb create` from this directory to deploy to EB.
+```
+
+### Advanced Configuration Examples
+<a name="eb3-migrateexamples-advanced"></a>
+
+Migration with custom VPC configuration using a JSON file:
+
+```
+PS C:\migrations_workspace >  cat vpc-config.json
+{
+    "id": "vpc-1234567890abcdef0",
+    "publicip": "false",
+    "elbscheme": "internal",
+    "ec2subnets": [
+        "subnet-private1",
+        "subnet-private2"
+    ],
+    "securitygroups": [
+        "sg-app",
+        "sg-database",
+        "sg-monitoring"
+    ],
+    "elbsubnets": [
+        "subnet-private1",
+        "subnet-private2"
+    ]
+}
+
+PS C:\migrations_workspace eb migrate `
+    --sites "InternalAPI" `
+    --vpc-config vpc-config.json `
+    --instance-type "r5.xlarge" `
+    --tags "Environment=Internal,Security=High"
+```
+
+Migrating sites with SSL certificates and host headers:
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --sites "SecurePortal" `
+    --ssl-certificates "arn:aws:acm:region:account:certificate/cert1,arn:aws:acm:region:account:certificate/cert2" `
+    --verbose
+INFO: Detected HTTPS bindings:
+  - www.example.com:443
+  - api.example.com:443
+
+INFO: Configuring Application Load Balancer with SSL certificates
+INFO: Creating host-based routing rules:
+  - www.example.com -> target group 1
+  - api.example.com -> target group 2
+```
+
+Migration with EBS snapshot configuration:fo
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --sites "Default Web Site" `
+    --ebs-snapshots "snap-1234567890abcdef0" "snap-0987654321fedcba1" `
+    --encrypt-ebs-volumes
+Using .\migrations\latest to contain artifacts for this migration run.
+INFO: Enabling EBS encryption for all new volumes in us-west-2
+INFO: Configuring environment with specified EBS snapshots
+```
+
+### Security Configuration Examples
+<a name="eb3-migrateexamples-security"></a>
+
+Handling sites with complex firewall rules:
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --sites "Default Web Site,ReportingService" `
+    --copy-firewall-config `
+    --verbose
+INFO: Detected the following Windows Firewall rules:
+  - Allow Web Traffic (TCP 80, 443)
+  - Allow Reporting Traffic (TCP 8081)
+INFO: Creating corresponding security group rules
+```
+
+Migration with custom IAM roles:
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --sites "SecureApp" `
+    --instance-profile "CustomInstanceProfile" `
+    --service-role "CustomServiceRole"
+```
+
+### Remote Execution Examples
+<a name="eb3-migrateexamples-remote"></a>
+
+Migrating IIS applications from a remote Windows server:
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --remote `
+    --target-ip "192.0.2.10" `
+    --username "administrator" `
+    --password "YourPassword123" `
+    --application-name "RemoteApp" `
+    --environment-name "RemoteEnv"
+INFO: Establishing SSH connection to remote host 192.0.2.10...
+INFO: Connection established
+INFO: Discovering IIS sites on remote host...
+INFO: Found 2 sites: Default Web Site, API
+INFO: Extracting site configurations...
+INFO: Generating source bundle for sites, applications, and virtual directories...
+  Default Web Site/ -> .\migrations\latest\upload_target\DefaultWebSite.zip
+  API/ -> .\migrations\latest\upload_target\API.zip
+
+Creating application version
+Creating environment
+
+Environment details for: RemoteEnv
+  Application name: RemoteAppstage mi
+  Region: us-west-2
+  Deployed Version: app-230320_153045
+  Environment ID: e-abcdef1234
+  Platform: 64bit Windows Server 2019 v2.7.0 running IIS 10.0
+  Tier: WebServer-Standard-1.0
+  CNAME: remoteenv.us-west-2.elasticbeanstalk.com
+  Updated: 2023-03-20 15:30:45
+```
+
+Remote migration with specific site selection:
+
+```
+PS C:\migrations_workspace >  eb migrate `
+    --remote `
+    --target-ip "192.0.2.10" `
+    --username "administrator" `
+    --password "YourPassword123" `
+    --sites "API" `
+    --instance-type "c5.large"
+```

@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ModelCompilationConfig.html
+---
+
+# ModelCompilationConfig
+<a name="API_ModelCompilationConfig"></a>
+
+Settings for the model compilation technique that's applied by a model optimization job.
+
+## Contents
+<a name="API_ModelCompilationConfig_Contents"></a>
+
+ ** Image **   <a name="sagemaker-Type-ModelCompilationConfig-Image"></a>
+The URI of an LMI DLC in Amazon ECR. SageMaker uses this image to run the optimization.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 255.
+Pattern: `[\S]+`
+Required: No
+
+ ** OverrideEnvironment **   <a name="sagemaker-Type-ModelCompilationConfig-OverrideEnvironment"></a>
+Environment variables that override the default ones in the model container.
+Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 25 items.
+Key Length Constraints: Minimum length of 0. Maximum length of 256.
+Key Pattern: `(?!\s*$).+`
+Value Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
+
+## See Also
+<a name="API_ModelCompilationConfig_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/ModelCompilationConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/ModelCompilationConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/ModelCompilationConfig)

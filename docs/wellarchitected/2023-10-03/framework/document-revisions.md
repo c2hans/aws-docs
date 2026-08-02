@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/document-revisions.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# Document revisions
+<a name="document-revisions"></a>
+
+To be notified about updates to this whitepaper, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Major update](#document-revisions) | Major [performance pillar](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html) restructure to bring number of best practice areas to five. Large update to best practices and guidance in the security pillar in [Incident response (SEC 10)](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/incident-response.html). Major content changes and consolidation in operational excellence areas [OPS 04, 05, 06](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/prepare.html), [08, and 09](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/operate.html). Guidance updates throughout the [cost optimization](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html) and [reliability](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) pillars. Minor updates to [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html) risk levels. | October 3, 2023 |
+| [Updates for new Framework](#document-revisions) | Best practices updated with prescriptive guidance and new best practices added. New questions added to the Security and Cost Optimization pillars. | April 10, 2023 |
+| [Minor update](#document-revisions) | Added definition for level of effort and updated best practices in the appendix. | October 20, 2022 |
+| [Whitepaper updated](#document-revisions) | Added Sustainability Pillar and updated links. | December 2, 2021 |
+| [Major update](sustainability.md) | Sustainability Pillar added to the framework. | November 20, 2021 |
+| [Minor update](#document-revisions) | Removed non-inclusive language. | April 22, 2021 |
+| [Minor update](#document-revisions) | Fixed numerous links. | March 10, 2021 |
+| [Minor update](#document-revisions) | Minor editorial changes throughout. | July 15, 2020 |
+| [Updates for new Framework](#document-revisions) | Review and rewrite of most questions and answers. | July 8, 2020 |
+| [Whitepaper updated](#document-revisions) | Addition of AWS Well-Architected Tool, links to AWS Well-Architected Labs, and AWS Well-Architected Partners, minor fixes to enable multiple language version of framework. | July 1, 2019 |
+| [Whitepaper updated](#document-revisions) | Review and rewrite of most questions and answers, to ensure questions focus on one topic at a time. This caused some previous questions to be split into multiple questions. Added common terms to definitions (workload, component etc). Changed presentation of question in main body to include descriptive text. | November 1, 2018 |
+| [Whitepaper updated](#document-revisions) | Updates to simplify question text, standardize answers, and improve readability. | June 1, 2018 |
+| [Whitepaper updated](#document-revisions) | Operational Excellence moved to front of pillars and rewritten so it frames other pillars. Refreshed other pillars to reflect evolution of AWS. | November 1, 2017 |
+| [Whitepaper updated](#document-revisions) | Updated the Framework to include operational excellence pillar, and revised and updated the other pillars to reduce duplication and incorporate learnings from carrying out reviews with thousands of customers. | November 1, 2016 |
+| [Minor updates](#document-revisions) | Updated the Appendix with current Amazon CloudWatch Logs information. | November 1, 2015 |
+| [Initial publication](#document-revisions) | AWS Well-Architected Framework published. | October 1, 2015 |
+
+**Note**
+To subscribe to RSS updates, you must have an RSS plugin enabled for the browser that you are using.
+
+**Framework versions:**
++ [2023-10-03](https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/welcome.html) (current)
++ [2023-04-10](https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/welcome.html)
++ [2022-03-31](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/welcome.html)

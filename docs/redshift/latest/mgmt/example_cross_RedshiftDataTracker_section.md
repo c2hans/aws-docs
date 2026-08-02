@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/example_cross_RedshiftDataTracker_section.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# Create an Amazon Redshift item tracker
+<a name="example_cross_RedshiftDataTracker_section"></a>
+
+The following code examples show how to create a web application that tracks and reports on work items using an Amazon Redshift database.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ Shows how to create a web application that tracks and reports on work items stored in an Amazon Redshift database.
+ For complete source code and instructions on how to set up a Spring REST API that queries Amazon Redshift data and for use by a React application, see the full example on [GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/usecases/CreatingSpringRedshiftRest).
+
+**Services used in this example**
++ Amazon Redshift
++ Amazon SES
+
+------
+#### [ Kotlin ]
+
+**SDK for Kotlin**
+ Shows how to create a web application that tracks and reports on work items stored in an Amazon Redshift database.
+ For complete source code and instructions on how to set up a Spring REST API that queries Amazon Redshift data and for use by a React application, see the full example on [GitHub](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/usecases/creating_redshift_application).
+
+**Services used in this example**
++ Amazon Redshift
++ Amazon SES
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using this service with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

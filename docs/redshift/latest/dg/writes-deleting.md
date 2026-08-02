@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/writes-deleting.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# Deleting a datashare created in your account in Amazon Redshift
+<a name="writes-deleting"></a>
+
+You can delete a datashare created in your account using the console or with SQL.
+
+------
+#### [ Console ]
+
+To delete a datashare created in your account using the console, first connect to a database to see the list of datashares created in your account.
+
+1. Sign in to the AWS Management Console and open the Amazon Redshift console at [https://console.aws.amazon.com/redshiftv2/](https://console.aws.amazon.com/redshiftv2/).
+
+1. On the navigation menu, choose **Clusters**, then choose your cluster. The cluster details page appears.
+
+1. Choose **Datashares**. The datashare list appears.
+
+1. In the **Datashares created in my account** section, choose **Connect to database**.
+
+1. Choose one or more datashares you want to delete, then choose **Delete**. The Delete datashares page appears.
+
+   Deleting a datashare shared with Lake Formation doesn't automatically remove the associated permissions in Lake Formation. To remove them, go to the Lake Formation console.
+
+1. Type **Delete** to confirm deleting the specified datashares.
+
+1. Choose **Delete**.
+
+After datashares are deleted, datashare consumers lose access to the datashares.
+
+------
+#### [ SQL ]
+
+You can use SQL to delete the datashare objects at any point using [DROP DATASHARE](r_DROP_DATASHARE.md). Cluster superusers and owners of datashare can drop datashares.
+
+The following example drops a datashare named `salesshare`.
+
+```
+DROP DATASHARE salesshare;
+```
+
+------

@@ -1,0 +1,202 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/security_iam_service-with-iam.html
+---
+
+# How Amazon GameLift Streams works with IAM
+<a name="security_iam_service-with-iam"></a>
+
+Before you use IAM to manage access to Amazon GameLift Streams, learn what IAM features are available to use with Amazon GameLift Streams.
+
+**IAM features you can use with Amazon GameLift Streams**
+
+| IAM feature | Amazon GameLift Streams support |
+| --- | --- |
+| [Identity-based policies](#security_iam_service-with-iam-id-based-policies) |  Yes |
+| [Resource-based policies](#security_iam_service-with-iam-resource-based-policies) |  No  |
+| [Policy actions](#security_iam_service-with-iam-id-based-policies-actions) |  Yes |
+| [Policy resources](#security_iam_service-with-iam-id-based-policies-resources) |  Yes |
+| [Policy condition keys (service-specific)](#security_iam_service-with-iam-id-based-policies-conditionkeys) |  Yes |
+| [ACLs](#security_iam_service-with-iam-acls) |  No  |
+| [ABAC (tags in policies)](#security_iam_service-with-iam-tags) |  Partial. ABAC is only supported for applications and stream groups. |
+| [Temporary credentials](#security_iam_service-with-iam-roles-tempcreds) |  Yes |
+| [Principal permissions](#security_iam_service-with-iam-principal-permissions) |  Yes |
+| [Service roles](#security_iam_service-with-iam-roles-service) |  Yes |
+| [Service-linked roles](#security_iam_service-with-iam-roles-service-linked) |  No  |
+
+To get a high-level view of how Amazon GameLift Streams and other AWS services work with most IAM features, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
+
+## Identity-based policies for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-id-based-policies"></a>
+
+**Supports identity-based policies:** Yes
+
+Identity-based policies are JSON permissions policy documents that you can attach to an identity, such as an IAM user, group of users, or role. These policies control what actions users and roles can perform, on which resources, and under what conditions. To learn how to create an identity-based policy, see [Define custom IAM permissions with customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html) in the *IAM User Guide*.
+
+With IAM identity-based policies, you can specify allowed or denied actions and resources as well as the conditions under which actions are allowed or denied. To learn about all of the elements that you can use in a JSON policy, see [IAM JSON policy elements reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) in the *IAM User Guide*.
+
+### Identity-based policy examples for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-id-based-policies-examples"></a>
+
+To view examples of Amazon GameLift Streams identity-based policies, see [Identity-based policy examples for Amazon GameLift Streams](security_iam_id-based-policy-examples.md).
+
+## Resource-based policies within Amazon GameLift Streams
+<a name="security_iam_service-with-iam-resource-based-policies"></a>
+
+**Supports resource-based policies:** No
+
+Resource-based policies are JSON policy documents that you attach to a resource. Examples of resource-based policies are IAM *role trust policies* and Amazon S3 *bucket policies*. In services that support resource-based policies, service administrators can use them to control access to a specific resource. For the resource where the policy is attached, the policy defines what actions a specified principal can perform on that resource and under what conditions. You must [specify a principal](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html) in a resource-based policy. Principals can include accounts, users, roles, federated users, or AWS services.
+
+To enable cross-account access, you can specify an entire account or IAM entities in another account as the principal in a resource-based policy. For more information, see [Cross account resource access in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies-cross-account-resource-access.html) in the *IAM User Guide*.
+
+## Policy actions for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-id-based-policies-actions"></a>
+
+**Supports policy actions:** Yes
+
+Administrators can use AWS JSON policies to specify who has access to what. That is, which **principal** can perform **actions** on what **resources**, and under what **conditions**.
+
+The `Action` element of a JSON policy describes the actions that you can use to allow or deny access in a policy. Include actions in a policy to grant permissions to perform the associated operation.
+
+Policy actions in Amazon GameLift Streams use the following prefix before the action:
+
+```
+gameliftstreams
+```
+
+To specify multiple actions in a single statement, separate them with commas.
+
+**Example**
+
+```
+"Action": [
+            "gameliftstreams:{{action1}}",
+            "gameliftstreams:{{action2}}"
+               ]
+```
+
+To view examples of Amazon GameLift Streams identity-based policies, see [Identity-based policy examples for Amazon GameLift Streams](security_iam_id-based-policy-examples.md).
+
+## Policy resources for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-id-based-policies-resources"></a>
+
+**Supports policy resources:** Yes
+
+Administrators can use AWS JSON policies to specify who has access to what. That is, which **principal** can perform **actions** on what **resources**, and under what **conditions**.
+
+The `Resource` JSON policy element specifies the object or objects to which the action applies. As a best practice, specify a resource using its [Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html). For actions that don't support resource-level permissions, use a wildcard (\*) to indicate that the statement applies to all resources.
+
+```
+"Resource": "*"
+```
+
+Stream URL resource ARNs use the following format:
+
+```
+arn:aws:gameliftstreams:{{region}}:{{account-id}}:streamurl/{{streamGroupId}}/{{streamUrlId}}
+```
+
+A stream URL ARN is nested under the stream group it belongs to, and stream URL IDs use the `su-` prefix. This ARN identifies a stream URL in API responses, logs, and CloudTrail events. Amazon GameLift Streams does not use this ARN for IAM resource-level permissions: you cannot use a stream URL ARN in the `Resource` element of a policy to grant or deny access to an individual stream URL. Scope `CreateStreamUrl`, `GetStreamUrl`, and `RevokeStreamUrl` at the stream group level instead, and use `Resource` set to `"*"` for `ListStreamUrls`. For an example, see [Create and manage stream URLs](security_iam_id-based-policy-examples.md#create-and-manage-streamurls-iam).
+
+To view examples of Amazon GameLift Streams identity-based policies, see [Identity-based policy examples for Amazon GameLift Streams](security_iam_id-based-policy-examples.md).
+
+## Policy condition keys for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-id-based-policies-conditionkeys"></a>
+
+**Supports service-specific policy condition keys:** Yes
+
+Administrators can use AWS JSON policies to specify who has access to what. That is, which **principal** can perform **actions** on what **resources**, and under what **conditions**.
+
+The `Condition` element specifies when statements execute based on defined criteria. You can create conditional expressions that use [condition operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition_operators.html), such as equals or less than, to match the condition in the policy with values in the request. To see all AWS global condition keys, see [AWS global condition context keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*.
+
+To view examples of Amazon GameLift Streams identity-based policies, see [Identity-based policy examples for Amazon GameLift Streams](security_iam_id-based-policy-examples.md).
+
+Amazon GameLift Streams supports the following service-specific condition keys:
++ `gameliftstreams:RoleArn` – The ARN of the IAM role specified in the `RoleArn` parameter of a `StartStreamSession` request. Use this condition key to restrict which IAM roles a principal can pass when starting stream sessions.
++ `gameliftstreams:ApplicationArn` – The ARN of the application specified in the `ApplicationIdentifier` parameter of a `StartStreamSession` request.
+
+You can use these condition keys in IAM policies to set fine-grained permissions. For example, the following policy allows a principal to start stream sessions only when using a specific IAM role:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Effect": "Allow",
+    "Action": "gameliftstreams:StartStreamSession",
+    "Resource": "arn:aws:gameliftstreams:*:{{123456789012}}:streamgroup/*",
+    "Condition": {
+      "StringEquals": {
+        "gameliftstreams:RoleArn": "arn:aws:iam::{{123456789012}}:role/GameLiftStreams-{{MyApprovedRole}}"
+      }
+    }
+  }]
+}
+```
+
+## ACLs in Amazon GameLift Streams
+<a name="security_iam_service-with-iam-acls"></a>
+
+**Supports ACLs:** No
+
+Access control lists (ACLs) control which principals (account members, users, or roles) have permissions to access a resource. ACLs are similar to resource-based policies, although they do not use the JSON policy document format.
+
+## ABAC with Amazon GameLift Streams
+<a name="security_iam_service-with-iam-tags"></a>
+
+**Supports ABAC (tags in policies):** Partial
+
+Attribute-based access control (ABAC) is an authorization strategy that defines permissions based on attributes called tags. You can attach tags to IAM entities and AWS resources, then design ABAC policies to allow operations when the principal's tag matches the tag on the resource.
+
+To control access based on tags, you provide tag information in the [condition element](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) of a policy using the `aws:ResourceTag/{{key-name}}`, `aws:RequestTag/{{key-name}}`, or `aws:TagKeys` condition keys.
+
+If a service supports all three condition keys for every resource type, then the value is **Yes** for the service. If a service supports all three condition keys for only some resource types, then the value is **Partial**.
+
+For more information about ABAC, see [Define permissions with ABAC authorization](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) in the *IAM User Guide*. To view a tutorial with steps for setting up ABAC, see [Use attribute-based access control (ABAC)](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_attribute-based-access-control.html) in the *IAM User Guide*.
+
+Attribute-based access control (ABAC) applies only to applications and stream groups. Stream URLs cannot be tagged, so you cannot use tag-based conditions to control access to stream URL actions. Scope stream URL permissions at the stream group level as shown in [Create and manage stream URLs](security_iam_id-based-policy-examples.md#create-and-manage-streamurls-iam).
+
+## Using temporary credentials with Amazon GameLift Streams
+<a name="security_iam_service-with-iam-roles-tempcreds"></a>
+
+**Supports temporary credentials:** Yes
+
+Temporary credentials provide short-term access to AWS resources and are automatically created when you use federation or switch roles. AWS recommends that you dynamically generate temporary credentials instead of using long-term access keys. For more information, see [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) and [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
+
+## Cross-service principal permissions for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-principal-permissions"></a>
+
+**Supports forward access sessions (FAS):** Yes
+
+ Forward access sessions (FAS) use the permissions of the principal calling an AWS service, combined with the requesting AWS service to make requests to downstream services. For policy details when making FAS requests, see [Forward access sessions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_forward_access_sessions.html).
+
+When creating new application resources, Amazon GameLift Streams uses the permissions of the calling principal to access the Amazon S3 bucket that contains the customer's application files. Amazon GameLift Streams also examines the calling principal to verify opt-in eligibility for certain cross-region functionality, such as multi-location stream groups.
+
+## Service roles for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-roles-service"></a>
+
+**Supports service roles:** Yes
+
+ A service role is an [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) that a service assumes to perform actions on your behalf. An IAM administrator can create, modify, and delete a service role from within IAM. For more information, see [Create a role to delegate permissions to an AWS service](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html) in the *IAM User Guide*.
+
+**Warning**
+Changing the permissions for a service role might break Amazon GameLift Streams functionality. Edit service roles only when Amazon GameLift Streams provides guidance to do so.
+
+You can pass an IAM role when starting a stream session to provide credentials to your application. When you start a stream session with a `RoleArn`, Amazon GameLift Streams assumes the role using the `gameliftstreams.amazonaws.com` service principal and provides short-lived, automatically refreshing AWS credentials to your application.
+
+To use this feature:
+
+1. Create an IAM role with a trust policy that allows `gameliftstreams.amazonaws.com` to assume it.
+
+1. Grant `iam:PassRole` permission to the IAM principal that calls `StartStreamSession`.
+
+The role must be in the same AWS account as the stream group. Amazon GameLift Streams does not support cross-account roles or service-linked roles.
+
+For setup instructions, see [Provide AWS credentials to your streaming application](session-credentials.md).
+
+## Service-linked roles for Amazon GameLift Streams
+<a name="security_iam_service-with-iam-roles-service-linked"></a>
+
+**Supports service-linked roles:** No
+
+ A service-linked role is a type of service role that is linked to an AWS service. The service can assume the role to perform an action on your behalf. Service-linked roles appear in your AWS account and are owned by the service. An IAM administrator can view, but not edit the permissions for service-linked roles.
+
+For details about creating or managing service-linked roles, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html). Find a service in the table that includes a `Yes` in the **Service-linked role** column. Choose the **Yes** link to view the service-linked role documentation for that service.

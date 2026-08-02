@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DisableInsightRules.html
+---
+
+# DisableInsightRules
+<a name="API_DisableInsightRules"></a>
+
+Disables the specified Contributor Insights rules. When rules are disabled, they do not analyze log groups and do not incur costs.
+
+## Request Parameters
+<a name="API_DisableInsightRules_RequestParameters"></a>
+
+ ** RuleNames **
+An array of the rule names to disable. If you need to find out the names of your rules, use [DescribeInsightRules](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_DescribeInsightRules.html).
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[\x20-\x7E]+`
+Required: Yes
+
+## Response Elements
+<a name="API_DisableInsightRules_ResponseElements"></a>
+
+The following element is returned by the service.
+
+ ** Failures **
+An array listing the rules that could not be disabled. You cannot disable built-in rules.
+Type: Array of [PartialFailure](API_PartialFailure.md) objects
+
+## Errors
+<a name="API_DisableInsightRules_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InvalidParameterValue **
+The value of an input parameter is bad or out-of-range.
+ ** message **
+
+HTTP Status Code: 400
+
+ ** MissingParameter **
+An input parameter that is required is missing.
+ ** message **
+
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DisableInsightRules_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/monitoring-2010-08-01/DisableInsightRules)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/monitoring-2010-08-01/DisableInsightRules)

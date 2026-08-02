@@ -1,0 +1,305 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupplyChainFederationAdminAccess.html
+---
+
+# AWSSupplyChainFederationAdminAccess
+<a name="AWSSupplyChainFederationAdminAccess"></a>
+
+**Description**: AWSSupplyChainFederationAdminAccess provides AWS Supply Chain federated users access to the AWS Supply Chain application, including the required permissions to perform actions within the AWS Supply Chain application. The policy provides administrative permissions over IAM Identity Center users and groups and is attached to a role created by AWS Supply Chain on your behalf. You shouldn't attach AWSSupplyChainFederationAdminAccess policy to any other IAM entities.
+
+`AWSSupplyChainFederationAdminAccess` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWSSupplyChainFederationAdminAccess-how-to-use"></a>
+
+You can attach `AWSSupplyChainFederationAdminAccess` to your users, groups, and roles.
+
+## Policy details
+<a name="AWSSupplyChainFederationAdminAccess-details"></a>
++ **Type**: Service role policy
++ **Creation time**: March 01, 2023, 18:54 UTC
++ **Edited time:** February 12, 2026, 18:02 UTC
++ **ARN**: `arn:aws:iam::aws:policy/service-role/AWSSupplyChainFederationAdminAccess`
+
+## Policy version
+<a name="AWSSupplyChainFederationAdminAccess-version"></a>
+
+**Policy version:** v9 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWSSupplyChainFederationAdminAccess-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "AWSSupplyChain",
+      "Effect" : "Allow",
+      "Action" : [
+        "scn:*"
+      ],
+      "Resource" : [
+        "arn:aws:scn:*:*:instance/*"
+      ]
+    },
+    {
+      "Sid" : "ChimeAppInstance",
+      "Effect" : "Allow",
+      "Action" : [
+        "chime:BatchCreateChannelMembership",
+        "chime:CreateAppInstanceUser",
+        "chime:CreateChannel",
+        "chime:CreateChannelMembership",
+        "chime:CreateChannelModerator",
+        "chime:Connect",
+        "chime:DeleteChannelMembership",
+        "chime:DeleteChannelModerator",
+        "chime:DescribeChannelMembershipForAppInstanceUser",
+        "chime:GetChannelMembershipPreferences",
+        "chime:ListChannelMemberships",
+        "chime:ListChannelMembershipsForAppInstanceUser",
+        "chime:ListChannelMessages",
+        "chime:ListChannelModerators",
+        "chime:TagResource",
+        "chime:PutChannelMembershipPreferences",
+        "chime:SendChannelMessage",
+        "chime:UpdateChannelReadMarker",
+        "chime:UpdateAppInstanceUser"
+      ],
+      "Resource" : [
+        "arn:aws:chime:*:*:app-instance/*"
+      ],
+      "Condition" : {
+        "StringLike" : {
+          "aws:ResourceTag/SCNInstanceId" : "*"
+        }
+      }
+    },
+    {
+      "Sid" : "ChimeChannel",
+      "Effect" : "Allow",
+      "Action" : [
+        "chime:DescribeChannel"
+      ],
+      "Resource" : [
+        "arn:aws:chime:*:*:app-instance/*"
+      ]
+    },
+    {
+      "Sid" : "ChimeMessaging",
+      "Effect" : "Allow",
+      "Action" : [
+        "chime:GetMessagingSessionEndpoint"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "IAMIdentityCenter",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:GetManagedApplicationInstance",
+        "sso:ListDirectoryAssociations",
+        "sso:AssociateProfile",
+        "sso:DisassociateProfile",
+        "sso:ListProfiles",
+        "sso:GetProfile",
+        "sso:ListProfileAssociations",
+        "sso:ListApplicationAssignments",
+        "sso:DescribeApplication",
+        "sso:DescribeInstance",
+        "sso:GetApplicationAssignmentConfiguration"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AppflowConnectorProfile",
+      "Effect" : "Allow",
+      "Action" : [
+        "appflow:CreateConnectorProfile",
+        "appflow:UseConnectorProfile",
+        "appflow:DeleteConnectorProfile",
+        "appflow:UpdateConnectorProfile"
+      ],
+      "Resource" : [
+        "arn:aws:appflow:*:*:connectorprofile/scn-*"
+      ]
+    },
+    {
+      "Sid" : "AppflowFlow",
+      "Effect" : "Allow",
+      "Action" : [
+        "appflow:CreateFlow",
+        "appflow:DeleteFlow",
+        "appflow:DescribeFlow",
+        "appflow:DescribeFlowExecutionRecords",
+        "appflow:ListFlows",
+        "appflow:StartFlow",
+        "appflow:StopFlow",
+        "appflow:UpdateFlow",
+        "appflow:TagResource",
+        "appflow:UntagResource"
+      ],
+      "Resource" : [
+        "arn:aws:appflow:*:*:flow/scn-*"
+      ]
+    },
+    {
+      "Sid" : "S3ListAllBuckets",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "S3ListSupplyChainBucket",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:ListBucket"
+      ],
+      "Resource" : [
+        "arn:aws:s3:::aws-supply-chain-data-*"
+      ]
+    },
+    {
+      "Sid" : "S3ReadWriteObject",
+      "Effect" : "Allow",
+      "Action" : [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Resource" : [
+        "arn:aws:s3:::aws-supply-chain-data-*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "SecretsManagerCreateSecret",
+      "Effect" : "Allow",
+      "Action" : "secretsmanager:CreateSecret",
+      "Resource" : "arn:aws:secretsmanager:*:*:secret:*",
+      "Condition" : {
+        "StringLike" : {
+          "secretsmanager:Name" : "appflow!*"
+        },
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "appflow.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "SecretsManagerPutResourcePolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "secretsmanager:PutResourcePolicy"
+      ],
+      "Resource" : "arn:aws:secretsmanager:*:*:secret:*",
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "appflow.amazonaws.com"
+          ]
+        },
+        "StringEqualsIgnoreCase" : {
+          "secretsmanager:ResourceTag/aws:secretsmanager:owningService" : "appflow"
+        }
+      }
+    },
+    {
+      "Sid" : "KMSListKeys",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:ListKeys",
+        "kms:ListAliases"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*"
+    },
+    {
+      "Sid" : "KMSListGrants",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:DescribeKey",
+        "kms:ListGrants"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : {
+        "StringLike" : {
+          "kms:ViaService" : "appflow.*.amazonaws.com"
+        },
+        "StringEquals" : {
+          "aws:ResourceTag/aws-supply-chain-access" : "true"
+        }
+      }
+    },
+    {
+      "Sid" : "KMSCreateGrant",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:CreateGrant"
+      ],
+      "Resource" : "arn:aws:kms:*:*:key/*",
+      "Condition" : {
+        "StringLike" : {
+          "kms:ViaService" : "appflow.*.amazonaws.com"
+        },
+        "Bool" : {
+          "kms:GrantIsForAWSResource" : "true"
+        },
+        "StringEquals" : {
+          "aws:ResourceTag/aws-supply-chain-access" : "true"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowKmsAccessViaIdentityCenter",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "ArnLike" : {
+          "kms:EncryptionContext:aws:sso:instance-arn" : "arn:*:sso:::instance/*"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "sso.*.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowKmsAccessViaIdentityStore",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "ArnLike" : {
+          "kms:EncryptionContext:aws:identitystore:identitystore-arn" : "arn:*:identitystore::*:identitystore/*"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "identitystore.*.amazonaws.com"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWSSupplyChainFederationAdminAccess-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

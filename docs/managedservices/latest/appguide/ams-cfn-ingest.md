@@ -1,0 +1,515 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/appguide/ams-cfn-ingest.html
+---
+
+End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
+
+# AMS CloudFormation ingest
+<a name="ams-cfn-ingest"></a>
+
+The AMS AWS CloudFormation ingest change type (CT) enables you to use your existing CloudFormation templates, with some modifications, to deploy custom stacks in an AMS-managed VPC.
+
+**Topics**
++ [CloudFormation Ingest Guidelines, Best Practices, and Limitations](cfn-author-templates.md)
++ [CloudFormation Ingest: Examples](cfn-ingest-examples.md)
++ [Create CloudFormation ingest stack](#ex-cfn-ingest-create-col)
++ [Update CloudFormation ingest stack](#ex-cfn-ingest-update-col)
++ [Approve a CloudFormation ingest stack changeset](#ex-cfn-ingest-approve-and-update-col)
++ [Update CloudFormation stacks termination protection](#ex-cfn-term-pro-update-col)
++ [Automated IAM deployments using CFN ingest or stack update CTs in AMS](cfn-ingest-iam-deploy.md)
+
+The AMS CloudFormation ingest process involves the following:
++ Prepare and upload your custom CloudFormation template to an S3 bucket, or provide the template inline when creating the RFC. If you are using an S3 bucket with a presigned URL; for more information, see [presign](https://docs.aws.amazon.com/cli/latest/reference/s3/presign.html).
++ Submit the CloudFormation ingest change type to AMS in an RFC. For the CFN ingest change type walkthrough, see [Create CloudFormation ingest stack](#ex-cfn-ingest-create-col). For CFN ingest examples, see [CloudFormation Ingest: Examples](cfn-ingest-examples.md).
++ Once your stack is created, you can update it, and remediate drift on it; additionally, should the update fail, you can explicitly approve and implement the update. All of these procedures are described in this section.
+
+  For information on CFN drift detection, see [New – CloudFormation Drift Detection](https://aws.amazon.com/blogs/aws/new-cloudformation-drift-detection/).
+
+**Note**
+
+This change type now has a version 2.0. Version 2.0 is automated; not manually executed. This enables the CT execution to go more quickly. Two new parameters are introduced with this version: **CloudFormationTemplate**, which enables you to paste a custom CloudFormation template into the RFC, and **VpcId**, which enables CloudFormation ingest to be used with AMS multi-account landing zone.
+Version 1.0 is a manual change type. This means that an AMS operator must take some action before the change type can successfully conclude. At minimum, a review is required. This version also requires the **CloudFormationTemplateS3Endpoint** parameter value to be a pre-signed URL.
+
+## Create CloudFormation ingest stack
+<a name="ex-cfn-ingest-create-col"></a>
+
+### Creating a CloudFormation ingest stack using the console
+<a name="cfn-ingest-create-con"></a>
+
+![Create Stack From CloudFormation Template dialog showing description, ID, and version fields.](http://docs.aws.amazon.com/managedservices/latest/appguide/images/guiCfnIngestCT.png)
+
+**To create a CloudFormation ingest stack using the console**
+
+1. Navigate to the **Create RFC** page: In the left navigation pane of the AMS console click **RFCs** to open the RFCs list page, and then click **Create RFC**.
+
+1. Choose a popular change type (CT) in the default **Browse change types** view, or select a CT in the **Choose by category** view.
+   + **Browse by change type**: You can click on a popular CT in the **Quick create** area to immediately open the **Run RFC** page. Note that you cannot choose an older CT version with quick create.
+
+     To sort CTs, use the **All change types** area in either the **Card** or **Table** view. In either view, select a CT and then click **Create RFC** to open the **Run RFC** page. If applicable, a **Create with older version** option appears next to the **Create RFC** button.
+   + **Choose by category**: Select a category, subcategory, item, and operation and the CT details box opens with an option to **Create with older version** if applicable. Click **Create RFC** to open the **Run RFC** page.
+
+1. On the **Run RFC** page, open the CT name area to see the CT details box. A **Subject** is required (this is filled in for you if you choose your CT in the **Browse change types** view). Open the **Additional configuration** area to add information about the RFC.
+
+   In the **Execution configuration** area, use available drop-down lists or enter values for the required parameters. To configure optional execution parameters, open the **Additional configuration** area.
+
+1. When finished, click **Run**. If there are no errors, the **RFC successfully created** page displays with the submitted RFC details, and the initial **Run output**.
+
+1. Open the **Run parameters** area to see the configurations you submitted. Refresh the page to update the RFC execution status. Optionally, cancel the RFC or create a copy of it with the options at the top of the page.
+
+### Creating a CloudFormation ingest stack using the CLI
+<a name="cfn-ingest-create-cli"></a>
+
+**To create a CloudFormation ingest stack using the CLI**
+
+1. Use either the Inline Create (you issue a `create-rfc` command with all RFC and execution parameters included), or Template Create (you create two JSON files, one for the RFC parameters and one for the execution parameters) and issue the `create-rfc` command with the two files as input. Both methods are described here.
+
+1. Submit the RFC: `aws amscm submit-rfc --rfc-id {{ID}}` command with the returned RFC ID.
+
+   Monitor the RFC: `aws amscm get-rfc --rfc-id {{ID}}` command.
+
+To check the change type version, use this command:
+
+```
+aws amscm list-change-type-version-summaries --filter Attribute=ChangeTypeId,Value={{CT_ID}}
+```
+**Note**
+You can use any `CreateRfc` parameters with any RFC whether or not they are part of the schema for the change type. For example, to get notifications when the RFC status changes, add this line, `--notification "{\"Email\": {\"EmailRecipients\" : [\"email@example.com\"]}}"` to the RFC parameters part of the request (not the execution parameters). For a list of all CreateRfc parameters, see the [AMS Change Management API Reference](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/API_CreateRfc.html).
+
+1. Prepare the CloudFormation template that you will use to create the stack, and upload it to your S3 bucket. For important details, see [AWS CloudFormation Ingest Guidelines, Best Practices, and Limitations](https://docs.aws.amazon.com/managedservices/latest/appguide/cfn-author-templates.html).
+
+1. Create and submit the RFC to AMS:
+
+   1. Create and save the execution parameters JSON file, include the CloudFormation template parameters that you want. The following example names it CreateCfnParams.json.
+
+     Example Web application stack CreateCfnParams.json file:
+
+     ```
+     {
+       "Name": "{{cfn-ingest}}",
+       "Description": "{{CFNIngest Web Application Stack}}",
+       "VpcId": "{{VPC_ID}}",
+       "CloudFormationTemplateS3Endpoint": "{{$S3_URL}}",
+       "TimeoutInMinutes": 120,
+       "Tags": [
+        {
+         "Key":   "{{Enviroment Type}}"
+         "Value": "{{Dev}}",
+        },
+        {
+         "Key":   "{{Application}}"
+         "Value": "{{PCS}}",
+        }
+       ],
+       "Parameters": [
+        {
+         "Name": "{{Parameter-for-S3Bucket-Name}}",
+         "Value":  "{{BUCKET-NAME}}"
+        },
+        {
+         "Name": "{{Parameter-for-Image-Id}}",
+         "Value":  "{{AMI-ID}}"
+        }
+       ],
+     }
+     ```
+
+     Example SNS topic CreateCfnParams.json file:
+
+     ```
+     {
+       "Name": "cfn-ingest",
+       "Description": "{{CFNIngest Web Application Stack}}",
+       "CloudFormationTemplateS3Endpoint": "{{$S3_URL}}",
+       "Tags": [
+         {"Key": "{{Enviroment Type}}", "Value": "{{Dev}}"}
+       ],
+       "Parameters": [
+         {"Name": "{{TopicName}}", "Value": "{{MyTopic1}}"}
+       ]
+     }
+     ```
+
+1. Create and save the RFC parameters JSON file with the following content. The following example names it CreateCfnRfc.json file:
+
+   ```
+   {
+      "ChangeTypeId": "ct-36cn2avfrrj9v",
+      "ChangeTypeVersion": "2.0",
+      "Title": "{{cfn-ingest}}"
+   }
+   ```
+
+1. Create the RFC, specifying the CreateCfnRfc file and the CreateCfnParams file:
+
+   ```
+   aws amscm create-rfc --cli-input-json file://CreateCfnRfc.json  --execution-parameters file://CreateCfnParams.json
+   ```
+
+   You receive the ID of the new RFC in the response and can use it to submit and monitor the RFC. Until you submit it, the RFC remains in the editing state and does not start.
+
+### Tips
+<a name="ex-cfn-ingest-create-tip"></a>
+
+**Note**
+This change type is at version 2.0 and is automated (not manually executed). This allows the CT execution to go more quickly, and, a new parameter, **CloudFormationTemplate**, allows you to paste into the RFC a custom CloudFormation template. Additionally, In this version, we do not attach the default AMS security groups if the you specify your own security groups. If you do not specify your own security groups in the request, AMS will attach the AMS default security groups. In CFN Ingest v1.0, we always appended the AMS default security groups whether or not you provided your own security groups.
+AMS has enabled 17 AMS Self-Provisioned services for use in this change type. For information about supported resources, see [ CloudFormation Ingest Stack: Supported Resources](https://docs.aws.amazon.com/managedservices/latest/appguide/cfn-ingest-supp-services.html).
+
+**Note**
+Version 2.0 accepts an S3 endpoint that is not a presigned URL.
+If you use the previous version of this CT, the **CloudFormationTemplateS3Endpoint** parameter value must be a presigned URL.
+Example command for generating a presigned S3 bucket URL (Mac/Linux):
+
+```
+export S3_PRESIGNED_URL=$(aws s3 presign DASHDASHexpires-in 86400 s3://{{BUCKET_NAME}}/{{CFN_TEMPLATE}}.json)
+```
+Example command for generating a presigned S3 bucket URL (Windows):
+
+```
+for /f %i in ('aws s3 presign DASHDASHexpires-in 86400 s3://{{BUCKET_NAME}}/{{CFN_TEMPLATE}}.json') do set S3_PRESIGNED_URL=%i
+```
+See also [ Creating Pre-Signed URLs for Amazon S3 Buckets](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/s3-example-presigned-urls.html).
+
+**Note**
+If the S3 bucket exists in an AMS account, you must use your AMS credentials for this command. For example, you may need to append `--profile saml` after obtaining your AMS AWS Security Token Service (AWS STS) credentials.
+
+Related change types: [Approve a CloudFormation ingest stack changeset](#ex-cfn-ingest-approve-and-update-col), [Update CloudFormation ingest stack](#ex-cfn-ingest-update-col)
+
+To learn more about AWS CloudFormation, see [AWS Cloud​Formation](https://aws.amazon.com/cloudformation/). To see CloudFormation templates, open the AWS CloudFormation [Template Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-reference.html).
+
+### Validating a CloudFormation ingest
+<a name="cfn-ingest-validation"></a>
+
+The template is validated to ensure that it can be created in an AMS account. If it passes validation, it's updated to include any resources or configurations required for it to conform with AMS. This includes adding resources such as Amazon CloudWatch alarms in order to allow AMS Operations to monitor the stack.
+
+The RFC is rejected if any of the following are true:
++ RFC JSON Syntax is incorrect or does not follow the given format.
++ The provided S3 bucket presigned URL is not valid.
++ The template is not valid CloudFormation syntax.
++ The template does not have defaults set for all parameter values.
++ The template fails AMS validation. For AMS validation steps, see the information later in this topic.
+
+The RFC fails if the CloudFormation stack fails to create due to a resource creation issue.
+
+To learn more about CFN validation and validator, see [Template Validation](https://docs.aws.amazon.com/managedservices/latest/appguide/cfn-author-templates.html) and [CloudFormation ingest stack: CFN validator examples](https://docs.aws.amazon.com/managedservices/latest/appguide/ex-cfn-ingest-validator.html).
+
+## Update CloudFormation ingest stack
+<a name="ex-cfn-ingest-update-col"></a>
+
+### Updating a CloudFormation ingest stack using the console
+<a name="cfn-ingest-update-con"></a>
+
+![Update CloudFormation Stack page showing description, ID ct-361tlo1k7339x, and version 2.0.](http://docs.aws.amazon.com/managedservices/latest/appguide/images/guiCfnStackUpdateCT-v2.png)
+
+**To update a CloudFormation Ingest Stack using the console**
+
+1. Navigate to the **Create RFC** page: In the left navigation pane of the AMS console click **RFCs** to open the RFCs list page, and then click **Create RFC**.
+
+1. Choose a popular change type (CT) in the default **Browse change types** view, or select a CT in the **Choose by category** view.
+   + **Browse by change type**: You can click on a popular CT in the **Quick create** area to immediately open the **Run RFC** page. Note that you cannot choose an older CT version with quick create.
+
+     To sort CTs, use the **All change types** area in either the **Card** or **Table** view. In either view, select a CT and then click **Create RFC** to open the **Run RFC** page. If applicable, a **Create with older version** option appears next to the **Create RFC** button.
+   + **Choose by category**: Select a category, subcategory, item, and operation and the CT details box opens with an option to **Create with older version** if applicable. Click **Create RFC** to open the **Run RFC** page.
+
+1. On the **Run RFC** page, open the CT name area to see the CT details box. A **Subject** is required (this is filled in for you if you choose your CT in the **Browse change types** view). Open the **Additional configuration** area to add information about the RFC.
+
+   In the **Execution configuration** area, use available drop-down lists or enter values for the required parameters. To configure optional execution parameters, open the **Additional configuration** area.
+
+1. When finished, click **Run**. If there are no errors, the **RFC successfully created** page displays with the submitted RFC details, and the initial **Run output**.
+
+1. Open the **Run parameters** area to see the configurations you submitted. Refresh the page to update the RFC execution status. Optionally, cancel the RFC or create a copy of it with the options at the top of the page.
+
+### Updating a CloudFormation ingest stack using the CLI
+<a name="cfn-ingest-update-cli"></a>
+
+**To update a CloudFormation ingest stack using the CLI**
+
+1. Use either the Inline Create (you issue a `create-rfc` command with all RFC and execution parameters included), or Template Create (you create two JSON files, one for the RFC parameters and one for the execution parameters) and issue the `create-rfc` command with the two files as input. Both methods are described here.
+
+1. Submit the RFC: `aws amscm submit-rfc --rfc-id {{ID}}` command with the returned RFC ID.
+
+   Monitor the RFC: `aws amscm get-rfc --rfc-id {{ID}}` command.
+
+To check the change type version, use this command:
+
+```
+aws amscm list-change-type-version-summaries --filter Attribute=ChangeTypeId,Value={{CT_ID}}
+```
+**Note**
+You can use any `CreateRfc` parameters with any RFC whether or not they are part of the schema for the change type. For example, to get notifications when the RFC status changes, add this line, `--notification "{\"Email\": {\"EmailRecipients\" : [\"email@example.com\"]}}"` to the RFC parameters part of the request (not the execution parameters). For a list of all CreateRfc parameters, see the [AMS Change Management API Reference](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/API_CreateRfc.html).
+
+1. Prepare the CloudFormation template that you want to use to update the stack, and upload it to your S3 bucket. For important details, see [AWS CloudFormation Ingest Guidelines, Best Practices, and Limitations](https://docs.aws.amazon.com/managedservices/latest/appguide/cfn-author-templates.html).
+
+1. Create and submit the RFC to AMS:
+
+   1. Create and save the execution parameters JSON file, include the CloudFormation template parameters that you want. This example names it UpdateCfnParams.json.
+
+     Example UpdateCfnParams.json file with inline parameter updates:
+
+     ```
+     {
+       "StackId": "{{stack-yjjoo9aicjyqw4ro2}}",
+       "VpcId": "{{VPC_ID}}",
+       "CloudFormationTemplate": "{\"AWSTemplateFormatVersion\":\"{{2010-09-09}}\",\"Description\":\"{{Create a SNS topic}}\",\"Parameters\":{\"{{TopicName}}\":{\"Type\":\"String\"},\"DisplayName\":{\"Type\":\"String\"}},\"{{Resources}}\":{\"SnsTopic\":{\"Type\":\"AWS::SNS::Topic\",\"Properties\":{\"TopicName\":{\"Ref\":\"TopicName\"},\"DisplayName\":{\"Ref\":\"DisplayName\"}}}}}",
+       "TemplateParameters": [
+         {
+           "Key": "TopicName",
+           "Value": "{{TopicNameCLI}}"
+         },
+         {
+           "Key": "DisplayName",
+           "Value": "{{DisplayNameCLI}}"
+         }
+       ],
+       "TimeoutInMinutes": 1440
+     }
+     ```
+
+     Example UpdateCfnParams.json file with S3 bucket endpoint containing an updated CloudFormation template:
+
+     ```
+     {
+       "StackId": "{{stack-yjjoo9aicjyqw4ro2}}",
+       "VpcId": "{{VPC_ID}}",
+       "CloudFormationTemplateS3Endpoint": "{{s3_url}}",
+       "TemplateParameters": [
+         {
+           "Key": "TopicName",
+           "Value": "{{TopicNameCLI}}"
+         },
+         {
+           "Key": "DisplayName",
+           "Value": "{{DisplayNameCLI}}"
+         }
+       ],
+       "TimeoutInMinutes": {{1080}}
+     }
+     ```
+
+1. Create and save the RFC parameters JSON file with the following content. This example names it UpdateCfnRfc.json file.
+
+   ```
+   {
+      "ChangeTypeId": "ct-361tlo1k7339x",
+      "ChangeTypeVersion": "1.0",
+      "Title": "{{cfn-ingest-template-update}}"
+   }
+   ```
+
+1. Create the RFC, specifying the UpdateCfnRfc file and the UpdateCfnParams file:
+
+   ```
+   aws amscm create-rfc --cli-input-json file://UpdateCfnRfc.json  --execution-parameters file://UpdateCfnParams.json
+   ```
+
+   You receive the ID of the new RFC in the response and can use it to submit and monitor the RFC. Until you submit it, the RFC remains in the editing state and does not start.
+
+### Tips
+<a name="ex-cfn-ingest-update-tip"></a>
++ This change type is now at version 2.0. Changes include removing the **AutoApproveUpdateForResources** parameter, which was used in version 1.0 of this CT, and adding two new parameters: **AutoApproveRiskyUpdates** and **BypassDriftCheck**.
++ If the S3 bucket exists in an AMS account, you must use your AMS credentials for this command. For example, you may need to append `--profile saml` after obtaining your AMS AWS Security Token Service (AWS STS) credentials.
++ All `Parameter` values for resources in the CloudFormation template must have a value, either through a default or a custom value through the parameters section of the CT. You can override the parameter value by structuring the CloudFormation template resources to reference a Parameters key. For examples that show how to do, see [CloudFormation ingest stack: CFN validator examples](https://docs.aws.amazon.com/managedservices/latest/appguide/ex-cfn-ingest-validator.html).
+
+  IMPORTANT: Missing parameters not supplied explicitly in the form, default to the currently set values on the existing stack or template.
++ For a list of which self-provisioned services you can add using CloudFormation Ingest, see [CloudFormation Ingest Stack: Supported Resources](https://docs.aws.amazon.com/managedservices/latest/appguide/cfn-ingest-supp-services.html).
+
+  To learn more about CloudFormation, see [AWS Cloud​Formation](https://aws.amazon.com/cloudformation/).
+
+### Validating a CloudFormation ingest
+<a name="cfn-ingest-validation"></a>
+
+The template is validated to ensure that it can be created in an AMS account. If it passes validation, it's updated to include any resources or configurations required for it to conform with AMS. This includes adding resources such as Amazon CloudWatch alarms in order to allow AMS Operations to monitor the stack.
+
+The RFC is rejected if any of the following are true:
++ RFC JSON Syntax is incorrect or does not follow the given format.
++ The provided S3 bucket presigned URL is not valid.
++ The template is not valid CloudFormation syntax.
++ The template does not have defaults set for all parameter values.
++ The template fails AMS validation. For AMS validation steps, see the information later in this topic.
+
+The RFC fails if the CloudFormation stack fails to create due to a resource creation issue.
+
+To learn more about CFN validation and validator, see [Template Validation](https://docs.aws.amazon.com/managedservices/latest/appguide/cfn-author-templates.html) and [CloudFormation ingest stack: CFN validator examples](https://docs.aws.amazon.com/managedservices/latest/appguide/ex-cfn-ingest-validator.html).
+
+## Approve a CloudFormation ingest stack changeset
+<a name="ex-cfn-ingest-approve-and-update-col"></a>
+
+### Approving and updating a CloudFormation ingest stack using the console
+<a name="cfn-ingest-approve-update-con"></a>
+
+![ChangeSet details showing ID ct-1404e21baa2ox, Automated execution mode, and version 1.0.](http://docs.aws.amazon.com/managedservices/latest/appguide/images/guiCfnStackApproveAndUpdateCT.png)
+
+**To approve and update a CloudFormation ingest stack using the console**
+
+1. Navigate to the **Create RFC** page: In the left navigation pane of the AMS console click **RFCs** to open the RFCs list page, and then click **Create RFC**.
+
+1. Choose a popular change type (CT) in the default **Browse change types** view, or select a CT in the **Choose by category** view.
+   + **Browse by change type**: You can click on a popular CT in the **Quick create** area to immediately open the **Run RFC** page. Note that you cannot choose an older CT version with quick create.
+
+     To sort CTs, use the **All change types** area in either the **Card** or **Table** view. In either view, select a CT and then click **Create RFC** to open the **Run RFC** page. If applicable, a **Create with older version** option appears next to the **Create RFC** button.
+   + **Choose by category**: Select a category, subcategory, item, and operation and the CT details box opens with an option to **Create with older version** if applicable. Click **Create RFC** to open the **Run RFC** page.
+
+1. On the **Run RFC** page, open the CT name area to see the CT details box. A **Subject** is required (this is filled in for you if you choose your CT in the **Browse change types** view). Open the **Additional configuration** area to add information about the RFC.
+
+   In the **Execution configuration** area, use available drop-down lists or enter values for the required parameters. To configure optional execution parameters, open the **Additional configuration** area.
+
+1. When finished, click **Run**. If there are no errors, the **RFC successfully created** page displays with the submitted RFC details, and the initial **Run output**.
+
+1. Open the **Run parameters** area to see the configurations you submitted. Refresh the page to update the RFC execution status. Optionally, cancel the RFC or create a copy of it with the options at the top of the page.
+
+### Approving and updating a CloudFormation ingest stack using the CLI
+<a name="cfn-ingest-approve-update-cli"></a>
+
+**To approve and update a CloudFormation ingest stack using the CLI**
+
+1. Use either the Inline Create (you issue a `create-rfc` command with all RFC and execution parameters included), or Template Create (you create two JSON files, one for the RFC parameters and one for the execution parameters) and issue the `create-rfc` command with the two files as input. Both methods are described here.
+
+1. Submit the RFC: `aws amscm submit-rfc --rfc-id {{ID}}` command with the returned RFC ID.
+
+   Monitor the RFC: `aws amscm get-rfc --rfc-id {{ID}}` command.
+
+To check the change type version, use this command:
+
+```
+aws amscm list-change-type-version-summaries --filter Attribute=ChangeTypeId,Value={{CT_ID}}
+```
+**Note**
+You can use any `CreateRfc` parameters with any RFC whether or not they are part of the schema for the change type. For example, to get notifications when the RFC status changes, add this line, `--notification "{\"Email\": {\"EmailRecipients\" : [\"email@example.com\"]}}"` to the RFC parameters part of the request (not the execution parameters). For a list of all CreateRfc parameters, see the [AMS Change Management API Reference](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/API_CreateRfc.html).
+
+1. Output the execution parameters JSON schema for this change type to a file in your current folder. This example names it CreateAsgParams.json:
+
+   ```
+   aws amscm create-rfc --change-type-id "ct-1404e21baa2ox" --change-type-version "1.0" --title "{{Approve Update}}" --execution-parameters file://{{PATH_TO_EXECUTION_PARAMETERS}} --profile saml
+   ```
+
+1. Modify and save the schema as follows:
+
+   ```
+   {
+     "StackId": "{{STACK_ID}}",
+     "VpcId": "{{VPC_ID}}",
+     "ChangeSetName": "{{UPDATE-ef81e2bc-03f6-4b17-a3c7-feb700e78faa}}",
+     "TimeoutInMinutes": {{1080}}
+   }
+   ```
+
+### Tips
+<a name="ex-cfn-ingest-approve-and-update-tip"></a>
+
+**Note**
+If there are multiple resources in a stack, and you want to delete only a subset of the stack resources, use the CloudFormation Update CT; see [CloudFormation Ingest Stack: Updating](https://docs.aws.amazon.com/managedservices/latest/appguide/ex-cfn-ingest-update-col.html). You can also submit a Service request case and AMS engineers can help you craft the changeset, if needed.
+
+To learn more about AWS CloudFormation, see [AWS CloudFormation](https://aws.amazon.com/cloudformation/).
+
+## Update CloudFormation stacks termination protection
+<a name="ex-cfn-term-pro-update-col"></a>
+
+### Updating an CloudFormation termination protection stack with the console
+<a name="cfn-update-term-pro-con"></a>
+
+The following shows this change type in the AMS console.
+
+![Update Termination Protection change type showing ID ct-2uzbqr7x7mekd and version 1.0.](http://docs.aws.amazon.com/managedservices/latest/appguide/images/guiCfnProTermUpdateCT.png)
+
+How it works:
+
+1. Navigate to the **Create RFC** page: In the left navigation pane of the AMS console click **RFCs** to open the RFCs list page, and then click **Create RFC**.
+
+1. Choose a popular change type (CT) in the default **Browse change types** view, or select a CT in the **Choose by category** view.
+   + **Browse by change type**: You can click on a popular CT in the **Quick create** area to immediately open the **Run RFC** page. Note that you cannot choose an older CT version with quick create.
+
+     To sort CTs, use the **All change types** area in either the **Card** or **Table** view. In either view, select a CT and then click **Create RFC** to open the **Run RFC** page. If applicable, a **Create with older version** option appears next to the **Create RFC** button.
+   + **Choose by category**: Select a category, subcategory, item, and operation and the CT details box opens with an option to **Create with older version** if applicable. Click **Create RFC** to open the **Run RFC** page.
+
+1. On the **Run RFC** page, open the CT name area to see the CT details box. A **Subject** is required (this is filled in for you if you choose your CT in the **Browse change types** view). Open the **Additional configuration** area to add information about the RFC.
+
+   In the **Execution configuration** area, use available drop-down lists or enter values for the required parameters. To configure optional execution parameters, open the **Additional configuration** area.
+
+1. When finished, click **Run**. If there are no errors, the **RFC successfully created** page displays with the submitted RFC details, and the initial **Run output**.
+
+1. Open the **Run parameters** area to see the configurations you submitted. Refresh the page to update the RFC execution status. Optionally, cancel the RFC or create a copy of it with the options at the top of the page.
+
+### Updating an CloudFormation stack termination protection with the CLI
+<a name="cfn-update-term-pro-cli"></a>
+
+How it works:
+
+1. Use either the Inline Create (you issue a `create-rfc` command with all RFC and execution parameters included), or Template Create (you create two JSON files, one for the RFC parameters and one for the execution parameters) and issue the `create-rfc` command with the two files as input. Both methods are described here.
+
+1. Submit the RFC: `aws amscm submit-rfc --rfc-id {{ID}}` command with the returned RFC ID.
+
+   Monitor the RFC: `aws amscm get-rfc --rfc-id {{ID}}` command.
+
+To check the change type version, use this command:
+
+```
+aws amscm list-change-type-version-summaries --filter Attribute=ChangeTypeId,Value={{CT_ID}}
+```
+**Note**
+You can use any `CreateRfc` parameters with any RFC whether or not they are part of the schema for the change type. For example, to get notifications when the RFC status changes, add this line, `--notification "{\"Email\": {\"EmailRecipients\" : [\"email@example.com\"]}}"` to the RFC parameters part of the request (not the execution parameters). For a list of all CreateRfc parameters, see the [AMS Change Management API Reference](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/API_CreateRfc.html).
+
+Only specify the parameters you want to change. Absent parameters retain the existing values.
+
+*INLINE CREATE*:
+
+Issue the create RFC command with execution parameters provided inline (escape quotation marks when providing execution parameters inline), and then submit the returned RFC ID. For example, you can replace the contents with something like this:
+
+```
+aws amscm create-rfc \
+--change-type-id "ct-2uzbqr7x7mekd" \
+--change-type-version "1.0" \
+--title "{{Enable termination protection on CFN stack}}" \
+--execution-parameters "{\"DocumentName\":\"AWSManagedServices-ManageResourceTerminationProtection\",\"Region\":\"{{us-east-1}}\",\"Parameters\":{\"ResourceId\":[\"{{stack-psvnq6cupymio3enl}}\"],\"TerminationProtectionDesiredState\":[\"{{enabled}}\"]}}"
+```
+
+*TEMPLATE CREATE*:
+
+1. Output the execution parameters for this change type to a JSON file; this example names it EnableTermProCFNParams.json:
+
+   ```
+   aws amscm get-change-type-version --change-type-id "ct-2uzbqr7x7mekd" --query "ChangeTypeVersion.ExecutionInputSchema" --output text > EnableTermProCFNParams.json
+   ```
+
+1. Modify and save the EnableTermProCFNParams file, retaining only the parameters that you want to change. For example, you can replace the contents with something like this:
+
+   ```
+   {
+     "DocumentName": "AWSManagedServices-ManageResourceTerminationProtection",
+     "Region": "{{us-east-1}}",
+     "Parameters": {
+       "ResourceId": ["{{stack-psvnq6cupymio3enl}}"],
+       "TerminationProtectionDesiredState": ["{{enabled}}"]
+     }
+   }
+   ```
+
+1. Output the RFC template to a file in your current folder; this example names it EnableTermProCFNRfc.json:
+
+   ```
+   aws amscm create-rfc --generate-cli-skeleton > EnableTermProCFNRfc.json
+   ```
+
+1. Modify and save the EnableTermProCFNRfc.json file. For example, you can replace the contents with something like this:
+
+   ```
+   {
+       "ChangeTypeId": "ct-2uzbqr7x7mekd",
+       "ChangeTypeVersion": "1.0",
+       "Title": "{{Enable termination protection on CFN instance}}"
+   }
+   ```
+
+1. Create the RFC, specifying the EnableTermProCFNRfc file and the EnableTermProCFNParams file:
+
+   ```
+   aws amscm create-rfc --cli-input-json file://EnableTermProCFNRfc.json  --execution-parameters file://EnableTermProCFNParams.json
+   ```
+
+   You receive the ID of the new RFC in the response and can use it to submit and monitor the RFC. Until you submit it, the RFC remains in the editing state and does not start.
+
+### Tips
+<a name="ex-cfn-term-pro-update-tip"></a>
+
+**Note**
+There is a related CT for Amazon EC2, [EC2 stack: Updating termination protection](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-ec2-term-pro-update-col.html).
+
+To learn more about termination protection, see [ Protecting a stack from being deleted](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-protect-stacks.html).

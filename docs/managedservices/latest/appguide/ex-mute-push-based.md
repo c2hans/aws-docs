@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/appguide/ex-mute-push-based.html
+---
+
+End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
+
+# Mutable deployment with a push-based deployment tool-configured AMI
+<a name="ex-mute-push-based"></a>
+
+This strategy relies on the `InstanceUserData` parameter in the Managed Services Create EC2 CT. For more information on using this parameter, see [Configuring Instances with User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-add-user-data). This example assumes a pull-based application deployment tool like Chef or Puppet.
+
+IDs for all CT options can be found in the [Change Type Reference](https://docs.aws.amazon.com/managedservices/latest/ctref/index.html).
+**Note**
+Currently, you must use Amazon S3 storage with this solution.
+
+The basic steps are outlined here and the procedure is detailed in the AMS User Guide.
+
+1. Create an Amazon S3 storage bucket. CT: ct-1a68ck03fn98r. The S3 bucket must have versioning enabled (for information on doing this, see [Enabling Bucket Versioning](https://docs.aws.amazon.com/AmazonS3/latest/UG/enable-bucket-versioning.html)).
+
+1. Put your bundled CodeDeploy artifacts on it. You can do this with the Amazon S3 console without requesting access through AMS. Or using a variation of this command:
+
+   ```
+   aws s3 cp {{ZIP_FILEPATH_AND_NAME}} s3://{{S3BUCKET_NAME}}/
+   ```
+
+1. Find an AMS AMI, all will have CodeDeploy on them. To find a "customer-" AMI use either:
+   + AMS Console: The VPC details page for the relevant VPC
+   + AMS API For the AMS SKMS API reference, see the **Reports** tab in the AWS Artifact Console. or CLI: `aws amsskms list-amis`
+
+1. Create an EC2 instance. CT: ct-14027q0sjyt1h; set a tag `Key=backup, Value=true`, and use the `InstanceUserData` parameter to run a bootstrap and other scripts including authorization keys, SALT stack (bootstrap a minion—for more information see [Bootstrapping Salt on Linux EC2 with Cloud-Init](https://gist.github.com/akoumjian/1714699)) or Ansible (install a key pair—for more information see [ Getting Started with Ansible and Dynamic Amazon EC2 Inventory Management](https://aws.amazon.com/blogs/apn/getting-started-with-ansible-and-dynamic-amazon-ec2-inventory-management/)). Alternately, request access to, and log in to, the instance and configure it with the necessary deployment artifacts. Remember that push-based commands come from your corporate subnet to your instances and you may need to configure authorization for them to go thru bastions. You may need a service request to AMS to request security group/AD group access without bastions.
+
+1. Repeat step 4 to create another EC2 instance and configure it with the deployment tool master server.
+
+1. When you need to update your application, use the deployment tool to rollout the updates to your instances.

@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/choosing-the-right-aws-service-for-your-microservice-endpoints/services-comparison.html
+---
+
+# AWS services comparison
+<a name="services-comparison"></a>
+
+The following table compares key features of Application Load Balancer, Amazon API Gateway, and AWS Lambda function URLs for creating endpoints to support microservices.
+
+|
+|
+| Feature | Application Load Balancer | API Gateway | Lambda function URLs |
+| --- |--- |--- |--- |
+| **Primary use case** | Invoking a Lambda function directly over HTTPS from other AWS services or AWS accounts or from the public internet.Ideal for simple use cases when your authentication and authorization requirements are minimal. | Fully managed API management service to create, publish, maintain, monitor, and secure APIs.Ideal for building and managing APIs, especially when advanced routing, authentication, and serverless integration are required. | Invoking a Lambda function directly over HTTPS from other AWS services or AWS accounts or from the public internet.Ideal for simple use cases when your authentication and authorization requirements are minimal. |
+| **Protocols supported** | HTTP, HTTPS, and WebSocket | HTTPS and WebSocket | HTTPS |
+| **Request routing** | Request routing based on HTTP headers, HTTP methods, HTTP query parameters, source IP CIDRs, Host header, and path-based routing.Includes automatic [health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html) to route traffic to only healthy targets. Also supports session [stickiness](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-balancer-stickiness/welcome.html). | Request routing based on HTTP methods, path, and API stages, for example, development (dev) and production (prod). | Not offered. |
+| **Request and response transformation** | Limited capabilities.You can use a fixed-response action to drop client requests and return a custom HTTP response and status code. | Extensive capabilities.You can modify requests and responses as needed. | Not offered.Implement transformations in the underlying Lambda function. |
+| **Authentication and authorization** | Native integration with Amazon Cognito and any OpenID compliant [identity provider (IdP)](https://docs.aws.amazon.com/transfer/latest/userguide/authentication-api-gateway.html) for authentication. | Comprehensive capabilities, including IAM, Amazon Cognito, and Lambda authorizers for JSON Web Token (JWT) or a custom authorization scheme. | AWS Identity and Access Management (IAM) to authenticate and authorize requests based on the IAM principal's identity policy and the function's [resource-based policy](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html). |
+| **Scalability** | Scales automatically as your incoming traffic changes over time. Integrates with [AWS Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html)for backend resources like an underlying EC2 instance. | Scales automatically to handle API traffic. AWS account and AWS service limits apply. | AWS account and AWS service limits apply. <br /> <br /> <br />  |
+| **Rate limiting** | [AWS WAF rate-based rules](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html) to limit the number of requests to Application Load Balancer from each client IP. | AWS WAF rate-based rules to limit the number of requests to API Gatewayfrom each client IP. You can configure throttling and quotas by using API keys and usage plans for your APIs to help protect them from being overwhelmed by too many requests. | Through AWS Lambda concurrency limits. |
+| **Logging and monitoring** | [Access logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html) available in Amazon CloudWatch. | Integrates with CloudWatch for both [access logs and execution logs](https://docs.aws.amazon.com/apigateway/latest/developerguide/security-monitoring.html). Includes access logs to Amazon Data Firehosefor comprehensive monitoring. | Access logs available in CloudWatch. |
+| **Caching** | None | Provides caching at multiple levels (for example, API stage, resource, and method levels) to improve performance and reduce load on backend services. | None |
+| **Serverless architecture support** | Limited built-in support for serverless. Integrates with Lambda functions. | Native integration with AWS Lambda and other AWS serverless services, making it well-suited for serverless architectures. | Supports serverless through direct integration with Lambda functions. |

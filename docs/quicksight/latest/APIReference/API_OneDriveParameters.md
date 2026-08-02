@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_OneDriveParameters.html
+---
+
+# OneDriveParameters
+<a name="API_OneDriveParameters"></a>
+
+The connection parameters for an OneDrive data source. Provide these parameters in the `DataSourceParameters` object when you create or update a data source that uses OneDrive.
+
+## Contents
+<a name="API_OneDriveParameters_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** AuthType **   <a name="QS-Type-OneDriveParameters-AuthType"></a>
+The authentication type for the OneDrive data source. Valid values include:
++  `TWO_LEGGED_OAUTH` – Server-to-server authentication using client credentials that do not require user interaction.
++  `THREE_LEGGED_OAUTH` – Interactive OAuth that requires user consent.
+Type: String
+Valid Values: `THREE_LEGGED_OAUTH | TWO_LEGGED_OAUTH | SERVICE_ACCOUNT`
+Required: No
+
+ ** ClientId **   <a name="QS-Type-OneDriveParameters-ClientId"></a>
+The client ID for the OneDrive data source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Required: No
+
+ ** TenantId **   <a name="QS-Type-OneDriveParameters-TenantId"></a>
+The tenant ID for the OneDrive data source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Required: No
+
+## See Also
+<a name="API_OneDriveParameters_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/OneDriveParameters)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/OneDriveParameters)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/OneDriveParameters)

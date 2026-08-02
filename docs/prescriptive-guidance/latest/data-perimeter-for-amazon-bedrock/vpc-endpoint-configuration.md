@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/data-perimeter-for-amazon-bedrock/vpc-endpoint-configuration.html
+---
+
+# VPC endpoint configuration
+<a name="vpc-endpoint-configuration"></a>
+
+## Control objective
+<a name="control-objective.59a3dd9e-c058-565e-a62f-3b1068cc044c"></a>
+
+***Network perimeter**** – My identities can access resources only from expected networks*
+
+Enforce that all Amazon Bedrock operations must originate from Amazon VPC endpoints by applying this service control policy (SCP) at the organization or OU level:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyBedrockPublicAccess",
+      "Effect": "Deny",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:SourceVpce": "true"
+        }
+      }
+    }
+  ]
+}
+```
+
+**Policy explanation:**
++ **DenyBedrockPublicAccess** – Blocks Amazon Bedrock API calls that don't originate from an Amazon VPC endpoint, ensuring all AI workload traffic flows through private network paths.
+
+**Note**
+SCPs do not apply to the management account. Test enforcement using member accounts.

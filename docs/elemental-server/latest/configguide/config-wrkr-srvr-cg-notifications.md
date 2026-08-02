@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-server/latest/configguide/config-wrkr-srvr-cg-notifications.html
+---
+
+This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
+
+# Configure AWS Elemental Server Notifications
+<a name="config-wrkr-srvr-cg-notifications"></a>
+
+AWS Elemental Server provides status information through alerts and messages. You can configure notifications so you know when the node might need attention. The following table describes the differences between alerts and messages and how you can access each.
+
+|  | Alerts | Messages |
+| --- | --- | --- |
+| Access options |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/configguide/config-wrkr-srvr-cg-notifications.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/configguide/config-wrkr-srvr-cg-notifications.html)  |
+| Information conveyed | Alerts are feedback on a problem that must be fixed.<br />The Job Error alert informs you that a job has moved to an Error state.<br />This can be helpful when you are receiving automatic email notifications, letting you know to check for related messages on the web interface. | There are three types of messages:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/configguide/config-wrkr-srvr-cg-notifications.html) |
+| Active or inactive status | Alerts are active until the underlying problem is resolved. When the cause of the alert is no longer present, the system clears the alert and it becomes inactive. | Messages are neither active nor inactive. They are defined as recent when they are less than 24 hours old. |
+| Visibility (web interface only) | You can toggle the visibility of active alerts on the web interface. Suppressing an alert this way is similar to marking an email as read.<br />Alerts are available through the other access options, regardless of their visibility in the web interface. | You can toggle the visibility of recent error messages on the web interface. This is similar to marking an email as read.<br />Visibility does not affect the return on SNMP and REST requests. |
+
+The following sections describe how to setup notifications. For information about viewing alerts and messages on the web interface or through the API, see the [AWS Elemental Server API and User Guide](https://docs.aws.amazon.com/elemental-onprem/latest/pdf/DOC-4544.pdf).
+
+**Topics**
++ [Email Notifications](notification-email.md)
++ [Web Callback Notification](notification-web.md)
++ [Simple Network Management Protocol (SNMP) Traps](notification-trap.md)
++ [Simple Network Management Protocol (SNMP) Polling](notification-polling.md)

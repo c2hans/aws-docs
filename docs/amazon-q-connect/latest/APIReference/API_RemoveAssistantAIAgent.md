@@ -1,0 +1,89 @@
+---
+source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_RemoveAssistantAIAgent.html
+---
+
+# RemoveAssistantAIAgent
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent"></a>
+
+Removes the AI Agent that is set for use by default on an Amazon Q in Connect Assistant.
+
+## Request Syntax
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_RequestSyntax"></a>
+
+```
+DELETE /assistants/{{assistantId}}/aiagentConfiguration?aiAgentType={{aiAgentType}}&orchestratorUseCase={{orchestratorUseCase}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [aiAgentType](#API_amazon-q-connect_RemoveAssistantAIAgent_RequestSyntax) **   <a name="connect-amazon-q-connect_RemoveAssistantAIAgent-request-uri-aiAgentType"></a>
+The type of the AI Agent being removed for use by default from the Amazon Q in Connect Assistant.
+Valid Values: `MANUAL_SEARCH | ANSWER_RECOMMENDATION | SELF_SERVICE | EMAIL_RESPONSE | EMAIL_OVERVIEW | EMAIL_GENERATIVE_ANSWER | ORCHESTRATION | NOTE_TAKING | CASE_SUMMARIZATION`
+Required: Yes
+
+ ** [assistantId](#API_amazon-q-connect_RemoveAssistantAIAgent_RequestSyntax) **   <a name="connect-amazon-q-connect_RemoveAssistantAIAgent-request-uri-assistantId"></a>
+The identifier of the Amazon Q in Connect assistant. Can be either the ID or the ARN. URLs cannot contain the ARN.
+Pattern: `[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}$|^arn:[a-z-]*?:wisdom:[a-z0-9-]*?:[0-9]{12}:[a-z-]*?/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}(?:/[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}){0,2}`
+Required: Yes
+
+ ** [orchestratorUseCase](#API_amazon-q-connect_RemoveAssistantAIAgent_RequestSyntax) **   <a name="connect-amazon-q-connect_RemoveAssistantAIAgent-request-uri-orchestratorUseCase"></a>
+The orchestrator use case for the AI Agent being removed.
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+
+## Request Body
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_ResponseSyntax"></a>
+
+```
+HTTP/1.1 204
+```
+
+## Response Elements
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
+
+## Errors
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** ResourceNotFoundException **
+The specified resource does not exist.
+ ** resourceName **
+The specified resource name.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The throttling limit has been exceeded.
+HTTP Status Code: 400
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by a service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_amazon-q-connect_RemoveAssistantAIAgent_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/qconnect-2020-10-19/RemoveAssistantAIAgent)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/RemoveAssistantAIAgent)

@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2023-04-10/framework/ops_mit_deploy_risks_auto_integ_deploy.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# OPS06-BP07 Fully automate integration and deployment
+<a name="ops_mit_deploy_risks_auto_integ_deploy"></a>
+
+ Automate build, deployment, and testing of the workload. This reduces errors cause by manual processes and reduces the effort to deploy changes.
+
+ Apply metadata using [Resource Tags](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) and [AWS Resource Groups](https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html) following a consistent [tagging strategy](https://aws.amazon.com/answers/account-management/aws-tagging-strategies/) to aid in identification of your resources. Tag your resources for organization, cost accounting, access controls, and targeting the run of automated operations activities.
+
+ **Common anti-patterns:**
++  On Friday, you finish authoring the new code for your feature branch. On Monday, after running your code quality test scripts and each of your unit tests scripts, you will check in your code for the next scheduled release.
++  You are assigned to code a fix for a critical issue impacting a large number of customers in production. After testing the fix, you commit your code and email change management to request approval to deploy it to production.
+
+ **Benefits of establishing this best practice:** By implementing automated build and deployment management systems you reduce errors caused by manual processes and reduce the effort to deploy changes helping your team members to focus on delivering business value.
+
+ **Level of risk exposed if this best practice is not established:** Low
+
+## Implementation guidance
+<a name="implementation-guidance"></a>
++  Use build and deployment management systems: Use build and deployment management systems to track and implement change, to reduce errors caused by manual processes, and reduce the level of effort. Fully automate the integration and deployment pipeline from code check-in through build, testing, deployment, and validation. This reduces lead time, encourages increased frequency of change, and reduces the level of effort.
+  +  [What is AWS CodeBuild?](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
+  +  [Continuous integration best practices for software development](https://www.youtube.com/watch?v=GEPJ7Lo346A)
+  +  [Slalom: CI/CD for serverless applications on AWS](https://www.youtube.com/watch?v=tEpx5VaW4WE)
+  +  [Introduction to AWS CodeDeploy - automated software deployment with Amazon Web Services](https://www.youtube.com/watch?v=Wx-ain8UryM)
+  +  [What is AWS CodeDeploy?](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)
+  +  [Deep Dive on Advanced Continuous Delivery Techniques Using AWS](https://www.youtube.com/watch?v=Lrrgd0Kemhw)
+
+## Resources
+<a name="resources"></a>
+
+ **Related documents:**
++  [Try a Sample Blue/Green Deployment in AWS CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/applications-create-blue-green.html)
++  [What is AWS CodeBuild?](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
++  [What is AWS CodeDeploy?](https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html)
+
+ **Related videos:**
++  [Continuous integration best practices for software development](https://www.youtube.com/watch?v=GEPJ7Lo346A)
++  [Deep Dive on Advanced Continuous Delivery Techniques Using AWS](https://www.youtube.com/watch?v=Lrrgd0Kemhw)
++  [Introduction to AWS CodeDeploy - automated software deployment with Amazon Web Services](https://www.youtube.com/watch?v=Wx-ain8UryM)
++  [Slalom: CI/CD for serverless applications on AWS](https://www.youtube.com/watch?v=tEpx5VaW4WE)

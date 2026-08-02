@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/pc-create-workload-historical-usage.html
+---
+
+# Adding historical usage to my workload estimate
+<a name="pc-create-workload-historical-usage"></a>
+
+This section outlines how to add historical usage to a workload estimate.
+
+## Prerequisites
+<a name="pc-create-workload-historical-usage-prerequisites"></a>
+
+The following procedure assumes that you have already completed the [Creating a workload estimate](pc-create-workload.md) process.
+
+## Procedure
+<a name="pc-create-workload-historical-usage-procedure"></a>
+
+**To add historical usage to a workload estimate**
+
+1. Open the Pricing Calculator console at [ https://console.aws.amazon.com/costmanagement/ ](https://console.aws.amazon.com/costmanagement/).
+
+1. In the navigation pane, choose **Pricing Calculator**.
+
+1. Navigate to the workload estimate where you want to add historical usage.
+
+1. From the **Add** dropdown, choose **Historical workload from my accounts**.
+
+1. Select the time range of historical usage that you want to import.
+**Note**
+A maximum of 2000 usage lines that can be added to a single workload estimate.
+
+1. (Optional) Add up to five filters. Filters allow you to specify lines of your usage that you want to add. Filter example include cost category and services.
+**Note**
+For each filters, the values are based on the time period selected in the previous step.
+
+1. You can choose to add your usage to an existing group or a new group you create.
+
+1. Choose **Preview**.
+
+1. Check that the preview shows the usage that you want to import to your workload estimate.
+**Note**
+The usage is aggregated based on the account, Region, service code, usage type, and operation. This means that if the time range is across multiple months and your selection yields usage from the same account, Region, service code, usage type, and operation across multiple months, then all the usage amount and cost is added together into one line.
+
+1. To add the historical usage to the workload estimate, choose **Import**.
+
+**Note**
+Once you import historical usage into your estimate, you will see that the estimated cost is calculated for all of the imported lines. Because you have explicitly added these lines in the import, these imported usage are considered part of the estimate. In a workload estimate, this is considered incremental usage.

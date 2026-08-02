@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GeospatialCategoricalColor.html
+---
+
+# GeospatialCategoricalColor
+<a name="API_GeospatialCategoricalColor"></a>
+
+The definition for a categorical color.
+
+## Contents
+<a name="API_GeospatialCategoricalColor_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** CategoryDataColors **   <a name="QS-Type-GeospatialCategoricalColor-CategoryDataColors"></a>
+A list of categorical data colors for each category.
+Type: Array of [GeospatialCategoricalDataColor](API_GeospatialCategoricalDataColor.md) objects
+Required: Yes
+
+ ** DefaultOpacity **   <a name="QS-Type-GeospatialCategoricalColor-DefaultOpacity"></a>
+The default opacity of a categorical color.
+Type: Double
+Valid Range: Minimum value of 0. Maximum value of 1.
+Required: No
+
+ ** NullDataSettings **   <a name="QS-Type-GeospatialCategoricalColor-NullDataSettings"></a>
+The null data visualization settings.
+Type: [GeospatialNullDataSettings](API_GeospatialNullDataSettings.md) object
+Required: No
+
+ ** NullDataVisibility **   <a name="QS-Type-GeospatialCategoricalColor-NullDataVisibility"></a>
+The state of visibility for null data.
+Type: String
+Valid Values: `HIDDEN | VISIBLE`
+Required: No
+
+## See Also
+<a name="API_GeospatialCategoricalColor_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/GeospatialCategoricalColor)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/GeospatialCategoricalColor)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/GeospatialCategoricalColor)

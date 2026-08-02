@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/workspaces_code_examples.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Code examples for WorkSpaces using AWS SDKs
+<a name="workspaces_code_examples"></a>
+
+The following code examples show you how to use Amazon WorkSpaces with an AWS software development kit (SDK).
+
+*Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
+
+*Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
+
+**More resources**
++  **[ WorkSpaces Developer Guide](https://docs.aws.amazon.com/workspaces/latest/userguide/workspaces-user-getting-started.html)** – More information about WorkSpaces.
++ **[WorkSpaces API Reference](https://docs.aws.amazon.com/workspaces/latest/api/welcome.html)** – Details about all available WorkSpaces actions.
++ **[AWS Developer Center](https://aws.amazon.com/developer/code-examples/?awsf.sdk-code-examples-product=product%23)** – Code examples that you can filter by category or full-text search.
++ **[AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)** – GitHub repo with complete code in preferred languages. Includes instructions for setting up and running the code.
+
+**Contents**
++ [Basics](workspaces_code_examples_basics.md)
+  + [Actions](workspaces_code_examples_actions.md)
+    + [`CreateTags`](workspaces_example_workspaces_CreateTags_section.md)
+    + [`CreateWorkspaces`](workspaces_example_workspaces_CreateWorkspaces_section.md)
+    + [`DeleteTags`](workspaces_example_workspaces_DeleteTags_section.md)
+    + [`DescribeTags`](workspaces_example_workspaces_DescribeTags_section.md)
+    + [`DescribeWorkspaceBundles`](workspaces_example_workspaces_DescribeWorkspaceBundles_section.md)
+    + [`DescribeWorkspaceDirectories`](workspaces_example_workspaces_DescribeWorkspaceDirectories_section.md)
+    + [`DescribeWorkspaces`](workspaces_example_workspaces_DescribeWorkspaces_section.md)
+    + [`DescribeWorkspacesConnectionStatus`](workspaces_example_workspaces_DescribeWorkspacesConnectionStatus_section.md)
+    + [`ModifyWorkspaceCreationProperties`](workspaces_example_workspaces_ModifyWorkspaceCreationProperties_section.md)
+    + [`ModifyWorkspaceProperties`](workspaces_example_workspaces_ModifyWorkspaceProperties_section.md)
+    + [`ModifyWorkspaceState`](workspaces_example_workspaces_ModifyWorkspaceState_section.md)
+    + [`RebootWorkspaces`](workspaces_example_workspaces_RebootWorkspaces_section.md)
+    + [`RebuildWorkspaces`](workspaces_example_workspaces_RebuildWorkspaces_section.md)
+    + [`RegisterWorkspaceDirectory`](workspaces_example_workspaces_RegisterWorkspaceDirectory_section.md)
+    + [`StopWorkspaces`](workspaces_example_workspaces_StopWorkspaces_section.md)
+    + [`TerminateWorkspaces`](workspaces_example_workspaces_TerminateWorkspaces_section.md)
++ [Scenarios](workspaces_code_examples_scenarios.md)
+  + [Creating and managing personal virtual desktops](workspaces_example_workspaces_GettingStarted_035_section.md)

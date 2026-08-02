@@ -1,0 +1,131 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/kms_example_kms_Verify_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `Verify` with an AWS SDK or CLI
+<a name="kms_example_kms_Verify_section"></a>
+
+The following code examples show how to use `Verify`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To verify a digital signature**
+The following `verify` command verifies a cryptographic signature for a short, Base64-encoded message. The key ID, message, message type, and signing algorithm must be same ones that were used to sign the message.
+In AWS CLI v2, the value of the `message` parameter must be Base64-encoded. Or, you can save the message in a file and use the `fileb://` prefix, which tells the AWS CLI to read binary data from the file.
+The signature that you specify cannot be base64-encoded. For help decoding the signature that the `sign` command returns, see the `sign` command examples.
+The output of the command includes a Boolean `SignatureValid` field that indicates that the signature was verified. If the signature validation fails, the `verify` command fails, too.
+Before running this command, replace the example key ID with a valid key ID from your AWS account.
+
+```
+aws kms verify \
+    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --message {{fileb://EncodedMessage}} \
+    --message-type {{RAW}} \
+    --signing-algorithm {{RSASSA_PKCS1_V1_5_SHA_256}} \
+    --signature {{fileb://ExampleSignature}}
+```
+Output:
+
+```
+{
+    "KeyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab",
+    "SignatureValid": true,
+    "SigningAlgorithm": "RSASSA_PKCS1_V1_5_SHA_256"
+}
+```
+For more information about using asymmetric KMS keys in AWS KMS, see [Using asymmetric keys](https://docs.aws.amazon.com/kms/latest/developerguide/symmetric-asymmetric.html) in the *AWS Key Management Service Developer Guide*.
++  For API details, see [Verify](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/verify.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
+
+```
+class KeyEncrypt:
+    def __init__(self, kms_client):
+        self.kms_client = kms_client
+
+    @classmethod
+    def from_client(cls) -> "KeyEncrypt":
+        """
+        Creates a KeyEncrypt instance with a default KMS client.
+
+        :return: An instance of KeyEncrypt initialized with the default KMS client.
+        """
+        kms_client = boto3.client("kms")
+        return cls(kms_client)
+
+    def verify(self, key_id: str, message: str, signature: str) -> bool:
+        """
+        Verifies a signature against a message.
+
+        :param key_id: The ARN or ID of the key used to sign the message.
+        :param message: The message to verify.
+        :param signature: The signature to verify.
+        :return: True when the signature matches the message, otherwise False.
+        """
+        try:
+            response = self.kms_client.verify(
+                KeyId=key_id,
+                Message=message.encode(),
+                Signature=signature,
+                SigningAlgorithm="RSASSA_PSS_SHA_256",
+            )
+            valid = response["SignatureValid"]
+            print(f"The signature is {'valid' if valid else 'invalid'}.")
+            return valid
+        except ClientError as err:
+            if err.response["Error"]["Code"] == "SignatureDoesNotMatchException":
+                print("The signature is not valid.")
+            else:
+                logger.error(
+                    "Couldn't verify your signature. Here's why: %s",
+                    err.response["Error"]["Message"],
+                )
+            raise
+```
++  For API details, see [Verify](https://docs.aws.amazon.com/goto/boto3/kms-2014-11-01/Verify) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
+
+```
+    TRY.
+        " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab' (asymmetric key)
+        " iv_message contains the original message
+        " iv_signature contains the signature to verify
+        " iv_signing_algorithm = 'RSASSA_PSS_SHA_256'
+        oo_result = lo_kms->verify(
+          iv_keyid = iv_key_id
+          iv_message = iv_message
+          iv_signature = iv_signature
+          iv_signingalgorithm = iv_signing_algorithm
+        ).
+        DATA(lv_valid) = oo_result->get_signaturevalid( ).
+        IF lv_valid = abap_true.
+          MESSAGE 'Signature is valid.' TYPE 'I'.
+        ELSE.
+          MESSAGE 'Signature is invalid.' TYPE 'I'.
+        ENDIF.
+      CATCH /aws1/cx_kmsdisabledexception.
+        MESSAGE 'The key is disabled.' TYPE 'E'.
+      CATCH /aws1/cx_kmsnotfoundexception.
+        MESSAGE 'Key not found.' TYPE 'E'.
+      CATCH /aws1/cx_kmskmsinvalidsigex.
+        MESSAGE 'Invalid signature.' TYPE 'E'.
+      CATCH /aws1/cx_kmskmsinternalex.
+        MESSAGE 'An internal error occurred.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [Verify](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

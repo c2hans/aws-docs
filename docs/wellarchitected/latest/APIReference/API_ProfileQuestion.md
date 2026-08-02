@@ -1,0 +1,60 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ProfileQuestion.html
+---
+
+# ProfileQuestion
+<a name="API_ProfileQuestion"></a>
+
+A profile question.
+
+## Contents
+<a name="API_ProfileQuestion_Contents"></a>
+
+ ** MaxSelectedChoices **   <a name="wellarchitected-Type-ProfileQuestion-MaxSelectedChoices"></a>
+The maximum number of selected choices.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** MinSelectedChoices **   <a name="wellarchitected-Type-ProfileQuestion-MinSelectedChoices"></a>
+The minimum number of selected choices.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** QuestionChoices **   <a name="wellarchitected-Type-ProfileQuestion-QuestionChoices"></a>
+The question choices.
+Type: Array of [ProfileChoice](API_ProfileChoice.md) objects
+Required: No
+
+ ** QuestionDescription **   <a name="wellarchitected-Type-ProfileQuestion-QuestionDescription"></a>
+The description of the question.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+ ** QuestionId **   <a name="wellarchitected-Type-ProfileQuestion-QuestionId"></a>
+The ID of the question.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Required: No
+
+ ** QuestionTitle **   <a name="wellarchitected-Type-ProfileQuestion-QuestionTitle"></a>
+The title of the question.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Required: No
+
+ ** SelectedChoiceIds **   <a name="wellarchitected-Type-ProfileQuestion-SelectedChoiceIds"></a>
+The selected choices.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Required: No
+
+## See Also
+<a name="API_ProfileQuestion_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/wellarchitected-2020-03-31/ProfileQuestion)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/wellarchitected-2020-03-31/ProfileQuestion)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/wellarchitected-2020-03-31/ProfileQuestion)

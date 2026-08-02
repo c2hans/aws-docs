@@ -1,0 +1,75 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_Database.html
+---
+
+# Database
+<a name="API_Database"></a>
+
+The `Database` object represents a logical grouping of tables that might reside in a Hive metastore or an RDBMS.
+
+## Contents
+<a name="API_Database_Contents"></a>
+
+ ** Name **   <a name="Glue-Type-Database-Name"></a>
+The name of the database. For Hive compatibility, this is folded to lowercase when it is stored.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: Yes
+
+ ** CatalogId **   <a name="Glue-Type-Database-CatalogId"></a>
+The ID of the Data Catalog in which the database resides.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
+ ** CreateTableDefaultPermissions **   <a name="Glue-Type-Database-CreateTableDefaultPermissions"></a>
+Creates a set of default permissions on the table for principals. Used by AWS Lake Formation. Not used in the normal course of AWS Glue operations.
+Type: Array of [PrincipalPermissions](API_PrincipalPermissions.md) objects
+Required: No
+
+ ** CreateTime **   <a name="Glue-Type-Database-CreateTime"></a>
+The time at which the metadata database was created in the catalog.
+Type: Timestamp
+Required: No
+
+ ** Description **   <a name="Glue-Type-Database-Description"></a>
+A description of the database.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** FederatedDatabase **   <a name="Glue-Type-Database-FederatedDatabase"></a>
+A `FederatedDatabase` structure that references an entity outside the AWS Glue Data Catalog.
+Type: [FederatedDatabase](API_FederatedDatabase.md) object
+Required: No
+
+ ** LocationUri **   <a name="Glue-Type-Database-LocationUri"></a>
+The location of the database (for example, an HDFS path).
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** Parameters **   <a name="Glue-Type-Database-Parameters"></a>
+These key-value pairs define parameters and properties of the database.
+Type: String to string map
+Key Length Constraints: Minimum length of 1. Maximum length of 255.
+Key Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Value Length Constraints: Maximum length of 512000.
+Required: No
+
+ ** TargetDatabase **   <a name="Glue-Type-Database-TargetDatabase"></a>
+A `DatabaseIdentifier` structure that describes a target database for resource linking.
+Type: [DatabaseIdentifier](API_DatabaseIdentifier.md) object
+Required: No
+
+## See Also
+<a name="API_Database_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/Database)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/Database)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/Database)

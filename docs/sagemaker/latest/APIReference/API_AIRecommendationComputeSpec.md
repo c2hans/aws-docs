@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AIRecommendationComputeSpec.html
+---
+
+# AIRecommendationComputeSpec
+<a name="API_AIRecommendationComputeSpec"></a>
+
+The compute resource specification for an AI recommendation job.
+
+## Contents
+<a name="API_AIRecommendationComputeSpec_Contents"></a>
+
+ ** CapacityReservationConfig **   <a name="sagemaker-Type-AIRecommendationComputeSpec-CapacityReservationConfig"></a>
+The capacity reservation configuration.
+Type: [AICapacityReservationConfig](API_AICapacityReservationConfig.md) object
+Required: No
+
+ ** InstanceTypes **   <a name="sagemaker-Type-AIRecommendationComputeSpec-InstanceTypes"></a>
+The list of instance types to consider for recommendations. You can specify up to 3 instance types.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 3 items.
+Valid Values: `ml.g5.xlarge | ml.g5.2xlarge | ml.g5.4xlarge | ml.g5.8xlarge | ml.g5.12xlarge | ml.g5.16xlarge | ml.g5.24xlarge | ml.g5.48xlarge | ml.g6.xlarge | ml.g6.2xlarge | ml.g6.4xlarge | ml.g6.8xlarge | ml.g6.12xlarge | ml.g6.16xlarge | ml.g6.24xlarge | ml.g6.48xlarge | ml.g6e.xlarge | ml.g6e.2xlarge | ml.g6e.4xlarge | ml.g6e.8xlarge | ml.g6e.12xlarge | ml.g6e.16xlarge | ml.g6e.24xlarge | ml.g6e.48xlarge | ml.g7e.2xlarge | ml.g7e.4xlarge | ml.g7e.8xlarge | ml.g7e.12xlarge | ml.g7e.24xlarge | ml.g7e.48xlarge | ml.p3.2xlarge | ml.p3.8xlarge | ml.p3.16xlarge | ml.p4d.24xlarge | ml.p4de.24xlarge | ml.p5.4xlarge | ml.p5.48xlarge | ml.p5e.48xlarge | ml.p5en.48xlarge | ml.p6-b200.48xlarge`
+Required: No
+
+## See Also
+<a name="API_AIRecommendationComputeSpec_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/AIRecommendationComputeSpec)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/AIRecommendationComputeSpec)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/AIRecommendationComputeSpec)

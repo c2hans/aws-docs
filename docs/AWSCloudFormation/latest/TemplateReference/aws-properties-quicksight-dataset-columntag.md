@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-quicksight-dataset-columntag.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::QuickSight::DataSet ColumnTag
+<a name="aws-properties-quicksight-dataset-columntag"></a>
+
+A tag for a column in a ` [TagColumnOperation](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_TagColumnOperation.html) ` structure. This is a variant type structure. For this structure to be valid, only one of the attributes can be non-null.
+
+## Syntax
+<a name="aws-properties-quicksight-dataset-columntag-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-quicksight-dataset-columntag-syntax.json"></a>
+
+```
+{
+  "[ColumnDescription](#cfn-quicksight-dataset-columntag-columndescription)" : {{ColumnDescription}},
+  "[ColumnGeographicRole](#cfn-quicksight-dataset-columntag-columngeographicrole)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-quicksight-dataset-columntag-syntax.yaml"></a>
+
+```
+  [ColumnDescription](#cfn-quicksight-dataset-columntag-columndescription): {{
+    ColumnDescription}}
+  [ColumnGeographicRole](#cfn-quicksight-dataset-columntag-columngeographicrole): {{String}}
+```
+
+## Properties
+<a name="aws-properties-quicksight-dataset-columntag-properties"></a>
+
+`ColumnDescription`  <a name="cfn-quicksight-dataset-columntag-columndescription"></a>
+A description for a column.
+*Required*: No
+*Type*: [ColumnDescription](aws-properties-quicksight-dataset-columndescription.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ColumnGeographicRole`  <a name="cfn-quicksight-dataset-columntag-columngeographicrole"></a>
+A geospatial role for a column.
+*Required*: No
+*Type*: String
+*Allowed values*: `COUNTRY | STATE | COUNTY | CITY | POSTCODE | LONGITUDE | LATITUDE | POLITICAL1 | CENSUS_TRACT | CENSUS_BLOCK_GROUP | CENSUS_BLOCK`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

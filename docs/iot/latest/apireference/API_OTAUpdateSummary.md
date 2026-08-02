@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_OTAUpdateSummary.html
+---
+
+# OTAUpdateSummary
+<a name="API_OTAUpdateSummary"></a>
+
+An OTA update summary.
+
+## Contents
+<a name="API_OTAUpdateSummary_Contents"></a>
+
+ ** creationDate **   <a name="iot-Type-OTAUpdateSummary-creationDate"></a>
+The date when the OTA update was created.
+Type: Timestamp
+Required: No
+
+ ** otaUpdateArn **   <a name="iot-Type-OTAUpdateSummary-otaUpdateArn"></a>
+The OTA update ARN.
+Type: String
+Required: No
+
+ ** otaUpdateId **   <a name="iot-Type-OTAUpdateSummary-otaUpdateId"></a>
+The OTA update ID.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9_-]+`
+Required: No
+
+## See Also
+<a name="API_OTAUpdateSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/OTAUpdateSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/OTAUpdateSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/OTAUpdateSummary)

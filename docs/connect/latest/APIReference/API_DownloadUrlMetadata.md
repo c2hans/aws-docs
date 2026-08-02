@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_DownloadUrlMetadata.html
+---
+
+# DownloadUrlMetadata
+<a name="API_DownloadUrlMetadata"></a>
+
+Metadata used to download the attached file.
+
+## Contents
+<a name="API_DownloadUrlMetadata_Contents"></a>
+
+ ** Url **   <a name="connect-Type-DownloadUrlMetadata-Url"></a>
+A pre-signed URL that should be used to download the attached file.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2000.
+Required: No
+
+ ** UrlExpiry **   <a name="connect-Type-DownloadUrlMetadata-UrlExpiry"></a>
+The expiration time of the URL in ISO timestamp. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+Type: String
+Required: No
+
+## See Also
+<a name="API_DownloadUrlMetadata_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/DownloadUrlMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/DownloadUrlMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/DownloadUrlMetadata)

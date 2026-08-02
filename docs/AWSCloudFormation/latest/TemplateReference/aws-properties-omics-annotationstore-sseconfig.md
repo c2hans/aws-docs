@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-omics-annotationstore-sseconfig.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Omics::AnnotationStore SseConfig
+<a name="aws-properties-omics-annotationstore-sseconfig"></a>
+
+Server-side encryption (SSE) settings for a store.
+
+## Syntax
+<a name="aws-properties-omics-annotationstore-sseconfig-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-omics-annotationstore-sseconfig-syntax.json"></a>
+
+```
+{
+  "[KeyArn](#cfn-omics-annotationstore-sseconfig-keyarn)" : {{String}},
+  "[Type](#cfn-omics-annotationstore-sseconfig-type)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-omics-annotationstore-sseconfig-syntax.yaml"></a>
+
+```
+  [KeyArn](#cfn-omics-annotationstore-sseconfig-keyarn): {{String}}
+  [Type](#cfn-omics-annotationstore-sseconfig-type): {{String}}
+```
+
+## Properties
+<a name="aws-properties-omics-annotationstore-sseconfig-properties"></a>
+
+`KeyArn`  <a name="cfn-omics-annotationstore-sseconfig-keyarn"></a>
+An encryption key ARN.
+*Required*: No
+*Type*: String
+*Pattern*: `arn:([^: ]*):([^: ]*):([^: ]*):([0-9]{12}):([^: ]*)`
+*Minimum*: `20`
+*Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Type`  <a name="cfn-omics-annotationstore-sseconfig-type"></a>
+The encryption type.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `KMS`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)

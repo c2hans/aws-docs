@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/emr-on-eks/latest/APIReference/API_SecureNamespaceInfo.html
+---
+
+# SecureNamespaceInfo
+<a name="API_SecureNamespaceInfo"></a>
+
+Namespace inputs for the system job.
+
+## Contents
+<a name="API_SecureNamespaceInfo_Contents"></a>
+
+ ** clusterId **   <a name="emroneks-Type-SecureNamespaceInfo-clusterId"></a>
+The ID of the Amazon EKS cluster where Amazon EMR on EKS jobs run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `^[0-9A-Za-z][A-Za-z0-9\-_]*`
+Required: No
+
+ ** namespace **   <a name="emroneks-Type-SecureNamespaceInfo-namespace"></a>
+The namespace of the Amazon EKS cluster where the system jobs run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z0-9]([-a-z0-9]*[a-z0-9])?`
+Required: No
+
+## See Also
+<a name="API_SecureNamespaceInfo_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/emr-containers-2020-10-01/SecureNamespaceInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/emr-containers-2020-10-01/SecureNamespaceInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/emr-containers-2020-10-01/SecureNamespaceInfo)

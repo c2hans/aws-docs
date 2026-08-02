@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/cost_monitor_usage_org_information.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# COST03-BP05 Add organization information to cost and usage
+<a name="cost_monitor_usage_org_information"></a>
+
+ Define a tagging schema based on organization, and workload attributes, and cost allocation categories. Implement tagging across all resources. Use Cost Categories to group costs and usage according to organization attributes.
+
+ **Level of risk exposed if this best practice is not established:** Low
+
+## Implementation guidance
+<a name="implementation-guidance"></a>
+
+Implement [tagging in AWS](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) to add organization information to your resources, which will then be added to your cost and usage information. A tag is a key-value pair— the key is defined and must be unique across your organization, and the value is unique to a group of resources. An example of a key-value pair is the key is Environment, with a value of Production. All resources in the production environment will have this key-value pair. Tagging allows you categorize and track your costs with meaningful, relevant organization information. You can apply tags that represent organization categories (such as cost centers, application names, projects, or owners), and identify workloads and characteristics of workloads (such as test or production) to attribute your costs and usage throughout your organization.
+
+When you apply tags to your AWS resources (such as Amazon Elastic Compute Cloud instances or Amazon Simple Storage Service buckets) and activate the tags, AWS adds this information to your Cost and Usage Reports. You can run reports and perform analysis, on tagged and untagged resources to allow greater compliance with internal cost management policies, and ensure accurate attribution.
+
+Creating and implementing an AWS tagging standard across your organization’s accounts enables you to manage and govern your AWS environments in a consistent and uniform manner. Use [Tag Policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies.html) in AWS Organizations to define rules for how tags can be used on AWS resources in your accounts in AWS Organizations. Tag Policies allow you to easily adopt a standardized approach for tagging AWS resources
+
+[AWS Tag Editor](https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html) allows you to add, delete, and manage tags of multiple resources.
+
+[AWS Cost Categories](https://aws.amazon.com/aws-cost-management/aws-cost-categories/) allows you to assign organization meaning to your costs, without requiring tags on resources. You can map your cost and usage information to unique internal organization structures. You define category rules to map and categorize costs using billing dimensions, such as accounts and tags. This provides another level of management capability in addition to tagging. You can also map specific accounts and tags to multiple projects.
+
+**Implementation steps**
++  **Define a tagging schema:** Gather all stakeholders from across your business to define a schema. This typically includes people in technical, financial, and management roles. Define a list of tags that all resources must have, as well as a list of tags that resources should have. Verify that the tag names and values are consistent across your organization.
++ ** Tag resources: **Using your defined cost attribution categories, place tags on all resources in your workloads according to the categories. Use tools such as the CLI, Tag Editor, or Systems Manager, to increase efficiency.
++  **Implement Cost Categories: **You can create Cost Categories without implementing tagging. Cost Categories use the existing cost and usage dimensions. Create category rules from your schema and implement it into Cost Categories.
++  **Automate tagging:** To verify that you maintain high levels of tagging across all resources, automate tagging so that resources are automatically tagged when they are created. Use the features within the service, or services such as AWS CloudFormation, to ensure that resources are tagged when created. You can also create a custom microservice that scans the workload periodically and removes any resources that are not tagged, which is ideal for test and development environments.
++ ** Monitor and report on tagging: **To verify that you maintain high levels of tagging across your organization, report and monitor the tags across your workloads. You can use AWS Cost Explorer to view the cost of tagged and untagged resources, or use services such as Tag Editor. Regularly review the number of untagged resources and take action to add tags until you reach the desired level of tagging.
+
+## Resources
+<a name="resources"></a>
+
+ **Related documents:**
++  [AWS CloudFormation Resource Tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html)
++  [AWS Cost Categories](https://aws.amazon.com/aws-cost-management/aws-cost-categories/)
++  [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
++  [Amazon EC2 and Amazon EBS add support for tagging resources upon creation](https://aws.amazon.com/about-aws/whats-new/2017/03/amazon-ec2-and-amazon-ebs-add-support-for-tagging-resources-upon-creation-and-additonal-resource-level-permissions/)
++  [Analyzing your costs with AWS Budgets](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html)
++  [Analyzing your costs with Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer-what-is.html)
++  [Managing AWS Cost and Usage Reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-managing.html)

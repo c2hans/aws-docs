@@ -1,0 +1,62 @@
+---
+source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_BatchDeleteScheduledAction.html
+---
+
+# BatchDeleteScheduledAction
+<a name="API_BatchDeleteScheduledAction"></a>
+
+Deletes one or more scheduled actions for the specified Auto Scaling group.
+
+## Request Parameters
+<a name="API_BatchDeleteScheduledAction_RequestParameters"></a>
+
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+ ** AutoScalingGroupName **
+The name of the Auto Scaling group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: Yes
+
+ **ScheduledActionNames.member.N**
+The names of the scheduled actions to delete. The maximum number allowed is 50.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: Yes
+
+## Response Elements
+<a name="API_BatchDeleteScheduledAction_ResponseElements"></a>
+
+The following element is returned by the service.
+
+ **FailedScheduledActions.member.N**
+The names of the scheduled actions that could not be deleted, including an error message.
+Type: Array of [FailedScheduledUpdateGroupActionRequest](API_FailedScheduledUpdateGroupActionRequest.md) objects
+
+## Errors
+<a name="API_BatchDeleteScheduledAction_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** ResourceContention **
+You already have a pending update to an Amazon EC2 Auto Scaling resource (for example, an Auto Scaling group, instance, or load balancer).
+ ** message **
+
+HTTP Status Code: 500
+
+## See Also
+<a name="API_BatchDeleteScheduledAction_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/autoscaling-2011-01-01/BatchDeleteScheduledAction)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/BatchDeleteScheduledAction)

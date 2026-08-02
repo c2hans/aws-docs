@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteSpanSpeedLimitDetails.html
+---
+
+# RouteSpanSpeedLimitDetails
+<a name="API_RouteSpanSpeedLimitDetails"></a>
+
+Details about the speed limit corresponding to the span.
+
+ **Unit**: `kilometers per hour`
+
+## Contents
+<a name="API_RouteSpanSpeedLimitDetails_Contents"></a>
+
+ ** MaxSpeed **   <a name="location-Type-RouteSpanSpeedLimitDetails-MaxSpeed"></a>
+Maximum speed.
+ **Unit**: `kilometers per hour`
+Type: Double
+Valid Range: Minimum value of 0.0.
+Required: No
+
+ ** Unlimited **   <a name="location-Type-RouteSpanSpeedLimitDetails-Unlimited"></a>
+If the span doesn't have a speed limit like the Autobahn.
+Type: Boolean
+Required: No
+
+## See Also
+<a name="API_RouteSpanSpeedLimitDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/geo-routes-2020-11-19/RouteSpanSpeedLimitDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/geo-routes-2020-11-19/RouteSpanSpeedLimitDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/geo-routes-2020-11-19/RouteSpanSpeedLimitDetails)

@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/author-glue-job.html
+---
+
+# Working with jobs in AWS Glue
+<a name="author-glue-job"></a>
+
+The following sections provide information on ETL and Ray jobs in AWS Glue.
+
+**Topics**
++ [AWS Glue versions](release-notes.md)
++ [Working with Spark jobs in AWS Glue](etl-jobs-section.md)
++ [Working with Ray jobs in AWS Glue](ray-jobs-section.md)
++ [Configuring job properties for Python shell jobs in AWS Glue](add-job-python.md)
++ [Monitoring AWS Glue](monitor-glue.md)

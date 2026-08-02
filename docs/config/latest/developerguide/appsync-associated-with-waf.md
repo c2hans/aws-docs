@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/developerguide/appsync-associated-with-waf.html
+---
+
+# appsync-associated-with-waf
+<a name="appsync-associated-with-waf"></a>
+
+Checks if AWS AppSync APIs are associated with AWS WAFv2 web access control lists (ACLs). The rule is NON\_COMPLIANT for an AWS AppSync API if it is not associated with a web ACL.
+
+**Identifier:** APPSYNC\_ASSOCIATED\_WITH\_WAF
+
+**Resource Types:** AWS::AppSync::GraphQLApi
+
+**Trigger type:** Periodic
+
+**AWS Region:** All supported AWS regions except Asia Pacific (New Zealand), Asia Pacific (Thailand), Asia Pacific (Jakarta), Africa (Cape Town), Middle East (UAE), Asia Pacific (Hyderabad), Asia Pacific (Malaysia), Asia Pacific (Melbourne), AWS GovCloud (US-East), AWS GovCloud (US-West), Mexico (Central), Israel (Tel Aviv), Asia Pacific (Taipei), Canada West (Calgary), Europe (Spain), Europe (Zurich) Region
+
+**Parameters:**
+
+wafWebAclARNs (Optional)Type: CSV
+Comma-separated list of Amazon Resource Names (ARNs) for authorized web ACLs.
+
+## AWS CloudFormation template
+<a name="w2aac20c16c17b7d185c19"></a>
+
+To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

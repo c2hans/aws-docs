@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/deploy-the-solution.html
+---
+
+# Deploy the solution
+<a name="deploy-the-solution"></a>
+
+ This solution uses [AWS CloudFormation templates and stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation template specifies the AWS resources included in this solution and their properties. The CloudFormation stack provisions the resources that are described in the template.
+
+## Deployment process overview
+<a name="deployment-process-overview"></a>
+
+ Follow the step-by-step instructions in this section to configure and deploy the solution into your account.
+
+ Before you launch the solution, review the [cost](cost.md), [architecture](architecture-overview.md), [network security](security-1.md), and other considerations discussed earlier in this guide.
+
+ **Time to deploy:** Approximately 25 minutes
+
+ [Step 1: Launch the Stack](step-1-launch-the-stack.md)
++  Launch the AWS CloudFormation template into your AWS account.
++  Enter values for required parameters.
++  Review the other template parameters, and adjust if necessary.
+
+ [Step 2: Upload a video or image file](step-2-upload-a-video-or-image-file)
++  Upload a file using the web interface to begin the ingestion and analysis workflows.
+
+ [Step 3: Create your face collection](step-3-create-your-face-collection)
++  Index faces to create your face collection to improve face analysis results.
+
+ [Step 4: Advanced search](step-4-advanced-search.md)
++  Find the specific moment you are looking for.
+
+ [Step 5: Customizing AI/ML settings](step-5-customizing-aiml-settings.md)
++  Configure the AI/ML services that you want to use in your analysis.
+
+ [Step 6: Viewing statistics](step-6-viewing-statistics.md)
++  A summary of all content in your collection.
+
+**Important**
+ This solution includes an option to send anonymized operational metrics to AWS. We use this data to better understand how customers use this solution and related services and products. AWS owns the data gathered though this survey. Data collection is subject to the [AWS Privacy Notice](https://aws.amazon.com/privacy/).
+ To opt out of this feature, download the template, modify the AWS CloudFormation mapping section, and then use the AWS CloudFormation console to upload your updated template and deploy the solution. For more information, see the [Anonymized data collection](reference.md#anonymized-data-collection) section of this guide.

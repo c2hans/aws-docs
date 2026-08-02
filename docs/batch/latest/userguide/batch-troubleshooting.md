@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/batch/latest/userguide/batch-troubleshooting.html
+---
+
+# AWS Batch
+<a name="batch-troubleshooting"></a>
+
+Review the following topics to find review processes and potential solutions to common issues that you may encounter when using AWS Batch.
+
+**Topics**
++ [Optimal instance type configuration to receive automatic instance family updates](optimal-default-instance-troubleshooting.md)
++ [`INVALID` compute environment](invalid_compute_environment.md)
++ [Jobs stuck in a `RUNNABLE` status](job_stuck_in_runnable.md)
++ [Spot Instances not tagged on creation](spot-instance-no-tag.md)
++ [Spot Instances not scaling down](spot-fleet-not-authorized.md)
++ [Can't retrieve Secrets Manager secrets](troubleshooting-cant-specify-secrets.md)
++ [Can't override job definition resource requirements](override-resource-requirements.md)
++ [Error message when you update the `desiredvCpus` setting](error-desired-vcpus-update.md)

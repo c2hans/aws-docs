@@ -1,0 +1,137 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_CreateReceiptRuleSet_section.html
+---
+
+# Use `CreateReceiptRuleSet` with an AWS SDK
+<a name="ses_example_ses_CreateReceiptRuleSet_section"></a>
+
+The following code examples show how to use `CreateReceiptRuleSet`.
+
+------
+#### [ C\+\+ ]
+
+**SDK for C\+\+**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/cpp/example_code/ses#code-examples).
+
+```
+//! Create an Amazon Simple Email Service (Amazon SES) receipt rule set.
+/*!
+  \param ruleSetName: The name of the rule set.
+  \param clientConfiguration: AWS client configuration.
+  \return bool: Function succeeded.
+ */
+bool AwsDoc::SES::createReceiptRuleSet(const Aws::String &ruleSetName,
+                                       const Aws::Client::ClientConfiguration &clientConfiguration) {
+    Aws::SES::SESClient sesClient(clientConfiguration);
+
+    Aws::SES::Model::CreateReceiptRuleSetRequest createReceiptRuleSetRequest;
+
+    createReceiptRuleSetRequest.SetRuleSetName(ruleSetName);
+
+    Aws::SES::Model::CreateReceiptRuleSetOutcome outcome = sesClient.CreateReceiptRuleSet(
+            createReceiptRuleSetRequest);
+
+    if (outcome.IsSuccess()) {
+        std::cout << "Successfully created receipt rule set." << std::endl;
+    }
+    else {
+        std::cerr << "Error creating receipt rule set. "
+                  << outcome.GetError().GetMessage()
+                  << std::endl;
+    }
+
+    return outcome.IsSuccess();
+}
+```
++  For API details, see [CreateReceiptRuleSet](https://docs.aws.amazon.com/goto/SdkForCpp/email-2010-12-01/CreateReceiptRuleSet) in *AWS SDK for C\+\+ API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
+
+```
+import { CreateReceiptRuleSetCommand } from "@aws-sdk/client-ses";
+import { sesClient } from "./libs/sesClient.js";
+import { getUniqueName } from "@aws-doc-sdk-examples/lib/utils/util-string.js";
+
+const RULE_SET_NAME = getUniqueName("RuleSetName");
+
+const createCreateReceiptRuleSetCommand = (ruleSetName) => {
+  return new CreateReceiptRuleSetCommand({ RuleSetName: ruleSetName });
+};
+
+const run = async () => {
+  const createReceiptRuleSetCommand =
+    createCreateReceiptRuleSetCommand(RULE_SET_NAME);
+
+  try {
+    return await sesClient.send(createReceiptRuleSetCommand);
+  } catch (err) {
+    console.log("Failed to create receipt rule set", err);
+    return err;
+  }
+};
+```
++  For API details, see [CreateReceiptRuleSet](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/ses/command/CreateReceiptRuleSetCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
+
+```
+class SesReceiptHandler:
+    """Encapsulates Amazon SES receipt handling functions."""
+
+    def __init__(self, ses_client, s3_resource):
+        """
+        :param ses_client: A Boto3 Amazon SES client.
+        :param s3_resource: A Boto3 Amazon S3 resource.
+        """
+        self.ses_client = ses_client
+        self.s3_resource = s3_resource
+
+    def create_receipt_rule_set(self, rule_set_name):
+        """
+        Creates an empty rule set. Rule sets contain individual rules and can be
+        used to organize rules.
+
+        :param rule_set_name: The name to give the rule set.
+        """
+        try:
+            self.ses_client.create_receipt_rule_set(RuleSetName=rule_set_name)
+            logger.info("Created receipt rule set %s.", rule_set_name)
+        except ClientError:
+            logger.exception("Couldn't create receipt rule set %s.", rule_set_name)
+            raise
+```
++  For API details, see [CreateReceiptRuleSet](https://docs.aws.amazon.com/goto/boto3/email-2010-12-01/CreateReceiptRuleSet) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
+
+```
+    TRY.
+        lo_ses->createreceiptruleset( iv_rulesetname = iv_rule_set_name ).
+        MESSAGE 'Receipt rule set created successfully' TYPE 'I'.
+      CATCH /aws1/cx_sesalreadyexistsex INTO DATA(lo_ex1).
+        DATA(lv_error) = |Rule set already exists: { lo_ex1->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex1.
+      CATCH /aws1/cx_rt_generic INTO DATA(lo_ex_generic).
+        lv_error = |An error occurred: { lo_ex_generic->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex_generic.
+    ENDTRY.
+```
++  For API details, see [CreateReceiptRuleSet](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using Amazon SES with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

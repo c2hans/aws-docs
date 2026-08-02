@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_UploadJobItem.html
+---
+
+# UploadJobItem
+<a name="API_connect-customer-profiles_UploadJobItem"></a>
+
+The summary information for an individual upload job.
+
+## Contents
+<a name="API_connect-customer-profiles_UploadJobItem_Contents"></a>
+
+ ** CompletedAt **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-CompletedAt"></a>
+The timestamp when the upload job was completed.
+Type: Timestamp
+Required: No
+
+ ** CreatedAt **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-CreatedAt"></a>
+The timestamp when the upload job was created.
+Type: Timestamp
+Required: No
+
+ ** DataExpiry **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-DataExpiry"></a>
+The expiry duration for the profiles ingested with the upload job.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 1098.
+Required: No
+
+ ** DisplayName **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-DisplayName"></a>
+The name of the upload job.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Required: No
+
+ ** JobId **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-JobId"></a>
+The unique identifier of the upload job.
+Type: String
+Pattern: `[a-f0-9]{32}`
+Required: No
+
+ ** Status **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-Status"></a>
+The current status of the upload job.
+Type: String
+Valid Values: `CREATED | IN_PROGRESS | PARTIALLY_SUCCEEDED | SUCCEEDED | FAILED | STOPPED`
+Required: No
+
+ ** StatusReason **   <a name="connect-Type-connect-customer-profiles_UploadJobItem-StatusReason"></a>
+The reason for the current status of the upload job.
+Type: String
+Valid Values: `VALIDATION_FAILURE | INTERNAL_FAILURE`
+Required: No
+
+## See Also
+<a name="API_connect-customer-profiles_UploadJobItem_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/customer-profiles-2020-08-15/UploadJobItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/customer-profiles-2020-08-15/UploadJobItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/customer-profiles-2020-08-15/UploadJobItem)

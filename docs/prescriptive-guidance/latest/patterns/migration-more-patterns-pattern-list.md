@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migration-more-patterns-pattern-list.html
+---
+
+# More patterns
+<a name="migration-more-patterns-pattern-list"></a>
+
+**Topics**
++ [Access AWS services from IBM z/OS by installing the AWS CLI](access-aws-services-from-ibm-z-os-by-installing-aws-cli.md)
++ [Assess query performance for migrating SQL Server databases to MongoDB Atlas on AWS](assess-query-performance-for-migrating-sql-server-databases-to-mongodb-atlas-on-aws.md)
++ [Automate cross-Region failover and failback by using DR Orchestrator Framework](automate-cross-region-failover-and-failback-by-using-dr-orchestrator-framework.md)
++ [Automate database tasks in SQL Server Express on Amazon EC2 by using AWS Lambda and Task Scheduler](automate-database-tasks-in-sql-server-express-edition-running-on-amazon-ec2.md)
++ [Build an advanced mainframe file viewer in the AWS Cloud](build-an-advanced-mainframe-file-viewer-in-the-aws-cloud.md)
++ [Connect to MGN data and control planes over a private network](connect-to-application-migration-service-data-and-control-planes-over-a-private-network.md)
++ [Containerize mainframe workloads that have been modernized by Blu Age](containerize-mainframe-workloads-that-have-been-modernized-by-blu-age.md)
++ [Convert JSON Oracle queries into PostgreSQL database SQL](convert-json-oracle-queries-into-postgresql-database-sql.md)
++ [Convert the Teradata NORMALIZE temporal feature to Amazon Redshift SQL](convert-the-teradata-normalize-temporal-feature-to-amazon-redshift-sql.md)
++ [Convert the Teradata RESET WHEN feature to Amazon Redshift SQL](convert-the-teradata-reset-when-feature-to-amazon-redshift-sql.md)
++ [Copy Amazon DynamoDB tables across accounts using AWS Backup](copy-amazon-dynamodb-tables-across-accounts-using-aws-backup.md)
++ [Deploy a Cassandra cluster on Amazon EC2 with private static IPs to avoid rebalancing](deploy-a-cassandra-cluster-on-amazon-ec2-with-private-static-ips-to-avoid-rebalancing.md)
++ [Deploy SQL Server failover cluster instances on Amazon EC2 and Amazon FSx by using Terraform](deploy-sql-server-failover-cluster-instances-on-amazon-ec2-and-amazon-fsx.md)
++ [Emulate Oracle PL/SQL associative arrays in Amazon Aurora PostgreSQL and Amazon RDS for PostgreSQL](emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql.md)
++ [Estimate the Amazon RDS engine size for an Oracle database by using AWR reports](estimate-the-amazon-rds-engine-size-for-an-oracle-database-by-using-awr-reports.md)
++ [Generate data insights by using AWS Mainframe Modernization and Amazon Q in Quick Sight](generate-data-insights-by-using-aws-mainframe-modernization-and-amazon-q-in-quicksight.md)
++ [Handle anonymous blocks in Dynamic SQL statements in Aurora PostgreSQL](handle-anonymous-blocks-in-dynamic-sql-statements-in-aurora-postgresql.md)
++ [Identify duplicate container images automatically when migrating to an Amazon ECR repository](identify-duplicate-container-images-automatically-when-migrating-to-ecr-repository.md)
++ [Set up a Microsoft SQL Server failover cluster on Amazon EC2 by using FSx for Windows File Server](microsoft-sql-failover-cluster-on-amazon-ec2.md)
++ [Migrate Apache Cassandra workloads to Amazon Keyspaces by using AWS Glue](migrate-apache-cassandra-workloads-to-amazon-keyspaces-by-using-aws-glue.md)
++ [Migrate your container workloads from Azure Red Hat OpenShift (ARO) to Red Hat OpenShift Service on AWS (ROSA)](migrate-container-workloads-from-aro-to-rosa.md)
++ [Migrate from Oracle 8i or 9i to Amazon RDS for Oracle using SharePlex and AWS DMS](migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms.md)
++ [Migrate Microsoft SQL Server Always On availability group using AWS Transform MGN](migrate-microsoft-sql-server-always-on-group-using-mgn.md)
++ [Migrate Oracle functions and procedures that have more than 100 arguments to PostgreSQL](migrate-oracle-functions-and-procedures-that-have-more-than-100-arguments-to-postgresql.md)
++ [Migrate SAP HANA to AWS using SAP HSR with the same hostname](migrate-sap-hana-to-aws-using-sap-hsr-with-the-same-hostname.md)
++ [Migrate SQL Server to AWS using distributed availability groups](migrate-sql-server-to-aws-using-distributed-availability-groups.md)
++ [Modernize and deploy mainframe applications using AWS Transform and Terraform](modernize-mainframe-app-transform-terraform.md)
++ [Modernize mainframe online printing workloads on AWS by using Micro Focus Enterprise Server and LRS VPSX/MFI](modernize-mainframe-online-printing-workloads-on-aws-by-using-micro-focus-enterprise-server-and-lrs-vpsx-mfi.md)
++ [Modernize mainframe output management on AWS by using Rocket Enterprise Server and LRS PageCenterX](modernize-mainframe-output-management-on-aws-by-using-rocket-enterprise-server-and-lrs-pagecenterx.md)
++ [Modify HTTP headers when you migrate from F5 to an Application Load Balancer on AWS](modify-http-headers-when-you-migrate-from-f5-to-an-application-load-balancer-on-aws.md)
++ [Manage Multi-AZ failover for EMR clusters by using Application Recovery Controller](multi-az-failover-spark-emr-clusters-arc.md)
++ [Analyze object dependencies for partial database migrations from Oracle to PostgreSQL](multilevel-object-analysis-for-database-migration-from-oracle-to-postgresql.md)
++ [Set up a CI/CD pipeline for database migration by using Terraform](set-up-ci-cd-pipeline-for-db-migration-with-terraform.md)
++ [Set up disaster recovery for Oracle JD Edwards EnterpriseOne with AWS Elastic Disaster Recovery](set-up-disaster-recovery-for-oracle-jd-edwards-enterpriseone-with-aws-elastic-disaster-recovery.md)
++ [Simplify private certificate management by using AWS Private CA and AWS RAM](simplify-private-certificate-management-by-using-aws-private-ca-and-aws-ram.md)
++ [Transfer large-scale Db2 z/OS data to Amazon S3 in CSV files](transfer-large-scale-db2-z-os-data-to-amazon-s3-in-csv-files.md)
++ [Transform Easytrieve to modern languages by using AWS Transform custom](transform-easytrieve-modern-languages.md)

@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/jobruns-flink-resiliency.html
+---
+
+# How Flink supports high availability and job resiliency
+<a name="jobruns-flink-resiliency"></a>
+
+The following sections outline how Flink makes jobs more reliable and highly available. It does this through built-in capabilities like Flink high availability and various recovery capabilities if failures occur.
+
+**Topics**
++ [Using high availability (HA) for Flink Operators and Flink Applications](jobruns-flink-using-ha.md)
++ [Optimizing Flink job restart times for task recovery and scaling operations with Amazon EMR on EKS](jobruns-flink-restart.md)
++ [Graceful decommission of Spot Instances with Flink on Amazon EMR on EKS](jobruns-flink-decommission.md)

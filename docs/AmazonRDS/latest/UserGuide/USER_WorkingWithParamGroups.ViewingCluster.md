@@ -1,0 +1,96 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithParamGroups.ViewingCluster.html
+---
+
+# Viewing parameter values for a DB cluster parameter group
+<a name="USER_WorkingWithParamGroups.ViewingCluster"></a>
+
+You can get a list of all parameters in a DB cluster parameter group and their values.
+
+## Console
+<a name="USER_WorkingWithParamGroups.ViewingCluster.CON"></a>
+
+**To view the parameter values for a DB cluster parameter group**
+
+1. Sign in to the AWS Management Console and open the Amazon RDS console at [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds/).
+
+1. In the navigation pane, choose **Parameter groups**.
+
+   The DB cluster parameter groups appear in the list with **DB cluster parameter group** for **Type**.
+
+1. Choose the name of the DB cluster parameter group to see its list of parameters.
+
+## AWS CLI
+<a name="USER_WorkingWithParamGroups.ViewingCluster.CLI"></a>
+
+To view the parameter values for a DB cluster parameter group, use the AWS CLI [https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-cluster-parameters.html) command with the following required parameter.
++ `--db-cluster-parameter-group-name`
+
+**Example**
+The following example lists the parameters and parameter values for a DB cluster parameter group named *mydbclusterparametergroup*, in JSON format.
+The command returns a response like the following:
+
+```
+aws rds describe-db-cluster-parameters --db-cluster-parameter-group-name {{mydbclusterparametergroup}}
+```
+
+```
+{
+    "Parameters": [
+        {
+            "ParameterName": "activate_all_roles_on_login",
+            "ParameterValue": "0",
+            "Description": "Automatically set all granted roles as active after the user has authenticated successfully.",
+            "Source": "engine-default",
+            "ApplyType": "dynamic",
+            "DataType": "boolean",
+            "AllowedValues": "0,1",
+            "IsModifiable": true,
+            "ApplyMethod": "pending-reboot",
+            "SupportedEngineModes": [
+                "provisioned"
+            ]
+        },
+        {
+            "ParameterName": "allow-suspicious-udfs",
+            "Description": "Controls whether user-defined functions that have only an xxx symbol for the main function can be loaded",
+            "Source": "engine-default",
+            "ApplyType": "static",
+            "DataType": "boolean",
+            "AllowedValues": "0,1",
+            "IsModifiable": false,
+            "ApplyMethod": "pending-reboot",
+            "SupportedEngineModes": [
+                "provisioned"
+            ]
+        },
+...
+```
+
+## RDS API
+<a name="USER_WorkingWithParamGroups.ViewingCluster.API"></a>
+
+To view the parameter values for a DB cluster parameter group, use the RDS API [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBParameters.html) command with the following required parameter.
++ `DBClusterParameterGroupName`
+
+In some cases, the allowed values for a parameter aren't shown. These are always parameters where the source is the database engine default.
+
+To view the values of these parameters, you can run the following SQL statements:
++ MySQL:
+
+  ```
+  -- Show the value of a particular parameter
+  mysql$ SHOW VARIABLES LIKE '%{{parameter_name}}%';
+
+  -- Show the values of all parameters
+  mysql$ SHOW VARIABLES;
+  ```
++ PostgreSQL:
+
+  ```
+  -- Show the value of a particular parameter
+  postgresql=> SHOW {{parameter_name}};
+
+  -- Show the values of all parameters
+  postgresql=> SHOW ALL;
+  ```

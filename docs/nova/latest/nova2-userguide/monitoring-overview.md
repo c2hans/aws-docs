@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/nova/latest/nova2-userguide/monitoring-overview.html
+---
+
+# Monitoring Amazon Nova
+<a name="monitoring-overview"></a>
+
+Monitoring is an important part of maintaining the reliability, availability and performance of Amazon Nova and your other AWS solutions. AWS provides the following monitoring tools to watch Amazon Nova, report when something is wrong and take automatic actions when appropriate:
+
+Because Amazon Nova is available through Amazon Bedrock, follow all monitoring guidance at [Monitor the health and performance of Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring.html).

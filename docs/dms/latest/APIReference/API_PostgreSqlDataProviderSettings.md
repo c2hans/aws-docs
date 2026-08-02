@@ -1,0 +1,55 @@
+---
+source_url: https://docs.aws.amazon.com/dms/latest/APIReference/API_PostgreSqlDataProviderSettings.html
+---
+
+# PostgreSqlDataProviderSettings
+<a name="API_PostgreSqlDataProviderSettings"></a>
+
+Provides information that defines a PostgreSQL data provider.
+
+## Contents
+<a name="API_PostgreSqlDataProviderSettings_Contents"></a>
+
+ ** CertificateArn **   <a name="DMS-Type-PostgreSqlDataProviderSettings-CertificateArn"></a>
+The Amazon Resource Name (ARN) of the certificate used for SSL connection.
+Type: String
+Required: No
+
+ ** DatabaseName **   <a name="DMS-Type-PostgreSqlDataProviderSettings-DatabaseName"></a>
+The database name on the PostgreSQL data provider.
+Type: String
+Required: No
+
+ ** Port **   <a name="DMS-Type-PostgreSqlDataProviderSettings-Port"></a>
+The port value for the PostgreSQL data provider.
+Type: Integer
+Required: No
+
+ ** S3AccessRoleArn **   <a name="DMS-Type-PostgreSqlDataProviderSettings-S3AccessRoleArn"></a>
+The ARN for the role the application uses to access its Amazon S3 bucket.
+Type: String
+Required: No
+
+ ** S3Path **   <a name="DMS-Type-PostgreSqlDataProviderSettings-S3Path"></a>
+The path for the Amazon S3 bucket that the application uses for accessing the user-defined schema.
+Type: String
+Required: No
+
+ ** ServerName **   <a name="DMS-Type-PostgreSqlDataProviderSettings-ServerName"></a>
+The name of the PostgreSQL server.
+Type: String
+Required: No
+
+ ** SslMode **   <a name="DMS-Type-PostgreSqlDataProviderSettings-SslMode"></a>
+The SSL mode used to connect to the PostgreSQL data provider. The default value is `none`.
+Type: String
+Valid Values: `none | require | verify-ca | verify-full`
+Required: No
+
+## See Also
+<a name="API_PostgreSqlDataProviderSettings_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dms-2016-01-01/PostgreSqlDataProviderSettings)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dms-2016-01-01/PostgreSqlDataProviderSettings)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dms-2016-01-01/PostgreSqlDataProviderSettings)

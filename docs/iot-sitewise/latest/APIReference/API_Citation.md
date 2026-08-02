@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Citation.html
+---
+
+# Citation
+<a name="API_Citation"></a>
+
+Contains text content to which the SiteWise Assistant refers to, and generate the final response. It also contains information about the source.
+
+## Contents
+<a name="API_Citation_Contents"></a>
+
+ ** content **   <a name="iotsitewise-Type-Citation-content"></a>
+Contains the cited text from the data source.
+Type: [Content](API_Content.md) object
+Required: No
+
+ ** reference **   <a name="iotsitewise-Type-Citation-reference"></a>
+Contains information about the data source.
+Type: [Reference](API_Reference.md) object
+Required: No
+
+## See Also
+<a name="API_Citation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/Citation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/Citation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/Citation)

@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/securityagent/latest/APIReference/API_MembershipConfig.html
+---
+
+# MembershipConfig
+<a name="API_MembershipConfig"></a>
+
+The configuration for a membership. This is a union type that contains member-type-specific configuration.
+
+## Contents
+<a name="API_MembershipConfig_Contents"></a>
+
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** user **   <a name="securityagent-Type-MembershipConfig-user"></a>
+The user configuration for the membership.
+Type: [UserConfig](API_UserConfig.md) object
+Required: No
+
+## See Also
+<a name="API_MembershipConfig_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityagent-2025-09-06/MembershipConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityagent-2025-09-06/MembershipConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityagent-2025-09-06/MembershipConfig)

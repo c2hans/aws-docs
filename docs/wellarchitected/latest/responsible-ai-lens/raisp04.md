@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/raisp04.html
+---
+
+# Choosing a system configuration
+<a name="raisp04"></a>
+
+| RAISP04: How will you choose between different system configurations? |
+| --- |
+|   |
+
+ Teams test different candidate configurations of their system, including different versions of components or models during development using validation sets to determine which performs best. Different versions can come from different component choices, hyperparameters, training settings, or model architectures. Teams set up controlled comparisons between versions on the same validation data, then use paired statistical tests to determine if one version is statistically better than the other based on release criteria. Evaluation sets stay separate from component selection to avoid biasing final performance measurements and release decisions.
+
+**Topics**
++ [RAISP04-BP01 Use paired tests to choose from candidate designs](raisp04-bp01.md)

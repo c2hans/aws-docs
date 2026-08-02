@@ -1,0 +1,86 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ClusterRestrictedInstanceGroupSpecification.html
+---
+
+# ClusterRestrictedInstanceGroupSpecification
+<a name="API_ClusterRestrictedInstanceGroupSpecification"></a>
+
+The specifications of a restricted instance group that you need to define.
+
+## Contents
+<a name="API_ClusterRestrictedInstanceGroupSpecification_Contents"></a>
+
+ ** ExecutionRole **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-ExecutionRole"></a>
+Specifies an IAM execution role to be assumed by the restricted instance group.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+Required: Yes
+
+ ** InstanceCount **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-InstanceCount"></a>
+Specifies the number of instances to add to the restricted instance group of a SageMaker HyperPod cluster.
+Type: Integer
+Valid Range: Minimum value of 0. Maximum value of 6758.
+Required: Yes
+
+ ** InstanceGroupName **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-InstanceGroupName"></a>
+Specifies the name of the restricted instance group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-zA-Z0-9](-*[a-zA-Z0-9])*`
+Required: Yes
+
+ ** InstanceType **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-InstanceType"></a>
+Specifies the instance type of the restricted instance group.
+Type: String
+Valid Values: `ml.p4d.24xlarge | ml.p4de.24xlarge | ml.p5.48xlarge | ml.p5.4xlarge | ml.p6e-gb200.36xlarge | ml.trn1.32xlarge | ml.trn1n.32xlarge | ml.g5.xlarge | ml.g5.2xlarge | ml.g5.4xlarge | ml.g5.8xlarge | ml.g5.12xlarge | ml.g5.16xlarge | ml.g5.24xlarge | ml.g5.48xlarge | ml.c5.large | ml.c5.xlarge | ml.c5.2xlarge | ml.c5.4xlarge | ml.c5.9xlarge | ml.c5.12xlarge | ml.c5.18xlarge | ml.c5.24xlarge | ml.c5n.large | ml.c5n.2xlarge | ml.c5n.4xlarge | ml.c5n.9xlarge | ml.c5n.18xlarge | ml.m5.large | ml.m5.xlarge | ml.m5.2xlarge | ml.m5.4xlarge | ml.m5.8xlarge | ml.m5.12xlarge | ml.m5.16xlarge | ml.m5.24xlarge | ml.t3.medium | ml.t3.large | ml.t3.xlarge | ml.t3.2xlarge | ml.g6.xlarge | ml.g6.2xlarge | ml.g6.4xlarge | ml.g6.8xlarge | ml.g6.16xlarge | ml.g6.12xlarge | ml.g6.24xlarge | ml.g6.48xlarge | ml.gr6.4xlarge | ml.gr6.8xlarge | ml.g6e.xlarge | ml.g6e.2xlarge | ml.g6e.4xlarge | ml.g6e.8xlarge | ml.g6e.16xlarge | ml.g6e.12xlarge | ml.g6e.24xlarge | ml.g6e.48xlarge | ml.p5e.48xlarge | ml.p5en.48xlarge | ml.p6-b200.48xlarge | ml.trn2.3xlarge | ml.trn2.48xlarge | ml.c6i.large | ml.c6i.xlarge | ml.c6i.2xlarge | ml.c6i.4xlarge | ml.c6i.8xlarge | ml.c6i.12xlarge | ml.c6i.16xlarge | ml.c6i.24xlarge | ml.c6i.32xlarge | ml.m6i.large | ml.m6i.xlarge | ml.m6i.2xlarge | ml.m6i.4xlarge | ml.m6i.8xlarge | ml.m6i.12xlarge | ml.m6i.16xlarge | ml.m6i.24xlarge | ml.m6i.32xlarge | ml.r6i.large | ml.r6i.xlarge | ml.r6i.2xlarge | ml.r6i.4xlarge | ml.r6i.8xlarge | ml.r6i.12xlarge | ml.r6i.16xlarge | ml.r6i.24xlarge | ml.r6i.32xlarge | ml.i3en.large | ml.i3en.xlarge | ml.i3en.2xlarge | ml.i3en.3xlarge | ml.i3en.6xlarge | ml.i3en.12xlarge | ml.i3en.24xlarge | ml.m7i.large | ml.m7i.xlarge | ml.m7i.2xlarge | ml.m7i.4xlarge | ml.m7i.8xlarge | ml.m7i.12xlarge | ml.m7i.16xlarge | ml.m7i.24xlarge | ml.m7i.48xlarge | ml.r7i.large | ml.r7i.xlarge | ml.r7i.2xlarge | ml.r7i.4xlarge | ml.r7i.8xlarge | ml.r7i.12xlarge | ml.r7i.16xlarge | ml.r7i.24xlarge | ml.r7i.48xlarge | ml.r5d.16xlarge | ml.g7e.2xlarge | ml.g7e.4xlarge | ml.g7e.8xlarge | ml.g7e.12xlarge | ml.g7e.24xlarge | ml.g7e.48xlarge | ml.p6-b300.48xlarge`
+Required: Yes
+
+ ** EnvironmentConfig **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-EnvironmentConfig"></a>
+The configuration for the restricted instance groups (RIG) environment.
+Type: [EnvironmentConfig](API_EnvironmentConfig.md) object
+Required: No
+
+ ** InstanceStorageConfigs **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-InstanceStorageConfigs"></a>
+Specifies the additional storage configurations for the instances in the SageMaker HyperPod cluster restricted instance group.
+Type: Array of [ClusterInstanceStorageConfig](API_ClusterInstanceStorageConfig.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 4 items.
+Required: No
+
+ ** OnStartDeepHealthChecks **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-OnStartDeepHealthChecks"></a>
+A flag indicating whether deep health checks should be performed when the cluster restricted instance group is created or updated.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 2 items.
+Valid Values: `InstanceStress | InstanceConnectivity`
+Required: No
+
+ ** OverrideVpcConfig **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-OverrideVpcConfig"></a>
+Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC. For more information, see [Give SageMaker Access to Resources in your Amazon VPC](https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
+Type: [VpcConfig](API_VpcConfig.md) object
+Required: No
+
+ ** ScheduledUpdateConfig **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-ScheduledUpdateConfig"></a>
+The configuration object of the schedule that SageMaker follows when updating the AMI.
+Type: [ScheduledUpdateConfig](API_ScheduledUpdateConfig.md) object
+Required: No
+
+ ** ThreadsPerCore **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-ThreadsPerCore"></a>
+The number you specified to `TreadsPerCore` in `CreateCluster` for enabling or disabling multithreading. For instance types that support multithreading, you can specify 1 for disabling multithreading and 2 for enabling multithreading. For more information, see the reference table of [CPU cores and threads per CPU core per instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cpu-options-supported-instances-values.html) in the *Amazon Elastic Compute Cloud User Guide*.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 2.
+Required: No
+
+ ** TrainingPlanArn **   <a name="sagemaker-Type-ClusterRestrictedInstanceGroupSpecification-TrainingPlanArn"></a>
+The Amazon Resource Name (ARN) of the training plan to filter clusters by. For more information about reserving GPU capacity for your SageMaker HyperPod clusters using Amazon SageMaker Training Plan, see ` [CreateTrainingPlan](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingPlan.html) `.
+Type: String
+Length Constraints: Minimum length of 50. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:training-plan/.*`
+Required: No
+
+## See Also
+<a name="API_ClusterRestrictedInstanceGroupSpecification_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/ClusterRestrictedInstanceGroupSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/ClusterRestrictedInstanceGroupSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/ClusterRestrictedInstanceGroupSpecification)

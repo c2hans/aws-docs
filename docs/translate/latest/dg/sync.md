@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/translate/latest/dg/sync.html
+---
+
+# Real-time translation
+<a name="sync"></a>
+
+Amazon Translate provides real-time document and text translation operations that immediately return the translations. You can use the console or the API to perform real-time translations.
+
+**Topics**
++ [Real-time translation using the console](sync-console.md)
++ [Real-time translation using the API](sync-api.md)

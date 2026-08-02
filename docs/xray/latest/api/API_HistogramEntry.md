@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/xray/latest/api/API_HistogramEntry.html
+---
+
+# HistogramEntry
+<a name="API_HistogramEntry"></a>
+
+An entry in a histogram for a statistic. A histogram maps the range of observed values on the X axis, and the prevalence of each value on the Y axis.
+
+## Contents
+<a name="API_HistogramEntry_Contents"></a>
+
+ ** Count **   <a name="xray-Type-HistogramEntry-Count"></a>
+The prevalence of the entry.
+Type: Integer
+Required: No
+
+ ** Value **   <a name="xray-Type-HistogramEntry-Value"></a>
+The value of the entry.
+Type: Double
+Required: No
+
+## See Also
+<a name="API_HistogramEntry_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/xray-2016-04-12/HistogramEntry)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/xray-2016-04-12/HistogramEntry)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/xray-2016-04-12/HistogramEntry)

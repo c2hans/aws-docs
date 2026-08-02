@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-bimi.html
+---
+
+# Using BIMI in Amazon SES
+<a name="send-email-authentication-bimi"></a>
+
+Brand Indicators for Message Identification (BIMI) is an email specification that enables email inboxes to display a brand’s logo next to the brand’s authenticated email messages within supporting email clients.
+
+BIMI is an email specification that's directly connected to authentication, but it’s not a standalone email authentication protocol as it requires all your email to comply with [DMARC](send-email-authentication-dmarc.md) authentication.
+
+While BIMI requires DMARC, DMARC requires your domain to have either SPF or DKIM records to align, but it’s best to include both SPF and DKIM records for additional security, and because some email service providers (ESPs) require both when using BIMI. The following section goes over the steps to implement BIMI in Amazon SES.
+
+## Setting up BIMI in SES
+<a name="bimi-setup-procedure"></a>
+
+You can configure BIMI for an email domain that you own—in SES that's referred to as a *custom* MAIL FROM domain. Once configured, all of the messages that you send from that domain will display your BIMI logo in [email clients that support BIMI](https://bimigroup.org/bimi-infographic/).
+
+Enabling your emails to display a BIMI logo requires some prerequisites to be in place within SES—in the following procedure, these prerequisites are generalized and will reference dedicated sections that cover these topics in detail. The steps specific to BIMI and what is necessary to configure it in SES will be detailed here.
+
+**To set up BIMI on a custom MAIL FROM domain**
+
+1. You must have a custom MAIL FROM domain configured in SES with both SPF (type TXT) and MX records published for that domain. If you don't have a custom MAIL FROM domain, or would like to create a new one for your BIMI logo, see [Using a custom MAIL FROM domain](mail-from.md).
+
+1. Configure your domain with Easy DKIM. See [Easy DKIM in Amazon SES](send-email-authentication-dkim-easy.md).
+
+1. Configure your domain with DMARC by publishing a TXT record with your DNS provider with the following enforcement policy specifics required for BIMI similar to either of the two examples:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-bimi.html)
+
+   In the preceding DMARC policy example as required for BIMI:
+   + `{{example.com}}` should be replaced with your domain or subdomain name.
+   + The `p=` value can be either:
+     + *quarantine* with a *pct* value set to *100* as shown, or
+     + *reject* as shown.
+   + If you're sending from a subdomain, BIMI requires that the parent domain must also have this enforcement policy. Subdomains will fall under the parent domain’s policy. However, if you add a DMARC record for your subdomain in addition to what is posted for the parent domain, your subdomain must also have the same enforcement policy to be eligible for BIMI.
+   + If you've never set up a DMARC policy for your domain, see [Complying with DMARC authentication protocol in Amazon SES](send-email-authentication-dmarc.md) ensuring that you only use the DMARC policy values specific to BIMI as shown.
+
+1. Produce your BIMI logo as a Scalable Vector Graphics (SVG) `.svg` file—the specific SVG profile required by BIMI is defined as SVG Portable/Secure (SVG P/S). In order for your logo to display in the email client it must conform exactly to these specifications. See the [BIMI Group's](https://bimigroup.org/) guidance on [creating SVG logo files](https://bimigroup.org/creating-bimi-svg-logo-files/) and recommended [SVG conversion tools](https://bimigroup.org/svg-conversion-tools-released/).
+
+1. (Optional) Obtain a Verified Mark Certificate (VMC). Some ESPs, such as Gmail and Apple, require a VMC to provide evidence that you own the trademark and content of your BIMI logo. Although this isn't a requirement for implementing BIMI on your domain, your BIMI logo will not display in the email client if the ESP you send mail to enforces VMC compliance. See the BIMI Group's references to [participating certificate authorities](https://bimigroup.org/verified-mark-certificates-vmc-and-bimi/) to obtain a VMC for your logo.
+
+1. Host your BIMI logo's SVG file on a server you have access to making it publicly accessible through HTTPS. For example, you could upload it to an [Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html).
+
+1. Create and publish a BIMI DNS record that includes a URL to your logo. When an [ESP that supports BIMI](https://bimigroup.org/bimi-infographic/) checks your DMARC record, it will also look for a BIMI record containing the URL for your logo's `.svg` file, and if configured, the URL for your VMC's `.pem` file. If the records match, they'll display your BIMI logo.
+
+   Configure your domain with BIMI by publishing a TXT record with your DNS provider with the following values as shown—sending from a domain is represented in the first example; sending from a subdomain is represented in the second example:
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-bimi.html)
+
+   In the preceding BIMI record examples:
+   + The name value should literally specify `default._bimi.` as a subdomain of `{{example.com}}` or `{{marketing.example.com}}` which should be replaced with your domain or subdomain name.
+   + The `v=` value is the *version* of the BIMI record.
+   + The `l=` value is the *logo* representing the URL pointing to your image's `.svg` file.
+   + The `a=` value is the *authority* representing the URL pointing to your certificate's `.pem` file.
+
+   You can validate your BIMI record with a tool like the BIMI Group's [BIMI Inspector](https://bimigroup.org/bimi-generator/).
+
+The final step in this process is to have a regular sending pattern to the ESPs that support BIMI logo placement. Your domain should have a regular delivery cadence and should have a good reputation with the ESPs that you're sending to. BIMI logo placement may take time to populate to ESPs where you don’t have an established reputation or sending cadence.
+
+You can find more information and resources pertaining to BIMI through the [BIMI Group](https://bimigroup.org/) organization.

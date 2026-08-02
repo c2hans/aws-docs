@@ -1,0 +1,84 @@
+---
+source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/StorageVolumeStatuses.html
+---
+
+# Understanding Volume Statuses and Transitions
+<a name="StorageVolumeStatuses"></a>
+
+Each volume has an associated status that tells you at a glance what the health of the volume is. Most of the time, the status indicates that the volume is functioning normally and that no action is needed on your part. In some cases, the status indicates a problem with the volume that might or might not require action on your part. You can find information following to help you decide when you need to act. You can see volume status on the Storage Gateway console or by using one of the Storage Gateway API operations, for example [DescribeCachediSCSIVolumes](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeCachediSCSIVolumes.html) or [DescribeStorediSCSIVolumes](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeStorediSCSIVolumes.html).
+
+**Topics**
++ [Understanding Volume Status](#StorageVolumeStatuses2)
++ [Understanding Attachment Status](#VolumeAttachStatuses)
++ [Understanding Cached Volume Status Transitions](#CachedVolumeStatusTransition)
++ [Understanding Stored Volume Status Transitions](#StorageVolumeStatusTransition)
+
+## Understanding Volume Status
+<a name="StorageVolumeStatuses2"></a>
+
+ The following table shows volume status on the Storage Gateway console. Volume status appears in the **Status** column for each storage volume on your gateway. A volume that is functioning normally has a status of **Available**.
+
+In the following table, you can find a description of each storage volume status, and if and when you should act based on each status. The **Available** status is the normal status of a volume. A volume should have this status all or most of the time it's in use.
+
+| Status | Meaning |
+| --- | --- |
+| <a name="VolumeStatusAVAILABLE"></a><a name="VolumeStatusAVAILABLE.title"></a>Available | The volume is available for use. This status is the normal running status for a volume. <br />When a **Bootstrapping** phase is completed, the volume returns to **Available** state. That is, the gateway has synchronized any changes made to the volume since it first entered **Pass Through** status. |
+| <a name="VolumeStatusBOOTSTRAPPING"></a><a name="VolumeStatusBOOTSTRAPPING.title"></a>Bootstrapping | The gateway is synchronizing data locally with a copy of the data stored in AWS. You typically don't need to take action for this status, because the storage volume automatically sees the **Available** status in most cases. <br />The following are scenarios when a volume status is **Bootstrapping**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/storagegateway/latest/vgw/StorageVolumeStatuses.html) |
+| <a name="VolumeStatusCREATING"></a><a name="VolumeStatusCREATING.title"></a>Creating | The volume is currently being created and is not ready for use. The **Creating** status is transitional. No action is required. |
+| <a name="VolumeStatusDELETING"></a><a name="VolumeStatusDELETING.title"></a>Deleting | The volume is currently being deleted. The **Deleting** status is transitional. No action is required. |
+| <a name="VolumeStatusIRRECOVERABLE"></a><a name="VolumeStatusIRRECOVERABLE.title"></a>Irrecoverable | An error occurred from which the volume cannot recover. For information on what to do in this situation, see [Troubleshooting volume issues](troubleshoot-volume-issues.md). |
+| <a name="VolumeStatusPASSTHROUGH"></a><a name="VolumeStatusPASSTHROUGH.title"></a>Pass Through | Data maintained locally is out of sync with data stored in AWS. Data written to a volume while the volume is in **Pass Through** status remains in the cache until the volume status is **Bootstrapping**. This data starts to upload to AWS when **Bootstrapping** status begins. <br />The **Pass Through** status can occur for several reasons, listed following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/storagegateway/latest/vgw/StorageVolumeStatuses.html) |
+| <a name="VolumeStatusRESTORING"></a><a name="VolumeStatusRESTORING.title"></a>Restoring | The volume is being restored from an existing snapshot. This status applies only for stored volumes. For more information, see [How Volume Gateway works](StorageGatewayConcepts.md).<br />If you restore two storage volumes at the same time, both storage volumes show **Restoring** as their status. Each storage volume changes to the **Available** status automatically when it is finished being created. You can read and write to a storage volume and take a snapshot of it while it has the **Restoring** status. |
+| Restoring Pass Through | The volume is being restored from an existing snapshot and has encountered an upload buffer issue. This status applies only for stored volumes. For more information, see [How Volume Gateway works](StorageGatewayConcepts.md).<br />One reason that can cause the **Restoring Pass Through** status is if your gateway has run out of upload buffer space. Your applications can continue to read from and write data to your storage volumes while they have the **Restoring Pass Through** status. However, you can't take snapshots of a storage volume during the **Restoring Pass Through** status period. For information about what action to take when your storage volume has the **Restoring Pass Through** status because upload buffer capacity has been exceeded, see [Troubleshooting volume issues](troubleshoot-volume-issues.md). <br />Infrequently, the **Restoring Pass Through** status can indicate that a disk allocated for an upload buffer has failed. For information about what action to take in this scenario, see [Troubleshooting volume issues](troubleshoot-volume-issues.md). |
+| <a name="VolumeStatusUPLOADBUFFERNOTCONFIGURED"></a><a name="VolumeStatusUPLOADBUFFERNOTCONFIGURED.title"></a>Upload Buffer Not Configured | You can't create or use the volume because the gateway doesn't have an upload buffer configured. For information on how to add upload buffer capacity for volumes in a cached volume setup, see [Determining the size of upload buffer to allocate](decide-local-disks-and-sizes.md#CachedLocalDiskUploadBufferSizing-common). For information on how to add upload buffer capacity for volumes in a stored volume setup, see [Determining the size of upload buffer to allocate](decide-local-disks-and-sizes.md#CachedLocalDiskUploadBufferSizing-common). |
+
+## Understanding Attachment Status
+<a name="VolumeAttachStatuses"></a>
+
+ You can detach a volume from a gateway or attach it to a gateway by using the Storage Gateway console or API. The following table shows volume attachment status on the Storage Gateway console. Volume attachment status appears in the **Attachment status** column for each storage volume on your gateway. For example, a volume that is detached from a gateway has a status of **Detached**. For information about how to detach and attach a volume, see [Moving Your Volumes to a Different Gateway](attach-detach-volume.md).
+
+| Status | Meaning |
+| --- | --- |
+| <a name="VolumeStatusATTACHED"></a><a name="VolumeStatusATTACHED.title"></a>Attached | The volume is attached to a gateway. |
+| <a name="VolumeStatusDETACHED"></a><a name="VolumeStatusDETACHED.title"></a>Detached | The volume is detached from a gateway. |
+| <a name="VolumeStatusDETACHING"></a><a name="VolumeStatusDETACHING.title"></a>Detaching | The volume is being detached from a gateway. When you are detaching a volume and the volume doesn't have data on it, you might not see this status. |
+
+## Understanding Cached Volume Status Transitions
+<a name="CachedVolumeStatusTransition"></a>
+
+Use the following state diagram to understand the most common transitions between statuses for volumes in cached gateways. You don't need to understand the diagram in detail to use your gateway effectively. Rather, the diagram provides detailed information if you are interested in knowing more about how Volume Gateways work.
+
+The diagram doesn't show the **Upload Buffer Not Configured** status or the **Deleting** status. Volume states in the diagram appear as green, yellow, and red boxes. You can interpret the colors as described following.
+
+| Color | Volume Status |
+| --- | --- |
+| Green | The gateway is operating normally. The volume status is Available or eventually becomes Available. |
+| Yellow | The volume has the Pass Through status, which indicates there is a potential issue with the storage volume. If this status appears because the upload buffer space is filled, then in some cases buffer space becomes available again. At that point, the storage volume self-corrects to the Available status. In other cases, you might have to add more upload buffer space to your gateway to allow the storage volume status to become Available. For information on how to troubleshoot a case when upload buffer capacity has been exceeded, see [Troubleshooting volume issues](troubleshoot-volume-issues.md). For information on how to add upload buffer capacity, see [Determining the size of upload buffer to allocate](decide-local-disks-and-sizes.md#CachedLocalDiskUploadBufferSizing-common). |
+| Red | The storage volume has the Irrecoverable status. In this case, you should delete the volume. For information on how to do this, see [To delete a volume](ApplicationStorageVolumesCached-Removing.md#CachedRemovingAStorageVolume). |
+
+In the diagram, a transition between two states is depicted with a labeled line. For example, the transition from the **Creating** status to the **Available** status is labeled as *Create Basic Volume or Create Volume from Snapshot*. This transition represents creating a cached volume. For more information about creating storage volumes, see [Adding and expanding volumes](volume-size-increase.md).
+
+![all possible cached volume states with arrows indicating possible transitions between states.](http://docs.aws.amazon.com/storagegateway/latest/vgw/images/VolumeStateDiagramCachedVolume-diagram.png)
+
+**Note**
+The volume status of **Pass Through** appears as yellow in this diagram. However, this doesn't match the color of this status icon in the **Status** box of the Storage Gateway console.
+
+## Understanding Stored Volume Status Transitions
+<a name="StorageVolumeStatusTransition"></a>
+
+Use the following state diagram to understand the most common transitions between statuses for volumes in stored gateways. You don't need to understand the diagram in detail to use your gateway effectively. Rather, the diagram provides detailed information if you are interested in understanding more about how Volume Gateways work.
+
+The diagram doesn't show the **Upload Buffer Not Configured** status or the **Deleting** status. Volume states in the diagram appear as green, yellow, and red boxes. You can interpret the colors as described following.
+
+| Color | Volume Status |
+| --- | --- |
+| Green | The gateway is operating normally. The volume status is Available or eventually becomes Available. |
+| Yellow | When you are creating a storage volume and preserving data, then the path from the Creating status to the Pass Through status occurs if another volume is bootstrapping. In this case, the volume with the Pass Through status goes to the Bootstrapping status and then to the Available status when the first volume is finished bootstrapping. Other than the specific scenario mentioned, yellow (Pass Through status) indicates that there is a potential issue with the storage volume, the most common one being an upload buffer issue. If upload buffer capacity has been exceeded, then in some cases buffer space becomes available again. At that point, the storage volume self-corrects to the Available status. In other cases, you might have to add more upload buffer capacity to your gateway to return the storage volume to the Available status. For information on how to troubleshoot a case when upload buffer capacity has been exceeded, see [Troubleshooting volume issues](troubleshoot-volume-issues.md). For information on how to add upload buffer capacity, see [Determining the size of upload buffer to allocate](decide-local-disks-and-sizes.md#CachedLocalDiskUploadBufferSizing-common). |
+| Red | The storage volume has the Irrecoverable status. In this case, you should delete the volume. For information on how to do this, see [Deleting storage volumes](ApplicationStorageVolumesCached-Removing.md). |
+
+In the following diagram, a transition between two states is depicted with a labeled line. For example, the transition from the **Creating** status to the **Available** status is labeled as *Create Basic Volume*. This transition represents creating a storage volume without preserving data or creating the volume from a snapshot.
+
+![all possible stored volume states with arrows indicating possible transitions between states.](http://docs.aws.amazon.com/storagegateway/latest/vgw/images/VolumeStateDiagram-diagram.png)
+
+**Note**
+The volume status of **Pass Through** appears as yellow in this diagram. However, this doesn't match the color of this status icon in the **Status** box of the Storage Gateway console.

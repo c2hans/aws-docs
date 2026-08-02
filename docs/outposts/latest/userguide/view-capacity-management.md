@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/userguide/view-capacity-management.html
+---
+
+# View AWS Outposts capacity
+<a name="view-capacity-management"></a>
+
+You can view the capacity configuration at the instance or Outpost level.
+
+**To view capacity configuration for your Outpost using the console**
+
+1. Open the AWS Outposts console at [https://console.aws.amazon.com/outposts/](https://console.aws.amazon.com/outposts/home).
+
+1. From the left navigation pane, choose **Outposts**.
+
+1. Choose the Outpost.
+
+1. On the Outpost details page select either **Instance view** or **Rack view**.
+   + **Instance view** - Provides information on the instances configured on the Outposts and the distribution of instances by size and family.
+   + **Rack view** - Provides visualization of the instances on each asset within each Outpost and allows you to select **Modify instance capacity** to make changes to instance capacity.

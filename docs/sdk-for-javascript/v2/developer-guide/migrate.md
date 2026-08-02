@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/migrate.html
+---
+
+The AWS SDK for JavaScript v2 has reached end-of-support. We recommend that you migrate to [AWS SDK for JavaScript v3](https://docs.aws.amazon.com//sdk-for-javascript/v3/developer-guide/). For additional details and information on how to migrate, please refer to this [announcement](https://aws.amazon.com/blogs//developer/announcing-end-of-support-for-aws-sdk-for-javascript-v2/).
+
+# Migrate to v3 of the AWS SDK for JavaScript
+<a name="migrate"></a>
+
+The AWS SDK for JavaScript version 3 is a major rewrite of version 2. For more information on migrating to version 3, see [Migrate from version 2.x to 3.x of the AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating.html) in the *AWS SDK for JavaScript Developer Guide v3.*

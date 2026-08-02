@@ -1,0 +1,130 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-elasticloadbalancingv2-listenerrule-rulecondition.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::ElasticLoadBalancingV2::ListenerRule RuleCondition
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition"></a>
+
+Specifies a condition for a listener rule.
+
+## Syntax
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition-syntax.json"></a>
+
+```
+{
+  "[Field](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-field)" : {{String}},
+  "[HostHeaderConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig)" : {{HostHeaderConfig}},
+  "[HttpHeaderConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httpheaderconfig)" : {{HttpHeaderConfig}},
+  "[HttpRequestMethodConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httprequestmethodconfig)" : {{HttpRequestMethodConfig}},
+  "[PathPatternConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-pathpatternconfig)" : {{PathPatternConfig}},
+  "[QueryStringConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-querystringconfig)" : {{QueryStringConfig}},
+  "[RegexValues](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-regexvalues)" : {{[ String, ... ]}},
+  "[SourceIpConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-sourceipconfig)" : {{SourceIpConfig}},
+  "[Values](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-values)" : {{[ String, ... ]}}
+}
+```
+
+### YAML
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition-syntax.yaml"></a>
+
+```
+  [Field](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-field): {{String}}
+  [HostHeaderConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig): {{
+    HostHeaderConfig}}
+  [HttpHeaderConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httpheaderconfig): {{
+    HttpHeaderConfig}}
+  [HttpRequestMethodConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-httprequestmethodconfig): {{
+    HttpRequestMethodConfig}}
+  [PathPatternConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-pathpatternconfig): {{
+    PathPatternConfig}}
+  [QueryStringConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-querystringconfig): {{
+    QueryStringConfig}}
+  [RegexValues](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-regexvalues): {{
+    - String}}
+  [SourceIpConfig](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-sourceipconfig): {{
+    SourceIpConfig}}
+  [Values](#cfn-elasticloadbalancingv2-listenerrule-rulecondition-values): {{
+    - String}}
+```
+
+## Properties
+<a name="aws-properties-elasticloadbalancingv2-listenerrule-rulecondition-properties"></a>
+
+`Field`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-field"></a>
+The name of the field. The possible values are:
++ `http-header` – [ALB] Matches on an HTTP header field.
++ `http-request-method` – [ALB] Matches on the HTTP request method.
++ `host-header` – [ALB] Matches on the host header.
++ `path-pattern` – [ALB] Matches on the URL path of the request.
++ `query-string` – [ALB] Matches on a query string parameter.
++ `source-ip` – [ALB, NLB] Matches on the source IP address. For ALB, use `SourceIpConfig` with `Values` to specify CIDR ranges. For NLB, use `SourceIpConfig` with `IpAddressType` to match the IP address type (`ipv4` or `ipv6`).
+*Required*: No
+*Type*: String
+*Maximum*: `64`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`HostHeaderConfig`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-hostheaderconfig"></a>
+Information for a host header condition. Specify only when `Field` is `host-header`.
+*Required*: No
+*Type*: [HostHeaderConfig](aws-properties-elasticloadbalancingv2-listenerrule-hostheaderconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`HttpHeaderConfig`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-httpheaderconfig"></a>
+Information for an HTTP header condition. Specify only when `Field` is `http-header`.
+*Required*: Conditional
+*Type*: [HttpHeaderConfig](aws-properties-elasticloadbalancingv2-listenerrule-httpheaderconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`HttpRequestMethodConfig`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-httprequestmethodconfig"></a>
+Information for an HTTP method condition. Specify only when `Field` is `http-request-method`.
+*Required*: Conditional
+*Type*: [HttpRequestMethodConfig](aws-properties-elasticloadbalancingv2-listenerrule-httprequestmethodconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PathPatternConfig`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-pathpatternconfig"></a>
+Information for a path pattern condition. Specify only when `Field` is `path-pattern`.
+*Required*: No
+*Type*: [PathPatternConfig](aws-properties-elasticloadbalancingv2-listenerrule-pathpatternconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`QueryStringConfig`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-querystringconfig"></a>
+Information for a query string condition. Specify only when `Field` is `query-string`.
+*Required*: Conditional
+*Type*: [QueryStringConfig](aws-properties-elasticloadbalancingv2-listenerrule-querystringconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RegexValues`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-regexvalues"></a>
+The regular expressions to match against the condition field. The maximum length of each string is 128 characters. Specify only when `Field` is `http-header`, `host-header`, or `path-pattern`.
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`SourceIpConfig`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-sourceipconfig"></a>
+Information for a source IP condition. Specify only when `Field` is `source-ip`.
+*Required*: Conditional
+*Type*: [SourceIpConfig](aws-properties-elasticloadbalancingv2-listenerrule-sourceipconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Values`  <a name="cfn-elasticloadbalancingv2-listenerrule-rulecondition-values"></a>
+The condition value. Specify only when `Field` is `host-header` or `path-pattern`. Alternatively, to specify multiple host names or multiple path patterns, use `HostHeaderConfig` or `PathPatternConfig`.
+If `Field` is `host-header` and you're not using `HostHeaderConfig`, you can specify a single host name (for example, my.example.com). A host name is case insensitive, can be up to 128 characters in length, and can contain any of the following characters.
++ A-Z, a-z, 0-9
++ - .
++ \* (matches 0 or more characters)
++ ? (matches exactly 1 character)
+If `Field` is `path-pattern` and you're not using `PathPatternConfig`, you can specify a single path pattern (for example, /img/\*). A path pattern is case-sensitive, can be up to 128 characters in length, and can contain any of the following characters.
++ A-Z, a-z, 0-9
++ \_ - . $ / \~ " ' @ : \+
++ & (using &amp;)
++ \* (matches 0 or more characters)
++ ? (matches exactly 1 character)
+*Required*: No
+*Type*: Array of String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/INTERNAL_ERROR_EC2_INSUFFICIENT_CAPACITY_AZ.html
+---
+
+# INTERNAL\_ERROR\_EC2\_INSUFFICIENT\_CAPACITY\_AZ
+<a name="INTERNAL_ERROR_EC2_INSUFFICIENT_CAPACITY_AZ"></a>
+
+## Overview
+<a name="INTERNAL_ERROR_EC2_INSUFFICIENT_CAPACITY_AZ_overview"></a>
+
+A cluster terminates with an `INTERNAL_ERROR_EC2_INSUFFICIENT_CAPACITY_AZ` error when the selected Availability Zone doesn't have enough capacity to fulfill your Amazon EC2 instance type request. The subnet that you select for a cluster determines the Availability Zone. For more information about subnets for Amazon EMR, see [Configure networking in a VPC for Amazon EMR](emr-plan-vpc-subnet.md).
+
+## Resolution
+<a name="INTERNAL_ERROR_EC2_INSUFFICIENT_CAPACITY_AZ_resolution"></a>
+
+To resolve this error, modify your instance type configurations and create a new cluster with your updated request.
+
+To troubleshoot the failed EMR cluster, refer to the `ErrorDetail` information returned from the `DescribeCluster` and `ListClusters` APIs. For more information, see [Error codes with ErrorDetail information in Amazon EMR](emr-troubleshoot-error-errordetail.md). The `ErrorData` array within `ErrorDetail` returns the following information for this error code:
+
+**`instance-type`**
+The instance type that is out of capacity.
+
+**`availability-zone`**
+The Availability Zone that your subnet resolves to.
+
+**`public-doc`**
+The public URL of the documentation for the error code.
+
+## Steps to complete
+<a name="INTERNAL_ERROR_EC2_INSUFFICIENT_CAPACITY_AZ_stc"></a>
+
+Perform the following steps to identify and fix the root cause of the cluster configuration error:
++ Review the best practices for cluster configuration. See [Configuring Amazon EMR cluster instance types and best practices for Spot instances](emr-plan-instances-guidelines.md) in the *Amazon EMR Management Guide*.
++ Troubleshoot the launch issues and review your configuration. See [Troubleshoot instance launch issues ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/troubleshooting-launch.html) in the *Amazon EC2 User Guide*.
++ Launch a new cluster with your updated cluster configuration.

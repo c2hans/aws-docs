@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/chime-sdk/latest/ag/using-service-linked-roles.html
+---
+
+# Using service-linked roles for Amazon Chime SDK
+<a name="using-service-linked-roles"></a>
+
+The Amazon Chime SDK uses AWS Identity and Access Management (IAM)[ service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role). A service-linked role is a unique type of IAM role that is linked directly to the Amazon Chime SDK. Service-linked roles are predefined by the Amazon Chime SDK and include all the permissions that the service requires to call other AWS services on your behalf.
+
+A service-linked role makes setting up the Amazon Chime SDK more efficient because you aren't required to manually add the necessary permissions. The Amazon Chime SDK defines the permissions of its service-linked roles, and unless defined otherwise, only the Amazon Chime SDK can assume its roles. The defined permissions include the trust policy and the permissions policy. The permissions policy cannot be attached to any other IAM entity.
+
+You can delete a service-linked role only after first deleting their related resources. This protects your Amazon Chime SDK resources because you can't inadvertently remove permission to access the resources.
+
+For information about other services that support service-linked roles, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html). Look for the services that have **Yes **in the **Service-Linked Role** column. Choose a **Yes** with a link to view the service-linked role documentation for that service.
+
+**Topics**
++ [Using the Amazon Chime SDK Voice Connector service linked role policy](using-service-linked-roles-stream.md)
++ [Using roles with live transcription](using-service-linked-roles-transcription.md)
++ [Using roles with Amazon Chime SDK media pipelines](using-service-linked-roles-media-pipeline.md)
++ [Using the AmazonChimeSDKEvents service-linked role](analytics-service-role.md)

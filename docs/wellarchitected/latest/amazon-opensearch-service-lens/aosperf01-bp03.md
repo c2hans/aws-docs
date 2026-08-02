@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch-service-lens/aosperf01-bp03.html
+---
+
+# AOSPERF01-BP03 Check the number of shards per GiB of heap memory
+<a name="aosperf01-bp03"></a>
+
+ Prevent inefficient resource utilization by keeping each data node's heap under a shard load of 25.
+
+ **Level of risk exposed if this best practice is not established:** High
+
+ **Desired outcome:** Each data node's heap memory should support no more than 25 shards, thereby optimizing resource utilization and enhancing query performance.
+
+ **Benefits of establishing this best practice:**
++  Improved query performance
++  Reduce risks of running out of memory while executing the queries
+
+## Implementation guidance
+<a name="implementation-guidance-31"></a>
+
+ Amazon OpenSearch Service allocates approximately half of each data node's physical memory, up to 32 GB, for the Java Virtual Machine (JVM) and OpenSearch. In a system with 16 GB of memory, this amounts to roughly 8 GB reserved for the JVM.
+
+ Additionally, the total number of shards a node can handle is directly related to its JVM heap memory size. To maintain an optimal balance, strive for a shard-to-JVM-heap-memory ratio of approximately 25:1. For example, with 16 GB of memory (and thus 8 GB allocated to the JVM), you should aim for no more than 200 shards per node (25 x 8 = 200).
+
+ For further guidance on optimal shard sizing, see [AOSPERF04-BP01](aosperf04-bp01.md) and [AOSPERF04-BP02](aosperf04-bp02.md).
+
+## Resources
+<a name="resources-30"></a>
++  [Sharding strategy](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html#bp-sharding-strategy)
++  [Choosing the number of shards](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp-sharding.html)
++  [Sizing OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/sizing-domains.html)

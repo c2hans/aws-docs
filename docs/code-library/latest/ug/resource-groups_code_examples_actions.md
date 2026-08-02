@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/resource-groups_code_examples_actions.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Actions for Resource Groups using AWS SDKs
+<a name="resource-groups_code_examples_actions"></a>
+
+The following code examples demonstrate how to perform individual Resource Groups actions with AWS SDKs. Each example includes a link to GitHub, where you can find instructions for setting up and running the code.
+
+ The following examples include only the most commonly used actions. For a complete list, see the [AWS Resource Groups API Reference](https://docs.aws.amazon.com/ARG/latest/APIReference/Welcome.html).
+
+**Topics**
++ [`CreateGroup`](resource-groups_example_resource-groups_CreateGroup_section.md)
++ [`DeleteGroup`](resource-groups_example_resource-groups_DeleteGroup_section.md)
++ [`GetGroup`](resource-groups_example_resource-groups_GetGroup_section.md)
++ [`GetGroupQuery`](resource-groups_example_resource-groups_GetGroupQuery_section.md)
++ [`GetTags`](resource-groups_example_resource-groups_GetTags_section.md)
++ [`ListGroupResources`](resource-groups_example_resource-groups_ListGroupResources_section.md)
++ [`ListGroups`](resource-groups_example_resource-groups_ListGroups_section.md)
++ [`SearchResources`](resource-groups_example_resource-groups_SearchResources_section.md)
++ [`Tag`](resource-groups_example_resource-groups_Tag_section.md)
++ [`Untag`](resource-groups_example_resource-groups_Untag_section.md)
++ [`UpdateGroup`](resource-groups_example_resource-groups_UpdateGroup_section.md)
++ [`UpdateGroupQuery`](resource-groups_example_resource-groups_UpdateGroupQuery_section.md)

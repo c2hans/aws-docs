@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/deleting_hybrid_dir_assessment.html
+---
+
+# Deleting directory assessments
+<a name="deleting_hybrid_dir_assessment"></a>
+
+You can delete customer-created directory assessments in the AWS Management Console. You can't delete system-initiated assessments that AWS creates automatically.
+
+**To delete a customer directory assessment**
+
+1. Open the Directory Service console at [https://console.aws.amazon.com/directoryservicev2/](https://console.aws.amazon.com/directoryservicev2/).
+
+1. On the **Directories** page, under the **Directory assessments** section, choose the customer assessment you want to delete. Alternatively, you can choose the checkbox beside the directory assessments you want to delete and then from the **Actions** menu, choose **Delete**.
+
+1. You're directed to the **Assessments** details page. Choose **Actions** and then choose **Delete Assessment**. A **Delete directory assessment** dialog box appears. Choose **Delete**.

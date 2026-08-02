@@ -1,0 +1,53 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-secrets.deleting.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Deleting a secret
+<a name="workflows-secrets.deleting"></a>
+
+Use the following procedure to delete a secret and the secret reference identifier.
+
+**Note**
+Before deleting a secret, we recommend that you remove the secret's reference identifier from all workflow actions. If you delete the secret without deleting the reference identifier, the action will fail the next time it runs.
+
+**To delete a secret's reference identifier from a workflow**
+
+1. Open the CodeCatalyst console at [https://codecatalyst.aws/](https://codecatalyst.aws/).
+
+1. In the navigation pane, choose **CI/CD**, and then choose **Workflows**.
+
+1. Choose the name of your workflow. You can filter by the source repository or branch name where the workflow is defined, or filter by workflow name or status.
+
+1. Choose **Edit**.
+
+1. Choose **YAML**.
+
+1. Search the workflow for the following string:
+
+   ```
+   ${Secrets.
+   ```
+
+   This finds all reference identifiers of all secrets.
+
+1. Delete the reference identifier of the chosen secret, or replace it with a plaintext value.
+
+1. (Optional) Choose **Validate** to validate the workflow's YAML code before committing.
+
+1. Choose **Commit**, enter a commit message, and choose **Commit** again.
+
+**To delete a secret**
+
+1. Open the CodeCatalyst console at [https://codecatalyst.aws/](https://codecatalyst.aws/).
+
+1. In the navigation pane, choose **CI/CD**, and then choose **Secrets**.
+
+1. In the secrets list, choose the secret you want to delete.
+
+1. Choose **Delete**.
+
+1. Enter **delete** to confirm the deletion.
+
+1. Choose **Delete**.

@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/encryption-transit.html
+---
+
+# Encryption in transit for Amazon WorkSpaces Secure Browser
+<a name="encryption-transit"></a>
+
+WorkSpaces Secure Browser encrypts data in transit over HTTPS and TLS 1.2. You can send a request to WorkSpaces by using the console or direct API calls. The request data that is transferred is encrypted by sending everything through a HTTPS or TLS connection. Request data can be transferred from the AWS Console, AWS Command Line Interface, or AWS SDK to WorkSpaces Secure Browser.
+
+Encryption in transit is configured by default, and secure connections (HTTPS, TLS) are configured by default.

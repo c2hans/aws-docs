@@ -1,0 +1,122 @@
+---
+source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-iam-permissions.html
+---
+
+# IAM permissions required for KCL consumer applications
+<a name="kcl-iam-permissions"></a>
+
+ You must add the following permissions to the IAM role or user associated with your KCL consumer application.
+
+ Security best practices for AWS dictate the use of fine-grained permissions to control access to different resources. AWS Identity and Access Management (IAM) lets you manage users and user permissions in AWS. An IAM policy explicitly lists actions that are allowed and the resources on which the actions are applicable.
+
+The following table shows the minimum IAM permissions generally required for KCL consumer applications:
+
+**Minimum IAM permissions for KCL consumer applications**
+
+| Service | Actions | Resources (ARNs) | Purpose |
+| --- | --- | --- | --- |
+| Amazon Kinesis Data Streams | `DescribeStream`<br />`DescribeStreamSummary`<br />`RegisterStreamConsumer` | Kinesis data stream from which your KCL application will process the data.<br />`arn:aws:kinesis:region:account:stream/StreamName` | Before attempting to read records, the consumer checks if the data stream exists, if it's active, and if the shards are contained in the data stream.<br />Registers consumers to a shard. |
+| Amazon Kinesis Data Streams | `GetRecords`<br />`GetShardIterator`<br />`ListShards` | Kinesis data stream from which your KCL application will process the data.<br />`arn:aws:kinesis:region:account:stream/StreamName` | Reads records from a shard. |
+| Amazon Kinesis Data Streams | `SubscribeToShard`<br />`DescribeStreamConsumer` | Kinesis data stream from which your KCL application will process the data. Add this action only if you use enhanced fan-out (EFO) consumers.<br />`arn:aws:kinesis:region:account:stream/StreamName/consumer/*` | Subscribes to a shard for enhanced fan-out (EFO) consumers. |
+| Amazon DynamoDB | `CreateTable`<br />`DescribeTable`<br />`UpdateTable`<br />`Scan`<br />`GetItem`<br />`PutItem`<br />`UpdateItem`<br />`DeleteItem` | Lease table (metadata table in DynamoDB created by KCL.<br />`arn:aws:dynamodb:region:account:table/KCLApplicationName` | These actions are required for KCL to manag the lease table created in DynamoDB. |
+| Amazon DynamoDB | `CreateTable`<br />`DescribeTable`<br />`Scan`<br />`GetItem`<br />`PutItem`<br />`UpdateItem`<br />`DeleteItem`<br />`ConditionCheckItem`<br />`DeleteTable` | Worker metrics and coordinator state table (metadata tables in DynamoDB) created by KCL.<br />`arn:aws:dynamodb:region:account:table/KCLApplicationName-WorkerMetricStats`<br />`arn:aws:dynamodb:region:account:table/KCLApplicationName-CoordinatorState` | These actions are required for KCL to manage the worker metrics and coordinator state metadata tables in DynamoDB. The CoordinatorState table requires the `ConditionCheckItem` action to support the conditional writes used during the single table migration. |
+| Amazon DynamoDB | `Query` | Global secondary index on the lease table.<br />`arn:aws:dynamodb:region:account:table/KCLApplicationName/index/*` | This action is required for KCL to read the global secondary index of the lease table created in DynamoDB. |
+| Amazon CloudWatch | `PutMetricData` | \* | Upload metrics to CloudWatch that are useful for monitoring the application. The asterisk (\*) is used because there is no spcific resource in CloudWatch on which the `PutMetricData` action is invoked.  |
+
+**Note**
+Replace "region," "account," "StreamName," and "KCLApplicationName" in the ARNs with your own AWS Region, AWS account number, Kinesis data stream name, and KCL application name respectively. KCL 3.x creates two more metadata tables in DynamoDB. For details about DynamoDB metadata tables created by KCL, see [DynamoDB metadata tables and load balancing in KCL](kcl-dynamoDB.md). If you use configurations to customize names of the metadata tables created by KCL, use those specified table names instead of KCL application name.
+
+**Note**
+The `DeleteTable` permission for the worker metrics and coordinator state tables is required only if you use the single table format. After the migration completes, you must manually delete the old tables. The `DeleteTable` permission allows you to perform this cleanup. For more information, see [Single table format for KCL](kcl-single-table-format.md).
+
+The following is an example policy document for a KCL consumer application.
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kinesis:DescribeStream",
+                "kinesis:DescribeStreamSummary",
+                "kinesis:RegisterStreamConsumer",
+                "kinesis:GetRecords",
+                "kinesis:GetShardIterator",
+                "kinesis:ListShards"
+            ],
+            "Resource": "arn:aws:kinesis:{{us-east-1}}:{{123456789012}}:stream/{{STREAM_NAME}}"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kinesis:SubscribeToShard",
+                "kinesis:DescribeStreamConsumer"
+            ],
+            "Resource": "arn:aws:kinesis:{{us-east-1}}:{{123456789012}}:stream/{{STREAM_NAME}}/consumer/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:CreateTable",
+                "dynamodb:DescribeTable",
+                "dynamodb:UpdateTable",
+                "dynamodb:GetItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:PutItem",
+                "dynamodb:DeleteItem",
+                "dynamodb:Scan"
+            ],
+            "Resource": [
+            "arn:aws:dynamodb:{{us-east-1}}:{{123456789012}}:table/{{KCL_APPLICATION_NAME}}"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:CreateTable",
+                "dynamodb:DescribeTable",
+                "dynamodb:GetItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:PutItem",
+                "dynamodb:DeleteItem",
+                "dynamodb:Scan"
+            ],
+            "Resource": [
+            "arn:aws:dynamodb:{{us-east-1}}:{{123456789012}}:table/{{KCL_APPLICATION_NAME-WorkerMetricStats}}",
+    "arn:aws:dynamodb:{{us-east-1}}:{{123456789012}}:table/{{KCL_APPLICATION_NAME-CoordinatorState}}"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:Query"
+            ],
+            "Resource": [
+            "arn:aws:dynamodb:{{us-east-1}}:{{123456789012}}:table/{{KCL_APPLICATION_NAME}}/index/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:PutMetricData"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+------
+
+Before you use this example policy, check the following items:
++ Replace REGION with your AWS Region (for example, us-east-1).
++ Replace ACCOUNT\_ID with your AWS account ID.
++ Replace STREAM\_NAME with the name of your Kinesis data stream.
++ Replace CONSUMER\_NAME with the name of your consumer, typically your application name when using KCL.
++ Replace KCL\_APPLICATION\_NAME with the name of your KCL application.

@@ -1,0 +1,140 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/eventbridge_example_eventbridge_RemoveTargets_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `RemoveTargets` with an AWS SDK or CLI
+<a name="eventbridge_example_eventbridge_RemoveTargets_section"></a>
+
+The following code examples show how to use `RemoveTargets`.
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/EventBridge#code-examples).
+Remove all of the targets for a rule using the rule name.
+
+```
+    /// <summary>
+    /// Delete an event rule by name.
+    /// </summary>
+    /// <param name="ruleName">The name of the event rule.</param>
+    /// <returns>True if successful.</returns>
+    public async Task<bool> RemoveAllTargetsFromRule(string ruleName)
+    {
+        var targetIds = new List<string>();
+        var request = new ListTargetsByRuleRequest()
+        {
+            Rule = ruleName
+        };
+        ListTargetsByRuleResponse targetsResponse;
+        do
+        {
+            targetsResponse = await _amazonEventBridge.ListTargetsByRuleAsync(request);
+            targetIds.AddRange(targetsResponse.Targets.Select(t => t.Id));
+            request.NextToken = targetsResponse.NextToken;
+
+        } while (targetsResponse.NextToken is not null);
+
+        var removeResponse = await _amazonEventBridge.RemoveTargetsAsync(
+            new RemoveTargetsRequest()
+            {
+                Rule = ruleName,
+                Ids = targetIds
+            });
+
+        if (removeResponse.FailedEntryCount > 0)
+        {
+            removeResponse.FailedEntries.ForEach(e =>
+            {
+                _logger.LogError(
+                    $"Failed to remove target {e.TargetId}: {e.ErrorMessage}, code {e.ErrorCode}");
+            });
+        }
+
+        return removeResponse.HttpStatusCode == HttpStatusCode.OK;
+    }
+```
++  For API details, see [RemoveTargets](https://docs.aws.amazon.com/goto/DotNetSDKV3/eventbridge-2015-10-07/RemoveTargets) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To remove a target for an event**
+This example removes the Amazon Kinesis stream named MyStream1 from being a target of the rule DailyLambdaFunction. When DailyLambdaFunction was created, this stream was set as a target with an ID of Target1:
+
+```
+aws events remove-targets --rule {{"DailyLambdaFunction"}} --ids {{"Target1"}}
+```
++  For API details, see [RemoveTargets](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/events/remove-targets.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/eventbridge#code-examples).
+Remove all of the targets for a rule by using the rule name.
+
+```
+    public static void deleteTargetsFromRule(EventBridgeClient eventBrClient, String eventRuleName) {
+        // First, get all targets that will be deleted.
+        ListTargetsByRuleRequest request = ListTargetsByRuleRequest.builder()
+                .rule(eventRuleName)
+                .build();
+
+        ListTargetsByRuleResponse response = eventBrClient.listTargetsByRule(request);
+        List<Target> allTargets = response.targets();
+
+        // Get all targets and delete them.
+        for (Target myTarget : allTargets) {
+            RemoveTargetsRequest removeTargetsRequest = RemoveTargetsRequest.builder()
+                    .rule(eventRuleName)
+                    .ids(myTarget.id())
+                    .build();
+
+            eventBrClient.removeTargets(removeTargetsRequest);
+            System.out.println("Successfully removed the target");
+        }
+    }
+```
++  For API details, see [RemoveTargets](https://docs.aws.amazon.com/goto/SdkForJavaV2/eventbridge-2015-10-07/RemoveTargets) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Kotlin ]
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/eventbridge#code-examples).
+
+```
+suspend fun deleteTargetsFromRule(eventRuleName: String?) {
+    // First, get all targets that will be deleted.
+    val request =
+        ListTargetsByRuleRequest {
+            rule = eventRuleName
+        }
+
+    EventBridgeClient.fromEnvironment { region = "us-east-1" }.use { eventBrClient ->
+        val response = eventBrClient.listTargetsByRule(request)
+        val allTargets = response.targets
+
+        // Get all targets and delete them.
+        if (allTargets != null) {
+            for (myTarget in allTargets) {
+                val removeTargetsRequest =
+                    RemoveTargetsRequest {
+                        rule = eventRuleName
+                        ids = listOf(myTarget.id.toString())
+                    }
+                eventBrClient.removeTargets(removeTargetsRequest)
+                println("Successfully removed the target")
+            }
+        }
+    }
+}
+```
++  For API details, see [RemoveTargets](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+------

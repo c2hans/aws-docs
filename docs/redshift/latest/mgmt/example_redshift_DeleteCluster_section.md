@@ -1,0 +1,293 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/example_redshift_DeleteCluster_section.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# Use `DeleteCluster` with an AWS SDK or CLI
+<a name="example_redshift_DeleteCluster_section"></a>
+
+The following code examples show how to use `DeleteCluster`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Getting started with provisioned data warehouse clusters](example_redshift_GettingStarted_039_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/Redshift#code-examples).
+
+```
+    /// <summary>
+    /// Delete an Amazon Redshift cluster without a final snapshot.
+    /// </summary>
+    /// <param name="clusterIdentifier">The identifier for the cluster.</param>
+    /// <returns>True if successful.</returns>
+    public async Task<bool> DeleteClusterWithoutSnapshotAsync(string clusterIdentifier)
+    {
+        try
+        {
+            var request = new DeleteClusterRequest
+            {
+                ClusterIdentifier = clusterIdentifier,
+                SkipFinalClusterSnapshot = true
+            };
+
+            var response = await _redshiftClient.DeleteClusterAsync(request);
+            Console.WriteLine($"The {clusterIdentifier} was deleted");
+            return true;
+        }
+        catch (ClusterNotFoundException ex)
+        {
+            Console.WriteLine($"Cluster not found: {ex.Message}");
+            return false;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Couldn't delete cluster. Here's why: {ex.Message}");
+            return false;
+        }
+    }
+```
++  For API details, see [DeleteCluster](https://docs.aws.amazon.com/goto/DotNetSDKV4/redshift-2012-12-01/DeleteCluster) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+Delete a Cluster with No Final Cluster SnapshotThis example deletes a cluster, forcing data deletion so no final cluster snapshot is created.Command:
+
+```
+aws redshift delete-cluster --cluster-identifier mycluster --skip-final-cluster-snapshot
+```
+Delete a Cluster, Allowing a Final Cluster SnapshotThis example deletes a cluster, but specifies a final cluster snapshot.Command:
+
+```
+aws redshift delete-cluster --cluster-identifier mycluster --final-cluster-snapshot-identifier myfinalsnapshot
+```
++  For API details, see [DeleteCluster](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/redshift/delete-cluster.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Go ]
+
+**SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/redshift#code-examples).
+
+```
+import (
+	"context"
+	"errors"
+	"log"
+	"time"
+
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/service/redshift"
+	"github.com/aws/aws-sdk-go-v2/service/redshift/types"
+)
+
+// RedshiftActions wraps Redshift service actions.
+type RedshiftActions struct {
+	RedshiftClient *redshift.Client
+}
+
+// DeleteCluster deletes the given cluster.
+func (actor RedshiftActions) DeleteCluster(ctx context.Context, clusterId string) (bool, error) {
+	input := redshift.DeleteClusterInput{
+		ClusterIdentifier:        aws.String(clusterId),
+		SkipFinalClusterSnapshot: aws.Bool(true),
+	}
+	_, err := actor.RedshiftClient.DeleteCluster(ctx, &input)
+	var opErr *types.ClusterNotFoundFault
+	if err != nil && errors.As(err, &opErr) {
+		log.Println("Cluster was not found. Where could it be?")
+		return false, err
+	} else if err != nil {
+		log.Printf("Failed to delete Redshift cluster: %v\n", err)
+		return false, err
+	}
+	waiter := redshift.NewClusterDeletedWaiter(actor.RedshiftClient)
+	err = waiter.Wait(ctx, &redshift.DescribeClustersInput{
+		ClusterIdentifier: aws.String(clusterId),
+	}, 5*time.Minute)
+	if err != nil {
+		log.Printf("Wait time exceeded for deleting cluster, continuing: %v\n", err)
+	}
+	log.Printf("The cluster %s was deleted\n", clusterId)
+	return true, nil
+}
+```
++  For API details, see [DeleteCluster](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/redshift#Client.DeleteCluster) in *AWS SDK for Go API Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/redshift#code-examples).
+Delete the cluster.
+
+```
+    /**
+     * Deletes a Redshift cluster asynchronously.
+     *
+     * @param clusterId the identifier of the Redshift cluster to be deleted
+     * @return a {@link CompletableFuture} that represents the asynchronous operation of deleting the Redshift cluster
+     */
+    public CompletableFuture<DeleteClusterResponse> deleteRedshiftClusterAsync(String clusterId) {
+        DeleteClusterRequest deleteClusterRequest = DeleteClusterRequest.builder()
+            .clusterIdentifier(clusterId)
+            .skipFinalClusterSnapshot(true)
+            .build();
+
+        return getAsyncClient().deleteCluster(deleteClusterRequest)
+            .whenComplete((response, exception) -> {
+                if (exception != null) {
+                    // Handle exceptions
+                    if (exception.getCause() instanceof RedshiftException) {
+                        logger.info("Error: {}", exception.getMessage());
+                    } else {
+                        logger.info("Unexpected error: {}", exception.getMessage());
+                    }
+                } else {
+                    // Handle successful response
+                    logger.info("The status is {}", response.cluster().clusterStatus());
+                }
+            });
+    }
+```
++  For API details, see [DeleteCluster](https://docs.aws.amazon.com/goto/SdkForJavaV2/redshift-2012-12-01/DeleteCluster) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/redshift#code-examples).
+Create the client.
+
+```
+import { RedshiftClient } from "@aws-sdk/client-redshift";
+// Set the AWS Region.
+const REGION = "REGION";
+//Set the Redshift Service Object
+const redshiftClient = new RedshiftClient({ region: REGION });
+export { redshiftClient };
+```
+Create the cluster.
+
+```
+// Import required AWS SDK clients and commands for Node.js
+import { DeleteClusterCommand } from "@aws-sdk/client-redshift";
+import { redshiftClient } from "./libs/redshiftClient.js";
+
+const params = {
+  ClusterIdentifier: "CLUSTER_NAME",
+  SkipFinalClusterSnapshot: false,
+  FinalClusterSnapshotIdentifier: "CLUSTER_SNAPSHOT_ID",
+};
+
+const run = async () => {
+  try {
+    const data = await redshiftClient.send(new DeleteClusterCommand(params));
+    console.log("Success, cluster deleted. ", data);
+    return data; // For unit tests.
+  } catch (err) {
+    console.log("Error", err);
+  }
+};
+run();
+```
++  For API details, see [DeleteCluster](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/redshift/command/DeleteClusterCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ Kotlin ]
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/redshift#code-examples).
+Delete the cluster.
+
+```
+suspend fun deleteRedshiftCluster(clusterId: String?) {
+    val request =
+        DeleteClusterRequest {
+            clusterIdentifier = clusterId
+            skipFinalClusterSnapshot = true
+        }
+
+    RedshiftClient.fromEnvironment { region = "us-west-2" }.use { redshiftClient ->
+        val response = redshiftClient.deleteCluster(request)
+        println("The status is ${response.cluster?.clusterStatus}")
+    }
+}
+```
++  For API details, see [DeleteCluster](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/redshift#code-examples).
+
+```
+class RedshiftWrapper:
+    """
+    Encapsulates Amazon Redshift cluster operations.
+    """
+
+    def __init__(self, redshift_client):
+        """
+        :param redshift_client: A Boto3 Redshift client.
+        """
+        self.client = redshift_client
+
+    def delete_cluster(self, cluster_identifier):
+        """
+        Deletes a cluster.
+
+        :param cluster_identifier: The cluster identifier.
+        """
+        try:
+            self.client.delete_cluster(
+                ClusterIdentifier=cluster_identifier, SkipFinalClusterSnapshot=True
+            )
+        except ClientError as err:
+            logging.error(
+                "Couldn't delete a cluster. Here's why: %s: %s",
+                err.response["Error"]["Code"],
+                err.response["Error"]["Message"],
+            )
+            raise
+```
+The following code instantiates the RedshiftWrapper object.
+
+```
+    client = boto3.client("redshift")
+    redhift_wrapper = RedshiftWrapper(client)
+```
++  For API details, see [DeleteCluster](https://docs.aws.amazon.com/goto/boto3/redshift-2012-12-01/DeleteCluster) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/rsh#code-examples).
+Delete the cluster.
+
+```
+    TRY.
+        " Example values: iv_cluster_identifier = 'my-redshift-cluster'
+        lo_rsh->deletecluster(
+          iv_clusteridentifier = iv_cluster_identifier
+          iv_skipfinalclustersnapshot = abap_true
+        ).
+        MESSAGE 'Redshift cluster deleted successfully.' TYPE 'I'.
+      CATCH /aws1/cx_rshclustnotfoundfault.
+        MESSAGE 'Cluster not found.' TYPE 'I'.
+      CATCH /aws1/cx_rshinvcluststatefault.
+        MESSAGE 'Invalid cluster state for deletion.' TYPE 'I'.
+    ENDTRY.
+```
++  For API details, see [DeleteCluster](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using this service with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

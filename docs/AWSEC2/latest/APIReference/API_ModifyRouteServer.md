@@ -1,0 +1,87 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyRouteServer.html
+---
+
+# ModifyRouteServer
+<a name="API_ModifyRouteServer"></a>
+
+Modifies the configuration of an existing route server.
+
+Amazon VPC Route Server simplifies routing for traffic between workloads that are deployed within a VPC and its internet gateways. With this feature, VPC Route Server dynamically updates VPC and internet gateway route tables with your preferred IPv4 or IPv6 routes to achieve routing fault tolerance for those workloads. This enables you to automatically reroute traffic within a VPC, which increases the manageability of VPC routing and interoperability with third-party workloads.
+
+Route server supports the follow route table types:
++ VPC route tables not associated with subnets
++ Subnet route tables
++ Internet gateway route tables
+
+Route server does not support route tables associated with virtual private gateways. To propagate routes into a transit gateway route table, use [Transit Gateway Connect](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-connect.html).
+
+For more information see [Dynamic routing in your VPC with VPC Route Server](https://docs.aws.amazon.com/vpc/latest/userguide/dynamic-routing-route-server.html) in the *Amazon VPC User Guide*.
+
+## Request Parameters
+<a name="API_ModifyRouteServer_RequestParameters"></a>
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
+
+ **DryRun**
+A check for whether you have the required permissions for the action without actually making the request and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
+Type: Boolean
+Required: No
+
+ **PersistRoutes**
+Specifies whether to persist routes after all BGP sessions are terminated.
++ enable: Routes will be persisted in FIB and RIB after all BGP sessions are terminated.
++ disable: Routes will not be persisted in FIB and RIB after all BGP sessions are terminated.
++ reset: If a route server has persisted routes due to all BGP sessions having ended, reset will withdraw all routes and reset route server to an empty FIB and RIB.
+Type: String
+Valid Values: `enable | disable | reset`
+Required: No
+
+ **PersistRoutesDuration**
+The number of minutes a route server will wait after BGP is re-established to unpersist the routes in the FIB and RIB. Value must be in the range of 1-5. Required if PersistRoutes is `enabled`.
+If you set the duration to 1 minute, then when your network appliance re-establishes BGP with route server, it has 1 minute to relearn it's adjacent network and advertise those routes to route server before route server resumes normal functionality. In most cases, 1 minute is probably sufficient. If, however, you have concerns that your BGP network may not be capable of fully re-establishing and re-learning everything in 1 minute, you can increase the duration up to 5 minutes.
+Type: Long
+Required: No
+
+ **RouteServerId**
+The ID of the route server to modify.
+Type: String
+Required: Yes
+
+ **SnsNotificationsEnabled**
+Specifies whether to enable SNS notifications for route server events. Enabling SNS notifications persists BGP status changes to an SNS topic provisioned by AWS.
+Type: Boolean
+Required: No
+
+## Response Elements
+<a name="API_ModifyRouteServer_ResponseElements"></a>
+
+The following elements are returned by the service.
+
+ **requestId**
+The ID of the request.
+Type: String
+
+ **routeServer**
+Information about the modified route server.
+Type: [RouteServer](API_RouteServer.md) object
+
+## Errors
+<a name="API_ModifyRouteServer_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+## See Also
+<a name="API_ModifyRouteServer_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyRouteServer)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyRouteServer)

@@ -1,0 +1,58 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/finding-aggregation-stop.html
+---
+
+# Stopping cross-Region aggregation
+<a name="finding-aggregation-stop"></a>
+
+**Note**
+The *aggregation Region* is now called the *home Region*. Some Security Hub CSPM API operations still use the older term aggregation Region.
+
+If you don't want AWS Security Hub CSPM to aggregate data, you can delete your finding aggregator. Alternatively, you can keep your finding aggregator but not link any AWS Regions to the home Region by updating the existing aggregator to the `NO_REGIONS` linking mode.
+
+To change your home Region, you must delete your current finding aggregator and create a new one.
+
+When you delete your finding aggregator, Security Hub CSPM stops aggregating data. It doesn't remove any existing aggregated data from the home Region.
+
+## Deleting the finding aggregator (console)
+<a name="finding-aggregation-stop-console"></a>
+
+You can delete your finding aggregator from the current home Region only.
+
+In Regions other than the home Region, the **Finding aggregation** panel on the Security Hub CSPM console displays a message that you must edit the configuration in the home Region. Choose this message to display a link to switch to the home Region.
+
+------
+#### [ Security Hub CSPM console ]
+
+**To stop cross-Region aggregation (console)**
+
+1. Open the AWS Security Hub CSPM console at [https://console.aws.amazon.com/securityhub/](https://console.aws.amazon.com/securityhub/).
+
+1. Ensure that you're signed in to your current home Region.
+
+1. In the Security Hub CSPM navigation menu, choose **Settings**, then choose **Regions**.
+
+1. Under **Finding aggregation**, choose **Edit**.
+
+1. Under **Aggregation Region**, choose **No aggregation Region**.
+
+1. Choose **Save**.
+
+1. On the confirmation dialog, in the confirmation field, type **Confirm**.
+
+1. Choose **Confirm**.
+
+------
+#### [ Security Hub CSPM API ]
+
+Use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteFindingAggregator.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_DeleteFindingAggregator.html) operation of the Security Hub CSPM API. If you're using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-finding-aggregator.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/delete-finding-aggregator.html) command.
+
+To identify the finding aggregator to delete, provide the finding aggregator ARN. To obtain the finding aggregator ARN, use the [https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListFindingAggregators.html) operation or [https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html](https://docs.aws.amazon.com/cli/latest/reference/securityhub/list-finding-aggregators.html) command.
+
+The following example deletes the finding aggregator. The command is run from the current home Region, which is US East (N. Virginia). This example is formatted for Linux, macOS, or Unix, and it uses the backslash (\\) line-continuation character to improve readability.
+
+```
+$aws securityhub delete-finding-aggregator {{arn:aws:securityhub:us-east-1:222222222222:finding-aggregator/123e4567-e89b-12d3-a456-426652340000}} --region {{us-east-1}}
+```
+
+------

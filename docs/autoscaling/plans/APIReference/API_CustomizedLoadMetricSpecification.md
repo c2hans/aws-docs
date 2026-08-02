@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/autoscaling/plans/APIReference/API_CustomizedLoadMetricSpecification.html
+---
+
+# CustomizedLoadMetricSpecification
+<a name="API_CustomizedLoadMetricSpecification"></a>
+
+Represents a CloudWatch metric of your choosing that can be used for predictive scaling.
+
+For predictive scaling to work with a customized load metric specification, AWS Auto Scaling needs access to the `Sum` and `Average` statistics that CloudWatch computes from metric data.
+
+When you choose a load metric, make sure that the required `Sum` and `Average` statistics for your metric are available in CloudWatch and that they provide relevant data for predictive scaling. The `Sum` statistic must represent the total load on the resource, and the `Average` statistic must represent the average load per capacity unit of the resource. For example, there is a metric that counts the number of requests processed by your Auto Scaling group. If the `Sum` statistic represents the total request count processed by the group, then the `Average` statistic for the specified metric must represent the average request count processed by each instance of the group.
+
+If you publish your own metrics, you can aggregate the data points at a given interval and then publish the aggregated data points to CloudWatch. Before AWS Auto Scaling generates the forecast, it sums up all the metric data points that occurred within each hour to match the granularity period that is used in the forecast (60 minutes).
+
+For information about terminology, available metrics, or how to publish new metrics, see [Amazon CloudWatch concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_concepts.html) in the *Amazon CloudWatch User Guide*.
+
+After creating your scaling plan, you can use the console to visualize forecasts for the specified metric. For more information, see [View scaling information for a resource](https://docs.aws.amazon.com/autoscaling/plans/userguide/gs-create-scaling-plan.html#gs-view-resource) in the *Scaling Plans User Guide*.
+
+## Contents
+<a name="API_CustomizedLoadMetricSpecification_Contents"></a>
+
+ ** MetricName **   <a name="autoscaling-Type-CustomizedLoadMetricSpecification-MetricName"></a>
+The name of the metric.
+Type: String
+Required: Yes
+
+ ** Namespace **   <a name="autoscaling-Type-CustomizedLoadMetricSpecification-Namespace"></a>
+The namespace of the metric.
+Type: String
+Required: Yes
+
+ ** Statistic **   <a name="autoscaling-Type-CustomizedLoadMetricSpecification-Statistic"></a>
+The statistic of the metric. The only valid value is `Sum`.
+Type: String
+Valid Values: `Sum`
+Required: Yes
+
+ ** Dimensions **   <a name="autoscaling-Type-CustomizedLoadMetricSpecification-Dimensions"></a>
+The dimensions of the metric.
+Conditional: If you published your metric with dimensions, you must specify the same dimensions in your customized load metric specification.
+Type: Array of [MetricDimension](API_MetricDimension.md) objects
+Required: No
+
+ ** Unit **   <a name="autoscaling-Type-CustomizedLoadMetricSpecification-Unit"></a>
+The unit of the metric.
+Type: String
+Required: No
+
+## See Also
+<a name="API_CustomizedLoadMetricSpecification_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-plans-2018-01-06/CustomizedLoadMetricSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-plans-2018-01-06/CustomizedLoadMetricSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-plans-2018-01-06/CustomizedLoadMetricSpecification)

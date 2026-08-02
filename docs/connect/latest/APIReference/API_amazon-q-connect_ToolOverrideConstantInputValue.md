@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ToolOverrideConstantInputValue.html
+---
+
+# ToolOverrideConstantInputValue
+<a name="API_amazon-q-connect_ToolOverrideConstantInputValue"></a>
+
+A constant input value for tool override.
+
+## Contents
+<a name="API_amazon-q-connect_ToolOverrideConstantInputValue_Contents"></a>
+
+ ** type **   <a name="connect-Type-amazon-q-connect_ToolOverrideConstantInputValue-type"></a>
+Override tool input value with constant values
+Type: String
+Valid Values: `STRING | NUMBER | JSON_STRING`
+Required: Yes
+
+ ** value **   <a name="connect-Type-amazon-q-connect_ToolOverrideConstantInputValue-value"></a>
+The constant input override value.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: Yes
+
+## See Also
+<a name="API_amazon-q-connect_ToolOverrideConstantInputValue_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/ToolOverrideConstantInputValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/ToolOverrideConstantInputValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/ToolOverrideConstantInputValue)

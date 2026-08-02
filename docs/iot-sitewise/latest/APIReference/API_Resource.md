@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Resource.html
+---
+
+# Resource
+<a name="API_Resource"></a>
+
+Contains an AWS IoT SiteWise Monitor resource ID for a portal or project.
+
+## Contents
+<a name="API_Resource_Contents"></a>
+
+ ** portal **   <a name="iotsitewise-Type-Resource-portal"></a>
+A portal resource.
+Type: [PortalResource](API_PortalResource.md) object
+Required: No
+
+ ** project **   <a name="iotsitewise-Type-Resource-project"></a>
+A project resource.
+Type: [ProjectResource](API_ProjectResource.md) object
+Required: No
+
+## See Also
+<a name="API_Resource_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/Resource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/Resource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/Resource)

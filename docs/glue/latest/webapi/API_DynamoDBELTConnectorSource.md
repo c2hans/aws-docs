@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_DynamoDBELTConnectorSource.html
+---
+
+# DynamoDBELTConnectorSource
+<a name="API_DynamoDBELTConnectorSource"></a>
+
+Specifies a DynamoDB ELT connector source for extracting data from DynamoDB tables.
+
+## Contents
+<a name="API_DynamoDBELTConnectorSource_Contents"></a>
+
+ ** Name **   <a name="Glue-Type-DynamoDBELTConnectorSource-Name"></a>
+The name of the DynamoDB ELT connector source.
+Type: String
+Pattern: `([^\r\n])*`
+Required: Yes
+
+ ** ConnectionOptions **   <a name="Glue-Type-DynamoDBELTConnectorSource-ConnectionOptions"></a>
+The connection options for the DynamoDB ELT connector source.
+Type: [DDBELTConnectionOptions](API_DDBELTConnectionOptions.md) object
+Required: No
+
+ ** OutputSchemas **   <a name="Glue-Type-DynamoDBELTConnectorSource-OutputSchemas"></a>
+Specifies the data schema for the DynamoDB ELT connector source.
+Type: Array of [GlueSchema](API_GlueSchema.md) objects
+Required: No
+
+## See Also
+<a name="API_DynamoDBELTConnectorSource_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/DynamoDBELTConnectorSource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/DynamoDBELTConnectorSource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/DynamoDBELTConnectorSource)

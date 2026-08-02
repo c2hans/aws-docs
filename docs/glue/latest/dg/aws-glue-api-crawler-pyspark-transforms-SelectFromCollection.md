@@ -1,0 +1,154 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-pyspark-transforms-SelectFromCollection.html
+---
+
+# SelectFromCollection class
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection"></a>
+
+Selects one `DynamicFrame` in a `DynamicFrameCollection`.
+
+## Example
+<a name="pyspark-SelectFromCollection-example"></a>
+
+This example uses `SelectFromCollection` to select a `DynamicFrame` from a `DynamicFrameCollection`.
+
+**Example dataset**
+
+The example selects two `DynamicFrames` from a `DynamicFrameCollection` called `split_rows_collection`. The following is the list of keys in `split_rows_collection`.
+
+```
+dict_keys(['high', 'low'])
+```
+
+**Example code**
+
+```
+# Example: Use SelectFromCollection to select
+# DynamicFrames from a DynamicFrameCollection
+
+from pyspark.context import SparkContext
+from awsglue.context import GlueContext
+from awsglue.transforms import SelectFromCollection
+
+# Create GlueContext
+sc = SparkContext.getOrCreate()
+glueContext = GlueContext(sc)
+
+# Select frames and inspect entries
+frame_low = SelectFromCollection.apply(dfc=split_rows_collection, key="low")
+frame_low.toDF().show()
+
+frame_high = SelectFromCollection.apply(dfc=split_rows_collection, key="high")
+frame_high.toDF().show()
+```
+
+### Output
+<a name="SelectFromCollection-example-output"></a>
+
+```
++---+-----+------------------------+-------------------------+
+| id|index|contact_details.val.type|contact_details.val.value|
++---+-----+------------------------+-------------------------+
+|  1|    0|                     fax|             202-225-3307|
+|  1|    1|                   phone|             202-225-5731|
+|  2|    0|                     fax|             202-225-3307|
+|  2|    1|                   phone|             202-225-5731|
+|  3|    0|                     fax|             202-225-3307|
+|  3|    1|                   phone|             202-225-5731|
+|  4|    0|                     fax|             202-225-3307|
+|  4|    1|                   phone|             202-225-5731|
+|  5|    0|                     fax|             202-225-3307|
+|  5|    1|                   phone|             202-225-5731|
+|  6|    0|                     fax|             202-225-3307|
+|  6|    1|                   phone|             202-225-5731|
+|  7|    0|                     fax|             202-225-3307|
+|  7|    1|                   phone|             202-225-5731|
+|  8|    0|                     fax|             202-225-3307|
+|  8|    1|                   phone|             202-225-5731|
+|  9|    0|                     fax|             202-225-3307|
+|  9|    1|                   phone|             202-225-5731|
+| 10|    0|                     fax|             202-225-6328|
+| 10|    1|                   phone|             202-225-4576|
++---+-----+------------------------+-------------------------+
+only showing top 20 rows
+
++---+-----+------------------------+-------------------------+
+| id|index|contact_details.val.type|contact_details.val.value|
++---+-----+------------------------+-------------------------+
+| 11|    0|                     fax|             202-225-6328|
+| 11|    1|                   phone|             202-225-4576|
+| 11|    2|                 twitter|           RepTrentFranks|
+| 12|    0|                     fax|             202-225-6328|
+| 12|    1|                   phone|             202-225-4576|
+| 12|    2|                 twitter|           RepTrentFranks|
+| 13|    0|                     fax|             202-225-6328|
+| 13|    1|                   phone|             202-225-4576|
+| 13|    2|                 twitter|           RepTrentFranks|
+| 14|    0|                     fax|             202-225-6328|
+| 14|    1|                   phone|             202-225-4576|
+| 14|    2|                 twitter|           RepTrentFranks|
+| 15|    0|                     fax|             202-225-6328|
+| 15|    1|                   phone|             202-225-4576|
+| 15|    2|                 twitter|           RepTrentFranks|
+| 16|    0|                     fax|             202-225-6328|
+| 16|    1|                   phone|             202-225-4576|
+| 16|    2|                 twitter|           RepTrentFranks|
+| 17|    0|                     fax|             202-225-6328|
+| 17|    1|                   phone|             202-225-4576|
++---+-----+------------------------+-------------------------+
+only showing top 20 rows
+```
+
+## Methods
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-_methods"></a>
++ [\_\_call\_\_](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-__call__)
++ [apply](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-apply)
++ [name](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-name)
++ [describeArgs](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeArgs)
++ [describeReturn](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeReturn)
++ [describeTransform](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeTransform)
++ [describeErrors](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeErrors)
++ [describe](#aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describe)
+
+## \_\_call\_\_(dfc, key, transformation\_ctx = "")
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-__call__"></a>
+
+Gets one `DynamicFrame` from a `DynamicFrameCollection`.
++ `dfc` – The `DynamicFrameCollection` that the `DynamicFrame` should be selected from (required).
++ `key` – The key of the `DynamicFrame` to select (required).
++ `transformation_ctx` – A unique string that is used to identify state information (optional).
+
+## apply(cls, \*args, \*\*kwargs)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-apply"></a>
+
+Inherited from `GlueTransform` [apply](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-apply).
+
+## name(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-name"></a>
+
+Inherited from `GlueTransform` [name](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-name).
+
+## describeArgs(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeArgs"></a>
+
+Inherited from `GlueTransform` [describeArgs](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeArgs).
+
+## describeReturn(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeReturn"></a>
+
+Inherited from `GlueTransform` [describeReturn](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeReturn).
+
+## describeTransform(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeTransform"></a>
+
+Inherited from `GlueTransform` [describeTransform](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeTransform).
+
+## describeErrors(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describeErrors"></a>
+
+Inherited from `GlueTransform` [describeErrors](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describeErrors).
+
+## describe(cls)
+<a name="aws-glue-api-crawler-pyspark-transforms-SelectFromCollection-describe"></a>
+
+Inherited from `GlueTransform` [describe](aws-glue-api-crawler-pyspark-transforms-GlueTransform.md#aws-glue-api-crawler-pyspark-transforms-GlueTransform-describe).

@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_ListProfileObjectTypeTemplateItem.html
+---
+
+# ListProfileObjectTypeTemplateItem
+<a name="API_connect-customer-profiles_ListProfileObjectTypeTemplateItem"></a>
+
+A ProfileObjectTypeTemplate in a list of ProfileObjectTypeTemplates.
+
+## Contents
+<a name="API_connect-customer-profiles_ListProfileObjectTypeTemplateItem_Contents"></a>
+
+ ** SourceName **   <a name="connect-Type-connect-customer-profiles_ListProfileObjectTypeTemplateItem-SourceName"></a>
+The name of the source of the object template.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `^[a-zA-Z0-9_-]+$`
+Required: No
+
+ ** SourceObject **   <a name="connect-Type-connect-customer-profiles_ListProfileObjectTypeTemplateItem-SourceObject"></a>
+The source of the object template.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `^[a-zA-Z0-9_-]+$`
+Required: No
+
+ ** TemplateId **   <a name="connect-Type-connect-customer-profiles_ListProfileObjectTypeTemplateItem-TemplateId"></a>
+A unique identifier for the object template.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `^[a-zA-Z0-9_-]+$`
+Required: No
+
+## See Also
+<a name="API_connect-customer-profiles_ListProfileObjectTypeTemplateItem_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/customer-profiles-2020-08-15/ListProfileObjectTypeTemplateItem)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/customer-profiles-2020-08-15/ListProfileObjectTypeTemplateItem)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/customer-profiles-2020-08-15/ListProfileObjectTypeTemplateItem)

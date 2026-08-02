@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_AssistantIntegrationConfiguration.html
+---
+
+# AssistantIntegrationConfiguration
+<a name="API_amazon-q-connect_AssistantIntegrationConfiguration"></a>
+
+The configuration information for the Amazon Q in Connect assistant integration.
+
+## Contents
+<a name="API_amazon-q-connect_AssistantIntegrationConfiguration_Contents"></a>
+
+ ** topicIntegrationArn **   <a name="connect-Type-amazon-q-connect_AssistantIntegrationConfiguration-topicIntegrationArn"></a>
+The Amazon Resource Name (ARN) of the integrated Amazon SNS topic used for streaming chat messages.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:[a-z-]+?:[a-z-]+?:[a-z0-9-]*?:([0-9]{12})?:[a-zA-Z0-9-:/]+`
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_AssistantIntegrationConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/AssistantIntegrationConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/AssistantIntegrationConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/AssistantIntegrationConfiguration)

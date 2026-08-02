@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/developerguide/guardduty-runtime-monitoring-enabled.html
+---
+
+# guardduty-runtime-monitoring-enabled
+<a name="guardduty-runtime-monitoring-enabled"></a>
+
+Checks if Runtime Monitoring is enabled for Amazon GuardDuty detector in your account or organization. The rule is NON\_COMPLIANT if Runtime Monitoring in GuardDuty is not enabled for your account or at least one member account in your organization.
+
+**Identifier:** GUARDDUTY\_RUNTIME\_MONITORING\_ENABLED
+
+**Resource Types:** AWS::GuardDuty::Detector
+
+**Trigger type:** Periodic
+
+**AWS Region:** All supported AWS regions except China (Beijing), Asia Pacific (Thailand), Asia Pacific (Malaysia), AWS GovCloud (US-East), AWS GovCloud (US-West), Mexico (Central), Asia Pacific (Taipei), Canada West (Calgary), China (Ningxia) Region
+
+**Parameters:**
+
+None
+
+## AWS CloudFormation template
+<a name="w2aac20c16c17b7d909c19"></a>
+
+To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

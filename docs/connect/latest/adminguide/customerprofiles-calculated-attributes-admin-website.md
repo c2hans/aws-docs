@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/customerprofiles-calculated-attributes-admin-website.html
+---
+
+# Getting started with calculated attributes in Connect Customer Customer Profiles
+<a name="customerprofiles-calculated-attributes-admin-website"></a>
+
+Use calculated attributes to define your own business logic to transform your customer profile data into actionable data points to personalize automated experiences, such as interactive voice responses.
+
+By using calculated attributes, you can identify key attributes about your customer’s past behavior, behavior patterns, and customer value.
+
+The topics in this section show you how to create, view, edit, and delete Calculated Attributes.
+
+**Topics**
++ [Create calculated attributes](calculated-attributes-admin-website-create.md)
++ [Set up event filters](calculated-attributes-admin-website-event-filters.md)
++ [View calculated attributes](calculated-attributes-admin-website-view.md)
++ [Edit calculated attributes](calculated-attributes-admin-website-edit.md)
++ [Delete calculated attributes](calculated-attributes-admin-website-delete.md)

@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-device-fleet.html
+---
+
+# Setup for Devices and Fleets in SageMaker Edge Manager
+<a name="edge-device-fleet"></a>
+
+Fleets are collections of logically grouped devices you can use to collect and analyze data. You can use SageMaker Edge Manager to operate machine learning models on a fleet of smart cameras, smart speakers, robots, and other edge devices.
+
+Create a fleet and register your devices either programmatically with the AWS SDK for Python (Boto3) or through the SageMaker AI console.
+
+**Topics**
++ [Create a Fleet](edge-device-fleet-create.md)
++ [Register a Device](edge-device-fleet-register.md)
++ [Check Status](edge-device-fleet-check-status.md)

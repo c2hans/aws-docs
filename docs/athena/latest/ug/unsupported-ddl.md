@@ -1,0 +1,58 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/ug/unsupported-ddl.html
+---
+
+# Unsupported DDL
+<a name="unsupported-ddl"></a>
+
+The following DDL statements are not supported by Athena SQL. For DDL statements supported for Iceberg tables in Athena, see [Evolve Iceberg table schema](querying-iceberg-evolving-table-schema.md) and [Perform other DDL operations on Iceberg tables](querying-iceberg-additional-operations.md).
++ ALTER INDEX
++ ALTER TABLE {{table\_name}} ARCHIVE PARTITION
++ ALTER TABLE {{table\_name}} CLUSTERED BY
++ ALTER TABLE {{table\_name}} DROP COLUMN (supported for Iceberg tables)
++ ALTER TABLE {{table\_name}} EXCHANGE PARTITION
++ ALTER TABLE {{table\_name}} NOT CLUSTERED
++ ALTER TABLE {{table\_name}} NOT SKEWED
++ ALTER TABLE {{table\_name}} NOT SORTED
++ ALTER TABLE {{table\_name}} NOT STORED AS DIRECTORIES
++ ALTER TABLE {{table\_name}} partitionSpec CHANGE COLUMNS
++ ALTER TABLE {{table\_name}} partitionSpec COMPACT
++ ALTER TABLE {{table\_name}} partitionSpec CONCATENATE
++ ALTER TABLE {{table\_name}} partitionSpec SET FILEFORMAT
++ ALTER TABLE {{table\_name}} RENAME TO (supported for Iceberg tables)
++ ALTER TABLE {{table\_name}} SET SERDEPROPERTIES
++ ALTER TABLE {{table\_name}} SET SKEWED LOCATION
++ ALTER TABLE {{table\_name}} SKEWED BY
++ ALTER TABLE {{table\_name}} TOUCH
++ ALTER TABLE {{table\_name}} UNARCHIVE PARTITION
++ COMMIT
++ CREATE INDEX
++ CREATE ROLE
++ CREATE TABLE {{table\_name}} LIKE {{existing\_table\_name}}
++ CREATE TEMPORARY MACRO
++ DELETE FROM
++ DESCRIBE DATABASE
++ DFS
++ DROP INDEX
++ DROP ROLE
++ DROP TEMPORARY MACRO
++ EXPORT TABLE
++ GRANT ROLE
++ IMPORT TABLE
++ LOCK DATABASE
++ LOCK TABLE
++ REVOKE ROLE
++ ROLLBACK
++ SHOW COMPACTIONS
++ SHOW CURRENT ROLES
++ SHOW GRANT
++ SHOW INDEXES
++ SHOW LOCKS
++ SHOW PRINCIPALS
++ SHOW ROLE GRANT
++ SHOW ROLES
++ SHOW STATS
++ SHOW TRANSACTIONS
++ START TRANSACTION
++ UNLOCK DATABASE
++ UNLOCK TABLE

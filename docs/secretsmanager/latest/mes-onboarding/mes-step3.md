@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/secretsmanager/latest/mes-onboarding/mes-step3.html
+---
+
+# Step 3: Launch your integration
+<a name="mes-step3"></a>
+
+Secrets Manager conducts joint testing with you prior to the launch. Based on the test results and receiving alignment with you, we will launch the integration. Secrets Manager sends an official communication with details about your new offering. AWS may send a launch announcement to its customers.

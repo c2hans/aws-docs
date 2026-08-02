@@ -1,0 +1,114 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_SHOW_TABLE.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# SHOW TABLE
+<a name="r_SHOW_TABLE"></a>
+
+Shows the definition of a table, including table attributes, table constraints, column attributes, column collation and column constraints. You can use the output of the SHOW TABLE statement to recreate the table.
+
+For more information on table creation, see [CREATE TABLE](r_CREATE_TABLE_NEW.md).
+
+## Syntax
+<a name="r_SHOW_TABLE-synopsis"></a>
+
+```
+SHOW TABLE [schema_name.]table_name
+```
+
+## Parameters
+<a name="r_SHOW_TABLE-parameters"></a>
+
+ *schema\_name*
+(Optional) The name of the related schema.
+
+ *table\_name*
+The name of the table to show.
+
+## Examples
+<a name="r_SHOW_TABLE-examples"></a>
+
+Following is an example of the SHOW TABLE output for the table `sales`.
+
+```
+show table sales;
+```
+
+```
+CREATE TABLE public.sales (
+salesid integer NOT NULL ENCODE az64,
+listid integer NOT NULL ENCODE az64 distkey,
+sellerid integer NOT NULL ENCODE az64,
+buyerid integer NOT NULL ENCODE az64,
+eventid integer NOT NULL ENCODE az64,
+dateid smallint NOT NULL,
+qtysold smallint NOT NULL ENCODE az64,
+pricepaid numeric(8,2) ENCODE az64,
+commission numeric(8,2) ENCODE az64,
+saletime timestamp without time zone ENCODE az64
+)
+DISTSTYLE KEY SORTKEY ( dateid );
+```
+
+Following is an example of the SHOW TABLE output for the table `category` in the schema `public`. The collation of the database is CASE\_SENSITIVE.
+
+```
+show table public.category;
+```
+
+```
+CREATE TABLE public.category (
+catid smallint NOT NULL distkey,
+catgroup character varying(10) ENCODE lzo COLLATE case_sensitive,
+catname character varying(10) ENCODE lzo COLLATE case_sensitive,
+catdesc character varying(50) ENCODE lzo COLLATE case_sensitive
+)
+DISTSTYLE KEY SORTKEY ( catid );
+```
+
+The following example creates table `foo` with a primary key.
+
+```
+create table foo(a int PRIMARY KEY, b int);
+```
+
+The SHOW TABLE results display the create statement with all properties of the `foo` table.
+
+```
+show table foo;
+```
+
+```
+CREATE TABLE public.foo (
+a integer NOT NULL ENCODE az64,
+b integer ENCODE az64, PRIMARY KEY (a)
+)
+DISTSTYLE AUTO;
+```
+
+In this example, we create a table where column `a` inherits the database's default CASE\_SENSITIVE collation, while `b` and `c` are explicitly set to CASE\_INSENSITIVE collation.
+
+```
+CREATE TABLE public.foo (
+a CHAR,
+b VARCHAR(10) COLLATE CASE_INSENSITIVE,
+c SUPER COLLATE CASE_INSENSITIVE
+);
+```
+
+The SHOW TABLE results display the create statement with all properties of the `foo` table.
+
+```
+show table public.foo;
+```
+
+```
+CREATE TABLE public.foo (
+a character(1) ENCODE lzo COLLATE case_sensitive,
+b character varying(10) ENCODE lzo COLLATE case_insensitive,
+c super COLLATE case_insensitive
+)
+DISTSTYLE AUTO;
+```

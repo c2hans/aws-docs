@@ -1,0 +1,228 @@
+---
+source_url: https://docs.aws.amazon.com/directoryservicedata/latest/DirectoryServiceDataAPIReference/API_DescribeGroup.html
+---
+
+# DescribeGroup
+<a name="API_DescribeGroup"></a>
+
+Returns information about a specific group.
+
+## Request Syntax
+<a name="API_DescribeGroup_RequestSyntax"></a>
+
+```
+POST /Groups/DescribeGroup?DirectoryId={{DirectoryId}} HTTP/1.1
+Content-type: application/json
+
+{
+   "OtherAttributes": [ "{{string}}" ],
+   "Realm": "{{string}}",
+   "SAMAccountName": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_DescribeGroup_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [DirectoryId](#API_DescribeGroup_RequestSyntax) **   <a name="directoryservicedata-DescribeGroup-request-uri-DirectoryId"></a>
+The Identifier (ID) of the directory associated with the group.
+Pattern: `d-[0-9a-f]{10}`
+Required: Yes
+
+## Request Body
+<a name="API_DescribeGroup_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [OtherAttributes](#API_DescribeGroup_RequestSyntax) **   <a name="directoryservicedata-DescribeGroup-request-OtherAttributes"></a>
+ One or more attributes to be returned for the group. For a list of supported attributes, see [Directory Service Data Attributes](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_data_attributes.html).
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 25 items.
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[A-Za-z*][A-Za-z-*]*`
+Required: No
+
+ ** [Realm](#API_DescribeGroup_RequestSyntax) **   <a name="directoryservicedata-DescribeGroup-request-Realm"></a>
+ The domain name that's associated with the group.
+ This parameter is optional, so you can return groups outside of your AWS Managed Microsoft AD domain. When no value is defined, only your AWS Managed Microsoft AD groups are returned.
+ This value is case insensitive.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+[.]?`
+Required: No
+
+ ** [SAMAccountName](#API_DescribeGroup_RequestSyntax) **   <a name="directoryservicedata-DescribeGroup-request-SAMAccountName"></a>
+ The name of the group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[^:;|=+"*?<>/\\,\[\]@]+`
+Required: Yes
+
+## Response Syntax
+<a name="API_DescribeGroup_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "DirectoryId": "string",
+   "DistinguishedName": "string",
+   "GroupScope": "string",
+   "GroupType": "string",
+   "OtherAttributes": {
+      "string" : { ... }
+   },
+   "Realm": "string",
+   "SAMAccountName": "string",
+   "SID": "string"
+}
+```
+
+## Response Elements
+<a name="API_DescribeGroup_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [DirectoryId](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-DirectoryId"></a>
+ The identifier (ID) of the directory that's associated with the group.
+Type: String
+Pattern: `d-[0-9a-f]{10}`
+
+ ** [DistinguishedName](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-DistinguishedName"></a>
+ The [distinguished name](https://learn.microsoft.com/en-us/windows/win32/ad/object-names-and-identities#distinguished-name) of the object.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+
+ ** [GroupScope](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-GroupScope"></a>
+ The scope of the AD group. For details, see [Active Directory security groups](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#group-scope).
+Type: String
+Valid Values: `DomainLocal | Global | Universal | BuiltinLocal`
+
+ ** [GroupType](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-GroupType"></a>
+ The AD group type. For details, see [Active Directory security group type](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups#how-active-directory-security-groups-work).
+Type: String
+Valid Values: `Distribution | Security`
+
+ ** [OtherAttributes](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-OtherAttributes"></a>
+ The attribute values that are returned for the attribute names that are included in the request.
+Type: String to [AttributeValue](API_AttributeValue.md) object map
+Map Entries: Maximum number of 25 items.
+Key Length Constraints: Minimum length of 1. Maximum length of 63.
+Key Pattern: `[A-Za-z*][A-Za-z-*]*`
+
+ ** [Realm](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-Realm"></a>
+ The domain name that's associated with the group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `([a-zA-Z0-9]+[\\.-])+([a-zA-Z0-9])+[.]?`
+
+ ** [SAMAccountName](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-SAMAccountName"></a>
+ The name of the group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[^:;|=+"*?<>/\\,\[\]@]+`
+
+ ** [SID](#API_DescribeGroup_ResponseSyntax) **   <a name="directoryservicedata-DescribeGroup-response-SID"></a>
+ The unique security identifier (SID) of the group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+
+## Errors
+<a name="API_DescribeGroup_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+ You don't have permission to perform the request or access the directory. It can also occur when the `DirectoryId` doesn't exist or the user, member, or group might be outside of your organizational unit (OU).
+ Make sure that you have the authentication and authorization to perform the action. Review the directory information in the request, and make sure that the object isn't outside of your OU.
+ ** Reason **
+ Reason the request was unauthorized.
+HTTP Status Code: 403
+
+ ** DirectoryUnavailableException **
+ The request could not be completed due to a problem in the configuration or current state of the specified directory.
+ ** Reason **
+ Reason the request failed for the specified directory.
+HTTP Status Code: 400
+
+ ** InternalServerException **
+ The operation didn't succeed because an internal error occurred. Try again later.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+ The resource couldn't be found.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+ The limit on the number of requests per second has been exceeded.
+ ** RetryAfterSeconds **
+ The recommended amount of seconds to retry after a throttling exception.
+HTTP Status Code: 429
+
+ ** ValidationException **
+ The request isn't valid. Review the details in the error message to update the invalid parameters or values in your request.
+ ** Reason **
+ Reason the request failed validation.
+HTTP Status Code: 400
+
+## Examples
+<a name="API_DescribeGroup_Examples"></a>
+
+### Example
+<a name="API_DescribeGroup_Example_1"></a>
+
+This example illustrates one usage of DescribeGroup.
+
+#### Sample Request
+<a name="API_DescribeGroup_Example_1_Request"></a>
+
+```
+{
+  "OtherAttributes": [
+    "displayName",
+    "description",
+    "objectGUID"
+  ],
+  "Realm": "example.domain.com",
+  "SAMAccountName": "DevOpsMail"
+}
+```
+
+#### Sample Response
+<a name="API_DescribeGroup_Example_1_Response"></a>
+
+```
+{
+  "DirectoryId": "d-926example",
+  "DistinguishedName": "DevOpsmail",
+  "GroupScope": "Global",
+  "GroupType": "Distribution",
+    "OtherAttributes": {
+      "displayName": {"S": "DevOps mailing list"},
+      "description": {"S": "A group for DevOps email."},
+      "objectGUID": {"S": "123456789"}
+    },
+  "SAMAccountName": "DevOpsMail",
+  "SID": "S-1-5-55-678"
+}
+```
+
+## See Also
+<a name="API_DescribeGroup_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/directory-service-data-2023-05-31/DescribeGroup)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/directory-service-data-2023-05-31/DescribeGroup)

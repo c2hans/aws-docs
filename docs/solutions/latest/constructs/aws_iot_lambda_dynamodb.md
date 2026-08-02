@@ -1,0 +1,166 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_iot_lambda_dynamodb.html
+---
+
+# aws-iot-lambda-dynamodb
+<a name="aws_iot_lambda_dynamodb"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_iot_lambda_dynamodb`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-iot-lambda-dynamodb`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.iotlambdadynamodb`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an AWS IoT topic rule, an AWS Lambda function and Amazon DynamoDB table with the least privileged permissions.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { IotToLambdaToDynamoDBProps, IotToLambdaToDynamoDB } from '@aws-solutions-constructs/aws-iot-lambda-dynamodb';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+
+const constructProps: IotToLambdaToDynamoDBProps = {
+  lambdaFunctionProps: {
+      code: lambda.Code.fromAsset(`lambda`),
+      runtime: lambda.Runtime.NODEJS_22_X,
+      handler: 'index.handler'
+  },
+  iotTopicRuleProps: {
+      topicRulePayload: {
+          ruleDisabled: false,
+          description: "Processing of DTC messages from the AWS Connected Vehicle Solution.",
+          sql: "SELECT * FROM 'connectedcar/dtc/#'",
+          actions: []
+      }
+  }
+};
+
+new IotToLambdaToDynamoDB(this, 'test-iot-lambda-dynamodb-stack', constructProps);
+```
+
+```
+from aws_solutions_constructs.aws_iot_lambda_dynamodb import IotToLambdaToDynamoDB
+from aws_cdk import (
+    aws_iot as iot,
+    aws_lambda as _lambda,
+    Stack
+)
+from constructs import Construct
+
+IotToLambdaToDynamoDB(self, 'test-iot-lambda-dynamodb-stack',
+            lambda_function_props=_lambda.FunctionProps(
+                code=_lambda.Code.from_asset('lambda'),
+                runtime=_lambda.Runtime.PYTHON_3_14,
+                handler='index.handler'
+            ),
+            iot_topic_rule_props=iot.CfnTopicRuleProps(
+                topic_rule_payload=iot.CfnTopicRule.TopicRulePayloadProperty(
+                    rule_disabled=False,
+                    description="Processing of DTC messages from the AWS Connected Vehicle Solution.",
+                    sql="SELECT * FROM 'connectedcar/dtc/#'",
+                    actions=[]
+                )
+            ))
+```
+
+```
+import software.constructs.Construct;
+import java.util.List;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awscdk.services.lambda.*;
+import software.amazon.awscdk.services.lambda.Runtime;
+import software.amazon.awscdk.services.iot.*;
+import software.amazon.awscdk.services.iot.CfnTopicRule.TopicRulePayloadProperty;
+import software.amazon.awsconstructs.services.iotlambdadynamodb.*;
+
+new IotToLambdaToDynamoDB(this, "test-iot-lambda-dynamodb-stack", new IotToLambdaToDynamoDBProps.Builder()
+        .lambdaFunctionProps(new FunctionProps.Builder()
+                .runtime(Runtime.NODEJS_22_X)
+                .code(Code.fromAsset("lambda"))
+                .handler("index.handler")
+                .build())
+        .iotTopicRuleProps(new CfnTopicRuleProps.Builder()
+                .topicRulePayload(new TopicRulePayloadProperty.Builder()
+                        .ruleDisabled(false)
+                        .description("Processing of DTC messages from the AWS Connected Vehicle Solution.")
+                        .sql("SELECT * FROM 'connectedcar/dtc/#'")
+                        .actions(List.of())
+                        .build())
+                .build())
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| existingLambdaObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Optional - instance of an existing Lambda Function object, providing both this and `lambdaFunctionProps` will cause an error. |
+| lambdaFunctionProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.FunctionProps.html)  | Optional - user provided props to override the default props for the Lambda function. Providing both this and `existingLambdaObj` causes an error. |
+| iotTopicRuleProps |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iot.CfnTopicRuleProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iot.CfnTopicRuleProps.html)  | User provided props to override the default props |
+| dynamoTableProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.TableProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.TableProps.html)  | Optional user provided props to override the default props for the DynamoDB Table. Providing both this and `existingTableInterface` causes an error. |
+| tablePermissions? |  `string`  | Optional table permissions to grant to the Lambda function. One of the following may be specified: `All`, `Read`, `ReadWrite`, `Write`. |
+| existingTableObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html)  | Existing instance of DynamoDB table object, providing both this and `dynamoTableProps` will cause an error.<br />StableEnvironmentVariableName? |
+|  `string`  | Optional Name for the Lambda function environment variable set to the name of the DynamoDB table. Default: DDB\_TABLE\_NAME | existingVpc? |
+|  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html)  | An optional, existing VPC into which this pattern should be deployed. When deployed in a VPC, the Lambda function will use ENIs in the VPC to access network resources and a Gateway Endpoint will be created in the VPC for Amazon DynamoDB. If an existing VPC is provided, the `deployVpc` property cannot be `true`. This uses `ec2.IVpc` to allow clients to supply VPCs that exist outside the stack using the [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.Vpc.html#static-fromwbrlookupscope-id-options](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.Vpc.html#static-fromwbrlookupscope-id-options) method. | vpcProps? |
+|  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.VpcProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.VpcProps.html)  | Optional user-provided properties to override the default properties for the new VPC. `enableDnsHostnames`, `enableDnsSupport`, `natGateways` and `subnetConfiguration` are set by the pattern, so any values for those properties supplied here will be overridden. If `deployVpc` is not `true` then this property will be ignored. | deployVpc? |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| iotTopicRule |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iot.CfnTopicRule.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iot.CfnTopicRule.html)  | Returns an instance of iot.CfnTopicRule created by the construct |
+| lambdaFunction |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Returns an instance of lambda.Function created by the construct |
+| dynamoTable |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html)  | Returns an instance of dynamodb.Table created by the construct |
+| vpc? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_ec2.IVpc.html)  | Returns an interface on the VPC used by the pattern (if any). This may be a VPC created by the pattern or the VPC supplied to the pattern constructor. |
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon IoT Rule
+<a name="_amazon_iot_rule"></a>
++ Configure least privilege access IAM role for Amazon IoT
+
+### AWS Lambda Function
+<a name="_aws_lambda_function"></a>
++ Configure limited privilege access IAM role for Lambda function
++ Enable reusing connections with Keep-Alive for NodeJs Lambda function
++ Enable X-Ray Tracing
++ Set Environment Variables
+  + AWS\_NODEJS\_CONNECTION\_REUSE\_ENABLED (for Node 10.x and higher functions)
+
+### Amazon DynamoDB Table
+<a name="_amazon_dynamodb_table"></a>
++ Set the billing mode for DynamoDB Table to On-Demand (Pay per request)
++ Enable server-side encryption for DynamoDB Table using AWS managed KMS Key
++ Creates a partition key called "id" for DynamoDB Table
++ Retain the Table when deleting the CloudFormation stack
++ Enable continuous backups and point-in-time recovery
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing the IoT rule, Lambda function, DynamoDB table, log group and IAM role created by the construct](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-iot-lambda-dynamodb.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-iot-lambda-dynamodb) for this pattern to view the code, read/create issues and pull requests and more.

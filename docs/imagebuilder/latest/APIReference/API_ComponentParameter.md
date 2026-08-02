@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/imagebuilder/latest/APIReference/API_ComponentParameter.html
+---
+
+# ComponentParameter
+<a name="API_ComponentParameter"></a>
+
+Contains a key/value pair that sets the named component parameter.
+
+## Contents
+<a name="API_ComponentParameter_Contents"></a>
+
+ ** name **   <a name="imagebuilder-Type-ComponentParameter-name"></a>
+The name of the component parameter to set.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^\x00]+`
+Required: Yes
+
+ ** value **   <a name="imagebuilder-Type-ComponentParameter-value"></a>
+Sets the value for the named component parameter.
+Type: Array of strings
+Length Constraints: Minimum length of 0.
+Pattern: `[^\x00]*`
+Required: Yes
+
+## See Also
+<a name="API_ComponentParameter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/imagebuilder-2019-12-02/ComponentParameter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/imagebuilder-2019-12-02/ComponentParameter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/imagebuilder-2019-12-02/ComponentParameter)

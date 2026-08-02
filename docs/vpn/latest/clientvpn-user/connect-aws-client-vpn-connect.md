@@ -1,0 +1,87 @@
+---
+source_url: https://docs.aws.amazon.com/vpn/latest/clientvpn-user/connect-aws-client-vpn-connect.html
+---
+
+# Connect to an AWS Client VPN endpoint using an AWS provided client
+<a name="connect-aws-client-vpn-connect"></a>
+
+You can connect to a Client VPN endpoint using the AWS provided client, which is supported on Windows, macOS, and Ubuntu. The AWS provided client also supports up to five concurrent connections as well as OpenVPN directives.
+
+**Topics**
++ [Support for concurrent connections](#support-multi)
++ [OpenVPN directives](#support-openvpn)
+
+## Security
+<a name="support-security"></a>
+
+Security is the highest priority in the AWS provided client. We regularly release patches to improve the security posture of the application. The AWS provided client includes several unique security features compared to other OpenVPN clients, including SAML authentication, Client Routes Enforcement, and device settings monitoring.
+
+While the AWS provided client is designed to mitigate threats originating from misconfigured or compromised network environment, it is not responsible for modifying the environment or eliminating the external threats at their source. The AWS provided client relies on the customers to maintain a secure and well-configured environment. This includes:
++ Preventing unauthorized modification or abuse by local users
++ Restricting administrative privileges to trusted users
++ Maintaining up-to-date security patches
+
+## Support for concurrent connections using an AWS provided client
+<a name="support-multi"></a>
+
+The AWS provided client allows to connect to multiple concurrent sessions. This is helpful if you need access to resources across multiple AWS environments and have different endpoints for those resources. For example, you might need access to a database in an environment at an endpoint that's different from the endpoint you're currently connected to, but you don't want to disconnect the current connection. To enable your AWS provided client to connect to current sessions, download the configuration file that your administrator created for each endpoint, and then and create a connection profile for each file. Using the AWS provided client, you can then connect to multiple sessions without disconnecting from any session currently open. This is supported for AWS provided clients only. For the steps to connect to concurrent sessions, see the following:
++  [Connect using the AWS provided client for Windows](client-vpn-connect-windows-connecting-how.md)
++  [Connect using the AWS provided client for macOS](client-vpn-connect-macos-connecting-how.md)
++  [Connect using the AWS provided client for Linux](client-vpn-connect-linux-connecting.md)
+
+When connecting to multiple endpoints, Client VPN implements checks to ensure there are no conflicts with other open endpoint connections — for example, if two sessions have conflicting CIDR blocks or routing policies; or, if you're already connected with a full tunnel connection. If the check finds conflicts, a connection won't be established until you either choose a different connection that isn't in conflict with the open connection, or you disconnect from the open session that's causing the conflict.
+
+Concurrent DNS connections are allowed. The DNS server of one of the DNS-enabled connections will be applied. Depending on the DNS server, you might be prompted for authentication during that reconnection.
+
+**Note**
+The maximum number of allowed concurrent sessions is five.
+
+## OpenVPN directives
+<a name="support-openvpn"></a>
+
+The AWS provided client supports the following OpenVPN directives. For more information about these directives, see the documentation at the [OpenVPN website](https://openvpn.net/).
++ auth-federate
++ auth-nocache
++ auth-retry
++ auth-user-pass
++ block-outside-dns
++ ca
++ cert
++ cipher
++ client
++ connect-retry
++ connect-retry-max
++ cryptoapicert
++ dev
++ dev-type
++ bb
++ dhcp-option
++ ifconfig-ipv6
++ inactive
++ keepalive
++ key
++ mssfix
++ nobind
++ persist-key
++ persist-tun
++ ping
++ ping-exit
++ ping-restart
++ proto
++ pull
++ pull-filter
++ rcvbuf
++ remote
++ remote-cert-tls
++ remote-random-hostname
++ reneg-sec
++ resolv-retry
++ route
++ route-ipv6
++ server-poll-timeout
++ static-challenge
++ tap-sleep
++ tun-mtu
++ tun-mtu-extra
++ verb
++ verify-x509-name

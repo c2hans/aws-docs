@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/network-type-validated-clients-memcached.html
+---
+
+# Validated clients with Memcached
+<a name="network-type-validated-clients-memcached"></a>
+
+The following clients have specifically been validated to work with all supported network type configurations for Memcached.
+
+Validated Clients:
++ [AWS ElastiCache Cluster Client Memcached for Php](https://github.com/awslabs/aws-elasticache-cluster-client-memcached-for-php) – [Version \*3.6.2](https://github.com/awslabs/aws-elasticache-cluster-client-memcached-for-php/tree/v3.2.0)
++ [AWS ElastiCache Cluster Client Memcached for Java](https://github.com/awslabs/aws-elasticache-cluster-client-memcached-for-java) – Latest master on Github

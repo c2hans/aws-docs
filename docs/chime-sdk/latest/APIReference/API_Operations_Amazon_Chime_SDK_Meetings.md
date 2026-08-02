@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Meetings.html
+---
+
+# Amazon Chime SDK Meetings
+<a name="API_Operations_Amazon_Chime_SDK_Meetings"></a>
+
+The following actions are supported by Amazon Chime SDK Meetings:
++  [BatchCreateAttendee](API_meeting-chime_BatchCreateAttendee.md)
++  [BatchUpdateAttendeeCapabilitiesExcept](API_meeting-chime_BatchUpdateAttendeeCapabilitiesExcept.md)
++  [CreateAttendee](API_meeting-chime_CreateAttendee.md)
++  [CreateMeeting](API_meeting-chime_CreateMeeting.md)
++  [CreateMeetingWithAttendees](API_meeting-chime_CreateMeetingWithAttendees.md)
++  [DeleteAttendee](API_meeting-chime_DeleteAttendee.md)
++  [DeleteMeeting](API_meeting-chime_DeleteMeeting.md)
++  [GetAttendee](API_meeting-chime_GetAttendee.md)
++  [GetMeeting](API_meeting-chime_GetMeeting.md)
++  [ListAttendees](API_meeting-chime_ListAttendees.md)
++  [ListTagsForResource](API_meeting-chime_ListTagsForResource.md)
++  [StartMeetingTranscription](API_meeting-chime_StartMeetingTranscription.md)
++  [StopMeetingTranscription](API_meeting-chime_StopMeetingTranscription.md)
++  [TagResource](API_meeting-chime_TagResource.md)
++  [UntagResource](API_meeting-chime_UntagResource.md)
++  [UpdateAttendeeCapabilities](API_meeting-chime_UpdateAttendeeCapabilities.md)

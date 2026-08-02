@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_BedrockGuardrail.html
+---
+
+# BedrockGuardrail
+<a name="API_BedrockGuardrail"></a>
+
+Contains information about a Bedrock guardrail associated with a finding.
+
+## Contents
+<a name="API_BedrockGuardrail_Contents"></a>
+
+ ** arn **   <a name="guardduty-Type-BedrockGuardrail-arn"></a>
+The ARN of the Bedrock guardrail.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Pattern: `arn:aws(-[^:]+)?:bedrock:[a-z0-9-]{1,20}:[0-9]{12}:guardrail/[a-z0-9]+`
+Required: No
+
+ ** version **   <a name="guardduty-Type-BedrockGuardrail-version"></a>
+The version of the Bedrock guardrail.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 8.
+Pattern: `(([1-9][0-9]{0,7})|(DRAFT)|(ENFORCED))`
+Required: No
+
+## See Also
+<a name="API_BedrockGuardrail_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/guardduty-2017-11-28/BedrockGuardrail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/guardduty-2017-11-28/BedrockGuardrail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/guardduty-2017-11-28/BedrockGuardrail)

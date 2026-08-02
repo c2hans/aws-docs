@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Event.html
+---
+
+# Event
+<a name="API_Event"></a>
+
+What occurs to start an action.
+
+## Contents
+<a name="API_Event_Contents"></a>
+
+ ** RevisionPublished **   <a name="dataexchange-Type-Event-RevisionPublished"></a>
+What occurs to start the revision publish action.
+Type: [RevisionPublished](API_RevisionPublished.md) object
+Required: No
+
+## See Also
+<a name="API_Event_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dataexchange-2017-07-25/Event)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dataexchange-2017-07-25/Event)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dataexchange-2017-07-25/Event)

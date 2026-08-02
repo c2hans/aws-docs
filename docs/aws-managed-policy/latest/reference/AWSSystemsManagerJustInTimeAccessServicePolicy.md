@@ -1,0 +1,266 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSystemsManagerJustInTimeAccessServicePolicy.html
+---
+
+# AWSSystemsManagerJustInTimeAccessServicePolicy
+<a name="AWSSystemsManagerJustInTimeAccessServicePolicy"></a>
+
+**Description**: Provides access to AWS resources managed or used by the AWS Systems Manager just in time access framework.
+
+`AWSSystemsManagerJustInTimeAccessServicePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWSSystemsManagerJustInTimeAccessServicePolicy-how-to-use"></a>
+
+This policy is attached to a service-linked role that allows the service to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+<a name="AWSSystemsManagerJustInTimeAccessServicePolicy-details"></a>
++ **Type**: Service-linked role policy
++ **Creation time**: April 21, 2025, 20:07 UTC
++ **Edited time:** February 12, 2026, 18:01 UTC
++ **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSSystemsManagerJustInTimeAccessServicePolicy`
+
+## Policy version
+<a name="AWSSystemsManagerJustInTimeAccessServicePolicy-version"></a>
+
+**Policy version:** v9 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWSSystemsManagerJustInTimeAccessServicePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "AllowOpsItemReplication",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:CreateOpsItem"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:opsitem/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}",
+          "aws:RequestTag/SystemsManagerJustInTimeNodeAccessManaged" : "Replica"
+        },
+        "ForAllValues:StringEquals" : {
+          "aws:TagKeys" : [
+            "SystemsManagerJustInTimeNodeAccessManaged"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AllowOpsItemReplicationTagging",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:AddTagsToResource"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:opsitem/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:RequestTag/SystemsManagerJustInTimeNodeAccessManaged" : "Replica"
+        },
+        "ForAllValues:StringEquals" : {
+          "aws:TagKeys" : [
+            "SystemsManagerJustInTimeNodeAccessManaged"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AllowAutomationExecutionTagging",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:AddTagsToResource"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:automation-execution/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:RequestTag/SystemsManagerJustInTimeNodeAccessManaged" : "true"
+        },
+        "ForAllValues:StringEquals" : {
+          "aws:TagKeys" : [
+            "SystemsManagerJustInTimeNodeAccessManaged"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AllowOpsItemManagement",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:GetOpsItem",
+        "ssm:UpdateOpsItem"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:opsitem/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowRetrieveDocument",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:GetDocument",
+        "ssm:DescribeDocument"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:document/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "ssm:DocumentType" : [
+            "ManualApprovalPolicy",
+            "AutoApprovalPolicy"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AllowDescriptions",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:DescribeOpsItems",
+        "ssm:DescribeSessions",
+        "ssm:ListDocuments"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AllowListTagsForManagedInstances",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:ListTagsForResource"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:managed-instance/*"
+      ]
+    },
+    {
+      "Sid" : "AllowListSSMGUIConnections",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm-guiconnect:ListConnections"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AllowIdentityStoreActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "identitystore:ListGroupMembershipsForMember",
+        "identitystore:DescribeUser",
+        "identitystore:GetGroupId",
+        "identitystore:GetUserId"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AllowSSODirectoryActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso-directory:DescribeUsers",
+        "sso-directory:IsMemberInGroup"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AllowSSOInstanceActions",
+      "Effect" : "Allow",
+      "Action" : [
+        "sso:ListInstances",
+        "sso:DescribeRegisteredRegions",
+        "sso:ListDirectoryAssociations"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AllowDescribingEC2Tags",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DescribeTags"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AllowPublishingCloudWatchMetrics",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudwatch:PutMetricData"
+      ],
+      "Resource" : [
+        "*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "cloudwatch:namespace" : "AWS/SSM/JustInTimeAccess"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowKmsAccessViaIdentityCenter",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "ArnLike" : {
+          "kms:EncryptionContext:aws:sso:instance-arn" : "arn:*:sso:::instance/*"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "sso.*.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "AllowKmsAccessViaIdentityStore",
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:Decrypt"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "ArnLike" : {
+          "kms:EncryptionContext:aws:identitystore:identitystore-arn" : "arn:*:identitystore::*:identitystore/*"
+        },
+        "StringLike" : {
+          "kms:ViaService" : "identitystore.*.amazonaws.com"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWSSystemsManagerJustInTimeAccessServicePolicy-learn-more"></a>
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

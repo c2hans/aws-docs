@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/ops-ml-problem-framing.html
+---
+
+# ML problem framing
+<a name="ops-ml-problem-framing"></a>
+
+**Topics**
++ [MLOPS02-BP01 Establish ML roles and responsibilities](mlops02-bp01.md)
++ [MLOPS02-BP02 Prepare an ML profile template](mlops02-bp02.md)
++ [MLOPS02-BP03 Establish model improvement strategies](mlops02-bp03.md)
++ [MLOPS02-BP04 Establish a lineage tracker system](mlops02-bp04.md)
++ [MLOPS02-BP05 Establish feedback loops across ML lifecycle phases](mlops02-bp05.md)
++ [MLOPS02-BP06 Review fairness and explainability](mlops02-bp06.md)

@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/firehose/latest/dev/configure-source.html
+---
+
+# Configure source settings
+<a name="configure-source"></a>
+
+You can configure the source settings based on the source that you choose to send information to a Firehose stream from console. You can configure source settings for Amazon MSK and Amazon Kinesis Data Streams as the source. There are no source settings available for Direct PUT as the source.

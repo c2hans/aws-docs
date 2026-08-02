@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/appendix-f-optimizing-storage-cost-and-data-lifecycle-management.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Appendix F: Optimizing storage cost and data lifecycle management
+<a name="appendix-f-optimizing-storage-cost-and-data-lifecycle-management"></a>
+
+ Filtering the data files to be transferred to Amazon Simple Storage Service (Amazon S3) minimizes storage cost. In a production laboratory, unnecessary data can account for up to 10% of the total data produced. Consider optimizing storage by writing instrument run data to an Amazon S3 bucket configured for Infrequent Access (IA) then archive the data to Glacier Deep Archive.
+
+ Enable data lifecycle management to optimize storage costs. Identify your Amazon S3 storage access patterns to optimally configure your S3 bucket lifecycle policy. Use Amazon S3 analytics *storage class analysis* to analyze your storage access patterns. After storage class analysis observes the access patterns of a filtered set of data over a period of time, you can use the analysis results to improve your lifecycle policies. For genomics data, the key metric is identifying the amount of data retrieved for an observation period of at least 30 days. Knowing the amount of data that was retrieved for a given observation period helps you decide the length of time to keep data in infrequent access before archiving.
+
+****
+ For example, a customer performs genomics sequencing on-premises where each run contains six samples for a given scientific study. The run produces 600GB of Binary Base Call (BCL) file data that is transferred, using AWS DataSync, from on-premises to a bucket in Amazon S3, where objects are written using the Amazon S3 Standard-Infrequent Access storage tier. Demultiplexing and secondary analysis are run producing six 100GB FastQ files and one 1GB Variant Call File (VCF), all stored in the same S3 bucket. The BCL files, FastQ files and VCF files are tarred and archived to Glacier Deep Archive after 90 days. A copy of the VCF files remain in the infrequent access tier for twelve months since VCF files are frequently used for a year. After a year, they are deleted from the S3 bucket. Upon request, an entire study is restored from Glacier to Infrequent Access, making the data available in the original S3 bucket, and through the Storage Gateway. To request a restore of a study, the customer attempts to retrieve the data through the Storage Gateway which triggers a restore action. An email is sent to the person that requested the restore when the data is available in the Infrequent Access bucket and through the Storage Gateway. You can learn more about automating data restore from AWS Glacier in [Automate restore of archived objects through AWS Storage Gateway](https://aws.amazon.com/blogs/storage/automate-restore-of-archived-objects-through-aws-storage-gateway/).

@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateAccountSendingEnabled.html
+---
+
+# UpdateAccountSendingEnabled
+<a name="API_UpdateAccountSendingEnabled"></a>
+
+Enables or disables email sending across your entire Amazon SES account in the current AWS Region. You can use this operation in conjunction with Amazon CloudWatch alarms to temporarily pause email sending across your Amazon SES account in a given AWS Region when reputation metrics (such as your bounce or complaint rates) reach certain thresholds.
+
+You can execute this operation no more than once per second.
+
+## Request Parameters
+<a name="API_UpdateAccountSendingEnabled_RequestParameters"></a>
+
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+ ** Enabled **
+Describes whether email sending is enabled or disabled for your Amazon SES account in the current AWS Region.
+Type: Boolean
+Required: No
+
+## Errors
+<a name="API_UpdateAccountSendingEnabled_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+## See Also
+<a name="API_UpdateAccountSendingEnabled_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/email-2010-12-01/UpdateAccountSendingEnabled)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/email-2010-12-01/UpdateAccountSendingEnabled)

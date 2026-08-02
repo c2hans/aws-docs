@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-lens/document-revisions.html
+---
+
+# Document revisions
+<a name="document-revisions"></a>
+
+To be notified about updates to this whitepaper, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Initial publication](#document-revisions) | Container Build Lens first published. | October 20, 2022 |

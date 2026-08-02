@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/developerguide/data-source-operations.html
+---
+
+# Data source operations
+<a name="data-source-operations"></a>
+
+With data source operations, you can perform actions on data sources. For more information, see the following API operations.
+
+**Topics**
++ [Data source permissions](data-source-permissions.md)
++ [CreateDataSource](create-data-source.md)
++ [DeleteDataSource](delete-data-source.md)
++ [DescribeDataSource](describe-data-source.md)
++ [ListDataSources](list-data-sources.md)
++ [UpdateDataSource](update-data-source.md)

@@ -1,0 +1,60 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/public-sector-cloud-transformation/budgeting-and-cost-optimization.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Budgeting and cost optimization
+<a name="budgeting-and-cost-optimization"></a>
+
+## Understanding Total Cost of Ownership
+<a name="understanding-total-cost-of-ownership-tco-and-government-workload-assessment-gwa"></a>
+
+Determining total cost of ownership (TCO) for a cloud migration can be challenging when evaluating what-if scenarios, over-provisioning, outdated servers, legacy applications, or spreadsheets of stale data. There are many indirect and difficult to calculate costs such as downtime and lack of productivity. It also requires finding time to dive into your IT Infrastructure to figure out what you have and if you need it. To avoid spending more time on this project, many organizations simply lift and shift all of their assets to the cloud. The issue with the lift-and-shift strategy is it will likely increase your TCO, which defeats one of the main reasons for migrating to the cloud – saving money.
+
+When migrating to AWS, many organizations fail to consider the benefits of rightsizing before migrating their workloads. If your infrastructure is in the cloud and you have rightsized your assets properly, the resources you need for peak utilization will be there when needed, and in addition, you do not have to pay for more resources than you need. For this reason, a TCO analysis is essential for a successful cloud migration.
+
+Running a TCO analysis on your assets (physical machines, servers, labor, storage, software licenses, and data centers) is vital to understanding what you are paying for your current IT infrastructure and how that translates into the pricing for a cloud environment. Migrating to the cloud without making a migration plan can actually increase your monthly spending. It is never a good thing to receive a bill that is higher than you have budgeted, but a TCO assessment can help prevent this from happening. For more information, see [Cloud economics: the value of a TCO assessment](https://aws.amazon.com/blogs/publicsector/cloud-economics-value-tco-assessment/).
+
+## Understanding Government Workload Assessment (GWA)
+<a name="government-workload-assessment-gwa"></a>
+
+The GWA is a research engagement that identifies the potential benefits to the government organizations if they re-architect to the AWS Cloud. These organizations will be enabled to plan their cloud transformation based on year-over-year workload forecasts, complementary analyses and recommendations provided by AWS subject matter experts.
+
+Governments and public sector organizations are hesitant to undertake large-scale cloud migration and transformation projects because they have significant unknowns regarding their current total IT estate. They do not have visibility into the scale of potential cost savings achievable with a move to the cloud. This impedes their readiness to start any transformation process. Customers have sought AWS assistance to efficiently gather data, produce forecasts, and demonstrate savings over time – activities which led to successful outcomes on TCO analyses. GWA has the capability to detail the potential benefits (such as cost savings), migration options, and infrastructure considerations of a government-scale cloud transformation with a suitable degree of certainty.
+
+GWA is a free service, provided to the customers seeking whole-of-government cloud transformations. The core output of this engagement will be a customer-facing report containing both organization-specific and whole-of-government cloud adoption forecasts; a TCO analysis; and recommendations for migration- and/or infrastructure-related solutions. This report will accelerate transformation by clearly articulating organization-specific cost savings opportunities, and is designed to be a compelling asset for champions of cloud transformation within the government.
+
+GWA will present to the customer the following benefits:
++  High-level understanding of the customer current IT estate (such as servers, storage, usage).
++  Potential cost benefits from its conversion (infrastructure migration) to AWS.
++  Whole-of-government style of assessment. GWA is not about taking a snapshot in time with a well-defined workload for assessment, it is about knowing the unknown and extrapolate over a 10-year period to plan a longer-term transformation that includes several entities under the government umbrella.
++  GWA will be provided to the customer at no cost.
+
+Following is a high-level overview of the GWA engagement process:
++  **Program kick-off** — Formal kick-off with the program sponsor to agree on the targeted organizations under the assessment and marshal the support of the necessary stakeholders (for example, CIOs and technical staff).
++  **Data collection** — Collect the information from each entity under the assessment about the current IT estate, applications and plans for the next five years. AWS utilizes Migration Evaluator (Formerly TSO Logic) software to analyze the compute footprint, including server configuration, utilization, and annual costs to operate.
++  **Data analysis** — Validate assumptions with the sponsor, aggregate and extrapolate the data to produce a whole-of-government perspective.
++  **Deliverables presentation** — Presenting the final report, which will include the following:
++  A usage estimation for each organization under the assessment, along with the extrapolated whole-of- government estimation.
++  A full list of GWA assumptions signed off by all relevant parties.
++  A cloud economics showcase to demonstrate the real business benefits of moving to the cloud.
+
+## Cost optimization
+<a name="cost-optimization"></a>
+
+Cloud cost optimization improves forecasting and cost predictability and provides visibility into usage patterns to right size for organizations’ specific needs and can help identify mismanaged resources, reserving capacity for higher discounts, and right-sizing services to scale. One place to start is to look for unused resources. Often a temporary compute instance is *spun-up *to perform a function, and forgotten when the job is complete. As an example, AWS estimates that by using automated instance scheduling, customers can lower costs up to 70% when shutting down non-production instances outside of work hours.
+
+What are some other common oversights customers make that can drive up their cloud spend? Avoid the following missteps:
++  **Orphaned resources** — Often customers mistakenly set up compute or storage instances without using auto-scaling or other monitoring tools. This is common with dev/test environments because of their temporary nature. However, it is not uncommon for customers to have large storage pools or database workloads orphaned and consuming valuable financial resources.
++  **Misconfigured storage resources** — Storage can cause pitfalls for customers. Customers forget to release their storage resources from their compute instances, and their storage costs continue despite the compute instances being terminated. Another common mistake is the misalignment of data types and storage class. Often customers will allocate warm or cold storage into local or pools of higher-performing data storage. Right-sizing storage by data type and usage can reduce your associated costs by up to 50%.
++  **Over-provisioned resources** — Right-sizing is the process of matching instance types and sizes to performance and capacity requirements at the lowest possible cost. A key cloud cost optimization priority includes identifying such instances and consolidating computing jobs into fewer instances. In the past, administrators often over-provisioned so they would have capacity for a spike in traffic. By right-sizing workloads and using automation, AWS customers have seen up to 36% in cost savings.
++  **Incorrect pricing plans** — Many organizations do not use the cloud pricing plans that best align to their usage requirements. AWS offers multiple pricing models options such as [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html), which enable you to request spare computing capacity for up to 90% off the On-Demand price. [Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html) also provide a significant discount compared to On-Demand pricing. For more information, see [Instance purchasing options.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-purchasing-options.html)
++  **Overlooking newer technologies** — AWS routinely updates its service portfolio, and these new technologies offer unique advances in productivity, and can potentially reduce your cloud spend. Some customers can benefit from re-platforming their existing deployments with newer cloud services. For example, a customer could replace their hosted monitoring services with [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), or they could replace traditional compute instances with a serverless implementation to save significant costs.
+
+AWS provides a set of out-of-the-box cost management tools to help you manage, monitor, and optimize your costs. These key services and solutions to help you manage your cloud spend include:
++  **[Migration Evaluator](https://aws.amazon.com/migration-evaluator/)** — To assist potential customers with planning a migration, TSO Logic (an AWS company) provides data-driven Total Cost of Ownership (TCO) and cost modelling analysis, so customers can plan for their ideal future state on AWS.
++  **[AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)** — Gives you the ability to set custom alerts for when your costs or usage exceed your budgeted threshold. You can also use AWS Budgets to set reservation utilization or coverage targets and receive alerts when your utilization drops below defined parameters. Reservation alerts are supported for [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/?ec2-whats-new.sort-by=item.additionalFields.postDateTime&ec2-whats-new.sort-order=desc) (Amazon EC2), [Amazon Relational Database Service](https://aws.amazon.com/rds/) (Amazon RDS), [Amazon Redshift](https://aws.amazon.com/redshift/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc), [Amazon ElastiCache](https://aws.amazon.com/elasticache/), and [Amazon OpenSearch Service](https://aws.amazon.com/elasticsearch-service/) (OpenSearch Service).
++  **[AWS Cost & Usage Report](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting/)** — Contains the most comprehensive set of AWS cost and usage data available. The AWS Cost & Usage Report lists AWS usage for each service category used by an account and its [AWS Identity and Access Management](https://aws.amazon.com/iam/) (IAM) users in hourly or daily line items, as well as any tags that you have activated for cost allocation purposes.
++  **[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)** — Helps visualize and manage your AWS costs and usage over time. A set of default reports are included to help you quickly gain insight into your cost drivers and usage trends. Use forecasting to get a better idea of what your costs and usage may look like in the future.
++  **[AWS Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/)** — Since 2013, AWS customers have viewed over 2.6 million best-practice recommendations and realized over $300M by using AWS Cloud cost optimization tools. AWS Trusted Advisor provides you near real-time guidance to help you provision your resources, following AWS best practices. Trusted Advisor helps optimize your entire AWS infrastructure to increase security and performance and reduce your overall costs. For more information, [Watch a technical walkthrough of the service and console.](https://www.youtube.com/watch?v=i0IkKN9NoPk)

@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/codecs-containers-mpeg2.html
+---
+
+# Video: MPEG-2 (H.262) support
+<a name="codecs-containers-mpeg2"></a>
+
+MPEG-2 is supported in the following variations.
+
+| Direction | Chroma Sampling | Bit Depth | Profile/Format | Level | License Requirement |
+| --- | --- | --- | --- | --- | --- |
+| Input | 4:2:0, 4:2:2 | 8-bit | Simple, Main, 422, IMX/D-10 | Low, Main, High1440, High | N/A |
+| Output | 4:2:0, 4:2:2 | 8-bit | Simple, Main, 422, IMX/D-10 | Low, Main, High1440, High | N/A  |

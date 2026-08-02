@@ -1,0 +1,57 @@
+---
+source_url: https://docs.aws.amazon.com/iot-fleetwise/latest/APIReference/API_ModelManifestSummary.html
+---
+
+# ModelManifestSummary
+<a name="API_ModelManifestSummary"></a>
+
+Information about a vehicle model (model manifest). You can use the [ListModelManifests](API_ListModelManifests.md) API operation to return this information about multiple vehicle models.
+
+## Contents
+<a name="API_ModelManifestSummary_Contents"></a>
+
+ ** creationTime **   <a name="iotfleetwise-Type-ModelManifestSummary-creationTime"></a>
+The time the vehicle model was created, in seconds since epoch (January 1, 1970 at midnight UTC time).
+Type: Timestamp
+Required: Yes
+
+ ** lastModificationTime **   <a name="iotfleetwise-Type-ModelManifestSummary-lastModificationTime"></a>
+The time the vehicle model was last updated, in seconds since epoch (January 1, 1970 at midnight UTC time).
+Type: Timestamp
+Required: Yes
+
+ ** arn **   <a name="iotfleetwise-Type-ModelManifestSummary-arn"></a>
+The Amazon Resource Name (ARN) of the vehicle model.
+Type: String
+Required: No
+
+ ** description **   <a name="iotfleetwise-Type-ModelManifestSummary-description"></a>
+A brief description of the vehicle model.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[^\u0000-\u001F\u007F]+`
+Required: No
+
+ ** name **   <a name="iotfleetwise-Type-ModelManifestSummary-name"></a>
+The name of the vehicle model.
+Type: String
+Required: No
+
+ ** signalCatalogArn **   <a name="iotfleetwise-Type-ModelManifestSummary-signalCatalogArn"></a>
+The ARN of the signal catalog associated with the vehicle model.
+Type: String
+Required: No
+
+ ** status **   <a name="iotfleetwise-Type-ModelManifestSummary-status"></a>
+The state of the vehicle model. If the status is `ACTIVE`, the vehicle model can't be edited. If the status is `DRAFT`, you can edit the vehicle model.
+Type: String
+Valid Values: `ACTIVE | DRAFT | INVALID | VALIDATING`
+Required: No
+
+## See Also
+<a name="API_ModelManifestSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotfleetwise-2021-06-17/ModelManifestSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotfleetwise-2021-06-17/ModelManifestSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotfleetwise-2021-06-17/ModelManifestSummary)

@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/docusign-monitor-support.html
+---
+
+# AWS Glue support for Docusign Monitor
+<a name="docusign-monitor-support"></a>
+
+AWS Glue supports Docusign Monitor as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Docusign Monitor.
+
+**Supported as a target?**
+No.
+
+**Supported Docusign Monitor API versions**
+The following Docusign Monitor API versions are supported:
++ v2.0

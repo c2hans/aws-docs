@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awsconnectorservice.html
+---
+
+# Data retrieval APIs for AWS Connector Service
+<a name="awsconnectorservice"></a>
+
+AWS Connector Service provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="awsconnector-GetConnectorHealth"></a>[https://docs.aws.amazon.com/server-migration-service/latest/userguide/prereqs.html#connector-permissions](https://docs.aws.amazon.com/server-migration-service/latest/userguide/prereqs.html#connector-permissions) | Retrieves all health metrics that were published from the Server Migration Connector. | Read |
+| <a name="awsconnector-ValidateConnectorId"></a>[https://docs.aws.amazon.com/server-migration-service/latest/userguide/prereqs.html#connector-permissions](https://docs.aws.amazon.com/server-migration-service/latest/userguide/prereqs.html#connector-permissions) | Validates Server Migration Connector Id that was registered with AWS Connector Service. | Read |

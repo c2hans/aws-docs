@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/install-server/oct-get-dns.html
+---
+
+# get-dns
+<a name="oct-get-dns"></a>
+
+The **get-dns** command returns the DNS (Domain Name Server) IP address.
+
+**Syntax**
+
+```
+Outpost>get-dns
+```
+
+**Parameters**
+This command has no parameters.
+
+**Example output: Success**
+
+```
+Outpost> get-dns
+---
+dns_address: {{8.8.8.8}}
+success: true
+```

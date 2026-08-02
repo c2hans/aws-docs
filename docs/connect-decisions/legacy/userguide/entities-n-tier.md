@@ -1,0 +1,54 @@
+---
+source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/entities-n-tier.html
+---
+
+# N-Tier Visibility
+<a name="entities-n-tier"></a>
+
+The table below list the data entities and columns used by N-Tier Visibility.
+
+**Note**
+**How to read the table:**
+**Required** – The column name is mandatory in your dataset and you must populate the column name with values.
+**Optional** – The column name is optional. For enhanced feature output, it is recommended to add the column name with values.
+**Not required** – Data entity not required.
+
+- ** [trading\_partner](organization-trading-partner-entity.md) **
+  - **Column:** id / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** description / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** company\_id / **Is the column used by N-Tier Visibility?:** Optional
+  - **Column:** tpartner\_type / **Is the column used by N-Tier Visibility?:** Required – When you ingest data from SAP or EDI, the default value for string is SCN\_RESERVED\_NO\_VALUE\_PROVIDED. When you upload data using the Amazon S3 connector, you must enter a value or use SCN\_RESERVED\_NO\_VALUE\_PROVIDED for successful ingestion.
+  - **Column:** geo\_id / **Is the column used by N-Tier Visibility?:** Required – When you ingest data from SAP or EDI, the default value for string is SCN\_RESERVED\_NO\_VALUE\_PROVIDED. When you upload data using the Amazon S3 connector, you must enter a value or use SCN\_RESERVED\_NO\_VALUE\_PROVIDED for successful ingestion.
+  - **Column:** eff\_end\_date / **Is the column used by N-Tier Visibility?:** Required – You must enter a value for eff\_start\_date and eff\_end\_date. If you don't have a value, enter **1900-01-01 00:00:00** for eff\_start\_date, and **9999-12-31 23:59:59** for eff\_end\_date.
+  - **Column:** eff\_start\_date / **Is the column used by N-Tier Visibility?:** Required – You must enter a value for eff\_start\_date and eff\_end\_date. If you don't have a value, enter **1900-01-01 00:00:00** for eff\_start\_date, and **9999-12-31 23:59:59** for eff\_end\_date.
+
+- ** [trading\_partner\_poc](organization-trading-partner-poc-entity.md) **
+  - **Column:** tpartner\_id / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** email / **Is the column used by N-Tier Visibility?:** Required
+
+- ** [product](product-product-entity.md) **
+  - **Column:** id
+  - **Is the column used by N-Tier Visibility?:** Required – Data entity is optional but id is used to generate Partner Network View.
+
+- ** [product\_hierarchy](product-hierarchy-entity.md) **
+  - **Column:** id
+
+- ** [site](network-site-entity.md) **
+  - **Column:** id
+
+- ** [sourcing\_rules](planning-sourcing-rules-entity.md) **
+  - **Column:** sourcing\_rule\_id
+  - **Is the column used by N-Tier Visibility?:** Required – Data entity is optional but sourcing\_rule\_id is used to generate Partner Network View.
+
+- ** [supply\_plan](supply-plan-entity.md) **
+  - **Column:** supply\_plan\_id / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** snapshot\_date / **Is the column used by N-Tier Visibility?:** Optional
+  - **Column:** creation\_date / **Is the column used by N-Tier Visibility?:** Optional
+  - **Column:** tpartner\_id / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** product\_id / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** to\_site\_id / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** from\_site\_id / **Is the column used by N-Tier Visibility?:** Optional
+  - **Column:** plan\_quantity / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** plan\_type / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** plan\_need\_by\_date / **Is the column used by N-Tier Visibility?:** Required
+  - **Column:** quantity\_uom / **Is the column used by N-Tier Visibility?:** Optional

@@ -1,0 +1,54 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/userguide/patching-service-commitments.html
+---
+
+End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
+
+# Patching service commitments
+<a name="patching-service-commitments"></a>
+
+Based on your type of infrastructure deployment, and criticality of the update, we provide service commitments for critical security updates for mutable and immutable infrastructures, and important updates for mutable and immutable infrastructures.
+
+## Standard patching
+<a name="p-service-commit-mutable"></a>
+
+These are AMS service commitments for standard patching.
+
+**Standard patching, mutable infrastructure (in-place patching)**
+
+| Event/Action | Service commitment measurement |
+| --- | --- |
+| Important Updates are released in a month. | Clock starts |
+| Fourteen days from when the standard patch notification is created, AMS notifies you of upcoming planned patching through a service notification and by email for each stack. The service notification includes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/patching-service-commitments.html) | Clock stops after service notification is sent.  |
+| You test the impact of the updates and approve or reject the RFC. If you do not reply within 14 days or you reject the patching in your response to the service notification, no action is taken.<br />If you take longer than 14 days to test, and want the updates to be applied after the 14-day period, submit a service request for a new patch RFC based on the details of the previous RFC. | If you don't approve or reply within 14 days, the pending change is canceled and the service commitment for the updates is not applicable. |
+| If you approve the service notification within 14 days, AMS applies the updates.<br />You can choose to exclude specific updates from an RFC by specifying the updates to be excluded in your response to the service notification. | The clock starts if you approve service notification within 14 days of the receipt. The clock stops after the update installation has been attempted. |
+| AMS sends a service notification to you of the outcome of each update that was attempted. The service notification includes the following details:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/patching-service-commitments.html) | Not applicable. |
+| In case of failed updates, AMS performs an analysis to understand the cause of failure and communicates the outcome of the analysis to you. If the failure is attributable to AMS, AMS retries the updates if within the maintenance window, otherwise AMS creates service notifications for the failed instance-update combination and waits for your instructions on a maintenance window.  | Not applicable. |
+| For failures attributable to you, submit a service request for a new patch RFC to update the instances. | Not applicable. |
+
+## Critical patching
+<a name="p-service-commit-immutable"></a>
+
+These are AMS service commitments for critical security updates.
+
+**Critical security updates, mutable infrastructure**
+
+| Event/Action | Service commitment measurement |
+| --- | --- |
+| CSU is released. | Clock starts |
+| AMS notifies you of the patch RFC through a service notification (which also sends an email) for each stack. The service notification includes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/patching-service-commitments.html) | The clock stops after the service notification is sent. |
+| You test the updates listed in the RFC, and approve or reject the RFC within 10 days by replying to the service notification.<br />You provide a specific maintenance window (per stack) for installing the updates. Maintenance windows specified that are within 24 hours of reply to the service notification may be rescheduled based on available capacity.<br />If you don't reply within 10 days, or if you reject the patch RFC, the pending action is canceled.<br />If you want to apply the updates after the 14-day period, submit a service request for a new patch RFC based on the details of the previous RFC. | If you don't approve or reply within 14 days, the pending change is canceled and the service commitment for the update is not applicable. |
+| If you approve the service notification, AMS applies the updates.<br />For multiple updates, you can choose to exclude specific updates from the change by specifying the updates to be excluded in your response to the service notification. | If the desired maintenance window is not within the service commitment time frame, the service commitment for the update is missed only if the RFC is not run within the desired maintenance window.  |
+| AMS sends a service notification to you of the outcome of each update that was applied. The service notification includes the following details:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/patching-service-commitments.html) | Not applicable. |
+| In case of failed updates, AMS performs an analysis to understand the cause of failure and communicates the outcome of the analysis to you. If the failure is attributable to AMS, AMS retries the updates if within the maintenance window, otherwise AMS creates service notifications for the failed instance-update combination and waits for your instructions on a new maintenance window.  | Not applicable. |
+| For failures attributable to you, submit a service request for a new patch RFC to update the instances. | Not applicable. |
+
+**Critical security updates, immutable infrastructure**
+
+| Event/Action | Service commitment measurement |
+| --- | --- |
+| CSU is released. | Clock starts |
+| AMS notifies you of the following via a service notification:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/patching-service-commitments.html) | Clock continues to run. |
+| AMS releases updated AMIs in managed account. | Clock stops. |
+| If you approve the service notification, AMS applies the updates.<br />AMS notifies you of the AMIs shared in your account, through a service notification and by email. | Not applicable. |
+| If testing the new AMIs takes longer than the allotted time (one week), you can submit a service request to AMS to update your Auto Scaling groups with the new AMS AMI (as is). If you want to modify the new AMS AMI with your configurations, use an RFC with the Management \| Other \| Other \| Update CT (ct-0xdawir96cy7k) to request that we update your Auto Scaling groups.  | Not applicable. |

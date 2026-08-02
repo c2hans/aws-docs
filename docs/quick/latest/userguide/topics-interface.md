@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-interface.html
+---
+
+# Topic workspace
+<a name="topics-interface"></a>
+
+|  |
+| --- |
+|  Applies to:  Enterprise Edition  |
+
+|  |
+| --- |
+|    Intended audience:  Amazon Quick administrators and authors  |
+
+After you create a topic, or when you choose an existing topic from the list on the **Topics** page, the topic opens to that topic's workspace. Four tabs appear here that you can use as described in the following sections. Quick Sight provides a guided workflow for topics. You can step out of the guided workflow and come back to it later, without disrupting your work.
+
+## Summary
+<a name="topics-interface-summary"></a>
+
+The **Summary** tab has three important areas:
++ **Suggestions** – Suggestions provide step-by-step guidance for how you can improve a topic. These steps help you understand how to create better-performing topics.
+
+  To follow a suggestion, choose the action button in the Suggestion banner and follow the recommended steps.
+
+  Currently, there are eight preset suggestions that is offered in the order shown by the following table. After you complete a step for a suggestion, a new suggestion is offered when you return to the **Summary** tab.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/topics-interface.html)
++ **Metrics and key performance indicators (KPIs) on topic engagement and performance** – In this section, you can see how your readers engage with your topics and what feedback and ratings they give on the answers provided. You can view engagement for all the questions users asked, or select a specific question. You can also change the time span of the metrics from one year down to one week.
+
+  For more information, see [Reviewing Quick Sight topic performance and feedback](topics-performance.md).
++ **Datasets** – This section shows the datasets that were used to create the topic. In this section, you can add additional datasets or import datasets from existing dashboards. You can also edit the metadata for a topic dataset, set a data refresh schedule, change the name of the dataset, and more. For more information, see [Working with datasets in an Quick Sight topic](topics-data.md).
+
+## Data
+<a name="topics-interface-data"></a>
+
+The **Data** tab shows all the fields included in the topic. Here you configure your topic metadata to make your topic natural-language-friendly and to improve your topic performance. For more information, see [Making Quick Sight topics natural-language-friendly](topics-natural-language.md).
+
+## User activity
+<a name="topics-interface-user"></a>
+
+This tab shows all the questions that your topic receives and the overall feedback for each question. You can see an overview of how many questions were asked and what percentage of them were positive and negative. You can filter by feedback and whether someone left a comment with their feedback. For more information, see [Reviewing Quick Sight topic performance and feedback](topics-performance.md).
+
+## Verified answers
+<a name="topics-interface-answers"></a>
+
+*Verified answers* are questions that you have preconfigured visuals for. You can create a verified answer to a question by asking the question in the search bar and then marking it as reviewed. By using the **Verified Answers** tab, you can review your verified answers and the feedback they receive by your users.

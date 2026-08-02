@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_MessageTemplateOrderField.html
+---
+
+# MessageTemplateOrderField
+<a name="API_amazon-q-connect_MessageTemplateOrderField"></a>
+
+The message template fields to order the message template query results by. The following is the list of supported field names:
++ name
++ description
++ channel
++ channelSubtype
++ language
++ qualifier
++ createdTime
++ lastModifiedTime
++ lastModifiedBy
++ groupingConfiguration.criteria
++ groupingConfiguration.values
+
+## Contents
+<a name="API_amazon-q-connect_MessageTemplateOrderField_Contents"></a>
+
+ ** name **   <a name="connect-Type-amazon-q-connect_MessageTemplateOrderField-name"></a>
+The name of the message template.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: Yes
+
+ ** order **   <a name="connect-Type-amazon-q-connect_MessageTemplateOrderField-order"></a>
+The order at which the message templates are sorted by.
+Type: String
+Valid Values: `ASC | DESC`
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_MessageTemplateOrderField_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/MessageTemplateOrderField)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/MessageTemplateOrderField)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/MessageTemplateOrderField)

@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/online-register/latest/data-formats/awselementalsupportcontent.html
+---
+
+# Data retrieval APIs for AWS Elemental Support Content
+<a name="awselementalsupportcontent"></a>
+
+AWS Elemental Support Content provides the following APIs for data retrieval.
+
+****
+
+| Actions | Description | Access level |
+| --- | --- | --- |
+| <a name="elemental-support-content-Query"></a>[https://docs.aws.amazon.com/elemental-appliances-software](https://docs.aws.amazon.com/elemental-appliances-software) | Search support content | Read |

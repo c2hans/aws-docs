@@ -1,0 +1,86 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyVerifiedAccessTrustProvider.html
+---
+
+# ModifyVerifiedAccessTrustProvider
+<a name="API_ModifyVerifiedAccessTrustProvider"></a>
+
+Modifies the configuration of the specified AWS Verified Access trust provider.
+
+## Request Parameters
+<a name="API_ModifyVerifiedAccessTrustProvider_RequestParameters"></a>
+
+The following parameters are for this specific action. For more information about required and optional parameters that are common to all actions, see [Common Query Parameters](CommonParameters.md).
+
+ **ClientToken**
+A unique, case-sensitive token that you provide to ensure idempotency of your modification request. For more information, see [Ensuring idempotency](https://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-idempotency.html).
+Type: String
+Required: No
+
+ **Description**
+A description for the Verified Access trust provider.
+Type: String
+Required: No
+
+ **DeviceOptions**
+The options for a device-based trust provider. This parameter is required when the provider type is `device`.
+Type: [ModifyVerifiedAccessTrustProviderDeviceOptions](API_ModifyVerifiedAccessTrustProviderDeviceOptions.md) object
+Required: No
+
+ **DryRun**
+Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is `DryRunOperation`. Otherwise, it is `UnauthorizedOperation`.
+Type: Boolean
+Required: No
+
+ **NativeApplicationOidcOptions**
+The OpenID Connect (OIDC) options.
+Type: [ModifyVerifiedAccessNativeApplicationOidcOptions](API_ModifyVerifiedAccessNativeApplicationOidcOptions.md) object
+Required: No
+
+ **OidcOptions**
+The options for an OpenID Connect-compatible user-identity trust provider.
+Type: [ModifyVerifiedAccessTrustProviderOidcOptions](API_ModifyVerifiedAccessTrustProviderOidcOptions.md) object
+Required: No
+
+ **SseSpecification**
+The options for server side encryption.
+Type: [VerifiedAccessSseSpecificationRequest](API_VerifiedAccessSseSpecificationRequest.md) object
+Required: No
+
+ **VerifiedAccessTrustProviderId**
+The ID of the Verified Access trust provider.
+Type: String
+Required: Yes
+
+## Response Elements
+<a name="API_ModifyVerifiedAccessTrustProvider_ResponseElements"></a>
+
+The following elements are returned by the service.
+
+ **requestId**
+The ID of the request.
+Type: String
+
+ **verifiedAccessTrustProvider**
+Details about the Verified Access trust provider.
+Type: [VerifiedAccessTrustProvider](API_VerifiedAccessTrustProvider.md) object
+
+## Errors
+<a name="API_ModifyVerifiedAccessTrustProvider_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+## See Also
+<a name="API_ModifyVerifiedAccessTrustProvider_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ModifyVerifiedAccessTrustProvider)

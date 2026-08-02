@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/developerguide/acm-pca-root-ca-disabled.html
+---
+
+# acm-pca-root-ca-disabled
+<a name="acm-pca-root-ca-disabled"></a>
+
+Checks if AWS Private Certificate Authority (AWS Private CA) has a root CA that is disabled. The rule is NON\_COMPLIANT for root CAs with status that is not DISABLED.
+
+**Identifier:** ACM\_PCA\_ROOT\_CA\_DISABLED
+
+**Resource Types:** AWS::ACMPCA::CertificateAuthority
+
+**Trigger type:** Periodic
+
+**AWS Region:** All supported AWS regions except Asia Pacific (New Zealand), China (Beijing), Asia Pacific (Thailand), Asia Pacific (Malaysia), AWS GovCloud (US-East), AWS GovCloud (US-West), Mexico (Central), Asia Pacific (Taipei), Canada West (Calgary), China (Ningxia) Region
+
+**Parameters:**
+
+exemptedCAArns (Optional)Type: CSV
+Comma-separated list of Amazon Resource Names (ARN) of CA's that can be enabled. This value can be supplied for other CAs, like specific root CAs or intermediate CA's that can be enabled.
+
+## AWS CloudFormation template
+<a name="w2aac20c16c17b7c13c19"></a>
+
+To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

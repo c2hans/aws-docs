@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_InstanceSecondaryInterfaceSpecificationRequest.html
+---
+
+# InstanceSecondaryInterfaceSpecificationRequest
+<a name="API_InstanceSecondaryInterfaceSpecificationRequest"></a>
+
+Describes a secondary interface specification for launching an instance.
+
+## Contents
+<a name="API_InstanceSecondaryInterfaceSpecificationRequest_Contents"></a>
+
+ ** DeleteOnTermination **
+Indicates whether the secondary interface is deleted when the instance is terminated.
+The only supported value for this field is `true`.
+Type: Boolean
+Required: No
+
+ ** DeviceIndex **
+The device index for the secondary interface attachment.
+Type: Integer
+Required: No
+
+ ** InterfaceType **
+The type of secondary interface.
+Type: String
+Valid Values: `secondary`
+Required: No
+
+ ** NetworkCardIndex **
+The index of the network card. The network card must support secondary interfaces.
+Type: Integer
+Required: No
+
+ ** PrivateIpAddress.N **
+The private IPv4 addresses to assign to the secondary interface.
+Type: Array of [InstanceSecondaryInterfacePrivateIpAddressRequest](API_InstanceSecondaryInterfacePrivateIpAddressRequest.md) objects
+Required: No
+
+ ** PrivateIpAddressCount **
+The number of private IPv4 addresses to assign to the secondary interface.
+Type: Integer
+Required: No
+
+ ** SecondarySubnetId **
+The ID of the secondary subnet.
+Type: String
+Required: No
+
+## See Also
+<a name="API_InstanceSecondaryInterfaceSpecificationRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/InstanceSecondaryInterfaceSpecificationRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/InstanceSecondaryInterfaceSpecificationRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/InstanceSecondaryInterfaceSpecificationRequest)

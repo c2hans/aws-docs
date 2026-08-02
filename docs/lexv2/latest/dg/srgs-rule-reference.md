@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/lexv2/latest/dg/srgs-rule-reference.html
+---
+
+# Rule reference
+<a name="srgs-rule-reference"></a>
+
+The following table summarizes the various forms of rule reference that are possible within grammar documents. For more information, see [ Rule reference ](https://www.w3.org/TR/speech-grammar/#S2.2) in the *Speech recognition grammar specification version 1* W3C recommendation.
+
+| Reference type | XML form | Supported |
+| --- | --- | --- |
+| [ 2.2.1 ](https://www.w3.org/TR/speech-grammar/#S2.2.1) Explicit local rule reference | <ruleref uri="\#rulename"/> | Yes |
+| [ 2.2.2 ](https://www.w3.org/TR/speech-grammar/#S2.2.2) Explicit reference to a named rule of a grammar identified by a [URI](https://www.w3.org/TR/speech-grammar/#term-uri) | <ruleref uri="grammarURI\#rulename"/> | No |
+| [ 2.2.2 ](https://www.w3.org/TR/speech-grammar/#S2.2.2) Implicit reference to the root rule of a grammar identified by a [URI](https://www.w3.org/TR/speech-grammar/#term-uri) | <ruleref uri="grammarURI"/> | No |
+| [ 2.2.2 ](https://www.w3.org/TR/speech-grammar/#S2.2.2) Explicit reference to a named rule of a grammar identified by a [URI](https://www.w3.org/TR/speech-grammar/#term-uri) with a [media type](https://www.w3.org/TR/speech-grammar/#term-media-type) | <ruleref uri="grammarURI\#rulename" type="media-type"/> | No |
+| [ 2.2.2 ](https://www.w3.org/TR/speech-grammar/#S2.2.2) Implicit reference to the root rule of a grammar identified by a [URI](https://www.w3.org/TR/speech-grammar/#term-uri) with a [media type](https://www.w3.org/TR/speech-grammar/#term-media-type) | <ruleref uri="grammarURI" type="media-type"/> | No |
+| [ 2.2.3 ](https://www.w3.org/TR/speech-grammar/#S2.2.3) Special rule definitions | `<ruleref special="NULL"/>`<br />`<ruleref special="VOID"/>`<br />`<ruleref special="GARBAGE"/>` | No |
+
+**Notes**
+
+1. Grammar URI is an external URI. For example, `http://grammar.example.com/world-cities.grxml`.
+
+1. Media type can be:
+   + `application/srgs+xml`
+   + `text/plain`
+
+**Example**
+
+```
+<rule id="city" scope="public">
+    <one-of>
+        <item>Boston</item>
+        <item>Philadelphia</item>
+        <item>Fargo</item>
+    </one-of>
+</rule>
+
+<rule id="state" scope="public">
+    <one-of>
+        <item>FL</item>
+        <item>MA</item>
+        <item>NY</item>
+    </one-of>
+</rule>
+
+<!-- "Boston MA" -> city = Boston, state = MA -->
+<rule id="city_state" scope="public">
+    <ruleref uri="#city"/> <ruleref uri="#state"/>
+</rule>
+```

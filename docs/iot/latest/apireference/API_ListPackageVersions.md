@@ -1,0 +1,112 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListPackageVersions.html
+---
+
+# ListPackageVersions
+<a name="API_ListPackageVersions"></a>
+
+Lists the software package versions associated to the account.
+
+Requires permission to access the [ListPackageVersions](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
+
+## Request Syntax
+<a name="API_ListPackageVersions_RequestSyntax"></a>
+
+```
+GET /packages/{{packageName}}/versions?maxResults={{maxResults}}&nextToken={{nextToken}}&status={{status}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListPackageVersions_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [maxResults](#API_ListPackageVersions_RequestSyntax) **   <a name="iot-ListPackageVersions-request-uri-maxResults"></a>
+The maximum number of results to return at one time.
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+ ** [nextToken](#API_ListPackageVersions_RequestSyntax) **   <a name="iot-ListPackageVersions-request-uri-nextToken"></a>
+The token for the next set of results.
+
+ ** [packageName](#API_ListPackageVersions_RequestSyntax) **   <a name="iot-ListPackageVersions-request-uri-packageName"></a>
+The name of the target software package.
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[a-zA-Z0-9-_.]+`
+Required: Yes
+
+ ** [status](#API_ListPackageVersions_RequestSyntax) **   <a name="iot-ListPackageVersions-request-uri-status"></a>
+The status of the package version. For more information, see [Package version lifecycle](https://docs.aws.amazon.com/iot/latest/developerguide/preparing-to-use-software-package-catalog.html#package-version-lifecycle).
+Valid Values: `DRAFT | PUBLISHED | DEPRECATED`
+
+## Request Body
+<a name="API_ListPackageVersions_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListPackageVersions_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "nextToken": "string",
+   "packageVersionSummaries": [
+      {
+         "creationDate": number,
+         "lastModifiedDate": number,
+         "packageName": "string",
+         "status": "string",
+         "versionName": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_ListPackageVersions_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [nextToken](#API_ListPackageVersions_ResponseSyntax) **   <a name="iot-ListPackageVersions-response-nextToken"></a>
+The token for the next set of results.
+Type: String
+
+ ** [packageVersionSummaries](#API_ListPackageVersions_ResponseSyntax) **   <a name="iot-ListPackageVersions-response-packageVersionSummaries"></a>
+Lists the package versions associated to the package.
+Type: Array of [PackageVersionSummary](API_PackageVersionSummary.md) objects
+
+## Errors
+<a name="API_ListPackageVersions_Errors"></a>
+
+ ** InternalServerException **
+Internal error from the service that indicates an unexpected error or that the service is unavailable.
+HTTP Status Code: 500
+
+ ** ThrottlingException **
+The rate exceeds the limit.
+ ** message **
+The message for the exception.
+HTTP Status Code: 400
+
+ ** ValidationException **
+The request is not valid.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListPackageVersions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iot-2015-05-28/ListPackageVersions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/ListPackageVersions)

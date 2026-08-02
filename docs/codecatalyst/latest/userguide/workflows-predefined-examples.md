@@ -1,0 +1,53 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-predefined-examples.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Examples of referencing predefined variables
+<a name="workflows-predefined-examples"></a>
+
+The following examples show how to reference predefined variables in the workflow definition file.
+
+For more information about predefined variables, see [Using predefined variables](workflows-using-predefined-variables.md).
+
+**Topics**
++ [Example: Referencing the "CommitId" predefined variable](#workflows-working-with-variables-ex-refer-action)
++ [Example: Referencing the "BranchName" predefined variable](#workflows-working-with-variables-ex-branch)
+
+## Example: Referencing the "CommitId" predefined variable
+<a name="workflows-working-with-variables-ex-refer-action"></a>
+
+The following example shows you how to refer to the `CommitId` predefined variable in the `MyBuildAction` action. The `CommitId` variable is output automatically by CodeCatalyst. For more information, see [List of predefined variables](workflow-ref-action-variables.md).
+
+Although the example shows the variable being used in the build action, you can use `CommitId` in any action.
+
+```
+MyBuildAction:
+    Identifier: aws/build@v1
+    Inputs:
+      Sources:
+        - WorkflowSource
+    Configuration:
+      Steps:
+      #Build Docker image and tag it with a commit ID
+        - Run: docker build -t image-repo/my-docker-image:latest .
+        - Run: docker tag image-repo/my-docker-image:${WorkflowSource.CommitId}
+```
+
+## Example: Referencing the "BranchName" predefined variable
+<a name="workflows-working-with-variables-ex-branch"></a>
+
+The following example shows you how to refer to the `BranchName` predefined variable in the `CDKDeploy` action. The `BranchName` variable is output automatically by CodeCatalyst. For more information, see [List of predefined variables](workflow-ref-action-variables.md).
+
+Although the example shows the variable being used in the **AWS CDK deploy** action, you can use `BranchName` in any action.
+
+```
+CDKDeploy:
+    Identifier: aws/cdk-deploy@v2
+    Inputs:
+      Sources:
+        - WorkflowSource
+    Configuration:
+      StackName: app-stack-${WorkflowSource.BranchName}
+```

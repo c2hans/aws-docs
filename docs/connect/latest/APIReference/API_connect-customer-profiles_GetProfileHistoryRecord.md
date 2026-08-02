@@ -1,0 +1,146 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_GetProfileHistoryRecord.html
+---
+
+# GetProfileHistoryRecord
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord"></a>
+
+Returns a history record for a specific profile, for a specific domain.
+
+## Request Syntax
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_RequestSyntax"></a>
+
+```
+GET /domains/{{DomainName}}/profiles/{{ProfileId}}/history-records/{{Id}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [DomainName](#API_connect-customer-profiles_GetProfileHistoryRecord_RequestSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-request-uri-DomainName"></a>
+The unique name of the domain for which to return a profile history record.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `^[a-zA-Z0-9_-]+$`
+Required: Yes
+
+ ** [Id](#API_connect-customer-profiles_GetProfileHistoryRecord_RequestSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-request-uri-Id"></a>
+The unique identifier of the profile history record to return.
+Pattern: `[a-f0-9]{32}`
+Required: Yes
+
+ ** [ProfileId](#API_connect-customer-profiles_GetProfileHistoryRecord_RequestSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-request-uri-ProfileId"></a>
+The unique identifier of the profile for which to return a history record.
+Pattern: `[a-f0-9]{32}`
+Required: Yes
+
+## Request Body
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "ActionType": "string",
+   "Content": "string",
+   "CreatedAt": number,
+   "Id": "string",
+   "LastUpdatedAt": number,
+   "ObjectTypeName": "string",
+   "PerformedBy": "string",
+   "ProfileObjectUniqueKey": "string"
+}
+```
+
+## Response Elements
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [ActionType](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-ActionType"></a>
+The action type of the profile history record.
+Type: String
+Valid Values: `ADDED_PROFILE_KEY | DELETED_PROFILE_KEY | CREATED | UPDATED | INGESTED | DELETED_BY_CUSTOMER | EXPIRED | MERGED | DELETED_BY_MERGE`
+
+ ** [Content](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-Content"></a>
+A string containing the customer profile, profile object, or profile key content.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256000.
+
+ ** [CreatedAt](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-CreatedAt"></a>
+The timestamp of when the profile history record was created.
+Type: Timestamp
+
+ ** [Id](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-Id"></a>
+The unique identifier of the profile history record.
+Type: String
+Pattern: `[a-f0-9]{32}`
+
+ ** [LastUpdatedAt](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-LastUpdatedAt"></a>
+The timestamp of when the profile history record was last updated.
+Type: Timestamp
+
+ ** [ObjectTypeName](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-ObjectTypeName"></a>
+The name of the profile object type.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `^[a-zA-Z_][a-zA-Z_0-9-]*$`
+
+ ** [PerformedBy](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-PerformedBy"></a>
+The Amazon Resource Name (ARN) of the person or service principal who performed the action.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+
+ ** [ProfileObjectUniqueKey](#API_connect-customer-profiles_GetProfileHistoryRecord_ResponseSyntax) **   <a name="connect-connect-customer-profiles_GetProfileHistoryRecord-response-ProfileObjectUniqueKey"></a>
+The unique identifier of the profile object generated by the service.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+
+## Errors
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** BadRequestException **
+The input you provided is invalid.
+HTTP Status Code: 400
+
+ ** InternalServerException **
+An internal service error occurred.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The requested resource does not exist, or access was denied.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+You exceeded the maximum number of requests.
+HTTP Status Code: 429
+
+## See Also
+<a name="API_connect-customer-profiles_GetProfileHistoryRecord_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/customer-profiles-2020-08-15/GetProfileHistoryRecord)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/customer-profiles-2020-08-15/GetProfileHistoryRecord)

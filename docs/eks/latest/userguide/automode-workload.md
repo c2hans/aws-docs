@@ -1,0 +1,130 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/userguide/automode-workload.html
+---
+
+ **Help improve this page**
+
+To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
+
+# Deploy a sample inflate workload to an Amazon EKS Auto Mode cluster
+<a name="automode-workload"></a>
+
+In this tutorial, you’ll learn how to deploy a sample workload to an EKS Auto Mode cluster and observe how it automatically provisions the required compute resources. You’ll use `kubectl` commands to watch the cluster’s behavior and see firsthand how Auto Mode simplifies Kubernetes operations on AWS. By the end of this tutorial, you’ll understand how EKS Auto Mode responds to workload deployments by automatically managing the underlying compute resources, without requiring manual node group configuration.
+
+## Prerequisites
+<a name="_prerequisites"></a>
++ An Amazon EKS Auto Mode cluster. Note the name and AWS region of the cluster.
++ An IAM principal, such as a user or role, with sufficient permissions to manage networking, compute, and EKS resources.
+  + For more information, see [Creating roles and attaching policies in the IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions_create-policies.html) in the IAM User Guide.
++  `aws` CLI installed and configured with an IAM identity.
++  `kubectl` CLI installed and connected to cluster.
+  + For more information, see [Set up to use Amazon EKS](setting-up.md).
+
+## Step 1: Review existing compute resources (optional)
+<a name="_step_1_review_existing_compute_resources_optional"></a>
+
+First, use `kubectl` to list the node pools on your cluster.
+
+```
+kubectl get nodepools
+```
+
+Sample Output:
+
+```
+general-purpose
+```
+
+In this tutorial, we will deploy a workload configured to use the `general-purpose` node pool. This node pool is built into EKS Auto Mode, and includes reasonable defaults for general workloads, such as microservices and web apps. You can create your own node pool. For more information, see [Create a Node Pool for EKS Auto Mode](create-node-pool.md).
+
+Second, use `kubectl` to list the nodes connected to your cluster.
+
+```
+kubectl get nodes
+```
+
+If you just created an EKS Auto Mode cluster, you will have no nodes.
+
+In this tutorial you will deploy a sample workload. If you have no nodes, or the workload cannot fit on existing nodes, EKS Auto Mode will provision a new node.
+
+## Step 2: Deploy a sample application to the cluster
+<a name="_step_2_deploy_a_sample_application_to_the_cluster"></a>
+
+Review the following Kubernetes Deployment and save it as `inflate.yaml`
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inflate
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inflate
+  template:
+    metadata:
+      labels:
+        app: inflate
+    spec:
+      terminationGracePeriodSeconds: 0
+      nodeSelector:
+        eks.amazonaws.com/compute-type: auto
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
+      containers:
+        - name: inflate
+          image: public.ecr.aws/eks-distro/kubernetes/pause:3.7
+          resources:
+            requests:
+              cpu: 1
+          securityContext:
+            allowPrivilegeEscalation: false
+```
+
+Note the `eks.amazonaws.com/compute-type: auto` selector requires the workload be deployed on an Amazon EKS Auto Mode node.
+
+Apply the Deployment to your cluster.
+
+```
+kubectl apply -f inflate.yaml
+```
+
+## Step 3: Watch Kubernetes Events
+<a name="_step_3_watch_kubernetes_events"></a>
+
+Use the following command to watch Kubernetes events, including creating a new node. Use `ctrl+c` to stop watching events.
+
+```
+kubectl get events -w --sort-by '.lastTimestamp'
+```
+
+Use `kubectl` to list the nodes connected to your cluster again. Note the newly created node.
+
+```
+kubectl get nodes
+```
+
+## Step 4: View nodes and instances in the AWS console
+<a name="step_4_view_nodes_and_instances_in_the_shared_aws_console"></a>
+
+You can view EKS Auto Mode Nodes in the EKS console, and the associated EC2 instances in the EC2 console.
+
+EC2 Instances deployed by EKS Auto Mode are restricted. You cannot run arbitrary commands on EKS Auto Mode nodes.
+
+## Step 5: Delete the deployment
+<a name="_step_5_delete_the_deployment"></a>
+
+Use `kubectl` to delete the sample deployment
+
+```
+kubectl delete -f inflate.yaml
+```
+
+If you have no other workloads deployed to your cluster, the node created by EKS Auto Mode will be empty.
+
+In the default configuration, EKS Auto Mode detects nodes that have been empty for thirty seconds, and terminates them.
+
+Use `kubectl` or the EC2 console to confirm the associated instance has been deleted.

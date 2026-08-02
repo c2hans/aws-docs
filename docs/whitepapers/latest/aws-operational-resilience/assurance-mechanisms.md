@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-operational-resilience/assurance-mechanisms.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Assurance mechanisms
+<a name="assurance-mechanisms"></a>
+
+ We are prepared to deliver assurance about AWS’s approach to operational resilience and to help customers achieve assurance about the security and resiliency of their workloads. Financial institutions and other customers can gain assurance about the security and resiliency of their workloads on AWS through a variety of means, including: reports on AWS’s infrastructure and services prepared by independent, third-party auditors; services and tools to monitor, assess, and test their AWS environments; and direct experience with AWS through our audit engagement offerings.
+
+## Independent third-party verification
+<a name="independent-third-party-verification"></a>
+
+ With our standardized offering and millions of active customers across virtually every business segment and in the public sector, we provide assurance about our risk and control environment, including how we address operational resilience. AWS operates thousands of controls that meet the highest standards in the industry. To understand these controls and how we operate them, customers can access our System and Organization Control (SOC) 2 Type II report, reflecting examination by our independent third-party auditor, which provides an overview of the AWS Resiliency Program. Furthermore, an independent third-party auditor has validated AWS’s alignment with ISO 27001 standard. The International Organization for Standardization (ISO) brings together experts to share knowledge and to develop, and publish uniform international standards that support innovation and provide solutions to global challenges.
+
+In addition to ISO 27001, AWS also aligns with the ISO 27017 guidance on information security in the cloud and ISO 27018 code of practice on protection of personal data in the cloud. The basis of these standards are the development and implementation of a rigorous security program. The Information Security Management System (ISMS) required under the ISO 27001 standard defines how AWS manages security in a holistic, comprehensive manner and includes numerous control objectives (for example, A16 and A17) relevant to operational resilience. With a non-disclosure agreement in place, customers can download these reports and others through [AWS Artifact](https://aws.amazon.com/artifact/)—more than 2,600 security controls, standards, and requirements in all. AWS can provide such reports upon request to regulatory agencies.
+
+ AWS also [aligns](https://d0.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf) with the National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF).
+
+ Developed originally to apply to critical infrastructure entities, the foundational set of security disciplines in the CSF can apply to any organization in any sector and regardless of size. The U.S. Financial Services Sector Coordinating Council has developed a Financial Services Sector Specific Cybersecurity Profile (available [here](https://bpi.com/financial-services-sector-cybersecurity-profile)) that maps the CSF to a variety of international, U.S. federal, and U.S. state standards and regulations. AWS’s alignment with CSF, attested by a third-party auditor, reflects the suitability of AWS services to enhance the security and resiliency of financial sector entities.
+
+## Direct assurance for customers
+<a name="direct-assurance-for-customers"></a>
+
+ Customers may also achieve continuous assurance about the resilience of their own workloads. Through services and tools available from the AWS management console, customers have unprecedented visibility, monitoring, and remediation capabilities to ensure the security and compliance of their own AWS environments. Financial institution customers no longer have to rely on periodic snapshots or quarterly and annual assessments to validate their security and compliance.
+
+ Consider just a few examples of the many ways customers achieve direct assurance about the security and compliance of their AWS resources. The AWS services discussed in this section include: [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html), [AWS Config](https://aws.amazon.com/documentation/config/), [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty), [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html), and [Amazon Inspector](https://aws.amazon.com/documentation/inspector/).
+
+ First, customers can integrate their auditing controls into a notification and workflow system using AWS services. For example, in such a system, a change in the state of a virtual server from pending to running would result in corrective action, logging, and, as needed, notify the appropriate personnel. Customers can also integrate their notification and workflow system with a machine learning-driven, cybersecurity service offered by AWS that detects unusual API calls, potentially unauthorized deployments, and other malicious activity.
+
+ Second, customers can also translate discrete regulatory requirements into customizable managed rules and continuously track configuration changes among their resources; for example, if a bank has a requirement that developers cannot launch unencrypted storage volumes, the bank can predefine a rule for encryption that would flag the volume for non-compliance and automatically remove the volume.
+
+ Finally and third, another AWS service allows customers to automatically assess the security of their environment, targeting their network, file system, and process activity and collecting a wide set of activity and configuration data. This data includes details of communication with AWS services, use of secure channels, details of the running processes, network traffic among the running processes, and more—resulting in a list of findings and security problems ordered by severity.
+
+ While these and other services correct for non-compliant configurations or security vulnerabilities, AWS also recommends that customers test their applications for operational resilience. Financial institution customers should test for the transient failures of their applications’ dependencies (including external dependencies), component failures, and degraded network communications. One major customer has developed [open-source software](https://github.com/Netflix/SimianArmy/wiki) that can be a basis for this type of testing. To address concerns that malicious actors may access critical functions or processes in customers’ environments, customers can also conduct penetration testing of their AWS environments.
+
+ (For example, in the United Kingdom, the Bank of England has developed the CBEST framework for testing financial firms’ cyber resilience. Accredited penetration test companies attempt to access critical assets within the target firm. An accredited threat intelligence company provides threat intelligence and provides guidance how the penetration testers can attack the firm. Financial institution customers subject to the CBEST framework and planning to have a penetration test conducted on their AWS resources need to notify AWS by submitting a request (at [https://aws.amazon.com/security/penetration-testing](https://aws.amazon.com/security/penetration-testing/)) because such activity is indistinguishable from prohibited security violations and network abuse.)
+
+ Finally, AWS’s efforts to provide transparency about our risk and control environment do not stop at our third- party audit reports or formal audit engagements. Our security and compliance personnel, security solution architects, engineers, and field teams engage daily with customers to address their questions and concerns.
+
+ Such interaction may be a phone call with the financial institution’s security team, an executive meeting with a customer’s Chief Information Security Officer and Chief Information Officer, a briefing on AWS’s premises— and countless other ways. Customers drive our overall infrastructure and service roadmap, and meeting and exceeding their security and resiliency needs is our number one objective.

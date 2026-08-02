@@ -1,0 +1,73 @@
+---
+source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Types.html
+---
+
+# Data Types
+<a name="API_Types"></a>
+
+The Elastic Disaster Recovery Service API contains several data types that various actions use. This section describes each data type in detail.
+
+**Note**
+The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
+
+The following data types are supported:
++  [Account](API_Account.md)
++  [ConversionProperties](API_ConversionProperties.md)
++  [CPU](API_CPU.md)
++  [DataReplicationError](API_DataReplicationError.md)
++  [DataReplicationInfo](API_DataReplicationInfo.md)
++  [DataReplicationInfoReplicatedDisk](API_DataReplicationInfoReplicatedDisk.md)
++  [DataReplicationInitiation](API_DataReplicationInitiation.md)
++  [DataReplicationInitiationStep](API_DataReplicationInitiationStep.md)
++  [DescribeJobsRequestFilters](API_DescribeJobsRequestFilters.md)
++  [DescribeRecoveryInstancesRequestFilters](API_DescribeRecoveryInstancesRequestFilters.md)
++  [DescribeRecoverySnapshotsRequestFilters](API_DescribeRecoverySnapshotsRequestFilters.md)
++  [DescribeSourceNetworksRequestFilters](API_DescribeSourceNetworksRequestFilters.md)
++  [DescribeSourceServersRequestFilters](API_DescribeSourceServersRequestFilters.md)
++  [Disk](API_Disk.md)
++  [EventResourceData](API_EventResourceData.md)
++  [IdentificationHints](API_IdentificationHints.md)
++  [Job](API_Job.md)
++  [JobLog](API_JobLog.md)
++  [JobLogEventData](API_JobLogEventData.md)
++  [LaunchAction](API_LaunchAction.md)
++  [LaunchActionParameter](API_LaunchActionParameter.md)
++  [LaunchActionRun](API_LaunchActionRun.md)
++  [LaunchActionsRequestFilters](API_LaunchActionsRequestFilters.md)
++  [LaunchActionsStatus](API_LaunchActionsStatus.md)
++  [LaunchConfigurationTemplate](API_LaunchConfigurationTemplate.md)
++  [LaunchIntoInstanceProperties](API_LaunchIntoInstanceProperties.md)
++  [Licensing](API_Licensing.md)
++  [LifeCycle](API_LifeCycle.md)
++  [LifeCycleLastLaunch](API_LifeCycleLastLaunch.md)
++  [LifeCycleLastLaunchInitiated](API_LifeCycleLastLaunchInitiated.md)
++  [NetworkInterface](API_NetworkInterface.md)
++  [OS](API_OS.md)
++  [ParticipatingResource](API_ParticipatingResource.md)
++  [ParticipatingResourceID](API_ParticipatingResourceID.md)
++  [ParticipatingServer](API_ParticipatingServer.md)
++  [PITPolicyRule](API_PITPolicyRule.md)
++  [ProductCode](API_ProductCode.md)
++  [RecoveryInstance](API_RecoveryInstance.md)
++  [RecoveryInstanceDataReplicationError](API_RecoveryInstanceDataReplicationError.md)
++  [RecoveryInstanceDataReplicationInfo](API_RecoveryInstanceDataReplicationInfo.md)
++  [RecoveryInstanceDataReplicationInfoReplicatedDisk](API_RecoveryInstanceDataReplicationInfoReplicatedDisk.md)
++  [RecoveryInstanceDataReplicationInitiation](API_RecoveryInstanceDataReplicationInitiation.md)
++  [RecoveryInstanceDataReplicationInitiationStep](API_RecoveryInstanceDataReplicationInitiationStep.md)
++  [RecoveryInstanceDisk](API_RecoveryInstanceDisk.md)
++  [RecoveryInstanceFailback](API_RecoveryInstanceFailback.md)
++  [RecoveryInstanceProperties](API_RecoveryInstanceProperties.md)
++  [RecoveryLifeCycle](API_RecoveryLifeCycle.md)
++  [RecoverySnapshot](API_RecoverySnapshot.md)
++  [ReplicationConfigurationReplicatedDisk](API_ReplicationConfigurationReplicatedDisk.md)
++  [ReplicationConfigurationTemplate](API_ReplicationConfigurationTemplate.md)
++  [SourceCloudProperties](API_SourceCloudProperties.md)
++  [SourceNetwork](API_SourceNetwork.md)
++  [SourceNetworkData](API_SourceNetworkData.md)
++  [SourceProperties](API_SourceProperties.md)
++  [SourceServer](API_SourceServer.md)
++  [StagingArea](API_StagingArea.md)
++  [StagingSourceServer](API_StagingSourceServer.md)
++  [StartRecoveryRequestSourceServer](API_StartRecoveryRequestSourceServer.md)
++  [StartSourceNetworkRecoveryRequestNetworkEntry](API_StartSourceNetworkRecoveryRequestNetworkEntry.md)
++  [ValidationExceptionField](API_ValidationExceptionField.md)

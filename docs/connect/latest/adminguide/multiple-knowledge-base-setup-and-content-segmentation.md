@@ -1,0 +1,312 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/multiple-knowledge-base-setup-and-content-segmentation.html
+---
+
+# Knowledge base retrieval configuration
+<a name="multiple-knowledge-base-setup-and-content-segmentation"></a>
+
+When using orchestration AI agents, you can configure Retrieve tools that allow your AI agent to search knowledge bases and return relevant information to answer user questions.
+
+Each Retrieve tool queries a single knowledge base. By configuring multiple retrieve tools, you enable your AI agent to query multiple knowledge bases simultaneously or intelligently select which one to search based on the user's question. Well-defined tool descriptions and prompt instructions allow the model to automatically route queries to the most relevant knowledge base.
+
+You can control how your AI agent queries content at two levels:
++ **Knowledge base level:** Configure multiple retrieve tools to query different knowledge bases. Use this approach when your content is organized into multiple knowledge bases.
++ **Content level:** Use content segmentation to query only specific content within a single knowledge base.
+
+**Topics**
++ [How to configure your orchestration agent to query multiple knowledge bases](#w2aac28c32c13)
++ [Content segmentation](#w2aac28c32c15)
++ [Add citation data to your AI agent trace](#add-citation-data-ai-agent-trace)
+
+## How to configure your orchestration agent to query multiple knowledge bases
+<a name="w2aac28c32c13"></a>
+
+You can configure multiple Retrieve tools to query different knowledge bases. Depending on your use case, you can either:
++ Query all knowledge bases simultaneously (parallel invocation)
++ Query specific knowledge bases based on the context of the request (conditional invocation)
+
+### Setting up multiple Retrieve tools
+<a name="ai-agents-setup-multiple-retrieve-tools"></a>
+
+Both configurations require the same initial setup. Complete these steps first, then follow the instructions for your specific use case.
+
+1. From the AWS Console, you can add additional knowledge bases by choosing Add Integration and following the guided experience. In this example, we added demo-byobkb as the additional knowledge base.
+![Multiple integrations shown on AI agents domain page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-showing-multi-kbs-in-domain-page.png)
+
+1. From AI Agent Designer, create a new Orchestration AI agent, and edit the default Retrieve tool
+![AI Agents builder page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-ai-agent-builder.png)
+
+1. Associate existing knowledge base to the Retrieve Tool. AI agent will use this knowledge base as the default
+![Choosing the assistant association for the retrieve tool.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-picking-assistant-association-in-retrieve-tool.png)
+
+1. Add an additional Tool, choose Amazon Connect as the namespace and choose Retrieve type of AI Tool
+![Selecting the retrieve tool.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-choosing-retrieve-tool.png)
+
+1. Now select the additional knowledge base that you want to associate beyond the default knowledge base
+![Choosing the assistant association for the retrieve tool.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-picking-assistant-association-in-retrieve-tool2.png)
+
+1. Name each additional Retrieve tool starting with "Retrieve" (e.g., Retrieve2, Retrieve3, RetrieveProducts, RetrievePolicies).
+![Naming the retrieve tool.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-naming-the-retrieve-tool.png)
+
+1. Next, configure the tool instructions and examples. The configuration varies depending on your use case. The following sections cover two scenarios: querying all knowledge bases simultaneously and querying knowledge bases selectively.
+
+### Querying all knowledge bases simultaneously
+<a name="ai-agents-parallel-retrieve-tools"></a>
+
+Use this configuration when you want the agent to search all knowledge bases simultaneously for every query.
+
+#### Configuring tool instructions
+<a name="ai-agents-parallel-tool-instructions"></a>
+
+1. Fill in the tool instructions by copying over the instructions and examples from the default Retrieve tool.
+![Retrieve tool instructions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-instructions.png)
+
+1. Choose the Add button to create the new Retrieve tool. Your tool list should now have the new Retrieve tool.
+![Tool list containing multiple retrieve tools.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-multiple-retrieve-tools-list.png)
+
+   You now have a second Retrieve tool. To use all Retrieve tools together, you must modify the prompt with instructions to invoke them simultaneously. Without this change, only one Retrieve tool will be used.
+
+#### Updating your prompt for parallel invocation
+<a name="ai-agents-parallel-prompt"></a>
+
+1. Modify the prompt to instruct it to use multiple Retrieve tools. Default orchestration prompts cannot be edited directly, so you'll need to create a copy with your changes.
+
+   Create a new prompt by copying the default orchestration prompt that matches your use case. In this example, we copy from the AgentAssistanceOrchestration prompt.
+![Creating new AI Prompt screen.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-creating-new-prompt.png)
+
+1. Choose the **Create button** and you will be taken to a page where you can modify the prompt.
+
+1. Modify your prompt based on your orchestration type:
+   +
+
+**For Agent Assistance orchestration prompts:**
+Locate the numbered rules section in your orchestration prompt. This section begins with a line similar to:
+
+     `Your goal is to resolve the customer's issue while also being responsive. While responding, follow these important rules:`
+
+     Add the following as the last numbered rule in this section:
+
+     `CRITICAL - Multiple Retrieve Tools: When multiple Retrieve-type tools are available ([Retrieve], [Retrieve2]), you MUST invoke ALL of them simultaneously for any search request. Never use only one Retrieve tool when multiple are available-always select and invoke them together to ensure comprehensive results from all knowledge sources.`
+   +
+
+**For Self-Service orchestration prompts:**
+Locate the `core_behavior` section. Add the following rule within that section:
+
+     `CRITICAL - Multiple Retrieve Tools: When multiple Retrieve-type tools are available ([Retrieve], [Retrieve2]), you MUST invoke ALL of them simultaneously for any search request. Never use only one Retrieve tool when multiple are available—always invoke them together to ensure comprehensive results from all knowledge sources.`
+**Note**
+Replace the bracketed placeholders with your actual tool names.
+
+### Querying knowledge bases selectively
+<a name="ai-agents-conditional-retrieve-tools"></a>
+
+Use this configuration when you want the agent to select the appropriate knowledge base based on the type of question or context.
+
+#### Configuring tool instructions for each knowledge base
+<a name="ai-agents-conditional-tool-instructions"></a>
+
+Unlike parallel invocation, each Retrieve tool needs distinct instructions that describe when it should be used. This includes the default Retrieve tool—you must update its instructions to differentiate it from the additional Retrieve tools. Use descriptive names that reflect each knowledge base's content (e.g., RetrieveProducts, RetrievePolicies) to help the model select the correct tool.
+
+1. For each Retrieve tool, including the default, write specific instructions that describe the content of its associated knowledge base and when to use it.
+![Retrieve tool instructions.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-instructions.png)
+
+1. Choose the Add button to create the new Retrieve tool. Your tool list should now have the new Retrieve tool.
+![Tool list containing multiple retrieve tools.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-multiple-retrieve-tools-list.png)
+
+   You now have a second Retrieve tool. To have the agent select the appropriate tool based on context, you must modify the prompt with instructions on when to use each tool.
+
+#### Updating your prompt for conditional invocation
+<a name="ai-agents-conditional-prompt"></a>
+
+1. Modify the prompt to instruct it to choose the appropriate Retrieve tool based on context. Default orchestration prompts cannot be edited directly, so you'll need to create a copy with your changes.
+
+   Create a new prompt by copying the default orchestration prompt that matches your use case. In this example, we copy from the AgentAssistanceOrchestration prompt.
+![Creating new AI Prompt screen.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-creating-new-prompt.png)
+
+1. Choose the **Create button** and you will be taken to a page where you can modify the prompt.
+
+1. Modify your prompt based on your orchestration type:
+   +
+
+**For Agent Assistance orchestration prompts:**
+Locate the numbered rules section in your orchestration prompt. This section begins with a line similar to:
+
+     `Your goal is to resolve the customer's issue while also being responsive. While responding, follow these important rules:`
+
+     Add the following as the last numbered rule in this section:
+
+     `CRITICAL - Retrieve Tool Selection: You have multiple Retrieve tools. Each queries a different knowledge base. You MUST select only ONE tool per question based on the topic. - [Retrieve] contains [description]. - [Retrieve2] contains [description]. Evaluate the question, match it to the most relevant tool, and invoke only that tool.`
+   +
+
+**For Self-Service orchestration prompts:**
+Locate the `core_behavior` section. Add the following rule within that section:
+
+     `CRITICAL - Retrieve Tool Selection: You have multiple Retrieve tools. Each queries a different knowledge base. You MUST select only ONE tool per question based on the topic. - [Retrieve] contains [description]. - [Retrieve2] contains [description]. Evaluate the question, match it to the most relevant tool, and invoke only that tool.`
+**Note**
+Replace the bracketed placeholders with your actual tool names, descriptions, and example questions.
+**Best practices for accurate tool selection**
+The model's ability to select the correct Retrieve tool depends on several factors: tool name, tool description, tool examples, and prompt instructions. Follow these guidelines:
+**Use descriptive tool names:** Names like RetrieveProducts or RetrievePolicies help the model understand each tool's purpose.
+**Be specific in descriptions:** Avoid vague descriptions like "general information." List the specific topics, document types, or question categories each knowledge base handles.
+**Add example questions:** Include sample questions in the tool instructions to help the model understand intended use cases.
+**Avoid overlap:** Ensure tool names, descriptions, and examples are mutually exclusive. Overlapping content can cause the model to choose inconsistently.
+**Match terminology to user language:** Use the same words and phrases your users typically use, not just internal or technical terminology.
+Your use case may require additional prompt modifications beyond the examples provided here.
+
+## Content segmentation
+<a name="w2aac28c32c15"></a>
+
+Content segmentation allows you to tag your knowledge base content and filter retrieval results based on those tags. When your LLM tool queries the knowledge base, it can specify tags to retrieve only content matching those tags, enabling targeted responses from specific content subsets.
+
+**Note**
+Content segmentation is not available with the Web crawler data source type.
+
+### Tagging content by data source type
+<a name="w2aac28c32c15b7"></a>
+
+The process for tagging content varies depending on your data source type.
+
+#### S3, Salesforce, SharePoint, Zendesk, and ServiceNow
+<a name="w2aac28c32c15b7b5"></a>
+
+After creating your knowledge base, you can apply tags to individual content items for segmentation. Tags are applied at the content level, meaning each piece of content must be tagged individually.
+
+To tag content, use the Amazon Connect [TagResource API](https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_TagResource.html). This API allows you to programmatically add tags to knowledge base content, which can then be used for content segmentation filtering during retrieval.
+
+For examples of tagging content, see the [content segmentation workshop](https://catalog.workshops.aws/workshops/9657f1e6-9357-4d9f-8733-d334ebec0aab/en-US/01-foundation/07-content-segmentation).
+
+##### Using tags in the Retrieve tool
+<a name="w2aac28c32c15b7b5b9"></a>
+
+Once your content is tagged, you can filter retrieval results by specifying tag filters in the Retrieve tool configuration.
+
+1. In the Retrieve tool configuration, navigate to the Override Input Values section.
+
+1. Add key-value pairs to define your tag filter. You need two overrides to filter by a single tag. In this example, we use `equals` as the filter operator:
+   + Set the Property Key to `retrievalConfiguration.filter.equals.key` with the value as your tag name (for example, `number`).
+![Setting the filter key override.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-filter-key.png)
+   + Set the Property Key to `retrievalConfiguration.filter.equals.value` with the value as your tag value (for example, `one`).
+![Setting the filter value override.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-filter-value.png)
+
+You can use any filter configuration that starts with `retrievalConfiguration.filter` to define your tag filtering criteria.
+
+![Completed tag filter configuration.](http://docs.aws.amazon.com/connect/latest/adminguide/images/ai-agents-retrieve-tool-filter-complete.png)
+
+#### Bedrock knowledge base
+<a name="w2aac28c32c15b7b7"></a>
+
+For Bedrock knowledge base data sources, content is not stored as Amazon Connect resources, so tagging through the TagResource API is not available. Instead, you must define metadata fields directly on your Bedrock knowledge base data sources.
+
+For S3 data sources, see the Document metadata fields section in the [Amazon Bedrock S3 data source connector](https://docs.aws.amazon.com/bedrock/latest/userguide/s3-data-source-connector.html) user guide.
+
+For other data source types, see [Custom transformation during ingestion](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-custom-transformation.html) in the Amazon Bedrock documentation.
+
+##### Using metadata fields in the Retrieve tool
+<a name="w2aac28c32c15b7b7b9"></a>
+
+Bedrock knowledge bases automatically provide built-in metadata fields on all files. You can use these fields to filter retrieval results in the Retrieve tool using the same configuration method shown in the example above.
+
+To retrieve results from only a specific data source within your Bedrock knowledge base, configure the filter overrides as follows:
++ `retrievalConfiguration.filter.equals.key` = `x-amz-bedrock-kb-data-source-id`
++ `retrievalConfiguration.filter.equals.value` = `[your-data-source-id]`
+
+This filters the Retrieve tool to only fetch results from that specific data source. You can also filter by custom metadata fields you've defined on your Bedrock data sources using the same override configuration.
+
+## Add citation data to your AI agent trace
+<a name="add-citation-data-ai-agent-trace"></a>
+
+When your AI agent uses a knowledge base to answer questions, you can capture citation data that shows which knowledge base content was referenced. This data includes:
++ **contentId** — the identifier of the specific content item referenced
++ **title** — the title of the referenced content (for example, "Amazon Connect Overview")
++ **knowledgeBaseId** — the identifier of the knowledge base used
++ **knowledgeBaseArn** — the ARN of the knowledge base used
+
+This knowledge base citation data is available through the ListSpans API and the AI agent trace. To learn more, see [ListSpans](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ListSpans.html) and [AI agent traces](https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-traces.html).
+
+**Note**
+If you are using Agent Assistance, citation data is automatically included and no additional configuration is required. The following steps apply only to self-service orchestration prompts.
+
+### Update your self-service prompt to include citations
+<a name="update-self-service-prompt-citations"></a>
++ To enable citation data, you must update the Retrieve tool's instruction block in your self-service orchestration prompt. This instructs the model to include source references in its responses using the required format.
++ Create a copy of your default self-service orchestration prompt (default prompts cannot be edited directly).
++ In your copied prompt, replace the Retrieve tool's instruction block with the following:
+
+```
+instruction:
+  instruction: |-
+    Search the knowledge base using semantic search to find relevant information. Use the results of the RETRIEVE tool to provide an informed answer to the customer's query.
+
+    When summarizing retrieve tool results, you MUST include source citations using the format shown in the good examples below.
+    MUST include a <sources> block with the sourceId values from the Retrieve result inside every <message_part> that uses retrieved content.
+    MUST use the exact sourceId string returned by the Retrieve tool. Do not modify, truncate, or fabricate sourceId values.
+    MUST include source citations for ALL information taken from retrieve results.
+    If a message_part is purely conversational (greetings, clarifying questions, hand-offs) and does not use retrieved content, omit the <sources> block.
+    If retrieve returns no results or empty results, acknowledge that you don't have that specific information available. Do not make assumptions or provide information from general knowledge.
+  examples:
+    - |-
+      Good example - single message part with one source:
+      <message>
+        <message_part>
+          <text>Your warranty covers parts replacement for any manufacturing defects during the first year.</text>
+          <sources>
+            <sourceId>warranty_policy_2024</sourceId>
+          </sources>
+        </message_part>
+      </message>
+    - |-
+      Good example - multiple sources contributing to one answer:
+      <message>
+        <message_part>
+          <text>Our check-in time is 3 PM and checkout is 11 AM. Late checkout is available for an additional fee.</text>
+          <sources>
+            <sourceId>checkin_policy</sourceId>
+            <sourceId>fees_addendum</sourceId>
+          </sources>
+        </message_part>
+      </message>
+    - |-
+      Good example - greeting with no retrieval:
+      <message>
+        <message_part>
+          <text>Hello! How can I help you today?</text>
+        </message_part>
+      </message>
+    - |-
+      Bad example - retrieved content with no sources block (avoid this):
+      <message>
+        <message_part>
+          <text>We offer extended warranty coverage beyond the manufacturer's warranty period.</text>
+        </message_part>
+      </message>
+    - |-
+      Bad example - text outside <message_part> (avoid this):
+      <message>
+        <message_part>
+          <text>Your warranty covers parts replacement.</text>
+          <sources>
+            <sourceId>warranty_policy_2024</sourceId>
+          </sources>
+        </message_part>
+        Let me know if you need anything else.
+      </message>
+    - |-
+      Example for no results:
+      <message>
+        <message_part>
+          <text>I don't have specific information about that topic available.</text>
+        </message_part>
+      </message>
+```
++ Save your prompt and associate it with your AI agent.
+
+### Voice agents
+<a name="citation-voice-agents"></a>
+
+The `<sources>` block is metadata and is not spoken aloud. It does not affect what the caller hears.
+
+### How to verify
+<a name="citation-how-to-verify"></a>
+
+After updating your prompt, place a test contact and confirm:
++ The agent answers the question correctly.
++ Check the ListSpans API response for that session. The knowledge base used to answer should appear as citations in the ListSpans details. To learn more about ListSpans, see [ListSpans API](https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ListSpans.html).

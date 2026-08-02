@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_ControlPlaneUserAttributeFilter.html
+---
+
+# ControlPlaneUserAttributeFilter
+<a name="API_ControlPlaneUserAttributeFilter"></a>
+
+An object that can be used to specify Tag conditions or Hierarchy Group conditions inside the `SearchFilter`.
+
+This accepts an `OR` of `AND` (List of List) input where:
++ The top level list specifies conditions that need to be applied with `OR` operator
++ The inner list specifies conditions that need to be applied with `AND` operator.
+
+**Note**
+Only one field can be populated. Maximum number of allowed Tag conditions is 25. Maximum number of allowed Hierarchy Group conditions is 20.
+
+## Contents
+<a name="API_ControlPlaneUserAttributeFilter_Contents"></a>
+
+ ** AndCondition **   <a name="connect-Type-ControlPlaneUserAttributeFilter-AndCondition"></a>
+A list of conditions which would be applied together with an `AND` condition.
+Type: [AttributeAndCondition](API_AttributeAndCondition.md) object
+Required: No
+
+ ** HierarchyGroupCondition **   <a name="connect-Type-ControlPlaneUserAttributeFilter-HierarchyGroupCondition"></a>
+A leaf node condition which can be used to specify a hierarchy group condition.
+Type: [HierarchyGroupCondition](API_HierarchyGroupCondition.md) object
+Required: No
+
+ ** OrConditions **   <a name="connect-Type-ControlPlaneUserAttributeFilter-OrConditions"></a>
+A list of conditions which would be applied together with an `OR` condition.
+Type: Array of [AttributeAndCondition](API_AttributeAndCondition.md) objects
+Required: No
+
+ ** TagCondition **   <a name="connect-Type-ControlPlaneUserAttributeFilter-TagCondition"></a>
+A leaf node condition which can be used to specify a tag condition, for example, `HAVE BPO = 123`.
+Type: [TagCondition](API_TagCondition.md) object
+Required: No
+
+## See Also
+<a name="API_ControlPlaneUserAttributeFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/ControlPlaneUserAttributeFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/ControlPlaneUserAttributeFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/ControlPlaneUserAttributeFilter)

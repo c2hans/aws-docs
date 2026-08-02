@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/create-domain-sagemaker-unified-studio-manual.html
+---
+
+# Create a Amazon SageMaker Unified Studio domain - manual setup
+<a name="create-domain-sagemaker-unified-studio-manual"></a>
+
+Complete the following procedure to create a Amazon SageMaker Unified Studio domain with the quick setup option.
+
+1. Navigate to the Amazon SageMaker management console at [https://console.aws.amazon.com/datazone](https://console.aws.amazon.com/datazone) and use the region selector in the top navigation bar to choose the appropriate AWS Region.
+
+1. Choose **Create a Unified Studio domain** and then choose **Manual setup**.
+
+   With this option, you're choosing to create an Amazon SageMaker unified domain and your'e claiming full control over customizing your domain settings, including the following:
+   + Customize data analytics, machine learning, SQL, Generative AI, and more
+   + Data and AI governance
+   + Configure Amazon Bedrock generative AI playgrounds and application development
+   + Amazon Q - Free tier
+   + Authentication via AWS IAM, AWS IAM Identity Center, or SAML
+
+1. In **Name**, specify the domain name.
+
+1. In **Description**, specify the domain description.
+
+1. Under **Permissions**, specify the domain execution role. For more information, see [AmazonSageMakerDomainExecution role](AmazonSageMakerDomainExecution.md).
+
+1. Under **Permissions**, specify the domain service role. For more information, see [AmazonSageMakerDomainService role](AmazonSageMakerDomainService.md).
+
+1. Under **Data encryption**, specify the data encryption settings. Your data is encrypted by default with a key that AWS owns and manages for you. To choose a different key, customize your encryption settings.
+
+1. Under **Tags**, specify the tags for your domian.
+
+1. Choose **Create domain**.
+
+Once your domain is created, you can proceed to customizing your domain settings, including [SSO](user-management.md), [project profiles](project-profiles.md), [blueprints](blueprints.md), [account associations](associated-accounts.md), [Amazon Bedrock models](amazon-bedrock.md), [connections](git-connections.md), and [AmazonQ](amazonq.md).

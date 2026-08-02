@@ -1,0 +1,115 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZonePreviewConsoleFullAccess.html
+---
+
+# AmazonDataZonePreviewConsoleFullAccess
+<a name="AmazonDataZonePreviewConsoleFullAccess"></a>
+
+**Description**: Provides full access to the Preview release of Amazon DataZone via the AWS Management Console. Also provides select access to other related services.
+
+`AmazonDataZonePreviewConsoleFullAccess` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AmazonDataZonePreviewConsoleFullAccess-how-to-use"></a>
+
+You can attach `AmazonDataZonePreviewConsoleFullAccess` to your users, groups, and roles.
+
+## Policy details
+<a name="AmazonDataZonePreviewConsoleFullAccess-details"></a>
++ **Type**: AWS managed policy
++ **Creation time**: March 28, 2023, 15:16 UTC
++ **Edited time:** July 13, 2023, 18:01 UTC
++ **ARN**: `arn:aws:iam::aws:policy/AmazonDataZonePreviewConsoleFullAccess`
+
+## Policy version
+<a name="AmazonDataZonePreviewConsoleFullAccess-version"></a>
+
+**Policy version:** v2 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AmazonDataZonePreviewConsoleFullAccess-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "datazonecontrol:*"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "kms:DescribeKey",
+        "kms:ListAliases",
+        "glue:GetConnections",
+        "glue:GetDatabase",
+        "redshift:DescribeClusters",
+        "ec2:DescribeSubnets",
+        "secretsmanager:ListSecrets",
+        "iam:ListRoles",
+        "sso:DescribeRegisteredRegions"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "glue:CreateConnection"
+      ],
+      "Resource" : [
+        "arn:aws:glue:*:*:catalog",
+        "arn:aws:glue:*:*:connection/AmazonDataZone-*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "secretsmanager:CreateSecret"
+      ],
+      "Resource" : "arn:aws:secretsmanager:*:*:secret:AmazonDataZone-*"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : "iam:GetPolicy",
+      "Resource" : [
+        "arn:aws:iam::*:policy/service-role/AmazonDataZoneBootstrapServicePolicy-AmazonDataZoneBootstrapRole",
+        "arn:aws:iam::*:policy/service-role/AmazonDataZoneServicePolicy-AmazonDataZoneServiceRole"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : [
+        "arn:aws:iam::*:role/AmazonDataZoneServiceRole*",
+        "arn:aws:iam::*:role/service-role/AmazonDataZoneServiceRole*",
+        "arn:aws:iam::*:role/AmazonDataZoneBootstrapRole*",
+        "arn:aws:iam::*:role/service-role/AmazonDataZoneBootstrapRole",
+        "arn:aws:iam::*:role/AmazonDataZoneDomainExecutionRole",
+        "arn:aws:iam::*:role/service-role/AmazonDataZoneDomainExecutionRole"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "iam:passedToService" : "datazonecontrol.amazonaws.com"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AmazonDataZonePreviewConsoleFullAccess-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

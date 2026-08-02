@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/rekognition_code_examples_scenarios.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Scenarios for Amazon Rekognition using AWS SDKs
+<a name="rekognition_code_examples_scenarios"></a>
+
+The following code examples show you how to implement common scenarios in Amazon Rekognition with AWS SDKs. These scenarios show you how to accomplish specific tasks by calling multiple functions within Amazon Rekognition or combined with other AWS services. Each scenario includes a link to the complete source code, where you can find instructions on how to set up and run the code.
+
+Scenarios target an intermediate level of experience to help you understand service actions in context.
+
+**Topics**
++ [Build a collection and find faces in it](rekognition_example_rekognition_Usage_FindFacesInCollection_section.md)
++ [Create a serverless application to manage photos](rekognition_example_cross_PAM_section.md)
++ [Detect PPE in images](rekognition_example_cross_RekognitionPhotoAnalyzerPPE_section.md)
++ [Detect and display elements in images](rekognition_example_rekognition_Usage_DetectAndDisplayImage_section.md)
++ [Detect faces in an image](rekognition_example_cross_DetectFaces_section.md)
++ [Detect information in videos](rekognition_example_rekognition_VideoDetection_section.md)
++ [Detect objects in images](rekognition_example_cross_RekognitionPhotoAnalyzer_section.md)
++ [Detect people and objects in a video](rekognition_example_cross_RekognitionVideoDetection_section.md)
++ [Save EXIF and other image information](rekognition_example_cross_DetectLabels_section.md)

@@ -1,0 +1,380 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/iam_example_iam_ListRoles_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListRoles` with an AWS SDK or CLI
+<a name="iam_example_iam_ListRoles_section"></a>
+
+The following code examples show how to use `ListRoles`.
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
+
+```
+    /// <summary>
+    /// List IAM roles.
+    /// </summary>
+    /// <returns>A list of IAM roles.</returns>
+    public async Task<List<Role>> ListRolesAsync()
+    {
+        var listRolesPaginator = _IAMService.Paginators.ListRoles(new ListRolesRequest());
+        var roles = new List<Role>();
+
+        await foreach (var response in listRolesPaginator.Responses)
+        {
+            roles.AddRange(response.Roles);
+        }
+
+        return roles;
+    }
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/goto/DotNetSDKV3/iam-2010-05-08/ListRoles) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list IAM roles for the current account**
+The following `list-roles` command lists IAM roles for the current account.
+
+```
+aws iam list-roles
+```
+Output:
+
+```
+{
+    "Roles": [
+        {
+            "Path": "/",
+            "RoleName": "ExampleRole",
+            "RoleId": "AROAJ52OTH4H7LEXAMPLE",
+            "Arn": "arn:aws:iam::123456789012:role/ExampleRole",
+            "CreateDate": "2017-09-12T19:23:36+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version":"2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/example_path/",
+            "RoleName": "ExampleRoleWithPath",
+            "RoleId": "AROAI4QRP7UFT7EXAMPLE",
+            "Arn": "arn:aws:iam::123456789012:role/example_path/ExampleRoleWithPath",
+            "CreateDate": "2023-09-21T20:29:38+00:00",
+            "AssumeRolePolicyDocument": {
+                "Version":"2012-10-17",
+                "Statement": [
+                    {
+                        "Sid": "",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "ec2.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        }
+    ]
+}
+```
+For more information, see [Creating IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the *AWS IAM User Guide*.
++  For API details, see [ListRoles](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-roles.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Go ]
+
+**SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
+
+```
+import (
+	"context"
+	"encoding/json"
+	"log"
+
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/service/iam"
+	"github.com/aws/aws-sdk-go-v2/service/iam/types"
+)
+
+// RoleWrapper encapsulates AWS Identity and Access Management (IAM) role actions
+// used in the examples.
+// It contains an IAM service client that is used to perform role actions.
+type RoleWrapper struct {
+	IamClient *iam.Client
+}
+
+// ListRoles gets up to maxRoles roles.
+func (wrapper RoleWrapper) ListRoles(ctx context.Context, maxRoles int32) ([]types.Role, error) {
+	var roles []types.Role
+	result, err := wrapper.IamClient.ListRoles(ctx,
+		&iam.ListRolesInput{MaxItems: aws.Int32(maxRoles)},
+	)
+	if err != nil {
+		log.Printf("Couldn't list roles. Here's why: %v\n", err)
+	} else {
+		roles = result.Roles
+	}
+	return roles, err
+}
+```
++  For API details, see [ListRoles](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/iam#Client.ListRoles) in *AWS SDK for Go API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
+List the roles.
+
+```
+import { ListRolesCommand, IAMClient } from "@aws-sdk/client-iam";
+
+const client = new IAMClient({});
+
+/**
+ * A generator function that handles paginated results.
+ * The AWS SDK for JavaScript (v3) provides {@link https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html#paginators | paginator} functions to simplify this.
+ *
+ */
+export async function* listRoles() {
+  const command = new ListRolesCommand({
+    MaxItems: 10,
+  });
+
+  /**
+   * @type {import("@aws-sdk/client-iam").ListRolesCommandOutput | undefined}
+   */
+  let response = await client.send(command);
+
+  while (response?.Roles?.length) {
+    for (const role of response.Roles) {
+      yield role;
+    }
+
+    if (response.IsTruncated) {
+      response = await client.send(
+        new ListRolesCommand({
+          Marker: response.Marker,
+        }),
+      );
+    } else {
+      break;
+    }
+  }
+}
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/iam/command/ListRolesCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ PHP ]
+
+**SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
+
+```
+$uuid = uniqid();
+$service = new IAMService();
+
+    /**
+     * @param string $pathPrefix
+     * @param string $marker
+     * @param int $maxItems
+     * @return Result
+     * $roles = $service->listRoles();
+     */
+    public function listRoles($pathPrefix = "", $marker = "", $maxItems = 0)
+    {
+        $listRolesArguments = [];
+        if ($pathPrefix) {
+            $listRolesArguments["PathPrefix"] = $pathPrefix;
+        }
+        if ($marker) {
+            $listRolesArguments["Marker"] = $marker;
+        }
+        if ($maxItems) {
+            $listRolesArguments["MaxItems"] = $maxItems;
+        }
+        return $this->iamClient->listRoles($listRolesArguments);
+    }
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/goto/SdkForPHPV3/iam-2010-05-08/ListRoles) in *AWS SDK for PHP API Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example retrieves a list of all of the IAM roles in the AWS account.**
+
+```
+Get-IAMRoleList
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example retrieves a list of all of the IAM roles in the AWS account.**
+
+```
+Get-IAMRoleList
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
+
+```
+def list_roles(count):
+    """
+    Lists the specified number of roles for the account.
+
+    :param count: The number of roles to list.
+    """
+    try:
+        roles = list(iam.roles.limit(count=count))
+        for role in roles:
+            logger.info("Role: %s", role.name)
+    except ClientError:
+        logger.exception("Couldn't list roles for the account.")
+        raise
+    else:
+        return roles
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/goto/boto3/iam-2010-05-08/ListRoles) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ Ruby ]
+
+**SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
+
+```
+  # Lists IAM roles up to a specified count.
+  # @param count [Integer] the maximum number of roles to list.
+  # @return [Array<String>] the names of the roles.
+  def list_roles(count)
+    role_names = []
+    roles_counted = 0
+
+    @iam_client.list_roles.each_page do |page|
+      page.roles.each do |role|
+        break if roles_counted >= count
+
+        @logger.info("\t#{roles_counted + 1}: #{role.role_name}")
+        role_names << role.role_name
+        roles_counted += 1
+      end
+      break if roles_counted >= count
+    end
+
+    role_names
+  rescue Aws::IAM::Errors::ServiceError => e
+    @logger.error("Couldn't list roles for the account. Here's why:")
+    @logger.error("\t#{e.code}: #{e.message}")
+    raise
+  end
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/goto/SdkForRubyV3/iam-2010-05-08/ListRoles) in *AWS SDK for Ruby API Reference*.
+
+------
+#### [ Rust ]
+
+**SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
+
+```
+pub async fn list_roles(
+    client: &iamClient,
+    path_prefix: Option<String>,
+    marker: Option<String>,
+    max_items: Option<i32>,
+) -> Result<ListRolesOutput, SdkError<ListRolesError>> {
+    let response = client
+        .list_roles()
+        .set_path_prefix(path_prefix)
+        .set_marker(marker)
+        .set_max_items(max_items)
+        .send()
+        .await?;
+    Ok(response)
+}
+```
++  For API details, see [ListRoles](https://docs.rs/aws-sdk-iam/latest/aws_sdk_iam/client/struct.Client.html#method.list_roles) in *AWS SDK for Rust API reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
+
+```
+    TRY.
+        oo_result = lo_iam->listroles( ).
+        MESSAGE 'Retrieved role list.' TYPE 'I'.
+      CATCH /aws1/cx_iamservicefailureex.
+        MESSAGE 'Service failure when listing roles.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [ListRoles](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+#### [ Swift ]
+
+**SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
+
+```
+import AWSIAM
+import AWSS3
+
+    public func listRoles() async throws -> [String] {
+        var roleList: [String] = []
+
+        // Use "Paginated" to get all the roles.
+        // This lets the SDK handle the 'isTruncated' in "ListRolesOutput".
+        let input = ListRolesInput()
+        let pages = client.listRolesPaginated(input: input)
+
+        do {
+            for try await page in pages {
+                guard let roles = page.roles else {
+                    print("Error: no roles returned.")
+                    continue
+                }
+
+                for role in roles {
+                    if let name = role.roleName {
+                        roleList.append(name)
+                    }
+                }
+            }
+        } catch {
+            print("ERROR: listRoles:", dump(error))
+            throw error
+        }
+        return roleList
+    }
+```
++  For API details, see [ListRoles](https://sdk.amazonaws.com/swift/api/awsiam/latest/documentation/awsiam/iamclient/listroles(input:)) in *AWS SDK for Swift API reference*.
+
+------

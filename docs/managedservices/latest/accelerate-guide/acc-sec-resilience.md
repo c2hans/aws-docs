@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-sec-resilience.html
+---
+
+# Resilience in Accelerate
+<a name="acc-sec-resilience"></a>
+
+The AWS global infrastructure is built around AWS Regions and availability zones. AWS Regions provide multiple physically separated and isolated availability zones, which are connected with low-latency, high-throughput, and highly redundant networking. With availability zones, you can design and operate applications and databases that automatically fail over between zones without interruption. availability zones are more highly available, fault tolerant, and scalable than traditional single or multiple data center infrastructures.
+
+For more information about AWS Regions and availability zones, see [AWS global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure).
+
+For information about AMS Accelerate continuity management, see [Continuity management in AMS Accelerate](acc-backup.md).

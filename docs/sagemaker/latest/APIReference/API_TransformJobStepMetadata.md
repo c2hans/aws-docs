@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_TransformJobStepMetadata.html
+---
+
+# TransformJobStepMetadata
+<a name="API_TransformJobStepMetadata"></a>
+
+Metadata for a transform job step.
+
+## Contents
+<a name="API_TransformJobStepMetadata_Contents"></a>
+
+ ** Arn **   <a name="sagemaker-Type-TransformJobStepMetadata-Arn"></a>
+The Amazon Resource Name (ARN) of the transform job that was run by this step execution.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:transform-job/.*`
+Required: No
+
+## See Also
+<a name="API_TransformJobStepMetadata_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/TransformJobStepMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/TransformJobStepMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/TransformJobStepMetadata)

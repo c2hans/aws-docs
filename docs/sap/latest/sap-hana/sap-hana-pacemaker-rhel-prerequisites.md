@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-pacemaker-rhel-prerequisites.html
+---
+
+# Prerequisites
+<a name="sap-hana-pacemaker-rhel-prerequisites"></a>
+
+**Topics**
++ [AWS Infrastructure Setup](sap-hana-pacemaker-rhel-infra-setup.md)
++ [EC2 Instance Configuration](sap-hana-pacemaker-rhel-ec2-configuration.md)
++ [Operating System Requirements](sap-hana-pacemaker-rhel-os-settings.md)

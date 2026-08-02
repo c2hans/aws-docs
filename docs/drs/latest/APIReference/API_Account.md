@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/drs/latest/APIReference/API_Account.html
+---
+
+# Account
+<a name="API_Account"></a>
+
+AWS account.
+
+## Contents
+<a name="API_Account_Contents"></a>
+
+ ** accountID **   <a name="drs-Type-Account-accountID"></a>
+Account ID of AWS account.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `.*[0-9]{12,}.*`
+Required: No
+
+## See Also
+<a name="API_Account_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/drs-2020-02-26/Account)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/drs-2020-02-26/Account)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/drs-2020-02-26/Account)

@@ -1,0 +1,83 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ec2-transitgatewayconnect-tag.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::EC2::TransitGatewayConnect Tag
+<a name="aws-properties-ec2-transitgatewayconnect-tag"></a>
+
+Specifies a tag. For more information, see [Resource tags](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html).
+
+## Syntax
+<a name="aws-properties-ec2-transitgatewayconnect-tag-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-ec2-transitgatewayconnect-tag-syntax.json"></a>
+
+```
+{
+  "[Key](#cfn-ec2-transitgatewayconnect-tag-key)" : {{String}},
+  "[Value](#cfn-ec2-transitgatewayconnect-tag-value)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-ec2-transitgatewayconnect-tag-syntax.yaml"></a>
+
+```
+  [Key](#cfn-ec2-transitgatewayconnect-tag-key): {{String}}
+  [Value](#cfn-ec2-transitgatewayconnect-tag-value): {{String}}
+```
+
+## Properties
+<a name="aws-properties-ec2-transitgatewayconnect-tag-properties"></a>
+
+`Key`  <a name="cfn-ec2-transitgatewayconnect-tag-key"></a>
+The tag key.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Value`  <a name="cfn-ec2-transitgatewayconnect-tag-value"></a>
+The tag value.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## Examples
+<a name="aws-properties-ec2-transitgatewayconnect-tag--examples"></a>
+
+###
+<a name="aws-properties-ec2-transitgatewayconnect-tag--examples--"></a>
+
+This example specifies two tags for the Connect attachment.
+
+#### JSON
+<a name="aws-properties-ec2-transitgatewayconnect-tag--examples----json"></a>
+
+```
+"Tags" : [
+   {
+      "Key" : "key1",
+      "Value" : "value1"
+   },
+   {
+      "Key" : "key2",
+      "Value" : "value2"
+   }
+]
+```
+
+#### YAML
+<a name="aws-properties-ec2-transitgatewayconnect-tag--examples----yaml"></a>
+
+```
+Tags:
+  - Key: "key1"
+    Value: "value1"
+  - Key: "key2"
+    Value: "value2"
+```

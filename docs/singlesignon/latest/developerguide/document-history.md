@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/singlesignon/latest/developerguide/document-history.html
+---
+
+# Document History
+<a name="document-history"></a>
+
+The following table describes the important changes to the documentation in this release of the *IAM Identity Center SCIM Implementation Developer Guide*.
++ **Latest documentation update: **July 26, 2022
+
+| Change | Description | Date Changed |
+| --- | --- | --- |
+| Added ListResourceTypes and ListSchemas | Added the following API operations [ListResourceTypes](listresourcetypes.md) and [ListSchemas](listschemas.md). | February 7, 2024 |
+| AWS Single Sign-On (AWS SSO) renamed to AWS IAM Identity Center | AWS introduces AWS IAM Identity Center. IAM Identity Center expands the capabilities of AWS Identity and Access Management (IAM) to help you centrally manage account and access to cloud applications for your workforce users. For more information, see [IAM Identity Center rename](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html#renamed). | July 26, 2022 |
+| Updates to GetGroup and ListGroups | Added information about what's not supported for GetGroup. Fixed a typo in ListGroups. | March 18, 2022 |
+| Updates to CreateGroup | Added a constraint for the maximum members allowed in a single request. | March 1, 2022 |
+| Updates to PatchUser | Added nickName to the bullet covering which modifications are allowed. | February 1, 2022 |
+| Updates to ListUsers and ListGroups | Added information about 50 maximum results returned. | April 9, 2021 |
+| Updates to PatchGroup and added new topic | Added member operations examples to PatchGroup and added new Making API Requests topic. | September 28, 2020 |
+| New guide | This is the first release of the IAM Identity Center SCIM Implementation Developer Guide. | August 27, 2020 |

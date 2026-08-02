@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_budgets_BudgetNotificationsForAccount.html
+---
+
+# BudgetNotificationsForAccount
+<a name="API_budgets_BudgetNotificationsForAccount"></a>
+
+ The budget name and associated notifications for an account.
+
+## Contents
+<a name="API_budgets_BudgetNotificationsForAccount_Contents"></a>
+
+ ** BudgetName **   <a name="awscostmanagement-Type-budgets_BudgetNotificationsForAccount-BudgetName"></a>
+ A string that represents the budget name. The ":" and "\\" characters, and the "/action/" substring, aren't allowed.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `^(?![^:\\]*/action/|(?i).*<script>.*</script>.*)[^:\\]+$`
+Required: No
+
+ ** Notifications **   <a name="awscostmanagement-Type-budgets_BudgetNotificationsForAccount-Notifications"></a>
+ A list of notifications.
+Type: Array of [Notification](API_budgets_Notification.md) objects
+Required: No
+
+## See Also
+<a name="API_budgets_BudgetNotificationsForAccount_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/budgets-2016-10-20/BudgetNotificationsForAccount)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/budgets-2016-10-20/BudgetNotificationsForAccount)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/budgets-2016-10-20/BudgetNotificationsForAccount)

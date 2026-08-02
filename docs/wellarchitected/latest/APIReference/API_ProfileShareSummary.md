@@ -1,0 +1,43 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/APIReference/API_ProfileShareSummary.html
+---
+
+# ProfileShareSummary
+<a name="API_ProfileShareSummary"></a>
+
+Summary of a profile share.
+
+## Contents
+<a name="API_ProfileShareSummary_Contents"></a>
+
+ ** SharedWith **   <a name="wellarchitected-Type-ProfileShareSummary-SharedWith"></a>
+The AWS account ID, organization ID, or organizational unit (OU) ID with which the workload, lens, profile, or review template is shared.
+Type: String
+Length Constraints: Minimum length of 12. Maximum length of 2048.
+Required: No
+
+ ** ShareId **   <a name="wellarchitected-Type-ProfileShareSummary-ShareId"></a>
+The ID associated with the share.
+Type: String
+Pattern: `[0-9a-f]{32}`
+Required: No
+
+ ** Status **   <a name="wellarchitected-Type-ProfileShareSummary-Status"></a>
+The status of the share request.
+Type: String
+Valid Values: `ACCEPTED | REJECTED | PENDING | REVOKED | EXPIRED | ASSOCIATING | ASSOCIATED | FAILED`
+Required: No
+
+ ** StatusMessage **   <a name="wellarchitected-Type-ProfileShareSummary-StatusMessage"></a>
+Profile share invitation status message.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Required: No
+
+## See Also
+<a name="API_ProfileShareSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/wellarchitected-2020-03-31/ProfileShareSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/wellarchitected-2020-03-31/ProfileShareSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/wellarchitected-2020-03-31/ProfileShareSummary)

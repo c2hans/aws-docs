@@ -1,0 +1,287 @@
+---
+source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/-greengrass-groups-groupid-certificateauthorities.html
+---
+
+End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
+
+# /greengrass/groups/GroupId/certificateauthorities
+<a name="-greengrass-groups-groupid-certificateauthorities"></a>
+
+## GET
+<a name="-greengrass-groups-groupid-certificateauthorities-get"></a>
+
+ `GET /greengrass/groups/{{GroupId}}/certificateauthorities`
+
+Operation ID: [ListGroupCertificateAuthorities](listgroupcertificateauthorities-get.md)
+
+Retrieves the current CAs for a group.
+
+Produces: application/json
+
+### Path Parameters
+<a name="-greengrass-groups-groupid-certificateauthorities-get-path"></a>
+
+[**GroupId**](parameters-groupidparam.md)
+The ID of the Greengrass group.
+where used: path; required: true
+type: string
+
+### CLI
+<a name="-greengrass-groups-groupid-certificateauthorities-get-cli"></a>
+
+```
+aws greengrass list-group-certificate-authorities \
+  --group-id <value>  \
+  [--cli-input-json <value>] \
+  [--generate-cli-skeleton]
+```
+
+cli-input-json format:
+
+```
+{
+"GroupId": "string"
+}
+```
+
+### Responses
+<a name="-greengrass-groups-groupid-certificateauthorities-get-responses"></a>
+
+**200**
+Success. The response body contains the PKI configuration.
+ [ ListGroupCertificateAuthoritiesResponse](definitions-listgroupcertificateauthoritiesresponse.md)
+
+```
+{
+"GroupCertificateAuthorities": [
+  {
+    "GroupCertificateAuthorityId": "string",
+    "GroupCertificateAuthorityArn": "string"
+  }
+]
+}
+```
+ListGroupCertificateAuthoritiesResponse
+type: object
+GroupCertificateAuthorities
+A list of certificate authorities associated with the group.
+type: array
+items: [GroupCertificateAuthorityProperties](definitions-groupcertificateauthorityproperties.md)
+Group Certificate Authority Properties
+Information about a certificate authority for a group.
+type: object
+GroupCertificateAuthorityId
+The ID of the certificate authority for the group.
+type: string
+GroupCertificateAuthorityArn
+The ARN of the certificate authority for the group.
+type: string
+
+**400**
+Invalid request.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string
+
+**500**
+Server error.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string
+
+## POST
+<a name="-greengrass-groups-groupid-certificateauthorities-post"></a>
+
+ `POST /greengrass/groups/{{GroupId}}/certificateauthorities`
+
+Operation ID: [CreateGroupCertificateAuthority](creategroupcertificateauthority-post.md)
+
+Creates a CA for the group. If a CA already exists, it rotates the existing CA.
+
+Produces: application/json
+
+### Header Parameters
+<a name="-greengrass-groups-groupid-certificateauthorities-post-header"></a>
+
+[**X-Amzn-Client-Token**](parameters-clienttoken.md)
+A client token used to correlate requests and responses.
+where used: header; required: false
+type: string
+
+### Path Parameters
+<a name="-greengrass-groups-groupid-certificateauthorities-post-path"></a>
+
+[**GroupId**](parameters-groupidparam.md)
+The ID of the Greengrass group.
+where used: path; required: true
+type: string
+
+### CLI
+<a name="-greengrass-groups-groupid-certificateauthorities-post-cli"></a>
+
+```
+aws greengrass create-group-certificate-authority \
+  --group-id <value> \
+  [--amzn-client-token <value>]  \
+  [--cli-input-json <value>] \
+  [--generate-cli-skeleton]
+```
+
+cli-input-json format:
+
+```
+{
+"GroupId": "string",
+"AmznClientToken": "string"
+}
+```
+
+### Responses
+<a name="-greengrass-groups-groupid-certificateauthorities-post-responses"></a>
+
+**200**
+Success. The response body contains the new, active CA ARN.
+ [ CreateGroupCertificateAuthorityResponse](definitions-creategroupcertificateauthorityresponse.md)
+
+```
+{
+"GroupCertificateAuthorityArn": "string"
+}
+```
+CreateGroupCertificateAuthorityResponse
+type: object
+GroupCertificateAuthorityArn
+The ARN of the group certificate authority.
+type: string
+
+**400**
+Invalid request.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string
+
+**500**
+Server error.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string

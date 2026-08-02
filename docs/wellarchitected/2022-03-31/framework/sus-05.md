@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/sus-05.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# SUS 5 How do your hardware management and usage practices support your sustainability goals?
+<a name="sus-05"></a>
+
+Look for opportunities to reduce workload sustainability impacts by making changes to your hardware management practices. Minimize the amount of hardware needed to provision and deploy, and select the most efficient hardware for your individual workload.
+
+**Topics**
++ [SUS05-BP01 Use the minimum amount of hardware to meet your needs](sus_sus_hardware_a2.md)
++ [SUS05-BP02 Use instance types with the least impact](sus_sus_hardware_a3.md)
++ [SUS05-BP03 Use managed services](sus_sus_hardware_a4.md)
++ [SUS05-BP04 Optimize your use of GPUs](sus_sus_hardware_a5.md)

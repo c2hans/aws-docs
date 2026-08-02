@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-quicksight-analysis-bodysectionrepeatdimensionconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::QuickSight::Analysis BodySectionRepeatDimensionConfiguration
+<a name="aws-properties-quicksight-analysis-bodysectionrepeatdimensionconfiguration"></a>
+
+Describes the dataset column and constraints for the dynamic values used to repeat the contents of a section. The dataset column is either **Category** or **Numeric** column configuration
+
+## Syntax
+<a name="aws-properties-quicksight-analysis-bodysectionrepeatdimensionconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-quicksight-analysis-bodysectionrepeatdimensionconfiguration-syntax.json"></a>
+
+```
+{
+  "[DynamicCategoryDimensionConfiguration](#cfn-quicksight-analysis-bodysectionrepeatdimensionconfiguration-dynamiccategorydimensionconfiguration)" : {{BodySectionDynamicCategoryDimensionConfiguration}},
+  "[DynamicNumericDimensionConfiguration](#cfn-quicksight-analysis-bodysectionrepeatdimensionconfiguration-dynamicnumericdimensionconfiguration)" : {{BodySectionDynamicNumericDimensionConfiguration}}
+}
+```
+
+### YAML
+<a name="aws-properties-quicksight-analysis-bodysectionrepeatdimensionconfiguration-syntax.yaml"></a>
+
+```
+  [DynamicCategoryDimensionConfiguration](#cfn-quicksight-analysis-bodysectionrepeatdimensionconfiguration-dynamiccategorydimensionconfiguration): {{
+    BodySectionDynamicCategoryDimensionConfiguration}}
+  [DynamicNumericDimensionConfiguration](#cfn-quicksight-analysis-bodysectionrepeatdimensionconfiguration-dynamicnumericdimensionconfiguration): {{
+    BodySectionDynamicNumericDimensionConfiguration}}
+```
+
+## Properties
+<a name="aws-properties-quicksight-analysis-bodysectionrepeatdimensionconfiguration-properties"></a>
+
+`DynamicCategoryDimensionConfiguration`  <a name="cfn-quicksight-analysis-bodysectionrepeatdimensionconfiguration-dynamiccategorydimensionconfiguration"></a>
+Describes the **Category** dataset column and constraints around the dynamic values that will be used in repeating the section contents.
+*Required*: No
+*Type*: [BodySectionDynamicCategoryDimensionConfiguration](aws-properties-quicksight-analysis-bodysectiondynamiccategorydimensionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DynamicNumericDimensionConfiguration`  <a name="cfn-quicksight-analysis-bodysectionrepeatdimensionconfiguration-dynamicnumericdimensionconfiguration"></a>
+Describes the **Numeric** dataset column and constraints around the dynamic values used to repeat the contents of a section.
+*Required*: No
+*Type*: [BodySectionDynamicNumericDimensionConfiguration](aws-properties-quicksight-analysis-bodysectiondynamicnumericdimensionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/m2/latest/userguide/applications-m2-other-resources-structure.html
+---
+
+**AWS Mainframe Modernization self-managed experience** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization self-managed experience, explore capabilities from vendor-direct offerings and from AWS Transform. Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
+
+**AWS Mainframe Modernization Service (Managed Runtime Environment experience)** is no longer open to new customers. For capabilities similar to AWS Mainframe Modernization Service (Managed Runtime Environment experience) explore AWS Mainframe Modernization Service (Self-Managed Experience). Existing customers can continue to use the service as normal. For more information, see [AWS Mainframe Modernization availability change](https://docs.aws.amazon.com/m2/latest/userguide/mainframe-modernization-availability-change.html).
+
+# Structure of AWS Transform for mainframe managed applications
+<a name="applications-m2-other-resources-structure"></a>
+
+If you use the AWS Transform for mainframe refactoring pattern, the AWS Transform for mainframe runtime engine expects the following structure in the folder specified by `app-location` in your application definition:
+
+![The expected structure within the application-name folder.](http://docs.aws.amazon.com/m2/latest/userguide/images/ba-app-structure.png)
+
+**config**
+Contains the YAML files for your project. These are the YAML files specific to your application, typically named something like `application-planetsdemo.yaml` and not the `application-main.yaml` file that AWS Mainframe Modernization supplies and sets up automatically for you.
+
+**webapps**
+Contains the `war` files for your application. Those files are an output of the modernization process.
+
+An application can also have the following optional folders:
+
+jics/sql
+Contains the `initJics.sql` script that initializes the JICS database for your application.
+
+scripts
+Contains application scripts, which you can also supply directly inside the `war` files.
+
+sql
+Contains application SQL files, which you can also supply directly inside the `war` files.
+
+lnk
+Contains application LNK files, which you can also supply directly inside the `war` files.
+
+extra
+Contains jars that can provide additional capabilities for the modernized application.
+
+## Managing an application's Java options
+<a name="java-memory-management"></a>
+
+To manage certain Java options for the application, add a properties file named `tomcat.properties` to the folder specified by `app-location`. This file can have three properties: `xms`, which specifies the minimum Java memory consumption, `xmx`, which specifies the maximum Java memory consumption, and `dnscachettl`, that manages the cache duration for dns resolutions. The following is an example of the contents of a valid `tomcat.properties` file.
+
+```
+xms=512M
+xmx=1G
+dnscachettl=5
+```
+
+The values that you specify for  the first  two properties can be in any of the following units:
++ Bytes: don't specify a unit.
++ Kilobytes: append a K to the value.
++ Megabytes: append an M to the value.
++ Gigabytes: append a G to the value.
+
+The value for the third property represents the cache duration in seconds, and can have value of -1 (cache forever), or can range from 0 (never cache) to 999. In the context of managed application deployments, the default value is -1.

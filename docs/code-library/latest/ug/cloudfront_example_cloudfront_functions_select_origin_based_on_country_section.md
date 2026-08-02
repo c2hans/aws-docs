@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudfront_example_cloudfront_functions_select_origin_based_on_country_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Route requests to an origin closer to the viewer in a CloudFront Functions viewer request event
+<a name="cloudfront_example_cloudfront_functions_select_origin_based_on_country_section"></a>
+
+The following code example shows how to route requests to an origin closer to the viewer in a CloudFront Functions viewer request event.
+
+------
+#### [ JavaScript ]
+
+**JavaScript runtime 2.0 for CloudFront Functions**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [CloudFront Functions examples](https://github.com/aws-samples/amazon-cloudfront-functions/tree/main/select-origin-based-on-country) repository.
+
+```
+import cf from 'cloudfront';
+
+function handler(event) {
+    const request = event.request;
+    const headers = request.headers;
+    const country = headers['cloudfront-viewer-country'] &&
+        headers['cloudfront-viewer-country'].value;
+
+    //List of Regions with S3 buckets containing content
+    const countryToRegion = {
+        'DE': 'eu-central-1',
+        'IE': 'eu-west-1',
+        'GB': 'eu-west-2',
+        'FR': 'eu-west-3',
+        'JP': 'ap-northeast-1',
+        'IN': 'ap-south-1'
+    };
+
+    const DEFAULT_REGION = 'us-east-1';
+
+    const selectedRegion = (country && countryToRegion[country]) || DEFAULT_REGION;
+
+    const domainName =
+        `cloudfront-functions-demo-bucket-in-${selectedRegion}.s3.${selectedRegion}.amazonaws.com`;
+
+    cf.updateRequestOrigin({
+        "domainName": domainName,
+        "originAccessControlConfig": {
+            "enabled": true,
+            "region": selectedRegion,
+            "signingBehavior": "always",
+            "signingProtocol": "sigv4",
+            "originType": "s3"
+        },
+    });
+
+    return request;
+}
+```
+
+------

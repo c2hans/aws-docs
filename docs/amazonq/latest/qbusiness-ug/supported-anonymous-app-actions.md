@@ -1,0 +1,167 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-anonymous-app-actions.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# Managing Amazon Q Business anonymous application environments
+<a name="supported-anonymous-app-actions"></a>
+
+To manage an Amazon Q Business application environment, you can take the following actions:
+
+**Topics**
++ [Deleting an anonymous application environment](#delete-anonymous-app)
++ [Getting anonymous application environment properties](#describe-anonymous-app)
++ [Listing anonymous application environments](#list-anonymous-app)
++ [Updating an application environment](#update-anonymous-app)
+
+## Deleting an anonymous application environment
+<a name="delete-anonymous-app"></a>
+
+To delete an Amazon Q Business anonymous application environment, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteApplication.html) API operation.
+
+The following tabs provide a procedure for the console and code example for the AWS CLI.
+
+------
+#### [ Console ]
+
+**To delete an Amazon Q Business application environment**
+
+1. Sign in to the AWS Management Console and open the Amazon Q Business console.
+
+1. In **Applications**, choose **Actions**.
+
+1. Choose **Delete**.
+
+1. In the dialog box that opens, type **Delete** to confirm deletion, and then choose **Delete**.
+
+   You are returned to the service console while your application environment is deleted. When the deletion process is complete, the console displays a message confirming successful deletion.
+
+------
+#### [ AWS CLI ]
+
+**To delete an Amazon Q Business application environment**
+
+```
+aws qbusiness delete-application \
+--application-id {{application-id}}
+```
+
+------
+
+## Getting anonymous application environment properties
+<a name="describe-anonymous-app"></a>
+
+To get the properties of an Amazon Q Business application environment, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetApplication.html) API operation.
+
+The following tabs provide a procedure for the console and code examples for the AWS CLI.
+
+------
+#### [ Console ]
+
+**To get properties of an Amazon Q Business application environment**
+
+1. Sign in to the AWS Management Console and open the Amazon Q Business console.
+
+1. For **Applications**, select the name of your application environment from the list of application environments.
+
+1. On **Application settings**, the following properties are available:
+   + **Application name** – The name that you chose for your application environment.
+   + **Application ID** – The ID assigned to your application environment.
+   + **Subtitle** – The subtitle that you chose to assign to your application environment.
+   + **Service access** – The service access role that your application environment is using.
+   + **Title** – The title that you gave to your application environment.
+   + **Application status** – The status of your application environment.
+
+   To update a setting, select **Edit**.
+
+------
+#### [ AWS CLI ]
+
+**To get Amazon Q Business application environment properties **
+
+```
+aws qbusiness get-application \
+--application-id {{application-id}}
+```
+
+------
+
+## Listing anonymous application environments
+<a name="list-anonymous-app"></a>
+
+To list Amazon Q Business application environments, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListApplications.html) API operation.
+
+The following tabs provide a procedure for the console and code examples for the AWS CLI.
+
+------
+#### [ Console ]
+
+**To list your Amazon Q Business application environments**
+
+1. Sign in to the AWS Management Console and open the Amazon Q Business console.
+
+1. In **Applications**, all your configured application environments are listed.
+
+------
+#### [ AWS CLI ]
+
+**To list Amazon Q Business application environments **
+
+```
+aws qbusiness list-applications \
+--max-results {{max-results-to-return}}
+```
+
+------
+
+## Updating an application environment
+<a name="update-anonymous-app"></a>
+
+To update an Amazon Q Business application environment, you can use the console or the [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateApplication.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateApplication.html) API operation.
+
+The following tabs provide a procedure for the console and code examples for the AWS CLI.
+
+------
+#### [ Console ]
+
+**To update an Amazon Q Business application environment**
+
+**Option 1**
+
+1. Sign in to the AWS Management Console and open the Amazon Q Business console.
+
+1. In **Applications**, select the name of your application environment from the list of application environments.
+
+1. In **Applications**, choose **Actions**.
+
+1. Choose **Edit**.
+
+   On the **Update application environment** page, edit your application environment settings.
+
+**Option 2**
+
+1. Sign in to the AWS Management Console and open the Amazon Q Business console.
+
+1. In **Applications**, select the name of your application environment from the list of application environments.
+
+1. On the application environment page, select **Edit** from the page header, or select **Edit** from **Application settings**.
+
+1. Choose **Edit**.
+
+   On the **Update application environment** page, edit your application environment settings.
+
+------
+#### [ AWS CLI ]
+
+**To update an Amazon Q Business application environment **
+
+```
+aws qbusiness update-application \
+--application-id {{application-id}} \
+--display-name {{application-name}} \
+--role-arn {{your-role-arn}} \
+--description {{application-description}} \
+```
+
+------

@@ -1,0 +1,62 @@
+---
+source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Types.html
+---
+
+# Data Types
+<a name="API_Types"></a>
+
+The AWS Directory Service API contains several data types that various actions use. This section describes each data type in detail.
+
+**Note**
+The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
+
+The following data types are supported:
++  [Assessment](API_Assessment.md)
++  [AssessmentConfiguration](API_AssessmentConfiguration.md)
++  [AssessmentReport](API_AssessmentReport.md)
++  [AssessmentSummary](API_AssessmentSummary.md)
++  [AssessmentValidation](API_AssessmentValidation.md)
++  [Attribute](API_Attribute.md)
++  [Certificate](API_Certificate.md)
++  [CertificateInfo](API_CertificateInfo.md)
++  [ClientAuthenticationSettingInfo](API_ClientAuthenticationSettingInfo.md)
++  [ClientCertAuthSettings](API_ClientCertAuthSettings.md)
++  [Computer](API_Computer.md)
++  [ConditionalForwarder](API_ConditionalForwarder.md)
++  [DirectoryConnectSettings](API_DirectoryConnectSettings.md)
++  [DirectoryConnectSettingsDescription](API_DirectoryConnectSettingsDescription.md)
++  [DirectoryDescription](API_DirectoryDescription.md)
++  [DirectoryLimits](API_DirectoryLimits.md)
++  [DirectorySizeUpdateSettings](API_DirectorySizeUpdateSettings.md)
++  [DirectoryVpcSettings](API_DirectoryVpcSettings.md)
++  [DirectoryVpcSettingsDescription](API_DirectoryVpcSettingsDescription.md)
++  [DomainController](API_DomainController.md)
++  [EventTopic](API_EventTopic.md)
++  [HybridAdministratorAccountUpdate](API_HybridAdministratorAccountUpdate.md)
++  [HybridCustomerInstancesSettings](API_HybridCustomerInstancesSettings.md)
++  [HybridSettingsDescription](API_HybridSettingsDescription.md)
++  [HybridUpdateActivities](API_HybridUpdateActivities.md)
++  [HybridUpdateInfoEntry](API_HybridUpdateInfoEntry.md)
++  [HybridUpdateValue](API_HybridUpdateValue.md)
++  [IpRoute](API_IpRoute.md)
++  [IpRouteInfo](API_IpRouteInfo.md)
++  [LDAPSSettingInfo](API_LDAPSSettingInfo.md)
++  [LogSubscription](API_LogSubscription.md)
++  [NetworkUpdateSettings](API_NetworkUpdateSettings.md)
++  [OSUpdateSettings](API_OSUpdateSettings.md)
++  [OwnerDirectoryDescription](API_OwnerDirectoryDescription.md)
++  [RadiusSettings](API_RadiusSettings.md)
++  [RegionDescription](API_RegionDescription.md)
++  [RegionsInfo](API_RegionsInfo.md)
++  [SchemaExtensionInfo](API_SchemaExtensionInfo.md)
++  [Setting](API_Setting.md)
++  [SettingEntry](API_SettingEntry.md)
++  [SharedDirectory](API_SharedDirectory.md)
++  [ShareTarget](API_ShareTarget.md)
++  [Snapshot](API_Snapshot.md)
++  [SnapshotLimits](API_SnapshotLimits.md)
++  [Tag](API_Tag.md)
++  [Trust](API_Trust.md)
++  [UnshareTarget](API_UnshareTarget.md)
++  [UpdateInfoEntry](API_UpdateInfoEntry.md)
++  [UpdateValue](API_UpdateValue.md)

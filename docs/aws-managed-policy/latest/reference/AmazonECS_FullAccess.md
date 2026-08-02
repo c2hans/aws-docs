@@ -1,0 +1,291 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonECS_FullAccess.html
+---
+
+# AmazonECS\_FullAccess
+<a name="AmazonECS_FullAccess"></a>
+
+**Description**: Provides administrative access to Amazon ECS resources and enables ECS features through access to other AWS service resources, including VPCs, Auto Scaling groups, and CloudFormation stacks.
+
+`AmazonECS_FullAccess` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AmazonECS_FullAccess-how-to-use"></a>
+
+You can attach `AmazonECS_FullAccess` to your users, groups, and roles.
+
+## Policy details
+<a name="AmazonECS_FullAccess-details"></a>
++ **Type**: AWS managed policy
++ **Creation time**: November 07, 2017, 21:36 UTC
++ **Edited time:** August 13, 2024, 19:39 UTC
++ **ARN**: `arn:aws:iam::aws:policy/AmazonECS_FullAccess`
+
+## Policy version
+<a name="AmazonECS_FullAccess-version"></a>
+
+**Policy version:** v21 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AmazonECS_FullAccess-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "ECSIntegrationsManagementPolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "application-autoscaling:DeleteScalingPolicy",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:DescribeScalableTargets",
+        "application-autoscaling:DescribeScalingActivities",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:RegisterScalableTarget",
+        "appmesh:DescribeVirtualGateway",
+        "appmesh:DescribeVirtualNode",
+        "appmesh:ListMeshes",
+        "appmesh:ListVirtualGateways",
+        "appmesh:ListVirtualNodes",
+        "autoscaling:CreateAutoScalingGroup",
+        "autoscaling:CreateLaunchConfiguration",
+        "autoscaling:DeleteAutoScalingGroup",
+        "autoscaling:DeleteLaunchConfiguration",
+        "autoscaling:Describe*",
+        "autoscaling:UpdateAutoScalingGroup",
+        "cloudformation:CreateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeStack*",
+        "cloudformation:UpdateStack",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:GetMetricStatistics",
+        "cloudwatch:PutMetricAlarm",
+        "codedeploy:BatchGetApplicationRevisions",
+        "codedeploy:BatchGetApplications",
+        "codedeploy:BatchGetDeploymentGroups",
+        "codedeploy:BatchGetDeployments",
+        "codedeploy:ContinueDeployment",
+        "codedeploy:CreateApplication",
+        "codedeploy:CreateDeployment",
+        "codedeploy:CreateDeploymentGroup",
+        "codedeploy:GetApplication",
+        "codedeploy:GetApplicationRevision",
+        "codedeploy:GetDeployment",
+        "codedeploy:GetDeploymentConfig",
+        "codedeploy:GetDeploymentGroup",
+        "codedeploy:GetDeploymentTarget",
+        "codedeploy:ListApplicationRevisions",
+        "codedeploy:ListApplications",
+        "codedeploy:ListDeploymentConfigs",
+        "codedeploy:ListDeploymentGroups",
+        "codedeploy:ListDeployments",
+        "codedeploy:ListDeploymentTargets",
+        "codedeploy:RegisterApplicationRevision",
+        "codedeploy:StopDeployment",
+        "ec2:AssociateRouteTable",
+        "ec2:AttachInternetGateway",
+        "ec2:AuthorizeSecurityGroupIngress",
+        "ec2:CancelSpotFleetRequests",
+        "ec2:CreateInternetGateway",
+        "ec2:CreateLaunchTemplate",
+        "ec2:CreateRoute",
+        "ec2:CreateRouteTable",
+        "ec2:CreateSecurityGroup",
+        "ec2:CreateSubnet",
+        "ec2:CreateVpc",
+        "ec2:DeleteLaunchTemplate",
+        "ec2:DeleteSubnet",
+        "ec2:DeleteVpc",
+        "ec2:Describe*",
+        "ec2:DetachInternetGateway",
+        "ec2:DisassociateRouteTable",
+        "ec2:ModifySubnetAttribute",
+        "ec2:ModifyVpcAttribute",
+        "ec2:RequestSpotFleet",
+        "ec2:RunInstances",
+        "ecs:*",
+        "elasticfilesystem:DescribeAccessPoints",
+        "elasticfilesystem:DescribeFileSystems",
+        "elasticloadbalancing:CreateListener",
+        "elasticloadbalancing:CreateLoadBalancer",
+        "elasticloadbalancing:CreateRule",
+        "elasticloadbalancing:CreateTargetGroup",
+        "elasticloadbalancing:DeleteListener",
+        "elasticloadbalancing:DeleteLoadBalancer",
+        "elasticloadbalancing:DeleteRule",
+        "elasticloadbalancing:DeleteTargetGroup",
+        "elasticloadbalancing:DescribeListeners",
+        "elasticloadbalancing:DescribeLoadBalancers",
+        "elasticloadbalancing:DescribeRules",
+        "elasticloadbalancing:DescribeTargetGroups",
+        "events:DeleteRule",
+        "events:DescribeRule",
+        "events:ListRuleNamesByTarget",
+        "events:ListTargetsByRule",
+        "events:PutRule",
+        "events:PutTargets",
+        "events:RemoveTargets",
+        "fsx:DescribeFileSystems",
+        "iam:ListAttachedRolePolicies",
+        "iam:ListInstanceProfiles",
+        "iam:ListRoles",
+        "lambda:ListFunctions",
+        "logs:CreateLogGroup",
+        "logs:DescribeLogGroups",
+        "logs:FilterLogEvents",
+        "route53:CreateHostedZone",
+        "route53:DeleteHostedZone",
+        "route53:GetHealthCheck",
+        "route53:GetHostedZone",
+        "route53:ListHostedZonesByName",
+        "servicediscovery:CreatePrivateDnsNamespace",
+        "servicediscovery:CreateService",
+        "servicediscovery:DeleteService",
+        "servicediscovery:GetNamespace",
+        "servicediscovery:GetOperation",
+        "servicediscovery:GetService",
+        "servicediscovery:ListNamespaces",
+        "servicediscovery:ListServices",
+        "servicediscovery:UpdateService",
+        "sns:ListTopics"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "SSMPolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:GetParameter",
+        "ssm:GetParameters",
+        "ssm:GetParametersByPath"
+      ],
+      "Resource" : "arn:aws:ssm:*:*:parameter/aws/service/ecs*"
+    },
+    {
+      "Sid" : "ManagedCloudformationResourcesCleanupPolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "ec2:DeleteInternetGateway",
+        "ec2:DeleteRoute",
+        "ec2:DeleteRouteTable",
+        "ec2:DeleteSecurityGroup"
+      ],
+      "Resource" : [
+        "*"
+      ],
+      "Condition" : {
+        "StringLike" : {
+          "ec2:ResourceTag/aws:cloudformation:stack-name" : "EC2ContainerService-*"
+        }
+      }
+    },
+    {
+      "Sid" : "TasksPassRolePolicy",
+      "Action" : "iam:PassRole",
+      "Effect" : "Allow",
+      "Resource" : [
+        "*"
+      ],
+      "Condition" : {
+        "StringLike" : {
+          "iam:PassedToService" : "ecs-tasks.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "InfrastructurePassRolePolicy",
+      "Action" : "iam:PassRole",
+      "Effect" : "Allow",
+      "Resource" : [
+        "arn:aws:iam::*:role/ecsInfrastructureRole"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "iam:PassedToService" : "ecs.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Sid" : "InstancePassRolePolicy",
+      "Action" : "iam:PassRole",
+      "Effect" : "Allow",
+      "Resource" : [
+        "arn:aws:iam::*:role/ecsInstanceRole*"
+      ],
+      "Condition" : {
+        "StringLike" : {
+          "iam:PassedToService" : [
+            "ec2.amazonaws.com",
+            "ec2.amazonaws.com.cn"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "AutoScalingPassRolePolicy",
+      "Action" : "iam:PassRole",
+      "Effect" : "Allow",
+      "Resource" : [
+        "arn:aws:iam::*:role/ecsAutoscaleRole*"
+      ],
+      "Condition" : {
+        "StringLike" : {
+          "iam:PassedToService" : [
+            "application-autoscaling.amazonaws.com",
+            "application-autoscaling.amazonaws.com.cn"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "ServiceLinkedRoleCreationPolicy",
+      "Effect" : "Allow",
+      "Action" : "iam:CreateServiceLinkedRole",
+      "Resource" : "*",
+      "Condition" : {
+        "StringLike" : {
+          "iam:AWSServiceName" : [
+            "ecs.amazonaws.com",
+            "autoscaling.amazonaws.com",
+            "ecs.application-autoscaling.amazonaws.com",
+            "spot.amazonaws.com",
+            "spotfleet.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "ELBTaggingPolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "elasticloadbalancing:AddTags"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "elasticloadbalancing:CreateAction" : [
+            "CreateTargetGroup",
+            "CreateRule",
+            "CreateListener",
+            "CreateLoadBalancer"
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AmazonECS_FullAccess-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

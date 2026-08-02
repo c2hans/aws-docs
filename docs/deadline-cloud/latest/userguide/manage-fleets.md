@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/manage-fleets.html
+---
+
+# Deadline Cloud fleets
+<a name="manage-fleets"></a>
+
+This section explains how to manage service-managed fleets and customer-managed fleets (CMF) for Deadline Cloud.
+
+You can set up two types of Deadline Cloud fleets:
++ Service-managed fleets are fleets of workers that have default settings provided by Deadline Cloud. These default settings are designed to be efficient and cost effective.
++ Customer-managed fleets (CMFs) provide you with full control over your processing pipeline. A CMF can reside within AWS infrastructure, on premises, or in a co-located data center. CMFs include provisioning, operations, management, and decommissioning workers in the fleet.
+
+When you associate a fleet with multiple queues, it divides its workers evenly among those queues.
+
+For more information about choosing between the two fleet types, see [Choose between service-managed and customer-managed fleets](fleet-types.md).
+
+**Topics**
++ [Choose between service-managed and customer-managed fleets](fleet-types.md)
++ [Service-managed fleets](smf-manage.md)
++ [Customer-managed fleets](manage-cmf.md)
++ [Auto scaling configuration](auto-scaling-configuration.md)

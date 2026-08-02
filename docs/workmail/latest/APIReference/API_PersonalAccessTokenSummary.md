@@ -1,0 +1,65 @@
+---
+source_url: https://docs.aws.amazon.com/workmail/latest/APIReference/API_PersonalAccessTokenSummary.html
+---
+
+# PersonalAccessTokenSummary
+<a name="API_PersonalAccessTokenSummary"></a>
+
+**Important**
+End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMail. After March 31, 2027, you will no longer be able to access the WorkMail console or WorkMail resources. For more information, see [Amazon WorkMail end of support](https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html).
+
+ The summary of the Personal Access Token.
+
+## Contents
+<a name="API_PersonalAccessTokenSummary_Contents"></a>
+
+ ** DateCreated **   <a name="workmail-Type-PersonalAccessTokenSummary-DateCreated"></a>
+ The date when the Personal Access Token was created.
+Type: Timestamp
+Required: No
+
+ ** DateLastUsed **   <a name="workmail-Type-PersonalAccessTokenSummary-DateLastUsed"></a>
+ The date when the Personal Access Token was last used.
+Type: Timestamp
+Required: No
+
+ ** ExpiresTime **   <a name="workmail-Type-PersonalAccessTokenSummary-ExpiresTime"></a>
+ The date when the Personal Access Token will expire.
+Type: Timestamp
+Required: No
+
+ ** Name **   <a name="workmail-Type-PersonalAccessTokenSummary-Name"></a>
+ The name of the Personal Access Token.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[^\x00-\x1F\x7F\x3C\x3E\x5C]+`
+Required: No
+
+ ** PersonalAccessTokenId **   <a name="workmail-Type-PersonalAccessTokenSummary-PersonalAccessTokenId"></a>
+ The ID of the Personal Access Token.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[a-zA-Z0-9_-]+`
+Required: No
+
+ ** Scopes **   <a name="workmail-Type-PersonalAccessTokenSummary-Scopes"></a>
+ Lists all the Personal Access Token permissions for a mailbox.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[^\x00-\x1F\x7F\x3C\x3E\x5C]+`
+Required: No
+
+ ** UserId **   <a name="workmail-Type-PersonalAccessTokenSummary-UserId"></a>
+ The user ID of the WorkMail user associated with the Personal Access Token.
+Type: String
+Length Constraints: Minimum length of 12. Maximum length of 256.
+Required: No
+
+## See Also
+<a name="API_PersonalAccessTokenSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/workmail-2017-10-01/PersonalAccessTokenSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/workmail-2017-10-01/PersonalAccessTokenSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/workmail-2017-10-01/PersonalAccessTokenSummary)

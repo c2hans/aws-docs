@@ -1,0 +1,81 @@
+---
+source_url: https://docs.aws.amazon.com/location/previous/developerguide/verify-device-positions.html
+---
+
+# Tutorial: Verify device positions with Amazon Location
+<a name="verify-device-positions"></a>
+
+To check the integrity of a device position use the [VerifyDevicePosition](https://docs.aws.amazon.com//location/previous/APIReference/API_VerifyDevicePosition.html) API. This API returns information about the integrity of the device's position, by evaluating properties such as the device's cell signal, Wi-Fi access point, Ipv4 address, and if a proxy is in use.
+
+## Prerequisites
+<a name="verify-device-positions-pre-reqs"></a>
+
+Before being able to use the listed APIs for device verification, make sure you have the following prerequisite:
++ You have created a tracker for the device or devices you want to check. For more information, see [Start tracking with Amazon Location](start-tracking.md).
+
+The following example shows a request for the Amazon Location [VerifyDevicePosition](https://docs.aws.amazon.com//location/previous/APIReference/API_VerifyDevicePosition.html) API.
+
+------
+#### [ API ]
+
+**To verify device positions using the Amazon Location APIs**
+
+Use the `[VerifyDevicePosition](https://docs.aws.amazon.com/location/previous/APIReference/API_VerifyDevicePosition.html)` operation from the Amazon Location Tracking APIs.
+
+The following example shows an API request to evaluate the integrity of the position of a device. Replace these values with your own device IDs.
+
+```
+POST /tracking/v0/trackers/TrackerName/positions/verify HTTP/1.1
+Content-type: application/json
+
+{
+   "DeviceState": {
+      "Accuracy": {
+         "Horizontal": number
+      },
+      "CellSignals": {
+         "LteCellDetails": [
+            {
+               "CellId": number,
+               "LocalId": {
+                  "Earfcn": number,
+                  "Pci": number
+               },
+               "Mcc": number,
+               "Mnc": number,
+               "NetworkMeasurements": [
+                  {
+                     "CellId": number,
+                     "Earfcn": number,
+                     "Pci": number,
+                     "Rsrp": number,
+                     "Rsrq": number
+                  }
+               ],
+               "NrCapable": boolean,
+               "Rsrp": number,
+               "Rsrq": number,
+               "Tac": number,
+               "TimingAdvance": number
+            }
+         ]
+      },
+      "DeviceId": "ExampleDevice",
+      "Ipv4Address": "string",
+      "Position": [ number ],
+      "SampleTime": "string",
+      "WiFiAccessPoints": [
+         {
+            "MacAddress": "string",
+            "Rss": number
+         }
+      ]
+   },
+   "DistanceUnit": "string"
+}
+```
+
+------
+
+**Note**
+The **Integrity SDK** provides enhanced features related to device verification, and it is available for use by request. To get access to the SDK, contact [Sales Support](https://aws.amazon.com/contact-us/sales-support/?pg=locationprice&cta=herobtn).

@@ -1,0 +1,80 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/onboardingguide/windows-to-linux.html
+---
+
+End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
+
+# Windows computer to Linux instance
+<a name="windows-to-linux"></a>
+
+To RDP to an SSH bastion from a Windows environment, follow these steps.
+
+------
+#### [ MALZ ]<a name="win-to-lin-malz-procedure"></a>
+
+Before you begin:
++ Request access to the instance that you want to connect to; for information, see [Access requests](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-access-request.html).
++ Choose a friendly DNS SSH bastion name to connect to; for example:
+
+  ```
+  sshbastion{{(1-4)}}.{{YOUR_DOMAIN}}
+  ```
+
+  Which would look like this if YOUR\_DOMAIN is myamsaddomain.com" and you choose bastion 4:
+
+  ```
+  sshbastion4.myamsaddomain.com
+  ```
++ Find the IP address of the instance that you want to connect to; for information, see [ Finding an instance ID or IP address](https://docs.aws.amazon.com/managedservices/latest/userguide/find-instance-id.html).
+
+In order to connect to the Linux instance from your Windows machine, you must first connect to an SSH bastion.
+
+Use the native Windows [ OpenSSH client](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on your local machine. To learn more about OpenSSH, see [ OpenSSH in Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_overview).
+
+1. Use the native Windows or open PuTTY and enter the SSH bastion hostname or the IP address of the SSH bastion. For example, 10.65.2.214 (22 is the port used for SSH; it will be set by default).
+
+1. OpenSSH or PuTTY attempts an SSH connection to the bastion and open a shell window.
+
+1. Use your corporate Active Directory credentials as you would with the RDP hosts to gain access.
+
+1. When presented with a Bash prompt, SSH into the instance. Enter:
+
+   ```
+   ssh {{DOMAIN_FQDN}}\{{USERNAME}}@{{INSTANCE_IP}}
+   ```
+
+------
+#### [ SALZ ]<a name="win-to-lin-salz-procedure"></a>
+
+Before you begin:
++ Request access to the instance that you want to connect to; for information, see [Access requests](https://docs.aws.amazon.com/managedservices/latest/ctref/ex-access-request.html).
++ Choose a friendly DNS SSH bastion name to connect to; for example:
+
+  ```
+  sshbastion{{(1-4)}}.A{{AMSAccountNumber}}.amazonaws.com
+  ```
+
+  Which would look like this if your account number is 123456789123 and you choose bastion 4:
+
+  ```
+  sshbastion4.A123456789123.amazonaws.com
+  ```
++ Find the IP address of the instance that you want to connect to; for information, see [ Finding an instance ID or IP address](https://docs.aws.amazon.com/managedservices/latest/userguide/find-instance-id.html).
+
+In order to connect to the Linux instance from your Windows machine, you must first connect to an SSH bastion.
+
+Use the native Windows [ OpenSSH client](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) or install [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on your local machine. To learn more about OpenSSH, see [ OpenSSH in Windows](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_overview).
+
+1. Use the native Windows or open PuTTY and enter the SSH bastion hostname or the IP address of the SSH bastion. For example, 10.65.2.214 (22 is the port used for SSH; it will be set by default).
+
+1. OpenSSH or PuTTY attempts an SSH connection to the bastion and open a shell window.
+
+1. Use your corporate Active Directory credentials as you would with the RDP hosts to gain access.
+
+1. When presented with a Bash prompt, SSH into the instance. Enter:
+
+   ```
+   ssh {{DOMAIN_FQDN}}\{{USERNAME}}@{{INSTANCE_IP}}
+   ```
+
+------

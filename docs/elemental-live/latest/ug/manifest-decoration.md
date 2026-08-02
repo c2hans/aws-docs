@@ -1,0 +1,85 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/manifest-decoration.html
+---
+
+# Manifest decoration
+<a name="manifest-decoration"></a>
+
+You can choose to interpret SCTE-35 messages from the original input and insert corresponding instructions into the output manifest for the following outputs:
++ HLS
++ MS Smooth (the instructions are inserted in the sparse track).
++ RTMP (the instructions are inserted into the data stream, given that RTMP does not support manifests).
+
+## How SCTE-35 events are handled in manifests
+<a name="how-scte-35-events-are-handled-in-manifests"></a>
+
+Based on your criteria for creating the event, you can insert the following information into the manifest.
+
+| Type of instruction | When inserted |
+| --- | --- |
+| Base-64 | Information about all SCTE-35 messages in the output is incorporated into the manifest; the entire SCTE-35 message is added in base-64 format. |
+| Cue-out, Cue-in | SCTE-35 messages that are ad avails (see [Getting ready: Setting the ad avail mode](getting-ready-setting-the-ad-avail-mode.md)) result in the insertion of “cue-out, cue-in” instructions. |
+| Blackout | Only applies to the SCTE-35 Enhanced ad marker style (for HLS output; see below).<br />SCTE-35 messages that are *not *ad avails result in the insertion of “blackout start/end” instructions, assuming that blackout is enabled ([Ad avail blanking and blackout](ad-avail-blanking-and-blackout.md)). If blackout is not enabled, these instructions are not inserted. |
+
+**Splice insert mode**
+This table describes which of the three types of instructions from the table in the start of this section are inserted for each message type and segmentation type.
+
+- **Splice insert **
+  - **Segmentation type ID:** No segmentation descriptor present / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Provider advertisement / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Distributor advertisement / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Placement opportunity / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Other type (e.g. Chapter, Program) / **Base 64:** X / **Cue-out, cue-in:**   / **Blackout:** X
+
+- **Time signal **
+  - **Segmentation type ID:** Provider advertisement / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Distributor advertisement / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Placement opportunity / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Other type (e.g. Chapter, Program) / **Base 64:** X / **Cue-out, cue-in:**   / **Blackout:** X
+
+**Time signal APOS mode**
+This table describes which of the three types of instructions from the table in the start of this section are inserted for each message type/segmentation type. Note that many segmentation types are completely ignored: they do not get included in the manifest.
+
+- **Splice insert**
+  - **Segmentation type ID:** Any
+  - **Base 64:** X
+  - **Cue-out, cue-in:**
+  - **Blackout:**
+
+- **Time signal**
+  - **Segmentation type ID:** Provider advertisement / **Base 64:** X / **Cue-out, cue-in:**   / **Blackout:**
+  - **Segmentation type ID:** Distributor advertisement / **Base 64:** X / **Cue-out, cue-in:**   / **Blackout:**
+  - **Segmentation type ID:** Placement opportunity / **Base 64:** X / **Cue-out, cue-in:** X / **Blackout:**
+  - **Segmentation type ID:** Other type (e.g. Chapter, Program) / **Base 64:** X / **Cue-out, cue-in:**   / **Blackout:** X
+
+## Procedure to enable manifest decoration
+<a name="procedure-to-enable-decoration"></a>
+
+**Apple HLS**
+Enable manifest decoration at the output group level, which means that the manifests for all outputs in that group include instructions based on the SCTE-35 content.
+
+In the Apple HLS output group section, open the **Advanced** section and complete the following fields:
++ **Ad Markers**: Click to select a marker type. You can select more than one type.
+
+See [Example manifests for Apple HLS](example-manifests-hls.md) for information about the different of markers.
+
+The manifest for each output includes a separate set of tags for each type that you select.
+
+**MS Smooth**
+With MS Smooth, if you enable manifest decoration, you actually insert instructions in the sparse track.
+
+Enable manifest decoration at the output group level, which means that the sparse tracks for all outputs in that group include instructions based on the SCTE-35 content.
+
+In the MS Smooth output group section, complete the following fields:
++ **Enable Sparse Track**: Click to select a marker type. You can select more than one type.
++ **Acquisition Point ID**: Enter the address of the certificate, if encryption is enabled on the output.
+
+**RTMP**
+With RTMP, if you enable manifest decoration, you insert instructions in the data stream as RTMP does not support manifests.
+
+Enable manifest decoration at the output group level, which means that the manifests for all outputs in that group include instructions based on the SCTE-35 content.
+
+In the RTMP output group section, complete the following fields:
++ **Ad Markers**: Click to select a marker type. You can select more than one type.
+
+The data stream includes a separate set of tags for each type that you select.

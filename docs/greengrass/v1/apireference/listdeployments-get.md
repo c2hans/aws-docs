@@ -1,0 +1,140 @@
+---
+source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/listdeployments-get.html
+---
+
+End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
+
+# ListDeployments
+<a name="listdeployments-get"></a>
+
+Returns a history of deployments for the group.
+
+URI: `GET /greengrass/groups/{{GroupId}}/deployments`
+
+Produces: application/json
+
+## CLI:
+<a name="listdeployments-get-cli"></a>
+
+```
+aws greengrass list-deployments \
+  --group-id <value> \
+  [--max-results <value>] \
+  [--next-token <value>]  \
+  [--cli-input-json <value>] \
+  [--generate-cli-skeleton]
+```
+
+cli-input-json format:
+
+```
+{
+"GroupId": "string",
+"MaxResults": "integer",
+"NextToken": "string"
+}
+```
+
+## Parameters:
+<a name="listdeployments-get-params"></a>
+
+[**GroupId**](parameters-groupidparam.md)
+The ID of the Greengrass group.
+where used: path; required: true
+type: string
+
+[**MaxResults**](parameters-maxresultsparam.md)
+The maximum number of results to be returned per request.
+where used: query; required: false
+type: integer
+
+[**NextToken**](parameters-nexttokenparam.md)
+The token for the next set of results, or `null` if there are no more results.
+where used: query; required: false
+type: string
+
+## Responses:
+<a name="listdeployments-get-resp"></a>
+
+**200**
+Success. The response body contains the list of deployments for the given group.
+ [ ListDeploymentsResponse](definitions-listdeploymentsresponse.md)
+
+```
+{
+"Deployments": [
+  {
+    "GroupArn": "string",
+    "DeploymentId": "string",
+    "DeploymentArn": "string",
+    "DeploymentType": "NewDeployment|Redeployment|ResetDeployment|ForceResetDeployment",
+    "CreatedAt": "string"
+  }
+],
+"NextToken": "string"
+}
+```
+ListDeploymentsResponse
+type: object
+Deployments
+type: array
+items: [Deployment](definitions-deployment.md)
+Deployment
+Information about a deployment.
+type: object
+GroupArn
+The ARN of the group for this deployment.
+type: string
+DeploymentId
+The ID of the deployment.
+type: string
+DeploymentArn
+The ARN of the deployment.
+type: string
+DeploymentType
+The type of deployment. When used for `CreateDeployment`, only `NewDeployment` and `Redeployment` are valid.
+type: string
+enum: ["NewDeployment", "Redeployment", "ResetDeployment", "ForceResetDeployment"]
+CreatedAt
+The time, in milliseconds since the epoch, when the deployment was created.
+type: string
+NextToken
+The token for the next set of results, or `null` if there are no more results.
+in: query
+type: string
+
+**400**
+Invalid request.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string

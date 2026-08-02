@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/a-workload-architecture.html
+---
+
+# Workload architecture
+<a name="a-workload-architecture"></a>
+
+**Topics**
++ [REL 3. How do you design your workload service architecture?](rel-03.md)
++ [REL 4. How do you design interactions in a distributed system to prevent failures?](rel-04.md)
++ [REL 5. How do you design interactions in a distributed system to mitigate or withstand failures?](rel-05.md)

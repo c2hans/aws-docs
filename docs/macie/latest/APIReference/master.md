@@ -1,0 +1,239 @@
+---
+source_url: https://docs.aws.amazon.com/macie/latest/APIReference/master.html
+---
+
+# Master Account
+<a name="master"></a>
+
+This resource has been deprecated and is retained only for backward compatibility. It provides information about the Amazon Macie administrator account for your account. To retrieve information about the Macie administrator account for your account, use the [Administrator](administrator.md) resource instead of this resource. To learn about the relationship between your account and its Macie administrator account, see [Managing multiple accounts](https://docs.aws.amazon.com/macie/latest/user/macie-accounts.html) in the *Amazon Macie User Guide*.
+
+## URI
+<a name="master-url"></a>
+
+`/master`
+
+## HTTP methods
+<a name="master-http-methods"></a>
+
+### GET
+<a name="masterget"></a>
+
+**Operation ID:** `GetMasterAccount`
+
+(Deprecated) Retrieves information about the Amazon Macie administrator account for an account. This operation has been replaced by the [GetAdministratorAccount](administrator.md#GetAdministratorAccount) operation.
+
+**Responses**
+
+| Status code | Response model | Description |
+| --- |--- |--- |
+| 200 | GetMasterAccountResponse | The request succeeded. |
+| 400 | ValidationException | The request failed because the input doesn't satisfy the constraints specified by the service. |
+| 402 | ServiceQuotaExceededException | The request failed because fulfilling the request would exceed one or more service quotas for your account. |
+| 403 | AccessDeniedException | The request was denied because you don't have sufficient access to the specified resource. |
+| 404 | ResourceNotFoundException | The request failed because the specified resource wasn't found. |
+| 409 | ConflictException | The request failed because it conflicts with the current state of the specified resource. |
+| 429 | ThrottlingException | The request failed because you sent too many requests during a certain amount of time. |
+| 500 | InternalServerException | The request failed due to an unknown internal server error, exception, or failure. |
+
+## Schemas
+<a name="master-schemas"></a>
+
+### Response bodies
+<a name="master-response-examples"></a>
+
+#### GetMasterAccountResponse schema
+<a name="master-response-body-getmasteraccountresponse-example"></a>
+
+```
+{
+  "master": {
+    "accountId": "string",
+    "invitationId": "string",
+    "invitedAt": "string",
+    "relationshipStatus": enum
+  }
+}
+```
+
+#### ValidationException schema
+<a name="master-response-body-validationexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+#### ServiceQuotaExceededException schema
+<a name="master-response-body-servicequotaexceededexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+#### AccessDeniedException schema
+<a name="master-response-body-accessdeniedexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+#### ResourceNotFoundException schema
+<a name="master-response-body-resourcenotfoundexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+#### ConflictException schema
+<a name="master-response-body-conflictexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+#### ThrottlingException schema
+<a name="master-response-body-throttlingexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+#### InternalServerException schema
+<a name="master-response-body-internalserverexception-example"></a>
+
+```
+{
+  "message": "string"
+}
+```
+
+## Properties
+<a name="master-properties"></a>
+
+### AccessDeniedException
+<a name="master-model-accessdeniedexception"></a>
+
+Provides information about an error that occurred due to insufficient access to a specified resource.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+### ConflictException
+<a name="master-model-conflictexception"></a>
+
+Provides information about an error that occurred due to a versioning conflict for a specified resource.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+### GetMasterAccountResponse
+<a name="master-model-getmasteraccountresponse"></a>
+
+(Deprecated) Provides information about the Amazon Macie administrator account for an account. If the accounts are associated by a Macie membership invitation, the response also provides information about that invitation.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| master | [Invitation](#master-model-invitation) | False | (Deprecated) The AWS account ID for the administrator account. If the accounts are associated by a Macie membership invitation, this object also provides details about the invitation that was sent to establish the relationship between the accounts. |
+
+### InternalServerException
+<a name="master-model-internalserverexception"></a>
+
+Provides information about an error that occurred due to an unknown internal server error, exception, or failure.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+### Invitation
+<a name="master-model-invitation"></a>
+
+Provides information about an Amazon Macie membership invitation.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| accountId | string | False | The AWS account ID for the account that sent the invitation. |
+| invitationId | string | False | The unique identifier for the invitation. |
+| invitedAt | string<br />Format: date-time | False | The date and time, in UTC and extended ISO 8601 format, when the invitation was sent. |
+| relationshipStatus | [RelationshipStatus](#master-model-relationshipstatus) | False | The status of the relationship between the account that sent the invitation and the account that received the invitation. |
+
+### RelationshipStatus
+<a name="master-model-relationshipstatus"></a>
+
+The current status of the relationship between an account and an associated Amazon Macie administrator account. Possible values are:
++ `Enabled`
++ `Paused`
++ `Invited`
++ `Created`
++ `Removed`
++ `Resigned`
++ `EmailVerificationInProgress`
++ `EmailVerificationFailed`
++ `RegionDisabled`
++ `AccountSuspended`
+
+### ResourceNotFoundException
+<a name="master-model-resourcenotfoundexception"></a>
+
+Provides information about an error that occurred because a specified resource wasn't found.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+### ServiceQuotaExceededException
+<a name="master-model-servicequotaexceededexception"></a>
+
+Provides information about an error that occurred due to one or more service quotas for an account.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+### ThrottlingException
+<a name="master-model-throttlingexception"></a>
+
+Provides information about an error that occurred because too many requests were sent during a certain amount of time.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+### ValidationException
+<a name="master-model-validationexception"></a>
+
+Provides information about an error that occurred due to a syntax error in a request.
+
+| Property | Type | Required | Description |
+| --- |--- |--- |--- |
+| message | string | False | The explanation of the error that occurred. |
+
+## See also
+<a name="master-see-also"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs and references, see the following:
+
+### GetMasterAccount
+<a name="GetMasterAccount-see-also"></a>
++ [AWS Command Line Interface V2](/goto/cli2/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for .NET V4](/goto/DotNetSDKV4/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for C\+\+](/goto/SdkForCpp/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for Go v2](/goto/SdkForGoV2/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for Java V2](/goto/SdkForJavaV2/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for JavaScript V3](/goto/SdkForJavaScriptV3/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for Kotlin](/goto/SdkForKotlin/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for PHP V3](/goto/SdkForPHPV3/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for Python](/goto/boto3/macie2-2020-01-01/GetMasterAccount)
++ [AWS SDK for Ruby V3](/goto/SdkForRubyV3/macie2-2020-01-01/GetMasterAccount)

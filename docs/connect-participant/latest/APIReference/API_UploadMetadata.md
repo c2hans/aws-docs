@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_UploadMetadata.html
+---
+
+# UploadMetadata
+<a name="API_connect-participant_UploadMetadata"></a>
+
+Fields to be used while uploading the attachment.
+
+## Contents
+<a name="API_connect-participant_UploadMetadata_Contents"></a>
+
+ ** HeadersToInclude **   <a name="connect-Type-connect-participant_UploadMetadata-HeadersToInclude"></a>
+The headers to be provided while uploading the file to the URL.
+Type: String to string map
+Key Length Constraints: Minimum length of 1. Maximum length of 128.
+Value Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
+ ** Url **   <a name="connect-Type-connect-participant_UploadMetadata-Url"></a>
+This is the pre-signed URL that can be used for uploading the file to Amazon S3 when used in response to [StartAttachmentUpload](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_StartAttachmentUpload.html).
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2000.
+Required: No
+
+ ** UrlExpiry **   <a name="connect-Type-connect-participant_UploadMetadata-UrlExpiry"></a>
+The expiration time of the URL in ISO timestamp. It's specified in ISO 8601 format: yyyy-MM-ddThh:mm:ss.SSSZ. For example, 2019-11-08T02:41:28.172Z.
+Type: String
+Required: No
+
+## See Also
+<a name="API_connect-participant_UploadMetadata_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connectparticipant-2018-09-07/UploadMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connectparticipant-2018-09-07/UploadMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connectparticipant-2018-09-07/UploadMetadata)

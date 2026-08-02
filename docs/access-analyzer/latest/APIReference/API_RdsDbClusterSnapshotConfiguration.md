@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_RdsDbClusterSnapshotConfiguration.html
+---
+
+# RdsDbClusterSnapshotConfiguration
+<a name="API_RdsDbClusterSnapshotConfiguration"></a>
+
+The proposed access control configuration for an Amazon RDS DB cluster snapshot. You can propose a configuration for a new Amazon RDS DB cluster snapshot or an Amazon RDS DB cluster snapshot that you own by specifying the `RdsDbClusterSnapshotAttributeValue` and optional AWS KMS encryption key. For more information, see [ModifyDBClusterSnapshotAttribute](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterSnapshotAttribute.html).
+
+## Contents
+<a name="API_RdsDbClusterSnapshotConfiguration_Contents"></a>
+
+ ** attributes **   <a name="accessanalyzer-Type-RdsDbClusterSnapshotConfiguration-attributes"></a>
+The names and values of manual DB cluster snapshot attributes. Manual DB cluster snapshot attributes are used to authorize other AWS accounts to restore a manual DB cluster snapshot. The only valid value for `AttributeName` for the attribute map is `restore`
+Type: String to [RdsDbClusterSnapshotAttributeValue](API_RdsDbClusterSnapshotAttributeValue.md) object map
+Required: No
+
+ ** kmsKeyId **   <a name="accessanalyzer-Type-RdsDbClusterSnapshotConfiguration-kmsKeyId"></a>
+The KMS key identifier for an encrypted Amazon RDS DB cluster snapshot. The KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key.
++ If the configuration is for an existing Amazon RDS DB cluster snapshot and you do not specify the `kmsKeyId`, or you specify an empty string, then the access preview uses the existing `kmsKeyId` of the snapshot.
++ If the access preview is for a new resource and you do not specify the specify the `kmsKeyId`, then the access preview considers the snapshot as unencrypted.
+Type: String
+Required: No
+
+## See Also
+<a name="API_RdsDbClusterSnapshotConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/RdsDbClusterSnapshotConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/RdsDbClusterSnapshotConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/RdsDbClusterSnapshotConfiguration)

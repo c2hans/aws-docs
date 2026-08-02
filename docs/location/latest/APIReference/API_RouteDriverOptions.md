@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteDriverOptions.html
+---
+
+# RouteDriverOptions
+<a name="API_RouteDriverOptions"></a>
+
+Driver related options.
+
+## Contents
+<a name="API_RouteDriverOptions_Contents"></a>
+
+ ** Schedule **   <a name="location-Type-RouteDriverOptions-Schedule"></a>
+Driver work-rest schedule. Stops are added to fulfil the provided rest schedule.
+Type: Array of [RouteDriverScheduleInterval](API_RouteDriverScheduleInterval.md) objects
+Required: No
+
+## See Also
+<a name="API_RouteDriverOptions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/geo-routes-2020-11-19/RouteDriverOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/geo-routes-2020-11-19/RouteDriverOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/geo-routes-2020-11-19/RouteDriverOptions)

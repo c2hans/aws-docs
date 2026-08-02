@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_StateTransition.html
+---
+
+# StateTransition
+<a name="API_StateTransition"></a>
+
+Information about the state transition of a supervisor.
+
+## Contents
+<a name="API_StateTransition_Contents"></a>
+
+ ** State **   <a name="connect-Type-StateTransition-State"></a>
+The state of the transition.
+Type: String
+Valid Values: `INITIAL | CONNECTED | DISCONNECTED | MISSED`
+Required: No
+
+ ** StateEndTimestamp **   <a name="connect-Type-StateTransition-StateEndTimestamp"></a>
+The date and time when the state ended in UTC time.
+Type: Timestamp
+Required: No
+
+ ** StateStartTimestamp **   <a name="connect-Type-StateTransition-StateStartTimestamp"></a>
+The date and time when the state started in UTC time.
+Type: Timestamp
+Required: No
+
+## See Also
+<a name="API_StateTransition_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/StateTransition)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/StateTransition)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/StateTransition)

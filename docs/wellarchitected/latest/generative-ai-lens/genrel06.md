@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/genrel06.html
+---
+
+# Distributed compute tasks
+<a name="genrel06"></a>
+
+| GENREL06: How do you design high-performance distributed computation tasks to maximize successful completion? |
+| --- |
+|   |
+
+ Model customization and other high-performance distributed computation tasks for generative AI can be long-running, expensive, and brittle. It is important to deliberately architect these distributed, high-performance computation tasks for reliability so the resulting foundation model is performant and trained in a timely manner.
+
+**Topics**
++ [GENREL06-BP01 Design for fault-tolerance for high-performance distributed computation tasks](genrel06-bp01.md)

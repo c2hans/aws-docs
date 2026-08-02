@@ -1,0 +1,91 @@
+---
+source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/example_healthlake_UntagResource_section.html
+---
+
+# Use `UntagResource` with an AWS SDK or CLI
+<a name="example_healthlake_UntagResource_section"></a>
+
+The following code examples show how to use `UntagResource`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To remove tags from a data store.**
+The following `untag-resource` example shows how to remove tags from a data store.
+
+```
+aws healthlake untag-resource \
+    --resource-arn {{"arn:aws:healthlake:us-east-1:123456789012:datastore/fhir/b91723d65c6fdeb1d26543a49d2ed1fa"}} \
+    --tag-keys '{{["key1"]}}'
+```
+This command produces no output.
+
++  For API details, see [UntagResource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/untag-resource.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+
+```
+    @classmethod
+    def from_client(cls) -> "HealthLakeWrapper":
+        """
+        Creates a HealthLakeWrapper instance with a default AWS HealthLake client.
+
+        :return: An instance of HealthLakeWrapper initialized with the default HealthLake client.
+        """
+        health_lake_client = boto3.client("healthlake")
+        return cls(health_lake_client)
+
+    def untag_resource(self, resource_arn: str, tag_keys: list[str]) -> None:
+        """
+        Untags a HealthLake resource.
+        :param resource_arn: The resource ARN.
+        :param tag_keys: The tag keys to remove from the resource.
+        """
+        try:
+            self.health_lake_client.untag_resource(
+                ResourceARN=resource_arn, TagKeys=tag_keys
+            )
+        except ClientError as err:
+            logger.exception(
+                "Couldn't untag resource %s. Here's why %s",
+                resource_arn,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [UntagResource](https://docs.aws.amazon.com/goto/boto3/healthlake-2017-07-01/UntagResource) in *AWS SDK for Python (Boto3) API Reference*.
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/healthlake#code-examples).
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/hll#code-examples).
+
+```
+    TRY.
+        " iv_resource_arn = 'arn:aws:healthlake:us-east-1:123456789012:datastore/fhir/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'
+        lo_hll->untagresource(
+          iv_resourcearn = iv_resource_arn
+          it_tagkeys = it_tag_keys
+        ).
+        MESSAGE 'Resource untagged successfully.' TYPE 'I'.
+      CATCH /aws1/cx_hllvalidationex INTO DATA(lo_validation_ex).
+        DATA(lv_error) = |Validation error: { lo_validation_ex->av_err_code }-{ lo_validation_ex->av_err_msg }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_validation_ex.
+      CATCH /aws1/cx_hllresourcenotfoundex INTO DATA(lo_notfound_ex).
+        lv_error = |Resource not found: { lo_notfound_ex->av_err_code }-{ lo_notfound_ex->av_err_msg }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_notfound_ex.
+    ENDTRY.
+```
++  For API details, see [UntagResource](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using HealthLake with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

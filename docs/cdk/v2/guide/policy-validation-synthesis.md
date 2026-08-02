@@ -1,0 +1,180 @@
+---
+source_url: https://docs.aws.amazon.com/cdk/v2/guide/policy-validation-synthesis.html
+---
+
+This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
+
+# AWS CDK validation at synthesis time
+<a name="policy-validation-synthesis"></a>
+
+## Validation at synthesis time
+<a name="policy-validation"></a>
+
+Your AWS CDK application generates an infrastructure description at synthesis time in the form of CloudFormation templates. Those templates are validated immediately after synthesis. The AWS CDK comes with a built-in set of validation rules, which you can extend with other CDK-specific validation tools such as [CDK Nag](https://github.com/cdklabs/cdk-nag), or any policy validation tool your organization is already using such as [AWS CloudFormation Guard](https://docs.aws.amazon.com/cfn-guard/latest/ug/what-is-guard.html) or [OPA](https://www.openpolicyagent.org/). If there are any violations, the synthesis will fail and a report will be printed to the console. Using offline validation of your synthesized templates, you can discover and fix potential problems with your infrastructure early. You would use validation to find issues that would lead to failed deployments, common misconfigurations, or failure to comply with company standards.
+
+**Note**
+The previous `Beta1` interfaces (such as `IPolicyValidationPluginBeta1`, `PolicyValidationPluginReportBeta1`, and the `policyValidationBeta1` property on `Stage`) have been graduated to stable, no-suffix equivalents (for example, `IPolicyValidationPlugin`, `PolicyValidationPluginReport`). The `Beta1` interfaces are deprecated but continue to work. The recommended way to register validation plugins is now through the `Validations` class rather than the `policyValidationBeta1` property.
+
+## What validation is and isn’t
+<a name="what-validation-is-and-isnt"></a>
+
+The validation performed by the AWS CDK at synthesis time is a best-effort validation to improve developer experience; it is not a full standards compliance mechanism by itself. It validates templates generated normally by a CDK app, but it can’t affect actions that occur outside synthesis. For example, actions taken directly in the console or via service APIs. In addition, because CDK apps are written in a general-purpose programming language, determined developers are able to bypass the validation mechanism if they want. That is why CDK validation is a shift-left mechanism to validate early, and should be used in combination with another mechanism to validate the desired rule sets like [AWS CloudFormation hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/hooks.html) or [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html).
+
+## For application developers
+<a name="for-application-developers"></a>
+
+### Adding validation plugins
+<a name="adding-validation-plugins"></a>
+
+Validation is performed by validation plugins. A default plugin that uses a comprehensive rule set for AWS resources is automatically added to your application, based on [@aws/cloudformation-validate](https://github.com/aws-cloudformation/cloudformation-validate). If you want to add additional plugins to your application, use the `Validations` class:
+
+```
+import { Validations } from 'aws-cdk-lib';
+import { CfnGuardValidator } from '@cdklabs/cdk-validator-cfnguard';
+
+const app = new App();
+
+// Add a validation plugin to the entire app
+Validations.of(app).addPlugins(new CfnGuardValidator());
+
+// Or add to a particular stage
+const prodStage = new Stage(app, 'ProdStage');
+Validations.of(prodStage).addPlugins(new CfnGuardValidator());
+```
+
+Immediately after synthesis, all plugins registered this way will be invoked to validate all the templates generated in the scope you defined. In particular, if you register the templates in the `App` object, all templates will be subject to validation.
+
+**Warning**
+Plugins have full access to your machine when they are running. It’s your responsibility as the consumer of a plugin to verify that it comes from a trusted source.
+
+### Validation Report
+<a name="validation-report"></a>
+
+When you synthesize the AWS CDK app the validator plugins will be called and the results will be printed. An example report is showing below.
+
+```
+lib/my-custom-l3-construct.ts:10:5
+ERROR [CT.S3.PR.1]: Require an Amazon S3 bucket to have block public access settings configured (cdk-validator-cfnguard)
+   MyStack/MyCustomL3Construct/Bucket/Resource (MyCustomL3ConstructBucket8C61BCA7) constructs.Construct
+   Suggested fix: [FIX]: The parameters 'BlockPublicAcls', 'BlockPublicPolicy', 'IgnorePublicAcls', 'RestrictPublicBuckets' must be set to true under the bucket-level 'PublicAccessBlockConfiguration'.
+   Acknowledge with 'cdk-validator-cfnguard::s3_bucket_level_public_access_prohibited_check'
+
+lib/my-custom-l3-construct.ts:10:5
+ERROR [CT.S3.PR.10]: Require an Amazon S3 bucket to have server-side encryption configured using an AWS KMS key (cdk-validator-cfnguard)
+   MyStack/MyCustomL3Construct/Bucket/Resource (MyCustomL3ConstructBucket8C61BCA7) constructs.Construct
+   Suggested fix: [FIX]: Set an encryption rule in 'BucketEncryption.ServerSideEncryptionConfiguration' with a 'ServerSideEncryptionByDefault.SSEAlgorithm' configuration of 'aws:kms' or 'aws:kms:dsse'
+   Acknowledge with 'cdk-validator-cfnguard::s3_bucket_default_encryption_kms_check'
+
+...
+```
+
+By default, the report will be printed in a human readable format. If you want a report in JSON format, enable it using the `@aws-cdk/core:validationReportJson` via the CLI or passing it directly to the application:
+
+```
+const app = new App({
+  context: { '@aws-cdk/core:validationReportJson': true },
+});
+```
+
+Alternatively, you can set this context key-value pair using the `cdk.json` or `cdk.context.json` files in your project directory (see [Context values and the AWS CDK](context.md)).
+
+If you choose the JSON format, the AWS CDK will print the policy validation report to a file called `policy-validation-report.json` in the cloud assembly directory. For the default, human-readable format, the report will be printed to the standard output.
+
+### Acknowledging warnings
+<a name="acknowledging-warnings"></a>
+
+If you have evaluated a warning or error and deemed it to not apply for you, you can suppress it using the `acknowledge` method. Suppression is scope-based, and applies to all constructs under the given scope.
+
+```
+import { Validations } from 'aws-cdk-lib';
+
+Validations.of(myConstruct).acknowledge({
+  id: 'PluginName::MyWarningId',
+  reason: 'This is acceptable for our use case',
+});
+```
+
+The `id` uses a `::` delimiter to separate the validation source prefix from the rule name (for example, `Construct-Annotations::` or `AwsSolutions-S1::`).
+
+### AWS CloudFormation Guard plugin
+<a name="cfnguard-plugin"></a>
+
+Using the [https://github.com/cdklabs/cdk-validator-cfnguard](https://github.com/cdklabs/cdk-validator-cfnguard) plugin allows you to use [AWS CloudFormation Guard](https://github.com/aws-cloudformation/cloudformation-guard) to perform policy validations. The `CfnGuardValidator` plugin comes with a select set of [AWS Control Tower proactive controls](https://docs.aws.amazon.com/controltower/latest/userguide/proactive-controls.html) built in. The current set of rules can be found in the [project documentation](https://github.com/cdklabs/cdk-validator-cfnguard/blob/main/README.md). As mentioned in [Policy validation at synthesis time](#policy-validation), we recommend that organizations set up a more authoritative method of validation using [AWS CloudFormation hooks](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/hooks.html).
+
+For [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html) customers, these same proactive controls can be deployed across your organization. When you enable AWS Control Tower proactive controls in your AWS Control Tower environment, the controls can stop the deployment of non-compliant resources deployed via AWS CloudFormation. For more information about managed proactive controls and how they work, see the [AWS Control Tower documentation](https://docs.aws.amazon.com/controltower/latest/userguide/proactive-controls.html).
+
+These AWS CDK bundled controls and managed AWS Control Tower proactive controls are best used together. In this scenario you can configure this validation plugin with the same proactive controls that are active in your AWS Control Tower cloud environment. You can then quickly gain confidence that your AWS CDK application will pass the AWS Control Tower controls by running `cdk synth` locally.
+
+### AWS CDK Nag plugin
+<a name="cdk-nag-plugin"></a>
+
+You can use [CDK Nag](https://github.com/cdklabs/cdk-nag) to check your infrastructure against a number of standards like HIPAA, PCI DSS, and so on. Version 3.x of cdk-nag integrates with the standardized Validations mechanism in CDK.
+
+## For construct authors: adding warnings and errors directly
+<a name="adding-warnings-and-errors"></a>
+
+The `Validations` class also provides methods to add custom warnings and errors to your constructs directly. You can use this mechanism to report misconfigurations directly on your construct without having to implement a validation plugin. The validations and errors you add this way will be reported along with the violations found by validation plugins.
+
+```
+import { Validations } from 'aws-cdk-lib';
+
+const bucket = new s3.Bucket(this, 'MyBucket');
+
+// Add a warning
+Validations.of(bucket).addWarning('MyWarningId', 'This bucket does not have versioning enabled');
+
+// Add an error (will cause synthesis to fail)
+Validations.of(bucket).addError('MyErrorId', 'This bucket must have encryption enabled');
+```
+
+## For plugin authors
+<a name="plugin-authors"></a>
+
+The AWS CDK core framework is responsible for registering and invoking plugins and then displaying the formatted validation report. The responsibility of the plugin is to act as the translation layer between the AWS CDK framework and an external policy validation tool that your plugin might for example shell out to. A plugin can be created in any language supported by AWS CDK. If you are creating a plugin that might be consumed by multiple languages then it’s recommended that you create the plugin in `TypeScript` so that you can use JSII to publish the plugin in each AWS CDK language.
+
+### Creating plugins
+<a name="creating-plugins"></a>
+
+The communication protocol between the AWS CDK core module and your policy tool is defined by the `IPolicyValidationPlugin` interface. To create a new plugin you must write a class that implements this interface. There are two things you need to implement: the plugin name (by overriding the `name` property), and the `validate()` method.
+
+The framework will call `validate()`, passing an `IPolicyValidationContext` object. The location of the templates to be validated is given by `templatePaths`. The plugin should return an instance of `PolicyValidationPluginReport`. This object represents the report that the user wil receive at the end of the synthesis.
+
+```
+validate(context: IPolicyValidationContext): PolicyValidationPluginReport {
+  // First read the templates using context.templatePaths...
+  // ...then perform the validation, and then compose and return the report.
+  // Using hard-coded values here for better clarity:
+  return {
+    success: false,
+    violations: [{
+      ruleName: 'CKV_AWS_117',
+      description: 'Ensure that AWS Lambda function is configured inside a VPC',
+      fix: 'https://docs.bridgecrew.io/docs/ensure-that-aws-lambda-function-is-configured-inside-a-vpc-1',
+      violatingResources: [{
+        resourceName: 'MyFunction3BAA72D1',
+        templatePath: '/home/johndoe/myapp/cdk.out/MyService.template.json',
+        locations: 'Properties/VpcConfig',
+      }],
+    }],
+  };
+}
+```
+
+Note that plugins aren’t allowed to modify anything in the cloud assembly. Any attempt to do so will result in synthesis failure.
+
+If your plugin depends on an external tool that you shell out to, keep in mind that some developers may not have that tool installed in their workstations yet. To minimize friction, provide some installation script along with your plugin package to automate the installation process.
+
+### Handling Exemptions
+<a name="handling-exemptions"></a>
+
+If your organization has a mechanism for handling exemptions, it can be implemented as part of the validator plugin.
+
+An example scenario to illustrate a possible exemption mechanism:
++ An organization has a rule that public Amazon S3 buckets aren’t allowed, *except* for under certain scenarios.
++ A developer is creating an Amazon S3 bucket that falls under one of those scenarios and requests an exemption (create a ticket for example).
++ Security tooling knows how to read from the internal system that registers exemptions
+
+In this scenario the developer would request an exception in the internal system and then will need some way of "registering" that exception. Adding on to the guard plugin example, you could create a plugin that handles exemptions by filtering out the violations that have a matching exemption in an internal ticketing system.
+
+See the existing plugins for example implementations.
++  [@cdklabs/cdk-validator-cfnguard](https://github.com/cdklabs/cdk-validator-cfnguard)

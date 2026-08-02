@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/awssupport/latest/user/uops-event-post-golive.html
+---
+
+# Unified Operations Post Go-live or event
+<a name="uops-event-post-golive"></a>
+
+The post go-live or post event process in Unified Operations includes the following key elements:
++ Spin-down engagement and event-specific resources.
++ Conduct event reviews.
++ Update runbooks and documentation based on learnings.
++ Perform retrospectives to identify areas for improvement.

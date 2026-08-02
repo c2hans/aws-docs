@@ -1,0 +1,105 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudTrailServiceRolePolicy.html
+---
+
+# CloudTrailServiceRolePolicy
+<a name="CloudTrailServiceRolePolicy"></a>
+
+**Description**: Permission policy for CloudTrail ServiceLinkedRole
+
+`CloudTrailServiceRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="CloudTrailServiceRolePolicy-how-to-use"></a>
+
+This policy is attached to a service-linked role that allows the service to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+<a name="CloudTrailServiceRolePolicy-details"></a>
++ **Type**: Service-linked role policy
++ **Creation time**: October 24, 2018, 21:21 UTC
++ **Edited time:** November 27, 2023, 01:18 UTC
++ **ARN**: `arn:aws:iam::aws:policy/aws-service-role/CloudTrailServiceRolePolicy`
+
+## Policy version
+<a name="CloudTrailServiceRolePolicy-version"></a>
+
+**Policy version:** v3 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="CloudTrailServiceRolePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "CloudTrailFullAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudtrail:*"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AwsOrgsAccess",
+      "Effect" : "Allow",
+      "Action" : [
+        "organizations:DescribeAccount",
+        "organizations:DescribeOrganization",
+        "organizations:ListAccounts",
+        "organizations:ListAWSServiceAccessForOrganization"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Sid" : "AwsOrgsDelegatedAdminAccess",
+      "Effect" : "Allow",
+      "Action" : "organizations:ListDelegatedAdministrators",
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "organizations:ServicePrincipal" : [
+            "cloudtrail.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid" : "DeleteTableAccess",
+      "Effect" : "Allow",
+      "Action" : "glue:DeleteTable",
+      "Resource" : [
+        "arn:*:glue:*:*:catalog",
+        "arn:*:glue:*:*:database/aws:cloudtrail",
+        "arn:*:glue:*:*:table/aws:cloudtrail/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    },
+    {
+      "Sid" : "DeregisterResourceAccess",
+      "Effect" : "Allow",
+      "Action" : "lakeformation:DeregisterResource",
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="CloudTrailServiceRolePolicy-learn-more"></a>
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

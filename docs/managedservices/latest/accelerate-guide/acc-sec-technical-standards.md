@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-sec-technical-standards.html
+---
+
+# AMS Accelerate technical standards
+<a name="acc-sec-technical-standards"></a>
+
+The following are Accelerate technical standards categories:
+
+| ID | Category |
+| --- | --- |
+| AMS-STD-X002 | AWS Identity and Access Management |
+| AMS-STD-X003 | Network Security |
+| AMS-STD-X004 | Penetration Testing |
+| AMS-STD-X005 | Amazon GuardDuty |
+| AMS-STD-X007 | Logging |

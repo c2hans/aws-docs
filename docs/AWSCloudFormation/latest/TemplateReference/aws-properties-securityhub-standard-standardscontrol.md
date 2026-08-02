@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-securityhub-standard-standardscontrol.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::SecurityHub::Standard StandardsControl
+<a name="aws-properties-securityhub-standard-standardscontrol"></a>
+
+Provides details about an individual security control. For a list of Security Hub CSPM controls, see [Security Hub CSPM controls reference](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html) in the *AWS Security Hub CSPM User Guide*.
+
+## Syntax
+<a name="aws-properties-securityhub-standard-standardscontrol-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-securityhub-standard-standardscontrol-syntax.json"></a>
+
+```
+{
+  "[Reason](#cfn-securityhub-standard-standardscontrol-reason)" : {{String}},
+  "[StandardsControlArn](#cfn-securityhub-standard-standardscontrol-standardscontrolarn)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-securityhub-standard-standardscontrol-syntax.yaml"></a>
+
+```
+  [Reason](#cfn-securityhub-standard-standardscontrol-reason): {{String}}
+  [StandardsControlArn](#cfn-securityhub-standard-standardscontrol-standardscontrolarn): {{String}}
+```
+
+## Properties
+<a name="aws-properties-securityhub-standard-standardscontrol-properties"></a>
+
+`Reason`  <a name="cfn-securityhub-standard-standardscontrol-reason"></a>
+A user-defined reason for changing a control's enablement status in a specified standard. If you are disabling a control, then this property is required.
+*Required*: No
+*Type*: String
+*Pattern*: `.*\S.*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`StandardsControlArn`  <a name="cfn-securityhub-standard-standardscontrol-standardscontrolarn"></a>
+The Amazon Resource Name (ARN) of the control.
+*Required*: Yes
+*Type*: String
+*Pattern*: `arn:aws\S*:securityhub:\S*`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

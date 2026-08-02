@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectionFilter.html
+---
+
+# DetectionFilter
+<a name="API_DetectionFilter"></a>
+
+A set of parameters that allow you to filter out certain results from your returned results.
+
+## Contents
+<a name="API_DetectionFilter_Contents"></a>
+
+ ** MinBoundingBoxHeight **   <a name="rekognition-Type-DetectionFilter-MinBoundingBoxHeight"></a>
+Sets the minimum height of the word bounding box. Words with bounding box heights lesser than this value will be excluded from the result. Value is relative to the video frame height.
+Type: Float
+Valid Range: Minimum value of 0. Maximum value of 1.
+Required: No
+
+ ** MinBoundingBoxWidth **   <a name="rekognition-Type-DetectionFilter-MinBoundingBoxWidth"></a>
+Sets the minimum width of the word bounding box. Words with bounding boxes widths lesser than this value will be excluded from the result. Value is relative to the video frame width.
+Type: Float
+Valid Range: Minimum value of 0. Maximum value of 1.
+Required: No
+
+ ** MinConfidence **   <a name="rekognition-Type-DetectionFilter-MinConfidence"></a>
+Sets the confidence of word detection. Words with detection confidence below this will be excluded from the result. Values should be between 0 and 100. The default MinConfidence is 80.
+Type: Float
+Valid Range: Minimum value of 0. Maximum value of 100.
+Required: No
+
+## See Also
+<a name="API_DetectionFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rekognition-2016-06-27/DetectionFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rekognition-2016-06-27/DetectionFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rekognition-2016-06-27/DetectionFilter)

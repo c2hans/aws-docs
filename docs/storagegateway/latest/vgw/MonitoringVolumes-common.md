@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/MonitoringVolumes-common.html
+---
+
+# Understanding volume metrics
+<a name="MonitoringVolumes-common"></a>
+
+You can find information following about the Storage Gateway metrics that cover a volume of a gateway. Each volume of a gateway has a set of metrics associated with it.
+
+Some volume-specific metrics have the same name as certain gateway-specific metrics. These metrics represent the same kinds of measurements but are scoped to the volume instead of the gateway. Before starting work, specify whether you want to work with a gateway metric or a volume metric. Specifically, when working with volume metrics, specify the volume ID for the storage volume that you want to view metrics for. For more information, see [Using Amazon CloudWatch Metrics](UsingCloudWatchConsole-common.md).
+
+**Note**
+Some metrics return data points only when new data has been generated during the most recent monitoring period.
+
+The following table describes the Storage Gateway metrics that you can use to get information about your storage volumes.
+
+| Metric | Description | Cached Volumes | Stored Volumes |
+| --- | --- | --- | --- |
+| AvailabilityNotification | The number of availibility notifications sent by the volume.<br />Units: count | Yes | Yes |
+| CacheHitPercent | Percent of application read operations from the volume that are served from cache. The sample is taken at the end of the reporting period.<br />When there are no application read operations from the volume, this metric reports 100 percent. <br />Units: Percent | Yes | No |
+| CachePercentDirty | The volume's contribution to the overall percentage of the gateway's cache that isn't persisted to AWS. The sample is taken at the end of the reporting period.<br />Use the `CachePercentDirty` metric of the gateway to view the overall percentage of the gateway's cache that isn't persisted to AWS. For more information, see [Understanding gateway metrics](MonitoringGateways-common.md).<br />Units: Percent | Yes | Yes |
+| CachePercentUsed | The volume's contribution to the overall percent use of the gateway's cache storage. The sample is taken at the end of the reporting period.<br />Use the `CachePercentUsed` metric of the gateway to view overall percent use of the gateway's cache storage. For more information, see [Understanding gateway metrics](MonitoringGateways-common.md).<br />Units: Percent | Yes | No |
+| CloudBytesDownloaded | The number of bytes downloaded from the cloud to the volume.<br />Units: Bytes | Yes | Yes |
+| CloudBytesUploaded | The number of bytes uploaded from the cloud to the volume.<br />Units: Bytes | Yes | Yes |
+| HealthNotification | The number of health notifications sent by the volume.<br />Units: count | Yes | Yes |
+| IoWaitPercent | The percentage of IoWaitPercent units that are currently used by the volume. <br />Units: Percent | Yes | Yes |
+| MemTotalBytes | The percentage of total memory that is currently used by the volume. <br />Units: Percent | Yes | No |
+| MemoryUsage | The percentage of memory that is currently used by the volume. <br />Units: Percent | Yes | No |
+| ReadBytes  | The total number of bytes read from your on-premises applications in the reporting period.<br />Use this metric with the `Sum` statistic to measure throughput and with the `Samples`statistic to measure IOPS.<br />Units: Bytes | Yes | Yes |
+| ReadTime | The total number of milliseconds spent on read operations from your on-premises applications in the reporting period.<br />Use this metric with the `Average` statistic to measure latency.<br />Units: Milliseconds | Yes | Yes |
+| UserCpuPercent | The percentage of allocated CPU compute units that are currently used by the volume. <br />Units: Percent | Yes | Yes |
+| WriteBytes | The total number of bytes written to your on-premises applications in the reporting period.<br />Use this metric with the `Sum` statistic to measure throughput and with the `Samples` statistic to measure IOPS.<br />Units: Bytes | Yes | Yes |
+| WriteTime | The total number of milliseconds spent on write operations from your on-premises applications in the reporting period. <br />Use this metric with the `Average` statistic to measure latency.<br />Units: Milliseconds | Yes | Yes |
+| QueuedWrites | The number of bytes waiting to be written to AWS, sampled at the end of the reporting period. <br />Units: Bytes | Yes | Yes |

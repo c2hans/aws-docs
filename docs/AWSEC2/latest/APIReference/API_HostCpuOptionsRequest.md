@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HostCpuOptionsRequest.html
+---
+
+# HostCpuOptionsRequest
+<a name="API_HostCpuOptionsRequest"></a>
+
+Contains the CPU configuration options for a Dedicated Host allocation request. Options include AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP) settings.
+
+## Contents
+<a name="API_HostCpuOptionsRequest_Contents"></a>
+
+ ** AmdSevSnp **
+Specifies whether AMD Secure Encrypted Virtualization-Secure Nested Paging (AMD SEV-SNP) is enabled or disabled for the Dedicated Host. If you don't specify a value, AMD SEV-SNP is `disabled`.
+Type: String
+Valid Values: `enabled | disabled`
+Required: No
+
+## See Also
+<a name="API_HostCpuOptionsRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/HostCpuOptionsRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/HostCpuOptionsRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/HostCpuOptionsRequest)

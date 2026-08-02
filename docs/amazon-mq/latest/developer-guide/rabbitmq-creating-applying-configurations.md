@@ -1,0 +1,81 @@
+---
+source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/rabbitmq-creating-applying-configurations.html
+---
+
+# Creating and applying RabbitMQ broker configurations
+<a name="rabbitmq-creating-applying-configurations"></a>
+
+A *configuration* contains all of the settings for your RabbitMQ broker in Cuttlefish format. You can create a configuration before creating any brokers. You can then apply the configuration to one or more brokers
+
+The following examples show how you can create and apply a RabbitMQ broker configuration using the AWS Management Console.
+
+**Important**
+You can only **delete** a configuration using the `DeleteConfiguration` API. For more information, see [Configurations](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/configurations-configuration-id.html) in the *Amazon MQ API Reference*.
+
+## Create a New Configuration
+<a name="creating-rabbitmq-configuration-from-scratch-console"></a>
+
+ To apply a configuration to your broker, you must first create the configuration.
+
+1. Sign in to the [Amazon MQ console](https://console.aws.amazon.com/amazon-mq/).
+
+1. On the left, expand the navigation panel and choose **Configurations**.
+![Amazon MQ navigation panel showing Brokers and Configurations options.](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-create-configuration.png)
+
+1. On the **Configurations** page, choose **Create configuration**.
+
+1. On the **Create configuration** page, in the **Details** section, type the **Configuration name** (for example, `MyConfiguration`) and select a **Broker engine** version.
+
+   To learn more about RabbitMQ engine versions supported by Amazon MQ for RabbitMQ, see [Managing Amazon MQ for RabbitMQ engine versions](rabbitmq-version-management.md).
+
+1. Choose **Create configuration**.
+
+## Create a New Configuration Revision
+<a name="creating-new-rabbitmq-configuration-revision-console"></a>
+
+ After you create a configuration, you must edit the configuration using a configuration revision.
+
+1. From the configuration list, choose **{{MyConfiguration}}**.
+**Note**
+The first configuration revision is always created for you when Amazon MQ creates the configuration.
+
+   On the **{{MyConfiguration}}** page, the broker engine type and version that your new configuration revision uses (for example, **RabbitMQ 3.xx.xx**) are displayed.
+
+1. On the **Configuration details** tab, the configuration revision number, description, and broker configuration in Cuttlefish format are displayed.
+**Note**
+Editing the current configuration creates a new configuration revision.
+
+1. Choose **Edit configuration** and make changes to the Cuttlefish configuration.
+
+1. Choose **Save**.
+
+   The **Save revision** dialog box is displayed.
+
+1. (Optional) Type `A description of the changes in this revision`.
+
+1. Choose **Save**.
+
+   The new revision of the configuration is saved.
+**Important**
+Making changes to a configuration does *not* apply the changes to the broker immediately. To apply your changes, you must wait for the next maintenance window or [reboot the broker](amazon-mq-rebooting-broker.md).
+Currently, you can't delete a configuration.
+
+## Apply a Configuration Revision to Your Broker
+<a name="apply-rabbitmq-configuration-revision-creating-console"></a>
+
+ After creating the configuration revision, you can apply the configuration revision to your broker.
+
+1. On the left, expand the navigation panel and choose **Brokers**.
+![Amazon MQ navigation panel showing Brokers and Configurations options.](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/images/amazon-mq-tutorials-apply-configuration.png)
+
+1. From the broker list, select your broker (for example, **MyBroker**) and then choose **Edit**.
+
+1. On the **Edit {{MyBroker}}** page, in the **Configuration** section, select a **Configuration** and a **Revision** and then choose **Schedule Modifications**.
+
+1. In the **Schedule broker modifications** section, choose whether to apply modifications **During the next scheduled maintenance window** or **Immediately**.
+**Important**
+Single instance brokers are offline while being rebooted. For cluster brokers, only one node is down at a time while the broker reboots.
+
+1. Choose **Apply**.
+
+   Your configuration revision is applied to your broker at the specified time.

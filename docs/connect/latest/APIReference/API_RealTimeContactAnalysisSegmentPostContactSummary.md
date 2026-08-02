@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_RealTimeContactAnalysisSegmentPostContactSummary.html
+---
+
+# RealTimeContactAnalysisSegmentPostContactSummary
+<a name="API_RealTimeContactAnalysisSegmentPostContactSummary"></a>
+
+Information about the post-contact summary for a real-time contact segment.
+
+## Contents
+<a name="API_RealTimeContactAnalysisSegmentPostContactSummary_Contents"></a>
+
+ ** Status **   <a name="connect-Type-RealTimeContactAnalysisSegmentPostContactSummary-Status"></a>
+Whether the summary was successfully COMPLETED or FAILED to be generated.
+Type: String
+Valid Values: `FAILED | COMPLETED`
+Required: Yes
+
+ ** Content **   <a name="connect-Type-RealTimeContactAnalysisSegmentPostContactSummary-Content"></a>
+The content of the summary.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1270.
+Required: No
+
+ ** FailureCode **   <a name="connect-Type-RealTimeContactAnalysisSegmentPostContactSummary-FailureCode"></a>
+If the summary failed to be generated, one of the following failure codes occurs:
++  `QUOTA_EXCEEDED`: The number of concurrent analytics jobs reached your service quota.
++  `INSUFFICIENT_CONVERSATION_CONTENT`: The conversation needs to have at least one turn from both the participants in order to generate the summary.
++  `FAILED_SAFETY_GUIDELINES`: The generated summary cannot be provided because it failed to meet system safety guidelines.
++  `INVALID_ANALYSIS_CONFIGURATION`: This code occurs when, for example, you're using a [language](https://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html#supported-languages-contact-lens) that isn't supported by generative AI-powered post-contact summaries.
++  `INTERNAL_ERROR`: Internal system error.
+Type: String
+Valid Values: `QUOTA_EXCEEDED | INSUFFICIENT_CONVERSATION_CONTENT | FAILED_SAFETY_GUIDELINES | INVALID_ANALYSIS_CONFIGURATION | INTERNAL_ERROR`
+Required: No
+
+## See Also
+<a name="API_RealTimeContactAnalysisSegmentPostContactSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/RealTimeContactAnalysisSegmentPostContactSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/RealTimeContactAnalysisSegmentPostContactSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/RealTimeContactAnalysisSegmentPostContactSummary)

@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_PackageSource.html
+---
+
+# PackageSource
+<a name="API_PackageSource"></a>
+
+The Amazon S3 location to import the package from.
+
+## Contents
+<a name="API_PackageSource_Contents"></a>
+
+ ** S3BucketName **   <a name="opensearchservice-Type-PackageSource-S3BucketName"></a>
+The name of the Amazon S3 bucket containing the package.
+Type: String
+Length Constraints: Minimum length of 3. Maximum length of 63.
+Required: No
+
+ ** S3Key **   <a name="opensearchservice-Type-PackageSource-S3Key"></a>
+Key (file name) of the package.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+## See Also
+<a name="API_PackageSource_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/opensearch-2021-01-01/PackageSource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/opensearch-2021-01-01/PackageSource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/opensearch-2021-01-01/PackageSource)

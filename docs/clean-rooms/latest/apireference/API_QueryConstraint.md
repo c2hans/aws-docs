@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_QueryConstraint.html
+---
+
+# QueryConstraint
+<a name="API_QueryConstraint"></a>
+
+Provides any necessary query constraint information.
+
+## Contents
+<a name="API_QueryConstraint_Contents"></a>
+
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** requireOverlap **   <a name="API-Type-QueryConstraint-requireOverlap"></a>
+An array of column names that specifies which columns are required in the JOIN statement.
+Type: [QueryConstraintRequireOverlap](API_QueryConstraintRequireOverlap.md) object
+Required: No
+
+## See Also
+<a name="API_QueryConstraint_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cleanrooms-2022-02-17/QueryConstraint)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cleanrooms-2022-02-17/QueryConstraint)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cleanrooms-2022-02-17/QueryConstraint)

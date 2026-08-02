@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_RouteNoticeDetailRange.html
+---
+
+# RouteNoticeDetailRange
+<a name="API_RouteNoticeDetailRange"></a>
+
+Notice Detail that is a range.
+
+## Contents
+<a name="API_RouteNoticeDetailRange_Contents"></a>
+
+ ** Max **   <a name="location-Type-RouteNoticeDetailRange-Max"></a>
+Maximum value for the range.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** Min **   <a name="location-Type-RouteNoticeDetailRange-Min"></a>
+Minimum value for the range.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+## See Also
+<a name="API_RouteNoticeDetailRange_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/geo-routes-2020-11-19/RouteNoticeDetailRange)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/geo-routes-2020-11-19/RouteNoticeDetailRange)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/geo-routes-2020-11-19/RouteNoticeDetailRange)

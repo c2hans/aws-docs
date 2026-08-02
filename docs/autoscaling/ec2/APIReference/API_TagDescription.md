@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_TagDescription.html
+---
+
+# TagDescription
+<a name="API_TagDescription"></a>
+
+Describes a tag for an Auto Scaling group.
+
+## Contents
+<a name="API_TagDescription_Contents"></a>
+
+ ** Key **
+The tag key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** PropagateAtLaunch **
+Determines whether the tag is added to new instances as they are launched in the group.
+Type: Boolean
+Required: No
+
+ ** ResourceId **
+The name of the group.
+Type: String
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** ResourceType **
+The type of resource. The only supported value is `auto-scaling-group`.
+Type: String
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** Value **
+The tag value.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+## See Also
+<a name="API_TagDescription_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/TagDescription)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/TagDescription)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/TagDescription)

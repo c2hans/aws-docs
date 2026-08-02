@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ActiveInstance.html
+---
+
+# ActiveInstance
+<a name="API_ActiveInstance"></a>
+
+Describes a running instance in a Spot Fleet.
+
+## Contents
+<a name="API_ActiveInstance_Contents"></a>
+
+ ** instanceHealth **
+The health status of the instance. If the status of either the instance status check or the system status check is `impaired`, the health status of the instance is `unhealthy`. Otherwise, the health status is `healthy`.
+Type: String
+Valid Values: `healthy | unhealthy`
+Required: No
+
+ ** instanceId **
+The ID of the instance.
+Type: String
+Required: No
+
+ ** instanceType **
+The instance type.
+Type: String
+Required: No
+
+ ** spotInstanceRequestId **
+The ID of the Spot Instance request.
+Type: String
+Required: No
+
+## See Also
+<a name="API_ActiveInstance_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/ActiveInstance)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/ActiveInstance)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/ActiveInstance)

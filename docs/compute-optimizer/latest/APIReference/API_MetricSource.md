@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_MetricSource.html
+---
+
+# MetricSource
+<a name="API_MetricSource"></a>
+
+ The list of metric sources required to generate recommendations for commercial software licenses.
+
+## Contents
+<a name="API_MetricSource_Contents"></a>
+
+ ** provider **   <a name="computeoptimizer-Type-MetricSource-provider"></a>
+ The name of the metric source provider.
+Type: String
+Valid Values: `CloudWatchApplicationInsights`
+Required: No
+
+ ** providerArn **   <a name="computeoptimizer-Type-MetricSource-providerArn"></a>
+ The ARN of the metric source provider.
+Type: String
+Required: No
+
+## See Also
+<a name="API_MetricSource_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/compute-optimizer-2019-11-01/MetricSource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/compute-optimizer-2019-11-01/MetricSource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/compute-optimizer-2019-11-01/MetricSource)

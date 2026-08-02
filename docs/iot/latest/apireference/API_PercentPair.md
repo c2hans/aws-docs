@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_PercentPair.html
+---
+
+# PercentPair
+<a name="API_PercentPair"></a>
+
+Describes the percentile and percentile value.
+
+## Contents
+<a name="API_PercentPair_Contents"></a>
+
+ ** percent **   <a name="iot-Type-PercentPair-percent"></a>
+The percentile.
+Type: Double
+Valid Range: Minimum value of 0. Maximum value of 100.
+Required: No
+
+ ** value **   <a name="iot-Type-PercentPair-value"></a>
+The value of the percentile.
+Type: Double
+Required: No
+
+## See Also
+<a name="API_PercentPair_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/PercentPair)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/PercentPair)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/PercentPair)

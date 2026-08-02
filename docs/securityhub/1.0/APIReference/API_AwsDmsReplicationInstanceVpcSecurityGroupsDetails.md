@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsDmsReplicationInstanceVpcSecurityGroupsDetails.html
+---
+
+# AwsDmsReplicationInstanceVpcSecurityGroupsDetails
+<a name="API_AwsDmsReplicationInstanceVpcSecurityGroupsDetails"></a>
+
+ Provides details about the virtual private cloud (VPC) security group that’s associated with the replication instance.
+
+## Contents
+<a name="API_AwsDmsReplicationInstanceVpcSecurityGroupsDetails_Contents"></a>
+
+ ** VpcSecurityGroupId **   <a name="securityhub-Type-AwsDmsReplicationInstanceVpcSecurityGroupsDetails-VpcSecurityGroupId"></a>
+ The identifier of the VPC security group that’s associated with the replication instance.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+## See Also
+<a name="API_AwsDmsReplicationInstanceVpcSecurityGroupsDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/AwsDmsReplicationInstanceVpcSecurityGroupsDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/AwsDmsReplicationInstanceVpcSecurityGroupsDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/AwsDmsReplicationInstanceVpcSecurityGroupsDetails)

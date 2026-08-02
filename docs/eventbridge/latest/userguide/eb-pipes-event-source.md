@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes-event-source.html
+---
+
+# Amazon EventBridge Pipes sources
+<a name="eb-pipes-event-source"></a>
+
+EventBridge Pipes receives event data from a variety of sources, applies optional filters and enrichments to that data, and sends it to a destination.
+
+If a source enforces order to the events sent to EventBridge Pipes, that order is maintained throughout the entire process to the destination.
+
+The following AWS services can be specified as sources for EventBridge Pipes:
++ [Amazon DynamoDB stream](eb-pipes-dynamodb.md)
++ [Amazon Kinesis stream](eb-pipes-kinesis.md)
++ [Amazon MQ broker](eb-pipes-mq.md)
++ [Amazon MSK stream ](eb-pipes-msk.md)
++ [Amazon SQS queue](eb-pipes-sqs.md)
++ [Apache Kafka stream](eb-pipes-kafka.md)
+
+  When you specify an Apache Kafka stream as a pipe source, you can specify an Apache Kafka stream that you manage yourself, or one managed by a third-party provider such as:
+  + [https://www.confluent.io/](https://www.confluent.io/)
+  + [https://www.cloudkarafka.com/](https://www.cloudkarafka.com/)
+  + [https://redpanda.com/](https://redpanda.com/)

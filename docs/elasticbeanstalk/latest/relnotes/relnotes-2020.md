@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/relnotes-2020.html
+---
+
+# Elastic Beanstalk release notes for 2020
+<a name="relnotes-2020"></a>
+
+All of the AWS Elastic Beanstalk release notes for the year 2020, latest first, are under this page in the table of contents.
+
+For a complete list of all release notes, see [AWS Elastic Beanstalk release notes](relnotes.md).

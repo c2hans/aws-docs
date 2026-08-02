@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_FindMatchesTaskRunProperties.html
+---
+
+# FindMatchesTaskRunProperties
+<a name="API_FindMatchesTaskRunProperties"></a>
+
+Specifies configuration properties for a Find Matches task run.
+
+## Contents
+<a name="API_FindMatchesTaskRunProperties_Contents"></a>
+
+ ** JobId **   <a name="Glue-Type-FindMatchesTaskRunProperties-JobId"></a>
+The job ID for the Find Matches task run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
+ ** JobName **   <a name="Glue-Type-FindMatchesTaskRunProperties-JobName"></a>
+The name assigned to the job for the Find Matches task run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
+ ** JobRunId **   <a name="Glue-Type-FindMatchesTaskRunProperties-JobRunId"></a>
+The job run ID for the Find Matches task run.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: No
+
+## See Also
+<a name="API_FindMatchesTaskRunProperties_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/FindMatchesTaskRunProperties)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/FindMatchesTaskRunProperties)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/FindMatchesTaskRunProperties)

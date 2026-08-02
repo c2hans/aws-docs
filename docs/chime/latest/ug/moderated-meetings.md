@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/chime/latest/ug/moderated-meetings.html
+---
+
+# Joining moderated meetings
+<a name="moderated-meetings"></a>
+
+To join a moderated meeting, follow the steps for [joining an auto-call meeting](join-auto-call.md). The meeting only starts when the moderator joins. Amazon Chime blocks the **Message all** option for moderated meetings, and the **Running late** status only becomes visible when the moderator joins.

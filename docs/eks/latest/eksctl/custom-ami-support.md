@@ -1,0 +1,149 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/eksctl/custom-ami-support.html
+---
+
+# Custom AMI support
+<a name="custom-ami-support"></a>
+
+## Setting the node AMI ID
+<a name="_setting_the_node_ami_id"></a>
+
+The `--node-ami` flag enables a number of advanced use cases such as using a custom AMI or querying AWS in realtime to determine which AMI to use. The flag can be used for both non-GPU and GPU images.
+
+The flag can take the AMI image id for an image to explicitly use. It also can take the following 'special' keywords:
+
+| Keyword | Description |
+| --- | --- |
+| auto | Indicates that the AMI to use for the nodes should be found by querying AWS EC2. This relates to the auto resolver. |
+| auto-ssm | Indicates that the AMI to use for the nodes should be found by querying AWS SSM Parameter Store. |
+
+**Note**
+At the moment, EKS managed nodegroups only support the following AMI Families when working with custom AMIs: `AmazonLinux2023`, `AmazonLinux2`, `Bottlerocket`, `Ubuntu2004`, `UbuntuPro2004`, `Ubuntu2204` and `Ubuntu2404`
+
+When setting `--node-ami` to an ID string, `eksctl` will assume that a custom AMI has been requested. For AmazonLinux2 and Ubuntu nodes, both EKS managed and self-managed, this will mean that `overrideBootstrapCommand` is required. For AmazonLinux2023, you can omit `overrideBootstrapCommand` when using a custom AMI, because eksctl automatically generates the required minimal NodeConfig. For more information about node bootstrapping, see [Node bootstrapping](https://github.com/eksctl-io/eksctl/blob/main/pkg/nodebootstrap/README.md) on GitHub.
+
+CLI flag examples:
+
+```
+eksctl create cluster --node-ami=auto
+
+# with a custom ami id
+eksctl create cluster --node-ami=ami-custom1234
+```
+
+Config file example:
+
+```
+nodeGroups:
+  - name: ng1
+    instanceType: p2.xlarge
+    amiFamily: AmazonLinux2
+    ami: auto
+  - name: ng2
+    instanceType: m5.large
+    amiFamily: AmazonLinux2
+    ami: ami-custom1234
+managedNodeGroups:
+  - name: m-ng-2
+    amiFamily: AmazonLinux2
+    ami: ami-custom1234
+    instanceType: m5.large
+    overrideBootstrapCommand: |
+      #!/bin/bash
+      /etc/eks/bootstrap.sh <cluster-name>
+```
+
+The `--node-ami` flag can also be used with `eksctl create nodegroup`.
+
+## Setting the node AMI Family
+<a name="_setting_the_node_ami_family"></a>
+
+The `--node-ami-family` can take following keywords:
+
+| Keyword | Description |
+| --- | --- |
+| AmazonLinux2 | Indicates that the EKS AMI image based on Amazon Linux 2 should be used (default). |
+| AmazonLinux2023 | Indicates that the EKS AMI image based on Amazon Linux 2023 should be used. |
+| Ubuntu2004 | Indicates that the EKS AMI image based on Ubuntu 20.04 LTS (Focal) should be used (supported for EKS ⇐ 1.29). |
+| UbuntuPro2004 | Indicates that the EKS AMI image based on Ubuntu Pro 20.04 LTS (Focal) should be used (available for EKS >= 1.27, ⇐ 1.29). |
+| Ubuntu2204 | Indicates that the EKS AMI image based on Ubuntu 22.04 LTS (Jammy) should be used (available for EKS >= 1.29). |
+| UbuntuPro2204 | Indicates that the EKS AMI image based on Ubuntu Pro 22.04 LTS (Jammy) should be used (available for EKS >= 1.29). |
+| Ubuntu2404 | Indicates that the EKS AMI image based on Ubuntu 24.04 LTS (Noble) should be used (available for EKS >= 1.31). |
+| UbuntuPro2404 | Indicates that the EKS AMI image based on Ubuntu Pro 24.04 LTS (Noble) should be used (available for EKS >= 1.31). |
+| Bottlerocket | Indicates that the EKS AMI image based on Bottlerocket should be used. |
+| WindowsServer2019FullContainer | Indicates that the EKS AMI image based on Windows Server 2019 Full Container should be used. |
+| WindowsServer2019CoreContainer | Indicates that the EKS AMI image based on Windows Server 2019 Core Container should be used. |
+| WindowsServer2022FullContainer | Indicates that the EKS AMI image based on Windows Server 2022 Full Container should be used. |
+| WindowsServer2022CoreContainer | Indicates that the EKS AMI image based on Windows Server 2022 Core Container should be used. |
+
+CLI flag example:
+
+```
+eksctl create cluster --node-ami-family=AmazonLinux2
+```
+
+Config file example:
+
+```
+nodeGroups:
+  - name: ng1
+    instanceType: m5.large
+    amiFamily: AmazonLinux2
+managedNodeGroups:
+  - name: m-ng-2
+    instanceType: m5.large
+    amiFamily: Ubuntu2204
+```
+
+The `--node-ami-family` flag can also be used with `eksctl create nodegroup`. `eksctl` requires AMI Family to be explicitly set via config file or via `--node-ami-family` CLI flag, whenever working with a custom AMI.
+
+**Note**
+At the moment, EKS managed nodegroups only support the following AMI Families when working with custom AMIs: `AmazonLinux2023`, `AmazonLinux2`, `Bottlerocket`, `Ubuntu2004`, `UbuntuPro2004`, `Ubuntu2204` and `Ubuntu2404`
+
+## Windows custom AMI support
+<a name="_windows_custom_ami_support"></a>
+
+Only self-managed Windows nodegroups can specify a custom AMI. `amiFamily` should be set to a valid Windows AMI family.
+
+The following PowerShell variables will be available to the bootstrap script:
+
+```
+$EKSBootstrapScriptFile
+$EKSClusterName
+$APIServerEndpoint
+$Base64ClusterCA
+$ServiceCIDR
+$KubeletExtraArgs
+$KubeletExtraArgsMap: A hashtable containing arguments for the kubelet, e.g., @{ 'node-labels' = ''; 'register-with-taints' = ''; 'max-pods' = '10'}
+$DNSClusterIP
+$ContainerRuntime
+```
+
+Config file example:
+
+```
+nodeGroups:
+  - name: custom-windows
+    amiFamily: WindowsServer2022FullContainer
+    ami: ami-01579b74557facaf7
+    overrideBootstrapCommand: |
+      & $EKSBootstrapScriptFile -EKSClusterName "$EKSClusterName" -APIServerEndpoint "$APIServerEndpoint" -Base64ClusterCA "$Base64ClusterCA" -ContainerRuntime "containerd" -KubeletExtraArgs "$KubeletExtraArgs" 3>&1 4>&1 5>&1 6>&1
+```
+
+## Bottlerocket custom AMI support
+<a name="_bottlerocket_custom_ami_support"></a>
+
+For Bottlerocket nodes, the `overrideBootstrapCommand` is not supported. Instead, to designate their own bootstrap container, one should use the `bottlerocket` field as part of the configuration file. E.g.
+
+```
+  nodeGroups:
+  - name: bottlerocket-ng
+    ami: ami-custom1234
+    amiFamily: Bottlerocket
+    bottlerocket:
+      enableAdminContainer: true
+      settings:
+        bootstrap-containers:
+          bootstrap:
+            source: <MY-CONTAINER-URI>
+```

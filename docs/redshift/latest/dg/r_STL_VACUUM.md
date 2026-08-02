@@ -1,0 +1,73 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_STL_VACUUM.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# STL\_VACUUM
+<a name="r_STL_VACUUM"></a>
+
+Displays row and block statistics for tables that have been vacuumed.
+
+The view shows information specific to when each vacuum operation started and finished, and demonstrates the benefits of running the operation. For information about the requirements for running this command, see the [VACUUM](r_VACUUM_command.md) command description.
+
+STL\_VACUUM is visible only to superusers. For more information, see [Visibility of data in system tables and views](cm_chap_system-tables.md#c_visibility-of-data).
+
+Some or all of the data in this table can also be found in the SYS monitoring view [SYS\_VACUUM\_HISTORY](SYS_VACUUM_HISTORY.md). The data in the SYS monitoring view is formatted to be easier to use and understand. We recommend that you use the SYS monitoring view for your queries.
+
+## Table columns
+<a name="r_STL_VACUUM-table-columns"></a>
+
+| Column name  | Data type  | Description  |
+| --- | --- | --- |
+| userid | integer | The ID of the user who generated the entry. |
+| xid  | bigint  | The transaction ID for the VACUUM statement. You can join this table to the STL\_QUERY view to see the individual SQL statements that are run for a given VACUUM transaction. If you vacuum the whole database, each table is vacuumed in a separate transaction.  |
+| table\_id | integer | The Table ID. |
+| status  | character(30)  | The status of the VACUUM operation for each table. Possible values are the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_VACUUM.html)<br />For more information about the VACUUM sort threshold setting, see [VACUUM](r_VACUUM_command.md). |
+| rows  | bigint  | The actual number of rows in the table plus any deleted rows that are still stored on disk (waiting to be vacuumed). This column shows the count before the vacuum started for rows with a Started status, and the count after the vacuum for rows with a Finished status.  |
+| sortedrows  | integer  | The number of rows in the table that are sorted. This column shows the count before the vacuum started for rows with Started in the Status column, and the count after the vacuum for rows with Finished in the Status column.  |
+| blocks  | integer  | The total number of data blocks used to store the table data before the vacuum operation (rows with a Started status) and after the vacuum operation (Finished column). Each data block uses 1 MB. |
+| max\_merge\_partitions  | integer  | This column is used for performance analysis and represents the maximum number of partitions that vacuum can process for the table per merge phase iteration. (Vacuum sorts the unsorted region into one or more sorted partitions. Depending on the number of columns in the table and the current Amazon Redshift configuration, the merge phase can process a maximum number of partitions in a single merge iteration. The merge phase will still work if the number of sorted partitions exceeds the maximum number of merge partitions, but more merge iterations will be required.)  |
+| eventtime  | timestamp  | When the vacuum operation started or finished.  |
+| reclaimable\_rows  | bigint | The number of reclaimable rows for the current cutoff\_xid. This column shows Redshift's estimated number of reclaimable rows before the vacuum started for rows with a Started status, and the actual number of reclaimable rows remaining after the vacuum for rows with a Finished status.  |
+| reclaimable\_space\_mb  | bigint | Reclaimable space in MB for the current cutoff\_xid. This column shows Redshift's estimated amount of reclaimable space before the vacuum started for rows with a Started status, and the actual amount of reclaimable space remaining after the vacuum for rows with a Finished status.  |
+| cutoff\_xid  | bigint | The cutoff transaction ID for the VACUUM operation. Any transactions after the cutoff are not included in the VACUUM operation.  |
+| is\_recluster  | integer | If 1 (true), the VACUUM operation executed the recluster algorithm, If 0 (false), it was not.  |
+
+## Sample queries
+<a name="r_STL_VACUUM-sample-queries"></a>
+
+The following query reports vacuum statistics for table 108313. The table was vacuumed following a series of inserts and deletes.
+
+```
+select xid, table_id, status, rows, sortedrows, blocks, eventtime,
+                reclaimable_rows, reclaimable_space_mb
+from stl_vacuum where table_id=108313 order by eventtime;
+
+ xid   | table_id | status                  | rows | sortedrows | blocks |  eventtime           | reclaimable_rows | reclaimable_space_mb
+-------+----------+-------------------------+------+------------+--------+----------------------+------------------+----------------------
+ 14294 |   108313 | Started                 | 1950 |        408 |     28 |  2016-05-19 17:36:01 |              984 |                   17
+ 14294 |   108313 | Finished                |  966 |        966 |     11 |  2016-05-19 18:26:13 |                0 |                    0
+ 15126 |   108313 | Skipped(sorted>=95%)    |  966 |        966 |     11 |  2016-05-19 18:26:38 |                0 |                    0
+```
+
+At the start of the VACUUM, the table contained 1,950 rows stored in 28 1 MB blocks. Amazon Redshift estimated it could reclaim 984, or 17 blocks of disk space, with a vacuum operation.
+
+In the row for the Finished status, the ROWS column shows a value of 966, and the BLOCKS column value is 11, down from 28. The vacuum reclaimed the estimated amount of disk space, with no reclaimable rows or space remaining after the vacuum operation completed.
+
+In the sort phase (transaction 15126), the vacuum was able to skip the table because the rows were inserted in sort key order.
+
+The following example shows the statistics for a SORT ONLY vacuum on the SALES table (table 110116 in this example) after a large INSERT operation:
+
+```
+vacuum sort only sales;
+
+select xid, table_id, status, rows, sortedrows, blocks, eventtime
+from stl_vacuum order by xid, table_id, eventtime;
+
+xid |table_id|     status      | rows  |sortedrows|blocks|     eventtime
+----+--------+-----------------+-------+----------+------+--------------------
+...
+2925| 110116 |Started Sort Only|1379648|   172456 |  132 | 2011-02-24 16:25:21...
+2925| 110116 |Finished         |1379648|  1379648 |  132 | 2011-02-24 16:26:28...
+```

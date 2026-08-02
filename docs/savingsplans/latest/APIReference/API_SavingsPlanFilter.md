@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/savingsplans/latest/APIReference/API_SavingsPlanFilter.html
+---
+
+# SavingsPlanFilter
+<a name="API_SavingsPlanFilter"></a>
+
+Information about a Savings Plan filter.
+
+## Contents
+<a name="API_SavingsPlanFilter_Contents"></a>
+
+ ** name **   <a name="savingsplans-Type-SavingsPlanFilter-name"></a>
+The filter name.
+Type: String
+Valid Values: `region | ec2-instance-family | commitment | upfront | term | savings-plan-type | payment-option | start | end | instance-family`
+Required: No
+
+ ** values **   <a name="savingsplans-Type-SavingsPlanFilter-values"></a>
+The filter value.
+Type: Array of strings
+Required: No
+
+## See Also
+<a name="API_SavingsPlanFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/savingsplans-2019-06-28/SavingsPlanFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/savingsplans-2019-06-28/SavingsPlanFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/savingsplans-2019-06-28/SavingsPlanFilter)

@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_TransitGatewayMulticastDomainAssociations.html
+---
+
+# TransitGatewayMulticastDomainAssociations
+<a name="API_TransitGatewayMulticastDomainAssociations"></a>
+
+Describes the multicast domain associations.
+
+## Contents
+<a name="API_TransitGatewayMulticastDomainAssociations_Contents"></a>
+
+ ** resourceId **
+The ID of the resource.
+Type: String
+Required: No
+
+ ** resourceOwnerId **
+ The ID of the AWS account that owns the resource.
+Type: String
+Required: No
+
+ ** resourceType **
+The type of resource, for example a VPC attachment.
+Type: String
+Valid Values: `vpc | vpn | vpn-concentrator | direct-connect-gateway | connect | peering | tgw-peering | client-vpn`
+Required: No
+
+ ** Subnets.N **
+The subnets associated with the multicast domain.
+Type: Array of [SubnetAssociation](API_SubnetAssociation.md) objects
+Required: No
+
+ ** transitGatewayAttachmentId **
+The ID of the transit gateway attachment.
+Type: String
+Required: No
+
+ ** transitGatewayMulticastDomainId **
+The ID of the transit gateway multicast domain.
+Type: String
+Required: No
+
+## See Also
+<a name="API_TransitGatewayMulticastDomainAssociations_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/TransitGatewayMulticastDomainAssociations)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/TransitGatewayMulticastDomainAssociations)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/TransitGatewayMulticastDomainAssociations)

@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/whats-new.html
+---
+
+# Document History
+<a name="whats-new"></a>
+
+The following table describes the important changes to the documentation since the last release of the *AWS Flow Framework for Java Developer Guide*.
++ **API version:** 2012-01-25
++ **Latest documentation update:** June 25, 2018
+
+****
+
+| Change | Description | Date Changed |
+| --- | --- | --- |
+| Update | Fixed an error in the `backoffCoefficient` description for `@ExponentialRetry`. See [@ExponentialRetry](annotations.md#annotations-exponentialretry). | June 25, 2018 |
+| Update | Cleaned up the code examples throughout this guide. | June 5, 2017 |
+| Update | Simplified and improved the organization and contents of this guide. | May 19, 2017 |
+| Update | Simplified and improved the [Making Changes to Decider Code: Versioning and Feature Flags](java-flow-making-changes-decider-code.md) section. | April 10, 2017 |
+| Update | Added the new [Best Practices](java-flow-best-practices.md) section with new guidance on making changes to decider code. | March 3, 2017 |
+| New feature | You can specify Lambda tasks in addition to traditional Activity tasks in your workflows. For more information, see [Implementing AWS Lambda Tasks](lambda-task.md). | July 21, 2015 |
+| New feature | Amazon SWF includes support for setting the task priority on a task list, attempting to deliver the tasks with a higher priority before tasks with lower priority. For more information, see [Setting task priority in Amazon SWF](programming-priority.md). | December 17, 2014 |
+| Update | Made updates and fixes. | August 1, 2013 |
+| Update |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/whats-new.html)  | June 28, 2013 |
+| New feature | The initial release of the AWS Flow Framework for Java. | February 27, 2012 |

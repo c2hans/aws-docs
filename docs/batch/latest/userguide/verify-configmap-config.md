@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/batch/latest/userguide/verify-configmap-config.html
+---
+
+# Verify that the `aws-auth ConfigMap` is configured correctly
+<a name="verify-configmap-config"></a>
+
+To verify that the `aws-auth` `ConfigMap` is configured correctly:
+
+1. Retrieve the mapped roles in the `aws-auth` `ConfigMap`.
+
+   ```
+   $ kubectl get configmap -n kube-system aws-auth -o yaml
+   ```
+
+1. Verify that the `roleARN` is configured as follows.
+
+   `rolearn: arn:aws:iam::{{aws_account_number}}:role/AWSServiceRoleForBatch`
+**Note**
+The path `aws-service-role/batch.amazonaws.com/` has been removed from the ARN of the service-linked role. This is because of an issue with the `aws-auth` configuration map. For more information, see [Roles with paths do not work when the path is included in their ARN in the aws-authconfigmap](https://github.com/kubernetes-sigs/aws-iam-authenticator/issues/268).
+**Note**
+You can also review the Amazon EKS control plane logs. For more information, see [Amazon EKS control plane logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html) in the *Amazon EKS User Guide*.
+
+To resolve an issue where a job is stuck in a `RUNNABLE` status, we recommend that you use `kubectl` to re-apply the manifest. For more information, see [Step 2: Prepare your Amazon EKS cluster for AWS Batch](getting-started-eks.md#getting-started-eks-step-1). Or, you can use `kubectl` to manually edit the `aws-auth` `ConfigMap`. For more information, see [Enabling IAM user and role access to your cluster](https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html) in the *Amazon EKS User Guide*.

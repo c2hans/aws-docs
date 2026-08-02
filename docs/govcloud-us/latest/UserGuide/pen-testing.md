@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/pen-testing.html
+---
+
+# Penetration Testing
+<a name="pen-testing"></a>
+
+ AWS customers are permitted to perform penetration testing on certain services by following the AWS Customer Support Policy for [Penetration Testing](https://aws.amazon.com/security/penetration-testing/). Please refer to the Policy before planning and performing penetration testing activities.

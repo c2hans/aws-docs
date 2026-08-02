@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/healthlake_code_examples.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Code examples for HealthLake using AWS SDKs
+<a name="healthlake_code_examples"></a>
+
+The following code examples show you how to use AWS HealthLake with an AWS software development kit (SDK).
+
+*Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
+
+**More resources**
++  **[ HealthLake Developer Guide](https://docs.aws.amazon.com/healthlake/latest/devguide/what-is-amazon-health-lake.html)** – More information about HealthLake.
++ **[HealthLake API Reference](https://docs.aws.amazon.com/healthlake/latest/APIReference/Welcome.html)** – Details about all available HealthLake actions.
++ **[AWS Developer Center](https://aws.amazon.com/developer/code-examples/?awsf.sdk-code-examples-product=product%23)** – Code examples that you can filter by category or full-text search.
++ **[AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)** – GitHub repo with complete code in preferred languages. Includes instructions for setting up and running the code.
+
+**Contents**
++ [Basics](healthlake_code_examples_basics.md)
+  + [Actions](healthlake_code_examples_actions.md)
+    + [`CreateFHIRDatastore`](healthlake_example_healthlake_CreateFHIRDatastore_section.md)
+    + [`DeleteFHIRDatastore`](healthlake_example_healthlake_DeleteFHIRDatastore_section.md)
+    + [`DescribeFHIRDatastore`](healthlake_example_healthlake_DescribeFHIRDatastore_section.md)
+    + [`DescribeFHIRExportJob`](healthlake_example_healthlake_DescribeFHIRExportJob_section.md)
+    + [`DescribeFHIRImportJob`](healthlake_example_healthlake_DescribeFHIRImportJob_section.md)
+    + [`ListFHIRDatastores`](healthlake_example_healthlake_ListFHIRDatastores_section.md)
+    + [`ListFHIRExportJobs`](healthlake_example_healthlake_ListFHIRExportJobs_section.md)
+    + [`ListFHIRImportJobs`](healthlake_example_healthlake_ListFHIRImportJobs_section.md)
+    + [`ListTagsForResource`](healthlake_example_healthlake_ListTagsForResource_section.md)
+    + [`StartFHIRExportJob`](healthlake_example_healthlake_StartFHIRExportJob_section.md)
+    + [`StartFHIRImportJob`](healthlake_example_healthlake_StartFHIRImportJob_section.md)
+    + [`TagResource`](healthlake_example_healthlake_TagResource_section.md)
+    + [`UntagResource`](healthlake_example_healthlake_UntagResource_section.md)

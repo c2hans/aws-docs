@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-password.html
+---
+
+# Sign-in credentials authentication with AWS Secrets Manager
+<a name="msk-password"></a>
+
+You can control access to your Amazon MSK clusters using sign-in credentials that are stored and secured using AWS Secrets Manager. Storing user credentials in Secrets Manager reduces the overhead of cluster authentication such as auditing, updating, and rotating credentials. Secrets Manager also lets you share user credentials across clusters.
+
+After you associate a secret with an MSK cluster, MSK syncs the credential data periodically.
+
+**Topics**
++ [How sign-in credentials authentication works](msk-password-howitworks.md)
++ [Set up SASL/SCRAM authentication for an Amazon MSK cluster](msk-password-tutorial.md)
++ [Working with users](msk-password-users.md)
++ [Limitations when using SCRAM secrets](msk-password-limitations.md)

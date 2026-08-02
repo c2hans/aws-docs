@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/timestream/latest/APIReference/API_query_SnsConfiguration.html
+---
+
+# SnsConfiguration
+<a name="API_query_SnsConfiguration"></a>
+
+Details on SNS that are required to send the notification.
+
+## Contents
+<a name="API_query_SnsConfiguration_Contents"></a>
+
+ ** TopicArn **   <a name="timestream-Type-query_SnsConfiguration-TopicArn"></a>
+SNS topic ARN that the scheduled query status notifications will be sent to.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Required: Yes
+
+## See Also
+<a name="API_query_SnsConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/timestream-query-2018-11-01/SnsConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/timestream-query-2018-11-01/SnsConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/timestream-query-2018-11-01/SnsConfiguration)

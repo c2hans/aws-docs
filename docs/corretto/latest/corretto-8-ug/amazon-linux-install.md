@@ -1,0 +1,102 @@
+---
+source_url: https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/amazon-linux-install.html
+---
+
+# Amazon Corretto 8 Installation Instructions for Amazon Linux 2 and Amazon Linux 2023
+<a name="amazon-linux-install"></a>
+
+ This topic describes how to install and uninstall Amazon Corretto 8 on a host or container running the Amazon Linux 2 or Amazon Linux 2023 operating systems.
+
+## Option 1: Install using the yum Package Manager on Amazon Linux
+<a name="amazon-linux-install-instruct"></a>
+
+1.  Enable the yum repository in Amazon Linux 2. This is not required on Amazon Linux 2022 and later.
+**Example**
+
+   ```
+   sudo amazon-linux-extras enable corretto8
+   ```
+
+1.  You can install Amazon Corretto 8 as either the runtime environment (JRE) or the full development environment (JDK). The development environment includes the runtime environment.
+
+   Install Amazon Corretto 8 as JRE.
+**Example**
+
+   ```
+   sudo yum install java-1.8.0-amazon-corretto
+   ```
+
+   Install Amazon Corretto 8 as JDK.
+**Example**
+
+   ```
+   sudo yum install java-1.8.0-amazon-corretto-devel
+   ```
+
+ The installation location is `/usr/lib/jvm/java-1.8.0-amazon-corretto.<cpu_arch>`.
+
+ While it is recommended to use `/usr/lib/jvm/java-1.8.0-amazon-corretto.<cpu_arch>` location, installation may also add alternative links making installation location accessible via `/etc/alternatives/jre`, `/etc/alternatives/jre_1.8.0` and `/etc/alternatives/jre_1.8.0_openjdk` for JRE and `/etc/alternatives/java_sdk`, `/etc/alternatives/java_sdk_1.8.0` and `/etc/alternatives/java_sdk_1.8.0_openjdk` for JDK. The paths under `/etc/alternatives/` may point to another JDK depending on the packages installed and system configuration.
+
+## Option 2: Download and Install RPMs Manually
+<a name="amazon-linux-rpm-install-instruct"></a>
+
+1.  Download RPMs from the [Downloads](downloads-list.md) page for your CPU architecture. To install the JDK, you will need to download the RPMs for both the JDK and the JRE.
+
+1.  Install using `yum localinstall`.
+**Example**
+
+   ```
+   sudo yum localinstall java-1.8.0-amazon-corretto*.rpm
+   ```
+
+## Verify Your Installation
+<a name="amazon-linux-verify"></a>
+
+ In the terminal, run the following command to verify the installation.
+
+**Example**
+
+```
+java -version
+```
+Expected output for 8u502:
+
+```
+openjdk version "1.8.0_502"
+OpenJDK Runtime Environment Corretto-8.502.07.1 (build 1.8.0_502-b07)
+OpenJDK 64-Bit Server VM Corretto-8.502.07.1 (build 25.502-b07, mixed mode)
+```
+
+ If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers.
+
+**Example**
+
+```
+sudo alternatives --config java
+```
+If using the JDK you should also run:
+
+```
+sudo alternatives --config javac
+```
+
+## Uninstall Amazon Corretto 8
+<a name="amazon-linux-uninstall"></a>
+
+You can uninstall Amazon Corretto 8 with the following commands.
+
+Uninstall JRE:
+
+**Example**
+
+```
+sudo yum remove java-1.8.0-amazon-corretto
+```
+
+Uninstall JDK:
+
+**Example**
+
+```
+sudo yum remove java-1.8.0-amazon-corretto-devel
+```

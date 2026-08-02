@@ -1,0 +1,17 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/snapchat-ads-support.html
+---
+
+# AWS Glue support for Snapchat Ads
+<a name="snapchat-ads-support"></a>
+
+AWS Glue supports Snapchat Ads as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Snapchat Ads.
+
+**Supported as a target?**
+No.
+
+**Supported Snapchat Ads API versions**
+ v1.

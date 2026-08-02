@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/2022-6-inputs-supported-content.html
+---
+
+# Supported content
+<a name="2022-6-inputs-supported-content"></a>
+
+With SMPTE 2022-6, the video, audio, and ancillary data are muxed into one feed. Compare this design to SMPTE 2110, where the content is each in a separate essence.
+
+The following table describes the content that Elemental Live supports in SMPTE 2022-6 inputs.
+
+- **Video**
+  - UncompressedResolutions – SD and HD<br />Scan types – Progressive and interlaced<br />Sampling – 4:2:2<br />Bit format – 10-bit
+
+- **Audio**
+  - PCM audioUncompressed <br />Sample rates: 44.1kHz and 48.0 kHz
+  - Dolby Digital (AC3)Coding modes – 1.0, 1\+1, 2.0, 3.2 (with LFE)
+  - Dolby Digital Plus (EAC3)Coding modes – 1.0, 2.0, 3.2
+
+- **Ancillary data – Captions (optional)**
+  - EIA-608 embedded captionsCEA-708 embedded captions<br />Teletext as OP42 teletext format. SMPTE 2031 field is unchecked in source.<br />Teletext as OP47 teletext format wrapped in a SMPTE-2031 envelope. SMPTE 2031 field is checked in source. <br />Teletext as OP47 teletext format, also known as SMPTE RDD-08 (compliant with ITU-R BT.1120-7). SMPTE 2031 field is unchecked in source.
+
+- **Ancillary data – Ad avail messages (optional)**
+  - SCTE 104 messages. Elemental Live will automatically convert these messages to SCTE 35 messages during ingest.

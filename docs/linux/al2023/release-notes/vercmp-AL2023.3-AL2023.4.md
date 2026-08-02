@@ -1,0 +1,1265 @@
+---
+source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/vercmp-AL2023.3-AL2023.4.html
+---
+
+# AL2023.4 upgrades from AL2023.3
+<a name="vercmp-AL2023.3-AL2023.4"></a>
+
+ Comparing AL2023.3 version 2023.3.20231211 to AL2023.4 version [2023.4.20240319](relnotes-2023.4.20240319.md).
+
+| Package Type | Count |
+| --- | --- |
+| Source | 108 |
+| Total Binary | 1768 |
+|  noarch binary RPMs | 408 |
+|  x86\_64 binary RPMs | 682 |
+|  aarch64 binary RPMs | 678 |
+
+The full comparison of RPM package versions is below.
+
+- ** `aide` **
+  - **RPM:**  aide
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 0.17.4-1.amzn2023.0.2
+  - **AL2023.4 version:** 0.18.6-1.amzn2023.0.1
+
+- ** `amazon-cloudwatch-agent` **
+  - **RPM:**  amazon-cloudwatch-agent
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.300028.1-1.amzn2023
+  - **AL2023.4 version:** 1.300033.0-1.amzn2023
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/efs.html](https://docs.aws.amazon.com/linux/al2023/ug/efs.html)
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 1.35.0-1.amzn2023
+  - **AL2023.4 version:** 1.35.2-1.amzn2023
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html](https://docs.aws.amazon.com/linux/al2023/ug/uefi-secure-boot.html)
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2023.1-1.amzn2023.0.4
+  - **AL2023.4 version:** 2023.1-1.amzn2023.0.5
+
+- ** `amazon-ssm-agent` **
+  - **RPM:**  amazon-ssm-agent
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.2.1705.0-1.amzn2023
+  - **AL2023.4 version:** 3.2.2303.0-1.amzn2023
+
+- ** `ansible-core` **
+  - **RPM:**  ansible-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ansible-test  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.15.3-1.amzn2023.0.1
+  - **AL2023.4 version:** 2.15.3-1.amzn2023.0.3
+
+- ** `apache-commons-compress` **
+  - **RPM:**  apache-commons-compress  / **Architectures:** noarch
+  - **RPM:**  apache-commons-compress-javadoc  / **Architectures:** noarch
+  - **AL2023.3 version:** 1.21-4.amzn2023.0.3
+  - **AL2023.4 version:** 1.21-4.amzn2023.0.4
+
+- ** `aws-cfn-bootstrap` **
+  - **RPM:**  aws-cfn-bootstrap
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2.0-23.amzn2023
+  - **AL2023.4 version:** 2.0-29.amzn2023
+
+- ** `aws-nitro-enclaves-cli` **
+  - **RPM:**  aws-nitro-enclaves-cli  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  aws-nitro-enclaves-cli-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  aws-nitro-enclaves-cli-integration-tests  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.2.2-0.amzn2023
+  - **AL2023.4 version:** 1.2.3-0.amzn2023
+
+- ** `bind` **
+  - **RPM:**  bind  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-chroot  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-dlz-filesystem  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-dlz-ldap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-dlz-mysql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-dlz-sqlite3  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-dnssec-doc  / **Architectures:** noarch
+  - **RPM:**  bind-dnssec-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-doc  / **Architectures:** noarch
+  - **RPM:**  bind-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-license  / **Architectures:** noarch
+  - **RPM:**  bind-pkcs11  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-pkcs11-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-pkcs11-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-pkcs11-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bind-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-bind  / **Architectures:** noarch
+  - **AL2023.3 version:** 9.16.42-1.amzn2023.0.5
+  - **AL2023.4 version:** 9.16.48-1.amzn2023.0.1
+
+- ** `bluez` **
+  - **RPM:**  bluez  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-cups  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-deprecated  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-hid2hci  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-libs-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-mesh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  bluez-obexd  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 5.62-2.amzn2023.0.4
+  - **AL2023.4 version:** 5.62-2.amzn2023.0.5
+
+- ** `bouncycastle` **
+  - **RPM:**  bouncycastle  / **Architectures:** noarch
+  - **RPM:**  bouncycastle-javadoc  / **Architectures:** noarch
+  - **RPM:**  bouncycastle-mail  / **Architectures:** noarch
+  - **RPM:**  bouncycastle-pg  / **Architectures:** noarch
+  - **RPM:**  bouncycastle-pkix  / **Architectures:** noarch
+  - **RPM:**  bouncycastle-tls  / **Architectures:** noarch
+  - **RPM:**  bouncycastle-util  / **Architectures:** noarch
+  - **AL2023.3 version:** 1.70-4.amzn2023.0.3
+  - **AL2023.4 version:** 1.70-4.amzn2023.0.4
+
+- ** `ca-certificates` **
+  - **RPM:**  ca-certificates
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2023.2.62-1.0.amzn2023.0.1
+  - **AL2023.4 version:** 2023.2.64-1.0.amzn2023.0.1
+
+- ** `c-ares` **
+  - **RPM:**  c-ares  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  c-ares-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.19.0-1.amzn2023
+  - **AL2023.4 version:** 1.19.0-1.amzn2023.0.1
+
+- ** `composer` **
+  - **RPM:**  composer
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2.5.8-2.amzn2023.0.1
+  - **AL2023.4 version:** 2.5.8-2.amzn2023.0.2
+
+- ** `containerd` **
+  - **RPM:**  containerd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  containerd-stress  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.7.2-1.amzn2023.0.4
+  - **AL2023.4 version:** 1.7.11-1.amzn2023.0.1
+
+- ** `cpio` **
+  - **RPM:**  cpio
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.13-13.amzn2023.0.2
+  - **AL2023.4 version:** 2.13-13.amzn2023.0.3
+
+- ** `credentials-fetcher` **
+  - **RPM:**  credentials-fetcher
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.3.1-0.amzn2023
+  - **AL2023.4 version:** 1.3.6-0.amzn2023
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libcurl-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal](https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html#curl-minimal)  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 8.3.0-1.amzn2023.0.2
+  - **AL2023.4 version:** 8.5.0-1.amzn2023.0.2
+
+- ** `dnf` **
+  - **RPM:**  dnf  / **Architectures:** noarch
+  - **RPM:**  dnf-automatic  / **Architectures:** noarch
+  - **RPM:**  dnf-data  / **Architectures:** noarch
+  - **RPM:**  python3-dnf  / **Architectures:** noarch
+  - **RPM:**  yum  / **Architectures:** noarch
+  - **AL2023.3 version:** 4.12.0-2.amzn2023.0.4
+  - **AL2023.4 version:** 4.14.0-1.amzn2023.0.4
+
+- ** `dnf-plugins-core` **
+  - **RPM:**  dnf-plugins-core  / **Architectures:** noarch
+  - **RPM:**  dnf-utils  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugin-leaves  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugin-local  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugin-modulesync  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugin-post-transaction-actions  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugins-core  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugin-show-leaves  / **Architectures:** noarch
+  - **RPM:**  python3-dnf-plugin-versionlock  / **Architectures:** noarch
+  - **AL2023.3 version:** 4.1.0-1.amzn2023.0.3
+  - **AL2023.4 version:** 4.3.0-13.amzn2023.0.4
+
+- ** `dnsmasq` **
+  - **RPM:**  dnsmasq  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dnsmasq-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.89-2.amzn2023.0.1
+  - **AL2023.4 version:** 2.90-1.amzn2023.0.1
+
+- ** `docker` **
+  - **RPM:**  docker
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 24.0.5-1.amzn2023.0.3
+  - **AL2023.4 version:** 25.0.3-1.amzn2023.0.1
+
+- ** `dotnet6.0` **
+  - **RPM:**  aspnetcore-runtime-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  aspnetcore-targeting-pack-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-apphost-pack-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-host  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-hostfxr-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-runtime-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-sdk-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-sdk-6.0-source-built-artifacts  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-targeting-pack-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  dotnet-templates-6.0  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  netstandard-targeting-pack-2.1  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 6.0.25-1.amzn2023.0.1
+  - **AL2023.4 version:** 6.0.27-1.amzn2023.0.1
+
+- ** `ec2-hibinit-agent` **
+  - **RPM:**  ec2-hibinit-agent
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 1.0.4-0.amzn2023.0.2
+  - **AL2023.4 version:** 1.0.8-0.amzn2023
+
+- ** `ec2-utils` **
+  - **RPM:**  ec2-utils
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2.1.0-1.amzn2023.0.1
+  - **AL2023.4 version:** 2.2.0-1.amzn2023.0.1
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/ecs.html](https://docs.aws.amazon.com/linux/al2023/ug/ecs.html)
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.79.1-1.amzn2023
+  - **AL2023.4 version:** 1.82.0-1.amzn2023
+
+- ** `ecs-service-connect-agent` **
+  - **RPM:**  ecs-service-connect-agent
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** v1.27.2.0-1.amzn2023
+  - **AL2023.4 version:** v1.27.3.0-1.amzn2023
+
+- ** `expat` **
+  - **RPM:**  expat  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  expat-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  expat-static  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.5.0-1.amzn2023.0.2
+  - **AL2023.4 version:** 2.5.0-1.amzn2023.0.3
+
+- ** `fontforge` **
+  - **RPM:**  fontforge  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  fontforge-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  fontforge-doc  / **Architectures:** noarch
+  - **AL2023.3 version:** 20201107-3.amzn2023.0.2
+  - **AL2023.4 version:** 20201107-3.amzn2023.0.3
+
+- ** `ghostscript` **
+  - **RPM:**  ghostscript  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ghostscript-doc  / **Architectures:** noarch
+  - **RPM:**  ghostscript-gtk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ghostscript-tools-dvipdf  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ghostscript-tools-fonts  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ghostscript-tools-printing  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ghostscript-x11  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libgs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libgs-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 9.56.1-7.amzn2023.0.4
+  - **AL2023.4 version:** 9.56.1-7.amzn2023.0.5
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html) **
+  - **RPM:**  compat-libpthread-nonshared  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html](https://docs.aws.amazon.com/linux/al2023/ug/core-glibc.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-all-langpacks  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-benchtests  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-doc  / **Architectures:** noarch
+  - **RPM:**  glibc-gconv-extra  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-headers-x86  / **Architectures:** noarch
+  - **RPM:**  glibc-langpack-aa  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-af  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-agr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ak  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-am  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-an  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-anp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ar  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-as  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ast  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ayc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-az  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-be  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bem  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ber  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bhb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bho  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-br  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-brx  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-bs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-byn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ca  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ce  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-chr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ckb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-cmn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-crh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-cs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-csb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-cv  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-cy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-da  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-de  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-doi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-dsb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-dv  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-dz  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-el  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-en  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-eo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-es  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-et  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-eu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fa  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ff  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fil  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fur  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-fy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ga  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-gd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-gez  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-gl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-gu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-gv  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ha  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hak  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-he  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hif  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hne  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hsb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ht  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-hy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ia  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-id  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ig  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ik  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-is  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-it  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-iu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ja  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ka  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-kab  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-kk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-kl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-km  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-kn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ko  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-kok  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ks  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ku  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-kw  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ky  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-li  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lij  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ln  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lv  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-lzh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mag  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mai  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mfe  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mhr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-miq  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mjw  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ml  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mni  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mnw  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ms  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-mt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-my  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nan  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nds  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ne  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nhn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-niu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-nso  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-oc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-om  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-or  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-os  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-pa  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-pap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-pl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ps  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-pt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-quz  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-raj  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ro  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ru  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-rw  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sa  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sah  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sat  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-se  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sgs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-shn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-shs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-si  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sid  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-so  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sq  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ss  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-st  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sv  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-sw  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-szl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ta  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tcy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-te  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-th  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-the  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ti  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tig  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-to  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tpi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ts  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-tt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ug  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-uk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-unm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ur  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-uz  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-ve  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-vi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-wa  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-wae  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-wal  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-wo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-xh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-yi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-yo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-yue  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-yuw  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-zh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-langpack-zu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-locale-source  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-minimal-langpack  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-nss-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  glibc-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libnsl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nscd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss\_db  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss\_hesiod  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sysroot-aarch64-fc34-glibc  / **Architectures:** noarch
+  - **RPM:**  sysroot-x86\_64-fc34-glibc  / **Architectures:** noarch
+  - **AL2023.3 version:** 2.34-52.amzn2023.0.7
+  - **AL2023.4 version:** 2.34-52.amzn2023.0.8
+
+- ** `gnutls` **
+  - **RPM:**  gnutls  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  gnutls-c\+\+  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  gnutls-dane  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  gnutls-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  gnutls-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.8.0-376.amzn2023.0.2
+  - **AL2023.4 version:** 3.8.0-379.amzn2023.0.5
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/go.html](https://docs.aws.amazon.com/linux/al2023/ug/go.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  golang-bin  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  golang-docs  / **Architectures:** noarch
+  - **RPM:**  golang-misc  / **Architectures:** noarch
+  - **RPM:**  golang-shared  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  golang-src  / **Architectures:** noarch
+  - **RPM:**  golang-tests  / **Architectures:** noarch
+  - **AL2023.3 version:** 1.20.10-1.amzn2023.0.1
+  - **AL2023.4 version:** 1.20.12-1.amzn2023.0.2
+
+- ** `graphviz` **
+  - **RPM:**  graphviz  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-doc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-gd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-graphs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-java  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-lua  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-ocaml  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-perl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  graphviz-tcl  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.44.0-25.amzn2023.0.6
+  - **AL2023.4 version:** 2.44.0-25.amzn2023.0.7
+
+- ** `grpc` **
+  - **RPM:**  grpc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grpc-cpp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grpc-data  / **Architectures:** noarch
+  - **RPM:**  grpc-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grpc-doc  / **Architectures:** noarch
+  - **RPM:**  grpc-plugins  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.56.2-10.amzn2023
+  - **AL2023.4 version:** 1.60.0-10.amzn2023
+
+- ** `grub2` **
+  - **RPM:**  grub2-common  / **Architectures:** noarch
+  - **RPM:**  grub2-efi-aa64  / **Architectures:** aarch64
+  - **RPM:**  grub2-efi-aa64-cdboot  / **Architectures:** aarch64
+  - **RPM:**  grub2-efi-aa64-ec2  / **Architectures:** aarch64
+  - **RPM:**  grub2-efi-aa64-modules  / **Architectures:** noarch
+  - **RPM:**  grub2-efi-x64  / **Architectures:** x86\_64
+  - **RPM:**  grub2-efi-x64-cdboot  / **Architectures:** x86\_64
+  - **RPM:**  grub2-efi-x64-ec2  / **Architectures:** x86\_64
+  - **RPM:**  grub2-efi-x64-modules  / **Architectures:** noarch
+  - **RPM:**  grub2-emu  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grub2-emu-modules  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grub2-pc  / **Architectures:** x86\_64
+  - **RPM:**  grub2-pc-modules  / **Architectures:** noarch
+  - **RPM:**  grub2-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grub2-tools-efi  / **Architectures:** x86\_64
+  - **RPM:**  grub2-tools-extra  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  grub2-tools-minimal  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.06-61.amzn2023.0.9
+  - **AL2023.4 version:** 2.06-61.amzn2023.0.11
+
+- ** `indent` **
+  - **RPM:**  indent
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.2.12-7.amzn2023.0.5
+  - **AL2023.4 version:** 2.2.12-7.amzn2023.0.6
+
+- ** `iperf3` **
+  - **RPM:**  iperf3  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  iperf3-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.11-1.amzn2023.0.4
+  - **AL2023.4 version:** 3.16-1.amzn2023
+
+- ** `iscsi-initiator-utils` **
+  - **RPM:**  iscsi-initiator-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  iscsi-initiator-utils-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  iscsi-initiator-utils-iscsiuio  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-iscsi-initiator-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 6.2.1.4-10.git2a8f9d8.amzn2023
+  - **AL2023.4 version:** 6.2.1.4-10.git2a8f9d8.amzn2023.0.1
+
+- ** `jasper` **
+  - **RPM:**  jasper  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  jasper-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  jasper-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  jasper-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.0.33-1.amzn2023.0.1
+  - **AL2023.4 version:** 2.0.33-1.amzn2023.0.2
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.8.0\_392.b08-1.amzn2023
+  - **AL2023.4 version:** 1.8.0\_402.b08-1.amzn2023
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 11.0.21\+9-1.amzn2023
+  - **AL2023.4 version:** 11.0.22\+7-1.amzn2023
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 17.0.9\+8-1.amzn2023.1
+  - **AL2023.4 version:** 17.0.10\+8-1.amzn2023.1
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/java.html](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 21.0.1\+12-1.amzn2023.2
+  - **AL2023.4 version:** 21.0.2\+14-1.amzn2023.1
+
+- ** `javapackages-bootstrap` **
+  - **RPM:**  javapackages-bootstrap
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 1.5.0^20220105.git9f283b7-3.amzn2023.0.2
+  - **AL2023.4 version:** 1.5.0^20220105.git9f283b7-3.amzn2023.0.3
+
+- ** `jq` **
+  - **RPM:**  jq  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  jq-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.6-10.amzn2023.0.2
+  - **AL2023.4 version:** 1.7.1-48.amzn2023.0.1
+
+- ** `jtidy` **
+  - **RPM:**  jtidy  / **Architectures:** noarch
+  - **RPM:**  jtidy-javadoc  / **Architectures:** noarch
+  - **AL2023.3 version:** 1.0-0.38.20100930svn1125.amzn2023.0.1
+  - **AL2023.4 version:** 1.0-0.38.20100930svn1125.amzn2023.0.2
+
+- ** `kernel` **
+  - **RPM:**  bpftool  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-headers  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-libbpf  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-libbpf-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-libbpf-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-modules-extra  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-tools-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  perf  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-perf  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 6.1.66-91.160.amzn2023
+  - **AL2023.4 version:** 6.1.79-99.167.amzn2023
+
+- ** `keyutils` **
+  - **RPM:**  keyutils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  keyutils-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  keyutils-libs-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.6.3-1.amzn2023
+  - **AL2023.4 version:** 1.6.3-1.amzn2023.0.1
+
+- ** `libcomps` **
+  - **RPM:**  libcomps  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libcomps-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libcomps-doc  / **Architectures:** noarch
+  - **RPM:**  python3-libcomps  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python-libcomps-doc  / **Architectures:** noarch
+  - **AL2023.3 version:** 0.1.18-1.amzn2023.0.2
+  - **AL2023.4 version:** 0.1.20-1.amzn2023
+
+- ** `libdnf` **
+  - **RPM:**  libdnf  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libdnf-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-hawkey  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-libdnf  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 0.67.0-1.amzn2023.0.5
+  - **AL2023.4 version:** 0.69.0-8.amzn2023.0.5
+
+- ** `libgit2` **
+  - **RPM:**  libgit2  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libgit2-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.6.4-114.amzn2023.0.1
+  - **AL2023.4 version:** 1.6.4-115.amzn2023.0.2
+
+- ** `librepo` **
+  - **RPM:**  librepo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  librepo-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-librepo  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.14.2-1.amzn2023.0.4
+  - **AL2023.4 version:** 1.14.5-2.amzn2023.0.1
+
+- ** `libsndfile` **
+  - **RPM:**  libsndfile  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsndfile-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsndfile-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.0.31-6.amzn2023.0.2
+  - **AL2023.4 version:** 1.2.2-3.amzn2023.0.1
+
+- ** `libsodium` **
+  - **RPM:**  libsodium  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsodium-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsodium-static  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.0.18-13.amzn2023.0.1
+  - **AL2023.4 version:** 1.0.19-4.amzn2023
+
+- ** `libssh` **
+  - **RPM:**  libssh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libssh-config  / **Architectures:** noarch
+  - **RPM:**  libssh-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 0.10.5-1.amzn2023.0.2
+  - **AL2023.4 version:** 0.10.6-1.amzn2023.0.1
+
+- ** `libtiff` **
+  - **RPM:**  libtiff  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libtiff-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libtiff-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libtiff-tools  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 4.4.0-4.amzn2023.0.17
+  - **AL2023.4 version:** 4.4.0-4.amzn2023.0.18
+
+- ** `libuv` **
+  - **RPM:**  libuv  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libuv-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libuv-static  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.47.0-1.amzn2023.0.1
+  - **AL2023.4 version:** 1.47.0-1.amzn2023.0.2
+
+- ** `mailx` **
+  - **RPM:**  mailx
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 12.5-37.amzn2023.0.4
+  - **AL2023.4 version:** 12.5-43.amzn2023.0.1
+
+- ** `mariadb105` **
+  - **RPM:**  mariadb105  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-backup  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-connect-engine  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-cracklib-password-check  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-errmsg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-gssapi-server  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-oqgraph-engine  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-pam  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-rocksdb-engine  / **Architectures:** x86\_64
+  - **RPM:**  mariadb105-server  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-server-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-sphinx-engine  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  mariadb105-test  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 10.5.20-1.amzn2023.0.1
+  - **AL2023.4 version:** 10.5.23-1.amzn2023.0.1
+
+- ** `microcode_ctl` **
+  - **RPM:**  microcode\_ctl
+  - **Architectures:** x86\_64
+  - **AL2023.3 version:** 2.1-53.amzn2023.0.3
+  - **AL2023.4 version:** 2.1-53.amzn2023.0.5
+
+- ** `ncurses` **
+  - **RPM:**  ncurses  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ncurses-base  / **Architectures:** noarch
+  - **RPM:**  ncurses-c\+\+-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ncurses-compat-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ncurses-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ncurses-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ncurses-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ncurses-term  / **Architectures:** noarch
+  - **AL2023.3 version:** 6.2-4.20200222.amzn2023.0.4
+  - **AL2023.4 version:** 6.2-4.20200222.amzn2023.0.6
+
+- ** `nerdctl` **
+  - **RPM:**  nerdctl
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.1.0-1.amzn2023.0.4
+  - **AL2023.4 version:** 1.7.2-1.amzn2023.0.1
+
+- ** `nmap` **
+  - **RPM:**  nmap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nmap-ncat  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 7.93-1.amzn2023
+  - **AL2023.4 version:** 7.93-4.amzn2023
+
+- ** `nodejs` **
+  - **RPM:**  nodejs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs-docs  / **Architectures:** noarch
+  - **RPM:**  nodejs-full-i18n  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs-npm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  v8-10.2-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 18.18.2-1.amzn2023.0.1
+  - **AL2023.4 version:** 18.18.2-1.amzn2023.0.3
+
+- ** `nodejs20` **
+  - **RPM:**  nodejs20  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs20-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs20-docs  / **Architectures:** noarch
+  - **RPM:**  nodejs20-full-i18n  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs20-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nodejs20-npm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  v8-11.3-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 20.10.0-1.amzn2023.0.1
+  - **AL2023.4 version:** 20.11.1-1.amzn2023.0.2
+
+- ** `nss` **
+  - **RPM:**  nspr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nspr-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-pkcs11-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-softokn  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-softokn-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-softokn-freebl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-softokn-freebl-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-sysinit  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-util  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nss-util-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 4.35.0-5.amzn2023.0.3
+  - **AL2023.4 version:** 4.35.0-6.amzn2023.0.1
+
+- ** `openexr` **
+  - **RPM:**  openexr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openexr-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openexr-libs  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.1.5-1.amzn2023.0.3
+  - **AL2023.4 version:** 3.1.5-1.amzn2023.0.4
+
+- ** `openscap` **
+  - **RPM:**  openscap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openscap-containers  / **Architectures:** noarch
+  - **RPM:**  openscap-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openscap-engine-sce  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openscap-engine-sce-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openscap-python3  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openscap-scanner  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openscap-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.3.7-1.amzn2023.0.1
+  - **AL2023.4 version:** 1.3.9-1.amzn2023.0.1
+
+- ** `openssh` **
+  - **RPM:**  openssh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssh-clients  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssh-keycat  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssh-server  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  pam\_ssh\_agent\_auth  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 8.7p1-8.amzn2023.0.8
+  - **AL2023.4 version:** 8.7p1-8.amzn2023.0.10
+
+- ** `openssl` **
+  - **RPM:**  openssl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssl-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssl-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssl-perl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  openssl-snapsafe-libs  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.0.8-1.amzn2023.0.10
+  - **AL2023.4 version:** 3.0.8-1.amzn2023.0.11
+
+- ** `p7zip` **
+  - **RPM:**  p7zip  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  p7zip-doc  / **Architectures:** noarch
+  - **RPM:**  p7zip-plugins  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 16.02-20.amzn2023.0.4
+  - **AL2023.4 version:** 16.02-20.amzn2023.0.5
+
+- ** `pam` **
+  - **RPM:**  pam  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  pam-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  pam-docs  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.5.1-8.amzn2023.0.3
+  - **AL2023.4 version:** 1.5.1-8.amzn2023.0.4
+
+- ** `perl-Cpanel-JSON-XS` **
+  - **RPM:**  perl-Cpanel-JSON-XS
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 4.25-2.amzn2023.0.5
+  - **AL2023.4 version:** 4.25-2.amzn2023.0.6
+
+- ** `perl-Math-BigInt` **
+  - **RPM:**  perl-Math-BigInt
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 1.9998.18-458.amzn2023.0.2
+  - **AL2023.4 version:** 1.9998.39-2.amzn2023.0.2
+
+- ** `perl-Spreadsheet-ParseExcel` **
+  - **RPM:**  perl-Spreadsheet-ParseExcel
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 0.6500-28.amzn2023.0.2
+  - **AL2023.4 version:** 0.6500-28.amzn2023.0.3
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-bcmath  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-cli  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-dba  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-dbg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-embedded  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-enchant  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-ffi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-fpm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-gd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-gmp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-intl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-ldap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-mbstring  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-mysqlnd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-odbc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-opcache  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-pdo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-pgsql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-process  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-pspell  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-snmp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-soap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-tidy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.1-xml  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 8.1.23-1.amzn2023.0.1
+  - **AL2023.4 version:** 8.1.27-1.amzn2023.0.2
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html) **
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/php.html](https://docs.aws.amazon.com/linux/al2023/ug/php.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-bcmath  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-cli  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-dba  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-dbg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-embedded  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-enchant  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-ffi  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-fpm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-gd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-gmp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-intl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-ldap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-mbstring  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-mysqlnd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-odbc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-opcache  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pdo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pgsql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-process  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-pspell  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-snmp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-soap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-sodium  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-tidy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-xml  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  php8.2-zip  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 8.2.9-1.amzn2023.0.3
+  - **AL2023.4 version:** 8.2.15-1.amzn2023.0.2
+
+- ** `polkit` **
+  - **RPM:**  polkit  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  polkit-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  polkit-docs  / **Architectures:** noarch
+  - **RPM:**  polkit-libs  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 0.117-11.amzn2023
+  - **AL2023.4 version:** 0.117-11.amzn2023.0.1
+
+- ** `postfix` **
+  - **RPM:**  postfix  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-cdb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-ldap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-lmdb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-mysql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-pcre  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-perl-scripts  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-pgsql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postfix-sqlite  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.7.2-4.amzn2023.0.4
+  - **AL2023.4 version:** 3.7.2-4.amzn2023.0.5
+
+- ** `postgresql15` **
+  - **RPM:**  postgresql15  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-contrib  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-docs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-llvmjit  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-plperl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-plpython3  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-pltcl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-private-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-private-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-server  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-server-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-test  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-test-rpm-macros  / **Architectures:** noarch
+  - **RPM:**  postgresql15-upgrade  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  postgresql15-upgrade-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 15.4-1.amzn2023.0.1
+  - **AL2023.4 version:** 15.6-1.amzn2023.0.1
+
+- ** `publicsuffix-list` **
+  - **RPM:**  publicsuffix-list  / **Architectures:** noarch
+  - **RPM:**  publicsuffix-list-dafsa  / **Architectures:** noarch
+  - **AL2023.3 version:** 20221208-60.amzn2023
+  - **AL2023.4 version:** 20240212-61.amzn2023
+
+- ** `python-jinja2` **
+  - **RPM:**  python3-jinja2
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2.11.3-1.amzn2023.0.2
+  - **AL2023.4 version:** 2.11.3-1.amzn2023.0.3
+
+- ** `python-pillow` **
+  - **RPM:**  python3-pillow  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-pillow-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-pillow-tk  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 9.4.0-2.amzn2023.0.3
+  - **AL2023.4 version:** 9.4.0-2.amzn2023.0.4
+
+- ** `python-pycryptodomex` **
+  - **RPM:**  python3-pycryptodomex  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-pycryptodomex-selftest  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.11.0-1.amzn2023.0.2
+  - **AL2023.4 version:** 3.11.0-1.amzn2023.0.3
+
+- ** `R` **
+  - **RPM:**  libRmath  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libRmath-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libRmath-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  R  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  R-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  R-core-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  R-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  R-java  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  R-java-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 4.1.3-1.amzn2023.0.2
+  - **AL2023.4 version:** 4.3.2-1.amzn2023.0.1
+
+- ** `rdma-core` **
+  - **RPM:**  ibacm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  infiniband-diags  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  infiniband-diags-compat  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  iwpmd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libibumad  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libibverbs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libibverbs-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  librdmacm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  librdmacm-utils  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-pyverbs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rdma-core  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rdma-core-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  srp\_daemon  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 37.0-1.amzn2023.0.3
+  - **AL2023.4 version:** 48.0-1.amzn2023.0.1
+
+- ** `redis6` **
+  - **RPM:**  redis6  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  redis6-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  redis6-doc  / **Architectures:** noarch
+  - **AL2023.3 version:** 6.2.13-1.amzn2023.0.1
+  - **AL2023.4 version:** 6.2.14-1.amzn2023.0.1
+
+- ** `rpm` **
+  - **RPM:**  python3-rpm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-apidocs  / **Architectures:** noarch
+  - **RPM:**  rpm-build  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-build-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-cron  / **Architectures:** noarch
+  - **RPM:**  rpm-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-audit  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-fapolicyd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-ima  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-prioreset  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-selinux  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-syslog  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-plugin-systemd-inhibit  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-sign  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rpm-sign-libs  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 4.16.1.3-12.amzn2023.0.6
+  - **AL2023.4 version:** 4.16.1.3-29.amzn2023.0.6
+
+- ** `runc` **
+  - **RPM:**  runc
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.1.7-1.amzn2023.0.3
+  - **AL2023.4 version:** 1.1.11-1.amzn2023.0.1
+
+- ** [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html) **
+  - **RPM:**  cargo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  clippy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  [https://docs.aws.amazon.com/linux/al2023/ug/rust.html](https://docs.aws.amazon.com/linux/al2023/ug/rust.html)  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-analysis  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-analyzer  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-debugger-common  / **Architectures:** noarch
+  - **RPM:**  rust-doc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rustfmt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-gdb  / **Architectures:** noarch
+  - **RPM:**  rust-lldb  / **Architectures:** noarch
+  - **RPM:**  rust-src  / **Architectures:** noarch
+  - **RPM:**  rust-std-static  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  rust-std-static-wasm32-unknown-unknown  / **Architectures:** noarch
+  - **RPM:**  rust-std-static-wasm32-wasi  / **Architectures:** noarch
+  - **AL2023.3 version:** 1.68.2-1.amzn2023.0.2
+  - **AL2023.4 version:** 1.68.2-1.amzn2023.0.5
+
+- ** `sqlite` **
+  - **RPM:**  lemon  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sqlite  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sqlite-analyzer  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sqlite-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sqlite-doc  / **Architectures:** noarch
+  - **RPM:**  sqlite-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sqlite-tcl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sqlite-tools  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.40.0-1.amzn2023.0.3
+  - **AL2023.4 version:** 3.40.0-1.amzn2023.0.4
+
+- ** `squid` **
+  - **RPM:**  squid
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 5.8-1.amzn2023.0.3
+  - **AL2023.4 version:** 5.8-1.amzn2023.0.4
+
+- ** `sssd` **
+  - **RPM:**  libipa\_hbac  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libipa\_hbac-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_autofs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_certmap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_certmap-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_idmap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_idmap-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_nss\_idmap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_nss\_idmap-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_simpleifp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_simpleifp-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsss\_sudo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-libipa\_hbac  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-libsss\_nss\_idmap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-sss  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-sssdconfig  / **Architectures:** noarch
+  - **RPM:**  python3-sss-murmur  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-ad  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-client  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-common-pac  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-dbus  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-ipa  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-kcm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-krb5  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-krb5-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-ldap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-nfs-idmap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-proxy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sssd-winbind-idmap  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 2.5.0-1.amzn2023.0.3
+  - **AL2023.4 version:** 2.9.4-1.amzn2023.0.1
+
+- ** `sudo` **
+  - **RPM:**  sudo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sudo-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sudo-logsrvd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  sudo-python-plugin  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.9.13-1.p2.amzn2023.0.4
+  - **AL2023.4 version:** 1.9.14-1.p3.amzn2023.0.1
+
+- ** `systemd` **
+  - **RPM:**  systemd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-boot-unsigned  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-container  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-journal-remote  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-networkd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-oomd-defaults  / **Architectures:** noarch
+  - **RPM:**  systemd-pam  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-resolved  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-rpm-macros  / **Architectures:** noarch
+  - **RPM:**  systemd-standalone-sysusers  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-standalone-tmpfiles  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-tests  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  systemd-udev  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 252.16-1.amzn2023.0.1
+  - **AL2023.4 version:** 252.16-1.amzn2023.0.2
+
+- ** `system-release` **
+  - **RPM:**  amazon-linux-repo-cdn  / **Architectures:** noarch
+  - **RPM:**  amazon-linux-repo-s3  / **Architectures:** noarch
+  - **RPM:**  kernel-livepatch-repo-cdn  / **Architectures:** noarch
+  - **RPM:**  kernel-livepatch-repo-s3  / **Architectures:** noarch
+  - **RPM:**  system-release  / **Architectures:** noarch
+  - **AL2023.3 version:** 2023.3.20231211-0.amzn2023
+  - **AL2023.4 version:** 2023.4.20240319-1.amzn2023
+
+- ** `tar` **
+  - **RPM:**  tar
+  - **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.34-1.amzn2023.0.3
+  - **AL2023.4 version:** 1.34-1.amzn2023.0.4
+
+- ** `tomcat9` **
+  - **RPM:**  tomcat9  / **Architectures:** noarch
+  - **RPM:**  tomcat9-admin-webapps  / **Architectures:** noarch
+  - **RPM:**  tomcat9-docs-webapp  / **Architectures:** noarch
+  - **RPM:**  tomcat9-el-3.0-api  / **Architectures:** noarch
+  - **RPM:**  tomcat9-jsp-2.3-api  / **Architectures:** noarch
+  - **RPM:**  tomcat9-lib  / **Architectures:** noarch
+  - **RPM:**  tomcat9-servlet-4.0-api  / **Architectures:** noarch
+  - **RPM:**  tomcat9-webapps  / **Architectures:** noarch
+  - **AL2023.3 version:** 9.0.82-1.amzn2023.0.1
+  - **AL2023.4 version:** 9.0.83-1.amzn2023.0.1
+
+- ** `tpm2-tss` **
+  - **RPM:**  tpm2-tss  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  tpm2-tss-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 3.2.2-1.amzn2023
+  - **AL2023.4 version:** 4.0.1-6.amzn2023
+
+- ** `tzdata` **
+  - **RPM:**  tzdata  / **Architectures:** noarch
+  - **RPM:**  tzdata-java  / **Architectures:** noarch
+  - **AL2023.3 version:** 2023c-1.amzn2023.0.1
+  - **AL2023.4 version:** 2024a-1.amzn2023.0.1
+
+- ** `unbound` **
+  - **RPM:**  python3-unbound  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  unbound  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  unbound-anchor  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  unbound-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  unbound-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  unbound-utils  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.17.1-1.amzn2023.0.1
+  - **AL2023.4 version:** 1.17.1-1.amzn2023.0.2
+
+- ** `update-motd` **
+  - **RPM:**  update-motd
+  - **Architectures:** noarch
+  - **AL2023.3 version:** 2.1-1.amzn2023.0.1
+  - **AL2023.4 version:** 2.2-1.amzn2023
+
+- ** `vim` **
+  - **RPM:**  vim-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  vim-data  / **Architectures:** noarch
+  - **RPM:**  vim-default-editor  / **Architectures:** noarch
+  - **RPM:**  vim-enhanced  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  vim-filesystem  / **Architectures:** noarch
+  - **RPM:**  vim-minimal  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xxd  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 9.0.2120-1.amzn2023
+  - **AL2023.4 version:** 9.0.2153-1.amzn2023
+
+- ** `wireshark` **
+  - **RPM:**  wireshark-cli  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  wireshark-devel  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 4.0.8-2.amzn2023.0.3
+  - **AL2023.4 version:** 4.0.8-2.amzn2023.0.5
+
+- ** `xorg-x11-server` **
+  - **RPM:**  xorg-x11-server-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xorg-x11-server-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xorg-x11-server-source  / **Architectures:** noarch
+  - **RPM:**  xorg-x11-server-Xdmx  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xorg-x11-server-Xephyr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xorg-x11-server-Xnest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xorg-x11-server-Xorg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  xorg-x11-server-Xvfb  / **Architectures:** aarch64, x86\_64
+  - **AL2023.3 version:** 1.20.14-26.amzn2023.0.2
+  - **AL2023.4 version:** 1.20.14-30.amzn2023.0.1
+
+- ** `zsh` **
+  - **RPM:**  zsh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  zsh-html  / **Architectures:** noarch
+  - **AL2023.3 version:** 5.8.1-1.amzn2023.0.3
+  - **AL2023.4 version:** 5.9-12.amzn2023

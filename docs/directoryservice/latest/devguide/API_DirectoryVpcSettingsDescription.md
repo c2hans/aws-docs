@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/directoryservice/latest/devguide/API_DirectoryVpcSettingsDescription.html
+---
+
+# DirectoryVpcSettingsDescription
+<a name="API_DirectoryVpcSettingsDescription"></a>
+
+Contains information about the directory.
+
+## Contents
+<a name="API_DirectoryVpcSettingsDescription_Contents"></a>
+
+ ** AvailabilityZones **   <a name="DirectoryService-Type-DirectoryVpcSettingsDescription-AvailabilityZones"></a>
+The list of Availability Zones that the directory is in.
+Type: Array of strings
+Required: No
+
+ ** SecurityGroupId **   <a name="DirectoryService-Type-DirectoryVpcSettingsDescription-SecurityGroupId"></a>
+The domain controller security group identifier for the directory.
+Type: String
+Pattern: `^(sg-[0-9a-f]{8}|sg-[0-9a-f]{17})$`
+Required: No
+
+ ** SubnetIds **   <a name="DirectoryService-Type-DirectoryVpcSettingsDescription-SubnetIds"></a>
+The identifiers of the subnets for the directory servers.
+Type: Array of strings
+Pattern: `^(subnet-[0-9a-f]{8}|subnet-[0-9a-f]{17})$`
+Required: No
+
+ ** VpcId **   <a name="DirectoryService-Type-DirectoryVpcSettingsDescription-VpcId"></a>
+The identifier of the VPC that the directory is in.
+Type: String
+Pattern: `^(vpc-[0-9a-f]{8}|vpc-[0-9a-f]{17})$`
+Required: No
+
+## See Also
+<a name="API_DirectoryVpcSettingsDescription_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ds-2015-04-16/DirectoryVpcSettingsDescription)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ds-2015-04-16/DirectoryVpcSettingsDescription)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ds-2015-04-16/DirectoryVpcSettingsDescription)

@@ -1,0 +1,451 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# Connecting Amazon Q Business to Web Crawler using APIs
+<a name="web-crawler-api"></a>
+
+To connect Amazon Q Business to Web Crawler using the Amazon Q API, call `CreateDataSource`. Use this API to:
++ provide a name and tags for your data source
++ an Amazon Resource Name (ARN) of an IAM role with permission to access the data source and required resources
++ a sync schedule for Amazon Q to check the documents in your data source
++ a Amazon VPC configuration
+
+For more information on available parameters, see [https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) in the [Amazon Q API reference](https://docs.aws.amazon.com/amazonq/latest/api-reference/Welcome.html).
+
+Provide the seed or starting point URLs, or the sitemap URLs, as part of the connection configuration or repository endpoint details. Also specify the website authentication credentials and authentication type if your websites require authentication, and other necessary configurations.
+
+**Topics**
++ [Web Crawler configuration properties](#web-crawler-configuration-keys)
++ [Web Crawler JSON schema](#web-crawler-api-json)
++ [Web Crawler JSON schema example](#web-crawler-api-json-example)
+
+## Web Crawler configuration properties
+<a name="web-crawler-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `type` | The type of data source. | `string`<br />The only allowed values are [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. | `string`<br />You can choose between the following options:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | Yes |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has the sub-property `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. This is a sub-property for the `connectionConfiguration`. | `object`<br />This property has the following sub-properties[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | Yes |
+| `authentication` | The authentication type if your websites require the same authentication. This is a sub-property for the `repositoryEndpointMetadata`.  | `string`<br />Depending on your connection type, the allowed values are `NoAuthentication`, `BasicAuth`, `NTLM_Kerberos`, `Form`, `SAML`. | Yes |
+| `seedUrlConnections` | The list of seed or starting point URLs for the websites that you want to crawl. You can list up to 100 seed URLs. This is a sub-property for the `repositoryEndpointMetadata`. | `array`<br />This is an array of `seedUrl`s. Use the pattern: [`https://.*`]. | No |
+| `seedUrl` | The seed or starting point URL for the websites that you want to crawl. This is a sub-property for the `seedUrlConnections`. | `string`<br />Use the pattern: [`https://.*`]. | Yes |
+| `s3SeedUrl` | The S3 path to the text file that stores the list of seed or starting point URLs. This is a sub-property for the `repositoryEndpointMetadata`. | `string`<br />Use the pattern *`s3://bucket-name/directory/` *. Each URL in the text file must be formatted on a separate line. You can list up to 100 seed URLs in a file. | No |
+| `siteMapUrls` | The list of sitemap URLs for the websites that you want to crawl. This is a sub-property for the `repositoryEndpointMetadata`. | `array`<br />This is an array of `siteMapUrls`. You can list up to three sitemap URLs. Use the pattern: [`https://.*`]. | No |
+| `s3SiteMapUrl` | The S3 path to the sitemap XML files. This is a sub-property for the `repositoryEndpointMetadata`. | `string`<br />Use the pattern, *s3://bucket-name/directory/*. You can list up to three sitemap XML files. You can club together multiple sitemap files into a .zip file and store the .zip file in your Amazon S3 bucket. | No |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | Yes |
+| [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html)  | A list of objects that map the attributes or field names of your webpages and attachments to Amazon Q index field names. | `object`<br />These properties has the following sub-properties[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | No |
+| `indexFieldName` | The name of the index field. This is a sub-property for `webPage` and `attachments`. | `string` | Yes |
+| `indexFieldType` | The type of the index field. This is a sub-property for `webPage` and `attachments`. | `string`<br />The only allowed value are [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | Yes |
+| `dataSourceFieldName` | The field name of the data source. This is a sub-property for `webPage` and `attachments`. | `string` | Yes |
+| `dateFieldFormat` | The field date of the data source. This is a sub-property for `webPage` and `attachments`. | `string`<br />Use the pattern `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties that are not required[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | Yes |
+| `rateLimit` | The maximum number of URLs crawled per website host per minute. This is a sub-property of `additionalProperties`. | `string`<br />The default value is `300` | Yes |
+| `maxFileSize` | The maximum size (in MB) of a webpage or attachment to crawl. This is a sub-property of `additionalProperties`. | `string`<br />The default value is `50` | Yes |
+| `crawlDepth` | The number of levels from the seed URL to crawl. This is a sub-property of `additionalProperties`. | `string`<br />The seed URL page is depth `1` and any hyperlinks on this page that are also crawled are depth `2`. The default value is `2`. | Yes |
+| `maxLinksPerUrl` | The maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website's webpages are crawled, any URLs that the webpages link to also are crawled. URLs on a webpage are crawled in order of appearance. This is a sub-property of `additionalProperties`. | `string`<br />The default value is `100`. | Yes |
+| `honorRobots` | `true` to respect the robots.txt directives of the websites that you want to crawl. These directives control how Amazon Q Web Crawler crawls the websites, and whether Amazon Q can crawl only specific content or not crawl any content. This is a sub-property of `additionalProperties`. The `honorRobots` feature is currently only available if you use the API.  | `boolean` | Yes |
+| `crawlSubDomain` | `true` to crawl the website domains with subdomains only. This is a sub-property of `additionalProperties`. | `boolean`<br />If the seed URL is "abc.example.com", then "a.abc.example.com" and "b.abc.example.com" are also crawled. If you don't set `crawlSubDomain` or `crawlAllDomain` to `true`, then Amazon Q only crawls the domains of the websites that you want to crawl. | Yes |
+| `crawlAllDomain` | Crawl the website domains with subdomains and other domains the web pages link to. This is a sub-property of `additionalProperties`. | `boolean`<br />If you don't set `crawlSubDomain` or `crawlAllDomain` to `true`, then Amazon Q only crawls the domains of the websites that you want to crawl. | Yes |
+| `crawlAttachments` | `true` to crawl files that the webpages link to. This is a sub-property of `additionalProperties`. | `boolean` | Yes |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. This is a sub-property of `additionalProperties`. | `string`<br />The default value is `50`. The maximum file size should be greater than `0` and less than or equal to `50`. | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html)  | These are sub-properties of `additionalProperties`. A list of regular expression patterns to *include* crawling certain URLs and indexing any hyperlinks on these URL webpages. URLs that match the patterns are included in the index. URLs that don't match the patterns are excluded from the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the URL and website's webpages aren't included in the index. | `array`(`string`) | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html)  | These are sub-properties of `additionalProperties`. A list of regular expression patterns to *exclude* crawling certain URLs and indexing any hyperlinks on these URL webpages. URLs that match the patterns are excluded from the index. URLs that don't match the patterns are included in the index. If a URL matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the URL/website's webpages aren't included in the index. | `array`(`string`) | No |
+| `inclusionFileIndexPatterns` | This is a sub-property of `additionalProperties`. A list of regular expression patterns to *include* certain web page files. Files that match the patterns are included in the index. Files that don't match the patterns are excluded from the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file isn't included in the index. | `array`(`string`) | No |
+| `exclusionFileIndexPatterns` | This is a sub-property of `additionalProperties`. A list of regular expression patterns to *exclude* certain webpage files. Files that match the patterns are excluded from the index. Files that don't match the patterns are included in the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file isn't included in the index. | `array`(`string`) | No |
+| `proxy` | This is a sub-property of `additionalProperties`. Configuration information required to connect to your internal websites through a web proxy. | `object` | No |
+| `host` | This is a sub-property of `proxy`. The host name of the proxy server that you want to use to connect to internal websites.<br />For example, the host name of *https://a.example.com/page1.html * is `a.example.com`. | `string` | No |
+| port | This is a sub-property of `proxy`. The port number of the proxy server that you want to use to connect to internal websites.<br />For example, the port 443 would be `443`. | `string` | No |
+| `secretArn` | This is a sub-property of `proxy`. If web proxy credentials are required to connect to a website host, you can create an AWS Secrets Manager secret that stores the credentials. Provide the Amazon Resource Name (ARN) of the secret. | `string`<br />The minimum length is 20and the maximum length is 2,048 characters<br />The JSON structure for this is<pre>{<br />          "userName": string,<br />          "password": string<br />          }</pre> | No |
+| secretArn | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that's used if your websites require authentication to access the websites. You store the authentication credentials for the website in the secret that contains JSON key-value pairs.<br />If you use basic, or NTLM/Kerberos, enter the username and password. The JSON keys in the secret must be `userName` and `password`. NTLM authentication protocol includes password hashing, and Kerberos authentication protocol includes password encryption.<br />If you use SAML or form authentication, enter the username and password, XPath for the username field (and username button if using SAML), XPaths for the password field and button, and the login page URL. The JSON keys in the secret must be `userName`, `password`, `userNameFieldXpath`, `userNameButtonXpath`, `passwordFieldXpath`, `passwordButtonXpath`, and `loginPageUrl`. You can find the XPaths (XML Path Language) of elements using your web browser's developer tools. XPaths usually follow this format: `//tagname[@Attribute='Value']`.<br />Amazon Q also checks if the endpoint information (seed URLs) included in the secret is the same the endpoint information specified in your data source endpoint configuration details. | If you use `seedUrlConnections` or `s3SeedUrl` as the connection type, you can choose from all authentication values (`NoAuthentication`, `BasicAuth`, `NTLM_Kerberos`, `Form`, `SAML`) depending on the use case.<br />If you use `siteMapUrls` or `s3SiteMapUrl` as connection type, the `authentication` should be `NoAuthentication`.<br />You must use the following JSON structure for your `authentication` values.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/web-crawler-api.html) | No |
+| version | The version of this template that's currently supported. | `string`<br />The default value is `1.0.0`. | No |
+| implicitWaitDuration | Specifies how long the connector will wait, in seconds, before crawling a webpage. | Range: 0-10 <br />eg. "implicitWaitDuration": "5" |  |
+
+## Web Crawler JSON schema
+<a name="web-crawler-api-json"></a>
+
+The following is the Web Crawler JSON schema:
+
+```
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["WEBCRAWLERV2", "WEBCRAWLER"]
+    },
+    "syncMode": {
+      "type": "string",
+      "enum": ["FORCED_FULL_CRAWL", "FULL_CRAWL"]
+    },
+    "secretArn": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 2048
+    },
+    "connectionConfiguration": {
+      "type": "object",
+      "properties": {
+        "repositoryEndpointMetadata": {
+          "type": "object",
+          "properties": {
+            "siteMapUrls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "https://.*"
+              }
+            },
+            "s3SeedUrl": {
+              "type": ["string", "null"],
+              "pattern": "s3:.*"
+            },
+            "s3SiteMapUrl": {
+              "type": ["string", "null"],
+              "pattern": "s3:.*"
+            },
+            "seedUrlConnections": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "seedUrl": {
+                      "type": "string",
+                      "pattern": "https://.*"
+                    }
+                  },
+                  "required": ["seedUrl"]
+                }
+              ]
+            },
+            "authentication": {
+              "type": "string",
+              "enum": [
+                "NoAuthentication",
+                "BasicAuth",
+                "NTLM_Kerberos",
+                "Form",
+                "SAML"
+              ]
+            }
+          }
+        }
+      },
+      "required": ["repositoryEndpointMetadata"]
+    },
+    "repositoryConfigurations": {
+      "type": "object",
+      "properties": {
+        "webPage": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "DATE", "LONG"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "attachment": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "DATE", "LONG"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        }
+      }
+    },
+    "additionalProperties": {
+      "type": "object",
+      "properties": {
+        "rateLimit": {
+          "type": "string",
+          "default": "300"
+        },
+        "maxFileSize": {
+          "type": "string",
+          "default": "50"
+        },
+        "maxFileSizeInMegaBytes": {
+          "type": "string"
+        },
+        "crawlDepth": {
+          "type": "string",
+          "default": "2"
+        },
+        "maxLinksPerUrl": {
+          "type": "string",
+          "default": "100"
+        },
+        "crawlSubDomain": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "crawlAllDomain": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "honorRobots": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "crawlAttachments": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "inclusionURLCrawlPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionURLCrawlPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionURLIndexPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionURLIndexPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFileIndexPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFileIndexPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proxy": {
+          "type": "object",
+          "properties": {
+            "host": {
+              "type": "string"
+            },
+            "port": {
+              "type": "string"
+            },
+            "secretArn": {
+              "type": "string",
+              "minLength": 20,
+              "maxLength": 2048
+            }
+          }
+        },
+        "implicitWaitDuration":  {
+          "type":"object",
+          "properties": {
+            "innerNumber" : {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 10
+            }
+          }
+        },
+        "enableDeletionProtection": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "deletionProtectionThreshold": {
+          "type": "string",
+          "default": "15"
+        }
+      },
+      "required": [
+        "rateLimit",
+        "maxFileSize",
+        "crawlDepth",
+        "crawlSubDomain",
+        "crawlAllDomain",
+        "maxLinksPerUrl",
+        "honorRobots"
+      ]
+    }
+  },
+  "version": {
+    "type": "string",
+    "anyOf": [
+      {
+        "pattern": "1.0.0"
+      }
+    ]
+  },
+  "required": [
+    "type",
+    "syncMode",
+    "connectionConfiguration",
+    "repositoryConfigurations",
+    "additionalProperties"
+  ]
+}
+```
+
+## Web Crawler JSON schema example
+<a name="web-crawler-api-json-example"></a>
+
+The following is the Web Crawler JSON schema example:
+
+```
+{
+  "type": "WEBCRAWLERV2",
+  "syncMode": "FULL_CRAWL",
+  "secretArn": "arn:aws:secretsmanager:us-west-2:0123456789012:secret",
+  "connectionConfiguration": {
+    "repositoryEndpointMetadata": {
+      "siteMapUrls": ["https://example.com/sitemap.xml"],
+      "s3SeedUrl": "s3://bucket/seed-url",
+      "s3SiteMapUrl": "s3://bucket/sitemap-url",
+      "seedUrlConnections": [
+        {
+          "seedUrl": "https://example.com"
+        }
+      ],
+      "authentication": "NoAuthentication"
+    }
+  },
+  "repositoryConfigurations": {
+    "webPage": {
+      "fieldMappings": [
+        {
+          "indexFieldName": "title",
+          "indexFieldType": "STRING",
+          "dataSourceFieldName": "page_title",
+          "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        }
+      ]
+    },
+    "attachment": {
+      "fieldMappings": [
+        {
+          "indexFieldName": "attachment_title",
+          "indexFieldType": "STRING",
+          "dataSourceFieldName": "attachment_name",
+          "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        }
+      ]
+    }
+  },
+  "additionalProperties": {
+    "rateLimit": "300",
+    "maxFileSize": "50",
+    "crawlDepth": "2",
+    "maxLinksPerUrl": "100",
+    "crawlSubDomain": "true",
+    "crawlAllDomain": "true",
+    "honorRobots": "true"
+  }
+}
+```

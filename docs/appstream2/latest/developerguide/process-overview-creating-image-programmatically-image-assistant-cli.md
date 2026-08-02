@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/process-overview-creating-image-programmatically-image-assistant-cli.html
+---
+
+# Process Overview for Programmatically Creating an Amazon WorkSpaces Applications Image
+<a name="process-overview-creating-image-programmatically-image-assistant-cli"></a>
+
+You can use the Image Assistant CLI operations with your application installation automation to create a fully programmatic WorkSpaces Applications image creation workflow. After your application installation automation completes, but before the image is created, use the Image Assistant CLI operations to specify the following:
++ The executable files that your users can launch
++ The optimization manifests for your applications
++ Other WorkSpaces Applications image metadata
+
+The following high-level overview describes the process for programmatically creating an WorkSpaces Applications image.
+
+1. Use your application installation automation to install the required applications on your image builder. This installation may include applications that your users will launch, any dependencies, and background applications.
+
+1. Determine the files and folders to optimize.
+
+1. If applicable, use the Image Assistant `add-application` CLI operation to specify the application metadata and optimization manifest for the WorkSpaces Applications image.
+
+1. To specify additional applications for the WorkSpaces Applications image, repeat steps 1 through 3 for each application as needed.
+
+1. If applicable, use the Image Assistant `update-default-profile` CLI operation to overwrite the default Windows profile and create default application and Windows settings for your users.
+
+1. Use the Image Assistant `create-image` CLI operation to create the image.

@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-destinations.html
+---
+
+# Destination fields in an HLS output group
+<a name="hls-destinations"></a>
+
+The HLS output group in MediaLive supports several types of destinations. Each type has different configuration requirements.
+
+**Topics**
++ [Fields for the output destination – sending to Amazon S3](hls-destinations-s3.md)
++ [Fields for the output destination – sending to MediaStore](hls-destinations-ems.md)
++ [Fields for the output destination – sending to MediaPackage](hls-destinations-emp.md)
++ [Fields for the output destination – sending to an HTTP server](hls-destinations-http.md)

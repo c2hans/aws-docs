@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/hls-redundant-manif-combine.html
+---
+
+# Combining redundant manifests with other features
+<a name="hls-redundant-manif-combine"></a>
+
+## Combining redundant manifests and custom path feature
+<a name="hls-redundant-manif-with-custom-paths"></a>
+
+When you set up redundant manifests in a MediaLive HLS output group, you can also set up custom paths. Make sure that you follow the rules [for custom paths](hls-custom-paths-rules.md) and for redundant manifests for your downstream system—either an [Akamai CDN](hls-redundant-manif-akamai.md) or [another downstream system](hls-redundant-manif-most-systems.md).
+
+## Combining redundant manifests with audio rendition groups
+<a name="hls-redundant-manif-with-args"></a>
+
+**Note**
+The information in this section assumes that you are familiar with the manifests for audio rendition groups. For more information, see [Sample manifest](sample-manifest.md).
+
+Following is information about the processing that MediaLive performs when you set up redundant manifests in an HLS output group that includes an audio rendition group.
+
+MediaLive automatically adjusts the references to the audio rendition groups in the parent manifests.
+
+In each pair of lines (for example, the `#EXT-X-STREAM-INF` for the high-resolution video), MediaLive adjusts the name of the rendition groups. In this way, the references to the rendition groups are different for each pipeline, which ensures that when the client player reads the manifest, it chooses the video and the audio from the same pipeline.
+
+The `#EXT-X-STREAM` for the video for pipeline 0. Note the value for *AUDIO*:
+
+```
+#EXT-X-STREAM-INF:BANDWIDTH=541107,...AUDIO="aac-audio-0", ...
+```
+
+ The `#EXT-X-STREAM` for the video for pipeline 1. Note the value for *AUDIO*:
+
+```
+#EXT-X-STREAM-INF:BANDWIDTH =541107, ...AUDIO="aac-audio-1",...
+```

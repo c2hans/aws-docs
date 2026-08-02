@@ -1,0 +1,44 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-postgresql-on-ec2-using-ebs/optimizing-postgresql-on-ec2-using-ebs.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Optimizing PostgreSQL Running on Amazon EC2 Using Amazon EBS
+<a name="optimizing-postgresql-on-ec2-using-ebs"></a>
+
+Publication date: **October 19, 2023** ([Document history](document-revisions.md))
+
+ This whitepaper is intended for Amazon Web Services (AWS) customers who are considering deploying their PostgreSQL database on Amazon Elastic Compute Cloud (Amazon EC2) using Amazon Elastic Block Store (Amazon EBS) volumes. This whitepaper describes the features of EBS volumes and how they can affect the security, availability, durability, cost, and performance of PostgreSQL databases. There are many deployment options and configurations for PostgreSQL on Amazon EC2. This whitepaper provides performance benchmark metrics and general guidance so AWS customers can make an informed decision about deploying their PostgreSQL workloads on Amazon EC2.
+
+## Introduction
+<a name="introduction"></a>
+
+ PostgreSQL is an advanced, enterprise class open-source relational database that supports storing and querying relational and non-relational data. It is a highly stable database management system, backed by over 25 years of community development which has contributed to its high levels of resiliency, integrity, and performance. PostgreSQL is used as the primary data store or data warehouse for many web, mobile, geospatial, and analytics applications. It supports variety of data types including geographic data, key-value, one-dimensional arrays,  geolocation-based data and multidimensional points. PostgreSQL also supports full-text search and  vector similarity search. It's Multi version Concurrency Control (MVCC) architecture allows multiple transactions to read and write to the database concurrently without interfering each other. Apart from the robustness of the database engine, another benefit of PostgreSQL is that the total cost of ownership is low compared to commercial database engines. Several organizations are moving their PostgreSQL workloads into the cloud to extend its cost and performance benefits. AWS offers many compute and storage options that can help optimize PostgreSQL deployments.
+
+## Terminology
+<a name="terminology"></a>
+
+ The following definitions are for the common terms that will be referenced throughout this paper:
++  **IOPS** — Input/output (I/O) operations per second (IOPS)
++  **Throughput** — Read/write transfer rate to storage (MB/s).
++  **Latency** — Delay between sending an I/O request and receiving an acknowledgment (ms).
++  **Block size** — Size of each I/O (KB).
++  **Page size** — Internal basic structure to organize the data in the database files (KB).
++  **[Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) volume** — Persistent block-level storage devices for use with [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/) (Amazon EC2) instances. This whitepaper focuses on [solid state drive](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) (SSD) EBS volume types optimized for transactional workloads involving frequent read/write operations with small I/O size, where the dominant performance attribute is IOPS.
+  +  **Amazon EBS General Purpose SSD volume** — General Purpose SSD volumes provide a balance of price and performance. AWS recommends these volumes for most workloads. Currently, AWS offer two types of General Purpose SSD volumes: `gp2` and `gp3`.
+  +  **Amazon EBS Provisioned IOPS SSD volume** — Highest performance SSD volume designed for high performance for mission-critical, low-latency, or high-throughput workloads. Currently AWS offers three types of Provisioned IOPS SSD volumes: `io1`, `io2` and `io2` Block Express (bx).
+  +  **Amazon EBS Throughput Optimized hard disk drive (HDD) volume** — Low-cost HDD volume designed for frequently accessed, throughput-intensive workloads: `st1`, `sc1`.
+
+## PostgreSQL on AWS deployment options
+<a name="postgresql-on-aws-deployment-options"></a>
+
+ AWS provides various options to deploy fully managed PostgreSQL database service. [Amazon Aurora](https://aws.amazon.com/rds/aurora/) for PostgreSQL database engine is designed to be wire-compatible with PostgreSQL versions. Amazon Aurora is a fully managed MySQL and PostgreSQL compatible service that has several times faster performance than the typical high-end implementations in those community editions. Moreover, it's durable, performant, and available as the commercial-grade databases, but at one tenth of the cost. Alternatively, customers can choose Amazon RDS for PostgreSQL as it gives them access to capabilities of the familiar PostgreSQL database engine. You can also host PostgreSQL on Amazon EC2 and self-manage the database, or browse the third-party PostgreSQL offerings on the [AWS Marketplace](https://aws.amazon.com/marketplace). This whitepaper explores the implementation and deployment considerations for PostgreSQL on Amazon EC2 using Amazon EBS for storage.
+
+ Although Amazon RDS and Amazon Aurora with PostgreSQL compatibility is a good choice for most of the use cases on AWS, deployment on Amazon EC2 might be more appropriate for certain PostgreSQL workloads. With Amazon RDS, you can connect to the database itself using SQL interface and it gives you access to the familiar capabilities and configurations in PostgreSQL. However, with managed database models, access to the operating system (OS) and certain system catalogs aren't available. This is an issue when you need OS-level access due to specialized configurations that rely on low-level OS settings, such as when using PostgreSQL extensions. For example, enabling PostgreSQL extension pg\_top requires OS-level access to gather monitoring information. As another example, Slony-I an asynchronous replication system for PostgreSQL that provides support for cascading and failover requires access to `rdsadmin` owned system catalogs. In such cases, running PostgreSQL on Amazon EC2 is a better alternative.
+
+ PostgreSQL can be scaled vertically by adding additional hardware resources (CPU, memory, disk, network) to the same server. For both Amazon RDS and Amazon EC2, you can change the EC2 instance type to match the resources required by PostgreSQL database. Amazon Aurora provides a [Serverless PostgreSQL](https://aws.amazon.com/rds/aurora/serverless/) Compatible Edition that allows compute capacity to be auto scaled on demand based on application needs. Both Amazon RDS and Amazon EC2 have an option to use EBS General Purpose SSD and EBS Provisioned IOPS volumes. The maximum provisioned storage limit for Amazon RDS database (DB) instances running PostgreSQL is 64 TB. The EBS volume for PostgreSQL on Amazon EC2, conversely, supports up to 16 TB per volume for General Purpose (`gp2`, `gp3`) and Provisioned IOPS volumes (`io1`, `io2`). EBS also offers [io2 Block Express](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/provisioned-iops.html#io2-block-express) volumes which are suited for workloads that benefit from a single volume that provides sub-millisecond latency, and supports higher IOPS, higher throughput, and larger capacity than `io2` volumes. `io2bx` volumes can support up to 64 TiB.
+
+ Horizontal scaling is also an option in PostgreSQL, where you can add PostgreSQL read replicas to accommodate additional read traffic to separate database instance. With Amazon RDS, you can easily enable this option through the AWS Management Console with click of a button, Command Line Interface (CLI), or REST API. Amazon RDS for PostgreSQL allows up to fifteen read replicas. It also supports cascading replication, a series of up to three read replicas in a chain from a source database instance. There are certain cases where you might need to enable specific PostgreSQL replication features. Some of these features such as delayed replication and streaming replication outside of RDS may require OS access to PostgreSQL or advanced privileges to access certain system procedures and tables. Delayed replication is the concept of applying time-delayed changes from the WAL. That is, a transaction that is committed at physical time `X` is only going to be visible on a standby with delay `d` at time `X + d`. This is useful for disaster recovery.
+
+ PostgreSQL on Amazon EC2 is an alternative to Amazon RDS and Aurora for certain use cases. It allows you to migrate new or existing databases that have very specific requirements for workloads and business needs. Choosing the right compute, network, and storage configurations plays a crucial role in achieving good performance at an optimal cost for PostgreSQL workloads.

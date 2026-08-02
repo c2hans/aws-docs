@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/getting-support.html
+---
+
+# Getting support for AWS Marketplace
+<a name="getting-support"></a>
+
+For general AWS Marketplace issues, [contact us](https://aws.amazon.com/contact-us/).
+
+## Finding your AWS account number for customer support
+<a name="GettingSupport"></a>
+
+If you or your users need to contact Support, you need your AWS account number.
+
+**To find your AWS account number**
+
+1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/console/home) with your user name.
+
+1. In the top navigation bar, choose **Support** and then choose **Support Center**.
+
+   Your AWS account ID (account number) appears below the top navigation bar.
+
+Following are the support options available to sellers:
+
+|  **Private Offers Success Team (POST)**  |  **Vendor Finance Success Team (VFS)**  |  **Managed Catalog Operations (MCO)**  |  **AWS Customer Service (AWS CS)**  |
+| --- | --- | --- | --- |
+| The POST team supports sellers, channel partners, and buyers with private offer operational enablement and support. | The VFS team improves processes that impact vendor finance cash application, reconciliation, and related reporting. The team also supports onboarding ISVs/CPs with finance specific questions regarding MPPOs and CPPOs (excluding public offers). | The MCO team is responsible for on-boarding third-party sellers of software onto the AWS Marketplace platform, They also support reviewing and processing software products for policy and compliance. | The AWS CS team is a specialized group of Technical Customer Support Associates and Specialists (TCSA/TCSS) who handle account and billing contacts related to AWS Marketplace services. |
+| **How to contact**<br />Use the [Support Form](https://aws.amazon.com/marketplace/management/contact-us/?#) available through AWS Partner Central. | **How to contact**<br />Use the [Support Form](https://aws.amazon.com/marketplace/management/contact-us/?#) available through AWS Partner Central. | **How to contact**<br />Use the [Support Form](https://aws.amazon.com/marketplace/management/contact-us/?#) available through AWS Partner Central. | **How to contact**<br />Use the [AWS Support Console](https://support.console.aws.amazon.com/support/home?). |
+| **Reasons to contact**[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/getting-support.html) | **Reasons to contact**[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/getting-support.html) | **Reasons to contact**[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/getting-support.html) | **Reasons to contact**[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/getting-support.html) |
+
+**Note**
+You must have the appropriate permissions to create cases in the AWS Support Console. For more information, see [AWS Support identity-based policy examples](https://docs.aws.amazon.com/awssupport/latest/user/security_iam_id-based-policy-examples.html) in the *AWS Support User Guide*.

@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/rtb-fabric-quotas.html
+---
+
+# Quotas for AWS RTB Fabric
+<a name="rtb-fabric-quotas"></a>
+
+Your AWS account has default quotas, formerly referred to as limits, for each AWS service. Unless otherwise noted, each quota is Region-specific. You can request increases for RTB Fabric quotas.
+
+To view the quotas for RTB Fabric, open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home). In the navigation pane, choose **AWS services** and select **RTB Fabric**.
+
+To request a quota increase, see [Requesting a Quota Increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*. If the quota is not yet available in Service Quotas, use the [limit increase form](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase).
+
+Your AWS account has the following quotas related to RTB Fabric.
+
+## Resource quotas
+<a name="rtb-fabric-resource-quotas"></a>
+
+The following quotas apply to RTB Fabric resources in your account.
+
+| Resource | Default quota | Adjustable | Description |
+| --- | --- | --- | --- |
+| Number of Gateways | 2 | Yes | The maximum number of requester and responder gateways combined that you can create in your account. |
+| Links per Gateway | 2 | Yes | The maximum number of links that can be created from a single gateway. |
+| Modules per Flow | 2 | Yes | The maximum number of modules that can be configured in a single flow. |
+| Availability Zones per Gateway | 1 | Yes | The maximum number of Availability Zones that can be configured per gateway. |
+| External outbound links supported | No | Yes | Indicates whether gateways can be configured with outbound external links. Supported values: 0 or 1. |
+| External inbound links supported | No | Yes | Indicates whether gateways can be configured with inbound external links. Supported values: 0 or 1. |
+
+## Throughput quotas
+<a name="rtb-fabric-throughput-quotas"></a>
+
+The following quotas apply to RTB Fabric throughput and performance.
+
+| Resource | Default quota | Adjustable | Description |
+| --- | --- | --- | --- |
+| Transactions per second (TPS) per link | 1,000 | Yes | The maximum number of transactions per second that can be processed through a single link. |
+| Transactions per second (TPS) per inbound or outbound external link | 1,000 | Yes | The maximum number of transactions per second that can be processed through an inbound or outbound external link. |
+| HTTP request timeout | 1.5 seconds | Yes | The maximum time RTB Fabric waits for a response from RTB applications before timing out the request. Contact your AWS account manager to request increases. |
+
+## API request quotas
+<a name="rtb-fabric-api-quotas"></a>
+
+The following quotas apply to RTB Fabric API requests. These quotas are not adjustable.
+
+| Resource | Default quota | Description |
+| --- | --- | --- |
+| API requests per second per account per Region | 10 | The maximum number of API requests per second for control plane operations in each supported Region in your account. |
+
+## Quota increase considerations
+<a name="quota-increase-considerations"></a>
+
+When requesting quota increases for RTB Fabric, consider the following:
++ **Account verification** – Quota increases may require account verification to ensure legitimate use for real-time bidding applications.
++ **Regional capacity** – Quota increases are subject to available capacity in the requested Region.
++ **Performance impact** – Higher quotas may affect latency and performance characteristics. Test thoroughly after quota increases.
++ **Cost implications** – Higher quotas may result in increased costs. Review pricing before requesting increases.
+
+For strategic partnerships or enterprise-level requirements, contact your AWS account team for assistance with quota planning and optimization.

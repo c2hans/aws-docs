@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/omics/latest/api/API_SequenceStoreFilter.html
+---
+
+# SequenceStoreFilter
+<a name="API_SequenceStoreFilter"></a>
+
+A filter for a sequence store.
+
+## Contents
+<a name="API_SequenceStoreFilter_Contents"></a>
+
+ ** createdAfter **   <a name="omics-Type-SequenceStoreFilter-createdAfter"></a>
+The filter's start date.
+Type: Timestamp
+Required: No
+
+ ** createdBefore **   <a name="omics-Type-SequenceStoreFilter-createdBefore"></a>
+The filter's end date.
+Type: Timestamp
+Required: No
+
+ ** name **   <a name="omics-Type-SequenceStoreFilter-name"></a>
+A name to filter on.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `[\p{L}||\p{M}||\p{Z}||\p{S}||\p{N}||\p{P}]+`
+Required: No
+
+ ** status **   <a name="omics-Type-SequenceStoreFilter-status"></a>
+Filter results based on status.
+Type: String
+Valid Values: `CREATING | ACTIVE | UPDATING | DELETING | FAILED`
+Required: No
+
+ ** updatedAfter **   <a name="omics-Type-SequenceStoreFilter-updatedAfter"></a>
+Filter results based on stores updated after the specified time.
+Type: Timestamp
+Required: No
+
+ ** updatedBefore **   <a name="omics-Type-SequenceStoreFilter-updatedBefore"></a>
+Filter results based on stores updated before the specified time.
+Type: Timestamp
+Required: No
+
+## See Also
+<a name="API_SequenceStoreFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/omics-2022-11-28/SequenceStoreFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/omics-2022-11-28/SequenceStoreFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/omics-2022-11-28/SequenceStoreFilter)

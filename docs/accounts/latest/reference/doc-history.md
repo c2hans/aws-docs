@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/accounts/latest/reference/doc-history.html
+---
+
+# Document history for the Account Management User Guide
+<a name="doc-history"></a>
+
+The following table describes the documentation releases for AWS Account Management.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Updated account closure quota values](https://docs.aws.amazon.com/accounts/latest/reference/troubleshooting_close-account.html) | Corrected the account closure quota percentage from 10% to 20% and the minimum from 10 to 250 in the troubleshooting topic. | June 23, 2026 |
+| [New account name APIs](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-acct-name.html) | Support for new `[GetAccountInformation](https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetAccountInformation.html)`, and `[PutAccountName](https://docs.aws.amazon.com/accounts/latest/APIReference/API_PutAccountName.html)` APIs to view or modify an account name. | April 22, 2025 |
+| [End of support for editing security challenge questions](https://aws.amazon.com/about-aws/whats-new/2024/01/aws-accounts-discontinues-security-challenge-questions/) | Removed the *Edit your security challenge questions* topic from the guide since support has ended. | January 6, 2025 |
+| [New primary email APIs](https://docs.aws.amazon.com/accounts/latest/APIReference/API_Operations.html) | Support for new `[GetPrimaryEmail](https://docs.aws.amazon.com/accounts/latest/APIReference/API_GetPrimaryEmail.html)`, `[StartPrimaryEmailUpdate](https://docs.aws.amazon.com/accounts/latest/APIReference/API_StartPrimaryEmailUpdate.html)`, and `[AcceptPrimaryEmailUpdate](https://docs.aws.amazon.com/accounts/latest/APIReference/API_AcceptPrimaryEmailUpdate.html)` APIs to centrally update the root user email address for any member account in AWS Organizations. For more information, see [Updating the root user email address for a member account]() in the *AWS Organizations User Guide*. | June 6, 2024 |
+| [Rewrite of the close account topic](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) | Completely overhauled the entire close account topic including adding steps for how to close member and management accounts. | February 1, 2024 |
+| [End of support for adding new security challenge questions](https://aws.amazon.com/about-aws/whats-new/2024/01/aws-accounts-discontinues-security-challenge-questions/) | Added new content noting that the option to add new challenge questions was removed from the **Accounts** page. | January 5, 2024 |
+| [End of support for the `aws-portal` namespace](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/migrate-granularaccess-whatis.html) | AWS Identity and Access Management (IAM) actions that were previously used to manage your account (for example, `aws-portal:ModifyAccount` and `aws-portal:ViewAccount`) have reached the end of standard support. | January 1, 2024 |
+| [Rewrite of the Regions topic](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) | Completely overhauled the entire Regions topic including adding expand and collapse controls. | October 8, 2023 |
+| [Relocated root user topics to the IAM User Guide](https://docs.aws.amazon.com/accounts/latest/reference/root-user.html) | Consolidated discussion about root users into one topic, added cross reference links to root user topics that were moved to the IAM User Guide. | September 18, 2023 |
+| [New section added to the primary account contact topic](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact-primary.html) | Added new *Phone number and email address requirements* section. | September 12, 2023 |
+| [New contact information APIs](https://docs.aws.amazon.com/accounts/latest/APIReference/API_Operations.html) | Support for new `GetContactInformation` and `PutContactInformation` APIs. | July 22, 2022 |
+| [AWS Account Management now supports updating alternate contacts via the AWS Organizations console.](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html#manage-acct-update-contact-alternate) | You can now update your organization's alternate contacts via AWS Organizations console using Account API permissions provided by updated AWS Organizations managed policies. | February 8, 2022 |
+| [Initial release](#doc-history) | Initial release of the AWS Account Management Reference Guide | September 30, 2021 |

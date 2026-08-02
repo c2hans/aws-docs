@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_ScanConfigurationRecoveryPoint.html
+---
+
+# ScanConfigurationRecoveryPoint
+<a name="API_ScanConfigurationRecoveryPoint"></a>
+
+Contains information about the recovery point configuration used in the scan.
+
+## Contents
+<a name="API_ScanConfigurationRecoveryPoint_Contents"></a>
+
+ ** backupVaultName **   <a name="guardduty-Type-ScanConfigurationRecoveryPoint-backupVaultName"></a>
+The name of the AWS Backup vault that contains the recovery point for the scanned.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 200.
+Required: No
+
+ ** continuousScanDetails **   <a name="guardduty-Type-ScanConfigurationRecoveryPoint-continuousScanDetails"></a>
+The time range within the continuous backup in AWS Backup that was scanned for a point-in-time recovery resource.
+Type: [ScanConfigurationContinuousScanDetails](API_ScanConfigurationContinuousScanDetails.md) object
+Required: No
+
+## See Also
+<a name="API_ScanConfigurationRecoveryPoint_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/guardduty-2017-11-28/ScanConfigurationRecoveryPoint)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/guardduty-2017-11-28/ScanConfigurationRecoveryPoint)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/guardduty-2017-11-28/ScanConfigurationRecoveryPoint)

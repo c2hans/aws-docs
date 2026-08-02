@@ -1,0 +1,130 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_TRY_CAST.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# TRY\_CAST function
+<a name="r_TRY_CAST"></a>
+
+Compared to the CAST function, TRY\_CAST first attempts to cast the expression to the specified type. If casting fails because of conversion errors, the operation returns null. If a conversion isn’t explicitly permitted, the operation returns an error. You can find the list of possible conversions in the usage notes below. For example, attempting to convert a boolean to a timestamp isn't permitted.
+
+## Syntax
+<a name="r_TRY_CAST-syntax"></a>
+
+```
+TRY_CAST(expression AS type)
+```
+
+## Arguments
+<a name="r_TRY_CAST-arguments"></a>
+
+ *expression*
+An expression that evaluates to one or more values, such as a column name or a literal. Converting null values returns nulls. The expression cannot contain blank or empty strings.
+
+ *type*
+ One of the supported data types. For a full list of data types, see [Data types](c_Supported_data_types.md). For the list of supported source data type and target data type pairs, see the usage notes below.
+
+## Return type
+<a name="r_TRY_CAST-return-type"></a>
+
+TRY\_CAST returns a value of the data type specified by the *type* argument. If the conversion fails, the operation returns null.
+
+## Usage notes
+<a name="r_TRY_CAST-usage-notes"></a>
+
+Following is the list of source data type and target data type pairs that Amazon Redshift supports for TRY\_CAST.
+
+ * BOOL *
+ SMALLINT, INT, BIGINT, SUPER
+
+ * SMALLINT *
+ BOOL, INT, BIGINT, DECIMAL, REAL, FLOAT, BPCHAR, TEXT, VARCHAR, SUPER
+
+ * INT *
+ BOOL, SMALLINT, BIGINT, DECIMAL, REAL, FLOAT, BPCHAR, TEXT, VARCHAR, SUPER
+
+ * BIGINT *
+ BOOL, SMALLINT, INT, DECIMAL, REAL, FLOAT, BPCHAR, TEXT, VARCHAR, SUPER
+
+ * DECIMAL *
+ SMALLINT, INT, BIGINT, REAL, FLOAT, BPCHAR, TEXT, VARCHAR, SUPER
+
+ * REAL *
+ SMALLINT, INT, BIGINT, DECIMAL, FLOAT, BPCHAR, TEXT, VARCHAR, SUPER
+
+ * FLOAT *
+ SMALLINT, INT, BIGINT, DECIMAL, REAL, BPCHAR, TEXT, VARCHAR, SUPER
+
+ * BPCHAR *
+ SMALLINT, INT, BIGINT, DECIMAL, REAL, FLOAT, TEXT, VARCHAR, TIMESTAMP, TIMESTAMPTZ, DATE, TIME, TIMETZ, SUPER
+
+ * TEXT *
+ SMALLINT, INT, BIGINT, DECIMAL, REAL, FLOAT, BPCHAR, VARCHAR, TIMESTAMP, TIMESTAMPTZ, DATE, TIME, TIMETZ, SUPER
+
+ * VARCHAR *
+ SMALLINT, INT, BIGINT, DECIMAL, REAL, FLOAT, BPCHAR, TEXT, TIMESTAMP, TIMESTAMPTZ, DATE, TIME, TIMETZ, SUPER
+
+ * TIMESTAMP *
+ BPCHAR, TEXT, VARCHAR, TIMESTAMPTZ, DATE, TIME
+
+ * TIMESTAMPTZ *
+ BPCHAR, TEXT, VARCHAR, TIMESTAMP, DATE, TIME, TIMETZ
+
+ * DATE *
+ BPCHAR, TEXT, VARCHAR, TIMESTAMP, TIMESTAMPTZ
+
+ * TIME *
+ BPCHAR, TEXT, VARCHAR
+
+ * TIMETZ *
+ BPCHAR, TEXT, VARCHAR
+
+ * SUPER *
+ SUPER can be converted into any other data type, with the exception of DATE, TIME, TIMETZ, TIMESTAMP, and TIMESTAMPTZ.
+
+## Examples
+<a name="r_TRY_CAST-examples"></a>
+
+The following example casts a STRING into an INTEGER.
+
+```
+SELECT TRY_CAST('123' AS INT);
+
+int
+----
+123
+```
+
+The following example returns null. Converting a STRING to an INTEGER is permitted so TRY\_CAST doesn't return an error, but 'foo' isn't an integer so the function returns null.
+
+```
+SELECT TRY_CAST('foo' AS INT)
+```
+
+The following example returns an error, because converting a BOOLEAN to a TIMESTAMP isn't permitted.
+
+```
+SELECT TRY_CAST(true as timestamp);
+```
+
+Because TRY\_CAST returns null instead of immediately returning an error if conversion fails, you can use TRY\_CAST to filter out invalid data. Consider the following example, where an invalid row is filtered out because of a conversion failure in the age column for Akua Mansa.
+
+```
+CREATE TABLE IF NOT EXISTS student_data(
+name VARCHAR(100) NOT NULL,
+age VARCHAR(3) NOT NULL,
+enrollment_date DATE NOT NULL);
+
+INSERT INTO student_data (name, age, enrollment_date)
+VALUES
+('Alejandro Rosalez', '10', '01/01/2000'),
+('Akua Mansa', 'Ten', '01/01/2000');
+
+SELECT * FROM student_data WHERE TRY_CAST(age AS INT) IS NOT NULL;
+
+--Akua is not returned.
+ name              | age | enrollment_date
+-------------------+-----+-----------------
+ Alejandro Rosalez | 10  | 01/01/2000
+```

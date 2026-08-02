@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EvaluationFormMultiSelectQuestionProperties.html
+---
+
+# EvaluationFormMultiSelectQuestionProperties
+<a name="API_EvaluationFormMultiSelectQuestionProperties"></a>
+
+Properties for a multi-select question in an evaluation form.
+
+## Contents
+<a name="API_EvaluationFormMultiSelectQuestionProperties_Contents"></a>
+
+ ** Options **   <a name="connect-Type-EvaluationFormMultiSelectQuestionProperties-Options"></a>
+Options available for this multi-select question.
+Type: Array of [EvaluationFormMultiSelectQuestionOption](API_EvaluationFormMultiSelectQuestionOption.md) objects
+Required: Yes
+
+ ** Automation **   <a name="connect-Type-EvaluationFormMultiSelectQuestionProperties-Automation"></a>
+Automation configuration for this multi-select question.
+Type: [EvaluationFormMultiSelectQuestionAutomation](API_EvaluationFormMultiSelectQuestionAutomation.md) object
+Required: No
+
+ ** DisplayAs **   <a name="connect-Type-EvaluationFormMultiSelectQuestionProperties-DisplayAs"></a>
+Display format for the multi-select question.
+Type: String
+Valid Values: `DROPDOWN | CHECKBOX`
+Required: No
+
+## See Also
+<a name="API_EvaluationFormMultiSelectQuestionProperties_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/EvaluationFormMultiSelectQuestionProperties)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/EvaluationFormMultiSelectQuestionProperties)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/EvaluationFormMultiSelectQuestionProperties)

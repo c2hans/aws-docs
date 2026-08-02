@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_MasterUserSecret.html
+---
+
+# MasterUserSecret
+<a name="API_MasterUserSecret"></a>
+
+Contains the secret managed by RDS in AWS Secrets Manager for the master user password.
+
+For more information, see [Password management with AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-secrets-manager.html) in the *Amazon RDS User Guide* and [Password management with AWS Secrets Manager](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-secrets-manager.html) in the *Amazon Aurora User Guide.*
+
+## Contents
+<a name="API_MasterUserSecret_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** KmsKeyId **
+The AWS KMS key identifier that is used to encrypt the secret.
+Type: String
+Required: No
+
+ ** SecretArn **
+The Amazon Resource Name (ARN) of the secret.
+Type: String
+Required: No
+
+ ** SecretStatus **
+The status of the secret.
+The possible status values include the following:
++  `creating` - The secret is being created.
++  `active` - The secret is available for normal use and rotation.
++  `rotating` - The secret is being rotated.
++  `impaired` - The secret can be used to access database credentials, but it can't be rotated. A secret might have this status if, for example, permissions are changed so that RDS can no longer access either the secret or the KMS key for the secret.
+
+  When a secret has this status, you can correct the condition that caused the status. Alternatively, modify the DB instance to turn off automatic management of database credentials, and then modify the DB instance again to turn on automatic management of database credentials.
+Type: String
+Required: No
+
+## See Also
+<a name="API_MasterUserSecret_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rds-2014-10-31/MasterUserSecret)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rds-2014-10-31/MasterUserSecret)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rds-2014-10-31/MasterUserSecret)

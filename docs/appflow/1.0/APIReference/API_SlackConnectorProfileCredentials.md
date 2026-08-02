@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_SlackConnectorProfileCredentials.html
+---
+
+# SlackConnectorProfileCredentials
+<a name="API_SlackConnectorProfileCredentials"></a>
+
+ The connector-specific profile credentials required when using Slack.
+
+## Contents
+<a name="API_SlackConnectorProfileCredentials_Contents"></a>
+
+ ** clientId **   <a name="appflow-Type-SlackConnectorProfileCredentials-clientId"></a>
+ The identifier for the client.
+Type: String
+Length Constraints: Maximum length of 512.
+Pattern: `\S+`
+Required: Yes
+
+ ** clientSecret **   <a name="appflow-Type-SlackConnectorProfileCredentials-clientSecret"></a>
+ The client secret used by the OAuth client to authenticate to the authorization server.
+Type: String
+Length Constraints: Maximum length of 512.
+Pattern: `\S+`
+Required: Yes
+
+ ** accessToken **   <a name="appflow-Type-SlackConnectorProfileCredentials-accessToken"></a>
+ The credentials used to access protected Slack resources.
+Type: String
+Length Constraints: Maximum length of 4096.
+Pattern: `\S+`
+Required: No
+
+ ** oAuthRequest **   <a name="appflow-Type-SlackConnectorProfileCredentials-oAuthRequest"></a>
+ The OAuth requirement needed to request security tokens from the connector endpoint.
+Type: [ConnectorOAuthRequest](API_ConnectorOAuthRequest.md) object
+Required: No
+
+## See Also
+<a name="API_SlackConnectorProfileCredentials_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/SlackConnectorProfileCredentials)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/SlackConnectorProfileCredentials)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/SlackConnectorProfileCredentials)

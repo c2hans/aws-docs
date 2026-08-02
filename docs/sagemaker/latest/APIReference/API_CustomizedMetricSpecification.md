@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CustomizedMetricSpecification.html
+---
+
+# CustomizedMetricSpecification
+<a name="API_CustomizedMetricSpecification"></a>
+
+A customized metric.
+
+## Contents
+<a name="API_CustomizedMetricSpecification_Contents"></a>
+
+ ** MetricName **   <a name="sagemaker-Type-CustomizedMetricSpecification-MetricName"></a>
+The name of the customized metric.
+Type: String
+Required: No
+
+ ** Namespace **   <a name="sagemaker-Type-CustomizedMetricSpecification-Namespace"></a>
+The namespace of the customized metric.
+Type: String
+Required: No
+
+ ** Statistic **   <a name="sagemaker-Type-CustomizedMetricSpecification-Statistic"></a>
+The statistic of the customized metric.
+Type: String
+Valid Values: `Average | Minimum | Maximum | SampleCount | Sum`
+Required: No
+
+## See Also
+<a name="API_CustomizedMetricSpecification_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/CustomizedMetricSpecification)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/CustomizedMetricSpecification)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/CustomizedMetricSpecification)

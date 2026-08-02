@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-server/latest/ug/font-styles-for-dvb-sub.html
+---
+
+This is version 2.18 of the AWS Elemental Server documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server/).
+
+# (Font Styles for DVB-Sub)
+<a name="font-styles-for-dvb-sub"></a>
+
+You can specify the look of the captions if the output captions are DVB-Sub.
+
+**Note**
+If you choose the same **Caption Selector** in the **Caption Source** field in more than one output, then you must set up the font style information identically in each output. If you do not, you will get an error when you save the job.
+
+|  Name  |  Description  |
+| --- | --- |
+| Font | Click **Browse** to find a font file to use. The file must be on a server mounted to the node and must have the extension TTF or TTE. Do not specify a font file if the caption source is embedded or teletext. |
+| Font Size | Specify “auto” or enter a number. When set to auto, **font\_size** will scale depending on the size of the output. Giving a positive integer specifies the exact font size in points. |
+| Font Resolution | Font resolution in DPI (dots per inch). Range: 96 to 600. Default is 96 dpi. |
+| Text Justify |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/font-styles-for-dvb-sub.html)  |
+| X Position | Specifies the offset for the left edge of the caption relative to the horizontal axis of the video frame, in pixels. 0 is the left edge of the video frame. 10 pixels means *offset 10 pixels to the right.*<br />Empty means *0 offset*.  |
+| Y Position | Offset of the top edge of the caption relative to the vertical axis of the video frame, in pixels. 0 is the top edge of the video frame. 10 pixels means *offset 10 pixels from the top.*<br />Empty means *position the captions towards the bottom of the output.* |
+| Fixed Grid | Whether applies only for conversions from Teletext to DVB-Sub. [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/font-styles-for-dvb-sub.html) |
+| Font Color | The font color. Select the desired color. |
+| Font Opacity | The opacity for the font color. Range 0 (transparent) to 255 (opaque). |
+| Background Color | The color for the background rectangle. |
+| Background Opacity | The opacity for the background rectangle. Range 0 (transparent) to 255 (opaque). |
+| Outline Size | The size for the font outline, in pixels. Range 0 (no outline) to 10.  |
+| Outline Color | The color for the font outline.  |
+| Shadow Color | The color for the shadow cast by the captions. |
+| Shadow Opacity | The opacity of the shadow, in pixels. Range 0 (transparent) to 255 (opaque). Empty means 0. |
+| Shadow X Offset | The horizontal offset of the shadow, in pixels. A value of -2 results in a shadow offset 2 pixels to the left. A value of 2 results in a shadow offset 2 pixels to the right. |
+| Shadow Y Offset | The vertical offset of the shadow, in pixels. A value of -2 results in a shadow offset 2 pixels above the text. A value of 2 results in a shadow offset 2 pixels above the text. |

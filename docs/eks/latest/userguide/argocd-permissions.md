@@ -1,0 +1,457 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-permissions.html
+---
+
+ **Help improve this page**
+
+To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
+
+# Configure Argo CD permissions
+<a name="argocd-permissions"></a>
+
+The Argo CD managed capability integrates with AWS Identity Center for authentication and uses built-in RBAC roles for authorization. This topic explains how to configure permissions for users and teams.
+
+## How permissions work with Argo CD
+<a name="_how_permissions_work_with_argo_cd"></a>
+
+The Argo CD capability uses AWS Identity Center for authentication and provides three built-in RBAC roles for authorization.
+
+When a user accesses Argo CD:
+
+1. They authenticate using AWS Identity Center (which can federate to your corporate identity provider)
+
+1.  AWS Identity Center provides user and group information to Argo CD
+
+1. Argo CD maps users and groups to RBAC roles based on your configuration
+
+1. Users see only the applications and resources they have permission to access
+
+## Built-in RBAC roles
+<a name="_built_in_rbac_roles"></a>
+
+The Argo CD capability provides three built-in roles that you map to AWS Identity Center users and groups. These are **globally scoped roles** that control access to Argo CD resources like projects, clusters, and repositories.
+
+**Important**
+Global roles control access to Argo CD itself, not to project-scoped resources like Applications. EDITOR and VIEWER users cannot see or manage Applications by default—they need project roles to access project-scoped resources. See [Project roles and project-scoped access](#project-roles) for details on granting access to Applications and other project-scoped resources.
+
+ **ADMIN**
+
+Full access to all Argo CD resources and settings:
++ Create, update, and delete Applications and ApplicationSets in any project
++ Manage Argo CD configuration
++ Register and manage deployment target clusters
++ Configure repository access
++ Create and manage projects
++ View all application status and history
++ List and access all clusters and repositories
+
+ **EDITOR**
+
+Can update projects and configure project roles, but cannot change global Argo CD settings:
++ Update existing projects (cannot create or delete projects)
++ Configure project roles and permissions
++ View GPG keys and certificates
++ Cannot change global Argo CD configuration
++ Cannot manage clusters or repositories directly
++ Cannot see or manage Applications without project roles
+
+ **VIEWER**
+
+Read-only access to Argo CD resources:
++ View project configurations
++ List all projects (including projects the user is not assigned to)
++ View GPG keys and certificates
++ Cannot list clusters or repositories
++ Cannot make any changes
++ Cannot see or manage Applications without project roles
+
+**Note**
+To grant EDITOR or VIEWER users access to Applications, an ADMIN or EDITOR must create project roles that map Identity Center groups to specific permissions within a project.
+
+## Project roles and project-scoped access
+<a name="project-roles"></a>
+
+Global roles (ADMIN, EDITOR, VIEWER) control access to Argo CD itself. Project roles control access to resources and capabilities within a specific project, including:
++  **Resources**: Applications, ApplicationSets, repository credentials, cluster credentials
++  **Capabilities**: Log access, exec access to application pods
+
+ **Understanding the two-level permission model**:
++  **Global scope**: Built-in roles determine what users can do with projects, clusters, repositories, and Argo CD settings
++  **Project scope**: Project roles determine what users can do with resources and capabilities within a specific project
+
+This means:
++ ADMIN users can access all project resources and capabilities without additional configuration
++ EDITOR and VIEWER users must be granted project roles to access project resources and capabilities
++ EDITOR users can create project roles to grant themselves and others access within projects they can update
+
+ **Example workflow**:
+
+1. An ADMIN maps an Identity Center group to the EDITOR role globally
+
+1. An ADMIN creates a project for a team
+
+1. The EDITOR configures project roles within that project to grant team members access to project-scoped resources
+
+1. Team members (who may have VIEWER global role) can now see and manage Applications in that project based on their project role permissions
+
+For details on configuring project roles, see [Project-based access control](#_project_based_access_control).
+
+## Configure role mappings
+<a name="_configure_role_mappings"></a>
+
+Map AWS Identity Center users and groups to Argo CD roles when creating or updating the capability.
+
+ **Example role mapping**:
+
+```
+{
+  "rbacRoleMappings": {
+    "ADMIN": ["AdminGroup", "alice@example.com"],
+    "EDITOR": ["DeveloperGroup", "DevOpsTeam"],
+    "VIEWER": ["ReadOnlyGroup", "bob@example.com"]
+  }
+}
+```
+
+**Note**
+Role names are case-sensitive and must be uppercase (ADMIN, EDITOR, VIEWER).
+
+**Important**
+EKS Capabilities integration with AWS Identity Center supports up to 1,000 identities per Argo CD capability. An identity can be a user or a group.
+
+ **Update role mappings**:
+
+```
+aws eks update-capability \
+  --region {{us-east-1}} \
+  --cluster-name {{cluster}} \
+  --capability-name {{capname}} \
+  --role-arn {{"arn:aws:iam::111122223333:role/EKSCapabilityRole"}} \
+  --configuration '{
+    "argoCd": {
+      "rbacRoleMappings": {
+        "addOrUpdateRoleMappings": [
+          {
+            "role": "ADMIN",
+            "identities": [
+              { "id": "686103e0-f051-7068-b225-e6392b959d9e", "type": "SSO_USER" }
+            ]
+          }
+        ]
+      }
+    }
+  }'
+```
+
+## Admin account usage
+<a name="_admin_account_usage"></a>
+
+The admin account is designed for initial setup and administrative tasks like registering clusters and configuring repositories.
+
+ **When admin account is appropriate**:
++ Initial capability setup and configuration
++ Solo development or quick demonstrations
++ Administrative tasks (cluster registration, repository configuration, project creation)
+
+ **Best practices for admin account**:
++ Do not commit account tokens to version control
++ Rotate tokens immediately if exposed
++ Limit account token usage to setup and administrative tasks
++ Set short expiration times (maximum 12 hours)
++ Only 5 account tokens can be created at any given time
+
+ **When to use project-based access instead**:
++ Shared development environments with multiple users
++ Any environment that resembles production
++ When you need audit trails of who performed actions
++ When you need to enforce resource restrictions or access boundaries
+
+For production environments and multi-user scenarios, use project-based access control with dedicated RBAC roles mapped to AWS Identity Center groups.
+
+## Project-based access control
+<a name="_project_based_access_control"></a>
+
+Use Argo CD Projects (AppProject) to provide fine-grained access control and resource isolation for teams.
+
+**Important**
+Before assigning users or groups to project-specific roles, you must first map them to a global Argo CD role (ADMIN, EDITOR, or VIEWER) in the capability configuration. Users cannot access Argo CD without a global role mapping, even if they’re assigned to project roles.
+Consider mapping users to the VIEWER role globally, then grant additional permissions through project-specific roles. This provides baseline access while allowing fine-grained control at the project level.
+
+Projects provide:
++  **Source restrictions**: Limit which Git repositories can be used
++  **Destination restrictions**: Limit which clusters and namespaces can be targeted
++  **Resource restrictions**: Limit which Kubernetes resource types can be deployed
++  **RBAC integration**: Map projects to AWS Identity Center groups or Argo CD roles
+
+ **Example project for team isolation**:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: team-a
+  namespace: argocd
+spec:
+  description: Team A applications
+
+  # Required: Specify which namespaces this project watches for Applications
+  sourceNamespaces:
+  - argocd
+
+  # Source restrictions
+  sourceRepos:
+  - https://github.com/myorg/team-a-apps
+
+  # Destination restrictions
+  destinations:
+  - namespace: team-a-*
+    server: arn:aws:eks:us-west-2:111122223333:cluster/production
+
+  # Resource restrictions
+  clusterResourceWhitelist:
+  - group: ''
+    kind: Namespace
+  namespaceResourceWhitelist:
+  - group: 'apps'
+    kind: Deployment
+  - group: ''
+    kind: Service
+  - group: ''
+    kind: ConfigMap
+```
+
+### Source namespaces
+<a name="_source_namespaces"></a>
+
+When using the EKS Argo CD capability, the `spec.sourceNamespaces` field is required in AppProject definitions. This field specifies which namespace can contain Applications or ApplicationSets that reference this project.
+
+**Important**
+The EKS Argo CD capability only supports a single namespace for Applications and ApplicationSets—the namespace you specified when creating the capability (typically `argocd`). This differs from open source Argo CD which supports multiple namespaces.
+
+ **AppProject configuration**
+
+All AppProjects must include the capability’s configured namespace in `sourceNamespaces`:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: team-a-project
+  namespace: argocd
+spec:
+  description: Applications for Team A
+
+  # Required: Specify the capability's configured namespace (configuration.argoCd.namespace)
+  sourceNamespaces:
+    - argocd  # Must match your capability's namespace configuration
+
+  # Source repositories this project can deploy from
+  sourceRepos:
+    - 'https://github.com/my-org/team-a-*'
+
+  # Destination restrictions
+  destinations:
+    - namespace: 'team-a-*'
+      server: arn:aws:eks:us-west-2:111122223333:cluster/my-cluster
+```
+
+**Note**
+If you omit the capability’s namespace from `sourceNamespaces`, Applications or ApplicationSets in that namespace cannot reference this project, resulting in deployment failures.
+
+ **Assign users to projects**:
+
+Project roles grant EDITOR and VIEWER users access to project resources (Applications, ApplicationSets, repository and cluster credentials) and capabilities (logs, exec). Without project roles, these users cannot access these resources even if they have global role access.
+
+ADMIN users have access to all Applications without needing project roles.
+
+ **Example: Granting Application access to team members**
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: team-a
+  namespace: argocd
+spec:
+  # ... project configuration ...
+
+  sourceNamespaces:
+  - argocd
+
+  # Project roles grant Application-level access
+  roles:
+  - name: developer
+    description: Team A developers - can manage Applications
+    policies:
+    - p, proj:team-a:developer, applications, *, team-a/*, allow
+    - p, proj:team-a:developer, clusters, get, *, allow  # See cluster names in UI
+    groups:
+    - 686103e0-f051-7068-b225-e6392b959d9e  # Identity Center group ID
+
+  - name: viewer
+    description: Team A viewers - read-only Application access
+    policies:
+    - p, proj:team-a:viewer, applications, get, team-a/*, allow
+    - p, proj:team-a:viewer, clusters, get, *, allow  # See cluster names in UI
+    groups:
+    - 786203e0-f051-7068-b225-e6392b959d9f  # Identity Center group ID
+```
+
+**Note**
+Include `clusters, get, *, allow` in project roles to allow users to see cluster names in the UI. Without this permission, the destination cluster displays as "unknown".
+
+ **Understanding project role policies**:
+
+The policy format is: `p, proj:<project>:<role>, <resource>, <action>, <object>, <allow/deny>`
+
+ **Resource policies**:
++  `applications, , team-a/, allow` - Full access to all Applications in the team-a project
++  `applications, get, team-a/*, allow` - Read-only access to Applications
++  `applications, sync, team-a/*, allow` - Can sync Applications but not create/delete
++  `applications, delete, team-a/*, allow` - Can delete Applications (use with caution)
++  `applicationsets, , team-a/, allow` - Full access to ApplicationSets
++  `repositories, *, *, allow` - Access to repository credentials
++  `clusters, *, *, allow` - Access to cluster credentials
+
+ **Capability policies**:
++  `logs, , team-a/, allow` - Access to application logs
++  `exec, , team-a/, allow` - Exec access to application pods
+
+**Note**
+EDITOR users can create project roles to grant themselves and others permissions within projects they can update. This allows team leads to control access to project-scoped resources for their team without requiring ADMIN intervention.
+
+**Note**
+Use Identity Center group IDs (not group names) in the `groups` field. You can also use Identity Center user IDs for individual user access. Find these IDs in the AWS Identity Center console or using the AWS CLI.
+
+## Common permission patterns
+<a name="_common_permission_patterns"></a>
+
+ **Pattern 1: Admin team with full access**
+
+```
+{
+  "rbacRoleMappings": {
+    "ADMIN": ["PlatformTeam", "SRETeam"]
+  }
+}
+```
+
+ADMIN users can see and manage all project-scoped resources without additional configuration.
+
+ **Pattern 2: Team leads manage projects, developers access via project roles**
+
+```
+{
+  "rbacRoleMappings": {
+    "ADMIN": ["PlatformTeam"],
+    "EDITOR": ["TeamLeads"],
+    "VIEWER": ["AllDevelopers"]
+  }
+}
+```
+
+1. ADMIN creates projects for each team
+
+1. Team leads (EDITOR) configure project roles to grant their developers access to project resources (Applications, ApplicationSets, credentials) and capabilities (logs, exec)
+
+1. Developers (VIEWER) can only access resources and capabilities allowed by their project roles
+
+ **Pattern 3: Team-based access with project roles**
+
+1. ADMIN creates projects and maps team leads to EDITOR role globally
+
+1. Team leads (EDITOR) assign team members to project roles within their projects
+
+1. Team members only need VIEWER global role—project roles provide access to project resources and capabilities
+
+```
+{
+  "rbacRoleMappings": {
+    "ADMIN": ["PlatformTeam"],
+    "EDITOR": ["TeamLeads"],
+    "VIEWER": ["AllDevelopers"]
+  }
+}
+```
+
+## Best practices
+<a name="_best_practices"></a>
+
+ **Use groups instead of individual users**: Map AWS Identity Center groups to Argo CD roles rather than individual users for easier management.
+
+ **Start with least privilege**: Begin with VIEWER access and grant EDITOR or ADMIN as needed.
+
+ **Use projects for team isolation**: Create separate AppProjects for different teams or environments to enforce boundaries.
+
+ **Leverage Identity Center federation**: Configure AWS Identity Center to federate with your corporate identity provider for centralized user management.
+
+ **Regular access reviews**: Periodically review role mappings and project assignments to ensure appropriate access levels.
+
+ **Limit cluster access**: Remember that Argo CD RBAC controls access to Argo CD resources and operations, but does not correspond to Kubernetes RBAC. Users with Argo CD access can deploy applications to clusters that Argo CD has access to. Limit which clusters Argo CD can access and use project destination restrictions to control where applications can be deployed.
+
+## AWS service permissions
+<a name="shared_aws_service_permissions"></a>
+
+To use AWS services directly in Application resources (without creating Repository resources), attach the required IAM permissions to the Capability Role.
+
+ **ECR for Helm charts**:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:BatchGetImage"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+ **CodeCommit repositories**:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "codecommit:GitPull"
+      ],
+      "Resource": "arn:aws:codecommit:region:account-id:repository-name"
+    }
+  ]
+}
+```
+
+ **CodeConnections (GitHub, GitLab, Bitbucket)**:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "codeconnections:UseConnection"
+      ],
+      "Resource": "arn:aws:codeconnections:region:account-id:connection/connection-id"
+    }
+  ]
+}
+```
+
+See [Configure repository access](argocd-configure-repositories.md) for details on using these integrations.
+
+## Next steps
+<a name="_next_steps"></a>
++  [Working with Argo CD](working-with-argocd.md) - Learn how to create applications and manage deployments
++  [Argo CD concepts](argocd-concepts.md) - Understand Argo CD concepts including Projects
++  [Security considerations for EKS Capabilities](capabilities-security.md) - Review security best practices for capabilities

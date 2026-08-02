@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-industry-lens/measure-results.html
+---
+
+# Measure results
+<a name="measure-results"></a>
+
+| HCL\_SUS5. How does your organization measure the effectiveness of sustainability efforts? |
+| --- |
+|   |
+
+ **Quantify and report results to drive continuous improvement processes**
+
+ The healthcare vertical extensively uses metrics and measures to quantify care quality, effectiveness, and patient experience. Adding metrics to quantify sustainability improvement can better align business interests with sustainability goals. Further, analysis of such reporting can help identify repeatable processes for achieving sustainability improvements.

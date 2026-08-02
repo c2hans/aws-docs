@@ -1,0 +1,110 @@
+---
+source_url: https://docs.aws.amazon.com/routing-control/latest/APIReference/API_UpdateRoutingControlState.html
+---
+
+# UpdateRoutingControlState
+<a name="API_UpdateRoutingControlState"></a>
+
+Set the state of the routing control to reroute traffic. You can set the value to ON or OFF. When the state is ON, traffic flows to a cell. When the state is OFF, traffic does not flow.
+
+With Route 53 ARC, you can add safety rules for routing controls, which are safeguards for routing control state updates that help prevent unexpected outcomes, like fail open traffic routing. However, there are scenarios when you might want to bypass the routing control safeguards that are enforced with safety rules that you've configured. For example, you might want to fail over quickly for disaster recovery, and one or more safety rules might be unexpectedly preventing you from updating a routing control state to reroute traffic. In a "break glass" scenario like this, you can override one or more safety rules to change a routing control state and fail over your application.
+
+The `SafetyRulesToOverride` property enables you override one or more safety rules and update routing control states. For more information, see [ Override safety rules to reroute traffic](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.override-safety-rule.html) in the Amazon Route 53 Application Recovery Controller Developer Guide.
+
+ *You must specify Regional endpoints when you work with API cluster operations to get or update routing control states in Route 53 ARC.*
+
+To see a code example for getting a routing control state, including accessing Regional cluster endpoints in sequence, see [API examples](https://docs.aws.amazon.com/r53recovery/latest/dg/service_code_examples_actions.html) in the Amazon Route 53 Application Recovery Controller Developer Guide.
++  [ Viewing and updating routing control states](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.update.html)
++  [Working with routing controls overall](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html)
+
+## Request Syntax
+<a name="API_UpdateRoutingControlState_RequestSyntax"></a>
+
+```
+{
+   "RoutingControlArn": "{{string}}",
+   "RoutingControlState": "{{string}}",
+   "SafetyRulesToOverride": [ "{{string}}" ]
+}
+```
+
+## Request Parameters
+<a name="API_UpdateRoutingControlState_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [RoutingControlArn](#API_UpdateRoutingControlState_RequestSyntax) **   <a name="r53recovery-UpdateRoutingControlState-request-RoutingControlArn"></a>
+The Amazon Resource Name (ARN) for the routing control that you want to update the state for.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `^[A-Za-z0-9:.\/_-]*$`
+Required: Yes
+
+ ** [RoutingControlState](#API_UpdateRoutingControlState_RequestSyntax) **   <a name="r53recovery-UpdateRoutingControlState-request-RoutingControlState"></a>
+The state of the routing control. You can set the value to ON or OFF.
+Type: String
+Valid Values: `On | Off`
+Required: Yes
+
+ ** [SafetyRulesToOverride](#API_UpdateRoutingControlState_RequestSyntax) **   <a name="r53recovery-UpdateRoutingControlState-request-SafetyRulesToOverride"></a>
+The Amazon Resource Names (ARNs) for the safety rules that you want to override when you're updating the state of a routing control. You can override one safety rule or multiple safety rules by including one or more ARNs, separated by commas.
+For more information, see [ Override safety rules to reroute traffic](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.override-safety-rule.html) in the Amazon Route 53 Application Recovery Controller Developer Guide.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `^[A-Za-z0-9:.\/_-]*$`
+Required: No
+
+## Response Elements
+<a name="API_UpdateRoutingControlState_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+<a name="API_UpdateRoutingControlState_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You don't have sufficient permissions to perform this action.
+HTTP Status Code: 400
+
+ ** ConflictException **
+There was a conflict with this request. Try again.
+HTTP Status Code: 400
+
+ ** EndpointTemporarilyUnavailableException **
+The cluster endpoint isn't available. Try another cluster endpoint.
+HTTP Status Code: 400
+
+ ** InternalServerException **
+There was an unexpected error during processing of the request.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The request references a routing control or control panel that was not found.
+HTTP Status Code: 400
+
+ ** ThrottlingException **
+The request was denied because of request throttling.
+HTTP Status Code: 400
+
+ ** ValidationException **
+There was a validation error on the request.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_UpdateRoutingControlState_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53-recovery-cluster-2019-12-02/UpdateRoutingControlState)

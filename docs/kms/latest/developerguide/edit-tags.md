@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/kms/latest/developerguide/edit-tags.html
+---
+
+# Edit tags associated with a KMS key
+<a name="edit-tags"></a>
+
+Tags help identify and organize your AWS resources. You can edit the tags associated with your customer managed KMS keys in the AWS KMS console or by using the [TagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_TagResource.html) operation. You cannot edit the tags of an AWS managed key.
+
+The following procedures demonstrate how to edit the tags associated with a KMS key. The AWS KMS API examples use the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/), but you can use any supported programming language.
+
+## Using the AWS KMS console
+<a name="edit-tag-console"></a>
+
+1. Sign in to the AWS Management Console and open the AWS Key Management Service (AWS KMS) console at [https://console.aws.amazon.com/kms](https://console.aws.amazon.com/kms).
+
+1. To change the AWS Region, use the Region selector in the upper-right corner of the page.
+
+1. In the navigation pane, choose **Customer managed keys**. (You cannot edit the tags of an AWS managed key)
+
+1. You can use the table filter to display only KMS keys with particular tags. For details, see [View tags using the AWS KMS console](view-tags.md#view-tag-console).
+
+1. Select the check box next to the alias of a KMS key.
+
+1. Choose **Key actions**, **Add or edit tags**.
+
+1. On the details page for KMS key, choose the **Tags** tab.
+   + To change the name or value of a tag, choose **Edit**, make your changes, and then choose **Save**.
+
+1. To save your changes, choose **Save changes**.
+
+## Using the AWS KMS API
+<a name="tag-existing-api"></a>
+
+The [TagResource](https://docs.aws.amazon.com/kms/latest/APIReference/API_TagResource.html) operation add one or more tags to a customer managed key;. However, you can also use **TagResource** to change the tag value of an existing tag. You cannot use this operation to add or edit tags in a different AWS account.
+
+To edit a tag, specify an existing tag key and a new tag value. Each tag on a KMS key must have a different tag key. The tag value can be a null or empty string.
+
+For example, this command changes the value of the `Purpose` tag from `Pretest` to `Test`.
+
+```
+$ aws kms tag-resource \
+         --key-id 1234abcd-12ab-34cd-56ef-1234567890ab \
+         --tags TagKey=Purpose,TagValue=Test
+```

@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-quicksight-analysis-innerfilter.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::QuickSight::Analysis InnerFilter
+<a name="aws-properties-quicksight-analysis-innerfilter"></a>
+
+The `InnerFilter` defines the subset of data to be used with the `NestedFilter`.
+
+## Syntax
+<a name="aws-properties-quicksight-analysis-innerfilter-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-quicksight-analysis-innerfilter-syntax.json"></a>
+
+```
+{
+  "[CategoryInnerFilter](#cfn-quicksight-analysis-innerfilter-categoryinnerfilter)" : {{CategoryInnerFilter}}
+}
+```
+
+### YAML
+<a name="aws-properties-quicksight-analysis-innerfilter-syntax.yaml"></a>
+
+```
+  [CategoryInnerFilter](#cfn-quicksight-analysis-innerfilter-categoryinnerfilter): {{
+    CategoryInnerFilter}}
+```
+
+## Properties
+<a name="aws-properties-quicksight-analysis-innerfilter-properties"></a>
+
+`CategoryInnerFilter`  <a name="cfn-quicksight-analysis-innerfilter-categoryinnerfilter"></a>
+A `CategoryInnerFilter` filters text values for the `NestedFilter`.
+*Required*: No
+*Type*: [CategoryInnerFilter](aws-properties-quicksight-analysis-categoryinnerfilter.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

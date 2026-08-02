@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/lexv2/latest/dg/bedrock-agent-intent-genai.html
+---
+
+# Enable Bedrock Agent Intent in the Generative AI configuration screen
+<a name="bedrock-agent-intent-genai"></a>
+
+You can enable Bedrock Agent Intent by navigating to the Generative AI screen.
+
+1. Sign in to the AWS Management Console and open the Amazon Lex V2 console at [https://console.aws.amazon.com/lexv2/home](https://console.aws.amazon.com/lexv2/home).
+
+1. In the navigation pane under **Bots**, select the bot you want to use for Bedrock Agent Intent.
+
+1. Select the language for the bot you want to enable.
+
+1. Go to the **Generative AI configuration** section on the screen, and select **Configure**.
+
+1. In the BedrockAgentIntent configuration section, select **Create BedrockAgent intent**.

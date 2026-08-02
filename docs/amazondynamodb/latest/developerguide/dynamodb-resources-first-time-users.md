@@ -1,0 +1,98 @@
+---
+source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dynamodb-resources-first-time-users.html
+---
+
+# Amazon DynamoDB resources for first-time users
+<a name="dynamodb-resources-first-time-users"></a>
+
+We recommend that first time users begin by reading the following sections, and refer to them as needed.
+
+|  |  |
+| --- |--- |
+|
+
+**Example**
+**[Service highlights and pricing](https://aws.amazon.com/dynamodb/)**
+Provides a general product overview of DynamoDB, common use cases, service highlights, and pricing.  |
+
+**Example**
+**[DynamoDB resources](https://aws.amazon.com/dynamodb/resources/)**
+Videos, tutorials, and prescriptive guidance that introduces you to the service, concepts of data modeling, and core features and capabilities.  |
+|
+
+**Example**
+**[Getting started](GettingStartedDynamoDB.md)**
+Information on setting up DynamoDB, creating sample tables, and uploading data.  |
+
+**Example**
+**[DynamoDB basics course](https://explore.skillbuilder.aws/learn/course/external/view/elearning/16104/amazon-dynamodb-basics)**
+Free digital course that teaches the fundamentals of DynamoDB, including table design, data types, and basic operations.  |
+|
+
+**Example**
+**[DynamoDB Nuggets](https://www.youtube.com/playlist?list=PLhr1KZpdzukemNOO71Hca0GpjG0QmXwEd)**
+Short, focused video tutorials that explain key DynamoDB concepts and features.  |
+
+**Example**
+**[DynamoDB code samples repository](https://github.com/aws-samples/aws-dynamodb-examples)**
+Practical DynamoDB code examples in various programming languages.  |
+|
+
+**Example**
+**[Free DynamoDB training](https://skillbuilder.aws/learn/WC3K4Y4S5N/amazon-dynamodb-getting-started/)**
+AWS provides free digital training courses that cover DynamoDB concepts, features, and best practices.  |
+
+**Example**
+**[NoSQL Workbench for DynamoDB](https://youtu.be/p5va6ZX9_o0)**
+Unified visual tool that provides data modeling, data visualization, and query development features.  |
+|
+
+**Example**
+**[DynamoDB Design Patterns](best-practices.md)**
+Best practices and data modeling examples for different use cases with practical code samples.  |
+
+**Example**
+**[Hands-on Tutorials](https://aws.amazon.com/tutorials/create-nosql-table/)**
+Step-by-step tutorials in the AWS Management Console that guide you through common DynamoDB tasks.  |
+|
+
+**Example**
+**[Migrating to DynamoDB](migration-guide.md)**
+Overview of the process, tools, and strategies for migrating a database into DynamoDB.  |
+
+**Example**
+**[AWS Well-Architected Lens for DynamoDB](bp-wal.md)**
+Architectural best practices for designing and operating reliable, secure, efficient, and cost-effective applications using DynamoDB.  |
+
+## Amazon DynamoDB additional best practices for first-time users
+<a name="additional-reading"></a>
+
+After you complete the preceding sections, read these sections:
++  **[DynamoDB throughput capacity](capacity-mode.md)**
+
+  Provides an overview of the two throughput modes available for DynamoDB and considerations in selecting the appropriate capacity mode for your application. On-demand mode is the default and recommended throughput option for most DynamoDB workloads.
++  **[Best practices for designing and architecting with DynamoDB](best-practices.md)**
+
+  Identify and address issues to maximize performance and minimize costs when working with DynamoDB.
+
+## AWS CLI resources
+<a name="new-users-aws-cli-resources"></a>
+
+If you want to use the AWS Command Line Interface (AWS CLI), you can use these documents to help you get started:
++  **[AWS CLI documentation](https://docs.aws.amazon.com/cli/)**
+
+   This section provides information on downloading the AWS CLI, getting the AWS CLI working on your system, and providing your AWS credentials.
++  **[AWS CLI documentation for DynamoDB](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dynamodb/index.html)**
+
+   This separate document covers all of the AWS CLI for DynamoDB commands, including syntax and examples.
+
+## Programming resources
+<a name="new-user-programming-resources"></a>
+
+You can write application programs to use the DynamoDB API with a variety of popular programming languages. Here are some resources:
++  **[Tools for Amazon Web Services](https://aws.amazon.com/developer/tools/)**
+
+   AWS provides a number of software development kits (SDKs) with support for DynamoDB. You can code for DynamoDB using Java, .NET, PHP, Ruby, and other languages. These SDKs can greatly simplify your application development by formatting your requests to DynamoDB, parsing responses, and providing retry logic and error handling.
++  ** [DynamoDB API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/Welcome.html)**
+
+   If you don't want to use the AWS SDKs, you can interact with DynamoDB directly using the DynamoDB API. This document covers all of the DynamoDB API operations, including syntax and examples. You can find troubleshooting tips and information on creating and authenticating requests and handling responses in this section.

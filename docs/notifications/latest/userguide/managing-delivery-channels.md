@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/notifications/latest/userguide/managing-delivery-channels.html
+---
+
+# Delivery channels in AWS User Notifications
+<a name="managing-delivery-channels"></a>
+
+Delivery channels are locations where you can send notifications. You can send notifications to multiple channels, including email addresses, chat channels, and mobile devices.
+
+**Topics**
++ [Adding delivery channels in AWS User Notifications](manage-delivery-channels.md)
++ [Viewing delivery channel details in AWS User Notifications](detail-delivery-channels.md)
++ [Deleting email addresses for user-configured notifications in AWS User Notifications](delete-delivery-channels.md)

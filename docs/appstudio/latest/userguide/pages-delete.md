@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/appstudio/latest/userguide/pages-delete.html
+---
+
+# Deleting a page
+<a name="pages-delete"></a>
+
+Use the following procedure to delete a page from an application in App Studio.
+
+**To delete a page**
+
+1. If necessary, navigate to the Development environment of your application by editing it.
+
+1. Navigate to the **Pages** tab.
+
+1. In the left-side **Pages** menu, choose the ellipses menu next to the name of the page you want to delete and choose **Delete**.

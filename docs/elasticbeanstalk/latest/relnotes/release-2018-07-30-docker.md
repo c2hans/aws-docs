@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-07-30-docker.html
+---
+
+# Release: AWS Elastic Beanstalk platform updates for the Single Container Docker and Preconfigured Docker platforms on July 30, 2018
+<a name="release-2018-07-30-docker"></a>
+
+This release applies security updates to the Single Container Docker and Preconfigured Docker platforms for AWS Elastic Beanstalk, and updates platform configurations. The release also removes public support for previous Preconfigured Docker Glassfish configurations.
+
+**Release date:** July 30, 2018
+
+## Changes
+<a name="release-2018-07-30-docker.changes"></a>
+
+| **Category** | **Description** |
+| --- | --- |
+| **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before July 23, 2018 to the Single Container Docker and Preconfigured Docker platforms. |
+| **Glassfish configurations** | Made the following changes to Preconfigured Docker Glassfish configurations:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-07-30-docker.html)<br />As with other noncurrent solution stacks, if you've used any solution stack of these three discontinued configurations (had an active environment using them) in the last 30 days, you still have access to it. Other customers don't see these solution stacks anymore. Elastic Beanstalk supports automatic platform updates only to a new solution stack within a configuration—not across configurations. To migrate an existing environment from one of the discontinued configurations to the new *Glassfish 5.0* running on *Amazon Linux* configuration, perform the following manual procedure:   Create a new environment, using the new target configuration. Don't terminate the existing one yet.   Deploy your application to the new environment.   Fix any application issues resulting from migrating to the new language configuration. Iterate on deploying your fixes until you're satisfied with the application on the new environment.   Turn the new environment into your production environment by swapping its CNAME with the existing production environment's CNAME. For details, see [Blue/Green Deployments with AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.CNAMESwap.html) in the *AWS Elastic Beanstalk Developer Guide*.    |
+
+## Updated platform configurations
+<a name="release-2018-07-30-docker.platforms"></a>
+
+**Topics**
++ [Single Container Docker](#release-2018-07-30-docker.platforms.docker)
++ [Preconfigured Docker](#release-2018-07-30-docker.platforms.dockerpreconfig)
+
+### Single Container Docker
+<a name="release-2018-07-30-docker.platforms.docker"></a>
+
+****
+
+|  Configuration and *Solution Stack Name*   |  AMI  |  Docker Version  |  Proxy Server  |
+| --- | --- | --- | --- |
+|  **Single Container Docker 18.03 version 2.12.0** <br /> * 64bit Amazon Linux 2018.03 v2.12.0 running Docker 18.03.1-ce *  | 2018.03.0 | 18.03.1-ce | nginx 1.12.1 |
+
+### Preconfigured Docker
+<a name="release-2018-07-30-docker.platforms.dockerpreconfig"></a>
+
+****
+
+|  Configuration and *Solution Stack Name*   |  AMI  |  Platform  |  Container OS  |  Language  |  Proxy Server  |  Application Server  |  Docker Image  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  **Glassfish 5.0 (Docker) version 2.12.0** <br /> * 64bit Amazon Linux v2.12.0 running GlassFish 5.0 Java 8 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Amazon Linux 2018.03 | Java 8 | nginx 1.12.1 | Glassfish 5.0 | amazon/aws-eb-glassfish:5.0-al-onbuild-2.11.1 |
+|  **Go 1.4 (Docker) version 2.12.0** <br /> * 64bit Debian jessie v2.12.0 running Go 1.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Debian Jessie | Go 1.4.2 | nginx 1.12.1 | none | golang:1.4.2-onbuild |
+|  **Go 1.3 (Docker) version 2.12.0** <br /> * 64bit Debian jessie v2.12.0 running Go 1.3 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Debian Jessie | Go 1.3.3 | nginx 1.12.1 | none | golang:1.3.3-onbuild |
+|  **Python 3.4 with uWSGI 2 (Docker) version 2.12.0** <br /> * 64bit Debian jessie v2.12.0 running Python 3.4 (Preconfigured - Docker) *  | 2018.03.0 | Docker 18.03.1-ce | Debian Jessie | Python 3.4 | nginx 1.12.1 | uWSGI 2.0.8 | amazon/aws-eb-python:3.4.2-onbuild-3.5.1 |

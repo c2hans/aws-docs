@@ -1,0 +1,41 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_ImportedSidewalkDevice.html
+---
+
+# ImportedSidewalkDevice
+<a name="API_ImportedSidewalkDevice"></a>
+
+Information about a Sidewalk device that has been added to an import task.
+
+## Contents
+<a name="API_ImportedSidewalkDevice_Contents"></a>
+
+ ** LastUpdateTime **   <a name="iotwireless-Type-ImportedSidewalkDevice-LastUpdateTime"></a>
+The time at which the status information was last updated.
+Type: Timestamp
+Required: No
+
+ ** OnboardingStatus **   <a name="iotwireless-Type-ImportedSidewalkDevice-OnboardingStatus"></a>
+The onboarding status of the Sidewalk device in the import task.
+Type: String
+Valid Values: `INITIALIZED | PENDING | ONBOARDED | FAILED`
+Required: No
+
+ ** OnboardingStatusReason **   <a name="iotwireless-Type-ImportedSidewalkDevice-OnboardingStatusReason"></a>
+The reason for the onboarding status information for the Sidewalk device.
+Type: String
+Required: No
+
+ ** SidewalkManufacturingSn **   <a name="iotwireless-Type-ImportedSidewalkDevice-SidewalkManufacturingSn"></a>
+The Sidewalk manufacturing serial number (SMSN) of the Sidewalk device.
+Type: String
+Length Constraints: Maximum length of 64.
+Required: No
+
+## See Also
+<a name="API_ImportedSidewalkDevice_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/ImportedSidewalkDevice)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/ImportedSidewalkDevice)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/ImportedSidewalkDevice)

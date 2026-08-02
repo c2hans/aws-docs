@@ -1,0 +1,226 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/cloudwatch-logs_example_cloudwatch-logs_StartQuery_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `StartQuery` with an AWS SDK
+<a name="cloudwatch-logs_example_cloudwatch-logs_StartQuery_section"></a>
+
+The following code examples show how to use `StartQuery`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Run a large query](cloudwatch-logs_example_cloudwatch-logs_Scenario_BigQuery_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET (v4)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv4/CloudWatchLogs/LargeQuery#code-examples).
+
+```
+    /// <summary>
+    /// Starts a CloudWatch Logs Insights query.
+    /// </summary>
+    /// <param name="logGroupName">The name of the log group to query.</param>
+    /// <param name="queryString">The CloudWatch Logs Insights query string.</param>
+    /// <param name="startTime">The start time for the query (seconds since epoch).</param>
+    /// <param name="endTime">The end time for the query (seconds since epoch).</param>
+    /// <param name="limit">The maximum number of results to return.</param>
+    /// <returns>The query ID if successful, null otherwise.</returns>
+    public async Task<string?> StartQueryAsync(
+        string logGroupName,
+        string queryString,
+        long startTime,
+        long endTime,
+        int limit = 10000)
+    {
+        try
+        {
+            var request = new StartQueryRequest
+            {
+                LogGroupName = logGroupName,
+                QueryString = queryString,
+                StartTime = startTime,
+                EndTime = endTime,
+                Limit = limit
+            };
+
+            var response = await _amazonCloudWatchLogs.StartQueryAsync(request);
+            return response.QueryId;
+        }
+        catch (InvalidParameterException ex)
+        {
+            _logger.LogError($"Invalid parameter for query: {ex.Message}");
+            return null;
+        }
+        catch (ResourceNotFoundException ex)
+        {
+            _logger.LogError($"Log group not found: {ex.Message}");
+            return null;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError($"An error occurred while starting query: {ex.Message}");
+            return null;
+        }
+    }
+```
++  For API details, see [StartQuery](https://docs.aws.amazon.com/goto/DotNetSDKV4/logs-2014-03-28/StartQuery) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/cloudwatch-logs#code-examples).
+
+```
+  /**
+   * Wrapper for the StartQueryCommand. Uses a static query string
+   * for consistency.
+   * @param {[Date, Date]} dateRange
+   * @param {number} maxLogs
+   * @returns {Promise<{ queryId: string }>}
+   */
+  async _startQuery([startDate, endDate], maxLogs = 10000) {
+    try {
+      return await this.client.send(
+        new StartQueryCommand({
+          logGroupNames: this.logGroupNames,
+          queryString: "fields @timestamp, @message | sort @timestamp asc",
+          startTime: startDate.valueOf(),
+          endTime: endDate.valueOf(),
+          limit: maxLogs,
+        }),
+      );
+    } catch (err) {
+      /** @type {string} */
+      const message = err.message;
+      if (message.startsWith("Query's end date and time")) {
+        // This error indicates that the query's start or end date occur
+        // before the log group was created.
+        throw new DateOutOfBoundsError(message);
+      }
+
+      throw err;
+    }
+  }
+```
++  For API details, see [StartQuery](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/cloudwatch-logs/command/StartQueryCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/cloudwatch-logs#code-examples).
+
+```
+    def perform_query(self, date_range):
+        """
+        Performs the actual CloudWatch log query.
+
+        :param date_range: A tuple representing the start and end datetime for the query.
+        :type date_range: tuple
+        :return: A list containing the query results.
+        :rtype: list
+        """
+        client = boto3.client("logs")
+        try:
+            try:
+                start_time = round(
+                    self.date_utilities.convert_iso8601_to_unix_timestamp(date_range[0])
+                )
+                end_time = round(
+                    self.date_utilities.convert_iso8601_to_unix_timestamp(date_range[1])
+                )
+                response = client.start_query(
+                    logGroupName=self.log_group,
+                    startTime=start_time,
+                    endTime=end_time,
+                    queryString=self.query_string,
+                    limit=self.limit,
+                )
+                query_id = response["queryId"]
+            except client.exceptions.ResourceNotFoundException as e:
+                raise DateOutOfBoundsError(f"Resource not found: {e}")
+            while True:
+                time.sleep(1)
+                results = client.get_query_results(queryId=query_id)
+                if results["status"] in [
+                    "Complete",
+                    "Failed",
+                    "Cancelled",
+                    "Timeout",
+                    "Unknown",
+                ]:
+                    return results.get("results", [])
+        except DateOutOfBoundsError:
+            return []
+
+    def _initiate_query(self, client, date_range, max_logs):
+        """
+        Initiates the CloudWatch logs query.
+
+        :param date_range: A tuple representing the start and end datetime for the query.
+        :type date_range: tuple
+        :param max_logs: The maximum number of logs to retrieve.
+        :type max_logs: int
+        :return: The query ID as a string.
+        :rtype: str
+        """
+        try:
+            start_time = round(
+                self.date_utilities.convert_iso8601_to_unix_timestamp(date_range[0])
+            )
+            end_time = round(
+                self.date_utilities.convert_iso8601_to_unix_timestamp(date_range[1])
+            )
+            response = client.start_query(
+                logGroupName=self.log_group,
+                startTime=start_time,
+                endTime=end_time,
+                queryString=self.query_string,
+                limit=max_logs,
+            )
+            return response["queryId"]
+        except client.exceptions.ResourceNotFoundException as e:
+            raise DateOutOfBoundsError(f"Resource not found: {e}")
+```
++  For API details, see [StartQuery](https://docs.aws.amazon.com/goto/boto3/logs-2014-03-28/StartQuery) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cwl#code-examples).
+
+```
+    TRY.
+        " iv_log_group_name = '/aws/lambda/my-function'
+        " iv_query_string = 'fields @timestamp, @message | sort @timestamp desc | limit 20'
+        " iv_start_time and iv_end_time must be in Unix epoch milliseconds (ms since Jan 1, 1970 00:00:00 UTC)
+        oo_result = lo_cwl->startquery(
+          iv_loggroupname = iv_log_group_name
+          iv_starttime    = iv_start_time
+          iv_endtime      = iv_end_time
+          iv_querystring  = iv_query_string
+          iv_limit        = iv_limit ).
+
+        " Display the query ID for tracking
+        DATA(lv_query_id) = oo_result->get_queryid( ).
+        MESSAGE |Query started successfully with ID: { lv_query_id }| TYPE 'I'.
+      CATCH /aws1/cx_cwlinvalidparameterex.
+        MESSAGE 'Invalid parameter.' TYPE 'E'.
+      CATCH /aws1/cx_cwllimitexceededex.
+        MESSAGE 'Limit exceeded.' TYPE 'E'.
+      CATCH /aws1/cx_cwlmalformedqueryex.
+        MESSAGE 'Malformed query.' TYPE 'E'.
+      CATCH /aws1/cx_cwlresourcenotfoundex.
+        MESSAGE 'Resource not found.' TYPE 'E'.
+      CATCH /aws1/cx_cwlserviceunavailex.
+        MESSAGE 'Service unavailable.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [StartQuery](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

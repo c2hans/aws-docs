@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/edge-packaging-job.html
+---
+
+# How to Package Model
+<a name="edge-packaging-job"></a>
+
+SageMaker Edge Manager packaging jobs take Amazon SageMaker Neo–compiled models and make any changes necessary to deploy the model with the inference engine, Edge Manager agent.
+
+**Topics**
++ [Complete prerequisites](edge-packaging-job-prerequisites.md)
++ [Package a Model (Amazon SageMaker AI Console)](edge-packaging-job-console.md)
++ [Package a Model (Boto3)](edge-packaging-job-boto3.md)

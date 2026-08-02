@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/configuration-v3.html
+---
+
+# Configuration files
+<a name="configuration-v3"></a>
+
+AWS ParallelCluster uses YAML 1.1 files for configuration parameters.
+
+**Topics**
++ [Cluster configuration file](cluster-configuration-file-v3.md)
++ [Build image configuration files](image-builder-configuration-file-v3.md)

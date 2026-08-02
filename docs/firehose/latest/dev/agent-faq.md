@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/firehose/latest/dev/agent-faq.html
+---
+
+# Troubleshoot issues when sending from Kinesis Agent
+<a name="agent-faq"></a>
+
+This table provides troubleshooting information and solutions for common issues faced when using the Amazon Kinesis Agent.
+
+| Issue | Solution |
+| --- | --- |
+| Why does Kinesis Agent not work on Windows? | [Kinesis Agent for Windows](https://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/what-is-kinesis-agent-windows.html) is different software than Kinesis Agent for Linux platforms. |
+| Why is Kinesis Agent slowing down and/or RecordSendErrors increasing? | This is usually due to throttling from Kinesis. Check the `WriteProvisionedThroughputExceeded` metric for Kinesis Data Streams or the `ThrottledRecords` metric for Firehose streams. Any increase from 0 in these metrics indicates that the stream limits need to be increased. For more information, see [Kinesis Data Stream limits](https://docs.aws.amazon.com/streams/latest/dev/service-sizes-and-limits.html) and [Firehose streams](https://docs.aws.amazon.com/firehose/latest/dev/limits.html).<br />Once you rule out throttling, see if the Kinesis Agent is configured to tail a large amount of small files. There is a delay when Kinesis Agent tails a new file, so Kinesis Agent should be tailing a small amount of larger files. Try consolidating your log files into larger files. |
+| How to resolve the java.lang.OutOfMemoryError exceptions? | This happends when Kinesis Agent does not have enough memory to handle its current workload. Try increasing JAVA\_START\_HEAP and JAVA\_MAX\_HEAP in /usr/bin/start-aws-kinesis-agent and restarting the agent. |
+| How to resolve the IllegalStateException : connection pool shut down exceptions? | Kinesis Agent does not have enough connections to handle its current workload. Try increasing maxConnections and maxSendingThreads in your general agent configuration settings at /etc/aws-kinesis/agent.json. The default value for these fields is 12 times the runtime processors available. See [AgentConfiguration.java](https://github.com/awslabs/amazon-kinesis-agent/blob/master/src/com/amazon/kinesis/streaming/agent/config/AgentConfiguration.java) for more about advanced agent configurations settings.  |
+| How can I debug another issue with Kinesis Agent? | DEBUG level logs can be enabled in /etc/aws-kinesis/log4j.xml . |
+| How should I configure Kinesis Agent? | The smaller the maxBufferSizeBytes, the more frequently Kinesis Agent will send data. This can be good as it decreases delivery time of records, but it also increases the requests per second to Kinesis.  |
+| Why is Kinesis Agent sending duplicate records? | This occurs due to a misconfiguration in file tailing. Make sure that each fileFlow’s filePattern is only matching one file. This can also occur if the logrotate mode being used is in copytruncate mode. Try changing the mode to the default or create mode to avoid duplication. For more information on handling duplicate records, see [Handling Duplicate Records](https://docs.aws.amazon.com/streams/latest/dev/kinesis-record-processor-duplicates.html). |

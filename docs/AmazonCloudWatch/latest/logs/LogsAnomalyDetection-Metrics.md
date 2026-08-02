@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/LogsAnomalyDetection-Metrics.html
+---
+
+# Metrics published by log anomaly detectors
+<a name="LogsAnomalyDetection-Metrics"></a>
+
+CloudWatch Logs publishes the **AnomalyCount** metric to CloudWatch metrics. This metric is published to the `AWS/Logs` namespace.
+
+The **AnomalyCount** metric is published with the following dimensions:
++ **LogAnomalyDetector**– The name of the anomaly detector
++ **LogAnomalyPriority**– The priority level of the anomaly

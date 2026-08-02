@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_voice-chime_SipMediaApplicationCall.html
+---
+
+# SipMediaApplicationCall
+<a name="API_voice-chime_SipMediaApplicationCall"></a>
+
+A `Call` instance for a SIP media application.
+
+## Contents
+<a name="API_voice-chime_SipMediaApplicationCall_Contents"></a>
+
+ ** TransactionId **   <a name="chimesdk-Type-voice-chime_SipMediaApplicationCall-TransactionId"></a>
+The call's transaction ID.
+Type: String
+Pattern: `[a-fA-F0-9]{8}(?:-[a-fA-F0-9]{4}){3}-[a-fA-F0-9]{12}`
+Required: No
+
+## See Also
+<a name="API_voice-chime_SipMediaApplicationCall_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/chime-sdk-voice-2022-08-03/SipMediaApplicationCall)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/chime-sdk-voice-2022-08-03/SipMediaApplicationCall)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/chime-sdk-voice-2022-08-03/SipMediaApplicationCall)

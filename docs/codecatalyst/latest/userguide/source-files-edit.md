@@ -1,0 +1,22 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/source-files-edit.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Editing a file
+<a name="source-files-edit"></a>
+
+You can edit individual files in the Amazon CodeCatalyst console. To edit multiple files at once, either create a Dev Environment or clone the repository and make your changes using a Git client or integrated development environment (IDE). For more information, see [Write and modify code with Dev Environments in CodeCatalystWrite and modify code with Dev Environments](devenvironment.md) or [Cloning a source repository](source-repositories-clone.md).
+
+**To edit a file in the CodeCatalyst console**
+
+1. Navigate to the project where you want to edit a file. For more information about how to navigate to a repository, see [Viewing a source repository](source-repositories-view.md).
+
+1. Choose the repository where you want to edit the file. Choose **View branches** and then choose the branch you want to work in. Choose the file from the list of files and folders in that branch.
+
+   The contents of the file are displayed.
+
+1. Choose **Edit**.
+
+1. In the editor, edit the contents of the file and then choose **Commit**. Optionally, in **Commit changes**, add more information about the change in **Commit message**. When you are satisfied with your changes, choose **Commit**.

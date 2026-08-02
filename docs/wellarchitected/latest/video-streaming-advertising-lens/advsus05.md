@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/advsus05.html
+---
+
+# Data management
+<a name="advsus05"></a>
+
+| ADVSUS05: How are you optimizing data storage and retrieval? |
+| --- |
+|   |
+
+ Data management involves provisioning the minimum amount of storage required to meet your workload's needs. For existing storage, understand the needs and usage of your data to set appropriate lifecycles for your data to move data to the most efficient type of storage. Delete unnecessary data, when possible, to reduce storage footprint.
+
+**Topics**
++ [ADVSUS05-BP01 Identify and remove redundant data across storage](advsus05-bp01.md)

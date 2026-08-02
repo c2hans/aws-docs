@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/organizations/latest/userguide/example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.2_section.html
+---
+
+# Policy to enable Automation across your organization
+<a name="example_iam-policies.AWSMettleDocs.latest.userguide.automation.xml.2_section"></a>
+
+The following code example shows how to This permission-based policy enables Automation across your organization
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "iam:CreateServiceLinkedRole",
+            "Resource": "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation",
+            "Condition": {"StringLike": {"iam:AWSServiceName": "aco-automation.amazonaws.com"}}
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:PutRolePolicy",
+                "iam:AttachRolePolicy"
+            ],
+            "Resource": "arn:aws:iam::*:role/aws-service-role/aco-automation.amazonaws.com/AWSServiceRoleForComputeOptimizerAutomation"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "aco-automation:UpdateEnrollmentConfiguration",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "aco-automation:AssociateAccounts",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "aco-automation:DisassociateAccounts",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "aco-automation:ListAccounts",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using AWS Organizations with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

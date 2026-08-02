@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/streams/latest/dev/using-other-services-kafka-connect.html
+---
+
+# Kafka Connect
+<a name="using-other-services-kafka-connect"></a>
+
+Kafka Connect is a tool for scalably and reliably streaming data between Apache Kafka and other systems. For more information on writing data from Apache Kafka to Kinesis Data Streams, see [the Kinesis kafka connector](https://github.com/awslabs/kinesis-kafka-connector).

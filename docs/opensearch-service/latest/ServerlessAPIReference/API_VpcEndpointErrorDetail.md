@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/opensearch-service/latest/ServerlessAPIReference/API_VpcEndpointErrorDetail.html
+---
+
+# VpcEndpointErrorDetail
+<a name="API_VpcEndpointErrorDetail"></a>
+
+Error information for a failed `BatchGetVpcEndpoint` request.
+
+## Contents
+<a name="API_VpcEndpointErrorDetail_Contents"></a>
+
+ ** errorCode **   <a name="opensearchserverless-Type-VpcEndpointErrorDetail-errorCode"></a>
+The error code for the failed request.
+Type: String
+Required: No
+
+ ** errorMessage **   <a name="opensearchserverless-Type-VpcEndpointErrorDetail-errorMessage"></a>
+An error message describing the reason for the failure.
+Type: String
+Required: No
+
+ ** id **   <a name="opensearchserverless-Type-VpcEndpointErrorDetail-id"></a>
+The unique identifier of the VPC endpoint.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `vpce-[0-9a-z]*`
+Required: No
+
+## See Also
+<a name="API_VpcEndpointErrorDetail_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/opensearchserverless-2021-11-01/VpcEndpointErrorDetail)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/opensearchserverless-2021-11-01/VpcEndpointErrorDetail)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/opensearchserverless-2021-11-01/VpcEndpointErrorDetail)

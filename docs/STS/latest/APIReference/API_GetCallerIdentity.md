@@ -1,0 +1,190 @@
+---
+source_url: https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html
+---
+
+# GetCallerIdentity
+<a name="API_GetCallerIdentity"></a>
+
+Returns details about the IAM user or role whose credentials are used to call the operation.
+
+**Note**
+No permissions are required to perform this operation. If an administrator attaches a policy to your identity that explicitly denies access to the `sts:GetCallerIdentity` action, you can still perform this operation. Permissions are not required because the same information is returned when access is denied. To view an example response, see [I Am Not Authorized to Perform: iam:DeleteVirtualMFADevice](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_general.html#troubleshoot_general_access-denied-delete-mfa) in the *IAM User Guide*.
+
+## Response Elements
+<a name="API_GetCallerIdentity_ResponseElements"></a>
+
+The following elements are returned by the service.
+
+ ** Account **
+The AWS account ID number of the account that owns or contains the calling entity.
+Type: String
+
+ ** Arn **
+The AWS ARN associated with the calling entity.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `[\u0009\u000A\u000D\u0020-\u007E\u0085\u00A0-\uD7FF\uE000-\uFFFD\u10000-\u10FFFF]+`
+
+ ** UserId **
+The unique identifier of the calling entity. The exact value depends on the type of entity that is making the call. The values returned are those listed in the **aws:userid** column in the [Principal table](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html#principaltable) found on the **Policy Variables** reference page in the *IAM User Guide*.
+Type: String
+
+## Errors
+<a name="API_GetCallerIdentity_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+## Examples
+<a name="API_GetCallerIdentity_Examples"></a>
+
+### Example 1 - Called by an IAM user
+<a name="API_GetCallerIdentity_Example_1"></a>
+
+This example shows a request and response made with the credentials for a user named Alice in the AWS account 123456789012.
+
+#### Sample Request
+<a name="API_GetCallerIdentity_Example_1_Request"></a>
+
+```
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+Accept-Encoding: identity
+Content-Length: 32
+Content-Type: application/x-www-form-urlencoded
+Authorization: AWS4-HMAC-SHA256 Credential=AKIAI44QH8DHBEXAMPLE/20160126/us-east-1/sts/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-date,
+        Signature=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+X-Amz-Date: 20160126T215751Z
+User-Agent: aws-cli/1.10.0 Python/2.7.3 Linux/3.13.0-76-generic botocore/1.3.22
+
+Action=GetCallerIdentity&Version=2011-06-15
+```
+
+#### Sample Response
+<a name="API_GetCallerIdentity_Example_1_Response"></a>
+
+```
+HTTP/1.1 200 OK
+x-amzn-RequestId: 01234567-89ab-cdef-0123-456789abcdef
+Content-Type: text/xml
+Content-Length: 357
+Date: Tue, 26 Jan 2016 21:57:47 GMT
+
+<GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+  <Arn>arn:aws:iam::123456789012:user/Alice</Arn>
+  <UserId>AIDACKCEVSQ6C2EXAMPLE</UserId>
+  <Account>123456789012</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>01234567-89ab-cdef-0123-456789abcdef</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>
+```
+
+### Example 2 - Called by user created with AssumeRole
+<a name="API_GetCallerIdentity_Example_2"></a>
+
+This example shows a request and response made with temporary credentials created by `AssumeRole`. The name of the assumed role is `my-role-name`, and the `RoleSessionName` is set to `my-role-session-name`.
+
+#### Sample Request
+<a name="API_GetCallerIdentity_Example_2_Request"></a>
+
+```
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+Accept-Encoding: identity
+Content-Length: 43
+X-Amz-Date: 20160301T213302Z
+User-Agent: aws-cli/1.10.0 Python/2.7.3 Linux/3.13.0-79-generic botocore/1.3.22
+X-Amz-Security-Token:<REDACTED>
+Content-Type: application/x-www-form-urlencoded
+Authorization: AWS4-HMAC-SHA256 Credential=AKIAI44QH8DHBEXAMPLE/20160301/us-east-1/sts/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-date;x-amz-security-token,
+        Signature=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+
+Action=GetCallerIdentity&Version=2011-06-15
+```
+
+#### Sample Response
+<a name="API_GetCallerIdentity_Example_2_Response"></a>
+
+```
+HTTP/1.1 200 OK
+x-amzn-RequestId: 01234567-89ab-cdef-0123-456789abcdef
+Content-Type: text/xml
+Content-Length: 438
+Date: Tue, 01 Mar 2016 21:32:59 GMT
+
+<GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::123456789012:assumed-role/my-role-name/my-role-session-name</Arn>
+    <UserId>ARO123EXAMPLE123:my-role-session-name</UserId>
+    <Account>123456789012</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>01234567-89ab-cdef-0123-456789abcdef</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>
+```
+
+### Example 3 - Called by user created with GetFederationToken
+<a name="API_GetCallerIdentity_Example_3"></a>
+
+This example shows a request and response made with temporary credentials created by using `GetFederationToken`. The `Name` parameter is set to `my-federated-user-name`.
+
+#### Sample Request
+<a name="API_GetCallerIdentity_Example_3_Request"></a>
+
+```
+POST / HTTP/1.1
+Host: sts.amazonaws.com
+Accept-Encoding: identity
+Content-Length: 43
+X-Amz-Date: 20160301T215108Z
+User-Agent: aws-cli/1.10.0 Python/2.7.3 Linux/3.13.0-79-generic botocore/1.3.22
+X-Amz-Security-Token:<REDACTED>
+Content-Type: application/x-www-form-urlencoded
+Authorization: AWS4-HMAC-SHA256 Credential=AKIAI44QH8DHBEXAMPLE/20160301/us-east-1/sts/aws4_request,
+        SignedHeaders=host;user-agent;x-amz-date;x-amz-security-token,
+        Signature=1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+
+Action=GetCallerIdentity&Version=2011-06-15
+```
+
+#### Sample Response
+<a name="API_GetCallerIdentity_Example_3_Response"></a>
+
+```
+HTTP/1.1 200 OK
+x-amzn-RequestId: 01234567-89ab-cdef-0123-456789abcdef
+Content-Type: text/xml
+Content-Length: 437
+Date: Tue, 01 Mar 2016 21:51:06 GMT
+
+<GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:sts::123456789012:federated-user/my-federated-user-name</Arn>
+    <UserId>123456789012:my-federated-user-name</UserId>
+    <Account>123456789012</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>01234567-89ab-cdef-0123-456789abcdef</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>
+```
+
+## See Also
+<a name="API_GetCallerIdentity_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sts-2011-06-15/GetCallerIdentity)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sts-2011-06-15/GetCallerIdentity)

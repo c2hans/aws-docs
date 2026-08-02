@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cf2/latest/installguide/install-vm-p-cf-ig-install-vm.html
+---
+
+This is version 2.18 of the AWS Elemental Conductor File documentation. This is the latest version. For prior versions, see the *Archive* section of [AWS Elemental Conductor File and AWS Elemental Server Documentation](https://docs.aws.amazon.com/elemental-server).
+
+# Step B: Deploy the VM and Install AWS Elemental Conductor File
+<a name="install-vm-p-cf-ig-install-vm"></a>
+
+Set-up the AWS Elemental Conductor File nodes before setting up the worker AWS Elemental Server nodes.
+
+Perform these steps from your workstation.
+
+**Install the Conductor Software on the Primary Node**
+
+1. Place the OVA image in a convenient location accessible to the VM host.
+
+1. Start the VMware vSphere client and choose the option that lets you run the OVF Deploy wizard to create the VM guest.
+
+1. Complete the fields in the wizard. Pay special attention to the following settings:
+   + For the *source*, enter the location where you saved the OVA file.
+   + Ensure that the *hostname* that you assign to the VM guest is unique across all of your AWS Elemental products.
+   + For *network settings*, such as DNS servers and eth configuration, leave the fields blank. You will configure these settings later in the AWS Elemental Conductor File installation and configuration process.
+
+1. Choose **Finish**. The OVA is installed, the guest is created, and AWS Elemental Conductor File is installed on that guest with the eth0 configured as specified.
+
+1. Before proceeding, take a snapshot of the VM, as described in the VMware vSphere help text.
+
+**Verify Installation**
+The VMware vSphere client provides feedback about creation of the VM guest. However, it does not provide status feedback during installation of the AWS Elemental software. Therefore, to monitor progress of the installation once the VM guest has been created, follow these steps:
+
+1. From the VMware vSphere client, choose **Open Console** and access the AWS Elemental Conductor File VM. The screen shows a progress bar.
+
+1. Press Esc on your keyboard to switch the display to showing text.
+
+1. Watch for the following:
+   + Early in the installation process, the display pauses on the line `Starting: ATD`. This indicates that the installation is in progress.
+   + The log-in prompt appears when the installation is complete.
+
+1. At the log in prompt, enter the *elemental* user credentials.
+
+   You are logged in at the home directory (/elemental). If the install succeeds, the AWS Elemental banner is displayed.
+
+**Install on Secondary Node**
+Perform the same installation and verification on the secondary AWS Elemental Conductor File node.

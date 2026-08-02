@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/python_3_kafka_code_examples.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Amazon MSK examples using SDK for Python (Boto3)
+<a name="python_3_kafka_code_examples"></a>
+
+The following code examples show you how to perform actions and implement common scenarios by using the AWS SDK for Python (Boto3) with Amazon MSK.
+
+Each example includes a link to the complete source code, where you can find instructions on how to set up and run the code in context.
+
+**Topics**
++ [Serverless examples](#serverless_examples)
+
+## Serverless examples
+<a name="serverless_examples"></a>
+
+### Invoke a Lambda function from an Amazon MSK trigger
+<a name="serverless_MSK_Lambda_python_3_topic"></a>
+
+The following code example shows how to implement a Lambda function that receives an event triggered by receiving records from an Amazon MSK cluster. The function retrieves the MSK payload and logs the record contents.
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [Serverless examples](https://github.com/aws-samples/serverless-snippets/tree/main/integration-msk-to-lambda) repository.
+Consuming an Amazon MSK event with Lambda using Python.
+
+```
+import base64
+
+def lambda_handler(event, context):
+    # Iterate through keys
+    for key in event['records']:
+        print('Key:', key)
+        # Iterate through records
+        for record in event['records'][key]:
+            print('Record:', record)
+            # Decode base64
+            msg = base64.b64decode(record['value']).decode('utf-8')
+            print('Message:', msg)
+```

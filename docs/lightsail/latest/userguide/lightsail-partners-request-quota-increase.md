@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-partners-request-quota-increase.html
+---
+
+# Request a service quota increase for your partner accounts
+<a name="lightsail-partners-request-quota-increase"></a>
+
+After you become an Amazon Lightsail partner, the default service quotas for Lightsail instances are increased for the current account and any member accounts across your organization. If you want to further increase your limits for a member account, you should use the following process to request quota increases. You can view your current quotas and request increases from the Lightsail console.
+
+**Note**
+Member accounts don't see an increased quota immediately in the Service Quotas console. The updated quota appears in the console after member accounts launch their first instance in a Region.
+
+**Note**
+For multiple member accounts that are linked to the Lightsail partner account, you should use the partner feedback form to request service quota increases. For more information, see [Contact Lightsail as a partner](lightsail-partners-contact-lightsail.md).
+
+**To request a service quota increase for partner accounts**
+
+1. Sign in to the [Lightsail console](https://lightsail.aws.amazon.com/).
+
+1. On the Lightsail home page, choose your user or role on the top navigation menu.
+
+1. Choose **Account** in the dropdown menu.
+![Lightsail account page.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-console-account-menu.png)
+
+1. Choose the **Service quotas** tab.
+
+1. For the quota you want to increase, choose **Request a quota increase**.
+![Lightsail account page with service quotas tab selected.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-account-service-quotas.png)
+
+1. On the Service Quotas console, choose **Request increase at account level**.
+
+1. For **Increase quota value**, enter a quantity.
+
+1. To submit your request, choose **Request**.
+
+Once the quota increase request has been submitted, you might have an Support case generated which you can monitor for updates. If the increase is approved, it will apply to all of your partner accounts per Region. For quota increases not listed, see [Contact Lightsail as a partner](lightsail-partners-contact-lightsail.md).

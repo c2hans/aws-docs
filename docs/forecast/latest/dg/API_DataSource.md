@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/forecast/latest/dg/API_DataSource.html
+---
+
+ Amazon Forecast is no longer available to new customers. Existing customers of Amazon Forecast can continue to use the service as normal. [Learn more"](https://aws.amazon.com/blogs/machine-learning/transition-your-amazon-forecast-usage-to-amazon-sagemaker-canvas/)
+
+# DataSource
+<a name="API_DataSource"></a>
+
+The source of your data, an AWS Identity and Access Management (IAM) role that allows Amazon Forecast to access the data and, optionally, an AWS Key Management Service (KMS) key.
+
+## Contents
+<a name="API_DataSource_Contents"></a>
+
+ ** S3Config **   <a name="forecast-Type-DataSource-S3Config"></a>
+The path to the data stored in an Amazon Simple Storage Service (Amazon S3) bucket along with the credentials to access the data.
+Type: [S3Config](API_S3Config.md) object
+Required: Yes
+
+## See Also
+<a name="API_DataSource_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/forecast-2018-06-26/DataSource)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/forecast-2018-06-26/DataSource)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/forecast-2018-06-26/DataSource)

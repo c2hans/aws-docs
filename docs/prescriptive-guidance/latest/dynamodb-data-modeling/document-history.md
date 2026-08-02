@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/dynamodb-data-modeling/document-history.html
+---
+
+# Document history
+<a name="document-history"></a>
+
+The following table describes significant changes to this guide.
+
+|
+|
+| **Change** | **Description** | **Date** |
+| --- |--- |--- |
+| Added a *Best practices* section and an example for hierarchical data modeling. | We added a summary of DynamoDB best practices and a step-by-step example of designing and validating a hierarchical model. | December 4, 2023 |
+| Initial publication | — | October 26, 2020 |

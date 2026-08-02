@@ -1,0 +1,733 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# Connecting Amazon Q Business to Google Drive using AWS CloudFormation
+<a name="google-cfn"></a>
+
+You use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html) resource to connect a data source to your Amazon Q application.
+
+Use the [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-qbusiness-datasource.html#cfn-qbusiness-datasource-applicationid) property to provide a JSON or YAML schema with the necessary configuration details specific to your data source connector.
+
+To learn more about AWS CloudFormation, see [What is AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) in the *CloudFormation User Guide*.
+
+**Topics**
++ [Google Drive configuration properties](#google-configuration-keys)
++ [Google Drive JSON schema for using the configuration property with AWS CloudFormation](#google-cfn-json)
++ [Google Drive YAML schema for using the configuration property with AWS CloudFormation](#google-cfn-yaml)
+
+## Google Drive configuration properties
+<a name="google-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| connectionConfiguration | Configuration information for the data source. | `object`<br />This property has the following sub-property: `repositoryEndpointMetadata`. | Yes |
+| repositoryEndpointMetadata | The endpoint information for the data source. This data source doesn't specify an endpoint. You choose your authentication type: serviceAccount and OAuth2. The connection information is included in an AWS Secrets Manager secret that you provide the secretArn. | `object`<br />This property has the following sub-property: `authType`. | Yes |
+| authType | Choose between serviceAccount and OAuth2, based on your use case. | `string` | Yes |
+| repositoryConfigurations | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties: `file` and `comment`. | Yes |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html)  | A list of objects that map the attributes or field names of your Google Drive to Amazon Q index field names.  | `object`<br />`object`<br />These properties have the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html) | No |
+| `indexFieldName` | The field name of your Google Drive to Amazon Q index field names. | `string` | Yes |
+| `indexFieldType` | The field type of your Google Drive to Amazon Q index field names. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your Google Drive to Amazon Q index field names. | `string` | Yes |
+| `dateFieldFormat` | The date format of your Google Drive to Amazon Q index field names. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| additionalProperties | Additional configuration options for your content in your data source | `object`<br />This property has the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html) | Yes |
+| isCrawlAcl | Specify true to crawl access control information by default from documents.  Amazon Q Business crawls ACL information to ensure responses are generated only from documents your end users have access to. See [Authorization](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) for more details.  | `boolean` | No |
+| fieldForUserId | Specify field to use for UserId for ACL crawling. | `string` | No |
+| maxFileSizeInMegaBytes | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50 MB. The maximum file size should be greater than 0MB and less than or equal to 50 MB. You can use up to 10 GB (10240 MB) if you set videoExtractionStatus to ENABLED in mediaExtractionConfiguration.videoExtractionConfiguration when using CreateDatasource or UpdateDatasource API. Otherwise, you can use up to 2 GB (2048 MB) if you set audioExtractionStatus to ENABLED in  mediaExtractionConfiguration.audioExtractionConfiguration  when using the CreateDatasource or UpdateDatasource API. | `string` | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html)  | true to index comments in your Google Drive data source. | `boolean` | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html)  | true to index MyDrive and Shared With Me Drives in your Google Drive data source. | `boolean` | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html)  | true to index Shared Drives in your Google Drive data source. | `boolean` | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html)  | A list of regular expression patterns to exclude specific files in your Google Drive data source. Files that match the patterns are excluded from the index. Files that don't match the patterns are included in the index. If a file matches both an exclusion and inclusion pattern, the exclusion pattern takes precedence, and the file isn't included in the index. | `array` | No |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html)  | A list of regular expression patterns to include specific files in your Google Drive data source. Files that match the patterns are included in the index. Files that don't match the patterns are excluded from the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file isn't included in the index. | `array` | No |
+| type | The type of data source. We recommend GOOOGLEDRIVEV2 as your data source type. | `string`<br />Valid values are `GOOOGLEDRIVEV2` and `GOOGLEDRIVE`. | No |
+| enableIdentityCrawler | true to activate identity crawler. Identity crawler is activated by default. Crawling identity information on users and groups with access to certain documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents.  Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | Yes |
+| syncMode | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents.  | `string`<br />You can choose between the following options:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/google-cfn.html) | Yes |
+| secretARN | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your Google Drive. | `string`<br /> The secret must contain a JSON structure with the following keys:<br />If using Google Service Account authentication:<pre>{<br />    "clientEmail": {{"user account email",}}<br />    "adminAccountEmail": {{"service account email",}}<br />    "privateKey": {{"private key"}}<br />}</pre><br />If using OAuth 2.0 authentication:<pre>{<br />    "clientID": {{"OAuth client ID",}}<br />    "clientSecret": {{"client secret",}}<br />    "refreshToken": {{"refresh token"}}<br />}</pre> | Yes |
+| version | The version of this template that's currently supported. | `string` | No |
+
+## Google Drive JSON schema for using the configuration property with AWS CloudFormation
+<a name="google-cfn-json"></a>
+
+The following is the Google Drive JSON schema and examples for the configuration property for AWS CloudFormation.
+
+**Topics**
++ [Google Drive JSON schema for using the configuration property with AWS CloudFormation](#google-cfn-json-schema)
++ [Google Drive JSON schema example for using the configuration property with AWS CloudFormation](#google-cfn-json-example)
+
+### Google Drive JSON schema for using the configuration property with AWS CloudFormation
+<a name="google-cfn-json-schema"></a>
+
+The following is the Google Drive JSON schema for the configuration property for CloudFormation
+
+```
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["GOOGLEDRIVEV2", "GOOGLEDRIVE"]
+    },
+    "syncMode": {
+      "type": "string",
+      "enum": ["FORCED_FULL_CRAWL", "FULL_CRAWL", "CHANGE_LOG"]
+    },
+    "secretArn": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 2048
+    },
+    "enableIdentityCrawler": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "enum": ["true", "false"]
+        }
+      ]
+    },
+    "connectionConfiguration": {
+      "type": "object",
+      "properties": {
+        "repositoryEndpointMetadata": {
+          "type": "object",
+          "properties": {
+            "authType": {
+              "type": "string",
+              "enum": ["serviceAccount", "OAuth2"]
+            }
+          },
+          "required": ["authType"]
+        }
+      },
+      "required": ["repositoryEndpointMetadata"]
+    },
+    "repositoryConfigurations": {
+      "type": "object",
+      "properties": {
+        "file": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "DATE", "STRING_LIST", "LONG"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "comment": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "DATE", "STRING_LIST"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        }
+      }
+    },
+    "additionalProperties": {
+      "type": "object",
+      "properties": {
+        "maxFileSizeInMegaBytes": {
+          "type": "string"
+        },
+        "isCrawlComment": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "isCrawlMyDriveAndSharedWithMe": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "isCrawlSharedDrives": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "isCrawlAcl": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "fieldForUserId": {
+          "type": "string"
+        },
+        "excludeUserAccounts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "excludeSharedDrives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "excludeMimeTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "includeUserAccounts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "includeSharedDrives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "includeMimeTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "includeTargetAudienceGroup": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFileTypePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFileNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFileTypePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFileNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFilePathFilter": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFilePathFilter": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "enableDeletionProtection": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ],
+          "default": false
+        },
+        "deletionProtectionThreshold": {
+          "type": "string",
+          "default": "15"
+        }
+      }
+    },
+    "version": {
+      "type": "string",
+      "anyOf": [
+        {
+          "pattern": "1.0.0"
+        }
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "syncMode",
+    "secretArn",
+    "connectionConfiguration",
+    "repositoryConfigurations",
+    "additionalProperties"
+  ]
+}
+```
+
+### Google Drive JSON schema example for using the configuration property with AWS CloudFormation
+<a name="google-cfn-json-example"></a>
+
+The following is the Google Drive JSON schema example for the configuration property for CloudFormation
+
+```
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "CloudFormation GOOGLEDRIVE Data Source Template",
+  "Resources": {
+    "DataSourceGoogleDrive": {
+      "Type": "AWS::QBusiness::DataSource",
+      "Properties": {
+        "ApplicationId": "app12345-1234-1234-1234-123456789012",
+        "IndexId": "indx1234-1234-1234-1234-123456789012",
+        "DisplayName": "MyGoogleDriveDataSource",
+        "RoleArn": "arn:aws:iam::123456789012:role/qbusiness-data-source-role",
+        "Configuration": {
+          "type": "GOOGLEDRIVEV2",
+          "syncMode": "FULL_CRAWL",
+          "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-google-drive-secret",
+          "enableIdentityCrawler": "true",
+          "connectionConfiguration": {
+            "repositoryEndpointMetadata": {
+              "authType": "OAuth2"
+            }
+          },
+          "repositoryConfigurations": {
+            "file": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "file_id",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "id",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            },
+            "comment": {
+              "fieldMappings": [
+                {
+                  "indexFieldName": "comment_id",
+                  "indexFieldType": "STRING",
+                  "dataSourceFieldName": "id",
+                  "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                }
+              ]
+            }
+          },
+          "additionalProperties": {
+            "maxFileSizeInMegaBytes": "50",
+            "isCrawlComment": "true",
+            "isCrawlMyDriveAndSharedWithMe": "true",
+            "isCrawlSharedDrives": "false",
+            "isCrawlAcl": "true",
+            "fieldForUserId": "user@example.com",
+            "excludeUserAccounts": ["user1@example.com", "user2@example.com"],
+            "excludeSharedDrives": ["SharedDrive1"],
+            "excludeMimeTypes": ["application/vnd.google-apps.folder"],
+            "includeUserAccounts": ["user3@example.com"],
+            "includeSharedDrives": ["SharedDrive2"],
+            "includeMimeTypes": [
+              "application/pdf",
+              "application/vnd.google-apps.document"
+            ],
+            "includeTargetAudienceGroup": ["group1@example.com"],
+            "inclusionFileTypePatterns": ["*.pdf"],
+            "inclusionFileNamePatterns": ["*report*"],
+            "exclusionFileTypePatterns": ["*.tmp"],
+            "exclusionFileNamePatterns": ["*draft*"],
+            "inclusionFilePathFilter": ["documents/"],
+            "exclusionFilePathFilter": ["drafts/"],
+            "enableDeletionProtection": "true",
+            "deletionProtectionThreshold": "15"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## Google Drive YAML schema for using the configuration property with AWS CloudFormation
+<a name="google-cfn-yaml"></a>
+
+The following is the Google Drive YAML schema and examples for the configuration property for AWS CloudFormation:
+
+**Topics**
++ [Google Drive YAML schema for using the configuration property with AWS CloudFormation](#google-cfn-yaml-schema)
++ [Google Drive YAML schema example for using the configuration property with AWS CloudFormation](#google-cfn-yaml-example)
+
+### Google Drive YAML schema for using the configuration property with AWS CloudFormation
+<a name="google-cfn-yaml-schema"></a>
+
+The following is the Google Drive YAML schema for the configuration property for CloudFormation.
+
+```
+type: object
+properties:
+  type:
+    type: string
+    enum:
+      - GOOGLEDRIVEV2
+      - GOOGLEDRIVE
+  syncMode:
+    type: string
+    enum:
+      - FORCED_FULL_CRAWL
+      - FULL_CRAWL
+      - CHANGE_LOG
+  secretArn:
+    type: string
+    minLength: 20
+    maxLength: 2048
+  enableIdentityCrawler:
+    anyOf:
+      - type: boolean
+      - type: string
+        enum:
+          - true
+          - false
+  connectionConfiguration:
+    type: object
+    properties:
+      repositoryEndpointMetadata:
+        type: object
+        properties:
+          authType:
+            type: string
+            enum:
+              - serviceAccount
+              - OAuth2
+        required:
+          - authType
+    required:
+      - repositoryEndpointMetadata
+  repositoryConfigurations:
+    type: object
+    properties:
+      file:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - DATE
+                    - STRING_LIST
+                    - LONG
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+      comment:
+        type: object
+        properties:
+          fieldMappings:
+            type: array
+            items:
+              type: object
+              properties:
+                indexFieldName:
+                  type: string
+                indexFieldType:
+                  type: string
+                  enum:
+                    - STRING
+                    - DATE
+                    - STRING_LIST
+                dataSourceFieldName:
+                  type: string
+                dateFieldFormat:
+                  type: string
+                  pattern: "yyyy-MM-dd'T'HH:mm:ss'Z'"
+              required:
+                - indexFieldName
+                - indexFieldType
+                - dataSourceFieldName
+        required:
+          - fieldMappings
+  additionalProperties:
+    type: object
+    properties:
+      maxFileSizeInMegaBytes:
+        type: string
+      isCrawlComment:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+      isCrawlMyDriveAndSharedWithMe:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+      isCrawlSharedDrives:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+      isCrawlAcl:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+      fieldForUserId:
+        type: string
+      excludeUserAccounts:
+        type: array
+        items:
+          type: string
+      excludeSharedDrives:
+        type: array
+        items:
+          type: string
+      excludeMimeTypes:
+        type: array
+        items:
+          type: string
+      includeUserAccounts:
+        type: array
+        items:
+          type: string
+      includeSharedDrives:
+        type: array
+        items:
+          type: string
+      includeMimeTypes:
+        type: array
+        items:
+          type: string
+      includeTargetAudienceGroup:
+        type: array
+        items:
+          type: string
+      inclusionFileTypePatterns:
+        type: array
+        items:
+          type: string
+      inclusionFileNamePatterns:
+        type: array
+        items:
+          type: string
+      exclusionFileTypePatterns:
+        type: array
+        items:
+          type: string
+      exclusionFileNamePatterns:
+        type: array
+        items:
+          type: string
+      inclusionFilePathFilter:
+        type: array
+        items:
+          type: string
+      exclusionFilePathFilter:
+        type: array
+        items:
+          type: string
+      enableDeletionProtection:
+        anyOf:
+          - type: boolean
+          - type: string
+            enum:
+              - true
+              - false
+        default: false
+      deletionProtectionThreshold:
+        type: string
+        default: "15"
+  version:
+    type: string
+    anyOf:
+      - pattern: 1.0.0
+required:
+  - type
+  - syncMode
+  - secretArn
+  - connectionConfiguration
+  - repositoryConfigurations
+  - additionalProperties
+```
+
+### Google Drive YAML schema example for using the configuration property with AWS CloudFormation
+<a name="google-cfn-yaml-example"></a>
+
+The following is the Google Drive YAML example for the Configuration property for CloudFormation:
+
+```
+AWSTemplateFormatVersion: "2010-09-09"
+Description: CloudFormation GOOGLEDRIVE Data Source Template
+Resources:
+  DataSourceGoogleDrive:
+    Type: AWS::QBusiness::DataSource
+    Properties:
+      ApplicationId: app12345-1234-1234-1234-123456789012
+      IndexId: indx1234-1234-1234-1234-123456789012
+      DisplayName: MyGoogleDriveDataSource
+      RoleArn: arn:aws:iam::123456789012:role/qbusiness-data-source-role
+      Configuration:
+        type: GOOGLEDRIVEV2
+        syncMode: FULL_CRAWL
+        secretArn: arn:aws:secretsmanager:us-west-2:123456789012:secret:my-google-drive-secret
+        enableIdentityCrawler: "true"
+        connectionConfiguration:
+          repositoryEndpointMetadata:
+            authType: OAuth2
+        repositoryConfigurations:
+          file:
+            fieldMappings:
+              - indexFieldName: file_id
+                indexFieldType: STRING
+                dataSourceFieldName: id
+                dateFieldFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+          comment:
+            fieldMappings:
+              - indexFieldName: comment_id
+                indexFieldType: STRING
+                dataSourceFieldName: id
+                dateFieldFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+        additionalProperties:
+          maxFileSizeInMegaBytes: "50"
+          isCrawlComment: "true"
+          isCrawlMyDriveAndSharedWithMe: "true"
+          isCrawlSharedDrives: "false"
+          isCrawlAcl: "true"
+          fieldForUserId: user@example.com
+          excludeUserAccounts:
+            - user1@example.com
+            - user2@example.com
+          excludeSharedDrives:
+            - SharedDrive1
+          excludeMimeTypes:
+            - application/vnd.google-apps.folder
+          includeUserAccounts:
+            - user3@example.com
+          includeSharedDrives:
+            - SharedDrive2
+          includeMimeTypes:
+            - application/pdf
+            - application/vnd.google-apps.document
+          includeTargetAudienceGroup:
+            - group1@example.com
+          inclusionFileTypePatterns:
+            - "*.pdf"
+          inclusionFileNamePatterns:
+            - "*report*"
+          exclusionFileTypePatterns:
+            - "*.tmp"
+          exclusionFileNamePatterns:
+            - "*draft*"
+          inclusionFilePathFilter:
+            - documents/
+          exclusionFilePathFilter:
+            - drafts/
+          enableDeletionProtection: "true"
+          deletionProtectionThreshold: "15"
+```

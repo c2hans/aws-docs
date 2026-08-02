@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/userguide/incident-serv-commits.html
+---
+
+End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. After June 30, 2027, you will no longer be able to access the AMS Advanced console or AMS Advanced resources. For more information, see [AMS Advanced end of support](https://docs.aws.amazon.com/managedservices/latest/userguide/SunsetPlan.html).
+
+# Incident management service commitments
+<a name="incident-serv-commits"></a>
+
+**Incident management service commitments**
+
+| Event or action | Service commitment measurement |
+| --- | --- |
+| Case 1: An event with known impact is generated. AMS opens an incident and informs you.<br />Case 2: AMS contacts you to confirm the impact of the event. You confirm the event is an incident.<br />Case 3: You notice an issue and submit an incident report. | Clock for incident response and incident resolution starts when:<br />Case 1: AMS creates an incident.<br />Case 2: You confirm the alert is an incident.<br />Case 3: You submit an incident.<br />Service commitments depend on the priority of the incident created. |
+| If you submit the incident, AMS sends a response to acknowledge it.<br />If AMS creates the incident on your behalf, a separate incident response is not sent. | Clock for incident resolution continues ticking.<br />Clock for incident response time stops when AMS sends the incident acknowledgement. Time spent waiting for inputs from you is excluded from incident resolution time calculations. For incidents that AMS creates, the initial response time is the time of the creation of the initial incident notification to you. |
+| For the resources / services in question, AMS checks the health to verify if:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/incident-serv-commits.html)<br />If an incident you submit is not correctly prioritized, AMS re-prioritizes it. If AMS changes an incident priority, a notification is sent to you along with reasoning behind the priority change. In certain cases, an issue you submitted may not qualify as an incident, depending on the cause. In those cases, AMS closes the incident and sends you a notification explaining the reason why. Irrespective of the event categorization, AMS works with you to assist as needed.<br />To understand the rules for incident categorization, see [Incident priority](what-is-incident-mgmt.md#incident-priority). | In case incident priority changes, the service commitment for the new priority is applicable; clock continues ticking. In cases when an incident is closed because it does not meet the definition of an incident, service commitments are not applicable; clock stops. |
+| AMS works on the incident to resolve it within service commitment. In certain cases, if AMS determines that unavailable stack(s) or resource(s) cannot be resolved in a timely manner, AMS will offer Infrastructure Restore as an option for resolution. Infrastructure Restore involves re-deploying existing stack(s), based on the templates of the impacted stack(s), and initiating a data restore based on the last known restore point (EBS/RDS snapshot), unless otherwise specified by you. Ephemeral data on individual EC2 instances will be lost. If you do not authorize an Infrastructure Restore as recommended by AWS, you will not be eligible for a service credit for the associated Incident Resolution Time Service Commitment.  | Clock stops when:[See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/incident-serv-commits.html) |
+| Occasionally, AMS needs clarification from, or activity by, you to keep incident resolution efforts moving forward, unless you have a pre-defined, approved action. As a result, there is communication between AMS and you in order to resolve incidents | Clock stops when: AMS is waiting for a response or action from you.<br />Clock restarts when: AMS receives the response from you or the action AMS requires of you is completed. |
+
+**Note**
+For a complete list of service commitments, download the [AMS Service Level Agreement](samples/ams_sla.zip).

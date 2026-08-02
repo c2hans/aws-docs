@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/data-exchange/latest/apireference/API_Details.html
+---
+
+# Details
+<a name="API_Details"></a>
+
+Information about the job error.
+
+## Contents
+<a name="API_Details_Contents"></a>
+
+ ** ImportAssetFromSignedUrlJobErrorDetails **   <a name="dataexchange-Type-Details-ImportAssetFromSignedUrlJobErrorDetails"></a>
+Information about the job error.
+Type: [ImportAssetFromSignedUrlJobErrorDetails](API_ImportAssetFromSignedUrlJobErrorDetails.md) object
+Required: No
+
+ ** ImportAssetsFromS3JobErrorDetails **   <a name="dataexchange-Type-Details-ImportAssetsFromS3JobErrorDetails"></a>
+Details about the job error.
+Type: Array of [AssetSourceEntry](API_AssetSourceEntry.md) objects
+Required: No
+
+## See Also
+<a name="API_Details_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/dataexchange-2017-07-25/Details)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/dataexchange-2017-07-25/Details)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/dataexchange-2017-07-25/Details)

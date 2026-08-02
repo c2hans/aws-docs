@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/wickr/latest/adminguide/security_iam_service-with-iam.html
+---
+
+This guide documents the new AWS Wickr administration console, released on March 13, 2025. For documentation on the classic version of the AWS Wickr administration console, see [Classic Administration Guide](https://docs.aws.amazon.com/wickr/latest/adminguide-classic/what-is-wickr.html).
+
+# How AWS Wickr works with IAM
+<a name="security_iam_service-with-iam"></a>
+
+Before you use IAM to manage access to Wickr, learn what IAM features are available to use with Wickr.
+
+**IAM features you can use with AWS Wickr**
+
+| IAM feature | Wickr support |
+| --- | --- |
+| [Identity-based policies](security_iam_service-with-iam-id-based-policies.md) |  Yes |
+| [Resource-based policies](security_iam_service-with-iam-resource-based-policies.md) |  No  |
+| [Policy actions](security_iam_service-with-iam-id-based-policies-actions.md) |  Yes |
+| [Policy resources](security_iam_service-with-iam-id-based-policies-resources.md) |  No  |
+| [Policy condition keys](security_iam_service-with-iam-id-based-policies-conditionkeys.md) |  No  |
+| [ACLs](security_iam_service-with-iam-acls.md) |  No  |
+| [ABAC (tags in policies)](security_iam_service-with-iam-tags.md) |  No  |
+| [Temporary credentials](#security_iam_service-with-iam-roles-tempcreds) |  No  |
+| [Principal permissions](security_iam_service-with-iam-principal-permissions.md) |  No  |
+| [Service roles](security_iam_service-with-iam-roles-service.md) |  No  |
+| [Service-linked roles](security_iam_service-with-iam-roles-service-linked.md) |  No  |
+
+To get a high-level view of how Wickr and other AWS services work with most IAM features, see [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.
+
+## Using temporary credentials with Wickr
+<a name="security_iam_service-with-iam-roles-tempcreds"></a>
+
+**Supports temporary credentials:** No
+
+Temporary credentials provide short-term access to AWS resources and are automatically created when you use federation or switch roles. AWS recommends that you dynamically generate temporary credentials instead of using long-term access keys. For more information, see [Temporary security credentials in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) and [AWS services that work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*.

@@ -1,0 +1,466 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-troubleshooting.html
+---
+
+ **Help improve this page**
+
+To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
+
+# Troubleshoot issues with Argo CD capabilities
+<a name="argocd-troubleshooting"></a>
+
+**Note**
+EKS Capabilities are fully managed and run outside your cluster. You do not have direct access to controller namespaces. You can configure controller log delivery for visibility into controller behavior. See [Access EKS Capabilities controller logs](capabilities-controller-logs.md). Troubleshooting focuses on capability health, application status, and configuration.
+
+## Capability is ACTIVE but applications are not syncing
+<a name="_capability_is_active_but_applications_are_not_syncing"></a>
+
+If your Argo CD capability shows `ACTIVE` status but applications are not syncing, check the capability health and application status.
+
+ **Check capability health**:
+
+You can view capability health and status issues in the EKS console or using the AWS CLI.
+
+ **Console**:
+
+1. Open the Amazon EKS console at https://console.aws.amazon.com/eks/home\#/clusters.
+
+1. Select your cluster name.
+
+1. Choose the **Observability** tab.
+
+1. Choose **Monitor cluster**.
+
+1. Choose the **Capabilities** tab to view health and status for all capabilities.
+
+ ** AWS CLI**:
+
+```
+# View capability status and health
+aws eks describe-capability \
+  --region {{region-code}} \
+  --cluster-name {{my-cluster}} \
+  --capability-name {{my-argocd}}
+
+# Look for issues in the health section
+```
+
+ **Common causes**:
++  **Repository not configured**: Git repository not added to Argo CD
++  **Authentication failed**: SSH key, token, or CodeCommit credentials invalid
++  **Application not created**: No Application resources exist in the cluster
++  **Sync policy**: Manual sync required (auto-sync not enabled)
++  **IAM permissions**: Missing permissions for CodeCommit or Secrets Manager
+
+ **Check application status**:
+
+```
+# List applications
+kubectl get application -n argocd
+
+# View sync status
+kubectl get application {{my-app}} -n argocd -o jsonpath='{.status.sync.status}'
+
+# View application health
+kubectl get application {{my-app}} -n argocd -o jsonpath='{.status.health}'
+```
+
+ **Check application conditions**:
+
+```
+# Describe application to see detailed status
+kubectl describe application {{my-app}} -n argocd
+
+# View application health
+kubectl get application {{my-app}} -n argocd -o jsonpath='{.status.health}'
+```
+
+## Applications stuck in "Progressing" state
+<a name="_applications_stuck_in_progressing_state"></a>
+
+If an application shows `Progressing` but never reaches `Healthy`, check the application’s resource status and events.
+
+ **Check resource health**:
+
+```
+# View application resources
+kubectl get application {{my-app}} -n argocd -o jsonpath='{.status.resources}'
+
+# Check for unhealthy resources
+kubectl describe application {{my-app}} -n argocd | grep -A 10 "Health Status"
+```
+
+ **Common causes**:
++  **Deployment not ready**: Pods failing to start or readiness probes failing
++  **Resource dependencies**: Resources waiting for other resources to be ready
++  **Image pull errors**: Container images not accessible
++  **Insufficient resources**: Cluster lacks CPU or memory for pods
+
+ **Verify target cluster configuration** (for multi-cluster setups):
+
+```
+# List registered clusters
+kubectl get secret -n argocd -l argocd.argoproj.io/secret-type=cluster
+
+# View cluster secret details
+kubectl get secret {{cluster-secret-name}} -n argocd -o yaml
+```
+
+## Repository authentication failures
+<a name="_repository_authentication_failures"></a>
+
+If Argo CD cannot access your Git repositories, verify the authentication configuration.
+
+ **For CodeCommit repositories**:
+
+Verify the IAM Capability Role has CodeCommit permissions:
+
+```
+# View IAM policies
+aws iam list-attached-role-policies --role-name {{my-argocd-capability-role}}
+aws iam list-role-policies --role-name {{my-argocd-capability-role}}
+
+# Get specific policy details
+aws iam get-role-policy --role-name {{my-argocd-capability-role}} --policy-name {{policy-name}}
+```
+
+The role needs `codecommit:GitPull` permission for the repositories.
+
+ **For private Git repositories**:
+
+Verify repository credentials are correctly configured:
+
+```
+# Check repository secret exists
+kubectl get secret -n argocd {{repo-secret-name}} -o yaml
+```
+
+Ensure the secret contains the correct authentication credentials (SSH key, token, or username/password).
+
+ **For repositories using Secrets Manager**:
+
+```
+# Verify IAM Capability Role has Secrets Manager permissions
+aws iam list-attached-role-policies --role-name {{my-argocd-capability-role}}
+
+# Test secret retrieval
+aws secretsmanager get-secret-value --secret-id {{arn:aws:secretsmanager:region-code:111122223333:secret:my-secret}}
+```
+
+## Multi-cluster deployment issues
+<a name="_multi_cluster_deployment_issues"></a>
+
+If applications are not deploying to remote clusters, verify the cluster registration and access configuration.
+
+ **Check cluster registration**:
+
+```
+# List registered clusters
+kubectl get secret -n argocd -l argocd.argoproj.io/secret-type=cluster
+
+# Verify cluster secret format
+kubectl get secret {{CLUSTER_SECRET_NAME}} -n argocd -o yaml
+```
+
+Ensure the `server` field contains the EKS cluster ARN, not the Kubernetes API URL.
+
+ **Verify target cluster Access Entry**:
+
+On the target cluster, check that the Argo CD Capability Role has an Access Entry:
+
+```
+# List access entries (run on target cluster or use AWS CLI)
+aws eks list-access-entries --cluster-name {{target-cluster}}
+
+# Describe specific access entry
+aws eks describe-access-entry \
+  --cluster-name {{target-cluster}} \
+  --principal-arn {{arn:aws:iam::111122223333:role/my-argocd-capability-role}}
+```
+
+ **Check IAM permissions for cross-account**:
+
+For cross-account deployments, verify the Argo CD Capability Role has an Access Entry on the target cluster. The managed capability uses EKS Access Entries for cross-account access, not IAM role assumption.
+
+For more on multi-cluster configuration, see [Register target clusters](argocd-register-clusters.md).
+
+## Increased application sync time
+<a name="_increased_application_sync_time"></a>
+
+If your applications are syncing but taking longer than expected, use the following diagnostic steps to identify the cause.
+
+### Check last sync time
+<a name="_check_last_sync_time"></a>
+
+Confirm the delay by reviewing when applications last synced:
+
+```
+# View last sync time for all applications
+kubectl get application -n argocd -o jsonpath='{range .items[*]}{.metadata.name}{"\t"}{.status.operationState.finishedAt}{"\n"}{end}'
+
+# View last sync time for a specific application
+kubectl get application {{my-app}} -n argocd -o jsonpath='{.status.operationState.finishedAt}'
+```
+
+### Check application conditions
+<a name="_check_application_conditions"></a>
+
+Review application conditions for reconciliation queue delays:
+
+```
+# Check conditions on an application
+kubectl get application {{my-app}} -n argocd -o jsonpath='{.status.conditions}'
+```
+
+### Check targetRevision configuration
+<a name="_check_targetrevision_configuration"></a>
+
+Applications using `targetRevision: HEAD` invalidate the manifest cache on every commit to the repository, which slows sync times:
+
+```
+# List applications using HEAD as targetRevision
+kubectl get application -n argocd -o jsonpath='{range .items[?(@.spec.source.targetRevision=="HEAD")]}{.metadata.name}{"\n"}{end}'
+```
+
+### Common causes
+<a name="_common_causes"></a>
++  **No webhook configuration**: Without webhooks, Argo CD polls repositories at the default interval of 6 minutes. This delays detection of new commits.
++  **targetRevision set to HEAD**: Every commit to the repository invalidates the manifest cache. Argo CD then regenerates manifests on each reconciliation.
++  **Large or complex Git repositories**: Monorepos or complex Helm charts cause slow manifest generation because of the volume of files and templates to process.
++  **High number of Kubernetes resources in a single application**: Applications managing many resources cause slow cluster cache sync because Argo CD must track the state of each resource.
+
+### Mitigations
+<a name="_mitigations"></a>
++  **Configure Git webhooks**: Webhooks notify Argo CD immediately when changes are pushed, bypassing the default polling interval. For configuration steps, see [Argo CD considerations](argocd-considerations.md).
++  **Use specific branch names or commit SHAs**: Set `targetRevision` to a branch name or commit SHA instead of `HEAD` to preserve the manifest cache between syncs.
++  **Split large monorepos**: Divide large repositories into smaller, focused repositories to reduce manifest generation time.
++  **Reduce resources per application**: Split applications with many Kubernetes resources into multiple smaller applications to reduce cluster cache sync time.
++  **Enable controller log delivery**: Controller logs provide visibility into reconciliation behavior and queue processing. For configuration steps, see [Access EKS Capabilities controller logs](capabilities-controller-logs.md).
+
+## Applications repeatedly syncing or stuck out of sync
+<a name="_applications_repeatedly_syncing_or_stuck_out_of_sync"></a>
+
+If your application syncs and then immediately goes `OutOfSync`, or if it stays stuck in a sync loop, the cause is usually drift between what Git defines and what exists in the cluster. Start with baseline diagnostics.
+
+### Gather diagnostic information
+<a name="_gather_diagnostic_information"></a>
+
+```
+# View current sync and health status
+argocd app get {{my-app}}
+
+# Show exact fields that differ between Git and live state
+argocd app diff {{my-app}}
+
+# Check whether the app has ever reached a stable state
+argocd app history {{my-app}}
+```
+
+The `argocd app diff` command is the most useful starting point. It shows you exactly which fields cause the application to appear out of sync.
+
+### Self-managed certificates cause drift
+<a name="_self_managed_certificates_cause_drift"></a>
+
+Controllers such as cert-manager, OPA Gatekeeper, and KEDA generate certificates at runtime. These runtime values are not in Git, so Argo CD detects drift on every reconciliation.
+
+The symptoms are:
++ Application syncs, then immediately shows `OutOfSync`
++ The diff shows changes on a webhook `caBundle` field or a TLS Secret `data` field
+
+To resolve this, add `ignoreDifferences` for the affected fields and enable `RespectIgnoreDifferences` in your sync options:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+spec:
+  ignoreDifferences:
+    - group: admissionregistration.k8s.io
+      kind: ValidatingWebhookConfiguration
+      jsonPointers:
+        - /webhooks/0/clientConfig/caBundle
+    - group: ""
+      kind: Secret
+      jsonPointers:
+        - /data/tls.crt
+        - /data/tls.key
+  syncPolicy:
+    syncOptions:
+      - RespectIgnoreDifferences=true
+```
+
+### Self-heal interrupts slow-starting workloads
+<a name="_self_heal_interrupts_slow_starting_workloads"></a>
+
+When `selfHeal` is enabled, Argo CD re-syncs the application when it detects drift. If your workload takes 30–60 seconds to start, the self-heal triggers before the workload becomes `Healthy`. With `prune` enabled, this might tear down partially-started resources.
+
+To resolve this, first fix the underlying drift (see the certificate scenario). If drift is not the cause, consider disabling self-heal for workloads that you manage exclusively through Git:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+spec:
+  syncPolicy:
+    automated:
+      selfHeal: false
+      prune: false
+```
+
+**Note**
+Self-heal backoff timing is an instance-level controller setting. If you need to adjust self-heal timing rather than disabling it, open an AWS Support case.
+
+### ApplicationSet or resource ownership collisions
+<a name="_applicationset_or_resource_ownership_collisions"></a>
+
+If two Applications or ApplicationSets manage the same Kubernetes resource, Argo CD shows a `SharedResourceWarning`. The resource never reaches a stable state. This commonly happens when a shared resource name is not scoped per environment or cluster.
+
+To resolve this:
++ Make the contended resource unique per owner. Add an environment or cluster suffix to the resource name.
++ When renaming an ApplicationSet, set `preserveResourcesOnDeletion: true` first to avoid destructive teardown of existing resources:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: my-appset
+spec:
+  syncPolicy:
+    preserveResourcesOnDeletion: true
+```
+
+### Stuck deletion from resource finalizers
+<a name="_stuck_deletion_from_resource_finalizers"></a>
+
+If an application is stuck in `Terminating` state or shows "N objects remaining for deletion", the `resources-finalizer.argocd.argoproj.io` finalizer blocks removal until all managed resources delete. A managed resource with its own unprocessable finalizer blocks the deletion indefinitely.
+
+To confirm, list resources that have a deletion timestamp but have not been removed:
+
+```
+kubectl get all -n {{my-namespace}} -o json | \
+  jq '.items[] | select(.metadata.deletionTimestamp != null) | {name: .metadata.name, kind: .kind, finalizers: .metadata.finalizers}'
+```
+
+To resolve this:
++ Make sure the controller that owns the blocking finalizer is healthy and running.
++ If the owning controller is healthy but the finalizer is not being processed, remove the blocking finalizer from the stuck resource:
+
+```
+kubectl patch {{resource-kind}}
+            {{resource-name}} -n {{my-namespace}} \
+  --type json -p '[{"op": "remove", "path": "/metadata/finalizers/0"}]'
+```
+
+### Failed sync does not auto-retry to the same revision
+<a name="_failed_sync_does_not_auto_retry_to_the_same_revision"></a>
+
+After a sync to a specific revision fails, Argo CD does not auto-retry the same revision. This commonly happens because of a manifest defect such as a `ComparisonError` from a duplicate environment variable key.
+
+Confirm by checking the application status:
+
+```
+argocd app get {{my-app}}
+# Look for: Operation: Sync  Phase: Failed  Revision: <sha>
+```
+
+To resolve this, fix the manifest defect in your Git repository and push a new commit. Alternatively, trigger a manual sync:
+
+```
+argocd app sync {{my-app}}
+```
+
+### Monorepo commit churn triggers broad regeneration
+<a name="_monorepo_commit_churn_triggers_broad_regeneration"></a>
+
+If many applications track `HEAD` on the same repository, any commit to that repository changes `HEAD` for all applications. This triggers manifest regeneration for every application, even those whose files did not change. For more information about `targetRevision` and caching, see the "Increased application sync time" section on this page.
+
+To scope regeneration to only the files each application uses, add the `manifest-generate-paths` annotation:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  annotations:
+    argocd.argoproj.io/manifest-generate-paths: /apps/my-app
+spec:
+  source:
+    repoURL: https://github.com/my-org/my-monorepo.git
+    targetRevision: HEAD
+    path: apps/my-app
+```
+
+With this annotation, Argo CD only regenerates manifests when files under the specified path change. For shared libraries used across applications, you can specify multiple paths separated by semicolons (`;`).
+
+Where possible, pin `targetRevision` to a branch name or tag instead of `HEAD`.
+
+### Kubernetes defaulting and mutating webhooks cause phantom diffs
+<a name="_kubernetes_defaulting_and_mutating_webhooks_cause_phantom_diffs"></a>
+
+If your application shows `OutOfSync` immediately after a sync, check the diff for fields you never set (such as `terminationGracePeriodSeconds`, `dnsPolicy`, or `/spec/replicas`). The Kubernetes API server or a mutating webhook added those fields at apply time.
+
+To resolve this for fields managed by another controller (such as `/spec/replicas` when an HPA manages scaling), add `ignoreDifferences`:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+spec:
+  ignoreDifferences:
+    - group: apps
+      kind: Deployment
+      jsonPointers:
+        - /spec/replicas
+  syncPolicy:
+    syncOptions:
+      - RespectIgnoreDifferences=true
+```
+
+For fields added by Kubernetes defaulting or mutating webhooks, you can enable server-side diff on the application:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  annotations:
+    argocd.argoproj.io/compare-options: ServerSideDiff=true,IncludeMutationWebhook=true
+```
+
+Server-side diff performs a dry-run apply per resource, which increases load on the Kubernetes API server. Test this on a small number of applications before you enable it broadly.
+
+### High-churn controller-owned resources
+<a name="_high_churn_controller_owned_resources"></a>
+
+Some controllers generate large numbers of short-lived or frequently-updated resources. Examples include Karpenter node objects, Cilium identity and endpoint objects, and Kyverno policy reports. If these resources generate a high volume of watch events and cause sync churn, you can reduce the load by excluding those resource kinds or filtering watch events. These changes require instance-level controller configuration.
+
+On the managed capability, open an AWS Support case to request resource exclusions or watch-event filtering for these resource kinds.
+
+### Best practices
+<a name="_best_practices"></a>
++  **Use application diff first**: Run `argocd app diff` as the first diagnostic step for any repeated-sync issue. It shows you the exact cause of drift.
++  **Prefer narrow ignoreDifferences**: Target specific fields on specific resource kinds. Avoid broad ignore rules that can mask real configuration drift.
++  **Pair ignoreDifferences with RespectIgnoreDifferences**: Always add the `RespectIgnoreDifferences=true` sync option. Without it, syncs still overwrite the ignored fields.
++  **Keep resource names unique**: Scope resource names per environment and cluster to avoid ownership collisions between Applications or ApplicationSets.
++  **Be cautious with prune and selfHeal**: Do not enable both on workloads that take a long time to start. The self-heal can tear down resources before they become healthy.
++  **Pin targetRevision and scope manifest paths**: For applications in large shared repositories, use a branch or tag instead of `HEAD` and add the `manifest-generate-paths` annotation.
+
+### When to contact AWS Support
+<a name="when_to_contact_shared_aws_support"></a>
+
+Open an AWS Support case in the following situations:
++ Instance-level controller tuning seems necessary (processor counts, self-heal timing, or resource exclusions).
++ Repo-server or controller capacity seems insufficient for your application count.
++ Workload configuration, drift, ownership, or finalizers do not explain the behavior.
+
+Include the output of `argocd app get` and `argocd app diff` for affected applications in your support case.
+
+## Next steps
+<a name="_next_steps"></a>
++  [Argo CD considerations](argocd-considerations.md) - Argo CD considerations and best practices
++  [Working with Argo CD](working-with-argocd.md) - Create and manage Argo CD Applications
++  [Register target clusters](argocd-register-clusters.md) - Configure multi-cluster deployments
++  [Troubleshooting EKS Capabilities](capabilities-troubleshooting.md) - General capability troubleshooting guidance

@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/vm-import/latest/userguide/how-vm-import-export-works.html
+---
+
+# How VM Import/Export works
+<a name="how-vm-import-export-works"></a>
+
+To use your VM in Amazon EC2, you must first export it from the virtualization environment, and then import it into Amazon EC2 as either an Amazon Machine Image (AMI) or an instance. You must decide whether you will import your VMs as AMIs or instances.
+
+**Topics**
++ [Compare image import and instance import processes in VM Import/Export](vmimport-differences.md)
++ [Image import overview](image-import.md)
++ [Instance import overview](instance-import.md)

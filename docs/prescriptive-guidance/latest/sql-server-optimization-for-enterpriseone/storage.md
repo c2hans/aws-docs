@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/storage.html
+---
+
+# Storage layout
+<a name="storage"></a>
+
+When you use SQL Server database files with EnterpriseOne, they exhibit characteristics that support various disk types depending on their function.
++ `tempdb `files should be placed on NVMe instance storage. When RCSI is enabled, a substantial workload is created in the `tempdb `database to store record set snapshots. These snapshots are ephemeral and do not require the durability of traditional elastic block storage. When you use NVMe instance storage, the database will receive very low latency I/O, high IOPS, and high throughput at a low price point.
++ MDF and NDF data files should be placed on one or more [General Purpose SSD (gp3) volumes](https://aws.amazon.com/ebs/general-purpose/). These files tend to be read IOPS heavy but aren't very latency sensitive when they're used with a large buffer cache. You can use multiple MDF and NDF file for each database to stripe your database across multiple disks to achieve the desired performance level.
++ LDF files should be placed on a single `gp3`, or** **[Provisioned IOPS SSD](https://aws.amazon.com/ebs/provisioned-iops/)** **`io2` or `io2` Block Express volume based on requirements. Many JD Edwards processes perform operations that create chatty write I/O, which is latency sensitive. For many users, `gp3` latency is sufficient to meet requirements. However, if you have a runtime-sensitive process, `io2` or `io2` Block Express might be required to meet your performance requirements for the workload. You might also consider enabling delayed durability in the SQL Server database to mitigate the performance impact of chatty write I/O. When delayed durability is enabled, you can use gp3 storage without being concerned about write I/O latency.
++ Backup files should be placed on high-throughput, low-cost storage such as [Throughput Optimized HDD](https://aws.amazon.com/ebs/throughput-optimized/) (`st1`) or in an** **[Amazon Simple Storage Service (Amazon S3](https://aws.amazon.com/s3/)) bucket. Additionally, because EnterpriseOne data tends to be repetitive and sparse, we recommend that you use SQL Server backup compression for backups you make through the database.
++ Buffer pool extensions (BPEs) can provide value when you use an instance with substantial NVMe instance storage. However, when you use X2iedn instances, the benefit of BPE is substantially mitigated by the large amount of available memory, and it's better to use the available NVMe storage for tempdb.

@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/APIReference/API_AggregateConformancePackComplianceSummaryFilters.html
+---
+
+# AggregateConformancePackComplianceSummaryFilters
+<a name="API_AggregateConformancePackComplianceSummaryFilters"></a>
+
+Filters the results based on account ID and region.
+
+## Contents
+<a name="API_AggregateConformancePackComplianceSummaryFilters_Contents"></a>
+
+ ** AccountId **   <a name="config-Type-AggregateConformancePackComplianceSummaryFilters-AccountId"></a>
+The 12-digit AWS account ID of the source account.
+Type: String
+Length Constraints: Fixed length of 12.
+Pattern: `\d{12}`
+Required: No
+
+ ** AwsRegion **   <a name="config-Type-AggregateConformancePackComplianceSummaryFilters-AwsRegion"></a>
+The source AWS Region from where the data is aggregated.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Required: No
+
+## See Also
+<a name="API_AggregateConformancePackComplianceSummaryFilters_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/config-2014-11-12/AggregateConformancePackComplianceSummaryFilters)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/config-2014-11-12/AggregateConformancePackComplianceSummaryFilters)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/config-2014-11-12/AggregateConformancePackComplianceSummaryFilters)

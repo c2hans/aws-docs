@@ -1,0 +1,98 @@
+---
+source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-operations-bulk-delete.html
+---
+
+# Deleting Resource Types with `$bulk-delete`
+<a name="reference-fhir-operations-bulk-delete"></a>
+
+AWS HealthLake supports the `$bulk-delete` operation, enabling deletion of all resources of a specific type within a datastore. This operation is particularly useful when you need to:
++ Perform seasonal auditing and clean-up
++ Manage data lifecycle at scale
++ Remove specific resource types
++ Comply with data retention policies
+
+## Usage
+<a name="bulk-delete-usage"></a>
+
+The `$bulk-delete` operation can be invoked using POST methods:
+
+```
+POST [base]/[ResourceType]/$bulk-delete?isHardDelete=false&deleteAuditEvent=true
+```
+
+## Parameters
+<a name="bulk-delete-parameters"></a>
+
+| Parameter | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
+| isHardDelete | boolean | No | false | When true, permanently removes resources from storage |
+| deleteAuditEvent | boolean | No | true | When true, deletes associated audit events |
+| \_since | string | No | Datastore creation time | When entered, selects the starting cutoff time to find resources based on their lastModified time. Cannot be used with start or end |
+| start | string | No | Datastore creation time | When entered, selects the cutoff time to find resources based on their lastModified time. Can be used with end |
+| end | string | No | Job submission time | When entered, selects the ending cutoff time to find resources based on their lastModified time |
+
+## Examples
+<a name="bulk-delete-examples"></a>
+
+**Example Request**
+
+```
+POST [base]/Observation/$bulk-delete?isHardDelete=false
+```
+
+**Example Response**
+
+```
+{
+      "jobId": "jobId",
+      "jobStatus": "SUBMITTED"
+    }
+```
+
+## Job Status
+<a name="bulk-delete-job-status"></a>
+
+To check the status of a bulk delete job:
+
+```
+GET [base]/$bulk-delete/[jobId]
+```
+
+The operation returns job status information:
+
+```
+{
+      "datastoreId": "datastoreId",
+      "jobId": "jobId",
+      "status": "COMPLETED",
+      "submittedTime": "2025-10-09T15:09:51.336Z"
+    }
+```
+
+## Behavior
+<a name="bulk-delete-behavior"></a>
+
+The `$bulk-delete` operation:
+
+1. Processes asynchronously to handle large volumes of resources
+
+1. Maintains ACID transactions for data integrity
+
+1. Provides job status tracking with resource deletion counts
+
+1. Supports both soft and hard deletion modes
+
+1. Includes comprehensive audit logging of deletion activities
+
+1. Allows for selective deletion of historical versions and audit events
+
+## Audit Logging
+<a name="bulk-delete-audit-logging"></a>
+
+The `$bulk-delete` operation logs as StartFHIRBulkDeleteJob and DescribeFHIRBulkDeleteJob with detailed operation information.
+
+## Limitations
+<a name="bulk-delete-limitations"></a>
++ When `isHardDelete` is set to true, hard-deleted resources will not appear in search results or `_history` queries.
++ Resources being deleted through this operation may be temporarily inaccessible during processing
++ Storage metering is adjusted on historical versions only - deleteVersionHistory=false will not adjust datastore storage

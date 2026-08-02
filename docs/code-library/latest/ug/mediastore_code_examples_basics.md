@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/mediastore_code_examples_basics.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Basic examples for MediaStore using AWS SDKs
+<a name="mediastore_code_examples_basics"></a>
+
+The following code examples show how to use the basics of AWS Elemental MediaStore with AWS SDKs.
+
+**Contents**
++ [Actions](mediastore_code_examples_actions.md)
+  + [`CreateContainer`](mediastore_example_mediastore_CreateContainer_section.md)
+  + [`DeleteContainer`](mediastore_example_mediastore_DeleteContainer_section.md)
+  + [`DeleteObject`](mediastore_example_mediastore_DeleteObject_section.md)
+  + [`DescribeContainer`](mediastore_example_mediastore_DescribeContainer_section.md)
+  + [`GetObject`](mediastore_example_mediastore_GetObject_section.md)
+  + [`ListContainers`](mediastore_example_mediastore_ListContainers_section.md)
+  + [`PutObject`](mediastore_example_mediastore_PutObject_section.md)

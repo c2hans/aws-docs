@@ -1,0 +1,158 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/transcribe_example_transcribe_ListVocabularies_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListVocabularies` with an AWS SDK or CLI
+<a name="transcribe_example_transcribe_ListVocabularies_section"></a>
+
+The following code examples show how to use `ListVocabularies`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Create and refine a custom vocabulary](transcribe_example_transcribe_Scenario_CustomVocabulary_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Transcribe#code-examples).
+
+```
+    /// <summary>
+    /// List custom vocabularies for the current account. Optionally specify a name
+    /// filter and a specific state to filter the vocabularies list.
+    /// </summary>
+    /// <param name="nameContains">Optional string the vocabulary name must contain.</param>
+    /// <param name="stateEquals">Optional state of the vocabulary.</param>
+    /// <returns>List of information about the vocabularies.</returns>
+    public async Task<List<VocabularyInfo>> ListCustomVocabularies(string? nameContains = null,
+        VocabularyState? stateEquals = null)
+    {
+        var response = await _amazonTranscribeService.ListVocabulariesAsync(
+            new ListVocabulariesRequest()
+            {
+                NameContains = nameContains,
+                StateEquals = stateEquals
+            });
+        return response.Vocabularies;
+    }
+```
++  For API details, see [ListVocabularies](https://docs.aws.amazon.com/goto/DotNetSDKV3/transcribe-2017-10-26/ListVocabularies) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list your custom vocabularies**
+The following `list-vocabularies` example lists the custom vocabularies associated with your AWS account and Region.
+
+```
+aws transcribe list-vocabularies
+```
+Output:
+
+```
+{
+    "NextToken": "NextToken",
+    "Vocabularies": [
+        {
+            "VocabularyName": "ards-test-1",
+            "LanguageCode": "language-code",
+            "LastModifiedTime": "2020-04-27T22:00:27.330000+00:00",
+            "VocabularyState": "READY"
+        },
+        {
+            "VocabularyName": "sample-test",
+            "LanguageCode": "language-code",
+            "LastModifiedTime": "2020-04-24T23:04:11.044000+00:00",
+            "VocabularyState": "READY"
+        },
+        {
+            "VocabularyName": "CRLF-to-LF-test-3-1",
+            "LanguageCode": "language-code",
+            "LastModifiedTime": "2020-04-24T22:12:22.277000+00:00",
+            "VocabularyState": "READY"
+        },
+        {
+            "VocabularyName": "CRLF-to-LF-test-2",
+            "LanguageCode": "language-code",
+            "LastModifiedTime": "2020-04-24T21:53:50.455000+00:00",
+            "VocabularyState": "READY"
+        },
+        {
+            "VocabularyName": "CRLF-to-LF-1-1",
+            "LanguageCode": "language-code",
+            "LastModifiedTime": "2020-04-24T21:39:33.356000+00:00",
+            "VocabularyState": "READY"
+        }
+    ]
+}
+```
+For more information, see [Custom Vocabularies](https://docs.aws.amazon.com/transcribe/latest/dg/how-vocabulary.html) in the *Amazon Transcribe Developer Guide*.
++  For API details, see [ListVocabularies](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/transcribe/list-vocabularies.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/transcribe#code-examples).
+
+```
+def list_vocabularies(vocabulary_filter, transcribe_client):
+    """
+    Lists the custom vocabularies created for this AWS account.
+
+    :param vocabulary_filter: The returned vocabularies must contain this string in
+                              their names.
+    :param transcribe_client: The Boto3 Transcribe client.
+    :return: The list of retrieved vocabularies.
+    """
+    try:
+        response = transcribe_client.list_vocabularies(NameContains=vocabulary_filter)
+        vocabs = response["Vocabularies"]
+        next_token = response.get("NextToken")
+        while next_token is not None:
+            response = transcribe_client.list_vocabularies(
+                NameContains=vocabulary_filter, NextToken=next_token
+            )
+            vocabs += response["Vocabularies"]
+            next_token = response.get("NextToken")
+        logger.info(
+            "Got %s vocabularies with filter %s.", len(vocabs), vocabulary_filter
+        )
+    except ClientError:
+        logger.exception(
+            "Couldn't list vocabularies with filter %s.", vocabulary_filter
+        )
+        raise
+    else:
+        return vocabs
+```
++  For API details, see [ListVocabularies](https://docs.aws.amazon.com/goto/boto3/transcribe-2017-10-26/ListVocabularies) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/tnb#code-examples).
+
+```
+    TRY.
+        IF iv_vocab_filter IS NOT INITIAL.
+          oo_result = lo_tnb->listvocabularies( iv_namecontains = iv_vocab_filter ).
+        ELSE.
+          oo_result = lo_tnb->listvocabularies( ).
+        ENDIF.
+        MESSAGE 'Retrieved vocabularies list.' TYPE 'I'.
+      CATCH /aws1/cx_tnbbadrequestex INTO DATA(lo_bad_request_ex).
+        MESSAGE lo_bad_request_ex TYPE 'I'.
+        RAISE EXCEPTION lo_bad_request_ex.
+      CATCH /aws1/cx_tnbinternalfailureex INTO DATA(lo_internal_ex).
+        MESSAGE lo_internal_ex TYPE 'I'.
+        RAISE EXCEPTION lo_internal_ex.
+    ENDTRY.
+```
++  For API details, see [ListVocabularies](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

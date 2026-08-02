@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/datazone/latest/APIReference/API_AssetPermission.html
+---
+
+# AssetPermission
+<a name="API_AssetPermission"></a>
+
+The asset permissions.
+
+## Contents
+<a name="API_AssetPermission_Contents"></a>
+
+ ** assetId **   <a name="datazone-Type-AssetPermission-assetId"></a>
+The asset ID as part of the asset permissions.
+Type: String
+Pattern: `[a-zA-Z0-9_-]{1,36}`
+Required: Yes
+
+ ** permissions **   <a name="datazone-Type-AssetPermission-permissions"></a>
+The details as part of the asset permissions.
+Type: [Permissions](API_Permissions.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: Yes
+
+## See Also
+<a name="API_AssetPermission_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/datazone-2018-05-10/AssetPermission)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/datazone-2018-05-10/AssetPermission)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/datazone-2018-05-10/AssetPermission)

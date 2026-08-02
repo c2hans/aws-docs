@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/outputs-list-codecs.html
+---
+
+# Codecs supported in MediaLive outputs
+<a name="outputs-list-codecs"></a>
+
+MediaLive supports the following video codecs in outputs.
++ AV1
++ H.264 (AVC)
++ H.265 (HEVC)
++ MPEG-2
+
+MediaLive supports the following audio codecs in outputs.
++ AAC
++ Dolby Digital (AC3)
++ Dolby Digital Plus (EAC3)
++ Dolby Digital Plus with Atmos
++ MPEG-1 Layer II (MP2)

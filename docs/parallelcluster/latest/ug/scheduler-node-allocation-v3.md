@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/scheduler-node-allocation-v3.html
+---
+
+# Cluster scaling for dynamic nodes
+<a name="scheduler-node-allocation-v3"></a>
+
+ParallelCluster supports Slurm's methods to dynamically scale clusters by using Slurm's power saver plugin. For more information, see the [Cloud Scheduling Guide](https://slurm.schedmd.com/elastic_computing.html) and the [Slurm Power Saving Guide](https://slurm.schedmd.com/power_save.html) in the Slurm documentation. The following topics describe the Slurm strategies for each version.
+
+**Topics**
++ [Slurm dynamic node allocation strategies in version 3.8.0](scheduler-node-allocation-v3-3.8.0.md)
++ [Slurm dynamic node allocation strategies in version 3.7.x](scheduler-dynamic-node-allocation-v3-3.7.x.md)
++ [Slurm dynamic node allocation strategies in version 3.6.x and previous](scheduler-dynamic-node-allocation-v3-3.6.x.md)

@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_ConversationState.html
+---
+
+# ConversationState
+<a name="API_amazon-q-connect_ConversationState"></a>
+
+The conversation state associated to a message.
+
+## Contents
+<a name="API_amazon-q-connect_ConversationState_Contents"></a>
+
+ ** status **   <a name="connect-Type-amazon-q-connect_ConversationState-status"></a>
+The status of the conversation state.
+Type: String
+Valid Values: `CLOSED | READY | PROCESSING`
+Required: Yes
+
+ ** reason **   <a name="connect-Type-amazon-q-connect_ConversationState-reason"></a>
+The reason of the conversation state.
+Type: String
+Valid Values: `SUCCESS | FAILED | REJECTED`
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_ConversationState_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/ConversationState)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/ConversationState)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/ConversationState)

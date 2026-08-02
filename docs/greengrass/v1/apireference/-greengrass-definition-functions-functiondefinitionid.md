@@ -1,0 +1,328 @@
+---
+source_url: https://docs.aws.amazon.com/greengrass/v1/apireference/-greengrass-definition-functions-functiondefinitionid.html
+---
+
+End of support notice: On October 7th, 2026, AWS will discontinue support for AWS IoT Greengrass Version 1. After October 7th, 2026, you will no longer be able to access the AWS IoT Greengrass V1 resources. For more information, please visit [Migrate from AWS IoT Greengrass Version 1](https://docs.aws.amazon.com/greengrass/v2/developerguide/migrate-from-v1.html).
+
+# /greengrass/definition/functions/FunctionDefinitionId
+<a name="-greengrass-definition-functions-functiondefinitionid"></a>
+
+## GET
+<a name="-greengrass-definition-functions-functiondefinitionid-get"></a>
+
+ `GET /greengrass/definition/functions/{{FunctionDefinitionId}}`
+
+Operation ID: [GetFunctionDefinition](getfunctiondefinition-get.md)
+
+Retrieves information about a Lambda function definition, including its creation time and latest version.
+
+Produces: application/json
+
+### Path Parameters
+<a name="-greengrass-definition-functions-functiondefinitionid-get-path"></a>
+
+[**FunctionDefinitionId**](parameters-functiondefinitionidparam.md)
+The ID of the function definition.
+where used: path; required: true
+type: string
+
+### CLI
+<a name="-greengrass-definition-functions-functiondefinitionid-get-cli"></a>
+
+```
+aws greengrass get-function-definition \
+  --function-definition-id <value>  \
+  [--cli-input-json <value>] \
+  [--generate-cli-skeleton]
+```
+
+cli-input-json format:
+
+```
+{
+"FunctionDefinitionId": "string"
+}
+```
+
+### Responses
+<a name="-greengrass-definition-functions-functiondefinitionid-get-responses"></a>
+
+**200** (GetFunctionDefinitionResponse)
+Success.
+ [ DefinitionInformation](definitions-definitioninformation.md)
+
+```
+{
+"Name": "string",
+"Id": "string",
+"Arn": "string",
+"tags": {
+  "additionalProperty0": "string",
+  "additionalProperty1": "string",
+  "additionalProperty2": "string"
+},
+"LastUpdatedTimestamp": "string",
+"CreationTimestamp": "string",
+"LatestVersion": "string",
+"LatestVersionArn": "string"
+}
+```
+DefinitionInformation
+Information about a definition.
+type: object
+Name
+The name of the definition.
+type: string
+Id
+The ID of the definition.
+type: string
+Arn
+The ARN of the definition.
+type: string
+tags
+The resource tags.
+type: object
+additionalProperties: The key-value pair for the resource tag. Type: string
+LastUpdatedTimestamp
+The time, in milliseconds since the epoch, when the definition was last updated.
+type: string
+CreationTimestamp
+The time, in milliseconds since the epoch, when the definition was created.
+type: string
+LatestVersion
+The ID of the latest version associated with the definition.
+type: string
+LatestVersionArn
+The ARN of the latest version associated with the definition.
+type: string
+
+**400**
+Invalid request.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string
+
+## DELETE
+<a name="-greengrass-definition-functions-functiondefinitionid-delete"></a>
+
+ `DELETE /greengrass/definition/functions/{{FunctionDefinitionId}}`
+
+Operation ID: [DeleteFunctionDefinition](deletefunctiondefinition-delete.md)
+
+Deletes a Lambda function definition.
+
+Produces: application/json
+
+### Path Parameters
+<a name="-greengrass-definition-functions-functiondefinitionid-delete-path"></a>
+
+[**FunctionDefinitionId**](parameters-functiondefinitionidparam.md)
+The ID of the function definition.
+where used: path; required: true
+type: string
+
+### CLI
+<a name="-greengrass-definition-functions-functiondefinitionid-delete-cli"></a>
+
+```
+aws greengrass delete-function-definition \
+  --function-definition-id <value>  \
+  [--cli-input-json <value>] \
+  [--generate-cli-skeleton]
+```
+
+cli-input-json format:
+
+```
+{
+"FunctionDefinitionId": "string"
+}
+```
+
+### Responses
+<a name="-greengrass-definition-functions-functiondefinitionid-delete-responses"></a>
+
+**200**
+Success.
+ [ Empty](definitions-empty.md)
+
+```
+{
+}
+```
+Empty Schema
+Empty
+type: object
+
+**400**
+Invalid request.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string
+
+## PUT
+<a name="-greengrass-definition-functions-functiondefinitionid-put"></a>
+
+ `PUT /greengrass/definition/functions/{{FunctionDefinitionId}}`
+
+Operation ID: [UpdateFunctionDefinition](updatefunctiondefinition-put.md)
+
+Updates the name of a function definition. To update the list of available functions, use `CreateFunctionDefinitionVersion`.
+
+Produces: application/json
+
+### Body Parameters
+<a name="-greengrass-definition-functions-functiondefinitionid-put-body"></a>
+
+[**UpdateDefinitionRequestBody**](parameters-updatedefinitionrequestbody.md)
+
+where used: body; required: true
+
+```
+{
+"Name": "string"
+}
+```
+Name
+The name of the definition.
+required: true
+type: string
+
+### Path Parameters
+<a name="-greengrass-definition-functions-functiondefinitionid-put-path"></a>
+
+[**FunctionDefinitionId**](parameters-functiondefinitionidparam.md)
+The ID of the function definition.
+where used: path; required: true
+type: string
+
+### CLI
+<a name="-greengrass-definition-functions-functiondefinitionid-put-cli"></a>
+
+```
+aws greengrass update-function-definition \
+  --function-definition-id <value> \
+  [--name <value>]  \
+  [--cli-input-json <value>] \
+  [--generate-cli-skeleton]
+```
+
+cli-input-json format:
+
+```
+{
+"FunctionDefinitionId": "string",
+"Name": "string"
+}
+```
+
+### Responses
+<a name="-greengrass-definition-functions-functiondefinitionid-put-responses"></a>
+
+**200**
+Success.
+ [ Empty](definitions-empty.md)
+
+```
+{
+}
+```
+Empty Schema
+Empty
+type: object
+
+**400**
+Invalid request.
+ [ GeneralError](definitions-generalerror.md)
+
+```
+{
+"Message": "string",
+"ErrorDetails": [
+  {
+    "DetailedErrorCode": "string",
+    "DetailedErrorMessage": "string"
+  }
+]
+}
+```
+GeneralError
+General error information.
+type: object
+required: ["Message"]
+Message
+A message that contains information about the error.
+type: string
+ErrorDetails
+A list of error details.
+type: array
+items: [ErrorDetail](definitions-errordetail.md)
+ErrorDetail
+Details about the error.
+type: object
+DetailedErrorCode
+A detailed error code.
+type: string
+DetailedErrorMessage
+A detailed error message.
+type: string

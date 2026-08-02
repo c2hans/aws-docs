@@ -1,0 +1,148 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_dynamodbstreams_pipes_stepfunctions.html
+---
+
+# aws-dynamodbstreams-pipes-stepfunctions
+<a name="aws_dynamodbstreams_pipes_stepfunctions"></a>
+
+![Stability:Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_dynamodbstreams_pipes_stepfunctions`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-dynamodbstreams-pipes-stepfunctions`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.dynamodbstreamspipesstepfunctions`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an Amazon DynamoDB table with stream that that executes an AWS Step Functions state machine via an Amazon Eventbridge pipe.
+
+Here is a minimal deployable pattern definition:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
+import { DynamoDBStreamsToPipesToStepfunctions, DynamoDBStreamsToPipesToStepfunctionsProps } from "@aws-solutions-constructs/aws-dynamodbstreams-pipes-stepfunctions";
+
+    const startState = new sfn.Pass(this, 'StartState');
+
+    new DynamoDBStreamsToPipesToStepfunctions(this, 'DynamoDBStreamsToPipesToStepfunctionsPattern', {
+      stateMachineProps: {
+        definitionBody: sfn.DefinitionBody.fromChainable(sfn.Chain.start(new sfn.Pass(this, 'Pass'))),
+      }
+    });
+```
+
+```
+from constructs import Construct
+from aws_cdk import (
+    aws_stepfunctions as _sfn,
+    Stack
+)
+from aws_solutions_constructs import (
+    aws_dynamodbstreams_pipes_stepfunctions as dynamodbstreams_pipes_stepfunctions
+)
+
+dynamodbstreams_pipes_stepfunctions.DynamoDBStreamsToPipesToStepfunctions(
+    self, 'DynamoDBStreamsToPipesToStepfunctions',
+    state_machine_props=_sfn.StateMachineProps(
+        definition_body=_sfn.DefinitionBody.from_chainable(_sfn.Chain.start(_sfn.Pass(self, "pass")))
+    )
+)
+```
+
+```
+package com.myorg;
+
+import software.constructs.Construct;
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+
+import software.amazon.awscdk.services.stepfunctions.*;
+import software.amazon.awsconstructs.services.dynamodbstreamspipesstepfunctions.DynamoDBStreamsToPipesToStepfunctions;
+import software.amazon.awsconstructs.services.dynamodbstreamspipesstepfunctions.DynamoDBStreamsToPipesToStepfunctionsProps;
+
+new DynamoDBStreamsToPipesToStepfunctions(this, "DynamoDBStreamsToPipesToStepfunctionsPattern",
+    DynamoDBStreamsToPipesToStepfunctionsProps.builder()
+        .stateMachineProps(StateMachineProps.builder()
+            .definitionBody(DefinitionBody.fromChainable(Chain.start(new Pass(scope, "Pass"))))
+            .build())
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| dynamoTableProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.TableProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.TableProps.html)  | Optional user provided props to override the default props for the DynamoDB Table. Providing both this and `existingTableInterface` causes an error. |
+| existingTableInterface? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.ITable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.ITable.html)  | Optional - existing DynamoDB table, providing both this and `dynamoTableProps` will cause an error. |
+| dynamoEventSourceProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda_event_sources.DynamoEventSourceProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda_event_sources.DynamoEventSourceProps.html)  | Optional user provided props to override the default props for DynamoDB Event Source |
+| deploySqsDlqQueue | boolean | Whether to deploy a SQS dead letter queue when a data record reaches the Maximum Retry Attempts or Maximum Record Age, its metadata like shard ID and stream ARN will be sent to an SQS queue. The construct will create and configure the DLQ with a default maximumRetryAttempts of 2. To customize this, you should set maximumRecordAgeInSeconds and/or maximumRetryAttempts attempts in pipeProps.sourceParameters.dynamoDbStreamParameters. Default - deploy queue, MaximumRetryAttempts is set to 3, and maximumRecordAge is left to default (-1, or infinite) |
+| sqsDlqQueueProps |  [sqs.QueueProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_sqs.QueueProps.html)  | Optional user provided properties for the SQS dead letter queue |
+| stateMachineProps |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_stepfunctions.StateMachineProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_stepfunctions.StateMachineProps.html)  | User provided props for the sfn.StateMachine. |
+| existingStateMachineObj |  [sfn.StateMachine](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_stepfunctions.StateMachine.html)  | Optional existing state machine to incorporate into the construct |
+| createCloudWatchAlarms? |  `boolean`  | Whether to create recommended CloudWatch alarms |
+| logGroupProps? |  [logs.logGroupProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html)  | Optional user provided props to override the default props for for the CloudWatchLogs LogGroup for the state machine. |
+| pipeProps? |  [pipes.CfnPipeProps](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_pipes.CfnPipeProps.html)  | Optional customer provided ettings for the EventBridge pipe. source, target and roleArn are set by the construct and cannot be overriden. The construct will generate default sourceParameters, targetParameters and logConfiguration that can be overriden by populating those values in these props. If the client wants to implement enrichment or a filter, this is where that information can be provided. Any other props can be freely overridden. To control aspects of the Streams feed (e.g. batchSize, startingPosition), do that here under sourceParameters.dynamoDbStreamParameters. |
+| enrichmentFunction? |  [lambda.Function](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda.Function.html)  | Optional - Lambda function that the construct will configure to be called to enrich the message between source and target. The construct will configure the pipe IAM role to allow invoking the function (but will not affect the IArole assigned to the function). Specifying both this and enrichmentStateMachine causes an error. Default - undefined |
+| enrichmentStateMachine? |  [sfn.StateMachine](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_stepfunctions.StateMachine.html)  | Optional - Step Functions state machine that the construct will configure to be called to enrich the message between source and target. The construct will configure the pipe IAM role to allow executing the state machine (but will not affect the IAM role assigned to the state machine). Specifying both this and enrichmentStateMachine causes an error. Default - undefined |
+| logLevel? | PipesLogLevel | Threshold for what messages the new pipe sends to the log, PipesLogLevel.OFF, PipesLogLevel.ERROR, PipesLogLevel.INFO, PipesLogLevel.TRACE. The default is INFO. Setting the level to OFF will prevent any log group from being created. Providing pipeProps.logConfiguration will controls all aspects of logging and any construct provided log configuration is disabled. If pipeProps.logConfiguration is provided then specifying this or pipeLogProps causes an error. |
+| pipeLogProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html)  | Default behavior is for this construct to create a new CloudWatch Logs log group for the pipe. These props are used to override defaults set by AWS or this construct. If there are concerns about the cost of log storage, this is where a client can specify a shorter retention duration (in days) |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| dynamoTableInterface |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.ITable.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.ITable.html)  | Returns an instance of dynamodb.ITable created by the construct |
+| dynamoTable? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html)  | Returns an instance of dynamodb.Table created by the construct. IMPORTANT: If existingTableInterface was provided in Pattern Construct |
+| stateMachineLogGroup |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.ILogGroup.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.ILogGroup.html)  | Returns an instance of the ILogGroup created by the construct for StateMachine |
+| cloudwatchAlarms? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_cloudwatch.Alarm.html)  | Returns a list of alarms created by the construct. |
+| pipe |  [pipes.CfnPipe](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_pipes.CfnPipe.html)  | The L1 pipe construct created by this Solutions Construct. |
+| pipeRole |  [iam.Role](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | The role created that allows the pipe to access both the source and the target. |
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon DynamoDB Table
+<a name="_amazon_dynamodb_table"></a>
++ Set the billing mode for DynamoDB Table to On-Demand (Pay per request)
++ Enable server-side encryption for DynamoDB Table using AWS managed KMS Key
++ Creates a partition key called "id" for DynamoDB Table
++ Retain the Table when deleting the CloudFormation stack
++ Enable continuous backups and point-in-time recovery
++ A DynamoDB stream based on the table.
+
+### AWS Step Functions State Machine
+<a name="_aws_step_functions_state_machine"></a>
++ Deploy Step Functions standard state machine
++ Create CloudWatch log group with /vendedlogs/ prefix in name
++ Deploy best practices CloudWatch Alarms for the Step Functions
+
+### AWS EventBridge Pipe
+<a name="_aws_eventbridge_pipe"></a>
++ Pipe configured with an DynamoDB stream source and state machine target
++ A least privilege IAM role assigned to the pipe to access the queue and state machine
++ CloudWatch logs set up at the "INFO" level
++ Encrypted with an AWS managed KMS key
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing data flow between AWS services including DynamoDB, EventBridge Pipe, CloudWatch log groups, State Machine and an IAM role.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-dynamodbstreams-pipes-stepfunctions.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-dynamodbstreams-pipes-stepfunctions) for this pattern to view the code, read/create issues and pull requests and more.

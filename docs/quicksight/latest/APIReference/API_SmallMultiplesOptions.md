@@ -1,0 +1,51 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SmallMultiplesOptions.html
+---
+
+# SmallMultiplesOptions
+<a name="API_SmallMultiplesOptions"></a>
+
+Options that determine the layout and display options of a chart's small multiples.
+
+## Contents
+<a name="API_SmallMultiplesOptions_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** MaxVisibleColumns **   <a name="QS-Type-SmallMultiplesOptions-MaxVisibleColumns"></a>
+Sets the maximum number of visible columns to display in the grid of small multiples panels.
+The default is `Auto`, which automatically adjusts the columns in the grid to fit the overall layout and size of the given chart.
+Type: Long
+Valid Range: Minimum value of 1. Maximum value of 10.
+Required: No
+
+ ** MaxVisibleRows **   <a name="QS-Type-SmallMultiplesOptions-MaxVisibleRows"></a>
+Sets the maximum number of visible rows to display in the grid of small multiples panels.
+The default value is `Auto`, which automatically adjusts the rows in the grid to fit the overall layout and size of the given chart.
+Type: Long
+Valid Range: Minimum value of 1. Maximum value of 10.
+Required: No
+
+ ** PanelConfiguration **   <a name="QS-Type-SmallMultiplesOptions-PanelConfiguration"></a>
+Configures the display options for each small multiples panel.
+Type: [PanelConfiguration](API_PanelConfiguration.md) object
+Required: No
+
+ ** XAxis **   <a name="QS-Type-SmallMultiplesOptions-XAxis"></a>
+The properties of a small multiples X axis.
+Type: [SmallMultiplesAxisProperties](API_SmallMultiplesAxisProperties.md) object
+Required: No
+
+ ** YAxis **   <a name="QS-Type-SmallMultiplesOptions-YAxis"></a>
+The properties of a small multiples Y axis.
+Type: [SmallMultiplesAxisProperties](API_SmallMultiplesAxisProperties.md) object
+Required: No
+
+## See Also
+<a name="API_SmallMultiplesOptions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/SmallMultiplesOptions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/SmallMultiplesOptions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/SmallMultiplesOptions)

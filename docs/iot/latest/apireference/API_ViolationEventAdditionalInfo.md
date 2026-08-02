@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ViolationEventAdditionalInfo.html
+---
+
+# ViolationEventAdditionalInfo
+<a name="API_ViolationEventAdditionalInfo"></a>
+
+ The details of a violation event.
+
+## Contents
+<a name="API_ViolationEventAdditionalInfo_Contents"></a>
+
+ ** confidenceLevel **   <a name="iot-Type-ViolationEventAdditionalInfo-confidenceLevel"></a>
+ The sensitivity of anomalous behavior evaluation. Can be `Low`, `Medium`, or `High`.
+Type: String
+Valid Values: `LOW | MEDIUM | HIGH`
+Required: No
+
+## See Also
+<a name="API_ViolationEventAdditionalInfo_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/ViolationEventAdditionalInfo)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/ViolationEventAdditionalInfo)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/ViolationEventAdditionalInfo)

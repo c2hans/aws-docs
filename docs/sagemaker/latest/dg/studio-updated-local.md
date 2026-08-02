@@ -1,0 +1,75 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-local.html
+---
+
+# Local mode support in Amazon SageMaker Studio
+<a name="studio-updated-local"></a>
+
+**Important**
+Custom IAM policies that allow Amazon SageMaker Studio or Amazon SageMaker Studio Classic to create Amazon SageMaker resources must also grant permissions to add tags to those resources. The permission to add tags to resources is required because Studio and Studio Classic automatically tag any resources they create. If an IAM policy allows Studio and Studio Classic to create resources but does not allow tagging, "AccessDenied" errors can occur when trying to create resources. For more information, see [Provide permissions for tagging SageMaker AI resources](security_iam_id-based-policy-examples.md#grant-tagging-permissions).
+[AWS managed policies for Amazon SageMaker AI](security-iam-awsmanpol.md) that give permissions to create SageMaker resources already include permissions to add tags while creating those resources.
+
+Amazon SageMaker Studio applications support the use of local mode to create ModelTrainers, processors, and pipelines, then deploy them to a local environment. With local mode, you can test machine learning scripts before running them in Amazon SageMaker AI managed training or hosting environments. Studio supports local mode in the following applications:
++ Amazon SageMaker Studio Classic
++ JupyterLab
++ Code Editor, based on Code-OSS, Visual Studio Code - Open Source
+
+Local mode in Studio applications is invoked using the SageMaker Python SDK. In Studio applications, local mode functions similarly to how it functions in Amazon SageMaker notebook instances, with some differences. With the [Rootless Docker configuration](studio-updated-local-get-started.md#studio-updated-local-rootless) enabled, you can also access additional Docker registries through your VPC configuration, including on-premises repositories, and public registries. For more information about using local mode with the SageMaker Python SDK, see [Local Mode](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html).
+
+**Note**
+Studio applications do not support multi-container jobs in local mode. Local mode jobs are limited to a single instance for training, inference, and processing jobs. When creating a local mode job, the instance count configuration must be `1`.
+
+## Docker support
+<a name="studio-updated-local-docker"></a>
+
+As part of local mode support, Studio applications support limited Docker access capabilities. With this support, users can interact with the Docker API from Jupyter notebooks or the image terminal of the application. Customers can interact with Docker using one of the following:
++ [Docker CLI](https://docs.docker.com/engine/reference/run/)
++ [Docker Compose CLI ](https://docs.docker.com/compose/reference/)
++ Language specific Docker SDK clients
+
+Studio also supports limited Docker access capabilities with the following restrictions:
++ Usage of Docker networks is not supported.
++ Docker [volume](https://docs.docker.com/storage/volumes/) usage is not supported during container run. Only volume bind mount inputs are allowed during container orchestration. The volume bind mount inputs must be located on the Amazon Elastic File System (Amazon EFS) volume for Studio Classic. For JupyterLab and Code Editor applications, it must be located on the Amazon Elastic Block Store (Amazon EBS) volume.
++ Container inspect operations are allowed.
++ Container port to host mapping is not allowed. However, you can specify a port for hosting. The endpoint is then accessible from Studio using the following URL:
+
+  ```
+  http://localhost:{{port}}
+  ```
+
+### Docker operations supported
+<a name="studio-updated-local-docker-supported"></a>
+
+The following table lists all of the Docker API endpoints that are supported in Studio, including any support limitations. If an API endpoint is missing from the table, Studio doesn't support it.
+
+|  API Documentation  |  Limitations  |
+| --- | --- |
+|  [SystemAuth](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemAuth)  |   |
+|  [SystemEvents](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemEvents)  |   |
+|  [SystemVersion](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemVersion)  |   |
+|  [SystemPing](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemPing)  |   |
+|  [SystemPingHead](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemPingHead)  |   |
+|  [ContainerCreate](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerCreate)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-local.html)  |
+|  [ContainerStart](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerStart)  |   |
+|  [ContainerStop](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerStop)  |   |
+|  [ContainerKill](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerKill)  |   |
+|  [ContainerDelete](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerDelete)  |   |
+|  [ContainerList](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerList)  |   |
+|  [ContainerLogs](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerLogs)  |   |
+|  [ContainerInspect](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerInspect)  |   |
+|  [ContainerWait](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerWait)  |   |
+|  [ContainerAttach](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerAttach)  |   |
+|  [ContainerPrune](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerPrune)  |   |
+|  [ContainerResize](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerResize)  |   |
+|  [ImageCreate](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageCreate)  |  VPC-only mode support is limited to Amazon ECR images in allowlisted accounts. With the [Rootless Docker configuration](studio-updated-local-get-started.md#studio-updated-local-rootless) enabled, you can also access additional Docker registries through your VPC configuration, including on-premises repositories, and public registries. |
+|  [ImagePrune](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImagePrune)  |   |
+|  [ImagePush](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImagePush)  |  VPC-only mode support is limited to Amazon ECR images in allowlisted accounts. With the [Rootless Docker configuration](studio-updated-local-get-started.md#studio-updated-local-rootless) enabled, you can also access additional Docker registries through your VPC configuration, including on-premises repositories, and public registries. |
+|  [ImageList](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageList)  |   |
+|  [ImageInspect](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageInspect)  |   |
+|  [ImageGet](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageGet)  |   |
+|  [ImageDelete](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageDelete)  |   |
+|  [ImageBuild](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageBuild)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-local.html)  |
+
+**Topics**
++ [Docker support](#studio-updated-local-docker)
++ [Getting started with local mode](studio-updated-local-get-started.md)

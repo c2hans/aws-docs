@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-reference.html
+---
+
+# AWS IoT SQL reference
+<a name="iot-sql-reference"></a>
+
+In AWS IoT, rules are defined using an SQL-like syntax. SQL statements are composed of three types of clauses:
+
+**SET**
+(Optional) Defines variables that you can reuse throughout SQL statements and substitution templates. Assign values to variables using expressions. Reference these variables in SELECT and WHERE clauses, and in action substitution templates.
+The SET clause supports [Data types](iot-sql-data-types.md), [Operators](iot-sql-operators.md), [Functions](iot-sql-functions.md), [Literals](iot-sql-literals.md), [Case statements](iot-sql-case.md), [JSON extensions](iot-sql-json.md), [Variables](iot-sql-set.md#iot-sql-set-usage), and [Nested object queries](iot-sql-nested-queries.md).
+
+**SELECT**
+(Required) Extracts information from the payload of an incoming message and performs transformations on the information. The messages to use are identified by the [topic filter](topics.md#topicfilters) specified in the FROM clause.
+The SELECT clause supports [Data types](iot-sql-data-types.md), [Operators](iot-sql-operators.md), [Functions](iot-sql-functions.md), [Literals](iot-sql-literals.md), [Case statements](iot-sql-case.md), [JSON extensions](iot-sql-json.md), [Substitution templates](iot-substitution-templates.md), [Variables](iot-sql-set.md#iot-sql-set-usage), [Nested object queries](iot-sql-nested-queries.md), and [Binary payloads](binary-payloads.md).
+
+**FROM**
+The MQTT message [topic filter](topics.md#topicfilters) that identifies the messages to extract data from. The rule is activated for each message sent to an MQTT topic that matches the topic filter specified here. Required for rules that are activated by messages that pass through the message broker. Optional for rules that are only activated using the [Basic Ingest](iot-basic-ingest.md) feature.
+
+**WHERE**
+(Optional) Adds conditional logic that determines whether the actions specified by a rule are carried out.
+The WHERE clause supports [Data types](iot-sql-data-types.md), [Operators](iot-sql-operators.md), [Functions](iot-sql-functions.md), [Literals](iot-sql-literals.md), [Case statements](iot-sql-case.md), [JSON extensions](iot-sql-json.md), [Variables](iot-sql-set.md#iot-sql-set-usage), and [Nested object queries](iot-sql-nested-queries.md).
+
+An example SQL statement looks like this:
+
+```
+SELECT color AS rgb FROM 'topic/subtopic' WHERE temperature > 50
+```
+
+An example MQTT message (also called an incoming payload) looks like this:
+
+```
+{
+    "color":"red",
+    "temperature":100
+}
+```
+
+If this message is published on the `'topic/subtopic'` topic, the rule is triggered and the SQL statement is evaluated. The SQL statement extracts the value of the `color` property if the `"temperature"` property is greater than 50. The WHERE clause specifies the condition `temperature > 50`. The `AS` keyword renames the `"color"` property to `"rgb"`. The result (also called an *outgoing payload*) looks like this:
+
+```
+{
+    "rgb":"red"
+}
+```
+
+This data is then forwarded to the rule's action, which sends the data for more processing. For more information about rule actions, see [AWS IoT rule actions](iot-rule-actions.md).
+
+**Note**
+Comments are not currently supported in AWS IoT SQL syntax.
+Attribute names with spaces in them can't be used as field names in the SQL statement. While the incoming payload can have attribute names with spaces in them, such names can't be used in the SQL statement. They will, however, be passed through to the outgoing payload if you use a wildcard (\*) field name specification.

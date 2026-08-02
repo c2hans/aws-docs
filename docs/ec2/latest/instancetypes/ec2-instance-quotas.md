@@ -1,0 +1,248 @@
+---
+source_url: https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-quotas.html
+---
+
+# Amazon EC2 instance type quotas
+<a name="ec2-instance-quotas"></a>
+
+Your AWS account has quotas that affect the number of instances that you can run in each Region. These quotas are grouped by purchasing option.
+
+**Topics**
++ [On-Demand Instance quotas](#on-demand-instance-quotas)
++ [Spot Instance quotas](#spot-instance-quotas)
++ [Dedicated Host quotas](#dedicated-host-quotas)
++ [Capacity Blocks quotas](#capacity-blocks-quotas)
+
+## On-Demand Instance quotas
+<a name="on-demand-instance-quotas"></a>
+
+The following table shows the maximum number of vCPUs that you can provision for On-Demand Instances. Amazon EC2 automatically increases your On-Demand Instance quotas based on your usage. You can also request a quota increase. For more information, see [On-Demand Instance quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits) in the *Amazon EC2 User Guide*.
+
+| Name | Default | Adjustable |
+| --- | --- | --- |
+| Running On-Demand DL instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6E869C2A) |
+| Running On-Demand F instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-74FC7D96) |
+| Running On-Demand G and VT instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DB2E81BA) |
+| Running On-Demand HPC instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F7808C92) |
+| Running On-Demand High Memory instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-43DA4232) |
+| Running On-Demand Inf instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1945791B) |
+| Running On-Demand P instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-417A185B) |
+| Running On-Demand Standard (A, C, D, H, I, M, R, T, Z) instances | 5 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1216C47A) |
+| Running On-Demand Trn instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2C3B7624) |
+| Running On-Demand X instances | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7295265B) |
+
+## Spot Instance quotas
+<a name="spot-instance-quotas"></a>
+
+The following table shows the maximum number of vCPUs that you can provision for Spot Instances. Amazon EC2 automatically increases your Spot Instance quotas based on your usage. You can also request a quota increase. For more information, see [Spot Instance quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-limits.html) in the *Amazon EC2 User Guide*.
+
+| Name | Default | Adjustable |
+| --- | --- | --- |
+| All DL Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-85EED4F7) |
+| All F Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-88CF9481) |
+| All G and VT Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-3819A6DF) |
+| All Inf Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B5D1601B) |
+| All P Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7212CCBC) |
+| All Standard (A, C, D, H, I, M, R, T, Z) Spot Instance Requests | 5 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-34B43A08) |
+| All Trn Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6B0D517C) |
+| All X Spot Instance Requests | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-E3A00192) |
+
+## Dedicated Host quotas
+<a name="dedicated-host-quotas"></a>
+
+The following table shows the maximum number of running Dedicated Hosts that you can allocate.
+
+| Name | Default | Adjustable |
+| --- | --- | --- |
+| Running Dedicated a1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-949445B0) |
+| Running Dedicated c1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8365AB81) |
+| Running Dedicated c3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8D142A2E) |
+| Running Dedicated c4 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-E4BF28E0) |
+| Running Dedicated c5 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-81657574) |
+| Running Dedicated c5a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-03F01FD8) |
+| Running Dedicated c5d Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C93F66A2) |
+| Running Dedicated c5n Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-20F13EBD) |
+| Running Dedicated c6a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D75D2E84) |
+| Running Dedicated c6g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A749B537) |
+| Running Dedicated c6gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-545AED39) |
+| Running Dedicated c6gn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5E3A299D) |
+| Running Dedicated c6i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5FA3355A) |
+| Running Dedicated c6id Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1BBC5241) |
+| Running Dedicated c6in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6C2C40CC) |
+| Running Dedicated c7a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-698B67E5) |
+| Running Dedicated c7g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-13B8FCE8) |
+| Running Dedicated c7gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EF58B059) |
+| Running Dedicated c7gn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-97677CE3) |
+| Running Dedicated c7i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-587AA6E3) |
+| Running Dedicated c7i-flex Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-13DB310D) |
+| Running Dedicated c8a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D6F036D4) |
+| Running Dedicated c8g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6CB3332C) |
+| Running Dedicated c8gb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C7EEF4EB) |
+| Running Dedicated c8gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BB2FAD1F) |
+| Running Dedicated c8gn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D2699F97) |
+| Running Dedicated c8i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-0C0FF421) |
+| Running Dedicated c8i-flex Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C1B49A34) |
+| Running Dedicated c8ib Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7DFCA33B) |
+| Running Dedicated c8id Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-481D44A0) |
+| Running Dedicated c8in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-FD1C4410) |
+| Running Dedicated c8ine Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A56AA14C) |
+| Running Dedicated c9g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BBB124F0) |
+| Running Dedicated c9gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D6650C85) |
+| Running Dedicated d2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8B27377A) |
+| Running Dedicated dl1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-AD667A3D) |
+| Running Dedicated f1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5C4CD236) |
+| Running Dedicated f2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EB3A60B9) |
+| Running Dedicated g4ad Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-FD8E9B9A) |
+| Running Dedicated g4dn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-CAE24619) |
+| Running Dedicated g5 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A6E7FE5E) |
+| Running Dedicated g5g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-4714FFEA) |
+| Running Dedicated g6 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B88B9D6B) |
+| Running Dedicated g6e Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7069ADEB) |
+| Running Dedicated g6f Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2C198A4A) |
+| Running Dedicated g7 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-30B67EDC) |
+| Running Dedicated g7e Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-924F492E) |
+| Running Dedicated gr6 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-E68C3AFF) |
+| Running Dedicated gr6f Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-168EDD9C) |
+| Running Dedicated h1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-84391ECC) |
+| Running Dedicated i2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6222C1B6) |
+| Running Dedicated i3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8E60B0B1) |
+| Running Dedicated i3en Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-77EE2B11) |
+| Running Dedicated i4g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F62CBADB) |
+| Running Dedicated i4i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-0300530D) |
+| Running Dedicated i7i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-ED9650A1) |
+| Running Dedicated i7ie Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A595803A) |
+| Running Dedicated i8g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1766526E) |
+| Running Dedicated i8ge Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-19A980DA) |
+| Running Dedicated im4gn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-93155D6F) |
+| Running Dedicated inf Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5480EFD2) |
+| Running Dedicated inf2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-E5BCF7B5) |
+| Running Dedicated is4gen Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-CB4F5825) |
+| Running Dedicated m1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-CAF5302E) |
+| Running Dedicated m2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5CBC0C23) |
+| Running Dedicated m3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-3C82F907) |
+| Running Dedicated m4 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EF30B25E) |
+| Running Dedicated m5 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8B7BF662) |
+| Running Dedicated m5a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B10F70D6) |
+| Running Dedicated m5ad Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-74F41837) |
+| Running Dedicated m5d Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8CCBD91B) |
+| Running Dedicated m5dn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DA07429F) |
+| Running Dedicated m5n Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-24D7D4AD) |
+| Running Dedicated m5zn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BD9BD803) |
+| Running Dedicated m6a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-80F2B67F) |
+| Running Dedicated m6g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D50A37FA) |
+| Running Dedicated m6gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-84FB37AA) |
+| Running Dedicated m6i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D269BEFD) |
+| Running Dedicated m6id Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-FDB0A352) |
+| Running Dedicated m6idn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-9721EDD9) |
+| Running Dedicated m6in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D037CF10) |
+| Running Dedicated m7a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-4740F819) |
+| Running Dedicated m7g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-9126620E) |
+| Running Dedicated m7gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F8516154) |
+| Running Dedicated m7i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-30E31217) |
+| Running Dedicated m8a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2187E2D9) |
+| Running Dedicated m8azn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-36569535) |
+| Running Dedicated m8g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7FD343E7) |
+| Running Dedicated m8gb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-CD7F321D) |
+| Running Dedicated m8gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2A9065B7) |
+| Running Dedicated m8gn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-47D32C8D) |
+| Running Dedicated m8i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-227FD167) |
+| Running Dedicated m8ib Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F8EA3FAF) |
+| Running Dedicated m8id Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-734A5416) |
+| Running Dedicated m8idb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EF36B4B6) |
+| Running Dedicated m8idn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BCAEF52C) |
+| Running Dedicated m8in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1E70CA7A) |
+| Running Dedicated m8ine Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-4AF0AFB8) |
+| Running Dedicated m9g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-9F9F275C) |
+| Running Dedicated m9gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-65F16F74) |
+| Running Dedicated mac-m3ultra Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7108A7B5) |
+| Running Dedicated mac-m4 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2CBA8B92) |
+| Running Dedicated mac-m4max Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D82CB68A) |
+| Running Dedicated mac-m4pro Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-6919FC30) |
+| Running Dedicated mac1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A8448DC5) |
+| Running Dedicated mac2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5D8DADF5) |
+| Running Dedicated mac2-m1ultra Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-AE4D744C) |
+| Running Dedicated mac2-m2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B90B5B66) |
+| Running Dedicated mac2-m2pro Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-14F120D1) |
+| Running Dedicated p3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A0A19F79) |
+| Running Dedicated p3dn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B601B3B6) |
+| Running Dedicated p4d Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-86A789C3) |
+| Running Dedicated p4de Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-25176A65) |
+| Running Dedicated p5 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5136197D) |
+| Running Dedicated p5en Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-19A4C74C) |
+| Running Dedicated p6-b300 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-FDACE337) |
+| Running Dedicated r3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B7208018) |
+| Running Dedicated r4 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-313524BA) |
+| Running Dedicated r5 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EA4FD6CF) |
+| Running Dedicated r5a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8FE30D52) |
+| Running Dedicated r5ad Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EC7178B6) |
+| Running Dedicated r5b Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A2D59C67) |
+| Running Dedicated r5d Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8814B54F) |
+| Running Dedicated r5dn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-4AB14223) |
+| Running Dedicated r5n Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-52EF324A) |
+| Running Dedicated r6a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BC1589C5) |
+| Running Dedicated r6g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B6D6065D) |
+| Running Dedicated r6gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EF284EFB) |
+| Running Dedicated r6i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F13A970A) |
+| Running Dedicated r6id Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B89271A9) |
+| Running Dedicated r6idn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C4EABC2C) |
+| Running Dedicated r6in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EA99608B) |
+| Running Dedicated r7a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-4D15192B) |
+| Running Dedicated r7g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-67B8B4C7) |
+| Running Dedicated r7gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-01137DCE) |
+| Running Dedicated r7i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-55E05032) |
+| Running Dedicated r7iz Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BC9FCC71) |
+| Running Dedicated r8a Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-935F9988) |
+| Running Dedicated r8g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5937C5FF) |
+| Running Dedicated r8gb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F5B6696D) |
+| Running Dedicated r8gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-89D39B5A) |
+| Running Dedicated r8gn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BCC01EAB) |
+| Running Dedicated r8i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-EEC0A186) |
+| Running Dedicated r8i-flex Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-0FBCED95) |
+| Running Dedicated r8ib Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B77DA32D) |
+| Running Dedicated r8id Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-595F64D8) |
+| Running Dedicated r8idb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D09C33FE) |
+| Running Dedicated r8idn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2C6EB73A) |
+| Running Dedicated r8in Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-088AF713) |
+| Running Dedicated t1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-BD62EDF4) |
+| Running Dedicated t2 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DBCD5944) |
+| Running Dedicated t3 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-1586174D) |
+| Running Dedicated trn1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5E4FB836) |
+| Running Dedicated trn1n Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-39926A58) |
+| Running Dedicated u-3tb1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7F5506AB) |
+| Running Dedicated u-6tb1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-89870E8E) |
+| Running Dedicated u7i-12tb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F4621520) |
+| Running Dedicated u7i-6tb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C4D9412E) |
+| Running Dedicated u7i-8tb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-9E2503C2) |
+| Running Dedicated u7in-16tb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-75B9BECB) |
+| Running Dedicated u7in-24tb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-CA51381E) |
+| Running Dedicated u7in-32tb Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-9D28191F) |
+| Running Dedicated vt1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A68CFBF7) |
+| Running Dedicated x1 Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DE3D9563) |
+| Running Dedicated x1e Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DEF8E115) |
+| Running Dedicated x2gd Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5CC9EA82) |
+| Running Dedicated x2idn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-A84ABF80) |
+| Running Dedicated x2iedn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D0AA08B1) |
+| Running Dedicated x2iezn Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-888B4496) |
+| Running Dedicated x8g Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2CC6888D) |
+| Running Dedicated x8i Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-D1023B19) |
+| Running Dedicated z1d Hosts | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-F035E935) |
+
+## Capacity Blocks quotas
+<a name="capacity-blocks-quotas"></a>
+
+The following table shows the maximum number of vCPUs for concurrently active Capacity Blocks.
+
+| Name | Default | Adjustable |
+| --- | --- | --- |
+| Concurrent P4d Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2C8F52B3) |
+| Concurrent P4d Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-B67430DE) |
+| Concurrent P5 Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-DA6814F2) |
+| Concurrent P5 Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8131B2C6) |
+| Concurrent P5e Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C45F30BC) |
+| Concurrent P5e Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-AD1D1866) |
+| Concurrent P5en Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-4F9BB70B) |
+| Concurrent P5en Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-7EA86503) |
+| Concurrent Trn1 Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-2E30FD7D) |
+| Concurrent Trn1 Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C4947F9A) |
+| Concurrent Trn2 Capacity Blocks per account | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-64569A79) |
+| Concurrent Trn2 Capacity Blocks per organization | 0 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-24E8B4C0) |

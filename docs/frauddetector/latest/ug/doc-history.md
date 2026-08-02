@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/frauddetector/latest/ug/doc-history.html
+---
+
+Amazon Fraud Detector is no longer open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker, AutoGluon, and AWS WAF.
+
+# Document history
+<a name="doc-history"></a>
+
+The following table describes important changes in Amazon Fraud Detector User Guide. We also update the Amazon Fraud Detector User Guide frequently to address the feedback that you send us.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Amazon Fraud Detector will no longer be open to new customers starting November 7, 2025.](#doc-history) | Amazon Fraud Detector will no longer be open to new customers starting November 7, 2025. If you would like to use Amazon Fraud Detector, sign up prior to that date. Existing customers can continue to use the service as normal. For more information, see [Amazon Fraud Detector availability change](https://docs.aws.amazon.com/frauddetector/latest/ug/frauddetector-availability-change.html).  | October 7, 2025 |
+| [New variable and data types](https://docs.aws.amazon.com//frauddetector/latest/ug/variables.html) | Amazon Fraud Detector introduces new variable types and a datatype you can use to extract useful information. | June 5, 2023 |
+| [Event orchestration](https://docs.aws.amazon.com//frauddetector/latest/ug/event-orchestration.html) | The **Event orchestration** makes it easy for you to send events to AWS services for downstream processing, using Amazon EventBridge.  | May 30, 2023 |
+| [Lists](https://docs.aws.amazon.com//frauddetector/latest/ug/lists.html) | The **Lists** resource enables you to reference a set of values such as IP addresses or email addresses, as part of a rule. Use lists in a rule to allow or deny access or a transaction. | February 14, 2023 |
+| [Data Models Explorer](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html#prepare-event-dataset) | The **Data Models Explorer** provides insights into the data elements required by Amazon Fraud Detector to create your fraud detection model. Use data models explorer before you prepare your event dataset. | December 15, 2022 |
+| [Account Takeover Insights model](https://docs.aws.amazon.com//frauddetector/latest/ug/account-takeover-insights.html) | Use **Account takeover insights (ATI)** model to detect accounts that are compromised through malicious takeovers, phishing, or from credentials being stolen. | July 21, 2022 |
+| [Chapter update](https://docs.aws.amazon.com//frauddetector/latest/ug/what-is-frauddetector.html) | Updated the introductory chapter with additional information about Amazon Fraud Detector | April 11, 2022 |
+| [Variable enrichment](https://docs.aws.amazon.com//frauddetector/latest/ug/create-a-variable.html#variable-enrichments) | Enable enrichment of some of the raw data you provide to boost performance for the models that use these data elements and that were trained before February 8, 2022. | February 8, 2022 |
+| [Opt-out policies](https://docs.aws.amazon.com//frauddetector/latest/ug/opting-out-of-using-your-data-for-service-improvement.html) | Use **opt-out policies** to opt out of having your event data used to develop or improve the quality of Amazon Fraud Detector. | January 6, 2022 |
+| [Confused deputy prevention](https://docs.aws.amazon.com//frauddetector/latest/ug/confused-deputy-prevention.html.html) | Create policies to prevent a third-party or a cross-service entity from manipulating an entity with permissions to act on its behalf to gain access to resources in your account.  | December 6, 2021 |
+| [Create event dataset](https://docs.aws.amazon.com//frauddetector/latest/ug/create-event-dataset.html) | Use the guidance provided in **Create event dataset** to prepare and gather data for training your model.  | November 22, 2021 |
+| [Prediction explanations](https://docs.aws.amazon.com//frauddetector/latest/ug/prediction-explanation.html) | Use **Prediction explanations** to get insight into how each event variable impacted your model's fraud prediction scores.  | November 10, 2021 |
+| [Troubleshoot](https://docs.aws.amazon.com//frauddetector/latest/ug/troubleshoot.html#troubleshoot-training-data) | Use information in **Troubleshoot training data issues** to help diagnose and resolve issues you might see in Amazon Fraud Detector console when you train your model. | October 11, 2021 |
+| [Transaction fraud insights model](https://docs.aws.amazon.com//frauddetector/latest/ug/transaction-fraud-insights.html) | Use **Transaction fraud insights (TFI)** model to detect online or card-not-present transaction fraud. | October 11, 2021 |
+| [Stored events](https://docs.aws.amazon.com//frauddetector/latest/ug/storing-event-data-afd.html) | Store your event data in Amazon Fraud Detector and use the stored data to later train your models. By storing event data in Amazon Fraud Detector, you can train models that use auto-computed variables to improve performance, simplify model retraining, and update fraud labels to close the machine learning feedback loop. | October 11, 2021 |
+| [Model variable importance](https://docs.aws.amazon.com/frauddetector/latest/ug/model-variable-importance.html) | Use **Model variable importance** to gain insight into what is driving performance of your model up or down and which of your model variables contribute the most. And then tweak your model to improve overall performance. | July 9, 2021 |
+| [Integration with AWS CloudFormation](https://docs.aws.amazon.com/frauddetector/latest/ug/managing-resources-using-cloudformation.html) | Use AWS CloudFormation to manage your Amazon Fraud Detector resources. | May 10, 2021 |
+| [Batch predictions](https://docs.aws.amazon.com/frauddetector/latest/ug/batch-predictions.html) | Use **Batch predictions** to get predictions for a set of events that do not require real-time scoring. | March 31, 2021 |
+| [Chapter rework](https://docs.aws.amazon.com/frauddetector/latest/ug/get-started.html) | Rework of Get started and other sections | July 17, 2020 |
+| [Initial release](https://docs.aws.amazon.com/frauddetector/latest/ug/what-is-frauddetector.html) | Initial release | December 2, 2019 |

@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/configure-regional-settings-admins-users.html
+---
+
+# Enable Regional Settings for Your WorkSpaces Applications Users
+<a name="configure-regional-settings-admins-users"></a>
+
+WorkSpaces Applications lets you or your users configure certain Windows settings that are specific to your users' location or language. WorkSpaces Applications also lets you configure regional settings while creating Linux images. For more information, see [Tutorial: Enable Japanese Support for Your Linux Images](enable-japanese-support-linux.md).
+
+**Topics**
++ [Configure Default Regional Settings for Your WorkSpaces Applications Users](configure-default-regional-settings.md)
++ [Enable Your WorkSpaces Applications Users to Configure Their Regional Settings](regional-settings.md)

@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AudioMonitoringSetting.html
+---
+
+# AudioMonitoringSetting
+<a name="API_AudioMonitoringSetting"></a>
+
+ Specifies the configuration for audio stream metrics monitoring.
+
+## Contents
+<a name="API_AudioMonitoringSetting_Contents"></a>
+
+ ** silentAudio **   <a name="mediaconnect-Type-AudioMonitoringSetting-silentAudio"></a>
+ Detects periods of silence.
+Type: [SilentAudio](API_SilentAudio.md) object
+Required: No
+
+## See Also
+<a name="API_AudioMonitoringSetting_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/AudioMonitoringSetting)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/AudioMonitoringSetting)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/AudioMonitoringSetting)

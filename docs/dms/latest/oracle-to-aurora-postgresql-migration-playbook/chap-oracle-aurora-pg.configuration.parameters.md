@@ -1,0 +1,92 @@
+---
+source_url: https://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.configuration.parameters.html
+---
+
+# Oracle instance parameters and Amazon RDS parameter groups
+<a name="chap-oracle-aurora-pg.configuration.parameters"></a>
+
+With AWS DMS, you can configure Oracle instance parameters and Amazon RDS parameter groups to optimize database performance, security, and resource utilization. Oracle instance parameters control various aspects of an Oracle database instance, such as memory allocation, logging, and backup settings. Amazon RDS parameter groups act as a container for engine configuration values that can be applied to one or more Amazon RDS database instances.
+
+| Feature compatibility |  AWS SCT / AWS DMS automation level |  AWS SCT action code index | Key differences |
+| --- | --- | --- | --- |
+|  ![One star feature compatibility](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/images/pb-compatibility-1.png)  | N/A | N/A | Use Cluster and Database/Cluster parameters. |
+
+## Oracle usage
+<a name="chap-oracle-aurora-pg.configuration.parameters.ora"></a>
+
+Oracle instance and database-level parameters can be configured using the `ALTER SYSTEM` command. Certain parameters can be configured dynamically and take immediate effect while other parameters require an instance restart.
++ All Oracle instance and database-level parameters are stored in a binary file known as the Server Parameter file (SPFILE).
++ The binary SPFILE can be exported to a text file using the following command:
+
+  ```
+  CREATE PFILE = 'my_init.ora' FROM SPFILE = 's_params.ora';
+  ```
+
+When modifying parameters, you can choose the persistence of the changed values with one of the three following options:
++ Make the change applicable only after a restart by specifying `scope=spfile`.
++ Make the change dynamically, but not persistent, after a restart by specifying `scope=memory`.
++ Make the change both dynamically and persistent by specifying `scope=both`.
+
+ **Examples**
+
+Use the `ALTER SYSTEM SET` command to configure a value for an Oracle parameter.
+
+```
+ALTER SYSTEM SET QUERY_REWRITE_ENABLED = TRUE SCOPE=BOTH;
+```
+
+For more information, see [Initialization Parameters](https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/initialization-parameters-2.html#GUID-FD266F6F-D047-4EBB-8D96-B51B1DCA2D61) and [Changing Parameter Values in a Parameter File](https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/changing-parameter-values-in-a-parameter-file.html#GUID-4C578B21-DE2B-4210-8EB7-EF28D36CC1CB) in the *Oracle documentation*.
+
+## PostgreSQL usage
+<a name="chap-oracle-aurora-pg.configuration.parameters.pg"></a>
+
+When running PostgreSQL databases as Amazon Aurora Clusters, Parameter Groups are used to change to cluster-level and database-level parameters.
+
+Most of the PostgreSQL parameters are configurable in an Amazon Aurora PostgreSQL cluster, but some are disabled and can’t be modified. Since Amazon Aurora clusters restrict access to the underlying operating system, modification to PostgreSQL parameters must be made using Parameter Groups.
+
+ Amazon Aurora is a cluster of database instances and, as a direct result, some of the PostgreSQL parameters apply to the entire cluster while other parameters apply only to a particular database instance.
+
+|  Aurora PostgreSQL parameter class | Controlled by |
+| --- | --- |
+|  **Cluster-level parameters** <br />Single cluster parameter group for each Amazon Aurora cluster. | Managed by cluster parameter groups. For example,[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.configuration.parameters.html) |
+|  **Database instance-level parameters** <br />Every instance in an Amazon Aurora cluster can be associated with a unique database parameter group. | Managed by database parameter groups For example,[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.configuration.parameters.html) |
+
+PostgreSQL 10 introduces the following new parameters:
++  `enable_gathermerge` — enable run plan gather merge.
++  `max_parallel_workers` — maximum number of parallel workers process.
++  `max_sync_workers_per_subscription` — maximum number of synchronous workers for subscription.
++  `wal_consistency_checking` — check consistency of WAL on the standby instance (can’t be set in Aurora PostgreSQL).
++  `max_logical_replication_workers` — maximum number of logical replication worker process.
++  `max_pred_locks_per_relation` — Maximum number of records that can be predicate-lock before locking the entire relation (signup).
++  `max_pred_locks_per_page` — Maximum number of records that can be predicate-lock before locking the entire page.
++  `min_parallel_table_scan_size` — minimum table size to consider parallel table scan.
++  `min_parallel_index_scan_size` — minimum table size to consider parallel index scan.
+
+ **Examples**
+
+Follow the following steps to create and configure Amazon Aurora database and cluster parameter groups.
+
+1. Sign in to the AWS Management Console and choose **RDS**.
+
+1. Choose **Parameter groups** and choose **Create parameter group**.
+
+**Example**
+You can’t edit the default parameter group. Create a custom parameter group to apply changes to your Amazon Aurora cluster and its database instances.
+
+1. For **Parameter group family**, choose the database family.
+
+1. For **Type**, choose **DB Parameter Group**.
+
+1. Choose **Create**.
+
+Follow the following steps to modify an existing parameter group.
+
+1. Sign in to the AWS Management Console and choose **RDS**.
+
+1. Choose **Parameter groups** and choose the name of the parameter to edit.
+
+1. For **Parameter group actions**, choose **Edit**.
+
+1. Change parameter values and choose **Save changes**.
+
+For more information, see [SET](https://www.postgresql.org/docs/13/sql-set.html) in the *PostgreSQL documentation*.

@@ -1,0 +1,53 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/perf_compute_hardware_compute_accelerators.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# PERF02-BP06 Use optimized hardware-based compute accelerators
+<a name="perf_compute_hardware_compute_accelerators"></a>
+
+ Use hardware accelerators to perform certain functions more efficiently than CPU-based alternatives.
+
+ **Common anti-patterns:**
++  In your workload, you haven't benchmarked a general-purpose instance against a purpose-built instance that can deliver higher performance and lower cost.
++  You are using hardware-based compute accelerators for tasks that can be more efficient using CPU-based alternatives.
++  You are not monitoring GPU usage.
+
+**Benefits of establishing this best practice:** By using hardware-based accelerators, such as graphics processing units (GPUs) and field programmable gate arrays (FPGAs), you can perform certain processing functions more efficiently.
+
+ **Level of risk exposed if this best practice is not established:** Medium
+
+## Implementation guidance
+<a name="implementation-guidance"></a>
+
+ Accelerated computing instances provide access to hardware-based compute accelerators such as GPUs and FPGAs. These hardware accelerators perform certain functions like graphic processing or data pattern matching more efficiently than CPU-based alternatives. Many accelerated workloads, such as rendering, transcoding, and machine learning, are highly variable in terms of resource usage. Only run this hardware for the time needed, and decommission them with automation when not required to improve overall performance efficiency.
+
+### Implementation steps
+<a name="implementation-steps"></a>
++  Identify which [accelerated computing instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html) can address your requirements.
++  For machine learning workloads, take advantage of purpose-built hardware that is specific to your workload, such as [AWS Trainium](https://aws.amazon.com/machine-learning/trainium/), [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/), and [Amazon EC2 DL1](https://aws.amazon.com/ec2/instance-types/dl1/). AWS Inferentia instances such as Inf2 instances [offer up to 50% better performance/watt over comparable Amazon EC2 instances](https://aws.amazon.com/machine-learning/inferentia/).
++  Collect usage metrics for your accelerated computing instances. For example, you can use CloudWatch agent to collect metrics such as `utilization_gpu` and `utilization_memory` for your GPUs as shown in [Collect NVIDIA GPU metrics with Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-NVIDIA-GPU.html).
++  Optimize the code, network operation, and settings of hardware accelerators to make sure that underlying hardware is fully utilized.
+  +  [Optimize GPU settings](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/optimize_gpu.html)
+  +  [GPU Monitoring and Optimization in the Deep Learning AMI](https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-gpu.html)
+  +  [Optimizing I/O for GPU performance tuning of deep learning training in Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/optimizing-i-o-for-gpu-performance-tuning-of-deep-learning-training-in-amazon-sagemaker/)
++  Use the latest high performant libraries and GPU drivers.
++  Use automation to release GPU instances when not in use.
+
+## Resources
+<a name="resources"></a>
+
+ **Related documents:**
++  [GPU instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html#gpu-instances)
++  [Instances with AWS Trainium](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html#aws-trainium-instances)
++  [Instances with AWS Inferentia](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/accelerated-computing-instances.html#aws-inferentia-instances)
++  [Let’s Architect\! Architecting with custom chips and accelerators](https://aws.amazon.com/blogs/architecture/lets-architect-custom-chips-and-accelerators/)
++  [Accelerated Computing](https://aws.amazon.com/ec2/instance-types/#Accelerated_Computing)
++  [Amazon EC2 VT1 Instances](https://aws.amazon.com/ec2/instance-types/vt1/)
++  [How do I choose the appropriate Amazon EC2 instance type for my workload?](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-choose-type-for-workload/)
++  [Choose the best AI accelerator and model compilation for computer vision inference with Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/choose-the-best-ai-accelerator-and-model-compilation-for-computer-vision-inference-with-amazon-sagemaker/)
+
+ **Related videos:**
++  [How to select Amazon EC2 GPU instances for deep learning](https://www.youtube.com/watch?v=4bVrIbgGWEA&ab_channel=AWSEvents)
++  [Deploying Cost-Effective Deep Learning Inference](https://www.youtube.com/watch?v=WiCougIDRsw&ab_channel=AWSOnlineTechTalks)

@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen-dashboard-overview.html
+---
+
+# Central SRE dashboard overview
+<a name="next-gen-dashboard-overview"></a>
+
+The dashboard is your starting point for understanding resilience across your services. It provides:
++ **Resilience posture summary** – Overall compliance status across all services
++ **Assessment activity** – Recent and upcoming assessments
++ **Findings overview** – Open failure mode findings by severity
++ **Dependencies** – Newly discovered or unclassified dependencies

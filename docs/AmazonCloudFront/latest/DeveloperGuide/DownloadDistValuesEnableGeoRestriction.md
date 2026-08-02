@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesEnableGeoRestriction.html
+---
+
+# Geographic restrictions
+<a name="DownloadDistValuesEnableGeoRestriction"></a>
+
+If you need to prevent users in selected countries from accessing your content, you can configure your CloudFront distribution with an **Allowlist** or a **Block list**. There is no additional charge for configuring geographic restrictions. For more information, see [Restrict the geographic distribution of your content](georestrictions.md).

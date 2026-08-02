@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/domain-multiple-tag.html
+---
+
+# Automatic tag propagation
+<a name="domain-multiple-tag"></a>
+
+Tags allow you to categorize and label your resources based on various criteria, such as project, team, environment (For example, dev, staging, prod), or any other custom metadata. You can tag resources by your domain automatically when they are created within your domain. This makes it easier to identify and manage your resources across your domains. You can also use these tags for cost allocation using AWS Billing and Cost Management. For more information, see [Using AWS cost allocation tags](https://docs.aws.amazon.com//awsaccountbilling/latest/aboutv2/cost-alloc-tags.html).
+
+By default, any SageMaker AI resources that support tagging and are created from within the Amazon SageMaker Studio or Amazon SageMaker Studio Classic UI after 11/30/2022 are automatically tagged with a domain ARN tag. The domain ARN tag is based on the domain ID of the domain that the resource is created in.
+
+To backfill your SageMaker AI resources, you can add the `sagemaker:domain-arn` tag to untagged resources by following the steps in [Backfill domain tags](domain-multiple-backfill.md).
+
+The following list describes the only SageMaker AI resources that *do not* support automatic tag propagation, as well as the impacted API calls where the tag is not returned because it was not automatically set.
+
+**Note**
+All SageMaker `List` APIs do not support tag-based resource isolation.
+The `default` app, which manages the Studio UI, is not automatically tagged.
+
+|  SageMaker AI resource  |  Affected API calls  |
+| --- | --- |
+|  ImageVersionArn  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/domain-multiple-tag.html)  |
+|  ModelCardExportJobArn  | [describe-model-card-export-job](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-card-export-job.html)  |
+|  ModelPackageArn  | [describe-model-package](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-package.html)  |

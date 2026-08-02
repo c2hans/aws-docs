@@ -1,0 +1,63 @@
+---
+source_url: https://docs.aws.amazon.com/organizations/latest/userguide/tag_ou.html
+---
+
+# Tagging an organizational unit (OU) with AWS Organizations
+<a name="tag_ou"></a>
+
+When you sign in to your organization's management account, you can add or remove the tags attached to an OU. To do this, complete the following steps.
+
+**Minimum permissions**
+To edit the tags attached to an OU within a root in your organization, you must have the following permissions:
+`organizations:DescribeOrganization` – required only when using the Organizations console
+`organizations:DescribeOrganizationalUnit`– required only when using the Organizations console
+`organizations:TagResource`
+`organizations:UntagResource`
+
+------
+#### [ AWS Management Console ]
+
+**To edit the tags attached to an OU**
+
+1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
+
+1. On the **[AWS accounts](https://console.aws.amazon.com/organizations/v2/home/accounts)** page, [navigate to and choose the name of the OU](navigate_tree.md) whose tags you want to edit.
+
+1. On the OU's details page, choose the **Tags** tab, and then choose **Manage tags**.
+
+1. You can perform any of these actions on this tab:
+   + Edit the value for any tag by entering a new value over the old one. You can't modify the tag key. To change a key, you must delete the tag with the old key and add a tag with the new key.
+   + Remove an existing tag by choosing **Remove** next to the tag you want to remove.
+   + Add a new tag key and value pair. Choose **Add tag**, then enter the new key name and optional value in the provided boxes. If you leave the **Value** box empty, the value is an empty string; it isn't `null`.
+
+1. Choose **Save changes** after you've made all the additions, removals, and edits you want to make.
+
+------
+#### [ AWS CLI & AWS SDKs ]
+
+**To edit the tags attached to an OU**
+You can use one of the following commands to change the tags attached to an OU:
++ AWS CLI: [tag-resource](https://docs.aws.amazon.com/cli/latest/reference/organizations/tag-resource.html) and [untag-resource](https://docs.aws.amazon.com/cli/latest/reference/organizations/untag-resource.html)
+
+  The following example attaches the tag `"Department"="12345"` to an OU. Note that `Key` and `Value` are case sensitive.
+
+  ```
+  $ aws organizations tag-resource \
+      --resource-id ou-a1b2-f6g7h222 \
+      --tags Key=Department,Value=12345
+  ```
+
+  This command produces no output when successful.
+
+  The following example removes the `Department` tag from an OU.
+
+  ```
+  $ aws organizations untag-resource \
+      --resource-id ou-a1b2-f6g7h222 \
+      --tag-keys Department
+  ```
+
+  This command produces no output when successful.
++ AWS SDKs: [TagResource](https://docs.aws.amazon.com/organizations/latest/APIReference/API_TagResource.html) and [UntagResource](https://docs.aws.amazon.com/organizations/latest/APIReference/API_UntagResource.html)
+
+------

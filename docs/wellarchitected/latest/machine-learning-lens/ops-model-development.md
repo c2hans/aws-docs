@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/ops-model-development.html
+---
+
+# Model development
+<a name="ops-model-development"></a>
+
+**Topics**
++ [MLOPS04-BP01 Automate operations through MLOps and CI/CD](mlops04-bp01.md)
++ [MLOPS04-BP02 Establish reliable packaging patterns to access approved public libraries](mlops04-bp02.md)

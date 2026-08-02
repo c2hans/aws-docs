@@ -1,0 +1,100 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/supported-aws-services-data-sources.html
+---
+
+# Supported AWS services for data sources
+<a name="supported-aws-services-data-sources"></a>
+
+The following table lists the AWS services that are automatically categorized by CloudWatch Logs as data sources:
+
+| Data Source Name (@data\_source\_name field) | Data Source Type (@data\_source\_type field) |
+| --- | --- |
+| amazon\_api\_gateway | access |
+| amazon\_bedrock\_agentcore | browser\_usage |
+| amazon\_bedrock\_agentcore | code\_interpreter\_application |
+| amazon\_bedrock\_agentcore | code\_interpreter\_usage |
+| amazon\_bedrock\_agentcore | gateway\_application |
+| amazon\_bedrock\_agentcore | identity\_workload\_application |
+| amazon\_bedrock\_agentcore | memory\_application |
+| amazon\_bedrock\_agentcore | online\_evaluation\_config |
+| amazon\_bedrock\_agentcore | runtime\_application |
+| amazon\_bedrock\_agentcore | runtime\_usage |
+| amazon\_bedrock\_agents | application |
+| amazon\_bedrock\_agents | event |
+| amazon\_bedrock\_knowledge\_bases | application |
+| amazon\_cloudfront | access |
+| amazon\_cloudfront | connection |
+| amazon\_cloudwatch | rum\_app\_monitor |
+| amazon\_cognito | user\_pool |
+| amazon\_ec2 | verified\_access |
+| amazon\_eks | api\_server |
+| amazon\_eks | audit |
+| amazon\_eks | authenticator |
+| amazon\_eks | controller\_manager |
+| amazon\_eks | scheduler |
+| amazon\_elasticache | cluster |
+| amazon\_eventbridge | eventbus\_error |
+| amazon\_eventbridge | eventbus\_info |
+| amazon\_eventbridge | pipes\_execution |
+| amazon\_interactive\_video\_service | chat |
+| amazon\_managed\_prometheus | scraper |
+| amazon\_managed\_prometheus | workspace |
+| amazon\_msk | broker |
+| amazon\_msk | connect |
+| amazon\_opensearch\_service | pipeline |
+| amazon\_q\_business | events |
+| amazon\_q\_business | sync\_job |
+| amazon\_q\_connect | events |
+| amazon\_route53 | global\_resolver\_query |
+| amazon\_route53 | hosted\_zones |
+| amazon\_route53 | profiles\_resolver\_query |
+| amazon\_route53 | resolver\_query |
+| amazon\_sagemaker | workteam\_activity |
+| amazon\_ses | ingress\_endpoints |
+| amazon\_ses | rule\_sets |
+| amazon\_ses | traffic\_policy |
+| amazon\_vpc | flow |
+| amazon\_vpc | route\_server\_peer |
+| amazon\_vpc\_lattice | access |
+| amazon\_vpc\_lattice | resource\_access |
+| amazon\_workmail | access\_control |
+| amazon\_workmail | authentication |
+| amazon\_workmail | personal\_access |
+| amazon\_workmail | workmail\_access |
+| amazon\_workmail | workmail\_availability |
+| aws\_b2b\_data\_interchange | execution |
+| aws\_backup | data\_access |
+| aws\_backup | hypervisor |
+| aws\_clean\_rooms | analysis |
+| aws\_client\_vpn | connection |
+| aws\_client\_vpn | event |
+| aws\_cloudtrail | data |
+| aws\_cloudtrail | management |
+| aws\_elemental\_mediapackage | egress\_access |
+| aws\_elemental\_mediapackage | ingress\_access |
+| aws\_elemental\_mediatailor | ad\_decision |
+| aws\_elemental\_mediatailor | manifest |
+| aws\_elemental\_mediatailor | transcode |
+| aws\_entity\_resolution | id\_mapping\_workflow |
+| aws\_entity\_resolution | matching\_workflow |
+| aws\_iot\_fleetwise | error |
+| aws\_mainframe\_modernization | batch\_job |
+| aws\_mainframe\_modernization | config |
+| aws\_mainframe\_modernization | console |
+| aws\_mainframe\_modernization | dataset\_import |
+| aws\_network\_firewall | alert |
+| aws\_network\_firewall | flow |
+| aws\_network\_firewall | tls |
+| aws\_nlb | access |
+| aws\_pcs | job\_completion |
+| aws\_pcs | scheduler |
+| aws\_security\_hub | compliance\_finding |
+| aws\_security\_hub | data\_security\_finding |
+| aws\_security\_hub | detection\_finding |
+| aws\_security\_hub | vulnerability\_finding |
+| aws\_security\_hub\_cspm | asff\_finding |
+| aws\_shield | protection\_flow |
+| aws\_step\_functions | express |
+| aws\_step\_functions | standard |
+| aws\_transfer\_family | server |
+| aws\_waf | access |

@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-marketing-cloud-account-engagement-support.html
+---
+
+# AWS Glue support for Salesforce Marketing Cloud Account Engagement
+<a name="salesforce-marketing-cloud-account-engagement-support"></a>
+
+AWS Glue supports Salesforce Marketing Cloud Account Engagement as follows:
+
+**Supported as a source?**
+Yes. You can use AWS Glue ETL jobs to query data from Salesforce Marketing Cloud Account Engagement in either Async or Sync mode.
+
+**Supported as a target?**
+No.
+
+**Supported Salesforce Marketing Cloud Account Engagement API versions**
+The following Salesforce Marketing Cloud Account Engagement API versions are supported:
++ v5

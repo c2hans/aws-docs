@@ -1,0 +1,86 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/DynamoDBReplicationServiceRolePolicy.html
+---
+
+# DynamoDBReplicationServiceRolePolicy
+<a name="DynamoDBReplicationServiceRolePolicy"></a>
+
+**Description**: Permissions required by DynamoDB for cross-region data replication
+
+`DynamoDBReplicationServiceRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="DynamoDBReplicationServiceRolePolicy-how-to-use"></a>
+
+This policy is attached to a service-linked role that allows the service to perform actions on your behalf. You cannot attach this policy to your users, groups, or roles.
+
+## Policy details
+<a name="DynamoDBReplicationServiceRolePolicy-details"></a>
++ **Type**: Service-linked role policy
++ **Creation time**: November 09, 2017, 23:55 UTC
++ **Edited time:** January 08, 2024, 20:10 UTC
++ **ARN**: `arn:aws:iam::aws:policy/aws-service-role/DynamoDBReplicationServiceRolePolicy`
+
+## Policy version
+<a name="DynamoDBReplicationServiceRolePolicy-version"></a>
+
+**Policy version:** v8 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="DynamoDBReplicationServiceRolePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Sid" : "DynamoDBActionsNeededForSteadyStateReplication",
+      "Effect" : "Allow",
+      "Action" : [
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:UpdateItem",
+        "dynamodb:DeleteItem",
+        "dynamodb:DescribeTable",
+        "dynamodb:UpdateTable",
+        "dynamodb:Scan",
+        "dynamodb:DescribeStream",
+        "dynamodb:GetRecords",
+        "dynamodb:GetShardIterator",
+        "dynamodb:DescribeTimeToLive",
+        "dynamodb:UpdateTimeToLive",
+        "dynamodb:DescribeLimits",
+        "dynamodb:GetResourcePolicy",
+        "application-autoscaling:RegisterScalableTarget",
+        "application-autoscaling:DescribeScalableTargets",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:DescribeScalingPolicies",
+        "account:ListRegions"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "DynamoDBReplicationServiceRolePolicy",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : "*",
+      "Condition" : {
+        "StringEquals" : {
+          "iam:AWSServiceName" : [
+            "dynamodb.application-autoscaling.amazonaws.com"
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="DynamoDBReplicationServiceRolePolicy-learn-more"></a>
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

@@ -1,0 +1,58 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/clean-install-sm-upg-ready.html
+---
+
+This is version 2.20 of the AWS Elemental Statmux documentation. This is the latest version. For prior versions, see the *Previous Versions* section of [AWS Elemental Statmux and AWS Elemental Live Documentation](https://docs.aws.amazon.com/elemental-live).
+
+# Step A: Get Ready
+<a name="clean-install-sm-upg-ready"></a>
+
+## Save Your Files
+<a name="clean-install-sm-upg-ready-save"></a>
+
+During the kickstart part of a clean install, all the files on the node are permanently deleted. Therefore, you must first copy important files to another location. These files appear in the list in the table below.
+
+1. Locate the following files on the node, in the /home/elemental directory:
+****
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-statmux/latest/upgradeguide/clean-install-sm-upg-ready.html)
+
+1. Copy these files to a directory on another system, using the protocol compatible with your equipment. For example:
+   + Use Windows Share protocol: Connect to` \\<node IP>\elemental` on a PC.
+   + Use Samba: Connect to `smb://<node IP>/elemental `on a Mac.
+
+## Locate Files to be Downloaded
+<a name="clean-install-sm-upg-ready-dl"></a>
+
+1. Find the version of the software that you're downgrading to.
+
+   Follow these steps:
+
+   1. From a Linux prompt, log in to the hardware until with the *elemental* user credentials.
+
+   1. Look for the desired installer as shown here.
+
+      ```
+      [elemental@hostname ~] ls
+      ```
+
+      Look for the file named similar to this `...elemental_production_statmux_2.17.0.123456.run...`
+
+1. If you find the software, skip to [Step B: Install (Kickstart) the Operating System Software](clean-install-sm-upg-install.md).
+
+   If the software isn't on the hardware unit, go to the next step.
+
+1. From your regular workstation, open a web browser, go to [AWS Elemental Support Center Activations](https://console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/activations) and download the software for the version that you're going to.
+
+1. Make a note of where downloads are stored on your workstation. For example:
+
+   ```
+   h:/corporate/downloads/.
+   ```
+
+1. Make a note of the name of the download file. For example: `elemental_production_statmux_dg_version_short;.0.123456.run`
+
+1.  Copy the download file from your workstation to `/home/elemental/` on one of the nodes. For example:
+   + Use SFTP protocol and an FTP client application on your workstation computer. Connect to the IP address for AWS Elemental Delta on port 22 with the *elemental* user credentials and transfer the file.
+   + Use SCP protocol and an SCP client application on your workstation computer. Copy the file with the *elemental* user credentials and transfer the file.
+
+1. Repeat the download to any other nodes that are changing versions. If you're changing versions on several nodes, copy the download file to every hardware unit at once. Doing so reduces downtime on each node as you start installing the new software.

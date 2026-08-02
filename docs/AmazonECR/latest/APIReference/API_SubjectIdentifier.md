@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonECR/latest/APIReference/API_SubjectIdentifier.html
+---
+
+# SubjectIdentifier
+<a name="API_SubjectIdentifier"></a>
+
+An object that identifies an image subject.
+
+## Contents
+<a name="API_SubjectIdentifier_Contents"></a>
+
+ ** imageDigest **   <a name="ECR-Type-SubjectIdentifier-imageDigest"></a>
+The digest of the image.
+Type: String
+Required: Yes
+
+## See Also
+<a name="API_SubjectIdentifier_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ecr-2015-09-21/SubjectIdentifier)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecr-2015-09-21/SubjectIdentifier)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecr-2015-09-21/SubjectIdentifier)

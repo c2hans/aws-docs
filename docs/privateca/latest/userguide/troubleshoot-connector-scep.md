@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/privateca/latest/userguide/troubleshoot-connector-scep.html
+---
+
+# Troubleshoot AWS Private Certificate Authority Connector for SCEP issues
+<a name="troubleshoot-connector-scep"></a>
+
+You might need to troubleshoot issues related to your Connector for SCEP implementation. This chapter provides detailed information about the HTTP and client errors sent by the service.
+
+**Topics**
++ [Troubleshoot HTTP errors from Connector for SCEP](c4scep-troubleshoot-http-error.md)
++ [Troubleshoot Connector for SCEP client errors](troubleshoot-connector-scep-client-errors.md)

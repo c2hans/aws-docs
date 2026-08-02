@@ -1,0 +1,113 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_InviteMembers.html
+---
+
+# InviteMembers
+<a name="API_InviteMembers"></a>
+
+**Note**
+We recommend using AWS Organizations instead of Security Hub CSPM invitations to manage your member accounts. For information, see [Managing Security Hub CSPM administrator and member accounts with Organizations](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-accounts-orgs.html) in the * AWS Security Hub CSPM User Guide*.
+
+Invites other AWS accounts to become member accounts for the Security Hub CSPM administrator account that the invitation is sent from.
+
+This operation is only used to invite accounts that don't belong to an AWS organization. Organization accounts don't receive invitations.
+
+Before you can use this action to invite a member, you must first use the `CreateMembers` action to create the member account in Security Hub CSPM.
+
+When the account owner enables Security Hub CSPM and accepts the invitation to become a member account, the administrator account can view the findings generated in the member account.
+
+## Request Syntax
+<a name="API_InviteMembers_RequestSyntax"></a>
+
+```
+POST /members/invite HTTP/1.1
+Content-type: application/json
+
+{
+   "AccountIds": [ "{{string}}" ]
+}
+```
+
+## URI Request Parameters
+<a name="API_InviteMembers_RequestParameters"></a>
+
+The request does not use any URI parameters.
+
+## Request Body
+<a name="API_InviteMembers_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [AccountIds](#API_InviteMembers_RequestSyntax) **   <a name="securityhub-InviteMembers-request-AccountIds"></a>
+The list of account IDs of the AWS accounts to invite to Security Hub CSPM as members.
+Type: Array of strings
+Pattern: `.*\S.*`
+Required: Yes
+
+## Response Syntax
+<a name="API_InviteMembers_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "UnprocessedAccounts": [
+      {
+         "AccountId": "string",
+         "ProcessingResult": "string"
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_InviteMembers_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [UnprocessedAccounts](#API_InviteMembers_ResponseSyntax) **   <a name="securityhub-InviteMembers-response-UnprocessedAccounts"></a>
+The list of AWS accounts that could not be processed. For each account, the list includes the account ID and the email address.
+Type: Array of [Result](API_Result.md) objects
+
+## Errors
+<a name="API_InviteMembers_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalException **
+Internal server error.
+HTTP Status Code: 500
+
+ ** InvalidAccessException **
+The account doesn't have permission to perform this action.
+HTTP Status Code: 401
+
+ ** InvalidInputException **
+The request was rejected because you supplied an invalid or out-of-range value for an input parameter.
+HTTP Status Code: 400
+
+ ** LimitExceededException **
+The request was rejected because it attempted to create resources beyond the current AWS account or throttling limits. The error code describes the limit exceeded.
+HTTP Status Code: 429
+
+ ** ResourceNotFoundException **
+The request was rejected because we can't find the specified resource.
+HTTP Status Code: 404
+
+## See Also
+<a name="API_InviteMembers_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/securityhub-2018-10-26/InviteMembers)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/InviteMembers)

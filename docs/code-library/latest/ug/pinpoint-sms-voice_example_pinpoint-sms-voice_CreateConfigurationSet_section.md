@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/pinpoint-sms-voice_example_pinpoint-sms-voice_CreateConfigurationSet_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `CreateConfigurationSet` with an AWS SDK
+<a name="pinpoint-sms-voice_example_pinpoint-sms-voice_CreateConfigurationSet_section"></a>
+
+The following code example shows how to use `CreateConfigurationSet`.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/pps#code-examples).
+
+```
+    TRY.
+        " Create a new configuration set
+        lo_pps->createconfigurationset(
+          iv_configurationsetname = iv_configuration_set_name    " e.g., 'my-config-set'
+        ).
+
+        MESSAGE 'Configuration set created successfully.' TYPE 'I'.
+
+      CATCH /aws1/cx_ppsalreadyexistsex INTO DATA(lo_already_exists_ex).
+        MESSAGE lo_already_exists_ex->get_text( ) TYPE 'I'.
+        RAISE EXCEPTION lo_already_exists_ex.
+      CATCH /aws1/cx_ppsbadrequestex INTO DATA(lo_bad_request_ex).
+        MESSAGE lo_bad_request_ex->get_text( ) TYPE 'I'.
+        RAISE EXCEPTION lo_bad_request_ex.
+      CATCH /aws1/cx_ppsinternalsvcerrorex INTO DATA(lo_internal_error_ex).
+        MESSAGE lo_internal_error_ex->get_text( ) TYPE 'I'.
+        RAISE EXCEPTION lo_internal_error_ex.
+      CATCH /aws1/cx_ppslimitexceededex INTO DATA(lo_limit_exceeded_ex).
+        MESSAGE lo_limit_exceeded_ex->get_text( ) TYPE 'I'.
+        RAISE EXCEPTION lo_limit_exceeded_ex.
+      CATCH /aws1/cx_ppstoomanyrequestsex INTO DATA(lo_too_many_requests_ex).
+        MESSAGE lo_too_many_requests_ex->get_text( ) TYPE 'I'.
+        RAISE EXCEPTION lo_too_many_requests_ex.
+    ENDTRY.
+```
++  For API details, see [CreateConfigurationSet](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

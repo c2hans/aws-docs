@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PhoneNumberQuickConnectConfig.html
+---
+
+# PhoneNumberQuickConnectConfig
+<a name="API_PhoneNumberQuickConnectConfig"></a>
+
+Contains information about a phone number for a quick connect.
+
+## Contents
+<a name="API_PhoneNumberQuickConnectConfig_Contents"></a>
+
+ ** PhoneNumber **   <a name="connect-Type-PhoneNumberQuickConnectConfig-PhoneNumber"></a>
+The phone number in E.164 format.
+Type: String
+Pattern: `\\+[1-9]\\d{1,14}$`
+Required: Yes
+
+## See Also
+<a name="API_PhoneNumberQuickConnectConfig_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/PhoneNumberQuickConnectConfig)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/PhoneNumberQuickConnectConfig)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/PhoneNumberQuickConnectConfig)

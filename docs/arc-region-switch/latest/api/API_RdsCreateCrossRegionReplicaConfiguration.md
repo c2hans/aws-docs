@@ -1,0 +1,43 @@
+---
+source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RdsCreateCrossRegionReplicaConfiguration.html
+---
+
+# RdsCreateCrossRegionReplicaConfiguration
+<a name="API_RdsCreateCrossRegionReplicaConfiguration"></a>
+
+Configuration for creating an Amazon RDS cross-Region read replica during post-recovery in a Region switch.
+
+## Contents
+<a name="API_RdsCreateCrossRegionReplicaConfiguration_Contents"></a>
+
+ ** dbInstanceArnMap **   <a name="regionswitch-Type-RdsCreateCrossRegionReplicaConfiguration-dbInstanceArnMap"></a>
+A map of database instance ARNs for each Region in the plan.
+Type: String to string map
+Key Pattern: `[a-z]{2}-[a-z-]+-\d+`
+Value Pattern: `arn:aws[a-zA-Z-]*:rds:[a-z0-9-]+:\d{12}:db:[a-zA-Z][a-zA-Z0-9]*(-[a-zA-Z0-9]+)*`
+Required: Yes
+
+ ** crossAccountRole **   <a name="regionswitch-Type-RdsCreateCrossRegionReplicaConfiguration-crossAccountRole"></a>
+The cross-account role for the configuration.
+Type: String
+Pattern: `arn:aws[a-zA-Z0-9-]*:iam::[0-9]{12}:role/.+`
+Required: No
+
+ ** externalId **   <a name="regionswitch-Type-RdsCreateCrossRegionReplicaConfiguration-externalId"></a>
+The external ID (secret key) for the configuration.
+Type: String
+Required: No
+
+ ** timeoutMinutes **   <a name="regionswitch-Type-RdsCreateCrossRegionReplicaConfiguration-timeoutMinutes"></a>
+The timeout value specified for the configuration.
+Type: Integer
+Valid Range: Minimum value of 1.
+Required: No
+
+## See Also
+<a name="API_RdsCreateCrossRegionReplicaConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/arc-region-switch-2022-07-26/RdsCreateCrossRegionReplicaConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/arc-region-switch-2022-07-26/RdsCreateCrossRegionReplicaConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/arc-region-switch-2022-07-26/RdsCreateCrossRegionReplicaConfiguration)

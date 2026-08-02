@@ -1,0 +1,142 @@
+---
+source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_CreateLocationS3.html
+---
+
+# CreateLocationS3
+<a name="API_CreateLocationS3"></a>
+
+Creates a transfer *location* for an Amazon S3 bucket. AWS DataSync can use this location as a source or destination for transferring data.
+
+**Important**
+Before you begin, make sure that you read the following topics:
+ [Storage class considerations with Amazon S3 locations](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html#using-storage-classes)
+ [Evaluating S3 request costs when using DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html#create-s3-location-s3-requests)
+
+ For more information, see [Configuring transfers with Amazon S3](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html).
+
+## Request Syntax
+<a name="API_CreateLocationS3_RequestSyntax"></a>
+
+```
+{
+   "AgentArns": [ "{{string}}" ],
+   "S3BucketArn": "{{string}}",
+   "S3Config": {
+      "BucketAccessRoleArn": "{{string}}"
+   },
+   "S3StorageClass": "{{string}}",
+   "Subdirectory": "{{string}}",
+   "Tags": [
+      {
+         "Key": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ]
+}
+```
+
+## Request Parameters
+<a name="API_CreateLocationS3_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AgentArns](#API_CreateLocationS3_RequestSyntax) **   <a name="DataSync-CreateLocationS3-request-AgentArns"></a>
+(Amazon S3 on Outposts only) Specifies the Amazon Resource Name (ARN) of the DataSync agent on your Outpost.
+For more information, see [Deploy your DataSync agent on AWS Outposts](https://docs.aws.amazon.com/datasync/latest/userguide/deploy-agents.html#outposts-agent).
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 8 items.
+Length Constraints: Maximum length of 128.
+Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:agent/agent-[0-9a-z]{17}$`
+Required: No
+
+ ** [S3BucketArn](#API_CreateLocationS3_RequestSyntax) **   <a name="DataSync-CreateLocationS3-request-S3BucketArn"></a>
+Specifies the ARN of the S3 bucket that you want to use as a location. (When creating your DataSync task later, you specify whether this location is a transfer source or destination.)
+If your S3 bucket is located on an AWS Outposts resource, you must specify an Amazon S3 access point. For more information, see [Managing data access with Amazon S3 access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points.html) in the *Amazon S3 User Guide*.
+Type: String
+Length Constraints: Maximum length of 268.
+Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):s3:[a-z\-0-9]*:[0-9]{12}:accesspoint[/:][a-zA-Z0-9\-.]{1,63}$|^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):s3-outposts:[a-z\-0-9]+:[0-9]{12}:outpost[/:][a-zA-Z0-9\-]{1,63}[/:]accesspoint[/:][a-zA-Z0-9\-]{1,63}$|^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):s3:::[a-zA-Z0-9.\-_]{1,255}$`
+Required: Yes
+
+ ** [S3Config](#API_CreateLocationS3_RequestSyntax) **   <a name="DataSync-CreateLocationS3-request-S3Config"></a>
+Specifies the Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that DataSync uses to access your S3 bucket.
+For more information, see [Providing DataSync access to S3 buckets](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html#create-s3-location-access).
+Type: [S3Config](API_S3Config.md) object
+Required: Yes
+
+ ** [S3StorageClass](#API_CreateLocationS3_RequestSyntax) **   <a name="DataSync-CreateLocationS3-request-S3StorageClass"></a>
+Specifies the storage class that you want your objects to use when Amazon S3 is a transfer destination.
+For buckets in AWS Regions, the storage class defaults to `STANDARD`. For buckets on AWS Outposts, the storage class defaults to `OUTPOSTS`.
+For more information, see [Storage class considerations with Amazon S3 transfers](https://docs.aws.amazon.com/datasync/latest/userguide/create-s3-location.html#using-storage-classes).
+Type: String
+Valid Values: `STANDARD | STANDARD_IA | ONEZONE_IA | INTELLIGENT_TIERING | GLACIER | DEEP_ARCHIVE | OUTPOSTS | GLACIER_INSTANT_RETRIEVAL`
+Required: No
+
+ ** [Subdirectory](#API_CreateLocationS3_RequestSyntax) **   <a name="DataSync-CreateLocationS3-request-Subdirectory"></a>
+Specifies a prefix in the S3 bucket that DataSync reads from or writes to (depending on whether the bucket is a source or destination location).
+DataSync can't transfer objects with a prefix that begins with a slash (`/`) or includes `//`, `/./`, or `/../` patterns. For example:
++  `/photos`
++  `photos//2006/January`
++  `photos/./2006/February`
++  `photos/../2006/March`
+Type: String
+Length Constraints: Maximum length of 4096.
+Pattern: `^[a-zA-Z0-9_\-\+\./\(\)\p{Zs}]*$`
+Required: No
+
+ ** [Tags](#API_CreateLocationS3_RequestSyntax) **   <a name="DataSync-CreateLocationS3-request-Tags"></a>
+Specifies labels that help you categorize, filter, and search for your AWS resources. We recommend creating at least a name tag for your transfer location.
+Type: Array of [TagListEntry](API_TagListEntry.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
+Required: No
+
+## Response Syntax
+<a name="API_CreateLocationS3_ResponseSyntax"></a>
+
+```
+{
+   "LocationArn": "string"
+}
+```
+
+## Response Elements
+<a name="API_CreateLocationS3_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [LocationArn](#API_CreateLocationS3_ResponseSyntax) **   <a name="DataSync-CreateLocationS3-response-LocationArn"></a>
+The ARN of the S3 location that you created.
+Type: String
+Length Constraints: Maximum length of 128.
+Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:location/loc-[0-9a-z]{17}$`
+
+## Errors
+<a name="API_CreateLocationS3_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalException **
+This exception is thrown when an error occurs in the AWS DataSync service.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+This exception is thrown when the client submits a malformed request.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_CreateLocationS3_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/datasync-2018-11-09/CreateLocationS3)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/datasync-2018-11-09/CreateLocationS3)

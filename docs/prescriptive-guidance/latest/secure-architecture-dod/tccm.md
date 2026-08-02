@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/secure-architecture-dod/tccm.html
+---
+
+# Trusted Cloud Credential Manager
+<a name="tccm"></a>
+
+The Trusted Cloud Credential Manager (TCCM) is a component of the SCCA. It is responsible for credential management. When establishing the TCCM, it's important to allow least-privilege access to the SCCA. This can be accomplished by using AWS identity and access management services. An additional component of the TCCM is a connection to the Virtual Data Center Managed Services (VDMS). You can use this connection as needed to access the AWS Management Console to manage the TCCM.
+
+The TCCM is a combination of both technologies and standards that govern access to AWS. The TCCM is considered critical for most implementations because it controls access permissions. The TCCM function is not intended to place unique identity management requirements upon the commercial cloud service provider (CSP). The TCCM also does not prohibit the use of DoD CSP federation or third-party identity broker solutions to provide the intended identity control.
+
+The TCCM policy components are based on a general understanding that CSPs offer an identity and access management system that allows control of access to cloud systems. Such systems can include the CSP's access console, API, and command-line interface (CLI) service components. At the base level, the TCCM must lock down credentials that can be used to create unauthorized networks and other resources. The TCCM is appointed by the Authorizing Official (AO) charged with oversight of IT systems. The TCCM policies establish the need for a least-privilege access model. These policies are responsible for the provision and control of privileged user credentials in the commercial cloud. This is to stay in alignment with the [DoD Cloud Computing Security Requirements Guide](https://public.cyber.mil/dccs/dccs-documents/), which addresses the implementation of policies, plans, and procedures for managing your portal account credentials. Prior to connection to the Defense Information Systems Network (DISN), DISA validates the existence of the Cloud Credential Management Plan (CCMP) as part of the connection approval process defined in the [Connection Process Guide](https://dl.dod.cyber.mil/wp-content/uploads/connect/CPG/ConnProcGuide.html).
+
+The following table contains the minimum requirements for the TCCM. It explains whether the LZA addresses each requirement and which AWS services you can use to meet these requirements.
+
+|
+|
+| ID | TCCM security requirements | AWS technologies | Additional resources | Covered by LZA |
+| --- |--- |--- |--- |--- |
+| 2.1.4.1 | The TCCM shall develop and maintain a Cloud Credential Management Plan (CCMP)to address the implementation of policies, plans, and procedures that will be applied to mission owner customer portal account credential management. | N/A | N/A | Not covered |
+| 2.1.4.2 | The TCCM shall collect, audit, and archive all Customer Portal activity logs and alerts. | [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)<br />[Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) | N/A | Covered |
+| 2.1.4.3 | The TCCM shall ensure activity log alerts are shared with, forwarded to, or retrievable by DoD privileged users engaged in MCP and BCP activities. | [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)<br />[CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)<br />[Amazon Simple Notification Service (Amazon SNS)](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)<br />[CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) | N/A | Covered |
+| 2.1.4.4 | The TCCM shall, as necessary for information sharing, create log repository access accounts for access to activity log data by privileged users performing both MCP and BCP activities. | [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)<br />[CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)<br />[Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)<br />[CloudWatch Logs Insights](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLogData.html) | N/A | Covered |
+| 2.1.4.5 | The TCCM shall recover and securely control customer portal account credentials prior to mission application connectivity to the DISN. | [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | N/A | Covered |
+| 2.1.4.6 | The TCCM shall create, issue, and revoke, as necessary, role based access least privileged customer portal credentials to mission owner application and system administrators (i.e., DoD privileged users). | [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)<br />[AWS Directory Service for Microsoft Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) | N/A | Covered |
+
+In order to enable the TCCM to meet requirements, the LZA uses programmatic control of resources through the IAM service. You can additionally combine IAM with AWS Managed Microsoft AD to implement single sign-on to another directory. This ties your AWS environment to your on-premises infrastructure with Active Directory trusts.  In the LZA, the implementation is deployed with IAM roles for temporary, session-based access  IAM roles are short-lived credentials that help your organization meet the necessary TCCM requirements.
+
+Although the LZA implements least privilege access and programmatic, short-term access to AWS resources, review the [IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) to ensure that you follow the recommended security guidance.
+
+For more information about implementing AWS Managed Microsoft AD, see the [AWS Managed Microsoft AD](https://catalog.workshops.aws/ad-id/en-US/1-aws-managed-microsoft-ad/deploymgmt) section of the *Active Directory on AWS Immersion Day* workshop.
+
+The [AWS shared responsibility model](https://aws.amazon.com/compliance/shared-responsibility-model/) applies to the TCCM and the LZA. The LZA builds the foundational aspects of access control, but each organization is responsible for the configuration of their security controls.

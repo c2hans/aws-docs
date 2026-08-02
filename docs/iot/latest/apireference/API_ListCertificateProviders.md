@@ -1,0 +1,118 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/apireference/API_ListCertificateProviders.html
+---
+
+# ListCertificateProviders
+<a name="API_ListCertificateProviders"></a>
+
+Lists all your certificate providers in your AWS account.
+
+Requires permission to access the [ListCertificateProviders](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions) action.
+
+## Request Syntax
+<a name="API_ListCertificateProviders_RequestSyntax"></a>
+
+```
+GET /certificate-providers/?isAscendingOrder={{ascendingOrder}}&nextToken={{nextToken}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListCertificateProviders_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [ascendingOrder](#API_ListCertificateProviders_RequestSyntax) **   <a name="iot-ListCertificateProviders-request-uri-ascendingOrder"></a>
+Returns the list of certificate providers in ascending alphabetical order.
+
+ ** [nextToken](#API_ListCertificateProviders_RequestSyntax) **   <a name="iot-ListCertificateProviders-request-uri-nextToken"></a>
+The token for the next set of results, or `null` if there are no more results.
+Length Constraints: Maximum length of 1024.
+Pattern: `[A-Za-z0-9+/]+={0,2}`
+
+## Request Body
+<a name="API_ListCertificateProviders_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListCertificateProviders_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "certificateProviders": [
+      {
+         "certificateProviderArn": "string",
+         "certificateProviderName": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
+## Response Elements
+<a name="API_ListCertificateProviders_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [certificateProviders](#API_ListCertificateProviders_ResponseSyntax) **   <a name="iot-ListCertificateProviders-response-certificateProviders"></a>
+The list of certificate providers in your AWS account.
+Type: Array of [CertificateProviderSummary](API_CertificateProviderSummary.md) objects
+
+ ** [nextToken](#API_ListCertificateProviders_ResponseSyntax) **   <a name="iot-ListCertificateProviders-response-nextToken"></a>
+The token for the next set of results, or `null` if there are no more results.
+Type: String
+Length Constraints: Maximum length of 1024.
+Pattern: `[A-Za-z0-9+/]+={0,2}`
+
+## Errors
+<a name="API_ListCertificateProviders_Errors"></a>
+
+ ** InternalFailureException **
+An unexpected error has occurred.
+ ** message **
+The message for the exception.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+The request is not valid.
+ ** message **
+The message for the exception.
+HTTP Status Code: 400
+
+ ** ServiceUnavailableException **
+The service is temporarily unavailable.
+ ** message **
+The message for the exception.
+HTTP Status Code: 503
+
+ ** ThrottlingException **
+The rate exceeds the limit.
+ ** message **
+The message for the exception.
+HTTP Status Code: 400
+
+ ** UnauthorizedException **
+You are not authorized to perform this operation.
+ ** message **
+The message for the exception.
+HTTP Status Code: 401
+
+## See Also
+<a name="API_ListCertificateProviders_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/iot-2015-05-28/ListCertificateProviders)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iot-2015-05-28/ListCertificateProviders)

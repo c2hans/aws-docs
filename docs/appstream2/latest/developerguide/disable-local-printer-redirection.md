@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/disable-local-printer-redirection.html
+---
+
+# How to Disable Local Printer Redirection
+<a name="disable-local-printer-redirection"></a>
+
+To disable local printer redirection follow these steps.
+
+**To disable local printer redirection**
+
+You can disable local printer redirection in any of the following ways:
++ During client installation on managed devices. For more information, see [Choose Whether to Disable Local Printer Redirection](install-client-configure-settings.md#disable-local-printer-redirection-client).
++ By using the WorkSpaces Applications console to disable this option on an WorkSpaces Applications stack.
++ By using the WorkSpaces Applications API, an AWS SDK, or the AWS Command Line Interface (AWS CLI) to disable this option on an WorkSpaces Applications stack.

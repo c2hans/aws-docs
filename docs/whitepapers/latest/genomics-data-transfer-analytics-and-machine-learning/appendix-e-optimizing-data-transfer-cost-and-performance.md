@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/genomics-data-transfer-analytics-and-machine-learning/appendix-e-optimizing-data-transfer-cost-and-performance.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Appendix E: Optimizing data transfer, cost, and performance
+<a name="appendix-e-optimizing-data-transfer-cost-and-performance"></a>
+
+ When transferring genomics data to long term storage, filter and validate the data before data transfer to Amazon S3. You can create a run completion tracker that starts an AWS DataSync task run to transfer the run data to an Amazon S3 bucket. The run completion tracker script can be run as a cron job. An inclusion filter can be used when running a DataSync task run, to only include a given run folder. Exclusion filters can be used to exclude files from data transfer. In addition, consider Incorporating a zero-bite file as a flag when uploading the data. Technicians can then indicate when a run has passed a manual QA check by placing an empty file in the data folder. Then, the run completion tracker will only trigger a sync task if the success file is present.
+
+ This type of application is useful, for example, to monitor a HiSEQ X flow cell directory which may contain up to 1.4 million files or more. A percentage of those files, approximately 450,000, may not be needed for subsequent analytics. These extraneous files are in the form of thumbnails and can be excluded from the run data uploaded.
+
+ Laboratory personnel typically perform a manual and, often, an automated quality control (QC) check to verify that the Genomics Sequencer functioned correctly and that the data meets laboratory quality standards. For example, in whole genome sequencing using a HiSEQ X system, a minimum number of cycles must be reached for the data to be of sufficient quality. This data resides in a text file and can be checked using a basic script. Also, laboratory personnel must verify that the data meets laboratory quality standards using quality control software that can check the performance of the instrument, reagents, and consumables. After passing QC, the lab may place a ‘qc’ file in the run data directory indicating that it has passed QC. Only data folders that have the 'qc' file will trigger a DataSync task execution for upload. By adding the QC file to the flow cell folder, unnecessary information including test runs, titration runs, and qualification runs (for Good Laboratory Practices (GLP)/Clinical Laboratory Improvement Amendment (CLIA)/College of American Pathologist (CAP) certified laboratories) can be excluded from upload. This prevents unwanted data from being uploaded to Amazon S3 and is an important step to keep storage costs down.

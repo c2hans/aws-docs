@@ -1,0 +1,108 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociatePhoneNumberContactFlow.html
+---
+
+# AssociatePhoneNumberContactFlow
+<a name="API_AssociatePhoneNumberContactFlow"></a>
+
+Associates a flow with a phone number claimed to your Connect Customer instance.
+
+**Important**
+If the number is claimed to a traffic distribution group, and you are calling this API using an instance in the AWS Region where the traffic distribution group was created, you can use either a full phone number ARN or UUID value for the `PhoneNumberId` URI request parameter. However, if the number is claimed to a traffic distribution group and you are calling this API using an instance in the alternate AWS Region associated with the traffic distribution group, you must provide a full phone number ARN. If a UUID is provided in this scenario, you will receive a `ResourceNotFoundException`.
+
+## Request Syntax
+<a name="API_AssociatePhoneNumberContactFlow_RequestSyntax"></a>
+
+```
+PUT /phone-number/{{PhoneNumberId}}/contact-flow HTTP/1.1
+Content-type: application/json
+
+{
+   "ContactFlowId": "{{string}}",
+   "InstanceId": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_AssociatePhoneNumberContactFlow_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [PhoneNumberId](#API_AssociatePhoneNumberContactFlow_RequestSyntax) **   <a name="connect-AssociatePhoneNumberContactFlow-request-uri-PhoneNumberId"></a>
+A unique identifier for the phone number.
+Required: Yes
+
+## Request Body
+<a name="API_AssociatePhoneNumberContactFlow_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [ContactFlowId](#API_AssociatePhoneNumberContactFlow_RequestSyntax) **   <a name="connect-AssociatePhoneNumberContactFlow-request-ContactFlowId"></a>
+The identifier of the flow.
+Type: String
+Length Constraints: Maximum length of 500.
+Required: Yes
+
+ ** [InstanceId](#API_AssociatePhoneNumberContactFlow_RequestSyntax) **   <a name="connect-AssociatePhoneNumberContactFlow-request-InstanceId"></a>
+The identifier of the Connect Customer instance. You can [find the instance ID](https://docs.aws.amazon.com/connect/latest/adminguide/find-instance-arn.html) in the Amazon Resource Name (ARN) of the instance.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Required: Yes
+
+## Response Syntax
+<a name="API_AssociatePhoneNumberContactFlow_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+```
+
+## Response Elements
+<a name="API_AssociatePhoneNumberContactFlow_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+<a name="API_AssociatePhoneNumberContactFlow_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient permissions to perform this action.
+HTTP Status Code: 403
+
+ ** InternalServiceException **
+Request processing failed because of an error or failure with the service.
+ ** Message **
+The message.
+HTTP Status Code: 500
+
+ ** InvalidParameterException **
+One or more of the specified parameters are not valid.
+ ** Message **
+The message about the parameters.
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+The specified resource was not found.
+ ** Message **
+The message about the resource.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The throttling limit has been exceeded.
+HTTP Status Code: 429
+
+## See Also
+<a name="API_AssociatePhoneNumberContactFlow_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/connect-2017-08-08/AssociatePhoneNumberContactFlow)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/AssociatePhoneNumberContactFlow)

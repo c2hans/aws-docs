@@ -1,0 +1,127 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html
+---
+
+# Get event status
+<a name="get-event-status"></a>
+
+Get the status of the inputs in the specified event.
+
+There is no explicit command to get the status of the inputs in the dynamic playlist. But you can get the event status in order to get status information about the dynamic playlist.
+
+Warning: Get Event Status only works with the JSON format. Therefore, the request header must include Accept: application/json and Content-type:application/json
+
+## HTTP request and response
+<a name="get-event-status-http-request-and-response"></a>
+
+### HTTP URL
+<a name="get-event-status-http-url"></a>
+
+```
+GET http://<Live IP address>/live_events/<event ID>/status
+```
+
+### Response
+<a name="get-event-status-response"></a>
+
+JSON content consisting of one live\_event element that contains:
++ One outputs element and one output\_groups element that each includes various tags.
++ One active\_input tag that contains the REST ID of the currently Active input.
++ One inputs element that lists the inputs. The inputs appear in the order in which they were originally listed when the dynamic playlist was created. The following information appears for each input:
+
+|  Tag  |  Value  |  Description  |
+| --- | --- | --- |
+| id | Integer | The unique REST ID for this input |
+| state | String | The state of the input:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| input\_label | String | The input label, if one was created. |
+| uri | String | The URI for a file input.  |
+
+### Stage and state
+<a name="get-event-status-stage-and-state"></a>
+
+The state tag and active\_input tag can provide some information about the stage and state of each input:
+
+|  State tag  |  active\_input tag  |  Stage and state  |
+| --- | --- | --- |
+| pending | Does not specify this input | The input is one of:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| clear | Does not specify this input | The input is one of:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| clear | Specifies this input | The input is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| quarantined | Specifies this input | The input is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| errored | Specifies this input | A failure condition (as defined by the failure\_condition tag in the event XML) has been triggered.  |
+
+Note that you cannot determine whether the input is Next-in-line from the response to this Get. You must maintain that information outside of Elemental Live.
+
+## Example
+<a name="get-event-status-example"></a>
+
+```
+GET http://10.4.136.92/live_events/47/status
+{
+  "live_event": {
+    "id": "47",
+    "status": "running",
+    "outputs": [
+      .
+      .
+      .
+    ],
+    "output_groups": [
+      .
+      .
+      .
+    ],
+      .
+      .
+      .
+    "active_input": "533761",
+      .
+      .
+      .
+    "inputs": [
+      {
+        "id": "29",
+        "state": "pending",
+        "input_label": "live_curling",
+      },
+      {
+        "id": "30",
+        "state": "clear",
+      .
+      .
+      .
+
+      },
+      {
+        "id": "30",
+        "state": "pending",
+        "input_label": null,
+        "uri": "http://10.4.99.22/ads/best_trowel_ad.m3u8?_=0ap3000000580895"
+      },
+      {
+        "id": "31",
+        "state": "pending",
+        "input_label": null,
+        "uri": "http://10.4.99.22/ads/magic_scraper_ad/master.m3u8"
+      },
+      {
+        "id": "32",
+        "state": "pending",
+        "input_label": null,
+        "uri": "http://10.4.99.22/ads/enigmatic_car_ad/master.m3u8"
+      },
+      {
+        "id": "33",
+        "state": "pending",
+        "input_label": null,
+        "uri": "http://10.4.99.22/ads/chouette_toy_ad.m3u8"
+      },
+      .
+      .
+      .
+    ],
+    "alerts": [],
+    "audio_level": "-7",
+    "elapsed_time_in_words": "01:10:28"
+  }
+}
+```

@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/access-analyzer/latest/APIReference/API_AnalysisRule.html
+---
+
+# AnalysisRule
+<a name="API_AnalysisRule"></a>
+
+Contains information about analysis rules for the analyzer. Analysis rules determine which entities will generate findings based on the criteria you define when you create the rule.
+
+## Contents
+<a name="API_AnalysisRule_Contents"></a>
+
+ ** exclusions **   <a name="accessanalyzer-Type-AnalysisRule-exclusions"></a>
+A list of rules for the analyzer containing criteria to exclude from analysis. Entities that meet the rule criteria will not generate findings.
+Type: Array of [AnalysisRuleCriteria](API_AnalysisRuleCriteria.md) objects
+Required: No
+
+## See Also
+<a name="API_AnalysisRule_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/accessanalyzer-2019-11-01/AnalysisRule)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/accessanalyzer-2019-11-01/AnalysisRule)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/accessanalyzer-2019-11-01/AnalysisRule)

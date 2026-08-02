@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/ug/create-cloudtrail-table-ct.html
+---
+
+# Use the CloudTrail console to create an Athena table for CloudTrail logs
+<a name="create-cloudtrail-table-ct"></a>
+
+You can create a non-partitioned Athena table for querying CloudTrail logs directly from the CloudTrail console. Creating an Athena table from the CloudTrail console requires that you be logged in with a role that has sufficient permissions to create tables in Athena.
+
+**Note**
+You cannot use the CloudTrail console to create an Athena table for organization trail logs. Instead, create the table manually using the Athena console so that you can specify the correct storage location. For information about organization trails, see [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html) in the *AWS CloudTrail User Guide*.
++ For information about setting up permissions for Athena, see [Set up, administrative, and programmatic access](setting-up.md).
++ For information about creating a table with partitions, see [Create a table for CloudTrail logs in Athena using manual partitioning](create-cloudtrail-table.md).
+
+**To create an Athena table for a CloudTrail trail using the CloudTrail console**
+
+1. Open the CloudTrail console at [https://console.aws.amazon.com/cloudtrail/](https://console.aws.amazon.com/cloudtrail/).
+
+1. In the navigation pane, choose **Event history**.
+
+1. Choose **Create Athena table**.
+![Choose Create Athena table](http://docs.aws.amazon.com/athena/latest/ug/images/cloudtrail-logs-create-athena-table.png)
+
+1. For **Storage location**, use the down arrow to select the Amazon S3 bucket where log files are stored for the trail to query.
+**Note**
+To find the name of the bucket that is associated with a trail, choose **Trails** in the CloudTrail navigation pane and view the trail's **S3 bucket** column. To see the Amazon S3 location for the bucket, choose the link for the bucket in the **S3 bucket** column. This opens the Amazon S3 console to the CloudTrail bucket location.
+
+1. Choose **Create table**. The table is created with a default name that includes the name of the Amazon S3 bucket.

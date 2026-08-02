@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_JoinResourceTypeEventConfiguration.html
+---
+
+# JoinResourceTypeEventConfiguration
+<a name="API_JoinResourceTypeEventConfiguration"></a>
+
+Join resource type event configuration object for enabling or disabling topic.
+
+## Contents
+<a name="API_JoinResourceTypeEventConfiguration_Contents"></a>
+
+ ** LoRaWAN **   <a name="iotwireless-Type-JoinResourceTypeEventConfiguration-LoRaWAN"></a>
+Join resource type event configuration object for enabling or disabling LoRaWAN related event topics.
+Type: [LoRaWANJoinResourceTypeEventConfiguration](API_LoRaWANJoinResourceTypeEventConfiguration.md) object
+Required: No
+
+## See Also
+<a name="API_JoinResourceTypeEventConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotwireless-2025-11-06/JoinResourceTypeEventConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotwireless-2025-11-06/JoinResourceTypeEventConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotwireless-2025-11-06/JoinResourceTypeEventConfiguration)

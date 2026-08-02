@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2023-10-03/framework/ops-06.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# OPS 6. How do you mitigate deployment risks?
+<a name="ops-06"></a>
+
+ Adopt approaches that provide fast feedback on quality and achieve rapid recovery from changes that do not have desired outcomes. Using these practices mitigates the impact of issues introduced through the deployment of changes.
+
+**Topics**
++ [OPS06-BP01 Plan for unsuccessful changes](ops_mit_deploy_risks_plan_for_unsucessful_changes.md)
++ [OPS06-BP02 Test deployments](ops_mit_deploy_risks_test_val_chg.md)
++ [OPS06-BP03 Employ safe deployment strategies](ops_mit_deploy_risks_deploy_mgmt_sys.md)
++ [OPS06-BP04 Automate testing and rollback](ops_mit_deploy_risks_auto_testing_and_rollback.md)

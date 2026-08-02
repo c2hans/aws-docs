@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-associate-02/dva-technologies-concepts.html
+---
+
+# Technologies and Concepts
+<a name="dva-technologies-concepts"></a>
+
+The following list contains technologies and concepts that might appear on the exam. This list is non-exhaustive and is subject to change. The order and placement of the items in this list is no indication of their relative weight or importance on the exam:
++ Analytics
++ Application integration
++ Compute
++ Containers
++ Cost and capacity management
++ Database
++ Developer tools
++ Management and governance
++ Networking and content delivery
++ Security, identity, and compliance
++ Storage

@@ -1,0 +1,285 @@
+---
+source_url: https://docs.aws.amazon.com/iot/latest/developerguide/iot-sql-operators.html
+---
+
+# Operators
+<a name="iot-sql-operators"></a>
+
+The following operators can be used in SELECT and WHERE clauses.
+
+## AND operator
+<a name="iot-sql-operators-and"></a>
+
+Returns a `Boolean` result. Performs a logical AND operation. Returns true if left and right operands are true. Otherwise, returns false. `Boolean` operands or case insensitive "true" or "false" string operands are required.
+
+*Syntax:* ` {{expression}} AND {{expression}}`.
+
+**AND operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Boolean | Boolean | Boolean. True if both operands are true. Otherwise, false. |
+| String/Boolean | String/Boolean | If all strings are "true" or "false" (case insensitive), they are converted to Boolean and processed normally as {{boolean}} AND {{boolean}}. |
+| Other value | Other value | Undefined. |
+
+## OR operator
+<a name="iot-sql-operators-or"></a>
+
+Returns a `Boolean` result. Performs a logical OR operation. Returns true if either the left or the right operands are true. Otherwise, returns false. `Boolean` operands or case insensitive "true" or "false" string operands are required.
+
+*Syntax:* ` {{expression}} OR {{expression}}`.
+
+**OR operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Boolean | Boolean | Boolean. True if either operand is true. Otherwise, false. |
+| String/Boolean | String/Boolean | If all strings are "true" or "false" (case insensitive), they are converted to Booleans and processed normally as {{boolean}} OR {{boolean}}. |
+| Other value | Other value | Undefined. |
+
+## NOT operator
+<a name="iot-sql-operators-not"></a>
+
+Returns a `Boolean` result. Performs a logical NOT operation. Returns true if the operand is false. Otherwise, returns true. A `Boolean` operand or case insensitive "true" or "false" string operand is required.
+
+*Syntax:* `NOT {{expression}}`.
+
+**NOT operator**
+
+| Operand | Output |
+| --- | --- |
+| Boolean | Boolean. True if operand is false. Otherwise, true. |
+| String | If string is "true" or "false" (case insensitive), it is converted to the corresponding Boolean value, and the opposite value is returned. |
+| Other value | Undefined. |
+
+## IN operator
+<a name="iot-sql-operators-in"></a>
+
+Returns a `Boolean` result. You can use the IN operator in a WHERE clause to check if a value matches any value in an array. It returns true if the match is found, and false otherwise.
+
+*Syntax:* ` {{expression}} IN {{expression}}`.
+
+**IN operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int/Decimal/String/Array/Object | Array | True if the Integer/Decimal/String/Array/Object element is found in the array. Otherwise, false. |
+
+*Example:*
+
+```
+SQL: "select * from 'a/b' where 3 in arr"
+
+JSON: {"arr":[1, 2, 3, "three", 5.7, null]}
+```
+
+In this example, the condition clause `where 3 in arr` will evaluate to true because 3 is present in the array named `arr`. Hence in the SQL statement, `select * from 'a/b'` will execute. This example also shows that the array can be heterogeneous.
+
+## EXISTS operator
+<a name="iot-sql-operators-exists"></a>
+
+Returns a `Boolean` result. You can use the EXISTS operator in a conditional clause to test for the existence of elements in a subquery. It returns true if the subquery returns one or more elements and false if the subquery returns no elements.
+
+*Syntax:* ` {{expression}}`.
+
+*Example:*
+
+```
+SQL: "select * from 'a/b' where exists (select * from arr as a where a = 3)"
+
+JSON: {"arr":[1, 2, 3]}
+```
+
+In this example, the condition clause `where exists (select * from arr as a where a = 3)` will evaluate to true because 3 is present in the array named `arr`. Hence in the SQL statement, `select * from 'a/b'` will execute.
+
+*Example:*
+
+```
+SQL: select * from 'a/b' where exists (select * from e as e where foo = 2)
+
+JSON: {"foo":4,"bar":5,"e":[{"foo":1},{"foo":2}]}
+```
+
+In this example, the condition clause `where exists (select * from e as e where foo = 2)` will evaluate to true because the array `e` within the JSON object contains the object `{"foo":2}`. Hence in the SQL statement, `select * from 'a/b'` will execute.
+
+## > operator
+<a name="iot-sql-operators-greater"></a>
+
+Returns a `Boolean` result. Returns true if the left operand is greater than the right operand. Both operands are converted to a `Decimal`, and then compared.
+
+*Syntax:* `{{expression}} > {{expression}}`.
+
+**> operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int/Decimal | Int/Decimal | Boolean. True if the left operand is greater than the right operand. Otherwise, false. |
+| String/Int/Decimal | String/Int/Decimal | If all strings can be converted to Decimal, then Boolean. Returns true if the left operand is greater than the right operand. Otherwise, false. |
+| Other value | Undefined. | Undefined. |
+
+## >= operator
+<a name="iot-sql-operators-greater-equal"></a>
+
+Returns a `Boolean` result. Returns true if the left operand is greater than or equal to the right operand. Both operands are converted to a `Decimal`, and then compared.
+
+*Syntax:* `{{expression}} >= {{expression}}`.
+
+**>= operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int/Decimal | Int/Decimal | Boolean. True if the left operand is greater than or equal to the right operand. Otherwise, false. |
+| String/Int/Decimal | String/Int/Decimal | If all strings can be converted to Decimal, then Boolean. Returns true if the left operand is greater than or equal to the right operand. Otherwise, false. |
+| Other value | Undefined. | Undefined. |
+
+## < operator
+<a name="iot-sql-operators-less"></a>
+
+Returns a `Boolean` result. Returns true if the left operand is less than the right operand. Both operands are converted to a `Decimal`, and then compared.
+
+*Syntax:* `{{expression}} < {{expression}}`.
+
+**< operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int/Decimal | Int/Decimal | Boolean. True if the left operand is less than the right operand. Otherwise, false. |
+| String/Int/Decimal | String/Int/Decimal | If all strings can be converted to Decimal, then Boolean. Returns true if the left operand is less than the right operand. Otherwise, false. |
+| Other value | Undefined | Undefined |
+
+## <= operator
+<a name="iot-sql-operators-less-equal"></a>
+
+Returns a `Boolean` result. Returns true if the left operand is less than or equal to the right operand. Both operands are converted to a `Decimal`, and then compared.
+
+*Syntax:* `{{expression}} <= {{expression}}`.
+
+**<= operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int/Decimal | Int/Decimal | Boolean. True if the left operand is less than or equal to the right operand. Otherwise, false. |
+| String/Int/Decimal | String/Int/Decimal | If all strings can be converted to Decimal, then Boolean. Returns true if the left operand is less than or equal to the right operand. Otherwise, false. |
+| Other value | Undefined | Undefined |
+
+## <> operator
+<a name="iot-sql-operators-not-eq"></a>
+
+Returns a `Boolean` result. Returns true if both left and right operands are not equal. Otherwise, returns false.
+
+*Syntax:* ` {{expression}} <> {{expression}}`.
+
+**<> operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int | Int | True if left operand is not equal to right operand. Otherwise, false. |
+| Decimal | Decimal | True if left operand is not equal to right operand. Otherwise, false.Int is converted to Decimal before being compared. |
+| String | String | True if left operand is not equal to right operand. Otherwise, false. |
+| Array | Array | True if the items in each operand are not equal and not in the same order. Otherwise, false |
+| Object | Object | True if the keys and values of each operand are not equal. Otherwise, false. The order of keys/values is unimportant. |
+| Null | Null | False. |
+| Any value | Undefined | Undefined. |
+| Undefined | Any value | Undefined. |
+| Mismatched type | Mismatched type | True. |
+
+## = operator
+<a name="iot-sql-operators-eq"></a>
+
+Returns a `Boolean` result. Returns true if both left and right operands are equal. Otherwise, returns false.
+
+*Syntax:* ` {{expression}} = {{expression}}`.
+
+**= operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int | Int | True if left operand is equal to right operand. Otherwise, false. |
+| Decimal | Decimal | True if left operand is equal to right operand. Otherwise, false.Int is converted to Decimal before being compared. |
+| String | String | True if left operand is equal to right operand. Otherwise, false. |
+| Array | Array | True if the items in each operand are equal and in the same order. Otherwise, false. |
+| Object | Object | True if the keys and values of each operand are equal. Otherwise, false. The order of keys/values is unimportant. |
+| Any value | Undefined | Undefined. |
+| Undefined | Any value | Undefined. |
+| Mismatched type | Mismatched type | False. |
+
+## \+ operator
+<a name="iot-sql-operators-plus"></a>
+
+The "\+" is an overloaded operator. It can be used for string concatenation or addition.
+
+*Syntax:* ` {{expression}} + {{expression}}`.
+
+**\+ operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| String | Any value | Converts the right operand to a string and concatenates it to the end of the left operand. |
+| Any value | String | Converts the left operand to a string and concatenates the right operand to the end of the converted left operand. |
+| Int | Int | Int value. Adds operands together. |
+| Int/Decimal | Int/Decimal | Decimal value. Adds operands together. |
+| Other value | Other value | Undefined. |
+
+## - operator
+<a name="iot-sql-operators-sub"></a>
+
+Subtracts the right operand from the left operand.
+
+*Syntax:* ` {{expression}} - {{expression}}`.
+
+**- operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int | Int | Int value. Subtracts right operand from left operand. |
+| Int/Decimal | Int/Decimal | Decimal value. Subtracts right operand from left operand. |
+| String/Int/Decimal | String/Int/Decimal | If all strings convert to decimals correctly, a Decimal value is returned. Subtracts right operand from left operand. Otherwise, returns Undefined. |
+| Other value | Other value | Undefined. |
+| Other value | Other value | Undefined. |
+
+## \* operator
+<a name="iot-sql-operators-mult"></a>
+
+Multiplies the left operand by the right operand.
+
+*Syntax:* ` {{expression}} * {{expression}}`.
+
+**\* operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int | Int | Int value. Multiplies the left operand by the right operand. |
+| Int/Decimal | Int/Decimal | Decimal value. Multiplies the left operand by the right operand. |
+| String/Int/Decimal | String/Int/Decimal | If all strings convert to decimals correctly, a Decimal value is returned. Multiplies the left operand by the right operand. Otherwise, returns Undefined. |
+| Other value | Other value | Undefined. |
+
+## / operator
+<a name="iot-sql-operators-div"></a>
+
+Divides the left operand by the right operand.
+
+*Syntax:* ` {{expression}} / {{expression}}`.
+
+**/ operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int | Int | Int value. Divides the left operand by the right operand. |
+| Int/Decimal | Int/Decimal | Decimal value. Divides the left operand by the right operand. |
+| String/Int/Decimal | String/Int/Decimal | If all strings convert to decimals correctly, a Decimal value is returned. Divides the left operand by the right operand. Otherwise, returns Undefined. |
+| Other value | Other value | Undefined. |
+
+## % operator
+<a name="iot-sql-operators-mod"></a>
+
+Returns the remainder from dividing the left operand by the right operand.
+
+*Syntax:* ` {{expression}} % {{expression}}`.
+
+**% operator**
+
+| Left operand | Right operand | Output |
+| --- | --- | --- |
+| Int | Int | Int value. Returns the remainder from dividing the left operand by the right operand. |
+| String/Int/Decimal | String/Int/Decimal | If all strings convert to decimals correctly, a Decimal value is returned. Returns the remainder from dividing the left operand by the right operand. Otherwise, Undefined. |
+| Other value | Other value | Undefined. |

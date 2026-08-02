@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/arc-region-switch/latest/api/API_RegionSwitchPlanConfiguration.html
+---
+
+# RegionSwitchPlanConfiguration
+<a name="API_RegionSwitchPlanConfiguration"></a>
+
+Configuration for nested Region switch plans. This allows one Region switch plan to trigger another plan as part of its execution.
+
+## Contents
+<a name="API_RegionSwitchPlanConfiguration_Contents"></a>
+
+ ** arn **   <a name="regionswitch-Type-RegionSwitchPlanConfiguration-arn"></a>
+The Amazon Resource Name (ARN) of the plan configuration.
+Type: String
+Pattern: `arn:aws[a-zA-Z-]*:arc-region-switch::[0-9]{12}:plan/([a-zA-Z0-9](?:[a-zA-Z0-9-]{0,30}[a-zA-Z0-9])?):([a-z0-9]{6})`
+Required: Yes
+
+ ** crossAccountRole **   <a name="regionswitch-Type-RegionSwitchPlanConfiguration-crossAccountRole"></a>
+The cross account role for the configuration.
+Type: String
+Pattern: `arn:aws[a-zA-Z0-9-]*:iam::[0-9]{12}:role/.+`
+Required: No
+
+ ** externalId **   <a name="regionswitch-Type-RegionSwitchPlanConfiguration-externalId"></a>
+The external ID (secret key) for the configuration.
+Type: String
+Required: No
+
+## See Also
+<a name="API_RegionSwitchPlanConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/arc-region-switch-2022-07-26/RegionSwitchPlanConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/arc-region-switch-2022-07-26/RegionSwitchPlanConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/arc-region-switch-2022-07-26/RegionSwitchPlanConfiguration)

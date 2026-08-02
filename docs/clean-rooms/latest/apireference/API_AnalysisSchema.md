@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/clean-rooms/latest/apireference/API_AnalysisSchema.html
+---
+
+# AnalysisSchema
+<a name="API_AnalysisSchema"></a>
+
+A relation within an analysis.
+
+## Contents
+<a name="API_AnalysisSchema_Contents"></a>
+
+ ** referencedTables **   <a name="API-Type-AnalysisSchema-referencedTables"></a>
+The tables referenced in the analysis schema.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 128.
+Pattern: `[a-zA-Z0-9_](([a-zA-Z0-9_ ]+-)*([a-zA-Z0-9_ ]+))?`
+Required: No
+
+## See Also
+<a name="API_AnalysisSchema_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cleanrooms-2022-02-17/AnalysisSchema)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cleanrooms-2022-02-17/AnalysisSchema)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cleanrooms-2022-02-17/AnalysisSchema)

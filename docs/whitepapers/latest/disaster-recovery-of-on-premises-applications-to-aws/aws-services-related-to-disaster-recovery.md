@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/aws-services-related-to-disaster-recovery.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# AWS services related to disaster recovery
+<a name="aws-services-related-to-disaster-recovery"></a>
+
+ AWS can be used as the infrastructure running your disaster recovery site. Additionally, AWS offers a number of services that can help you replicate your source applications into the AWS infrastructure and recover them in the case of a disaster.
+
+## AWS Elastic Disaster Recovery
+<a name="aws-elastic-disaster-recovery"></a>
+
+ [AWS Elastic Disaster Recovery](https://aws.amazon.com/disaster-recovery/) (AWS DRS) is designed for cloud-based disaster recovery of virtual and physical servers. Elastic Disaster Recovery continuously replicates applications and databases from any supported source to AWS using block-level replication of the underlying server. The service allows you to use AWS as a disaster recovery site for on-premises applications comprising servers (physical and virtual), including databases. During normal operations, Elastic Disaster Recovery continuously replicates changes to the source data to a staging area subnet in your AWS account. The staging area design uses affordable storage and minimal compute resources to maintain ongoing replication. When you initiate a failover or drill, the staged resources are used to automatically create a full-capacity deployment in your Amazon Virtual Private Cloud (VPC), which is used as the disaster recovery site. You can launch recovery instances on AWS within minutes, using the most up-to-date server state or a previous point in time. After the disaster, you can use Elastic Disaster Recovery to fail back to your primary site.
+
+## AWS DataSync
+<a name="aws-datasync"></a>
+
+ [AWS DataSync](https://aws.amazon.com/datasync/) is an online data transfer service that simplifies, automates, and accelerates moving data between on-premises storage systems and AWS storage services, and also between AWS storage services. DataSync can copy data between Network File System (NFS), Server Message Block (SMB) file servers, self-managed object storage, [AWS Snowcone](https://aws.amazon.com/snowcone), [Amazon Simple Storage Service](https://aws.amazon.com/s3) (Amazon S3) buckets, [Amazon Elastic File System](https://aws.amazon.com/efs/) (Amazon EFS), and [Amazon FSx for Windows File Server](https://aws.amazon.com/fsx/windows/) file systems.
+
+ If you have large network-attached storage (NAS) appliances, AWS recommends using AWS DataSync for replicating them to Amazon S3, [Amazon Glacier](https://aws.amazon.com/s3/glacier/), Amazon EFS, or Amazon FSx for Windows File Server.
+
+## Amazon Application Recovery Controller (ARC)
+<a name="amazon-route-53-application-recovery-controller"></a>
+
+ [Amazon Application Recovery Controller (ARC)](https://aws.amazon.com/application-recovery-controller/) gives you insights into whether your applications and resources are ready for recovery, and helps you manage and coordinate failover using readiness check and routing control features. These features continually monitor your application’s ability to recover from failures, and enable you to control your application recovery across multiple AWS Regions, Availability Zones, as well as on premises. These capabilities make application recoveries simpler and more reliable by eliminating the manual steps required by traditional tools and processes.

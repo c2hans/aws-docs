@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/projects-teams.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Allowing project access using teams
+<a name="projects-teams"></a>
+
+After you create a project, you can add teams. Teams allow you to group users so that they can share permissions and manage projects, issue tracking, roles, and resources in CodeCatalyst as project and space members.
+
+You must have the **Project administrator** role to manage teams for your project.
+
+Teams are also managed at the space level in CodeCatalyst. To learn more about teams in spaces, see [Allowing space access using teams](managing-teams.md).
+
+**Topics**
++ [Adding a team to a project](projects-teams-add.md)
++ [Granting project roles for a team](projects-teams-project-roles.md)
++ [Removing a project role for a team](projects-teams-remove.md)

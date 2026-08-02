@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-cases_EmptyOperandValue.html
+---
+
+# EmptyOperandValue
+<a name="API_connect-cases_EmptyOperandValue"></a>
+
+Represents an empty operand value. In the Connect Customer admin website, case rules are known as *case field conditions*. For more information about case field conditions, see [Add case field conditions to a case template](https://docs.aws.amazon.com/connect/latest/adminguide/case-field-conditions.html).
+
+## Contents
+<a name="API_connect-cases_EmptyOperandValue_Contents"></a>
+
+The members of this exception structure are context-dependent.
+
+## See Also
+<a name="API_connect-cases_EmptyOperandValue_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connectcases-2022-10-03/EmptyOperandValue)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connectcases-2022-10-03/EmptyOperandValue)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connectcases-2022-10-03/EmptyOperandValue)

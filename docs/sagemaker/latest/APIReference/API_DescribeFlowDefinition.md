@@ -1,0 +1,153 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeFlowDefinition.html
+---
+
+# DescribeFlowDefinition
+<a name="API_DescribeFlowDefinition"></a>
+
+Returns information about the specified flow definition.
+
+## Request Syntax
+<a name="API_DescribeFlowDefinition_RequestSyntax"></a>
+
+```
+{
+   "FlowDefinitionName": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_DescribeFlowDefinition_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [FlowDefinitionName](#API_DescribeFlowDefinition_RequestSyntax) **   <a name="sagemaker-DescribeFlowDefinition-request-FlowDefinitionName"></a>
+The name of the flow definition.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z0-9](-*[a-z0-9]){0,62}`
+Required: Yes
+
+## Response Syntax
+<a name="API_DescribeFlowDefinition_ResponseSyntax"></a>
+
+```
+{
+   "CreationTime": number,
+   "FailureReason": "string",
+   "FlowDefinitionArn": "string",
+   "FlowDefinitionName": "string",
+   "FlowDefinitionStatus": "string",
+   "HumanLoopActivationConfig": {
+      "HumanLoopActivationConditionsConfig": {
+         "HumanLoopActivationConditions": "string"
+      }
+   },
+   "HumanLoopConfig": {
+      "HumanTaskUiArn": "string",
+      "PublicWorkforceTaskPrice": {
+         "AmountInUsd": {
+            "Cents": number,
+            "Dollars": number,
+            "TenthFractionsOfACent": number
+         }
+      },
+      "TaskAvailabilityLifetimeInSeconds": number,
+      "TaskCount": number,
+      "TaskDescription": "string",
+      "TaskKeywords": [ "string" ],
+      "TaskTimeLimitInSeconds": number,
+      "TaskTitle": "string",
+      "WorkteamArn": "string"
+   },
+   "HumanLoopRequestSource": {
+      "AwsManagedHumanLoopRequestSource": "string"
+   },
+   "OutputConfig": {
+      "KmsKeyId": "string",
+      "S3OutputPath": "string"
+   },
+   "RoleArn": "string"
+}
+```
+
+## Response Elements
+<a name="API_DescribeFlowDefinition_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [CreationTime](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-CreationTime"></a>
+The timestamp when the flow definition was created.
+Type: Timestamp
+
+ ** [FailureReason](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-FailureReason"></a>
+The reason your flow definition failed.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+
+ ** [FlowDefinitionArn](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-FlowDefinitionArn"></a>
+The Amazon Resource Name (ARN) of the flow defintion.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 1024.
+Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]+:[0-9]{12}:flow-definition/.*`
+
+ ** [FlowDefinitionName](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-FlowDefinitionName"></a>
+The Amazon Resource Name (ARN) of the flow definition.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 63.
+Pattern: `[a-z0-9](-*[a-z0-9]){0,62}`
+
+ ** [FlowDefinitionStatus](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-FlowDefinitionStatus"></a>
+The status of the flow definition. Valid values are listed below.
+Type: String
+Valid Values: `Initializing | Active | Failed | Deleting`
+
+ ** [HumanLoopActivationConfig](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-HumanLoopActivationConfig"></a>
+An object containing information about what triggers a human review workflow.
+Type: [HumanLoopActivationConfig](API_HumanLoopActivationConfig.md) object
+
+ ** [HumanLoopConfig](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-HumanLoopConfig"></a>
+An object containing information about who works on the task, the workforce task price, and other task details.
+Type: [HumanLoopConfig](API_HumanLoopConfig.md) object
+
+ ** [HumanLoopRequestSource](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-HumanLoopRequestSource"></a>
+Container for configuring the source of human task requests. Used to specify if Amazon Rekognition or Amazon Textract is used as an integration source.
+Type: [HumanLoopRequestSource](API_HumanLoopRequestSource.md) object
+
+ ** [OutputConfig](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-OutputConfig"></a>
+An object containing information about the output file.
+Type: [FlowDefinitionOutputConfig](API_FlowDefinitionOutputConfig.md) object
+
+ ** [RoleArn](#API_DescribeFlowDefinition_ResponseSyntax) **   <a name="sagemaker-DescribeFlowDefinition-response-RoleArn"></a>
+The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) execution role for the flow definition.
+Type: String
+Length Constraints: Minimum length of 20. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:iam::\d{12}:role/?[a-zA-Z_0-9+=,.@\-_/]+`
+
+## Errors
+<a name="API_DescribeFlowDefinition_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** ResourceNotFound **
+Resource being access is not found.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DescribeFlowDefinition_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/sagemaker-2017-07-24/DescribeFlowDefinition)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/DescribeFlowDefinition)

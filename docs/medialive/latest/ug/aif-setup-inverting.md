@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/aif-setup-inverting.html
+---
+
+# Changing the roles of the failover pair
+<a name="aif-setup-inverting"></a>
+
+When you set up for input failover in a MediaLive channel, you can reverse the roles of the two failover inputs, so that the primary input becomes the secondary input.
+
+**To reverse the roles of the inputs**
+
+1. From the list of input attachments, choose the first input that you attached.
+
+1. In the **Automatic input failover settings** section, choose **Disable automatic input failover settings**.
+
+1. Choose the second input and choose **Enable automatic input failover settings** for that input. The second input is now the primary input.

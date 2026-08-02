@@ -1,0 +1,113 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/feature-dolbyatmos.html
+---
+
+# Working with Dolby Digital Plus with Dolby Atmos
+<a name="feature-dolbyatmos"></a>
+
+Dolby Atmos is a surround sound technology built on the codec of Dolby Digital Plus (Dolby Digital Plus is also known as Enhanced AC-3). In addition to the multi-channel surround sound capabilities of Dolby Digital Plus, Dolby Atmos adds additional height-based audio channels.
+
+MediaLive supports the following handling:
++ Encoding an audio output as Dolby Digital Plus with Dolby Atmos. The audio input must be a source that contains up to 16 channels.
++ Passthrough of input audio that is already Dolby Digital Plus with Dolby Atmos.
+
+**Note**
+MediaLive doesn't support decoding of Dolby Digital Plus with Dolby Atmos.
+
+## Supported inputs
+<a name="dolby-atmos-output-sources"></a>
+
+The input must have these characteristics:
++ To encode Dolby Digital Plus with Dolby Atmos, the audio input can be any audio source that MediaLive supports and that has these characteristics:
+  + Up to 16 channels in the following order:
+
+    `L R C LFE Ls Rs Lb Rb Tfl Tfr Tsl Tsr Tbl Tbr Lw Rw`
+  + If the source has fewer than 16 channels, MediaLive extracts all the channels and then pads the output by inserting silence in the higher-numbered channels. For example, if the source has two channels, MediaLive puts those channels in L and R, then inserts silence in the remaining channels.
+  + If the source doesn't have the channels in the specified order, the results might be wrong on the downstream player. For example, the sound of rain falling might come out of the left speaker instead of a ceiling speaker.
+  + A sampling rate of 48000 Hz.
++ To pass through a Dolby Digital Plus with Dolby Atmos source, the audio can be any coding mode and any sampling rate that Dolby Digital Plus supports.
+
+## Supported outputs
+<a name="dolby-atmos-output-supported-outputs"></a>
+
+**Audio encoding**
+
+The MediaLive implementation of Dolby Digital Plus with Dolby Atmos supports the following coding modes in the output:
++ 5.1.4 coding mode
++ 7.1.4 coding mode
++ 9.1.6 coding mode
+
+Within each coding mode, the speaker channels are arranged as shown in the following table.
+
+| Coding mode | Channel arrangement |
+| --- | --- |
+| 5.1.4 | L R C LFE Ls Rs Tfl Tfr Tbl Tbr |
+| 7.1.4 | L R C LFE Ls Rs Lb Rb Tfl Tfr Tbl Tbr |
+| 9.1.6 | L R C LFE Ls Rs Lb Rb Tfl Tfr Tsl Tsr Tbl Tbr Lw Rw |
+
+The abbreviations are the standard Dolby abbreviations: Left, Right, Center, LFE (Low Frequency Effects), Left surround, Right surround, Left back, Right back, Top front left, Top front right, Top side left, Top side right, Top back left, Top back right, Left wide, and Right wide.
+
+## Setting up the channel
+<a name="dolby-atmos-output-setup"></a>
+
+Follow this procedure to produce Dolby Digital Plus with Dolby Atmos in one or more outputs.
+
+**Note**
+The information in this section assumes that you are familiar with the general steps for creating a channel.
+
+**To set up the input**
+
+Follow this procedure if the source audio is Dolby Digital Plus, to convert the audio to Dolby Digital Plus with Dolby Atmos.
+
+1. In the channel in MediaLive, select the input that contains the Dolby Digital Plus audio that you want to transcode or pass through.
+
+1. In the **General input settings** section choose **Add audio selectors**.
+
+1. Complete the fields to extract the Dolby Digital Plus audio.
+
+**To set up the output if the source audio is Dolby Digital Plus**
+
+1. In the channel, go to the output group where you want to add the audio. Or create a new group.
+
+1. Create the output where you want to add the audio encode.
+
+1. In the **Stream settings** section for the output, choose the **Audio** section. Complete the fields as follows.
+[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/feature-dolbyatmos.html)
+
+1. Complete the additional audio fields as desired.
+
+**To pass through Dolby Digital Plus with Dolby Atmos from the input to the output**
+
+Follow this procedure if the source audio is already Dolby Digital Plus with Dolby Atmos.
+
+1. In the channel, go to the output group where you want to add the audio. Or create a new group.
+
+1. Create the output where you want to add the audio encode.
+
+1. In the **Stream settings** section for the output, choose the **Audio** section.
+
+1. Set these fields:
+   + **Audio Selector Name**: Set to the audio selector that you set up in the input.
+   + **Audio Codec**: Set to **Passthrough**.
+
+   With this setup, the selected audio source in the input will be passed through.
+**Important**
+Don't set **Audio Codec** to **EAC3 ATMOS**. That isn't the correct value for passing through. If you choose this option, the output might have silent audio.
+
+### Sample HLS manifest
+<a name="w2aac55c13c15c13"></a>
+
+If you include Dolby Digital Plus with Dolby Atmos in an HLS output group, the audio line in the HLS manifest looks like this example:
+
+```
+#EXTM3U
+#EXT-X-VERSION:4
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-STREAM-INF:BANDWIDTH=2208800,AVERAGE-BANDWIDTH=2142800,CODECS="avc1.64001f,ec-3",RESOLUTION=1280x720,FRAME-RATE=30.000,AUDIO="program_audio_0"
+index_video.m3u8
+#EXT-X-MEDIA:TYPE=AUDIO,LANGUAGE="eng",NAME="English",AUTOSELECT=YES,DEFAULT=YES,CHANNELS="12/JOC",GROUP-ID="program_audio_0",URI="index_audio.m3u8"
+```
+
+The `Channels` attribute in the last line is significant for Dolby Digital Plus with Dolby Atmos:
++ 12/JOC indicates that the coding mode is 5.1.4 or 7.1.4 and the codec is Dolby Digital with Dolby Atmos.
++ 16/JOC indicates that the coding mode is 9.1.6 and the codec is Dolby Digital with Dolby Atmos.

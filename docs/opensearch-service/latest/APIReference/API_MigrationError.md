@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_MigrationError.html
+---
+
+# MigrationError
+<a name="API_MigrationError"></a>
+
+Contains error details for a migration that failed or completed with errors.
+
+## Contents
+<a name="API_MigrationError_Contents"></a>
+
+ ** code **   <a name="opensearchservice-Type-MigrationError-code"></a>
+The error code identifying the type of failure.
+Type: String
+Required: No
+
+ ** message **   <a name="opensearchservice-Type-MigrationError-message"></a>
+A human-readable description of the error.
+Type: String
+Required: No
+
+## See Also
+<a name="API_MigrationError_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/opensearch-2021-01-01/MigrationError)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/opensearch-2021-01-01/MigrationError)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/opensearch-2021-01-01/MigrationError)

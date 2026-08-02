@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/assign-proficiencies-to-agents.html
+---
+
+# Assign proficiencies to agents in your Connect Customer instance
+<a name="assign-proficiencies-to-agents"></a>
+
+A proficiency consists of a predefined attribute name, its value, and a proficiency level. The level is a numeric value of 1, 2, 3, 4, or 5, where 1 indicates the lowest proficiency and 5 indicates the highest. After you have created predefined attribute, you can assign one or more proficiencies to an agent.
+
+For example, Agent1 and Agent2 may be proficient in multiple technologies at varying levels. They can be assigned proficiencies to reflect their level of proficiency in those technologies as shown in the following table:
+
+| Agent Name | Predefined Attribute | Value | Proficiency Level |
+| --- | --- | --- | --- |
+| Agent1 | Technology | AWS Kinesis | 2 |
+| Agent1 | Technology | AWS Dynamo DB | 5 |
+| Agent1 | Technology | AWS EC2 | 4 |
+| Agent1 | Language | French | 3 |
+| Agent1 | Language | English | 4 |
+| Agent2 | Technology | AWS Dynamo DB | 3 |
+| Agent2 | Technology | AWS EC2 | 5 |
+| Agent2 | Technology | AWS Nepture | 5 |
+| Agent2 | Language | French | 4 |
+| Agent2 | Language | English | 3 |
+
+**To assign a proficiency to a user**
+
+1. On the navigation menu, choose **Users**, **User Management.**
+
+1. Select the user name to open the user profile.
+
+1. Go to **Show advanced settings**.
+
+1. In the **Attributes** section, for the **Name ** field, using the dropdown menu select a predefined attribute that was created earlier.
+
+1. From the **Value** field, using the dropdown menu ,select a option.
+
+1. Under the **Skill level** field, select a proficiency level for the previous attribute value.
+
+1. You can add up to 10 proficiencies per agent.
+
+![Assigning proficiencies to an agent or user.](http://docs.aws.amazon.com/connect/latest/adminguide/images/assign-proficiencies-to-agents.png)
+
+**Agent proficiencies management APIs**
++ [AssociateUserProficiencies](https://docs.aws.amazon.com/connect/latest/APIReference/API_AssociateUserProficiencies.html)
++ [DisassociateUserProficiencies](https://docs.aws.amazon.com/connect/latest/APIReference/API_DisassociateUserProficiencies.html)
++ [ListUserProficiencies](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListUserProficiencies.html)

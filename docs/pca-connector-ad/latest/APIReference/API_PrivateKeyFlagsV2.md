@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/pca-connector-ad/latest/APIReference/API_PrivateKeyFlagsV2.html
+---
+
+# PrivateKeyFlagsV2
+<a name="API_PrivateKeyFlagsV2"></a>
+
+Private key flags for v2 templates specify the client compatibility, if the private key can be exported, and if user input is required when using a private key.
+
+## Contents
+<a name="API_PrivateKeyFlagsV2_Contents"></a>
+
+ ** ClientVersion **   <a name="PcaConnectorAd-Type-PrivateKeyFlagsV2-ClientVersion"></a>
+Defines the minimum client compatibility.
+Type: String
+Valid Values: `WINDOWS_SERVER_2003 | WINDOWS_SERVER_2008 | WINDOWS_SERVER_2008_R2 | WINDOWS_SERVER_2012 | WINDOWS_SERVER_2012_R2 | WINDOWS_SERVER_2016`
+Required: Yes
+
+ ** ExportableKey **   <a name="PcaConnectorAd-Type-PrivateKeyFlagsV2-ExportableKey"></a>
+Allows the private key to be exported.
+Type: Boolean
+Required: No
+
+ ** StrongKeyProtectionRequired **   <a name="PcaConnectorAd-Type-PrivateKeyFlagsV2-StrongKeyProtectionRequired"></a>
+Require user input when using the private key for enrollment.
+Type: Boolean
+Required: No
+
+## See Also
+<a name="API_PrivateKeyFlagsV2_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/pca-connector-ad-2018-05-10/PrivateKeyFlagsV2)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/pca-connector-ad-2018-05-10/PrivateKeyFlagsV2)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/pca-connector-ad-2018-05-10/PrivateKeyFlagsV2)

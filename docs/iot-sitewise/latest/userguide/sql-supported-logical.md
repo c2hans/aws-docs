@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-supported-logical.html
+---
+
+# Logical operators
+<a name="sql-supported-logical"></a>
+
+AWS IoT SiteWise supports the following logical operators.
+
+|  **Operator**  |  **Signature**  |  **Description**  |
+| --- | --- | --- |
+| `AND` | a `AND` b | `TRUE` if both values are true |
+| `OR` | a `OR` b | `TRUE` if one value is true |
+| `NOT` | `NOT` expression | `TRUE` if an expression is false, and `FALSE` if an expression is true |
+| `IN` | x `IN` expression | `TRUE` if value in expression |
+| `BETWEEN` | `BETWEEN` a `AND` b | `TRUE` if value between upper and lower limit, and includes both limits |
+| `LIKE` | `LIKE` pattern | `TRUE` if value is in pattern<br />`LIKE` supports wildcards. See below for examples:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-supported-logical.html) |
+
+Examples of all logical operators:
+
+|  **Function**  |  **Example**  |
+| --- | --- |
+| AND |  <pre>SELECT a.asset_name <br />   FROM asset AS a, latest_value_time_series AS t <br />   WHERE t.int_value > 30 AND t.event_timestamp > TIMESTAMP '2025-05-15 00:00:01'<br /></pre>  |
+| OR |  <pre>SELECT a.asset_name <br />   FROM asset AS a<br />   WHERE a.asset_name like 'abc' OR a.asset_name like 'pqr'<br /></pre>  |
+| NOT |  <pre>SELECT ma.asset_id AS a_id<br />   FROM asset AS ma<br />   WHERE (ma.asset_id NOT LIKE 'some%patterna%' escape 'a') AND ma.asset_id='abc'<br /></pre>  |
+| IN |  <pre>SELECT a.asset_name <br />   FROM asset AS a<br />   WHERE a.asset_name IN ('abc', 'pqr')<br /></pre>  |
+| BETWEEN |  <pre>SELECT asset_id, int_value, event_timestamp AS i_v <br />   FROM raw_time_series<br />   WHERE event_timestamp BETWEEN TIMESTAMP '2025-04-15 00:00:01' and TIMESTAMP '2025-05-15 00:00:01'  <br /></pre>  |
+| LIKE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-supported-logical.html)  |

@@ -1,0 +1,55 @@
+---
+source_url: https://docs.aws.amazon.com/neptune/latest/apiref/API_DescribeValidDBInstanceModifications.html
+---
+
+# DescribeValidDBInstanceModifications
+<a name="API_DescribeValidDBInstanceModifications"></a>
+
+You can call [DescribeValidDBInstanceModifications](#API_DescribeValidDBInstanceModifications) to learn what modifications you can make to your DB instance. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
+
+## Request Parameters
+<a name="API_DescribeValidDBInstanceModifications_RequestParameters"></a>
+
+ For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+ ** DBInstanceIdentifier **
+The customer identifier or the ARN of your DB instance.
+Type: String
+Required: Yes
+
+## Response Elements
+<a name="API_DescribeValidDBInstanceModifications_ResponseElements"></a>
+
+The following element is returned by the service.
+
+ ** ValidDBInstanceModificationsMessage **
+Information about valid modifications that you can make to your DB instance. Contains the result of a successful call to the [DescribeValidDBInstanceModifications](#API_DescribeValidDBInstanceModifications) action. You can use this information when you call [ModifyDBInstance](API_ModifyDBInstance.md).
+Type: [ValidDBInstanceModificationsMessage](API_ValidDBInstanceModificationsMessage.md) object
+
+## Errors
+<a name="API_DescribeValidDBInstanceModifications_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** DBInstanceNotFound **
+ *DBInstanceIdentifier* does not refer to an existing DB instance.
+HTTP Status Code: 404
+
+ ** InvalidDBInstanceState **
+The specified DB instance is not in the *available* state.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_DescribeValidDBInstanceModifications_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/neptune-2014-10-31/DescribeValidDBInstanceModifications)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/neptune-2014-10-31/DescribeValidDBInstanceModifications)

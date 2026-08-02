@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_Adjustment.html
+---
+
+# Adjustment
+<a name="API_Adjustment"></a>
+
+An adjustment to the CVSS metric.
+
+## Contents
+<a name="API_Adjustment_Contents"></a>
+
+ ** Metric **   <a name="securityhub-Type-Adjustment-Metric"></a>
+The metric to adjust.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+ ** Reason **   <a name="securityhub-Type-Adjustment-Reason"></a>
+The reason for the adjustment.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+## See Also
+<a name="API_Adjustment_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/Adjustment)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/Adjustment)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/Adjustment)

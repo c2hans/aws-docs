@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Reference.html
+---
+
+# Reference
+<a name="API_Reference"></a>
+
+Contains the reference information.
+
+## Contents
+<a name="API_Reference_Contents"></a>
+
+ ** dataset **   <a name="iotsitewise-Type-Reference-dataset"></a>
+Contains the dataset reference information.
+Type: [DataSetReference](API_DataSetReference.md) object
+Required: No
+
+## See Also
+<a name="API_Reference_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/Reference)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/Reference)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/Reference)

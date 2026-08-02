@@ -1,0 +1,117 @@
+---
+source_url: https://docs.aws.amazon.com/cleanrooms-ml/latest/APIReference/API_ListCollaborationMLInputChannels.html
+---
+
+# ListCollaborationMLInputChannels
+<a name="API_ListCollaborationMLInputChannels"></a>
+
+Returns a list of the ML input channels in a collaboration.
+
+## Request Syntax
+<a name="API_ListCollaborationMLInputChannels_RequestSyntax"></a>
+
+```
+GET /collaborations/{{collaborationIdentifier}}/ml-input-channels?maxResults={{maxResults}}&nextToken={{nextToken}} HTTP/1.1
+```
+
+## URI Request Parameters
+<a name="API_ListCollaborationMLInputChannels_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [collaborationIdentifier](#API_ListCollaborationMLInputChannels_RequestSyntax) **   <a name="API-ListCollaborationMLInputChannels-request-uri-collaborationIdentifier"></a>
+The collaboration ID of the collaboration that contains the ML input channels that you want to list.
+Length Constraints: Fixed length of 36.
+Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Required: Yes
+
+ ** [maxResults](#API_ListCollaborationMLInputChannels_RequestSyntax) **   <a name="API-ListCollaborationMLInputChannels-request-uri-maxResults"></a>
+The maximum number of results to return.
+Valid Range: Minimum value of 1. Maximum value of 100.
+
+ ** [nextToken](#API_ListCollaborationMLInputChannels_RequestSyntax) **   <a name="API-ListCollaborationMLInputChannels-request-uri-nextToken"></a>
+The token value retrieved from a previous call to access the next page of results.
+Length Constraints: Minimum length of 1. Maximum length of 10240.
+
+## Request Body
+<a name="API_ListCollaborationMLInputChannels_RequestBody"></a>
+
+The request does not have a request body.
+
+## Response Syntax
+<a name="API_ListCollaborationMLInputChannels_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "collaborationMLInputChannelsList": [
+      {
+         "collaborationIdentifier": "string",
+         "configuredModelAlgorithmAssociations": [ "string" ],
+         "createTime": "string",
+         "creatorAccountId": "string",
+         "description": "string",
+         "membershipIdentifier": "string",
+         "mlInputChannelArn": "string",
+         "name": "string",
+         "payerConfiguration": {
+            "computePayerAccountId": "string",
+            "syntheticDataPayerAccountId": "string"
+         },
+         "status": "string",
+         "updateTime": "string"
+      }
+   ],
+   "nextToken": "string"
+}
+```
+
+## Response Elements
+<a name="API_ListCollaborationMLInputChannels_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [collaborationMLInputChannelsList](#API_ListCollaborationMLInputChannels_ResponseSyntax) **   <a name="API-ListCollaborationMLInputChannels-response-collaborationMLInputChannelsList"></a>
+The list of ML input channels that you wanted.
+Type: Array of [CollaborationMLInputChannelSummary](API_CollaborationMLInputChannelSummary.md) objects
+
+ ** [nextToken](#API_ListCollaborationMLInputChannels_ResponseSyntax) **   <a name="API-ListCollaborationMLInputChannels-response-nextToken"></a>
+The token value used to access the next page of results.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 10240.
+
+## Errors
+<a name="API_ListCollaborationMLInputChannels_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The request parameters for this request are incorrect.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListCollaborationMLInputChannels_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/cleanroomsml-2023-09-06/ListCollaborationMLInputChannels)

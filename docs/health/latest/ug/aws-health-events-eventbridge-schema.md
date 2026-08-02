@@ -1,0 +1,289 @@
+---
+source_url: https://docs.aws.amazon.com/health/latest/ug/aws-health-events-eventbridge-schema.html
+---
+
+# Reference: AWS Health events Amazon EventBridge schema
+<a name="aws-health-events-eventbridge-schema"></a>
+
+The following is the schema for AWS Health events. The contents of the details parameter follows in a second table. Sample payloads ares provided after the schema tables.
+
+## AWS Health event schema
+<a name="aws-health-event-schema"></a>
+
+**AWS Health event schema**
+
+<table>
+<thead>
+  <tr><th colspan="4">Parameter</th><th>Description</th><th>Required</th></tr>
+</thead>
+<tbody>
+  <tr><td colspan="4">version</td><td>EventBridge version, currently "0".</td><td>Yes</td></tr>
+  <tr><td colspan="4">id</td><td>The unique identifier for the EventBridge event.</td><td>Yes</td></tr>
+  <tr><td colspan="4">detail-type</td><td>The type of detail. For AWS Health events, supported values are &AWS Health Event and AWS Health Abuse Event</td><td> Yes</td></tr>
+  <tr><td colspan="4">source</td><td>The event bus source. For AWS Health events, the supported value is `aws.health`</td><td>Yes</td></tr>
+  <tr><td colspan="4">account</td><td>The account ID to which the AWS Health event was sent . For organizational views this is a different account than the affected account if it's received in the management account or delegated administrator account. </td><td>Yes</td></tr>
+  <tr><td colspan="4">time</td><td>The time at which the notification was sent to EventBridge. Format: yyyy-mm-ddThh:mm:ssZ.</td><td>Yes</td></tr>
+  <tr><td colspan="4">region</td><td>The AWS Region that the notification was delivered to. This field doesn't indicate the impacted Region for this AWS Health event. That information is reported in `detail.eventRegion`. </td><td>Yes</td></tr>
+  <tr><td colspan="4">resources</td><td>Describes the list of affected resources, if any, within an account.<br />This field is empty if there are no resources referenced.</td><td>No</td></tr>
+  <tr><td colspan="4">detail</td><td>The section containing details of the AWS Health event, as described in the table immediately following this one.</td><td>Yes</td></tr>
+</tbody>
+</table>
+
+### Schema content of the 'details' parameter
+<a name="schema-details"></a>
+
+The following table documents the content of the **detail** parameter in the AWS Health event schema.
+
+**AWS Health event schema: detail parameter content**
+
+| 'detail' parameter content | Description | Required |
+| --- | --- | --- |
+| eventArn | The unique identifier for the AWS Health event for the specific Region, including the Region and event ID. An event ARN isn't unique to a specific AWS account or Region.  | Yes |
+| service | The AWS service affected by the AWS Health event. For example, Amazon EC2, Amazon Simple Storage Service, Amazon Redshift, or Amazon Relational Database Service.  | Yes |
+| eventTypeCode | The unique identifier for the event type. For example: AWS\_EC2\_INSTANCE\_NETWORK\_MAINTENANCE\_SCHEDULED and AWS\_EC2\_INSTANCE\_REBOOT\_MAINTENANCE\_SCHEDULED. Events that include MAINTENANCE\_SCHEDULED are generally pushed out approximately two weeks before the start time. All new planned lifecycle events have the event type `AWS_{SERVICE}_PLANNED_LIFECYCLE_EVENT`.  | Yes |
+| eventTypeCategory | The category code of the event. The supported values include issue, accountNotification, investigation, and scheduledChange. | Yes |
+| eventScopeCode | Indicates whether the AWS Health event is account-specific or public. Supported values are ACCOUNT\_SPECIFIC or PUBLIC. | Yes |
+| communicationId | A unique identifier for this communication for the AWS Health event.<br />Messages with the same communication ID might be backup messages or pages of a single AWS Health event. This identifier can be used with the account ID to help de-duplicate messages.<br />With the AWS Health event pagination support, the communication ID includes the page number to keep the communication ID unique across pages, for example, 12345678910-1. For more information, see [Viewing paginated lists of AWS Health events on EventBridge](pagnation-of-health-events.md). | Yes |
+| startTime | The start time of the AWS Health event, in the format DoW, DD, MMM, YYYY, HH:MM:SS TZ. The start time can be in the future for scheduled events. | Yes |
+| endTime | The end time of the AWS Health event, in the format:DoW, DD MMM YYYY HH:MM:SS TZ. The end time can't be provided for events scheduled for a future time. | No |
+| lastUpdatedTime | The last update time for the AWS Health event, in the format DoW, DD MMM YYYY HH:MM:SS TZ. | Yes |
+| statusCode | The status of the AWS Health event.<br />Supported values include `open`, `closed`, and `upcoming`. | Yes |
+| eventRegion | The impacted Region described by this AWS Health event. | Yes |
+| eventDescription | A section that describes the AWS Health event. This includes fields for language and text to describe the event.[See the AWS documentation website for more details](http://docs.aws.amazon.com/health/latest/ug/aws-health-events-eventbridge-schema.html) | Yes |
+| eventMetadata | Additional event metadata that can be provided for the AWS Health event.[See the AWS documentation website for more details](http://docs.aws.amazon.com/health/latest/ug/aws-health-events-eventbridge-schema.html) | No |
+| affectedEntities | An array that describes the resource value and status of affected resources within the AWS Health event.[See the AWS documentation website for more details](http://docs.aws.amazon.com/health/latest/ug/aws-health-events-eventbridge-schema.html) | No |
+| page | The page this message represents. For more information, see [Viewing paginated lists of AWS Health events on EventBridge](pagnation-of-health-events.md). Pagination occurs only on resources. If the 256KB size limit is exceeded for another reason, the communication to fail.  | Yes |
+| totalPages | The total number of pages for this health event. For more information, see [Viewing paginated lists of AWS Health events on EventBridge](pagnation-of-health-events.md).<br />You can use this value to determine whether you received all of the pages of a multi-page communication for an account. | Yes |
+| backupEvent | This flag filters out backup events in the designated backup region within a partition if customers don't want to leverage redundancy. This value can be true or false. | Yes |
+| affectedAccount | The account ID of the impacted account.<br />This may be different from the value in the `account` field if this health event is sent to an account that is part of an AWS Organizations and is received in the management account or delegated administrator account. | Yes |
+| actionability | Metadata to activate programmatic determination of which events require action without manual inspection. Possible (single) value can be ACTION\_REQUIRED, ACTION\_MAY\_BE\_REQUIRED, or INFORMATIONAL. | No |
+| personas | This list of metadata activates programmatic determination of which stakeholder to route the event to. Possible (multiple) values are OPERATIONAL, SECURITY, and BILLING. | No |
+
+## Public Health Event - Amazon EC2 operational issue
+<a name="amazon-ec2-operational-issue"></a>
+
+```
+{
+    "version": "0",
+    "id": "7bf73129-1428-4cd3-a780-95db273d1602",
+    "detail-type": "AWS Health Event",
+    "source": "aws.health",
+    "account": "123456789012",
+    "time": "2023-01-27T09:01:22Z",
+    "region": "af-south-1",
+    "resources": [],
+    "detail": {
+        "eventArn": "arn:aws:health:af-south-1::event/EC2/AWS_EC2_OPERATIONAL_ISSUE/AWS_EC2_OPERATIONAL_ISSUE_7f35c8ae-af1f-54e6-a526-d0179ed6d68f",
+        "service": "EC2",
+        "eventTypeCode": "AWS_EC2_OPERATIONAL_ISSUE",
+        "eventTypeCategory": "issue",
+        "eventScopeCode": "PUBLIC",
+        "communicationId": "01b0993207d81a09dcd552ebd1e633e36cf1f09a-1",
+        "startTime": "Fri, 27 Jan 2023 06:02:51 GMT",
+        "endTime": "Fri, 27 Jan 2023 09:01:22 GMT",
+        "lastUpdatedTime": "Fri, 27 Jan 2023 09:01:22 GMT",
+        "statusCode": "open",
+        "eventRegion": "af-south-1",
+        "eventDescription": [{
+            "language": "en_US",
+            "latestDescription": "Current severity level: Operating normally\n\n[RESOLVED] \n\n [03:15 PM PST] We continue see recovery \n\nThe following AWS services were previously impacted but are now operating normally: APPSYNC, BACKUP, EVENTS."
+        }],
+        "affectedEntities": [],
+        "page": "1",
+        "totalPages": "1",
+        "backupEvent": "false",
+        "affectedAccount": "123456789012",
+        "personas": ["OPERATIONS"]
+    }
+}
+```
+
+## Account-specific AWS Health Event - Elastic Load Balancing API Issue
+<a name="elastic-load-balancing-api-issue"></a>
+
+```
+{
+    "version": "0",
+    "id": "121345678-1234-1234-1234-123456789012",
+    "detail-type": "AWS Health Event",
+    "source": "aws.health",
+    "account": "123456789012",
+    "time": "2022-06-10T06:27:57Z",
+    "region": "ap-southeast-2",
+    "resources": [],
+    "detail": {
+        "eventArn": "arn:aws:health:ap-southeast-2::event/AWS_ELASTICLOADBALANCING_API_ISSUE_90353408594353980",
+        "service": "ELASTICLOADBALANCING",
+        "eventTypeCode": "AWS_ELASTICLOADBALANCING_API_ISSUE",
+        "eventTypeCategory": "issue",
+        "eventScopeCode": "ACCOUNT_SPECIFIC",
+        "communicationId": "01b0993207d81a09dcd552ebd1e633e36cf1f09a-1",
+        "startTime": "Fri, 10 Jun 2022 05:01:10 GMT",
+        "endTime": "Fri, 10 Jun 2022 05:30:57 GMT",
+        "statusCode": "open",
+        "eventRegion": "ap-southeast-2",
+        "eventDescription": [{
+            "language": "en_US",
+            "latestDescription": "A description of the event will be provided here"
+        }],
+        "page": "1",
+        "totalPages": "1",
+        "backupEvent": "false",
+        "affectedAccount": "123456789012",
+        "personas": ["OPERATIONS"]
+    }
+}
+```
+
+## Account-specific AWS Health Event - backup event for Amazon EC2 Instance Store Drive Performance Degraded
+<a name="amazon-ec2-instance-store-drive-performance-degraded"></a>
+
+```
+{
+    "version": "0",
+    "id": "121345678-1234-1234-1234-123456789012",
+    "detail-type": "AWS Health Event",
+    "source": "aws.health",
+    "account": "123456789012",
+    "time": "2022-06-03T06:27:57Z",
+    "region": "us-west-2",
+    "resources": [
+        "i-abcd1111"
+    ],
+    "detail": {
+        "eventArn": "arn:aws:health:us-east-1::event/AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED_90353408594353980",
+        "service": "EC2",
+        "eventTypeCode": "AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED",
+        "eventTypeCategory": "issue",
+        "eventScopeCode": "ACCOUNT_SPECIFIC",
+        "communicationId": "01b0993207d81a09dcd552ebd1e633e36cf1f09a-1",
+        "startTime": "Fri, 3 Jun 2022 05:01:10 GMT",
+        "endTime": "Fri, 3 Jun 2022 05:30:57 GMT",
+        "statusCode": "open",
+        "eventRegion": "us-east-1",
+        "eventDescription": [{
+            "language": "en_US",
+            "latestDescription": "A description of the event will be provided here"
+        }],
+        "affectedEntities": [{
+            "entityValue": "i-abcd1111"
+        }],
+        "page": "1",
+        "totalPages": "1",
+        "backupEvent": "true",
+        "affectedAccount": "123456789012",
+        "personas": ["OPERATIONS"]
+    }
+}
+```
+
+## Account-specific AWS Health Event - Amazon EC2 Instance Retirement
+<a name="amazon-ec2-instance-retirement-scheduled"></a>
+
+```
+{
+    "version": "0",
+    "id": "7bf73129-1428-4cd3-a780-95db273d1602",
+    "detail-type": "AWS Health Event",
+    "source": "aws.health",
+    "account": "123456789012",
+    "time": "2026-01-27T01:43:21Z",
+    "region": "us-east-1",
+    "detail": {
+        "eventArn": "arn:aws:health:us-east-1::event/AWS_EC2_INSTANCE_RETIREMENT_SCHEDULED_90353408594353983",
+        "service": "EC2",
+        "eventTypeCode": "AWS_EC2_INSTANCE_RETIREMENT_SCHEDULED",
+        "eventTypeCategory": "scheduledChange",
+        "eventScopeCode": "ACCOUNT_SPECIFIC",
+        "communicationId": "1234abc01232a4012345678-1",
+        "startTime": "Thu, 27 Aug 2026 13:19:03 GMT",
+        "lastUpdatedTime": "Thu, 27 Jan 2026 13:44:13 GMT",
+        "statusCode": "open",
+        "eventRegion": "us-east-1",
+        "eventDescription": [{
+            "language": "en_US",
+            "latestDescription": "A description of the event will be provided here"
+        }],
+        "eventMetadata": {
+            "keystring1": "valuestring1",
+            "keystring2": "valuestring2",
+            "keystring3": "valuestring3",
+            "keystring4": "valuestring4",
+            "truncated": "true"
+        },
+        "affectedEntities": [{
+            "entityValue": "arn:aws:ec2:us-east-1:123456789012:instance/i-1234567890abcdef0",
+            "lastUpdatedTime": "Thu, 26 Jan 2026 19:01:55 GMT",
+            "status": "PENDING"
+        }],
+        "affectedAccount": "123456789012",
+        "page": "1",
+        "totalPages": "1",
+        "backupEvent": "false",
+        "personas": ["OPERATIONS"],
+        "actionability": "ACTION_REQUIRED"
+    }
+}
+```
+
+## Account-specific AWS Health Event - Lambda Planned Lifecycle Event
+<a name="amazon-lambda-planned-lifecycle-event"></a>
+
+```
+{
+    "version": "0",
+    "id": "7bf73129-1428-4cd3-a780-95db273d1602",
+    "detail-type": "AWS Health Event",
+    "source": "aws.health",
+    "account": "123456789012",
+    "time": "2023-01-27T01:43:21Z",
+    "region": "us-west-2",
+    "resources": ["arn:lambda-1-101002929", "arn:lambda-1-101002930", "arn:lambda-1-101002931", "arn:lambda-1-101002932"],
+    "detail": {
+        "eventArn": "arn:aws:health:us-west-2::event/AWS_LAMBDA_PLANNED_LIFECYCLE_EVENT_90353408594353980",
+        "service": "LAMBDA",
+        "eventTypeCode": "AWS_LAMBDA_PLANNED_LIFECYCLE_EVENT",
+        "eventTypeCategory": "scheduledChange",
+        "eventScopeCode": "ACCOUNT_SPECIFIC",
+        "communicationId": "1234abc01232a4012345678-1",
+        "startTime": "Thu, 27 Aug 2026 13:19:03 GMT",
+        "lastUpdatedTime": "Thu, 27 Jan 2026 13:44:13 GMT",
+        "statusCode": "open",
+        "eventRegion": "us-west-2",
+        "eventDescription": [{
+            "language": "en_US",
+            "latestDescription": "A description of the event will be provided here"
+        }],
+        "eventMetadata": {
+            "keystring1": "valuestring1",
+            "keystring2": "valuestring2",
+            "keystring3": "valuestring3",
+            "keystring4": "valuestring4",
+            "truncated": "true"
+        },
+        "affectedEntities": [{
+            "entityValue": "arn:lambda-1-101002929",
+            "lastUpdatedTime": "Thu, 26 Jan 2026 19:01:55 GMT",
+            "status": "PENDING"
+        }, {
+            "entityValue": "arn:lambda-1-101002930",
+            "lastUpdatedTime": "Thu, 26 Jan 2026 19:05:12 GMT",
+            "status": "PENDING"
+        }, {
+            "entityValue": "arn:lambda-1-101002931",
+            "lastUpdatedTime": "Thu, 26 Jan 2026 19:07:13 GMT",
+            "status": "PENDING"
+        }, {
+            "entityValue": "arn:lambda-1-101002932",
+            "lastUpdatedTime": "Thu, 26 Jan 2026 19:10:59 GMT",
+            "status": "RESOLVED"
+        }],
+        "affectedAccount": "123456789012",
+        "page": "1",
+        "totalPages": "10",
+        "backupEvent": "false",
+        "personas": ["OPERATIONS"],
+        "actionability": "ACTION_REQUIRED"
+    }
+}
+```

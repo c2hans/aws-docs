@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/proton/latest/APIReference/API_Output.html
+---
+
+AWS has decided to discontinue AWS Proton, with support ending on October 7, 2026. New customers will not be able to sign up after October 7, 2025, but existing customers can continue to use the service until October 7, 2026.For more information, see [AWS Proton Service Deprecation and Migration Guide](https://docs.aws.amazon.com/proton/latest/userguide/proton-end-of-support.html).
+
+# Output
+<a name="API_Output"></a>
+
+An infrastructure as code defined resource output.
+
+## Contents
+<a name="API_Output_Contents"></a>
+
+ ** key **   <a name="proton-Type-Output-key"></a>
+The output key.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+ ** valueString **   <a name="proton-Type-Output-valueString"></a>
+The output value.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Required: No
+
+## See Also
+<a name="API_Output_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/proton-2020-07-20/Output)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/proton-2020-07-20/Output)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/proton-2020-07-20/Output)

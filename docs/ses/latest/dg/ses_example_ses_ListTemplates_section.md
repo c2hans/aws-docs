@@ -1,0 +1,180 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/dg/ses_example_ses_ListTemplates_section.html
+---
+
+# Use `ListTemplates` with an AWS SDK
+<a name="ses_example_ses_ListTemplates_section"></a>
+
+The following code examples show how to use `ListTemplates`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Verify an email identity and send messages](ses_example_ses_Scenario_SendEmail_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SES#code-examples).
+
+```
+    /// <summary>
+    /// List email templates for the current account.
+    /// </summary>
+    /// <returns>A list of template metadata.</returns>
+    public async Task<List<TemplateMetadata>> ListEmailTemplatesAsync()
+    {
+        var result = new List<TemplateMetadata>();
+        try
+        {
+            var response = await _amazonSimpleEmailService.ListTemplatesAsync(
+                new ListTemplatesRequest());
+            result = response.TemplatesMetadata;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("ListEmailTemplatesAsync failed with exception: " + ex.Message);
+        }
+
+        return result;
+    }
+```
++  For API details, see [ListTemplates](https://docs.aws.amazon.com/goto/DotNetSDKV3/email-2010-12-01/ListTemplates) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
+
+```
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.sesv2.SesV2Client;
+import software.amazon.awssdk.services.sesv2.model.ListEmailTemplatesRequest;
+import software.amazon.awssdk.services.sesv2.model.ListEmailTemplatesResponse;
+import software.amazon.awssdk.services.sesv2.model.SesV2Exception;
+
+public class ListTemplates {
+
+    public static void main(String[] args) {
+        Region region = Region.US_EAST_1;
+        SesV2Client sesv2Client = SesV2Client.builder()
+                .region(region)
+                .build();
+
+        listAllTemplates(sesv2Client);
+    }
+
+    public static void listAllTemplates(SesV2Client sesv2Client) {
+        try {
+            ListEmailTemplatesRequest templatesRequest = ListEmailTemplatesRequest.builder()
+                    .pageSize(1)
+                    .build();
+
+            ListEmailTemplatesResponse response = sesv2Client.listEmailTemplates(templatesRequest);
+            response.templatesMetadata()
+                    .forEach(template -> System.out.println("Template name: " + template.templateName()));
+
+        } catch (SesV2Exception e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+}
+```
++  For API details, see [ListTemplates](https://docs.aws.amazon.com/goto/SdkForJavaV2/email-2010-12-01/ListTemplates) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/ses#code-examples).
+
+```
+import { ListTemplatesCommand } from "@aws-sdk/client-ses";
+import { sesClient } from "./libs/sesClient.js";
+
+const createListTemplatesCommand = (maxItems) =>
+  new ListTemplatesCommand({ MaxItems: maxItems });
+
+const run = async () => {
+  const listTemplatesCommand = createListTemplatesCommand(10);
+
+  try {
+    return await sesClient.send(listTemplatesCommand);
+  } catch (err) {
+    console.log("Failed to list templates.", err);
+    return err;
+  }
+};
+```
++  For API details, see [ListTemplates](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/ses/command/ListTemplatesCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ses#code-examples).
+
+```
+class SesTemplate:
+    """Encapsulates Amazon SES template functions."""
+
+    def __init__(self, ses_client):
+        """
+        :param ses_client: A Boto3 Amazon SES client.
+        """
+        self.ses_client = ses_client
+        self.template = None
+        self.template_tags = set()
+
+    def _extract_tags(self, subject, text, html):
+        """
+        Extracts tags from a template as a set of unique values.
+
+        :param subject: The subject of the email.
+        :param text: The text version of the email.
+        :param html: The html version of the email.
+        """
+        self.template_tags = set(re.findall(TEMPLATE_REGEX, subject + text + html))
+        logger.info("Extracted template tags: %s", self.template_tags)
+
+    def list_templates(self):
+        """
+        Gets a list of all email templates for the current account.
+
+        :return: The list of retrieved email templates.
+        """
+        try:
+            response = self.ses_client.list_templates()
+            templates = response["TemplatesMetadata"]
+            logger.info("Got %s templates.", len(templates))
+        except ClientError:
+            logger.exception("Couldn't get templates.")
+            raise
+        else:
+            return templates
+```
++  For API details, see [ListTemplates](https://docs.aws.amazon.com/goto/boto3/email-2010-12-01/ListTemplates) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/ses#code-examples).
+
+```
+    TRY.
+        DATA(lo_result) = lo_ses->listtemplates( iv_maxitems = iv_max_items ).
+        ot_templates = lo_result->get_templatesmetadata( ).
+        MESSAGE 'Templates retrieved successfully' TYPE 'I'.
+      CATCH /aws1/cx_rt_generic INTO DATA(lo_ex).
+        DATA(lv_error) = |An error occurred: { lo_ex->get_text( ) }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_ex.
+    ENDTRY.
+```
++  For API details, see [ListTemplates](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using Amazon SES with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

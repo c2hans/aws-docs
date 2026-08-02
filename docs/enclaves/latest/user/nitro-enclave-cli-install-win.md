@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/enclaves/latest/user/nitro-enclave-cli-install-win.html
+---
+
+# Install the Nitro Enclaves CLI on Windows
+<a name="nitro-enclave-cli-install-win"></a>
+
+The AWS Nitro Enclaves CLI is packaged together with all of the components that are required to run Nitro Enclaves on a Windows parent instance. The package includes kernel drivers for the Enclave and vsock devices, a service provider interface for Winsock to support vsock sockets, the vsock-proxy, and the AWS Nitro Enclaves CLI.
+
+The following instructions are for installing and uninstalling the AWS Nitro Enclaves CLI on or from a parent instance running Windows.
+
+**Note**
+You may get the following error when you install, uninstall, or update the Nitro CLI: `Installation failed with code 3010`. This message indicates that a reboot is required to complete the installation. This error is likely caused by a component in use, such as a running enclave or a vsock-proxy process. To complete the installation, shut down all applications running on the instance and reboot it.
+
+## Install Nitro CLI
+<a name="install-cli-win"></a>
+
+To use the Nitro Enclaves on your parent instance, you must install the ** AWSNitroEnclavesWindows** package using AWS Systems Manager Distributor.
+
+Before you can install a package using the AWS Systems Manager Distributor, you must first [complete the Distributor prerequisites](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-prerequisites.html).
+
+After you have completed the prerequisites, install the **AWSNitroEnclavesWindows** package. For more information, see one of the following in the *AWS Systems Manager User Guide*:
++ [ Installing or updating a package one time using the console](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html#distributor-deploy-pkg-console)
++ [ Installing a package one time using the AWS CLI](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html#distributor-deploy-pkg-cli)
+
+You must reload the path environment variable from the updated environment in any PowerShell or command prompt already open on the instance. When you open a new PowerShell or command prompt, Windows automatically updates the path variable.

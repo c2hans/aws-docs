@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/rolesanywhere/latest/userguide/doc-history.html
+---
+
+# Document history for the AWS Identity and Access Management Roles Anywhere User Guide
+<a name="doc-history"></a>
+
+The following table describes the documentation releases for IAM Roles Anywhere.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [IAM Roles Anywhere Adds support for ML-DSA signatures](#doc-history) | Update signing specfication to include [AWS4-X509-MLDSA](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-sign-process.html#authentication-task2) in the signing specfication. Adds [ML-DSA-44, ML-DSA-65, ML-DSA-87](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-sign-process.html#authentication-task3).  | February 27, 2026 |
+| [IAM Roles Anywhere released new AWS managed policies](#doc-history) | Introduced new policies: [AWSRolesAnywhereReadOnly](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSRolesAnywhereReadOnly) and [AWSRolesAnywhereFullAccess](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-AWSRolesAnywhereFullAccess).  | July 16, 2025 |
+| [Released Credential Helper version 1.7.0](#doc-history) | IAM Roles Anywhere released Credential Helper version 1.7.0. For more information, see [ Credential Helper Changelog](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-changelog). | June 2, 2025 |
+| [Added IPv6 and dual-stack endpoint](#doc-history) | Added section for managing access to IPv4 and IPv6 endpoints. See [https://docs.aws.amazon.com/rolesanywhere/latest/userguide/ip-access.html](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/ip-access.html) | December 18, 2024 |
+| [Updated the service-linked role description](#doc-history) | Updated the service-linked role description and added role permissions policy. For more information, see [ Service-linked role permissions for IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/using-service-linked-roles.html#slr-permissions). | February 27, 2023 |
+| [Released Credential Helper version 1.0.4](#doc-history) | IAM Roles Anywhere released Credential Helper version 1.0.4. For more information, see [ Credential Helper Changelog](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-changelog). | January 17, 2023 |
+| [Released Credential Helper version 1.0.3](#doc-history) | IAM Roles Anywhere released Credential Helper version 1.0.3. For more information, see [ Credential Helper Changelog](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-changelog). | December 5, 2022 |
+| [Released Credential Helper version 1.0.2](#doc-history) | IAM Roles Anywhere released Credential Helper version 1.0.2. For more information, see [ Credential Helper Changelog](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-changelog). | September 8, 2022 |
+| [Added Signing Process and CreateSession](#doc-history) |  Added Signing Process and CreateSession sections. For more information, see [Signing process](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-sign-process.html) and [CreateSession](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-create-session.html)  | July 15, 2022 |
+| [Released Credential Helper version 1.0.1](#doc-history) | IAM Roles Anywhere released Credential Helper version 1.0.1. For more information, see [ Credential Helper Changelog](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html#credential-helper-changelog). | July 14, 2022 |
+| [Added certificate revocation](#doc-history) | Added certificate revocation in the IAM Roles Anywhere trust model page. For more information, see [Revocation](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trust-model.html#revocation). | July 13, 2022 |
+| [Initial release](#doc-history) | Initial release of the IAM Roles Anywhere User Guide | July 5, 2022 |

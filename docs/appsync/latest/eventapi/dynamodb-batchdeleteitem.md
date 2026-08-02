@@ -1,0 +1,60 @@
+---
+source_url: https://docs.aws.amazon.com/appsync/latest/eventapi/dynamodb-batchdeleteitem.html
+---
+
+# BatchDeleteItem
+<a name="dynamodb-batchdeleteitem"></a>
+
+**Note**
+We recommend using the DynamoDB built-in module to generate your request. For more information, see [Amazon DynamoDB built-in module](built-in-modules.md#DDB-built-in-module).
+
+The `BatchDeleteItem` request deletes multiple items, potentially across multiple tables using a `BatchWriteItem` request. The request specifies the following:
++ The names of the tables to delete the items from
++ The keys of the items to delete from each table
+
+The DynamoDB `BatchWriteItem` limits apply and **no condition expression** can be provided.
+
+The `BatchDeleteItem` request object has the following structure:
+
+```
+type DynamoDBBatchDeleteItemRequest = {
+  operation: 'BatchDeleteItem';
+  tables: {
+    [tableName: string]: { [key: string]: any }[];
+  };
+};
+```
+
+The TypeScript definition above shows all available fields for the request. While you can construct this request manually, we recommend using the DynamoDB built-in module for generating accurate and efficient requests.
+
+## BatchDeleteItem fields
+<a name="js-BatchDeleteItem-list"></a>
+
+** `operation` **
+The DynamoDB operation to perform. To perform the `BatchDeleteItem` DynamoDB operation, this must be set to `BatchDeleteItem`. This value is required.
+
+** `tables` **
+The DynamoDB tables to delete the items from. Each table is a list of DynamoDB keys representing the primary key of the items to delete. DynamoDB items may have a single hash key, or a hash key and sort key, depending on the table structure. For more information about how to specify a “typed value”, see [Type system (request mapping)](dynamodb-typed-values-request.md). At least one table must be provided. The `tables` value is required.
+
+Things to remember:
++ Contrary to the `DeleteItem` operation, the fully deleted item isn’t returned in the response. Only the passed key is returned.
++ If an item has not been deleted from the table, a *null* element appears in the data block for that table.
++ Invocation results are sorted per table, based on the order in which they were provided inside the request object.
++ Each `Delete` command inside a `BatchDeleteItem` is atomic. However a batch can be partially processed. If a batch is partially processed due to an error, the unprocessed keys are returned as part of the invocation result inside the *unprocessedKeys* block.
++  `BatchDeleteItem` is limited to 25 keys.
++ This operation **is not** supported when used with conflict detection. Using both at the same time may result in an error.
+
+Response structure (in `ctx.result)`
+
+```
+type Response = {
+  data: {
+    [tableName: string]: {[key: string]: any}[]
+  }
+  unprocessedKeys: {
+    [tableName: string]: {[key: string]: any}[]
+  }
+}
+```
+
+The `ctx.error` contains details about the error. The keys **data**, **unprocessedKeys**, and each table key that was provided in the function request object are guaranteed to be present in the invocation result. Items that have been deleted are present in the **data** block. Items that haven’t been processed are marked as *null* inside the data block and are placed inside the **unprocessedKeys** block.

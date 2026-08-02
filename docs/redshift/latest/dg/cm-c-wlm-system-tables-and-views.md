@@ -1,0 +1,68 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/cm-c-wlm-system-tables-and-views.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# WLM system tables and views
+<a name="cm-c-wlm-system-tables-and-views"></a>
+
+WLM configures query queues according to WLM service classes, which are internally defined. Amazon Redshift creates several internal queues according to these service classes along with the queues defined in the WLM configuration. The terms *queue* and *service class* are often used interchangeably in the system tables. The superuser queue uses service class 5. User-defined queues use service class 6 and greater.
+
+You can view the status of queries, queues, and service classes by using WLM-specific system tables. Query the following system tables to do the following:
++ View which queries are being tracked and what resources are allocated by the workload manager.
++ See which queue a query has been assigned to.
++ View the status of a query that is currently being tracked by the workload manager.
+
+| Table Name  | Description  |
+| --- | --- |
+|  [STL\_WLM\_ERROR](r_STL_WLM_ERROR.md)  | Contains a log of WLM-related error events.  |
+|  [STL\_WLM\_QUERY](r_STL_WLM_QUERY.md)  | Lists queries that are being tracked by WLM.  |
+|  [STV\_WLM\_CLASSIFICATION\_CONFIG](r_STV_WLM_CLASSIFICATION_CONFIG.md)  | Shows the current classification rules for WLM.  |
+|  [STV\_WLM\_QUERY\_QUEUE\_STATE](r_STV_WLM_QUERY_QUEUE_STATE.md)  | Records the current state of the query queues.  |
+|  [STV\_WLM\_QUERY\_STATE](r_STV_WLM_QUERY_STATE.md)  | Provides a snapshot of the current state of queries that are being tracked by WLM.  |
+|  [STV\_WLM\_QUERY\_TASK\_STATE](r_STV_WLM_QUERY_TASK_STATE.md)  | Contains the current state of query tasks.  |
+|  [STV\_WLM\_SERVICE\_CLASS\_CONFIG](r_STV_WLM_SERVICE_CLASS_CONFIG.md)  | Records the service class configurations for WLM.  |
+|  [STV\_WLM\_SERVICE\_CLASS\_STATE](r_STV_WLM_SERVICE_CLASS_STATE.md)  | Contains the current state of the service classes. |
+|  [STL\_WLM\_RULE\_ACTION](r_STL_WLM_RULE_ACTION.md)  | Records details about actions resulting from WLM query monitoring rules associated with user-defined queues. |
+|  [STV\_WLM\_QMR\_CONFIG](r_STV_WLM_QMR_CONFIG.md)  | Records the configuration for WLM query monitoring rules (QMR). |
+
+ You use the task ID to track a query in the system tables. The following example shows how to obtain the task ID of the most recently submitted user query:
+
+```
+select task from stl_wlm_query where exec_start_time =(select max(exec_start_time) from stl_wlm_query);
+
+task
+------
+137
+(1 row)
+```
+
+ The following example displays queries that are currently executing or waiting in various service classes (queues). This query is useful in tracking the overall concurrent workload for Amazon Redshift:
+
+```
+select * from stv_wlm_query_state order by query;
+
+xid |task|query|service_| wlm_start_  |  state  |queue_ | exec_
+    |    |     |class   | time        |         |time   | time
+----+----+-----+--------+-------------+---------+-------+--------
+2645| 84 | 98  | 3      | 2010-10-... |Returning|   0   | 3438369
+2650| 85 | 100 | 3      | 2010-10-... |Waiting  |   0   | 1645879
+2660| 87 | 101 | 2      | 2010-10-... |Executing|   0   | 916046
+2661| 88 | 102 | 1      | 2010-10-... |Executing|   0   | 13291
+(4 rows)
+```
+
+## WLM service class IDs
+<a name="wlm-service-class-ids"></a>
+
+The following table lists the IDs assigned to service classes.
+
+| ID  | Service class  |
+| --- | --- |
+| 1–4 | Reserved for system use.  |
+| 5 | Used by the superuser queue.  |
+| 6–13 | Used by manual WLM queues that are defined in the WLM configuration.  |
+| 14 | Used by short query acceleration.  |
+| 15 | Reserved for maintenance activities run by Amazon Redshift.  |
+| 100–107 | Used by automatic WLM queue when auto\_wlm is true.  |

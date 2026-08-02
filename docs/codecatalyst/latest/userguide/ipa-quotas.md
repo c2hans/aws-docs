@@ -1,0 +1,23 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-quotas.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# Quotas for identity, permission, and access in CodeCatalyst
+<a name="ipa-quotas"></a>
+
+The following table describes quotas and limits for identity, permission, and access in Amazon CodeCatalyst. For more information about quotas in Amazon CodeCatalyst, see [Quotas for CodeCatalyst](quotas.md).
+
+| Resource | Information |
+| --- | --- |
+| Aliases in CodeCatalyst | Any combination of allowed characters between 3 and 100 characters in length and must start with a letter. Valid characters: A-Z, a-z, and 0-9. Aliases cannot:[See the AWS documentation website for more details](http://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-quotas.html) |
+| Maximum number of invitations sent by a user per day | 500 |
+| Maximum number of invitations sent to an email address per day | 25 |
+| Maximum number of Personal Access Tokens (PAT) per user | 100 |
+| Maximum number of personal connections for each user identity (CodeCatalyst alias) across all spaces, per provider type | 1 |
+| Passwords in CodeCatalyst | Any combination of allowed characters between 8 and 64 characters in length. Valid characters: A-Z, a-z, and 0-9. Your password can include the following nonalphanumeric characters: `( ~ ! @ # $ % ^ & * _ - + = ` \| \ { } [ ] : ; " ' < > , . ? / ) ` |
+| PAT names in CodeCatalyst | Any combination of allowed characters between 1 and 100 characters |
+| Time until a project member invitation expires | Expires after 24 hours |
+| Time until a space member invitation expires | Expires after 24 hours |
+| Time until an email address verification expires | Expires 10 minutes after sending |

@@ -1,0 +1,173 @@
+---
+source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/exporting-fhir-data-list.html
+---
+
+# Listing FHIR export jobs
+<a name="exporting-fhir-data-list"></a>
+
+Use `ListFHIRExportJobs` to list FHIR export jobs for a HealthLake data store. The following menus provide a procedure for the AWS Management Console and code examples for the AWS CLI and AWS SDKs. For more information, see [https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRExportJobs.html](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_ListFHIRExportJobs.html) in the *AWS HealthLake API Reference*.
+
+**Note**
+HealthLake supports the [FHIR R4 specification](https://hl7.org/fhir/R4/index.html) for health care data exchange. Therefore, all health data is exported in FHIR R4 format.
+
+**To list FHIR export jobs**
+Choose a menu based on your access preference to AWS HealthLake.
+
+## AWS CLI and SDKs
+<a name="list-export-jobs-cli-sdk"></a>
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list all FHIR export jobs**
+The following `list-fhir-export-jobs` example shows how to use the command to view a list of export jobs associated with an account.
+
+```
+aws healthlake list-fhir-export-jobs \
+    --datastore-id {{(Data}} {{store}} {{ID)}} \
+    --submitted-before {{(DATE}} {{like}} {{2024-10-13T19:00:00Z)}}\
+    --submitted-after {{(DATE}} {{like}} {{2020-10-13T19:00:00Z}} {{)}}\
+    --job-name {{"FHIR-EXPORT"}} \
+    --job-status {{SUBMITTED}}  \
+    --max-results {{(Integer}} {{between}} {{1}} {{and}} {{500)}}
+```
+Output:
+
+```
+{
+    "ExportJobPropertiesList": [
+        {
+            "ExportJobProperties": {
+                "OutputDataConfig": {
+                    "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
+                    "S3Configuration": {
+                        "S3Uri": "s3://(Bucket Name)/(Prefix Name)/",
+                        "KmsKeyId": "(KmsKey Id)"
+                    }
+                },
+                "DataAccessRoleArn": "arn:aws:iam::(AWS Account ID):role/(Role Name)",
+                "JobStatus": "COMPLETED",
+                "JobId": "c145fbb27b192af392f8ce6e7838e34f",
+                "JobName": "FHIR-EXPORT",
+                "SubmitTime": "2024-11-20T11:31:46.672000-05:00",
+                "EndTime": "2024-11-20T11:34:01.636000-05:00",
+                "DatastoreId": "(Data store ID)"
+            }
+        }
+    ]
+}
+```
+
++  For API details, see [ListFHIRExportJobs](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/healthlake/list-fhir-export-jobs.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+
+```
+    @classmethod
+    def from_client(cls) -> "HealthLakeWrapper":
+        """
+        Creates a HealthLakeWrapper instance with a default AWS HealthLake client.
+
+        :return: An instance of HealthLakeWrapper initialized with the default HealthLake client.
+        """
+        health_lake_client = boto3.client("healthlake")
+        return cls(health_lake_client)
+
+    def list_fhir_export_jobs(
+        self,
+        datastore_id: str,
+        job_name: str = None,
+        job_status: str = None,
+        submitted_before: datetime = None,
+        submitted_after: datetime = None,
+    ) -> list[dict[str, any]]:
+        """
+        Lists HealthLake export jobs satisfying the conditions.
+        :param datastore_id: The data store ID.
+        :param job_name: The export job name.
+        :param job_status: The export job status.
+        :param submitted_before: The export job submitted before the specified date.
+        :param submitted_after: The export job submitted after the specified date.
+        :return: A list of export jobs.
+        """
+        try:
+            parameters = {"DatastoreId": datastore_id}
+            if job_name is not None:
+                parameters["JobName"] = job_name
+            if job_status is not None:
+                parameters["JobStatus"] = job_status
+            if submitted_before is not None:
+                parameters["SubmittedBefore"] = submitted_before
+            if submitted_after is not None:
+                parameters["SubmittedAfter"] = submitted_after
+            next_token = None
+            jobs = []
+            # Loop through paginated results.
+            while True:
+                if next_token is not None:
+                    parameters["NextToken"] = next_token
+                response = self.health_lake_client.list_fhir_export_jobs(**parameters)
+                jobs.extend(response["ExportJobPropertiesList"])
+                if "NextToken" in response:
+                    next_token = response["NextToken"]
+                else:
+                    break
+            return jobs
+        except ClientError as err:
+            logger.exception(
+                "Couldn't list export jobs. Here's why %s",
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [ListFHIRExportJobs](https://docs.aws.amazon.com/goto/boto3/healthlake-2017-07-01/ListFHIRExportJobs) in *AWS SDK for Python (Boto3) API Reference*.
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/healthlake#code-examples).
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/hll#code-examples).
+
+```
+    TRY.
+        " iv_datastore_id = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'
+        IF iv_submitted_after IS NOT INITIAL.
+          oo_result = lo_hll->listfhirexportjobs(
+            iv_datastoreid = iv_datastore_id
+            iv_submittedafter = iv_submitted_after
+          ).
+        ELSE.
+          oo_result = lo_hll->listfhirexportjobs(
+            iv_datastoreid = iv_datastore_id
+          ).
+        ENDIF.
+        DATA(lt_export_jobs) = oo_result->get_exportjobpropertieslist( ).
+        DATA(lv_job_count) = lines( lt_export_jobs ).
+        MESSAGE |Found { lv_job_count } export job(s).| TYPE 'I'.
+      CATCH /aws1/cx_hllvalidationex INTO DATA(lo_validation_ex).
+        DATA(lv_error) = |Validation error: { lo_validation_ex->av_err_code }-{ lo_validation_ex->av_err_msg }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_validation_ex.
+      CATCH /aws1/cx_hllresourcenotfoundex INTO DATA(lo_notfound_ex).
+        lv_error = |Resource not found: { lo_notfound_ex->av_err_code }-{ lo_notfound_ex->av_err_msg }|.
+        MESSAGE lv_error TYPE 'I'.
+        RAISE EXCEPTION lo_notfound_ex.
+    ENDTRY.
+```
++  For API details, see [ListFHIRExportJobs](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+**Example availability**
+Can't find what you need? Request a code example using the **Provide feedback** link on the right sidebar of this page.
+
+## AWS Console
+<a name="list-export-jobs-console"></a>
+
+**Note**
+FHIR export job information is not available on the HealthLake Console. Instead, use the AWS CLI with `ListFHIRExportJobs` to list all FHIR export jobs. For more information, refer to the AWS CLI example on this page.

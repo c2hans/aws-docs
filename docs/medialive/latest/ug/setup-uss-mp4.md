@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/setup-uss-mp4.html
+---
+
+# Ensure correct setup on the MP4 upstream system
+<a name="setup-uss-mp4"></a>
+
+An operator at the upstream server must set up the source content on the upstream system. Make sure that the operator sets up as follows:
++ They set up to deliver the correct number of sources:
+  + If the MediaLive channel is a standard channel, the operator must set up two file sources. They must make sure that the two files are identical in terms of video resolution and bitrate.
+  + If the MediaLive channel is a single-pipeline channel, the operator must set up one file source.
++ They set up to make the content available at the agreed URLs. These URLs are the URLs that you obtained [earlier in this section](setup-mp4-obtain-info.md), and that you configured into the MP4 input. They correspond to the URLs shown in [the diagram after this procedure](setup-result-mp4.md).

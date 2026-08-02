@@ -1,0 +1,284 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/googledrive-v2-api.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# Connecting Amazon Q Business to GoogleDrive using API
+<a name="googledrive-v2-api"></a>
+
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
+
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
+
+**Topics**
++ [Google Drive configuration properties](#google-configuration-keys)
++ [Google Drive JSON schema](#googledrive-v2-json)
++ [GoogleDrive JSON schema example](#googledrive-v2-json-example)
++ [GoogleDrive minimal configuration example](#googledrive-v2-json-minimal-example)
+
+## Google Drive configuration properties
+<a name="google-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| type | The connector type. Must be GOOGLEDRIVEV3. | string | Yes |
+| connectionConfiguration | Configuration information for the data source connection. | `object`<br />This property has the following sub-properties: `secretArn`, `authType`. | Yes |
+| secretArn | The Amazon Resource Name (ARN) of the AWS Secrets Manager secret that contains the Google Drive credentials. | string | Yes |
+| authType | The authentication type. The valid value is: SERVICE\_ACCOUNT. | string | Yes |
+| dataEntityConfiguration | Configuration for which Google Drive entities to crawl. | `object`<br />This property has the following sub-properties: `crawlMyDrive`, `crawlSharedWithMe`, `crawlSharedDrives`. | Yes |
+| crawlMyDrive | Whether to crawl the user's personal drive. Default is true. | boolean | No |
+| crawlSharedWithMe | Whether to crawl files shared with the user. Default is true. | boolean | No |
+| crawlSharedDrives | Whether to crawl shared drives. Default is true. | boolean | No |
+| accessControlConfiguration | Configuration for access control list (ACL) crawling. | `object`<br />This property has the following sub-property: `crawlAcl`. | Yes |
+| crawlAcl | Whether to crawl access control lists for documents. | boolean | No |
+| filterConfiguration | Configuration for filtering which content to crawl. | `object`<br />Contains various filtering options including shared drives, MIME types, and date ranges. | No |
+| maxFileSizeInMegaBytes | Maximum file size to crawl in megabytes. | string | No |
+| exclusionSharedDriveIds | Array of shared drive IDs to exclude from crawling. Maximum 1024 entries. | array | No |
+| inclusionSharedDriveIds | Array of shared drive IDs to include in crawling. Maximum 1024 entries. | array | No |
+| exclusionMimeTypes | Array of MIME types to exclude from crawling. Maximum 1024 entries. | array | No |
+| inclusionMimeTypes | Array of MIME types to include in crawling. Maximum 1024 entries. | array | No |
+| modifiedDateBefore | Only crawl files modified before this date. ISO 8601 format (e.g., 2024-12-31T23:59:59Z). | string | No |
+| modifiedDateAfter | Only crawl files modified after this date. ISO 8601 format (e.g., 2024-01-01T00:00:00Z). | string | No |
+| crawlIdentities | Whether to crawl user and group identities. Not supported in new. | boolean | No |
+| deletionProtectionConfiguration | Configuration for deletion protection settings. | `object`<br />This property has the following sub-properties: `enableDeletionProtection`, `deletionProtectionThreshold`. | No |
+| enableDeletionProtection | Whether to enable deletion protection. | boolean | No |
+| deletionProtectionThreshold | Threshold percentage for deletion protection. | string | No |
+| version | Version of the connector configuration. | string | No |
+| identityLoggingStatus | Status of identity logging. Valid values are ENABLED and DISABLED. | string | No |
+
+## Google Drive JSON schema
+<a name="googledrive-v2-json"></a>
+
+The following is the Google Drive New JSON schema:
+
+```
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["GOOGLEDRIVEV3"]
+    },
+    "connectionConfiguration": {
+      "type": "object",
+      "properties": {
+        "secretArn": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 2048
+        },
+        "authType": {
+          "type": "string",
+          "enum": ["SERVICE_ACCOUNT"]
+        }
+      },
+      "required": ["secretArn", "authType"]
+    },
+    "dataEntityConfiguration": {
+      "type": "object",
+      "properties": {
+        "crawlMyDrive": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlSharedWithMe": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlSharedDrives": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        }
+      }
+    },
+    "filterConfiguration": {
+      "type": "object",
+      "properties": {
+        "maxFileSizeInMegaBytes": {
+          "type": "string"
+        },
+        "exclusionSharedDriveIds": {
+          "type": "array",
+          "maxItems": 1024,
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionSharedDriveIds": {
+          "type": "array",
+          "maxItems": 1024,
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionMimeTypes": {
+          "type": "array",
+          "maxItems": 1024,
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionMimeTypes": {
+          "type": "array",
+          "maxItems": 1024,
+          "items": {
+            "type": "string"
+          }
+        },
+        "modifiedDateBefore": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 date-time format (e.g., 2024-12-31T23:59:59Z)"
+        },
+        "modifiedDateAfter": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 date-time format (e.g., 2024-01-01T00:00:00Z)"
+        }
+      }
+    },
+    "accessControlConfiguration": {
+      "type": "object",
+      "properties": {
+        "crawlAcl": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        }
+      }
+    },
+    "crawlIdentities": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "enum": ["true", "false"]
+        }
+      ]
+    },
+    "deletionProtectionConfiguration": {
+      "type": "object",
+      "properties": {
+        "enableDeletionProtection": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "deletionProtectionThreshold": {
+          "type": "string"
+        }
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "identityLoggingStatus": {
+      "type": "string",
+      "enum": ["ENABLED", "DISABLED"]
+    }
+  },
+  "required": ["type", "connectionConfiguration", "dataEntityConfiguration", "accessControlConfiguration"]
+}
+```
+
+## GoogleDrive JSON schema example
+<a name="googledrive-v2-json-example"></a>
+
+The following is the GoogleDrive New JSON schema example:
+
+```
+{
+  "type": "GOOGLEDRIVEV3",
+  "connectionConfiguration": {
+    "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-google-drive-secret",
+    "authType": "SERVICE_ACCOUNT"
+  },
+  "dataEntityConfiguration": {
+    "crawlMyDrive": true,
+    "crawlSharedWithMe": true,
+    "crawlSharedDrives": true
+  },
+  "filterConfiguration": {
+    "maxFileSizeInMegaBytes": "50",
+    "exclusionSharedDriveIds": ["SharedDrive1"],
+    "inclusionSharedDriveIds": ["SharedDrive2"],
+    "exclusionMimeTypes": ["application/vnd.google-apps.folder"],
+    "inclusionMimeTypes": ["application/pdf", "application/vnd.google-apps.document"],
+    "modifiedDateBefore": "2024-12-31T23:59:59Z",
+    "modifiedDateAfter": "2024-01-01T00:00:00Z"
+  },
+  "accessControlConfiguration": {
+    "crawlAcl": true
+  },
+  "crawlIdentities": true,
+  "deletionProtectionConfiguration": {
+    "enableDeletionProtection": false,
+    "deletionProtectionThreshold": "10"
+  },
+  "version": "3.0.0",
+  "identityLoggingStatus": "DISABLED"
+}
+```
+
+## GoogleDrive minimal configuration example
+<a name="googledrive-v2-json-minimal-example"></a>
+
+The following is the minimum required configuration for GoogleDrive New:
+
+```
+{
+  "type": "GOOGLEDRIVEV3",
+  "connectionConfiguration": {
+    "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-google-drive-secret",
+    "authType": "SERVICE_ACCOUNT"
+  },
+  "dataEntityConfiguration": {
+    "crawlMyDrive": true,
+    "crawlSharedWithMe": false,
+    "crawlSharedDrives": false
+  },
+  "accessControlConfiguration": {
+    "crawlAcl": false
+  }
+}
+```

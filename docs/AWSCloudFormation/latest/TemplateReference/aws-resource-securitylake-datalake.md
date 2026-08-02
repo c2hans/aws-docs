@@ -1,0 +1,771 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-securitylake-datalake.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::SecurityLake::DataLake
+<a name="aws-resource-securitylake-datalake"></a>
+
+Initializes an Amazon Security Lake instance with the provided (or default) configuration. You can enable Security Lake in AWS Regions with customized settings before enabling log collection in Regions. To specify particular Regions, configure these Regions using the `configurations` parameter. If you have already enabled Security Lake in a Region when you call this command, the command will update the Region if you provide new configuration parameters. If you have not already enabled Security Lake in the Region when you call this API, it will set up the data lake in the Region with the specified configurations.
+
+When you enable Security Lake, it starts ingesting security data after the `CreateAwsLogSource` call. This includes ingesting security data from sources, storing data, and making data accessible to subscribers. Security Lake also enables all the existing settings and resources that it stores or maintains for your AWS account in the current Region, including security log and event data. For more information, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com//security-lake/latest/userguide/what-is-security-lake.html).
+
+**Important**
+If you use this template to create multiple data lakes in different AWS Regions, and more than one of your data lakes include an [AWS::SecurityLake::AwsLogSource](/AWSCloudFormation/latest/UserGuide/aws-resource-securitylake-awslogsource.html) resource, then you must deploy these data lakes sequentially. This is required because data lakes operate globally, and `AwsLogSource` resources must be deployed one at a time.
+
+## Syntax
+<a name="aws-resource-securitylake-datalake-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-resource-securitylake-datalake-syntax.json"></a>
+
+```
+{
+  "Type" : "AWS::SecurityLake::DataLake",
+  "Properties" : {
+      "[EncryptionConfiguration](#cfn-securitylake-datalake-encryptionconfiguration)" : {{EncryptionConfiguration}},
+      "[LifecycleConfiguration](#cfn-securitylake-datalake-lifecycleconfiguration)" : {{LifecycleConfiguration}},
+      "[MetaStoreManagerRoleArn](#cfn-securitylake-datalake-metastoremanagerrolearn)" : {{String}},
+      "[ReplicationConfiguration](#cfn-securitylake-datalake-replicationconfiguration)" : {{ReplicationConfiguration}},
+      "[Tags](#cfn-securitylake-datalake-tags)" : {{[ Tag, ... ]}}
+    }
+}
+```
+
+### YAML
+<a name="aws-resource-securitylake-datalake-syntax.yaml"></a>
+
+```
+Type: AWS::SecurityLake::DataLake
+Properties:
+  [EncryptionConfiguration](#cfn-securitylake-datalake-encryptionconfiguration): {{
+    EncryptionConfiguration}}
+  [LifecycleConfiguration](#cfn-securitylake-datalake-lifecycleconfiguration): {{
+    LifecycleConfiguration}}
+  [MetaStoreManagerRoleArn](#cfn-securitylake-datalake-metastoremanagerrolearn): {{String}}
+  [ReplicationConfiguration](#cfn-securitylake-datalake-replicationconfiguration): {{
+    ReplicationConfiguration}}
+  [Tags](#cfn-securitylake-datalake-tags): {{
+    - Tag}}
+```
+
+## Properties
+<a name="aws-resource-securitylake-datalake-properties"></a>
+
+`EncryptionConfiguration`  <a name="cfn-securitylake-datalake-encryptionconfiguration"></a>
+Provides encryption details of the Amazon Security Lake object.
+*Required*: No
+*Type*: [EncryptionConfiguration](aws-properties-securitylake-datalake-encryptionconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`LifecycleConfiguration`  <a name="cfn-securitylake-datalake-lifecycleconfiguration"></a>
+You can customize Security Lake to store data in your preferred AWS Regions for your preferred amount of time. Lifecycle management can help you comply with different compliance requirements. For more details, see [Lifecycle management](https://docs.aws.amazon.com//security-lake/latest/userguide/lifecycle-management.html) in the Amazon Security Lake User Guide.
+*Required*: No
+*Type*: [LifecycleConfiguration](aws-properties-securitylake-datalake-lifecycleconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`MetaStoreManagerRoleArn`  <a name="cfn-securitylake-datalake-metastoremanagerrolearn"></a>
+The Amazon Resource Name (ARN) used to create and update the AWS Glue table. This table contains partitions generated by the ingestion and normalization of AWS log sources and custom sources.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:.*$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ReplicationConfiguration`  <a name="cfn-securitylake-datalake-replicationconfiguration"></a>
+Provides replication details of Amazon Security Lake object.
+*Required*: No
+*Type*: [ReplicationConfiguration](aws-properties-securitylake-datalake-replicationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Tags`  <a name="cfn-securitylake-datalake-tags"></a>
+An array of objects, one for each tag to associate with the data lake configuration. For each tag, you must specify both a tag key and a tag value. A tag value cannot be null, but it can be an empty string.
+*Required*: No
+*Type*: Array of [Tag](aws-properties-securitylake-datalake-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## Return values
+<a name="aws-resource-securitylake-datalake-return-values"></a>
+
+### Ref
+<a name="aws-resource-securitylake-datalake-return-values-ref"></a>
+
+When you pass the logical ID of this resource to the intrinsic `ref` function, `ref` returns the `DataLake` name.
+
+For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
+
+### Fn::GetAtt
+<a name="aws-resource-securitylake-datalake-return-values-fn--getatt"></a>
+
+The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
+
+For more information about using the `Fn::GetAtt` intrinsic function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
+
+####
+<a name="aws-resource-securitylake-datalake-return-values-fn--getatt-fn--getatt"></a>
+
+`Arn`  <a name="Arn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the data lake.
+
+`S3BucketArn`  <a name="S3BucketArn-fn::getatt"></a>
+The Amazon Resource Name (ARN) of the Amazon S3 bucket.
+
+## Examples
+<a name="aws-resource-securitylake-datalake--examples"></a>
+
+**Topics**
++ [Enable Security Lake in two accounts for three log sources](#aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources)
++ [Enable Security Lake in all accounts for three log sources](#aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources)
++ [Deploys a contributing Security Lake Region](#aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region)
++ [Configure with KMS](#aws-resource-securitylake-datalake--examples--Configure_with_KMS)
+
+### Enable Security Lake in two accounts for three log sources
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources"></a>
+
+#### JSON
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources--json"></a>
+
+```
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+"Transform": "AWS::Serverless-2016-10-31",
+"Description": "Creates Security Lake with NO KMS and two sources, this can be used as a rollup region.",
+"Parameters": {
+    "RoleName": {
+        "Type": "String",
+        "Default": "Provide a name if Security Lake has not been enabled from console",
+        "Description": "Prefix for role name with managed policy"
+    },
+    "Account1": {
+        "Type": "String",
+        "Default": "Enter an account for Security Lake to enable log sources",
+        "Description": "Account number to enable logs"
+    },
+    "Account2": {
+        "Type": "String",
+        "Default": "Enter another account for Security Lake to enable log sources",
+        "Description": "Account number n to enable logs"
+    }
+},
+"Resources": {
+    "AmazonSecurityLakeMetaStoreManagerRole": {
+        "Type": "AWS::IAM::Role",
+        "Properties": {
+            "RoleName": {
+                "Fn::Sub": "${RoleName}-SecurityLakeMetasStoreManager"
+            },
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "ManagedPolicyArns": [
+                "arn:aws:iam::aws:policy/service-role/AmazonSecurityLakeMetastoreManager"
+            ]
+        }
+    },
+    "SecurityLakeEnablement": {
+        "Type": "AWS::SecurityLake::DataLake",
+        "Properties": {
+            "MetaStoreManagerRoleArn": {
+                "Fn::GetAtt": [
+                    "AmazonSecurityLakeMetaStoreManagerRole",
+                    "Arn"
+                ]
+            }
+        }
+    },
+    "SecurityLakeSourcesRoute53": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "Accounts": [
+                {
+                    "Ref": "Account1"
+                },
+                {
+                    "Ref": "Account2"
+                }
+            ],
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "ROUTE53",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeEnablement"
+    },
+    "SecurityLakeSourcesSecurityHub": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "Accounts": [
+                {
+                    "Ref": "Account1"
+                },
+                {
+                    "Ref": "Account2"
+                }
+            ],
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "SH_FINDINGS",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeSourcesRoute53"
+    },
+    "SecurityLakeSourcesS3": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "Accounts": [
+                {
+                    "Ref": "Account1"
+                },
+                {
+                    "Ref": "Account2"
+                }
+            ],
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "S3_DATA",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeSourcesSecurityHub"
+    }
+}
+}
+```
+
+#### YAML
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_two_accounts_for_three_log_sources--yaml"></a>
+
+```
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description:  Creates Security Lake with NO KMS and two sources, this can be used as a rollup region.
+
+Parameters:
+  RoleName:
+    Type: String
+    Default: Provide a name if Security Lake has not been enabled from console
+    Description: Prefix for role name with managed policy
+  Account1:
+    Type: String
+    Default: Enter an account for Security Lake to enable log sources
+    Description: Account number to enable logs
+  Account2:
+    Type: String
+    Default: Enter another account for Security Lake to enable log sources
+    Description: Account number n to enable logs
+
+Resources:
+  AmazonSecurityLakeMetaStoreManagerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName:
+        Fn::Sub: ${RoleName}-SecurityLakeMetasStoreManager
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17		 	 	 '
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: lambda.amazonaws.com
+          Action: sts:AssumeRole
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/service-role/AmazonSecurityLakeMetastoreManager
+
+  SecurityLakeEnablement:
+    Type: AWS::SecurityLake::DataLake
+    Properties:
+      MetaStoreManagerRoleArn:
+        Fn::GetAtt:
+        - AmazonSecurityLakeMetaStoreManagerRole
+        - Arn
+
+  SecurityLakeSourcesRoute53:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      Accounts:
+      - Ref: Account1
+      - Ref: Account2
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: ROUTE53
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeEnablement
+
+  SecurityLakeSourcesSecurityHub:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      Accounts:
+      - Ref: Account1
+      - Ref: Account2
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: SH_FINDINGS
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeSourcesRoute53
+
+  SecurityLakeSourcesS3:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      Accounts:
+      - Ref: Account1
+      - Ref: Account2
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: S3_DATA
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeSourcesSecurityHub
+```
+
+### Enable Security Lake in all accounts for three log sources
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources"></a>
+
+#### JSON
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources--json"></a>
+
+```
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+"Transform": "AWS::Serverless-2016-10-31",
+"Description": "Creates Security Lake with NO KMS and two sources. This can be used as a centralized Region.",
+"Parameters": {
+    "RoleName": {
+        "Type": "String",
+        "Default": "Provide a name if Security Lake has not been enabled from console",
+        "Description": "Prefix for role name with managed policy"
+    },
+},
+"Resources": {
+    "AmazonSecurityLakeMetaStoreManagerRole": {
+        "Type": "AWS::IAM::Role",
+        "Properties": {
+            "RoleName": {
+                "Fn::Sub": "${RoleName}-SecurityLakeMetasStoreManager"
+            },
+            "AssumeRolePolicyDocument": {
+                "Version": "2012-10-17",
+                "Statement": [
+                    {
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "lambda.amazonaws.com"
+                        },
+                        "Action": "sts:AssumeRole"
+                    }
+                ]
+            },
+            "ManagedPolicyArns": [
+                "arn:aws:iam::aws:policy/service-role/AmazonSecurityLakeMetastoreManager"
+            ]
+        }
+    },
+    "SecurityLakeEnablement": {
+        "Type": "AWS::SecurityLake::DataLake",
+        "Properties": {
+            "MetaStoreManagerRoleArn": {
+                "Fn::GetAtt": [
+                    "AmazonSecurityLakeMetaStoreManagerRole",
+                    "Arn"
+                ]
+            }
+        }
+    },
+    "SecurityLakeSourcesRoute53": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "ROUTE53",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeEnablement"
+    },
+    "SecurityLakeSourcesSecurityHub": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "SH_FINDINGS",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeSourcesRoute53"
+    },
+    "SecurityLakeSourcesS3": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "S3_DATA",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeSourcesSecurityHub"
+    }
+}
+}
+```
+
+#### YAML
+<a name="aws-resource-securitylake-datalake--examples--Enable_in_all_accounts_for_three_log_sources--yaml"></a>
+
+```
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description:  Creates Security Lake with NO KMS on three sources and all accounts. This can be used as a centralized Region.
+
+Parameters:
+  RoleName:
+    Type: String
+    Default: Provide a name if Security Lake has not been enabled from console
+    Description: Prefix for role name with managed policy
+
+Resources:
+  AmazonSecurityLakeMetaStoreManagerRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName:
+        Fn::Sub: ${RoleName}-SecurityLakeMetasStoreManager
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17		 	 	 '
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service: lambda.amazonaws.com
+          Action: sts:AssumeRole
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/service-role/AmazonSecurityLakeMetastoreManager
+
+  SecurityLakeEnablement:
+    Type: AWS::SecurityLake::DataLake
+    Properties:
+      MetaStoreManagerRoleArn:
+        Fn::GetAtt:
+        - AmazonSecurityLakeMetaStoreManagerRole
+        - Arn
+
+  SecurityLakeSourcesRoute53:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: ROUTE53
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeEnablement
+
+  SecurityLakeSourcesSecurityHub:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: SH_FINDINGS
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeSourcesRoute53
+
+  SecurityLakeSourcesS3:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: S3_DATA
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeSourcesSecurityHub
+```
+
+### Deploys a contributing Security Lake Region
+<a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region"></a>
+
+ Enables Security lake in two accounts for three logs sources as a contributing Region.
+
+#### JSON
+<a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region--json"></a>
+
+```
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+"Transform": "AWS::Serverless-2016-10-31",
+"Description": "Creates Security Lake with NO KMS and two sources, replicates to one region.",
+"Parameters": {
+    "Account1": {
+        "Type": "String",
+        "Default": "Enter an account for Security Lake to enable log sources",
+        "Description": "Account number to enable logs"
+    },
+    "Account2": {
+        "Type": "String",
+        "Default": "Enter another account for Security Lake to enable log sources",
+        "Description": "Account number n to enable logs"
+    },
+    "ReplicationRegionDestination": {
+        "Type": "String",
+        "Default": "Enter destination region",
+        "Description": "Centralized destination region"
+    },
+    "MetaStoreRoleArn": {
+        "Type": "String",
+        "Default": "Security Lake Metastore Manager Role",
+        "Description": "arn for AWS Security Lake Metastore Manager Role"
+    },
+    "ReplicationRoleArn": {
+        "Type": "String",
+        "Default": "Replication Role ARN",
+        "Description": "Replication role arn that supports rollup to destination region"
+    }
+},
+"Resources": {
+    "SecurityLakeEnablement": {
+        "Type": "AWS::SecurityLake::DataLake",
+        "Properties": {
+            "MetaStoreManagerRoleArn": {
+                "Ref": "MetaStoreRoleArn"
+            },
+            "ReplicationConfiguration": {
+                "Regions": [
+                    {
+                        "Ref": "ReplicationRegionDestination"
+                    }
+                ],
+                "RoleArn": "arn:aws:iam::123456789123:role/SecurityLake-Replication-Role"
+            }
+        }
+    },
+    "SecurityLakeSourcesRoute53": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "Accounts": [
+                {
+                    "Ref": "Account1"
+                },
+                {
+                    "Ref": "Account2"
+                }
+            ],
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "ROUTE53",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeEnablement"
+    },
+    "SecurityLakeSourcesSecurityHub": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "Accounts": [
+                {
+                    "Ref": "Account1"
+                },
+                {
+                    "Ref": "Account2"
+                }
+            ],
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "SH_FINDINGS",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeSourcesRoute53"
+    },
+    "SecurityLakeSourcesS3": {
+        "Type": "AWS::SecurityLake::AwsLogSource",
+        "Properties": {
+            "Accounts": [
+                {
+                    "Ref": "Account1"
+                },
+                {
+                    "Ref": "Account2"
+                }
+            ],
+            "DataLakeArn": {
+                "Fn::GetAtt": [
+                    "SecurityLakeEnablement",
+                    "Arn"
+                ]
+            },
+            "SourceName": "S3_DATA",
+            "SourceVersion": "2.0"
+        },
+        "DependsOn": "SecurityLakeSourcesSecurityHub"
+    }
+}
+}
+```
+
+#### YAML
+<a name="aws-resource-securitylake-datalake--examples--Deploys_a_contributing_Security_Lake_Region--yaml"></a>
+
+```
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Creates Security Lake with NO KMS and two sources, replicates to one region.
+
+Parameters:
+  Account1:
+    Type: String
+    Default: Enter an account for Security Lake to enable log sources
+    Description: Account number to enable logs
+  Account2:
+    Type: String
+    Default: Enter another account for Security Lake to enable log sources
+    Description: Account number n to enable logs
+  ReplicationRegionDestination:
+    Type: String
+    Default: Enter destination region
+    Description: Centralized destination region
+  MetaStoreRoleArn:
+    Type: String
+    Default: Security Lake Metastore Manager Role
+    Description: arn for AWS Security Lake Metastore Manager Role
+  ReplicationRoleArn:
+    Type: String
+    Default: Replication Role ARN
+    Description: Replication role arn that supports rollup to destination region
+
+Resources:
+  SecurityLakeEnablement:
+    Type: AWS::SecurityLake::DataLake
+    Properties:
+      MetaStoreManagerRoleArn:
+        Ref: MetaStoreRoleArn
+      ReplicationConfiguration:
+        Regions:
+        - Ref: ReplicationRegionDestination
+        RoleArn: arn:aws:iam::123456789123:role/SecurityLake-Replication-Role
+
+  SecurityLakeSourcesRoute53:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      Accounts:
+      - Ref: Account1
+      - Ref: Account2
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: ROUTE53
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeEnablement
+
+  SecurityLakeSourcesSecurityHub:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      Accounts:
+      - Ref: Account1
+      - Ref: Account2
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: SH_FINDINGS
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeSourcesRoute53
+
+  SecurityLakeSourcesS3:
+    Type: AWS::SecurityLake::AwsLogSource
+    Properties:
+      Accounts:
+      - Ref: Account1
+      - Ref: Account2
+      DataLakeArn:
+        Fn::GetAtt:
+        - SecurityLakeEnablement
+        - Arn
+      SourceName: S3_DATA
+      SourceVersion: "2.0"
+    DependsOn: SecurityLakeSourcesSecurityHub
+```
+
+### Configure with KMS
+<a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS"></a>
+
+For each Region add the encryption configuration parameter and assign respective KMS ARN for your Region.
+
+#### JSON
+<a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS--json"></a>
+
+```
+{
+    "SecurityLakeEnablement": {
+        "Type": "AWS::SecurityLake::DataLake",
+        "Properties": {
+            "MetaStoreManagerRoleArn": {
+                "Fn::GetAtt": [
+                    "AmazonSecurityLakeMetaStoreManagerRole",
+                    "Arn"
+                ]
+            },
+            "EncryptionConfiguration": {
+                "KmsKeyId": {
+                    "Ref": "KmsArn"
+                }
+            }
+        }
+    }
+}
+```
+
+#### YAML
+<a name="aws-resource-securitylake-datalake--examples--Configure_with_KMS--yaml"></a>
+
+```
+SecurityLakeEnablement:
+    Type: AWS::SecurityLake::DataLake
+    Properties:
+      MetaStoreManagerRoleArn:
+        Fn::GetAtt:
+        - AmazonSecurityLakeMetaStoreManagerRole
+        - Arn
+      EncryptionConfiguration:
+        KmsKeyId:
+          Ref: KmsArn
+```

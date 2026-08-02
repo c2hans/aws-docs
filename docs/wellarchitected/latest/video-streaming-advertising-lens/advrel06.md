@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/advrel06.html
+---
+
+# Architecture capacity
+<a name="advrel06"></a>
+
+| ADVREL06: How does the architecture handle challenges involved with tens to hundreds of partners running in a hybrid environment? |
+| --- |
+|   |
+
+ Identify the components in your workload which are outside your control, and the mechanisms which you have implemented to maintain your workload's availability when operations with those dependencies are disrupted.
+
+**Topics**
++ [ADVREL06-BP01 Architect defensively against failures](advrel06-bp01.md)

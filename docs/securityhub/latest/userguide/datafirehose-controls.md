@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/datafirehose-controls.html
+---
+
+# Security Hub CSPM controls for Amazon Data Firehose
+<a name="datafirehose-controls"></a>
+
+These Security Hub CSPM controls evaluate the Amazon Data Firehose service and resources.
+
+These controls may not be available in all AWS Regions. For more information, see [Availability of controls by Region](securityhub-regions.md#securityhub-regions-control-support).
+
+## [DataFirehose.1] Firehose delivery streams should be encrypted at rest
+<a name="datafirehose-1"></a>
+
+**Related requirements:** NIST.800-53.r5 AC-3, NIST.800-53.r5 AU-3, NIST.800-53.r5 SC-12, NIST.800-53.r5 SC-13, NIST.800-53.r5 SC-28
+
+**Category:** Protect > Data Protection > Encryption of data-at-rest
+
+**Severity:** Medium
+
+**Resource type:** `AWS::KinesisFirehose::DeliveryStream`
+
+**AWS Config rule:** [https://docs.aws.amazon.com/config/latest/developerguide/kinesis-firehose-delivery-stream-encrypted.html](https://docs.aws.amazon.com/config/latest/developerguide/kinesis-firehose-delivery-stream-encrypted.html)
+
+**Schedule type:** Periodic
+
+**Parameters:** None
+
+This control checks whether an Amazon Data Firehose delivery stream is encrypted at rest with server-side encryption. This control fails if a Firehose delivery stream isn't encrypted at rest with server-side encryption.
+
+Server-side encryption is a feature in Amazon Data Firehose delivery streams that automatically encrypts data before it's at rest by using a key created in AWS Key Management Service (AWS KMS). Data is encrypted before it's written to the Data Firehose stream storage layer, and decrypted after it’s retrieved from storage. This allows you to comply with regulatory requirements and enhance the security of your data.
+
+### Remediation
+<a name="datafirehose-1-remediation"></a>
+
+To enable server-side encryption on Firehose delivery streams,, see [Data Protection in Amazon Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/encryption.html) in the *Amazon Data Firehose Developer Guide*.

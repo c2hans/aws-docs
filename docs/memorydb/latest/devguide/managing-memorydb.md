@@ -1,0 +1,21 @@
+---
+source_url: https://docs.aws.amazon.com/memorydb/latest/devguide/managing-memorydb.html
+---
+
+# Managing your MemoryDB implementation
+<a name="managing-memorydb"></a>
+
+In this section, you can find details about how to manage the various components of your MemoryDB implementation.
+
+**Topics**
++ [Engine versions](engine-versions.md)
++ [Getting started with JSON](json-gs.md)
++ [Tagging your MemoryDB resources](tagging-resources.md)
++ [Managing maintenance](maintenance-window.md)
++ [Best practices](bestpractices.md)
++ [Understanding MemoryDB replication](replication.md)
++ [Snapshot and restore](snapshots.md)
++ [Scaling](scaling.md)
++ [Configuring engine parameters using parameter groups](parametergroups.md)
++ [Restricted commands](restrictedcommands.md)
++ [Tutorial: Configuring a Lambda function to access MemoryDB in an Amazon VPC](LambdaMemoryDB.md)

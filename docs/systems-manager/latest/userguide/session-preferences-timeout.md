@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/session-preferences-timeout.html
+---
+
+• The AWS Systems Manager CloudWatch Dashboard will no longer be available after April 30, 2026. Customers can continue to use Amazon CloudWatch console to view, create, and manage their Amazon CloudWatch dashboards, just as they do today. For more information, see [Amazon CloudWatch Dashboard documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
+
+# Specify an idle session timeout value
+<a name="session-preferences-timeout"></a>
+
+Session Manager, a tool in AWS Systems Manager, allows you to specify the amount of time to allow a user to be inactive before the system ends a session. By default, sessions time out after 20 minutes of inactivity. You can modify this setting to specify that a session times out between 1 and 60 minutes of inactivity. Some professional computing security agencies recommend setting idle session timeouts to a maximum of 15 minutes.
+
+The idle session timeout timer resets when Session Manager receives client-side inputs. These inputs include, but are not limited to:
++ Keyboard input in the terminal
++ Terminal or browser window resize events
++ Session reconnection (ResumeSession), which can occur due to network interruptions, browser tab management, or WebSocket disconnections
+
+Because these events reset the idle timer, a session might remain active longer than the configured timeout period even without direct terminal commands.
+
+If your security requirements mandate strict session duration limits regardless of activity, use the *Maximum session duration* setting in addition to idle timeout. For more information, see [Specify maximum session duration](session-preferences-max-timeout.md).
+
+**To allow idle session timeout (console)**
+
+1. Open the AWS Systems Manager console at [https://console.aws.amazon.com/systems-manager/](https://console.aws.amazon.com/systems-manager/).
+
+1. In the navigation pane, choose **Session Manager**.
+
+1. Choose the **Preferences** tab, and then choose **Edit**.
+
+1. Specify the amount of time to allow a user to be inactive before a session ends in the **minutes** field under **Idle session timeout**.
+
+1. Choose **Save**.

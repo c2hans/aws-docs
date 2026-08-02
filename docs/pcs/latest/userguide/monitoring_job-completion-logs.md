@@ -1,0 +1,253 @@
+---
+source_url: https://docs.aws.amazon.com/pcs/latest/userguide/monitoring_job-completion-logs.html
+---
+
+# Job completion logs in AWS PCS
+<a name="monitoring_job-completion-logs"></a>
+
+Job completion logs give you key details about your AWS Parallel Computing Service (AWS PCS) jobs when they complete, at no additional cost. You can use other AWS services to access and process your log data, such as Amazon CloudWatch Logs, Amazon Simple Storage Service (Amazon S3), and Amazon Data Firehose; AWS PCS records metadata about your jobs, such as the following.
++ Job ID and name
++ User and group information
++ Job state (such as `COMPLETED`, `FAILED`, `CANCELLED`)
++ Partition used
++ Time limits
++ Start, end, submit, and eligible times
++ Node list and count
++ Processor count
++ Working directory
++ Resource usage (CPU, memory)
++ Exit codes
++ Node details (names, instance IDs, instance types)
+
+**Contents**
++ [Prerequisites](#monitoring_job-completion-logs_prereqs)
++ [Set up job completion logs](#monitoring_job-completion-logs_setup)
++ [How to find job completion logs](#monitoring_job-completion-logs_access)
+  + [CloudWatch Logs](#monitoring_job-completion-logs_access_cloudwatch)
+  + [Amazon S3](#monitoring_job-completion-logs_access_s3)
++ [Job completion log fields](#monitoring_job-completion-logs_fields)
++ [Example job completion logs](#monitoring_job-completion-logs_example)
+
+## Prerequisites
+<a name="monitoring_job-completion-logs_prereqs"></a>
+
+The IAM principal that manages the AWS PCS cluster must allow the `pcs:AllowVendedLogDeliveryForResource` action.
+
+The following example IAM policy grants the required permissions.
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+   "Version":"2012-10-17",
+   "Statement": [
+      {
+         "Sid": "PcsAllowVendedLogsDelivery",
+         "Effect": "Allow",
+         "Action": ["pcs:AllowVendedLogDeliveryForResource"],
+         "Resource": [
+            "arn:aws:pcs:*::cluster/*"
+         ]
+      }
+   ]
+}
+```
+
+------
+
+## Set up job completion logs
+<a name="monitoring_job-completion-logs_setup"></a>
+
+You can set up job completion logs for your AWS PCS cluster with the AWS Management Console or AWS CLI.
+
+------
+#### [ AWS Management Console ]
+
+**To set up job completion logs with the console**
+
+1. Open the [AWS PCS console](https://console.aws.amazon.com/pcs).
+
+1. In the navigation pane, choose **Clusters**.
+
+1. Choose the cluster where you want to add job completion logs.
+
+1. On the cluster details page, choose the **Logs** tab.
+
+1. Under **Job Completion Logs**, choose **Add** to add up to 3 log delivery destinations from among CloudWatch Logs, Amazon S3, and Firehose.
+
+1. Choose **Update log deliveries**.
+
+------
+#### [ AWS CLI ]
+
+**To set up job completion logs with the AWS CLI**
+
+1. Create a log delivery destination:
+
+   ```
+   aws logs put-delivery-destination --region {{region}} \
+     --name {{pcs-logs-destination}} \
+     --delivery-destination-configuration \
+     destinationResourceArn={{resource-arn}}
+   ```
+
+   Replace:
+   + {{region}} — The AWS Region where you want to create the destination, such as `us-east-1`
+   + {{pcs-logs-destination}} — A name for the destination
+   + {{resource-arn}} — The Amazon Resource Name (ARN) of a CloudWatch Logs log group, S3 bucket, or Firehose delivery stream.
+
+   For more information, see [PutDeliveryDestination](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliveryDestination.html) in the *Amazon CloudWatch Logs API Reference*.
+
+1. Set the PCS cluster as a log delivery source:
+
+   ```
+   aws logs put-delivery-source --region {{region}} \
+     --name {{cluster-logs-source-name}} \
+     --resource-arn {{cluster-arn}} \
+     --log-type PCS_JOBCOMP_LOGS
+   ```
+
+   Replace:
+   + {{region}} — The AWS Region of your cluster, such as `us-east-1`
+   + {{cluster-logs-source-name}} — A name for the source
+   + {{cluster-arn}} — the ARN of your AWS PCS cluster
+
+   For more information, see [PutDeliverySource](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutDeliverySource.html) in the *Amazon CloudWatch Logs API Reference*.
+
+1. Connect the delivery source to the delivery destination:
+
+   ```
+   aws logs create-delivery --region {{region}} \
+     --delivery-source-name {{cluster-logs-source}} \
+     --delivery-destination-arn {{destination-arn}}
+   ```
+
+   Replace:
+   + {{region}} — The AWS Region, such as `us-east-1`
+   + {{cluster-logs-source}} — The name of your delivery source
+   + {{destination-arn}} — The ARN of your delivery destination
+
+   For more information, see [CreateDelivery](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_CreateDelivery.html) in the *Amazon CloudWatch Logs API Reference*.
+
+------
+
+## How to find job completion logs
+<a name="monitoring_job-completion-logs_access"></a>
+
+You can configure log destinations in CloudWatch Logs and Amazon S3. AWS PCS uses the following structured path names and file names.
+
+### CloudWatch Logs
+<a name="monitoring_job-completion-logs_access_cloudwatch"></a>
+
+AWS PCS uses the following name format for the CloudWatch Logs stream:
+
+```
+AWSLogs/PCS/{{cluster-id}}/jobcomp.log
+```
+
+For example: `AWSLogs/PCS/pcs_abc123de45/jobcomp.log`
+
+### Amazon S3
+<a name="monitoring_job-completion-logs_access_s3"></a>
+
+AWS PCS uses the following name format for the S3 path:
+
+```
+AWSLogs/{{account-id}}/PCS/{{region}}/{{cluster-id}}/jobcomp/{{year}}/{{month}}/{{day}}/{{hour}}/
+```
+
+For example: `AWSLogs/111122223333/PCS/us-east-1/pcs_abc123de45/jobcomp/2025/06/19/11/`
+
+AWS PCS uses the following name format for the log files:
+
+```
+PCS_jobcomp_{{year}}-{{month}}-{{day}}-{{hour}}_{{cluster-id}}_{{random-id}}.log.gz
+```
+
+For example: `PCS_jobcomp_2025-06-19-11_pcs_abc123de45_04be080b.log.gz`
+
+## Job completion log fields
+<a name="monitoring_job-completion-logs_fields"></a>
+
+AWS PCS writes job completion log data as JSON objects. Each log entry contains top-level metadata fields and a `fields` object. The top-level fields identify the cluster, event time, and scheduler version. The `fields` object holds the job details. Some fields in the `fields` object appear only for array jobs or heterogeneous jobs.
+
+The following table describes the top-level fields in each log entry.
+
+**Top-level fields**
+
+| Name | Example value | Required | Notes |
+| --- | --- | --- | --- |
+| resource\_id | "pcs\_22l8nzr3t9" | Yes | The AWS PCS cluster ID |
+| resource\_type | "PCS\_CLUSTER" | Yes | Always "PCS\_CLUSTER" |
+| event\_timestamp | 1750370337 | Yes | Unix epoch seconds when the event occurred |
+| scheduler\_type | "slurm" | Yes | The scheduler type for the cluster |
+| scheduler\_major\_version | "25.11" | Yes | The major version of the scheduler |
+
+The following table describes the fields inside the `fields` object.
+
+**Fields inside the `fields` object**
+
+| Name | Example value | Required | Notes |
+| --- | --- | --- | --- |
+| job\_id | 11 | Yes | Always present with value |
+| user | "root" | Yes | Always present with value |
+| user\_id | 0 | Yes | Always present with value |
+| group | "root" | Yes | Always present with value |
+| group\_id | 0 | Yes | Always present with value |
+| name | "wrap" | Yes | Always present with value |
+| job\_state | "COMPLETED" | Yes | Always present with value |
+| partition | "MpiQueue-abcdef01-7" | Yes | Always present with value |
+| time\_limit | "UNLIMITED" | Yes | Always present, but might be "UNLIMITED" |
+| start\_time | "2025-06-19T10:58:57" | Yes | Always present, but might be "Unknown" |
+| end\_time | "2025-06-19T10:58:57" | Yes | Always present, but might be "Unknown" |
+| node\_list | "MpiNG-abcdef01-2345-1" | Yes | Always present with value |
+| node\_cnt | 1 | Yes | Always present with value |
+| proc\_cnt | 1 | Yes | Always present with value |
+| work\_dir | "/root" | Yes | Always present, but might be "Unknown" |
+| reservation\_name | "weekly\_maintenance" | Yes | Always present, but might be an empty string "" |
+| tres.cpu | 1 | Yes | Always present with value |
+| tres.mem.val | 600 | Yes | Always present with value |
+| tres.mem.unit | "M" | Yes | Can be "M" or "bb" |
+| tres.node | 1 | Yes | Always present with value |
+| tres.billing | 1 | Yes | Always present with value |
+| account | "finance" | Yes | Always present, but might be an empty string "" |
+| qos | "normal" | Yes | Always present, but might be an empty string "" |
+| wc\_key | "project\_1" | Yes | Always present, but might be an empty string "" |
+| cluster | "unknown" | Yes | Always present, but might be "unknown" |
+| submit\_time | "2025-06-19T10:55:46" | Yes | Always present, but might be "Unknown" |
+| eligible\_time | "2025-06-19T10:55:46" | Yes | Always present, but might be "Unknown" |
+| array\_job\_id | 12 | No | Only present if the job is an array job |
+| array\_task\_id | 1 | No | Only present if the job is an array job |
+| het\_job\_id | 10 | No | Only present if the job is a heterogeneous job |
+| het\_job\_offset | 0 | No | Only present if the job is a heterogeneous job |
+| derived\_exit\_code\_status | 0 | Yes | Always present with value |
+| derived\_exit\_code\_signal | 0 | Yes | Always present with value |
+| exit\_code\_status | 0 | Yes | Always present with value |
+| exit\_code\_signal | 0 | Yes | Always present with value |
+| node\_details[0].name | "MpiNG-abcdef01-2345-1" | No | Always present, but node\_details might be "[]" |
+| node\_details[0].instance\_id | "i-0abcdef01234567a" | No | Always present, but node\_details might be "[]" |
+| node\_details[0].instance\_type | "t4g.micro" | No | Always present, but node\_details might be "[]" |
+
+## Example job completion logs
+<a name="monitoring_job-completion-logs_example"></a>
+
+The following examples show job completion logs for various job types and states:
+
+```
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750350777, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 1, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T16:32:57", "end_time": "2025-06-19T16:33:03", "node_list": "MpiNG-abcdef01-2345-[1-2]", "node_cnt": 2, "proc_cnt": 2, "work_dir": "/usr/bin", "reservation_name": "", "tres": { "cpu": 2, "mem": { "val": 1944, "unit": "M" }, "node": 2, "billing": 2 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T16:29:40", "eligible_time": "2025-06-19T16:29:41", "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc123def45678", "instance_type": "t4g.micro" }, { "name": "MpiNG-abcdef01-2345-2", "instance_id": "i-0def456abc78901", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750350793, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 2, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T16:33:13", "end_time": "2025-06-19T16:33:14", "node_list": "MpiNG-abcdef01-2345-[1-2]", "node_cnt": 2, "proc_cnt": 2, "work_dir": "/usr/bin", "reservation_name": "", "tres": { "cpu": 2, "mem": { "val": 1944, "unit": "M" }, "node": 2, "billing": 2 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T16:33:13", "eligible_time": "2025-06-19T16:33:13", "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc123def45678", "instance_type": "t4g.micro" }, { "name": "MpiNG-abcdef01-2345-2", "instance_id": "i-0def456abc78901", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750373937, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 3, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T22:58:57", "end_time": "2025-06-19T22:58:57", "node_list": "MpiNG-abcdef01-2345-1", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 972, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T22:55:46", "eligible_time": "2025-06-19T22:55:46", "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc234def56789", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374267, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 4, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "525600", "start_time": "2025-06-19T23:04:27", "end_time": "2025-06-19T23:04:27", "node_list": "MpiNG-abcdef01-2345-[1-2]", "node_cnt": 2, "proc_cnt": 2, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 2, "mem": { "val": 1944, "unit": "M" }, "node": 2, "billing": 2 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:01:38", "eligible_time": "2025-06-19T23:01:38", "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc234def56789", "instance_type": "t4g.micro" }, { "name": "MpiNG-abcdef01-2345-2", "instance_id": "i-0def345abc67890", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374540, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 5, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "FAILED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:09:00", "end_time": "2025-06-19T23:09:00", "node_list": "(null)", "node_cnt": 0, "proc_cnt": 0, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 1, "unit": "G" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:09:00", "eligible_time": "2025-06-19T23:09:00", "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 1, "node_details": [] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374576, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 6, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "CANCELLED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:09:36", "end_time": "2025-06-19T23:09:36", "node_list": "(null)", "node_cnt": 0, "proc_cnt": 0, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 400, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:09:35", "eligible_time": "2025-06-19T23:09:36", "het_job_id": 6, "het_job_offset": 0, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 1, "node_details": [] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374603, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 7, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "CANCELLED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:10:03", "end_time": "2025-06-19T23:10:03", "node_list": "(null)", "node_cnt": 0, "proc_cnt": 0, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 400, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:10:03", "eligible_time": "2025-06-19T23:10:03", "het_job_id": 7, "het_job_offset": 0, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 1, "node_details": [] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374684, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 8, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:11:24", "end_time": "2025-06-19T23:11:24", "node_list": "MpiNG-abcdef01-2345-1", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 400, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:11:23", "eligible_time": "2025-06-19T23:11:23", "het_job_id": 8, "het_job_offset": 0, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc234def56789", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374684, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 9, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:11:24", "end_time": "2025-06-19T23:11:24", "node_list": "MpiNG-abcdef01-2345-2", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 400, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:11:23", "eligible_time": "2025-06-19T23:11:23", "het_job_id": 8, "het_job_offset": 1, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-2", "instance_id": "i-0def345abc67890", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374744, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 10, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:12:24", "end_time": "2025-06-19T23:12:24", "node_list": "MpiNG-abcdef01-2345-1", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 400, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:12:14", "eligible_time": "2025-06-19T23:12:14", "het_job_id": 10, "het_job_offset": 0, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc234def56789", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750374744, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 11, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:12:24", "end_time": "2025-06-19T23:12:24", "node_list": "MpiNG-abcdef01-2345-2", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 600, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:12:14", "eligible_time": "2025-06-19T23:12:14", "het_job_id": 10, "het_job_offset": 1, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-2", "instance_id": "i-0def345abc67890", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750376877, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 13, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:47:57", "end_time": "2025-06-19T23:47:58", "node_list": "MpiNG-abcdef01-2345-1", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 972, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:43:56", "eligible_time": "2025-06-19T23:43:56", "array_job_id": 12, "array_task_id": 1, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc345def67890", "instance_type": "t4g.micro" } ] } }
+{ "resource_id": "pcs_abc123de45", "resource_type": "PCS_CLUSTER", "event_timestamp": 1750376878, "scheduler_type": "slurm", "scheduler_major_version": "25.11", "fields": { "job_id": 12, "user": "root", "user_id": 0, "group": "root", "group_id": 0, "name": "wrap", "job_state": "COMPLETED", "partition": "MpiQueue-abcdef01-7", "time_limit": "UNLIMITED", "start_time": "2025-06-19T23:47:58", "end_time": "2025-06-19T23:47:58", "node_list": "MpiNG-abcdef01-2345-1", "node_cnt": 1, "proc_cnt": 1, "work_dir": "/root", "reservation_name": "", "tres": { "cpu": 1, "mem": { "val": 972, "unit": "M" }, "node": 1, "billing": 1 }, "account": "", "qos": "", "wc_key": "", "cluster": "unknown", "submit_time": "2025-06-19T23:43:56", "eligible_time": "2025-06-19T23:43:56", "array_job_id": 12, "array_task_id": 2, "derived_exit_code_status": 0, "derived_exit_code_signal": 0, "exit_code_status": 0, "exit_code_signal": 0, "node_details": [ { "name": "MpiNG-abcdef01-2345-1", "instance_id": "i-0abc345def67890", "instance_type": "t4g.micro" } ] } }
+```

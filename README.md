@@ -25,18 +25,18 @@ source_url: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html
 
 ## How a page is fetched
 
-1. Try AWS's native Markdown export at `<path>.md` (AWS serves nearly every doc page
-   this way now, `Content-Type: text/markdown`). Used as-is.
-2. If that isn't available, fetch `<path>.html`, extract the `#main-col-body` content
-   region (BeautifulSoup), strip `<script>`/`<style>`/`awsdocs-*` custom elements (these
-   are empty client-side widgets in the static HTML — banners, feedback buttons, TOC),
-   absolutize relative links/images, and convert to Markdown via `markdownify` with fixed
-   settings (ATX headings, `-` bullets, no autolinks, no wrapping).
-3. Both paths are run through the same `normalize_markdown()`: LF line endings, no
-   trailing whitespace, no runs of 3+ blank lines, exactly one trailing newline.
+1. Fetch AWS's native Markdown export at `<path>.md` (`Content-Type: text/markdown`).
+   Used as-is.
+2. Run it through `normalize_markdown()`: LF line endings, no trailing whitespace, no
+   runs of 3+ blank lines, exactly one trailing newline.
 
-In practice essentially every page currently uses path 1. Path 2 exists as a fallback so
-the script doesn't error out if AWS stops serving `.md` for some corner of the site.
+Every public `docs.aws.amazon.com` page serves a `.md` export — verified across a random
+sample spanning all guide trees, including the SDK/CLI/CDK/PowerShell reference trees
+excluded by default (see Scope below). The lone counterexample found wasn't real AWS
+content: a meta-refresh redirect stub (in `embedded-csdk`'s doxygen-generated tree)
+pointing off-site to `aws.github.io`, empty even as HTML. There's no HTML-scraping
+fallback; a page whose `.md` isn't a 200 is logged as an error and skipped, not
+downgraded to a scraped conversion.
 
 ## Determinism / idempotency
 
@@ -60,10 +60,24 @@ the script doesn't error out if AWS stops serving `.md` for some corner of the s
 ## Scope
 
 AWS publishes a sitemap index (`https://docs.aws.amazon.com/sitemap_index.xml`) listing
-~10,900 per-guide sitemaps. About 71% of those are translated locales (`ja_jp`, `zh_cn`,
-`ko_kr`, `es_es`, `pt_br`, `fr_fr`, `zh_tw`, `de_de`, `it_it`, `id_id`, `ar`). By default
-this script only syncs the English/default guides (~3,150 of them, an estimated ~84,000
-pages). Pass `--all-locales` to include translations too (roughly 3.5x the volume).
+~10,900 per-guide sitemaps. Two filters are applied by default:
+
+1. **Locale.** About 71% of guides are translated (`ja_jp`, `zh_cn`, `ko_kr`, `es_es`,
+   `pt_br`, `fr_fr`, `zh_tw`, `de_de`, `it_it`, `id_id`, `ar`). Only the English/default
+   guides (~3,150) are synced. Pass `--all-locales` to include translations too.
+2. **SDK/CLI/CDK/PowerShell references.** A handful of trees are one page per
+   class/method/command, mechanically generated from SDK source code on every release
+   (`sdkfornet` .NET API docs, `AWSJavaSDK` javadoc, `sdk-for-ruby/*/api`, `aws-sdk-php`,
+   `AWSJavaScriptSDK`, `cdk/api`, `powershell/*/reference`, `cli/*`). Together these are
+   **~910,000 of the ~1.09M English pages (84%)** — their diffs mostly reflect SDK codegen,
+   not product changes, so they're excluded by default (see `SDK_REFERENCE_PATTERNS` in
+   the script). Hand-written SDK developer/user guides (e.g. `sdk-for-java/*/developer-guide`,
+   `powershell/*/userguide`) are prose, not generated references, and are always synced.
+   Pass `--include-sdk-references` to include the excluded trees too.
+
+With both default filters, the sync covers **~3,127 guides / ~172,000 pages**: user guides,
+developer guides, each product's own API reference (EC2, S3, Bedrock, SageMaker, etc.),
+whitepapers, prescriptive guidance, and release notes.
 
 ## Usage
 
@@ -79,6 +93,7 @@ python3 scripts/sync_aws_docs.py --max-sitemaps 20                        # firs
 python3 scripts/sync_aws_docs.py --limit 50                               # first N pages
 python3 scripts/sync_aws_docs.py --dry-run                                # fetch/convert only
 python3 scripts/sync_aws_docs.py --no-cache                               # ignore manifest cache
+python3 scripts/sync_aws_docs.py --include-sdk-references                 # also sync SDK/CLI/CDK/PowerShell refs
 python3 scripts/sync_aws_docs.py --workers 24                             # concurrency
 python3 scripts/sync_aws_docs.py --no-commit                              # leave changes unstaged
 python3 scripts/sync_aws_docs.py --push                                   # also push to origin

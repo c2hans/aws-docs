@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/location/latest/developerguide/snap-to-roads-how-to.html
+---
+
+# Learn how to use SnapToRoads
+<a name="snap-to-roads-how-to"></a>
+
+ This topic explains how to use `SnapToRoads` to align GPS traces with road networks, enhancing positional accuracy for navigation and fleet management applications. This API corrects GPS drift and signal loss by snapping coordinates to the nearest road segments, while also respecting travel mode restrictions. Examples illustrate practical uses, such as overlaying GPS traces, filling data gaps, and reducing noise for clearer route visualization.
+
+**Topics**
++ [How to match GPS traces to a road network](how-to-match-gps-traces.md)

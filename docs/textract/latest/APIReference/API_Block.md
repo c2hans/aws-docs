@@ -1,0 +1,149 @@
+---
+source_url: https://docs.aws.amazon.com/textract/latest/APIReference/API_Block.html
+---
+
+# Block
+<a name="API_Block"></a>
+
+A `Block` represents items that are recognized in a document within a group of pixels close to each other. The information returned in a `Block` object depends on the type of operation. In text detection for documents (for example [DetectDocumentText](API_DetectDocumentText.md)), you get information about the detected words and lines of text. In text analysis (for example [AnalyzeDocument](API_AnalyzeDocument.md)), you can also get information about the fields, tables, and selection elements that are detected in the document.
+
+An array of `Block` objects is returned by both synchronous and asynchronous operations. In synchronous operations, such as [DetectDocumentText](API_DetectDocumentText.md), the array of `Block` objects is the entire set of results. In asynchronous operations, such as [GetDocumentAnalysis](API_GetDocumentAnalysis.md), the array is returned over one or more responses.
+
+For more information, see [How Amazon Textract Works](https://docs.aws.amazon.com/textract/latest/dg/how-it-works.html).
+
+## Contents
+<a name="API_Block_Contents"></a>
+
+ ** BlockType **   <a name="Textract-Type-Block-BlockType"></a>
+The type of text item that's recognized. In operations for text detection, the following types are returned:
++  *PAGE* - Contains a list of the LINE `Block` objects that are detected on a document page.
++  *WORD* - A word detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.
++  *LINE* - A string of space-delimited, contiguous words that are detected on a document page.
+In text analysis operations, the following types are returned:
++  *PAGE* - Contains a list of child `Block` objects that are detected on a document page.
++  *KEY\_VALUE\_SET* - Stores the KEY and VALUE `Block` objects for linked text that's detected on a document page. Use the `EntityType` field to determine if a KEY\_VALUE\_SET object is a KEY `Block` object or a VALUE `Block` object.
++  *WORD* - A word that's detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.
++  *LINE* - A string of tab-delimited, contiguous words that are detected on a document page.
++  *TABLE* - A table that's detected on a document page. A table is grid-based information with two or more rows or columns, with a cell span of one row and one column each.
++  *TABLE\_TITLE* - The title of a table. A title is typically a line of text above or below a table, or embedded as the first row of a table.
++  *TABLE\_FOOTER* - The footer associated with a table. A footer is typically a line or lines of text below a table or embedded as the last row of a table.
++  *CELL* - A cell within a detected table. The cell is the parent of the block that contains the text in the cell.
++  *MERGED\_CELL* - A cell in a table whose content spans more than one row or column. The `Relationships` array for this cell contain data from individual cells.
++  *SELECTION\_ELEMENT* - A selection element such as an option button (radio button) or a check box that's detected on a document page. Use the value of `SelectionStatus` to determine the status of the selection element.
++  *SIGNATURE* - The location and confidence score of a signature detected on a document page. Can be returned as part of a Key-Value pair or a detected cell.
++  *QUERY* - A question asked during the call of AnalyzeDocument. Contains an alias and an ID that attaches it to its answer.
++  *QUERY\_RESULT* - A response to a question asked during the call of analyze document. Comes with an alias and ID for ease of locating in a response. Also contains location and confidence score.
+The following BlockTypes are only returned for Amazon Textract Layout.
++  `LAYOUT_TITLE` - The main title of the document.
++  `LAYOUT_HEADER` - Text located in the top margin of the document.
++  `LAYOUT_FOOTER` - Text located in the bottom margin of the document.
++  `LAYOUT_SECTION_HEADER` - The titles of sections within a document.
++  `LAYOUT_PAGE_NUMBER` - The page number of the documents.
++  `LAYOUT_LIST` - Any information grouped together in list form.
++  `LAYOUT_FIGURE` - Indicates the location of an image in a document.
++  `LAYOUT_TABLE` - Indicates the location of a table in the document.
++  `LAYOUT_KEY_VALUE` - Indicates the location of form key-values in a document.
++  `LAYOUT_TEXT` - Text that is present typically as a part of paragraphs in documents.
+Type: String
+Valid Values: `KEY_VALUE_SET | PAGE | LINE | WORD | TABLE | CELL | SELECTION_ELEMENT | MERGED_CELL | TITLE | QUERY | QUERY_RESULT | SIGNATURE | TABLE_TITLE | TABLE_FOOTER | LAYOUT_TEXT | LAYOUT_TITLE | LAYOUT_HEADER | LAYOUT_FOOTER | LAYOUT_SECTION_HEADER | LAYOUT_PAGE_NUMBER | LAYOUT_LIST | LAYOUT_FIGURE | LAYOUT_TABLE | LAYOUT_KEY_VALUE`
+Required: No
+
+ ** ColumnIndex **   <a name="Textract-Type-Block-ColumnIndex"></a>
+The column in which a table cell appears. The first column position is 1. `ColumnIndex` isn't returned by `DetectDocumentText` and `GetDocumentTextDetection`.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** ColumnSpan **   <a name="Textract-Type-Block-ColumnSpan"></a>
+The number of columns that a table cell spans. `ColumnSpan` isn't returned by `DetectDocumentText` and `GetDocumentTextDetection`.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** Confidence **   <a name="Textract-Type-Block-Confidence"></a>
+The confidence score that Amazon Textract has in the accuracy of the recognized text and the accuracy of the geometry points around the recognized text.
+Type: Float
+Valid Range: Minimum value of 0. Maximum value of 100.
+Required: No
+
+ ** EntityTypes **   <a name="Textract-Type-Block-EntityTypes"></a>
+The type of entity.
+The following entity types can be returned by FORMS analysis:
++  *KEY* - An identifier for a field on the document.
++  *VALUE* - The field text.
+The following entity types can be returned by TABLES analysis:
++  *COLUMN\_HEADER* - Identifies a cell that is a header of a column.
++  *TABLE\_TITLE* - Identifies a cell that is a title within the table.
++  *TABLE\_SECTION\_TITLE* - Identifies a cell that is a title of a section within a table. A section title is a cell that typically spans an entire row above a section.
++  *TABLE\_FOOTER* - Identifies a cell that is a footer of a table.
++  *TABLE\_SUMMARY* - Identifies a summary cell of a table. A summary cell can be a row of a table or an additional, smaller table that contains summary information for another table.
++  *STRUCTURED\_TABLE * - Identifies a table with column headers where the content of each row corresponds to the headers.
++  *SEMI\_STRUCTURED\_TABLE* - Identifies a non-structured table.
+ `EntityTypes` isn't returned by `DetectDocumentText` and `GetDocumentTextDetection`.
+Type: Array of strings
+Valid Values: `KEY | VALUE | COLUMN_HEADER | TABLE_TITLE | TABLE_FOOTER | TABLE_SECTION_TITLE | TABLE_SUMMARY | STRUCTURED_TABLE | SEMI_STRUCTURED_TABLE`
+Required: No
+
+ ** Geometry **   <a name="Textract-Type-Block-Geometry"></a>
+The location of the recognized text on the image. It includes an axis-aligned, coarse bounding box that surrounds the text, and a finer-grain polygon for more accurate spatial information.
+Type: [Geometry](API_Geometry.md) object
+Required: No
+
+ ** Id **   <a name="Textract-Type-Block-Id"></a>
+The identifier for the recognized text. The identifier is only unique for a single operation.
+Type: String
+Pattern: `.*\S.*`
+Required: No
+
+ ** Page **   <a name="Textract-Type-Block-Page"></a>
+The page on which a block was detected. `Page` is returned by synchronous and asynchronous operations. Page values greater than 1 are only returned for multipage documents that are in PDF or TIFF format. A scanned image (JPEG/PNG) provided to an asynchronous operation, even if it contains multiple document pages, is considered a single-page document. This means that for scanned images the value of `Page` is always 1.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** Query **   <a name="Textract-Type-Block-Query"></a>
+
+Type: [Query](API_Query.md) object
+Required: No
+
+ ** Relationships **   <a name="Textract-Type-Block-Relationships"></a>
+A list of relationship objects that describe how blocks are related to each other. For example, a LINE block object contains a CHILD relationship type with the WORD blocks that make up the line of text. There aren't Relationship objects in the list for relationships that don't exist, such as when the current block has no child blocks.
+Type: Array of [Relationship](API_Relationship.md) objects
+Required: No
+
+ ** RowIndex **   <a name="Textract-Type-Block-RowIndex"></a>
+The row in which a table cell is located. The first row position is 1. `RowIndex` isn't returned by `DetectDocumentText` and `GetDocumentTextDetection`.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** RowSpan **   <a name="Textract-Type-Block-RowSpan"></a>
+The number of rows that a table cell spans. `RowSpan` isn't returned by `DetectDocumentText` and `GetDocumentTextDetection`.
+Type: Integer
+Valid Range: Minimum value of 0.
+Required: No
+
+ ** SelectionStatus **   <a name="Textract-Type-Block-SelectionStatus"></a>
+The selection status of a selection element, such as an option button or check box.
+Type: String
+Valid Values: `SELECTED | NOT_SELECTED`
+Required: No
+
+ ** Text **   <a name="Textract-Type-Block-Text"></a>
+The word or line of text that's recognized by Amazon Textract.
+Type: String
+Required: No
+
+ ** TextType **   <a name="Textract-Type-Block-TextType"></a>
+The kind of text that Amazon Textract has detected. Can check for handwritten text and printed text.
+Type: String
+Valid Values: `HANDWRITING | PRINTED`
+Required: No
+
+## See Also
+<a name="API_Block_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/textract-2018-06-27/Block)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/textract-2018-06-27/Block)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/textract-2018-06-27/Block)

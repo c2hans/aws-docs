@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconvert/latest/ug/using-hls-inputs.html
+---
+
+# HLS input requirements
+<a name="using-hls-inputs"></a>
+
+ When you specify an HLS package as an input for your MediaConvert job, you need to specify the correct input file URL and ensure that the HLS input package conforms to the requirements listed on this page.
+
+You can specify either a multivariant or variant playlist. If the manifest is a parent that lists multiple child manifests, MediaConvert uses the variant playlist with the highest bandwidth as the input source.
+
+## HLS input requirements
+<a name="hls-input-package-requirements"></a>
+
+Your HLS input must conform to the following requirements:
+
+|  |  |
+| --- |--- |
+| Input requirement | Details |
+| Video container | MediaConvert supports MPEG-2 Transport Stream (MPEG-TS) files for input HLS media segments. |
+| HLS manifest `EXT-X-VERSION` | MediaConvert supports EXT-X-VERSION values of 4 or lower within input HLS manifests. |
+| HLS manifest `EXT-X-ENDLIST` | Include `EXT-X-ENDLIST` or `EXT-X-PLAYLIST-TYPE: VOD` in your input manifest.<br />Manifest files must not change after you submit your job. |
+| HLS manifest `EXT-X-PLAYLIST-TYPE: VOD` | Include `EXT-X-ENDLIST` or `EXT-X-PLAYLIST-TYPE: VOD` in your input manifest.<br />Manifest files must not change after you submit your job. |
+| HLS manifest EXT-X-BYTERANGE | If present, the start of the first subrange must be 0 and the following subrange segments must continue the former one. |
+| HLS manifest EXT-X-KEY | If present, `EXT-X-KEY: METHOD` must be set to `NONE`.<br />MediaConvert does not support HLS encrypted inputs. |
+| HLS manifest ignored tags | MediaConvert ignores the following tags:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/using-hls-inputs.html) |
+| Discontinuities | If present, any discontinuities must start at the beginning of a segment.<br />MediaConvertdoes not support input discontinuites in the subrange of a segment. |
+| Accelerated transcoding requirements | EXTINF duration must be specified using a decimal floating-point, with enough accuracy to avoid perceptible errors when segment durations are accumulated. |
+
+## MediaConvert features compatible with HLS inputs
+<a name="compatible-features"></a>
+
+With HLS inputs, you can use the following input features:
++ Input clipping
++ Input stitching
++ Image insertion
++ Embedded input captions selectors
+
+## HLS input feature restrictions
+<a name="hls-feature-restrictions"></a>
+
+When your input is an HLS package, your job is restricted in these ways:
++ Your input package must conform to the requirements listed in [HLS input requirements](#hls-input-package-requirements).
++ Your input segments can't be encrypted with DRM. For example, your inputs can't be encrypted with Apple FairPlay DRM.
++ You can use only embedded input captions.

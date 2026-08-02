@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/lake-formation-fine-grained-access.html
+---
+
+# Fine-grained access with Lake Formation
+<a name="lake-formation-fine-grained-access"></a>
+
+Amazon EMR releases 6.15.0 and higher include support for fine-grained access control at the row, column, or cell level based on AWS Lake Formation. The topics in this section cover how you can access Lake Formation protected Glue Data catalog tables from EMR Spark jobs or interactive sessions with fine-grained access control.

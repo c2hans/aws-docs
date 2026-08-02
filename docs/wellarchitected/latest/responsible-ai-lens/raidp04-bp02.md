@@ -1,0 +1,38 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-lens/raidp04-bp02.html
+---
+
+# RAIDP04-BP02 Periodically evaluate and update datasets in the registry
+<a name="raidp04-bp02"></a>
+
+ Schedule regular review cycles that assess whether existing datasets still meet your evolving requirements and quality standards. Increment version numbers and update associated documentation whenever datasets change, maintaining records of what changed and why. Assess whether dataset updates require corresponding system retraining or evaluation re-runs to maintain validity of previous results. Remove or archive outdated dataset versions while preserving the ability to reproduce historical results when needed for auditing or comparison purposes.
+
+ **Level of risk exposed if this best practice is not established:** Medium
+
+## Implementation considerations
+<a name="implementation-considerations-57"></a>
+
+1.  Schedule review processes that automatically flag datasets for evaluation based on age, usage patterns, or changes in your system requirements.
+
+1.  Create change management workflows that require documenting the reason for a dataset modification along with version increments.
+
+1.  Compare new dataset versions against established quality metrics to catch degradation over time.
+
+1.  Design impact assessment procedures that assist you to decide when dataset changes require retraining your models or re-running evaluations.
+
+1.  Set up archival processes that move old dataset versions to long-term storage while keeping enough metadata to recreate historical results if needed.
+
+## Resources
+<a name="resources-54"></a>
+
+ **Related documents:**
++  [Data Analytics Lens : Best practice 7.2 – Monitor for data quality anomalies](https://docs.aws.amazon.com/it_it/wellarchitected/latest/analytics-lens/best-practice-7.2---monitor-for-data-quality-anomalies..html)
++  [Generative AI lens: GENOPS02-BP02 Monitor foundation model metrics](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/genops02-bp02.html)
++  [Data quality in Amazon SageMaker AI Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/data-quality.html)
++  [AWS Glue Data Quality](https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html)
++  [Detecting data drift using Amazon SageMaker AI](https://aws.amazon.com/blogs/architecture/detecting-data-drift-using-amazon-sagemaker/)
++  [ISO/IEC 42001:2023](https://www.iso.org/standard/42001) A.7.5 Data provenance
+
+ **Related tools:**
++  [Amazon SageMaker AI Catalog](https://aws.amazon.com/sagemaker/catalog/)
++  [AWS Glue Data Quality](https://aws.amazon.com/glue/features/data-quality/)

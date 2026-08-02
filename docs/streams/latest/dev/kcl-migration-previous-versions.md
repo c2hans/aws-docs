@@ -1,0 +1,28 @@
+---
+source_url: https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-previous-versions.html
+---
+
+# Migrate from previous KCL versions
+<a name="kcl-migration-previous-versions"></a>
+
+This topic explains how to migrate from previous versions of the Kinesis Client Library (KCL).
+
+## What's new in KCL 3.0?
+<a name="kcl-migration-new-3-0"></a>
+
+Kinesis Client Library (KCL) 3.0 introduces several major enhancements compared to previous versions:
++  It lowers compute costs for consumer applications by automatically redistributing the work from over-utilized workers to under-utilized workers in the consumer application fleet. This new load balancing algorithm ensures the evenly distributed CPU utilization across workers and removes the need to over-provision workers.
++  It reduces the DynamoDB cost associated with KCL by optimizing read operations on the lease table.
++ It minimizes reprocessing of data when leases are reassigned to another worker by allowing the current worker to complete checkpointing the records that it has processed.
++  It uses AWS SDK for Java 2.x for improved performance and security features, fully removing the dependency on AWS SDK for Java 1.x.
+
+For more information, see [KCL 3.0 release note](https://github.com/awslabs/amazon-kinesis-client/blob/master/CHANGELOG.md).
+
+**Topics**
++ [What's new in KCL 3.0?](#kcl-migration-new-3-0)
++ [Migrate from KCL 2.x to KCL 3.x](kcl-migration-from-2-3.md)
++ [Roll back to the previous KCL version](kcl-migration-rollback.md)
++ [Roll forward to KCL 3.x after a rollback](kcl-migration-rollforward.md)
++ [Best practices for the lease table with provisioned capacity mode](kcl-migration-lease-table.md)
++ [Migrate from KCL 3.x to single table format](kcl-migration-from-3-3-5.md)
++ [Migrating from KCL 1.x to KCL 3.x](kcl-migration-1-3.md)

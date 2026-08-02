@@ -1,0 +1,651 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html
+---
+
+Amazon Q Business is no longer open to new customers. For capabilities similar to Q Business, explore Amazon Quick. [Learn more](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html).
+
+# Connecting Amazon Q Business to SharePoint (Online) using APIs
+<a name="sharepoint-cloud-api"></a>
+
+You use the [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) action to connect a data source to your Amazon Q application. You can also use the [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) action to modify an existing data source configuration.
+
+Then, you use the `configuration` parameter to provide a JSON blob that conforms the AWS-defined JSON schema.
+
+For an example of the API request, see [CreateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateDataSource.html) and [UpdateDataSource](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_UpdateDataSource.html) in the Amazon Q API Reference.
+
+**Topics**
++ [SharePoint (Online) configuration properties](#sharepoint-cloud-configuration-keys)
++ [SharePoint (Online) JSON schema](#sharepoint-cloud-json)
++ [SharePoint (Online) JSON schema example](#sharepoint-cloud-api-json-example)
+
+## SharePoint (Online) configuration properties
+<a name="sharepoint-cloud-configuration-keys"></a>
+
+The following provides information about important configuration properties required in the schema.
+
+| Configuration | Description | Type | Required |
+| --- | --- | --- | --- |
+| `connectionConfiguration` | Configuration information for the endpoint for the data source. | `object`<br />This property has a sub-property called `repositoryEndpointMetadata`. | Yes |
+| `repositoryEndpointMetadata` | The endpoint information for the data source. | `object`<br />This property has the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | Yes |
+| `tenantId` | The tenant id of your SharePoint (Online) account. | `string`<br />OAuth2 series required | Yes |
+| `domain` | The domain of your SharePoint (Online) account. | `string` | Yes |
+| `siteUrls` | The host URLs of your SharePoint (Online) account. | `array (string)`<br />Specify the URL in the pattern `https://*` | Yes |
+| `repositoryAdditionalProperties` | Additional properties to connect with your repository endpoint. | `object`<br />This property has the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | Yes |
+| `s3bucketName` | The name of the Amazon S3 bucket that stores your Azure AD self-signed X.509 certificate. | `string`<br />Azure AD App-Only auth required | No |
+| `s3certificateName` | The name of the SSL certificate stored in your Amazon S3 bucket. | `string`<br />Azure AD App-Only auth required | No |
+| `authType` | The type of authentication you are using: OAuth2, OAuth2Certificate, OAuth2App, or Basic. | `string` | Yes |
+| `version` | The SharePoint version you are using: Online. | `string (Online)`<br />Azure AD App-Only auth required | Yes |
+| `repositoryConfigurations` | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. | `object`<br />This property has the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | Yes |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html)  | A list of objects that map the attributes or field names of your SharePoint (Online) pages and assets to Amazon Q index field names. | `object`<br />These properties have the following sub-properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | No |
+| `indexFieldName` | The field name of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string` | Yes |
+| `indexFieldType` | The field type of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string`<br />The allowed values are `STRING`, `STRING_LIST`, and `DATE`. | Yes |
+| `dataSourceFieldName` | The data source field name of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string` | Yes |
+| `dateFieldFormat` | The date format of your SharePoint (Online) events, pages, files, links, attachments, or comments. | `string`<br />Specify the date format in the form `yyyy-MM-dd'T'HH:mm:ss'Z'` | No |
+| `additionalProperties` | Additional configuration options for your content in your data source. | `object`<br />This property has the following sub-properties:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | Yes |
+|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | A list of regular expression patterns to include/exclude specific files in your SharePoint (Online) data source. Files that match the patterns are included in the index. File that don't match the patterns are excluded from the index. If a file matches both an inclusion and exclusion pattern, the exclusion pattern takes precedence, and the file isn't included in the index. | `array (string)` | No |
+| [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | Input TRUE to index. | `boolean` | No |
+| `maxFileSizeInMegaBytes` | Specify the maximum single file size limit in MBs that Amazon Q will crawl. Amazon Q will crawl only the files within the size limit you define. The default file size is 50MB. The maximum file size should be greater than 0MB and less than or equal to 50MB. | `string` | No |
+| `type` | We recommend that you use SHAREPOINTV2 as your data source type | `string`<br />Valid values are `SHAREPOINTV2` and `SHAREPOINT`. | Yes |
+| `enableIdentityCrawler` | `true` to activate identity crawler. Identity crawler is activated by default. Crawling identity information on users and groups with access to specific documents is useful for user context filtering. Search results are filtered based on the user or their group access to documents. Amazon Q Business crawls identity information from your data source by default to ensure responses are generated only from documents end users have access to. For more information, see [Identity crawler](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler).  | `boolean` | Yes |
+| `syncMode` | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents.  | `string`<br />You can choose between the following options:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/sharepoint-cloud-api.html) | Yes |
+| `secretARN` | The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains the key-value pairs required to connect to your SharePoint. If you use basic authentication, provide the username and password. If you use OAuth 2.0 authentication, provide the username, password, client ID, and client secret. | `string`<br />The minimum length is 20 and the maximum length is 2,048 characters. If you use basic authentication (authType should be Basic), the secret must contain a JSON structure with the following keys: <pre>{<br />    "username": "{{SharePoint (Online) account user name}}",<br />    "password": "{{SharePoint (Online) password}}"<br />}</pre>If you use Azure AD App-only authentication (authType should be OAuth2Certificate), the secret must contain a JSON structure with the following keys: <pre>{<br />    "clientId": "{{SharePoint (Online) client ID}}",<br />    "privateKey": "{{SharePoint (Online) private key}}"<br />}</pre>If you use OAuth2 authentication (authType should be OAuth) or Sharepoint App-Only authentication (authType should be OAuth2App) the secret must contain a JSON structure with the following keys: <pre>{<br />  "clientId": "{{SharePoint (Online) client ID}}",<br />  "clientSecret": "{{SharePoint (Online) client secret}}",<br />  "userName": "{{SharePoint (Online) account user name}}",<br />  "password": "{{SharePoint (Online) password}}"<br />}</pre> | Yes |
+| `version` | The version of this template that's currently supported. | `string` | No |
+
+## SharePoint (Online) JSON schema
+<a name="sharepoint-cloud-json"></a>
+
+The following is the SharePoint (Online) JSON schema:
+
+```
+{
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["SHAREPOINTV2", "SHAREPOINT"]
+    },
+    "syncMode": {
+      "type": "string",
+      "enum": ["FULL_CRAWL", "FORCED_FULL_CRAWL", "CHANGE_LOG"]
+    },
+    "secretArn": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 2048
+    },
+    "enableIdentityCrawler": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string",
+          "enum": ["true", "false"]
+        }
+      ]
+    },
+    "connectionConfiguration": {
+      "type": "object",
+      "properties": {
+        "repositoryEndpointMetadata": {
+          "type": "object",
+          "properties": {
+            "tenantId": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+              "minLength": 36,
+              "maxLength": 36
+            },
+            "domain": {
+              "type": "string"
+            },
+            "siteUrls": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "https://.*"
+              }
+            },
+            "repositoryAdditionalProperties": {
+              "type": "object",
+              "properties": {
+                "s3bucketName": {
+                  "type": "string"
+                },
+                "s3certificateName": {
+                  "type": "string"
+                },
+                "authType": {
+                  "type": "string",
+                  "enum": [
+                    "OAuth2",
+                    "OAuth2Certificate",
+                    "OAuth2App",
+                    "Basic"
+                  ]
+                },
+                "version": {
+                  "type": "string",
+                  "enum": ["Online"]
+                },
+                "enableDeletionProtection": {
+                  "anyOf": [
+                    {
+                      "type": "boolean"
+                    },
+                    {
+                      "type": "string",
+                      "enum": ["true", "false"]
+                    }
+                  ],
+                  "default": false
+                },
+                "deletionProtectionThreshold": {
+                  "type": "string",
+                  "default": "15"
+                }
+              },
+              "required": ["authType", "version"]
+            }
+          },
+          "required": ["siteUrls", "domain", "repositoryAdditionalProperties"]
+        }
+      },
+      "required": ["repositoryEndpointMetadata"]
+    },
+    "repositoryConfigurations": {
+      "type": "object",
+      "properties": {
+        "event": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "page": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "DATE", "LONG"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "file": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "DATE", "LONG"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "link": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "attachment": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        },
+        "comment": {
+          "type": "object",
+          "properties": {
+            "fieldMappings": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "indexFieldName": {
+                      "type": "string"
+                    },
+                    "indexFieldType": {
+                      "type": "string",
+                      "enum": ["STRING", "STRING_LIST", "DATE"]
+                    },
+                    "dataSourceFieldName": {
+                      "type": "string"
+                    },
+                    "dateFieldFormat": {
+                      "type": "string",
+                      "pattern": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+                    }
+                  },
+                  "required": [
+                    "indexFieldName",
+                    "indexFieldType",
+                    "dataSourceFieldName"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": ["fieldMappings"]
+        }
+      }
+    },
+    "additionalProperties": {
+      "type": "object",
+      "properties": {
+        "eventTitleFilterRegEx": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "pageTitleFilterRegEx": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "linkTitleFilterRegEx": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFilePath": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFilePath": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFileTypePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFileTypePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionFileNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionFileNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionOneNoteSectionNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionOneNoteSectionNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "inclusionOneNotePageNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exclusionOneNotePageNamePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "crawlFiles": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlPages": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlEvents": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlComments": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlLinks": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlAttachments": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlListData": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "crawlAcl": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "isCrawlLocalGroupMapping": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "isCrawlAdGroupMapping": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "string",
+              "enum": ["true", "false"]
+            }
+          ]
+        },
+        "maxFileSizeInMegaBytes": {
+          "type": "string"
+        }
+      },
+      "required": []
+    },
+    "version": {
+      "type": "string",
+      "anyOf": [
+        {
+          "pattern": "1.0.0"
+        }
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "syncMode",
+    "secretArn",
+    "enableIdentityCrawler",
+    "connectionConfiguration",
+    "repositoryConfigurations",
+    "additionalProperties"
+  ]
+}
+```
+
+## SharePoint (Online) JSON schema example
+<a name="sharepoint-cloud-api-json-example"></a>
+
+The following is the SharePoint (Online) JSON schema example:
+
+```
+{
+  "type": "SHAREPOINTV2",
+  "syncMode": "FULL_CRAWL",
+  "secretArn": "arn:aws:secretsmanager:us-west-2:123456789012:secret:my-sharepoint-secret",
+  "enableIdentityCrawler": "true",
+  "connectionConfiguration": {
+    "repositoryEndpointMetadata": {
+      "tenantId": "1234567a-890b-1234-567c-123456789012",
+      "domain": "example.sharepoint.com",
+      "siteUrls": ["https://example.sharepoint.com/sites/mysite"],
+      "repositoryAdditionalProperties": {
+        "s3bucketName": "my-bucket",
+        "s3certificateName": "my-certificate",
+        "authType": "OAuth2",
+        "version": "Online",
+        "enableDeletionProtection": "false",
+        "deletionProtectionThreshold": "15"
+      }
+    }
+  },
+  "repositoryConfigurations": {
+    "event": {
+      "fieldMappings": [
+        {
+          "indexFieldName": "event_id",
+          "indexFieldType": "STRING",
+          "dataSourceFieldName": "id",
+          "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        }
+      ]
+    },
+    "page": {
+      "fieldMappings": [
+        {
+          "indexFieldName": "page_id",
+          "indexFieldType": "STRING",
+          "dataSourceFieldName": "id",
+          "dateFieldFormat": "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        }
+      ]
+    }
+  },
+  "additionalProperties": {
+    "eventTitleFilterRegEx": ["^.*$"],
+    "pageTitleFilterRegEx": ["^.*$"],
+    "linkTitleFilterRegEx": ["^.*$"],
+    "inclusionFilePath": ["documents/"],
+    "exclusionFilePath": ["drafts/"],
+    "inclusionFileTypePatterns": ["*.docx"],
+    "exclusionFileTypePatterns": ["*.tmp"],
+    "inclusionFileNamePatterns": ["*report*"],
+    "exclusionFileNamePatterns": ["*draft*"],
+    "enableDeletionProtection": "false",
+    "maxFileSizeInMegaBytes": "50"
+  }
+}
+```

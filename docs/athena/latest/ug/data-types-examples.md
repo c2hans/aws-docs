@@ -1,0 +1,37 @@
+---
+source_url: https://docs.aws.amazon.com/athena/latest/ug/data-types-examples.html
+---
+
+# Data type examples
+<a name="data-types-examples"></a>
+
+The following table shows example literals for DML data types.
+
+****
+
+| Data type | Examples |
+| --- | --- |
+| BOOLEAN | `true`<br />`false ` |
+| TINYINT | `TINYINT '123'` |
+| SMALLINT | `SMALLINT '123'` |
+| INT, INTEGER | `123456790` |
+| BIGINT | `BIGINT '1234567890'`<br />`2147483648` |
+| REAL | `'123456.78'` |
+| DOUBLE | `1.234` |
+| DECIMAL({{precision}}, {{scale}}) | `DECIMAL '123.456'` |
+| CHAR, CHAR({{length}}) | `CHAR 'hello world'`, `CHAR 'hello ''world''!'` |
+| VARCHAR, VARCHAR({{length}}) | `VARCHAR 'hello world'`, `VARCHAR 'hello ''world''!'` |
+| VARBINARY | `X'00 01 02'` |
+| TIME, TIME({{precision}}) | `TIME '10:11:12'`, `TIME '10:11:12.345'` |
+| TIME WITH TIME ZONE | `TIME '10:11:12.345 -06:00'` |
+| DATE | `DATE '2024-03-25'` |
+| TIMESTAMP, TIMESTAMP WITHOUT TIME ZONE, TIMESTAMP({{precision}}), TIMESTAMP({{precision}}) WITHOUT TIME ZONE  | `TIMESTAMP '2024-03-25 11:12:13'`, `TIMESTAMP '2024-03-25 11:12:13.456'` |
+| TIMESTAMP WITH TIME ZONE, TIMESTAMP({{precision}}) WITH TIME ZONE | `TIMESTAMP '2024-03-25 11:12:13.456 Europe/Berlin'` |
+| INTERVAL YEAR TO MONTH | `INTERVAL '3' MONTH` |
+| INTERVAL DAY TO SECOND | `INTERVAL '2' DAY` |
+| ARRAY[{{element\_type}}] | `ARRAY['one', 'two', 'three']` |
+| MAP({{key\_type}}, {{value\_type}}) | `MAP(ARRAY['one', 'two', 'three'], ARRAY[1, 2, 3])`<br />Note that maps are created from an array of keys and an array of values. The following example creates a table that maps strings to integers.<pre>CREATE TABLE map_table(col1 map<string, integer>) LOCATION '...';<br />INSERT INTO map_table values(MAP(ARRAY['foo', 'bar'], ARRAY[1, 2]));</pre> |
+| ROW({{field\_name\_1}} {{field\_type\_1}}, {{field\_name\_2}} {{field\_type\_2}}, …) | `ROW('one', 'two', 'three')`<br />Note that rows created this way have no column names. To add column names, you can use `CAST`, as in the following example:<pre>CAST(ROW(1, 2, 3) AS ROW(one INT, two INT, three INT))</pre> |
+| JSON | `JSON '{"one":1, "two": 2, "three": 3}'` |
+| UUID | `UUID '12345678-90ab-cdef-1234-567890abcdef'` |
+| IPADDRESS | `IPADDRESS '10.0.0.1'`<br />`IPADDRESS '2001:db8::1'` |

@@ -1,0 +1,148 @@
+---
+source_url: https://docs.aws.amazon.com/appflow/1.0/APIReference/API_UpdateConnectorRegistration.html
+---
+
+# UpdateConnectorRegistration
+<a name="API_UpdateConnectorRegistration"></a>
+
+Updates a custom connector that you've previously registered. This operation updates the connector with one of the following:
++ The latest version of the AWS Lambda function that's assigned to the connector
++ A new AWS Lambda function that you specify
+
+## Request Syntax
+<a name="API_UpdateConnectorRegistration_RequestSyntax"></a>
+
+```
+POST /update-connector-registration HTTP/1.1
+Content-type: application/json
+
+{
+   "clientToken": "{{string}}",
+   "connectorLabel": "{{string}}",
+   "connectorProvisioningConfig": {
+      "lambda": {
+         "lambdaArn": "{{string}}"
+      }
+   },
+   "description": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_UpdateConnectorRegistration_RequestParameters"></a>
+
+The request does not use any URI parameters.
+
+## Request Body
+<a name="API_UpdateConnectorRegistration_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [clientToken](#API_UpdateConnectorRegistration_RequestSyntax) **   <a name="appflow-UpdateConnectorRegistration-request-clientToken"></a>
+The `clientToken` parameter is an idempotency token. It ensures that your `UpdateConnectorRegistration` request completes only once. You choose the value to pass. For example, if you don't receive a response from your request, you can safely retry the request with the same `clientToken` parameter value.
+If you omit a `clientToken` value, the AWS SDK that you are using inserts a value for you. This way, the SDK can safely retry requests multiple times after a network error. You must provide your own value for other use cases.
+If you specify input parameters that differ from your first request, an error occurs. If you use a different value for `clientToken`, Amazon AppFlow considers it a new call to `UpdateConnectorRegistration`. The token is active for 8 hours.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Pattern: `[ -~]+`
+Required: No
+
+ ** [connectorLabel](#API_UpdateConnectorRegistration_RequestSyntax) **   <a name="appflow-UpdateConnectorRegistration-request-connectorLabel"></a>
+The name of the connector. The name is unique for each connector registration in your AWS account.
+Type: String
+Length Constraints: Maximum length of 256.
+Pattern: `[a-zA-Z0-9][\w!@#.-]+`
+Required: Yes
+
+ ** [connectorProvisioningConfig](#API_UpdateConnectorRegistration_RequestSyntax) **   <a name="appflow-UpdateConnectorRegistration-request-connectorProvisioningConfig"></a>
+Contains information about the configuration of the connector being registered.
+Type: [ConnectorProvisioningConfig](API_ConnectorProvisioningConfig.md) object
+Required: No
+
+ ** [description](#API_UpdateConnectorRegistration_RequestSyntax) **   <a name="appflow-UpdateConnectorRegistration-request-description"></a>
+A description about the update that you're applying to the connector.
+Type: String
+Length Constraints: Maximum length of 1024.
+Pattern: `[\s\w/!@#+=.-]*`
+Required: No
+
+## Response Syntax
+<a name="API_UpdateConnectorRegistration_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "connectorArn": "string"
+}
+```
+
+## Response Elements
+<a name="API_UpdateConnectorRegistration_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [connectorArn](#API_UpdateConnectorRegistration_ResponseSyntax) **   <a name="appflow-UpdateConnectorRegistration-response-connectorArn"></a>
+The ARN of the connector being updated.
+Type: String
+Length Constraints: Maximum length of 512.
+Pattern: `arn:aws:.*:.*:[0-9]+:.*`
+
+## Errors
+<a name="API_UpdateConnectorRegistration_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+AppFlow/Requester has invalid or missing permissions.
+HTTP Status Code: 403
+
+ ** ConflictException **
+ There was a conflict when processing the request (for example, a flow with the given name already exists within the account. Check for conflicting resource names and try again.
+HTTP Status Code: 409
+
+ ** ConnectorAuthenticationException **
+ An error occurred when authenticating with the connector endpoint.
+HTTP Status Code: 401
+
+ ** ConnectorServerException **
+ An error occurred when retrieving data from the connector endpoint.
+HTTP Status Code: 400
+
+ ** InternalServerException **
+ An internal service error occurred during the processing of your request. Try again later.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+ The resource specified in the request (such as the source or destination connector profile) is not found.
+HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+ The request would cause a service quota (such as the number of flows) to be exceeded.
+HTTP Status Code: 402
+
+ ** ThrottlingException **
+API calls have exceeded the maximum allowed API request rate per account and per Region.
+HTTP Status Code: 429
+
+ ** ValidationException **
+ The request has invalid or missing parameters.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_UpdateConnectorRegistration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/appflow-2020-08-23/UpdateConnectorRegistration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/appflow-2020-08-23/UpdateConnectorRegistration)

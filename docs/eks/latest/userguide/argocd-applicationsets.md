@@ -1,0 +1,294 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/userguide/argocd-applicationsets.html
+---
+
+ **Help improve this page**
+
+To contribute to this user guide, choose the **Edit this page on GitHub** link that is located in the right pane of every page.
+
+# Use ApplicationSets
+<a name="argocd-applicationsets"></a>
+
+ApplicationSets generate multiple Applications from templates, enabling you to deploy the same application across multiple clusters, environments, or namespaces with a single resource definition.
+
+## Prerequisites
+<a name="_prerequisites"></a>
++ An EKS cluster with the Argo CD capability created
++ Repository access configured (see [Configure repository access](argocd-configure-repositories.md))
++  `kubectl` configured to communicate with your cluster
+
+**Note**
+Multiple target clusters are not required for ApplicationSets. You can use generators other than the cluster generator (like list, git, or matrix generators) to deploy applications without remote clusters.
+
+## How ApplicationSets work
+<a name="_how_applicationsets_work"></a>
+
+ApplicationSets use generators to produce parameters, then apply those parameters to an Application template. Each set of generated parameters creates one Application.
+
+Common generators for EKS deployments:
++  **List generator** - Explicitly define clusters and parameters for each environment
++  **Cluster generator** - Automatically deploy to all registered clusters
++  **Git generator** - Generate Applications from repository structure
++  **Matrix generator** - Combine generators for multi-dimensional deployments
++  **Merge generator** - Merge parameters from multiple generators
+
+For complete generator reference, see [ApplicationSet Documentation](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set/).
+
+## List generator
+<a name="_list_generator"></a>
+
+Deploy to multiple clusters with explicit configuration:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook-all-clusters
+  namespace: argocd
+spec:
+  generators:
+  - list:
+      elements:
+      - environment: dev
+        replicas: "2"
+      - environment: staging
+        replicas: "3"
+      - environment: prod
+        replicas: "5"
+  template:
+    metadata:
+      name: 'guestbook-{{environment}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/example/guestbook
+        targetRevision: HEAD
+        path: 'overlays/{{environment}}'
+      destination:
+        name: '{{environment}}-cluster'
+        namespace: guestbook
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+```
+
+**Note**
+Use `destination.name` with cluster names for better readability. The `destination.server` field also works with EKS cluster ARNs if needed.
+
+This creates three Applications: `guestbook-dev`, `guestbook-staging`, and `guestbook-prod`.
+
+## Cluster generator
+<a name="_cluster_generator"></a>
+
+Deploy to all registered clusters automatically:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: cluster-addons
+  namespace: argocd
+spec:
+  generators:
+  - clusters: {}
+  template:
+    metadata:
+      name: '{{name}}-addons'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/example/cluster-addons
+        targetRevision: HEAD
+        path: addons
+      destination:
+        server: '{{server}}'
+        namespace: kube-system
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+```
+
+This automatically creates an Application for each registered cluster.
+
+ **Filter clusters**:
+
+Use `matchLabels` to include specific clusters, or `matchExpressions` to exclude clusters:
+
+```
+spec:
+  generators:
+  - clusters:
+      selector:
+        matchLabels:
+          environment: production
+        matchExpressions:
+        - key: skip-appset
+          operator: DoesNotExist
+```
+
+## Git generators
+<a name="_git_generators"></a>
+
+Git generators create Applications based on repository structure:
++  **Directory generator** - Deploy each directory as a separate Application (useful for microservices)
++  **File generator** - Generate Applications from parameter files (useful for multi-tenant deployments)
+
+ **Example: Microservices deployment**
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: microservices
+  namespace: argocd
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/example/microservices
+      revision: HEAD
+      directories:
+      - path: services/*
+  template:
+    metadata:
+      name: '{{path.basename}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/example/microservices
+        targetRevision: HEAD
+        path: '{{path}}'
+      destination:
+        name: my-cluster
+        namespace: '{{path.basename}}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+        syncOptions:
+        - CreateNamespace=true
+```
+
+For details on Git generators and file-based configuration, see [Git Generator](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Git/) in the Argo CD documentation.
+
+## Matrix generator
+<a name="_matrix_generator"></a>
+
+Combine multiple generators to deploy across multiple dimensions (environments × clusters):
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: multi-env-multi-cluster
+  namespace: argocd
+spec:
+  generators:
+  - matrix:
+      generators:
+      - list:
+          elements:
+          - environment: dev
+          - environment: staging
+          - environment: prod
+      - clusters:
+          selector:
+            matchLabels:
+              region: us-west-2
+  template:
+    metadata:
+      name: 'app-{{environment}}-{{name}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/example/app
+        targetRevision: HEAD
+        path: 'overlays/{{environment}}'
+      destination:
+        name: '{{name}}'
+        namespace: 'app-{{environment}}'
+```
+
+For details on combining generators, see [Matrix Generator](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators-Matrix/) in the Argo CD documentation.
+
+## Multi-region deployment
+<a name="_multi_region_deployment"></a>
+
+Deploy to clusters across multiple regions:
+
+```
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: global-app
+  namespace: argocd
+spec:
+  generators:
+  - list:
+      elements:
+      - clusterName: prod-us-west
+        region: us-west-2
+      - clusterName: prod-us-east
+        region: us-east-1
+      - clusterName: prod-eu-west
+        region: eu-west-1
+  template:
+    metadata:
+      name: 'app-{{region}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/example/app
+        targetRevision: HEAD
+        path: kubernetes
+        helm:
+          parameters:
+          - name: region
+            value: '{{region}}'
+      destination:
+        name: '{{clusterName}}'
+        namespace: app
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+```
+
+## Manage ApplicationSets
+<a name="_manage_applicationsets"></a>
+
+ **View ApplicationSets and generated Applications**:
+
+```
+kubectl get applicationsets -n argocd
+kubectl get applications -n argocd -l argocd.argoproj.io/application-set-name=<applicationset-name>
+```
+
+ **Update an ApplicationSet**:
+
+Modify the ApplicationSet spec and reapply. Argo CD automatically updates all generated Applications:
+
+```
+kubectl apply -f applicationset.yaml
+```
+
+ **Delete an ApplicationSet**:
+
+```
+kubectl delete applicationset <name> -n argocd
+```
+
+**Warning**
+Deleting an ApplicationSet deletes all generated Applications. If those Applications have `prune: true`, their resources will also be deleted from target clusters.
+To preserve deployed resources when deleting an ApplicationSet, set `.syncPolicy.preserveResourcesOnDeletion` to `true` in the ApplicationSet spec. For more information, see [Application Pruning & Resource Deletion](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Application-Deletion/) in the Argo CD documentation.
+
+**Important**
+Argo CD’s ApplicationSets feature has security considerations you should be aware of before using ApplicationSets. For more information, see [ApplicationSet Security](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Security/) in the Argo CD documentation.
+
+## Additional resources
+<a name="_additional_resources"></a>
++  [Working with Argo CD Projects](argocd-projects.md) - Organize ApplicationSets with Projects
++  [Create Applications](argocd-create-application.md) - Understand Application configuration
++  [ApplicationSet Documentation](https://argo-cd.readthedocs.io/en/stable/user-guide/application-set/) - Complete generator reference and patterns
++  [Generator Reference](https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Generators/) - Detailed generator specifications

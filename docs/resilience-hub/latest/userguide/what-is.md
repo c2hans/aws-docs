@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/what-is.html
+---
+
+# What is AWS Resilience Hub?
+<a name="what-is"></a>
+
+AWS Resilience Hub is a central location for you to manage and improve the resilience posture of your applications on AWS. AWS Resilience Hub enables you to define your resilience goals, assess your resilience posture against those goals, and implement recommendations for improvement based on the AWS Well-Architected Framework. Within AWS Resilience Hub, you can also create and run AWS Fault Injection Service experiments, which mimic real-life disruptions to your application to help you better understand dependencies and uncover potential weaknesses. AWS Resilience Hub provides a central place with all the AWS services and tools that you need to continuously strengthen your resilience posture. AWS Resilience Hub works with other services to provide recommendations and help you to manage your application resources. For more information, see [Working with other services](service-integrations.md).
+
+The following table provides the documentation links of all the related resiliency services.
+
+**Related AWS resiliency services and references**
+
+| AWS resiliency service | Documentation link |
+| --- | --- |
+| AWS Elastic Disaster Recovery | [What is Elastic Disaster Recovery](https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html) |
+| AWS Backup | [What is AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) |
+| Amazon Application Recovery Controller (ARC) (ARC) | [What is Amazon Application Recovery Controller (ARC)](https://docs.aws.amazon.com/r53recovery/latest/dg/what-is-route53-recovery.html) |
+
+**Topics**
++ [AWS Resilience Hub – Resilience management](arh-mgmt.md)
++ [AWS Resilience Hub – Resilience testing](arh-testing.md)
++ [AWS Resilience Hub concepts](concepts-terms.md)
++ [AWS Resilience Hub personas](arh-personas.md)
++ [AWS Resilience Hub supported resources](supported-resources.md)
++ [AWS Resilience Hub and myApplications](arh-myApplication-integration.md)

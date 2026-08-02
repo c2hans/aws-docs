@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-iiot-historian-modernization/using-aws.html
+---
+
+# Using AWS
+<a name="using-aws"></a>
+
+AWS services are designed to provide cost-effective, secure, and reliable performance in the cloud. AWS can help organizations reduce costs, increase agility, improve scalability, and reduce the complexity of managing a cloud infrastructure. This helps organizations focus on their core business and innovation. The following are some of the benefits of using AWS:
++ **Cost savings** – AWS services can help you reduce on-premises hardware and infrastructure costs because you only pay for the services you use. Improvements in staff productivity, operational resilience and business agility are additional financial benefits. For more information, see [Five things you should do to create an accurate on-premises vs cloud comparison model](https://aws.amazon.com/blogs/aws-cloud-financial-management/five-things-you-should-do-to-create-an-accurate-on-premises-vs-cloud-comparison-model/) (AWS blog post).
++ **Scalability** – AWS services can easily scale up or down depending on your needs, helping you quickly adjust to changing business demands. It can be difficult to scale on-premises historian hardware. Moving your historian to the cloud can improve scalability and resiliency.
++ **Security** – AWS services include built-in security features and compliance certifications that help you protect your data and applications. For more information, see [AWS Cloud Security](https://aws.amazon.com/security/). For example, many AWS services, including AWS IoT SiteWise and Amazon Timestream, have encryption enabled by default.
++ **Reliability** – AWS services are designed to be highly reliable and available, with built-in redundancy and failover capabilities. On-premises hardware failure can be difficult to recover, and they can negatively affect manufacturing. A serverless architecture on AWS can help your historian infrastructure recover and automatically scale up or down, based on your needs.
++ **Automation** – AWS services can automate many of the tedious tasks associated with managing a cloud environment, such as provisioning, monitoring, and patching. You can simplify deployment of a historian by using infrastructure as code (IaC) and using a continuous integration and continuous delivery (CI/CD) pipeline.
++ **Innovation** – AWS services constantly evolve to provide the latest features and capabilities, helping you stay ahead of the competition.
++ **Integration** – AWS services can integrate with other cloud services, helping you to quickly build and deploy applications in the cloud. Cloud-based historians can more easily integrate with AI/ML services. For more information, see [Strengthening Operational Insights for Industrial Assets with AWS IoT AIML Solution](https://aws.amazon.com/blogs/iot/strengthening-operational-insights-for-industrial-assets-with-aws-iot-aiml-solution-part-1/) (AWS blog post).

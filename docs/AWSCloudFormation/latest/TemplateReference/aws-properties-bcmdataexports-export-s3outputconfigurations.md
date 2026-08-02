@@ -43,7 +43,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The compression type for the data export.
 *Required*: Yes
 *Type*: String
-*Allowed values*: `GZIP | PARQUET`
+*Allowed values*: `GZIP | PARQUET | ZIP`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Format`  <a name="cfn-bcmdataexports-export-s3outputconfigurations-format"></a>

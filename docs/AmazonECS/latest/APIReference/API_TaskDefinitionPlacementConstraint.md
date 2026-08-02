@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskDefinitionPlacementConstraint.html
+---
+
+# TaskDefinitionPlacementConstraint
+<a name="API_TaskDefinitionPlacementConstraint"></a>
+
+The constraint on task placement in the task definition. For more information, see [Task placement constraints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html) in the *Amazon Elastic Container Service Developer Guide*.
+
+**Note**
+Task placement constraints aren't supported for tasks run on AWS Fargate.
+
+## Contents
+<a name="API_TaskDefinitionPlacementConstraint_Contents"></a>
+
+ ** expression **   <a name="ECS-Type-TaskDefinitionPlacementConstraint-expression"></a>
+A cluster query language expression to apply to the constraint. For more information, see [Cluster query language](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html) in the *Amazon Elastic Container Service Developer Guide*.
+Type: String
+Required: No
+
+ ** type **   <a name="ECS-Type-TaskDefinitionPlacementConstraint-type"></a>
+The type of constraint. The `MemberOf` constraint restricts selection to be from a group of valid candidates.
+Type: String
+Valid Values: `memberOf`
+Required: No
+
+## See Also
+<a name="API_TaskDefinitionPlacementConstraint_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ecs-2014-11-13/TaskDefinitionPlacementConstraint)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ecs-2014-11-13/TaskDefinitionPlacementConstraint)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ecs-2014-11-13/TaskDefinitionPlacementConstraint)

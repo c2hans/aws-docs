@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/troubleshooting.html
+---
+
+# Troubleshooting Device Farm errors
+<a name="troubleshooting"></a>
+
+In this section, you will find error messages and procedures to help you fix common problems with Device Farm.
+
+**Note**
+To troubleshoot Appium tests that unexpectedly fail on Device Farm, please see our guide for [client-side Appium testing](appium-endpoint.md)
+
+**Topics**
++ [Troubleshooting Android application tests in AWS Device Farm](troubleshooting-android-applications.md)
++ [Troubleshooting Appium Java JUnit tests in AWS Device Farm](troubleshooting-appium-java-junit.md)
++ [Troubleshooting Appium Java JUnit web application tests in AWS Device Farm](troubleshooting-appium-web-java-junit-tests.md)
++ [Troubleshooting Appium Java TestNG tests in AWS Device Farm](troubleshooting-appium-java-testng.md)
++ [Troubleshooting Appium Java TestNG web applications in AWS Device Farm](troubleshooting-appium-web-java-testng.md)
++ [Troubleshooting Appium Python tests in AWS Device Farm](troubleshooting-appium-python.md)
++ [Troubleshooting Appium Python web application tests in AWS Device Farm](troubleshooting-appium-web-python.md)
++ [Troubleshooting instrumentation tests in AWS Device Farm](troubleshooting-instrumentation-tests.md)
++ [Troubleshooting iOS application tests in AWS Device Farm](troubleshooting-ios-applications.md)
++ [Troubleshooting XCTest tests in AWS Device Farm](troubleshooting-xctest.md)
++ [Troubleshooting XCTest UI tests in AWS Device Farm](troubleshooting-xctest-ui.md)

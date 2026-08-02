@@ -1,0 +1,131 @@
+---
+source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListDatabases.html
+---
+
+# ListDatabases
+<a name="API_ListDatabases"></a>
+
+Lists the SAP HANA databases of an application registered with AWS Systems Manager for SAP.
+
+## Request Syntax
+<a name="API_ListDatabases_RequestSyntax"></a>
+
+```
+POST /list-databases HTTP/1.1
+Content-type: application/json
+
+{
+   "ApplicationId": "{{string}}",
+   "ComponentId": "{{string}}",
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_ListDatabases_RequestParameters"></a>
+
+The request does not use any URI parameters.
+
+## Request Body
+<a name="API_ListDatabases_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [ApplicationId](#API_ListDatabases_RequestSyntax) **   <a name="ssmsap-ListDatabases-request-ApplicationId"></a>
+The ID of the application.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 60.
+Pattern: `[\w\d\.-]+`
+Required: No
+
+ ** [ComponentId](#API_ListDatabases_RequestSyntax) **   <a name="ssmsap-ListDatabases-request-ComponentId"></a>
+The ID of the component.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[\w\d-]+`
+Required: No
+
+ ** [MaxResults](#API_ListDatabases_RequestSyntax) **   <a name="ssmsap-ListDatabases-request-MaxResults"></a>
+The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If you do not specify a value for MaxResults, the request returns 50 items per page by default.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 50.
+Required: No
+
+ ** [NextToken](#API_ListDatabases_RequestSyntax) **   <a name="ssmsap-ListDatabases-request-NextToken"></a>
+The token for the next page of results.
+Type: String
+Pattern: `.{16,2048}`
+Required: No
+
+## Response Syntax
+<a name="API_ListDatabases_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "Databases": [
+      {
+         "ApplicationId": "string",
+         "Arn": "string",
+         "ComponentId": "string",
+         "DatabaseId": "string",
+         "DatabaseType": "string",
+         "Tags": {
+            "string" : "string"
+         }
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
+## Response Elements
+<a name="API_ListDatabases_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [Databases](#API_ListDatabases_ResponseSyntax) **   <a name="ssmsap-ListDatabases-response-Databases"></a>
+The SAP HANA databases of an application.
+Type: Array of [DatabaseSummary](API_DatabaseSummary.md) objects
+
+ ** [NextToken](#API_ListDatabases_ResponseSyntax) **   <a name="ssmsap-ListDatabases-response-NextToken"></a>
+The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+Type: String
+Pattern: `.{16,2048}`
+
+## Errors
+<a name="API_ListDatabases_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalServerException **
+An internal error has occurred.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The resource is not available.
+HTTP Status Code: 404
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by an AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListDatabases_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ssm-sap-2018-05-10/ListDatabases)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ssm-sap-2018-05-10/ListDatabases)

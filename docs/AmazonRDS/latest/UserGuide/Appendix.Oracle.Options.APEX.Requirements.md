@@ -1,0 +1,49 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.Options.APEX.Requirements.html
+---
+
+# Requirements and limitations
+<a name="Appendix.Oracle.Options.APEX.Requirements"></a>
+
+The following topic lists the requirements and limitations for Oracle APEX and ORDS.
+
+## Oracle APEX version requirements
+<a name="Appendix.Oracle.Options.APEX.versions"></a>
+
+The `APEX` option uses storage on the DB instance class for your DB instance. Following are the supported versions and approximate storage requirements for Oracle APEX.
+
+**Note**
+For Oracle Database 26ai, Amazon RDS supports only Oracle APEX version 24.1.v1 and higher. Earlier Oracle APEX versions aren't supported for Oracle Database 26ai.
+
+****
+
+| Oracle APEX version | Storage requirements | Supported Oracle Database versions | Notes |
+| --- | --- | --- | --- |
+| Oracle APEX version 24.2.v1 | 114 MiB | All | This version includes patch 37885097: PSE BUNDLE FOR APEX 24.2 (PSES ON TOP OF 24.2.0), PATCH\_VERSION 4. |
+| Oracle APEX version 24.1.v1 | 112 MiB | All | This version includes patch 36695709: PSE BUNDLE FOR APEX 24.1 (PSES ON TOP OF 24.1.0), PATCH\_VERSION 3. If you need exactly the same APEX images version to install on your EC2 instance, download patch 37544819: 24.1.3 PSE BUNDLE FOR APEX 24.1 (PSES ON TOP OF 24.1.0). |
+| Oracle APEX version 23.2.v1 | 110 MiB | 21c and 19c | This version includes patch 35895964: PSE BUNDLE FOR APEX 23.2 (PSES ON TOP OF 23.2.0), PATCH\_VERSION 6. If you need exactly the same APEX images version to install on your EC2 instance, download patch 37593125: 23.2.6 PSE BUNDLE FOR APEX 23.2 (PSES ON TOP OF 23.2.0). |
+| Oracle APEX version 23.1.v1 | 106 MiB | 21c and 19c | This version includes patch 35283657: PSE BUNDLE FOR APEX 23.1 (PSES ON TOP OF 23.1.0), PATCH\_VERSION 2. |
+| Oracle APEX version 22.2.v1 | 106 MiB | 21c and 19c | This version includes patch 34628174: PSE BUNDLE FOR APEX 22.2 (PSES ON TOP OF 22.2.0), PATCH\_VERSION 4. |
+| Oracle APEX version 22.1.v1 | 124 MiB | 21c and 19c | This version includes patch 34020981: PSE BUNDLE FOR APEX 22.1 (PSES ON TOP OF 22.1.0), PATCH\_VERSION 6. |
+| Oracle APEX version 21.2.v1 | 125 MiB | 21c and 19c | This version includes patch 33420059: PSE BUNDLE FOR APEX 21.2 (PSES ON TOP OF 21.2.0), PATCH\_VERSION 8. |
+| Oracle APEX version 21.1.v1 | 125 MiB | 21c and 19c | This version includes patch 32598392: PSE BUNDLE FOR APEX 21.1, PATCH\_VERSION 3. |
+| Oracle APEX version 20.2.v1 | 148 MiB | 19c | This version includes patch 32006852: PSE BUNDLE FOR APEX 20.2, PATCH\_VERSION 2020.11.12. You can see the patch number and date by running the following query:<pre>SELECT PATCH_VERSION, PATCH_NUMBER <br />FROM   APEX_PATCHES;</pre> |
+| Oracle APEX version 20.1.v1 | 173 MiB | 19c | This version includes patch 30990551: PSE BUNDLE FOR APEX 20.1, PATCH\_VERSION 2020.07.15. |
+| Oracle APEX version 19.2.v1 | 149 MiB | 19c |  |
+| Oracle APEX version 19.1.v1 | 148 MiB | 19c |  |
+
+For downloadable Oracle APEX .zip files, see [ Oracle APEX Prior Release Archives ](https://www.oracle.com/tools/downloads/apex-all-archives-downloads.html) on the Oracle website.
+
+## Oracle APEX and ORDS prerequisites
+<a name="Appendix.Oracle.Options.APEX.PreReqs"></a>
+
+Note the following prerequisites for using Oracle APEX and ORDS:
++ Your system must use the Java Runtime Environment (JRE).
++ Your Oracle client installation must include the following:
+  + SQL\*Plus or SQL Developer for administration tasks
+  + Oracle Net Services for configuring connections to your RDS for Oracle DB instance
+
+## Oracle APEX limitations
+<a name="Appendix.Oracle.Options.APEX.limitations"></a>
+
+You can't modify the `APEX_{{version}}` user account, which is managed by Amazon RDS. Thus, you can't apply database profiles or enforce password rules on this user. The profiles and password settings for `APEX_{{version}}` are predefined by Oracle and AWS and are designed to meet the security requirements for Amazon RDS.

@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/developerguide/redshift-default-admin-check.html
+---
+
+# redshift-default-admin-check
+<a name="redshift-default-admin-check"></a>
+
+Checks if an Amazon Redshift cluster has changed the admin username from its default value. The rule is NON\_COMPLIANT if the admin username for a Redshift cluster is set to “awsuser” or if the username does not match what is listed in parameter.
+
+**Identifier:** REDSHIFT\_DEFAULT\_ADMIN\_CHECK
+
+**Resource Types:** AWS::Redshift::Cluster
+
+**Trigger type:** Configuration changes
+
+**AWS Region:** All supported AWS regions except Asia Pacific (Malaysia), Israel (Tel Aviv), Canada West (Calgary) Region
+
+**Parameters:**
+
+validAdminUserNames (Optional)Type: CSV
+Comma-separated list of admin username(s) for Redshift clusters to use. Note: 'awsuser' is the default and not accepted.
+
+## AWS CloudFormation template
+<a name="w2aac20c16c17b7e1309c19"></a>
+
+To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

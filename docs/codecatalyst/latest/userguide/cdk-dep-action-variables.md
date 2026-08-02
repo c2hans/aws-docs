@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/codecatalyst/latest/userguide/cdk-dep-action-variables.html
+---
+
+Amazon CodeCatalyst is no longer open to new customers. Existing customers can continue to use the service as normal. For more information, see [How to migrate from CodeCatalyst](migration.md).
+
+# 'AWS CDK deploy' variables
+<a name="cdk-dep-action-variables"></a>
+
+The **AWS CDK deploy** action produces and sets the following variables at run time. These are known as *predefined variables*.
+
+For information about referencing these variables in a workflow, see [Using predefined variables](workflows-using-predefined-variables.md).
+
+| Key | Value |
+| --- | --- |
+| stack-id | The Amazon Resource Name (ARN) of the AWS CDK application stack that was deployed to during the workflow run.<br />Example: `arn:aws:cloudformation:us-west-2:111122223333:stack/codecatalyst-cdk-app-stack/6aad4380-100a-11ec-a10a-03b8a84d40df` |
+| deployment-platform | The name of the deployment platform.<br />Hardcoded to `AWS:CloudFormation`. |
+| region | The region code of the AWS Region that was deployed to during the workflow run.<br />Example: `us-west-2` |
+| SKIP-DEPLOYMENT | A value of `true` indicates that deployment of your AWS CDK application stack was skipped during the workflow run. A stack deployment will be skipped if there is no change in the stack since the last deployment.<br />This variable is only produced if its value is `true`.<br />Hardcoded to `true`. |
+| *CloudFormation variables* | In addition to generating the variables listed previously, the **AWS CDK deploy** action also exposes *CloudFormation* output variables as *workflow* variables for use in subsequent workflow actions. By default, the action only exposes the first four (or fewer) CloudFormation variables that it finds. To determine which ones are exposed, run the **AWS CDK deploy** action once, and then look in the **Variables** tab of the run details page. If the variables listed on the **Variables** tab are not what you want, you can configure different ones using the `CfnOutputVariables` YAML property. For more information, see the [CfnOutputVariables](cdk-dep-action-ref.md#cdk.dep.cfn.out) property description in the ['AWS CDK deploy' action YAML](cdk-dep-action-ref.md). |

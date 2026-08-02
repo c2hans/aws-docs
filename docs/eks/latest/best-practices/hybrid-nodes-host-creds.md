@@ -1,0 +1,59 @@
+---
+source_url: https://docs.aws.amazon.com/eks/latest/best-practices/hybrid-nodes-host-creds.html
+---
+
+# Host credentials through network disconnections
+<a name="hybrid-nodes-host-creds"></a>
+
+EKS Hybrid Nodes is integrated with AWS Systems Manager (SSM) hybrid activations and AWS IAM Roles Anywhere for temporary IAM credentials that are used to authenticate the node with the EKS control plane. Both SSM and IAM Roles Anywhere automatically refresh the temporary credentials that they manage on on-premises hosts. It is recommended to use a single credential provider across the hybrid nodes in your cluster—either SSM hybrid activations or IAM Roles Anywhere, but not both.
+
+## SSM hybrid activations
+<a name="_ssm_hybrid_activations"></a>
+
+The temporary credentials provisioned by SSM are valid for one hour. You cannot alter the credential validity duration when using SSM as your credential provider. The temporary credentials are automatically rotated by SSM before they expire, and the rotation does not affect the status of your nodes or applications. However, when there are network disconnections between the SSM agent and the SSM Regional endpoint, SSM is unable to refresh the credentials, and the credentials might expire.
+
+SSM uses exponential backoff for credential refresh retries if it is unable to connect to the SSM Regional endpoints. In SSM agent version `3.3.808.0` and later (released August 2024), the exponential backoff is capped at 30 minutes. Depending on the duration of your network disconnection, it might take up to 30 minutes for SSM to refresh the credentials, and hybrid nodes will not reconnect to the EKS control plane until the credentials are refreshed. In this scenario, you can restart the SSM agent to force a credential refresh. As a side effect of the current SSM credential refresh behavior, nodes might reconnect at different times depending on when the SSM agent on each node manages to refresh its credentials. Because of this, you may see pod failover from nodes that are not yet reconnected to nodes that are already reconnected.
+
+Get the SSM agent version. You can also check the Fleet Manager section of the SSM console:
+
+```
+# AL2023, RHEL
+yum info amazon-ssm-agent
+# Ubuntu
+snap list amazon-ssm-agent
+```
+
+Restart the SSM agent:
+
+```
+# AL2023, RHEL
+systemctl restart amazon-ssm-agent
+# Ubuntu
+systemctl restart snap.amazon-ssm-agent.amazon-ssm-agent
+```
+
+View SSM agent logs:
+
+```
+tail -f /var/log/amazon/ssm/amazon-ssm-agent.log
+```
+
+Expected log messages during network disconnections:
+
+```
+INFO [CredentialRefresher] Credentials ready
+INFO [CredentialRefresher] Next credential rotation will be in 29.995040663666668 minutes
+ERROR [CredentialRefresher] Retrieve credentials produced error: RequestError: send request failed
+INFO [CredentialRefresher] Sleeping for 35s before retrying retrieve credentials
+ERROR [CredentialRefresher] Retrieve credentials produced error: RequestError: send request failed
+INFO [CredentialRefresher] Sleeping for 56s before retrying retrieve credentials
+ERROR [CredentialRefresher] Retrieve credentials produced error: RequestError: send request failed
+INFO [CredentialRefresher] Sleeping for 1m24s before retrying retrieve credentials
+```
+
+## IAM Roles Anywhere
+<a name="_iam_roles_anywhere"></a>
+
+The temporary credentials provisioned by IAM Roles Anywhere are valid for one hour by default. You can configure the credential validity duration with IAM Roles Anywhere through the [https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-create-session.html#credentials-object](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/authentication-create-session.html#credentials-object) field in your IAM Roles Anywhere profile. The maximum credential validity duration is 12 hours. The [https://docs.aws.amazon.com/managedservices/latest/ctref/management-advanced-identity-and-access-management-iam-update-maxsessionduration.html](https://docs.aws.amazon.com/managedservices/latest/ctref/management-advanced-identity-and-access-management-iam-update-maxsessionduration.html) setting on your Hybrid Nodes IAM role must be greater than the `durationSeconds` setting on your IAM Roles Anywhere profile.
+
+When using IAM Roles Anywhere as the credential provider for your hybrid nodes, reconnection to the EKS control plane after network disconnections typically occurs within seconds of network restoration, because the kubelet calls `aws_signing_helper credential-process` to obtain credentials on demand. Although not directly related to hybrid nodes or network disconnections, you can configure notifications and alerts for certificate expiry when using IAM Roles Anywhere. For more information, see [Customize notification settings in IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/customize-notification-settings.html).

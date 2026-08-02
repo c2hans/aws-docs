@@ -1,0 +1,382 @@
+---
+source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/iam_example_iam_ListGroups_section.html
+---
+
+# Use `ListGroups` with an AWS SDK or CLI
+<a name="iam_example_iam_ListGroups_section"></a>
+
+The following code examples show how to use `ListGroups`.
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/IAM#code-examples).
+
+```
+    /// <summary>
+    /// List IAM groups.
+    /// </summary>
+    /// <returns>A list of IAM groups.</returns>
+    public async Task<List<Group>> ListGroupsAsync()
+    {
+        var groupsPaginator = _IAMService.Paginators.ListGroups(new ListGroupsRequest());
+        var groups = new List<Group>();
+
+        await foreach (var response in groupsPaginator.Responses)
+        {
+            groups.AddRange(response.Groups);
+        }
+
+        return groups;
+    }
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/goto/DotNetSDKV3/iam-2010-05-08/ListGroups) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To list the IAM groups for the current account**
+The following `list-groups` command lists the IAM groups in the current account.
+
+```
+aws iam list-groups
+```
+Output:
+
+```
+{
+    "Groups": [
+        {
+            "Path": "/",
+            "CreateDate": "2013-06-04T20:27:27.972Z",
+            "GroupId": "AIDACKCEVSQ6C2EXAMPLE",
+            "Arn": "arn:aws:iam::123456789012:group/Admins",
+            "GroupName": "Admins"
+        },
+        {
+            "Path": "/",
+            "CreateDate": "2013-04-16T20:30:42Z",
+            "GroupId": "AIDGPMS9RO4H3FEXAMPLE",
+            "Arn": "arn:aws:iam::123456789012:group/S3-Admins",
+            "GroupName": "S3-Admins"
+        }
+    ]
+}
+```
+For more information, see [Managing IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage.html) in the *AWS IAM User Guide*.
++  For API details, see [ListGroups](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-groups.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Go ]
+
+**SDK for Go V2**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/gov2/iam#code-examples).
+
+```
+import (
+	"context"
+	"log"
+
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/service/iam"
+	"github.com/aws/aws-sdk-go-v2/service/iam/types"
+)
+
+// GroupWrapper encapsulates AWS Identity and Access Management (IAM) group actions
+// used in the examples.
+// It contains an IAM service client that is used to perform group actions.
+type GroupWrapper struct {
+	IamClient *iam.Client
+}
+
+// ListGroups lists up to maxGroups number of groups.
+func (wrapper GroupWrapper) ListGroups(ctx context.Context, maxGroups int32) ([]types.Group, error) {
+	var groups []types.Group
+	result, err := wrapper.IamClient.ListGroups(ctx, &iam.ListGroupsInput{
+		MaxItems: aws.Int32(maxGroups),
+	})
+	if err != nil {
+		log.Printf("Couldn't list groups. Here's why: %v\n", err)
+	} else {
+		groups = result.Groups
+	}
+	return groups, err
+}
+```
++  For API details, see [ListGroups](https://pkg.go.dev/github.com/aws/aws-sdk-go-v2/service/iam#Client.ListGroups) in *AWS SDK for Go API Reference*.
+
+------
+#### [ JavaScript ]
+
+**SDK for JavaScript (v3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/iam#code-examples).
+List the groups.
+
+```
+import { ListGroupsCommand, IAMClient } from "@aws-sdk/client-iam";
+
+const client = new IAMClient({});
+
+/**
+ * A generator function that handles paginated results.
+ * The AWS SDK for JavaScript (v3) provides {@link https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/index.html#paginators | paginator} functions to simplify this.
+ */
+export async function* listGroups() {
+  const command = new ListGroupsCommand({
+    MaxItems: 10,
+  });
+
+  let response = await client.send(command);
+
+  while (response.Groups?.length) {
+    for (const group of response.Groups) {
+      yield group;
+    }
+
+    if (response.IsTruncated) {
+      response = await client.send(
+        new ListGroupsCommand({
+          Marker: response.Marker,
+          MaxItems: 10,
+        }),
+      );
+    } else {
+      break;
+    }
+  }
+}
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/iam/command/ListGroupsCommand) in *AWS SDK for JavaScript API Reference*.
+
+------
+#### [ PHP ]
+
+**SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/iam#code-examples).
+
+```
+$uuid = uniqid();
+$service = new IAMService();
+
+    public function listGroups($pathPrefix = "", $marker = "", $maxItems = 0)
+    {
+        $listGroupsArguments = [];
+        if ($pathPrefix) {
+            $listGroupsArguments["PathPrefix"] = $pathPrefix;
+        }
+        if ($marker) {
+            $listGroupsArguments["Marker"] = $marker;
+        }
+        if ($maxItems) {
+            $listGroupsArguments["MaxItems"] = $maxItems;
+        }
+
+        return $this->iamClient->listGroups($listGroupsArguments);
+    }
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/goto/SdkForPHPV3/iam-2010-05-08/ListGroups) in *AWS SDK for PHP API Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example returns a collection of all the IAM groups defined in the current AWS account.**
+
+```
+Get-IAMGroupList
+```
+**Output:**
+
+```
+Arn        : arn:aws:iam::123456789012:group/Administrators
+CreateDate : 10/20/2014 10:06:24 AM
+GroupId    : 6WCH4TRY3KIHIEXAMPLE1
+GroupName  : Administrators
+Path       : /
+
+Arn        : arn:aws:iam::123456789012:group/Developers
+CreateDate : 12/10/2014 3:38:55 PM
+GroupId    : ZU2EOWMK6WBZOEXAMPLE2
+GroupName  : Developers
+Path       : /
+
+Arn        : arn:aws:iam::123456789012:group/Testers
+CreateDate : 12/10/2014 3:39:11 PM
+GroupId    : RHNZZGQJ7QHMAEXAMPLE3
+GroupName  : Testers
+Path       : /
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example returns a collection of all the IAM groups defined in the current AWS account.**
+
+```
+Get-IAMGroupList
+```
+**Output:**
+
+```
+Arn        : arn:aws:iam::123456789012:group/Administrators
+CreateDate : 10/20/2014 10:06:24 AM
+GroupId    : 6WCH4TRY3KIHIEXAMPLE1
+GroupName  : Administrators
+Path       : /
+
+Arn        : arn:aws:iam::123456789012:group/Developers
+CreateDate : 12/10/2014 3:38:55 PM
+GroupId    : ZU2EOWMK6WBZOEXAMPLE2
+GroupName  : Developers
+Path       : /
+
+Arn        : arn:aws:iam::123456789012:group/Testers
+CreateDate : 12/10/2014 3:39:11 PM
+GroupId    : RHNZZGQJ7QHMAEXAMPLE3
+GroupName  : Testers
+Path       : /
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/iam#code-examples).
+
+```
+def list_groups(count):
+    """
+    Lists the specified number of groups for the account.
+
+    :param count: The number of groups to list.
+    """
+    try:
+        for group in iam.groups.limit(count):
+            logger.info("Group: %s", group.name)
+    except ClientError:
+        logger.exception("Couldn't list groups for the account.")
+        raise
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/goto/boto3/iam-2010-05-08/ListGroups) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ Ruby ]
+
+**SDK for Ruby**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/ruby/example_code/iam#code-examples).
+
+```
+# A class to manage IAM operations via the AWS SDK client
+class IamGroupManager
+  # Initializes the IamGroupManager class
+  # @param iam_client [Aws::IAM::Client] An instance of the IAM client
+  def initialize(iam_client, logger: Logger.new($stdout))
+    @iam_client = iam_client
+    @logger = logger
+  end
+
+  # Lists up to a specified number of groups for the account.
+  # @param count [Integer] The maximum number of groups to list.
+  # @return [Aws::IAM::Client::Response]
+  def list_groups(count)
+    response = @iam_client.list_groups(max_items: count)
+    response.groups.each do |group|
+      @logger.info("\t#{group.group_name}")
+    end
+    response
+  rescue Aws::Errors::ServiceError => e
+    @logger.error("Couldn't list groups for the account. Here's why:")
+    @logger.error("\t#{e.code}: #{e.message}")
+    raise
+  end
+end
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/goto/SdkForRubyV3/iam-2010-05-08/ListGroups) in *AWS SDK for Ruby API Reference*.
+
+------
+#### [ Rust ]
+
+**SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/iam#code-examples).
+
+```
+pub async fn list_groups(
+    client: &iamClient,
+    path_prefix: Option<String>,
+    marker: Option<String>,
+    max_items: Option<i32>,
+) -> Result<ListGroupsOutput, SdkError<ListGroupsError>> {
+    let response = client
+        .list_groups()
+        .set_path_prefix(path_prefix)
+        .set_marker(marker)
+        .set_max_items(max_items)
+        .send()
+        .await?;
+
+    Ok(response)
+}
+```
++  For API details, see [ListGroups](https://docs.rs/aws-sdk-iam/latest/aws_sdk_iam/client/struct.Client.html#method.list_groups) in *AWS SDK for Rust API reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/iam#code-examples).
+
+```
+    TRY.
+        oo_result = lo_iam->listgroups( ).
+        MESSAGE 'Retrieved group list.' TYPE 'I'.
+      CATCH /aws1/cx_iamservicefailureex.
+        MESSAGE 'Service failure when listing groups.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [ListGroups](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+#### [ Swift ]
+
+**SDK for Swift**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/swift/example_code/iam#code-examples).
+
+```
+import AWSIAM
+import AWSS3
+
+    public func listGroups() async throws -> [String] {
+        var groupList: [String] = []
+
+        // Use "Paginated" to get all the groups.
+        // This lets the SDK handle the 'isTruncated' property in "ListGroupsOutput".
+        let input = ListGroupsInput()
+
+        let pages = client.listGroupsPaginated(input: input)
+        do {
+            for try await page in pages {
+                guard let groups = page.groups else {
+                    print("Error: no groups returned.")
+                    continue
+                }
+
+                for group in groups {
+                    if let name = group.groupName {
+                        groupList.append(name)
+                    }
+                }
+            }
+        } catch {
+            print("ERROR: listGroups:", dump(error))
+            throw error
+        }
+        return groupList
+    }
+```
++  For API details, see [ListGroups](https://sdk.amazonaws.com/swift/api/awsiam/latest/documentation/awsiam/iamclient/listgroups(input:)) in *AWS SDK for Swift API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using this service with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

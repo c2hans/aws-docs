@@ -1,0 +1,594 @@
+---
+source_url: https://docs.aws.amazon.com/cdk/v2/guide/cfn-layer.html
+---
+
+This is the AWS CDK v2 Developer Guide. The older CDK v1 entered maintenance on June 1, 2022 and ended support on June 1, 2023.
+
+# Customize constructs from the AWS Construct Library
+<a name="cfn-layer"></a>
+
+Customize constructs from the AWS Construct Library through Mixins, Facades, escape hatches, raw overrides, and custom resources.
+
+## Use Mixins to add features to L1 constructs
+<a name="develop-customize-mixins"></a>
+
+Mixins let you add high-level features to L1 constructs without needing a full L2 construct. This is useful when an L2 construct is not available for a service, or when you want to use L1 constructs with specific features that are normally only available through L2 constructs.
+
+For example, you can add auto-delete behavior to an L1 `CfnBucket`, which normally requires the L2 `Bucket` construct:
+
+**Example**
+
+```
+import * as cdk from 'aws-cdk-lib';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+
+const bucket = new s3.CfnBucket(this, 'MyBucket');
+bucket.cfnOptions.deletionPolicy = cdk.CfnDeletionPolicy.DELETE;
+
+// Add auto-delete objects behavior using a Mixin
+bucket.with(new s3.mixins.BucketAutoDeleteObjects());
+```
+
+```
+const cdk = require('aws-cdk-lib');
+const s3 = require('aws-cdk-lib/aws-s3');
+
+const bucket = new s3.CfnBucket(this, 'MyBucket');
+bucket.cfnOptions.deletionPolicy = cdk.CfnDeletionPolicy.DELETE;
+
+// Add auto-delete objects behavior using a Mixin
+bucket.with(new s3.mixins.BucketAutoDeleteObjects());
+```
+
+```
+import aws_cdk as cdk
+import aws_cdk.aws_s3 as s3
+
+bucket = s3.CfnBucket(self, "MyBucket")
+bucket.cfn_options.deletion_policy = cdk.CfnDeletionPolicy.DELETE
+
+# Add auto-delete objects behavior using a Mixin
+bucket.with_(s3.mixins.BucketAutoDeleteObjects())
+```
+
+```
+import software.amazon.awscdk.*;
+import software.amazon.awscdk.services.s3.*;
+
+CfnBucket bucket = new CfnBucket(this, "MyBucket");
+bucket.getCfnOptions().setDeletionPolicy(CfnDeletionPolicy.DELETE);
+
+// Add auto-delete objects behavior using a Mixin
+bucket.with(new BucketAutoDeleteObjects());
+```
+
+```
+using Amazon.CDK;
+using Amazon.CDK.AWS.S3;
+
+var bucket = new CfnBucket(this, "MyBucket");
+bucket.CfnOptions.DeletionPolicy = CfnDeletionPolicy.DELETE;
+
+// Add auto-delete objects behavior using a Mixin
+bucket.With(new BucketAutoDeleteObjects());
+```
+
+```
+bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
+bucket.CfnOptions().SetDeletionPolicy(awscdk.CfnDeletionPolicy_DELETE)
+
+bucket.With(awss3.NewBucketAutoDeleteObjects())
+```
+
+Mixins are available through the `mixins` namespace of each service module. You can combine Mixins with [Facades](#develop-customize-facades) to also get permissions and other integrations on L1 constructs. For more information about Mixins, see [Mixins](mixins.md).
+
+## Use Facades for integrations on L1 constructs
+<a name="develop-customize-facades"></a>
+
+Facades are resource-specific classes that provide integrations — such as permissions, metrics, and reflections — for both L1 and L2 constructs. The most common Facades are Grants classes, which provide intent-based permission methods.
+
+You can use Facades directly on L1 constructs without wrapping them in an L2:
+
+**Example**
+
+```
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as iam from 'aws-cdk-lib/aws-iam';
+
+const bucket = new s3.CfnBucket(this, 'MyBucket');
+const role = new iam.Role(this, 'MyRole', {
+  assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
+});
+
+// Use the Grants Facade directly on the L1 construct
+s3.BucketGrants.fromBucket(bucket).read(role);
+```
+
+```
+const s3 = require('aws-cdk-lib/aws-s3');
+const iam = require('aws-cdk-lib/aws-iam');
+
+const bucket = new s3.CfnBucket(this, 'MyBucket');
+const role = new iam.Role(this, 'MyRole', {
+  assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
+});
+
+// Use the Grants Facade directly on the L1 construct
+s3.BucketGrants.fromBucket(bucket).read(role);
+```
+
+```
+import aws_cdk.aws_s3 as s3
+import aws_cdk.aws_iam as iam
+
+bucket = s3.CfnBucket(self, "MyBucket")
+role = iam.Role(self, "MyRole",
+    assumed_by=iam.ServicePrincipal("lambda.amazonaws.com"),
+)
+
+# Use the Grants Facade directly on the L1 construct
+s3.BucketGrants.from_bucket(bucket).read(role)
+```
+
+```
+import software.amazon.awscdk.services.s3.*;
+import software.amazon.awscdk.services.iam.*;
+
+CfnBucket bucket = new CfnBucket(this, "MyBucket");
+Role role = Role.Builder.create(this, "MyRole")
+        .assumedBy(new ServicePrincipal("lambda.amazonaws.com"))
+        .build();
+
+// Use the Grants Facade directly on the L1 construct
+BucketGrants.fromBucket(bucket).read(role);
+```
+
+```
+using Amazon.CDK.AWS.S3;
+using Amazon.CDK.AWS.IAM;
+
+var bucket = new CfnBucket(this, "MyBucket");
+var role = new Role(this, "MyRole", new RoleProps
+{
+    AssumedBy = new ServicePrincipal("lambda.amazonaws.com")
+});
+
+// Use the Grants Facade directly on the L1 construct
+BucketGrants.FromBucket(bucket).Read(role);
+```
+
+```
+bucket := awss3.NewCfnBucket(stack, jsii.String("MyBucket"), nil)
+role := awsiam.NewRole(stack, jsii.String("MyRole"), &awsiam.RoleProps{
+    AssumedBy: awsiam.NewServicePrincipal(jsii.String("lambda.amazonaws.com"), nil),
+})
+
+awss3.BucketGrants_FromBucket(bucket).Read(role, nil)
+```
+
+For more information about Facades, see [Facades](facades.md).
+
+When Mixins and Facades don’t cover your use case, you can use escape hatches and raw overrides to customize constructs at a lower level.
+
+## Use escape hatches
+<a name="develop-customize-escape"></a>
+
+The AWS Construct Library provides [constructs](constructs.md) of varying levels of abstraction.
+
+At the highest level, your AWS CDK application and the stacks in it are themselves abstractions of your entire cloud infrastructure, or significant chunks of it. They can be parameterized to deploy them in different environments or for different needs.
+
+Abstractions are powerful tools for designing and implementing cloud applications. The AWS CDK gives you the power not only to build with its abstractions, but also to create new abstractions. Using the existing open-source L2 and L3 constructs as guidance, you can build your own L2 and L3 constructs to reflect your own organization’s best practices and opinions.
+
+No abstraction is perfect, and even good abstractions cannot cover every possible use case. During development, you may find a construct that almost fits your needs, requiring a small or large customization.
+
+For this reason, the AWS CDK provides ways to *break out* of the construct model. This includes moving to a lower-level abstraction or to a different model entirely. Escape hatches let you *escape* the AWS CDK paradigm and customize it in ways that suit your needs. Then, you can wrap your changes in a new construct to abstract away the underlying complexity and provide a clean API for other developers.
+
+The following are examples of situations where you can use escape hatches:
++ An AWS service feature is available through AWS CloudFormation, but there are no L2 constructs for it.
++ An AWS service feature is available through AWS CloudFormation, and there are L2 constructs for the service, but these don’t yet expose the feature. Because L2 constructs are curated by the CDK team, they may not be immediately available for new features.
++ The feature is not yet available through AWS CloudFormation at all.
+
+  To determine whether a feature is available through AWS CloudFormation, see [AWS Resource and Property Types Reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html).
+
+### Develop escape hatches for L1 constructs
+<a name="develop-customize-escape-l1"></a>
+
+If L2 constructs are not available for the service, you can use the automatically generated L1 constructs. These resources can be recognized by their name starting with `Cfn`, such as `CfnBucket` or `CfnRole`. You instantiate them exactly as you would use the equivalent AWS CloudFormation resource.
+
+For example, to instantiate a low-level Amazon S3 bucket L1 with analytics enabled, you would write something like the following.
+
+**Example**
+
+```
+new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
+  analyticsConfigurations: [
+    {
+      id: 'Config',
+      // ...
+    }
+  ]
+});
+```
+
+```
+new s3.CfnBucket(this, 'amzn-s3-demo-bucket', {
+  analyticsConfigurations: [
+    {
+      id: 'Config'
+      // ...
+    }
+  ]
+});
+```
+
+```
+s3.CfnBucket(self, "amzn-s3-demo-bucket",
+    analytics_configurations: [
+        dict(id="Config",
+             # ...
+             )
+    ]
+)
+```
+
+```
+CfnBucket.Builder.create(this, "amzn-s3-demo-bucket")
+    .analyticsConfigurations(Arrays.asList(java.util.Map.of(    // Java 9 or later
+        "id", "Config", // ...
+    ))).build();
+```
+
+```
+new CfnBucket(this, 'amzn-s3-demo-bucket', new CfnBucketProps {
+    AnalyticsConfigurations = new Dictionary<string, string>
+    {
+        ["id"] = "Config",
+        // ...
+    }
+});
+```
+
+There might be rare cases where you want to define a resource that doesn’t have a corresponding `CfnXxx` class. This could be a new resource type that hasn’t yet been published in the AWS CloudFormation resource specification. In cases like this, you can instantiate the `cdk.CfnResource` directly and specify the resource type and properties. This is shown in the following example.
+
+**Example**
+
+```
+new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
+  type: 'AWS::S3::Bucket',
+  properties: {
+    // Note the PascalCase here! These are CloudFormation identifiers.
+    AnalyticsConfigurations: [
+      {
+        Id: 'Config',
+        // ...
+      }
+    ]
+  }
+});
+```
+
+```
+new cdk.CfnResource(this, 'amzn-s3-demo-bucket', {
+  type: 'AWS::S3::Bucket',
+  properties: {
+    // Note the PascalCase here! These are CloudFormation identifiers.
+    AnalyticsConfigurations: [
+      {
+        Id: 'Config'
+        // ...
+      }
+    ]
+  }
+});
+```
+
+```
+cdk.CfnResource(self, 'amzn-s3-demo-bucket',
+  type="AWS::S3::Bucket",
+  properties=dict(
+    # Note the PascalCase here! These are CloudFormation identifiers.
+    "AnalyticsConfigurations": [
+      {
+        "Id": "Config",
+        # ...
+      }
+    ]
+  )
+)
+```
+
+```
+CfnResource.Builder.create(this, "amzn-s3-demo-bucket")
+        .type("AWS::S3::Bucket")
+        .properties(java.util.Map.of(    // Map.of requires Java 9 or later
+            // Note the PascalCase here! These are CloudFormation identifiers
+            "AnalyticsConfigurations", Arrays.asList(
+                    java.util.Map.of("Id", "Config", // ...
+                    ))))
+        .build();
+```
+
+```
+new CfnResource(this, "amzn-s3-demo-bucket", new CfnResourceProps
+{
+    Type = "AWS::S3::Bucket",
+    Properties = new Dictionary<string, object>
+    {   // Note the PascalCase here! These are CloudFormation identifiers
+        ["AnalyticsConfigurations"] = new Dictionary<string, string>[]
+        {
+            new Dictionary<string, string> {
+                ["Id"] = "Config"
+            }
+        }
+    }
+});
+```
+
+### Develop escape hatches for L2 constructs
+<a name="develop-customize-escape-l2"></a>
+
+If an L2 construct is missing a feature or you’re trying to work around an issue, you can modify the L1 construct that’s encapsulated by the L2 construct.
+
+All L2 constructs contain within them the corresponding L1 construct. For example, the high-level `Bucket` construct wraps the low-level `CfnBucket` construct. Because the `CfnBucket` corresponds directly to the AWS CloudFormation resource, it exposes all features that are available through AWS CloudFormation.
+
+The basic approach to get access to the L1 construct is to use `construct.node.defaultChild` (Python: `default_child`), cast it to the right type (if necessary), and modify its properties. Again, let’s take the example of a `Bucket`.
+
+**Example**
+
+```
+// Get the CloudFormation resource
+const cfnBucket = bucket.node.defaultChild as s3.CfnBucket;
+
+// Change its properties
+cfnBucket.analyticsConfiguration = [
+  {
+    id: 'Config',
+    // ...
+  }
+];
+```
+
+```
+// Get the CloudFormation resource
+const cfnBucket = bucket.node.defaultChild;
+
+// Change its properties
+cfnBucket.analyticsConfiguration = [
+  {
+    id: 'Config'
+    // ...
+  }
+];
+```
+
+```
+# Get the CloudFormation resource
+cfn_bucket = bucket.node.default_child
+
+# Change its properties
+cfn_bucket.analytics_configuration = [
+    {
+        "id": "Config",
+        # ...
+    }
+]
+```
+
+```
+// Get the CloudFormation resource
+CfnBucket cfnBucket = (CfnBucket)bucket.getNode().getDefaultChild();
+
+cfnBucket.setAnalyticsConfigurations(
+        Arrays.asList(java.util.Map.of(    // Java 9 or later
+            "Id", "Config", // ...
+        ));
+)
+```
+
+```
+// Get the CloudFormation resource
+var cfnBucket = (CfnBucket)bucket.Node.DefaultChild;
+
+cfnBucket.AnalyticsConfigurations = new List<object> {
+    new Dictionary<string, string>
+    {
+        ["Id"] = "Config",
+        // ...
+    }
+};
+```
+
+You can also use this object to change AWS CloudFormation options such as `Metadata` and `UpdatePolicy`.
+
+**Example**
+
+```
+cfnBucket.cfnOptions.metadata = {
+  MetadataKey: 'MetadataValue'
+};
+```
+
+```
+cfnBucket.cfnOptions.metadata = {
+  MetadataKey: 'MetadataValue'
+};
+```
+
+```
+cfn_bucket.cfn_options.metadata = {
+    "MetadataKey": "MetadataValue"
+}
+```
+
+```
+cfnBucket.getCfnOptions().setMetadata(java.util.Map.of(    // Java 9+
+    "MetadataKey", "Metadatavalue"));
+```
+
+```
+cfnBucket.CfnOptions.Metadata = new Dictionary<string, object>
+{
+    ["MetadataKey"] = "Metadatavalue"
+};
+```
+
+## Use un-escape hatches
+<a name="develop-customize-unescape"></a>
+
+The AWS CDK also provides the capability to go *up* an abstraction level, which we might refer to as an "un-escape" hatch. If you have an L1 construct, such as `CfnBucket`, you can create a new L2 construct (`Bucket` in this case) to wrap the L1 construct.
+
+This is convenient when you create an L1 resource but want to use it with a construct that requires an L2 resource.
+
+**Tip**
+If you only need permissions or other integrations on an L1 construct, you don’t need to wrap it in an L2. Use [Facades](facades.md) like Grants classes directly on the L1 instead — for example, `BucketGrants.fromBucket(cfnBucket).read(role)`.
+
+You move to the higher abstraction level using a static method on the L2 class called `.fromCfnXxxxx()`--for example, `Bucket.fromCfnBucket()` for Amazon S3 buckets. The L1 resource is the only parameter.
+
+**Example**
+
+```
+b1 = new s3.CfnBucket(this, "buck09", { ... });
+b2 = s3.Bucket.fromCfnBucket(b1);
+```
+
+```
+b1 = new s3.CfnBucket(this, "buck09", { ...} );
+b2 = s3.Bucket.fromCfnBucket(b1);
+```
+
+```
+b1 = s3.CfnBucket(self, "buck09", ...)
+ b2 = s3.from_cfn_bucket(b1)
+```
+
+```
+CfnBucket b1 = CfnBucket.Builder.create(this, "buck09")
+								// ....
+		                        .build();
+IBucket b2 = Bucket.fromCfnBucket(b1);
+```
+
+```
+var b1 = new CfnBucket(this, "buck09", new CfnBucketProps { ... });
+var v2 = Bucket.FromCfnBucket(b1);
+```
+
+L2 constructs created from L1 constructs are proxy objects that refer to the L1 resource, similar to those created from resource names, ARNs, or lookups. Modifications to these constructs do not affect the final synthesized AWS CloudFormation template (since you have the L1 resource, however, you can modify that instead). For more information on proxy objects, see [Referencing resources in your AWS account](resources.md#resources-external).
+
+To avoid confusion, do not create multiple L2 constructs that refer to the same L1 construct. For example, if you extract the `CfnBucket` from a `Bucket` using the technique in the [previous section](#develop-customize-escape-l2), you shouldn’t create a second `Bucket` instance by calling `Bucket.fromCfnBucket()` with that `CfnBucket`. It actually works as you’d expect (only one ` AWS::S3::Bucket` is synthesized) but it makes your code more difficult to maintain.
+
+## Use raw overrides
+<a name="develop-customize-override"></a>
+
+If there are properties that are missing from the L1 construct, you can bypass all typing using raw overrides. This also makes it possible to delete synthesized properties.
+
+Use one of the `addOverride` methods (Python: `add_override`) methods, as shown in the following example.
+
+**Example**
+
+```
+// Get the CloudFormation resource
+const cfnBucket = bucket.node.defaultChild as s3.CfnBucket;
+
+// Use dot notation to address inside the resource template fragment
+cfnBucket.addOverride('Properties.VersioningConfiguration.Status', 'NewStatus');
+cfnBucket.addDeletionOverride('Properties.VersioningConfiguration.Status');
+
+// use index (0 here) to address an element of a list
+cfnBucket.addOverride('Properties.Tags.0.Value', 'NewValue');
+cfnBucket.addDeletionOverride('Properties.Tags.0');
+
+// addPropertyOverride is a convenience function for paths starting with "Properties."
+cfnBucket.addPropertyOverride('VersioningConfiguration.Status', 'NewStatus');
+cfnBucket.addPropertyDeletionOverride('VersioningConfiguration.Status');
+cfnBucket.addPropertyOverride('Tags.0.Value', 'NewValue');
+cfnBucket.addPropertyDeletionOverride('Tags.0');
+```
+
+```
+// Get the CloudFormation resource
+const cfnBucket = bucket.node.defaultChild ;
+
+// Use dot notation to address inside the resource template fragment
+cfnBucket.addOverride('Properties.VersioningConfiguration.Status', 'NewStatus');
+cfnBucket.addDeletionOverride('Properties.VersioningConfiguration.Status');
+
+// use index (0 here) to address an element of a list
+cfnBucket.addOverride('Properties.Tags.0.Value', 'NewValue');
+cfnBucket.addDeletionOverride('Properties.Tags.0');
+
+// addPropertyOverride is a convenience function for paths starting with "Properties."
+cfnBucket.addPropertyOverride('VersioningConfiguration.Status', 'NewStatus');
+cfnBucket.addPropertyDeletionOverride('VersioningConfiguration.Status');
+cfnBucket.addPropertyOverride('Tags.0.Value', 'NewValue');
+cfnBucket.addPropertyDeletionOverride('Tags.0');
+```
+
+```
+# Get the CloudFormation resource
+cfn_bucket = bucket.node.default_child
+
+# Use dot notation to address inside the resource template fragment
+cfn_bucket.add_override("Properties.VersioningConfiguration.Status", "NewStatus")
+cfn_bucket.add_deletion_override("Properties.VersioningConfiguration.Status")
+
+# use index (0 here) to address an element of a list
+cfn_bucket.add_override("Properties.Tags.0.Value", "NewValue")
+cfn_bucket.add_deletion_override("Properties.Tags.0")
+
+# addPropertyOverride is a convenience function for paths starting with "Properties."
+cfn_bucket.add_property_override("VersioningConfiguration.Status", "NewStatus")
+cfn_bucket.add_property_deletion_override("VersioningConfiguration.Status")
+cfn_bucket.add_property_override("Tags.0.Value", "NewValue")
+cfn_bucket.add_property_deletion_override("Tags.0")
+```
+
+```
+// Get the CloudFormation resource
+CfnBucket cfnBucket = (CfnBucket)bucket.getNode().getDefaultChild();
+
+// Use dot notation to address inside the resource template fragment
+cfnBucket.addOverride("Properties.VersioningConfiguration.Status", "NewStatus");
+cfnBucket.addDeletionOverride("Properties.VersioningConfiguration.Status");
+
+// use index (0 here) to address an element of a list
+cfnBucket.addOverride("Properties.Tags.0.Value", "NewValue");
+cfnBucket.addDeletionOverride("Properties.Tags.0");
+
+// addPropertyOverride is a convenience function for paths starting with "Properties."
+cfnBucket.addPropertyOverride("VersioningConfiguration.Status", "NewStatus");
+cfnBucket.addPropertyDeletionOverride("VersioningConfiguration.Status");
+cfnBucket.addPropertyOverride("Tags.0.Value", "NewValue");
+cfnBucket.addPropertyDeletionOverride("Tags.0");
+```
+
+```
+// Get the CloudFormation resource
+var cfnBucket = (CfnBucket)bucket.node.defaultChild;
+
+// Use dot notation to address inside the resource template fragment
+cfnBucket.AddOverride("Properties.VersioningConfiguration.Status", "NewStatus");
+cfnBucket.AddDeletionOverride("Properties.VersioningConfiguration.Status");
+
+// use index (0 here) to address an element of a list
+cfnBucket.AddOverride("Properties.Tags.0.Value", "NewValue");
+cfnBucket.AddDeletionOverride("Properties.Tags.0");
+
+// addPropertyOverride is a convenience function for paths starting with "Properties."
+cfnBucket.AddPropertyOverride("VersioningConfiguration.Status", "NewStatus");
+cfnBucket.AddPropertyDeletionOverride("VersioningConfiguration.Status");
+cfnBucket.AddPropertyOverride("Tags.0.Value", "NewValue");
+cfnBucket.AddPropertyDeletionOverride("Tags.0");
+```
+
+## Use custom resources
+<a name="develop-customize-custom"></a>
+
+If the feature isn’t available through AWS CloudFormation, but only through a direct API call, you must write an AWS CloudFormation Custom Resource to make the API call you need. You can use the AWS CDK to write custom resources and wrap them into a regular construct interface. From the perspective of a consumer of your construct, the experience will feel native.
+
+Building a custom resource involves writing a Lambda function that responds to a resource’s `CREATE`, `UPDATE`, and `DELETE` lifecycle events. If your custom resource needs to make only a single API call, consider using the [AwsCustomResource](https://github.com/awslabs/aws-cdk/tree/master/packages/%40aws-cdk/custom-resources). This makes it possible to perform arbitrary SDK calls during an AWS CloudFormation deployment. Otherwise, you should write your own Lambda function to perform the work you need to get done.
+
+The subject is too broad to cover completely here, but the following links should get you started:
++  [Custom Resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html)
++  [Custom-Resource Example](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/custom-resource/)
++ For a more fully fledged example, see the [DnsValidatedCertificate](https://github.com/awslabs/aws-cdk/blob/master/packages/@aws-cdk/aws-certificatemanager/lib/dns-validated-certificate.ts) class in the CDK standard library. This is implemented as a custom resource.

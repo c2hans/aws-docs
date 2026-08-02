@@ -1,0 +1,342 @@
+---
+source_url: https://docs.aws.amazon.com/ground-station/latest/ug/security.encryption-at-rest-tle-oem.html
+---
+
+# Encryption at rest for TLE and OEM ephemeris data
+<a name="security.encryption-at-rest-tle-oem"></a>
+
+## Key policy requirements for TLE and OEM ephemeris
+<a name="w2aac62c22c29b3"></a>
+
+ To use a customer managed key with ephemeris data, your key policy must grant the following permissions to the AWS Ground Station service:
++  [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) - Creates an access grant on a customer managed key. Grants AWS Ground Station access to perform [grant operations](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html#terms-grant-operations) on the customer managed key for reading and storing encrypted data.
++  [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) - Provides the customer managed key details to allow AWS Ground Station to validate the key before attempting to use the provided key.
+
+ For more information about [Using Grants](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html), see the AWS Key Management Service Developer Guide.
+
+## IAM user permissions for creating ephemeris with customer managed keys
+<a name="w2aac62c22c29b5"></a>
+
+ When AWS Ground Station uses a customer managed key in cryptographic operations, it acts on behalf of the user who is creating the ephemeris resource.
+
+ To create an ephemeris resource using a customer managed key, a user must have permissions to call the following operations on the customer managed key:
++  [https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) - Allows the user to create grants on the customer managed key on behalf of AWS Ground Station.
++  [https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) - Allows the user to view the customer managed key details to validate the key.
+
+ You can specify these required permissions in a key policy, or in an IAM policy if the key policy allows it. These permissions ensure that users can authorize AWS Ground Station to use the customer managed key for encryption operations on their behalf.
+
+## How AWS Ground Station uses grants in AWS KMS for ephemeris
+<a name="w2aac62c22c29b7"></a>
+
+ AWS Ground Station requires a [ key grant](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) to use your customer-managed key.
+
+ When you upload an ephemeris encrypted with a customer managed key, AWS Ground Station creates a key grant on your behalf by sending a [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request to AWS KMS. Grants in AWS KMS are used to give AWS Ground Station access to a AWS KMS key in your account.
+
+This allows AWS Ground Station to do the following:
++  Call [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) to generate an encrypted data key and store it, because the data key isn't immediately used to encrypt.
++ Call [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) to use the stored encrypted data key to access encrypted data.
++ Call [Encrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Encrypt.html) to use the data key to encrypt data.
++ Set up a retiring principal to allow the service to [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html).
+
+ You can revoke access to the grant at any time. If you do, AWS Ground Station won't be able to access any of the data encrypted by the customer managed key, which affects operations that are dependent on that data. For example, if you remove a key grant from an ephemeris currently in use for a contact then AWS Ground Station will be unable to use the provided ephemeris data for pointing the antenna during the contact. This will cause the contact to end in a FAILED state.
+
+## Ephemeris encryption context
+<a name="w2aac62c22c29b9"></a>
+
+ Key grants for encrypting ephemeris resources are bound to a specific satellite ARN.
+
+```
+"encryptionContext": {
+    "aws:groundstation:arn": "arn:aws:groundstation::111122223333:satellite/00a770b0-082d-45a4-80ed-SAMPLE",
+    "aws:s3:arn": "arn:aws:s3:::customerephemerisbucket/0034abcd-12ab-34cd-56ef-123456SAMPLE"
+}
+```
+
+**Note**
+ Key grants are re-used for the same key-satellite pair.
+
+## Using encryption context for monitoring
+<a name="w2aac62c22c29c11"></a>
+
+ When you use a symmetric customer managed key to encrypt your ephemerides, you can also use the encryption context in audit records and logs to identify how the customer managed key is being used. The encryption context also appears in [ logs generated by AWS CloudTrail or Amazon CloudWatch Logs ](https://docs.aws.amazon.com/kms/latest/developerguide/encrypt_context.html).
+
+## Using encryption context to control access to your customer managed key
+<a name="w2aac62c22c29c13"></a>
+
+ You can use the encryption context in key policies and IAM policies as `conditions` to control access to your symmetric customer managed key. You can also use encryption context constraints in a grant.
+
+ AWS Ground Station uses an encryption context constraint in grants to control access to the customer managed key in your account or region. The grant constraint requires that the operations that the grant allows use the specified encryption context.
+
+ The following are example key policy statements to grant access to a customer managed key for a specific encryption context. The condition in this policy statement requires that the grants have an encryption context constraint that specifies the encryption context.
+
+ The following example shows a key policy for ephemeris data bound to a satellite:
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Allow AWS Ground Station to Describe key",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "groundstation.{{us-east-1}}.amazonaws.com"
+            },
+            "Action": "kms:DescribeKey",
+            "Resource": "*"
+        },
+        {
+            "Sid": "Allow AWS Ground Station to Create Grant on key",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "groundstation.{{us-east-1}}.amazonaws.com"
+            },
+            "Action": "kms:CreateGrant",
+            "Resource": "*",
+            "Condition": {
+                "StringEquals": {
+                    "kms:EncryptionContext:aws:groundstation:arn": "arn:aws:groundstation::{{123456789012}}:satellite/{{satellite-id}}"
+                }
+            }
+        }
+    ]
+}
+```
+
+------
+
+## Monitoring your encryption keys for ephemeris
+<a name="w2aac62c22c29c15"></a>
+
+ When you use an AWS Key Management Service customer managed key with your ephemeris resources, you can use [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) or [ Amazon CloudWatch logs ](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) to track requests that AWS Ground Station sends to AWS KMS. The following examples are CloudTrail events for [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html), [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html), [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html), and [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) to monitor AWS KMS operations called by AWS Ground Station to access data encrypted by your customer managed key.
+
+------
+#### [ CreateGrant ]
+
+ When you use an AWS KMS customer managed key to encrypt your ephemeris resources, AWS Ground Station sends a [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) request on your behalf to access the AWS KMS key in your AWS account. The grant that AWS Ground Station creates is specific to the resource associated with the AWS KMS customer managed key. In addition, AWS Ground Station uses the [RetireGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RetireGrant.html) operation to remove a grant when you delete a resource.
+
+ The following example event records the [CreateGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateGrant.html) operation for an ephemeris:
+
+```
+{
+    "eventVersion": "1.08",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "ASIAIOSFODNN7EXAMPLE",
+        "arn": "arn:aws:sts::111122223333:assumed-role/Admin/SampleUser01",
+        "accountId": "111122223333",
+        "accessKeyId": "ASIAIOSFODNN7EXAMPLE",
+        "sessionContext": {
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "ASIAIOSFODNN7EXAMPLE",
+                "arn": "arn:aws:iam::111122223333:role/Admin",
+                "accountId": "111122223333",
+                "userName": "Admin"
+            },
+            "webIdFederationData": {},
+            "attributes": {
+                "creationDate": "2022-02-22T22:22:22Z",
+                "mfaAuthenticated": "false"
+            }
+        },
+        "invokedBy": "AWS Internal"
+    },
+    "eventTime": "2022-02-22T22:22:22Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "CreateGrant",
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "AWS Internal",
+    "userAgent": "ExampleDesktop/1.0 (V1; OS)",
+    "requestParameters": {
+        "operations": [
+            "GenerateDataKeyWithoutPlaintext",
+            "Decrypt",
+            "Encrypt"
+        ],
+        "constraints": {
+            "encryptionContextSubset": {
+                "aws:groundstation:arn": "arn:aws:groundstation::111122223333:satellite/00a770b0-082d-45a4-80ed-SAMPLE"
+            }
+        },
+        "granteePrincipal": "groundstation.us-west-2.amazonaws.com",
+        "retiringPrincipal": "groundstation.us-west-2.amazonaws.com",
+        "keyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+    },
+    "responseElements": {
+        "grantId": "0ab0ac0d0b000f00ea00cc0a0e00fc00bce000c000f0000000c0bc0a0000aaafSAMPLE"
+    },
+    "requestID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "eventID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "readOnly": false,
+    "resources": [
+        {
+            "accountId": "111122223333",
+            "type": "AWS::KMS::Key",
+            "ARN": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111122223333",
+    "eventCategory": "Management"
+}
+```
+
+------
+#### [ DescribeKey ]
+
+ When you use an AWS KMS customer managed key to encrypt your ephemeris resources, AWS Ground Station sends a [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) request on your behalf to validate that the requested key exists in your account.
+
+ The following example event records the [DescribeKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_DescribeKey.html) operation:
+
+```
+{
+    "eventVersion": "1.08",
+    "userIdentity": {
+        "type": "AssumedRole",
+        "principalId": "ASIAIOSFODNN7EXAMPLE",
+        "arn": "arn:aws:sts::111122223333:assumed-role/User/Role",
+        "accountId": "111122223333",
+        "accessKeyId": "ASIAIOSFODNN7EXAMPLE",
+        "sessionContext": {
+            "sessionIssuer": {
+                "type": "Role",
+                "principalId": "ASIAIOSFODNN7EXAMPLE",
+                "arn": "arn:aws:iam::111122223333:role/Role",
+                "accountId": "111122223333",
+                "userName": "User"
+            },
+            "webIdFederationData": {},
+            "attributes": {
+                "creationDate": "2022-02-22T22:22:22Z",
+                "mfaAuthenticated": "false"
+            }
+        },
+        "invokedBy": "AWS Internal"
+    },
+    "eventTime": "2022-02-22T22:22:22Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "DescribeKey",
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "AWS Internal",
+    "userAgent": "AWS Internal",
+    "requestParameters": {
+        "keyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+    },
+    "responseElements": null,
+    "requestID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "eventID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "readOnly": true,
+    "resources": [
+        {
+            "accountId": "111122223333",
+            "type": "AWS::KMS::Key",
+            "ARN": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111122223333",
+    "eventCategory": "Management"
+}
+```
+
+------
+#### [ GenerateDataKey ]
+
+ When you use an AWS KMS customer managed key to encrypt your ephemeris resources, AWS Ground Station sends a [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) request to in order to generate a data key with which to encrypt your data.
+
+ The following example event records the [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) operation for an ephemeris:
+
+```
+{
+    "eventVersion": "1.08",
+    "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "AWS Internal"
+    },
+    "eventTime": "2022-02-22T22:22:22Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "GenerateDataKey",
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "AWS Internal",
+    "userAgent": "AWS Internal",
+    "requestParameters": {
+        "keySpec": "AES_256",
+        "encryptionContext": {
+            "aws:groundstation:arn": "arn:aws:groundstation::111122223333:satellite/00a770b0-082d-45a4-80ed-SAMPLE",
+            "aws:s3:arn": "arn:aws:s3:::customerephemerisbucket/0034abcd-12ab-34cd-56ef-123456SAMPLE"
+        },
+        "keyId": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+    },
+    "responseElements": null,
+    "requestID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "eventID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "readOnly": true,
+    "resources": [
+        {
+            "accountId": "111122223333",
+            "type": "AWS::KMS::Key",
+            "ARN": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111122223333",
+    "sharedEventID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "eventCategory": "Management"
+}
+```
+
+------
+#### [ Decrypt ]
+
+ When you use an AWS KMS customer managed key to encrypt your ephemeris resources, AWS Ground Station uses the [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation to decrypt the ephemeris provided if it is already encrypted with the same customer managed key. For example if an ephemeris is being uploaded from an S3 bucket and is encrypted in that bucket with a given key.
+
+ The following example event records the [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) operation for an ephemeris:
+
+```
+{
+    "eventVersion": "1.08",
+    "userIdentity": {
+        "type": "AWSService",
+        "invokedBy": "AWS Internal"
+    },
+    "eventTime": "2022-02-22T22:22:22Z",
+    "eventSource": "kms.amazonaws.com",
+    "eventName": "Decrypt",
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "AWS Internal",
+    "userAgent": "AWS Internal",
+    "requestParameters": {
+        "encryptionContext": {
+            "aws:groundstation:arn": "arn:aws:groundstation::111122223333:satellite/00a770b0-082d-45a4-80ed-SAMPLE",
+            "aws:s3:arn": "arn:aws:s3:::customerephemerisbucket/0034abcd-12ab-34cd-56ef-123456SAMPLE"
+        },
+        "encryptionAlgorithm": "SYMMETRIC_DEFAULT"
+    },
+    "responseElements": null,
+    "requestID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "eventID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "readOnly": true,
+    "resources": [
+        {
+            "accountId": "111122223333",
+            "type": "AWS::KMS::Key",
+            "ARN": "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-123456SAMPLE"
+        }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": true,
+    "recipientAccountId": "111122223333",
+    "sharedEventID": "ff000af-00eb-00ce-0e00-ea000fb0fba0SAMPLE",
+    "eventCategory": "Management"
+}
+```
+
+------

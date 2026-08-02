@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/advsec02.html
+---
+
+# Data protection
+<a name="advsec02"></a>
+
+| ADVSEC02: How do you protect data in transit? |
+| --- |
+|   |
+
+ Protecting data in transit for advertising workloads is crucial as it involves the constant movement of potentially sensitive information including customer data, campaign metrics, and financial metrics across various portions of the network.
+
+**Topics**
++ [ADVSEC02-BP01 Encrypt DSP to SSP communication in transit using TLS](advsec02-bp01.md)

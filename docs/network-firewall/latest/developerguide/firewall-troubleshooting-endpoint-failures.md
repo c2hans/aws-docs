@@ -1,0 +1,65 @@
+---
+source_url: https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-troubleshooting-endpoint-failures.html
+---
+
+# Troubleshooting firewall endpoint failures in AWS Network Firewall
+<a name="firewall-troubleshooting-endpoint-failures"></a>
+
+If Network Firewall can't create or delete a firewall endpoint in a subnet because of an error, the service displays a *status message* describing how to resolve the issue. Use the status message in the console, API, or CLI to troubleshoot the issues causing the endpoint failure. Depending on the issue, it can take as many as 15 minutes for Network Firewall to display the status message.
+
+------
+#### [ Console ]
+
+**To view the status message for an endpoint defined as a firewall subnet**
+
+1. Sign in to the AWS Management Console and open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the navigation pane, under **Network Firewall**, choose **Firewalls**.
+
+1. In the **Firewall details** tab, in the **Firewall endpoints** section, hover over the **Firewall endpoint status** to view the status message.
+
+**To view the status message for an endpoint defined as a VPC endpoint association**
+
+1. Sign in to the AWS Management Console and open the Amazon VPC console at [https://console.aws.amazon.com/vpc/](https://console.aws.amazon.com/vpc/).
+
+1. In the navigation pane, under **Network Firewall**, choose **VPC endpoint associations**.
+
+1. In the **VPC endpoint associations** page, hover over the status that you're interested in to view the status message.
+
+------
+#### [ API ]
+
+For an endpoint defined as a firewall subnet, the [DescribeFirewall](https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_DescribeFirewall.html) response includes status messages for the endpoints.
+
+For an endpoint defined as a VPC endpoint association, the [DescribeVpcEndpointAssociation](https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_DescribeVpcEndpointAssociation.html) response includes a status message for the endpoint.
+
+------
+#### [ CLI ]
+
+For an endpoint defined as a firewall subnet, the [describe-firewall](https://docs.aws.amazon.com/cli/latest/reference/network-firewall/describe-firewall.html) response includes status messages for the endpoints.
+
+For an endpoint defined as a VPC endpoint association, the [describe-vpc-endpoint-association](https://docs.aws.amazon.com/cli/latest/reference/network-firewall/describe-vpc-endpoint-association.html) response includes a status message for the endpoint.
+
+------
+
+The following table lists the possible causes of the error or failure as indicated in the Network Firewall console or the `StatusMessage` parameter in the API or CLI. Errors indicate an error that you can take actions to fix. Failures indicate a non-recoverable failed state. For errors, after you apply any of the remedial steps, Network Firewall automatically attempts to complete creation or deletion of the firewall or VPC endpoint association.
+
+| Firewall endpoint status | Reason for error or failure | Cause | Solution |
+| --- | --- | --- | --- |
+| Error | AWS Key Management Service encryption key misconfigured | The specified AWS KMS encryption key either doesn't exist in the Region, or you aren't allowed to access it.<br />This can be the result of someone deleting the key or revoking your access to it. The firewall associated with this key is now in a failed state, and traffic directed to the firewall is being dropped.  | Either update the encryption configuration with a new key or delete the firewall. For information about using encryption keys with Network Firewall, see [Encryption at rest with AWS Key Management Service](kms-encryption-at-rest.md).  |
+| Error | AWS Key Management Service encryption key deletion scheduled | The firewall contains an AWS KMS encryption key that's scheduled for deletion. When the key is deleted, the firewall will enter a failed state and drop all traffic directed to it. | To prevent the firewall from entering a failed state, either update the firewall's encryption configuration with a valid key, cancel deletion and re-enable the key, or delete the firewall. For information about using encryption keys with Network Firewall, see [Encryption at rest with AWS Key Management Service](kms-encryption-at-rest.md).  |
+| Error | Generic fail closed | The associated firewall is in a failed state, and traffic directed to the firewall is being dropped. | Delete the firewall. For information, see [Deleting a firewall in AWS Network Firewall](deleting-firewall.md). |
+| Error | Inactive account fail closed | The associated firewall's account is in inactive state. This causes the firewall to enter a failed state and drop all traffic that's directed to it.  | Contact AWS support and reopen the account, then delete the firewall, and then close the account again. For information about deleting a firewall, see see [Deleting a firewall in AWS Network Firewall](deleting-firewall.md). |
+| Error | Endpoint tag removed | Network Firewall can't access the firewall endpoint because the `AWSNetworkFirewallManaged:true` tag was removed from VPC endpoint. Network Firewall automatically adds this tag to the endpoint when the service creates the firewall. | Add the `AWSNetworkFirewallManaged:true` tag back to the firewall endpoint, and try your request again. For information about using tags, see [Tagging AWS Network Firewall resources](tagging.md). |
+| Error | Invalid chain of trust | The firewall's TLS inspection configuration contains a certificate with an invalid chain of trust. | Replace the certificate with a valid certificate. |
+| Error | Invalid root certificate | The firewall's TLS inspection configuration contains a certificate that Network Firewall can't validate. Network Firewall can't validate cross-signed root certificates, such as Let's Encrypt certificates. AWS Certificate Manager public certificates are cross-signed but can be used for TLS inspection. For more information, see [Using SSL/TLS certificates with TLS inspection configurations in AWS Network Firewall](tls-inspection-certificate-requirements.md). | Replace the certificate with a valid certificate. |
+| Error | Invalid chain certificate | The firewall's TLS inspection configuration contains a certificate with an invalid chain, which doesn't support certificate body. For more information, see [Using SSL/TLS certificates with TLS inspection configurations in AWS Network Firewall](tls-inspection-certificate-requirements.md). | Replace the certificate with a valid certificate. |
+| Error | Invalid certificate authority (CA) certificate | The firewall's TLS inspection configuration contains a certificate that isn't usable as a CA certificate. For more information, see [Using SSL/TLS certificates with TLS inspection configurations in AWS Network Firewall](tls-inspection-certificate-requirements.md). | Replace the certificate with a CA certificate. |
+| Error | IP limit exceeded | You've reached the quota of IPv4 or IPv6 CIDR blocks per VPC. For information about CIDR block limits per VPC, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html) in the *Amazon VPC User Guide*. | Either choose a different VPC or reduce the number of CIDR blocks associated with the VPC, and try again. For information about disassociating CIDR blocks, see [Work with VPCs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html) in the *Amazon VPC User Guide*. |
+| Error | Subnet deleted | The specified subnet has been deleted. Your firewalls and VPC endpoint associations must refer to existing subnets. | Enter an existing subnet and try again. |
+| Error | Subnet invalid IP address type | Network Firewall can't create an endpoint using the specified subnet because the subnet is associated with an IPv6 CIDR block that was removed. | Do one of the following actions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-troubleshooting-endpoint-failures.html) |
+| Failed | VPC deleted | The firewall or VPC endpoint association use a VPC that's been deleted. | Delete the VPC endpoint associations or firewall that are using the VPC. Then as needed, create a new firewall and VPC endpoint associations using an existing VPC. For information, see [Managing a firewall and firewall endpoints in AWS Network Firewall](firewall-managing.md). |
+| Error | VPCE limit exceeded | You've reached the quota of VPC endpoints that you can have per VPC. For information about the limits, see [AWS PrivateLink quotas](https://docs.aws.amazon.com/vpc/latest/privatelink/vpc-limits-endpoints.html) in the *AWS PrivateLink Guide*. | Either delete the VPC endpoint association, or delete the firewall and then create the endpoint or VPC endpoint association using another VPC. For information about creating or deleting endpoints, see [Work with VPCs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html) in the Amazon VPC User Guide. |
+| Error | VPCE reference exists | You can't delete the firewall or VPC endpoint association because the specified firewall endpoint is associated to a VPC route table. | Remove the firewall endpoint from your route table and try again. For information about route tables, see [Configure route tables ](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html) in the *Amazon VPC User Guide*. |
+| Error | AWS Transit Gateway not found | The specified transit gateway does not exist or has been deleted. | Verify that the transit gateway exists and that you have the necessary permissions to access it. |
+| Error | AWS Transit Gateway attachment failure | Failed to create the firewall attachment on the transit gateway. | Check the transit gateway configuration and ensure that it can accept new attachments. Verify your permissions and try again. |

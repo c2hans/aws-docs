@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_OcsfIpFilter.html
+---
+
+# OcsfIpFilter
+<a name="API_OcsfIpFilter"></a>
+
+The structure for filtering findings based on IP address attributes.
+
+## Contents
+<a name="API_OcsfIpFilter_Contents"></a>
+
+ ** FieldName **   <a name="securityhub-Type-OcsfIpFilter-FieldName"></a>
+The name of the IP address field to filter on.
+Type: String
+Valid Values: `evidences.dst_endpoint.ip | evidences.src_endpoint.ip`
+Required: No
+
+ ** Filter **   <a name="securityhub-Type-OcsfIpFilter-Filter"></a>
+The IP filter for querying findings.
+Type: [IpFilter](API_IpFilter.md) object
+Required: No
+
+## See Also
+<a name="API_OcsfIpFilter_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/OcsfIpFilter)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/OcsfIpFilter)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/OcsfIpFilter)

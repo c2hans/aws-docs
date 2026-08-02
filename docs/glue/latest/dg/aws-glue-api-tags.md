@@ -1,0 +1,100 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-tags.html
+---
+
+# Tagging APIs in AWS Glue
+<a name="aws-glue-api-tags"></a>
+
+## Data types
+<a name="aws-glue-api-tags-objects"></a>
++ [Tag structure](#aws-glue-api-tags-Tag)
+
+## Tag structure
+<a name="aws-glue-api-tags-Tag"></a>
+
+The `Tag` object represents a label that you can assign to an AWS resource. Each tag consists of a key and an optional value, both of which you define.
+
+For more information about tags, and controlling access to resources in AWS Glue, see [AWS Tags in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/monitor-tags.html) and [Specifying AWS Glue Resource ARNs](https://docs.aws.amazon.com/glue/latest/dg/glue-specifying-resource-arns.html) in the developer guide.
+
+**Fields**
++ `key` – UTF-8 string, not less than 1 or more than 128 bytes long.
+
+  The tag key. The key is required when you create a tag on an object. The key is case-sensitive, and must not contain the prefix aws.
++ `value` – UTF-8 string, not more than 256 bytes long.
+
+  The tag value. The value is optional when you create a tag on an object. The value is case-sensitive, and must not contain the prefix aws.
+
+## Operations
+<a name="aws-glue-api-tags-actions"></a>
++ [TagResource action (Python: tag\_resource)](#aws-glue-api-tags-TagResource)
++ [UntagResource action (Python: untag\_resource)](#aws-glue-api-tags-UntagResource)
++ [GetTags action (Python: get\_tags)](#aws-glue-api-tags-GetTags)
+
+## TagResource action (Python: tag\_resource)
+<a name="aws-glue-api-tags-TagResource"></a>
+
+Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see [AWS Tags in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/monitor-tags.html).
+
+In addition to the tagging permissions to call tag related APIs, you also need the `glue:GetConnection` permission to call tagging APIs on connections, and the `glue:GetDatabase` permission to call tagging APIs on databases.
+
+**Request**
++ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
+
+  The ARN of the AWS Glue resource to which to add the tags. For more information about AWS Glue resource ARNs, see the [AWS Glue ARN string pattern](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-common.html#aws-glue-api-regex-aws-glue-arn-id).
++ `TagsToAdd` – *Required:* A map array of key-value pairs, not more than 50 pairs.
+
+  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long.
+
+  Each value is a UTF-8 string, not more than 256 bytes long.
+
+  Tags to add to this resource.
+
+**Response**
++ *No Response parameters.*
+
+**Errors**
++ `ResourceNotFoundException`
+
+## UntagResource action (Python: untag\_resource)
+<a name="aws-glue-api-tags-UntagResource"></a>
+
+Removes the specified tags from an integration resource.
+
+**Request**
++ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
+
+  The Amazon Resource Name (ARN) for the integration resource.
++ `TagsToRemove` – *Required:* An array of UTF-8 strings, not more than 50 strings.
+
+  A list of metadata tags to be removed from the resource.
+
+**Response**
++ *No Response parameters.*
+
+**Errors**
++ `ResourceNotFoundException`
+
+## GetTags action (Python: get\_tags)
+<a name="aws-glue-api-tags-GetTags"></a>
+
+Retrieves a list of tags associated with a resource.
+
+**Request**
++ `ResourceArn` – *Required:* UTF-8 string, not less than 1 or more than 10240 bytes long, matching the [Custom string pattern #50](aws-glue-api-common.md#regex_50).
+
+  The Amazon Resource Name (ARN) of the resource for which to retrieve tags.
+
+**Response**
++ `Tags` – A map array of key-value pairs, not more than 50 pairs.
+
+  Each key is a UTF-8 string, not less than 1 or more than 128 bytes long.
+
+  Each value is a UTF-8 string, not more than 256 bytes long.
+
+  The requested tags.
+
+**Errors**
++ `InvalidInputException`
++ `InternalServiceException`
++ `OperationTimeoutException`
++ `EntityNotFoundException`

@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_SystemEndpointAttributes.html
+---
+
+# SystemEndpointAttributes
+<a name="API_amazon-q-connect_SystemEndpointAttributes"></a>
+
+The system endpoint attributes that are used with the message template.
+
+## Contents
+<a name="API_amazon-q-connect_SystemEndpointAttributes_Contents"></a>
+
+ ** address **   <a name="connect-Type-amazon-q-connect_SystemEndpointAttributes-address"></a>
+The customer's phone number if used with `customerEndpoint`, or the number the customer dialed to call your contact center if used with `systemEndpoint`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 32767.
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_SystemEndpointAttributes_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/SystemEndpointAttributes)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/SystemEndpointAttributes)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/SystemEndpointAttributes)

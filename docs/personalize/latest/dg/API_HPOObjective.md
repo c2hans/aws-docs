@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/personalize/latest/dg/API_HPOObjective.html
+---
+
+# HPOObjective
+<a name="API_HPOObjective"></a>
+
+The metric to optimize during hyperparameter optimization (HPO).
+
+**Note**
+Amazon Personalize doesn't support configuring the `hpoObjective` at this time.
+
+## Contents
+<a name="API_HPOObjective_Contents"></a>
+
+ ** metricName **   <a name="personalize-Type-HPOObjective-metricName"></a>
+The name of the metric.
+Type: String
+Length Constraints: Maximum length of 256.
+Required: No
+
+ ** metricRegex **   <a name="personalize-Type-HPOObjective-metricRegex"></a>
+A regular expression for finding the metric in the training job logs.
+Type: String
+Length Constraints: Maximum length of 256.
+Required: No
+
+ ** type **   <a name="personalize-Type-HPOObjective-type"></a>
+The type of the metric. Valid values are `Maximize` and `Minimize`.
+Type: String
+Length Constraints: Maximum length of 256.
+Required: No
+
+## See Also
+<a name="API_HPOObjective_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/personalize-2018-05-22/HPOObjective)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/personalize-2018-05-22/HPOObjective)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/personalize-2018-05-22/HPOObjective)

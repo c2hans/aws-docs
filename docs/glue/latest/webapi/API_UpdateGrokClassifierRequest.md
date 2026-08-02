@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/webapi/API_UpdateGrokClassifierRequest.html
+---
+
+# UpdateGrokClassifierRequest
+<a name="API_UpdateGrokClassifierRequest"></a>
+
+Specifies a grok classifier to update when passed to `UpdateClassifier`.
+
+## Contents
+<a name="API_UpdateGrokClassifierRequest_Contents"></a>
+
+ ** Name **   <a name="Glue-Type-UpdateGrokClassifierRequest-Name"></a>
+The name of the `GrokClassifier`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 255.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+Required: Yes
+
+ ** Classification **   <a name="Glue-Type-UpdateGrokClassifierRequest-Classification"></a>
+An identifier of the data format that the classifier matches, such as Twitter, JSON, Omniture logs, Amazon CloudWatch Logs, and so on.
+Type: String
+Required: No
+
+ ** CustomPatterns **   <a name="Glue-Type-UpdateGrokClassifierRequest-CustomPatterns"></a>
+Optional custom grok patterns used by this classifier.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 16000.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\n\t]*`
+Required: No
+
+ ** GrokPattern **   <a name="Glue-Type-UpdateGrokClassifierRequest-GrokPattern"></a>
+The grok pattern used by this classifier.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\r\t]*`
+Required: No
+
+## See Also
+<a name="API_UpdateGrokClassifierRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/glue-2017-03-31/UpdateGrokClassifierRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/glue-2017-03-31/UpdateGrokClassifierRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/glue-2017-03-31/UpdateGrokClassifierRequest)

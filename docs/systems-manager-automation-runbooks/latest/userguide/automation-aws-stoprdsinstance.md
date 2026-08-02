@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-aws-stoprdsinstance.html
+---
+
+# `AWS-StopRdsInstance`
+<a name="automation-aws-stoprdsinstance"></a>
+
+ **Description**
+
+Stop an Amazon Relational Database Service (Amazon RDS) instance.
+
+ [Run this Automation (console)](https://console.aws.amazon.com/systems-manager/automation/execute/AWS-StopRdsInstance)
+
+**Document type**
+
+Automation
+
+**Owner**
+
+Amazon
+
+**Platforms**
+
+Databases
+
+**Parameters**
++ AutomationAssumeRole
+
+  Type: String
+
+  Description: (Optional) The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that allows Systems Manager Automation to perform the actions on your behalf. If no role is specified, Systems Manager Automation uses the permissions of the user that starts this runbook.
++ InstanceId
+
+  Type: String
+
+  Description: (Required) ID of the Amazon RDS instance to stop.

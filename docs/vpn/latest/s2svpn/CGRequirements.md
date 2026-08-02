@@ -1,0 +1,42 @@
+---
+source_url: https://docs.aws.amazon.com/vpn/latest/s2svpn/CGRequirements.html
+---
+
+# Requirements for an AWS Site-to-Site VPN customer gateway device
+<a name="CGRequirements"></a>
+
+ AWS supports a number of Site-to-Site VPN customer gateway devices, which we provide downloadable configuration files for. For a list of supported devices, and the steps to download the configuration files, see [Static and dynamic routing configuration files](example-configuration-files.md).
+
+If you have a device that isn't in the list of supported devices, the following section describes the requirements that the device must meet in order to establish a Site-to-Site VPN connection.
+
+There are four main parts to the configuration of your customer gateway device. The following symbols represent each part of the configuration.
+
+|  |  |
+| --- |--- |
+|  ![Internet key exchange symbol](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/IKE.png)  | Internet key exchange (IKE) security association. This is required to exchange keys used to establish the IPsec security association. |
+|  ![Internet Protocol security](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/IPsec.png)  | IPsec security association. This handles the tunnel's encryption, authentication, and so on. |
+|  ![Tunnel interface symbol](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/Tunnel.png)  | Tunnel interface. This receives traffic going to and from the tunnel. |
+|  ![Border Gateway Protocol](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/BGP.png)  | (Optional) Border Gateway Protocol (BGP) peering. For devices that use BGP, this exchanges routes between the customer gateway device and the virtual private gateway. |
+
+The following table lists the requirements for the customer gateway device, the related RFC (for reference), and comments about the requirements.
+
+Each VPN connection consists of two separate tunnels. Each tunnel contains an IKE security association, an IPsec security association, and a BGP peering. You are limited to one unique security association (SA) pair per tunnel (one inbound and one outbound), and therefore two unique SA pairs in total for two tunnels (four SAs). Some devices use a policy-based VPN and create as many SAs as ACL entries. Therefore, you might need to consolidate your rules and then filter so that you don't permit unwanted traffic.
+
+By default, the VPN tunnel comes up when traffic is generated and the IKE negotiation is initiated from your side of the VPN connection. You can configure the VPN connection to initiate the IKE negotiation from the AWS side of the connection instead. For more information, see [AWS Site-to-Site VPN tunnel initiation options](initiate-vpn-tunnels.md).
+
+VPN endpoints support rekey and can start renegotiations when phase 1 is about to expire if the customer gateway device hasn't sent any renegotiation traffic.
+
+|  Requirement  |  RFC |  Comments |
+| --- | --- | --- |
+| Establish IKE security association <br /> ![IKE](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/IKE.png)  | [RFC 2409](https://datatracker.ietf.org/doc/html/rfc2409) <br />[RFC 7296](https://datatracker.ietf.org/doc/html/rfc7296) | The IKE security association is established first between the virtual private gateway and the customer gateway device using a pre-shared key or a private certificate that uses AWS Private Certificate Authority as the authenticator. When established, IKE negotiates an ephemeral key to secure future IKE messages. There must be complete agreement among the parameters, including encryption and authentication parameters.<br />When you create a VPN connection in AWS, you can specify your own pre-shared key for each tunnel, or you can let AWS generate one for you. Alternatively, you can specify the private certificate using AWS Private Certificate Authority to use for your customer gateway device. For more information, about configuring VPN tunnels see [Tunnel options for your AWS Site-to-Site VPN connection](VPNTunnels.md).<br />The following versions are supported: IKEv1 and IKEv2.<br />We support Main mode only with IKEv1.<br />The Site-to-Site VPN service is a route-based solution. If you are using a policy-based configuration, you must limit your configuration to a single security association (SA). |
+| Establish IPsec security associations in Tunnel mode<br /> ![IPsec](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/IPsec.png)  |  [RFC 4301](https://datatracker.ietf.org/doc/html/rfc4301)  | Using the IKE ephemeral key, keys are established between the virtual private gateway and the customer gateway device to form an IPsec security association (SA). Traffic between gateways is encrypted and decrypted using this SA. The ephemeral keys used to encrypt traffic within the IPsec SA are automatically rotated by IKE on a regular basis to ensure confidentiality of communications. |
+| Use the AES 128-bit encryption or AES 256-bit encryption function |  [RFC 3602](https://datatracker.ietf.org/doc/html/rfc3602)  | The encryption function is used to ensure privacy for both IKE and IPsec security associations. |
+| Use the SHA-1 or SHA-2 (256) hashing function |  [RFC 2404](https://datatracker.ietf.org/doc/html/rfc2404)  | This hashing function is used to authenticate both IKE and IPsec security associations. |
+| Use Diffie-Hellman Perfect Forward Secrecy. |  [RFC 2409](https://datatracker.ietf.org/doc/html/rfc2409)  | IKE uses Diffie-Hellman to establish ephemeral keys to secure all communication between customer gateway devices and virtual private gateways. <br />The following groups are supported:[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpn/latest/s2svpn/CGRequirements.html) |
+| (Dynamically-routed VPN connections) Use IPsec Dead Peer Detection |  [RFC 3706](https://datatracker.ietf.org/doc/html/rfc3706)  | Dead Peer Detection enables the VPN devices to rapidly identify when a network condition prevents delivery of packets across the internet. When this occurs, the gateways delete the security associations and attempt to create new associations. During this process, the alternate IPsec tunnel is used if possible. |
+| (Dynamically-routed VPN connections) Bind tunnel to logical interface (route-based VPN)<br /> ![Tunnel](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/Tunnel.png)  |  None  | Your device must be able to bind the IPsec tunnel to a logical interface. The logical interface contains an IP address that is used to establish BGP peering to the virtual private gateway. This logical interface should perform no additional encapsulation (for example, GRE or IP in IP). Your interface should be set to a 1399 byte Maximum Transmission Unit (MTU).  |
+| (Dynamically-routed VPN connections) Establish BGP peerings<br /> ![BGP](http://docs.aws.amazon.com/vpn/latest/s2svpn/images/BGP.png)  |  [RFC 4271](https://datatracker.ietf.org/doc/html/rfc4271)  | BGP is used to exchange routes between the customer gateway device and the virtual private gateway for devices that use BGP. All BGP traffic is encrypted and transmitted via the IPsec Security Association. BGP is required for both gateways to exchange the IP prefixes that are reachable through the IPsec SA. |
+
+An AWS VPN connection does not support Path MTU Discovery ([RFC 1191](https://datatracker.ietf.org/doc/html/rfc1191)).
+
+If you have a firewall between your customer gateway device and the internet, see [Firewall rules for an AWS Site-to-Site VPN customer gateway device](FirewallRules.md).

@@ -1,0 +1,47 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_STV_MV_INFO.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# STV\_MV\_INFO
+<a name="r_STV_MV_INFO"></a>
+
+The STV\_MV\_INFO table contains a row for every materialized view, whether the data is stale, and state information.
+
+For more information about materialized views, see [Materialized views in Amazon Redshift](materialized-view-overview.md).
+
+STV\_MV\_INFO is visible to all users. Superusers can see all rows; regular users can only list materialized views residing in schemas they have access to. For more information, see [Visibility of data insystem tables and views](https://docs.aws.amazon.com/redshift/latest/dg/cm_chap_system-tables.html#c_visibility-of-data).
+
+## Table columns
+<a name="r_STV_MV_INFO-table-columns"></a>
+
+| Column name  | Data type  | Description  |
+| --- | --- | --- |
+| db\_name  | char(128)  | The database that contains the materialized view.  |
+| schema  | char(128)  | The schema of the database.  |
+| name  | char(128)  | The materialized view name.  |
+| updated\_upto\_xid  | bigint  | Reserved for internal use.  |
+| is\_stale  | char(1)  | A `t` indicates that the materialized view is stale. A stale materialized view is one where the base tables have been updated but the materialized view hasn't been refreshed. An `f` indicates that the materialized view is up-to-date with the base table changes. A `u` indicates unknown staleness (e.g., in case of MVs on plain external tables). The information might not be accurate if a refresh hasn't been run since the last restart. <br /> The `is_stale` column is always set to `t` if the materialized view depends on a mutable function. A mutable function returns a different result when given the same argument or arguments. For instance, most functions that return a date or timestamp are mutable functions.  |
+| owner\_user\_name  | char(128)  | The user who owns the materialized view.  |
+| state  | integer  | The state of the materialized view as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STV_MV_INFO.html) |
+| autorewrite | char(1) | A t indicates that the materialized view is eligible for automatic rewriting of queries.  |
+| autorefresh | char(1) | A t indicates that the materialized view can be automatically refreshed.  |
+
+## Sample query
+<a name="r_STV_MV_INFO-sample-query"></a>
+
+To view the state of all materialized views, run the following query.
+
+```
+select * from stv_mv_info;
+```
+
+This query returns the following sample output.
+
+```
+ db_name |       schema       |   name  | updated_upto_xid | is_stale | owner_user_name | state | autorefresh | autorewrite
+---------+--------------------+---------+------------------+----------+-----------------+-------+-------------+------------
+ dev     | test_ivm_setup     | mv      |             1031 | f        | catch-22        |     1 |           1 |           0
+ dev     | test_ivm_setup     | old_mv  |              988 | t        | lotr            |     1 |           0 |           1
+```

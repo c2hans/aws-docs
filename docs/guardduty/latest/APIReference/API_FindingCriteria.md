@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/guardduty/latest/APIReference/API_FindingCriteria.html
+---
+
+# FindingCriteria
+<a name="API_FindingCriteria"></a>
+
+Contains information about the criteria used for querying findings.
+
+## Contents
+<a name="API_FindingCriteria_Contents"></a>
+
+ ** criterion **   <a name="guardduty-Type-FindingCriteria-criterion"></a>
+Represents a map of finding properties that match specified conditions and values when querying findings.
+Type: String to [Condition](API_Condition.md) object map
+Required: No
+
+## See Also
+<a name="API_FindingCriteria_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/guardduty-2017-11-28/FindingCriteria)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/guardduty-2017-11-28/FindingCriteria)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/guardduty-2017-11-28/FindingCriteria)

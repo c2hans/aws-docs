@@ -1,0 +1,72 @@
+---
+source_url: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-property-api-cognitoauthorizer.html
+---
+
+# CognitoAuthorizer
+<a name="sam-property-api-cognitoauthorizer"></a>
+
+Define a Amazon Cognito User Pool authorizer.
+
+For more information and examples, see [Control API access with your AWS SAM template](serverless-controlling-access-to-apis.md).
+
+## Syntax
+<a name="sam-property-api-cognitoauthorizer-syntax"></a>
+
+To declare this entity in your AWS Serverless Application Model (AWS SAM) template, use the following syntax.
+
+### YAML
+<a name="sam-property-api-cognitoauthorizer-syntax.yaml"></a>
+
+```
+  [AuthorizationScopes](#sam-api-cognitoauthorizer-authorizationscopes): {{List}}
+  [Identity](#sam-api-cognitoauthorizer-identity): {{CognitoAuthorizationIdentity}}
+  [UserPoolArn](#sam-api-cognitoauthorizer-userpoolarn): {{String | List}}
+```
+
+## Properties
+<a name="sam-property-api-cognitoauthorizer-properties"></a>
+
+ `AuthorizationScopes`   <a name="sam-api-cognitoauthorizer-authorizationscopes"></a>
+List of authorization scopes for this authorizer.
+*Type*: List
+*Required*: No
+*CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
+
+ `Identity`   <a name="sam-api-cognitoauthorizer-identity"></a>
+This property can be used to specify an `IdentitySource` in an incoming request for an authorizer.
+*Type*: [CognitoAuthorizationIdentity](sam-property-api-cognitoauthorizationidentity.md)
+*Required*: No
+*CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
+
+ `UserPoolArn`   <a name="sam-api-cognitoauthorizer-userpoolarn"></a>
+The Amazon Cognito user pool ARN(s) to use for authorization. Specify a single ARN as a string, or multiple ARNs as a list to use multiple user pools.
+*Type*: String \| List
+*Required*: Yes
+*CloudFormation compatibility*: This property is unique to AWS SAM and doesn't have an CloudFormation equivalent.
+
+## Examples
+<a name="sam-property-api-cognitoauthorizer--examples"></a>
+
+### CognitoAuth
+<a name="sam-property-api-cognitoauthorizer--examples--cognitoauth"></a>
+
+Cognito Auth Example
+
+#### YAML
+<a name="sam-property-api-cognitoauthorizer--examples--cognitoauth--yaml"></a>
+
+```
+Auth:
+  Authorizers:
+    MyCognitoAuth:
+      AuthorizationScopes:
+        - scope1
+        - scope2
+      UserPoolArn:
+        Fn::GetAtt:
+          - MyCognitoUserPool
+          - Arn
+      Identity:
+        Header: MyAuthorizationHeader
+        ValidationExpression: myauthvalidationexpression
+```

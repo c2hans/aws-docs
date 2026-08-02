@@ -1,0 +1,61 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ses_code_examples.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Code examples for Amazon SES using AWS SDKs
+<a name="ses_code_examples"></a>
+
+The following code examples show you how to use Amazon Simple Email Service with an AWS software development kit (SDK).
+
+*Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
+
+*Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
+
+**More resources**
++  **[ Amazon SES Developer Guide](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html)** – More information about Amazon SES.
++ **[Amazon SES API Reference](https://docs.aws.amazon.com/ses/latest/APIReference/Welcome.html)** – Details about all available Amazon SES actions.
++ **[AWS Developer Center](https://aws.amazon.com/developer/code-examples/?awsf.sdk-code-examples-product=product%23ses)** – Code examples that you can filter by category or full-text search.
++ **[AWS SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples)** – GitHub repo with complete code in preferred languages. Includes instructions for setting up and running the code.
+
+**Contents**
++ [Basics](ses_code_examples_basics.md)
+  + [Actions](ses_code_examples_actions.md)
+    + [`CreateReceiptFilter`](ses_example_ses_CreateReceiptFilter_section.md)
+    + [`CreateReceiptRule`](ses_example_ses_CreateReceiptRule_section.md)
+    + [`CreateReceiptRuleSet`](ses_example_ses_CreateReceiptRuleSet_section.md)
+    + [`CreateTemplate`](ses_example_ses_CreateTemplate_section.md)
+    + [`DeleteIdentity`](ses_example_ses_DeleteIdentity_section.md)
+    + [`DeleteReceiptFilter`](ses_example_ses_DeleteReceiptFilter_section.md)
+    + [`DeleteReceiptRule`](ses_example_ses_DeleteReceiptRule_section.md)
+    + [`DeleteReceiptRuleSet`](ses_example_ses_DeleteReceiptRuleSet_section.md)
+    + [`DeleteTemplate`](ses_example_ses_DeleteTemplate_section.md)
+    + [`DescribeReceiptRuleSet`](ses_example_ses_DescribeReceiptRuleSet_section.md)
+    + [`GetIdentityVerificationAttributes`](ses_example_ses_GetIdentityVerificationAttributes_section.md)
+    + [`GetSendQuota`](ses_example_ses_GetSendQuota_section.md)
+    + [`GetSendStatistics`](ses_example_ses_GetSendStatistics_section.md)
+    + [`GetTemplate`](ses_example_ses_GetTemplate_section.md)
+    + [`ListIdentities`](ses_example_ses_ListIdentities_section.md)
+    + [`ListReceiptFilters`](ses_example_ses_ListReceiptFilters_section.md)
+    + [`ListTemplates`](ses_example_ses_ListTemplates_section.md)
+    + [`SendBulkTemplatedEmail`](ses_example_ses_SendBulkTemplatedEmail_section.md)
+    + [`SendEmail`](ses_example_ses_SendEmail_section.md)
+    + [`SendRawEmail`](ses_example_ses_SendRawEmail_section.md)
+    + [`SendTemplatedEmail`](ses_example_ses_SendTemplatedEmail_section.md)
+    + [`UpdateTemplate`](ses_example_ses_UpdateTemplate_section.md)
+    + [`VerifyDomainIdentity`](ses_example_ses_VerifyDomainIdentity_section.md)
+    + [`VerifyEmailIdentity`](ses_example_ses_VerifyEmailIdentity_section.md)
++ [Scenarios](ses_code_examples_scenarios.md)
+  + [Build an Amazon Transcribe streaming app](ses_example_cross_TranscriptionStreamingApp_section.md)
+  + [Copy email and domain identities across Regions](ses_example_ses_Scenario_ReplicateIdentities_section.md)
+  + [Create a web application to track DynamoDB data](ses_example_cross_DynamoDBDataTracker_section.md)
+  + [Create a web application to track Amazon Redshift data](ses_example_cross_RedshiftDataTracker_section.md)
+  + [Create an Aurora Serverless work item tracker](ses_example_cross_RDSDataTracker_section.md)
+  + [Detect PPE in images](ses_example_cross_RekognitionPhotoAnalyzerPPE_section.md)
+  + [Detect objects in images](ses_example_cross_RekognitionPhotoAnalyzer_section.md)
+  + [Detect people and objects in a video](ses_example_cross_RekognitionVideoDetection_section.md)
+  + [Generate credentials to connect to an SMTP endpoint](ses_example_ses_Scenario_GenerateSmtpCredentials_section.md)
+  + [Setting up email sending services](ses_example_ses_GettingStarted_033_section.md)
+  + [Use Step Functions to invoke Lambda functions](ses_example_cross_ServerlessWorkflows_section.md)
+  + [Verify an email identity and send messages](ses_example_ses_Scenario_SendEmail_section.md)

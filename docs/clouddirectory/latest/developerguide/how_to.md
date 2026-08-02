@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/clouddirectory/latest/developerguide/how_to.html
+---
+
+Amazon Cloud Directory is no longer be open to new customers. For alternatives to Cloud Directory, explore [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) and [Amazon Neptune](https://aws.amazon.com/neptune/). If you need help choosing the right alternative for your use case, or for any other questions, contact [AWS Support](https://aws.amazon.com/support/).
+
+# How To Administer Cloud Directory
+<a name="how_to"></a>
+
+This section lists all of the procedures for operating and maintaining a Cloud Directory environment.
+
+**Topics**
++ [Manage Your Directories](how_to_manage_directory.md)
++ [Manage Your Schema](how_to_manage_schema.md)

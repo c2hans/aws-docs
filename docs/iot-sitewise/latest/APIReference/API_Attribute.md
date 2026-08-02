@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Attribute.html
+---
+
+# Attribute
+<a name="API_Attribute"></a>
+
+Contains an asset attribute property. For more information, see [Attributes](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/asset-properties.html#attributes) in the * AWS IoT SiteWise User Guide*.
+
+## Contents
+<a name="API_Attribute_Contents"></a>
+
+ ** defaultValue **   <a name="iotsitewise-Type-Attribute-defaultValue"></a>
+The default value of the asset model property attribute. All assets that you create from the asset model contain this attribute value. You can update an attribute's value after you create an asset. For more information, see [Updating attribute values](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/update-attribute-values.html) in the * AWS IoT SiteWise User Guide*.
+Type: String
+Pattern: `[^\u0000-\u001F\u007F]+`
+Required: No
+
+## See Also
+<a name="API_Attribute_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/iotsitewise-2019-12-02/Attribute)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/iotsitewise-2019-12-02/Attribute)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/iotsitewise-2019-12-02/Attribute)

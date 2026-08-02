@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-at-the-edge-on-aws/aws-cloudformation-template.html
+---
+
+# AWS CloudFormation template
+<a name="aws-cloudformation-template"></a>
+
+ You can download the CloudFormation template for this solution before deploying it.
+
+[https://s3.amazonaws.com/solutions-reference/secure-media-delivery-at-the-edge-on-aws/latest/secure-media-delivery-at-the-edge-on-aws.template](https://s3.amazonaws.com/solutions-reference/secure-media-delivery-at-the-edge-on-aws/latest/secure-media-delivery-at-the-edge-on-aws.template) **secure-media-delivery-at-the-edge-on-aws.template** - Use this template to launch the solution and all associated components. The default configuration deploys the core and supporting services found in the [AWS services in this solution](architecture-details.md#aws-services) section, but you can customize the template to meet your specific needs. Use the CDK deployment model if you want to deploy the auto session revocation module.
+
+**Note**
+ AWS CloudFormation resources are created from AWS CDK constructs.
+
+**Note**
+ If you have previously deployed this solution, see [Update the solution](update-the-solution.md) for update instructions.

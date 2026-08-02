@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_QueryCompileErrorLocation.html
+---
+
+# QueryCompileErrorLocation
+<a name="API_QueryCompileErrorLocation"></a>
+
+Reserved.
+
+## Contents
+<a name="API_QueryCompileErrorLocation_Contents"></a>
+
+ ** endCharOffset **   <a name="CWL-Type-QueryCompileErrorLocation-endCharOffset"></a>
+Reserved.
+Type: Integer
+Required: No
+
+ ** startCharOffset **   <a name="CWL-Type-QueryCompileErrorLocation-startCharOffset"></a>
+Reserved.
+Type: Integer
+Required: No
+
+## See Also
+<a name="API_QueryCompileErrorLocation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/logs-2014-03-28/QueryCompileErrorLocation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/logs-2014-03-28/QueryCompileErrorLocation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/logs-2014-03-28/QueryCompileErrorLocation)

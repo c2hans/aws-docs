@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/medialive/latest/ug/udp-streams.html
+---
+
+# Fields for the video, audio, and captions stream (encode)
+<a name="udp-streams"></a>
+
+The following fields relate to the encoding of the video, audio, and captions streams (encodes) in the output.
++ **Stream settings** section
+
+For information about creating encodes, see the following sections:
++ [Set up the video encode](creating-a-channel-step6.md)
++ [Set up the audio encodes](creating-a-channel-step7.md)
++  [Set up the captions encodes](creating-a-channel-step8.md)

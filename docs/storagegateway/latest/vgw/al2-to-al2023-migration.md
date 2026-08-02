@@ -1,0 +1,81 @@
+---
+source_url: https://docs.aws.amazon.com/storagegateway/latest/vgw/al2-to-al2023-migration.html
+---
+
+# Storage Gateway AL2 to AL2023 Migration Campaign
+<a name="al2-to-al2023-migration"></a>
+
+AWS is transitioning Storage Gateway appliance operating system (OS) from Amazon Linux 2 to AL2023 to enable new hybrid cloud storage features and maintain optimal performance and security standards. This transition will impact all AL2-based Storage Gateway appliance versions S3 File Gateway Version 1.x, Tape Gateway Version 2.x, and Volume Gateway Version 2.x. You are required to complete the migration before June 30, 2026, as AWS will discontinue supporting these systems thereafter.
+
+You can identify whether your gateways need migration through multiple methods. The AWS Console displays a deprecation message in the gateway's **Details** tab for affected gateways. Additionally, the [https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeGatewayInformation.html](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeGatewayInformation.html) API provides programmatic access to check the deprecation date field. The AWS Health Dashboard lists impacted gateways under the **Affected resources** tab. However, the list is not updated immediately after a gateway is migrated. The migration process itself is designed with data safety as the priority, storing a copy of on-premises gateway VM data in AWS before migration begins to enable easy recovery if needed.
+
+AWS provides comprehensive migration guides specific to each gateway type. After completing migration, you should verify success by checking that deprecation warnings no longer appear in the AWS Console's gateway **Details** tab, or by using the [https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeGatewayInformation.html](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_DescribeGatewayInformation.html) API to confirm the deprecation date field is absent. Critically, you must not revert to your AL2 gateway after successfully migrating to AL2023, as reverting may cause operational issues.
+
+Throughout the migration period, AWS will send monthly reminder notifications via email, and the AWS Health Dashboard's **Scheduled changes** tab to help you plan and complete your migrations. If you encounter issues during migration, contact [AWS Support](https://console.aws.amazon.com/support/home) for assistance and troubleshooting guidance.
+
+## Quick Links and Resources
+<a name="quick-links-resources"></a>
+
+### Gateway Version Migration Reference
+<a name="gateway-version-reference"></a>
+
+Understanding which gateways require migration is straightforward based on the gateway software version number. It's important to note that even recently activated gateways based on Amazon Linux 2 OS still require migration by June 30, 2026.
+
+| Gateway Type | AL2 Version (Requires Migration) | AL2023 Version (Target) |
+| --- | --- | --- |
+| S3 File Gateway | Version 1.x | Version 2.x |
+| Tape Gateway | Version 2.x | Version 3.x |
+| Volume Gateway | Version 2.x | Version 3.x |
+
+### Migration Timeline
+<a name="migration-timeline"></a>
+
+The migration timeline includes several critical milestones:
++ **October 28, 2025:** All new gateway deployments initiated from Storage Gateway console will default to AL2023 images.
++ **January 5, 2026:** AWS will begin restricting new AL2 gateway activations.
++ **June 30, 2026:** AL2-based gateways will stop receiving software updates and AWS support will end. After this date, while you can continue using AL2-based appliances, they will receive no new software updates, security patches, or bug fixes, and maintaining these systems becomes your sole responsibility.
+
+### Pre-migration Checklist
+<a name="pre-migration-checklist"></a>
+
+**Important**
+Before beginning the migration process, verify the following requirements to ensure a successful migration.
++ **Use the latest gateway image.** When creating the new Storage Gateway VM:
+  + For Amazon EC2 gateways, use the latest AMI from the public SSM parameter or use the Storage Gateway console.
+  + For on-premises gateways, download the latest VM image from the Storage Gateway console.
++ **Match the hardware configuration.** Ensure the new gateway VM uses the same CPU, memory, and network throughput as the existing gateway. For EC2 gateways, use the same instance type.
++ **Verify root disk sizing.** The new gateway VM's root disk must be at least the same size as the existing gateway's root disk. If the existing root disk has less than 20 GB of available space, size the new root disk to: (existing root disk size) \+ (20 GB minus available space on existing root disk).
++ **Apply pending software updates.** Before starting migration, apply any pending software updates on the existing gateway. Open the **Storage Gateway** console, select your gateway, and choose **Update Now** if available.
++ **Verify network connectivity from the new gateway.** Before initiating migration, confirm that the new gateway VM can reach:
+  + Storage Gateway service endpoints (or your VPC endpoints).
+  + Use the gateway local console's network connectivity test to validate all endpoints pass.
+
+### Migration Guides
+<a name="migration-guides-links"></a>
++ [S3 File Gateway Migration Guide](https://docs.aws.amazon.com/filegateway/latest/files3/migrate-data.html)
++ [Tape Gateway Migration Guide](https://docs.aws.amazon.com/storagegateway/latest/tgw/migrate-data.html)
++ [Volume Gateway Migration Guide](https://docs.aws.amazon.com/storagegateway/latest/vgw/migrate-data.html)
+
+### Support and Monitoring
+<a name="support-monitoring"></a>
++ [Storage Gateway Console](https://console.aws.amazon.com/storagegateway/)
++ [AWS Personal Health Dashboard](https://phd.aws.amazon.com/)
++ [Contact AWS Support](https://console.aws.amazon.com/support/home)
+
+### Frequently Asked Questions
+<a name="migration-faq"></a>
+
+**What happens to my data during migration?**
+Your data remains durably stored in AWS throughout the migration process. The migration procedure includes storing a copy of your on-premises gateway VM data in AWS for easy recovery if needed.
+
+**Will there be downtime during migration?**
+Migration timing and any potential service interruption depend on your gateway type and configuration. Review the gateway-specific migration guide for your deployment for detailed information.
+
+**What happens if I don't migrate by June 30, 2026?**
+Your gateway will continue to operate normally, and data will remain safely stored in AWS, but you must migrate affected gateways by June 30, 2026, to continue receiving updates and support.
+
+**Can I continue to use my AL2 based gateway after migrating?**
+No, you should not use your AL2 gateway alongside your new AL2023 gateway after successfully migrating. Use only your new AL2023-based gateway going forward. Using both AL2 and AL2023 gateways simultaneously may cause operational issues.
+
+**I'm having issues during migration. What should I do?**
+Contact [AWS Support](https://console.aws.amazon.com/support/home) for assistance. Our support team can help troubleshoot migration issues and guide you through the process.

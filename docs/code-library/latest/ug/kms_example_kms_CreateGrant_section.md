@@ -1,0 +1,275 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/kms_example_kms_CreateGrant_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `CreateGrant` with an AWS SDK or CLI
+<a name="kms_example_kms_CreateGrant_section"></a>
+
+The following code examples show how to use `CreateGrant`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Learn the basics](kms_example_kms_Scenario_Basics_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/KMS#code-examples).
+
+```
+        public static async Task Main()
+        {
+            var client = new AmazonKeyManagementServiceClient();
+
+            // The identity that is given permission to perform the operations
+            // specified in the grant.
+            var grantee = "arn:aws:iam::111122223333:role/ExampleRole";
+
+            // The identifier of the AWS KMS key to which the grant applies. You
+            // can use the key ID or the Amazon Resource Name (ARN) of the KMS key.
+            var keyId = "7c9eccc2-38cb-4c4f-9db3-766ee8dd3ad4";
+
+            var request = new CreateGrantRequest
+            {
+                GranteePrincipal = grantee,
+                KeyId = keyId,
+
+                // A list of operations that the grant allows.
+                Operations = new List<string>
+                {
+                    "Encrypt",
+                    "Decrypt",
+                },
+            };
+
+            var response = await client.CreateGrantAsync(request);
+
+            string grantId = response.GrantId; // The unique identifier of the grant.
+            string grantToken = response.GrantToken; // The grant token.
+
+            Console.WriteLine($"Id: {grantId}, Token: {grantToken}");
+        }
+    }
+```
++  For API details, see [CreateGrant](https://docs.aws.amazon.com/goto/DotNetSDKV3/kms-2014-11-01/CreateGrant) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To create a grant**
+The following `create-grant` example creates a grant that allows the `exampleUser` user to use the `decrypt` command on the `1234abcd-12ab-34cd-56ef-1234567890ab` example KMS key. The retiring principal is the `adminRole` role. The grant uses the `EncryptionContextSubset` grant constraint to allow this permission only when the encryption context in the `decrypt` request includes the `"Department": "IT"` key-value pair.
+
+```
+aws kms create-grant \
+    --key-id {{1234abcd-12ab-34cd-56ef-1234567890ab}} \
+    --grantee-principal {{arn:aws:iam::123456789012:user/exampleUser}} \
+    --operations {{Decrypt}} \
+    --constraints {{EncryptionContextSubset={Department=IT}}} \
+    --retiring-principal {{arn:aws:iam::123456789012:role/adminRole}}
+```
+Output:
+
+```
+{
+    "GrantId": "1a2b3c4d2f5e69f440bae30eaec9570bb1fb7358824f9ddfa1aa5a0dab1a59b2",
+    "GrantToken": "<grant token here>"
+}
+```
+To view detailed information about the grant, use the `list-grants` command.
+For more information, see [Grants in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) in the *AWS Key Management Service Developer Guide*.
++  For API details, see [CreateGrant](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kms/create-grant.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/kms#code-examples).
+
+```
+    /**
+     * Grants permissions to a specified principal on a customer master key (CMK) asynchronously.
+     *
+     * @param keyId             The unique identifier for the customer master key (CMK) that the grant applies to.
+     * @param granteePrincipal  The principal that is given permission to perform the operations that the grant permits on the CMK.
+     * @return A {@link CompletableFuture} that, when completed, contains the ID of the created grant.
+     * @throws RuntimeException If an error occurs during the grant creation process.
+     */
+    public CompletableFuture<String> grantKeyAsync(String keyId, String granteePrincipal) {
+        List<GrantOperation> grantPermissions = List.of(
+            GrantOperation.ENCRYPT,
+            GrantOperation.DECRYPT,
+            GrantOperation.DESCRIBE_KEY
+        );
+
+        CreateGrantRequest grantRequest = CreateGrantRequest.builder()
+            .keyId(keyId)
+            .name("grant1")
+            .granteePrincipal(granteePrincipal)
+            .operations(grantPermissions)
+            .build();
+
+        CompletableFuture<CreateGrantResponse> responseFuture = getAsyncClient().createGrant(grantRequest);
+        responseFuture.whenComplete((response, ex) -> {
+            if (ex == null) {
+                logger.info("Grant created successfully with ID: " + response.grantId());
+            } else {
+                if (ex instanceof KmsException kmsEx) {
+                    throw new RuntimeException("Failed to create grant: " + kmsEx.getMessage(), kmsEx);
+                } else {
+                    throw new RuntimeException("An unexpected error occurred: " + ex.getMessage(), ex);
+                }
+            }
+        });
+
+        return responseFuture.thenApply(CreateGrantResponse::grantId);
+    }
+```
++  For API details, see [CreateGrant](https://docs.aws.amazon.com/goto/SdkForJavaV2/kms-2014-11-01/CreateGrant) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Kotlin ]
+
+**SDK for Kotlin**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/kotlin/services/kms#code-examples).
+
+```
+suspend fun createNewGrant(
+    keyIdVal: String?,
+    granteePrincipalVal: String?,
+    operation: String,
+): String? {
+    val operationOb = GrantOperation.fromValue(operation)
+    val grantOperationList = ArrayList<GrantOperation>()
+    grantOperationList.add(operationOb)
+
+    val request =
+        CreateGrantRequest {
+            keyId = keyIdVal
+            granteePrincipal = granteePrincipalVal
+            operations = grantOperationList
+        }
+
+    KmsClient.fromEnvironment { region = "us-west-2" }.use { kmsClient ->
+        val response = kmsClient.createGrant(request)
+        return response.grantId
+    }
+}
+```
++  For API details, see [CreateGrant](https://sdk.amazonaws.com/kotlin/api/latest/index.html) in *AWS SDK for Kotlin API reference*.
+
+------
+#### [ PHP ]
+
+**SDK for PHP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/php/example_code/kms#code-examples).
+
+```
+    /***
+     * @param string $keyId
+     * @param string $granteePrincipal
+     * @param array $operations
+     * @param array $grantTokens
+     * @return Result
+     */
+    public function createGrant(string $keyId, string $granteePrincipal, array $operations, array $grantTokens = [])
+    {
+        $args = [
+            'KeyId' => $keyId,
+            'GranteePrincipal' => $granteePrincipal,
+            'Operations' => $operations,
+        ];
+        if($grantTokens){
+            $args['GrantTokens'] = $grantTokens;
+        }
+        try{
+            return $this->client->createGrant($args);
+        }catch(KmsException $caught){
+            if($caught->getAwsErrorMessage() == "InvalidGrantTokenException"){
+                echo "The request was rejected because the specified grant token is not valid.\n";
+            }
+            throw $caught;
+        }
+    }
+```
++  For API details, see [CreateGrant](https://docs.aws.amazon.com/goto/SdkForPHPV3/kms-2014-11-01/CreateGrant) in *AWS SDK for PHP API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/kms#code-examples).
+
+```
+class GrantManager:
+    def __init__(self, kms_client):
+        self.kms_client = kms_client
+
+    @classmethod
+    def from_client(cls) -> "GrantManager":
+        """
+        Creates a GrantManager instance with a default KMS client.
+
+        :return: An instance of GrantManager initialized with the default KMS client.
+        """
+        kms_client = boto3.client("kms")
+        return cls(kms_client)
+
+    def create_grant(
+        self, key_id: str, principal: str, operations: [str]
+    ) -> dict[str, str]:
+        """
+        Creates a grant for a key that lets a principal generate a symmetric data
+        encryption key.
+
+        :param key_id: The ARN or ID of the key.
+        :param principal: The principal to grant permission to.
+        :param operations: The operations to grant permission for.
+        :return: The grant that is created.
+        """
+        try:
+            return self.kms_client.create_grant(
+                KeyId=key_id,
+                GranteePrincipal=principal,
+                Operations=operations,
+            )
+        except ClientError as err:
+            logger.error(
+                "Couldn't create a grant on key %s. Here's why: %s",
+                key_id,
+                err.response["Error"]["Message"],
+            )
+            raise
+```
++  For API details, see [CreateGrant](https://docs.aws.amazon.com/goto/boto3/kms-2014-11-01/CreateGrant) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/kms#code-examples).
+
+```
+    TRY.
+        " iv_key_id = 'arn:aws:kms:us-east-1:123456789012:key/1234abcd-12ab-34cd-56ef-1234567890ab'
+        " iv_grantee_principal = 'arn:aws:iam::123456789012:role/my-role'
+        " it_operations contains 'Encrypt', 'Decrypt', 'GenerateDataKey'
+        oo_result = lo_kms->creategrant(
+          iv_keyid = iv_key_id
+          iv_granteeprincipal = iv_grantee_principal
+          it_operations = it_operations
+        ).
+        MESSAGE 'Grant created successfully.' TYPE 'I'.
+      CATCH /aws1/cx_kmsdisabledexception.
+        MESSAGE 'The key is disabled.' TYPE 'E'.
+      CATCH /aws1/cx_kmsnotfoundexception.
+        MESSAGE 'Key not found.' TYPE 'E'.
+      CATCH /aws1/cx_kmskmsinternalex.
+        MESSAGE 'An internal error occurred.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [CreateGrant](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/snowball/latest/api-reference/API_EventTriggerDefinition.html
+---
+
+# EventTriggerDefinition
+<a name="API_EventTriggerDefinition"></a>
+
+**Note**
+ AWS Snowball Edge is no longer available to new customers. New customers should explore [AWS DataSync](https://aws.amazon.com/datasync/) for online transfers, [AWS Data Transfer Terminal](https://aws.amazon.com/data-transfer-terminal/) for secure physical transfers, or AWS Partner solutions. For edge computing, explore [AWS Outposts](https://aws.amazon.com/outposts/).
+
+The container for the [EventTriggerDefinition:EventResourceARN](#Snowball-Type-EventTriggerDefinition-EventResourceARN).
+
+## Contents
+<a name="API_EventTriggerDefinition_Contents"></a>
+
+ ** EventResourceARN **   <a name="Snowball-Type-EventTriggerDefinition-EventResourceARN"></a>
+The Amazon Resource Name (ARN) for any local Amazon S3 resource that is an AWS Lambda function's event trigger associated with this job.
+Type: String
+Length Constraints: Maximum length of 255.
+Pattern: `arn:aws.*:*`
+Required: No
+
+## See Also
+<a name="API_EventTriggerDefinition_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/snowball-2016-06-30/EventTriggerDefinition)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/snowball-2016-06-30/EventTriggerDefinition)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/snowball-2016-06-30/EventTriggerDefinition)

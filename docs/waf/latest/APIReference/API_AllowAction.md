@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/waf/latest/APIReference/API_AllowAction.html
+---
+
+# AllowAction
+<a name="API_AllowAction"></a>
+
+Specifies that AWS WAF should allow the request and optionally defines additional custom handling for the request.
+
+This is used in the context of other settings, for example to specify values for [RuleAction](API_RuleAction.md) and web ACL [DefaultAction](API_DefaultAction.md).
+
+## Contents
+<a name="API_AllowAction_Contents"></a>
+
+ ** CustomRequestHandling **   <a name="WAF-Type-AllowAction-CustomRequestHandling"></a>
+Defines custom handling for the web request.
+For information about customizing web requests and responses, see [Customizing web requests and responses in AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html) in the * AWS WAF Developer Guide*.
+Type: [CustomRequestHandling](API_CustomRequestHandling.md) object
+Required: No
+
+## See Also
+<a name="API_AllowAction_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/wafv2-2019-07-29/AllowAction)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/wafv2-2019-07-29/AllowAction)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/wafv2-2019-07-29/AllowAction)

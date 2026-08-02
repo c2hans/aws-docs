@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_AddEgressGatewayBridgeRequest.html
+---
+
+# AddEgressGatewayBridgeRequest
+<a name="API_AddEgressGatewayBridgeRequest"></a>
+
+ Create a bridge with the egress bridge type. An egress bridge is a cloud-to-ground bridge. The content comes from an existing MediaConnect flow and is delivered to your premises.
+
+## Contents
+<a name="API_AddEgressGatewayBridgeRequest_Contents"></a>
+
+ ** maxBitrate **   <a name="mediaconnect-Type-AddEgressGatewayBridgeRequest-maxBitrate"></a>
+ The maximum expected bitrate (in bps) of the egress bridge.
+Type: Integer
+Required: Yes
+
+## See Also
+<a name="API_AddEgressGatewayBridgeRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/AddEgressGatewayBridgeRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/AddEgressGatewayBridgeRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/AddEgressGatewayBridgeRequest)

@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/codedeploy_example_codedeploy_UpdateApplication_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `UpdateApplication` with a CLI
+<a name="codedeploy_example_codedeploy_UpdateApplication_section"></a>
+
+The following code examples show how to use `UpdateApplication`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To change details of an application**
+The following `update-application` example changes the name of an application that is associated with the user's AWS account.
+
+```
+aws deploy update-application \
+    --application-name {{WordPress_App}} \
+    --new-application-name {{My_WordPress_App}}
+```
+This command produces no output.
++  For API details, see [UpdateApplication](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/deploy/update-application.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example changes the name of the specified application.**
+
+```
+Update-CDApplication -ApplicationName MyNewApplication -NewApplicationName MyNewApplication-2
+```
++  For API details, see [UpdateApplication](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example changes the name of the specified application.**
+
+```
+Update-CDApplication -ApplicationName MyNewApplication -NewApplicationName MyNewApplication-2
+```
++  For API details, see [UpdateApplication](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

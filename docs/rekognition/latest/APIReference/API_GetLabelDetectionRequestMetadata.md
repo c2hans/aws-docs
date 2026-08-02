@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_GetLabelDetectionRequestMetadata.html
+---
+
+# GetLabelDetectionRequestMetadata
+<a name="API_GetLabelDetectionRequestMetadata"></a>
+
+Contains metadata about a label detection request, including the SortBy and AggregateBy options.
+
+## Contents
+<a name="API_GetLabelDetectionRequestMetadata_Contents"></a>
+
+ ** AggregateBy **   <a name="rekognition-Type-GetLabelDetectionRequestMetadata-AggregateBy"></a>
+The aggregation method chosen for a GetLabelDetection request.
+Type: String
+Valid Values: `TIMESTAMPS | SEGMENTS`
+Required: No
+
+ ** SortBy **   <a name="rekognition-Type-GetLabelDetectionRequestMetadata-SortBy"></a>
+The sorting method chosen for a GetLabelDetection request.
+Type: String
+Valid Values: `NAME | TIMESTAMP`
+Required: No
+
+## See Also
+<a name="API_GetLabelDetectionRequestMetadata_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rekognition-2016-06-27/GetLabelDetectionRequestMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rekognition-2016-06-27/GetLabelDetectionRequestMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rekognition-2016-06-27/GetLabelDetectionRequestMetadata)

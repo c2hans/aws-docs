@@ -1,0 +1,50 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-quicksight-template-gaugechartcolorconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::QuickSight::Template GaugeChartColorConfiguration
+<a name="aws-properties-quicksight-template-gaugechartcolorconfiguration"></a>
+
+The color configuration of a `GaugeChartVisual`.
+
+## Syntax
+<a name="aws-properties-quicksight-template-gaugechartcolorconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-quicksight-template-gaugechartcolorconfiguration-syntax.json"></a>
+
+```
+{
+  "[BackgroundColor](#cfn-quicksight-template-gaugechartcolorconfiguration-backgroundcolor)" : {{String}},
+  "[ForegroundColor](#cfn-quicksight-template-gaugechartcolorconfiguration-foregroundcolor)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-quicksight-template-gaugechartcolorconfiguration-syntax.yaml"></a>
+
+```
+  [BackgroundColor](#cfn-quicksight-template-gaugechartcolorconfiguration-backgroundcolor): {{String}}
+  [ForegroundColor](#cfn-quicksight-template-gaugechartcolorconfiguration-foregroundcolor): {{String}}
+```
+
+## Properties
+<a name="aws-properties-quicksight-template-gaugechartcolorconfiguration-properties"></a>
+
+`BackgroundColor`  <a name="cfn-quicksight-template-gaugechartcolorconfiguration-backgroundcolor"></a>
+The background color configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ForegroundColor`  <a name="cfn-quicksight-template-gaugechartcolorconfiguration-foregroundcolor"></a>
+The foreground color configuration of a `GaugeChartVisual`.
+*Required*: No
+*Type*: String
+*Pattern*: `^#[A-F0-9]{6}$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

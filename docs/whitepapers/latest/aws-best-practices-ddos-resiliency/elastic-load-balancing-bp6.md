@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/elastic-load-balancing-bp6.html
+---
+
+ This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
+
+# Elastic Load Balancing (BP6)
+<a name="elastic-load-balancing-bp6"></a>
+
+ Large DDoS attacks can overwhelm the capacity of a single Amazon EC2 instance. With Elastic Load Balancing (ELB), you can reduce the risk of overloading your application by distributing traffic across many backend instances. Elastic Load Balancing can scale automatically, allowing you to manage larger volumes when you have unanticipated extra traffic, for example, due to flash crowds or DDoS attacks. For applications built within an Amazon VPC, there are three types of ELBs to consider, depending on your application type: Application Load Balancer (ALB), Network Load Balancer (NLB) and Classic Load Balancer (CLB).
+
+ For web applications, you can use the Application Load Balancer to route traffic based on content and accept only well-formed web requests. Application Load Balancer blocks many common DDoS attacks, such as SYN floods or UDP reflection attacks, protecting your application from the attack. Application Load Balancer automatically scales to absorb the additional traffic when these types of attacks are detected. Scaling activities due to infrastructure layer attacks are transparent for AWS customers and do not affect your bill.
+
+ For more information about protecting web applications with Application Load Balancer, refer to [Getting Started with Application Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/application-load-balancer-getting-started.html).
+
+ For non HTTP/HTTPS applications, you can use Network Load Balancer to route traffic to targets (for example, Amazon EC2 instances) at ultra-low latency. One key consideration with Network Load Balancer is that any TCP SYN or UDP traffic that reaches the load balancer on a valid listener will be routed to your targets, not absorbed, however this does not apply for TLS-listeners which terminate the TCP connection. For Network Load Balancers with TCP listeners we recommend deploying Global Accelerator to protect against SYN flood.
+
+ You can use Shield Advanced to configure DDoS protection for Elastic IP addresses. When an Elastic IP address is assigned per Availability Zone to the Network Load Balancer, Shield Advanced will apply the relevant DDoS protections for the Network Load Balancer traffic.
+
+ For more information about protecting TCP and UDP applications with Network Load Balancer, refer to [Getting started with Network Load Balancers](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/network-load-balancer-getting-started.html).
+
+**Note**
+ Depending on the security group configuration, it requires the resource using the security to group to use connection tracking to track information about traffic, this can affect the load balancer ability to process new connections, as the number of tracked connections is limited.
+ A security group configuration that contains an ingress rule accepting traffic from any IP address (for example, `0.0.0.0/0` or `::/0`) but do not have a corresponding rule to allow the response traffic, causes the security group to use connection tracking information to allow the response traffic to be sent. In an event of an DDoS attack, the maximum number of tracked connections can be exhausted. To improve the DDoS resilience of your public-facing Application Load Balancer or Classic Load Balancer, ensure that the security group associated with your load balancer is configured to not use connection tracking (untracked connections), so the flow of traffic is not to subject to connection tracking limits.
+ For this, configure your security group with a rule that allows the inbound rule to accept TCP flows from any IP address (`0.0.0.0/0` or `::/0`), and add a corresponding rule in the outbound direction allowing this resource to send the response traffic (allow outbound range for any IP address `0.0.0.0/0` or `::/0`) for all ports (0-65535), so the response traffic is allowed based on the security group rule, and not on tracking information. With this configuration, Classic and Application Load Balancer are not subject to exhaust connection tracking limits that may affect establishing new connections to its load balancer nodes, and allows it to scale based on the increase in traffic in the event of a DDoS attack. More information about untracked connections can be found at: [Security group connection tracking: Untracked connections](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-connection-tracking.html#untracked-connections).
+ Avoiding security group connection tracking only helps in cases where the DDoS traffic originates from a source that is allowed by the security group—DDoS traffic from sources that are not allowed in the security group do not affect connection tracking. Reconfiguring your security groups to avoid connection tracking is not required in these cases, for example, if your security group allow list consists of IP ranges with which you have a high degree of trust, such as a company corporate firewall or trusted VPN egress IPs or CDNs.

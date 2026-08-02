@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/codebuild/latest/userguide/badge-statuses.html
+---
+
+# CodeBuild badge statuses
+<a name="badge-statuses"></a>
+
+The CodeBuild build badge can have one of the following statuses.
++ **PASSING** The most recent build on the given branch passed.
++ **FAILING** The most recent build on the given branch timed out, failed, faulted, or was stopped.
++ **IN\_PROGRESS** The most recent build on the given branch is in progress.
++ **UNKNOWN** The project has not yet run a build for the given branch or at all. Also, the build badges feature might have been disabled.

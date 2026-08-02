@@ -1,0 +1,179 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-fsx-filesystem-openzfsconfiguration.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::FSx::FileSystem OpenZFSConfiguration
+<a name="aws-properties-fsx-filesystem-openzfsconfiguration"></a>
+
+The OpenZFS configuration for the file system that's being created.
+
+## Syntax
+<a name="aws-properties-fsx-filesystem-openzfsconfiguration-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-fsx-filesystem-openzfsconfiguration-syntax.json"></a>
+
+```
+{
+  "[AutomaticBackupRetentionDays](#cfn-fsx-filesystem-openzfsconfiguration-automaticbackupretentiondays)" : {{Integer}},
+  "[CopyTagsToBackups](#cfn-fsx-filesystem-openzfsconfiguration-copytagstobackups)" : {{Boolean}},
+  "[CopyTagsToVolumes](#cfn-fsx-filesystem-openzfsconfiguration-copytagstovolumes)" : {{Boolean}},
+  "[DailyAutomaticBackupStartTime](#cfn-fsx-filesystem-openzfsconfiguration-dailyautomaticbackupstarttime)" : {{String}},
+  "[DeploymentType](#cfn-fsx-filesystem-openzfsconfiguration-deploymenttype)" : {{String}},
+  "[DiskIopsConfiguration](#cfn-fsx-filesystem-openzfsconfiguration-diskiopsconfiguration)" : {{DiskIopsConfiguration}},
+  "[EndpointIpAddressRange](#cfn-fsx-filesystem-openzfsconfiguration-endpointipaddressrange)" : {{String}},
+  "[EndpointIpv6AddressRange](#cfn-fsx-filesystem-openzfsconfiguration-endpointipv6addressrange)" : {{String}},
+  "[Options](#cfn-fsx-filesystem-openzfsconfiguration-options)" : {{[ String, ... ]}},
+  "[PreferredSubnetId](#cfn-fsx-filesystem-openzfsconfiguration-preferredsubnetid)" : {{String}},
+  "[ReadCacheConfiguration](#cfn-fsx-filesystem-openzfsconfiguration-readcacheconfiguration)" : {{ReadCacheConfiguration}},
+  "[RootVolumeConfiguration](#cfn-fsx-filesystem-openzfsconfiguration-rootvolumeconfiguration)" : {{RootVolumeConfiguration}},
+  "[RouteTableIds](#cfn-fsx-filesystem-openzfsconfiguration-routetableids)" : {{[ String, ... ]}},
+  "[ThroughputCapacity](#cfn-fsx-filesystem-openzfsconfiguration-throughputcapacity)" : {{Integer}},
+  "[WeeklyMaintenanceStartTime](#cfn-fsx-filesystem-openzfsconfiguration-weeklymaintenancestarttime)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-fsx-filesystem-openzfsconfiguration-syntax.yaml"></a>
+
+```
+  [AutomaticBackupRetentionDays](#cfn-fsx-filesystem-openzfsconfiguration-automaticbackupretentiondays): {{Integer}}
+  [CopyTagsToBackups](#cfn-fsx-filesystem-openzfsconfiguration-copytagstobackups): {{Boolean}}
+  [CopyTagsToVolumes](#cfn-fsx-filesystem-openzfsconfiguration-copytagstovolumes): {{Boolean}}
+  [DailyAutomaticBackupStartTime](#cfn-fsx-filesystem-openzfsconfiguration-dailyautomaticbackupstarttime): {{String}}
+  [DeploymentType](#cfn-fsx-filesystem-openzfsconfiguration-deploymenttype): {{String}}
+  [DiskIopsConfiguration](#cfn-fsx-filesystem-openzfsconfiguration-diskiopsconfiguration): {{
+    DiskIopsConfiguration}}
+  [EndpointIpAddressRange](#cfn-fsx-filesystem-openzfsconfiguration-endpointipaddressrange): {{String}}
+  [EndpointIpv6AddressRange](#cfn-fsx-filesystem-openzfsconfiguration-endpointipv6addressrange): {{String}}
+  [Options](#cfn-fsx-filesystem-openzfsconfiguration-options): {{
+    - String}}
+  [PreferredSubnetId](#cfn-fsx-filesystem-openzfsconfiguration-preferredsubnetid): {{String}}
+  [ReadCacheConfiguration](#cfn-fsx-filesystem-openzfsconfiguration-readcacheconfiguration): {{
+    ReadCacheConfiguration}}
+  [RootVolumeConfiguration](#cfn-fsx-filesystem-openzfsconfiguration-rootvolumeconfiguration): {{
+    RootVolumeConfiguration}}
+  [RouteTableIds](#cfn-fsx-filesystem-openzfsconfiguration-routetableids): {{
+    - String}}
+  [ThroughputCapacity](#cfn-fsx-filesystem-openzfsconfiguration-throughputcapacity): {{Integer}}
+  [WeeklyMaintenanceStartTime](#cfn-fsx-filesystem-openzfsconfiguration-weeklymaintenancestarttime): {{String}}
+```
+
+## Properties
+<a name="aws-properties-fsx-filesystem-openzfsconfiguration-properties"></a>
+
+`AutomaticBackupRetentionDays`  <a name="cfn-fsx-filesystem-openzfsconfiguration-automaticbackupretentiondays"></a>
+The number of days to retain automatic backups. Setting this property to `0` disables automatic backups. You can retain automatic backups for a maximum of 90 days. The default is `30`.
+*Required*: No
+*Type*: Integer
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CopyTagsToBackups`  <a name="cfn-fsx-filesystem-openzfsconfiguration-copytagstobackups"></a>
+A Boolean value indicating whether tags for the file system should be copied to backups. This value defaults to `false`. If it's set to `true`, all tags for the file system are copied to all automatic and user-initiated backups where the user doesn't specify tags. If this value is `true`, and you specify one or more tags, only the specified tags are copied to backups. If you specify one or more tags when creating a user-initiated backup, no tags are copied from the file system, regardless of this value.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CopyTagsToVolumes`  <a name="cfn-fsx-filesystem-openzfsconfiguration-copytagstovolumes"></a>
+A Boolean value indicating whether tags for the file system should be copied to volumes. This value defaults to `false`. If it's set to `true`, all tags for the file system are copied to volumes where the user doesn't specify tags. If this value is `true`, and you specify one or more tags, only the specified tags are copied to volumes. If you specify one or more tags when creating the volume, no tags are copied from the file system, regardless of this value.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DailyAutomaticBackupStartTime`  <a name="cfn-fsx-filesystem-openzfsconfiguration-dailyautomaticbackupstarttime"></a>
+A recurring daily time, in the format `HH:MM`. `HH` is the zero-padded hour of the day (0-23), and `MM` is the zero-padded minute of the hour. For example, `05:00` specifies 5 AM daily.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`DeploymentType`  <a name="cfn-fsx-filesystem-openzfsconfiguration-deploymenttype"></a>
+Specifies the file system deployment type. Valid values are the following:
++ `MULTI_AZ_1`- Creates file systems with high availability and durability by replicating your data and supporting failover across multiple Availability Zones in the same AWS Region.
++ `SINGLE_AZ_HA_2`- Creates file systems with high availability and throughput capacities of 160 - 10,240 MB/s using an NVMe L2ARC cache by deploying a primary and standby file system within the same Availability Zone.
++ `SINGLE_AZ_HA_1`- Creates file systems with high availability and throughput capacities of 64 - 4,096 MB/s by deploying a primary and standby file system within the same Availability Zone.
++ `SINGLE_AZ_2`- Creates file systems with throughput capacities of 160 - 10,240 MB/s using an NVMe L2ARC cache that automatically recover within a single Availability Zone.
++ `SINGLE_AZ_1`- Creates file systems with throughput capacities of 64 - 4,096 MBs that automatically recover within a single Availability Zone.
+For a list of which AWS Regions each deployment type is available in, see [Deployment type availability](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/availability-durability.html#available-aws-regions). For more information on the differences in performance between deployment types, see [File system performance](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/performance.html#zfs-fs-performance) in the *Amazon FSx for OpenZFS User Guide*.
+*Required*: Yes
+*Type*: String
+*Allowed values*: `SINGLE_AZ_1 | SINGLE_AZ_2 | SINGLE_AZ_HA_1 | SINGLE_AZ_HA_2 | MULTI_AZ_1`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`DiskIopsConfiguration`  <a name="cfn-fsx-filesystem-openzfsconfiguration-diskiopsconfiguration"></a>
+The SSD IOPS (input/output operations per second) configuration for an Amazon FSx for NetApp ONTAP, Amazon FSx for Windows File Server, or FSx for OpenZFS file system. By default, Amazon FSx automatically provisions 3 IOPS per GB of storage capacity. You can provision additional IOPS per GB of storage. The configuration consists of the total number of provisioned SSD IOPS and how it is was provisioned, or the mode (by the customer or by Amazon FSx).
+*Required*: No
+*Type*: [DiskIopsConfiguration](aws-properties-fsx-filesystem-diskiopsconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`EndpointIpAddressRange`  <a name="cfn-fsx-filesystem-openzfsconfiguration-endpointipaddressrange"></a>
+(Multi-AZ only) Specifies the IPv4 address range in which the endpoints to access your file system will be created. By default in the Amazon FSx API and Amazon FSx console, Amazon FSx selects an available /28 IP address range for you from one of the VPC's CIDR ranges. You can have overlapping endpoint IP addresses for file systems deployed in the same VPC/route tables, as long as they don't overlap with any subnet.
+*Required*: No
+*Type*: String
+*Pattern*: `^[^\u0000\u0085\u2028\u2029\r\n]{9,17}$`
+*Minimum*: `9`
+*Maximum*: `17`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`EndpointIpv6AddressRange`  <a name="cfn-fsx-filesystem-openzfsconfiguration-endpointipv6addressrange"></a>
+(Multi-AZ only) Specifies the IP address range in which the endpoints to access your file system will be created. By default in the Amazon FSx API and Amazon FSx console, Amazon FSx selects an available /118 IP address range for you from one of the VPC's CIDR ranges. You can have overlapping endpoint IP addresses for file systems deployed in the same VPC/route tables, as long as they don't overlap with any subnet.
+*Required*: No
+*Type*: String
+*Pattern*: `^[^\u0000\u0085\u2028\u2029\r\n]{4,43}$`
+*Minimum*: `4`
+*Maximum*: `43`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`Options`  <a name="cfn-fsx-filesystem-openzfsconfiguration-options"></a>
+To delete a file system if there are child volumes present below the root volume, use the string `DELETE_CHILD_VOLUMES_AND_SNAPSHOTS`. If your file system has child volumes and you don't use this option, the delete request will fail.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `1`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PreferredSubnetId`  <a name="cfn-fsx-filesystem-openzfsconfiguration-preferredsubnetid"></a>
+Required when `DeploymentType` is set to `MULTI_AZ_1`. This specifies the subnet in which you want the preferred file server to be located.
+*Required*: No
+*Type*: String
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ReadCacheConfiguration`  <a name="cfn-fsx-filesystem-openzfsconfiguration-readcacheconfiguration"></a>
+ Specifies the optional provisioned SSD read cache on file systems that use the Intelligent-Tiering storage class.
+*Required*: No
+*Type*: [ReadCacheConfiguration](aws-properties-fsx-filesystem-readcacheconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`RootVolumeConfiguration`  <a name="cfn-fsx-filesystem-openzfsconfiguration-rootvolumeconfiguration"></a>
+The configuration Amazon FSx uses when creating the root value of the Amazon FSx for OpenZFS file system. All volumes are children of the root volume.
+*Required*: No
+*Type*: [RootVolumeConfiguration](aws-properties-fsx-filesystem-rootvolumeconfiguration.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`RouteTableIds`  <a name="cfn-fsx-filesystem-openzfsconfiguration-routetableids"></a>
+(Multi-AZ only) Specifies the route tables in which Amazon FSx creates the rules for routing traffic to the correct file server. You should specify all virtual private cloud (VPC) route tables associated with the subnets in which your clients are located. By default, Amazon FSx selects your VPC's default route table.
+*Required*: No
+*Type*: Array of String
+*Maximum*: `50`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ThroughputCapacity`  <a name="cfn-fsx-filesystem-openzfsconfiguration-throughputcapacity"></a>
+Specifies the throughput of an Amazon FSx for OpenZFS file system, measured in megabytes per second (MBps). Required if you are creating a new file system.
+Valid values depend on the `DeploymentType` that you choose, as follows:
++ For `MULTI_AZ_1` and `SINGLE_AZ_2`, valid values are 160, 320, 640, 1280, 2560, 3840, 5120, 7680, or 10240 MBps.
++ For `SINGLE_AZ_1`, valid values are 64, 128, 256, 512, 1024, 2048, 3072, or 4096 MBps.
+You pay for additional throughput capacity that you provision.
+*Required*: No
+*Type*: Integer
+*Minimum*: `8`
+*Maximum*: `100000`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`WeeklyMaintenanceStartTime`  <a name="cfn-fsx-filesystem-openzfsconfiguration-weeklymaintenancestarttime"></a>
+The preferred start time to perform weekly maintenance, formatted d:HH:MM in the UTC time zone, where d is the weekday number, from 1 through 7, beginning with Monday and ending with Sunday.
+For example, `1:05:00` specifies maintenance at 5 AM Monday.
+*Required*: No
+*Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

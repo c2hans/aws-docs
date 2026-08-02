@@ -1,0 +1,27 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_IpamPolicyAllocationRuleRequest.html
+---
+
+# IpamPolicyAllocationRuleRequest
+<a name="API_IpamPolicyAllocationRuleRequest"></a>
+
+Information about a requested IPAM policy allocation rule.
+
+Allocation rules are optional configurations within an IPAM policy that map AWS resource types to specific IPAM pools. If no rules are defined, the resource types default to using Amazon-provided IP addresses.
+
+## Contents
+<a name="API_IpamPolicyAllocationRuleRequest_Contents"></a>
+
+ ** SourceIpamPoolId **
+The ID of the source IPAM pool for the requested allocation rule.
+An IPAM pool is a collection of IP addresses in IPAM that can be allocated to AWS resources.
+Type: String
+Required: No
+
+## See Also
+<a name="API_IpamPolicyAllocationRuleRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/IpamPolicyAllocationRuleRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/IpamPolicyAllocationRuleRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/IpamPolicyAllocationRuleRequest)

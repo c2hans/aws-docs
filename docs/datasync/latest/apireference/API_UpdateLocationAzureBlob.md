@@ -1,0 +1,132 @@
+---
+source_url: https://docs.aws.amazon.com/datasync/latest/apireference/API_UpdateLocationAzureBlob.html
+---
+
+# UpdateLocationAzureBlob
+<a name="API_UpdateLocationAzureBlob"></a>
+
+Modifies the following configurations of the Microsoft Azure Blob Storage transfer location that you're using with AWS DataSync.
+
+For more information, see [Configuring DataSync transfers with Azure Blob Storage](https://docs.aws.amazon.com/datasync/latest/userguide/creating-azure-blob-location.html).
+
+## Request Syntax
+<a name="API_UpdateLocationAzureBlob_RequestSyntax"></a>
+
+```
+{
+   "AccessTier": "{{string}}",
+   "AgentArns": [ "{{string}}" ],
+   "AuthenticationType": "{{string}}",
+   "BlobType": "{{string}}",
+   "CmkSecretConfig": {
+      "KmsKeyArn": "{{string}}",
+      "SecretArn": "{{string}}"
+   },
+   "CustomSecretConfig": {
+      "SecretAccessRoleArn": "{{string}}",
+      "SecretArn": "{{string}}"
+   },
+   "LocationArn": "{{string}}",
+   "SasConfiguration": {
+      "Token": "{{string}}"
+   },
+   "Subdirectory": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_UpdateLocationAzureBlob_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [AccessTier](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-AccessTier"></a>
+Specifies the access tier that you want your objects or files transferred into. This only applies when using the location as a transfer destination. For more information, see [Access tiers](https://docs.aws.amazon.com/datasync/latest/userguide/creating-azure-blob-location.html#azure-blob-access-tiers).
+Type: String
+Valid Values: `HOT | COOL | ARCHIVE`
+Required: No
+
+ ** [AgentArns](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-AgentArns"></a>
+(Optional) Specifies the Amazon Resource Name (ARN) of the DataSync agent that can connect with your Azure Blob Storage container. If you are setting up an agentless cross-cloud transfer, you do not need to specify a value for this parameter.
+You can specify more than one agent. For more information, see [Using multiple agents for your transfer](https://docs.aws.amazon.com/datasync/latest/userguide/multiple-agents.html).
+You cannot add or remove agents from a storage location after you initially create it.
+Type: Array of strings
+Array Members: Minimum number of 1 item. Maximum number of 8 items.
+Length Constraints: Maximum length of 128.
+Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:agent/agent-[0-9a-z]{17}$`
+Required: No
+
+ ** [AuthenticationType](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-AuthenticationType"></a>
+Specifies the authentication method DataSync uses to access your Azure Blob Storage. DataSync can access blob storage using a shared access signature (SAS).
+Type: String
+Valid Values: `SAS | NONE`
+Required: No
+
+ ** [BlobType](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-BlobType"></a>
+Specifies the type of blob that you want your objects or files to be when transferring them into Azure Blob Storage. Currently, DataSync only supports moving data into Azure Blob Storage as block blobs. For more information on blob types, see the [Azure Blob Storage documentation](https://learn.microsoft.com/en-us/rest/api/storageservices/understanding-block-blobs--append-blobs--and-page-blobs).
+Type: String
+Valid Values: `BLOCK`
+Required: No
+
+ ** [CmkSecretConfig](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-CmkSecretConfig"></a>
+Specifies configuration information for a DataSync-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS KMS key.
+Type: [CmkSecretConfig](API_CmkSecretConfig.md) object
+Required: No
+
+ ** [CustomSecretConfig](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-CustomSecretConfig"></a>
+Specifies configuration information for a customer-managed secret, such as an authentication token or set of credentials that DataSync uses to access a specific transfer location, and a customer-managed AWS Identity and Access Management (IAM) role that provides access to the secret.
+Type: [CustomSecretConfig](API_CustomSecretConfig.md) object
+Required: No
+
+ ** [LocationArn](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-LocationArn"></a>
+Specifies the ARN of the Azure Blob Storage transfer location that you're updating.
+Type: String
+Length Constraints: Maximum length of 128.
+Pattern: `^arn:(aws|aws-cn|aws-us-gov|aws-eusc|aws-iso|aws-iso-b):datasync:[a-z\-0-9]+:[0-9]{12}:location/loc-[0-9a-z]{17}$`
+Required: Yes
+
+ ** [SasConfiguration](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-SasConfiguration"></a>
+Specifies the SAS configuration that allows DataSync to access your Azure Blob Storage.
+Type: [AzureBlobSasConfiguration](API_AzureBlobSasConfiguration.md) object
+Required: No
+
+ ** [Subdirectory](#API_UpdateLocationAzureBlob_RequestSyntax) **   <a name="DataSync-UpdateLocationAzureBlob-request-Subdirectory"></a>
+Specifies path segments if you want to limit your transfer to a virtual directory in your container (for example, `/my/images`).
+Type: String
+Length Constraints: Maximum length of 1024.
+Pattern: `^[\p{L}\p{M}\p{Z}\p{S}\p{N}\p{P}\p{C}]*$`
+Required: No
+
+## Response Elements
+<a name="API_UpdateLocationAzureBlob_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response with an empty HTTP body.
+
+## Errors
+<a name="API_UpdateLocationAzureBlob_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalException **
+This exception is thrown when an error occurs in the AWS DataSync service.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+This exception is thrown when the client submits a malformed request.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_UpdateLocationAzureBlob_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/datasync-2018-11-09/UpdateLocationAzureBlob)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/datasync-2018-11-09/UpdateLocationAzureBlob)

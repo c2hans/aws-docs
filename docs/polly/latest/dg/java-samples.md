@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/polly/latest/dg/java-samples.html
+---
+
+# Java samples
+<a name="java-samples"></a>
+
+The following code samples show how to use Java-based applications to accomplish various tasks with Amazon Polly. These samples are not full examples, but can be included in larger Java applications that use the [AWS SDK for Java](https://aws.amazon.com/documentation/sdk-for-java/).
+
+**Topics**
++ [DeleteLexicon](DeleteLexiconSample.md)
++ [DescribeVoices](DescribeVoicesSample.md)
++ [GetLexicon](GetLexiconSample.md)
++ [ListLexicons](ListLexiconsSample.md)
++ [PutLexicon](PutLexiconSample.md)
++ [StartSpeechSynthesisTask](StartSpeechSynthesisTask.md)
++ [Speech Marks](SynthesizeSpeechMarksSample.md)
++ [SynthesizeSpeech](SynthesizeSpeechSample.md)

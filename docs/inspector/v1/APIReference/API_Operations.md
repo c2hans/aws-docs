@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/inspector/v1/APIReference/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [AddAttributesToFindings](API_AddAttributesToFindings.md)
++  [CreateAssessmentTarget](API_CreateAssessmentTarget.md)
++  [CreateAssessmentTemplate](API_CreateAssessmentTemplate.md)
++  [CreateExclusionsPreview](API_CreateExclusionsPreview.md)
++  [CreateResourceGroup](API_CreateResourceGroup.md)
++  [DeleteAssessmentRun](API_DeleteAssessmentRun.md)
++  [DeleteAssessmentTarget](API_DeleteAssessmentTarget.md)
++  [DeleteAssessmentTemplate](API_DeleteAssessmentTemplate.md)
++  [DescribeAssessmentRuns](API_DescribeAssessmentRuns.md)
++  [DescribeAssessmentTargets](API_DescribeAssessmentTargets.md)
++  [DescribeAssessmentTemplates](API_DescribeAssessmentTemplates.md)
++  [DescribeCrossAccountAccessRole](API_DescribeCrossAccountAccessRole.md)
++  [DescribeExclusions](API_DescribeExclusions.md)
++  [DescribeFindings](API_DescribeFindings.md)
++  [DescribeResourceGroups](API_DescribeResourceGroups.md)
++  [DescribeRulesPackages](API_DescribeRulesPackages.md)
++  [GetAssessmentReport](API_GetAssessmentReport.md)
++  [GetExclusionsPreview](API_GetExclusionsPreview.md)
++  [GetTelemetryMetadata](API_GetTelemetryMetadata.md)
++  [ListAssessmentRunAgents](API_ListAssessmentRunAgents.md)
++  [ListAssessmentRuns](API_ListAssessmentRuns.md)
++  [ListAssessmentTargets](API_ListAssessmentTargets.md)
++  [ListAssessmentTemplates](API_ListAssessmentTemplates.md)
++  [ListEventSubscriptions](API_ListEventSubscriptions.md)
++  [ListExclusions](API_ListExclusions.md)
++  [ListFindings](API_ListFindings.md)
++  [ListRulesPackages](API_ListRulesPackages.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [PreviewAgents](API_PreviewAgents.md)
++  [RegisterCrossAccountAccessRole](API_RegisterCrossAccountAccessRole.md)
++  [RemoveAttributesFromFindings](API_RemoveAttributesFromFindings.md)
++  [SetTagsForResource](API_SetTagsForResource.md)
++  [StartAssessmentRun](API_StartAssessmentRun.md)
++  [StopAssessmentRun](API_StopAssessmentRun.md)
++  [SubscribeToEvent](API_SubscribeToEvent.md)
++  [UnsubscribeFromEvent](API_UnsubscribeFromEvent.md)
++  [UpdateAssessmentTarget](API_UpdateAssessmentTarget.md)

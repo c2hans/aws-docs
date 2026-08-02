@@ -1,0 +1,201 @@
+---
+source_url: https://docs.aws.amazon.com/comprehend/latest/dg/example_comprehend_DetectDominantLanguage_section.html
+---
+
+# Use `DetectDominantLanguage` with an AWS SDK or CLI
+<a name="example_comprehend_DetectDominantLanguage_section"></a>
+
+The following code examples show how to use `DetectDominantLanguage`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Detect document elements](example_comprehend_Usage_DetectApis_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/Comprehend/#code-examples).
+
+```
+    using System;
+    using System.Threading.Tasks;
+    using Amazon.Comprehend;
+    using Amazon.Comprehend.Model;
+
+    /// <summary>
+    /// This example calls the Amazon Comprehend service to determine the
+    /// dominant language.
+    /// </summary>
+    public static class DetectDominantLanguage
+    {
+        /// <summary>
+        /// Calls Amazon Comprehend to determine the dominant language used in
+        /// the sample text.
+        /// </summary>
+        public static async Task Main()
+        {
+            string text = "It is raining today in Seattle.";
+
+            var comprehendClient = new AmazonComprehendClient(Amazon.RegionEndpoint.USWest2);
+
+            Console.WriteLine("Calling DetectDominantLanguage\n");
+            var detectDominantLanguageRequest = new DetectDominantLanguageRequest()
+            {
+                Text = text,
+            };
+
+            var detectDominantLanguageResponse = await comprehendClient.DetectDominantLanguageAsync(detectDominantLanguageRequest);
+            foreach (var dl in detectDominantLanguageResponse.Languages)
+            {
+                Console.WriteLine($"Language Code: {dl.LanguageCode}, Score: {dl.Score}");
+            }
+
+            Console.WriteLine("Done");
+        }
+    }
+```
++  For API details, see [DetectDominantLanguage](https://docs.aws.amazon.com/goto/DotNetSDKV3/comprehend-2017-11-27/DetectDominantLanguage) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**To detect the dominant language of input text**
+The following `detect-dominant-language` analyzes the input text and identifies the dominant language. The pre-trained model's confidence score is also output.
+
+```
+aws comprehend detect-dominant-language \
+    --text {{"It is a beautiful day in Seattle."}}
+```
+Output:
+
+```
+{
+    "Languages": [
+        {
+            "LanguageCode": "en",
+            "Score": 0.9877256155014038
+        }
+    ]
+}
+```
+For more information, see [Dominant Language](https://docs.aws.amazon.com/comprehend/latest/dg/how-languages.html) in the *Amazon Comprehend Developer Guide*.
++  For API details, see [DetectDominantLanguage](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/comprehend/detect-dominant-language.html) in *AWS CLI Command Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/comprehend#code-examples).
+
+```
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.comprehend.ComprehendClient;
+import software.amazon.awssdk.services.comprehend.model.ComprehendException;
+import software.amazon.awssdk.services.comprehend.model.DetectDominantLanguageRequest;
+import software.amazon.awssdk.services.comprehend.model.DetectDominantLanguageResponse;
+import software.amazon.awssdk.services.comprehend.model.DominantLanguage;
+import java.util.List;
+
+/**
+ * Before running this Java V2 code example, set up your development
+ * environment, including your credentials.
+ *
+ * For more information, see the following documentation topic:
+ *
+ * https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/get-started.html
+ */
+public class DetectLanguage {
+    public static void main(String[] args) {
+        // Specify French text - "It is raining today in Seattle".
+        String text = "Il pleut aujourd'hui à Seattle";
+        Region region = Region.US_EAST_1;
+
+        ComprehendClient comClient = ComprehendClient.builder()
+                .region(region)
+                .build();
+
+        System.out.println("Calling DetectDominantLanguage");
+        detectTheDominantLanguage(comClient, text);
+        comClient.close();
+    }
+
+    public static void detectTheDominantLanguage(ComprehendClient comClient, String text) {
+        try {
+            DetectDominantLanguageRequest request = DetectDominantLanguageRequest.builder()
+                    .text(text)
+                    .build();
+
+            DetectDominantLanguageResponse resp = comClient.detectDominantLanguage(request);
+            List<DominantLanguage> allLanList = resp.languages();
+            for (DominantLanguage lang : allLanList) {
+                System.out.println("Language is " + lang.languageCode());
+            }
+
+        } catch (ComprehendException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
+    }
+}
+```
++  For API details, see [DetectDominantLanguage](https://docs.aws.amazon.com/goto/SdkForJavaV2/comprehend-2017-11-27/DetectDominantLanguage) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/comprehend#code-examples).
+
+```
+class ComprehendDetect:
+    """Encapsulates Comprehend detection functions."""
+
+    def __init__(self, comprehend_client):
+        """
+        :param comprehend_client: A Boto3 Comprehend client.
+        """
+        self.comprehend_client = comprehend_client
+
+    def detect_languages(self, text):
+        """
+        Detects languages used in a document.
+
+        :param text: The document to inspect.
+        :return: The list of languages along with their confidence scores.
+        """
+        try:
+            response = self.comprehend_client.detect_dominant_language(Text=text)
+            languages = response["Languages"]
+            logger.info("Detected %s languages.", len(languages))
+        except ClientError:
+            logger.exception("Couldn't detect languages.")
+            raise
+        else:
+            return languages
+```
++  For API details, see [DetectDominantLanguage](https://docs.aws.amazon.com/goto/boto3/comprehend-2017-11-27/DetectDominantLanguage) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/cpd#code-examples).
+
+```
+    TRY.
+        oo_result = lo_cpd->detectdominantlanguage( iv_text = iv_text ).
+        MESSAGE 'Languages detected.' TYPE 'I'.
+      CATCH /aws1/cx_cpdtextsizelmtexcdex.
+        MESSAGE 'Text size exceeds limit.' TYPE 'E'.
+      CATCH /aws1/cx_cpdinternalserverex.
+        MESSAGE 'Internal server error occurred.' TYPE 'E'.
+      CATCH /aws1/cx_cpdinvalidrequestex.
+        MESSAGE 'Invalid request.' TYPE 'E'.
+    ENDTRY.
+```
++  For API details, see [DetectDominantLanguage](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------
+
+For a complete list of AWS SDK developer guides and code examples, see [Using Amazon Comprehend with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.

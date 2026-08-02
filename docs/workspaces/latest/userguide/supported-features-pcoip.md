@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/supported-features-pcoip.html
+---
+
+# Supported PCoIP features for WorkSpaces
+<a name="supported-features-pcoip"></a>
+
+**Note**
+End of support notice: On October 31, 2027, AWS will end support for PCoIP-based WorkSpaces Personal. After October 31, 2027, you will no longer be able to access the WorkSpaces console or WorkSpaces resources using the PCoIP protocol. For more information, see [PCoIP-based WorkSpaces Personal end of support](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-pcoip-end-of-support.html).
+
+**Note**
+Starting November 7, 2025, Amazon WorkSpaces PCoIP Web Access will no longer be open to new customers. After this date, the feature will only receive critical functional and security updates.
+For more information, see [WorkSpaces Web Access](amazon-workspaces-web-access.md).
+
+The following table compares the features that are supported by the PCoIP WorkSpaces clients.
+
+| Feature | Windows client | MacOS client | Linux client | iPad client | Web access | Android | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Client access restriction | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  [ Control device access](https://docs.aws.amazon.com/workspaces/latest/adminguide/update-directory-details.html#control-device-access) |
+| USB redirection | Available with exceptions | ✗ | ✗ | N/A | ✗ | N/A | WorkSpaces only supports YubiKey redirection for Windows clients. For a list of supported devices, see [WorkSpaces client peripheral device support](https://docs.aws.amazon.com/workspaces/latest/userguide/peripheral_devices.html). For more information on YubiKey redirection, see [ Hardware security keys](https://docs.aws.amazon.com/workspaces/latest/userguide/peripheral_devices.html#hardware-security-keys).  |
+| Audio input | ✓ | ✓ | ✓ | ✓ | ✗ | ✓ |  |
+| Video input | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | WorkSpaces supports video input on DCV only. |
+| Storage redirection | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |  |
+| Local printer redirection | ✓ | ✓ | ✗ | ✗ | ✗ | ✗ | [ Print from a WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/userguide/printing.html) |
+| Clipboard redirection | ✓ | ✓ | ✗ | Available with exceptions | ✓ | Available with exceptions | Copy and paste on iPad and Android supports text and HTML content only. |
+| HIPAA/PCI compliance | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | [ Compliance and Security FAQ](https://aws.amazon.com/workspaces/faqs/#Compliance_and_Security) |
+| Active directory authentication | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | [ Manage directories for WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/manage-workspaces-directory.html) |
+| SAML 2.0 | ✓ | ✓ | ✓ | ✗ | ✗ | ✗ |  |
+| Certificate-based Authentication | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |  |
+| Multi-factor authentication (MFA) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | [ Compliance and Security FAQ](https://aws.amazon.com/workspaces/faqs/#Compliance_and_Security) |
+| Smart card (CAC and PIV readers) | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ | [ WorkSpaces client smart card support](https://docs.aws.amazon.com/workspaces/latest/userguide/smart_card_support.html) |
+| Certificate for access control | ✓ | ✓ | ✗ | ✗ | ✗ | ✓ | [ Configure the restriction](https://docs.aws.amazon.com/workspaces/latest/adminguide/trusted-devices.html#configure-restriction) |
+| Encryption at rest | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | [Encryption FAQ](https://aws.amazon.com/workspaces/faqs/#Encryption) |
+| Client customization available | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | [ Customize WorkSpaces branding](https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-branding.html) |
+| YubiKey support | ✓ | ✗ | ✗ | ✗ | ✗ | ✗ | [ Enable USB redirection for YubiKey U2F](https://docs.aws.amazon.com/workspaces/latest/adminguide/group_policy.html#gp_usbredirection) |
+| Monitor support |  [ Windows display support](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html#windows-display-support)  |  [ macOS display support](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html#osx-display-support)  |  [ Linux display support](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html#linux-display-support)  | N/A |  [ Web access client views](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-web-access.html#web-access-views)  |  [ Android client views](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html#android_display_support)  |  |

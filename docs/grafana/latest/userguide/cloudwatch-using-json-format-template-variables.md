@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-using-json-format-template-variables.html
+---
+
+# Using JSON format template variables
+<a name="cloudwatch-using-json-format-template-variables"></a>
+
+ Some queries accept filters in JSON format and Grafana supports the conversion of template variables to JSON.
+
+ If `env = 'production', 'staging'`, the following query will return ARNs of EC2 instances for which the `Environment` tag is `production` or `staging`.
+
+```
+resource_arns(us-east-1, ec2:instance, {"Environment":${env:json}})
+```

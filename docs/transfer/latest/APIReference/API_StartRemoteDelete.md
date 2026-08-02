@@ -1,0 +1,114 @@
+---
+source_url: https://docs.aws.amazon.com/transfer/latest/APIReference/API_StartRemoteDelete.html
+---
+
+# StartRemoteDelete
+<a name="API_StartRemoteDelete"></a>
+
+Deletes a file or directory on the remote SFTP server.
+
+## Request Syntax
+<a name="API_StartRemoteDelete_RequestSyntax"></a>
+
+```
+{
+   "ConnectorId": "{{string}}",
+   "DeletePath": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_StartRemoteDelete_RequestParameters"></a>
+
+For information about the parameters that are common to all actions, see [Common Parameters](CommonParameters.md).
+
+The request accepts the following data in JSON format.
+
+ ** [ConnectorId](#API_StartRemoteDelete_RequestSyntax) **   <a name="TransferFamily-StartRemoteDelete-request-ConnectorId"></a>
+The unique identifier for the connector.
+Type: String
+Length Constraints: Fixed length of 19.
+Pattern: `c-([0-9a-f]{17})`
+Required: Yes
+
+ ** [DeletePath](#API_StartRemoteDelete_RequestSyntax) **   <a name="TransferFamily-StartRemoteDelete-request-DeletePath"></a>
+The absolute path of the file or directory to delete. You can only specify one path per call to this operation.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 1024.
+Pattern: `(.)+`
+Required: Yes
+
+## Response Syntax
+<a name="API_StartRemoteDelete_ResponseSyntax"></a>
+
+```
+{
+   "DeleteId": "string"
+}
+```
+
+## Response Elements
+<a name="API_StartRemoteDelete_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [DeleteId](#API_StartRemoteDelete_ResponseSyntax) **   <a name="TransferFamily-StartRemoteDelete-response-DeleteId"></a>
+Returns a unique identifier for the delete operation.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 512.
+Pattern: `[0-9a-zA-Z./-]+`
+
+## Errors
+<a name="API_StartRemoteDelete_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalServiceError **
+This exception is thrown when an error occurs in the AWS Transfer Family service.
+HTTP Status Code: 500
+
+ ** InvalidRequestException **
+This exception is thrown when the client submits a malformed request.
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+This exception is thrown when a resource is not found by the AWSTransfer Family service.
+HTTP Status Code: 400
+
+ ** ServiceUnavailableException **
+The request has failed because the AWSTransfer Family service is not available.
+HTTP Status Code: 500
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 400
+
+## Examples
+<a name="API_StartRemoteDelete_Examples"></a>
+
+### Example
+<a name="API_StartRemoteDelete_Example_1"></a>
+
+The following example deletes a file on the remote SFTP server in the path `/delete/folder/deleteFile`, and returns a unique identifier for the operation.
+
+```
+aws transfer start-remote-delete --connector-id c-AAAA1111BBBB2222C \
+   --delete-path /delete/folder/deleteFile
+```
+
+## See Also
+<a name="API_StartRemoteDelete_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/transfer-2018-11-05/StartRemoteDelete)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/transfer-2018-11-05/StartRemoteDelete)

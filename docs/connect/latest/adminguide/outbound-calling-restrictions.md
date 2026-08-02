@@ -1,0 +1,106 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/outbound-calling-restrictions.html
+---
+
+# Outbound calling restrictions in Connect Customer
+<a name="outbound-calling-restrictions"></a>
+
+This topic explains restrictions that are in place for outbound calling with Connect Customer.
+
+**Topics**
++ [Use of toll-free numbers outside the country of origin](#restriction1)
++ [Use of UIFN numbers for outbound dialing](#restriction2)
++ [Redirection of calls](#restriction3)
++ [International calling restrictions](#restriction4)
+
+## Use of toll-free numbers outside the country of origin
+<a name="restriction1"></a>
+
+Connect Customer does not support the use of toll-free numbers for international calling. International calls from toll-free numbers can be flagged as spam by downstream providers, resulting in negative reputation scores. They can also generate unexpected fees for call recipients.
+
+## Use of UIFN numbers for outbound dialing
+<a name="restriction2"></a>
+
+UIFN numbers are designed to be used for inbound calls only. They cannot be used for outbound calling. If you attempt to use UIFN for outbound calling, the calls will be blocked.
+
+## Redirection of calls
+<a name="restriction3"></a>
+
+If you are using Amazon Connect to redirect calls: If you are receiving calls with Anonymous (withheld CLI), you must use an Connect Customer number for the transfer.
+
+**Important:** Anonymous calls (calls without caller ID) are increasingly blocked by carriers as anti-spam measures and may violate telecommunications regulations in many countries. Always configure a valid caller ID number from your Amazon Connect instance to ensure reliable call delivery.
+
+See [Set up outbound caller ID in Connect Customer](queues-callerid.md).
+
+## International calling restrictions
+<a name="restriction4"></a>
+
+Connect Customer has several restrictions on international calling. These are based on requirements in the following specific jurisdictions.
+
+### South Africa
+<a name="southafrica-cr"></a>
+
+South African mobile numbers available under the DID option are designed to be national-only services and are not supported for international calling.
+
+### Taiwan
+<a name="taiwan-cr"></a>
+
+Taiwan DID's are set up to be in-country only services and are not internationally reachable.
+
+### Vietnam
+<a name="vietnam-cr"></a>
+
+Vietnamese carriers are implementing enhanced fraud prevention measures with stricter limitations for calling activities. Connect Customer requires that all customers calling Vietnamese numbers comply with additional requirements for continued use.
+
+#### Eligibility criteria
+<a name="eligibility-vietnam-cr"></a>
++ **Unsupported use cases**
+  + Short calls and alerting (less than 15 seconds).
+  + Any form of cold calling, marketing or advertising.
+  + Any calls to invalid phone numbers. All numbers called must be validated as accurate.
+  + Repeated calls using the same FROM / TO numbers (no more than 3 per day)
+  + Any calls from a number that cannot be called back.
++ **Supported use cases**
+  + Direct calls to known business entities. For example, calling a hotel or IT support function.
+  + Calling users who attempted to engage with your business. For example, university placement schemes or product purchases.
+  + Customer care activities, for example calling a customer to provide hardware support.
+
+### China
+<a name="china-cr"></a>
+
+Chinese carriers are increasingly blocking international routes into China unilaterally. Connect Customer has taken steps to continue to support our existing customers but require that all customers comply with additional requirements for continued use. Starting October 14, 2023 all customers approved to call China are required to follow these conditions.
+
+#### Eligibility criteria
+<a name="criteria-cr"></a>
++ **Unsupported use cases**
+  + Short calls and alerting (less than 15 seconds).
+  + High volume of calls, especially when done over a short period of time, using the same outbound caller ID (more than 5 calls per minute).
+  + Any form of cold calling.
+  + Any calls to invalid phone numbers. All numbers called must be validated as accurate.
+  + Repeated calls using the same FROM / TO numbers.
+  + Attempts to call China FROM any number that has not been pre-approved.
++ **Supported use cases**
+  + Direct calls to known business entities. For example, calling a hotel or IT support function.
+  + Calling users who attempted to engage with your business. For example, university placement schemes or product purchases.
+
+#### Data required for setup
+<a name="datarequired-cr"></a>
+
+To request the ability to call Chinese telephone numbers (\+86), perform the following steps:
++ You must provide an exact list of telephony numbers you will use to phone China.
+  + The number must be a DID provided by Connect Customer. No other number is acceptable.
+  + The number cannot be a DID provided by Hong Kong, Macau, Taiwan, China, or Singapore.
+**Note**
+The preceding list may change at any time.
++ Any number used to call Chinese telephone numbers must be able to called back. You must also implement a call back message that clearly states the name of the company that is associated with the phone number.
++ You must provide a detailed description of your use case, and confirm that you meet the [eligibility criteria](#criteria-cr) described in this topic.
+
+#### Consequences for violating the calling criteria for China
+<a name="impact-cr"></a>
+
+Connect Customer has a zero tolerance policy for calling into China. Amazon will suspend your use of Connect Customer if you use the service for any of the restricted use cases identified in this topic. It is essential that the administrators of your Connect Customer service focus on ensuring the members of your organization are aware of these restrictions, as ignorance of the rules is not an acceptable reason for breach.
+
+#### Service assurance
+<a name="assurance-cr"></a>
+
+In the event of further incidents where Chinese carriers block major international routes without prior warning and impact the ability to call China, the exemptions in the [Connect Customer Service Level Agreement](https://aws.amazon.com/connect/sla/) will take effect.

@@ -1,0 +1,34 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_IamIdentity.html
+---
+
+# IamIdentity
+<a name="API_IamIdentity"></a>
+
+The IAM Identity details associated with the user. These details are associated with model package groups, model packages and project entities only.
+
+## Contents
+<a name="API_IamIdentity_Contents"></a>
+
+ ** Arn **   <a name="sagemaker-Type-IamIdentity-Arn"></a>
+The Amazon Resource Name (ARN) of the IAM identity.
+Type: String
+Required: No
+
+ ** PrincipalId **   <a name="sagemaker-Type-IamIdentity-PrincipalId"></a>
+The ID of the principal that assumes the IAM identity.
+Type: String
+Required: No
+
+ ** SourceIdentity **   <a name="sagemaker-Type-IamIdentity-SourceIdentity"></a>
+The person or application which assumes the IAM identity.
+Type: String
+Required: No
+
+## See Also
+<a name="API_IamIdentity_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sagemaker-2017-07-24/IamIdentity)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sagemaker-2017-07-24/IamIdentity)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sagemaker-2017-07-24/IamIdentity)

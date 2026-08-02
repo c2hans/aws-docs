@@ -1,0 +1,135 @@
+---
+source_url: https://docs.aws.amazon.com/solutions/latest/constructs/aws_apigateway_dynamodb.html
+---
+
+# aws-apigateway-dynamodb
+<a name="aws_apigateway_dynamodb"></a>
+
+![Stability:Stable](https://img.shields.io/badge/cfn—​resources-stable-success.svg?style=for-the-badge)
+
+|  |  |
+| --- |--- |
+|  Reference Documentation: | https://docs.aws.amazon.com/solutions/latest/constructs/ |
+
+|  **Language**  |  **Package**  |
+| --- | --- |
+|  ![Python Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/python32.png) Python |  `aws_solutions_constructs.aws_apigateway_dynamodb`  |
+|  ![Typescript Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/typescript32.png) Typescript |  `@aws-solutions-constructs/aws-apigateway-dynamodb`  |
+|  ![Java Logo](https://docs.aws.amazon.com/images/solutions/latest/constructs/images/java32.png) Java |  `software.amazon.awsconstructs.services.apigatewaydynamodb`  |
+
+## Overview
+<a name="_overview"></a>
+
+This AWS Solutions Construct implements an Amazon API Gateway REST API connected to Amazon DynamoDB table.
+
+Here is a minimal deployable pattern definition in:
+
+**Example**
+
+```
+import { Construct } from 'constructs';
+import { Stack, StackProps } from 'aws-cdk-lib';
+import { ApiGatewayToDynamoDBProps, ApiGatewayToDynamoDB } from "@aws-solutions-constructs/aws-apigateway-dynamodb";
+
+new ApiGatewayToDynamoDB(this, 'test-api-gateway-dynamodb-default', {});
+```
+
+```
+from aws_solutions_constructs.aws_apigateway_dynamodb import ApiGatewayToDynamoDB
+from aws_cdk import Stack
+from constructs import Construct
+
+ApiGatewayToDynamoDB(self, 'test-api-gateway-dynamodb-default')
+```
+
+```
+import software.constructs.Construct;
+
+import software.amazon.awscdk.Stack;
+import software.amazon.awscdk.StackProps;
+import software.amazon.awsconstructs.services.apigatewaydynamodb.*;
+
+new ApiGatewayToDynamoDB(this, "test-api-gateway-dynamodb-default", new ApiGatewayToDynamoDBProps.Builder()
+        .build());
+```
+
+## Pattern Construct Props
+<a name="_pattern_construct_props"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| dynamoTableProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.TableProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.TableProps.html)  | Optional user provided props to override the default props for the DynamoDB Table. Providing both this and `existingTableInterface` causes an error. |
+| existingTableObj? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html)  | Existing instance of DynamoDB table object, providing both this and `dynamoTableProps` will cause an error. |
+| apiGatewayProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApiProps.html)  | Optional - user provided props to override the default props for the API Gateway. |
+| createUsagePlan? | boolean | Whether to create a Usage Plan attached to the API. Must be true if apiGatewayProps.defaultMethodOptions.apiKeyRequired is true. @default - true (to match legacy behavior) |
+| resourceName? |  `string`  | Optional name of the resource on the API Gateway. Defaults to the table’s partitionKeyName |
+| allowCreateOperation? |  `boolean`  | Whether to deploy an API Gateway Method for POST HTTP operations on the DynamoDB table (i.e. dynamodb:PutItem). |
+| createRequestTemplate? |  `string`  | API Gateway Request Template for the create method for the default `application/json` content-type. This property is required if the `allowCreateOperation` property is set to true. |
+| additionalCreateRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Create Request Templates for content-types other than `application/json`. Use the `createRequestTemplate` property to set the request template for the `application/json` content-type. This property can only be specified if the `allowCreateOperation` property is set to true. |
+| createIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the create method. This property can only be specified if the `allowCreateOperation` property is set to true. |
+| createMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the create action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| allowReadOperation? |  `boolean`  | Whether to deploy an API Gateway Method for GET HTTP operations on DynamoDB table (i.e. dynamodb:Query). |
+| readRequestTemplate? |  `string`  | API Gateway Request Template for the read method for the default `application/json` content-type. The default template only supports a partition key and not partition \+ sort keys. |
+| additionalReadRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Read Request Templates for content-types other than `application/json`. Use the `readRequestTemplate` property to set the request template for the `application/json` content-type. |
+| readIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the read method. |
+| allowUpdateOperation? |  `boolean`  | Whether to deploy API Gateway Method for PUT HTTP operations on DynamoDB table (i.e. dynamodb:UpdateItem). |
+| readMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the read action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| updateRequestTemplate? |  `string`  | API Gateway Request Template for the update method. This property is required if the `allowUpdateOperation` property is set to true. |
+| additionalUpdateRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Update Request Templates for content-types other than `application/json`. Use the `updateRequestTemplate` property to set the request template for the `application/json` content-type. This property can only be specified if the `allowUpdateOperation` property is set to true. |
+| updateIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the update method. This property can only be specified if the `allowUpdateOperation` property is set to true. |
+| updateMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the update action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| allowDeleteOperation? |  `boolean`  | Whether to deploy API Gateway Method for DELETE HTTP operations on DynamoDB table (i.e. dynamodb:DeleteItem). |
+| deleteRequestTemplate? |  `string`  | API Gateway Request Template for the delete method for the default `application/json` content-type. |
+| additionalDeleteRequestTemplates? |  `{ [contentType: string]: string; }`  | Optional Delete request templates for content-types other than `application/json`. Use the `deleteRequestTemplate` property to set the request template for the `application/json` content-type. This property can only be specified if the `allowDeleteOperation` property is set to true. |
+| deleteIntegrationResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.IntegrationResponse.html)  | Optional, custom API Gateway Integration Response for the delete method. This property can only be specified if the `allowDeleteOperation` property is set to true. |
+| deleteMethodResponses? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.MethodResponse.html)  | Optional, custom API Gateway Method Responses for the delete action. default: [{ statusCode: "200", responseParameters: { "method.response.header.Content-Type": true }},{ statusCode: "500", responseParameters: { "method.response.header.Content-Type": true } } ] |
+| logGroupProps? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroupProps.html)  | User provided props to override the default props for for the CloudWatchLogs LogGroup. |
+
+## Pattern Properties
+<a name="_pattern_properties"></a>
+
+|  **Name**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+| apiGateway |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_apigateway.RestApi.html)  | Returns an instance of the api.RestApi created by the construct. |
+| apiGatewayRole |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the iam.Role created by the construct for API Gateway. |
+| dynamoTable |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_dynamodb.Table.html)  | Returns an instance of dynamodb.Table created by the construct. |
+| apiGatewayCloudWatchRole? |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.Role.html)  | Returns an instance of the iam.Role created by the construct for API Gateway for CloudWatch access. |
+| apiGatewayLogGroup |  [https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.LogGroup.html)  | Returns an instance of the LogGroup created by the construct for API Gateway access logging to CloudWatch. |
+
+## API Gateway Request/Response Template Properties Overview
+<a name="_api_gateway_requestresponse_template_properties_overview"></a>
+
+This construct allows you to implement four DynamoDB API operations, CREATE/READ/UPDATE/DELETE (corresponding the HTTP POST/GET/PUT/DELETE requests respectively). They are completely independent and each follows the same pattern: \* Setting `allowCreateOperation` to true will implement the `application/json` content-type with default request and response templates \* The request template for `application/json` requests can be customized using the `createRequestTemplate` prop values \* *Additional* request templates can be specified using the `additionalCreateRequestTemplates` prop value. Note - these DO NOT replace the `application/json` content-type \* Customized integration responses can be specified for any content type in the `createIntegrationResponses` prop value.
+
+Supplying any of these values without setting allowCreateOperation to true will result in an error. This pattern is the same for all four API operations.
+
+## Default settings
+<a name="_default_settings"></a>
+
+Out of the box implementation of the Construct without any override will set the following defaults:
+
+### Amazon API Gateway
+<a name="_amazon_api_gateway"></a>
++ Deploy an edge-optimized API endpoint
++ Enable CloudWatch logging for API Gateway
++ Configure least privilege access IAM role for API Gateway
++ Set the default authorizationType for all API methods to IAM
++ Enable X-Ray Tracing
+
+### Amazon DynamoDB Table
+<a name="_amazon_dynamodb_table"></a>
++ Set the billing mode for DynamoDB Table to On-Demand (Pay per request)
++ Enable server-side encryption for DynamoDB Table using AWS managed KMS Key
++ Creates a partition key called "id" for DynamoDB Table
++ Retain the Table when deleting the CloudFormation stack
++ Enable continuous backups and point-in-time recovery
+
+## Architecture
+<a name="_architecture"></a>
+
+![Diagram showing data flow from code to database, with security and cloud search components.](http://docs.aws.amazon.com/solutions/latest/constructs/images/aws-apigateway-dynamodb.png)
+
+## Github
+<a name="_github"></a>
+
+Go to the [Github repo](https://github.com/awslabs/aws-solutions-constructs/tree/main/source/patterns/%40aws-solutions-constructs/aws-apigateway-dynamodb) for this pattern to view the code, read/create issues and pull requests and more.

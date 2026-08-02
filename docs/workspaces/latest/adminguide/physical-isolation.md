@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/physical-isolation.html
+---
+
+# Isolation on physical hosts
+<a name="physical-isolation"></a>
+
+Different WorkSpaces on the same physical host are isolated from each other through the hypervisor. It is as though they are on separate physical hosts. When a WorkSpace is deleted, the memory allocated to it is scrubbed (set to zero) by the hypervisor before it is allocated to a new WorkSpace.

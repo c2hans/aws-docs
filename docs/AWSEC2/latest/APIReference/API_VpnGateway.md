@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_VpnGateway.html
+---
+
+# VpnGateway
+<a name="API_VpnGateway"></a>
+
+Describes a virtual private gateway.
+
+## Contents
+<a name="API_VpnGateway_Contents"></a>
+
+ ** amazonSideAsn **
+The private Autonomous System Number (ASN) for the Amazon side of a BGP session.
+Type: Long
+Required: No
+
+ ** Attachments.N **
+Any VPCs attached to the virtual private gateway.
+Type: Array of [VpcAttachment](API_VpcAttachment.md) objects
+Required: No
+
+ ** availabilityZone **
+The Availability Zone where the virtual private gateway was created, if applicable. This field may be empty or not returned.
+Type: String
+Required: No
+
+ ** state **
+The current state of the virtual private gateway.
+Type: String
+Valid Values: `pending | available | deleting | deleted`
+Required: No
+
+ ** TagSet.N **
+Any tags assigned to the virtual private gateway.
+Type: Array of [Tag](API_Tag.md) objects
+Required: No
+
+ ** type **
+The type of VPN connection the virtual private gateway supports.
+Type: String
+Valid Values: `ipsec.1`
+Required: No
+
+ ** vpnGatewayId **
+The ID of the virtual private gateway.
+Type: String
+Required: No
+
+## See Also
+<a name="API_VpnGateway_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/VpnGateway)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/VpnGateway)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/VpnGateway)

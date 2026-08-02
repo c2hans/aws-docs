@@ -1,0 +1,72 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/r_ATTACH_RLS_POLICY.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# ATTACH RLS POLICY
+<a name="r_ATTACH_RLS_POLICY"></a>
+
+Attach a row-level security policy on a table to one or more users or roles.
+
+Superusers and users or roles that have the `sys:secadmin` role can attach a policy.
+
+## Syntax
+<a name="r_ATTACH_RLS_POLICY-synopsis"></a>
+
+```
+ATTACH RLS POLICY
+{
+  policy_name ON [TABLE] table_name [, ...]
+  | database_name.policy_name ON [TABLE] database_name.schema_name.table_name [, ...]
+}
+TO { user_name | ROLE role_name | PUBLIC } [, ...]
+```
+
+## Parameters
+<a name="r_ATTACH_RLS_POLICY-parameters"></a>
+
+ *policy\_name*
+The name of the policy.
+
+database\_name
+The name of the database where the policy and the relation are created. The policy and the relation needs to be on the same database. The database can be the connected database or a database that supports Amazon Redshift federated permissions.
+
+schema\_name
+The name of the schema the relation belongs to.
+
+table\_name
+The relation that the row-level security policy is attached to.
+
+TO { *user\_name* \| ROLE *role\_name* \| PUBLIC} [, ...]
+Specifies whether the policy is attached to one or more specified users or roles.
+
+For the usage of ATTACH RLS POLICY on Amazon Redshift Federated Permissions Catalog, see [ Managing access control with Amazon Redshift federated permissions](https://docs.aws.amazon.com/redshift/latest/dg/federated-permissions-managing-access.html).
+
+## Usage notes
+<a name="r_ATTACH_RLS_POLICY-usage"></a>
+
+When working with the ATTACH RLS POLICY statement, observe the following:
++ The table being attached should have all the columns listed in the WITH clause of the policy creation statement.
++ Amazon Redshift RLS supports attaching RLS policies to the following objects:
+  +  Tables
+  +  Views
+  +  Late-binding views
+  +  Materialized views
++ Amazon Redshift RLS doesn't support attaching RLS policies to the following objects:
+  +  Catalog tables
+  +  Cross-database relations
+  +  External tables
+  +  Temporary tables
+  +  Policy lookup tables
+  + Materialized view base tables
++ RLS policies that are attached to superusers or to users with the `sys:secadmin` permission are ignored.
+
+## Examples
+<a name="r_ATTACH_RLS_POLICY-examples"></a>
+
+The following example attaches an RLS policy to the specified table and role combinations. The RLS policy applies to any users with the role of `analyst` or `dbadmin` when they access the tickit\_category\_redshift table.
+
+```
+ATTACH RLS POLICY policy_concerts ON tickit_category_redshift TO ROLE analyst, ROLE dbadmin;
+```

@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/opl-frame-accuracy.html
+---
+
+# About output locking and frame accuracy
+<a name="opl-frame-accuracy"></a>
+
+You can implement output locking to produce video outputs that are *frame accurate *with each other. The frames from several outputs are *locked *together.
+
+Frame accuracy means that two frames with the same timecode are identical in the following ways:
++ The same content—the same picture on the video frame.
++ The same segment number, manifest data, and so on.
++ The same presentation timestamp (PTS).

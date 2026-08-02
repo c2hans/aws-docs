@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/config/latest/developerguide/elasticache-repl-grp-redis-auth-enabled.html
+---
+
+# elasticache-repl-grp-redis-auth-enabled
+<a name="elasticache-repl-grp-redis-auth-enabled"></a>
+
+Checks if Amazon ElastiCache replication groups have Redis AUTH enabled. The rule is NON\_COMPLIANT for an ElastiCache replication group if the Redis version of its nodes is below 6 (Version 6\+ use Redis ACLs) and ‘AuthToken’ is missing or is empty/null.
+
+**Identifier:** ELASTICACHE\_REPL\_GRP\_REDIS\_AUTH\_ENABLED
+
+**Resource Types:** AWS::ElastiCache::ReplicationGroup
+
+**Trigger type:** Periodic
+
+**AWS Region:** All supported AWS regions except Asia Pacific (New Zealand), Asia Pacific (Thailand), Asia Pacific (Jakarta), Middle East (UAE), Asia Pacific (Hyderabad), Asia Pacific (Malaysia), Asia Pacific (Melbourne), AWS GovCloud (US-East), AWS GovCloud (US-West), Mexico (Central), Israel (Tel Aviv), Asia Pacific (Taipei), Canada West (Calgary), Europe (Spain), Europe (Zurich) Region
+
+**Parameters:**
+
+None
+
+## AWS CloudFormation template
+<a name="w2aac20c16c17b7d751c19"></a>
+
+To create AWS Config managed rules with AWS CloudFormation templates, see [Creating AWS Config Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md).

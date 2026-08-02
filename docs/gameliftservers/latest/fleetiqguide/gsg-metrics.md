@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-metrics.html
+---
+
+# Monitor Amazon GameLift Servers FleetIQ with Amazon CloudWatch
+<a name="gsg-metrics"></a>
+
+Use Amazon CloudWatch metrics to scale your instance capacity, build operations dashboards, and trigger alarming. Amazon GameLift Servers FleetIQ as a standalone solution emits a set of Amazon CloudWatch metrics to your AWS account. Also see [Monitoring Your Auto Scaling Groups and Instances Using Amazon CloudWatch](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the *Amazon EC2 Auto Scaling User Guide*.
+
+The FleetIQ metrics are listed here. See complete Amazon CloudWatch metric information for Amazon GameLift Servers at [Amazon GameLift Servers metrics](https://docs.aws.amazon.com/gamelift/latest/developerguide/monitoring-cloudwatch.html).
+
+| Metric | Description |
+| --- | --- |
+| `AvailableGameServers` | Game servers that are available to run a game execution and are not currently occupied with gameplay. This number includes game servers that have been claimed but are still in AVAILABLE status.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup |
+| `UtilizedGameServers` | Game servers that are currently occupied with gameplay. This number includes game servers that are in UTILIZED status.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup |
+| `DrainingAvailableGameServers` | Game servers on instances scheduled for termination that are currently not supporting gameplay. These game servers are the lowest priority to be claimed in response to a new claim request.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup |
+| `DrainingUtilizedGameServers` | Game servers on instances scheduled for termination that are currently supporting gameplay.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup |
+| `PercentUtilizedGameServers` | Portion of game servers that are currently supporting game executions. This metric indicates the amount of game server capacity that is currently in use. It is useful for driving an Auto Scaling policy that can dynamically add and remove instances to match with player demand.<br />Units: Percent<br />Relevant Amazon CloudWatch statistics: Average, Minimum, Maximum<br />Dimensions: GameServerGroup |
+| `GameServerInterruptions` | Game servers on Spot Instances that were interrupted due to limited Spot availability.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup, InstanceType |
+| `InstanceInterruptions` | Spot Instances that were interrupted due to limited availability.<br />Units: Count<br />Relevant Amazon CloudWatch statistics: Sum<br />Dimensions: GameServerGroup, InstanceType |

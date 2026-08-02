@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html
+---
+
+# Define the environment for your algorithm script
+<a name="braket-jobs-script-environment"></a>
+
+Amazon Braket supports environments defined by containers for your algorithm script:
++ A base container (the default, if no `image_uri` is specified)
++ A container with CUDA-Q
++ A container with Tensorflow and PennyLane
++ A container with PyTorch, PennyLane, and CUDA-Q
+
+The following table provides details about the containers and the libraries they include.
+
+**Amazon Braket containers**
+
+| Type | Base | CUDA-Q | TensorFlow | PyTorch |
+| --- | --- | --- | --- | --- |
+|  **Image URI**  | 292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-base-jobs:latest | 292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-cudaq-jobs:latest | 292282985366.dkr.ecr.us-east-1.amazonaws.com/amazon-braket-tensorflow-jobs:latest | 292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-pytorch-jobs:latest |
+|  **Inherited Libraries**  |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |
+|  **Additional Libraries**  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/braket/latest/developerguide/braket-jobs-script-environment.html)  |
+
+You can view and access the open source container definitions at [aws/amazon-braket-containers](https://github.com/aws/amazon-braket-containers). Choose the container that best matches your use case. You can use any of the available AWS Regions in Braket (us-east-1, us-west-1, us-west-2, eu-north-1, eu-west-2), but the container Region must match the Region for your hybrid job. Specify the container image when you create a hybrid job by adding one of the following three arguments to your `create(…​)` call in the hybrid job script. You can install additional dependencies into the container you choose at runtime (at the cost of startup or runtime) because the Amazon Braket containers have internet connectivity. The following example is for the us-west-2 Region.
++  **Base image:** image\_uri="292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-base-jobs:latest"
++  **CUDA-Q image:** image\_uri="292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-cudaq-jobs:latest"
++  **Tensorflow image:** image\_uri="292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-tensorflow-jobs:latest"
++  **PyTorch image:** image\_uri="292282985366.dkr.ecr.us-west-2.amazonaws.com/amazon-braket-pytorch-jobs:latest"
+
+The `image-uris` can also be retrieved using the `retrieve_image()` function in the Amazon Braket SDK. The following example shows how to retrieve them from the us-west-2 AWS Region.
+
+```
+from braket.jobs.image_uris import retrieve_image, Framework
+
+image_uri_base = retrieve_image(Framework.BASE, "us-west-2")
+image_uri_cudaq = retrieve_image(Framework.CUDAQ, "us-west-2")
+image_uri_tf = retrieve_image(Framework.PL_TENSORFLOW, "us-west-2")
+image_uri_pytorch = retrieve_image(Framework.PL_PYTORCH, "us-west-2")
+```

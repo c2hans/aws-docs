@@ -1,0 +1,148 @@
+---
+source_url: https://docs.aws.amazon.com/lookout-for-equipment/latest/ug/API_ListLabels.html
+---
+
+ On October 7, 2026, AWS will discontinue support for Amazon Lookout for Equipment. After October 7, 2026, you will no longer be able to access the Lookout for Equipment console or resources. For more information, [see the following](https://aws.amazon.com/blogs/machine-learning/preserve-access-and-explore-alternatives-for-amazon-lookout-for-equipment/).
+
+# ListLabels
+<a name="API_ListLabels"></a>
+
+ Provides a list of labels.
+
+## Request Syntax
+<a name="API_ListLabels_RequestSyntax"></a>
+
+```
+{
+   "Equipment": "{{string}}",
+   "FaultCode": "{{string}}",
+   "IntervalEndTime": {{number}},
+   "IntervalStartTime": {{number}},
+   "LabelGroupName": "{{string}}",
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}"
+}
+```
+
+## Request Parameters
+<a name="API_ListLabels_RequestParameters"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [Equipment](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-Equipment"></a>
+ Lists the labels that pertain to a particular piece of equipment.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 200.
+Pattern: `[\P{M}\p{M}]{1,200}`
+Required: No
+
+ ** [FaultCode](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-FaultCode"></a>
+ Returns labels with a particular fault code.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 100.
+Pattern: `[\P{M}\p{M}]{1,100}`
+Required: No
+
+ ** [IntervalEndTime](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-IntervalEndTime"></a>
+ Returns all labels with a start time earlier than the end time given.
+Type: Timestamp
+Required: No
+
+ ** [IntervalStartTime](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-IntervalStartTime"></a>
+ Returns all the labels with a end time equal to or later than the start time given.
+Type: Timestamp
+Required: No
+
+ ** [LabelGroupName](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-LabelGroupName"></a>
+ Returns the name of the label group.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 200.
+Pattern: `^[0-9a-zA-Z_-]{1,200}$`
+Required: Yes
+
+ ** [MaxResults](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-MaxResults"></a>
+ Specifies the maximum number of labels to list.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 500.
+Required: No
+
+ ** [NextToken](#API_ListLabels_RequestSyntax) **   <a name="LookoutForEquipment-ListLabels-request-NextToken"></a>
+ An opaque pagination token indicating where to continue the listing of label groups.
+Type: String
+Length Constraints: Maximum length of 8192.
+Pattern: `\p{ASCII}{0,8192}`
+Required: No
+
+## Response Syntax
+<a name="API_ListLabels_ResponseSyntax"></a>
+
+```
+{
+   "LabelSummaries": [
+      {
+         "CreatedAt": number,
+         "EndTime": number,
+         "Equipment": "string",
+         "FaultCode": "string",
+         "LabelGroupArn": "string",
+         "LabelGroupName": "string",
+         "LabelId": "string",
+         "Rating": "string",
+         "StartTime": number
+      }
+   ],
+   "NextToken": "string"
+}
+```
+
+## Response Elements
+<a name="API_ListLabels_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [LabelSummaries](#API_ListLabels_ResponseSyntax) **   <a name="LookoutForEquipment-ListLabels-response-LabelSummaries"></a>
+ A summary of the items in the label group.
+If you don't supply the `LabelGroupName` request parameter, or if you supply the name of a label group that doesn't exist, `ListLabels` returns an empty array in `LabelSummaries`.
+Type: Array of [LabelSummary](API_LabelSummary.md) objects
+
+ ** [NextToken](#API_ListLabels_ResponseSyntax) **   <a name="LookoutForEquipment-ListLabels-response-NextToken"></a>
+ An opaque pagination token indicating where to continue the listing of datasets.
+Type: String
+Length Constraints: Maximum length of 8192.
+Pattern: `\p{ASCII}{0,8192}`
+
+## Errors
+<a name="API_ListLabels_Errors"></a>
+
+ ** AccessDeniedException **
+The request could not be completed because you do not have access to the resource.
+HTTP Status Code: 400
+
+ ** InternalServerException **
+ Processing of the request has failed because of an unknown error, exception or failure.
+HTTP Status Code: 500
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 400
+
+ ** ValidationException **
+ The input fails to satisfy constraints specified by Amazon Lookout for Equipment or a related AWS service that's being utilized.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListLabels_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/lookoutequipment-2020-12-15/ListLabels)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/lookoutequipment-2020-12-15/ListLabels)

@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-reference-basic-building-blocks.html
+---
+
+# Streaming SQL Language Elements
+<a name="sql-reference-basic-building-blocks"></a>
+
+The following topics discuss the language elements in Kinesis Data Analytics that underlie its syntax and operations:
+
+**Topics**
++ [Identifiers](sql-reference-identifiers.md)
++ [Data Types](sql-reference-data-types.md)
++ [Streaming SQL Operators](sql-reference-streaming-operators.md)
++ [Expressions and Literals](sql-reference-expressions.md)
++ [Monotonic Expressions and Operators](sql-reference-monotonic-expressions-operators.md)
++ [Condition Clause](sql-reference-conditions.md)
++ [Temporal Predicates](sql-reference-temporal-predicate.md)
++ [Reserved Words and Keywords](sql-reference-reserved-words-keywords.md)

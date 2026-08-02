@@ -1,0 +1,168 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/ec2_example_ec2_DescribeCapacityReservations_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `DescribeCapacityReservations` with a CLI
+<a name="ec2_example_ec2_DescribeCapacityReservations_section"></a>
+
+The following code examples show how to use `DescribeCapacityReservations`.
+
+------
+#### [ CLI ]
+
+**AWS CLI**
+**Example 1: To describe one or more of your capacity reservations**
+The following `describe-capacity-reservations` example displays details about all of your capacity reservations in the current AWS Region.
+
+```
+aws ec2 describe-capacity-reservations
+```
+Output:
+
+```
+{
+    "CapacityReservations": [
+        {
+            "CapacityReservationId": "cr-1234abcd56EXAMPLE ",
+            "OwnerId": "123456789111",
+            "CapacityReservationArn": "arn:aws:ec2:us-east-1:123456789111:capacity-reservation/cr-1234abcd56EXAMPLE",
+            "AvailabilityZoneId": "use1-az2",
+            "InstanceType": "c5.large",
+            "InstancePlatform": "Linux/UNIX",
+            "AvailabilityZone": "us-east-1a",
+            "Tenancy": "default",
+            "TotalInstanceCount": 1,
+            "AvailableInstanceCount": 1,
+            "EbsOptimized": true,
+            "EphemeralStorage": false,
+            "State": "active",
+            "StartDate": "2024-10-23T15:00:24+00:00",
+            "EndDateType": "unlimited",
+            "InstanceMatchCriteria": "open",
+            "CreateDate": "2024-10-23T15:00:24+00:00",
+            "Tags": [],
+            "CapacityAllocations": []
+        },
+        {
+            "CapacityReservationId": "cr-abcdEXAMPLE9876ef ",
+            "OwnerId": "123456789111",
+            "CapacityReservationArn": "arn:aws:ec2:us-east-1:123456789111:capacity-reservation/cr-abcdEXAMPLE9876ef",
+            "AvailabilityZoneId": "use1-az2",
+            "InstanceType": "c4.large",
+            "InstancePlatform": "Linux/UNIX",
+            "AvailabilityZone": "us-east-1a",
+            "Tenancy": "default",
+            "TotalInstanceCount": 1,
+            "AvailableInstanceCount": 1,
+            "EbsOptimized": true,
+            "EphemeralStorage": false,
+            "State": "cancelled",
+            "StartDate": "2024-10-23T15:01:03+00:00",
+            "EndDateType": "unlimited",
+            "InstanceMatchCriteria": "open",
+            "CreateDate": "2024-10-23T15:01:02+00:00",
+            "Tags": [],
+            "CapacityAllocations": []
+        }
+    ]
+}
+```
+**Example 2: To describe one or more of your capacity reservations**
+The following `describe-capacity-reservations` example displays details about the specified capacity reservation.
+
+```
+aws ec2 describe-capacity-reservations \
+    --capacity-reservation-ids {{cr-1234abcd56EXAMPLE}}
+```
+Output:
+
+```
+{
+    "CapacityReservations": [
+        {
+            "CapacityReservationId": "cr-abcdEXAMPLE9876ef ",
+            "OwnerId": "123456789111",
+            "CapacityReservationArn": "arn:aws:ec2:us-east-1:123456789111:capacity-reservation/cr-abcdEXAMPLE9876ef",
+            "AvailabilityZoneId": "use1-az2",
+            "InstanceType": "c4.large",
+            "InstancePlatform": "Linux/UNIX",
+            "AvailabilityZone": "us-east-1a",
+            "Tenancy": "default",
+            "TotalInstanceCount": 1,
+            "AvailableInstanceCount": 1,
+            "EbsOptimized": true,
+            "EphemeralStorage": false,
+            "State": "active",
+            "StartDate": "2024-10-23T15:01:03+00:00",
+            "EndDateType": "unlimited",
+            "InstanceMatchCriteria": "open",
+            "CreateDate": "2024-10-23T15:01:02+00:00",
+            "Tags": [],
+            "CapacityAllocations": []
+        }
+    ]
+}
+```
+For more information, see [Viewing a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-using.html#capacity-reservations-view) in the *Amazon Elastic Compute Cloud User Guide for Linux Instances*.
++  For API details, see [DescribeCapacityReservations](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-capacity-reservations.html) in *AWS CLI Command Reference*.
+
+------
+#### [ PowerShell ]
+
+**Tools for PowerShell V4**
+**Example 1: This example describes one or more of your Capacity Reservations for the region**
+
+```
+Get-EC2CapacityReservation -Region eu-west-1
+```
+**Output:**
+
+```
+AvailabilityZone       : eu-west-1b
+AvailableInstanceCount : 2
+CapacityReservationId  : cr-0c1f2345db6f7cdba
+CreateDate             : 3/28/2019 9:29:41 AM
+EbsOptimized           : True
+EndDate                : 1/1/0001 12:00:00 AM
+EndDateType            : unlimited
+EphemeralStorage       : False
+InstanceMatchCriteria  : open
+InstancePlatform       : Windows
+InstanceType           : m4.xlarge
+State                  : active
+Tags                   : {}
+Tenancy                : default
+TotalInstanceCount     : 2
+```
++  For API details, see [DescribeCapacityReservations](https://docs.aws.amazon.com/powershell/v4/reference) in *AWS Tools for PowerShell Cmdlet Reference (V4)*.
+
+**Tools for PowerShell V5**
+**Example 1: This example describes one or more of your Capacity Reservations for the region**
+
+```
+Get-EC2CapacityReservation -Region eu-west-1
+```
+**Output:**
+
+```
+AvailabilityZone       : eu-west-1b
+AvailableInstanceCount : 2
+CapacityReservationId  : cr-0c1f2345db6f7cdba
+CreateDate             : 3/28/2019 9:29:41 AM
+EbsOptimized           : True
+EndDate                : 1/1/0001 12:00:00 AM
+EndDateType            : unlimited
+EphemeralStorage       : False
+InstanceMatchCriteria  : open
+InstancePlatform       : Windows
+InstanceType           : m4.xlarge
+State                  : active
+Tags                   : {}
+Tenancy                : default
+TotalInstanceCount     : 2
+```
++  For API details, see [DescribeCapacityReservations](https://docs.aws.amazon.com/powershell/v5/reference) in *AWS Tools for PowerShell Cmdlet Reference (V5)*.
+
+------

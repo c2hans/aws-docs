@@ -1,0 +1,38 @@
+---
+source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-workloads-offboard.html
+---
+
+# Offboard a workload from Incident Detection and Response
+<a name="idr-workloads-offboard"></a>
+
+To offboard a workload from AWS Incident Detection and Response, create a new support case for each workload. When you create the support case, keep the following in mind:
++ To offboard a workload that's in a single AWS account, create the support case either from the workload's account or from your payer account.
++ To offboard a workload that spans multiple AWS accounts, then create the support case from your **payer account**. In the body of the support case, list all account IDs to offboard.
+
+**Important**
+If you create a support case to offboard a workload from the incorrect account, you might experience delays and requests for additional information before your workloads can be offloaded.
+
+**Request to offboard a workload**
+
+1. Go to the [AWS Support Center](https://console.aws.amazon.com/support/home#/), and then select **Create case**.
+
+1. Choose **Technical**.
+
+1. For **Service**, choose **Incident Detection and Response**.
+
+1. For **Category**, choose **Workload Offboarding**.
+
+1. For **Severity**, choose **General Guidance**.
+
+1. Enter a **Subject** for this change. For example:
+
+   [Offboard] AWS Incident Detection and Response - {{workload\_name}}
+
+1. Enter a **Description** for this change. For example, enter "This request is for offboarding an existing workload onboarded into AWS Incident Detection and Response". Make sure that you include the following information in your request:
+   + **Workload name:** Your workload name.
+   + **Account ID(s):** ID1, ID2, ID3, and so on.
+   + **Reason for offboarding:** Provide a reason for offboarding the workload.
+
+1. In the **Additional contacts - optional** section, enter any email IDs that you want to receive correspondence about this offboarding request.
+
+1. Choose **Submit**.

@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/outposts/latest/server-userguide/updates-service-link.html
+---
+
+# Updates and the service link
+<a name="updates-service-link"></a>
+
+AWS maintains a secure network connection between your Outposts server and its parent AWS Region. This network connection, called the service link, is essential in managing the Outpost by providing intra-VPC traffic between the Outpost and AWS Region. [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) best practices recommend deploying applications across two Outposts parented to different Availability Zones with an active-active design. For more information, see [AWS Outposts High Availability Design and Architecture Considerations](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/aws-outposts-high-availability-design.html).
+
+The service link is regularly updated to maintain operational quality and performance. During maintenance, you might observe brief periods of latency and packet loss on this network resulting in impact on workloads that are dependent on VPC connectivity to resources hosted in-region. However, traffic traversing the [Local Network Interfaces (LNI)](https://docs.aws.amazon.com/outposts/latest/server-userguide/local-network-interface.html) will not be impacted. You can avoid impact to your application by following [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/) best practices and by ensuring your applications are [resilient to failures](https://docs.aws.amazon.com/outposts/latest/server-userguide/disaster-recovery-resiliency.html) or maintenance activities affecting a single Outposts server.

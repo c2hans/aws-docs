@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/tutorials-redshift.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# Tutorials for Amazon Redshift
+<a name="tutorials-redshift"></a>
+
+Follow the steps in these tutorials to learn about Amazon Redshift features:
+
+|  |  |
+| --- |--- |
+| [Tutorial: Loading data from Amazon S3](tutorial-loading-data.md) |  In this tutorial, you walk through the process of loading data into your Amazon Redshift database tables from data files in an S3 bucket from beginning to end. |
+| [Tutorial: Querying nested data with Amazon Redshift SpectrumTutorial: Querying nested data with Amazon Redshift Spectrum ](tutorial-query-nested-data.md) |  In this tutorial, you use Redshift Spectrum to query nested data. Redshift Spectrum lets you query data in Parquet, ORC, JSON, or Ion file formats. |
+| [Tutorial: Configuring manual workload management (WLM) queues](tutorial-configuring-workload-management.md) |  In this tutorial, you configure Amazon Redshift to use manual workload management (WLM) queues. Amazon Redshift uses WLM queues to manage how resources are divided to run concurrent queries. You must configure Amazon Redshift to use manual WLM if you need to use multiple WLM WLM queues. |
+| [Tutorial: Using spatial SQL functions with Amazon Redshift](spatial-tutorial.md) | In this tutorial, you query data using spatial functions. You use spatial functions to query geometry and geography data. |
+| [Tutorials for Amazon Redshift ML](tutorials_for_amazon_redshift_ml.md) | In these tutorials, you create and use machine learning models. |
+| [Tutorial: Creating roles and querying with RBAC](r_tutorial-RBAC.md) | In this tutorial, you use role-based access control (RBAC) to create and use permissions in a database you create. With RBAC, you can create roles with specific permissions, such as read-only or read-write permissions. You can then assign these roles to users to grant them the specified permissions. |

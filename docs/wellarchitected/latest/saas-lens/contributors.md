@@ -1,0 +1,13 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/contributors.html
+---
+
+# Contributors
+<a name="contributors"></a>
+
+ The following individuals and organizations contributed to this document:
++ Tod Golding, Sr. Principal Solution Architect, AWS SaaS Factory
++ Raman Pujani, Sr. Solution Architect, AWS
++ Ranjith Raman, Sr. Solution Architect, AWS SaaS Factory
++ Akshay Patel, Business Lead, AWS SaaS Factory
++ Oren Reuveni, Principal Solution Architect, AWS SaaS Factory

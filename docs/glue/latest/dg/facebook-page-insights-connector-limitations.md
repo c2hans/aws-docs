@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/facebook-page-insights-connector-limitations.html
+---
+
+# Limitations and notes for Facebook Page Insights connector
+<a name="facebook-page-insights-connector-limitations"></a>
+
+The following are limitations or notes for the Facebook Page Insights connector:
++ Most metrics will update once every 24 hours.
++ Only the last two years of insights data is available.
++ Only 90 days of insights can be viewed at one time when using the `since` and `until` parameters.

@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_MatchCriteria.html
+---
+
+# MatchCriteria
+<a name="API_MatchCriteria"></a>
+
+An object to define AgentsCriteria.
+
+## Contents
+<a name="API_MatchCriteria_Contents"></a>
+
+ ** AgentsCriteria **   <a name="connect-Type-MatchCriteria-AgentsCriteria"></a>
+An object to define agentIds.
+Type: [AgentsCriteria](API_AgentsCriteria.md) object
+Required: No
+
+## See Also
+<a name="API_MatchCriteria_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/MatchCriteria)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/MatchCriteria)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/MatchCriteria)

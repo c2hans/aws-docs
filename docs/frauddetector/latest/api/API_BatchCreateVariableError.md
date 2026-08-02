@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/frauddetector/latest/api/API_BatchCreateVariableError.html
+---
+
+Amazon Fraud Detector is no longer be open to new customers as of November 7, 2025. For capabilities similar to Amazon Fraud Detector, explore Amazon SageMaker AI, AutoGluon, and AWS WAF.
+
+# BatchCreateVariableError
+<a name="API_BatchCreateVariableError"></a>
+
+Provides the error of the batch create variable API.
+
+## Contents
+<a name="API_BatchCreateVariableError_Contents"></a>
+
+ ** code **   <a name="FraudDetector-Type-BatchCreateVariableError-code"></a>
+The error code.
+Type: Integer
+Required: No
+
+ ** message **   <a name="FraudDetector-Type-BatchCreateVariableError-message"></a>
+The error message.
+Type: String
+Required: No
+
+ ** name **   <a name="FraudDetector-Type-BatchCreateVariableError-name"></a>
+The name.
+Type: String
+Required: No
+
+## See Also
+<a name="API_BatchCreateVariableError_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/frauddetector-2019-11-15/BatchCreateVariableError)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/frauddetector-2019-11-15/BatchCreateVariableError)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/frauddetector-2019-11-15/BatchCreateVariableError)

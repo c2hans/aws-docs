@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/amplify/latest/APIReference/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [CreateApp](API_CreateApp.md)
++  [CreateBackendEnvironment](API_CreateBackendEnvironment.md)
++  [CreateBranch](API_CreateBranch.md)
++  [CreateDeployment](API_CreateDeployment.md)
++  [CreateDomainAssociation](API_CreateDomainAssociation.md)
++  [CreateWebhook](API_CreateWebhook.md)
++  [DeleteApp](API_DeleteApp.md)
++  [DeleteBackendEnvironment](API_DeleteBackendEnvironment.md)
++  [DeleteBranch](API_DeleteBranch.md)
++  [DeleteDomainAssociation](API_DeleteDomainAssociation.md)
++  [DeleteJob](API_DeleteJob.md)
++  [DeleteWebhook](API_DeleteWebhook.md)
++  [GenerateAccessLogs](API_GenerateAccessLogs.md)
++  [GetApp](API_GetApp.md)
++  [GetArtifactUrl](API_GetArtifactUrl.md)
++  [GetBackendEnvironment](API_GetBackendEnvironment.md)
++  [GetBranch](API_GetBranch.md)
++  [GetDomainAssociation](API_GetDomainAssociation.md)
++  [GetJob](API_GetJob.md)
++  [GetWebhook](API_GetWebhook.md)
++  [ListApps](API_ListApps.md)
++  [ListArtifacts](API_ListArtifacts.md)
++  [ListBackendEnvironments](API_ListBackendEnvironments.md)
++  [ListBranches](API_ListBranches.md)
++  [ListDomainAssociations](API_ListDomainAssociations.md)
++  [ListJobs](API_ListJobs.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [ListWebhooks](API_ListWebhooks.md)
++  [StartDeployment](API_StartDeployment.md)
++  [StartJob](API_StartJob.md)
++  [StopJob](API_StopJob.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateApp](API_UpdateApp.md)
++  [UpdateBranch](API_UpdateBranch.md)
++  [UpdateDomainAssociation](API_UpdateDomainAssociation.md)
++  [UpdateWebhook](API_UpdateWebhook.md)

@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/lexv2/latest/dg/encryption-in-transit.html
+---
+
+# Encryption in transit
+<a name="encryption-in-transit"></a>
+
+Amazon Lex V2 uses the HTTPS protocol to communicate with your client application. It uses HTTPS and AWS signatures to communicate with other services, such as Amazon Polly and AWS Lambda on your application's behalf.

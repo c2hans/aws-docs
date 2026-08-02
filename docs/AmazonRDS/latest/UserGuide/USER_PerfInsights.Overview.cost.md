@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PerfInsights.Overview.cost.html
+---
+
+# Pricing and data retention for Performance Insights
+<a name="USER_PerfInsights.Overview.cost"></a>
+
+By default, Performance Insights includes 7 days of performance data history and 1 million API requests per month. You can also purchase longer retention periods. For complete pricing information, see [Performance Insights Pricing](https://aws.amazon.com/rds/performance-insights/pricing/).
+
+In the RDS console, you can choose any of the following retention periods for your Performance Insights data:
++ **Default (7 days)**
++ **{{n}} months**, where **{{n}}** is a number from 1–24
+
+![The retention period options for Performance Insights data.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/pi-retention-periods.png)
+
+To learn how to set a retention period using the AWS CLI, see [Turning Performance Insights on and off for Amazon RDS](USER_PerfInsights.Enabling.md).
+
+**Note**
+Stopping a DB instance or Multi-AZ DB cluster with Performance Insights enabled doesn't affect data retention. While a DB instance or Multi-AZ DB cluster is stopped, Performance Insights won't collect any data.

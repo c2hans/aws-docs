@@ -1,0 +1,45 @@
+---
+source_url: https://docs.aws.amazon.com/apprunner/latest/api/API_Operations.html
+---
+
+# Actions
+<a name="API_Operations"></a>
+
+The following actions are supported:
++  [AssociateCustomDomain](API_AssociateCustomDomain.md)
++  [CreateAutoScalingConfiguration](API_CreateAutoScalingConfiguration.md)
++  [CreateConnection](API_CreateConnection.md)
++  [CreateObservabilityConfiguration](API_CreateObservabilityConfiguration.md)
++  [CreateService](API_CreateService.md)
++  [CreateVpcConnector](API_CreateVpcConnector.md)
++  [CreateVpcIngressConnection](API_CreateVpcIngressConnection.md)
++  [DeleteAutoScalingConfiguration](API_DeleteAutoScalingConfiguration.md)
++  [DeleteConnection](API_DeleteConnection.md)
++  [DeleteObservabilityConfiguration](API_DeleteObservabilityConfiguration.md)
++  [DeleteService](API_DeleteService.md)
++  [DeleteVpcConnector](API_DeleteVpcConnector.md)
++  [DeleteVpcIngressConnection](API_DeleteVpcIngressConnection.md)
++  [DescribeAutoScalingConfiguration](API_DescribeAutoScalingConfiguration.md)
++  [DescribeCustomDomains](API_DescribeCustomDomains.md)
++  [DescribeObservabilityConfiguration](API_DescribeObservabilityConfiguration.md)
++  [DescribeService](API_DescribeService.md)
++  [DescribeVpcConnector](API_DescribeVpcConnector.md)
++  [DescribeVpcIngressConnection](API_DescribeVpcIngressConnection.md)
++  [DisassociateCustomDomain](API_DisassociateCustomDomain.md)
++  [ListAutoScalingConfigurations](API_ListAutoScalingConfigurations.md)
++  [ListConnections](API_ListConnections.md)
++  [ListObservabilityConfigurations](API_ListObservabilityConfigurations.md)
++  [ListOperations](API_ListOperations.md)
++  [ListServices](API_ListServices.md)
++  [ListServicesForAutoScalingConfiguration](API_ListServicesForAutoScalingConfiguration.md)
++  [ListTagsForResource](API_ListTagsForResource.md)
++  [ListVpcConnectors](API_ListVpcConnectors.md)
++  [ListVpcIngressConnections](API_ListVpcIngressConnections.md)
++  [PauseService](API_PauseService.md)
++  [ResumeService](API_ResumeService.md)
++  [StartDeployment](API_StartDeployment.md)
++  [TagResource](API_TagResource.md)
++  [UntagResource](API_UntagResource.md)
++  [UpdateDefaultAutoScalingConfiguration](API_UpdateDefaultAutoScalingConfiguration.md)
++  [UpdateService](API_UpdateService.md)
++  [UpdateVpcIngressConnection](API_UpdateVpcIngressConnection.md)

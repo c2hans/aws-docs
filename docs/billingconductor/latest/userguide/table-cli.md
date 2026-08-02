@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/billingconductor/latest/userguide/table-cli.html
+---
+
+# Viewing the custom line items table
+<a name="table-cli"></a>
+
+After you create a custom line item, you can view the details of the line item in a filterable table. You can filter by the following dimensions:
++ The line item name
++ The line item description
++ The amount that's charged
++ The billing group that the line item is attributed to
++ The date that line item was created
+
+To view custom line items that you created in previous billing periods, use the **date picker** dropdown list.

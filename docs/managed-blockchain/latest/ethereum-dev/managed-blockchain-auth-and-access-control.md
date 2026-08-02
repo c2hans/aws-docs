@@ -1,0 +1,10 @@
+---
+source_url: https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/managed-blockchain-auth-and-access-control.html
+---
+
+# Authentication and access control for Amazon Managed Blockchain (AMB) Access Ethereum
+<a name="managed-blockchain-auth-and-access-control"></a>
+
+IAM permissions policies are associated with AWS users in your account and determine who has access to what. Permissions policies specify the actions that each user can perform using AMB Access and other AWS services.
+
+Before you configure IAM permissions, see [Identity and Access Management for Amazon Managed Blockchain (AMB) Access Ethereum](security-iam.md). We also recommend [What is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) and [IAM JSON Policy Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies.html) in the *IAM User Guide*.

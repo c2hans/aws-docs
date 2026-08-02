@@ -1,0 +1,93 @@
+---
+source_url: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-init.html
+---
+
+# sam init
+<a name="sam-cli-command-reference-sam-init"></a>
+
+This page provides reference information for the AWS Serverless Application Model Command Line Interface (AWS SAM CLI) `sam init` command.
++ For an introduction to the AWS SAM CLI, see [What is the AWS SAM CLI?](what-is-sam-overview.md#what-is-sam-cli)
++ For documentation on using the AWS SAM CLI `sam init` command, see [Create your application in AWS SAM](using-sam-cli-init.md).
+
+The `sam init` command provides options to initialize a new serverless application.
+
+## Usage
+<a name="sam-cli-command-reference-sam-init-usage"></a>
+
+```
+$ sam init {{<options>}}
+```
+
+## Options
+<a name="sam-cli-command-reference-sam-init-options"></a>
+
+`--app-template {{TEXT}}`  <a name="sam-cli-command-reference-sam-init-options-app-template"></a>
+The identifier of the managed application template that you want to use. If you're not sure, call `sam init` without options for an interactive workflow.
+This parameter is required if `--no-interactive` is specified and `--location` is not provided.
+This parameter is available only in AWS SAM CLI version 0.30.0 and later. Specifying this parameter with an earlier version results in an error.
+
+`--application-insights | --no-application-insights`  <a name="sam-cli-command-reference-sam-init-options-application-insights"></a>
+ Activate Amazon CloudWatch Application Insights monitoring for your application. To learn more, see [Using CloudWatch Application Insights to monitor your AWS SAM serverless applications](monitor-app-insights.md).
+ The default option is `--no-application-insights`.
+
+`--architecture, -a {{[ x86_64 | arm64 ]}}`  <a name="sam-cli-command-reference-sam-init-options-architecture"></a>
+The instruction set architecture for your application's Lambda functions. Specify one of `x86_64` or `arm64`.
+
+`--base-image {{[ amazon/dotnet8-base | amazon/dotnet6-base | amazon/java25-base | amazon/java21-base | amazon/java17-base | amazon/java17.al2023-base | amazon/java11-base | amazon/java11.al2023-base | amazon/java8.al2023-base | amazon/nodejs24.x-base | amazon/nodejs22.x-base | amazon/nodejs20.x-base | amazon/nodejs18.x-base | amazon/nodejs16.x-base | amazon/python3.14-base | amazon/python3.13-base | amazon/python3.12-base | amazon/python3.11-base | amazon/python3.10-base | amazon/python3.9-base | amazon/python3.8-base | amazon/ruby4.0-base | amazon/ruby3.4-base | amazon/ruby3.3-base | amazon/ruby3.2-base ]}}`  <a name="sam-cli-command-reference-sam-init-options-base-image"></a>
+The base image of your application. This option applies only when the package type is `Image`.
+This parameter is required if `--no-interactive` is specified, `--package-type` is specified as `Image`, and `--location` is not specified.
+
+`--config-env {{TEXT}}`  <a name="sam-cli-command-reference-sam-init-options-config-env"></a>
+The environment name specifying the default parameter values in the configuration file to use. The default value is "default". For more information about configuration files, see [AWS SAM CLI configuration file](serverless-sam-cli-config.md).
+
+`--config-file {{PATH}}`  <a name="sam-cli-command-reference-sam-init-options-config-file"></a>
+The path and file name of the configuration file containing default parameter values to use. The default value is "samconfig.toml" in the root of the project directory. For more information about configuration files, see [AWS SAM CLI configuration file](serverless-sam-cli-config.md).
+
+`--debug`  <a name="sam-cli-command-reference-sam-init-options-debug"></a>
+Turns on debug logging to print debug messages that the AWS SAM CLI generates, and to display timestamps.
+
+`--dependency-manager, -d {{[ gradle | mod | maven | bundler | npm | cli-package | pip ]}}`  <a name="sam-cli-command-reference-sam-init-options-dependency-manager"></a>
+The dependency manager of your Lambda runtime.
+
+`--extra-content`  <a name="sam-cli-command-reference-sam-init-options-extra-content"></a>
+Override any custom parameters in the template's `cookiecutter.json` configuration, for example, `{"customParam1": "customValue1", "customParam2":"customValue2"}`.
+
+`--help, -h`  <a name="sam-cli-command-reference-sam-init-options-help"></a>
+Shows this message and exits.
+
+`--location, -l {{TEXT}}`  <a name="sam-cli-command-reference-sam-init-options-location"></a>
+The template or application location (Git, Mercurial, HTTP/HTTPS, .zip file, path).
+This parameter is required if `--no-interactive` is specified and `--runtime`, `--name`, and `--app-template` are not provided.
+For Git repositories, you must use the location of the root of the repository.
+For local paths, the template must be in either .zip file or [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html) format.
+
+`--name, -n {{TEXT}}`  <a name="sam-cli-command-reference-sam-init-options-name"></a>
+The name of your project to be generated as a directory.
+This parameter is required if `--no-interactive` is specified and `--location` is not provided.
+
+`--no-input`  <a name="sam-cli-command-reference-sam-init-options-no-input"></a>
+Disables Cookiecutter prompting and accepts the vcfdefault values that are defined in the template configuration.
+
+`--no-interactive`  <a name="sam-cli-command-reference-sam-init-options-no-interactive"></a>
+Disable interactive prompting for init parameters, and fail if any required values are missing.
+
+`--output-dir, -o {{PATH}}`  <a name="sam-cli-command-reference-sam-init-options-output-dir"></a>
+The location where the initialized application is output.
+
+`--package-type {{[ Zip | Image ]}}`  <a name="sam-cli-command-reference-sam-init-options-package-type"></a>
+The package type of the example application. `Zip` creates a .zip file archive, and `Image` creates a container image.
+
+`--runtime, -r {{[ dotnet8 | dotnet6 | java25 | java21 | java17 | java17.al2023 | java11 | java11.al2023 | java8.al2023 | nodejs24.x | nodejs22.x | nodejs20.x | nodejs18.x | nodejs16.x | python3.14 | python3.13 | python3.12 | python3.11 | python3.10 | python3.9 | python3.8 | ruby4.0 | ruby3.4 | ruby3.3 | ruby3.2 ]}}`  <a name="sam-cli-command-reference-sam-init-options-runtime"></a>
+The Lambda runtime of your application. This option applies only when the package type is `Zip`.
+This parameter is required if `--no-interactive` is specified, `--package-type` is specified as `Zip`, and `--location` is not specified.
+
+`--save-params`  <a name="sam-cli-command-reference-sam-init-options-save-params"></a>
+Save the parameters that you provide at the command line to the AWS SAM configuration file.
+
+`--tracing | --no-tracing`  <a name="sam-cli-command-reference-sam-init-options-tracing"></a>
+Activate AWS X-Ray tracing for your Lambda functions.
+
+## Example
+<a name="sam-cli-command-reference-sam-init-examples"></a>
+
+For a detailed example and in-depth walkthrough on using the `sam init` subcommand, refer to [Create your application in AWS SAM](using-sam-cli-init.md).

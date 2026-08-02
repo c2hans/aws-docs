@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/mgmt/service_code_examples.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# Code examples for Amazon Redshift using AWS SDKs
+<a name="service_code_examples"></a>
+
+The following code examples show how to use Amazon Redshift with an AWS software development kit (SDK).
+
+*Basics* are code examples that show you how to perform the essential operations within a service.
+
+*Actions* are code excerpts from larger programs and must be run in context. While actions show you how to call individual service functions, you can see actions in context in their related scenarios.
+
+*Scenarios* are code examples that show you how to accomplish specific tasks by calling multiple functions within a service or combined with other AWS services.
+
+For a complete list of AWS SDK developer guides and code examples, see [Using this service with an AWS SDK](sdk-general-information-section.md). This topic also includes information about getting started and details about previous SDK versions.
+
+**Contents**
++ [Basics](service_code_examples_basics.md)
+  + [Hello Amazon Redshift](example_redshift_Hello_section.md)
+  + [Learn the basics](example_redshift_Scenario_section.md)
+  + [Actions](service_code_examples_actions.md)
+    + [`CreateCluster`](example_redshift_CreateCluster_section.md)
+    + [`DeleteCluster`](example_redshift_DeleteCluster_section.md)
+    + [`DescribeClusters`](example_redshift_DescribeClusters_section.md)
+    + [`DescribeStatement`](example_redshift_DescribeStatement_section.md)
+    + [`ExecuteStatement`](example_redshift_ExecuteStatement_section.md)
+    + [`GetStatementResult`](example_redshift_GetStatementResult_section.md)
+    + [`ListDatabases`](example_redshift_ListDatabases_section.md)
+    + [`ModifyCluster`](example_redshift_ModifyCluster_section.md)
++ [Scenarios](service_code_examples_scenarios.md)
+  + [Create a web application to track Amazon Redshift data](example_cross_RedshiftDataTracker_section.md)
+  + [Get started with serverless data warehouses](example_redshift_GettingStarted_038_section.md)
+  + [Getting started with provisioned data warehouse clusters](example_redshift_GettingStarted_039_section.md)

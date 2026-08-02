@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/schema-registry-gs-monitoring.html
+---
+
+# Accessing Amazon CloudWatch metrics
+<a name="schema-registry-gs-monitoring"></a>
+
+Amazon CloudWatch metrics are available as part of CloudWatch’s free tier. You can access these metrics in the CloudWatch console. API-Level metrics include CreateSchema (Success and Latency), GetSchemaByDefinition, (Success and Latency), GetSchemaVersion (Success and Latency), RegisterSchemaVersion (Success and Latency), PutSchemaVersionMetadata (Success and Latency). Resource-level metrics include Registry.ThrottledByLimit, SchemaVersion.ThrottledByLimit, SchemaVersion.Size.

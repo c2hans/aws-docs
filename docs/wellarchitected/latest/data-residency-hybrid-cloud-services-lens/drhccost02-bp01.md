@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hybrid-cloud-services-lens/drhccost02-bp01.html
+---
+
+# DRHCCOST02-BP01 Monitor and manage Outposts capacity and utilization effectively
+<a name="drhccost02-bp01"></a>
+
+ Understand available edge capacity and its utilization.
+
+ **Desired outcome:** You are aware of what capacity they have, and you scale as needed.
+
+ **Benefits of establishing this best practice:** You can proactively make decisions to provide the appropriate capacity and minimize unexpected cost.
+
+ **Level of risk exposed if this best practice is not established:** Medium
+
+## Implementation guidance
+<a name="implementation-guidance-48"></a>
+
+ Actively monitor and manage Outposts capacity and utilization. AWS recommends [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) to track usage and available [Outposts CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) for Amazon EC2, Amazon EBS, Amazon S3, and network resources, which helps organizations meet their business objectives and proactively make scaling decisions.
+
+ Outposts capacity scales in fixed increments, with cost increasing accordingly, and scaling actions can extend the service term. You should plan for future generation Outposts, as it is a managed service and AWS retrieves Outposts at the end of the service period. You can [extend the existing term](https://aws.amazon.com/outposts/rack/faqs/#product-faqs) or consider replacement Outposts to adopt new services and features.
+
+ Maintaining appropriate spare capacity is crucial, as Outposts has redundant components, and spare compute and storage capacity ensure hardware failures do not affect workloads and minimize sunk costs. AWS tools like [AWS Compute Optimizer](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-optimizations.html) can be used for rightsizing workloads in Outposts while considering business objectives and utilization goals.
+
+ Monitor the [What's New with AWS](https://aws.amazon.com/new/) webpage to evaluate new services and offerings for Outposts and Local Zones. Adopt services that can reduce the cost profile of workloads and foster innovation.

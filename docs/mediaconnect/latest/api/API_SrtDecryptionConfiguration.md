@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_SrtDecryptionConfiguration.html
+---
+
+# SrtDecryptionConfiguration
+<a name="API_SrtDecryptionConfiguration"></a>
+
+Contains the configuration settings for decrypting SRT streams, including the encryption key details and decryption parameters.
+
+## Contents
+<a name="API_SrtDecryptionConfiguration_Contents"></a>
+
+ ** encryptionKey **   <a name="mediaconnect-Type-SrtDecryptionConfiguration-encryptionKey"></a>
+Specifies the encryption key configuration used for decrypting SRT streams, including the key source and associated credentials.
+Type: [SecretsManagerEncryptionKeyConfiguration](API_SecretsManagerEncryptionKeyConfiguration.md) object
+Required: Yes
+
+## See Also
+<a name="API_SrtDecryptionConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/SrtDecryptionConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/SrtDecryptionConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/SrtDecryptionConfiguration)

@@ -1,0 +1,15 @@
+---
+source_url: https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/getting-started-acc.html
+---
+
+# Getting Started with AMS Accelerate
+<a name="getting-started-acc"></a>
+
+If you do not have AWS Managed Services (AMS) operating an account already, start by contacting an Amazon Web Services (AWS) sales representative using our [AWS Managed Services - Contact Sales](https://pages.awscloud.com/AWS-Managed-Services.html) page.
+
+After you sign up for an AMS, the AMS Accelerate team guides you through the following onboarding process for each one of your AWS accounts.
+
+Review the feature set here: [AWS Managed Services Features](https://aws.amazon.com/managed-services/features/)
+
+**Note**
+AMS Accelerate supports GovCloud Regions. If your service will reside in an AWS GovCloud (US) Region, see also [Getting Started with AWS GovCloud (US)](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/getting-set-up.html).

@@ -1,0 +1,69 @@
+---
+source_url: https://docs.aws.amazon.com/MSKC/latest/mskc/API_Types.html
+---
+
+# Data Types
+<a name="API_Types"></a>
+
+The Managed Streaming for Kafka Connect API contains several data types that various actions use. This section describes each data type in detail.
+
+**Note**
+The order of each element in a data type structure is not guaranteed. Applications should not assume a particular order.
+
+The following data types are supported:
++  [ApacheKafkaCluster](API_ApacheKafkaCluster.md)
++  [ApacheKafkaClusterDescription](API_ApacheKafkaClusterDescription.md)
++  [AutoScaling](API_AutoScaling.md)
++  [AutoScalingDescription](API_AutoScalingDescription.md)
++  [AutoScalingUpdate](API_AutoScalingUpdate.md)
++  [Capacity](API_Capacity.md)
++  [CapacityDescription](API_CapacityDescription.md)
++  [CapacityUpdate](API_CapacityUpdate.md)
++  [CloudWatchLogsLogDelivery](API_CloudWatchLogsLogDelivery.md)
++  [CloudWatchLogsLogDeliveryDescription](API_CloudWatchLogsLogDeliveryDescription.md)
++  [ConnectorOperationStep](API_ConnectorOperationStep.md)
++  [ConnectorOperationSummary](API_ConnectorOperationSummary.md)
++  [ConnectorSummary](API_ConnectorSummary.md)
++  [CustomPlugin](API_CustomPlugin.md)
++  [CustomPluginDescription](API_CustomPluginDescription.md)
++  [CustomPluginFileDescription](API_CustomPluginFileDescription.md)
++  [CustomPluginLocation](API_CustomPluginLocation.md)
++  [CustomPluginLocationDescription](API_CustomPluginLocationDescription.md)
++  [CustomPluginRevisionSummary](API_CustomPluginRevisionSummary.md)
++  [CustomPluginSummary](API_CustomPluginSummary.md)
++  [FirehoseLogDelivery](API_FirehoseLogDelivery.md)
++  [FirehoseLogDeliveryDescription](API_FirehoseLogDeliveryDescription.md)
++  [KafkaCluster](API_KafkaCluster.md)
++  [KafkaClusterClientAuthentication](API_KafkaClusterClientAuthentication.md)
++  [KafkaClusterClientAuthenticationDescription](API_KafkaClusterClientAuthenticationDescription.md)
++  [KafkaClusterDescription](API_KafkaClusterDescription.md)
++  [KafkaClusterEncryptionInTransit](API_KafkaClusterEncryptionInTransit.md)
++  [KafkaClusterEncryptionInTransitDescription](API_KafkaClusterEncryptionInTransitDescription.md)
++  [LogDelivery](API_LogDelivery.md)
++  [LogDeliveryDescription](API_LogDeliveryDescription.md)
++  [Plugin](API_Plugin.md)
++  [PluginDescription](API_PluginDescription.md)
++  [ProvisionedCapacity](API_ProvisionedCapacity.md)
++  [ProvisionedCapacityDescription](API_ProvisionedCapacityDescription.md)
++  [ProvisionedCapacityUpdate](API_ProvisionedCapacityUpdate.md)
++  [S3Location](API_S3Location.md)
++  [S3LocationDescription](API_S3LocationDescription.md)
++  [S3LogDelivery](API_S3LogDelivery.md)
++  [S3LogDeliveryDescription](API_S3LogDeliveryDescription.md)
++  [ScaleInPolicy](API_ScaleInPolicy.md)
++  [ScaleInPolicyDescription](API_ScaleInPolicyDescription.md)
++  [ScaleInPolicyUpdate](API_ScaleInPolicyUpdate.md)
++  [ScaleOutPolicy](API_ScaleOutPolicy.md)
++  [ScaleOutPolicyDescription](API_ScaleOutPolicyDescription.md)
++  [ScaleOutPolicyUpdate](API_ScaleOutPolicyUpdate.md)
++  [StateDescription](API_StateDescription.md)
++  [Vpc](API_Vpc.md)
++  [VpcDescription](API_VpcDescription.md)
++  [WorkerConfiguration](API_WorkerConfiguration.md)
++  [WorkerConfigurationDescription](API_WorkerConfigurationDescription.md)
++  [WorkerConfigurationRevisionDescription](API_WorkerConfigurationRevisionDescription.md)
++  [WorkerConfigurationRevisionSummary](API_WorkerConfigurationRevisionSummary.md)
++  [WorkerConfigurationSummary](API_WorkerConfigurationSummary.md)
++  [WorkerLogDelivery](API_WorkerLogDelivery.md)
++  [WorkerLogDeliveryDescription](API_WorkerLogDeliveryDescription.md)
++  [WorkerSetting](API_WorkerSetting.md)

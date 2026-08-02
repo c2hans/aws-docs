@@ -1,0 +1,35 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SetParameterValueConfiguration.html
+---
+
+# SetParameterValueConfiguration
+<a name="API_SetParameterValueConfiguration"></a>
+
+The configuration of adding parameters in action.
+
+## Contents
+<a name="API_SetParameterValueConfiguration_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** DestinationParameterName **   <a name="QS-Type-SetParameterValueConfiguration-DestinationParameterName"></a>
+The destination parameter name of the `SetParameterValueConfiguration`.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `^[a-zA-Z0-9]+$`
+Required: Yes
+
+ ** Value **   <a name="QS-Type-SetParameterValueConfiguration-Value"></a>
+The configuration of destination parameter values.
+This is a union type structure. For this structure to be valid, only one of the attributes can be defined.
+Type: [DestinationParameterValueConfiguration](API_DestinationParameterValueConfiguration.md) object
+Required: Yes
+
+## See Also
+<a name="API_SetParameterValueConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/SetParameterValueConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/SetParameterValueConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/SetParameterValueConfiguration)

@@ -1,0 +1,191 @@
+---
+source_url: https://docs.aws.amazon.com/aurora-dsql/latest/userguide/rbp-examples.html
+---
+
+# Common resource-based policy examples
+<a name="rbp-examples"></a>
+
+These examples show common patterns for controlling access to your Aurora DSQL clusters. You can combine and modify these patterns to meet your specific access requirements.
+
+## Block public internet access
+<a name="rbp-example-block-public"></a>
+
+This policy blocks connections to your Aurora DSQL clusters from the public internet (non-VPC). The policy doesn't specify which VPC customers can connect from—only that they must connect from a VPC. To limit access to a specific VPC, use `aws:SourceVpc` with the `StringEquals` condition operator.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Resource": "*",
+      "Action": [
+        "dsql:DbConnect",
+        "dsql:DbConnectAdmin"
+      ],
+      "Condition": {
+        "Null": {
+          "aws:SourceVpc": "true"
+        }
+      }
+    }
+  ]
+}
+```
+
+**Note**
+This example uses only `aws:SourceVpc` to check for VPC connections. The `aws:VpcSourceIp` and `aws:SourceVpce` condition keys provide additional granularity but are not required for basic VPC-only access control.
+
+To provide an exception for specific roles, use this policy instead:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyAccessFromOutsideVPC",
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Resource": "*",
+      "Action": [
+        "dsql:DbConnect",
+        "dsql:DbConnectAdmin"
+      ],
+      "Condition": {
+        "Null": {
+          "aws:SourceVpc": "true"
+        },
+        "StringNotEquals": {
+          "aws:PrincipalArn": [
+            "arn:aws:iam::123456789012:role/ExceptionRole",
+            "arn:aws:iam::123456789012:role/AnotherExceptionRole"
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+## Restrict access to AWS Organization
+<a name="rbp-example-org-access"></a>
+
+This policy restricts access to principals within an AWS Organization:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": [
+        "dsql:DbConnect",
+        "dsql:DbConnectAdmin"
+      ],
+      "Resource": "arn:aws:dsql:us-east-1:123456789012:cluster/mydsqlclusterid0123456789a",
+      "Condition": {
+        "StringNotEquals": {
+          "aws:PrincipalOrgID": "o-exampleorgid"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Restrict access to specific Organizational Unit
+<a name="rbp-example-ou-access"></a>
+
+This policy restricts access to principals within a specific Organizational Unit (OU) in an AWS Organization, providing more granular control than organization-wide access:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Action": [
+        "dsql:DbConnect"
+      ],
+      "Resource": "arn:aws:dsql:us-east-1:123456789012:cluster/mydsqlclusterid0123456789a",
+      "Condition": {
+        "StringNotLike": {
+          "aws:PrincipalOrgPaths": "o-exampleorgid/r-examplerootid/ou-exampleouid/*"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Multi-Region cluster policies
+<a name="rbp-example-multi-region"></a>
+
+For multi-Region clusters, each regional cluster maintains its own resource policy, allowing for Region-specific controls. Here's an example with different policies per region:
+
+*us-east-1 policy:*
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Deny",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Resource": "*",
+      "Action": [
+        "dsql:DbConnect"
+      ],
+      "Condition": {
+        "StringNotEquals": {
+          "aws:SourceVpc": "vpc-east1-id"
+        },
+        "Null": {
+          "aws:SourceVpc": "true"
+        }
+      }
+    }
+  ]
+}
+```
+
+*us-east-2 policy:*
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "*"
+      },
+      "Resource": "*",
+      "Action": [
+        "dsql:DbConnect"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "aws:SourceVpc": "vpc-east2-id"
+        }
+      }
+    }
+  ]
+}
+```
+
+**Note**
+Condition context keys may vary between AWS Regions (such as VPC IDs).

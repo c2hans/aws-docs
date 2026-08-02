@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_EmailAddressSummary.html
+---
+
+# EmailAddressSummary
+<a name="API_EmailAddressSummary"></a>
+
+Summary information about an email address associated with a queue. Contains the essential details needed to identify and manage the email address routing configuration.
+
+## Contents
+<a name="API_EmailAddressSummary_Contents"></a>
+
+ ** Arn **   <a name="connect-Type-EmailAddressSummary-Arn"></a>
+The Amazon Resource Name (ARN) of the email address associated with the queue.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 500.
+Required: No
+
+ ** Id **   <a name="connect-Type-EmailAddressSummary-Id"></a>
+The unique identifier of the email address associated with the queue.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 500.
+Required: No
+
+ ** IsDefaultOutboundEmail **   <a name="connect-Type-EmailAddressSummary-IsDefaultOutboundEmail"></a>
+Indicates whether this email address is configured as the default outbound email address for the queue. When set to true, this email address is used as the default sender for outbound email contacts from this queue.
+Type: Boolean
+Required: No
+
+## See Also
+<a name="API_EmailAddressSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/EmailAddressSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/EmailAddressSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/EmailAddressSummary)

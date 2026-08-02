@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_AwsStepFunctionStateMachineTracingConfigurationDetails.html
+---
+
+# AwsStepFunctionStateMachineTracingConfigurationDetails
+<a name="API_AwsStepFunctionStateMachineTracingConfigurationDetails"></a>
+
+ Specifies whether AWS X-Ray tracing is enabled.
+
+## Contents
+<a name="API_AwsStepFunctionStateMachineTracingConfigurationDetails_Contents"></a>
+
+ ** Enabled **   <a name="securityhub-Type-AwsStepFunctionStateMachineTracingConfigurationDetails-Enabled"></a>
+ When set to true, AWS X-Ray tracing is enabled.
+Type: Boolean
+Required: No
+
+## See Also
+<a name="API_AwsStepFunctionStateMachineTracingConfigurationDetails_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/securityhub-2018-10-26/AwsStepFunctionStateMachineTracingConfigurationDetails)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/securityhub-2018-10-26/AwsStepFunctionStateMachineTracingConfigurationDetails)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/securityhub-2018-10-26/AwsStepFunctionStateMachineTracingConfigurationDetails)

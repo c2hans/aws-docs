@@ -1,0 +1,241 @@
+---
+source_url: https://docs.aws.amazon.com/rtb-fabric/latest/api/API_AcceptLink.html
+---
+
+# AcceptLink
+<a name="API_AcceptLink"></a>
+
+Accepts a link request between gateways.
+
+When a requester gateway requests to link with a responder gateway, the responder can use this operation to accept the link request and establish the connection.
+
+## Request Syntax
+<a name="API_AcceptLink_RequestSyntax"></a>
+
+```
+POST /gateway/{{gatewayId}}/link/{{linkId}}/accept HTTP/1.1
+Content-type: application/json
+
+{
+   "attributes": {
+      "customerProvidedId": "{{string}}",
+      "responderErrorMasking": [
+         {
+            "action": "{{string}}",
+            "httpCode": "{{string}}",
+            "loggingTypes": [ "{{string}}" ],
+            "responseLoggingPercentage": {{number}}
+         }
+      ]
+   },
+   "logSettings": {
+      "applicationLogs": {
+         "sampling": {
+            "errorLog": {{number}},
+            "filterLog": {{number}}
+         }
+      }
+   },
+   "timeoutInMillis": {{number}}
+}
+```
+
+## URI Request Parameters
+<a name="API_AcceptLink_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [gatewayId](#API_AcceptLink_RequestSyntax) **   <a name="rtbfabric-AcceptLink-request-uri-gatewayId"></a>
+The unique identifier of the gateway.
+Length Constraints: Minimum length of 8. Maximum length of 32.
+Pattern: `rtb-gw-[a-z0-9-]{1,25}`
+Required: Yes
+
+ ** [linkId](#API_AcceptLink_RequestSyntax) **   <a name="rtbfabric-AcceptLink-request-uri-linkId"></a>
+The unique identifier of the link.
+Length Constraints: Minimum length of 6. Maximum length of 30.
+Pattern: `link-[a-z0-9-]{1,25}`
+Required: Yes
+
+## Request Body
+<a name="API_AcceptLink_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [attributes](#API_AcceptLink_RequestSyntax) **   <a name="rtbfabric-AcceptLink-request-attributes"></a>
+Attributes of the link.
+Type: [LinkAttributes](API_LinkAttributes.md) object
+Required: No
+
+ ** [logSettings](#API_AcceptLink_RequestSyntax) **   <a name="rtbfabric-AcceptLink-request-logSettings"></a>
+Settings for the application logs.
+Type: [LinkLogSettings](API_LinkLogSettings.md) object
+Required: Yes
+
+ ** [timeoutInMillis](#API_AcceptLink_RequestSyntax) **   <a name="rtbfabric-AcceptLink-request-timeoutInMillis"></a>
+The timeout value in milliseconds.
+Type: Long
+Valid Range: Minimum value of 100. Maximum value of 5000.
+Required: No
+
+## Response Syntax
+<a name="API_AcceptLink_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "attributes": {
+      "customerProvidedId": "string",
+      "responderErrorMasking": [
+         {
+            "action": "string",
+            "httpCode": "string",
+            "loggingTypes": [ "string" ],
+            "responseLoggingPercentage": number
+         }
+      ]
+   },
+   "connectivityType": "string",
+   "createdAt": number,
+   "direction": "string",
+   "flowModules": [
+      {
+         "dependsOn": [ "string" ],
+         "moduleParameters": { ... },
+         "name": "string",
+         "version": "string"
+      }
+   ],
+   "gatewayId": "string",
+   "linkId": "string",
+   "logSettings": {
+      "applicationLogs": {
+         "sampling": {
+            "errorLog": number,
+            "filterLog": number
+         }
+      }
+   },
+   "peerGatewayId": "string",
+   "pendingFlowModules": [
+      {
+         "dependsOn": [ "string" ],
+         "moduleParameters": { ... },
+         "name": "string",
+         "version": "string"
+      }
+   ],
+   "status": "string",
+   "updatedAt": number
+}
+```
+
+## Response Elements
+<a name="API_AcceptLink_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [attributes](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-attributes"></a>
+Attributes of the link.
+Type: [LinkAttributes](API_LinkAttributes.md) object
+
+ ** [connectivityType](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-connectivityType"></a>
+The connectivity type of the link.
+Type: String
+Valid Values: `DEFAULT | PUBLIC_INGRESS | PUBLIC_EGRESS | EXTERNAL_INBOUND`
+
+ ** [createdAt](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-createdAt"></a>
+The timestamp of when the link was created.
+Type: Timestamp
+
+ ** [direction](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-direction"></a>
+The direction of the link.
+Type: String
+Valid Values: `RESPONSE | REQUEST`
+
+ ** [flowModules](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-flowModules"></a>
+The configuration of flow modules.
+Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
+
+ ** [gatewayId](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-gatewayId"></a>
+The unique identifier of the gateway.
+Type: String
+Length Constraints: Minimum length of 8. Maximum length of 32.
+Pattern: `rtb-gw-[a-z0-9-]{1,25}`
+
+ ** [linkId](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-linkId"></a>
+The unique identifier of the link.
+Type: String
+Length Constraints: Minimum length of 6. Maximum length of 30.
+Pattern: `link-[a-z0-9-]{1,25}`
+
+ ** [logSettings](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-logSettings"></a>
+Describes the settings for a link log.
+Type: [LinkLogSettings](API_LinkLogSettings.md) object
+
+ ** [peerGatewayId](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-peerGatewayId"></a>
+The unique identifier of the peer gateway.
+Type: String
+Length Constraints: Minimum length of 8. Maximum length of 32.
+Pattern: `rtb-gw-[a-z0-9-]{1,25}`
+
+ ** [pendingFlowModules](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-pendingFlowModules"></a>
+The configuration of pending flow modules.
+Type: Array of [ModuleConfiguration](API_ModuleConfiguration.md) objects
+
+ ** [status](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-status"></a>
+The status of the link.
+Type: String
+Valid Values: `PENDING_CREATION | PENDING_REQUEST | REQUESTED | ACCEPTED | ACTIVE | REJECTED | FAILED | PENDING_DELETION | DELETED | PENDING_UPDATE | PENDING_ISOLATION | ISOLATED | PENDING_RESTORATION`
+
+ ** [updatedAt](#API_AcceptLink_ResponseSyntax) **   <a name="rtbfabric-AcceptLink-response-updatedAt"></a>
+The timestamp of when the link was updated.
+Type: Timestamp
+
+## Errors
+<a name="API_AcceptLink_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+The request could not be completed because you do not have sufficient access to perform this action.
+HTTP Status Code: 403
+
+ ** ConflictException **
+The request could not be completed because of a conflict in the current state of the resource.
+HTTP Status Code: 409
+
+ ** InternalServerException **
+The request could not be completed because of an internal server error. Try your call again.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The request could not be completed because the resource does not exist.
+HTTP Status Code: 404
+
+ ** ThrottlingException **
+The request was denied due to request throttling.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The request could not be completed because it fails satisfy the constraints specified by the service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_AcceptLink_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/rtbfabric-2023-05-15/AcceptLink)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rtbfabric-2023-05-15/AcceptLink)

@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_AudioFeatures.html
+---
+
+# AudioFeatures
+<a name="API_connect-participant_AudioFeatures"></a>
+
+Has audio-specific configurations as the operating parameter for Echo Reduction.
+
+## Contents
+<a name="API_connect-participant_AudioFeatures_Contents"></a>
+
+ ** EchoReduction **   <a name="connect-Type-connect-participant_AudioFeatures-EchoReduction"></a>
+Makes echo reduction available to clients who connect to the meeting.
+Type: String
+Valid Values: `AVAILABLE | UNAVAILABLE`
+Required: No
+
+## See Also
+<a name="API_connect-participant_AudioFeatures_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connectparticipant-2018-09-07/AudioFeatures)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connectparticipant-2018-09-07/AudioFeatures)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connectparticipant-2018-09-07/AudioFeatures)

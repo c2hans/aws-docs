@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/appsync/latest/devguide/aws-appsync-directives.html
+---
+
+# AWS AppSync directives
+<a name="aws-appsync-directives"></a>
+
+**Note**
+We now primarily support the APPSYNC\_JS runtime and its documentation. Please consider using the APPSYNC\_JS runtime and its guides [here](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-js-version.html).
+
+AWS AppSync exposes directives to facilitate developer productivity when writing in VTL.
+
+## Directive utils
+<a name="utility-helpers-in-directives"></a>
+
+****`#return(Object)`****
+The `#return(Object)` allows you to prematurely return from any mapping template. `#return(Object)` is analogous to the *return* keyword in programming languages, as it will return from the closest scoped block of logic. Using `#return(Object)` inside of a resolver mapping template will return from the resolver. Additionally, using `#return(Object)` from a function mapping template will return from the function and will continue the run to either the next function in the pipeline or the resolver response mapping template.
+
+****`#return`****
+The `#return` directive exhibits the same behaviors as `#return(Object)`, but `null` will be returned instead.

@@ -1,0 +1,19 @@
+---
+source_url: https://docs.aws.amazon.com/sns/latest/dg/sns-event-sources-database.html
+---
+
+# Database services
+<a name="sns-event-sources-database"></a>
+
+The following table describes how Amazon SNS integrates with AWS database services such as AWS Database Migration Service (DMS), Amazon DynamoDB, Amazon ElastiCache, Amazon Neptune, Amazon Redshift, and Amazon Relational Database Service (RDS) to send notifications about important events such as data migrations, maintenance activities, cache updates, and database changes.
+
+These integrations help you to monitor and manage your database environments more effectively by providing timely alerts on key operational events.
+
+| AWS service | Benefit of using with Amazon SNS |
+| --- | --- |
+| [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/Introduction.html) – Migrates data from on-premises databases into the AWS Cloud. | Receive notifications when AWS DMS events occur; for example, when a replication instance is created or deleted. For more information, see [Working with events and notifications in AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Events.html) in the *AWS Database Migration Service User Guide*. |
+| [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) – Provides fast and predictable performance with seamless scalability in this fully managed NoSQL database service. | Receive notifications when maintenance events occur. For more information, see [Customizing DAX cluster settings](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.cluster-management.html#DAX.cluster-management.custom-settings) in the *Amazon DynamoDB Developer Guide*. |
+| [Amazon ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/WhatIs.html) – Provides a high performance, resizeable, and cost-effective in-memory cache, while removing complexity associated with deploying and managing a distributed cache environment. | Receive notifications when significant events occur. For more information, see [Event notifications and Amazon SNS](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/ElastiCacheSNS.html) in the *Amazon ElastiCache (Memcached) User Guide*. |
+| [Amazon Neptune](https://docs.aws.amazon.com/neptune/latest/userguide/intro.html) – Enables you to build and run applications that work with highly connected datasets. | Receive notifications when a Neptune event occurs. For more information, see [Using Neptune event notification](https://docs.aws.amazon.com/neptune/latest/userguide/events.html) in the *Neptune User Guide*. |
+| [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/welcome.html) – Manages all of the work of setting up, operating, and scaling a data warehouse. | Receive notifications of Amazon Redshift events. For more information, see [Amazon Redshift event notifications](https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-event-notifications.html) in the *Amazon Redshift Management Guide*. |
+| [Amazon Relational Database Service](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) – Makes it easier to set up, operate, and scale a relational database in the AWS Cloud. | Receive notifications of Amazon RDS events. For more information, see [Using Amazon RDS event notification](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.html) in the *Amazon RDS User Guide*. |

@@ -1,0 +1,61 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/ug/gateway-components-instances-create.html
+---
+
+# Registering a MediaConnect Gateway instance
+<a name="gateway-components-instances-create"></a>
+
+You can register an instance by running a custom Linux command on the device that will be hosting the instance. You generate the command by following the instance registration process in the AWS Management Console. Registering an instance using the AWS CLI is not currently supported.
+
+**Contents**
++ [Prerequisites](#gateway-components-instances-create-prerequisites)
++ [Procedure](#gateway-components-instances-create-procedure)
++ [Next steps](#gateway-components-instances-create-next-steps)
++ [Additional resources](#gateway-components-instances-create-additional-resources)
+
+## Prerequisites
+<a name="gateway-components-instances-create-prerequisites"></a>
+
+The following procedure assumes that you have previously created a gateway.
+
+## Procedure
+<a name="gateway-components-instances-create-procedure"></a>
+
+**To register a MediaConnect Gateway instance**
+
+1. Open the MediaConnect console at [https://console.aws.amazon.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/).
+
+1. From the navigation pane, select **Gateways**.
+
+1. In the **Gateways** section, select the gateway you want to register the instance to.
+
+1. On the gateway **Details** page, select the **Instances** tab.
+
+1. On the **Instances** tab, choose **Register instance**.
+
+1. On the **Register Gateway instances** page, complete the following steps:
+
+   1. For **Activation key duration**, enter the number of days that the activation key will remain active. After that number of days, the key will no longer work when registering a gateway instance.
+
+   1. For **Number of instances**, enter the number of instances that you want to register to your gateway with this activation key.
+
+   1. For **Instance role**, choose the IAM role to associate with your external instances.
+
+   1. Select **Generate registration command**.
+
+1. Copy the **Linux command** that is displayed.
+
+1. Run the command on each instance you want to register to this gateway.
+**Important**
+The bash portion of the script must be run as root. If the command isn't run as root, an error is returned.
+
+1. After a few minutes, the instance will register to the gateway. All instances registered to this gateway will appear in the **Instances** tab.
+
+## Next steps
+<a name="gateway-components-instances-create-next-steps"></a>
+
+After you’ve registered an instance to a MediaConnect Gateway, you can create a bridge on that instance. For instructions, see [Creating a MediaConnect Gateway bridge](gateway-components-bridges-create.md).
+
+## Additional resources
+<a name="gateway-components-instances-create-additional-resources"></a>
++ [Deregistering a MediaConnect Gateway instance](gateway-components-instances-delete.md)

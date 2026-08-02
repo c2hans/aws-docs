@@ -1,0 +1,32 @@
+---
+source_url: https://docs.aws.amazon.com/amazonq/latest/api-reference/API_RetrieverConfiguration.html
+---
+
+# RetrieverConfiguration
+<a name="API_RetrieverConfiguration"></a>
+
+Provides information on how the retriever used for your Amazon Q Business application is configured.
+
+## Contents
+<a name="API_RetrieverConfiguration_Contents"></a>
+
+**Important**
+This data type is a UNION, so only one of the following members can be specified when used or returned.
+
+ ** kendraIndexConfiguration **   <a name="qbusiness-Type-RetrieverConfiguration-kendraIndexConfiguration"></a>
+Provides information on how the Amazon Kendra index used as a retriever for your Amazon Q Business application is configured.
+Type: [KendraIndexConfiguration](API_KendraIndexConfiguration.md) object
+Required: No
+
+ ** nativeIndexConfiguration **   <a name="qbusiness-Type-RetrieverConfiguration-nativeIndexConfiguration"></a>
+Provides information on how a Amazon Q Business index used as a retriever for your Amazon Q Business application is configured.
+Type: [NativeIndexConfiguration](API_NativeIndexConfiguration.md) object
+Required: No
+
+## See Also
+<a name="API_RetrieverConfiguration_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qbusiness-2023-11-27/RetrieverConfiguration)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qbusiness-2023-11-27/RetrieverConfiguration)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qbusiness-2023-11-27/RetrieverConfiguration)

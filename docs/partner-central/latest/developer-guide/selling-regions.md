@@ -1,0 +1,14 @@
+---
+source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/selling-regions.html
+---
+
+The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
+
+# Supported AWS regions for the AWS Partner Central Selling API
+<a name="selling-regions"></a>
+
+You can access the AWS Partner Central selling service from any AWS US East (N. Virginia) region with the following end point.
+
+```
+partnercentral-selling.us-east-1.api.aws
+```

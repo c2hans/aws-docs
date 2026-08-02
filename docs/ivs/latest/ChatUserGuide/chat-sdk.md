@@ -1,0 +1,87 @@
+---
+source_url: https://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-sdk.html
+---
+
+# IVS Chat Client Messaging SDK
+<a name="chat-sdk"></a>
+
+The Amazon Interactive Video Services (IVS) Chat Client Messaging SDK is for developers who are building applications with Amazon IVS. This SDK is designed to leverage the Amazon IVS architecture and will see updates, alongside Amazon IVS Chat. As a native SDK, it is designed to minimize the performance impact on your application and on the devices with which your users access your application.
+
+## Platform Requirements
+<a name="chat-sdk-platform-requirements"></a>
+
+### Desktop Browsers
+<a name="chat-desktop-browsers"></a>
+
+| Browser | Supported Versions |
+| --- | --- |
+| Chrome | Two major versions (current and most recent prior version) |
+| Edge | Two major versions (current and most recent prior version) |
+| Firefox | Two major versions (current and most recent prior version) |
+| Opera | Two major versions (current and most recent prior version) |
+| Safari | Two major versions (current and most recent prior version) |
+
+### Mobile Browsers
+<a name="chat-mobile-browsers"></a>
+
+| Browser | Supported Versions |
+| --- | --- |
+| Chrome for Android | Two major versions (current and most recent prior version) |
+| Firefox for Android | Two major versions (current and most recent prior version) |
+| Opera for Android | Two major versions (current and most recent prior version) |
+| WebView Android | Two major versions (current and most recent prior version) |
+| Samsung Internet | Two major versions (current and most recent prior version) |
+| Safari for iOS | Two major versions (current and most recent prior version) |
+
+### Native Platforms
+<a name="chat-native-platforms"></a>
+
+| Platform | Supported Versions |
+| --- | --- |
+| Android | 5.0 and later |
+| iOS | 13.0 and later |
+
+## Support
+<a name="chat-sdk-support"></a>
+
+If you encounter an error or other issue with your chat room, determine the unique room identifier via the IVS Chat API (see [ListRooms](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/API_ListRooms.html)).
+
+Share this chat room identifier with AWS support. With it, they can get information to help troubleshoot your issue.
+
+**Note:** See [Amazon IVS Chat Release Notes](release-notes.md) for available versions and fixed issues. If appropriate, before contacting support, update your version of the SDK and see if that resolves your issue.
+
+### Versioning
+<a name="chat-sdk-support-versioning"></a>
+
+The Amazon IVS Chat Client Messaging SDKs use [semantic versioning](https://semver.org/).
+
+For this discussion, suppose:
++ The latest release is 4.1.3.
++ The latest release of the prior major version is 3.2.4.
++ The latest release of version 1.x is 1.5.6.
+
+Backward-compatible new features are added as minor releases of the latest version. In this case, the next set of new features will be added as version 4.2.0.
+
+Backward-compatible, minor bug fixes are added as patch releases of the latest version. Here, the next set of minor bug fixes will be added as version 4.1.4.
+
+Backward-compatible, major bug fixes are handled differently; these are added to several versions:
++ Patch release of the latest version. Here, this is version 4.1.4.
++ Patch release of the prior minor version. Here, this is version 3.2.5.
++ Patch release of the latest version 1.x release. Here, this is version 1.5.7.
+
+Major bug fixes are defined by the Amazon IVS product team. Typical examples are critical security updates and selected other fixes necessary for customers.
+
+**Note:** In the examples above, released versions increment without skipping any numbers (e.g., from 4.1.3 to 4.1.4). In reality, one or more patch numbers may remain internal and not be released, so the released version could increment from 4.1.3 to, say, 4.1.6.
+
+Also, version 1.x will be supported until the end of 2023 or when 3.x is released, whichever happens later.
+
+## Amazon IVS Chat APIs
+<a name="chat-sdk-chat-apis"></a>
+
+On the server side (not managed by the SDKs), there are two APIs, each with its own responsibilities:
++ **Data plane** — The [IVS Chat Messaging API](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/welcome.html) is a WebSockets API designed to be used by front-end applications (iOS, Android, macOS, etc) that are driven by a token-based authentication scheme. Using a previously generated chat token, you connect to already existing chat rooms using this API.
+
+  *The Amazon IVS Chat Client Messaging SDKs are concerned only with the data plane. The SDKs assume that you are already generating chat tokens through your backend. Retrieval of these tokens is assumed to be managed by your front-end application, not the SDKs.*
++ **Control plane** — The [IVS Chat Control Plane API](https://docs.aws.amazon.com//ivs/latest/ChatAPIReference/Welcome.html) provides an interface for your own *backend applications* to manage and create chat rooms as well as the users who join them. Think of this as the admin panel for your app's chat experience that is managed by *your own backend*. There are control-plane operations that are responsible for creating the *chat token* that the data plane needs to authenticate to a chat room.
+
+  **Important:** *The IVS Chat Client Messaging SDKs do not call any control-plane operations. You must have your backend set up to create chat tokens for you. Your front-end application must communicate with your backend to retrieve this chat token.*

@@ -1,0 +1,39 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/view-stats-run.html
+---
+
+# Viewing column statistics task runs
+<a name="view-stats-run"></a>
+
+After you run a column statistics task, you can explore the task run details for a table using AWS Glue console, AWS CLI or using [GetColumnStatisticsTaskRuns](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-crawler-column-statistics.html#aws-glue-api-crawler-column-statistics-GetColumnStatisticsTaskRun) operation.
+
+------
+#### [ Console ]
+
+**To view column statistics task run details**
+
+1. On AWS Glue console, choose **Tables** under Data Catalog.
+
+1. Select a table with column statistics.
+
+1. On the **Table details** page, choose **Column statistics**.
+
+1. Choose **View runs**.
+
+   You can see information about all runs associated with the specified table.
+![The screenshot shows the options available to generate column stats.](http://docs.aws.amazon.com/glue/latest/dg/images/view-column-stats-task-runs.png)
+
+------
+#### [ AWS CLI ]
+
+In the following example, replace values for `DatabaseName` and `TableName` with the actual database and table name.
+
+```
+aws glue get-column-statistics-task-runs --input-cli-json file://input.json
+{
+    "DatabaseName": "{{database_name}}",
+    "TableName": "{{table_name}}"
+}
+```
+
+------

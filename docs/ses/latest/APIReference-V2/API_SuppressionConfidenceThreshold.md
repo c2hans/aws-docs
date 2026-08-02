@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SuppressionConfidenceThreshold.html
+---
+
+# SuppressionConfidenceThreshold
+<a name="API_SuppressionConfidenceThreshold"></a>
+
+Contains the confidence threshold settings for Auto Validation.
+
+## Contents
+<a name="API_SuppressionConfidenceThreshold_Contents"></a>
+
+ ** ConfidenceVerdictThreshold **   <a name="SES-Type-SuppressionConfidenceThreshold-ConfidenceVerdictThreshold"></a>
+The confidence level threshold for suppression decisions.
+Type: String
+Valid Values: `MEDIUM | HIGH | MANAGED`
+Required: Yes
+
+## See Also
+<a name="API_SuppressionConfidenceThreshold_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sesv2-2019-09-27/SuppressionConfidenceThreshold)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sesv2-2019-09-27/SuppressionConfidenceThreshold)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sesv2-2019-09-27/SuppressionConfidenceThreshold)

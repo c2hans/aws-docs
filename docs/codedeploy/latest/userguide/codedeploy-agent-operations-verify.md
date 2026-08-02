@@ -1,0 +1,98 @@
+---
+source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-verify.html
+---
+
+# Verify the CodeDeploy agent is running
+<a name="codedeploy-agent-operations-verify"></a>
+
+This section describes commands to run if you suspect the CodeDeploy agent has stopped running on an instance.
+
+**Topics**
++ [Verify the CodeDeploy agent for Amazon Linux or RHEL is running](#codedeploy-agent-operations-verify-linux)
++ [Verify the CodeDeploy agent for Ubuntu Server is running](#codedeploy-agent-operations-verify-ubuntu)
++ [Verify the CodeDeploy agent for Windows Server is running](#codedeploy-agent-operations-verify-windows)
+
+## Verify the CodeDeploy agent for Amazon Linux or RHEL is running
+<a name="codedeploy-agent-operations-verify-linux"></a>
+
+To see if the CodeDeploy agent is installed and running, sign in to the instance, and run the following command:
+
+```
+systemctl status codedeploy-agent
+```
+
+If the command returns an error, the CodeDeploy agent is not installed. Install it as described in [Install the CodeDeploy agent for Amazon Linux or RHEL](codedeploy-agent-operations-install-linux.md).
+
+If the CodeDeploy agent is installed and running, you should see a message like `The AWS CodeDeploy agent is running.` (exit code 0).
+
+If you see a message like `The AWS CodeDeploy agent is not running.` (exit code 3), start the service and run the following two commands, one at a time:
+
+```
+systemctl start codedeploy-agent
+```
+
+```
+systemctl status codedeploy-agent
+```
+
+For version 2.0.x and later, the `codedeploy-agent status` command returns LSB-compatible exit codes: `0` (running), `3` (not running), `4` (unknown). When using `systemctl status`, the unit state is displayed (for example, `Active: active (running)`).
+
+## Verify the CodeDeploy agent for Ubuntu Server is running
+<a name="codedeploy-agent-operations-verify-ubuntu"></a>
+
+To see if the CodeDeploy agent is installed and running, sign in to the instance, and run the following command:
+
+```
+systemctl status codedeploy-agent
+```
+
+If the command returns an error, the CodeDeploy agent is not installed. Install it as described in [Install the CodeDeploy agent for Ubuntu Server](codedeploy-agent-operations-install-ubuntu.md).
+
+If the CodeDeploy agent is installed and running, you should see a message like `The AWS CodeDeploy agent is running.` (exit code 0).
+
+If you see a message like `The AWS CodeDeploy agent is not running.` (exit code 3), start the service and run the following two commands, one at a time:
+
+```
+systemctl start codedeploy-agent
+```
+
+```
+systemctl status codedeploy-agent
+```
+
+## Verify the CodeDeploy agent for Windows Server is running
+<a name="codedeploy-agent-operations-verify-windows"></a>
+
+To see if the CodeDeploy agent is installed and running, sign in to the instance, and run the following command:
+
+```
+powershell.exe -Command Get-Service -Name codedeployagent
+```
+
+You should see output similar to the following:
+
+```
+Status   Name               DisplayName
+------   ----               -----------
+Running codedeployagent    CodeDeploy Host Agent Service
+```
+
+If the command returns an error, the CodeDeploy agent is not installed. Install it as described in [Install the CodeDeploy agent for Windows Server](codedeploy-agent-operations-install-windows.md).
+
+If `Status` shows anything other than `Running`, start the service with the following command:
+
+```
+powershell.exe -Command Start-Service -Name codedeployagent
+```
+
+You can restart the service with the following command:
+
+```
+powershell.exe -Command Restart-Service -Name codedeployagent
+```
+
+You can stop the service with the following command:
+
+```
+powershell.exe -Command Stop-Service -Name codedeployagent
+```

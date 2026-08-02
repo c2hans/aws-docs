@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/appstream2/latest/developerguide/client-application-mac-start-streaming-session-user.html
+---
+
+# Connect to WorkSpaces Applications on macOS client
+<a name="client-application-mac-start-streaming-session-user"></a>
+
+After the WorkSpaces Applications client for macOS is installed on your PC, you can use it to connect to WorkSpaces Applications.
+
+**Topics**
++ [WorkSpaces Applications macOS Client Connection Mode](client-application-mac-connection-modes-user.md)
++ [Connect to WorkSpaces Applications](client-application-mac-how-to-connect-user.md)

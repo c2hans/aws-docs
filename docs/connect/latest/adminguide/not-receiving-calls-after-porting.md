@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/adminguide/not-receiving-calls-after-porting.html
+---
+
+# Not receiving calls on the phone number ported to Connect Customer
+<a name="not-receiving-calls-after-porting"></a>
+
+After the scheduled porting window has completed, if you are not receiving phone calls on the ported phone number, update your support ticket. We will troubleshoot with our carrier to verify the porting status and identify the next steps to resolve issue.
+
+Connect Customer and our carriers make every effort to ensure number porting occurs with minimal downtime and without issues. In most cases, the losing carrier is responsible for initiating the number porting and releasing your number to the winning carrier.
+
+In rare situations, a number routing issue can occur, resulting in calls not arriving to Connect Customer from the carrier.

@@ -1,0 +1,56 @@
+---
+source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/update-role-permissions.html
+---
+
+# Updating role permissions in Security Lake
+<a name="update-role-permissions"></a>
+
+If you don't have the required role permissions or resources—new AWS Lambda function and Amazon Simple Queue Service (Amazon SQS) queue—to ingest data from a new version of the data source, you must update your `AmazonSecurityLakeMetaStoreManagerV2` role permissions and create a new set of resources to process data from your sources.
+
+Choose your preferred method, and follow the instructions to update your role permissions and create new resources to process data from a new version of an AWS log source in a specified Region. This is a one-time action, as the permissions and resources are automatically applied to future data source releases.
+
+------
+#### [ Console ]
+
+**To update role permissions (console)**
+
+1. Open the Security Lake console at [https://console.aws.amazon.com/securitylake/](https://console.aws.amazon.com/securitylake/).
+
+   Sign in with the credentials of the delegated Security Lake administrator.
+
+1. In the navigation pane, under **Settings**, choose **General**.
+
+1. Choose **Update role permissions**.
+
+1. In the **Service access** section, do one of the following:
+   + **Create and use a new service role**— You can use the **AmazonSecurityLakeMetaStoreManagerV2** role created by Security Lake.
+   + **Use an existing service role**— You can choose an existing service role from the **Service role name** list.
+
+1. Choose **Apply**.
+
+------
+#### [ API ]
+
+**To update role permissions (API)**
+
+To update permissions programmatically, use the [https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_UpdateDataLake.html) operation of the Security Lake API. To update permissions using the AWS CLI, run the [https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html](https://docs.aws.amazon.com/cli/latest/reference/securitylake/update-data-lake.html) command.
+
+To update your role permissions, you must attach the [AmazonSecurityLakeMetastoreManager](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonSecurityLakeMetastoreManager) policy to the role.
+
+------
+
+## Deleting the AmazonSecurityLakeMetaStoreManager role
+<a name="remove-sl-metastoremanager-role"></a>
+
+**Important**
+After you update your role permissions to `AmazonSecurityLakeMetaStoreManagerV2`, confirm that the data lake works correctly before you remove the old `AmazonSecurityLakeMetaStoreManager` role. It is recommended to wait at-least 4 hours before removing the role.
+
+ If you decide to remove the role, you must first delete the `AmazonSecurityLakeMetaStoreManager` role from AWS Lake Formation.
+
+Follow these steps to remove the `AmazonSecurityLakeMetaStoreManager` role from the Lake Formation console.
+
+1. Sign in to the AWS Management Console, and open the Lake Formation console at [https://console.aws.amazon.com/lakeformation/](https://console.aws.amazon.com/lakeformation/).
+
+1. In the Lake Formation console, from the navigation pane, choose **Administrative roles and tasks**.
+
+1. Remove `AmazonSecurityLakeMetaStoreManager` from each Region.

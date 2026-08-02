@@ -1,0 +1,52 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-rbin-rule-resourcetag.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::Rbin::Rule ResourceTag
+<a name="aws-properties-rbin-rule-resourcetag"></a>
+
+[Tag-level retention rules only] Information about the resource tags used to identify resources that are retained by the retention rule.
+
+## Syntax
+<a name="aws-properties-rbin-rule-resourcetag-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-rbin-rule-resourcetag-syntax.json"></a>
+
+```
+{
+  "[ResourceTagKey](#cfn-rbin-rule-resourcetag-resourcetagkey)" : {{String}},
+  "[ResourceTagValue](#cfn-rbin-rule-resourcetag-resourcetagvalue)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-rbin-rule-resourcetag-syntax.yaml"></a>
+
+```
+  [ResourceTagKey](#cfn-rbin-rule-resourcetag-resourcetagkey): {{String}}
+  [ResourceTagValue](#cfn-rbin-rule-resourcetag-resourcetagvalue): {{String}}
+```
+
+## Properties
+<a name="aws-properties-rbin-rule-resourcetag-properties"></a>
+
+`ResourceTagKey`  <a name="cfn-rbin-rule-resourcetag-resourcetagkey"></a>
+The tag key.
+*Required*: Yes
+*Type*: String
+*Minimum*: `1`
+*Maximum*: `128`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ResourceTagValue`  <a name="cfn-rbin-rule-resourcetag-resourcetagvalue"></a>
+The tag value.
+*Required*: Yes
+*Type*: String
+*Minimum*: `0`
+*Maximum*: `256`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

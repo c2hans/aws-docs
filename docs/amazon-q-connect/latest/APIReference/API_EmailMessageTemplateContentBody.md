@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/amazon-q-connect/latest/APIReference/API_EmailMessageTemplateContentBody.html
+---
+
+# EmailMessageTemplateContentBody
+<a name="API_amazon-q-connect_EmailMessageTemplateContentBody"></a>
+
+The body to use in email messages.
+
+## Contents
+<a name="API_amazon-q-connect_EmailMessageTemplateContentBody_Contents"></a>
+
+ ** html **   <a name="connect-Type-amazon-q-connect_EmailMessageTemplateContentBody-html"></a>
+The message body, in HTML format, to use in email messages that are based on the message template. We recommend using HTML format for email clients that render HTML content. You can include links, formatted text, and more in an HTML message.
+Type: [MessageTemplateBodyContentProvider](API_amazon-q-connect_MessageTemplateBodyContentProvider.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+ ** plainText **   <a name="connect-Type-amazon-q-connect_EmailMessageTemplateContentBody-plainText"></a>
+The message body, in plain text format, to use in email messages that are based on the message template. We recommend using plain text format for email clients that don't render HTML content and clients that are connected to high-latency networks, such as mobile devices.
+Type: [MessageTemplateBodyContentProvider](API_amazon-q-connect_MessageTemplateBodyContentProvider.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_EmailMessageTemplateContentBody_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/EmailMessageTemplateContentBody)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/EmailMessageTemplateContentBody)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/EmailMessageTemplateContentBody)

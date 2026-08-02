@@ -1,0 +1,9 @@
+---
+source_url: https://docs.aws.amazon.com/quick/latest/userguide/actions-files.html
+---
+
+# Files
+<a name="actions-files"></a>
++ **Duplicate file** - Creates a copy of a file. Used to create a new version of the same file.
++ **Zip files** - Creates a compressed zip file. Used to combine multiple related files into a single package.
++ **Unzip file** - Extracts files from a zip. Used to unpack individual files from a single zip file.

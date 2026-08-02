@@ -1,0 +1,26 @@
+---
+source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ObservabilityRecommendation.html
+---
+
+# ObservabilityRecommendation
+<a name="API_ObservabilityRecommendation"></a>
+
+An observability recommendation to address a finding.
+
+## Contents
+<a name="API_ObservabilityRecommendation_Contents"></a>
+
+ ** suggestedChanges **   <a name="ngresiliencehub-Type-ObservabilityRecommendation-suggestedChanges"></a>
+The list of suggested observability changes.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 0. Maximum length of 500.
+Required: No
+
+## See Also
+<a name="API_ObservabilityRecommendation_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/resiliencehubv2-2026-02-17/ObservabilityRecommendation)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/resiliencehubv2-2026-02-17/ObservabilityRecommendation)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resiliencehubv2-2026-02-17/ObservabilityRecommendation)

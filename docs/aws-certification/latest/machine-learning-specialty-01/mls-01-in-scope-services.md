@@ -1,0 +1,92 @@
+---
+source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learning-specialty-01/mls-01-in-scope-services.html
+---
+
+# In-Scope AWS Services
+<a name="mls-01-in-scope-services"></a>
+
+The following list contains AWS services and features that are in scope for the AWS Certified Machine Learning - Specialty (MLS-C01) exam. This list is non-exhaustive and is subject to change. AWS offerings appear in categories that align with the offerings' primary functions.
+
+**Topics**
++ [Analytics](#mls-01-in-scope-analytics)
++ [Compute](#mls-01-in-scope-compute)
++ [Containers](#mls-01-in-scope-containers)
++ [Database](#mls-01-in-scope-database)
++ [Internet of Things](#mls-01-in-scope-iot)
++ [Machine Learning](#mls-01-in-scope-machine-learning)
++ [Management and Governance](#mls-01-in-scope-management-governance)
++ [Networking and Content Delivery](#mls-01-in-scope-networking)
++ [Security, Identity, and Compliance](#mls-01-in-scope-security)
++ [Storage](#mls-01-in-scope-storage)
+
+## Analytics
+<a name="mls-01-in-scope-analytics"></a>
++ Amazon Athena
++ Amazon Data Firehose
++ Amazon EMR
++ AWS Glue
++ Amazon Kinesis
++ Amazon Kinesis Data Streams
++ AWS Lake Formation
++ Amazon Managed Service for Apache Flink
++ Amazon OpenSearch Service
++ Amazon QuickSight
+
+## Compute
+<a name="mls-01-in-scope-compute"></a>
++ AWS Batch
++ Amazon EC2
++ AWS Lambda
+
+## Containers
+<a name="mls-01-in-scope-containers"></a>
++ Amazon Elastic Container Registry (Amazon ECR)
++ Amazon Elastic Container Service (Amazon ECS)
++ Amazon Elastic Kubernetes Service (Amazon EKS)
++ AWS Fargate
+
+## Database
+<a name="mls-01-in-scope-database"></a>
++ Amazon Redshift
+
+## Internet of Things
+<a name="mls-01-in-scope-iot"></a>
++ AWS IoT Greengrass
+
+## Machine Learning
+<a name="mls-01-in-scope-machine-learning"></a>
++ Amazon Bedrock
++ Amazon Comprehend
++ AWS Deep Learning AMIs (DLAMI)
++ Amazon Forecast
++ Amazon Fraud Detector
++ Amazon Lex
++ Amazon Kendra
++ Amazon Mechanical Turk
++ Amazon Polly
++ Amazon Q
++ Amazon Rekognition
++ Amazon SageMaker
++ Amazon Textract
++ Amazon Transcribe
++ Amazon Translate
+
+## Management and Governance
+<a name="mls-01-in-scope-management-governance"></a>
++ AWS CloudTrail
++ Amazon CloudWatch
+
+## Networking and Content Delivery
+<a name="mls-01-in-scope-networking"></a>
++ Amazon VPC
+
+## Security, Identity, and Compliance
+<a name="mls-01-in-scope-security"></a>
++ AWS Identity and Access Management (IAM)
+
+## Storage
+<a name="mls-01-in-scope-storage"></a>
++ Amazon Elastic Block Store (Amazon EBS)
++ Amazon Elastic File System (Amazon EFS)
++ Amazon FSx
++ Amazon S3

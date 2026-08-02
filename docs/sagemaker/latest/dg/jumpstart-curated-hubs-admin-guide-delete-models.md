@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-curated-hubs-admin-guide-delete-models.html
+---
+
+# Delete models from a private hub
+<a name="jumpstart-curated-hubs-admin-guide-delete-models"></a>
+
+You can delete models from a private hub used by your organization by specifying the model ARN in the `hub.delete_model_reference()` method. This removes access to the model from the private hub.
+
+```
+hub.delete_model_reference({{model-name}})
+```

@@ -1,0 +1,36 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_TenantSuppressionAttributes.html
+---
+
+# TenantSuppressionAttributes
+<a name="API_TenantSuppressionAttributes"></a>
+
+An object that contains the suppression list preferences for a tenant.
+
+## Contents
+<a name="API_TenantSuppressionAttributes_Contents"></a>
+
+ ** SuppressedReasons **   <a name="SES-Type-TenantSuppressionAttributes-SuppressedReasons"></a>
+A list that contains the reasons that email addresses are automatically added to the suppression list for the tenant. This list can contain any or all of the following:
++  `COMPLAINT` – Amazon SES adds an email address to the suppression list when a message sent to that address results in a complaint.
++  `BOUNCE` – Amazon SES adds an email address to the suppression list when a message sent to that address results in a hard bounce.
+Type: Array of strings
+Valid Values: `BOUNCE | COMPLAINT`
+Required: No
+
+ ** SuppressionScope **   <a name="SES-Type-TenantSuppressionAttributes-SuppressionScope"></a>
+The suppression scope for the tenant. Can be one of the following:
++  `TENANT` – The tenant uses its own suppression list.
++  `ACCOUNT` – The tenant uses the account-level suppression list.
+If you don't specify a suppression scope, the tenant defaults to `ACCOUNT` scope and uses the account-level suppression list.
+Type: String
+Valid Values: `ACCOUNT | TENANT`
+Required: No
+
+## See Also
+<a name="API_TenantSuppressionAttributes_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/sesv2-2019-09-27/TenantSuppressionAttributes)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/sesv2-2019-09-27/TenantSuppressionAttributes)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/sesv2-2019-09-27/TenantSuppressionAttributes)

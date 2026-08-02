@@ -1,0 +1,118 @@
+---
+source_url: https://docs.aws.amazon.com/aws-backup/latest/APIReference/API_AssociateBackupVaultMpaApprovalTeam.html
+---
+
+# AssociateBackupVaultMpaApprovalTeam
+<a name="API_AssociateBackupVaultMpaApprovalTeam"></a>
+
+Associates an MPA approval team with a backup vault.
+
+## Request Syntax
+<a name="API_AssociateBackupVaultMpaApprovalTeam_RequestSyntax"></a>
+
+```
+PUT /backup-vaults/{{backupVaultName}}/mpaApprovalTeam HTTP/1.1
+Content-type: application/json
+
+{
+   "MpaApprovalTeamArn": "{{string}}",
+   "RequesterComment": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_AssociateBackupVaultMpaApprovalTeam_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [backupVaultName](#API_AssociateBackupVaultMpaApprovalTeam_RequestSyntax) **   <a name="Backup-AssociateBackupVaultMpaApprovalTeam-request-uri-BackupVaultName"></a>
+The name of the backup vault to associate with the MPA approval team.
+Pattern: `^[a-zA-Z0-9\-\_]{2,50}$`
+Required: Yes
+
+## Request Body
+<a name="API_AssociateBackupVaultMpaApprovalTeam_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [MpaApprovalTeamArn](#API_AssociateBackupVaultMpaApprovalTeam_RequestSyntax) **   <a name="Backup-AssociateBackupVaultMpaApprovalTeam-request-MpaApprovalTeamArn"></a>
+The Amazon Resource Name (ARN) of the MPA approval team to associate with the backup vault.
+Type: String
+Required: Yes
+
+ ** [RequesterComment](#API_AssociateBackupVaultMpaApprovalTeam_RequestSyntax) **   <a name="Backup-AssociateBackupVaultMpaApprovalTeam-request-RequesterComment"></a>
+A comment provided by the requester explaining the association request.
+Type: String
+Required: No
+
+## Response Syntax
+<a name="API_AssociateBackupVaultMpaApprovalTeam_ResponseSyntax"></a>
+
+```
+HTTP/1.1 204
+```
+
+## Response Elements
+<a name="API_AssociateBackupVaultMpaApprovalTeam_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 204 response with an empty HTTP body.
+
+## Errors
+<a name="API_AssociateBackupVaultMpaApprovalTeam_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InvalidParameterValueException **
+Indicates that something is wrong with a parameter's value. For example, the value is out of range.
+ ** Context **
+
+ ** Type **
+
+HTTP Status Code: 400
+
+ ** InvalidRequestException **
+Indicates that something is wrong with the input to the request. For example, a parameter is of the wrong type.
+ ** Context **
+
+ ** Type **
+
+HTTP Status Code: 400
+
+ ** MissingParameterValueException **
+Indicates that a required parameter is missing.
+ ** Context **
+
+ ** Type **
+
+HTTP Status Code: 400
+
+ ** ResourceNotFoundException **
+A resource that is required for the action doesn't exist.
+ ** Context **
+
+ ** Type **
+
+HTTP Status Code: 400
+
+ ** ServiceUnavailableException **
+The request failed due to a temporary failure of the server.
+ ** Context **
+
+ ** Type **
+
+HTTP Status Code: 500
+
+## See Also
+<a name="API_AssociateBackupVaultMpaApprovalTeam_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/backup-2018-11-15/AssociateBackupVaultMpaApprovalTeam)

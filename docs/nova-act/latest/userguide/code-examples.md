@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/nova-act/latest/userguide/code-examples.html
+---
+
+# Code examples
+<a name="code-examples"></a>
+
+The [nova-act-samples](https://github.com/amazon-agi-labs/nova-act-samples) GitHub repository contains sample code and solutions demonstrating Nova Act capabilities for web automation and AI-powered browser interactions, including standalone scripts, and CDK deployment examples.

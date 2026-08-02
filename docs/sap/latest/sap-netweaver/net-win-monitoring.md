@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-monitoring.html
+---
+
+# Monitoring
+<a name="net-win-monitoring"></a>
+
+ AWS provides multiple native services to monitor and manage your SAP environment. Services like [CloudWatch](https://aws.amazon.com/cloudwatch/) and [CloudTrail](https://aws.amazon.com/cloudtrail/) can be leveraged to monitor your underlying infrastructure and APIs respectively. CloudWatch provides ready-to-use KPIs for CPU, disk utilization and also allows you to create custom metrics if your specific KPIs that you would like to monitor. CloudTrail allows you to log the API calls made to your AWS infrastructure components.

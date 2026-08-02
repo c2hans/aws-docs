@@ -1,0 +1,111 @@
+---
+source_url: https://docs.aws.amazon.com/ses/latest/dg/event-publishing-add-event-destination-firehose.html
+---
+
+# Set up a Data Firehose event destination for Amazon SES event publishing
+<a name="event-publishing-add-event-destination-firehose"></a>
+
+An Amazon Data Firehose event destination represents an entity that publishes specific Amazon SES email sending events to Firehose. Because a Firehose event destination can only be set up in a configuration set, you first have to [create a configuration set](event-publishing-create-configuration-set.md). Next, you add the event destination to the configuration set.
+
+The procedure in this section shows how to add Firehose event destination details to a configuration set and assumes you have completed steps 1 through 6 in [Creating an event destination](event-destinations-manage.md#event-destination-add).
+
+You can also use the [UpdateConfigurationSetEventDestination](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_UpdateConfigurationSetEventDestination.html) operation in the Amazon SES API V2 destination to create and update event destinations.
+
+**To add Firehose event destination details to a configuration set using the console**
+
+1. These are the detailed instructions for selecting Firehose as your event destination type in [Step 7](event-destinations-manage.md#specify-event-dest-step) and assumes you have completed all the previous steps in [Creating an event destination](event-destinations-manage.md#event-destination-add). After selecting the Firehose **Destination type**, entering a destination **Name**, and enabling **Event publishing**, the **Amazon Data Firehose delivery stream** pane is displayed—its fields are addressed in the following steps.
+
+1. For **Delivery stream**, choose an existing Firehose delivery stream, or choose **Create new stream** to create a new one using the Firehose console.
+
+   For information about creating a stream using the Firehose console, see [Creating an Amazon Kinesis Firehose Delivery Stream](https://docs.aws.amazon.com/firehose/latest/dev/basic-create.html) in the *Amazon Data Firehose Developer Guide*.
+
+1. For **Identity and Access Management (IAM) Role**, choose an IAM role for which Amazon SES has permission to publish to Firehose on your behalf. You can choose an existing role, have Amazon SES create a role for you, or create your own role.
+
+   If you choose an existing role or create your own role, you must manually modify the role's policies to give the role permission to access the Firehose delivery stream, and to give Amazon SES permission to assume the role. For example policies, see [Giving Amazon SES Permission to Publish to Your Firehose Delivery Stream](#event-publishing-add-event-destination-firehose-role).
+
+1. Choose **Next**.
+
+1. On the review screen, if you're satisfied with how you defined your event destination, choose **Add destination**.
+
+For information about how to use the `UpdateConfigurationSetEventDestination` API to add a Firehose event destination, see the [Amazon Simple Email Service API Reference](https://docs.aws.amazon.com/ses/latest/APIReference/API_UpdateConfigurationSetEventDestination.html).
+
+## Giving Amazon SES Permission to Publish to Your Firehose Delivery Stream
+<a name="event-publishing-add-event-destination-firehose-role"></a>
+
+To enable Amazon SES to publish records to your Firehose delivery stream, you must use an AWS Identity and Access Management (IAM) [role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) and attach or modify the role's permissions policy and trust policy. The permissions policy enables the role to publish records to your Firehose delivery stream, and the trust policy enables Amazon SES to assume the role.
+
+This section provides examples of both policies. For information about attaching policies to IAM roles, see [Modifying a Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *IAM User Guide*.
+
+### Permissions Policy
+<a name="event-publishing-add-event-destination-firehose-role-permission"></a>
+
+The following permissions policy enables the role to publish data records to your Firehose delivery stream.
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+    "Version":"2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Action": [
+                "firehose:PutRecordBatch"
+            ],
+            "Resource": [
+                "arn:aws:firehose:{{us-east-1}}:{{111122223333}}:deliverystream/{{delivery-stream-name}}"
+            ]
+        }
+    ]
+}
+```
+
+------
+
+Make the following changes to the preceding policy example:
++ Replace {{delivery-region}} with the AWS Region where you created the Firehose delivery stream.
++ Replace {{111122223333}} with your AWS account ID.
++ Replace {{delivery-stream-name}} with the name of the Firehose delivery stream.
+
+### Trust Policy
+<a name="event-publishing-add-event-destination-firehose-role-trust"></a>
+
+The following trust policy enables Amazon SES to assume the role.
+
+------
+#### [ JSON ]
+
+****
+
+```
+{
+  "Version":"2012-10-17",
+  "Statement": [
+    {
+      "Sid": "",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "ses.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole",
+      "Condition": {
+        "StringEquals": {
+          "AWS:SourceAccount": "{{111122223333}}",
+          "AWS:SourceArn": "arn:aws:ses:{{delivery-region}}:{{111122223333}}:configuration-set/{{configuration-set-name}}"
+        }
+      }
+    }
+  ]
+}
+```
+
+------
+
+Make the following changes to the preceding policy example:
++ Replace {{delivery-region}} with the AWS Region where you created the Firehose delivery stream.
++ Replace {{111122223333}} with your AWS account ID.
++ Replace {{configuration-set-name}} with the name of your configuration set associated with the Firehose delivery stream.

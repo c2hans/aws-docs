@@ -1,0 +1,8 @@
+---
+source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_MariaDB.Replication.ReadReplicas.Updates.html
+---
+
+# Updating read replicas with MariaDB
+<a name="USER_MariaDB.Replication.ReadReplicas.Updates"></a>
+
+Read replicas are designed to support read queries, but you might need occasional updates. For example, you might need to add an index to speed the specific types of queries accessing the replica. You can enable updates by setting the `read_only` parameter to **0** in the DB parameter group for the read replica.

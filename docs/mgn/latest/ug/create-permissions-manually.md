@@ -1,0 +1,167 @@
+---
+source_url: https://docs.aws.amazon.com/mgn/latest/ug/create-permissions-manually.html
+---
+
+NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
+
+# Create roles manually
+<a name="create-permissions-manually"></a>
+
+To create permissions manually, you create the MGNConnectorInstallerRole to install the MGN Connector and the AWSApplicationMigrationConnectorManagementRole needed to enable the connector to run. The connector assumes the AWSApplicationMigrationConnectorSharingRole\_{{management-account-id}} role as needed, for example, to install the replication agent on a source server.
+
+## Create the MGNConnectorInstallerRole
+<a name="MGNConnectorInstallerRole"></a>
+
+ The **MGNConnectorInstallerRole** role is used to install the Connector. The user or identity that installs the Connector will require permission to assume this role.
+
+To create the role:
+
+1.  Create a policy from the following JSON:
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Action": [
+                   "mgn:TagResource"
+               ],
+               "Resource": "arn:aws:mgn:*:*:connector/*",
+               "Effect": "Allow",
+               "Condition": {
+                   "StringEquals": {
+                       "mgn:CreateAction": "CreateConnector"
+                   }
+               }
+           },
+           {
+               "Action": [
+                   "mgn:CreateConnector"
+               ],
+               "Resource": "*",
+               "Effect": "Allow"
+           }
+       ]
+   }
+   ```
+
+------
+
+1.  Name the policy **MGNConnectorInstallerPolicy**.
+
+1.  Create a role with your account as the trusted entity. Alternatively use a custom trust policy that will grant the user or identity that will install the Connector, permission to assume this role.
+
+1.  Attach the **MGNConnectorInstallerPolicy** policy to the Permission policies.
+
+1.  Name the role **MGNConnectorInstallerRole**.
+
+## AWSApplicationMigrationConnectorManagementRole
+<a name="AWSApplicationMigrationConnectorManagementRole"></a>
+
+ The **AWSApplicationMigrationConnectorManagementRole** role is the role that is initially assumed by the Connector.
+
+To create the role:
+
+1.  After replacing **ACCOUNT-ID** with your account number, and **AWS\_REGION** with the connector region, create a policy from the following JSON:
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Action": "sts:AssumeRole",
+               "Resource": "arn:aws:iam::*:role/AWSApplicationMigrationConnectorSharingRole_ACCOUNT-ID",
+               "Effect": "Allow"
+           },
+           {
+               "Condition": {
+                   "Null": {
+                       "aws:ResourceTag/AWSApplicationMigrationServiceManaged": "false"
+                   }
+               },
+               "Action": "secretsmanager:GetSecretValue",
+               "Resource": "arn:aws:secretsmanager:*:*:secret:*",
+               "Effect": "Allow"
+           },
+           {
+               "Action": "s3:GetObject",
+               "Resource":
+                   ["arn:aws:s3:::aws-application-migration-service-AWS_REGION/latest/source-automation-client/linux/ssaf-client/ssaf_client",
+                   "arn:aws:s3:::amazon-ssm-AWS_REGION/*"],
+               "Effect": "Allow"
+           }
+       ]
+   }
+   ```
+
+------
+
+1. If you created an S3 bucket for SSM logging, replace **LOGS-BUCKET** with the bucket name and append the following to the policy:
+
+   ```
+   {
+       "Action": "s3:PutObject",
+       "Resource": "arn:aws:s3:::LOGS-BUCKET/*",
+       "Effect": "Allow"
+   }
+   ```
+
+1. In order for the MGN connector to send logs to CloudWatch, append this statement to the policy:
+
+   ```
+   {
+       "Effect": "Allow",
+       "Action": [
+           "logs:CreateLogGroup",
+           "logs:CreateLogStream",
+           "logs:DescribeLogGroups",
+           "logs:DescribeLogStreams",
+           "logs:PutLogEvents"
+       ],
+       "Resource": "*"
+   }
+   ```
+
+1.  Name the policy **MgnConnectorPolicy**
+
+1.  Create a role with the following trust relationship:
+
+------
+#### [ JSON ]
+
+****
+
+   ```
+   {
+       "Version":"2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "ssm.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole"
+           }
+       ]
+   }
+   ```
+
+------
+
+1.  Attach the following policies:
+
+   1.  **AmazonSSMManagedInstanceCore**
+
+   1.  **MgnConnectorPolicy**
+
+1.  Name the role **AWSApplicationMigrationConnectorManagementRole**

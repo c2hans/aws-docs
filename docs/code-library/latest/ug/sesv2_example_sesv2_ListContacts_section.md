@@ -1,0 +1,176 @@
+---
+source_url: https://docs.aws.amazon.com/code-library/latest/ug/sesv2_example_sesv2_ListContacts_section.html
+---
+
+There are more AWS SDK examples available in the [AWS Doc SDK Examples](https://github.com/awsdocs/aws-doc-sdk-examples) GitHub repo.
+
+# Use `ListContacts` with an AWS SDK
+<a name="sesv2_example_sesv2_ListContacts_section"></a>
+
+The following code examples show how to use `ListContacts`.
+
+Action examples are code excerpts from larger programs and must be run in context. You can see this action in context in the following code example:
++  [Newsletter scenario](sesv2_example_sesv2_NewsletterWorkflow_section.md)
+
+------
+#### [ .NET ]
+
+**SDK for .NET**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/SESv2#code-examples).
+
+```
+    /// <summary>
+    /// Lists the contacts in the specified contact list.
+    /// </summary>
+    /// <param name="contactListName">The name of the contact list.</param>
+    /// <returns>The list of contacts response from the ListContacts operation.</returns>
+    public async Task<List<Contact>> ListContactsAsync(string contactListName)
+    {
+        var request = new ListContactsRequest
+        {
+            ContactListName = contactListName
+        };
+
+        try
+        {
+            var response = await _sesClient.ListContactsAsync(request);
+            return response.Contacts;
+        }
+        catch (NotFoundException ex)
+        {
+            Console.WriteLine($"The contact list {contactListName} does not exist.");
+            Console.WriteLine(ex.Message);
+        }
+        catch (TooManyRequestsException ex)
+        {
+            Console.WriteLine("Too many requests were made. Please try again later.");
+            Console.WriteLine(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred while listing the contacts: {ex.Message}");
+        }
+
+        return new List<Contact>();
+    }
+```
++  For API details, see [ListContacts](https://docs.aws.amazon.com/goto/DotNetSDKV3/sesv2-2019-09-27/ListContacts) in *AWS SDK for .NET API Reference*.
+
+------
+#### [ Java ]
+
+**SDK for Java 2.x**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2/example_code/ses#code-examples).
+
+```
+      ListContactsRequest contactListRequest = ListContactsRequest.builder()
+          .contactListName(CONTACT_LIST_NAME)
+          .build();
+
+      List<String> contactEmails;
+      try {
+        ListContactsResponse contactListResponse = sesClient.listContacts(contactListRequest);
+
+        contactEmails = contactListResponse.contacts().stream()
+            .map(Contact::emailAddress)
+            .toList();
+      } catch (Exception e) {
+        // TODO: Remove when listContacts's GET body issue is resolved.
+        contactEmails = this.contacts;
+      }
+```
++  For API details, see [ListContacts](https://docs.aws.amazon.com/goto/SdkForJavaV2/sesv2-2019-09-27/ListContacts) in *AWS SDK for Java 2.x API Reference*.
+
+------
+#### [ Python ]
+
+**SDK for Python (Boto3)**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/sesv2/newsletter_scenario#code-examples).
+
+```
+def main():
+    """
+    The main function that orchestrates the execution of the workflow.
+    """
+    print(INTRO)
+    ses_client = boto3.client("sesv2")
+    workflow = SESv2Workflow(ses_client)
+    try:
+        workflow.prepare_application()
+        workflow.gather_subscriber_email_addresses()
+        workflow.send_coupon_newsletter()
+        workflow.monitor_and_review()
+    except ClientError as e:
+        print_error(e)
+    workflow.clean_up()
+
+class SESv2Workflow:
+    """
+    A class to manage the SES v2 Coupon Newsletter Workflow.
+    """
+
+    def __init__(self, ses_client, sleep=True):
+        self.ses_client = ses_client
+        self.sleep = sleep
+
+        try:
+            contacts_response = self.ses_client.list_contacts(
+                ContactListName=CONTACT_LIST_NAME
+            )
+        except ClientError as e:
+            if e.response["Error"]["Code"] == "NotFoundException":
+                print(f"Contact list '{CONTACT_LIST_NAME}' does not exist.")
+                return
+            else:
+                raise e
+```
++  For API details, see [ListContacts](https://docs.aws.amazon.com/goto/boto3/sesv2-2019-09-27/ListContacts) in *AWS SDK for Python (Boto3) API Reference*.
+
+------
+#### [ Rust ]
+
+**SDK for Rust**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/examples/ses#code-examples).
+
+```
+async fn show_contacts(client: &Client, list: &str) -> Result<(), Error> {
+    let resp = client
+        .list_contacts()
+        .contact_list_name(list)
+        .send()
+        .await?;
+
+    println!("Contacts:");
+
+    for contact in resp.contacts() {
+        println!("  {}", contact.email_address().unwrap_or_default());
+    }
+
+    Ok(())
+}
+```
++  For API details, see [ListContacts](https://docs.rs/aws-sdk-sesv2/latest/aws_sdk_sesv2/client/struct.Client.html#method.list_contacts) in *AWS SDK for Rust API reference*.
+
+------
+#### [ SAP ABAP ]
+
+**SDK for SAP ABAP**
+ There's more on GitHub. Find the complete example and learn how to set up and run in the [AWS Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/sap-abap/services/se2#code-examples).
+
+```
+    TRY.
+        oo_result = lo_se2->listcontacts(
+          iv_contactlistname = iv_contact_list_name ).
+        DATA(lv_count) = lines( oo_result->get_contacts( ) ).
+        MESSAGE |Retrieved { lv_count } contacts from list.| TYPE 'I'.
+      CATCH /aws1/cx_se2badrequestex INTO DATA(lo_bad_request).
+        MESSAGE 'Bad request.' TYPE 'I'.
+        RAISE EXCEPTION lo_bad_request.
+      CATCH /aws1/cx_se2notfoundexception INTO DATA(lo_not_found).
+        MESSAGE 'Contact list not found.' TYPE 'I'.
+        RAISE EXCEPTION lo_not_found.
+    ENDTRY.
+```
++  For API details, see [ListContacts](https://docs.aws.amazon.com/sdk-for-sap-abap/v1/api/latest/index.html) in *AWS SDK for SAP ABAP API reference*.
+
+------

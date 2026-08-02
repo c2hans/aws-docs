@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_PaletteCanvas.html
+---
+
+# PaletteCanvas
+<a name="API_PaletteCanvas"></a>
+
+Contains color configuration for canvas elements in a workspace theme.
+
+## Contents
+<a name="API_PaletteCanvas_Contents"></a>
+
+ ** ActiveBackground **   <a name="connect-Type-PaletteCanvas-ActiveBackground"></a>
+The background color for active elements.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `.*\\S.*`
+Required: No
+
+ ** ContainerBackground **   <a name="connect-Type-PaletteCanvas-ContainerBackground"></a>
+The background color for container elements.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `.*\\S.*`
+Required: No
+
+ ** PageBackground **   <a name="connect-Type-PaletteCanvas-PageBackground"></a>
+The background color for page elements.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 127.
+Pattern: `.*\\S.*`
+Required: No
+
+## See Also
+<a name="API_PaletteCanvas_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/PaletteCanvas)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/PaletteCanvas)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/PaletteCanvas)

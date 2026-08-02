@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/starting-an-mpts-output.html
+---
+
+# Starting or stopping an MPTS
+<a name="starting-an-mpts-output"></a>
+
+On the Conductor Live main menu, choose **MPTS**.
+
+To start an MPTS, select the **Start** icon. Note that starting an MPTS doesn't automatically start the programs (channels) on the Elemental Live nodes.
+
+To stop an MPTS, select the **Stop** icon at the right side of the MPTS. Note that the sources in the MPTS (the channels, passthrough programs, and passthrough streams) do not stop.

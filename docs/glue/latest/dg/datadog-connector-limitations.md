@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/glue/latest/dg/datadog-connector-limitations.html
+---
+
+# Limitations
+<a name="datadog-connector-limitations"></a>
+
+The following are limitations for the Datadog connector:
++ Datadog doesn’t support either field based or record based partitioning.
++ `from` is mandatory filter parameter for `Log Queries` entity.
++ `from_to_date` and `query` are mandatory filter parameters for `Metrics Timeseries` entity.

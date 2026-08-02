@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_AllowedCapabilities.html
+---
+
+# AllowedCapabilities
+<a name="API_AllowedCapabilities"></a>
+
+Information about the capabilities enabled for participants of the contact.
+
+## Contents
+<a name="API_AllowedCapabilities_Contents"></a>
+
+ ** Agent **   <a name="connect-Type-AllowedCapabilities-Agent"></a>
+Information about the agent's video sharing capabilities.
+Type: [ParticipantCapabilities](API_ParticipantCapabilities.md) object
+Required: No
+
+ ** Customer **   <a name="connect-Type-AllowedCapabilities-Customer"></a>
+Information about the customer's video sharing capabilities.
+Type: [ParticipantCapabilities](API_ParticipantCapabilities.md) object
+Required: No
+
+## See Also
+<a name="API_AllowedCapabilities_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/connect-2017-08-08/AllowedCapabilities)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/connect-2017-08-08/AllowedCapabilities)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/connect-2017-08-08/AllowedCapabilities)

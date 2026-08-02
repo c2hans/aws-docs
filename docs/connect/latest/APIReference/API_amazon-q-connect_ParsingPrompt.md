@@ -1,0 +1,25 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_ParsingPrompt.html
+---
+
+# ParsingPrompt
+<a name="API_amazon-q-connect_ParsingPrompt"></a>
+
+Instructions for interpreting the contents of a document.
+
+## Contents
+<a name="API_amazon-q-connect_ParsingPrompt_Contents"></a>
+
+ ** parsingPromptText **   <a name="connect-Type-amazon-q-connect_ParsingPrompt-parsingPromptText"></a>
+Instructions for interpreting the contents of a document.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 10000.
+Required: Yes
+
+## See Also
+<a name="API_amazon-q-connect_ParsingPrompt_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/ParsingPrompt)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/ParsingPrompt)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/ParsingPrompt)

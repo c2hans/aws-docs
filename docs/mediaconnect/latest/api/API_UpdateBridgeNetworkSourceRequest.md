@@ -1,0 +1,46 @@
+---
+source_url: https://docs.aws.amazon.com/mediaconnect/latest/api/API_UpdateBridgeNetworkSourceRequest.html
+---
+
+# UpdateBridgeNetworkSourceRequest
+<a name="API_UpdateBridgeNetworkSourceRequest"></a>
+
+ Update the network source of the bridge.
+
+## Contents
+<a name="API_UpdateBridgeNetworkSourceRequest_Contents"></a>
+
+ ** multicastIp **   <a name="mediaconnect-Type-UpdateBridgeNetworkSourceRequest-multicastIp"></a>
+ The network source multicast IP.
+Type: String
+Required: No
+
+ ** multicastSourceSettings **   <a name="mediaconnect-Type-UpdateBridgeNetworkSourceRequest-multicastSourceSettings"></a>
+The settings related to the multicast source.
+Type: [MulticastSourceSettings](API_MulticastSourceSettings.md) object
+Required: No
+
+ ** networkName **   <a name="mediaconnect-Type-UpdateBridgeNetworkSourceRequest-networkName"></a>
+The network source's gateway network name.
+Type: String
+Required: No
+
+ ** port **   <a name="mediaconnect-Type-UpdateBridgeNetworkSourceRequest-port"></a>
+The network source port.
+Type: Integer
+Required: No
+
+ ** protocol **   <a name="mediaconnect-Type-UpdateBridgeNetworkSourceRequest-protocol"></a>
+The network source protocol.
+ AWS Elemental MediaConnect no longer supports the Fujitsu QoS protocol. This reference is maintained for legacy purposes only.
+Type: String
+Valid Values: `zixi-push | rtp-fec | rtp | zixi-pull | rist | st2110-jpegxs | cdi | srt-listener | srt-caller | fujitsu-qos | udp | ndi-speed-hq`
+Required: No
+
+## See Also
+<a name="API_UpdateBridgeNetworkSourceRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mediaconnect-2018-11-14/UpdateBridgeNetworkSourceRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mediaconnect-2018-11-14/UpdateBridgeNetworkSourceRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mediaconnect-2018-11-14/UpdateBridgeNetworkSourceRequest)

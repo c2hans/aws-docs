@@ -1,0 +1,40 @@
+---
+source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DatabricksParameters.html
+---
+
+# DatabricksParameters
+<a name="API_DatabricksParameters"></a>
+
+The parameters that are required to connect to a Databricks data source.
+
+## Contents
+<a name="API_DatabricksParameters_Contents"></a>
+
+**Note**
+In the following list, the required parameters are described first.
+
+ ** Host **   <a name="QS-Type-DatabricksParameters-Host"></a>
+The host name of the Databricks data source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: Yes
+
+ ** Port **   <a name="QS-Type-DatabricksParameters-Port"></a>
+The port for the Databricks data source.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 65535.
+Required: Yes
+
+ ** SqlEndpointPath **   <a name="QS-Type-DatabricksParameters-SqlEndpointPath"></a>
+The HTTP path of the Databricks data source.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 4096.
+Required: Yes
+
+## See Also
+<a name="API_DatabricksParameters_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/quicksight-2018-04-01/DatabricksParameters)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/quicksight-2018-04-01/DatabricksParameters)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/DatabricksParameters)

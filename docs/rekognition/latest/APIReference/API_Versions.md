@@ -1,0 +1,33 @@
+---
+source_url: https://docs.aws.amazon.com/rekognition/latest/APIReference/API_Versions.html
+---
+
+# Versions
+<a name="API_Versions"></a>
+
+Object specifying the acceptable range of challenge versions.
+
+## Contents
+<a name="API_Versions_Contents"></a>
+
+ ** Maximum **   <a name="rekognition-Type-Versions-Maximum"></a>
+The desired maximum version for the challenge.
+Type: String
+Length Constraints: Minimum length of 5. Maximum length of 11.
+Pattern: `^(0|[1-9]\d{0,2})\.(0|[1-9]\d{0,2})\.(0|[1-9]\d{0,2})$`
+Required: No
+
+ ** Minimum **   <a name="rekognition-Type-Versions-Minimum"></a>
+The desired minimum version for the challenge.
+Type: String
+Length Constraints: Minimum length of 5. Maximum length of 11.
+Pattern: `^(0|[1-9]\d{0,2})\.(0|[1-9]\d{0,2})\.(0|[1-9]\d{0,2})$`
+Required: No
+
+## See Also
+<a name="API_Versions_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/rekognition-2016-06-27/Versions)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/rekognition-2016-06-27/Versions)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/rekognition-2016-06-27/Versions)

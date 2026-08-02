@@ -1,0 +1,20 @@
+---
+source_url: https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/sec-01.html
+---
+
+This is an earlier version of the AWS Well-Architected Framework. For the latest version, see [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+# SEC 1  How do you securely operate your workload?
+<a name="sec-01"></a>
+
+ To operate your workload securely, you must apply overarching best practices to every area of security. Take requirements and processes that you have defined in operational excellence at an organizational and workload level, and apply them to all areas. Staying up to date with AWS and industry recommendations and threat intelligence helps you evolve your threat model and control objectives. Automating security processes, testing, and validation allow you to scale your security operations.
+
+**Topics**
++ [SEC01-BP01 Separate workloads using accounts](sec_securely_operate_multi_accounts.md)
++ [SEC01-BP02 Secure AWS account](sec_securely_operate_aws_account.md)
++ [SEC01-BP03 Identify and validate control objectives](sec_securely_operate_control_objectives.md)
++ [SEC01-BP04 Keep up-to-date with security threats](sec_securely_operate_updated_threats.md)
++ [SEC01-BP05 Keep up-to-date with security recommendations](sec_securely_operate_updated_recommendations.md)
++ [SEC01-BP06 Automate testing and validation of security controls in pipelines](sec_securely_operate_test_validate_pipeline.md)
++ [SEC01-BP07 Identify and prioritize risks using a threat model](sec_securely_operate_threat_model.md)
++ [SEC01-BP08 Evaluate and implement new security services and features regularly](sec_securely_operate_implement_services_features.md)

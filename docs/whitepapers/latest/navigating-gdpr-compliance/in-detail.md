@@ -1,0 +1,137 @@
+---
+source_url: https://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html
+---
+
+# In detail
+<a name="in-detail"></a>
+
+## STEP 1: KNOW YOUR TRANSFERS
+<a name="step-1-know-your-transfers"></a>
+
+Customers need to understand whether their use of AWS services may lead to a data transfer, and if so, what customer data is transferred in order to be able to fulfil their obligations under the GDPR’s principle of accountability. As a first step, the customer, therefore, needs to identify which data transfers might take place in connection with its use of AWS services.
+
+The customer determines which AWS services it uses, or intends to use, and what customer data it processes and for which purposes when using the AWS services. Due to the content-agnostic nature of the AWS services, AWS does not have visibility into customer data. Therefore, only the customer can complete this step 1, based on where and how it chooses to use AWS services.
+
+AWS’s European seller of record (Amazon Web Services EMEA SARL), based in Luxembourg, is the AWS contracting party that provides AWS services to customers who have AWS accounts associated with Europe, the Middle East and Africa (other than South Africa). As set out in the [AWS Customer Agreement](https://aws.amazon.com/agreement/)[,](https://aws.amazon.com/agreement/) other AWS affiliates provide the AWS services to customers located outside of Europe, the Middle East and Africa.
+
+As set out in the [AWS DPA,](https://d1.awsstatic.com/legal/aws-dpa/aws-dpa.pdf) AWS will not transfer customer data outside the customer’s selected AWS region unless it is necessary to provide or maintain the AWS services initiated by the customer, or as necessary to comply with the law or a valid and binding order.
+
+The theoretical possibility of a governmental body in a third country being permitted by law to order the transfer of customer data in response to a disclosure request does not constitute a data transfer. This has been confirmed by data protection authorities, for example the German data protection authorities as well as German courts and procurement chambers. Nevertheless, the customer may use the information described in step 4 below, to implement technical and organizational measures to protect customer data in compliance with the GDPR.
+
+The following bullet points provide customers with more details on typical processing activities carried out by AWS in connection with customers’ use of AWS services. This information could be used by customers to assist them in completing their DTA, subject to appropriate customization based on their business activities and unique use of AWS services:
+
+|  |  |
+| --- |--- |
+| **Description of the transfer of customer data, including relevant sub-processors** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Processing activity** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Purpose for which customer data are transferred** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Categories of customer data concerned** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Data minimization** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Categories of data subjects concerned** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Actors involved in the processing (including sub-processors); processing chain** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Economic sector in which transfers of customer data occur** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Format of transferred customer data** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Volume and frequency of transfer of customer data** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+| **Security measures to protect customer data** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/in-detail.html)  |
+
+## STEP 2: IDENTIFY THE TRANSFER TOOLS YOU ARE RELYING ON
+<a name="step-2-identify-the-transfer-tools-you-are-relying-on"></a>
+
+If a customer has determined in step 1 of its DTA that its use of AWS services leads to an international data transfer, the customer must identify and document in step 2 of its DTA the transfer tool it is relying on as a lawful basis for the data transfer pursuant to chapter V of the GDPR. A customer might also choose to use a transfer tool other than an adequacy decision as the lawful basis for a transfer of personal data to a country that has received an adequacy decision from the European Commission, which would also need to be documented in step 2 of its DTA.
+
+**Transfer tool:**
++ The SCCs apply to the international data transfer that the customer has determined to take place in step 1 of this DTA. The SCCs are part of the [AWS Service Terms](https://aws.amazon.com/service-terms/) and incorporated by reference into the [AWS DPA](https://d1.awsstatic.com/legal/aws-dpa/aws-dpa.pdf). Although the SCCs are already part of a customer’s contract with AWS, they only apply if the customer’s use of AWS services involves a data transfer to a country not recognized by the European Commission as providing an adequate level of protection for personal data subject to GDPR.
++ Both the [Controller-to-Processor Clauses](https://d1.awsstatic.com/Controller_to_Processor_SCCs.pdf) and the [Processor-to-Processor Clauses](https://d1.awsstatic.com/Processor_to_Processor_SCCs.pdf) are incorporated into the [AWS DPA,](https://d1.awsstatic.com/legal/aws-dpa/aws-dpa.pdf) and apply as appropriate depending on whether the customer is a controller or a processor. The [Controller-to-Processor Clauses](https://d1.awsstatic.com/Controller_to_Processor_SCCs.pdf) apply to data transfers when customers are controllers, and the [Processor-to-Processor Clauses](https://d1.awsstatic.com/Processor_to_Processor_SCCs.pdf) apply to data transfers where customers are processors. See our blog post [New Standard Contractual Clauses now part of the AWS GDPR Data Processing Addendum for customers](https://aws.amazon.com/blogs/security/new-standard-contractual-clauses-now-part-of-the-aws-gdpr-data-processing-addendum-for-customers/) for further information.
++ AWS enters into appropriate standard contractual clauses with its sub-processors to validate onward transfers.
++ AWS offers additional addenda supplementing the DPA for data transfers from the [United Kingdom](https://d1.awsstatic.com/legal/aws-dpa/aws-uk-gdpr-dpa.pdf) and [Switzerland](https://d1.awsstatic.com/legal/aws-dpa/swiss-addendum-to-AWS-DPA.pdf) to third countries (as defined under each country’s data protection law).
+
+## STEP 3: ASSESS THE LAWS OR PRACTICES OF THE COUNTRIES THAT MAY IMPINGE ON THE EFFECTIVENESS OF THE TRANSFER TOOL
+<a name="step-3-assess-the-laws-or-practices-of-the-countries-that-may-impinge-on-the-eff"></a>
+
+In step 3 of its DTA, a customer needs to assess whether the transfer tool that it relies on for data transfers in step 2 of its DTA is effective in ensuring that the level of protection guaranteed by the GDPR is not undermined by the laws and practices in the country to which its customer data is transferred.
+
+Only the customer controls if and where its customer data is transferred in connection with its use of its selected AWS services. When assessing the risk in connection with the processing of customer data in a particular country, several factors might be relevant that only the customer can control, e.g., the sensitivity of the processed data categories, the purposes for which the customer uses the AWS services, or whether the customer’s business has ties to that country. This will be relevant for a customer when determining whether its customer data will receive protection in a country that is equivalent to the GDPR. A customer might, therefore, wish to conduct a review of certain countries that are relevant to its specific use of AWS services when completing this step of its DTA.
+
+The supplementary measures AWS takes and makes available to its customers – described in step 4 below – including AWS’s approach towards governmental disclosure requests, apply globally. AWS is confident that these measures set a high threshold to protect customer data against unwanted or unauthorized access or disclosure regardless of the specific jurisdiction in which customer data may be processed due to customer’s specific use of the AWS services. A customer might still wish to map these supplementary measures against the specific framework of a particular country that is relevant for that customer. When assessing relevant laws, a customer should first check the data transfer position determined in step 1 of its DTA and review it against the legal framework and practices applicable in the relevant countries.
+
+For example, for transfers of customer data to the US, on July 10, 2023, the European Commission adopted its adequacy decision on the DPF. The decision, which took effect on the day of its adoption, concludes that the US ensures an adequate level of protection for personal data transferred from the EEA to companies certified to the DPF. The European Commission also confirmed that safeguards that have been implemented as part of the DPF “facilitate the use of other tools, such as standard contractual clauses and binding corporate rules”. When relying on SCCs for transfers of customer data to the US and conducting a DTA, customers can consider the European Commission’s adequacy decision that finds that the safeguards under the DPF provide a level of protection essentially equivalent to the protection afforded under the GDPR.
+
+The following additional resources might also be helpful to assist a customer when completing step 3 of its DTA:
++ Factsheet of the ECtHR jurisprudence on mass surveillance: [https://www.echr.coe.int/Documents/FS\_Mass\_surveillance\_ENG.pdf](https://www.echr.coe.int/Documents/FS_Mass_surveillance_ENG.pdf)
++ Country reports of the Inter-American Commission on Human Rights (IACHR): [https://www.oas.org/en/iachr/reports/country.asp](https://www.oas.org/en/iachr/reports/country.asp)
++ Global Privacy Assembly – Global Frameworks and Standards Report: [https://globalprivacyassembly.org/wp-content/uploads/2020/10/Day-1-1\_2a-Day-3-3\_2b-v1\_0-Policy-Strategy-Working-Group-WS1-Global-frameworks-and-standards-Report-Final.pdf](https://globalprivacyassembly.org/wp-content/uploads/2020/10/Day-1-1_2a-Day-3-3_2b-v1_0-Policy-Strategy-Working-Group-WS1-Global-frameworks-and-standards-Report-Final.pdf)
++ United Nations Human Rights Council Documentation by country: [https://www.ohchr.org/en/hr-bodies/upr/documentation](https://www.ohchr.org/en/hr-bodies/upr/documentation)
++ United Nations Human Rights Treaty Bodies – UN Treaty Body Database: [https://tbinternet.ohchr.org/\_layouts/15/treatybodyexternal/TBSearch.aspx?Lang=en&TreatyID=8&DocTypeID=5](https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/TBSearch.aspx?Lang=en&TreatyID=8&DocTypeID=5)
+
+Irrespective of the laws that apply and regardless of the country from which it originates, AWS reviews every law enforcement request it may receive individually and independently. AWS challenges government requests for customer information, including customer data, that it believes are or could be overbroad or otherwise inappropriate. AWS thoroughly scrutinizes such requests, including those that conflict with local law, such as the GDPR, and objects where it has appropriate grounds to do so. AWS also takes and makes available supplementary measures, including contractual commitments, to support the effectiveness of the SCCs, as described in step 4 below.
+
+The EDPB’s recommendations also permit customers to consider AWS’s practical experience “with relevant prior instances of requests for access received from public authorities” outside of the EEA. AWS publishes regular [Amazon Information Request Reports](https://www.amazon.com/gp/help/customer/display.html?nodeId=GYSDRGWQ2C2CRYEF), which detail the types and volume of law enforcement requests that AWS receives, which are available for customers to review. The contents of the information request reports demonstrate that disclosures of customer data by AWS in response to government requests for information are very rare.
+
+## STEP 4: ADOPT SUPPLEMENTARY MEASURES IF REQUIRED
+<a name="step-4-adopt-supplementary-measures-if-required"></a>
+
+In step 4 of its DTA, a customer might identify supplementary measures that can be taken if the assessment in step 3 of its DTA reveals that the relevant proposed data transfer tool on its own does not provide effective protection for customer data as required by the GDPR.
+
+The SCCs in place between AWS and its customers are effective in ensuring an essentially equivalent level of data protection. In addition, AWS also offers effective technical, organizational, and contractual measures to ensure an equivalent level of protection for customer data that is transferred outside of the EEA, UK, and Switzerland.
+
+The following categories of supplementary measures are implemented or offered to customers for implementation: (a) ***technical measures***, such as encryption and logging, implementation of policies that are technically enforced to avoid the use of AWS services involving data transfers; (b) ***organizational measures***, comprising internal policies and standards regarding governmental requests for customer data; and (c) ***contractual protections***, including commitments with respect to law enforcement requests for customer data like those AWS makes in the [AWS Supplementary Addendum](https://d1.awsstatic.com/Supplementary_Addendum_to_the_AWS_GDPR_DPA.pdf).
+
+AWS operates the Shared Responsibility Model described in step 1 above, which apportions security and compliance responsibilities between AWS and its customers based on the way AWS services operate and the degree of control each party has. Under the Shared Responsibility Model, it is the customer’s responsibility to implement the technical and organizational measures required in connection with its DTA.
+
+**Technical supplementary measures**
+
+The following supplementary measures are made available by AWS to customers to assist with safeguarding data transfers:
+
+**Encryption**
+
+AWS provides advanced encryption services and tools that customers can use to protect their customer data.
+
+Customers can use AWS’s Key Management Service (AWS KMS) as a managed service in the AWS environment. AWS KMS allows customers to create and control their encryption keys, and uses FIPS- 140-2 certified Hardware Security Modules (HSM) to protect the security of such keys. All requests to use keys in AWS KMS are logged in AWS CloudTrail so customers can understand who used which key, in what context, and when it was used. Event data logged to AWS CloudTrail cannot be altered. AWS KMS is designed so that neither AWS (including AWS employees) nor third-party providers to AWS can retrieve, view, or disclose customer’s master keys in an unencrypted format.
+
+Customers can manage their own encryption keys (BYOK) from within a number of native AWS or third-party encryption solutions. For example, customers can also use the External Key Store (XKS) feature of AWS KMS or their own external key stores allowing them to protect their AWS resources using cryptographic keys outside of AWS. An external key store is a [custom key store](https://docs.aws.amazon.com/kms/latest/developerguide/key-store-overview.html) backed by an external key manager that customers own and manage outside of AWS.
+
+For more information, see the AWS KMS FAQs [here.](https://aws.amazon.com/kms/faqs/?nc1=h_ls)
+
+**AWS Nitro System**
+
+The AWS Nitro System is the underlying platform for all modern Amazon Elastic Compute Cloud (EC2) instances, and it provides additional confidentiality and privacy for customers’ applications. Using purpose-built hardware, firmware, and software, the AWS Nitro System provides unique and industry- leading security and isolation by offloading virtualization functions, like storage and networking, to dedicated hardware and associated firmware. As AWS commits in the [AWS Service Terms](https://aws.amazon.com/service-terms/), AWS personnel do not have access to customer data on AWS Nitro System EC2 instances. There are no technical means or APIs available to AWS personnel to read, copy, extract, modify, or otherwise access customer data on an AWS Nitro System EC2 instance or encrypted-EBS volume attached to an AWS Nitro System EC2 instance. NCC Group, a global cybersecurity consulting firm, conducted an architecture review of our security claims of the Nitro System and our claims about operator access. In its report NCC Group confirms that the AWS Nitro System, by design, has no mechanism for anyone at AWS to access customer data on Nitro hosts.
+
+For more information, see the [Security Design of the AWS Nitro System Whitepaper](https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/security-design-of-aws-nitro-system.html?did=wp_card&trk=wp_card) and our [blog post](https://aws.amazon.com/blogs/compute/aws-nitro-system-gets-independent-affirmation-of-its-confidential-compute-capabilities/).
+
+**Organizational supplementary measures**
+
+**Processes**
+
+AWS has internal processes to handle governmental requests for access to customer data. Irrespective of the source of the request or the laws that apply, AWS reviews every governmental request individually and independently in accordance with its law enforcement guidelines and commitments in the [AWS Supplementary Addendum](https://d1.awsstatic.com/Supplementary_Addendum_to_the_AWS_GDPR_DPA.pdf). AWS rigorously limits – or rejects outright – law enforcement requests for customer data coming from any country, including the US, where they are overly broad or AWS has other appropriate grounds to do so.
+
+**Information Request Reports**
+
+AWS knows that transparency matters to its customers, AWS regularly publishes an [Amazon Information Request report](https://www.amazon.com/gp/help/customer/display.html?nodeId=GYSDRGWQ2C2CRYEF) (IRR) about the types and volume of governmental requests it receives. Beginning with the July-December 2020 report, AWS launched a new IRR format as an organizational supplementary measure that provides more information about the types of governmental requests AWS receives, and the country of origin of such requests. The information provided in the IRRs demonstrates that disclosures by AWS of customer data in response to governmental requests for information are very rare.
+
+Specifically, with respect to requests from US authorities, customers should consider the following FAQ in the IRR (current for the July 2025 report, covering January – June 2025):
+
+*“****How many requests resulted in the disclosure to the U.S. government of enterprise or government content data located outside the United States?***
+
+*None.**”*
+
+**Contractual supplementary measures**
+
+**Supplementary addendum**
+
+The [AWS Supplementary Addendum](https://d1.awsstatic.com/Supplementary_Addendum_to_the_AWS_GDPR_DPA.pdf) is part of every customer’s terms and conditions with AWS and sets out supplementary contractual measures to protect customer data. In the [AWS Supplementary Addendum](https://d1.awsstatic.com/Supplementary_Addendum_to_the_AWS_GDPR_DPA.pdf), AWS commits to (i) use every reasonable effort to redirect any governmental body requesting customer data to the applicable customer, (ii) promptly notify the applicable customer about the request if legally permitted to do so, and (iii) challenge any overbroad or inappropriate request, including where the request conflicts with EU law. AWS also commits that if, after exhausting the preceding steps, it remains compelled to disclose customer data, AWS will disclose only the minimum amount of customer data necessary to satisfy the request. To support customers with assessing the laws of recipient countries, AWS warrants that it has no reason to believe that the legislation applicable to AWS or its sub-processors, including in any country to which customer data is transferred, prevents AWS from fulfilling its obligations under the [AWS DPA](https://d1.awsstatic.com/legal/aws-dpa/aws-dpa.pdf) or the [AWS Supplementary Addendum.](https://d1.awsstatic.com/Supplementary_Addendum_to_the_AWS_GDPR_DPA.pdf) AWS also commits to promptly notify any change in legislation that is likely to have a substantial impact on AWS fulfilling its obligations.
+
+## STEP 5: PROCEDURAL STEPS IF YOU HAVE IDENTIFIED EFFECTIVE SUPPLEMENTARY MEASURES
+<a name="step-5-procedural-steps-if-you-have-identified-effective-supplementary-measures"></a>
+
+As step 5 of its DTA, the customer might need to take procedural steps to implement additional supplementary measures depending on the requirements identified in step 4 of its DTA. However, there is no need for a customer to request authorization or pre-approval of such supplementary measures from its competent supervisory authority if the identified supplementary measures do not contradict, directly or indirectly, the SCCs and are sufficient to ensure that the third-country’s laws and practices do not undermine the level of protection guaranteed by the GDPR.
+
+## STEP 6: RE-EVALUATE AT APPROPRIATE INTERVALS
+<a name="step-6-re-evaluate-at-appropriate-intervals"></a>
+
+As step 6 of its DTA, a customer must monitor, on an ongoing basis, developments in the third country to which its customer data will be transferred that could affect the result of its DTA.
++ It is the customer’s responsibility to constantly evaluate the sufficiency of supplementary measures in order to ensure compliance with the GDPR, the SCCs, and the requirements stipulated by the EDPB.
++ AWS will monitor, on an ongoing basis, developments relevant to the transfer of customer data that could affect the basic information provided in this DTA Customer Guide and the level of protection for customer data.
+
+**Additional resources**
+
+To help customers further understand how they can address their data protection requirements, customers are encouraged to read the risk, compliance and security whitepapers, best practices, checklists and guidance published on the AWS website. This material can be found at [http://aws.amazon.com/compliance](http://aws.amazon.com/compliance) and [http://aws.amazon.com/security.](http://aws.amazon.com/security)

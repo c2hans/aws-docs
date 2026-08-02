@@ -1,0 +1,11 @@
+---
+source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/local-browser-settings.html
+---
+
+# Selecting languages in user browser settings
+<a name="local-browser-settings"></a>
+
+To set a user's local browser settings, follow the appropriate steps.
++ In Chrome, choose **Settings**, choose **Languages**, and then order the languages based on preference.
++ In Firefox, choose **Settings**, **General**, **Language**, and select the language from the drop-down menu.
++ In Edge, choose **Settings**, choose **Languages**, and then order the languages based on preference.

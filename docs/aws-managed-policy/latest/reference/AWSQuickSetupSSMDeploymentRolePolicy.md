@@ -1,0 +1,496 @@
+---
+source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSQuickSetupSSMDeploymentRolePolicy.html
+---
+
+# AWSQuickSetupSSMDeploymentRolePolicy
+<a name="AWSQuickSetupSSMDeploymentRolePolicy"></a>
+
+**Description**: This policy grants administrative permssions that allow Quick Setup to create resources that are used during the Systems Manager onboarding process.
+
+`AWSQuickSetupSSMDeploymentRolePolicy` is an [AWS managed policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies).
+
+## Using this policy
+<a name="AWSQuickSetupSSMDeploymentRolePolicy-how-to-use"></a>
+
+You can attach `AWSQuickSetupSSMDeploymentRolePolicy` to your users, groups, and roles.
+
+## Policy details
+<a name="AWSQuickSetupSSMDeploymentRolePolicy-details"></a>
++ **Type**: AWS managed policy
++ **Creation time**: November 15, 2024, 22:53 UTC
++ **Edited time:** February 12, 2026, 17:58 UTC
++ **ARN**: `arn:aws:iam::aws:policy/AWSQuickSetupSSMDeploymentRolePolicy`
+
+## Policy version
+<a name="AWSQuickSetupSSMDeploymentRolePolicy-version"></a>
+
+**Policy version:** v8 (default)
+
+The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
+
+## JSON policy document
+<a name="AWSQuickSetupSSMDeploymentRolePolicy-json"></a>
+
+```
+{
+  "Version" : "2012-10-17",
+  "Statement" : [
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:DescribeStacks",
+        "cloudformation:DescribeStackDriftDetectionStatus",
+        "cloudformation:ListStacks"
+      ],
+      "Resource" : [
+        "*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "cloudformation:CreateStack",
+        "cloudformation:UpdateStack",
+        "cloudformation:DeleteStack",
+        "cloudformation:CreateChangeSet",
+        "cloudformation:DeleteChangeSet",
+        "cloudformation:ExecuteChangeSet",
+        "cloudformation:DescribeChangeSet",
+        "cloudformation:DescribeStackResourceDrifts",
+        "cloudformation:DetectStackDrift",
+        "cloudformation:DetectStackResourceDrift",
+        "cloudformation:DescribeStackEvents"
+      ],
+      "Resource" : [
+        "arn:aws:cloudformation:*:*:stack/StackSet-AWS-QuickSetup-SSM-*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "lambda:CreateFunction",
+        "lambda:TagResource"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
+        "StringEquals" : {
+          "aws:ResourceAccount" : [
+            "${aws:PrincipalAccount}"
+          ],
+          "aws:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ],
+          "aws:RequestTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        },
+        "ForAllValues:StringLike" : {
+          "aws:TagKeys" : [
+            "QuickSetup*"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "lambda:InvokeFunction",
+        "lambda:DeleteFunction",
+        "lambda:UpdateFunction*"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
+        "StringEquals" : {
+          "aws:ResourceAccount" : [
+            "${aws:PrincipalAccount}"
+          ],
+          "aws:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "lambda:GetFunction"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudformation.amazonaws.com"
+        },
+        "StringEquals" : {
+          "aws:ResourceAccount" : "${aws:PrincipalAccount}"
+        }
+      },
+      "Resource" : "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:CreateAssociation",
+        "ssm:UpdateAssociation",
+        "ssm:DeleteAssociation",
+        "ssm:DescribeAssociation",
+        "ssm:GetDocument",
+        "ssm:DescribeDocument"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:ssm:*::document/AWSQuickSetupType-EnableAREX",
+        "arn:aws:ssm:*::document/AWSQuickSetupType-EnableDHMC",
+        "arn:aws:ssm:*::document/AWSQuickSetupType-ManageInstanceProfile",
+        "arn:aws:ssm:*::document/AWS-EnableExplorer",
+        "arn:aws:ssm:*::document/AWS-GatherSoftwareInventory",
+        "arn:aws:ssm:*::document/AWS-UpdateSSMAgent",
+        "arn:aws:ec2:*:*:instance/*",
+        "arn:aws:ssm:*:*:managed-instance/*",
+        "arn:aws:ssm:*:*:association/*"
+      ]
+    },
+    {
+      "Sid" : "SSMSLRCreate",
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateServiceLinkedRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/aws-service-role/ssm.amazonaws.com/AWSServiceRoleForAmazonSSM"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "iam:AWSServiceName" : "ssm.amazonaws.com"
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:CreateRole",
+        "iam:TagRole"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
+        "ForAllValues:StringLike" : {
+          "aws:TagKeys" : [
+            "QuickSetup*"
+          ]
+        },
+        "StringEquals" : {
+          "aws:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ],
+          "aws:RequestTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:GetRole",
+        "iam:UpdateRole",
+        "iam:DeleteRole",
+        "iam:GetRolePolicy",
+        "iam:ListAttachedRolePolicies",
+        "iam:ListRolePolicies",
+        "iam:ListRoleTags"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy"
+      ],
+      "Condition" : {
+        "ArnEquals" : {
+          "iam:PolicyARN" : [
+            "arn:aws:iam::aws:policy/AWSQuickSetupSSMLifecycleManagementExecutionPolicy"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-LifecycleManagement-*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy"
+      ],
+      "Condition" : {
+        "ArnEquals" : {
+          "iam:PolicyARN" : "arn:aws:iam::aws:policy/AWSQuickSetupSSMManageResourcesExecutionPolicy"
+        }
+      },
+      "Resource" : "arn:aws:iam::*:role/AWS-QuickSetup-SSM-ManageResources-*"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy"
+      ],
+      "Condition" : {
+        "ArnEquals" : {
+          "iam:PolicyARN" : [
+            "arn:aws:iam::aws:policy/AWS-SSM-RemediationAutomation-AdministrationRolePolicy",
+            "arn:aws:iam::aws:policy/AWS-SSM-RemediationAutomation-ExecutionRolePolicy",
+            "arn:aws:iam::aws:policy/AWS-SSM-RemediationAutomation-OperationalAccountAdministrationRolePolicy",
+            "arn:aws:iam::aws:policy/AWS-SSM-Automation-DiagnosisBucketPolicy",
+            "arn:aws:iam::aws:policy/AWS-SSM-DiagnosisAutomation-AdministrationRolePolicy",
+            "arn:aws:iam::aws:policy/AWS-SSM-DiagnosisAutomation-ExecutionRolePolicy"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:PassRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "iam:PassedToService" : "ssm.amazonaws.com",
+          "iam:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
+        },
+        "ArnLike" : {
+          "iam:AssociatedResourceARN" : [
+            "arn:aws:ssm:*::document/AWSQuickSetupType-EnableAREX",
+            "arn:aws:ssm:*::document/AWSQuickSetupType-EnableDHMC",
+            "arn:aws:ssm:*::document/AWSQuickSetupType-ManageInstanceProfile",
+            "arn:aws:ssm:*::document/AWS-EnableExplorer",
+            "arn:aws:ssm:*:*:association/*"
+          ]
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:PassRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-LifecycleManagement*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "iam:PassedToService" : "lambda.amazonaws.com",
+          "iam:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
+        },
+        "ArnLike" : {
+          "iam:AssociatedResourceARN" : [
+            "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle-*"
+          ]
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : "lambda:TagResource",
+      "Resource" : [
+        "arn:aws:lambda:*:*:function:aws-quicksetup-lifecycle*"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudformation.amazonaws.com"
+        },
+        "ForAllValues:StringLike" : {
+          "aws:TagKeys" : "QuickSetup*"
+        },
+        "StringLike" : {
+          "aws:RequestTag/QuickSetupDocumentVersionName" : "*"
+        },
+        "StringEquals" : {
+          "aws:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "iam:TagRole"
+      ],
+      "Resource" : [
+        "arn:aws:iam::*:role/AWS-QuickSetup-SSM-*",
+        "arn:aws:iam::*:role/AWS-SSM-Remediation*",
+        "arn:aws:iam::*:role/AWS-SSM-Diagnosis*"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : "cloudformation.amazonaws.com"
+        },
+        "ForAllValues:StringLike" : {
+          "aws:TagKeys" : "QuickSetup*"
+        },
+        "StringLike" : {
+          "aws:RequestTag/QuickSetupDocumentVersionName" : "*"
+        },
+        "StringEquals" : {
+          "aws:ResourceTag/QuickSetupDocument" : "AWSQuickSetupType-SSM"
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:CreateAssociation",
+        "ssm:AddTagsToResource"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:association/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:RequestTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:CreateAssociation",
+        "ssm:UpdateAssociation",
+        "ssm:DeleteAssociation",
+        "ssm:DescribeAssociation"
+      ],
+      "Resource" : "arn:aws:ssm:*::document/AWSQuickSetupType-SSM-ManageResources"
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:UpdateAssociation",
+        "ssm:DeleteAssociation",
+        "ssm:DescribeAssociation"
+      ],
+      "Resource" : [
+        "arn:aws:ssm:*:*:association/*"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      }
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource"
+      ],
+      "Condition" : {
+        "StringEquals" : {
+          "aws:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:ssm:*:*:automation-execution/*",
+        "arn:aws:ssm:*:*:association/*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : [
+        "ssm:DescribeAssociationExecutions",
+        "ssm:DescribeAssociationExecutionTargets",
+        "ssm:GetAutomationExecution"
+      ],
+      "Condition" : {
+        "ForAnyValue:StringEquals" : {
+          "aws:CalledVia" : [
+            "cloudformation.amazonaws.com"
+          ]
+        },
+        "StringEquals" : {
+          "aws:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      },
+      "Resource" : [
+        "arn:aws:ssm:*:*:automation-execution/*",
+        "arn:aws:ssm:*:*:association/*"
+      ]
+    },
+    {
+      "Effect" : "Allow",
+      "Action" : "iam:PassRole",
+      "Resource" : "arn:aws:iam::*:role/AWS-QuickSetup-SSM-ManageResources*",
+      "Condition" : {
+        "StringEquals" : {
+          "iam:PassedToService" : [
+            "ssm.amazonaws.com"
+          ],
+          "iam:ResourceTag/QuickSetupDocument" : [
+            "AWSQuickSetupType-SSM"
+          ]
+        }
+      }
+    }
+  ]
+}
+```
+
+## Learn more
+<a name="AWSQuickSetupSSMDeploymentRolePolicy-learn-more"></a>
++ [Create a permission set using AWS managed policies in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html)
++ [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
++ [Understand versioning for IAM policies](https://docs.aws.amazon.com//IAM/latest/UserGuide/access_policies_managed-versioning.html)
++ [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com//IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)

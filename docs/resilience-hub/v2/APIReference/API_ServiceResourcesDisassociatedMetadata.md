@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ServiceResourcesDisassociatedMetadata.html
+---
+
+# ServiceResourcesDisassociatedMetadata
+<a name="API_ServiceResourcesDisassociatedMetadata"></a>
+
+Metadata for a service resources disassociated event.
+
+## Contents
+<a name="API_ServiceResourcesDisassociatedMetadata_Contents"></a>
+
+ ** resourceCount **   <a name="ngresiliencehub-Type-ServiceResourcesDisassociatedMetadata-resourceCount"></a>
+The number of resources disassociated.
+Type: Integer
+Required: No
+
+ ** resourceTypes **   <a name="ngresiliencehub-Type-ServiceResourcesDisassociatedMetadata-resourceTypes"></a>
+The types of resources disassociated.
+Type: Array of strings
+Required: No
+
+## See Also
+<a name="API_ServiceResourcesDisassociatedMetadata_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/resiliencehubv2-2026-02-17/ServiceResourcesDisassociatedMetadata)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/resiliencehubv2-2026-02-17/ServiceResourcesDisassociatedMetadata)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/resiliencehubv2-2026-02-17/ServiceResourcesDisassociatedMetadata)

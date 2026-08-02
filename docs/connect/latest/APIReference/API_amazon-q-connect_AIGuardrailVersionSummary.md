@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/connect/latest/APIReference/API_amazon-q-connect_AIGuardrailVersionSummary.html
+---
+
+# AIGuardrailVersionSummary
+<a name="API_amazon-q-connect_AIGuardrailVersionSummary"></a>
+
+The summary of the AI Guardrail version.
+
+## Contents
+<a name="API_amazon-q-connect_AIGuardrailVersionSummary_Contents"></a>
+
+ ** aiGuardrailSummary **   <a name="connect-Type-amazon-q-connect_AIGuardrailVersionSummary-aiGuardrailSummary"></a>
+The data for the summary of the AI Guardrail version.
+Type: [AIGuardrailSummary](API_amazon-q-connect_AIGuardrailSummary.md) object
+Required: No
+
+ ** versionNumber **   <a name="connect-Type-amazon-q-connect_AIGuardrailVersionSummary-versionNumber"></a>
+The version number for this AI Guardrail version.
+Type: Long
+Valid Range: Minimum value of 1.
+Required: No
+
+## See Also
+<a name="API_amazon-q-connect_AIGuardrailVersionSummary_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/qconnect-2020-10-19/AIGuardrailVersionSummary)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/qconnect-2020-10-19/AIGuardrailVersionSummary)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/qconnect-2020-10-19/AIGuardrailVersionSummary)

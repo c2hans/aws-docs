@@ -1,0 +1,12 @@
+---
+source_url: https://docs.aws.amazon.com/gameliftservers/latest/fleetiqguide/gsg-setting-up.html
+---
+
+# Amazon GameLift Servers FleetIQ setting up
+<a name="gsg-setting-up"></a>
+
+The topics in this section help with set up tasks, including how to set up your AWS account for use with Amazon Amazon GameLift Servers FleetIQ service.
+
+**Topics**
++ [Amazon GameLift Servers FleetIQ supported software](gsg-supported.md)
++ [Set up your AWS account for Amazon GameLift Servers FleetIQ](gsg-iam-permissions.md)

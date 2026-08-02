@@ -1,0 +1,31 @@
+---
+source_url: https://docs.aws.amazon.com/sesmailmanager/latest/APIReference/API_IngressBooleanExpression.html
+---
+
+# IngressBooleanExpression
+<a name="API_IngressBooleanExpression"></a>
+
+The structure for a boolean condition matching on the incoming mail.
+
+## Contents
+<a name="API_IngressBooleanExpression_Contents"></a>
+
+ ** Evaluate **   <a name="sesmailmanager-Type-IngressBooleanExpression-Evaluate"></a>
+The operand on which to perform a boolean condition operation.
+Type: [IngressBooleanToEvaluate](API_IngressBooleanToEvaluate.md) object
+ **Note: **This object is a Union. Only one member of this object can be specified or returned.
+Required: Yes
+
+ ** Operator **   <a name="sesmailmanager-Type-IngressBooleanExpression-Operator"></a>
+The matching operator for a boolean condition expression.
+Type: String
+Valid Values: `IS_TRUE | IS_FALSE`
+Required: Yes
+
+## See Also
+<a name="API_IngressBooleanExpression_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mailmanager-2023-10-17/IngressBooleanExpression)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mailmanager-2023-10-17/IngressBooleanExpression)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mailmanager-2023-10-17/IngressBooleanExpression)

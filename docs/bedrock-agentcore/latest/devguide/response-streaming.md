@@ -1,0 +1,30 @@
+---
+source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/response-streaming.html
+---
+
+# Stream agent responses
+<a name="response-streaming"></a>
+
+The following Strands Agents example shows how an AgentCore Runtime agent can stream a response back to a client.
+
+```
+from strands import Agent
+from bedrock_agentcore import BedrockAgentCoreApp
+
+app = BedrockAgentCoreApp()
+agent = Agent()
+
+@app.entrypoint
+async def agent_invocation(payload):
+    """Handler for agent invocation"""
+    user_message = payload.get(
+        "prompt", "No prompt found in input, please guide customer to create a json payload with prompt key"
+    )
+    stream = agent.stream_async(user_message)
+    async for event in stream:
+        print(event)
+        yield (event)
+
+if __name__ == "__main__":
+    app.run()
+```

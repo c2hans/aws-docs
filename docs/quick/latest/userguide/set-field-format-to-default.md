@@ -1,0 +1,18 @@
+---
+source_url: https://docs.aws.amazon.com/quick/latest/userguide/set-field-format-to-default.html
+---
+
+# Return a field's format to default settings
+<a name="set-field-format-to-default"></a>
+
+Use the following procedure to return a field's format to the default settings.
+
+**To return a field's format to the default settings**
+
+1. In the **Field list** pane, choose the selector icon to the right of the field that you want to reset.
+
+1. Choose **Format**, and then choose **More Formatting options**.
+
+   The **Format data** pane opens.
+
+1. Choose **Reset to defaults**.

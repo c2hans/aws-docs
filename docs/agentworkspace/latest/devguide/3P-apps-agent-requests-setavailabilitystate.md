@@ -1,0 +1,43 @@
+---
+source_url: https://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-agent-requests-setavailabilitystate.html
+---
+
+# Set the agent state with the given agent state ARN in Connect Customer agent workspace
+<a name="3P-apps-agent-requests-setavailabilitystate"></a>
+
+ Set the agent state with the given agent state ARN. By default, the promise resolves after the agent state is set in the backend. The response status is either `updated` or `queued` based on the current agent state.
+
+ **Signature**
+
+```
+ setAvailabilityState(
+    agentStateARN: string,
+  ): Promise<SetAvailabilityStateResult>
+```
+
+ **Usage**
+
+```
+const availabilityStates: AgentState[] = await agentClient.listAvailabilityStates();
+const availabilityStateResult:SetAvailabilityStateResult = await agentClient.setAvailabilityState(availabilityStates[0].agentStateARN);
+```
+
+ **Input**
+
+|  **Parameter**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+|  agentStateARN Required  |  string  |  The ARN of the agent state  |
+
+ **Output - SetAvailabilityStateResult**
+
+|  **Parameter**  |  **Type**  |  **Description**  |
+| --- | --- | --- |
+|  status  |  string  |  The status will be updated or queued depending on if the agent is currently handling an active contact.  |
+|  current  |  AgentState  |  Reperesents the current state of the agent.  |
+|  next  |  AgentState  |  It'll be the target state if the agent is handling active contact. Applicable when the status is queued. |
+
+ **Permissions required:**
+
+```
+User.Configuration.Edit
+```

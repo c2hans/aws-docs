@@ -1,0 +1,135 @@
+---
+source_url: https://docs.aws.amazon.com/ssmsap/latest/APIReference/API_ListOperationEvents.html
+---
+
+# ListOperationEvents
+<a name="API_ListOperationEvents"></a>
+
+Returns a list of operations events.
+
+Available parameters include `OperationID`, as well as optional parameters `MaxResults`, `NextToken`, and `Filters`.
+
+## Request Syntax
+<a name="API_ListOperationEvents_RequestSyntax"></a>
+
+```
+POST /list-operation-events HTTP/1.1
+Content-type: application/json
+
+{
+   "Filters": [
+      {
+         "Name": "{{string}}",
+         "Operator": "{{string}}",
+         "Value": "{{string}}"
+      }
+   ],
+   "MaxResults": {{number}},
+   "NextToken": "{{string}}",
+   "OperationId": "{{string}}"
+}
+```
+
+## URI Request Parameters
+<a name="API_ListOperationEvents_RequestParameters"></a>
+
+The request does not use any URI parameters.
+
+## Request Body
+<a name="API_ListOperationEvents_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [Filters](#API_ListOperationEvents_RequestSyntax) **   <a name="ssmsap-ListOperationEvents-request-Filters"></a>
+Optionally specify filters to narrow the returned operation event items.
+Valid filter names include `status`, `resourceID`, and `resourceType`. The valid operator for all three filters is `Equals`.
+Type: Array of [Filter](API_Filter.md) objects
+Array Members: Minimum number of 1 item. Maximum number of 10 items.
+Required: No
+
+ ** [MaxResults](#API_ListOperationEvents_RequestSyntax) **   <a name="ssmsap-ListOperationEvents-request-MaxResults"></a>
+The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value.
+If you do not specify a value for `MaxResults`, the request returns 50 items per page by default.
+Type: Integer
+Valid Range: Minimum value of 1. Maximum value of 50.
+Required: No
+
+ ** [NextToken](#API_ListOperationEvents_RequestSyntax) **   <a name="ssmsap-ListOperationEvents-request-NextToken"></a>
+The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+Type: String
+Pattern: `.{16,2048}`
+Required: No
+
+ ** [OperationId](#API_ListOperationEvents_RequestSyntax) **   <a name="ssmsap-ListOperationEvents-request-OperationId"></a>
+The ID of the operation.
+Type: String
+Pattern: `[{]?[0-9a-fA-F]{8}-([0-9a-fA-F]{4}-){3}[0-9a-fA-F]{12}[}]?`
+Required: Yes
+
+## Response Syntax
+<a name="API_ListOperationEvents_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "NextToken": "string",
+   "OperationEvents": [
+      {
+         "Description": "string",
+         "Resource": {
+            "ResourceArn": "string",
+            "ResourceType": "string"
+         },
+         "Status": "string",
+         "StatusMessage": "string",
+         "Timestamp": number
+      }
+   ]
+}
+```
+
+## Response Elements
+<a name="API_ListOperationEvents_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [NextToken](#API_ListOperationEvents_ResponseSyntax) **   <a name="ssmsap-ListOperationEvents-response-NextToken"></a>
+The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+Type: String
+Pattern: `.{16,2048}`
+
+ ** [OperationEvents](#API_ListOperationEvents_ResponseSyntax) **   <a name="ssmsap-ListOperationEvents-response-OperationEvents"></a>
+A returned list of operation events that meet the filter criteria.
+Type: Array of [OperationEvent](API_OperationEvent.md) objects
+
+## Errors
+<a name="API_ListOperationEvents_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** InternalServerException **
+An internal error has occurred.
+HTTP Status Code: 500
+
+ ** ValidationException **
+The input fails to satisfy the constraints specified by an AWS service.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_ListOperationEvents_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/ssm-sap-2018-05-10/ListOperationEvents)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ssm-sap-2018-05-10/ListOperationEvents)

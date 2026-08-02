@@ -1,0 +1,43 @@
+---
+source_url: https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-ses-configurationset-guardianoptions.html
+---
+
+This is the new *CloudFormation Template Reference Guide*. Please update your bookmarks and links. For help getting started with CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html).
+
+# AWS::SES::ConfigurationSet GuardianOptions
+<a name="aws-properties-ses-configurationset-guardianoptions"></a>
+
+An object containing additional settings for your VDM configuration as applicable to the Guardian.
+
+## Syntax
+<a name="aws-properties-ses-configurationset-guardianoptions-syntax"></a>
+
+To declare this entity in your CloudFormation template, use the following syntax:
+
+### JSON
+<a name="aws-properties-ses-configurationset-guardianoptions-syntax.json"></a>
+
+```
+{
+  "[OptimizedSharedDelivery](#cfn-ses-configurationset-guardianoptions-optimizedshareddelivery)" : {{String}}
+}
+```
+
+### YAML
+<a name="aws-properties-ses-configurationset-guardianoptions-syntax.yaml"></a>
+
+```
+  [OptimizedSharedDelivery](#cfn-ses-configurationset-guardianoptions-optimizedshareddelivery): {{String}}
+```
+
+## Properties
+<a name="aws-properties-ses-configurationset-guardianoptions-properties"></a>
+
+`OptimizedSharedDelivery`  <a name="cfn-ses-configurationset-guardianoptions-optimizedshareddelivery"></a>
+Specifies the status of your VDM optimized shared delivery. Can be one of the following:
++ `ENABLED` – Amazon SES enables optimized shared delivery for the configuration set.
++ `DISABLED` – Amazon SES disables optimized shared delivery for the configuration set.
+*Required*: Yes
+*Type*: String
+*Pattern*: `ENABLED|DISABLED`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

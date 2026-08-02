@@ -1,0 +1,127 @@
+---
+source_url: https://docs.aws.amazon.com/redshift/latest/dg/pattern-matching-conditions-similar-to.html
+---
+
+ Amazon Redshift will no longer support the use of Python UDFs after June 30, 2026. We will start enforcing it in phases. For more information on the details of Python end of life and migration options, see the [ blog post ](https://aws.amazon.com/blogs/big-data/amazon-redshift-python-user-defined-functions-will-reach-end-of-support-after-june-30-2026/) that was published on June 30, 2025.
+
+# SIMILAR TO
+<a name="pattern-matching-conditions-similar-to"></a>
+
+The SIMILAR TO operator matches a string expression, such as a column name, with a SQL standard regular expression pattern. A SQL regular expression pattern can include a set of pattern-matching metacharacters, including the two supported by the [LIKE](r_patternmatching_condition_like.md) operator.
+
+The SIMILAR TO operator returns true only if its pattern matches the entire string, unlike POSIX regular expression behavior, where the pattern can match any portion of the string.
+
+SIMILAR TO performs a case-sensitive match.
+
+**Note**
+Regular expression matching using SIMILAR TO is computationally expensive. We recommend using LIKE whenever possible, especially when processing a very large number of rows. For example, the following queries are functionally identical, but the query that uses LIKE runs several times faster than the query that uses a regular expression:
+
+```
+select count(*) from event where eventname SIMILAR TO '%(Ring|Die)%';
+select count(*) from event where eventname LIKE '%Ring%' OR eventname LIKE '%Die%';
+```
+
+## Syntax
+<a name="pattern-matching-conditions-similar-to-synopsis"></a>
+
+```
+expression [ NOT ] SIMILAR TO pattern [ ESCAPE 'escape_char' ]
+```
+
+## Arguments
+<a name="pattern-matching-conditions-similar-to-arguments"></a>
+
+ *expression*
+A valid UTF-8 character expression, such as a column name.
+
+SIMILAR TO
+SIMILAR TO performs a case-sensitive pattern match for the entire string in *expression*.
+
+ *pattern*
+A valid UTF-8 character expression representing a SQL standard regular expression pattern.
+
+ *escape\_char*
+A character expression that will escape metacharacters in the pattern. The default is two backslashes ('\\\\').
+
+If *pattern* does not contain metacharacters, then the pattern only represents the string itself.
+
+Either of the character expressions can be CHAR or VARCHAR data types. If they differ, Amazon Redshift converts *pattern* to the data type of *expression*.
+
+SIMILAR TO supports the following pattern-matching metacharacters:
+
+| Operator  | Description  |
+| --- | --- |
+| %  | Matches any sequence of zero or more characters. |
+| \_ | Matches any single character. |
+| \| | Denotes alternation (either of two alternatives). |
+| \* | Repeat the previous item zero or more times. |
+| \+ | Repeat the previous item one or more times. |
+| ?  | Repeat the previous item zero or one time. |
+| {m} | Repeat the previous item exactly m times. |
+| {m,} | Repeat the previous item m or more times. |
+| {m,n} | Repeat the previous item at least m and not more than n times. |
+|  () | Parentheses group items into a single logical item. |
+| [...] | A bracket expression specifies a character class, just as in POSIX regular expressions. |
+
+## Examples
+<a name="pattern-matching-conditions-similar-to-examples"></a>
+
+The following table shows examples of pattern matching using SIMILAR TO:
+
+| Expression  | Returns  |
+| --- | --- |
+| 'abc' SIMILAR TO 'abc' | True |
+|  'abc' SIMILAR TO '\_b\_'  | True |
+| 'abc' SIMILAR TO '\_A\_' | False |
+| 'abc' SIMILAR TO '%(b\|d)%' | True |
+| 'abc' SIMILAR TO '(b\|c)%' | False |
+| 'AbcAbcdefgefg12efgefg12' SIMILAR TO '((Ab)?c)\+d((efg)\+(12))\+'  | True |
+| 'aaaaaab11111xy' SIMILAR TO 'a{6}\_ [0-9]{5}(x\|y){2}'  | True |
+| '$0.87' SIMILAR TO '$[0-9]\+(.[0-9][0-9])?'  | True |
+
+The following example finds cities whose names contain "E" or "H":
+
+```
+SELECT DISTINCT city FROM users
+WHERE city SIMILAR TO '%E%|%H%' ORDER BY city LIMIT 5;
+
+      city
+-----------------
+ Agoura Hills
+ Auburn Hills
+ Benton Harbor
+ Beverly Hills
+ Chicago Heights
+```
+
+The following example uses the default escape string ('`\\`') to search for strings that include "`_`":
+
+```
+SELECT tablename, "column" FROM pg_table_def
+WHERE "column" SIMILAR TO '%start\\_%'
+ORDER BY tablename, "column" LIMIT 5;
+
+        tablename         |       column
+--------------------------+---------------------
+ stcs_abort_idle          | idle_start_time
+ stcs_abort_idle          | txn_start_time
+ stcs_analyze_compression | start_time
+ stcs_auto_worker_levels  | start_level
+ stcs_auto_worker_levels  | start_wlm_occupancy
+```
+
+The following example specifies '`^`' as the escape string, then uses the escape string to search for strings that include "`_`":
+
+```
+SELECT tablename, "column" FROM pg_table_def
+WHERE "column" SIMILAR TO '%start^_%' ESCAPE '^'
+ORDER BY tablename, "column" LIMIT 5;
+
+        tablename         |       column
+--------------------------+---------------------
+ stcs_abort_idle          | idle_start_time
+ stcs_abort_idle          | txn_start_time
+ stcs_analyze_compression | start_time
+ stcs_auto_worker_levels  | start_level
+ stcs_auto_worker_levels  | start_wlm_occupancy
+```

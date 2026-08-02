@@ -1,0 +1,255 @@
+---
+source_url: https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53globalresolver_UpdateGlobalResolver.html
+---
+
+# UpdateGlobalResolver
+<a name="API_route53globalresolver_UpdateGlobalResolver"></a>
+
+Updates the configuration of a Route 53 Global Resolver instance. You can modify the name, description, and observability Region.
+
+**Important**
+Route 53 Global Resolver is a global service that supports resolvers in multiple AWS Regions but you must specify the US East (Ohio) Region to create, update, or otherwise work with Route 53 Global Resolver resources. That is, for example, specify `--region us-east-2` on AWS CLI commands.
+
+## Request Syntax
+<a name="API_route53globalresolver_UpdateGlobalResolver_RequestSyntax"></a>
+
+```
+PATCH /global-resolver/{{globalResolverId}} HTTP/1.1
+Content-type: application/json
+
+{
+   "description": "{{string}}",
+   "ipAddressType": "{{string}}",
+   "name": "{{string}}",
+   "observabilityRegion": "{{string}}",
+   "regions": [ "{{string}}" ]
+}
+```
+
+## URI Request Parameters
+<a name="API_route53globalresolver_UpdateGlobalResolver_RequestParameters"></a>
+
+The request uses the following URI parameters.
+
+ ** [globalResolverId](#API_route53globalresolver_UpdateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-request-uri-globalResolverId"></a>
+The ID of the Global Resolver.
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
+Required: Yes
+
+## Request Body
+<a name="API_route53globalresolver_UpdateGlobalResolver_RequestBody"></a>
+
+The request accepts the following data in JSON format.
+
+ ** [description](#API_route53globalresolver_UpdateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-request-description"></a>
+The description of the Global Resolver.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
+ ** [ipAddressType](#API_route53globalresolver_UpdateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-request-ipAddressType"></a>
+The IP address type for the Global Resolver. Valid values are IPV4 or DUAL\_STACK for both IPv4 and IPv6 support.
+Type: String
+Valid Values: `IPV4 | DUAL_STACK`
+Required: No
+
+ ** [name](#API_route53globalresolver_UpdateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-request-name"></a>
+The name of the Global Resolver.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
+Required: No
+
+ ** [observabilityRegion](#API_route53globalresolver_UpdateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-request-observabilityRegion"></a>
+The AWS Regions in which the users' Global Resolver query resolution logs will be propagated.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 32.
+Required: No
+
+ ** [regions](#API_route53globalresolver_UpdateGlobalResolver_RequestSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-request-regions"></a>
+The list of AWS Regions where the Global Resolver will operate. The resolver will be distributed across these Regions to provide global availability and low-latency DNS resolution.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 32.
+Required: No
+
+## Response Syntax
+<a name="API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax"></a>
+
+```
+HTTP/1.1 200
+Content-type: application/json
+
+{
+   "arn": "string",
+   "clientToken": "string",
+   "createdAt": "string",
+   "description": "string",
+   "dnsName": "string",
+   "id": "string",
+   "ipAddressType": "string",
+   "ipv4Addresses": [ "string" ],
+   "ipv6Addresses": [ "string" ],
+   "name": "string",
+   "observabilityRegion": "string",
+   "regions": [ "string" ],
+   "status": "string",
+   "updatedAt": "string"
+}
+```
+
+## Response Elements
+<a name="API_route53globalresolver_UpdateGlobalResolver_ResponseElements"></a>
+
+If the action is successful, the service sends back an HTTP 200 response.
+
+The following data is returned in JSON format by the service.
+
+ ** [arn](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-arn"></a>
+The Amazon Resource Name (ARN) of the Global Resolver.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
+Pattern: `arn:[-.a-z0-9]{1,63}:[-.a-z0-9]{1,63}:[-.a-z0-9]{0,63}:[-.a-z0-9]{0,63}:[^/].{0,1023}`
+
+ ** [clientToken](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-clientToken"></a>
+A unique, case-sensitive identifier to ensure idempotency. This means that making the same request multiple times with the same `clientToken` has the same result every time.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+
+ ** [createdAt](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-createdAt"></a>
+The time and date the Global Resolverwas created.
+Type: Timestamp
+
+ ** [description](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-description"></a>
+Description of the Global Resolver.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+
+ ** [dnsName](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-dnsName"></a>
+The hostname to be used by the customers' DNS clients for certification validation.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 128.
+
+ ** [id](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-id"></a>
+The ID of the Global Resolver.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `[-.a-zA-Z0-9]+`
+
+ ** [ipAddressType](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-ipAddressType"></a>
+The IP address type configured for the updated Global Resolver.
+Type: String
+Valid Values: `IPV4 | DUAL_STACK`
+
+ ** [ipv4Addresses](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-ipv4Addresses"></a>
+List of anycast IPv4 addresses associated with the Global Resolver instance.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 15.
+Pattern: `((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}`
+
+ ** [ipv6Addresses](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-ipv6Addresses"></a>
+List of anycast IPv6 addresses associated with the updated Global Resolver instance. This field is only populated when ipAddressType is DUAL\_STACK.
+Type: Array of strings
+Length Constraints: Minimum length of 1. Maximum length of 39.
+Pattern: `(?:[A-Fa-f0-9]{0,4}:){2,7}[A-Fa-f0-9]{1,4}`
+
+ ** [name](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-name"></a>
+Name of the Global Resolver.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 64.
+Pattern: `(?!^[0-9]+$)([a-zA-Z0-9-_/' ']+)`
+
+ ** [observabilityRegion](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-observabilityRegion"></a>
+The AWS Regions in which the users' Global Resolver query resolution logs will be propagated.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 32.
+
+ ** [regions](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-regions"></a>
+The AWS Regions in which the Global Resolver will operate.
+Type: Array of strings
+Length Constraints: Minimum length of 0. Maximum length of 32.
+
+ ** [status](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-status"></a>
+The operational status of the Global Resolver.
+Type: String
+Valid Values: `CREATING | OPERATIONAL | UPDATING | DELETING`
+
+ ** [updatedAt](#API_route53globalresolver_UpdateGlobalResolver_ResponseSyntax) **   <a name="Route53GlobalResolver-route53globalresolver_UpdateGlobalResolver-response-updatedAt"></a>
+The time and date the Global Resolver was updated.
+Type: Timestamp
+
+## Errors
+<a name="API_route53globalresolver_UpdateGlobalResolver_Errors"></a>
+
+For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
+
+ ** AccessDeniedException **
+You don't have permission to perform this operation. Check your IAM permissions and try again.
+HTTP Status Code: 403
+
+ ** ConflictException **
+The request conflicts with the current state of the resource. This can occur when trying to modify a resource that is not in a valid state for the requested operation.
+ ** resourceId **
+The ID of the conflicting resource.
+ ** resourceType **
+The type of the conflicting resource.
+HTTP Status Code: 409
+
+ ** InternalServerException **
+An internal server error occurred. Try again later.
+ ** retryAfterSeconds **
+Number of seconds in which the caller can retry the request.
+HTTP Status Code: 500
+
+ ** ResourceNotFoundException **
+The specified resource was not found. Verify the resource ID and try again.
+ ** resourceId **
+The unique ID of the resource referenced in the failed request.
+ ** resourceType **
+The resource type of the resource referenced in the failed request.
+HTTP Status Code: 404
+
+ ** ServiceQuotaExceededException **
+The request would exceed one or more service quotas. Check your current usage and quotas, then try again.
+ ** quotaCode **
+The quota code recognized by the AWS Service Quotas service.
+ ** resourceId **
+The unique ID of the resource referenced in the failed request.
+ ** resourceType **
+The resource type of the resource referenced in the failed request.
+ ** serviceCode **
+The code for the AWS service that owns the quota.
+HTTP Status Code: 402
+
+ ** ThrottlingException **
+The request was throttled due to too many requests. Wait a moment and try again.
+ ** quotaCode **
+The quota code recognized by the AWS Service Quotas service.
+ ** retryAfterSeconds **
+Number of seconds in which the caller can retry the request.
+ ** serviceCode **
+The code for the AWS service that owns the quota.
+HTTP Status Code: 429
+
+ ** ValidationException **
+The input parameters are invalid. Check the parameter values and try again.
+ ** fieldList **
+The list of fields that aren't valid.
+ ** reason **
+Reason the request failed validation.
+HTTP Status Code: 400
+
+## See Also
+<a name="API_route53globalresolver_UpdateGlobalResolver_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS Command Line Interface V2](https://docs.aws.amazon.com/goto/cli2/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for .NET V4](https://docs.aws.amazon.com/goto/DotNetSDKV4/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for Go v2](https://docs.aws.amazon.com/goto/SdkForGoV2/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for JavaScript V3](https://docs.aws.amazon.com/goto/SdkForJavaScriptV3/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for Kotlin](https://docs.aws.amazon.com/goto/SdkForKotlin/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/route53globalresolver-2022-09-27/UpdateGlobalResolver)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/route53globalresolver-2022-09-27/UpdateGlobalResolver)

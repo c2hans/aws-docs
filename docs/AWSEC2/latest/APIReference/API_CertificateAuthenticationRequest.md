@@ -1,0 +1,24 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CertificateAuthenticationRequest.html
+---
+
+# CertificateAuthenticationRequest
+<a name="API_CertificateAuthenticationRequest"></a>
+
+Information about the client certificate to be used for authentication.
+
+## Contents
+<a name="API_CertificateAuthenticationRequest_Contents"></a>
+
+ ** ClientRootCertificateChainArn **
+The ARN of the client certificate. The certificate must be signed by a certificate authority (CA) and it must be provisioned in AWS Certificate Manager (ACM).
+Type: String
+Required: No
+
+## See Also
+<a name="API_CertificateAuthenticationRequest_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/CertificateAuthenticationRequest)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/CertificateAuthenticationRequest)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/CertificateAuthenticationRequest)
