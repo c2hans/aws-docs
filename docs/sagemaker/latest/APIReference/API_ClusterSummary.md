@@ -41,6 +41,14 @@ Type: String
 Valid Values: `UpToDate | UpdateAvailable | SecurityUpdateRequired | EndOfLife`
 Required: No
 
+ ** TrainingPlanArns **   <a name="sagemaker-Type-ClusterSummary-TrainingPlanArns"></a>
+A list of Amazon Resource Names (ARNs) of the training plans associated with this cluster.
+For more information about how to reserve GPU capacity for your SageMaker HyperPod clusters using Amazon SageMaker Training Plan, see ` [CreateTrainingPlan](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingPlan.html) `.
+Type: Array of strings
+Length Constraints: Minimum length of 50. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:training-plan/.*`
+Required: No
+
 ## See Also
 <a name="API_ClusterSummary_SeeAlso"></a>
 

@@ -49,8 +49,8 @@ The following table shows what you can do with chat agents in the admin console 
 
 | Access Level | Capabilities |
 | --- | --- |
-| Admin Console |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html)  |
-| Amazon Quick user |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html)  |
+| Admin Console |  +  Assign owners for the system chat agent and custom chat chat agents using [Manage assets](https://docs.aws.amazon.com/quicksuite/latest/userguide/manage-qs-assets.html) <br />+  Control whether users can create chat agents using [Custom permissions](https://docs.aws.amazon.com/quicksuite/latest/userguide/create-custom-permissions-profile.html) <br />+  Configure instance-wide blocked words and phrases for all chat agents   |
+| Amazon Quick user |  +  Create and maintain custom chat agents (with appropriate permissions) <br />+  Configure chat agent personality and response styles and provide reference documents to inform its behavior <br />+  Link chat agents with spaces (with dashboards, datasets, topics) as their knowledge source to look for answers <br />+  Attach action connectors to use as tools <br />+  Share chat agents with specific users and teams <br />+  Interact with chat agents through conversations <br />+  Analyze data with chat agent assistance <br />+  Receive permissions-aware responses from chat agents   |
 
 ## Amazon Quick user permissions for chat agents
 <a name="user-agent-permissions"></a>
@@ -68,8 +68,8 @@ The following table outlines how user permissions determine what you can do with
 
 | Permissions type | Permissions |
 | --- | --- |
-| Owners |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html)  |
-| Viewers |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html)  |
+| Owners |  +  Can access and configure agent behavior (agent persona settings, reference documents) and resources (space and action connectors) <br />+  Can customize chat agent details like title, description, and suggested prompts to improve usability <br />+  Can share chat agents with users and groups <br />+  Can delete the chat agent   |
+| Viewers |  +  Can't customize the chat agent's details <br />+  Can receive responses based on the permissions they have to resources   |
 
 ## Custom permissions for chat agents
 <a name="custom-permissions-chat-agents"></a>
@@ -85,7 +85,7 @@ Agent permissions in Amazon Quick can be configured in various combinations to m
 
 | Use case scenario | What users can do |
 | --- | --- |
-| Agent with all capabilities(No restrictions on chat agents, spaces, knowledge bases, actions, or flows) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html) |
-| Chat-only access to agents(Agent capabilities enabled, but chat agent creation restricted) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html) |
-| Limited access to other capabilities(Chat agents enabled, but specific capabilities restricted) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html) |
-| No chat agent access(Agent capabilities completely restricted) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-agents.html) |
+| Agent with all capabilities(No restrictions on chat agents, spaces, knowledge bases, actions, or flows) | +  Chat with all default and custom chat agents <br />+  Create and customize new chat agents <br />+  Connect chat agents to spaces, knowledge bases, and actions <br />+  Trigger flows from the chat window from existing conversation with a chat agent <br />+  Share chat agents with other users <br />+  Use all chat features and integrations  |
+| Chat-only access to agents(Agent capabilities enabled, but chat agent creation restricted) | +  Chat with existing default and shared custom chat agents <br />+  Can't create new custom chat agents <br />+  Can't edit or update custom chat agents <br />+  Full access to chat interface and chat agent library  |
+| Limited access to other capabilities(Chat agents enabled, but specific capabilities restricted) | +  Chat with system and custom agents but with reduced functionality <br />+  Can't attach knowledge bases, spaces, or actions to an agent's configuration, or select these resources during chat <br />+  If spaces restricted: Agents configured with spaces will fall back to LLM knowledge only. Users can't view or select spaces in the chat resource selector <br />+  If knowledge bases restricted: Users can't select knowledge bases to use in chat. Any knowledge bases present in spaces either attached to the agent or selected by user during chat won't be used to generate responses <br />+  If actions restricted: Users can't attach actions to agents or invoke actions from chat. Any actions preconfigured with agents won't be used to execute tasks <br />+  If flows restricted: Chat won't show flows anymore, so users can't invoke flows while chatting with an agent  |
+| No chat agent access(Agent capabilities completely restricted) | +  Can't view or access any chat agents <br />+  Agent library and navigation are hidden <br />+  Can still access and create other Amazon Quick resources, such as creating spaces for file sharing with teams or flows for structured interactions (as long as those capabilities are not also restricted)  |

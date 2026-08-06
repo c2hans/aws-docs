@@ -239,7 +239,7 @@ If you created a Strands agent without memory and want to add it later, follow t
            system_prompt="You are a helpful assistant.",
        )
 
-       response = agent(payload.get("prompt"))
+       response = agent(str(payload.get("prompt", "")))
        return response
    ```
 

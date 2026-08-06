@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/machine-learning-
 | --- |--- |
 |  Purpose  |  Help determine which AWS ML services are the best fit for your needs.  |
 |  Last updated  |  May 3, 2024  |
-|  Covered services  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/machine-learning-on-aws-how-to-choose/guide.html)  |
+|  Covered services  |  +  [Amazon Augmented AI](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html) <br />+  [Amazon CodeGuru](https://docs.aws.amazon.com/codeguru/) <br />+  [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) <br />+  [Amazon DevOps Guru](https://docs.aws.amazon.com/devops-guru/latest/userguide/welcome.html) <br />+  [Amazon Forecast](https://docs.aws.amazon.com/forecast/latest/dg/what-is-forecast.html) <br />+  [Amazon Kendra](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html) <br />+  [Amazon Lex](https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html) <br />+  [Amazon Personalize](https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html) <br />+  [Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/what-is.html) <br />+  [Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html) <br />+  [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/) <br />+  [Amazon Textract](https://docs.aws.amazon.com/textract/latest/dg/what-is.html) <br />+  [Amazon Transcribe](https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html) <br />+  [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html)   |
 
 ## Introduction
 <a name="introduction"></a>

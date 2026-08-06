@@ -46,11 +46,11 @@ The playlist displays each dashboard for the time specified in the `Interval` fi
 
 | Mode | Description |
 | --- | --- |
-| Normal mode |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-managing-playlists.html)  |
-| TV mode |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-managing-playlists.html)  |
-| TV mode (with auto fit panels) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-managing-playlists.html)  |
-| Kiosk mode |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-managing-playlists.html)  |
-| Kiosk mode (with auto fit panels) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-managing-playlists.html)  |
+| Normal mode |  +  The side menu remains visible. <br />+  The navigation bar, row, and panel controls appear at the top of the screen.   |
+| TV mode |  +  The side menu and dashboard submenu (including variable dropdowns and dashboard links) are hidden or removed. <br />+  The navigation bar, row, and panel controls appear at the top of the screen. <br />+  Enabled automatically after one minute of user inactivity. <br />+  Enable it manually using the `d v` sequence shortcut, or by appending the parameter `?inactive` to the dashboard URL. <br />+  Disable it with any pointer movement or keyboard action.   |
+| TV mode (with auto fit panels) |  +  The navigation bar, row, and panel controls appear at the top of the screen. <br />+  Dashboard panels automatically adjust to optimize space on screen.   |
+| Kiosk mode |  +  The side menu, navigation bar, row and panel controls are completely hidden/removed from view. <br />+  You can enable it manually using the `d v` sequence shortcut after the playlist has started. <br />+  You can disable it manually with the same shortcut.   |
+| Kiosk mode (with auto fit panels) |  +  The side menu, navigation bar, row, and panel controls are completely hidden/removed from view. <br />+  Dashboard panels automatically adjust to optimize space on screen.   |
 
 **Controlling a playlist**
 

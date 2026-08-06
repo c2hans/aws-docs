@@ -170,6 +170,9 @@ Windows BYOL for Amazon WorkSpaces Applications is available in all regions wher
 + **Separate BYOL account not required** — You can use your existing AWS account for Amazon WorkSpaces Applications BYOL workloads. The same dedicated infrastructure account (DP account) can host WorkSpaces Personal, WorkSpaces Pools, and Amazon WorkSpaces Applications.
 + **Image operations** — Import creates images in both WorkSpaces and Amazon WorkSpaces Applications (if selected). Copy, update, and delete operations are service-specific and do not reflect across services.
 
+**Windows Desktop OS limitation**
+Streaming from Interface VPC Endpoints is currently not supported for fleets powered by Windows Desktop operating system (such as Windows 11).
+
 ## Frequently asked questions
 <a name="byol-faq"></a>
 

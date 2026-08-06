@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
  ** DataSetIdentifierDeclarations **   <a name="QS-Type-DashboardVersionDefinition-DataSetIdentifierDeclarations"></a>
 An array of dataset identifier declarations. With this mapping,you can use dataset identifiers instead of dataset Amazon Resource Names (ARNs) throughout the dashboard's sub-structures.
 Type: Array of [DataSetIdentifierDeclaration](API_DataSetIdentifierDeclaration.md) objects
-Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: Yes
 
  ** AnalysisDefaults **   <a name="QS-Type-DashboardVersionDefinition-AnalysisDefaults"></a>
@@ -70,6 +70,12 @@ Required: No
  ** TooltipSheets **   <a name="QS-Type-DashboardVersionDefinition-TooltipSheets"></a>
 An array of tooltip sheet definitions for a dashboard.
 Type: Array of [TooltipSheetDefinition](API_TooltipSheetDefinition.md) objects
+Array Members: Maximum number of 50 items.
+Required: No
+
+ ** TopicIdentifierDeclarations **   <a name="QS-Type-DashboardVersionDefinition-TopicIdentifierDeclarations"></a>
+An array of topic identifier declarations. With this mapping, you can use topic identifiers instead of topic Amazon Resource Names (ARNs) throughout the dashboard's sub-structures.
+Type: Array of [TopicIdentifierDeclaration](API_TopicIdentifierDeclaration.md) objects
 Array Members: Maximum number of 50 items.
 Required: No
 

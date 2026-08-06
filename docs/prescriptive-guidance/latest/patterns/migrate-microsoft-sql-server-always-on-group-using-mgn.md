@@ -90,7 +90,7 @@ For AWS MGN, see [Best practices for AWS Transform MGN](https://docs.aws.amazon.
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Verify source servers. | In the AWS MGN console, verify that the source server status is **Ready for testing**. | Cloud administrator, Migration engineer |
-| Launch the test instances. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-microsoft-sql-server-always-on-group-using-mgn.html) | Cloud administrator, Migration engineer |
+| Launch the test instances. | 1. [Launch the test instances](https://docs.aws.amazon.com/mgn/latest/ug/launching-test-gs.html) and verify in the Amazon EC2 console that the automated checks pass. <br />2. Select and launch test instances for the witness server.<br />3. Verify that you can sign in to the servers through the AWS MGN console.<br />4. Select the SQL Always On cluster servers and launch the test instances together. | Cloud administrator, Migration engineer |
 | Test for connectivity and database integrity. | Test the connectivity and database integrity of the test instances. Then mark the source servers as **Ready for cutover** in the AWS MGN console. | Cloud administrator, Migration engineer |
 
 ### Pre-migration tasks
@@ -109,7 +109,7 @@ For AWS MGN, see [Best practices for AWS Transform MGN](https://docs.aws.amazon.
 | --- | --- | --- |
 | Stop the SQL Server and cluster services. | Stop the SQL Server and Microsoft cluster services on all SQL cluster nodes. | DBA, Migration engineer |
 | Verify the servers. | In the AWS MGN console, verify that the status of the source servers is **Ready for cutover** and that the data replication status is **Healthy**. | Migration engineer |
-| Launch the cutover. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-microsoft-sql-server-always-on-group-using-mgn.html)For more information, see [Launching a cutover instance](https://docs.aws.amazon.com/mgn/latest/ug/launch-cutover-gs.html) in the AWS MGN documentation. | Migration engineer |
+| Launch the cutover. | 1. Launch the AWS MGN cutover for the witness server.<br />2. Launch the AWS MGN cutover for the SQL Always On cluster instances.<br />3. Verify that the status changes to **Cutover in progress**.For more information, see [Launching a cutover instance](https://docs.aws.amazon.com/mgn/latest/ug/launch-cutover-gs.html) in the AWS MGN documentation. | Migration engineer |
 | Test the launched servers. | Log in to the launched Amazon EC2 instances and validate the cluster’s health. Verify that the servers are in the correct subnets, the instance size and IOPS settings are correct, and the witness server is accessible. | DBA, Migration engineer |
 
 ### Database post-cutover tasks
@@ -118,9 +118,9 @@ For AWS MGN, see [Best practices for AWS Transform MGN](https://docs.aws.amazon.
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Update the cluster IP address. | Update the cluster IP address for the Windows cluster using the two reserved IP addresses in the target subnets. For more information, see [Change the IP Address of a Failover Cluster Instance](https://learn.microsoft.com/en-us/sql/sql-server/failover-clusters/windows/change-the-ip-address-of-a-failover-cluster-instance?view=sql-server-2016). | DBA, Migration engineer |
-| Update the Always On availability group listener IPs. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-microsoft-sql-server-always-on-group-using-mgn.html) | DBA, Migration engineer |
+| Update the Always On availability group listener IPs. | 1. Open the failover cluster manager.<br />2. Choose the Always On availability group role.<br />3. Expand the availability group listener name.<br />4. In the context (right-click) menu, choose **IP address properties**.<br />5. Update the IP address using the address reserved for the listener in the target subnet.<br />6. Connect to the SQL Server primary instance using SSMS, and verify that the Always On listener is using both subnet IPs. | DBA, Migration engineer |
 | Verify the connection. | Using SSMS, connect to the Always On availability group listener, and confirm that the connection succeeds. | DBA, Migration engineer |
-| Check the health of Always On availability group. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-microsoft-sql-server-always-on-group-using-mgn.html) | DBA, Migration engineer |
+| Check the health of Always On availability group. | 1. Navigate to the **Availability groups** folder, open the context (right-click) menu, and choose **Show dashboard**.<br />2. For all replicas, verify that the synchronization state is **Synchronized**. | DBA, Migration engineer |
 | Check the error log. | Open the error log, and verify any errors reported for the SQL Server instance. Ensure that the recovery is complete for all databases. | DBA, Migration engineer |
 | Test the linked servers. | Test the connectivity of any linked servers. In case of any connectivity issues, ensure that the target server and port are accessible. | DBA, Migration engineer |
 

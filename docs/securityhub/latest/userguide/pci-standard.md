@@ -213,8 +213,6 @@ The following list specifies which Security Hub CSPM controls apply to PCI DSS v
 
 [[EFS.4] EFS access points should enforce a user identity](efs-controls.md#efs-4)
 
-[[EFS.6] EFS mount targets should not be associated with subnets that assign public IP addresses on launch](efs-controls.md#efs-6)
-
 [[EKS.1] EKS cluster endpoints should not be publicly accessible](eks-controls.md#eks-1)
 
 [[EKS.2] EKS clusters should run on a supported Kubernetes version](eks-controls.md#eks-2)

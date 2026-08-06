@@ -52,6 +52,13 @@ Type: String
 Pattern: `S-[0-9]{1,19}`
 Required: No
 
+ ** AwsMarketplaceSolutionArn **   <a name="AWSPartnerCentral-Type-SolutionBase-AwsMarketplaceSolutionArn"></a>
+The Amazon Resource Name (ARN) of the AWS Marketplace solution associated with this partner solution.
+Type: String
+Length Constraints: Minimum length of 4. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: No
+
 ## See Also
 <a name="API_SolutionBase_SeeAlso"></a>
 

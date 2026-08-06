@@ -171,53 +171,53 @@ Also, keep in mind the following best practices:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Configure MCP settings. | You can edit the configuration files in Kiro either by (Option 1) manually locating the configuration files or (Option 2) by using the Kiro IDE.[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html)<pre>{<br />  "mcpServers": {<br />    "security-scanner": {<br />      "command": "uvx",<br />      "args": [<br />        "--from",<br />        "git+https://github.com/aws-samples/sample-mcp-security-scanner.git@main",<br />        "security_scanner_mcp_server"<br />      ],<br />      "env": {<br />        "FASTMCP_LOG_LEVEL": "ERROR"<br />      },<br />      "disabled": false,<br />      "autoApprove": []<br />    }<br />  }<br />}</pre> | App developer |
+| Configure MCP settings. | You can edit the configuration files in Kiro either by (Option 1) manually locating the configuration files or (Option 2) by using the Kiro IDE.+ (Option 1) Locate and edit the configuration files manually as follows:Path: `.kiro/settings/mcp.json` (local) or `~/.kiro/settings/mcp.json` (global)<br />+ (Option 2) Modify the configuration files by using the Kiro IDE as follows:Choose the Kiro symbol in the left navigation menu.Navigate to the 'MCP SERVERS' section.Edit the configuration settings. Changes made with the Kiro IDE will be saved to one of these configuration files: `.kiro/settings/mcp.json` (local) or `~/.kiro/settings/mcp.json` (global)<br />+ (Both options) After you complete either Option 1 or Option 2, add the security-scanner configuration `.kiro/settings/mcp.json` (local) or `~/.kiro/settings/mcp.json` (global):<pre>{<br />  "mcpServers": {<br />    "security-scanner": {<br />      "command": "uvx",<br />      "args": [<br />        "--from",<br />        "git+https://github.com/aws-samples/sample-mcp-security-scanner.git@main",<br />        "security_scanner_mcp_server"<br />      ],<br />      "env": {<br />        "FASTMCP_LOG_LEVEL": "ERROR"<br />      },<br />      "disabled": false,<br />      "autoApprove": []<br />    }<br />  }<br />}</pre> | App developer |
 
 ### (Amazon Q Developer users) Set up the MCP security scanner server
 <a name="qdevlong-users-set-up-the-mcp-security-scanner-server"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Configure MCP settings. | To configure the MCP settings manually, use the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html)<pre>{<br />  "mcpServers": {<br />    "security-scanner": {<br />      "command": "uvx",<br />      "args": [<br />        "--from",<br />        "git+https://github.com/aws-samples/sample-mcp-security-scanner.git@main",<br />        "security_scanner_mcp_server"<br />      ],<br />      "env": {<br />        "FASTMCP_LOG_LEVEL": "ERROR"<br />      }<br />    }<br />  }<br />}</pre> | App developer |
+| Configure MCP settings. | To configure the MCP settings manually, use the following steps:1. Edit the MCP configuration file at `~/.aws/amazonq/mcp.json` (global) or `.amazonq/mcp.json` (local).<br />2. Add the following security-scanner configuration `~/.aws/amazonq/mcp.json` (global) or `.amazonq/mcp.json` (local):<pre>{<br />  "mcpServers": {<br />    "security-scanner": {<br />      "command": "uvx",<br />      "args": [<br />        "--from",<br />        "git+https://github.com/aws-samples/sample-mcp-security-scanner.git@main",<br />        "security_scanner_mcp_server"<br />      ],<br />      "env": {<br />        "FASTMCP_LOG_LEVEL": "ERROR"<br />      }<br />    }<br />  }<br />}</pre> | App developer |
 
 ### (Cline users) Set up the MCP security scanner server
 <a name="cline-users-set-up-the-mcp-security-scanner-server"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Configure MCP settings. | To configure the MCP settings manually, use the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html)<pre>{<br />  "mcpServers": {<br />    "security-scanner": {<br />      "command": "uvx",<br />      "args": [<br />        "--from",<br />        "git+https://github.com/aws-samples/sample-mcp-security-scanner.git@main",<br />        "security_scanner_mcp_server"<br />      ],<br />      "env": {<br />        "FASTMCP_LOG_LEVEL": "ERROR"<br />      },<br />      "disabled": false,<br />      "autoApprove": []<br />    }<br />  }<br />}</pre> | App developer |
+| Configure MCP settings. | To configure the MCP settings manually, use the following steps:1. Choose the extension to open it and then select **MCP Servers**.<br />2. Choose the **Installed** tab and then choose **Configure MCP Servers** to open the `cline_mcp_settings.json` file.<br />3. Add the following security-scanner configuration `cline_mcp_settings.json`:<pre>{<br />  "mcpServers": {<br />    "security-scanner": {<br />      "command": "uvx",<br />      "args": [<br />        "--from",<br />        "git+https://github.com/aws-samples/sample-mcp-security-scanner.git@main",<br />        "security_scanner_mcp_server"<br />      ],<br />      "env": {<br />        "FASTMCP_LOG_LEVEL": "ERROR"<br />      },<br />      "disabled": false,<br />      "autoApprove": []<br />    }<br />  }<br />}</pre> | App developer |
 
 ### Example of code analysis using Python and Bandit
 <a name="example-of-code-analysis-using-python-and-bandit"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Perform code analysis. | To perform code analysis by using Python and Bandit, use the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) | App developer |
+| Perform code analysis. | To perform code analysis by using Python and Bandit, use the following steps:1. Create a new Python file named `bandit_test.py` with the following content:<pre>import pickle<br />import yaml<br />import subprocess<br />from flask import Flask, request<br />import hashlib<br /><br />app = Flask(__name__)<br /><br />@app.route("/unsafe_pickle", methods=["POST"])<br />def unsafe_pickle_usage():<br />    data = request.get_data()<br />    return pickle.loads(data)<br /><br />@app.route("/command_injection", methods=["GET"])<br />def command_injection():<br />    command = request.args.get("cmd")<br />    return subprocess.Popen(command, shell=True)<br /><br />def weak_crypto():<br />    password = "secret_password"<br />    return hashlib.md5(password.encode()).hexdigest()<br /><br />PASSWORD = "super_secret_password123"<br /></pre><br />2. Open the coding assistant. Request the following actions in the chat: **Scan current script and tell me the results.** | App developer |
 
 ### Example of code analysis using Terraform and Checkov
 <a name="example-of-code-analysis-using-terraform-and-checkov"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Perform code analysis. | To perform code analysis by using Terraform and Checkov, use the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) | App developer |
+| Perform code analysis. | To perform code analysis by using Terraform and Checkov, use the following steps:1. Create a new Terraform file named `terraform_test.tf` with the following content:<pre>    resource "aws_s3_bucket" "insecure_bucket" {<br />    bucket = "my-insecure-bucket"<br />    acl    = "public-read"<br />}<br /><br />resource "aws_security_group" "wide_open" {<br />    name        = "allow_all"<br />    description = "Allow all inbound traffic"<br /><br />    ingress {<br />        from_port   = 0<br />        to_port     = 0<br />        protocol    = "-1"<br />        cidr_blocks = ["0.0.0.0/0"]<br />    }<br />}<br /><br />    </pre><br />2. Open the coding assistant. Request the following actions in the chat: **Scan current script and tell me the results.** | App developer |
 
 ### Example of advanced scanning capabilities
 <a name="example-of-advanced-scanning-capabilities"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Perform targeted scanning. | Following are examples of requests that you can use to perform a targeted scan:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) | App developer |
-| Use security scanning with code generation. | To resolve security findings by using code generation loops, use the following steps (this example uses Kiro as the coding assistant):[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) | App developer |
+| Perform targeted scanning. | Following are examples of requests that you can use to perform a targeted scan:+ **Scan current project and tell me the results.**<br />+ **Scan lines 6-10 in the current script.** | App developer |
+| Use security scanning with code generation. | To resolve security findings by using code generation loops, use the following steps (this example uses Kiro as the coding assistant):1. In Kiro, ask: **Create a DynamoDB table in Terraform and scan the code with the security scanner.**<br />2. In Kiro, ask: **Review the generated code and security scan results and follow the code generation loops resolving the security findings.** | App developer |
 
 ## Troubleshooting
 <a name="deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants-troubleshooting"></a>
 
 | Issue | Solution |
 | --- | --- |
-| Environment setup issues | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) |
-| Scanner issues | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) |
-| Integration problems | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) |
-| Additional support | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants.html) |
+| Environment setup issues | + Verify that Python version 3.10 or later is installed.<br />+ Make sure that `uv` package manager is installed. |
+| Scanner issues | + Verify that file formats are supported.<br />+ Check that file syntax is valid.<br />+ Ensure that proper file extensions are used.<br />+ Review scan timeout settings. |
+| Integration problems | + Verify that the MCP server is running.<br />+ Check that the configuration file is correct.<br />+ Validate API endpoints.<br />+ Ensure that the response format is valid. |
+| Additional support | + Review logs for detailed error messages.<br />+ Check tool-specific documentation.<br />+ Create an issue in the repository. |
 
 ## Related resources
 <a name="deploy-real-time-coding-security-validation-by-using-an-mcp-server-with-kiro-and-other-coding-assistants-resources"></a>

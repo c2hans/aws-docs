@@ -35,10 +35,10 @@ There are currently four agentic AI deployment approaches: fully autonomous, hu
 |
 | **Autonomy level** | **Risk profile** | **Error tolerance** | **Example use cases** | **Human involvement** |
 | --- |--- |--- |--- |--- |
-| Fully autonomous | Low Risk | 1-2% acceptable | Basic data categorizationDocument routing   Standard report generation | Minimal oversightPeriodic audits |
-| Human in the loop | Medium Risk | Below 0.5% | Draft responsesContent moderationInitial claims processing | Regular reviewException handlingQuality assurance |
-| Co-pilot | High Risk | Near-zero | Strategic planning inputRisk assessmentsInvestment decisions | Human makes final decisionsAgent provides recommendations |
-| Human-led with agent support | Critical Risk | Zero tolerance | Legal decisionsMedical diagnosis Regulatory compliance | Human drives processAgent provides research or analysis and supporting information only |
+| Fully autonomous | Low Risk | 1-2% acceptable | + Basic data categorization+ Document routing   + Standard report generation | + Minimal oversight+ Periodic audits |
+| Human in the loop | Medium Risk | Below 0.5% | + Draft responses+ Content moderation+ Initial claims processing | + Regular review+ Exception handling+ Quality assurance |
+| Co-pilot | High Risk | Near-zero | + Strategic planning input+ Risk assessments+ Investment decisions | + Human makes final decisions+ Agent provides recommendations |
+| Human-led with agent support | Critical Risk | Zero tolerance | + Legal decisions+ Medical diagnosis + Regulatory compliance | + Human drives process+ Agent provides research or analysis and supporting information only |
 
 The following table describes key considerations when choosing between these approaches.
 

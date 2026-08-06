@@ -108,6 +108,12 @@ Type: Array of [TopicSummary](API_TopicSummary.md) objects
 
 For information about the errors that are common to all actions, see [Common Error Types](CommonErrors.md).
 
+ ** AccessDeniedException **
+You don't have access to this item. The provided credentials couldn't be validated. You might not be authorized to carry out the request. Make sure that your account is authorized to use the Amazon Quick Sight service, that your policies have the correct permissions, and that you are using the correct credentials.
+ ** RequestId **
+The AWS request ID for this request.
+HTTP Status Code: 401
+
  ** InternalFailureException **
 An internal failure occurred.
  ** RequestId **

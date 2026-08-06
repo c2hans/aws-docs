@@ -72,6 +72,10 @@ HTTP Status Code: 409
 The specified resource does not exist.
 HTTP Status Code: 404
 
+ ** ServiceQuotaExceededException **
+The service quota for your Connect Customer has been exceeded. Contact AWS Support.
+HTTP Status Code: 402
+
  ** ThrottlingException **
 The request was denied due to request throttling.
 HTTP Status Code: 429

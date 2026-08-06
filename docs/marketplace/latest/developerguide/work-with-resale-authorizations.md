@@ -527,10 +527,10 @@ The schema validations are specific to `UpdateLegalTerms` actions in the AWS Mar
 | Terms[].BuyerLegalTerm | Required<br />Must not be null or empty | 422 |
 | Terms[].ResaleLegalTerm | Optional<br />Must not be null or empty if present | 422 |
 | Terms[].BuyerLegalTerm.Documents | Required<br />Must not be null or empty | 422 |
-| Terms[].BuyerLegalTerm.Documents[].Type | Required<br />Must not be null or empty <br />Allowed values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-resale-authorizations.html) | 422 |
+| Terms[].BuyerLegalTerm.Documents[].Type | Required<br />Must not be null or empty <br />Allowed values:+  StandardEula <br />+  EnterpriseEula <br />+  CustomEula  | 422 |
 | Terms[].BuyerLegalTerm.Documents[].Url | Required and must be a valid URL when "Type" is "CustomEula" Must not be provided when "Type" is one of ["StandardEula", "EnterpriseEula"] | 422 |
 | Terms[].ResaleLegalTerm.Documents | Required<br />Must not be null or empty | 422 |
-| Terms[].ResaleLegalTerm.Documents[].Type | Required<br />Must not be null or empty Allowed values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-resale-authorizations.html) | 422 |
+| Terms[].ResaleLegalTerm.Documents[].Type | Required<br />Must not be null or empty Allowed values:+   StandardEula <br />+   CustomResellerContract  | 422 |
 | Terms[].ResaleLegalTerm.Documents[].Url | Required and must be a valid URL when "Type" is "CustomResellerContract"<br />Must not be provided when "Type" is one of ["StandardContract"] | 422 |
 | An unknown property | No additional properties are allowed | 422 |
 
@@ -694,7 +694,7 @@ The following schema validations are specific to `UpdatePricingTerms` actions in
 
 | Input field | Validation rule |
 | --- | --- |
-| Terms | Required<br />Must not be null or empty<br />Each term must present only single time Allowed terms:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-resale-authorizations.html) |
+| Terms | Required<br />Must not be null or empty<br />Each term must present only single time Allowed terms:+  \* ResaleUsageBasedPricingTerm <br />+  \* ResaleConfigurableUpfrontPricingTerm <br />+  \* ResaleFixedupfrontPricingTerm  |
 | Terms[].ResaleUsageBasedPricingTerm.CurrencyCode | Required <br />Allowed values: USD |
 | Terms[].ResaleUsageBasedPricingTerm.Validity | Required<br />Must not be null or empty<br />Expected format: ISO 8601 duration |
 | Terms[].ResaleUsageBasedPricingTerm.RateCards | Required<br />Must not be null or empty |

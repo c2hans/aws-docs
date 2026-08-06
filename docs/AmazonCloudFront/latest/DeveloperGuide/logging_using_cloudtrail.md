@@ -43,7 +43,7 @@ The following table lists the CloudFront resource types for which you can log da
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| CloudFront KeyValueStore |  AWS::CloudFront::KeyValueStore  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/logging_using_cloudtrail.html)  |
+| CloudFront KeyValueStore |  AWS::CloudFront::KeyValueStore  |  +  [DeleteKeys](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DeleteKey.html) <br />+  [DescribeKeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_DescribeKeyValueStore.html) <br />+  [GetKey](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_GetKey.html) <br />+  [ListKeys](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_ListKeys.html) <br />+  [PutKeys](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_PutKey.html) <br />+  [UpdateKeys](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_kvs_UpdateKeys.html)   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

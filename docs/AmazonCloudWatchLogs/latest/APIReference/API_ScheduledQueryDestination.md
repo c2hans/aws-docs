@@ -18,7 +18,7 @@ Required: No
  ** destinationType **   <a name="CWL-Type-ScheduledQueryDestination-destinationType"></a>
 The type of destination for query results.
 Type: String
-Valid Values: `S3`
+Valid Values: `S3 | LOOKUP_TABLE`
 Required: No
 
  ** errorMessage **   <a name="CWL-Type-ScheduledQueryDestination-errorMessage"></a>

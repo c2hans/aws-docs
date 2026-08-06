@@ -49,7 +49,7 @@ The following table lists all of the Docker API endpoints that are supported in 
 |  [SystemVersion](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemVersion)  |   |
 |  [SystemPing](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemPing)  |   |
 |  [SystemPingHead](https://docs.docker.com/engine/api/v1.43/#tag/System/operation/SystemPingHead)  |   |
-|  [ContainerCreate](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerCreate)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-local.html)  |
+|  [ContainerCreate](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerCreate)  |  +  Containers cannot be run in Docker default bridge or custom Docker networks. Containers are run in the same network as the Studio application container. <br />+  Users can only use the following value for the network name: `sagemaker`. For example: <pre>docker run --net sagemaker {{parameter-values}}</pre> <br />+  Only bind mounts are allowed for volume usage. The host directory should exist on Amazon EFS for KernelGateway applications or Amazon EBS for other applications. <br />+  Containers cannot run in privileged mode or with elevated secure computing permissions.   |
 |  [ContainerStart](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerStart)  |   |
 |  [ContainerStop](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerStop)  |   |
 |  [ContainerKill](https://docs.docker.com/engine/api/v1.43/#tag/Container/operation/ContainerKill)  |   |
@@ -68,7 +68,7 @@ The following table lists all of the Docker API endpoints that are supported in 
 |  [ImageInspect](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageInspect)  |   |
 |  [ImageGet](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageGet)  |   |
 |  [ImageDelete](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageDelete)  |   |
-|  [ImageBuild](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageBuild)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-local.html)  |
+|  [ImageBuild](https://docs.docker.com/engine/api/v1.43/#tag/Image/operation/ImageBuild)  |  +  `VPC-only` mode support is limited to Amazon ECR images in allowlisted accounts. With the [Rootless Docker configuration](studio-updated-local-get-started.md#studio-updated-local-rootless) enabled, you can also access additional Docker registries through your VPC configuration, including on-premises repositories, and public registries. <br />+  Users can only use the following value for the network name: `sagemaker`. For example: <pre>docker build --network sagemaker {{parameter-values}}</pre>   |
 
 **Topics**
 + [Docker support](#studio-updated-local-docker)

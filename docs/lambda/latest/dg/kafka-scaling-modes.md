@@ -185,7 +185,7 @@ aws lambda update-event-source-mapping \
 
 #### Grouping strategy considerations
 <a name="kafka-grouping-strategy-considerations"></a>
-+ **Application boundary** – Group ESMs that belong to the same applications or services for better cost allocation and management. Consider using naming conventions like `app-name-environment` (e.g., `order-processor-prod`).
++ **Application boundary** – Group ESMs that belong to the same applications or services for better cost allocation and management. Consider using naming conventions like `app-name-environment` (for example, `order-processor-prod`).
 + **Traffic pattern** – Avoid grouping ESMs with high throughput and spiky traffic pattern, as this might lead to resource contention.
 + **Blast radius** – Consider the impact if the shared infrastructure experiences issues. All ESMs in the same group are affected by shared resource limitations. For mission-critical workloads, you might want to use separate groups or dedicated ESMs.
 

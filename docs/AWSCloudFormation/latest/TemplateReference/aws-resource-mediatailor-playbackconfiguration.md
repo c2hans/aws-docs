@@ -24,6 +24,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AdConditioningConfiguration](#cfn-mediatailor-playbackconfiguration-adconditioningconfiguration)" : {{AdConditioningConfiguration}},
       "[AdDecisionServerConfiguration](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration)" : {{AdDecisionServerConfiguration}},
       "[AdDecisionServerUrl](#cfn-mediatailor-playbackconfiguration-addecisionserverurl)" : {{String}},
+      "[AdsPersonalizationConcurrency](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency)" : {{AdsPersonalizationConcurrency}},
+      "[AdsPersonalizationTimeouts](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts)" : {{AdsPersonalizationTimeouts}},
       "[AvailSuppression](#cfn-mediatailor-playbackconfiguration-availsuppression)" : {{AvailSuppression}},
       "[Bumper](#cfn-mediatailor-playbackconfiguration-bumper)" : {{Bumper}},
       "[CdnConfiguration](#cfn-mediatailor-playbackconfiguration-cdnconfiguration)" : {{CdnConfiguration}},
@@ -56,6 +58,10 @@ Properties:
   [AdDecisionServerConfiguration](#cfn-mediatailor-playbackconfiguration-addecisionserverconfiguration): {{
     AdDecisionServerConfiguration}}
   [AdDecisionServerUrl](#cfn-mediatailor-playbackconfiguration-addecisionserverurl): {{String}}
+  [AdsPersonalizationConcurrency](#cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency): {{
+    AdsPersonalizationConcurrency}}
+  [AdsPersonalizationTimeouts](#cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts): {{
+    AdsPersonalizationTimeouts}}
   [AvailSuppression](#cfn-mediatailor-playbackconfiguration-availsuppression): {{
     AvailSuppression}}
   [Bumper](#cfn-mediatailor-playbackconfiguration-bumper): {{
@@ -105,6 +111,18 @@ Configuration parameters for customizing HTTP requests sent to the ad decision s
 The URL for the ad decision server (ADS). This includes the specification of static parameters and placeholders for dynamic parameters. AWS Elemental MediaTailor substitutes player-specific and session-specific parameters as needed when calling the ADS. Alternately, for testing you can provide a static VAST URL. The maximum length is 25,000 characters.
 *Required*: Yes
 *Type*: String
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AdsPersonalizationConcurrency`  <a name="cfn-mediatailor-playbackconfiguration-adspersonalizationconcurrency"></a>
+The concurrency settings for ad decision server interactions. These settings control how many simultaneous ADS requests MediaTailor makes per manifest request.
+*Required*: No
+*Type*: [AdsPersonalizationConcurrency](aws-properties-mediatailor-playbackconfiguration-adspersonalizationconcurrency.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`AdsPersonalizationTimeouts`  <a name="cfn-mediatailor-playbackconfiguration-adspersonalizationtimeouts"></a>
+The timeout settings for ad decision server interactions. These settings control how long MediaTailor waits for ADS responses and the total time budget for ad personalization across live, VOD, and prefetch workflows.
+*Required*: No
+*Type*: [AdsPersonalizationTimeouts](aws-properties-mediatailor-playbackconfiguration-adspersonalizationtimeouts.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `AvailSuppression`  <a name="cfn-mediatailor-playbackconfiguration-availsuppression"></a>

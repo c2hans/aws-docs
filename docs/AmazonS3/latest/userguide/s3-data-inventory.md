@@ -179,6 +179,6 @@ For more information, see [cp](https://docs.aws.amazon.com/cli/latest/reference/
 
 The following are additional characteristics of Amazon S3:
 + [Access control in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-management.html)
-+ [Security in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security.html)
-+ [Data protection in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/data-protection.html)
++ [Security in Amazon S3](security.md)
++ [Data protection in Amazon S3](data-protection.md)
 + [Logging and monitoring in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/monitoring-overview.html)

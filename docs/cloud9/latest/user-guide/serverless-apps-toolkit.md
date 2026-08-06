@@ -108,8 +108,8 @@ The Lambda handlers that are detected by context-aware links depend on the langu
 
 |  Language/runtime  | Conditions for Lambda functions to be identified by context-aware links |
 | --- | --- |
-| JavaScript (Node.js 10.x, 12.x, and 14.x) |  The function has the following features: [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/serverless-apps-toolkit.html)  |
-| Python (3.7, 3.8, 3.9, and 3.10) |  The function has the following features: [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/serverless-apps-toolkit.html)  |
+| JavaScript (Node.js 10.x, 12.x, and 14.x) |  The function has the following features: +  It's an exported function with up to three parameters. <br />+  It has a `package.json` file in its parent folder within the workspace folder.   |
+| Python (3.7, 3.8, 3.9, and 3.10) |  The function has the following features: +  It's a top-level function. <br />+  It has a `requirements.txt` file in its parent folder within the workspace folder.   |
 
 ### To run and debug a serverless application directly from the application code
 

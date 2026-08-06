@@ -19,10 +19,10 @@ Your declared use case (OTP, Transactional, Promotional, or Multi-use) must alig
 
 ## Choosing the right use case
 <a name="rcs-compliance-use-case-choosing"></a>
-+ **OTP**: Only for authentication codes and secure transaction confirmations. No product updates, offers, or promotions.
-+ **Transactional**: Notifications, alerts, confirmations, account updates. No offers, promotions, discounts, or upgrades.
-+ **Promotional**: Offers, promotions, and marketing messages. No OTPs, 2FA, or urgent transactional notifications.
-+ **Multi-use**: Both transactional AND promotional messages. No OTP/2FA or password resets. Must demonstrate both types in your video and description.
++ **One-time password (OTP)** — Used for account authentication or secure transaction confirmation. Not permitted: product updates, offers, or promotions.
++ **Transactional** — Used to send notifications and updates related to a customer's products or services (for example, alerts, confirmations, account updates). Not permitted: offers, promotions, discounts, or upgrades.
++ **Promotional** — Used for offers, promotions, and marketing messages to increase sales, including reminders for incomplete transactions. Not permitted: OTPs, 2FA, or urgent transactional notifications.
++ **Multi-use** — Used when messaging includes both transactional and promotional messages (for example, sending a purchase confirmation followed by a related offer). Not permitted: OTP/2FA, password resets, or purely transactional-only or purely promotional-only use. You must demonstrate both message types in your video and description.
 
 **Note**
 When in doubt between Transactional and Multi-use: if you will EVER send a promotional message (offer, discount, upsell), choose Multi-use. But ensure your video and description reflect both message types.

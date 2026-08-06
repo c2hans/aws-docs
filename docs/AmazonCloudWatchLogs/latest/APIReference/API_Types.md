@@ -64,6 +64,7 @@ The following data types are supported:
 +  [LogGroupSummary](API_LogGroupSummary.md)
 +  [LogStream](API_LogStream.md)
 +  [LookupTable](API_LookupTable.md)
++  [LookupTableConfiguration](API_LookupTableConfiguration.md)
 +  [LowerCaseString](API_LowerCaseString.md)
 +  [MetricFilter](API_MetricFilter.md)
 +  [MetricFilterMatchRecord](API_MetricFilterMatchRecord.md)

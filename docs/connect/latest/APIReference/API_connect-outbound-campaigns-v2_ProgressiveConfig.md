@@ -13,7 +13,7 @@ Contains progressive outbound mode configuration.
  ** bandwidthAllocation **   <a name="connect-Type-connect-outbound-campaigns-v2_ProgressiveConfig-bandwidthAllocation"></a>
 Bandwidth allocation for the progressive outbound mode.
 Type: Double
-Valid Range: Minimum value of 0. Maximum value of 1.
+Valid Range: Minimum value of 0. Maximum value of 2.
 Required: Yes
 
 ## See Also

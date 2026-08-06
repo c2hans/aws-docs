@@ -34,7 +34,7 @@ fields @timestamp, @message
 ## Indexed fields and the filter command
 <a name="CWL_QuerySyntax-index"></a>
 
-If you have created field indexes for a log group, you can leverage those field indexes to make your `filter` queries more efficient and reduce scanned volume. For example, suppose you have created a field index for `requestId`. Then, any CloudWatch Logs Insights query on that log group that includes `filter requestId = {{value}}` or `filter requestId IN [{{value}}, {{value}}, ...]` will attempt to skip processing log events that are known not to include the indexed field. By attempting to scan only the log events that are known to contain that indexed field, scan volume can be reduced and the query is faster.
+If you have created field indexes for a log group, you can use those field indexes to make your `filter` queries more efficient and reduce scanned volume. For example, suppose you have created a field index for `requestId`. Then, any CloudWatch Logs Insights query on that log group that includes `filter requestId = {{value}}` or `filter requestId IN [{{value}}, {{value}}, ...]` will attempt to skip processing log events that are known not to include the indexed field. By attempting to scan only the log events that are known to contain that indexed field, scan volume can be reduced and the query is faster.
 
 For more information about field indexes and how to create them, see [Create field indexes to improve query performance and reduce scan volume](CloudWatchLogs-Field-Indexing.md).
 
@@ -43,7 +43,7 @@ Only queries with `filter {{fieldName}} =...` and `filter {{fieldName}} IN...` w
 
 ** Example: Find log events that are related to a certain request ID, using indexes **
 
- This example assumes that you have created a field index on `requestId`. For log groups that use this field index, the query will leverage field indexes to attempt to scan the least amount of log events to find events with `requestId` with a value of `123456`
+ This example assumes that you have created a field index on `requestId`. For log groups that use this field index, the query will use field indexes to attempt to scan the least amount of log events to find events with `requestId` with a value of `123456`
 
 ```
 fields @timestamp, @message

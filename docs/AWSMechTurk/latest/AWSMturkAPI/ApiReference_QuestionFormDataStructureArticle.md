@@ -135,7 +135,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiRefere
 
 | Name | Description | Required |
 | --- | --- | --- |
-|  `MimeType`  | Specifies the type of the data.<br />Type: `MimeType` element<br />Default: None<br />Child Elements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | Yes |
+|  `MimeType`  | Specifies the type of the data.<br />Type: `MimeType` element<br />Default: None<br />Child Elements:+   A required string that specifies the type of the data. The possible values are **image**, **audio**, or **video**.  <br />+   An optional string that specifies the format of the item, such as **gif**   | Yes |
 |  `DataURL`  |  The data itself specified with a `DataURL` element that contains a valid HTTP URL. <br />Type: `DataURL` element<br />Default: None | Yes |
 |  `AltText`  |  The text that should appear if the data cannot be rendered in the browser. <br />Type: String<br />Default: None | Yes |
 
@@ -168,7 +168,7 @@ Beginning Tuesday, December 12th 2017 the QuestionForm data structure will **no 
 |  `AppletFilename`  | The name of the class file that contains the applet code, which is located in the path specified by `AppletPath`.<br />Type: String<br />Default: None | Yes |
 |  `Width`  | The width of the bounding box for the applet.<br />Type: String<br />Default: None | Yes |
 |  `Height`  | The height of the bounding box for the applet.<br />Type: String<br />Default: None | Yes |
-|  `ApplicationParameter`  | The parameters for the applet.<br />Type: `ApplicationParameter` <br />Default: None<br />Child Elements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
+|  `ApplicationParameter`  | The parameters for the applet.<br />Type: `ApplicationParameter` <br />Default: None<br />Child Elements:+   A required string that specifies the name of the parameter  <br />+   A required string that specifies the value of the parameter   | No |
 
  The `Flash` element includes the elements described in the following table:
 
@@ -177,7 +177,7 @@ Beginning Tuesday, December 12th 2017 the QuestionForm data structure will **no 
 |  `FlashMovieURL`  | The URL of the Flash movie file.<br />Type: URL<br />Default: None | Yes |
 |  `Width`  | The width of the bounding box for the Flash movie.<br />Type: String<br />Default: None | Yes |
 |  `Height`  | The height of the bounding box for the Flash movie.<br />Type: String<br />Default: None | Yes |
-|  `ApplicationParameter`  |  The parameters for the Flash movie. <br />Type: `ApplicationParameter` <br />Default: None<br />Child Elements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
+|  `ApplicationParameter`  |  The parameters for the Flash movie. <br />Type: `ApplicationParameter` <br />Default: None<br />Child Elements:+   A required string that specifies the name of the parameter  <br />+   A required string that specifies the value of the parameter   | No |
 
 ```
 <Application>
@@ -201,12 +201,12 @@ Beginning Tuesday, December 12th 2017 the QuestionForm data structure will **no 
 
 | Name | Description | Required |
 | --- | --- | --- |
-|  `EmbeddedMimeType`  | Specifies the type of the data.<br />Type: `EmbeddedMimeType` element<br />Default: None<br />Child Elements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | Yes |
+|  `EmbeddedMimeType`  | Specifies the type of the data.<br />Type: `EmbeddedMimeType` element<br />Default: None<br />Child Elements:+   A required string that specifies the type of the data. The possible values are **image**, **audio**, or **video**. <br />+  An optional string that specifies the format of the item, such as **gif**  | Yes |
 |  `DataURL`  |  The data itself specified by a `DataURL` element that contains a valid HTTP URL <br />Type: `DataURL` element<br />Default: None | Yes |
 |  `AltText`  |  The text that should appear if the data cannot be rendered in the browser. <br />Type: String<br />Default: None | Yes |
 |  `Width`  |  The width of the bounding box for the object. <br />Type: String<br />Default: None | Yes |
 |  `Height`  |  The height of the bounding box for the object. <br />Type: String<br />Default: None | Yes |
-|  `ApplicationParameter`  | The parameters for the `EmbeddedBinary` object. <br />Type: `ApplicationParameter` <br />Default: None<br />Child elements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
+|  `ApplicationParameter`  | The parameters for the `EmbeddedBinary` object. <br />Type: `ApplicationParameter` <br />Default: None<br />Child elements:+   A required string that specifies the name of the parameter <br />+   A required string that specifies the value of the parameter  | No |
 
 ```
 <EmbeddedBinary>
@@ -266,9 +266,9 @@ Beginning Tuesday, December 12th 2017 the QuestionForm data structure will **no 
 
 | Name | Description | Required |
 | --- | --- | --- |
-|  `IsNumeric`  | Specifies that the value entered must be numeric.<br />Type: empty element<br />Default: None<br />Attributes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
-|  `Length`  | Specifies the length range of the answer.<br />Type: empty element<br />Default: None<br />Attributes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
-|  `AnswerFormatRegex`  |  Specifies that JavaScript validates the answer string against a given pattern.   A limitation of this approach is that Workers who have disabled JavaScript on their browsers cannot validate their answers. Although this is uncommon, you might want to caution your Workers.  <br />Type: empty element<br />Default: None<br />Attributes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
+|  `IsNumeric`  | Specifies that the value entered must be numeric.<br />Type: empty element<br />Default: None<br />Attributes:+  An optional integer that specifies the minimum value allowed <br />+  An optional integer that specifies the maximum value allowed  | No |
+|  `Length`  | Specifies the length range of the answer.<br />Type: empty element<br />Default: None<br />Attributes:+   An optional non-negative integer that specifies the minimum number of characters  <br />+   An optional positive integer that specifies the maximum number of characters   | No |
+|  `AnswerFormatRegex`  |  Specifies that JavaScript validates the answer string against a given pattern.   A limitation of this approach is that Workers who have disabled JavaScript on their browsers cannot validate their answers. Although this is uncommon, you might want to caution your Workers.  <br />Type: empty element<br />Default: None<br />Attributes:+  A required string that specifies the regular expression that JavaScript uses to validate against the Workers' entered values <br />+  An optional string that allows you to edit the content of errors displayed to the Worker on the Worker web site if the regex validation fails. If this attribute is not specified, the error displayed is "Invalid input supplied."  <br />+  An optional string with the value `i` which specifies that case is ignored when matching characters   | No |
 
  The `Constraints` element can contain multiple `AnswerFormatRegex` elements. All `AnswerFormatRegex` constraints must be satisfied before the Worker can submit the HIT.
 
@@ -364,8 +364,8 @@ Beginning Tuesday, December 12th 2017 the QuestionForm data structure will **no 
 | --- | --- | --- |
 |  `MinSelectionCount`  |  Specifies the minimum number of selections allowed for a valid answer. This value can range from 0 to the number of selections. <br />Type: non-negative Integer<br />Default: 1 | No |
 |  `MaxSelectionCount`  |  Specifies the maximum number of selections allowed for a valid answer. This value can range from 1 to the number of selections. <br />Type: positive Integer<br />Default: 1 | No |
-|  `StyleSuggestion`  |  Specifies what style of multiple-choice form field to use when displaying the question to the Worker. The field might not use the suggested style, depending on the device the Worker is using to see the form. <br />Type: String<br />Default: None<br />Valid Values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | No |
-|  `Selections`  | Specifies the answer selections.<br />Type: `Selections` structure<br />Default: None<br />Child elements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_QuestionFormDataStructureArticle.html) | Yes |
+|  `StyleSuggestion`  |  Specifies what style of multiple-choice form field to use when displaying the question to the Worker. The field might not use the suggested style, depending on the device the Worker is using to see the form. <br />Type: String<br />Default: None<br />Valid Values:+   Can be used if `MaxSelectionCount` is **1**, because it restricts the user to selecting either zero or one item from the list  <br />+   Allows multiple selections, but can be restricted by using the `MaxSelectionCount` element  <br />+   Allows multiple selections, but can be restricted by using the `MaxSelectionCount` element  <br />+   Can be used if `MaxSelectionCount` is **1**, because it restricts the user to selecting either zero or one item from the list  <br />+   Allows multiple selections, but can be restricted by using the `MaxSelectionCount` element  <br />+   Allows multiple selections, but can be restricted by using the `MaxSelectionCount` element   | No |
+|  `Selections`  | Specifies the answer selections.<br />Type: `Selections` structure<br />Default: None<br />Child elements:+   Specifies an answer selection. This element is described fully in the next table.  <br />+   An optional text field to display below the selection list that allows the Worker to enter an alternate answer that does not appear in the list of selections. The contents of this element are similar to `FreeTextAnswer`.    A Qualification test that you want to grade automatically using an answer key cannot have an `OtherSelection` field for a multiple choice question. An answer key can only match multiple-choice questions and cannot match free-text fields.    | Yes |
 
  The `Selections` element lists the selection options available. It contains one or more `Selection` elements, one for each possible answer in the set. The `Selection` element includes the elements described in the following table:
 

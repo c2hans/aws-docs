@@ -81,7 +81,7 @@ The following examples show how the wildcard characters work:
 | --- | --- |
 | `*.jpg` | All .jpg files. |
 | `images/*.jpg` | All .jpg files in the `images` directory and in subdirectories under the `images` directory. |
-| `a*.jpg` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistValuesCacheBehavior.html)  |
+| `a*.jpg` |  +  All .jpg files for which the file name begins with `a`, for example, `apple.jpg` and `appalachian_trail_2012_05_21.jpg`. <br />+  All .jpg files for which the file path begins with `a`, for example, `abra/cadabra/magic.jpg`.   |
 | `a??.jpg` | All .jpg files for which the file name begins with `a` and is followed by exactly two other characters, for example, `ant.jpg` and `abe.jpg`. |
 | `*.doc*` | All files for which the file name extension begins with `.doc`, for example, `.doc`, `.docx`, and `.docm` files. You can't use the path pattern `*.doc?` in this case, because that path pattern wouldn't apply to requests for `.doc` files; the `?` wildcard character replaces exactly one character. |
 

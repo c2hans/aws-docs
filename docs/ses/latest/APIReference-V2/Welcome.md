@@ -13,4 +13,4 @@ If you're new to Amazon SES API v2, you might find it helpful to review the [Ama
 
 The Amazon SES API v2 is available in several AWS Regions and it provides an endpoint for each of these Regions. For more information, see [Amazon SES endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ses.html) in the *Amazon Web Services General Reference*. To learn more about AWS Regions, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html) in the *Amazon Web Services General Reference*.
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

@@ -93,7 +93,7 @@ The following dimensions are used by centralization metrics.
 |  SourceRegion  | The AWS Region where the source log data originated. |
 |  SourceAccount  | The AWS account ID where the source log data originated. |
 |  DestinationRegion  | The AWS Region where the log data is being replicated to. |
-|  ErrorType  | The type of error encountered during centralization. Possible values include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatch-Logs-Monitoring-CloudWatch-Metrics.html) |
+|  ErrorType  | The type of error encountered during centralization. Possible values include:+  `LogGroupQuotaExceeded`: The destination account has reached its log group quota. <br />+  `InvalidKMS`: The KMS key is missing, deleted, not enabled, or is asymmetric instead of symmetric. <br />+  `AccessDenied`: Access was denied when attempting to replicate log data. This can occur due to insufficient permissions, such as incorrect KMS key permissions, missing IAM permissions, or restrictive resource policies. <br />+  `LogTierMismatch`: The log tier of the source and destination log groups do not match. <br />+  `InvalidLogStream`: Invalid parameter encountered when creating or writing to a log stream, such as when the log stream name exceeds the maximum length. <br />+  `InvalidLogGroup`: Invalid parameter encountered when creating or configuring a log group in the destination account. <br />+  `DestinationEncryptionMismatch`: The destination log group already exists with a different KMS encryption configuration than what the centralization rule specifies.  |
 
 ## CloudWatch Logs service usage metrics
 <a name="CloudWatchLogs-Usage-Metrics"></a>

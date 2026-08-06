@@ -15,12 +15,6 @@ For more information, see [Using custom visual content](https://docs.aws.amazon.
 **Note**
 In the following list, the required parameters are described first.
 
- ** DataSetIdentifier **   <a name="QS-Type-CustomContentVisual-DataSetIdentifier"></a>
-The dataset that is used to create the custom content visual. You can't create a visual without a dataset.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Required: Yes
-
  ** VisualId **   <a name="QS-Type-CustomContentVisual-VisualId"></a>
 The unique identifier of a visual. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have visuals with the same identifiers.
 Type: String
@@ -39,6 +33,12 @@ The configuration of a `CustomContentVisual`.
 Type: [CustomContentConfiguration](API_CustomContentConfiguration.md) object
 Required: No
 
+ ** DataSetIdentifier **   <a name="QS-Type-CustomContentVisual-DataSetIdentifier"></a>
+The dataset that is used to create the custom content visual. You can't create a visual without a dataset or a topic.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
+
  ** Subtitle **   <a name="QS-Type-CustomContentVisual-Subtitle"></a>
 The subtitle that is displayed on the visual.
 Type: [VisualSubtitleLabelOptions](API_VisualSubtitleLabelOptions.md) object
@@ -47,6 +47,12 @@ Required: No
  ** Title **   <a name="QS-Type-CustomContentVisual-Title"></a>
 The title that is displayed on the visual.
 Type: [VisualTitleLabelOptions](API_VisualTitleLabelOptions.md) object
+Required: No
+
+ ** TopicIdentifier **   <a name="QS-Type-CustomContentVisual-TopicIdentifier"></a>
+The topic that is used in the custom content visual. You can't create a visual without a dataset or a topic.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** VisualContentAltText **   <a name="QS-Type-CustomContentVisual-VisualContentAltText"></a>

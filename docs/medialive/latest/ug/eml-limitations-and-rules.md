@@ -30,7 +30,7 @@ MediaLive also includes quotas, which you can change. For more information about
   - You can attach 0 or 1 regular CDI inputs to a channel. This input is a push input, so it counts towards the maximum number of push inputs in the channel. You can attach one set of partner CDI inputs to a channel. Attaching this set uses up the maximum number of push inputs in the channel. For information about these inputs, see [Creating CDI inputs as partner inputs](feature-cdi-partner.md).
 
 - **Input number, special rule for Elemental Link inputs**
-  - You can attach up to 2 Elemental Link inputs to a channel. Elemental Link inputs are push inputs, so each counts towards your maximum number of push inputs in the channel. [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/eml-limitations-and-rules.html)
+  - You can attach up to 2 Elemental Link inputs to a channel. Elemental Link inputs are push inputs, so each counts towards your maximum number of push inputs in the channel. +  You can attach these two Elemental Link inputs to one standard channel in order to implement [pipeline redundancy](plan-redundancy-mode.md). <br />+  You can include one or both of these Elemental Link inputs in a multiple-input channel, as part of an [input switching workflow](scheduled-input-switching.md).
 
 - **Input number, special rule for Elemental Link inputs per AWS Elemental Link hardware device**
   - You can create up to 4 inputs (Link inputs) from each AWS Elemental Link hardware device. You can then attach each input to a different channel.
@@ -43,7 +43,7 @@ MediaLive also includes quotas, which you can change. For more information about
 
 - **Input types – in multiple-input channels**
   - You can attach multiple inputs to a channel, in order to implement input switching. You can't include an HLS input that is a VOD asset. For the definition of a VOD asset, see [Support for live and file sources](inputs-live-vs-file.md).
-  - For the inputs that you attach in order to implement input switching, there are restrictions related to input types and Availability Zones:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/eml-limitations-and-rules.html)
+  - For the inputs that you attach in order to implement input switching, there are restrictions related to input types and Availability Zones:+  You can have multiple MediaConnect inputs attached to one channel, but all those inputs must be in the same two Availability Zones.  <br />+  You can have multiple VPC inputs attached to one channel, but all these inputs must be in the same two Availability Zones. VPC inputs include CDI inputs, RTP VPC inputs, and RTMP VPC inputs.  <br />+  If the channel has both MediaConnect inputs and VPC inputs, all these inputs must be in the same two Availability Zones.
 
 - **Input – audio and captions selectors**
   - Maximum of 32 audio and captions selectors (in any combination) in one channel.
@@ -60,7 +60,7 @@ MediaLive also includes quotas, which you can change. For more information about
   - Maximum of one Archive output groups in a channel. Maximum of one MediaConnect Router output group in a channel.<br />Maximum of five outputs in a MediaConnect Router output group.<br />Maximum of 100 Mbps on a MediaConnect Router output.<br />MediaConnect Router output groups are not yet supported in opt-in regions.<br />For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
 
 - **Output encodes, frame capture**
-  - For frame capture encodes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/eml-limitations-and-rules.html)For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
+  - For frame capture encodes:+  Maximum of three frame capture encodes in a channel. The single encode in a Frame capture output group, and each (optional) [frame capture encode](#eml-limitations-and-rules) in an HLS output group both count towards this limit. <br />+  Maximum of three Frame capture outputs in each HLS output group. For information about output types, see [Output types supported in MediaLive](outputs-supported-containers.md).
 
 - **Output video encodes, UHD resolution, and input type**
   - A channel with a CDI input allows one UHD output encode (maximum).<br />The maximum number of *channels *with UHD is a quota that you can change, as described in [Quotas in MediaLive](limits.md). If you are using a CDI input, the maximum number of UHD *outputs* is a limitation. You can't change it.
@@ -106,7 +106,7 @@ MediaLive also includes quotas, which you can change. For more information about
   - The automatic input failover feature applies to inputs, not to the entire channel.You can set up failover in only two, paired, inputs. The inputs must be push inputs.
 
 - **Resiliency, [pipeline redundancy](plan-redundancy-mode.md)**
-  - The pipeline redundancy feature (channel class) applies to the channel and all its inputs. The following rules apply to the channels and inputs:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/eml-limitations-and-rules.html)
+  - The pipeline redundancy feature (channel class) applies to the channel and all its inputs. The following rules apply to the channels and inputs:+  Standard channel – You can attach only standard-class inputs. <br />+  Single-pipeline channel – You can attach single-class inputs (to omit support for pipeline redundancy) or standard-class inputs (to allow for easy upgrade of the channel at a later date).
 
 - **Schedule, maximum number of actions**
   - The schedule can contain a maximum of 1500 actions. You can't change this maximum.This maximum includes stale actions, actions that are in progress, and actions that aren't yet active. If you are near this maximum, you should delete stale actions.

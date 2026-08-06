@@ -73,7 +73,7 @@ For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana
 |  style  |  The theme of the dashboard (for example, dark or light).  |
 |  timezone  |  The timezone of dashboard (utc or browser).  |
 |  editable  |  Whether a dashboard can be edited.  |
-|  graphTooltip  |  The tooltip style. [See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/dashboard-json-model.html)  |
+|  graphTooltip  |  The tooltip style. +  `0` for no shared crosshair or tooltip (default) <br />+  `1` for shared crosshair <br />+  `2` for shared crosshair and shared tooltip   |
 |  time  |  The time range for the dashboard (for example, last 6 hours, last 7 days).  |
 |  timepicker  |  The timepicker metadata. For more information, see [Time picker](#dashboard-json-timepicker).  |
 |  templating  |  The templating metadata. For more information, see [Templates and variables](templates-and-variables.md).  |

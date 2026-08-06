@@ -30,7 +30,7 @@ In the following table, you can find a description of each gateway status, and w
 | Status | Meaning |
 | --- | --- |
 | RUNNING | The gateway is configured properly and is available to use. |
-| OFFLINE | Your gateway might be in an `OFFLINE` status for one or more of the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/filefsxw/managing-gateway-file-fsx.html) |
+| OFFLINE | Your gateway might be in an `OFFLINE` status for one or more of the following reasons:+  The gateway can't reach the Storage Gateway service endpoints. <br />+  The gateway had an unexpected shutdown. <br />+  The gateway has an associated cache disk that is disconnected, has been modified, or has failed.  |
 
 ## Understanding file system status
 <a name="understand-file-system"></a>

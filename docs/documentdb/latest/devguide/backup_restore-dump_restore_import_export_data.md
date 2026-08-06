@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/documentdb/latest/devguide/backup_restor
 
 You can use the `mongodump`, `mongorestore`, `mongoexport`, and `mongoimport` utilities to move data in and out of your Amazon DocumentDB cluster. This section discusses the purpose of each of these tools and configurations to help you achieve better performance.
 
+**MongoDB Database Tools version requirement**
+Use MongoDB Database Tools up to and including version 100.11.0 for Amazon DocumentDB. To download, see [MongoDB Database Tools releases](https://www.mongodb.com/download-center/database-tools/releases/archive) on the MongoDB website.
+
 **Topics**
 + [`mongodump`](#backup_restore-dump_restore_import_export_data-mongodump)
 + [`mongorestore`](#backup_restore-dump_restore_import_export_data-mongorestore)
@@ -20,9 +23,6 @@ You can use the `mongodump`, `mongorestore`, `mongoexport`, and `mongoimport` ut
 The `mongodump` utility creates a binary (BSON) backup of a MongoDB database. The `mongodump` tool is the preferred method of dumping data from your source MongoDB deployment when looking to restore it into your Amazon DocumentDB cluster due to the size efficiencies achieved by storing the data in a binary format.
 
 Depending on the resources available on the instance or machine you are using to perform the command, you can speed up your `mongodump` by increasing the number of parallel collections dumped from the default 1 using the `--numParallelCollections` option. A good rule of thumb is to start with one worker per vCPU on your Amazon DocumentDB cluster's primary instance.
-
-**Note**
-Use MongoDB Database Tools up to and including version 100.6.1 for Amazon DocumentDB. To download, see [MongoDB Database Tools releases](https://www.mongodb.com/download-center/database-tools/releases/archive).
 
 ### Example usage
 <a name="backup_restore-dump_restore_import_export_data-mongodump-example"></a>

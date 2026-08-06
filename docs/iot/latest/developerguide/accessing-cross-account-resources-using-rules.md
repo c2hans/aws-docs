@@ -26,7 +26,7 @@ Scenario: Account A sends data from an MQTT message to account B's Amazon SQS qu
 | AWS account | Account referred to as  | Description |
 | --- | --- | --- |
 | {{1111-1111-1111}} | Account A | Rule action: sqs:SendMessage |
-| {{2222-2222-2222}} | Account B | Amazon SQS queue [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/accessing-cross-account-resources-using-rules.html)  |
+| {{2222-2222-2222}} | Account B | Amazon SQS queue +  ARN: `{{arn:aws:sqs:region:2222-2222-2222:ExampleQueue}}` <br />+  URL: `{{https://sqs.region.amazonaws.com/2222-2222-2222/ExampleQueue}}`   |
 
 **Note**
 Your destination Amazon SQS queue doesn't have to be in the same AWS Region as your [AWS IoT rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html). For more information about rule's SQS action, see [SQS](sqs-rule-action.md).

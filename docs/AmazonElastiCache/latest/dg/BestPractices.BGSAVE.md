@@ -5,10 +5,8 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/BestPractice
 # Ensuring you have enough memory to make a Valkey or Redis OSS snapshot
 <a name="BestPractices.BGSAVE"></a>
 
-**Snapshots and synchronizations in Valkey 7.2 and later, and Redis OSS version 2.8.22 and later**
-Valkey has default support for snapshots and synchronizations. Redis OSS 2.8.22 introduces a forkless save process that allows you to allocate more of your memory to your application's use without incurring increased swap usage during synchronizations and saves. For more information, see [How synchronization and backup are implemented](Replication.Redis.Versions.md).
-
-**Redis OSS snapshots and synchronizations before version 2.8.22**
+**Snapshots and synchronizations**
+Valkey and Redis OSS support snapshots and synchronizations using a forkless save process that allows you to allocate more of your memory to your application's use without incurring increased swap usage during synchronizations and saves.
 
 When you work with ElastiCache for Redis OSS, Redis OSS calls a background write command in a number of cases:
 + When creating a snapshot for a backup.
@@ -41,7 +39,7 @@ For more information on regions and Availability Zones, see [Choosing regions an
 ## Avoiding running out of memory when executing a background write
 <a name="BestPractices.BGSAVE.memoryFix"></a>
 
-Whenever a background write process such as `BGSAVE` or `BGREWRITEAOF` is called, to keep the process from failing, you must have more memory available than will be consumed by write operations during the process. The worst-case scenario is that during the background write operation every record is updated and some new records are added to the cache. Because of this, we recommend that you set `reserved-memory-percent` to 50 (50 percent) for Redis OSS versions before 2.8.22, or 25 (25 percent) for Valkey and all Redis OSS versions 2.8.22 and later.
+Whenever a background write process such as `BGSAVE` or `BGREWRITEAOF` is called, to keep the process from failing, you must have more memory available than will be consumed by write operations during the process. The worst-case scenario is that during the background write operation every record is updated and some new records are added to the cache. Because of this, we recommend that you set `reserved-memory-percent` to 25 (25 percent) for Valkey and Redis OSS.
 
 The `maxmemory` value indicates the memory available to you for data and operational overhead. Because you cannot modify the `reserved-memory` parameter in the default parameter group, you must create a custom parameter group for the cluster. The default value for `reserved-memory` is 0, which allows Redis OSS to consume all of *maxmemory* with data, potentially leaving too little memory for other uses, such as a background write process. For `maxmemory` values by node instance type, see [Redis OSS node-type specific parameters](ParameterGroups.Engine.md#ParameterGroups.Redis.NodeSpecific).
 

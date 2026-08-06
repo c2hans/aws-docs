@@ -40,7 +40,7 @@ For more information about these API operations, see [ Amazon EMR WAL (EMRWAL) C
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| Amazon EMR write-ahead log workspace |  AWS::EMRWAL::Workspace  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/logging-using-cloudtrail.html)  |
+| Amazon EMR write-ahead log workspace |  AWS::EMRWAL::Workspace  |  +  GetCurrentWALTime <br />+  ListTagsForResource <br />+  ListWALs <br />+  ListWorkspaces <br />+  TrimWAL <br />+  CompleteWALFlush   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

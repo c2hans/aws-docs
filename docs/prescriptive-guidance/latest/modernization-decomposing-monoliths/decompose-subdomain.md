@@ -11,7 +11,7 @@ This pattern uses a [domain-driven design (DDD)](https://en.wikipedia.org/wiki/D
 |
 | Advantages | Disadvantages |
 | --- |--- |
-| Loosely coupled architecture provides scalability, resilience, maintainability, extensibility, location transparency, protocol independence, and time independence.Systems become more scalable and predictable. | Can create too many microservices, which makes service discovery and integration difficult.Business subdomains are difficult to identify because they require an in-depth understanding of the overall business. |
+| + Loosely coupled architecture provides scalability, resilience, maintainability, extensibility, location transparency, protocol independence, and time independence.<br />+ Systems become more scalable and predictable. | + Can create too many microservices, which makes service discovery and integration difficult.<br />+ Business subdomains are difficult to identify because they require an in-depth understanding of the overall business. |
 
 The following illustration shows how an insurance monolith can be decomposed into subdomains after it was decomposed by business capabilities.
 

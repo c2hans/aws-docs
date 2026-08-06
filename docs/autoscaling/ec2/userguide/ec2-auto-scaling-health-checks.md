@@ -28,4 +28,5 @@ Unhealthy instances can also occur when an instance terminates unexpectedly, suc
 + [Monitor Auto Scaling instances with impaired Amazon EBS volumes using health checks](monitor-and-replace-instances-with-impaired-ebs-volumes.md)
 + [Set up a custom health check for your Auto Scaling group](set-up-a-custom-health-check.md)
 + [View the reason for health check failures](replace-unhealthy-instance.md)
++ [Use application status checks with an Auto Scaling group](use-application-status-checks-auto-scaling-group.md)
 + [Troubleshoot unhealthy instances in Amazon EC2 Auto Scaling](ts-as-healthchecks.md)

@@ -575,7 +575,7 @@ This step is for ensuring that the above tests are now in an alarm state.
 
    1. **Region ** where the incident occurred
 
-   1. **Priority** - AWS DevOpsAgent allows for two concurrent investigations. The Priority allows for you to define the order of execution of your investigations.
+   1. **Priority** - AWS DevOpsAgent allows for 2 concurrent investigations. The Priority allows for you to define the order of execution of your investigations.
 
 1. Choose Investigate to launch the investigation.
 

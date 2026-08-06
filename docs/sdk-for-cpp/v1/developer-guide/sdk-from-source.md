@@ -11,5 +11,5 @@ You can use the AWS SDK for C\+\+ from your code by first building the SDK from 
 
 | General process  | Detailed process |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdk-from-source.html) | First build the SDK from source and install it. [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdk-from-source.html) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdk-from-source.html) | Then develop your own application using the SDK. [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/sdk-from-source.html) |
+|  1.  Use CMake to generate build files for the SDK. <br />2.  Build the SDK. <br />3.  Install the SDK.  | First build the SDK from source and install it. +  [Building on Windows](setup-windows.md) <br />+  [Building on Linux/macOS](setup-linux.md)   |
+|  1.  Write your own code to use the SDK or use a sample application, and add the `AWSSDK` package to your cmake file. <br />2.  Use CMake to generate build files for your application. <br />3.  Build your application. <br />4.  Run your application.  | Then develop your own application using the SDK. +  [Creating a simple application](build-cmake.md)  |

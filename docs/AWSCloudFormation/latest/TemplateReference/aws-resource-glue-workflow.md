@@ -86,6 +86,3 @@ The tags to use with this workflow.
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the workflow name.
 
 For more information about using the `Ref` function, see [https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-glue-workflow-return-values-fn--getatt"></a>

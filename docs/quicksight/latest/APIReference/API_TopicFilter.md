@@ -38,19 +38,19 @@ Required: No
  ** FilterClass **   <a name="QS-Type-TopicFilter-FilterClass"></a>
 The class of the filter. Valid values for this structure are `ENFORCED_VALUE_FILTER`, `CONDITIONAL_VALUE_FILTER`, and `NAMED_VALUE_FILTER`.
 Type: String
-Valid Values: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER`
+Valid Values: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER | DASHBOARD_DEFAULT_FILTER`
 Required: No
 
  ** FilterDescription **   <a name="QS-Type-TopicFilter-FilterDescription"></a>
 A description of the filter used to select items for a topic.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 500.
 Required: No
 
  ** FilterSynonyms **   <a name="QS-Type-TopicFilter-FilterSynonyms"></a>
 The other names or aliases for the filter.
 Type: Array of strings
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** FilterType **   <a name="QS-Type-TopicFilter-FilterType"></a>

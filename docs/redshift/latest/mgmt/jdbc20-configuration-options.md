@@ -33,6 +33,7 @@ You can set configuration properties using the connection URL. For more informat
 + [DisableIsValidQuery](#jdbc20-disableisvalidquery-option)
 + [enableFetchRingBuffer](#jdbc20-enablefetchringbuffer-option)
 + [enableMultiSqlSupport](#jdbc20-enablemultisqlsupport-option)
++ [EnableTableTypes](#jdbc20-enabletabletypes-option)
 + [fetchRingBufferSize](#jdbc20-fetchringbuffersize-option)
 + [ForceLowercase](#jdbc20-forcelowercase-option)
 + [groupFederation](#jdbc20-groupFederation-option)
@@ -355,6 +356,21 @@ The driver processes multiple SQL commands, separated by semicolons, in a Statem
 
 **false**
 The driver returns an error for multiple SQL commands in a single Statement.
+
+## EnableTableTypes
+<a name="jdbc20-enabletabletypes-option"></a>
++ **Default Value** – true
++ **Data Type** – Boolean
+
+This option specifies whether the driver recognizes detailed table type information from the data source in the results of the `getTables` and `getTableTypes` `DatabaseMetaData` methods. By default, the driver recognizes detailed table types.
+
+This parameter is optional. It is available in driver versions 2.2.8 and later.
+
+**true**
+The driver recognizes the following table types: TABLE, VIEW, SYSTEM TABLE, SYSTEM VIEW, EXTERNAL TABLE, and LOCAL TEMPORARY.
+
+**false**
+The driver normalizes the detailed table type information into the generic TABLE and VIEW table types.
 
 ## fetchRingBufferSize
 <a name="jdbc20-fetchringbuffersize-option"></a>

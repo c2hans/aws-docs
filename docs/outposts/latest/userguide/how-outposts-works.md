@@ -80,12 +80,18 @@ Your service link is created when your Outpost is provisioned. If you have a ser
 + [AWS Outposts connectivity to AWS Regions](https://docs.aws.amazon.com/outposts/latest/userguide/region-connectivity.html)
 + [Application/workload routing ](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/applicationworkload-routing.html) in the *AWS Outposts High Availability Design and Architecture Considerations* AWS Whitepaper
 
+**IPv6 support**
+You can create dual-stack (IPv6) subnets on your Outpost. AWS Outposts supports IPv6 traffic only between subnets in the same Outpost. The service link does not support IPv6 between your Outpost and the AWS Region. In addition, AWS Outposts cannot use IPv6 over the internet gateway.
+
 ## Local gateways
 <a name="how-racks-work"></a>
 
 Outposts racks include a local gateway to provide connectivity to your on-premises network. If you have an Outposts rack, you can include a local gateway as target where the destination is your on-premises network. Local gateways are only available for Outposts racks and can only be used in VPC and subnet route tables that are associated with an Outposts rack. For more information, see:
 + [Local gateways for your Outposts racks](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-local-gateways.html)
 + [Application/workload routing ](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/applicationworkload-routing.html) in the *AWS Outposts High Availability Design and Architecture Considerations* AWS Whitepaper
+
+**IPv6 support**
+The local gateway supports only IPv4 traffic. It does not support IPv6.
 
 ## Local network interfaces
 <a name="how-servers-work"></a>

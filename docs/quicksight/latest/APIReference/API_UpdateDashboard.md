@@ -88,6 +88,7 @@ Content-type: application/json
          "ExcludedDataSetArns": [ "{{string}}" ],
          "QBusinessInsightsStatus": "{{string}}",
          "Timezone": "{{string}}",
+         "VisualMessages": { ... },
          "WeekStart": "{{string}}"
       },
       "ParameterDeclarations": [
@@ -100,6 +101,9 @@ Content-type: application/json
          { ... }
       ],
       "TooltipSheets": [
+         { ... }
+      ],
+      "TopicIdentifierDeclarations": [
          { ... }
       ]
    },
@@ -137,6 +141,12 @@ Content-type: application/json
             {
                "DataSetArn": "{{string}}",
                "DataSetPlaceholder": "{{string}}"
+            }
+         ],
+         "TopicReferences": [
+            {
+               "TopicArn": "{{string}}",
+               "TopicPlaceholder": "{{string}}"
             }
          ]
       }
@@ -201,7 +211,7 @@ Required: No
 
  ** [SourceEntity](#API_UpdateDashboard_RequestSyntax) **   <a name="QS-UpdateDashboard-request-SourceEntity"></a>
 The entity that you are using as a source when you update the dashboard. In `SourceEntity`, you specify the type of object you're using as source. You can only update a dashboard from a template, so you use a `SourceTemplate` entity. If you need to update a dashboard from an analysis, first convert the analysis to a template by using the ` [CreateTemplate](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_CreateTemplate.html) ` API operation. For `SourceTemplate`, specify the Amazon Resource Name (ARN) of the source template. The `SourceTemplate` ARN can contain any AWS account and any Amazon Quick Sight-supported AWS Region.
-Use the `DataSetReferences` entity within `SourceTemplate` to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder.
+Use the `DataSetReferences` entity within `SourceTemplate` to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder. Use the `TopicReferences` entity to list the replacement topics for the topic placeholders listed in the original. The schema in each topic must match its placeholder.
 Type: [DashboardSourceEntity](API_DashboardSourceEntity.md) object
 Required: No
 

@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| [Greengrass nucleus lite](greengrass-nucleus-lite-component.md)<br />Version 2.5.1 | <a name="changelog-nucleus-lite-2.5.1"></a> [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2026-05-06-2.5.1.html)  |
+| [Greengrass nucleus lite](greengrass-nucleus-lite-component.md)<br />Version 2.5.1 | <a name="changelog-nucleus-lite-2.5.1"></a> **Bug fixes and improvements**<br />   Fixes an issue where `SubscribeToConfigurationUpdate` could notify subscribers when a configuration value did not actually change.   Fixes an issue where the deployment source ARN of components could be overwritten by unrelated deployments.   Fixes an issue where HTTP artifact download retries did not trigger on retryable error codes such as 5xx and 429.     |

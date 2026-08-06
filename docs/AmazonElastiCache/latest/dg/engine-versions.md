@@ -394,7 +394,7 @@ For more information on Redis OSS 2.8.23 parameters, see [Redis OSS 2.8.23 (enha
 <a name="redis-version-2-8-22"></a>
 
 Redis OSS improvements added since version 2.8.21 include the following:
-+ Support for forkless backups and synchronizations, which allows you to allocate less memory for backup overhead and more for your application. For more information, see [How synchronization and backup are implemented](Replication.Redis.Versions.md). The forkless process can impact both latency and throughput. When there is high write throughput, when a replica re-syncs, it can be unreachable for the entire time it is syncing.
++ Support for forkless backups and synchronizations, which allows you to allocate less memory for backup overhead and more for your application. The forkless process can impact both latency and throughput. When there is high write throughput, when a replica re-syncs, it can be unreachable for the entire time it is syncing.
 + If there is a failover, replication groups now recover faster because replicas perform partial syncs with the primary rather than full syncs whenever possible. Additionally, both the primary and replicas no longer use the disk during syncs, providing further speed gains.
 + Support for two new CloudWatch metrics.
   + `ReplicationBytes` – The number of bytes a replication group's primary cluster is sending to the read replicas.

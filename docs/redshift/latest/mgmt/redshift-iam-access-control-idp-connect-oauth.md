@@ -58,7 +58,7 @@ The `IdpTokenAuthPlugin` plugin has the following additional connection options:
 | Option name | Required? | Description |
 | --- | --- | --- |
 | token | Required | An AWS IAM Identity Center vended access token or an OpenID Connect (OIDC) JSON Web Token (JWT) provided by a web identity provider that's connected with AWS IAM Identity Center. Your application must generate this token by authenticating your application user with AWS IAM Identity Center or an identity provider connected with AWS IAM Identity Center. |
-| token\_type | Required | The type of token used for `IdpTokenAuthPlugin`. Possible values are the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect-oauth.html) |
+| token\_type | Required | The type of token used for `IdpTokenAuthPlugin`. Possible values are the following: +   **ACCESS\_TOKEN** – Enter this if you use an AWS IAM Identity Center provided access token.  <br />+   **EXT\_JWT** – Enter this if you use an OpenID Connect (OIDC) JSON Web Token (JWT) provided by a web-based identity provider that's connected with AWS IAM Identity Center.   |
 
 You must enter these values in the connection properties of the tool you create and connect with. For more information, see the connection options documentation for each respective driver:
 + [Options for JDBC driver version 2.x configuration](jdbc20-configuration-options.md)

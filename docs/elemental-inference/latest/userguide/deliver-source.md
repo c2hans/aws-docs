@@ -24,7 +24,7 @@ The following table identifies specific requirements for Elemental Inference.
 | --- | --- |
 | Media segment duration | 0-1.2 seconds |
 | Ingestion order | Elemental Inference will ingest all media segments (audio and video) for a given sequence number before proceeding to the next sequence number |
-| End of Stream indicator (workaround) | Typically, the last media segment includes `lmsg`.<br />However, if you can't signal the end of stream in this way (for example, you are using FFMG), then flush the Elemental Inference internal buffer as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-inference/latest/userguide/deliver-source.html) |
+| End of Stream indicator (workaround) | Typically, the last media segment includes `lmsg`.<br />However, if you can't signal the end of stream in this way (for example, you are using FFMG), then flush the Elemental Inference internal buffer as follows:+  Send up to 10 seconds of slate.  |
 | Manifest | CMAF Ingest doesn't support manifests. |
 
 ## Example

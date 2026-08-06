@@ -125,7 +125,7 @@ The following tables show the billing methods for contract and usage-based prici
 
 | Pricing model | Billing |
 | --- | --- |
-| Contract | In contract-based pricing model, the buyer is billed in one of the following ways:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-paying-for-products.html) |
+| Contract | In contract-based pricing model, the buyer is billed in one of the following ways:+  Installment plans with a custom billing schedule. Invoiced at 00:00 UTC on dates defined by the seller. Invoices contain payment instructions for the buyer. <br />+  Upfront billing paid immediately upon subscription. <br />+ Variable payments (available for professional servcies products). As sellers reach complete work, they create payment requests that the buyer accepts or declines. At the time of private offer acceptance, buyers can choose to auto approve payment requests or manually review each payment request. The buyer is invoiced on the day the payment request is approved or auto approved.  |
 | Usage (pay as you go) | Billed monthly at 00:00 UTC on the second or third day of the month, combined with other AWS charges. |
 
 **Note**

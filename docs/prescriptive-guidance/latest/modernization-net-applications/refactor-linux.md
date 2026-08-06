@@ -48,8 +48,8 @@ AWS Fargate is a serverless, pay-as-you-go compute engine that lets you focus on
 |
 | Tool | Purpose | Resources |
 | --- |--- |--- |
-| Porting Assistant for .NET | This analysis tool scans .NET Framework applications and generates a .NET Core compatibility assessment. This assessment helps you port your applications to Linux faster. | [Details](https://aws.amazon.com/porting-assistant-dotnet/)[Documentation](https://docs.aws.amazon.com/portingassistant/latest/userguide/what-is-porting-assistant.html) |
-| AWS App2Container (A2C) | A2C is a command line tool for modernizing .NET and Java applications by converting them into containerized applications with minimal effort. | [Details](https://aws.amazon.com/app2container/)[Documentation](https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html) |
+| Porting Assistant for .NET | This analysis tool scans .NET Framework applications and generates a .NET Core compatibility assessment. This assessment helps you port your applications to Linux faster. | + [Details](https://aws.amazon.com/porting-assistant-dotnet/)<br />+ [Documentation](https://docs.aws.amazon.com/portingassistant/latest/userguide/what-is-porting-assistant.html) |
+| AWS App2Container (A2C) | A2C is a command line tool for modernizing .NET and Java applications by converting them into containerized applications with minimal effort. | + [Details](https://aws.amazon.com/app2container/)<br />+ [Documentation](https://docs.aws.amazon.com/app2container/latest/UserGuide/what-is-a2c.html) |
 
 ## Deployment decisions
 <a name="refactor-linux-deployment"></a>

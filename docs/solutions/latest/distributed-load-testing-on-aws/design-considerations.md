@@ -82,7 +82,9 @@ Hourly limitation: The system does not allow tests to be scheduled with only a o
 ## Concurrent tests
 <a name="concurrent-tests-architecture"></a>
 
-This solution creates an Amazon CloudWatch dashboard for each test that displays the combined output of all tasks running in the Amazon ECS cluster in real time. The CloudWatch dashboard shows average response time, number of concurrent users, number of successful requests, and number of failed requests. The solution aggregates each metric by the second and updates the dashboard every minute.
+Each time a load test runs, the task-runner AWS Lambda function creates an Amazon CloudWatch dashboard named `EcsLoadTesting-<testId>-<region> ` in each Region where the test runs. The CloudWatch dashboard displays the combined output of all tasks running in the Amazon ECS cluster in real time: average response time, number of concurrent users, number of successful requests, and number of failed requests. The solution aggregates each metric by the second and updates the dashboard every minute.
+
+Subsequent runs of the same test scenario update the same dashboard, so your account contains one dashboard for each test scenario in each Region. These dashboards remain in your account after tests complete and incur a monthly charge until they are deleted. The solution deletes a scenario’s dashboards when you delete the test scenario (for example, through the web console); the dashboards are not deleted when you delete the solution’s CloudFormation stacks. For more information, refer to the [Cost](cost.md) section and the [Manually deleting retained resources](manually-deleting-retained-resources.md) section of this guide.
 
 ## User management
 <a name="user-management"></a>

@@ -29,8 +29,8 @@ The following controls are enabled by the carrier gateway for internet flows by 
 
 | Protocol | Between EC2 instance and the internet | Between EC2 instance and a device on the carrier network |
 | --- | --- | --- |
-| TCP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/wavelength/latest/developerguide/wavelength-quotas.html)  | Allowed |
-| UDP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/wavelength/latest/developerguide/wavelength-quotas.html)  | Allowed |
+| TCP | + Africa-based Wavelength Zones (parent region eu-west-3): Allowed<br />+ All other Wavelength Zones: Outbound and the response  | Allowed |
+| UDP | + Africa-based Wavelength Zones (parent region eu-west-3): Allowed<br />+ All other Wavelength Zones: Denied  | Allowed |
 | ICMP | Allowed | Allowed |
 + TCP is allowed for outbound and response in most cases
 + UDP from the internet is denied

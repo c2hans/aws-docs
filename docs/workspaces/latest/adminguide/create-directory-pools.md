@@ -222,8 +222,8 @@ The following table lists the relay state endpoints for the AWS Regions where Wo
 
 | Region | Relay state endpoint |
 | --- | --- |
-| US East (N. Virginia) Region |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/create-directory-pools.html)  |
-| US West (Oregon) Region |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/create-directory-pools.html)  |
+| US East (N. Virginia) Region |  +  workspaces.euc-sso.us-east-1.aws.amazon.com <br />+  (FIPS) workspaces.euc-sso-fips.us-east-1.aws.amazon.com   |
+| US West (Oregon) Region |  +  workspaces.euc-sso.us-west-2.aws.amazon.com <br />+  (FIPS) workspaces.euc-sso-fips.us-west-2.aws.amazon.com   |
 | Asia Pacific (Mumbai) Region | workspaces.euc-sso.ap-south-1.aws.amazon.com |
 | Asia Pacific (Seoul) Region | workspaces.euc-sso.ap-northeast-2.aws.amazon.com |
 | Asia Pacific (Singapore) Region | workspaces.euc-sso.ap-southeast-1.aws.amazon.com |
@@ -234,8 +234,8 @@ The following table lists the relay state endpoints for the AWS Regions where Wo
 | Europe (Ireland) Region | workspaces.euc-sso.eu-west-1.aws.amazon.com |
 | Europe (London) Region | workspaces.euc-sso.eu-west-2.aws.amazon.com |
 | South America (São Paulo) Region | workspaces.euc-sso.sa-east-1.aws.amazon.com |
-| AWS GovCloud (US-West) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/create-directory-pools.html)  For information about working with SAML IdPs in AWS GovCloud (US) Regions, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
-| AWS GovCloud (US-East) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/create-directory-pools.html)  For information about working with SAML IdPs in AWS GovCloud (US) Regions, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
+| AWS GovCloud (US-West) |  +  workspaces.euc-sso.us-gov-west-1.amazonaws-us-gov.com <br />+  (FIPS) workspaces.euc-sso-fips.us-gov-west-1.amazonaws-us-gov.com   For information about working with SAML IdPs in AWS GovCloud (US) Regions, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
+| AWS GovCloud (US-East) |  +  workspaces.euc-sso.us-gov-east-1.amazonaws-us-gov.com <br />+  (FIPS) workspaces.euc-sso-fips.us-gov-east-1.amazonaws-us-gov.com   For information about working with SAML IdPs in AWS GovCloud (US) Regions, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
 
 ## Step 9: Enable integration with SAML 2.0 on your WorkSpace Pool directory
 <a name="saml-directory-enable-saml-integration"></a>

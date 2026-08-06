@@ -65,7 +65,7 @@ The following table shows the support status for all existing Amazon EMR release
 
 | Amazon EMR release version | Initial release date | Standard support end date | End of support start date | End of life start date |
 | --- | --- | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-standard-support.html)  | January 1, 2013 to July 25, 2024 | Bridge support until August 31, 2026 | September 1, 2026 | September 1, 2027 |
+|  +  7.0 – 7.2 <br />+  6.x series (all versions) <br />+  5.x series (all versions) <br />+  4.x series (all versions) <br />+  3.x series (all versions) <br />+  2.x series (all versions)   | January 1, 2013 to July 25, 2024 | Bridge support until August 31, 2026 | September 1, 2026 | September 1, 2027 |
 
 **Note**
 Dates for bridge support have been extended to August 31, 2026, for all eligible releases.

@@ -137,9 +137,7 @@ When you select a parameter group to set the engine configuration values, that p
 
       1. For **Number of shards**, choose the number of shards (partitions/node groups) that you want for this Valkey or Redis OSS (cluster mode enabled) cluster.
 
-         For some versions of Valkey or Redis OSS (cluster mode enabled), you can change the number of shards in your cluster dynamically:
-         + **Redis OSS 3.2.10 and later** – If your cluster is running Redis OSS 3.2.10 or later versions, you can change the number of shards in your cluster dynamically. For more information, see [Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters](scaling-redis-cluster-mode-enabled.md).
-         + **Other Redis OSS versions** – If your cluster is running a version of Redis OSS before version 3.2.10, there's another approach. To change the number of shards in your cluster in this case, create a new cluster with the new number of shards. For more information, see [Restoring from a backup into a new cache](backups-restoring.md).
+         You can change the number of shards in your cluster dynamically. For more information, see [Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters](scaling-redis-cluster-mode-enabled.md).
 
       1. For **Replicas per shard**, choose the number of read replica nodes that you want in each shard.
 
@@ -179,7 +177,7 @@ You have the option to supply a different encryption key by choosing **Customer 
           + **AUTH Default User** – An authentication mechanism for a Valkey or Redis OSS server. For more information, see [AUTH](auth.md).
         + **AUTH** – An authentication mechanism for a Valkey or Redis OSS server. For more information, see [AUTH](auth.md).
 **Note**
-For Redis OSS versions between 3.2.6 onward, excluding version 3.2.10, AUTH is the sole option.
+RBAC is available on Valkey, and on Redis OSS version 6.0 and later. On earlier Redis OSS versions, AUTH is the sole option.
 
      1. For **Security groups**, choose the security groups that you want for this cluster. A *security group* acts as a firewall to control network access to your cluster. You can use the default security group for your VPC or create a new one.
 

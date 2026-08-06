@@ -27,7 +27,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | **Windows security updates** | Applied September 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
 | **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-09-22-windows.html)  |
 | **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-09-22-windows.html)  |
-| **Additional changes with this release** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-09-22-windows.html)  |
+| **Additional changes with this release** |  +   PowerShell 2.0 has been removed from Windows Server 2025 platforms in accordance with Microsoft's deprecation of this legacy version. For more information, see Microsoft's [support article](https://support.microsoft.com/en-us/topic/powershell-2-0-removal-from-windows-fe6d1edc-2ed2-4c33-b297-afe82a64200a).  <br />+   In this release, the host rename was moved prior to platform bootstrapping.    |
 | **.NET Core** | Updated .NET 9 to version 9.0.9.<br />Updated .NET 8 to version 8.0.20. |
 | **AMI** | Updated the base AMI to version 2025.09.10. |
 | **AWS SDK for .NET** | Updated the SDK to version 3.7.1120.0. |

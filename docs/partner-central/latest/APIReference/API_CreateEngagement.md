@@ -48,22 +48,22 @@ Type: String
 Pattern: `.{1,255}`
 Required: Yes
 
- ** [Description](#API_CreateEngagement_RequestSyntax) **   <a name="AWSPartnerCentral-CreateEngagement-request-Description"></a>
-Provides a description of the `Engagement`.
-Type: String
-Pattern: `(?s).{0,255}`
-Required: Yes
-
- ** [Title](#API_CreateEngagement_RequestSyntax) **   <a name="AWSPartnerCentral-CreateEngagement-request-Title"></a>
-Specifies the title of the `Engagement`.
-Type: String
-Pattern: `(?s).{1,40}`
-Required: Yes
-
  ** [Contexts](#API_CreateEngagement_RequestSyntax) **   <a name="AWSPartnerCentral-CreateEngagement-request-Contexts"></a>
 The `Contexts` field is a required array of objects, with a maximum of 5 contexts allowed, specifying detailed information about customer projects associated with the Engagement. Each context object contains a `Type` field indicating the context type, which must be `CustomerProject` in this version, and a `Payload` field containing the `CustomerProject` details. The `CustomerProject` object is composed of two main components: `Customer` and `Project`. The `Customer` object includes information such as `CompanyName`, `WebsiteUrl`, `Industry`, and `CountryCode`, providing essential details about the customer. The `Project` object contains `Title`, `BusinessProblem`, and `TargetCompletionDate`, offering insights into the specific project associated with the customer. This structure allows comprehensive context to be included within the Engagement, facilitating effective collaboration between parties by providing relevant customer and project information.
 Type: Array of [EngagementContextDetails](API_EngagementContextDetails.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 5 items.
+Required: No
+
+ ** [Description](#API_CreateEngagement_RequestSyntax) **   <a name="AWSPartnerCentral-CreateEngagement-request-Description"></a>
+Provides a description of the `Engagement`.
+Type: String
+Pattern: `(?s).{0,255}`
+Required: No
+
+ ** [Title](#API_CreateEngagement_RequestSyntax) **   <a name="AWSPartnerCentral-CreateEngagement-request-Title"></a>
+Specifies the title of the `Engagement`.
+Type: String
+Pattern: `(?s).{0,40}`
 Required: No
 
 ## Response Syntax

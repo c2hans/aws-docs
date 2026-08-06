@@ -97,11 +97,11 @@ When you set up your Ethereum network using the AWS Blockchain Template for Ethe
 | Prerequisite | For ECS Platform | For Docker-Local |
 | --- | --- | --- |
 | A security group for EC2 instances, with the following requirements: | ✔ | ✔ |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/blockchain-templates-ethereum.html)  | ✔ | ✔ |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/blockchain-templates-ethereum.html)  | ✔ | ✔ |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/blockchain-templates-ethereum.html) | ✔ |  |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/blockchain-templates-ethereum.html) |  | ✔ |
-| A security group for the Application Load Balancer, with the following requirements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/blockchain-templates-ethereum.html) | ✔ |  |
+|  + Outbound rules that allow traffic to 0.0.0.0/0 (default).  | ✔ | ✔ |
+|  + An inbound rule that allows all traffic from itself (the same security group).  | ✔ | ✔ |
+| + An inbound rule that allows all traffic from the security group for the Application Load Balancer. | ✔ |  |
+| + Inbound rules that allow HTTP (port 80), EthStats (served on port 8080), JSON RPC over HTTP (port 8545), and SSH (port 22) from trusted external sources, such as your client computer's IP CIDR. |  | ✔ |
+| A security group for the Application Load Balancer, with the following requirements:+ An inbound rule that allows all traffic from itself (the same security group).<br />+ An inbound rule that allows all traffic from the security group for EC2 instances.<br />+ Outbound rules that allow all traffic only to the security group for EC2 instances. For more information, see [Create Security Groups](blockchain-template-getting-started-prerequisites.md#blockchain-templates-create-security-group).<br />+ If associating this same security group with a bastion host, an inbound rule that allows SSH (port 22) traffic from trusted sources.<br />+ If the bastion host or other internet-facing component is in a different security group, an inbound rule that allows traffic from that component. | ✔ |  |
 
 ### VPC Prerequisites
 <a name="blockchain-ethereum-prereq-vpc"></a>

@@ -37,7 +37,7 @@ You can specify the following PIT options:
 | keep\_alive | The amount of time to keep the PIT. Every time you access a PIT with a search request, the PIT lifetime is extended by the amount of time equal to the `keep_alive` parameter. Specify the value with a time unit suffix. Supported units: `ms` (milliseconds), `s` (seconds), `m` (minutes), `h` (hours), `d` (days). Example: `5m` for 5 minutes. This query parameter is required when you create a PIT, but optional in a search request. |  | Yes |
 | preference | A string that specifies the node or the shard used to perform the search. | Random | No |
 | routing | A string that specifies to route search requests to a specific shard. | The document’s \_id | No |
-| expand\_wildcards | A string that specifies type of index that can match the wildcard pattern. Supports comma-separated values. Valid values are the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/pit.html) | open | No |
+| expand\_wildcards | A string that specifies type of index that can match the wildcard pattern. Supports comma-separated values. Valid values are the following:+  `all`: Match any index or data stream, including hidden ones. <br />+  `open`: Match open, non-hidden indexes or non-hidden data streams. <br />+  `closed`: Match closed, non-hidden indexes or non-hidden data streams. <br />+  `hidden`: Match hidden indexes or data streams. Must be combined with open, closed or both open and closed. <br />+  `none`: No wildcard patterns are accepted.  | open | No |
 | allow\_partial\_pit\_creation | A boolean that specifies whether to create a PIT with partial failures. | true | No |
 
 **Sample response**

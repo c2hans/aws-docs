@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/front-end-on-aws-
 | **Time to read** | 14 minutes |
 | **Purpose** | Help determine which AWS services to use when building your web or mobile application. |
 | **Last updated** | June 25, 2024 |
-| **Services covered** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/front-end-on-aws-how-to-choose/top.html)  |
+| **Services covered** |  +  [AWS Amplify](https://docs.amplify.aws/how-amplify-works/) <br />+  [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) <br />+  [AWS AppSync](https://docs.aws.amazon.com/appsync/latest/devguide/what-is-appsync.html) <br />+  [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) <br />+  [AWS Device Farm](https://docs.aws.amazon.com/devicefarm/latest/developerguide/welcome.html) <br />+  [Amazon Location Service](https://docs.aws.amazon.com/location/latest/developerguide/welcome.html) <br />+  [Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/userguide/welcome.html)   |
 
 ## Introduction
 <a name="intro"></a>

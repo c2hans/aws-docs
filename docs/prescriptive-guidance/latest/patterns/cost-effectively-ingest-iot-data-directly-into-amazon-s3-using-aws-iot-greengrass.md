@@ -89,7 +89,7 @@ We also recommend that you use the right partitioning in Amazon S3 so that the q
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an S3 bucket. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) | App developer |
+| Create an S3 bucket. | 1. [Create an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) or use an existing bucket.<br />2. Create a meaningful [prefix](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) for the S3 bucket where you want to ingest the IoT data (for example, `s3:\\<bucket>\<prefix>`).<br />3. Record your prefix for later use. | App developer |
 | Add IAM permissions to the S3 bucket. | To grant users write access to the S3 bucket and prefix that you created earlier, add the following IAM policy to your AWS IoT Greengrass role:<pre>{<br />    "Version": "2012-10-17",		 	 	 <br />    "Statement": [<br />        {<br />            "Sid": "S3DataUpload",<br />            "Effect": "Allow",<br />            "Action": [<br />                "s3:List*",<br />                "s3:Put*"<br />            ],<br />            "Resource": [<br />                "arn:aws:s3:::<ingestionBucket>",<br />                "arn:aws:s3:::<ingestionBucket>/<prefix>/*"<br />            ]<br />        }<br />    ]<br />}</pre><br />For more information, see [Creating an IAM policy to access Amazon S3 resources](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.Authorizing.IAM.S3CreatePolicy.html) in the Aurora documentation.<br />Next, update the resource policy (if needed) for the S3 bucket to allow write access with the correct AWS [principals](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-bucket-user-policy-specifying-principal-intro.html). | App developer |
 
 ### Build and deploy the AWS IoT Greengrass component
@@ -98,8 +98,8 @@ We also recommend that you use the right partitioning in Amazon S3 so that the q
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Update the recipe of the component. | [Update the component configuration](https://docs.aws.amazon.com/greengrass/v2/developerguide/update-component-configurations.html) when you [create a deployment](https://docs.aws.amazon.com/greengrass/v2/developerguide/create-deployments.html) based on the following example:<pre>{<br />  "region": "<region>",<br />  "parquet_period": <period>,<br />  "s3_bucket": "<s3Bucket>",<br />  "s3_key_prefix": "<s3prefix>"<br />}</pre><br />Replace `<region>` with your AWS Region, `<period>` with your periodic interval, `<s3Bucket>` with your S3 bucket, and `<s3prefix>` with your prefix. | App developer |
-| Create the component. | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) | App developer |
-| Update the MQTT client. | The sample code doesn't use authentication because the component connects locally to the broker. If your scenario differs, update the MQTT client section as needed. Additionally, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) | App developer |
+| Create the component. | Do one of the following:+ [Create the component](https://docs.aws.amazon.com/greengrass/v2/developerguide/create-components.html).<br />+ Add the component to the CI/CD pipeline (if one exists). Be sure to copy the artifact from the artifact repository to the AWS IoT Greengrass artifact bucket. Then, create or update your AWS IoT Greengrass component.<br />+ Add the MQTT broker as a component or add it manually later. : This decision affects the authentication scheme that you can use with the broker. Manually adding a broker decouples the broker from AWS IoT Greengrass and enables any supported authentication scheme of the broker. The AWS provided broker components have predefined authentication schemes. For more information, see [MQTT 3.1.1 broker (Moquette)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html) and [MQTT 5 broker (EMQX)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html). | App developer |
+| Update the MQTT client. | The sample code doesn't use authentication because the component connects locally to the broker. If your scenario differs, update the MQTT client section as needed. Additionally, do the following:1. Update the MQTT topics in the subscription.<br />2. Update the MQTT message parser as needed as messages from each source may differ. | App developer |
 
 ### Add the component to the AWS IoT Greengrass Version 2 core device
 <a name="add-the-component-to-the-aws-iot-greengrass-version-2-core-device"></a>
@@ -113,7 +113,7 @@ We also recommend that you use the right partitioning in Amazon S3 so that the q
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Check the logs for the AWS IoT Greengrass volume. | Check for the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) | App developer |
+| Check the logs for the AWS IoT Greengrass volume. | Check for the following:+ The MQTT client is successfully connected to the local MQTT broker.<br />+ The MQTT client is subscribed to the correct topics.<br />+ Sensor update messages are coming to the broker on the MQTT topics.<br />+ Parquet compression happens at every periodic interval. | App developer |
 | Check the S3 bucket. | Verify if the data is being uploaded to the S3 bucket. You can see the files being uploaded at every period.<br />You can also verify if the data is uploaded to the S3 bucket by querying the data in the next section. | App developer |
 
 ### Set up querying from Athena
@@ -121,18 +121,18 @@ We also recommend that you use the right partitioning in Amazon S3 so that the q
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a database and table. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) | App developer |
-| Grant Athena access to the data. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) | App developer |
+| Create a database and table. | 1. [Create an AWS Glue database](https://docs.aws.amazon.com/glue/latest/dg/console-databases.html) (if needed).<br />2. Create a table in AWS Glue [manually](https://docs.aws.amazon.com/glue/latest/dg/tables-described.html) or by running a [crawler](https://docs.aws.amazon.com/glue/latest/dg/add-crawler.html) in AWS Glue. | App developer |
+| Grant Athena access to the data. | 1. Update permissions to allow Athena to access the S3 bucket. For more information, see [Fine-grained access to databases and tables in the AWS Glue Data Catalog](https://docs.aws.amazon.com/athena/latest/ug/fine-grained-access-to-glue-resources.html) in the Athena documentation.<br />2. Query the table in your database. | App developer |
 
 ## Troubleshooting
 <a name="cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass-troubleshooting"></a>
 
 | Issue | Solution |
 | --- | --- |
-| MQTT client fails to connect | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) |
+| MQTT client fails to connect | + Validate the permissions on the MQTT broker. If you have an MQTT broker from AWS, see [MQTT 3.1.1 broker (Moquette)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html) and [MQTT 5 broker (EMQX)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html).<br />+ Validate the credentials on the MQTT client. If you have an MQTT broker from AWS, see [MQTT 3.1.1 broker (Moquette)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html) and [MQTT 5 broker (EMQX)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html). |
 | MQTT client fails to subscribe | Validate the permissions on the MQTT broker. If you have an MQTT broker from AWS, see [MQTT 3.1.1 broker (Moquette)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html) and [MQTT 5 broker (EMQX)](https://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html). |
-| Parquet files don't get created | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) |
-| Objects are not uploaded to the S3 bucket | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass.html) |
+| Parquet files don't get created | + Verify that the MQTT topics are correct.<br />+ Verify that the MQTT messages from the sensors are in the correct format. |
+| Objects are not uploaded to the S3 bucket | + Verify that you have internet connectivity and endpoint connectivity.<br />+ Verify that the resource policy for your S3 bucket is correct.<br />+ Verify the permissions for the AWS IoT Greengrass Version 2 core device role. |
 
 ## Related resources
 <a name="cost-effectively-ingest-iot-data-directly-into-amazon-s3-using-aws-iot-greengrass-resources"></a>

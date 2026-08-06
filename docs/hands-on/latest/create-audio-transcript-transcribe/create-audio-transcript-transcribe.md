@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-audio-transcript-
 | **AWS experience** | Beginner  |
 | **Time to complete** | 10 minutes  |
 | **Cost to complete** | Free Tier eligible  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/create-audio-transcript-transcribe/create-audio-transcript-transcribe.html)  |
+| **Requires** |  +  AWS account  Accounts created within the last 24 hours might not yet have access to the services required for this tutorial. <br />+  Recommended browser: The latest version of Chome or Firefox    |
 | **Last updated** | July 5, 2022  |
 
 ## Overview

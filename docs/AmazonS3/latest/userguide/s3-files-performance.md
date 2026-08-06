@@ -10,8 +10,8 @@ S3 Files automatically scales throughput and IOPS to match your workload without
 ## Performance summary
 <a name="s3-files-performance-summary"></a>
 
-|  |  |
-| --- |--- |
+| Specification | Value |
+| --- | --- |
 | Aggregate read throughput per file system | Up to terabytes per second |
 | Aggregate write throughput per file system | 1–5 GiB/s |
 | Maximum read IOPS per S3 bucket with S3 Files | No limit (attach multiple file systems to the same bucket) |

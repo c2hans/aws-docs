@@ -231,135 +231,136 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 
 <table>
 <thead>
-  <tr><th>Instance type</th><th>Baseline / Burst bandwidth (Gbps)</th><th>EFA</th><th>ENA</th><th>ENA Express</th><th>Network cards</th><th>Max. network interfaces</th><th>IP addresses per interface</th><th>IPv6</th></tr>
+  <tr><th>Instance type</th><th>Baseline / Burst bandwidth (Gbps)</th><th>EFA</th><th>ENA</th><th>ENA Express</th><th>ENA queues per interface (Default/Maximum)</th><th>Network cards</th><th>Max. network interfaces</th><th>IP addresses per interface</th><th>IPv6</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="9">DL1</td></tr>
-  <tr><td>dl1.24xlarge</td><td>4x 100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">DL2q</td></tr>
-  <tr><td>dl2q.24xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">F2</td></tr>
-  <tr><td>f2.6xlarge</td><td>12.5 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>f2.12xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>f2.48xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G4ad</td></tr>
-  <tr><td>g4ad.xlarge 1</td><td>2.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.2xlarge 1</td><td>4.167 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.4xlarge 1</td><td>8.333 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.8xlarge</td><td>15 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g4ad.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G4dn</td></tr>
-  <tr><td>g4dn.xlarge 1</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.2xlarge 1</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.4xlarge 1</td><td>20.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.8xlarge</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.12xlarge</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.16xlarge</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g4dn.metal</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G5</td></tr>
-  <tr><td>g5.xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5.2xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5.4xlarge 1</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5.8xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5.12xlarge</td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g5.16xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5.24xlarge</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g5.48xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>7</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G5g</td></tr>
-  <tr><td>g5g.xlarge 1</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.2xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.4xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.8xlarge</td><td>12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g5g.metal</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G6</td></tr>
-  <tr><td>g6.xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6.2xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6.4xlarge 1</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6.8xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6.12xlarge</td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6.16xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6.24xlarge</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6.48xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G6e</td></tr>
-  <tr><td>g6e.xlarge 1</td><td>2.5 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.2xlarge 1</td><td>5.0 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.4xlarge</td><td>20 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.8xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.12xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>1</td><td>10</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.16xlarge</td><td>35 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.24xlarge</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>2</td><td>20</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>g6e.48xlarge</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>4</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G6f</td></tr>
-  <tr><td>g6f.large 1</td><td>1.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>2</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>g6f.xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6f.2xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>g6f.4xlarge 1</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Gr6</td></tr>
-  <tr><td>gr6.4xlarge 1</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>gr6.8xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Gr6f</td></tr>
-  <tr><td>gr6f.4xlarge 1</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G7</td></tr>
-  <tr><td>g7.2xlarge 1</td><td>40.0 / 60.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7.4xlarge 1</td><td>80.0 / 100.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7.8xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7.12xlarge</td><td>175 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>12</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7.24xlarge</td><td>350 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7.48xlarge</td><td>700 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>2</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G7e</td></tr>
-  <tr><td>g7e.2xlarge</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.4xlarge</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.8xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.12xlarge</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.24xlarge</td><td>800 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>2</td><td>20</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td>g7e.48xlarge</td><td>1600 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>4</td><td>40</td><td>64</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Inf1</td></tr>
-  <tr><td>inf1.xlarge 1</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>inf1.2xlarge 1</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>inf1.6xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>inf1.24xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>11</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Inf2</td></tr>
-  <tr><td>inf2.xlarge 1</td><td>2.083 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>inf2.8xlarge 1</td><td>16.667 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>inf2.24xlarge</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>inf2.48xlarge</td><td>100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P4d</td></tr>
-  <tr><td>p4d.24xlarge</td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P4de</td></tr>
-  <tr><td>p4de.24xlarge</td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P5</td></tr>
-  <tr><td>p5.4xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>p5.48xlarge</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P5e</td></tr>
-  <tr><td>p5e.48xlarge</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P5en</td></tr>
-  <tr><td>p5en.48xlarge</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P6-B200</td></tr>
-  <tr><td>p6-b200.48xlarge</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>8</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P6-B300</td></tr>
-  <tr><td>p6-b300.48xlarge</td><td>6400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>17</td><td>68</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P6e-GB200</td></tr>
-  <tr><td>p6e-gb200.36xlarge</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>17</td><td>39</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Trn1</td></tr>
-  <tr><td>trn1.2xlarge 1</td><td>3.125 / 12.5</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>trn1.32xlarge</td><td>8x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Trn1n</td></tr>
-  <tr><td>trn1n.32xlarge</td><td>16x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>80</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Trn2</td></tr>
-  <tr><td>trn2.3xlarge</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>2</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>trn2.48xlarge</td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Trn2u</td></tr>
-  <tr><td>trn2u.48xlarge</td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">VT1</td></tr>
-  <tr><td>vt1.3xlarge</td><td>3.12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>vt1.6xlarge</td><td>6.25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>vt1.24xlarge</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">DL1</td></tr>
+  <tr><td>dl1.24xlarge 2</td><td>4x 100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">DL2q</td></tr>
+  <tr><td>dl2q.24xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">F2</td></tr>
+  <tr><td>f2.6xlarge 2</td><td>12.5 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>f2.12xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>f2.48xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G4ad</td></tr>
+  <tr><td>g4ad.xlarge 1 2</td><td>2.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.2xlarge 1 2</td><td>4.167 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.4xlarge 1 2</td><td>8.333 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.8xlarge 2</td><td>15 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g4ad.16xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G4dn</td></tr>
+  <tr><td>g4dn.xlarge 1 2</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.2xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.4xlarge 1 2</td><td>20.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.8xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.12xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.16xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g4dn.metal 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G5</td></tr>
+  <tr><td>g5.xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5.2xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5.12xlarge 2</td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5.16xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5.24xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5.48xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>7</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G5g</td></tr>
+  <tr><td>g5g.xlarge 1 2</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.2xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.4xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.8xlarge 2</td><td>12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.16xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g5g.metal 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G6</td></tr>
+  <tr><td>g6.xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6.2xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6.12xlarge 2</td><td>40 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6.16xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6.24xlarge 2</td><td>50 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6.48xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G6e</td></tr>
+  <tr><td>g6e.xlarge 1 2</td><td>2.5 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.2xlarge 1 2</td><td>5.0 / 20.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.4xlarge 2</td><td>20 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.12xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>1</td><td>10</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.16xlarge 2</td><td>35 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.24xlarge 2</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>2</td><td>20</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>g6e.48xlarge 2</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>4</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G6f</td></tr>
+  <tr><td>g6f.large 1 2</td><td>1.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>1</td><td>2</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.xlarge 1 2</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.2xlarge 1 2</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>g6f.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Gr6</td></tr>
+  <tr><td>gr6.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>gr6.8xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Gr6f</td></tr>
+  <tr><td>gr6f.4xlarge 1 2</td><td>10.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G7</td></tr>
+  <tr><td>g7.2xlarge 1</td><td>40.0 / 60.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 8</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.4xlarge 1</td><td>80.0 / 100.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8 / 16</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.8xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8 / 32</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.12xlarge</td><td>175 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16 / 64</td><td>1</td><td>12</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.24xlarge</td><td>350 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16 / 128</td><td>1</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7.48xlarge</td><td>700 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32 / 128</td><td>2</td><td>24</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G7e</td></tr>
+  <tr><td>g7e.2xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.4xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.8xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.12xlarge 2</td><td>400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>1</td><td>10</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.24xlarge 2</td><td>800 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>2</td><td>20</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td>g7e.48xlarge 2</td><td>1600 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>4</td><td>40</td><td>64</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Inf1</td></tr>
+  <tr><td>inf1.xlarge 1 2</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.2xlarge 1 2</td><td>5.0 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.6xlarge 2</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>inf1.24xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>11</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Inf2</td></tr>
+  <tr><td>inf2.xlarge 1 2</td><td>2.083 / 15.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.8xlarge 1 2</td><td>16.667 / 25.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.24xlarge 2</td><td>50 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>inf2.48xlarge 2</td><td>100 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P4d</td></tr>
+  <tr><td>p4d.24xlarge 2</td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P4de</td></tr>
+  <tr><td>p4de.24xlarge 2</td><td>4x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>4</td><td>60</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P5</td></tr>
+  <tr><td>p5.4xlarge 2</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>16</td><td>1</td><td>4</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>p5.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P5e</td></tr>
+  <tr><td>p5e.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>32</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P5en</td></tr>
+  <tr><td>p5en.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>16</td><td>64</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P6-B200</td></tr>
+  <tr><td>p6-b200.48xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>8</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P6-B300</td></tr>
+  <tr><td>p6-b300.48xlarge 2</td><td>6400 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>17</td><td>68</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P6e-GB200</td></tr>
+  <tr><td>p6e-gb200.36xlarge 2</td><td>3200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✓ Yes</td><td>32</td><td>17</td><td>39</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Trn1</td></tr>
+  <tr><td>trn1.2xlarge 1 2</td><td>3.125 / 12.5</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>trn1.32xlarge 2</td><td>8x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>8</td><td>40</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Trn1n</td></tr>
+  <tr><td>trn1n.32xlarge 2</td><td>16x 100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>80</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Trn2</td></tr>
+  <tr><td>trn2.3xlarge 2</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>2</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>trn2.48xlarge 2</td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Trn2u</td></tr>
+  <tr><td>trn2u.48xlarge 2</td><td>16x 200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>16</td><td>32</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">VT1</td></tr>
+  <tr><td>vt1.3xlarge 2</td><td>3.12 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>vt1.6xlarge 2</td><td>6.25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>vt1.24xlarge 2</td><td>25 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
 </tbody>
 </table>
 
 **Note**
 1 These instances have a baseline bandwidth and can use a network I/O credit mechanism to burst beyond their baseline bandwidth on a best effort basis. Other instances types can sustain their maximum performance indefinitely. For more information, see [ instance network bandwidth](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html).
+2 These instance types do not support configurable ENA queue allocation.
 
 ## Amazon EBS specifications
 <a name="ac_storage-ebs"></a>

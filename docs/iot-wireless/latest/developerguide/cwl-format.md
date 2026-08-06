@@ -40,10 +40,10 @@ The following table shows the different types of events for which you'll see log
 
 | Resource | Resource type | Event type |
 | --- | --- | --- |
-| Wireless gateway | LoRaWAN |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-format.html)  |
-| Wireless device | LoRaWAN |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-format.html)  |
-| Wireless device | Sidewalk |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-format.html)  |
-| FUOTA task | LoRaWAN |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/cwl-format.html)  |
+| Wireless gateway | LoRaWAN |  +  CUPS\_Request <br />+  Certificate   |
+| Wireless device | LoRaWAN |  +  Join <br />+  Rejoin <br />+  Uplink\_Data <br />+  Downlink\_Data   |
+| Wireless device | Sidewalk |  +  Registration <br />+  Uplink\_Data <br />+  Downlink\_Data   |
+| FUOTA task | LoRaWAN |  +  Fuota   |
 
 The following topic contains more information about these event types and the log entries for wireless gateways and wireless devices.
 

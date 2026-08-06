@@ -11,12 +11,12 @@ The Device Shadow service publishes a message on the error topic (over MQTT) whe
 
 | HTTP error code | Error messages |
 | --- | --- |
-| 400 (Bad Request) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 401 (Unauthorized) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 403 (Forbidden) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 404 (Not Found) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 409 (Conflict) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 413 (Payload Too Large) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 415 (Unsupported Media Type) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 429 (Too Many Requests) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
-| 500 (Internal Server Error) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/device-shadow-error-messages.html)  |
+| 400 (Bad Request) |  +  Invalid JSON <br />+  Missing required node: state <br />+  State node must be an object <br />+  Desired node must be an object <br />+  Reported node must be an object <br />+  Invalid version <br />+  Invalid clientToken  A client token that is longer than 64 bytes will cause this response.  <br />+  JSON contains too many levels of nesting; maximum is 6 <br />+  State contains an invalid node   |
+| 401 (Unauthorized) |  +  Unauthorized   |
+| 403 (Forbidden) |  +  Forbidden   |
+| 404 (Not Found) |  +  Thing not found <br />+  No shadow exists with name: {{shadowName}}   |
+| 409 (Conflict) |  +  Version conflict   |
+| 413 (Payload Too Large) |  +  The payload exceeds the maximum size allowed   |
+| 415 (Unsupported Media Type) |  +  Unsupported documented encoding; supported encoding is UTF-8   |
+| 429 (Too Many Requests) |  +  The Device Shadow service will generate this error message when there are more than 10 in-flight requests on a single connection. An in-flight request is an in-progress request that has been started but not yet completed.   |
+| 500 (Internal Server Error) |  +  Internal service failure   |

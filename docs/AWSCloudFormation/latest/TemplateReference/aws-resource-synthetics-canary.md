@@ -34,8 +34,10 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[DryRunAndUpdate](#cfn-synthetics-canary-dryrunandupdate)" : {{Boolean}},
       "[ExecutionRoleArn](#cfn-synthetics-canary-executionrolearn)" : {{String}},
       "[FailureRetentionPeriod](#cfn-synthetics-canary-failureretentionperiod)" : {{Integer}},
+      "[KmsKeyArn](#cfn-synthetics-canary-kmskeyarn)" : {{String}},
       "[Name](#cfn-synthetics-canary-name)" : {{String}},
       "[ProvisionedResourceCleanup](#cfn-synthetics-canary-provisionedresourcecleanup)" : {{String}},
+      "[Replicas](#cfn-synthetics-canary-replicas)" : {{[ Replica, ... ]}},
       "[ResourcesToReplicateTags](#cfn-synthetics-canary-resourcestoreplicatetags)" : {{[ String, ... ]}},
       "[RunConfig](#cfn-synthetics-canary-runconfig)" : {{RunConfig}},
       "[RuntimeVersion](#cfn-synthetics-canary-runtimeversion)" : {{String}},
@@ -65,8 +67,11 @@ Properties:
   [DryRunAndUpdate](#cfn-synthetics-canary-dryrunandupdate): {{Boolean}}
   [ExecutionRoleArn](#cfn-synthetics-canary-executionrolearn): {{String}}
   [FailureRetentionPeriod](#cfn-synthetics-canary-failureretentionperiod): {{Integer}}
+  [KmsKeyArn](#cfn-synthetics-canary-kmskeyarn): {{String}}
   [Name](#cfn-synthetics-canary-name): {{String}}
   [ProvisionedResourceCleanup](#cfn-synthetics-canary-provisionedresourcecleanup): {{String}}
+  [Replicas](#cfn-synthetics-canary-replicas): {{
+    - Replica}}
   [ResourcesToReplicateTags](#cfn-synthetics-canary-resourcestoreplicatetags): {{
     - String}}
   [RunConfig](#cfn-synthetics-canary-runconfig): {{
@@ -148,6 +153,13 @@ This setting affects the range of information returned by [GetCanaryRuns](https:
 *Maximum*: `1024`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`KmsKeyArn`  <a name="cfn-synthetics-canary-kmskeyarn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^arn:[a-z0-9-]+:kms:[a-z0-9-]+:[0-9]{12}:(key/([a-f0-9-]{36}|mrk-[a-f0-9]{32})|alias/[a-zA-Z0-9:/_.-]+)$`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `Name`  <a name="cfn-synthetics-canary-name"></a>
 The name for this canary. Be sure to give it a descriptive name that distinguishes it from other canaries in your account.
 Do not include secrets or proprietary information in your canary names. The canary name makes up part of the canary ARN, and the ARN is included in outbound calls over the internet. For more information, see [Security Considerations for Synthetics Canaries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/servicelens_canaries_security.html).
@@ -162,6 +174,14 @@ If the value of this parameter is `OFF`, then the value of the `DeleteLambda` pa
 *Required*: No
 *Type*: String
 *Allowed values*: `AUTOMATIC | OFF`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Replicas`  <a name="cfn-synthetics-canary-replicas"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [Replica](aws-properties-synthetics-canary-replica.md)
+*Minimum*: `1`
+*Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourcesToReplicateTags`  <a name="cfn-synthetics-canary-resourcestoreplicatetags"></a>

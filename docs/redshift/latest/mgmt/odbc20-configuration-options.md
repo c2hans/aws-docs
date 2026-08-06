@@ -23,6 +23,7 @@ Following are descriptions for the options that you can specify for the Amazon R
 + [AuthProfile](#odbc20-authprofile-option)
 + [AuthType](#odbc20-authtype-option)
 + [AutoCreate](#odbc20-autocreate-option)
++ [BoolsAsChar](#odbc20-boolsaschar-option)
 + [CaFile](#odbc20-cafile-option)
 + [client\_id](#odbc20-client-id-option)
 + [client\_ secret](#odbc20-client-secret-option)
@@ -33,6 +34,7 @@ Following are descriptions for the options that you can specify for the Amazon R
 + [dbgroups\_filter](#odbc20-dbgroups-filter-option)
 + [Driver](#odbc20-driver-option)
 + [DSN](#odbc20-dsn-option)
++ [EnableTableTypes](#odbc20-enabletabletypes-option)
 + [EndpointUrl](#odbc20-endpointurl-option)
 + [ForceLowercase](#odbc20-forcelowercase-option)
 + [group\_federation](#odbc20-group-federation-option)
@@ -167,6 +169,19 @@ A boolean specifying whether the driver creates a new user when the specified us
 
 This parameter is optional.
 
+## BoolsAsChar
+<a name="odbc20-boolsaschar-option"></a>
++ **Default Value** – 0
++ **Data Type** – Boolean
+
+Specifies whether the driver reports BOOLEAN columns as character type instead of bit type.
++  1 \| TRUE: The driver reports BOOLEAN columns as SQL\_VARCHAR with a column size of 1. The driver returns Boolean values as the character strings "0" and "1".
++  0 \| FALSE: The driver reports BOOLEAN columns as SQL\_BIT. This is the default behavior.
+
+Use this option if your application relies on BOOLEAN columns being returned as character data.
+
+This parameter is optional. This option is available in driver versions 2.2.1 and later.
+
 ## CaFile
 <a name="odbc20-cafile-option"></a>
 + **Default Value** – None
@@ -265,6 +280,17 @@ This parameter is required if you do not set **DSN**.
 The name of the driver data source name. The application specifies the DSN in the SQLDriverConnect API.
 
 This parameter is required if you do not set **Driver.**.
+
+## EnableTableTypes
+<a name="odbc20-enabletabletypes-option"></a>
++ **Default Value** – 1
++ **Data Type** – Boolean
+
+Specifies whether the driver recognizes detailed table type information from the data source when an application calls the SQLTables catalog function. By default, the driver recognizes detailed table types.
++ 1 \| TRUE: The driver recognizes the following table types: TABLE, VIEW, SYSTEM TABLE, SYSTEM VIEW, EXTERNAL TABLE, and LOCAL TEMPORARY.
++ 0 \| FALSE: The driver normalizes the detailed table type information into the generic TABLE and VIEW table types.
+
+This parameter is optional. It is available in driver versions 2.2.1 and later.
 
 ## EndpointUrl
 <a name="odbc20-endpointurl-option"></a>

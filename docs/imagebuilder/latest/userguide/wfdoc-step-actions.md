@@ -750,7 +750,7 @@ You can override the default with `timeoutSeconds`, up to the maximum shown. A v
 | enaSupport | Whether enhanced networking with ENA is enabled. | Boolean | No |  |  |
 | imageLocation | The location of the AMI manifest. | String | No |  | Required for S3-backed AMIs |
 | imdsSupport | The IMDSv2 support level. | String | No |  | Valid values: v2.0 |
-| includeSnapshotTags | Whether to include tags from the first snapshot defined in the block device mapping. | Boolean | No | FALSE | When set to true, tags are included as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/wfdoc-step-actions.html) |
+| includeSnapshotTags | Whether to include tags from the first snapshot defined in the block device mapping. | Boolean | No | FALSE | When set to true, tags are included as follows:+  Tags from the `SnapshotId` of the first EBS volume in the `blockDeviceMapping` list that contains a `SnapshotId` is merged with the output AMI tags. <br />+  Output AMI tags take precedence over snapshot tags with the same key. <br />+  AWS reserved tags (those with keys starting with `aws:`) are automatically excluded. <br />+  If multiple EBS volumes with `SnapshotId` are defined, only tags from the first EBS volume in the list that contains a `SnapshotId` is included.  |
 | kernelId | The ID of the kernel to use. | String | No |  |  |
 | ramdiskId | The ID of the RAM disk to use. | String | No |  |  |
 | rootDeviceName | The device name of the root device. | String | No |  | Example: /dev/sda1 |

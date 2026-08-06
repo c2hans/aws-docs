@@ -9,6 +9,7 @@ The following table provides an overview of the important changes to Amazon Linu
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260803.html) |  Amazon Linux 2 2.0.20260803.1 includes updated packages for this release. | August 3, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260727.html) |  Amazon Linux 2 2.0.20260727.0 includes updated packages for this release. | July 27, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260720.html) |  Amazon Linux 2 2.0.20260720.0 includes updated packages for this release. | July 17, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260710.html) |  Amazon Linux 2 2.0.20260710.0 includes updated packages for this release. | July 10, 2026 |

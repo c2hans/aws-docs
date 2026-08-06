@@ -9,8 +9,8 @@ The Amazon DCV Session Manager Agent and Broker have the following requirements.
 
 |  | Broker | Agent |
 | --- | --- | --- |
-| **Operating system** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/requirements.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/requirements.html)  |
-| **Architecture** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/requirements.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/sm-admin/requirements.html)  |
+| **Operating system** |  + Amazon Linux 2<br />+ Amazon Linux 2023<br />+ CentOS Stream 9<br />+ RHEL 8.x<br />+ RHEL 9.x<br />+ Rocky Linux 8.5 or later<br />+ Rocky Linux 9.x<br />+ Ubuntu 22.04<br />+ Ubuntu 24.04  |  +  Windows  Windows 11 Windows Server 2025 Windows Server 2022 Windows Server 2019 Windows Server 2016  <br />+  Linux server  Amazon Linux 2 Amazon Linux 2023 CentOS Stream 9 RHEL 8.x RHEL 9.x Rocky Linux 8.5 or later Rocky Linux 9.x Ubuntu 22.04 Ubuntu 24.04 SUSE Linux Enterprise 15 with SP6 or later  <br />+  macOS  macOS 13 (Ventura) macOS 14 (Sonoma) macOS 15 (Sequoia)    |
+| **Architecture** |  + 64-bit x86<br />+ 64-bit ARM  |  + 64-bit x86<br />+ 64-bit ARM (Amazon Linux 2, Amazon Linux 2023, CentOS 9.x, RHEL 8.x/9.x, Rocky 8.x/9.x, Ubuntu 22.04/24.04, and macOS 13/14/15)  |
 | **Memory** | 8 GB | 4 GB |
 | **Amazon DCV version** | Amazon DCV 2020.2 and later | Amazon DCV 2020.2 and later |
 | **Additional requirements** | Java 11 |  -  |

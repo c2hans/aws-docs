@@ -21,7 +21,7 @@ The following table provides a top level comparison of the different component s
 | --- | --- | --- |
 | **State's main purpose** | To extend the infrastructure of a service instance. | To maintain the component's infrastructure between service instance attachments. |
 | **Associated with** | A service instance and an environment | An environment |
-| **Key specific properties** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/proton/latest/userguide/ag-components-states.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/proton/latest/userguide/ag-components-states.html)  |
+| **Key specific properties** |  +  Service name <br />+  Service instance name <br />+  Spec   |  +  Environment name   |
 | **Can be deleted** |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-no.png) No |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-yes.png) Yes |
 | **Can be updated to another service instance** |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-no.png) No |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-yes.png) Yes |
 | **Can read inputs** |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-no.png) No |

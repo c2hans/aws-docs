@@ -313,8 +313,8 @@ You need to replace the X-Ray setup with an OpenTelemetry setup.
 
 | Feature | X-Ray SDK | OpenTelemetry |
 | --- | --- | --- |
-| Default configurations |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html)  |
-| Manual configurations |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/xray/latest/devguide/xray-sdk-migration.html)  |
+| Default configurations |  + X-Ray Centralized Sampling<br />+ X-Ray Trace Context propagation<br />+ Trace Export to X-Ray Daemon  |  + Exporting traces to OpenTelemetry Collector or CloudWatch Agent (HTTP/gRPC)<br />+ W3C Trace Context propagation  |
+| Manual configurations |  + Local sampling rules<br />+ Resource detection plug-ins  |  + X-Ray Sampling (may not be available for all languages)<br />+ Resource detection<br />+ X-Ray Trace Context propagation  |
 
 ### Library instrumentation changes
 <a name="library-instrumentation-migration"></a>

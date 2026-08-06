@@ -20,4 +20,4 @@ The following table lists AWS-provided components that include new and updated f
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.0.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.0.5"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2021-03-09.html) |
+| Greengrass nucleus | Version 2.0.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.0.5"></a>**Bug fixes and improvements**<br />   Correctly routes traffic through a configured network proxy when downloading AWS-provided components.   Use the correct Greengrass data plane endpoint in AWS China Regions.    |

@@ -606,7 +606,7 @@ def handle_request(payload):
         system_prompt="You are a coding assistant. Project files are in /mnt/workspace."
     )
 
-    response = agent(payload.get("prompt"))
+    response = agent(str(payload.get("prompt", "")))
     return {"response": response.message["content"][0]["text"]}
 
 if __name__ == "__main__":

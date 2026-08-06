@@ -103,20 +103,13 @@ You can turn SSRS on again by adding back the `SSRS` option, or PBIRS by adding 
 ## Deleting the SSRS or PBIRS databases
 <a name="SSRS.Drop"></a>
 
-Removing the `SSRS` or `PBIRS` option doesn't delete the report server databases. To delete them, use the following stored procedures.
+Removing the `SSRS` or `PBIRS` option doesn't delete the report server databases. To delete them, use the following stored procedure.
 
 To delete the report server databases, be sure to remove the `SSRS` or `PBIRS` option first.
 
-**To delete the SSRS databases**
-+ Use the following stored procedure.
+**To delete the SSRS or PBIRS databases**
++ Use the following stored procedure. This procedure handles both SSRS and PBIRS databases.
 
   ```
   exec msdb.dbo.rds_drop_ssrs_databases
-  ```
-
-**To delete the PBIRS databases (SQL Server 2025 and higher)**
-+ Use the following stored procedure.
-
-  ```
-  exec msdb.dbo.rds_drop_pbirs_databases
   ```

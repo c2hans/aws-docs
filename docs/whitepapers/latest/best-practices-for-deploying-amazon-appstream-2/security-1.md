@@ -165,9 +165,9 @@ We'll look at two kinds of data loss prevention.
 
 |  **Setting**  |  **Options**  |  **Guidance**  |
 | --- | --- | --- |
-|  Clipboard  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/security-1.html)  |  Disabling this setting does not disable copy and paste within the session. If copying data into the session is required, choose Paste to remote session only to minimize the potential for data leakage.  |
-|  File transfer  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/security-1.html)  |  Avoid enabling this setting to prevent data leakage.  |
-|  Print to local device  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-for-deploying-amazon-appstream-2/security-1.html)  |  If printing is required, use network mapped printers that are controlled and monitored by your organization.  |
+|  Clipboard  |  +   Copy and paste to remote session only  <br />+   Copy to local device only  <br />+   Disabled    |  Disabling this setting does not disable copy and paste within the session. If copying data into the session is required, choose Paste to remote session only to minimize the potential for data leakage.  |
+|  File transfer  |  +   Upload and download  <br />+   Upload only  <br />+   Download only  <br />+   Disabled    |  Avoid enabling this setting to prevent data leakage.  |
+|  Print to local device  |  +   Enabled  <br />+   Disabled    |  If printing is required, use network mapped printers that are controlled and monitored by your organization.  |
 
  Consider the advantages of the existing organizational data transfer solution over the stack settings. These configurations are not designed to replace a comprehensive secure data transfer solution.
 

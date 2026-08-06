@@ -24,7 +24,7 @@ The following table lists the UXC resource types for which you can log data even
 
 | Resource type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| UXC account customization |  AWS::UXC::AccountCustomization  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/log-using-cloudtrail.html)  |
+| UXC account customization |  AWS::UXC::AccountCustomization  |  +  [https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/API_GetAccountCustomizations.html](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/APIReference/API_GetAccountCustomizations.html)   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

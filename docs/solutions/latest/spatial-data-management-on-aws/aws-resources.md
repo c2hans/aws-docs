@@ -111,6 +111,16 @@ There are also 6 additional lambdas that get created for managing custom resourc
 + Message retention set to 14 days
 + Dead letter queues configured with max receive count of 3
 
+## Amazon EventBridge Scheduler
+<a name="eventbridge-scheduler"></a>
+
+ **Total Resources Deployed:** 1 schedule group \+ 1 IAM role
+
+| Resource Name | Type | Purpose |
+| --- | --- | --- |
+|  `sdma-connector-polls`  | Schedule Group | Contains one-shot schedules for connector `wait` step polling |
+| ConnectorPollSchedulerRole | IAM Role | Assumed by EventBridge Scheduler to invoke the connector invocation function |
+
 ## VPC Endpoints
 <a name="vpc-endpoints"></a>
 

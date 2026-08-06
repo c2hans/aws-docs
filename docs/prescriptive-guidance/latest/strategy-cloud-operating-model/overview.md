@@ -42,7 +42,7 @@ The AWS Cloud Operating Model (COM) Framework consists of 73 capabilities, group
 |
 | Perspectives | Operations Leadership | Cloud Operations | Platform Enablement | Service Management | Cost and Governance |
 | --- |--- |--- |--- |--- |--- |
-| **Domains** | Operations leadershipOrganization | ResiliencyObservabilitySecurity operations | Architecture and patternsLifecycle managementProvisioning and vending | Capacity managementKnowledge disseminationOperational reportingOperations partnersProcess enablementProduct managementSME services | Financial managementResource/estate management |
+| **Domains** | + Operations leadership<br />+ Organization | + Resiliency<br />+ Observability<br />+ Security operations | + Architecture and patterns<br />+ Lifecycle management<br />+ Provisioning and vending | + Capacity management<br />+ Knowledge dissemination<br />+ Operational reporting<br />+ Operations partners<br />+ Process enablement<br />+ Product management<br />+ SME services | + Financial management<br />+ Resource/estate management |
 
 Using a framework like ours supports the development of your Cloud Operating Model by providing consistency as you understand, organize, design, implement, and mature your organization in line with the goals of your transformation journey.
 

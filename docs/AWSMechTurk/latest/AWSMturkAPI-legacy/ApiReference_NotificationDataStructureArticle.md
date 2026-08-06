@@ -28,7 +28,7 @@ source_url: https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI-legacy/Ap
 
 | Name | Description | Required |
 | --- | --- | --- |
-|  `Destination`  | The destination for notification messages. <br />Type: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI-legacy/ApiReference_NotificationDataStructureArticle.html)<br />Default: None | Yes |
+|  `Destination`  | The destination for notification messages. <br />Type: +  For email notifications (if `Transport` is **Email**), this is an email address.  <br />+  For Amazon Simple Queue Service (Amazon SQS) notifications (if `Transport` is **SQS**), this is the URL for your Amazon SQS queue. For more information, see [Notification Handling Using Amazon SQS](ApiReference_NotificationReceptorAPI_SQSTransportArticle.md).  <br />Default: None | Yes |
 |  `Transport`  | The method Amazon Mechanical Turk uses to send the notification.<br />Type: String<br />Valid Values: Email \| SQS<br />Default: None | Yes |
 |  `Version`  | The version of the Notification API WSDL/schema, see [WSDL and Schema Locations](ApiReference_WsdlLocationArticle.md). <br />Type: String<br />Default: None | Yes |
 |  `EventType`  | The events that should cause notifications to be sent. You can specify multiple events by repeating this element. The Ping event is only valid for the [SendTestEventNotification](ApiReference_SendTestEventNotificationOperation.md) operation.<br />Type: String<br />Valid Values: AssignmentAccepted \| AssignmentAbandoned \| AssignmentReturned \| AssignmentSubmitted \| HITReviewable \| HITExpired \| Ping<br />Default: None | Yes |

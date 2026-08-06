@@ -66,10 +66,10 @@ The solution presented here can scale for both additional Regions and accounts.
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create the aggregator. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-aws-cloudformation-drift-detection-in-a-multi-region-multi-account-organization.html) | Cloud architect |
+| Create the aggregator. | 1. Sign in to the AWS Management Console and open the AWS Config console at [https://console.aws.amazon.com/config]().<br />2. Create an aggregator in the management account.<br />3. Ensure that data replication is turned on so that AWS Config can fetch data from the source accounts.<br />4. Select all applicable Regions and accounts. You can select accounts based on AWS Organizations. We recommend this approach because new accounts in the organization are automatically part of the aggregator. | Cloud architect |
 | Create an AWS managed rule. | Add the `cloudformation-stack-drift-detection-check` AWS** **managed rule. The rule needs one parameter value: `cloudformationArn`. <br />Enter the IAM role Amazon Resource Name (ARN) that has permissions to detect stack drift. The role must have a trust policy that enables AWS Config to assume the role. | Cloud architect |
 | Create the advanced query section of the aggregator. | To fetch drifted stacks from multiple sources, create the following query:<pre>SELECT resourceId, configuration.driftInformation.stackDriftStatus WHERE resourceType = 'AWS::CloudFormation::Stack'  AND configuration.driftInformation.stackDriftStatus IN ('DRIFTED')</pre> | Cloud architect, Developer |
-| Automate running the query and publish. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-aws-cloudformation-drift-detection-in-a-multi-region-multi-account-organization.html) | Cloud architect, Developer |
+| Automate running the query and publish. | 1. Create a Lambda function by using the code that is attached. Lambda will publish the results to an SNS topic that is provided as an environment variable in the Lambda function.<br />2. To receive alerts, create an email subscription to the SNS topic. | Cloud architect, Developer |
 | Create a CloudWatch rule. | Create a schedule-based CloudWatch rule to call the Lambda function, which is responsible for alerting. | Cloud architect |
 
 ## Related resources

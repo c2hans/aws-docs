@@ -50,16 +50,16 @@ The following table shows a sample IAM policy that grants access to all the cont
 
 | API action | Control/data plane | Protocol | Description | Resource |
 | --- | --- | --- | --- | --- |
-| CreateCommand | Control plane | HTTP | Creates a command resource |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| GetCommand | Control plane | HTTP | Retrieves information about a command |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| UpdateCommand | Control plane | HTTP | Updates information about a command or to deprecate it |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| ListCommands | Control plane | HTTP | Lists commands in your account |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| DeleteCommand | Control plane | HTTP | Deletes a command |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| StartCommandExecution | Data plane | HTTP | Starts executing a command |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| UpdateCommandExecution | Data plane | MQTT | Update a command execution |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| GetCommandExecution | Control plane | HTTP | Retrieves information about a command execution |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| ListCommandExecutions | Control plane | HTTP | Lists command executions in your account |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
-| DeleteCommandExecution | Control plane | HTTP | Deletes a command execution |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/remote-command-tutorial.html)  |
+| CreateCommand | Control plane | HTTP | Creates a command resource |  +  command   |
+| GetCommand | Control plane | HTTP | Retrieves information about a command |  +  command   |
+| UpdateCommand | Control plane | HTTP | Updates information about a command or to deprecate it |  +  command   |
+| ListCommands | Control plane | HTTP | Lists commands in your account |  +  command   |
+| DeleteCommand | Control plane | HTTP | Deletes a command |  +  command   |
+| StartCommandExecution | Data plane | HTTP | Starts executing a command |  +  command <br />+  thing   |
+| UpdateCommandExecution | Data plane | MQTT | Update a command execution |  +  command <br />+  thing   |
+| GetCommandExecution | Control plane | HTTP | Retrieves information about a command execution |  +  command <br />+  thing   |
+| ListCommandExecutions | Control plane | HTTP | Lists command executions in your account |  +  command <br />+  thing   |
+| DeleteCommandExecution | Control plane | HTTP | Deletes a command execution |  +  command <br />+  thing   |
 
 In this example, replace:
 + `{{us-east-1}}` with your AWS Region, such as `ap-south-1`.

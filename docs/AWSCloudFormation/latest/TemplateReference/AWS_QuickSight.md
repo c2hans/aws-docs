@@ -24,4 +24,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::QuickSight::Template](aws-resource-quicksight-template.md)
 + [AWS::QuickSight::Theme](aws-resource-quicksight-theme.md)
 + [AWS::QuickSight::Topic](aws-resource-quicksight-topic.md)
++ [AWS::QuickSight::TopicV2](aws-resource-quicksight-topicv2.md)
 + [AWS::QuickSight::VPCConnection](aws-resource-quicksight-vpcconnection.md)

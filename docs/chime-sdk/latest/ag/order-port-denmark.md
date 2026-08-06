@@ -10,11 +10,11 @@ The following tables list and describe the requirements for ordering and porting
 **Ordering phone numbers**
 
 - **SIP Media Application Dial-In**
-  - **Number types:** Local / **ID requirements:** Yes / **Acceptable ID types:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-denmark.html)
-  - **Number types:** Toll-free / **ID requirements:** Yes / **Acceptable ID types:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-denmark.html)
+  - **Number types:** Local / **ID requirements:** Yes / **Acceptable ID types:**  +  Business address <br />+  Foreign address acceptable
+  - **Number types:** Toll-free / **ID requirements:** Yes / **Acceptable ID types:**  +  Business address <br />+  Foreign address acceptable
 
 **Porting phone numbers**
 
 - **SIP Media Application Dial-In**
-  - **Number types:** Local / **Required ID:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-denmark.html)
-  - **Number types:** Toll-free / **Required ID:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-denmark.html)
+  - **Number types:** Local / **Required ID:**  +  Last invoice from current provider <br />+  Letter of Authorization
+  - **Number types:** Toll-free / **Required ID:**  +  Last invoice from current provider <br />+  Letter of Authorization

@@ -22,10 +22,10 @@ When you understand how different parts of your system interact, you can better 
 |
 | Analysis type | Focus areas | Purpose |
 | --- |--- |--- |
-| Object dependencies | TablesViewsStored ProceduresFunctionsTriggers | Identifies relationships between database objects and their hierarchical structures |
-| Segment dependencies | Foreign key relationshipsPrimary key chainsCross-schema references | Maps data relationships and maintains referential integrity |
-| Security dependencies | User permissionsRole hierarchiesObject privileges | Ensures proper access control migration and security maintenance |
-| Access patterns | Read operationsWrite operations | Determines database interaction patterns |
+| Object dependencies | + Tables<br />+ Views<br />+ Stored Procedures<br />+ Functions<br />+ Triggers | Identifies relationships between database objects and their hierarchical structures |
+| Segment dependencies | + Foreign key relationships<br />+ Primary key chains<br />+ Cross-schema references | Maps data relationships and maintains referential integrity |
+| Security dependencies | + User permissions<br />+ Role hierarchies<br />+ Object privileges | Ensures proper access control migration and security maintenance |
+| Access patterns | + Read operations<br />+ Write operations | Determines database interaction patterns |
 
 To maintain consistency between source and target systems, establish data synchronization mechanisms during the transition period. You must also modify application code and functions to handle data distribution across both the source Oracle and target PostgreSQL databases.
 

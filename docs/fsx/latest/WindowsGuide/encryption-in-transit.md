@@ -25,7 +25,7 @@ Following are commands that you can use to manage user in-transit encryption on 
 | Encryption in Transit Command | Description |
 | --- | --- |
 | **Get-FSxSmbServerConfiguration** | Retrieves the Server Message Block (SMB) server configuration. In the system response you can determine the encryption in transit settings for your filesystem based on the values for the `EncryptData` and `RejectUnencryptedAccess` properties. |
-| **Set-FSxSmbServerConfiguration** | This command has two options for configuring in-transit encryption globally on the file system:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/WindowsGuide/encryption-in-transit.html) |
+| **Set-FSxSmbServerConfiguration** | This command has two options for configuring in-transit encryption globally on the file system:+ `-EncryptData $True\|$False` – Set this parameter to `True` to turn on in-transit data encryption. Set this parameter to `False` to turn off in-transit data encryption. <br />+ `-RejectUnencryptedAccess $True\|$False` – Set this parameter to `True` to disallow clients that do not support encryption to access the file system. Set this parameter to `False` to allow clients that do not support encryption to access the file system.  |
 | **Set-FSxSmbShare -name {{name}} -EncryptData $True** | Set this parameter to `True` to turn on in-transit data encryption for the share. Set this parameter to `False` to turn off in-transit data encryption for the share. |
 
 The online help for each command provides a reference of all command options. To access this help, run the command with **-?**, for example **Get-FSxSmbServerConfiguration -?**.

@@ -47,7 +47,7 @@ Furthermore, you can attach a managed policy to the IAM user that allows any use
 The policy in this example includes three policy statements:
 + The first statement in the policy allows the user to create a Batch Operations job provided that the job creation request includes a job tag that matches their respective department. This is expressed using the `"${aws:PrincipalTag/department}"` syntax, which is replaced by the user’s department tag at policy evaluation time. The condition is satisfied when the value provided for the department tag in the request `("aws:RequestTag/department")` matches the user’s department.
 + The second statement in the policy allows users to change the priority of jobs or update a job’s status provided that the job the user is updating matches the user’s department.
-+ The third statement allows a user to update a Batch Operations job’s tags at any time via a `PutJobTagging` request as long as (1) their department tag is preserved and (2) the job they’re updating is within their department.
++ The third statement allows a user to update a Batch Operations job’s tags at any time through a `PutJobTagging` request as long as (1) their department tag is preserved and (2) the job they’re updating is within their department.
 
 ------
 #### [ JSON ]

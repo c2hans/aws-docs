@@ -52,19 +52,19 @@ Other restrictions in the following table cannot be increased.
 | --- |--- |
 | Number of Cost and Usage Reports per billing group billing view | 10 |
 | Number of pro forma for bill transfer account | Same as the number of billing transfers allowed for the billing transfer account to manage |
-| Billing group name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/billingconductor/latest/userguide/limits.html)  |
+| Billing group name |  +  Must be within 128 characters <br />+  Cannot contain a `space` <br />+  Cannot contain special characters   |
 | Billing group description  | Must be within 1,024 characters |
-| Pricing plan name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/billingconductor/latest/userguide/limits.html)  |
+| Pricing plan name |  +  Must be within 128 characters <br />+  Cannot contain a `space` <br />+  Cannot contain special characters   |
 | Pricing plan description | Must be within 1,024 characters |
-| Custom line item name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/billingconductor/latest/userguide/limits.html)  |
+| Custom line item name |  +  Must be within 128 characters <br />+  Cannot contain a `space` <br />+  Cannot contain special characters   |
 
 **Using Billing Conductor with billing transfer**
 
 |  |  |
 | --- |--- |
 | Number of pro forma &CUR; for bill transfer account | 10 |
-| Billing group name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/billingconductor/latest/userguide/limits.html)  |
+| Billing group name |  +  Must be within 128 characters <br />+  Cannot contain a `space` <br />+  Cannot contain special characters   |
 | Billing group description  | Must be within 1,024 characters |
-| Pricing plan name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/billingconductor/latest/userguide/limits.html)  |
+| Pricing plan name |  +  Must be within 128 characters <br />+  Cannot contain a `space` <br />+  Cannot contain special characters   |
 | Pricing plan description | Must be within 1,024 characters |
-| Custom line item name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/billingconductor/latest/userguide/limits.html)  |
+| Custom line item name |  +  Must be within 128 characters <br />+  Cannot contain a `space` <br />+  Cannot contain special characters   |

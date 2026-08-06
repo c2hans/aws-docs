@@ -19,12 +19,13 @@ The harness gives you the same security primitives as the rest of AgentCore, wir
 ## Shared responsibility model
 <a name="harness-shared-responsibility"></a>
 
-The harness is built on AgentCore Runtime. The security boundary is the same: IAM or JWT authentication combined with microVM isolation. The harness does not add a security layer between the caller and the microVM.
+The harness is built on AgentCore Runtime and the security boundary is the same: IAM or JWT authentication combined with microVM isolation. Any principal that passes that gate reaches the tools and capabilities configured on the harness, which makes caller authorization and input validation a customer responsibility.
 
 **AWS responsibilities:**
 + Secure infrastructure and microVM isolation at the hardware level
 + OS kernel patching
 + Language runtime patching for direct code deployments
++ Managed harness runtime code, including validation of the request structure `InvokeHarness` accepts
 + Network infrastructure security
 + Service availability and resilience
 
@@ -44,11 +45,16 @@ For the full AgentCore Runtime shared responsibility model, see [Security best p
 ### Trust boundary and input validation
 <a name="harness-trust-boundary"></a>
 
-All `InvokeHarness` and `InvokeAgentRuntimeCommand` input is trusted. Any principal that passes the IAM or JWT authentication and authorization gate has access to the full microVM session, including the tools and capabilities configured on the harness. The harness does not sanitize input, filter content blocks, or enforce behavioral constraints.
+Any principal that passes the IAM or JWT authentication and authorization gate has access to the full microVM session, including the tools and capabilities configured on the harness. The harness validates the structure of the request it accepts, but it does not inspect the meaning of prompts, screen content, or enforce behavioral constraints on the agent.
 
 If you expose the harness to end users you do not fully trust (employees, external consumers, or third-party integrations), validate and sanitize messages in your application layer before passing them to `InvokeHarness`. This includes stripping content-block types or model configuration fields you do not want dispatched. This is the same pattern as any service that accepts payloads from authorized callers, such as Lambda, Amazon API Gateway, and Amazon SQS.
 
-When you pass [toolUse](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_HarnessToolUseBlock.html) blocks in `InvokeHarness` input for server-side tools that have no corresponding [toolResult](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_HarnessToolResultBlock.html) blocks, AgentCore harness invokes the indicated tools directly with the given input payloads. The following example invokes the built-in `shell` tool to print the current working directory:
+**Note**
+The harness rejects `toolUse` blocks in the final message server-side, as shown in the following example. For **AgentCore Runtime** deployments (non-harness), AgentCore Runtime provides no server-side protection. Your agent entrypoint must validate that the prompt field is a string and reject or strip `toolUse` content blocks before passing input to the agent framework. See [Security best practices for AgentCore Runtime](runtime-security-best-practices.md).
+
+Tools run only as a result of model reasoning. The harness does not accept a [toolUse](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_HarnessToolUseBlock.html) block in the final message of an `InvokeHarness` request, so a caller cannot name a tool and have it dispatched directly.
+
+The following example shows a request that the harness is configured to reject. The final message contains a `toolUse` block naming the built-in `shell` tool:
 
 ```
 response = client.invoke_harness(
@@ -70,6 +76,10 @@ response = client.invoke_harness(
     }],
 )
 ```
+
+The harness does not evaluate which tool the block names, so this applies to built-in server-side tools and to inline functions supplied on the call.
+
+Returning a tool result is still supported. The harness accepts a [toolResult](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_HarnessToolResultBlock.html) block in the final message, and the model resumes reasoning over that result. This is how [inline function tools](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-tools.html) work: the assistant `toolUse` message is followed by the `toolResult` in the same request, so the `toolUse` block is not in the final message.
 
 ### Model configuration parameters
 <a name="harness-model-params-security"></a>

@@ -60,15 +60,15 @@ An inventory list file contains a list of the objects in the source bucket and m
 **Note**
 Objects in Amazon S3 Inventory reports aren't guaranteed to be sorted in any order.
 
-An inventory list file contains a list of the objects in the source bucket and metadata for each listed object. These default fields are always included:
+An inventory list file contains a list of the objects in the source bucket and metadata for each listed object. The following fields are always included:
 + **Bucket name** – The name of the bucket that the inventory is for.
-+ **ETag** – The entity tag (ETag) is a hash of the object. The ETag reflects changes only to the contents of an object, not to its metadata. The ETag can be an MD5 digest of the object data. Whether it is depends on how the object was created and how it is encrypted. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html) in the *Amazon Simple Storage Service API Reference*.
 + **Key name** – The object key name (or key) that uniquely identifies the object in the bucket. When you're using the CSV file format, the key name is URL-encoded and must be decoded before you can use it.
+
+You can choose to include the following additional metadata fields in the report:
++ **ETag** – The entity tag (ETag) is a hash of the object. The ETag reflects changes only to the contents of an object, not to its metadata. The ETag can be an MD5 digest of the object data. Whether it is depends on how the object was created and how it is encrypted. For more information, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_Object.html) in the *Amazon Simple Storage Service API Reference*.
 + **Last modified date** – The object creation date or the last modified date, whichever is the latest.
 + **Size** – The object size in bytes, not including the size of incomplete multipart uploads, object metadata, and delete markers.
 + **Storage class** – The storage class that's used for storing the object. Set to `STANDARD`, `REDUCED_REDUNDANCY`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER`, `DEEP_ARCHIVE`, `OUTPOSTS`, `GLACIER_IR`, `SNOW`, or `EXPRESS_ONEZONE`. For more information, see [Understanding and managing Amazon S3 storage classes](storage-class-intro.md).
-
-You can choose to include the following additional metadata fields in the report:
 + **Checksum algorithm** – Indicates the algorithm that's used to create the checksum for the object. For more information, see [Using supported checksum algorithms](checking-object-integrity-upload.md#using-additional-checksums).
 + **Encryption status** – The server-side encryption status, depending on what kind of encryption key is used— server-side encryption with Amazon S3 managed keys (SSE-S3), server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS), dual-layer server-side encryption with AWS KMS keys (DSSE-KMS), or server-side encryption with customer-provided keys (SSE-C). Set to `SSE-S3`, `SSE-KMS`, `DSSE-KMS`, `SSE-C`, or `NOT-SSE`. A status of `NOT-SSE` means that the object is not encrypted with server-side encryption. For more information, see [Protecting data with encryption](UsingEncryption.md).
 + **S3 Intelligent-Tiering access tier** – Access tier (frequent or infrequent) of the object if it is stored in the S3 Intelligent-Tiering storage class. Set to `FREQUENT`, `INFREQUENT`, `ARCHIVE_INSTANT_ACCESS`, `ARCHIVE`, or `DEEP_ARCHIVE`. For more information, see [Storage class for automatically optimizing data with changing or unknown access patterns](storage-class-intro.md#sc-dynamic-data-access).

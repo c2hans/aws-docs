@@ -137,26 +137,26 @@ CloudTrail event record contents are described in more detail in [CloudTrail rec
 | Field name | Input type | Requirement | Description |
 | --- | --- | --- | --- |
 | eventData | - | Required | Fields in eventData are provided by your configuration items. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The version of the configuration item from its source. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The time when the configuration recording was initiated. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The configuration item status. Valid values are `OK`, `ResourceDiscovered`, `ResourceNotRecorded`, ` ResourceDeleted`, and `ResourceDeletedNotRecorded`. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The 12-digit AWS account ID associated with the resource. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The type of AWS resource. For more information about valid resource types, see [ConfigurationItem](https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigurationItem.html) in the *AWS Config API Reference*. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The ID of the resource (for example., sg-{{xxxxxx}}). |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The custom name of the resource, if available. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | Amazon Resource Name (ARN) associated with the resource.  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The AWS Region where the resource resides. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The Availability Zone associated with the resource. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The time stamp when the resource was created. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | JSON | Optional | The description of the resource configuration. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | JSON | Optional | Configuration attributes that AWS Config returns for certain resource types to supplement the information returned for the configuration parameter. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | A list of CloudTrail event IDs. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | - | Optional | A list of related AWS resources. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The type of relationship with the related resource. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The resource type of the related resource. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The ID of the related resource (for example, sg-{{xxxxxx}}). |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | string | Optional | The custom name of the related resource, if available. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-config.html)  | JSON | Optional | A mapping of key value tags associated with the resource. |
+|  +  configurationItemVersion   | string | Optional | The version of the configuration item from its source. |
+|  +  configurationItemCaptureTime   | string | Optional | The time when the configuration recording was initiated. |
+|  +  configurationItemStatus   | string | Optional | The configuration item status. Valid values are `OK`, `ResourceDiscovered`, `ResourceNotRecorded`, ` ResourceDeleted`, and `ResourceDeletedNotRecorded`. |
+|  +  accountId   | string | Optional | The 12-digit AWS account ID associated with the resource. |
+|  +  resourceType   | string | Optional | The type of AWS resource. For more information about valid resource types, see [ConfigurationItem](https://docs.aws.amazon.com/config/latest/APIReference/API_ConfigurationItem.html) in the *AWS Config API Reference*. |
+|  +  resourceId   | string | Optional | The ID of the resource (for example., sg-{{xxxxxx}}). |
+|  +  resourceName   | string | Optional | The custom name of the resource, if available. |
+|  +  arn   | string | Optional | Amazon Resource Name (ARN) associated with the resource.  |
+|  +  awsRegion   | string | Optional | The AWS Region where the resource resides. |
+|  +  availabilityZone   | string | Optional | The Availability Zone associated with the resource. |
+|  +  resourceCreationTime   | string | Optional | The time stamp when the resource was created. |
+|  +  configuration   | JSON | Optional | The description of the resource configuration. |
+|  +  supplementaryConfiguration   | JSON | Optional | Configuration attributes that AWS Config returns for certain resource types to supplement the information returned for the configuration parameter. |
+|  +  relatedEvents   | string | Optional | A list of CloudTrail event IDs. |
+|  +  relationships   | - | Optional | A list of related AWS resources. |
+|  +    name     | string | Optional | The type of relationship with the related resource. |
+|  +    resourceType     | string | Optional | The resource type of the related resource. |
+|  +    resourceId     | string | Optional | The ID of the related resource (for example, sg-{{xxxxxx}}). |
+|  +    resourceName     | string | Optional | The custom name of the related resource, if available. |
+|  +  tags   | JSON | Optional | A mapping of key value tags associated with the resource. |
 
 The following example shows the hierarchy of schema elements that match those in configuration item records.
 

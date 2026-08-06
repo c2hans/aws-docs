@@ -89,7 +89,7 @@ Managing Oracle databases on EC2 instances requires more resources and is more c
 | --- | --- | --- |
 | Launch the EC2 instance. | For instructions, see the [Amazon EC2 documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/LaunchingAndUsingInstances.html). | Developer |
 | Install the Oracle database. | Install the Oracle database on the EC2 instance, with required users and roles. | DBA |
-| Follow the steps in the task description to access Oracle from outside of the EC2 instance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-oracle-database-from-amazon-ec2-to-amazon-rds-for-mariadb-using-aws-dms-and-aws-sct.html) | DBA |
+| Follow the steps in the task description to access Oracle from outside of the EC2 instance. | 1. Change the local host in `tnsnames` to the Amazon EC2 public DNS.<br />2. Change the local host in `listener` to the Amazon EC2 public DNS.<br />3. Stop and restart the listener. | DBA |
 | Update the Amazon EC2 public DNS. | After the EC2 instance restarts, the public DNS changes. Make sure to update the Amazon EC2 public DNS in `tnsnames` and `listener`, or use an Elastic IP address. | DBA, Developer |
 | Configure the EC2 instance security group. | Configure the EC2 instance security group so the replication instance and required clients can access the source database. | DBA, Developer |
 

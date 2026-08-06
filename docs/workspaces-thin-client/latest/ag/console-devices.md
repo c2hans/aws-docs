@@ -28,10 +28,10 @@ The parameters for your device are listed for your review. The following table l
 | Device serial number | The identification number assigned to an individual device. |
 | Device name | (optional) The unique name that you give to a device. |
 | Last used by | The identification number of the user accessing the device. Only available when using WorkSpaces Personal. |
-| Activity status | The current status of a device. There are two status states:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/console-devices.html) |
-| Enrollment status | Confirmation that a device has been set up, is associated with this AWS account, and is part of a specific environment. It can be in one of the following states:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/console-devices.html) |
+| Activity status | The current status of a device. There are two status states:+ **Active** – Connected to a network at least once in the past seven days.<br />+ **Inactive** – Not connected to a network in the past seven days. |
+| Enrollment status | Confirmation that a device has been set up, is associated with this AWS account, and is part of a specific environment. It can be in one of the following states:+ **Registered** – This is the default status.<br />+ **Deregistering** – The device is in the **Reset and Deregister** process. You can delete a device if it is in a deregistering state. <br />+ **Deregsitered** – The device has been successfully deregistered. You can only delete a device if it’s in either a **Deregistering** or **Deregistered** status. <br />+ **Archived** – The device is archived. |
 | Environment ID | The identifier of the environment to which this device is attached. |
-| Software compliance | The compliance status of the device software. There are two status states:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/console-devices.html) |
+| Software compliance | The compliance status of the device software. There are two status states:+ **Compliant**<br />+ **Not compliant** |
 
 ### Device list actions
 <a name="device-list-actions"></a>
@@ -43,7 +43,7 @@ There are a number of actions you can perform from here. Select any of these to 
 | Search | Searches all devices that you manage. |
 | Refresh | Refreshes the device list. |
 | View details | Displays Device details. |
-| Actions | Opens a dropdown list where you can do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/console-devices.html) |
+| Actions | Opens a dropdown list where you can do the following:+ [Edit device name](editing-a-device-name.md)<br />+ [Deregister](resetting-and-deregsitering-a-device.md)<br />+ [Archive](archiving-a-device.md)<br />+ [Delete](deleting-a-device.md)<br />+ [Export device details](exporting-device-details.md) |
 | Order devices | Starts the process of ordering devices. |
 
 **Topics**

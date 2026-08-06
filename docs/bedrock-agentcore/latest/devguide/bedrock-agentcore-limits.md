@@ -272,8 +272,10 @@ Amazon Bedrock AgentCore Gateway has the following service quotas. You can reque
 | ListGatewayTargets API rate | 10 transactions per second | Yes |
 | DeleteGatewayTarget API rate | 5 transactions per second | Yes |
 | Concurrent target operations (total of Create/Update/DeleteTarget) on same gateway | 5 | Yes |
-| tool-call/tool-list rate at gateway level | 1000 concurrent connections | Yes |
-| tool-call/tool-list rate at account level | 1000 concurrent connections | Yes |
+| tool-call/tool-list rate at gateway level | 200 transactions per second | Yes |
+| tool-call/tool-list rate at account level | 200 transactions per second | Yes |
+| tool-call/tool-list concurrent connections at gateway level | 5000 concurrent connections | Yes |
+| tool-call/tool-list concurrent connections at account level | 5000 concurrent connections | Yes |
 | Search-based tool-call rate | 25 transactions per minute | Yes |
 | Maximum tool-call/tool-list/tool-search payload size | 6 MB | Yes |
 | Rate of Web Search Tool requests | 10 transactions per second | Yes |
@@ -610,5 +612,6 @@ The following table describes the rate limits for AgentCore Registry APIs after 
 | ListRegistryRecords API rate | 10 TPS | Yes | Transactions per second per account |
 | SubmitRegistryRecordForApproval API rate | 10 TPS | Yes | Transactions per second per account |
 | UpdateRegistryRecordStatus API rate | 10 TPS | Yes | Transactions per second per account |
-| SearchRegistryRecords API rate | 5 TPS | Yes | Transactions per second per account |
-| InvokeRegistryMcp API rate | 5 TPS | Yes | Transactions per second per account |
+| SearchDiscoverableRegistryRecords API rate | 10 TPS | Yes | Transactions per second per account |
+| ListDiscoverableRegistryRecords API rate | 10 TPS | Yes | Transactions per second per account |
+| BatchGetDiscoverableRegistryRecord API rate | 10 TPS | Yes | Transactions per second per account |

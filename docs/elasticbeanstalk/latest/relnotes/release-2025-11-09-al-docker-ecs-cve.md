@@ -23,7 +23,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | **Platform** | **Update** |
 | --- | --- |
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-11-09-al-docker-ecs-cve.html) |
-| **Docker** | **AL2/AL2023 Docker platform branch**[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-11-09-al-docker-ecs-cve.html) |
+| **Docker** | **AL2/AL2023 Docker platform branch**+  Updated runc to version 1.3.3   |
 
 ## New platform versions
 <a name="release-2025-11-09-al-docker-ecs-cve.platforms"></a>

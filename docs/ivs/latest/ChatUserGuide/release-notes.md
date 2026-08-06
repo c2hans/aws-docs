@@ -15,7 +15,7 @@ This document contains all Amazon IVS Chat release notes, latest first, organize
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Chat Client Messaging SDK 1.0.1](chat-sdk-ios.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.1/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.1/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/ChatUserGuide/release-notes.html) |
+| [iOS Chat Client Messaging SDK 1.0.1](chat-sdk-ios.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.1/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-ios/1.0.1/)+  We removed the embedded Bitcode from the SDK.  |
 
 #### Chat Client Messaging SDK Size: iOS
 <a name="chat-101-sdk-size-ios"></a>
@@ -41,7 +41,7 @@ Amazon Interactive Video Service (IVS) Chat is a managed, live-chat feature to g
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Chat Client Messaging SDK 1.1.0](chat-sdk-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/ChatUserGuide/release-notes.html) |
+| [Android Chat Client Messaging SDK 1.1.0](chat-sdk-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/)+  To support Kotlin Coroutines, we added new IVS Chat Messaging APIs in the com.amazonaws.ivs.chat.messaging.coroutines package. Also see the new Kotlin Coroutines tutorial; part 1 (of 2) is [Chat Rooms](chat-sdk-kotlin-tutorial-chat-rooms.md).  |
 
 #### Chat Client Messaging SDK Size: Android
 <a name="chat-110-sdk-size-android"></a>
@@ -58,7 +58,7 @@ Amazon Interactive Video Service (IVS) Chat is a managed, live-chat feature to g
 
 | Platform | Downloads and Changes |
 | --- | --- |
-|  [JavaScript Chat Client Messaging SDK 1.0.2](chat-sdk-js.md)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/ChatUserGuide/release-notes.html) |
+|  [JavaScript Chat Client Messaging SDK 1.0.2](chat-sdk-js.md)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/)+  Fixed an issue that affected Firefox: clients erroneously received a socket error when they were disconnected from a chat room using the DisconnectUser endpoint.  |
 
 ## September 8, 2022
 <a name="sep08-22"></a>

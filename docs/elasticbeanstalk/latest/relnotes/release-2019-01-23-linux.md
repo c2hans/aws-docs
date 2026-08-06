@@ -25,16 +25,16 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html) |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html) |
 | **Apache** | Updated platforms supporting the Apache HTTP Server 2.4 to version 2.4.37. For details, see [Changes with Apache 2.4.x](https://downloads.apache.org/httpd/CHANGES_2.4) on the *Apache Software Foundation* website. |
-| **nginx** | Updated platforms supporting the nginx server to [version 1.14.1](https://nginx.org/en/CHANGES-1.14).<br />This version includes these security updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html) |
+| **nginx** | Updated platforms supporting the nginx server to [version 1.14.1](https://nginx.org/en/CHANGES-1.14).<br />This version includes these security updates:+  [CVE-2018-16843](https://nvd.nist.gov/vuln/detail/CVE-2018-16843) <br />+  [CVE-2018-16844](https://nvd.nist.gov/vuln/detail/CVE-2018-16844) <br />+  [CVE-2018-16845](https://nvd.nist.gov/vuln/detail/CVE-2018-16845)  |
 | **AWS X-Ray** | Updated platforms that support X-Ray to [X-Ray daemon v3.0.0](https://aws.amazon.com/releasenotes/2018-08-28-aws-x-ray-supports-sampling-rules/?tag=releasenotes%23keywords%23aws-x-ray). |
 | **Multicontainer Docker** | Updated the ECS agent to version 1.24.0. |
 | **Node.js** | Updated the Node.js platform to add support for Node versions [10.15.0](https://nodejs.org/en/blog/release/v10.15.0/), [8.15.0](https://nodejs.org/en/blog/release/v8.15.0/), and [6.16.0](https://nodejs.org/en/blog/release/v6.16.0/). |
 | **PHP** | Updated the PHP 7.2, 7.1, 7.0, and 5.6 configurations to PHP versions [7.2.13](http://php.net/archive/2018.php#id2018-12-06-3), [7.1.25](http://php.net/archive/2018.php#id2018-12-06-4), [7.0.33](http://php.net/archive/2018.php#id2018-12-06-5), and [5.6.39](http://php.net/archive/2018.php#id2018-12-06-2), respectively. |
 | **Python** | Updated the Python 3.6 configuration to [Python 3.6.7](https://docs.python.org/3.6/whatsnew/changelog.html#python-3-6-7-final). |
-| **Ruby** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html)  |
-| **r5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html)  |
-| **r5, c5d, m5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html)  |
-| **x1e** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-23-linux.html)  |
+| **Ruby** |  +  Updated the Ruby platform to add support for [Ruby 2.6.0](https://www.ruby-lang.org/en/news/2018/12/25/ruby-2-6-0-released/). <br />+  Added support for AWS X-Ray. For details about X-Ray, see the [AWS X-Ray Developer Guide](https://docs.aws.amazon.com/xray/latest/devguide/).   |
+| **r5d** |  + Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **r5, c5d, m5d** |  + Europe (Paris) – eu-west-3  |
+| **x1e** |  + Asia Pacific (Seoul) – ap-northeast-2  |
 
 ## Updated platform configurations
 <a name="release-2019-01-23-linux.platforms"></a>

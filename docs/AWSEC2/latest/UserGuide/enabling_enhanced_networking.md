@@ -104,7 +104,7 @@ The following procedure provides the general steps for enabling enhanced network
       systemd-208-11.el7_0.2.x86_64
       ```
 
-      In the above Red Hat Enterprise Linux 7 example, the **systemd** version is 208, so predictable network interface names must be disabled.
+      In this Red Hat Enterprise Linux 7 example, the **systemd** version is 208, so predictable network interface names must be disabled.
 
    1. Disable predictable network interface names by adding the `net.ifnames=0` option to the `GRUB_CMDLINE_LINUX` line in `/etc/default/grub`.
 

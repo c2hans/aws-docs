@@ -20,11 +20,10 @@ The following types of logs are available:
 + **Application logs**: Contain information about the application. These logs are prefixed with 'aws\_vpn\_client\_'.
 + **OpenVPN logs**: Contain information about OpenVPN processes. These logs are prefixed with 'ovpn\_aws\_vpn\_client\_'.
 
-The AWS provided client uses the client daemon to perform root operations. The daemon logs are stored in the following locations on your computer.
+The AWS provided client uses the client daemon to perform root operations. The daemon logs are stored in the following location on your computer.
 
 ```
-/var/log/AWSVPNClient/AcvcHelperErrLog.txt
-/var/log/AWSVPNClient/AcvcHelperOutLog.txt
+/var/log/AWSVPNClient/
 ```
 
 The AWS provided client stores the configuration files in the following location on your computer.
@@ -38,6 +37,7 @@ The AWS provided client stores the configuration files in the following location
 + [Client cannot connect](#macos-troubleshooting-client-vpn-cannot-connect)
 + [Client is stuck in a reconnecting state](#macos-troubleshooting-client-vpn-stuck)
 + [Client cannot create profile](#macos-troubleshooting-client-vpn-cannot-create-profile)
++ [Profiles or preferences missing after upgrade to version 6.0](#macos-troubleshooting-profiles-missing)
 + [Helper tool is required error](#macos-troubleshooting-helper-tool)
 + [Tunnelblick](#macos-troubleshooting-tunnelblick)
 + [Cipher algorithm 'AES-256-GCM' not found](#tunnelblick-cipher)
@@ -93,6 +93,20 @@ If the Client VPN endpoint uses mutual authentication, the configuration (.ovpn)
 
 **Solution**
 Ensure that your Client VPN administrator adds the client certificate and key to the configuration file. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*.
+
+## Profiles or preferences missing after upgrade to version 6.0
+<a name="macos-troubleshooting-profiles-missing"></a>
+
+**Problem**
+After upgrading the AWS provided client to version 6.0 or later, previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
+
+**Cause**
+Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client attempts to automatically migrate profiles and preferences from the previous location, but this migration can fail in some cases. The client does not delete your original `.ovpn` configuration files.
+
+**Solution**
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for macOS](client-vpn-connect-macos-connecting-how.md).
+
+If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## Helper tool is required error
 <a name="macos-troubleshooting-helper-tool"></a>

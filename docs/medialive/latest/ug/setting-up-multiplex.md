@@ -84,9 +84,9 @@ The following rules apply to the fields in the video.
 | In Aspect Ratio, the PAR control field | Set a value. This is required. Don't set up to follow the aspect ratio from the source. |
 | In Rate control, the Rate control mode field | Choose Multiplex. |
 | In Rate control, the Buffer size field | Keep blank. |
-| In Frame rate, the Framerate field | Set a value. This is required. Don't set up to follow the frame rate from the source. <br />The numerator and denominator must result in a decimal value in this range:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/setting-up-multiplex.html) |
+| In Frame rate, the Framerate field | Set a value. This is required. Don't set up to follow the frame rate from the source. <br />The numerator and denominator must result in a decimal value in this range:+  Lowest supported rate is 23.97 frames per second (2400/1001). <br />+  Highest supported rate is 60 frames per second.  |
 | In GOP structure | For **GOP size units**, choose **FRAMES**. Then set **GOP structure** to 6 or greater.<br />Or for **GOP size units**, choose **SECONDS**. Then set **GOP structure** to 0.1 or greater. |
-| In Codec details, the Profile field | If the codec is H.264, choose one of these profiles:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/setting-up-multiplex.html)<br />If the codec is H.265, choose one of these profiles:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/setting-up-multiplex.html) |
+| In Codec details, the Profile field | If the codec is H.264, choose one of these profiles:+  **BASELINE** <br />+  **HIGH** <br />+  **MAIN** <br />If the codec is H.265, choose one of these profiles:+  **BASELINE** <br />+  **HIGH** <br />+  **HIGH\_10BIT** <br />+  **MAIN**  |
 
 **Features That Are Not Restricted**
 

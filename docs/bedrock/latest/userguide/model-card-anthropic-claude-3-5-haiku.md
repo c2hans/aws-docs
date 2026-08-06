@@ -49,9 +49,9 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | anthropic.claude-3-5-haiku-20241022-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | us.anthropic.claude-3-5-haiku-20241022-v1:0 | Not supported |
+| bedrock-runtime | anthropic.claude-3-5-haiku-20241022-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | us.anthropic.claude-3-5-haiku-20241022-v1:0 | N/A |
 
-*For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/v1".*
+*For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com".*
 
 ## Service Tiers
 <a name="model-card-anthropic-claude-3-5-haiku-tiers"></a>
@@ -67,7 +67,7 @@ Amazon Bedrock offers multiple service tiers to match your workload requirements
 
 ***Regional availability at a glance***
 
-Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (US, EU, etc.) for higher throughput while respecting data residency, and **Global Cross-Region** routes anywhere worldwide for maximum throughput when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
+Amazon Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (such as US, EU, and APAC) while respecting data residency, and **Global Cross-Region** routes anywhere worldwide when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
 
 | **Region** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |

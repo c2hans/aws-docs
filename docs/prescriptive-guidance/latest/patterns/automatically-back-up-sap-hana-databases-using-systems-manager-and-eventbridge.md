@@ -85,7 +85,7 @@ The code for this pattern is available in the [aws-backint-automated-backup](ht
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an hdbuserstore key. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.html) | AWS administrator, SAP HANA Administrator |
+| Create an hdbuserstore key. | 1. Navigate to `/usr/sap/<SID>/HDB<Inst No>/exe`.<br />2. Run the following command, with `XX` as the SAP HANA database instance number.<pre>hdbuserstore -i set SYSTEM <hostname>:3XX13@SYSTEMDB SYSTEM </pre><br />For example,  for an SAP HANA host `saphanadb` with instance number `00`, run the following command.<pre>hdbuserstore -i set SYSTEM saphanadb:30013@SYSTEMDB SYSTEM</pre> | AWS administrator, SAP HANA Administrator |
 
 ### Install AWS Backint Agent
 <a name="install-aws-backint-agent"></a>
@@ -99,14 +99,14 @@ The code for this pattern is available in the [aws-backint-automated-backup](ht
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create the Systems Manager Command document. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.html) | AWS administrator, SAP HANA administrator |
+| Create the Systems Manager Command document. | 1. Sign in to the AWS Management Console and open the AWS Systems Manager Console.<br />2. Choose **Documents,** and choose **Owned by me**.<br />3. Confirm that you are in the same AWS Region as your SAP HANA database.<br />4. Choose **Create document**,** Command or session** to create your document. <br />5. Use a unique and descriptive name, with no spaces (for example, **SAP HANA-Backup**).<br />6. Make sure that **Document type** is set to **Command document**. <br />7. Under the **Content** header, there is some sample code. Make sure that you choose the **JSON** code type, and replace the code with the code from the `HDB_Backup_SSM_Document.json` file from the [GitHub repository](https://github.com/aws-samples/aws-backint-automated-backup).<br />8. Choose **Create document**.<br />9. Check your document in the **Owned by me **section. | AWS administrator, SAP HANA administrator |
 
 ### Schedule backups on a regular frequency
 <a name="schedule-backups-on-a-regular-frequency"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Schedule regular backups using Amazon EventBridge. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge.html)You can verify backup success from the S3 bucket path.  <pre> s3:/<your_bucket_name>/<target folder>/<SID>/usr/sap/<SID>/SYS/global/hdb/backint/DB_<SID>/</pre><br />You can also verify backups from the SAP HANA backup catalog. | AWS administrator, SAP HANA administrator |
+| Schedule regular backups using Amazon EventBridge. | 1. Open the Amazon EventBridge** **console, choose **Rules**, and choose **Create rule**.<br />2. On the **Define rule detail** screen, enter a unique name and description for your rule, and use the default event bus.<br />3. Under **Rule type**, choose **Schedule**, and choose **Next**.<br />4. On then **Define schedule** screen, choose the appropriate schedule pattern and cron or rate expression based on the required frequency.<br />5. On the **Select targets** screen, for **Target type**, choose **AWS service**. Under **Select a target**, choose **Systems Manager Run Command**.<br />6. Choose the document that you created earlier.<br />7. Under **Target key** and **Target value**, provide the instance ID. You can use tag names and tag values to add multiple instances.<br />8. Under **Configure automation parameters**, choose **Constant** for incremental or differential backups. If you want full backup, choose **No Parameters**.<br />9. Choose whether to create a new role or to use an existing role. If you use an existing role, make sure that it has the policies required to invoke the target.<br />10. Keep the default additional settings, and choose **Next**.<br />11. The **Configure tags** screen is optional. Choose **next**.<br />12. On the **Review and create** screen, review the rule settings, and choose **Create**. The rule should be successfully created.You can verify backup success from the S3 bucket path.  <pre> s3:/<your_bucket_name>/<target folder>/<SID>/usr/sap/<SID>/SYS/global/hdb/backint/DB_<SID>/</pre><br />You can also verify backups from the SAP HANA backup catalog. | AWS administrator, SAP HANA administrator |
 
 ## Related resources
 <a name="automatically-back-up-sap-hana-databases-using-systems-manager-and-eventbridge-resources"></a>

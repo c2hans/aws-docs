@@ -23,5 +23,5 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| [Greengrass nucleus](greengrass-nucleus-component.md) | Version 2.18.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.18.2"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2026-07-20-2.18.2.html) |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | Version 2.18.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.18.2"></a>**Bug fixes and improvements**<br />   Fixes an issue where the nucleus could write unchanged configuration values to the configuration store.    |
 | [Greengrass CLI](greengrass-cli-component.md) | <a name="changelog-cli-2.18.2"></a>Updates the component version for the Greengrass nucleus version 2.18.2 release. |

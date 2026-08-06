@@ -40,8 +40,8 @@ You can perform filling on both target time series and related time series datas
 
 | Dataset type | Filling by default? | Supported filling methods | Default filling logic | Accepted filling logic |
 | --- | --- | --- | --- | --- |
-| Target time series | Yes | Middle and back filling | 0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/forecast/latest/dg/howitworks-missing-values.html)  |
-| Related time series | No | Middle, back, and future filling | No default |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/forecast/latest/dg/howitworks-missing-values.html)  |
+| Target time series | Yes | Middle and back filling | 0 |  +  `zero` - 0 filling. <br />+  `value` - an integer or float number. <br />+  `nan` - not a number. <br />+  `mean` - the mean value from the data series. <br />+  `median` - the median value from the data series. <br />+  `min` - the minimum value from the data series. <br />+  `max` - the maximum value from the data series.   |
+| Related time series | No | Middle, back, and future filling | No default |  +  `zero` - 0 filling. <br />+  `value` - an integer or float value. <br />+  `mean` - the mean value from the data series. <br />+  `median` - the median value from the data series. <br />+  `min` - the minimum value from the data series. <br />+  `max` - the maximum value from the data series.   |
 
 **Important**
 For both target and related time series datasets, `mean`, `median`, `min`, and `max` are calculated based on a rolling window of the 64 most recent data entries before the missing values.

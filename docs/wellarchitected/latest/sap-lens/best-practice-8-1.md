@@ -29,7 +29,7 @@ Operating system encryption options include BitLocker, DM-crypt and SuSE Remote 
 
 | Database | Guidance |
 | --- | --- |
-| SAP HANA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-8-1.html)  |
+| SAP HANA |  +  SAP Documentation: [Server-Side Data Encryption Services](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/LATEST/en-US/b30fda1483b34628802a8d62bd5d39df.html) <br />+  SAP Documentation:[HANA Local Secure Store (LSS)](https://help.sap.com/docs/SAP_HANA_PLATFORM/b3ee5778bc2e4a089d3299b82ec762a7/5a43dc48190f4543b0d840952d3dec55.html?&locale=en-US)   |
 | SAP ASE |  SAP Documentation: [SAP ASE Overview of Encryption](https://help.sap.com/viewer/833788dd3e9c413799014a0fd002d0b2/LATEST/en-US/a7b86bb3bc2b1014b9b08178723a5ee2.html)  |
 | IBM Db2 |  IBM Documentation: [Db2 Encryption Overview](https://www.ibm.com/docs/en/db2/11.5?topic=encryption-overview)  |
 | Oracle | SAP Note: [2591575 - Using Oracle Transparent Data Encryption (TDE) with SAP NetWeaver](https://launchpad.support.sap.com/#/notes/2591575) [Requires SAP Portal Access]  |

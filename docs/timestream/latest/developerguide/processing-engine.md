@@ -28,6 +28,9 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 
  These certified plugins are ready to use and can be configured through trigger arguments to meet your specific requirements.
 
+**Important**
+Custom plugins are **not** currently supported. Only InfluxData certified plugins listed in this documentation can be deployed. You cannot upload or execute your own Python code as plugins at this time.
+
 ## Plugin types and trigger specifications
 <a name="plugin-types-and-trigger-specifications"></a>
 

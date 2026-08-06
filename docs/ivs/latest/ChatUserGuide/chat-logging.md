@@ -40,7 +40,7 @@ When at least one active logging configuration is associated with a room, every 
 | --- | --- |
 | `event_timestamp` | UTC timestamp of when the message was received by Amazon IVS Chat. |
 | `payload` | The [Message (Subscribe)](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/actions-message-subscribe.html) or [Event (Subscribe)](https://docs.aws.amazon.com//ivs/latest/chatmsgapireference/actions-event-subscribe.html) JSON payload that clients will receive from the Amazon IVS Chat service. |
-| `type` | Type of the chat message.[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/ChatUserGuide/chat-logging.html) |
+| `type` | Type of the chat message.+  Valid Values: `MESSAGE` \| `EVENT`  |
 | `version` | Version of the message-content format. |
 
 ## Amazon S3 Bucket

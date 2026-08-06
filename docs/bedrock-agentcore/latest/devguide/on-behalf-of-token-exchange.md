@@ -139,7 +139,7 @@ AgentCore Identity first performs [machine-to-machine authentication (OAuth 2.0 
 
 | Parameter | Value |
 | --- | --- |
-|  `actor_token_content`  |  `M2M` [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/on-behalf-of-token-exchange.html) |
+|  `actor_token_content`  |  `M2M` +  we map it to `urn:ietf:params:oauth:token-type:access_token` when constructing token exchange request <br />+  we obtain access token via `client_credentials` grant  |
 
 The optional `actorTokenScopes` configuration is used as the `scope` parameters for the client credentials request.
 
@@ -150,7 +150,7 @@ AgentCore Identity calls [https://docs.aws.amazon.com/STS/latest/APIReference/AP
 
 | Parameter | Value |
 | --- | --- |
-|  `actor_token_content`  |  `AWS_IAM_ID_TOKEN_JWT` [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/on-behalf-of-token-exchange.html) |
+|  `actor_token_content`  |  `AWS_IAM_ID_TOKEN_JWT` +  we map it to `urn:ietf:params:oauth:token-type:jwt` when constructing token exchange request <br />+  we obtain JWT via [https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetWebIdentityToken.html)   |
 
 This mode requires your account to be enabled for outbound web identity federation. See [https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOutboundWebIdentityFederation.html](https://docs.aws.amazon.com/IAM/latest/APIReference/API_EnableOutboundWebIdentityFederation.html).
 

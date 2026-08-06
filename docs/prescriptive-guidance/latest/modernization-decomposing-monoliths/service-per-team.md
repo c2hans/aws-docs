@@ -11,7 +11,7 @@ Instead of decomposing monoliths by business capabilities or services, the servi
 |
 | Advantages | Disadvantages |
 | --- |--- |
-| Teams act independently with minimal coordination.Code bases and microservices are not shared by multiple teams.Teams can quickly innovate and iterate on product features.Different teams can use different technologies, frameworks, or programming languages. : These should be hidden behind a well-defined and stable API. | It can be difficult to align teams to end-user functionality or business capabilities.Additional effort is required to deliver larger, coordinated application increments, especially if there are circular dependencies between teams. |
+| + Teams act independently with minimal coordination.<br />+ Code bases and microservices are not shared by multiple teams.<br />+ Teams can quickly innovate and iterate on product features.<br />+ Different teams can use different technologies, frameworks, or programming languages. : These should be hidden behind a well-defined and stable API. | + It can be difficult to align teams to end-user functionality or business capabilities.<br />+ Additional effort is required to deliver larger, coordinated application increments, especially if there are circular dependencies between teams. |
 
 The following illustration shows how a monolith can be split into microservices that are managed, maintained, and delivered by individual teams.
 

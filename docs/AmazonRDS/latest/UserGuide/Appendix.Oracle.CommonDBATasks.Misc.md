@@ -229,7 +229,7 @@ To set parameters for some advisor tasks, use the Amazon RDS procedure `rdsadmin
 
 | Parameter name | Data type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
-| `p_task_name` | varchar2 | — | Yes | The name of the advisor task whose parameters you want to change. The following values are valid:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.Misc.html) |
+| `p_task_name` | varchar2 | — | Yes | The name of the advisor task whose parameters you want to change. The following values are valid:+  `AUTO_STATS_ADVISOR_TASK` <br />+  `INDIVIDUAL_STATS_ADVISOR_TASK` <br />+  `SYS_AUTO_SPM_EVOLVE_TASK` <br />+  `SYS_AUTO_SQL_TUNING_TASK`  |
 | `p_parameter` | varchar2 | — | Yes | The name of the task parameter. To find valid parameters for an advisor task, run the following query. Substitute {{p\_task\_name}} with a valid value for `p_task_name`:<pre>COL PARAMETER_NAME FORMAT a30<br />COL PARAMETER_VALUE FORMAT a30<br />SELECT PARAMETER_NAME, PARAMETER_VALUE<br />FROM DBA_ADVISOR_PARAMETERS<br />WHERE TASK_NAME='{{p_task_name}}'<br />AND PARAMETER_VALUE != 'UNUSED'<br />ORDER BY PARAMETER_NAME;</pre> |
 | `p_value` | varchar2 | — | Yes | The value for a task parameter. To find valid values for task parameters, run the following query. Substitute {{p\_task\_name}} with a valid value for `p_task_name`:<pre>COL PARAMETER_NAME FORMAT a30<br />COL PARAMETER_VALUE FORMAT a30<br />SELECT PARAMETER_NAME, PARAMETER_VALUE<br />FROM DBA_ADVISOR_PARAMETERS<br />WHERE TASK_NAME='{{p_task_name}}'<br />AND PARAMETER_VALUE != 'UNUSED'<br />ORDER BY PARAMETER_NAME;</pre> |
 

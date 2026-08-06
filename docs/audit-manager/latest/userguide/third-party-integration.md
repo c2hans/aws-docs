@@ -52,12 +52,12 @@ With the MetricStream and Audit Manager integration, you can perform the followi
 
 | Task | API operation |
 | --- | --- |
-| Setting up the Audit Manager integration |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/third-party-integration.html)  |
-| Reviewing Audit Manager resources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/third-party-integration.html)  |
-| Creating Audit Manager resources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/third-party-integration.html)  |
-| Updating Audit Manager resources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/third-party-integration.html)  |
-| Managing evidence |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/third-party-integration.html)  |
-| Deleting Audit Manager resources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/third-party-integration.html)  |
+| Setting up the Audit Manager integration |  +  [GetAccountStatus](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetAccountStatus.html) <br />+  [GetOrganizationAdminAccount](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetOrganizationAdminAccount.html) <br />+  [GetSettings](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetSettings.html)   |
+| Reviewing Audit Manager resources |  +  [GetAssessment](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetAssessment.html) <br />+  [GetAssessmentFramework](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetAssessmentFramework.html) <br />+  [GetControl](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_GetControl.html) <br />+  [ListAssessmentFrameworks](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListAssessmentFrameworks.html) <br />+  [ListControls](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_ListControls.html)   |
+| Creating Audit Manager resources |  +  [CreateAssessment](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_CreateAssessment.html) <br />+  [CreateAssessmentFramework](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_CreateAssessmentFramework.html)   |
+| Updating Audit Manager resources |  +  [UpdateAssessment](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_UpdateAssessment.html) <br />+  [UpdateAssessmentControl](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_UpdateAssessmentControl.html) <br />+  [UpdateAssessmentStatus](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_UpdateAssessmentStatus.html)   |
+| Managing evidence |  +  [StartQuery](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_StartQuery.html) (AWS CloudTrail API)  <br />+  [GetQueryResults](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_GetQueryResults.html) (AWS CloudTrail API)    |
+| Deleting Audit Manager resources |  +  [DeleteAssessmentFramework](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_DeleteAssessmentFramework.html)   |
 
 **Related MetricStream links**
 + [AWS Marketplace link](https://aws.amazon.com/marketplace/pp/prodview-5ph5amfrrmyx4?qid=1616170904192&sr=0-1&ref_=srh_res_product_title)

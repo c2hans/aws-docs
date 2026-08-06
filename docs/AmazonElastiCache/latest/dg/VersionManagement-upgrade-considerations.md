@@ -38,7 +38,7 @@ When upgrading a node-based Valkey or Redis OSS cluster, consider the following.
   + In each shard, Amazon ElastiCache creates a new set of nodes running the new engine version. A new node syncs with the existing primary node. After the sync is complete, a failover promotes the new node to primary. The remaining new nodes then sync with the new primary, and the old nodes are removed from the cluster.
   + During this process, there is a brief period where both old and new nodes are visible in the cluster topology. Clients connecting to new replica nodes that are still loading data might receive errors. To handle this transient state, we recommend implementing [Best practices for clients (Valkey and Redis OSS)](BestPractices.Clients.redis.md) with error retries and exponential backoff.
   + Across all the shards, primary failovers are processed in series. Only one primary node is failed over at a time.
-+ If encryption is enabled on your current cluster or replication group, you cannot upgrade to an engine version that does not support encryption, such as from 3.2.6 to 3.2.10.
++ If encryption is enabled on your current cluster or replication group, you cannot upgrade to an engine version that does not support encryption.
 
 **Memcached considerations**
 

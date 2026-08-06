@@ -90,7 +90,7 @@ The calculated field description.
 *Required*: No
 *Type*: String
 *Minimum*: `0`
-*Maximum*: `256`
+*Maximum*: `500`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `CalculatedFieldName`  <a name="cfn-quicksight-topic-topiccalculatedfield-calculatedfieldname"></a>

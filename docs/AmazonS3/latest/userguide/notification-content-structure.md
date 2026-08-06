@@ -13,6 +13,8 @@ This example shows *version 2.5* of the event notification JSON structure. Previ
 
 Starting with version 2.4, Amazon S3 uses a single unified version for all event types, and the version increments consistently across all event types whenever the schema evolves. Each event contains extra information specific to the operation.
 
+The maximum size of an event notification message is 64 KB. When using Amazon SQS as a destination, we recommend that you set your queue's `MaximumMessageSize` attribute to at least 64 KB. If an event notification exceeds the queue's configured `MaximumMessageSize`, Amazon SQS rejects the notification and doesn't deliver the event. For more information, see [Event notification types and destinations](notification-how-to-event-types-and-destinations.md).
+
 ```
 {
    "Records":[

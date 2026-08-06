@@ -9,7 +9,7 @@ The following table provides Amazon Aurora DB engines that support Database Insi
 
 | Amazon Aurora DB engine | Supported engine versions and Regions | Instance class restrictions |
 | --- | --- | --- |
-| Amazon Aurora MySQL-Compatible Edition | For more information on version and Region availability of Database Insights with Aurora MySQL, see [Performance Insights with Aurora MySQL](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.amy). | Database Insights has the following engine class restrictions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.Engines.html) |
+| Amazon Aurora MySQL-Compatible Edition | For more information on version and Region availability of Database Insights with Aurora MySQL, see [Performance Insights with Aurora MySQL](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.amy). | Database Insights has the following engine class restrictions:+  db.t2 – Not supported <br />+  db.t3 – Not supported <br />+  db.t4g.micro and db.t4g.small – Not supported  |
 | Amazon Aurora PostgreSQL-Compatible Edition | For more information on version and Region availability of Database Insights with Aurora PostgreSQL, see [Performance Insights with Aurora PostgreSQL](Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.md#Concepts.Aurora_Fea_Regions_DB-eng.Feature.PerfInsights.apg). | Not applicable |
 | Aurora PostgreSQL Limitless Database | For more information about using Database Insights with Aurora PostgreSQL Limitless Database, see [Monitoring Aurora PostgreSQL Limitless Database with CloudWatch Database Insights](limitless-monitoring.cwdbi.md). | Not applicable |
 
@@ -24,7 +24,7 @@ The following table provides Amazon Aurora DB engines that support Database Insi
 | --- | --- | --- | --- | --- |
 | [SQL statistics for Performance Insights](sql-statistics.md) | All | All | All | All |
 | [Analyzing database performance for a period of time](USER_PerfInsights.UsingDashboard.AnalyzePerformanceTimePeriod.md) | Paid tier only | All | All | All except db.serverless (Aurora serverless) |
-| [Viewing Performance Insights proactive recommendations](USER_PerfInsights.InsightsRecommendationViewDetails.md) | Paid tier only | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_DatabaseInsights.Engines.html)  | All | All except db.serverless (Aurora serverless) |
+| [Viewing Performance Insights proactive recommendations](USER_PerfInsights.InsightsRecommendationViewDetails.md) | Paid tier only | + US East (Ohio)<br />+ US East (N. Virginia)<br />+ US West (N. California)<br />+ US West (Oregon)<br />+ Asia Pacific (Mumbai)<br />+ Asia Pacific (Seoul)<br />+ Asia Pacific (Singapore)<br />+ Asia Pacific (Sydney)<br />+ Asia Pacific (Tokyo)<br />+ Canada (Central)<br />+ Europe (Frankfurt)<br />+ Europe (Ireland)<br />+ Europe (London)<br />+ Europe (Paris)<br />+ Europe (Stockholm)<br />+ South America (São Paulo)  | All | All except db.serverless (Aurora serverless) |
 
 ## Amazon Aurora Region support for Database Insights
 <a name="database-insights-region-support"></a>

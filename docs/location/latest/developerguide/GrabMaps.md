@@ -46,6 +46,7 @@ source_url: https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.
   + Suggest
   + SearchText
   + GetPlace
+  + SearchNearby
 + Routes:
   + CalculateRoutes
   + CalculateRouteMatrix

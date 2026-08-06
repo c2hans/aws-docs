@@ -158,12 +158,12 @@ For clusters composed of instance fleets, the cluster capacity metrics are measu
 
 | Metric | Description |
 | --- | --- |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html) | The target total number of units/nodes/vCPUs in a cluster as determined by managed scaling.<br />Units: *Count* |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html)  | The current total number of units/nodes/vCPUs available in a running cluster. When a cluster resize is requested, this metric will be updated after the new instances are added or removed from the cluster.<br />Units: *Count* |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html)  | The target number of CORE units/nodes/vCPUs in a cluster as determined by managed scaling.<br />Units: *Count* |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html)  | The current number of CORE units/nodes/vCPUs running in a cluster.<br />Units: *Count* |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html)  | The target number of TASK units/nodes/vCPUs in a cluster as determined by managed scaling.<br />Units: *Count* |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html)  | The current number of TASK units/nodes/vCPUs running in a cluster.<br />Units: *Count* |
+| +  `TotalUnitsRequested` <br />+  `TotalNodesRequested` <br />+  `TotalVCPURequested`  | The target total number of units/nodes/vCPUs in a cluster as determined by managed scaling.<br />Units: *Count* |
+| +  `TotalUnitsRunning` <br />+  `TotalNodesRunning` <br />+  `TotalVCPURunning`   | The current total number of units/nodes/vCPUs available in a running cluster. When a cluster resize is requested, this metric will be updated after the new instances are added or removed from the cluster.<br />Units: *Count* |
+| +  `CoreUnitsRequested` <br />+  `CoreNodesRequested` <br />+  `CoreVCPURequested`   | The target number of CORE units/nodes/vCPUs in a cluster as determined by managed scaling.<br />Units: *Count* |
+| +  `CoreUnitsRunning` <br />+  `CoreNodesRunning` <br />+  `CoreVCPURunning`   | The current number of CORE units/nodes/vCPUs running in a cluster.<br />Units: *Count* |
+| +  `TaskUnitsRequested` <br />+  `TaskNodesRequested` <br />+  `TaskVCPURequested`   | The target number of TASK units/nodes/vCPUs in a cluster as determined by managed scaling.<br />Units: *Count* |
+| +  `TaskUnitsRunning` <br />+  `TaskNodesRunning` <br />+  `TaskVCPURunning`   | The current number of TASK units/nodes/vCPUs running in a cluster.<br />Units: *Count* |
 
 Amazon EMR emits the following metrics at a one-minute granularity when you enable auto-termination using an auto-termination policy. Some metrics are only available for Amazon EMR versions 6.4.0 and later. To learn more about auto-termination, see [Using an auto-termination policy for Amazon EMR cluster cleanup](emr-auto-termination-policy.md).
 
@@ -172,7 +172,7 @@ Amazon EMR emits the following metrics at a one-minute granularity when you enab
 | Metric | Description |
 | --- | --- |
 | TotalNotebookKernels | The total number of running and idle notebook kernels on the cluster. This metric is only available for Amazon EMR versions 6.4.0 and later. |
-| AutoTerminationIsClusterIdle | Indicates whether the cluster is in use.A value of **0** indicates that the cluster is in active use by one of the following components:[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/UsingEMR_ViewingMetrics.html)<br />A value of **1** indicates that the cluster is idle. Amazon EMR checks for continuous cluster idleness (`AutoTerminationIsClusterIdle` = 1). When a cluster's idle time equals the `IdleTimeout` value in your auto-termination policy, Amazon EMR terminates the cluster. |
+| AutoTerminationIsClusterIdle | Indicates whether the cluster is in use.A value of **0** indicates that the cluster is in active use by one of the following components:+  A YARN application <br />+  HDFS <br />+  A notebook <br />+  An on-cluster UI, such as the Spark History Server <br />A value of **1** indicates that the cluster is idle. Amazon EMR checks for continuous cluster idleness (`AutoTerminationIsClusterIdle` = 1). When a cluster's idle time equals the `IdleTimeout` value in your auto-termination policy, Amazon EMR terminates the cluster. |
 
 ### Dimensions for Amazon EMR metrics
 <a name="emr-metrics-dimensions"></a>

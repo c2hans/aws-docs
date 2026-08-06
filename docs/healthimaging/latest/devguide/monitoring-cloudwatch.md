@@ -46,7 +46,7 @@ Account-level metrics provide aggregated visibility across all data stores in yo
 | --- | --- |
 | DataStoreCount | The number of data stores with active status.<br />Units: Count<br />Valid statistics: Sum, Average |
 | ImageSetCount | The total number of image sets across all data stores.<br />Units: Count<br />Valid statistics: Sum, Average |
-| StorageBytes | The amount of data in bytes stored across all data stores in the following storage tiers:[See the AWS documentation website for more details](http://docs.aws.amazon.com/healthimaging/latest/devguide/monitoring-cloudwatch.html)<br />This value is calculated by summing the size of all image sets in all data stores.<br />Valid storage-tier filters (See the [`StorageTier`](#dimensions-cloudwatch) dimension):[See the AWS documentation website for more details](http://docs.aws.amazon.com/healthimaging/latest/devguide/monitoring-cloudwatch.html)<br />Units: Bytes<br />Valid statistics: Sum, Average |
+| StorageBytes | The amount of data in bytes stored across all data stores in the following storage tiers:+ Frequent Access `(FrequentAccessStorage)`<br />+ Archive Instant Access `(ArchiveInstantAccessStorage)`<br />This value is calculated by summing the size of all image sets in all data stores.<br />Valid storage-tier filters (See the [`StorageTier`](#dimensions-cloudwatch) dimension):+ `FrequentAccessStorage`<br />+ `ArchiveInstantAccessStorage`<br />+ `AllStorage`<br />Units: Bytes<br />Valid statistics: Sum, Average |
 
 ### Data Store-Level Metrics
 <a name="datastore-level-metrics"></a>
@@ -60,7 +60,7 @@ Data store-level metrics provide detailed visibility into individual data store.
 | TotalImageSetCount | The total number of image sets in the data store.<br />Units: Count<br />Valid statistics: Sum, Average |
 | PrimaryImageSetCount | The number of primary image sets in the datastore.<br />Units: Count<br />Valid statistics: Sum, Average |
 | SmallImageSetCount | The number of image sets less than 5MB in the datastore.<br />Units: Count<br />Valid statistics: Sum, Average |
-| StorageBytes | The amount of data in bytes stored across all data stores in the following storage tiers:[See the AWS documentation website for more details](http://docs.aws.amazon.com/healthimaging/latest/devguide/monitoring-cloudwatch.html)<br />This value is calculated by summing the size of all image sets in the data store.<br />Valid storage-tier filters (See the [`StorageTier`](#dimensions-cloudwatch) dimension):[See the AWS documentation website for more details](http://docs.aws.amazon.com/healthimaging/latest/devguide/monitoring-cloudwatch.html)<br />Units: Bytes<br />Valid statistics: Sum, Average |
+| StorageBytes | The amount of data in bytes stored across all data stores in the following storage tiers:+ Frequent Access `(FrequentAccessStorage)`<br />+ Archive Instant Access `(ArchiveInstantAccessStorage)`<br />This value is calculated by summing the size of all image sets in the data store.<br />Valid storage-tier filters (See the [`StorageTier`](#dimensions-cloudwatch) dimension):+ FrequentAccessStorage<br />+ ArchiveInstantAccessStorage<br />+ AllStorage<br />Units: Bytes<br />Valid statistics: Sum, Average |
 | DICOMStudyCount | The number of DICOM studies in the datastore.<br />Units: Count<br />Valid statistics: Sum, Average |
 | DICOMSeriesCount | The number of DICOM series in the datastore.<br />Units: Count<br />Valid statistics: Sum, Average |
 | DICOMInstanceCount | The number of DICOM instances in the datastore.<br />Units: Count<br />Valid statistics: Sum, Average |
@@ -77,7 +77,7 @@ The following dimensions are used to filter HealthImaging metrics.
 | --- | --- |
 | AccountId | This dimension filters the data for the identified AWS account. |
 | DatastoreId | This dimension filters the data for the identified data store only. |
-| StorageTier | This dimension filters the data by the following storage tiers:[See the AWS documentation website for more details](http://docs.aws.amazon.com/healthimaging/latest/devguide/monitoring-cloudwatch.html) |
+| StorageTier | This dimension filters the data by the following storage tiers:+  `FrequentAccessStorage` – The number of bytes used for image sets in Frequent Access storage. <br />+  `ArchiveInstantAccessStorage` – The number of bytes used for image sets in Archive Instant Access storage. <br />+  `AllStorage` – The total number of bytes across all storage tiers.  |
 
 ## Accessing HealthImaging Metrics
 <a name="accessing-metrics"></a>

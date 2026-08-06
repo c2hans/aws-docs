@@ -13,6 +13,10 @@ Before using Policy in Amazon Bedrock AgentCore, it’s important to understand 
 + [Principal types](#concept-principal-types)
 + [Cedar](#concept-cedar)
 + [Cedar Policy](#concept-cedar-policy)
++ [Dogwood](#concept-dogwood)
++ [Temporal policies](#concept-temporal-policy)
++ [Guardrails](#concept-guardrails)
++ [Policy session](#concept-policy-session)
 + [Policy engine](#concept-policy-engine)
 + [Cedar Schema](#concept-cedar-schema)
 + [Cedar validation](#concept-cedar-validation)
@@ -45,6 +49,26 @@ Cedar policies use principals to represent the entity making an authorization re
 <a name="concept-cedar-policy"></a>
 
 A Cedar policy is a declarative statement that permits or forbids access to gateway tools. Each policy specifies who (principal) can perform what action (tool invocation) on which resource (gateway) under what conditions. Policies are evaluated for every tool invocation request.
+
+## Dogwood
+<a name="concept-dogwood"></a>
+
+ [Dogwood](https://dogwood-policy.github.io/dogwood/index.html) is an open-source policy language on the Dogwood Policy website that is compatible with Cedar: every valid Cedar policy is also a valid Dogwood policy, so your existing Cedar policies work unchanged. Beyond the point-in-time conditions you can already express, Dogwood also supports session-aware *temporal* conditions and *information providers*, such as Guardrails, that supply computed signals to a policy. Dogwood policies are evaluated against a policy session that groups related requests.
+
+## Temporal policies
+<a name="concept-temporal-policy"></a>
+
+Most Cedar policies are stateless: each request is evaluated on its own. A *temporal policy* adds conditions that depend on what happened earlier in the same session, such as requiring a prior approval, limiting how often an action runs, or keeping a running total under a threshold. Temporal policies are written in Dogwood, which is compatible with Cedar, and are evaluated against a policy session that groups related requests. For more information, see [Temporal policies](policy-temporal.md).
+
+## Guardrails
+<a name="concept-guardrails"></a>
+
+Guardrails are information providers that a Dogwood policy can consult inline. At evaluation time, a guardrail computes a content-safety signal for the request — such as a content-filter, prompt-attack, or sensitive-information score — and the policy permits or forbids the action based on that result. For more information, see [Guardrails in policies](policy-guardrails-in-policies.md).
+
+## Policy session
+<a name="concept-policy-session"></a>
+
+A policy session is a sequence of related Gateway invocations grouped under one session ID, which you supply on requests in the `x-amzn-bedrock-agentcore-policy-session-id` header. Temporal policies evaluate against a policy session: a temporal condition considers only the events recorded for the same session as the request being authorized. For more information, see [Policy sessions and identity propagation](policy-session-based-temporal.md).
 
 ## Policy engine
 <a name="concept-policy-engine"></a>

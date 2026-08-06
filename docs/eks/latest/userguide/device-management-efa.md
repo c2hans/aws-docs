@@ -11,9 +11,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
  [Elastic Fabric Adapter](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html) (EFA) is a network device for Amazon EC2 instances that enables high-performance inter-node communication and RDMA (Remote Direct Memory Access) for artificial intelligence, machine learning, and High Performance Computing (HPC) workloads. Amazon EKS supports two mechanisms for managing EFA devices in EKS clusters: the *EFA Dynamic Resource Allocation (DRA) driver (DRANET)* and the *EFA device plugin*.
 
-It’s recommended to use the EFA DRA driver (DRANET) for new deployments on EKS clusters running Kubernetes version 1.34 or later with EKS managed node groups or self-managed node groups. The EFA DRA driver makes it possible for you to configure topology-aware allocation that pairs EFA interfaces with their topologically-local GPUs or Neuron devices, and supports device sharing between Pods.
-
-The EFA DRA driver is not supported with Karpenter or EKS Auto Mode. Use the [EFA device plugin](#eks-efa-device-plugin) with Karpenter and EKS Auto Mode. The EFA device plugin also remains supported for EKS managed node groups and self-managed nodes.
+We recommend using DRA drivers for new deployments with Kubernetes versions 1.34 and later when using [static capacity provisioning](https://karpenter.sh/docs/concepts/nodepools/#static-nodepool) in Karpenter, EKS managed node groups, or self-managed nodes. DRA is not currently supported with EKS Auto Mode. With the EFA DRA driver, you can configure topology-aware allocation that pairs EFA interfaces with their topologically-local GPUs or Neuron devices, and share devices between Pods.
 
 ## EFA DRA driver vs. EFA device plugin
 <a name="eks-efa-dra-vs-device-plugin"></a>
@@ -21,8 +19,8 @@ The EFA DRA driver is not supported with Karpenter or EKS Auto Mode. Use the [EF
 | Feature | EFA DRA driver | EFA device plugin |
 | --- | --- | --- |
 | Minimum Kubernetes version | 1.34 | All EKS-supported Kubernetes versions |
-| EKS Compute | Managed node groups, self-managed nodes | EKS Auto Mode, Karpenter, managed node groups, self-managed nodes |
-| EKS-optimized AMIs | AL2023 (NVIDIA, Neuron), Bottlerocket | AL2023 (NVIDIA, Neuron), Bottlerocket |
+| EKS Compute | Karpenter (static capacity only), managed node groups, self-managed nodes | EKS Auto Mode, Karpenter, managed node groups, self-managed nodes |
+| EKS-optimized AMIs | AL2023, Bottlerocket | AL2023, Bottlerocket |
 | Device advertisement | Rich attributes via `ResourceSlice` objects including device type, topology, and PCIe locality | Integer count of `vpc.amazonaws.com/efa` extended resources |
 | GPU-EFA affinity | DRA-native topology-awareness | Automatic topology-awareness (EKS-optimized AL2023 AMIs only) |
 | Neuron-EFA affinity | DRA-native topology-awareness | Automatic topology-awareness (EKS-optimized AL2023 AMIs only) |
@@ -217,7 +215,7 @@ Do not specify `SubnetId` in the launch template when using EKS managed node gro
 ## Using EKS-optimized AMIs with EFA
 <a name="eks-amis-efa"></a>
 
-The EKS-optimized AL2023 accelerated AMIs (NVIDIA and Neuron) and all Bottlerocket AMIs include the host-level components required to use EFA, specifically the components installed by the [aws-efa-installer](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html#efa-start-enable). The EKS AL2023 and Bottlerocket AMIs **do not include** the EFA DRA driver or EFA device plugin, and these must be installed separately on your cluster before deploying workloads.
+The EKS-optimized AL2023 AMIs and all Bottlerocket AMIs include the host-level components required to use EFA, specifically the components installed by the [aws-efa-installer](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html#efa-start-enable). The EKS AL2023 and Bottlerocket AMIs **do not include** the EFA DRA driver or EFA device plugin, and these must be installed separately on your cluster before deploying workloads.
 
 ## Conserving IP address allocation
 <a name="eks-efa-conserve-ip"></a>
@@ -229,18 +227,18 @@ To reduce IP address consumption on EFA-enabled nodes, configure your network in
 In addition to using `efa-only` interfaces, you can configure the Amazon VPC CNI to limit the number of warm (pre-allocated) IP addresses and ENIs. By default, the VPC CNI pre-allocates a warm pool of ENIs and IP addresses for faster Pod startup, but on large instances this can reserve hundreds of unused IP addresses. Set the `WARM_IP_TARGET` and `WARM_ENI_TARGET` environment variables on the `aws-node` DaemonSet to control how many spare IP addresses and ENIs the CNI maintains. For more information on these settings, see [Amazon VPC CNI best practices](https://docs.aws.amazon.com/eks/latest/best-practices/vpc-cni.html#_overview).
 
 **Note**
-The `WARM_ENI_TARGET` and `WARM_IP_TARGET` settings are cluster-wide and apply to all nodes managed by the VPC CNI. There is currently no way to set different values per node group or instance type. If you need more granular control of these settings, provide feedback on [containers-roadmap issue \#1834](https://github.com/aws/containers-roadmap/issues/1834).
+The `WARM_ENI_TARGET` and `WARM_IP_TARGET` settings are cluster-wide and apply to all nodes managed by the VPC CNI. There is currently no way to set different values for each node group or instance type. If you need more granular control of these settings, provide feedback on [containers-roadmap issue \#1834](https://github.com/aws/containers-roadmap/issues/1834) on GitHub.
 
 ## Install the EFA DRA driver (DRANET)
 <a name="efa-dra-driver"></a>
 
-The EFA DRA driver is built in the upstream [DRANET](https://github.com/kubernetes-sigs/dranet) project, which provides cloud-aware network device management for Kubernetes DRA. *EFA DRA driver* and *DRANET* are used interchangeably throughout this documentation and refer to the same tool.
+The EFA DRA driver is built in the upstream [DRANET](https://github.com/kubernetes-sigs/dranet) project on GitHub, which provides cloud-aware network device management for Kubernetes DRA. *EFA DRA driver* and *DRANET* are used interchangeably throughout this documentation and refer to the same tool.
 
 The EFA DRA driver advertises EFA devices as `ResourceSlice` objects with the driver name `dra.net` and the `DeviceClass` name `efa.networking.k8s.aws`. The EFA DRA driver runs as a DaemonSet on each node and automatically discovers EFA devices.
 
 ### Prerequisites
 <a name="_prerequisites"></a>
-+ An Amazon EKS cluster running Kubernetes version 1.34 or later with EKS managed node groups or self-managed node groups.
++ An Amazon EKS cluster running Kubernetes version 1.34 or later with static capacity provisioned by Karpenter, EKS managed node groups, or self-managed node groups.
 + Nodes with EFA-enabled Amazon EC2 instance types. For a list of supported instance types, see [Supported instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html#efa-instance-types) in the *Amazon EC2 User Guide*.
 + Nodes with host-level components installed for EFA, see [Install the EFA software](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html#efa-start-enable) for more information. The EKS-optimized AL2023 NVIDIA and Neuron AMIs, and the Bottlerocket AMIs include the EFA host-level components.
 + Helm installed in your command-line environment, see the [Setup Helm instructions](helm.md) for more information.
@@ -250,7 +248,7 @@ The EFA DRA driver advertises EFA devices as `ResourceSlice` objects with the dr
 <a name="_procedure"></a>
 
 **Important**
-Do not install the EFA DRA driver on nodes where the EFA device plugin is running. The two mechanisms cannot coexist on the same node. See upstream Kubernetes [KEP-5004](https://github.com/kubernetes/enhancements/issues/5004) for updates.
+Do not install the EFA DRA driver on nodes where the EFA device plugin is running. The two mechanisms cannot coexist on the same node. Doing so can cause silent oversubscription of the underlying devices to multiple pods on the same node.
 
 1. Add the EKS Helm chart repository.
 
@@ -264,7 +262,7 @@ Do not install the EFA DRA driver on nodes where the EFA device plugin is runnin
    helm repo update
    ```
 
-1. Install the EFA DRA driver on your cluster using Helm. The EFA DRA driver automatically detects that it is running on EC2 instances via the Instance Metadata Service (IMDS) and enables EFA device discovery. The EFA DRA driver is deployed as a DaemonSet in the `kube-system` namespace by default. See the Helm values.yaml in the [EKS Helm chart GitHub repository](https://github.com/aws/eks-charts/tree/master/stable/aws-dranet) for the configurable parameters.
+1. Install the EFA DRA driver on your cluster using Helm. The EFA DRA driver automatically detects that it is running on EC2 instances via the Instance Metadata Service (IMDS) and enables EFA device discovery. The EFA DRA driver is deployed as a DaemonSet in the `kube-system` namespace by default. See the Helm values.yaml in the [EKS Helm chart repository](https://github.com/aws/eks-charts/tree/master/stable/aws-dranet) on GitHub for the configurable parameters.
 
    ```
    helm install aws-dranet eks/aws-dranet --namespace kube-system
@@ -339,7 +337,7 @@ Do not install the EFA DRA driver on nodes where the EFA device plugin is runnin
 ## Topology-aware EFA and GPU/Neuron device allocation
 <a name="efa-dra-topology-aware"></a>
 
-The EFA DRA driver supports topology-aware allocation that pairs EFA interfaces with GPUs or Neuron devices on the same PCIe root. Use the `matchAttribute` constraint to align EFA and GPU or Neuron device allocations. To use this capability, you must also use the NVIDIA or Neuron DRA drivers. For more information, see [Manage NVIDIA GPU devices on Amazon EKS](device-management-nvidia.md) and [Manage Neuron devices on Amazon EKS](device-management-neuron.md).
+The EFA DRA driver supports topology-aware allocation that pairs EFA interfaces with GPUs or Neuron devices on the same PCIe root. Use the `matchAttribute` constraint to align EFA and GPU or Neuron device allocations. To use this capability, you must also use the NVIDIA or Neuron DRA drivers. For more information, see [Manage NVIDIA GPUs on Amazon EKS](device-management-nvidia.md) and [Manage Neuron devices on Amazon EKS](device-management-neuron.md).
 
 The following example requests 1 EFA interface aligned with 1 NVIDIA GPU:
 
@@ -483,17 +481,17 @@ Both Pods reference the same `shared-efa` `ResourceClaim` and are scheduled to t
 The EFA Kubernetes device plugin advertises EFA devices as `vpc.amazonaws.com/efa` extended resources. You request EFA devices in container resource requests and limits. For a complete walkthrough of setting up EFA with training workloads, see [Run machine learning training on Amazon EKS with Elastic Fabric Adapter](node-efa.md).
 
 **Important**
-Topology-aligned allocation of NVIDIA GPUs or Neuron devices with EFA interfaces happens automatically when using the EKS-optimized AL2023 accelerated AMIs. This automatic alignment does not occur when using Bottlerocket EKS-optimized AMIs or custom AMIs. If you need topology-aligned accelerator and EFA device allocation with Bottlerocket or custom AMIs, use the EFA DRA driver and the corresponding Neuron DRA driver. The NVIDIA DRA driver is not supported on Bottlerocket. For more information, see [Topology-aware EFA and GPU/Neuron device allocation](#efa-dra-topology-aware).
+Topology-aligned allocation of NVIDIA GPUs or Neuron devices with EFA interfaces happens automatically when using the EKS-optimized AL2023 accelerated AMIs. This automatic alignment does not occur when using Bottlerocket EKS-optimized AMIs or custom AMIs. If you need topology-aligned accelerator and EFA device allocation with Bottlerocket or custom AMIs, use the EFA DRA driver and the corresponding Neuron DRA driver. To use the NVIDIA DRA driver on Bottlerocket, you must first disable the NVIDIA device plugin that is bundled with the Bottlerocket NVIDIA variants, which requires Bottlerocket version 1.63.0 or later. For more information, see [Topology-aware EFA and GPU/Neuron device allocation](#efa-dra-topology-aware) and [Install the NVIDIA DRA driver](device-management-nvidia-dra-device-plugin.md#eks-nvidia-dra-driver).
 
 **Important**
-Starting with NVIDIA `k8s-device-plugin` v0.19.0, the `--mofed-enabled` flag defaults to `true`, which causes the NVIDIA device plugin to mount all `/dev/infiniband/uverbs*` devices into containers requesting GPUs. This conflicts with the EFA device plugin, which should be the component managing EFA device allocation at `/dev/infiniband`. If you are using EKS managed node groups or self-managed nodes with the NVIDIA device plugin, you must explicitly disable MOFED. For instructions, see [Install the NVIDIA Kubernetes device plugin](device-management-nvidia.md#nvidia-device-plugin).
+Starting with NVIDIA `k8s-device-plugin` v0.19.0, the `--mofed-enabled` flag defaults to `true`, which causes the NVIDIA device plugin to mount all `/dev/infiniband/uverbs*` devices into containers requesting GPUs. This conflicts with the EFA device plugin, which should be the component managing EFA device allocation at `/dev/infiniband`. If you are using EKS managed node groups or self-managed nodes with the NVIDIA device plugin, you must explicitly disable MOFED. For instructions, see [Install the NVIDIA Kubernetes device plugin](device-management-nvidia-dra-device-plugin.md#eks-nvidia-device-plugin).
 EKS Auto Mode does not enable MOFED by default and is not affected by this issue.
 
 ### Prerequisites
 <a name="_prerequisites_2"></a>
 + An Amazon EKS cluster.
 + Nodes with EFA-enabled Amazon EC2 instance types. For a list of supported instance types, see [Supported instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa.html#efa-instance-types) in the *Amazon EC2 User Guide*.
-+ Nodes with host-level components installed for EFA, see [Install the EFA software](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html#efa-start-enable) for more information. The EKS-optimized AL2023 NVIDIA and Neuron AMIs, and the Bottlerocket AMIs include the EFA host-level components.
++ Nodes with host-level components installed for EFA, see [Install the EFA software](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/efa-start.html#efa-start-enable) for more information. The EKS-optimized AL2023 AMIs and the Bottlerocket AMIs include the EFA host-level components.
 + Helm installed in your command-line environment, see the [Setup Helm instructions](helm.md) for more information.
 +  `kubectl` configured to communicate with your cluster, see [Install or update `kubectl`](install-kubectl.md#kubectl-install-update) for more information.
 

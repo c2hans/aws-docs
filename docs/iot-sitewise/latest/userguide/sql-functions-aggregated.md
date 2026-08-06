@@ -28,4 +28,4 @@ Examples of all functions:
 | MIN |  <pre>SELECT MIN(d.int_value) FROM raw_time_series AS d</pre>  |
 | SUM |  <pre>SELECT SUM(d.int_value) FROM raw_time_series AS d</pre>  |
 | STDDEV |  <pre>SELECT STDDEV(d.int_value) FROM raw_time_series AS d</pre>  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-aggregated.html)  |  <pre>SELECT MAX(d.int_value) AS max_int_value, d.asset_id <br />FROM raw_time_series AS d <br />GROUP BY d.asset_id <br />HAVING MAX(d.int_value) > 5                      <br /></pre>  |
+|  + GROUP BY<br />+  HAVING  |  <pre>SELECT MAX(d.int_value) AS max_int_value, d.asset_id <br />FROM raw_time_series AS d <br />GROUP BY d.asset_id <br />HAVING MAX(d.int_value) > 5                      <br /></pre>  |

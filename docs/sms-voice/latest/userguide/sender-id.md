@@ -74,7 +74,7 @@ The following table explains which Sender ID is displayed when you send SMS mess
 - **In a country or region where Sender IDs are supported but Sender ID registration isn't required**
   - **And your SMS message...:** Specifies a Sender ID / **The message is sent from...:** The Sender ID.
   - **And your SMS message...:** Doesn't specify a Sender ID, but the account includes a dedicated phone number for the SMS channel in the destination country / **The message is sent from...:** The dedicated phone number.
-  - **And your SMS message...:** Doesn't specify a Sender ID, and the account doesn't include a dedicated phone number for the SMS channel in the destination country / **The message is sent from...:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sms-voice/latest/userguide/sender-id.html)
+  - **And your SMS message...:** Doesn't specify a Sender ID, and the account doesn't include a dedicated phone number for the SMS channel in the destination country / **The message is sent from...:**  +  A random long or short code in countries and regions where Sender IDs aren't supported. <br />+  The word *NOTICE* in countries and regions where Sender IDs are supported.
 
 - **In a country or region where Sender IDs aren't supported**
   - **And your SMS message...:** Specifies a Sender ID / **The message is sent from...:** Varies depending on the destination country. In some countries, your message is sent using a random long code. In other countries, your message is sent using a shared short code. In the United States, you can only send messages using dedicated phone numbers. If you don't have a dedicated US phone number, your message isn't delivered.

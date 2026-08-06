@@ -10,7 +10,9 @@ This AWS Prescriptive Guidance leverages **W3C Semantic Web standards** — incl
 **AWS Partner solutions complement, implement portions of, or deliver the reference architecture in its entirety**, accelerating time-to-value and providing specialized capabilities tailored to specific use cases. Partners bring deep domain expertise in semantic technologies, ontology engineering, knowledge graph platforms, and agentic AI — enabling customers to leverage proven implementations, pre-built ontologies, and managed services that reduce complexity and operational overhead. Whether you're seeking a fully managed knowledge graph platform, specialized reasoning engines, ontology development tools, or end-to-end semantic layer implementations, AWS Partners offer flexible deployment options that align with your organization's maturity, scale, and strategic objectives. We encourage customers to explore partner solutions that best fit their requirements, and we remain committed to supporting a vibrant ecosystem that drives innovation in semantic AI.
 
 ## References
-<a name="references.9a11f658-c96b-524a-adef-5d9b6736c241"></a>
+<a name="references.a534a38c-48d5-5e12-9117-6677fadf9abb"></a>
++ **AWS Workshop**
+  + [Ontology as a Semantic Layer for Agentic AI Applications ](https://catalog.us-east-1.prod.workshops.aws/workshops/f434fc88-9794-473d-a66a-5f34f571b5cf/en-US)[(Access to artifacts to self-host)](https://github.com/aws-samples/amazon-neptune-generative-ai-samples/tree/main/workshops/Ontology_Semantic_Layer_KGC)
 + **W3C Semantic Web Standards:**
   + [https://www.w3.org/RDF/](https://www.w3.org/RDF/)
   + [https://www.w3.org/TR/rdf-schema/](https://www.w3.org/TR/rdf-schema/)

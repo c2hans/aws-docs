@@ -68,7 +68,7 @@ The time that this dashboard version was created.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataSetArns`  <a name="cfn-quicksight-dashboard-dashboardversion-datasetarns"></a>
-The Amazon Resource Numbers (ARNs) for the datasets that are associated with this version of the dashboard.
+The Amazon Resource Names (ARNs) for the datasets that are associated with this version of the dashboard.
 *Required*: No
 *Type*: Array of String
 *Minimum*: `0`

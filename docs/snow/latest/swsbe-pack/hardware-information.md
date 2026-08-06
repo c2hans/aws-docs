@@ -18,7 +18,7 @@ The following tables contain hardware specifications for Snowball Edge devices.
 | Item | Specification |
 | --- | --- |
 | Storage capacity | 42 TB of usable space plus 7.68 TB of dedicated NVMe SSD storage for instances. |
-| Data and network connections | Network connections:[See the AWS documentation website for more details](http://docs.aws.amazon.com/snow/latest/swsbe-pack/hardware-information.html) |
+| Data and network connections | Network connections:+  10 Gb – RJ45 1 <br />+  10 Gb – RJ45 2 <br />+  10/25 Gb – SFP\+  <br />+  45/50/100 Gb – QSFP\+  |
 | Thermal requirements | AWS Snowball Edge devices are designed for office operations, and are ideal for data center operations. |
 | Decibel output | On average, an AWS Snowball Edge device produces 68 decibels of sound, typically quieter than a vacuum cleaner or living-room music. |
 | Weight | 49.7 pounds (22.54 Kg) |
@@ -43,7 +43,7 @@ The following tables contain hardware specifications for Snowball Edge devices.
 | Item | Specification |
 | --- | --- |
 | Storage capacity | Snowball Edge devices have up to 80 TB of usable space. |
-| Data and network connections | Network connections:[See the AWS documentation website for more details](http://docs.aws.amazon.com/snow/latest/swsbe-pack/hardware-information.html) |
+| Data and network connections | Network connections:+  10 Gb – RJ45  <br />+  25 Gb – SFP\+  <br />+  40 Gb – QSFP\+  |
 | Thermal requirements | AWS Snowball Edge devices are designed for office operations, and are ideal for data center operations. |
 | Decibel output | On average, an AWS Snowball Edge device produces 68 decibels of sound, typically quieter than a vacuum cleaner or living-room music. |
 | Weight | 49.5 pounds (22.45 Kg) |

@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/host-static-website/host
 | --- |--- |
 | **AWS experience** | Beginner  |
 | **Time to complete** | 10 minutes  |
-| **Cost to complete** | Total cost of hosting your static website on AWS is dependent on your usage [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/host-static-website/host-static-website.html)<br />To see a breakdown of the services used and their associated costs, see pricing for [AWS Amplify](https://aws.amazon.com/amplify/pricing/?p=gsrc&c=ho_hsw) and [Amazon Route 53](https://aws.amazon.com/route53/pricing/?p=gsrc&c=ho_hsw).  |
+| **Cost to complete** | Total cost of hosting your static website on AWS is dependent on your usage +  Outside of [AWS Free Tier Limits](https://aws.amazon.com/free/?p=gsrc&c=ho_hsw): typically $1-3/mo.  <br />+  Within AWS Free Tier Limits: typically $0.50/mo.  <br />To see a breakdown of the services used and their associated costs, see pricing for [AWS Amplify](https://aws.amazon.com/amplify/pricing/?p=gsrc&c=ho_hsw) and [Amazon Route 53](https://aws.amazon.com/route53/pricing/?p=gsrc&c=ho_hsw).  |
 | **Get help** | [Troubleshooting Amplify](https://docs.amplify.aws/react/build-a-backend/troubleshooting/)  |
 | **Last updated** | July 16, 2024  |
 

@@ -59,6 +59,7 @@ Required: No
       }
    ],
    "Description": "string",
+   "LastUpdatedTime": number,
    "ResolvedCidrCount": number,
    "Status": "string",
    "Tags": [
@@ -101,6 +102,10 @@ Type: String
 Length Constraints: Maximum length of 512.
 Pattern: `^.*$`
 
+ ** [LastUpdatedTime](#API_DescribeContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-DescribeContainerAssociation-response-LastUpdatedTime"></a>
+The most recent time that Network Firewall updated the container association.
+Type: Timestamp
+
  ** [ResolvedCidrCount](#API_DescribeContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-DescribeContainerAssociation-response-ResolvedCidrCount"></a>
 The number of CIDR blocks resolved from the monitored containers.
 Type: Integer
@@ -109,7 +114,7 @@ Valid Range: Minimum value of 0. Maximum value of 1000000.
  ** [Status](#API_DescribeContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-DescribeContainerAssociation-response-Status"></a>
 The current status of the container association.
 Type: String
-Valid Values: `ACTIVE | CREATING | DELETING`
+Valid Values: `ACTIVE | CREATING | DELETING | UPDATING`
 
  ** [Tags](#API_DescribeContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-DescribeContainerAssociation-response-Tags"></a>
 The key:value pairs to associate with the resource.

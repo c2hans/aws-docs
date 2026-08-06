@@ -99,29 +99,29 @@ Due to the `podAntiAffinity` Kubernetes scheduling rule, only one CockroachDB po
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the code repository. | Enter the following command to clone the repository:<pre>git clone https://github.com/aws-samples/crdb-cluster-eks-terraform.git</pre> | DevOps engineer, Git |
-| Update the Terraform variables. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-cockroachdb-on-eks-using-terraform.html) | DevOps engineer, Terraform |
+| Update the Terraform variables. | 1. Enter the following command to navigate into the main folder in the cloned repository:<pre>cd crdb-cluster-eks-terraform/main</pre><br />2. Open the **variable.tf** file.<br />3. Configure the default value for the following variables:`region` – Enter the target AWS Region`eks_cluster_name` – Enter the name for the target Amazon EKS cluster`number_of_nodes` – Enter the number of nodes to deploy<br />4. Save and close the **variable.tf** file. | DevOps engineer, Terraform |
 
 ### Deploy the resources
 <a name="deploy-the-resources"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the infrastructure. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-cockroachdb-on-eks-using-terraform.html) | DevOps engineer, Terraform |
+| Deploy the infrastructure. | 1. Enter the following command to initialize the Terraform deployment:<pre>terraform init</pre><br />2. Enter the following command to generate an execution plan:<pre>terraform plan</pre><br />3. Review the plan, and validate the resources and infrastructure components that will be created.<br />4. Enter the following command to deploy the infrastructure:<pre>terraform apply</pre><br />5. When prompted, enter **yes** to confirm the deployment.<br />6. Wait until the deployment is completed. | DevOps engineer, Terraform |
 
 ### Verify the deployment
 <a name="verify-the-deployment"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Verify resource creation. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-cockroachdb-on-eks-using-terraform.html) | DevOps engineer |
-| (Optional) Scale up or down. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-cockroachdb-on-eks-using-terraform.html) | DevOps engineer, Terraform |
+| Verify resource creation. | 1. Enter the following command to set the Amazon EKS context using the AWS CLI:<pre>aws eks update-kubeconfig —name <eks_cluster_name></pre><br />2. Enter the following command to verify the number of pods that are using CockroachDB:<pre>kubectl get pods -n <namespace></pre><br />The following is a sample output.<pre>NAME                                  READY   STATUS    RESTARTS   AGE<br />cockroach-operator-655fbf7847-zn9v8   1/1     Running   0          30m<br />cockroachdb-0                         1/1     Running   0          24m<br />cockroachdb-1                         1/1     Running   0          24m<br />cockroachdb-2                         1/1     Running   0          24m</pre><br />3. Verify that the number of pods matches the value that you defined in the **variable.tf** file. | DevOps engineer |
+| (Optional) Scale up or down. | 1. In the **variable.tf** file, increase or decrease the number of nodes and then save the file.<br />2. Repeat the steps to deploy the infrastructure through Terraform. Terraform adds or removes pods.<br />3. Repeat the steps to verify the number of pods that are using Cockroach DB. For example, if you increased the number of nodes from three to four, you should now see four pods running. | DevOps engineer, Terraform |
 
 ### Clean up
 <a name="clean-up"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the infrastructure. | Scaling nodes to `0` will reduce compute costs. However, you will still incur charges for the persistent Amazon EBS volumes that were created by this module. To eliminate storage costs, follow these steps to delete all volumes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-cockroachdb-on-eks-using-terraform.html) | Terraform |
+| Delete the infrastructure. | Scaling nodes to `0` will reduce compute costs. However, you will still incur charges for the persistent Amazon EBS volumes that were created by this module. To eliminate storage costs, follow these steps to delete all volumes:1. Enter the following command to delete the infrastructure:<pre>terraform destroy</pre><br />2. When prompted, enter **yes** to confirm. | Terraform |
 
 ## Troubleshooting
 <a name="deploy-cockroachdb-on-eks-using-terraform-troubleshooting"></a>
@@ -129,7 +129,7 @@ Due to the `podAntiAffinity` Kubernetes scheduling rule, only one CockroachDB po
 | Issue | Solution |
 | --- | --- |
 | Error validating provider credentials | When you run the Terraform `apply` or `destroy` command, you might encounter the following error:<br />`Error: configuring Terraform AWS Provider: error validating provider  credentials: error calling sts:GetCallerIdentity: operation error STS: GetCallerIdentity, https response error StatusCode: 403, RequestID: 123456a9-fbc1-40ed-b8d8-513d0133ba7f, api error InvalidClientTokenId: The security token included in the request is invalid.`<br />This error is caused by the expiration of the security token for the credentials used in your local machine’s configuration. For instructions on how to resolve the error, see [Set and view configuration settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-methods) in the AWS CLI documentation. |
-| CockroachDB pods in pending state | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-cockroachdb-on-eks-using-terraform.html) |
+| CockroachDB pods in pending state | 1. Due to the `podAntiAffinity` Kubernetes scheduling rule, only one CockroachDB pod can be schedule in one Amazon EKS node. If the number of CockroachDB pods exceeds number of available Amazon EKS nodes, then CockroachDB pods might be in pending state. In that case, you need to implement Cluster Autoscaler or Karpenter so that theAmazon EKS node scales automatically. For more information, see [Scale cluster compute with Karpenter and Cluster Autoscaler](https://docs.aws.amazon.com/eks/latest/userguide/autoscaling.html).<br />2. Check if the Kubernetes worker nodes have `node=cockroachdb` labels by entering the following command:<pre>kubectl get nodes --show-labels</pre><br />If they are not, you need to make sure that all of the worker nodes are correctly labeled. For more information, see [Edit a node group configuration](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html#mng-edit) in the Amazon EKS documentation. |
 
 ## Related resources
 <a name="deploy-cockroachdb-on-eks-using-terraform-resources"></a>

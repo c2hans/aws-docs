@@ -12,3 +12,4 @@ The topics in this section describe observability for Amazon Bedrock features wh
 + [Monitor Amazon Bedrock Guardrails using CloudWatch metrics](monitoring-guardrails-cw-metrics.md)
 + [Monitor Amazon Bedrock Agents using CloudWatch Metrics](monitoring-agents-cw-metrics.md)
 + [Monitor Amazon Bedrock job state changes using Amazon EventBridge](monitoring-eventbridge.md)
++ [Monitor Web Search](monitoring-web-search.md)

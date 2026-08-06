@@ -50,8 +50,8 @@ When you launch an instance from an Amazon managed AWS Windows AMI, the root de
 | Run Windows Update and reboot until there are no pending updates | All AMIs |
 | Set the display in all power schemes to never turn off | All AMIs |
 | Set the PowerShell execution policy to "Unrestricted" | All AMIs |
-| If Microsoft SQL Server is installed:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ec2/latest/windows-ami-reference/windows-ami-configuration.html) | All AMIs |
-| Configure a paging file on the system volume as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ec2/latest/windows-ami-reference/windows-ami-configuration.html) | All AMIs |
+| If Microsoft SQL Server is installed:+  Install service packs <br />+  Configure to start automatically <br />+  Add BUILTIN\\Administrators to the SysAdmin role <br />+  Open TCP port 1433 and UDP port 1434  | All AMIs |
+| Configure a paging file on the system volume as follows:+  Windows Server 2016 and later - Managed by the system <br />+  Windows Server 2012 R2 - Initial size and max size are 8 GB <br />+  Windows Server 2012 and earlier - Initial size is 512 MB, max size is 8 GB  | All AMIs |
 | Install the current EC2Launch v2 and SSM Agent | Windows Server 2022 and later |
 | Install the current EC2Launch v1 and SSM Agent | Windows Server 2016 and 2019 |
 | Install the current SRIOV drivers | Windows Server 2012 R2 and later |
@@ -63,4 +63,4 @@ When you launch an instance from an Amazon managed AWS Windows AMI, the root de
 | Enable file and printer sharing | Windows Server 2012 R2 and earlier |
 | Install the current Citrix PV driver | Windows Server 2008 SP2 and earlier |
 | Install PowerShell 2.0 and 3.0 | Windows Server 2008 SP2 and R2 |
-| Apply the following hotfixes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ec2/latest/windows-ami-reference/windows-ami-configuration.html) | Windows Server 2008 SP2 and R2 |
+| Apply the following hotfixes:+  [MS15-011](https://support.microsoft.com/en-us/help/3000483/ms15-011-vulnerability-in-group-policy-could-allow-remote-code-executi) <br />+  [KB2582281](https://support.microsoft.com/en-us/help/2582281/slow-failover-operation-if-no-router-exists-between-the-cluster-and-an) <br />+  [KB2634328](https://support.microsoft.com/en-us/help/2634328/increased-latency-occurs-on-an-http-connection-to-a-computer-that-is-r) <br />+  [KB2394911](https://support.microsoft.com/en-us/help/2394911/stop-error-0x000000d1-or-0x0000007e-in-an-smb2-environment-in-windows) <br />+  [KB2780879](https://support.microsoft.com/en-us/help/2780879/hotfix-improves-tcp-window-scaling-in-windows-vista--windows-server-20)  | Windows Server 2008 SP2 and R2 |

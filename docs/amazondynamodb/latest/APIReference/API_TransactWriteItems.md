@@ -282,6 +282,12 @@ Required: No
             "WriteCapacityUnits": number
          },
          "TableName": "string",
+         "VectorIndexes": {
+            "string" : {
+               "VectorSearchRequestBytes": number,
+               "VectorWriteRequestBytes": number
+            }
+         },
          "WriteCapacityUnits": number
       }
    ],
@@ -322,6 +328,7 @@ The following data is returned in JSON format by the service.
 
  ** [ConsumedCapacity](#API_TransactWriteItems_ResponseSyntax) **   <a name="DDB-TransactWriteItems-response-ConsumedCapacity"></a>
 The capacity units consumed by the entire `TransactWriteItems` operation. The values of the list are ordered according to the ordering of the `TransactItems` request parameter.
+If the table has vector indexes, each element also includes a `VectorIndexes` field with `VectorWriteRequestBytes` consumed for each affected vector index.
 Type: Array of [ConsumedCapacity](API_ConsumedCapacity.md) objects
 
  ** [ItemCollectionMetrics](#API_TransactWriteItems_ResponseSyntax) **   <a name="DDB-TransactWriteItems-response-ItemCollectionMetrics"></a>
@@ -385,7 +392,7 @@ DynamoDB cancels a `TransactGetItems` request under the following circumstances:
 + A table in the `TransactGetItems` request is in a different account or region.
 + There is insufficient provisioned capacity for the transaction to be completed.
 + There is a user error, such as an invalid data format.
-DynamoDB lists the cancellation reasons on the `CancellationReasons` property. Transaction cancellation reasons are ordered in the order of requested items, if an item has no error it will have `None` code and `Null` message.
+DynamoDB lists the cancellation reasons on the `CancellationReasons` property. Transaction cancellation reasons are ordered in the order of requested items, if an item has no error it will have `None` code and `Null` message. The `None` code is returned as the literal string `"None"`, not a null or absent value; the message field is omitted entirely for an item that has no error. This is important to note when using an SDK that surfaces the code as an optional or nullable type.
 Cancellation reason codes and possible error messages:
 + No Errors:
   + Code: `None`

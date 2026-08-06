@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deliver-content-faster/d
 | **AWS experience** | Beginner  |
 | **Time to complete** | 10 minutes  |
 | **Cost to complete** | [Free Tier](https://aws.amazon.com/free/?e=gs2020&p=build-a-web-app-intro&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) eligible  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/deliver-content-faster/deliver-content-faster.html)  |
+| **Requires** |  +  AWS Account   Accounts created within the past 24 hours might not yet have access to the services required for this tutorial.  <br />+  Recommended browser: The latest version of Chrome or Firefox    |
 | **Last updated** | July 1, 2022  |
 
 ## Overview

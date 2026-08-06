@@ -42,12 +42,12 @@ Regardless of the approach that you use to manage the GuardDuty security agent, 
 GuardDuty deploys and manages the security agent on your behalf. At any point in time, you can monitor the EKS clusters in your account by using one of the following approaches.
 
 **Topics**
-+ [Monitor all EKS clusters](#gdu-security-agent-all-eks-custers)
++ [Monitor all EKS clusters](#gdu-security-agent-all-eks-clusters)
 + [Exclude selective EKS clusters](#eks-runtime-using-exclusion-tags)
 + [Include selective EKS clusters](#eks-runtime-using-inclusion-tags)
 
 #### Monitor all EKS clusters
-<a name="gdu-security-agent-all-eks-custers"></a>
+<a name="gdu-security-agent-all-eks-clusters"></a>
 
 Use this approach when you want GuardDuty to deploy and manage the security agent for all the EKS clusters in your account. By default, GuardDuty will also deploy the security agent on a potentially new EKS cluster created in your account.
 
@@ -71,7 +71,7 @@ Therefore, the impact when you [Manage security agent through GuardDuty](#eks-ru
 **Important**
 Manage permissions for modifying the value of the `GuardDutyManaged` tag for your EKS cluster by using service control policies or IAM policies. For more information, see [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide* or [Control access to AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*.
 + For a potentially new EKS cluster that you don't want to monitor, make sure to add the `GuardDutyManaged`:`false` key-value pair at the time of creating this EKS cluster.
-+ This approach will also have the same consideration as specified for [Monitor all EKS clusters](#gdu-security-agent-all-eks-custers).
++ This approach will also have the same consideration as specified for [Monitor all EKS clusters](#gdu-security-agent-all-eks-clusters).
 
 #### Include selective EKS clusters
 <a name="eks-runtime-using-inclusion-tags"></a>
@@ -80,7 +80,7 @@ Use this approach when you want GuardDuty to deploy and manage the updates to th
 
 **Impact of using this approach**
 + By using inclusion tags, GuardDuty will automatically deploy and manage the security agent only for the selective EKS clusters that are tagged with `GuardDutyManaged`:`true` as the key-value pair.
-+ Using this approach will also have the same impact as specified for [Monitor all EKS clusters](#gdu-security-agent-all-eks-custers).
++ Using this approach will also have the same impact as specified for [Monitor all EKS clusters](#gdu-security-agent-all-eks-clusters).
 
 **Considerations**
 + If the value of the `GuardDutyManaged` tag is not set to `true`, the inclusion tag will not work as expected and this may impact monitoring your EKS cluster.
@@ -88,7 +88,7 @@ Use this approach when you want GuardDuty to deploy and manage the updates to th
 **Important**
 Manage permissions for modifying the value of the `GuardDutyManaged` tag for your EKS cluster by using service control policies or IAM policies. For more information, see [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide* or [Control access to AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html) in the *IAM User Guide*.
 + For a potentially new EKS cluster that you don't want to monitor, make sure to add the `GuardDutyManaged`:`false` key-value pair at the time of creating this EKS cluster.
-+ This approach will also have the same consideration as specified for [Monitor all EKS clusters](#gdu-security-agent-all-eks-custers).<a name="eks-runtime-inclusion-exclusion-tags"></a>
++ This approach will also have the same consideration as specified for [Monitor all EKS clusters](#gdu-security-agent-all-eks-clusters).<a name="eks-runtime-inclusion-exclusion-tags"></a>
 
 1For more information about tagging selective EKS clusters, see [Tagging your Amazon EKS resources](https://docs.aws.amazon.com/eks/latest/userguide/eks-using-tags.html) in the **Amazon EKS User Guide**.
 

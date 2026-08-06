@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 # Geocode
 <a name="API_geoplaces_Geocode"></a>
 
- `Geocode` converts a textual address or place into geographic coordinates. You can obtain geographic coordinates, address component, and other related information. It supports flexible queries, including free-form text or structured queries with components like street names, postal codes, and regions. The Geocode API can also provide additional features such as time zone information and the inclusion of political views. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ `Geocode` converts a textual address or place into geographic coordinates. You can obtain geographic coordinates, address component, and other related information. It supports flexible queries, including free-form text or structured queries with components like street names, postal codes, and regions. The Geocode API can also provide additional features such as time zone information and the inclusion of political views. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this operation.
 
 For more information, see [Geocode](https://docs.aws.amazon.com/location/latest/developerguide/geocode.html) in the *Amazon Location Service Developer Guide*.
 
@@ -92,7 +92,7 @@ Type: [GeocodeFilter](API_geoplaces_GeocodeFilter.md) object
 Required: No
 
  ** [IntendedUse](#API_geoplaces_Geocode_RequestSyntax) **   <a name="location-geoplaces_Geocode-request-IntendedUse"></a>
- Indicates if the query results will be persisted in customer infrastructure. Defaults to `SingleUse` (not stored). Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Indicates if the query results will be persisted in customer infrastructure. Defaults to `SingleUse` (not stored). If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 When storing `Geocode` responses, you *must* set this field to `Storage` to comply with the terms of service. These requests will be charged at a higher rate. Please review the [user agreement](https://aws.amazon.com/location/sla/) and [service pricing structure](https://aws.amazon.com/location/pricing/) to determine the correct setting for your use case.
 Type: String
 Valid Values: `SingleUse | Storage`

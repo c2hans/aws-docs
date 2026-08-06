@@ -13,7 +13,7 @@ AWS Elemental Server generates traps for the events described in the following t
 
 | Notification | Event | Contents |
 | --- | --- | --- |
-| ELEMENTAL-MIB::alert | Any alert that worker nodes in the cluster generate. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/configguide/notification-trap.html) |
+| ELEMENTAL-MIB::alert | Any alert that worker nodes in the cluster generate. | + ELEMENTAL-MIB::alertSet: `1` if the alert is being set, `0` if the alert is being cleared.<br />+ ELEMENTAL-MIB::alertMessage: describes the alert that was set or cleared. |
 
 **To set up SNMP traps**
 

@@ -29,7 +29,7 @@ Resource mapping provides several capabilities that enhance incident investigati
 ## Topology views
 <a name="topology-views"></a>
 
-The topology visualization in the Topology page in the Operator Web App offers multiple levels of detail, organized into two categories:
+The topology visualization in the Topology page in the Operator Web App offers multiple levels of detail, organized into 2 categories:
 
 ### Learned
 <a name="learned"></a>
@@ -50,7 +50,7 @@ This view shows your infrastructure at different levels of granularity based on 
 ## Resource discovery
 <a name="resource-discovery"></a>
 
-Resources are discovered through two methods:
+Resources are discovered through 2 methods:
 + **CloudFormation stacks** – The agent lists all CloudFormation stacks and their resources in the primary AWS account and any connected secondary accounts. This is supported for any infrastructure-as-code tooling that uses CloudFormation for deployment, including AWS Cloud Development Kit (AWS CDK).
 + **Resource Explorer** – For resources not deployed from CloudFormation, tagged resources are discovered from AWS Resource Explorer. The target AWS account must have Resource Explorer enabled. This is useful for identifying application boundaries for resources deployed through the AWS Management Console, the AWS service APIs, or other infrastructure-as-code frameworks.
 

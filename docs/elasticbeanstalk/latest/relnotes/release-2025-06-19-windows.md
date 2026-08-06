@@ -26,7 +26,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | --- | --- |
 | **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-06-19-windows.html)  |
 | **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-06-19-windows.html)  |
-| **Additional changes with this release** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-06-19-windows.html)  |
+| **Additional changes with this release** |  +  Elastic Beanstalk now supports an architecture flag in Windows deployment manifests, enabling control over PowerShell script execution architecture. <br />+  New skipIISReset flag in Windows deployment manifests allows users to bypass IIS resets during deployments, reducing application downtime and deployment time in multi-application environments.   |
 | **.NET Core** | Updated .NET 9 to version 9.0.6 and .NET 8 to version 8.0.17. |
 | **AMI** | Updated the base AMI to version 2025.06.11. |
 | **AWS SDK for .NET** | Updated the SDK to version 3.7.1062.0. |

@@ -13,6 +13,7 @@ Policy evaluation applies only to MCP tools. Regardless of the policy evaluation
 **Topics**
 + [List AgentCore Gateway Tools with Policy in AgentCore](#list-gateway-tools)
 + [Call gateway tools with policy](#call-gateway-tools)
++ [Passing the policy session ID for temporal policies](#use-gateway-policy-session-id)
 + [Policy responses](#policy-responses)
 
 ## List AgentCore Gateway Tools with Policy in AgentCore
@@ -140,6 +141,30 @@ Select one of the following methods:
    )
    print(json.dumps(result, indent=2))
    ```
+
+## Passing the policy session ID for temporal policies
+<a name="use-gateway-policy-session-id"></a>
+
+To enable temporal policy evaluation, include the `x-amzn-bedrock-agentcore-policy-session-id` header in your requests. This groups multiple invocations into a single session for session-aware policy enforcement.
+
+```
+curl -X POST \
+  https://mygateway-abcdefghij.gateway.bedrock-agentcore.us-west-2.amazonaws.com/mcp \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
+  -H "x-amzn-bedrock-agentcore-policy-session-id: YOUR_SESSION_ID" \
+  -d '{
+    "jsonrpc": "2.0",
+    "id": "test-temporal-policy",
+    "method": "tools/call",
+    "params": {
+      "name": "tool_name",
+      "arguments": {arguments}
+    }
+  }'
+```
+
+If no session ID is provided and temporal policies are configured, the Gateway generates one and returns it in the response header. Use the returned value in subsequent requests to maintain session continuity.
 
 ## Policy responses
 <a name="policy-responses"></a>

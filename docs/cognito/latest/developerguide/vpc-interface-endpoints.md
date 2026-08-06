@@ -52,11 +52,11 @@ The following example implementation models are supported with AWS PrivateLink a
 
 | Resource | Implementation | Actions |
 | --- | --- | --- |
-| User pool | Fully private SDK or REST API application |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.html)  |
-| User pool | Private and public |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.html)  |
-| User pool | Private or public OAuth 2.0 authorization server |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.html)  |
-| Identity pool | Fully private |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.html)  |
-| Identity pool | Private and public |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cognito/latest/developerguide/vpc-interface-endpoints.html)  |
+| User pool | Fully private SDK or REST API application |  1.  Delete domain <br />2.  Create VPC endpoint <br />3.  Configure RCP to `Deny` all cognito-idp actions except from VPC   |
+| User pool | Private and public |  1.  Delete domain <br />2.  Create VPC endpoint   |
+| User pool | Private or public OAuth 2.0 authorization server |  1.  Not available to VPC   |
+| Identity pool | Fully private |  1.  Create VPC endpoint <br />2.  Configure RCP to `Deny` all cognito-identity actions except from VPC   |
+| Identity pool | Private and public |  1.  Create VPC endpoint   |
 
 ## Considerations for Amazon Cognito
 <a name="vpc-endpoint-considerations"></a>

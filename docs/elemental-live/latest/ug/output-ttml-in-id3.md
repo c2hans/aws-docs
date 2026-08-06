@@ -33,7 +33,7 @@ Follow this procedure to produce an output that includes TTML captions wrapped i
 | --- | --- |
 | Caption Source | Select the Caption Selector you created when [specifying the input captions](create-caption-selectors.md).  |
 | Destination Type | Select the caption type. This type must be valid for your output type as per the relevant Supported Captions table. |
-|  Pass Style Information | Applicable only if the source caption type is an Embedded combination (Embedded, Embedded\+SCTE-20, SCTE-20\+Embedded), or Teletext, or TTML, or SMPTE-TT, or CCF-TT. The choices are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/output-ttml-in-id3.html)<br />(For other source caption types, the output is always simplified.) |
+|  Pass Style Information | Applicable only if the source caption type is an Embedded combination (Embedded, Embedded\+SCTE-20, SCTE-20\+Embedded), or Teletext, or TTML, or SMPTE-TT, or CCF-TT. The choices are:+  Check this box if you want the style (font, position and so on) of the input captions to be copied.  <br />+  Leave unchecked if you want a simplified caption style. Some client players work best with a simplified caption style. <br />(For other source caption types, the output is always simplified.) |
 | Language | Complete if desired. This information may be useful to or required by a downstream system. |
 | Description | This field is automatically completed after you specify the language. |
 |  Use ID3 as Caption Content | Check this field, to insert the TTML captions into ID3 data. |

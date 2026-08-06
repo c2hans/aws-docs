@@ -63,7 +63,7 @@ Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
 
  ** Contacts **   <a name="location-Type-geoplaces_SearchNearbyResultItem-Contacts"></a>
-List of potential contact methods for the result/place.
+List of potential contact methods for the place or result.
 Type: [Contacts](API_geoplaces_Contacts.md) object
 Required: No
 

@@ -21,6 +21,7 @@ In the following topics, you can find information about how Aurora MySQL replica
 + [Replication between Aurora and MySQL or between Aurora and another Aurora DB cluster (binary log replication)](AuroraMySQL.Replication.MySQL.md)
 + [Using GTID-based replication](mysql-replication-gtid.md)
 + [Configure delayed replication with Amazon Aurora MySQL](AuroraMySQL.Replication.Delayed.md)
++ [Configure multi-source replication for Amazon Aurora MySQL](AuroraMySQL.Replication.MultiSource.md)
 
 ## Using Aurora Replicas
 <a name="AuroraMySQL.Replication.Replicas"></a>

@@ -19,7 +19,7 @@ Another consideration is the cost of running two environments (source and target
 | Policy | Description | Duration |
 | --- |--- |--- |
 | Upgrading SAS software | SAS allows all customers who are upgrading to a new production release to run two parallel copies of the licensed software (the old release and the new release) for 180 days (6 months) at no additional charge.<br />For metered offerings, customers can run two parallel copies of the licensed software, but both will be metered for billing purposes. | 180 days |
-| Testing new hardware | The following scenarios are covered by SAS evaluation paperwork and are offered free of charge for a limited test period. The standard test period for each scenario is 30 days.Testing new hardware before upgrading production machines and production systems to the new hardware configuration; performing parallel processing.Testing new operating systems before converting from one operating system to another in a production environment; performing parallel processing. | 30 days |
+| Testing new hardware | The following scenarios are covered by SAS evaluation paperwork and are offered free of charge for a limited test period. The standard test period for each scenario is 30 days.+ Testing new hardware before upgrading production machines and production systems to the new hardware configuration; performing parallel processing.<br />+ Testing new operating systems before converting from one operating system to another in a production environment; performing parallel processing. | 30 days |
 
 **Note**
 *Test machines* are defined as hardware the customer is responsible for that is used to run SAS software in an evaluation environment to verify quality and accuracy of data output.

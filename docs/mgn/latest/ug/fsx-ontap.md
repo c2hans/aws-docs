@@ -26,6 +26,7 @@ Do not rename or modify MGN-managed FSx for ONTAP resources (LUNs, igroups, snap
 + **Multiple LUNs per volume**. MGN creates one volume per source server on the FSx for ONTAP file system and places each disk as a separate LUN within that volume. For example, a source server with 3 disks results in one volume with 3 LUNs. The ONTAP best practice is a 1:1 relationship (one volume per LUN), which allows per-volume features such as snapshots, tiering policies, and storage efficiency to be configured independently per disk. As a workaround, you can use the ONTAP [https://docs.netapp.com/us-en/ontap-cli/lun-move-start.html](https://docs.netapp.com/us-en/ontap-cli/lun-move-start.html) command to relocate LUNs into dedicated volumes after migration. This operation is non-disruptive and does not require iSCSI reconfiguration on the host.
 + **Agent-based replication only**. MGN supports FSx for ONTAP as a target storage type only with agent-based replication.
 + **Up to 5 file systems per account**. MGN supports migrating data into up to 5 FSx for ONTAP file systems concurrently per account. If you have more file systems, migrate in phases. For more information about FSx for ONTAP quotas, see [FSx for ONTAP quotas](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html). For MGN service quotas, see [MGN endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/mgn.html).
++ **igroup limits per file system**. MGN creates one igroup per source server during replication and one per target instance at launch. FSx for ONTAP supports up to 256 igroups (Single-AZ) or 512 igroups (Multi-AZ). Plan the number of source servers per file system accordingly.
 + **ONTAP configurations not migrated**. If you are migrating from an existing ONTAP storage system, source ONTAP configurations (such as access permissions, quotas, snapshot policies, and schedules) are not migrated automatically. You must reconfigure these settings on the target FSx for ONTAP file system after migration.
 + **No mixed storage per server**. All data volumes from a source server use the same storage type (either Amazon EBS or FSx for ONTAP). You cannot mix storage types for different disks on the same server. The boot volume is always stored on Amazon EBS.
 
@@ -37,9 +38,7 @@ Before integrating FSx for ONTAP with MGN, ensure the following:
 **Important**
 If you initialized MGN before FSx for ONTAP support was available, you must reinitialize the service to create the required AWS managed roles. In the MGN console, navigate to **Settings → Replication template** and choose **Reinitialize Service Permissions**. For details on these roles and their managed policies, see [AWS Transform MGN managed policies](security-iam-awsmanpol.md).
 + **VPC Configuration**: FSx for ONTAP and MGN instances must be in the same AWS account and Region. They can use the same VPC or different VPCs in which both the source and target are routable. IPv4 connectivity is required. As a best practice, use a Multi-AZ FSx for ONTAP file system when your applications require resiliency across Availability Zones. Deploy your target EC2 instances in the same AZ as the file system's preferred file server to minimize latency. If your applications do not require cross-AZ resiliency, you can use a Single-AZ FSx for ONTAP file system. Deploy your target EC2 instances in the same AZ as the file system to minimize latencies and avoid cross-AZ data transfer charges.
-+ **OS package repository access**: Replication servers and launched instances require iSCSI initiator and multipath tools to connect to FSx for ONTAP. Ensure that both the staging area subnet (for replication servers) and the launch subnet (for test and cutover instances) have outbound access to OS package repositories (for example, through a NAT gateway or internet gateway).
-
-  If the target instance does not have network access to OS package repositories (for example, in air-gapped environments or private subnets without a NAT gateway), or if the operating system uses subscription-based repositories (SUSE, RHEL, CentOS), **you must pre-install the packages on the source server before migration**. For the required packages by operating system, see [Step 6: Configure launch template and launch settings](#fsx-ontap-step6-launch-settings) and the [Supported Linux operating systems](Supported-Operating-Systems.md#Supported-Operating-Systems-Linux) table.
++ **OS package repository access**: MGN automatically installs iSCSI initiator and multipath packages on replication servers and launched instances. Ensure that both the staging area subnet and the launch subnet have outbound access to OS package repositories (for example, through a NAT gateway or internet gateway). For the full list of required URLs, see [Network requirements for FSx for ONTAP](preparing-environments.md#fsx-ontap-network-requirements).
 
 ## Step 1: Configure security groups
 <a name="fsx-ontap-step1-security-groups"></a>
@@ -312,15 +311,8 @@ Migration Acceleration Program (MAP) 2.0 tags are applied to the FSx for ONTAP f
 The target instance must establish iSCSI connectivity to the FSx for ONTAP SVM over the network.
 
 **Requirements:**
-+ Choose the required target subnet (subnet that can communicate with FSx for ONTAP and has outbound access to OS package repositories).
++ Choose the required target subnet. This subnet must have network connectivity to the FSx for ONTAP file system (ports 3260 and 443) and outbound access to OS package repositories. For connectivity details, see [Network requirements for FSx for ONTAP](preparing-environments.md#fsx-ontap-network-requirements).
 + Modify the source server's launch template to include the `MGN-Instances-SG` security group (see [Step 1: Configure security groups](#fsx-ontap-step1-security-groups)).
-+ Ensure that target instances have network access to OS package repositories. MGN automatically installs iSCSI initiator and multipath tools using the OS package manager during migration.
-**Required packages by package manager (Linux)**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/mgn/latest/ug/fsx-ontap.html)
-
-  On Windows, the iSCSI initiator (`MSiSCSI` service) is a built-in service that is enabled and started automatically. Only Multipath-IO needs to be enabled:
-**Required features (Windows)**
-[See the AWS documentation website for more details](http://docs.aws.amazon.com/mgn/latest/ug/fsx-ontap.html)
 
 ## Step 7: Enable volume integrity validation (recommended)
 <a name="fsx-ontap-step7-post-launch-validation"></a>

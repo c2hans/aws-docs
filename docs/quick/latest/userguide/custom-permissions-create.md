@@ -5,10 +5,6 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/custom-permission
 # Creating custom permissions profiles
 <a name="custom-permissions-create"></a>
 
-**Important**
-Applies to: Enterprise Edition
-Intended audience: Administrators and Amazon Quick developers
-
 Custom permissions profiles can be created for Amazon Quick accounts that are integrated with IAM Identity Center, Active Directory, or for Quick accounts that have Quick managed users. The identity type that an Quick account uses determines the way an Quick admin configures a custom permissions profile.
 
 ## Creating or editing a custom permissions profile (Quick console)
@@ -28,9 +24,9 @@ Custom permissions profiles can be created for Amazon Quick accounts that are in
 
 1. (Optional) For **Description**, enter a description.
 
-1. (Optional) To restrict future capabilities in a category, turn on the Deny by Default toggle in the **Restrict capabilities** section. When enabled for a category, any new capability that Quick launches in that category is automatically blocked for users assigned to this profile. For more information, see [Deny by Default](custom-permissions-governance.md).
+1. (Optional) To restrict a whole capability category, turn on the corresponding toggle in the **Restrict capabilities** section – for example, **Restrict AI capabilities**. Quick restricts all capabilities in that category for users assigned to this profile, including capabilities that it launches later. Allow any capabilities in the category that your users need in the **Capabilities & features** section. For more information, see [Deny by Default](custom-permissions-governance.md).
 
-1. In the **Capabilities & features** section, choose which capabilities to restrict. Capabilities are displayed in a hierarchy tree organized by parent capability. Expand a parent capability to view and configure its individual features. Review the live preview panel on the right to see the effect of your selections.
+1. In the **Capabilities & features** section, choose which capabilities to restrict. Capabilities are organized into four groups: **AI capabilities**, **BI capabilities**, **Connectors**, and **Administration**. Expand a capability to view and configure its individual features. Review the preview panel on the right to see the effect of your selections.
    + To restrict an entire group of features, select the parent capability.
    + To restrict specific features, expand the parent capability and select only the features you want to restrict.
 
@@ -55,6 +51,9 @@ After you create the profile, Quick takes you to the assignment page where you c
 <a name="custom-permissions-create-cli"></a>
 
 Before you begin, you need to set up and configure the AWS CLI. For more information about installing the AWS CLI, see [Install or update the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and [Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) in the AWS Command Line Interface User guide.
+
+**Use the latest CLI version**
+Use the latest version of the AWS Command Line Interface. Quick adds capability identifiers to the AWS Command Line Interface as it releases new capabilities. If you receive `Unknown parameter in Capabilities` for a capability that appears in the console, update the AWS Command Line Interface and try again.
 
 The following example creates a custom permissions profile with `ExportToCsv` and `ExportToPdf` denied.
 

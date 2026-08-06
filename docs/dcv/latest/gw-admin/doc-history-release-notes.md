@@ -40,7 +40,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
-| 886 | Add domain name support for StatsD metrics endpoints (IPv4 only supported, IPv6 addresses will log a warning) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 886 | Add domain name support for StatsD metrics endpoints (IPv4 only supported, IPv6 addresses will log a warning) |  +  Bug fixes related to connection negotiation   |
 
 ### 2025.0-870— October 22, 2025
 <a name="gw-2025-0-870"></a>
@@ -49,7 +49,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 870 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 870 |  +  Security and performance improvements.   |
 
 ### 2024.0-848— May 16, 2025
 <a name="gw-2024-0-848"></a>
@@ -58,7 +58,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 848 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 848 |  +  Fixes and performance improvements.   |
 
 ### 2024.0-777— October 31, 2024
 <a name="gw-2024-0-777"></a>
@@ -67,7 +67,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 777 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 777 |  +  Fixed file storage and printer redirection when using the `local-resources-path` configuration setting. <br />+  Removed runtime dependency on `openssl`. <br />+  Added `TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256` to the default ciphers. <br />+  Updated WebSocket connection established timeout to 5 seconds. <br />+  Added `quic-establish-timeout` setting.   |
 
 ### 2023.1-710— March 6, 2024
 <a name="gw-2023-1-710"></a>
@@ -76,7 +76,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 710 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 710 |  +  Minor bug fixes   |
 
 ### 2023.1-705— February 26, 2024
 <a name="gw-2023-1-705"></a>
@@ -85,7 +85,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 705 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 705 |  +  Updated SSRF/XSS <br />+  Bug fixes and security improvements   |
 
 ### 2023.1-692— January 29, 2024
 <a name="gw-2023-1-692"></a>
@@ -94,7 +94,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 692 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 692 |  +  Updated SSRF/XSS <br />+  Bug fixes and security improvements   |
 
 ### 2023.1-671— November 9, 2023
 <a name="gw-2023-1-671"></a>
@@ -103,7 +103,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 671 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 671 |  +  Improved throttling mechanism to take CPU load into account <br />+  Added `enable-tcp-connections-stats` and `enable-quic-connections-stats` flags in the dcv and gateway sections in order to enable detailed connection statistics metrics on client and server side. <br />+  Bug fixes and performance improvements   |
 
 ### 2023.0-531— March 28, 2023
 <a name="gw-2023-0-531"></a>
@@ -112,7 +112,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 531 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 531 |  +  Added new metrics. <br />+  Fixed a bug preventing the start of the Amazon DCV Connection Gateway on Graviton instances.   |
 
 ### 2022.2-427— November 11, 2022
 <a name="gw-2022-2-427"></a>
@@ -121,7 +121,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 427 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 427 |  +  Added new metrics.   |
 
 ### 2022.1-377— June 29, 2022
 <a name="gw-2022-1-377"></a>
@@ -130,7 +130,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | New features | Changes and bug fixes |
 | --- | --- | --- |
-| 377 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 377 |  +  Added support for Ubuntu 22.04 and Rocky Linux 8.5 and higher.   |  +  Fixed a problem preventing QUIC connections to be closed when an error occurs in the server.   |
 
 ### 2022.0-351— May 19, 2022
 <a name="gw-2022-0-351"></a>
@@ -139,7 +139,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 351 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 351 |  +  Fixed WebSocket performance problem that could occur in case of latency between the gateway and the server.   |
 
 ### 2022.0-322— March 23, 2022
 <a name="gw-2022-0-322"></a>
@@ -148,7 +148,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 322 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 322 |  +  Handle HTTP DELETE method for DCV resources.   |
 
 ### 2022.0-310— February 23, 2022
 <a name="gw-2022-0-310"></a>
@@ -157,7 +157,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 310 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 310 |  +  It is now possible to configure the Amazon DCV Connection Gateway to listen on a specific network interface or on specific IPv4 or IPv6 addresses. <br />+  Leverage systemd sandboxing features when they are available. <br />+  Support session resolver URLs with a path.   |
 
 ### 2021.3-251— December 20, 2021
 <a name="gw-2021-3-251"></a>
@@ -166,7 +166,7 @@ This section provides an overview of the major updates, feature releases, and bu
 
 | Build numbers | Changes and bug fixes |
 | --- | --- |
-| 251 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/doc-history-release-notes.html)  |
+| 251 |  + The initial release of Amazon DCV Connection Gateway.  |
 
 ## Document history
 <a name="doc-history"></a>

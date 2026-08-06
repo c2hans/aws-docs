@@ -18,7 +18,7 @@ SnapLock has two retention modes: Compliance and Enterprise. Amazon FSx for NetA
 | SnapLock feature | [Understanding SnapLock Compliance](snaplock-compliance.md) | [Understanding SnapLock Enterprise](snaplock-enterprise.md) |
 | --- | --- | --- |
 | Description | Files transitioned to WORM on a Compliance volume can't be deleted until their retention periods expire.  | Files transitioned to WORM on an Enterprise volume can be deleted by authorized users before their retention periods expire using privileged delete.  |
-| Use cases |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/how-snaplock-works.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/how-snaplock-works.html)  |
+| Use cases |  +  To address government or industry-specific mandates such as SEC Rule 17a-4(f), FINRA Rule 4511, and CFTC Regulation 1.31. <br />+  To protect against ransomware attacks.   |  +  To advance an organization's data integrity and internal compliance.  <br />+  To test retention settings before using SnapLock Compliance.    |
 | [Autocommit](worm-state.md#worm-state-autocommit) | Yes | Yes |
 | [Event-based retention (EBR)](worm-state.md#worm-state-ebr)1 | Yes | Yes |
 | [Legal Hold](worm-state.md#worm-state-legal-hold)1 | Yes | No |

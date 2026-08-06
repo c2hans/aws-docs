@@ -35,7 +35,7 @@ The request body is XML content consisting of one `router` element, consisting o
 | ip  | String | The IP address without any protocol. |
 | max\_inputs | Integer | The number of inputs you want to use on this router. This number must be less than or equal to the number of physical inputs on the router. |
 | max\_outputs | Integer | The number of outputs you want to use on this router. This number must be less than or equal to the number of physical outputs on the router.  |
-| router\_type | String | One of these:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up-routers-create.html) |
+| router\_type | String | One of these:+  blackmagic\_videohub <br />+  miranda\_nvision <br />+  harris\_panacea <br />+  snell\_aurora  |
 | level\_id | Integer | This appears only for Harris Panacea and Miranda nVision. |
 | user\_id | Integer |  This appears only for Miranda nVision. |
 | matrix\_id | Integer | This appears only for Snell Aurora. |

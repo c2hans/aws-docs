@@ -85,7 +85,7 @@ The following console procedure contains the high-level steps for setting up per
    }
    ```
 
-   The role uses the policy to grant `batchoperations.s3.amazonaws.com` permission to read the manifest in the destination bucket. It also grants permissions to `GET` objects, access control lists (ACLs), tags, annotations, and versions in the source object bucket. And it grants permissions to `PUT` objects, ACLs, tags, and versions into the destination object bucket.
+   The role uses the policy to grant `batchoperations.s3.amazonaws.com` permission to read the manifest in the destination bucket. It also grants permissions to `GET` objects, access control lists (ACLs), tags, annotations, and versions in the source object bucket, and it grants permissions to `PUT` objects, ACLs, tags, and versions into the destination object bucket.
 
 1. In the source account, create a bucket policy for the source bucket that grants the role that you created in the previous step permissions to `GET` objects, ACLs, tags, annotations, and versions in the source bucket. This step allows S3 Batch Operations to get objects from the source bucket through the trusted role.
 

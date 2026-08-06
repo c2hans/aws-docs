@@ -102,7 +102,7 @@ latin2_col CHAR(10) CHARACTER SET latin2);
 | Feature | Oracle | Aurora MySQL |
 | --- | --- | --- |
 | View database character set |  <pre>SELECT * FROM NLS_DATABASE_PARAMETERS;</pre>  |  <pre>SELECT SCHEMA_NAME,<br />    DEFAULT_CHARACTER_SET_NAME,<br />    DEFAULT_COLLATION_NAME<br />FROM INFORMATION_SCHEMA.SCHEMATA;</pre>  |
-| Modify the database character set | Choose one of the following options:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migration-playbook/chap-oracle-aurora-mysql.special.charset.html) |  <pre>ALTER DATABASE test01<br />CHARACTER SET = ucs2<br />COLLATE = ucs2_general_ci;</pre>  |
+| Modify the database character set | Choose one of the following options:1.  Full export or import. <br />2.  When converting to Unicode, use the Oracle DMU utility.  |  <pre>ALTER DATABASE test01<br />CHARACTER SET = ucs2<br />COLLATE = ucs2_general_ci;</pre>  |
 | Character set granularity | Instance (11g \+ 12cR1)<br />Database (Oracle 12cR2) | Column |
 | UTF8 | Supported by using `VARCHAR2` and `NVARCHAR`  | Supported by using `CHAR` and `VARCHAR`  |
 | UTF16 | Supported by using `NVARCHAR2`  | Supported by using `CHAR` and `VARCHAR`  |

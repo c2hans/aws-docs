@@ -9,5 +9,5 @@ For Amazon DCV Connection Gateway to run properly, your system must meet the fol
 
 |  |  |
 | --- |--- |
-| **Operating system** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/system-requirements.html)  |
-| **Architecture** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/gw-admin/system-requirements.html)  |
+| **Operating system** |  + Amazon Linux 2<br />+ Amazon Linux 2023<br />+ RHEL 8/Rocky 8<br />+ RHEL 9/Rocky 9<br />+ CentOS Stream 9<br />+ Ubuntu 22.04<br />+ Ubuntu 24.04  |
+| **Architecture** |  + 64-bit x86<br />+ 64-bit ARM  |

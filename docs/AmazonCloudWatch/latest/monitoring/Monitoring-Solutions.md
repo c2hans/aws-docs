@@ -25,6 +25,7 @@ The available solutions are detailed below. Some solutions use the CloudWatch ag
 + [Amazon CloudWatch solution: Prometheus metric collection on Amazon Amazon EC2](Solution-Prometheus-On-EC2.md)
 + [Amazon CloudWatch solution: Prometheus metric collection on Amazon ECS](Solution-Prometheus-On-ECS.md)
 + [Amazon CloudWatch solution: Amazon MSK insights](Solution-Prometheus-On-MSK.md)
++ [Amazon CloudWatch solution: Amazon OpenSearch Service insights](Solution-Prometheus-On-OpenSearch.md)
 
 **How do solution dashboards work?**
 The dashboards for CloudWatch solutions use search-powered variables (dropdowns) that allow you to explore and visualize different aspects of your workloads dynamically.

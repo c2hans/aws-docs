@@ -23,6 +23,11 @@ The Amazon Athena properties of a connection properties patch.
 Type: [AthenaPropertiesPatch](API_AthenaPropertiesPatch.md) object
 Required: No
 
+ ** gitProperties **   <a name="datazone-Type-ConnectionPropertiesPatch-gitProperties"></a>
+The Git properties of a connection properties patch.
+Type: [GitPropertiesPatch](API_GitPropertiesPatch.md) object
+Required: No
+
  ** glueProperties **   <a name="datazone-Type-ConnectionPropertiesPatch-glueProperties"></a>
 The AWS Glue properties of a connection properties patch.
 Type: [GluePropertiesPatch](API_GluePropertiesPatch.md) object
@@ -51,6 +56,11 @@ Required: No
  ** s3Properties **   <a name="datazone-Type-ConnectionPropertiesPatch-s3Properties"></a>
 The Amazon S3 properties of a connection properties patch.
 Type: [S3PropertiesPatch](API_S3PropertiesPatch.md) object
+Required: No
+
+ ** snowflakeProperties **   <a name="datazone-Type-ConnectionPropertiesPatch-snowflakeProperties"></a>
+The Snowflake-specific connection properties to update.
+Type: [SnowflakePropertiesPatch](API_SnowflakePropertiesPatch.md) object
 Required: No
 
  ** sparkEmrProperties **   <a name="datazone-Type-ConnectionPropertiesPatch-sparkEmrProperties"></a>

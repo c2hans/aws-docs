@@ -63,4 +63,4 @@ The following image shows that you only have access to the **Dashboards** tab on
 + **Analytics and Optimization - Access metrics** - Access permission or the **Dashboard - Access** permission.
 + **Analytics and Optimization - Custom metrics**:
   + This permission enables users to view, create and manage custom metrics.
-  + If you have enabled Next Generation Connect Customer in your instance, you will have the ability to view, create, and manage custom metrics with custom filters and functions in addition to custom customer service level metric calculations.
+  + In [Connect Customer](enable-nextgeneration-amazonconnect.md) instances, you will have the ability to view, create, and manage custom metrics with custom filters and functions in addition to custom customer service level metric calculations.

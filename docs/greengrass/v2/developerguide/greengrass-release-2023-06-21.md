@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.10.3 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.10.3"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-06-21.html) |
+| Greengrass nucleus | Version 2.10.3 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.10.3"></a>**Bug fixes and improvements**<br />   Fixes an issue where Greengrass doesn't subscribe to deployment notifications when using the PKCS\#11 provider.    |

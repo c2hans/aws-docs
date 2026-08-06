@@ -14,8 +14,8 @@ Packages that you install using Distributor should be uninstalled only by using 
 
 | Preference | AWS Systems Manager action | More info |
 | --- | --- | --- |
-| Install or update a package immediately. | Run Command |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html)  |
-| Install or update a package on a schedule, so that the installation always includes the default version. | State Manager |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html)  |
+| Install or update a package immediately. | Run Command |  +   [Installing or updating a package one time using the console](#distributor-deploy-pkg-console)  <br />+   [Installing a package one time using the AWS CLI](#distributor-deploy-pkg-cli)  <br />+   [Updating a package one time using the AWS CLI](#distributor-update-pkg-cli)    |
+| Install or update a package on a schedule, so that the installation always includes the default version. | State Manager |  +   [Scheduling a package installation or update using the console](#distributor-deploy-sm-pkg-console)  <br />+   [Scheduling a package installation using the AWS CLI](#distributor-smdeploy-pkg-cli)  <br />+   [Scheduling a package update using the AWS CLI](#distributor-smupdate-pkg-cli)    |
 | Automatically install a package on new managed nodes that have a specific tag or set of tags. For example, installing the Amazon CloudWatch agent on new instances. | State Manager | One way to do this is to apply tags to new managed nodes, and then specify the tags as targets in your State Manager association. State Manager automatically installs the package in an association on managed nodes that have matching tags. See [Understanding targets and rate controls in State Manager associations](systems-manager-state-manager-targets-and-rate-controls.md). |
 
 **Topics**

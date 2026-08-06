@@ -138,7 +138,7 @@ This section documents the different types of events that you may receive for yo
 | Cache creation failed | Cache arn | failure | serverless-cache | Failed to create cache <cache-name>. You do not have permissions to create a VPC endpoint. |
 | Cache creation failed | Cache arn | failure | serverless-cache | Failed to create cache <cache-name>. A user with an incompatible Valkey or Redis OSS version is present in user group <user-group-name>. |
 | Cache creation failed | Cache arn<br />Cache snapshot arn | failure | serverless-cache | Failed to create cache <cache-name>. The provided user group <user-group-name> does not exist. |
-| Cache creation failed | Cache arn | failure | serverless-cache | Failed to create cache <cache-name>. Data restoration from snapshot failed because <reason>.<br />Failure reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-metrics-events-redis.html) |
+| Cache creation failed | Cache arn | failure | serverless-cache | Failed to create cache <cache-name>. Data restoration from snapshot failed because <reason>.<br />Failure reasons:+ failed to retrieve file from S3.<br />+ expected md5 does not match actual md5.<br />+ the provided RDB file has an unsupported version. |
 
 **Serverless Cache Update Events (Valkey or Redis OSS)**
 
@@ -172,8 +172,8 @@ This section documents the different types of events that you may receive for yo
 | Detail-Type | Resources-list | Category | Source | Message |
 | --- | --- | --- | --- | --- |
 | Snapshot created | Cache arn<br />Snapshot arn | creation | serverless-cache-snapshot | Snapshot <snapshot-name> created for cache <cache-name>. |
-| Snapshot creation failed | Cache arn<br />Snapshot arn | failure | serverless-cache-snapshot | Failed to create snapshot for cache <cache-name>. Snapshot <snapshot-name> creation failed with Customer Managed Key <key-id> <reason>.<br />Failure reason messages:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-metrics-events-redis.html) |
-| Snapshot creation failed | Cache arn<br />Snapshot arn | failure | serverless-cache-snapshot | Failed to create snapshot for cache <cache-name>. Snapshot <snapshot-name> creation failed because <reason>.<br />Default reason:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-metrics-events-redis.html) |
+| Snapshot creation failed | Cache arn<br />Snapshot arn | failure | serverless-cache-snapshot | Failed to create snapshot for cache <cache-name>. Snapshot <snapshot-name> creation failed with Customer Managed Key <key-id> <reason>.<br />Failure reason messages:+ because Customer Managed Key is disabled<br />+ because Customer Managed Key cannot be found<br />+ because the request timed out |
+| Snapshot creation failed | Cache arn<br />Snapshot arn | failure | serverless-cache-snapshot | Failed to create snapshot for cache <cache-name>. Snapshot <snapshot-name> creation failed because <reason>.<br />Default reason:+ because of an internal error |
 | Snapshot export failed | Snapshot arn | failure | serverless-cache-snapshot | Failed to export snapshot for cache <cache-name>. Could not export snapshot to bucket %s because ElastiCache does not have permissions to the bucket. |
 | Snapshot export failed | Snapshot arn | failure | serverless-cache-snapshot | Failed to export snapshot for cache <cache-name>. Could not export snapshot to bucket '%s' because there is already an object with the same name in the bucket. |
 | Snapshot export failed | Snapshot arn | failure | serverless-cache-snapshot | Failed to export snapshot for cache <cache-name>. Could not export snapshot to bucket '%s' because bucket owner account Id has changed. |

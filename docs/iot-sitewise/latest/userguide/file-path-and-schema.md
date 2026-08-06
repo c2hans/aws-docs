@@ -41,7 +41,7 @@ Every file path to raw data in Amazon S3 contains the following components.
 | `startYear` | The year of the exclusive start time associated with the time series data. |
 | `startMonth` | The month of the exclusive start time associated with the time series data. |
 | `startDay` | The day of the month of the exclusive start time associated with the time series data. |
-| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/file-path-and-schema.html)<br />The file is saved in the `.avro` format by using the [Snappy](https://github.com/google/snappy) compression. |
+| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:+  The `raw` prefix. <br />+  The `timeSeriesId` value. <br />+  The epoch timestamp of the exclusive start time associated with the time series data. <br />+  The quality of the data. Valid values: `GOOD`, `BAD`, and `UNCERTAIN`. For more information, see [AssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetPropertyValue.html) in the *AWS IoT SiteWise API Reference*. <br />The file is saved in the `.avro` format by using the [Snappy](https://github.com/google/snappy) compression. |
 
 **Example file path to raw data in the cold tier**
 `keyPrefix/raw/startYear=2021/startMonth=1/startDay=2/seriesBucket=a2/raw_7020c8e2-e6db-40fa-9845-ed0dddd4c77d_95e63da7-d34e-43e1-bc6f-1b490154b07a_1609577700_GOOD.avro`
@@ -108,7 +108,7 @@ Every file path to metrics, transforms, and aggregates in Amazon S3 contains the
 | `startYear` | The year of the exclusive start time associated with the time series data. |
 | `startMonth` | The month of the exclusive start time associated with the time series data. |
 | `startDay` | The day of the month of the exclusive start time associated with the time series data. |
-| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/file-path-and-schema.html)<br />The file is saved in the `.avro` format by using the [Snappy](https://github.com/google/snappy) compression. |
+| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:+  The `raw` prefix. <br />+  The `timeSeriesId` value. <br />+  The epoch timestamp of the exclusive start time associated with the time series data. <br />+  The quality of the data. Valid values: `GOOD`, `BAD`, and `UNCERTAIN`. For more information, see [AssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetPropertyValue.html) in the *AWS IoT SiteWise API Reference*. <br />The file is saved in the `.avro` format by using the [Snappy](https://github.com/google/snappy) compression. |
 
 **Example file path to metrics in the cold tier**
 `keyPrefix/agg/startYear=2021/startMonth=1/startDay=2/seriesBucket=a2/agg_7020c8e2-e6db-40fa-9845-ed0dddd4c77d_95e63da7-d34e-43e1-bc6f-1b490154b07a_1609577700_GOOD.avro`
@@ -168,7 +168,7 @@ Every file path to asset metadata in the cold tier contains the following compon
 | --- | --- |
 | `keyPrefix` | The Amazon S3 prefix that you specified in the AWS IoT SiteWises storage configuration. Amazon S3 uses the prefix as a folder name in the bucket. |
 | `asset_metadata` | The folder that stores asset metadata. The `asset_metadata` folder is saved in the prefix folder. |
-| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/file-path-and-schema.html)<br />The file is saved in the `.ndjson` format. |
+| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:+  The `asset` prefix. <br />+  The `assetId` value. <br />The file is saved in the `.ndjson` format. |
 
 **Example file path to asset metadata in the colder tier**
 `keyPrefix/asset_metadata/asset_35901915-d476-4dca-8637-d9ed4df939ed.ndjson`
@@ -242,7 +242,7 @@ Every file path to asset hierarchy metadata in the cold tier contains the follow
 | --- | --- |
 | `keyPrefix` | The Amazon S3 prefix that you specified in the AWS IoT SiteWise storage configuration. Amazon S3 uses the prefix as a folder name in the bucket. |
 | `asset_hierarchy_metadata` | The folder that stores asset hierarchy metadata. The `asset_hierarchy_metadata` folder is saved in the prefix folder. |
-| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/file-path-and-schema.html)<br />The file is saved in the `.ndjson` format. |
+| `fileName` | The file name uses the underscore (\_) character as a delimiter to separate the following:+  The `parentAssetId` value. <br />+  The `hierarchyId` value. <br />The file is saved in the `.ndjson` format. |
 
 **Example file path to asset hierarchy metadata in the cold tier**
 `keyPrefix/asset_hierarchy_metadata/35901915-d476-4dca-8637-d9ed4df939ed_c5b3ced8-589a-48c7-9998-cdccfc9747a0.ndjson`

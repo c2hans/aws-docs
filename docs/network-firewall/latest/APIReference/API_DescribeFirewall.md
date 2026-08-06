@@ -64,7 +64,21 @@ Required: No
       "FirewallName": "string",
       "FirewallPolicyArn": "string",
       "FirewallPolicyChangeProtection": boolean,
+      "NatGatewayMappings": [
+         {
+            "NatGatewayId": "string"
+         }
+      ],
+      "NoSourcePreservation": boolean,
       "NumberOfAssociations": number,
+      "ProxySettings": {
+         "ListenerProperties": [
+            {
+               "Port": number,
+               "Type": "string"
+            }
+         ]
+      },
       "SubnetChangeProtection": boolean,
       "SubnetMappings": [
          {
@@ -80,6 +94,15 @@ Required: No
       ],
       "TransitGatewayId": "string",
       "TransitGatewayOwnerAccountId": "string",
+      "VpcEndpoint": {
+         "SubnetMappings": [
+            {
+               "IPAddressType": "string",
+               "SubnetId": "string"
+            }
+         ],
+         "VpcId": "string"
+      },
       "VpcId": "string"
    },
    "FirewallStatus": {
@@ -99,6 +122,7 @@ Required: No
       "SyncStates": {
          "string" : {
             "Attachment": {
+               "DnsName": "string",
                "EndpointId": "string",
                "Status": "string",
                "StatusMessage": "string",
@@ -109,7 +133,15 @@ Required: No
                   "SyncStatus": "string",
                   "UpdateToken": "string"
                }
-            }
+            },
+            "NatGatewayAttachments": [
+               {
+                  "DnsName": "string",
+                  "NatGatewayId": "string",
+                  "Status": "string",
+                  "StatusMessage": "string"
+               }
+            ]
          }
       },
       "TransitGatewayAttachmentSyncState": {

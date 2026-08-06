@@ -72,7 +72,7 @@ RCPs apply to actions for the following AWS services:
 + [AWS Pricing Calculator](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html) `(prefix:pricing)`
 + [AWS Private CA Connector for Active Directory](https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad) `(prefix:pca-connector-ad)`
 + [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager) `(prefix:secretsmanager)`
-+ [AWS Security Token Service](https://docs.aws.amazon.com/iam) `(prefix:sts)`
++ [AWS Security Token Service](https://docs.aws.amazon.com/iam/#sts) `(prefix:sts)`
 + [AWS Sign-In](https://docs.aws.amazon.com/signin) `(prefix:signin)`
 + [AWS Support](https://docs.aws.amazon.com/aws-support) `(prefix:support)`
 + [AWS Transfer Family](https://docs.aws.amazon.com/transfer) `(prefix:transfer)`

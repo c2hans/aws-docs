@@ -31,8 +31,8 @@ The following tables list the various Connect Customer feature specifications.
 | Maximum file size for an attachment to a case, chat, or task | Default 20 MB (configurable from 1 MB to 100 MB). To configure, use the Connect Customer admin website or the [UpdateAttachedFilesConfiguration](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateAttachedFilesConfiguration.html) API.<br />For more information about supported file sizes for WhatsApp business messaging, see [WhatsApp business messaging feature specifications](#whatsapp-specs) later in this topic. |
 | Maximum timeout for an attachment scanner | 60 seconds |
 | Maximum size of a real-time metrics report  | 200KB |
-| When the [Multi-Party Calls and Enhanced Monitoring for Voice](monitor-barge.md#monitor-barge-set-up) capability is enabled, voice supports 6 participants. Two supervisors can monitor the call.  | 6<br />For example, you can have a group of 6 participants in the call at the same time. Two supervisors can monitor the call. The two supervisors can do two silent monitor sessions, or one silent monitor and one barge-in session. <br />The total number of participants on a call would look like this:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/feature-limits.html) |
-| When the [Multi-Party Calls and Enhanced Monitoring for Voice](monitor-barge.md#monitor-barge-set-up) capability is not enabled, voice supports 3 participants on the call, and 5 supervisors monitoring the call.  | 3<br />There can be 3 participants in total:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/feature-limits.html) |
+| When the [Multi-Party Calls and Enhanced Monitoring for Voice](monitor-barge.md#monitor-barge-set-up) capability is enabled, voice supports 6 participants. Two supervisors can monitor the call.  | 6<br />For example, you can have a group of 6 participants in the call at the same time. Two supervisors can monitor the call. The two supervisors can do two silent monitor sessions, or one silent monitor and one barge-in session. <br />The total number of participants on a call would look like this:1.  Customer - participant <br />2.  Agent 1 - participant <br />3.  Agent 2 - participant <br />4.  Agent 3 - participant <br />5.  Agent 4 - participant <br />6.  Agent 5 - participant <br />7.  Supervisor who can listen but not barge in the call <br />8.  Supervisor who can listen or barge in the call  |
+| When the [Multi-Party Calls and Enhanced Monitoring for Voice](monitor-barge.md#monitor-barge-set-up) capability is not enabled, voice supports 3 participants on the call, and 5 supervisors monitoring the call.  | 3<br />There can be 3 participants in total:1.  Customer - participant <br />2.  Agent 1 - participant <br />3.  Agent 2 - participant <br />4.  Supervisor who can listen but not barge in the call <br />5.  Supervisor who can listen but not barge in the call <br />6.  Supervisor who can listen but not barge in the call <br />7.  Supervisor who can listen but not barge in the call <br />8.  Supervisor who can listen but not barge in the call  |
 | Quick connects you can assign to a queue | 700 |
 | Participants on a conference call | 6<br />The participants are the customer, agent, and others who can be agents or external third-parties. |
 | Contact record retention for all channels and subtypes (voice, email, tasks, and chat, including SMS, WhatsApp, and Apple Messages for Business). | 24 months from the time the associated contact was initiated. <br />You can choose to stream contact records to Kinesis so you can manage retention and perform advanced analysis. |
@@ -52,9 +52,9 @@ The following tables list the various Connect Customer feature specifications.
 | Participants on a conference chat | 6<br />The participants are the customer, agent, and others who can be agents. |
 | Custom participants (such as a custom bot) on a contact | 1 |
 | Chat contacts that a supervisor can monitor concurrently | Depends on the number of concurrent chats limit set in the supervisor's routing profile |
-| People who can monitor the same agent chat at the same time regardless of whether the [Enable Multi-Party Chats and Enhanced Monitoring for Chat](monitor-barge.md#monitor-barge-set-up) capability is enabled for an instance | 5<br />For example, you can have a group of 5 people monitor a chat at the same time, and then a different group of 5 people monitor a different chat at the same time, and so on.<br />The total number of participants on the chat would look like this:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/feature-limits.html) |
+| People who can monitor the same agent chat at the same time regardless of whether the [Enable Multi-Party Chats and Enhanced Monitoring for Chat](monitor-barge.md#monitor-barge-set-up) capability is enabled for an instance | 5<br />For example, you can have a group of 5 people monitor a chat at the same time, and then a different group of 5 people monitor a different chat at the same time, and so on.<br />The total number of participants on the chat would look like this:1.  Customer <br />2.  Agent <br />3.  Supervisor who can monitor the chat but not barge in <br />4.  Supervisor who can monitor the chat but not barge in <br />5.  Supervisor who can monitor the chat but not barge in <br />6.  Supervisor who can monitor the chat but not barge in <br />7.  Supervisor who can monitor the chat but not barge in  |
 | Supervisors who can barge in on a chat between an agent and a customer when the [Enable Multi-Party Chats and Enhanced Monitoring for Chat](monitor-barge.md#monitor-barge-set-up) capability enabled for an instance | 1<br />Only 1 supervisor can be in barged in mode for a given chat. |
-| Total duration per chat | Up to 7 days, including wait time[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/feature-limits.html) |
+| Total duration per chat | Up to 7 days, including wait time+  The default is 25 hours. You configure the chat duration using [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API and add the `ChatDurationInMinutes` parameter. <br />+  Minimum configurable chat duration is 1 hour (60 minutes). <br />+  Maximum configurable chat duration is 7 days (10,080 minutes).  |
 | Maximum message size | Varies by channel and direction. See [Chat message size limits by channel](#chat-message-size-limits). |
 | Open websocket connections per chat participant | 5 |
 | Chat Amazon Lex bot integration timeout | 10 seconds<br />The maximum time within which the Amazon Lex bot must respond to the chat customer's prompt. |
@@ -112,7 +112,7 @@ The following table lists the specifications for WhatsApp business messaging
 | Maximum email message body size | 5 MB |
 | Email message body format | HTML (`text/html`) (Default)<br />Plain text (`text/plain`)<br />All email contacts (messages) sent by Connect Customer are handled in HTML (`text/html`) format by default. Additionally, a plain text (`text/plain`) version is stored and available for all email contacts (messages) in Connect Customer for features like the [Flow block in Connect Customer: Get stored content](get-stored-content.md) flow block. |
 | Maximum email message body plus attachments size | 25 MB |
-| File attachments per email contact (message) | 10 attachments |
+| File attachments per email contact (message) | 50 attachments |
 | Inline images per email contact (message) | No limit so long as the size of inline images received in the email message does not exceed 5 MB. |
 | Inline image formats supported | `image/jpg`, `image/jpeg`, `image/png`, `image/gif`, `image/svg`, `image/webp`, `image/bmp`, `image/heif`, `image/heic`<br />All inline images are Base64 encoded when storing email messages with Connect Customer. |
 | Email message and attachment retention | This is defined by your Amazon S3 lifecycle configuration. For more information, see [Managing your storage lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html) in the *Amazon Simple Storage Service User Guide*. Contact record retention for all channels and subtypes still applies for email contact data.<br />You can easily download and access email messages and attachments using the [Download recordings and transcripts of past conversations in Connect Customer](download-recordings.md) feature. |
@@ -145,6 +145,7 @@ The following table lists the specifications for WhatsApp business messaging
 | Capacity plan user data uploads per instance | 500 |
 | Capacity plan override uploads per instance | 5000 |
 | Concurrent uploads per instance | 20 |
+| Demand groups per forecast group | 25 |
 | File size per upload of agent time off data | 1GB |
 | File size per upload of time off group allowance data | 1GB<br />The .csv file can cover up to 13 months. |
 | File size per upload of capacity plan user data | 1GB |
@@ -202,7 +203,9 @@ The following table lists feature specifications for the integration association
 
 | Item | Feature Specification |
 | --- | --- |
-| Maximum number of evaluations per agent per month | 3000 |
+| Maximum number of manual evaluations per agent per month | 2,000 |
+| Maximum number of manually started evaluations filled with assistance of AI per agent per month | 1,000 |
+| Maximum number of automated evaluations filled by Gen AI per agent per month | 2,000 |
 | Maximum number of evaluation forms per instance<br />Historical versions are not counted, only form names are counted. | 400 |
 | Maximum number of versions per form | 50 |
 | Maximum number of sections per form | 100 |

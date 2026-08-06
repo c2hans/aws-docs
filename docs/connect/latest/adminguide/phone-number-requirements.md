@@ -25,7 +25,7 @@ After your numbers are ordered or ported, the exact number of requested phone nu
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="ai-porting"></a>
@@ -42,7 +42,7 @@ Porting is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 268 | Yes | File orders in writing. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable |
+| Local telephone numbers: \+1 268 | Yes | File orders in writing. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable |
 
 ### Number portability
 <a name="ai-porting"></a>
@@ -70,7 +70,7 @@ Porting is not supported.
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 2AM-4AM or 10AM-12PM or 3PM-5PM UTC-3 Buenos Aires time | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
+| Monday-Friday 2AM-4AM or 10AM-12PM or 3PM-5PM UTC-3 Buenos Aires time | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Argentinian AFIP (Federal Tax Agency) extract, as proof of CUIT (Clave Única de Identificación Tributaria - Unique Tax Payer ID) <br />4.  Scanned copy of the Power of Attorney assigning the signatory sufficient attributes that allow them to request the portability, or Company Statute where the signatory appears with such attributes  <br />5.  Scanned copy of the DNI (National Identity Card) of the signatory with power of attorney  |
 | Preset UIFN times only | Service Provider Change Authorization and Designation of Agency provided by Amazon  |
 
 ## Australia (AU)
@@ -95,8 +95,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of number | Portability windows | Required Documents |
 | --- | --- | --- |
-| Local telephone numbers | Monday-Friday 8 AM -5 PM AEST/AEDT  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
-| Toll-free prefixes: \+61 13, \+61 1800 | Monday-Friday 8 AM -3:30 PM AEST/AEDT  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Local telephone numbers | Monday-Friday 8 AM -5 PM AEST/AEDT  | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we may provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers, as well as account number with current provider.   |
+| Toll-free prefixes: \+61 13, \+61 1800 | Monday-Friday 8 AM -3:30 PM AEST/AEDT  | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we may provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers, as well as ABN/ACN, and account number with current provider.   |
 
 ## Austria (AT)
 <a name="austria-requirements"></a>
@@ -110,8 +110,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | Proof of telecom services at your address, which must match the city code requested. Valid forms of proof (must be issued in the past 6 months):[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
-| National prefixes: \+43 720 | Yes | Proof of telecom services at your address, which must be within the country. Valid forms of proof (must be issued in the past 6 months):[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
+| Local telephone numbers  | Yes | Proof of telecom services at your address, which must match the city code requested. Valid forms of proof (must be issued in the past 6 months):+  Invoice from a network operator for another phone number, at your address <br />+  Invoice from an internet services provider for internet access with fix IP address, at your address  |
+| National prefixes: \+43 720 | Yes | Proof of telecom services at your address, which must be within the country. Valid forms of proof (must be issued in the past 6 months):+  Invoice from a network operator for another phone number, at your address <br />+  Invoice from an internet services provider for internet access with fix IP address, at your address  |
 | Toll-free prefixes: \+43 800 | Yes | Your business name, address, and a copy of the business registration (global).A global address is acceptable. |
 
 ### Number portability
@@ -121,7 +121,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Belgium (BE)
 <a name="belgium-requirements"></a>
@@ -146,7 +146,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Mandatory to provide service address for the numbers <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 **Note**
 Ordering and porting of \+32 78 national numbers is not supported.
@@ -161,7 +161,7 @@ Ordering and porting of \+32 78 national numbers is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 242 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+1 242 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="bs-porting"></a>
@@ -178,7 +178,7 @@ Porting is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 246 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+1 246 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="bb-porting"></a>
@@ -212,7 +212,7 @@ Porting is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+599 7 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+599 7 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="bq-porting"></a>
@@ -234,7 +234,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
   <tr><th>Type of Number</th><th>Are there ID requirements?</th><th>How to access</th></tr>
 </thead>
 <tbody>
-  <tr><td>Local telephone numbers </td><td rowspan="2">Yes. Local Brazilian presence is required.[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)</td><td rowspan="2">To obtain numbers in Brazil:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)</td></tr>
+  <tr><td>Local telephone numbers </td><td rowspan="2">Yes. Local Brazilian presence is required.+  CNPJ (National Registration Number of Legal Entities in Brazil) <br />+  Local company name matching the CNPJ </td><td rowspan="2">To obtain numbers in Brazil:1.  Initiate the process by opening an Support ticket. Follow the specific guidelines provided for [requesting international numbers for Connect Customer.](number-request.md) <br />2.  The local provider will present you with a Country-Specific Agreement. This agreement is tailored to comply with Brazilian telecommunications regulations and requirements. <br />3.  After you have your numbers from our telephony provider, perform the steps explained in [Map third-party numbers to your Connect Customer account](third-party-numbers.md) to add your number(s) to your Connect Customer instance. </td></tr>
   <tr><td>Toll-free prefixes</td></tr>
 </tbody>
 </table>
@@ -249,7 +249,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
   <tr><th>Type of Number</th><th>Are there ID requirements?</th><th>How to access</th></tr>
 </thead>
 <tbody>
-  <tr><td>Local telephone numbers </td><td rowspan="2">Yes. Local Brazilian presence is required.[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)</td><td rowspan="2">[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) </td></tr>
+  <tr><td>Local telephone numbers </td><td rowspan="2">Yes. Local Brazilian presence is required.+  CNPJ (National Registration Number of Legal Entities in Brazil) <br />+  Local company name matching the CNPJ </td><td rowspan="2">+   If you currently have local numbers in Connect Customer:    Coordinate with the telephony provider that we have contracted with for your number porting.   Open an Support ticket to have your ported numbers added to your Connect Customer instance.  We recommend opening the Support ticket at least 5 days before your scheduled porting date with the telephony provider.    <br />+  If you are in the process of porting numbers and do not yet have local numbers in Brazil associated with your Connect Customer instance, follow the steps outlined above for ordering numbers. This includes opening a ticket with Support to initiate the process.  </td></tr>
   <tr><td>Toll-free prefixes </td></tr>
 </tbody>
 </table>
@@ -264,7 +264,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Toll-free prefixes | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Toll-free prefixes | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="brunei-porting"></a>
@@ -293,7 +293,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 7 AM to 5 PM CST | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 7 AM to 5 PM CST | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.   |
 
 ## Chile (CL)
 <a name="chile-requirements"></a>
@@ -316,7 +316,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 9 PM to 3 AM PST | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 9 PM to 3 AM PST | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Copy of legal representative's photo ID <br />4.  Copy of local business registration <br />5.  Copy of the RUT (Rol Unico Tributario) - Official Chilean tax identification <br />6.  Completed and signed "Declaration of Mass Communications Number Usage - Chile" form   |
 
 ## China (CN)
 <a name="china-requirements"></a>
@@ -394,7 +394,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+599 9 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+599 9 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="cw-porting"></a>
@@ -421,7 +421,7 @@ Porting is not supported.
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Copy of **Certificate of Directors and Secretary of the Company** <br />4.  Copy of **Certificate of Incorporation** <br />5.  Copy of legal representative's photo ID   |
 
 ## Czech Republic (CZ)
 <a name="czech-republic-requirements"></a>
@@ -443,7 +443,7 @@ Porting is not supported.
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 3 PM to 4 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 3 PM to 4 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Business registration. <br />4.  Documents required per Type of Number as listed in the previous table for ordering numbers    |
 
 ## Denmark (DK)
 <a name="denmark-requirements"></a>
@@ -468,7 +468,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required per Type of Number as listed in the previous table for ordering numbers    |
 
 ## Dominican Republic (DOM)
 <a name="dom-requirements"></a>
@@ -490,7 +490,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Porting is available only for **Local telephone numbers**<br />Monday-Friday 10:00PM to 04:00AM PST |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Porting is available only for **Local telephone numbers**<br />Monday-Friday 10:00PM to 04:00AM PST |  1.  Letter of Authorization (LOA) signed: When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it <br />2.  Only Local Address accepted <br />3.  Copy of the ID or passport of an authorized representative who signs the LOA <br />4.  Copy of Local Commercial Registry Number known as RNC / "Número de Registro Mercantil".    |
 
 ## Ecuador (ECU)
 <a name="ecu-requirements"></a>
@@ -530,7 +530,7 @@ Not supported
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 03:00AM to 05:00AM CST |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 03:00AM to 05:00AM CST |  1.   Letter of Authorization (LOA) Portability Form. When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />2.  Copy of Local Business Registration with local representative(s) information. <br />3.  Local ID "Documento Unico de Identidad (DUI)" from local representative. <br />4.  Tax Number registration (Número de Identificación Tributaria). <br />5.  Valid proofs of address include, for example, utility bills issued in the previous three months.   |
 
 ## Estonia (EE)
 <a name="estonia-requirements"></a>
@@ -554,7 +554,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  LOA template has to include a local address. <br />4.  If this is a company, a business number is required.   |
 
 ## Finland (FI)
 <a name="finland-requirements"></a>
@@ -577,7 +577,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## France (FR)
 <a name="france-requirements"></a>
@@ -604,7 +604,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)Number portability is supported for all toll-free prefixes from \+33 800 to \+33 805, geographic prefixes from \+33 1 to \+33 5, and national multipurpose prefixes \+33 9. |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required per Type of Number as listed in the previous table for ordering numbers.  <br />4.  It is mandatory to provide RIO code from the losing carrier, or at least the SIRET. You can obtain the SIRET by contacting your existing telecom carrier. Number portability is supported for all toll-free prefixes from \+33 800 to \+33 805, geographic prefixes from \+33 1 to \+33 5, and national multipurpose prefixes \+33 9. |
 
 ## French Guiana (GF)
 <a name="gf-requirements"></a>
@@ -668,7 +668,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  For business ports, end user stamp is mandatory on the LOA. <br />4.  If the number to be ported is an extended line, the main line must be ported.  <br />5.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers. **Toll-free numbers can be ported only if you have the number ownership certificate from the regulator.**   |
 
 ## Greece (GR)
 <a name="greece-requirements"></a>
@@ -692,7 +692,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Company registration certificate <br />4.  Copy of LOA signatory's photo ID/ Passport <br />5.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Guatemala (GT)
 <a name="guatemala-requirements"></a>
@@ -773,7 +773,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| N/A | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| N/A | 1.  Last invoice. <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers.   |
 
 ## Hungary (HU)
 <a name="hungary-requirements"></a>
@@ -797,7 +797,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 8 PM to 12 AM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 8 PM to 12 AM CET | 1.  Last invoice: must be within the last 6 months <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Iceland (IS)
 <a name="iceland-requirements"></a>
@@ -858,7 +858,7 @@ Not supported
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  It is mandatory to provide the main telephone number on the account. <br />4.  It is mandatory to provide a Wholesale Account number.  <br />5.  Type of the line mandatory on the LOA.  <br />6.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Israel (IL)
 <a name="il-requirements"></a>
@@ -903,7 +903,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| For local numbers: Monday-Friday 6AM to 9AM CET<br />For toll-free numbers: Monday-Friday 6AM-4PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| For local numbers: Monday-Friday 6AM to 9AM CET<br />For toll-free numbers: Monday-Friday 6AM-4PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Migration code of the requested number is mandatory. Obtain this code from the losing carrier.  <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Jamaica (JM)
 <a name="jamaica-requirements"></a>
@@ -915,7 +915,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers  | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="jm-porting"></a>
@@ -934,9 +934,9 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Supported Regions | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- | --- |
-| Asia Pacific (Tokyo) | Local telephone numbers: \+81 3, \+81 6 | Yes | Businesses must provide 3 pieces of documentation: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Copies of these documents should be made into a single ZIP file. |
-| All | Local number prefixes: \+81 50 | Yes | Businesses must provide 3 pieces of documentation: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Copies of these documents should be made into a single ZIP file. |
-| All | Toll-free prefixes: \+81 120, \+81 800 | Yes | Businesses must provide the following documentation: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Copies of these documents should be made into a single ZIP file. |
+| Asia Pacific (Tokyo) | Local telephone numbers: \+81 3, \+81 6 | Yes | Businesses must provide 3 pieces of documentation: +  **Company registration documents** (must be issued in the past 6 months). These documents must show:   The business address is in the city corresponding to the requested area code of the number.   The authorized representative of the business.   <br />+  **A copy of the personal ID or passport of the business's authorized representative**. The person must be registered on the Company Registration Documents. Valid personal ID can be government-issued IDs or passports. <br />+  **Proof of address for the business** (must be issued in the past 6 months). Valid proofs of address include: third-party issued bank statements, public utility bills; government documents; or IDs listing the submitted address, such as government-issued IDs, passports, and business registration. <br />Copies of these documents should be made into a single ZIP file. |
+| All | Local number prefixes: \+81 50 | Yes | Businesses must provide 3 pieces of documentation: +  **Company registration documents** (must be issued in the past 6 months). These documents must show:   The business address is in the city corresponding to the requested area code of the number.   The authorized representative of the business.   <br />+  **A copy of the personal ID or passport of the business's authorized representative**. The person must be registered on the Company Registration Documents. Valid personal ID can be government-issued IDs or passports. <br />+  **Proof of address for the business** (must be issued in the past 6 months). Valid proofs of address include: third-party issued bank statements, public utility bills; government documents; or IDs listing the submitted address, such as government-issued IDs, passports, and business registration. <br />Copies of these documents should be made into a single ZIP file. |
+| All | Toll-free prefixes: \+81 120, \+81 800 | Yes | Businesses must provide the following documentation: +  **Company registration documents** (must be issued in the past 6 months). These documents must show:    The business address. A global address is acceptable.   The authorized representative of the business.   <br />+  **A copy of the personal ID or passport of the business's authorized representative**. The person must be registered on the Company Registration Documents. Valid personal ID can be government-issued IDs and passports.  <br />Copies of these documents should be made into a single ZIP file. |
 
 ### Number portability
 <a name="jp-porting"></a>
@@ -945,8 +945,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Supported regions | Portability windows | Required Documents |
 | --- | --- | --- |
-| All for Toll-free prefixes: \+81 120, \+81 800 | Typically the 1st and 15th of the following month. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)Submit an Support ticket to verify the portability of your number(s). |
-| Asia Pacific (Tokyo) for Local telephone numbers: \+81 3, \+81 6 | Typically the 1st and 15th of the following month. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)Submit an Support ticket to verify the portability of your number(s). |
+| All for Toll-free prefixes: \+81 120, \+81 800 | Typically the 1st and 15th of the following month. | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required per Type of Number as listed in the previous table for ordering numbers  Submit an Support ticket to verify the portability of your number(s). |
+| Asia Pacific (Tokyo) for Local telephone numbers: \+81 3, \+81 6 | Typically the 1st and 15th of the following month. | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required per Type of Number as listed in the previous table for ordering numbers  Submit an Support ticket to verify the portability of your number(s). |
 
 ## Latvia (LV)
 <a name="latvia-requirements"></a>
@@ -960,8 +960,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Toll-free prefixes: \+371 80 | Yes | Businesses must provide a copy of the business registration, along with proof of address within Latvia (issued in the past 6 months).<br /> Valid forms of proof:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
-| National prefixes: \+371 6 | Yes | Businesses must provide proof of address within Latvia (issued in the past 6 months).<br /> Valid forms of proof:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
+| Toll-free prefixes: \+371 80 | Yes | Businesses must provide a copy of the business registration, along with proof of address within Latvia (issued in the past 6 months).<br /> Valid forms of proof:+  Business Registration <br />+  Third-party issued bank statement <br />+  Public utility bill showing regular use <br />+  Lease Agreement <br />+  Government documents  |
+| National prefixes: \+371 6 | Yes | Businesses must provide proof of address within Latvia (issued in the past 6 months).<br /> Valid forms of proof:+  Business Registration <br />+  Third-party issued bank statement <br />+  Public utility bill showing regular use <br />+  Lease Agreement <br />+  Government documents  |
 
 ### Number portability
 <a name="lv-porting"></a>
@@ -970,7 +970,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Lithuania (LT)
 <a name="lithuania-requirements"></a>
@@ -994,7 +994,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.   Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.   VAT number and local address is needed on the LOA. <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Luxembourg (LU)
 <a name="luxembourg-requirements"></a>
@@ -1019,7 +1019,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  You must provide the account number from the Main Losing Carrier to which the requested DID is assigned. <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Macao (MO)
 <a name="mo-requirements"></a>
@@ -1073,7 +1073,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
+| Local telephone numbers  | Yes | 1.  Your business address. It must be a local address corresponding to the area code of the telephone number(s). <br />2.  Business Registration Documentation.  <br />3.  An order form, which must include a name, address, contact person and a phone number. Use the form that is provided to you when you make the request.  |
 | Toll-free prefixes: \+60 1800 | Yes | Business Registration Documentation. Your business address. A global address is acceptable. |
 
 ### Number portability
@@ -1164,7 +1164,7 @@ Not supported
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET or 2 PM to 4 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET or 2 PM to 4 PM CET | 1.  Last invoice  <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Copy of a representative's photo ID  <br />4.  Copy of local business registration   |
 
 ## Monaco (MC)
 <a name="mc-requirements"></a>
@@ -1209,7 +1209,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 8 AM to 3 PM NZT | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 8 AM to 3 PM NZT | 1.   Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Wholesale account number of the phone number from the current carrier.    |
 
 ## Netherlands (NL)
 <a name="netherlands-requirements"></a>
@@ -1224,7 +1224,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | Local telephone numbers  | Yes | Your business address. It must be a local address corresponding to the area code of the telephone number(s). |
-| Toll-free prefixes: \+31 800 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable.<br />Estimated lead time from order to activation is 6 weeks. |
+| Toll-free prefixes: \+31 800 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information: +  Your name and address. <br />+  A description of the service for which the number will be used. <br />A global address is acceptable.<br />Estimated lead time from order to activation is 6 weeks. |
 | National prefixes: \+31 85 | Yes | Your business address in the country. |
 | National prefixes: \+31 88 | Yes | You must obtain the number directly from the local regulator and then provide your number assignment certificate to Connect Customer for number activation. Details about the process are provided when you make the request. |
 
@@ -1235,7 +1235,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Nicaragua (NI)
 <a name="nicaragua-requirements"></a>
@@ -1288,7 +1288,7 @@ Numbers are available to businesses only, not individuals. The DID type is Landl
 
 | Supported Regions | Portability windows | Required Documents |
 | --- | --- | --- |
-| Europe (Frankfurt) <br />Europe (London) | Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Europe (Frankfurt) <br />Europe (London) | Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Panama (PA)
 <a name="panama-requirements"></a>
@@ -1310,7 +1310,7 @@ Numbers are available to businesses only, not individuals. The DID type is Landl
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 12 AM to 2 AM PST | **For porting local numbers**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />**For porting toll-free numbers**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
+| Monday-Friday 12 AM to 2 AM PST | **For porting local numbers**:1.  Last invoice and proof of payment <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Copy of legal representative's photo ID <br />4.  Copy of local business registration <br />**For porting toll-free numbers**:1.  Transfer Request <br />2.  Proof of contract termination with the current provider, with a defined disconnection date within at least 14 days. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers.  |
 
 ## Peru (PE)
 <a name="peru-requirements"></a>
@@ -1334,7 +1334,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 PM to 4 AM PST |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 PM to 4 AM PST |  1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Copy of legal representative's photo ID <br />4.  Copy of local business registration   |
 
 ## Philippines (PH)
 <a name="ph-requirements"></a>
@@ -1346,8 +1346,8 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Agent location | Acceptable Identification |
 | --- | --- | --- | --- |
-| Local telephone numbers: \+63 2 | Yes | The agent must be located within the Philippines. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
-| Toll-free prefixes:\+63 1800 | Yes | The agent must be located within the Philippines. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Local telephone numbers: \+63 2 | Yes | The agent must be located within the Philippines. | +  Your business address (in the Manila Metro Region). <br />+  A copy of your Philippines business registration certificate. <br />+  If the business is registered outside of the Manila Metro Region, proof of a location in Manila Metro (such as a utility invoice no older than 6 months).   |
+| Toll-free prefixes:\+63 1800 | Yes | The agent must be located within the Philippines. | +  Your business address in the Philippines. <br />+  A copy of your Philippines business registration certificate.   |
 | UIFN | Yes | N/A | Your business name, address and service usage description. A global address is acceptable.  |
 
 ### Coverage limitations
@@ -1383,7 +1383,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 12 AM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 12 AM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Portugal (PT)
 <a name="portugal-requirements"></a>
@@ -1408,7 +1408,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.   Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  CVP (Código de Validação de Portabilidade) of the requested number is mandatory. Obtain this code from the losing carrier. <br />4.  Copy of legal representative's photo ID <br />5.  Business registration (Certidão de Registo Comercial) <br />6.  Documents required per Type of Number as listed in the previous table for ordering numbers    |
 
 ## Puerto Rico (PR)
 <a name="puerto-rico-requirements"></a>
@@ -1430,7 +1430,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM PST | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM PST | 1.  Last invoice  <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.    |
 
 ## Reunion (RE)
 <a name="re-requirements"></a>
@@ -1476,7 +1476,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM PST | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM PST | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Saba (BQ)
 <a name="saba-requirements"></a>
@@ -1488,7 +1488,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+599 4 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+599 4 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="bq-porting"></a>
@@ -1544,7 +1544,7 @@ Not supported
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers  | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers  | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="jm-porting"></a>
@@ -1561,7 +1561,7 @@ Porting is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 758 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+1 758 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="mf-porting"></a>
@@ -1590,7 +1590,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 9 AM to 5 PM SGT | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 9 AM to 5 PM SGT | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  List of Port in Numbers   |
 
 Porting-out DIDs is only possible for contiguous number blocks of 10 numbers (...0 to ...9) due to market practice.
 
@@ -1604,7 +1604,7 @@ Porting-out DIDs is only possible for contiguous number blocks of 10 numbers (..
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+599 3 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+599 3 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="bq-porting"></a>
@@ -1621,7 +1621,7 @@ Porting is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 721 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+1 721 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="sx-porting"></a>
@@ -1650,7 +1650,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Slovenia (SI)
 <a name="slovenia-requirements"></a>
@@ -1675,7 +1675,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## South Africa (ZA)
 <a name="southafrica-requirements"></a>
@@ -1689,7 +1689,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 - **Africa (Cape Town) **
   - **Type of Number:** Local numbers:  / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address. It must be a local address corresponding to the area code of the telephone number(s). Your Tax ID.
-  - **Type of Number:** Mobile numbers: / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in South Africa and proof of address such as one of the following documents:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)
+  - **Type of Number:** Mobile numbers: / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in South Africa and proof of address such as one of the following documents:+  Excerpt from the commercial register showing the South Africa address <br />+  Utility bill <br />+  Tax notice <br />+  Rent receipt <br />+  Title deed
   - **Type of Number:** Toll-free prefixes: \+27 80 / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in South Africa, along with your tax ID, and a service description.
   - **Type of Number:** Shared-Cost prefixes: \+27 860, \+27 861 / **Are there ID requirements?:** Yes / **Acceptable Identification:** Your business address in South Africa, along with your tax ID, and a service description.
 
@@ -1700,7 +1700,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Supported Regions | Portability windows | Required Documents |
 | --- | --- | --- |
-| Africa (Cape Town) | Monday - Friday 5 PM to 8 PM SAST | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Africa (Cape Town) | Monday - Friday 5 PM to 8 PM SAST | 1.  Last invoice. <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it. <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers.   |
 
 ## South Korea (KR)
 <a name="southkorea-requirements"></a>
@@ -1718,7 +1718,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
 | VoIP prefixes numbers: \+82 70 | Yes | Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address.<br />Submit an Support ticket to verify the documents for new number(s) ordering. |
-| Representative numbers: \+82 15, \+82 16 | Yes | Representative number order form is required. Use the form that is provided to you when you make the request. Along with this form, the following documents are required:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Submit an Support ticket to verify the documents for new number(s) ordering. |
+| Representative numbers: \+82 15, \+82 16 | Yes | Representative number order form is required. Use the form that is provided to you when you make the request. Along with this form, the following documents are required:+  Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address. <br />Submit an Support ticket to verify the documents for new number(s) ordering. |
 | Toll-free prefixes: \+82 80 | Yes | Your business address in South Korea.<br />Local customers should provide a copy of their **business (tax office) registration certificate**, which is issued by local tax authorities and shows the company's registered address.<br />Submit an Support ticket to verify the documents for new number(s) ordering.<br />Submit an Support ticket to order a new number. |
 | Geographic Prefixes: \+82 2 | Yes (via Porting) | Same as for VOIP numbers, but the provided business registration document should reference a physical location associated with \+822 (Seoul) zone.<br />But if new local numbers are needed due to the Korean regulations requiring new local numbers to be physically installed as legacy services, we recommend you pre-plan migrations and ensure that you request numbers with existing providers that have a minimum of 6 months of physical installation of the number.<br />Connect Customer can support migration of a large number of DIDs, and can port numbers older than 6 months directly to Connect Customer. |
 
@@ -1729,11 +1729,11 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of number | Portability windows | Required documents |
 | --- | --- | --- |
-| Geographic Prefixes: \+82 2 (any \+82 number other than \+821, \+825, \+827, \+82308) | Monday-Friday 9 AM to 6 PM KST | New SIP Order Form and SIP Port Form for the existing number(s). Use the forms that are provided to you when you make the request. Documents must be signed by a company employee whose month and year of birth are noted, and the company stamp must be applied. Along with these forms the following documents are required:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Submit an Support ticket to verify the portability of your number(s). |
-| National Prefixes: \+82 50 | Monday-Friday 9 AM to 6 PM KST | New SIP Order Form and SIP Port Form for the existing number(s). Use the forms that are provided to you when you make the request. Documents must be signed by a company employee whose month and year of birth are noted, and the company stamp must be applied. Along with these forms the following documents are required:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Submit an Support ticket to verify the portability of your number(s). |
-| Representative numbers: \+82 15, \+82 16 | Monday-Friday 9 AM to 6 PM KST | RN/TFN change form is required. Use the form that is provided to you when you make the request. Along with this form the following documents are required:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Submit an Support ticket to verify the portability of your number(s). |
-| Toll-free prefixes: \+82 80 | Monday-Friday 9 AM to 6 PM KST | RN/TFN change form required. Use the form that is provided to you when you make the request. Along with this form the following documents are required:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Submit an Support ticket to verify the documents for new number(s) ordering. |
-| VoIP prefixes numbers: \+82 70 | Monday-Friday 9 AM to 6 PM KST | Effectively, callforward to another \+8270 is possible.<br />New SIP Order Form and SIP Port Form for the existing number(s). Use the forms that are provided to you when you make the request. Documents must be signed by a company employee whose month and year of birth are noted, and the company stamp must be applied. Along with these forms the following documents are required:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />Submit an Support ticket to verify the portability of your number(s). |
+| Geographic Prefixes: \+82 2 (any \+82 number other than \+821, \+825, \+827, \+82308) | Monday-Friday 9 AM to 6 PM KST | New SIP Order Form and SIP Port Form for the existing number(s). Use the forms that are provided to you when you make the request. Documents must be signed by a company employee whose month and year of birth are noted, and the company stamp must be applied. Along with these forms the following documents are required:1.  Korean Business Certificate within 6 months. The certificate must match the geographic zone <br />2.  Personal ID for person signing the form <br />3.  Certificate of Seal Impression <br />Submit an Support ticket to verify the portability of your number(s). |
+| National Prefixes: \+82 50 | Monday-Friday 9 AM to 6 PM KST | New SIP Order Form and SIP Port Form for the existing number(s). Use the forms that are provided to you when you make the request. Documents must be signed by a company employee whose month and year of birth are noted, and the company stamp must be applied. Along with these forms the following documents are required:1.  Korean Business Certificate within 6 months. The certificate must match the geographic zone <br />2.  Personal ID for person signing the form <br />3.  Certificate of Seal Impression <br />Submit an Support ticket to verify the portability of your number(s). |
+| Representative numbers: \+82 15, \+82 16 | Monday-Friday 9 AM to 6 PM KST | RN/TFN change form is required. Use the form that is provided to you when you make the request. Along with this form the following documents are required:1.  Copy of the company certified registration within 6 months  <br />Submit an Support ticket to verify the portability of your number(s). |
+| Toll-free prefixes: \+82 80 | Monday-Friday 9 AM to 6 PM KST | RN/TFN change form required. Use the form that is provided to you when you make the request. Along with this form the following documents are required:1.  Copy of the company certified registration within 6 months  <br />Submit an Support ticket to verify the documents for new number(s) ordering. |
+| VoIP prefixes numbers: \+82 70 | Monday-Friday 9 AM to 6 PM KST | Effectively, callforward to another \+8270 is possible.<br />New SIP Order Form and SIP Port Form for the existing number(s). Use the forms that are provided to you when you make the request. Documents must be signed by a company employee whose month and year of birth are noted, and the company stamp must be applied. Along with these forms the following documents are required:1.  Korean Business Certificate within 6 months. The certificate must match the geographic zone. <br />2.  Personal ID for person signing the form. <br />3.  Certificate of Seal Impression <br />Submit an Support ticket to verify the portability of your number(s). |
 
 ## Spain (ES)
 <a name="spain-requirements"></a>
@@ -1757,7 +1757,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.   Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  CIF/NIF (VAT number) <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Sweden (SE)
 <a name="sweden-requirements"></a>
@@ -1783,7 +1783,7 @@ Number portability is not available for \+46 77 numbers.
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.   Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Your tax number has to be provided. A Swedish organization number usually contains 12 digits, starting with **16** if it is from a company, or **19** or **20** if it's personal. <br />4.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers    |
 
 ## Switzerland (CH)
 <a name="switzerland-requirements"></a>
@@ -1807,7 +1807,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 10 AM to 12 PM CET | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 10 AM to 12 PM CET | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  <br />3.  Documents required for the Type of Number, as listed in the previous table for ordering phone numbers  <br />4.  Proof of address <br />5.  Company registration   |
 
 ## Taiwan (TW)
 <a name="tw-requirements"></a>
@@ -1839,7 +1839,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Portability windows | Required Documents |
 | --- | --- | --- |
-| Local telephone numbers | Monday-Friday 9 AM to 5 PM ICT | The business address must be in Thailand[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html) |
+| Local telephone numbers | Monday-Friday 9 AM to 5 PM ICT | The business address must be in Thailand1.  Complete the form provided with contact name, contact phone number and contact email address. <br />2.  Last invoice <br />3.  Copy of company affidavit of end user (not over than 90 days from the date of issue) <br />4.  Copy of authorized director ID with signature <br />5.  Copy of Authorization representative ID with signature  |
 
 **Additional requirements for Thailand**: See [Things to know about Thailand number porting](porting-numbers-th.md).
 
@@ -1853,7 +1853,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 868 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+1 868 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="tt-porting"></a>
@@ -1870,7 +1870,7 @@ Porting is not supported.
 
 | Type of Number | Are there ID requirements? | Acceptable Identification |
 | --- | --- | --- |
-| Local telephone numbers: \+1 649 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)<br />A global address is acceptable. |
+| Local telephone numbers: \+1 649 | Yes | An order form is required. Use the form that is provided to you when you make the request. Provide the following information:+  Your name and address <br />+  A description of the service for which the number(s) will be used <br />A global address is acceptable. |
 
 ### Number portability
 <a name="tc-porting"></a>
@@ -1918,7 +1918,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| For local (geographic) numbers: Monday-Friday 9AM to 11AM GMT<br />For non-geographic (national, toll-free) numbers: Monday-Friday 9AM to 11AM GMT or 0AM to 4AM GMT | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)When porting \+44 300 numbers, additional documents might be required to prove you are a public sector or non-profit body. |
+| For local (geographic) numbers: Monday-Friday 9AM to 11AM GMT<br />For non-geographic (national, toll-free) numbers: Monday-Friday 9AM to 11AM GMT or 0AM to 4AM GMT | 1.  Last invoice <br />2.  Site address in the UK for local numbers. <br />3.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.  When porting \+44 300 numbers, additional documents might be required to prove you are a public sector or non-profit body. |
 
 ## United States (US)
 <a name="us-requirements"></a>
@@ -1940,7 +1940,7 @@ For UIFN numbers, supports standard [Regions and requirements](#uifn-requirement
 
 | Portability windows | Required Documents |
 | --- | --- |
-| Monday-Friday 7 AM to 5PM CST | [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/phone-number-requirements.html)  |
+| Monday-Friday 7 AM to 5PM CST | 1.  Last invoice <br />2.  Letter of Authorization (LOA): When you request porting services, we will provide you with a country-specific LOA template and explain how to complete it.    |
 
 ## Uruguay (UY)
 <a name="uy-requirements"></a>

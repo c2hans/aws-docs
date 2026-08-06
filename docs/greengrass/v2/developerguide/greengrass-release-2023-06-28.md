@@ -28,7 +28,7 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.11.0 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.11.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-06-28.html) |
-| Greengrass CLI | Version 2.11.0 of the [Greengrass CLI](greengrass-cli-component.md) is available.<a name="changelog-cli-2.11.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-06-28.html) |
-| Disk spooler | Version 1.0.0 of the [disk spooler](disk-spooler-component.md) component is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-06-28.html) |
-| Log manager | Version 2.3.5 of the [log manager](log-manager-component.md) component is available.<a name="changelog-log-manager-2.3.5"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-06-28.html) |
+| Greengrass nucleus | Version 2.11.0 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.11.0"></a>**New features**<br />   Enables you to cancel a local deployment.   Enables you to configure a failure handling policy for a local deployment.   Adds support for a disk spooler plugin.    |
+| Greengrass CLI | Version 2.11.0 of the [Greengrass CLI](greengrass-cli-component.md) is available.<a name="changelog-cli-2.11.0"></a>**New features**<br />   Enables you to cancel a local deployment.   Enables you to configure a failure handling policy for a local deployment.   Improves detailed deployment status reporting.    |
+| Disk spooler | Version 1.0.0 of the [disk spooler](disk-spooler-component.md) component is available.+  The disk spooler component provides persistent storage of messages sent from Greengrass core devices to AWS IoT Core.  |
+| Log manager | Version 2.3.5 of the [log manager](log-manager-component.md) component is available.<a name="changelog-log-manager-2.3.5"></a>**Improvements**<br /> Improves log upload speed.  |

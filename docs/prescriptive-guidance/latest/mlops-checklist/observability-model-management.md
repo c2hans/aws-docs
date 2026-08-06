@@ -9,7 +9,7 @@ The observability and model management section of the checklist encompasses mode
 
 |  |
 | --- |
-| 3.1 Versioned model registry | In general, a model registry supports version control and lineage tracking of model components. A good registry can associate metadata with the versioned model, including the following:The data usedInformation about the modelEvaluation metric resultsAssociated model code |
+| 3.1 Versioned model registry | In general, a model registry supports version control and lineage tracking of model components. A good registry can associate metadata with the versioned model, including the following:+ The data used<br />+ Information about the model<br />+ Evaluation metric results<br />+ Associated model code |
 | --- |--- |
 | **3.2 Bias, fairness, and explainability** | At a bare minimum, an ML system should have a process whereby a model's predictions are explainable to other parties. Users should be able to check results for bias by each feature. Ideally, measure data bias before inputting the data into the ML model, and record these metrics for model cards and auditing. |
 | **3.3 Lineage tracking: data inputs and outputs** | Tracking is in place to follow the flow of data in and out of the system (for example, runs from the data lake to the training pipeline). This tracking acts as a record from which all system processes can be recreated, and it provides an audit trail for analysis. |

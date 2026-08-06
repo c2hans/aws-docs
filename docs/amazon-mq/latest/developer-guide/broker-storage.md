@@ -19,8 +19,8 @@ The following table provides a brief overview of the differences between in-memo
 
 | Storage Type | Persistence | Example Use Case | Approximate Maximum Number of Messages Enqueued per Broker, per Second (1KB Message) | Replication |
 | --- | --- | --- | --- | --- |
-| In-memory | Non-persistent |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-storage.html)  | 5,000 | None |
-| Amazon EBS | Persistent |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/broker-storage.html)  | 500 | Multiple copies within a single Availability Zone (AZ) |
+| In-memory | Non-persistent |  +  Stock quotes <br />+  Location data updates <br />+  Frequently changed data   | 5,000 | None |
+| Amazon EBS | Persistent |  +  High volumes of text <br />+  Order processing   | 500 | Multiple copies within a single Availability Zone (AZ) |
 | Amazon EFS | Persistent | Financial transactions | 80 | Multiple copies across multiple AZs |
 
 In-memory message storage provides the lowest latency and the highest throughput. However, messages are lost during instance replacement or broker restart.

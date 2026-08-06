@@ -12,7 +12,7 @@ The following tables show the key considerations when you are interconnecting yo
 | **Security VPC with VPC peering** | **Security VPC with AWS Transit Gateway** | **Security VPC with VPN interconnect** |
 | --- |--- |--- |
 | **Advantages** | **Disadvantages** | **Advantages** | **Disadvantages** | **Advantages** | **Disadvantages** |
-| Easy and quick to set upSimple routingHigh redundancyHigh bandwidth | Only supports traffic from VPC-assigned CIDR rangesCannot insert security inspection between VPCsComplex to manage at scale (all are point-to-point) | Easy to set upFlexible routing without SNATHigh redundancyHigh bandwidthEasy to manage at scale | Routing is more complex (VPC route tables and AWS Transit Gateway route tables)Complex topology to insert security inspection between VPCs | Flexible routing without SNATEasy insertion of security inspection between VPCs | Low bandwidthComplex vendor-specific dependent failoverComplex to manage at scale (all are point-to-point) |
+| + Easy and quick to set up<br />+ Simple routing<br />+ High redundancy<br />+ High bandwidth | + Only supports traffic from VPC-assigned CIDR ranges<br />+ Cannot insert security inspection between VPCs<br />+ Complex to manage at scale (all are point-to-point) | + Easy to set up<br />+ Flexible routing without SNAT<br />+ High redundancy<br />+ High bandwidth<br />+ Easy to manage at scale | + Routing is more complex (VPC route tables and AWS Transit Gateway route tables)<br />+ Complex topology to insert security inspection between VPCs | + Flexible routing without SNAT<br />+ Easy insertion of security inspection between VPCs | + Low bandwidth<br />+ Complex vendor-specific dependent failover<br />+ Complex to manage at scale (all are point-to-point) |
 
 |
 |

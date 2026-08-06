@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.9.3 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.3"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-02-01.html) |
+| Greengrass nucleus | Version 2.9.3 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.3"></a>**Bug fixes and improvements**<br />   Ensures MQTT client IDs aren't duplicated.   Adds more robust file-reading and writing to avoid and recover from corruption.   Retries docker image pull on specific network-related errors.   Adds the `noProxyAddresses` option for MQTT connection.    |

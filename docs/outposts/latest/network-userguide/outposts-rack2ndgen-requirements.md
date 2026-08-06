@@ -235,7 +235,7 @@ The following table lists the power requirements for Outposts compute and networ
 
 | Requirement | Specification |
 | --- | --- |
-| **AC line voltage** | **Single-phase** 208 to 277 VAC; 50 or 60 Hz<br />**Three-phase**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/outposts/latest/network-userguide/outposts-rack2ndgen-requirements.html) |
+| **AC line voltage** | **Single-phase** 208 to 277 VAC; 50 or 60 Hz<br />**Three-phase**:+  208 to 250 VAC (Delta); 50 to 60 Hz <br />+  346 to 480 VAC (Wye); 50 to 60 Hz  |
 | **Power consumption** | 15 kVA (13 kW) or 30 kVA (26 kW) |
 | **AC protection (upstream power breakers)** | 30 A, 32 A, or 50 A |
 | **AC inlet type (receptacle)** | Single phase L6-30P (30A) or IEC309 P\+N\+E, 6 hour (32 A), three phase AH530P7W 3P\+N\+E, 7 hour (30A), or three phase AH532P6W 3P\+N\+E 6 hour (32 A), or three phase Non-NEMA twistlock Hubbell CS8365C, 3P\+E, center ground (50A) |

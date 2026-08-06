@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DescribeFleetLocationAttributes
 <a name="API_DescribeFleetLocationAttributes"></a>
 
- **This API works with the following fleet types:** EC2, Container
+ **This API works with the following fleet types:** EC2, Anywhere, Container
 
 Retrieves information on a fleet's remote locations, including life-cycle status and any suspended fleet activity.
 

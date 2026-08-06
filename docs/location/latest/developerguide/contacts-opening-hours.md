@@ -42,4 +42,4 @@ Exceptional hours for holidays or special events, provided as overrides to regul
 **Open now**
 An indicator of whether a location is currently open, based on the local time. This information is helpful for users looking for businesses that are open at the time of their query.
 
-For further details, refer to the Amazon Location Service [API documentation](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_OpeningHours.html) to explore options for retrieving contact details and opening hours for points of interest.
+For more information about contact details and opening hours for points of interest, see the Amazon Location Service [OpeningHours API reference](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_OpeningHours.html).

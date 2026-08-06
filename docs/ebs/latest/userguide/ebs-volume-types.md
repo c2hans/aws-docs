@@ -29,7 +29,7 @@ SSD-backed volumes are optimized for transactional workloads involving frequent 
 <tbody>
   <tr><td>Volume type</td><td>gp3 6</td><td>gp2</td><td>io2 Block Express</td><td>io1</td></tr>
   <tr><td>Durability</td><td colspan="2">99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)</td><td>99.999% durability (0.001% annual failure rate)</td><td>99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)</td></tr>
-  <tr><td>Use cases</td><td colspan="2"> [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html) </td><td>Workloads that require:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html)</td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html) </td></tr>
+  <tr><td>Use cases</td><td colspan="2"> + Transactional workloads<br />+ Virtual desktops<br />+ Medium-sized, single-instance databases<br />+ Low-latency interactive applications<br />+ Boot volumes<br />+ Development and test environments </td><td>Workloads that require:+  Consistent sub-millisecond latency with average latency under 500 microseconds 5 <br />+  Sustained IOPS performance <br />+  More than 80,000 IOPS or 2,000 MiB/s of throughput </td><td> +  Workloads that require sustained IOPS performance or more than 16,000 IOPS <br />+  I/O-intensive database workloads  </td></tr>
   <tr><td>Volume size</td><td>1 GiB - 64 TiB </td><td>1 GiB - 16 TiB </td><td>4 GiB - 64 TiB </td><td>4 GiB - 16 TiB </td></tr>
   <tr><td>Max IOPS</td><td>80,000 3 (25.6 KiB I/O 4)</td><td>16,000 (16 KiB I/O 4)</td><td>256,000 3 (16 KiB I/O 4) </td><td>64,000 (16 KiB I/O 4)</td></tr>
   <tr><td>Max throughput</td><td>2,000 MiB/s</td><td>250 MiB/s 1</td><td>4,000 MiB/s</td><td>1,000 MiB/s 2</td></tr>
@@ -67,7 +67,7 @@ HDD-backed volumes are optimized for large streaming workloads where the dominan
 <tbody>
   <tr><td>Volume type</td><td>st1</td><td>sc1</td></tr>
   <tr><td>Durability</td><td colspan="2">99.8% - 99.9% durability (0.1% - 0.2% annual failure rate)</td></tr>
-  <tr><td>Use cases</td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html) </td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html) </td></tr>
+  <tr><td>Use cases</td><td> +  Big data <br />+  Data warehouses <br />+  Log processing  </td><td> +  Throughput-oriented storage for data that is infrequently accessed <br />+  Scenarios where the lowest storage cost is important  </td></tr>
   <tr><td>Volume size</td><td colspan="2">125 GiB - 16 TiB</td></tr>
   <tr><td>Max IOPS per volume (1 MiB I/O)</td><td>500</td><td>250</td></tr>
   <tr><td>Max throughput per volume</td><td>500 MiB/s</td><td>250 MiB/s</td></tr>

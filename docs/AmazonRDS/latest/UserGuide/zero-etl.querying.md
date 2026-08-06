@@ -198,7 +198,7 @@ Zero-ETL integrations for RDS for PostgreSQL don't support custom data types or 
 | macaddr8 | VARCHAR(23) | Variable-length string value up to 23 characters | None |
 | money | DECIMAL(20,3) | Currency amount | None |
 | name | VARCHAR(64) | Variable-length string value up to 64 characters | None |
-| numeric(p,s) | DECIMAL(p,s) | User-defined fixed precision value |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html)  |
+| numeric(p,s) | DECIMAL(p,s) | User-defined fixed precision value |  +  `NaN` values not supported <br />+  Precision and scale must be explicitly defined and not greater than 38 (precision) and 37 (scale) <br />+  Negative scale not supported   |
 | oid | BIGINT | Signed eight-byte integer | None |
 | oidvector | SUPER | Semistructured data or documents as values. | None |
 | pg\_brin\_bloom\_summary | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
@@ -217,8 +217,8 @@ Zero-ETL integrations for RDS for PostgreSQL don't support custom data types or 
 | tid | VARCHAR(23) | Variable-length string value up to 23 characters | None |
 | time [(p)] without time zone | VARCHAR(19) | Variable-length string value up to 19 characters | Infinity and -Infinity values not supported |
 | time [(p)] with time zone | VARCHAR(22) | Variable-length string value up to 22 characters | Infinity and -Infinity values not supported |
-| timestamp [(p)] without time zone | TIMESTAMP | Date and time (without time zone) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html)  |
-| timestamp [(p)] with time zone | TIMESTAMPTZ | Date and time (with time zone) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html)  |
+| timestamp [(p)] without time zone | TIMESTAMP | Date and time (without time zone) |  +  `Infinity` and `-Infinity` values not supported <br />+  Values greater than `9999-12-31` not supported <br />+  B.C. values not supported   |
+| timestamp [(p)] with time zone | TIMESTAMPTZ | Date and time (with time zone) |  +  `Infinity` and `-Infinity` values not supported <br />+  Values greater than `9999-12-31` not supported <br />+  B.C. values not supported   |
 | tsquery | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
 | tsvector | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
 | txid\_snapshot | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
@@ -252,11 +252,11 @@ The following table shows the data type differences that affect a zero-ETL integ
 | BINARY\_DOUBLE | FLOAT8 |
 | BINARY | VARCHAR (Length) |
 | FLOAT (P) | If precision is =< 24, then FLOAT4.<br />If precision is > 24, then FLOAT8. |
-| NUMBER (P,S) | If scale is => 0 and =< 37, then NUMERIC (p,s).<br />If scale is => 38 and =< 127, then VARCHAR (Length).<br />If scale is 0:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html)<br />If scale is less than 0, then INT8. |
-| DATE | If the scale is => 0 and =< 6, depending on the Redshift target column type, then one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html)<br />If the scale is => 7 and =< 9, then VARCHAR (37). |
+| NUMBER (P,S) | If scale is => 0 and =< 37, then NUMERIC (p,s).<br />If scale is => 38 and =< 127, then VARCHAR (Length).<br />If scale is 0:+  And precision is less than or equal to 2, then INT2. <br />+  And precision is greater than 2 and less than or equal to 4, then INT2. <br />+  And precision is greater than 4 and less than or equal to 9, then INT4. <br />+  And precision is greater than 9, then NUMERIC (p,s). <br />+  And precision is greater than or equal to scale, then NUMERIC (p,s). <br />If scale is less than 0, then INT8. |
+| DATE | If the scale is => 0 and =< 6, depending on the Redshift target column type, then one of the following:+  TIMESTAMP (s) <br />+  TIMESTAMPTZ (s) — If source timestamp contains a zone offset (such as in SQL Server or Oracle) it converts to UTC on insert/update. If it does not contain an offset, then time is considered in UTC already. <br />If the scale is => 7 and =< 9, then VARCHAR (37). |
 | INTERVAL\_YEAR TO MONTH | If the length is 1–65,535, then VARCHAR (length in bytes).<br />If the length is 65,536–2,147,483,647, then VARCHAR (65535). |
 | INTERVAL\_DAY TO SECOND | If the length is 1–65,535, then VARCHAR (length in bytes).<br />If the length is 65,536–2,147,483,647, then VARCHAR (65535). |
-| TIMESTAMP | If the scale is => 0 and =< 6, depending on the Redshift target column type, then one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.querying.html)<br />If the scale is => 7 and =< 9, then VARCHAR (37). |
+| TIMESTAMP | If the scale is => 0 and =< 6, depending on the Redshift target column type, then one of the following:+  TIMESTAMP (s) <br />+  TIMESTAMPTZ (s) — If source timestamp contains a zone offset (such as in SQL Server or Oracle) it converts to UTC on insert/update. If it does not contain an offset, then time is considered in UTC already. <br />If the scale is => 7 and =< 9, then VARCHAR (37). |
 | TIMESTAMP WITH TIME ZONE | If the length is 1–65,535, then VARCHAR (length in bytes).<br />If the length is 65,536–2,147,483,647, then VARCHAR (65535). |
 | TIMESTAMP WITH LOCAL TIME ZONE | If the length is 1–65,535, then VARCHAR (length in bytes).<br />If the length is 65,536–2,147,483,647, then VARCHAR (65535). |
 | CHAR | If the length is 1–65,535, then VARCHAR (length in bytes).<br />If the length is 65,536–2,147,483,647, then VARCHAR (65535). |

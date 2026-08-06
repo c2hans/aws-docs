@@ -42,7 +42,7 @@ GuardDuty recommends that you build suppression rules reactively and only for fi
   Finding type: {{UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS}} API caller IPv4 address: {{198.51.100.6}}
   ```
 **Note**
-To include multiple API caller IPs you can add a new API Caller IPv4 address filter for each.
+To include multiple API caller IPs you can add each IP address to the list of values for Equals or NotEquals conditions, or use wildcard patterns for Matches or NotMatches conditions.
 + [Recon:EC2/Portscan](guardduty_finding-types-ec2.md#recon-ec2-portscan) – Use a suppression rule to automatically archive findings when using a vulnerability assessment application.
 
   The suppression rule should consist of two filter criteria. The first criteria should use the **Finding type** attribute with a value of `Recon:EC2/Portscan`. The second filter criteria should match the instance or instances that host these vulnerability assessment tools. You can use either the **Instance image ID** attribute or the **Tag** value attribute depending on which criteria are identifiable with the instances that host these tools. The example below represents the filter you would use to suppress this finding type based on instances with a certain AMI.

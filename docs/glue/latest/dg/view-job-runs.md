@@ -38,13 +38,13 @@ The **Job runs** resource list displays the details for the job runs. You can so
 | Property | Description |
 | --- | --- |
 | Job name | The name of the job. |
-| Type | The type of job environment:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html) |
+| Type | The type of job environment:+  **Glue ETL**: Runs in an Apache Spark environment managed by AWS Glue. <br />+  **Glue Streaming**: Runs in an Apache Spark environment and performs ETL on data streams. <br />+  **Python shell**: Runs Python scripts as a shell.  |
 | Start time | The date and time at which this job run was started. |
 | End time | The date and time that this job run completed. |
-| Run status | The current state of the job run. Values can be:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html) |
+| Run status | The current state of the job run. Values can be:+  `STARTING` <br />+  `RUNNING` <br />+  `STOPPING` <br />+  `STOPPED` <br />+  `SUCCEEDED` <br />+  `FAILED` <br />+  `TIMEOUT`  |
 | Run time | The amount of time that the job run consumed resources. |
 | Capacity | The number of AWS Glue data processing units (DPUs) that were allocated for this job run. For more information about capacity planning, see [Monitoring for DPU Capacity Planning](https://docs.aws.amazon.com/glue/latest/dg/monitor-debug-capacity.html) in the *AWS Glue Developer Guide*. |
-| Worker type | The type of predefined worker that was allocated when the job ran. Values can be `G.1X`, `G.2X`, `G.4X` or `G.8X`. [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html) |
+| Worker type | The type of predefined worker that was allocated when the job ran. Values can be `G.1X`, `G.2X`, `G.4X` or `G.8X`. +  **G.1X** – When you choose this type, you also provide a value for **Number of workers**. Each worker maps to 1 DPU (4 vCPUs, 16 GB of memory) with 84GB disk (approximately 34GB free). We recommend this worker type for memory-intensive jobs. This is the default **Worker type** for AWS Glue Version 2.0 or later jobs. <br />+  **G.2X** – When you choose this type, you also provide a value for **Number of workers**. Each worker maps to 2 DPU (8 vCPUs, 32 GB of memory) with 128GB disk (approximately 77GB free). We recommend this worker type for memory-intensive jobs and jobs that run machine learning transforms. <br />+  **G.4X** – When you choose this type, you also provide a value for **Number of workers**. Each worker maps to 4 DPU (16 vCPUs, 64 GB of memory) with 256GB disk (approximately 235GB free). We recommend this worker type for jobs whose workloads contain your most demanding transforms, aggregations, joins, and queries. This worker type is available only for AWS Glue version 3.0 or later Spark ETL jobs in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), and Europe (Stockholm). <br />+  **G.8X** – When you choose this type, you also provide a value for **Number of workers**. Each worker maps to 8 DPU (32 vCPUs, 128 GB of memory) with 512GB disk (approximately 487GB free). We recommend this worker type for jobs whose workloads contain your most demanding transforms, aggregations, joins, and queries. This worker type is available only for AWS Glue version 3.0 or later Spark ETL jobs, in the same AWS Regions as supported for the `G.4X` worker type.  |
 | DPU hours | The estimated number of DPUs used for the job run. A DPU is a relative measure of processing power. DPUs are used to determine the cost of running your job. For more information, see the [AWS Glue pricing](https://aws.amazon.com/glue/pricing/) page. |
 
 You can choose any job run in the list and view additional information. Choose a job run, and then do one of the following:
@@ -73,7 +73,7 @@ The information displayed on the job run detail page includes:
 | Property | Description |
 | --- | --- |
 | Job name | The name of the job. |
-| Run Status | The current state of the job run. Values can be:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html) |
+| Run Status | The current state of the job run. Values can be:+  `STARTING` <br />+  `RUNNING` <br />+  `STOPPING` <br />+  `STOPPED` <br />+  `SUCCEEDED` <br />+  `FAILED` <br />+  `TIMEOUT`  |
 | Glue version | The AWS Glue version used by the job run. |
 | Recent attempt | The number of automatic retry attempts for this job run. |
 | Start time | The date and time at which this job run was started. |
@@ -87,7 +87,7 @@ The information displayed on the job run detail page includes:
 | Allocated capacity | The number of AWS Glue data processing units (DPUs) that were allocated for this job run. For more information about capacity planning, see [Monitoring for DPU Capacity Planning](https://docs.aws.amazon.com/glue/latest/dg/monitor-debug-capacity.html) in the *AWS Glue Developer Guide*. |
 | Max capacity | The maximum capacity available to the job run. |
 | Number of workers | The number of workers used for the job run.  |
-| Worker type | The type of predefined workers allocated for the job run. Values can be `G.1X` or `G.2X`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/view-job-runs.html) |
+| Worker type | The type of predefined workers allocated for the job run. Values can be `G.1X` or `G.2X`.+  **G.1X** – When you choose this type, you also provide a value for **Number of workers**. Each worker maps to 1 DPU (4 vCPUs, 16 GB of memory, 64 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs. This is the default **Worker type** for AWS Glue Version 2.0 or later jobs. <br />+  **G.2X** – When you choose this type, you also provide a value for **Number of workers**. Each worker maps to 2 DPUs (8 vCPUs, 32 GB of memory, 128 GB disk), and provides 1 executor per worker. We recommend this worker type for memory-intensive jobs and jobs that run machine learning transforms.  |
 | Logs | A link to the job logs for continuous logging (/aws-glue/jobs/logs-v2).  |
 | Output Logs | A link to the job output log files (/aws-glue/jobs/output). |
 | Error logs | A link to the job error log files (/aws-glue/jobs/error). |

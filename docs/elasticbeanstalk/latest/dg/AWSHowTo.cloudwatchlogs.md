@@ -63,13 +63,13 @@ When you enable instance log streaming to CloudWatch Logs, Elastic Beanstalk sen
 
 |  Platform / Platform Branch  |  Logs  |
 | --- | --- |
-| Docker |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| ECS on Docker |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Go<br />.NET Core on Linux<br />Java |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Node.js<br />Python |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Tomcat<br />PHP |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| .NET on Windows Server |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Ruby |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
+| Docker |  +  /var/log/eb-engine.log <br />+  /var/log/eb-hooks.log <br />+  /var/log/docker <br />+  /var/log/docker-events.log <br />+  /var/log/eb-docker/containers/eb-current-app/stdouterr.log <br />+  /var/log/nginx/access.log <br />+  /var/log/nginx/error.log   |
+| ECS on Docker |  +  /var/log/docker-events.log <br />+  /var/log/eb-ecs-mgr.log <br />+  /var/log/eb-engine.log <br />+  /var/log/eb-hooks.log <br />+  /var/log/ecs/ecs-agent.log <br />+  /var/log/ecs/ecs-init.log   |
+| Go<br />.NET Core on Linux<br />Java |  +  /var/log/eb-engine.log <br />+  /var/log/eb-hooks.log <br />+  /var/log/web.stdout.log <br />+  /var/log/nginx/access.log <br />+  /var/log/nginx/error.log   |
+| Node.js<br />Python |  +  /var/log/eb-engine.log <br />+  /var/log/eb-hooks.log <br />+  /var/log/web.stdout.log <br />+  /var/log/httpd/access\_log <br />+  /var/log/httpd/error\_log <br />+  /var/log/nginx/access.log <br />+  /var/log/nginx/error.log   |
+| Tomcat<br />PHP |  +  /var/log/eb-engine.log <br />+  /var/log/eb-hooks.log <br />+  /var/log/httpd/access\_log <br />+  /var/log/httpd/error\_log <br />+  /var/log/nginx/access.log <br />+  /var/log/nginx/error.log   |
+| .NET on Windows Server |  +  C:\\inetpub\\logs\\LogFiles\\W3SVC1\\u\_ex\*.log <br />+  C:\\Program Files\\Amazon\\ElasticBeanstalk\\logs\\AWSDeployment.log <br />+  C:\\Program Files\\Amazon\\ElasticBeanstalk\\logs\\Hooks.log   |
+| Ruby |  +  /var/log/eb-engine.log <br />+  /var/log/eb-hooks.log <br />+  /var/log/puma/puma.log <br />+  /var/log/web.stdout.log <br />+  /var/log/nginx/access.log <br />+  /var/log/nginx/error.log   |
 
 ### Log files on Amazon Linux AMI platforms
 <a name="AWSHowTo.cloudwatchlogs.loggroups.alami"></a>
@@ -83,17 +83,17 @@ The following table lists the log files streamed from instances on platform bran
 
 |  Platform / Platform Branch  |  Logs  |
 | --- | --- |
-| Docker / <br />Platform Branch: Docker Running on 64bit Amazon Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Docker / <br />Platform Branch: Multicontainer Docker Running on 64bit Amazon Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Glassfish (Preconfigured Docker) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Go |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Java /<br />Platform Branch: Java 8 running on 64bit Amazon Linux<br />Platform Branch: Java 7 running on 64bit Amazon Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Tomcat |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Node.js |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| PHP |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Python |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Ruby /<br />Platform Branch: Puma with Ruby running on 64bit Amazon Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
-| Ruby / Platform Branch: Passenger with Ruby running on 64bit Amazon Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html)  |
+| Docker / <br />Platform Branch: Docker Running on 64bit Amazon Linux |  +  /var/log/eb-activity.log <br />+  /var/log/nginx/error.log <br />+  /var/log/docker-events.log <br />+  /var/log/docker <br />+  /var/log/nginx/access.log <br />+  /var/log/eb-docker/containers/eb-current-app/stdouterr.log   |
+| Docker / <br />Platform Branch: Multicontainer Docker Running on 64bit Amazon Linux |  +  /var/log/eb-activity.log <br />+  /var/log/ecs/ecs-init.log <br />+  /var/log/eb-ecs-mgr.log <br />+  /var/log/ecs/ecs-agent.log <br />+  /var/log/docker-events.log   |
+| Glassfish (Preconfigured Docker) |  +  /var/log/eb-activity.log <br />+  /var/log/nginx/error.log <br />+  /var/log/docker-events.log <br />+  /var/log/docker <br />+  /var/log/nginx/access.log   |
+| Go |  +  /var/log/eb-activity.log <br />+  /var/log/nginx/error.log <br />+  /var/log/nginx/access.log   |
+| Java /<br />Platform Branch: Java 8 running on 64bit Amazon Linux<br />Platform Branch: Java 7 running on 64bit Amazon Linux |  +  /var/log/eb-activity.log <br />+  /var/log/nginx/access.log <br />+  /var/log/nginx/error.log <br />+  /var/log/web-1.error.log <br />+  /var/log/web-1.log   |
+| Tomcat |  +  /var/log/eb-activity.log <br />+  /var/log/httpd/error\_log <br />+  /var/log/httpd/access\_log <br />+  /var/log/nginx/error\_log <br />+  /var/log/nginx/access\_log   |
+| Node.js |  +  /var/log/eb-activity.log <br />+  /var/log/nodejs/nodejs.log <br />+  /var/log/nginx/error.log <br />+  /var/log/nginx/access.log <br />+  /var/log/httpd/error.log <br />+  /var/log/httpd/access.log   |
+| PHP |  +  /var/log/eb-activity.log <br />+  /var/log/httpd/error\_log <br />+  /var/log/httpd/access\_log   |
+| Python |  +  /var/log/eb-activity.log <br />+  /var/log/httpd/error\_log <br />+  /var/log/httpd/access\_log <br />+  /opt/python/log/supervisord.log   |
+| Ruby /<br />Platform Branch: Puma with Ruby running on 64bit Amazon Linux |  +  /var/log/eb-activity.log <br />+  /var/log/nginx/error.log <br />+  /var/log/puma/puma.log <br />+  /var/log/nginx/access.log   |
+| Ruby / Platform Branch: Passenger with Ruby running on 64bit Amazon Linux |  +  /var/log/eb-activity.log <br />+  /var/app/support/logs/passenger.log <br />+  /var/app/support/logs/access.log <br />+  /var/app/support/logs/error.log   |
 
 Elastic Beanstalk configures log groups in CloudWatch Logs for the various log files that it streams. To retrieve specific log files from CloudWatch Logs, you have to know the name of the corresponding log group. The log group naming scheme depends on the platform's operating system.
 

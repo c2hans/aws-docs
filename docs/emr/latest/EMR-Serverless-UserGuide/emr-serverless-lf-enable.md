@@ -229,7 +229,7 @@ Starting with Amazon EMR 7.12, DML and DDL operations that modify table data use
 | DataFrame Writer V1 | - | Not supported |
 | DataFrame Writer V2 | Same as corresponding SQL operation | Supported when appending data to an existing table. Refer to [considerations and limitations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable-considerations.html) for more information. |
 | Metadata tables | SELECT | Supported. Certain tables are hidden. Refer to [considerations and limitations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable-considerations.html) for more information. |
-| Stored procedures | - | Supported for tables that meet the following conditions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable.html) |
+| Stored procedures | - | Supported for tables that meet the following conditions:+  Tables not registered in AWS Lake Formation  <br />+  Tables that do not use `register_table` and `migrate` <br /> Refer to [considerations and limitations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable-considerations.html) for more information.  |
 
 **Spark configuration for Iceberg:** The following sample shows how to configure Spark with Iceberg. To run Iceberg jobs, provide the following `spark-submit` properties.
 

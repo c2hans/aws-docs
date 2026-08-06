@@ -26,5 +26,5 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 | Location of Field on Web Interface | Location of Tag in XML |
 | --- | --- |
-| Streams – Video > Advanced > Passes | stream\_assembly/video\_description/{{codec}}/passes<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control-tuning.html) |
-| Streams – Video > Advanced > Lookahead | stream\_assembly/video\_description/{{codec}}/look\_ahead\_rate\_control<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control-tuning.html) |
+| Streams – Video > Advanced > Passes | stream\_assembly/video\_description/{{codec}}/passes<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Lookahead | stream\_assembly/video\_description/{{codec}}/look\_ahead\_rate\_control<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |

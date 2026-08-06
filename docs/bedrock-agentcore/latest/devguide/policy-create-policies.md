@@ -26,3 +26,4 @@ You don’t need to memorize Cedar syntax. Focus on understanding policy structu
 + [Common policy patterns](policy-common-patterns.md)
 + [Getting started with guardrails in the AgentCore CLI](policy-guardrails-getting-started.md)
 + [Guardrails in policies](policy-guardrails-in-policies.md)
++ [Temporal policies](policy-temporal.md)

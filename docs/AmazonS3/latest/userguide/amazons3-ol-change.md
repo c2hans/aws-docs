@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/amazons3-ol-ch
 
 After careful consideration, S3 Object Lambda as of November 7th, 2025 is available only to existing customers that are currently using the service as well as to select AWS Partner Network (APN) partners. Existing customers of S3 Object Lambda, as well as customers using or deploying APN partner solutions, can continue to use the service as usual. AWS will prioritize security and availability improvements for S3 Object Lambda, but we do not plan to introduce new capabilities
 
-There are several alternative services and designs that allow you to modify and process data accessed from S3 to meet the needs of various client applications or users who are accessing the data. Those alternatives include the AWS Solution Dynamic Image Transformation for Amazon CloudFront, invoking AWS Lambda by other means (via CloudFront, API Gateway, or function URLs), or processing data in the client application. All of these alternatives continue to use Amazon S3 for the underlying storage, so no data migration is necessary.
+There are several alternative services and designs that allow you to modify and process data accessed from S3 to meet the needs of various client applications or users who are accessing the data. Those alternatives include the AWS Solution Dynamic Image Transformation for Amazon CloudFront, invoking AWS Lambda by other means (through CloudFront, API Gateway, or function URLs), or processing data in the client application. All of these alternatives continue to use Amazon S3 for the underlying storage, so no data migration is necessary.
 
 In this post, we discuss how to choose the best option for your use case.
 

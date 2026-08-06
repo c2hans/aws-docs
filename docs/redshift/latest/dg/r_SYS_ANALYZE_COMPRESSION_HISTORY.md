@@ -24,7 +24,7 @@ SYS\_ANALYZE\_COMPRESSION\_HISTORY is visible to all users. Superusers can see a
 | column\_position | integer | The index of the column in the table that was analyzed to determine the compression encoding. |
 | old\_encoding | character(15) | The encoding type before compression analysis. |
 | new\_encoding | character(15) | The encoding type after compression analysis. |
-| mode | character(14) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_SYS_ANALYZE_COMPRESSION_HISTORY.html)  |
+| mode | character(14) | **PRESET**<br /> Specifies that the `new_encoding` is determined by the Amazon Redshift COPY command based on the column data type. No data is sampled.  <br />**ON**<br /> Specifies that the `new_encoding` is determined by the Amazon Redshift COPY command based on an analysis of sample data. <br />**ANALYZE ONLY**<br /> Specifies that the `new_encoding` is determined by the Amazon Redshift ANALYZE COMPRESSION command based on an analysis of sample data. However, the encoding type of the analyzed column is not changed.   |
 
 ## Sample queries
 <a name="r_SYS_ANALYZE_COMPRESSION_HISTORY-sample-queries2"></a>

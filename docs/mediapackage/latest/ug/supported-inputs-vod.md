@@ -14,8 +14,8 @@ These are the input types that MediaPackage supports for VOD content.
 
 | MediaPackage input type | Use case |
 | --- | --- |
-| HLS | Pull an HLS stream set from an Amazon S3 bucket, with or without a secure connection.Additional requirements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html) |
-| SMIL | Pull an MP4 stream set referenced by a .smil manifest from an Amazon S3 bucket, with or without a secure connection. For information about the .smil manifest, see [Requirements for .smil manifests](supported-inputs-vod-smil.md).Additional requirements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html) |
+| HLS | Pull an HLS stream set from an Amazon S3 bucket, with or without a secure connection.Additional requirements:+  Media segments must not be encrypted. <br />+  Streams can contain either muxed video and audio tracks, or unmuxed tracks.  <br />+  The input must contain at least one video track. MediaPackage doesn't support inputs that contain no video track.  |
+| SMIL | Pull an MP4 stream set referenced by a .smil manifest from an Amazon S3 bucket, with or without a secure connection. For information about the .smil manifest, see [Requirements for .smil manifests](supported-inputs-vod-smil.md).Additional requirements:+  MP4 container must not be fragmented. <br />+  Media segments must not be encrypted. <br />+  Streams can contain either muxed video and audio tracks, or only video tracks. <br />+  Streams must have an equal time base.  |
 
 ## Supported input codecs
 <a name="suported-inputs-codecs-vod"></a>
@@ -24,8 +24,8 @@ These are the video, audio, and subtitles codecs that MediaPackage supports for 
 
 | Input type | Media container | Video codecs | Audio codecs | Subtitles/captions format |
 | --- | --- | --- | --- | --- |
-| HLS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |
-| SMIL | MP4 (non-fragmented) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  | SRT |
+| HLS |  +  Video: TS <br />+  Audio: TS, AAC, AC3, or EC3   |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  WebVTT <br />+  CEA-608 and CEA-708 closed captions   |
+| SMIL | MP4 (non-fragmented) |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   | SRT |
 
 ## Supported output codecs
 <a name="suported-outputs-codecs-vod"></a>
@@ -34,7 +34,7 @@ These are the video, audio, and subtitles codecs that MediaPackage supports for 
 
 | Endpoint type | Manifest format | Media container | Video codecs | Audio codecs | Subtitles/captions format |
 | --- | --- | --- | --- | --- | --- |
-| Apple HLS | HLS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |
-| DASH-ISO | MPEG-DASH | MP4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |
-| Microsoft Smooth | MSS | MP4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  | DFXP |
-| CMAF | HLS | CMAF |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-vod.html)  |
+| Apple HLS | HLS |  +  Video: TS <br />+  Audio: TS, AAC, AC3, or EC3   |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  WebVTT <br />+  CEA-608 and CEA-708 closed captions   |
+| DASH-ISO | MPEG-DASH | MP4 |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  EBU-TT <br />+  CEA-608 and CEA-708 closed captions   |
+| Microsoft Smooth | MSS | MP4 |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   | DFXP |
+| CMAF | HLS | CMAF |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  WebVTT <br />+  CEA-608 and CEA-708 closed captions   |

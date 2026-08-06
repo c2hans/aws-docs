@@ -150,7 +150,7 @@ When touchtone buffering is enabled, flow logs for the following blocks indicate
 
 1. Customer reaches their destination in seconds.
 
-### Passing caller context via choose-to-call or app-to-call
+### Passing caller context using choose-to-call or app-to-call
 <a name="touchtone-buffering-choose-to-call"></a>
 
 Touchtone buffering also enables applications to pass known caller context into a flow before the conversation starts. In choose-to-call and app-to-call scenarios, the originating application can append a customer identifier, web session reference, or other context to the dial string. For example, `tel:+15555555555,1234567` sends the digits `1234567` into the buffer the moment the call connects. The flow can then use that input to identify the caller, look up session or account details, and provide that context to an AI agent. This gives AI self-service the information it needs to personalize the interaction from the first turn, without asking the caller to re-identify themselves or explain why they are calling.

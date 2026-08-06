@@ -347,28 +347,28 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.2.9 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
+| 2.2.9 |  **Bug fixes and improvements**<br />   General bug fixes and improvements.     |
 | 2.2.8 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
 | 2.2.7 | Version updated for Greengrass nucleus version 2.16.0 release. |
-| 2.2.6 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.2.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.2.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.2.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.2.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.2.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
-| 2.1.8 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
+| 2.2.6 |  **Bug fixes and improvements**<br /> Fixes an issue where secret manager fails to get a secret due to a slow or unresponsive Trusted Platform Module. <br />Version updated for Greengrass nucleus version 2.15.0 release.   |
+| 2.2.5 |  **Bug fixes and improvements**<br /> Fixes an issue where a secret doesn't get fetched from the AWS Cloud if it isn't present in the local cache.   |
+| 2.2.4 |  **Bug fixes and improvements**<br /> Reduces the frequency of writes to the local secret store. Secret manager now writes to the local store only when secrets are updated.   |
+| 2.2.3 |  **Bug fixes and improvements**<br /> Fixes an issue where secret manager wipes the locally persisted secrets when the core device is offline and the device’s security service (such as an HSM) is unavailable.   |
+| 2.2.2 |  **Bug fixes and improvements**<br /> Fixes an issue where secret manager doesn’t download the secrets configured with partial arns.   |
+| 2.2.1 |  **Bug fixes and improvements**<br /> Supports secret manager on Nucleus versions 2.5.0 and above.   |
+| 2.2.0 |  **New features**<br /> Adds support for periodic refresh of the configured secrets through a new component configuration key. <br />Adds support for a new request parameter in the `GetSecretValue` IPC request to refresh the secrets per request   |
+| 2.1.8 |  **Bug fixes and improvements**<br /> Fixes an issue where secret manager doesn't accept a partial arn.   |
 | 2.1.7 | Version updated for Greengrass nucleus version 2.12.0 release. |
 | 2.1.6 | Version updated for Greengrass nucleus version 2.11.0 release. |
 | 2.1.5 | Version updated for Greengrass nucleus version 2.10.0 release. |
-| 2.1.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
+| 2.1.4 |  **Bug fixes and improvements**<br /> Fixes an issue where cached secrets were being removed when secret manager is deployed and Greengrass nucleus restarts. <br />Version updated for Greengrass nucleus version 2.9.0 release.   |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
+| 2.1.0 |  **New features**<br />   Adds support for hardware security integration. The secret manager component can encrypt and decrypt secrets using a private key that you store in a hardware security module (HSM). For more information, see [Hardware security integration](hardware-security.md).   <br />**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.5.0 release.     |
 | 2.0.9 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.8 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.7 | Version updated for Greengrass nucleus version 2.2.0 release. |
 | 2.0.6 | Version updated for Greengrass nucleus version 2.1.0 release. |
-| 2.0.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secret-manager-component.html)  |
+| 2.0.5 |  **Improvements**<br />   Add support for AWS China Regions and AWS GovCloud (US) Regions.     |
 | 2.0.4 | Initial version. |

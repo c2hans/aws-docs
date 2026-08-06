@@ -489,117 +489,117 @@ The following table describes the changes to each release of the Windows client 
 
 | Release | Date | Changes |
 | --- | --- | --- |
-| 5.33.0 | June 8, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.32.2 | May 21, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.32.1 | May 14, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.32.0 | April 20, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.31.0 | January 21, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.30.0 | October 21, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.29.2 | August 26, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.29.1 | August 5, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.29.0 | July 31, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.28.0 | July 1, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.27.1 | May 5, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.27.0 | April 30, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.33.0 | June 8, 2026 |  +  Fixed an issue that prevented logging in via SAML 2.0 when the client was launched with Administrator privileges. <br />+  Fixed an issue that prevented transferring files with multibyte file names (common for some non-English languages). <br />+  Added support for URL redirection, enabling administrators to configure certain websites to be redirected from the streaming session to the local device's web browser. <br />+  Added the display of battery level from the local device inside the streaming session, helping you know when your battery is running low when on-the-go. <br />+  Fixed an issue with the username not being pre-populated in the new user login flow when "Remember me" is selected. <br />+  Fixed an issue that prevented changing the registration code when there is no network connectivity. <br />+  Updated the DCV SDK. <br />+  Additional bug fixes and enhancements.   |
+| 5.32.2 | May 21, 2026 |  +  Fixed an issue with Microsoft Teams optimization not working as expected.   |
+| 5.32.1 | May 14, 2026 |  +  Fixed an issue where, under certain conditions, the client may not launch correctly on Windows 11 devices with the April 2026 cumulative update (KB5083769) installed.   |
+| 5.32.0 | April 20, 2026 |  +  Updated the keyboard shortcut to help users navigate from the client application to their local operating system, from Ctrl\+Alt\+DownArrow to Ctrl\+Alt\+Shift\+DownArrow. <br />+  Added support for connecting to WorkSpaces in the US East (Ohio) and Asia Pacific (Malaysia) regions. <br />+  Fixed an issue where, in certain display configurations, not all valid displays were able to be selected. <br />+  Fixed an issue where the new client update banner was persisting after a client update in certain configurations. <br />+  Updated the PCoIP SDK. <br />+  Updated the DCV SDK. <br />+  Bug fixes and enhancements.   |
+| 5.31.0 | January 21, 2026 |  +  Added advanced printing support for DCV-based WorkSpaces using native local printer drivers, enabling features such as two-sided printing, page selection, and layout options. <br />+  Fixed an issue with the automatic client update functionality that was preventing automatic updates in certain scenarios when VBScript is not present. <br />+  Added improved error messaging in the case of a SAML session timeout. <br />+  Other bug fixes and enhancements.   |
+| 5.30.0 | October 21, 2025 |  +  Improved international keyboard experience with new keyboard layout options (server or client) with DCV-based WorkSpaces. <br />+  Added support for generic USB redirection, enabling local USB devices to work with Windows-based Personal WorkSpaces using the DCV protocol. <br />+  Made an improvement that enables microphone audio streaming only when a remote application is using it, helping to optimize performance. <br />+  Fixed an issue with the automatic update function which was preventing automatic updates if the client is installed in a custom folder. <br />+  Fixed an issue that caused the application to crash under certain conditions when streaming with DCV. <br />+ Updated the DCV SDK.<br />+ Updated the PCoIP SDK.<br />+ Updated the .NET Framework.  |
+| 5.29.2 | August 26, 2025 |  +  Bug fixes and enhancements.   |
+| 5.29.1 | August 5, 2025 |  +  Bug fixes and enhancements.   |
+| 5.29.0 | July 31, 2025 |  +  Added a new automatic client update feature that will automatically check for available updates and install them when you're not using the client, helping you to get the latest features and bug fixes. <br />+  Bug fixes and enhancements.   |
+| 5.28.0 | July 1, 2025 |  +  Updated the DCV SDK. <br />+  Bug fixes and enhancements.   |
+| 5.27.1 | May 5, 2025 |  +  Bug fixes and enhancements.   |
+| 5.27.0 | April 30, 2025 |  +  Added support for extending full-screen across a selection of available connected monitors for Amazon DCV WorkSpaces. <br />+  Updated the DCV SDK. <br />+  Updated the PCoIP SDK. <br />+  Bug fixes and enhancements.   |
 | 5.26.2 | April 1, 2025 | Bug fixes and enhancements. |
 | 5.26.1  | March 11, 2025 | Bug fixes and enhancements. |
-| 5.26.0 | March 4, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.25.0 | December 19, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.24.1 | November 22, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.23.0 | September 30, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.26.0 | March 4, 2025 |  +  Added a `Ctrl+Alt+DownArrow` keyboard shortcut to help users navigate from the client application to their local operating system. <br />+  Updated the DCV SDK. <br />+  Updated the WebView2 SDK. <br />+  Updated the .NET SDK. <br />+  Bug fixes and enhancements.   |
+| 5.25.0 | December 19, 2024 |  +  Added a progress bar to help users better understand the expected time during the loading of their WorkSpace. <br />+  Updated the DCV SDK. <br />+  Bug fixes and enhancements.   |
+| 5.24.1 | November 22, 2024 |  +  Added a notification to warn idle users they will be disconnected from their DCV WorkSpaces due to inactivity. <br />+  Improved WorkSpaces client installation process. <br />+  Updated the DCV SDK. <br />+  Updated WolfSSL for PCoIP SDK. <br />+  Updated the RestSharp library. <br />+  Bug fixes and enhancements.   |
+| 5.23.0 | September 30, 2024 |  +  Renamed WSP protocol to Amazon DCV protocol. <br />+  Added support for file upload and download on DCV WorkSpaces. <br />+  Added support for streaming over port 443 for TCP and UDP protocols on DCV WorkSpaces. <br />+  Updated the .NET SDK. <br />+  Bug fixes and enhancements.   |
 | 5.22.1 | September 3, 2024 | Bug fixes and enhancements. |
-| 5.22.0 | August 16, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.22.0 | August 16, 2024 |  +  Added support to persist webcam and microphone settings for future sessions on DCV WorkSpaces. <br />+  Updated the DCV SDK.   |
 | 5.21.0 | July 3, 2024 | Bug fixes and enhancements. |
-| 5.20.0 | June 13, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.19.3 | April 30, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.19.0 | February 28, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.20.0 | June 13, 2024 |  +  Updated PCoIP SDK. <br />+  Updated DCV SDK. <br />+  Migrated the software framework to .NET 8 LTS. <br />+  Updated system to require Windows 11 - Version 22000 or later and Windows 10 - Version 1607 or later.   |
+| 5.19.3 | April 30, 2024 |  +  Updated DCV SDK. <br />+  Fixed issue where white screens appear in all displays when using multiple monitors with WorkSpaces and clicking full screen. <br />+  Fixed issue where users get immediately disconnected from their DCV WorkSpaces when connecting to it. <br />+  Fixed issue where the device dialog box isn't showing correct localized language when switching languages.   |
+| 5.19.0 | February 28, 2024 |  +  Updated DCV SDK. <br />+  Added WebAuthn support for in-session authentication.   |
 | 5.18.0 | January 22, 2024 | Updated DCV SDK. |
-| 5.17.0 | November 16, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.16.0 | October 26, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.15.1 | September 20, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.13.0 | August 29, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.17.0 | November 16, 2023 |  +  Fixed USB redirection issue for PCoIP WorkSpaces. <br />+  Fixed a client crash when users change running mode. <br />+  Fixed a client crash related to printer redirection on DCV client. <br />+  Bug fixes and enhancements.   |
+| 5.16.0 | October 26, 2023 |  +  Added installation guidance. Users on 4.0.6\+ version clients with USB redirection enabled need to uninstall old client before upgrading <br />+  Added restrictions that only admins have permission to modify custom installation folder <br />+  Updated DCV SDK   |
+| 5.15.1 | September 20, 2023 |  +  Added resiliency for network issues for DCV WorkSpaces <br />+  Updated DCV SDK <br />+  Bug fixes and enhancements   |
+| 5.13.0 | August 29, 2023 |  +  Updated PCoIP SDK and DCV SDK <br />+  Resolved an login page special character processing issue <br />+  Resolved a crashing issue when closing the Network dialog on the upper right of the client application <br />+  Added a link to Amazon WorkSpaces user guide under the Support menu   |
 | 5.12.1 | August 16, 2023 | Bug fixes and enhancements |
 | 5.12.0 | July 11, 2023 | Bug fixes and enhancements |
-| 5.11.0 | July 3, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.10.0 | June 19, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.9.0 | May 9, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.8.0 | April 6, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.7.0 | February 23, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.6.4 | February 1, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.11.0 | July 3, 2023 |  +  Bug fixes and enhancements <br />+  Added **Ctrl**\+**Alt**\+**Shift**\+**F11** as a keyboard shortcut to access the client menu during a streaming session <br />+  Fixed the issue where the text was getting cut off on the client login page when the operating system text size was set to 200% <br />+  Fixed a bug where the keyboard focus in the dialog box did not cycle through all the device selections when multiple devices were available for redirection. <br />+  Incrementally enhanced accessibility to color contrast and names for elements.   |
+| 5.10.0 | June 19, 2023 |  +  Improved client custom branding by storing assets in the same AWS Regions as provisioned WorkSpaces <br />+  Resolved black screen issue when using multiple monitors with Ubuntu WorkSpaces <br />+  Fixed client diagnostic log uploading issues, where proxy settings were not being persisted when connecting to WorkSpaces through a proxy server <br />+  Added support for DCV extension SDK, which allows end users to customize their DCV WorkSpaces experience   |
+| 5.9.0 | May 9, 2023 |  +  Resolved the issue of displaying the **Keep me logged in** option in the **Manage Login Information** dialog when logging into WorkSpaces with SAML credentials  <br />+  Resolved the issue of users not being able to log into WorkSpaces when proxy server is enabled <br />+  Resolved a keyboard focusing issue when navigating menu items using the `Tab` key <br />+  Updated DCV SDK to fix connectivity issues when using QUIC on DCV WorkSpaces   |
+| 5.8.0 | April 6, 2023 |  +  Fixed a bug that prevented users from logging in under certain scenarios <br />+  Fixed a bug to bring certificate selection dialog to the front during smart card logon <br />+  Updated DCV v2 SDK to fix minor bugs   |
+| 5.7.0 | February 23, 2023 |  +  Enabled trimming leading or trailing allow list in sign-in credentials <br />+  Resolved a crashing issue due to empty registration code <br />+  Provided sufficient color contrast, text labels, and instructions in user interface components, such as a login page and a menu bar.   |
+| 5.6.4 | February 1, 2023 |  +  Fixed sign-in credential validation issue <br />+  Fixed caps lock flicker issue   |
 | 5.6.2 | January 18, 2023 | Bug fixes and enhancements |
-| 5.6.0 | December 27, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 5.5.0 | November 14, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.6.0 | December 27, 2022 |  +  Added support for certificate-based authentication via SAML 2.0 integration, which removes the logon prompt for the Active Directory domain password <br />+  Resolved an issue of the **Alt** key getting continuously pressed in WorkSpaces <br />+  Resolved an issue of the **Num Lock** state that was inverted between WorkSpaces and local machine <br />+  Updated PCoIP SDK for the WorkSpaces Windows client <br />+  Bug fixes and enhancements   |
+| 5.5.0 | November 14, 2022 |  +  Added a shortcut **Ctrl**\+**Alt**\+**F12** to disconnect your WorkSpace <br />+  Resolved a keystroke-invoking issue when using **Alt** key with mouse clicks   |
 | 5.4.0 | October 5, 2022 |  Added support for automatic diagnostic log uploads feature that allows you to upload WorkSpaces client log files directly to WorkSpaces to troubleshoot issues without interrupting use of the WorkSpaces client.  |
-| 5.3.0 | September 15, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.3.0 | September 15, 2022 |  +  Updated DCV SDK for Windows <br />+  Resolved an issue of the WorkSpaces clients not being able to save their user names after closing their WorkSpace   |
 | 5.2.1 | August 24, 2022 | Fixed the WorkSpaces login page rendering issues on Windows 8.1 |
 | 5.2.0 | August 2, 2022 | Updated PCoIP SDK for the WorkSpaces Windows client |
 | 5.1.0 | June 30, 2022 | Updated DCV SDK for Windows |
-| 5.0.0 | June 2, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 4.0.6 | December 21, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 4.0.5 | November 23, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 4.0.4 | November 3, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 4.0.3 | October 4, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 4.0.2 | September 1, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 4.0.1 | July 30, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 5.0.0 | June 2, 2022 |  +  Updated PCoIP SDK for the WorkSpaces Windows client <br />+  Resolved issues when screen sharing WorkSpaces in Microsoft Teams <br />+  Bug fixes and enhancements   |
+| 4.0.6 | December 21, 2021 |  +  Enhances PCoIP USB redirection driver. The driver includes important updates and we recommend that all users install it <br />+  Resolves failures when using smart cards for authentication for DCV <br />+  Resolves crashes and black screen issues related to video streaming for DCV <br />+  Updates to DCV version 1.9.8.18175   |
+| 4.0.5 | November 23, 2021 |  +  Optimizes the bandwidth and frame rates for DCV WorkSpaces <br />+  Resolves the shortcut mapping issue related to full screen mode <br />+  Resolves the issue of the Alt key being pressed automatically   |
+| 4.0.4 | November 3, 2021 |  +  Resolves the issue of users not being able to switch between Korean and English languages using the Alt key on a physical keyboard <br />+  Resolves the mouse scrolling issue that is related to the mouse settings in Windows 10 <br />+  Video streaming improvements for WorkSpaces that support DCV <br />+  Bug fixes   |
+| 4.0.3 | October 4, 2021 |  +  Resolves crashes due to double-byte user names (for example, Japanese characters) on local machines <br />+  Resolves mouse-scrolling issues on 64-bit Windows 8.1 <br />+  Bug fixes and enhancements   |
+| 4.0.2 | September 1, 2021 |  +  Minor bug fixes and enhancements   Client version 4.0 supports Windows 8.1 and Windows 10. Attempting to install version 4.0 on Windows 7 or 8 will result in errors. If you are on Windows 7 or Windows 8, update your OS or download the latest 32 bit client (v3.x) from the [Amazon WorkSpaces Client Download](https://clients.amazonworkspaces.com/) page.     |
+| 4.0.1 | July 30, 2021 |  +  Adds USB redirection support for YubiKey U2F authentication on PCoIP Windows WorkSpaces <br />+  Minor bug fixes and enhancements   |
 | 4.0.0 | June 30, 2021 | The first 64-bit release of the Windows client application |
 | 3.1.10 | August 5, 2021 | Minor bug fixes and enhancements |
-| 3.1.9 | June 29, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.1.8 | May 28, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.1.7 | April 29, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 3.1.9 | June 29, 2021 |  +  This release includes fixes to custom login workflows with a URI and is recommended for all users <br />+  Bug fixes and enhancements   |
+| 3.1.8 | May 28, 2021 |  +  Fixes the reconnect page redirection after disconnection when **Keep me logged in** is selected <br />+  Minor bug fixes and enhancements   |
+| 3.1.7 | April 29, 2021 |  +  Improves connectivity with WorkSpaces using the DCV <br />+  Resolves a crash issue related to proxy servers <br />+  Minor bug fixes and enhancements   |
 | 3.1.6 | April 8, 2021 | Fixes for disconnects and crashes resulting from DCV audio traffic optimization |
-| 3.1.5 | April 2, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.1.4 | March 16, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.1.3 | February 15, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.1.2 | January 8, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.1.1 | December 1, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  Version 3.1.1 is available only in the AWS GovCloud (US-West) Region   |
-| 3.1.0 | December 1, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.0.12 | November 10, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.0.11 | October 02, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.0.10 | September 16, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 3.1.5 | April 2, 2021 |  +  Adds Settings UI to enable/disable hardware acceleration <br />+  Bidirectional video web cam support is now generally available for Windows WorkSpaces using the DCV <br />+  Minor bug fixes and enhancements   |
+| 3.1.4 | March 16, 2021 |  +  Disables hardware acceleration by default to address screen flickering and mouse mispositioning issues observed with certain display driver versions. To manually turn on hardware acceleration, users can restart the WorkSpaces app after creating a registry string value of **EnableHwAcc** under **HKEY\_CURRENT\_USER\\SOFTWARE\\Amazon Web Services. LLC\\Amazon WorkSpaces**.  <br />+  Addresses a few crash scenarios when users register, log in, and rebuild <br />+  Adds localization support for more UI elements <br />+  Minor bug fixes and enhancements   |
+| 3.1.3 | February 15, 2021 |  +  Fixes issue with double Shift key presses not working in some apps <br />+  Improves settings UI for proxy configurations <br />+  Minor bug fixes and enhancements   |
+| 3.1.2 | January 8, 2021 |  +  The DCV is now generally available. Video-in functionality continues to be available as a beta feature on DCV WorkSpaces only <br />+  Fixes an intermittent issue that impacts client application upgrades <br />+  Fixes an issue with the login screen being magnified <br />+  Minor bug fixes and enhancements   |
+| 3.1.1 | December 1, 2020 |  +  Adds support for smart card authentication in the AWS GovCloud (US-West) Region <br />+  Minor bug fixes and enhancements   Version 3.1.1 is available only in the AWS GovCloud (US-West) Region   |
+| 3.1.0 | December 1, 2020 |  +  Resolves intermittent flickering issue inside of an active WorkSpaces session <br />+  Minor bug fixes and enhancements   |
+| 3.0.12 | November 10, 2020 |  +  Adds support for optionally disabling the use of the default proxy server <br />+  Adds enhancements to the session reconnect experience <br />+  Improves error messaging during session disconnects for DCV WorkSpaces <br />+  Fixes keyboard mapping issue with the **Shift** key for DCV WorkSpaces   |
+| 3.0.11 | October 02, 2020 |  +  Resolves an issue with enumeration of video-in devices on DCV WorkSpaces <br />+  Resolves an intermittent crash issue when disconnecting from a DCV WorkSpace <br />+  Minor bug fixes and enhancements   |
+| 3.0.10 | September 16, 2020 |  +  Resolves an issue with loading the login screen <br />+  Resolves an issue with persisting a user's screen size preference when the user chooses full screen mode and then exits this mode <br />+  Resolves an issue that causes the menu bar to be hidden after a user exits full screen mode <br />+  Resolves an input method editor (IME) issue <br />+  Adds support for health checks over port 4195 (UDP and TCP)   |
 | 3.0.9 | August 14, 2020 | Minor bug fixes and enhancements |
-| 3.0.8 | July 30, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.0.7 | June 3, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.0.6 | April 28, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 3.0.8 | July 30, 2020 |  +  Adds monochrome cursor support on DCV WorkSpaces <br />+  For improved diagnostics, displays round trip time (RTT) as part of the network health check information <br />+  Minor bug fixes and enhancements   |
+| 3.0.7 | June 3, 2020 |  +  Adds support for multiple monitors on DCV WorkSpaces <br />+  Minor bug fixes and enhancements   |
+| 3.0.6 | April 28, 2020 |  +  Adds support for toggling between high DPI and standard DPI displays <br />+  Minor bug fixes and enhancements   |
 | 3.0.5 | March 30, 2020 | Resolves an issue with the user interface displaying a login prompt if single sign-on (SSO) is enabled for Amazon WorkDocs |
 | 3.0.4 | March 3, 2020 | Minor bug fixes and enhancements |
-| 3.0.2 | February 14, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 3.0.0 | November 25, 2019 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 3.0.2 | February 14, 2020 |  +  Adds keyboard shortcut to toggle full screen display <br />+  Adds support for connecting to DCV WorkSpaces <br />+  Minor bug fixes and enhancements   |
+| 3.0.0 | November 25, 2019 |  +  Improved user interface <br />+  Friendly registration code labels <br />+  Minor bug fixes and enhancements   |
 | 2.5.11 | November 4, 2019 | Minor bug fixes |
-| 2.5.10 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 2.5.9 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.5.10 |  |  +  Resolves an intermittent issue related to invalid keystrokes sent when closing a laptop lid <br />+  Minor fixes   |
+| 2.5.9 |  |  +  Resolves the issue of displaying a blank app icon image on the Windows 10 task bar after WorkSpace client upgrades <br />+  Minor bug fixes   |
 | 2.5.8 |  | Resolves an intermittent crashing issue related to computer waking up when opening a laptop lid |
-| 2.5.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.5.7 |  |  +  Adds support for German keyboard layouts with Linux WorkSpaces <br />+  Resolves an issue that results in a crash of Excel with clipboard direction   |
 | 2.5.6 |  | Minor fixes |
 | 2.5.5 |  | Minor fixes |
-| 2.5.2 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 2.5.1 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.5.2 |  |  +  Resolves an intermittent issue with the Caps Lock key becoming stuck <br />+  Minor bug fixes    |
+| 2.5.1 |  |  +  Resolves an issue that periodically results in repeated key presses with WorkSpaces running Amazon Linux 2 <br />+  Adds support for localized date and time formats in the user interface <br />+  Minor user interface improvements    |
 | 2.5.0 |  | Adds support for user self-service WorkSpace management capabilities |
 | 2.4.10 |  | Minor fixes |
 | 2.4.9 |  | Minor fixes |
-| 2.4.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 2.4.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 2.4.6 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.4.8 |  |  +  Adds support for uniform resource identifiers (URIs), which enable login orchestration <br />+  Minor fixes   |
+| 2.4.7 |  |  +  Resolves an issue with the user interface text not displaying correctly on Microsoft Surface Pro 4 models (Windows only) <br />+  Adds support for time zone redirection for more Regions: America/Indianapolis America/Indiana/Marengo America/Indiana/Vevay America/Indiana/Indianapolis <br />+  Includes user interface text changes for the Login page    |
+| 2.4.6 |  |  +  Adds support for configuring the logging level to include advanced logging for debug scenarios  <br />+  Minor improvements to session provision handling   |
 | 2.4.5 |  | Adds a check to ensure that certificates issued by Amazon Trust Services are trusted by Windows during installation. By default, an up-to-date Windows local Root CA list includes Starfield Service Root Certificate Authority - G2, and therefore trusts Amazon Trust Services certificates. If the local Root CA list is outdated, the client installer installs the Starfield Service Root Certificate Authority - G2 certificate to the system. If you do not have administrator access to the client device, you'll be prompted to confirm the installation of the Root CA certificate. |
-| 2.4.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.4.4 |  |  +  Minor fixes <br />+  Improves copy and paste   |
 | 2.4.2 |  | Minor fixes |
-| 2.4.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.4.0 |  |  +  New logo <br />+  Improves the user interface and stability   |
 | 2.3.7 |  | Addresses a gray screen issue that occurs when displays are in different orientations |
 | 2.3.6 |  | Localization enhancements |
 | 2.3.5 |  | Minor improvements |
-| 2.3.3 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.3.3 |  |  +  Improves the support for multiple monitors <br />+  Localization enhancements <br />+  Improves security and performance   |
 | 2.3.2 |  | Installer fixes |
 | 2.3.1 |  | Minor fixes |
-| 2.3.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.3.0 |  |  +  Improves support for multiple monitors <br />+  Improves security and stability   |
 | 2.2.3 |  | Resolves minor bugs and improves stability |
-| 2.2.1 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.2.1 |  |  +  Adds support for the German language <br />+  Resolves time zone mapping issues for some Regions <br />+  Resolves a connection issue on Russian systems <br />+  Improves the Japanese user interface <br />+  Improves stability   |
 | 2.1.3 |  | Closing the client expires the reconnect token. You can easily reconnect to your WorkSpace as long as the client is running. |
 | 2.1.1 |  | Minor improvement to protocol handling |
-| 2.1.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 2.0.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.1.0 |  |  +  Adds support for the following new WorkSpace states: STOPPING and STOPPED <br />+  Resolves minor bugs and improves stability   |
+| 2.0.8 |  |  +  Resolves a conflict with running iTunes or Garmin processes during installation <br />+  Adds support for a password-free installation experience if installing only for the current user <br />+  Resolves an issue with Excel formatting when copying and pasting data in BIFF5 format <br />+  If Remember Me is disabled, the user name is not shown on restart <br />+  Adds a confirmation dialog box when deleting a registration code <br />+  Improves stability   |
 | 2.0.6 |  | Resolves bugs and includes other improvements |
-| 2.0.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 1.1.80 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 1.1.6 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 1.1.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
-| 1.0.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html)  |
+| 2.0.4 |  |  +  Adds support for audio in, enabling you to make calls or attend web conferences <br />+  Adds support for devices with high DPI screens <br />+  Adds support for saving registration codes, enabling you to switch WorkSpaces without re-entering the registration codes <br />+  Improves support for Windows 10 <br />+  Improves usability and stability   |
+| 1.1.80 |  |  +  Adds CloudWatch metrics for session latency, session launch time, and session disconnects <br />+  Improves auto-session resume so that you are interrupted less frequently when network conditions are degraded <br />+  Resolves specific issues and improves stability   |
+| 1.1.6 |  |  +  Adds support for status notifications. The client application notifies you about the state of your WorkSpace when it cannot connect to the WorkSpace. <br />+  Improves the reconnect experience. The client automatically redirects to the login screen after 10 hours of inactivity. You can reconnect again if the client fails to launch a session using reconnect. <br />+  Adds support for auto-session resume. The client application automatically attempts to resume your session if network connectivity is lost and then regained within the session-resume timeout (default value is 20 minutes). <br />+  Improves network health checks so they are faster and more reliable <br />+  Adds client-side validation of registration codes <br />+  Improves the synchronization of Caps Lock and Num Lock status between the local device and the WorkSpace   |
+| 1.1.4 |  |  +  Adds support for saving your credentials, enabling you to easily reconnect to your WorkSpace <br />+  Improves advanced connection-health checks <br />+  Improves stability   |
+| 1.0.8 |  |  +  Introduces a full-file installation package <br />+  Improves network connectivity checks <br />+  Adds version information to the **About** window   |
 | 1.0 |  | Initial release |

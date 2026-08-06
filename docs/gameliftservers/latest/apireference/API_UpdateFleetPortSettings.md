@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # UpdateFleetPortSettings
 <a name="API_UpdateFleetPortSettings"></a>
 
- **This API works with the following fleet types:** EC2, Container
+ **This API works with the following fleet types:** EC2
 
 Updates permissions that allow inbound traffic to connect to game sessions in the fleet.
 

@@ -168,8 +168,8 @@ By following these best practices, you can ensure that your integration of the L
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Add the layer to your function. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.html)For more information about adding a layer to your Lambda function, see the [Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/adding-layers.html). | App developer, Cloud architect |
-| Set the environment variables for the function. | On the function page, choose the **Configuration** tab and add the following environment variables to your function:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.html) | App developer, Cloud architect |
+| Add the layer to your function. | 1. Sign in to the AWS Management Console and open the [Functions page](https://console.aws.amazon.com/lambda/home#/functions) of the AWS Lambda console.<br />2. Select your function.<br />3. Under **Layers, **choose** Add a layer**.<br />4. Under **Choose a layer**, choose **Custom layers** as a layer source and add your layer.For more information about adding a layer to your Lambda function, see the [Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/adding-layers.html). | App developer, Cloud architect |
+| Set the environment variables for the function. | On the function page, choose the **Configuration** tab and add the following environment variables to your function:+ `URL` – The URI of your OpenSearch endpoint where your logs will be sent.<br />+ `AUTH_SECRET` – The ARN of your OpenSearch credentials stored in AWS Secrets Manager. This should be stored as a key-value pair and have two keys: `username` and `password`.<br />+ `PLATFORM_INDEX`, `FUNCTION_INDEX`, and `EXTENSION_INDEX` – The names of indexes that will store your telemetry data, function logs, and extension logs. Make sure that they adhere to the proper [naming criteria](https://opensearch.org/docs/1.0/opensearch/rest-api/create-index/#index-naming-restrictions). Otherwise, your indexes won't be created.<br />+ `DISPATCH_MIN_BATCH_SIZE` – The number of log events that you want to batch. However, when the function shuts down, your logs will be dispatched regardless of this setting. | App developer, Cloud architect |
 
 ### Add logging statements and test your function
 <a name="add-logging-statements-and-test-your-function"></a>
@@ -177,7 +177,7 @@ By following these best practices, you can ensure that your integration of the L
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Add logging statements to your function. | Add logging statements to your function by using one of the [built-in logging mechanisms](https://docs.aws.amazon.com/lambda/latest/dg/python-logging.html) or your logging module of choice. <br />Here are examples of logging messages in Python:<pre>print("Your Log Message Here")<br />logger = logging.getLogger(__name__)<br /><br />logger.info("Test Info Log.")<br />logger.error("Test Error Log.")</pre> | App developer, Cloud architect |
-| Test your function. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.html)You should see **Executing function: succeeded** if everything works properly. | App developer, Cloud architect |
+| Test your function. | 1. On the function page, choose the **Test** tab.<br />2. Create a test event for your function and run the test. For more information, see [Testing Lambda functions in the console](https://docs.aws.amazon.com/lambda/latest/dg/testing-functions.html) in the Lambda documentation.You should see **Executing function: succeeded** if everything works properly. | App developer, Cloud architect |
 
 ### View your logs in OpenSearch
 <a name="view-your-logs-in-opensearch"></a>
@@ -191,8 +191,8 @@ By following these best practices, you can ensure that your integration of the L
 
 | Issue | Solution |
 | --- | --- |
-| Connectivity issues | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.html) |
-| Data ingestion errors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization.html) |
+| Connectivity issues | + Confirm that your Lambda function has the necessary network connectivity to access the OpenSearch cluster. See the [OpenSearch Service documentation](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/vpc.html) for guidance on configuring VPC settings.<br />+ Verify that the IAM permissions granted to your Lambda function allow it to write data to the OpenSearch cluster. Review the [Lambda documentation](https://docs.aws.amazon.com/lambda/latest/dg/lambda-intro-execution-role.html) for information about managing IAM permissions. |
+| Data ingestion errors | + Check CloudWatch Logs for your Lambda function to identify any errors or exceptions related to the Lambda Telemetry API integration. See the [Lambda Telemetry API documentation](https://docs.aws.amazon.com/lambda/latest/dg/telemetry-api.html) for troubleshooting guidance.<br />+ Verify that the OpenSearch cluster is configured correctly and has the necessary index mappings and settings to ingest the Lambda telemetry data. Consult the [OpenSearch documentation](https://opensearch.org/docs/) for more information. |
 
 ## Related resources
 <a name="send-telemetry-data-from-lambda-to-opensearch-for-analytics-visualization-resources"></a>

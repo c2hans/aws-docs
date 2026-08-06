@@ -11,7 +11,7 @@ AWS provides two types of hostnames: **private** and **public**. The following t
 | --- | --- | --- |
 | DNS resolution | Private hostnames enable private FQDNs that are not accessible from the public internet. Private hostnames only allow requests to resolve to private IPv4 and IPv6 GUA addresses within the VPC. | Public hostnames enable public FQDNs that are accessible from the public internet. Public hostnames enable requests to resolve to private IPv4 and IPv6 GUA within the VPC and public IPs from the internet (split-horizon DNS). |
 | Configuration | Private hostnames are configured at the instance level. | Public hostnames are configured at the network interface level. |
-| When to use |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hostname-types.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/hostname-types.html)  |
+| When to use |  + For hostnames that resolve only within your VPC, for internal communication<br />+ To keep your internal naming scheme private<br />+ To simplify internal resource management without external DNS considerations  |  + To access instances over both IPv4 and IPv6 from the internet<br />+ To enable smooth migration from IPv4 to IPv6 environments  |
 
 **Topics**
 + [Public hostnames](#public-hostnames)

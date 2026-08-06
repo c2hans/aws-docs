@@ -35,6 +35,11 @@ Determines the timezone for the analysis.
 Type: String
 Required: No
 
+ ** VisualMessages **   <a name="QS-Type-AssetOptions-VisualMessages"></a>
+The configuration options for the messages that are displayed on visuals in the analysis.
+Type: [VisualMessages](API_VisualMessages.md) object
+Required: No
+
  ** WeekStart **   <a name="QS-Type-AssetOptions-WeekStart"></a>
 Determines the week start day for an analysis.
 Type: String

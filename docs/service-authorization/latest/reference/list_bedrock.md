@@ -1711,8 +1711,9 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreateAdvancedPromptOptimizationJob](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_CreateAdvancedPromptOptimizationJob.html)  **
   - **Description:** Grants permission to create an advanced prompt optimization job
-  - **Resource types (\*required):**
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)
+  - **Resource types (\*required):** [application-inference-profile\*](#list_bedrock-resource-application-inference-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_bedrock-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)
+  - **Resource types (\*required):** [foundation-model\*](#list_bedrock-resource-foundation-model) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)
+  - **Resource types (\*required):** [inference-profile\*](#list_bedrock-resource-inference-profile) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_bedrock-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_bedrock-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateAgent.html)  **

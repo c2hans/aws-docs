@@ -284,8 +284,8 @@ The following table describes the fields of a flow log record.
 | `bytes` | The number of bytes transferred during the capture window. |
 | `start_time` | The time, in Unix seconds, of the start of the capture window. |
 | `end_time` | The time, in Unix seconds, of the end of the capture window. |
-| `action` | The action associated with the traffic:[See the AWS documentation website for more details](http://docs.aws.amazon.com/global-accelerator/latest/dg/monitoring-global-accelerator.flow-logs.html) |
-| `log-status` | The logging status of the flow log:[See the AWS documentation website for more details](http://docs.aws.amazon.com/global-accelerator/latest/dg/monitoring-global-accelerator.flow-logs.html) |
+| `action` | The action associated with the traffic:+  `ACCEPT`: The recorded traffic was permitted by the security groups or network ACLs. The value is currently always ACCEPT.  |
+| `log-status` | The logging status of the flow log:+  `OK`: Data is logging normally to the chosen destinations. <br />+  `SKIPDATA`: Some flow log records were skipped during the capture window. This can be because of an internal capacity constraint, or an internal error.  |
 | `globalaccelerator_source_ip` | The IP address used by the Global Accelerator network interface. If client IP address preservation is enabled, this value is set to - (hyphen).<br />For more information, see [Preserve client IP addresses in AWS Global Accelerator](preserve-client-ip-address.md). |
 | `globalaccelerator_source_port` | The port used by the Global Accelerator network interface. If client IP address preservation is enabled, this value is set to 0 (zero).<br />For more information, see [Preserve client IP addresses in AWS Global Accelerator](preserve-client-ip-address.md). |
 | `endpoint_region` | The AWS Region where the endpoint is located. |

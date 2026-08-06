@@ -42,7 +42,7 @@ The following table lists the WorkSpaces Thin Client resource types for which yo
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| ThinClientDevice |  AWS::WorkSpacesThinClient::Device  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/logging-using-cloudtrail.html)  |
+| ThinClientDevice |  AWS::WorkSpacesThinClient::Device  |  +  RegisterDevice <br />+  UpdateDeviceDetails   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

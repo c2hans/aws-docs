@@ -584,8 +584,8 @@ The following schema validations are specific to `UpdateLegalTerms` actions in t
 | --- | --- | --- |
 | Terms | Required<br />Only LegalTerm is allowed in the list<br />List size must be 1 | 422 |
 | Terms[].LegalTerm.Documents | Required | 422 |
-| Terms[].LegalTerm.Documents[].Type | Required<br />Allowed values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-cppos.html) | 422 |
-| Terms[].LegalTerm.Documents[].Url | Required and must be a valid URL when "Type" is one of[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-cppos.html) | 422 |
+| Terms[].LegalTerm.Documents[].Type | Required<br />Allowed values:+  CustomEula <br />+  StandardEula  | 422 |
+| Terms[].LegalTerm.Documents[].Url | Required and must be a valid URL when "Type" is one of+  CustomEula  | 422 |
 
 **Asynchronous Errors**
 

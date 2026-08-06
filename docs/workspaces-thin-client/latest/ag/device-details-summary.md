@@ -17,15 +17,15 @@ The Summary section provides a high-level overview of the key features of the Wo
 | ARN | The unique identifier for the device in Amazon Resource Name (ARN) format. |
 | Device name | The name that you give to a device. If you have not created a name, you can name it, or it will get a default name. |
 | Device type | The type of end user device that is linked to the account. |
-| Activity status | The current status of this device. The two status states are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/device-details-summary.html) |
+| Activity status | The current status of this device. The two status states are:+ Active<br />+ Inactive |
 | Environment ID | The identification number of the environment that the device uses. |
-| Enrollment status | Confirmation that a device has been set up, is associated with this AWS account, and is part of a specific environment. It can be in one of the following four states:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/device-details-summary.html) |
+| Enrollment status | Confirmation that a device has been set up, is associated with this AWS account, and is part of a specific environment. It can be in one of the following four states:+ **Registered** – This is the default status.<br />+ **Deregistering** – The device is in the Reset and Deregister process.<br />+ **Deregistered** – The device has been successfully deregistered. You can only delete the device if it’s in either a Deregistered or Archived status.<br />+ **Archived** – This device has been marked by the administrator as not currently in service. |
 | Enrolled since | The date the device was activated. |
 | Last logged in | The date and time of the most recent login. |
 | Last posture checked at | The date and time of the most recent device check-in. |
 | Current software version | The software version that this device is currently using. |
 | Scheduled for software update | The scheduled software version on the device. |
-| Software compliance | Confirmation that the software set is valid. There are two status states:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/device-details-summary.html) |
+| Software compliance | Confirmation that the software set is valid. There are two status states:+ Compliant<br />+ Not Compliant |
 | Last used by | The identification number of the user accessing the device. Only available when using WorkSpaces Personal. |
 
 ## User log

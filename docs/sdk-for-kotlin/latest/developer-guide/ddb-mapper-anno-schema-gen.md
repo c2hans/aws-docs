@@ -5,194 +5,234 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 # Generate a schema from annotations
 <a name="ddb-mapper-anno-schema-gen"></a>
 
-**Important**
-DynamoDB Mapper is a Developer Preview release. It is not feature complete and is subject to change.
+The simplest way to use DynamoDB Mapper is to annotate your Kotlin classes and let the SDK generate their schemas for you at build time. You annotate a class with `@DynamoDbItem`, mark its key properties, and the **schema-generator Gradle plugin** inspects the annotated classes and emits a schema object and a convenience extension function for obtaining a typed table.
 
-DynamoDB Mapper relies on schemas that define the mapping between your Kotlin classes and DynamoDB items. Your Kotlin classes can drive the creation of schemas by using the schema generator Gradle plugin.
+This topic covers the plugin setup, the available annotations, custom converters for unsupported types, and how to configure the generator. For the complete list of annotations and their parameters, see the [annotations reference](ddb-mapper-anno-index.md).
 
-## Apply the plugin
+**Note**
+The schema-generator plugin is available for Gradle only. If you use Maven, see [Manually define schemas](ddb-mapper-code-schemas.md) for how to define schemas in code.
+
+## How annotation-based generation works
+<a name="ddb-mapper-anno-schema-gen-how"></a>
+
+1. You apply the schema-generator plugin and annotate your data classes.
+
+1. At build time, the plugin’s symbol processor reads the annotations. For each `@DynamoDbItem` class `Foo`, the plugin generates a `FooSchema` object and a `DynamoDbMapper.getFooTable(…​)` extension function.
+
+1. Your code calls the generated extension or passes the generated schema to `getTable` to obtain a typed `Table` and perform [operations](ddb-mapper-operations.md) on it.
+
+You never need to write or edit the generated code. Rebuilding your project regenerates it from your annotated classes.
+
+## Add the plugin and dependencies
 <a name="ddb-mapper-anno-schema-gen-plugin"></a>
 
-To start code generating schemas for your classes, apply the plugin in your application’s build script and add a dependency on the annotations module. The following Gradle script snippet shows the necessary setup for code generation.
-
-Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/awslabs/aws-sdk-kotlin/releases/latest).
+Apply the plugin and add the runtime and annotations dependencies in your `build.gradle.kts`. Replace {{X.Y.Z}} with the [latest release of the SDK](https://github.com/aws/aws-sdk-kotlin/releases/latest).
 
 ```
 // build.gradle.kts
-val sdkVersion: String = {{X.Y.Z}}
+val sdkVersion = "[.replaceable]##X.Y.Z##"
 
 plugins {
-    id("aws.sdk.kotlin.hll.dynamodbmapper.schema.generator") version "$sdkVersion-beta" // For the Developer Preview, use the beta version of the latest SDK.
+    id("aws.sdk.kotlin.hll.dynamodbmapper.schema.generator") version sdkVersion
 }
 
 dependencies {
-    implementation("aws.sdk.kotlin:dynamodb-mapper:$sdkVersion-beta")
-    implementation("aws.sdk.kotlin:dynamodb-mapper-annotations:$sdkVersion-beta")
+    implementation("aws.sdk.kotlin:dynamodb-mapper:$sdkVersion")
+    implementation("aws.sdk.kotlin:dynamodb-mapper-annotations:$sdkVersion")
 }
 ```
 
-## Configure the plugin
-<a name="ddb-mapper-anno-schema-gen-conf-plugin"></a>
+Each of these dependencies fulfills a different function:
++ The `dynamodbmapper.schema.generator` plugin generates the schemas
++ The `dynamodb-mapper` dependency provides the `DynamoDbMapper` type
++ The `dynamodb-mapper-annotations` dependency provides the annotations you apply to your classes
 
-The plugin offers a number of configuration options that you can apply by using the `dynamoDbMapper { …​ }` plugin extension in your build script:
-
-| Option | Option description | Values |
-| --- | --- | --- |
-|  `generateBuilderClasses`  | Controls whether DSL-style builder classes will be generated for classes annotated with `@DynamoDbItem`  |  `WHEN_REQUIRED` (default): Builder classes will not be generated for classes which consist of only public mutable members and have a zero-arg constructor<br /> `ALWAYS`: Builder classes will always be generated |
-|  `visibility`  | Controls the visibility of generated classes |  `PUBLIC` (default)<br /> `INTERNAL`  |
-|  `destinationPackage`  | Specifies the package name for generated classes |  `RELATIVE` (default): Schema classes will be generated in a sub-package relative to your annotated class. By default, the sub-package is named `dynamodbmapper.generatedschemas`, and this is configurable by passing a string parameter<br /> `ABSOLUTE`: Schema classes will be generated in an absolute package relative to the root of your application. By default, the package is named `aws.sdk.kotlin.hll.dynamodbmapper.generatedschemas`, and this is configurable by passing a string parameter. |
-|  `generateGetTableExtension`  | Controls whether a `DynamoDbMapper.get${CLASS_NAME}Table` extension method will be generated |  `true` (default)<br /> `false`  |
-
-### Example of code-generation plugin configuration
-<a name="_example_of_code_generation_plugin_configuration"></a>
-
-This following example configures the destination package and visibility of the generated schema:
-
-```
-// build.gradle.kts
-
-import aws.sdk.kotlin.hll.dynamodbmapper.codegen.annotations.DestinationPackage
-import aws.sdk.kotlin.hll.dynamodbmapper.codegen.annotations.Visibility
-import aws.smithy.kotlin.runtime.ExperimentalApi
-
-@OptIn(ExperimentalApi::class)
-dynamoDbMapper {
-    destinationPackage = DestinationPackage.RELATIVE("my.configured.package")
-    visibility = Visibility.INTERNAL
-}
-```
-
-## Annotate classes
+## Annotate a class
 <a name="ddb-mapper-anno-schema-gen-annotate"></a>
 
-The schema generator looks for class annotations to determine which classes to generate schemas for. To opt in to generating schemas, annotate your classes with `@DynamoDbItem`. You must also annotate a class property which serves as the item’s partition key with the `@DynamoDbPartitionKey` annotation.
-
-The following class definition shows the minimally required annotations for schema generation:
-
-### Example
-<a name="_example"></a>
+Annotate the class with `@DynamoDbItem` and mark its primary key. Every top-level item type must have exactly one partition key (`@DynamoDbPartitionKey`) and can have at most one sort key (`@DynamoDbSortKey`). All other public properties are mapped to attributes automatically.
 
 ```
-@DynamoDbItem
-data class Employee(
-    @DynamoDbPartitionKey
-    val id: Int,
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbSortKey
+import aws.smithy.kotlin.runtime.time.Instant
 
-    val name: String,
-    val role: String,
+@DynamoDbItem
+data class Order(
+    @DynamoDbPartitionKey
+    val customerId: String,
+    @DynamoDbSortKey
+    val orderId: String,
+    val status: OrderStatus,
+    val totalCents: Long,
+    val productSkus: List<String>,
+    val tags: Set<String>,
+    val placedAt: Instant,
 )
 ```
 
-### Class annotations
-<a name="ddb-mapper-anno-schema-gen-class-annos"></a>
+The generator maps the property types it knows about, including primitives, `String`, enums such as `OrderStatus`, collections, and several SDK runtime types such as `Instant`. For types it doesn’t support out of the box, supply a [custom converter](#ddb-mapper-anno-schema-gen-converters).
 
-The following annotations are applied to classes to control schema generation:
-+  `@DynamoDbItem`: Specifies that this class/interface describes an item type in a table. All public properties of this type will be mapped to attributes unless they are explicitly ignored. When present, a schema will be generated for this class.
-  +  `converterName`: An optional parameter which indicates a custom schema should be used rather than the one created by the schema generator plugin. This is the fully qualified name of the custom `ItemConverter` class. The [Define a custom item converter](#ddb-mapper-anno-schema-custom) section shows an example of creating and using a custom schema.
+### Supported types
+<a name="ddb-mapper-anno-schema-gen-supported-types"></a>
 
-### Property annotations
-<a name="ddb-mapper-anno-schema-gen-prop-annos"></a>
+The following Kotlin types are automatically converted by DynamoDB Mapper into the given DynamoDB types:
 
-You can apply the following annotations to class properties to control schema generation:
-+  `@DynamoDbPartitionKey`: Specifies the partition key for the item.
-+  `@DynamoDbSortKey`: Specifies an optional sort key for the item.
-+  `@DynamoDbIgnore`: Specifies that this class property should not be converted to/from an Item attribute by the DynamoDB Mapper.
-+  `@DynamoDbAttribute`: Specifies an optional custom attribute name for this class property.
+| Kotlin type | DynamoDB type | Notes |
+| --- | --- | --- |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Boolean](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Boolean) (Boolean) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-byte-array/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Binary](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Binary) (Binary) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String) (String) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-array/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-array/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String) (String) |  |
+|  [https://docs.aws.amazon.com/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-document/-map/](https://docs.aws.amazon.com/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-document/-map/) (`aws.smithy.kotlin.runtime.content`) |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.Map](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.Map) (Map) | Values in the map use the converter appropriate for their type |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  ` [Enum](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/)<E>` (any enum class) |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String) (String) | Stored as the enum constant’s `name`  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://sdk.amazonaws.com/kotlin/api/latest/smithy-kotlin-runtime-time/aws.smithy.kotlin.runtime.time/-instant/index.html](https://sdk.amazonaws.com/kotlin/api/latest/smithy-kotlin-runtime-time/aws.smithy.kotlin.runtime.time/-instant/index.html) (`aws.smithy.kotlin.runtime.time`) |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) | Stored as epoch seconds by default |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  ` [List](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/)<E>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.List](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.List) (List) | Elements in the list use the converter appropriate for their type |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  ` [Map](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/)<String, V>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.Map](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Document.Map) (Map) | Values in the map use the converter appropriate for their type |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Byte>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<ByteArray>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Binary Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Char>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (String Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<CharArray>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (String Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Double>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Float>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Int>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Long>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<Short>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<String>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (String Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<UByte>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<UInt>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<ULong>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  ` [Set](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-set/)<UShort>`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.SetTypes) (Number Set) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-short/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String) (String) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-byte/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-byte/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-int/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-int/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-long/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-long/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-short/](https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-u-short/)  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Number) (Number) |  |
+|  [https://sdk.amazonaws.com/kotlin/api/latest/smithy-kotlin-runtime/aws.smithy.kotlin.runtime.net.url/-url/index.html](https://sdk.amazonaws.com/kotlin/api/latest/smithy-kotlin-runtime/aws.smithy.kotlin.runtime.net.url/-url/index.html) (`aws.smithy.kotlin.runtime.net.url`) |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.String) (String) |  |
+| Any supported type `T?`  |  [https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Null](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html#HowItWorks.DataTypes.Null) when the value is `null`; otherwise uses the converter for `T`  |  |
 
-## Define a custom item converter
-<a name="ddb-mapper-anno-schema-custom"></a>
+### Customize how properties map
+<a name="ddb-mapper-anno-schema-gen-customize"></a>
 
-In some cases, you may want to define a custom item converter for your class. One reason for this would be if your class uses a type that’s not supported by the schema generator plugin. We use the following version of the `Employee` class as an example:
+Several property-level annotations can adjust the default mapping. For example:
 
 ```
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttribute
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttributeConverter
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbIgnore
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbSortKey
+import aws.smithy.kotlin.runtime.time.Instant
 import kotlin.uuid.Uuid
 
 @DynamoDbItem
-data class Employee(
+data class Order(
     @DynamoDbPartitionKey
-    var id: Int,
-
-    var name: String,
-    var role: String,
-    var workstationId: Uuid
-)
+    val customerId: String,
+    @DynamoDbSortKey
+    val orderId: String,
+    val status: OrderStatus,
+    val totalCents: Long,
+    val productSkus: List<String>,
+    val tags: Set<String>,
+    @DynamoDbAttribute("created_at")
+    val placedAt: Instant,
+    @DynamoDbAttributeConverter(UuidConverter::class)
+    val idempotencyKey: Uuid,
+) {
+    @DynamoDbIgnore
+    val isLargeOrder: Boolean get() = totalCents >= 100_00
+}
 ```
 
-The `Employee` class now uses a `kotlin.uuid.Uuid` type, which is not currently supported by the schema generator. Schema generation fails with an error: `Unsupported attribute type TypeRef(pkg=kotlin.uuid, shortName=Uuid, genericArgs=[], nullable=false)`. This error indicates that the plugin cannot generate an item converter for this class. Therefore, we need to write our own.
+In alphabetical order, the attribute-level annotations used in the preceding example are:
++  `@DynamoDbAttribute(name)`: store the property under a different DynamoDB attribute name (here, `placedAt` is stored as `created_at`). Without it, the attribute name matches the property name.
++  `@DynamoDbAttributeConverter(converter)`: supply a custom `ValueConverter` for a property whose type the generator doesn’t support on its own. See [Convert unsupported types](#ddb-mapper-anno-schema-gen-converters).
++  `@DynamoDbIgnore`: exclude a property from mapping entirely (here, a computed convenience property).
 
-To do this, we implement an `ItemConverter` for the class, then modify the `@DynamoDbItem` class annotation by specifying the fully qualified name of the new item converter.
+More property annotations enable various features and are covered in-depth in [DynamoDB Mapper annotations reference](ddb-mapper-anno-index.md).
 
-First, we implement a `ValueConverter` for the `kotlin.uuid.Uuid` class:
+## Convert unsupported types
+<a name="ddb-mapper-anno-schema-gen-converters"></a>
+
+For a property whose type the generator doesn’t natively map (for example, `kotlin.uuid.Uuid`), apply `@DynamoDbAttributeConverter` with a [`ValueConverter`](ddb-mapper-code-schemas.md#ddb-mapper-code-schemas-value-converters) that translates between your type and a DynamoDB attribute value. A value converter implements two methods: `convertRight` (your type → attribute value) and `convertLeft` (attribute value → your type).
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.values.ValueConverter
 import aws.sdk.kotlin.services.dynamodb.model.AttributeValue
 import kotlin.uuid.Uuid
 
-public val UuidValueConverter = object : ValueConverter<Uuid> {
-    override fun convertFrom(to: AttributeValue): Uuid =
-        Uuid.parseHex(to.asS())
-
-    override fun convertTo(from: Uuid): AttributeValue =
-        AttributeValue.S(from.toHexString())
+object UuidConverter : ValueConverter<Uuid> {
+    override fun convertRight(from: Uuid): AttributeValue = AttributeValue.S(from.toString())
+    override fun convertLeft(from: AttributeValue): Uuid = Uuid.parse(from.asS())
 }
 ```
 
-Then, we implement an `ItemConverter` for our `Employee` class. The `ItemConverter` uses this new value converter in the attribute descriptor for "workstationId":
+The class passed to `@DynamoDbAttributeConverter(…​)` must implement `ValueConverter`. See [Manually define schemas](ddb-mapper-code-schemas.md) for the full converter model and the built-in converters you can reuse.
+
+## Use the generated schema
+<a name="ddb-mapper-anno-schema-gen-use"></a>
+
+After you build the project, the generator produces an `OrderSchema` object and, by default, a `getOrderTable` extension on `DynamoDbMapper`. Note that the extension name contains the class name `Order`, while the string you pass is your actual table name `"orders"`:
 
 ```
-import aws.sdk.kotlin.hll.dynamodbmapper.items.AttributeDescriptor
-import aws.sdk.kotlin.hll.dynamodbmapper.items.ItemConverter
-import aws.sdk.kotlin.hll.dynamodbmapper.items.SimpleItemConverter
-import aws.sdk.kotlin.hll.dynamodbmapper.values.scalars.IntConverter
-import aws.sdk.kotlin.hll.dynamodbmapper.values.scalars.StringConverter
-
-public object MyEmployeeConverter : ItemConverter<Employee> by SimpleItemConverter(
-    builderFactory = { Employee() },
-    build = { this },
-    descriptors = arrayOf(
-        AttributeDescriptor(
-            "id",
-            Employee::id,
-            Employee::id::set,
-            IntConverter,
-        ),
-        AttributeDescriptor(
-            "name",
-            Employee::name,
-            Employee::name::set,
-            StringConverter,
-        ),
-        AttributeDescriptor(
-            "role",
-            Employee::role,
-            Employee::role::set,
-            StringConverter
-        ),
-        AttributeDescriptor(
-            "workstationId",
-            Employee::workstationId,
-            Employee::workstationId::set,
-            UuidValueConverter
-        )
-    ),
-)
+val ordersTable = mapper.getOrderTable("orders")
 ```
 
-Now that we have defined the item converter, we can apply it to our class. We update the `@DynamoDbItem` annotation to reference the item converter by providing the fully-qualified class name as shown in the following:
+Equivalently, pass the generated schema to `getTable`. By default, the generated schema lives in a package derived from your class’s package plus `.dynamodbmapper.generatedschemas`. For instance, if your annotated class is `com.example.store.model.Order` then the default generated schema is `com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema`:
 
 ```
-import kotlin.uuid.Uuid
+import com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema
 
-@DynamoDbItem("my.custom.item.converter.MyEmployeeConverter")
-data class Employee(
-    @DynamoDbPartitionKey
-    var id: Int,
-
-    var name: String,
-    var role: String,
-    var workstationId: Uuid
-)
+val ordersTable = mapper.getTable("orders", OrderSchema)
 ```
 
-Finally we can begin using the class with DynamoDB Mapper.
+## Configure the generator
+<a name="ddb-mapper-anno-schema-gen-configure"></a>
+
+The plugin contributes a `dynamoDbMapper` extension to your build script. All settings are optional; their defaults are shown in the following example.
+
+```
+// build.gradle.kts
+import aws.sdk.kotlin.hll.codegen.rendering.Visibility
+import aws.sdk.kotlin.hll.dynamodbmapper.codegen.annotations.DestinationPackage
+import aws.sdk.kotlin.hll.dynamodbmapper.codegen.annotations.GenerateBuilderClasses
+
+dynamoDbMapper {
+    // When to generate builder classes for your item types: WHEN_REQUIRED (default) or ALWAYS.
+    generateBuilderClasses = GenerateBuilderClasses.WHEN_REQUIRED
+
+    // Visibility of generated declarations. Default: PUBLIC.
+    visibility = Visibility.PUBLIC
+
+    // Where generated code is placed. Relative(...) (default) appends to each class's own package;
+    // Absolute(...) places everything in one fixed package.
+    destinationPackage = DestinationPackage.Relative("dynamodbmapper.generatedschemas")
+
+    // Whether to generate the DynamoDbMapper.get<Class>Table() convenience extensions. Default: true.
+    generateGetTableExtension = true
+}
+```
+
+The configurable settings, in alphabetical order:
+
+| Setting | Type | Default | Purpose |
+| --- | --- | --- | --- |
+|  `destinationPackage`  |  `DestinationPackage`  |  `DestinationPackage.Relative("dynamodbmapper.generatedschemas")`  | Package for generated code. Use `DestinationPackage.Relative(suffix)` to place it relative to each source class’s package, or `DestinationPackage.Absolute(pkg)` to use one fixed package. |
+|  `generateBuilderClasses`  |  `GenerateBuilderClasses`  |  `WHEN_REQUIRED`  |  `WHEN_REQUIRED` generates a builder only when a class can’t be built directly (for example, it has immutable members and no zero-arg constructor); `ALWAYS` always generates one. |
+|  `generateGetTableExtension`  |  `Boolean`  |  `true`  | Whether to generate the `DynamoDbMapper.get<Class>Table(…​)` extensions. When `false`, obtain tables with `getTable(name, schema)`. |
+|  `visibility`  |  `Visibility`  |  `PUBLIC`  | Visibility of generated declarations. |
+
+## Related topics
+<a name="ddb-mapper-anno-schema-gen-related"></a>
++  [Manually define schemas](ddb-mapper-code-schemas.md): define schemas in code instead of with annotations.
++  [DynamoDB Mapper annotations reference](ddb-mapper-anno-index.md): every annotation and its parameters.
++  [Built-in features (TTL, atomic counters)](ddb-mapper-builtins.md): runtime behavior of `@DynamoDbCounter` and `@DynamoDbTtlSeconds`.

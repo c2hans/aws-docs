@@ -49,7 +49,7 @@ The **Prefixes** filter and the **Storage Lens groups** filter can’t be applie
 
    1. To update a filter, choose **Apply**.
 
-   1. To remove a filter, click on the **X** next to the filter.
+   1. To remove a filter, choose the **X** next to the filter.
 
 1. In any section in your S3 Storage Lens dashboard, to see data for a specific metric, for **Metric**, choose the metric name.
 

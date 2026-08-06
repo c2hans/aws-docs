@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instance
 # $LATEST.PUBLISHED version in Lambda Managed Instances
 <a name="lambda-managed-instances-version-publishing"></a>
 
-Lambda Managed Instances functions support the same numbered versioning workflow as Lambda (default). If you prefer not to maintain numbered versions, Lambda Managed Instances introduces a new version type: `$LATEST.PUBLISHED`. This version allows you to create or republish a latest published version as needed with updated code or configuration, without managing numbered versions.
+Lambda Managed Instances functions support the same numbered versioning workflow as Lambda (default). If you prefer not to maintain numbered versions, Lambda Managed Instances introduces a new version type: `$LATEST.PUBLISHED`. With this version type, you can create or republish a published version with updated code or configuration. You do not need to manage numbered versions.
 
 **Key difference from $LATEST:** When you invoke a Lambda Managed Instances function using an unqualified ARN, Lambda implicitly invokes the `$LATEST.PUBLISHED` version rather than the unpublished $LATEST version.
 

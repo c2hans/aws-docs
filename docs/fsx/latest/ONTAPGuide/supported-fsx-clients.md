@@ -125,7 +125,7 @@ Whether or not Transit Gateway is required for your Multi-AZ file systems depend
 
 | Data access | Requires Transit Gateway? |
 | --- | --- |
-| Accessing FSx over NFS, SMB, or the NetApp ONTAP REST API, CLI. or NetApp Console | Only if:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/supported-fsx-clients.html) |
+| Accessing FSx over NFS, SMB, or the NetApp ONTAP REST API, CLI. or NetApp Console | Only if:+  Accessing from a peered (on-premises, for example) network, and <br />+  You are not accessing FSx through a NetApp FlexCache or Global File Cache instance  |
 | Accessing data over iSCSI | No |
 | Accessing data over NVMe | No |
 | Joining an SVM to an Active Directory | No |

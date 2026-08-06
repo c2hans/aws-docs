@@ -51,7 +51,7 @@ The following table illustrates the environments from which Amazon FSx supports 
 <tbody>
   <tr><td>Subnets in which the file system is created</td><td>✓</td><td>✓</td><td>✓</td></tr>
   <tr><td>Primary CIDR blocks of the VPC in which the file system was created</td><td>✓</td><td>✓</td><td>✓</td></tr>
-  <tr><td>Secondary CIDRs of the VPC in which the file system was created</td><td rowspan="2"></td><td rowspan="2">Clients with IP addresses in an [RFC 1918](http://www.faqs.org/rfcs/rfc1918.html) private IP address range:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/WindowsGuide/supported-fsx-clients.html)</td><td rowspan="2">Clients with IP addresses outside the following CIDR block range: 198.19.0.0/16</td></tr>
+  <tr><td>Secondary CIDRs of the VPC in which the file system was created</td><td rowspan="2"></td><td rowspan="2">Clients with IP addresses in an [RFC 1918](http://www.faqs.org/rfcs/rfc1918.html) private IP address range:+ 10.0.0.0/8<br />+ 172.16.0.0/12<br />+ 192.168.0.0/16</td><td rowspan="2">Clients with IP addresses outside the following CIDR block range: 198.19.0.0/16</td></tr>
   <tr><td>Other CIDRs or peered networks</td></tr>
 </tbody>
 </table>

@@ -28,6 +28,6 @@ The following table describes quotas within AWS Elemental MediaPackage for VOD c
 | Resource or operation | Quota |
 | --- | --- |
 | Ingest streams per Packaging Configuration | 20 |
-| Request Rates per Packaging Configuration |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/vod-quotas.html) The per Packaging Configuration origination request rate quotas are indicative only and based on typical traffic patterns when using a properly configured CDN. The request rate quotas may be lower under certain conditions like misconfigured CDNs or players generating abnormal levels of origin requests with unique HTTP headers values, or unique query strings values appended to the playback URLs.  |
-| REST API Requests |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/vod-quotas.html)  |
+| Request Rates per Packaging Configuration |  +  Media segments output: 600 requests per second <br />+ Manifests output: 300 requests per second The per Packaging Configuration origination request rate quotas are indicative only and based on typical traffic patterns when using a properly configured CDN. The request rate quotas may be lower under certain conditions like misconfigured CDNs or players generating abnormal levels of origin requests with unique HTTP headers values, or unique query strings values appended to the playback URLs.  |
+| REST API Requests |  +  Steady state: 5 requests per second <br />+  Bursting: 50 requests per second   |
 | Tracks per Ingest Stream | 10<br />The maximum number of tracks (audio, video, subtitle, etc.) per stream that you can ingest. |

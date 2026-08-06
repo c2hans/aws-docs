@@ -11,13 +11,13 @@ The suggested place results.
 <a name="API_geoplaces_SuggestPlaceResult_Contents"></a>
 
  ** AccessPoints **   <a name="location-Type-geoplaces_SuggestPlaceResult-AccessPoints"></a>
- Position of the access point in World Geodetic System (WGS 84) format: [longitude, latitude]. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Position of the access point in World Geodetic System (WGS 84) format: [longitude, latitude]. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [AccessPoint](API_geoplaces_AccessPoint.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
  ** AccessRestrictions **   <a name="location-Type-geoplaces_SuggestPlaceResult-AccessRestrictions"></a>
- Indicates known access restrictions on a vehicle access point. The index correlates to an access point and indicates if access through this point has some form of restriction. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Indicates known access restrictions on a vehicle access point. The index correlates to an access point and indicates if access through this point has some form of restriction. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [AccessRestriction](API_geoplaces_AccessRestriction.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
@@ -28,7 +28,7 @@ Type: [Address](API_geoplaces_Address.md) object
 Required: No
 
  ** BusinessChains **   <a name="location-Type-geoplaces_SuggestPlaceResult-BusinessChains"></a>
- The Business Chains associated with the place. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The Business Chains associated with the place. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [BusinessChain](API_geoplaces_BusinessChain.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
@@ -52,7 +52,7 @@ Valid Range: Minimum value of 0. Maximum value of 4294967295.
 Required: No
 
  ** FoodTypes **   <a name="location-Type-geoplaces_SuggestPlaceResult-FoodTypes"></a>
- List of food types offered by this result. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ List of food types offered by this result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [FoodType](API_geoplaces_FoodType.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
@@ -65,7 +65,7 @@ Array Members: Fixed number of 4 items.
 Required: No
 
  ** Phonemes **   <a name="location-Type-geoplaces_SuggestPlaceResult-Phonemes"></a>
- How the various components of the result's address are pronounced in various languages. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ How the various components of the result's address are pronounced in various languages. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: [PhonemeDetails](API_geoplaces_PhonemeDetails.md) object
 Required: No
 
@@ -89,7 +89,7 @@ Valid Values: `Country | Region | SubRegion | Locality | District | SubDistrict 
 Required: No
 
  ** PoliticalView **   <a name="location-Type-geoplaces_SuggestPlaceResult-PoliticalView"></a>
- The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Fixed length of 3.
 Pattern: `[A-Z]{3}`

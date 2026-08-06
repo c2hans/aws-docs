@@ -26,7 +26,7 @@ The following table shows the major functional differences between EC2Config, EC
 | Feature | EC2Config | EC2Launch v1 | EC2Launch v2 |
 | --- | --- | --- | --- |
 | Run as | Windows Service | PowerShell Scripts | Windows Service |
-| Supports | Legacy OS only | Windows Server versions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-launch-agents.html) | Windows Server versions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-launch-agents.html) |
+| Supports | Legacy OS only | Windows Server versions:+ 2016<br />+ 2019 (LTSC and SAC) | Windows Server versions:+ 2016<br />+ 2019 (LTSC and SAC)<br />+ 2022<br />+ 2025 |
 | Configuration file | XML | JSON | JSON/YAML |
 | Set Administrator username | No | No | Yes |
 | Compressed user data | No | No | Yes |

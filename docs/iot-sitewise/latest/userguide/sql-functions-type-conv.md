@@ -9,10 +9,10 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 
 |  **Function**  |  **Signature**  |  **Description**  |
 | --- | --- | --- |
-| `TO_DATE` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html)  |
-| `TO_TIMESTAMP` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html)  |
-| `TO_TIME` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html)  |
-| `CAST` | CAST (<expression> AS <data type>) | Converts an entity, or expression that evaluates to a single value, from one type to another.<br />Supported data types are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-type-conv.html) |
+| `TO_DATE` |  +  TO\_DATE (integer) <br />+  TO\_DATE (expression, format)   |  +  Converts an epoch millisecond integer into a date value. <br />+  Converts a character string representation into a date value.   |
+| `TO_TIMESTAMP` |  +  TO\_TIMESTAMP (double) <br />+  TO\_TIMESTAMP (string, format)   |  +  Converts an epoch second integer into a timestamp data type. <br />+  Converts a string representation of a date and time into a timestamp data type.   |
+| `TO_TIME` |  +  TO\_TIME (int) <br />+  TO\_TIME (string, format)   |  +  Converts an epoch millisecond integer into a time value. <br />+  Converts a character string representation into a time value.   |
+| `CAST` | CAST (<expression> AS <data type>) | Converts an entity, or expression that evaluates to a single value, from one type to another.<br />Supported data types are:+  BOOLEAN <br />+  INTEGER <br />+  INT <br />+  TIMESTAMP <br />+  DATE <br />+  CHAR <br />+  CHARACTER <br />+  STRING  |
 
 **Example of a SQL query using the listed functions:**
 

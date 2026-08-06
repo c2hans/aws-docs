@@ -79,11 +79,11 @@ The following diagram shows the architecture for exporting data from the Amazon 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create the Amazon RDS for SQL Server instance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
-| Set up credentials for the instance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
-| Configure the instance class, storage, auto scaling, and availability. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
-| Specify the VPC, subnet group, public access, and security group. | Select the **VPC**, **DB subnet groups**, and **VPC security group **as required to create the Amazon RDS instance. Follow the best practices, for example:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
-| Configure monitoring, backup, and maintenance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
+| Create the Amazon RDS for SQL Server instance. | 1. Open the AWS Management Console, choose **RDS**, and use the **Standard create** option to create an Amazon RDS instance with the required edition, such as SQL Server Express Edition, SQL Server Standard Edition, or SQL Server Enterprise Edition. For the version, choose 2016 or later.<br />2. Under **Templates**, choose **Dev/Test**. | DBA, DevOps engineer |
+| Set up credentials for the instance. | 1. Enter a name for the instance.<br />2. Provide a username and password for the Amazon RDS instance. | DBA, DevOps engineer |
+| Configure the instance class, storage, auto scaling, and availability. | 1. Select the **DB instance class** from the list: **Standard**, **Memory Optimized**, and **Burstable** classes. Choose the DB instance type that allocates the computational, network, and memory capacity required by the workloads planned for this DB instance. For more information, see the [AWS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html#Concepts.DBInstanceClass.RegionSupport).<br />2. Select the **Storage Type** from the list: **General Purpose SSD**, **Provisioned IOPS SSD**, or **Magnetic**. Allocate the default storage size as required.<br />3. Choose **Enable storage autoscaling** to increase the Amazon RDS storage based on your capacity planning.<br />4. A Multi-AZ deployment with a replication instance is supported by AWS DMS. In the event of an outage in the Availability Zone, internal hardware, or network, AWS DMS will create a standby instance and provide high availability (HA) through automatic failover to the standby replicas. Depending on the size of your import, select the appropriate option. | DBA, DevOps engineer |
+| Specify the VPC, subnet group, public access, and security group. | Select the **VPC**, **DB subnet groups**, and **VPC security group **as required to create the Amazon RDS instance. Follow the best practices, for example:+ Do not enable public access to the Amazon RDS instance.<br />+ Do not use the CIDR 0.0.0.0/0 in the security groups.<br />+ Use only the required IP address and port details to access the Amazon RDS instance. | DBA, DevOps engineer |
+| Configure monitoring, backup, and maintenance. | 1. Specify the backup options that you want. By default, automated backups are enabled with a retention period of 7 days.<br />2. Choose the appropriate **auto minor version upgrade** and **Maintenance window** settings to apply the pending modifications or maintenance to the database by Amazon RDS.<br />3. Choose **Create database**.  | DBA, DevOps engineer |
 
 ### Set up the database and example data
 <a name="set-up-the-database-and-example-data"></a>
@@ -97,14 +97,14 @@ The following diagram shows the architecture for exporting data from the Amazon 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create the secret. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html)This secret will be used for the AWS DMS source endpoint. | DBA, DevOps engineer |
+| Create the secret. | 1. On the console, choose **Secrets Manager**, and then choose **Store a new secret**. <br />2. Enter a username and password for the Amazon RDS for SQL Server database. This secret will be used for the AWS DMS source endpoint. | DBA, DevOps engineer |
 
 ### Set up access between the database and the Amazon S3 bucket
 <a name="set-up-access-between-the-database-and-the-s3-bucket"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an IAM role for access to Amazon RDS. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
+| Create an IAM role for access to Amazon RDS. | 1. On the console, choose **IAM**, and create an IAM role that gives an S3 bucket read/write access to Amazon RDS. <br />2. Under **Feature**, select **S3 Integration**. | DBA, DevOps engineer |
 
 ### Create the Amazon S3 bucket
 <a name="create-the-s3-bucket"></a>
@@ -125,7 +125,7 @@ The following diagram shows the architecture for exporting data from the Amazon 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create the AWS DMS source endpoint. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
+| Create the AWS DMS source endpoint. | 1. On the console, choose **Database Migration Service**, and choose **Endpoints**. Create the **Source endpoint**, selecting the **Select RDS DB instance** check box.<br />2. For the Source engine, select **Microsoft SQL Server**.<br />3. Under **Access to endpoint database**, choose **AWS Secrets Manager**, and enter the secret and IAM role that you created earlier, and the database name.<br />4. Test the source endpoint. | DBA, DevOps engineer |
 | Create the AWS DMS target endpoint. | Create the **Target endpoint,** selecting Amazon S3 as the **Target engine**.<br />Provide the Amazon S3 bucket name and folder name for the IAM role that you created previously. | DBA, DevOps engineer |
 | Create the AWS DMS replication instance. | In the same VPC, subnet, and security group, create the AWS DMS replication instance. For more information about choosing an instance class, see the [AWS documentation](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReplicationInstance.Types.html#CHAP_ReplicationInstance.Types.Deciding). | DBA, DevOps engineer |
 | Create the AWS DMS migration task. | To export the data from Amazon RDS for SQL Server to the Amazon S3 bucket, create a database migration task. For the migration type, choose **Migrate existing data**. Select the AWS DMS endpoints and replication instance that you created. | DBA, DevOps engineer |
@@ -142,7 +142,7 @@ The following diagram shows the architecture for exporting data from the Amazon 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the resources. | To avoid incurring extra costs, use the console to delete the resources in the following order:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms.html) | DBA, DevOps engineer |
+| Delete the resources. | To avoid incurring extra costs, use the console to delete the resources in the following order:1. Migration task<br />2. Replication instance<br />3. Endpoints<br />4. Amazon S3 bucket<br />5. Database instance | DBA, DevOps engineer |
 
 ## Troubleshooting
 <a name="export-amazon-rds-for-sql-server-tables-to-an-s3-bucket-by-using-aws-dms-troubleshooting"></a>

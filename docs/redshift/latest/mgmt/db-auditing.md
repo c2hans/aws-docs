@@ -84,7 +84,7 @@ Logs authentication attempts, and connections and disconnections. The following 
 | userid | ID of user affected by the change. |
 | username | User name of the user affected by the change. |
 | oldusername | For a rename action, the original user name. For any other action, this field is empty. |
-| action | Action that occurred. Valid values: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html)  |
+| action | Action that occurred. Valid values: +  Alter <br />+  Create <br />+  Drop <br />+  Rename   |
 | usecreatedb | If true (1), indicates that the user has create database permissions. |
 | usesuper | If true (1), indicates that the user is a superuser. |
 | usecatupd | If true (1), indicates that the user can update system catalogs. |

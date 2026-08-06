@@ -60,10 +60,10 @@ The following table lists the supported HyperPod EKS AMI versions, the Kubernete
 
 | AMI version | Latest patch | Supported EKS versions | Supported package versions | First released |
 | --- | --- | --- | --- | --- |
-| 1.3.x | 1.3.0 | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-ami-support-policy.html)  | June 29, 2026 |
-| 1.2.x | 1.2.0 | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-ami-support-policy.html)  | June 26, 2026 |
-| 1.1.x | 1.1.6 | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-ami-support-policy.html)  | April 23, 2026 |
-| 1.0.x | 1.0.3 | 1.30, 1.31, 1.32, 1.33, 1.34 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-ami-support-policy.html)  | January 25, 2026 |
+| 1.3.x | 1.3.0 | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |  +  NVIDIA Driver: 580.167.08 <br />+  CUDA Toolkit: 12.8 <br />+  EFA Installer: 1.47.0 <br />+  OS Kernel: 6.1.x   | June 29, 2026 |
+| 1.2.x | 1.2.0 | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |  +  NVIDIA Driver: 580.159.04 <br />+  CUDA Toolkit: 12.8 <br />+  EFA Installer: 1.47.0 <br />+  OS Kernel: 6.1.x   | June 26, 2026 |
+| 1.1.x | 1.1.6 | 1.30, 1.31, 1.32, 1.33, 1.34, 1.35 |  +  NVIDIA Driver: 580.126.09 <br />+  CUDA Toolkit: 12.8 <br />+  EFA Installer: 1.47.0 <br />+  OS Kernel: 6.1.x   | April 23, 2026 |
+| 1.0.x | 1.0.3 | 1.30, 1.31, 1.32, 1.33, 1.34 |  +  NVIDIA Driver: 580.150 <br />+  CUDA Toolkit: 12.8 <br />+  EFA Installer: 1.47.0 <br />+  OS Kernel: 6.1.x   | January 25, 2026 |
 
 ## Frequently asked questions
 <a name="sagemaker-hyperpod-ami-support-faq"></a>

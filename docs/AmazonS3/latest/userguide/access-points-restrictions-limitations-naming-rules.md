@@ -41,7 +41,7 @@ Amazon S3 access points have the following restrictions and limitations:
 + You can address access points only by using virtual-host-style URLs. For more information about virtual-host-style addressing, see [Accessing an Amazon S3 general purpose bucket](access-bucket-intro.md).
 + API operations that control access point functionality (for example, `PutAccessPoint` and `GetAccessPointPolicy`) don't support cross-account calls.
 + You must use AWS Signature Version 4 when making requests to an access point by using the REST APIs. For more information about authenticating requests, see [Authenticating Requests (AWS Signature Version 4)](https://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-authenticating-requests.html) in the *Amazon Simple Storage Service API Reference*.
-+ Access points only support requests over HTTPS. Amazon S3 will automatically respond with an HTTP redirect for any requests made via HTTP, to upgrade the request to HTTPS.
++ Access points only support requests over HTTPS. Amazon S3 will automatically respond with an HTTP redirect for any requests made over HTTP, to upgrade the request to HTTPS.
 + Access points don't support anonymous access.
 + After you create an access point, you can't change its block public access settings.
 + Cross-account access points don’t grant you access to data until you are granted permissions from the bucket owner. The bucket owner always retains ultimate control over access to the data and must update the bucket policy to authorize requests from the cross-account access point. To view a bucket policy example, see [Configuring IAM policies for using access points](access-points-policies.md).

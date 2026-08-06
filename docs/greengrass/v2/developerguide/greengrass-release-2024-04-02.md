@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.12.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2024-04-02.html) |
+| Greengrass nucleus | Version 2.12.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where the nucleus enters a deadlock condition during startup on some Linux devices.    |

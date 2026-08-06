@@ -33,11 +33,11 @@ Determine the complete list of items that are required to harden the operating s
 
 | Operating System | Guidance |
 | --- | --- |
-| All Supported UNIX/Linux Operating Systems |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-6-2.html)  |
-| SUSE Linux Enterprise Server |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-6-2.html)  |
-| Red Hat Enterprise Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-6-2.html)  |
-| Microsoft Windows |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-6-2.html)  |
-| Oracle Enterprise Linux |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-6-2.html)  |
+| All Supported UNIX/Linux Operating Systems |  +   SAP Documentation: [SAP System Security Under UNIX/LINUX](https://help.sap.com/viewer/621bb4e3951b4a8ca633ca7ed1c0aba2/LATEST/en-US/4d3da980d936391ee10000000a15822b.html)    |
+| SUSE Linux Enterprise Server |  +   SAP Note: [2684254 - SAP HANA DB: Recommended OS settings for SLES 15 / SLES for SAP Applications 15](https://launchpad.support.sap.com/#/notes/2684254) [Requires SAP Portal Access]  <br />+   SAP Note: [2578899 - SUSE Linux Enterprise Server 15: Installation Note](https://launchpad.support.sap.com/#/notes/2578899) [Requires SAP Portal Access]  <br />+   Operating system-specific Documentation: [SUSE Hardening Guide](https://documentation.suse.com/sbp/all/html/OS_Security_Hardening_Guide_for_SAP_HANA_SLES15/)    |
+| Red Hat Enterprise Linux |  +   SAP Note: [2777782 - SAP HANA DB: Recommended OS Settings for RHEL 8](https://launchpad.support.sap.com/#/notes/2777782) [Requires SAP Portal Access]  <br />+   SAP Note: [2772999 - Red Hat Enterprise Linux 8.x: Installation and Configuration](https://launchpad.support.sap.com/#/notes/2772999) (with particular mention of SELinux support) [Requires SAP Portal Access]  <br />+   Red Hat Documentation: [Red Hat Enterprise Linux Security Hardening Guide for SAP HANA 2.0](https://access.redhat.com/articles/6892601) <br />+  Red Hat Blog: [Security recommendations for SAP HANA on RHEL](https://www.redhat.com/en/blog/security-recommendations-sap-hana-rhel)   |
+| Microsoft Windows |  +   SAP Documentation: [SAP System Security on Windows](https://help.sap.com/viewer/621bb4e3951b4a8ca633ca7ed1c0aba2/LATEST/en-US/4d6b747d7f961fbbe10000000a15822b.html)  <br />+   SAP Note: [1837765 - Security policies for <SID>adm and SAPService<SID> on Windows](https://launchpad.support.sap.com/#/notes/1837765) [Requires SAP Portal Access]    |
+| Oracle Enterprise Linux |  +  (Consult SAP or Vendor documentation for guidance)   |
 
  **Suggestion 6.2.4 – Validate the security posture of the operating system**
 

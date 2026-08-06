@@ -40,7 +40,7 @@ The following table describes the input parameters.
 
 | **Parameter** | **Type** | **Description** |
 | --- | --- | --- |
-| interceptorKey Required | InterceptorKey (string) | The action key to intercept. Valid values: [See the AWS documentation website for more details](http://docs.aws.amazon.com/agentworkspace/latest/devguide/3P-apps-extensibility-add-interceptor.html) |
+| interceptorKey Required | InterceptorKey (string) | The action key to intercept. Valid values: + `openQuickConnect` – The Quick Connect or transfer action.<br />+ `openOutboundDialer` – The number pad or outbound dialer action.<br />+ `clearContact` – The clear or end contact action. |
 | interceptor Required | Interceptor<T> | An asynchronous callback that receives a context object and returns an InterceptorResult. See [Interceptor callback type in Connect Customer agent workspace](3P-apps-extensibility-interceptor-type.md). |
 | parameter Optional | string | A scoping parameter. For the currently supported interceptor keys, pass the contactId of the contact that the interceptor applies to. If you omit this value, the interceptor applies to all contacts. |
 | options Optional | RegisterInterceptorOptions | The configuration options for this interceptor. If you omit this value, the service uses the default timeout of 5000 milliseconds and the default maximum consecutive block limit of 5. See [RegisterInterceptorOptions in Connect Customer agent workspace](3P-apps-extensibility-options.md). |

@@ -22,12 +22,12 @@ The following table contains information about the applications that App2Contain
 
 | Compatibility item | Linux | Windows |
 | --- | --- | --- |
-| Supported application server operating systems 1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
+| Supported application server operating systems 1 |  +  Ubuntu (version 18.04 and later) <br />+  CentOS (version 8 and later) <br />+  RHEL (version 7 and later) <br />+  Amazon Linux 2 (AL2) <br />+  Amazon Linux 2023 (AL2023)   |  +  Windows Server 2016 and later 2   |
 | Container hosts | The container host can be any supported application server operating system. The major kernel version of the container host must match with the container image. | The container host operating system must be either Windows Server 2016, 2019, or 2022. The Windows Server operating system version of the container host must match the container image. App2Container automatically deploys the container host using the same operating system used for the containerization process. |
-| Application types |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
-| Supported frameworks |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  | .NET Framework version 3.5 and 4.x |
-| Unsupported application features | High Availability (HA) clusters |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
-| Additional system requirements |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/app2container/latest/UserGuide/compatibility-a2c.html)  |
+| Application types |  +  Java applications <br />+  .NET applications   |  +  IIS .NET applications   |
+| Supported frameworks |  +  Java (JDK 1.8 and later)   Tomcat   TomEE   JBoss (standalone mode)   <br />+  .NET applications   .NET Core 3.1   .NET 5   .NET 6   .NET 7   .NET 8   .NET 9     | .NET Framework version 3.5 and 4.x |
+| Unsupported application features | High Availability (HA) clusters |  +  IIS applications that use files and registries outside of IIS web application directories   |
+| Additional system requirements |  +  Docker version 17.07 and later 3 <br />+  kubectl versions up to v1.30 for Amazon EKS deployments.   |  +  Docker version 17.07 and later 3 <br />+  kubectl versions up to v1.30 for Amazon EKS deployments. <br />+  Windows IIS (7.5 and later) <br />+  Windows PowerShell version 5.1 or PowerShell version 6 and later   |
 
 1 We have only tested the operating systems and configurations listed. Other operating systems could be compatible, but have not been tested.
 

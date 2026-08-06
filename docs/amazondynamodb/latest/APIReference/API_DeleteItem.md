@@ -261,6 +261,12 @@ Required: No
          "WriteCapacityUnits": number
       },
       "TableName": "string",
+      "VectorIndexes": {
+         "string" : {
+            "VectorSearchRequestBytes": number,
+            "VectorWriteRequestBytes": number
+         }
+      },
       "WriteCapacityUnits": number
    },
    "ItemCollectionMetrics": {
@@ -301,6 +307,7 @@ Key Length Constraints: Maximum length of 65535.
 
  ** [ConsumedCapacity](#API_DeleteItem_ResponseSyntax) **   <a name="DDB-DeleteItem-response-ConsumedCapacity"></a>
 The capacity units consumed by the `DeleteItem` operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. `ConsumedCapacity` is only returned if the `ReturnConsumedCapacity` parameter was specified. For more information, see [Provisioned capacity mode](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html) in the *Amazon DynamoDB Developer Guide*.
+If the table has vector indexes, the response includes a `VectorIndexes` field with `VectorWriteRequestBytes` consumed for each affected vector index.
 Type: [ConsumedCapacity](API_ConsumedCapacity.md) object
 
  ** [ItemCollectionMetrics](#API_DeleteItem_ResponseSyntax) **   <a name="DDB-DeleteItem-response-ItemCollectionMetrics"></a>

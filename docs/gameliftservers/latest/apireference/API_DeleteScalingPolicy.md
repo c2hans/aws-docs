@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DeleteScalingPolicy
 <a name="API_DeleteScalingPolicy"></a>
 
- **This API works with the following fleet types:** EC2
+ **This API works with the following fleet types:** EC2, Container
 
 Deletes a fleet scaling policy. Once deleted, the policy is no longer in force and Amazon GameLift Servers removes all record of it. To delete a scaling policy, specify both the scaling policy name and the fleet ID it is associated with.
 

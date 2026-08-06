@@ -138,7 +138,7 @@ Pattern: `^.*$`
  ** [Status](#API_CreateContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-CreateContainerAssociation-response-Status"></a>
 The current status of the container association. For a new container association, the status is `CREATING`.
 Type: String
-Valid Values: `ACTIVE | CREATING | DELETING`
+Valid Values: `ACTIVE | CREATING | DELETING | UPDATING`
 
  ** [Tags](#API_CreateContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-CreateContainerAssociation-response-Tags"></a>
 The key:value pairs to associate with the resource.

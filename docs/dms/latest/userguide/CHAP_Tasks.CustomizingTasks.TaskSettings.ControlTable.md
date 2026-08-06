@@ -31,7 +31,7 @@ The Replication Status table (`dmslogs.awsdms_status`) contains the current stat
 | --- | --- | --- |
 | SERVER\_NAME | nvchar | The name of the machine where the replication task is running. |
 | TASK\_NAME | nvchar | The Resource ID of the AWS DMS task. Resource ID can be found in task ARN. |
-| TASK\_STATUS | varchar | One of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.ControlTable.html)<br />Task status is set to FULL LOAD as long as there is at least one table in full load. After all tables have been loaded, the task status changes to CHANGE PROCESSING if CDC is enabled. The task is set to NOT RUNNING before you start the task, or after the task completes. |
+| TASK\_STATUS | varchar | One of the following values:+  FULL LOAD <br />+  CHANGE PROCESSING (CDC) <br />+  NOT RUNNING <br />Task status is set to FULL LOAD as long as there is at least one table in full load. After all tables have been loaded, the task status changes to CHANGE PROCESSING if CDC is enabled. The task is set to NOT RUNNING before you start the task, or after the task completes. |
 | STATUS\_TIME | timestamp | The timestamp of the task status. |
 | PENDING\_CHANGES | int | The number of change records that were committed in the source database and cached in the memory and disk of your replication instance. |
 | DISK\_SWAP\_SIZE | int | The amount of disk space used by old or offloaded transactions. |
@@ -59,7 +59,7 @@ The Replication History table (`dmslogs.awsdms_history`) contains the following 
 | --- | --- | --- |
 | SERVER\_NAME | nvchar | The name of the machine where the replication task is running. |
 | TASK\_NAME | nvchar | The Resource ID of the AWS DMS task. Resource ID can be found in task ARN. |
-| TIMESLOT\_TYPE | varchar | One of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.ControlTable.html)<br />If the task is running both full load and CDC, two history records are written to the time slot. |
+| TIMESLOT\_TYPE | varchar | One of the following values:+  FULL LOAD <br />+  CHANGE PROCESSING (CDC) <br />If the task is running both full load and CDC, two history records are written to the time slot. |
 | TIMESLOT | timestamp | The ending timestamp of the time slot. |
 | TIMESLOT\_DURATION | int | The duration of the time slot, in minutes. |
 | TIMESLOT\_LATENCY | int | The target latency at the end of the time slot, in seconds. This value only applies to CDC time slots. |

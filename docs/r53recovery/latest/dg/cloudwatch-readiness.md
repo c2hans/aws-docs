@@ -26,8 +26,8 @@ The `AWS/Route53RecoveryReadiness` namespace includes the following metrics.
 
 | Metric | Description |
 | --- | --- |
-| ReadinessChecks | Represents the number of readiness checks processed by ARC. The metric can be dimensioned by its states, listed below.<br />**Unit**: `Count`.<br />**Reporting criteria**: There is a nonzero value.<br />**Statistics**: The only useful statistic is `Sum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/r53recovery/latest/dg/cloudwatch-readiness.html) |
-| Resources | Represents the number of resources processed by ARC, which can be dimensioned by their resource identifier, as defined by the API.<br />**Unit**: `Count`.<br />**Reporting criteria**: There is a nonzero value.<br />**Statistics**: The only useful statistic is `Sum`.[See the AWS documentation website for more details](http://docs.aws.amazon.com/r53recovery/latest/dg/cloudwatch-readiness.html) |
+| ReadinessChecks | Represents the number of readiness checks processed by ARC. The metric can be dimensioned by its states, listed below.<br />**Unit**: `Count`.<br />**Reporting criteria**: There is a nonzero value.<br />**Statistics**: The only useful statistic is `Sum`.+ `READY`<br />+ `NOT_READY`<br />+ `NOT_AUTHORIZED`<br />+ `UNKNOWN` |
+| Resources | Represents the number of resources processed by ARC, which can be dimensioned by their resource identifier, as defined by the API.<br />**Unit**: `Count`.<br />**Reporting criteria**: There is a nonzero value.<br />**Statistics**: The only useful statistic is `Sum`.+  `ResourceSetType`: These are the resource types, filtered by the number of resources per given type evaluated by ARC <br />For example: `AWS::CloudWatch::Alarm` |
 
 ## Statistics for ARC metrics
 <a name="cloudwatch-metric-statistics"></a>

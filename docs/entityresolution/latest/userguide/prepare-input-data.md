@@ -18,10 +18,34 @@ To prepare first-party data tables, consult the following table:
 
 | Workflow type | Required |
 | --- | --- |
-| Rule-based matching workflow with Advanced rule type |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/entityresolution/latest/userguide/prepare-input-data.html)  |
-| rule-based matching workflow with Simple rule type |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/entityresolution/latest/userguide/prepare-input-data.html)  |
-| machine learning-based matching workflow |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/entityresolution/latest/userguide/prepare-input-data.html)  |
-| ID mapping workflow  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/entityresolution/latest/userguide/prepare-input-data.html)  |
+| Rule-based matching workflow with Advanced rule type |  +  A [Unique ID](glossary.md#unique-id-defn) is required.  <br />+  The Unique ID doesn't exceed 38 characters.  <br />+  (Optional) A DELETE column that specifies which records to remove from AWS Entity Resolution after the workflow has finished processing. The default value is {{false}} if the column exists without any values. Records with the DELETE column set to {{true}} will be delete. Records with the DELETE column set to {{false}} or empty will processed by AWS Entity Resolution.  <br />The schema must have a DELETE column with type `String` and no `matchKey` and `groupName`.  Look up match ID (`GetMatchID`) isn't supported because the **Advanced** rule type for the **Manual** processing cadence doesn't store any ingested data.  <br />In the following example, `S1` will be ingested and `S2` will be deleted.
+
+**Example**
+
+  ```
+  sourceID, name, lastName, DELETE
+  S1, name, lastname, false
+  S2, name2, lastname2, true
+  ```   |
+| rule-based matching workflow with Simple rule type |  +  A [Unique ID](glossary.md#unique-id-defn) is required.  <br />+  The Unique ID doesn't exceed 38 characters.    |
+| machine learning-based matching workflow |  +  A [Unique ID](glossary.md#unique-id-defn) is required.  <br />+  The dataset contains one of the following types:   **Full Name**   **Full Address**   **Full phone**   **Email address**   **Date** – with a **Match key name** of **Date of birth**   <br />+  None of the column names use the following reserved names: "`MatchId`", "`MatchRule`", `RecordId`, `SourceId`", " and `TargetId`". <br />+  (Optional) A DELETE column that specifies which records to remove from AWS Entity Resolution after the workflow has finished processing. The default value is {{false}} if the column exists without any values. Records with the DELETE column set to {{true}} will be deleted. Records with the DELETE column set to {{false}} or empty will be processed by AWS Entity Resolution.  <br />The schema must have a DELETE column with type `String` and no `matchKey` and `groupName`. <br />In the following example, `S1` will be ingested and `S2` will be deleted.
+
+**Example**
+
+  ```
+  sourceID, name, lastName, DELETE
+  S1, name, lastname, false
+  S2, name2, lastname2, true
+  ```   |
+| ID mapping workflow  |  +  A [Unique ID](glossary.md#unique-id-defn) is required.  <br />+  The Unique ID doesn't exceed 257 characters.  <br />+  (Optional) A DELETE column that specifies which records to remove from AWS Entity Resolution after the workflow has finished processing. The default value is {{false}} if the column exists without any values. Records with the DELETE column set to {{true}} will be delete. Records with the DELETE column set to {{false}} or empty will processed by AWS Entity Resolution.  <br />The schema must have a DELETE column with type `String` and no `matchKey` and `groupName`. <br />In the following example, `S1` will be ingested and `S2` will be deleted.
+
+**Example**
+
+  ```
+  sourceID, name, lastName, DELETE
+  S1, name, lastname, false
+  S2, name2, lastname2, true
+  ```   |
 
 ## Step 2: Save your input data table in a supported data format
 <a name="save-input-data"></a>

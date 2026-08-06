@@ -29,6 +29,17 @@ A Boolean value that indicates whether the endpoints of the numeric range are in
 Type: Boolean
 Required: No
 
+ ** Inverse **   <a name="QS-Type-TopicNumericRangeFilter-Inverse"></a>
+A Boolean value that indicates if the filter is inverse.
+Type: Boolean
+Required: No
+
+ ** NullFilter **   <a name="QS-Type-TopicNumericRangeFilter-NullFilter"></a>
+The `null` filter that is applied to the numeric range filter.
+Type: String
+Valid Values: `ALL_VALUES | NON_NULLS_ONLY | NULLS_ONLY`
+Required: No
+
 ## See Also
 <a name="API_TopicNumericRangeFilter_SeeAlso"></a>
 

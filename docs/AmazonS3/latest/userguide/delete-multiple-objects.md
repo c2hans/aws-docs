@@ -74,6 +74,6 @@ If you're experiencing any issues with deleting your objects, see [I want to per
 ## Using the AWS SDKs
 <a name="DeletingMultipleObjects"></a>
 
-For examples of how to delete multiple objects with the AWS SDKs, see [Delete multiple objects](https://docs.aws.amazon.com/AmazonS3/latest/API/s3_example_s3_DeleteObjects_section.html) in the *Amazon S3 API Reference*.
+For examples of how to delete multiple objects with the AWS SDKs, see [Delete multiple objects](https://docs.aws.amazon.com/code-library/latest/ug/s3_example_s3_DeleteObjects_section.html) in the *AWS SDK Code Examples*.
 
-For general information about using different AWS SDKs, see [Developing with Amazon S3 using the AWS SDKs](https://docs.aws.amazon.com/AmazonS3/latest/API/sdk-general-information-section.html) in the *Amazon S3 API Reference*.
+For general information about using different AWS SDKs, see [Developing with Amazon S3 using the AWS SDKs](https://docs.aws.amazon.com/code-library/latest/ug/sdk-general-information-section.html) in the *AWS SDK Code Examples*.

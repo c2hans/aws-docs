@@ -11,7 +11,7 @@ The following table outlines when Amazon RDS uses physical versus logical replic
 
 | Source PostgreSQL DB instance version | Upgrade action in blue/green deployment | Replication method |
 | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-replication-type.html)  | Major version upgrade(green instance on higher major engine version than blue) | Logical replication |
+|  +  16.1 and all higher major and minor versions <br />+  15.4 and higher 15 versions <br />+  14.9 and higher 14 versions <br />+  13.12 and higher 13 versions <br />+  12.16 and higher 12 versions <br />+  11.21 and higher 11 versions   | Major version upgrade(green instance on higher major engine version than blue) | Logical replication |
 | All supported versions | Minor version upgrade, or no upgrade(green instance on same major engine version as blue) | Physical replication |
 
 **Note**

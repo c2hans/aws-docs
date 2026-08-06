@@ -45,7 +45,7 @@ All password policy parameters are dynamic and do not require DB reboot to take 
 
 | DB parameter | Description | Allowed Values | Default Value |
 | --- | --- | --- | --- |
-| rds.password\_complexity\_enabled | Password complexity requirements must be satisfied when creating or changing passwords for SQL Server logins. The following constraints must be met: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.Concepts.General.PasswordPolicy.Using.html)  | 0,1 | 0 |
+| rds.password\_complexity\_enabled | Password complexity requirements must be satisfied when creating or changing passwords for SQL Server logins. The following constraints must be met: + The password must include characters from three of the following categories:  Latin lowercase letter (a through z) Latin uppercase letter (A through Z) Non-alphanumeric characters such as: exclamation point (\!), dollar sign ($), number sign (\#), or percent (%). <br />+ The password doesn't contain the account name of the user.  | 0,1 | 0 |
 | rds.password\_min\_length | The minimum number of characters required in a password for a SQL Server login. | 0-14 | 0 |
 | rds.password\_min\_age | The minimum number of days a SQL Server login password must be used before the user can change it. Passwords can be changed immediately when set to 0. | 0-998 | 0 |
 | rds.password\_max\_age | The maximum number of days a SQL Server login password can be used after which the user is required to change it. Passwords never expire when set to 0. | 0-999 | 42 |

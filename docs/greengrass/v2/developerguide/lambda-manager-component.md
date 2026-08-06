@@ -261,25 +261,25 @@ The following table describes the changes in each version of the component.
 | 2.3.8 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
 | 2.3.7 | Version updated for Greengrass nucleus version 2.16.0 release. |
 | 2.3.6 | Version updated for Greengrass nucleus version 2.15.0 release. |
-| 2.3.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
+| 2.3.5 |  **Bug fixes and improvements**<br />   Improves performance by using epoll instead of nio when available.     |
 | 2.3.4 | Version updated for Greengrass nucleus version 2.13.0 release. |
-| 2.3.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
+| 2.3.3 |  **Bug fixes and improvements**<br />   General bug fixes and improvements.     |
 | 2.3.2 | Version updated for Greengrass nucleus version 2.12.0 release. |
-| 2.3.1 |  <a name="changelog-lambda-manager-2.3.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
-| 2.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
-| 2.2.11 |  <a name="changelog-lambda-manager-2.2.11"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
+| 2.3.1 |  <a name="changelog-lambda-manager-2.3.1"></a>**Bug fixes and improvements**<br />   Adjusts log levels for certain errors.     |
+| 2.3.0 |  **New features**<br />   Log handler was optimized to reduce CPU load. Use this feature by setting the configuration option `logHandlerMode` to `optimized`.   <br />**Bug fixes and improvements**<br />   No longer logs the full stacktrace for `WorkQueueFullException`, improving logs and performance.   Sets lambda shutdown timeout from 15 seconds to 300 seconds in order to prevent shutdown timeouts.   Fixes an issue where on-demand lambdas may fail to restart after changing configuration.     |
+| 2.2.11 |  <a name="changelog-lambda-manager-2.2.11"></a>**Bug fixes and improvements**<br />   Fixes an issue where the LegacySubscriptionRouter configuration does not update when the Lambda configuration changes.     |
 | 2.2.10 | Version updated for Greengrass nucleus version 2.11.0 release. |
-| 2.2.9 |  <a name="changelog-lambda-manager-2.2.9"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
+| 2.2.9 |  <a name="changelog-lambda-manager-2.2.9"></a>**Bug fixes and improvements**<br /> Fixes an issue where the port number is corrupted due to a skewed clock.   |
 | 2.2.8 | Version updated for Greengrass nucleus version 2.10.0 release. |
 | 2.2.7 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.2.6 | Version updated for Greengrass nucleus version 2.8.0 release. |
-| 2.2.5 |  <a name="changelog-lambda-manager-2.2.5"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
+| 2.2.5 |  <a name="changelog-lambda-manager-2.2.5"></a>**New features**<br />   Adds support for MQTT topic wildcards in event sources where you subscribe to local publish/subscribe messages. <br />This feature requires v2.6.0 or later of the [Greengrass nucleus component](greengrass-nucleus-component.md).   Version updated for Greengrass nucleus version 2.7.0 release.     |
 | 2.2.4 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.2.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
-| 2.2.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
-| 2.2.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
-| 2.2.0 |  <a name="changelog-lambda-manager-2.2.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
-| 2.1.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-manager-component.html)  |
+| 2.2.3 |  **Bug fixes and improvements**<br />   Fixes an issue where multiple instances of a Lambda function share a single cgroup. This component uses cgroups to manage resource usage for Lambda functions.     |
+| 2.2.2 |  **Bug fixes and improvements**<br />   Fixes an issue where pinned Lambda function components restart unexpectedly in certain scenarios.     |
+| 2.2.1 |  **Bug fixes and improvements**<br />   Changes this component's [Greengrass nucleus](greengrass-nucleus-component.md) dependency version constraints to fix a dependency resolution issue.     |
+| 2.2.0 |  <a name="changelog-lambda-manager-2.2.0"></a>**Bug fixes and improvements**<br />   Fixes an issue where Lambda functions couldn't write logs after a restart.   Fixes an issue where the legacy subscription router sends duplicate messages when there are wildcards in the topic.   Fixes an issue where non-pinned Lambda functions couldn't use the Greengrass interprocess communication (IPC) library in the AWS IoT Device SDK.     |
+| 2.1.4 |  **Bug fixes and improvements**<br />   Fixes an issue that caused Lambda functions that use NodeJS runtimes to process only one message.   Version updated for Greengrass nucleus version 2.5.0 release.     |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.2.0 release. |

@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[Encryption](#cfn-mediapackagev2-originendpoint-segment-encryption)" : {{Encryption}},
   "[IncludeIframeOnlyStreams](#cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams)" : {{Boolean}},
+  "[OutputTimestampMode](#cfn-mediapackagev2-originendpoint-segment-outputtimestampmode)" : {{String}},
   "[Scte](#cfn-mediapackagev2-originendpoint-segment-scte)" : {{Scte}},
   "[SegmentDurationSeconds](#cfn-mediapackagev2-originendpoint-segment-segmentdurationseconds)" : {{Integer}},
   "[SegmentName](#cfn-mediapackagev2-originendpoint-segment-segmentname)" : {{String}},
@@ -36,6 +37,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   [Encryption](#cfn-mediapackagev2-originendpoint-segment-encryption): {{
     Encryption}}
   [IncludeIframeOnlyStreams](#cfn-mediapackagev2-originendpoint-segment-includeiframeonlystreams): {{Boolean}}
+  [OutputTimestampMode](#cfn-mediapackagev2-originendpoint-segment-outputtimestampmode): {{String}}
   [Scte](#cfn-mediapackagev2-originendpoint-segment-scte): {{
     Scte}}
   [SegmentDurationSeconds](#cfn-mediapackagev2-originendpoint-segment-segmentdurationseconds): {{Integer}}
@@ -57,6 +59,16 @@ Whether to use encryption for the segment.
 Whether the segment includes I-frame-only streams.
 *Required*: No
 *Type*: Boolean
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutputTimestampMode`  <a name="cfn-mediapackagev2-originendpoint-segment-outputtimestampmode"></a>
+The output timestamp mode for the origin endpoint's segments. This setting is only configurable on channels with `OutputLockingMode` set to `NON_EPOCH_LOCKED`. This value is immutable after endpoint creation. If you don't specify a value, the default is `PASSTHROUGH`.
+The allowed values are:
++ `PASSTHROUGH` - Output PTS (Presentation Timestamp) values pass through unchanged from the input.
++ `REBASED_TO_CHANNEL_START` - Output PTS is rebased relative to the channel start time.
+*Required*: No
+*Type*: String
+*Allowed values*: `PASSTHROUGH | REBASED_TO_CHANNEL_START`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Scte`  <a name="cfn-mediapackagev2-originendpoint-segment-scte"></a>

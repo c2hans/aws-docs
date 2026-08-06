@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 # Configure SAML assertions for the authentication response
 <a name="id_roles_providers_create_saml_assertions"></a>
 
-After you have verified a user's identity in your organization, the external identity provider (IdP) sends an authentication response to the AWS sign-in endpoint URL. This response is a POST request that includes a SAML token that adheres to the [HTTP POST Binding for SAML 2.0](http://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf) standard and that contains the following elements, or *claims*. You configure these claims in your SAML-compatible IdP. Refer to the documentation for your IdP for instructions on how to enter these claims.
+After you have verified a user's identity in your organization, the external identity provider (IdP) sends an authentication response to the AWS sign-in endpoint URL. This response is a POST request that includes a SAML token that adheres to the [HTTP POST Binding for SAML 2.0](https://docs.aws.amazon.com/http://docs.oasis-open.org/security/saml/v2.0/saml-bindings-2.0-os.pdf) standard and that contains the following elements, or *claims*. You configure these claims in your SAML-compatible IdP. Refer to the documentation for your IdP for instructions on how to enter these claims.
 
 When the IdP sends the response containing the claims to AWS, many of the incoming claims map to AWS context keys. These context keys can be checked in IAM policies using the `Condition` element. A listing of the available mappings follows in the section [Mapping SAML attributes to AWS trust policy context keys](#saml-attribute-mapping).
 

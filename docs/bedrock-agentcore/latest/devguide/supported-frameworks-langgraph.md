@@ -13,8 +13,8 @@ This page explains how to instrument a [LangGraph](https://langchain-ai.github.i
 +  [How evaluation fields are extracted](#langgraph-extraction)
   +  [From event records](#langgraph-extraction-event-records)
   +  [From span attributes](#langgraph-extraction-attributes)
-+  [Example spans with event records](#langgraph-examples-with)
-+  [Example spans without event records](#langgraph-examples-without)
++  [Example spans in split telemetry](#langgraph-examples-split)
++  [Example spans in unified telemetry](#langgraph-examples-unified)
 +  [Best practices for LangGraph agents](#langgraph-best-practices)
 
 ## Instrument your agent
@@ -27,7 +27,7 @@ When your agent runs with the AWS Distro for OpenTelemetry (ADOT), such as on Am
 Add the instrumentation library for the path you want to your dependencies. The following examples pin a minimum version; use the latest available version unless you have a reason to pin.
 
 **Example**
-NOTE: Use version `0.55.0` or later. Version 0.55.0 added support for the newer OpenTelemetry [generative-AI agent span conventions](https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md) that the evaluation service relies on.
+NOTE: Use version `0.55.0` or later. Version 0.55.0 added support for the newer OpenTelemetry [generative-AI agent span conventions](https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/gen-ai-agent-spans.md) on the GitHub website, which the evaluation service relies on.
 Add `opentelemetry-instrumentation-langchain` to your dependencies. The scope name emitted is `opentelemetry.instrumentation.langchain`.
  `requirements.txt`:
 
@@ -58,7 +58,7 @@ dependencies = [
 ```
 
 **Note**
-Instrumentation is one step in setting up observability. To export telemetry for evaluation, complete the full setup in [Set up observability](supported-frameworks.md#supported-frameworks-setup).
+Instrumentation is one step in setting up observability. To export telemetry for evaluation, complete the full setup in [Set up observability](supported-frameworks-telemetry.md#supported-frameworks-setup).
 
 ## How spans are identified
 <a name="langgraph-span-identification"></a>
@@ -88,21 +88,21 @@ For the invoke agent span, the input and output do not contain a clean per-messa
 
 LangGraph also serializes message roles in more than one form. A role can appear as a lowercase value (`human`, `ai`, `tool`) or as a LangChain message class name (`HumanMessage`, `AIMessage`, `ToolMessage`). The service recognizes both forms.
 
-The location of this content depends on how telemetry was collected. The identifying attribute (`traceloop.span.kind` or `openinference.span.kind`) is on the span in both cases. For more information, see [Spans, event records, and telemetry signals](supported-frameworks-telemetry.md).
+The location of this content depends on how telemetry was collected. The identifying attribute (`traceloop.span.kind` or `openinference.span.kind`) is on the span in both cases. For more information, see [Telemetry setup and delivery](supported-frameworks-telemetry.md).
 
 ### From event records
 <a name="langgraph-extraction-event-records"></a>
 
-When telemetry is split, the service reads content from the event record correlated to each span:
+With split telemetry, the service reads content from the event record correlated to each span:
 +  **User prompt** and **agent response**: from the invoke agent span’s event record, in `body.input` and `body.output`.
 +  **Tool call**: the tool name from the execute tool span. The tool arguments and result come from that span’s event record, in `body.input` and `body.output`.
 
-For examples, see [Example spans with event records](#langgraph-examples-with).
+For more information, see [Example spans in split telemetry](#langgraph-examples-split).
 
 ### From span attributes
 <a name="langgraph-extraction-attributes"></a>
 
-When telemetry is not split, the same content stays on the span as attributes. The attributes depend on the instrumentation library:
+With unified telemetry, the same content stays on the span as attributes. The attributes depend on the instrumentation library:
 +  **OpenTelemetry**:
   +  **User prompt** and **agent response**: from `gen_ai.task.input` and `gen_ai.task.output` on the invoke agent span.
   +  **Tool call**: the tool name from `gen_ai.tool.name`, and the arguments and result from `gen_ai.tool.call.arguments` and `gen_ai.tool.call.result`, on the execute tool span.
@@ -110,12 +110,12 @@ When telemetry is not split, the same content stays on the span as attributes. T
   +  **User prompt** and **agent response**: from `input.value` and `output.value` on the invoke agent span.
   +  **Tool call**: the tool name from `tool.name`, and the arguments and result from `input.value` and `output.value`, on the execute tool span.
 
-For examples, see [Example spans without event records](#langgraph-examples-without).
+For more information, see [Example spans in unified telemetry](#langgraph-examples-unified).
 
-## Example spans with event records
-<a name="langgraph-examples-with"></a>
+## Example spans in split telemetry
+<a name="langgraph-examples-split"></a>
 
-When telemetry is split, the span carries the identifying attributes and the content lives in a correlated event record. The following examples are from a LangGraph travel-planning agent deployed on Amazon Bedrock AgentCore Runtime. The same agent is shown under each instrumentation library.
+With split telemetry, the span carries the identifying attributes and the content lives in a correlated event record. The following examples are from a LangGraph travel-planning agent deployed on Amazon Bedrock AgentCore Runtime. The same agent is shown under each instrumentation library.
 
 **Note**
 These examples are not complete spans. They show representative data from a real agent interaction, with some fields omitted and long values truncated for readability.
@@ -363,16 +363,16 @@ The correlated event record carries the tool input (arguments) and output (resul
 }
 ```
 
-## Example spans without event records
-<a name="langgraph-examples-without"></a>
+## Example spans in unified telemetry
+<a name="langgraph-examples-unified"></a>
 
-When telemetry is not split, the same content stays on the span attributes and no separate event record is produced. The following examples are from a LangGraph travel-planning agent. The same agent is shown under each instrumentation library.
+With unified telemetry, the same content stays on the span attributes and no separate event record is produced. The following examples are from a LangGraph travel-planning agent. The same agent is shown under each instrumentation library.
 
 **Note**
 These examples are not complete spans. They show representative data from a real agent interaction, with some fields omitted and long values truncated for readability.
 
 ### OpenTelemetry
-<a name="langgraph-examples-without-otel"></a>
+<a name="langgraph-examples-unified-otel"></a>
 
 **Example**
 The `gen_ai.task.input` attribute holds the user prompt, and the `gen_ai.task.output` attribute holds the serialized state with the agent response. Both are the serialized LangChain graph state.
@@ -428,7 +428,7 @@ The `gen_ai.tool.call.arguments` attribute holds the tool arguments, and the `ge
 ```
 
 ### OpenInference
-<a name="langgraph-examples-without-openinference"></a>
+<a name="langgraph-examples-unified-openinference"></a>
 
 **Example**
 The `input.value` attribute holds the user prompt, and the `output.value` attribute holds the serialized state with the agent response.

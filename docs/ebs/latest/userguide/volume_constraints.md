@@ -125,8 +125,8 @@ The following table provides example operating systems and the corresponding phy
 
 | Operating system | Advertised physical sector size |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/volume_constraints.html)  | 512 byte |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ebs/latest/userguide/volume_constraints.html)  | 4 KiB |
+|  +  Amazon Linux with kernel version 4.14 and earlier <br />+  RHEL 7.9 and earlier <br />+  Ubuntu 20.04 and earlier <br />+  Windows 7/Windows Server 2008 and earlier   | 512 byte |
+|  +  Amazon Linux with kernel version 5.3 and later <br />+  RHEL8.8 and later <br />+  Ubuntu 22.04 and later <br />+  Windows 8/Windows Server 2012 and later 1   | 4 KiB |
 
 1 For Windows workloads, ensure that you are using the latest version of the [AWS NVMe drivers](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/aws-nvme-drivers.html). Amazon EBS advertises 4-KiB physical sectors with AWS NVMe driver version 1.4.1 and later.
 

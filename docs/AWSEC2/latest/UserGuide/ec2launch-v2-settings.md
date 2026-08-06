@@ -598,8 +598,8 @@ The following table lists changes for user data, and cross-references them to th
 
 | User data version | Details | Introduced in |
 | --- | --- | --- |
-| 1.1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2-settings.html) | EC2Launch v2 version 2.0.1245 |
-| 1.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch-v2-settings.html) | EC2Launch v2 version 2.0.0 |
+| 1.1 | +  User data tasks run before the `PostReady` stage in the agent config file. <br />+  Runs user data before starting the Systems Manager Agent (same behavior as EC2Launch v1 and EC2Config).\*  | EC2Launch v2 version 2.0.1245 |
+| 1.0 | +  Will be deprecated. <br />+  User data tasks run after the `PostReady` stage in the agent config file. This is not backwards compatible with EC2Launch v1. <br />+  Impacted by a race condition between Systems Manager Agent start and user data tasks.  | EC2Launch v2 version 2.0.0 |
 
 \* When used with the default `agent-config.yml` file.
 

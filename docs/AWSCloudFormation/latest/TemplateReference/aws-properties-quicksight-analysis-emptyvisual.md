@@ -49,7 +49,7 @@ The list of custom actions that are configured for a visual.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataSetIdentifier`  <a name="cfn-quicksight-analysis-emptyvisual-datasetidentifier"></a>
-The data set that is used in the empty visual. Every visual requires a dataset to render.
+The data set that is used in the empty visual. Every visual requires a dataset or a topic to render.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

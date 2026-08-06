@@ -11,7 +11,7 @@ List reports for a service, or all reports owned by the account if serviceArn is
 <a name="API_ListReports_RequestSyntax"></a>
 
 ```
-GET /v2/list-reports?maxResults={{maxResults}}&nextToken={{nextToken}}&reportType={{reportType}}&serviceArn={{serviceArn}} HTTP/1.1
+GET /v2/list-reports?maxResults={{maxResults}}&nextToken={{nextToken}}&reportType={{reportType}}&serviceArn={{serviceArn}}&testRunId={{testRunId}} HTTP/1.1
 ```
 
 ## URI Request Parameters
@@ -30,12 +30,15 @@ Pattern: `\S{1,2000}`
 
  ** [reportType](#API_ListReports_RequestSyntax) **   <a name="ngresiliencehub-ListReports-request-uri-reportType"></a>
 Filter reports by type.
-Valid Values: `FAILURE_MODE`
+Valid Values: `FAILURE_MODE | TESTING`
 
  ** [serviceArn](#API_ListReports_RequestSyntax) **   <a name="ngresiliencehub-ListReports-request-uri-serviceArn"></a>
 Optional. If not provided, lists all reports owned by the account.
 Length Constraints: Minimum length of 31.
 Pattern: `arn:(aws|aws-cn|aws-iso|aws-iso-[a-z]{1}|aws-us-gov):[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:([a-z]{2}-((iso[a-z]{0,1}-)|(gov-)){0,1}[a-z]+-[0-9]):[0-9]{12}:[A-Za-z0-9/][A-Za-z0-9:_/+.-]{0,1023}`
+
+ ** [testRunId](#API_ListReports_RequestSyntax) **   <a name="ngresiliencehub-ListReports-request-uri-testRunId"></a>
+The unique identifier of a test run.
 
 ## Request Body
 <a name="API_ListReports_RequestBody"></a>
@@ -58,7 +61,9 @@ Content-type: application/json
          "reportOutput": { ... },
          "reportType": "string",
          "serviceArn": "string",
-         "status": "string"
+         "status": "string",
+         "testRunId": "string",
+         "testTemplateArn": "string"
       }
    ]
 }

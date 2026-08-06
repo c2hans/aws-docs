@@ -674,7 +674,7 @@ Use the `networkProxy` object to specify information about the network proxy. Th
 | Field | Description |
 | --- | --- |
 | noProxyAddresses | Optional. A comma-separated list of IP addresses or host names that are exempt from the proxy. |
-| proxy | The proxy to connect to. A proxy has the following properties.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/gg-core.html) |
+| proxy | The proxy to connect to. A proxy has the following properties.+  `url`. The URL of the proxy server, in the format `scheme://userinfo@host:port`.   `scheme`. The scheme. Must be `http` or `https`.   `userinfo`. Optional. The user name and password information. If specified, the `username` and `password` fields are ignored.   `host`. The host name or IP address of the proxy server.   `port`. Optional. The port number. If not specified, the following default values are used:   `http`: 80   `https`: 443     <br />+  `username`. Optional. The user name to use to authenticate to the proxy server. <br />+  `password`. Optional. The password to use to authenticate to the proxy server.  |
 
 ### Allowing endpoints
 <a name="allow-endpoints-proxy"></a>

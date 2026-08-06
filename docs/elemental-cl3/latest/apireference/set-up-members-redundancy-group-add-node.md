@@ -33,7 +33,7 @@ The request contains XML content consisting of one `redundancy_groups` element w
 | Element | Value | Description |
 | --- | --- | --- |
 | node\_id | Integer | The ID of the node to add. Use GET Node List to get a list that shows the ID of each node.<br />A node can belong to only one redundancy group.<br />If the node’s role will be “backup,” the node must have no channels associated with it. (You get a “Node is not reservable” error.)<br />To verify its channels, do a GET Channel List and verify if this node is listed as associated with a channel; if it is, do a PUT Channel on that channel so that the channel uses a different node. |
-| role | String | The initial role of the node in the redundancy group: “active” or “backup.”[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up-members-redundancy-group-add-node.html) |
+| role | String | The initial role of the node in the redundancy group: “active” or “backup.”+  A backup node automatically switches to "active" if it is selected as a failover node. It then remains active until you change its role (perhaps by doing PUT Member). <br />+  An active node never automatically changes its role.   |
 
 ### Response
 <a name="set-up-members-redundancy-group-add-node-http-request-response-response"></a>

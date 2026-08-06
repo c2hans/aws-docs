@@ -15,9 +15,9 @@ To help clarify the verification inheritance and email sending capabilities disc
 
 |   | Only domain verified | Only email address verified | Both domain & email address verified |
 | --- | --- | --- | --- |
-| Inheritance level | Subdomains and email addresses inherit verification from the parent domain. | Email address explicitly verified. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/creating-identities.html) |
+| Inheritance level | Subdomains and email addresses inherit verification from the parent domain. | Email address explicitly verified. | +  Subdomains inherit verification from the parent domain. <br />+  Email address explicitly verified.  |
 | Sending level | Email addresses limited to straightforward email sending. | Email address can be used in advanced sending\*. | Email address can be used in advanced sending\*. |
-| Displayed status | Console/API status: [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/creating-identities.html) | Console/API status: [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/creating-identities.html) | Console/API status: [See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/creating-identities.html) |
+| Displayed status | Console/API status: +  Domain/Subdomains = Verified <br />+  Email address = Unverified.  | Console/API status: +  Email address = Verified  | Console/API status: +  Domain/Subdomains = Verified <br />+  Email address = Verified.  |
 
 *\*Advanced sending includes using the email address with configuration sets, policy authorizations for delegate sending, and configurations that override the domain settings.*
 

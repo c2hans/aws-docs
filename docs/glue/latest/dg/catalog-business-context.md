@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/catalog-business-context.
 <a name="catalog-business-context"></a>
 
 **Note**
-Business context and semantic search is in preview for AWS Glue and is subject to change.
+Business context and semantic search are in preview for AWS Glue in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), and Europe (Ireland). This feature is subject to change.
 
 By enriching assets with additional context in AWS Glue Data Catalog, assets are more easily discoverable and understandable. Assets are automatically populated in the catalog when tables, views, and columns are registered. You enrich these assets with glossary terms, custom metadata fields, and skill assets. Using the new Glue Search API, you can discover data by semantic meaning in addition to exact keyword matching.
 
@@ -19,7 +19,6 @@ You can add the following types of context:
 <a name="catalog-business-context-limitations"></a>
 
 The following limitations apply during preview:
-+ **CMK-encrypted catalogs** – Data Catalogs encrypted with a customer managed key (AWS KMS CMK) are not supported during preview. The Search API returns an error for assets in CMK-encrypted catalogs.
 + There is no asset-level access control. Access is managed through IAM.
 
 **Topics**

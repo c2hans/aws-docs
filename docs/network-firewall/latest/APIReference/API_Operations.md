@@ -87,6 +87,7 @@ The following actions are supported:
 +  [UpdateProxyRule](API_UpdateProxyRule.md)
 +  [UpdateProxyRuleGroupPriorities](API_UpdateProxyRuleGroupPriorities.md)
 +  [UpdateProxyRulePriorities](API_UpdateProxyRulePriorities.md)
++  [UpdateProxySettings](API_UpdateProxySettings.md)
 +  [UpdateRuleGroup](API_UpdateRuleGroup.md)
 +  [UpdateSubnetChangeProtection](API_UpdateSubnetChangeProtection.md)
 +  [UpdateTLSInspectionConfiguration](API_UpdateTLSInspectionConfiguration.md)

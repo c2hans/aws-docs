@@ -29,4 +29,4 @@ Depending on what actions you have taken on it, your file system will have one o
 | CREATING | Amazon FSx is creating a new file system. |
 | DELETING | Amazon FSx is deleting an existing file system. |
 | MISCONFIGURED | The file system is in a misconfigured but recoverable state. |
-| FAILED |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/viewing-file-system.html)  |
+| FAILED |  1.  The file system has failed and Amazon FSx can't recover it. <br />2.  When creating new file system, Amazon FSx was unable to create a new file system.   |

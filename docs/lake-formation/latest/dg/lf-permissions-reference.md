@@ -506,7 +506,7 @@ This permission applies only to data in Amazon S3, and not to data in other data
 
 | Permission | Granted on this resource | Grantee also needs |
 | --- | --- | --- |
-| SELECT |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/lf-permissions-reference.html)  | (No additional IAM permissions are needed if the location is registered.) |
+| SELECT |  +  `TABLE`   | (No additional IAM permissions are needed if the location is registered.) |
 
 A principal with this permission can view a table in the Data Catalog, and can query the underlying data in Amazon S3 at the location specified by the table. The principal can view the table in the Lake Formation console and retrieve information about the table with the AWS Glue API. If column filtering was applied when this permission was granted, the principal can view the metadata only for the included columns and can query data only from the included columns.
 

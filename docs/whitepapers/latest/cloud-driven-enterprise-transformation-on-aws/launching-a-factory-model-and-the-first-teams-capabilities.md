@@ -29,7 +29,7 @@ AWS does not recommend “cherry picking” easy applications across numerous te
 
 |  Traditional view  |  Modern view  |
 | --- | --- |
-|  Try to develop a detailed plan for the entire migration (all applications all waves) before starting. [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/launching-a-factory-model-and-the-first-teams-capabilities.html) |  Activate a “team-based” approach. [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/launching-a-factory-model-and-the-first-teams-capabilities.html) |
+|  Try to develop a detailed plan for the entire migration (all applications all waves) before starting. +   Waterfall process (complete all designs before starting migrations)  <br />+   Sequential delivery (hand-offs) of infrastructure build, middleware configuration, code deployment, network configuration, and testing  <br />+   Architecture teams operate separately from engineering, test, networking, and security   |  Activate a “team-based” approach. +   Use migration to activate team capabilities  <br />+   Reduce complexity by accelerating teams / portfolios through migration  <br />+   Empowered teams with guardrails  <br />+   Integrated two-pizza team design through cutover (Full stack product team or industrialized deployment for non-critical applications)  <br />+   Sprint-based collaboration via rapid iteration through consistent dev, pre-production / QA, and production build and cutover   |
 
  **Deploy a “factory model” to accelerate your cloud-based business transformation**
 

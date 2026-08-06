@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 # Create and manage registries
 <a name="registry-create-manage"></a>
 
-**Upcoming namespace migration**
- AWS Agent Registry is currently in public preview under the bedrock-agentcore namespace. Starting August 6, 2026, the service moves to the agent-registry namespace. If you use AWS Agent Registry, you must update your endpoints, IAM policies, SDK clients, CLI scripts, and registry data. For more information about migrating from public preview, see [Comprehensive registry migration guide](registry-faq.md).
+**Migration Now Open**
+ AWS Agent Registry has launched under the new `agent-registry` namespace. Support for the public preview `bedrock-agentcore` namespace will be discontinued on September 17, 2026. For migration instructions, see [Comprehensive registry migration guide](registry-faq.md).
 
 ## Create a registry
 <a name="registry-create"></a>
@@ -14,19 +14,39 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 ### Console
 <a name="registry-create-console"></a>
 
-1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
+**Example**
 
-1. In the navigation pane, under **Discover** , choose **Registry**.
+1. Open the [AWS Agent Registry console](https://console.aws.amazon.com/agent-registry/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
 
 1. In the **Registries** section, choose **Create registry**.
 
-1. For **Name** , enter a name for your registry. The name must start with a letter or digit. Valid characters are a-z, A-Z, 0-9, \_ (underscore), - (hyphen), . (dot), and / (forward slash). The name can have up to 64 characters.
+1. For **Name**, enter a name for your registry. The name must start with a letter or digit. Valid characters are a-z, A-Z, 0-9, \_ (underscore), - (hyphen), . (dot), and / (forward slash). The name can have up to 64 characters.
+
+1. (Optional) Expand **Additional details** and enter a **Description** (1–4,096 characters).
+
+1. (Optional) Expand **Discovery Authorization** to configure how consumers authorize when discovering records in the registry — searching, browsing the approved-record catalog, batch-getting approved records, and invoking the registry’s MCP endpoint (Inbound Authorization). Choose ** AWS IAM** to use standard AWS credentials, or **JSON Web tokens (JWT)** to use your corporate identity provider credentials. If you choose JWT, you can either quick create with Cognito, or bring your own IdP by providing the discovery URL, audience, scope, custom claims and clients.
+
+1. Under **Record approval**, choose whether to enable **Auto-approval**. When auto-approval is off, a curator must review and approve each record before it becomes searchable.
+
+1. (Optional) Expand **Tags** to add tags to the registry. Tags are key-value pairs that help you categorize, search, and manage your registries. Each tag consists of a required key and an optional value.
+
+1. Choose **Create registry**.
+
+1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
+
+1. In the **Registries** section, choose **Create registry**.
+
+1. For **Name**, enter a name for your registry. The name must start with a letter or digit. Valid characters are a-z, A-Z, 0-9, \_ (underscore), - (hyphen), . (dot), and / (forward slash). The name can have up to 64 characters.
 
 1. (Optional) Expand **Additional details** and enter a **Description** (1–4,096 characters).
 
 1. (Optional) Expand **Search API Authorization** to configure how consumers authorize when searching the registry (Inbound Authorization). Choose ** AWS IAM** to use standard AWS credentials, or **JSON Web tokens (JWT)** to use your corporate identity provider credentials. If you choose JWT, you can either quick create with Cognito, or bring your own IdP by providing the discovery URL, audience, scope, custom claims and clients.
 
-1. Under **Record approval** , choose whether to enable **Auto-approval** . When auto-approval is off, a curator must review and approve each record before it becomes searchable.
+1. Under **Record approval**, choose whether to enable **Auto-approval**. When auto-approval is off, a curator must review and approve each record before it becomes searchable.
 
 1. Choose **Create registry**.
 
@@ -40,6 +60,15 @@ For JWT enabled registries, At least one **JWT authorization configuration** fie
 
  **IAM-based registry:**
 
+**Example**
+
+```
+aws agent-registry-control create-registry \
+  --name "MyRegistry" \
+  --description "Production registry" \
+  --region us-east-1
+```
+
 ```
 aws bedrock-agentcore-control create-registry \
   --name "MyRegistry" \
@@ -48,6 +77,15 @@ aws bedrock-agentcore-control create-registry \
 ```
 
  **JWT-based registry:**
+
+**Example**
+
+```
+aws agent-registry-control create-registry \
+  --name "MyOAuthRegistry" \
+  --discovery-configuration '{"authorizerType": "CUSTOM_JWT", "authorizerConfiguration": {"customJWTAuthorizer": {"discoveryUrl": "https://cognito-idp.us-east-1.amazonaws.com/<poolId>/.well-known/openid-configuration", "allowedClients": ["<appClientId>"]}}}' \
+  --region us-east-1
+```
 
 ```
 aws bedrock-agentcore-control create-registry \
@@ -62,6 +100,20 @@ aws bedrock-agentcore-control create-registry \
 
  **IAM-based registry:**
 
+**Example**
+
+```
+import boto3
+
+client = boto3.client('agent-registry-control')
+
+response = client.create_registry(
+    name='MyRegistry',
+    description='Production registry'
+)
+print(response['registryArn'])
+```
+
 ```
 import boto3
 
@@ -75,6 +127,28 @@ print(response['registryArn'])
 ```
 
  **JWT-based registry:**
+
+**Example**
+
+```
+import boto3
+
+client = boto3.client('agent-registry-control')
+
+response = client.create_registry(
+    name='MyOAuthRegistry',
+    discoveryConfiguration={
+        'authorizerType': 'CUSTOM_JWT',
+        'authorizerConfiguration': {
+            'customJWTAuthorizer': {
+                'discoveryUrl': 'https://cognito-idp.us-east-1.amazonaws.com/<poolId>/.well-known/openid-configuration',
+                'allowedClients': ['<appClientId>']
+            }
+        }
+    }
+)
+print(response['registryArn'])
+```
 
 ```
 import boto3
@@ -100,9 +174,35 @@ print(response['registryArn'])
 ### Console
 <a name="registry-list-console"></a>
 
+**Example**
+
+1. Open the [AWS Agent Registry console](https://console.aws.amazon.com/agent-registry/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
+
+1. The **Registries** table displays all registries in your account with the following columns:
+
+   1.  **Name** — The registry name (linked to the detail page).
+
+   1.  **Description** — The registry description, if provided.
+
+   1.  **Auth type** — The inbound authorization method (AWS\_IAM or CUSTOM\_JWT).
+
+   1.  **Status** — The current status (Creating, Ready, Updating, Deleting, or a failure state).
+
+   1.  **ARN** — The registry Amazon Resource Name.
+
+   1.  **Created** — The creation timestamp.
+
+   1.  **Last updated** — The last modification timestamp.
+
+1. Use the **Find registries** search bar to filter by name.
+
+1. Use the pagination controls to navigate through results.
+
 1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
 
-1. In the navigation pane, under **Discover** , choose **Registry**.
+1. In the navigation pane, under **Discover**, choose **Registry**.
 
 1. The **Registries** table displays all registries in your account with the following columns:
 
@@ -127,6 +227,13 @@ print(response['registryArn'])
 ### AWS CLI
 <a name="registry-list-cli"></a>
 
+**Example**
+
+```
+aws agent-registry-control list-registries \
+  --region us-east-1
+```
+
 ```
 aws bedrock-agentcore-control list-registries \
   --region us-east-1
@@ -134,6 +241,18 @@ aws bedrock-agentcore-control list-registries \
 
 ### AWS SDK
 <a name="registry-list-sdk"></a>
+
+**Example**
+
+```
+import boto3
+
+client = boto3.client('agent-registry-control')
+
+response = client.list_registries()
+for registry in response['registries']:
+    print(f"{registry['name']} - {registry['status']} - {registry['registryArn']}")
+```
 
 ```
 import boto3
@@ -151,9 +270,33 @@ for registry in response['registries']:
 ### Console
 <a name="registry-view-console"></a>
 
+**Example**
+
+1. Open the [AWS Agent Registry console](https://console.aws.amazon.com/agent-registry/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
+
+1. Choose the registry name from the **Registries** table.
+
+1. The registry detail page displays the following collapsible sections:
+
+   1.  **Registry details** — Displays Name, Status, Description, Auto-approval (Enabled or Disabled), Registry ARN, Last updated date, and Created date.
+
+   1.  **Registry records** — Shows status summary counters (Total submitted, Pending approval, Approved, Deprecated, Rejected) and a records table for records submitted to this registry. From here you can create, view, or manage records.
+
+   1.  **Discovery Authorization** (Inbound Authorization) — Shows the current authorization type (AWS\_IAM or CUSTOM\_JWT) and, for JWT-authorized registries, the JWT authorizer configuration.
+
+   1.  **Sample code** — Provides sample code for common operations (create, approve, list, and discover records) that you can copy and adapt.
+
+   1.  **Tags** — Shows the tags associated with the registry as a key-value table. To add, remove, or modify tags, choose **Edit** in this section to open the **Edit tags** page.
+
+1. To modify the registry, choose **Edit**. To delete the registry, choose **Delete**.
+
+1. To search or browse approved records in this registry, choose **Record directory** in the top-right of the page (or in the navigation pane). See [Get started with Agent Registry](registry-get-started.md) for the discovery walkthrough.
+
 1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
 
-1. In the navigation pane, under **Discover** , choose **Registry**.
+1. In the navigation pane, under **Discover**, choose **Registry**.
 
 1. Choose the registry name from the **Registries** table.
 
@@ -172,6 +315,14 @@ for registry in response['registries']:
 ### AWS CLI
 <a name="registry-view-cli"></a>
 
+**Example**
+
+```
+aws agent-registry-control get-registry \
+  --registry-id "<registryId>" \
+  --region us-east-1
+```
+
 ```
 aws bedrock-agentcore-control get-registry \
   --registry-id "<registryId>" \
@@ -180,6 +331,21 @@ aws bedrock-agentcore-control get-registry \
 
 ### AWS SDK
 <a name="registry-view-sdk"></a>
+
+**Example**
+
+```
+import boto3
+
+client = boto3.client('agent-registry-control')
+
+response = client.get_registry(
+    registryId='<registryId>'
+)
+print(f"Name: {response['name']}")
+print(f"Status: {response['status']}")
+print(f"ARN: {response['registryArn']}")
+```
 
 ```
 import boto3
@@ -200,30 +366,62 @@ print(f"ARN: {response['registryArn']}")
 ### Console
 <a name="registry-update-console"></a>
 
-1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
+**Example**
 
-1. In the navigation pane, under **Discover** , choose **Registry**.
+1. Open the [AWS Agent Registry console](https://console.aws.amazon.com/agent-registry/home?region=us-east-1#).
 
-1. Select the radio button next to the registry you want to edit, then choose **Edit** . Alternatively, choose the registry name and then choose **Edit**.
+1. In the navigation pane, under **Discover**, choose **Registry**.
+
+1. Select the radio button next to the registry you want to edit, then choose **Edit**. Alternatively, choose the registry name and then choose **Edit**.
 
 1. On the **Edit registry** page, update any of the following:
 
    1.  **Name** — Change the registry name (same naming rules as creation).
 
-   1.  **Description** — Under **Additional details** , update or add a description.
+   1.  **Description** — Under **Additional details**, update or add a description.
+
+   1.  **Record approval** — Toggle **Auto-approval** on or off. Changes only affect records submitted after the update.
+
+   1.  **Discovery Authorization** — For JWT-authorized registries, update the JWT authorizer configuration (allowed clients, audiences, scopes, or custom claims). The inbound authorization type itself (IAM or JWT) cannot be changed after the registry is created.
+
+1. Choose **Save changes**.
+
+1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
+
+1. Select the radio button next to the registry you want to edit, then choose **Edit**. Alternatively, choose the registry name and then choose **Edit**.
+
+1. On the **Edit registry** page, update any of the following:
+
+   1.  **Name** — Change the registry name (same naming rules as creation).
+
+   1.  **Description** — Under **Additional details**, update or add a description.
 
    1.  **Record approval** — Toggle **Auto-approval** on or off. Changes only affect records submitted after the update.
 
 1. Choose **Save changes**.
 
 **Note**
+Tags are not edited from the **Edit registry** page. To modify tags, go to the registry detail page, choose **Edit** in the **Tags** section, add or remove tags on the **Edit tags** page, and choose **Save changes**. (Tags are only supported in the AWS Agent Registry console.)
+
+**Note**
 Updating auto-approval config from OFF to ON only affects records submitted after the change. Existing records already 'Pending Approval' are not affected and must still be approved or rejected by calling UpdateRegistryRecordStatus API. Changing the config from ON to OFF only affects records that are published to 'Pending Approval' after the change is made.
 
 **Note**
-The discovery URL (for a JWT authorized registry) cannot be changed after the registry is created. The inbound authorization type (IAM or JWT) cannot be changed after the registry is created.
+The inbound authorization type (IAM or JWT) and the JWT discovery URL cannot be changed after the registry is created. For JWT-authorized registries, you can only update the authorizer configuration (allowed clients, audiences, scopes, custom claims).
 
 ### AWS CLI
 <a name="registry-update-cli"></a>
+
+**Example**
+
+```
+aws agent-registry-control update-registry \
+  --registry-id "<registryId>" \
+  --description '{"optionalValue": "Updated description"}' \
+  --region us-east-1
+```
 
 ```
 aws bedrock-agentcore-control update-registry \
@@ -234,6 +432,20 @@ aws bedrock-agentcore-control update-registry \
 
 ### AWS SDK
 <a name="registry-update-sdk"></a>
+
+**Example**
+
+```
+import boto3
+
+client = boto3.client('agent-registry-control')
+
+response = client.update_registry(
+    registryId='<registryId>',
+    description={'optionalValue': 'Updated description'}
+)
+print(f"Updated: {response['name']} - Status: {response['status']}")
+```
 
 ```
 import boto3
@@ -253,9 +465,11 @@ print(f"Updated: {response['name']} - Status: {response['status']}")
 ### Console
 <a name="registry-delete-console"></a>
 
-1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
+**Example**
 
-1. In the navigation pane, under **Discover** , choose **Registry**.
+1. Open the [AWS Agent Registry console](https://console.aws.amazon.com/agent-registry/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
 
 1. Select the radio button next to the registry you want to delete, then choose **Delete**.
 
@@ -265,10 +479,30 @@ print(f"Updated: {response['name']} - Status: {response['status']}")
 
 1. Choose **Delete**.
 
-The registry status changes to **Deleting** . A success banner confirms when deletion completes.
+1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/home?region=us-east-1#).
+
+1. In the navigation pane, under **Discover**, choose **Registry**.
+
+1. Select the radio button next to the registry you want to delete, then choose **Delete**.
+
+1. In the confirmation dialog, review the warning: you must first delete all registry records before deleting the registry.
+
+1. Type **delete** in the confirmation field.
+
+1. Choose **Delete**.
+
+The registry status changes to **Deleting**. A success banner confirms when deletion completes.
 
 ### AWS CLI
 <a name="registry-delete-cli"></a>
+
+**Example**
+
+```
+aws agent-registry-control delete-registry \
+  --registry-id "<registryId>" \
+  --region us-east-1
+```
 
 ```
 aws bedrock-agentcore-control delete-registry \
@@ -278,6 +512,19 @@ aws bedrock-agentcore-control delete-registry \
 
 ### AWS SDK
 <a name="registry-delete-sdk"></a>
+
+**Example**
+
+```
+import boto3
+
+client = boto3.client('agent-registry-control')
+
+response = client.delete_registry(
+    registryId='<registryId>'
+)
+print(f"Status: {response['status']}")  # DELETING
+```
 
 ```
 import boto3

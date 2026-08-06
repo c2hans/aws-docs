@@ -9,7 +9,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 # Working with the updated console experience
 <a name="working-with-console"></a>
 
- AWS WAF offers two options for using the console:
+ AWS WAF offers 2 options for using the console:
 
  The **new console** aims to simplify web ACL configuration process required by standard console workflows. You can use guided workflows to simplify the web ACL creation and management process through a protection pack (web ACL). A protection pack (web ACL) makes it easier to use and manage web ACLs in the console, but is not functionally different from a web ACL. In addition to the improved protection configuration process, the new console offers enhanced visibility into your protections through security dashboards, making it easier to monitor your security posture within the AWS WAF console.
 

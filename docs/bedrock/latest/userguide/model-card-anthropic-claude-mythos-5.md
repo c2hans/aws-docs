@@ -42,7 +42,7 @@ This model is a Preview and is made available to you as a "Beta Service" as defi
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-mythos-5.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-mythos-5.html)  |
+|  + [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)  |  + [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)<br />+ [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)  |
 
 ***Prompt caching***
 
@@ -62,9 +62,11 @@ For pricing, please refer to the [Amazon Bedrock Pricing](https://aws.amazon.com
 
 Use the following model IDs and endpoint URLs to access this model programmatically. For more information about the available APIs and endpoints, see [APIs supported](https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html) and [Endpoints supported](https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html).
 
-| **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Global** |
-| --- | --- | --- | --- |
-| bedrock-mantle | anthropic.claude-mythos-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A |
+| **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
+| --- | --- | --- | --- | --- |
+| bedrock-mantle | anthropic.claude-mythos-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A | N/A |
+
+*For example, if region is us-east-1 (N. Virginia), then the bedrock-mantle endpoint URL will be "https://bedrock-mantle.us-east-1.api.aws/anthropic/v1/messages".*
 
 ## Service Tiers
 <a name="model-card-anthropic-claude-mythos-5-tiers"></a>
@@ -80,7 +82,7 @@ Amazon Bedrock offers multiple service tiers to match your workload requirements
 
 ***Regional availability at a glance***
 
-Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (US, EU, etc.) for higher throughput while respecting data residency, and **Global Cross-Region** routes anywhere worldwide for maximum throughput when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
+Amazon Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (such as US, EU, and APAC) while respecting data residency, and **Global Cross-Region** routes anywhere worldwide when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
 
 | **Region** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |

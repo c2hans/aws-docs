@@ -10,6 +10,17 @@ We recommend subscribing to the RSS feed so updates to these notes are delivered
 ## July 2026 Updates
 <a name="jul26-release-notes"></a>
 
+### Connect Customer now supports bulk user management enhancements
+<a name="jul26-bulk-user-management"></a>
+
+With Connect Customer, you can now reskill your workforce during volume spikes without repetitive individual edits or custom API scripting. Make granular bulk edits to proficiencies, contact handling settings, and tags, by using add, remove, or partial replace operations.
+
+On the **User management** page, select all users with a single click, choose an attribute, and submit your changes. Edits run in the background while you queue more batches, and the **Activity** page tracks operations with stop, resume, and retry controls.
+
+For more information, see [Edit users in bulk](edit-users-in-bulk.md).
+
+Available at no additional cost in all AWS Regions where Connect Customer is offered.
+
 ### Connect Customer now supports external recording analytics
 <a name="jul26-external-recording-analytics"></a>
 
@@ -544,7 +555,7 @@ For more information, see [Evaluate agent and self-service interaction performan
 ### Support for third-party speech-to-text and text-to-speech AI models for end-customer self-service
 <a name="third-party-speech-providers"></a>
 
-Connect Customer now supports third-party speech providers for end-customer self-service, giving you greater flexibility in how you deliver voice experiences. You can integrate Deepgram for speech-to-text and ElevenLabs for text-to-speech directly within Connect Customer, using them together with Connect Customer's native speech capabilities, built-in orchestration, analytics, and compliance controls. This feature is available with Connect Customer unlimited AI and in all commercial AWS regions where Connect Customer is offered.
+Connect Customer now supports third-party speech providers for end-customer self-service, giving you greater flexibility in how you deliver voice experiences. You can integrate Deepgram for speech-to-text and ElevenLabs for text-to-speech directly within Connect Customer, using them together with Connect Customer's native speech capabilities, built-in orchestration, analytics, and compliance controls. This feature is available in Connect Customer instances and in all commercial AWS regions where Connect Customer is offered.
 
 For more information, see [Configure third-party speech-to-text (STT) providers](configure-third-party-stt.md).
 

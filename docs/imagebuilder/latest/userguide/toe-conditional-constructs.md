@@ -30,10 +30,10 @@ if:
 
 | Key name | Required | Description |
 | --- | --- | --- |
-| conditional expression | Yes | The conditional expression can contain exactly one of the following types of operators at the top level.[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-conditional-constructs.html)<br />If your expression must satisfy multiple conditions, use a logical operator to specify your conditions. |
+| conditional expression | Yes | The conditional expression can contain exactly one of the following types of operators at the top level.+  **Comparison operator** – For a list of comparison operators, and information about how they work in AWSTOE component documents, see [Comparison operators](toe-comparison-operators.md). <br />+  **Logical operator** – Logical operators include `and`, `or`, and `not`, and operate on one or more comparison operators. For more information about how logical operators work in AWSTOE component documents, see [Logical operators](toe-logical-operators.md). <br />If your expression must satisfy multiple conditions, use a logical operator to specify your conditions. |
 | then | No | Defines the action to take if the conditional expression evaluates to `true`. |
 | else | No | Defines the action to take if the conditional expression evaluates to `false`. |
-| step action | Conditional | When you use `then` or `else`, you must specify one of the following step actions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-conditional-constructs.html) |
+| step action | Conditional | When you use `then` or `else`, you must specify one of the following step actions:+  **Abort** – AWSTOE marks the step as failed. <br />+  **Execute** – AWSTOE runs the step. <br />+  **Skip** – AWSTOE skips the step.  |
 
 **Example 1: Install package**
 The following example steps from an AWSTOE component document use logical operators to test a parameter value and run the appropriate package manager commands to install an application if the package is unzipped.

@@ -36,7 +36,7 @@ Integrate and build your 64-bit game servers with the server SDK for Amazon Game
   If you're using another game engine or development environment that the plugin doesn't support, get the server SDK for your programming language and add it to your game project.
 
   For version-specific information and install instructions, see the included readme files in each package.
-  + [Plugin for Unreal Engine](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unreal) – Built for use with Unreal Engine versions 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, and 5.6. Check version-specific readme files for Unreal support.
+  + [Plugin for Unreal Engine](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unreal) – Built for use with Unreal Engine versions 5.0, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, and 5.8. Check version-specific readme files for Unreal support.
     + [Plugin guide for Unreal Engine](unreal-plugin.md)
     + [C\+\+ (Unreal) server SDK 5.x for Amazon GameLift Servers -- Actions](integration-server-sdk5-unreal-actions.md)
   + [Plugin for Unity](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unity) – Built for use with LTS versions of Unity Editor 6.0, 2022.3, or 2021.3. It supports Unity's .NET Framework and .NET Standard profiles, with .NET Standard 2.1 and .NET 4.x. Check version-specific readmes for Unity support.

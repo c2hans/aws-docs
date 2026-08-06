@@ -29,7 +29,7 @@ The following table describes the type of input to create depending on the workf
 
 - **Yes (standard channel)**
   - **You want to set up this input for automatic input failover:** No / **Type of inputs to create:** One [regular CDI input](input-create-cdi-push.md).
-  - **You want to set up this input for automatic input failover:** Yes / **Type of inputs to create:** Two sets of partner inputs: [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/feature-cdi-partner.html)
+  - **You want to set up this input for automatic input failover:** Yes / **Type of inputs to create:** Two sets of partner inputs: +  Two CDI inputs set up as one set of partner inputs. <br />+  Two more CDI inputs set up as another set of partner inputs.
 
 ## Rules for using partner CDI inputs
 <a name="cdi-input-partner-rules"></a>

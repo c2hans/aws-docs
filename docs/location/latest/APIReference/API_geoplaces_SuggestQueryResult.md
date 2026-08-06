@@ -11,14 +11,14 @@ The suggested query results.
 <a name="API_geoplaces_SuggestQueryResult_Contents"></a>
 
  ** QueryId **   <a name="location-Type-geoplaces_SuggestQueryResult-QueryId"></a>
-QueryId can be used to complete a follow up query through the SearchText API. The QueryId retains context from the original Suggest request such as filters, political view and language. See the SearchText API documentation for more details [SearchText API docs](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_SearchText.html). Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+QueryId can be used to complete a follow up query through the SearchText API. The QueryId retains context from the original Suggest request such as filters, political view and language. See the SearchText API documentation for more details [SearchText API docs](https://docs.aws.amazon.com/location/latest/APIReference/API_geoplaces_SearchText.html). If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 The fields `QueryText`, and `QueryID` are mutually exclusive.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 500.
 Required: No
 
  ** QueryType **   <a name="location-Type-geoplaces_SuggestQueryResult-QueryType"></a>
- The query type. Category queries will search for places which have an entry matching the given category, for example "doctor office". BusinessChain queries will search for instances of a given business. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The query type. Category queries will search for places which have an entry matching the given category, for example "doctor office". BusinessChain queries will search for instances of a given business. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Valid Values: `Category | BusinessChain`
 Required: No

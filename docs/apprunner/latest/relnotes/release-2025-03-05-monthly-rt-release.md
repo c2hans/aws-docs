@@ -26,5 +26,5 @@ The following table lists the changes included in this release.
 | **Platform** | **Update** |
 | --- | --- |
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-03-05-monthly-rt-release.html) |
-| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | No updates to language versions.<br />Package updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-03-05-monthly-rt-release.html) |
+| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | No updates to language versions.<br />Package updates:+  Updated SQLite to 3.49.1.  |
 | **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 18 to version 18.20.7.<br />No tools updates. |

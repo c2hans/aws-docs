@@ -21,4 +21,4 @@ The following table lists the Microsoft OneDrive data source connector entities 
 
 | Entity | Attributes | Field type |
 | --- | --- | --- |
-| File |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/onedrive-legacy-field-mappings.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/onedrive-legacy-field-mappings.html)  |
+| File |  +  createdBy <br />+  createdDateTime <br />+  lastModifiedBy <br />+  lastModifiedDateTime <br />+  name <br />+  parentReference <br />+  size <br />+  webUrl   |  +  String <br />+  Date <br />+  String <br />+  Date <br />+  String <br />+  String <br />+  Long <br />+  String   |

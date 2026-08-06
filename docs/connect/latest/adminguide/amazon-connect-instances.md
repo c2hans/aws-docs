@@ -12,9 +12,7 @@ The first step in setting up your Connect Customer contact center is to create a
 + When you sign up for Amazon Web Services (AWS), your AWS account is automatically signed up for all services in AWS, including Connect Customer. You are charged only for the services that you use. To create an AWS account, see [How/ do I create and activate an AWS account?](https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/)
 + To allow a user to create an instance, ensure that they have the permissions granted by the **AmazonConnect\_FullAccess** policy.
 + For a list of the minimum IAM permissions required to create an instance, see [Required permissions for using custom IAM policies to manage access to the Connect Customer console](security-iam-amazon-connect-permissions.md).
-+ By default when you create an Connect Customer instance, Next Generation Connect Customer is enabled. It's pricing model includes unlimited AI features in Connect Customer. It's an all-inclusive channel pricing model that covers all optimization features for usage on your platform.
-
-  After you initially create your Connect Customer instance, you can choose to disable this option and instead pay separately for channels and any optimization features you choose to use. For more information, see [Connect Customer](enable-nextgeneration-amazonconnect.md).
++ When you create an instance, it is a [Connect Customer](enable-nextgeneration-amazonconnect.md) instance, which has an all-inclusive channel pricing model that covers all optimization features for usage on your platform.
 + Connect Customer is not available to customers in India using Amazon Web Services through Amazon Web Services India Private Limited (AWS India). You will receive an error message if you try to create an instance in Connect Customer.
 + When you create an instance, you must decide how you want to manage users. **You can't change the identity management option after you create the instance**. For more information, see [Plan your identity management in Connect Customer](connect-identity-management.md).
 
@@ -137,9 +135,6 @@ For voice artifacts (analysis files and redacted audio), Contact Lens uses the r
 1. (Optional) To continue configuring your instance, choose **Get started** and then choose **Let's go**. If you prefer, you can access your instance and configure it later on. For more information, see [Next steps](#get-started-next-steps).
 
    If you chose to manage your users directly within Connect Customer or through an Directory Service directory, you can access the instance using its access URL. If you chose to manage your users through SAML-based authentication, you can access the instance using the IdP.
-
-**Important**
-Next Generation Connect Customer is now enabled. It provides Connect Customer with unlimited AI features in an all-inclusive pricing model. To switch to paying separately for channels and any optimization features you choose, [disable Next Generation Connect Customer](enable-nextgeneration-amazonconnect.md#how-to-disable-ac).
 
 ## Next steps
 <a name="get-started-next-steps"></a>

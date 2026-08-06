@@ -115,7 +115,7 @@ Pattern: `([0-9]{12}|\w{1,12})`
  ** [Title](#API_GetEngagement_ResponseSyntax) **   <a name="AWSPartnerCentral-GetEngagement-response-Title"></a>
 The title of the engagement. It provides a brief, descriptive name for the engagement that is meaningful and easily recognizable.
 Type: String
-Pattern: `(?s).{1,40}`
+Pattern: `(?s).{0,40}`
 
 ## Errors
 <a name="API_GetEngagement_Errors"></a>

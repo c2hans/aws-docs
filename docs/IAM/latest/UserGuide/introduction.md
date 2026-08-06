@@ -38,3 +38,5 @@ For information about the pricing of other AWS products, see the [Amazon Web Ser
 **Integration with other AWS services**
 
 IAM is integrated with many AWS services. For a list of AWS services that work with IAM and the IAM features the services support, see [AWS services that work with IAM](reference_aws-services-that-work-with-iam.md).
+
+To set up your AWS account and start creating identities, see [Getting started with IAM](getting-started.md).

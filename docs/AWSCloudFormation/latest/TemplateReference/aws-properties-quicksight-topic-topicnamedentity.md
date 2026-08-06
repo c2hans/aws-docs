@@ -55,7 +55,7 @@ The description of the named entity.
 *Required*: No
 *Type*: String
 *Minimum*: `0`
-*Maximum*: `256`
+*Maximum*: `500`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `EntityName`  <a name="cfn-quicksight-topic-topicnamedentity-entityname"></a>

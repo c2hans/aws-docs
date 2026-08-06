@@ -20,9 +20,9 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Product website** | [vFunction](https://vfunction.com/) |
 | **Product certifications**<br />[AWS Competency Program](https://aws.amazon.com/partners/offerings/) competencies and other certifications | AWS Migration and Modernization – Discovery, Planning, and Recommendation |
 | **AWS Marketplace**<br />Link to subscribe or download | [vFunction on AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id=430fc1df-d408-4dcb-bfa4-1e84756cb963) |
-| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | Servers deployed on AWS (customer VPC)Servers deployed on premises in customer environment |
+| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | + Servers deployed on AWS (customer VPC)<br />+ Servers deployed on premises in customer environment |
 | **Compliance** | Not available |
-| **Service model** | Full self-service – Deployment, management, and maintenance can be done by the customer or end-userSelf-service with vendor support – Deployment, management, and maintenance can be done by customer or end-user with the option of vendor supportManaged service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
+| **Service model** | + Full self-service – Deployment, management, and maintenance can be done by the customer or end-user<br />+ Self-service with vendor support – Deployment, management, and maintenance can be done by customer or end-user with the option of vendor support<br />+ Managed service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
 | **Pricing model** | Subscription |
 
 ## Discovery, planning, and recommendation capabilities
@@ -32,14 +32,14 @@ AWS Partner product descriptions and reported qualifications, including complian
 |
 | Category | Product capabilities |
 | --- |--- |
-| **Discovery method**<br />The ability to support one or more of the following discovery methods:Agentless – Uses protocols or interfaces such as SNMP or WMIAgent-based – Requires installation of software on the source resources, such as Linux or Windows serversLogin-based – Uses protocols, such as SSH and RDP, to log in to the source servers | Agent-based |
+| **Discovery method**<br />The ability to support one or more of the following discovery methods:+ Agentless – Uses protocols or interfaces such as SNMP or WMI<br />+ Agent-based – Requires installation of software on the source resources, such as Linux or Windows servers<br />+ Login-based – Uses protocols, such as SSH and RDP, to log in to the source servers | Agent-based |
 | **Resources discoverable**<br />The ability to discover servers, databases, storage systems, network devices, software processes, containers, and mainframes | Software processes |
-| **Operating systems discoverable** | WindowsLinux |
+| **Operating systems discoverable** | + Windows<br />+ Linux |
 | **Other resources discoverable** | Custom software applications, business logic |
 | **Discovery of resource profiles**<br />The ability to discover the CPU family (such as x86 or RISC/PowerPC), number of CPU cores, memory size, number of disks, storage size, IOPS, network interfaces, or bandwidth | Not available |
 | **Resource utilization data collection**<br />The ability to collect time-series utilization data, such peak, average, median, standard deviation, IOPS, throughput, percentile with sampling interval of 5 minutes, and minimum sampling duration of 1 month | Not available |
-| **Application dependency level**<br />The ability to discover application dependency and export dependency data:Application and server dependency – Individual servers and dependencies that form an applicationApplication and software process dependency – Individual software processes, configurations, and dependencies that form an applicationApplication and code dependency – Individual programming code, configurations, and dependencies that form an application | Application and code dependency |
-| **Visualization level**<br />The ability to provide multiple-level visualization of applications:All resource and applications – An entire on-premises or source environment with all resources and applicationsSingle application – A single application across its resources, end to endSingle application and its software processes – Individual software processes and dependencies that form an applicationSingle application and its programming code – Individual programming code and dependencies that form an application | Single application and its programming code |
+| **Application dependency level**<br />The ability to discover application dependency and export dependency data:+ Application and server dependency – Individual servers and dependencies that form an application<br />+ Application and software process dependency – Individual software processes, configurations, and dependencies that form an application<br />+ Application and code dependency – Individual programming code, configurations, and dependencies that form an application | Application and code dependency |
+| **Visualization level**<br />The ability to provide multiple-level visualization of applications:+ All resource and applications – An entire on-premises or source environment with all resources and applications<br />+ Single application – A single application across its resources, end to end<br />+ Single application and its software processes – Individual software processes and dependencies that form an application<br />+ Single application and its programming code – Individual programming code and dependencies that form an application | Single application and its programming code |
 | **Database details discovery, source database system** | Runtime metrics (for example, server memory usage, client connections, transactions, batch requests) |
 | **Storage details discovery**<br />The ability to discover storage details, such as systems, types, capacity, configuration, utilization, and object metadata | Not available |
 | **Storage systems discoverable**<br />The ability to discovery storage systems, such as EMC Isilon, EMC VMAX, Hitachi Vantara, HPE 3PAR, and Pure Storage | Not available |
@@ -51,7 +51,7 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **License discovery** | Not available |
 | **Data sovereignty support**<br />The ability to keep discovered data within a specific geographic region | Available |
 | **Data export ability**<br />The ability to export the discovered data into a usable format, such as CSV or JSON | Available |
-| **Code analysis**<br />The ability to support static and dynamic code analysis, optionally identifying:Deprecated codeSecurity concerns in codeResilience concerns in code | Deprecated codeResilience concerns in codeScalability, engineering velocity, technical debt |
+| **Code analysis**<br />The ability to support static and dynamic code analysis, optionally identifying:+ Deprecated code<br />+ Security concerns in code<br />+ Resilience concerns in code | + Deprecated code<br />+ Resilience concerns in code<br />+ Scalability, engineering velocity, technical debt |
 | **Pipeline integration**<br />The ability to integrate with CI/CD pipelines for continuous code analysis | Available |
 | **Service discovery, mapping**<br />The ability to automate service discovery mapping, which identifies the underlying services, dependencies, and communication patterns (including to external resources, such as SaaS providers) | Available |
 | **Service discovery, recommendations**<br />The ability to suggest optimizations for discovered services | Available |

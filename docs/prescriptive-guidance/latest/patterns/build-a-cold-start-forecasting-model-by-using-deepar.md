@@ -88,15 +88,15 @@ The code for this pattern is available in the GitHub [DeepAR-ColdProduct-Pattern
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Start your notebook environment. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-a-cold-start-forecasting-model-by-using-deepar.html)For more information, see [Launch Amazon SageMaker AI Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-launch.html) in the SageMaker AI documentation. | Data scientist |
+| Start your notebook environment. | 1. Sign in to the AWS Management Console, and open the SageMaker AI Studio home page. Then choose **Open Studio**.<br />2. In the left navigation pane, choose the **Studio Classic** icon in **Applications**. Then, choose the **Open** button on the **Application** list.For more information, see [Launch Amazon SageMaker AI Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-launch.html) in the SageMaker AI documentation. | Data scientist |
 
 ### Create and activate the notebook
 <a name="create-and-activate-the-notebook"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Set up your virtual environment for model training. | To set up your virtual environment for model training, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-a-cold-start-forecasting-model-by-using-deepar.html)<br />For more information, see [Upload Files to SageMaker AI Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-tasks-files.html) in the SageMaker AI documentation. | Data scientist |
-| Create and validate a forecasting model. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-a-cold-start-forecasting-model-by-using-deepar.html) | Data scientist |
+| Set up your virtual environment for model training. | To set up your virtual environment for model training, do the following:1. Download the `deepar_synthetic.ipynb` notebook from this pattern’s GitHub [repository](https://github.com/aws-samples/DeepAR-ColdProduct-Pattern) to your local machine.<br />2. In Amazon SageMaker AI Studio Classic, choose the **Upload Files** icon from the **Studio Classic** menu bar and select the downloaded notebook.<br />3. Choose the notebook in the **File Browser** in the left navigation pane. Follow the prompts to set up a notebook environment. Select the Data Science 3.0 Image and Python 3 Kernel.<br />For more information, see [Upload Files to SageMaker AI Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-tasks-files.html) in the SageMaker AI documentation. | Data scientist |
+| Create and validate a forecasting model. | + Follow the instructions in the notebook to create the training and testing data, train the model, and then invoke the model.<br />+ Observe how accurate the model’s predictions are when it’s provided with adequate historical data points. | Data scientist |
 
 ## Related resources
 <a name="build-a-cold-start-forecasting-model-by-using-deepar-resources"></a>

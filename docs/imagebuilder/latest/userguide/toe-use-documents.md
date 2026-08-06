@@ -181,17 +181,17 @@ The schema definitions for a phase are as follows.
 
 | Field | Description | Type | Required |
 | --- | --- | --- | --- |
-| name | Name of the phase. Phase names must conform to the following rules:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-use-documents.html) | String | Yes |
+| name | Name of the phase. Phase names must conform to the following rules:+ Phase names must contain only letters, numbers, hyphens, and underscores.<br />+ Phase names must be 3 to 128 characters long.<br />+ Phase names must be unique within a document.<br />+ When used with EC2 Image Builder, at least one phase must be named `build`, `validate`, or `test`. | String | Yes |
 | steps | List of the steps in the phase. | List  | Yes |
 
 The schema definitions for a step are as follows.
 
 | Field | Description | Type | Required | Default value |
 | --- | --- | --- | --- | --- |
-| name | User-defined name for the step. Step names must conform to the following rules:[See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-use-documents.html) | String |  |  |
+| name | User-defined name for the step. Step names must conform to the following rules:+ Step names must contain only letters, numbers, hyphens, and underscores.<br />+ Step names must be 3 to 128 characters long.<br />+ Step names must be unique within a phase. | String |  |  |
 | action | Keyword pertaining to the module that runs the step. | String |  |  |
 | timeoutSeconds | Number of seconds that the step runs before failing or retrying. <br />Also, supports -1 value, which indicates infinite timeout. 0 and other negative values are not allowed. | Integer | No | 7,200 sec (120 mins) |
-| onFailure | Specifies what the step should do in case of failure. Valid values are as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-use-documents.html) | String | No | Abort |
+| onFailure | Specifies what the step should do in case of failure. Valid values are as follows: +  **Abort** – Fails the step after the maximum number of attempts, and stops running. Sets status for phase and document to `Failed`. <br />+  **Continue** – Fails the step after the maximum number of attempts, and continues to run remaining steps. Sets status for phase and document to `Failed`. <br />+  **Ignore** – Sets the step to `IgnoredFailure` after the the maximum number of failed attempts, and continues to run remaining steps. Sets status for phase and document to `SuccessWithIgnoredFailure`.  | String | No | Abort |
 | maxAttempts | Maximum number of attempts allowed before failing the step. | Integer | No | 1 |
 | inputs | Contains parameters required by the action module to run the step. | Dict | Yes |  |
 

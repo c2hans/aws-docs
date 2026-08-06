@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-vie
 # Viewing encryption configuration in S3 Vectors
 <a name="s3-vectors-viewing-encryption"></a>
 
-After creating your vector bucket, you can verify the encryption configuration using the console. Alternatively, you can use the GetVectorBucket and GetIndex API operations via the AWS REST API, AWS CLI, or AWS SDKs.
+After creating your vector bucket, you can verify the encryption configuration using the console. Alternatively, you can use the GetVectorBucket and GetIndex API operations through the AWS REST API, AWS CLI, or AWS SDKs.
 
 ## Using the AWS CLI
 <a name="s3-vectors-viewing-encryption-cli"></a>

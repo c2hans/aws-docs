@@ -94,7 +94,7 @@ Amazon RDS for Oracle
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Prepare the Oracle GoldenGate adapters. | On the integration server, set up the Oracle GoldenGate adapter software. Do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-oracle-database-to-amazon-rds-for-oracle-by-using-oracle-goldengate-flat-file-adapters.html) | DBA |
+| Prepare the Oracle GoldenGate adapters. | On the integration server, set up the Oracle GoldenGate adapter software. Do the following:1. From [Oracle Software Delivery Cloud](https://edelivery.oracle.com/), download **ggs\_Adapters\_Linux\_x64.zip**.<br />2. Unzip **ggs\_Adapters\_Linux\_x64.zip**.<br />3. Run the following command to install the adapters:<pre>tar -xvf ggs_Adapters_Linux_x64.tar</pre> | DBA |
 | Configure the data pump. | On the source server, configure the data pump to transfer the trail file from the source server to the integration server. Create the data pump parameter file and trails file directory. For instructions, see [Configuring the Flat File Adapter](https://docs.oracle.com/goldengate/gg12201/gg-adapter/GADAD/GUID-DF13488D-E0E9-497C-8AFF-70B839DE4843.htm#GADAD424) (Oracle documentation). | DBA |
 
 ### Generate and migrate the flat files

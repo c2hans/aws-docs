@@ -90,7 +90,7 @@ The main disadvantage of offline shard reconfiguration is that your cluster is o
 ## Online resharding for Valkey or Redis OSS (cluster mode enabled)
 <a name="redis-cluster-resharding-online"></a>
 
-By using online resharding and shard rebalancing with ElastiCache Valkey 7.2 or newer, or Redis OSS version 3.2.10 or newer, you can scale your Valkey or Redis OSS (cluster mode enabled) cluster dynamically with no downtime. This approach means that your cluster can continue to serve requests even while scaling or rebalancing is in process.
+By using online resharding and shard rebalancing with ElastiCache Valkey and Redis OSS, you can scale your Valkey or Redis OSS (cluster mode enabled) cluster dynamically with no downtime. This approach means that your cluster can continue to serve requests even while scaling or rebalancing is in process.
 
 You can do the following:
 + **Scale out** – Increase read and write capacity by adding shards (node groups) to your Valkey or Redis OSS (cluster mode enabled) cluster (replication group).
@@ -105,7 +105,6 @@ You can't do the following:
   You can't specify the keyspace for shards independently. To do this, you must use the offline process.
 
 Currently, the following limitations apply to ElastiCache online resharding and rebalancing:
-+ These processes require Valkey 7.2 and newer or Redis OSS 3.2.10 or newer. For information on upgrading your engine version, see [Version Management for ElastiCache](VersionManagement.md).
 + There are limitations with slots or keyspaces and large items:
 
   If any of the keys in a shard contain a large item, that key isn't migrated to a new shard when scaling out or rebalancing. This functionality can result in unbalanced shards.

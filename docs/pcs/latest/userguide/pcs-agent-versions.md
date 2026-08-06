@@ -9,16 +9,16 @@ The AWS PCS agent software configures the EC2 instances AWS PCS launches for use
 
 | AWS PCS agent version | Release date | Release notes |
 | --- | --- | --- |
-| v1.5.0-1 | July 23, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.4.1-1 | July 15, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.4.0-1 | May 7, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.3.2-1 | March 10, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.3.1-1 | November 7, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.3.0-1 | November 3, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.2.2-1 | October 16, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.2.1-1 | June 19, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.2.0-1 | March 7, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.1.1-1 | December 13, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.1.0-1 | December 6, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.0.1-1 | October 22, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
-| v1.0.0-1 | August 28, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/pcs/latest/userguide/pcs-agent-versions.html)  |
+| v1.5.0-1 | July 23, 2026 |  +  Added support for node lifecycle actions. The agent runs custom scripts at the `nodeBootstrapped` and `nodeReady` stages of a compute node's lifecycle.   |
+| v1.4.1-1 | July 15, 2026 |  +  Added a symbolic link at `/etc/aws/pcs/scheduler/slurm` that points to `/etc/aws/pcs/scheduler/slurm-{{version}}`. The agent creates this link at runtime based on the version of the launched `slurmd`.   |
+| v1.4.0-1 | May 7, 2026 |  +  Added support for configuring and starting the `slurmd` daemon for any Slurm version that is compatible with the Slurm controller running on the AWS PCS cluster.   |
+| v1.3.2-1 | March 10, 2026 |  +  Fixed an issue where compute nodes running RHEL 8.10 or Rocky Linux 8.10 failed to bootstrap due to a faulty `curl` SigV4 backport in those operating systems.   |
+| v1.3.1-1 | November 7, 2025 |  +  Improved disablement of hyperthreading by using the `smt/control` sysfs parameter when available. <br />+  Fixed a potential race condition when the CPU is locked during boot while the PCS Agent attempts to disable hyperthreading. <br />+  Fixed issue that caused the `InstanceId` and `InstanceType` fields of the Slurm compute nodes to be populated with a timestamp and a hyphen, respectively.   |
+| v1.3.0-1 | November 3, 2025 |  +  Added support for new operating systems: Amazon Linux 2023, Ubuntu 24, RHEL 8, Rocky 8.   |
+| v1.2.2-1 | October 16, 2025 |  +  Allowed instance metadata queries to an IPv6 endpoint if an IPv4 endpoint isn't available. <br />+  Fixed an issue that prevented hyperthreading from being disabled if the kernel returned sibling threads as CPU ID ranges. <br />+  Fixed an issue that produced false failure messages in logs when hyperthreading was successfully disabled.   |
+| v1.2.1-1 | June 19, 2025 |  +  The AWS PCS agent now tries to start slurmd for up to 30 minutes if the controller isn't available. <br />+  Fixed an issue that produced an incorrect slurmd configuration if the response to RegisterComputeNodeGroupInstance contained a SLURMDBD endpoint.   |
+| v1.2.0-1 | March 7, 2025 |  +  Enabled support for IPv6 in `slurmd.conf`.   |
+| v1.1.1-1 | December 13, 2024 |  +  Fixed an issue where an incorrect Slurm version was reported in the call to RegisterComputeNodeGroupInstance. <br />+  Fixed an issue where instance metadata wasn't fetched correctly if a custom script in `/opt/aws/pcs/etc/bootstrap_hooks/` was executed.   |
+| v1.1.0-1 | December 6, 2024 |  +  Enabled custom scripts in `/opt/aws/pcs/etc/bootstrap_hooks/` to run before bootstrap steps.   |
+| v1.0.1-1 | October 22, 2024 |  +  Fixed an issue where NVIDIA devices didn't work when `slurmd` started on GPU-enabled instances.   |
+| v1.0.0-1 | August 28, 2024 |  +  Initial release.   |

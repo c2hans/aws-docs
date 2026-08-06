@@ -45,9 +45,9 @@ The following table lists the EventBridge resource types for which you can log d
 
 | Resource type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| EventBridge event bus |  AWS::Events::EventBus  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/logging-using-cloudtrail.html)  |
-| EventBridge partner event source |  AWS::Events::EventSource  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/logging-using-cloudtrail.html)  |
-| EventBridge endpoint |  AWS::Events::Endpoint  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/logging-using-cloudtrail.html)  |
+| EventBridge event bus |  AWS::Events::EventBus  |  +  [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html)   |
+| EventBridge partner event source |  AWS::Events::EventSource  |  +  [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutPartnerEvents.html)   |
+| EventBridge endpoint |  AWS::Events::Endpoint  |  +  [https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html) (when using a [global endpoint](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-global-endpoints.html); successful calls only, not populated on `AccessDenied`)   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/databrew/latest/APIReference/Welcome.htm
 
  AWS Glue DataBrew is a visual, cloud-scale data-preparation service. DataBrew simplifies data preparation tasks, targeting data issues that are hard to spot and time-consuming to fix. DataBrew empowers users of all technical levels to visualize the data and perform one-click data transformations, with no coding required.
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

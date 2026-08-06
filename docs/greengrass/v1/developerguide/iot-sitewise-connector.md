@@ -428,8 +428,8 @@ The following table describes the changes in each version of the connector.
 
 | Version | Changes | Date |
 | --- | --- | --- |
-| 12 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/iot-sitewise-connector.html)  | December 22, 2021 |
-| 11 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/iot-sitewise-connector.html)  | March 24, 2021 |
+| 12 |  +  This version contains bug fixes.   | December 22, 2021 |
+| 11 |  +  Support for strings that contain hidden or unprintable characters. Hidden and unprintable characters are automatically removed before the strings are sent to the AWS Cloud. <br />+  Fixed an issue that caused the IoT SiteWise gateway to infinitely retry invalid requests. <br />+  Fixed an issue that caused a corrupted checkpoint when the IoT SiteWise gateway was connected to a high-frequency data source. <br />+  Improved error messages to help troubleshoot the gateway configuration.   | March 24, 2021 |
 | 10 | Configured `StreamManager` to improve handling when the source connection is lost and re-established. This version also accepts OPC-UA values with a `ServerTimestamp` when no `SourceTimestamp` is available. | January 22, 2021 |
 | 9 | Support launched for custom Greengrass `StreamManager` stream destinations, OPC-UA deadbanding, custom scan mode and custom scan rate. Also includes improved performance during configuration updates made from the IoT SiteWise gateway. | December 15, 2020 |
 | 8 | Improved stability when the connector experiences intermittent network connectivity. | November 19, 2020 |

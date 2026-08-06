@@ -29,7 +29,6 @@ For clusters with durability enabled, data is persisted in a Multi-AZ transactio
 + [Replication with durability enabled](#replication-with-durability)
 + [Replication: Valkey and Redis OSS Cluster Mode Disabled vs. Enabled](Replication.Redis-RedisCluster.md)
 + [Minimizing downtime in ElastiCache by using Multi-AZ with Valkey and Redis OSS](AutoFailover.md)
-+ [How synchronization and backup are implemented](Replication.Redis.Versions.md)
 + [Synchronization and backup with durability](#sync-backup-durability)
 + [Creating a Valkey or Redis OSS replication group](Replication.CreatingRepGroup.md)
 + [Viewing a replication group's details](Replication.ViewDetails.md)

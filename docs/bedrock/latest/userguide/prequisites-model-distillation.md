@@ -12,7 +12,7 @@ Before you can begin, make sure that you understand access and security controls
 
 Before you can begin, make sure that you understand access and security controls for Model Distillation. You must have an IAM service role that can access the Amazon S3 bucket where you want to store your Model Distillation training and validation data. Amazon Bedrock also has options for encrypting and further securing your distillation jobs and artifacts. For more information, see [Model customization access and security](custom-model-job-access-security.md).
 
-To use a cross-region inference profile for a teacher model in a Distillation job, your service role must have permissions to invoke the inference profile in an AWS Region, in addition to the model in each Region in the inference profile. For a policy example, see [(Optional) Permissions to create a Distillation job with a cross-region inference profile](custom-model-job-access-security.md#custom-models-cross-region-inference-profile-permissions). For more information about cross-region inference, see [Increase throughput with cross-Region inference](cross-region-inference.md).
+To use a cross-region inference profile for a teacher model in a Distillation job, your service role must have permissions to invoke the inference profile in an AWS Region, in addition to the model in each Region in the inference profile. For a policy example, see [(Optional) Permissions to create a Distillation job with a cross-region inference profile](custom-model-job-access-security.md#custom-models-cross-region-inference-profile-permissions). For more information about cross-region inference, see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).
 
 ## Choose teacher and student models for distillation
 <a name="prequisites-teacher-student-models"></a>
@@ -29,7 +29,7 @@ The following section lists the supported models and regions for Amazon Bedrock 
 ### Supported models and Regions for Amazon Bedrock Model Distillation
 <a name="model-distillation-supported"></a>
 
-The following table shows which models and AWS Regions Amazon Bedrock Model Distillation supports for teacher and student models. If you use a Cross Region Inference Profile, only System Inference Profiles are supported for model distillation. For more information, see [Increase throughput with cross-Region inference](cross-region-inference.md).
+The following table shows which models and AWS Regions Amazon Bedrock Model Distillation supports for teacher and student models. If you use a Cross Region Inference Profile, only System Inference Profiles are supported for model distillation. For more information, see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).
 
 **Important**
 Distillation is not currently available for Anthropic models on Amazon Bedrock. There is no confirmed timeline for when Anthropic distillation will be restored. For currently supported teacher–student combinations, see the table below.

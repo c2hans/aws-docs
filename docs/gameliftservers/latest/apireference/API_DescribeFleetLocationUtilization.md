@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DescribeFleetLocationUtilization
 <a name="API_DescribeFleetLocationUtilization"></a>
 
- **This API works with the following fleet types:** EC2, Anywhere, Container
+ **This API works with the following fleet types:** EC2, Anywhere
 
 Retrieves current usage data for a fleet location. Utilization data provides a snapshot of current game hosting activity at the requested location. Use this operation to retrieve utilization information for a fleet's remote location or home Region (you can also retrieve home Region utilization by calling `DescribeFleetUtilization`).
 

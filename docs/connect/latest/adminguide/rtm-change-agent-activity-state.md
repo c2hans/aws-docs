@@ -28,7 +28,7 @@ When a manager changes an agent's activity status from **Missed** contact state 
 + **Multi-contact state scenario:** If the agent is currently **On Contact/Incoming** on any channel while having **Missed** contacts on other channels, the system populates the **Next activity** column when the manager selects any status except **Available**.
 
 **Note**
-The real-time metrics report and analytics dashboards do not display who changed the agent's status. This is available via [AWS CloudTrail](logging-using-cloudtrail.md) by looking at the PutUserStatus API logs.
+The real-time metrics report and analytics dashboards do not display who changed the agent's status. This is available through [AWS CloudTrail](logging-using-cloudtrail.md) by looking at the PutUserStatus API logs.
 
 ## Required permissions to change an agent's activity status
 <a name="rtm-change-agent-activity-state-permissions"></a>

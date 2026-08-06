@@ -23,4 +23,4 @@ The following table lists AWS-provided components that include new and updated f
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.9.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.2"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2022-12-22.html) |
+| Greengrass nucleus | Version 2.9.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.2"></a>**Bug fixes and improvements**<br />   Fixes an issue where configuring `interpolateComponentConfiguration` doesn't apply to an ongoing deployment.   Uses OSHI to list all child processes.    |

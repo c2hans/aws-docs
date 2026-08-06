@@ -51,8 +51,8 @@ On the surface, the engines look similar. Each of them is an in-memory key-value
 | Data types | Simple  | 2.8.x - Complex \* | 3.2.x and later - Complex  |
 | Complex  |
 | Data partitioning | Yes | No | Yes |
-| Cluster is modifiable | Yes | Yes | 3.2.10 and later - Limited |
-| Online resharding | No | No | 3.2.10 and later |
+| Cluster is modifiable | Yes | Yes | Yes - Limited |
+| Online resharding | No | No | Yes |
 | Encryption | in-transit 1.6.12 and later | 4.0.10 and later | 4.0.10 and later |
 | Data tiering | No | 6.2 and later | 6.2 and later |
 | Memory efficiencies | No | Valkey 8.0 and later | Valkey 8.0 and later |

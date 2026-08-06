@@ -12,15 +12,15 @@ These settings should not be confused with Amazon DocumentDB cluster parameter g
 
 | Parameter | Modifiable | Notes |
 | --- | --- | --- |
-| DBClusterIdentifier | Yes | Naming constraints:[See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-parameters.html) |
+| DBClusterIdentifier | Yes | Naming constraints:+  Length is [1—63] letters, numbers, or hyphens. <br />+  First character must be a letter. <br />+  Cannot end with a hyphen or contain two consecutive hyphens. <br />+  Must be unique for all clusters across Amazon RDS, Amazon Neptune, and Amazon DocumentDB per AWS account, per Region.  |
 | Engine | No | Must be docdb. |
 | BackupRetentionPeriod | Yes | Must be between [1-35] days. |
-| DBClusterParameterGroupName | Yes | Naming constraints:[See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-parameters.html) |
+| DBClusterParameterGroupName | Yes | Naming constraints:+  Length is [1—255] alphanumeric characters. <br />+  First character must be a letter. <br />+  Cannot end with a hyphen or contain two consecutive hyphens.  |
 | DBSubnetGroupName | No | After a cluster has been created, you cannot modify the cluster's subnet. |
 | EngineVersion | No | Value can be 5.0.0 (default), 4.0.0, or 3.6.0. |
 | KmsKeyId | No | If you choose to encrypt your cluster, you cannot change the AWS KMS key that you used to encrypt your cluster. |
-| MasterUsername | No | After a cluster has been created, you cannot modify the `MasterUsername`.<br />Naming constraints:[See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-parameters.html) |
-| MasterUserPassword | Yes | Constraints:[See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/db-cluster-parameters.html) |
+| MasterUsername | No | After a cluster has been created, you cannot modify the `MasterUsername`.<br />Naming constraints:+  Length is [1—63] alphanumeric characters. <br />+  First character must be a letter. <br />+  Cannot be a word reserved by the database engine.  |
+| MasterUserPassword | Yes | Constraints:+  Length is [8—100] printable ASCII characters. <br />+  Can use any printable ASCII characters except for the following:   **/** (forward slash)   **"** (double quotation mark)   **@** (at symbol)    |
 | Port | Yes | The port number applies to all instances in the cluster. |
 | PreferredBackupWindow | Yes |  |
 | PreferredMaintenanceWindow | Yes |  |

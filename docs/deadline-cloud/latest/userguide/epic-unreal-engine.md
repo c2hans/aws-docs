@@ -741,6 +741,21 @@ Deadline Cloud Perforce render job
 + **Path resolution**: Environment variables reference Perforce workspace paths.
 + **Dependency collection**: Automatic collection and sync of Perforce-tracked assets.
 
+### How Perforce sync scales for production projects
+<a name="unreal-engine-p4-sync-at-scale"></a>
+
+Production Unreal Engine projects can reach hundreds of gigabytes across tens of thousands of files. The Perforce integration keeps sync time proportional to what changed rather than to the size of the project:
+
+Jobs are pinned to a changelist
+At submission, the submitter sets the `PerforceChangelistNumber` job parameter to the changelist your workspace has synced. Every task in the job renders against that same revision, so your job stays reproducible even when artists submit new changes while it runs. Workers can start a task only after the pinned changelist is available on the Perforce server they sync from.
+
+Workers reuse a stable client workspace
+Each worker creates its Perforce client workspace under a persistent root directory. It records the pairing in a `workspace_info.json` registry file stored with the workspace. A replacement worker that receives the same storage reads the registry and reuses the existing client. It doesn't create a new workspace. Because Perforce tracks the have-list on the server under the client name, a normal sync then downloads only the file revisions that changed since the last job.
+
+To benefit from client workspace reuse on a service-managed fleet, enable [persistent storage](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/volumes.html) so the volume holding the synced workspace is reattached to future workers.
+
+If the network path between your fleet's Region and your Perforce server has low throughput or high latency, a Perforce edge server in the fleet's Region can act as a regional cache for depot data. For more information, see [Perforce source control](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/architecture-guidance.html#perforce-asset-access) in the *Deadline Cloud Developer Guide*.
+
 ### Setting up Perforce render job components
 <a name="unreal-engine-p4-setup-components"></a>
 
@@ -842,7 +857,7 @@ Set up an OpenJD render job that orchestrates the entire rendering workflow.
    **Parameter configuration guidelines**:
    + **Auto-populated parameters**: Leave these empty - they're filled automatically during job submission.
    + **Manual parameters**: Review defaults and adjust based on your specific requirements.
-   + **ChunkSize**: Start with 1, increase for better performance with simple shots.
+   + **ShotsPerTask**: Start with 1, increase for better performance with simple shots.
 ![Parameter Definition properties for the Perforce render job data asset, listing ProjectRelativePath, ProjectName, PerforceChangelistNumber, PerforceWorkspaceSpecificationTemplate, MrqJobDependenciesDescriptor, ExtraCmdArgs, ExtraCmdArgsFile, Executable, CondaPackages, CondaChannels, and ChunkSize fields.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/unreal-engine-p4-job-parameter-definition.png)
 
 1. **Configure environments** (in this exact order):
@@ -852,6 +867,24 @@ Environment order is essential for proper dependency resolution and credential f
 
 1. **Add render step**: Add "P4RenderStep" to the Steps section.
 ![Render job data asset Environments array showing ApplyP4SecretsEnv, P4SyncSMFEnv, and P4LaunchUEEnv in order, with P4RenderStep added under Steps.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/unreal-engine-p4-add-environments-and-steps.png)
+
+### Submitting render outputs back to Perforce
+<a name="unreal-engine-p4-submit-mode"></a>
+
+By default, a Perforce render job uploads outputs through job attachments only. The `SubmitMode` job parameter opts in to pushing rendered outputs into Perforce instead, so finished frames land in your depot alongside the project.
+
+| `SubmitMode` value | Behavior |
+| --- | --- |
+| '' (default) | Job attachments only. No Perforce write occurs. Existing jobs behave unchanged. |
+| submit | Each render task shelves the files it produced. When every task has finished, an AssembleShelves step combines all task shelves into a single aggregate changelist and submits it. The job log records the final changelist number. |
+| shelve | Same aggregation as submit, but the final aggregate changelist is shelved instead of submitted, so a person can review the aggregate before committing it. |
+
+Only files that changed since the last sync end up in the changelist. Each task reconciles the exact files it produced, and the integration reverts files whose content is identical to the depot revision, so re-rendering an unchanged frame produces no changelist entry.
+
+**Note**
+When `SubmitMode` is `submit` or `shelve`, the job doesn't upload render outputs to Amazon S3 through job attachments. Perforce becomes the sole delivery path for the frames. The download outputs feature in Deadline Cloud monitor doesn't find the frames, and downstream jobs that consume outputs through job attachments don't see them. Input attachments are still uploaded through job attachments as normal.
+
+Configure your workers to authenticate to Perforce as the same Perforce user for all tasks in a job, because the aggregation step finds task shelves by owner. The recommended credential setup in [Perforce credentials management](#unreal-engine-perforce-credentials), a single shared secret in Secrets Manager, already satisfies that requirement.
 
 ### Best practices
 <a name="unreal-engine-p4-best-practices"></a>
@@ -867,9 +900,9 @@ Environment order is essential for proper dependency resolution and credential f
 #### Performance optimization
 <a name="unreal-engine-p4-perf-optimization"></a>
 
-**Chunk size configuration**:
+The following table shows how the `ShotsPerTask` setting affects performance:
 
-| Chunk size | Use case | Performance impact |
+| Shots per task | Use case | Performance impact |
 | --- | --- | --- |
 | 1-2 shots | Complex shots, detailed review needed | Lower throughput, higher quality control |
 | 4-8 shots | Balanced workload, typical projects | Optimal balance of speed and manageability |

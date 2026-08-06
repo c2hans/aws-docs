@@ -39,8 +39,8 @@ The following table describes the limits for API request frequency in MediaConne
 
 |  API method  |  Limit  | Comments |
 | --- | --- | --- |
-| Frequency of API requests - steady state | 30 requests per second for each account in a Region for the following APIs:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/quotas.html)<br />5 requests per second for each account in a Region for all other APIs. | You cannot increase this limit. |
-| Frequency of API requests - burst mode | For all APIs:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/quotas.html) | You cannot increase this limit.<br />In burst mode, you can temporarily exceed the steady state limit. If API requests exceed the burst mode limit, your requests are throttled and you receive an HTTP 429 error. The limit refills at a rate of 5 requests per second. |
+| Frequency of API requests - steady state | 30 requests per second for each account in a Region for the following APIs:+  `DescribeFlow` <br />+  `DescribeFlowSourceMetadata` <br />+  `DescribeFlowSourceThumbnail` <br />+  `GetRouterInput` <br />+  `GetRouterInputSourceMetadata` <br />+  `GetRouterInputThumbnail` <br />+  `GetRouterOutput` <br />+  `TakeRouterInput` <br />5 requests per second for each account in a Region for all other APIs. | You cannot increase this limit. |
+| Frequency of API requests - burst mode | For all APIs:+  30 requests per second for each account in a Region.  | You cannot increase this limit.<br />In burst mode, you can temporarily exceed the steady state limit. If API requests exceed the burst mode limit, your requests are throttled and you receive an HTTP 429 error. The limit refills at a rate of 5 requests per second. |
 
 **Note**
 If your application exceeds these limits, implement exponential backoff for retries. For more information, see [Error Retries and Exponential Backoff in AWS](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the *Amazon Web Services General Reference*.

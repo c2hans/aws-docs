@@ -58,6 +58,11 @@ Represents the settings used to enable server-side encryption.
 Type: [SSESpecification](API_SSESpecification.md) object
 Required: No
 
+ ** VectorIndexes **   <a name="DDB-Type-TableCreationParameters-VectorIndexes"></a>
+The vector indexes of the table to be created as part of the import operation.
+Type: Array of [VectorIndex](API_VectorIndex.md) objects
+Required: No
+
 ## See Also
 <a name="API_TableCreationParameters_SeeAlso"></a>
 

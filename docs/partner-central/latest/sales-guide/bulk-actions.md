@@ -34,21 +34,21 @@ The following table describes the required fields for creating opportunities:
 |  **Field name (required)**  |  **Description**  |
 | --- | --- |
 | Customer/company name | Name can be 80 characters maximum. |
-| Industry vertical (pick-list value) | Customer company name:[See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html) |
-| Country (pick-list value) | Required conditional fields:[See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html) |
-| Postal code |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
-| Customer website |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
-| Partner primary need from AWS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
+| Industry vertical (pick-list value) | Customer company name:+ Choose an industry vertical from the pick list. If you copy data from another file, paste it as text.<br />+ Needs to map to valid selection. Refer to Values sheet containing mapping.<br />+ Industry Other (required if industry vertical is Other) (column C).<br />+ Required field when Industry Vertical selected is Other.<br />+ 255 characters maximum.<br />+ Government requires the following: Does opportunity belong to NatSec? (column D) |
+| Country (pick-list value) | Required conditional fields:+ Needs to map to valid selection. Refer to the Values sheet for mapping.<br />+ If you copy data from another file, paste it as text.<br />+ State/province (pick-list value) (column F).<br />+ When country is set to United States, state/province (column F) is required. |
+| Postal code |  + Field is specific to the end customer's billing postal code.<br />+ 20 characters maximum.<br />+ If the postal code starts with a zero, reformat the cell to as text.<br />+ Attention to the formatting according to each country. Refer to the values tab and follow the postal code format of the country selected. If your country does not have a postal code leave it blank.  |
+| Customer website |  + Must be a valid domain.<br />+ No social media pages are allowed.<br />+ 255 characters maximum.<br />+ If the domain ends in .co, add a forward slash (/) to the end (e.g., www.domain.co/).  |
+| Partner primary need from AWS |  + Required conditional field.<br />+ Must map to a valid selection. Refer to the Values sheet for mapping.<br />+ If you select Co-Sell, then Sales Activities is required (column W).  |
 | Partner project title | Project title can be 60 characters maximum. |
 | Customer business problem | Describe the customer's pain point or business problem. The description must be 20 characters minimum. |
 | Solution offered | Describe the solution in 255 characters maximum. Enter the Offering ID for the solution. If you don't have an Offering ID, enter Other. If you enter Other, then Other Solution Offered is required (Column M). |
 | Other Solution Offered | Describe the solution in 255 characters maximum. |
-| Use case (pick-list value) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
+| Use case (pick-list value) |  + Must map to valid use case. Refer to the Values sheet for mapping.<br />+ If you copy data from another file, paste it as text.  |
 | Estimated AWS monthly recurring revenue | Use only numbers and no special formatting. Remember to count revenues in dollars and use US decimal notation (0,000.00). |
-| Target close date |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
-| Opportunity type |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
-| Delivery model (pick-list value) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
-| Is opportunity from marketing activity? (required) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
+| Target close date |  + Future date must be in mm/dd/yyyy format. Update column formatting prior to and after saving the .csv file.<br />+ When formatting the column, don't use asterisks in the date format because it will respond to changes based on a user's location and operating system. Download a new template, transfer only its data, and format the target-launch date column using the steps in the next section.  |
+| Opportunity type |  + Select from the list of valid values only to specify if the project is a net new business, renewal or expansion.<br />+ If the opportunity is a renewal or expansion, you can add the Parent Opportunity ID on Column Y  |
+| Delivery model (pick-list value) |  + Needs to map to valid selection. Refer to the Values sheet for mapping.<br />+ If you copy data from another file, paste it as text.  |
+| Is opportunity from marketing activity? (required) |  + Choose Yes or No. If you choose Yes, the following field is mandatory: Were marketing development funds used? (required if Is opportunity from marketing activity? is set to Yes) (Column U).<br />+ If you choose Yes, the following fields are also optional:  AWS Marketing Campaign (Column AK). Marketing Activity Channel (Column AL). Marketing Activity Use-Case (Column AM).  <br />+ Must map to a valid selection. Refer to Values sheet for mapping.  |
 | Sales activities | Describes the customer's sales activities. This is required if Partner Primary Need from AWS (column I) is set to Co-Sell. |
 | Competitive tracking (column AI) | If Competitive Tracking is set to Other, then Other Competitors (column AJ) is required. |
 
@@ -77,9 +77,9 @@ The following table describes the optional fields for creating opportunities:
 | Customer email | Must be a valid email address. |
 | AWS account ID | Must be a 12-digit number. If the ID starts with zero, reformat the cell as text. |
 | Additional comments | 255 characters maximum. |
-| State/province (pick-list value) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
+| State/province (pick-list value) |  + Required conditional field.<br />+ State is a required field when country is set to United States.<br />+ If you copy data from another file, paste it as text.  |
 | Street address and city | 255 alphanumeric characters maximum (each). |
-| Competitive tracking (pick-list value) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/sales-guide/bulk-actions.html)  |
+| Competitive tracking (pick-list value) |  + Required conditional fields.<br />+ Must map to a valid use case. Refer to the Values sheet for mapping.<br />+ If Other Competitors (column AI) is selected, column AJ is required (255 characters maximum).  |
 | Marketing development funded (pick-list value) | Must map to a valid use case. Refer to the Values sheet for mapping. |
 | Primary sales contact, first name, last name, and title | The contact referenced in this field is included in opportunity-related email notifications. |
 | Primary contact phone | Only numbers allowed. |

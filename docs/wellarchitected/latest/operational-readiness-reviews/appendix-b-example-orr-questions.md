@@ -78,7 +78,7 @@ These are a few example questions that you can use to get started building your 
 
 | When do you look at your weekly and operator dashboards?  |
 | --- |
-|  **Guidance**<br />Here’s an example schedule for an ops meeting: [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/appendix-b-example-orr-questions.html) |
+|  **Guidance**<br />Here’s an example schedule for an ops meeting: +  Review outstanding action items from the previous week. <br />+  Review last week’s high severity tickets. <br />+  Review pipelines for things like rollbacks or blocks. <br />+  Review open customer support tickets. <br />+  Review open high severity tickets.  <br />+  What new runbook entries were added this week? <br />+  Review the detailed metrics dashboard for one of your components. <br />+  Discuss on-call rotation.  |
 
 | Does your operational dashboard contain a view with metrics for critical dependencies?  |
 | --- |

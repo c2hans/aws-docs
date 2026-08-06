@@ -140,9 +140,9 @@ All Config Rule violations appear in your Configuration Report. This is a univer
 
 | Action Code | AMS Actions |
 | --- |--- |
-| Report |  [Add to Config Report](#acc-sec-compliance-response-universal)  |
-| Incident |  [Add to Config Report](#acc-sec-compliance-response-universal)  [Automatic incident report in Accelerate](#acc-sec-compliance-response-incident)  |
-| Remediate |  [Add to Config Report](#acc-sec-compliance-response-universal)  [Automatic incident report in Accelerate](#acc-sec-compliance-response-incident) [Automatic remediation in Accelerate](#acc-sec-compliance-response-autoremediate) |
+| Report | 1. [Add to Config Report](#acc-sec-compliance-response-universal)  |
+| Incident | 1. [Add to Config Report](#acc-sec-compliance-response-universal) <br />2. [Automatic incident report in Accelerate](#acc-sec-compliance-response-incident)  |
+| Remediate | 1. [Add to Config Report](#acc-sec-compliance-response-universal) <br />2. [Automatic incident report in Accelerate](#acc-sec-compliance-response-incident)<br />3. [Automatic remediation in Accelerate](#acc-sec-compliance-response-autoremediate) |
 
 **Requesting Additional Help**
 

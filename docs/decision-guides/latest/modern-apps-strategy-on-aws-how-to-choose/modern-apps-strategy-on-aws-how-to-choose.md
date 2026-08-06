@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/modern-apps-strat
 | --- |--- |
 | **Purpose** | Help determine which modern application development approach is the best fit for your organization. |
 | **Last updated** | May 16, 2025 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/modern-apps-strategy-on-aws-how-to-choose/modern-apps-strategy-on-aws-how-to-choose.html)  |
+| **Covered services** |  +  [Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started.html) <br />+  [Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) <br />+  [AWS App Runner](https://docs.aws.amazon.com/apprunner/) <br />+  [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html) <br />+  [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html) <br />+  [Red Hat OpenShift Service on AWS](https://docs.aws.amazon.com/ROSA/latest/userguide/getting-started.html)   |
 
 ## Introduction
 <a name="intro"></a>

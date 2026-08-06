@@ -429,25 +429,25 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.0.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 2.0.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 1.1.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 1.1.2 |   This version is no longer available. The improvements in this version are available in later versions of this component.  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 1.1.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 1.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 1.0.19 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  If you are using the secure tunneling local proxy as the tunnel source client, do not update your component to this version until you have also upgraded the local proxy to version 3.1.1 or later.   |
+| 2.0.1 |  **Bug fixes and improvements**<br />   Updates the bundled local proxy binary to version 3.3.0.   Fixes concurrency and object-lifetime bugs that could affect tunnel data integrity.   Requires TLS 1.2 or later and no longer allows SSLv2, SSLv3, TLS 1.0, or TLS 1.1.     |
+| 2.0.0 |  **New features**<br />   Replaces the Java wrapper with a C wrapper.   Replaces AWS IoT Device Client with [AWS IoT Securetunneling Localproxy](https://github.com/aws-samples/aws-iot-securetunneling-localproxy).   Reduces the binary size from approximately 36 MB to approximately 4 MB.   Reduces the memory footprint from approximately 100 MB to approximately 2 MB.     |
+| 1.1.3 |  **Bug fixes and improvements**<br />   Upgrades the underlying [AWS IoT Device Client](https://github.com/awslabs/aws-iot-device-client) invoked by the component from version 1.10.0 to version 1.10.1.   Fixes the GNU C Library (glibc) compatibility issues in secure tunneling component version 1.1.2.     |
+| 1.1.2 |   This version is no longer available. The improvements in this version are available in later versions of this component.  **Bug fixes and improvements**<br />   Upgrades the underlying [AWS IoT Device Client](https://github.com/awslabs/aws-iot-device-client) invoked by the component from version 1.9.0 to version 1.10.0.   Fixes the payload transfer issue which prevents users from forwarding large files from Greengrass V2 core devices to the source device through the secure tunnel.     |
+| 1.1.1 |  **Bug fixes and improvements**<br />   Adds a configuration to support Greengrass nucleus lite.     |
+| 1.1.0 |  **New features**<br />   Adds recipe supports for Greengrass nucleus lite.     |
+| 1.0.19 |  **Bug fixes and improvements**<br />   Upgrades the underlying [AWS IoT Device Client](https://github.com/awslabs/aws-iot-device-client) invoked by the component from version 1.8.0 to version 1.9.0.   Increases the concurrent tunnel limit to 20 tunnels on a component level.   Increases the default AWS IoT Greengrass Core IPC timeout from 3 seconds to 10 seconds.     If you are using the secure tunneling local proxy as the tunnel source client, do not update your component to this version until you have also upgraded the local proxy to version 3.1.1 or later.   |
 | 1.0.18 | Version updated for Greengrass nucleus version 2.12.0 release. |
-| 1.0.17 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
+| 1.0.17 |  **Bug fixes and improvements**<br />   Fixes the thread cleanup issue which was blocking users from creating tunnels. This component will now cleanup a thread either once it receives the CloseTunnel signal or if the tunnel is expired after 12 hours.     |
 | 1.0.16 | Version updated for Greengrass nucleus version 2.11.0 release. |
-| 1.0.15 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
+| 1.0.15 |  **Bug fixes and improvements**<br />   Fixes a startup issue for users that do not have a home directory on the device. The secure tunneling component now starts without creating a directory for shadow documents.     |
 | 1.0.14 | Version updated for Greengrass nucleus version 2.10.0 release. |
-| 1.0.13 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
-| 1.0.12 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
+| 1.0.13 |  **Bug fixes and improvements**<br />   Fixes an issue where an orphan client process prevents more than one tunnel from targeting the device.     |
+| 1.0.12 |  **Bug fixes and improvements**<br />   Adds support for x86\_64 (AMD64) and ARMv8 (Aarch64) when running on Raspberry Pi OS.     |
 | 1.0.11 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 1.0.10 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 1.0.9 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 1.0.8 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 1.0.7 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/secure-tunneling-component.html)  |
+| 1.0.7 |  **Bug fixes and improvements**<br />   Fixes an issue where the component disconnects when you transfer large files over SCP.     |
 | 1.0.6 | This version contains bug fixes. |
 | 1.0.5 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 1.0.4 | Version updated for Greengrass nucleus version 2.4.0 release. |

@@ -43,7 +43,7 @@ The following table shows an example agenda.
 | --- |--- |--- |
 | 9:30 | Introductions | – |
 | 9:45 | Review business and technology goals and objectives | Review goals for migrating applications to AWS. Discuss short-term and long-term objectives, risks, and issues related to IT and business application migrations. |
-| 10:00 (with breaks every hour) | Assess migration readiness | Review current AWS footprint, applications, operational processes, and integration.<br />Focus your discussions on the following topics:Total cost of ownershipBusinessGovernancePeoplePlatformOperationsSecurity |
+| 10:00 (with breaks every hour) | Assess migration readiness | Review current AWS footprint, applications, operational processes, and integration.<br />Focus your discussions on the following topics:+ Total cost of ownership<br />+ Business<br />+ Governance<br />+ People<br />+ Platform<br />+ Operations<br />+ Security |
 | 15:00 | Summarize feedback and actions | – |
 | 15:30 | Adjourn | – |
 

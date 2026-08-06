@@ -657,7 +657,7 @@ If there is a feature that isn't supported that you'd like us to build, let us k
 | [$geoNear](geoNear.md) | Yes | Yes | Yes | Yes | Yes |
 | $graphLookup | No | No | No | No | No |
 | [$group](group.md) | Yes | Yes | Yes | Yes | Yes |
-| [$indexStats](indexStats.md) | Yes | Yes | Yes | Yes | Yes |
+| [$indexStats](indexStats.md) | Yes | Yes | Yes | Yes | No |
 | [$limit](limit.md) | Yes | Yes | Yes | Yes | Yes |
 | $listLocalSessions | No | No | No | No | No |
 | $listSessions | No | No | No | No | No |

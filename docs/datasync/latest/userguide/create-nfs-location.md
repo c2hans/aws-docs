@@ -9,7 +9,7 @@ With AWS DataSync, you can transfer data between your Network File System (NFS) 
 
 | Basic mode | Enhanced mode |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/datasync/latest/userguide/create-nfs-location.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/datasync/latest/userguide/create-nfs-location.html)  |
+|  +  [Amazon S3](create-s3-location.md) <br />+  [Amazon EFS](create-efs-location.md) <br />+  [Amazon FSx for Windows File Server](create-fsx-location.md) <br />+  [Amazon FSx for Lustre](create-lustre-location.md) <br />+  [Amazon FSx for OpenZFS](create-openzfs-location.md) <br />+  [Amazon FSx for NetApp ONTAP](create-ontap-location.md)   |  +  [Amazon S3](create-s3-location.md) <br />+  [Amazon EFS](create-efs-location.md) <br />+  [Amazon FSx for Lustre](create-lustre-location.md)   |
 
 To set up this kind of transfer, you create a [location](how-datasync-transfer-works.md#sync-locations) for your NFS file server. You can use this location as a transfer source or destination.
 

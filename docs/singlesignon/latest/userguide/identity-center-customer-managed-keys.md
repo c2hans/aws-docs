@@ -37,11 +37,11 @@ The KMS key permissions consist of:
 
 |  Use case  |  IAM principals that need permissions to use the KMS key  |  Required/Optional  |
 | --- | --- | --- |
-|  Use of AWS IAM Identity Center  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/identity-center-customer-managed-keys.html)  | Required |
-|  Use of AWS managed applications with IAM Identity Center  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/identity-center-customer-managed-keys.html)  | Optional |
-|  Use of AWS Control Tower on the AWS IAM Identity Center instance it enabled  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/identity-center-customer-managed-keys.html)  | Optional |
-|  SSO to Amazon EC2 instances with AWS IAM Identity Center  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/identity-center-customer-managed-keys.html)  | Optional |
-|  Any other use case that makes calls to IAM Identity Center service APIs with IAM principals, such as customer managed applications, permission set provisioning workflows, or AWS Lambda functions  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/identity-center-customer-managed-keys.html)  | Optional |
+|  Use of AWS IAM Identity Center  |  +  Administrators of AWS IAM Identity Center <br />+  IAM Identity Center service and the associated Identity Store service   | Required |
+|  Use of AWS managed applications with IAM Identity Center  |  +  Administrators of AWS managed applications <br />+  AWS managed applications <br />+  [Service roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#iam-term-service-role) that AWS managed applications assume to call IAM Identity Center service APIs   | Optional |
+|  Use of AWS Control Tower on the AWS IAM Identity Center instance it enabled  |  +  AWS Control Tower administrators   | Optional |
+|  SSO to Amazon EC2 instances with AWS IAM Identity Center  |  +  IAM principals authorized to perform SSO to Amazon EC2 instances   | Optional |
+|  Any other use case that makes calls to IAM Identity Center service APIs with IAM principals, such as customer managed applications, permission set provisioning workflows, or AWS Lambda functions  |  +  IAM principals used by these workflows to call IAM Identity Center service APIs   | Optional |
 
 **Note**
  Multiple IAM principals listed in the table require AWS KMS API permissions. However, to protect your user and group data in IAM Identity Center, only IAM Identity Center and Identity Store services directly call the AWS KMS API.

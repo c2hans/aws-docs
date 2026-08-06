@@ -11,10 +11,10 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-
 If your use case exceeds these limitations, [contact AWS support](https://aws.amazon.com/contact-us/?cmpid=docs_headercta_contactus) to request higher limits.
 
  **S3 Access Grants instance**
-You can create **1 S3 Access Grants instance** per AWS Region per account. See [Create an S3 Access Grants instance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-instance-create.html).
+You can create **1 S3 Access Grants instance** per AWS Region per account. See [Create an S3 Access Grants instance](access-grants-instance-create.md).
 
  **S3 Access Grants location**
-You can register **1,000 S3 Access Grants locations** per S3 Access Grants instance. See [Register an S3 Access Grants location](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-location.html).
+You can register **1,000 S3 Access Grants locations** per S3 Access Grants instance. See [Working with S3 Access Grants locations](access-grants-location.md).
 
  **Grant**
 You can create **100,000 grants** per S3 Access Grants instance. See [Create a grant](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-grant.html).

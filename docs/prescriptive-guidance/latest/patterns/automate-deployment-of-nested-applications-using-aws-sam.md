@@ -97,7 +97,7 @@ The code for this pattern is available in the GitHub [AWS SAM Nested Stack Sampl
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clone the AWS SAM code repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deployment-of-nested-applications-using-aws-sam.html) | DevOps engineer |
+| Clone the AWS SAM code repository. | 1. Clone the [aws sam nested stack sample ](https://github.com/aws-samples/aws-sam-nested-stack-sample)repository for this pattern by entering the following command.<pre>git clone https://github.com/aws-samples/aws-sam-nested-stack-sample.git</pre><br />2. Navigate into the cloned directory by entering the following command.<pre>cd aws-sam-nested-stack-sample</pre> | DevOps engineer |
 | Deploy templates to initialize the project. | To initialize the project, run the `SAM init` command. When prompted to choose a template source, choose `Custom Template Location`. | DevOps engineer |
 
 ### Compile and build the SAM template code
@@ -105,7 +105,7 @@ The code for this pattern is available in the GitHub [AWS SAM Nested Stack Sampl
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Review the AWS SAM application templates. | Review the templates for the nested applications. This example uses the following nested application templates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deployment-of-nested-applications-using-aws-sam.html) | DevOps engineer |
+| Review the AWS SAM application templates. | Review the templates for the nested applications. This example uses the following nested application templates:+ `auth.yaml` – This template sets up authentication-related resources, such as Amazon Cognito and AWS Systems Manager Parameter Store.<br />+ `product-mock.yaml` – This template deploys product-related resources, such as Lambda functions and Amazon API Gateway.<br />+ `shoppingcart-service.yaml` – This template sets up shopping cart–related resources, such as AWS Identity and Access Management (IAM), DynamoDB tables, and Lambda functions. | DevOps engineer |
 | Review the parent template. | Review the template that will invoke the nested application templates. In this example, the parent template is `template.yml`. All separate applications are nested in the single parent template `template.yml`. | DevOps engineer |
 | Compile and build the AWS SAM template code.  | Using the AWS SAM CLI, run the following command.<pre>sam build</pre> | DevOps engineer |
 
@@ -121,7 +121,7 @@ The code for this pattern is available in the GitHub [AWS SAM Nested Stack Sampl
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Verify the stacks. | To review the AWS CloudFormation stacks and AWS resources that were defined in the AWS SAM templates, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deployment-of-nested-applications-using-aws-sam.html) | DevOps engineer |
+| Verify the stacks. | To review the AWS CloudFormation stacks and AWS resources that were defined in the AWS SAM templates, do the following:1. Log in to the AWS Management Console, and navigate to the **CloudFormation** console.<br />2. Verify that the parent and child stacks are listed.<br />In this example, `sam-shopping-cart` is the parent stack that calls the nested Auth, Product and Shopping stacks.<br />The product stack gives the Product API Gateway URL link as an output. | DevOps engineer |
 
 ## Related resources
 <a name="automate-deployment-of-nested-applications-using-aws-sam-resources"></a>

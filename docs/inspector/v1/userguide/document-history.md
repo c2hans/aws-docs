@@ -36,7 +36,7 @@ The following table describes the documentation release history of Amazon Inspec
 | New content | Amazon Inspector Classic assessments can now run when the kernel module is unavailable. | January 11, 2018 |
 | Added Region support | Added Amazon Inspector Classic support for the `EU (Frankfurt)` Region. | December 19, 2017 |
 | New content | Added ability to check Amazon Inspector Classic agent health with the Amazon Inspector Classic API and console. | December 15, 2017 |
-| New content | Added the following features:[See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/v1/userguide/document-history.html) | December 5, 2017 |
+| New content | Added the following features:+  Service-linked role usage <br />+  Amazon Inspector Classic agent AMI available in the AWS Marketplace <br />+  Amazon Inspector Classic CloudFormation templates  | December 5, 2017 |
 | Added OS support | Added Amazon Inspector Classic assessment support for CentOS 7.4. | November 9, 2017 |
 | Added OS support | Added Amazon Inspector Classic assessment support for Amazon Linux 2017.09. | October 11, 2017 |
 | Added OS support | Added Amazon Inspector Classic assessment support for RHEL 7.4. | February 20, 2018 |
@@ -45,7 +45,7 @@ The following table describes the documentation release history of Amazon Inspec
 | Added Region support | Added Amazon Inspector Classic support for the `US West (N. California)` Region. | June 6, 2018 |
 | Added OS support | Added Amazon Inspector Classic assessment support for RHEL 6.2-6.9, RHEL 7.2-7.3, CentOS 6.9, and CentOS 7.2-7.3. | May 23, 2017 |
 | Added OS support | Added Amazon Inspector Classic assessment support for Amazon Linux 2017.03. | April 25, 2017 |
-| New content and added OS support | Added: [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/v1/userguide/document-history.html) | January 5, 2017 |
+| New content and added OS support | Added: +  Amazon Inspector Classic support for Ubuntu 16.04. <br />+  Availability of Lambda blueprint for automating Amazon Inspector Classic operations.  | January 5, 2017 |
 | New OS support | Added Amazon Inspector Classic support for Microsoft Windows. | August 26, 2016 |
 | Added Region support | Added Amazon Inspector Classic support for the `Asia Pacific (Seoul)` Region. | August 26, 2016 |
 | Added Region support | Added Amazon Inspector Classic support for the `Asia Pacific (Mumbai)` Region. | April 25, 2016 |

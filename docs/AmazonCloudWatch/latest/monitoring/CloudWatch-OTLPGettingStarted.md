@@ -30,4 +30,5 @@ AWS supports telemetry that you send to AWS destinations through the CloudWatch 
 + [OpenTelemetry Collector](CloudWatch-OTLPSimplesetup.md)
 + [Build your own custom OpenTelemetry Collector](CloudWatch-OTLPAdvancedsetup.md)
 + [Exporting collector-less telemetry using AWS Distro for OpenTelemetry (ADOT) SDK](CloudWatch-OTLP-UsingADOT.md)
++ [Managed Prometheus collectors](CloudWatch-OTLPManagedPrometheusCollectors.md)
 + [AWS vended metrics in OpenTelemetry format](CloudWatch-OTelEnrichment.md)

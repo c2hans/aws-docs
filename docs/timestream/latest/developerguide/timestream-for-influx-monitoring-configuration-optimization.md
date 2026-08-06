@@ -22,11 +22,11 @@ Amazon CloudWatch provides detailed metrics for monitoring your Timestream for I
 
 | CloudWatch Metric Name | Dimensions | Description | Unit | Recommended Thresholds |
 | --- | --- | --- | --- | --- |
-| CPUUtilization | DbInstanceName | Percentage of CPU being used | Percent |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
-| MemoryUtilization | DbInstanceName | Percentage of memory being used | Percent |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
-| HeapMemoryUsage | DbInstanceName | Amount of heap memory in use | Bytes |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
-| ActiveMemoryAllocation | DbInstanceName | Current active memory allocation | Bytes |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
-| DiskUtilization | DbInstanceName | Percentage of disk space being used | Percent |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
+| CPUUtilization | DbInstanceName | Percentage of CPU being used | Percent |  + Development/Growing: < 70%<br />+ Production: < 80%<br />+ Critical Alert: > 90% for 5\+ min  |
+| MemoryUtilization | DbInstanceName | Percentage of memory being used | Percent |  + Development/Growing: < 70%<br />+ Production: < 80%<br />+ Critical Alert: > 90%  |
+| HeapMemoryUsage | DbInstanceName | Amount of heap memory in use | Bytes |  + Monitor for steady growth or spikes<br />+ Alert: Approaching max heap size  |
+| ActiveMemoryAllocation | DbInstanceName | Current active memory allocation | Bytes |  + Monitor for unexpected spikes<br />+ Compare against total available memory  |
+| DiskUtilization | DbInstanceName | Percentage of disk space being used | Percent |  + Development/Growing: < 70%<br />+ Production: < 75%<br />+ Critical Alert: > 85%  |
 
 ### I/O Operations Metrics
 <a name="io-operations-metrics"></a>
@@ -50,23 +50,23 @@ Amazon CloudWatch provides detailed metrics for monitoring your Timestream for I
 
 | CloudWatch Metric Name | Dimensions | Description | Unit | Recommended Thresholds |
 | --- | --- | --- | --- | --- |
-| APIRequestRate | DbInstanceName, Endpoint, Status | Rate of API requests to specific endpoints with status codes (2xx, 4xx, 5xx) | Count/Second | Error rates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html) |
-| QueryResponseVolume | DbInstanceName, Endpoint, Status | Volume of query responses by endpoint and status code | Bytes |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
+| APIRequestRate | DbInstanceName, Endpoint, Status | Rate of API requests to specific endpoints with status codes (2xx, 4xx, 5xx) | Count/Second | Error rates:+ 4xx errors: < 1% of requests<br />+ 5xx errors: < 0.1% of requests<br />+ Alert: Sudden spikes in error rates |
+| QueryResponseVolume | DbInstanceName, Endpoint, Status | Volume of query responses by endpoint and status code | Bytes |  + Monitor for unusually large responses<br />+ Alert: Responses > 10MB consistently  |
 
 ### Query Execution Metrics
 <a name="query-execution-metrics"></a>
 
 | CloudWatch Metric Name | Dimensions | Description | Unit | Recommended Thresholds |
 | --- | --- | --- | --- | --- |
-| QueryRequestsTotal | DbInstanceName, Result | Total count of query requests by result type (success, runtime\_error, compile\_error, queue\_error) | Count | Success rate: > 99%<br />Error rates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html) |
+| QueryRequestsTotal | DbInstanceName, Result | Total count of query requests by result type (success, runtime\_error, compile\_error, queue\_error) | Count | Success rate: > 99%<br />Error rates:+ runtime\_error: < 0.5%<br />+ compile\_error: < 0.1%<br />+ queue\_error: < 0.1% |
 
 ### Data Organization Metrics
 <a name="data-organization-metrics"></a>
 
 | CloudWatch Metric Name | Dimensions | Description | Unit | Critical Thresholds |
 | --- | --- | --- | --- | --- |
-| SeriesCardinality | DbInstanceName, Bucket | Number of unique time series in a bucket | Count |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
-| TotalBuckets | DbInstanceName | Total number of buckets in the instance | Count |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influx-monitoring-configuration-optimization.html)  |
+| SeriesCardinality | DbInstanceName, Bucket | Number of unique time series in a bucket | Count |  + < 100K: Excellent performance<br />+ < 1M: Good performance<br />+ 1M - 5M: Moderate impact, requires tuning<br />+ 5M - 10M: Significant impact, careful optimization required<br />+ > 10M: CRITICAL - Consider InfluxDB 3.0  |
+| TotalBuckets | DbInstanceName | Total number of buckets in the instance | Count |  + Monitor growth over time<br />+ Consider consolidation if > 100 buckets  |
 
 ### System Health Metrics
 <a name="system-health-metrics"></a>

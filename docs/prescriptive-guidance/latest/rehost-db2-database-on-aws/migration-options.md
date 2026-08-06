@@ -14,7 +14,7 @@ The following decision tree diagram presents the options as different migration 
 
 |
 |
-| Note:Options 4, 7, and 8 require additional licenses.For options 1, 8, 9, and 10, the exact outage window is based on the database size. |
+| Note:+ Options 4, 7, and 8 require additional licenses.<br />+ For options 1, 8, 9, and 10, the exact outage window is based on the database size. |
 | --- |
 
 The following tables show high-level comparisons of the migration options based on the source platform.

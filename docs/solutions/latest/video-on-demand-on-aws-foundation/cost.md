@@ -27,7 +27,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
   <tr><td> Amazon CloudWatch </td><td> [AWS Free Tier](https://aws.amazon.com/free/). [See Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) for more information. </td><td> $0.00 </td></tr>
   <tr><td>Amazon EventBridge</td><td> [AWS Free Tier](https://aws.amazon.com/free/). [See Amazon EventBridge Pricing](https://aws.amazon.com/eventbridge/pricing/) for more information. </td><td> $0.00 </td></tr>
   <tr><td> Amazon SNS </td><td> [AWS Free Tier](https://aws.amazon.com/free/). See [Amazon SNS Pricing](https://aws.amazon.com/sns/pricing/) for more information. </td><td> $0.00 </td></tr>
-  <tr><td> AWS Elemental MediaConvert </td><td> HLS output profile: [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-foundation/cost.html)</td><td> $3.15 </td></tr>
+  <tr><td> AWS Elemental MediaConvert </td><td> HLS output profile: +   3 SD resolution at 30 fps or less  <br />+   2 HD resolution at 30 fps or less  </td><td> $3.15 </td></tr>
   <tr><td colspan="2"> Total: </td><td> $232.86 </td></tr>
 </tbody>
 </table>

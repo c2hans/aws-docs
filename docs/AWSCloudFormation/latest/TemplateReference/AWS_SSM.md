@@ -18,4 +18,5 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::SSM::PatchBaseline](aws-resource-ssm-patchbaseline.md)
 + [AWS::SSM::ResourceDataSync](aws-resource-ssm-resourcedatasync.md)
 + [AWS::SSM::ResourcePolicy](aws-resource-ssm-resourcepolicy.md)
++ [AWS::SSM::ServiceSetting](aws-resource-ssm-servicesetting.md)
 + [AWS::SSM::Session](aws-resource-ssm-session.md)

@@ -294,16 +294,16 @@ The following table describes naming constraints in Amazon DocumentDB.
 
 | Resource | Default quota |
 | --- | --- |
-| Cluster identifier | [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/limits.html)  |
-| Instance identifier | [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/limits.html)  |
+| Cluster identifier | +  Length is [1–63] letters, numbers, or hyphens. <br />+  First character must be a letter. <br />+  Cannot end with a hyphen or contain two consecutive hyphens. <br />+  Must be unique for all clusters (across Amazon RDS, Amazon Neptune, and Amazon DocumentDB) per AWS account, per Region.   |
+| Instance identifier | +  Length is [1–63] letters, numbers, or hyphens <br />+  First character must be a letter <br />+  Cannot end with a hyphen or contain two consecutive hyphens <br />+  Must be unique for all instances (across Amazon RDS, Amazon Neptune, and Amazon DocumentDB) per AWS account, per Region.   |
 | Collection name: <col> | Length is [1–255] characters (Amazon DocumentDB 5.0 and later).<br />Length is [1–57] characters (Amazon DocumentDB 4.0 and earlier). |
 | Database name: <db> | Length is [1–63] characters. |
 | Fully qualified collection name:<br />`<db>.<col>` | Length is [3–255] characters (Amazon DocumentDB 5.0 and later).<br />Length is [3–120] characters (Amazon DocumentDB 4.0 and earlier). |
 | Fully qualified index name:<br />`<db>.<col>$<index>` | Length is [6–511] characters (Amazon DocumentDB 5.0 and later).<br />Length is [6–127] characters (Amazon DocumentDB 4.0 and earlier). |
 | Index name | Length is [1–255] characters (Amazon DocumentDB 5.0 and later).<br />Length is [3–63] characters for the combined `<col>$<index>` (Amazon DocumentDB 4.0 and earlier). |
-| Primary password | [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/limits.html) |
-| Primary user name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/limits.html)  |
-| Parameter group name | [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/limits.html) |
+| Primary password | +  Length is [8-100] printable ASCII characters. <br />+  Can use any printable ASCII characters except for the following:   **/** (forward slash)   **"** (double quotation mark)   **@** (at symbol)    |
+| Primary user name |  +  Length is [1-63] alphanumeric characters. <br />+  First character must be a letter. <br />+  Cannot be a word reserved by the database engine.   |
+| Parameter group name | +  Length is [1–255] alphanumeric characters. <br />+  First character must be a letter. <br />+  Cannot end with a hyphen or contain two consecutive hyphens.  |
 
 ## TTL constraints
 <a name="limits.ttl-constraints"></a>

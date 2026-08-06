@@ -80,6 +80,7 @@ Overwrite is not supported for exports of cost optimization recommendations.
 1. For **Compression type and file format**, choose between the following for your export:
    + Parquet – Parquet
    + gzip – text/csv
+   + zip - text/csv
 
 1. Under **Data export storage settings**, choose whether you want your export delivered to the S3 bucket of:
    + This account

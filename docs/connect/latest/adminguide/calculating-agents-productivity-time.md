@@ -15,7 +15,7 @@ This topic shows two examples that illustrate how Agent Adherent and Non-Adheren
 **What the agent does**: Agent A begins working at 7:30 and then takes a break from 10:30 to 11:00.
 
 **Their adherence**:
-+ From 7:30 to 8:00 Agent A is neither adherent or non-adherent since there is no schedule.
++ From 7:30 to 8:00 Agent A is neither adherent nor non-adherent because this time is outside the schedule. The adherence calculation does not include unscheduled time.
 + From 8:00 to 10:30 Agent A is adherent and from 10:30 to 11:00 they are non-adherent because:
   + Their status was "Break" when it should have been "Available" because they were scheduled for "Work" and the "Work" activity is mapped to only the "Available" status.
 

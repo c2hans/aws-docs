@@ -59,6 +59,6 @@ Here is a summary of the information that you should have collected for each clu
 | Number of network for this cluster, and purpose of each network | When creating the network |
 | In each network, list of CIDR blocks to reserve for MediaLive Anywhere | When creating the network |
 | Routes for each network | When creating the network |
-| The following set of information for each network interface on the node:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/emla-deploy-identify-network-requirements.html) | When creating the node |
+| The following set of information for each network interface on the node:+  A type of encoding traffic on the network <br />+  The ID of the network that handles that traffic <br />+  A logical interface name to assign to the network interfaces on all the nodes  | When creating the node |
 | The default route for all nodes on the cluster | When creating the cluster |
 | Initial role of each node in the cluster (active or backup) | When creating the node |

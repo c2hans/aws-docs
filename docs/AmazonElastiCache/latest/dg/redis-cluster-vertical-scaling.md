@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/redis-cluste
 # Online vertical scaling by modifying node type
 <a name="redis-cluster-vertical-scaling"></a>
 
-By using online vertical scaling with Valkey version 7.2 or newer, or Redis OSS version 3.2.10 or newer, you can scale your Valkey or Redis OSS clusters dynamically with minimal downtime. This allows your Valkey or Redis OSS cluster to serve requests even while scaling.
+By using online vertical scaling with Valkey and Redis OSS, you can scale your Valkey or Redis OSS clusters dynamically with minimal downtime. This allows your Valkey or Redis OSS cluster to serve requests even while scaling.
 
 **Note**
 Scaling is not supported between a data tiering cluster (for example, a cluster using an r6gd node type) and a cluster that does not use data tiering (for example, a cluster using an r6g node type). For more information, see [Data tiering in ElastiCache](data-tiering.md).
@@ -94,25 +94,24 @@ The following procedure describes how to scale up a Valkey or Redis OSS cluster 
    ```
    {
    	    "ScaleUpModifications": [
-   	        "cache.m3.2xlarge",
-   	        "cache.m3.large",
-   	        "cache.m3.xlarge",
+   	        "cache.m5.2xlarge",
+   	        "cache.m5.large",
+   	        "cache.m5.xlarge",
    	        "cache.m4.10xlarge",
    	        "cache.m4.2xlarge",
    	        "cache.m4.4xlarge",
    	        "cache.m4.large",
    	        "cache.m4.xlarge",
-   	        "cache.r3.2xlarge",
-   	        "cache.r3.4xlarge",
-   	        "cache.r3.8xlarge",
-   	        "cache.r3.large",
-   	        "cache.r3.xlarge"
+   	        "cache.r5.2xlarge",
+   	        "cache.r5.4xlarge",
+   	        "cache.r5.12xlarge",
+   	        "cache.r5.large",
+   	        "cache.r5.xlarge"
    	    ]
    	       "ScaleDownModifications": [
    	        "cache.t2.micro",
    	        "cache.t2.small ",
-   	        "cache.t2.medium",
-   	       	"cache.t1.small "
+   	        "cache.t2.medium"
    	    ],
    }
    ```
@@ -130,7 +129,7 @@ The following procedure describes how to scale up a Valkey or Redis OSS cluster 
    ```
    aws elasticache modify-replication-group  \
    	    --replication-group-id {{my-redis-cluster}} \
-   	    --cache-node-type {{cache.m3.xlarge}} \
+   	    --cache-node-type {{cache.m5.xlarge}} \
    	    --apply-immediately
    ```
 
@@ -139,7 +138,7 @@ The following procedure describes how to scale up a Valkey or Redis OSS cluster 
    ```
    aws elasticache modify-replication-group ^
    	    --replication-group-id {{my-redis-cluster}} ^
-   	    --cache-node-type {{cache.m3.xlarge}} ^
+   	    --cache-node-type {{cache.m5.xlarge}} ^
    	    --apply-immediately
    ```
 
@@ -182,7 +181,7 @@ The following procedure describes how to scale up a Valkey or Redis OSS cluster 
                "my-redis-cluster-0001-001",
                "my-redis-cluster-0001-002"
            ],
-           "CacheNodeType": "cache.m3.xlarge",
+           "CacheNodeType": "cache.m5.xlarge",
             "DataTiering": "disabled"
            "PendingModifiedValues": {}
        }
@@ -228,8 +227,8 @@ The amount of time it takes to scale up to a larger node type varies, depending 
    https://elasticache.us-west-2.amazonaws.com/
    	   ?Action=ModifyReplicationGroup
    	   &ApplyImmediately=true
-   	   &CacheNodeType=cache.m3.2xlarge
-   	   &CacheParameterGroupName=redis32-m3-2xl
+   	   &CacheNodeType=cache.m5.2xlarge
+   	   &CacheParameterGroupName=redis7-cluster
    	   &ReplicationGroupId=myReplGroup
    	   &SignatureVersion=4
    	   &SignatureMethod=HmacSHA256
@@ -322,26 +321,25 @@ The following procedure describes how to scale down a Valkey or Redis OSS cluste
    ```
    {
    	    "ScaleUpModifications": [
-   	        "cache.m3.2xlarge",
-   	        "cache.m3.large",
-   	        "cache.m3.xlarge",
+   	        "cache.m5.2xlarge",
+   	        "cache.m5.large",
+   	        "cache.m5.xlarge",
    	        "cache.m4.10xlarge",
    	        "cache.m4.2xlarge",
    	        "cache.m4.4xlarge",
    	        "cache.m4.large",
    	        "cache.m4.xlarge",
-   	        "cache.r3.2xlarge",
-   	        "cache.r3.4xlarge",
-   	        "cache.r3.8xlarge",
-   	        "cache.r3.large",
-   	        "cache.r3.xlarge"
+   	        "cache.r5.2xlarge",
+   	        "cache.r5.4xlarge",
+   	        "cache.r5.12xlarge",
+   	        "cache.r5.large",
+   	        "cache.r5.xlarge"
    	    ]
 
    	       "ScaleDownModifications": [
    	        "cache.t2.micro",
    	        "cache.t2.small ",
-   	        "cache.t2.medium ",
-     	      "cache.t1.small"
+   	        "cache.t2.medium "
    	    ]
    }
    ```
@@ -458,7 +456,7 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
    	   ?Action=ModifyReplicationGroup
    	   &ApplyImmediately=true
    	   &CacheNodeType=cache.t2.micro
-   	   &CacheParameterGroupName=redis32-m3-2xl
+   	   &CacheParameterGroupName=redis7-cluster
    	   &ReplicationGroupId=myReplGroup
    	   &SignatureVersion=4
    	   &SignatureMethod=HmacSHA256

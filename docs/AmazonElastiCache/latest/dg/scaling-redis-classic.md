@@ -16,7 +16,7 @@ Valkey or Redis OSS (cluster mode disabled) clusters can be a single-node cluste
 | --- | --- | --- |
 | Scaling in | [Removing nodes from an ElastiCache cluster](Clusters.DeleteNode.md) | [Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters](scaling-redis-cluster-mode-enabled.md) |
 | Scaling out | [Adding nodes to a cluster](Clusters.html#AddNode) | [Online resharding for Valkey or Redis OSS (cluster mode enabled)](scaling-redis-cluster-mode-enabled.md#redis-cluster-resharding-online) |
-| Changing node types |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/scaling-redis-classic.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/scaling-redis-classic.html)  | [Online vertical scaling by modifying node type](redis-cluster-vertical-scaling.md) |
+| Changing node types |  +  [Scaling up single-node Valkey or Redis OSS clusters](#Scaling.RedisStandalone.ScaleUp)<br />+  [Scaling up Valkey or Redis OSS clusters with replicas](Scaling.RedisReplGrps.md#Scaling.RedisReplGrps.ScaleUp) +  [Scaling down single-node Valkey or Redis OSS clusters](#Scaling.RedisStandalone.ScaleDown)<br />+  [Scaling down Valkey or Redis OSS clusters with replicas](Scaling.RedisReplGrps.md#Scaling.RedisReplGrps.ScaleDown)  | [Online vertical scaling by modifying node type](redis-cluster-vertical-scaling.md) |
 | Changing the number of node groups | Not supported for Valkey or Redis OSS (cluster mode disabled) clusters | [Scaling Valkey or Redis OSS (Cluster Mode Enabled) clusters](scaling-redis-cluster-mode-enabled.md) |
 
 **Contents**
@@ -150,25 +150,24 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
    ```
    {
    	    "ScaleUpModifications": [
-   	        "cache.m3.2xlarge",
-   	        "cache.m3.large",
-   	        "cache.m3.xlarge",
+   	        "cache.m5.2xlarge",
+   	        "cache.m5.large",
+   	        "cache.m5.xlarge",
    	        "cache.m4.10xlarge",
    	        "cache.m4.2xlarge",
    	        "cache.m4.4xlarge",
    	        "cache.m4.large",
    	        "cache.m4.xlarge",
-   	        "cache.r3.2xlarge",
-   	        "cache.r3.4xlarge",
-   	        "cache.r3.8xlarge",
-   	        "cache.r3.large",
-   	        "cache.r3.xlarge"
+   	        "cache.r5.2xlarge",
+   	        "cache.r5.4xlarge",
+   	        "cache.r5.12xlarge",
+   	        "cache.r5.large",
+   	        "cache.r5.xlarge"
    	    ]
    	       "ScaleDownModifications": [
    	        "cache.t2.micro",
    	        "cache.t2.small ",
-   	        "cache.t2.medium ",
-               "cache.t1.small ",
+   	        "cache.t2.medium "
    	    ],
 
    	}
@@ -187,8 +186,8 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
    ```
    aws elasticache modify-cache-cluster \
    	    --cache-cluster-id {{my-redis-cache-cluster}} \
-   	    --cache-node-type {{cache.m3.xlarge}} \
-   	    --cache-parameter-group-name {{redis32-m2-xl}} \
+   	    --cache-node-type {{cache.m5.xlarge}} \
+   	    --cache-parameter-group-name {{redis7-cluster}} \
    	    --apply-immediately
    ```
 
@@ -197,8 +196,8 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
    ```
    aws elasticache modify-cache-cluster ^
    	    --cache-cluster-id {{my-redis-cache-cluster}} ^
-   	    --cache-node-type {{cache.m3.xlarge}} ^
-   	    --cache-parameter-group-name {{redis32-m2-xl}} ^
+   	    --cache-node-type {{cache.m5.xlarge}} ^
+   	    --cache-parameter-group-name {{redis7-cluster}} ^
    	    --apply-immediately
    ```
 
@@ -226,10 +225,10 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
    	        "CacheSubnetGroupName": "default",
    	        "EngineVersion": "6.0",
    	        "PendingModifiedValues": {
-   	            "CacheNodeType": "cache.m3.2xlarge"
+   	            "CacheNodeType": "cache.m5.2xlarge"
    	        },
    	        "PreferredMaintenanceWindow": "tue:11:30-tue:12:30",
-   	        "CacheNodeType": "cache.m3.medium",
+   	        "CacheNodeType": "cache.m5.large",
    	         "DataTiering": "disabled"
    	    }
    	}
@@ -280,8 +279,8 @@ The following procedure describes how to scale up a single-node Valkey or Redis 
    	   ?Action=ModifyCacheCluster
    	   &ApplyImmediately=true
    	   &CacheClusterId=MyRedisCacheCluster
-   	   &CacheNodeType=cache.m3.xlarge
-   	   &CacheParameterGroupName redis32-m2-xl
+   	   &CacheNodeType=cache.m5.xlarge
+   	   &CacheParameterGroupName redis7-cluster
    	   &Version=2015-02-02
    	   &SignatureVersion=4
    	   &SignatureMethod=HmacSHA256
@@ -385,25 +384,24 @@ The following procedure describes how to scale down a single-node Valkey or Redi
    ```
    {
    	    "ScaleUpModifications": [
-   	        "cache.m3.2xlarge",
-   	        "cache.m3.large",
-   	        "cache.m3.xlarge",
+   	        "cache.m5.2xlarge",
+   	        "cache.m5.large",
+   	        "cache.m5.xlarge",
    	        "cache.m4.10xlarge",
    	        "cache.m4.2xlarge",
    	        "cache.m4.4xlarge",
    	        "cache.m4.large",
    	        "cache.m4.xlarge",
-   	        "cache.r3.2xlarge",
-   	        "cache.r3.4xlarge",
-   	        "cache.r3.8xlarge",
-   	        "cache.r3.large",
-   	        "cache.r3.xlarge"
+   	        "cache.r5.2xlarge",
+   	        "cache.r5.4xlarge",
+   	        "cache.r5.12xlarge",
+   	        "cache.r5.large",
+   	        "cache.r5.xlarge"
    	    ]
    	       "ScaleDownModifications": [
    	        "cache.t2.micro",
    	        "cache.t2.small ",
-   	        "cache.t2.medium ",
-               "cache.t1.small ",
+   	        "cache.t2.medium "
    	    ],
 
    	}
@@ -422,8 +420,8 @@ The following procedure describes how to scale down a single-node Valkey or Redi
    ```
    aws elasticache modify-cache-cluster \
    	    --cache-cluster-id {{my-redis-cache-cluster}} \
-   	    --cache-node-type {{cache.m3.xlarge}} \
-   	    --cache-parameter-group-name {{redis32-m2-xl}} \
+   	    --cache-node-type {{cache.m5.xlarge}} \
+   	    --cache-parameter-group-name {{redis7-cluster}} \
    	    --apply-immediately
    ```
 
@@ -432,8 +430,8 @@ The following procedure describes how to scale down a single-node Valkey or Redi
    ```
    aws elasticache modify-cache-cluster ^
    	    --cache-cluster-id {{my-redis-cache-cluster}} ^
-   	    --cache-node-type {{cache.m3.xlarge}} ^
-   	    --cache-parameter-group-name {{redis32-m2-xl}} ^
+   	    --cache-node-type {{cache.m5.xlarge}} ^
+   	    --cache-parameter-group-name {{redis7-cluster}} ^
    	    --apply-immediately
    ```
 
@@ -461,10 +459,10 @@ The following procedure describes how to scale down a single-node Valkey or Redi
    	        "CacheSubnetGroupName": "default",
    	        "EngineVersion": "6.0",
    	        "PendingModifiedValues": {
-   	            "CacheNodeType": "cache.m3.2xlarge"
+   	            "CacheNodeType": "cache.m5.2xlarge"
    	        },
    	        "PreferredMaintenanceWindow": "tue:11:30-tue:12:30",
-   	        "CacheNodeType": "cache.m3.medium",
+   	        "CacheNodeType": "cache.m5.large",
    	         "DataTiering": "disabled"
    	    }
    	}
@@ -515,8 +513,8 @@ The following procedure describes how to scale updown a single-node Valkey or Re
    	   ?Action=ModifyCacheCluster
    	   &ApplyImmediately=true
    	   &CacheClusterId=MyRedisCacheCluster
-   	   &CacheNodeType=cache.m3.xlarge
-   	   &CacheParameterGroupName redis32-m2-xl
+   	   &CacheNodeType=cache.m5.xlarge
+   	   &CacheParameterGroupName redis7-cluster
    	   &Version=2015-02-02
    	   &SignatureVersion=4
    	   &SignatureMethod=HmacSHA256

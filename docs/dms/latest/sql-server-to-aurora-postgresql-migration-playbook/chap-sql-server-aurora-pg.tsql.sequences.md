@@ -436,7 +436,7 @@ The following table identifies similarities, differences, and key migration cons
 | --- | --- | --- |
 | Independent `SEQUENCE` object |  `CREATE SEQUENCE`  |  `CREATE SEQUENCE`  |
 | Automatic enumerator column property |  `IDENTITY`  |  `SERIAL` or `IDENTITY`  |
-| Reseed sequence value |  `DBCC CHECKIDENT`  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgresql-migration-playbook/chap-sql-server-aurora-pg.tsql.sequences.html)  |
+| Reseed sequence value |  `DBCC CHECKIDENT`  |  1.  Find sequence name: `pg_get_serial_sequence('[table_name]', '[serial_field_name]')`  <br />2.   `SELECT SETVALSELECT pg_get_serial_sequence('table_name', 'person_id', 1, false);`    |
 | Column restrictions | Numeric | Numeric |
 | Controlling seed and interval values |  `CREATE/ALTER SEQUENCE`  |  `CREATE/ALTER SEQUENCE`  |
 | Sequence setting initialization | Maintained through service restarts |  `ALTER SEQUENCE`  |

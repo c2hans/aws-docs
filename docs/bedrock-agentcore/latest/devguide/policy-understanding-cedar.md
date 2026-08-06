@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy
 
 Policy in AgentCore uses Cedar policies to control access to AgentCore Gateway tools. This section explains Cedar policy structure, evaluation semantics, and key concepts.
 
+**Note**
+Session-aware rules use temporal policies, which are written in Dogwood (compatible with Cedar) and use a `temporal` block. The Cedar structure and semantics described here still apply. For more information, see [Temporal policies](policy-temporal.md).
+
 **Topics**
 + [Example policy](#policy-example)
 + [Policy structure](#policy-structure)

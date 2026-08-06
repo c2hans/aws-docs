@@ -163,7 +163,7 @@ You can't enable Data Store if Customer Profiles detects naming conflicts. After
    + On the **Define key usage permissions** page, choose **Next**.
    + On the **Review and edit key policy** page, choose **Finish**.
 
-     In the following example, the name of the key starts with **bcb6fdd**:
+     In the following example, the key ID starts with **bcb6fdd**:
 ![The customer managed keys page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-create-kms-key-note-key.png)
    + Return to the tab in your browser for the Connect Customer console, **Customer profiles enable** page. Choose or tap in the **Specify KMS key box** for the key you created to appear in a dropdown list. Choose the key you created.
 ![The Specify KMS key section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customer-profiles-create-kms-key-choose-key.png)

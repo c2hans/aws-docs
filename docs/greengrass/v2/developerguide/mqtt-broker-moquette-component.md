@@ -201,15 +201,15 @@ The following table describes the changes in each version of the component.
 |  **Version**  |  **Changes**  |
 | --- | --- |
 | 2.3.7 | Version updated for [client device auth](client-device-auth-component.md) version 2.5.0 release. |
-| 2.3.6 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
-| 2.3.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
-| 2.3.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
-| 2.3.3 |  <a name="changelog-mqtt-broker-moquette-2.3.3"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
+| 2.3.6 |  **Bug fixes and improvements**<br />   General bug fixes and improvements.     |
+| 2.3.5 |  **Bug fixes and improvements**<br />   Updated Moquette to version 0.17.     |
+| 2.3.4 |  **Bug fixes and improvements**<br />   Fixes an issue where clients may experience invalid session errors when sending or receiving messages, due to duplicate client IDs. This issue caused the client's session to close.     |
+| 2.3.3 |  <a name="changelog-mqtt-broker-moquette-2.3.3"></a>**New features**<br /> Adds a new `startupTimeoutSeconds` configuration option.   |
 | 2.3.2 | Version updated for [client device auth](client-device-auth-component.md) version 2.4.0 release. |
-| 2.3.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
+| 2.3.1 |  **Bug fixes and improvements**<br />   Fixes a race condition where clients may be disconnected after attempting to reconnect, due to an invalid session.     |
 | 2.3.0 | Adds support for certificate chains. |
 | 2.2.0 | Version updated for [client device auth](client-device-auth-component.md) version 2.2.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
-| 2.0.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-moquette-component.html)  |
+| 2.1.0 |  **Bug fixes and improvements**<br />   Updates this component to use [Moquette](https://github.com/moquette-io/moquette) version 0.16, which improves performance and includes several other improvements.   Fixes an issue where the local MQTT server certificate rotates more often than intended in certain scenarios. <br />To apply this fix, you must also use v2.1.0 or later of the [client device auth component](client-device-auth-component.md).     |
+| 2.0.2 |  **Bug fixes and improvements**<br />   Increases the maximum MQTT message size from 8,092 bytes to 128 kilobytes. The effective MQTT message payload limit is slightly less, because the message size limit includes message headers.   Adds support for integer values in the `ssl_port` parameter.     |
 | 2.0.1 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.0 | Initial version. |

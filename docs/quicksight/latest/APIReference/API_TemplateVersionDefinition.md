@@ -79,6 +79,12 @@ Type: Array of [TooltipSheetDefinition](API_TooltipSheetDefinition.md) objects
 Array Members: Maximum number of 50 items.
 Required: No
 
+ ** TopicConfigurations **   <a name="QS-Type-TemplateVersionDefinition-TopicConfigurations"></a>
+An array of topic configurations. These configurations define the required columns for each topic used within a template.
+Type: Array of [TopicConfiguration](API_TopicConfiguration.md) objects
+Array Members: Maximum number of 30 items.
+Required: No
+
 ## See Also
 <a name="API_TemplateVersionDefinition_SeeAlso"></a>
 

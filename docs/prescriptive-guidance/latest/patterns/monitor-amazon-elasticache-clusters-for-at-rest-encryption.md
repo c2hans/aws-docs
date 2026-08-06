@@ -112,8 +112,8 @@ The code for this pattern is available in the GitHub [Monitor Amazon ElastiCache
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Download the code from GitHub. | Clone or download the [code repository](https://github.com/aws-samples/sample-Monitor_Amazon_ElastiCache_clusters_for_at-rest_encryption) from GitHub. The repository contains the files  `index.py` and `elasticache_encryption_at_rest.yml`. | Cloud architect |
-| Create Lambda deployment packages. | Create two .zip files from the Python code:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-elasticache-clusters-for-at-rest-encryption.html) | Cloud architect |
-| Upload the code to an S3 bucket. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-elasticache-clusters-for-at-rest-encryption.html) | Cloud architect  |
+| Create Lambda deployment packages. | Create two .zip files from the Python code:+ Create `ElastiCache-EncryptionAtRest.zip`, which contains `index.py`.<br />+ Use the following command:<pre>zip ElastiCache-EncryptionAtRest.zip index.py</pre> | Cloud architect |
+| Upload the code to an S3 bucket. | 1. Create a new S3 bucket or use an existing S3 bucket to upload the Lambda code. <br />2. Zip the Lambda code (`index.py`) and name it `ElastiCache-EncryptionAtRest.zip`. <br />3. Upload the .zip file to the S3 bucket. This bucket must be in the same AWS Region as the resources that you want to evaluate.  | Cloud architect  |
 | Deploy the CloudFormation template. | Open the [CloudFormation console](https://console.aws.amazon.com/cloudformation/) in the same AWS Region as the S3 bucket, and deploy the `elasticache_encryption_at_rest.yml` file that's provided in the code repository. In the next epic, provide values for the template parameters. | Cloud architect  |
 
 ### Complete the parameters in the CloudFormation template
@@ -124,7 +124,7 @@ The code for this pattern is available in the GitHub [Monitor Amazon ElastiCache
 | Provide the S3 bucket name. | Enter the name of the S3 bucket that you created or selected in the first epic. This S3 bucket contains the .zip file for the Lambda code and must be in the same AWS Region as the CloudFormation template and the resource that will be evaluated.  | Cloud architect |
 | Provide the S3 key. | Provide the location of the Lambda code .zip file in your S3 bucket, without leading slashes (for example, `ElasticCache-EncryptionAtRest.zip` or `controls/ElasticCache-EncryptionAtRest.zip`). | Cloud architect  |
 | Provide an email address. | Provide an active email address where you want to receive violation notifications.  | Cloud architect |
-| Specify a logging level. | Specify the logging level and verbosity. [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-elasticache-clusters-for-at-rest-encryption.html) | Cloud architect  |
+| Specify a logging level. | Specify the logging level and verbosity. + `Info` designates detailed informational messages on the application’s progress and should be used only for debugging. <br />+ `Error` designates error events that could still allow the application to continue running. <br />+ `Warning` designates potentially harmful situations. | Cloud architect  |
 
 ### Confirm the subscription
 <a name="confirm-the-subscription"></a>
@@ -138,9 +138,9 @@ The code for this pattern is available in the GitHub [Monitor Amazon ElastiCache
 
 | Issue | Solution |
 | --- | --- |
-| ** **Lambda function not triggered<br /> | **Symptom**: No logs in CloudWatch after you create or modify ElastiCache clusters.<br />**Solutions**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-elasticache-clusters-for-at-rest-encryption.html) |
-| No email notifications<br /> | **Symptom**: The Lambda function runs successfully, but you don’t receive any email notifications.<br />**Solutions**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-elasticache-clusters-for-at-rest-encryption.html) |
-| Permission issues | **Symptom**: *Access denied* errors in Lambda function CloudWatch logs.<br />**Solutions**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-elasticache-clusters-for-at-rest-encryption.html) |
+| ** **Lambda function not triggered<br /> | **Symptom**: No logs in CloudWatch after you create or modify ElastiCache clusters.<br />**Solutions**:+ Verify EventBridge rule status: <pre>aws events describe-rule --name <rule-name></pre><br />+ Confirm that the Lambda resource-based policy allows EventBridge invocation.<br />+ Confirm that the EventBridge event pattern matches ElastiCache API calls. |
+| No email notifications<br /> | **Symptom**: The Lambda function runs successfully, but you don’t receive any email notifications.<br />**Solutions**:+ Confirm your Amazon SNS subscription through the email confirmation link.<br />+ Check spam or junk folders for Amazon SNS emails.<br />+ Verify the Amazon Resource Name (ARN) for the Amazon SNS topic in the Lambda environment variable: `OUTBOUND_TOPIC_ARN`<br />+ Test Amazon SNS manually: <pre>aws sns publish --topic-arn <arn> --message "Test"</pre> |
+| Permission issues | **Symptom**: *Access denied* errors in Lambda function CloudWatch logs.<br />**Solutions**:+ Verify that the Lambda execution role has the required ElastiCache read permissions.<br />+ Confirm that the AWS KMS key policy includes the Lambda execution role.<br />+ Make sure that the Amazon SNS topic policy allows Lambda to publish. |
 
 ## Related resources
 <a name="monitor-amazon-elasticache-clusters-for-at-rest-encryption-resources"></a>

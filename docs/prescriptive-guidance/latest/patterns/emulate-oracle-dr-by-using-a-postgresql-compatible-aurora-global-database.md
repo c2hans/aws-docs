@@ -89,7 +89,7 @@ The following diagram shows three clusters with four-node Oracle RAC in differen
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Remove the primary cluster from the Aurora global database. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/emulate-oracle-dr-by-using-a-postgresql-compatible-aurora-global-database.html) | DBA |
+| Remove the primary cluster from the Aurora global database. | 1. On the Databases page, choose the primary cluster.<br />2. Choose **Remove from Global** to fail over to a secondary cluster. | DBA |
 | Reconfigure your application to divert write traffic to the newly promoted cluster. | Modify the endpoint in the application with that of the newly promoted cluster. | DBA |
 | Stop issuing any write operations to the unavailable cluster. | Stop the application and any data manipulation language (DML) activity to the cluster that you removed. | DBA |
 | Create a new Aurora global database. | Now you can create an Aurora global database with the newly promoted cluster as the primary cluster. | DBA |

@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-suppor
 - **Ancillary data**
   - **Supported in input:** √
   - **Supported in output:**
-  - **Description:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/captions-supported-formats.html)
+  - **Description:**  +  From MXF input, data that is compliant with “SMPTE 291M: Ancillary Data Package and Space Formatting” and that is contained in ancillary data. <br />+  From QuickTime input or for QuickTime output, data that is compliant with EIA-608 (also known as CEA-608) or CEA-708 (also known as EIA-708) and that is contained in ancillary data.
 
 - **Ancillary\+Embedded**
   - **Supported in input:**
@@ -101,7 +101,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-suppor
   - **Supported in input:** √
   - **Supported in output:** √
   - **Description:**
-    - From SDI input. Captions in:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/captions-supported-formats.html)<br />From TS input: Captions in the EBU Teletext format.<br />From MXF file input: OP47 teletext format, also known as SMPTE RDD-08 (compliant with ITU-R BT.1120-7). SMPTE 2031 field is unchecked in source.
+    - From SDI input. Captions in:+  OP42 teletext format. SMPTE 2031 field is unchecked in source. <br />+   OP47 teletext format wrapped in a SMPTE-2031 envelope. SMPTE 2031 field is checked in source.  <br />+  OP47 teletext format, also known as SMPTE RDD-08 (compliant with ITU-R BT.1120-7). SMPTE 2031 field is unchecked in source. <br />From TS input: Captions in the EBU Teletext format.<br />From MXF file input: OP47 teletext format, also known as SMPTE RDD-08 (compliant with ITU-R BT.1120-7). SMPTE 2031 field is unchecked in source.
     - For output: Captions in the EBU Teletext format.
 
 - **TTML**

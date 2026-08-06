@@ -58,7 +58,7 @@ This pattern describes how to access on-premises Microsoft SQL Server database t
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Restart the SQL service. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-on-premises-microsoft-sql-server-tables-from-microsoft-sql-server-on-amazon-ec2-using-linked-servers.html) | DBA |
+| Restart the SQL service. | 1. In SSMS Object Explorer, choose the SQL Server instance.<br />2. Open the context (right-click) menu.<br />3. Choose **Restart**. | DBA |
 
 ### Create new login and choose databases to access in Windows SQL Server
 <a name="create-new-login-and-choose-databases-to-access-in-windows-sql-server"></a>

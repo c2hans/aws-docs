@@ -19,7 +19,7 @@ The following AWS add-ons are compatible with Amazon EKS Hybrid Nodes.
 | CoreDNS | v1.9.3-eksbuild.7 and above |
 |  AWS Distro for OpenTelemetry (ADOT) | v0.102.1-eksbuild.2 and above |
 | CloudWatch Observability agent | v2.2.1-eksbuild.1 and above |
-| EKS Pod Identity Agent |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eks/latest/userguide/hybrid-nodes-add-ons.html)  |
+| EKS Pod Identity Agent |  +  v1.3.3-eksbuild.1 and above, except for Bottlerocket <br />+  v1.3.7-eksbuild.2 and above for Bottlerocket   |
 | Node monitoring agent | v1.2.0-eksbuild.1 and above |
 | CSI snapshot controller | v8.1.0-eksbuild.1 and above |
 |  AWS Private CA Connector for Kubernetes | v1.6.0-eksbuild.1 and above |

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DeleteFleet
 <a name="API_DeleteFleet"></a>
 
- **This API works with the following fleet types:** EC2, Anywhere, Container
+ **This API works with the following fleet types:** EC2, Anywhere
 
 Deletes all resources and information related to a fleet and shuts down any currently running fleet instances, including those in remote locations.
 

@@ -77,7 +77,7 @@ The following tables provide detailed specifications for each Amazon Nova model 
 | Max Prompt Length | 1024 characters |  |  |
 | Input Context Window |  | 512 characters | 300K context |
 | Output Resolution (generation tasks) | 4.19 million pixels (that is, 2048x2048, 2816x1536) | 1280x720, 24 frames per second |  |
-| Max Output Resolution (editing tasks) | Must meet all of the following:  4096 pixels on its longest side   Aspect ratio between 1:4 and 4:1   Total pixel count of 4.19 million or smaller   |  |  |
+| Max Output Resolution (editing tasks) | Must meet all of the following:+  4096 pixels on its longest side <br />+  Aspect ratio between 1:4 and 4:1 <br />+  Total pixel count of 4.19 million or smaller  |  |  |
 | Max Connection Duration |  |  | 8 minutes connection timeout, with max 20 concurrent connections per customer.1 |
 | Supported Input Types | PNG, JPEG | PNG, JPEG |  |
 | Supported Languages | English | English | English (US, UK), French, Italian, German, and Spanish2 |

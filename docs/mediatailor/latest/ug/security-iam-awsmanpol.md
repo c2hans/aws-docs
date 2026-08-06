@@ -32,5 +32,5 @@ View details about updates to AWS managed policies for MediaTailor since this se
 
 | Change | Description | Date |
 | --- | --- | --- |
-|  MediaTailor added new managed policies | MediaTailor added the following managed policies:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/security-iam-awsmanpol.html) | November 24, 2021 |
+|  MediaTailor added new managed policies | MediaTailor added the following managed policies:+  [AWSElementalMediaTailorReadOnly](#security-iam-awsmanpol-AWSElementalMediaTailorReadOnly)  <br />+  [AWSElementalMediaTailorFullAccess](#security-iam-awsmanpol-AWSElementalMediaTailorFullAccess)   | November 24, 2021 |
 | MediaTailor started tracking changes | MediaTailor started tracking changes for its AWS managed policies. | November 24, 2021 |

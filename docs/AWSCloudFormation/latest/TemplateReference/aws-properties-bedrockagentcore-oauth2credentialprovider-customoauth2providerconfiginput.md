@@ -25,7 +25,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ClientSecretConfig](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientsecretconfig)" : {{SecretReference}},
   "[ClientSecretSource](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientsecretsource)" : {{String}},
   "[OauthDiscovery](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-oauthdiscovery)" : {{Oauth2Discovery}},
-  "[OnBehalfOfTokenExchangeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-onbehalfoftokenexchangeconfig)" : {{OnBehalfOfTokenExchangeConfig}}
+  "[OnBehalfOfTokenExchangeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-onbehalfoftokenexchangeconfig)" : {{OnBehalfOfTokenExchangeConfig}},
+  "[PrivateEndpoint](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privateendpoint)" : {{PrivateEndpoint}},
+  "[PrivateEndpointOverrides](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privateendpointoverrides)" : {{[ PrivateEndpointOverride, ... ]}},
+  "[PrivateKeyJwtConfig](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privatekeyjwtconfig)" : {{PrivateKeyJwtConfig}}
 }
 ```
 
@@ -43,6 +46,12 @@ To declare this entity in your CloudFormation template, use the following syntax
     Oauth2Discovery}}
   [OnBehalfOfTokenExchangeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-onbehalfoftokenexchangeconfig): {{
     OnBehalfOfTokenExchangeConfig}}
+  [PrivateEndpoint](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privateendpoint): {{
+    PrivateEndpoint}}
+  [PrivateEndpointOverrides](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privateendpointoverrides): {{
+    - PrivateEndpointOverride}}
+  [PrivateKeyJwtConfig](#cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privatekeyjwtconfig): {{
+    PrivateKeyJwtConfig}}
 ```
 
 ## Properties
@@ -52,7 +61,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 The client authentication method to use when authenticating with the token endpoint.
 *Required*: No
 *Type*: String
-*Allowed values*: `CLIENT_SECRET_BASIC | CLIENT_SECRET_POST | AWS_IAM_ID_TOKEN_JWT`
+*Allowed values*: `CLIENT_SECRET_BASIC | CLIENT_SECRET_POST | AWS_IAM_ID_TOKEN_JWT | PRIVATE_KEY_JWT`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClientId`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-clientid"></a>
@@ -94,4 +103,23 @@ The OAuth2 discovery information for the custom provider.
 The configuration for on-behalf-of token exchange. This enables authentication flows that use RFC 8693 token exchange or RFC 7523 JWT authorization grants.
 *Required*: No
 *Type*: [OnBehalfOfTokenExchangeConfig](aws-properties-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateEndpoint`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privateendpoint"></a>
+The default private endpoint for the custom OAuth2 provider, enabling secure connectivity through a VPC Lattice resource configuration.
+*Required*: No
+*Type*: [PrivateEndpoint](aws-properties-bedrockagentcore-oauth2credentialprovider-privateendpoint.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateEndpointOverrides`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privateendpointoverrides"></a>
+The private endpoint overrides for the custom OAuth2 provider configuration.
+*Required*: No
+*Type*: Array of [PrivateEndpointOverride](aws-properties-bedrockagentcore-oauth2credentialprovider-privateendpointoverride.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateKeyJwtConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-customoauth2providerconfiginput-privatekeyjwtconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [PrivateKeyJwtConfig](aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

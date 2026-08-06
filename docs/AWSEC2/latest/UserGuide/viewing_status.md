@@ -24,6 +24,7 @@ If your instance has a failed status check, you typically must address the probl
    + **Status check failed for system**
    + **Status check failed for instance**
    + **Status check failed for attached EBS**
+   + **Status check failed for application**
 
    For more information, see [Status check metrics](viewing_metrics_with_cloudwatch.md#status-check-metrics).
 

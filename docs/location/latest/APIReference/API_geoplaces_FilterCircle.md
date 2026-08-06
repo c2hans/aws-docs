@@ -17,7 +17,7 @@ Array Members: Fixed number of 2 items.
 Required: Yes
 
  ** Radius **   <a name="location-Type-geoplaces_FilterCircle-Radius"></a>
- The radius, in meters, of the `FilterCircle`. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers,`ap-southeast-1` and `ap-southeast-5` regions support only up to a maximum value of 300,000.
+ The radius, in meters, of the `FilterCircle`. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only up to a maximum value of 300,000.
 Type: Long
 Valid Range: Minimum value of 1. Maximum value of 21000000.
 Required: Yes

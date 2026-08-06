@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/monitoring-on-aws
 | --- |--- |
 | **Purpose** | Help determine which AWS monitoring and observability services are the best fit for your organization. |
 | **Last updated** | January 12, 2024 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/monitoring-on-aws-how-to-choose/monitoring-on-aws-how-to-choose.html)  |
+| **Covered services** |  +  [AWS CloudTrail](https://aws.amazon.com/cloudtrail/getting-started/) <br />+  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/getting-started/) <br />+  [Amazon CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) <br />+  [AWS Config](https://aws.amazon.com/config/getting-started/) <br />+  [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-with-control-tower.html) <br />+  [Amazon Managed Grafana](https://docs.aws.amazon.com/grafana/latest/userguide/getting-started-with-AMG.html) <br />+  [Amazon Managed Service for Prometheus](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-getting-started.html) <br />+  [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/getting-started/) <br />+  [AWS Distro for OpenTelemetry](https://aws-otel.github.io/docs/getting-started/collector) <br />+  [AWS X-Ray](https://aws.amazon.com/xray/getting-started/)   |
 
 ## Introduction
 <a name="intro"></a>

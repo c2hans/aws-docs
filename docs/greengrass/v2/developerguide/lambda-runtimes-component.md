@@ -67,7 +67,7 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.0.9 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-runtimes-component.html)  |
+| 2.0.9 |  **Bug fixes and improvements**<br />Fixes an syntax warning with Python 3.12  |
 | 2.0.8 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 2.0.7 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.6 | Version updated for Greengrass nucleus version 2.3.0 release. |

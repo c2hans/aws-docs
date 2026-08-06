@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 |  |  |
 | --- |--- |
 | **Time to complete** | 5 minutes  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-family-web-app/module-4.html)  |
+| **Requires** |  +  An internet browser  <br />+  An AWS user   |
 | **Get help** | [Troubleshooting AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/troubleshooting.html)  |
 
 ## Overview

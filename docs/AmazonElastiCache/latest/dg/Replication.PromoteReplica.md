@@ -15,8 +15,6 @@ You can promote a Valkey or Redis OSS (cluster mode disabled) read replica to pr
 
 1. Modify the replication group to re-enable Multi-AZ.
 
-Multi-AZ is not available on replication groups running Redis OSS 2.6.13 or earlier.
-
 ## Using the AWS Management Console
 <a name="Replication.PromoteReplica.CON"></a>
 

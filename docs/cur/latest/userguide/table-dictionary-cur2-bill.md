@@ -11,7 +11,7 @@ Bill columns contain data about your bill for the billing period.
 
 | Column name | Description | Data type |
 | --- | --- | --- |
-| bill\_bill\_type | The type of bill that this report covers. There are three bill types:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2-bill.html) | string |
+| bill\_bill\_type | The type of bill that this report covers. There are three bill types:+  **Anniversary:** Line items for services that you used during the month. <br />+  **Purchase:** Line items for upfront service fees. <br />+  **Refund:** Line items for refunds.  | string |
 | bill\_billing\_entity | Helps you identify whether your invoices or transactions are for AWS Marketplace or for purchases of other AWS services. | string |
 | bill\_billing\_period\_end\_date | The end date of the billing period that is covered by this report, in UTC. The format is `YYYY-MM-DDTHH:mm:ssZ`. | timestamp |
 | bill\_billing\_period\_start\_date | The start date of the billing period that is covered by this report, in UTC. The format is `YYYY-MM-DDTHH:mm:ssZ`. | timestamp |

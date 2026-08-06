@@ -9,8 +9,8 @@ The following section contains information about the CloudWatch Synthetics runti
 
 The naming convention for these runtime versions is `syn-{{language}} -{{majorversion}}.{{minorversion}}`.
 
-## syn-nodejs-5.1
-<a name="CloudWatch_Synthetics_runtimeversion-syn-nodejs-5.1"></a>
+## syn-nodejs-5.2
+<a name="CloudWatch_Synthetics_runtimeversion-syn-nodejs-5.2"></a>
 
 **Important**
 Starting Synthetics `syn-nodejs-3.1` and later, Synthetics runtime uses the new namespace. Please migrate the canary script to use the new namespace. Legacy namespace will be deprecated in a future release.
@@ -19,15 +19,30 @@ Starting Synthetics `syn-nodejs-3.1` and later, Synthetics runtime uses the new 
 **Major dependencies**:
 + AWS Lambda runtime Node.js 22.x
 
- **Changes in syn-nodejs-5.1**
-+ Fix bug where HTTP headers with array values were not being captured properly.
-+ Upgrade `ws` to 8.20.1 to address the following CVEs:
-  + CVE-2026-45736
+ **Changes in syn-nodejs-5.2**
++ Multi checks blueprint bug fix – The runtime now correctly resolves `${AWS_SECRET:...}` references in global variables and SigV4 authentication configuration to their stored secret values.
++ Upgrade `protobufjs` to 7.5.6 to address the following CVEs:
+  + CVE-2026-41242
++ Upgrade `jsonpath` to 1.3.0 to address the following CVEs:
+  + CVE-2026-1615
++ Upgrade `fast-xml-parser` to 5.9.3 to address the following CVEs:
+  + CVE-2026-25896
 
 ## Previous runtime versions for Node.js
 <a name="Previousversions-nodejs"></a>
 
 The following earlier runtime versions for Node.js are still supported.
+
+### syn-nodejs-5.1
+<a name="CloudWatch_Synthetics_runtimeversion-syn-nodejs-5.1"></a>
+
+**Major dependencies**:
++ AWS Lambda runtime Node.js 22.x
+
+ **Changes in syn-nodejs-5.1**
++ Fix bug where HTTP headers with array values were not being captured properly.
++ Upgrade `ws` to 8.20.1 to address the following CVEs:
+  + CVE-2026-45736
 
 ### syn-nodejs-5.0
 <a name="CloudWatch_Synthetics_runtimeversion-syn-nodejs-5.0"></a>

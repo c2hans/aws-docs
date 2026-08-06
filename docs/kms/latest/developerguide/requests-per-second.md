@@ -33,11 +33,11 @@ You might need to scroll horizontally or vertically to see all of the data in th
 
 | Quota name | Default value (requests per second) |
 | --- | --- |
-| `Cryptographic operations (symmetric) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | These shared quotas vary with the AWS Region and the type of KMS key used in the request. Each quota is calculated separately.[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) |
-| `Cryptographic operations (RSA) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 1,000 (shared) for RSA KMS keys |
-| `Cryptographic operations (ML-DSA) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 1,000 (shared) for ML-DSA KMS keys |
-| `Cryptographic operations (ECC and SM2) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 1,000 (shared) for elliptic curve (ECC) and SM2 (China Regions only) KMS keys |
-| `Custom key store request quotas`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | [Custom key store request quotas](#rps-key-stores) are calculated separately for each custom key store[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) |
+| `Cryptographic operations (symmetric) request rate`<br />Applies to:+  `Decrypt` <br />+  `Encrypt` <br />+  `GenerateDataKey` <br />+  `GenerateDataKeyWithoutPlaintext` <br />+  `GenerateMac` <br />+  `GenerateRandom` <br />+  `ReEncrypt` <br />+  `VerifyMac`  | These shared quotas vary with the AWS Region and the type of KMS key used in the request. Each quota is calculated separately.+  10,000 (shared) <br />+  20,000 (shared) in the following Regions:   US East (Ohio), us-east-2   Asia Pacific (Singapore), ap-southeast-1   Asia Pacific (Sydney), ap-southeast-2   Asia Pacific (Tokyo), ap-northeast-1   Europe (Frankfurt), eu-central-1   Europe (London), eu-west-2   <br />+  100,000 (shared) in the following Regions:   US East (N. Virginia), us-east-1   US West (Oregon), us-west-2   Europe (Ireland), eu-west-1    |
+| `Cryptographic operations (RSA) request rate`<br />Applies to:+  `Decrypt` <br />+  `Encrypt` <br />+  `ReEncrypt` <br />+  `Sign` <br />+  `Verify`  | 1,000 (shared) for RSA KMS keys |
+| `Cryptographic operations (ML-DSA) request rate`<br />Applies to:+ `Sign`<br />+ `Verify` | 1,000 (shared) for ML-DSA KMS keys |
+| `Cryptographic operations (ECC and SM2) request rate`<br />Applies to:+  `Decrypt`—only supported for SM2 (China Regions only) KMS keys <br />+  `DeriveSharedSecret` <br />+  `Encrypt`—only supported for SM2 (China Regions only) KMS keys <br />+  `ReEncrypt`—only supported for SM2 (China Regions only) KMS keys <br />+  `Sign` <br />+  `Verify`  | 1,000 (shared) for elliptic curve (ECC) and SM2 (China Regions only) KMS keys |
+| `Custom key store request quotas`<br />Applies to:+  `Decrypt` <br />+  `DeriveSharedSecret` <br />+  `Encrypt` <br />+  `GenerateDataKey` <br />+  `GenerateDataKeyWithoutPlaintext` <br />+  `GenerateRandom` <br />+  `ReEncrypt`  | [Custom key store request quotas](#rps-key-stores) are calculated separately for each custom key store+  1,800 (shared) for each AWS CloudHSM key store <br />+  1,800 (shared) for each external key store  |
 | `CancelKeyDeletion request rate` | 5 |
 | `ConnectCustomKeyStore request rate` | 5 |
 | `CreateAlias request rate` | 5 |
@@ -54,15 +54,15 @@ You might need to scroll horizontally or vertically to see all of the data in th
 | `DisconnectCustomKeyStore request rate` | 5 |
 | `EnableKey request rate` | 5 |
 | `EnableKeyRotation request rate` | 15 |
-| `GenerateDataKeyPair (ECC_NIST_P256) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 100 |
-| `GenerateDataKeyPair (ECC_NIST_P384) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 100 |
-| `GenerateDataKeyPair (ECC_NIST_P521) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 100 |
-| `GenerateDataKeyPair (ECC_SECG_P256K1) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 100 |
-| `GenerateDataKeyPair (ECC_NIST_EDWARDS25519) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 100 |
-| `GenerateDataKeyPair (RSA_2048) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 20 |
-| `GenerateDataKeyPair (RSA_3072) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 4 |
-| `GenerateDataKeyPair (RSA_4096) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 1 |
-| `GenerateDataKeyPair (SM2 — China Regions only) request rate`<br />Applies to:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/requests-per-second.html) | 25 |
+| `GenerateDataKeyPair (ECC_NIST_P256) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 100 |
+| `GenerateDataKeyPair (ECC_NIST_P384) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 100 |
+| `GenerateDataKeyPair (ECC_NIST_P521) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 100 |
+| `GenerateDataKeyPair (ECC_SECG_P256K1) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 100 |
+| `GenerateDataKeyPair (ECC_NIST_EDWARDS25519) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 100 |
+| `GenerateDataKeyPair (RSA_2048) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 20 |
+| `GenerateDataKeyPair (RSA_3072) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 4 |
+| `GenerateDataKeyPair (RSA_4096) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 1 |
+| `GenerateDataKeyPair (SM2 — China Regions only) request rate`<br />Applies to:+  `GenerateDataKeyPair` <br />+   `GenerateDataKeyPairWithoutPlaintext`  | 25 |
 | `GetKeyLastUsage request rate` | 5 |
 | `GetKeyPolicy request rate` | 1000 |
 | `GetKeyRotationStatus request rate` | 1000 |

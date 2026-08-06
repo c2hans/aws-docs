@@ -128,7 +128,8 @@ Content-type: application/json
                                              "SelectAllValueOptions": "string",
                                              "SourceColumn": {
                                                 "ColumnName": "string",
-                                                "DataSetIdentifier": "string"
+                                                "DataSetIdentifier": "string",
+                                                "TopicIdentifier": "string"
                                              },
                                              "SourceField": "string",
                                              "SourceParameterName": "string"
@@ -178,6 +179,30 @@ Content-type: application/json
          "SourceEntityArn": "string",
          "Status": "string",
          "ThemeArn": "string",
+         "TopicConfigurations": [
+            {
+               "ColumnGroupSchemaList": [
+                  {
+                     "ColumnGroupColumnSchemaList": [
+                        {
+                           "Name": "string"
+                        }
+                     ],
+                     "Name": "string"
+                  }
+               ],
+               "DataSetSchema": {
+                  "ColumnSchemaList": [
+                     {
+                        "DataType": "string",
+                        "GeographicRole": "string",
+                        "Name": "string"
+                     }
+                  ]
+               },
+               "Placeholder": "string"
+            }
+         ],
          "VersionNumber": number
       }
    }

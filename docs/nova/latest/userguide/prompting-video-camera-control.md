@@ -38,5 +38,5 @@ For camera movement effects, you can use the following terminology:
 | zoom in | Zoom in.<br />Zoom in shot.<br />Camera zooms in.<br />Camera zooming in.<br />Camera moves forward. | focal length of a camera lens is adjusted to give the illusion of moving closer to the subject. |
 | zoom out | Zoom out.<br />Zoom out shot.<br />Camera zooms out.<br />Camera zooming out.<br />Camera moves backward. | focal length of a camera lens is adjusted to give the illusion of moving further away from the subject. |
 | whip zoom | Whip zoom in.<br />Whip zoom out. | fast zoom in or zoom out |
-| dolly zoom | Dolly zoom.<br />Dolly zoom shot.<br />Dolly zoom effect.<br />Zolly.<br />Vertigo shot. | Use dolly and zoom at the same time to keep object size the same. It has two types:  dolly out \+ zoom in   dolly in \+ zoom out   |
+| dolly zoom | Dolly zoom.<br />Dolly zoom shot.<br />Dolly zoom effect.<br />Zolly.<br />Vertigo shot. | Use dolly and zoom at the same time to keep object size the same. It has two types:1.  dolly out \+ zoom in <br />2.  dolly in \+ zoom out  |
 | following shot | Following shot. | follows the subject at a constant distance |

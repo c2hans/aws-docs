@@ -11,10 +11,10 @@ In VMware environments, storage networking connects ESXi hosts to shared storage
 |
 | Aspect | VMware | AWS |
 | --- |--- |--- |
-| Network protocols | Fibre ChannelInternet Small Computer Systems Interface (iSCSI)Network File System (NFS)VMkernel ports for storage traffic | S3 transfer accelerationAWS PrivateLinkPrivate IPsVPC endpoints |
-| Network configuration | Dedicated VMkernel interface for vSANManual configuration of iSCSI initiatorsStorage-specific virtual switches (vSwitches)VMkernel network adapters | AWS PrivateLink for private IP accessIntegration with AWS network architecturePrivate VPC access endpointsVPC integration |
-| Security | iSCSI authentication—Challenge-Handshake Authentication Protocol (CHAP)NFS permissionsvSphere permissions | Access control list (ACL) bucket policiesIAM policiesSecurity groupsVPC endpoints |
-| IP management | Manual IP managementStatic IP assignment to VMkernel adapters | Automated IP managementElastic IPsPrivate IPs via VPC endpointsVPC subnets |
+| Network protocols | + Fibre Channel<br />+ Internet Small Computer Systems Interface (iSCSI)<br />+ Network File System (NFS)<br />+ VMkernel ports for storage traffic | + S3 transfer acceleration<br />+ AWS PrivateLink<br />+ Private IPs<br />+ VPC endpoints |
+| Network configuration | + Dedicated VMkernel interface for vSAN<br />+ Manual configuration of iSCSI initiators<br />+ Storage-specific virtual switches (vSwitches)<br />+ VMkernel network adapters | + AWS PrivateLink for private IP access<br />+ Integration with AWS network architecture<br />+ Private VPC access endpoints<br />+ VPC integration |
+| Security | + iSCSI authentication—Challenge-Handshake Authentication Protocol (CHAP)<br />+ NFS permissions<br />+ vSphere permissions | + Access control list (ACL) bucket policies<br />+ IAM policies<br />+ Security groups<br />+ VPC endpoints |
+| IP management | + Manual IP management<br />+ Static IP assignment to VMkernel adapters | + Automated IP management<br />+ Elastic IPs<br />+ Private IPs via VPC endpoints<br />+ VPC subnets |
 
 As described in the following table, VMware and AWS networking architectures differ in their approaches to configuration, management, and security.
 

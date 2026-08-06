@@ -26,8 +26,8 @@ Here is a list of the key changes in this release.
 | **Multicontainer Docker** | Updated the ECS agent to version 1.22.0. |
 | **Go** | Applied minor revision 1.11.4. For details, see [Go 1.11.4 and Go 1.10.7 are released](https://groups.google.com/forum/#!topic/golang-announce/7LQy56br6Y4). |
 | **Node.js** | Applied the Node.js [November 2018 Security Releases](https://nodejs.org/en/blog/vulnerability/november-2018-security-releases/). |
-| **T3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-17-linux.html)  |
-| **C5n** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-17-linux.html)  |
+| **T3** |  + Asia Pacific (Seoul) – ap-northeast-2<br />+ Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **C5n** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Europe (Ireland) – eu-west-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
 
 ## Updated platform configurations
 <a name="release-2018-12-17-linux.platforms"></a>

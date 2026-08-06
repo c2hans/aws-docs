@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/ec2-purchasing-op
 | --- |--- |
 | **Purpose** | Help determine which [Amazon EC2](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started.html) purchasing option is the best fit for your budget and business needs. |
 | **Last updated** | June 22, 2026 |
-| **Covered purchasing options** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/ec2-purchasing-options-aws-how-to-choose/ec2-purchasing-options-aws-how-to-choose.html)  |
+| **Covered purchasing options** |  +  [EC2 On-Demand Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html) <br />+  [EC2 Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html) <br />+  [EC2 Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) <br />+  [EC2 Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html)   |
 
 ## Introduction
 <a name="introduction"></a>

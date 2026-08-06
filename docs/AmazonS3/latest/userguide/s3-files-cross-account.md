@@ -7,7 +7,10 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-cross
 
 You can access an S3 file system from compute resources in a different AWS account than the file system owner account. This is called cross-account access. With cross-account access, teams in different accounts can share the same file system without duplicating data.
 
-Cross-account access requires network connectivity on port 2049, DNS resolution of the file system mount target, and S3 Files permissions that allow access from the remote account.
+Cross-account access requires the following:
++ Network access on port 2049
++ DNS that resolves the file system mount target
++ S3 Files permissions that allow access from the remote account
 
 In this tutorial, you configure cross-account access from an Amazon EC2 instance using the AWS Management Console. Account A owns the S3 file system, and Account B owns the EC2 instance that connects to it.
 

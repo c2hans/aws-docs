@@ -279,16 +279,16 @@ The following table describes the changes in each version of the component.
 |  **Version**  |  **Changes**  |
 | --- | --- |
 | 1.6.16 | Version updated for Greengrass nucleus version 2.12.5. |
-| 1.6.12 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-component.html)  |
+| 1.6.12 |  **Bug fixes and improvements**<br />   Fixes the installation script for Windows OS users.     |
 | 1.6.11 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 1.6.10 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 1.6.9 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 1.6.8 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 1.6.7 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-component.html)  |
-| 1.6.6 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-component.html)  |
-| 1.6.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-component.html)  |
+| 1.6.7 |  **Bug fixes and improvements**<br />   Updates the `UseInstaller` installation script to install libGL, which isn't available by default on certain Linux platforms.   Updates the `UseInstaller` installation script to always use Python 3.9 in this component's virtual environment. This change helps ensure compatibility with other libraries.     |
+| 1.6.6 |  **New features**<br />   Adds support for core devices that run Windows.   Adds the new `WindowsMLRootPath` configuration parameter that you can use to configure the inference results folder on Windows core devices.     |
+| 1.6.5 |  **New features**<br />   Adds the new `UseInstaller` configuration parameter that you can use to disable the installation script in this component.     |
 | 1.6.4 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 1.6.3 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 1.6.2 | Version updated for Greengrass nucleus version 2.2.0 release. |
-| 1.6.1 |  <a name="changelog-dlr-1.6.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-component.html)  |
+| 1.6.1 |  <a name="changelog-dlr-1.6.1"></a>**New features**<br />   Install [Deep Learning Runtime](https://github.com/neo-ai/neo-ai-dlr) v1.6.0 and its dependencies.   Add support for installing DLR on Armv8 (AArch64) platforms. This extends machine learning support for Greengrass core devices running NVIDIA Jetson, such as the Jetson Nano.   <br />**Bug fixes and improvements**<br />   Install the AWS IoT Device SDK in the virtual environment to read the component configuration and apply configuration changes.   Additional minor bug fixes and improvements.     |
 | 1.3.2 | Initial version. Installs DLR v1.3.0. |

@@ -46,7 +46,7 @@ The [AmazonConnectServiceLinkedRolePolicy](https://docs.aws.amazon.com/connect/l
 
   Additionally, the following actions are allowed on all resources: `profile:ListRecommenderRecipes`, `profile:ListAccountIntegrations`, and `profile:ListDomains`.
 **Note**
-Each Connect Customer instance can be associated with only one domain at a time. However, you can link any domain to an Connect Customer instance. Cross-domain access within the same AWS account and region is automatically enabled for all domains that start with the prefix `amazon-connect-`. To restrict cross-domain access, you can either use separate Connect Customer instances to logically partition your data or use Customer Profiles domain names within the same instance that do not start with the `amazon-connect-` prefix, thereby preventing cross-domain access.
+Each Connect Customer instance can be associated with only one domain at a time. However, you can link any domain to an Connect Customer instance. Cross-domain access within the same AWS account and Region is automatically enabled for all domains that start with the prefix `amazon-connect-`. To restrict cross-domain access, you can either use separate Connect Customer instances to logically partition your data or use Customer Profiles domain names within the same instance that do not start with the `amazon-connect-` prefix, thereby preventing cross-domain access.
 + Action: Connect AI agents `wisdom:*` on all Connect Customer Connect AI agents resources with resource tag `'AmazonConnectEnabled':'True'` associated with your Connect Customer instance, except for the following actions which are explicitly denied:
   + `wisdom:DeleteAssistant`
   + `wisdom:DeleteKnowledgeBase`

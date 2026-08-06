@@ -2,15 +2,18 @@
 source_url: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streams-migrating-kcl.html
 ---
 
-# Migrating from KCL 1.x to KCL 3.x
+# Migrating from KCL 1.x to KCL 3.5.x\+
 <a name="streams-migrating-kcl"></a>
 
 ## Overview
 <a name="migrating-kcl-overview"></a>
 
-This guide provides instructions for migrating your consumer application from KCL 1.x to KCL 3.x. Due to architectural differences between KCL 1.x and KCL 3.x, migration requires updating several components to ensure compatibility.
+This guide provides instructions for migrating your consumer application from KCL 1.x to KCL 3.5.x\+. Due to architectural differences between KCL 1.x and KCL 3.5.x\+, migration requires updating several components to ensure compatibility.
 
-KCL 1.x uses different classes and interfaces compared to KCL 3.x. You must migrate the record processor, record processor factory, and worker classes to the KCL 3.x compatible format first, and follow the migration steps for KCL 1.x to KCL 3.x migration.
+KCL 1.x uses different classes and interfaces compared to KCL 3.5.x\+. You must migrate the record processor, record processor factory, and worker classes to the KCL 3.5.x\+ compatible format first, and follow the migration steps for KCL 1.x to KCL 3.5.x\+ migration.
+
+**Note**
+KCL 3.5.x\+ is supported with [Amazon DynamoDB Streams Kinesis Adapter](https://github.com/awslabs/dynamodb-streams-kinesis-adapter) version 2.4.x\+ on the GitHub website.
 
 ## Migration steps
 <a name="migration-steps"></a>
@@ -19,8 +22,8 @@ KCL 1.x uses different classes and interfaces compared to KCL 3.x. You must migr
 + [Step 1: Migrate the record processor](#step1-record-processor)
 + [Step 2: Migrate the record processor factory](#step2-record-processor-factory)
 + [Step 3: Migrate the worker](#step3-worker-migration)
-+ [Step 4: KCL 3.x configuration overview and recommendations](#step4-configuration-migration)
-+ [Step 5: Migrate from KCL 2.x to KCL 3.x](#step5-kcl2-to-kcl3)
++ [Step 4: KCL 3.5.x\+ configuration overview and recommendations](#step4-configuration-migration)
++ [Step 5: Migrate from KCL 2.x to KCL 3.5.x\+](#step5-kcl2-to-kcl3)
 
 ### Step 1: Migrate the record processor
 <a name="step1-record-processor"></a>
@@ -260,7 +263,7 @@ public class StreamsRecordProcessorFactory implements IRecordProcessorFactory {
   public ShardRecordProcessor shardRecordProcessor() {
   ```
 
-The following is an example of the record processor factory in 3.0:
+The following is an example of the record processor factory in 3.5.x\+:
 
 ```
 package com.amazonaws.codesamples;
@@ -280,7 +283,7 @@ public class StreamsRecordProcessorFactory implements ShardRecordProcessorFactor
 ### Step 3: Migrate the worker
 <a name="step3-worker-migration"></a>
 
-In version 3.0 of the KCL, a new class, called **Scheduler**, replaces the **Worker** class. The following is an example of a KCL 1.x worker:
+In version 3.5.x\+ of the KCL, a new class, called **Scheduler**, replaces the **Worker** class. The following is an example of a KCL 1.x worker:
 
 ```
 final KinesisClientLibConfiguration config = new KinesisClientLibConfiguration(...)
@@ -384,7 +387,7 @@ final Worker worker = StreamsWorkerFactory.createDynamoDbStreamsWorker(
    retrievalConfig.retrievalSpecificConfig(pollingConfig);
 
    CoordinatorConfig coordinatorConfig = configsBuilder.coordinatorConfig();
-   coordinatorConfig.clientVersionConfig(CoordinatorConfig.ClientVersionConfig.CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X);
+   coordinatorConfig.clientVersionConfig(CoordinatorConfig.ClientVersionConfig.CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X_PHASE1);
 
    Scheduler scheduler = StreamsSchedulerFactory.createScheduler(
                    configsBuilder.checkpointConfig(),
@@ -398,38 +401,45 @@ final Worker worker = StreamsWorkerFactory.createDynamoDbStreamsWorker(
            );
    ```
 
-**Important**
-The `CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X` setting maintains compatibility between DynamoDB Streams Kinesis Adapter for KCL v3 and KCL v1, not between KCL v2 and v3.
+**Note**
+KCL 3.5.x\+ migration uses three phases:
+**Phase 1** (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X_PHASE1`): Pure KCL 1.x compatible mode. No migration-specific metadata is written to the lease table. Safe rollback to KCL v1 by redeploying previous code. Use this phase to validate stability.
+**Phase 2** (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X`): Starts the migration. Writes `WORKER_METRIC_STATS` and `Migration3.0` entries to the lease table. KCL auto-transitions to full 3.x load balancing when all workers are ready. Rollback to Phase 1 is supported (via the KCL Migration Tool). Rollback to KCL v1 is no longer possible.
+**Phase 3** (`CLIENT_VERSION_CONFIG_3X`): Full KCL 3.x functionality. Explicitly set by the customer or used as default when the config is removed. Terminal state, no rollback.
+These settings maintain compatibility between DynamoDB Streams Kinesis Adapter for KCL v3 and KCL v1, not between KCL v2 and v3.
 
-### Step 4: KCL 3.x configuration overview and recommendations
+**Important**
+You must start the migration with `CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X_PHASE1` (Phase 1). Phase 1 is backward compatible with KCL v1 and does not write any migration-specific entries to the lease table, allowing safe rollback to your previous KCL version by simply redeploying your previous code. After thorough bake testing in Phase 1, you can proceed to Phase 2 (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X`) to start the full migration. If you skip Phase 1 and start directly with Phase 2, non-lease entries are written to the lease table immediately, permanently preventing rollback to KCL v1 without manual DynamoDB cleanup.
+
+### Step 4: KCL 3.5.x\+ configuration overview and recommendations
 <a name="step4-configuration-migration"></a>
 
-For a detailed description of the configurations introduced post KCL 1.x that are relevant in KCL 3.x see [KCL configurations](https://docs.aws.amazon.com//streams/latest/dev/kcl-configuration.html) and [KCL migration client configuration](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration.html#client-configuration).
+For a detailed description of the configurations introduced post KCL 1.x that are relevant in KCL 3.5.x\+ see [KCL configurations](https://docs.aws.amazon.com//streams/latest/dev/kcl-configuration.html) and [KCL migration client configuration](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration.html#client-configuration).
 
 **Important**
-Instead of directly creating objects of `checkpointConfig`, `coordinatorConfig`, `leaseManagementConfig`, `metricsConfig`, `processorConfig` and `retrievalConfig`, we recommend using `ConfigsBuilder` to set configurations in KCL 3.x and later versions to avoid Scheduler initialization issues. `ConfigsBuilder` provides a more flexible and maintainable way to configure your KCL application.
+Instead of directly creating objects of `checkpointConfig`, `coordinatorConfig`, `leaseManagementConfig`, `metricsConfig`, `processorConfig` and `retrievalConfig`, we recommend using `ConfigsBuilder` to set configurations in KCL 3.5.x\+ and later versions to avoid Scheduler initialization issues. `ConfigsBuilder` provides a more flexible and maintainable way to configure your KCL application.
 
-#### Configurations with update default value in KCL 3.x
+#### Configurations with update default value in KCL 3.5.x\+
 <a name="kcl3-configuration-overview"></a>
 
 `billingMode`
-In KCL version 1.x, the default value for `billingMode` is set to `PROVISIONED`. However, with KCL version 3.x, the default `billingMode` is `PAY_PER_REQUEST` (on-demand mode). We recommend that you use the on-demand capacity mode for your lease table to automatically adjust the capacity based on your usage. For guidance on using provisioned capacity for your lease tables, see [Best practices for the lease table with provisioned capacity mode](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration-lease-table.html).
+In KCL version 1.x, the default value for `billingMode` is set to `PROVISIONED`. However, with KCL version 3.5.x\+, the default `billingMode` is `PAY_PER_REQUEST` (on-demand mode). We recommend that you use the on-demand capacity mode for your lease table to automatically adjust the capacity based on your usage. For guidance on using provisioned capacity for your lease tables, see [Best practices for the lease table with provisioned capacity mode](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration-lease-table.html).
 
 `idleTimeBetweenReadsInMillis`
-In KCL version 1.x, the default value for `idleTimeBetweenReadsInMillis` is set to is 1,000 (or 1 second). KCL version 3.x sets the default value for i`dleTimeBetweenReadsInMillis` to 1,500 (or 1.5 seconds), but Amazon DynamoDB Streams Kinesis Adapter overrides the default value to 1,000 (or 1 second).
+In KCL version 1.x, the default value for `idleTimeBetweenReadsInMillis` is set to is 1,000 (or 1 second). KCL version 3.5.x\+ sets the default value for `idleTimeBetweenReadsInMillis` to 1,500 (or 1.5 seconds), but Amazon DynamoDB Streams Kinesis Adapter overrides the default value to 1,000 (or 1 second).
 
-#### New configurations in KCL 3.x
+#### New configurations in KCL 3.5.x\+
 <a name="kcl3-new-configs"></a>
 
 `leaseAssignmentIntervalMillis`
 This configuration defines the time interval before newly discovered shards begin processing, and is calculated as 1.5 × `leaseAssignmentIntervalMillis`. If this setting isn't explicitly configured, the time interval defaults to 1.5 × `failoverTimeMillis`. Processing new shards involves scanning the lease table and querying a global secondary index (GSI) on the lease table. Lowering the `leaseAssignmentIntervalMillis` increases the frequency of these scan and query operations, resulting in higher DynamoDB costs. We recommend setting this value to 2000 (or 2 seconds) to minimize the delay in processing new shards.
 
 `shardConsumerDispatchPollIntervalMillis`
-This configuration defines the interval between successive polls by the shard consumer to trigger state transitions. In KCL version 1.x, this behavior was controlled by the `idleTimeInMillis` parameter, which was not exposed as a configurable setting. With KCL version 3.x, we recommend setting this config to match the value used for` idleTimeInMillis` in your KCL version 1.x setup.
+This configuration defines the interval between successive polls by the shard consumer to trigger state transitions. In KCL version 1.x, this behavior was controlled by the `idleTimeInMillis` parameter, which was not exposed as a configurable setting. With KCL version 3.5.x\+, we recommend setting this config to match the value used for` idleTimeInMillis` in your KCL version 1.x setup.
 
-### Step 5: Migrate from KCL 2.x to KCL 3.x
+### Step 5: Migrate from KCL 2.x to KCL 3.5.x\+
 <a name="step5-kcl2-to-kcl3"></a>
 
-To ensure a smooth transition and compatibility with the latest Kinesis Client Library (KCL) version, follow steps 5-8 in the migration guide's instructions for [upgrading from KCL 2.x to KCL 3.x](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration-from-2-3.html#kcl-migration-from-2-3-worker-metrics).
+To ensure a smooth transition and compatibility with the latest Kinesis Client Library (KCL) version, follow steps 5-8 in the migration guide's instructions for [upgrading from KCL 2.x to KCL 3.5.x\+](https://docs.aws.amazon.com//streams/latest/dev/kcl-migration-from-2-3.html#kcl-migration-from-2-3-worker-metrics).
 
-For common KCL 3.x troubleshooting issues, see [Troubleshooting KCL consumer applications](https://docs.aws.amazon.com//streams/latest/dev/troubleshooting-consumers.html).
+For common KCL 3.5.x\+ troubleshooting issues, see [Troubleshooting KCL consumer applications](https://docs.aws.amazon.com//streams/latest/dev/troubleshooting-consumers.html).

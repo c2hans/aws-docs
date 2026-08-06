@@ -21,8 +21,14 @@ Required: Yes
  ** DataSetReferences **   <a name="QS-Type-TemplateSourceAnalysis-DataSetReferences"></a>
 A structure containing information about the dataset references used as placeholders in the template.
 Type: Array of [DataSetReference](API_DataSetReference.md) objects
-Array Members: Minimum number of 1 item.
+Array Members: Minimum number of 0 items.
 Required: Yes
+
+ ** TopicReferences **   <a name="QS-Type-TemplateSourceAnalysis-TopicReferences"></a>
+A structure containing information about the topic references used as placeholders in the template.
+Type: Array of [TopicReference](API_TopicReference.md) objects
+Array Members: Minimum number of 1 item.
+Required: No
 
 ## See Also
 <a name="API_TemplateSourceAnalysis_SeeAlso"></a>

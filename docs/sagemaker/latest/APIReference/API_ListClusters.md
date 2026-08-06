@@ -96,7 +96,8 @@ Required: No
          "ClusterName": "string",
          "ClusterStatus": "string",
          "CreationTime": number,
-         "ImageVersionStatus": "string"
+         "ImageVersionStatus": "string",
+         "TrainingPlanArns": [ "string" ]
       }
    ],
    "NextToken": "string"

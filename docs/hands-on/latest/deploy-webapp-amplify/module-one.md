@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/mo
 |  |  |
 | --- |--- |
 | **Time to complete** | 5 minutes  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/module-one.html)  |
+| **Requires** |  +  A [GitHub account](https://github.com/)  <br />+  GitHub [SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)  <br />+  [Nodejs](https://nodejs.org/en/download) and [npm](https://www.npmjs.com/)    |
 | **Get help** | [Troubleshooting Amplify](https://docs.amplify.aws/react/build-a-backend/troubleshooting/)  |
 
 ## Overview

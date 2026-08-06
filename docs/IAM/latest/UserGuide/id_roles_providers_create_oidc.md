@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_
 # Create an OpenID Connect (OIDC) identity provider in IAM
 <a name="id_roles_providers_create_oidc"></a>
 
-*IAM OIDC identity providers* are entities in IAM that describe an external identity provider (IdP) service that supports the [OpenID Connect](http://openid.net/connect/) (OIDC) standard, such as Google or Salesforce. You use an IAM OIDC identity provider when you want to establish trust between an OIDC-compatible IdP and your AWS account. This is useful when creating a mobile app or web application that requires access to AWS resources, but you don't want to create custom sign-in code or manage your own user identities. For more information about this scenario, see [OIDC federation](id_roles_providers_oidc.md).
+*IAM OIDC identity providers* are entities in IAM that describe an external identity provider (IdP) service that supports the [OpenID Connect](https://docs.aws.amazon.com/http://openid.net/connect/) (OIDC) standard, such as Google or Salesforce. You use an IAM OIDC identity provider when you want to establish trust between an OIDC-compatible IdP and your AWS account. This is useful when creating a mobile app or web application that requires access to AWS resources, but you don't want to create custom sign-in code or manage your own user identities. For more information about this scenario, see [OIDC federation](id_roles_providers_oidc.md).
 
 You can create and manage an IAM OIDC identity provider using the AWS Management Console, the AWS Command Line Interface, the Tools for Windows PowerShell, or the IAM API.
 

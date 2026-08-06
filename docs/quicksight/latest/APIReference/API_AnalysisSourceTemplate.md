@@ -21,8 +21,14 @@ Required: Yes
  ** DataSetReferences **   <a name="QS-Type-AnalysisSourceTemplate-DataSetReferences"></a>
 The dataset references of the source template of an analysis.
 Type: Array of [DataSetReference](API_DataSetReference.md) objects
-Array Members: Minimum number of 1 item.
+Array Members: Minimum number of 0 items.
 Required: Yes
+
+ ** TopicReferences **   <a name="QS-Type-AnalysisSourceTemplate-TopicReferences"></a>
+The topic references of the source template of an analysis.
+Type: Array of [TopicReference](API_TopicReference.md) objects
+Array Members: Minimum number of 1 item.
+Required: No
 
 ## See Also
 <a name="API_AnalysisSourceTemplate_SeeAlso"></a>

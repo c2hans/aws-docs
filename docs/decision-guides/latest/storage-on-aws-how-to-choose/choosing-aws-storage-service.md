@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/storage-on-aws-ho
 | --- |--- |
 | **Purpose** | Help determine which AWS storage service is the best fit for your organization. |
 | **Last updated** | June 26, 2024 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/storage-on-aws-how-to-choose/choosing-aws-storage-service.html)  |
+| **Covered services** |  +  [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html) <br />+  [Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) <br />+  [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/getting-started.html) <br />+  [Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html) <br />+  [Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) <br />+  [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/getting-started.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [AWS Snow Family](https://docs.aws.amazon.com/snowball/) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com//storagegateway/) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/getting-started.html)   |
 
 ## Introduction
 <a name="intro"></a>

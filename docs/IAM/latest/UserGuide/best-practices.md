@@ -119,3 +119,5 @@ However, SCPs and RCPs alone are insufficient to grant permissions to principals
 <a name="bp-permissions-boundaries"></a>
 
 In some scenarios, you might want to delegate permissions management within an account to others. For example, you could allow developers to create and manage roles for their workloads. When you delegate permissions to others, use *permissions boundaries* to set the maximum permissions that you delegate. A permissions boundary is an advanced feature for using a managed policy to set the maximum permissions that an identity-based policy can grant to an IAM role. A permissions boundary does not grant permissions on its own. For more information, see [Permissions boundaries for IAM entities](access_policies_boundaries.md).
+
+After implementing these best practices, see [Security in IAM and AWS STS](security.md) for additional security topics including compliance validation, resilience, and infrastructure security.

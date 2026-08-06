@@ -67,45 +67,45 @@ The `max-length` and `max-queue` default limits are tested and evaluated based o
 The following table lists the default limit values for a newly created broker. Amazon MQ applies these values according to the broker's instance type and deployment mode.
 
 - **mq.m7g.medium**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 2,500 / **`max-connections`:** 100
+  - **Deployment mode:** Single-instance / **`max-length`:** 500,000 / **`max-queues`:** 100 / **`max-connections`:** 100
   - **Deployment mode:** Cluster / **`max-length`:** 500,000 / **`max-queues`:** 100 / **`max-connections`:** 100
 
 - **mq.m7g.large**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 20,000 / **`max-connections`:** 5,000
-  - **Deployment mode:** Cluster / **`max-length`:** 8,000,000 / **`max-queues`:** 10,000 / **`max-connections`:** 5,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 20,000 / **`max-connections`:** 4,000
+  - **Deployment mode:** Cluster / **`max-length`:** 8,000,000 / **`max-queues`:** 4,000 / **`max-connections`:** 15,000
 
 - **mq.m7g.xlarge**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 30,000 / **`max-connections`:** 10,000
-  - **Deployment mode:** Cluster / **`max-length`:** 9,000,000 / **`max-queues`:** 15,000 / **`max-connections`:** 10,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 30,000 / **`max-connections`:** 8,000
+  - **Deployment mode:** Cluster / **`max-length`:** 9,000,000 / **`max-queues`:** 5,000 / **`max-connections`:** 20,000
 
 - **mq.m7g.2xlarge**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 40,000 / **`max-connections`:** 20,000
-  - **Deployment mode:** Cluster / **`max-length`:** 10,000,000 / **`max-queues`:** 40,000 / **`max-connections`:** 20,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 60,000 / **`max-connections`:** 15,000
+  - **Deployment mode:** Cluster / **`max-length`:** 10,000,000 / **`max-queues`:** 6,000 / **`max-connections`:** 40,000
 
 - **mq.m7g.4xlarge**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 60,000 / **`max-connections`:** 40,000
-  - **Deployment mode:** Cluster / **`max-length`:** 12,000,000 / **`max-queues`:** 30,000 / **`max-connections`:** 40,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 150,000 / **`max-connections`:** 30,000
+  - **Deployment mode:** Cluster / **`max-length`:** 12,000,000 / **`max-queues`:** 10,000 / **`max-connections`:** 100,000
 
 - **mq.m7g.8xlarge**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 80,000 / **`max-connections`:** 80,000
-  - **Deployment mode:** Cluster / **`max-length`:** 20,000,000 / **`max-queues`:** 40,000 / **`max-connections`:** 80,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 260,000 / **`max-connections`:** 60,000
+  - **Deployment mode:** Cluster / **`max-length`:** 20,000,000 / **`max-queues`:** 20,000 / **`max-connections`:** 200,000
 
 - **mq.m7g.12xlarge**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 100,000 / **`max-connections`:** 120,000
-  - **Deployment mode:** Cluster / **`max-length`:** 30,000,000 / **`max-queues`:** 20,000 / **`max-connections`:** 120,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 280,000 / **`max-connections`:** 90,000
+  - **Deployment mode:** Cluster / **`max-length`:** 30,000,000 / **`max-queues`:** 30,000 / **`max-connections`:** 300,000
 
 - **mq.m7g.16xlarge**
-  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 120,000 / **`max-connections`:** 160,000
-  - **Deployment mode:** Cluster / **`max-length`:** 40,000,000 / **`max-queues`:** 50,000 / **`max-connections`:** 160,000
+  - **Deployment mode:** Single-instance / **`max-length`:** N/A / **`max-queues`:** 300,000 / **`max-connections`:** 120,000
+  - **Deployment mode:** Cluster / **`max-length`:** 40,000,000 / **`max-queues`:** 40,000 / **`max-connections`:** 400,000
 
 | Instance type | Deployment mode | `max-length` | `max-queues` | `max-connections` |
 | --- | --- | --- | --- | --- |
 | t3.micro | Single-instance | N/A | 500 | 500 |
 | m5.large | Single-instance | N/A | 20,000 | 4,000 |
-| m5.large | Cluster | 8,000,000 | 10,000 | 15,000 |
+| m5.large | Cluster | 8,000,000 | 4,000 | 15,000 |
 | m5.xlarge | Single-instance | N/A | 30,000 | 8,000 |
-| m5.xlarge | Cluster | 9,000,000 | 10,000 | 20,000 |
+| m5.xlarge | Cluster | 9,000,000 | 5,000 | 20,000 |
 | m5.2xlarge | Single-instance | N/A | 60,000 | 15,000 |
-| m5.2xlarge | Cluster | 10,000,000 | 10,000 | 40,000 |
+| m5.2xlarge | Cluster | 10,000,000 | 6,000 | 40,000 |
 | m5.4xlarge | Single-instance | N/A | 150,000 | 30,000 |
 | m5.4xlarge | Cluster | 12,000,000 | 10,000 | 100,000 |

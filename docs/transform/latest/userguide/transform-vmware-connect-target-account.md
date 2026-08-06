@@ -50,7 +50,7 @@ Before you set up the connector, understand the account roles involved in your m
 | Account | Description |
 | --- | --- |
 | AWS Transform account | Any member account in your AWS Organization where you set up AWS Transform. This is where your AWS Transform workspace runs. It does not need to be the management account. |
-| Connector target account | The account your AWS Transform connector is configured to. This depends on your migration type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html) |
+| Connector target account | The account your AWS Transform connector is configured to. This depends on your migration type:+  **Single-account migration** – Connect to the account you are migrating workloads to. The connector target account and the target account are the same. <br />+  **Multi-account migration** – Connect to the organization management account or a Delegated Administrator (DA) account. The DA account must be registered as delegated administrator for both MGN and CloudFormation StackSets in your AWS Organization. AWS Transform checks whether the connected account is the management account or a DA account and adjusts its behavior accordingly.  |
 | Target account | The AWS account where your workloads are migrated to. In a single-account migration, this is the same as the connector target account. In a multi-account migration, these are the individual member accounts receiving the migrated workloads. |
 
 ### Using a delegated administrator account

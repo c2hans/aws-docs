@@ -26,6 +26,6 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 
 | Location of Field on Web Interface | Location of Tag in XML |
 | --- | --- |
-| Streams – Video > Advanced > Adaptive Quantization | stream\_assembly/video\_description/{{codec}}/adaptive\_quantization<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-quantization.html) |
+| Streams – Video > Advanced > Adaptive Quantization | stream\_assembly/video\_description/{{codec}}/adaptive\_quantization<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
 | Streams – Video > Advanced > Framing Quantization | stream\_assembly/video\_description/{{codec}}/framing\_quantization<br />where {{codec}} is:<br /> **meg2\_settings** |
-| Streams – Video > Advanced > Softness | stream\_assembly/video\_description/{{codec}}/softness<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-quantization.html) |
+| Streams – Video > Advanced > Softness | stream\_assembly/video\_description/{{codec}}/softness<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings**  |

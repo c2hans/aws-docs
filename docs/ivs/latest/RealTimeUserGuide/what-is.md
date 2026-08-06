@@ -45,6 +45,6 @@ When you use resources (e.g., create a stage), you must specify the region in wh
 | --- | --- |
 | Amazon IVS console  | Using the Select a Region drop-down in the top right of the navigation bar. |
 | Amazon IVS API | Using the appropriate service endpoint. See the [Amazon IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com//ivs/latest/RealTimeAPIReference/Welcome.html).<br />(If you access the API through an SDK, set up the SDK’s `region` parameter. See [Tools to Build on AWS](https://aws.amazon.com/developer/tools/).) |
-| AWS CLI | Either:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/what-is.html) |
+| AWS CLI | Either:+  Appending `--region <aws-region>` to your CLI command. <br />+  Putting the region in your local AWS configuration file.  |
 
 *Remember, regardless of the region in which a stage was created, you can stream to Amazon IVS from anywhere, and viewers can watch from anywhere.*

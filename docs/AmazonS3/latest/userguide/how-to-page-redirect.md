@@ -144,7 +144,7 @@ The following table describes the elements in the routing rule.
 |  Name  |  Description  |
 | --- | --- |
 | RoutingRules |  Container for a collection of RoutingRule elements.  |
-| RoutingRule | A rule that identifies a condition and the redirect that is applied when the condition is met. <br />Condition:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/userguide/how-to-page-redirect.html) |
+| RoutingRule | A rule that identifies a condition and the redirect that is applied when the condition is met. <br />Condition:+  A `RoutingRules` container must contain at least one routing rule.  |
 | Condition | Container for describing a condition that must be met for the specified redirect to be applied. If the routing rule does not include a condition, the rule is applied to all requests. |
 | KeyPrefixEquals | The prefix of the object key name from which requests are redirected. <br />`KeyPrefixEquals` is required if `HttpErrorCodeReturnedEquals` is not specified. If both `KeyPrefixEquals` and `HttpErrorCodeReturnedEquals` are specified, both must be true for the condition to be met. |
 | HttpErrorCodeReturnedEquals | The HTTP error code that must match for the redirect to apply. If an error occurs, and if the error code meets this value, then the specified redirect applies.<br />`HttpErrorCodeReturnedEquals` is required if `KeyPrefixEquals` is not specified. If both `KeyPrefixEquals` and `HttpErrorCodeReturnedEquals` are specified, both must be true for the condition to be met. |

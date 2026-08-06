@@ -1936,7 +1936,7 @@ You might need to scroll horizontally or vertically to see all of the data in th
 | Amazon Elastic Block Store (Amazon EBS) | ec2.{{AWS\_region}}.amazonaws.com (EBS only) |
 | Amazon Elastic Container Registry (Amazon ECR) | ecr.{{AWS\_region}}.amazonaws.com |
 | Amazon Elastic File System (Amazon EFS) | elasticfilesystem.{{AWS\_region}}.amazonaws.com |
-| Amazon ElastiCache | Include both ViaService names in the condition key value:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html) |
+| Amazon ElastiCache | Include both ViaService names in the condition key value:+  `elasticache.{{AWS_region}}.amazonaws.com` <br />+  `dax.{{AWS_region}}.amazonaws.com`  |
 | AWS Elemental MediaTailor | mediatailor.{{AWS\_region}}.amazonaws.com |
 | AWS Entity Resolution | entityresolution.{{AWS\_region}}.amazonaws.com |
 | Amazon EventBridge | events.{{AWS\_region}}.amazonaws.com |

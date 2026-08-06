@@ -504,21 +504,21 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.0.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html)  |
-| 2.0.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html)  |
+| 2.0.3 |  **Bug fixes and improvements**<br />   Fixes an issue where EMQX doesn't start on Windows if the path contains spaces.     |
+| 2.0.2 |  **Bug fixes and improvements**<br />   Fixes an issue where EMQX starts up before the Client device auth component is ready.     |
 | 2.0.1 | Version updated for [client device auth](client-device-auth-component.md) version 2.5.0 release. |
-| 2.0.0 | This version of the MQTT 5 broker (EMQX) expects different configuration parameters than version 1.x. If you use a non-default configuration for version 1.x, you must update the component's configuration for 2.x. For more information, see [Configuration](#mqtt-broker-emqx-component-configuration).[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html) |
+| 2.0.0 | This version of the MQTT 5 broker (EMQX) expects different configuration parameters than version 1.x. If you use a non-default configuration for version 1.x, you must update the component's configuration for 2.x. For more information, see [Configuration](#mqtt-broker-emqx-component-configuration).**New features**<br />   Upgrades the MQTT broker to EMQX 5.1.1.   Enables broker configuration changes without restarting the component.   <br />**Updates**<br />   Adds a new `emqxConfig` configuration field that replaces the `emqx`, `mergeConfigurationFiles`, and `replaceConfigurationFiles` configuration fields.    |
 
 ------
 #### [ v1.x ]
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 1.2.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html)  |
+| 1.2.3 |  **Bug fixes and improvements**<br />   Fixes an issue where clients couldn't interact with EMQX after previously authenticating by disconnecting and reauthenticating the client.     |
 | 1.2.2 | Version updated for [client device auth](client-device-auth-component.md) version 2.4.0 release. |
-| 1.2.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html)  |
+| 1.2.1 |  **Bug fixes and improvements**<br />   Fixes an issue where the component won't startup on Windows if Visual C\+\+ Redistributable is not already present.   Updates EMQX to version 4.4.14.     |
 | 1.2.0 | Adds support for certificate chains. |
-| 1.1.0 | <a name="changelog-emqx-1.1.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-broker-emqx-component.html) |
+| 1.1.0 | <a name="changelog-emqx-1.1.0"></a>**New features**<br />   Adds support for EMQX configurations including broker options and plug-ins.   <br />**Bug fixes and improvements**<br />   Updates EMQX to version 4.4.9.    |
 | 1.0.1 | Fixes an issue during the TLS handshake which results in some MQTT clients failing to connect. |
 | 1.0.0 | Initial version. |
 

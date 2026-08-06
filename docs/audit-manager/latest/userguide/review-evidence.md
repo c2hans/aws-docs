@@ -63,7 +63,7 @@ In this section, you can review the following information:
 | --- | --- |
 | **1. Evidence ID** | The unique identifier for the evidence. |
 | **2. Date and time** | The time and date when the evidence was collected. This is represented in Coordinated Universal Time (UTC). |
-| 3. Compliance check | The evaluation status for compliance check evidence. [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-evidence.html) |
+| 3. Compliance check | The evaluation status for compliance check evidence. +  For evidence that's collected from AWS Security Hub CSPM, a **Pass** or **Fail** result is reported directly from AWS Security Hub CSPM. <br />+  For evidence that's collected from AWS Config, a **Compliant** or **Non-compliant** result is reported directly from AWS Config. <br />+  If **Not applicable** is shown, this indicates one of two things. Either you don't have AWS Security Hub CSPM or AWS Config enabled. Or, the evidence comes from a different data source.  |
 | 4. Data source mapping | The mapping keyword that was used to collect the evidence. |
 | 5. Data source type | The type of data source where the evidence was collected from. |
 | 6. Account ID | The AWS account that's associated with the evidence. |
@@ -95,7 +95,7 @@ In this section, you can review the following information:
 | Name | Description |
 | --- | --- |
 | **ARN** | The Amazon Resource Name (ARN) of the resource. An ARN might not be available for all evidence types. |
-| **Resource compliance** | The evaluation status for the resource.[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-evidence.html) |
+| **Resource compliance** | The evaluation status for the resource.+  For evidence that's collected from AWS Security Hub CSPM, a **Pass** or **Fail** result is reported directly from Security Hub CSPM. <br />+  For evidence that's collected from AWS Config, a **Compliant** or **Non-compliant** result is reported directly from AWS Config. <br />+  If **Not applicable** is shown, this indicates that you either don't have AWS Config or Security Hub CSPM enabled, or the evidence comes from a different data source.  |
 | Value | More information about the resource assessment. In some cases, a link to a JSON file is provided with more information. |
 
 ## Additional resources

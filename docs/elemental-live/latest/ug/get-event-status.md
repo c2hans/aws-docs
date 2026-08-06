@@ -32,7 +32,7 @@ JSON content consisting of one live\_event element that contains:
 |  Tag  |  Value  |  Description  |
 | --- | --- | --- |
 | id | Integer | The unique REST ID for this input |
-| state | String | The state of the input:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| state | String | The state of the input:+  clear: The input is Activated or Prepared. <br />+  quarantined: The input is either starting or is recovering from a failure condition. <br />+  pending: The input is Idle <br />+  errored: A failure condition (as defined by the failure\_condition tag in the event XML) has been triggered.   |
 | input\_label | String | The input label, if one was created. |
 | uri | String | The URI for a file input.  |
 
@@ -43,10 +43,10 @@ The state tag and active\_input tag can provide some information about the stage
 
 |  State tag  |  active\_input tag  |  Stage and state  |
 | --- | --- | --- |
-| pending | Does not specify this input | The input is one of:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
-| clear | Does not specify this input | The input is one of:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
-| clear | Specifies this input | The input is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
-| quarantined | Specifies this input | The input is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/get-event-status.html) |
+| pending | Does not specify this input | The input is one of:+  Idle and Unprepared <br />+  Next-in-line and Unprepared  |
+| clear | Does not specify this input | The input is one of:+  Idle and Prepared <br />+  Active <br />+  Next-in-line and Prepared  |
+| clear | Specifies this input | The input is:+  Active  |
+| quarantined | Specifies this input | The input is:+  Active  |
 | errored | Specifies this input | A failure condition (as defined by the failure\_condition tag in the event XML) has been triggered.  |
 
 Note that you cannot determine whether the input is Next-in-line from the response to this Get. You must maintain that information outside of Elemental Live.

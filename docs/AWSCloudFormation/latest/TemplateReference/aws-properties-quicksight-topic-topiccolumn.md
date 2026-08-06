@@ -103,7 +103,7 @@ A description of the column and its contents.
 *Required*: No
 *Type*: String
 *Minimum*: `0`
-*Maximum*: `256`
+*Maximum*: `500`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ColumnFriendlyName`  <a name="cfn-quicksight-topic-topiccolumn-columnfriendlyname"></a>

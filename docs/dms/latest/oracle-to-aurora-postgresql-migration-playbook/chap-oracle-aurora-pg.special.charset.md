@@ -202,8 +202,8 @@ CREATE TABLE test1 (col1 text COLLATE "de_DE", col2 text COLLATE "es_ES");
 | Feature | Oracle |  Aurora PostgreSQL |
 | --- | --- | --- |
 | View database character set |  <pre>SELECT * FROM NLS_DATABASE_PARAMETERS;</pre>  |  <pre>select datname,<br />  pg_encoding_to_char(encoding),<br />  datcollate, datctype<br />  from pg_database;</pre>  |
-| Modify the database character set |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.special.charset.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.special.charset.html)  |
-| Character set granularity |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.special.charset.html)  | Database |
+| Modify the database character set |  +  Full Export/Import. <br />+  When converting to Unicode, use the Oracle DMU utility.   |  +  Export the database. <br />+  Drop or rename the database. <br />+  Re-create the database with the desired new character set. <br />+  Import database data from the exported file into the new database.   |
+| Character set granularity |  +  Instance (11g \+ 12cR1) <br />+  Database (Oracle 12cR2)   | Database |
 | UTF8 | Supported by VARCHAR2 and NVARCHAR data types | Supported by VARCHAR datatype |
 | UTF16 | Supported by NVARCHAR2 datatype | Not Supported |
 | NCHAR/NVARCHAR data types | Supported | Not Supported |

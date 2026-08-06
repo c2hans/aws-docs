@@ -189,7 +189,7 @@ The following table provides information about important JSON keys to configure.
 | Configuration | Description |
 | --- | --- |
 | connectionConfiguration | Configuration information for the endpoint for the data source. |
-| repositoryEndpointMetadata | Required configuration information for connecting your data source.[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/aurora-mysql-api.html) |
+| repositoryEndpointMetadata | Required configuration information for connecting your data source.+  dbType—The type of Java database you are using, whether `mysql`, `db2`, `postgresql`, `oracle`, or `sqlserver`. <br />+  dbHost—The database host name. <br />+  dbPort—The database port. <br />+  dbInstance—The database instance.  |
 | repositoryConfigurations | Configuration information for the content of the data source. For example, configuring specific types of content and field mappings. Specify the type of data source and the secret ARN. |
 | document |  A list of objects that map the attributes or field names of your database content to Amazon Q index field names. For more information, see [Fiel](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-field-mappings). |
 | additionalProperties | Additional configuration options for your content in your data source. Use to include or exclude specific content in your database data source. |
@@ -206,6 +206,6 @@ The following table provides information about important JSON keys to configure.
 | sourceURIColumn | Enter the name of the column which contains Source URLs to be indexed. |
 | isSslEnabled | true to add a path to an SSL certificate file stored in an Amazon S3 bucket. |
 | type | The type of data source. Specify JDBC as your data source type. |
-| syncMode | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. You can choose [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/aurora-mysql-api.html)  |
+| syncMode | Specify whether Amazon Q should update your index by syncing all documents or only new, modified, and deleted documents. You can choose +  `FORCED_FULL_CRAWL` to freshly re-crawl all content and replace existing content each time your data source syncs with your index <br />+  `FULL_CRAWL` to incrementally crawl only new, modified, and deleted content each time your data source syncs with your index <br />+  `CHANGE_LOG` to incrementally crawl only new and modified content each time your data source syncs with your index.   |
 | secretArn | The Amazon Resource Name (ARN) of a Secrets Manager secret that contains username and password required to connect to your database. The secret must contain a JSON structure with the following keys: <pre>{<br />    "username": "{{database username}}",<br />    "password": "{{password}}"<br />}</pre> |
 | version | The version of the template that is currently supported. |

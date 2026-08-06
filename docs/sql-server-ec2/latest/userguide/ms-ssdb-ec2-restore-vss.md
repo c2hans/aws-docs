@@ -37,5 +37,5 @@ The following table includes release and change history for the AWS VSS restore 
 | --- | --- |
 | January 14, 2026 | Enhanced restore solution to create new Amazon EBS volumes only from snapshots that contain source database files to be restored, reducing cleanup overhead and improving the overall reliability of restore operations. |
 | April 22, 2025 | Fixed an issue where the restore process times out when disk partition information is not available, improving reliability of restore operations. |
-| January 24, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sql-server-ec2/latest/userguide/ms-ssdb-ec2-restore-vss.html)  |
+| January 24, 2025 |  +  Updated automation document description to improve clarity <br />+  Minor bug fixes and stability improvements   |
 | January 15, 2025 | Initial release of the VSS restore solution. |

@@ -72,9 +72,9 @@ Enterprises can combine Lambda@Edge and AWS IoT Greengrass to create a tiered ed
 |
 | Tier | AWS technology | Technology role |
 | --- |--- |--- |
-| Device edge | AWS IoT Greengrass | On-deviceOffline-capableAI logicSensor data processing |
-| Network edge | Lambda@Edge | Content personalizationLightweight AI near the userUltra-low latency |
-| Cloud core | Amazon Bedrock, Amazon SageMaker Serverless Inference, and AWS Step Functions | Heavy AI inferenceOrchestrationAgent reasoningRAG pipelines |
+| Device edge | AWS IoT Greengrass | + On-device<br />+ Offline-capable<br />+ AI logic<br />+ Sensor data processing |
+| Network edge | Lambda@Edge | + Content personalization<br />+ Lightweight AI near the user<br />+ Ultra-low latency |
+| Cloud core | Amazon Bedrock, Amazon SageMaker Serverless Inference, and AWS Step Functions | + Heavy AI inference<br />+ Orchestration<br />+ Agent reasoning<br />+ RAG pipelines |
 
 ## Summary of edge AI
 <a name="summary-of-edge-ai.58514f52-5f09-5008-a4ed-adf71a3a1bd6"></a>

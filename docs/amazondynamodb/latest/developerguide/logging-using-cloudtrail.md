@@ -105,6 +105,7 @@ Data plane events can be filtered by resource type, for granular control over wh
 + [PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html)
 + [Query](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html)
 + [Scan](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Scan.html)
++ [SearchVectors](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_SearchVectors.html)
 + [TransactGetItems](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactGetItems.html)
 + [TransactWriteItems](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_TransactWriteItems.html)
 + [UpdateItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html)

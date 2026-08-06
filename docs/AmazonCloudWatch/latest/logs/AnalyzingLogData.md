@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/AnalyzingLo
 
 With CloudWatch Logs Insights, you can interactively search and analyze your log data in Amazon CloudWatch Logs. You can perform queries to help you more efficiently and effectively respond to operational issues. In addition to querying using log groups, you can query using facets, data source, and data type. If an issue occurs, you can use CloudWatch Logs Insights to identify potential causes and validate deployed fixes. You are limited to 100 concurrent CloudWatch Logs Insights QL per account, including queries added to dashboards. Additionally, you can run 15 concurrent queries for either OpenSearch Service PPL or OpenSearch Service SQL.
 
-CloudWatch Logs Insights supports three query languages that you can use for your queries:
+CloudWatch Logs Insights supports 3 query languages that you can use for your queries:
 + A purpose-built **Logs Insights query language (Logs Insights QL)** with a few simple but powerful commands.
 + **OpenSearch Service Piped Processing Language (PPL)**. OpenSearch PPL enables you to analyze your logs using a set of commands delimited by pipes (\|).
 
@@ -39,7 +39,7 @@ If you are signed in to an account set up as a monitoring account in CloudWatch 
 
 When you create queries using Logs Insights QL, you can also use natural language to create CloudWatch Logs Insights queries. To do so, ask questions about or describe the data you're looking for. This AI-assisted capability generates a query based on your prompt and provides a line-by-line explanation of how the query works. For more information, see [Use natural language to generate and update CloudWatch Logs Insights queries](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs-Insights-Query-Assist.html).
 
-Queries using any of the supported query languages time out after 60 minutes, if they have not completed. Query results are available for seven days.
+Queries using any of the supported query languages time out after 60 minutes, if they have not completed. Query results are available for 7 days.
 
 CloudWatch Logs Insights queries incur charges based on the amount of uncompressed log data scanned, regardless of query language. For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/).
 

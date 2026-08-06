@@ -18,7 +18,7 @@ This release applies Windows September 2019 security updates to the Windows Serv
 | --- | --- |
 | **Windows security updates** | Applied September 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-09-24-windows.html) |
-| **i3en** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-09-24-windows.html)  |
+| **i3en** |  + US East (Ohio) – us-east-2<br />+ Europe (Ireland) – eu-west-1  |
 
 ## New platform versions
 <a name="release-2019-09-24-windows.platforms"></a>

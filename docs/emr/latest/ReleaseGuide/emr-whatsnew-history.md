@@ -430,35 +430,35 @@ Initial release date: March 30, 2022
 
 | Change type | Description |
 | --- | --- |
-| Upgrades | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
+| Upgrades | + Update flink version to 1.14.2.<br />+ log4j upgraded to 2.17.1. |
 
 **Hadoop changes**
 
 | Change type | Description |
 | --- | --- |
-| Hadoop open source backports since EMR 5.34.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
-| Hadoop changes and fixes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
+| Hadoop open source backports since EMR 5.34.0 | + [YARN-10438](https://issues.apache.org/jira/browse/YARN-10438): Handle null containerId in ClientRMService\#getContainerReport()<br />+ [YARN-7266](https://issues.apache.org/jira/browse/YARN-7266): Timeline Server event handler threads locked<br />+ [YARN-10438](https://issues.apache.org/jira/browse/YARN-9063): ATS 1.5 fails to start if RollingLevelDb files are corrupt or missing<br />+ [HADOOP-13500](https://issues.apache.org/jira/browse/HADOOP-13500): Synchronizing iteration of Configuration properties object<br />+ [YARN-10651](https://issues.apache.org/jira/browse/YARN-10651): CapacityScheduler crashed with NPE in AbstractYarnScheduler.updateNodeResource()<br />+ [HDFS-12221](https://issues.apache.org/jira/browse/HDFS-12221): Replace xerces in XmlEditsVisitor<br />+ [HDFS-16410](https://issues.apache.org/jira/browse/HDFS-16410): Insecure Xml parsing in OfflineEditsXmlLoader |
+| Hadoop changes and fixes | + Tomcat used in KMS and HttpFS is upgraded to 8.5.75<br />+ In FileSystemOptimizedCommitterV2, the success marker was written in the commitJob output path defined while creating the committer. Since commitJob and task level output paths can differ, the path has been corrected to use the one defined in manifest files. For Hive jobs, this results in the success marker being written correctly in when performing operations such as dynamic partition or UNION ALL. |
 
 **Hive changes**
 
 | Change type | Description |
 | --- | --- |
-| Hive upgraded to open source [release 2.3.9](https://www.mail-archive.com/user@hive.apache.org/msg22311.html), including these JIRA fixes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
-| Hive open source backports since EMR 5.34.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
-| Hive upgrades and fixes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
-| New features | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
+| Hive upgraded to open source [release 2.3.9](https://www.mail-archive.com/user@hive.apache.org/msg22311.html), including these JIRA fixes | + [HIVE-17155](https://issues.apache.org/jira/browse/HIVE-17155): findConfFile() in HiveConf.java has some issues with the conf path <br />+ [HIVE-24797](https://issues.apache.org/jira/browse/HIVE-24797): Disable validate default values when parsing Avro schemas<br />+ [HIVE-21563](https://issues.apache.org/jira/browse/HIVE-21563): Improve Table\#getEmptyTable performance by disable registerAllFunctionsOnce<br />+ [HIVE-18147](https://issues.apache.org/jira/browse/HIVE-18147): Tests can fail with java.net.BindException: Address already in use<br />+ [HIVE-24608](https://issues.apache.org/jira/browse/HIVE-24608): Switch back to get\_table in HMS client for Hive 2.3.x<br />+ [HIVE-21200](https://issues.apache.org/jira/browse/HIVE-21200): Vectorization - date column throwing java.lang.UnsupportedOperationException for parquet<br />+ [HIVE-19228](https://issues.apache.org/jira/browse/HIVE-19228): Remove commons-httpclient 3.x usage |
+| Hive open source backports since EMR 5.34.0 | + [HIVE-19990](https://issues.apache.org/jira/browse/HIVE-19990): Query with interval literal in join condition fails<br />+ [HIVE-25824](https://issues.apache.org/jira/browse/HIVE-25824): Upgrade branch-2.3 to log4j 2.17.0<br />+ [TEZ-4062](https://issues.apache.org/jira/browse/TEZ-4062): Speculative attempt scheduling should be aborted when Task has completed<br />+ [TEZ-4108](https://issues.apache.org/jira/browse/TEZ-4108): NullPointerException during speculative execution race condition<br />+ [TEZ-3918](https://issues.apache.org/jira/browse/TEZ-3918): Setting tez.task.log.level does not work |
+| Hive upgrades and fixes | + Upgrade Log4j version to 2.17.1<br />+ Upgrade ORC version to 1.4.3<br />+ FixED deadlock due to penalty thread in ShuffleScheduler |
+| New features | + Added feature to print Hive Query in AM logs. This is disabled by default. Flag/Conf: `tez.am.emr.print.hive.query.in.log`. Status (default): FALSE.  |
 
 **Oozie changes**
 
 | Change type | Description |
 | --- | --- |
-| Oozie open source backports since EMR 5.34.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
+| Oozie open source backports since EMR 5.34.0 | + [OOZIE-3652](https://issues.apache.org/jira/browse/OOZIE-3652): Oozie launcher should retry directory listing when NoSuchFileException occurs |
 
 **Pig changes**
 
 | Change type | Description |
 | --- | --- |
-| Upgrades | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-whatsnew-history.html) |
+| Upgrades | + log4j upgraded to 1.2.17. |
 
 **Known issues**
 + When you use Spark with Hive partition location formatting to read data in Amazon S3, and you run Spark on Amazon EMR releases 5.30.0 to 5.36.0, and 6.2.0 to 6.9.0, you might encounter an issue that prevents your cluster from reading data correctly. This can happen if your partitions have all of the following characteristics:

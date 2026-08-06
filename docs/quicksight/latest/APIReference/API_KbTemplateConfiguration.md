@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_KbTem
 # KbTemplateConfiguration
 <a name="API_KbTemplateConfiguration"></a>
 
-The template configuration for a knowledge base.
+The template configuration for a knowledge base. This object contains connector-specific configuration that defines how data is crawled and indexed.
 
 ## Contents
 <a name="API_KbTemplateConfiguration_Contents"></a>
@@ -14,7 +14,14 @@ The template configuration for a knowledge base.
 In the following list, the required parameters are described first.
 
  ** template **   <a name="QS-Type-KbTemplateConfiguration-template"></a>
-The template document that defines the knowledge base behavior.
+The connector configuration for the knowledge base data source. The structure depends on the connector type of the data source referenced by `DataSourceArn`.
+The template must be a JSON object. The required fields vary by connector type:
++  **Amazon S3** (`S3V2`) – Requires `connectionConfiguration` with `bucketName`. Supports `filterConfiguration` for inclusion and exclusion prefixes and patterns. Supports `accessControlConfiguration` and `deletionProtectionConfiguration`.
++  **Google Drive** (`GOOGLEDRIVEV3`) – Requires `connectionConfiguration` with `authType` set to `SERVICE_ACCOUNT`. Supports `dataEntityConfiguration` with `crawlMyDrive`, `crawlSharedWithMe`, and `crawlSharedDrives`.
++  **OneDrive** (`ONEDRIVEV3`) – Requires `authType` at the template root level set to `TWO_LEGGED_OAUTH`. Requires `connectionConfiguration` with `tenantId` in UUID format. Supports `dataEntityConfiguration` with `crawlPersonalDrives` and `crawlSharedWithMe`.
++  **SharePoint** (`SHAREPOINTV3`) – Requires `connectionConfiguration` with `tenantId` in UUID format. Supports `dataEntityConfiguration` with `siteUrls`, `crawlFiles`, and `crawlPages`.
++  **Web Crawler** (`WEBCRAWLERV3`) – Requires `connectionConfiguration` with `seedUrls` or `siteMapUrls` (mutually exclusive) and `authType`. Supports `crawlConfiguration` for crawl depth, rate limits, and scope. Supports `filterConfiguration` for file size limits and URL patterns. Valid values for `authType`: `NO_AUTH`, `BASIC_AUTH`, `FORM`, `SAML`.
+The optional `deletionProtectionConfiguration` object is supported by all connector types. It contains `enableDeletionProtection` and `deletionProtectionThreshold`.
 Type: JSON value
 Required: No
 

@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 # Prerequisites
 <a name="registry-prerequisites"></a>
 
-**Upcoming namespace migration**
- AWS Agent Registry is currently in public preview under the bedrock-agentcore namespace. Starting August 6, 2026, the service moves to the agent-registry namespace. If you use AWS Agent Registry, you must update your endpoints, IAM policies, SDK clients, CLI scripts, and registry data. For more information about migrating from public preview, see [Comprehensive registry migration guide](registry-faq.md).
+**Migration Now Open**
+ AWS Agent Registry has launched under the new `agent-registry` namespace. Support for the public preview `bedrock-agentcore` namespace will be discontinued on September 17, 2026. For migration instructions, see [Comprehensive registry migration guide](registry-faq.md).
 
 Before you use AWS Agent Registry, complete the following prerequisites.
 
@@ -23,7 +23,7 @@ aws --version  # Should show version 2.
 ## Python and AWS SDK
 <a name="registry-prereq-sdk"></a>
 
-To access your AWS credentials and configure them for use with SDKs, follow the steps at [Using IAM Identity Center to authenticate AWS SDK and Tools](https://docs.aws.amazon.com/sdkref/latest/guide/access-sso.html) . If you plan to use the AWS Python SDK (Boto3) to interact with AWS Agent Registry programmatically:
+To access your AWS credentials and configure them for use with SDKs, follow the steps at [Using IAM Identity Center to authenticate AWS SDK and Tools](https://docs.aws.amazon.com/sdkref/latest/guide/access-sso.html). If you plan to use the AWS Python SDK (Boto3) to interact with AWS Agent Registry programmatically:
 
 1. Install **Python 3.10\+**.
 
@@ -42,6 +42,112 @@ Set up IAM permissions based on the persona that matches your role. The full lis
 <a name="registry-prereq-admin-permissions"></a>
 
 For administrators who manage the full lifecycle of registries, records, and approve/reject/deprecate records:
+
+**Example**
+
+```
+{
+"Version": "2012-10-17",
+    "Statement":
+    [
+        {
+            "Sid": "AllowCreatingAndListingRegistries",
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:CreateRegistry",
+                "agent-registry:ListRegistries"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:*"
+            ]
+        },
+        {
+            "Sid": "AllowGetUpdateDeleteRegistry",
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistry",
+                "agent-registry:UpdateRegistry",
+                "agent-registry:DeleteRegistry"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Sid": "AllowCreatingAndListingRecords",
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:CreateRegistryRecord",
+                "agent-registry:ListRegistryRecords"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Sid": "AllowRecordLevelOperations",
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistryRecord",
+                "agent-registry:UpdateRegistryRecord",
+                "agent-registry:DeleteRegistryRecord",
+                "agent-registry:SubmitRegistryRecordForApproval"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*/record/*"
+            ]
+        },
+        {
+            "Sid": "AllowApproveRejectDeprecateRecords",
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:UpdateRegistryRecordStatus"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*/record/*"
+            ]
+        },
+        {
+            "Sid": "AdditionalPermissionForRegistryManagedWorkloadIdentity",
+            "Effect": "Allow",
+            "Action":
+            [
+                "bedrock-agentcore:*WorkloadIdentity"
+            ],
+            "Resource":
+            [
+                "arn:aws:bedrock-agentcore:*:<account>:workload-identity-directory/default/*"
+            ]
+        },
+        {
+            "Sid": "AllowPermissionForCreatingServiceLinkedRole",
+            "Effect": "Allow",
+            "Action":
+            [
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource":
+            [
+                "arn:aws:iam::*:role/aws-service-role/agent-registry.amazonaws.com/AWSServiceRoleForAgentRegistry"
+            ],
+            "Condition":
+            {
+                "StringLike": { "iam:AWSServiceName": "agent-registry.amazonaws.com" }
+            }
+        }
+    ]
+}
+```
 
 ```
 {
@@ -126,6 +232,22 @@ For administrators who manage the full lifecycle of registries, records, and app
             [
                 "arn:aws:bedrock-agentcore:*:<account>:workload-identity-directory/default/*"
             ]
+        },
+        {
+            "Sid": "AllowPermissionForCreatingServiceLinkedRole",
+            "Effect": "Allow",
+            "Action":
+            [
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource":
+            [
+                "arn:aws:iam::*:role/aws-service-role/agent-registry.amazonaws.com/AWSServiceRoleForAgentRegistry"
+            ],
+            "Condition":
+            {
+                "StringLike": { "iam:AWSServiceName": "agent-registry.amazonaws.com" }
+            }
         }
     ]
 }
@@ -135,6 +257,72 @@ For administrators who manage the full lifecycle of registries, records, and app
 <a name="registry-prereq-curator-permissions"></a>
 
 For curators who review and approve/reject records but don’t perform administrative operations:
+
+**Example**
+
+```
+{
+"Version": "2012-10-17",
+    "Statement":
+    [
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:ListRegistries"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistry"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:ListRegistryRecords"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistryRecord"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*/record/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:UpdateRegistryRecordStatus"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*/record/*"
+            ]
+        }
+    ]
+}
+```
 
 ```
 {
@@ -204,6 +392,118 @@ For curators who review and approve/reject records but don’t perform administr
 <a name="registry-prereq-publisher-permissions"></a>
 
 For publishers who submit MCP servers, agents, or other resources to the registry:
+
+**Note**
+The three sync-related statements (`AllowWorkloadIdentityForSynchronization`, `AllowGetResourceOauth2TokenForOauthBasedSynchronization`, `AllowPassRoleForIamBasedSynchronization`) authorize workload identity and OAuth credential provider resources managed by AgentCore Identity. Those resources intentionally remain under the `bedrock-agentcore` namespace, so their actions, ARNs, and service principal do not change.
+
+**Note**
+Scope the `AllowGetResourceOauth2TokenForOauthBasedSynchronization` statement to the specific OAuth credential provider ARN whose access token this identity needs. Avoid wildcards in the provider segment of the ARN — patterns such as `token-vault/ ` or `token-vault/default/oauth2credentialprovider/` grant access to every OAuth credential provider in the account, which can enable cross-team credential access. Follow the principle of least privilege by naming the specific provider in the `Resource` field, for example `arn:aws:bedrock-agentcore:<region>:<account>:token-vault/default/oauth2credentialprovider/<oauthProviderName>`.
+
+**Example**
+
+```
+{
+"Version": "2012-10-17",
+    "Statement":
+    [
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:ListRegistries"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistry"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:CreateRegistryRecord",
+                "agent-registry:ListRegistryRecords"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistryRecord",
+                "agent-registry:UpdateRegistryRecord",
+                "agent-registry:DeleteRegistryRecord",
+                "agent-registry:SubmitRegistryRecordForApproval"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*/record/*"
+            ]
+        },
+        {
+            "Sid": "AllowWorkloadIdentityForSynchronization",
+            "Effect": "Allow",
+            "Action":
+            [
+                "bedrock-agentcore:GetWorkloadAccessToken"
+            ],
+            "Resource":
+            [
+                "arn:aws:bedrock-agentcore:*:<account>:workload-identity-directory/*"
+            ]
+        },
+        {
+            "Sid": "AllowGetResourceOauth2TokenForOauthBasedSynchronization",
+            "Effect": "Allow",
+            "Action":
+            [
+                "bedrock-agentcore:GetResourceOauth2Token"
+            ],
+            "Resource":
+            [
+                "arn:aws:bedrock-agentcore:<region>:<account>:token-vault/default/oauth2credentialprovider/<oauthProviderName>"
+            ]
+        },
+        {
+            "Sid": "AllowPassRoleForIamBasedSynchronization",
+            "Effect": "Allow",
+            "Action":
+            [
+                "iam:PassRole"
+            ],
+            "Resource":
+            [
+                "arn:aws:iam::<account>:role/<your-sync-role-name>"
+            ],
+            "Condition":
+            {
+                "StringEquals":
+                {
+                    "iam:PassedToService": "bedrock-agentcore.amazonaws.com"
+                },
+                "StringLike":
+                {
+                    "iam:AssociatedResourceARN": "arn:aws:bedrock-agentcore:<region>:<account>:registry/*/record/*"
+                }
+            }
+        }
+    ]
+}
+```
 
 ```
 {
@@ -279,7 +579,7 @@ For publishers who submit MCP servers, agents, or other resources to the registr
             ],
             "Resource":
             [
-                "arn:aws:bedrock-agentcore:*:<account>:token-vault/*"
+                "arn:aws:bedrock-agentcore:<region>:<account>:token-vault/default/oauth2credentialprovider/<oauthProviderName>"
             ]
         },
         {
@@ -313,6 +613,53 @@ For publishers who submit MCP servers, agents, or other resources to the registr
 <a name="registry-prereq-consumer-permissions"></a>
 
 For consumers who search for and use approved resources:
+
+**Example**
+
+```
+{
+"Version": "2012-10-17",
+    "Statement":
+    [
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:ListRegistries"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:GetRegistry"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action":
+            [
+                "agent-registry:SearchDiscoverableRegistryRecords",
+                "agent-registry:ListDiscoverableRegistryRecords",
+                "agent-registry:GetDiscoverableRegistryRecord",
+                "agent-registry:InvokeRegistryMcp"
+            ],
+            "Resource":
+            [
+                "arn:aws:agent-registry:*:<account>:registry/*"
+            ]
+        }
+    ]
+}
+```
 
 ```
 {

@@ -94,7 +94,7 @@ The following table describes the fields of a health check log entry, in order. 
 
 | Field (position) | Description |
 | --- | --- |
-| type (1) | The type of health check request or connection. The possible values are as follows (ignore any other values):[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-health-check-logs.html) |
+| type (1) | The type of health check request or connection. The possible values are as follows (ignore any other values):+  `http` -- HTTP <br />+  `https` -- HTTP over TLS <br />+  `h2` -- HTTP/2 over TLS <br />+  `grpc` -- gRPC <br />+  `lambda` -- Lambda Function  |
 | time (2) | Timestamp of when health check is initiated on a target, in ISO 8601 format. |
 | latency (3) | Total time elapsed (in seconds) to complete the current health check. |
 | target\_addr (4) | IP address and port of the target in the format, IP:Port. Lambda’s ARN if the target is a Lambda function. |

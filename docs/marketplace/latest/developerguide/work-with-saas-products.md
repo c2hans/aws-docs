@@ -284,7 +284,7 @@ Provide information for the fields to update the `UpdateDeliveryOptions` change 
           + `EndpointUrlParameters` (array) (optional) – The placeholder parameters in a dynamic endpoint URL. Required when `EndpointType` is `DYNAMIC`. Limited to 1-5 parameters.
             + `Name` (string) (required) – The parameter name. Must match a `{paramName}` placeholder in the `EndpointUrl`. Must match pattern `^[a-zA-Z][a-zA-Z0-9_]*$`. Maximum 100 characters.
             + `Description` (string) (optional) – A description of the parameter. Maximum 1,000 characters.
-            + `DefaultValue` (string) (optional) – The default value for the parameter until the seller delivers a value. Must match pattern `^[a-zA-Z0-9._~-]+$`. Maximum 256 characters.
+            + `DefaultValue` (string) (optional) – The default value for the parameter until the seller delivers a value. Must match pattern `^[a-zA-Z0-9._~-]+$`. Maximum 256 characters. Required for any parameter that is new or that previously had a `DefaultValue` and no longer does, if the product is already public. This protects existing buyers from a required parameter with no default value.
           + `Description` (string) (optional) – A description of the API endpoint and its functionality.
           + `AuthorizationTypes` (array) (required) – The types of authorization required to access the API endpoint. Valid values: `API_KEY`, `OAUTH2`.
           + `Schemas` (array) (optional) – The schema specifications for the API endpoint.
@@ -327,7 +327,7 @@ The change request is added to a queue and processed. This includes validating i
 | Duplicate deployment template URL | You provided duplicate deployment template urls. Provide unique deployment template urls. | 422 |
 | Invalid deployment template type | The deployment template type is invalid. Provide a valid deployment template type. Supported values are ["CloudFormation@1.0"]. | 422 |
 | Invalid deployment template IAM policy | The deployment template IAM policy is invalid. Provide a valid IAM policy. | 422 |
-| Invalid usage instructions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-saas-products.html)  | 422 |
+| Invalid usage instructions |  +  Images aren't supported by the usage instructions. Remove the image [x]. <br />+  You provided a link to an invalid URL in the usage instructions: [x]. Provide a valid URL. <br />+  You provided a link with an unsupported URI scheme in the usage instructions. Use a supported scheme: ["http", "https", "tel", "mailto"].   | 422 |
 
 **Asynchronous Errors**
 
@@ -338,6 +338,7 @@ The change request is added to a queue and processed. This includes validating i
 | INVALID\_FULFILLMENT\_URL | The URL you provided returned HTTP status code [x]. Provide a fulfillment URL that renders with a 200. |
 | INVALID\_LAUNCH\_URL | The URL you provided returned HTTP status code [x]. Provide a launch URL that renders with a 200. |
 | INVALID\_TEMPLATE\_URL  | Quick Start URL is invalid. Provide deployment template URL that is published through AWS QuickStarts to Amazon S3. Invalid deployment templates URL: [x] |
+| DEFAULT\_VALUE\_REQUIRED\_FOR\_NEW\_PARAMETER | Endpoint '[x]' has parameter '[x]' with no DefaultValue. A DefaultValue is required when the product is already Public and this update either introduces the parameter or removes a DefaultValue the parameter previously had. Provide a DefaultValue for the parameter. |
 
 ### Update delivery option visibility
 <a name="update-delivery-options-visibility"></a>
@@ -542,7 +543,7 @@ The change request is added to a queue and processed. This includes validating i
 | Duplicate deployment template URL | You provided duplicate deployment template urls. Provide unique deployment template urls. | 422 |
 | Invalid deployment template type | The deployment template type is invalid. Provide a valid deployment template type. Supported values are ["CloudFormation@1.0"]. | 422 |
 | Invalid deployment template IAM policy | The deployment template IAM policy is invalid. Provide a valid IAM policy. | 422 |
-| Invalid usage instructions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-saas-products.html)  | 422 |
+| Invalid usage instructions |  +  Images aren't supported by the usage instructions. Remove the image [x]. <br />+  You provided a link to an invalid URL in the usage instructions: [x]. Provide a valid URL. <br />+  You provided a link with an unsupported URI scheme in the usage instructions. Use a supported scheme: ["http", "https", "tel", "mailto"].   | 422 |
 
 **Asynchronous Errors**
 

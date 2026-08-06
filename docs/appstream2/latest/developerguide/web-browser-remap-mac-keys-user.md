@@ -11,8 +11,8 @@ A *modifier key* modifies the action of another key when you use both keys toget
 
 | You can remap this Mac key | To this key during a streaming session |
 | --- | --- |
-| Option key![Option key icon.](http://docs.aws.amazon.com/appstream2/latest/developerguide/images/mac-option-key.png) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appstream2/latest/developerguide/web-browser-remap-mac-keys-user.html)  |
-| Command key![Command key icon with keyboard symbol.](http://docs.aws.amazon.com/appstream2/latest/developerguide/images/mac-command-key.png) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appstream2/latest/developerguide/web-browser-remap-mac-keys-user.html)  |
+| Option key![Option key icon.](http://docs.aws.amazon.com/appstream2/latest/developerguide/images/mac-option-key.png) |  +  Remote Alt key<br />+ Local modifier key  |
+| Command key![Command key icon with keyboard symbol.](http://docs.aws.amazon.com/appstream2/latest/developerguide/images/mac-command-key.png) |  +  Remote Control key<br />+ Remote Meta key  |
 
 Follow these steps to remap the Mac Option and Command keys during an WorkSpaces Applications streaming session.
 

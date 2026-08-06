@@ -34,7 +34,7 @@ Do not use the `SessionDuration` HTTP parameter when you get temporary credentia
 The URL that the federation endpoint provides is valid for 15 minutes after it is created. This differs from the duration (in seconds) of the temporary security credential session that is associated with the URL. Those credentials are valid for the duration you specified when you created them, starting from the time they were created.
 
 **Important**
-The URL grants access to your AWS resources through the AWS Management Console if you have enabled permissions in the associated temporary security credentials. For this reason, you should treat the URL as a secret. We recommend returning the URL through a secure redirect, for example, by using a 302 HTTP response status code over an SSL connection. For more information about the 302 HTTP response status code, go to [RFC 2616, section 10.3.3](https://datatracker.ietf.org/doc/html/rfc2616#section-10.3.3).
+The URL grants access to your AWS resources through the AWS Management Console if you have enabled permissions in the associated temporary security credentials. For this reason, you should treat the URL as a secret. We recommend returning the URL through a secure redirect, for example, by using a 302 HTTP response status code over an SSL connection. For more information about the 302 HTTP response status code, see [RFC 2616, section 10.3.3](https://datatracker.ietf.org/doc/html/rfc2616#section-10.3.3).
 
 To complete these tasks, you can use the [HTTPS Query API for AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/APIReference/) and the [AWS Security Token Service (AWS STS)](https://docs.aws.amazon.com/STS/latest/APIReference/). Or, you can use programming languages, such as Java, Ruby, or C\#, along with the appropriate [AWS SDK](https://aws.amazon.com/tools/). Each of these methods is described in the following topics.
 
@@ -327,7 +327,7 @@ input("Press Enter to close the browser window...")
 ## Example code using Java
 <a name="STSConsoleLink_programJava"></a>
 
-The following example shows how to use Java to programmatically construct a URL that gives users direct access to the AWS Management Console. The following code snippet uses the [AWS SDK for Java](http://aws.amazon.com/documentation/sdkforjava/).
+The following example shows how to use Java to programmatically construct a URL that gives users direct access to the AWS Management Console. The following code snippet uses the [AWS SDK for Java](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/sdkforjava/).
 
 ```
 import java.net.URLEncoder;
@@ -430,7 +430,7 @@ String loginURL = signInURL + "?Action=login" +
 ## Example showing how to construct the URL (Ruby)
 <a name="STSConsoleLink_programRuby"></a>
 
-The following example shows how to use Ruby to programmatically construct a URL that gives users direct access to the AWS Management Console. This code snippet uses the [AWS SDK for Ruby](http://aws.amazon.com/documentation/sdkforruby/).
+The following example shows how to use Ruby to programmatically construct a URL that gives users direct access to the AWS Management Console. This code snippet uses the [AWS SDK for Ruby](https://docs.aws.amazon.com/http://aws.amazon.com/documentation/sdkforruby/).
 
 ```
 require 'rubygems'

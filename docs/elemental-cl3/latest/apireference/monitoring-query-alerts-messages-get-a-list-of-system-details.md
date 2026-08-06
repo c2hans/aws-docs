@@ -35,8 +35,8 @@ The response is XML content consisting of one **hash** element with the followin
 | serial-number | String | If available, provides the serial number for the hardware. |
 | cpu-info | Array  | Provides the model name and count of the CPU.  |
 | cpu-summary | String | Provides a summary of the CPU, including model number and version. |
-| mem-info | String | Provides memory information, including:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/monitoring-query-alerts-messages-get-a-list-of-system-details.html) |
+| mem-info | String | Provides memory information, including:+  Total memory <br />+  Used memory <br />+  Free memory <br />+  Shared memory <br />+  Buffers <br />+  Cached  |
 | network-info | Array | Provides network information such as the Ethernet ports in use. |
-| md-raid | String | Provides Redundant Array of Independent Disks (RAID) information, including:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/monitoring-query-alerts-messages-get-a-list-of-system-details.html) |
+| md-raid | String | Provides Redundant Array of Independent Disks (RAID) information, including:+  RAID-Level <br />+  X <br />+  RAID-Devices <br />+  Total-Devices <br />+  State <br />+  Active-Devices <br />+  Working-Devices  |
 | hardware-raid | Array | Provides appliance hardware RAID information. |
-| mount-info | Array | Provides information about the devices that are mounted to the AWS Elemental Conductor Live 3 system. Includes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/monitoring-query-alerts-messages-get-a-list-of-system-details.html) |
+| mount-info | Array | Provides information about the devices that are mounted to the AWS Elemental Conductor Live 3 system. Includes:+  Device name <br />+  Path <br />+  Size <br />+  Used space <br />+  Available space <br />+  Percent space used  |

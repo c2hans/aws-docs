@@ -83,12 +83,12 @@ Output from this command will look something like this.
 
 **Example**
 With Valkey and Redis OSS, to find the name and permitted values of the parameter you want to change, see [Valkey and Redis OSS parameters](ParameterGroups.Engine.md#ParameterGroups.Redis)
-The following sample code sets the value of two parameters, *reserved-memory-percent* and *cluster-enabled* on the parameter group `myredis32-on-30`. We set *reserved-memory-percent* to `30` (30 percent) and *cluster-enabled* to `yes` so that the parameter group can be used with Valkey or Redis OSS (cluster mode enabled) clusters (replication groups).
+The following sample code sets the value of two parameters, *reserved-memory-percent* and *cluster-enabled* on the parameter group `myredis7-on-30`. We set *reserved-memory-percent* to `30` (30 percent) and *cluster-enabled* to `yes` so that the parameter group can be used with Valkey or Redis OSS (cluster mode enabled) clusters (replication groups).
 For Linux, macOS, or Unix:
 
 ```
 aws elasticache modify-cache-parameter-group \
-    --cache-parameter-group-name {{myredis32-on-30}} \
+    --cache-parameter-group-name {{myredis7-on-30}} \
     --parameter-name-values \
         ParameterName={{reserved-memory-percent}},ParameterValue={{30}} \
         ParameterName={{cluster-enabled}},ParameterValue={{yes}}
@@ -97,7 +97,7 @@ For Windows:
 
 ```
 aws elasticache modify-cache-parameter-group ^
-    --cache-parameter-group-name {{myredis32-on-30}} ^
+    --cache-parameter-group-name {{myredis7-on-30}} ^
     --parameter-name-values ^
         ParameterName={{reserved-memory-percent}},ParameterValue={{30}} ^
         ParameterName={{cluster-enabled}},ParameterValue={{yes}}
@@ -106,7 +106,7 @@ Output from this command will look something like this.
 
 ```
 {
-    "CacheParameterGroupName": "my-redis32-on-30"
+    "CacheParameterGroupName": "my-redis7-on-30"
 }
 ```
 
@@ -155,12 +155,12 @@ https://elasticache.us-west-2.amazonaws.com/
 
 **Example**
 With Valkey and Redis OSS, to find the name and permitted values of the parameter you want to change, see [Valkey and Redis OSS parameters](ParameterGroups.Engine.md#ParameterGroups.Redis)
-The following sample code sets the value of two parameters, *reserved-memory-percent* and *cluster-enabled* on the parameter group `myredis32-on-30`. We set *reserved-memory-percent* to `30` (30 percent) and *cluster-enabled* to `yes` so that the parameter group can be used with Valkey or Redis OSS (cluster mode enabled) clusters (replication groups).
+The following sample code sets the value of two parameters, *reserved-memory-percent* and *cluster-enabled* on the parameter group `myredis7-on-30`. We set *reserved-memory-percent* to `30` (30 percent) and *cluster-enabled* to `yes` so that the parameter group can be used with Valkey or Redis OSS (cluster mode enabled) clusters (replication groups).
 
 ```
 https://elasticache.us-west-2.amazonaws.com/
    ?Action=ModifyCacheParameterGroup
-   &CacheParameterGroupName={{myredis32-on-30}}
+   &CacheParameterGroupName={{myredis7-on-30}}
    &ParameterNameValues.member.1.ParameterName={{reserved-memory-percent}}
    &ParameterNameValues.member.1.ParameterValue={{30}}
    &ParameterNameValues.member.2.ParameterName={{cluster-enabled}}

@@ -31,7 +31,7 @@ STL\_LOAD\_COMMITS only contains queries run on main provisioned clusters. It do
 | errors  | integer  | This information is for internal use only.  |
 | curtime  | timestamp  | Time that this entry was last updated.  |
 | status  | integer | This information is for internal use only.  |
-| file\_format  | character(16)  | Format of the load file. Possible values are as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_LOAD_COMMITS.html)  |
+| file\_format  | character(16)  | Format of the load file. Possible values are as follows: +  Avro <br />+  JSON <br />+  ORC <br />+  Parquet <br />+  Text   |
 | is\_partial | integer | Value that if true (1) indicates the input file is split into ranges during a COPY operation. If this value is false (0), the input file isn't split. |
 | start\_offset | bigint | Value that, if the input file is split during a COPY operation, indicates the offset value of the split (in bytes). Each file split is logged as a separate record with the corresponding start\_offset value. If the file isn't split, this value is 0.  |
 | copy\_job\_id  | bigint  | The copy job identifier. A 0 indicates no job identifier. |

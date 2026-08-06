@@ -19,9 +19,19 @@ Type: String
 Length Constraints: Maximum length of 256.
 Required: No
 
+ ** IsHidden **   <a name="QS-Type-NamedEntityDefinition-IsHidden"></a>
+A Boolean value that indicates whether the named entity definition is hidden.
+Type: Boolean
+Required: No
+
  ** Metric **   <a name="QS-Type-NamedEntityDefinition-Metric"></a>
 The definition of a metric.
 Type: [NamedEntityDefinitionMetric](API_NamedEntityDefinitionMetric.md) object
+Required: No
+
+ ** PresentationOrder **   <a name="QS-Type-NamedEntityDefinition-PresentationOrder"></a>
+The presentation order of the named entity definition.
+Type: Integer
 Required: No
 
  ** PropertyName **   <a name="QS-Type-NamedEntityDefinition-PropertyName"></a>
@@ -40,6 +50,11 @@ Required: No
 The property usage. Valid values for this structure are `INHERIT`, `DIMENSION`, and `MEASURE`.
 Type: String
 Valid Values: `INHERIT | DIMENSION | MEASURE`
+Required: No
+
+ ** RankOrder **   <a name="QS-Type-NamedEntityDefinition-RankOrder"></a>
+The rank order of the named entity definition.
+Type: Integer
 Required: No
 
 ## See Also

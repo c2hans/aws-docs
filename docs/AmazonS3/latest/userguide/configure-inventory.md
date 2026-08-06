@@ -244,7 +244,7 @@ Configuring S3 Inventory for directory buckets is not supported in the Amazon Si
 1. For **Inventory configuration name**, enter a name.
 
 1. For **Inventory scope**, do the following:
-   + Enter an optional prefix.
+   + Enter an optional prefix. Don't include the bucket name in the prefix.
    + Choose which object versions to include, either **Current versions only** or **Include all versions**.
 
 1. Under **Report details**, choose the location of the AWS account that you want to save the reports to: **This account** or **A different account**.

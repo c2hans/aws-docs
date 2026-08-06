@@ -28,11 +28,11 @@ The following table compares the differences between HCX private and public conn
 |  **Overview**  |  **Overview**  |
 | Uses only private connections within the VPC. You can optionally use AWS Direct Connect or Site-to-Site VPN with a transit gateway for external network connectivity. | Uses public internet connectivity with Elastic IP addresses, enabling migrations without a dedicated private connection. |
 |  **Best suited for**  |  **Best suited for**  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.html)  |
+|  +  Time-sensitive vMotion operations. <br />+  Large-scale migrations. <br />+  Applications sensitive to latency/jitter. <br />+  High-volume data transfers. <br />+  Organizations with existing AWS Direct Connect/AWS Site-to-Site VPN.   |  +  Locations without AWS Direct Connect/AWS Site-to-Site VPN. <br />+  Cost-sensitive projects.   |
 |  **Key benefits**  |  **Key benefits**  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.html)  |
+|  +  Consistent low-latency connectivity. <br />+  Dedicated bandwidth allocation. <br />+  More reliable network performance. <br />+  Default HCX encryption can be disabled for private environments to optimize performance. <br />+  No public IP management required.   |  +  Faster setup than private connectivity. <br />+  Cost-effective for smaller migrations.   |
 |  **Key considerations**  |  **Key considerations**  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/migrate-evs-hcx.html)  |
+|  +  More complex initial setup. <br />+  Higher upfront infrastructure costs. <br />+  Longer implementation timeline. <br />+  No direct internet connectivity for any HCX component.   |  +  More variable network performance. <br />+  Bandwidth limitations are possible. <br />+  Higher latency than private connectivity. <br />+  Each component requires a dedicated Elastic IP address allocated from the public IPAM pool. <br />+  EIP associations enable direct internet connectivity for each HCX component.   |
 
 ## HCX private connectivity architecture
 <a name="migrate-evs-hcx-private-architecture"></a>

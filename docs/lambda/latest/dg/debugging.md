@@ -31,7 +31,7 @@ Remote debugging operates within existing Lambda security boundaries. Users can 
 + **IoT Secure Tunnel Creation**: The AWS Toolkit must create an IoT secure tunnel, which only occurs with the user's explicit permission using `iot:OpenTunnel`.
 + **Debug Layer Attachment and Token Management**: The debugging process maintains security through these controls:
   + The debugging layer must be attached to the Lambda function and this process requires the following permissions: `lambda:UpdateFunctionConfiguration` and `lambda:GetLayerVersion`.
-  + A security token (generated via `iot:OpenTunnel`) must be updated in the function environment variable before each debug session, which also requires `lambda:UpdateFunctionConfiguration`.
+  + Update the security token (generated through `iot:OpenTunnel`) in the function environment variable before each debug session. This step also requires `lambda:UpdateFunctionConfiguration`.
   + For security, this token is automatically rotated and the debug layer is automatically removed at the end of each debug session and cannot be reused.
 
 **Note**
@@ -59,7 +59,7 @@ Follow these steps to start a remote debugging session:
 
 1. Expand the Lambda section to see your functions.
 
-1. Right-click on the function you want to debug.
+1. Open the context menu for the function you want to debug.
 
 1. From the context menu, select **Remotely invoke**.
 

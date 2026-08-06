@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/application-integ
 | --- |--- |
 | **Purpose** | Help determine which AWS application integration services are the best fit for your workloads. |
 | **Last updated** | April 16, 2025 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/application-integration-on-aws-how-to-choose/application-integration-on-aws-how-to-choose.html)  |
+| **Covered services** |  +  [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) <br />+  [Amazon SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html) <br />+  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html) <br />+  [Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-getting-started.html) <br />+  [Amazon Kinesis Data Streams](https://docs.aws.amazon.com/streams/latest/dev/getting-started.html) <br />+  [Amazon MSK](https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html) <br />+  [Amazon MWAA](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) <br />+  [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html)   |
 
 ## Introduction
 <a name="intro"></a>

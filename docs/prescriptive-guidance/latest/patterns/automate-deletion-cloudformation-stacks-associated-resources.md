@@ -101,9 +101,9 @@ The code for this pattern is available in the GitHub [cloudformation-stack-clean
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clone the repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deletion-cloudformation-stacks-associated-resources.html) | DevOps engineer |
+| Clone the repository. | 1. Create a folder in your virtual environment. Name it with your project name.<br />2. Open a terminal on your local machine, and navigate to this folder.<br />3. Enter the following command to clone the [cloudformation-stack-cleanup](https://github.com/aws-samples/cloudformation-stack-cleanup/) repository to your project directory:<pre>git clone https://github.com/aws-samples/cloudformation-stack-cleanup.git</pre> | DevOps engineer |
 | Install Poetry. | Follow the [instructions](https://python-poetry.org/docs/) (Poetry documentation) to install Poetry in the target virtual environment. | DevOps engineer |
-| Install dependencies. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deletion-cloudformation-stacks-associated-resources.html) | DevOps engineer |
+| Install dependencies. | 1. Enter the following command to navigate to the project directory:<pre>cd cloudformation-stack-cleanup</pre><br />2. Enter the following command:<pre>poetry install</pre><br />This installs all of the required dependencies, such as Boto3, [click](https://click.palletsprojects.com/en/8.1.x/), and the source code for the [CloudFormation CLI](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html). | DevOps engineer |
 | (Optional) Install Pyenv. | Follow the [instructions](https://github.com/pyenv/pyenv#installation) (GitHub) to install Pyenv. | DevOps engineer |
 
 ### (Optional) Customize the framework
@@ -111,14 +111,14 @@ The code for this pattern is available in the GitHub [cloudformation-stack-clean
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create functions that gather, pre-process, and delete the target resources. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deletion-cloudformation-stacks-associated-resources.html) | DevOps engineer, Python |
+| Create functions that gather, pre-process, and delete the target resources. | 1. In the cloned repository, enter the following command to navigate to the `cli` directory:<pre>cd cfncli/cli</pre><br />2. Open the **cleanup\_enviornment.py** file.<br />3. Create a new Python function that gathers the type of resource that you want to modify. For an example, see the `gather_ddb_tables` function in this file.<br />4. Create a new Python function that overrides the service constraints for the target resource. For an example, see the `remove_ddb_deletion_protection` function in this file.<br />5. Create a new Python function that collects unmanaged target resources. For an example, see the `gather_log_groups` function in this file.<br />6. Create a new Python function that deletes unmanaged target resources. For an example, see the `delete_log_group` function in this file.<br />7. Save and close the **cleanup\_enviornment.py** file. | DevOps engineer, Python |
 
 ### Create sample resources
 <a name="create-sample-resources"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a CloudFormation stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deletion-cloudformation-stacks-associated-resources.html) | AWS DevOps |
+| Create a CloudFormation stack. | 1. Navigate to the project directory.<br />2. Enter the following command to create a CloudFormation stack that provisions a DynamoDB table and a security group. Update the value for `<VPCID>`:<pre>aws cloudformation create-stack \<br />  --stack-name sampleforcleanup-Stack \<br />  --template-body file://samples/sample-cfn-stack.yaml \<br />  --parameters ParameterKey=VpcId,ParameterValue=<VPCID> \<br />  --region us-east-1</pre> | AWS DevOps |
 | Create a Systems Manager parameter. | Enter the following command to create a Systems Manager parameter that isn't provisioned through CloudFormation:<pre>aws ssm put-parameter \<br />  --name "/sampleforcleanup/database/password" \<br />  --value "your_db_password" \<br />  --type "SecureString" \<br />  --description "Database password for my app" \<br />  --tier "Standard" \<br />  --region "us-east-1"</pre> | AWS DevOps |
 | Create an Amazon S3 bucket. | Enter the following command to create an Amazon S3 bucket that isn't provisioned through CloudFormation:<pre>aws s3api create-bucket \<br />  --bucket samplesorcleanup-unmanagedbucket-<UniqueIdentifier> \<br />  --region us-east-1 \<br />  --create-bucket-configuration LocationConstraint=us-east-1</pre> | AWS DevOps |
 
@@ -127,7 +127,7 @@ The code for this pattern is available in the GitHub [cloudformation-stack-clean
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the CloudFormation stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-deletion-cloudformation-stacks-associated-resources.html) | AWS DevOps |
+| Delete the CloudFormation stack. | 1. Enter the following command to delete the sample CloudFormation stack, Systems Manager parameter, and Amazon S3 bucket that you created:<pre>cfncli --region us-east-1  \<br />dev cleanup-env \<br />--prefix-list sampleforcleanup</pre><br />2. When prompted, enter `Y` to continue. | AWS DevOps |
 | Validate resource deletion. | In the output, confirm that all of the sample resources have been deleted. For a sample output, see the [Additional resources](#automate-deletion-cloudformation-stacks-associated-resources-additional) section of this pattern. | AWS DevOps |
 
 ## Related resources

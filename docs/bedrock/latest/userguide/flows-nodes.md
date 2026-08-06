@@ -124,8 +124,8 @@ You can use the following logical operators to combine expressions for more comp
 
 | Operator | Meaning | Example usage | Example meaning |
 | --- | --- | --- | --- |
-| and | Both expressions are true | (A < B) and (C == 1) | If both expressions are true: [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/flows-nodes.html) |
-| or | At least one expression is true | (A \!= 2) or (B > C) | If either expressions is true: [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/flows-nodes.html) |
+| and | Both expressions are true | (A < B) and (C == 1) | If both expressions are true: +  A is less than B <br />+  C is equal to 1  |
+| or | At least one expression is true | (A \!= 2) or (B > C) | If either expressions is true: +  A isn't equal to B <br />+  B is greater than C  |
 | not | The expression isn't true | not (A > B) | If A isn't greater than B (equivalent to A <= B) |
 
 In the API, you define the following in the `definition` field when you send a [CreateFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_CreateFlow.html) or [UpdateFlow](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_UpdateFlow.html) request:

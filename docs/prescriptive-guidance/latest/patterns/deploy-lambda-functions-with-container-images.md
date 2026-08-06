@@ -76,7 +76,7 @@ This pattern can be automated by using AWS CloudFormation, AWS Cloud Development
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create a Git repository. | Create a Git repository that will contain the application source code, the Dockerfile, and the `buildspec.yaml` file.  | Developer |
-| Create a CodeBuild project. | To use a CodeBuild project to create the custom Lambda image, do the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-lambda-functions-with-container-images.html) | Developer |
+| Create a CodeBuild project. | To use a CodeBuild project to create the custom Lambda image, do the following: 1. Sign in to the AWS Management Console, and open the CodeBuild console at https://console.aws.amazon.com/codesuite/codebuild/. <br />2. Create a new project. For source, choose the Git repository that you created. For information about different kinds of Git repository integration, see the [Working with connections](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections.html) documentation.<br />3. Confirm that privileged mode is enabled. To build Docker images, this is necessary. Otherwise, the image will not build successfully.<br />4. Provide values for the project name and description.  | Developer |
 | Edit the Dockerfile. | The Dockerfile should be located in the top-level directory where you're developing the application. The Python code should be in the `src` folder.<br />When you create the image, use the [official Lambda supported images](https://gallery.ecr.aws/lambda?page=1). Otherwise, a bootstrap error will occur, making the packing process more difficult.<br />For details, see the [Additional information](#deploy-lambda-functions-with-container-images-additional) section. | Developer |
 | Create a repository in Amazon ECR. | Create a container repository in Amazon ECR. In the following example command, the name of the repository created is `cf-demo`:<pre>aws ecr create-repository --cf-demo </pre><br />The repository will be referenced in the `buildspec.yaml` file. | AWS administrator, Developer |
 | Push the image to Amazon ECR. | You can use CodeBuild to perform the image-build process. CodeBuild needs permission to interact with Amazon ECR and to work with S3. As part of the process, the Docker image is built and pushed to the Amazon ECR registry. For details on the template and the code, see the [Additional information](#deploy-lambda-functions-with-container-images-additional) section. | Developer |
@@ -95,7 +95,7 @@ This pattern can be automated by using AWS CloudFormation, AWS Cloud Development
 
 | Issue | Solution |
 | --- | --- |
-| Build is not succeeding. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-lambda-functions-with-container-images.html) |
+| Build is not succeeding. | 1. Check if the privileged mode is turned on for the CodeBuild project.<br />2. Ensure that the Docker related commands have the necessary permissions. Trying adding `sudo` to the commands.<br />3. Verify that the IAM role associated with CodeBuild has a policy with appropriate actions to interact with Amazon ECR, Amazon S3, and CloudWatch logs. |
 
 ## Related resources
 <a name="deploy-lambda-functions-with-container-images-resources"></a>

@@ -21,7 +21,7 @@ This topic provides frequently asked questions about using Connect Customer scre
   The screen recording files are saved in MP4 format.
 + **Which Connect Customer channels are supported?**
 
-  You can generate screen recordings for voice and chat contacts. Screen recording is not supported for task contacts.
+  You can generate screen recordings for voice, chat, and task contacts. Screen recording is not supported for email contacts.
 + **Do you capture the entire screen?**
 
   Screen recording captures only the Connect Customer agent workspace tabs, not the entire desktop.

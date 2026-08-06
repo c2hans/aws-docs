@@ -30,13 +30,13 @@ Be aware that at the time these release notes are published, the new platform ve
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
 | **Apache HTTP Server** | *Removed support for Apache HTTP Server 2.2.* Prior to this release, Apache 2.2 was part of two current Tomcat branches. It was also part of retiring Tomcat branches, which are now retired. |
 | **Multicontainer Docker** | Updated the ECS agent to version 1.46.0. |
-| **Preconfigured Docker** | *Discontinued the following platform branches:*[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
+| **Preconfigured Docker** | *Discontinued the following platform branches:*+  Go 1.4 (Docker) <br />+  Go 1.3 (Docker) <br />+  Python 3.4 with uWSGI 2 (Docker)  |
 | **Go** | Updated Go to release 1.15.4. For details, see [go1.15](https://golang.org/doc/devel/release.html#go1.15) in *The Go Programming Language Release History*. |
-| **Tomcat** | *Discontinued the following platform branches:*[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
+| **Tomcat** | *Discontinued the following platform branches:*+  Java 8 with Tomcat 8 <br />+  Java 6 with Tomcat 7  |
 | **Node.js** | Updated the Node.js platform to add support for Node versions [12.19.0](https://nodejs.org/en/blog/release/v12.19.0/) and [10.23.0](https://nodejs.org/en/blog/release/v10.23.0/).<br />*Removed all Node.js versions 4.x – 8.x.* |
-| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.23](https://www.php.net/releases/7_3_23.php) and [7.2.34](https://www.php.net/releases/7_2_34.php), respectively.<br />The **PHP 7.3** and **PHP 7.2** releases include security fixes.<br />*Discontinued the following platform branches:*[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
-| **Python** | *Discontinued the following platform branches:*[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
-| **Ruby** | *Discontinued the following platform branches:*[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2020-11-11-linux.html) |
+| **PHP** | Updated PHP 7.3 and 7.2 to releases [7.3.23](https://www.php.net/releases/7_3_23.php) and [7.2.34](https://www.php.net/releases/7_2_34.php), respectively.<br />The **PHP 7.3** and **PHP 7.2** releases include security fixes.<br />*Discontinued the following platform branches:*+  PHP 7.1 <br />+  PHP 7.0 <br />+  PHP 5.6 <br />+  PHP 5.5 <br />+  PHP 5.4  |
+| **Python** | *Discontinued the following platform branches:*+  Python 3.4 <br />+  Python 2.7 <br />+  Python 2.6  |
+| **Ruby** | *Discontinued the following platform branches:*+  Ruby 2.3 with Puma <br />+  Ruby 2.3 with Passenger <br />+  Ruby 2.2 with Puma <br />+  Ruby 2.2 with Passenger <br />+  Ruby 2.1 with Puma <br />+  Ruby 2.1 with Passenger <br />+  Ruby 2.0 with Puma <br />+  Ruby 2.0 with Passenger <br />+  Ruby 1.9 with Passenger  |
 
 ## New platform versions
 <a name="release-2020-11-11-linux.platforms"></a>

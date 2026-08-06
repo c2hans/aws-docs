@@ -28,7 +28,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | **Cross-platform updates** | Made these cross-platform updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-05-01-al2023-nodejs.html) |
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-05-01-al2023-nodejs.html) |
 | **AMI** | Updated the base AMI to version 2023.4.20240429. |
-| **Node.js** | **Language runtime updates**[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-05-01-al2023-nodejs.html)<br />This Node.js update is a security release.<br />**Apache HTTP Server**[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-05-01-al2023-nodejs.html)<br />This Apache update is security release. |
+| **Node.js** | **Language runtime updates**+  Updated Node.js 20 to version [20.12.2](https://nodejs.org/en/blog/release/v20.12.2). <br />+  For Node.js 18, the security updates were backported to the existing [18.18.2](https://nodejs.org/en/blog/release/v18.18.2) language release on the platform branch. <br />This Node.js update is a security release.<br />**Apache HTTP Server**+  Updated Apache HTTP Server 2.4 to version 2.4.59. For details, see [Changes with Apache 2.4.59](https://downloads.apache.org/httpd/CHANGES_2.4.59) on the *Apache Software Foundation* website. <br />This Apache update is security release. |
 
 ## New platform versions
 <a name="release-2024-05-01-al2023-nodejs.platforms"></a>

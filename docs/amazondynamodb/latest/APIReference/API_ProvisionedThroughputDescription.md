@@ -31,12 +31,14 @@ Required: No
 
  ** ReadCapacityUnits **   <a name="DDB-Type-ProvisionedThroughputDescription-ReadCapacityUnits"></a>
 The maximum number of strongly consistent reads consumed per second before DynamoDB returns a `ThrottlingException`. Eventually consistent reads require less effort than strongly consistent reads, so a setting of 50 `ReadCapacityUnits` per second provides 100 eventually consistent `ReadCapacityUnits` per second.
+For a table or global secondary index that uses on-demand capacity mode (`PAY_PER_REQUEST`), this value is `0`, because on-demand mode does not use provisioned throughput.
 Type: Long
 Valid Range: Minimum value of 0.
 Required: No
 
  ** WriteCapacityUnits **   <a name="DDB-Type-ProvisionedThroughputDescription-WriteCapacityUnits"></a>
 The maximum number of writes consumed per second before DynamoDB returns a `ThrottlingException`.
+For a table or global secondary index that uses on-demand capacity mode (`PAY_PER_REQUEST`), this value is `0`, because on-demand mode does not use provisioned throughput.
 Type: Long
 Valid Range: Minimum value of 0.
 Required: No

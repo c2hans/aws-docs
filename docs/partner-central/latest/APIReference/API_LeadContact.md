@@ -16,13 +16,13 @@ In the following list, the required parameters are described first.
  ** BusinessTitle **   <a name="AWSPartnerCentral-Type-LeadContact-BusinessTitle"></a>
 The lead contact's business title or job role associated with the engagement.
 Type: String
-Pattern: `(?s).{0,80}`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: Yes
 
  ** Email **   <a name="AWSPartnerCentral-Type-LeadContact-Email"></a>
 The lead contact's email address associated with the engagement.
 Type: String
-Pattern: `(?=.{0,80}$)[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?`
+Length Constraints: Minimum length of 1. Maximum length of 255.
 Required: Yes
 
  ** FirstName **   <a name="AWSPartnerCentral-Type-LeadContact-FirstName"></a>
@@ -40,7 +40,7 @@ Required: Yes
  ** Phone **   <a name="AWSPartnerCentral-Type-LeadContact-Phone"></a>
 The lead contact's phone number associated with the engagement.
 Type: String
-Pattern: `\+[1-9]\d{1,14}`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
 ## See Also

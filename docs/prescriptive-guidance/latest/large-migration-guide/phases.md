@@ -65,5 +65,5 @@ Migrate and modernize is the third and final phase of your migration journey. Ge
 |  |  |  |
 | --- |--- |--- |
 | Stage | Duration | Purpose |
-| Stage 1: Initialize | 1–3 months | Prepare your platform and people for a large migration.Build your standard operating procedures (runbooks). |
-| Stage 2: Implement | Varies by project scope and strategy | Use runbooks to implement the large migration.Manage, monitor, and improve the migration. |
+| Stage 1: Initialize | 1–3 months | + Prepare your platform and people for a large migration.<br />+ Build your standard operating procedures (runbooks). |
+| Stage 2: Implement | Varies by project scope and strategy | + Use runbooks to implement the large migration.<br />+ Manage, monitor, and improve the migration. |

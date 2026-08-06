@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/config/latest/developerguide/eip-attache
 # eip-attached
 <a name="eip-attached"></a>
 
-Checks if all Elastic IP addresses that are allocated to an AWS account are attached to EC2 instances or in-use elastic network interfaces. The rule is NON\_COMPLIANT if the 'AssociationId' is null for the Elastic IP address.
+Checks whether Elastic IP addresses allocated to your account are in use. The rule is NON\_COMPLIANT if an EIP is not attached to an EC2 instance or an in-use network interface.
 
 **Note**
 Results might take up to 6 hours to become available after an evaluation occurs.

@@ -14,5 +14,5 @@ MediaLive does not currently support RGB color space for CDI inputs. If you will
 
 | Protocol | Supported color configurations |
 | --- | --- |
-| CDI |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/protocol-color.html)  |
-| ST 2110 JPEG XS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/protocol-color.html)  |
+| CDI |  +  YCbCr 10-bit 4:2:2 <br />+  RGB 10-bit 4:4:4 <br />+  RGB 12-bit 4:4:4   |
+| ST 2110 JPEG XS |  +  YCbCr 10-bit 4:2:2 <br />+  RGB 10-bit 4:4:4 <br />+  RGB 12-bit 4:4:4   |

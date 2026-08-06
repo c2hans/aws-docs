@@ -137,7 +137,7 @@ Type: [SourceLocation](API_SourceLocation.md) object
  ** [status](#API_StartNotebookImport_ResponseSyntax) **   <a name="datazone-StartNotebookImport-response-status"></a>
 The status of the notebook import.
 Type: String
-Valid Values: `ACTIVE | ARCHIVED`
+Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 
 ## Errors
 <a name="API_StartNotebookImport_Errors"></a>

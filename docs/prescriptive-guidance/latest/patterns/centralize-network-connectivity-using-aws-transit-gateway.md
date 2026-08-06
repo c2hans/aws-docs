@@ -51,7 +51,7 @@ This pattern does not support the isolation of traffic between certain VPCs or t
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a transit gateway. | In the AWS account where you want to host network services, create a transit gateway in the target AWS Region. For instructions, see [Create a transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html#create-tgw). Note the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/centralize-network-connectivity-using-aws-transit-gateway.html) | Network administrator |
+| Create a transit gateway. | In the AWS account where you want to host network services, create a transit gateway in the target AWS Region. For instructions, see [Create a transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-transit-gateways.html#create-tgw). Note the following:+ Select **Default route table association**. <br />+ Select **Default route table propagation**. | Network administrator |
 
 ### Connect the transit gateway to your on-premises network
 <a name="connect-the-transit-gateway-to-your-on-premises-network"></a>

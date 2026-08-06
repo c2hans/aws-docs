@@ -104,9 +104,9 @@ Given the LF-Tags assigned to the databases and tables in the preceding diagram,
 
 | Principal | Permissions Granted Through LF-Tags |
 | --- | --- |
-| Principal 1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html)  |
-| Principal 2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html)  |
-| Principal 3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/tag-based-access-control.html)  |
+| Principal 1 |  +  `CREATE_TABLE` on database A <br />+  `SELECT`, `INSERT` on table A.1 <br />+  `SELECT`, `INSERT` on table B.2 <br />+  `CREATE_TABLE` on database C <br />+  `SELECT`, `INSERT` on table C.1 <br />+  `SELECT`, `INSERT` on table C.2 <br />+  `SELECT`, `INSERT` on table C.3   |
+| Principal 2 |  +  `SELECT`, `INSERT` on table A.2 <br />+  `CREATE_TABLE` on database B <br />+  `SELECT`, `INSERT` on table B.1   |
+| Principal 3 |  +  `SELECT`, `INSERT` on table B.2 <br />+  `CREATE_TABLE` on database C <br />+  `SELECT`, `INSERT` on table C.1 <br />+  `SELECT`, `INSERT` on table C.2 <br />+  `SELECT`, `INSERT` on table C.3   |
 
 **Bottom line**
 In this simple example, using five assignment operations and eight grant operations, the data lake administrator was able to specify 17 permissions. When there are tens of databases and hundreds of tables, the advantage of the LF-TBAC method over the named resource method becomes clear. In the hypothetical case of the need to grant every principal access to every resource, and where `n(P)` is the number of principals and `n(R)` is the number of resources:

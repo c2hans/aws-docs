@@ -539,9 +539,9 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 4.0.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/device-defender-component.html)  |
-| 3.1.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/device-defender-component.html)  |
-| 3.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/device-defender-component.html)  |
+| 4.0.0 |  **New features**<br />   The `UseInstaller` configuration now defaults to `false`.     |
+| 3.1.1 |  **Bug fixes and improvements**<br />   Adds retries for client connection when the connection fails to recover after a network outage.   Adds a configurable retry for publishing metrics.     |
+| 3.1.0 |  **Bug fixes and improvements**<br />   Adds support for HTTPS network proxy configurations. For more information, see [Connect on port 443 or through a network proxy](configure-greengrass-core-v2.md#configure-alpn-network-proxy) and [Enable the core device to trust an HTTPS proxy](configure-greengrass-core-v2.md#https-proxy-certificate-trust).     |
 | 3.0.1 | Fixes an issue with how the component calculates delta values for metrics. |
 | 3.0.0 |  This version is no longer available. The improvements in this version are available in later versions of this component. Initial version. |
 

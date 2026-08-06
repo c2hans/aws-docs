@@ -23,7 +23,7 @@ Use the following table to help decide whether to use a database snapshot or inc
 
 | Use database snapshot when... | Use incremental database when... |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/workflows-about.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/workflows-about.html)  |
+|  +  Schema evolution is flexible. (Columns are re-named, previous columns are deleted, and new columns are added in their place.) <br />+  Complete consistency is needed between the source and the destination.   |  +  Schema evolution is incremental. (There is only successive addition of columns.) <br />+  Only new rows are added; previous rows are not updated.   |
 
 **Note**
 Users cannot edit blue prints and workflows created by Lake Formation.

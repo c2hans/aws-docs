@@ -68,7 +68,7 @@ To automate the Spark-EMR batch computation, you can use either of the following
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create the IAM roles and the VPC. | If you already have the AWS Lambda and Amazon EMR IAM roles and a VPC, you can skip this step. To run the code, both the EMR cluster and the Lambda function require IAM roles. The EMR cluster also requires a VPC with a public subnet or a private subnet with a NAT gateway. To automatically create all the IAM roles and a VPC, deploy the attached AWS CloudFormation template as is, or you can create the roles and the VPC manually as specified in the *Additional information* section. | Cloud architect |
-| Note the AWS CloudFormation template output keys. | After the CloudFormation template has successfully deployed, navigate to the **Outputs** tab in the AWS CloudFormation console. Note the five output keys: [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/launch-a-spark-job-in-a-transient-emr-cluster-using-a-lambda-function.html)<br />You will use the values from these keys when you create the Lambda function. | Cloud architect |
+| Note the AWS CloudFormation template output keys. | After the CloudFormation template has successfully deployed, navigate to the **Outputs** tab in the AWS CloudFormation console. Note the five output keys: + `S3Bucket`<br />+ `LambdaExecutionRole`<br />+ `ServiceRole`<br />+ `JobFlowRole`<br />+ `Ec2SubnetId`<br />You will use the values from these keys when you create the Lambda function. | Cloud architect |
 
 ### Upload the Spark .jar file
 <a name="upload-the-spark-jar-file"></a>

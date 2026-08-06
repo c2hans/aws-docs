@@ -81,7 +81,7 @@ The code for this pattern is available in the GitHub [Archive items to S3 using 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create an S3 bucket. | Use the AWS CLI to create a destination S3 bucket in your AWS Region, replacing `us-east-1` with your Region and amzn-s3-demo-destination-bucket with the name of your bucket. <pre>aws s3api create-bucket \<br />--bucket DOC-EXAMPLE-BUCKET \<br />--region us-east-1</pre><br />Make sure that your S3 bucket's name is globally unique, because the namespace is shared by all AWS accounts. | Cloud architect, App developer |
-| Create a 30-day lifecycle policy for the S3 bucket. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-archive-items-to-amazon-s3-using-dynamodb-ttl.html) | Cloud architect, App developer |
+| Create a 30-day lifecycle policy for the S3 bucket. | 1. Sign in to the AWS Management Console and open the Amazon S3 console. <br />2. Choose the S3 bucket that contains the data from Firehose. <br />3. In the S3 bucket, choose the **Management** tab, and choose **Add lifecycle rule**. <br />4. Enter a name for your rule in the **Lifecycle rule** dialog box, and configure a 30-day lifecycle rule for your bucket. | Cloud architect, App developer |
 
 ### Create a Firehose delivery stream
 <a name="create-a-akf-delivery-stream"></a>

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DescribeScalingPolicies
 <a name="API_DescribeScalingPolicies"></a>
 
- **This API works with the following fleet types:** EC2
+ **This API works with the following fleet types:** EC2, Container
 
 Retrieves all scaling policies applied to a fleet.
 

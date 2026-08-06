@@ -62,7 +62,7 @@ This data type updates to a game session object, which includes the reason that 
 | Properties | **Description** |
 | --- | --- |
 | GameSession | A [GameSession](#integration-server-sdk5-unreal-dataypes-gamesession) object. The GameSession object contains properties describing a game session. **Type:** `Aws::GameLift::Server::GameSession`<br />**Required:** No |
-| UpdateReason | The reason that the game session is being updated. **Type:** `enum class UpdateReason` [See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-unreal-datatypes.html)<br />**Required:** No  |
+| UpdateReason | The reason that the game session is being updated. **Type:** `enum class UpdateReason` + MATCHMAKING\_DATA\_UPDATED<br />+ BACKFILL\_FAILED<br />+ BACKFILL\_TIMED\_OUT<br />+ BACKFILL\_CANCELLED<br />**Required:** No  |
 | BackfillTicketId | The ID of the backfill ticket attempting to update the game session.**Type:** `char[]`<br />**Required:** No |
 
 ## GameSession
@@ -81,7 +81,7 @@ This data type provides details of a game session.
 | GameSessionData | A set of custom game session properties, formatted as a single string value. <br />**Type:** `char[]`<br />**Required**: No |
 | MatchmakerData | Information about the matchmaking process that was used to create the game session, in JSON syntax, formatted as a string. In addition to the matchmaking configuration used, it contains data on all players assigned to the match, including player attributes and team assignments.<br />**Type:** `char[]`<br />**Required**: No |
 | GameProperties | A set of custom properties for a game session, formatted as key:value pairs. These properties are passed with a request to start a new game session.<br />**Type:** `GameProperty[]`<br />**Required**: No |
-| DnsName | The DNS identifier assigned to the instance that's running the game session. Values have the following format:[See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-unreal-datatypes.html)<br />When connecting to a game session that's running on a TLS-enabled fleet, you must use the DNS name, not the IP address.<br />**Type:** `char[]`<br />**Required**: No |
+| DnsName | The DNS identifier assigned to the instance that's running the game session. Values have the following format:+  TLS-enabled fleets: `<unique identifier>.<region identifier>.amazongamelift.com`.  <br />+  Non-TLS-enabled fleets: `ec2-<unique identifier>.compute.amazonaws.com`.  <br />When connecting to a game session that's running on a TLS-enabled fleet, you must use the DNS name, not the IP address.<br />**Type:** `char[]`<br />**Required**: No |
 
 ## FServerParameters
 <a name="integration-server-sdk5-unreal-dataypes-serverparameters"></a>
@@ -130,7 +130,7 @@ An object that specifies which player sessions to retrieve. The server process p
 | GameSessionId | A unique game session identifier. Use this parameter to request all player sessions for the specified game session. <br />Game session ID format is `FString`. The `GameSessionID` is a custom ID string or a<br />**Type:** `std::string`<br />**Required**: No |
 | PlayerSessionId | The unique identifier for a player session. Use this parameter to request a single specific player session.<br />**Type:** `FString`<br />**Required**: No |
 | PlayerId | The unique identifier for a player. Use this parameter to request all player sessions for a specific player. See [Generate player IDs](player-sessions-player-identifiers.md).<br />**Type:** `FString`<br />**Required**: No |
-| PlayerSessionStatusFilter | The player session status to filter results on. Possible player session statuses include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-unreal-datatypes.html)<br />**Type:** `FString`<br />**Required**: No |
+| PlayerSessionStatusFilter | The player session status to filter results on. Possible player session statuses include:+  RESERVED – The player session request was received, but the player hasn't connected to the server process or been validated. <br />+  ACTIVE – The player was validated by the server process and is connected. <br />+  COMPLETED – The player connection dropped. <br />+  TIMEDOUT – A player session request was received, but the player didn't connect or wasn't validated within the time-out limit (60 seconds). <br />**Type:** `FString`<br />**Required**: No |
 | NextToken | The token indicating the start of the next page of results. To specify the start of the result set, don't provide a value. If you provide a player session ID, this parameter is ignored.<br />**Type:** `FString`<br />**Required**: No |
 | Limit | The maximum number of results to return. If you provide a player session ID, this parameter is ignored.<br />**Type:** `int`<br />**Required**: No |
 

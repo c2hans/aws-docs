@@ -15,7 +15,7 @@ Your device determines the best resolution to use with each of your displays whe
 
 | Displays | Maximum Resolution |
 | --- | --- |
-| 1 (Primary monitor only) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/managing-display-resolution.html)  |
+| 1 (Primary monitor only) |  + Regular 1080p monitor – 1920x1080 (aspect ratio of 16:9)<br />+ 2K monitor – 2560x1440 (aspect ratio of 16:9)<br />+ 2K ultra-wide (UWD) monitor – 3440x1440 (aspect ratio of 21:9)<br />+ 4K monitor – 3840x2160 (aspect ratio of 16:9)  |
 | 2 (Extended monitor) | 1920x1080 |
 
 **Note**

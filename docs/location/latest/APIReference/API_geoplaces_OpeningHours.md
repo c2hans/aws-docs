@@ -30,7 +30,7 @@ Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
 
  ** OpenNow **   <a name="location-Type-geoplaces_OpeningHours-OpenNow"></a>
-Boolean which indicates if the result/place is currently open.
+Boolean which indicates if the place or result is currently open.
 Type: Boolean
 Required: No
 

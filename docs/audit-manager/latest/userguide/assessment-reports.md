@@ -188,8 +188,8 @@ The evidence summary page includes the following information.
 | Event name | The name of the evidence event. |
 | Event time | The time when the evidence event occurred. |
 | Data source | Where the evidence was collected or uploaded from. The data source type can be either AWS Config, Security Hub CSPM, AWS API calls, CloudTrail, or Manual. |
-| Evidence by type | The category of the evidence[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/assessment-reports.html) |
-| Compliance check status | The evaluation status for evidence that falls under the *compliance check* category.[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/assessment-reports.html) |
+| Evidence by type | The category of the evidence+  *Compliance check* evidence is collected from AWS Config or Security Hub CSPM.  <br />+  *User activity* evidence is collected from CloudTrail logs.  <br />+  *Configuration data* evidence is collected from snapshots of other AWS services.  <br />+  *Manual* evidence is evidence that you upload manually.  |
+| Compliance check status | The evaluation status for evidence that falls under the *compliance check* category.+  For automated evidence that's collected from AWS Security Hub CSPM or AWS Config, a **Compliant**, **Non-compliant**, or **Inconclusive** result is reported.  <br />+  For automated evidence that's collected from AWS CloudTrail and API calls, and for all manual evidence, an **Inconclusive** result is shown.  |
 
 ### Evidence detail page
 <a name="assessment-report-evidence-detail"></a>

@@ -23,6 +23,12 @@ A Boolean value that indicates whether the date range filter should include the 
 Type: Boolean
 Required: No
 
+ ** NullFilter **   <a name="QS-Type-TopicDateRangeFilter-NullFilter"></a>
+The `null` filter that is applied to the date range filter.
+Type: String
+Valid Values: `ALL_VALUES | NON_NULLS_ONLY | NULLS_ONLY`
+Required: No
+
 ## See Also
 <a name="API_TopicDateRangeFilter_SeeAlso"></a>
 

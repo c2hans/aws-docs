@@ -91,8 +91,24 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** BedrockManagedKnowledgeBase **   <a name="QS-Type-Capabilities-BedrockManagedKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** BoxAgentAction **   <a name="QS-Type-Capabilities-BoxAgentAction"></a>
 The ability to perform actions using Box Agent connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** BoxKnowledgeBase **   <a name="QS-Type-Capabilities-BoxKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -129,6 +145,14 @@ Required: No
 
  ** ConfluenceAction **   <a name="QS-Type-Capabilities-ConfluenceAction"></a>
 The ability to perform actions using Atlassian Confluence Cloud connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ConfluenceKnowledgeBase **   <a name="QS-Type-Capabilities-ConfluenceKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -175,8 +199,24 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateBedrockManagedKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateBedrockManagedKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateBoxAgentAction **   <a name="QS-Type-Capabilities-CreateAndUpdateBoxAgentAction"></a>
 The ability to create and update Box Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateBoxKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateBoxKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -201,6 +241,14 @@ Required: No
 
  ** CreateAndUpdateConfluenceAction **   <a name="QS-Type-Capabilities-CreateAndUpdateConfluenceAction"></a>
 The ability to create and update Atlassian Confluence Cloud actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateConfluenceKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateConfluenceKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -247,6 +295,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateGoogleDriveKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateGoogleDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateHubspotAction **   <a name="QS-Type-Capabilities-CreateAndUpdateHubspotAction"></a>
 The ability to create and update Hubspot actions.
 Type: String
@@ -259,6 +315,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateIDCKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateIDCKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateIntercomAction **   <a name="QS-Type-Capabilities-CreateAndUpdateIntercomAction"></a>
 The ability to create and update Intercom actions.
 Type: String
@@ -267,6 +331,14 @@ Required: No
 
  ** CreateAndUpdateJiraAction **   <a name="QS-Type-Capabilities-CreateAndUpdateJiraAction"></a>
 The ability to create and update Jira actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateKnowledgeBases **   <a name="QS-Type-Capabilities-CreateAndUpdateKnowledgeBases"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -319,6 +391,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateOneDriveKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateOneDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateOpenAPIAction **   <a name="QS-Type-Capabilities-CreateAndUpdateOpenAPIAction"></a>
 The ability to create and update OpenAPI Specification actions.
 Type: String
@@ -327,6 +407,22 @@ Required: No
 
  ** CreateAndUpdatePagerDutyAction **   <a name="QS-Type-Capabilities-CreateAndUpdatePagerDutyAction"></a>
 The ability to create and update PagerDuty Advance actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateQBusinessKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateQBusinessKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateS3KnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateS3KnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -391,6 +487,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** CreateAndUpdateSharePointKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateSharePointKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** CreateAndUpdateSlackAction **   <a name="QS-Type-Capabilities-CreateAndUpdateSlackAction"></a>
 The ability to create and update Slack actions.
 Type: String
@@ -417,6 +521,14 @@ Required: No
 
  ** CreateAndUpdateThresholdAlerts **   <a name="QS-Type-Capabilities-CreateAndUpdateThresholdAlerts"></a>
 The ability to create and update threshold alerts.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** CreateAndUpdateWebCrawlerKnowledgeBase **   <a name="QS-Type-Capabilities-CreateAndUpdateWebCrawlerKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -547,6 +659,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** GoogleDriveKnowledgeBase **   <a name="QS-Type-Capabilities-GoogleDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** HubspotAction **   <a name="QS-Type-Capabilities-HubspotAction"></a>
 The ability to perform actions using Hubspot connectors.
 Type: String
@@ -555,6 +675,14 @@ Required: No
 
  ** HuggingFaceAction **   <a name="QS-Type-Capabilities-HuggingFaceAction"></a>
 The ability to perform actions using HuggingFace connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** IDCKnowledgeBase **   <a name="QS-Type-Capabilities-IDCKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -650,6 +778,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** OneDriveKnowledgeBase **   <a name="QS-Type-Capabilities-OneDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** OpenAPIAction **   <a name="QS-Type-Capabilities-OpenAPIAction"></a>
 The ability to perform actions using OpenAPI Specification connectors.
 Type: String
@@ -680,6 +816,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** QBusinessKnowledgeBase **   <a name="QS-Type-Capabilities-QBusinessKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** QuickEventTrigger **   <a name="QS-Type-Capabilities-QuickEventTrigger"></a>
 The ability to create, view, edit, delete, and run Quick event triggers for flows and automations.
 Type: String
@@ -694,6 +838,14 @@ Required: No
 
  ** Research **   <a name="QS-Type-Capabilities-Research"></a>
 The ability to perform research-related actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** S3KnowledgeBase **   <a name="QS-Type-Capabilities-S3KnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -818,8 +970,24 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareBedrockManagedKnowledgeBase **   <a name="QS-Type-Capabilities-ShareBedrockManagedKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareBoxAgentAction **   <a name="QS-Type-Capabilities-ShareBoxAgentAction"></a>
 The ability to share Box Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareBoxKnowledgeBase **   <a name="QS-Type-Capabilities-ShareBoxKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -850,6 +1018,14 @@ Required: No
 
  ** ShareConfluenceAction **   <a name="QS-Type-Capabilities-ShareConfluenceAction"></a>
 The ability to share Atlassian Confluence Cloud actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareConfluenceKnowledgeBase **   <a name="QS-Type-Capabilities-ShareConfluenceKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -896,6 +1072,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareGoogleDriveKnowledgeBase **   <a name="QS-Type-Capabilities-ShareGoogleDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareHubspotAction **   <a name="QS-Type-Capabilities-ShareHubspotAction"></a>
 The ability to share Hubspot actions.
 Type: String
@@ -908,6 +1092,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareIDCKnowledgeBase **   <a name="QS-Type-Capabilities-ShareIDCKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareIntercomAction **   <a name="QS-Type-Capabilities-ShareIntercomAction"></a>
 The ability to share Intercom actions.
 Type: String
@@ -916,6 +1108,14 @@ Required: No
 
  ** ShareJiraAction **   <a name="QS-Type-Capabilities-ShareJiraAction"></a>
 The ability to share Jira actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareKnowledgeBases **   <a name="QS-Type-Capabilities-ShareKnowledgeBases"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -968,6 +1168,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareOneDriveKnowledgeBase **   <a name="QS-Type-Capabilities-ShareOneDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareOpenAPIAction **   <a name="QS-Type-Capabilities-ShareOpenAPIAction"></a>
 The ability to share OpenAPI Specification actions.
 Type: String
@@ -982,6 +1190,30 @@ Required: No
 
  ** SharePointAction **   <a name="QS-Type-Capabilities-SharePointAction"></a>
 The ability to perform actions using Microsoft SharePoint Online connectors.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** SharePointKnowledgeBase **   <a name="QS-Type-Capabilities-SharePointKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareQBusinessKnowledgeBase **   <a name="QS-Type-Capabilities-ShareQBusinessKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareS3KnowledgeBase **   <a name="QS-Type-Capabilities-ShareS3KnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1046,6 +1278,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** ShareSharePointKnowledgeBase **   <a name="QS-Type-Capabilities-ShareSharePointKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** ShareSlackAction **   <a name="QS-Type-Capabilities-ShareSlackAction"></a>
 The ability to share Slack actions.
 Type: String
@@ -1066,6 +1306,14 @@ Required: No
 
  ** ShareTextractAction **   <a name="QS-Type-Capabilities-ShareTextractAction"></a>
 The ability to share Textract actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** ShareWebCrawlerKnowledgeBase **   <a name="QS-Type-Capabilities-ShareWebCrawlerKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1166,6 +1414,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseBedrockManagedKnowledgeBase **   <a name="QS-Type-Capabilities-UseBedrockManagedKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseBedrockModels **   <a name="QS-Type-Capabilities-UseBedrockModels"></a>
 The ability to use Bedrock models for general knowledge step in flows.
 Type: String
@@ -1174,6 +1430,14 @@ Required: No
 
  ** UseBoxAgentAction **   <a name="QS-Type-Capabilities-UseBoxAgentAction"></a>
 The ability to use Box Agent actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseBoxKnowledgeBase **   <a name="QS-Type-Capabilities-UseBoxKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1208,6 +1472,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseConfluenceKnowledgeBase **   <a name="QS-Type-Capabilities-UseConfluenceKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseExcelAddInExtension **   <a name="QS-Type-Capabilities-UseExcelAddInExtension"></a>
 The ability to use Amazon Quick through the Microsoft Excel add-in.
 Type: String
@@ -1238,6 +1510,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseGoogleDriveKnowledgeBase **   <a name="QS-Type-Capabilities-UseGoogleDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseHubspotAction **   <a name="QS-Type-Capabilities-UseHubspotAction"></a>
 The ability to use Hubspot actions.
 Type: String
@@ -1246,6 +1526,14 @@ Required: No
 
  ** UseHuggingFaceAction **   <a name="QS-Type-Capabilities-UseHuggingFaceAction"></a>
 The ability to use HuggingFace actions.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseIDCKnowledgeBase **   <a name="QS-Type-Capabilities-UseIDCKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1310,6 +1598,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseOneDriveKnowledgeBase **   <a name="QS-Type-Capabilities-UseOneDriveKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseOpenAPIAction **   <a name="QS-Type-Capabilities-UseOpenAPIAction"></a>
 The ability to use OpenAPI Specification actions.
 Type: String
@@ -1330,6 +1626,22 @@ Required: No
 
  ** UsePowerpointAddInExtension **   <a name="QS-Type-Capabilities-UsePowerpointAddInExtension"></a>
 The ability to use Amazon Quick through the Microsoft PowerPoint add-in.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseQBusinessKnowledgeBase **   <a name="QS-Type-Capabilities-UseQBusinessKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** UseS3KnowledgeBase **   <a name="QS-Type-Capabilities-UseS3KnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
@@ -1394,6 +1706,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseSharePointKnowledgeBase **   <a name="QS-Type-Capabilities-UseSharePointKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseSlackAction **   <a name="QS-Type-Capabilities-UseSlackAction"></a>
 The ability to use Slack actions.
 Type: String
@@ -1412,6 +1732,14 @@ Type: String
 Valid Values: `DENY | ALLOW`
 Required: No
 
+ ** UseWebCrawlerKnowledgeBase **   <a name="QS-Type-Capabilities-UseWebCrawlerKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
  ** UseWordAddInExtension **   <a name="QS-Type-Capabilities-UseWordAddInExtension"></a>
 The ability to use Amazon Quick through the Microsoft Word add-in.
 Type: String
@@ -1426,6 +1754,14 @@ Required: No
 
  ** ViewAccountSPICECapacity **   <a name="QS-Type-Capabilities-ViewAccountSPICECapacity"></a>
 The ability to view account SPICE capacity.
+Type: String
+Valid Values: `DENY | ALLOW`
+Required: No
+
+ ** WebCrawlerKnowledgeBase **   <a name="QS-Type-Capabilities-WebCrawlerKnowledgeBase"></a>
+The permission state of a capability in a custom permissions profile. Valid values:
++  `DENY` – Amazon Quick denies this capability for users assigned to the profile.
++  `ALLOW` – Amazon Quick grants this capability to users assigned to the profile. This value is only relevant when governance is enabled for the capability's category. Without governance, the default effect is always `ALLOW`. In a governed category, this value overrides the category-level deny-by-default behavior for that capability only.
 Type: String
 Valid Values: `DENY | ALLOW`
 Required: No

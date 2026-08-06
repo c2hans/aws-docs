@@ -75,8 +75,8 @@ This pattern describes how to migrate an on-premises Microsoft SQL Server databa
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Add the option group to Amazon RDS. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-using-native-backup-and-restore-methods.html)For more information, see the [Amazon RDS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html). | SysOps administrator |
-| Restore the database. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server-using-native-backup-and-restore-methods.html) | DBA |
+| Add the option group to Amazon RDS. | 1. Open the Amazon RDS console at [https://console.aws.amazon.com/rds/](https://console.aws.amazon.com/rds/).<br />2. In the navigation pane, choose **Option groups**, **Create group**.<br />3. Complete the information for the option group, and then choose **Create**.<br />4. Add the `SQLSERVER_BACKUP_RESTORE` option to the option group, and then choose **Add option**.For more information, see the [Amazon RDS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithOptionGroups.html). | SysOps administrator |
+| Restore the database. | 1. Connect to Amazon RDS for SQL Server through SSMS.<br />2. Call the `msdb.dbo.rds_restore_database` stored procedure to restore the database. | DBA |
 
 ### Validate the target database
 <a name="validate-the-target-database"></a>

@@ -55,7 +55,7 @@ Length Constraints: Minimum length of 0. Maximum length of 1000.
 The request accepts the following data in JSON format.
 
  ** [AdditionalFeatures](#API_geoplaces_SearchText_RequestSyntax) **   <a name="location-geoplaces_SearchText-request-AdditionalFeatures"></a>
-A list of optional additional parameters, such as time zone, that can be requested for each result. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only the `TimeZone` value.
+A list of optional additional parameters, such as time zone, that can be requested for each result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the `TimeZone` value.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `TimeZone | Phonemes | Access | Contact | CrossReferences`
@@ -81,7 +81,7 @@ Valid Values: `SingleUse | Storage`
 Required: No
 
  ** [Language](#API_geoplaces_SearchText_RequestSyntax) **   <a name="location-geoplaces_SearchText-request-Language"></a>
-A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
+A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 35.
 Required: No
@@ -100,14 +100,14 @@ Length Constraints: Minimum length of 1. Maximum length of 2000.
 Required: No
 
  ** [PoliticalView](#API_geoplaces_SearchText_RequestSyntax) **   <a name="location-geoplaces_SearchText-request-PoliticalView"></a>
-The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 3.
 Pattern: `([A-Z]{2}|[A-Z]{3})`
 Required: No
 
  ** [QueryId](#API_geoplaces_SearchText_RequestSyntax) **   <a name="location-geoplaces_SearchText-request-QueryId"></a>
-The query Id returned by the suggest API. If passed in the request, the SearchText API will preform a SearchText query with the improved query terms for the original query made to the suggest API. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+The query Id returned by the suggest API. If passed in the request, the SearchText API will preform a SearchText query with the improved query terms for the original query made to the suggest API. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Exactly one of the following fields must be set: `QueryText` or `QueryId`.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 500.

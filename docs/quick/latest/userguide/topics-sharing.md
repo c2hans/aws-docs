@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-sharing.html
 ---
 
-# Sharing Quick Sight topics
+# Sharing Quick Sight Topics
 <a name="topics-sharing"></a>
 
 |  |
@@ -13,22 +13,19 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/topics-sharing.ht
 | --- |
 |    Intended audience:  Amazon Quick administrators and authors  |
 
-After you create a topic, you can share it with others in your organization. Sharing a topic allows your users to select the topic and ask questions about it in the search bar. After you share a topic with your users, you can assign permissions to them that specify who can change the topic.
+After you create and publish a Topic, share it with others in your organization. Sharing a Topic allows your users to ask questions in Amazon Quick chat and use the Topic as a data model in analysis sheets.
 
-**To share a topic**
+**To share a Topic**
 
-1. On the Quick start page, choose **Topics** at left.
+1. From the Topic page, select the ellipsis menu and choose **Share**.
 
-1. On the **Topics** page that opens, open the topic that you want to share.
+1. Search for and add specific users or groups.
 
-1. On the page that opens, choose **Share** at upper right.
+1. Set permission levels (**Owner** or **Viewer**) and choose **Done**.
 
-1. On the **Share topic with users** page that opens, choose the user or users that you want to share the topic with.
+| Permission Level | Can Ask Questions | Can Modify Topic | Can Use in Analysis |
+| --- | --- | --- | --- |
+| Owner | Yes | Yes | Yes |
+| Viewer | Yes | No | Yes |
 
-   You can use the search bar to search for users by email address.
-
-1. Choose either **Viewer** or **Co-owner** under the **Permission** column to assign permissions to your users.
-
-   For more information about these permissions, see the following section, [Managing Amazon Quick Sight topic permissions](topics-sharing-permissions.md).
-
-1. When you're finished selecting users, choose **Share**.
+Quick Sight enforces row-level security (RLS) and column-level security (CLS) at the dataset level. Access controls are preserved through the Topic's semantic layer, regardless of how users access the Topic.

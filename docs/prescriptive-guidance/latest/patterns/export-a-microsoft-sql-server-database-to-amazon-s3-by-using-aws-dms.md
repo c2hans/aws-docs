@@ -66,7 +66,7 @@ The data is exported by using AWS Database Migration Service (AWS DMS). By defau
 | Create a user for the AWS DMS task. | Create an AWS DMS user in the source database and grant it READ permissions. This user will be used by AWS DMS. | DBA |
 | Test the DB connectivity. | Test the connectivity to the SQL Server DB instance from the AWS DMS user. | DBA |
 | Create an S3 bucket. | Create the target S3 bucket. This bucket will hold the migrated table data. | Systems administrator |
-| Create an IAM policy and role. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/export-a-microsoft-sql-server-database-to-amazon-s3-by-using-aws-dms.html) | Systems administrator |
+| Create an IAM policy and role. | 1. To create an IAM policy with bucket permissions, use the code in the *Additional information* section.<br />2. Create the role for AWS DMS, and attach the policy to the role.  | Systems administrator |
 
 ### Migrate data by using AWS DMS
 <a name="migrate-data-by-using-aws-dms"></a>

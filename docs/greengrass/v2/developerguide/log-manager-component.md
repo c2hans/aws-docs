@@ -1111,29 +1111,29 @@ The following table describes the changes in each version of the component.
 | --- | --- |
 | 2.3.13 | Updates the component version for the Greengrass nucleus version 2.18.0 release. |
 | 2.3.12 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
-| 2.3.11 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.3.10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
+| 2.3.11 |  **Bug fixes and improvements**<br />   Fixes an issue where Log Manager runtime configuration grew indefinitely with stale information of uploaded log files.     |
+| 2.3.10 |  **New features**<br />   Adds a new configuration key (`updateToTlogIntervalSec`) to control the frequency at which log-upload event details are persisted to the local transaction log (`config.tlog`).   <br />**Bug fixes and improvements**<br />   Improves log manager to refresh cloudwatch client for socket connection error.     |
 | 2.3.9 | Version updated for Greengrass nucleus version 2.14.0 release. |
 | 2.3.8 | Version updated for Greengrass nucleus version 2.13.0 release. |
 | 2.3.7 | Version updated for Greengrass nucleus version 2.12.0 release. |
-| 2.3.6 |  <a name="changelog-log-manager-2.3.6"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.3.5 |  <a name="changelog-log-manager-2.3.5"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html) Version updated for Greengrass nucleus version 2.11.0 release.  |
-| 2.3.4 |  <a name="changelog-log-manager-2.3.4"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
+| 2.3.6 |  <a name="changelog-log-manager-2.3.6"></a>**Bug fixes and improvements**<br />   Adjusts log levels for certain errors.     |
+| 2.3.5 |  <a name="changelog-log-manager-2.3.5"></a>**Improvements**<br /> Improves log upload speed.  Version updated for Greengrass nucleus version 2.11.0 release.  |
+| 2.3.4 |  <a name="changelog-log-manager-2.3.4"></a>**Bug fixes and improvements**<br />   Adds support for setting the `periodicUploadIntervalSec` parameter to fractional values. The minimum is 1 microsecond.   Fixes an issue where log manager doesn't respect the CloudWatch `putLogEvents` limits.     |
 | 2.3.3 | Version updated for Greengrass nucleus version 2.10.0 release. |
-| 2.3.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.3.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.3.0 |  We recommend that you upgrade to Greengrass nucleus 2.9.1 when you upgrade to log manager 2.3.0. [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html) |
+| 2.3.2 |  **Bug fixes and improvements**<br />   Improves space management so that log files are not deleted before they are uploaded.   Fixes issues with cache management.   Additional minor bug fixes and improvements.     |
+| 2.3.1 |  **Bug fixes and improvements**<br />   Fixes an issue where s that target file groups with multiples active log files upload duplicate entries to CloudWatch.   Additional minor bug fixes and improvements.     |
+| 2.3.0 |  We recommend that you upgrade to Greengrass nucleus 2.9.1 when you upgrade to log manager 2.3.0. **New features**<br /> Reduces log delays by processing and directly uploading active log files instead of waiting for new files to be rotated. <br />**Bug fixes and improvements**<br />   Improves support of log rotation when rotating files with a unique name.   Additional minor bug fixes and improvements.    |
 | 2.2.8 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.2.7 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.2.6 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.2.5 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.2.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.2.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.2.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
+| 2.2.4 |  **Bug fixes and improvements**<br />   Improves stability when handling invalid configurations.   Additional minor fixes and improvements.     |
+| 2.2.3 |  **Bug fixes and improvements**<br />   Improves stability in certain scenarios where the component restarts or encounters errors.   Fixes issues where large log messages and large log files fail to upload in certain scenarios.   Fixes issues with how this component handles configuration reset updates.   Fixes an issue where a `null` `diskSpaceLimit` configuration value prevented the component from deploying.     |
+| 2.2.2 |  **Bug fixes and improvements**<br />   Adds support for log messages that are larger than 256 kilobytes. The log manager component splits these large log messages into multiple messages with the same log event timestamp.     |
 | 2.2.1 | Version updated for Greengrass nucleus version 2.5.0 release. |
-| 2.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
+| 2.2.0 |  **New feature**<br />   Adds the `componentLogsConfigurationMap` configuration parameter to support a map format for component log configurations. Each `componentName` object in the map defines the log configuration for a component or application.     |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.3.0 release. |
-| 2.1.1 |  <a name="changelog-log-manager-2.1.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
-| 2.1.0 |  <a name="changelog-log-manager-2.1.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/log-manager-component.html)  |
+| 2.1.1 |  <a name="changelog-log-manager-2.1.1"></a>**Bug fixes and improvements**<br />   Fixes an issue where the system log configuration wasn't updated in certain cases.     |
+| 2.1.0 |  <a name="changelog-log-manager-2.1.0"></a>**Bug fixes and improvements**<br />   Use defaults for `logFileDirectoryPath` and `logFileRegex` that work for Greengrass components that print to standard output (stdout) and standard error (stderr).   Correctly route traffic through a configured network proxy when uploading logs to CloudWatch Logs.   Correctly handle colon characters (`:`) in log stream names. CloudWatch Logs log stream names don't support colons.   Simplify log stream names by removing thing group names from the log stream.   Remove an error log message that prints during normal behavior.     |
 | 2.0.x | Initial version. |

@@ -327,9 +327,9 @@ Java records are a feature of Java 17 runtimes and newer only. In all Java runti
 <a name="java-input-event-types"></a>
 
 There are many possible input events for Lambda functions in Java:
-+ `Integer`, `Long`, `Double`, etc. – The event is a number with no additional formatting—for example, `3.5`. The Java runtime converts the value into an object of the specified type.
++ `Integer`, `Long`, `Double`, and other numeric types – The event is a number with no additional formatting—for example, `3.5`. The Java runtime converts the value into an object of the specified type.
 + `String` – The event is a JSON string, including quotes—for example, `"My string"`. The runtime converts the value into a `String` object without quotes.
-+ `List<Integer>`, `List<String>`, `List<Object>`, etc. – The event is a JSON array. The runtime deserializes it into an object of the specified type or interface.
++ `List<Integer>`, `List<String>`, `List<Object>`, and similar types – The event is a JSON array. The runtime deserializes it into an object of the specified type or interface.
 + `InputStream` – The event is any JSON type. The runtime passes a byte stream of the document to the handler without modification. You deserialize the input and write output to an output stream.
 + Library type – For events sent by other AWS services, use the types in the [ aws-lambda-java-events](https://github.com/aws/aws-lambda-java-libs/tree/main/aws-lambda-java-events) library. For example, if your Lambda function is invoked by Amazon Simple Queue Service (SQS), use the `SQSEvent` object as the input.
 
@@ -433,7 +433,7 @@ Adhere to the guidelines in the following list to use best coding practices when
 + **Separate the Lambda handler from your core logic.** With this approach, you can make a more unit-testable function.
 + **Control the dependencies in your function's deployment package. ** The AWS Lambda execution environment contains a number of libraries. To enable the latest set of features and security updates, Lambda periodically updates these libraries. These updates might introduce subtle changes to the behavior of your Lambda function. To have full control of the dependencies your function uses, package all of your dependencies with your deployment package.
 + **Minimize the complexity of your dependencies.** Prefer simpler frameworks that load quickly on [execution environment](lambda-runtime-environment.md) startup. For example, prefer simpler Java dependency injection (IoC) frameworks like [Dagger](https://google.github.io/dagger/) or [Guice](https://github.com/google/guice), over more complex ones like [Spring Framework](https://github.com/spring-projects/spring-framework).
-+ **Minimize your deployment package size to its runtime necessities. ** This reduces the amount of time that it takes for your deployment package to be downloaded and unpacked ahead of invocation. For functions authored in Java, avoid uploading the entire AWS SDK library as part of your deployment package. Instead, selectively depend on the modules which pick up components of the SDK you need (e.g. DynamoDB, Amazon S3 SDK modules and [Lambda core libraries](https://github.com/aws/aws-lambda-java-libs)).
++ **Minimize your deployment package size to its runtime necessities. ** This reduces the amount of time that it takes for your deployment package to be downloaded and unpacked ahead of invocation. For functions authored in Java, avoid uploading the entire AWS SDK library as part of your deployment package. Instead, selectively depend on the modules which pick up components of the SDK you need (for example, DynamoDB, Amazon S3 SDK modules and [Lambda core libraries](https://github.com/aws/aws-lambda-java-libs) on the GitHub website).
 
 **Take advantage of execution environment reuse to improve the performance of your function.** Initialize SDK clients and database connections outside of the function handler, and cache static assets locally in the `/tmp` directory. Subsequent invocations processed by the same instance of your function can reuse these resources. This saves cost by reducing function run time.
 

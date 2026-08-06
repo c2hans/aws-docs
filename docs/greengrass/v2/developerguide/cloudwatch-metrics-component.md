@@ -807,10 +807,10 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 4.0.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-metrics-component.html)  |
-| 3.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-metrics-component.html)  |
-| 3.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-metrics-component.html)  |
-| 3.0.0 | <a name="changelog-cloudwatch-metrics-3.0.0-major-version-changes"></a>This version of the CloudWatch metrics component expects different configuration parameters than version 2.x. If you use a non-default configuration for version 2.x, and you want to upgrade from v2.x to v3.x, you must update the component's configuration. For more information, see [CloudWatch metrics component configuration](#cloudwatch-metrics-component-configuration).<a name="changelog-cloudwatch-metrics-3.0.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-metrics-component.html) |
+| 4.0.0 |  **New features**<br />   The `UseInstaller` configuration now defaults to `false`.     |
+| 3.2.0 |  **New features**<br />   Add recipe supports for Greengrass nucleus lite     |
+| 3.1.0 |  **Bug fixes and improvements**<br />   Adds support for HTTPS network proxy configurations. For more information, see [Connect on port 443 or through a network proxy](configure-greengrass-core-v2.md#configure-alpn-network-proxy) and [Enable the core device to trust an HTTPS proxy](configure-greengrass-core-v2.md#https-proxy-certificate-trust).     |
+| 3.0.0 | <a name="changelog-cloudwatch-metrics-3.0.0-major-version-changes"></a>This version of the CloudWatch metrics component expects different configuration parameters than version 2.x. If you use a non-default configuration for version 2.x, and you want to upgrade from v2.x to v3.x, you must update the component's configuration. For more information, see [CloudWatch metrics component configuration](#cloudwatch-metrics-component-configuration).<a name="changelog-cloudwatch-metrics-3.0.0"></a>**New features**<br />   Adds support for core devices that run Windows.   Changes the component type from Lambda component to generic component. This component now no longer depends on the legacy subscription router component to create subscriptions.    Adds new `InputTopic` configuration parameter to specify the topic to which the component subscribes to receive messages.   Adds new `OutputTopic` configuration parameter to specify the topic to which the component publishes status responses.   Adds new `PubSubToIoTCore` configuration parameter to specify whether to publish and subscribe to AWS IoT Core MQTT topics.   Adds the new `UseInstaller` configuration parameter that lets you optionally disable the installation script that installs component dependencies.   <br />**Bug fixes and improvements**<br /> Adds support for duplicate timestamps in input data.  |
 
 ------
 #### [ v2.x ]
@@ -821,8 +821,8 @@ The following table describes the changes in each version of the component.
 | 2.1.3 | Version updated for Greengrass nucleus version 2.11.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-metrics-component.html)  |
-| 2.0.8 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/cloudwatch-metrics-component.html)  |
+| 2.1.0 |  **New features**<br />   Adds support for HTTPS network proxy configurations. For more information, see [Connect on port 443 or through a network proxy](configure-greengrass-core-v2.md#configure-alpn-network-proxy) and [Enable the core device to trust an HTTPS proxy](configure-greengrass-core-v2.md#https-proxy-certificate-trust).     |
+| 2.0.8 |  **Bug fixes and improvements**<br />   Adds support for duplicate timestamps in input data.   Version updated for Greengrass nucleus version 2.5.0 release.     |
 | 2.0.7 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.6 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.5 | Version updated for Greengrass nucleus version 2.2.0 release. |

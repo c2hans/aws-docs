@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/waf-or-shield/waf
 | --- |--- |
 | **Purpose** | To help you determine whether AWS WAF or AWS Shield meets your needs for a web application security service. |
 | **Last updated** | September 17, 2024 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/waf-or-shield/waf-or-shield.html)  |
+| **Covered services** |  +  [AWS WAF](https://docs.aws.amazon.com/waf/latest/developerguide/waf-chapter.html) <br />+  [AWS Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html)   |
 
 ## Introduction
 <a name="introduction"></a>

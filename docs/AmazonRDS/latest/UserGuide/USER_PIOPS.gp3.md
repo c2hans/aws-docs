@@ -11,6 +11,8 @@ Although you can reduce the amount of Provisioned IOPS and storage throughput fo
 
 In most cases, scaling storage doesn't require any outage. After you modify the storage IOPS for a DB instance, the status of the DB instance is **storage-optimization**. You can expect elevated latencies, but still within the single-digit millisecond range, during storage optimization. The DB instance is fully operational after a storage modification.
 
+To monitor optimization progress per volume, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During optimization, `StorageOperationStatus` is set to `Optimizing`.
+
 **Note**
 After storage optimization completes on the instance, you can make additional storage modifications. You can perform a maximum of four storage modifications within any 24-hour period.
 

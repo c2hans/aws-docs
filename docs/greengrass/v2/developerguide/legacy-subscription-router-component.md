@@ -361,5 +361,5 @@ The following table describes the changes in each version of the component.
 | 2.1.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.2.0 release. |
-| 2.1.0 |  <a name="changelog-legacy-subscription-router-2.1.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/legacy-subscription-router-component.html)  |
+| 2.1.0 |  <a name="changelog-legacy-subscription-router-2.1.0"></a>**Bug fixes and improvements**<br />   Adds support to specify component names instead of ARNs for `source` and `target`. If you specify a component name for a subscription, you don't need to reconfigure the subscription each time the version of the Lambda function changes.     |
 | 2.0.3 | Initial version. |

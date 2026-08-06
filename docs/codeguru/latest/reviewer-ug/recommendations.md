@@ -57,19 +57,19 @@ Amazon CodeGuru Reviewer detects unprotected usernames, passwords, RSA keys, and
 
 | Provider | Secrets detected |
 | --- | --- |
-| Amazon Web Services (AWS) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Atlassian |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Databricks |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Datadog |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| GitHub |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Intercom |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Mailchimp |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Mailgun |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Salesforce |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| SendGrid |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Shopify |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Slack |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Stripe |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Tableau |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Telegram |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
-| Twilio |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codeguru/latest/reviewer-ug/recommendations.html)  |
+| Amazon Web Services (AWS) |  +  Amazon AWS Secret Access Key   |
+| Atlassian |  +  Atlassian API Token <br />+  Atlassian JSON Web Token <br />+  Bitbucket Server Personal Access Token   |
+| Databricks |  +  Databricks Access Token   |
+| Datadog |  +  Datadog API Key <br />+  Datadog App Key   |
+| GitHub |  +  GitHub Personal Access Token <br />+  GitHub OAuth Access Token <br />+  GitHub Refresh Token <br />+  GitHub App Installation Access Token <br />+  GitHub SSH Private Key   |
+| Intercom |  +  Intercom Access Token   |
+| Mailchimp |  +  Mailchimp API Key   |
+| Mailgun |  +  Mailgun API Key   |
+| Salesforce |  +  Private Key   |
+| SendGrid |  +  SendGrid API Key   |
+| Shopify |  +  Shopify App Shared Secret <br />+  Shopify Access Token <br />+  Shopify Custom App Access Token <br />+  Shopify Private App Password   |
+| Slack |  +  Client ID <br />+  Client Secret   |
+| Stripe |  +  Stripe API Key <br />+  Stripe Live API Secret Key <br />+  Stripe Test API Secret Key <br />+  Stripe Live API Restricted Key <br />+  Stripe Test API Restricted Key <br />+  Stripe Webhook Signing Secret   |
+| Tableau |  +  Tableau Personal access token   |
+| Telegram |  +  Telegram Bot Token   |
+| Twilio |  +  Twilio Account string identifier <br />+  Twilio API Key   |

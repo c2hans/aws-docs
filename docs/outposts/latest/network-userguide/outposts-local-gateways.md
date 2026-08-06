@@ -63,6 +63,9 @@ The data plane path for the local gateway traverses from the Outpost, through th
 
 You can connect your on-premises Outposts infrastructure to AWS services in the Region privately over Direct Connect. For more information, see [AWS Outposts private connectivity](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-outposts-private-connectivity/).
 
+**IPv6 support**
+The local gateway supports only IPv4 traffic. It does not support IPv6.
+
 The following image shows the connectivity through the local gateway:
 
 ![Shows local gateway connections.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/outpost-rack-local-gateway-connection-Nov-23.png)

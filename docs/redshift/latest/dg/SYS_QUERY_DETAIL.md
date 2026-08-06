@@ -59,7 +59,7 @@ LEFT JOIN sys_transaction_history th on qh.transaction_id = th.transaction_id;
 | spilled\_block\_local\_disk | bigint | The number of blocks spilled to local disk. |
 | spilled\_block\_remote\_disk | bigint | The number of blocks spilled to Amazon Simple Storage Service. |
 | step\_attribute | character(64) | Contains information about the associated step. Possible values for scan steps: multi-dimensional. |
-| metrics\_level | character(64) | The metric level of the query. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_QUERY_DETAIL.html) |
+| metrics\_level | character(64) | The metric level of the query. Possible values are as follows:+  Child query <br />+  Stream <br />+  Segment <br />+  Step  |
 | plan\_parent\_id | integer | The identifier of the plan node's parent node. A parent node can have multiple child nodes. For example, a merge join is the parent node of the scans on the joined tables.  |
 | plan\_node\_id | integer | The identifier of a plan node that maps to one or more steps in the query. |
 

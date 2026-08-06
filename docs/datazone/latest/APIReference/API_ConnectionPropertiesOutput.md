@@ -23,6 +23,11 @@ The Amazon Athena properties of a connection.
 Type: [AthenaPropertiesOutput](API_AthenaPropertiesOutput.md) object
 Required: No
 
+ ** gitProperties **   <a name="datazone-Type-ConnectionPropertiesOutput-gitProperties"></a>
+The Git properties of a connection.
+Type: [GitPropertiesOutput](API_GitPropertiesOutput.md) object
+Required: No
+
  ** glueProperties **   <a name="datazone-Type-ConnectionPropertiesOutput-glueProperties"></a>
 The AWS Glue properties of a connection.
 Type: [GluePropertiesOutput](API_GluePropertiesOutput.md) object
@@ -56,6 +61,11 @@ Required: No
  ** s3Properties **   <a name="datazone-Type-ConnectionPropertiesOutput-s3Properties"></a>
 The Amazon S3 properties of a connection.
 Type: [S3PropertiesOutput](API_S3PropertiesOutput.md) object
+Required: No
+
+ ** snowflakeProperties **   <a name="datazone-Type-ConnectionPropertiesOutput-snowflakeProperties"></a>
+The Snowflake-specific connection properties for an existing connection.
+Type: [SnowflakePropertiesOutput](API_SnowflakePropertiesOutput.md) object
 Required: No
 
  ** sparkEmrProperties **   <a name="datazone-Type-ConnectionPropertiesOutput-sparkEmrProperties"></a>

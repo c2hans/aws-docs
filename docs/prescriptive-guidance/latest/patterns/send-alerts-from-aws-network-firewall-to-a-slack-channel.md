@@ -81,8 +81,8 @@ To use these files, follow the instructions in the next section.
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an S3 bucket. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-alerts-from-aws-network-firewall-to-a-slack-channel.html)For more information, see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the Amazon S3 documentation.  | App developer, App owner, Cloud administrator |
-| Upload the CloudFormation templates and Lambda code. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-alerts-from-aws-network-firewall-to-a-slack-channel.html) | App developer, App owner, Cloud administrator |
+| Create an S3 bucket. | 1. Sign in to the AWS Management Console and open the Amazon S3 console at [https://console.aws.amazon.com/s3/](https://console.aws.amazon.com/s3/).<br />2. Choose or create an S3 bucket to host the code. An S3 bucket name is globally unique, and the namespace is shared by all AWS accounts. The S3 bucket name cannot include leading slashes. We recommend that you use a [prefix](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) to organize the code for this pattern.For more information, see [Creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) in the Amazon S3 documentation.  | App developer, App owner, Cloud administrator |
+| Upload the CloudFormation templates and Lambda code. | 1. Download the following files from the [GitHub repository](https://github.com/aws-samples/aws-network-firewall-automation-examples/tree/main/NfwSlackIntegration/src) for this pattern:`base.yml``igw-ingress-route.yml``slack-lambda.py``slackLambda.yml``decentralized-deployment.yml``protected-subnet-route.yml``slack-lambda.py.zip`<br />2. Upload the files to the S3 bucket you created.  | App developer, App owner, Cloud administrator |
 
 ### Deploy the CloudFormation template
 <a name="deploy-the-cloudformation-template"></a>
@@ -91,7 +91,7 @@ To use these files, follow the instructions in the next section.
 | --- | --- | --- |
 | Launch the CloudFormation template. | Open the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation/) in the same AWS Region as your S3 bucket and deploy the template `base.yml`. This template creates the required AWS resources and Lambda functions for the alerts to be transmitted to the Slack channel.<br />For more information about deploying CloudFormation templates, see [Creating a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stack.html) in the CloudFormation documentation. | App developer, App owner, Cloud administrator |
 | Complete the parameters in the template. | Specify the stack name and configure the parameter values. For a list of parameters, their descriptions, and default values, see *CloudFormation parameters* in the [Additional information](#send-alerts-from-aws-network-firewall-to-a-slack-channel-additional) section.  | App developer, App owner, Cloud administrator |
-| Create the stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/send-alerts-from-aws-network-firewall-to-a-slack-channel.html) | App developer, App owner, Cloud administrator |
+| Create the stack. | 1. Review stack details and update values based on your environment requirements.<br />2. Choose **Create stack** to deploy the template. | App developer, App owner, Cloud administrator |
 
 ### Verify the solution
 <a name="verify-the-solution"></a>

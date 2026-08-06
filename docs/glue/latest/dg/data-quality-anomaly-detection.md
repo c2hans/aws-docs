@@ -96,6 +96,65 @@ Analyzers = [
 +  When anomalies are generated, data quality scores are not impacted.
 +  When an anomaly is detected, it is considered normal for subsequent runs. The machine learning algorithm will consider this anomalous value as input unless it is explicitly excluded.
 
+### Anomaly detection modes
+<a name="data-quality-anomaly-detection-modes"></a>
+
+AWS Glue Data Quality supports two anomaly detection modes that control how the machine learning model forecasts expected values. You can choose the mode that best matches your data characteristics and monitoring patterns.
++ **Linear** (default) – Models trends and seasonality in your data over time. The model learns growth patterns and cyclical behavior from historical data points and extrapolates them forward. Use this mode when your data shows consistent upward or downward trends, weekly or daily seasonal patterns, or when you run evaluations on a regular schedule.
++ **Fixed** – Treats all data points as equally spaced regardless of the actual time intervals between evaluation runs. The model establishes a baseline from observed values without assuming any time-based growth or decay. Use this mode when your data is flat or fluctuates randomly, when you run evaluations at irregular intervals, or for exploratory analysis in notebook environments.
+
+**Choosing a mode**
+
+The following table summarizes when to use each mode.
+
+| Use Linear mode when | Use Fixed mode when |
+| --- | --- |
+| Your data has consistent upward or downward trends | Your data is flat or has no predictable pattern |
+| Your data shows seasonal patterns (weekly, daily) | Your data fluctuates randomly |
+| You run evaluations on a regular schedule | You run evaluations at irregular or unpredictable intervals |
+| You need to detect when an established trend breaks | You perform exploratory analysis in notebooks |
+| There are long gaps between runs and the data follows a known pattern | Data changes are user-driven rather than reflecting natural business patterns |
+
+**Configuring the observation mode**
+
+You can set the observation mode when starting a data quality evaluation run.
+
+For the AWS Glue Data Catalog, use the `ObservationMode` field in the `AdditionalRunOptions` parameter:
+
+```
+aws glue start-data-quality-ruleset-evaluation-run \
+  --data-source '{
+    "GlueTable": {
+      "DatabaseName": "my_database",
+      "TableName": "my_table"
+    }
+  }' \
+  --role "arn:aws:iam::123456789012:role/GlueServiceRole" \
+  --ruleset-names '["my_ruleset"]' \
+  --additional-run-options '{
+    "ObservationScope": "ALL",
+    "ObservationMode": "FIXED"
+  }'
+```
+
+For AWS Glue ETL jobs, use the `observations.mode` option:
+
+```
+additional_options = {
+    "observations.scope": "ALL",
+    "observations.mode": "FIXED"
+}
+
+result = EvaluateDataQuality.process_rows(
+    frame=dynamic_frame,
+    ruleset=ruleset,
+    publishing_options=publishing_options,
+    additional_options=additional_options
+)
+```
+
+If you do not specify a mode, anomaly detection uses the `LINEAR` mode by default.
+
 ### Retraining
 <a name="data-quality-anomaly-detection-retraining"></a>
 

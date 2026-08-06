@@ -88,7 +88,7 @@ The code for this pattern is available in the GitHub [Database Migration DevOps 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Set up and configure Git on your local workstation. | Install and configure Git on your local workstation by following the instructions in the [Git documentation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). | DevOps engineer |
-| Create a project folder and add the files from the GitHub repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-ci-cd-pipeline-for-db-migration-with-terraform.html) | DevOps engineer |
+| Create a project folder and add the files from the GitHub repository. | 1. Open the [GitHub repository](https://github.com/aws-samples/aws-terraform-db-migration-framework-samples) for this pattern.<br />2. Choose **Code** to see cloning options, and copy the URL provided in the HTTPS tab.<br />3. Create a folder for your project on your workstation.<br />4. Open a terminal and navigate to this folder.<br />5. Clone the GitHub repository:<pre>git clone <github-repository-url></pre><br />where `<github-repository-url>` is the URL you copied in step 2.<br />6. When cloning is complete, go to the cloned repository in your project folder:<pre>cd <folder-name>/aws-terraform-db-migration-framework-samples</pre><br />7. Open this project in an integrated development environment (IDE) of your choice. | DevOps engineer |
 
 ### Provision the target architecture
 <a name="provision-the-target-architecture"></a>
@@ -99,7 +99,7 @@ The code for this pattern is available in the GitHub [Database Migration DevOps 
 | Initialize the Terraform configuration. | In the `db-cicd-integration` folder, enter the following command to initialize your working directory that contains the Terraform configuration files:<pre>terraform init</pre> | DevOps engineer |
 | Preview the Terraform plan. | To create a Terraform plan, enter the following command:<pre>terraform plan -var-file="terraform.sample"  </pre><br />Terraform evaluates the configuration files to determine the target state for the declared resources. It then compares the target state against the current state and creates a plan. | DevOps engineer |
 | Verify the plan. | Review the plan and confirm that it configures the required architecture in your target AWS account. | DevOps engineer |
-| Deploy the solution. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-ci-cd-pipeline-for-db-migration-with-terraform.html) | DevOps engineer |
+| Deploy the solution. | 1. Enter the following command to apply the plan:<pre>terraform apply -var-file="terraform.sample"</pre><br />2. Enter `yes` to confirm. Terraform creates, updates, or destroys infrastructure to achieve the target state declared in the configuration files. For more information about the sequence, see the [Architecture](#set-up-ci-cd-pipeline-for-db-migration-with-terraform-architecture) section of this pattern. | DevOps engineer |
 
 ### Verify the deployment
 <a name="verify-the-deployment"></a>
@@ -113,7 +113,7 @@ The code for this pattern is available in the GitHub [Database Migration DevOps 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clean up the infrastructure. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-ci-cd-pipeline-for-db-migration-with-terraform.html) | DevOps engineer |
+| Clean up the infrastructure. | 1. After your project is complete, clean up the infrastructure you created by using the command:<pre>terraform destroy --var-file=terraform.sample</pre><br />2. Enter `yes` to confirm. | DevOps engineer |
 
 ## Related resources
 <a name="set-up-ci-cd-pipeline-for-db-migration-with-terraform-resources"></a>

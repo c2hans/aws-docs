@@ -46,10 +46,10 @@ Notifications in OpenSearch Service can be *informational*, which relate to any 
 
 | Severity | Description | Examples |
 | --- | --- | --- |
-| Informational | Information related to the operation of your domain. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html)  |
-| Low | A recommended action, but has no adverse impact on domain availability or performance if no action is taken. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html)  |
-| Medium | There might be an impact if the recommended action is not taken, but comes with an extended time window for the action to be taken. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html)  |
-| High | Urgent action is required to avoid adverse impact. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-notifications.html)  |
+| Informational | Information related to the operation of your domain. |  +  Service software update available <br />+  Auto-Tune started   |
+| Low | A recommended action, but has no adverse impact on domain availability or performance if no action is taken. |  +  Auto-Tune cancelled <br />+  High shard count warning   |
+| Medium | There might be an impact if the recommended action is not taken, but comes with an extended time window for the action to be taken. |  +  Service software update failed <br />+  Shard count limit exceeded   |
+| High | Urgent action is required to avoid adverse impact. |  +  Service software update required <br />+  KMS key inaccessible   |
 | Critical | Immediate action is required to avoid adverse impact, or to recover from it.  | None currently available |
 
 ## Sample EventBridge event

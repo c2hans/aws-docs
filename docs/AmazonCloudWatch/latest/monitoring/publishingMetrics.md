@@ -36,7 +36,7 @@ If you set an alarm on a high-resolution metric, you can specify a high-resoluti
 
 In custom metrics, the `--dimensions` parameter is common. A dimension further clarifies what the metric is and what data it stores. You can have up to 30 dimensions assigned to one metric, and each dimension is defined by a name and value pair.
 
-How you specify a dimension is different when you use different commands. With [put-metric-data](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-data.html), you specify each dimension as {{MyName}}={{MyValue}}, and with [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) or [put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html) you use the format `Name=`{{MyName}}, `Value=`{{MyValue}}. For example, the following command publishes a `Buffers` metric with two dimensions named `InstanceId` and `InstanceType`.
+How you specify a dimension is different when you use different commands. With [put-metric-data](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-data.html), you specify each dimension as {{MyName}}={{MyValue}}, and with [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) or [put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html) you use the format `Name=`{{MyName}}, `Value=`{{MyValue}}. For example, the following command publishes a `Buffers` metric with 2 dimensions named `InstanceId` and `InstanceType`.
 
 ```
 aws cloudwatch put-metric-data --metric-name Buffers --namespace MyNameSpace --unit Bytes --value 231434333 --dimensions InstanceId=1-23456789,InstanceType=m1.small
@@ -72,7 +72,7 @@ If you call this command with a new metric name, CloudWatch creates a metric for
 **Note**
 When you create a metric, it can take up to 2 minutes before you can retrieve statistics for the new metric using the [get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html) command. However, it can take up to 15 minutes before the new metric appears in the list of metrics retrieved using the [list-metrics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/list-metrics.html) command.
 
-Although you can publish data points with time stamps as granular as one-thousandth of a second, CloudWatch aggregates the data to a minimum granularity of 1 second. CloudWatch records the average (sum of all items divided by number of items) of the values received for each period, as well as the number of samples, maximum value, and minimum value for the same time period. For example, the `PageViewCount` metric from the previous examples contains three data points with time stamps just seconds apart. If you have your period set to 1 minute, CloudWatch aggregates the three data points because they all have time stamps within a 1-minute period.
+Although you can publish data points with time stamps as granular as one-thousandth of a second, CloudWatch aggregates the data to a minimum granularity of 1 second. CloudWatch records the average (sum of all items divided by number of items) of the values received for each period, as well as the number of samples, maximum value, and minimum value for the same time period. For example, the `PageViewCount` metric from the previous examples contains 3 data points with time stamps just seconds apart. If you have your period set to 1 minute, CloudWatch aggregates the 3 data points because they all have time stamps within a 1-minute period.
 
 You can use the **get-metric-statistics** command to retrieve statistics based on the data points that you published.
 
@@ -104,7 +104,7 @@ The following is example output.
 ## Publish statistic sets
 <a name="publishingDataPoints1"></a>
 
-You can aggregate your data before you publish to CloudWatch. When you have multiple data points per minute, aggregating data minimizes the number of calls to **put-metric-data**. For example, instead of calling **put-metric-data** multiple times for three data points that are within 3 seconds of each other, you can aggregate the data into a statistic set that you publish with one call, using the `--statistic-values` parameter.
+You can aggregate your data before you publish to CloudWatch. When you have multiple data points per minute, aggregating data minimizes the number of calls to **put-metric-data**. For example, instead of calling **put-metric-data** multiple times for 3 data points that are within 3 seconds of each other, you can aggregate the data into a statistic set that you publish with one call, using the `--statistic-values` parameter.
 
 ```
 aws cloudwatch put-metric-data --metric-name PageViewCount --namespace {{MyService}} --statistic-values Sum=11,Minimum=2,Maximum=5,SampleCount=3 --timestamp {{2016-10-14T12:00:00.000Z}}

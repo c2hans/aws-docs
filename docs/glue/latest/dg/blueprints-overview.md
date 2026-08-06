@@ -45,9 +45,9 @@ blueprints are developed, tested, registered with AWS Glue, and run to create wo
 
 | Persona | Tasks |
 | --- | --- |
-| AWS Glue developer |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/blueprints-overview.html)  |
-| AWS Glue administrator |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/blueprints-overview.html)  |
-| Data analyst |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/blueprints-overview.html)  |
+| AWS Glue developer |  +  Writes the workflow layout script and creates the configuration file. <br />+  Tests the blueprint locally using libraries provided by the AWS Glue service. <br />+  Creates a ZIP archive of the script, configuration file, and supporting files and publishes the archive to a location in Amazon S3. <br />+  Adds a bucket policy to the Amazon S3 bucket that grants read permissions on bucket objects to the AWS Glue administrator's AWS account. <br />+  Grants IAM read permissions on the ZIP archive in Amazon S3 to the AWS Glue administrator.   |
+| AWS Glue administrator |  +  *Registers* the blueprint with AWS Glue. AWS Glue makes a copy of the ZIP archive into a reserved Amazon S3 location. <br />+  Grants IAM permissions on the blueprint to data analysts.   |
+| Data analyst |  +  Runs the blueprint to create a workflow, and provides blueprint parameter values. Checks the blueprint run status to ensure that the workflow and workflow components were successfully generated. <br />+  Runs and troubleshoots the workflow. Before running the workflow, can verify the workflow by viewing the workflow design graph on the AWS Glue console.   |
 
 **See also**
 [Developing blueprints in AWS Glue](developing-blueprints.md)

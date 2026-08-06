@@ -1031,12 +1031,12 @@ The following table describes the changes in each version of the component.
 | 2.1.8 | Version updated for Greengrass nucleus version 2.12.0 release. |
 | 2.1.7 | Version updated for Greengrass nucleus version 2.11.0 release. |
 | 2.1.6 | Version updated for Greengrass nucleus version 2.10.0 release. |
-| 2.1.5 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/modbus-rtu-protocol-adapter-component.html) |
+| 2.1.5 | **Bug fixes and improvements**<br />   Fixes an issue with the `ReadDiscreteInput` operation.    |
 | 2.1.4 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/modbus-rtu-protocol-adapter-component.html)  |
+| 2.1.0 |  **New features**<br />   Adds the `ModbusBaudRate`, `ModbusByteSize`, `ModbusParity`, and `ModbusStopBits` options that you can specify to configure serial communication with Modbus RTU devices.     |
 | 2.0.8 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 2.0.7 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.6 | Version updated for Greengrass nucleus version 2.3.0 release. |

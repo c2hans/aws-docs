@@ -127,7 +127,7 @@ View details about updates to AWS managed policies for MediaConnect since this s
 
 | Change | Description | Date |
 | --- | --- | --- |
-| **AWSMediaConnectServicePolicy** – Update to an existing policy | MediaConnect added the following Amazon EC2 permissions to support the router feature:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/security-iam-awsmanpol.html)<br />These permissions allow MediaConnect to view and manage router network interfaces as needed for cross-Region audio and video routing. | November 19, 2025 |
+| **AWSMediaConnectServicePolicy** – Update to an existing policy | MediaConnect added the following Amazon EC2 permissions to support the router feature:+  `ec2:CreateNetworkInterfacePermission`  <br />+  `ec2:DeleteNetworkInterface`  <br />+  `ec2:DeleteNetworkInterfacePermission`  <br />+  `ec2:DescribeNetworkInterfaces`  <br />+  `ec2:DescribeSecurityGroups`  <br />+  `ec2:DescribeSubnets` <br />These permissions allow MediaConnect to view and manage router network interfaces as needed for cross-Region audio and video routing. | November 19, 2025 |
 | The MediaConnect managed policy **AWSElementalMediaConnectReadOnlyAccess** has been added. | This policy provides read-only access to MediaConnect resources. | February 12, 2025 |
 | The MediaConnect managed policy **AWSElementalMediaConnectFullAccess** has been added. | This policy provides full access to MediaConnect resources. | February 12, 2025 |
 | The MediaConnect managed policy MediaConnectGatewayInstanceRolePolicy has been added. | This policy grants permission to register MediaConnect Gateway Instances to a MediaConnect Gateway. | April 12, 2023 |

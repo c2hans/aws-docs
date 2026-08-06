@@ -18,7 +18,7 @@ This solution helps you monitor your Amazon MSK clusters in CloudWatch without r
 <a name="Solution-Prometheus-On-MSK-Requirements"></a>
 
 This solution is relevant for the following conditions:
-+ An Amazon MSK cluster in provisioned mode. Managed collectors do not support Amazon MSK Serverless or Amazon MSK Express clusters.
++ An Amazon MSK cluster in provisioned mode, with standard or express brokers. Managed collectors do not support Amazon MSK Serverless clusters.
 + Open Monitoring enabled on the cluster, which exposes the JMX Exporter (port 11001) and Node Exporter (port 11002).
 + Amazon VPC with DNS enabled, and at least two subnets in different Availability Zones for the collector.
 + A security group that allows the collector to reach broker ports 11001 and 11002.
@@ -46,7 +46,7 @@ Amazon MSK publishes detailed monitoring metrics to classic CloudWatch metrics, 
 ## View the automatic dashboard
 <a name="Solution-Prometheus-On-MSK-Dashboards"></a>
 
-After the collector begins delivering your Amazon MSK metrics to CloudWatch, the CloudWatch console provides an automatic dashboard named **MSK OTel**. To open it, sign in to the AWS Management Console, open the CloudWatch console, choose **Dashboards** in the navigation pane, choose **Automatic dashboards**, and then choose **MSK OTel**. You can start monitoring your clusters without building any widgets or dashboards yourself. If the automatic dashboard meets your needs, you can use it as is. To build a tailored monitoring experience, you can add any of its widgets to a custom dashboard. For more information about custom dashboards, see [Using CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
+After the collector begins delivering your Amazon MSK metrics to CloudWatch, the CloudWatch console provides an automatic dashboard named **MSK OTel**. To open it, see [MSK OTel](https://console.aws.amazon.com/cloudwatch/home?#dashboards/templates/msk-otel), or sign in to the AWS Management Console, open the CloudWatch console, choose **Dashboards** in the navigation pane, choose **Automatic dashboards**, and then choose **MSK OTel**. You can start monitoring your clusters without building any widgets or dashboards yourself. If the automatic dashboard meets your needs, you can use it as is. To build a tailored monitoring experience, you can add any of its widgets to a custom dashboard. For more information about custom dashboards, see [Using CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
 
 ## Costs
 <a name="Solution-Prometheus-On-MSK-Costs"></a>

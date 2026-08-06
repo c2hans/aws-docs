@@ -60,6 +60,6 @@ The value of user’s proficiency. You must use a predefined attribute value tha
 The level of the proficiency. The valid values are 1, 2, 3, 4 and 5.
 *Required*: Yes
 *Type*: Number
-*Minimum*: `1`
-*Maximum*: `5`
+*Minimum*: `0`
+*Maximum*: `10`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

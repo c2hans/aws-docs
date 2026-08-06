@@ -33,7 +33,7 @@ You can see resources that may not be cloned by checking the drift status of you
 | --- | --- |
 | `-n` {{string}}<br />or<br />`--clone_name` {{string}} | Desired name for the cloned environment. |
 | `-c` {{string}}<br />or<br />`--cname` {{string}} | Desired CNAME prefix for the cloned environment. |
-| `--envvars` | Environment properties in a comma-separated list with the format {{name}}={{value}}.<br />Type: String<br />Constraints:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-clone.html) |
+| `--envvars` | Environment properties in a comma-separated list with the format {{name}}={{value}}.<br />Type: String<br />Constraints:+  Key-value pairs must be separated by commas. <br />+  Keys and values can contain any alphabetic character in any language, any numeric character, white space, invisible separator, and the following symbols: \_ . : / \+ \\ - @ <br />+  Keys can contain up to 128 characters. Values can contain up to 256 characters. <br />+  Keys and values are case sensitive. <br />+  Values cannot match the environment name. <br />+  Values cannot include either `aws:` or `elasticbeanstalk:`. <br />+  The combined size of all environment properties cannot exceed 4096 bytes.  |
 | `--exact` | Prevents Elastic Beanstalk from updating the solution stack version for the new clone environment to the most recent version available (for the original environment's platform). |
 | `--scale` {{number}} | The number of instances to run in the clone environment when it is launched. |
 | `--tags` {{name}}={{value}} | [Tags](using-features.tagging.md) for the resources in your environment in a comma-separated list with the format {{name}}={{value}}. |

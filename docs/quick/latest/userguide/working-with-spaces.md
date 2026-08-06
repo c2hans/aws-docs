@@ -33,8 +33,8 @@ The following table shows how each user type in Amazon Quick interacts with spac
 
 | User type | Capabilities |
 | --- | --- |
-| Administrators |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-spaces.html)  |
-| Author Pro and Reader Pro users |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-spaces.html)  |
+| Administrators |  +  Control whether users with space creation capabilities can create spaces   |
+| Author Pro and Reader Pro users |  +  Create and maintain spaces <br />+  Add topics, dashboards, datasets, knowledge bases, and application actions to spaces <br />+  Upload files directly into spaces <br />+  Attach an agent to a space <br />+  Interact with space data through chat <br />+  Share spaces   |
 
 ## Amazon Quick user permission for spaces
 <a name="user-space-permissions"></a>
@@ -47,8 +47,8 @@ The following table outlines how user permissions determine what you can do with
 
 | Permissions type | Permissions |
 | --- | --- |
-| Owners | [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-spaces.html)As an owner, you can designate another user co-owner of a space. If you do so, the user can undertake all post-creation management actions an owner can. |
-| Viewers |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/working-with-spaces.html)  |
+| Owners | +  Create a space <br />+  Upload files to a space <br />+  Share spaces with others <br />+  Link and unlink Amazon Quick resources (topics, dashboards, datasets, knowledge bases, and application actions) to a space <br />+  Delete a space As an owner, you can designate another user co-owner of a space. If you do so, the user can undertake all post-creation management actions an owner can. |
+| Viewers |  +  Download files uploaded into a space <br />+  Ask questions from data inside space <br />+  Use a specific space as context for an agent <br />+  Search for a space by name <br />+  Access a space using a direct URL <br />+  View a preset list sample questions to help get started on using the space   |
 
 ## Understanding file upload status
 <a name="file-upload-statuses"></a>

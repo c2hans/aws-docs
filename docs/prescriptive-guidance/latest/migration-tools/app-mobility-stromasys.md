@@ -20,9 +20,9 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Product website** | [Stromasys Charon](https://www.stromasys.com/emulation-software-solutions/) |
 | **Product certifications**<br />[AWS Competency Program](https://aws.amazon.com/partners/offerings/) competencies and other certifications | Migration and Modernization ISV Competency |
 | **AWS Marketplace**<br />Link to subscribe or download | [Virtualization for SPARC on AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-2zg63j6ykjodw) |
-| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | Servers deployed on AWS (customer VPC)Servers deployed on premises in customer environment |
+| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | + Servers deployed on AWS (customer VPC)<br />+ Servers deployed on premises in customer environment |
 | **Compliance** | General Data Protection Regulation (GDPR) |
-| **Service model** | Self-service with vendor support – Deployment, management, and maintenance can be done by customer or end-user with the option of vendor supportManaged service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
+| **Service model** | + Self-service with vendor support – Deployment, management, and maintenance can be done by customer or end-user with the option of vendor support<br />+ Managed service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
 | **Pricing model** | Subscription |
 
 ## Application mobility capabilities
@@ -32,15 +32,15 @@ AWS Partner product descriptions and reported qualifications, including complian
 |
 | Category | Product capabilities |
 | --- |--- |
-| **Replication method**<br />The ability to support one or more of the following replication methods:Agentless – Uses protocols or interfaces such as SNMP or WMIAgent-based – Requires installation of software on the source resources, such as Linux or Windows serversLogin-based – Uses protocols, such as SSH and RDP, to log in to the source servers | Login-based |
+| **Replication method**<br />The ability to support one or more of the following replication methods:+ Agentless – Uses protocols or interfaces such as SNMP or WMI<br />+ Agent-based – Requires installation of software on the source resources, such as Linux or Windows servers<br />+ Login-based – Uses protocols, such as SSH and RDP, to log in to the source servers | Login-based |
 | **Supported sources**<br />The hosting environments that the product can migrate applications from | Physical servers with Sun SPARC, HP PA-RISC, DEC Alpha, VAX, and PDP-11 hardware |
 | **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | Not available |
-| **Supported operating systems**<br />Operating systems that the product can migrate | HP-UXSolarisOther – OpenVMS, Tru64 UNIX, MPE |
+| **Supported operating systems**<br />Operating systems that the product can migrate | + HP-UX<br />+ Solaris<br />+ Other – OpenVMS, Tru64 UNIX, MPE |
 | **Supported targets**<br />Resources that the product can migrate to | Amazon Elastic Compute Cloud (Amazon EC2) |
 | **Source code repository integration**<br />Repositories that the product can analyze to support application transformation | Not available |
 | **Deployment integration**<br />Services that the product integrates with to support deployment | Jenkins |
 | **Infrastructure as code templates**<br />Templates that the product can generate to support application deployment | Not available |
-| **Notifications**<br />Methods that the product can use to notify you of progress or issues | EmailLogs |
+| **Notifications**<br />Methods that the product can use to notify you of progress or issues | + Email<br />+ Logs |
 | **Replication options, continuous asynchronous replication** | Not available |
 | **Replication options, bandwidth consumption**<br />The ability to manage bandwidth consumption, such as by using throttling or parallel replication streams | Not available |
 | **Replication options, storage types**<br />The ability to select storage types for both temporary and target replication disk volumes to manage performance and cost | Not available |

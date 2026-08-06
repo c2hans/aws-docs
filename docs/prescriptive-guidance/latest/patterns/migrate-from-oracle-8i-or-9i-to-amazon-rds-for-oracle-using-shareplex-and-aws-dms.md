@@ -81,7 +81,7 @@ The diagram shows the following workflow:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an EC2 instance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms.html) | Oracle administration |
+| Create an EC2 instance. | 1. [Create an EC2 instance](https://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html). <br />2. Install Oracle 12CR2 on the EC2 instance to serve as the Oracle staging database. | Oracle administration |
 | Prepare the staging database. | Prepare the Oracle staging database for restore as an upgrade on Oracle 12CR2 by taking the RMAN backup from the Oracle 8i or 9i database source environment.<br />For more information, see [Oracle 9i Recovery Manager User's Guide](https://docs.oracle.com/cd/B10500_01/server.920/a96566/toc.htm) and [Database Backup and Recovery User's Guide](https://docs.oracle.com/database/121/BRADV/rcmcomre.htm#BRADV8005) in the Oracle documentation. | Oracle administration |
 | Configure SharePlex. | Configure the SharePlex source as an on-premises Oracle 8i or 9i database, and configure the target as the Oracle 12CR2 staging database hosted on Amazon EC2. | SharePlex, Oracle administration |
 
@@ -91,7 +91,7 @@ The diagram shows the following workflow:
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create an Oracle DB instance. | Create an Amazon RDS for Oracle database, and then connect Oracle 12CR2 to the database.<br />For more information, see [Creating an Oracle DB instance and connecting to a database on an Oracle DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.Oracle.html) in the Amazon RDS documentation. | DBA |
-| Restore Amazon RDS for Oracle from the staging database. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms.html)For more information, see [54 DBMS\_DATAPUMP](https://docs.oracle.com/en/database/oracle/oracle-database/21/arpls/DBMS_DATAPUMP.html#GUID-AEA7ED80-DB4A-4A70-B199-592287206348) in the Oracle documentation. | DBA |
+| Restore Amazon RDS for Oracle from the staging database. | 1. Take an EXPDP backup from the Oracle staging database server by using `FLASHBACK_SCN`.<br />2. Restore Amazon RDS for Oracle from the staging database.For more information, see [54 DBMS\_DATAPUMP](https://docs.oracle.com/en/database/oracle/oracle-database/21/arpls/DBMS_DATAPUMP.html#GUID-AEA7ED80-DB4A-4A70-B199-592287206348) in the Oracle documentation. | DBA |
 
 ### Set up AWS DMS
 <a name="set-up-aws-dms"></a>
@@ -118,8 +118,8 @@ The diagram shows the following workflow:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Test the Oracle staging database environment on AWS. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms.html) | SharePlex, Oracle administration |
-| Test the Amazon RDS environment. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms.html)For more information, see [Amazon RDS for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html) in the Amazon RDS documentation. | Oracle administration |
+| Test the Oracle staging database environment on AWS. | 1. Test the SharePlex replication and verify that there are no sync gaps or replication errors on the Oracle staging database.<br />2. Verify that the application behaves as expected through benchmarks defined in the on-premises environment. | SharePlex, Oracle administration |
+| Test the Amazon RDS environment. | 1. Verify that all data propagated to Amazon RDS after replication is error free.<br />2. Point another application to the Amazon RDS DB instance, and then run performance tests to verify expected behavior.For more information, see [Amazon RDS for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html) in the Amazon RDS documentation. | Oracle administration |
 
 ## Related resources
 <a name="migrate-from-oracle-8i-or-9i-to-amazon-rds-for-oracle-using-shareplex-and-aws-dms-resources"></a>

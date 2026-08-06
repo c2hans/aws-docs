@@ -11,6 +11,7 @@ The following sections contain information about logging, and about problems tha
 + [AWS provided client event logs](#aws-provided-client)
 + [DNS queries go to a default nameserver](#aws-client-dns-nameserver)
 + [OpenVPN (command line)](#open-vpn-command-line)
++ [Profiles or preferences missing after upgrade to version 6.0](#linux-troubleshooting-profiles-missing)
 + [OpenVPN through Network Manager (GUI)](#open-vpn-network-manager-gui)
 
 ## AWS provided client event logs
@@ -26,6 +27,13 @@ The AWS provided client daemon process stores log files in the following locatio
 
 ```
 /var/log/aws-vpn-client/
+```
+
+**Note**
+For version 6.0 and later, the daemon logs are stored in the following location.
+
+```
+/var/log/awsvpnclient/
 ```
 
 For example, you can check the following log files to find errors in the DNS up/down scripts that cause the connection to fail:
@@ -117,6 +125,20 @@ Use the following steps to check that the DNS server is configured and working c
    Mon Apr 15 21:33:52 2019 us=795388 /etc/openvpn/update-resolv-conf tun0 1500 1552 10.0.0.98 255.255.255.224 init
    dhcp-option DNS 192.168.0.2
    ```
+
+## Profiles or preferences missing after upgrade to version 6.0
+<a name="linux-troubleshooting-profiles-missing"></a>
+
+**Problem**
+After upgrading the AWS provided client to version 6.0 or later, previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
+
+**Cause**
+Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client attempts to automatically migrate profiles and preferences from the previous location, but this migration can fail in some cases. The client does not delete your original `.ovpn` configuration files.
+
+**Solution**
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to the provided AWS Client VPN for Linux](client-vpn-connect-linux-connecting.md).
+
+If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## OpenVPN through Network Manager (GUI)
 <a name="open-vpn-network-manager-gui"></a>

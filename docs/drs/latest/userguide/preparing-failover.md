@@ -16,9 +16,9 @@ After successful installation, we recommend validating your individual Source Se
 
 | Launch Setting | Example Settings | More Information |
 | --- | --- | --- |
-| DRS Launch Settings |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/preparing-failover.html)  | [DRS Launch Settings](default-drs-launch-settings.md) |
-| EC2 Launch Template |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/preparing-failover.html)  | [EC2 Launch Template](default-ec2-launch-template.md) |
-| Post Launch Actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/preparing-failover.html)  | [Post Launch Actions](post-launch-action-settings-overview.md) |
+| DRS Launch Settings |  +  Automated Instance type right-sizing. <br />+  Start instance on launch. <br />+  Operating System Licensing.   | [DRS Launch Settings](default-drs-launch-settings.md) |
+| EC2 Launch Template |  +  Instance profile (IAM role attached to the instance). <br />+  Recovery Instance VPC, Subnet, and Security Group configuration.   | [EC2 Launch Template](default-ec2-launch-template.md) |
+| Post Launch Actions |  +  Install CloudWatch agent. Validate HTTP/HTTPS connectivity.   | [Post Launch Actions](post-launch-action-settings-overview.md) |
 
 ## Recovery drill overview
 <a name="recovery-drill-overview"></a>

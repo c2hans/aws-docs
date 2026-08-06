@@ -100,7 +100,7 @@ The code for this pattern is available in the GitHub [Custom AD Cleanup Automati
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a project folder, and add the files. | To clone the repository and create a project folder, do the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/remove-amazon-ec2-entries-in-the-same-aws-account-from-aws-managed-microsoft-ad.html) | DevOps engineer |
+| Create a project folder, and add the files. | To clone the repository and create a project folder, do the following: 1. Open this pattern’s [GitHub repository](https://github.com/aws-samples/aws-lambda-ad-cleanup-terraform-samples/).<br />2. Choose the **Code **button to see the options to clone in the **Clone **dropdown.<br />3. On the **HTTPS** tab, copy the URL provided in **Clone using the web URL**.<br />4. Create a folder on your machine, and name it with your project name.<br />5. Open a terminal in your local machine, and navigate to this folder.<br />6. To clone the git repository, use the following command.<br />`git clone <repository-URL>.git`<br />7. After the repository has been cloned, use the following command to go to the cloned directory. <br />`cd <directory name>`<br />8. In the cloned repository, open this project in an integrated development environment (IDE) of your choice. | DevOps engineer |
 
 ### Provision the target architecture by using the Terraform configuration
 <a name="provision-the-target-architecture-by-using-the-terraform-configuration"></a>
@@ -109,7 +109,7 @@ The code for this pattern is available in the GitHub [Custom AD Cleanup Automati
 | --- | --- | --- |
 | Initialize the Terraform configuration. | To initialize your working directory that contains the Terraform files, run the following command.<br />`terraform init` | DevOps engineer |
 | Preview changes. | You can preview the changes that Terraform will make to the infrastructure before your infrastructure is deployed. To validate that Terraform will make the changes as required, run the following command.<br />`terraform plan` | DevOps engineer |
-| Execute the proposed actions. | To verify that the results from the `terraform plan` command are as expected, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/remove-amazon-ec2-entries-in-the-same-aws-account-from-aws-managed-microsoft-ad.html) | DevOps engineer |
+| Execute the proposed actions. | To verify that the results from the `terraform plan` command are as expected, do the following:1. Run the following command.<br />`terraform apply`<br />2. Sign in to the AWS Management Console, and verify that the resources are present. | DevOps engineer |
 | Clean up the infrastructure. | To clean up the infrastructure that you created, use the following command.<br />`terraform destroy`<br />To confirm the destroy command, type `yes`. | DevOps engineer |
 
 ### Verify the deployment
@@ -117,8 +117,8 @@ The code for this pattern is available in the GitHub [Custom AD Cleanup Automati
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Execute and test the Lambda function. | To verify that the deployment occurred successfully, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/remove-amazon-ec2-entries-in-the-same-aws-account-from-aws-managed-microsoft-ad.html)<br />The execution results show the output of the function. | DevOps engineer |
-| View the results of the Lambda function. | In this pattern, an EventBridge rule executes the Lambda function once per day. To view the results of the Lambda function, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/remove-amazon-ec2-entries-in-the-same-aws-account-from-aws-managed-microsoft-ad.html)<br />In the CloudWatch console, the **Log groups** page shows the results of the Lambda function. | DevOps engineer |
+| Execute and test the Lambda function. | To verify that the deployment occurred successfully, do the following:1. Sign in to the AWS Management Console and open the console. Open the **Functions **page, and select the function name that begins with **ADcleanup-Lambda-\***. <br />2. On the function overview page, choose **Test **on the **Code **tab in the **Code source** section.<br />3. To save the test event, provide a name for the event and choose **Save**. Then to test the event, choose **Test **again.<br />The execution results show the output of the function. | DevOps engineer |
+| View the results of the Lambda function. | In this pattern, an EventBridge rule executes the Lambda function once per day. To view the results of the Lambda function, do the following:1. Sign in to the AWS Management Console and open the AWS Lambda console. Open the **Functions** page and select the function name that begins with **ADcleanup-Lambda-\***.<br />2. Choose the **Monitor** tab and choose **View CloudWatch logs**.<br />In the CloudWatch console, the **Log groups** page shows the results of the Lambda function. | DevOps engineer |
 
 ### Clean up infrastructure after use
 <a name="clean-up-infrastructure-after-use"></a>

@@ -16,7 +16,7 @@ To request a quota increase for an adjustable quota, choose **Yes** in the **Adj
 | --- | --- | --- |
 | Authorization rules per Client VPN endpoint | 200 For dual-stack endpoints, this limit is shared between IPv4 and IPv6 routes. | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-9A1BC94B) |
 | Client VPN endpoints per Region | 5 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-8EA77D34) |
-| Concurrent client connections per Client VPN endpoint | This value depends on the number of subnet associations per endpoint.[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpn/latest/clientvpn-admin/limits.html)<br />For dual-stack endpoints, this limit is shared between IPv4 and IPv6 connections. | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C4B238BF) |
+| Concurrent client connections per Client VPN endpoint | This value depends on the number of subnet associations per endpoint.+  1 – 7,000 <br />+  2 – 36,500 <br />+  3 – 66,500 <br />+  4 – 96,500 <br />+  5 – 126,000 <br />For dual-stack endpoints, this limit is shared between IPv4 and IPv6 connections. | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-C4B238BF) |
 | Concurrent operations per Client VPN endpoint † | 10 | No |
 | Entries in a client certificate revocation list for Client VPN endpoints | 20,000 | No |
 | Routes per Client VPN target network association | 100 For dual-stack endpoints, this limit is shared between IPv4 and IPv6 routes. | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-401D78F7) |

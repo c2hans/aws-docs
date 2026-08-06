@@ -24,6 +24,17 @@ The constant used in a numeric equality filter.
 Type: [TopicSingularFilterConstant](API_TopicSingularFilterConstant.md) object
 Required: No
 
+ ** Inverse **   <a name="QS-Type-TopicNumericEqualityFilter-Inverse"></a>
+A Boolean value that indicates if the filter is inverse.
+Type: Boolean
+Required: No
+
+ ** NullFilter **   <a name="QS-Type-TopicNumericEqualityFilter-NullFilter"></a>
+The `null` filter that is applied to the numeric equality filter.
+Type: String
+Valid Values: `ALL_VALUES | NON_NULLS_ONLY | NULLS_ONLY`
+Required: No
+
 ## See Also
 <a name="API_TopicNumericEqualityFilter_SeeAlso"></a>
 

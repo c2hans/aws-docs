@@ -51,7 +51,7 @@ In the table following, you can find some behavior differences between Babelfish
 | Babelfish | PostgreSQL |
 | --- | --- |
 | Supports the LIKE clause for CI\_AS collations. | Doesn't support the LIKE clause on nondeterministic collations. |
-| Supports the LIKE clause only on the following AI collations from Babelfish version 4.2.0:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-collations.html) | Doesn't support the LIKE clause on nondeterministic collations. |
+| Supports the LIKE clause only on the following AI collations from Babelfish version 4.2.0:+ bbf\_unicode\_cp1250\_ci\_ai<br />+ bbf\_unicode\_cp1250\_cs\_ai<br />+ bbf\_unicode\_cp1257\_ci\_ai<br />+ bbf\_unicode\_cp1257\_cs\_ai<br />+ bbf\_unicode\_cp1\_ci\_ai<br />+ bbf\_unicode\_cp1\_cs\_ai<br />+ estonian\_ci\_ai<br />+ finnish\_swedish\_ci\_ai<br />+ french\_ci\_ai<br />+ latin1\_general\_ci\_ai<br />+ latin1\_general\_cs\_ai<br />+ modern\_spanish\_ci\_ai<br />+ polish\_ci\_ai<br />+ sql\_latin1\_general\_cp1\_ci\_ai<br />+ sql\_latin1\_general\_cp1\_cs\_ai<br />+ traditional\_spanish\_ci\_ai | Doesn't support the LIKE clause on nondeterministic collations. |
 
 For a list of other limitations and behavior differences for Babelfish compared to SQL Server and PostgreSQL, see [Collation limitations and behavior differences](collation.limitations.md).
 

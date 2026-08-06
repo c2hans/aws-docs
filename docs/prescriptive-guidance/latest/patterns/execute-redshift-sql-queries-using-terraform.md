@@ -92,7 +92,7 @@ For more details, see *Solution walkthrough* in [Additional information](#execut
 | --- | --- | --- |
 | **Clone the repository.** | To clone the Git repository containing the Terraform code for provisioning an Amazon Redshift cluster, use the following command.<pre>git clone https://github.com/aws-samples/amazon-redshift-sql-deploy-terraform.git</pre> | DevOps engineer |
 | **Update the Terraform variables.** | To customize the Amazon Redshift cluster deployment according to your specific requirements, update the following parameters in the `terraform.tfvars` file.<pre>region                    = "<AWS_REGION>"<br />cluster_identifier        = "<REDSHIFT_CLUSTER_IDENTIFIER>"<br />node_type                 = "<REDSHIFT_NODE_TYPE>"<br />number_of_nodes           = "<REDSHIFT_NODE_COUNT>"<br />database_name             = "<REDSHIFT_DB_NAME>"<br />subnet_ids                = "<REDSHIFT_SUBNET_IDS>"<br />vpc_security_group_ids    = "<REDSHIFT_SECURITY_GROUP_IDS>"<br />run_nonrepeatable_queries = true<br />run_repeatable_queries    = true<br />sql_path_bootstrap        = "<BOOTSTRAP_SQLS_PATH>"<br />sql_path_nonrepeatable    = "<NON-REPEATABLE_SQLS_PATH>"<br />sql_path_repeatable       = "<REPEATABLE_SQLS_PATH>"<br />sql_path_finalize         = "<FINALIZE_SQLS_PATH>"<br />create_random_password    = false<br />master_username           = "<REDSHIFT_MASTER_USERNAME>"</pre> | DevOps engineer |
-| Deploy the resources using Terraform. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/execute-redshift-sql-queries-using-terraform.html) | DevOps engineer |
+| Deploy the resources using Terraform. | 1. To prepare for the deployment process, use the following command to initialize Terraform within the cloned repository.<pre>terraform init</pre><br />2. To preview the changes that Terraform will apply to the infrastructure, use the following command to create an execution plan.<pre>terraform plan -var-file terraform.tfvars</pre><br />3. To provision the Amazon Redshift cluster and associated resources, use the following command to apply the Terraform execution plan.<pre>terraform apply -var-file terraform.tfvars</pre> | DevOps engineer |
 | (Optional) Execute additional SQL queries. | The sample repository provides several SQL queries for demo purposes. To execute your own SQL queries, add them to the following folders:<br />`/bootstrap` <br />`/nonrepeatable` <br />`/repeatable` <br />`/finalize` |  |
 
 ### Monitor the execution of SQL statements
@@ -108,7 +108,7 @@ For more details, see *Solution walkthrough* in [Additional information](#execut
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Validate the data in the Amazon Redshift cluster. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/execute-redshift-sql-queries-using-terraform.html) | DBA, AWS DevOps |
+| Validate the data in the Amazon Redshift cluster. | 1. Sign in to the AWS Management Console, and open the Amazon Redshift console.<br />2. On the navigation menu, choose **Clusters**. Choose the relevant cluster name in the list.<br />3. Follow the instructions in [Querying a database using the Amazon Redshift query editor v2](https://docs.aws.amazon.com/redshift/latest/mgmt/query-editor-v2.html) in the Amazon Redshift documentation. | DBA, AWS DevOps |
 
 ## Related resources
 <a name="execute-redshift-sql-queries-using-terraform-resources"></a>

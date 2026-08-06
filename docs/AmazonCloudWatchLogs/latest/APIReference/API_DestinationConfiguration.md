@@ -10,10 +10,15 @@ Configuration for where to deliver scheduled query results. Specifies the destin
 ## Contents
 <a name="API_DestinationConfiguration_Contents"></a>
 
+ ** lookupTableConfiguration **   <a name="CWL-Type-DestinationConfiguration-lookupTableConfiguration"></a>
+Configuration for delivering query results to a lookup table. The query results automatically populate or refresh the specified lookup table on each scheduled execution.
+Type: [LookupTableConfiguration](API_LookupTableConfiguration.md) object
+Required: No
+
  ** s3Configuration **   <a name="CWL-Type-DestinationConfiguration-s3Configuration"></a>
 Configuration for delivering query results to Amazon S3.
 Type: [S3Configuration](API_S3Configuration.md) object
-Required: Yes
+Required: No
 
 ## See Also
 <a name="API_DestinationConfiguration_SeeAlso"></a>

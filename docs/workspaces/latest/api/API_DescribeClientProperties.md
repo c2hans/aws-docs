@@ -36,6 +36,7 @@ Required: Yes
    "ClientPropertiesList": [
       {
          "ClientProperties": {
+            "ClientExperiencePolicy": "string",
             "LogUploadEnabled": "string",
             "ReconnectEnabled": "string"
          },

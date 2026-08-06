@@ -22,6 +22,6 @@ DevOps in AWS Mainframe Modernization is categorized into three phases: assess, 
 |
 | Phase | Components |
 | --- |--- |
-| Assess | Current state analysisTarget state definition |
-| Build | Toolset configurationContinuous integrationContinuous deliveryPipeline orchestration |
-| Optimize | Monitoring and observability enhancementsAlerting and notificationSelf-healing system |
+| Assess | + Current state analysis+ Target state definition |
+| Build | + Toolset configuration+ Continuous integration+ Continuous delivery+ Pipeline orchestration |
+| Optimize | + Monitoring and observability enhancements+ Alerting and notification+ Self-healing system |

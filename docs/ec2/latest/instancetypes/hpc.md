@@ -72,28 +72,29 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 
 <table>
 <thead>
-  <tr><th>Instance type</th><th>Baseline / Burst bandwidth (Gbps)</th><th>EFA</th><th>ENA</th><th>ENA Express</th><th>Network cards</th><th>Max. network interfaces</th><th>IP addresses per interface</th><th>IPv6</th></tr>
+  <tr><th>Instance type</th><th>Baseline / Burst bandwidth (Gbps)</th><th>EFA</th><th>ENA</th><th>ENA Express</th><th>ENA queues per interface (Default/Maximum)</th><th>Network cards</th><th>Max. network interfaces</th><th>IP addresses per interface</th><th>IPv6</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="9">Hpc6a</td></tr>
-  <tr><td>hpc6a.48xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Hpc6id</td></tr>
-  <tr><td>hpc6id.32xlarge</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Hpc7a</td></tr>
-  <tr><td>hpc7a.12xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7a.24xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7a.48xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7a.96xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Hpc7g</td></tr>
-  <tr><td>hpc7g.4xlarge</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7g.8xlarge</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td>hpc7g.16xlarge</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">Hpc8a</td></tr>
-  <tr><td>hpc8a.96xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Hpc6a</td></tr>
+  <tr><td>hpc6a.48xlarge 1</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Hpc6id</td></tr>
+  <tr><td>hpc6id.32xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>2</td><td>2</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Hpc7a</td></tr>
+  <tr><td>hpc7a.12xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.24xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.48xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7a.96xlarge 1</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Hpc7g</td></tr>
+  <tr><td>hpc7g.4xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>16</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7g.8xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td>hpc7g.16xlarge 1</td><td>200 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">Hpc8a</td></tr>
+  <tr><td>hpc8a.96xlarge</td><td>300 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32 / 128</td><td>2</td><td>4</td><td>50</td><td>✓ Yes</td></tr>
 </tbody>
 </table>
 
 **Note**
+1 These instance types do not support configurable ENA queue allocation.
 For `hpc6id.32xlarge`, you must attach at least 2 ENIs, to separate network cards, to achieve 200 Gbps throughput. Each ENI attached to a network card can achieve up to 170 Gbps.
 For `hpc7a.12xlarge`, `hpc7a.24xlarge`, `hpc7a.48xlarge`, `hpc7a.96xlarge`, you must attach at least 2 ENIs, to separate network cards, to achieve 300 Gbps throughput. Each ENI attached to a network card can achieve up to 150 Gbps.
 

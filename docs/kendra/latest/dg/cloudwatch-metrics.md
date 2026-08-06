@@ -61,11 +61,11 @@ If you use the API or CLI, you must specify the `Namespace` as 'AWS/Kendra' in a
 
 | Metric | Description |
 | --- | --- |
-| DocumentsCrawled | The number of documents that the synchronization job scanned or discovered during the run.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForIndexing | The number of documents that the synchronization job submitted to the index.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForIndexingFailed | The number of documents that failed indexing. Check the contents of the CloudWatch log for the synchronization job for details.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForDeletion | The number of documents that the synchronization job asked to be removed from the index.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForDeletionFailed | The number of documents that failed to be deleted. Check the contents of the CloudWatch log for the synchronization job for details.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
+| DocumentsCrawled | The number of documents that the synchronization job scanned or discovered during the run.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForIndexing | The number of documents that the synchronization job submitted to the index.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForIndexingFailed | The number of documents that failed indexing. Check the contents of the CloudWatch log for the synchronization job for details.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForDeletion | The number of documents that the synchronization job asked to be removed from the index.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForDeletionFailed | The number of documents that failed to be deleted. Check the contents of the CloudWatch log for the synchronization job for details.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
 
 ## Metrics for Amazon Kendra data sources
 <a name="cloudwatch-metrics-data-source"></a>
@@ -76,13 +76,13 @@ If you use the API or CLI, you must specify the `Namespace` as 'AWS/Kendra' in a
 
 | Metric | Description |
 | --- | --- |
-| DocumentsSkippedNoChange \* | The number of documents examined and found not to have changed so they weren't submitted for indexing.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSkippedInvalidMetadata \* | The number of documents skipped because there was a problem with the associated metadata file. Check the contents of the CloudWatch log for the synchronization run for details.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsCrawled | The number of document files examined.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForDeletion | The number of documents examined that were deleted from the data source and submitted for deletion.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForDeletionFailed | The number of documents that failed deletion from a data source.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForIndexing | The number of documents examined and submitted for indexing.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsSubmittedForIndexingFailed | The number of documents submitted for idexing that couldn't be indexed.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
+| DocumentsSkippedNoChange \* | The number of documents examined and found not to have changed so they weren't submitted for indexing.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSkippedInvalidMetadata \* | The number of documents skipped because there was a problem with the associated metadata file. Check the contents of the CloudWatch log for the synchronization run for details.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsCrawled | The number of document files examined.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForDeletion | The number of documents examined that were deleted from the data source and submitted for deletion.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForDeletionFailed | The number of documents that failed deletion from a data source.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForIndexing | The number of documents examined and submitted for indexing.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsSubmittedForIndexingFailed | The number of documents submitted for idexing that couldn't be indexed.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
 
 ## Metrics for indexed documents
 <a name="cloudwatch-metrics-id"></a>
@@ -93,6 +93,6 @@ If you use the API or CLI, you must specify the `Namespace` as 'AWS/Kendra' in a
 
 | Metric | Description |
 | --- | --- |
-| DocumentsIndexed | The number of documents indexed.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| DocumentsFailedToIndex | The number of documents that could not be indexed. Check the contents of the CloudWatch log for details.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
-| IndexQueryCount | The number of index queries per minute.<br />Dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kendra/latest/dg/cloudwatch-metrics.html)<br />Unit: Count |
+| DocumentsIndexed | The number of documents indexed.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| DocumentsFailedToIndex | The number of documents that could not be indexed. Check the contents of the CloudWatch log for details.<br />Dimensions:+  IndexId <br />+  DataSourceId <br />Unit: Count |
+| IndexQueryCount | The number of index queries per minute.<br />Dimensions:+  IndexId <br />Unit: Count |

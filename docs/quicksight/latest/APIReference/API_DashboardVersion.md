@@ -24,7 +24,7 @@ Type: Timestamp
 Required: No
 
  ** DataSetArns **   <a name="QS-Type-DashboardVersion-DataSetArns"></a>
-The Amazon Resource Numbers (ARNs) for the datasets that are associated with this version of the dashboard.
+The Amazon Resource Names (ARNs) for the datasets that are associated with this version of the dashboard.
 Type: Array of strings
 Array Members: Maximum number of 100 items.
 Required: No
@@ -61,6 +61,12 @@ Required: No
  ** ThemeArn **   <a name="QS-Type-DashboardVersion-ThemeArn"></a>
 The ARN of the theme associated with a version of the dashboard.
 Type: String
+Required: No
+
+ ** TopicArns **   <a name="QS-Type-DashboardVersion-TopicArns"></a>
+The Amazon Resource Names (ARNs) for the topics that are associated with this version of the dashboard.
+Type: Array of strings
+Array Members: Maximum number of 100 items.
 Required: No
 
  ** VersionNumber **   <a name="QS-Type-DashboardVersion-VersionNumber"></a>

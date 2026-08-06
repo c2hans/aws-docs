@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/cloudtrail-or-clo
 | --- |--- |
 | **Purpose** | To help you determine whether AWS CloudTrail or Amazon CloudWatch is the right choice for maintaining the visibility, security, and operational efficiency of your cloud environment. |
 | **Last updated** | September 20, 2024 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/cloudtrail-or-cloudwatch/cloudtrail-or-cloudwatch.html)  |
+| **Covered services** |  +  [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) <br />+  [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)   |
 
 ## Introduction
 <a name="introduction"></a>

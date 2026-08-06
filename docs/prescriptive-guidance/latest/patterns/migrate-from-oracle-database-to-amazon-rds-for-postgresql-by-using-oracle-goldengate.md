@@ -60,7 +60,7 @@ The diagram shows the following workflow:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Download Oracle GoldenGate. | Download the following versions of Oracle GoldenGate:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-database-to-amazon-rds-for-postgresql-by-using-oracle-goldengate.html)<br />To download the software, see [Oracle GoldenGate Downloads](https://www.oracle.com/middleware/technologies/goldengate-downloads.html) on the Oracle website. | DBA |
+| Download Oracle GoldenGate. | Download the following versions of Oracle GoldenGate:+ Oracle GoldenGate 12.2.0.1.1 for Oracle or a newer version<br />+ Oracle GoldenGate 12.2.0.1.1 for PostgreSQL or a newer version<br />To download the software, see [Oracle GoldenGate Downloads](https://www.oracle.com/middleware/technologies/goldengate-downloads.html) on the Oracle website. | DBA |
 | Install Oracle GoldenGate for Oracle on the source Oracle Database server. | For instructions, see the [Oracle GoldenGate documentation](https://docs.oracle.com/goldengate/1212/gg-winux/GIORA/toc.htm). | DBA |
 | Install Oracle GoldenGate for PostgreSQL database on the Amazon EC2 instance. | For instructions, see the [Oracle GoldenGate documentation](https://docs.oracle.com/goldengate/1212/gg-winux/GIORA/toc.htm). | DBA |
 
@@ -69,8 +69,8 @@ The diagram shows the following workflow:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Set up Oracle GoldenGate for Oracle Database on the source database. | For instructions, see the [Oracle GoldenGate documentation](https://docs.oracle.com/goldengate/1212/gg-winux/GIORA/toc.htm).<br />Make sure that you configure the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-database-to-amazon-rds-for-postgresql-by-using-oracle-goldengate.html) | DBA |
-| Set up Oracle GoldenGate for PostgreSQL on the target database. | For instructions, see [Part VI Using Oracle GoldenGate for PostgreSQL](https://docs.oracle.com/en/middleware/goldengate/core/19.1/gghdb/using-oracle-goldengate-postgresql.html) on the Oracle website.<br />Make sure that you configure the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-database-to-amazon-rds-for-postgresql-by-using-oracle-goldengate.html) | DBA |
+| Set up Oracle GoldenGate for Oracle Database on the source database. | For instructions, see the [Oracle GoldenGate documentation](https://docs.oracle.com/goldengate/1212/gg-winux/GIORA/toc.htm).<br />Make sure that you configure the following:+ Supplemental logging<br />+ Oracle GoldenGate users<br />+ Any required grants and permissions<br />+ Parameter files<br />+ Manager process<br />+ Directory<br />+ **GLOBALS** files<br />+ Oracle Wallet | DBA |
+| Set up Oracle GoldenGate for PostgreSQL on the target database. | For instructions, see [Part VI Using Oracle GoldenGate for PostgreSQL](https://docs.oracle.com/en/middleware/goldengate/core/19.1/gghdb/using-oracle-goldengate-postgresql.html) on the Oracle website.<br />Make sure that you configure the following:+ Manager process<br />+ **GLOBALS** files<br />+ Oracle Wallet | DBA |
 
 ### Configure the data capture
 <a name="configure-the-data-capture"></a>

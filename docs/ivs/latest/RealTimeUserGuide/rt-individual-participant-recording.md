@@ -325,21 +325,21 @@ This metadata is in JSON format. It comprises the following information:
 | `recording_status` | string | Yes | Status of the recording. Valid values: `"RECORDING_STARTED"`, `"RECORDING_ENDED"`, `"RECORDING_START_FAILED"`, `"RECORDING_ENDED_WITH_FAILURE"`. |
 | `recording_status_message` | string | Conditional | Descriptive information on the status. This is available only when `recording_status` is `"RECORDING_ENDED"` or `"RECORDING_ENDED_WITH_FAILURE"`. |
 | `media` | object | Yes | Object that contains the enumerated objects of media content available for this recording. Valid value: `"hls"`. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | object | Yes | Enumerated field that describes the Apple HLS format output. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | integer | Conditional | Duration of the recorded HLS content in milliseconds. This is available only when `recording_status` is `"RECORDING_ENDED"` or `"RECORDING_ENDED_WITH_FAILURE"`. If a failure occurred before any recording was done, this is 0. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Relative path from the S3 prefix where HLS content is stored. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Name of the HLS master playlist file. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | object | Yes | Array of renditions (HLS variants) of metadata objects. There always is at least one rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Relative path from the S3 prefix where HLS content is stored for this rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Name of the media playlist file for this rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `SEQUENTIAL` |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Relative path from the S3 prefix where sequential thumbnail content is stored. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | object | Yes | Array of renditions (thumbnail variants) of metadata objects. There always is at least one rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Relative path from the S3 prefix where thumbnail content is stored for this rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `LATEST`. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Relative path from the S3 prefix where `latest_thumbnail` is stored. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | object | Yes | Array of renditions (thumbnail variants) of metadata objects. There always is at least one rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-individual-participant-recording.html)  | string | Yes | Relative path from the S3 prefix where the latest thumbnail is stored for this rendition. |
+|  +  `hls`   | object | Yes | Enumerated field that describes the Apple HLS format output. |
+|  +    `duration_ms`     | integer | Conditional | Duration of the recorded HLS content in milliseconds. This is available only when `recording_status` is `"RECORDING_ENDED"` or `"RECORDING_ENDED_WITH_FAILURE"`. If a failure occurred before any recording was done, this is 0. |
+|  +    `path`     | string | Yes | Relative path from the S3 prefix where HLS content is stored. |
+|  +    `playlist`     | string | Yes | Name of the HLS master playlist file. |
+|  +    `renditions`     | object | Yes | Array of renditions (HLS variants) of metadata objects. There always is at least one rendition. |
+|  +      `path`       | string | Yes | Relative path from the S3 prefix where HLS content is stored for this rendition. |
+|  +      `playlist`       | string | Yes | Name of the media playlist file for this rendition. |
+|  +  `thumbnails`   | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `SEQUENTIAL` |
+|  +    `path`     | string | Yes | Relative path from the S3 prefix where sequential thumbnail content is stored. |
+|  +    `renditions`     | object | Yes | Array of renditions (thumbnail variants) of metadata objects. There always is at least one rendition. |
+|  +      `path`       | string | Yes | Relative path from the S3 prefix where thumbnail content is stored for this rendition. |
+|  +  `latest_thumbnail`   | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `LATEST`. |
+|  +    `path`     | string | Yes | Relative path from the S3 prefix where `latest_thumbnail` is stored. |
+|  +    `renditions`     | object | Yes | Array of renditions (thumbnail variants) of metadata objects. There always is at least one rendition. |
+|  +      `path`       | string | Yes | Relative path from the S3 prefix where the latest thumbnail is stored for this rendition. |
 | `version` | string | Yes | The version of the metadata schema. |
 
 ### Example: recording-started.json

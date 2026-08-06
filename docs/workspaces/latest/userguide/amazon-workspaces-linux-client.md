@@ -280,8 +280,8 @@ The following table describes the changes to each release of the Ubuntu 24.04 cl
 
 | Release | Date | Changes |
 | --- | --- | --- |
-| 2026.0 | June 10, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2025.1 | December 12, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
+| 2026.0 | June 10, 2026 |  +  Added support for opening the client in full screen mode on all connected displays by default, when provisioned on thin client devices. <br />+  Made an improvement to the disconnection experience by providing a clear status message. <br />+  Fixed an issue that was preventing smart card authentication from working correctly in the streaming session. <br />+  Fixed an issue that prevented the camera from appearing in the menu when connecting the device mid-session. <br />+  Fixed an issue that was causing the application to hang under certain conditions when disconnecting from the session. <br />+  Fixed a few issues that were causing the application to crash under certain conditions. <br />+  Updated the DCV SDK. <br />+  Additional bug fixes and enhancements.   |
+| 2025.1 | December 12, 2025 |  +  Added support for installing the client on Ubuntu 24.04 devices.   |
 
 ### WorkSpaces client application for Ubuntu 22.04 release notes
 <a name="linux-2204-client-release-notes"></a>
@@ -290,20 +290,20 @@ The following table describes the changes to each release of the Ubuntu 22.04 cl
 
 | Release | Date | Changes |
 | --- | --- | --- |
-| 2026.0 | June 10, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2025.1 | December 12, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2025.0 | May 28, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2024.8 | December 11, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2024.7 | October 10, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
+| 2026.0 | June 10, 2026 |  +  Added support for opening the client in full screen mode on all connected displays by default, when provisioned on thin client devices. <br />+  Made an improvement to the disconnection experience by providing a clear status message. <br />+  Fixed an issue that was preventing smart card authentication from working correctly in the streaming session. <br />+  Fixed an issue that prevented the camera from appearing in the menu when connecting the device mid-session. <br />+  Fixed an issue that was causing the application to hang under certain conditions when disconnecting from the session. <br />+  Fixed a few issues that were causing the application to crash under certain conditions. <br />+  Updated the DCV SDK. <br />+  Additional bug fixes and enhancements.   |
+| 2025.1 | December 12, 2025 |  +  Added support for connecting to your WorkSpaces over IPv6 networks; manage your preferences from the Connection settings menu. <br />+  Fixed an issue with the Uniform Resource Identifier (URI) feature when special characters appear in the username. <br />+  Fixed an issue with the SAML 2.0 authentication flow for clients running in OEM thin clients.   |
+| 2025.0 | May 28, 2025 |  +  Updated the DCV SDK. <br />+  Bug fixes and enhancements.   |
+| 2024.8 | December 11, 2024 |  +  Added persistent webcam and microphone settings that are saved between DCV WorkSpaces sessions.  <br />+  Bug fixes and enhancements.   |
+| 2024.7 | October 10, 2024 |  +  Renamed WSP protocol to Amazon DCV protocol. <br />+  Added support for streaming over port 443 for TCP and UDP protocols on DCV WorkSpaces. <br />+  Added support for certificate-based authentication that enables a single sign-on login experience, with fewer user prompts. <br />+  Bug fixes and enhancements.   |
 | 2024.5 | August 26, 2024 | Bug fixes and enhancements. |
 | 2024.4 | August 15, 2024 | Bug fixes and enhancements. |
-| 2024.3 | August 8, 2024 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
+| 2024.3 | August 8, 2024 | +  Updated DCV SDK. <br />+  Updated the PCoIP SDK. <br />+  Added support for streaming over TCP/UDP port 443.  |
 | 2024.2 | July 3, 2024 | Bug fixes and enhancements. |
-| 2024.1 | June 11, 2024 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2024.0 | February 28, 2024 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2023.2 | December 19, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2023.1 | November 12, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2023.0.4395 | August 24, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) Uniform Resource Identifier (URI) is not supported in this version. For more information, see [ Customize how users log in to their WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-workspaces-user-login.html) |
+| 2024.1 | June 11, 2024 | +  Updated DCV SDK. <br />+  Added SAML 2.0 integration support. <br />+  Added pre-session smart cards authentication support.  |
+| 2024.0 | February 28, 2024 | +  Updated DCV SDK. <br />+  Fixed the keyboard capture issue <br />+  Added WebAuthn support for in-session authentication <br />+  Minor bug fixes and enhancements.  |
+| 2023.2 | December 19, 2023 | +  Added screen reader and keyboard navigation to improve accessibility. <br />+  Added support for AWS GovCloud (US-West) and AWS GovCloud (US-East).  |
+| 2023.1 | November 12, 2023 | +  Added Uniform Resource Identifier (URI) support. <br />+  Fixed Japanese keyboard mapping issue for tilde key. <br />+  Added diagnostic log upload support.  |
+| 2023.0.4395 | August 24, 2023 | + Added DCV WorkSpaces connection support, including Windows, BYOL, and Ubuntu WorkSpaces.<br />+ Added full screen mode expansion support on select monitors, if there are more than 2 connected monitors.<br />+ Added bi-directional audio/video and webcam redirection support for better conferencing experience.<br />+ Added options to display streaming metrics, including frame rate, network latency, and download bandwidth inside their WorkSpaces. Uniform Resource Identifier (URI) is not supported in this version. For more information, see [ Customize how users log in to their WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-workspaces-user-login.html) |
 
 ### WorkSpaces client application for Ubuntu 20.04 release notes
 <a name="linux-2004-client-release-notes"></a>
@@ -313,20 +313,20 @@ The following table describes the changes to each release of the Ubuntu 20.04 cl
 | Release | Date | Changes |
 | --- | --- | --- |
 | 2025.1 | December 12, 2025 | Bug fixes and enhancements. |
-| 2025.0 | May 28, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2024.8 | December 11, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 2024.7 | October 10, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
+| 2025.0 | May 28, 2025 |  +  Updated the DCV SDK. <br />+  Bug fixes and enhancements.   |
+| 2024.8 | December 11, 2024 |  +  Added persistent webcam and microphone settings that are saved between DCV WorkSpaces sessions.  <br />+  Bug fixes and enhancements.   |
+| 2024.7 | October 10, 2024 |  +  Renamed WSP protocol to Amazon DCV protocol. <br />+  Added support for streaming over port 443 for TCP and UDP protocols on DCV WorkSpaces. <br />+  Added support for certificate-based authentication that enables a single sign-on login experience, with fewer user prompts. <br />+  Updated the PCoIP SDK. <br />+  Bug fixes and enhancements.   |
 | 2024.6 | September 5, 2024 | Bug fixes and enhancements. |
 | 2024.5 | August 26, 2024 | Bug fixes and enhancements. |
 | 2024.4 | August 15, 2024 | Bug fixes and enhancements. |
-| 2024.3 | August 8, 2024 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
+| 2024.3 | August 8, 2024 | +  Updated DCV SDK. <br />+  Updated the PCoIP SDK. <br />+  Added support for streaming over TCP/UDP port 443.  |
 | 2024.2 | July 3, 2024 | Bug fixes and enhancements. |
-| 2024.1 | June 11, 2024 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2024.0 | February 28, 2024 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2023.2 | December 19, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2023.1 | November 12, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 4.7.0 | November 1, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) |
-| 2023.0.4430 | August 24, 2023 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html) Uniform Resource Identifier (URI) is not supported in this version. For more information, see [ Customize how users log in to their WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-workspaces-user-login.html) |
-| 4.6.0 | June 21, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
-| 4.5.0 | December 27, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-linux-client.html)  |
+| 2024.1 | June 11, 2024 | +  Updated DCV SDK. <br />+  Added SAML 2.0 integration support.  |
+| 2024.0 | February 28, 2024 | +  Updated DCV SDK. <br />+  Updated PCoIP SDK. <br />+  Fixed the keyboard capture issue <br />+  Added WebAuthn support for in-session authentication <br />+  Minor bug fixes and enhancements.  |
+| 2023.2 | December 19, 2023 | +  Added screen reader and keyboard navigation to improve accessibility. <br />+  Added support for AWS GovCloud (US-West) and AWS GovCloud (US-East).  |
+| 2023.1 | November 12, 2023 | +  Added Uniform Resource Identifier (URI) support. <br />+  Fixed Japanese keyboard mapping issue for tilde key. <br />+  Added diagnostic log upload support  |
+| 4.7.0 | November 1, 2023 | +  Added support for Israel (Tel Aviv) Region. <br />+  Fixed Japanese keyboard mapping issue for tilde key. <br />+  Updated PCoIP SDK for Linux.  |
+| 2023.0.4430 | August 24, 2023 | + Added DCV WorkSpaces connection support, including Windows, BYOL, and Ubuntu WorkSpaces.<br />+ (DCV only) Added full screen mode expansion support on select monitors, if there are more than 2 connected monitors.<br />+ (DCV only) Added bi-directional audio/video and webcam redirection support for better conferencing experience.<br />+ (DCV only) Added options to display streaming metrics, including frame rate, network latency, and download bandwidth inside their WorkSpaces. Uniform Resource Identifier (URI) is not supported in this version. For more information, see [ Customize how users log in to their WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/customize-workspaces-user-login.html) |
+| 4.6.0 | June 21, 2023 |  + Improved client custom branding by storing assets in the same AWS Regions as provisioned WorkSpaces.<br />+ Resolved image auto-scaling issue with client custom branding logo files.<br />+ Fixed Japanese keyboard mapping issues.  |
+| 4.5.0 | December 27, 2022 |  + Resolved the issue of users being unable to disconnect from WorkSpaces when their network connectivity was lost or unavailable.<br />+ Updated PCoIP SDK for the WorkSpaces Linux client.  |
 | 4.4.0 | October 27, 2022 | Ubuntu 20.04 support. |

@@ -15,6 +15,6 @@ Key capabilities include:
 + **Geographic coordinates** — Optionally returns latitude and longitude for validated addresses, available in the United States, Canada, and Australia.
 + **Country-specific postal attributes** — Provides postal system data specific to each country, such as USPS delivery point codes for US addresses and Australia Post identifiers for Australian addresses.
 
-Address validation is available as a bulk processing operation through Amazon Location Service Jobs. You upload your address data to Amazon S3, submit a validation job, and retrieve standardized results when processing is complete.
+Address validation is available as a bulk processing operation through Amazon Location Service Jobs. You upload your address data to Amazon Simple Storage Service, submit a validation job, and retrieve standardized results when processing is complete.
 
 For complete details about address validation features, input and output schemas, and use cases, see [Address validation](address-validation-concepts.md).

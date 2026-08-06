@@ -9,9 +9,9 @@ Crawlers can crawl the following file-based and table-based data stores.
 
 | Access type that crawler uses | Data stores |
 | --- | --- |
-| Native client |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/crawler-data-stores.html)  |
-| JDBC | Amazon Redshift<br />Snowflake<br />Within Amazon Relational Database Service (Amazon RDS) or external to Amazon RDS:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/crawler-data-stores.html) |
-| MongoDB client |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/crawler-data-stores.html)  |
+| Native client |  +  Amazon Simple Storage Service (Amazon S3) <br />+  Amazon DynamoDB <br />+  Delta Lake 2.0.x <br />+  Apache Iceberg 1.5 <br />+  Apache Hudi 0.14   |
+| JDBC | Amazon Redshift<br />Snowflake<br />Within Amazon Relational Database Service (Amazon RDS) or external to Amazon RDS:+  Amazon Aurora <br />+  MariaDB <br />+  Microsoft SQL Server <br />+  MySQL <br />+  Oracle <br />+  PostgreSQL  |
+| MongoDB client |  +  MongoDB <br />+  MongoDB Atlas <br />+  Amazon DocumentDB (with MongoDB compatibility)   |
 
 **Note**
 Currently AWS Glue does not support crawlers for data streams.

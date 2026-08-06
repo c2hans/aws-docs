@@ -224,7 +224,7 @@ The following table describes the fields of an access log entry.
 |  callerX509SANDNS  | The subject alternative name (DNS). | string |
 |  callerX509SANURI  | The subject alternative name (URI). | string |
 |  sourceVpcArn  | The ARN of the VPC where the request originated. | arn:aws:ec2:{{region}}:{{account}}:vpc/{{id}} |
-| failureReason | Indicates the reason a request failed. The possible values are the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-access-logs.html) | string |
+| failureReason | Indicates the reason a request failed. The possible values are the following:+  `TargetConnectionError` - The request failed to connect to a target in the target group.<br />+  `TargetProtocolError` - The target did not respond with valid data. This might indicate the target has invalid TLS records or used an invalid target group protocol. <br />+ `TargetDataTimeout` - The idle timeout was reached.<br />+ `TargetConnectionClosed` - The target closed the connection before completing the response.<br />+ `ClientConnectionClosed` - The client closed the connection before it received the complete response.<br />+ `ClientRateLimited` - The client exceeded the connection limit and VPC Lattice limited the rate.<br />+  `ClientAccessDenied` - VPC Lattice denied access to the resource. Use the `authDeniedReason` for more information about why VPC Lattice denied access. <br />+  `ClientProtocolError` - The client sent data that was not understood. This might indicate the client used invalid TLS records or an invalid protocol.<br />+ `ConnectionDurationExceeded` - The connection reached the maximum connection duration limit.<br />+ `InternalError` - An internal error occurred while processing the request. | string |
 
 **Example**
 The following is an example log entry.
@@ -305,7 +305,7 @@ This section contains an explanation of the HTTP error codes that you may see in
 
 | Error code | Possible causes |
 | --- | --- |
-| HTTP 400: Bad Request |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc-lattice/latest/ug/monitoring-access-logs.html)  |
+| HTTP 400: Bad Request |  +  The client sent a malformed request that doesn't meet the HTTP specification. <br />+  The request header exceeded 60K for the entire request header or more than 100 headers. <br />+  The client closed the connection before sending the full request body.   |
 | HTTP 403: Forbidden | Authentication has been configured for the service, but the incoming request is not authenticated or authorized. |
 | HTTP 404: Non Existent Service | You're trying to connect to a service that does not exist or is not registered to the right service network. |
 | HTTP 500: Internal Server Error | VPC Lattice has encountered an error, such as failure to connect to targets. |

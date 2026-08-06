@@ -91,7 +91,7 @@ You can specify a single Outpost subnet. The following restrictions apply:
   + Automated target weights
   + FIPS security policies
 
-An Application Load Balancer can be deployed on c5/c5d, m5/m5d, or r5/r5d instances on an Outpost. The following table shows the size and EBS volume per instance type that the load balancer can use on an Outpost:
+An Application Load Balancer can be deployed on c5/c5d, m5/m5d, r5/r5d, c7i, m7i, or r7i instances on an Outpost. The following table shows the size and EBS volume per instance type that the load balancer can use on an Outpost:
 
 <table>
 <thead>
@@ -99,20 +99,35 @@ An Application Load Balancer can be deployed on c5/c5d, m5/m5d, or r5/r5d instan
 </thead>
 <tbody>
   <tr><td colspan="2">c5/c5d</td><td></td></tr>
-  <tr><td>large</td><td>50</td><td></td></tr>
-  <tr><td>xlarge</td><td>50</td><td></td></tr>
-  <tr><td>2xlarge</td><td>50</td><td></td></tr>
-  <tr><td>4xlarge</td><td>100</td><td></td></tr>
+  <tr><td>large</td><td>25</td><td></td></tr>
+  <tr><td>xlarge</td><td>25</td><td></td></tr>
+  <tr><td>2xlarge</td><td>25</td><td></td></tr>
+  <tr><td>4xlarge</td><td>25</td><td></td></tr>
   <tr><td colspan="2">m5/m5d</td><td></td></tr>
-  <tr><td>large</td><td>50</td><td></td></tr>
-  <tr><td>xlarge</td><td>50</td><td></td></tr>
-  <tr><td>2xlarge</td><td>100</td><td></td></tr>
-  <tr><td>4xlarge</td><td>100</td><td></td></tr>
+  <tr><td>large</td><td>25</td><td></td></tr>
+  <tr><td>xlarge</td><td>25</td><td></td></tr>
+  <tr><td>2xlarge</td><td>25</td><td></td></tr>
+  <tr><td>4xlarge</td><td>25</td><td></td></tr>
   <tr><td colspan="2">r5/r5d</td><td></td></tr>
-  <tr><td>large</td><td>50</td><td></td></tr>
-  <tr><td>xlarge</td><td>100</td><td></td></tr>
-  <tr><td>2xlarge</td><td>100</td><td></td></tr>
-  <tr><td>4xlarge</td><td>100</td><td></td></tr>
+  <tr><td>large</td><td>25</td><td></td></tr>
+  <tr><td>xlarge</td><td>25</td><td></td></tr>
+  <tr><td>2xlarge</td><td>25</td><td></td></tr>
+  <tr><td>4xlarge</td><td>25</td><td></td></tr>
+  <tr><td colspan="2">c7i</td><td></td></tr>
+  <tr><td>large</td><td>25</td><td></td></tr>
+  <tr><td>xlarge</td><td>25</td><td></td></tr>
+  <tr><td>2xlarge</td><td>25</td><td></td></tr>
+  <tr><td>4xlarge</td><td>25</td><td></td></tr>
+  <tr><td colspan="2">m7i</td><td></td></tr>
+  <tr><td>large</td><td>25</td><td></td></tr>
+  <tr><td>xlarge</td><td>25</td><td></td></tr>
+  <tr><td>2xlarge</td><td>25</td><td></td></tr>
+  <tr><td>4xlarge</td><td>25</td><td></td></tr>
+  <tr><td colspan="2">r7i</td><td></td></tr>
+  <tr><td>large</td><td>25</td><td></td></tr>
+  <tr><td>xlarge</td><td>25</td><td></td></tr>
+  <tr><td>2xlarge</td><td>25</td><td></td></tr>
+  <tr><td>4xlarge</td><td>25</td><td></td></tr>
 </tbody>
 </table>
 

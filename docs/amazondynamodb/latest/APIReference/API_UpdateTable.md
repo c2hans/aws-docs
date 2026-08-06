@@ -156,6 +156,31 @@ You can only perform one of the following operations at once:
    },
    "TableClass": "{{string}}",
    "TableName": "{{string}}",
+   "VectorIndexUpdates": [
+      {
+         "Create": {
+            "Dimensions": {{number}},
+            "DistanceFunction": "{{string}}",
+            "IndexName": "{{string}}",
+            "Projection": {
+               "NonKeyAttributes": [ "{{string}}" ],
+               "ProjectionType": "{{string}}"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "{{string}}",
+                  "SearchSchemaElementType": "{{string}}"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "{{string}}"
+            }
+         },
+         "Delete": {
+            "IndexName": "{{string}}"
+         }
+      }
+   ],
    "WarmThroughput": {
       "ReadUnitsPerSecond": {{number}},
       "WriteUnitsPerSecond": {{number}}
@@ -264,6 +289,12 @@ Required: No
 The table class of the table to be updated. Valid values are `STANDARD` and `STANDARD_INFREQUENT_ACCESS`.
 Type: String
 Valid Values: `STANDARD | STANDARD_INFREQUENT_ACCESS`
+Required: No
+
+ ** [VectorIndexUpdates](#API_UpdateTable_RequestSyntax) **   <a name="DDB-UpdateTable-request-VectorIndexUpdates"></a>
+A list of vector indexes to be added to or removed from the table. You can add or remove one vector index for each `UpdateTable` operation.
+To add a vector index, specify `IndexName`, `VectorAttribute`, `Dimensions`, `DistanceFunction`, and `Projection`. To remove a vector index, specify only the `IndexName`.
+Type: Array of [VectorIndexUpdate](API_VectorIndexUpdate.md) objects
 Required: No
 
  ** [WarmThroughput](#API_UpdateTable_RequestSyntax) **   <a name="DDB-UpdateTable-request-WarmThroughput"></a>
@@ -445,6 +476,31 @@ Required: No
       "TableName": "string",
       "TableSizeBytes": number,
       "TableStatus": "string",
+      "VectorIndexes": [
+         {
+            "Backfilling": boolean,
+            "Dimensions": number,
+            "DistanceFunction": "string",
+            "IndexArn": "string",
+            "IndexName": "string",
+            "IndexSizeBytes": number,
+            "IndexStatus": "string",
+            "ItemCount": number,
+            "Projection": {
+               "NonKeyAttributes": [ "string" ],
+               "ProjectionType": "string"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "string",
+                  "SearchSchemaElementType": "string"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "string"
+            }
+         }
+      ],
       "WarmThroughput": {
          "ReadUnitsPerSecond": number,
          "Status": "string",

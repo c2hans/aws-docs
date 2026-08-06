@@ -26,7 +26,7 @@ This view is only available when querying provisioned clusters.
 | Column name  | Data type  | Description  |
 | --- | --- | --- |
 | table\_name  | text  | Name of the table currently being vacuumed, or the table that was last vacuumed if no operation is in progress.  |
-| status  | text  | Description of the current activity being done as part of the vacuum operation: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_SVV_VACUUM_PROGRESS.html) |
+| status  | text  | Description of the current activity being done as part of the vacuum operation: +  Initialize <br />+  Sort <br />+  Merge <br />+  Delete <br />+  Select <br />+  Failed <br />+  Complete <br />+  Skipped <br />+  Building INTERLEAVED SORTKEY order  |
 | time\_remaining\_estimate  | text  | Estimated time left for the current vacuum operation to complete, in minutes and seconds: 5m 10s, for example. An estimated time is not returned until the vacuum completes its first sort operation. If no vacuum is in progress, the last vacuum that was performed is displayed with Completed in the STATUS column and an empty TIME\_REMAINING\_ESTIMATE column. The estimate typically becomes more accurate as the vacuum progresses.  |
 
 ## Sample queries

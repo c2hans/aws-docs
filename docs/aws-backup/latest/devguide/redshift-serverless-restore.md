@@ -14,9 +14,9 @@ Redshift Serverless and AWS Backup support *interchangeable restore* for data wa
 | Restore capabilities | Namespace | Single table |
 | --- | --- | --- |
 | Type of snapshot | Manual | Manual |
-| Information needed |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html)  |
+| Information needed |  +  Source snapshot <br />+  Target namespace <br />+  Workgroup   |  +  Source snapshot <br />+  Source database <br />+  Source table name <br />+  Target database <br />+  New table name   |
 | Restore target effect | Restores to an existing namespace through a destructive restore that overwrites existing data | Restores to a new table |
-| Interchangeable restore? | Yes.[See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-backup/latest/devguide/redshift-serverless-restore.html) | Not supported. |
+| Interchangeable restore? | Yes.+  Redshift Serverless backups can be restored to Amazon Redshift provisioned clusters. <br />+  Amazon Redshift provisioned backups can be restored to Redshift Serverless clusters.  | Not supported. |
 
 For more information about configurations, see [Snapshots and recovery points](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-snapshots-recovery-points.html) in the *Amazon Redshift Management Guide*.
 

@@ -31,22 +31,22 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | API Endpoint | Cryptographic Operation or Algorithm | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- | --- |
-| GenerateCardData |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_C0\_CARD\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { Generate = true },{ Generate = true, Verify = true } |
-| GenerateCardData |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_C0\_CARD\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { Generate = true },{ Generate = true, Verify = true } |
-| GenerateCardData |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E6\_EMV\_MKEY\_OTHER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { DeriveKey = true } |
-| GenerateCardData |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E4\_EMV\_MKEY\_DYNAMIC\_NUMBERS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { DeriveKey = true } |
-| GenerateCardData |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E6\_EMV\_MKEY\_OTHER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { DeriveKey = true } |
+| GenerateCardData |  +  AMEX\_CARD\_SECURITY\_CODE\_VERSION\_1 <br />+  AMEX\_CARD\_SECURITY\_CODE\_VERSION\_2   | TR31\_C0\_CARD\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    | { Generate = true },{ Generate = true, Verify = true } |
+| GenerateCardData |  +  CARD\_VERIFICATION\_VALUE\_1 <br />+  CARD\_VERIFICATION\_VALUE\_2   | TR31\_C0\_CARD\_VERIFICATION\_KEY |  +   TDES\_2KEY    | { Generate = true },{ Generate = true, Verify = true } |
+| GenerateCardData |  +  CARDHOLDER\_AUTHENTICATION\_VERIFICATION\_VALUE   | TR31\_E6\_EMV\_MKEY\_OTHER |  +   TDES\_2KEY    | { DeriveKey = true } |
+| GenerateCardData |  +  DYNAMIC\_CARD\_VERIFICATION\_CODE   | TR31\_E4\_EMV\_MKEY\_DYNAMIC\_NUMBERS |  +   TDES\_2KEY    | { DeriveKey = true } |
+| GenerateCardData |  +  DYNAMIC\_CARD\_VERIFICATION\_VALUE   | TR31\_E6\_EMV\_MKEY\_OTHER |  +   TDES\_2KEY    | { DeriveKey = true } |
 
 ## VerifyCardData
 <a name="w2aac15c31c11"></a>
 
 | Cryptographic Operation or Algorithm | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_C0\_CARD\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { Generate = true },{ Generate = true, Verify = true } |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_C0\_CARD\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { Generate = true },{ Generate = true, Verify = true } |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E6\_EMV\_MKEY\_OTHER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { DeriveKey = true } |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E4\_EMV\_MKEY\_DYNAMIC\_NUMBERS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { DeriveKey = true } |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E6\_EMV\_MKEY\_OTHER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | { DeriveKey = true } |
+|  +  AMEX\_CARD\_SECURITY\_CODE\_VERSION\_1 <br />+  AMEX\_CARD\_SECURITY\_CODE\_VERSION\_2   | TR31\_C0\_CARD\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    | { Generate = true },{ Generate = true, Verify = true } |
+|  +  CARD\_VERIFICATION\_VALUE\_1 <br />+  CARD\_VERIFICATION\_VALUE\_2   | TR31\_C0\_CARD\_VERIFICATION\_KEY |  +   TDES\_2KEY    | { Generate = true },{ Generate = true, Verify = true } |
+|  +  CARDHOLDER\_AUTHENTICATION\_VERIFICATION\_VALUE   | TR31\_E6\_EMV\_MKEY\_OTHER |  +   TDES\_2KEY    | { DeriveKey = true } |
+|  +  DYNAMIC\_CARD\_VERIFICATION\_CODE   | TR31\_E4\_EMV\_MKEY\_DYNAMIC\_NUMBERS |  +   TDES\_2KEY    | { DeriveKey = true } |
+|  +  DYNAMIC\_CARD\_VERIFICATION\_VALUE   | TR31\_E6\_EMV\_MKEY\_OTHER |  +   TDES\_2KEY    | { DeriveKey = true } |
 
 ## GeneratePinData (for VISA/ABA schemes)
 <a name="w2aac15c31c15"></a>
@@ -55,8 +55,8 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| PIN Generation Key | TR31\_V2\_VISA\_PIN\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Encrypt = true, Wrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Generation Key | TR31\_V2\_VISA\_PIN\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Generate = true } <br />+  { Generate = true, Verify = true }  |
 
 ## GeneratePinData (for `IBM3624`)
 <a name="w2aac15c31c17"></a>
@@ -65,8 +65,8 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET[See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)<br />For IBM3624\_PIN\_OFFSET[See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| PIN Generation Key | TR31\_V1\_IBM3624\_PIN\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET+  { Encrypt = true, Wrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true } <br />For IBM3624\_PIN\_OFFSET+  { Encrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Generation Key | TR31\_V1\_IBM3624\_PIN\_VERIFICATION\_KEY |  +   TDES\_3KEY    |  +  { Generate = true } <br />+  { Generate = true, Verify = true }  |
 
 ## VerifyPinData (for VISA/ABA schemes)
 <a name="w2aac15c31c21"></a>
@@ -75,8 +75,8 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| PIN Generation Key | TR31\_V2\_VISA\_PIN\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Generation Key | TR31\_V2\_VISA\_PIN\_VERIFICATION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Verify = true } <br />+  { Generate = true, Verify = true }  |
 
 ## VerifyPinData (for `IBM3624`)
 <a name="w2aac15c31c23"></a>
@@ -85,38 +85,38 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET[See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| PIN Verification Key | TR31\_V1\_IBM3624\_PIN\_VERIFICATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| PIN Encryption Key | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    | For IBM3624\_NATURAL\_PIN, IBM3624\_RANDOM\_PIN, IBM3624\_PIN\_FROM\_OFFSET+  { Decrypt = true, Unwrap = true } <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| PIN Verification Key | TR31\_V1\_IBM3624\_PIN\_VERIFICATION\_KEY |  +   TDES\_3KEY    |  +  { Verify = true } <br />+  { Generate = true, Verify = true }  |
 
 ## Decrypt Data
 <a name="w2aac15c31c27"></a>
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| EMV | TR31\_E1\_EMV\_MKEY\_CONFIDENTIALITY<br />TR31\_E6\_EMV\_MKEY\_OTHER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |
-| RSA | TR31\_D1\_ASYMMETRIC\_KEY\_FOR\_DATA\_ENCRYPTION |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Symmetric keys | TR31\_D0\_SYMMETRIC\_DATA\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  +   TDES\_2KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { DeriveKey = true }  <br />+  { NoRestrictions = true }  |
+| EMV | TR31\_E1\_EMV\_MKEY\_CONFIDENTIALITY<br />TR31\_E6\_EMV\_MKEY\_OTHER |  +   TDES\_2KEY    |  +  { DeriveKey = true }    |
+| RSA | TR31\_D1\_ASYMMETRIC\_KEY\_FOR\_DATA\_ENCRYPTION |  +   RSA\_2048  <br />+   RSA\_3072  <br />+   RSA\_4096    |  +  { Decrypt = true, Unwrap=true}  <br />+  {Encrypt=true, Wrap=true,Decrypt = true, Unwrap=true}  |
+| Symmetric keys | TR31\_D0\_SYMMETRIC\_DATA\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  {Decrypt = true, Unwrap=true} <br />+  {Encrypt=true, Wrap=true,Decrypt = true, Unwrap=true} <br />+  { NoRestrictions = true }  |
 
 ## Encrypt Data
 <a name="w2aac15c31c33"></a>
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| EMV | TR31\_E1\_EMV\_MKEY\_CONFIDENTIALITY<br />TR31\_E6\_EMV\_MKEY\_OTHER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |
-| RSA | TR31\_D1\_ASYMMETRIC\_KEY\_FOR\_DATA\_ENCRYPTION |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Symmetric keys | TR31\_D0\_SYMMETRIC\_DATA\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  +   TDES\_2KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { DeriveKey = true } <br />+  { NoRestrictions = true }  |
+| EMV | TR31\_E1\_EMV\_MKEY\_CONFIDENTIALITY<br />TR31\_E6\_EMV\_MKEY\_OTHER |  +   TDES\_2KEY    |  +  { DeriveKey = true }    |
+| RSA | TR31\_D1\_ASYMMETRIC\_KEY\_FOR\_DATA\_ENCRYPTION |  +   RSA\_2048  <br />+   RSA\_3072  <br />+   RSA\_4096    |  +  { Encrypt = true, Wrap=true}  <br />+  {Encrypt=true, Wrap=true,Decrypt = true, Unwrap=true}  |
+| Symmetric keys | TR31\_D0\_SYMMETRIC\_DATA\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  {Encrypt = true, Wrap=true} <br />+  {Encrypt=true, Wrap=true,Decrypt = true, Unwrap=true} <br />+  { NoRestrictions = true }  |
 
 ## Translate Pin Data
 <a name="w2aac15c31c39"></a>
 
 | Direction | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- | --- |
-| Inbound Data Source | DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Inbound Data Source | non-DUKPT (PEK, AWK, IWK, etc) | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Outbound Data Target | DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Outbound Data Target | non-DUKPT (PEK, IWK, AWK, etc) | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| Inbound Data Source | DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  +   TDES\_2KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { DeriveKey = true }  <br />+  { NoRestrictions = true }  |
+| Inbound Data Source | non-DUKPT (PEK, AWK, IWK, etc) | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Decrypt = true, Unwrap = true }  <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
+| Outbound Data Target | DUKPT | TR31\_B0\_BASE\_DERIVATION\_KEY |  +   TDES\_2KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { DeriveKey = true }  <br />+  { NoRestrictions = true }  |
+| Outbound Data Target | non-DUKPT (PEK, IWK, AWK, etc) | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Encrypt = true, Wrap = true }  <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true } <br />+  { NoRestrictions = true }  |
 
 ## Generate/Verify MAC
 <a name="crypto-ops-validkeys.generatemac"></a>
@@ -125,11 +125,11 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Allowed Key Usage | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| MAC Key  | TR31\_M1\_ISO\_9797\_1\_MAC\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| MAC Key (Retail MAC)  | TR31\_M1\_ISO\_9797\_3\_MAC\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| MAC Key (CMAC)  | TR31\_M6\_ISO\_9797\_5\_CMAC\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| MAC Key (HMAC)  | TR31\_M7\_HMAC\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| MAC Key (AS2805)  | TR31\_M0\_ISO\_16609\_MAC\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| MAC Key  | TR31\_M1\_ISO\_9797\_1\_MAC\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Generate = true }  <br />+  { Generate = true, Verify = true }  <br />+  { Verify = true }  <br />+  { Generate = true }   |
+| MAC Key (Retail MAC)  | TR31\_M1\_ISO\_9797\_3\_MAC\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Generate = true }  <br />+  { Generate = true, Verify = true }  <br />+  { Verify = true }  <br />+  { Generate = true }   |
+| MAC Key (CMAC)  | TR31\_M6\_ISO\_9797\_5\_CMAC\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Generate = true }  <br />+  { Generate = true, Verify = true }  <br />+  { Verify = true }  <br />+  { Generate = true }   |
+| MAC Key (HMAC)  | TR31\_M7\_HMAC\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Generate = true }  <br />+  { Generate = true, Verify = true }  <br />+  { Verify = true }   |
+| MAC Key (AS2805)  | TR31\_M0\_ISO\_16609\_MAC\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY    |  +  { Generate = true }  <br />+  { Generate = true, Verify = true }  <br />+  { Verify = true }   |
 
 ## GenerateMacEmvPinChange
 <a name="crypto-ops-validkeys.generatemacemvpinchange"></a>
@@ -138,28 +138,28 @@ Certain combinations, although permitted, may create unusable situations such as
 
 | Key Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| Secure Messaging Integrity Key  | TR31\_E2\_EMV\_MKEY\_INTEGRITY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Secure Messaging Confidentiality Key  | TR31\_E1\_EMV\_MKEY\_CONFIDENTIALITY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Current PIN PEK (PIN Encryption Key)  | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| New PIN PEK (PIN Encryption Key)  | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| ARQC Key  Only applies for Visa and Amex derivation schemes.  | TR31\_E0\_EMV\_MKEY\_APP\_CRYPTOGRAMS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| Secure Messaging Integrity Key  | TR31\_E2\_EMV\_MKEY\_INTEGRITY |  +   TDES\_2KEY    |  +  { NoRestrictions = true }   |
+| Secure Messaging Confidentiality Key  | TR31\_E1\_EMV\_MKEY\_CONFIDENTIALITY |  +   TDES\_2KEY    |  +  { DeriveKey = true }   |
+| Current PIN PEK (PIN Encryption Key)  | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Decrypt = true, Unwrap = true }  <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true }  <br />+  { NoRestrictions = true }   |
+| New PIN PEK (PIN Encryption Key)  | TR31\_P0\_PIN\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Decrypt = true, Unwrap = true }  <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true }  <br />+  { NoRestrictions = true }   |
+| ARQC Key  Only applies for Visa and Amex derivation schemes.  | TR31\_E0\_EMV\_MKEY\_APP\_CRYPTOGRAMS |  +   TDES\_2KEY    |  +  { DeriveKey = true }   |
 
 ## VerifyAuthRequestCryptogram
 <a name="w2aac15c31c51"></a>
 
 | Allowed Key Usage | EMV Option | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  | TR31\_E0\_EMV\_MKEY\_APP\_CRYPTOGRAMS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+|  +   OPTION A  <br />+   OPTION B    | TR31\_E0\_EMV\_MKEY\_APP\_CRYPTOGRAMS |  +   TDES\_2KEY    |  +  { DeriveKey = true }   |
 
 ## Import/Export Key
 <a name="crypto-ops-validkeys.importexport"></a>
 
 | Operation Type | Allowed Key Usage | Allowed Key Algorithm | Allowed combination of key modes of use |
 | --- | --- | --- | --- |
-| TR-31 Wrapping Key | TR31\_K1\_KEY\_BLOCK\_PROTECTION\_KEY<br />TR31\_K0\_KEY\_ENCRYPTION\_KEY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Import of trusted CA | TR31\_S0\_ASYMMETRIC\_KEY\_FOR\_DIGITAL\_SIGNATURE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Import of public key certificate for asymmetric encryption | TR31\_D1\_ASYMMETRIC\_KEY\_FOR\_DATA\_ENCRYPTION |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
-| Key used to key agreement algorithms such as ECDH | TR31\_K3\_ASYMMETRIC\_KEY\_FOR\_KEY\_AGREEMENT |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/payment-cryptography/latest/userguide/crypto-ops-validkeys-ops.html) |
+| TR-31 Wrapping Key | TR31\_K1\_KEY\_BLOCK\_PROTECTION\_KEY<br />TR31\_K0\_KEY\_ENCRYPTION\_KEY |  +   TDES\_2KEY  <br />+   TDES\_3KEY  <br />+   AES\_128  <br />+   AES\_192  <br />+   AES\_256    |  +  { Encrypt = true, Wrap = true } (export only)  <br />+  { Decrypt = true, Unwrap = true } (import only)  <br />+  { Encrypt = true, Decrypt = true, Wrap = true, Unwrap = true }  |
+| Import of trusted CA | TR31\_S0\_ASYMMETRIC\_KEY\_FOR\_DIGITAL\_SIGNATURE |  +   RSA\_2048  <br />+   RSA\_3072  <br />+   RSA\_4096    |  +  { Verify = true }   |
+| Import of public key certificate for asymmetric encryption | TR31\_D1\_ASYMMETRIC\_KEY\_FOR\_DATA\_ENCRYPTION |  +   RSA\_2048  <br />+   RSA\_3072  <br />+   RSA\_4096    |  +  { Encrypt=true,Wrap=true }   |
+| Key used to key agreement algorithms such as ECDH | TR31\_K3\_ASYMMETRIC\_KEY\_FOR\_KEY\_AGREEMENT |  +   ECC\_NIST\_P256  <br />+   ECC\_NIST\_P384  <br />+   ECC\_NIST\_P521    |  +  { DeriveKey = true }   |
 
 ## Unused key types
 <a name="w2aac15c31c57"></a>

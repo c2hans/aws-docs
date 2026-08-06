@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.h
 
 A Universal International Freephone number (UIFN) is a unique **inbound only** freephone number that can be used throughout the world. It provides toll-free calling from international locations to your contact center.
 
-Connect Customer supports UIFN in more than [60 countries](#list-of-uifn-countries) that are registered with the International Telecommunications Union, an organization that supports the administration of the UIFN service.
+You can use UIFN with Connect Customer in [many countries](#list-of-uifn-countries) registered with the International Telecommunications Union (ITU). The ITU supports the administration of the UIFN service. Availability depends on carrier support and may vary by country.
 
 **Note**
 Connect Customer allows you to enable UIFNs in as many countries as you need, however, it requires a minimum of 5 countries.
@@ -52,8 +52,8 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Brazil | 0021-800-XXXX-XXXX<br />National reachability: full<br />Activation of international direct dialing service is required for calling parties for both fixed and mobile lines.<br />The subscriber must have enabled the use of Embratel/Claro's international selection code (0021). | 20-30 |
 | Bulgaria | 00-800-XXXX-XXXX<br />National reachability: full | 10-20 |
 | Canada | 011-800-XXXX-XXXX<br />National reachability: full<br />Calling from payphones is not supported. | 20-40 |
-| China | 00-800-XXXX-XXXX<br />National reachability: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.html) | 20-40 |
-| Colombia | Dialing format:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.html)<br />National reachability: full | 30-60 |
+| China | 00-800-XXXX-XXXX<br />National reachability: +  China telecom fixed and mobile networks <br />+  China Unicom fixed network  | 20-40 |
+| Colombia | Dialing format:+  TIGO landline: 005-800 -XXXX-XXXX <br />+  TIGO: 00414-800-XXXX-XXXX <br />+  CLARO: 00444-800-XXXX-XXXX <br />+  MOVISTAR: 009-800-XXXX-XXXX <br />National reachability: full | 30-60 |
 | Costa Rica | 00-800-XXXX-XXXX<br />National reachability: full | 15-30 |
 | Croatia | 00-800-XXXX-XXXX<br />National reachability: all fixed; T-Mobile network | 20-30 |
 | Czech Republic | 00-800-XXXX-XXXX<br />National reachability: full | 20-30 |
@@ -67,9 +67,9 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Hong Kong | 006-800-XXXX-XXXX<br />National reachability: full<br />CLI not guaranteed. | 20-40 |
 | Hungary | 00-800-XXXX-XXXX<br />National reachability: full<br />Activation of international direct dialing service is required for calling parties for both fixed and mobile lines. <br />Airtime charges may apply when calling from mobiles. | 10-15 |
 | Iceland | 00-800-XXXX-XXXX<br />National reachability: all fixed; Iceland Telecom, IMC, Vodafone mobile networks. | 10-20 |
-| Israel | Dialing format:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.html)<br />National reachability: full | 20-50 |
+| Israel | Dialing format:+  LANLI: 012800XXXXXXX <br />+  BEZEQ: 013800XXXXXXX <br />+  BARAK: 014800XXXXXXX <br />National reachability: full | 20-50 |
 | Italy | 00-800-XXXX-XXXX<br />National reachability: all fixed networks, including Vatican and San Marino | 10-15 |
-| Japan | Dialing format:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/uifn-service.html)<br />National reachability: full  | 20-40 |
+| Japan | Dialing format:+  **KDDI**: 001-010-800-XXXX-XXXX <br />**SoftBank**: 0061-010-800-XXXX-XXXX <br />National reachability: full  | 20-40 |
 | Latvia | 00-800-XXXX-XXXX<br />National reachability: full | 10-15 |
 | Lithuania | 00-800-XXXX-XXXX<br />National reachability: all fixed networks; Telia LT mobile | 15-30 |
 | Luxembourg | 00-800-XXXX-XXXX<br />National reachability: full | 10-15 |

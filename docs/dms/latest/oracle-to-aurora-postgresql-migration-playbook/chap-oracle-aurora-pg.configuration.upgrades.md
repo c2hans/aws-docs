@@ -215,7 +215,7 @@ aws rds modify-db-cluster ^
 | Prerequisite | Install new Oracle software | N/A |
 | Prerequisite | Upgrade operation type | N/A |
 | Prerequisite | Database selection | Select the right Amazon RDS instance |
-| Prerequisite | Prerequisite checks |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.configuration.upgrades.html) <pre>SELECT count(*) FROM pg_catalog.pg_prepared_xacts;</pre>  |
+| Prerequisite | Prerequisite checks |  1.  Remove all uses of the reg data types. <br />2.  Upgrade certain extensions <br />3.  Commit or roll back all open prepared transactions  <pre>SELECT count(*) FROM pg_catalog.pg_prepared_xacts;</pre>  |
 | Prerequisite | Upgrade options | N/A |
 | Prerequisite | Management options (optional) | N/A |
 | Prerequisite | Move database files (optional) | N/A |

@@ -20,7 +20,7 @@ Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
  ** EndTime **   <a name="DDB-Type-ImportSummary-EndTime"></a>
- The time at which this import task ended. (Does this include the successful complete creation of the table it was imported to?)
+ The time at which this import task ended.
 Type: Timestamp
 Required: No
 

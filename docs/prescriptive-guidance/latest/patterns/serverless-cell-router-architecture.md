@@ -118,7 +118,7 @@ For best practices when building cell-based architectures, see the following AWS
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clean up the resources. | To avoid incurring additional charges in your account, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/serverless-cell-router-architecture.html) | App developer |
+| Clean up the resources. | To avoid incurring additional charges in your account, do the following:1. [Empty the S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/empty-bucket.html) that you created for the Lambda functions.<br />2. Delete the bucket.<br />3. Delete the CloudFormation stack. | App developer |
 
 ## Related resources
 <a name="serverless-cell-router-architecture-resources"></a>

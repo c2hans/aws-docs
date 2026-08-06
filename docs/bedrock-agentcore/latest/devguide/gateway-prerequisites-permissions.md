@@ -51,7 +51,7 @@ For greater security and control, you can create your own custom policy by reduc
 }
 ```
 
-The following custom policy is a more restrictive one that only allows read access to gateways and gateway targets
+The following custom policy is a more restrictive one that only allows read access to gateways, gateway targets, and rate limits:
 
 ```
 {
@@ -63,7 +63,31 @@ The following custom policy is a more restrictive one that only allows read acce
         "bedrock-agentcore:ListGateways",
         "bedrock-agentcore:GetGateway",
         "bedrock-agentcore:ListGatewayTargets",
-        "bedrock-agentcore:GetGatewayTarget"
+        "bedrock-agentcore:GetGatewayTarget",
+        "bedrock-agentcore:ListGatewayRateLimits",
+        "bedrock-agentcore:GetGatewayRateLimit"
+      ],
+      "Resource": "arn:aws:bedrock-agentcore:*:*:*gateway*"
+    }
+  ]
+}
+```
+
+The following custom policy allows an identity to manage rate limits on a gateway without being able to modify the gateway or its targets:
+
+```
+{
+"Version":"2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:CreateGatewayRateLimit",
+        "bedrock-agentcore:GetGatewayRateLimit",
+        "bedrock-agentcore:UpdateGatewayRateLimit",
+        "bedrock-agentcore:DeleteGatewayRateLimit",
+        "bedrock-agentcore:ListGatewayRateLimits",
+        "bedrock-agentcore:BatchPutGatewayRateLimits"
       ],
       "Resource": "arn:aws:bedrock-agentcore:*:*:*gateway*"
     }
@@ -191,7 +215,8 @@ If the Lambda function target is in a different account from the gateway service
 Replace the values of the following fields:
 +  `AWS` – Use the ARN of your gateway service role.
 +  `Resource` – Use the ARN of your Lambda function.
-To learn how to attach a resource-based policy to the Lambda function that allows your gateway service role to access the function, select one of the following methods
+
+To learn how to attach a resource-based policy to the Lambda function that allows your gateway service role to access the function, select one of the following methods:
 
 ------
 #### [ Console ]

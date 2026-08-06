@@ -30,7 +30,7 @@ These fields work with the Rate Control Mode field, which is discussed in [Encod
 
 | Location of Field on Web Interface | Location of Tag in XML |
 | --- | --- |
-| Streams – Video > Advanced > Bitrate | stream\_assembly/video\_description/{{codec}}/bitrate<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control.html) |
-|  <br />Streams – Video > Advanced > Buffer Size | stream\_assembly/video\_description/{{codec}}/buf\_size<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control.html) |
-| Streams – Video > Advanced > Max Bitrate | stream\_assembly/video\_description/{{codec}}/max\_bitrate<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control.html) |
-| Streams – Video > Advanced > Initial Buffer Fill | stream\_assembly/video\_description/{{codec}}/buf\_fill\_pct<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control.html) |
+| Streams – Video > Advanced > Bitrate | stream\_assembly/video\_description/{{codec}}/bitrate<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+|  <br />Streams – Video > Advanced > Buffer Size | stream\_assembly/video\_description/{{codec}}/buf\_size<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Max Bitrate | stream\_assembly/video\_description/{{codec}}/max\_bitrate<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Initial Buffer Fill | stream\_assembly/video\_description/{{codec}}/buf\_fill\_pct<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |

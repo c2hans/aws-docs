@@ -44,24 +44,24 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/sbom-generator-lic
 
 | Target | Package manager | License information source | Type |
 | --- | --- | --- | --- |
-| Alma Linux | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| Amazon Linux | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| CentOS | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| Fedora | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| OpenSUSE | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| Oracle Linux | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| Photon OS | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| RHEL | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| Rocky Linux | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
-| SLES | RPM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | OS |
+| Alma Linux | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| Amazon Linux | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| CentOS | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| Fedora | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| OpenSUSE | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| Oracle Linux | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| Photon OS | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| RHEL | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| Rocky Linux | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
+| SLES | RPM |  +   /usr/lib/sysimage/rpm/rpmdb.sqlite  <br />+   /usr/lib/sysimage/rpm/Packages  <br />+   /usr/lib/sysimage/rpm/Packages.db  <br />+   /var/lib/rpm/rpmdb.sqlite  <br />+   /var/lib/rpm/Packages  <br />+   /var/lib/rpm/Packages.db    | OS |
 | Alpine Linux | APK | /lib/apk/db/installed | OS |
 | Chainguard | APK | /lib/apk/db/installed | OS |
 | Debian | DPKG | /usr/share/doc/\*/copyright | OS |
 | Ubuntu | DPKG | /usr/share/doc/\*/copyright | OS |
 | Node.js | Javascript | node\_modules/\*/package.json | Programing language |
-| PHP | Composer package |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | Programing language |
+| PHP | Composer package |  +  `composer.lock` <br />+  `/vendor/composer/installed.json`   | Programing language |
 | Go | Go | LICENSE | Programing language |
-| Python | Python/Egg/Wheel |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/inspector/latest/user/sbom-generator-license-collection.html)  | Programing language |
+| Python | Python/Egg/Wheel |  +   `.dist-info/METADATA`  <br />+   `.egg-info`  <br />+   `.egg-info/PKG-INFO`    | Programing language |
 | Ruby | RubyGem | \*.gemspec | Programing language |
 | Rust | crate | Cargo.toml | Programming language |
 

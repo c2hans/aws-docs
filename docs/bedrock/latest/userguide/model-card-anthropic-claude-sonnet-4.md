@@ -39,7 +39,7 @@ Claude Sonnet 4 is Anthropic's balanced model with strong coding and reasoning c
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4.html)  |
+|  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Client-side tool calling](https://docs.aws.amazon.com/bedrock/latest/userguide/tool-use.html)  |  + ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)<br />+ ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)  |
 
 **Prompt caching using `bedrock-runtime` endpoint**
 
@@ -63,7 +63,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 | --- | --- | --- | --- | --- |
 | bedrock-runtime | anthropic.claude-sonnet-4-20250514-v1:0 | https://bedrock-runtime.{region}.amazonaws.com | `us.anthropic.claude-sonnet-4-20250514-v1:0`<br />`eu.anthropic.claude-sonnet-4-20250514-v1:0`<br />`apac.anthropic.claude-sonnet-4-20250514-v1:0` | global.anthropic.claude-sonnet-4-20250514-v1:0 |
 
-*For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/v1".*
+*For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com".*
 
 ## Service Tiers
 <a name="model-card-anthropic-claude-sonnet-4-tiers"></a>
@@ -79,7 +79,7 @@ Amazon Bedrock offers multiple service tiers to match your workload requirements
 
 ***Regional availability at a glance***
 
-Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (US, EU, etc.) for higher throughput while respecting data residency, and **Global Cross-Region** routes anywhere worldwide for maximum throughput when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
+Amazon Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (such as US, EU, and APAC) while respecting data residency, and **Global Cross-Region** routes anywhere worldwide when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
 
 | **Region** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |
@@ -153,7 +153,7 @@ Geo Inference ID: `apac.anthropic.claude-sonnet-4-20250514-v1:0`
 
 | **Global Inference ID** | **Americas** | **EMEA** | **Asia Pacific** |
 | --- | --- | --- | --- |
-| global.anthropic.claude-sonnet-4-20250514-v1:0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4.html)  |
+| global.anthropic.claude-sonnet-4-20250514-v1:0 |  + us-east-1 (N. Virginia)<br />+ us-east-2 (Ohio)<br />+ us-west-2 (Oregon)  |  + eu-west-1 (Ireland)  |  + ap-northeast-1 (Tokyo)  |
 
 ## Quotas and Limits
 <a name="model-card-anthropic-claude-sonnet-4-quotas"></a>

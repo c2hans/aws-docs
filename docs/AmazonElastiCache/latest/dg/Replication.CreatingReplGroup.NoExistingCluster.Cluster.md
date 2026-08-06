@@ -43,8 +43,8 @@ Description of the replication group.
 
 **--cache-node-type**
 The node type for each node in the replication group.
-ElastiCache supports the following node types. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
-For more information on performance details for each node type, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/).
+ElastiCache supports the following node types. Generally speaking, the latest generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
+For performance details for each node type, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/).
 
 **--data-tiering-enabled**
 Set this parameter if you are using an r6gd node type. If you don't want data tiering, set `--no-data-tiering-enabled`. For more information, see [Data tiering in ElastiCache](data-tiering.md).
@@ -56,7 +56,7 @@ Specify the `default.redis6.x.cluster.on` parameter group or a parameter group d
 redis
 
 **--engine-version**
-3.2.4
+7.1
 
 **--num-node-groups**
 The number of node groups in this replication group. Valid values are 1 to 500.
@@ -69,7 +69,7 @@ The number of replica nodes in each node group. Valid values are 0 to 5.
 Either `ipv4`, `ipv` or `dual-stack`. If you choose dual-stack, you must set the `--IpDiscovery` parameter to either `ipv4` or `ipv6`.
 
 If you want to enable in-transit or at-rest encryption on this replication group, add either or both of the `--transit-encryption-enabled` or `--at-rest-encryption-enabled` parameters and meet the following conditions.
-+ Your replication group must be running Redis OSS version 3.2.6 or 4.0.10.
++ Your replication group must be running Valkey, or Redis OSS version 4.0.10 or later.
 + The replication group must be created in an Amazon VPC.
 + You must also include the parameter `--cache-subnet-group`.
 + You must also include the parameter `--auth-token` with the customer specified string value for your AUTH token (password) needed to perform operations on this replication group.
@@ -240,8 +240,8 @@ The configuration for each node group. The `NodeGroupConfiguration` parameter co
 
 **CacheNodeType**
 The node type for each node in the replication group.
-ElastiCache supports the following node types. Generally speaking, the current generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
-For more information on performance details for each node type, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/).
+ElastiCache supports the following node types. Generally speaking, the latest generation types provide more memory and computational power at lower cost when compared to their equivalent previous generation counterparts.
+For performance details for each node type, see [Amazon EC2 Instance Types](https://aws.amazon.com/ec2/instance-types/).
 
 **--data-tiering-enabled**
 Set this parameter if you are using an r6gd node type. If you don't want data tiering, set `--no-data-tiering-enabled`. For more information, see [Data tiering in ElastiCache](data-tiering.md).
@@ -259,7 +259,7 @@ redis
 6.0
 
 If you want to enable in-transit or at-rest encryption on this replication group, add either or both of the `TransitEncryptionEnabled=true` or `AtRestEncryptionEnabled=true` parameters and meet the following conditions.
-+ Your replication group must be running Redis OSS version 3.2.6 or 4.0.10.
++ Your replication group must be running Valkey, or Redis OSS version 4.0.10 or later.
 + The replication group must be created in an Amazon VPC.
 + You must also include the parameter `CacheSubnetGroup`.
 + You must also include the parameter `AuthToken` with the customer specified string value for your AUTH token (password) needed to perform operations on this replication group.

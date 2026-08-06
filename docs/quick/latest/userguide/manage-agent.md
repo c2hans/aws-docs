@@ -7,26 +7,19 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/manage-agent.html
 
 When a user account subscribes to Quick, the service automatically creates a system default chat agent. This agent powers the default chat experience, allowing Amazon Quick users to leverage all chat functionalities (such as uploading files to chat, using large language model (LLM) parametric knowledge, and answering from their enterprise data) out of the box. The system default chat agent can be updated in the Amazon Quick agent section by a select set of users who are designated as owners for the agent by the admin.
 
-All chat agents (including system and custom) as well as flows are also equipped with guardrails and safety controls to ensure responsible use. Any agent or flow that you chat with will use these default guardrails powering the chat interactions:
-+ **Prompt leak protection** – Automatically enabled to prevent prompt injection and other LLM-breaking attacks.
-+ **Prompt safety** – Protects against common security threats like malicious instructions, instructions to ignore guardrails, and others.
-+ **Blocked words and phrases** – Protects against inappropriate content including insults, hate speech, sexual content, violence, and misconduct, for both chat requests and responses.
-
-As an admin, you can define blocked phrases for all Amazon Quick chat agents. If you do, Amazon Quick ensures that chat agent and flows responses across your Amazon Quick instance don't include these words or phrases. No blocked words or phrases are assigned to your chat agent or flows by default. You can choose up to 50 words or phrases to block.
+Amazon Quick uses multiple safety controls for chat interactions in the Amazon Quick web experience. You can configure blocked words and phrases under **Guardrails and safety controls**. For information about built-in safeguards and blocked words and phrases, see [AI guardrails in Amazon Quick](guardrails.md).
 
 Admins can also configure whether URLs in chat responses appear as clickable hyperlinks or plain text. This setting applies across all chat agents and flows in your instance, allowing you to control how links are presented to users.
 
 **Note**
 Admins can also control permissions for whether users can create and use chat agents and flows. For instructions on how to do that, see [Custom permissions](https://docs.aws.amazon.com/quicksuite/latest/userguide/create-custom-permissions-profile.html).
 
-The following sections outline how to edit the system default agent and add blocked words for chat to influence all agent responses and flows.
+The following sections outline how to edit the system default agent and configure clickable external links in chat responses.
 
 **Topics**
 + [Grant user permissions to edit system default chat agent](#edit-default-agent-permissions)
 + [Edit system chat agent settings](#edit-default-agent)
 + [Configure clickable external links in chat responses](#configure-clickable-links)
-+ [Adding blocked words and phrases for chat agents](#general-agent-settings)
-+ [Edit blocked words and phrases for chat agents and flows](#edit-general-agent-settings)
 
 ## Grant user permissions to edit system default chat agent
 <a name="edit-default-agent-permissions"></a>
@@ -91,39 +84,3 @@ Admins can configure whether URLs in chat agent responses appear as clickable hy
 1. From the admin console left navigation menu, select **Customization**, and then select **Chat agent customization**.
 
 1. Under **Clickable external links**, turn the toggle on.
-
-## Adding blocked words and phrases for chat agents
-<a name="general-agent-settings"></a>
-
-Default guardrails and admin provided blocked words serve as general settings that all chat agents and flows consider when the user chats with them. Admin configured blocked words are filtered out from responses in both chat agents and flows within your Amazon Quick instance.
-
-To learn more about chat agents, see [Working with chat agents](https://docs.aws.amazon.com/quicksuite/latest/userguide/working-with-agents.html) in the *Amazon Quick User Guide*.
-
-**To assign blocked words and phrases for all chat agents**
-
-1. Log in to the Amazon Quick console.
-
-1. Select **Manage Quick**.
-
-1. From the left navigation menu, select **Customization**, and then select **Chat agent customization**.
-
-1. In **Chat agent customizations**, for **Guardrails and safety controls**, do the following:
-
-   1. **Add blocked words and phrases** – Select **Add** to add blocked words and phrases. You can add upto 50 words and phrases.
-
-## Edit blocked words and phrases for chat agents and flows
-<a name="edit-general-agent-settings"></a>
-
-To edit blocked words and phrases added to chat agents and flows, use the following procedure.
-
-**To edit blocked words and phrases for all chat agents and flows**
-
-1. Log in to the Amazon Quick console.
-
-1. Select **Manage Quick**.
-
-1. From the left navigation menu, select **Customization**, and then select **Chat agent customization**.
-
-1. In **Chat agent customization**, for **Guardrails and safety controls**, do the following:
-
-   1. **Add blocked words and phrases** – Select **Remove** to remove existing blocked words and phrases. Or, select **Add** to add new ones. You can add upto 50 words and phrases.

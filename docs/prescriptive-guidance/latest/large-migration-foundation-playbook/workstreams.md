@@ -50,10 +50,10 @@ The foundation workstream consists of two categories: platform foundation and pe
 
 |  |
 | --- |
-| Common tasks | Build and validate the AWS landing zonePrepare the on-premises infrastructure to support the migration, such as making networking or firewall changes, permissions changes, or Active Directory changesSet up the project core workstreams and supporting workstreamsSet up the training plan for the teamBuild the RACI matrices with project managers |
+| Common tasks | + Build and validate the AWS landing zone<br />+ Prepare the on-premises infrastructure to support the migration, such as making networking or firewall changes, permissions changes, or Active Directory changes<br />+ Set up the project core workstreams and supporting workstreams<br />+ Set up the training plan for the team<br />+ Build the RACI matrices with project managers |
 | --- |--- |
-| **Expected outcome** | Source and target platforms are prepared for the large migration.People are ready to support the large migrationAll workstreams are set up. |
-| **Required skills** | Deep knowledge of on-premises data centers, including servers, storage, and networkingExperience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control TowerExperience with large data center or cloud migrationsExperience building a training planExperience building a cross-functional team |
+| **Expected outcome** | + Source and target platforms are prepared for the large migration.<br />+ People are ready to support the large migration<br />+ All workstreams are set up. |
+| **Required skills** | + Deep knowledge of on-premises data centers, including servers, storage, and networking<br />+ Experience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control Tower<br />+ Experience with large data center or cloud migrations<br />+ Experience building a training plan<br />+ Experience building a cross-functional team |
 
 ### Project governance workstream
 <a name="project-governance-workstream.353735a8-baef-5a03-8189-8e5063074db5"></a>
@@ -62,10 +62,10 @@ The project governance workstream manages the overall migration project and is r
 
 |  |
 | --- |
-| Common tasks | Kick off the projectSet up the governance modelSet up the Cloud Enablement Engine (CEE)Set up the communication planSet up the escalation planBuild RACI matricesSet up the project management frameworkSet up status reporting and project trackingSet up risk and issue trackingContinuously manage the project by using the predefined processes and tools  |
+| Common tasks | + Kick off the project<br />+ Set up the governance model<br />+ Set up the Cloud Enablement Engine (CEE)<br />+ Set up the communication plan<br />+ Set up the escalation plan<br />+ Build RACI matrices<br />+ Set up the project management framework<br />+ Set up status reporting and project tracking<br />+ Set up risk and issue tracking<br />+ Continuously manage the project by using the predefined processes and tools  |
 | --- |--- |
-| **Expected outcome** | Ensure that every workstream is able to complete their tasks on timeEnsure collaboration across workstreamsEnsure that the project achieves the defined business outcomesDeliver the project on budget and on time |
-| **Required skills** | Experience with common project management methodologies, such as waterfall, agile, Kanban, and scrumExperience with common project management tools, such as Jira, Microsoft Project, and ConfluenceExperience with large migration project management |
+| **Expected outcome** | + Ensure that every workstream is able to complete their tasks on time<br />+ Ensure collaboration across workstreams<br />+ Ensure that the project achieves the defined business outcomes<br />+ Deliver the project on budget and on time |
+| **Required skills** | + Experience with common project management methodologies, such as waterfall, agile, Kanban, and scrum<br />+ Experience with common project management tools, such as Jira, Microsoft Project, and Confluence<br />+ Experience with large migration project management |
 
 ### Portfolio workstream
 <a name="portfolio-workstream.b18dfedb-412c-5ca5-8f94-3501243cb799"></a>
@@ -74,10 +74,10 @@ The portfolio workstream manages all of the migration discovery activities, coll
 
 |  |
 | --- |
-| Common tasks | Validate the migration strategies and patternsComplete portfolio discovery by using discovery tools and configuration management database (CMDB)Define the required metadata, collection processes, and storage locationPrioritize applicationsPerform application deep dives, including dependency analysis and target state designPerform wave planningCollect migration metadata |
+| Common tasks | + Validate the migration strategies and patterns<br />+ Complete portfolio discovery by using discovery tools and configuration management database (CMDB)<br />+ Define the required metadata, collection processes, and storage location<br />+ Prioritize applications<br />+ Perform application deep dives, including dependency analysis and target state design<br />+ Perform wave planning<br />+ Collect migration metadata |
 | --- |--- |
-| **Expected outcome** | Continuously create wave plans and collect migration metadata, and then hand off to the migration workstream |
-| **Required skills** | Deep knowledge of on-premises CMDB, data repositories, and content management toolsExperience with common portfolio discovery tools, such as Flexera One and modelizeITExperience with portfolio assessment and application prioritizationExperience with application deep dives and application owner interviewsExperience with application designs for the AWS CloudExperience with wave planning for large migrationsExperience with automation, including shell scripting, Python, and Microsoft PowerShell |
+| **Expected outcome** | + Continuously create wave plans and collect migration metadata, and then hand off to the migration workstream |
+| **Required skills** | + Deep knowledge of on-premises CMDB, data repositories, and content management tools<br />+ Experience with common portfolio discovery tools, such as Flexera One and modelizeIT<br />+ Experience with portfolio assessment and application prioritization<br />+ Experience with application deep dives and application owner interviews<br />+ Experience with application designs for the AWS Cloud<br />+ Experience with wave planning for large migrations<br />+ Experience with automation, including shell scripting, Python, and Microsoft PowerShell |
 
 ### Migration workstream
 <a name="migration-workstream.6a92cf9c-ee51-511e-8ce6-b893b3d129a8"></a>
@@ -94,10 +94,10 @@ The migration workstream is generally the largest workstream in a large migratio
 
 |  |
 | --- |
-| Common tasks | Validate the migration wave plansBuild the migration runbooksUse AWS migration services to transfer data, such as AWS Application Migration Service (AWS MGN), AWS Database Migration Service (AWS DMS), and AWS DataSyncInstall and uninstall software on source and target servers as needed support the migrationWrite automation scripts to automate migration activitiesLaunch target AWS environments, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, for testing or cutoverWork with change management team for changes and cutoversPerform migration cutoverSupport application owners during application testingIf cutover fails, help roll back the server |
+| Common tasks | + Validate the migration wave plans<br />+ Build the migration runbooks<br />+ Use AWS migration services to transfer data, such as AWS Application Migration Service (AWS MGN), AWS Database Migration Service (AWS DMS), and AWS DataSync<br />+ Install and uninstall software on source and target servers as needed support the migration<br />+ Write automation scripts to automate migration activities<br />+ Launch target AWS environments, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, for testing or cutover<br />+ Work with change management team for changes and cutovers<br />+ Perform migration cutover<br />+ Support application owners during application testing<br />+ If cutover fails, help roll back the server |
 | --- |--- |
-| **Expected outcome** | Complete migration cutover and application go-live in target AWS accounts |
-| **Required skills** | Deep knowledge of on-premises data centers, including servers, storage, and networkingExperience with the AWS Cloud and knowledge of AWS compute services, including landing zone and AWS Control TowerExperience with AWS migration services, including Application Migration Service, AWS DMS, DataSync, and AWS Snow FamilyExperience with large data center or cloud migrations and cutoversExperience with automation, including shell scripting, Python, and Microsoft PowerShell |
+| **Expected outcome** | + Complete migration cutover and application go-live in target AWS accounts |
+| **Required skills** | + Deep knowledge of on-premises data centers, including servers, storage, and networking<br />+ Experience with the AWS Cloud and knowledge of AWS compute services, including landing zone and AWS Control Tower<br />+ Experience with AWS migration services, including Application Migration Service, AWS DMS, DataSync, and AWS Snow Family<br />+ Experience with large data center or cloud migrations and cutovers<br />+ Experience with automation, including shell scripting, Python, and Microsoft PowerShell |
 
 ## Supporting workstreams
 <a name="supporting-workstreams"></a>
@@ -132,10 +132,10 @@ The security and compliance workstream defines and builds the security standards
 
 |  |
 | --- |
-| Common tasks | Define the security requirements for the AWS landing zone, such as centralized logging, encryption, AWS Identity and Access Management (IAM) policies, and Active Directory integrationDefine the compliance requirements, such as HIPAA, personally identifiable information (PII), Service Organization Control (SOC), and Federal Risk and Authorization Management Program (FedRAMP)Define the security requirements for the migration, such as firewall, security group, and IAM role requirementsManage changes for security-related tasks, such as changes to firewalls, security groups, and permissions |
+| Common tasks | + Define the security requirements for the AWS landing zone, such as centralized logging, encryption, AWS Identity and Access Management (IAM) policies, and Active Directory integration<br />+ Define the compliance requirements, such as HIPAA, personally identifiable information (PII), Service Organization Control (SOC), and Federal Risk and Authorization Management Program (FedRAMP)<br />+ Define the security requirements for the migration, such as firewall, security group, and IAM role requirements<br />+ Manage changes for security-related tasks, such as changes to firewalls, security groups, and permissions |
 | --- |--- |
-| **Expected outcome** | Complete migration cutover and application go-live in target AWS accounts |
-| **Required skills** | Deep knowledge of on-premises data centers, including servers, storage, and networkingDeep knowledge of the specialized workload in scopeExperience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control TowerExperience with AWS migration tools, including Application Migration Service, AWS DMS, DataSync, and AWS Snow FamilyExperience with large data center or cloud migrations and cutovers |
+| **Expected outcome** | + Complete migration cutover and application go-live in target AWS accounts |
+| **Required skills** | + Deep knowledge of on-premises data centers, including servers, storage, and networking<br />+ Deep knowledge of the specialized workload in scope<br />+ Experience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control Tower<br />+ Experience with AWS migration tools, including Application Migration Service, AWS DMS, DataSync, and AWS Snow Family<br />+ Experience with large data center or cloud migrations and cutovers |
 
 ### Cloud operations workstream
 <a name="cloud-operations-workstream.b41411c7-662b-5384-be36-7c7b4c5b4151"></a>
@@ -144,10 +144,10 @@ The cloud operations workstream supports the applications after migration cutove
 
 |  |
 | --- |
-| Common tasks | Monitor and back up the migrated servers and applicationsManage the business-as-usual service requests from the application teams, such as increasing the disk size or changing instance typesResolve any application issues and outages as neededManage the patching policies and schedulesManage the maintenance tasks and requests |
+| Common tasks | + Monitor and back up the migrated servers and applications<br />+ Manage the business-as-usual service requests from the application teams, such as increasing the disk size or changing instance types<br />+ Resolve any application issues and outages as needed<br />+ Manage the patching policies and schedules<br />+ Manage the maintenance tasks and requests |
 | --- |--- |
-| **Expected outcome** | Migrated servers and applications are running smoothly on AWSRespond to service requests from users and resolve any issues |
-| **Required skills** | Deep understanding of how the on-premises data center currently operatesExperience with common AWS operations services, such as Amazon CloudWatch, AWS Config, AWS CloudTrail, AWS Backup, AWS SupportExperience with troubleshooting, and understands the SLAExperience with supporting large migrations |
+| **Expected outcome** | + Migrated servers and applications are running smoothly on AWS<br />+ Respond to service requests from users and resolve any issues |
+| **Required skills** | + Deep understanding of how the on-premises data center currently operates<br />+ Experience with common AWS operations services, such as Amazon CloudWatch, AWS Config, AWS CloudTrail, AWS Backup, AWS Support<br />+ Experience with troubleshooting, and understands the SLA<br />+ Experience with supporting large migrations |
 
 ### Application testing workstream
 <a name="application-testing-workstream.2f86210c-fca9-5244-99d6-c538780673b5"></a>
@@ -156,10 +156,10 @@ The application testing workstream supports application testing before and durin
 
 |  |
 | --- |
-| Common tasks | Perform application testing before the cutoverPerform application testing during the cutoverMake application changes as needed to work in the new environmentMake a go or no-go decision for applications based on testing results during cutover |
+| Common tasks | + Perform application testing before the cutover<br />+ Perform application testing during the cutover<br />+ Make application changes as needed to work in the new environment<br />+ Make a go or no-go decision for applications based on testing results during cutover |
 | --- |--- |
-| **Expected outcome** | Complete application testing on time during cutoverMake application changes as needed to support the target environment |
-| **Required skills** | Deep knowledge of the applications and how they operate on premisesExperience with the AWS Cloud, especially the target AWS servicesExperience with large migrations |
+| **Expected outcome** | + Complete application testing on time during cutover<br />+ Make application changes as needed to support the target environment |
+| **Required skills** | + Deep knowledge of the applications and how they operate on premises<br />+ Experience with the AWS Cloud, especially the target AWS services<br />+ Experience with large migrations |
 
 ### Migration workstream for a specialized workload
 <a name="migration-workstream-for-a-specialized-workload.96b440eb-ee07-5b1c-b6d3-22db73891738"></a>
@@ -168,7 +168,7 @@ You can create a migration workstream that is dedicated to specialized workloads
 
 |  |
 | --- |
-| Common tasks | Validate the migration wave plansBuild migration runbooksUse migration tools or native application tools to transfer dataLaunch target AWS environments, such as EC2 instances, for testing or cutoverWork with the change management team for changes and cutoversPerform migration cutoverSupport application owners during application testingIf cutover fails, roll back the application or server |
+| Common tasks | + Validate the migration wave plans<br />+ Build migration runbooks<br />+ Use migration tools or native application tools to transfer data<br />+ Launch target AWS environments, such as EC2 instances, for testing or cutover<br />+ Work with the change management team for changes and cutovers<br />+ Perform migration cutover<br />+ Support application owners during application testing<br />+ If cutover fails, roll back the application or server |
 | --- |--- |
-| **Expected outcome** | Complete migration cutover and application go-live in target AWS accounts |
-| **Required skills** | Deep knowledge of on-premises data centers, including servers, storage, and networkingDeep knowledge of the specialized workload in scopeExperience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control TowerExperience with AWS migration tools, including Application Migration Service, AWS DMS, DataSync, and AWS Snow FamilyExperience with large data center or cloud migrations and cutoversExperience with migrating the specialized workload |
+| **Expected outcome** | + Complete migration cutover and application go-live in target AWS accounts |
+| **Required skills** | + Deep knowledge of on-premises data centers, including servers, storage, and networking<br />+ Deep knowledge of the specialized workload in scope<br />+ Experience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control Tower<br />+ Experience with AWS migration tools, including Application Migration Service, AWS DMS, DataSync, and AWS Snow Family<br />+ Experience with large data center or cloud migrations and cutovers<br />+ Experience with migrating the specialized workload |

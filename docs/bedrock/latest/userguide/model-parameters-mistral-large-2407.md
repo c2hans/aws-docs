@@ -19,7 +19,7 @@ Mistral AI models are available under the [Apache 2.0 license](https://www.apach
 ## Supported models
 <a name="mistral-supported-models-chat-completion"></a>
 
-You can use following Mistral AI models with the code examples on this page..
+You can use the following Mistral AI models with the code examples on this page.
 + Mistral Large 2 (24.07)
 
 You need the model ID for the model that you want to use. To get the model ID, see [Supported foundation models in Amazon Bedrock](models-supported.md).

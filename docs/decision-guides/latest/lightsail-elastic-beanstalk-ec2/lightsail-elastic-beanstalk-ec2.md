@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic
 | --- |--- |
 | **Purpose** | To explore whether Amazon Lightsail, AWS Elastic Beanstalk, or Amazon EC2 meets your needs for a cloud platform or compute web service. |
 | **Last updated** | February 17, 2025 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/lightsail-elastic-beanstalk-ec2/lightsail-elastic-beanstalk-ec2.html)  |
+| **Covered services** |  +  [Amazon Lightsail](https://docs.aws.amazon.com/lightsail/latest/userguide/what-is-amazon-lightsail.html) <br />+  [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html) <br />+  [Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)   |
 
 ## Introduction
 <a name="introduction"></a>

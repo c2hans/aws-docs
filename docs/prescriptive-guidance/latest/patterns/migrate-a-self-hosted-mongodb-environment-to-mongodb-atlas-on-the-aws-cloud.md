@@ -116,7 +116,7 @@ For best practices for using MongoDB on AWS, see the posts on the [AWS Partner N
 
 | Issue | Solution |
 | --- | --- |
-| Error: Could not reach specified source | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-a-self-hosted-mongodb-environment-to-mongodb-atlas-on-the-aws-cloud.html) |
+| Error: Could not reach specified source | + Make sure that you added the correct subnet ranges to the IP access list on the source cluster. You can find the four required subnet ranges in the Live Migration modal window.<br />+ Confirm that the hostname that you specified resolves to a public IP address. At a command prompt, use one of the following commands:<pre>nslookup <hostname><br />ping <hostname></pre><br />+ Make sure that you are not using a [VPC peering connection](https://www.mongodb.com/docs/atlas/security-vpc-peering/), which isn’t compatible with pull live migration. If a VPC peering connection is your only option, use `mongomirror` instead. |
 | Error: Could not resolve hostname | No IP address was found for the given hostname. Confirm that the given hostname is correct and publicly accessible. |
 | Any other error | If you encounter any other errors, see [Troubleshoot Live Migration (Pull)](https://www.mongodb.com/docs/atlas/import/live-import-troubleshooting/) in the MongoDB documentation. |
 

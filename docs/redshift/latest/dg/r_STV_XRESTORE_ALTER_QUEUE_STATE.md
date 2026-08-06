@@ -23,8 +23,8 @@ Some or all of the data in this table can also be found in the SYS monitoring vi
 | schema | char(128) | The name of the schema. |
 | table\_name | char(128) | The name of the table. |
 | tbl | integer | The ID of the table. |
-| status | char(64) | The status of the migration progress of the table. Possible values are as follows. [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STV_XRESTORE_ALTER_QUEUE_STATE.html)  |
-| task\_type | integer | The redistribution type for the table. Possible values are as follows. [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STV_XRESTORE_ALTER_QUEUE_STATE.html) For more information about distribution styles, see [Distribution styles](c_choosing_dist_sort.md).  |
+| status | char(64) | The status of the migration progress of the table. Possible values are as follows. + `Waiting`: Waiting for redistribution to start<br />+ `Applying`: Currently redistributing<br />+ `Finished`: Finished redistributing  |
+| task\_type | integer | The redistribution type for the table. Possible values are as follows. + `1`: KEY<br />+ `2`: EVEN For more information about distribution styles, see [Distribution styles](c_choosing_dist_sort.md).  |
 
 ## Sample query
 <a name="r_STV_XRESTORE_ALTER_QUEUE_STATE-sample-queries"></a>

@@ -36,6 +36,7 @@ Content-type: application/json
          "ExcludedDataSetArns": [ "{{string}}" ],
          "QBusinessInsightsStatus": "{{string}}",
          "Timezone": "{{string}}",
+         "VisualMessages": { ... },
          "WeekStart": "{{string}}"
       },
       "ParameterDeclarations": [
@@ -51,6 +52,9 @@ Content-type: application/json
          { ... }
       ],
       "TooltipSheets": [
+         { ... }
+      ],
+      "TopicIdentifierDeclarations": [
          { ... }
       ]
    },
@@ -95,6 +99,12 @@ Content-type: application/json
             {
                "DataSetArn": "{{string}}",
                "DataSetPlaceholder": "{{string}}"
+            }
+         ],
+         "TopicReferences": [
+            {
+               "TopicArn": "{{string}}",
+               "TopicPlaceholder": "{{string}}"
             }
          ]
       }
@@ -166,7 +176,7 @@ Array Members: Minimum number of 1 item. Maximum number of 64 items.
 Required: No
 
  ** [SourceEntity](#API_CreateAnalysis_RequestSyntax) **   <a name="QS-CreateAnalysis-request-SourceEntity"></a>
-A source entity to use for the analysis that you're creating. This metadata structure contains details that describe a source template and one or more datasets.
+A source entity to use for the analysis that you're creating. This metadata structure contains details that describe a source template and one or more datasets or topics.
 Either a `SourceEntity` or a `Definition` must be provided in order for the request to be valid.
 Type: [AnalysisSourceEntity](API_AnalysisSourceEntity.md) object
 Required: No

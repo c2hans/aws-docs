@@ -23,7 +23,7 @@ Your HLS input must conform to the following requirements:
 | HLS manifest `EXT-X-PLAYLIST-TYPE: VOD` | Include `EXT-X-ENDLIST` or `EXT-X-PLAYLIST-TYPE: VOD` in your input manifest.<br />Manifest files must not change after you submit your job. |
 | HLS manifest EXT-X-BYTERANGE | If present, the start of the first subrange must be 0 and the following subrange segments must continue the former one. |
 | HLS manifest EXT-X-KEY | If present, `EXT-X-KEY: METHOD` must be set to `NONE`.<br />MediaConvert does not support HLS encrypted inputs. |
-| HLS manifest ignored tags | MediaConvert ignores the following tags:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/using-hls-inputs.html) |
+| HLS manifest ignored tags | MediaConvert ignores the following tags:+  `EXT-X-PROGRAM-DATE-TIME` <br />+  `EXT-X-DATERANGE` <br />+  `EXT-X-I-FRAMES-ONLY` <br />+  `EXT-X-I-FRAME-STREAM-INF` <br />+  `EXT-X-SESSION-DATA` <br />+  `EXT-X-SESSION-KEY` <br />+  `EXT-X-INDEPENDENT-SEGMENTS` <br />+  `EXT-X-START`  |
 | Discontinuities | If present, any discontinuities must start at the beginning of a segment.<br />MediaConvertdoes not support input discontinuites in the subrange of a segment. |
 | Accelerated transcoding requirements | EXTINF duration must be specified using a decimal floating-point, with enough accuracy to avoid perceptible errors when segment durations are accumulated. |
 

@@ -116,7 +116,27 @@ Required: Yes
             "KMSMasterKeyId": "string",
             "SSEType": "string"
          },
-         "TableName": "string"
+         "TableName": "string",
+         "VectorIndexes": [
+            {
+               "Dimensions": number,
+               "DistanceFunction": "string",
+               "IndexName": "string",
+               "Projection": {
+                  "NonKeyAttributes": [ "string" ],
+                  "ProjectionType": "string"
+               },
+               "SearchSchema": [
+                  {
+                     "AttributeName": "string",
+                     "SearchSchemaElementType": "string"
+                  }
+               ],
+               "VectorAttribute": {
+                  "AttributeName": "string"
+               }
+            }
+         ]
       },
       "TableId": "string"
    }

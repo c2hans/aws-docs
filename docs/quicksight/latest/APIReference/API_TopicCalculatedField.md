@@ -40,13 +40,13 @@ Required: No
  ** CalculatedFieldDescription **   <a name="QS-Type-TopicCalculatedField-CalculatedFieldDescription"></a>
 The calculated field description.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 500.
 Required: No
 
  ** CalculatedFieldSynonyms **   <a name="QS-Type-TopicCalculatedField-CalculatedFieldSynonyms"></a>
 The other names or aliases for the calculated field.
 Type: Array of strings
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** CellValueSynonyms **   <a name="QS-Type-TopicCalculatedField-CellValueSynonyms"></a>

@@ -175,4 +175,4 @@ The following tables describe quotas in AWS IoT Greengrass V2. For more informat
 | Resource | Quota | Adjustable | Notes |
 | --- | --- | --- | --- |
 | Request rate for CreateComponentVersion | 1 request per second per Region | No |  |
-| Request rate for other API operations | 30 requests per second per Region | No | This quota applies to the combination of API requests for all control plane operations.[See the AWS documentation website for more details](http://docs.aws.amazon.com/general/latest/gr/greengrassv2.html) |
+| Request rate for other API operations | 30 requests per second per Region | No | This quota applies to the combination of API requests for all control plane operations.+  China (Beijing) – 10 requests per second per Region <br />+  AWS GovCloud (US-West) – 10 requests per second per Region <br />+  AWS GovCloud (US-East) – 10 requests per second per Region  |

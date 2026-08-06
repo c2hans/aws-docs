@@ -195,27 +195,27 @@ This metadata is in JSON format. It comprises the following information:
 | --- | --- | --- | --- |
 | `stage_arn` | string | Yes | ARN of the stage being used as the source of the composition. |
 | `media` | object | Yes | Object that contains the enumerated objects of media content available for this recording. Valid values: `"hls"`. |
-| [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html) | object | Yes | Enumerated field that describes the Apple HLS format output. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | integer | Conditional | Duration of the recorded HLS content in milliseconds. This is available only when `recording_status` is `"RECORDING_ENDED"` or `"RECORDING_ENDED_WITH_FAILURE"`. If a failure occurred before any recording was done, this is 0. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Relative path from the S3 prefix where HLS content is stored. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Name of the HLS master playlist file. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | object | Yes | Array of renditions (HLS variant) of metadata objects. There always is at least one rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Relative path from the S3 prefix where HLS content is stored for this rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Name of the media playlist file for this rendition. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | int | Conditional | Pixel resolution height of the encoded video. This is available only when the rendition contains a video track. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | int | Conditional | Pixel resolution width of the encoded video. This is available only when the rendition contains a video track. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `SEQUENTIAL` |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Relative path from the S3 prefix where sequential thumbnail content is stored. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | object | Yes | Array of resolutions (thumbnail variants) of metadata objects. There always is at least one resolution. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Relative path from the S3 prefix where thumbnail content is stored for this resolution. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | int | Yes | Pixel resolution height of the thumbnails. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | int | Yes | Pixel resolution width of the thumbnails. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `LATEST`. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Relative path from the S3 prefix where `latest_thumbnail` is stored. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | object | Yes | Array of resolutions (thumbnail variants) of metadata objects. There always is at least one resolution. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | string | Yes | Relative path from the S3 prefix where the latest thumbnail is stored for this resolution. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | int | Yes | Pixel resolution height of the latest thumbnail. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-composite-recording.html)  | int | Yes | Pixel resolution width of the latest thumbnail. |
+| +  `hls`  | object | Yes | Enumerated field that describes the Apple HLS format output. |
+|  +    `duration_ms`     | integer | Conditional | Duration of the recorded HLS content in milliseconds. This is available only when `recording_status` is `"RECORDING_ENDED"` or `"RECORDING_ENDED_WITH_FAILURE"`. If a failure occurred before any recording was done, this is 0. |
+|  +    `path`     | string | Yes | Relative path from the S3 prefix where HLS content is stored. |
+|  +    `playlist`     | string | Yes | Name of the HLS master playlist file. |
+|  +    `renditions`     | object | Yes | Array of renditions (HLS variant) of metadata objects. There always is at least one rendition. |
+|  +      `path`       | string | Yes | Relative path from the S3 prefix where HLS content is stored for this rendition. |
+|  +      `playlist`       | string | Yes | Name of the media playlist file for this rendition. |
+|  +      `resolution_height`       | int | Conditional | Pixel resolution height of the encoded video. This is available only when the rendition contains a video track. |
+|  +      `resolution_width`       | int | Conditional | Pixel resolution width of the encoded video. This is available only when the rendition contains a video track. |
+|  +  `thumbnails`   | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `SEQUENTIAL` |
+|  +    `path`     | string | Yes | Relative path from the S3 prefix where sequential thumbnail content is stored. |
+|  +    `resolutions`     | object | Yes | Array of resolutions (thumbnail variants) of metadata objects. There always is at least one resolution. |
+|  +      `path`       | string | Yes | Relative path from the S3 prefix where thumbnail content is stored for this resolution. |
+|  +      `resolution_height`       | int | Yes | Pixel resolution height of the thumbnails. |
+|  +      `resolution_width`       | int | Yes | Pixel resolution width of the thumbnails. |
+|  +  `latest_thumbnail`   | object | Conditional | Enumerated field that describes thumbnails output. This is available only when the thumbnail configuration’s `storage` field includes `LATEST`. |
+|  +    `path`     | string | Yes | Relative path from the S3 prefix where `latest_thumbnail` is stored. |
+|  +    `resolutions`     | object | Yes | Array of resolutions (thumbnail variants) of metadata objects. There always is at least one resolution. |
+|  +      `path`       | string | Yes | Relative path from the S3 prefix where the latest thumbnail is stored for this resolution. |
+|  +      `resolution_height`       | int | Yes | Pixel resolution height of the latest thumbnail. |
+|  +      `resolution_width`       | int | Yes | Pixel resolution width of the latest thumbnail. |
 | `recording_ended_at` | string | Conditional | RFC 3339 UTC timestamp when the recording ended. This is available only when `recording_status` is `"RECORDING_ENDED"` or `"RECORDING_ENDED_WITH_FAILURE"`.<br />`recording_started_at` and `recording_ended_at` are timestamps when these events are generated and may not exactly match the HLS video-segment timestamps. To accurately determine the duration of a recording, use the `duration_ms` field. |
 | `recording_started_at` | string | Conditional | RFC 3339 UTC timestamp when the recording started. This is unavailable when `recording_status` is `RECORDING_START_FAILED`.<br />See the note above for `recording_ended_at`. |
 | `recording_status` | string | Yes | Status of the recording. Valid values: `"RECORDING_STARTED"`, `"RECORDING_ENDED"`, `"RECORDING_START_FAILED"`, `"RECORDING_ENDED_WITH_FAILURE"`. |

@@ -40,12 +40,12 @@ The predefined roles for SVM administrators and their capabilities are as follow
 
 | Role name | Capabilities |
 | --- | --- |
-| `vsadmin` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html)  |
-| `vsadmin-volume` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html)  |
-| `vsadmin-protocol` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html)  |
-| `vsadmin-backup` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html)  |
-| `vsadmin-snaplock` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html)  |
-| `vsadmin-readonly` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html)  |
+| `vsadmin` |  + Manage your user account, local password, and key information<br />+ Manage volumes, except for volume moves<br />+ Manage quotas, qtrees, Snapshot copies, and files<br />+ Manage LUNs<br />+ Perform SnapLock operations, except for privileged delete<br />+ Configure protocols: NFS, SMB, and iSCSI<br />+ Configure services: DNS, LDAP, and NIS<br />+ Monitor jobs<br />+ Monitor network connections and the network interface<br />+ Monitor the health of the SVM  |
+| `vsadmin-volume` |  + Manage your user account, local password, and key information<br />+ Manage volumes, including volume moves<br />+ Manage quotas, qtrees, Snapshot copies, and files<br />+ Manage LUNs<br />+ Configure protocols: NFS, SMB, and iSCSI<br />+ Configure services: DNS, LDAP, and NIS<br />+ Monitor the network interface<br />+ Monitor the health of the SVM  |
+| `vsadmin-protocol` |  + Manage your user account, local password, and key information<br />+ Manage LUNs<br />+ Configure protocols: NFS, SMB, and iSCSI<br />+ Configure services: DNS, LDAP, and NIS<br />+ Monitor network interface<br />+ Monitor the health of the SVM  |
+| `vsadmin-backup` |  + Manage your user account, local password, and key information<br />+ Manage NDMP operations<br />+ Make a restored volume read/write<br />+ Manage SnapMirror relationships and Snapshot copies<br />+ View volumes and network information  |
+| `vsadmin-snaplock` |  + Manage your user account, local password, and key information<br />+ Manage volumes, except for volume moves<br />+ Manage quotas, qtrees, Snapshot copies, and files<br />+ Perform SnapLock operations, including privileged delete<br />+ Configure protocols: NFS and SMB<br />+ Configure services: DNS, LDAP, and NIS<br />+ Monitor jobs<br />+ Monitor network connections and the network interface  |
+| `vsadmin-readonly` |  + Manage your user account, local password, and key information<br />+ Monitor the health of the SVM<br />+ Monitor the network interface<br />+ View volumes and LUNs<br />+ View services and protocols  |
 
 For more information on how to create a new SVM role, see [Creating SVM roles](creating-new-svm-roles.md).
 

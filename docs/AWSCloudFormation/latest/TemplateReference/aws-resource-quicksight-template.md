@@ -94,7 +94,7 @@ A list of resource permissions to be set on the template.
 
 `SourceEntity`  <a name="cfn-quicksight-template-sourceentity"></a>
 The entity that you are using as a source when you create the template. In `SourceEntity`, you specify the type of object you're using as source: `SourceTemplate` for a template or `SourceAnalysis` for an analysis. Both of these require an Amazon Resource Name (ARN). For `SourceTemplate`, specify the ARN of the source template. For `SourceAnalysis`, specify the ARN of the source analysis. The `SourceTemplate` ARN can contain any AWS account and any Quick Sight-supported AWS Region.
-Use the `DataSetReferences` entity within `SourceTemplate` or `SourceAnalysis` to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder.
+Use the `DataSetReferences` entity within `SourceTemplate` or `SourceAnalysis` to list the replacement datasets for the placeholders listed in the original. The schema in each dataset must match its placeholder. Use the `TopicReferences` entity to list the replacement topics for the topic placeholders listed in the original. The schema in each topic must match its placeholder.
 Either a `SourceEntity` or a `Definition` must be provided in order for the request to be valid.
 *Required*: No
 *Type*: [TemplateSourceEntity](aws-properties-quicksight-template-templatesourceentity.md)

@@ -23,9 +23,9 @@ SYS\_VACUUM\_HISTORY is visible to all users. Superusers can see all rows; regul
 | schema\_name | text | The name of the schema. |
 | table\_name | text | The name of the table. |
 | table\_id | integer | The ID of the table. |
-| vacuum\_type | character | The type of the VACUUM operation. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_VACUUM_HISTORY.html)For more information on vacuum types, see [VACUUM](r_VACUUM_command.md).  |
+| vacuum\_type | character | The type of the VACUUM operation. Possible values are as follows:+  **Delete** <br />+  **Sort** <br />+  **Reindex** <br />+  **Recluster** <br />+  **Full** For more information on vacuum types, see [VACUUM](r_VACUUM_command.md).  |
 | is\_automatic | boolean | true if the operation is an automatic vacuum. Otherwise, false. |
-| status | character | Description of the current activity being done as part of the vacuum operation: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_VACUUM_HISTORY.html) |
+| status | character | Description of the current activity being done as part of the vacuum operation: +  Initialize <br />+  Sort <br />+  Merge <br />+  Delete <br />+  Select <br />+  Failed <br />+  Complete <br />+  Skipped <br />+  Building INTERLEAVED SORTKEY order  |
 | start\_time | timestamp | The time the vacuum operation started. |
 | end\_time | timestamp | The time the vacuum operation ended. If the operation is ongoing, this field is blank. |
 | record\_time | timestamp | The time the vacuum operation was recorded in SYS\_VACUUM\_HISTORY. |

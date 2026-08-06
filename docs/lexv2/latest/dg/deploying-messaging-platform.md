@@ -16,4 +16,4 @@ When a messaging platform sends a request to Amazon Lex V2 it includes platform-
 
 | Attribute | Description |
 | --- | --- |
-| x-amz-lex:channels:platform | One of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/deploying-messaging-platform.html) |
+| x-amz-lex:channels:platform | One of the following values:+  `Facebook` <br />+  `Slack` <br />+  `Twilio`  |

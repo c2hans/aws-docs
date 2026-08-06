@@ -27,8 +27,8 @@ CloudWatch is the central monitoring hub that provides performance metrics and l
 |
 | Aspect | VMware | AWS |
 | --- |--- |--- |
-| Performance monitoring | Third-party tool integrationvCenter monitoring vSAN performance serviceVMware Aria Operations for Logs | CloudWatch metricsEBS volume performance insightsEFS performance metricsS3 analytics |
-| Metrics tracking | Disk group activityIOPSLatencyNetwork throughput | Burst creditsLatencyRead and write IOPSStorage utilizationThroughput |
+| Performance monitoring | + Third-party tool integration<br />+ vCenter monitoring vSAN performance service<br />+ VMware Aria Operations for Logs | + CloudWatch metrics<br />+ EBS volume performance insights<br />+ EFS performance metrics<br />+ S3 analytics |
+| Metrics tracking | + Disk group activity<br />+ IOPS<br />+ Latency<br />+ Network throughput | + Burst credits<br />+ Latency<br />+ Read and write IOPS<br />+ Storage utilization<br />+ Throughput |
 
 **AWS storage optimizing and metrics**
 

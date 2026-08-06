@@ -25,6 +25,6 @@ Use the following steps to validate that VPC endpoint configuration for your res
 
 1. Under the **Inbound rules** tab, ensure that there is an ingress policy with **Port range** as **443** and **Source** as the value copied from the **IPv4 CIDR**. Inbound rules control the incoming traffic that is allowed to reach the instance. The following image shows the inbound rules for a security group that is associated with the VPC used by the GuardDuty security agent.
 
-   If you don't already have a security group that has an in-bound port 443 enabled, [Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#creating-security-group) in the *Amazon EC2 User Guide*.
+   If you don't already have a security group that has an inbound port 443 enabled, [Create a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#creating-security-group) in the *Amazon EC2 User Guide*.
 
-   If there is an issue while restricting the in-bound permissions to your VPC (or cluster), allow inbound traffic on port 443 from any IP address (0.0.0.0/0).
+   If there is an issue while restricting the inbound permissions to your VPC (or cluster), allow inbound traffic on port 443 from any IP address (0.0.0.0/0).

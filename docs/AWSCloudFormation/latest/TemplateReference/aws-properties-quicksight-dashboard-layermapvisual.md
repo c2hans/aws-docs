@@ -53,7 +53,7 @@ The configuration settings of the visual.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `DataSetIdentifier`  <a name="cfn-quicksight-dashboard-layermapvisual-datasetidentifier"></a>
-The dataset that is used to create the layer map visual. You can't create a visual without a dataset.
+The dataset that is used to create the layer map visual. You can't create a visual without a dataset or a topic.
 *Required*: Yes
 *Type*: String
 *Minimum*: `1`

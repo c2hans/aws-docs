@@ -109,8 +109,8 @@ For AWS KMS, the following quotas apply for `Decrypt`. For details, see [ Reques
 
 | Quota name | Default value (requests per second) |
 | --- | --- |
-| Cryptographic operations (symmetric) request rate | These shared quotas vary with the AWS Region and the type of AWS KMS key used in the request. Each quota is calculated separately.[See the AWS documentation website for more details](http://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html) |
-| Custom key store request quotas This quota only applies if you are using an external key store.  | Custom key store request quotas are calculated separately for each custom key store.[See the AWS documentation website for more details](http://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html) |
+| Cryptographic operations (symmetric) request rate | These shared quotas vary with the AWS Region and the type of AWS KMS key used in the request. Each quota is calculated separately.+  5,500 (shared) <br />+  10,000 (shared) in the following Regions:   US East (Ohio), us-east-2   Asia Pacific (Singapore), ap-southeast-1   Asia Pacific (Sydney), ap-southeast-2   Asia Pacific (Tokyo), ap-northeast-1   Europe (Frankfurt), eu-central-1   Europe (London), eu-west-2   <br />+  50,000 (shared) in the following Regions:   US East (N. Virginia), us-east-1   US West (Oregon), us-west-2   Europe (Ireland), eu-west-1    |
+| Custom key store request quotas This quota only applies if you are using an external key store.  | Custom key store request quotas are calculated separately for each custom key store.+  1,800 (shared) for each AWS CloudHSM key store <br />+  1,800 (shared) for each external key store  |
 
 ### Known limitations
 <a name="as2-known-limitations"></a>

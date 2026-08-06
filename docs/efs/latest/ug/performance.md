@@ -143,10 +143,10 @@ File systems larger than 1 TiB can always burst for up to 50 percent of the time
 
 | File system size | Burst throughput | Baseline throughput |
 | --- | --- | --- |
-| 100 GiB of metered data in Standard storage |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |
-| 1 TiB of metered data in Standard storage |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |
-| 10 TiB of metered data in Standard storage |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |
-| Generally, larger file systems |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/performance.html)  |
+| 100 GiB of metered data in Standard storage |  +  Burst to 300 (MiBps) read-only for up to 72 minutes per day, or <br />+  Burst to 100 MiBps write-only for up to 72 minutes per day   |  +  Drive up to 15 MiBps read-only continuously <br />+  Drive up to 5 MiBps write-only continuously   |
+| 1 TiB of metered data in Standard storage |  +  Burst to 300 MiBps read-only for 12 hours per day, or <br />+  Burst to 100 MiBps write-only for 12 hours per day   |  +  Drive 150 MiBps read-only continuously <br />+  Drive 50 MiBps write-only continuously   |
+| 10 TiB of metered data in Standard storage |  +  Burst to 3 GiBps read-only for 12 hours per day, or <br />+  Burst to 1 GiBps write-only for 12 hours per day   |  +  Drive 1.5 GiBps read-only continuously <br />+  Drive 500 MiBps write-only continuously   |
+| Generally, larger file systems |  +  Burst to 300 MiBps read-only per TiB of storage for 12 hours per day, or <br />+  Burst to 100 MiBps write-only per TiB of storage for 12 hours per day   |  +  Drive 150 MiBps read-only per TiB of storage continuously <br />+  Drive 50 MiBps write-only per TiB of storage continuously   |
 
 **Note**
 Amazon EFS provides a metered throughput of 1 MiBps to all file systems, even if the baseline rate is lower.

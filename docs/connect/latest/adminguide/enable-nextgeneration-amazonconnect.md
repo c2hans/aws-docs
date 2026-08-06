@@ -17,6 +17,7 @@ Connect Customer is an AI-native solution that helps companies of any scale deli
 
 Connect Customer embeds AI at every stage of the customer journey. The following capabilities are included with Connect Customer.
 + **End-customer self-service** — agentic voice and agentic chat powered by AI agents
++ **Generative speech** — Amazon Polly generative voices and third-party speech-to-text (STT) and text-to-speech (TTS) model configuration
 + **Real-time agent assistance** — AI-powered recommendations and next-best-action guidance during live conversations
 + **Conversational analytics and post-contact summaries** — sentiment analysis, theme detection, and automated summaries across voice, chat, messaging, and email
 + **AI-powered case summarization** — automatically generated case summaries to accelerate resolution
@@ -24,8 +25,7 @@ Connect Customer embeds AI at every stage of the customer journey. The following
 + **Forecasting and agent scheduling** — predict contact volumes and optimize agent schedules
 + **Flow designer analytics** — insights into contact flow performance
 + **Custom metrics in dashboards and APIs** — build tailored views of contact center performance
-+ **Generative speech** — Amazon Polly generative voices and third-party speech-to-text (STT) and text-to-speech (TTS) model configuration
-+ **Customer first callbacks** — let customers request a callback instead of waiting on hold
++ **Customer-first callbacks** — dials the customer first and only offers the callback to an agent if the customer answers the call
 
 ## Updating existing Connect Customer instances
 <a name="how-to-enable-ac"></a>
@@ -49,15 +49,37 @@ If your Connect Customer instance was created before Connect Customer was availa
 ## How to switch to Customer Basic
 <a name="how-to-disable-ac"></a>
 
-Connect Customer Basic does not include all the AI capabilities available in Connect Customer. If you move to Connect Customer Basic, some capabilities you are using today may no longer be available, including:
-+ Conversational analytics for email
-+ AI-powered case summarization
-+ Performance evaluations of self-service interactions
-+ Flow designer analytics
-+ Custom metrics in dashboards and APIs
-+ Agentic voice with Amazon Nova Sonic
-+ Third-party speech-to-text (STT) and text-to-speech (TTS) model configuration
-+ Customer first callbacks
+Connect Customer Basic does not include all the AI capabilities available in Connect Customer. If you switch to Connect Customer Basic, some capabilities you are using today may no longer be available, including:
++ Agentic customer experience designer (ACXD)
+  + No-code visual canvas
+  + Blended AI logic - agentic AI reasoning and deterministic AI
+  + Live sync of web or mobile app during live voice or chat
++ [Agentic voice](agentic-voice.md)
+  + 50\+ languages
+  + 100\+ voices
+  + Third-party speech-to-text (STT) and text-to-speech (TTS) model support
++ [AI agent observability](monitor-ai-agent-performance.md)
+  + Out-of-the-box AI agent performance metrics evaluated using LLM-as-a-judge
++ [AI assistant for natural language configuration](connect-assistant-ui-builder.md)
+  + Step-by-step guides
+  + Workspace pages
++ Queue management
+  + [Contact estimated wait time](get-queue-metrics.md#get-metrics-tips)
+  + [Customer-first callbacks](customer-first-cb.md)
++ [Conversational analytics](analyze-conversations.md)
+  + Email conversational analytics, including:
+    + Sensitive data redaction
+    + Summarization
+    + Categorization
+    + Rules-based actions
+  + Case summarization
+  + Information extraction
+    + Rules-based information extraction for voice and chat contacts
++ [Performance evaluations](evaluations.md)
+  + Self-service interaction evaluations
+  + AI agent performance evaluations
++ [Flow designer analytics](monitor-flow-performance.md)
++ [Custom metrics in dashboards and APIs](custom-metrics-topic.md)
 
 **Warning**
 If these features are configured in contact flows, you may encounter runtime errors.

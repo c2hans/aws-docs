@@ -154,7 +154,7 @@ SELECT aws_s3.table_import_from_s3('test_gzip', '',
 | table\_name | A required text string containing the name of the PostgreSQL database table to import the data into. |
 | column\_list | A required text string containing an optional list of the PostgreSQL database table columns in which to copy the data. If the string is empty, all columns of the table are used. |
 | options | A required text string containing arguments for the PostgreSQL `COPY` command.<br />For more information, see [COPY](https://www.postgresql.org/docs/current/sql-copy.html) in the *PostgreSQL documentation*. |
-| s3\_info | An `aws_commons._s3_uri_1` composite type containing the following information about the Amazon S3 object:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-postgresql-migration-playbook/chap-oracle-aurora-pg.special.external.html) |
+| s3\_info | An `aws_commons._s3_uri_1` composite type containing the following information about the Amazon S3 object:+   `bucket` — The name of the Amazon S3 bucket containing the file. <br />+   `file_path` — The Amazon S3 file name including the path of the file. <br />+   `region` — The AWS Region that the file is in. For a listing of AWS Region names and associated values.  |
 | credentials | The credentials parameter specifies the credentials to access Amazon S3. When you use this parameter, you don’t use an IAM role. |
 
 For more information, see [Importing data into PostgreSQL on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Procedural.Importing.html) in the *Amazon RDS user guide*.

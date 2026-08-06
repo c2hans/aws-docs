@@ -15,7 +15,7 @@ These metrics are published in the metric namespace named `AWS/RUM`. All of the 
 
 | Metric | Unit | Description |
 | --- | --- | --- |
-| `HttpStatusCodeCount` | Count | The count of HTTP responses in the application, by their response status code.<br />Additional dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-metrics.html) |
+| `HttpStatusCodeCount` | Count | The count of HTTP responses in the application, by their response status code.<br />Additional dimensions:+  `event_details.response.status` is the response status code, such as 200, 400, 404, and so on. <br />+  `event_type` The type of event.   |
 | `Http4xxCount` | Count | The count of HTTP responses in the application, with 4xx response status code.<br />These are calculated based on `http_event` RUM events that result in 4xx codes. |
 | `Http4xxCountPerSession` | Count | The count of HTTP responses in a session, with 4xx response status code.<br />These are calculated based on `http_event` RUM events that result in 4xx codes. |
 | `Http4xxCountPerPageView` | Count | The count of HTTP responses in a page review, with 4xx response status code.<br />These are calculated based on `http_event` RUM events that result in 4xx codes. |
@@ -30,7 +30,7 @@ These metrics are published in the metric namespace named `AWS/RUM`. All of the 
 | `NavigationToleratedTransaction` | Count | The count of navigation events with a `duration` between 2000ms and 8000ms. The duration of navigation events is tracked in the `PerformanceNavigationDuration` metric. |
 | `PageViewCount` | Count | The count of page view events ingested by the app monitor.<br />This is calculated by counting the `page_view_event` RUM events. |
 | `PageViewCountPerSession` | Count | The count of page view events in a session. |
-| `PerformanceResourceDuration` | Milliseconds | The `duration` of a resource event.<br />Additional dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-metrics.html) |
+| `PerformanceResourceDuration` | Milliseconds | The `duration` of a resource event.<br />Additional dimensions:+  `event_details.file.type` is the file type of the resource event, such as a stylesheet, document, image, script, or font. <br />+  `event_type` The type of event.  |
 | `PerformanceNavigationDuration` | Milliseconds | The `duration` of a navigation event. |
 | `RumEventPayloadSize` | Bytes | The size of every event ingested by CloudWatch RUM. You can also use the `SampleCount` statistic for this metric to monitor the number of events that an app monitor is ingesting. |
 | `SessionCount` | Count | The count of session start events ingested by the app monitor. In other words, the number of new sessions started. |

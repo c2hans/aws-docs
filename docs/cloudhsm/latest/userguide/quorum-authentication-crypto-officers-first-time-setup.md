@@ -214,8 +214,8 @@ The following table lists the HSM service identifiers along with their names, de
 
 | Service Identifier | Service Name | Service Description | HSM Commands |
 | --- | --- | --- | --- |
-| 3 | USER\_MGMT | HSM user management |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-authentication-crypto-officers-first-time-setup.html)  |
-| 4 | MISC\_CO | Miscellaneous CO service |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/quorum-authentication-crypto-officers-first-time-setup.html)  |
+| 3 | USER\_MGMT | HSM user management |  +  **createUser** <br />+  **deleteUser** <br />+  **changePswd** (applies only when changing the password of a different HSM user)   |
+| 4 | MISC\_CO | Miscellaneous CO service |  +  **setMValue**   |
 
 To get the quorum minimum value for a service, use the **getMValue** command, as in the following example.
 

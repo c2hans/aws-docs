@@ -9,8 +9,8 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-
 | --- |--- |
 | **Time to complete** | 10 minutes  |
 | **Services used** | [AWS Amplify](https://aws.amazon.com/amplify/)  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-graphql/module-one.html)  |
-| **Get help** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-graphql/module-one.html)  |
+| **Requires** |  +  A [GitHub account](https://github.com/)  <br />+  GitHub [SSH connection](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)  <br />+  [Nodejs](https://nodejs.org/en/download) and [npm](https://www.npmjs.com/)    |
+| **Get help** |  +  [Troubleshooting Amplify](https://docs.amplify.aws/react/build-a-backend/troubleshooting/)  <br />+  [Learn about Hosting](https://docs.amplify.aws/react/deploy-and-host/hosting/)    |
 
 ## Overview
 <a name="overview"></a>

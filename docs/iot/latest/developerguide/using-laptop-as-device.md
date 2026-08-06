@@ -174,7 +174,7 @@ To run the `pubsub.py` sample script, you need the following information:
 
 |  Parameter  |  Where to find the value  |
 | --- | --- |
-| {{your-iot-endpoint}} |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/using-laptop-as-device.html)  |
+| {{your-iot-endpoint}} |  1.  In the [AWS IoT console](https://console.aws.amazon.com/iot/home), in the left menu, choose **Settings**. <br />2.  On the **Settings** page, your endpoint is displayed in the **Device data endpoint** section.   |
 
 The {{your-iot-endpoint}} value has a format of: `{{endpoint_id}}-ats.iot.{{region}}.amazonaws.com`, for example, `a3qj468EXAMPLE-ats.iot.us-west-2.amazonaws.com`.
 

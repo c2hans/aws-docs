@@ -15,7 +15,7 @@ You can access the IAM and AWS STS services programmatically using the Query API
 The response is an XML document. For details about the response, see the individual action pages in the [IAM API Reference](https://docs.aws.amazon.com/IAM/latest/APIReference/) or the [AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/).
 
 **Tip**
-Instead of making direct calls to the IAM or AWS STS API operations, you can use one of the AWS SDKs. The AWS SDKs consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .NET, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to IAM and AWS. For example, the SDKs take care of tasks such as cryptographically signing requests (see below), managing errors, and retrying requests automatically. For information about the AWS SDKs, including how to download and install them, see the [Tools for Amazon Web Services](http://aws.amazon.com/tools/) page.
+Instead of making direct calls to the IAM or AWS STS API operations, you can use one of the AWS SDKs. The AWS SDKs consist of libraries and sample code for various programming languages and platforms (Java, Ruby, .NET, iOS, Android, etc.). The SDKs provide a convenient way to create programmatic access to IAM and AWS. For example, the SDKs take care of tasks such as cryptographically signing requests (see below), managing errors, and retrying requests automatically. For information about the AWS SDKs, including how to download and install them, see the [Tools for Amazon Web Services](https://docs.aws.amazon.com/http://aws.amazon.com/tools/) page.
 
 For details about the API actions and errors, see the [IAM API Reference](https://docs.aws.amazon.com/IAM/latest/APIReference/) or the [AWS Security Token Service API Reference](https://docs.aws.amazon.com/STS/latest/APIReference/).
 
@@ -41,7 +41,7 @@ Because the Query API returns sensitive information such as security credentials
 
 Requests must be signed using an access key ID and a secret access key. We strongly recommend that you do not use your AWS account root user credentials for everyday work with IAM. You can use the credentials for an IAM user or you can use AWS STS to generate temporary security credentials.
 
-To sign your API requests, we recommend using AWS Signature Version 4. For information about using Signature Version 4, go to [Signature Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *AWS General Reference*.
+To sign your API requests, we recommend using AWS Signature Version 4. For information about using Signature Version 4, see [Signature Version 4 Signing Process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) in the *AWS General Reference*.
 
 If you need to use Signature Version 2, information about using Signature Version 2 is available in the [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html).
 

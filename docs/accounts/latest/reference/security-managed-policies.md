@@ -98,4 +98,4 @@ View details about updates to AWS managed policies for Account Management since 
 
 | Change | Description | Date |
 | --- | --- | --- |
-| AWS Account Management launched with new AWS managed policies and started tracking changes | Account Management initially launched with the following AWS managed policies:[See the AWS documentation website for more details](http://docs.aws.amazon.com/accounts/latest/reference/security-managed-policies.html) | Sept 30, 2021 |
+| AWS Account Management launched with new AWS managed policies and started tracking changes | Account Management initially launched with the following AWS managed policies:+  [AWSAccountManagementReadOnlyAccess](#security-managed-policies-AWSAccountManagementReadOnlyAccess) <br />+  [AWSAccountManagementFullAccess](#security-managed-policies-AWSAccountManagementFullAccess)  | Sept 30, 2021 |

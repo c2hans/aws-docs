@@ -16,6 +16,7 @@ AWS CloudHSM has the following known issues. Choose a topic to learn more.
 + [Known issues for the OpenSSL Dynamic Engine](ki-openssl-sdk.md)
 + [Known issues for the Key Storage Provider (KSP)](ki-ksp-sdk.md)
 + [Known issues for the OpenSSL Provider](ki-openssl-provider-sdk.md)
++ [Known issues for the CloudHSM CLI](ki-cli-sdk.md)
 + [Known issues for Amazon EC2 instances running Amazon Linux 2](ki-al2.md)
 + [Known issues for integrating third-party applications](ki-third-party.md)
 + [Known issues for cluster modification](ki-cluster-modification.md)

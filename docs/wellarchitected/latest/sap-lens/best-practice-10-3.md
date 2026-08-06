@@ -38,7 +38,7 @@ Data replication is used to improve reliability by having copies of the same dat
 | SAP HANA | HANA System Replication | SAP Documentation: [HANA System Replication](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/LATEST/en-US/676844172c2442f0bf6c8b080db05ae7.html)  |
 | SAP ASE | SAP Replication Server | SAP Documentation: [SAP Replication Server](https://help.sap.com/viewer/product/SAP_REPLICATION_SERVER)  |
 | Oracle | Oracle Data Guard | SAP Note: [105047 - Support for Oracle functions in the SAP environment](https://launchpad.support.sap.com/#/notes/105047) [Requires SAP Portal Access]  |
-| Microsoft SQL Server | SQL Server Always ON |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-10-3.html)  |
+| Microsoft SQL Server | SQL Server Always ON |  +   SAP Documentation: [Database High-Availability with SQL Server AlwaysOn](https://help.sap.com/viewer/34ba60e8526d4110921c9c0fd05b4b6d/LATEST/en-US/483523b4fd7c433998ec38dadcd67d3c.html)  <br />+   AWS Documentation: [SQL Server Deployment for High Availability](https://docs.aws.amazon.com/sap/latest/sap-netweaver/sql-server-deployment-for-high-availability.html)    |
 | SAP MaxDB | MaxDb Standby Database |  SAP Note: [952783 - FAQ: SAP MaxDB high availability](https://launchpad.support.sap.com/#/notes/952783) [Requires SAP Portal Access]  |
 | IBM Db2 | HADR |  SAP Note: [1612105 - DB6: FAQ on Db2 High Availability Disaster Recovery (HADR)](https://launchpad.support.sap.com/#/notes/1612105) [Requires SAP Portal Access]  |
 

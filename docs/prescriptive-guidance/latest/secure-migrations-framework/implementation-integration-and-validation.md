@@ -18,10 +18,10 @@ Next, you implement the planned security and compliance requirements, controls, 
 |
 | Area | Security and compliance requirements |
 | --- |--- |
-| Infrastructure | AWS accountLanding zonePreventative controlsDetective controlsNetwork segmentationAccess controlEncryptionLogging, monitoring, and alerting |
-| AWS services | AWS service configurationInstancesStorageNetworkAccess controlEncryptionUpdates and patchesLogging, monitoring, and alerting |
-| Operating system | AntivirusMalware and worm protectionConfigurationNetwork protectionAccess controlEncryptionUpdates and patchesLogging, monitoring, and alerting |
-| Application or database | ConfigurationCode and schemaAccess controlEncryptionUpdates and patchesLogging, monitoring, and alerting |
+| Infrastructure | + AWS account+ Landing zonePreventative controlsDetective controls<br />+ Network segmentation+ Access control+ Encryption+ Logging, monitoring, and alerting |
+| AWS services | + AWS service configuration+ InstancesStorageNetwork<br />+ Access control+ Encryption+ Updates and patches+ Logging, monitoring, and alerting |
+| Operating system | + Antivirus+ Malware and worm protection+ Configuration+ Network protection+ Access control+ Encryption+ Updates and patches+ Logging, monitoring, and alerting |
+| Application or database | + Configuration+ Code and schema+ Access control+ Encryption+ Updates and patches+ Logging, monitoring, and alerting |
 
 ## Integration
 <a name="integration"></a>

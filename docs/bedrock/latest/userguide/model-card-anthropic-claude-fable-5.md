@@ -40,7 +40,7 @@ Claude Fable 5 is Anthropic's next-generation model for complex knowledge work a
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5.html)  |
+|  + [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)<br />+ [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)  |  + [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)  |
 
 ***Bedrock Features***
 
@@ -48,7 +48,7 @@ Claude Fable 5 is Anthropic's next-generation model for complex knowledge work a
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5.html)  |
+|  + [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)  |  + [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)<br />+ [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)  |
 
 ***Prompt caching***
 
@@ -77,7 +77,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 
 | **Endpoint** | **Model ID** | **In-Region endpoint URL** | **Geo inference ID** | **Global inference ID** |
 | --- | --- | --- | --- | --- |
-| bedrock-runtime | anthropic.claude-fable-5 | https://bedrock-runtime.{region}.amazonaws.com | us.anthropic.claude-fable-5 | global.anthropic.claude-fable-5 |
+| bedrock-runtime | anthropic.claude-fable-5 | N/A | us.anthropic.claude-fable-5 | global.anthropic.claude-fable-5 |
 | bedrock-mantle | anthropic.claude-fable-5 | https://bedrock-mantle.{region}.api.aws/anthropic/v1/messages | N/A | N/A |
 
 *For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws".*
@@ -96,7 +96,7 @@ Amazon Bedrock offers multiple service tiers to match your workload requirements
 
 ***Regional availability at a glance***
 
-Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (US, EU, etc.) for higher throughput while respecting data residency, and **Global Cross-Region** routes anywhere worldwide for maximum throughput when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
+Amazon Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (such as US, EU, and APAC) while respecting data residency, and **Global Cross-Region** routes anywhere worldwide when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
 
 | **Region** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |

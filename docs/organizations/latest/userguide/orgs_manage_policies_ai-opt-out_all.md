@@ -22,7 +22,7 @@ You can opt your organization out of having its content used for service improve
 
 1. Sign in to the [AWS Organizations console](https://console.aws.amazon.com/organizations/v2). You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization’s management account.
 
-1. On the **[AI services opt-out policies](https://console.aws.amazon.com/organizations/v2/home/policies/aiservices-opt-out-policy)** page, choose **Opt out from all services**.
+1. On the **[AI services opt-out policies](https://console.aws.amazon.com/organizations/v2/home/policies/aiservices-opt-out-policy)** page, choose **Opt out from all services**. If the policy is disabled, choose **Enable AI services opt-out policies**, and then choose **Opt out from all services**.
 
 1. On the **Opt out from all services** confirmation page, choose **Opt out from all services**.
 
@@ -71,7 +71,7 @@ The following is a list of AWS services supported by the AI services opt-out pol
 + [Amazon Quick](https://docs.aws.amazon.com/quicksight)
 + [Amazon Rekognition](https://docs.aws.amazon.com/rekognition)
 + [Amazon Security Lake](https://docs.aws.amazon.com/security-lake/)
-+ [AWS Supply Chain](https://docs.aws.amazon.com/aws-supply-chain)
++ [AWS Supply Chain](https://aws.amazon.com/products/connect/decisions/)
 + [Amazon Textract](https://docs.aws.amazon.com/textract)
 + [Amazon Transcribe](https://docs.aws.amazon.com/transcribe)
 + [AWS Transform](https://docs.aws.amazon.com/transform/latest/userguide/what-is.html)

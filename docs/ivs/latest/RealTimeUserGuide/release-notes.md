@@ -15,8 +15,8 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.45.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.45.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.45.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/)+  Fixed an issue where subscribers could see a frozen video stream after recovering from network degradation. <br />+  Fixed a rare crash related to `CustomImageSource` usage in stages. <br />+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.45.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/)+  Fixed an issue where subscribers could see a frozen video stream after recovering from network degradation. <br />+  Bug fixes and stability improvements. <br />+  Support for iOS 14 will be deprecated as of IVS Broadcast SDK 1.48.0.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1450-rt-sdk-size-android"></a>
@@ -43,7 +43,7 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.38.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.38.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed edge case where audio would be dropped in stage composition due to temporary publisher network failure.  |
 
 ## July 7, 2026
 <a name="jul07-26-broadcast-ios-rt"></a>
@@ -53,7 +53,7 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.44.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.44.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/)+  Fixed a rare deadlock when leaving and deallocating an `IVSStage`.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-1441-rt-sdk-size-ios"></a>
@@ -70,8 +70,8 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.44.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.44.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.44.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/)+  Improved network utilization during publish and subscribe operations. <br />+  Improved recovery performance for subscribers after network degradation.  |
+| [iOS Broadcast SDK 1.44.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/)+  Improved network utilization during publish and subscribe operations. <br />+  Improved recovery performance for subscribers after network degradation.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1440-rt-sdk-size-android"></a>
@@ -98,7 +98,7 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.37.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.37.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## June 4, 2026
 <a name="jun04-26-broadcast-mobile-rt"></a>
@@ -108,8 +108,8 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.43.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.43.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.43.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/)+  The callback provided to the Stage.setAudioCallback API added in 1.42.0 will now be persisted across leave/join cycles, where previously it was cleared on leave.  <br />+  Fixed a rare crash when tearing down the last Stage that was publishing with the device's microphone.  |
+| [iOS Broadcast SDK 1.43.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/)+  The callback provided to the IVSStage.setAudioCallback API added in 1.42.0 will now be persisted across leave/join cycles, where previously it was cleared on leave. <br />+  Fixed a bug where the camera torch may turn back on unintentionally after changing cameras and rotating the device.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1430-rt-sdk-size-android"></a>
@@ -136,7 +136,7 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.36.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.36.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and performance improvements.  |
 
 ## May 7, 2026
 <a name="may07-26-broadcast-mobile-rt"></a>
@@ -146,8 +146,8 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.42.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.42.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.42.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/)+  Added `Stage.setAudioCallback` for receiving mixed PCM audio data from all remote participants. Must be called before `join()`; automatically cleared on `leave()`. <br />+  Bug fixes and performance improvements.  |
+| [iOS Broadcast SDK 1.42.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/)+  Added `IVSSStage.setAudioCallback` for receiving mixed PCM audio data from all remote participants. Must be called before `join`; automatically cleared on `leave`. <br />+  Bug fixes and performance improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1420-rt-sdk-size-android"></a>
@@ -174,7 +174,7 @@ This document contains all Amazon IVS Real-Time Streaming release notes, latest 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.35.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.35.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and performance improvements.  |
 
 ## April 16, 2026
 <a name="apr16-26-token-exchange-ssc"></a>
@@ -194,7 +194,7 @@ In addition, token exchange is now supported in the web broadcast SDK, implement
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.34.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.34.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed a bug where subscribe or publish attempts immediately following `exchangeToken` invocations could fail. <br />+  Added additional information in the details property for `TOKEN_EXCHANGE_FAILED` errors.  |
 
 ## April 9, 2026
 <a name="apr09-26-broadcast-mobile-rt"></a>
@@ -204,8 +204,8 @@ In addition, token exchange is now supported in the web broadcast SDK, implement
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.41.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.41.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.41.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/)+  Added ability to choose between platform-native echo cancellation, AECM, or AEC3 algorithms with automatic fallback support. <br />+  Added ability to choose between platform-native or software-based noise suppression with automatic fallback support. <br />+  **Important:** If you use `StageAudioConfiguration.enableNoiseSuppression`, you must now call `StageAudioManager.enableNoiseSuppression` instead. Noise suppression is now managed globally rather than per-stream.  <br />+  Software noise suppression is now disabled by default for `STUDIO` and `SUBSCRIBE_ONLY` audio mode presets to align with iOS.   |
+| [iOS Broadcast SDK 1.41.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1410-rt-sdk-size-android"></a>
@@ -242,7 +242,7 @@ Redundant ingest is now available for RTMP(S) and E-RTMP(S) streams. This featur
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.33.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.33.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Implemented the `exchangeToken` method for real-time token exchange.  <br />+  Implemented the STAGE\_PARTICIPANT\_METADATA\_CHANGED event, which fires when `attributes` and/or `userId` change(s) after token exchanges. <br />+  Added the `encoderImplementation` field on the request local stage stream `requestQualityStats()` method.  |
 
 ## March 12, 2026
 <a name="mar12-26-broadcast-mobile-rt"></a>
@@ -252,8 +252,8 @@ Redundant ingest is now available for RTMP(S) and E-RTMP(S) streams. This featur
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.40.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.40.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.40.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/)+  Improved error messages around TLS certificate validation failures and expanded error enum codes.  |
+| [iOS Broadcast SDK 1.40.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/)+  Improved error messages around TLS certificate validation failures and expanded error enum codes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1400-rt-sdk-size-android"></a>
@@ -280,8 +280,8 @@ Redundant ingest is now available for RTMP(S) and E-RTMP(S) streams. This featur
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.39.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.39.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.39.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/)+  Minor bug fixes for Bluetooth headset reconnects using the STUDIO audio mode.  <br />+  Updated core Android build tools and NDK version. <br />+  Fixed rare deadlock when stopping a `MixedImageDevice`.   |
+| [iOS Broadcast SDK 1.39.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/)+  Updated Xcode to version 26.2. <br />+  Effective with this release, the IVS SDKs are no longer distributed via CocoaPods. <br />CocoaPods announced its deprecation in 2024 and will enter read-only state later this year. Swift Package Manager (SPM) replaces CocoaPods as Apple’s supported dependency-management solution and is the standard way to integrate SDKs in modern Xcode projects. <br />We recommend that you migrate to SPM or integrate the IVS SDK frameworks directly into your project. IVS SDKs are fully supported via both approaches. <br />Related documentation changes were made in:   [Getting Started with IVS Real-Time Streaming](getting-started-broadcast-sdk.md#getting-started-broadcast-sdk-ios) – "Step 4: Integrate the IVS Broadcast SDK" > "iOS"   [iOS Broadcast SDK Guide](broadcast-ios-getting-started.md#broadcast-ios-install) – "Install the Library"    |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1390-rt-sdk-size-android"></a>
@@ -308,7 +308,7 @@ Redundant ingest is now available for RTMP(S) and E-RTMP(S) streams. This featur
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.32.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.32.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## January 13, 2026
 <a name="jan13-26-broadcast-mobile-rt"></a>
@@ -318,8 +318,8 @@ Redundant ingest is now available for RTMP(S) and E-RTMP(S) streams. This featur
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.38.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.38.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.38.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/)+  Layer prioritization function — Added `Priority` enum to `StageVideoConfiguration.Layer` with values: `VERY_LOW`, `LOW`, `MEDIUM`, `HIGH`. This will determine which layer is dropped first under network bandwidth constraints. <br />+  Faster stage reconnection after network connectivity is restored. <br />+  Changed the codes associated with some errors. See [Mobile Broadcast SDK Error Migration Guide](#broadcast-1380-rt-sdk-error-migration) below.  |
+| [iOS Broadcast SDK 1.38.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/)+  Layer prioritization function — Added `IVSLocalStageStreamLayerPriority` enum with values: `VeryLow`, `Low`, `Medium`, `High`. This will determine which layer is dropped first under network bandwidth constraints. <br />+  Faster stage reconnection after network connectivity is restored. <br />+  Changed the codes associated with some errors. See [Mobile Broadcast SDK Error Migration Guide](#broadcast-1380-rt-sdk-error-migration) below.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1380-rt-sdk-size-android"></a>
@@ -377,7 +377,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.37.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.37.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/)+  Fixed issues related to participant preview teardown.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1371-rt-sdk-size-android"></a>
@@ -407,7 +407,7 @@ See the new page on [Token Exchange](broadcast-mobile-token-exchange.md).
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.31.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.31.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## December 5, 2025
 <a name="dec05-25-broadcast-mobile-rt"></a>
@@ -417,8 +417,8 @@ See the new page on [Token Exchange](broadcast-mobile-token-exchange.md).
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.37.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.37.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.37.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/)+  Bug fixes and stability improvements. <br />+  Added support for participant token exchange.  |
+| [iOS Broadcast SDK 1.37.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/)+  Bug fixes and stability improvements. <br />+  Added support for participant token exchange.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1370-rt-sdk-size-android"></a>
@@ -453,7 +453,7 @@ New support for `EXT-X-PROGRAM-DATE-TIME` tags in individual participant recordi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.30.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.30.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## October 30, 2025
 <a name="oct30-25-broadcast-mobile-rt"></a>
@@ -463,8 +463,8 @@ New support for `EXT-X-PROGRAM-DATE-TIME` tags in individual participant recordi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.36.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.36.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.36.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/)+  Improved camera recovery when returning to the foreground after being in the background for a prolonged period of time. <br />+  Added an `embedMessage` method on `ImageDevice` to enable the insertion of metadata payloads into a publishing video stream. See [Embed Messages](android-publish-subscribe.md#android-publish-subscribe-embed-messages) in the *Android Broadcast SDK Guide*.  |
+| [iOS Broadcast SDK 1.36.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/)+  Added an `embedMessage` method on `IVSImageDevice` to enable the insertion of metadata payloads into a publishing video stream. See [Embed Messages](ios-publish-subscribe.md#ios-publish-subscribe-embed-messages) in the *iOS Broadcast SDK Guide*.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1360-rt-sdk-size-android"></a>
@@ -499,7 +499,7 @@ We updated the quota for "maximum concurrent Composition resources per account" 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.29.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.29.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## October 2, 2025
 <a name="oct02-25-broadcast-mobile-rt"></a>
@@ -509,8 +509,8 @@ We updated the quota for "maximum concurrent Composition resources per account" 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.35.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.35.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.35.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.35.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/)+  `IVSImageDevice.setOnFrameCallback` can now be customized with a `DispatchQueue`, and it can optionally include the `CVPixelBuffer` associated with the frame.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1350-rt-sdk-size-android"></a>
@@ -545,8 +545,8 @@ New support for custom participant ordering for SSC provides granular control ov
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.34.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.34.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.34.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/)+  CPU improvements for publish and subscribe media transport. <br />+  Added `packetsLost` to `LocalVideoStats` and `LocalAudioStats`.  |
+| [iOS Broadcast SDK 1.34.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/)+  CPU improvements for publish and subscribe media transport. <br />+  Added `packetsLost` to `IVSLocalVideoStats` and `IVSLocalAudioStats`. <br />+  Fixed a bug where devices did not detach after leaving a stage, which could result in privacy indicators unexpectedly being lit.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1340-rt-sdk-size-android"></a>
@@ -581,7 +581,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.28.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.28.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Joining a stage that was deleted, or with a participant token that was disconnected, now reports `STAGE_DELETED` or `STAGE_DISCONNECTED` errors instead of `TIMEOUT`. <br />+  Optimized internal polling requests related to simulcast.  |
 
 ## August 7, 2025
 <a name="aug07-25-broadcast-web-rt"></a>
@@ -591,7 +591,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.27.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.27.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added `requestQualityStats` to `RemoteStageStream`, which then exposes a simplified object of video and audio stats sourced from `requestRTCStats`. <br />+  Updates to ensure that the `RemoteStageStream` muted state and its `mediaStreamTrack` enabled state are always in sync.  |
 
 ## August 7, 2025
 <a name="aug07-25-broadcast-mobile-rt"></a>
@@ -601,8 +601,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.33.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.33.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.33.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/)+  New methods to control device torch:   `CameraSource.Capabilities` implements `isTorchSupported`.   `CameraSource.Options.Builder` implements `setEnableTorch`.   <br />+  The Android broadcast SDK meets Google Play’s [16 KB page-size compatibility requirement](https://android-developers.googleblog.com/2025/05/prepare-play-apps-for-devices-with-16kb-page-size.html). (Note: This was implemented as of version 1.23.0 of the SDK.)  |
+| [iOS Broadcast SDK 1.33.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/)+  New method to control device torch: `IVSImageDevice` implements two properties, `isTorchSupported` and `torchEnabled`. Check if the device supports torch with `isTorchSupported`, and then toggle it by setting `torchEnabled`. <br />+  Resolved an issue on iOS 18.5\+ with certain VPNs that could result in peer connection timeouts. (Note: This was implemented as of version 1.32.1 of the SDK.)  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1330-rt-sdk-size-android"></a>
@@ -629,7 +629,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.32.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.32.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/)+  Disabled IPv6 for `Stage` connections.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1322-rt-sdk-size-android"></a>
@@ -665,8 +665,8 @@ We've introduced a new non-adjustable service quota, for the maximum number of c
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.32.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.32.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.32.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/)+  Removed `StageAudioConfiguration.enableEchoCancellation()`. Instead, use `StageAudioManager` to enable or disable echo cancellation. <br />+  Modified the `STUDIO` and `SUBSCRIBE_ONLY` presets in `StageAudioManager` to turn off echo cancellation. If you want to use `STUDIO` with echo cancellation, first set the preset, then enable echo cancellation to override `STUDIO`'s default preference for no echo cancellation. <br />+  Added a `MixedDevice` API suite for compositing multiple image and audio sources into a single output `Device`, which can be used for publishing more complex audio and visuals to a stage.  |
+| [iOS Broadcast SDK 1.32.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/)+  Added an `IVSMixedDevice` API suite for compositing multiple image and audio sources into a single output `IVSDevice`, which can be used for publishing more complex audio and visuals to a stage.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1321-rt-sdk-size-android"></a>
@@ -693,7 +693,7 @@ We've introduced a new non-adjustable service quota, for the maximum number of c
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.26.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.26.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added `requestQualityStats` to LocalStageStream, which exposes a simplified object of video and audio stats sourced from requestRTCStats. <br />+  Fixed websocket leaks that could occur during setup, causing subsequent join failures. <br />+  Fixed an issue where 1302 errors would incorrectly surface when retrying a failed subscribe or publish operation. <br />+  Improved retry stability for subscribe and publish connections when the join connection is in an ERRORED or CONNECTING state.  |
 
 ## June 23, 2025
 <a name="jun23-25-rt-concurrent-limits"></a>
@@ -723,7 +723,7 @@ You can use E-RTMP (Enhanced Real-Time Messaging Protocol) multitrack video to s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.25.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.25.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Removed the NPM unintentional engine enforcement of v22. All LTS node versions are supported as the package is transpiled.  |
 
 ## June 12, 2025
 <a name="jun12-25-broadcast-mobile-rt"></a>
@@ -733,8 +733,8 @@ You can use E-RTMP (Enhanced Real-Time Messaging Protocol) multitrack video to s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.31.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.31.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.31.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.31.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1310-rt-sdk-size-android"></a>
@@ -761,7 +761,7 @@ You can use E-RTMP (Enhanced Real-Time Messaging Protocol) multitrack video to s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.25.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.25.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed a bug where SEI messages might fail to send after a remote participant encountered an `ERROR` state. <br />+  Fixed a bug where multiple remote stage streams might be returned when the `STAGE_STREAM_MUTE_CHANGED` stage event was invoked. <br />+  Fixed a bug where `STAGE_PARTICIPANT_STREAMS_REMOVED` was not invoked for streams that had errored.  |
 
 ## May 29, 2025
 <a name="may29-25-rt"></a>
@@ -779,7 +779,7 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.30.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.30.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/)+  Fixed a low-microphone-volume bug on some Android devices when using SDK-managed microphones from `DeviceDiscovery` with the `STUDIO` audio preset.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1301-rt-sdk-size-android"></a>
@@ -799,7 +799,7 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.24.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.24.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed memory leaks when leaving and rejoining a stage.  |
 
 ## May 15, 2025
 <a name="may15-25-broadcast-mobile-rt"></a>
@@ -809,8 +809,8 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.30.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.30.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.30.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.30.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1300-rt-sdk-size-android"></a>
@@ -837,7 +837,7 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.23.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.23.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed an issue where participant join events always occurred before `join()` resolved. <br />+  Fixed an issue where local participants were erroneously reported as remote participants when leaving and rejoining in quick succession.  |
 
 ## April 17, 2025
 <a name="apr17-25-broadcast-mobile-rt"></a>
@@ -847,8 +847,8 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.29.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.29.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.29.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [Android Broadcast SDK Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/android-publish-subscribe.html#android-layered-encoding-simulcast-configure-publisher). <br />+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.29.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [iOS Broadcast SDK Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html#ios-layered-encoding-simulcast-configure-publisher). <br />+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1290-rt-sdk-size-android"></a>
@@ -875,7 +875,7 @@ Participant replication allows you to copy a participant from one stage to anoth
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.23.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.23.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added a simulcast publisher controls feature. See "Configuring Layered Encoding (Publisher)" in the [Web Broadcast SDK Guide](https://docs.aws.amazon.com//ivs/latest/RealTimeUserGuide/web-publish-subscribe.html#web-layered-encoding-simulcast-configure-publisher). <br />+  Improved time to publish latency. This impacts the timing of the `PUBLISHED` event. <br />+  Fixed a bug where the SDK fired join category errors via the [ERROR](broadcast-web-error-handling.md) callback when connection to the stage was lost but potentially recoverable (specifically, `FAILED` and `TIMEOUT` errors for the `JOIN_ERROR` category). <br />+  Fixed a bug with the `insertSeiMessage` operation where a strategy refresh could result in subsequent invocations of `insertSeiMessage` failing to send the SEI message.  |
 
 ## April 2, 2025
 <a name="apr02-25-rt"></a>
@@ -893,8 +893,8 @@ We added a new quota, for the maximum concurrent compositions allowed per stage.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.28.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.28.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.28.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.28.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1281-rt-sdk-size-android"></a>
@@ -921,7 +921,7 @@ We added a new quota, for the maximum concurrent compositions allowed per stage.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.22.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.22.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added `null` as a valid return type to the [preferredLayerForStream](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/interfaces/StageStrategy#preferredlayerforstream) strategy method. <br />+  Fixed a bug where `preferredLayerForStream` was not called again if new layers became available after the stream started. <br />+  Fixed a bug where `stream.getHighestQualityLayer` did not pick the highest quality layer after the stream started.  |
 
 ## March 19, 2025
 <a name="mar19-25-broadcast-mobile-rt"></a>
@@ -931,8 +931,8 @@ We added a new quota, for the maximum concurrent compositions allowed per stage.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.27.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.27.2](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.27.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/)+  Fixed a resource-leak regression that impacted some devices when creating 50 or more stages. <br />+  Fixed a regression that could cause an increased rate of video freezes when using third-party publishing software.  |
+| [iOS Broadcast SDK 1.27.2](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/)+  Fixed a regression that could cause an increased rate of video freezes when using third-party publishing software.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1272-rt-sdk-size-android"></a>
@@ -975,7 +975,7 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.27.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.27.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/)+  Improved focus performance for objects held close to the camera while using the ultra-wide lens on Pro devices.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-1271-rt-sdk-size-ios"></a>
@@ -992,8 +992,8 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.27.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.27.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.27.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.27.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1270-rt-sdk-size-android"></a>
@@ -1020,7 +1020,7 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.21.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.21.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Updated `preferredLayerForStream` strategy types to include `null`, which is a valid return. <br />+  Fixed TypeScript compile errors when TSconfig `skipLibCheck` is set to false. <br />Note: As part of this release, types have been consolidated into a single rollup. If an application imports nested types based on path, errors may occur. If errors do occur, change the import to simply `'amazon-ivs-broadcast'`.  |
 
 ## January 30, 2025
 <a name="jan30-25-broadcast-ai-rt"></a>
@@ -1030,8 +1030,8 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.26.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.26.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.26.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.26.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1260-rt-sdk-size-android"></a>
@@ -1058,7 +1058,7 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.20.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.20.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added the `insertSeiMessage` method on LocalStageStream to enable the insertion of Supplemental Enhancement Information (SEI) payloads into a publishing video stream. See [Supplemental Enhanced Information](web-publish-subscribe.md#web-publish-subscribe-sei-attributes) in the *IVS Broadcast SDK: Web Guide*.  |
 
 ## December 12, 2024
 <a name="dec12-24-broadcast-ai-rt"></a>
@@ -1068,8 +1068,8 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.25.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.25.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.25.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/)+  Added a simulcast controls feature. See [Configuring Layered Encoding with Simulcast (Subscriber)](real-time-streaming-optimization.md#real-time-streaming-optimization-simulcast-subscriber) in *Streaming Optimizations*. <br />+  Made SEI (Supplemental Enhanced Information) payloads available to subscribers with a new field on ImageDeviceFrame objects. See [Get Supplemental Enhancement Information (SEI)](android-publish-subscribe.md#android-publish-subscribe-sei-attributes) in the *IVS Broadcast SDK: Android Guide*. <br />+  Added the `SubscribeConfiguration::setInitialGain` method to allow the configuration of the initial gain value for incoming audio streams. <br />+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.25.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/)+  Added a simulcast controls feature. See [Configuring Layered Encoding with Simulcast (Subscriber)](real-time-streaming-optimization.md#real-time-streaming-optimization-simulcast-subscriber) in *Streaming Optimizations*. <br />+  Made SEI (Supplemental Enhanced Information) payloads available to subscribers with a new field on IVSImageDeviceFrame objects. See [Get Supplemental Enhancement Information (SEI)](ios-publish-subscribe.md#ios-publish-subscribe-sei-attributes) in the *IVS Broadcast SDK: iOS Guide*. <br />+  Added the `IVSSubscribeConfiguration.initialGain` method to allow the configuration of the initial gain value for incoming audio streams. <br />+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1250-rt-sdk-size-android"></a>
@@ -1096,7 +1096,7 @@ This is the first release of new functionality. If your stage is configured for 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.19.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.19.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added a simulcast controls feature. See [Configuring Layered Encoding with Simulcast (Subscriber)](real-time-streaming-optimization.md#real-time-streaming-optimization-simulcast-subscriber) in *Streaming Optimizations*. <br />+  Bug fixes and stability improvements.  |
 
 ## December 10, 2024
 <a name="dec10-24-thumbnails-rt-date"></a>
@@ -1120,8 +1120,8 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.24.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.24.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.24.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.24.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1240-rt-sdk-size-android"></a>
@@ -1148,7 +1148,7 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.18.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.18.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added a new event to make SEI (Supplemental Enhanced Information) payloads available to subscribers. <br />+  Fixed an exception that would occur during unpublish and unsubscribe requests. <br />+  Fixed a race condition where joining and leaving rapidly would cause an error for other participants.  |
 
 ## October 10, 2024
 <a name="oct10-24-broadcast-web-rt"></a>
@@ -1158,7 +1158,7 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.17.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.17.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## October 10, 2024
 <a name="oct10-24-broadcast-ai-rt"></a>
@@ -1168,8 +1168,8 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.23.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.23.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.23.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/)+  With this release we also began publishing a version of the Android broadcast SDK which includes debug symbols. See [Using the SDK with Debug Symbols](broadcast-android-getting-started.md#broadcast-android-using-debug-symbols-rt). <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.23.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1230-rt-sdk-size-android"></a>
@@ -1196,8 +1196,8 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.22.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.22.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.22.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/)+  Fixed a bug where certain Android devices show a black frame in the preview after switching camera inputs. <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.22.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1220-rt-sdk-size-android"></a>
@@ -1224,7 +1224,7 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.16.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.16.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## September 9, 2024
 <a name="sep9-24-rt"></a>
@@ -1250,7 +1250,7 @@ You can now publish and subscribe from the IVS console. In *Getting Started with
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.15.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.15.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed a race condition that impacts publisher media quality when `join()` is called repeatedly. Calling `join()` in succession no longer re-triggers the `STAGE_PARTICIPANT_JOINED` event, along with accompanying publish and stream state changes. <br />+  Fixed a bug that causes issues parsing participant tokens when non-text characters are used in the token `attributes` field. <br />+  Added a method to configure a participant's subscribers. Initially, you can configure only the jitter-buffer minimum delay. See the SDK reference documentation, [Configuration for Subscribing to Participants](web-publish-subscribe.md#web-publish-subscribe-concepts-strategy-participants-config) in the *Web Broadcast SDK Guide*, and [Changing Subscriber Jitter Buffer MinDelay](real-time-streaming-optimization.md#real-time-streaming-jitter-buffer-min-delay) in *Streaming Optimizations*.  |
 
 ## August 15, 2024
 <a name="aug15-24-broadcast-ai-rt"></a>
@@ -1260,8 +1260,8 @@ You can now publish and subscribe from the IVS console. In *Getting Started with
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.21.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.21.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.21.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/)+  Fixed a bug impacting devices with MT6765 chipsets, where the subscriber preview renders black frames under some circumstances. <br />+  Added a method to configure a participant's subscribers. Initially, you can configure only the jitter-buffer minimum delay. See the SDK reference documentation, [Configuration for Subscribing to Participants](android-publish-subscribe.md#android-publish-subscribe-concepts-strategy-participants-config) in the *Android Broadcast SDK Guide*, and [Changing Subscriber Jitter Buffer MinDelay](real-time-streaming-optimization.md#real-time-streaming-jitter-buffer-min-delay) in *Streaming Optimizations*. <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.21.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/)+  Added a method to configure a participant's subscribers. Initially, you can configure only the jitter-buffer minimum delay. See the SDK reference documentation, [Configuration for Subscribing to Participants](ios-publish-subscribe.md#ios-publish-subscribe-concepts-strategy-participants-config) in the *iOS Broadcast SDK Guide*, and [Changing Subscriber Jitter Buffer MinDelay](real-time-streaming-optimization.md#real-time-streaming-jitter-buffer-min-delay) in *Streaming Optimizations*. <br />+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1210-rt-sdk-size-android"></a>
@@ -1288,7 +1288,7 @@ You can now publish and subscribe from the IVS console. In *Getting Started with
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.14.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.14.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  API documentation improvements. <br />+  Fixed video and audio stats outliers reported during connection resets. <br />+  Minor dependency updates.  |
 
 ## July 18, 2024
 <a name="jul18-24-broadcast-ai-rt"></a>
@@ -1298,8 +1298,8 @@ You can now publish and subscribe from the IVS console. In *Getting Started with
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.20.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.20.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.20.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android)+  Fixed a bug that prevented the Broadcast SDK from running on Chromebooks with Intel processors. <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.20.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1200-rt-sdk-size-android"></a>
@@ -1342,8 +1342,8 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.19.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.19.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.19.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android)+  Recent Android versions require an icon in the notification that is displayed when capturing the screen. If desired, you can now customize the icon by calling `setSmallIcon` on the `Notification.Builder` returned by `Session # createServiceNotificationBuilder`. <br />+  Improved connection recovery time on devices transitioning from wifi to cellular connections. This change requires the `CHANGE_NETWORK_STATE` permission.  |
+| [iOS Broadcast SDK 1.19.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1190-rt-sdk-size-android"></a>
@@ -1370,7 +1370,7 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.13.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.13.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Updated the duration of event change behavior for `StageEvents.STAGE_PARTICIPANT_SUBSCRIBE_STATE_CHANGED` and `StageEvents.STAGE_PARTICIPANT_PUBLISH_STATE_CHANGED`. Participants now remain in the `ATTEMPTING_SUBSCRIBE` or `ATTEMPTING_PUBLISH` state for a longer time, until the `ERRORED` event is fired. <br />+  Added the `StageEvents.ERROR` event for listening to errors encountered by the SDK. See [Error Handling](broadcast-web-error-handling.md) in the *Real-Time Broadcast SDK: Web Guide* for more information.  |
 
 ## May 20, 2024
 <a name="may20-24-broadcast-web-rt"></a>
@@ -1380,7 +1380,7 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.12.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.12.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Improved retry handling for publish and subscribe operations. <br />+  Improved analytics, specifically latency and audio-quality measurement.  |
 
 ## May 16, 2024
 <a name="may16-24-broadcast-ai-rt"></a>
@@ -1390,8 +1390,8 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.18.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.18.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.18.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android)+  The SDK now sends specific error codes when a connected Stage is deleted by the AWS control plane, or when the token in use is revoked. <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.18.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios)+  The SDK now sends specific error codes when a connected Stage is deleted by the AWS control plane, or when the token in use is revoked. <br />+  Added the IVSCamera `setVideoZoomFactor` method and the associated `IVSCameraDelegate` methods.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1180-rt-sdk-size-android"></a>
@@ -1418,7 +1418,7 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.11.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.11.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed an edge case where the SDK did not attempt to recover on a stage `DISCONNECT`. <br />+  Updated the error message for a `join()` timeout error. Instead of "InitialConnectTimedOut after 10 seconds," the SDK now returns "Operation timed out."  |
 
 ## April 30, 2024
 <a name="apr30-24-broadcast-web-1101-rt"></a>
@@ -1428,7 +1428,7 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.10.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.10.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## April 30, 2024
 <a name="apr30-24-broadcast-1152-rt"></a>
@@ -1438,8 +1438,8 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.15.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.15.2](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.15.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android)+  Minor bug fixes. Upgrade to this version only if you have a specific reason to do so; otherwise, use the highest version that is released.  |
+| [iOS Broadcast SDK 1.15.2](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios)+  Minor bug fixes. Upgrade to this version only if you have a specific reason to do so; otherwise, use the highest version that is released.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1152-rt-sdk-size-android"></a>
@@ -1466,8 +1466,8 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.17.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.17.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.17.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android)+  Fixed a rare crash that can occur while publishing.  |
+| [iOS Broadcast SDK 1.17.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios)+  The `AmazonIVSBroadcast` framework now includes a privacy manifest, as required by Apple.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1170-rt-sdk-size-android"></a>
@@ -1494,9 +1494,9 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.10.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.16.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.16.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.10.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed an intermittent error when cleaning up connections after unsubscribing or leaving a stage.  |
+| [Android Broadcast SDK 1.16.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android)+  Fixed a previews freeze on the Exynos variant of Samsung devices with Android 14. <br />+  Added a function for querying camera zoom capabilities and setting the zoom factor.  |
+| [iOS Broadcast SDK 1.16.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1160-rt-sdk-size-android"></a>
@@ -1523,8 +1523,8 @@ Individual participant recording allows IVS real-time streaming customers to rec
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.15.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.15.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.15.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android)+  Fixed a rare crash when subscribing to a remote participant.  |
+| [iOS Broadcast SDK 1.15.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios)+  Fixed a rare crash when subscribing to a remote participant.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1151-rt-sdk-size-android"></a>
@@ -1569,9 +1569,9 @@ Today we enabled the changes to the default grid layout that are described in th
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.9.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.15.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.15.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.9.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Improved internal error handling.  |
+| [Android Broadcast SDK 1.15.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android)+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.15.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios)+  Added an `AVPictureInPictureController` extension to allow creating a new instance with an `IVSImagePreviewView`. <br />+  Added a new API on `IVSImageDevice` to create an `AVSampleBufferDisplayLayer` to which the device renders. <br />+  Fixed a low bitrate issue on devices running iOS 17 and later. <br />+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1150-rt-sdk-size-android"></a>
@@ -1624,9 +1624,9 @@ IVS can be used with WHIP-compatible encoders like OBS to publish to IVS real-ti
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.8.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.14.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.14.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.8.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Layered encoding with simulcast is now disabled by default. <br />+  Fixed an issue where a Stage instance would not cleanly disconnect when a Stage was deleted, or when a participant was disconnected from the server. The SDK now emits a `STAGE_CONNECTION_STATE_CHANGED` event with a state of `DISCONNECTED` (instead of `ERRORED` and then `CONNECTING`). <br />+  Fixed issue where publishing would fail when updating the strategy with empty audio or video tracks.  |
+| [Android Broadcast SDK 1.14.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android)+  Layered encoding with simulcast is now disabled by default. <br />+  Updated `libWebRTC` from M108 to M119. <br />+  Fixed several crashes to improve overall stability. <br />+  Added support for stereo publishing. This can be enabled through the `StageAudioConfiguration` object. <br />+  Fixed a bug causing a black feed from participants after joining a session. <br />+  Updated internal `libWebRTC` references to avoid symbol conflicts when other `libWebRTC` versions are included in the same host application.  |
+| [iOS Broadcast SDK 1.14.1](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios)+  Layered encoding with simulcast is now disabled by default. <br />+  Updated `libWebRTC` from M108 to M119. <br />+  Fixed several crashes to improve overall stability. <br />+  Added support for stereo publishing. This can be enabled through `IVSLocalStageStreamAudioConfiguration`. <br />+  Fixed a crash when enabling audio-only mode for other participants. <br />+  Improved TTV and reduced binary size.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1141-rt-sdk-size-android"></a>
@@ -1653,9 +1653,9 @@ IVS can be used with WHIP-compatible encoders like OBS to publish to IVS real-ti
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.7.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.13.4](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.13.4](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.7.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Improved time-to-video for subscribers joining stages. <br />+  Removed the `minAudioBitrateKbps` property (it was unused). <br />+  Improved network recovery during internet outages or changes.  |
+| [Android Broadcast SDK 1.13.4](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android)+  StageAudioConfiguration now supports setting whether echo cancellation should be enabled.  |
+| [iOS Broadcast SDK 1.13.4](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios)+  On iOS, we improved the audio engine for both recording and playback with a focus on stability and recoverability. This enhances support for route changes while in use, improves battery recovery for edge cases, and reduces the amount of main thread blocking. <br />+  Fixed an issue where the microphone might stay active even after it was detached from a stage, leaving the iOS privacy indicator on. (The SDK was not processing incoming audio at the time.)  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1134-rt-sdk-size-android"></a>
@@ -1695,9 +1695,9 @@ We renamed the PacketLoss (Stage) metric to be DownloadPacketLoss (Stage). We al
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All mobile (Android and iOS) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.13.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.13.2](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| All mobile (Android and iOS) |  +  Noise-suppression configuration is available for developers to enable/disable for publishing.   |
+| [Android Broadcast SDK 1.13.2](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android)+  Improved the time it takes to load the video (TTV) when joining the first stage in a session.  |
+| [iOS Broadcast SDK 1.13.2](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios)+  No changes in the real-time SDK.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1132-rt-sdk-size-android"></a>
@@ -1724,7 +1724,7 @@ We renamed the PacketLoss (Stage) metric to be DownloadPacketLoss (Stage). We al
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.13.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.13.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android)+  Fixed an issue that caused a crash when quickly leaving, releasing, and rejoining the same stage.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1131-rt-sdk-size-android"></a>
@@ -1744,9 +1744,9 @@ We renamed the PacketLoss (Stage) metric to be DownloadPacketLoss (Stage). We al
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All mobile (Android and iOS) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.13.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.13.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| All mobile (Android and iOS) |  +  Updated [Streaming Optimizations](real-time-streaming-optimization.md). Among other things, the "Adaptive Streaming: Layered Encoding with Simulcast" feature now requires explicit opt-in and is supported only in recent versions of the SDK. <br />+  Improved the stability of stages by reducing occurrences of rare crashes. <br />+  Improved the time it takes to load the video (TTV) when joining a stage. <br />+  Improved the experience with Bluetooth devices. <br />+  Optimized SDK CPU and memory usage, and reduced the library size. <br />+  Added the `StageAudioManager` class, which can be used to set audio capture and playback parameters, including presets for voice communication, media playback and more. For details, see the new page, [IVS Broadcast SDK: Mobile Audio Modes](broadcast-mobile-audio-modes.md). <br />+  Added a new `requestQualityStats` function to display structured quality events from WebRTC stats. <br />+  Added a new function to update the audio bitrate. It is set on `LocalStageStream` objects just like the video configuration, but through a new audio configuration object.   |
+| [Android Broadcast SDK 1.13.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android)+  All methods on the `StageRenderer` interface are now optional. <br />+  Added support to `Surfaceview`-based preview for better performance. The existing `getPreview` methods in `Session` and `StageStream` continue to return a subclass of `TextureView`, but this may change in a future SDK version.   If your application depends on `TextureView` specifically, you can continue with no changes. You also can switch from `getPreview` to `getPreviewTextureView` to prepare for the eventual change of what the default `getPreview` returns.   If your application does not require `TextureView` specifically, we recommend switching to `getPreviewSurfaceView` for lower CPU and memory usage.   <br />+  The SDK now implements a new type of preview called `ImagePreviewSurfaceTarget` which works with the application-provided Android Surface object. It is not a subclass of Android View, which provides better flexibility. <br />+  Fixed the case where `onFrame` callback for remote participant is called at the wrong time with the wrong size. <br />+  `SurfaceSource # getInputSurface` is now annotated with `@Nullable`. Your code should check it before using it. <br />+  Added `UserId` and `attributes` to `ParticipantInfo`. The `UserId` and `attributes` properties are embedded in the token and applications can retrieve them via `ParticipantInfo` whenever a participant joins. <br />+  Camera capture and preview rendering now defaults to 720 x 1280 or publish resolution (whichever is greater) at 15 fps. You can adjust the resolution and/or the fps using `StageVideoConfiguration # setCameraCaptureQuality`. <br />+  `IllegalArgumentException` thrown when setting configuration properties now includes the provided value in the exception message.  |
+| [iOS Broadcast SDK 1.13.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios)+  Fixed the issue where the SDK does not change video configuration if the video configuration is updated before publishing. <br />+  Incorporated the Google fix for a LibVPX security vulnerability (CVE-2023-5217). (Note that the Android SDK did not require any changes for this issue.) <br />+  Applications using other libraries that include `libWebRTC` will no longer have conflicts with the IVS Broadcast SDK. <br />+  All methods on the `IVSStageRenderer` protocol are now marked `@optional`. <br />+  Microphones and cameras returned by our SDKs now have a guaranteed sorting order, as documented in the SDKs themselves.  <br />+  Multiple cameras can now have a value of `true` for their `isDefault` property, one for each position as determined by the operating system. <br />+  Added `IVSStageAudioManager`, which allows precise control over the underlying `AVAudioSession` to enable a wider variety of use cases for Stages functionality. <br />+  Added `UserId` to `ParticipantInfo`.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1130-rt-sdk-size-android"></a>
@@ -1801,7 +1801,7 @@ In the *IVS Low-Latency Streaming User Guide*, see:
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.6.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.6.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Improved Time-To-Video (TTV). <br />+  Added `maxAudioBitrate` configuration, supporting up to 128kbps of mono or stereo audio channels.  |
 
 ## October 12, 2023
 <a name="oct12-23"></a>
@@ -1821,7 +1821,7 @@ We also added six fields to the Participant API object: `browserName`, `browserV
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.12.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.12.1](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android)+  Fixed a bug where calling `BroadcastSession.setListener` resulted in an error.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-android-1121-sdk-size-android-rt"></a>
@@ -1841,7 +1841,7 @@ We also added six fields to the Participant API object: `browserName`, `browserV
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.5.2](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.5.2](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed a bug that prevented republishing with `refreshStrategy` when the published state enters an `ERRORED` state.  |
 
 ## August 23, 2023
 <a name="aug23-23_2"></a>
@@ -1851,10 +1851,10 @@ We also added six fields to the Participant API object: `browserName`, `browserV
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.5.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| All mobile (Android and iOS) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.12.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.12.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.5.1](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed a bug with internal Maybe types on TypeScript 5. <br />+  Added better detection for Simulcast support. <br />+  Fixed two race conditions with `refreshStrategy` when trying to publish. <br />+  Fixed a race condition with `refreshStrategy` when trying to update participants to subscribe to.  |
+| All mobile (Android and iOS) |  +  Fixed a rare issue where publishing action is never completed. <br />+  Improved the stability of stages by reducing occurrences of rare crashes. <br />+  Improved the stability of stages by resolving race-condition issues caused by rapid join / leave. <br />+  Added a new `setOnFrameCallback` method on `ImageDevice`. This allows observation as frames pass through the device itself, giving insight into the aspect ratio of the latest images. This method also can be used to detect when the first frame is rendered for a remote participant in a stage.   |
+| [Android Broadcast SDK 1.12.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android)+  Android 9 is now supported. <br />+  Improved CPU usage and performance.  |
+| [iOS Broadcast SDK 1.12.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios)+  Corrected the signature of `IVSDeviceDiscovery.createAudioSourceWithName` to return an `IVSCustomAudioSource` instead of `IVSCustomImageSource`.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-151-1120-rt-sdk-size-android"></a>
@@ -1881,10 +1881,10 @@ We also added six fields to the Participant API object: `browserName`, `browserV
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.5.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.5.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Added Simulcast – When enabled, this feature allows the publisher to send high- and low-quality layers of video. Subscribers automatically select their optimal quality based on their network conditions. See [Optimizing Media](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/web-publish-subscribe.html#web-publish-subscribe-optimizing-media).  |
 | All mobile (Android and iOS) | Added Simulcast – When enabled, this feature allows the publisher to send high- and low-quality layers of video. Subscribers automatically select their optimal quality based on their network conditions. See “Enable/Disable Layered Encoding with Simulcast” in the [Android](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/android-publish-subscribe.html#android-publish-subscribe-simulcast) and [iOS](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/ios-publish-subscribe.html#ios-publish-subscribe-simulcast) Broadcast SDK Guides. |
-| [Android Broadcast SDK 1.11.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/android)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.11.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.11.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.11.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/ios)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.11.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/android)+  Fixed an issue where creating many stages eventually results in a crash. (The exact number of stages depends on the device.)  |
+| [iOS Broadcast SDK 1.11.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.11.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.11.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/ios)+  Corrected the signature of `IVSDeviceDiscovery.createAudioSourceWithName` to return `IVSCustomAudioSource` instead of `IVSCustomImageSource`.  |
 
 #### Broadcast SDK Size: Android
 <a name="simulcast-ga-android-size"></a>

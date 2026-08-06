@@ -26,6 +26,6 @@ The following table lists the changes included in this release.
 | **Platform** | **Update** |
 | --- | --- |
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-02-04-monthly-rt-release.html) |
-| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | No updates to language versions.<br />Package updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-02-04-monthly-rt-release.html) |
+| **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | No updates to language versions.<br />Package updates:+  Updated SQLite to 3.48.0.  |
 | **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 18 to version 18.20.6.<br />No tools updates. |
-| **Corretto**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html) | Language runtime updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-02-04-monthly-rt-release.html)<br />No tools updates. |
+| **Corretto**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html) | Language runtime updates:+  Updated Corretto 11 to version 11.0.26.4.1. <br />+  Updated Corretto 8 to version 8.442.06.1. <br />No tools updates. |

@@ -78,7 +78,7 @@ The following example object launches an EC2 instance into a nondefault VPC, wit
 
 | Object Invocation Fields | Description | Slot Type |
 | --- | --- | --- |
-| schedule | This object is invoked within the execution of a schedule interval. <br />To set the dependency execution order for this object,specify a schedule reference to another object. You can do this in one of the following ways:[See the AWS documentation website for more details](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-ec2resource.html) | Reference Object, for example "schedule":{"ref":"myScheduleId"} |
+| schedule | This object is invoked within the execution of a schedule interval. <br />To set the dependency execution order for this object,specify a schedule reference to another object. You can do this in one of the following ways:+  To ensure that all objects in the pipeline inherit the schedule, set a schedule on the object explicitly: `"schedule": {"ref": "DefaultSchedule"}`. In most cases, it is useful to put the schedule reference on the default pipeline object, so that all objects inherit that schedule. <br />+  If the pipeline has schedules nested within the master schedule, you can create a parent object that has a schedule reference. For more information about example optional schedule configurations, see [https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-schedule.html)  | Reference Object, for example "schedule":{"ref":"myScheduleId"} |
 
 ****
 
@@ -112,7 +112,7 @@ The following example object launches an EC2 instance into a nondefault VPC, wit
 | retryDelay | The timeout duration between two retry attempts. | Period |
 | runAsUser | The user to run the TaskRunner. | String |
 | runsOn | This field is not allowed on this object. | Reference Object, for example, "runsOn":{"ref":"myResourceId"} |
-| scheduleType | Schedule type allows you to specify whether the objects in your pipeline definition should be scheduled at the beginning of an interval, at the end of the interval, or on demand.<br />Values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-object-ec2resource.html) | Enumeration |
+| scheduleType | Schedule type allows you to specify whether the objects in your pipeline definition should be scheduled at the beginning of an interval, at the end of the interval, or on demand.<br />Values are:+   `timeseries`. Instances are scheduled at the end of each interval. <br />+  `cron`. Instances are scheduled at the beginning of each interval. <br />+  `ondemand`. Allows you to run a pipeline one time per activation. You do not have to clone or re-create the pipeline to run it again. If you use an on-demand schedule, it must be specified in the default object and must be the only `scheduleType` specified for objects in the pipeline. To use on-demand pipelines, call the `ActivatePipeline` operation for each subsequent run.   | Enumeration |
 | securityGroupIds | The IDs of one or more Amazon EC2 security groups to use for the instances in the resource pool. | String |
 | securityGroups | One or more Amazon EC2 security groups to use for the instances in the resource pool. | String |
 | spotBidPrice | The maximum amount per hour for your Spot Instance in dollars, which is a decimal value between 0 and 20.00, exclusive. | String |

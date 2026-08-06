@@ -161,7 +161,8 @@ Content-type: application/json
                         "ConstantType": "{{string}}",
                         "SingularConstant": "{{string}}"
                      },
-                     "Inverse": {{boolean}}
+                     "Inverse": {{boolean}},
+                     "NullFilter": "{{string}}"
                   },
                   "DateRangeFilter": {
                      "Constant": {
@@ -171,7 +172,8 @@ Content-type: application/json
                            "Minimum": "{{string}}"
                         }
                      },
-                     "Inclusive": {{boolean}}
+                     "Inclusive": {{boolean}},
+                     "NullFilter": "{{string}}"
                   },
                   "FilterClass": "{{string}}",
                   "FilterDescription": "{{string}}",
@@ -191,7 +193,9 @@ Content-type: application/json
                      "Constant": {
                         "ConstantType": "{{string}}",
                         "SingularConstant": "{{string}}"
-                     }
+                     },
+                     "Inverse": {{boolean}},
+                     "NullFilter": "{{string}}"
                   },
                   "NumericRangeFilter": {
                      "Aggregation": "{{string}}",
@@ -202,7 +206,9 @@ Content-type: application/json
                            "Minimum": "{{string}}"
                         }
                      },
-                     "Inclusive": {{boolean}}
+                     "Inclusive": {{boolean}},
+                     "Inverse": {{boolean}},
+                     "NullFilter": "{{string}}"
                   },
                   "OperandFieldName": "{{string}}",
                   "RelativeDateFilter": {
@@ -210,6 +216,7 @@ Content-type: application/json
                         "ConstantType": "{{string}}",
                         "SingularConstant": "{{string}}"
                      },
+                     "NullFilter": "{{string}}",
                      "RelativeDateFilterFunction": "{{string}}",
                      "TimeGranularity": "{{string}}"
                   }
@@ -220,27 +227,38 @@ Content-type: application/json
                   "Definition": [
                      {
                         "FieldName": "{{string}}",
+                        "IsHidden": {{boolean}},
                         "Metric": {
                            "Aggregation": "{{string}}",
                            "AggregationFunctionParameters": {
                               "{{string}}" : "{{string}}"
                            }
                         },
+                        "PresentationOrder": {{number}},
                         "PropertyName": "{{string}}",
                         "PropertyRole": "{{string}}",
-                        "PropertyUsage": "{{string}}"
+                        "PropertyUsage": "{{string}}",
+                        "RankOrder": {{number}}
                      }
                   ],
                   "EntityDescription": "{{string}}",
                   "EntityName": "{{string}}",
                   "EntitySynonyms": [ "{{string}}" ],
+                  "PresentationOrder": {{number}},
+                  "RankOrder": {{number}},
                   "SemanticEntityType": {
                      "SubTypeName": "{{string}}",
                      "TypeName": "{{string}}",
                      "TypeParameters": {
                         "{{string}}" : "{{string}}"
                      }
-                  }
+                  },
+                  "Sort": [
+                     {
+                        "Direction": "{{string}}",
+                        "FieldName": "{{string}}"
+                     }
+                  ]
                }
             ]
          }

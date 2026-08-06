@@ -19,6 +19,6 @@ The `default` app, which manages the Studio UI, is not automatically tagged.
 
 |  SageMaker AI resource  |  Affected API calls  |
 | --- | --- |
-|  ImageVersionArn  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/domain-multiple-tag.html)  |
+|  ImageVersionArn  |  +  [describe-image-version](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-image-version.html) <br />+  [update-image-version](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/update-image-version.html) <br />+  [delete-image-version](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-image-version.html)   |
 |  ModelCardExportJobArn  | [describe-model-card-export-job](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-card-export-job.html)  |
 |  ModelPackageArn  | [describe-model-package](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-package.html)  |

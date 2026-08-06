@@ -337,5 +337,5 @@ The following table describes the changes in each version of the component.
 | 2.1.4 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.3.0 release. |
-| 2.1.1 |  <a name="changelog-tensorflow-lite-object-detection-2.1.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-lite-object-detection-component.html)  |
+| 2.1.1 |  <a name="changelog-tensorflow-lite-object-detection-2.1.1"></a>**Bug fixes and improvements**<br />   Fixes an image scaling issue that resulted in inaccurate bounding boxes in the sample TensorFlow Lite object detection inference results.     |
 | 2.1.0 | Initial version. |

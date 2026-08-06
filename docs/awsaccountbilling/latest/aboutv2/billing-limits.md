@@ -31,9 +31,9 @@ See the following quotas and restrictions for cost categories.
 | The total number of cost categories for a management account. | 50 |
 | The number of cost category rules for a cost category (API). | 500 |
 | The number of cost category rules for a cost category (UI). | 100 |
-|  Cost category names. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  |
+|  Cost category names. |  +  Names must be unique <br />+  Case sensitive   |
 | Cost category value names. | Names don't have to be unique |
-| The type and number of characters allowed in a cost category name and value name. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  |
+| The type and number of characters allowed in a cost category name and value name. |  +  Numbers: `0-9` <br />+  Unicode letters <br />+  `Space`, if it's not used at the beginning or end of the name <br />+  The following symbols: underscore (`_`) or en dash (-)   |
 | The number of split charge rules for a cost category. | 10 |
 
 ## Purchase orders
@@ -43,7 +43,7 @@ See the following quotas and restrictions for purchase orders.
 
 | Description | Quotas and restrictions |
 | --- | --- |
-| The type of characters that you can use in a purchase order ID. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  |
+| The type of characters that you can use in a purchase order ID. |  +  `A-Z` and `a-z` <br />+  `Space` <br />+  The following symbols: `_.:/=+-%@`   |
 | The number of characters allowed in a purchase order ID. | 100 |
 | The number of contacts allowed for a purchase order. | 20 |
 | The number of tags allowed for a purchase order. | 50 |
@@ -58,8 +58,8 @@ See the following quotas and restrictions for Advance Pay.
 | --- | --- |
 | User entity  | AWS Inc. or AWS Europe |
 | Currency | USD |
-| Fund usage after funds are added to your Advance Pay. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  |
-| If there are unused funds in your Advance Pay. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  |
+| Fund usage after funds are added to your Advance Pay. |  +  Funds can only be used to pay for eligible AWS charges. Non-eligible charges (for example, AWS Marketplace invoices) are charged using the default payment method at the time of Advance Pay registration. <br />+ Advance Pay funds added in AWS Europe can only be used to pay AWS Europe invoices.<br />+  Funds can't be withdrawn, refunded, or transferred. <br />+  Funds can't be converted to other currencies.   |
+| If there are unused funds in your Advance Pay. |  +  You can't change your seller on record. <br />+  You can't change your preferred currency. <br />+  You can't change your default payment method.   |
 
 ## Cost allocation tags
 <a name="limits-cat"></a>
@@ -114,7 +114,7 @@ See the following quotas and restrictions for payments.
 
 | Description | Quotas and restrictions |
 | --- | --- |
-| Tagging payment instruments. | This feature supports the following payment methods:[See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)<br />This feature doesn't support the following payment methods:[See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) |
+| Tagging payment instruments. | This feature supports the following payment methods:+ Credit cards<br />+ Bank accounts (ACH)<br />This feature doesn't support the following payment methods:+ Advance pay<br />+ Net Banking<br />+ China bank redirect<br />+ PIX<br />+ United Payments Interface (UPI)<br />+ Pay by invoice |
 
 ## AWS invoice configuration
 <a name="limits-invoicing"></a>
@@ -124,4 +124,4 @@ See the following quotas and restrictions for Invoice configuration.
 | Description | Quotas and restrictions |
 | --- | --- |
 | The number of invoice units for a payer account. | 500 |
-| The type of characters allowed in an invoice unit name. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) |
+| The type of characters allowed in an invoice unit name. | +  The name must be between 1-50 characters. <br />+  Letters: `A-Z` and `a-z` <br />+  Numbers: `0-9` <br />+  `Space` <br />+  The following symbols: hyphen (`-`), underscore (`_`)  |

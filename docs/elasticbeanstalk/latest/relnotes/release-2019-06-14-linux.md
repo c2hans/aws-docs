@@ -22,7 +22,7 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-14-linux.html) |
 | **Instance types** | Added support for an additional Amazon EC2 instance type in some AWS Regions, as listed in the following table.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-14-linux.html) |
 | **Go** | Updated to minor revision 1.12.6. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
-| **T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-06-14-linux.html)  |
+| **T3a** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Europe (Ireland) – eu-west-1  |
 
 ## New platform versions
 <a name="release-2019-06-14-linux.platforms"></a>

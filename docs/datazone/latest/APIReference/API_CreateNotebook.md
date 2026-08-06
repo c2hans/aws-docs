@@ -111,6 +111,15 @@ Content-type: application/json
    "error": {
       "message": "string"
    },
+   "gitMetadata": {
+      "branch": "string",
+      "commitHash": "string",
+      "commitMessage": "string",
+      "committedAt": number,
+      "connectionId": "string",
+      "fileName": "string",
+      "repository": "string"
+   },
    "id": "string",
    "lockedAt": number,
    "lockedBy": "string",
@@ -172,6 +181,10 @@ Type: [EnvironmentConfig](API_EnvironmentConfig.md) object
 The error details if the notebook creation failed.
 Type: [NotebookError](API_NotebookError.md) object
 
+ ** [gitMetadata](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-gitMetadata"></a>
+The Git metadata associated with the notebook.
+Type: [GitMetadata](API_GitMetadata.md) object
+
  ** [id](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-id"></a>
 The identifier of the notebook.
 Type: String
@@ -216,7 +229,7 @@ Value Length Constraints: Minimum length of 0. Maximum length of 1024.
  ** [status](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-status"></a>
 The status of the notebook.
 Type: String
-Valid Values: `ACTIVE | ARCHIVED`
+Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 
  ** [updatedAt](#API_CreateNotebook_ResponseSyntax) **   <a name="datazone-CreateNotebook-response-updatedAt"></a>
 The timestamp of when the notebook was last updated.

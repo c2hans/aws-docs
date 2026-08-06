@@ -45,8 +45,8 @@ The parameters to the function are listed in the following table.
 | c | CURSOR to Streaming Result Set |
 | `rankByColumnName` | String naming the column to use for ranking the group. |
 | `rankOutColumnName` | String naming the column to use for returning the rank.<br />This string must match the name of the `groupRank` column in the `RETURNS` clause of the `CREATE FUNCTION` statement. |
-| `sortOrder` | Controls ordering of rows for rank assignment.<br />Valid values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-reference-group-rank-udx.html) |
-| `outputOrder` | Controls ordering of output. Valid values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/sqlref/sql-reference-group-rank-udx.html) |
+| `sortOrder` | Controls ordering of rows for rank assignment.<br />Valid values are as follows:+  'asc' - Ascending based on the rank. <br />+  'desc' - Descending based on the rank.  |
+| `outputOrder` | Controls ordering of output. Valid values are as follows:+  'asc' - Ascending based on the rank. <br />+  'desc' - Descending based on the rank.  |
 | `maxIdle` | Time limit in milliseconds for holding a group for ranking.<br />When `maxIdle` expires, the current group is released to the stream. A value of zero indicates no idle timeout. |
 | `outputMax` | Maximum number of rows the function outputs in a given group.<br />A value of 0 indicates no limit. |
 

@@ -121,7 +121,7 @@ AWS DMS version 3.6.0 includes the following resolved issues:
 | Transformation support for enhanced throughput feature | Introduce support for all transformation rules for the enhanced throughput feature. |
 | Enhanced logging for missing target columns | Enhanced logging to inform customers about missing target table columns at default logging level. This improvement changes the logging level from VERBOSE to WARNING, making column discrepancy notifications more visible without requiring detailed debug settings. |
 | SQL Server Binary(16) to PostgreSQL UUID migration | Added support for migrating SQL Server Binary(16) data types to PostgreSQL UUID format. This enables seamless conversion of binary GUID data to native UUID types, improving data type compatibility between SQL Server and PostgreSQL endpoints. |
-| Support for PostgreSQL 17 | Introduced support for PostgreSQL version 17. For more information, see:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReleaseNotes.html) |
+| Support for PostgreSQL 17 | Introduced support for PostgreSQL version 17. For more information, see:+  [Using a PostgreSQL database as an AWS DMS source](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.PostgreSQL.html) <br />+  [Using a PostgreSQL database as a target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html)  |
 
 AWS DMS version 3.5.4 includes the following resolved issues:
 
@@ -233,7 +233,7 @@ AWS DMS version 3.5.3 includes the following resolved issues:
 | S3 as a target CdcMaxBatchInterval Out of Memory issue | Fixed an issue for S3 as a target where the AWS DMS task would fail with an Out of Memory condition with CdcMaxBatchInterval set. |
 | Oracle source driver | Upgraded the AWS DMS Oracle source driver from v12.2 to v19.18. |
 | LOB truncation warning with SQL Server source | Enhanced logging for SQL Server as a source to show warnings on LOB truncation during CDC. |
-| Oracle binary reader enhancements | Enhanced the Oracle source binary reader to support the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_ReleaseNotes.html) |
+| Oracle binary reader enhancements | Enhanced the Oracle source binary reader to support the following: + Big Endian platform<br />+ Parallel DML hints with HCC compression<br />+ Advanced Oracle Compressions with Golden Gate enabled |
 | Skip cached changes issue after interruptions | Fixed an issue for skipping cached changes in case of an unexpected interruption while applying those changes. |
 | MongoDB AWS DMS swap file issue | Fixed an issue for MongoDB source where AWS DMS task would fail to resume after AWS DMS upgrade when AWS DMS swap file was present. |
 | MySQL to Amazon Redshift JSON migration issue. | Fixed an issue for MySQL source where the JSON data type was not being hadled propely with Batch Apply enabled. |

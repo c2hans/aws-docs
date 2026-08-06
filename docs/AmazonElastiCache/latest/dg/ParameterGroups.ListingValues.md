@@ -43,18 +43,18 @@ aws elasticache describe-cache-parameters ^
 ```
 
 **Example**
-The following sample code list all the parameters and their values for the parameter group *myRedis28*.
+The following sample code list all the parameters and their values for the parameter group *myRed7*.
 For Linux, macOS, or Unix:
 
 ```
 aws elasticache describe-cache-parameters \
-    --cache-parameter-group-name {{myRedis28}}
+    --cache-parameter-group-name {{myRed7}}
 ```
 For Windows:
 
 ```
 aws elasticache describe-cache-parameters ^
-    --cache-parameter-group-name {{myRed28}}
+    --cache-parameter-group-name {{myRed7}}
 ```
 
 For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-parameters.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/describe-cache-parameters.html).
@@ -90,20 +90,20 @@ The response from this action will look something like this. This response has b
         <Description>The maximum configurable amount of memory to use to store items, in megabytes.</Description>
         <CacheNodeTypeSpecificValues>
           <CacheNodeTypeSpecificValue>
-            <Value>1000</Value>
-            <CacheClusterClass>cache.c1.medium</CacheClusterClass>
+            <Value>512</Value>
+            <CacheClusterClass>cache.t3.micro</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
           <CacheNodeTypeSpecificValue>
-            <Value>6000</Value>
-            <CacheClusterClass>cache.c1.xlarge</CacheClusterClass>
+            <Value>1402</Value>
+            <CacheClusterClass>cache.t3.small</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
           <CacheNodeTypeSpecificValue>
-            <Value>7100</Value>
-            <CacheClusterClass>cache.m1.large</CacheClusterClass>
+            <Value>6537</Value>
+            <CacheClusterClass>cache.m5.large</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
           <CacheNodeTypeSpecificValue>
-            <Value>1300</Value>
-            <CacheClusterClass>cache.m1.small</CacheClusterClass>
+            <Value>13248</Value>
+            <CacheClusterClass>cache.m5.xlarge</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
 
 ...output omitted...
@@ -117,12 +117,12 @@ The response from this action will look something like this. This response has b
 ```
 
 **Example**
-The following sample code list all the parameters for the parameter group *myRed28*.
+The following sample code list all the parameters for the parameter group *myRed7*.
 
 ```
 https://elasticache.us-west-2.amazonaws.com/
    ?Action=DescribeCacheParameters
-   &CacheParameterGroupName={{myRed28}}
+   &CacheParameterGroupName={{myRed7}}
    &SignatureVersion=4
    &SignatureMethod=HmacSHA256
    &Timestamp=20150202T192317Z
@@ -142,20 +142,20 @@ The response from this action will look something like this. This response has b
         <Description>The maximum configurable amount of memory to use to store items, in megabytes.</Description>
         <CacheNodeTypeSpecificValues>
           <CacheNodeTypeSpecificValue>
-            <Value>1000</Value>
-            <CacheClusterClass>cache.c1.medium</CacheClusterClass>
+            <Value>512</Value>
+            <CacheClusterClass>cache.t3.micro</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
           <CacheNodeTypeSpecificValue>
-            <Value>6000</Value>
-            <CacheClusterClass>cache.c1.xlarge</CacheClusterClass>
+            <Value>1402</Value>
+            <CacheClusterClass>cache.t3.small</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
           <CacheNodeTypeSpecificValue>
-            <Value>7100</Value>
-            <CacheClusterClass>cache.m1.large</CacheClusterClass>
+            <Value>6537</Value>
+            <CacheClusterClass>cache.m5.large</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
           <CacheNodeTypeSpecificValue>
-            <Value>1300</Value>
-            <CacheClusterClass>cache.m1.small</CacheClusterClass>
+            <Value>13248</Value>
+            <CacheClusterClass>cache.m5.xlarge</CacheClusterClass>
           </CacheNodeTypeSpecificValue>
 
 ...output omitted...

@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-pol
 # IAM Access Analyzer policy generation
 <a name="access-analyzer-policy-generation"></a>
 
-As an administrator or developer, you might grant permissions to IAM entities (users or roles) beyond what they require. IAM provides several options to help you refine the permissions that you grant. One option is to generate an IAM policy that is based on access activity for an entity. IAM Access Analyzer reviews your AWS CloudTrail logs and generates a policy template that contains the permissions that the entity used in your specified date range. You can use the template to create a policy with fine-grained permissions that grant only the permissions that are required to support your specific use case.
+As an administrator or developer, you might grant permissions to IAM entities (users or roles) beyond what they require. IAM provides several options to help you refine the permissions that you grant.
+
+One option is to generate an IAM policy that is based on access activity for an entity. IAM Access Analyzer reviews your AWS CloudTrail logs and generates a policy template that contains the permissions that the entity used in your specified date range. You can use the template to create a policy with fine-grained permissions that grant only the permissions that are required to support your specific use case.
 
 **Topics**
 + [How policy generation works](#access-analyzer-policy-generation-howitworks)
@@ -183,7 +185,7 @@ When you use the AWS Management Console to generate a policy, you must have `clo
   "Sid": "AllowUserToListTrails",
   "Effect": "Allow",
   "Action": [
-    "CloudTrail:ListTrails"
+    "cloudtrail:ListTrails"
   ],
   "Resource": "*"
 }
@@ -274,7 +276,9 @@ If you have permissions to create and attach IAM policies, you can create a mana
 ## Generate a policy using AWS CloudTrail data in another account
 <a name="access-analyzer-policy-generation-cross-account"></a>
 
-You might create CloudTrail trails that store data in central accounts to streamline governing activities. For example, you can use AWS Organizations to create a trail that logs all events for all of the AWS accounts in that organization. The trail belongs to a central account. If you want to generate a policy for a user or role in an account that is different from the account where your CloudTrail log data is stored, you must grant cross-account access. To do this, you need both a role and a bucket policy that grant IAM Access Analyzer permissions to your CloudTrail logs. For more information about creating Organizations trails, see [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html).
+You might create CloudTrail trails that store data in central accounts to streamline governing activities. For example, you can use AWS Organizations to create a trail that logs all events for all of the AWS accounts in that organization. The trail belongs to a central account.
+
+If you want to generate a policy for a user or role in an account that is different from the account where your CloudTrail log data is stored, you must grant cross-account access. To do this, you need both a role and a bucket policy that grant IAM Access Analyzer permissions to your CloudTrail logs. For more information about creating Organizations trails, see [Creating a trail for an organization](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/creating-trail-organization.html).
 
 In this example, assume that you want to generate a policy for a user or role in account A. The CloudTrail trail in account A stores CloudTrail logs in a bucket in account B. Before you can generate a policy, you must make the following updates:
 

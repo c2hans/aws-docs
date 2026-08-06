@@ -33,13 +33,13 @@ Return to [AWS services](amazon-web-services-cloud-platform.md).
 
 | Database | Use cases | AWS services |
 | --- | --- | --- |
-| Relational | Traditional applications, enterprise resource planning (ERP), customer relationship management (CRM), e-commerce |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
-| Key-value | High-traffic web applications, e-commerce systems, gaming applications  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
-| In-memory | Caching, session management, gaming leaderboards, geospatial applications  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
-| Document | Content management, catalogs, user profiles |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
-| Wide column | High-scale industrial apps for equipment maintenance, fleet management, and route optimization |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
-| Graph | Fraud detection, social networking, recommendation engines  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
-| Time series | Internet of Things (IoT) applications, DevOps, industrial telemetry  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/aws-overview/database.html)  |
+| Relational | Traditional applications, enterprise resource planning (ERP), customer relationship management (CRM), e-commerce |  +  **[Amazon Aurora](https://aws.amazon.com/rds/aurora/)** — Designed for unparalleled high performance and availability at global scale with full MySQL and PostgreSQL compatibility <br />+  **[Amazon RDS](https://aws.amazon.com/rds/)** — Set up, operate, and scale a relational database in the cloud with just a few clicks <br />+  **[Amazon Redshift](https://aws.amazon.com/redshift/)** — Accelerate your time to insights with fast, easy, and secure cloud data warehousing at scale   |
+| Key-value | High-traffic web applications, e-commerce systems, gaming applications  |  +  **[Amazon DynamoDB](https://aws.amazon.com/dynamodb/)** — Fast, flexible NoSQL database service for single-digit millisecond performance at any scale   |
+| In-memory | Caching, session management, gaming leaderboards, geospatial applications  |  +  **[Amazon ElastiCache](https://aws.amazon.com/elasticache/)** — Unlock microsecond latency and scale with in-memory caching <br />+  **[Amazon MemoryDB](https://aws.amazon.com/memorydb/)** — Redis-compatible, durable, in-memory database service for ultra-fast performance   |
+| Document | Content management, catalogs, user profiles |  +  **[Amazon DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb/)** — Scale JSON workloads with ease using a fully managed document database service   |
+| Wide column | High-scale industrial apps for equipment maintenance, fleet management, and route optimization |  +  **[Amazon Keyspaces](https://aws.amazon.com/keyspaces/)** — A scalable, highly available, and managed Apache Cassandra–compatible database service    |
+| Graph | Fraud detection, social networking, recommendation engines  |  +  **[Amazon Neptune](https://aws.amazon.com/neptune/)** — Build and run graph applications with highly connected datasets   |
+| Time series | Internet of Things (IoT) applications, DevOps, industrial telemetry  |  +  **[Amazon Timestream](https://aws.amazon.com/timestream/)** — Fast, scalable, serverless time series database   |
 
 ## Amazon Aurora
 <a name="amazon-aurora"></a>

@@ -50,11 +50,11 @@ The following table shows the wrapping algorithms that are supported for each ty
 
 | Key material | Supported wrapping algorithm and spec |
 | --- | --- |
-| Symmetric encryption key 256-bit AES key<br /> <br />128-bit SM4 key (China Regions only) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-get-public-key-and-token.html)  |
-| Asymmetric RSA private key  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-get-public-key-and-token.html)  |
-| Asymmetric elliptic curve (ECC) private key  <br />You cannot use the RSAES\_OAEP\_SHA\_\* wrapping algorithms with the RSA\_2048 wrapping key spec to wrap ECC\_NIST\_P521 key material. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-get-public-key-and-token.html)  |
-| Asymmetric SM2 private key (China Regions only) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-get-public-key-and-token.html)  |
-| HMAC key |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-get-public-key-and-token.html)  |
+| Symmetric encryption key 256-bit AES key<br /> <br />128-bit SM4 key (China Regions only) |  **Wrapping algorithms:**<br /> RSAES\_OAEP\_SHA\_256 <br />RSAES\_OAEP\_SHA\_1 <br />**Deprecated wrapping algorithms:**<br /> RSAES\_PKCS1\_V1  As of October 10, 2023, AWS KMS does not support the RSAES\_PKCS1\_V1\_5 wrapping algorithm.  <br />**Wrapping key specs:**<br /> RSA\_2048 <br />RSA\_3072 <br />RSA\_4096   |
+| Asymmetric RSA private key  |  **Wrapping algorithms:**<br /> RSA\_AES\_KEY\_WRAP\_SHA\_256 <br />RSA\_AES\_KEY\_WRAP\_SHA\_1 <br />SM2PKE (China Regions only) <br />**Wrapping key specs:**<br /> RSA\_2048 <br />RSA\_3072 <br />RSA\_4096 <br />SM2 (China Regions only)   |
+| Asymmetric elliptic curve (ECC) private key  <br />You cannot use the RSAES\_OAEP\_SHA\_\* wrapping algorithms with the RSA\_2048 wrapping key spec to wrap ECC\_NIST\_P521 key material. |  **Wrapping algorithms:**<br /> RSA\_AES\_KEY\_WRAP\_SHA\_256 <br />RSA\_AES\_KEY\_WRAP\_SHA\_1 <br />RSAES\_OAEP\_SHA\_256 <br />RSAES\_OAEP\_SHA\_1 <br />SM2PKE (China Regions only) <br />**Wrapping key specs:**<br /> RSA\_2048 <br />RSA\_3072 <br />RSA\_4096 <br />SM2 (China Regions only)   |
+| Asymmetric SM2 private key (China Regions only) |  **Wrapping algorithms:**<br /> RSAES\_OAEP\_SHA\_256 <br />RSAES\_OAEP\_SHA\_1 <br />SM2PKE (China Regions only) <br />**Wrapping key specs:**<br /> RSA\_2048 <br />RSA\_3072 <br />RSA\_4096 <br />SM2 (China Regions only)   |
+| HMAC key |  **Wrapping algorithms:**<br /> RSAES\_OAEP\_SHA\_256 <br />RSAES\_OAEP\_SHA\_1 <br />**Wrapping key specs:**<br /> RSA\_2048 <br />RSA\_3072 <br />RSA\_4096   |
 
 **Note**
 The `RSA_AES_KEY_WRAP_SHA_256` and `RSA_AES_KEY_WRAP_SHA_1` wrapping algorithms are not supported in China Regions.

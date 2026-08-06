@@ -56,6 +56,7 @@ If a viewer sends a request to CloudFront and includes an `X-Forwarded-For` requ
 
 **Note**
 The `X-Forwarded-For` header contains IPv4 addresses (such as 192.0.2.44) and IPv6 addresses (such as 2001:0db8:85a3::8a2e:0370:7334).
+When parsing IPv6 addresses in the `X-Forwarded-For` header, use standard IP address parsing libraries that can handle any valid RFC 4291 IPv6 format.
 
 ### Conditional GET requests
 <a name="RequestS3ConditionalGETs"></a>

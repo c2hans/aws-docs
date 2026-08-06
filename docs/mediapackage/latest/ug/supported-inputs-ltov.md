@@ -14,7 +14,7 @@ These are the input types that MediaPackage supports for live-to-VOD assets.
 
 | MediaPackage input type | Use case |
 | --- | --- |
-| HLS | Extract a portion of a live HLS or DASH endpoint in MediaPackage and save it as a live-to-VOD asset.<br />Additional requirements:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html) |
+| HLS | Extract a portion of a live HLS or DASH endpoint in MediaPackage and save it as a live-to-VOD asset.<br />Additional requirements:+  The endpoint must have a defined startover window, which determines the maximum length of the live-to-VOD asset that can be harvested. <br />+  Streams can contain either muxed video and audio tracks, or unmuxed tracks.  <br />+  The input must contain at least one video track. MediaPackage doesn't support inputs that contain no video track.  |
 
 ## Supported input codecs
 <a name="supported-inputs-codecs-ltov"></a>
@@ -23,7 +23,7 @@ These are the video, audio, and subtitles codecs that MediaPackage supports for 
 
 | Media container | Video codecs | Audio codecs | Subtitles/captions format |
 | --- | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |
+|  +  Video: TS <br />+  Audio: TS, AAC, AC3, or EC3   |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  WebVTT <br />+  CEA-608 and CEA-708 closed captions   |
 
 ## Supported output codecs
 <a name="supported-outputs-codecs-ltov"></a>
@@ -32,5 +32,5 @@ These are the video, audio, and subtitles codecs that MediaPackage supports when
 
 | Endpoint type | Manifest format | Media container | Video codecs | Audio codecs | Subtitles/captions format |
 | --- | --- | --- | --- | --- | --- |
-| Apple HLS | HLS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |
-| DASH-ISO | MPEG-DASH | MP4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/ug/supported-inputs-ltov.html)  |
+| Apple HLS | HLS |  +  Video: TS <br />+  Audio: TS or AAC   |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  WebVTT <br />+  CEA-608 and CEA-708 closed captions   |
+| DASH-ISO | MPEG-DASH | MP4 |  +  H.264 (AVC) <br />+  H.265 (HEVC) with HDR-10 support   |  +  AAC <br />+  Dolby Digital <br />+  Dolby Digital Plus   |  +  EBU-TT <br />+  CEA-608 and CEA-708 closed captions   |

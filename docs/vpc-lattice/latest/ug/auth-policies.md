@@ -288,8 +288,8 @@ You can restrict access to specific resources by creating an auth policy that us
 
 | Protocol | Examples |
 | --- | --- |
-| HTTP |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc-lattice/latest/ug/auth-policies.html)  |
-| gRPC |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc-lattice/latest/ug/auth-policies.html)  |
+| HTTP |  +  `"Resource": "arn:aws:vpc-lattice:us-west-2:1234567890:service/svc-0123456789abcdef0/rates"` <br />+  `"Resource": "*/rates"` <br />+  `"Resource": "*/*"`   |
+| gRPC |  +  `"Resource": "arn:aws:vpc-lattice:us-west-2:1234567890:service/svc-0123456789abcdef0/api.parking/GetRates"` <br />+  `"Resource": "arn:aws:vpc-lattice:us-west-2:1234567890:service/svc-0123456789abcdef0/api.parking/*"` <br />+  `"Resource": "arn:aws:vpc-lattice:us-west-2:1234567890:service/svc-0123456789abcdef0/*"`   |
 
 Use the following Amazon Resource Name (ARN) resource format for `<serviceARN>`:
 

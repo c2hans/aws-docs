@@ -88,7 +88,7 @@ Operations marked as **Supported with IAM permissions on Amazon S3 location** do
 | DataFrame Writer V1 | - | Not supported |
 | DataFrame Writer V2 | Same as corresponding SQL operation | Supported when appending data to an existing table. Refer to [considerations and limitations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable-considerations.html) for more information. |
 | Metadata tables | SELECT | Supported. Certain tables are hidden. Refer to [considerations and limitations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable-considerations.html) for more information. |
-| Stored procedures | - | Supported for tables that meet the following conditions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-lf-fgac1.html) |
+| Stored procedures | - | Supported for tables that meet the following conditions:+  Tables not registered in AWS Lake Formation  <br />+  Tables that do not use `register_table` and `migrate` <br /> Refer to [considerations and limitations](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless-lf-enable-considerations.html) for more information.  |
 
 **Spark configuration for Iceberg:** If you want to use Iceberg format, set the following configurations. Replace `{{DB_LOCATION}}` with the Amazon S3 path where your Iceberg tables are located, and replace the region and account ID placeholders with your own values.
 

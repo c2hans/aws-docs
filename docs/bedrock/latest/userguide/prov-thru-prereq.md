@@ -49,7 +49,7 @@ Before you can purchase and manage Provisioned Throughput, you need to fulfill t
 
 ------
 **Note**
-If you're using Provisioned Throughput with cross-Region inference, you may need additional permissions. See [Increase throughput with cross-Region inference](cross-region-inference.md) to learn more.
+If you're using Provisioned Throughput with cross-Region inference, you may need additional permissions. See [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md) to learn more.
 
       (Optional) You can restrict the role's access in the following ways:
       + To restrict the API actions that the role can make, modify the list in the `Action` field to contain only the [API operations](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrock.html#amazonbedrock-actions-as-permissions) that you want to allow access to.

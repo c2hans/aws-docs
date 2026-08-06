@@ -81,7 +81,7 @@ The hooks configuration file is loaded at `cfn-hup` daemon start up only, so new
 | --- | --- | --- |
 |  `hookname`  | A unique name for this hook.<br />*Type*: String | Yes |
 |  `triggers`  | A comma-delimited list of conditions to detect.<br />*Valid values*: `post.add`, `post.update`, or `post.remove`<br />*Example*: `post.add, post.update` | Yes |
-|  `path`  | The path to the metadata object. Supports an arbitrarily deep path within the Metadata block.<br />[See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/cfn-hup.html) | Yes |
+|  `path`  | The path to the metadata object. Supports an arbitrarily deep path within the Metadata block.<br />+  Resources.{{<LogicalResourceId>}}— monitor the last updated time of the resource, triggering on any change to the resource. <br />+  Resources.{{<LogicalResourceId>}}.PhysicalResourceId— monitor the physical ID of the resource, triggering only when the associated resource identity changes (such as a new EC2 instance). <br />+  Resources.{{<LogicalResourceId>}}.Metadata({{.optional path}})— monitor the metadata of a resource for changes (a metadata subpath may be specified to an arbitrarily deep level to monitor specific values).  | Yes |
 |  `action`  | An arbitrary shell command that is run as given. | Yes |
 |  `runas`  | A user to run the commands as. `cfn-hup` uses the su command to switch to the user. | Yes |
 

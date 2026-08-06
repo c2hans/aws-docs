@@ -7,6 +7,12 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/APIReference/API_Upd
 
 Update the details for the instance of IAM Identity Center that is owned by the AWS account.
 
+In a single `UpdateInstance` request, you can perform only one of the following operations:
++ Update the encryption configuration of the instance by specifying `EncryptionConfiguration`.
++ Enable permission sets for the instance by specifying `PermissionSetsEnabled`.
+
+A request that specifies both `EncryptionConfiguration` and `PermissionSetsEnabled` returns a `ValidationException`. To perform both operations, call `UpdateInstance` separately for each. The two calls can be made in parallel.
+
 ## Request Syntax
 <a name="API_UpdateInstance_RequestSyntax"></a>
 
@@ -17,7 +23,8 @@ Update the details for the instance of IAM Identity Center that is owned by the 
       "KmsKeyArn": "{{string}}"
    },
    "InstanceArn": "{{string}}",
-   "Name": "{{string}}"
+   "Name": "{{string}}",
+   "PermissionSetsEnabled": {{boolean}}
 }
 ```
 
@@ -45,6 +52,12 @@ Updates the instance name.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 255.
 Pattern: `[\w+=,.@-]+`
+Required: No
+
+ ** [PermissionSetsEnabled](#API_UpdateInstance_RequestSyntax) **   <a name="singlesignon-UpdateInstance-request-PermissionSetsEnabled"></a>
+Enables permission sets for this Identity Center instance. The only accepted value is `true `. After permission sets are enabled, they cannot be disabled.
+You can't set `EncryptionConfiguration` and `PermissionSetsEnabled` in the same request. To configure both, make two separate `UpdateInstance` calls. These calls can be made in parallel.
+Type: Boolean
 Required: No
 
 ## Response Elements

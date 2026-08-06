@@ -55,6 +55,15 @@ If AWS DevOps Agent incorrectly links an incident, you can manually unlink it th
 
 If AWS DevOps Agent incorrectly skips an incident, you can manually unskip it through the AWS DevOps Agent Space web app. This reschedules the incident for investigation. To adjust which incidents are skipped, modify or deactivate the skill that defines the skip criteria.
 
+## Inline mitigation proposals
+<a name="inline-mitigation-proposals"></a>
+
+When an alarm triggers an investigation, AWS DevOps Agent now presents mitigation proposals directly in the investigation view. The agent completes its root cause analysis and then surfaces the proposals inline. You do not need to start a separate mitigation step.
+
+Each proposal describes the recommended action, its expected outcome, and any conditions or prerequisites. You can review each proposal, refine its parameters, and choose whether to apply it.
+
+Investigation and mitigation run as a single automated flow. This eliminates the handoff between the two stages, so you spend less time switching between views.
+
 ## Provide feedback on investigations
 <a name="provide-feedback-on-investigations"></a>
 

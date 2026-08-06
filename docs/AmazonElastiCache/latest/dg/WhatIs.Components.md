@@ -220,7 +220,6 @@ A *backup* is a point-in-time copy of a Valkey or Redis OSS cluster or serverles
 
 Depending upon the version of Valkey or Redis OSS running on your cluster, the backup process requires differing amounts of reserved memory to succeed. For more information, see the following:
 + [Snapshot and restore](backups.md)
-+ [How synchronization and backup are implemented](Replication.Redis.Versions.md)
 + [Performance impact of backups of node-based clusters](backups.md#backups-performance)
 + [Ensuring you have enough memory to make a Valkey or Redis OSS snapshot](BestPractices.BGSAVE.md)
 

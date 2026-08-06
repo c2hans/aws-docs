@@ -175,9 +175,9 @@ The charges in the following table are for illustration only. To verify current 
 
 | Account | Number of calls | Charges |
 | --- | --- | --- |
-| Account A (owning account) | 10,000 calls |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-shared-parameters.html)  |
-| Account B (consuming account) | 20,000 calls |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-shared-parameters.html)  |
-| Account C (consuming account) | 30,000 calls |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-shared-parameters.html)  |
+| Account A (owning account) | 10,000 calls |  +  One month advanced parameter storage: USD 0.05 <br />+  10,000 calls to `MyAdvancedParameter`: USD 0.05 <br />+  **Total: USD 0.10**   |
+| Account B (consuming account) | 20,000 calls |  +  20,000 calls to `MyAdvancedParameter`: USD 0.10 <br />+  **Total: USD 0.10**   |
+| Account C (consuming account) | 30,000 calls |  +  30,000 calls to `MyAdvancedParameter`: USD 0.15 <br />+  **Total: USD 0.15**   |
 
 ## Cross-account access for closed AWS accounts
 <a name="closed-accounts"></a>

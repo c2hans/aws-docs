@@ -9,12 +9,47 @@ The following sections contain information about the CloudWatch Synthetics runti
 
 The naming convention for these runtime versions is `syn-{{language}} -{{framework}}-{{majorversion}}.{{ minorversion}}`.
 
-## syn-nodejs-playwright-7.1
-<a name="Synthetics_runtimeversion-syn-nodejs-playwright-7.1"></a>
+## syn-nodejs-playwright-8.0
+<a name="Synthetics_runtimeversion-syn-nodejs-playwright-8.0"></a>
 
 **Important**
 Starting Synthetics `syn-nodejs-playwright-5.1` and later, Synthetics runtime uses the new namespace. Please migrate the canary script to use the new namespace. Legacy namespace will be deprecated in a future release.
 @amzn/synthetics-playwright → @aws/synthetics-playwright
+
+**Major dependencies**:
++ AWS Lambda runtime Node.js 22.x
++ Playwright version 1.61.1
++ Playwright/test version 1.61.1
++ Chromium version 150.0.7871.24
++ Firefox version 151.0
+
+ **Changes in syn-nodejs-playwright-8.0**
++ Upgrade `Chromium` to 150.0.7871.24 to address the following CVEs:
+  + CVE-2026-11645
++ Upgrade `ImageMagick` to 7.1.2-27 to address the following CVEs:
+  + CVE-2026-28494
+  + CVE-2026-28691
+  + CVE-2026-28693
+  + CVE-2026-30883
+  + CVE-2026-30929
+  + CVE-2026-30931
+  + CVE-2026-32636
+  + CVE-2026-33900
+  + CVE-2026-33901
+  + CVE-2026-33905
+  + CVE-2026-33908
+
+For more information, see the following:
++  [Playwright release notes](https://playwright.dev/docs/release-notes) on the Playwright website
++  [Playwright API reference](https://playwright.dev/docs/api/class-playwright) on the Playwright website
+
+## Previous runtime versions for Node.js and Playwright
+<a name="Previousversions-nodejs-playwright"></a>
+
+The following earlier runtime versions for Node.js and Playwright are still supported.
+
+### syn-nodejs-playwright-7.1
+<a name="Synthetics_runtimeversion-syn-nodejs-playwright-7.1"></a>
 
 **Major dependencies**:
 + AWS Lambda runtime Node.js 22.x
@@ -29,15 +64,6 @@ Starting Synthetics `syn-nodejs-playwright-5.1` and later, Synthetics runtime us
   + CVE-2026-45736
 + Upgrade `fast-xml-parser` to 5.7.2 to address the following CVEs:
   + CVE-2026-41650
-
-For more information, see the following:
-+  [Playwright change log ](https://playwright.dev/docs/release-notes)
-+  [Playwright API reference](https://playwright.dev/docs/api/class-playwright)
-
-## Previous runtime versions for Node.js and Playwright
-<a name="Previousversions-nodejs-playwright"></a>
-
-The following earlier runtime versions for Node.js and Playwright are still supported.
 
 ### syn-nodejs-playwright-7.0
 <a name="Synthetics_runtimeversion-syn-nodejs-playwright-7.0"></a>

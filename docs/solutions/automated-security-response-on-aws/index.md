@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/automated-security-response-o
 
 Resolve common security threats and improve your security posture
 
-- **Version**: 3.1.7
-- **Released**: 6/2026
+- **Version**: 3.1.8
+- **Released**: 07/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
 - **Estimated cost**: [See details](/solutions/latest/automated-security-response-on-aws/cost.html)

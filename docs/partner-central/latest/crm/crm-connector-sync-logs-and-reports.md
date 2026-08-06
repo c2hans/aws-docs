@@ -49,10 +49,10 @@ The related **Sync Log** details show the individual record details processed as
 | --- | --- | --- | --- |
 | From AWS  | Inbound record retrieval  | API success  | A get call was made to retrieve the file listed from the Inbound File Retrieval operation, if one or more files exist and await processing. |
 | From AWS  | Inbound record retrieval | Partial  | The file was retrieved but processing failed for some records. Review the sync log to troubleshoot the failure. |
-| From AWS  | Inbound record retrieval | Error  | Processing failed for all records due to one of the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/crm/crm-connector-sync-logs-and-reports.html) |
+| From AWS  | Inbound record retrieval | Error  | Processing failed for all records due to one of the following reasons:+  A a connection error prevented file retrieval. <br />+  The file was retrieved but none of the records in the file could be written to your Salesforce object, typically due to a validation or permission issue.  |
 | From AWS  | Inbound record retrieval | API success  | If one or more files are present and awaiting processing, a get call is made to retrieve the file listed from the Inbound File Retrieval operation. |
 | From AWS  | Inbound record retrieval | Partial  | The file was retrieved but processing failed for some of the records. Review the sync log to troubleshoot the failure.  |
-| From AWS  | Inbound record retrieval  | Error  | Processing failed for all records due to one of the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/partner-central/latest/crm/crm-connector-sync-logs-and-reports.html) |
+| From AWS  | Inbound record retrieval  | Error  | Processing failed for all records due to one of the following reasons:+  A connection error prevented file retrieval. <br />+  The file was retrieved but none of the records in the file could be written to your Salesforce object, most likely due to a validation or permission issue.  |
 | From AWS  | Inbound record retrieval  | Processed  | Processing succeeded and the records inserted into your mapped object. |
 
 ## Reports

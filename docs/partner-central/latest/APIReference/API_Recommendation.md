@@ -26,6 +26,7 @@ Required: Yes
  ** Attributes **   <a name="AWSPartnerCentral-Type-Recommendation-Attributes"></a>
 Source-specific metadata as key-value pairs.
 Type: String to string map
+Map Entries: Minimum number of 0 items. Maximum number of 25 items.
 Required: No
 
 ## See Also

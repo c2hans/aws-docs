@@ -22,21 +22,21 @@ To use this role to access the member account, you must sign in as a user from t
 
    In the navigation pane, choose **Policies** and then choose **Create policy**.
 
-1. On the Visual editor tab, choose **Choose a service**, enter **STS** in the search box to filter the list, and then choose the **STS** option.
+1. Choose the **Visual** option.
 
-1. In the **Actions** section, enter **assume** in the search box to filter the list, and then choose the **AssumeRole** option.
+1. For **Service**, enter **STS** in the search box to filter the list, and then choose the **STS** option.
 
-1. In the **Resources** section, choose **Specific**, choose** Add ARNs**
+1. For **Actions allowed**, enter **assume** in the search box to filter the list, and then choose the **AssumeRole** option.
 
-1. In the **Specify ARN(s)** section, choose **Other account** for Resource in.
+1. For **Resources**, choose **Specific**, and then choose **Add ARNs**.
 
-1. Enter the ID of the member account you just created
+1. For **Resources in**, choose **Other account**, and enter the ID of the member account you just created.
 
-1. For **Resource role name with path**, enter the name of the role that you created in the previous section (we recommended naming it `OrganizationAccountAccessRole`).
+1. For **Resource role name with path**, enter the name of the role that you created previously (we recommended naming it `OrganizationAccountAccessRole`).
 
 1. Choose **Add ARNs** when the dialog box displays the correct ARN.
 
-1. (Optional) If you want to require multi-factor authentication (MFA), or restrict access to the role from a specified IP address range, then expand the Request conditions section, and select the options you want to enforce.
+1. (Optional) If you want to require multi-factor authentication (MFA), or restrict access to the role from a specified IP address range, expand **Request conditions**, and select the options you want to enforce.
 
 1. Choose **Next**.
 
@@ -46,13 +46,13 @@ To use this role to access the member account, you must sign in as a user from t
 
 1. <a name="step-choose-group"></a>Now that you have the policy available, you can attach it to a group.
 
-   In the navigation pane, choose **User groups** and then choose the name of the group (not the check box) whose members you want to be able to assume the role in the member account. If necessary, you can create a new group.
+   In the navigation pane, choose **IAM user groups** and then choose the name of the group (not the check box) whose members you want to be able to assume the role in the member account. If necessary, you can create a new group.
 
 1. Choose the **Permissions** tab, choose **Add permissions**, and then choose **Attach policies**.
 
 1. (Optional) In the **Search** box, you can start typing the name of your policy to filter the list until you can see the name of the policy you just created in [Step 2](#step-create-policy) through [Step 13](#step-end-policy). You can also filter out all of the AWS managed policies by choosing **All types** and then choosing **Customer managed**.
 
-1. Check the box next to your policy, and then choose **Attach policies**.
+1. Select the check box next to your policy, and then choose **Attach policies**.
 
 ------
 

@@ -79,7 +79,7 @@ The following diagram shows one Db2 instance running on-premises with a virtual 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Set environment variables. | This pattern uses the following names:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-db2-for-luw-to-amazon-ec2-by-using-log-shipping-to-reduce-outage-time.html)<br />You can change them to fit your environment. | DBA |
+| Set environment variables. | This pattern uses the following names:+ Instance name: `db2inst1`<br />+ Database name: `SAMPLE`<br />You can change them to fit your environment. | DBA |
 
 ### Configure the on-premises Db2 server
 <a name="configure-the-on-premises-db2-server"></a>
@@ -124,7 +124,7 @@ The following diagram shows one Db2 instance running on-premises with a virtual 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Bring the target database online. | During the cutover window, do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-db2-for-luw-to-amazon-ec2-by-using-log-shipping-to-reduce-outage-time.html)<br />After the last transaction log is synced into Amazon S3, run the `ROLLFORWARD` command for the final time:<pre>db2 rollforward DB sample to END OF LOGS<br />db2 rollforward DB sample complete<br /><br />                                 Rollforward Status<br />....<br /> Rollforward status                     = not pending<br />....<br />DB20000I  The ROLLFORWARD command completed successfully.<br /><br />db2 activate db sample<br />DB20000I  The ACTIVATE DATABASE command completed successfully.</pre><br />Bring the target database online, and point the application connections to Db2 on Amazon EC2. | DBA |
+| Bring the target database online. | During the cutover window, do one of the following:+ Put the on-premises database in `ADMIN MODE`, and run the `s3 sync` command to force the last transaction log to be archived.<br />+ Shut down the database.<br />After the last transaction log is synced into Amazon S3, run the `ROLLFORWARD` command for the final time:<pre>db2 rollforward DB sample to END OF LOGS<br />db2 rollforward DB sample complete<br /><br />                                 Rollforward Status<br />....<br /> Rollforward status                     = not pending<br />....<br />DB20000I  The ROLLFORWARD command completed successfully.<br /><br />db2 activate db sample<br />DB20000I  The ACTIVATE DATABASE command completed successfully.</pre><br />Bring the target database online, and point the application connections to Db2 on Amazon EC2. | DBA |
 
 ## Troubleshooting
 <a name="migrate-db2-for-luw-to-amazon-ec2-by-using-log-shipping-to-reduce-outage-time-troubleshooting"></a>

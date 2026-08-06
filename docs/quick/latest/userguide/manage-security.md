@@ -13,4 +13,5 @@ Security management in Amazon Quick encompasses multiple layers of protection to
 + [Managing mobile settings](manage-mobile-settings.md)
 + [Managing IP/VPC restrictions](manage-ip-vpc.md)
 + [Managing VPC connection in Amazon Quick](vpc-creating-a-connection-in-quicksight.md)
-+ [Encrypting your Amazon Quick data with AWS Key Management Service customer-managed keys](customer-managed-keys.md)
++ [AI guardrails in Amazon Quick](guardrails.md)
++ [Encrypting your Amazon Quick data with AWS Key Management Service customer managed keys](customer-managed-keys.md)

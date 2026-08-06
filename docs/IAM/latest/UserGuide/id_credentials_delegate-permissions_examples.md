@@ -86,7 +86,7 @@ The following policy allows a user to perform all the tasks associated with mana
 
 ------
 
-A number of the permissions included in the preceding policy allow the user to perform tasks in the AWS Management Console. Users who perform user-related tasks from the [AWS CLI](http://aws.amazon.com/cli/), the [AWS SDKs](http://aws.amazon.com/tools/), or the IAM HTTP query API only might not need certain permissions. For example, if users already know the ARN of policies to detach from a user, they do not need the `iam:ListAttachedUserPolicies` permission. The exact list of permissions that a user requires depends on the tasks that the user must perform while managing other users.
+A number of the permissions included in the preceding policy allow the user to perform tasks in the AWS Management Console. Users who perform user-related tasks from the [AWS CLI](https://docs.aws.amazon.com/http://aws.amazon.com/cli/), the [AWS SDKs](https://docs.aws.amazon.com/http://aws.amazon.com/tools/), or the IAM HTTP query API only might not need certain permissions. For example, if users already know the ARN of policies to detach from a user, they do not need the `iam:ListAttachedUserPolicies` permission. The exact list of permissions that a user requires depends on the tasks that the user must perform while managing other users.
 
 The following permissions in the policy allow access to user tasks via the AWS Management Console:
 + `iam:GetAccount*`

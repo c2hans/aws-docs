@@ -37,7 +37,6 @@ Be aware of the following considerations for point-in-time recovery:
 + **No support for on-demand continuous backups **— AWS Backup doesn't support on-demand continuous backup because on-demand backup records a point in time, whereas continuous backup records changes over a period of time.
 + **No support for transition to cold storage** — Continuous backups don't support transition to cold storage because transition to cold requires a minimum transition period of 90 days, whereas continuous backups have a maximum retention period of 35 days.
 + **Restoring recent activity** — Amazon RDS activity allows restores up until the most recent 5 minutes of activity; Aurora allows restores up until the most recent activity as indicated by `LatestRestorableTime` (typically less than 5 minutes); Amazon S3 allows restores up until the most recent 15 minutes of activity.
-+ **Aurora continuous backup limitations** — Aurora continuous backup data remains within the Aurora service and is not copied into the AWS Backup data plane. AWS Backup invokes point-in-time recovery by calling Aurora APIs. As a result, Aurora continuous backups cannot be placed in a backup vault for immutability (vault lock) and do not support the logically air-gapped vault feature. To use vault lock or logically air-gapped vaults with Aurora, use periodic snapshot backups instead.
 
 **Important**
 A single resource can only have one continuous backup. Expand below for additional details and best practices.
@@ -189,10 +188,7 @@ The procedure to restore an Aurora cluster to a point in time is a [variation of
 When you conduct a point in time restore, the console displays a **restore time** section. See * Restoring a continuous backup* further down on this page in [Working with Continuous backups](https://docs.aws.amazon.com/aws-backup/latest/devguide/point-in-time-recovery.html#point-in-time-recovery-working-with).
 
 **Important**
-Aurora continuous backup data remains within the Aurora service (in Aurora-managed Amazon S3 buckets) and is not copied into the AWS Backup data plane. AWS Backup performs point-in-time recovery by calling Aurora APIs. Because of this architecture:
-You cannot place Aurora continuous backups into a backup vault for immutability (AWS Backup Vault Lock).
-You cannot use the logically air-gapped vault feature with Aurora continuous backups.
-To use vault lock or logically air-gapped vaults with Aurora, use periodic (manual) snapshot backups, which are always full snapshots.
+Aurora continuous backups are supported in vaults protected by AWS Backup Vault Lock, and the vault's minimum and maximum retention settings are enforced on the recovery point. However, Aurora continuous backups do not support the logically air-gapped vault feature. To use a logically air-gapped vault with Aurora, use periodic snapshot backups instead.
 The recovery point objective (RPO) for Aurora continuous backups is typically less than 5 minutes, as Aurora copies data to Amazon S3 continuously in the background. Use the `LatestRestorableTime` value to determine the most recent point to which you can restore.
 
 **Retention periods and backup windows:** When you enable or change continuous backup settings for an Aurora cluster, AWS Backup calls [https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBCluster.html) to apply those changes. This can modify the cluster's `PreferredBackupWindow`. If you have other configuration updates pending the next maintenance window, enabling continuous backups may also apply those pending changes immediately.

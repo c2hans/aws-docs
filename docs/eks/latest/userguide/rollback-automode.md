@@ -11,7 +11,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 
 When you initiate a version rollback on a cluster running EKS Auto Mode, Amazon EKS automatically manages the rollback of Auto Mode worker nodes before reverting the control plane. This page explains how Auto Mode node rollback works, how to speed it up, and how to cancel it if needed.
 
-For general information about version rollback, including prerequisites, insight checks, and the overall rollback process, see [Rollback cluster to previous Kubernetes version](rollback-cluster.md).
+For general information about version rollback, including prerequisites, insight checks, and the overall rollback process, see [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md).
 
 ## How Auto Mode rollback works
 <a name="_how_auto_mode_rollback_works"></a>
@@ -27,7 +27,7 @@ EKS Auto Mode uses a Karpenter-based system to manage worker node infrastructure
 The control plane remains on the current (newer) version and continues serving traffic normally while nodes are rolling back. The Kubernetes version skew policy allows nodes to run up to three minor versions older than the kube-apiserver, so this intermediate state is valid.
 
 **Note**
-You trigger the rollback using the same API and process described in [Rollback cluster to previous Kubernetes version](rollback-cluster.md). There is no separate API for Auto Mode node rollback.
+You trigger the rollback using the same API and process described in [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md). There is no separate API for Auto Mode node rollback.
 
 **Note**
 The node rollback phase (step 2) can take anywhere from minutes to 7 days depending on your disruption controls. If the node rollback does not complete within the configured timeout, the update is marked as failed.
@@ -250,7 +250,7 @@ Customer-triggered updates (such as UpdateClusterVersion or UpdateClusterConfig)
 
 ## Related resources
 <a name="automode-rollback-related-resources"></a>
-+  [Rollback cluster to previous Kubernetes version](rollback-cluster.md)
++  [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md)
 +  [EKS Auto Mode overview](https://docs.aws.amazon.com/eks/latest/userguide/automode.html)
 +  [Create a Node Pool for EKS Auto Mode](https://docs.aws.amazon.com/eks/latest/userguide/create-node-pool.html)
 +  [Update the Kubernetes Version of an EKS Auto Mode cluster](https://docs.aws.amazon.com/eks/latest/userguide/auto-upgrade.html)

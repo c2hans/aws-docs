@@ -28,6 +28,11 @@ Key Length Constraints: Minimum length of 1. Maximum length of 128.
 Key Pattern: `^[a-zA-Z0-9-]+$`
 Required: No
 
+ ** NatGatewayAttachments **   <a name="networkfirewall-Type-SyncState-NatGatewayAttachments"></a>
+The status of the NAT gateway attachments for a proxy mode firewall in the Availability Zone. This reflects the attachment of the firewall to each NAT gateway that proxies its traffic.
+Type: Array of [NatGatewayAttachment](API_NatGatewayAttachment.md) objects
+Required: No
+
 ## See Also
 <a name="API_SyncState_SeeAlso"></a>
 

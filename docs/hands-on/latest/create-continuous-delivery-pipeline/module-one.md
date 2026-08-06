@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/create-continuous-delive
 |  |  |
 | --- |--- |
 | **Time to complete** | 5 minutes  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/module-one.html)  |
+| **Requires** |  +  [GitHub](https://github.com/) account  <br />+  [Git](https://git-scm.com/) installed on your computer  <br />+  A text editor. Here are a few options (in alphabetical order):    [Atom](https://atom.io/)    [Notepad\+\+](https://notepad-plus-plus.org/)    [Sublime](https://www.sublimetext.com/)    [Vim](https://www.vim.org/)    [Visual Studio Code](https://code.visualstudio.com/)      |
 
 ## Overview
 <a name="overview"></a>

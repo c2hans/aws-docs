@@ -39,8 +39,8 @@ The following table summarizes the differences between the various device option
 | Security card | Yes | Yes |
 | SSD | 210 TB NVMe | 28 TB NVMe |
 | Usable HDD | Not applicable | Not applicable |
-| Network interfaces |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/snowball/latest/developer-guide/device-differences.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/snowball/latest/developer-guide/device-differences.html)  |
-| Physical security features |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/snowball/latest/developer-guide/device-differences.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/snowball/latest/developer-guide/device-differences.html)  |
+| Network interfaces |  +  2x 10 Gbit – RJ45 (one usable) <br />+  1x 25 Gbit – SFP28 <br />+  1x 100 Gbit – QSFP28   |  +  2x 10 Gbit – RJ45 (one usable) <br />+  1x 25 Gbit – SFP28 <br />+  1x 100 Gbit – QSFP28   |
+| Physical security features |  +  Hidden magnetic screws <br />+  Intrusion switches <br />+  NFC tags <br />+  Anti-tamper inserts <br />+  Android app for tamper detection <br />+  Conformal coating   |  +  Hidden magnetic screws <br />+  Intrusion switches <br />+  NFC tags <br />+  Anti-tamper inserts <br />+  Android app for tamper detection <br />+  Conformal coating   |
 
 ## AWS Snowball Edge device specifications
 <a name="sbe-specifications"></a>

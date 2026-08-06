@@ -49,6 +49,9 @@ After registering at least one Agent Space, you can start an investigation from 
 
 The investigation appears in the **Investigations** tab of the test run detail page, where you can track its status and choose the link to view findings in the AWS DevOps Agent console.
 
+**Note**
+AWS DevOps Agent enforces a 10,000-character limit on the investigation description. The description sent by the solution combines your optional context with a DLT-generated summary of the test run (test configuration, baseline comparison, top errors sorted by count, and per-endpoint breakdown). To fit within the limit, the solution prioritizes the test configuration and user-provided context, and trims lower-priority sections—starting with the per-endpoint breakdown—when the combined length would otherwise exceed 10,000 characters.
+
 ## Review findings
 <a name="devops-agent-findings"></a>
 
@@ -60,3 +63,23 @@ Findings include the following:
 + Concrete remediation suggestions.
 
 Investigations remain in the DLT **Investigations** tab for the lifetime of the test run record, so you can refer back to prior analyses as your application evolves.
+
+## Suggested workflow
+<a name="devops-agent-suggested-workflow"></a>
+
+To get the most out of the AWS DevOps Agent integration, use it as part of an iterative performance tuning loop: deploy, load test, investigate, remediate, and repeat. Each pass through the loop gives the agent more history to compare against and gives you measurable evidence that a change improved performance.
+
+1.  **Deploy** — Deploy your application to the environment you want to test, and complete the one-time setup described in [Prerequisites](#devops-agent-prerequisites) and [Register an Agent Space](#devops-agent-register).
+
+1.  **Establish a baseline** — Run your test scenario against a known-good build and designate the run as a baseline (refer to [Baseline comparison](explore-test-results.md#baseline-comparison)). When a baseline is set, the solution includes a comparison against it with your investigation request, so the agent can distinguish a regression from normal variation.
+
+1.  **Load test** — Run the test scenario after each application or infrastructure change. Keep the scenario configuration constant between runs so results remain comparable.
+
+1.  **Investigate** — After the run completes, choose **Investigate with DevOps Agent** on the test run detail page. Provide context about what changed since the last run — recent deployments, configuration changes, or the performance you expected — so the agent can focus its analysis.
+
+1.  **Remediate** — Review the root cause and remediation suggestions in the **Investigations** tab, or open the findings in the AWS DevOps Agent console to generate a mitigation plan. Apply the fix to your application or infrastructure.
+
+1.  **Repeat** — Re-run the test scenario and compare the results against your baseline to verify the fix. When performance improves, designate the new run as your baseline and continue the loop with your next change.
+
+**Note**
+Each test run supports one active investigation at a time. Archive a completed investigation from the **Investigations** tab before starting a new one on the same test run.

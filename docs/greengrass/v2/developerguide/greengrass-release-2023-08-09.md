@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.11.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.11.2"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-08-09.html) |
+| Greengrass nucleus | Version 2.11.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.11.2"></a>**Bug fixes and improvements**<br />   Fixes an issue in the nucleus MQTT 5 client where it may appear offline when a large number (> 50) of subscriptions are in use.   Adds a retry for the docker dial TCP failure.    |

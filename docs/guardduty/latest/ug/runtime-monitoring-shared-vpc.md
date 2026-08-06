@@ -52,7 +52,7 @@ The following example shows the default VPC endpoint policy of the shared VPC ow
 ```
 
 ### With GuardDuty automatic agent configuration
-<a name="guarduty-runtime-monitoring-shared-vpc-automatic-agent"></a>
+<a name="guardduty-runtime-monitoring-shared-vpc-automatic-agent"></a>
 
 When the owner account of the shared VPC enables Runtime Monitoring and automated agent configuration for any of the resources (Amazon EKS or AWS Fargate (Amazon ECS only)), all the shared VPCs become eligible for automatic installation of the shared Amazon VPC endpoint and the associated security group in the shared VPC owner account. GuardDuty retrieves the organization ID that is associated with the shared Amazon VPC.
 
@@ -61,7 +61,7 @@ GuardDuty creates an Amazon VPC endpoint when either the shared VPC owner accoun
 ### Using with manually managed agent
 <a name="guardduty-runtime-monitoring-shared-vpc-manual-agent"></a>
 
-When you use shared VPC with manually managed agent, validate that there is no explicit `Deny` endpoint policy that blocks any account that needs to use the shared VPC. This will prevent the security agent from sending telemetry to GuardDuty, resulting in an `Unhealthy` coverage status. For setting up the endpoint policy, see [Example shared VPC endpoint policy](#guardduty-runtime-monitoring-shared-vpc-endpoint-policy-example).
+When you use shared VPC with manually managed agent, validate that there is no explicit `Deny` endpoint policy that blocks any account that needs to use the shared VPC. This prevents the security agent from sending telemetry to GuardDuty, resulting in an `Unhealthy` coverage status. For setting up the endpoint policy, see [Example shared VPC endpoint policy](#guardduty-runtime-monitoring-shared-vpc-endpoint-policy-example).
 
 Runtime coverage may not be accurate in scenarios such as missing permissions to the shared VPC. You can continuously monitor resource coverage by following the steps for your resource type in [Reviewing runtime coverage statistics and troubleshooting issues](runtime-monitoring-assessing-coverage.md).
 

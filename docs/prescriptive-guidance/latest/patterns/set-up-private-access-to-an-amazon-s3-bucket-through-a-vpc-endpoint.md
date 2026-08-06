@@ -93,8 +93,8 @@ The sample architecture for this pattern uses [IAM permissions](https://docs.aws
 | --- | --- | --- |
 | Obtain AWS credentials. | Review your AWS credentials and your access to your account. For instructions, see [Configuration and credential file settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI documentation. | AWS DevOps, General AWS |
 | Clone the repository. | Clone the GitHub repository provided with this pattern:<pre>git clone https://github.com/aws-samples/private-s3-vpce</pre> | AWS DevOps, General AWS |
-| Configure variables. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-private-access-to-an-amazon-s3-bucket-through-a-vpc-endpoint.html) | AWS DevOps, General AWS |
-| Deploy solution. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-private-access-to-an-amazon-s3-bucket-through-a-vpc-endpoint.html) | AWS DevOps, General AWS |
+| Configure variables. | 1. On your computer, in the GitHub repository, open the `terraform` folder:<pre>cd terraform</pre><br />2. Open the `example.tfvars` file and customize the parameters according to your needs. | AWS DevOps, General AWS |
+| Deploy solution. | 1. In the `terraform` folder, run Terraform and pass in the variables that you customized:<pre>terraform apply -var-file="example.tfvars"</pre><br />2. Confirm that the resources shown in the architecture diagram were deployed successfully. | AWS DevOps, General AWS |
 
 ### Test the solution
 <a name="test-the-solution"></a>
@@ -102,7 +102,7 @@ The sample architecture for this pattern uses [IAM permissions](https://docs.aws
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create a test file. | Upload a file to Amazon S3 to create a test scenario for the file download. You can use the [Amazon S3 console](https://console.aws.amazon.com/s3/) or the following AWS CLI command:<pre>aws s3 cp /path/to/testfile s3://your-bucket-name/testfile</pre> | AWS DevOps, General AWS |
-| Test presigned URL functionality. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-private-access-to-an-amazon-s3-bucket-through-a-vpc-endpoint.html) | AWS DevOps, General AWS |
+| Test presigned URL functionality. | 1. Send a request to the Application Load Balancer to create a presigned URL for the test file by using [awscurl](https://github.com/okigan/awscurl):<pre>awscurl https://your-domain-name/api/get_url?key=testfile</pre><br />This step creates a valid signature from your credentials, which will be validated by API Gateway.<br />2. Parse the link from the response you receive from the previous step, and open the presigned URL to download the file. | AWS DevOps, General AWS |
 | Clean up. | Make sure to remove the resources when they are no longer required:<pre>terraform destroy</pre> | AWS DevOps, General AWS |
 
 ## Troubleshooting

@@ -186,7 +186,7 @@ Zero-ETL integrations for Aurora PostgreSQL don't support custom data types or d
 | macaddr8 | VARCHAR(23) | Variable-length string value up to 23 characters | None |
 | money | DECIMAL(20,3) | Currency amount | None |
 | name | VARCHAR(64) | Variable-length string value up to 64 characters | None |
-| numeric(p,s) | DECIMAL(p,s) | User-defined fixed precision value |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/zero-etl.querying.html)  |
+| numeric(p,s) | DECIMAL(p,s) | User-defined fixed precision value |  +  `NaN` values not supported <br />+  Precision and scale must be explicitly defined and not greater than 38 (precision) and 37 (scale) <br />+  Negative scale not supported   |
 | oid | BIGINT | Signed eight-byte integer | None |
 | oidvector | SUPER | Semistructured data or documents as values. | None |
 | pg\_brin\_bloom\_summary | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
@@ -205,8 +205,8 @@ Zero-ETL integrations for Aurora PostgreSQL don't support custom data types or d
 | tid | VARCHAR(23) | Variable-length string value up to 23 characters | None |
 | time [(p)] without time zone | VARCHAR(19) | Variable-length string value up to 19 characters | Infinity and -Infinity values not supported |
 | time [(p)] with time zone | VARCHAR(22) | Variable-length string value up to 22 characters | Infinity and -Infinity values not supported |
-| timestamp [(p)] without time zone | TIMESTAMP | Date and time (without time zone) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/zero-etl.querying.html)  |
-| timestamp [(p)] with time zone | TIMESTAMPTZ | Date and time (with time zone) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/zero-etl.querying.html)  |
+| timestamp [(p)] without time zone | TIMESTAMP | Date and time (without time zone) |  +  `Infinity` and `-Infinity` values not supported <br />+  Values greater than `9999-12-31` not supported <br />+  B.C. values not supported   |
+| timestamp [(p)] with time zone | TIMESTAMPTZ | Date and time (with time zone) |  +  `Infinity` and `-Infinity` values not supported <br />+  Values greater than `9999-12-31` not supported <br />+  B.C. values not supported   |
 | tsquery | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
 | tsvector | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |
 | txid\_snapshot | VARCHAR(65535) | Variable-length string value up to 65,535 characters | None |

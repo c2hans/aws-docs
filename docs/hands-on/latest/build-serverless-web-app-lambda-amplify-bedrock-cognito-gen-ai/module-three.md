@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app
 |  |  |
 | --- |--- |
 | **Time to complete** | 10 minutes  |
-| **Requires** | A text editor. Here are a few free ones: [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai/module-three.html) |
+| **Requires** | A text editor. Here are a few free ones: +  [Atom](https://atom.io/)  <br />+  [Notepad\+\+](https://notepad-plus-plus.org/)  <br />+  [Sublime](https://www.sublimetext.com/)  <br />+  [Vim](https://www.vim.org/)  <br />+  [Visual Studio Code](https://code.visualstudio.com/)   |
 | **Get help** | [Troubleshooting Lambda Functions](https://docs.amplify.aws/react/build-a-backend/functions/)  |
 
 ## Overview

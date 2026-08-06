@@ -81,15 +81,15 @@ Taking the table above and dividing out the component costs, we can determine th
 
 | Component | Applicable migration type | Cost [USD] |
 | --- | --- | --- |
-| Core services |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $11.03/day |
-| Miscellaneous services |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $165.45 per large migration |
-| Capture runtime |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $9.31/day \+ $9.60/TB-day (Kafka EBS) \+ $6.00/TB (NLB) |
-| Capture data retention period |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $5.97/day \+ $9.60/TB-day (Kafka EBS) |
-| Snapshot |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $0.7667/TB-day |
-| Snapshot data retention period |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $0.7667/TB-day |
-| Reindex from snapshot |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $6.58/TB |
-| Traffic Replayer |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $1.40/day \+ $40.00/TB (EFS) \+ $1.6667/TB-day (EFS IA) Due to Amazon EFS Intelligent-Tiering, $1.6667/TB-day is not paid for the first day.  |
-| Traffic Replayer data retention period |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/migration-assistant-for-amazon-opensearch-service/cost.html)  | $1.6667/TB-day |
+| Core services |  +  Metadata only <br />+  Historical only <br />+  Live only <br />+  Full migration   | $11.03/day |
+| Miscellaneous services |  +  Metadata only <br />+  Historical only <br />+  Live only <br />+  Full migration   | $165.45 per large migration |
+| Capture runtime |  +  Live only <br />+  Full migration   | $9.31/day \+ $9.60/TB-day (Kafka EBS) \+ $6.00/TB (NLB) |
+| Capture data retention period |  +  Live only <br />+  Full migration   | $5.97/day \+ $9.60/TB-day (Kafka EBS) |
+| Snapshot |  +  Historical only <br />+  Full migration   | $0.7667/TB-day |
+| Snapshot data retention period |  +  Historical only <br />+  Full migration   | $0.7667/TB-day |
+| Reindex from snapshot |  +  Historical only <br />+  Full migration   | $6.58/TB |
+| Traffic Replayer |  +  Live only <br />+  Full migration   | $1.40/day \+ $40.00/TB (EFS) \+ $1.6667/TB-day (EFS IA) Due to Amazon EFS Intelligent-Tiering, $1.6667/TB-day is not paid for the first day.  |
+| Traffic Replayer data retention period |  +  Live only <br />+  Full migration   | $1.6667/TB-day |
 
 We can also identify the cost for full migrations of different sizes that follow the 15-day migration timeline. By applying the durations shown previously, as well as a conversion from TB/day to MBps, we get the following formula for a representative cost estimate:
 

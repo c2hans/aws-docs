@@ -24,12 +24,12 @@ For your output resolution and frame rate, you can specify an allowed value expl
 
 | Setting | Allowed values for D10 profile |
 | --- | --- |
-| Combination of:<br />**Resolution** (wxh), **Frame rate**, **Interlace mode** | Allowed combinations:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/default-automatic-selection-of-mxf-profiles.html) |
+| Combination of:<br />**Resolution** (wxh), **Frame rate**, **Interlace mode** | Allowed combinations:+  720x512, 29.97, interlaced <br />+  720x486, 29.97, interlaced <br />+  720x486, 29.97, interlaced <br />+  720x608, 25, interlaced <br />+  720x576, 25, interlaced  |
 | **GOP size** | 1 frame |
 | **Profile**, for your video codec | 4:2:2 |
 | **Syntax**<br />This setting is visible on the MediaConvert console when you choose MXF for your container, MPEG-2 for your video codec, and 4:2:2 for your codec profile. | D10 |
-| Number of audio tracks<br />Each output track is represented on the MediaConvert console as one **Audio** tab and in your JSON job specification as a direct child of `AudioDescriptions`. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/default-automatic-selection-of-mxf-profiles.html)  |
-| Captions type<br />You specify this on the MediaConvert console with the setting **Destination type**. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/default-automatic-selection-of-mxf-profiles.html)  |
+| Number of audio tracks<br />Each output track is represented on the MediaConvert console as one **Audio** tab and in your JSON job specification as a direct child of `AudioDescriptions`. |  +  0 (no audio) <br />+  1   |
+| Captions type<br />You specify this on the MediaConvert console with the setting **Destination type**. |  +  Burn in <br />+  Embedded   |
 
 This excerpt from a JSON job specification shows the same settings as you would submit them programmatically:
 

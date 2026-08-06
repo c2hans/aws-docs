@@ -29,7 +29,7 @@ Then your CloudWatch metric information is the following.
 
 | ID | Usable metrics | Statistic | Period |
 | --- | --- | --- | --- |
-| m1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sum | 1 minute |
+| m1 |  +  `DataReadIOBytes` <br />+  `DataWriteIOBytes` <br />+  `MetadataIOBytes` <br />+  `TotalIOBytes`   | sum | 1 minute |
 
 Your metric math ID and expression are the following.
 
@@ -48,8 +48,8 @@ Then your CloudWatch metric information is the following.
 
 | ID | Usable metric or metrics | Statistic | Period |
 | --- | --- | --- | --- |
-| m1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sum | 1 minute |
-| m2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sum | 1 minute |
+| m1 | +  `TotalIOBytes`   | sum | 1 minute |
+| m2 | +  `DataReadIOBytes`   | sum | 1 minute |
 
 Your metric math ID and expression are the following.
 
@@ -90,7 +90,7 @@ Then your CloudWatch metric information is the following.
 
 | ID | Usable metrics | Statistic | Period |
 | --- | --- | --- | --- |
-| m1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sample count | 1 minute |
+| m1 | +  `DataReadIOBytes` <br />+  `DataWriteIOBytes` <br />+  `MetadataIOBytes` <br />+  `TotalIOBytes`   | sample count | 1 minute |
 
 Your metric math ID and expression are the following.
 
@@ -109,8 +109,8 @@ Then your CloudWatch metric information is the following.
 
 | ID | Usable metrics | Statistic | Period |
 | --- | --- | --- | --- |
-| m1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sample count | 1 minute |
-| m2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sample count | 1 minute |
+| m1 | +  `TotalIOBytes`   | sample count | 1 minute |
+| m2 | +  `DataReadIOBytes` <br />+  `DataWriteIOBytes` <br />+  `MetadataIOBytes`   | sample count | 1 minute |
 
 Your metric math ID and expression are the following.
 
@@ -129,8 +129,8 @@ Then your CloudWatch metric information is the following.
 
 | ID | Usable metrics | Statistic | Period |
 | --- | --- | --- | --- |
-| m1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sum | 1 minute |
-| m2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/monitoring-metric-math.html)  | sample count | 1 minute |
+| m1 | +  `DataReadIOBytes` <br />+  `DataWriteIOBytes` <br />+  `MetadataIOBytes`   | sum | 1 minute |
+| m2 | +  `DataReadIOBytes` <br />+  `DataWriteIOBytes` <br />+  `MetadataIOBytes`   | sample count | 1 minute |
 
 Your metric math ID and expression are the following.
 

@@ -396,11 +396,11 @@ The following table describes the changes in each version of the component.
 | 1.3.3 | Version updated for Greengrass nucleus version 2.10.0 release. |
 | 1.3.2 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 1.3.1 | Version updated for Greengrass nucleus version 2.8.0 release. |
-| 1.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html)  |
-| 1.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html)  |
+| 1.3.0 |  **New features**<br />   Adds support for TensorRT cache disk size management.   Adds the optional `TVM_TENSORRT_CACHE_DISK_SIZE_MB` flag to the DLRBackendOptions parameter to set the size limit for cached models on disk.     <br />**Improvements**<br />   Provides improved prediction concurrency. This helps to get better usage of device accelerator engines, such as GPUs.     |
+| 1.2.0 |  **New features**<br />   Adds support for this component to automatically retrieve SageMaker AI Neo-compiled models that you upload to Amazon S3. When you enable this feature, you can deploy new models to core devices without needing to create a AWS IoT Greengrass deployment.   Adds support for a backup database that this component uses to preserve runtime data, in case the component fails or the device loses power.   Adds support for you to configure DLR runtime flags when you configure this component.     |
 | 1.1.1 | Version updated for Greengrass nucleus version 2.7.0 release. |
-| 1.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html)  |
+| 1.1.0 |  **New features**<br />   Adds support for Greengrass core devices running Amazon Linux 2.   Adds the new `CaptureDataDiskPath` configuration parameter. You can use this parameter to specify the path of the captured data folder on your device.   <br />**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.5.0 release.     |
 | 1.0.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
-| 1.0.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/sagemaker-edge-manager-component.html)  |
+| 1.0.2 |  **Bug fixes and improvements**<br /> Updates the installation script in the component lifecycle. Your core devices must now have Python 3.6 or later, including `pip` for your version of Python, installed on the device before you deploy this component.    |
 | 1.0.1 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 1.0.0 | Initial version. |

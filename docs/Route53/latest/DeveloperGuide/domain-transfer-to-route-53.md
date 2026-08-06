@@ -393,7 +393,7 @@ All email comes from one of the following email addresses.
 | --- | --- |
 | .com.au and .net.au | no-reply@ispapi.net<br />The email contains a link to http://transfers.ispapi.net. |
 | .fr | nic@nic.fr, if you're changing the registrant contact for a .fr domain name at the same time that you're transferring the domain. (The email is sent both to the current registrant contact and the new registrant contact.) |
-| All others | One of the following email addresses:[See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-to-route-53.html) |
+| All others | One of the following email addresses:+  noreply@registrar.amazon <br />+  noreply@domainnameverification.net <br />+  noreply@emailverification.info  |
 
 To determine who the registrar is for your TLD, see [Domains that you can register with Amazon Route 53](registrar-tld-list.md).
 

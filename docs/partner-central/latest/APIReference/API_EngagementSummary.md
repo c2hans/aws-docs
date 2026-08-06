@@ -62,7 +62,7 @@ Required: No
  ** Title **   <a name="AWSPartnerCentral-Type-EngagementSummary-Title"></a>
 The title of the Engagement.
 Type: String
-Pattern: `(?s).{1,40}`
+Pattern: `(?s).{0,40}`
 Required: No
 
 ## See Also

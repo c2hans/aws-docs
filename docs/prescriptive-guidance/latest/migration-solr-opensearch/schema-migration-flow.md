@@ -101,7 +101,7 @@ The mappings and configurations in the following tables compare Apache Solr 9.x 
 | --- |--- |--- |--- |
 | `solr.ASCIIFoldingFilterFactory` | `asciifolding` | `preserveOriginal` | `preserve_original` (default: false) |
 | `solr.ApostropheFilterFactory` | `apostrophe` | No parameters. | N/A |
-| `solr.CommonGramsFilterFactory` | `common_grams` | `ignoreCase`<br />`words` | If `query_mode:false` (default):`ignore_case`  (default: false)`common_words_path`  (package)<br />If `query_mode:true`, a separate filter (`solr.CommonGramsQueryFilterFactory`) is used |
+| `solr.CommonGramsFilterFactory` | `common_grams` | `ignoreCase`<br />`words` | If `query_mode:false` (default):+ `ignore_case`  (default: false)<br />+ `common_words_path`  (package)<br />If `query_mode:true`, a separate filter (`solr.CommonGramsQueryFilterFactory`) is used |
 | `solr.CJKWidthFilterFactory` | `cjk_width` | No parameters. | N/A |
 | `solr.ClassicFilterFactory` | `classic` | No parameters. | N/A |
 | `solr.DecimalDigitFilterFactory` | `decimal_digit` | No parameters. | N/A |

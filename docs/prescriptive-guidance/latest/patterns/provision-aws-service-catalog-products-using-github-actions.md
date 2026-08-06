@@ -91,7 +91,7 @@ The code for this pattern is available in the GitHub [service-catalog-with-githu
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Set up Git on your local workstation. | To install and configure Git on your local workstation, use the [Getting Started – Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instructions in the Git documentation. | App developer |
-| Clone the GitHub project repo. | To clone the GitHub project repo, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/provision-aws-service-catalog-products-using-github-actions.html) | DevOps engineer |
+| Clone the GitHub project repo. | To clone the GitHub project repo, do the following:1. Open the [GitHub repo](https://github.com/aws-samples/service-catalog-with-github-actions) for this pattern<br />2. Choose **Code** to see cloning options, and copy the URL provided in the **HTTPS** tab.<br />3. Create a folder for your project on your workstation.<br />4. Open a terminal, and navigate to this folder<br />5. To clone the GitHub repo, run the following command using the URL that you copied in step 2:<pre>git clone https://github.com/aws-samples/service-catalog-with-github-actions.git</pre><br />6. When cloning is complete, to change to the cloned repo in your project folder, run the following command:<pre>cd <folder-name>/service-catalog-with-github-actions</pre><br />7. Open the project in an integrated development environment (IDE) of your choice. | DevOps engineer |
 
 ### Set up the OIDC provider
 <a name="set-up-the-oidc-provider"></a>
@@ -105,28 +105,28 @@ The code for this pattern is available in the GitHub [service-catalog-with-githu
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Update `e2e-test.yaml`. | The `e2e-test.yaml` file triggers the reusable workflow at `workflow.yaml`. Update and validate the values for the following input parameters in `e2e-test.yaml`:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/provision-aws-service-catalog-products-using-github-actions.html) | DevOps engineer |
+| Update `e2e-test.yaml`. | The `e2e-test.yaml` file triggers the reusable workflow at `workflow.yaml`. Update and validate the values for the following input parameters in `e2e-test.yaml`:+ `aws_account_id` – Specify the correct AWS account.<br />+ `aws_region` – Specify the correct AWS Region.<br />+ `s3BucketName` – Specify the Amazon S3 bucket to hold the CloudFormation templates.<br />+ The workflow file requires two IAM roles as input:`LaunchConstraintRole` - The IAM role that AWS Service Catalog assumes when an end user launches, updates, or terminates a product.`PrincipalArn` - The Amazon Resource Name (ARN) of the principal (IAM user, role, or group) that will be associated to the Service Catalog Portfolio. If the `PrincipalType` is `IAM`, the supported value is a fully defined [IAM Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns). If the `PrincipalType` is `IAM_PATTERN`, the supported value is an IAM ARN without an `AccountID `in the following format: `arn:partition:iam:::resource-type/resource-id` | DevOps engineer |
 
 ### Validate deployment
 <a name="validate-deployment"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Validate the Service Catalog resources. | To validate the Service Catalog resources, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/provision-aws-service-catalog-products-using-github-actions.html) | AWS DevOps |
+| Validate the Service Catalog resources. | To validate the Service Catalog resources, do the following:1. Sign in to the AWS Management Console of the AWS account, and verify that the AWS Region is correct.<br />2. Navigate to **AWS Service Catalog** and validate that a portfolio is present under **Administration**, **Portfolios**.<br />3. Choose the portfolio, and validate the information on the **Products**, **Constraints**, and **Access** tabs. | AWS DevOps |
 
 ### Clean up resources
 <a name="clean-up-resources"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the CloudFormation stack. | To delete the CloudFormation stack, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/provision-aws-service-catalog-products-using-github-actions.html)<br />For more information, see [Delete a stack from the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) in the CloudFormation documentation | DevOps engineer, AWS administrator |
+| Delete the CloudFormation stack. | To delete the CloudFormation stack, do the following:1. Open the AWS CloudFormation console at [https://console.aws.amazon.com/cloudformation](https://console.aws.amazon.com/cloudformation/).<br />2. On the navigation bar at the top of the screen, choose the AWS Region where the stack is located.<br />3. On the **Stacks** page, choose the stack that you want to delete. The stack must be currently running.<br />4. In the stack details pane, choose **Delete**.<br />5. Select **Delete stack** when prompted.<br />For more information, see [Delete a stack from the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) in the CloudFormation documentation | DevOps engineer, AWS administrator |
 
 ## Troubleshooting
 <a name="provision-aws-service-catalog-products-using-github-actions-troubleshooting"></a>
 
 | Issue | Solution |
 | --- | --- |
-| `e2e-test`<br />`Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under '*/home/runner/work/service-catalog-with-github-actions/service-catalog-with-github-actions`<br />`Did you forget to run actions/checkout before running your local action?` | To make sure that you have the correct repository settings enabled, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/provision-aws-service-catalog-products-using-github-actions.html) |
+| `e2e-test`<br />`Can't find 'action.yml', 'action.yaml' or 'Dockerfile' under '*/home/runner/work/service-catalog-with-github-actions/service-catalog-with-github-actions`<br />`Did you forget to run actions/checkout before running your local action?` | To make sure that you have the correct repository settings enabled, do the following:1. Navigate to the Github repository, **Settings** tab.<br />2. Choose **Actions**, **General** from the menu on the left side<br />3. Go to the **Access** section, and select the option **Accessible from repositories in the 'XXX' organization**. |
 
 ## Related resources
 <a name="provision-aws-service-catalog-products-using-github-actions-resources"></a>

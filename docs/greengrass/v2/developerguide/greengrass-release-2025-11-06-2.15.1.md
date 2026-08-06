@@ -23,5 +23,5 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| [Greengrass nucleus](greengrass-nucleus-component.md)<br />Version 2.15.1 | <a name="changelog-nucleus-2.15.1"></a> [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-11-06-2.15.1.html)  |
+| [Greengrass nucleus](greengrass-nucleus-component.md)<br />Version 2.15.1 | <a name="changelog-nucleus-2.15.1"></a> **Bug fixes and improvements**<br />   Fixes an issue where Nucleus failed to clean up component processes after the 30-second shutdown timeout during bootstrap deployments.     |
 | [Greengrass CLI](greengrass-cli-component.md)<br />Version 2.15.1 | <a name="changelog-cli-2.15.1"></a>Version updated for the Greengrass Nucleus v2.15.1 release. |

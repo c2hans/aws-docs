@@ -13,8 +13,8 @@ Before you create an A/B test, ensure the following resources are in place.
 | Resource | Description |
 | --- | --- |
 | AgentCore Gateway | An active AgentCore Gateway with at least one HTTP target pointing to your agent runtime. The AgentCore Gateway handles traffic splitting between variants. |
-| Agent runtime | At least one deployed agent runtime using the Amazon Bedrock AgentCore SDK (version 1.8\+). The SDK’s `BaggageSpanProcessor` automatically attaches A/B test experiment details (experiment ARN and variant name) to all OpenTelemetry spans emitted by the runtime.[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-testing-prereqs.html) |
-| Online evaluation configuration | An active online evaluation config that specifies which evaluators to run against sessions.[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/ab-testing-prereqs.html) |
+| Agent runtime | At least one deployed agent runtime using the Amazon Bedrock AgentCore SDK (version 1.8\+). The SDK’s `BaggageSpanProcessor` automatically attaches A/B test experiment details (experiment ARN and variant name) to all OpenTelemetry spans emitted by the runtime.+   **Configuration bundle based variants:** One runtime is sufficient. Both variants run on the same runtime with different configuration bundle versions. <br />+   **Target-based variants:** Deploy one runtime per variant (two total).  |
+| Online evaluation configuration | An active online evaluation config that specifies which evaluators to run against sessions.+   **Configuration bundle based variants:** One online evaluation config that points to the single runtime where both variants run. <br />+   **Target-based variants:** One online evaluation config per runtime endpoint that you are using for your A/B test (two total), since each endpoint has its own log group.  |
 | Configuration bundles (optional) | Required when using configuration bundle based variants. Two bundle versions or two separate bundles: one for control and one for treatment. |
 
 ## SDK requirements

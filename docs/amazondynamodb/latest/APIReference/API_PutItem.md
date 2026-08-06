@@ -127,6 +127,10 @@ In the following list, the required parameters are described first.
 A map of attribute name/value pairs, one for each attribute. Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
 You must provide all of the attributes for the primary key. For example, with a simple primary key, you only need to provide a value for the partition key. For a composite primary key, you must provide both values for both the partition key and the sort key.
 If you specify any attributes that are part of an index key, then the data types for those attributes must match those of the schema in the table's attribute definition.
+If the table has vector indexes, the following validations apply to write operations. A violation of any of these constraints results in a `ValidationException`:
++ The vector attribute must be a list of numbers with dimensions matching the index configuration.
++ Vector values must fit in 32-bit IEEE-754 floating point format (f32).
++ Partition key and inline filter attributes defined in the search schema must have data types matching the index schema definition.
 Empty String and Binary attribute values are allowed. Attribute values of type String and Binary must have a length greater than zero if the attribute is used as a key attribute for a table or index.
 For more information about primary keys, see [Primary Key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html#HowItWorks.CoreComponents.PrimaryKey) in the *Amazon DynamoDB Developer Guide*.
 Each element in the `Item` map is an `AttributeValue` object.
@@ -274,6 +278,12 @@ Required: No
          "WriteCapacityUnits": number
       },
       "TableName": "string",
+      "VectorIndexes": {
+         "string" : {
+            "VectorSearchRequestBytes": number,
+            "VectorWriteRequestBytes": number
+         }
+      },
       "WriteCapacityUnits": number
    },
    "ItemCollectionMetrics": {
@@ -314,6 +324,7 @@ Key Length Constraints: Maximum length of 65535.
 
  ** [ConsumedCapacity](#API_PutItem_ResponseSyntax) **   <a name="DDB-PutItem-response-ConsumedCapacity"></a>
 The capacity units consumed by the `PutItem` operation. The data returned includes the total provisioned throughput consumed, along with statistics for the table and any indexes involved in the operation. `ConsumedCapacity` is only returned if the `ReturnConsumedCapacity` parameter was specified. For more information, see [Capacity unity consumption for write operations](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/read-write-operations.html#write-operation-consumption) in the *Amazon DynamoDB Developer Guide*.
+If the table has vector indexes, the response includes a `VectorIndexes` field with `VectorWriteRequestBytes` consumed for each affected vector index.
 Type: [ConsumedCapacity](API_ConsumedCapacity.md) object
 
  ** [ItemCollectionMetrics](#API_PutItem_ResponseSyntax) **   <a name="DDB-PutItem-response-ItemCollectionMetrics"></a>

@@ -18,13 +18,13 @@ This release applies Windows October 2018 security updates to the Windows Server
 | --- | --- |
 | **Windows security updates** | Applied October 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html) |
-| **c5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
-| **f1.4xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
-| **g3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
-| **g3s** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
-| **m5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
-| **r5** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
-| **r5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-23-windows.html)  |
+| **c5d** |  + AWS GovCloud (US)—us-gov-west-1  |
+| **f1.4xlarge** |  + US East (N. Virginia)—us-east-1<br />+ US West (Oregon)—us-west-2<br />+ EU (Ireland)—eu-west-1<br />+ AWS GovCloud (US)—us-gov-west-1  |
+| **g3** |  + Canada (Central)—ca-central-1  |
+| **g3s** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1  |
+| **m5d** |  + AWS GovCloud (US)—us-gov-west-1  |
+| **r5** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ Canada (Central)—ca-central-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1<br />+ EU (London)—eu-west-2<br />+ AWS GovCloud (US)—us-gov-west-1  |
+| **r5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Canada (Central)—ca-central-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1<br />+ EU (London)—eu-west-2  |
 
 ## Updated platform configurations
 <a name="release-2018-10-23-windows.platforms"></a>

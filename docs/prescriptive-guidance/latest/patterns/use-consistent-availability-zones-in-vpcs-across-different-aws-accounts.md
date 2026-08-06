@@ -105,7 +105,7 @@ The code for this pattern is provided in the GitHub [Multi-account Availability 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Determine the required Availability Zones for the Region. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/use-consistent-availability-zones-in-vpcs-across-different-aws-accounts.html) | Cloud architect |
+| Determine the required Availability Zones for the Region. | 1. Determine the AZ IDs that must be consistently used in your Region. <br />2. Record these AZ IDs in a comma-separated list and in the order that you want them applied in. For example, the first Availability Zone on your list is mapped as `az1` and the second is mapped as `az2`. There is no maximum number of AZ IDs that can be mapped. | Cloud architect |
 | Deploy the az-mapping.yaml file. | Use the `az-mapping.yaml` file to create an AWS CloudFormation stack in all required AWS accounts. In the `AZIds` parameter, use the comma-separated list that you created earlier. <br />We recommend that you use [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) or the [Customizations for AWS Control Tower Solution](https://aws.amazon.com/solutions/implementations/customizations-for-aws-control-tower/). | Cloud architect |
 
 ### Deploy the VPCs in your accounts

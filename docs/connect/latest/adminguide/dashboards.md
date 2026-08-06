@@ -22,6 +22,7 @@ You can customize the dashboards (for example, re-size and re-arrange the visual
 + [Contact Lens conversational analytics dashboard](contact-lens-conversational-analytics-dashboard.md)
 + [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md)
 + [AI Agent performance dashboard](ai-agent-performance-dashboard.md)
++ [Cases performance dashboard](cases-performance-dashboard.md)
 + [Flows and conversational bot performance dashboard](flows-performance-dashboard.md)
 + [Outbound campaigns performance dashboard](outbound-campaigns-performance-dashboard.md)
 + [Queue and agent performance dashboard](queue-performance-dashboard.md)

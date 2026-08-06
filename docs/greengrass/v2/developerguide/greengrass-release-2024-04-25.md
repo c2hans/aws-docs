@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.12.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2024-04-25.html) |
+| Greengrass nucleus | Version 2.12.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where deployment rollback occasionally gets stuck while rolling back a previously broken component with hard dependencies.   Fixes an issue where the nucleus doesn't publish status updates after fleet provisioning.   Adds retries for the `GetDeploymentConfiguration` API after getting 404 errors.    |

@@ -21,7 +21,7 @@ Required: Yes
  ** Identifier **   <a name="QS-Type-DataSetIdentifierDeclaration-Identifier"></a>
 The identifier of the data set, typically the data set's name.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: Yes
 
 ## See Also

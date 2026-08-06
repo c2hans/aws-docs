@@ -25,11 +25,11 @@ The following maximum quotas are enforced when you are creating a bot.
 | Bots per bot network | 5 | No | N/A |
 | Bot networks per bot | 25 | No | N/A |
 | Versions per bot | 100 | No | N/A |
-| Intents per locale in each bot |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/quotas.html)  | Yes | No |
-| Slots per locale in each bot | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/quotas.html)  | No | N/A |
-| Custom slot types per bot locale | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/quotas.html)  | No | N/A |
+| Intents per locale in each bot |  +  1,000 in en-AU, en-GB, and en-US <br />+  250 in all other locales   | Yes | No |
+| Slots per locale in each bot | +  4,000 in en-AU, en-GB, and en-US <br />+  2,000 in all other locales   | No | N/A |
+| Custom slot types per bot locale | +  250 in en-AU, en-GB, and en-US <br />+  100 in all other locales   | No | N/A |
 | Custom slot type values and synonyms per locale in each bot | 50,000 | No | N/A |
-| Total characters in sample utterances per locale in each bot | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/quotas.html)  | No | N/A |
+| Total characters in sample utterances per locale in each bot | +  2,000,000 in en-AU, en-GB, and en-US <br />+  200,000 in all other locales   | No | N/A |
 | Channel associations per bot alias | 10 | No | N/A |
 | Slots per intent | 100 | No | N/A |
 | Sample utterances per intent | 1,500 | Yes | Yes |

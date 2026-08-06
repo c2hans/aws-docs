@@ -27,7 +27,7 @@ The following section describes service quotas for the control plane APIs.
 
 | API | Maximum API request rate per AWS account | Maximum number of channels per AWS account per AWS Region | Maximum API request per channel |
 | --- | --- | --- | --- |
-| CreateSignalingChannel | 50 TPS [s] | [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-limits.html)  | N/A |
+| CreateSignalingChannel | 50 TPS [s] | + For US East (N. Virginia) (us-east-1) and US West (Oregon) (us-west-2) only - 10,000<br />+ All other supported Regions - 5,000  | N/A |
 | DeleteSignalingChannel | 50 TPS [h] | N/A | 5 TPS [h] |
 | DescribeMediaStorageConfiguration | 50 TPS [h] | N/A | 5 TPS [h] |
 | DescribeSignalingChannel | 300 TPS [h] | N/A | 5 TPS [h] |
@@ -51,7 +51,7 @@ The following section describes service quotas for the signaling component in Ki
 
 | API | Maximum API request rate | Maximum message payload size |
 | --- | --- | --- |
-| SendAlexaOffertoMaster | [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-limits.html) | N/A |
+| SendAlexaOffertoMaster | + 5 TPS per signaling channel (h)<br />+ 100 TPS per AWS Region per AWS account (s) | N/A |
 | SendICECandidate | 20 TPS per WebSocket connection (h) | 10k (h) |
 | SendSDPAnswer | 5 TPS per WebSocket connection (h) | 10k (h) |
 | SendSDPOffer | 5 TPS per WebSocket connection (h) | 10k (h) |
@@ -63,7 +63,7 @@ The following section describes service quotas for the Traversal Using Relays ar
 
 | API or parameter | Value |
 | --- | --- |
-| GetIceServerConfig |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-limits.html)  |
+| GetIceServerConfig |  + 5 TPS per signaling channel (h)<br />+ 100 TPS per AWS Region per AWS account (s)  |
 | Bit Rate | 5Mbps (h) |
 | Credential Lifecycle | 5 minutes (h) |
 | Number of allocations | 50 per signaling channel (h) |

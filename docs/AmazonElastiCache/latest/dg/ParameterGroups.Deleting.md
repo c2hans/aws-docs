@@ -44,13 +44,13 @@ For Linux, macOS, or Unix:
 
 ```
 aws elasticache delete-cache-parameter-group \
-    --cache-parameter-group-name {{myRed28}}
+    --cache-parameter-group-name {{myRed7}}
 ```
 For Windows:
 
 ```
 aws elasticache delete-cache-parameter-group ^
-    --cache-parameter-group-name {{myRed28}}
+    --cache-parameter-group-name {{myRed7}}
 ```
 
 For more information, see [https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-parameter-group.html](https://docs.aws.amazon.com/cli/latest/reference/elasticache/delete-cache-parameter-group.html).
@@ -75,12 +75,12 @@ https://elasticache.us-west-2.amazonaws.com/
 ```
 
 **Example**
-The following sample code deletes the *myRed28* parameter group.
+The following sample code deletes the *myRed7* parameter group.
 
 ```
 https://elasticache.us-west-2.amazonaws.com/
    ?Action=DeleteCacheParameterGroup
-   &CacheParameterGroupName={{myRed28}}
+   &CacheParameterGroupName={{myRed7}}
    &SignatureVersion=4
    &SignatureMethod=HmacSHA256
    &Timestamp=20150202T192317Z

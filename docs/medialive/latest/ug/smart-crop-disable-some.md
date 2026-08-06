@@ -25,8 +25,8 @@ Use `update-channel` to make changes in the JSON for the MediaLive channel.
 |  If you want to disable...  |  Action  |
 | --- | --- |
 | Event clipping | There are no changes to make in the channel JSON. |
-| Smart crop in one or more outputs |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/smart-crop-disable-some.html)  |
-| Smart Subtitles |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/smart-crop-disable-some.html)  |
+| Smart crop in one or more outputs |  1.  Identify the video encodes (video descriptions) for the target outputs where you want to disable smart crop. For example, one target output might be the video encode (video description) named `high_resolution` in an output named `output_A` in the output group named `My_outputgroup`. <br />2.  In the JSON for each video description that you identified, change these parameters:   `Width` and `Height`: Set to values that are suitable when there is no Elemental Inference features occurring.   `ScalingBehavior`: Set to a value other than `SMART_CROP`.    <br />Smart crop is now disabled in these outputs.   |
+| Smart Subtitles |  1.  Remove the `SmartSubtitleSourceSettings` caption selectors from all input attachments. <br />2.  Remove or update any caption descriptions that reference those selectors. <br />3.  Remove the captions-only output (WebVTT or TTML) if it is no longer needed.   |
 
 See [Setting up Elemental Inference features for the first time](smart-crop-procedure-cli-create.md) for an example of the JSON as it appears *before *you make these changes.
 

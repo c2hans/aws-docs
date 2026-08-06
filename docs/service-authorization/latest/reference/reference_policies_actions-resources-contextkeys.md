@@ -320,6 +320,7 @@ The **condition keys** table lists all of the condition keys that you can use in
 + [Amazon Bedrock (bedrock)](list_bedrock.md)
 + [Amazon Bedrock Agentcore (bedrock-agentcore)](list_bedrock-agentcore.md)
 + [Amazon Bedrock Powered by AWS Mantle (bedrock-mantle)](list_bedrock-mantle.md)
++ [Amazon Bedrock Web Search (bedrock-websearch)](list_bedrock-websearch.md)
 + [Amazon Bio Discovery (researchstudio)](list_researchstudio.md)
 + [Amazon Braket (braket)](list_braket.md)
 + [Amazon Chime (chime)](list_chime.md)

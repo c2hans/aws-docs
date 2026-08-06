@@ -14,6 +14,11 @@ This data type is used for any firewall endpoint type:
 ## Contents
 <a name="API_Attachment_Contents"></a>
 
+ ** DnsName **   <a name="networkfirewall-Type-Attachment-DnsName"></a>
+The DNS name that resolves to the firewall endpoint in the subnet. This is populated for proxy mode firewalls, where clients direct traffic to the firewall's proxy using this name.
+Type: String
+Required: No
+
  ** EndpointId **   <a name="networkfirewall-Type-Attachment-EndpointId"></a>
 The identifier of the firewall endpoint that Network Firewall has instantiated in the subnet. You use this to identify the firewall endpoint in the VPC route tables, when you redirect the VPC traffic through the endpoint.
 Type: String

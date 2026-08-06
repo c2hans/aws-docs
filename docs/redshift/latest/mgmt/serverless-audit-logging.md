@@ -55,8 +55,8 @@ CloudWatch compute metrics are the following:
 | ComputeSeconds | RPU-seconds | Accumulated compute-unit seconds used in the last 30 minutes. | {Workgroup} |
 | QueriesSucceeded | Number of queries | The number of queries that succeeded in the last 5 minutes. | {Database, QueryType, Workgroup}, {QueryType, Workgroup} |
 | QueriesFailed | Number of queries | The number of queries that failed in the last 5 minutes. | {Database, QueryType, Workgroup}, {QueryType, Workgroup} |
-| UsageLimitAvailable | RPU-hours or TBs | Depending on the UsageType, UsageLimitAvailable returns the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/serverless-audit-logging.html) | {UsageLimitId, UsageType, Workgroup} |
-| UsageLimitConsumed | RPU-hours or TBs | Depending on the UsageType, UsageLimitConsumed returns the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/serverless-audit-logging.html) | {UsageLimitId, UsageType, Workgroup} |
+| UsageLimitAvailable | RPU-hours or TBs | Depending on the UsageType, UsageLimitAvailable returns the following:+  If the UsageType is SERVERLESS\_COMPUTE, UsageLimitAvailable returns the remaining number of RPU-hours that the workgroup can query in the given limit. <br />+  If the UsageType is CROSS\_REGION\_DATASHARING, UsageLimitAvailable returns the remaining number of TBs that the customer can scan in the given limit.  | {UsageLimitId, UsageType, Workgroup} |
+| UsageLimitConsumed | RPU-hours or TBs | Depending on the UsageType, UsageLimitConsumed returns the following:+  If the UsageType is SERVERLESS\_COMPUTE, UsageLimitConsumed returns the number of RPU-hours that the workgroup has already queried in the given limit. <br />+  If the UsageType is CROSS\_REGION\_DATASHARING, UsageLimitConsumed returns the number of TBs that the customer has already used to scan in the given limit.  | {UsageLimitId, UsageType, Workgroup} |
 | ExtraComputeForAutomaticOptimizationChargedSeconds | RPU-seconds | Number of compute-unit seconds charged for automatic optimization operations in the last 30 minutes. | {Workgroup} |
 
 CloudWatch data and storage metrics are the following:
@@ -79,10 +79,10 @@ The following table details dimensions and dimension values for specific metrics
 | Dimension | Description and values |
 | --- | --- |
 | DatabaseName | The name of the database. A custom value. |
-| Latency | Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/serverless-audit-logging.html) |
+| Latency | Possible values are as follows:+  Short – under 10 seconds <br />+  Medium – between 10 seconds and 10 minutes <br />+  Long – over 10 minutes  |
 | QueryType | Possible values are INSERT, DELETE, UPDATE, UNLOAD, LOAD, SELECT, CTAS, and OTHER. |
-| stage | The execution stages for a query. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/serverless-audit-logging.html) |
+| stage | The execution stages for a query. Possible values are as follows:+  QueryPlanning: Time spent parsing and optimizing SQL statements. <br />+  QueryWaiting: Time spent waiting in the WLM queue. <br />+  QueryExecutingRead: Time spent executing read queries. <br />+  QueryExecutingInsert: Time spent executing insert queries. <br />+  QueryExecutingDelete: Time spent executing delete queries. <br />+  QueryExecutingUpdate: Time spent executing update queries. <br />+  QueryExecutingCtas: Time spent executing create table as queries. <br />+  QueryExecutingUnload: Time spent executing unload queries. <br />+  QueryExecutingCopy: Time spent executing copy queries. <br />+  QueryCommit: Time spent committing.  |
 | Namespace | The name of the namespace. A custom value. |
 | Workgroup | The name of the workgroup. A custom value. |
 | UsageLimitId | The identifier of the usage limit. |
-| UsageType | The Amazon Redshift Serverless feature being limited. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/serverless-audit-logging.html) |
+| UsageType | The Amazon Redshift Serverless feature being limited. Possible values are as follows:+  SERVERLESS\_COMPUTE <br />+  CROSS\_REGION\_DATASHARING  |

@@ -23,9 +23,9 @@ The `AWS/SMSVoice` namespace includes the following metrics specific to RCS mess
 
 | Metric | Description | Unit | Meaningful statistics |
 | --- | --- | --- | --- |
-| RCS.MessagesSent | The number of RCS messages sent. This metric counts messages that AWS End User Messaging accepted and attempted to deliver via RCS. Messages blocked by Protect or service limits are excluded from this count. | Count |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-monitoring.html)  |
-| RCS.MessagesDelivered | The number of RCS messages successfully delivered to the recipient's device. A message is counted as delivered when AWS End User Messaging receives a delivery confirmation from the RCS infrastructure. | Count |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-monitoring.html)  |
-| RCS.MessagesFallenBackToSMS | The number of messages that were initially attempted via RCS but fell back to SMS delivery. This metric helps you understand how often RCS delivery is unavailable for your recipients and can be used to track fallback rates over time. | Count |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sms-voice/latest/userguide/rcs-monitoring.html)  |
+| RCS.MessagesSent | The number of RCS messages sent. This metric counts messages that AWS End User Messaging accepted and attempted to deliver via RCS. Messages blocked by Protect or service limits are excluded from this count. | Count |  + Sum<br />+ Sample Count<br />+ Average  |
+| RCS.MessagesDelivered | The number of RCS messages successfully delivered to the recipient's device. A message is counted as delivered when AWS End User Messaging receives a delivery confirmation from the RCS infrastructure. | Count |  + Sum<br />+ Sample Count<br />+ Average  |
+| RCS.MessagesFallenBackToSMS | The number of messages that were initially attempted via RCS but fell back to SMS delivery. This metric helps you understand how often RCS delivery is unavailable for your recipients and can be used to track fallback rates over time. | Count |  + Sum<br />+ Sample Count<br />+ Average  |
 
 ## Modified existing metrics with OriginationIdentityType dimension
 <a name="rcs-monitoring-modified-metrics"></a>

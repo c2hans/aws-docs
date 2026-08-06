@@ -31,7 +31,7 @@ For example, suppose you want to model a robot asset. The robot includes a servo
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html)  |
+|  +  `robot_model`  `servo_status` *(integer)* `servo_position` *(double)* `powersupply_status` *(integer)* `powersupply_temperature` *(double)* `battery_status` *(integer)* `battery_charge` *(double)*    |
 
 However, in some cases, there might be many subassemblies, or the subassemblies themselves might have many properties. In these cases, there might be so many properties that they become cumbersome to reference and maintain in a single flat list at the model root, like in the preceding example.
 
@@ -41,7 +41,7 @@ To deal with such situations, you can use an inline custom composite model to gr
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html)  |
+|  +  `robot_model`   `servo`  `status` *(integer)* `position` *(double)*    `powersupply`  `status` *(integer)* `temperature` *(double)*    `battery`  `status` *(integer)* `charge` *(double)*      |
 
 In the preceding example, `servo`, `powersupply`, and `battery` are the names of inline custom composite models defined within the `robot_model` asset model. Each of these composite models then defines properties of its own.
 
@@ -66,19 +66,19 @@ To model the robot from the previous example in this way, you could define servo
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html)  |
+|  +  `servo_component_model`  `status` *(integer)* `position` *(double)*    |
 
 ****
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html)  |
+|  +  `powersupply_component_model`  `status` *(integer)* `temperature` *(double)*    |
 
 ****
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html)  |
+|  +  `battery__component_model`  `status` *(integer)* `charge` *(double)*    |
 
 You could then define asset models, such as `robot_model`, that reference these components. Multiple asset models can reference the same component model. You can also reference the same component model multiple times in one asset model, such as if your robot has multiple servomotors in it.
 
@@ -86,7 +86,7 @@ You could then define asset models, such as `robot_model`, that reference these 
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/custom-composite-models.html)  |
+|  +  `robot_model`  `servo1` (*reference:* `servo_component_model`) `servo2` (*reference:* `servo_component_model`) `servo3` (*reference:* `servo_component_model`) `powersupply` (*reference:* `powersupply_component_model`) `battery` (*reference:* `battery_component_model`)    |
 
 For information about how to create component models, see [Create component models](create-component-models.md).
 

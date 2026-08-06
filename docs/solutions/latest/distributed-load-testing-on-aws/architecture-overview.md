@@ -55,4 +55,4 @@ The following steps describe the optional MCP Server integration for AI-assisted
 
 1. Upon successful authentication, AgentCore Gateway forwards the MCP tool request to the DLT MCP Server Lambda function.
 
-1. The Lambda function processes the request and queries the appropriate AWS resources (DynamoDB tables, S3 buckets, or CloudWatch logs) to retrieve the requested load testing data. It then returns the structured data to AgentCore Gateway, which sends it back to the MCP client for AI-assisted analysis and insights.
+1. The Lambda function calls the existing DLT REST API to retrieve the requested load testing data. It then returns the structured data to AgentCore Gateway, which sends it back to the MCP client for AI-assisted analysis and insights.

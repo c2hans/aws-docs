@@ -13,7 +13,7 @@ Result of a report generation attempt.
  ** reportType **   <a name="ngresiliencehub-Type-ReportGenerationResult-reportType"></a>
 The type of the generated report.
 Type: String
-Valid Values: `FAILURE_MODE`
+Valid Values: `FAILURE_MODE | TESTING`
 Required: Yes
 
  ** status **   <a name="ngresiliencehub-Type-ReportGenerationResult-status"></a>
@@ -45,6 +45,18 @@ The service this report was generated for.
 Type: String
 Length Constraints: Minimum length of 31.
 Pattern: `arn:(aws|aws-cn|aws-iso|aws-iso-[a-z]{1}|aws-us-gov):[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:([a-z]{2}-((iso[a-z]{0,1}-)|(gov-)){0,1}[a-z]+-[0-9]):[0-9]{12}:[A-Za-z0-9/][A-Za-z0-9:_/+.-]{0,1023}`
+Required: No
+
+ ** testRunId **   <a name="ngresiliencehub-Type-ReportGenerationResult-testRunId"></a>
+The unique identifier of a test run.
+Type: String
+Required: No
+
+ ** testTemplateArn **   <a name="ngresiliencehub-Type-ReportGenerationResult-testTemplateArn"></a>
+An ARN owned by the service. Accepts either a standard 12-digit account ID or the literal "aws" for AWS-managed resources, such as AWS-managed test templates.
+Type: String
+Length Constraints: Minimum length of 31.
+Pattern: `arn:(aws|aws-cn|aws-iso|aws-iso-[a-z]{1}|aws-us-gov):[A-Za-z0-9][A-Za-z0-9_/.-]{0,62}:([a-z]{2}-((iso[a-z]{0,1}-)|(gov-)){0,1}[a-z]+-[0-9]):([0-9]{12}|aws):[A-Za-z0-9/][A-Za-z0-9:_/+.-]{0,1023}`
 Required: No
 
 ## See Also

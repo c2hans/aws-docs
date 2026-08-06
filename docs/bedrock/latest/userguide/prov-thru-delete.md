@@ -12,7 +12,7 @@ If you don't want to keep your Provisioned Throughput, you can delete it or, for
 ## Deleting a Provisioned Throughput
 <a name="prov-thru-delete-del"></a>
 
-When you delete a Provisioned Throughput, you'll no longer be able to invoke the model at the throughput level that you purchased it for. If you delete a Provisioned Throughput associated with a custom model, the custom model isn't deleted. To learn how to delete a custom model, see [Delete a custom model](model-customization-delete.md).
+When you delete a Provisioned Throughput, you can no longer invoke the model at the throughput level that you purchased. If you delete a Provisioned Throughput linked to a custom model, the custom model isn't deleted. To learn how to delete a custom model, see [Delete a custom model](model-customization-delete.md).
 
 **Note**
 You can't delete a Provisioned Throughput by Model Units with commitment before the commitment term is complete.

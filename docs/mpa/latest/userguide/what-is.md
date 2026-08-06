@@ -15,7 +15,7 @@ Multi-party approval is a capability of [AWS Organizations](https://aws.amazon.c
 
 | Requester | Administrator | Approver |
 | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mpa/latest/userguide/what-is.html) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mpa/latest/userguide/what-is.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mpa/latest/userguide/what-is.html)  |
+|  +  Makes a request to execute a [protected operation](mpa-concepts.md#mpa-protected-operation) <br />+  Waits for the associated [approval team](mpa-concepts.md#mpa-team-term) to review the requested operation <br />+  Understands that a protected operation requires team approval before it can be executed  |  +  Creates approval teams by inviting [AWS IAM Identity Center users](https://docs.aws.amazon.com/singlesignon/latest/userguide/identities.html) <br />+  Manages approval teams by requesting [team updates](update-team.md) or to [delete a team](delete-team.md). Requests by the admin require team approval to take effect <br />+  Understands that an approval team becomes [active](team-health.md) only if every invited approver accepts the team invitation   |  +  Receives email notifications when a requester attempts to execute a protected operation <br />+  Uses the link in the email notification to visit the [Multi-party approval portal](mpa-concepts.md#mpa-portal) <br />+  [Responds to requested operations](respond-request.md) and [views operation history](view-operation-history.md) in the portal   |
 
 ## Example scenario: Protect logically air-gapped vaults
 <a name="mpa-example"></a>

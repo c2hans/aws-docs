@@ -26,6 +26,20 @@ Type: Array of strings
 Pattern: `arn:aws:aws-marketplace:[a-z]{1,2}-[a-z]*-\d+:\d{12}:AWSMarketplace/OfferSet/offerset-.*`
 Required: No
 
+ ** AwsMarketplaceProducts **   <a name="AWSPartnerCentral-Type-RelatedEntityIdentifiers-AwsMarketplaceProducts"></a>
+Specifies the AWS Marketplace products to associate with the `Opportunity`. Each value is an Amazon Resource Name (ARN) that identifies a product listing in AWS Marketplace.
+Type: Array of strings
+Length Constraints: Minimum length of 4. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: No
+
+ ** AwsMarketplaceSolutions **   <a name="AWSPartnerCentral-Type-RelatedEntityIdentifiers-AwsMarketplaceSolutions"></a>
+Specifies the AWS Marketplace solutions to associate with the `Opportunity`. Each value is an Amazon Resource Name (ARN) that identifies a solution listing in AWS Marketplace.
+Type: Array of strings
+Length Constraints: Minimum length of 4. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: No
+
  ** AwsProducts **   <a name="AWSPartnerCentral-Type-RelatedEntityIdentifiers-AwsProducts"></a>
 Enables the association of specific AWS products with the `Opportunity`. Partners can indicate the relevant AWS products for the `Opportunity`'s solution and align with the customer's needs. Returns multiple values separated by commas. For example, `"AWSProducts" : ["AmazonRedshift", "AWSAppFabric", "AWSCleanRooms"]`.
 Use the file with the list of AWS products hosted on GitHub: [AWS products](https://github.com/aws-samples/partner-crm-integration-samples/blob/main/resources/aws_products.json).

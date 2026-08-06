@@ -50,13 +50,13 @@ Processor is not relevant for this source type
 
 | Processor | Source Type | Restrictions |
 | --- | --- | --- |
-| OCSF | CloudWatch Logs with CloudTrail |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
-| OCSF | API-based Sources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
-| parse\_vpc | CloudWatch Logs |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
-| parse\_route53 | CloudWatch Logs |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
-| parse\_rds | CloudWatch Logs |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
-| add\_entries | All Sources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
-| copy\_values | All Sources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/processor-compatibility.html)  |
+| OCSF | CloudWatch Logs with CloudTrail |  +  Only allowed when `data_source_name` is `aws_cloudtrail` <br />+  Must use CloudTrail-specific schema version <br />+  Cannot be combined with other processors   |
+| OCSF | API-based Sources |  +  Must use source-specific schema (e.g., microsoft\_office365\_management\_activity for Office 365) <br />+  Requires specific mapping version for each source type <br />+  Must be first processor in pipeline   |
+| parse\_vpc | CloudWatch Logs |  +  Only valid for VPC Flow Logs <br />+  Must be first processor <br />+  Input must contain raw VPC Flow Log format   |
+| parse\_route53 | CloudWatch Logs |  +  Only valid for Route 53 Resolver Query Logs <br />+  Must be first processor <br />+  Input must contain Route 53 Resolver query log format   |
+| parse\_rds | CloudWatch Logs |  +  Only valid when `data_source_name` is `amazon_rds` <br />+  Must be first processor <br />+  Takes no parameters; the log type is inferred from the pipeline's `data_source_type`   |
+| add\_entries | All Sources |  +  Maximum one instance per pipeline <br />+  Key names must be valid according to field naming rules   |
+| copy\_values | All Sources |  +  Maximum one instance per pipeline <br />+  Source fields must exist in the event   |
 
 **Important**
 When using processors with restrictions:

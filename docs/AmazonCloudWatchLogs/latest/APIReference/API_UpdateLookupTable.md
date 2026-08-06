@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 # UpdateLookupTable
 <a name="API_UpdateLookupTable"></a>
 
-Updates an existing lookup table by replacing all of its CSV content. After the update completes, queries that use this table will use the new data.
+Updates an existing lookup table by replacing all of its content with new CSV data or CloudWatch Logs query results. After the update completes, queries that use this table use the new data.
 
-This is a full replacement operation. All existing content is replaced with the new CSV data.
+This is a full replacement operation. All existing content is replaced. You must specify either `tableBody` or `queryId`, but not both.
 
 ## Request Syntax
 <a name="API_UpdateLookupTable_RequestSyntax"></a>
@@ -17,6 +17,7 @@ This is a full replacement operation. All existing content is replaced with the 
    "description": "{{string}}",
    "kmsKeyId": "{{string}}",
    "lookupTableArn": "{{string}}",
+   "queryId": "{{string}}",
    "tableBody": "{{string}}"
 }
 ```
@@ -45,11 +46,19 @@ The ARN of the lookup table to update.
 Type: String
 Required: Yes
 
+ ** [queryId](#API_UpdateLookupTable_RequestSyntax) **   <a name="CWL-UpdateLookupTable-request-queryId"></a>
+The ID of a completed or cancelled CloudWatch Logs query whose results replace the lookup table content. A cancelled query replaces the content with the partial results that were available when the query was stopped.
+You must specify either `tableBody` or `queryId`, but not both.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
  ** [tableBody](#API_UpdateLookupTable_RequestSyntax) **   <a name="CWL-UpdateLookupTable-request-tableBody"></a>
 The new CSV content to replace the existing data. The first row must be a header row with column names. The content must use UTF-8 encoding and not exceed 10 MB.
+You must specify either `tableBody` or `queryId`, but not both.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10485760.
-Required: Yes
+Required: No
 
 ## Response Syntax
 <a name="API_UpdateLookupTable_ResponseSyntax"></a>

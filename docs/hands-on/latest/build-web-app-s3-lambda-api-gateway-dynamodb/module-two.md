@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-
 | --- |--- |
 | **Time to complete** | 5 minutes  |
 | **Services used** | [AWS Lambda](https://aws.amazon.com/lambda/) <br />[AWS Amplify](https://aws.amazon.com/amplify/)  |
-| **Requires** | A text editor. Here are a few free ones: [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-web-app-s3-lambda-api-gateway-dynamodb/module-two.html) |
+| **Requires** | A text editor. Here are a few free ones: +  [Atom](https://atom.io/)  <br />+  [Notepad\+\+](https://notepad-plus-plus.org/)  <br />+  [Sublime](https://www.sublimetext.com/)  <br />+  [Vim](https://www.vim.org/)  <br />+  [Visual Studio Code](https://code.visualstudio.com/)   |
 | **Get help** | [Learn more about functions](https://docs.amplify.aws/react/build-a-backend/functions/)  |
 
 ## Overview

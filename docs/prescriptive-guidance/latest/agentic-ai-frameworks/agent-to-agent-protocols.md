@@ -11,8 +11,8 @@ The following table provides an overview of agentic protocols that enable multip
 |
 | Protocol | Ideal for | Considerations |
 | --- |--- |--- |
-| [MCP inter-agent communication](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/) | Organizations seeking flexible agent collaboration patterns | An extension to the Model Context Protocol (MCP) proposed by AWS that builds on its existing foundation for agent-to-agent communicationEnables seamless agent collaboration with OAuth-based security |
-| [A2A protocol](https://github.com/a2aproject/A2A) | Cross-platform agent ecosystems | Backed by GoogleNewer standard with more limited adoption compared to MCP |
+| [MCP inter-agent communication](https://aws.amazon.com/blogs/opensource/open-protocols-for-agent-interoperability-part-1-inter-agent-communication-on-mcp/) | Organizations seeking flexible agent collaboration patterns | + An extension to the Model Context Protocol (MCP) proposed by AWS that builds on its existing foundation for agent-to-agent communication<br />+ Enables seamless agent collaboration with OAuth-based security |
+| [A2A protocol](https://github.com/a2aproject/A2A) | Cross-platform agent ecosystems | + Backed by Google<br />+ Newer standard with more limited adoption compared to MCP |
 
 ## Deciding among protocol options
 <a name="deciding-among-protocol-options.38a4e70b-e8c9-5317-967c-d93f902ed4b3"></a>

@@ -9,8 +9,8 @@ The Amazon DCV Access Console has the following requirements.
 
 |  | Authentication Server | Handler | Web Client |
 | --- | --- | --- | --- |
-| **Operating system** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/requirements.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/requirements.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/requirements.html)  |
+| **Operating system** |  +  AL 2023 <br />+  CentOS Stream 9 <br />+  RHEL 9.x <br />+  Rocky Linux 8.5 or later <br />+  Rocky Linux 9.x <br />+  Ubuntu 22.04 <br />+  Ubuntu 24.04   |  +  AL 2023 <br />+  CentOS Stream 9 <br />+  RHEL 9.x <br />+  Rocky Linux 8.5 or later <br />+  Rocky Linux 9.x <br />+  Ubuntu 22.04 <br />+  Ubuntu 24.04   |  +  AL 2023 <br />+  CentOS Stream 9 <br />+  RHEL 9.x <br />+  Rocky Linux 8.5 or later <br />+  Rocky Linux 9.x <br />+  Ubuntu 22.04 <br />+  Ubuntu 24.04   |
 | **Browser** | N/A | N/A | Latest Chrome Browser |
-| **Architecture** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/requirements.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/requirements.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/requirements.html)  |
+| **Architecture** |  +  64-bit x86 <br />+  64-bit ARM   |  +  64-bit x86 <br />+  64-bit ARM   |  +  64-bit x86 <br />+  64-bit ARM   |
 | **Memory** | 4 GB | 4 GB | 4 GB |
 | **Additional requirements** | Java 17 | Java 17, DynamoDB/MariaDB/MySQL | Node 18, NGNIX |

@@ -138,7 +138,7 @@ This section provides detailed information about the common errors you might enc
 **Solution:**
 + We suggest employing AWS recommended approach of using [retries with exponential backoff](https://docs.aws.amazon.com//prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html) and random [jitter](https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/) for improved reliability.
 + Consider switching to a different AWS Region if the issue persists in your current Region. Different Regions may have varying levels of load and availability.
-+ [Use Cross-Region inference](https://docs.aws.amazon.com//bedrock/latest/userguide/cross-region-inference.html) to seamlessly manage unplanned traffic bursts by using compute across different AWS Regions.
++ [Use Cross-Region inference](https://docs.aws.amazon.com//bedrock/latest/userguide/cross-region-inference.html) to route your requests by using compute across different AWS Regions.
 + If you have high throughput requirements, we suggest exploring [Provisioned Throughput](https://docs.aws.amazon.com//bedrock/latest/userguide/prov-throughput.html) for your use case.
 
 **Best practices**

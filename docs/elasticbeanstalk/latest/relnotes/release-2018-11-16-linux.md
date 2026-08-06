@@ -24,7 +24,7 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 | **Java SE** | Updated the Java 8 configuration to OpenJDK Version 1.8.0\_191-b12. |
 | **Java with Tomcat** | Updated the Java 8 configurations to OpenJDK Version 1.8.0\_191-b12.<br />Updated the Tomcat 7 configurations to [Apache Tomcat Version 7.0.91](https://tomcat.apache.org/tomcat-7.0-doc/RELEASE-NOTES.txt). |
 | **Node.js** | Updated the Node.js platform to support [Node v10.13.0](https://nodejs.org/en/blog/release/v10.13.0/).<br />Node 10 is now the default Node.js version. |
-| **M5a, R5a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-11-16-linux.html)  |
+| **M5a, R5a** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Europe (Ireland) – eu-west-1  |
 
 ## Updated platform configurations
 <a name="release-2018-11-16-linux.platforms"></a>

@@ -26,10 +26,13 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "Type" : "AWS::DevOpsAgent::Service",
   "Properties" : {
+      "[ExchangeUrlPrivateConnectionName](#cfn-devopsagent-service-exchangeurlprivateconnectionname)" : {{String}},
       "[KmsKeyArn](#cfn-devopsagent-service-kmskeyarn)" : {{String}},
+      "[PrivateConnectionName](#cfn-devopsagent-service-privateconnectionname)" : {{String}},
       "[ServiceDetails](#cfn-devopsagent-service-servicedetails)" : {{ServiceDetails}},
       "[ServiceType](#cfn-devopsagent-service-servicetype)" : {{String}},
-      "[Tags](#cfn-devopsagent-service-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-devopsagent-service-tags)" : {{[ Tag, ... ]}},
+      "[TargetUrlPrivateConnectionName](#cfn-devopsagent-service-targeturlprivateconnectionname)" : {{String}}
     }
 }
 ```
@@ -40,16 +43,28 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 Type: AWS::DevOpsAgent::Service
 Properties:
+  [ExchangeUrlPrivateConnectionName](#cfn-devopsagent-service-exchangeurlprivateconnectionname): {{String}}
   [KmsKeyArn](#cfn-devopsagent-service-kmskeyarn): {{String}}
+  [PrivateConnectionName](#cfn-devopsagent-service-privateconnectionname): {{String}}
   [ServiceDetails](#cfn-devopsagent-service-servicedetails): {{
     ServiceDetails}}
   [ServiceType](#cfn-devopsagent-service-servicetype): {{String}}
   [Tags](#cfn-devopsagent-service-tags): {{
     - Tag}}
+  [TargetUrlPrivateConnectionName](#cfn-devopsagent-service-targeturlprivateconnectionname): {{String}}
 ```
 
 ## Properties
 <a name="aws-resource-devopsagent-service-properties"></a>
+
+`ExchangeUrlPrivateConnectionName`  <a name="cfn-devopsagent-service-exchangeurlprivateconnectionname"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9]([a-z0-9-]*[a-z0-9])?$`
+*Minimum*: `3`
+*Maximum*: `30`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `KmsKeyArn`  <a name="cfn-devopsagent-service-kmskeyarn"></a>
 Property description not available.
@@ -57,6 +72,15 @@ Property description not available.
 *Type*: String
 *Minimum*: `1`
 *Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`PrivateConnectionName`  <a name="cfn-devopsagent-service-privateconnectionname"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9]([a-z0-9-]*[a-z0-9])?$`
+*Minimum*: `3`
+*Maximum*: `30`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ServiceDetails`  <a name="cfn-devopsagent-service-servicedetails"></a>
@@ -77,6 +101,15 @@ Property description not available.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-devopsagent-service-tag.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TargetUrlPrivateConnectionName`  <a name="cfn-devopsagent-service-targeturlprivateconnectionname"></a>
+Property description not available.
+*Required*: No
+*Type*: String
+*Pattern*: `^[a-z0-9]([a-z0-9-]*[a-z0-9])?$`
+*Minimum*: `3`
+*Maximum*: `30`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-devopsagent-service-return-values"></a>

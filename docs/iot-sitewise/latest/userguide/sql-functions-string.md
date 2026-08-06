@@ -13,7 +13,7 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 | --- | --- | --- |
 | `LENGTH` |  LENGTH (string)  | Returns the length of the string. |
 | `CONCAT` |  CONCAT (string, string)  | Concatenates arguments in a string. |
-| `SUBSTR` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-string.html)  | Returns one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-string.html)<br />Uses 1-based indexing for start parameter. |
+| `SUBSTR` |  +  SUBSTR (string, start) <br />+  SUBSTR (string, start, length) <br />+  SUBSTR (string, regexp)   | Returns one of the following:+  Returns the substring of the input string starting the specified location and optionally having the specified length. <br />+  Returns the first substring of the input string matching the specified regular expression. <br />Uses 1-based indexing for start parameter. |
 | `UPPER` |  UPPER (string)  | Converts the characters in the input string to uppercase. |
 | `LOWER` |  LOWER (string)  | Converts the characters in the input string to lowercase. |
 | `TRIM` |  TRIM (string)  | Removes any space characters from the beginning, end, or both sides of string. |
@@ -27,7 +27,7 @@ Examples of all the functions:
 | --- | --- |
 | LENGTH | `SELECT LENGTH(a.asset_id) AS asset_id_length FROM asset AS a` |
 | CONCAT |  `SELECT CONCAT(p.property_id, p.property_name) FROM asset_property AS p`  |
-| SUBSTR |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-string.html)  |
+| SUBSTR |  +  `SELECT SUBSTR(a.asset_name, 1, 3) AS substr-val FROM asset AS a` <br />+  `SELECT SUBSTR(p.property_name, 3) AS substr_val1 FROM asset_property AS p` <br />+  `SELECT SUBSTR(p.property_name, '@[^.]*') AS substr_val2 FROM asset_property AS p`   |
 | UPPER |  `SELECT UPPER(d.string_value) AS up_string FROM raw_time_series AS d`  |
 | LOWER |  `SELECT LOWER(d.string_value) AS low_string FROM raw_time_series AS d`  |
 | TRIM |  `SELECT TRIM(d.string_value) AS tm_string FROM raw_time_series AS d`  |

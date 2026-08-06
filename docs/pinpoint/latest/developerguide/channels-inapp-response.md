@@ -109,7 +109,7 @@ The `InAppMessage` object contains the following attributes:
 </thead>
 <tbody>
   <tr><td>`Content`</td><td>An array containing an [InAppMessageContent](#channels-inapp-response-inappmessagecontent-object) object, which describes the content of the message.</td><td rowspan="2">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
-  <tr><td>`Layout`</td><td>A string that describes how the in-app message will appear on the recipient's device. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-inapp-response.html)</td></tr>
+  <tr><td>`Layout`</td><td>A string that describes how the in-app message will appear on the recipient's device. Possible values are:+  `BOTTOM_BANNER` – a message that appears as a banner at the bottom of the page. <br />+  `TOP_BANNER` – a message that appears as a banner at the top of the page. <br />+  `OVERLAYS` – a message that covers entire screen. <br />+  `MOBILE_FEED` – a message that appears in a window in front of the page. <br />+  `MIDDLE_BANNER` – a message that appears as a banner in the middle of the page. <br />+  `CAROUSEL` – a scrollable layout of up to five unique messages. </td></tr>
 </tbody>
 </table>
 
@@ -208,7 +208,7 @@ An `DefaultButtonConfig` object contains the following attributes:
 <tbody>
   <tr><td>`BackgroundColor`</td><td>The background color of the button, expressed as a string containing a hex color code (such as "\#000000" for black).</td><td rowspan="6">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
   <tr><td>`BorderRadius`</td><td>The radius of the button's border in pixels, expressed as an integer. A larger number results in more rounded corners.</td></tr>
-  <tr><td>`ButtonAction`</td><td>A string that describes the action that occurs when a recipient chooses a button in the in-app message. Possible values are: [See the AWS documentation website for more details](http://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-inapp-response.html)</td></tr>
+  <tr><td>`ButtonAction`</td><td>A string that describes the action that occurs when a recipient chooses a button in the in-app message. Possible values are: +  `LINK` – A link to a web destination.  <br />+  `DEEP_LINK` – A link to a specific page in an application.  <br />+  `CLOSE` – Dismisses the message.  </td></tr>
   <tr><td>`Link`</td><td>The destination URL for a button. Not present for buttons where the ButtonAction is `CLOSE`.</td></tr>
   <tr><td>`Text`</td><td>The text that appears on the button.</td></tr>
   <tr><td>`TextColor`</td><td>The color of the text on the button, expressed as a string containing a hex color code (such as "\#000000" for black).</td></tr>
@@ -227,7 +227,7 @@ An `OverrideButtonConfig` object contains the following attributes:
   <tr><th>Attribute</th><th>Description</th><th>Where it's set</th></tr>
 </thead>
 <tbody>
-  <tr><td>`ButtonAction`</td><td>The action that occurs when a recipient chooses a button in the in-app message. Possible values are: [See the AWS documentation website for more details](http://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-inapp-response.html)</td><td rowspan="4">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
+  <tr><td>`ButtonAction`</td><td>The action that occurs when a recipient chooses a button in the in-app message. Possible values are: +  `LINK` – A link to a web destination.  <br />+  `DEEP_LINK` – A link to a specific page in an application.  <br />+  `CLOSE` – Dismisses the message.  </td><td rowspan="4">Based on the content in the [in-app message template](https://docs.aws.amazon.com/pinpoint/latest/userguide/message-templates-creating-inapp.html) that was specified for the campaign.</td></tr>
   <tr><td>`Link`</td><td>The destination URL for a button. Not present for buttons where the `ButtonAction` is `CLOSE`.</td></tr>
   <tr><td>`Text`</td><td>The text that appears on the button.</td></tr>
   <tr><td>`TextColor`</td><td>The color of the text on the button, expressed as a string containing a hex color code (such as "\#000000" for black).</td></tr>

@@ -22,16 +22,16 @@ The following table lists router standard output metrics that AWS Elemental Medi
 
 | Metric | Description |
 | --- | --- |
-| RouterOutputARQRequests | The number of retransmitted packets that were requested through automatic repeat request (ARQ).<br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: RIST, SRT |
-| RouterOutputBitRate | The bitrate of the output stream payload, not including protocol overhead. <br />Units: bits per second (bps)<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: All |
-| RouterOutputConnected | The status of the output. A value of 1 indicates that the output is connected, and a value of 0 (zero) indicates that the output is disconnected.<br />Units: None<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: SRT |
-| RouterOutputDisconnections | The number of times that the output status changed from connected to disconnected.<br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: SRT |
-| RouterOutputFECPackets | The number of forward error correction packets sent by the output.<br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: RTP/FEC |
-| RouterOutputLatency | The latency of the output stream.<br />Units: Milliseconds<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: SRT |
-| RouterOutputRejections | The number of times the connection was rejected by the peer.<br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: SRT |
-| RouterOutputResentPackets | The number of packets that were retransmitted to the output destination. <br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: RIST, SRT |
-| RouterOutputRoundTripTime | The amount of time it takes for the output to send a signal and receive an acknowledgment.<br />Units: Milliseconds<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: RIST, SRT |
-| RouterOutputTotalPackets | The total number of packets sent by the output.<br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: All |
+| RouterOutputARQRequests | The number of retransmitted packets that were requested through automatic repeat request (ARQ).<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: RIST, SRT |
+| RouterOutputBitRate | The bitrate of the output stream payload, not including protocol overhead. <br />Units: bits per second (bps)<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
+| RouterOutputConnected | The status of the output. A value of 1 indicates that the output is connected, and a value of 0 (zero) indicates that the output is disconnected.<br />Units: None<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: SRT |
+| RouterOutputDisconnections | The number of times that the output status changed from connected to disconnected.<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: SRT |
+| RouterOutputFECPackets | The number of forward error correction packets sent by the output.<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: RTP/FEC |
+| RouterOutputLatency | The latency of the output stream.<br />Units: Milliseconds<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: SRT |
+| RouterOutputRejections | The number of times the connection was rejected by the peer.<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: SRT |
+| RouterOutputResentPackets | The number of packets that were retransmitted to the output destination. <br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: RIST, SRT |
+| RouterOutputRoundTripTime | The amount of time it takes for the output to send a signal and receive an acknowledgment.<br />Units: Milliseconds<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: RIST, SRT |
+| RouterOutputTotalPackets | The total number of packets sent by the output.<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
 
 ## Router output metrics for MediaConnect flow connections
 <a name="monitor-with-cloudwatch-metrics-router-output-flow"></a>
@@ -40,7 +40,7 @@ When a router output sends content to a MediaConnect flow, MediaConnect sends th
 
 | Metric | Description |
 | --- | --- |
-| RouterOutputBitRate | The bitrate of the output stream payload, not including protocol overhead.<br />Units: bits per second (bps)<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: All |
+| RouterOutputBitRate | The bitrate of the output stream payload, not including protocol overhead.<br />Units: bits per second (bps)<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone, DownstreamFlowSourceName, DownstreamFlowARN <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
 
 **Note**
 When no AWS Elemental MediaConnect flow is connected to the router output, the DownstreamFlowSourceName and DownstreamFlowARN dimensions display as `<unconnected>`.
@@ -52,7 +52,7 @@ When a router output sends content to a MediaLive input, MediaConnect sends the 
 
 | Metric | Description |
 | --- | --- |
-| RouterOutputBitRate | The bitrate of the output stream payload, not including protocol overhead.<br />Units: bits per second (bps)<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: All |
+| RouterOutputBitRate | The bitrate of the output stream payload, not including protocol overhead.<br />Units: bits per second (bps)<br />Valid dimensions:+  RouterOutputName, RouterOutputID, AvailabilityZone, DownstreamMediaLiveInputID <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
 
 **Note**
 When no MediaLive input is connected to the router output, the DownstreamMediaLiveInputID dimension displays as `<unconnected>`.
@@ -64,8 +64,8 @@ These metrics track the connection between a router input and a router output. M
 
 | Metric | Description |
 | --- | --- |
-| RouteBitRate | The bitrate of the content on the route between the router input and the router output.<br />Units: bits per second (bps)<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: All |
-| RouteNotRecoveredPackets | The number of packets lost between the router input and the router output.<br />Units: Count<br />Valid dimensions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-router-output-health.html)<br />Protocols: All |
+| RouteBitRate | The bitrate of the content on the route between the router input and the router output.<br />Units: bits per second (bps)<br />Valid dimensions:+  RouterOutputName, RouterOutputID, RouterOutputAvailabilityZone, RouterInputName, RouterInputID, RouterInputAvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
+| RouteNotRecoveredPackets | The number of packets lost between the router input and the router output.<br />Units: Count<br />Valid dimensions:+  RouterOutputName, RouterOutputID, RouterOutputAvailabilityZone, RouterInputName, RouterInputID, RouterInputAvailabilityZone <br />+  RouterOutputARN <br />+  AvailabilityZone <br />Protocols: All |
 
 **Note**
 When the router output is running but not connected to a router input, the RouterInputName, RouterInputID and RouterInputAvailabilityZone dimensions display as `<unrouted>`.

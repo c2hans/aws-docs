@@ -19,7 +19,7 @@ This topic defines the flow block for setting the text-to-speech (TTS) language 
 + After this block is run, any TTS invocation resolves to theneural, standard or generative voice selected.
 + If this block is triggered during a chat conversation, the contact goes down the **Success** branch. It has no effect on the chat experience.
 + You will be charged for using the Generative voices. For more details on pricing, see the [Amazon Polly Pricing Details](https://aws.amazon.com/polly/pricing/)
-+ If you are onboarded to [Next Gen Amazon Connect](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html), the Generative voices are included as part of the Next Gen Amazon Connect pricing.
++ Generative voices are available in [Amazon Connect Customer](https://docs.aws.amazon.com/connect/latest/adminguide/enable-nextgeneration-amazonconnect.html).
 
 **Note**
 If your instance was created before October 2018 and you have since migrated to a Service Linked Role (SLR), you need to add the following custom permissions to your Service Role (SR) to access the Generative engines.

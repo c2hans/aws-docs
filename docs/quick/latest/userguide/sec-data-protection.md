@@ -19,6 +19,9 @@ We strongly recommend that you never put confidential or sensitive information, 
 
 Amazon Quick does not use customer data for training or improving underlying LLMs.
 
+For information about safety controls for AI-powered chat interactions, see [AI guardrails in Amazon Quick](guardrails.md).
+
 **Topics**
 + [Data encryption in Amazon Quick](data-encryption.md)
 + [Inter-network traffic privacy in Amazon Quick](internetwork-traffic-privacy.md)
++ [User lifecycle and data handling in Amazon Quick](user-lifecycle-data-handling.md)

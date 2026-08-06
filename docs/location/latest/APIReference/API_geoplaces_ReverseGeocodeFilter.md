@@ -11,7 +11,7 @@ The included place types.
 <a name="API_geoplaces_ReverseGeocodeFilter_Contents"></a>
 
  ** IncludePlaceTypes **   <a name="location-Type-geoplaces_ReverseGeocodeFilter-IncludePlaceTypes"></a>
- The included place types. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only `Street` and `PointAddress` values.
+ The included place types. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only `Street` and `PointAddress` values.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 7 items.
 Valid Values: `Locality | Intersection | Street | PointAddress | InterpolatedAddress | SecondaryAddress | PointOfInterest`

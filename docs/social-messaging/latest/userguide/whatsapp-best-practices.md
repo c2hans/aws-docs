@@ -51,14 +51,14 @@ The following are prohibited content categories for all message types globally. 
 
 | Category | Examples |
 | --- | --- |
-| Gambling |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| High-risk financial services |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| Debt forgiveness |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| Get-rich-quick schemes |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| Illegal substances |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| Phishing/smishing |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| S.H.A.F.T. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
-| Third-Party Lead Generation |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/whatsapp-best-practices.html)  |
+| Gambling |  +  Casinos <br />+  Sweepstakes <br />+  App/Websites   |
+| High-risk financial services |  +  Payday loans <br />+  Short-term high-interest loans <br />+  Auto loans <br />+  Mortgage loans <br />+  Student loans <br />+  Debt collection <br />+  Stock alerts <br />+  Cryptocurrency   |
+| Debt forgiveness |  +  Debt consolidation <br />+  Debt reduction <br />+  Credit repair programs   |
+| Get-rich-quick schemes |  +  Work-from-home programs <br />+  Risk-investment opportunities <br />+  Pyramid or multi-level marketing schemes   |
+| Illegal substances |  +  Cannabis/CBD   |
+| Phishing/smishing |  +  Attempts to get users to reveal personal information or website login information.   |
+| S.H.A.F.T. |  +  Sex <br />+  Hate <br />+  Alcohol <br />+  Firearms <br />+  Tobacco/Vape   |
+| Third-Party Lead Generation |  +  Companies that buy, sell, or share consumer information   |
 
 ## Audit your customer lists
 <a name="best-practices-whatsapp-audit-lists"></a>

@@ -181,9 +181,9 @@ The following table shows execution statuses and their transitions based on exec
 
 | Command execution status | Initiated by device/cloud? | Terminal execution? | Allowed status transitions |
 | --- | --- | --- | --- |
-| CREATED | Cloud | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-command-concepts.html)  |
-| IN\_PROGRESS | Device | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-command-concepts.html)  |
-| TIMED\_OUT | Device and cloud | No |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-command-concepts.html)  |
+| CREATED | Cloud | No |  +  IN\_PROGRESS <br />+  SUCCEEDED <br />+  FAILED <br />+  REJECTED <br />+  TIMED\_OUT   |
+| IN\_PROGRESS | Device | No |  +  IN\_PROGRESS <br />+  SUCCEEDED <br />+  FAILED <br />+  REJECTED <br />+  TIMED\_OUT   |
+| TIMED\_OUT | Device and cloud | No |  +  SUCCEEDED <br />+  FAILED <br />+  REJECTED <br />+  TIMED\_OUT   |
 | SUCCEEDED | Device | Yes | Not applicable |
 | FAILED | Device | Yes | Not applicable |
 | REJECTED | Device | Yes | Not applicable |

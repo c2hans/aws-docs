@@ -52,7 +52,7 @@ The following bucket policy grants the S3 Lifecycle service principal permission
 ### Monitoring lifecycle rules
 <a name="lifecycle-directory-bucket-monitoring"></a>
 
-For objects stored in directory buckets, S3 Lifecycle generates AWS CloudTrail management and data event logs. For more information, see [CloudTrail log file examples for S3 Express One Zone](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-log-files.html).
+For objects stored in directory buckets, S3 Lifecycle generates AWS CloudTrail management and data event logs. For more information, see [CloudTrail log file examples for directory buckets](s3-express-log-files.md).
 
 For more information about creating lifecycle configurations and troubleshooting S3 Lifecycle related issues, see the following topics:
 

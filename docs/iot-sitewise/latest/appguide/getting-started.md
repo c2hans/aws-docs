@@ -15,9 +15,9 @@ Depending on your role, you might have different tasks to perform.
 
 | Role | Tasks | Getting started |
 | --- | --- | --- |
-| Portal administrator |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/appguide/getting-started.html)  | [Set up a portal administrator for AWS IoT SiteWise Monitor](portal-admin-getting-started.md) |
-| Project owner |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/appguide/getting-started.html)  | [Get started as an AWS IoT SiteWise Monitor project owner](project-owner-getting-started.md) |
-| Project viewer |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/appguide/getting-started.html)  | [Get started as an AWS IoT SiteWise Monitor project viewer](project-viewer-getting-started.md) |
+| Portal administrator |  +  Accept invitation to the portal and log in <br />+  Explore assets and their data <br />+  Create projects to share data <br />+  Assign owners to projects <br />+  Add assets to projects   | [Set up a portal administrator for AWS IoT SiteWise Monitor](portal-admin-getting-started.md) |
+| Project owner |  +  Accept invitation to the project and log in <br />+  Explore project assets and their data <br />+  Create dashboards to visualize data <br />+  Configure visualizations to understand data <br />+  Invite viewers to the project   | [Get started as an AWS IoT SiteWise Monitor project owner](project-owner-getting-started.md) |
+| Project viewer |  +  Accept invitation to the project and log in <br />+  Explore shared dashboards <br />+  View and understand organizational data   | [Get started as an AWS IoT SiteWise Monitor project viewer](project-viewer-getting-started.md) |
 
 If you don't have an AWS IoT SiteWise Monitor portal, contact your AWS administrator. For information about how to create a portal, see [Getting started with AWS IoT SiteWise Monitor](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/monitor-getting-started) in the *AWS IoT SiteWise User Guide*.
 

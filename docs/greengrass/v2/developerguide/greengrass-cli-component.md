@@ -382,11 +382,11 @@ The following table describes the changes in each version of the component.
 | 2.16.1 | Version updated for Greengrass nucleus version 2.16.1 release. |
 | 2.16.0 | Version updated for Greengrass nucleus version 2.16.0 release. |
 | 2.15.1 | Version updated for Greengrass nucleus version 2.15.1 release. |
-| 2.15.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-cli-component.html)  |
+| 2.15.0 |  **Bug fixes and improvements**<br />   Adds a fix so that when the auth configuration changes, the component won't reinstall but will still restart.   General bug fixes and improvements.     |
 | 2.14.3 | Version updated for Greengrass nucleus version 2.14.3 release. |
 | 2.14.2 | Version updated for Greengrass nucleus version 2.14.2 release. |
 | 2.14.1 | Version updated for Greengrass nucleus version 2.14.1 release. |
-| 2.14.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-cli-component.html)  |
+| 2.14.0 |  **Bug fixes and improvements**<br />   Validate deployment target parameter in the cli command.     |
 | 2.13.0 | Version updated for Greengrass nucleus version 2.13.0 release. |
 | 2.12.6 | Version updated for Greengrass nucleus version 2.12.6 release. |
 | 2.12.5 | Version updated for Greengrass nucleus version 2.12.5 release. |
@@ -398,7 +398,7 @@ The following table describes the changes in each version of the component.
 | 2.11.3 | Version updated for Greengrass nucleus version 2.11.3 release. |
 | 2.11.2 | Version updated for Greengrass nucleus version 2.11.2 release. |
 | 2.11.1 | Version updated for Greengrass nucleus version 2.11.1 release. |
-| 2.11.0 |  <a name="changelog-cli-2.11.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-cli-component.html)  |
+| 2.11.0 |  <a name="changelog-cli-2.11.0"></a>**New features**<br />   Enables you to cancel a local deployment.   Enables you to configure a failure handling policy for a local deployment.   Improves detailed deployment status reporting.     |
 | 2.10.3 | Version updated for Greengrass nucleus version 2.10.3 release. |
 | 2.10.2 | Version updated for Greengrass nucleus version 2.10.2 release. |
 | 2.10.1 | Version updated for Greengrass nucleus version 2.10.1 release. |
@@ -413,15 +413,15 @@ The following table describes the changes in each version of the component.
 | 2.8.1 | Version updated for Greengrass nucleus version 2.8.1 release. |
 | 2.8.0 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.7.0 | Version updated for Greengrass nucleus version 2.7.0 release. |
-| 2.6.0 |  <a name="changelog-greengrass-cli-2.6.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-cli-component.html)  |
+| 2.6.0 |  <a name="changelog-greengrass-cli-2.6.0"></a>**New features**<br />   Adds support for custom components to call interprocess communication (IPC) operations that the Greengrass CLI uses. You can use these IPC operations to manage local deployments, view component details, and generate a password that you can use to sign in to the [local debug console](local-debug-console-component.md). For more information, see [IPC: Manage local deployments and components](ipc-local-deployments-components.md).   <br />**Bug fixes and improvements**<br />   Additional minor fixes and improvements.     |
 | 2.5.6 | Version updated for Greengrass nucleus version 2.5.6 release. |
 | 2.5.5 | Version updated for Greengrass nucleus version 2.5.5 release. |
 | 2.5.4 | Version updated for Greengrass nucleus version 2.5.4 release. |
 | 2.5.3 | Version updated for Greengrass nucleus version 2.5.3 release. |
 | 2.5.2 | Version updated for Greengrass nucleus version 2.5.2 release. |
 | 2.5.1 | Version updated for Greengrass nucleus version 2.5.1 release. |
-| 2.5.0 |  <a name="changelog-greengrass-cli-2.5.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-cli-component.html)  |
-| 2.4.0 |  <a name="changelog-greengrass-cli-2.4.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-cli-component.html)  |
+| 2.5.0 |  <a name="changelog-greengrass-cli-2.5.0"></a>**New features**<br />   Adds support for core devices that run Windows.   Adds the new `AuthorizedWindowsGroups` configuration parameter that you can specify to authorize system groups to use the Greengrass CLI on Windows devices.   Adds the `windowsUser` parameter for local deployments. You can use this parameter specify the user to use to run components on a Windows core device.     |
+| 2.4.0 |  <a name="changelog-greengrass-cli-2.4.0"></a>**New features**<br />   Adds support for system resource limits. When you create a local deployment, you can configure the maximum amount of CPU and RAM usage that each component's processes can use on the core device. For more information, see [Configure system resource limits for components](configure-greengrass-core-v2.md#configure-component-system-resource-limits) and the [deployment create command](gg-cli-deployment.md#deployment-create).     |
 | 2.3.0 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.2.0 | Version updated for Greengrass nucleus version 2.2.0 release. |
 | 2.1.0 | Version updated for Greengrass nucleus version 2.1.0 release. |

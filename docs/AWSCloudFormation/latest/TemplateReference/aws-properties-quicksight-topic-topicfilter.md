@@ -75,7 +75,7 @@ The date range filter.
 The class of the filter. Valid values for this structure are `ENFORCED_VALUE_FILTER`, `CONDITIONAL_VALUE_FILTER`, and `NAMED_VALUE_FILTER`.
 *Required*: No
 *Type*: String
-*Allowed values*: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER`
+*Allowed values*: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER | DASHBOARD_DEFAULT_FILTER`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FilterDescription`  <a name="cfn-quicksight-topic-topicfilter-filterdescription"></a>
@@ -83,7 +83,7 @@ A description of the filter used to select items for a topic.
 *Required*: No
 *Type*: String
 *Minimum*: `0`
-*Maximum*: `256`
+*Maximum*: `500`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `FilterName`  <a name="cfn-quicksight-topic-topicfilter-filtername"></a>
@@ -106,7 +106,7 @@ The other names or aliases for the filter.
 The type of the filter. Valid values for this structure are `CATEGORY_FILTER`, `NUMERIC_EQUALITY_FILTER`, `NUMERIC_RANGE_FILTER`, `DATE_RANGE_FILTER`, and `RELATIVE_DATE_FILTER`.
 *Required*: No
 *Type*: String
-*Allowed values*: `CATEGORY_FILTER | NUMERIC_EQUALITY_FILTER | NUMERIC_RANGE_FILTER | DATE_RANGE_FILTER | RELATIVE_DATE_FILTER`
+*Allowed values*: `CATEGORY_FILTER | NUMERIC_EQUALITY_FILTER | NUMERIC_RANGE_FILTER | DATE_RANGE_FILTER | RELATIVE_DATE_FILTER | NULL_FILTER`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `NumericEqualityFilter`  <a name="cfn-quicksight-topic-topicfilter-numericequalityfilter"></a>

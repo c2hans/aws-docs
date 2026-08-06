@@ -109,9 +109,9 @@ MediaTailor supports the following ad suppression parameters.
 
 | Name | Description | Accepted Values |
 | --- | --- | --- |
-| availSuppressionMode | Sets the mode for ad suppression. By default, ad suppression is `OFF`. When set to `BEHIND_LIVE_EDGE`, MediaTailor doesn't fill ad breaks on or behind the `aws.availSuppressionValue` time. When set to `AFTER_LIVE_EDGE`, MediaTailor doesn't fill ad breaks on or behind the avail suppression period. The avail suppression period spans from the live-edge time to the `aws.availSuppressionValue` time, plus additional buffer time. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-rules.html)  |
+| availSuppressionMode | Sets the mode for ad suppression. By default, ad suppression is `OFF`. When set to `BEHIND_LIVE_EDGE`, MediaTailor doesn't fill ad breaks on or behind the `aws.availSuppressionValue` time. When set to `AFTER_LIVE_EDGE`, MediaTailor doesn't fill ad breaks on or behind the avail suppression period. The avail suppression period spans from the live-edge time to the `aws.availSuppressionValue` time, plus additional buffer time. |  +   `OFF`  <br />+   `BEHIND_LIVE_EDGE`  <br />+   `AFTER_LIVE_EDGE`    |
 | availSuppressionValue | A time relative to the live edge in a live stream. | A UTF-8 URL-encoded time code in HH:MM:SS. For example, 1 hour and 30 minutes would be 01%3A30%3A00. |
-| availSuppressionFillPolicy | Defines the policy to apply to the avail suppression mode. BEHIND\_LIVE\_EDGE always uses the full avail suppression policy. AFTER\_LIVE\_EDGE can be used to invoke partial ad break fills when a session starts mid-break. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-rules.html)  |
+| availSuppressionFillPolicy | Defines the policy to apply to the avail suppression mode. BEHIND\_LIVE\_EDGE always uses the full avail suppression policy. AFTER\_LIVE\_EDGE can be used to invoke partial ad break fills when a session starts mid-break. |  +   `PARTIAL_AVAIL` - not available for the `BEFORE_LIVE_EDGE` suppression mode  <br />+   `FULL_AVAIL_ONLY` - the default value for the `AFTER_LIVE_EDGE` suppression mode    |
 
 ##### Server-side configuration
 <a name="server-side-query"></a>

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/migration-on-aws-
 | --- |--- |
 | **Purpose** | Help determine which AWS migration and transfer services are the best fit for your organization. |
 | **Last updated** | October 16, 2025 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/migration-on-aws-how-to-choose/migration-on-aws-how-to-choose.html)  |
+| **Covered services** |  +  [AWS Transform MGN](https://docs.aws.amazon.com/mgn/latest/ug/getting-started.html) <br />+  [AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_GettingStarted.html) <br />+  [AWS DataSync](https://docs.aws.amazon.com/datasync/latest/userguide/getting-started.html) <br />+  [Direct Connect](https://aws.amazon.com/directconnect/getting-started/) <br />+  [DMS Schema Conversion](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SchemaConversion.html) <br />+  [Amazon S3 Transfer Acceleration](https://docs.aws.amazon.com/AmazonS3/latest/userguide/transfer-acceleration-getting-started.html) <br />+  [AWS Storage Gateway](https://docs.aws.amazon.com/filegateway/latest/files3/setting-up.html) <br />+  [AWS Transfer Family](https://docs.aws.amazon.com/transfer/latest/userguide/setting-up.html) <br />+  [AWS Transform](https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html)   |
 
 ## Introduction
 <a name="intro"></a>

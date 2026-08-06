@@ -37,7 +37,7 @@ Required: Yes
  ** status **   <a name="datazone-Type-NotebookSummary-status"></a>
 The status of the notebook.
 Type: String
-Valid Values: `ACTIVE | ARCHIVED`
+Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 Required: Yes
 
  ** createdAt **   <a name="datazone-Type-NotebookSummary-createdAt"></a>

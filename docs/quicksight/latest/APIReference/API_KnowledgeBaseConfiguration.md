@@ -14,7 +14,7 @@ The configuration settings for a knowledge base.
 In the following list, the required parameters are described first.
 
  ** templateConfiguration **   <a name="QS-Type-KnowledgeBaseConfiguration-templateConfiguration"></a>
-The template configuration for the knowledge base.
+The template configuration that defines how the data source connector crawls and indexes data for the knowledge base. The template structure varies by connector type. See `KbTemplateConfiguration` for connector-specific details.
 Type: [KbTemplateConfiguration](API_KbTemplateConfiguration.md) object
 Required: No
 

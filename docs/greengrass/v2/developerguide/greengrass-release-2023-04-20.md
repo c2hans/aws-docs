@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.9.6 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.6"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-04-20.html) |
+| Greengrass nucleus | Version 2.9.6 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.6"></a>**Bug fixes and improvements**<br />   Fixes an issue where a Greengrass deployment fails with the error LAUNCH\_DIRECTORY\_CORRUPTED and a subsequent device reboot fails to start Greengrass. This error may occur when you move the Greengrass device between multiple thing groups with deployments that require Greengrass to restart.    |

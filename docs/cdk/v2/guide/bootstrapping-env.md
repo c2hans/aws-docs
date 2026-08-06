@@ -260,7 +260,7 @@ The AWS CDK v1 supported two bootstrapping templates, legacy and modern. CDK v2 
 |  **Cross-account deployments**  | Not allowed | Allowed |
 |  ** AWS CloudFormation Permissions**  | Deploys using current user’s permissions (determined by AWS profile, environment variables, etc.) | Deploys using the permissions specified when the bootstrap stack was provisioned (for example, by using `--trust`) |
 |  **Versioning**  | Only one version of bootstrap stack is available | Bootstrap stack is versioned; new resources can be added in future versions, and AWS CDK apps can require a minimum version |
-|  **Resources\***  | Amazon S3 bucket |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cdk/v2/guide/bootstrapping-env.html)  |
+|  **Resources\***  | Amazon S3 bucket |  +  Amazon S3 bucket <br />+   AWS KMS key <br />+  IAM roles <br />+  Amazon ECR repository <br />+  SSM parameter for versioning   |
 |  ** AWS KMS key**  | IAM roles | Amazon ECR repository |
 |  **Resource naming**  | Automatically generated | Deterministic |
 |  **Bucket encryption**  | Default key |  AWS managed key by default. You can customize to use a customer managed key. |

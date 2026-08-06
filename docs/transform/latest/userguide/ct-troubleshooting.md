@@ -42,4 +42,4 @@ Schedule fails to run
 Schedules run on remote infrastructure. Provision an Amazon EC2 or Batch stack with `atx ct remote provision` before creating a schedule, and confirm the schedule is enabled with `atx ct schedule get {{name}}`.
 
 Continuous modernization not visible in the web application
-If continuous modernization does not appear after you sign in to the AWS Transform web application, sign in with the IAM credentials of the AWS account where AWS Transform is enabled instead of AWS IAM Identity Center. For steps, see [AWS Transform web application (Optional)](ct-working-with.md#ct-web-application).
+If continuous modernization does not appear after you sign in to the AWS Transform web application, sign in with the IAM credentials of the AWS account where AWS Transform is enabled instead of AWS IAM Identity Center. For steps, see [AWS Transform web application](ct-working-with.md#ct-web-application).

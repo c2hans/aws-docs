@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/get-a-domain/get-a-domai
 | **AWS experience** | Beginner  |
 | **Time to complete** | 10 minutes  |
 | **Cost to complete** | See [Cost implications:](#cost-implications)  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/get-a-domain/get-a-domain.html)  |
+| **Requires** |  +  AWS account   Accounts created within the past 24 hours might not yet have access to the services required for this tutorial.  <br />+  Recommended browser: The latest version of Chrome or Firefox    |
 | **Last updated** | November 8, 2022  |
 
 ## Overview

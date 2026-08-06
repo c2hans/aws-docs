@@ -133,7 +133,7 @@ spec:
 ## Node CPU and memory reservations
 <a name="memory-cpu-batch-eks-node-cpu-memory-reservations"></a>
 
-AWS Batch relies on the default logic of the `bootstrap.sh` file for vCPU and memory reservations. For more information about the `bootstrap.sh` file, see [bootstrap.sh](https://github.com/awslabs/amazon-eks-ami/blob/main/templates/al2/runtime/bootstrap.sh). When you size your vCPU and memory resources, consider the examples that follow.
+AWS Batch relies on the default logic of the `bootstrap.sh` file for vCPU and memory reservations. For more information about the `bootstrap.sh` file, see [bootstrap.sh](https://github.com/awslabs/amazon-eks-ami/blob/al2/templates/al2/runtime/bootstrap.sh). When you size your vCPU and memory resources, consider the examples that follow.
 
 **Note**
 If no instances are running, vCPU and memory reservations can initially affect AWS Batch scaling logic and decision making. After the instances are running, AWS Batch adjusts the initial allocations.
@@ -161,7 +161,7 @@ In this example, there are 1930 (calculated 2000-70) millicore vCPU units availa
 
 The memory reservation value is calculated in mebibytes using the following:
 + The instance capacity in mebibytes. For example, an 8 GB instance is 7,748 MiB.
-+ The `kubeReserved` value. The `kubeReserved` value is the amount of memory to reserve for system daemons. The `kubeReserved` value is calculated in the following way: *((11 \* maximum number of pods that is supported by the instance type) \+ 255)*. For information about the maximum number of pods that's supported by an instance type, see [eni-max-pods.txt](https://github.com/awslabs/amazon-eks-ami/blob/main/nodeadm/internal/kubelet/eni-max-pods.txt)
++ The `kubeReserved` value. The `kubeReserved` value is the amount of memory to reserve for system daemons. The `kubeReserved` value is calculated in the following way: *((11 \* maximum number of pods that is supported by the instance type) \+ 255)*. For information about the maximum number of pods that's supported by an instance type, see [instance-info.jsonl](https://github.com/awslabs/amazon-eks-ami/blob/main/nodeadm/internal/kubelet/instance-info.jsonl)
 + The `HardEvictionLimit` value. When available memory falls below the `HardEvictionLimit` value, the instance attempts to evict pods.
 
 The formula to calculate the allocatable memory is as follows: ({{instance\_capacity\_in\_MiB}}) - (11 \* ({{maximum\_number\_of\_pods}})) - 255 - ({{`HardEvictionLimit` value.}})).

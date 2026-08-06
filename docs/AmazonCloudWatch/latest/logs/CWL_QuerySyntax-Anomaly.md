@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySy
 
  Use `anomaly` to automatically identify unusual patterns and potential issues within your log data using machine learning.
 
-The `anomaly` command extends the existing `pattern` functionality and leverages advanced analytics to help identify potential anomalies in log data. You can use `anomaly` to reduce the time it takes to identify and resolve operational issues by automatically surfacing unusual patterns or behaviors in your logs.
+The `anomaly` command extends the existing `pattern` functionality and uses advanced analytics to help identify potential anomalies in log data. You can use `anomaly` to reduce the time it takes to identify and resolve operational issues by automatically surfacing unusual patterns or behaviors in your logs.
 
 The `anomaly` command works with the ` pattern` command to first identify log patterns, then detect anomalies within those patterns. You can also combine `anomaly` with the ` filter` or ` sort` commands to focus anomaly detection on specific subsets of your data.
 

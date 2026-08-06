@@ -73,6 +73,36 @@ To enable logging for Connect AI agents, you use the CloudWatch API. Complete th
    }
    ```
 
+The following example shows how to run the previous steps as a sequence of AWS CLI commands. This example enables event logging for an assistant and sends the logs to a Amazon CloudWatch Logs log group. Run the commands in order, and replace each {{value}} with your own resource names and ARNs.
+
+1. Create a delivery source for the assistant. Use the assistant ARN as the resource ARN, and specify `EVENT_LOGS` as the log type.
+
+   ```
+   aws logs put-delivery-source \
+       --name {{your-assistant-delivery-source}} \
+       --resource-arn arn:aws:wisdom:{{your-region}}:{{your-account-id}}:assistant/{{assistant-id}} \
+       --log-type EVENT_LOGS
+   ```
+
+1. Create a delivery destination that points to your log group. To send logs to Amazon S3 or Amazon Data Firehose instead, specify that resource ARN.
+
+   ```
+   aws logs put-delivery-destination \
+       --name {{your-delivery-destination}} \
+       --delivery-destination-configuration "destinationResourceArn=arn:aws:logs:{{your-region}}:{{your-account-id}}:log-group:{{your-log-group-name}}" \
+       --output-format json
+   ```
+
+1. Link the delivery source to the delivery destination. Use the destination ARN that the previous command returns.
+
+   ```
+   aws logs create-delivery \
+       --delivery-source-name {{your-assistant-delivery-source}} \
+       --delivery-destination-arn arn:aws:logs:{{your-region}}:{{your-account-id}}:delivery-destination:{{your-delivery-destination}}
+   ```
+
+After you create the delivery, you can view logged events in your log group. To confirm that logging works, generate assistant activity, and then query the log group as described in [Examples of common queries to debug assistant logs](#example2-assistant-log).
+
 ## Supported log types
 <a name="supported-log-types-q"></a>
 

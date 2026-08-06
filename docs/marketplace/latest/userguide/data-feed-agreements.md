@@ -17,7 +17,7 @@ The following table lists and describes the items in the data feed.
 | insert\_date | The date a record was inserted into the data feed. |
 | update\_date | The date the record was last updated. |
 | delete\_date | This column is always blank. |
-| Status | The current status of the agreement. Supported statuses include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-agreements.html) |
+| Status | The current status of the agreement. Supported statuses include:+ **Active** – Some or all of the terms of the agreement are in-force.<br />+ **Terminated** – The agreement ended before its pre-agreed end date due to an AWS-initiated termination event. Most commonly a payment failure.<br />+ **Cancelled** – The acceptor chooses to end the agreement before its end date.<br />+ **Expired** – The agreement ended on its pre-agreed end date.<br />+ **Replaced** – The agreement was replaced using a replacement offer.<br />+ **Renewed** – The agreement was renewed into a new agreement using functionality such as auto-renewal.<br />+ **Archived** – The agreement has ended; The exact reason for its ending, **Terminated**, **Canceled**, or **Expired**, is not specified. <br />+ **Rolled back** – The agreement revision has been rolled back because of an error. An earlier revision is now active. Only applicable to inactive agreement revisions.<br />+ **Superceded** – The agreement revision is no longer active and another agreement revision is now active. Only applicable to inactive agreement revisions.  |
 | estimated\_agreement\_value | The total known amount the customer is likely to pay across the lifecycle of the agreement. |
 | currency\_code | The currency of the total known amount the customer is likely to pay in across the lifecycle of the agreement. |
 | agreement\_id | The unique identifier of the agreement. |
@@ -28,7 +28,7 @@ The following table lists and describes the items in the data feed.
 | offer\_set\_id | The identifier for the offer set associated with the offer. |
 | start\_time | The date and time when the agreement starts. |
 | end\_time | The date and time when the agreement ends. The field is null for pay-as-you-go agreements, which don’t have end dates. |
-| acceptance\_time | The date and time the offer was accepted or the agreement was created.[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-agreements.html) |
+| acceptance\_time | The date and time the offer was accepted or the agreement was created.+ Can be back-dated for bring-your-own-license agreements<br />+ Can be different from the start\_date if the agreement was created with the Future-Dated Agreements feature |
 | intent | The buyer's intent when the agreement was last modified. |
 | preceding\_agreement\_id | The agreement ID of the previous agreement. |
 | status\_reason\_code | The reason for the agreement status change. |

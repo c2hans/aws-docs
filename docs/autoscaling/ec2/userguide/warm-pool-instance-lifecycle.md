@@ -16,6 +16,14 @@ For instances entering the warm pool, you might need a lifecycle hook for one of
 + You want to launch EC2 instances from an AMI that takes a long time to finish initializing.
 + You want to run user data scripts to bootstrap the EC2 instances.
 
+**Important**
+As soon as an instance finishes launching into the warm pool, Amazon EC2 Auto Scaling stops or hibernates the instance. Amazon EC2 Auto Scaling does not wait for user data to finish running, so the stop or hibernate action can interrupt a script that is still running.
+By default, cloud-init runs user data only on the first boot. An interrupted script does not run again when the instance leaves the warm pool and enters service. The instance can reach the `InService` state without finishing its bootstrap script, and Amazon EC2 Auto Scaling reports the instance as healthy.
+To prevent an incomplete bootstrap, use one of the following options:
+Add a lifecycle hook for the `EC2_INSTANCE_LAUNCHING` lifecycle action. The instance then stays in the `Warmed:Pending:Wait` state until your bootstrap script finishes and calls `CompleteLifecycleAction`.
+Include the bootstrap steps in your AMI so that little or no work remains for user data.
+Configure the user data to run on every boot, as described in [Prerequisites](ec2-auto-scaling-warm-pools.md#warm-pool-prerequisites). The script then runs again when the instance restarts as it leaves the warm pool.
+
 For instances leaving the warm pool, you might need a lifecycle hook for one of the following reasons:
 + You can use some extra time to prepare EC2 instances for use. For example, you might have services that must start when an instance restarts before your application can work correctly.
 + You want to pre-populate cache data so that a new server doesn't launch with an empty cache.

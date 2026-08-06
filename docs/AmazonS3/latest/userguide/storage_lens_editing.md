@@ -22,7 +22,7 @@ Use the following steps to update an Amazon S3 Storage Lens dashboard on the Ama
 
 1. Choose **View dashboard configuration**.
 
-1. Choose **Edit**. You can now review the dashboard configuration, step by step. To make changes to any of the steps, you can click directly on the step using the left navigation. For instructions on how to update those steps,
+1. Choose **Edit**. You can now review the dashboard configuration, step by step. To make changes to any of the steps, you can choose the step directly using the left navigation. For instructions on how to update those steps,
 **Note**
 You can't change the following:
 The dashboard name

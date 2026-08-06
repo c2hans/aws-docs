@@ -272,6 +272,15 @@ The additional volumes must use the volume names shown in the following table.
 | rdsdbdata3 | I: |
 | rdsdbdata4 | J: |
 
+### Monitoring storage operations per volume
+<a name="Welcome.AdditionalStorageVolumes.Monitoring"></a>
+
+When an instance has additional storage volumes, storage operations such as initialization (after a snapshot restore, point-in-time recovery, read replica creation, or Single-AZ to Multi-AZ conversion) and optimization (after scaling storage) are tracked *per volume*. This means that the primary volume and each additional storage volume can be in different states at the same time. For example, a primary volume might still be initializing while an additional storage volume is being optimized after a storage scale-up.
+
+To observe per-volume state, use the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) operation. The response includes `StorageOperationStatus` and `StorageOperationPercentProgress` at the top level (which report the state of the primary volume) and on each entry in the `AdditionalStorageVolumes` array (which report the state of that specific volume). During an operation, `StorageOperationStatus` is set to `Initializing` or `Optimizing`; both fields are absent when the operation is complete.
+
+For more information about DB instance status and the storage operation fields, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+
 For more information about working with additional storage volumes, see the following sections:
 + [Working with storage for Amazon RDS DB instances](USER_PIOPS.StorageTypes.md)
 + [Working with storage in RDS for Oracle](User_Oracle_AdditionalStorage.md)

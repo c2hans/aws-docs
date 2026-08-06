@@ -11,7 +11,7 @@ When you sign in to the organization's management account in the [AWS Organizati
 To view the details of an organizational unit (OU), you must have the following permissions:
 `organizations:DescribeOrganizationalUnit`
 `organizations:DescribeOrganization` – required only when using the Organizations console
-`organizations:ListOrganizationsUnitsForParent`– required only when using the Organizations console
+`organizations:ListOrganizationalUnitsForParent`– required only when using the Organizations console
 `organizations:ListRoots` – required only when using the Organizations console
 
 ------

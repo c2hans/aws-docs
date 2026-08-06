@@ -56,7 +56,7 @@ For more information about filtering, see [Filtering data on Quick](https://docs
 | Offer visibility | Whether the offer is a public, private, or enterprise contract offer. |
 | Offer Set ID | The identifier for the offer set associated with the offer. |
 | Agreement ID | A unique agreement data feed reference for the agreement signed between a proposer and an accepter to start using a product. |
-| AWS seller of record | An identifier of the business entity which facilitated the transaction. Possible values include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/billed-revenue-dashboard.html) |
+| AWS seller of record | An identifier of the business entity which facilitated the transaction. Possible values include:+  AWS\_INC: The identifier for AWS, Inc. (based in the United States). <br />+  AWS\_EUROPE: The identifier for AWS EMEA SARL (based in Luxembourg). <br />+  AWS\_AUSTRALIA: The identifier for AWS Australia Pty Ltd <br />+  AWS\_JAPAN: The identifier for AWS Japan G.K. <br />+  AWS\_KOREA: The identifier for AWS Korea.  |
 | Payer AWS account ID | The ID of the account that the charges are billed to. |
 | Payer company name | The business name of the account that the charges are billed to. |
 | Reseller company | The business name of the reseller account authorized to sell a software manufacturer's product. |
@@ -114,7 +114,7 @@ Customer charges display in this granular data section 24 hours after the custom
 | Listing fee invoice ID | When an AWS Marketplace subscription is transacted through AWS EMEA SARL, Japan or Australia legal entities (seller of record), the operator for the sale is required to charge the seller a value-added tax (VAT) on the seller listing fee and given a tax compliant invoice. For applicable transactions, the invoice ID for the VAT assessed on the listing fee is different than the software or product subscription invoice ID. Transactions from AWS, Inc. have a value of "Missing\_listing\_fee\_invoice\_id" because the listing fee invoice ID is not applicable.  |
 | Wholesale invoice ID | The AWS ID assigned to the non-payable invoice that represents sale between ISV and Channel Partner in a Channel Partner Private offer (CPPO). For public offers and Marketplace Private offers (MPOs) this field will be 'Not applicable'. |
 | Seller issued invoice ID | An invoice issued by the Seller to AWS. |
-| Seller issued invoice variant | The kind of invoice that corresponds to the invoice\_id column. Possible values include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/billed-revenue-dashboard.html) |
+| Seller issued invoice variant | The kind of invoice that corresponds to the invoice\_id column. Possible values include:+  PURCHASE: An invoice from the seller of record to the end buyer. <br />+  RESALE: An invoice from the ISV to the channel partner to pay the wholesale amount. <br />+  LISTING\_FEE: An invoice from AWS to the ISV to pay the listing fee <br />+  TAX\_VAT: An invoice from the seller to AWS, to pay the Deemed VAT.  |
 | Subscriber company name | The name of the account that subscribed to the product. |
 | Subscriber AWS account ID | The ID of the account that subscribed to the product. |
 | Subscriber email domain | The email domain associated with the account that subscribed to the product. For example, if the email address is liu-jie@example.com, the entry is example.com. |
@@ -161,7 +161,7 @@ Customer charges display in this granular data section 24 hours after the custom
 | Last collection date | The most recent date and time when AWS collected any payment from the buyer for this transaction. |
 | Currency | The currency of the transaction. For example, if the transaction is in US dollars, the entry is USD. |
 | Transaction reference ID | A unique identifier that represents the transaction, which you can use to correlate transactions across AWS Marketplace reports. |
-| AWS seller of record | An identifier of the business entity which facilitated the transaction. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/billed-revenue-dashboard.html) |
+| AWS seller of record | An identifier of the business entity which facilitated the transaction. Possible values are as follows:+  AWS\_INC: The identifier for AWS, Inc. (based in the United States) <br />+  AWS\_EUROPE: The identifier for AWS EMEA SARL (based in Luxembourg) <br />+  AWS AUSTRALIA: The identiﬁer for AWS Australia Pty Ltd <br />+  AWS\_JAPAN: The identifier for AWS Japan G.K. <br />+  AWS\_KOREA: The identifier for AWS Korea  |
 | Resale authorization ID | The unique identifier for a registered opportunity. |
 | Resale authorization name | The unique name for a registered opportunity. |
 | Resale authorization description | The ISV-defined description for a registered opportunity. |

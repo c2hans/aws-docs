@@ -14,4 +14,4 @@ Amazon EBS direct APIs does not support public snapshots and local snapshots on 
 
 This API reference provides detailed information about the actions, data types, parameters, and errors of the EBS direct APIs. For more information about the elements that make up the EBS direct APIs, and examples of how to use them effectively, see [Accessing the Contents of an Amazon EBS Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-accessing-snapshot.html) in the *Amazon Elastic Compute Cloud User Guide*. For more information about the supported AWS Regions, endpoints, and service quotas for the EBS direct APIs, see [Amazon Elastic Block Store Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/ebs-service.html) in the * AWS General Reference*.
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

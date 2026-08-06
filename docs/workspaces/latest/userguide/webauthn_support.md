@@ -16,8 +16,8 @@ The following WorkSpaces client versions support WebAuthn:
 
 | WebAuthn Type | Client versions supported |
 | --- | --- |
-| Standard WebAuthn |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/webauthn_support.html)  |
-| Enhanced WebAuthn |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/webauthn_support.html)  |
+| Standard WebAuthn |  + Windows client 5.19.0 or above<br />+ Mac client 5.19.0 or above<br />+ Linux client 2024.0 or above  |
+| Enhanced WebAuthn |  + Windows client 5.29.0 or above<br />+ Mac client 5.29.0 or above  |
 
 ## Get Started
 <a name="webauthn_get_started"></a>

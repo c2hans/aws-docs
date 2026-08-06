@@ -13,9 +13,9 @@ The following table summarizes which options apply to which kind of output. Foll
 | --- | --- | --- | --- |
 | Archive outputs with MPEG-2 as the container | Include all the original SCTE-35 messages.  | Not applicable | Applicable |
 | Archive outputs with other containers | Not applicable | Not applicable | Applicable |
-| HLS | Include all the original SCTE-35 messages. <br />Note that, with HLS, you either implement both manifest decoration and passthrough or you implement neither. | Decorate the HLS manifest with one or more of the following types of ad markers:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/scope-of-processing-depending-on-outputs.html) | Applicable |
+| HLS | Include all the original SCTE-35 messages. <br />Note that, with HLS, you either implement both manifest decoration and passthrough or you implement neither. | Decorate the HLS manifest with one or more of the following types of ad markers:+  Adobe <br />+  AWS Elemental <br />+  SCTE-35 enhanced.  | Applicable |
 | DASH | Not applicable | Not applicable | Applicable |
-| HDS | Not applicable | Decorate the HDS manifest with one or more of the following types of ad markers:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/scope-of-processing-depending-on-outputs.html) | Applicable |
+| HDS | Not applicable | Decorate the HDS manifest with one or more of the following types of ad markers:+  onCuePoint SCTE-35 <br />+  Primetime DPI SCTE-35 <br />+  Primetime DPI Simple.  | Applicable |
 | MS Smooth | Not applicable | Include information on the SCTE-35 event in the sparse track. | Applicable |
 | UDP/TS | Include all the original SCTE-35 messages.  | Not applicable | Applicable |
 | RTSP | Not applicable | Not applicable | Applicable |

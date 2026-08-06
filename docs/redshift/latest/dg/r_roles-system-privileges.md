@@ -11,37 +11,37 @@ Following is a list of system permissions that you can grant to or revoke from a
 
 | Command | You must have permission by one of the following ways to run the command |
 | --- | --- |
-| CREATE ROLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP ROLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE USER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP USER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ALTER USER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE SCHEMA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP SCHEMA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ALTER DEFAULT PRIVILEGES |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ACCESS CATALOG |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ACCESS SYSTEM TABLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE TABLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP TABLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ALTER TABLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE OR REPLACE FUNCTION |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE OR REPLACE EXTERNAL FUNCTION |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP FUNCTION |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE OR REPLACE PROCEDURE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP PROCEDURE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE OR REPLACE VIEW |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP VIEW |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE MODEL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP MODEL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE DATASHARE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ALTER DATASHARE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP DATASHARE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CREATE LIBRARY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| DROP LIBRARY |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| ANALYZE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| CANCEL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| TRUNCATE TABLE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| VACUUM |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| IGNORE RLS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| EXPLAIN RLS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
-| EXPLAIN MASKING |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-system-privileges.html)  |
+| CREATE ROLE |  +  Superuser. <br />+  Users with the CREATE ROLE permission.   |
+| DROP ROLE |  +  Superuser. <br />+  Role owner who is either the user that created the role or a user that has been granted the role with the WITH ADMIN OPTION permission.   |
+| CREATE USER |  +  Superuser. <br />+  Users with the CREATE USER permission. These users can't create superusers.   |
+| DROP USER |  +  Superuser. <br />+  Users with the DROP USER permission.   |
+| ALTER USER |  +  Superuser. <br />+  Users with the ALTER USER permission. These users can't change users to superusers or change superusers to users.  <br />+  Current user who wants to change their own password.   |
+| CREATE SCHEMA |  +  Superuser. <br />+  Users with the CREATE SCHEMA permission.   |
+| DROP SCHEMA |  +  Superuser. <br />+  Users with the DROP SCHEMA permission. <br />+  Schema owner.   |
+| ALTER DEFAULT PRIVILEGES |  +  Superuser. <br />+  Users with the ALTER DEFAULT PRIVILEGES permission. <br />+  Users changing their own default access permissions. <br />+  Users setting permissions for schemas that they have access permissions to.   |
+| ACCESS CATALOG |  +  Superuser. <br />+  Users with the ACCESS CATALOG permission.   |
+| ACCESS SYSTEM TABLE |  +  Superuser. <br />+  Users with the ACCESS SYSTEM TABLE permission.   |
+| CREATE TABLE |  +  Superuser. <br />+  Users with the CREATE TABLE permission. <br />+  Users with the CREATE permission on schemas.   |
+| DROP TABLE |  +  Superuser. <br />+  Users with the DROP TABLE permission. <br />+  Table owner with the USAGE permission on the schema.   |
+| ALTER TABLE |  +  Superuser. <br />+  Users with the ALTER TABLE permission. <br />+  Table owner with the USAGE permission on the schema.   |
+| CREATE OR REPLACE FUNCTION |  +  For CREATE FUNCTION:   Superuser.   Users with the CREATE OR REPLACE FUNCTION permission.    Users with the USAGE permission on language.   <br />+  For REPLACE FUNCTION:   Superuser.   Users with the CREATE OR REPLACE FUNCTION permission.   Function owner.     |
+| CREATE OR REPLACE EXTERNAL FUNCTION |  +  Superuser. <br />+  Users with the CREATE OR REPLACE EXTERNAL FUNCTION permission.   |
+| DROP FUNCTION |  +  Superuser. <br />+  Users with the DROP FUNCTION permission. <br />+ Function owner.  |
+| CREATE OR REPLACE PROCEDURE |  + For CREATE PROCEDURE:  Superuser. Users with the CREATE OR REPLACE PROCEDURE permission. Users with the USAGE permission on language.  <br />+ For REPLACE PROCEDURE:  Superuser. Users with the CREATE OR REPLACE PROCEDURE permission. Procedure owner.    |
+| DROP PROCEDURE |  +  Superuser. <br />+  Users with the DROP PROCEDURE permission. <br />+ Procedure owner.  |
+| CREATE OR REPLACE VIEW |  + For CREATE VIEW:  Superuser. Users with the CREATE OR REPLACE VIEW permission. Users with the CREATE permission on schemas.  <br />+ For REPLACE VIEW:  Superuser. Users with the CREATE OR REPLACE VIEW permission. View owner.    |
+| DROP VIEW |  +  Superuser. <br />+  Users with the DROP VIEW permission. <br />+ View owner.  |
+| CREATE MODEL |  + Superuser.<br />+ Users with the CREATE MODEL system permission, who should be able to read the relation of the CREATE MODEL.<br />+ Users with the CREATE MODEL permission.  |
+| DROP MODEL |  +  Superuser. <br />+  Users with the DROP MODEL permission. <br />+ Model owner.<br />+ Schema owner.  |
+| CREATE DATASHARE |  +  Superuser. <br />+  Users with the CREATE DATASHARE permission. <br />+ Database owner.  |
+| ALTER DATASHARE |  + Superuser.<br />+ User with the ALTER DATASHARE permission.<br />+ Users who have the ALTER or ALL permission on the datashare.<br />+ To add specific objects to a datashare, these users must have the permission on the objects. Users should be the owners of objects or have SELECT, USAGE, or ALL permissions on the objects.  |
+| DROP DATASHARE |  +  Superuser. <br />+  Users with the DROP DATASHARE permission. <br />+ Database owner.  |
+| CREATE LIBRARY |  + Superuser.<br />+ Users with the CREATE LIBRARY permission or with the permission of the specified language.  |
+| DROP LIBRARY |  +  Superuser. <br />+  Users with the DROP LIBRARY permission. <br />+ Library owner.  |
+| ANALYZE |  + Superuser.<br />+ Users with the ANALYZE permission.<br />+ Owner of the relation.<br />+ Database owner whom the table is shared to.  |
+| CANCEL |  + Superuser canceling their own query.<br />+ Superuser canceling a user's query.<br />+ Users with the CANCEL permission canceling a user's query.<br />+ User canceling their own query.  |
+| TRUNCATE TABLE |  + Superuser.<br />+ Users with the TRUNCATE TABLE permission.<br />+ Table owner.  |
+| VACUUM |  + Superuser.<br />+ Users with the VACUUM permission.<br />+ Table owner.<br />+ Database owner whom the table is shared to.  |
+| IGNORE RLS |  + Superuser.<br />+ Users within the `sys:secadmin` role.  |
+| EXPLAIN RLS |  + Superuser.<br />+ Users within the `sys:secadmin` role.  |
+| EXPLAIN MASKING |  + Superuser.<br />+ Users within the `sys:secadmin` role.  |

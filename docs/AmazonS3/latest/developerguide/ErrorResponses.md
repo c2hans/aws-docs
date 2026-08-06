@@ -180,7 +180,7 @@ The following table lists Amazon S3 error codes.
   - **SOAP fault code prefix:** Client
 
 - **`IllegalLocationConstraintException`**
-  - **Description:** This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html)
+  - **Description:** This error might occur for the following reasons:+  You are trying to access a bucket from a different Region than where the bucket exists. <br />+  You attempt to create a bucket with a location constraint that corresponds to a different region than the regional endpoint the request was sent to.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
@@ -235,7 +235,7 @@ The following table lists Amazon S3 error codes.
   - **SOAP fault code prefix:** Client
 
 - **`InvalidArgument`**
-  - **Description:** This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html)
+  - **Description:** This error might occur for the following reasons:+  A ListBuckets request is made to a Regional endpoint that is different from the Region specified in the `bucket-region` parameter. <br />+  The specified argument was not valid. <br />+  The request was missing a required header. <br />+  The specified argument was incomplete or in the wrong format. <br />+  The specified argument must have a length greater than or equal to 3.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
@@ -320,7 +320,7 @@ The following table lists Amazon S3 error codes.
   - **SOAP fault code prefix:** Client
 
 - **`InvalidRequest`**
-  - **Description:** This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html)
+  - **Description:** This error might occur for the following reasons:+  An unpaginated ListBuckets request is made from an account that has an approved general purpose bucket quota higher than 10,000. You must make paginated requests to list the buckets in an account with more than 10,000 buckets. <br />+  The request is using the wrong signature version. Use `AWS4-HMAC-SHA256` (Signature Version 4). <br />+  An access point can be created only for an existing bucket. <br />+  The access point is not in a state where it can be deleted. <br />+  An access point can be listed only for an existing bucket. <br />+  The next token is not valid. <br />+  At least one action must be specified in a lifecycle rule. <br />+  At least one lifecycle rule must be specified. <br />+  The number of lifecycle rules must not exceed the allowed limit of 1000 rules. <br />+  The range for the `MaxResults` parameter is not valid. <br />+  SOAP requests must be made over an HTTPS connection. <br />+  Amazon S3 Transfer Acceleration is not supported for buckets with non-DNS compliant names. <br />+  Amazon S3 Transfer Acceleration is not supported for buckets with periods (.) in their names. <br />+  The Amazon S3 Transfer Acceleration endpoint supports only virtual style requests. <br />+  Amazon S3 Transfer Acceleration is not configured on this bucket. <br />+  Amazon S3 Transfer Acceleration is disabled on this bucket. <br />+  Amazon S3 Transfer Acceleration is not supported on this bucket. For assistance, contact [Support](https://aws.amazon.com/contact-us/). <br />+  Amazon S3 Transfer Acceleration cannot be enabled on this bucket. For assistance, contact [Support](https://aws.amazon.com/contact-us/). <br />+   Conflicting values provided in HTTP headers and query parameters.  <br />+   Conflicting values provided in HTTP headers and POST form fields.  <br />+  CopyObject request made on objects larger than 5GB in size.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
@@ -375,12 +375,12 @@ The following table lists Amazon S3 error codes.
   - **SOAP fault code prefix:** Client
 
 - **`KMS.InvalidKeyUsageException`**
-  - **Description:** The request was rejected for one of the following reasons: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html)For encrypting, decrypting, re-encrypting, and generating data keys, the KeyUsage must be ENCRYPT\_DECRYPT. For signing and verifying messages, the KeyUsage must be SIGN\_VERIFY. For generating and verifying message authentication codes (MACs), the KeyUsage must be GENERATE\_VERIFY\_MAC. For deriving key agreement secrets, the KeyUsage must be KEY\_AGREEMENT. To find the KeyUsage of a KMS key, use the DescribeKey operation.  To find the encryption or signing algorithms supported for a particular KMS key, use the DescribeKey operation.
+  - **Description:** The request was rejected for one of the following reasons: + The KeyUsage value of the KMS key is incompatible with the API operation. <br />+ The encryption algorithm or signing algorithm specified for the operation is incompatible with the type of key material in the KMS key (KeySpec). For encrypting, decrypting, re-encrypting, and generating data keys, the KeyUsage must be ENCRYPT\_DECRYPT. For signing and verifying messages, the KeyUsage must be SIGN\_VERIFY. For generating and verifying message authentication codes (MACs), the KeyUsage must be GENERATE\_VERIFY\_MAC. For deriving key agreement secrets, the KeyUsage must be KEY\_AGREEMENT. To find the KeyUsage of a KMS key, use the DescribeKey operation.  To find the encryption or signing algorithms supported for a particular KMS key, use the DescribeKey operation.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
 - **`KMS.KMSInvalidStateException`**
-  - **Description:** The request was rejected because the state of the specified resource is not valid for this request. This exception means one of the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html)
+  - **Description:** The request was rejected because the state of the specified resource is not valid for this request. This exception means one of the following: + The key state of the KMS key is not compatible with the operation.<br />To find the key state, use the DescribeKey operation. For more information about which key states are compatible with each KMS operation, see [Key states of AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/key-state.html) in the *AWS Key Management Service Developer Guide*. <br />+ For cryptographic operations on KMS keys in custom key stores, this exception represents a general failure with many possible causes. To identify the cause, see the error message that accompanies the exception.
   - **HTTP status code:** 400 Bad Request
   - **SOAP fault code prefix:** Client
 
@@ -858,8 +858,8 @@ The following table contains special errors that the `Replication` operation mig
 
 | Error code | Description | HTTP status code | SOAP fault code prefix |
 | --- | --- | --- | --- |
-| InvalidArgument | This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html) | 400 | Client |
-| InvalidRequest | This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html) | 400 | Client |
+| InvalidArgument | This error might occur for the following reasons:+  The `<Account>` element is empty. It must contain a valid account ID. <br />+  The AWS account specified in the `<Account>` element must match the destination bucket owner. <br />+  `ReplicationTime-Status` must contain a value. <br />+  `ReplicationTime-ReplicationTimeValue` must contain a value. <br />+  `Replication-ReplicationTimeValue-Minutes` value must be 15. <br />+  `ReplicationMetrics` must contain a `Status`. <br />+  `ReplicationMetrics` must contain an `EventThreshold`. <br />+  `EventThreshold-ReplicationTimeValue-Minutes` value must be 15. <br />+  `Rule ID` must not contain non-ASCII characters.  | 400 | Client |
+| InvalidRequest | This error might occur for the following reasons:+  The `<Owner>` in `<AccessControlTranslation>` has a value, so the `<Account>` element must be specified.  <br />+  The `<Account>` element is empty. It must contain a valid account ID. <br />+  The replication `destination` must contain both `ReplicationTime` and `Metrics`, or neither. <br />+  `ReplicationTime` and `ReplicationMetrics` must have the same status. <br />+  S3 Replication Time Control (S3 RTC) is not supported in this AWS Region.  | 400 | Client |
 | ReplicationConfigurationNotFoundError | There is no replication configuration for this bucket. | 404 Not Found | Client |
 
 ## List of Tagging-related error codes
@@ -909,7 +909,7 @@ The following table contains special errors that an Amazon S3 on Outposts operat
 | Error code | Description | HTTP status code | SOAP fault code prefix |
 | --- | --- | --- | --- |
 | BadRequest | The bucket is in a transitional state because of a previous deletion attempt. Try again later. | 400 Bad Request | Not supported |
-| InvalidRequest | This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html) | 400 Bad Request | Client |
+| InvalidRequest | This error might occur for the following reasons:+  Amazon VPC configuration is required. <br />+  Public access is not allowed on S3 on Outposts access points.  | 400 Bad Request | Client |
 | InvalidOutpostState | The request is not valid for the current state of the Outpost. | 409 Conflict | Not supported |
 | InvalidRequest | The access point is not in a state where it can be deleted. | 400 Bad Request | Not supported |
 | NoSuchOutpost | The specified Outpost does not exist. | 404 Not Found | Not supported |
@@ -929,9 +929,9 @@ The following table contains special errors that Amazon S3 Storage Lens operatio
 | AWSOrganizationsNotInUseException | This account is not part of your organization. | 403 Forbidden | Not supported |
 | DefaultConfigurationDeleteForbidden | The Default configuration cannot be deleted. | 403 Forbidden | Not supported |
 | DuplicateStorageLensGroupARN | There are two or more entries of the same Storage Lens group ARN in this configuration. | 400 Bad Request | Not supported |
-| EmptyExcludeContainer | This error occurs for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html) | 400 Bad Request | Not supported |
+| EmptyExcludeContainer | This error occurs for the following reasons:+  The exclude container cannot be empty. <br />+  The exclude container cannot have zero buckets. <br />+  The exclude container cannot have zero Regions.  | 400 Bad Request | Not supported |
 | EmptyExcludeElement | You must specify a Storage Lens group with your Exclude element. | 400 Bad Request | Not supported |
-| EmptyIncludeContainer | This error occurs for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html) | 400 Bad Request | Not supported |
+| EmptyIncludeContainer | This error occurs for the following reasons:+  The include container cannot be empty. <br />+  The include container cannot have zero buckets. <br />+  The include container cannot have zero Regions.  | 400 Bad Request | Not supported |
 | InvalidAWSOrgArn | There is a malformed AWS Organizations ARN in the configuration. | 400 Bad Request | Not supported |
 | EmptyIncludeElement | You must specify a Storage Lens group with your Include element. | 400 Bad Request | Not supported |
 | InvalidBucketFilter | Organization-level configurations do not support bucket filters. | 400 Bad Request | Not supported |
@@ -1066,7 +1066,7 @@ The following table contains special errors that requests made to Amazon FSx thr
 
 | Error Code | Description | HTTP Status Code |
 | --- | --- | --- |
-| AccessDenied | This error might occur for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/ErrorResponses.html) | 403 Forbidden |
+| AccessDenied | This error might occur for the following reasons:+  Caller is not authorized to preform specified S3 operation. <br />+  Caller is not authorized to access the Amazon FSx resource for the specified key.  | 403 Forbidden |
 | InsufficientCapacity | Maximum storage capacity of file system has been reached. | 507 Insufficient Capacity |
 | InvalidKey | The specified key is not valid. | 400 Bad Request |
 | SlowDown | Please reduce your request rate. | 503 Slow Down |

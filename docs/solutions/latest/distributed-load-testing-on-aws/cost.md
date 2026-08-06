@@ -30,9 +30,23 @@ This solution provides the option to include live data when running a test. This
 ## AWS DevOps Agent integration costs
 <a name="devops-agent-cost"></a>
 
-This solution deploys infrastructure to support integration with AWS DevOps Agent, including two Amazon DynamoDB tables for agent space registrations and investigation tracking. These tables use on-demand capacity mode, so you are charged per read and write request based on your usage. For more information about pricing, see [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/).
+This solution deploys infrastructure to support integration with AWS DevOps Agent, including two Amazon DynamoDB tables for agent space registrations and investigation tracking. These tables use on-demand capacity mode, so AWS charges you per read and write request based on your usage. For more information about pricing, see [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/).
 
 When you use the DevOps Agent integration to run investigations on your test results, the AWS DevOps Agent service is billed separately per agent-second. This cost is not included in the estimate above. For full pricing details, see [AWS DevOps Agent Pricing](https://aws.amazon.com/devops-agent/pricing/).
+
+## CloudWatch dashboard costs per test scenario
+<a name="cloudwatch-dashboard-cost"></a>
+
+Each time a load test runs, this solution creates an Amazon CloudWatch dashboard named `EcsLoadTesting-<testId>-<region> ` in each Region where the test runs. Subsequent runs of the same test scenario update the same dashboard, so your account contains one dashboard for each test scenario in each Region. These dashboards remain in your account after tests complete and continue to incur a monthly charge until they are deleted. This cost is not included in the estimate above.
+
+| Service component | Dimensions | Cost [USD] |
+| --- | --- | --- |
+| Amazon CloudWatch | 1 dashboard per test scenario per Region | $3.00 per dashboard per month |
+|  **Example: 10 test scenarios, each running in 2 Regions**  |  **20 dashboards**  |  **$60.00 per month (before free tier)**  |
+
+The CloudWatch free tier includes three dashboards (up to 50 metrics each) per month at no charge. For accounts with many test scenarios, or with tests distributed across multiple Regions, this cost can compound quickly. To avoid ongoing charges, delete test scenarios that you no longer need through the solution’s web console, which also deletes their dashboards, or delete the dashboards manually. For manual deletion steps, refer to the [Manually deleting retained resources](manually-deleting-retained-resources.md) section of this guide.
+
+Prices are subject to change. For full details, refer to [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
 ## MCP Server additional costs (Optional)
 <a name="mcp-server-cost"></a>

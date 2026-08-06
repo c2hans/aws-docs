@@ -98,14 +98,14 @@ Review resources, such as AWS Identity and Access Management (IAM) policies, to 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Install tools on macOS or Linux. | If you are using MacOS or Linux, you can install the tools by running the following command in your preferred terminal or using [Homebrew for Linux](https://docs.brew.sh/Homebrew-on-Linux).<pre>brew install<br />brew install git-remote-codecommit<br />brew install ruby brew-gem<br />brew-gem install cfn-nag</pre> | DevOps engineer |
-| Set up AWS CLI. | To set up AWS CLI, use the instructions for your operating system:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk.html) | DevOps engineer |
+| Set up AWS CLI. | To set up AWS CLI, use the instructions for your operating system:+ Windows: [Setup steps for HTTPS connections to AWS CodeCommit repositories on Windows with the AWS CLI credential helper](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-windows.html)<br />+ Linux, macOS, Unix: [Setup steps for HTTPS connections to AWS CodeCommit repositories on Linux, macOS, or Unix with the AWS CLI credential helper](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html) | DevOps engineer |
 
 ### Set up the initial deployment
 <a name="set-up-the-initial-deployment"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Download or clone the code. | To get the code that is used by this pattern, do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk.html)<pre>git clone --depth 1 https://github.com/aws-samples/aws-codepipeline-cicd.git</pre><br />Remove the `.git` directory from the cloned repository.<pre>cd ./aws-codepipeline-cicd<br />rm -rf ./.git</pre><br />Later, you will use a newly created AWS CodeCommit repository as a remote origin. | DevOps engineer |
+| Download or clone the code. | To get the code that is used by this pattern, do one of the following:+ Download the latest source code from [releases](https://github.com/aws-samples/aws-codepipeline-cicd/releases) in the GitHub repo, and unzip the downloaded file into a folder.<br />+ Clone the project by running the following command.<pre>git clone --depth 1 https://github.com/aws-samples/aws-codepipeline-cicd.git</pre><br />Remove the `.git` directory from the cloned repository.<pre>cd ./aws-codepipeline-cicd<br />rm -rf ./.git</pre><br />Later, you will use a newly created AWS CodeCommit repository as a remote origin. | DevOps engineer |
 | Connect to the AWS account. | You can connect by using a temporary security token or landing zone authentication. To confirm that you are using the correct account and AWS Region, run the following commands.<pre>AWS_REGION="eu-west-1"<br />ACCOUNT_NUMBER=$(aws sts get-caller-identity --query Account --output text)<br />echo "${ACCOUNT_NUMBER}"</pre> | DevOps engineer |
 | Bootstrap the environment. | To bootstrap an AWS CDK environment, run the following commands.<pre>npm install<br />npm run cdk bootstrap "aws://${ACCOUNT_NUMBER}/${AWS_REGION}"</pre><br />After you successfully bootstrap the environment, the following output should be displayed.<pre>⏳  Bootstrapping environment aws://{account}/{region}...<br />✅  Environment aws://{account}/{region} bootstrapped</pre><br />For more information about AWS CDK bootstrapping, see the [AWS CDK documentation](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html). | DevOps engineer |
 | Synthesize a template. | To synthesize an AWS CDK app, use the `cdk synth` command.<pre>npm run cdk synth</pre><br />You should see the following output.<pre>Successfully synthesized to <path-to-directory>/aws-codepipeline-cicd/cdk.out<br />Supply a stack id (CodePipeline, Dev-MainStack) to display its template.</pre> | DevOps engineer |
@@ -117,14 +117,14 @@ Review resources, such as AWS Identity and Access Management (IAM) policies, to 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Commit a change to activate the pipeline. | After a successful initial deployment, you should have a complete CI/CD pipeline with a `main` branch for `SampleRepository` as a source branch. As soon as you commit changes to the `main` branch, the pipeline will initiate and run the following sequence of actions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk.html) | DevOps engineer |
+| Commit a change to activate the pipeline. | After a successful initial deployment, you should have a complete CI/CD pipeline with a `main` branch for `SampleRepository` as a source branch. As soon as you commit changes to the `main` branch, the pipeline will initiate and run the following sequence of actions:1. Get your code from the CodeCommit repository.<br />2. Build your code.<br />3. Update the pipeline itself (`UpdatePipeline`).<br />4. Run three parallel jobs for linting, security and unit test checks.<br />5. In the case of success, the pipeline will deploy the `Main` stack from `./lib/main-stack.ts` to the Dev environment.<br />6. Run a post-deployment check for deployed resources. You can follow all CodePipeline steps and results in the CodePipeline console.<br />7. In the case of success, the pipeline will repeat deployment and validation for the Test and Prod environments. | DevOps engineer |
 
 ### Test locally by using a Makefile
 <a name="test-locally-by-using-a-makefile"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Run the development process by using a Makefile. | You can run the whole pipeline locally by using the `make` command, or you can run an individual step (for example, `make linting`).<br />To test using `make`, perform the following actions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk.html) | App developer, DevOps engineer |
+| Run the development process by using a Makefile. | You can run the whole pipeline locally by using the `make` command, or you can run an individual step (for example, `make linting`).<br />To test using `make`, perform the following actions:+ Implement the local pipeline: `make`<br />+ Run only unit testing: `make unittest`<br />+ Deploy to the current account: `make deploy`<br />+ Clean up the environment: `make clean` | App developer, DevOps engineer |
 
 ### Clean up resources
 <a name="clean-up-resources"></a>
@@ -138,7 +138,7 @@ Review resources, such as AWS Identity and Access Management (IAM) policies, to 
 
 | Issue | Solution |
 | --- | --- |
-| The template isn’t working as expected. | If something goes wrong and template is not working, make sure that you have the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk.html) |
+| The template isn’t working as expected. | If something goes wrong and template is not working, make sure that you have the following:+ The proper versions of the tools.<br />+ Access to the target AWS account (network connectivity).<br />+ Enough permissions to the target AWS account. |
 
 ## Related resources
 <a name="set-up-a-ci-cd-pipeline-by-using-aws-codepipeline-and-aws-cdk-resources"></a>

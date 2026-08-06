@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/sns-or-sqs-or-eve
 | --- |--- |
 | **Purpose** | Understand the differences between Amazon SQS, Amazon SNS, and EventBridge and determine which service is the best fit for your needs. |
 | **Last updated** | July 31, 2024 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/sns-or-sqs-or-eventbridge/sns-or-sqs-or-eventbridge.html)  |
+| **Covered services** |  +  [Amazon Simple Queue Service](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html) <br />+  [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) <br />+  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html)   |
 
 ## Introduction
 <a name="introduction"></a>

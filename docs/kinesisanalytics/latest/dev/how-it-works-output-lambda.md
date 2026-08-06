@@ -99,7 +99,7 @@ Each record sent to your Lambda as an output function (with record IDs) must be 
 | --- | --- |
 | records [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output-lambda.html)  |
 | recordId | The record ID is passed from Kinesis Data Analytics to Lambda during the invocation. Any mismatch between the ID of the original record and the ID of the acknowledged record is treated as a delivery failure. |
-| result | The status of the delivery of the record. The following are possible values: [See the AWS documentation website for more details](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/how-it-works-output-lambda.html)  |
+| result | The status of the delivery of the record. The following are possible values: +  `Ok`: The record was transformed successfully and sent to the final destination. Kinesis Data Analytics ingests the record for SQL processing.  <br />+  `DeliveryFailed`: The record was not delivered successfully to the final destination by the Lambda as output function. Kinesis Data Analytics continuously retries sending the delivery failed records to the Lambda as output function.   |
 
 ## Lambda Output Invocation Frequency
 <a name="how-it-works-output-lambda-frequency"></a>

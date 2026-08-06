@@ -29,22 +29,22 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 | **Go** | Updated to minor revision 1.12.7. For details, see [go1.12](https://golang.org/doc/devel/release.html#go1.12) in *The Go Programming Language Release History*. |
 | **Java with Tomcat** | Updated Tomcat 8.5 to [Tomcat 8.5.42](https://tomcat.apache.org/tomcat-8.5-doc/changelog.html#Tomcat_8.5.42_(markt)).<br />Updated Tomcat 7 to [Tomcat 7.0.94](https://tomcat.apache.org/tomcat-7.0-doc/changelog.html#Tomcat_7.0.94_(markt)). |
 | **PHP** | Updated PHP 7.2 to [7.2.19](https://www.php.net/releases/7_2_19.php). This is a security release which also contains several minor bug fixes. |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,**<br />**r5a.8xlarge, r5a.16xlarge, T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, M5a, R5a, T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,**<br />**r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge, r5a.8xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **M5, M5d, R5, R5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,**<br />**r5a.8xlarge, r5a.16xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.metal, r5d.8xlarge, r5d.16xlarge, r5d.metal** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **r5.8xlarge, r5.16xlarge, r5d.8xlarge, M5, M5d, T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **r5d.8xlarge, r5d.16xlarge, M5, M5d, T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,**<br />**r5d.8xlarge, r5d.16xlarge, m5a.large, m5a.xlarge, m5a.2xlarge,**<br />**m5a.4xlarge, m5a.8xlarge, m5a.12xlarge, m5a.24xlarge, r5a.large,**<br />**r5a.xlarge, r5a.2xlarge, r5a.4xlarge, r5a.8xlarge, r5a.12xlarge,**<br />**r5a.24xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, r5a.8xlarge,**<br />**T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, T3a** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **g3.4xlarge, g3.8xlarge, g3.16xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
-| **g3s.xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-08-08-linux.html)  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,**<br />**r5a.8xlarge, r5a.16xlarge, T3a** |  + US East (Ohio) – us-east-2  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, M5a, R5a, T3a** |  + US West (N. California) – us-west-1  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,**<br />**r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge, r5a.8xlarge** |  + US West (Oregon) – us-west-2  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge** |  + Asia Pacific (Hong Kong) – ap-east-1  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge** |  + Asia Pacific (Mumbai) – ap-south-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Canada (Central) – ca-central-1<br />+ Europe (London) – eu-west-2<br />+ Europe (Paris) – eu-west-3<br />+ Europe (Stockholm) – eu-north-1  |
+| **M5, M5d, R5, R5d** |  + Asia Pacific (Osaka) – ap-northeast-3  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, m5a.16xlarge,**<br />**r5a.8xlarge, r5a.16xlarge** |  + Asia Pacific (Singapore) – ap-southeast-1  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.metal, r5d.8xlarge, r5d.16xlarge, r5d.metal** |  + Asia Pacific (Tokyo) – ap-northeast-1  |
+| **r5.8xlarge, r5.16xlarge, r5d.8xlarge, M5, M5d, T3a** |  + China (Beijing) – cn-north-1  |
+| **r5d.8xlarge, r5d.16xlarge, M5, M5d, T3a** |  + China (Ningxia) – cn-northwest-1  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, r5.8xlarge, r5.16xlarge,**<br />**r5d.8xlarge, r5d.16xlarge, m5a.large, m5a.xlarge, m5a.2xlarge,**<br />**m5a.4xlarge, m5a.8xlarge, m5a.12xlarge, m5a.24xlarge, r5a.large,**<br />**r5a.xlarge, r5a.2xlarge, r5a.4xlarge, r5a.8xlarge, r5a.12xlarge,**<br />**r5a.24xlarge** |  + Europe (Frankfurt) – eu-central-1  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, m5a.8xlarge, r5a.8xlarge,**<br />**T3a** |  + Europe (Ireland) – eu-west-1  |
+| **m5.8xlarge, m5.16xlarge** |  + South America (São Paulo) – sa-east-1  |
+| **m5.8xlarge, m5.16xlarge, m5d.8xlarge, m5d.16xlarge, r5.8xlarge,**<br />**r5.16xlarge, r5d.8xlarge, r5d.16xlarge, T3a** |  + AWS GovCloud (US-East) – us-gov-east-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **g3.4xlarge, g3.8xlarge, g3.16xlarge** |  + China (Beijing) – cn-north-1<br />+ Europe (London) – eu-west-2  |
+| **g3s.xlarge** |  + Europe (London) – eu-west-2  |
 
 ## New platform versions
 <a name="release-2019-08-08-linux.platforms"></a>

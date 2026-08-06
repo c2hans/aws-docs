@@ -36,6 +36,8 @@ aws rds modify-db-instance \
 
 You can modify storage type, allocated storage size, IOPS, and storage throughput settings of your additional storage volume. The following code snippet modifies the IOPS setting for the `rdsdbdata2` volume.
 
+After you modify an additional storage volume, that specific volume enters the storage-optimization phase. To monitor optimization progress on the modified volume, inspect the corresponding entry in the `AdditionalStorageVolumes` array in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During optimization, that entry's `StorageOperationStatus` is set to `Optimizing` and `StorageOperationPercentProgress` reports 0–100. For more information, see [Monitoring storage operations per volume](CHAP_Storage.md#Welcome.AdditionalStorageVolumes.Monitoring).
+
 ```
 aws rds modify-db-instance \
   --db-instance-identifier {{my-oracle-instance}} \

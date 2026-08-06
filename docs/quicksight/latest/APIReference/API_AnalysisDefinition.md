@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
  ** DataSetIdentifierDeclarations **   <a name="QS-Type-AnalysisDefinition-DataSetIdentifierDeclarations"></a>
 An array of dataset identifier declarations. This mapping allows the usage of dataset identifiers instead of dataset ARNs throughout analysis sub-structures.
 Type: Array of [DataSetIdentifierDeclaration](API_DataSetIdentifierDeclaration.md) objects
-Array Members: Minimum number of 1 item. Maximum number of 50 items.
+Array Members: Minimum number of 0 items. Maximum number of 50 items.
 Required: Yes
 
  ** AnalysisDefaults **   <a name="QS-Type-AnalysisDefinition-AnalysisDefaults"></a>
@@ -76,6 +76,12 @@ Required: No
  ** TooltipSheets **   <a name="QS-Type-AnalysisDefinition-TooltipSheets"></a>
 An array of tooltip sheet definitions for an analysis. Each `TooltipSheetDefinition` provides detailed information about a tooltip sheet within this analysis.
 Type: Array of [TooltipSheetDefinition](API_TooltipSheetDefinition.md) objects
+Array Members: Maximum number of 50 items.
+Required: No
+
+ ** TopicIdentifierDeclarations **   <a name="QS-Type-AnalysisDefinition-TopicIdentifierDeclarations"></a>
+An array of topic identifier declarations. This mapping allows the usage of topic identifiers instead of topic ARNs throughout analysis sub-structures.
+Type: Array of [TopicIdentifierDeclaration](API_TopicIdentifierDeclaration.md) objects
 Array Members: Maximum number of 50 items.
 Required: No
 

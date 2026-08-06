@@ -150,88 +150,89 @@ For pricing information, see [Amazon EC2 On-Demand Pricing](https://aws.amazon.c
 
 <table>
 <thead>
-  <tr><th>Instance type</th><th>Baseline / Burst bandwidth (Gbps)</th><th>EFA</th><th>ENA</th><th>ENA Express</th><th>Network cards</th><th>Max. network interfaces</th><th>IP addresses per interface</th><th>IPv6</th></tr>
+  <tr><th>Instance type</th><th>Baseline / Burst bandwidth (Gbps)</th><th>EFA</th><th>ENA</th><th>ENA Express</th><th>ENA queues per interface (Default/Maximum)</th><th>Network cards</th><th>Max. network interfaces</th><th>IP addresses per interface</th><th>IPv6</th></tr>
 </thead>
 <tbody>
-  <tr><td colspan="9">A1</td></tr>
-  <tr><td>a1.medium 1</td><td>0.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
-  <tr><td>a1.large 1</td><td>0.75 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>a1.xlarge 1</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>a1.2xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>a1.4xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>a1.metal 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">C1</td></tr>
-  <tr><td>c1.medium</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>2</td><td>6</td><td>✗ No</td></tr>
-  <tr><td>c1.xlarge</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
-  <tr><td colspan="9">C3</td></tr>
-  <tr><td>c3.large</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>c3.xlarge</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>c3.2xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>c3.4xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>c3.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">C4</td></tr>
-  <tr><td>c4.large</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>c4.xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>c4.2xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>c4.4xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>c4.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">G3</td></tr>
-  <tr><td>g3.4xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g3.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>g3.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">I2</td></tr>
-  <tr><td>i2.xlarge</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>i2.2xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>i2.4xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>i2.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">M1</td></tr>
-  <tr><td>m1.small</td><td>Low</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>2</td><td>4</td><td>✗ No</td></tr>
-  <tr><td>m1.medium</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>2</td><td>6</td><td>✗ No</td></tr>
-  <tr><td>m1.large</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✗ No</td></tr>
-  <tr><td>m1.xlarge</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
-  <tr><td colspan="9">M2</td></tr>
-  <tr><td>m2.xlarge</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
-  <tr><td>m2.2xlarge</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>4</td><td>30</td><td>✗ No</td></tr>
-  <tr><td>m2.4xlarge</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✗ No</td></tr>
-  <tr><td colspan="9">M3</td></tr>
-  <tr><td>m3.medium</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>2</td><td>6</td><td>✗ No</td></tr>
-  <tr><td>m3.large</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✗ No</td></tr>
-  <tr><td>m3.xlarge</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
-  <tr><td>m3.2xlarge</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>4</td><td>30</td><td>✗ No</td></tr>
-  <tr><td colspan="9">M4</td></tr>
-  <tr><td>m4.large</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>2</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>m4.xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>m4.2xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>m4.4xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>m4.10xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>m4.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P3</td></tr>
-  <tr><td>p3.2xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>p3.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>p3.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">P3dn</td></tr>
-  <tr><td>p3dn.24xlarge</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">R3</td></tr>
-  <tr><td>r3.large</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>r3.xlarge</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>r3.2xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>r3.4xlarge</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>r3.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">R4</td></tr>
-  <tr><td>r4.large 1</td><td>0.75 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
-  <tr><td>r4.xlarge 1</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>r4.2xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
-  <tr><td>r4.4xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>r4.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
-  <tr><td>r4.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
-  <tr><td colspan="9">T1</td></tr>
-  <tr><td>t1.micro</td><td>Very Low</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>2</td><td>2</td><td>✗ No</td></tr>
+  <tr><td colspan="10">A1</td></tr>
+  <tr><td>a1.medium 1 3</td><td>0.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>4</td><td>✓ Yes</td></tr>
+  <tr><td>a1.large 1 3</td><td>0.75 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>a1.xlarge 1 3</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>a1.2xlarge 1 3</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>a1.4xlarge 1 3</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>a1.metal 1 3</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">C1</td></tr>
+  <tr><td>c1.medium 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>2</td><td>6</td><td>✗ No</td></tr>
+  <tr><td>c1.xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
+  <tr><td colspan="10">C3</td></tr>
+  <tr><td>c3.large 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>c3.xlarge 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>c3.2xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>c3.4xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>c3.8xlarge 3</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">C4</td></tr>
+  <tr><td>c4.large 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>c4.xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>c4.2xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>c4.4xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>c4.8xlarge 3</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">G3</td></tr>
+  <tr><td>g3.4xlarge 1</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>—</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g3.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>—</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>g3.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>—</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">I2</td></tr>
+  <tr><td>i2.xlarge 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>i2.2xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>i2.4xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>i2.8xlarge 3</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">M1</td></tr>
+  <tr><td>m1.small 3</td><td>Low</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>2</td><td>4</td><td>✗ No</td></tr>
+  <tr><td>m1.medium 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>2</td><td>6</td><td>✗ No</td></tr>
+  <tr><td>m1.large 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>2</td><td>1</td><td>3</td><td>10</td><td>✗ No</td></tr>
+  <tr><td>m1.xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
+  <tr><td colspan="10">M2</td></tr>
+  <tr><td>m2.xlarge 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
+  <tr><td>m2.2xlarge 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>4</td><td>30</td><td>✗ No</td></tr>
+  <tr><td>m2.4xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>8</td><td>30</td><td>✗ No</td></tr>
+  <tr><td colspan="10">M3</td></tr>
+  <tr><td>m3.medium 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>2</td><td>6</td><td>✗ No</td></tr>
+  <tr><td>m3.large 3</td><td>Moderate</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>2</td><td>1</td><td>3</td><td>10</td><td>✗ No</td></tr>
+  <tr><td>m3.xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>4</td><td>1</td><td>4</td><td>15</td><td>✗ No</td></tr>
+  <tr><td>m3.2xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>30</td><td>✗ No</td></tr>
+  <tr><td colspan="10">M4</td></tr>
+  <tr><td>m4.large 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>2</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>m4.xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>m4.2xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>m4.4xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>m4.10xlarge 3</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>m4.16xlarge 3</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P3</td></tr>
+  <tr><td>p3.2xlarge 1</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>—</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>p3.8xlarge</td><td>10 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>—</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>p3.16xlarge</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>—</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">P3dn</td></tr>
+  <tr><td>p3dn.24xlarge 3</td><td>100 Gigabit</td><td>✓ Yes</td><td>✓ Yes</td><td>✗ No</td><td>32</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">R3</td></tr>
+  <tr><td>r3.large 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>r3.xlarge 3</td><td>Moderate</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>r3.2xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>r3.4xlarge 3</td><td>High</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r3.8xlarge 3</td><td>10 Gigabit</td><td>✗ No</td><td>✗ No 2</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">R4</td></tr>
+  <tr><td>r4.large 1 3</td><td>0.75 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>3</td><td>10</td><td>✓ Yes</td></tr>
+  <tr><td>r4.xlarge 1 3</td><td>1.25 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>r4.2xlarge 1 3</td><td>2.5 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>4</td><td>15</td><td>✓ Yes</td></tr>
+  <tr><td>r4.4xlarge 1 3</td><td>5.0 / 10.0</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r4.8xlarge 3</td><td>10 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>8</td><td>30</td><td>✓ Yes</td></tr>
+  <tr><td>r4.16xlarge 3</td><td>25 Gigabit</td><td>✗ No</td><td>✓ Yes</td><td>✗ No</td><td>8</td><td>1</td><td>15</td><td>50</td><td>✓ Yes</td></tr>
+  <tr><td colspan="10">T1</td></tr>
+  <tr><td>t1.micro 3</td><td>Very Low</td><td>✗ No</td><td>✗ No</td><td>✗ No</td><td>1</td><td>1</td><td>2</td><td>2</td><td>✗ No</td></tr>
 </tbody>
 </table>
 
 **Note**
 1 These instances have a baseline bandwidth and can use a network I/O credit mechanism to burst beyond their baseline bandwidth on a best effort basis. Other instances types can sustain their maximum performance indefinitely. For more information, see [ instance network bandwidth](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-network-bandwidth.html).
 2 These instances support enhanced networking using the Intel 82599 VF interface.
+3 These instance types do not support configurable ENA queue allocation.
 
 ## Amazon EBS specifications
 <a name="pg_storage-ebs"></a>

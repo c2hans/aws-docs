@@ -46,6 +46,6 @@ The following table describes the changes in each version of the GTF. For more i
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 1.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/gg-testing-framework.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/gg-testing-framework.html)  |
-| 1.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/gg-testing-framework.html)  |
+| 1.2.0 |  **New features**<br />   Adds network-related steps to configure MQTT and internet network connectivity during tests.   Adds system metric steps to monitor device RAM and CPU use.    **Bug fixes and improvements**<br />   Greengrass CLI local deployment step retries until it succeeds.   Tests gracefully stop Greengrass nucleus instead of killing it.   Adds improvement where GTF polls the AWS IoT Credentials endpoint until credentials are retrievable for the thing and role alias.   Fixes missing artifacts and recipe directories. This version also fixes missing component versions.   Fixes an issue where GTF fails during docker image cleanup if the docker image does not exist.   Adds CURRENT keyword as version of component.     |
+| 1.1.0 |  **New features**<br />   Adds the ability to install a custom component with configuration. This requires a recipe for the custom component.   Adds the ability to update a local deployment with a custom configuration.   <br />**Bug fixes and improvements**<br />   Fixes log context GTF version inconsistency issue.     |
 | 1.0.0 | Initial version. |

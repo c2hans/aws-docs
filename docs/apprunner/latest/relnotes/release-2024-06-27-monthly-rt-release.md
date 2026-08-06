@@ -31,7 +31,7 @@ The following table lists the changes included in this release.
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2024-06-27-monthly-rt-release.html) |
 | Base container image for AL2023  | Updated base container image to version **2023.4.20240611**. This image only applies to Node.js 18 and Python 3.11 runtimes.  |
 | Base container image for AL2 | Updated base container image to version **2.0.20240620.0**. This image applies to all runtimes, except for Node.js 18 and Python 3.11.  |
-| **Corretto** | No updates to language versions.<br />Tools Updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2024-06-27-monthly-rt-release.html) |
-| **.NET Core**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-dotnet-releases.html) | Updated **.NET Core 6.0** to 6.0.31. <br />Package updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2024-06-27-monthly-rt-release.html) |
+| **Corretto** | No updates to language versions.<br />Tools Updates:+  Updated Maven to 3.9.8.   |
+| **.NET Core**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-dotnet-releases.html) | Updated **.NET Core 6.0** to 6.0.31. <br />Package updates:+  Updated .NET SDK to 6.0.423.   |
 | **PHP**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-php-releases.html) | Updated PHP 8.1 to 8.1.29. <br />No package updates. |
 | **Ruby**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-ruby-releases.html) | Updated Ruby 3.1 to 3.1.6. <br />No package updates. |

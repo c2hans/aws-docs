@@ -306,10 +306,10 @@ The following table describes the changes in each version of the component.
 | 2.5.10 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.5.9 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.5.8 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.5.7 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-lite-component.html)  |
-| 2.5.6 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-lite-component.html)  |
-| 2.5.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-lite-component.html)  |
-| 2.5.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/tensorflow-lite-component.html)  |
+| 2.5.7 |  **Bug fixes and improvements**<br />   Updates the `UseInstaller` installation script to install libGL, which isn't available by default on certain Linux platforms.   Updates the `UseInstaller` installation script to always use Python 3.9 in this component's virtual environment. This change helps ensure compatibility with other libraries.     |
+| 2.5.6 |  **Bug fixes and improvements**<br />   Updates this component to install the latest patch of TensorFlow Lite 2.5.0 (`tflite-runtime-2.5.0.post1`), so you can use this component with Python 3.9. If this component fails to install that patch, it installs `tflite-runtime-2.5.0` instead.   Updates this component to reinstall existing installations of TensorFlow Lite and its dependencies. This change helps ensure that the core device runs compatible versions of TensorFlow Lite and its dependencies.     |
+| 2.5.5 |  **New features**<br />   Adds support for core devices that run Windows.   Adds the new `WindowsMLRootPath` configuration parameter that you can use to configure the inference results folder on Windows core devices.     |
+| 2.5.4 |  **New features**<br />   Adds the new `UseInstaller` configuration parameter that lets you disable the installation script in this component.     |
 | 2.5.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.5.2 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.5.1 | Version updated for Greengrass nucleus version 2.2.0 release. |

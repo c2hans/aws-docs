@@ -39,7 +39,7 @@ Claude Opus 4.6 is Anthropic's flagship model that plans more carefully, sustain
 
 | **Supported** | **Not Supported** |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html)  |
+|  + ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Response streaming](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Abuse detection](https://docs.aws.amazon.com/bedrock/latest/userguide/abuse-detection.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Guardrails](https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Prompt optimization](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Count tokens](https://docs.aws.amazon.com/bedrock/latest/userguide/count-tokens.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Model evaluation](https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Prompt management](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Flows](https://docs.aws.amazon.com/bedrock/latest/userguide/flows.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Agents](https://docs.aws.amazon.com/bedrock/latest/userguide/agents.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Structured outputs](https://docs.aws.amazon.com/bedrock/latest/userguide/structured-outputs.html)<br />+ ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) [Computer use](https://docs.aws.amazon.com/bedrock/latest/userguide/computer-use.html)  |  + ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) [Intelligent prompt routing](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-routing.html)  |
 
 **Prompt caching using `bedrock-runtime` endpoint**
 
@@ -71,7 +71,7 @@ Use the following model IDs and endpoint URLs to access this model programmatica
 | --- | --- | --- | --- | --- |
 | bedrock-runtime | anthropic.claude-opus-4-6-v1 | https://bedrock-runtime.{region}.amazonaws.com | `us.anthropic.claude-opus-4-6-v1`<br />`eu.anthropic.claude-opus-4-6-v1`<br />`au.anthropic.claude-opus-4-6-v1` | global.anthropic.claude-opus-4-6-v1 |
 
-*For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com" and for bedrock-mantle will be "https://bedrock-mantle.us-east-1.api.aws/v1".*
+*For example, if region is us-east-1 (N. Virginia), then the bedrock-runtime endpoint URL will be "https://bedrock-runtime.us-east-1.amazonaws.com".*
 
 ## Service Tiers
 <a name="model-card-anthropic-claude-opus-4-6-tiers"></a>
@@ -87,7 +87,7 @@ Amazon Bedrock offers multiple service tiers to match your workload requirements
 
 ***Regional availability at a glance***
 
-Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (US, EU, etc.) for higher throughput while respecting data residency, and **Global Cross-Region** routes anywhere worldwide for maximum throughput when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
+Amazon Bedrock offers three inference options: **In-Region** keeps requests within a single Region for strict compliance, **Geo Cross-Region** routes across Regions within a geography (such as US, EU, and APAC) while respecting data residency, and **Global Cross-Region** routes anywhere worldwide when there are no residency constraints. Refer to the [Regional availability by models](models-region-compatibility.md) page for more details.
 
 | **Region** | **In-Region** | **Geo** | **Global** |
 | --- | --- | --- | --- |
@@ -169,7 +169,7 @@ Geo Inference ID: `au.anthropic.claude-opus-4-6-v1`
 
 | **Global Inference ID** | **Americas** | **EMEA** | **Asia Pacific** |
 | --- | --- | --- | --- |
-| global.anthropic.claude-opus-4-6-v1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html)  |
+| global.anthropic.claude-opus-4-6-v1 |  + us-east-1 (N. Virginia)<br />+ us-east-2 (Ohio)<br />+ us-west-1 (N. California)<br />+ us-west-2 (Oregon)<br />+ ca-central-1 (Canada)<br />+ ca-west-1 (Calgary)<br />+ sa-east-1 (São Paulo)<br />+ mx-central-1 (Mexico)  |  + eu-central-1 (Frankfurt)<br />+ eu-central-2 (Zurich)<br />+ eu-north-1 (Stockholm)<br />+ eu-south-1 (Milan)<br />+ eu-south-2 (Spain)<br />+ eu-west-1 (Ireland)<br />+ eu-west-2 (London)<br />+ eu-west-3 (Paris)<br />+ il-central-1 (Tel Aviv)<br />+ me-central-1 (UAE)<br />+ me-south-1 (Bahrain)<br />+ af-south-1 (Cape Town)  |  + ap-east-2 (Taipei)<br />+ ap-northeast-1 (Tokyo)<br />+ ap-northeast-2 (Seoul)<br />+ ap-northeast-3 (Osaka)<br />+ ap-south-1 (Mumbai)<br />+ ap-south-2 (Hyderabad)<br />+ ap-southeast-1 (Singapore)<br />+ ap-southeast-2 (Sydney)<br />+ ap-southeast-3 (Jakarta)<br />+ ap-southeast-4 (Melbourne)<br />+ ap-southeast-5 (Malaysia)<br />+ ap-southeast-6 (New Zealand)<br />+ ap-southeast-7 (Thailand)  |
 
 ## Quotas and Limits
 <a name="model-card-anthropic-claude-opus-4-6-quotas"></a>

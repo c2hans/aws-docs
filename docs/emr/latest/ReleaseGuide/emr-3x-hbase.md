@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hbase.htm
 
 | HBase version | AMI version | AWS CLI configuration parameters | HBase version details |
 | --- | --- | --- | --- |
-| [0.94.18](https://svn.apache.org/repos/asf/hbase/branches/0.94/CHANGES.txt) | 3.1.0 and later | `--ami-version 3.1`<br />`--ami-version 3.2`<br />`--ami-version 3.3`<br />`--applications Name=HBase` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-3x-hbase.html)  |
+| [0.94.18](https://svn.apache.org/repos/asf/hbase/branches/0.94/CHANGES.txt) | 3.1.0 and later | `--ami-version 3.1`<br />`--ami-version 3.2`<br />`--ami-version 3.3`<br />`--applications Name=HBase` |  +  Bug fixes and enhancements.   |
 | [0.94.7](https://svn.apache.org/repos/asf/hbase/branches/0.94/CHANGES.txt) | 3.0-3.0.4 | `--ami-version 3.0`<br />`--applications Name=HBase` |
 | [0.92](https://svn.apache.org/repos/asf/hbase/branches/0.92/CHANGES.txt) | 2.2 and later | `--ami-version 2.2 or later`<br />`--applications Name=HBase` |
 

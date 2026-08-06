@@ -68,6 +68,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [billing:GetCredits](#list_billing-action-GetCredits)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [aws-portal:ViewBilling](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
 
+- **   GetEnterpriseSupportChargeSummary  **
+  - **IAM action:**  [billing:GetEnterpriseSupportChargeSummary](#list_billing-action-GetEnterpriseSupportChargeSummary)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   GetEnterpriseSupportContractDetails  **
+  - **IAM action:**  [billing:GetEnterpriseSupportContractDetails](#list_billing-action-GetEnterpriseSupportContractDetails)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetResourcePolicy  **
   - **IAM action:**  [billing:GetResourcePolicy](#list_billing-action-GetResourcePolicy)
   - **Condition key:**
@@ -79,6 +91,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   ListEnterpriseSupportLinkedAccountCharges  **
+  - **IAM action:**  [billing:ListEnterpriseSupportLinkedAccountCharges](#list_billing-action-ListEnterpriseSupportLinkedAccountCharges)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListSourceViewsForBillingView  **
   - **IAM action:**  [billing:ListSourceViewsForBillingView](#list_billing-action-ListSourceViewsForBillingView)
@@ -173,6 +191,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [GetEnterpriseSupportChargeSummary](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  **
+  - **Description:** Grants permission to view Enterprise Support charge summary data
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
+- **   [GetEnterpriseSupportContractDetails](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  **
+  - **Description:** Grants permission to view Enterprise Support contract details
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [GetResourcePolicy](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_GetResourcePolicy.html)  **
   - **Description:** Grants permission to get the resource policy specified billing view
   - **Resource types (\*required):** [billingview\*](#list_billing-resource-billingview)
@@ -184,6 +214,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):**
   - **Condition keys:**
   - **Access level:** Read
+
+- **   [ListEnterpriseSupportLinkedAccountCharges](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions)  **
+  - **Description:** Grants permission to view Enterprise Support charges broken down by linked account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
 
 - **   [ListSourceViewsForBillingView](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListSourceViewsForBillingView.html)  **
   - **Description:** Grants permission to get the list of source views for a specified billing view

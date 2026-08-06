@@ -216,7 +216,7 @@ The following tables explain the XML for a `SELECT` type of restoration in the r
 
 |  Name  |  Description  |  Required  |
 | --- | --- | --- |
-| Expression | The SQL expression. For example:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTObjectPOSTrestore.html)<br />Type: String<br />Ancestors: `SelectParameters` | Yes |
+| Expression | The SQL expression. For example:+  The following SQL expression retrieves the first column of the data from the object stored in CSV format: <br />`SELECT s._1 FROM Object s` <br />+  The following SQL expression returns everything from the object: <br />`SELECT * FROM Object` <br />Type: String<br />Ancestors: `SelectParameters` | Yes |
 | ExpressionType | Identifies the expression type.<br />Type: String<br />Valid values: `SQL`<br />Ancestors: `SelectParameters` | Yes |
 | InputSerialization | Describes the serialization format of the object.<br />Type: Container for CSV<br />Ancestors: `SelectParameters` | Yes |
 | OutputSerialization | Describes how the results of the select job are serialized.<br />Type: Container for CSV<br />Ancestors: `SelectParameters` | Yes |
@@ -229,14 +229,14 @@ The following tables explain the XML for a `SELECT` type of restoration in the r
 | FieldDelimiter | A single character used to separate individual fields in a record. You can specify an arbitrary delimiter. <br />Type: String<br />Default: `,`<br />Ancestors: `CSV` | No |
 | QuoteCharacter | A single character used for escaping when the field delimiter is part of the value.<br />Consider this example in a CSV file: <br />`"a, b" `<br />Wrapping the value in quotation marks makes this value a single field. If you don't use the quotation marks, the comma is a field delimiter (which makes it two separate field values, a and b).<br />Type: String<br />Default: `"`<br />Ancestors: `CSV` | No |
 | QuoteEscapeCharacter | A single character used for escaping the quotation mark character inside an already escaped value. For example, the value `""" a , b """` is parsed as `" a , b "`.<br />Type: String<br />Default: `"`<br />Ancestors: `CSV` | No |
-| FileHeaderInfo | Describes the first line in the input data. It is one of the ENUM values.[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTObjectPOSTrestore.html)<br />Type: Enum<br />Valid values: `NONE \| USE \| IGNORE`<br />Ancestors: `CSV` | No |
+| FileHeaderInfo | Describes the first line in the input data. It is one of the ENUM values.+  `NONE`: First line is not a header. <br />+  `IGNORE`: First line is a header, but you can't use the header values to indicate the column in an expression. You can use column position (such as \_1, \_2, …) to indicate the column (`SELECT s._1 FROM OBJECT s`). <br />+  `Use`: First line is a header, and you can use the header value to identify a column in an expression (`SELECT "name" FROM OBJECT`).  <br />Type: Enum<br />Valid values: `NONE \| USE \| IGNORE`<br />Ancestors: `CSV` | No |
 | Comments | A single character used to indicate that a row should be ignored when the character is present at the start of that row. You can specify any character to indicate a comment line.<br />Type: String<br />Ancestors: `CSV` | No |
 
 **The CSV container element (in the `OutputSerialization` elements) contains the following elements.**
 
 |  Name  |  Description  |  Required  |
 | --- | --- | --- |
-| QuoteFields | Indicates whether to use quotation marks around output fields. [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonS3/latest/developerguide/RESTObjectPOSTrestore.html)<br />Type: Enum<br />Valid values: `ALWAYS \| ASNEEDED`<br />Default: `AsNeeded`<br />Ancestors: `CSV` | No |
+| QuoteFields | Indicates whether to use quotation marks around output fields. +  `ALWAYS`: Always use quotation marks for output fields. <br />+  `ASNEEDED`: Use quotation marks for output fields when needed. <br />Type: Enum<br />Valid values: `ALWAYS \| ASNEEDED`<br />Default: `AsNeeded`<br />Ancestors: `CSV` | No |
 | RecordDelimiter | A single character used to separate individual records in the output. Instead of the default value, you can specify an arbitrary delimiter. <br />Type: String<br />Default: `\n`<br />Ancestors: `CSV` | No |
 | FieldDelimiter | A single character used to separate individual fields in a record. You can specify an arbitrary delimiter. <br />Type: String<br />Default: `,`<br />Ancestors: `CSV` | No |
 | QuoteCharacter | A single character used for escaping when the field delimiter is part of the value. For example, if the value is `a, b`, Amazon S3 wraps this field value in quotation marks, as follows: `" a , b "`.<br />Type: String<br />Default: `"`<br />Ancestors: `CSV` | No |

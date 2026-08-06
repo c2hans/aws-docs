@@ -578,7 +578,7 @@ The following schema validations are specific to `UpdateLegalTerms` actions in t
 | Terms | Required<br />Only `LegalTerm` is allowed in the list<br />List size must be 1 | 422 |
 | Terms[].Type | RequiredCan only be `LegalTerm` | 422 |
 | Terms[].LegalTerm.Documents | Required | 422 |
-| Terms[].LegalTerm.Documents[].Type | Required<br />Allowed values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/developerguide/work-with-private-offers.html) | 422 |
+| Terms[].LegalTerm.Documents[].Type | Required<br />Allowed values:+  `CustomEula` <br />+  `StandardEula`  | 422 |
 | Terms[].LegalTerm.Documents[].Url | Required and must be a valid URL when Type is CustomEula | 422 |
 | Terms[].LegalTerm.Documents[].Version | Required and must be a valid Version when Type is StandardEulaValid `StandardEula` versions: ["2019-04-24", "2022-07-14"] | 422 |
 

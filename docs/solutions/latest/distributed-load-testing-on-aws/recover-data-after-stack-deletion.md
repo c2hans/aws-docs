@@ -271,7 +271,6 @@ The following are lost when a stack is deleted and cannot be restored through th
 | --- | --- |
 | Cognito user accounts | User pool is deleted with the stack. Users must re-register. |
 | Active EventBridge schedules | Scheduled test rules are deleted. Recreate schedules manually in the DLT UI. |
-| CloudWatch dashboards | Per-test dashboards (`EcsLoadTesting*`) are deleted. New runs will create new dashboards. |
 | Solution UUID | A new random UUID is generated. This affects operational metrics correlation only. |
 | Regional stack associations | Regional stacks must be redeployed and re-associated with the new hub stack. |
 

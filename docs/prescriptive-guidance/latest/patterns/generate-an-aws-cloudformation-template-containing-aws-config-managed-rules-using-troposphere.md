@@ -44,14 +44,14 @@ The AWS CloudFormation template defines each AWS Config managed rule by using th
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Install the pip packages from the requirements.txt file.  | Download the `requirements.txt` file (attached) and run the following command in your IDE to install the Python packages:<br />`pip3 install -r requirements.txt` | Developer |
-| Run the Python script.  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere.html)You can also add the following optional parameters:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere.html) | Developer |
+| Run the Python script.  | 1. Download the `aws_config_rules.py`  file (attached) to your local machine.<br />2. Run the `- python3 aws_config_rules.py --ou <OU_NAME>` command. : `--ou` defines which OU column to choose in the Excel spreadsheet.You can also add the following optional parameters:+ `--config-rule-option` ** **– Defines the rules to choose from the Excel spreadsheet. The default is the `Implemented` parameter.<br />+ `--excel-file` ** **– The path for the Excel spreadsheet. The default is `aws_config_rules.xlsx`.<br />+ `--param-file` ** **– The path of the parameter JSON file. The default is `config_rules_params.json`.<br />+ `--max-execution-frequency` ** **– Defines how often the AWS Config managed rules are evaluated. The choices are `One_Hour`, `Three_Hours`, `Six_Hours`, `Twelve_Hours`, or `TwentyFour_Hours`. The default is `TwentyFour_Hours`. | Developer |
 
 ### Deploy the AWS Config managed rules
 <a name="deploy-the-aws-config-managed-rules"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Launch the AWS CloudFormation stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/generate-an-aws-cloudformation-template-containing-aws-config-managed-rules-using-troposphere.html) | Developer |
+| Launch the AWS CloudFormation stack. | 1. Sign in to the AWS Management Console, open the AWS CloudFormation console, and then choose **Create stack. **<br />2. On the **Specify template** page, choose **Upload a template file** and then upload your AWS CloudFormation template. <br />3. Specify a stack name and then choose **Next**.<br />4. Specify tags and then choose **Next**.<br />5. Choose **Create stack**. | Developer |
 
 ## Attachments
 <a name="attachments-07c1cfff-fc9e-4a1f-bd36-48f025808bd8"></a>

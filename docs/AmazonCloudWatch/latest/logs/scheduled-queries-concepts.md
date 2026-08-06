@@ -10,7 +10,7 @@ Before creating scheduled queries, understand these key concepts that affect how
 ## IAM role separation
 <a name="scheduled-queries-iam-roles"></a>
 
-Scheduled queries require two separate IAM roles: one for executing queries and another for delivering results to Amazon S3 or Amazon EventBridge event buses. Understanding why this separation exists helps you configure permissions correctly and use the security and operational benefits it provides.
+Scheduled queries require two separate IAM roles: one for executing queries and another for delivering results to destinations such as Amazon S3 buckets, Amazon EventBridge event buses, or lookup tables. Understanding why this separation exists helps you configure permissions correctly and use the security and operational benefits it provides.
 
 The two-role architecture divides responsibilities between data access and data delivery. The query execution role accesses your log data and runs queries, while the destination delivery role writes results to your chosen destination. This separation follows the principle of least privilege—each role has only the permissions it needs for its specific function.
 
@@ -74,6 +74,24 @@ Example permissions policy for S3 destination delivery role:
                 "s3:PutObject"
             ],
             "Resource": "arn:aws:s3:::your-scheduled-query-results-bucket/*"
+        }
+    ]
+}
+```
+Example permissions policy for a lookup table destination delivery role:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLookupTable",
+                "logs:UpdateLookupTable",
+                "logs:GetQueryResults"
+            ],
+            "Resource": "*"
         }
     ]
 }
@@ -145,7 +163,7 @@ Standard SQL syntax for familiar database-style queries. Best for:
 
 Where you send query results determines what you can do with them. This choice shapes your entire downstream workflow—whether you are building long-term analytics, triggering automated responses, or both. Understanding the strengths of each destination type helps you design the right architecture for your use case.
 
-Amazon S3 destinations are optimized for storage and batch processing. When you need to keep query results for months or years, analyze trends over time, or feed data into analytics platforms, Amazon S3 provides cost-effective storage with unlimited retention. EventBridge destinations are optimized for real-time automation. When query results should trigger immediate actions—like sending alerts, starting workflows, or updating systems—EventBridge delivers results as events that your applications can respond to instantly. By default all query completion events are automatically sent as events to the default event bus, enabling integration with downstream processing systems, Lambda functions, or other event-driven architectures. Results are only published to destinations when query is executed successfully.
+Amazon S3 destinations are optimized for storage and batch processing. When you need to keep query results for months or years, analyze trends over time, or feed data into analytics platforms, Amazon S3 provides cost-effective storage with unlimited retention. EventBridge destinations are optimized for real-time automation. When query results should trigger immediate actions—like sending alerts, starting workflows, or updating systems—EventBridge delivers results as events that your applications can respond to instantly. By default all query completion events are automatically sent as events to the default event bus, enabling integration with downstream processing systems, Lambda functions, or other event-driven architectures. Results are only published to destinations when query is executed successfully. Lookup table destinations are optimized for keeping reference data current. A lookup table destination automatically populates or refreshes the specified lookup table with the query results on each scheduled execution, so other queries can reference the latest data with the `lookup` command.
 
 **Amazon S3 destinations**
 Store query results as JSON files for long-term retention and batch processing. Best for:
@@ -160,6 +178,12 @@ Send query results as events for real-time processing and automation. You can re
 + Integration with serverless workflows and Lambda functions
 + Real-time alerting and notification systems
 + Event-driven architectures and microservices
+
+**Lookup table destinations**
+Automatically create or refresh a lookup table with query results on each scheduled execution. Each refresh is a full replacement of the table content. Best for:
++ Keeping reference data current for the `lookup` command in your log queries
++ Maintaining allowlists, denylists, or entity inventories derived from log data
++ Enriching queries with recent activity summaries, such as active user or resource lists
 
 ## Query result format and structure
 <a name="scheduled-queries-result-format"></a>

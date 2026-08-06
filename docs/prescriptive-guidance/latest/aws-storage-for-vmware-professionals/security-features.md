@@ -15,10 +15,10 @@ The following table summarizes the security configurations and characteristics o
 |
 | Aspect | VMware | AWS |
 | --- |--- |--- |
-| Access control | Role-based access control (RBAC)vSphere permissions | ACLsS3 bucket policiesIAMSecurity groups |
-| Encryption | External key management server integrationVM encryption at hypervisor levelvSAN datastore encryption | EBS volume encryptionEFS encryption (at rest and in transit)AWS KMS integrationS3 server-side encryption (SSE) |
-| Security monitoring and auditing | Third-party Security Information and Event Management (SIEM) integrationvCenter/ESXi event logsvRealize Log InsightvSAN audit logs | GuardDuty threat detectionS3 access logsCloudTrailAWS Config |
-| Data protection | Critical system file restrictionsDisabling unnecessary servicesSecurity patchesVM hardening | Blocking S3 public accessEncryption in transit (SSL/TLS)Multi-factor authenticationVPC endpoints |
+| Access control | + Role-based access control (RBAC)<br />+ vSphere permissions | + ACLs<br />+ S3 bucket policies<br />+ IAM<br />+ Security groups |
+| Encryption | + External key management server integration<br />+ VM encryption at hypervisor level<br />+ vSAN datastore encryption | + EBS volume encryption<br />+ EFS encryption (at rest and in transit)<br />+ AWS KMS integration<br />+ S3 server-side encryption (SSE) |
+| Security monitoring and auditing | + Third-party Security Information and Event Management (SIEM) integration<br />+ vCenter/ESXi event logs<br />+ vRealize Log Insight<br />+ vSAN audit logs | + GuardDuty threat detection<br />+ S3 access logs<br />+ CloudTrail<br />+ AWS Config |
+| Data protection | + Critical system file restrictions<br />+ Disabling unnecessary services<br />+ Security patches<br />+ VM hardening | + Blocking S3 public access<br />+ Encryption in transit (SSL/TLS)<br />+ Multi-factor authentication<br />+ VPC endpoints |
 
 The following table provides a detailed comparison of security implementations between VMware and AWS environments, focusing on access control, encryption, monitoring, and data protection approaches.
 

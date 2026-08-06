@@ -47,9 +47,9 @@ The following table lists the roles that are used in this tutorial:
 
 | Role | Description |
 | --- | --- |
-| Data steward (administrator) | The lf-data-steward user has the following access: [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/managing-dl-tutorial.html)  |
-| Data engineer | `lf-data-engineer` user has the following access: [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/managing-dl-tutorial.html) |
-| Data analyst | The lf-data-analyst user has the following access: [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/managing-dl-tutorial.html)  |
+| Data steward (administrator) | The lf-data-steward user has the following access: + Read access to all resources in the Data Catalog<br />+ Can create LF-tags and associate to the data engineer role for grantable permission to other principals  |
+| Data engineer | `lf-data-engineer` user has the following access: + Full read, write, and update access to all resources in the Data Catalog<br />+ Data location permissions in the data lake<br />+ Can associate LF-tags and associate to the Data Catalog<br />+ Can attach LF-tags to resources, which provides access to principals based on any policies created by data stewards |
+| Data analyst | The lf-data-analyst user has the following access: + Fine-grained access to resources shared by Lake Formation tag-based access policies  |
 
 ## Prerequisites
 <a name="tut-manage-dl-prereqs"></a>

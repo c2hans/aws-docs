@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/deepracer-on-aws//index.html
 
 Developers of all skill levels can get hands on with machine learning through a 3D racing simulator and fully autonomous 1/18th scale race cars driven by reinforcement learning.
 
-- **Version**: 1.2.5
-- **Release**: 07/2026
+- **Version**: 1.2.7
+- **Release**: 08/2026
 - **Author**: AWS
 - **Est. deployment time**: 30 mins
 - **Estimated cost**: [See details](/solutions/latest/deepracer-on-aws/cost.html)

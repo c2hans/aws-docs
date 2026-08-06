@@ -36,6 +36,11 @@ Two settings control what the environment can do:
 **Note**
 ** During preview, the agent uses Sandbox only during investigations. Support for chat, custom agents, and other DevOps Agent capabilities is coming soon.
 
+### Sandbox environment isolation
+<a name="sandbox-environment-isolation"></a>
+
+AWS DevOps Agent runs each sandbox in an isolated Lambda MicroVM. Each MicroVM is scoped to a single investigation and is discarded when the investigation ends. When the agent makes AWS CLI or SDK calls from the sandbox, it routes those calls through a proxy. That proxy limits the calls to read-only operations, so sandbox code cannot modify or delete your AWS resources.
+
 ### Skills in the sandbox
 <a name="skills-in-the-sandbox"></a>
 

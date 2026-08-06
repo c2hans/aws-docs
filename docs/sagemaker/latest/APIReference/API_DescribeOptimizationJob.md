@@ -78,6 +78,7 @@ Required: Yes
       "MaxRuntimeInSeconds": number,
       "MaxWaitTimeInSeconds": number
    },
+   "TrainingPlanArns": [ "string" ],
    "VpcConfig": {
       "SecurityGroupIds": [ "string" ],
       "Subnets": [ "string" ]
@@ -99,7 +100,7 @@ Type: Timestamp
  ** [DeploymentInstanceType](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-DeploymentInstanceType"></a>
 The type of instance that hosts the optimized model that you create with the optimization job.
 Type: String
-Valid Values: `ml.p4d.24xlarge | ml.p4de.24xlarge | ml.p5.48xlarge | ml.p5e.48xlarge | ml.p5en.48xlarge | ml.g4dn.xlarge | ml.g4dn.2xlarge | ml.g4dn.4xlarge | ml.g4dn.8xlarge | ml.g4dn.12xlarge | ml.g4dn.16xlarge | ml.g5.xlarge | ml.g5.2xlarge | ml.g5.4xlarge | ml.g5.8xlarge | ml.g5.12xlarge | ml.g5.16xlarge | ml.g5.24xlarge | ml.g5.48xlarge | ml.g6.xlarge | ml.g6.2xlarge | ml.g6.4xlarge | ml.g6.8xlarge | ml.g6.12xlarge | ml.g6.16xlarge | ml.g6.24xlarge | ml.g6.48xlarge | ml.g6e.xlarge | ml.g6e.2xlarge | ml.g6e.4xlarge | ml.g6e.8xlarge | ml.g6e.12xlarge | ml.g6e.16xlarge | ml.g6e.24xlarge | ml.g6e.48xlarge | ml.inf2.xlarge | ml.inf2.8xlarge | ml.inf2.24xlarge | ml.inf2.48xlarge | ml.trn1.2xlarge | ml.trn1.32xlarge | ml.trn1n.32xlarge`
+Valid Values: `ml.p4d.24xlarge | ml.p4de.24xlarge | ml.p5.48xlarge | ml.p5e.48xlarge | ml.p5en.48xlarge | ml.g4dn.xlarge | ml.g4dn.2xlarge | ml.g4dn.4xlarge | ml.g4dn.8xlarge | ml.g4dn.12xlarge | ml.g4dn.16xlarge | ml.g5.xlarge | ml.g5.2xlarge | ml.g5.4xlarge | ml.g5.8xlarge | ml.g5.12xlarge | ml.g5.16xlarge | ml.g5.24xlarge | ml.g5.48xlarge | ml.g6.xlarge | ml.g6.2xlarge | ml.g6.4xlarge | ml.g6.8xlarge | ml.g6.12xlarge | ml.g6.16xlarge | ml.g6.24xlarge | ml.g6.48xlarge | ml.g6e.xlarge | ml.g6e.2xlarge | ml.g6e.4xlarge | ml.g6e.8xlarge | ml.g6e.12xlarge | ml.g6e.16xlarge | ml.g6e.24xlarge | ml.g6e.48xlarge | ml.inf2.xlarge | ml.inf2.8xlarge | ml.inf2.24xlarge | ml.inf2.48xlarge | ml.trn1.2xlarge | ml.trn1.32xlarge | ml.trn1n.32xlarge | ml.p6-b200.48xlarge | ml.g7e.2xlarge | ml.g7e.4xlarge | ml.g7e.8xlarge | ml.g7e.12xlarge | ml.g7e.24xlarge | ml.g7e.48xlarge`
 
  ** [FailureReason](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-FailureReason"></a>
 If the optimization job status is `FAILED`, the reason for the failure.
@@ -177,6 +178,13 @@ To stop a training job, SageMaker sends the algorithm the `SIGTERM` signal, whic
 The training algorithms provided by SageMaker automatically save the intermediate results of a model training job when possible. This attempt to save artifacts is only a best effort case as model might not be in a state from which it can be saved. For example, if training has just started, the model might not be ready to save. When saved, this intermediate data is a valid model artifact. You can use it to create a model with `CreateModel`.
 The Neural Topic Model (NTM) currently does not support saving intermediate model artifacts. When training NTMs, make sure that the maximum runtime is sufficient for the training job to complete.
 Type: [StoppingCondition](API_StoppingCondition.md) object
+
+ ** [TrainingPlanArns](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-TrainingPlanArns"></a>
+The Amazon Resource Name (ARN) of the training plan associated with this optimization job. This field appears only when you specified a training plan when you created the job. Optimization jobs that use on-demand capacity don't return this field.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 1 item.
+Length Constraints: Minimum length of 50. Maximum length of 2048.
+Pattern: `arn:aws[a-z\-]*:sagemaker:[a-z0-9\-]*:[0-9]{12}:training-plan/.*`
 
  ** [VpcConfig](#API_DescribeOptimizationJob_ResponseSyntax) **   <a name="sagemaker-DescribeOptimizationJob-response-VpcConfig"></a>
 A VPC in Amazon VPC that your optimized model has access to.

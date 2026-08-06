@@ -7,7 +7,10 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/incident-response
 
 Amazon Quick Sight is integrated with AWS CloudTrail. This service provides a record of actions taken by a user, role, or an AWS service in Amazon Quick Sight. CloudTrail captures all API calls for Amazon Quick Sight as events. The calls captured include some calls from the Amazon Quick Sight console and all code calls to Amazon Quick Sight API operations. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Amazon Quick Sight. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**. Using the information collected by CloudTrail, you can determine the request that was made to Amazon Quick Sight, the IP address from which the request was made, who made the request, when it was made, and additional details.
 
-Amazon Quick Sight doesn’t natively support alerting with Amazon CloudWatch or other external systems. However, it's possible to develop a custom solution to process CloudTrail logs.
+**Note**
+CloudTrail records supported Amazon Quick and Amazon Quick Sight API operations and the non-API events documented on this page. In the examined event samples, event records contained selected metadata such as account ID, resource ID, and user identity. For chat conversations and feedback, use [Monitoring Amazon Quick usage using CloudWatch Logs](monitoring-quicksuite-chat-feedback-cloudwatch.md). For the full signal-by-capability model, see [Incident response, logging, and monitoring in Amazon Quick](incident-response-logging-and-monitoring.md).
+
+Amazon Quick publishes operational metrics to CloudWatch, and you can create CloudWatch alarms on those metrics. For more information, see [Creating alarms with the Amazon CloudWatch console](monitoring-quicksight.md#cw-alerts). To alert on individual CloudTrail events, you can develop a custom solution that processes CloudTrail logs.
 
 Amazon Quick Sight service status can be viewed on the [Service Health Dashboard](https://status.aws.amazon.com/).
 

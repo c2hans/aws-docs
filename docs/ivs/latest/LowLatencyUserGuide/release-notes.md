@@ -15,8 +15,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.45.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.45.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.45.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.45.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.45.0/ios/)+  Bug fixes and stability improvements. <br />+  Support for iOS 14 will be deprecated as of IVS Broadcast SDK 1.48.0.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1450-ll-sdk-size-android"></a>
@@ -43,7 +43,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.38.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.38.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## July 21, 2026
 <a name="jul21-26-player-web-ll"></a>
@@ -53,7 +53,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.54.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.54.1/amazon-ivs-player.min.js](https://player.live-video.net/1.54.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.54.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.54.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.54.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.54.1/amazon-ivs-player.min.js](https://player.live-video.net/1.54.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.54.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.54.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/web/)+  Fixes a regression in 1.54.0 related to certain HLS metadata content.  |
 
 ## July 21, 2026
 <a name="jul21-26-player-mobile-ll"></a>
@@ -63,8 +63,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.54.1](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.1/android/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.54.1](player-ios.md) | **Download:** [https://player.live-video.net/1.54.1/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.54.1/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.1/ios/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.54.1](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.1/android/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/android/)+  Fixes a regression in 1.54.0 related to certain HLS metadata content.  |
+| [iOS Player 1.54.1](player-ios.md) | **Download:** [https://player.live-video.net/1.54.1/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.54.1/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.1/ios/](https://aws.github.io/amazon-ivs-player-docs/1.54.1/ios/)+  Fixes a regression in 1.54.0 related to certain HLS metadata content.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1541-sdk-size-android"></a>
@@ -91,7 +91,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.54.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.54.0/amazon-ivs-player.min.js](https://player.live-video.net/1.54.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.54.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.54.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.54.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.54.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.54.0/amazon-ivs-player.min.js](https://player.live-video.net/1.54.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.54.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.54.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.54.0/web/)+  Bug fixes and stability improvements.  |
 
 ## July 9, 2026
 <a name="jul09-26-player-mobile-ll"></a>
@@ -101,8 +101,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.54.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.54.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.54.0](player-ios.md) | **Download:** [https://player.live-video.net/1.54.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.54.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.54.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.54.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.54.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.54.0](player-ios.md) | **Download:** [https://player.live-video.net/1.54.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.54.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.54.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.54.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1540-sdk-size-android"></a>
@@ -129,7 +129,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.44.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.44.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.44.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.1/ios/)+  There were no changes to the low-latency SDK in this release.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-1441-ll-sdk-size-ios"></a>
@@ -146,8 +146,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.44.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.44.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.44.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.44.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.44.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.44.0/ios/)+  `IVSReplayKitBroadcastSession` has a new initializer that takes a complete `IVSBroadcastConfiguration` object, allowing changes to the network property. Note the mixer property will be ignored for ReplayKit sessions.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1440-ll-sdk-size-android"></a>
@@ -174,7 +174,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.37.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.37.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## June 11, 2026
 <a name="jun11-26-player-web-ll"></a>
@@ -184,7 +184,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.53.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.53.0/amazon-ivs-player.min.js](https://player.live-video.net/1.53.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.53.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.53.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.53.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.53.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.53.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.53.0/amazon-ivs-player.min.js](https://player.live-video.net/1.53.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.53.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.53.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.53.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.53.0/web/)+  Bug fixes and stability improvements.  |
 
 ## June 11, 2026
 <a name="jun11-26-player-mobile-ll"></a>
@@ -194,8 +194,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.53.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.53.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.53.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.53.0](player-ios.md) | **Download:** [https://player.live-video.net/1.53.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.53.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.53.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.53.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.53.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.53.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.53.0/android/)+  Added `Player.setUserAgent(String)` API to Android to set custom User-Agent string for all HTTP requests made by the player. An IVS default is used when no override is set. <br />+  Bug fixes and stability improvements.  |
+| [iOS Player 1.53.0](player-ios.md) | **Download:** [https://player.live-video.net/1.53.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.53.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.53.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.53.0/ios/)+  Added `IVSPlayer.setUserAgent(_:)` API to iOS to set custom User-Agent string for all HTTP requests made by the player. An IVS default is used when no override is set. <br />+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1530-sdk-size-android"></a>
@@ -222,8 +222,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.43.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.43.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.43.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/android/)+  Fixed a memory leak when a BroadcastSession was created but was not Broadcasting. <br />+  Fixed a rare crash when tearing down a BroadcastSession that was streaming with the device's microphone.  |
+| [iOS Broadcast SDK 1.43.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.43.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.43.0/ios/)+  Fixed a bug where the camera torch may turn back on unintentionally after changing cameras and rotating the device.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1430-ll-sdk-size-android"></a>
@@ -250,7 +250,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.36.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.36.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## May 28, 2026
 <a name="may28-26-player-web-ll"></a>
@@ -260,7 +260,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.52.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.52.1/amazon-ivs-player.min.js](https://player.live-video.net/1.52.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.52.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.52.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.52.1/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.52.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.52.1/amazon-ivs-player.min.js](https://player.live-video.net/1.52.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.52.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.52.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.52.1/web/)+  Bug fixes and stability improvements.  |
 
 ## May 14, 2026
 <a name="may14-26-player-mobile-ll"></a>
@@ -270,8 +270,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.52.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.52.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.52.0](player-ios.md) | **Download:** [https://player.live-video.net/1.52.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.52.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.52.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.52.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.52.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.52.0](player-ios.md) | **Download:** [https://player.live-video.net/1.52.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.52.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.52.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1520-sdk-size-android"></a>
@@ -298,7 +298,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.52.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.52.0/amazon-ivs-player.min.js](https://player.live-video.net/1.52.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.52.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.52.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.52.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.52.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.52.0/amazon-ivs-player.min.js](https://player.live-video.net/1.52.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.52.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.52.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.52.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.52.0/web/)+  Bug fixes and stability improvements.  |
 
 ## May 7, 2026
 <a name="may07-26-broadcast-mobile-ll"></a>
@@ -308,8 +308,8 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.42.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.42.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.42.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.42.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.42.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.42.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1420-ll-sdk-size-android"></a>
@@ -336,7 +336,7 @@ This document contains all Amazon IVS Low-Latency Streaming release notes, lates
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.35.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.35.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## April 22, 2026
 <a name="apr22-26-ssai"></a>
@@ -356,7 +356,7 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.51.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.51.0/amazon-ivs-player.min.js](https://player.live-video.net/1.51.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.51.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.51.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.51.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.51.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.51.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.51.0/amazon-ivs-player.min.js](https://player.live-video.net/1.51.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.51.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.51.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.51.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.51.0/web/)+  Bug fixes and stability improvements.  |
 
 ## April 16, 2026
 <a name="apr16-26-player-mobile-ll"></a>
@@ -366,8 +366,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.51.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.51.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.51.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.51.0](player-ios.md) | **Download:** [https://player.live-video.net/1.51.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.51.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.51.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.51.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.51.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.51.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.51.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.51.0](player-ios.md) | **Download:** [https://player.live-video.net/1.51.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.51.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.51.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.51.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1510-sdk-size-android"></a>
@@ -394,7 +394,7 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.34.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.34.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements  |
 
 ## April 9, 2026
 <a name="apr09-26-broadcast-mobile-ll"></a>
@@ -404,8 +404,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.41.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.41.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.41.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/android/)+  Bug fixes and stability improvements  |
+| [iOS Broadcast SDK 1.41.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.41.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.41.0/ios/)+  Bug fixes and stability improvements  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1410-ll-sdk-size-android"></a>
@@ -432,8 +432,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.50.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.50.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.50.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.50.0](player-ios.md) | **Download:** [https://player.live-video.net/1.50.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.50.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.50.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.50.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.50.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.50.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.50.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.50.0](player-ios.md) | **Download:** [https://player.live-video.net/1.50.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.50.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.50.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.50.0/ios/)+  Annotated `NS_SWIFT_SENDABLE` conformance to public data classes. <br />+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1500-sdk-size-android"></a>
@@ -460,7 +460,7 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.50.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.50.0/amazon-ivs-player.min.js](https://player.live-video.net/1.50.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.50.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.50.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.50.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.50.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.50.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.50.0/amazon-ivs-player.min.js](https://player.live-video.net/1.50.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.50.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.50.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.50.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.50.0/web/)+  Bug fixes and stability improvements.  |
 
 ## March 12, 2026
 <a name="mar12-26-broadcast-web-ll"></a>
@@ -470,7 +470,7 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.33.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.33.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## March 12, 2026
 <a name="mar12-26-broadcast-mobile-ll"></a>
@@ -480,8 +480,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.40.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.40.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.40.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/android/)+  Improved reliability of auto-reconnect behavior. <br />+  Improved error messages around TLS certificate validation failures and expanded error enum codes.  |
+| [iOS Broadcast SDK 1.40.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.40.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.40.0/ios/)+  Improved reliability of auto-reconnect behavior. <br />+  Improved error messages around TLS certificate validation failures and expanded error enum codes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1400-ll-sdk-size-android"></a>
@@ -508,8 +508,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.49.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.49.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.49.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.49.0](player-ios.md) | **Download:** [https://player.live-video.net/1.49.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.49.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.49.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.49.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.49.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.49.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.49.0/android/)+  Fixed an issue related to automatic quality switching in auto mode when consuming certain OBS x264 encoded streams. Previously, switching from a manually selected rendition back to auto could impact the transition up to the source quality. <br />+  Bug fixes and stability improvements.  |
+| [iOS Player 1.49.0](player-ios.md) | **Download:** [https://player.live-video.net/1.49.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.49.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.49.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.49.0/ios/)+  Bug fixes and stability improvements. <br />+  Effective with this release, the IVS SDKs are no longer distributed via CocoaPods. <br />CocoaPods announced its deprecation in 2024 and will enter read-only state later this year. Swift Package Manager (SPM) replaces CocoaPods as Apple’s supported dependency-management solution and is the standard way to integrate SDKs in modern Xcode projects. <br />We recommend that you migrate to SPM or integrate the IVS SDK frameworks directly into your project. IVS SDKs are fully supported via both approaches. <br />Related documentation changes were made in [iOS Player SDK Guide](ios-getting-started.md) (in "Getting Started with the IVS iOS Player SDK").   |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1490-sdk-size-android"></a>
@@ -536,7 +536,7 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.49.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.49.0/amazon-ivs-player.min.js](https://player.live-video.net/1.49.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.49.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.49.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.49.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.49.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.49.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.49.0/amazon-ivs-player.min.js](https://player.live-video.net/1.49.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.49.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.49.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.49.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.49.0/web/)+  Bug fixes and stability improvements.  |
 
 ## February 13, 2026
 <a name="feb13-26-broadcast-mobile-ll"></a>
@@ -546,8 +546,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.39.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.39.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.39.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/android/)+  Updated core Android build tools and NDK version. <br />+  Fixed rare deadlock when stopping a `MixedImageDevice`.   |
+| [iOS Broadcast SDK 1.39.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.39.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.39.0/ios/)+  Updated Xcode to version 26.2. <br />+  Effective with this release, the IVS SDKs are no longer distributed via CocoaPods. <br />CocoaPods announced its deprecation in 2024 and will enter read-only state later this year. Swift Package Manager (SPM) replaces CocoaPods as Apple’s supported dependency-management solution and is the standard way to integrate SDKs in modern Xcode projects. <br />We recommend that you migrate to SPM or integrate the IVS SDK frameworks directly into your project. IVS SDKs are fully supported via both approaches. <br />Related documentation changes were made in [iOS Broadcast SDK Guide](broadcast-ios-getting-started.md#broadcast-ios-install) (in "Install the Library").  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1390-ll-sdk-size-android"></a>
@@ -574,7 +574,7 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.32.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.32.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## January 13, 2026
 <a name="jan13-26-broadcast-mobile-ll"></a>
@@ -584,8 +584,8 @@ See the new [SSAI](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/s
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.38.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.38.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.38.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/android/)+  Changed the codes associated with some errors. See [Mobile Broadcast SDK Error Migration Guide](#broadcast-1380-ll-sdk-error-migration) below.  |
+| [iOS Broadcast SDK 1.38.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.38.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.38.0/ios/)+  Changed the codes associated with some errors. See [Mobile Broadcast SDK Error Migration Guide](#broadcast-1380-ll-sdk-error-migration) below.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1380-ll-sdk-size-android"></a>
@@ -643,7 +643,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.48.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.48.0/amazon-ivs-player.min.js](https://player.live-video.net/1.48.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.48.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.48.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.48.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.48.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.48.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.48.0/amazon-ivs-player.min.js](https://player.live-video.net/1.48.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.48.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.48.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.48.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.48.0/web/)+  Bug fixes and stability improvements.  |
 
 ## December 18, 2025
 <a name="dec18-25-player-mobile-ll"></a>
@@ -653,8 +653,8 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.48.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.48.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.48.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.48.0](player-ios.md) | **Download:** [https://player.live-video.net/1.48.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.48.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.48.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.48.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.48.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.48.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.48.0/android/)+  The public constructor for the `UnavailableQuality` class has been removed. (This was previously made public in error.) <br />+  Bug fixes and stability improvements.  |
+| [iOS Player 1.48.0](player-ios.md) | **Download:** [https://player.live-video.net/1.48.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.48.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.48.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.48.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1480-sdk-size-android"></a>
@@ -681,7 +681,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.37.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.37.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.1/android/)+  Stability improvement in the networking stack.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1371-ll-sdk-size-android"></a>
@@ -701,7 +701,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.31.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.31.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## December 5, 2025
 <a name="dec05-25-broadcast-mobile-ll"></a>
@@ -711,8 +711,8 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.37.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.37.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.37.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.37.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.37.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.37.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1370-ll-sdk-size-android"></a>
@@ -739,7 +739,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.47.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.47.0/amazon-ivs-player.min.js](https://player.live-video.net/1.47.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.47.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.47.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.47.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.47.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.47.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.47.0/amazon-ivs-player.min.js](https://player.live-video.net/1.47.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.47.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.47.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.47.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.47.0/web/)+  Bug fixes and stability improvements.  |
 
 ## November 20, 2025
 <a name="nov20-25-player-mobile-ll"></a>
@@ -749,8 +749,8 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.47.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.47.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.47.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.47.0](player-ios.md) | **Download:** [https://player.live-video.net/1.47.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.47.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.47.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.47.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.47.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.47.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.47.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.47.0](player-ios.md) | **Download:** [https://player.live-video.net/1.47.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.47.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.47.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.47.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1470-sdk-size-android"></a>
@@ -777,7 +777,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.30.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.30.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## October 30, 2025
 <a name="oct30-25-broadcast-mobile-ll"></a>
@@ -787,8 +787,8 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.36.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.36.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.36.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/android/)+  Improved camera recovery when returning to the foreground after being in the background for a prolonged period of time.  |
+| [iOS Broadcast SDK 1.36.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.36.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.36.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1360-ll-sdk-size-android"></a>
@@ -815,7 +815,7 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.46.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.46.0/amazon-ivs-player.min.js](https://player.live-video.net/1.46.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.46.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.46.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.46.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.46.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.46.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.46.0/amazon-ivs-player.min.js](https://player.live-video.net/1.46.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.46.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.46.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.46.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.46.0/web/)+  Bug fixes and stability improvements.  |
 
 ## October 23, 2025
 <a name="oct23-25-player-mobile-ll"></a>
@@ -825,8 +825,8 @@ The most important part of an error is still `BroadcastException.getPlatformCode
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.46.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.46.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.46.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.46.0](player-ios.md) | **Download:** [https://player.live-video.net/1.46.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.46.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.46.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.46.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.46.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.46.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.46.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.46.0](player-ios.md) | **Download:** [https://player.live-video.net/1.46.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.46.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.46.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.46.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1460-sdk-size-android"></a>
@@ -861,7 +861,7 @@ We extended the supported regions for interface VPC (Virtual Private Cloud) endp
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.29.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.29.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## October 2, 2025
 <a name="oct02-25-broadcast-mobile-ll"></a>
@@ -871,8 +871,8 @@ We extended the supported regions for interface VPC (Virtual Private Cloud) endp
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.35.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.35.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.35.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/android/)+  We changed the `BroadcastSession.recommendedVideoSettings` operation:   A cancelled operation emits a final result with an error.   All callbacks are emitted on the main thread.   If bandwidth is too low to broadcast, an error (instead of a video configuration) is emitted for the final result.   <br />+  Support for Android 5 is deprecated as of this release.  |
+| [iOS Broadcast SDK 1.35.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.35.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.35.0/ios/)+  `IVSImageDevice.setOnFrameCallback` can now be customized with a `DispatchQueue`, and optionally can include the `CVPixelBuffer` associated with the frame. <br />+  We changed the `IVSBroadcastSession.recommendedVideoSettings` operation:   A cancelled operation emits a final result with an error.   All callbacks are emitted on the main queue.   If bandwidth is too low to broadcast, an error (instead of a video configuration) is emitted for the final result.    |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1350-ll-sdk-size-android"></a>
@@ -899,7 +899,7 @@ We extended the supported regions for interface VPC (Virtual Private Cloud) endp
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.45.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.45.0/amazon-ivs-player.min.js](https://player.live-video.net/1.45.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.45.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.45.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.45.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.45.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.45.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.45.0/amazon-ivs-player.min.js](https://player.live-video.net/1.45.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.45.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.45.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.45.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.45.0/web/)+  Added the capability to lower playback quality when the player is in a hidden tab. This is disabled by default; it can be enabled by setting `optimizeBackgroundPlayback` in the Player constructor config. See [Optimizing Background Playback](web-getting-started.md#web-optimize-background-playback) in the *Web Player SDK Guide*.  <br />+  Reduced bundle size. <br />+  Additional bug fixes and stability improvements.  |
 
 ## September 25, 2025
 <a name="sep25-25-player-mobile-ll"></a>
@@ -909,8 +909,8 @@ We extended the supported regions for interface VPC (Virtual Private Cloud) endp
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.45.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.45.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.45.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.45.0](player-ios.md) | **Download:** [https://player.live-video.net/1.45.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.45.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.45.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.45.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.45.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.45.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.45.0/android/)+  Bug fixes and stability improvements. <br />+  Support for Android 5 is deprecated as of this release.  |
+| [iOS Player 1.45.0](player-ios.md) | **Download:** [https://player.live-video.net/1.45.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.45.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.45.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.45.0/ios/)+  Fixed a race condition that could occur as a result of reassigning the `player` property of the `IVSPlayerLayer` or `IVSPlayerView` class to a different player instance. <br />+  It is now considered thread-safe to dealloc `IVSPlayer` instances off the main thread. <br />+  Additional bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1450-sdk-size-android"></a>
@@ -937,8 +937,8 @@ We extended the supported regions for interface VPC (Virtual Private Cloud) endp
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.34.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.34.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.34.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/android/)+  CPU improvements for RTMP and RTMPS broadcasting. <br />+  Support for Android 5 will be deprecated as of IVS Broadcast SDK 1.35.0.  |
+| [iOS Broadcast SDK 1.34.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.34.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.34.0/ios/)+  CPU improvements for RTMP and RTMPS broadcasting.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1340-ll-sdk-size-android"></a>
@@ -973,7 +973,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.28.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.28.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## August 28, 2025
 <a name="aug28-25-player-web-ll"></a>
@@ -983,7 +983,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.44.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.44.0/amazon-ivs-player.min.js](https://player.live-video.net/1.44.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.44.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.44.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.44.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.44.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.44.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.44.0/amazon-ivs-player.min.js](https://player.live-video.net/1.44.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.44.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.44.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.44.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.44.0/web/)+  Bug fixes and stability improvements.  |
 
 ## August 28, 2025
 <a name="aug28-25-player-mobile-ll"></a>
@@ -993,8 +993,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.44.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.44.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.44.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.44.0](player-ios.md) | **Download:** [https://player.live-video.net/1.44.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.44.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.44.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.44.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.44.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.44.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.44.0/android/)+  Bug fixes and stability improvements. <br />+  Support for Android 5 will be deprecated as of IVS Player 1.45.0.  |
+| [iOS Player 1.44.0](player-ios.md) | **Download:** [https://player.live-video.net/1.44.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.44.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.44.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.44.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1440-sdk-size-android"></a>
@@ -1021,7 +1021,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.27.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.27.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## August 7, 2025
 <a name="aug07-25-broadcast-mobile-ll"></a>
@@ -1031,8 +1031,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.33.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.33.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.33.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/android/)+  Added support for insecure ingest (RTMP). <br />+  New methods to control device torch:   `CameraSource.Capabilities` implements `isTorchSupported`.   `CameraSource.Options.Builder` implements `setEnableTorch`.   <br />+  The Android broadcast SDK meets Google Play’s [16 KB page-size compatibility requirement](https://android-developers.googleblog.com/2025/05/prepare-play-apps-for-devices-with-16kb-page-size.html). (Note: This was implemented as of version 1.23.0 of the SDK.) <br />+  Support for Android 5 will be deprecated as of IVS Broadcast SDK 1.35.0.  |
+| [iOS Broadcast SDK 1.33.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.33.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.33.0/ios/)+  Added support for insecure ingest (RTMP). <br />+  New method to control device torch: `IVSImageDevice` implements two properties, `isTorchSupported` and `torchEnabled`. Check if the device supports torch with `isTorchSupported`, and then toggle it by setting `torchEnabled`. <br />+  Support for iOS 13 is deprecated as of this release.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1330-ll-sdk-size-android"></a>
@@ -1059,8 +1059,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.43.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.43.0](player-ios.md) | **Download:** [https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.43.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/android/)+  The SDK now supports using the system's default CookieManager for HTTP requests. To use this feature:   Set the default CookieManager before creating a Player instance.   If you are using `okhttp3:4.x` as an HTTP client, add ``okhttp-urlconnection`` as a dependency. No additional dependencies are required if you are using other HTTP clients.   Add the cookie to the default CookieManager.   <br />+  Bug fixes and stability improvements. <br />+  Support for Android 5 will be deprecated as of IVS Player 1.45.0.  |
+| [iOS Player 1.43.0](player-ios.md) | **Download:** [https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.43.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/ios/)+  Using the Swift Package Manager is now the recommended way to integrate the Player SDK. See [Recommended: Integrate the Player SDK (Swift Package Manager)](https://docs.aws.amazon.com//ivs/latest/LowLatencyUserGuide/ios-getting-started.html#ios-integrate-sdk-swift) in the iOS Player Guide. <br />+  Bug fixes and stability improvements. <br />+  Support for iOS 13 is deprecated as of this release.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1430-sdk-size-android"></a>
@@ -1087,7 +1087,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.43.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.43.0/amazon-ivs-player.min.js](https://player.live-video.net/1.43.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.43.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.43.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.43.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.43.0/amazon-ivs-player.min.js](https://player.live-video.net/1.43.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.43.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.43.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.43.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.43.0/web/)+  Bug fixes and stability improvements.  |
 
 ## July 25, 2025
 <a name="jul25-25-broadcast-android-ll"></a>
@@ -1097,7 +1097,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.32.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.32.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.2/android/)+  There were no changes to the low-latency SDK in this release. <br />+  Support for Android 5 will be deprecated as of IVS Broadcast SDK 1.35.0.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1322-ll-sdk-size-android"></a>
@@ -1117,7 +1117,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.42.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.42.0/amazon-ivs-player.min.js](https://player.live-video.net/1.42.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.42.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.42.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.42.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.42.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.42.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.42.0/amazon-ivs-player.min.js](https://player.live-video.net/1.42.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.42.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.42.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.42.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.42.0/web/)+  Bug fixes and stability improvements.  |
 
 ## July 10, 2025
 <a name="jul10-25-player-mobile-ll"></a>
@@ -1127,8 +1127,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.42.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.42.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.42.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.42.0](player-ios.md) | **Download:** [https://player.live-video.net/1.42.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.42.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.42.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.42.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.42.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.42.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.42.0/android/)+  With this release we also began publishing a version of the Android Player SDK with support for debug symbols. See [Using the SDK with Debug Symbols](android-getting-started.md#player-android-using-debug-symbols-ll). <br />+  Bug fixes and stability improvements. <br />+  Support for Android 5 will be deprecated as of IVS Player 1.45.0.  |
+| [iOS Player 1.42.0](player-ios.md) | **Download:** [https://player.live-video.net/1.42.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.42.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.42.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.42.0/ios/)+  Bug fixes and stability improvements. <br />+  Support for iOS 13 will be deprecated as of IVS Player 1.43.0.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1420-sdk-size-android"></a>
@@ -1155,8 +1155,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.32.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.32.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.32.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/android/)+  RTMP auto-reconnect improvements. <br />+  RTMP stability improvements. <br />+  Added a `MixedDevice` API suite for compositing multiple image and audio sources into a single output `Device`, replacing `BroadcastSession.Mixer`. <br />+  Support for Android 5 will be deprecated as of IVS Broadcast SDK 1.35.0.  |
+| [iOS Broadcast SDK 1.32.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.32.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.32.1/ios/)+  RTMP auto-reconnect improvements. <br />+  RTMP stability improvements. <br />+  Added an `IVSMixedDevice` API suite for compositing multiple image and audio sources into a single output `IVSDevice`, replacing `IVSMixer`. <br />+  Support for iOS 13 will be deprecated as of IVS Broadcast SDK 1.33.0  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1321-ll-sdk-size-android"></a>
@@ -1183,7 +1183,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.26.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.26.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## June 16, 2025
 <a name="jun16-25-broadcast-web-ll"></a>
@@ -1193,7 +1193,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.25.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.25.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Removed the NPM unintentional engine enforcement of v22. All LTS node versions are supported as the package is transpiled.  |
 
 ## June 12, 2025
 <a name="jun12-25-broadcast-mobile-ll"></a>
@@ -1203,8 +1203,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.31.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.31.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.31.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.31.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.31.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.31.0/ios/)+  Bug fixes and stability improvements. <br />+  Support for iOS 13 will be deprecated as of IVS Broadcast SDK 1.33.0  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1310-ll-sdk-size-android"></a>
@@ -1231,7 +1231,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.25.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.25.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## June 5, 2025
 <a name="jun05-25-player-mobile-ll"></a>
@@ -1241,8 +1241,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.41.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.41.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.41.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.41.0](player-ios.md) | **Download:** [https://player.live-video.net/1.41.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.41.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.41.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.41.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.41.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.41.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.41.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.41.0](player-ios.md) | **Download:** [https://player.live-video.net/1.41.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.41.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.41.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.41.0/ios/)+  Bug fixes and stability improvements. <br />+  Support for iOS 13 will be deprecated as of IVS Player 1.43.0.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1410-sdk-size-android"></a>
@@ -1269,7 +1269,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.41.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.41.0/amazon-ivs-player.min.js](https://player.live-video.net/1.41.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.41.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.41.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.41.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.41.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.41.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.41.0/amazon-ivs-player.min.js](https://player.live-video.net/1.41.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.41.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.41.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.41.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.41.0/web/)+  Added an event to expose metadata sourced from `UserDataUnregistered` SEI messages contained in the video track. <br />+  Additional bug fixes and stability improvements.  |
 
 ## May 26, 2025
 <a name="may26-25-broadcast-android-ll"></a>
@@ -1279,7 +1279,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.30.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.30.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.1/android/)+  There were no changes to the low-latency SDK in this release.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1301-ll-sdk-size-android"></a>
@@ -1299,7 +1299,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.24.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.24.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## May 15, 2025
 <a name="may15-25-broadcast-mobile-ll"></a>
@@ -1309,8 +1309,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.30.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.30.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.30.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.30.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.30.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.30.0/ios/)+  Bug fixes and stability improvements. <br />+  Support for iOS 13 will be deprecated as of IVS Broadcast SDK 1.33.0  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1300-ll-sdk-size-android"></a>
@@ -1337,8 +1337,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.40.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.40.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.40.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.40.0](player-ios.md) | **Download:** [https://player.live-video.net/1.40.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.40.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.40.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.40.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.40.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.40.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.40.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.40.0](player-ios.md) | **Download:** [https://player.live-video.net/1.40.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.40.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.40.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.40.0/ios/)+  dSYM files are now shipped alongside the SDK in the `xcframework`. <br />+  Bug fixes and stability improvements. <br />+  Support for iOS 13 will be deprecated as of IVS Player 1.43.0.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1400-sdk-size-android"></a>
@@ -1365,7 +1365,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.40.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.40.0/amazon-ivs-player.min.js](https://player.live-video.net/1.40.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.40.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.40.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.40.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.40.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.40.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.40.0/amazon-ivs-player.min.js](https://player.live-video.net/1.40.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.40.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.40.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.40.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.40.0/web/)+  Bug fixes and stability improvements.  |
 
 ## May 2, 2025
 <a name="may02-25-broadcast-web-ll"></a>
@@ -1375,7 +1375,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.23.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.23.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## April 17, 2025
 <a name="apr17-25-broadcast-mobile-ll"></a>
@@ -1385,8 +1385,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.29.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.29.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.29.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.29.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.29.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.29.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1290-ll-sdk-size-android"></a>
@@ -1413,7 +1413,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.23.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.23.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## April 10, 2025
 <a name="apr10-25-player-web-ll"></a>
@@ -1423,7 +1423,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.39.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.39.0/amazon-ivs-player.min.js](https://player.live-video.net/1.39.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.39.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.39.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.39.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.39.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.39.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.39.0/amazon-ivs-player.min.js](https://player.live-video.net/1.39.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.39.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.39.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.39.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.39.0/web/)+  Bug fixes and stability improvements.  |
 
 ## April 10, 2025
 <a name="apr10-25-player-mobile-ll"></a>
@@ -1433,8 +1433,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.39.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.39.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.39.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.39.0](player-ios.md) | **Download:** [https://player.live-video.net/1.39.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.39.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.39.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.39.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.39.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.39.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.39.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.39.0](player-ios.md) | **Download:** [https://player.live-video.net/1.39.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.39.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.39.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.39.0/ios/)+  Fixed a bug that could cause a crash as a result of reassigning the `player` property of the `IVSPlayerLayer` or `IVSPlayerView` class to a different player instance. <br />+  Additional bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1390-sdk-size-android"></a>
@@ -1461,8 +1461,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.28.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.28.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.28.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.28.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.28.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.28.1/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1281-ll-sdk-size-android"></a>
@@ -1489,7 +1489,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.22.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.22.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## March 19, 2025
 <a name="mar19-25-broadcast-mobile-ll"></a>
@@ -1499,8 +1499,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.27.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.27.2](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.27.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/android/)+  Fixed a resource-leak regression that impacted some devices when creating 50 or more sessions.  |
+| [iOS Broadcast SDK 1.27.2](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.27.2/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.2/ios/)+  No changes for the low-latency SDK.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1272-ll-sdk-size-android"></a>
@@ -1527,7 +1527,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.38.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.38.0/amazon-ivs-player.min.js](https://player.live-video.net/1.38.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.38.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.38.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.38.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.38.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.38.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.38.0/amazon-ivs-player.min.js](https://player.live-video.net/1.38.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.38.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.38.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.38.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.38.0/web/)+  Bug fixes and stability improvements.  |
 
 ## March 13, 2025
 <a name="mar13-25-player-mobile-ll"></a>
@@ -1537,8 +1537,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.38.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.38.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.38.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.38.0](player-ios.md) | **Download:** [https://player.live-video.net/1.38.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.38.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.38.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.38.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.38.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.38.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.38.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.38.0](player-ios.md) | **Download:** [https://player.live-video.net/1.38.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.38.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.38.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.38.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1380-sdk-size-android"></a>
@@ -1565,7 +1565,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.27.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.27.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.27.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.1/ios/)+  Improved focus performance for objects held close to the camera while using the ultra-wide lens on Pro devices.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-1271-ll-sdk-size-ios"></a>
@@ -1582,8 +1582,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.27.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.27.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.27.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.27.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.27.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.27.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1270-ll-sdk-size-android"></a>
@@ -1610,7 +1610,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.21.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.21.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## February 13, 2025
 <a name="feb13-25-player-mobile-ll"></a>
@@ -1620,8 +1620,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.37.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.37.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.37.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.37.0](player-ios.md) | **Download:** [https://player.live-video.net/1.37.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.37.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.37.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.37.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.37.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.37.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.37.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.37.0](player-ios.md) | **Download:** [https://player.live-video.net/1.37.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.37.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.37.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.37.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-mobile-1370-sdk-size-android"></a>
@@ -1648,7 +1648,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.37.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.37.0/amazon-ivs-player.min.js](https://player.live-video.net/1.37.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.37.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.37.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.37.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.37.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.37.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.37.0/amazon-ivs-player.min.js](https://player.live-video.net/1.37.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.37.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.37.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.37.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.37.0/web/)+  Fixed a bug where playback could skip for streams with many discontinuities. <br />+  Additional bug fixes and stability improvements.  |
 
 ## January 30, 2025
 <a name="jan30-25-broadcast-ai-ll"></a>
@@ -1658,8 +1658,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.26.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.26.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.26.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.26.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.26.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.26.0/ios/)+  Bug fixes and stability improvements.  |
 
 ### Broadcast SDK Size: Android
 <a name="broadcast-1260-ll-sdk-size-android"></a>
@@ -1686,7 +1686,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.20.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.20.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## January 16, 2025
 <a name="jan16-25-player-ai-ll"></a>
@@ -1696,8 +1696,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.36.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.36.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.36.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.36.0](player-ios.md) | **Download:** [https://player.live-video.net/1.36.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.36.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.36.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.36.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.36.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.36.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.36.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.36.0](player-ios.md) | **Download:** [https://player.live-video.net/1.36.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.36.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.36.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.36.0/ios/)+  Fixed a bug where playback could stall for streams with many discontinuities. <br />+  Fixed a bug where buffering could occur on muted sections of a VOD. <br />+  Additional bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1360-sdk-size-android"></a>
@@ -1724,7 +1724,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.36.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.36.0/amazon-ivs-player.min.js](https://player.live-video.net/1.36.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.36.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.36.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.36.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.36.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.36.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.36.0/amazon-ivs-player.min.js](https://player.live-video.net/1.36.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.36.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.36.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.36.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.36.0/web/)+  Bug fixes and stability improvements.  |
 
 ## December 12, 2024
 <a name="dec12-24-broadcast-ai-ll"></a>
@@ -1734,8 +1734,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.25.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.25.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.25.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.25.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.25.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.25.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1250-ll-sdk-size-android"></a>
@@ -1762,7 +1762,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.19.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.19.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## December 6, 2024
 <a name="dec06-24-player-web-ll"></a>
@@ -1772,7 +1772,7 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.35.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.35.0/amazon-ivs-player.min.js](https://player.live-video.net/1.35.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.35.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.35.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.35.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.35.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.35.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.35.0/amazon-ivs-player.min.js](https://player.live-video.net/1.35.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.35.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.35.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.35.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.35.0/web/)+  Increased ability to recover from decode errors. <br />+  Additional bug fixes and stability improvements.  |
 
 ## December 6, 2024
 <a name="dec06-24-player-ai-ll"></a>
@@ -1782,8 +1782,8 @@ New support for interface VPC (Virtual Private Cloud) endpoints enables you to e
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.35.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.35.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.35.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.35.0](player-ios.md) | **Download:** [https://player.live-video.net/1.35.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.35.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.35.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.35.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.35.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.35.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.35.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Player 1.35.0](player-ios.md) | **Download:** [https://player.live-video.net/1.35.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.35.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.35.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.35.0/ios/)+  Bug fixes and stability improvements.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1350-sdk-size-android"></a>
@@ -1825,8 +1825,8 @@ To get started, see [Multitrack Video](https://docs.aws.amazon.com//ivs/latest/L
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.24.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.24.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.24.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/android/)+  Added a new section, “Using Auto-Reconnect,” to the Android Broadcast SDK Guide. <br />+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.24.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.24.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.24.0/ios/)+  Added a new section, “Using Auto-Reconnect,” to the iOS Broadcast SDK Guide. <br />+  Bug fixes and stability improvements.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1240-ll-sdk-size-android"></a>
@@ -1853,7 +1853,7 @@ To get started, see [Multitrack Video](https://docs.aws.amazon.com//ivs/latest/L
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.18.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.18.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
 
 ## October 31, 2024
 <a name="oct31-24-player-web-ll"></a>
@@ -1863,7 +1863,7 @@ To get started, see [Multitrack Video](https://docs.aws.amazon.com//ivs/latest/L
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.34.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.34.1/amazon-ivs-player.min.js](https://player.live-video.net/1.34.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.34.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.34.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.34.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.34.1/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.34.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.34.1/amazon-ivs-player.min.js](https://player.live-video.net/1.34.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.34.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.34.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.34.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.34.1/web/)+  Minor bug fixes.  |
 
 ## October 31, 2024
 <a name="oct31-24-player-ai-ll"></a>
@@ -1873,8 +1873,8 @@ To get started, see [Multitrack Video](https://docs.aws.amazon.com//ivs/latest/L
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.34.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.34.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.34.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.34.0](player-ios.md) | **Download:** [https://player.live-video.net/1.34.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.34.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.34.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.34.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.34.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.34.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.34.0/android/)+  Minor bug fixes.  |
+| [iOS Player 1.34.0](player-ios.md) | **Download:** [https://player.live-video.net/1.34.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.34.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.34.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.34.0/ios/)+  Minor bug fixes.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1340-sdk-size-android"></a>
@@ -1909,7 +1909,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.17.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.17.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## October 10, 2024
 <a name="oct10-24-broadcast-ai-ll"></a>
@@ -1919,8 +1919,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.23.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.23.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.23.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/android/)+  With this release we also began publishing a version of the Android broadcast SDK which includes debug symbols. See [Using the SDK with Debug Symbols](broadcast-android-getting-started.md#broadcast-android-using-debug-symbols-ll). <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.23.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.23.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.23.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1230-ll-sdk-size-android"></a>
@@ -1947,8 +1947,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.33.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.33.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.33.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.33.0](player-ios.md) | **Download:** [https://player.live-video.net/1.33.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.33.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.33.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.33.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.33.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.33.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.33.0/android/)+  Fixed an infinite buffering issue that occurred during MP4 playback. <br />+  Fixed a bug where the player would sometimes skip content.  |
+| [iOS Player 1.33.0](player-ios.md) | **Download:** [https://player.live-video.net/1.33.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.33.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.33.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.33.0/ios/)+  Fixed an infinite buffering issue that occurred during MP4 playback. <br />+  Fixed a bug where the player would sometimes skip content.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1330-sdk-size-android"></a>
@@ -1975,7 +1975,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.33.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.33.0/amazon-ivs-player.min.js](https://player.live-video.net/1.33.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.33.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.33.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.33.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.33.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.33.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.33.0/amazon-ivs-player.min.js](https://player.live-video.net/1.33.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.33.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.33.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.33.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.33.0/web/)+  Minor bug fixes.  |
 
 ## September 11, 2024
 <a name="sep11-24-broadcast-ai-ll"></a>
@@ -1985,8 +1985,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.22.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.22.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.22.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/android/)+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.22.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.22.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.22.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1220-ll-sdk-size-android"></a>
@@ -2013,7 +2013,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.16.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.16.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## September 5, 2024
 <a name="sep05-24-player-web-ll"></a>
@@ -2023,7 +2023,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.32.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.32.1/amazon-ivs-player.min.js](https://player.live-video.net/1.32.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.32.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.32.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.32.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.32.1/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.32.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.32.1/amazon-ivs-player.min.js](https://player.live-video.net/1.32.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.32.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.32.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.32.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.32.1/web/)+  Minor bug fixes.  |
 
 ## September 5, 2024
 <a name="sep05-24-player-ai-ll"></a>
@@ -2033,8 +2033,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.32.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.32.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.32.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.32.0](player-ios.md) | **Download:** [https://player.live-video.net/1.32.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.32.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.32.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.32.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.32.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.32.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.32.0/android/)+  Minor bug fixes.  |
+| [iOS Player 1.32.0](player-ios.md) | **Download:** [https://player.live-video.net/1.32.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.32.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.32.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.32.0/ios/)+  Minor bug fixes.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1320-sdk-size-android"></a>
@@ -2061,7 +2061,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.15.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.15.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## August 15, 2024
 <a name="aug15-24-broadcast-ai-ll"></a>
@@ -2071,8 +2071,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.21.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.21.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.21.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/android/)+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.21.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.21.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.21.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1210-ll-sdk-size-android"></a>
@@ -2099,7 +2099,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.31.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.31.0/amazon-ivs-player.min.js](https://player.live-video.net/1.31.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.31.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.31.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.31.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.31.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.31.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.31.0/amazon-ivs-player.min.js](https://player.live-video.net/1.31.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.31.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.31.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.31.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.31.0/web/)+  Minor bug fixes.  |
 
 ## August 8, 2024
 <a name="aug08-24-player-ai-ll"></a>
@@ -2109,8 +2109,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.31.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.31.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.31.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.31.0](player-ios.md) | **Download:** [https://player.live-video.net/1.31.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.31.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.31.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.31.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.31.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.31.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.31.0/android/)+  Minor bug fixes.  |
+| [iOS Player 1.31.0](player-ios.md) | **Download:** [https://player.live-video.net/1.31.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.31.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.31.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.31.0/ios/)+  Updated the SDK reference documentation to clarify that calling the `IVSPlayerLayer.copyDisplayedPixelBuffer` method at high frequencies (e.g., the video framerate) is not supported and may result in undefined behavior.  <br />+  Minor bug fixes.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1310-sdk-size-android"></a>
@@ -2137,7 +2137,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.14.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.14.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## July 18, 2024
 <a name="jul18-24-broadcast-ai-ll"></a>
@@ -2147,8 +2147,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.20.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.20.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.20.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/android/)+  Fixed some microphone issues that occur when detaching devices. <br />+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.20.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.20.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.20.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1200-ll-sdk-size-android"></a>
@@ -2175,8 +2175,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.30.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.30.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.30.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.30.0](player-ios.md) | **Download:** [https://player.live-video.net/1.30.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.30.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.30.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.30.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.30.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.30.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.30.0/android/)+  Minor bug fixes.  |
+| [iOS Player 1.30.0](player-ios.md) | **Download:** [https://player.live-video.net/1.30.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.30.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.30.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.30.0/ios/)+  Minor bug fixes. <br />+  The iOS Player SDK now requires iOS 13\+ as the native platform.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1300-sdk-size-android"></a>
@@ -2203,7 +2203,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.30.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.30.0/amazon-ivs-player.min.js](https://player.live-video.net/1.30.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.30.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.30.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.30.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.30.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.30.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.30.0/amazon-ivs-player.min.js](https://player.live-video.net/1.30.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.30.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.30.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.30.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.30.0/web/)+  Minor bug fixes.  |
 
 ## June 13, 2024
 <a name="jun13-24-broadcast-ai-ll"></a>
@@ -2213,8 +2213,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.19.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.19.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.19.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/android/)+  Recent Android versions require an icon in the notification that is displayed when capturing the screen. If desired, you can now customize the icon by calling `setSmallIcon` on the `Notification.Builder` returned by `Session # createServiceNotificationBuilder`.  |
+| [iOS Broadcast SDK 1.19.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.19.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.19.0/ios/)+  The iOS Broadcast SDK now requires iOS 13\+ as the native platform.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1190-ll-sdk-size-android"></a>
@@ -2241,7 +2241,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.13.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.13.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## June 6, 2024
 <a name="jun06-24-player-ai-ll"></a>
@@ -2251,8 +2251,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.29.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.29.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.29.0](player-ios.md) | **Download:** [https://player.live-video.net/1.29.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.29.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.29.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.29.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.29.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.29.0/android/)+  Added the `getChannelMetadata()` method, which returns a list of String values to communicate channel features.  |
+| [iOS Player 1.29.0](player-ios.md) | **Download:** [https://player.live-video.net/1.29.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.29.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.29.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.29.0/ios/)+  The iOS 12 deprecation that was planned for iOS player 1.29.0 is delayed until version 1.30.0. <br />+  Added the `getChannelMetadata()` method, which returns a list of String values to communicate channel features. <br />+  Improved consistency when deallocating `IVSPlayerLayer` on a background queue.  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1290-sdk-size-android"></a>
@@ -2279,7 +2279,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.29.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.29.0/amazon-ivs-player.min.js](https://player.live-video.net/1.29.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.29.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.29.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.29.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.29.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.29.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.29.0/amazon-ivs-player.min.js](https://player.live-video.net/1.29.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.29.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.29.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.29.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.29.0/web/)+  Minor bug fixes.  |
 
 ## May 20, 2024
 <a name="may20-24-broadcast-web-ll"></a>
@@ -2289,7 +2289,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.12.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.12.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  No changes.  |
 
 ## May 16, 2024
 <a name="may16-24-broadcast-ai-ll"></a>
@@ -2299,8 +2299,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.18.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.18.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.18.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/android/)+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.18.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.18.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.18.0/ios/)+  Added the IVSCamera `setVideoZoomFactor` method and the associated `IVSCameraDelegate` methods. <br />+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1180-ll-sdk-size-android"></a>
@@ -2327,7 +2327,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.28.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.28.0/amazon-ivs-player.min.js](https://player.live-video.net/1.28.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.28.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.28.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.28.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.28.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.28.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.28.0/amazon-ivs-player.min.js](https://player.live-video.net/1.28.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.28.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.28.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.28.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.28.0/web/)+  Minor bug fixes.  |
 
 ## May 9, 2024
 <a name="may09-24-player-ai-ll"></a>
@@ -2337,8 +2337,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.28.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.28.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.28.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.28.0](player-ios.md) | **Download:** [https://player.live-video.net/1.28.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.28.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.28.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.28.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.28.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.28.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.28.0/android/)+  No changes.  |
+| [iOS Player 1.28.0](player-ios.md) | **Download:** [https://player.live-video.net/1.28.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.28.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.28.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.28.0/ios/)+  Added the `CF_RETURNS_RETAINED` annotation to the `IVSPlayerLayer.copyDisplayedPixelBuffer` method for [automatic memory management when using Swift](https://developer.apple.com/documentation/swift/working-with-core-foundation-types).  |
 
 #### Mobile SDK Size: Android
 <a name="player-ai-1280-sdk-size-android"></a>
@@ -2365,7 +2365,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.11.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.11.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  No changes.  |
 
 ## April 30, 2024
 <a name="apr30-24-broadcast-web-1101-ll"></a>
@@ -2375,7 +2375,7 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.10.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.10.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Minor bug fixes.  |
 
 ## April 30, 2024
 <a name="apr30-24-broadcast-1152-ll"></a>
@@ -2385,8 +2385,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.15.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.15.2](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.15.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/android/)+  Minor bug fixes. Upgrade to this version only if you have a specific reason to do so; otherwise, use the highest version that is released.  |
+| [iOS Broadcast SDK 1.15.2](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.15.2/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.2/ios/)+  Minor bug fixes. Upgrade to this version only if you have a specific reason to do so; otherwise, use the highest version that is released.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1152-sdk-size-android"></a>
@@ -2413,8 +2413,8 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.17.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.17.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.17.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/android/)+  No changes.  |
+| [iOS Broadcast SDK 1.17.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.17.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.17.0/ios/)+  The `AmazonIVSBroadcast` framework now includes a privacy manifest, as required by Apple.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1170-ll-sdk-size-android"></a>
@@ -2441,9 +2441,9 @@ On a channel that you own, you can now replace an ongoing stream with a new stre
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.27.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.27.0/amazon-ivs-player.min.js](https://player.live-video.net/1.27.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.27.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.27.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.27.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.27.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.27.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.27.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.27.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.27.0](player-ios.md) | **Download:** [https://player.live-video.net/1.27.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.27.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.27.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.27.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.27.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.27.0/amazon-ivs-player.min.js](https://player.live-video.net/1.27.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.27.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.27.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.27.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.27.0/web/)+  No changes.  |
+| [Android player 1.27.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.27.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.27.0/android/)+  No changes.  |
+| [iOS Player 1.27.0](player-ios.md) | **Download:** [https://player.live-video.net/1.27.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.27.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.27.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.27.0/ios/)+  The `AmazonIVSPlayer` framework now includes a privacy manifest, as required by Apple. <br />+  Fixed key value observation for several properties on the `IVSPlayer` class.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1270-sdk-size-android"></a>
@@ -2483,9 +2483,9 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.10.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.16.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.16.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.10.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  No changes.  |
+| [Android Broadcast SDK 1.16.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/android/)+  Fixed a previews freeze on the Exynos variant of Samsung devices with Android 14.  |
+| [iOS Broadcast SDK 1.16.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.16.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.16.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1160-ll-sdk-size-android"></a>
@@ -2512,9 +2512,9 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.26.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.26.0/amazon-ivs-player.min.js](https://player.live-video.net/1.26.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.26.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.26.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.26.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.26.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.26.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.26.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.26.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.26.0](player-ios.md) | **Download:** [https://player.live-video.net/1.26.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.26.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.26.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.26.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.26.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.26.0/amazon-ivs-player.min.js](https://player.live-video.net/1.26.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.26.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.26.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.26.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.26.0/web/)+  Added an API to expose the synchronization time. <br />+  Added an event to indicate when the `syncTime` has changed.  |
+| [Android player 1.26.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.26.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.26.0/android/)+  Added an API to expose the synchronization time. <br />+  Added an event to indicate when the `syncTime` has changed.  |
+| [iOS Player 1.26.0](player-ios.md) | **Download:** [https://player.live-video.net/1.26.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.26.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.26.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.26.0/ios/)+  Added an API to expose the synchronization time. <br />+  Added an event to indicate when the `syncTime` has changed.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1260-sdk-size-android"></a>
@@ -2541,8 +2541,8 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.15.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.15.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.15.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/android/)+  No changes in this release.  |
+| [iOS Broadcast SDK 1.15.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.15.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.1/ios/)+  No changes in this release.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1151-sdk-size-android"></a>
@@ -2569,7 +2569,7 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.25.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.25.0/amazon-ivs-player.min.js](https://player.live-video.net/1.25.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.25.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.25.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.25.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.25.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.25.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.25.0/amazon-ivs-player.min.js](https://player.live-video.net/1.25.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.25.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.25.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.25.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.25.0/web/)+  Minor bug fixes.  |
 
 ## February 22, 2024
 <a name="feb22-24-ll"></a>
@@ -2579,9 +2579,9 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.9.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.15.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.15.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.9.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  No changes.  |
+| [Android Broadcast SDK 1.15.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/android/)+  Minor bug fixes.  |
+| [iOS Broadcast SDK 1.15.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.15.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.15.0/ios/)+  Minor bug fixes.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1150-sdk-size-android"></a>
@@ -2608,8 +2608,8 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.25.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.25.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.25.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.25.0](player-ios.md) | **Download:** [https://player.live-video.net/1.25.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.25.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.25.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.25.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.25.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.25.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.25.0/android/)+  Minor bug fixes.  |
+| [iOS Player 1.25.0](player-ios.md) | **Download:** [https://player.live-video.net/1.25.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.25.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.25.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.25.0/ios/)+  Minor bug fixes.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1250-mobile-sdk-size-android"></a>
@@ -2636,9 +2636,9 @@ We support H.264-encoded video content using the SRT protocol.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.8.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.14.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.14.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.8.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  No changes.  |
+| [Android Broadcast SDK 1.14.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/android/)+  Minor bug fixes and improvements.  |
+| [iOS Broadcast SDK 1.14.1](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.14.1/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.14.1/ios/)+  Fixed multiple stability issues on iOS 12.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1141-sdk-size-android"></a>
@@ -2681,9 +2681,9 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.24.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.24.0/amazon-ivs-player.min.js](https://player.live-video.net/1.24.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.24.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.24.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.24.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.24.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.24.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.24.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.24.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.24.0](player-ios.md) | **Download:** [https://player.live-video.net/1.24.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.24.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.24.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.24.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.24.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.24.0/amazon-ivs-player.min.js](https://player.live-video.net/1.24.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.24.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.24.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.24.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.24.0/web/)+  Added support for audio-only playback. Audio-only quality must be selected manually with `setQuality()`; it will not be selected automatically in auto quality mode. See [Audio-Only Playback](web-getting-started.md#web-audio-only-playback) in the *Player Web Guide*.   |
+| [Android player 1.24.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.24.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.24.0/android/)+  No changes  |
+| [iOS Player 1.24.0](player-ios.md) | **Download:** [https://player.live-video.net/1.24.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.24.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.24.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.24.0/ios/)+  No changes  |
 
 #### Mobile SDK Size: Android
 <a name="player-1240-sdk-size-android"></a>
@@ -2710,9 +2710,9 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.7.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android Broadcast SDK 1.13.4](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.13.4](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.7.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  No changes to the low-latency SDK.  |
+| [Android Broadcast SDK 1.13.4](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/android/)+  No changes to the low-latency SDK.  |
+| [iOS Broadcast SDK 1.13.4](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.13.4/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.4/ios/)+  No changes to the low-latency SDK.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1134-sdk-size-android"></a>
@@ -2739,8 +2739,8 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.13.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.13.2](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.13.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/android/)+  No changes in the low-latency SDK.  |
+| [iOS Broadcast SDK 1.13.2](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.13.2/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.2/ios/)+  No changes in the low-latency SDK.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1132-sdk-size-android"></a>
@@ -2767,7 +2767,7 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.13.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.13.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.1/android/)+  No changes in the low-latency SDK.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1131-sdk-size-android"></a>
@@ -2787,9 +2787,9 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All mobile (Android and iOS) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.13.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.13.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All mobile (Android and iOS) |  +  Improved IPv6 support by adopting RFC 6555 "Happy Eyeballs" and adding the `BroadcastConfiguration.network.useIPv6` configuration option to enable or disable IPv6 for broadcasting.   |
+| [Android Broadcast SDK 1.13.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/android/)+  Fixed a crash when an AudioSource object is used after releasing it.  <br />+  Added support to `Surfaceview`-based preview for better performance. The existing `getPreview` methods in `Session` and `StageStream` continue to return a subclass of `TextureView`, but this may change in a future SDK version.   If your application depends on `TextureView` specifically, you can continue with no changes. You also can switch from `getPreview` to `getPreviewTextureView` to prepare for the eventual change of what the default `getPreview` returns.   If your application does not require `TextureView` specifically, we recommend switching to `getPreviewSurfaceView` for lower CPU and memory usage.   <br />+  The SDK now implements a new type of preview called `ImagePreviewSurfaceTarget` which works with the application-provided Android Surface object. It is not a subclass of Android View, which provides better flexibility.  |
+| [iOS Broadcast SDK 1.13.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.13.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.13.0/ios/)+  There were no changes for this release.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1130-sdk-size-android"></a>
@@ -2816,9 +2816,9 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.23.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.23.0/amazon-ivs-player.min.js](https://player.live-video.net/1.23.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.23.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.23.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.23.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.23.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.23.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.23.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.23.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.23.0](player-ios.md) | **Download:** [https://player.live-video.net/1.23.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.23.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.23.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.23.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.23.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.23.0/amazon-ivs-player.min.js](https://player.live-video.net/1.23.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.23.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.23.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.23.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.23.0/web/)+  Added support for low-latency playback in iOS Safari.   |
+| [Android player 1.23.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.23.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.23.0/android/)+  Updated the reference documentation with a new UI and more details.  |
+| [iOS Player 1.23.0](player-ios.md) | **Download:** [https://player.live-video.net/1.23.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.23.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.23.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.23.0/ios/)+  No changes.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1230-sdk-size-android"></a>
@@ -2845,7 +2845,7 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.6.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference) [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.6.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference) +  No changes to the low-latency SDK.  |
 
 ## October 12, 2023
 <a name="oct12-23-ll"></a>
@@ -2855,7 +2855,7 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.12.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.12.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.1/android/)+  Fixed a bug where calling `BroadcastSession.setListener` resulted in an error.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-android-1121-sdk-size-android-ll"></a>
@@ -2875,9 +2875,9 @@ IVS now fully supports audio-only playback. See [Audio-Only Playback](player.md#
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.22.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.22.0/amazon-ivs-player.min.js](https://player.live-video.net/1.22.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.22.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.22.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.22.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.22.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.22.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.22.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.22.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.22.0](player-ios.md) | **Download:** [https://player.live-video.net/1.22.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.22.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.22.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.22.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.22.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.22.0/amazon-ivs-player.min.js](https://player.live-video.net/1.22.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.22.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.22.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.22.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.22.0/web/)+  Added a static method to get the SDK version, `MediaPlayerPackage.getVersion()`.   |
+| [Android player 1.22.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.22.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.22.0/android/)+  Added the `setNetworkRecoveryMode` function to the `Player` interface, to set the desired playback behavior after a network interruption.  |
+| [iOS Player 1.22.0](player-ios.md) | **Download:** [https://player.live-video.net/1.22.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.22.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.22.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.22.0/ios/)+  Added the `setNetworkRecoveryMode` function to the `IVSPlayer` interface, to set the desired playback behavior after a network interruption. <br />+  The `copyDisplayedPixelBuffer` method on `IVSPlayerLayer` can now be used when the player is playing. Previously it was callable only when the player was idle.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1220-sdk-size-android"></a>
@@ -2923,8 +2923,8 @@ You can now stream from the IVS console. In *Getting Started with Low-Latency St
 | Platform | Downloads and Changes |
 | --- | --- |
 | [Web Broadcast SDK 1.5.1](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference) |
-| [Android Broadcast SDK 1.12.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.12.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.12.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/android/)+  Fixed a rare bug that caused broadcasts to end prematurely with the message "Attempted to recv after receiving shutdown from peer."  |
+| [iOS Broadcast SDK 1.12.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.12.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.12.0/ios/)+  Corrected the signature of `IVSDeviceDiscovery.createAudioSourceWithName` to return an `IVSCustomAudioSource` instead of `IVSCustomImageSource`.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1120-sdk-size-android"></a>
@@ -2951,7 +2951,7 @@ You can now stream from the IVS console. In *Getting Started with Low-Latency St
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.7.6](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.6/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.6/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.7.6](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.6/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.6/android/)+  Fixed a rare bug that caused broadcasts to end prematurely with the message "Attempted to recv after receiving shutdown from peer."  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-176_3-sdk-size-android"></a>
@@ -2973,7 +2973,7 @@ You can now stream from the IVS console. In *Getting Started with Low-Latency St
 | --- | --- |
 | [Web player 1.21.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.21.0/amazon-ivs-player.min.js](https://player.live-video.net/1.21.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.21.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.21.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.21.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.21.0/web/) |
 | [Android player 1.21.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.21.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.21.0/android/) |
-| [iOS Player 1.21.0](player-ios.md) | **Download:** [https://player.live-video.net/1.21.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.21.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.21.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.21.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.21.0](player-ios.md) | **Download:** [https://player.live-video.net/1.21.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.21.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.21.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.21.0/ios/)+  Added support for obtaining the most recently displayed video frame, via the new `copyDisplayedPixelBuffer` method on the `IVSPlayerLayer` class.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1210-sdk-size-android"></a>
@@ -3000,7 +3000,7 @@ You can now stream from the IVS console. In *Getting Started with Low-Latency St
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.5.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.5.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed an issue in Safari where a race condition periodically causes an error in media-track retrieval  |
 | [Android Broadcast SDK 1.11.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/android](https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/android) |
 | [iOS Broadcast SDK 1.11.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.11.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.11.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/ios](https://aws.github.io/amazon-ivs-broadcast-docs/1.11.0/ios) |
 
@@ -3045,9 +3045,9 @@ IVS customers can now control what renditions are generated for a stream when re
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.20.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.20.0/amazon-ivs-player.min.js](https://player.live-video.net/1.20.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.20.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.20.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.20.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.20.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.20.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.20.0/amazon-ivs-player.min.js](https://player.live-video.net/1.20.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.20.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.20.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.20.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.20.0/web/)+  Fixed an issue when playing a live stream or recorded content on an iOS mobile browser, where player.`getLiveLatency()` calls return 0. (This was fixed starting with Web Player 1.17.0.) <br />+  Fixed the type definitions of the `amazon-ivs-player` npm package. <br />+  In the [Web Player SDK Reference](https://aws.github.io/amazon-ivs-player-docs/latest/web/), added a new landing page and removed duplicate entries. <br />+  Added support for Video.js version 8\+.  |
 | [Android player 1.20.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.20.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.20.0/android/) |
-| [iOS Player 1.20.0](player-ios.md) | **Download:** [https://player.live-video.net/1.20.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.20.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.20.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.20.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.20.0](player-ios.md) | **Download:** [https://player.live-video.net/1.20.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.20.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.20.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.20.0/ios/)+  The iOS SDK now requires iOS 12.0 or higher. (iOS 11 is no longer supported.)  |
 
 #### Mobile SDK Size: Android
 <a name="player-1200-sdk-size-android"></a>
@@ -3074,10 +3074,10 @@ IVS customers can now control what renditions are generated for a stream when re
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK 1.4.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| All mobile (Android and iOS) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.10.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.10.0](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK 1.4.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed a bug where the SDK provided insufficient typing information for consumption by host applications. <br />+  Fixed a bug where a combination of `leave()` and subsequent `refreshStrategy()` could republish media even though weâ€™ve left. <br />+  Fixed a bug where `stageStreamsToPublish` returning a single track (audio or video) can prevent clean updates when the strategy is refreshed. <br />+  Added a faster disconnect flow when the browser tab is closed.  |
+| All mobile (Android and iOS) |  +  Improved the stability of stages by reducing occurrences of rare crashes. <br />+  Added a new `sendTimedMetadata` method to `BroadcastSession`, which allows sending a string through the same socket connection as the current broadcast. This string has timing information attached and can be received by the IVS Player SDK. <br />+  When a participant leaves a stage, the participant now has its published state updated to unpublished before `onParticipantLeft` is called on Android or `participantDidLeave` is called on iOS.   |
+| [Android Broadcast SDK 1.10.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/android/)+  Fixed a bug where rotating while reconnecting to a stage caused other participants to appear badly cropped. <br />+  Fixed an issue where the `AudioStageStream` device could not be cast to `AudioDevice`. <br />+  Fixed an issue where rapid background-to-foreground app switch caused subscribed video streams to be muted.  |
+| [iOS Broadcast SDK 1.10.0](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.10.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.10.0/ios/)+  Fixed an issue where viewers could lose audio after a broadcast session is interrupted by a phone call. The workaround (restarting the broadcast session after a phone-call interruption) is no longer needed. <br />+  Fixes an issue that prevented multiple stages from existing and all being able to play audio. <br />+  When network loss happens suddenly, an ongoing Broadcast will now be stopped immediately instead of waiting for the connection to time out.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-1100-sdk-size-android"></a>
@@ -3114,7 +3114,7 @@ IVS customers can now revoke the viewer session associated with an auth token, t
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.9.1](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.9.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.9.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />**Known issue**: Viewers may lose audio after a broadcast session is interrupted by a phone call. The workaround is to restart the broadcast session after a phone-call interruption. |
+| [iOS Broadcast SDK 1.9.1](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.9.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.9.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.9.1/ios/)+  Resolved an issue on iOS 16.5 and above where video bitrate gradually degrades after either: (1) approximately 20 minutes if not using auto-bitrate with b-frames turned off, or (2) approximately 20 minutes from reaching `IVSVideoConfiguration.maxBitrate` and the network connection has remained stable, with b-frames turned off. <br />**Known issue**: Viewers may lose audio after a broadcast session is interrupted by a phone call. The workaround is to restart the broadcast session after a phone-call interruption. |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-191-sdk-size-ios"></a>
@@ -3131,7 +3131,7 @@ IVS customers can now revoke the viewer session associated with an auth token, t
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.7.5](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.5/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.5/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.5/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.5/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.7.5](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.5/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.5/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.5/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.5/ios/)+  Resolved an issue on iOS 16.5 and above where video bitrate gradually degrades after either: (1) approximately 20 minutes if not using auto-bitrate with b-frames turned off, or (2) approximately 20 minutes from reaching `IVSVideoConfiguration.maxBitrate` and the network connection has remained stable, with b-frames turned off.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-175-sdk-size-ios"></a>
@@ -3148,7 +3148,7 @@ IVS customers can now revoke the viewer session associated with an auth token, t
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [*Web Broadcast SDK 1.3.3*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [*Web Broadcast SDK 1.3.3*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed regressions in internal analytics used to support IVS multiple-hosts health.  |
 
 ## June 2, 2023
 <a name="jun02-23"></a>
@@ -3174,9 +3174,9 @@ The [Document History](doc-history.md) page lists related changes to the IVS Use
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.9.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.9.0](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />**Known issue**: Viewers may lose audio after a broadcast session is interrupted by a phone call. The workaround is to restart the broadcast session after a phone-call interruption. |
+| All |  +  Improved stability of stages by reducing occurrences of rare crashes. <br />+  Enhanced automated recovery from recurrent network disruptions.   |
+| [Android Broadcast SDK 1.9.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/android/)+  Fixed a bug where disconnecting wired headphones would result in an error when the user tried to switch to a non-default microphone on some devices. <br />+  Fixed a bug on some devices where an incorrect microphone is attached when switching microphones during a broadcasting session.  <br />+  Fixed a crash when calling `Presets` methods before creating a `BroadcastSession`, `Stage`, or `DeviceDiscovery` object.   |
+| [iOS Broadcast SDK 1.9.0](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.9.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.9.0/ios/)+  When you have joined a Stage and have not attached a microphone to the Stage, the new default behavior when entering the background is to stay in the Stage instead of leaving automatically. This enables the use case of listening to a Stage as a viewer-only participant while in the background. <br />+  Improved the handling of a stageâ€™s Bluetooth device connect/disconnect. <br />+  Fixed an issue where audio is much lower when using `setGain` to mute and unmute. <br />+  When attaching a camera to a `IVSBroadcastSession`, the camera now configures itself based on the `size` and `targetFramerate` on the `IVSVideoConfiguration`. <br />+  The iOS SDK now requires iOS 12.0 or higher. (iOS 11 is no longer supported.) <br />**Known issue**: Viewers may lose audio after a broadcast session is interrupted by a phone call. The workaround is to restart the broadcast session after a phone-call interruption. |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-190-sdk-size-android"></a>
@@ -3204,7 +3204,7 @@ The [Document History](doc-history.md) page lists related changes to the IVS Use
 | Platform | Downloads and Changes |
 | --- | --- |
 | [Web player 1.19.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.19.0/amazon-ivs-player.min.js](https://player.live-video.net/1.19.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.19.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.19.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.19.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.19.0/web/) |
-| [Android player 1.19.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.19.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.19.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.19.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.19.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.19.0/android/)+  Fixed an issue in auto quality mode, where the player stayed in the lowest quality after rebuffering, even when there was enough bandwidth to switch up.  |
 | [iOS Player 1.19.0](player-ios.md) | **Download:** [https://player.live-video.net/1.19.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.19.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.19.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.19.0/ios/) |
 
 #### Mobile SDK Size: Android
@@ -3232,7 +3232,7 @@ The [Document History](doc-history.md) page lists related changes to the IVS Use
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.8.1](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.8.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.8.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.8.1](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.8.1/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.8.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.8.1/ios/)+  Fixed a bitrate degradation issue on iOS 16.4. I, for both RTMP (without stages) and WebRTC (with stages). If you had implemented a workaround on your app (by enabling b frame), you can remove it after installing this update.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-181-sdk-size-ios"></a>
@@ -3249,7 +3249,7 @@ The [Document History](doc-history.md) page lists related changes to the IVS Use
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.7.4](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.4/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.4/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.4/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.4/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.7.4](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.4/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.4/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.4/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.4/ios/)+  Fixed a bitrate degradation issue on iOS 16.4. If you had implemented a workaround on your app (by enabling b frame), you can remove it after installing this update.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-174-sdk-size-ios"></a>
@@ -3278,7 +3278,7 @@ Now you can monitor the health of your IVS stages with multiple hosts. See:
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [*Web Broadcast SDK 1.3.2*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [*Web Broadcast SDK 1.3.2*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed an issue where broadcasting a screenshare sometimes resulted in a black screen for live channels. <br />+  Fixed an issue where broadcasting a stage participant sometimes resulted in a black screen for live channels. <br />+  Fixed an analytics issue where duplicate unpublish and publish events were reported. <br />+  Fixed an issue where `getStats` was not always updated for RemoteStageStream objects. <br />+  Fixed an `OverconstrainedError` when trying to broadcast stage participants. <br />+  Added an enhancement: subscribe-only participants are ignored when the stage strategy `shouldPublishParticipant` is set to `true`.  |
 
 ## April 27, 2023
 <a name="apr27-23"></a>
@@ -3296,8 +3296,8 @@ The maximum number of participants who can be connected to a stage at once was i
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.18.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.18.0/amazon-ivs-player.min.js](https://player.live-video.net/1.18.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.18.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.18.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.18.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.18.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.18.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.18.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.18.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.18.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.18.0/amazon-ivs-player.min.js](https://player.live-video.net/1.18.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.18.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.18.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.18.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.18.0/web/)+  Fixed a Safari issue where after refresh, in the console tab, "HTTP Response Error" – "Load failed" was displayed.  |
+| [Android player 1.18.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.18.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.18.0/android/)+  Fixed an issue with video playback when the playback rate is greater than 1x.  |
 | [iOS Player 1.18.0](player-ios.md) | **Download:** [https://player.live-video.net/1.18.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.18.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.18.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.18.0/ios/) |
 
 #### Mobile SDK Size: Android
@@ -3349,7 +3349,7 @@ In [Generate and Sign Playback Tokens](private-channels-generate-tokens.md), we 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [*Web Broadcast SDK 1.3.1*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [*Web Broadcast SDK 1.3.1*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  There were no customer-facing changes in this release.  |
 
 ## March 23, 2023
 <a name="mar23-23-2"></a>
@@ -3373,10 +3373,10 @@ In conjunction with adding support for multiple hosts on a stream, the Android a
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.8.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.8.0](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Web Broadcast SDK 1.3.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All |  +  Added stage support. See [Support for Multiple Hosts on a Stream (Stage Resource)](#multiple-hosts-support). <br />+  In the [Broadcast SDK overview](broadcast.md), added stage platform requirements.   |
+| [Android Broadcast SDK 1.8.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/android/)+  Depending on how your gradle file is configured (using classifier), you can download the SDK without or without stage support. The SDK without stage support is smaller. For details, see [Broadcast SDK: Android Guide](broadcast-android.md). <br />+  In [Broadcast SDK: Android Guide](broadcast-android.md), added "Add Multiple Hosts with the Stage SDK" and stage-related "Known Issues and Workarounds."   |
+| [iOS Broadcast SDK 1.8.0](broadcast-ios.md) | **Download without stages:** [https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast.xcframework.zip)<br />**Download with stages:** [https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.8.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.8.0/ios/)+  Depending on how your pod file is configured, you can download the SDK with or without stage support The SDK without stage support is smaller. For installation details, see [Broadcast SDK: iOS Guide](broadcast-ios.md). <br />+  In [Broadcast SDK: iOS Guide](broadcast-ios.md), added "Add Multiple Hosts with the Stage SDK" and stage-related "Known Issues and Workarounds." <br />+  Deprecated bitcode support from the SDK, as Apple has officially deprecated bitcode and no longer accepts it for App Store submissions. For more information, see the [Xcode 14 release notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes#Deprecations).  |
+| [Web Broadcast SDK 1.3.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  In [Broadcast SDK: Web Guide](broadcast-web.md), added "Add Multiple Hosts with the Stage SDK" and stage-related "Known Issues and Workarounds."  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-180-sdk-size-android"></a>
@@ -3403,7 +3403,7 @@ In conjunction with adding support for multiple hosts on a stream, the Android a
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.7.3](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.3/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.3/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.7.3](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.3/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.3/android/)+  Fixed an issue where custom image sources failed to work properly on devices with the MediaTek Dimensity 700 SoC.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-173-sdk-size-android"></a>
@@ -3423,9 +3423,9 @@ In conjunction with adding support for multiple hosts on a stream, the Android a
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.17.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.17.0/amazon-ivs-player.min.js](https://player.live-video.net/1.17.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.17.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.17.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.17.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.17.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.17.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.17.0/amazon-ivs-player.min.js](https://player.live-video.net/1.17.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.17.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.17.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.17.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.17.0/web/)+  Implemented support for the `getLiveLatency` method for mobile Safari.  |
 | [Android player 1.17.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.17.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.17.0/android/) |
-| [iOS Player 1.17.0](player-ios.md) | **Download:** [https://player.live-video.net/1.17.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.17.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.17.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.17.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.17.0](player-ios.md) | **Download:** [https://player.live-video.net/1.17.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.17.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.17.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.17.0/ios/)+  Deprecated bitcode support from the SDK, as Apple has officially deprecated bitcode and no longer accepts it for App Store submissions. For more information, see the [Xcode 14 release notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes#Deprecations).  |
 
 #### Mobile SDK Size: Android
 <a name="player-1170-sdk-size-android"></a>
@@ -3460,7 +3460,7 @@ The auto-record-to-S3 feature now supports [byte-range playlist](https://datatra
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Chat Client Messaging SDK 1.1.0](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-android.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Chat Client Messaging SDK 1.1.0](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-android.html) | **Reference documentation: **[https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-android/1.1.0/)+  To support Kotlin Coroutines, we added new IVS Chat Messaging APIs in the com.amazonaws.ivs.chat.messaging.coroutines package. Also see the new Kotlin Coroutines tutorial; part 1 (of 2) is [Chat Rooms](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-kotlin-tutorial-chat-rooms.html).  |
 
 #### Chat Client Messaging SDK Size: Android
 <a name="chat-110-sdk-size-android"></a>
@@ -3477,9 +3477,9 @@ The auto-record-to-S3 feature now supports [byte-range playlist](https://datatra
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.16.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.16.0/amazon-ivs-player.min.js](https://player.live-video.net/1.16.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.16.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.16.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.16.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.16.0](player-ios.md) | **Download:** [https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.16.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.16.0/amazon-ivs-player.min.js](https://player.live-video.net/1.16.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.16.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.16.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/web/)+  Updated SDK documentation to note which methods are not supported on iOS mobile browsers.  |
+| [Android player 1.16.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/android/)+  Added the `setOrigin` method to enable inclusion of an `Origin` request header with playback requests. Also see in [Token Schema](https://docs.aws.amazon.com//ivs/latest/userguide/private-channels-generate-tokens.html#private-channels-tokens-schema) for the new `strict-origin-enforcement` field.  |
+| [iOS Player 1.16.0](player-ios.md) | **Download:** [https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.16.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.16.0/ios/)+  Added the `setOrigin` method to enable inclusion of an `Origin` request header with playback requests. Also see in [Token Schema](https://docs.aws.amazon.com//ivs/latest/userguide/private-channels-generate-tokens.html#private-channels-tokens-schema) for the new `strict-origin-enforcement` field.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1160-sdk-size-android"></a>
@@ -3514,7 +3514,7 @@ When [Auto-Record to Amazon S3](record-to-s3.md) is enabled, HLS manifest files 
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.7.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.2/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.7.2](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.2/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.2/android/)+  Fixed a bug where the `Device.Descriptior` returned by a non-Camera device subclassing `SurfaceSource` would provide a unique `deviceId` and `urn` on each call, making those properties unreliable for identifying devices. <br />+  Fixed a bug where the `preferredAudioInput` property on a `BroadcastConfiguration.Mixer.Slot` was null when queried by `Mixer.getSlots()`, if the associated slot had a `preferredAudioInput` value of `Device.Descriptor.DeviceType.MICROPHONE` when it was added.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-172-sdk-size-android"></a>
@@ -3551,7 +3551,7 @@ This is the first release of new functionality. You can now create logging confi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-|  [JavaScript Chat Client Messaging SDK 1.0.2](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-js.html)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+|  [JavaScript Chat Client Messaging SDK 1.0.2](https://docs.aws.amazon.com//ivs/latest/ChatUserGuide/chat-sdk-js.html)  | **Reference documentation:** [https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/](https://aws.github.io/amazon-ivs-chat-messaging-sdk-js/1.0.2/)+  Fixed an issue that affected Firefox: clients erroneously received a socket error when they were disconnected from a chat room using the DisconnectUser endpoint.  |
 
 ## November 1, 2022
 <a name="nov01-22"></a>
@@ -3561,10 +3561,10 @@ This is the first release of new functionality. You can now create logging confi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
+| All |  +  Improved player stability by reducing occurrences of rare crashes.   |
 | [Web player 1.14.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.14.0/amazon-ivs-player.min.js](https://player.live-video.net/1.14.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.14.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.14.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.14.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.14.0/web/) |
-| [Android player 1.14.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.14.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.14.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.14.0](player-ios.md) | **Download:** [https://player.live-video.net/1.14.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.14.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.14.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.14.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.14.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.14.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.14.0/android/)+  Added the `getErrorCode()` method to the `ErrorType` class.  |
+| [iOS Player 1.14.0](player-ios.md) | **Download:** [https://player.live-video.net/1.14.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.14.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.14.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.14.0/ios/)+  Made public the IVS Player `setQuality:adaptive:` method.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1140-sdk-size-android"></a>
@@ -3601,7 +3601,7 @@ This is the first release of new functionality. You can now create logging confi
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.7.1](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.1/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.7.1](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.1/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.1/ios/)+  Fixed a linker error when directly linking against a few classes. <br />+  Removed `init` and `new` functions on classes that should never be instantiated by the host application. <br />+  Slots using the camera provided by the SDK and configured to a 9:16 portrait aspect ratio now correctly use the matching 9:16 camera ratio. (Previously they used a 3:4 camera ratio.) Slots using the FIT aspect mode now use the entire space. (Previously they were letterboxed.)  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-171-sdk-size-ios"></a>
@@ -3620,9 +3620,9 @@ Note: There was no 1.6.0 release.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
+| All |  +  Improved stability by reducing occurrences of rare crashes. <br />+  Added an `AutomaticBitrateProfile` enum on VideoConfiguration. This controls the rate at which the ABR algorithm adjusts the video bitrate. <br />+  Added the `onTransmissionStatsChanged` method. It contains more detailed transmission statistics than `onBroadcastQualityChanged` and `onNetworkHealthChanged`. We deprecated the latter two methods and we recommend you use `onTransmissionStatsChanged` instead.   |
 | [Android Broadcast SDK 1.7.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.0/android/) |
-| [iOS Broadcast SDK 1.7.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.7.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.7.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.7.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.7.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.7.0/ios/)+  Added `IVSBroadcastSessionAudioSessionStrategy.PlayAndRecordDefaultToSpeaker`, which allows developers to specify whether devices with handsets (e.g., iPhones) prefer the speaker over the headset.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-170-sdk-size-android"></a>
@@ -3649,9 +3649,9 @@ Note: There was no 1.6.0 release.
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.13.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.13.0/amazon-ivs-player.min.js](https://player.live-video.net/1.13.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.13.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.13.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.13.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.13.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />**Known issue: **The Sawmill Enabled log may appear when you open the console. This internal log is meant to be hidden, as it does not affect customers. If you see it, ignore it.  |
-| [Android player 1.13.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.13.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.13.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.13.0](player-ios.md) | **Download:** [https://player.live-video.net/1.13.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.13.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.13.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.13.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.13.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.13.0/amazon-ivs-player.min.js](https://player.live-video.net/1.13.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.13.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.13.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.13.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.13.0/web/)+  Added support for the VideoJS `seeking()` function. <br />+  Removed unused types (CaptureEventTypes) which caused development issues. <br />+  Fixed intermittent MediaSource errors on network recovery.  <br />**Known issue: **The Sawmill Enabled log may appear when you open the console. This internal log is meant to be hidden, as it does not affect customers. If you see it, ignore it.  |
+| [Android player 1.13.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.13.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.13.0/android/)+  Added additional guards to prevent playback crashes related to race conditions. <br />+  Made stability improvements to ABR bandwidth estimation.  |
+| [iOS Player 1.13.0](player-ios.md) | **Download:** [https://player.live-video.net/1.13.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.13.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.13.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.13.0/ios/)+  Fixed a bug where audio-only playback could stop while playing in the background. <br />+  Added additional guards to prevent playback crashes related to race conditions. <br />+  Made stability improvements to ABR bandwidth estimation. <br />+  Clarified in the SDK Reference that `setAutoMaxQuality` filters qualities based on bitrate.  <br />+  Changed the `setQuality:` method of the `IVSPlayer` class so it ignores invalid values.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1130-sdk-size-android"></a>
@@ -3686,7 +3686,7 @@ Today we began rolling out the changes documented in [Vertical Video Improvement
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.5.2](broadcast-ios.md) |  **Download:** [ https://broadcast.live-video.net/1.5.2/AmazonIVSBroadcast.xcframework.zip ](https://broadcast.live-video.net/1.5.2/AmazonIVSBroadcast.xcframework.zip) <br /> **Reference documentation:** [ https://aws.github.io/amazon-ivs-broadcast-docs/1.5.2/ios/ ](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.2/ios/) [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.5.2](broadcast-ios.md) |  **Download:** [ https://broadcast.live-video.net/1.5.2/AmazonIVSBroadcast.xcframework.zip ](https://broadcast.live-video.net/1.5.2/AmazonIVSBroadcast.xcframework.zip) <br /> **Reference documentation:** [ https://aws.github.io/amazon-ivs-broadcast-docs/1.5.2/ios/ ](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.2/ios/) +  Fixed a rare crash when the network connection is lost very soon after a broadcast is stopped but before the broadcast shutdown has completed. <br />+  Fixed a memory-growth issue when a retry loop repeatedly tries to restart a broadcast after a fatal error.  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-152-sdk-size-ios"></a>
@@ -3731,7 +3731,7 @@ Today we began rolling out the changes documented in [Vertical Video Improvement
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [*Web Broadcast SDK*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [*Web Broadcast SDK*](broadcast-web.md)  | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed bundle type definitions when the `npm` pack is run. <br />+   Added a preset configuration to support 1080 BASIC channels.   |
 
 ## August 30, 2022
 <a name="aug30-22"></a>
@@ -3753,7 +3753,7 @@ This is the first release of new functionality. If your stream is configured for
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.12.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.12.0/amazon-ivs-player.min.js](https://player.live-video.net/1.12.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.12.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.12.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.12.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.12.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.12.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.12.0/amazon-ivs-player.min.js](https://player.live-video.net/1.12.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.12.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.12.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.12.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.12.0/web/)+  Added additional guards to prevent playback crashes related to race conditions.  |
 
 ## July 28, 2022
 <a name="jul28-22"></a>
@@ -3763,7 +3763,7 @@ This is the first release of new functionality. If your stream is configured for
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Broadcast SDK 1.5.1](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.5.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.5.1/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.5.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Broadcast SDK 1.5.1](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.5.1/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.5.1/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.5.1/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.1/ios/)+  Fixed compatibility issues with iOS 16 that prevented audio encoding, causing all broadcasts to fail. *This issue impacts all previous versions of the IVS Broadcast SDK for iOS. Version 1.5.1 is required to broadcast on iOS 16.* <br />+  Fixed a memory leak when providing a delegate directly to the `IVSBroadcastSession`'s initializer. (A workaround was to set the delegate property afterwards.)  |
 
 #### Broadcast SDK Size: iOS
 <a name="broadcast-151-sdk-size-ios"></a>
@@ -3780,7 +3780,7 @@ This is the first release of new functionality. If your stream is configured for
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web Broadcast SDK](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web Broadcast SDK](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  This is the initial release of the Amazon IVS Web Broadcast SDK.  |
 
 ## July 14, 2022
 <a name="jul14-22"></a>
@@ -3790,7 +3790,7 @@ This is the first release of new functionality. If your stream is configured for
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Player 1.8.3](player-ios.md) | **Download:** [https://player.live-video.net/1.8.3/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.8.3/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.3/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.3/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.8.3](player-ios.md) | **Download:** [https://player.live-video.net/1.8.3/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.8.3/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.3/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.3/ios/)+  Fixed an issue where the Player could not play recorded content served via a URL that includes a relative path. <br />+  Fixed a memory-growth issue that could occur when the main thread is blocked.  |
 
 #### Mobile SDK Size: iOS
 <a name="player-183-sdk-size-ios"></a>
@@ -3807,7 +3807,7 @@ This is the first release of new functionality. If your stream is configured for
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.11.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.11.0/amazon-ivs-player.min.js](https://player.live-video.net/1.11.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.11.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.11.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.11.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.11.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.11.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.11.0/amazon-ivs-player.min.js](https://player.live-video.net/1.11.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.11.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.11.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.11.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.11.0/web/)+  Made stability improvements to ABR bandwidth estimation. <br />+  Fixed an issue when playing recorded content on an iOS mobile browser using the Video.js integration: the replay button now works. The prior workaround (hiding the replay button when initializing Video.js) is no longer required.  |
 
 ## June 22, 2022
 <a name="jun22-22"></a>
@@ -3817,9 +3817,9 @@ This is the first release of new functionality. If your stream is configured for
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.5.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.5.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.5.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.5.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All |  +  Improved stability by reducing occurrences of rare crashes. <br />+  Improved stability for high-bitrate streams. <br />+  Broadcasts experiencing extremely high latency will be ended with error code 20401 and this message: "The broadcast has ended because the network got too far behind. Check that you have a stable connection or reduce the broadcast bitrate." The threshold latency value for this is likely to change over time; currently it is 45 seconds.   |
+| [Android Broadcast SDK 1.5.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/android/)+  Added a new configuration option to `Video` that enables transparency for the broadcast session: `enableTransparency(boolean)` and `isTransparencyEnabled()`. By default, transparency is disabled. Note that you must set `Video.enableTransparency` to `TRUE` for individual slotâ€™s `fillColor` or `transparency` values to work as expected. Enable transparency only when required, since it is more computationally intensive.  |
+| [iOS Broadcast SDK 1.5.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.5.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.5.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.5.0/ios/)+  When using `IVSReplayKitBroadcastSession` for screen share, we recommend that you call `IVSReplayKitBroadcastSession::broadcastFinished` in `RPBroadcastSampleHandler::broadcastFinished` to ensure proper shutdown of the stream. Failure to do this might result in the stream staying live until it times out. <br />+  `IVSImagePreviewView` is no longer backed by `MTKView`, but instead a normal `UIView` that has a `AVSampleBufferDisplayLayer` based `CALayer`.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-150-sdk-size-android"></a>
@@ -3872,8 +3872,8 @@ We are rolling out this improvement over time:
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Web player 1.10.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.10.0/amazon-ivs-player.min.js](https://player.live-video.net/1.10.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.10.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.10.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.10.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.10.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.10.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.10.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.10.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Web player 1.10.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.10.0/amazon-ivs-player.min.js](https://player.live-video.net/1.10.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.10.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.10.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.10.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.10.0/web/)+  Fixed console errors related to pausing and playing with the Video.js plugin. <br />+  In the reference documentation, removed from the TypeScript definitions file two types which should not have been exposed, `AutoplayOptions` and `PlayerEventType.STATE_CHANGED`. <br />+  Fixed an issue where not all qualities were considered when using `setAutoMaxQuality` and `setAutoMaxVideoSize`. <br />+  Exposed the `setAutoMaxVideoSize` method, with corresponding documentation. <br />+  Clarified in the SDK Reference that `setAutoMaxQuality` filters qualities based on bitrate. <br />+  Corrected the end-of-stream behavior for VODs for web platforms.  |
+| [Android player 1.10.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.10.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.10.0/android/)+  Fixed an issue where not all qualities were considered when using `setAutoMaxQuality` and `setAutoMaxVideoSize`. <br />+  Added `getVolume()` to the `Player` class. <br />+  Clarified in the SDK Reference that `setAutoMaxQuality` filters qualities based on bitrate. <br />+  Corrected the end-of-stream behavior for VODs for web platforms.  |
 
 #### Mobile SDK Size: Android
 <a name="player-1100-sdk-size-android"></a>
@@ -3928,7 +3928,7 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Player 1.8.2](player-ios.md) | **Download:** [https://player.live-video.net/1.8.2/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.8.2/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.2/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.2/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.8.2](player-ios.md) | **Download:** [https://player.live-video.net/1.8.2/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.8.2/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.2/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.2/ios/)+  Added support for Picture in Picture on devices running iOS 15 and later. You can instantiate the [AVPictureInPictureController](https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller) class directly with an instance of `IVSPlayerLayer`. Refer to the [public sample app](https://github.com/aws-samples/amazon-ivs-player-ios-sample) for an example implementation. <br />+  Fixed a deadlock issue that can occur while manipulating the` IVSPlayer` state from inside the completion handler of the `-seekTo:completionHandler:` method. <br />+  Fixed an issue introduced by the 1.8.1 release in an attempt to resolve a memory growth issue that can occur when the main thread is blocked.  |
 
 #### Mobile SDK Size: iOS
 <a name="player-182-sdk-size-ios"></a>
@@ -3945,9 +3945,9 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.4.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.4.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.4.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.4.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All |  +  Improved stability by reducing occurrences of rare crashes. <br />+  Added a new page on [Broadcast SDK: Custom Image Sources](broadcast-custom-image-sources.md).   |
+| [Android Broadcast SDK 1.4.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/android/)+  Fixed a bug in `createServiceNotificationBuilder` to enable targeting Android 12. <br />+  Fix issue on devices with a buggy main AVC profile by falling back to the baseline AVC profile. <br />+  Adds some NonNull annotations to several public API method signatures to prevent unexpected exceptions from crashing the application.  |
+| [iOS Broadcast SDK 1.4.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.4.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.4.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.4.0/ios/)+  Improved performance on iOS throughout the entire SDK by better utilizing GCD and Darwin-optimized locks, and improving buffer reuse. <br />+  In BroadcastConfiguration, changed the Keyframe interval maximum value from 10 to 5 to be consistent with Android. <br />+  Added a new method to control the audio encoder quality. On `IVSAudioConfiguration`, use the `setQuality` method. Reducing the encoder quality can have a large impact on CPU usage.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-140-sdk-size-android"></a>
@@ -3974,7 +3974,7 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [iOS Player 1.8.1](player-ios.md) | **Download:** <deprecated> <br />**Reference documentation:** [https://aws.github.io/amazon-ivs-player-docs/1.8.1/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.1/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.8.1](player-ios.md) | **Download:** <deprecated> <br />**Reference documentation:** [https://aws.github.io/amazon-ivs-player-docs/1.8.1/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.1/ios/)+  Added support for Picture in Picture on devices running iOS 15 and later. You can instantiate the [AVPictureInPictureController](https://developer.apple.com/documentation/avkit/avpictureinpicturecontroller) class directly with an instance of `IVSPlayerLayer`. Refer to the [public sample app](https://github.com/aws-samples/amazon-ivs-player-ios-sample) for an example implementation. <br />+  Fixed a memory-growth issue that can occur when the main thread is blocked.  <br />+  Fixed a deadlock issue that can occur while manipulating the `IVSPlayer` state from inside the completion handler of the `-seekTo:completionHandler:` method.  |
 
 #### Mobile SDK Size: iOS
 <a name="player-181-sdk-size-ios"></a>
@@ -3991,9 +3991,9 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.3.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />Incorporates changes from the Android 1.2.1 release: new methods and a bug fix to properly support surface size and rotation changes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.3.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.3.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.3.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All |  +  Improved stability by reducing occurrences of rare crashes. <br />+  Added support for 32-bit signed integer and 64-bit floating point PCM audio.   |
+| [Android Broadcast SDK 1.3.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/android/)+  Fixed an intermittent issue where disconnecting a Bluetooth headset while streaming would lead to a crash. <br />+  The `BroadcastSession.onBroadcastQuality` method now reports low initial broadcast-quality values. <br />+  Added support for PCM buffers that include multiple `AudioBufferLists`. This is common for USB microphones. <br />Incorporates changes from the Android 1.2.1 release: new methods and a bug fix to properly support surface size and rotation changes:+  Fixed a bug where `SurfaceSource.setSize(...)` did not set a new size for the SurfaceSource. <br />+  Added the `Device.setRotation(float rotation)` method to set the rotation on a device in radians. <br />+  Added the `ImageDevice.rotateOnConfigurationChanges(boolean enable)` method to enable/disable automatic rotation of the ImageDevice when the physical handset is rotated. <br />+  Added the `ImageDevice.willRotateOnConfigurationChanges()` method to return whether the ImageDevice is configured to automatically rotate when the physical handset rotates.  |
+| [iOS Broadcast SDK 1.3.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.3.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.3.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.3.0/ios/)+  Fixed some race conditions when using the `createAppBackgroundImageSource` method, which could have prevented the stream from resuming after the app returns to the foreground. <br />+  Added support for the arm64 simulator.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-130-sdk-size-android"></a>
@@ -4020,9 +4020,9 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Web player 1.8.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.8.0/amazon-ivs-player.min.js](https://player.live-video.net/1.8.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.8.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.8.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.8.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.8.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.8.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Reduced occurrences of freezing during quality switches when playing recorded content.   |
+| [Web player 1.8.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.8.0/amazon-ivs-player.min.js](https://player.live-video.net/1.8.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.8.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.8.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.8.0/web/)+  Fixed an edge case where playback of recorded content could stall in some browsers. <br />+  Fixed an issue where timed metadata events were not triggered after seeking forward and then backward on recorded video. <br />+  Removed unnecessary, confusing warnings for the JW Player integration on `remove()`. <br />+  Enabled stricter type checking for cue types to support correct cue-type filtering.  |
+| [Android player 1.8.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.8.0/android/)+  Removed the `ViewUtil` class, which is internal and was deprecated. Use `PlayerView` instead.  |
 | [iOS Player 1.8.0](player-ios.md) | **Download:** [https://player.live-video.net/1.8.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.8.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.8.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.8.0/ios/) |
 
 #### Mobile SDK Size: Android
@@ -4050,7 +4050,7 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android Broadcast SDK 1.2.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.2.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.2.1/android/)<br />This release has new methods and a bug fix to properly support surface size and rotation changes. This is needed for use cases involving custom video input.[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android Broadcast SDK 1.2.1](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.2.1/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.2.1/android/)<br />This release has new methods and a bug fix to properly support surface size and rotation changes. This is needed for use cases involving custom video input.+  Fixed a bug where `SurfaceSource.setSize(...)` did not set a new size for the SurfaceSource. <br />+  Added the `Device.setRotation(float rotation)` method to set the rotation on a device in radians. <br />+  Added the `ImageDevice.rotateOnConfigurationChanges(boolean enable)` method to enable/disable automatic rotation of the ImageDevice when the physical handset is rotated. <br />+  Added the `ImageDevice.willRotateOnConfigurationChanges() `method to return whether the ImageDevice is configured to automatically rotate when the physical handset rotates.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-121-sdk-size-android"></a>
@@ -4070,10 +4070,10 @@ As always, documentation changes are described in the Amazon IVS [Document Histo
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Web player 1.7.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.7.0/amazon-ivs-player.min.js](https://player.live-video.net/1.7.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.7.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.7.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.7.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.7.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />**Known issue: **When a viewer skips forward in recorded content, then skips backward, timed metadata within iOS browsers is not re-fired until after the skip-forward time. For example, if a viewer begins watching recorded content, skips forward to 60 seconds, then skips backward to 30 seconds, no timed metadata is triggered between 30 and 60 seconds. We expect to fix this issue in an upcoming release. |
-| [Android player 1.7.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.7.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.7.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.7.0](player-ios.md) | **Download:** [https://player.live-video.net/1.7.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.7.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.7.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.7.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Fixed stuttering when playing a stream from a source media playlist.   |
+| [Web player 1.7.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.7.0/amazon-ivs-player.min.js](https://player.live-video.net/1.7.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.7.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.7.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.7.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.7.0/web/)+  Fixed an issue where timed metadata events were not triggered after replaying an Amazon IVS recorded video. <br />+  Fixed an issue where the ErrorNotAvailable error was not emitted when a streamâ€™s playback URL is unavailable on iOS mobile web browsers. <br />+  Fixed a console warning when calling `dispose()` using the Video.js wrapper. <br />+  Fixed several null reference errors caused by attempting to access the player instance after it is destroyed. <br />+  Updated `setQuality` documentation to more clearly specify that one should listen to the `QUALITY_CHANGED` to be notified of success. <br />+  Updated `setInitialBufferDuration()` documentation to specify that it does not function on iOS mobile browsers. <br />**Known issue: **When a viewer skips forward in recorded content, then skips backward, timed metadata within iOS browsers is not re-fired until after the skip-forward time. For example, if a viewer begins watching recorded content, skips forward to 60 seconds, then skips backward to 30 seconds, no timed metadata is triggered between 30 and 60 seconds. We expect to fix this issue in an upcoming release. |
+| [Android player 1.7.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.7.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.7.0/android/)+  Deprecated the `ViewUtil `class, which is internal; use `PlayerView` instead. This class will be removed completely in the next Amazon IVS Player release (1.8.0, tentatively planned for 2022Q1). <br />+  Added `PlayerView.setResizeMode(mode)` to control how the video is displayed in the view, allowing the video to be optionally zoomed in or to fill the view entirely ignoring the video aspect ratio.  |
+| [iOS Player 1.7.0](player-ios.md) | **Download:** [https://player.live-video.net/1.7.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.7.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.7.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.7.0/ios/)+  The iOS SDK now requires iOS 11.0 or higher. <br />+  The SDK no longer contains an `arm64e` slice. It will be re-enabled once Apple makes this a standard architecture. <br />+  Fixed rare crashes that could occur during app termination and media-service reset event.  |
 
 #### Mobile SDK Size: Android
 <a name="player-170-sdk-size-android"></a>
@@ -4116,9 +4116,9 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.2.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.2.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.2.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.2.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.2.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.2.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.2 .0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.2.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Improved stability by reducing occurrences of rare crashes. <br />+  Added a new method, `onNetworkHealthChanged` (Android) and `broadcastSession:networkHealthChanged` (iOS). This provides updates when the instantaneous quality of the network changes. It can be used to provide feedback about when the broadcast might have temporary disruptions. <br />+  Added methods to get/set `BroadcastConfiguration.mixer.canvasAspectMode`. This is used as the default aspect mode for slots when the slot's aspect mode is not set explicitly. <br />+  Changed the `Mixer` (Android) and `IVSBroadcastMixer` (iOS) APIs:   Added `getSlots()` which returns all added slots.   Added `unbind`, which unbinds a device from a mixer slot.   Updated `bind`, `unbind`, and `transition` to return a bool indicating success or failure.     |
+| [Android Broadcast SDK 1.2.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.2.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.2.0/android/)+  Fixed a bug where, even if transparency was enabled, a slotâ€™s video or image was not blended with other slots beneath it (using zIndex values).  |
+| [iOS Broadcast SDK 1.2.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.2.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.2.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.2 .0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.2.0/ios/)+  Improved the connection stability of Bluetooth and wired headsets. <br />+  Added support to `IVSCustomImageSource` for the following pixel formats:   kCVPixelFormatType\_Lossless\_420YpCbCr8BiPlanarFullRange   kCVPixelFormatType\_Lossy\_420YpCbCr8BiPlanarFullRange   kCVPixelFormatType\_Lossless\_420YpCbCr8BiPlanarVideoRange   kCVPixelFormatType\_Lossy\_420YpCbCr8BiPlanarVideoRange   kCVPixelFormatType\_Lossless\_32BGRA   kCVPixelFormatType\_Lossy\_32BGRA   <br />+  Fixed two race conditions when using the `createAppBackgroundImageSource` method, which could have prevented the stream from resuming after the app returns to the foreground.  |
 
 #### Broadcast SDK Size: Android
 <a name="broadcast-120-sdk-size-android"></a>
@@ -4145,10 +4145,10 @@ This release allows you to enable/disable the recording of thumbnails for a live
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Web player 1.6.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.6.1/amazon-ivs-player.min.js](https://player.live-video.net/1.6.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.6.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.6.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.6.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.6.1/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Added a new player function, `setInitialBufferDuration()`, which allows customers to set the initial buffer duration. This duration determines when playback can start. The allowable range is 0.1 to 5 seconds. This method has no effect on iOS browser platforms. <br />+  Fixed a bug where a loaded stream could play without the `play` method being called, during a network reconnect. <br />+  Fixed an issue where stale closed caption data was not cleared. <br />+  Improved player stability by reducing occurrences of rare crashes.   |
+| [Web player 1.6.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.6.1/amazon-ivs-player.min.js](https://player.live-video.net/1.6.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.6.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.6.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.6.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.6.1/web/)+  Added a note to `setQuality` documentation about how the video element's controls attribute impacts invocation. <br />+  Improved how the player recovers from video decode and playlist network errors. <br />+  Changed the default log level for the player from *warning* to *error*, to match other platforms.  |
 | [Android player 1.6.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.6.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.6.0/android/) |
-| [iOS Player 1.6.0](player-ios.md) | **Download:** [https://player.live-video.net/1.6.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.6.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.6.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.6.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.6.0](player-ios.md) | **Download:** [https://player.live-video.net/1.6.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.6.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.6.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.6.0/ios/)+  iOS 10 support will be deprecated starting with the next IVS Player release (1.7.0, tentatively planned for 2022Q1).  |
 
 #### Mobile SDK Size: Android
 <a name="player-16-sdk-size-android"></a>
@@ -4196,9 +4196,9 @@ Amazon IVS Stream Health lets you monitor the health of your live streams in nea
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Android Broadcast SDK 1.1.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/android/reference/packages.html](https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/android/reference/packages.html)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Broadcast SDK 1.1.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.1.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.1.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Fixed a bug that could leave a mixer-slot configuration in an unexpected state when the slot configuration provided to the transition method had a name that did not match the target-slot name parameter. <br />+  Improved stability by reducing occurrences of rare crashes. <br />+  Rebalanced preset bitrates to better reflect the expected user experience. These are documented in the Broadcast SDK reference documentation.   Standard (portrait/landscape) – Initial: 2.1 Mbps. Maximum: 6 Mbps.   Basic (portrait/landscape) – Initial: 1.2 Mbps. Maximum: 1.5 Mbps.   Gaming (portrait/landscape) (Android only) – Initial: 2.1 Mbps. Maximum 6 Mbps.   <br />+  Added support for mono audio. A broadcast session can now be configured with 1 or 2 audio channels (mono or stereo, respectively). Also, custom audio sources can be configured with 1 or 2 audio channels. <br />+  Changed the Mixer canvas and slot origins to be top-left. This should be more natural for developers and provide more consistent usability. If you are using custom Mixer slots, you must update your code; see [Broadcast SDK Mixer: Migrating from 1.0.0 to 1.1.0](#broadcast-110-migration) below. <br />+  Added a new documentation page, [Broadcast SDK: Mixed Devices](broadcast-mixed-devices.md).   |
+| [Android Broadcast SDK 1.1.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/android/reference/packages.html](https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/android/reference/packages.html)+  Fixed a bug where device-orientation changes could crash the SDK. <br />+  Fixed a bug where` getPreviewView()` worked only the first time it was called. Now `getPreviewView()` returns a new `ImagePreviewView` every time it is called, so you can add multiple `ImagePreviewViews` of the same device or session to your view hierarchy at the same time. Note that using many `ImagePreviewViews` simultaneously can degrade performance. <br />+  Added `stopSystemCapture()` to stop the system-capture service without releasing the entire broadcast session. <br />+  Added an `attachDevice` override, to ignore mixer-slot preferred devices when attaching a device.  |
+| [iOS Broadcast SDK 1.1.0](broadcast-ios.md) | **Download:** [https://broadcast.live-video.net/1.1.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.1.0/AmazonIVSBroadcast.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.1.0/ios/)+  Setting size on an `IVSMixerSlotConfiguration` object now sets `matchCanvasSize` to `false`. Similarly, setting aspect on an `IVSMixerSlotConfiguration` object sets `matchCanvasAspectMode` to `false`. <br />+  Added support for background audio with pre-encoded video. A new method, `createAppBackgroundImageSourceOnComplete`, changes the default behavior when backgrounding an app. Previously, the entire stream stopped because the SDK no longer had access to the camera or the GPU (which means no video input compositing or video encoding could be done).  <br />The new method returns a subclass of `IVSCustomVideoSource`. Normally, `IVSCustomVideoSource` allows you to submit image samples to be broadcast. The subclass allows you to submit image samples to be pre-encoded for broadcast later, when your app is in the background.  |
 
 #### Broadcast SDK Mixer: Migrating from 1.0.0 to 1.1.0
 <a name="broadcast-110-migration"></a>
@@ -4238,7 +4238,7 @@ To keep a slot in the same position as 1.0.0, subtract half its width from the X
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| [Android player 1.5.1](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.1/android/](https://aws.github.io/amazon-ivs-player-docs/1.5.1/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [Android player 1.5.1](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.1/android/](https://aws.github.io/amazon-ivs-player-docs/1.5.1/android/)+  Fixed `getVersion()`, which now returns the correct version number.  |
 
 #### Mobile SDK Size: Android
 <a name="player-15-sdk-size-android"></a>
@@ -4258,10 +4258,10 @@ To keep a slot in the same position as 1.0.0, subtract half its width from the X
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)  |
-| [Web player 1.5.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.5.0/amazon-ivs-player.min.js](https://player.live-video.net/1.5.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.5.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.5.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.5.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.5.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.5.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.5.0](player-ios.md) | **Download:** [https://player.live-video.net/1.5.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.5.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.5.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Fixed an issue where a loaded stream could `play` without the play method being called during a network reconnect. <br />+  Fixed an issue where the player stayed in the `PLAYING` state after a stream disconnect, instead of moving to the `ENDED` state. <br />+  Updated CEA-608 captions parsing to support more encoders. <br />+  Improved the player's ability to play pass-through content; i.e., content from `BASIC` channels and the highest quality from `STANDARD` channels.   |
+| [Web player 1.5.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.5.0/amazon-ivs-player.min.js](https://player.live-video.net/1.5.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.5.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.5.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.5.0/web/)+  Improved how the player recovers from video-decode and playlist-network errors. <br />+  Fixed a bug where live streams did not resume (or resumed after a delay) when native HTML5 controls are enabled. <br />+  Fixed an issue where the getBuffered() method returned undefined instead of the expected `{ start: 0, end: 0 }` when no content is loaded. <br />+  Added support for picture-in-picture mode in Video.js. <br />+  Changed the default log level for the player to error instead of warning.  |
+| [Android player 1.5.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.5.0/android/)+  Fixed zoom-in bug that happens on the Android SDK 30 emulator. <br />+  Improved the performance of `PlayerView` view layouts. <br />+  `getVersion()` returns `1.5.0-ivs.rc.2` instead of `1.5.0`.  |
+| [iOS Player 1.5.0](player-ios.md) | **Download:** [https://player.live-video.net/1.5.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.5.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.5.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.5.0/ios/)+  Added support for the iOS Simulator on Apple Silicon Macs. <br />+  Fixed an issue in which the memory heap size of the player continues to increase during playback until the player is deallocated. <br />+  Improved playback behavior when there is bad data in the video by ignoring it and continuing playback rather than stopping playback.  |
 
 #### Mobile SDK Size: Android
 <a name="player-15-sdk-size-android"></a>
@@ -4330,10 +4330,10 @@ We removed support for pagination in this endpoint; i.e., the `maxResults` reque
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Web player 1.4.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.4.0/amazon-ivs-player.min.js](https://player.live-video.net/1.4.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.4.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.4.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.4.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.4.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.4.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.4.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.4.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.4.0](player-ios.md) | **Download:** [https://player.live-video.net/1.4.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.4.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.4.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.4.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Fixed a rare issue in which VOD playback could stall if a seek happens right after a `DURATION_CHANGED` event or `READY` state update. <br />+  Fixed a memory leak when playing streams with ID3 metadata. <br />+  Fixed an edge case in which injected captions could be rendered incorrectly. <br />+  Improved the performance of the player's adaptive bitrate streaming algorithm. <br />+  Improved player stability by reducing occurrences of rare crashes. <br />+  Added a log warning message when the player is accessed from a different thread than it was created on. <br />+  Updated `getLiveLatency()` documentation to be more specific about how latency is calculated, from the server to the player.  |
+| [Web player 1.4.0](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.4.0/amazon-ivs-player.min.js](https://player.live-video.net/1.4.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.4.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.4.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.4.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.4.0/web/)+  Fixed an edge case in which the `TIMED_METADATA` event did not fire on iOS Safari. <br />+  Improved performance of the playerâ€™s adaptive bitrate streaming algorithm when playing low-latency streams on Firefox. <br />+  Fixed documentation for `getDuration()`, which always returns Infinity for live streams. <br />+  Fixed a bug in which autoplaying on desktop Safari sometimes failed. <br />+  Fixed an error in which "Cannot read property 'collectLogs' of undefined" is reported in the developer console. <br />+  Video.js: Added support for picture-in-picture mode. <br />+  Web: Added a new method, `setRequestCredentials`. This controls whether the player makes credentialed requests to cross-origin endpoints. The remote endpoint needs to respond with the appropriate CORS response headers (like `Access-Control-Allow-Origin`, matching the request's Origin) and `Access-Control-Allow-Credentials` must be `true`. <br />This setting persists throughout the player instanceâ€™s lifecycle. Therefore, all subsequent `player.load()` calls with URL endpoints should respond with appropriate CORS headers. <br />This method has no effect on iOS browser platforms. To allow credentialed cross-origin requests on iOS platforms, users must explicitly allow Cross-site Tracking and allow Cookies; these are in the settings for the device and the respective browser app.  |
+| [Android player 1.4.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.4.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.4.0/android/)+  Fixed an issue in which high-resolution portrait video was considered as not supported video, even though the device can support it. <br />+  Fixed an issue in which changing the playback rate failed on certain Android devices. <br />+  Updated background-video handling to not decode content if the output surface is not set. <br />+  Implemented additional checks to ignore SDK calls after the `player.release()` method is called. This improves player stability. <br />+  Reduced Android library file size through optimization.  |
+| [iOS Player 1.4.0](player-ios.md) | **Download:** [https://player.live-video.net/1.4.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.4.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.4.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.4.0/ios/)+  Fixed an issue in which the memory heap size of the player continues to increase during playback until the player is deallocated. <br />+  Fixed a potential deadlock when there is animation on top of video playback (e.g., a UI animation or GIF image). <br />+  Fixed a potential crash during media-services reset events. <br />+  Resolved a memory leak of `CMFormatDescriptionRef` that could occur during quality switches. <br />+  Added an error message that is logged if IVS-specific properties of the `IVSPlayerView` and `IVSPlayerLayer` classes are accessed on a thread other than the main thread. <br />+  Updated background-video handling to not decode content if the output surface is not set. <br />+  Improved documentation coverage in the IOS SDK Reference.  <br />+  Reduced iOS library file size through optimization.  |
 
 #### Mobile SDK Size: Android
 <a name="player-14-sdk-size-android"></a>
@@ -4375,7 +4375,7 @@ We removed support for pagination in this endpoint; i.e., the `maxResults` reque
 | --- | --- |
 | Android and iOS | Fixed an issue where high-resolution portrait video was considered as not supported, although the device could support it. |
 | [Android player 1.3.3](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.3/android/](https://aws.github.io/amazon-ivs-player-docs/1.3.3/android/) |
-| [iOS Player 1.3.3](player-ios.md) | **Download:** [https://player.live-video.net/1.3.3/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.3.3/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.3/ios/](https://aws.github.io/amazon-ivs-player-docs/1.3.3/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| [iOS Player 1.3.3](player-ios.md) | **Download:** [https://player.live-video.net/1.3.3/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.3.3/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.3/ios/](https://aws.github.io/amazon-ivs-player-docs/1.3.3/ios/)+  Fixed a potential deadlock when there is animation on top of video playback (e.g., a UI animation or GIF image). <br />+  Fixed a potential crash during media-services reset events.  |
 
 ## May 19, 2021
 <a name="may19-21"></a>
@@ -4395,10 +4395,10 @@ To improve player stability, additional checks were implemented to ignore API ca
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Web player 1.3.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.3.1/amazon-ivs-player.min.js](https://player.live-video.net/1.3.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.3.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.3.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.3.1/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />**Note:** The Web Player 1.3.0 NPM package exists but does not work. It is marked as deprecated on NPM. Use Web Player 1.3.1 or newer, as documented. |
-| [Android player 1.3.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.3.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [iOS Player 1.3.0](player-ios.md) | **Download:** [https://player.live-video.net/1.3.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.3.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.3.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Updated SDK documentation for using TextCue usage documentation. See the latest the Player SDK References on the [Amazon IVS documentation landing page](https://docs.aws.amazon.com/ivs/). <br />+  Fixed an issue with audio playback of malformed mono input streams. <br />+  Fixed a rare playback error that could occur when playing content outside of the live HLS window. <br />+  Improved the player's ability to play standard HLS live and recorded streams. <br />+  Improved the accuracy of `getLiveLatency`, notably ensuring it is reset to zero when loading a new stream. <br />+  Improved the ABR (adaptive bitrate streaming) algorithm to increase video quality more quickly when network connections improve. <br />+  Improved player stability by reducing occurrences of rare crashes.  |
+| [Web player 1.3.1](player-web.md) & [Video.js integration](player-videojs.md) & [JW player integration](player-jwplayer.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.3.1/amazon-ivs-player.min.js](https://player.live-video.net/1.3.1/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.3.1/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.3.1/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.1/web/](https://aws.github.io/amazon-ivs-player-docs/1.3.1/web/)+  Fixed an issue where seek calls executed immediately after load were sometimes ignored, causing the player to begin at the wrong position. <br />+  Fixed several issues with seeking within recorded content (also known as VOD). <br />+  Fixed an issue where playback could fail in suboptimal network conditions. <br />+  Added support for IVS Timed Metadata on iOS mobile web browsers. <br />+  Fixed a bug where autoplaying in desktop Safari sometimes failed. <br />+  The Web SDK `getVersion` function no longer appends a hash to the player version. <br />+  Fixed an issue where seeking to the exact start of a buffered range may result in another seek forward. <br />+  Enabled low-latency ABR (adaptive bitrate streaming) in macOS Safari 14 and later. <br />+  Fixed an issue with loading the player in a server context, by removing an unsafe import side effect. <br />+  Changed the amazon-ivs-player NPM package so it exports the LogLevel enum, which is used by `setLogLevel`. <br />**Note:** The Web Player 1.3.0 NPM package exists but does not work. It is marked as deprecated on NPM. Use Web Player 1.3.1 or newer, as documented. |
+| [Android player 1.3.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.3.0/android/)+  Fixed an issue where the player SDK crashed if the app targeted Android 11 (API level 30) and the user was running Android 11 on a cellular network. <br />+  Fixed a network recovery issue. Playback is now automatically paused when the network connection is lost, and it is resumed when the connection is restored. Use the `onNetworkUnavailable` callback in `Player.Listener` to observe network state changes. <br />+  Fixed an issue where player controls could not be hidden with `setControlsEnabled(false)` while playing VODs. <br />+  Fixed an issue where the SDK could crash if the client app uses an old (pre-4.0) version of OkHttp. <br />+  The Amazon IVS Android player library moved from a JCenter repository to Maven Central. <br />+  Removed `BuildConfig` version properties from the library.  |
+| [iOS Player 1.3.0](player-ios.md) | **Download:** [https://player.live-video.net/1.3.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.3.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.3.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.3.0/ios/)+  Fixed an issue where if there was an audio sample-rate change within a single HLS media segment, the iOS SDK could not handle it properly. This could result in an unexpected memory increase and playback failure or a crash, due to bad media. <br />+  Fixed a network-recovery issue. Playback is now automatically paused when the network connection is lost, and it is resumed when the connection is restored. Use the `playerNetworkDidBecomeUnavailable` delegate method to observe network state changes. <br />+  Fixed an issue which caused an iOS memory increase that could happen over time. <br />+  Added graceful handling of audio hardware problems. Playback is now automatically paused in the event of a media-services reset notification (`AVAudioSessionMediaServicesWereResetNotification`). Note that a playback error may still occur if media is playing when the reset occurs.  <br />+  Added audio-session interruption handling. Playback is now automatically paused when an audio-session interruption begins. When the interruption ends, playback automatically resumes if the player was previously playing and the interruption options indicate that the app should resume playback.  |
 
 ## April 26, 2021
 <a name="apr26-21"></a>
@@ -4463,9 +4463,9 @@ This release includes an Android Player patch which fixes an issue: in prior And
 | Platform | Downloads and Changes |
 | --- | --- |
 | All | Improved detection of Amazon IVS streams, so metrics are more accurate. |
-| [Web player 1.2.0](player-web.md) & [Video.js integration](player-videojs.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.2.0/amazon-ivs-player.min.js](https://player.live-video.net/1.2.0/amazon-ivs-player.min.js)<br /> **Video.js tech asset: **[https://player.live-video.net/1.2.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.2.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.2.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.2.0/web/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| [Android player 1.2.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.2.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.2.0/android/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)<br />**Known Issue:** The player SDK will crash if the app targets Android 11 (API level 30) and the user is running Android 11 on a cellular network. This will be fixed in the next release. In the meantime, we recommend targeting a previous Android API level (29 or lower). |
-| [iOS Player 1.2.0](player-ios.md) | **Download:** [https://player.live-video.net/1.2.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.2.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.2.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.2.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html)Known Issue: If there is an audio sample-rate change within a single HLS media segment, the iOS SDK cannot handle it properly. This can result in an unexpected memory increase and playback failure or a crash, due to bad media. This will be fixed in the next major iOS player release. |
+| [Web player 1.2.0](player-web.md) & [Video.js integration](player-videojs.md)  | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.2.0/amazon-ivs-player.min.js](https://player.live-video.net/1.2.0/amazon-ivs-player.min.js)<br /> **Video.js tech asset: **[https://player.live-video.net/1.2.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.2.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.2.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.2.0/web/)+  If the master playlist for a stream is unavailable, we now emit ErrorNotAvailable for all web playback sources. <br />+  Updated reference documentation with respect to errors related to reaching the concurrent-viewers (CCV) limit.  |
+| [Android player 1.2.0](player-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.2.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.2.0/android/)+  Fixed an issue where the getSessionId function crashed on Android. <br />+  Updated reference documentation with respect to errors related to reaching the concurrent-viewers (CCV) limit. <br />**Known Issue:** The player SDK will crash if the app targets Android 11 (API level 30) and the user is running Android 11 on a cellular network. This will be fixed in the next release. In the meantime, we recommend targeting a previous Android API level (29 or lower). |
+| [iOS Player 1.2.0](player-ios.md) | **Download:** [https://player.live-video.net/1.2.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.2.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.2.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.2.0/ios/)+  Fixes a potential source of memory corruption when switching the stream URL or closing the player. <br />+  Resolves an issue that could cause playback to fail when the best audio pitch correction could not be enabled before starting playback. Pitch correction improves audio quality at playback speeds faster or slower than normal. If pitch correction cannot be enabled or the highest quality correction algorithm is unavailable, a message is logged but playback continues. Known Issue: If there is an audio sample-rate change within a single HLS media segment, the iOS SDK cannot handle it properly. This can result in an unexpected memory increase and playback failure or a crash, due to bad media. This will be fixed in the next major iOS player release. |
 
 ## November 12, 2020
 <a name="nov12-20"></a>
@@ -4537,10 +4537,10 @@ The Amazon Interactive Video Service (IVS) Player SDKs use [semantic versioning]
 
 | Platform | Downloads and Changes |
 | --- | --- |
-| All | [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
-| Web Player 1.1.0 | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.1.0/amazon-ivs-player.min.js](https://player.live-video.net/1.1.0/amazon-ivs-player.min.js)<br /> **Video.js tech asset: **[https://player.live-video.net/1.1.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.1.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.1.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.1.0/web/)<br />**Known Issues:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| All | +  Fixed an issue where the player's adaptive bitrate algorithm could incorrectly drop quality to 160p. <br />+  The player now throws an error if there are no playable video qualities. <br />+  Updated VOD seek behavior: when attempting to seek beyond the end, the player seeks to the end instead of returning an error. <br />+  The player now throws a fatal error after exhausting all available qualities during error recovery.  |
+| Web Player 1.1.0 | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.1.0/amazon-ivs-player.min.js](https://player.live-video.net/1.1.0/amazon-ivs-player.min.js)<br /> **Video.js tech asset: **[https://player.live-video.net/1.1.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.1.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.1.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.1.0/web/)<br />**Known Issues:**+  If Video.js is not available, `registerIVSQualityPlugin` now throws an exception instead of writing to `console.error`. <br />+  If `registerIVSTech` or `registerIVSQualityPlugin` is called more than once, calls after the first one now do nothing (instead of attempting to re-register). <br />+  The type of the first parameter to `registerIVSQualityPlugin` has changed from `VideoJS` to `any`. <br />+  Removed dependencies on browser context to enable server-side rendering. <br />+  If the browser autopauses in response to unmuting, the player now fires the `AUDIO_BLOCKED` event and resumes muted playback. <br />+  Added network connectivity recovery. A network timeout will not result in an error state being sent to the client app. Instead, when network connectivity is lost:   If the app is playing, the player library sends the `NETWORK_UNAVAILABLE` event to the app and the player enters the IDLE state. When connectivity is restored, the player library resumes playing and the app receives a `PLAYING` event.   If the app is paused, the `NETWORK_UNAVAILABLE` event is not sent to the app and the player library remains in the IDLE state. When connectivity is restored, the player library stays in the IDLE state.   At any time, if the app tries to play, the player library attempts a normal play. The `NETWORK_UNAVAILABLE` event is sent to the app and the player enters the IDLE state.    |
 | Android Player 1.1.0 | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.1.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.1.0/android/)<br />**Known Issue:** The player SDK will crash if the app targets Android 11 (API level 30) and the user is running Android 11 on a cellular network. This will be fixed in the next release. In the meantime, we recommend targeting a previous Android API level (29 or lower). |
-| iOS Player 1.1.0 | **Download:** [https://player.live-video.net/1.1.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.1.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.1.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.1.0/ios/)[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| iOS Player 1.1.0 | **Download:** [https://player.live-video.net/1.1.0/AmazonIVSPlayer.xcframework.zip](https://player.live-video.net/1.1.0/AmazonIVSPlayer.xcframework.zip)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.1.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.1.0/ios/)+  Fixed an issue that could cause crashes, with this message from UIKit: "Modifications to the layout engine must not be performed from a background thread after it has been accessed from the main thread." This could occur when backgrounding and foregrounding the application.  |
 
 ## September 14, 2020
 <a name="sep14-20"></a>
@@ -4591,6 +4591,6 @@ The Amazon Interactive Video Service (IVS) Player SDKs use [semantic versioning]
 | Platform | Downloads and Changes |
 | --- | --- |
 | All | **Known Issue:** For the `setAutoMaxQuality` and `setQuality` functions, the quality you provide is applied correctly to the current stream but is not applied correctly if you load a new stream. To avoid this, If you load a new stream, call this with a quality for the new stream after `PlayerState.READY`. |
-| Web Player 1.0.0 | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.0.0/amazon-ivs-player.min.js](https://player.live-video.net/1.0.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.0.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.0.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/web/)<br />**Known Issues:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| Web Player 1.0.0 | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.0.0/amazon-ivs-player.min.js](https://player.live-video.net/1.0.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.0.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.0.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/web/)<br />**Known Issues:**+  When playing a VOD on an iOS mobile browser (e.g. Safari or Chrome), seeking backwards will mute the player. To avoid this, call `player.setMuted(false)` after seeking. <br />+  When playing a VOD on an iOS mobile browser, seeking backwards works intermittently when directly selecting the desired position. To avoid this, drag the seek bar to the desired position. <br />+  When playing a VOD on an iOS mobile browser using the Video.js integration, the replay button does not work properly. To avoid this, hide the replay button when initializing Video.js: [https://videojs.com/guides/components/\#play-toggle](https://videojs.com/guides/components/#play-toggle).  |
 | Android Player 1.0.0 | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/android/)<br />**Known Issue:** Backgrounding and foregrounding can cause audio/video de-synchronization for VOD playback on Android. |
-| iOS Player 1.0.0 | **Download:** <deprecated><br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/ios/)<br />**Known Issues:** [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-notes.html) |
+| iOS Player 1.0.0 | **Download:** <deprecated><br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/ios/)<br />**Known Issues:** +  Backgrounding and foregrounding cause live and VOD playback failure. To avoid this, pause the stream when the `UIApplicationDidEnterBackgroundNotification` is received and resume play on the `UIApplicationDidBecomeActiveNotification`. <br />+  iOS 10 devices may experience a crash when returning from background. To avoid this, set the layerâ€™s `player` property to `nil` before entering the background.  |

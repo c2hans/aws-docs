@@ -16,10 +16,10 @@ The following table describes the user personas involved with the automated patc
 |
 | User persona | Description |
 | --- |--- |
-| Consumers (C) | The patch management solution for long-running instances is used by different teams involved in OS management, including:Development teams that manage full-stack application environments.Operations teams that manage the application server OS. |
-| Cloud engineering (CE) | The team that's responsible for:Continuously optimizing the patch management solution.Building cloud services automation.Supporting the automation. |
-| Cloud business office (CBO) | The team that's involved in:Managing the consumer experience for the solution.Enablement and user engagement.Making sure that the patch solution meets consumers' needs. |
-| Cloud service/product owner (CPO) | The person who is responsible for:Providing cloud services to consumers.Working closely with the leadership team to align the services delivery with expectations and guidelines.Managing all customer expectations and escalations related to the platform.Owning the platform roadmap. |
+| Consumers (C) | The patch management solution for long-running instances is used by different teams involved in OS management, including:+ Development teams that manage full-stack application environments.<br />+ Operations teams that manage the application server OS. |
+| Cloud engineering (CE) | The team that's responsible for:+ Continuously optimizing the patch management solution.<br />+ Building cloud services automation.<br />+ Supporting the automation. |
+| Cloud business office (CBO) | The team that's involved in:+ Managing the consumer experience for the solution.<br />+ Enablement and user engagement.<br />+ Making sure that the patch solution meets consumers' needs. |
+| Cloud service/product owner (CPO) | The person who is responsible for:+ Providing cloud services to consumers.<br />+ Working closely with the leadership team to align the services delivery with expectations and guidelines.<br />+ Managing all customer expectations and escalations related to the platform.<br />+ Owning the platform roadmap. |
 | Security operations (SO) | The team that manages patch baselines and approvals. |
 | Security operations manager (SOM) | The manager who is responsible for patch compliance. |
 

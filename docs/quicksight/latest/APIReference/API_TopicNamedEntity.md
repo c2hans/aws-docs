@@ -27,18 +27,34 @@ Required: No
  ** EntityDescription **   <a name="QS-Type-TopicNamedEntity-EntityDescription"></a>
 The description of the named entity.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 500.
 Required: No
 
  ** EntitySynonyms **   <a name="QS-Type-TopicNamedEntity-EntitySynonyms"></a>
 The other names or aliases for the named entity.
 Type: Array of strings
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
+Required: No
+
+ ** PresentationOrder **   <a name="QS-Type-TopicNamedEntity-PresentationOrder"></a>
+The presentation order of the named entity.
+Type: Integer
+Required: No
+
+ ** RankOrder **   <a name="QS-Type-TopicNamedEntity-RankOrder"></a>
+The rank order of the named entity.
+Type: Integer
 Required: No
 
  ** SemanticEntityType **   <a name="QS-Type-TopicNamedEntity-SemanticEntityType"></a>
 The type of named entity that a topic represents.
 Type: [SemanticEntityType](API_SemanticEntityType.md) object
+Required: No
+
+ ** Sort **   <a name="QS-Type-TopicNamedEntity-Sort"></a>
+The sort configuration of the named entity.
+Type: Array of [NamedEntitySort](API_NamedEntitySort.md) objects
+Array Members: Maximum number of 1 item.
 Required: No
 
 ## See Also

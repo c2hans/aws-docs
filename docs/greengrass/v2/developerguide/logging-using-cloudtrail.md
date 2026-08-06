@@ -60,10 +60,10 @@ The following table lists the AWS IoT Greengrass resource types. The **Data even
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| IoT certificate | AWS::IoT::Certificate |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/logging-using-cloudtrail.html)  |
-| IoT Greengrass component version |  AWS::GreengrassV2::ComponentVersion  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/logging-using-cloudtrail.html)  |
-| IoT Greengrass deployment |  AWS::GreengrassV2::Deployment  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/logging-using-cloudtrail.html)  |
-| IoT thing | AWS::IoT::Thing |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/logging-using-cloudtrail.html)  |
+| IoT certificate | AWS::IoT::Certificate |  +  VerifyClientDeviceIdentity <br />+  VerifyClientDeviceIoTCertificateAssociation   |
+| IoT Greengrass component version |  AWS::GreengrassV2::ComponentVersion  |  +  [https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ResolveComponentCandidates.html)   |
+| IoT Greengrass deployment |  AWS::GreengrassV2::Deployment  |  +  GetDeploymentConfiguration   |
+| IoT thing | AWS::IoT::Thing |  +  ListThingGroupsForCoreDevices <br />+  PutCertificateAuthorities <br />+  VerifyClientDeviceIoTCertificateAssociation   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you.
 

@@ -17,6 +17,9 @@ If you need to use FIPS 140-2 validated cryptographic modules when communicating
 
 All AWS KMS API calls must be signed and be transmitted using Transport Layer Security (TLS). AWS KMS recommends you always use the latest supported TLS version. Clients must also support cipher suites with Perfect Forward Secrecy (PFS) such as Ephemeral Diffie-Hellman (DHE) or Elliptic Curve Ephemeral Diffie-Hellman (ECDHE). Most modern systems such as Java 7 and later support these modes.
 
+**Note**
+With current technology, brute force attacks on AWS KMS TLS cipher suite key exchange mechanisms are not feasible. However, cipher suites that use Rivest–Shamir–Adleman (RSA) or Diffie-Hellman (DH) key exchange will be susceptible if large-scale quantum computing becomes practical. [NIST IR 8547](https://nvlpubs.nist.gov/nistpubs/ir/2024/NIST.IR.8547.ipd.pdf) on the NIST website establishes a timeline to phase out quantum-vulnerable algorithms by 2030 and disallow them entirely by 2035. If your applications rely on the long-term confidentiality of AWS KMS API traffic, we recommend that you [use post-quantum TLS with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/pqtls.html). For more information about post-quantum cybersecurity, see [Post-Quantum Cybersecurity Resources](https://www.nsa.gov/Cybersecurity/Post-Quantum-Cybersecurity-Resources/) on the National Security Agency (NSA) website.
+
  **Signing Requests**
 
 Requests must be signed using an access key ID and a secret access key. We strongly recommend that you do not use your AWS account root access key ID and secret access key for everyday work. You can use the access key ID and secret access key for an IAM user or you can use the AWS Security Token Service (AWS STS) to generate temporary security credentials and use those to sign requests.
@@ -42,4 +45,4 @@ Of the API operations discussed in this guide, the following will prove the most
 +  [GenerateDataKey](API_GenerateDataKey.md)
 +  [GenerateDataKeyWithoutPlaintext](API_GenerateDataKeyWithoutPlaintext.md)
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

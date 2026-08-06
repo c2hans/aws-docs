@@ -13,8 +13,8 @@ Depending on release version, Amazon EMR uses different criteria to mark a clust
 
 | When you use ... | A cluster is considered idle when ... |
 | --- | --- |
-| Amazon EMR versions 5.34.0 and later, and 6.4.0 and later |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-auto-termination-policy.html)  |
-| Amazon EMR versions 5.30.0 - 5.33.0 and 6.1.0 - 6.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-auto-termination-policy.html)  Amazon EMR marks a cluster as idle and may automatically terminate the cluster even if you have an active Python3 kernel. This is because executing a Python3 kernel does not submit a Spark job on the cluster. To use auto-termination with a Python3 kernel, we recommend that you use Amazon EMR version 6.4.0 or later.   |
+| Amazon EMR versions 5.34.0 and later, and 6.4.0 and later |  +  There are no active YARN applications <br />+  HDFS utilization is below 10% <br />+  There are no active EMR notebook or EMR Studio connections <br />+  There are no on-cluster application user interfaces in use <br />+  There are no pending steps   |
+| Amazon EMR versions 5.30.0 - 5.33.0 and 6.1.0 - 6.3.0 |  +  There are no active YARN applications <br />+  The cluster has no active Spark jobs   Amazon EMR marks a cluster as idle and may automatically terminate the cluster even if you have an active Python3 kernel. This is because executing a Python3 kernel does not submit a Spark job on the cluster. To use auto-termination with a Python3 kernel, we recommend that you use Amazon EMR version 6.4.0 or later.   |
 
 **Note**
 Amazon EMR versions 6.4.0 and later support an on-cluster file for detecting activity on the primary node: `/emr/metricscollector/isbusy`. When you use a cluster to run shell scripts or non-YARN applications, you can periodically touch or update `isbusy` to tell Amazon EMR that the cluster is not idle.

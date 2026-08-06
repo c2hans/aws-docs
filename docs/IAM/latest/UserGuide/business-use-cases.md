@@ -43,7 +43,7 @@ For a step-by-step guide describing the initial configuration of IAM Identity Ce
 ## Use case for IAM with Amazon EC2
 <a name="UseCase_EC2"></a>
 
-A company like Example Corp typically uses IAM to interact with services like Amazon EC2. To understand this part of the use case, you need a basic understanding of Amazon EC2. For more information about Amazon EC2, go to the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/).
+A company like Example Corp typically uses IAM to interact with services like Amazon EC2. To understand this part of the use case, you need a basic understanding of Amazon EC2. For more information about Amazon EC2, see the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/).
 
 ### Amazon EC2 permissions for the user groups
 <a name="EC2_PermissionsGroups"></a>

@@ -421,7 +421,7 @@ Output from the preceding command looks something like the following.
             "redis1x3-002",
             "redis1x3-003"
         ],
-        "CacheNodeType": "cache.m3.medium",
+        "CacheNodeType": "cache.m5.large",
         "DataTiering": "disabled",
         "PendingModifiedValues": {}
     }
@@ -469,8 +469,7 @@ For more information, see the following:
 <a name="AutoFailover.Limitations"></a>
 
 Be aware of the following limitations for Multi-AZ:
-+ Multi-AZ is supported on Valkey, and on Redis OSS version 2.8.6 and later.
-+ Multi-AZ isn't supported on T1 node types.
++ Multi-AZ is supported on all Valkey and Redis OSS versions.
 + Valkey and Redis OSS replication is asynchronous. Therefore, when a primary node fails over to a replica, a small amount of data might be lost due to replication lag. For clusters with durability enabled, this limitation does not apply — all committed data is restored from the Multi-AZ transactional log.
 
   When choosing the replica to promote to primary, ElastiCache chooses the replica with the least replication lag. In other words, it chooses the replica that is most current. Doing so helps minimize the amount of lost data. The replica with the least replication lag can be in the same or different Availability Zone from the failed primary node.
@@ -490,5 +489,4 @@ Be aware of the following limitations for Multi-AZ:
 + After a read replica has been promoted, the other replicas sync with the new primary. After the initial sync, the replicas' content is deleted and they sync the data from the new primary. This sync process causes a brief interruption, during which the replicas are not accessible. The sync process also causes a temporary load increase on the primary while syncing with the replicas. This behavior is native to Valkey and Redis OSS and isn't unique to ElastiCache Multi-AZ. For details about this behavior, see [Replication](http://valkey.io/topics/replication) on the Valkey website. For clusters with durability enabled, replicas restore from the transactional log independently without imposing load on the primary.
 
 **Important**
-For Valkey 7.2.6 and later or Redis OSS version 2.8.22 and later, you can't create external replicas.
-For Redis OSS versions before 2.8.22, we recommend that you don't connect an external replica to an ElastiCache cluster that is Multi-AZ enabled. This unsupported configuration can create issues that prevent ElastiCache from properly performing failover and recovery. To connect an external replica to an ElastiCache cluster, make sure that Multi-AZ isn't enabled before you make the connection.
+For Valkey and Redis OSS, you can't create external replicas.

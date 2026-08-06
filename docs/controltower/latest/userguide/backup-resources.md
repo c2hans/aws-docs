@@ -23,9 +23,9 @@ The following table shows the resources that AWS Control Tower creates in the AW
 | --- | --- |
 | Which OU contains the account? | Security OU |
 | What action created the resource? | Landing zone Create or Update |
-| What resources are created? | Backup Audit Manager (BAM) [See the AWS documentation website for more details](http://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html)Amazon S3 bucket for storing BAM logs—`aws-controltower-backup-reports-{{{accountId}}}-*`<br />Amazon S3 access logging bucket—`aws-controltower-backup-reports-log-{{{accountId}}}-*` |
+| What resources are created? | Backup Audit Manager (BAM) +  `aws_controltower_copy_report` <br />+  `aws_controltower_backup_report` <br />+  `aws_controltower_restore_report` Amazon S3 bucket for storing BAM logs—`aws-controltower-backup-reports-{{{accountId}}}-*`<br />Amazon S3 access logging bucket—`aws-controltower-backup-reports-log-{{{accountId}}}-*` |
 | What Regions are included? | Home Region |
-| What controls are related to these resources? | [See the AWS documentation website for more details](http://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html) |
+| What controls are related to these resources? | +  `CT.BACKUP.PV.2` <br />+  `CT.S3.PV.1` <br />+  `CT.S3.PV.1`  |
 
 The following table shows the resources that AWS Control Tower creates in the AWS Control Tower **Audit** account and in the AWS Control Tower **Log Archive** account when you enable AWS Backup for the Security OU.
 
@@ -33,9 +33,9 @@ The following table shows the resources that AWS Control Tower creates in the AW
 | --- | --- |
 | Which OU contains the account? | Security OU |
 | What action created the resource? | Enabling the BackupBaseline |
-| What resources are created? | [See the AWS documentation website for more details](http://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html) |
+| What resources are created? | +  Local Backup vault—`aws-controltower-local-backupvault-*` <br />+   Local Backup role—`aws-controltower-BackupRole` <br />+  Four local Backup plans (hourly, weekly, monthly, daily)   `aws-controltower-hourly-backup-plan`   `aws-controltower-daily-backup-plan`   `aws-controltower-weekly-backup-plan`   `aws-controltower-monthly-backup-plan`   <br />+  An IAM role—`aws-controltower-BackupRole`  |
 | What Regions are included? | All governed Regions |
-| What controls are related to these resources? | [See the AWS documentation website for more details](http://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html) |
+| What controls are related to these resources? | +  `CT.BACKUP.PV.3` <br />+  `CT.IAM.PV.1` <br />+  `CT.BACKUP.PV.3` <br />+  `CT.BACKUP.PV.1`  |
 
 **Note**
  When you apply the `BackupBaseline` to the Security OU, all member accounts in that OU receive the AWS Backup resources, not just the **Audit** and **Log Archive** accounts.
@@ -46,6 +46,6 @@ The following table shows the resources that AWS Control Tower creates in the AW
 | --- | --- |
 | Which OU contains the account? | Any OU other than the Security OU |
 | What action created the resource? | Enabling the BackupBaseline |
-| What resources are created? | [See the AWS documentation website for more details](http://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html) |
+| What resources are created? | +  Local Backup vault—`aws-controltower-local-backupvault-*` <br />+   Local Backup role—`aws-controltower-BackupRole` <br />+  Four local Backup plans (hourly, weekly, monthly, daily)   `aws-controltower-hourly-backup-plan`   `aws-controltower-daily-backup-plan`   `aws-controltower-weekly-backup-plan`   `aws-controltower-monthly-backup-plan`   <br />+  An IAM role—`aws-controltower-BackupRole`  |
 | What Regions are included? | All governed Regions |
-| What controls are related to these resources? | [See the AWS documentation website for more details](http://docs.aws.amazon.com/controltower/latest/userguide/backup-resources.html) |
+| What controls are related to these resources? | +  `CT.BACKUP.PV.3` <br />+  `CT.IAM.PV.1` <br />+  `CT.BACKUP.PV.3` <br />+  `CT.BACKUP.PV.1`  |

@@ -102,14 +102,14 @@ The code for this pattern is available in the GitHub [sample-awsconfig-bedrock-c
 | --- | --- | --- |
 | Clone the repository. | To clone the repository for this pattern, use the following command:<pre>git clone "git@github.com:aws-samples/sample-awsconfig-bedrock-compliance-manager.git"</pre> | AWS DevOps, Build lead, DevOps engineer, Cloud administrator |
 | Edit the environment variables. | In the root directory of the cloned repository on your local machine, edit the `terraform.tfvars` file. Review the placeholders that are marked with `[XXXXX]`, and edit them based on your environment. | AWS systems administrator, AWS DevOps, DevOps engineer, AWS administrator |
-| Create the infrastructure. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/streamline-amazon-ec2-compliance-management-with-amazon-bedrock-agents-and-aws-config.html) | AWS DevOps, DevOps engineer, AWS systems administrator, Cloud administrator |
+| Create the infrastructure. | 1. To create the infrastructure for this solution, run the following commands:<pre>terraform init<br />terraform plan</pre><br />2. Review the execution plan, and then run the command:<pre>terraform apply --auto-approve</pre> | AWS DevOps, DevOps engineer, AWS systems administrator, Cloud administrator |
 
 ### Use the agent
 <a name="use-the-agent"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Chat with the agent. | Deploying the solution in the previous step deploys `security-bot-agent`, which is an Amazon Bedrock agent with a chat console.<br />To use the agent:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/streamline-amazon-ec2-compliance-management-with-amazon-bedrock-agents-and-aws-config.html) | AWS DevOps, DevOps engineer, AWS systems administrator, Cloud administrator |
+| Chat with the agent. | Deploying the solution in the previous step deploys `security-bot-agent`, which is an Amazon Bedrock agent with a chat console.<br />To use the agent:1. Sign in to the AWS Management Console with an IAM identity that has permissions to use the Amazon Bedrock console. Then, open the [Amazon Bedrock console](https://console.aws.amazon.com/bedrock/).<br />2. In the navigation pane, choose **Build**, **Agents**. Select **security-bot-agent**.<br />3. Start conversing with the agent. For example:<pre>List non-complaint EC2 instances</pre><br />and:<pre>Replace these non-complaint EC2 instances with compliant instances</pre> | AWS DevOps, DevOps engineer, AWS systems administrator, Cloud administrator |
 
 ### Clean up resources
 <a name="clean-up-resources"></a>

@@ -25,7 +25,7 @@ Some or all of the data in this table can also be found in the SYS monitoring vi
 | userid | integer | ID of the user affected by the change. |
 | username | character(50) | User name of the user affected by the change. |
 | oldusername | character(50) | For a rename action, the original user name. For any other action, this field is empty. |
-| action | character(10) | Action that occurred. Valid values: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_USERLOG.html)  |
+| action | character(10) | Action that occurred. Valid values: +  Alter <br />+  Create <br />+  Drop <br />+  Rename   |
 | usecreatedb | integer | If true (1), indicates that the user has create database privileges. |
 | usesuper | integer | If true (1), indicates that the user is a superuser. |
 | usecatupd | integer | If true (1), indicates that the user can update system catalogs. |

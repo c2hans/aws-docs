@@ -49,7 +49,7 @@ For more information about the severity level, see the [AWS Support API Referenc
 | **System impaired** | normal | 12 hours | Non-critical functions of your application are behaving abnormally, or you have a time-sensitive development question. (AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan) |
 | **Production system impaired** | high | 4 hours | Important functions of your application are impaired or degraded. (AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan) |
 | **Production system down** | urgent | 1 hour | Your business is significantly impacted. Important functions of your application aren't available. (AWS Business Support\+, AWS Enterprise Support, or AWS Unified Operations plan) |
-| Business-critical system down | critical | [See the AWS documentation website for more details](http://docs.aws.amazon.com/awssupport/latest/user/case-management.html) | Your business is at risk. Critical functions of your application aren't available. |
+| Business-critical system down | critical | + AWS Business Support\+: Less than 30 minutes<br />+ AWS Enterprise Support: Less than 15 minutes<br />+ AWS Unified Operations: 5 minutes from an Incident Management Engineer | Your business is at risk. Critical functions of your application aren't available. |
 
 ## Understanding AWS Support response times
 <a name="response-times-for-support-cases"></a>

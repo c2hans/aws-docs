@@ -102,7 +102,7 @@ The following table describes the fields of an access log entry, in order. All f
 
 | Field (position) | Description |
 | --- | --- |
-| type (1) | The type of request or connection. The possible values are as follows (ignore any other values):[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html) |
+| type (1) | The type of request or connection. The possible values are as follows (ignore any other values):+  `http` — HTTP <br />+  `https` — HTTP over TLS <br />+  `h2` — HTTP/2 over TLS <br />+  `grpcs`— gRPC over TLS <br />+  `ws` — WebSockets <br />+  `wss` — WebSockets over TLS  |
 | time (2) | The time when the load balancer generated a response to the client, in ISO 8601 format. For WebSockets, this is the time when the connection is closed. |
 | elb (3) | The resource ID of the load balancer. If you are parsing access log entries, note that resources IDs can contain forward slashes (/). |
 | client:port (4) | The IP address and port of the requesting client. If there is a proxy in front of the load balancer, this field contains the IP address of the proxy. |
@@ -132,8 +132,8 @@ The following table describes the fields of an access log entry, in order. All f
 | "classification" (28) | The classification for desync mitigation, enclosed in double quotes. If the request does not comply with RFC 7230, the possible values are Acceptable, Ambiguous, and Severe.<br />If the request complies with RFC 7230, this value is set to -. |
 | "classification\_reason" (29) | The classification reason code, enclosed in double quotes. If the request does not comply with RFC 7230, this is one of the classification codes described in [Classification reasons](#classification-reasons). If the request complies with RFC 7230, this value is set to -. |
 | conn\_trace\_id (30) | The connection traceability ID is a **unique opaque ID** used to identify each connection. After a connection is established with a client, subsequent requests from this client will contain this ID in their respective access log entries. This ID acts as a foreign key to create a link between the connection and access logs. |
-| "transformed\_host" (31) | The host header after it is modified by a host header rewrite transform. If any of the following are true, this value is set to -.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html) |
-| "transformed\_uri" (32) | The URI after it is modified by a URL rewrite transform. If any of the following are true, this value is set to -.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html) |
+| "transformed\_host" (31) | The host header after it is modified by a host header rewrite transform. If any of the following are true, this value is set to -.+ No transform was applied<br />+ The transform failed<br />+ The transform succeeded by there was no change to the host header<br />+ There is no original host header (for example, HTTP/1.0 requests) |
+| "transformed\_uri" (32) | The URI after it is modified by a URL rewrite transform. If any of the following are true, this value is set to -.+ No transform was applied<br />+ The transform failed<br />+ The transform succeeded by there was no change to the URI |
 | "request\_transform\_status" (33) | The status of the rewrite transform. If no rewrite transform was applied, this value is set to -. Otherwise, this value is one of the status values described in [Transform status codes](#transform-status-codes). |
 | ip\_address (34) | The IP address of the load balancer node that handled the request. For an internal load balancer, this is a private IP address. |
 

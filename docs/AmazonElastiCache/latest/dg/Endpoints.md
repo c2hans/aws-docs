@@ -14,7 +14,7 @@ You can also establish a private connection between your VPC and ElastiCache API
 
 + For **Valkey or Redis OSS (cluster mode disabled) clusters**, use the *Primary Endpoint* for all write operations. Use the *Reader Endpoint* to evenly split incoming connections to the endpoint between all read replicas. Use the individual *Node Endpoints* for read operations (In the API/CLI these are referred to as Read Endpoints).
 
-+ For **Valkey or Redis OSS (cluster mode enabled) clusters**, use the cluster's *Configuration Endpoint* for all operations that support cluster mode enabled commands. You must use a client that supports either Valkey Cluster, or Redis OSS Cluster on Redis OSS 3.2 and above. You can still read from individual node endpoints (In the API/CLI these are referred to as Read Endpoints).
++ For **Valkey or Redis OSS (cluster mode enabled) clusters**, use the cluster's *Configuration Endpoint* for all operations that support cluster mode enabled commands. You must use a client that supports either Valkey Cluster or Redis OSS Cluster. You can still read from individual node endpoints (In the API/CLI these are referred to as Read Endpoints).
 
 The following sections guide you through discovering the endpoints you'll need for the engine you're running.
 
@@ -322,7 +322,7 @@ Output from the above operation should look something like this (JSON format).
             "CacheParameterGroup": {
                 "ParameterApplyStatus": "in-sync",
                 "CacheNodeIdsToReboot": [],
-                "CacheParameterGroupName": "default.redis3.2"
+                "CacheParameterGroupName": "default.redis7"
             },
             "NumCacheNodes": 1,
             "PreferredAvailabilityZone": "us-east-1b",
@@ -335,7 +335,7 @@ Output from the above operation should look something like this (JSON format).
             "CacheSubnetGroupName": "default",
             "CacheNodeType": "cache.t2.small",
              "DataTiering": "disabled"
-            "EngineVersion": "3.2.10",
+            "EngineVersion": "7.1",
             "ClientDownloadLandingPage": "https://console.aws.amazon.com/elasticache/home#client-download:",
             "CacheClusterCreateTime": "2018-04-25T18:19:28.241Z"
         }

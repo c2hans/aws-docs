@@ -21,7 +21,7 @@ How auto scaling works depends on your fleet type:
 ## Scale out rate
 <a name="auto-scaling-scale-out-rate"></a>
 
-The **scale out rate** (`scaleOutWorkersPerMinute`) setting controls how many workers start launching per minute when your fleet scales out. Because Amazon EC2 instances can take several minutes to launch, workers may not be immediately available.
+The **scale out rate** (`scaleOutWorkersPerMinute`) setting controls how many workers start launching per minute when your fleet scales out. The scale out rate determines your fleet's scale-up speed when a large job arrives. Workers take several minutes to launch. To maintain a warm pool of workers that can start jobs immediately, set the standby worker count. For more information, see [Standby worker count](#auto-scaling-standby-worker-count).
 
 Consider the following when configuring the scale out rate:
 + A higher rate launches more workers quickly, which can reduce job completion time for large jobs.

@@ -52,18 +52,18 @@ The output of this command will look something like this, listing the name, fami
 ```
 
 **Example**
-The following sample code lists the parameter group *myRed28*.
+The following sample code lists the parameter group *myRed7*.
 For Linux, macOS, or Unix:
 
 ```
 aws elasticache describe-cache-parameter-groups \
-    --cache-parameter-group-name {{myRed28}}
+    --cache-parameter-group-name {{myRed7}}
 ```
 For Windows:
 
 ```
 aws elasticache describe-cache-parameter-groups ^
-    --cache-parameter-group-name {{myRed28}}
+    --cache-parameter-group-name {{myRed7}}
 ```
 The output of this command will look something like this, listing the name, family, and description for the parameter group.
 
@@ -71,8 +71,8 @@ The output of this command will look something like this, listing the name, fami
 {
     "CacheParameterGroups": [
 	    {
-	        "CacheParameterGroupName": "myRed28",
-	        "CacheParameterGroupFamily": "redis2.8",
+	        "CacheParameterGroupName": "myRed7",
+	        "CacheParameterGroupFamily": "redis7",
 	        "Description": "My first parameter group"
 	    }
     ]
@@ -120,41 +120,31 @@ The JSON output of this command will look something like this, listing the name,
 {
     "CacheParameterGroups": [
         {
-            "CacheParameterGroupName": "custom-redis32",
-            "CacheParameterGroupFamily": "redis3.2",
+            "CacheParameterGroupName": "custom-redis7",
+            "CacheParameterGroupFamily": "redis7",
             "Description": "custom parameter group with reserved-memory > 0"
         },
         {
-            "CacheParameterGroupName": "default.memcached1.4",
-            "CacheParameterGroupFamily": "memcached1.4",
-            "Description": "Default parameter group for memcached1.4"
+            "CacheParameterGroupName": "default.memcached1.6",
+            "CacheParameterGroupFamily": "memcached1.6",
+            "Description": "Default parameter group for memcached1.6"
         },
         {
-            "CacheParameterGroupName": "default.redis2.6",
-            "CacheParameterGroupFamily": "redis2.6",
-            "Description": "Default parameter group for redis2.6"
+            "CacheParameterGroupName": "default.redis6.x",
+            "CacheParameterGroupFamily": "redis6.x",
+            "Description": "Default parameter group for redis6.x"
         },
         {
-            "CacheParameterGroupName": "default.redis2.8",
-            "CacheParameterGroupFamily": "redis2.8",
-            "Description": "Default parameter group for redis2.8"
+            "CacheParameterGroupName": "default.redis7",
+            "CacheParameterGroupFamily": "redis7",
+            "Description": "Default parameter group for redis7"
         },
         {
-            "CacheParameterGroupName": "default.redis3.2",
-            "CacheParameterGroupFamily": "redis3.2",
-            "Description": "Default parameter group for redis3.2"
-        },
-        {
-            "CacheParameterGroupName": "default.redis3.2.cluster.on",
-            "CacheParameterGroupFamily": "redis3.2",
-            "Description": "Customized default parameter group for redis3.2 with cluster mode on"
-        },
-        {
-            "CacheParameterGroupName": "default.redis5.6.cluster.on",
-            "CacheParameterGroupFamily": "redis5.0",
-            "Description": "Customized default parameter group for redis5.6 with cluster mode on",
+            "CacheParameterGroupName": "default.redis7.cluster.on",
+            "CacheParameterGroupFamily": "redis7",
+            "Description": "Customized default parameter group for redis7 with cluster mode on",
             "isGlobal": "yes"
-        },
+        }
     ]
 }
 ```
@@ -218,9 +208,9 @@ The response from this action will look something like this, listing the name, f
   <DescribeCacheParameterGroupsResult>
     <CacheParameterGroups>
       <CacheParameterGroup>
-        <CacheParameterGroupName>myRedis28</CacheParameterGroupName>
-        <CacheParameterGroupFamily>redis2.8</CacheParameterGroupFamily>
-        <Description>My custom Redis 2.8 parameter group</Description>
+        <CacheParameterGroupName>myRed7</CacheParameterGroupName>
+        <CacheParameterGroupFamily>redis7</CacheParameterGroupFamily>
+        <Description>My custom Redis OSS 7 parameter group</Description>
       </CacheParameterGroup>
       <CacheParameterGroup>
         <CacheParameterGroupName>myMem14</CacheParameterGroupName>
@@ -242,12 +232,12 @@ The response from this action will look something like this, listing the name, f
 ```
 
 **Example**
-The following sample code lists the parameter group *myRed28*.
+The following sample code lists the parameter group *myRed7*.
 
 ```
 https://elasticache.us-west-2.amazonaws.com/
    ?Action=DescribeCacheParameterGroups
-   &CacheParameterGroupName={{myRed28}}
+   &CacheParameterGroupName={{myRed7}}
    &SignatureVersion=4
    &SignatureMethod=HmacSHA256
    &Timestamp=20150202T192317Z
@@ -261,9 +251,9 @@ The response from this action will look something like this, listing the name, f
   <DescribeCacheParameterGroupsResult>
     <CacheParameterGroups>
       <CacheParameterGroup>
-        <CacheParameterGroupName>myRed28</CacheParameterGroupName>
-        <CacheParameterGroupFamily>redis2.8</CacheParameterGroupFamily>
-        <Description>My custom Redis 2.8 parameter group</Description>
+        <CacheParameterGroupName>myRed7</CacheParameterGroupName>
+        <CacheParameterGroupFamily>redis7</CacheParameterGroupFamily>
+        <Description>My custom Redis OSS 7 parameter group</Description>
       </CacheParameterGroup>
     </CacheParameterGroups>
   </DescribeCacheParameterGroupsResult>

@@ -41,9 +41,9 @@ This table shows where the parameters mentioned in this section are located. The
 
 | Location of parameter on web interface | Location of tag in XML |
 | --- | --- |
-| Streams – Video > Advanced > Lookahead | stream\_assembly/video\_description/{{codec}}/look\_ahead\_rate\_control<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-miscellaneous-tuning.html) |
+| Streams – Video > Advanced > Lookahead | stream\_assembly/video\_description/{{codec}}/look\_ahead\_rate\_control<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
 | Streams – Video > Advanced > Profile | stream\_assembly/video\_description/h264\_settings>/profile |
 | Streams – Video > Advanced > Level | stream\_assembly/video\_description/h264\_settings>/level |
 | Streams – Video > Advanced > CABAC | stream\_assembly/video\_description/h264\_settings>/cabac |
-| Streams – Video > Advanced > Slices | stream\_assembly/video\_description/{{codec}}/sliceswhere {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-miscellaneous-tuning.html) |
-| Streams – Video > Advanced > Density vs Quality | stream\_assembly/video\_description/{{codec}}/svqwhere {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-miscellaneous-tuning.html) |
+| Streams – Video > Advanced > Slices | stream\_assembly/video\_description/{{codec}}/sliceswhere {{codec}} is one of the following:+  **h264\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Density vs Quality | stream\_assembly/video\_description/{{codec}}/svqwhere {{codec}} is one of the following:+  **h264\_settings** <br />+  **h265\_settings**  |

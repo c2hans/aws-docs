@@ -31,7 +31,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-02-19-windows.html)  |
 | **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-02-19-windows.html)  |
 | **Additional changes with this release** | [Elastic Beanstalk Amazon S3 bucket](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.S3.html) ownership checks no longer require s3:GetBucketLocation IAM permissions. |
-| **Windows Server 2025** | **\*\*New\!\*\*** — Added support for Windows Server 2025 as two new Windows Server platform branches:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-02-19-windows.html)<br />For more information, see [ What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) on the Microsoft website. |
+| **Windows Server 2025** | **\*\*New\!\*\*** — Added support for Windows Server 2025 as two new Windows Server platform branches:+  Windows Server 2025 with IIS 10.0 <br />+  Windows Server Core 2025 with IIS 10.0 <br />For more information, see [ What's new in Windows Server 2025](https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025) on the Microsoft website. |
 | **.NET Core** | Updated .NET 8 to version 8.0.13. |
 | **AMI** | Updated the base AMI to version 2025.02.13. |
 | **AWS SDK for .NET** | Updated the SDK to version 3.7.981.0. |

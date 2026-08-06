@@ -21,7 +21,7 @@ The table below lists the column names supported by the data entity:
 | order\_id2 | string | Yes 1 | ID of parent order. |
 | order\_line\_id2 | string | Yes | ID of parent order line. |
 | company\_id2 | string | No | Company ID. |
-| status | string | No | Status of line, for example, submitted, or confirmed. The following are the reserved values for AWS Supply Chain.[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/replenishment-inbound-order-line-schedule-entity.html) Null is also an accepted value, or you can enter your own value.  |
+| status | string | No | Status of line, for example, submitted, or confirmed. The following are the reserved values for AWS Supply Chain.+  Can celled - Populated in SAP mapping. Also used for deleted. <br />+  Open - Not populated in SAP mapping. <br />+  Closed - Not populated in SAP mapping. <br />+  InTransit - Not populated in SAP mapping. <br />+  Confirmed - Not populated in SAP mapping.  Null is also an accepted value, or you can enter your own value.  |
 | schedule\_creation\_date | timestamp | No | Schedule creation date. |
 | product\_id2 | string | Yes 1 | Product ID. |
 | external\_line\_number | string | No | External line number. |

@@ -40,8 +40,8 @@ You can configure advanced event selectors to filter on the `eventName`, `readOn
 
 | Data event type | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| Step Functions state machine |  AWS::StepFunctions::StateMachine  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/step-functions/latest/dg/procedure-cloud-trail.html)  |
-| Step Functions activity | AWS::StepFunctions::Activity  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/step-functions/latest/dg/procedure-cloud-trail.html)  |
+| Step Functions state machine |  AWS::StepFunctions::StateMachine  |  + InvokeHTTPEndpoint<br />+ StartSyncExecution  |
+| Step Functions activity | AWS::StepFunctions::Activity  |  +  GetActivityTask   |
 
 ## Management events in CloudTrail
 <a name="cloudtrail-management-events"></a>

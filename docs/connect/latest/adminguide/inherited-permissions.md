@@ -29,8 +29,8 @@ When a user has only explicit **View** permissions and not also **Edit** permiss
 
 | Dedicated permission | Inherited permissions |
 | --- | --- |
-| Users - View or Edit | When someone edits a user's information in the Connect Customer console, they can **view** the following information in drop-down boxes when they add it to the user's account: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/inherited-permissions.html) |
-| Queues - View or Edit | When someone edits queues in the Connect Customer console, they can **view** the following information in drop-down and search boxes when they add it to the queue:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/inherited-permissions.html) |
-| Quick connects - View |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/inherited-permissions.html)  |
-| Quick connects - Edit |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/inherited-permissions.html)  |
-| Phone numbers - View or Edit | When someone edits phone numbers in the Connect Customer console (not the CCP), they can **view** the following information in a drop-down box when they associate it with the phone number: [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/inherited-permissions.html) |
+| Users - View or Edit | When someone edits a user's information in the Connect Customer console, they can **view** the following information in drop-down boxes when they add it to the user's account: +  All security profiles in the instance <br />+  All routing profiles in the instance <br />+  All agent hierarchies in the instance <br />+  All agent proficiencies in the instance  |
+| Queues - View or Edit | When someone edits queues in the Connect Customer console, they can **view** the following information in drop-down and search boxes when they add it to the queue:+  All quick connects in the instance <br />+  All phone numbers in the instance <br />+  All operating hours in the instance  |
+| Quick connects - View |  +  All queues in the instance <br />+  All flows in the instance <br />+  All users in the instance   |
+| Quick connects - Edit |  +  All queues in the instance <br />+  All flows in the instance   |
+| Phone numbers - View or Edit | When someone edits phone numbers in the Connect Customer console (not the CCP), they can **view** the following information in a drop-down box when they associate it with the phone number: +  All flows in the instance  |

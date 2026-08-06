@@ -68,6 +68,8 @@ The following node types are supported by ElastiCache. Generally speaking, the c
 + General purpose:
   + Current generation:
 
+     **M8g node types**: `cache.m8g.large`, `cache.m8g.xlarge`, `cache.m8g.2xlarge`, `cache.m8g.4xlarge`, `cache.m8g.8xlarge`, `cache.m8g.12xlarge`, `cache.m8g.16xlarge`
+
      **M7g node types**: `cache.m7g.large`, `cache.m7g.xlarge`, `cache.m7g.2xlarge`, `cache.m7g.4xlarge`, `cache.m7g.8xlarge`, `cache.m7g.12xlarge`, `cache.m7g.16xlarge`
 **Note**
 For region availability, see [Supported Node Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
@@ -97,6 +99,8 @@ For region availability, see [Supported Node Types](https://docs.aws.amazon.com/
 + Memory optimized:
   + Current generation:
 
+     **R8g node types**: `cache.r8g.large`, `cache.r8g.xlarge`, `cache.r8g.2xlarge`, `cache.r8g.4xlarge`, `cache.r8g.8xlarge`, `cache.r8g.12xlarge`, `cache.r8g.16xlarge`
+
      **R7g node types**: `cache.r7g.large`, `cache.r7g.xlarge`, `cache.r7g.2xlarge`, `cache.r7g.4xlarge`, `cache.r7g.8xlarge`, `cache.r7g.12xlarge`, `cache.r7g.16xlarge`
 **Note**
 For region availability, see [Supported Node Types](https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheNodes.SupportedTypes.html#CacheNodes.SupportedTypesByRegion)
@@ -111,6 +115,12 @@ For region availability, see [Supported Node Types](https://docs.aws.amazon.com/
      **M2 node types:** `cache.m2.xlarge`, `cache.m2.2xlarge`, `cache.m2.4xlarge`
 
      **R3 node types:** `cache.r3.large`, `cache.r3.xlarge`, `cache.r3.2xlarge`, `cache.r3.4xlarge`, `cache.r3.8xlarge`
++ Network optimized:
+  + Current generation:
+
+     **C8gn node types**: `cache.c8gn.large`, `cache.c8gn.xlarge`, `cache.c8gn.2xlarge`, `cache.c8gn.4xlarge`, `cache.c8gn.8xlarge`, `cache.c8gn.12xlarge`, `cache.c8gn.16xlarge`
+
+     **C7gn node types**: `cache.c7gn.large`, `cache.c7gn.xlarge`, `cache.c7gn.2xlarge`, `cache.c7gn.4xlarge`, `cache.c7gn.8xlarge`, `cache.c7gn.12xlarge`, `cache.c7gn.16xlarge`
  **Additional node type info**
 + All current generation instance types are created in Amazon VPC by default.
 + Valkey or Redis OSS append-only files (AOF) are not supported for T1 or T2 instances.

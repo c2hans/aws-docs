@@ -139,7 +139,7 @@ A capacity provider can be in one of the following states:
 
 1. **Separate by trust level**: Create different capacity providers for workloads with different security requirements
 
-1. **Use descriptive names**: Name capacity providers to clearly indicate their intended use and trust level (e.g., `production-trusted`, `dev-sandbox`)
+1. **Use descriptive names**: Name capacity providers to clearly indicate their intended use and trust level (for example, `production-trusted`, `dev-sandbox`).
 
 1. **Use multiple Availability Zones**: Specify subnets across multiple AZs for high availability
 

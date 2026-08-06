@@ -50,7 +50,7 @@ To enable system-initiated shard splits, set the following DB cluster parameters
 | --- | --- |
 | `rds_aurora.limitless_enable_auto_scale` | `on` |
 | `rds_aurora.limitless_auto_scale_options` | Either `split_shard`or `add_router,split_shard` |
-| `rds_aurora.limitless_finalize_split_shard_mode` | This parameter determines how *system-initiated* shard splits are finalized. The value can be one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless-shard-split.html)<br />For more information, see [Finalizing shard splits](#limitless-shard-split.finalize). This parameter applies only to system-initiated shard splits.  |
+| `rds_aurora.limitless_finalize_split_shard_mode` | This parameter determines how *system-initiated* shard splits are finalized. The value can be one of the following:+  `user_initiated` – You decide when to finalize the shard split. This is the default value. <br />+  `immediate` – Shard splits are finalized immediately. <br />For more information, see [Finalizing shard splits](#limitless-shard-split.finalize). This parameter applies only to system-initiated shard splits.  |
 
 For more information, see [DB cluster parameter groups for Amazon Aurora DB clusters](USER_WorkingWithDBClusterParamGroups.md).
 

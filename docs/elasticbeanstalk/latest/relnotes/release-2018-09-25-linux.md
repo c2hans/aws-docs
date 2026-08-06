@@ -24,10 +24,10 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html) |
 | **Go** | Updated the Go platform with the [Go 1.11 release](https://blog.golang.org/go1.11). |
 | **Node.js** | Updated the Node.js platform with [August 2018 Security Releases](https://nodejs.org/en/blog/vulnerability/august-2018-security-releases/). The Node.js Foundation applied these security updates to the new versions 6.14.4 and 8.11.4. We changed the default version for the platform to 6.14.4. |
-| **p3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html)  |
-| **c5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html)  |
-| **m5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html)  |
-| **t3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-25-linux.html)  |
+| **p3** |  + Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Canada (Central)—ca-central-1<br />+ China (Ningxia)—cn-northwest-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
+| **c5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
+| **m5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
+| **t3** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ Canada (Central)—ca-central-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1<br />+ EU (London)—eu-west-2<br />+ South America (São Paulo)—sa-east-1  |
 
 ## Updated platform configurations
 <a name="release-2018-09-25-linux.platforms"></a>

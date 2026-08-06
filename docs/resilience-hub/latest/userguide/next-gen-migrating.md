@@ -14,6 +14,7 @@ If you're an existing AWS Resilience Hub (v1) customer, this guide helps you und
 | Dependency visibility | None | Dependency discovery |
 | Multi-account | Limited | Full AWS Organizations integration |
 | Policies | Single RTO/RPO policy per application | Modular, composable policies (DR \+ Availability \+ Data recovery) |
+| Testing | AWS FIS experiment templates (manual setup) | Recommended resilience tests (pre-configured, auto-targeted, pass/fail) |
 | API version | /v1 | /v2 |
 
 **Topics**

@@ -53,7 +53,7 @@ The format of a notification looks like the following sample:
 | INVALID\_ANALYSIS\_CONFIGURATION | Contact Lens received invalid values when the flow was initiated, such as an unsupported or invalid language code, or an unsupported value for redaction behavior. |
 | RECORDING\_FILE\_CANNOT\_BE\_READ | Contact Lens can't get the recording file. This might be because file isn't present in the S3 bucket, or there are problems with permissions. |
 | RECORDING\_FILE\_TOO\_SMALL | The recording file is too small for analysis (less than 105 ms).<br />If file doesn't have expected format, an INVALID error occurs. Empty JSON is also an unexpected object. |
-| RECORDING\_FILE\_TOO\_LARGE | The recording file exceeds the duration limit for analysis. [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/contact-lens-error-notifications.html) |
+| RECORDING\_FILE\_TOO\_LARGE | The recording file exceeds the duration limit for analysis. +  Voice: More than 14,400 seconds, or 4 hours <br />+  Chat: More than 20K messages in a transcript  |
 | RECORDING\_FILE\_INVALID | The recording file is invalid. |
 | RECORDING\_FILE\_CANNOT\_BE\_READ | An error occurred when Contact Lens tried to read the recording file. |
 | RECORDING\_FILE\_EMPTY | The recording file is empty. |

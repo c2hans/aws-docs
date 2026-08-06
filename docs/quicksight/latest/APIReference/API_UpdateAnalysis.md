@@ -36,6 +36,7 @@ Content-type: application/json
          "ExcludedDataSetArns": [ "{{string}}" ],
          "QBusinessInsightsStatus": "{{string}}",
          "Timezone": "{{string}}",
+         "VisualMessages": { ... },
          "WeekStart": "{{string}}"
       },
       "ParameterDeclarations": [
@@ -51,6 +52,9 @@ Content-type: application/json
          { ... }
       ],
       "TooltipSheets": [
+         { ... }
+      ],
+      "TopicIdentifierDeclarations": [
          { ... }
       ]
    },
@@ -88,6 +92,12 @@ Content-type: application/json
             {
                "DataSetArn": "{{string}}",
                "DataSetPlaceholder": "{{string}}"
+            }
+         ],
+         "TopicReferences": [
+            {
+               "TopicArn": "{{string}}",
+               "TopicPlaceholder": "{{string}}"
             }
          ]
       }
@@ -139,7 +149,7 @@ Type: [Parameters](API_Parameters.md) object
 Required: No
 
  ** [SourceEntity](#API_UpdateAnalysis_RequestSyntax) **   <a name="QS-UpdateAnalysis-request-SourceEntity"></a>
-A source entity to use for the analysis that you're updating. This metadata structure contains details that describe a source template and one or more datasets.
+A source entity to use for the analysis that you're updating. This metadata structure contains details that describe a source template and one or more datasets or topics.
 Type: [AnalysisSourceEntity](API_AnalysisSourceEntity.md) object
 Required: No
 

@@ -11,6 +11,21 @@ To import activities completed in third-party applications (such as application 
 
 Managers can then evaluate these external activities alongside native Connect Customer interactions and back-office tasks. This gives managers a unified view of agent performance in the [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md).
 
+## Example: score agents on back-office work
+<a name="evaluations-external-activities-example"></a>
+
+The following example shows how you turn work completed outside of Connect Customer into evaluation results. Suppose your agents process insurance claims in a separate back-office application, and you want to score the quality of that work.
+
+1. Each time an agent finishes a claim, your back-office application calls the [CreateContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_CreateContact.html) API. Each call records the completed activity as a Connect Customer task, along with the agent who did the work and attributes such as the claim type.
+
+1. A quality manager searches Contact search for these completed tasks. The manager filters on the attributes that you captured, such as `ExternalContactType`, to find a specific type of activity.
+
+1. The manager opens a task and scores it with an evaluation form, the same way that they score a call or a chat.
+
+1. These scores appear next to the scores for native Connect Customer contacts in the [Agent performance evaluations dashboard](agent-performance-evaluation-dashboard.md). As a result, you get one view of agent performance across both Connect Customer interactions and external back-office work.
+
+The rest of this topic describes each step in detail.
+
 ## How to ingest activities from third-party applications
 <a name="steps-for-it-admins"></a>
 

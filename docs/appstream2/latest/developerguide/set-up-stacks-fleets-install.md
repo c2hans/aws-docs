@@ -26,6 +26,8 @@ You can enable Google Drive, OneDrive, and Application Settings Persistence only
    + **VPC Endpoints (Advanced)** — You can create a private link, which is an [interface VPC endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) (interface endpoint), in your virtual private cloud (VPC). To start creating the interface endpoint, select **Create VPC Endpoint**. Selecting this link opens the VPC console. To finish creating the endpoint, follow steps 3 through 6 in *To create an interface endpoint*, in [Tutorial: Creating and Streaming from Interface VPC Endpoints](creating-streaming-from-interface-vpc-endpoints.md).
 
      After you create the interface endpoint, you can use it to keep streaming traffic within your VPC.
+**Windows Desktop OS limitation**
+Streaming from Interface VPC Endpoints is currently not supported for fleets powered by Windows Desktop operating system (such as Windows 11).
    + **Embed WorkSpaces Applications (Optional)** — To embed an WorkSpaces Applications streaming session in a webpage, specify the domain to host the embedded streaming session. Embedded streaming sessions are only supported over HTTPS [TCP port 443].
 **Note**
 You must meet prerequisites and perform additional steps to configure embedded WorkSpaces Applications streaming sessions. For more information, see [Embed Amazon WorkSpaces Applications Streaming Sessions](embed-streaming-sessions.md).

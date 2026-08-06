@@ -320,17 +320,17 @@ The following table describes the changes in each version of the component.
 | 2.2.3 | Version updated for Greengrass nucleus version 2.16.0 release. |
 | 2.2.2 | Version updated for Greengrass nucleus version 2.15.0 release. |
 | 2.2.1 | Version updated for Greengrass nucleus version 2.14.0 release. |
-| 2.2.0 | Version updated for Greengrass nucleus version 2.13.0 release.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ip-detector-component.html) |
-| 2.1.9 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ip-detector-component.html)  |
+| 2.2.0 | Version updated for Greengrass nucleus version 2.13.0 release.**New features**<br />   Adds support for IPv6. You can now use IPv6 for local messaging.    |
+| 2.1.9 |  **Bug fixes and improvements**<br />   Adjusts the IP acquired step to only send logs at the debug log level.     |
 | 2.1.8 | Version updated for Greengrass nucleus version 2.12.0 release. |
 | 2.1.7 | Version updated for Greengrass nucleus version 2.11.0 release. |
 | 2.1.6 | Version updated for Greengrass nucleus version 2.10.0 release. |
 | 2.1.5 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.1.4 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.7.0 release. |
-| 2.1.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ip-detector-component.html)  |
+| 2.1.2 |  **Bug fixes and improvements**<br />   Improves error messages that this component logs in certain scenarios.   Version updated for Greengrass nucleus version 2.6.0 release.     |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.5.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/ip-detector-component.html)  |
+| 2.1.0 |  **Improvements**<br />   Adds the `defaultPort` parameter, which enables you to use a non-default MQTT broker port.   Updates to make log messages more clear.     |
 | 2.0.2 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.1 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.0 | Initial version. |

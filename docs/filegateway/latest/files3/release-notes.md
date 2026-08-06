@@ -33,88 +33,88 @@ Gateway versions 1.x.x can't be updated to 2.x.x.
 
 | Release Date | Software Version | Release Notes |
 | --- | --- | --- |
-| 2026-07-20 | 2.1.10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)  |
-| 2026-07-15 | 2.1.9 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)  |
-| 2026-06-16 | 2.1.8 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-05-21 | 2.1.7 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-05-14 | 2.1.6 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-04-16 | 2.1.5 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-03-26 | 2.1.4 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-03-16 | 2.1.3 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-03-02 | 2.0.7 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-02-12 | 2.1.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-02-02 | 2.1.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-01-21 | 2.0.6 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-01-16 | 2.1.0 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-12-15 | 2.0.5 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-11-12 | 2.0.4 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-11-12 | 2.0.4 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-10-15 | 2.0.3 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-09-15 | 2.0.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-08-29 | 2.0.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-08-21 | 2.0.0 | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
+| 2026-07-20 | 2.1.10 |  +  Updates operating system components and software packages to improve security and performance. <br />+  Fixes a potential gateway stability issue when the cache runs critically low.   |
+| 2026-07-15 | 2.1.9 |  +  Updates operating system components and software packages to improve security and performance.   |
+| 2026-06-16 | 2.1.8 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-05-21 | 2.1.7 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-05-14 | 2.1.6 | **Maintenance Updates:**+  1.x to 2.x (AL2 to AL2023) migration improvements. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2026-04-16 | 2.1.5 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-03-26 | 2.1.4 | **Maintenance Updates:**+  Continue deprecation of NTLM for interactions between Active Directory Domain Controllers and the Gateway. <br />+  Improved resiliency of the SMB stack during network disruptions.  |
+| 2026-03-16 | 2.1.3 | **Maintenance Updates:**+  Improved resilency of DNS with SMB traffic. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2026-03-02 | 2.0.7 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-02-12 | 2.1.2 | **Maintenance Updates:**+  Fix an issue with missing security and quota tabs when using Windows Explorer on an SMB share. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2026-02-02 | 2.1.1 | **Maintenance Updates:**+  Fix issue with SMB regarding case insensitive file access. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2026-01-21 | 2.0.6 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-01-16 | 2.1.0 | **Maintenance Updates:**+  Updated SMB stack. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-12-15 | 2.0.5 | **Maintenance Updates:**+  Fixed an issue with the root disc-size metric. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-11-12 | 2.0.4 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-11-12 | 2.0.4 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-10-15 | 2.0.3 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-09-15 | 2.0.2 | **Maintenance Updates:**+  Fixed an issue that prevented changing gateway capacity. <br />+  Fixed an issue with `UpdateSMBLocalGroups` API. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-08-29 | 2.0.1 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance. <br />+  Initial release for on-premises gateways.  |
+| 2025-08-21 | 2.0.0 | **Features:**+  Initial release of new operating system. <br />+  Added IPv6 support.  |
 
 **Amazon Linux 2 (AL2) based gateways**
 The following table lists the release notes for gateways based on AL2.
 
 | Release Date | Software Version | Release Notes |
 | --- | --- | --- |
-| 2026-07-20 | 1.28.10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)  |
-| 2026-07-15 | 1.28.9 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)  |
-| 2026-06-16 | 1.28.8 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-05-26 | 1.28.7 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-05-18 | 1.28.6 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-04-16 | 1.28.5 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-03-26 | 1.28.4 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-03-16 | 1.27.21 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-03-16 | 1.28.3 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-02-27 | 1.27.20 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-02-11 | 1.28.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-02-02 | 1.28.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-01-21 | 1.27.19 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2026-01-16 | 1.28.0 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-12-15 | 1.27.18 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-11-17 | 1.27.17 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-10-15 | 1.27.16 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-09-22 | 1.27.15 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-09-15 | 1.27.14 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-08-21 | 1.27.13 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-08-18 | 1.27.12 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-08-11 | 1.27.11 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-07-15 | 1.27.10 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-06-23 | 1.27.9 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-06-16 | 1.27.8 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-05-26 | 1.27.7 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-05-15 | 1.27.6 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-04-28 | 1.27.5 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-04-14 | 1.27.4 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-04-01 | 1.27.3 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-03-17 | 1.27.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-02-17 | 1.27.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-01-17 | 1.27.0 | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)<br />**Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2025-01-09 | 1.26.9 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-12-18 | 1.26.8 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-11-18 | 1.26.7 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-10-17 | 1.26.6 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-09-30 | 1.26.5 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-09-16 | 1.26.3 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-08-21 | 1.26.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-08-19 | **1.26.0** | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-07-16 | 1.25.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-06-17 | 1.25.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-05-15 | **1.25.0** | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)<br />**Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-04-15 | 1.24.5 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-04-01 | 1.24.4 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-03-18 | 1.24.3 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2024-01-12 | 1.24.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-12-27 | 1.24.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-12-01 | **1.24.0** | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)<br />**Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-10-24 | 1.23.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-08-14 | 1.23.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-06-12 | **1.23.0** | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)<br />**Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-04-19 | 1.22.1 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2023-01-18 | **1.22.0** | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)<br />**Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2022-07-06 | 1.21.2 | **Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2022-02-16 | 1.21.1 | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html)<br />**Maintenance Updates:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2022-01-18 | **1.21.0** | **Features:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
-| 2021-12-12 | **1.20.0** | **{{URGENT UPDATE}}:**[See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/release-notes.html) |
+| 2026-07-20 | 1.28.10 |  +  Updates operating system components and software packages to improve security and performance. <br />+  Fixes a potential gateway stability issue when the cache runs critically low.   |
+| 2026-07-15 | 1.28.9 |  +  Updates operating system components and software packages to improve security and performance.   |
+| 2026-06-16 | 1.28.8 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-05-26 | 1.28.7 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-05-18 | 1.28.6 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-04-16 | 1.28.5 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-03-26 | 1.28.4 | **Maintenance Updates:**+  Continue deprecation of NTLM for interactions between Active Directory Domain Controllers and the Gateway. <br />+  Improved resiliency of the SMB stack during network disruptions.  |
+| 2026-03-16 | 1.27.21 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-03-16 | 1.28.3 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-02-27 | 1.27.20 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-02-11 | 1.28.2 | **Maintenance Updates:**+  Fix an issue with missing security and quota tabs when using Windows Explorer on an SMB share. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2026-02-02 | 1.28.1 | **Maintenance Updates:**+  Fix issue with SMB regarding case insensitive file access. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2026-01-21 | 1.27.19 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2026-01-16 | 1.28.0 | **Maintenance Updates:**+  Updated SMB stack. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-12-15 | 1.27.18 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-11-17 | 1.27.17 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-10-15 | 1.27.16 | **Maintenance Updates:**+  Fixed an issue in the Upload Rename Order log. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-09-22 | 1.27.15 | **Maintenance Updates:**+  Fixed an issue in the Upload Rename Order log.  |
+| 2025-09-15 | 1.27.14 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-08-21 | 1.27.13 | **Maintenance Updates:**+  Added system statistics and metrics to provide deeper insights into gateway performance.  |
+| 2025-08-18 | 1.27.12 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-08-11 | 1.27.11 | **Maintenance Updates:**+  Fixed an issue affecting S3 metadata updates under specific file operations for some gateways.  |
+| 2025-07-15 | 1.27.10 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance. <br />+  Resolved issues for Upload Rename Order log for gateways.  |
+| 2025-06-23 | 1.27.9 | **Maintenance Updates:**+  Resolved issues for Upload Rename Order log for gateways. <br />+  Enabled Upload Rename Order log for new gateways. <br />+  Fixed issue so that the gateway now correctly handles delete operations for files that were not successfully uploaded.  |
+| 2025-06-16 | 1.27.8 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-05-26 | 1.27.7 | **Maintenance Updates:**+  Resolved issues for Rename Ordering.  This issue only affects some gateways. You will be notified if your gateway needs to be updated.  <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-05-15 | 1.27.6 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-04-28 | 1.27.5 | **Maintenance Updates:**+  Fixed issues related to the upload rename order log. <br />+  Added debug tooling to help determine the causes of upload issues. <br />+  Added system statistics and metrics for deeper insight of gateway performance. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-04-14 | 1.27.4 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-04-01 | 1.27.3 | **Maintenance Updates:**+  Update for gateway logging configuration. No customer action required.  |
+| 2025-03-17 | 1.27.2 | **Maintenance Updates:**+  Added an API action that removes cached file share data and metadata for files that have failed to upload from your gateway to Amazon S3. Your AWS account must be allowlisted to use this function. If your gateway has problems with files failing upload, AWS Support can unlock the function and provide guidance about its use. <br />+  Added capability for new gateways to log the order of object rename upload operations. This helps prevent files from failing to upload to Amazon S3 after repeated or overlapping rename operations. <br />+  Fixed an issue related to SMB unintentionally opening ports. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-02-17 | 1.27.1 | **Maintenance Updates:**+  Removed Java 11. <br />+  Added cache function for Support use. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2025-01-17 | 1.27.0 | **Features:**+  **Cache Reports (coming soon)** - Updated gateway software to support launch of an upcoming feature designed to generate reports of the file metadata currently cached by an S3 File Gateway. You will be able to use these reports to troubleshoot issues if you have files failing upload from your gateway to Amazon S3. <br />**Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2025-01-09 | 1.26.9 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-12-18 | 1.26.8 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-11-18 | 1.26.7 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-10-17 | 1.26.6 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-09-30 | 1.26.5 | **Maintenance Updates:**+  Fixed an issue with on-premises gateways not allowing support channels <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2024-09-16 | 1.26.3 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-08-21 | 1.26.1 | **Maintenance Updates:**+  Fixed an issue related to logging.  |
+| 2024-08-19 | **1.26.0** | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-07-16 | 1.25.2 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-06-17 | 1.25.1 | **Maintenance Updates:**+  Fixed an issue with upgrades when using a proxy and DNS is disabled. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2024-05-15 | **1.25.0** | **Features:**+  Added ability to set AES-128 or AES-256 encryption minimum. This is a gateway change only and will be available in the Storage Gateway console in an upcoming release. <br />+  Increased rotation of system logs when disk space is low. Previously, log writing that filled the root disk would cause the gateway to stop. Now, as space decreases, the gateway will make more room for newer logs by eliminating older logs. <br />+  Added S3 path in health notifications for file upload errors. Previously, health notifications only showed the path to the file on the gateway. Notifications now show the path to help users locate the file in S3. <br />+  Service now ignores backend blockers during forced file share deletes. Previously, forced deletes would stop without explanation when encountering blockers. Forced deletes now continue uninterrupted in these scenarios. <br />**Maintenance Updates:**+  Updated the NFS stack. <br />+  Upgraded Java 17 JRE. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2024-04-15 | 1.24.5 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2024-04-01 | 1.24.4 | **Maintenance Updates:**+  Addressed missing Network Time Protocol (NTP) component.  |
+| 2024-03-18 | 1.24.3 | **Maintenance Updates:**+  Fixed an issue related to case-sensitive lookup performance. <br />+  Fixed an issue that caused processes to crash. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2024-01-12 | 1.24.2 | **Maintenance Updates:**+  Addressed SMB logging issue.  |
+| 2023-12-27 | 1.24.1 | **Maintenance Updates:**+  Addressed SMB stability issue.  |
+| 2023-12-01 | **1.24.0** | **Features:**+  Updated SMB stack.   Added support for AES-256 encryption, plus more secure variants of AES-128 encryption and signing when using an SMB 3.1.1 client which requests it.   SMBv1 (LANMAN/CIFS) server-side copy and server-side wildcard expansion functionality have been removed. (SMBv2 and SMBv3 are unaffected.) This may negatively impact performance of certain SMBv1 workloads. If you use SMBv1, you are encouraged to migrate to SMBv2 or SMBv3.   <br />**Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2023-10-24 | 1.23.2 | **Maintenance Updates:**+  Fixed an issue related to Support Channel not connecting properly for certain users.  |
+| 2023-08-14 | 1.23.1 | **Maintenance Updates:**+  Updated NTP server to use sync server for new gateways.  |
+| 2023-06-12 | **1.23.0** | **Features:**+  Increased upload threads for some AWS accounts. <br />**Maintenance Updates:**+  Fixed an access violation issue on large copies. <br />+  Fixed an NFS issue. <br />+  Removed Java 8. <br />+  Updated operating system and software elements to improve security and performance.  |
+| 2023-04-19 | 1.22.1 | **Maintenance Updates:**+  Fixed an issue related to renaming folders and files.  |
+| 2023-01-18 | **1.22.0** | **Features:**+  [Added support for DOS attributes](https://aws.amazon.com/about-aws/whats-new/2023/01/amazon-s3-file-gateway-dos-attributes/). <br />+  [Increased the number of supported file shares per gateway from 10 to 50](https://aws.amazon.com/about-aws/whats-new/2023/01/amazon-s3-file-gateway-maximum-file-shares-gateway-10-50/). <br />+  Implemented a clock skew detection mechanism to determine when a gateway and a service are out of sync. <br />**Maintenance Updates:**+  Updated SMB stack.  |
+| 2022-07-06 | 1.21.2 | **Maintenance Updates:**+  Updated operating system and software elements to improve security and performance.  |
+| 2022-02-16 | 1.21.1 | **Features:**+  Added new metrics for rename and deletion in cache. <br />**Maintenance Updates:**+  Fixed miscellaneous issues.  |
+| 2022-01-18 | **1.21.0** | **Features:**+  Added new CloudWatch metrics. <br />+  [Added bandwidth throttling for data uploads](https://aws.amazon.com/about-aws/whats-new/2022/01/amazon-s3-file-gateway-schedule-based-network-bandwidth-throttling/).  |
+| 2021-12-12 | **1.20.0** | **{{URGENT UPDATE}}:**+  Addressed Log4j vulnerability.  |

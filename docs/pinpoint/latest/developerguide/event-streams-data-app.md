@@ -66,7 +66,7 @@ This section defines the attributes that are included in the previous example of
 
 | Attribute | Description |
 | --- | --- |
-| event\_type | The type of event. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/pinpoint/latest/developerguide/event-streams-data-app.html) |
+| event\_type | The type of event. Possible values are:+  **\_session.start** – The endpoint began a new session. <br />+  **\_session.stop** – The endpoint ended a session. <br />+  **\_userauth.sign\_in** – The endpoint logged in to your app. <br />+  **\_userauth.sign\_up** – A new endpoint completed the registration process in your app. <br />+  **\_userauth.auth\_fail** – The endpoint attempted to sign in to your app, but wasn't able to complete the process. <br />+  **\_monetization.purchase** – The endpoint made a purchase in your app. <br />+  **\_session.pause** – The endpoint paused a session. Paused sessions can be resumed so that you can continue to collect metrics without starting an entirely new session.  <br />+  **\_session.resume** – The endpoint resumed a session.  |
 | event\_timestamp | The time when the event was reported, shown as Unix time in milliseconds. |
 | arrival\_timestamp | The time when the event was received by Amazon Pinpoint, shown as Unix time in milliseconds. |
 | event\_version | The version of the event JSON schema. Check this version in your event-processing application so that you know when to update the application in response to a schema update.  |

@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonS3/latest/userguide/network-isolat
 
 As a managed service, Amazon S3 is protected by the AWS global network security procedures that are described in the security pillar of the [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html).
 
-Access to Amazon S3 via the network is through AWS published APIs. Clients must support Transport Layer Security (TLS) 1.2. We recommend also supporting TLS 1.3 and hybrid post-quantum key exchange. To learn about post-quantum cryptography at AWS, including links to blog posts and research papers, see [Post-Quantum Cryptography for AWS](https://aws.amazon.com/security/post-quantum-cryptography/).
+Access to Amazon S3 through the network is through AWS published APIs. Clients must support Transport Layer Security (TLS) 1.2. We recommend also supporting TLS 1.3 and hybrid post-quantum key exchange. To learn about post-quantum cryptography at AWS, including links to blog posts and research papers, see [Post-Quantum Cryptography for AWS](https://aws.amazon.com/security/post-quantum-cryptography/).
 
 **Note**
 TLS 1.3 is supported in all S3 endpoints, except for AWS PrivateLink for Amazon S3 and Multi-Region Access Points.

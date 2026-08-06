@@ -173,7 +173,7 @@ The command returns different results depending on the type of workspace you run
 |  Name  |  Description  |
 | --- | --- |
 | `-a`<br />OR<br />`--all-platforms` | Valid only in an initialized workspace (a directory initialized by `eb platform init` or `eb init`). Lists the platform versions of all custom platforms associated with your account. |
-| `-s {{STATUS}}`<br />OR<br />`--status {{STATUS}}` | List only the platforms matching {{STATUS}}:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb3-platform.html) |
+| `-s {{STATUS}}`<br />OR<br />`--status {{STATUS}}` | List only the platforms matching {{STATUS}}:+  Ready <br />+  Failed <br />+  Deleting <br />+  Creating  |
 
 ### Eb platform logs
 <a name="eb3-platform-logs"></a>

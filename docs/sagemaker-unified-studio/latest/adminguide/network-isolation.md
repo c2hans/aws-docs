@@ -97,7 +97,7 @@ Create these Amazon VPC endpoints if you plan to deploy Amazon SageMaker Unified
 | Amazon Athena Spark | com.amazonaws.<region>.athena.sessions<br />com.amazonaws.<region>.athena.dashboard<br />com.amazonaws.<region>.athena.persistent-dashboard |
 | AWS Glue Interactive Sessions | com.amazonaws.<region>.glue.sessions |
 | Amazon CloudWatch | com.amazonaws.<region>.logs |
-| Amazon EMR | com.amazonaws.<region>.elasticmapreduce<br />com.amazonaws.<region>.emr-serverless<br />com.amazonaws.<region>.emr-serverless-services.livy<br />com.amazonaws.<region>.emr-serverless-services.sessions<br />com.amazonaws.<region>.emr-serverless.dashboard<br />com.amazonaws.<region>.emr-dashboard<br />com.amazonaws.<region>.elasticmapreduce-fips |
+| Amazon EMR | com.amazonaws.<region>.elasticmapreduce<br />com.amazonaws.<region>.elasticmapreduce-services<br />com.amazonaws.<region>.emr-serverless<br />com.amazonaws.<region>.emr-serverless-services.livy<br />com.amazonaws.<region>.emr-serverless-services.sessions<br />com.amazonaws.<region>.emr-serverless.dashboard<br />com.amazonaws.<region>.emr-dashboard<br />com.amazonaws.<region>.elasticmapreduce-fips |
 | Amazon EMR on Amazon EKS | com.amazonaws.<region>.emr-containers |
 | Amazon RDS | com.amazonaws.<region>.rds<br />com.amazonaws.<region>.rds-fips |
 | Amazon Redshift | com.amazonaws.<region>.redshift<br />com.amazonaws.<region>.redshift-data<br />com.amazonaws.<region>.redshift-serverless<br />com.amazonaws.<region>.redshift-fips<br />com.amazonaws.<region>.redshift-data-fips<br />com.amazonaws.<region>.redshift-serverless-fips |

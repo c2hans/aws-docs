@@ -55,10 +55,10 @@ The following table provides more detail.
 
 | Mode change | Pending and active execution details | Pipeline state details |
 | --- | --- | --- |
-| SUPERSEDED to SUPERSEDED / SUPERSEDED to QUEUED |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/execution-modes.html)  | The pipeline state, such as cancelled, is preserved between the version of the first mode and the second mode. |
-| QUEUED to QUEUED / QUEUED to SUPERSEDED |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/execution-modes.html)  | The pipeline state, such as cancelled, is preserved between the version of the first mode and the second mode. |
+| SUPERSEDED to SUPERSEDED / SUPERSEDED to QUEUED |  +  Active executions are cancelled after in-progress actions complete. <br />+  Pending executions are cancelled.   | The pipeline state, such as cancelled, is preserved between the version of the first mode and the second mode. |
+| QUEUED to QUEUED / QUEUED to SUPERSEDED |  +  Active executions are cancelled after in-progress actions complete. <br />+  Pending executions are cancelled.   | The pipeline state, such as cancelled, is preserved between the version of the first mode and the second mode. |
 | PARALLEL to PARALLEL | All executions are allowed to run independently of pipeline definition updates. | Empty. Parallel mode does not have a pipeline state. |
-| SUPERSEDED to PARALLEL / QUEUED to PARALLEL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/execution-modes.html)  | Empty. Parallel mode does not have a pipeline state. |
+| SUPERSEDED to PARALLEL / QUEUED to PARALLEL |  +  Active executions are cancelled after in-progress actions complete. <br />+  Pending executions are cancelled.   | Empty. Parallel mode does not have a pipeline state. |
 
 ## Set or change the pipeline execution mode (console)
 <a name="execution-modes-console"></a>

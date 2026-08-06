@@ -98,7 +98,7 @@ To give an [AgentCore harness](harness.md) web search capability, attach the gat
 ## Configure domain filtering
 <a name="gateway-target-connector-web-search-tool-domain-filtering"></a>
 
-Web Search Tool supports two layers of filtering that compose on every request:
+Web Search Tool supports 2 layers of filtering that compose on every request:
 +  **Target-level domain exclude list and include list.** When setting up the target, the administrator configures lists of domains that the target excludes from or restricts every search to. Both lists are hidden from the calling agent and applied to every request that flows through the target.
 +  **Request-level filters (connector version `1.2.0` and later).** The calling agent can pass an optional `filters` object with each `tools/call` request:
   +  `domainFilter` — `include` and `exclude` lists, up to 100 domains per list. Web Search Tool returns results only from domains on the `include` list and drops any result whose domain appears on the `exclude` list.

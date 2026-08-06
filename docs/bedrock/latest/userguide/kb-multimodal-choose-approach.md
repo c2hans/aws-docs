@@ -38,7 +38,7 @@ The following table shows a comparison between Nova Multimodal Embeddings and BD
 
 | Nova Multimodal Embeddings | Bedrock Data Automation (BDA) |
 | --- | --- |
-| US East (N. Virginia) only |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/kb-multimodal-choose-approach.html)  |
+| US East (N. Virginia) only |  +  US West (Oregon) <br />+  US East (N. Virginia) <br />+  Europe (Frankfurt) <br />+  Europe (London) <br />+  Europe (Ireland) <br />+  Asia Pacific (Mumbai) <br />+  Asia Pacific (Sydney) <br />+  AWS GovCloud (US-West)   |
 
 ## Selection criteria by content type
 <a name="kb-multimodal-selection-guidance"></a>

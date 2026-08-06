@@ -22,7 +22,10 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[ClientAuthenticationMethod](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientauthenticationmethod)" : {{String}},
   "[ClientId](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientid)" : {{String}},
   "[OauthDiscovery](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-oauthdiscovery)" : {{Oauth2Discovery}},
-  "[OnBehalfOfTokenExchangeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-onbehalfoftokenexchangeconfig)" : {{OnBehalfOfTokenExchangeConfig}}
+  "[OnBehalfOfTokenExchangeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-onbehalfoftokenexchangeconfig)" : {{OnBehalfOfTokenExchangeConfig}},
+  "[PrivateEndpoint](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privateendpoint)" : {{PrivateEndpoint}},
+  "[PrivateEndpointOverrides](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privateendpointoverrides)" : {{[ PrivateEndpointOverride, ... ]}},
+  "[PrivateKeyJwtConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privatekeyjwtconfig)" : {{PrivateKeyJwtConfig}}
 }
 ```
 
@@ -36,6 +39,12 @@ To declare this entity in your CloudFormation template, use the following syntax
     Oauth2Discovery}}
   [OnBehalfOfTokenExchangeConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-onbehalfoftokenexchangeconfig): {{
     OnBehalfOfTokenExchangeConfig}}
+  [PrivateEndpoint](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privateendpoint): {{
+    PrivateEndpoint}}
+  [PrivateEndpointOverrides](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privateendpointoverrides): {{
+    - PrivateEndpointOverride}}
+  [PrivateKeyJwtConfig](#cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privatekeyjwtconfig): {{
+    PrivateKeyJwtConfig}}
 ```
 
 ## Properties
@@ -45,7 +54,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 Property description not available.
 *Required*: No
 *Type*: String
-*Allowed values*: `CLIENT_SECRET_BASIC | CLIENT_SECRET_POST | AWS_IAM_ID_TOKEN_JWT`
+*Allowed values*: `CLIENT_SECRET_BASIC | CLIENT_SECRET_POST | AWS_IAM_ID_TOKEN_JWT | PRIVATE_KEY_JWT`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ClientId`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-clientid"></a>
@@ -66,4 +75,23 @@ Property description not available.
 Property description not available.
 *Required*: No
 *Type*: [OnBehalfOfTokenExchangeConfig](aws-properties-bedrockagentcore-oauth2credentialprovider-onbehalfoftokenexchangeconfig.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateEndpoint`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privateendpoint"></a>
+Property description not available.
+*Required*: No
+*Type*: [PrivateEndpoint](aws-properties-bedrockagentcore-oauth2credentialprovider-privateendpoint.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateEndpointOverrides`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privateendpointoverrides"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [PrivateEndpointOverride](aws-properties-bedrockagentcore-oauth2credentialprovider-privateendpointoverride.md)
+*Maximum*: `5`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PrivateKeyJwtConfig`  <a name="cfn-bedrockagentcore-oauth2credentialprovider-oauth2providerconfigoutput-privatekeyjwtconfig"></a>
+Property description not available.
+*Required*: No
+*Type*: [PrivateKeyJwtConfig](aws-properties-bedrockagentcore-oauth2credentialprovider-privatekeyjwtconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

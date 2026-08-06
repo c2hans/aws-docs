@@ -35,7 +35,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-quicksight-knowledgebase-knowledgebaseconfiguration-properties"></a>
 
 `TemplateConfiguration`  <a name="cfn-quicksight-knowledgebase-knowledgebaseconfiguration-templateconfiguration"></a>
-The template configuration for the knowledge base.
+The template configuration that defines how the data source connector crawls and indexes data for the knowledge base. The template structure varies by connector type. See `KbTemplateConfiguration` for connector-specific details.
 *Required*: No
 *Type*: [KbTemplateConfiguration](aws-properties-quicksight-knowledgebase-kbtemplateconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

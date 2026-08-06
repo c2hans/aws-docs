@@ -79,7 +79,7 @@ The code for this pattern is available in the GitHub [AWS WAF Automation Using T
 | --- | --- | --- |
 | Install Git. | Follow the instructions in [Getting started](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (Git website) to install Git on your local workstation. | DevOps engineer |
 | Clone the repository. | On your local workstation, enter the following command to clone the code repository:<pre>git clone https://github.com/aws-samples/aws-waf-automation-terraform-samples.git</pre> | DevOps engineer |
-| Update the variables. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-the-security-automations-for-aws-waf-solution-by-using-terraform.html) | DevOps engineer |
+| Update the variables. | 1. Navigate into the cloned directory by entering the following command:<pre>cd terraform-aws-waf-automation</pre><br />2. In any text editor, open the **testing.tfvars** file.<br />3. Update the values of the variables in the **testing.tfvars** file.<br />4. Save and close the file. | DevOps engineer |
 
 ### Provision the target architecture using Terraform
 <a name="provision-the-target-architecture-using-terraform"></a>
@@ -89,15 +89,15 @@ The code for this pattern is available in the GitHub [AWS WAF Automation Using T
 | Initialize the Terraform configuration. | Enter the following command to initialize your working directory that contains the Terraform configuration files:<pre>terraform init</pre> | DevOps engineer |
 | Preview the Terraform plan. | Enter the following command. Terraform evaluates the configuration files to determine the target state for the declared resources. It then compares the target state against the current state and creates a plan:<pre>terraform plan -var-file="testing.tfvars"</pre> | DevOps engineer |
 | Verify the plan. | Review the plan and confirm that it configures the required architecture in your target AWS account. | DevOps engineer |
-| Deploy the solution. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-the-security-automations-for-aws-waf-solution-by-using-terraform.html) | DevOps engineer |
+| Deploy the solution. | 1. Enter the following command to apply the plan:<pre>terraform apply -var-file="testing.tfvars"</pre><br />2. Enter `yes` to confirm. Terraform creates, updates, or destroys infrastructure to achieve the target state declared in the configuration files. For more information about the sequence, see *Terraform deployment* in the [Architecture](#deploy-the-security-automations-for-aws-waf-solution-by-using-terraform-architecture) section of this pattern. | DevOps engineer |
 
 ### Validate and clean up
 <a name="validate-and-clean-up"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Verify the changes. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-the-security-automations-for-aws-waf-solution-by-using-terraform.html) | DevOps engineer |
-| (Optional) Clean up the infrastructure. | If you want to remove all resources and configuration changes made by this solution, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-the-security-automations-for-aws-waf-solution-by-using-terraform.html) | DevOps engineer |
+| Verify the changes. | 1. In the Terraform console, verify that the outputs match the expected results.<br />2. Sign in to the AWS Management Console.<br />3. Verify the outputs in the Terraform console have been successfully deployed in your AWS account. | DevOps engineer |
+| (Optional) Clean up the infrastructure. | If you want to remove all resources and configuration changes made by this solution, do the following:1. In the Terraform console, enter the following command:<pre>terraform destroy -var-file="testing.tfvars"</pre><br />2. Enter `yes` to confirm. | DevOps engineer |
 
 ## Troubleshooting
 <a name="deploy-the-security-automations-for-aws-waf-solution-by-using-terraform-troubleshooting"></a>

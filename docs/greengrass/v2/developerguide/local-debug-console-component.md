@@ -519,19 +519,19 @@ The following table describes the changes in each version of the component.
 | 2.4.6 | Version updated for Greengrass nucleus version 2.16.0 release. |
 | 2.4.5 | Version updated for Greengrass nucleus version 2.15.0 release. |
 | 2.4.4 | Version updated for Greengrass nucleus version 2.14.0 release. |
-| 2.4.3 |  Version updated for Greengrass nucleus version 2.13.0 release. [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug-console-component.html)  |
-| 2.4.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug-console-component.html)  |
+| 2.4.3 |  Version updated for Greengrass nucleus version 2.13.0 release. **Bug fixes and improvements**<br />   Fixes an issue that incorrectly displays `STREAM_MANAGER_EXPORTER_MAX_BANDWIDTH` in megabits per second (Mbps) instead of bytes per second (Bps).     |
+| 2.4.2 |  **Bug fixes and improvements**<br />   General bug fixes and improvements.     |
 | 2.4.1 |  Version updated for Greengrass nucleus version 2.12.0 release.  |
-| 2.4.0 |  <a name="changelog-local-debug-console-2.4.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug-console-component.html)  |
+| 2.4.0 |  <a name="changelog-local-debug-console-2.4.0"></a>**New features**<br />   Adds stream manager debugging console.     |
 | 2.3.1 |  Version updated for Greengrass nucleus version 2.11.0 release.  |
-| 2.3.0 | Version updated for Greengrass nucleus version 2.10.0 release. [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug-console-component.html) |
+| 2.3.0 | Version updated for Greengrass nucleus version 2.10.0 release. **New features**<br />   Includes PubSub and AWS IoT Core MQTT debug client.    |
 | 2.2.7 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.2.6 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.2.5 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.2.4 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.2.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug-console-component.html)  |
+| 2.2.3 |  **Bug fixes and improvements**<br />   Fixes an issue that prevented startup when the component couldn't decrypt the keystore that holds the SSL private key.   Version updated for Greengrass nucleus version 2.5.0 release.     |
 | 2.2.2 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.2.1 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.2.0 | Version updated for Greengrass nucleus version 2.2.0 release. |
-| 2.1.0 |  <a name="changelog-local-debug-console-2.1.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/local-debug-console-component.html)  |
+| 2.1.0 |  <a name="changelog-local-debug-console-2.1.0"></a>**New features**<br />   Uses HTTPS to secure your connection to the local debug console. HTTPS is enabled by default.   <br />**Bug fixes and improvements**<br />   You can dismiss flashbar messages in the configuration editor.     |
 | 2.0.3 | Initial version. |

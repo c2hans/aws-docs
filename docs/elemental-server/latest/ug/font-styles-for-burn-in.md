@@ -17,10 +17,10 @@ If you choose the same **Caption Selector** in the **Caption Source** field in m
 | Font | Click **Browse** to find a font file to use. The file must be on a server mounted to the node and must have the extension TTF or TTE. Do not specify a font file if the caption source is embedded or teletext. |
 | Font Size | Specify “auto” or enter a number. When set to auto, **font\_size** scales depending on the size of the output. Giving a positive integer specifies the exact font size in points. |
 | Font Resolution | Specify the font resolution in DPI (dots per inch). Range: 96 to 600. Default is 96 dpi. |
-| Text Justify |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/font-styles-for-burn-in.html)  |
+| Text Justify |  +  Centered: If the X Position and Y Position are both empty, positions the captions at the bottom center of the video frame. If the X Position and Y Position are specified, the captions are offset and then centered across the video frame. <br />+  Left: If the X Position and Y Position are both empty, positions captions at the bottom left of the video frame. If the X Position and Y Position are specified, the captions are offset and then left-aligned.   |
 | X Position | Specify the offset for the left edge of the caption relative to the horizontal axis of the video frame, in pixels. 0 is the left edge of the video frame. 10 pixels means *offset 10 pixels to the right*.<br />Empty means *0 offset*.  |
 | Y Position | Specify the offset of the top edge of the caption relative to the vertical axis of the video frame, in pixels. 0 is the top edge of the video frame. 10 pixels means *offset 10 pixels from the top.*<br />Empty means *position the captions towards the bottom of the output*. |
-| Fixed Grid | Whether checked or not, applies only for conversions from Teletext to Burn-in. [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/font-styles-for-burn-in.html) |
+| Fixed Grid | Whether checked or not, applies only for conversions from Teletext to Burn-in. +  Checked (default): Font is mono-spaced: each character takes up the space horizontal space. <br />+  Unchecked: Font is proportionally spaced.  |
 | Font Color | Select the desired color. |
 | Font Opacity | The opacity for the font color. Range 0 (transparent) to 255 (opaque). |
 | Background Color | The color for the background rectangle. |

@@ -120,7 +120,7 @@ If you have any of the following add-ons installed, ensure they are at least at 
 | Add-on name | Minimum required version |
 | --- | --- |
 | Amazon VPC CNI plugin for Kubernetes | v1.19.0-eksbuild.1 |
-| Kube-proxy |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eks/latest/userguide/auto-enable-existing.html)  |
+| Kube-proxy |  +  v1.26.15-eksbuild.19 <br />+  v1.27.16-eksbuild.14 <br />+  v1.28.15-eksbuild.4 <br />+  v1.29.10-eksbuild.3 <br />+  v1.30.6-eksbuild.3 <br />+  v1.31.2-eksbuild.3   |
 | Amazon EBS CSI driver | v1.37.0-eksbuild.1 |
 | CSI snapshot controller | v8.1.0-eksbuild.2 |
 | EKS Pod Identity Agent | v1.3.4-eksbuild.1 |

@@ -77,6 +77,10 @@ spec:
           operator: In
           values: ["arm64", "amd64"]
 
+  disruption:
+    consolidationPolicy: Balanced
+    consolidateAfter: 30s
+
   limits:
     cpu: "1000"
     memory: 1000Gi
@@ -164,7 +168,14 @@ When you create a cluster without built-in node pools, the `default` NodeClass i
 ## Disruption
 <a name="_disruption"></a>
 
-You can configure EKS Auto Mode to disrupt Nodes through your NodePool in multiple ways. You can use `spec.disruption.consolidationPolicy`, `spec.disruption.consolidateAfter`, or `spec.template.spec.expireAfter`. You can also rate limit EKS Auto Mode’s disruption through the NodePool’s `spec.disruption.budgets`. You can also control the time windows and number of simultaneous Nodes disrupted. For instructions on configuring this behavior, see [Disruption](https://karpenter.sh/docs/concepts/disruption/) in the Karpenter Documentation.
+You can configure EKS Auto Mode to disrupt Nodes through your NodePool in multiple ways. You can use `spec.disruption.consolidationPolicy`, `spec.disruption.consolidateAfter`, or `spec.template.spec.expireAfter`. You can also rate limit the disruption of EKS Auto Mode through the NodePool’s `spec.disruption.budgets`. You can also control the time windows and number of simultaneous Nodes disrupted. For instructions on configuring this behavior, see [Disruption](https://karpenter.sh/docs/concepts/disruption/) in the Karpenter Documentation.
+
+The `consolidationPolicy` field accepts three values:
++  `WhenEmpty` – Consolidates only empty nodes, so running workloads are never disrupted.
++  `WhenEmptyOrUnderutilized` – Aggressively consolidates for cost, disrupting workloads whenever a node’s pods can be repacked more cheaply.
++  `Balanced` – Scores each consolidation action by weighing disruption cost against cost savings. Skips actions where the disruption outweighs the savings.
+
+For details on each value, see [Disruption](https://karpenter.sh/docs/concepts/disruption/) in the Karpenter documentation.
 
 You can configure disruption for node pools to:
 + Identify when instances are underutilized, and consolidate workloads.

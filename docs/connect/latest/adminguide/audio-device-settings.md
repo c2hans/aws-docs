@@ -20,6 +20,17 @@ If you move to a different computer or browser, you will need to change these se
 
 1. Under **Audio devices**, use the dropdown to select your **Speaker**, **Microphone**, **Ringer**, and **Audio Enhancement**. For more information about Audio Enhancement, see [Enable Audio Enhancement for agents in Amazon Connect](https://docs.aws.amazon.com/connect/latest/adminguide/audio-enhancement.html).
 
+## Enable audio notifications for new chat messages
+<a name="enable-chat-audio-notifications"></a>
+
+New chat messages always appear as visual indicators in the Contact Control Panel (CCP) or agent workspace. You can also enable Chat Audio Notifications to add an audio alert when a new message arrives. This opt-in setting persists across sessions.
+
+1. Open the CCP or agent workspace, and then choose **Settings**.
+
+1. Under **Notifications**, select **Enable Chat Audio Notifications**.
+
+After you enable this setting, the CCP continues to display visual indicators for new chat messages and also plays an audio alert.
+
 ## Prerequisite: Allow your browser to access your microphone
 <a name="prerequisite-allow-mic"></a>
 

@@ -13,4 +13,5 @@ This section provides solutions for common issues you might encounter when using
 + [IAM and permissions errors](next-gen-troubleshoot-iam.md)
 + [AWS Organizations configuration issues](next-gen-troubleshoot-organizations.md)
 + [Resource discovery issues](next-gen-troubleshoot-resource-discovery.md)
++ [Resilience testing issues](next-gen-troubleshoot-testing.md)
 + [Known issues and workarounds](next-gen-known-issues.md)

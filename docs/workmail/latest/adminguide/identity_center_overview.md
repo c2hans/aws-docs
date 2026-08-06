@@ -13,10 +13,10 @@ The table below describes the steps to address different scenarios.
 
 | Scenario | Steps |
 | --- | --- |
-| Associating Amazon WorkMail users to IAM Identity Center | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workmail/latest/adminguide/identity_center_overview.html)  |
-| Existing Amazon WorkMail users |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workmail/latest/adminguide/identity_center_overview.html)  |
-| Existing IAM Identity Center users | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workmail/latest/adminguide/identity_center_overview.html) |
-| Connecting an external directory to IAM Identity Center | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workmail/latest/adminguide/identity_center_overview.html) |
+| Associating Amazon WorkMail users to IAM Identity Center | 1.  [Enabling IAM Identity Center in Amazon WorkMail](enabling_identity_center.md) <br />2.  [Assigning IAM Identity Center users and groups to Amazon WorkMail application](assigning_usersandgroups.md) <br />3.  [Associating Amazon WorkMail users with IAM Identity Center users](connecting_wmusers.md)   |
+| Existing Amazon WorkMail users |  1.  Create IAM Identity Center users with the same username, group the users together and assign the group to the Amazon WorkMail application. <br />2.  Associate the Amazon WorkMail users to the IAM Identity Center users.   |
+| Existing IAM Identity Center users | 1.  Create Amazon WorkMail users with the same username as the IAM Identity Center users. <br />2.  Assign the IAM Identity Center users or groups to the Amazon WorkMail application. <br />3.  Associate the Amazon WorkMail users to IAM Identity Center users.  |
+| Connecting an external directory to IAM Identity Center | 1.  Sync the external directory users to the IAM Identity Center group. For more information, see [IAM Identity Center Identity source tutorials ](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-mfa.html) <br />2.  Assign the IAM Identity Center group to the Amazon WorkMail application. <br />3.  Connect the external directory to Amazon WorkMail and make sure the user names match <br />4.  Associate the Amazon WorkMail users to the IAM Identity Center users.  |
 
 Once the above steps are completed you can view the IAM Identity Center status, link to the AWS IAM Identity Center to manage users and groups, MFA enabled Amazon WorkMail web application URL, authentication mode, personal access token status and timeline under IAM Identity Center under **Settings** in the Amazon WorkMail console. For more information on managing MFA in the IAM Identity Center console, see [Multi-factor authentication for IAM Identity Center users .](https://docs.aws.amazon.com//singlesignon/latest/userguide/enable-mfa.html)
 

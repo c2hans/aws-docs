@@ -20,13 +20,13 @@ For the table to be populated with values, you must have enabled logging in the 
 | Input Timestamp | The date and time when the input file was received and processing began. Displayed in UTC format. | Yes |
 | Output File | Full S3 path of the transformed output file. This is the result of the EDI transformation process, typically in the target format (EDI, JSON, or XML). | Yes |
 | Output Timestamp | The date and time when the output file was generated and made available. Displayed in UTC format. | Yes |
-| Transformation Status | The current status of the transformation process. Possible values include: [See the AWS documentation website for more details](http://docs.aws.amazon.com/b2bi/latest/userguide/monitoring-processed-pairs.html)  | Yes |
+| Transformation Status | The current status of the transformation process. Possible values include: +  `SUCCESS` - Transformation completed successfully <br />+  `FAILED` - Transformation failed due to an error <br />+  `IN_PROGRESS` - Transformation is currently being processed   | Yes |
 | Error Message | Detailed error information if the transformation failed. This field is empty for successful transformations and contains specific error details for failed transformations. | Yes |
-| EDI Direction | Indicates the direction of the EDI transformation: [See the AWS documentation website for more details](http://docs.aws.amazon.com/b2bi/latest/userguide/monitoring-processed-pairs.html)  | Yes |
-| EDI Format | The EDI standard format used for the document. Common values include: [See the AWS documentation website for more details](http://docs.aws.amazon.com/b2bi/latest/userguide/monitoring-processed-pairs.html)  | Yes |
+| EDI Direction | Indicates the direction of the EDI transformation: +  `INBOUND` - EDI document received from trading partner <br />+  `OUTBOUND` - EDI document being sent to trading partner   | Yes |
+| EDI Format | The EDI standard format used for the document. Common values include: +  `X12` - ANSI X12 EDI standard <br />+  *Additional values will be available as AWS B2B Data Interchange expands its support for more EDI formats. *   | Yes |
 | Common Data Format | The common data format (JSON/XML) that an EDI file was translated to/from. | Yes |
-| EDI Document Type | The specific type of EDI document being processed. Examples include: [See the AWS documentation website for more details](http://docs.aws.amazon.com/b2bi/latest/userguide/monitoring-processed-pairs.html)  | Yes |
-| EDI Validation Status | The result of EDI document validation against the specified transaction set rules: [See the AWS documentation website for more details](http://docs.aws.amazon.com/b2bi/latest/userguide/monitoring-processed-pairs.html)  | Yes |
+| EDI Document Type | The specific type of EDI document being processed. Examples include: +  `X12_850` - Purchase Order <br />+  `X12_856` - Advance Ship Notice   | Yes |
+| EDI Validation Status | The result of EDI document validation against the specified transaction set rules: +  `Passed` - EDI document passed all validation checks <br />+  `Failed` - EDI document failed validation <br />+  `Not attempted` - Validation was not performed   | Yes |
 | Split Number | Populated for cases when an input file is split into multiple outputs. Shows the current split number (e.g., 1, 2, 3) the input-output pair represents. | Yes |
 | Total Split Count | Populated for cases when an input file is split into multiple outputs. Shows the total number of splits created from the original input file. | Yes |
 | Functional Acknowledgement | Full S3 path to the generated functional acknowledgement. | Yes |

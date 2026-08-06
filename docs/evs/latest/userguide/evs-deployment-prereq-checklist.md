@@ -98,7 +98,7 @@ When you create an environment in Self-deployed mode, you need VCF license keys 
 
 | Component | Description | Minimum requirements | Example value(s) |
 | --- | --- | --- | --- |
-| Network ACL ID | A network access control list (ACL) allows or denies inbound or outbound traffic at the subnet level. | Must allow Amazon EVS to communicate with:[See the AWS documentation website for more details](http://docs.aws.amazon.com/evs/latest/userguide/evs-deployment-prereq-checklist.html) | acl-0f62c640e793a38a3 |
+| Network ACL ID | A network access control list (ACL) allows or denies inbound or outbound traffic at the subnet level. | Must allow Amazon EVS to communicate with:+  DNS servers over TCP/UDP port 53. <br />+  Host management VLAN subnet over HTTPS and SSH. <br />+  Management VM VLAN subnet over HTTPS and SSH.  | acl-0f62c640e793a38a3 |
 
 **DNS records for VCF components**
 

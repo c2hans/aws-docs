@@ -81,8 +81,8 @@ The following metrics track the load times and error counts of individual visual
 
 | Metric | Description | Dimension | Unit |
 | --- | --- | --- | --- |
-| VisualLoadTime | The time that it takes for a Amazon Quick Sight visual to receive the necessary query data for an initial paint of the visual. This includes the round-trip query time from the client, to the Amazon Quick Sight service, and then back to client.<br />The most useful statistic for this metric is `AVERAGE`, which represents the average load time of a visual during a set period of time. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Millisecond |
-| VisualLoadErrorCount | The number of times that a Amazon Quick Sight visual fails to complete a data query for the initial paint. Any error that occurs during a visual's loading period is included in this metric.<br />The most useful statistic for this metric is `SUM`, which represents the total number of failed visual loads during a set period. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
+| VisualLoadTime | The time that it takes for a Amazon Quick Sight visual to receive the necessary query data for an initial paint of the visual. This includes the round-trip query time from the client, to the Amazon Quick Sight service, and then back to client.<br />The most useful statistic for this metric is `AVERAGE`, which represents the average load time of a visual during a set period of time. |  +  DashboardId <br />+  SheetId <br />+  VisualId   | Millisecond |
+| VisualLoadErrorCount | The number of times that a Amazon Quick Sight visual fails to complete a data query for the initial paint. Any error that occurs during a visual's loading period is included in this metric.<br />The most useful statistic for this metric is `SUM`, which represents the total number of failed visual loads during a set period. |  +  DashboardId <br />+  SheetId <br />+  VisualId   | Count |
 
 #### Per-unstructured dataset metrics
 <a name="per-unstructured-dataset-metrics"></a>
@@ -91,17 +91,17 @@ The following metrics track document statistics and indexing status for Amazon Q
 
 | Metric | Description | Dimension | Unit |
 | --- | --- | --- | --- |
-| QuickIndexDocumentCount | The number of documents in the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| QuickIndexExtractedTextSize | The extracted text size of the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Bytes |
-| QuickIndexPurchasedInMB | The amount of storage that has been purchased for the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | MB |
-| QuickIndexCapacityConsumedRawFileSizeInGB | The raw file size consumed by the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | GB |
-| QuickIndexCapacityRawFileSizeLimitInGB | The raw file size limit of the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | GB |
-| DocumentsCrawled | The number of uploaded documents crawled in the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| DocumentsIndexed | The number of documents indexed in the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| DocumentsDeleted | The number of documents deleted from the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| DocumentsModified | The number of documents modified in the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| DocumentsFailedToIndex | The number of documents that failed to index in the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| ExtractedTextSize | The total text size extracted during a connector level sync in the unstructured Quick index. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | MB |
+| QuickIndexDocumentCount | The number of documents in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
+| QuickIndexExtractedTextSize | The extracted text size of the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Bytes |
+| QuickIndexPurchasedInMB | The amount of storage that has been purchased for the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | MB |
+| QuickIndexCapacityConsumedRawFileSizeInGB | The raw file size consumed by the unstructured Quick index. |  +  QuickInstanceId   | GB |
+| QuickIndexCapacityRawFileSizeLimitInGB | The raw file size limit of the unstructured Quick index. |  +  QuickInstanceId   | GB |
+| DocumentsCrawled | The number of uploaded documents crawled in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
+| DocumentsIndexed | The number of documents indexed in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
+| DocumentsDeleted | The number of documents deleted from the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
+| DocumentsModified | The number of documents modified in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
+| DocumentsFailedToIndex | The number of documents that failed to index in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | Count |
+| ExtractedTextSize | The total text size extracted during a connector level sync in the unstructured Quick index. |  +  KnowledgeBaseId <br />+  QuickInstanceId   | MB |
 
 #### Per-action connector metrics
 <a name="per-action-connector-metrics"></a>
@@ -110,8 +110,8 @@ The following metrics track the number of invocations made to Quick Action Conne
 
 | Metric | Description | Dimension | Unit |
 | --- | --- | --- | --- |
-| ActionInvocationCount | The number of times your Action Connector was invoked. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
-| ActionInvocationError | The number of times your Action Connector failed to invoke. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/monitoring-quicksight.html)  | Count |
+| ActionInvocationCount | The number of times your Action Connector was invoked. |  +  ActionConnectorId <br />+  ActionConnectorType <br />+  ActionId   | Count |
+| ActionInvocationError | The number of times your Action Connector failed to invoke. |  +  ActionConnectorId <br />+  ActionConnectorType <br />+  ActionId <br />+  InvokeErrorCode   | Count |
 
 ### Aggregate metrics
 <a name="cw-aggregate-metrics"></a>

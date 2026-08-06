@@ -16,6 +16,13 @@ The AWS provided client creates event logs and stores them in the following loca
 C:\Users\{{User}}\AppData\Roaming\AWSVPNClient\logs
 ```
 
+**Note**
+For version 6.0 and later, the logs are stored in the following location.
+
+```
+%USERPROFILE%\AppData\Roaming\AWSVPNClient\logs\
+```
+
 The following types of logs are available:
 + **Application logs**: Contain information about the application. These logs are prefixed with 'aws\_vpn\_client\_'.
 + **OpenVPN logs**: Contain information about OpenVPN processes. These logs are prefixed with 'ovpn\_aws\_vpn\_client\_'.
@@ -26,6 +33,13 @@ The AWS provided client uses the Windows service to perform root operations. Win
 C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\{{username}}
 ```
 
+**Note**
+For version 6.0 and later, the service logs are stored in the following location.
+
+```
+C:\ProgramData\Amazon\AWSVPNClient\logs\
+```
+
 **Topics**
 + [AWS provided client event logs](#aws-provided-client)
 + [Client cannot connect](#windows-troubleshooting-client-vpn-cannot-connect)
@@ -34,6 +48,7 @@ C:\Program Files\Amazon\AWS VPN Client\WinServiceLogs\{{username}}
 + [VPN connection process quits unexpectedly](#windows-troubleshooting-client-vpn-quits)
 + [Application fails to launch](#windows-troubleshooting-client-vpn-cannot-launch)
 + [Client cannot create profile](#windows-troubleshooting-client-vpn-cannot-create-profile)
++ [Profiles or preferences missing after upgrade to version 6.0](#windows-troubleshooting-profiles-missing)
 + [VPN disconnects with a pop up message](#windows-troubleshooting-client-vpn-connection-terminated)
 + [Client crash occurs on Dell PCs using Windows 10 or 11](#windows-troubleshooting-client-vpn-crash-dell)
 + [OpenVPN GUI](#windows-troubleshooting-openvpn-gui)
@@ -123,6 +138,20 @@ If the Client VPN endpoint uses mutual authentication, the configuration (.ovpn)
 
 **Solution**
 Ensure that your Client VPN administrator adds the client certificate and key to the configuration file. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*.
+
+## Profiles or preferences missing after upgrade to version 6.0
+<a name="windows-troubleshooting-profiles-missing"></a>
+
+**Problem**
+After upgrading the AWS provided client to version 6.0 or later, previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
+
+**Cause**
+Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client attempts to automatically migrate profiles and preferences from the previous location, but this migration can fail in some cases. The client does not delete your original `.ovpn` configuration files.
+
+**Solution**
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for Windows](client-vpn-connect-windows-connecting-how.md).
+
+If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## VPN disconnects with a pop up message
 <a name="windows-troubleshooting-client-vpn-connection-terminated"></a>

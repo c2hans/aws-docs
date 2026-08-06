@@ -59,7 +59,7 @@ In this section, you can review the following information:
 | Name | Description |
 | --- | --- |
 | **Description** |  The description that's provided for this control. |
-| **Control status** | The status of the control. [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.html) |
+| **Control status** | The status of the control. +  **Under review** – The control hasn't been reviewed yet. Evidence is still being collected for this control, and you can add manual evidence. This is the default status. <br />+  **Reviewed** – The evidence for this control is reviewed. Evidence is still being collected, and you can add manual evidence.  <br />+  **Inactive** – Automated evidence collection is stopped for this control. You can no longer add manual evidence.   |
 
 ### Evidence folders tab
 <a name="review-evidence-folders"></a>
@@ -101,7 +101,7 @@ You can use this tab to see where the assessment control collects evidence from.
 | --- | --- |
 | **Common controls** | These are the common controls that collect evidence to support the assessment control.<br />Common controls collect evidence using underlying data sources that AWS manages for you. For every common control that’s listed, Audit Manager collects the relevant evidence for all of the supporting core controls. Choose a common control to see the related core controls. |
 | **Core controls** | These are the core controls that collect evidence to support the assessment control.<br />Core controls collect evidence by using a predefined group of data sources that AWS manages for you. Choose a core control to see the underlying data sources. |
-| Data sources | These are the individual data sources that collect evidence to support the assessment control.[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-controls.html) |
+| Data sources | These are the individual data sources that collect evidence to support the assessment control.+  **Name** – The name of the data source. <br />+  **Type** – The type of data source that the evidence comes from.   If Audit Manager collects the evidence, the type can be *AWS Security Hub CSPM*, *AWS Config*, *AWS CloudTrail*, or *AWS API calls*.    If you upload your own evidence, the type is *Manual*. A description indicates if the required manual evidence is a *File upload* or a *Text response*.   <br />+  **Mapping** – The specific keyword that's used to collect evidence.   If the type is *AWS Config*, the mapping is an AWS Config rule (such as `SNS_ENCRYPTED_KMS`)   If the type is *AWS Security Hub CSPM*, the mapping is a Security Hub CSPM control (such as `EC2.1`).   If the type is *AWS API calls*, the mapping is an API call (such as `kms_ListKeys`).   If the type is *AWS CloudTrail*, the mapping is a CloudTrail event (such as `CreateAccessKey`).   <br />+  **Frequency** – How often Audit Manager collects evidence for an AWS API call data source.  |
 
 ### Comments tab
 <a name="review-comments"></a>

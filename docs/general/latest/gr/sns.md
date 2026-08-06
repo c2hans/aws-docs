@@ -67,15 +67,15 @@ To request an increase, submit an [SNS quota increase request](https://console.a
 
 | Resource | Default |
 | --- | --- |
-| Topics |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/general/latest/gr/sns.html)  |
-| Subscriptions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/general/latest/gr/sns.html) |
+| Topics |  +  Standard: 100,000 per account <br />+  FIFO: 1,000 per account   |
+| Subscriptions |  +  Standard: 12,500,000 per topic <br />For Firehose delivery streams, 5 per topic, per subscription owner <br />+  FIFO: 100 per topic  |
 | Pending subscriptions | 5,000 per account |
 | Account spend threshold for SMS | 1.00 USD per account |
 | Delivery rate for promotional SMS messages | 20 messages per second |
 | Delivery rate for transactional SMS messages | 20 messages per second |
 | Delivery rate for email messages | 10 messages per second per email or email-json subscription. This is a hard limit and can't be increased. |
 | Maximum number of messages in PublishBatchRequest | 10 [PublishBatchRequestEntries](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html) |
-| Subscription filter policies |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/general/latest/gr/sns.html)  |
+| Subscription filter policies |  +  200 filter policies per topic <br />+  10,000 filter policies per AWS account   |
 | Message header |  The maximum header size is 16,384 bytes (16 KiB). |
 | Message size |  The maximum message size is 262,144 bytes (256 KiB). To publish messages larger than 256 KiB, you can check the [Amazon SNS Extended Client Libraries](https://docs.aws.amazon.com/sns/latest/dg/large-message-payloads.html). The maximum payload size is 2 GB.  |
 

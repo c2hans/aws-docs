@@ -157,7 +157,7 @@ Pattern: `^.*$`
  ** [Status](#API_UpdateContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-UpdateContainerAssociation-response-Status"></a>
 The current status of the container association.
 Type: String
-Valid Values: `ACTIVE | CREATING | DELETING`
+Valid Values: `ACTIVE | CREATING | DELETING | UPDATING`
 
  ** [Tags](#API_UpdateContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-UpdateContainerAssociation-response-Tags"></a>
 The key:value pairs to associate with the resource.

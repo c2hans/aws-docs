@@ -77,7 +77,7 @@ When planning your NDI output implementation in MediaConnect, keep in mind the f
   - NDI outputs can only be created using single program transport stream sources. <br />For multi-program transport stream sources, the NDI output only transmits the first program available to downstream receivers.
 
 - **Timecode processing**
-  - You can choose how MediaConnect generates timecodes for NDI output frames:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-using-ndi.html)<br />You can check whether timecodes are present in your source content by using the `TimecodePresent` CloudWatch metric. NDI timecodes generated from SMPTE timecodes don't include a date component.
+  - You can choose how MediaConnect generates timecodes for NDI output frames:+  **Embedded Timecode** (default) – Preserves timecodes from the input transport stream. The timecodes must be embedded in the video stream as SEI timing messages. If no embedded timecode is detected, MediaConnect uses the UTC system time instead. <br />+  **UTC System Time** – Generates timecodes based on the system clock time when each frame is sent. <br />You can check whether timecodes are present in your source content by using the `TimecodePresent` CloudWatch metric. NDI timecodes generated from SMPTE timecodes don't include a date component.
 
 - ** Output configuration **
   - You can add one NDI output to each large-sized flow.
@@ -114,8 +114,8 @@ For video decoder parameters: the supported bit depth/codecs for AVC should be t
 
 | Decoding parameter | Description |
 | --- | --- |
-| Video codec and chroma sampling profiles |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-using-ndi.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-using-ndi.html)  |
-| Audio codec support |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconnect/latest/ug/outputs-using-ndi.html)  If the source contains multiple audio PIDs, MediaConnect combines all the audio streams. However, this is only possible if the sample rates are the same across all of the PIDs.   |
+| Video codec and chroma sampling profiles |  +  AVC (H.264): 8-bit 4:2:0, 8-bit 4:2:2, 10-bit 4:2:0, 10-bit 4:2:2 <br />+  HEVC (H.265): 8-bit 4:2:0, 8-bit 4:2:2, 10-bit 4:2:0, 10-bit 4:2:2  +  MPEG-2: 8-bit 4:2:0, 8-bit 4:2:2   |
+| Audio codec support |  +  MPEG-1 Layer 2 <br />+  MPEG-2 Part 3  <br />+  MP3 <br />+  AAC (HE, LC)  <br />+  AC3  <br />+  SMPTE 302M  <br />+  Multiple audio channels supported (up to the NDI limit of 16 audio channels).   If the source contains multiple audio PIDs, MediaConnect combines all the audio streams. However, this is only possible if the sample rates are the same across all of the PIDs.   |
 | Supported resolutions | Supports resolutions from 480p up to 1080p |
 | Scan type | Supports both interlaced and progressive formats |
 | Frame rates | Supports the following frame rates : 23.98, 24, 25, 29.97, 30, 50, 59.94, 60 fps |

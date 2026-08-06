@@ -40,8 +40,8 @@ The following table lists the Amazon SageMaker AI resource types for which you c
 
 | Resource type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| SageMaker endpoint |  AWS::SageMaker::Endpoint  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html)  |
-| SageMaker jobs |  AWS::SageMaker::Job  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html)  |
+| SageMaker endpoint |  AWS::SageMaker::Endpoint  |  +  [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpoint.html) <br />+  [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointAsync.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointAsync.html) <br />+  [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_runtime_InvokeEndpointWithResponseStream.html)   |
+| SageMaker jobs |  AWS::SageMaker::Job  |  +  [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_runtime_CompleteRollout.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_runtime_CompleteRollout.html) <br />+  [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_runtime_Sample.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_runtime_Sample.html) <br />+  [https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_runtime_SampleWithResponseStream.html](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_job_runtime_SampleWithResponseStream.html)   |
 
 **Note**
 The `InvokeEndpoint`, `InvokeEndpointAsync`, `Sample`, and `SampleWithResponseStream` API calls don't log the request parameters.

@@ -95,9 +95,24 @@ A setting indicating whether the firewall is protected against a change to the f
 Type: Boolean
 Required: No
 
+ ** NatGatewayMappings **   <a name="networkfirewall-Type-Firewall-NatGatewayMappings"></a>
+The NAT gateways that the firewall uses to proxy traffic. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+Type: Array of [NatGatewayMapping](API_NatGatewayMapping.md) objects
+Required: No
+
+ ** NoSourcePreservation **   <a name="networkfirewall-Type-Firewall-NoSourcePreservation"></a>
+Indicates whether the firewall operates in proxy mode, in which the source IP address of the traffic is not preserved. When this value is `TRUE`, the firewall proxies traffic through a NAT gateway and uses the NAT gateway's IP address as the source for traffic reaching the destination.
+Type: Boolean
+Required: No
+
  ** NumberOfAssociations **   <a name="networkfirewall-Type-Firewall-NumberOfAssociations"></a>
 The number of `VpcEndpointAssociation` resources that use this firewall.
 Type: Integer
+Required: No
+
+ ** ProxySettings **   <a name="networkfirewall-Type-Firewall-ProxySettings"></a>
+The listener configuration for the firewall's proxy. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+Type: [ProxySettings](API_ProxySettings.md) object
 Required: No
 
  ** SubnetChangeProtection **   <a name="networkfirewall-Type-Firewall-SubnetChangeProtection"></a>
@@ -123,6 +138,11 @@ The AWS account ID that owns the transit gateway. This may be different from the
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `^\d{12}$`
+Required: No
+
+ ** VpcEndpoint **   <a name="networkfirewall-Type-Firewall-VpcEndpoint"></a>
+The VPC and subnets for the firewall endpoint. This is set for proxy mode firewalls, where `NoSourcePreservation` is `TRUE`.
+Type: [VpcEndpoint](API_VpcEndpoint.md) object
 Required: No
 
 ## See Also

@@ -23,5 +23,5 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.10.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.10.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-05-11.html) |
-| Stream manager | Version 2.1.6 of the new [stream manager](stream-manager-component.md) is available.<a name="changelog-stream-manager-2.1.6"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-05-11.html) |
+| Greengrass nucleus | Version 2.10.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.10.1"></a>**Bug fixes and improvements**<br />   Fixes an issue that could cause a crash at startup on certain ARMv8 processors, including the Jetson Nano.   Greengrass no longer closes a component's standard in, this reverts the behavior to the pre-2.10.0 behavior    |
+| Stream manager | Version 2.1.6 of the new [stream manager](stream-manager-component.md) is available.<a name="changelog-stream-manager-2.1.6"></a>**Bug fixes and improvements**<br /> Fixes an issue that could cause a crash at startup on certain ARMv8 processors, including the Jetson Nano.  |

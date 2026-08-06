@@ -49,7 +49,7 @@ The endpoint now runs entirely within the reserved training plan capacity. After
 ## Invoke the endpoint
 <a name="inference-endpoint-invoke"></a>
 
-During the active reservation window, the endpoint operates normally with guaranteed capacity.
+During the active reservation window, the endpoint operates normally with predictable access to capacity.
 
 ```
 aws sagemaker-runtime invoke-endpoint \

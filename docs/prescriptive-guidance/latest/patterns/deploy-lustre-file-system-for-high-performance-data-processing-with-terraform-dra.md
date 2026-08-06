@@ -107,7 +107,7 @@ The code for this pattern is available in the GitHub [Provision FSx for Lustre F
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Update the deployment configuration. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-lustre-file-system-for-high-performance-data-processing-with-terraform-dra.html) | AWS DevOps, DevOps engineer |
+| Update the deployment configuration. | 1. In the cloned repository on your local machine, navigate to the `fsx_deployment` directory:<pre>cd fsx_deployment</pre><br />2. Open the `terraform.tfvars` file, and update the values of the following variables:`vpc_id``subnet_id``data_repository_path``iam_instance_profile``kms_key_id`<br />For descriptions of these variables, see the [Best practices](#deploy-lustre-file-system-for-high-performance-data-processing-with-terraform-dra-best-practices) section.<br />3. In the same directory, open the `locals.tf` file and update the CIDR ranges for the `fsx_inress` and `fsx_egress` security group variables.<br />4. If needed, open the `variables.tf`  file and update the default values of these variables:`storage_capacity``deployment_type``per_unit_storage_throughput`<br />For descriptions of these variables, see the [Best practices](#deploy-lustre-file-system-for-high-performance-data-processing-with-terraform-dra-best-practices) section. | AWS DevOps, DevOps engineer |
 | Initialize the Terraform environment. | To initialize your environment to run the Terraform `fsx_deployment` module, run:<pre>terraform init</pre> | AWS DevOps, DevOps engineer |
 | Validate the Terraform syntax. | To check for syntax errors and to confirm that your configuration is correct, run:<pre>terraform validate </pre> | AWS DevOps, DevOps engineer |
 | Validate the Terraform configuration. | To create a Terraform execution plan and preview the deployment, run:<pre>terraform plan -var-file terraform.tfvars</pre> | AWS DevOps, DevOps engineer |
@@ -118,7 +118,7 @@ The code for this pattern is available in the GitHub [Provision FSx for Lustre F
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Remove AWS resources. | After you finish using your FSx for Lustre environment, you can remove the AWS resources deployed by Terraform to avoid incurring unnecessary charges. The Terraform module provided in the code repository automates this cleanup.[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-lustre-file-system-for-high-performance-data-processing-with-terraform-dra.html) | AWS DevOps, DevOps engineer |
+| Remove AWS resources. | After you finish using your FSx for Lustre environment, you can remove the AWS resources deployed by Terraform to avoid incurring unnecessary charges. The Terraform module provided in the code repository automates this cleanup.1. In your local repository, navigate to the `fsx_deployment` directory:<pre>cd fsx_deployment</pre><br />2. Run the command: <pre>terraform destroy -var-file terraform.tfvars</pre> | AWS DevOps, DevOps engineer |
 
 ## Troubleshooting
 <a name="deploy-lustre-file-system-for-high-performance-data-processing-with-terraform-dra-troubleshooting"></a>

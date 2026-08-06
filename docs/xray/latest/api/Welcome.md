@@ -7,4 +7,4 @@ source_url: https://docs.aws.amazon.com/xray/latest/api/Welcome.html
 
  AWS X-Ray provides APIs for managing debug traces and retrieving service maps and other data created by processing those traces.
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

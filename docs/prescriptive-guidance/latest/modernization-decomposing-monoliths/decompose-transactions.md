@@ -11,7 +11,7 @@ In a distributed system, an application typically has to call multiple microserv
 |
 | Advantages | Disadvantages |
 | --- |--- |
-| Faster response times.You don't have to worry about data consistency.Improved availability. | Multiple modules can be packaged together, and this can create a monolith.Multiple functionalities are implemented in a single microservice instead of separate microservices, which increases cost and complexity.Transaction-oriented microservices can grow if the number of business domains and dependencies among them is high.Inconsistent versions might be deployed at the same time for the same business domain. |
+| + Faster response times.<br />+ You don't have to worry about data consistency.<br />+ Improved availability. | + Multiple modules can be packaged together, and this can create a monolith.<br />+ Multiple functionalities are implemented in a single microservice instead of separate microservices, which increases cost and complexity.<br />+ Transaction-oriented microservices can grow if the number of business domains and dependencies among them is high.<br />+ Inconsistent versions might be deployed at the same time for the same business domain. |
 
 In the following illustration, the insurance monolith is broken down into multiple microservices based on transactions.
 

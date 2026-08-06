@@ -50,6 +50,7 @@ The following actions are supported by Amazon DynamoDB:
 +  [RestoreTableFromBackup](API_RestoreTableFromBackup.md)
 +  [RestoreTableToPointInTime](API_RestoreTableToPointInTime.md)
 +  [Scan](API_Scan.md)
++  [SearchVectors](API_SearchVectors.md)
 +  [TagResource](API_TagResource.md)
 +  [TransactGetItems](API_TransactGetItems.md)
 +  [TransactWriteItems](API_TransactWriteItems.md)

@@ -26,4 +26,4 @@ The following table lists AWS-provided components that include new and updated f
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.8.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.8.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2022-10-13.html) |
+| Greengrass nucleus | Version 2.8.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.8.1"></a>**Bug fixes and improvements**<br />   Fixes an issue where deployment error codes were not generated correctly from Greengrass API errors.   Fixes an issue where fleet status updates send inaccurate information when a component reaches an `ERRORED` state during a deployment.   Fixes an issue where deployments couldn’t complete when Greengrass had more than 50 existing subscriptions.    |

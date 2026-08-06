@@ -207,7 +207,7 @@ The following table describes the changes in each version of the component.
 |  **Version**  |  **Changes**  |
 | --- | --- |
 | 1.0.5 | General bug fixes and improvements. |
-| 1.0.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/kvs-edge-connector-component.html)  |
+| 1.0.4 |  **Bug fixes and improvements**<br />   Fixes an issue that caused live uploading to stop.     |
 | 1.0.3 | General bug fixes and improvements. |
 | 1.0.1 | General bug fixes and improvements. |
 | 1.0.0 | Initial version. |

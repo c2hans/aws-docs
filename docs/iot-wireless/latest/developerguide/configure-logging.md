@@ -20,7 +20,7 @@ For information about what a sample CloudWatch logs looks like and how you can u
 
 | Name | Possible values | Description |
 | --- | --- | --- |
-| logLevel | `INFO`, `ERROR`, or `DISABLED` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/configure-logging.html)  |
+| logLevel | `INFO`, `ERROR`, or `DISABLED` |  +  `ERROR`: Displays any error that causes an operation to fail. Logs include only `ERROR` information. <br />+  `INFO`: Provides high-level information about the flow of things. Logs include `INFO` and `ERROR` information. <br />+  `DISABLED`: Disables all logging.   |
 | resource | `WirelessGateway`, `WirelessDevice`, or `FuotaTask` | The type of the resource, which can be `WirelessGateway`, `WirelessDevice`, or `FuotaTask`. |
 | wirelessGatewayType | LoRaWAN | The type of the wireless gateway, when resource is WirelessGateway, which is always LoRaWAN. |
 | wirelessDeviceType | LoRaWAN or Sidewalk | The type of the wireless device, when resource is WirelessDevice, which can be LoRaWAN or Sidewalk. |

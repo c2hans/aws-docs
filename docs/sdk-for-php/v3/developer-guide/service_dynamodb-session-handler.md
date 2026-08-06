@@ -130,11 +130,11 @@ Ultimately, the throughput and the costs required for your sessions table will c
 
 |  |  |
 | --- |--- |
-| Read via `session_start()`  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_dynamodb-session-handler.html)  |
-| Read via `session_start()` (Using session locking) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_dynamodb-session-handler.html)  |
-| Write via `session_write_close()`  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_dynamodb-session-handler.html)  |
-| Delete via `session_destroy()`  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_dynamodb-session-handler.html)  |
-| Garbage Collection |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/service_dynamodb-session-handler.html)  |
+| Read via `session_start()`  |  +  1 read operation (only 0.5 if `consistent_read` is `false`). <br />+  (Conditional) 1 write operation to delete the session if it is expired.   |
+| Read via `session_start()` (Using session locking) |  +  A minimum of 1 *write* operation. <br />+  (Conditional) Additional write operations for each attempt at acquiring a lock on the session. Based on configured lock wait time and retry options. <br />+  (Conditional) 1 write operation to delete the session if it is expired.   |
+| Write via `session_write_close()`  |  +  1 write operation.   |
+| Delete via `session_destroy()`  |  +  1 write operation.   |
+| Garbage Collection |  +  0.5 read operations **per 4 KB of data in the table** to scan for expired sessions. <br />+  1 write operation **per expired item** to delete it.   |
 
 ## Session locking
 <a name="ddbsh-session-locking"></a>

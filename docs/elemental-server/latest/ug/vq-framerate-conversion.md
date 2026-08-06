@@ -25,6 +25,6 @@ framerate conversion is typically used when producing content for devices that u
 
 | Location of Field on Web Interface | Location of Tag in XML |
 | --- | --- |
-| Stream – Video > Advanced > Framerate | stream\_assembly/video\_description/{{codec}}/framerate\_numerator<br />stream\_assembly/video\_description/{{codec}}/framerate\_denominator<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-framerate-conversion.html) |
-| Stream – Video > Advanced > Interpolated | stream\_assembly/video\_description/{{codec}}/interpolate\_frc<br />where {{codec}} is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-framerate-conversion.html) |
-| Stream – Video > Advanced > Slow PAL | stream\_assembly/video\_description/{{codec}}/slow\_pal<br />where {{codec}} is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-framerate-conversion.html) |
+| Stream – Video > Advanced > Framerate | stream\_assembly/video\_description/{{codec}}/framerate\_numerator<br />stream\_assembly/video\_description/{{codec}}/framerate\_denominator<br />where {{codec}} is one of the following:+ **h264\_settings**<br />+ **vc1\_settings**<br />+ **mpeg2\_settings**<br />+ **h265\_settings**<br />+ **prores\_settings** |
+| Stream – Video > Advanced > Interpolated | stream\_assembly/video\_description/{{codec}}/interpolate\_frc<br />where {{codec}} is:+ **h264\_settings**<br />+ **vc1\_settings**<br />+ **mpeg2\_settings**<br />+  **h265\_settings**<br />+  **prores\_settings** |
+| Stream – Video > Advanced > Slow PAL | stream\_assembly/video\_description/{{codec}}/slow\_pal<br />where {{codec}} is:+ **h264\_settings**<br />+  **vc1\_settings**<br />+ **mpeg2\_settings**<br />+ **h265\_settings**<br />+ **prores\_settings** |

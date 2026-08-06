@@ -205,8 +205,8 @@ Before disabling a template, review the resources in use to understand the poten
 
 | Error | Recommendation |
 | --- | --- |
-| Template resources failed to create |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/getting-started-industry-resource-templates.html)  |
-| Created resources don't appear in Profile Explorer |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/getting-started-industry-resource-templates.html)  |
+| Template resources failed to create |  1.  Check that you have the necessary permissions to create resources in your domain. <br />2.  Verify that you haven't reached the limit for calculated attributes or segments in your domain. <br />3.  Try enabling the template again. It will only attempt to create resources that don't already exist.   |
+| Created resources don't appear in Profile Explorer |  1.  Refresh your browser. <br />2.  Verify that you have the necessary Security Profiles permissions to view the resources. <br />3.  Check that the resources were successfully created in the Industry templates section.   |
 | Unable to enable multiple templates | Each domain can have multiple industry templates enabled. If you're experiencing issues, check that you haven't reached the resource limits for your domain. |
 | Need to delete template resources | Currently, the Getting Started feature does not provide a way to automatically delete all resources created by a template. You can manually delete individual resources through their respective management pages. |
 

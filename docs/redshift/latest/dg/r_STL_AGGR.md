@@ -35,7 +35,7 @@ STL\_AGGR only contains queries run on main provisioned clusters. It doesn't con
 | tbl | integer | Table ID. |
 | is\_diskbased | character(1) | If true (t), the query was run as a disk-based operation. If false (f), the query was run in memory. |
 | workmem | bigint | Number of bytes of working memory assigned to the step. |
-| type | character(6) | The type of step. Valid values are: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_AGGR.html)  |
+| type | character(6) | The type of step. Valid values are: +  HASHED. Indicates that the step used grouped, unsorted aggregation. <br />+  PLAIN. Indicates that the step used ungrouped, scalar aggregation. <br />+  SORTED. Indicates that the step used grouped, sorted aggregation.   |
 | resizes | integer | This information is for internal use only. |
 | flushable | integer | This information is for internal use only. |
 

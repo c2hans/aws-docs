@@ -81,7 +81,6 @@ To build a container image using an AWS base image, choose the instructions for 
 | Tags | Runtime | Operating system | Dockerfile | Deprecation |
 | --- | --- | --- | --- | --- |
 | al2023 | OS-only Runtime | Amazon Linux 2023 | [Dockerfile for OS-only Runtime on GitHub](https://github.com/aws/aws-lambda-base-images/blob/provided.al2023/Dockerfile.provided.al2023) |  Jun 30, 2029  |
-| al2 | OS-only Runtime | Amazon Linux 2 | [Dockerfile for OS-only Runtime on GitHub](https://github.com/aws/aws-lambda-base-images/blob/provided.al2/Dockerfile.provided.al2) |  Jul 31, 2026  |
 
 Amazon Elastic Container Registry Public Gallery: [gallery.ecr.aws/lambda/provided](https://gallery.ecr.aws/lambda/provided)
 

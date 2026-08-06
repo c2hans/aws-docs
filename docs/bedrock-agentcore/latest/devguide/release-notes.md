@@ -7,6 +7,32 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/releas
 
 We recommend subscribing to the RSS feed so updates to these notes are delivered to your Inbox.
 
+## August 2026
+<a name="_august_2026"></a>
+
+### AWS Agent Registry launches under the new `agent-registry` namespace
+<a name="shared_aws_agent_registry_launches_under_the_new_agent_registry_namespace"></a>
+
+ AWS Agent Registry launches under the new `agent-registry` namespace. With AWS Agent Registry, you can create a private, governed catalog of agents, tools, skills, MCP servers, and custom resources, and expose it through the AWS console, control-plane and data-plane APIs, or the registry’s MCP endpoint. This release adds two new discovery APIs (`ListDiscoverableRegistryRecords` for paginated browsing and `BatchGetDiscoverableRegistryRecord` for bulk retrieval), record tagging, a required `recordType` field, and a redesigned **Record directory** console page that unifies browse and search. Available in nine AWS Regions. See [AWS Agent Registry Developer Guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html).
+
+### Gateway: Configurable rate limits
+<a name="_gateway_configurable_rate_limits_2"></a>
+
+AgentCore Gateway now supports customer-configurable rate limiting, giving gateway owners fine-grained control over how callers consume gateway resources. Previously, rate limits were service-managed only (a static default per gateway with manual per-account overrides). Customers can now define their own rate limits scoped to specific callers, targets, tools, or models — enabling multi-tenant isolation without application-layer workarounds.
+
+Rate limits use a dimensional scoping model. Each limit defines `dimensionKeys` — the axes along which traffic is bucketed — and `entries` — specific dimension-value combinations with their own rates. Supported dimension types include JWT claims (`$.context.jwt.sub`), IAM principals (`iam.sourceIdentity`), target names, tool names, and qualified model IDs. Wildcard (`*`) catch-all entries provide default rate buckets, while the most-specific-match-wins evaluation model lets you layer group-level fairness with individual-level caps.
+
+Three enforcement metrics are supported:
++  **Requests (RPS/RPM)** — Cap the number of requests per second or per minute. Applies to all target types.
++  **Tokens (TPM)** — Cap token consumption per minute for inference workloads. Applies to inference targets using known operation paths (`/v1/chat/completions`, `/v1/messages`, `/v1/responses`). Uses pre-check estimation with post-response reconciliation for accurate budget tracking.
++  **Connections** — Cap the rate of new connections opened per second. Protects downstream targets from connection exhaustion independent of request rate.
+
+Multiple limits can be configured on a single gateway and are evaluated using AND semantics — a request must pass all applicable limits. The effective rate is `min(service_managed, customer_configured)`, meaning customers can tighten but never exceed the service ceiling. Setting `rate=0` on an entry acts as an explicit block for that dimension combination, enabling emergency caller isolation without gateway reconfiguration.
+
+Rate limit configuration changes propagate to the data plane fleet within 30 seconds. The system fails open on transient errors — individual enforcement failures allow the affected request rather than blocking customer traffic.
+
+Six API operations manage rate limits: `CreateRateLimit`, `GetRateLimit`, `UpdateRateLimit`, `DeleteRateLimit`, `ListRateLimits`, and `BatchPutRateLimitEntries`. See [Configure rate limits for your AgentCore gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-rate-limits.html).
+
 ## July 2026
 <a name="_july_2026"></a>
 
@@ -37,6 +63,20 @@ Amazon Bedrock AgentCore runtime agents can now deliver spans to the agent’s o
 Set `UNIFIED_TRACES_DESTINATION_ENABLED=true` on an agent runtime to deliver its spans to the agent’s log group, or `=false` to use the shared `aws/spans` log group. Starting July 20, 2026, newly created agents in supported AWS Regions use the agent’s log group by default. Agents created before this date keep the shared `aws/spans` log group unless you opt them in.
 
 This feature requires CloudWatch Transaction Search with trace segments sent to CloudWatch Logs, `logs:PutResourcePolicy` on the agent’s execution role, and ADOT version 0.18.0 or later. See [Add observability to your Amazon Bedrock AgentCore resources](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html).
+
+### Amazon Bedrock AgentCore Evaluations and Optimizations: AWS PrivateLink support
+<a name="amazon_bedrock_agentcore_evaluations_and_optimizations_shared_aws_privatelink_support"></a>
+
+With Amazon Bedrock AgentCore Evaluations and Optimizations, you can now call APIs over AWS PrivateLink without traversing the public internet. This covers batch evaluations, online evaluations, recommendations, A/B testing, and configuration bundles. Create a VPC interface endpoint using the service name `com.amazonaws.region.bedrock-agentcore`. Attach endpoint policies to control which principals, actions, and resources are allowed. This feature is available in all commercial AWS Regions where Amazon Bedrock AgentCore Evaluations and Optimizations is available.
+
+### Evaluations: Expanded agent framework support
+<a name="_evaluations_expanded_agent_framework_support_2"></a>
+
+Amazon Bedrock AgentCore Evaluations now evaluates agents built with OpenAI Agents, LlamaIndex, Google ADK, and Claude Agent SDK, in addition to Strands Agents and LangGraph. Each framework is supported through its OpenTelemetry or OpenInference instrumentation library, and the documentation lists the scope name and recommended version for each combination.
+
+Evaluations also adds generic framework support, which evaluates agents beyond the frameworks listed above. Configure your framework or your own custom instrumentation to emit telemetry in the OpenTelemetry generative AI semantic conventions or the OpenInference semantic conventions, and Evaluations classifies your spans and extracts the values that evaluators need. The documentation lists the scope names, identifying attributes, and content attributes to set.
+
+Each framework has its own page covering how to instrument your agent, how spans are identified, how the service extracts the values it needs, and example spans. See [Supported agent frameworks](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/supported-frameworks.html).
 
 ### Runtime and Built-in Tools: ActiveSessionCount Metric
 <a name="_runtime_and_built_in_tools_activesessioncount_metric_2"></a>
@@ -265,7 +305,7 @@ Gateway and Policy services are now available across all availability zones with
 ### AgentCore Registry is now in Public Preview
 <a name="_agentcore_registry_is_now_in_public_preview_2"></a>
 
- AWS Agent Registry for centralized agent discovery and governance launched in Preview. Customers can create a private, governed catalog and discovery layer for agents, tools, skills, MCP servers, and custom resources. Accessible via Console UI, APIs, or as an MCP server queryable from IDEs. Supports IAM and OAuth (Custom JWT) based access. See [blog](https://aws.amazon.com/blogs/machine-learning/the-future-of-managing-agents-at-scale-aws-agent-registry-now-in-preview/) and [documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html).
+ AWS Agent Registry for centralized agent discovery and governance launched in Preview. With AWS Agent Registry, you can create a private, governed catalog and discovery layer for agents, tools, skills, MCP servers, and custom resources. Accessible via Console UI, APIs, or as an MCP server queryable from IDEs. Supports IAM and OAuth (Custom JWT) based access. See [The future of managing agents at scale: AWS Agent Registry now in Preview](https://aws.amazon.com/blogs/machine-learning/the-future-of-managing-agents-at-scale-aws-agent-registry-now-in-preview/) on the AWS Machine Learning Blog, and [AWS Agent Registry Developer Guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html).
 
 ### Observability: Cross-Account Monitoring
 <a name="_observability_cross_account_monitoring_2"></a>

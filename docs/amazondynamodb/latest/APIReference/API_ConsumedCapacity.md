@@ -48,6 +48,13 @@ Type: String
 Length Constraints: Minimum length of 1. Maximum length of 1024.
 Required: No
 
+ ** VectorIndexes **   <a name="DDB-Type-ConsumedCapacity-VectorIndexes"></a>
+The amount of throughput consumed on each vector index affected by the operation. Each entry contains `VectorWriteRequestBytes` (for write operations) or `VectorSearchRequestBytes` (for search operations).
+Type: String to [VectorCapacity](API_VectorCapacity.md) object map
+Key Length Constraints: Minimum length of 3. Maximum length of 255.
+Key Pattern: `[a-zA-Z0-9_.-]+`
+Required: No
+
  ** WriteCapacityUnits **   <a name="DDB-Type-ConsumedCapacity-WriteCapacityUnits"></a>
 The total number of write capacity units consumed by the operation.
 Type: Double

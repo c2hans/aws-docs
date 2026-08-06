@@ -25,8 +25,8 @@ Set the `modelId` to one of the following to use Amazon Nova models:
 
 | Model | Model ID |
 | --- |--- |
-| Nova 2 Lite |    global.amazon.nova-2-lite-v1:0   us.amazon.nova-2-lite-v1:0    |
-| Nova 2 Sonic |    global.amazon.nova-2-sonic-v1:0   us.amazon.nova-2-sonic-v1:0    |
+| Nova 2 Lite |  +  global.amazon.nova-2-lite-v1:0 <br />+  us.amazon.nova-2-lite-v1:0   |
+| Nova 2 Sonic |  +  global.amazon.nova-2-sonic-v1:0 <br />+  us.amazon.nova-2-sonic-v1:0   |
 | Nova Multimodal Embeddings | amazon.nova-2-multimodal-embeddings-v1:0 |
 
 ## Important: Timeout Configuration

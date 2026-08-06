@@ -78,8 +78,8 @@ The following diagram shows an architecture for containerizing a Java microservi
 | --- | --- | --- |
 | Create a deployment file.  | Create a YAML file called `deployment.yaml` based on the *Example deployment file *code in the [Additional information](#deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer-additional) section of this pattern.Use the image URL that you copied earlier as the path of the image file for the Amazon ECR repository. | Developer, System Admin |
 | Deploy the Java microservices on the Amazon EKS cluster.  | To create a deployment in your Amazon EKS cluster, run the `kubectl apply -f deployment.yaml` command. | Developer, System Admin |
-| Verify the status of the pods. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer.html) | Developer, System Admin |
-| Create a service. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer.html) | Developer, System Admin |
+| Verify the status of the pods. | 1. To verify the status of the pods, run the `kubectl get pods` command.<br />2. Wait for the status to change to **Ready**. | Developer, System Admin |
+| Create a service. | 1. Create a file called `service.yaml` based on the *Example service file *code in the [Additional information](#deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer-additional) section of this pattern.<br />2. Run the `kubectl apply -f service.yaml` command. | Developer, System Admin |
 | Install the AWS Load Balancer Controller add-on. | Follow the instructions from [Installing the AWS Load Balancer Controller add-on](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html) in the Amazon EKS documentation.You must have the add-on installed to create an Application Load Balancer or Network Load Balancer for a Kubernetes service. | Devloper, System Admin |
 | Create an ingress resource. | Create a YAML file called `ingress.yaml` based on the *Example ingress resource file *code in the [Additional information](#deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer-additional) section of this pattern. | Developer, System Admin |
 | Create an Application Load Balancer. | To deploy the ingress resource and create an Application Load Balancer, run the `kubectl apply -f ingress.yaml` command. | Developer, System Admin |
@@ -89,7 +89,7 @@ The following diagram shows an architecture for containerizing a Java microservi
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Test and verify the application. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer.html) | Developer, System Admin |
+| Test and verify the application. | 1. To get the load balancer's DNS name from the ADDRESS field, run the `kubectl get ingress.networking.k8s.io/java-microservice-ingress` command.<br />2. On an EC2 instance in the same VPC as your Amazon EKS nodes, run the `curl -v <DNS address from previous command>` command.  | Developer, System Admin |
 
 ## Related resources
 <a name="deploy-a-sample-java-microservice-on-amazon-eks-and-expose-the-microservice-using-an-application-load-balancer-resources"></a>

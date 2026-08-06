@@ -63,7 +63,7 @@ By using the Amazon CloudFront content delivery network, you can reduce the late
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repository. | Run the following command to clone the sample application's repository:<pre>git clone https://github.com/aws-samples/react-cors-spa react-cors-spa && cd react-cors-spa</pre> | App developer, AWS DevOps |
-| Locally deploy the application. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html) | App developer, AWS DevOps |
+| Locally deploy the application. | 1. In the project directory, run the `npm install` command to initiate the application dependencies. <br />2. Run the `yarn dev` command to start the application locally.  | App developer, AWS DevOps |
 |  Locally access the application. | Open a browser window and enter the `http://localhost:3000` URL to access the application. | App developer, AWS DevOps |
 
 ### Deploy the application
@@ -71,10 +71,10 @@ By using the Amazon CloudFront content delivery network, you can reduce the late
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the AWS CloudFormation template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html) | App developer, AWS DevOps |
-| Customize your application source files. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html) | App developer |
+| Deploy the AWS CloudFormation template. | 1. Sign in to the AWS Management Console, and then open the [AWS CloudFormation console](https://console.aws.amazon.com/cloudformation).<br />2. Choose **Create Stack**, and then choose **With new resources (standard)**.<br />3. Choose **Upload a template file**.<br />4. Choose **Choose file**, choose the `react-cors-spa-stack.yaml` file from the cloned repository, and then choose **Next**.<br />5. Enter a name for your stack, and then choose **Next**.<br />6. Keep all default options, and then choose **Next**.<br />7. Review the final settings for your stack, and then choose **Create stack**. | App developer, AWS DevOps |
+| Customize your application source files. | 1. After your stack is deployed, open the **Output** tab and identify the `Bucket` name and `APIDomain` value.<br />2. Copy the CloudFront distribution domain for the REST API.<br />3. Navigate to `<project_root>/src/pages/index.tsx`, and then insert or paste this domain into the `APIEndPoint` variable value on line 13 of the `index.tsx` file. | App developer |
 | Build the application package. | In your project directory, run the `yarn build` command to build the application package. | App developer |
-| Deploy the application package. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html) | App developer, AWS DevOps |
+| Deploy the application package. | 1. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/).<br />2. Identify and choose the S3 bucket that was created earlier by the CloudFormation stack.<br />3. Choose **Upload**, and then choose **Add files**.<br />4. Choose the content of your `out` folder.<br />5. Choose **Add folder**, and then choose the `_next` directory.Choose the `_next` directory, not the contents.<br />6. Choose **Upload** to upload the files and directory to your S3 bucket. | App developer, AWS DevOps |
 
 ### Test the application
 <a name="test-the-application"></a>
@@ -88,8 +88,8 @@ By using the Amazon CloudFront content delivery network, you can reduce the late
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the S3 bucket contents. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html) | AWS DevOps, App developer |
-| Delete the CloudFormation stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront.html) | AWS DevOps, App developer |
+| Delete the S3 bucket contents. | 1. Open the [Amazon S3 console](https://console.aws.amazon.com/s3/) and choose the bucket that was created earlier by the stack (the first bucket whose name starts with `react-cors-spa-`). <br />2. Choose **Empty** to delete the bucket’s contents.<br />3. Choose the second bucket that was created earlier by the stack (the second bucket whose name starts with `react-cors-spa-` and ends with `-logs`). <br />4. Choose **Empty** to delete the bucket’s contents. | AWS DevOps, App developer |
+| Delete the CloudFormation stack. | 1. Open the [CloudFormation console](https://console.aws.amazon.com/cloudformation) and choose the stack that you created earlier.<br />2. Choose **Delete** to delete the stack and all related resources. | AWS DevOps, App developer |
 
 ## Related resources
 <a name="deploy-a-react-based-single-page-application-to-amazon-s3-and-cloudfront-resources"></a>

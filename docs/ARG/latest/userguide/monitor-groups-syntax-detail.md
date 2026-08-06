@@ -26,7 +26,7 @@ The information included in the `details` section when this `detail-type` is spe
 | --- | --- | --- |
 | event-sequence | Double | A monotonically increasing number that specifies the sequence of events for a specific group. The number resets when you delete the group and create another group with the same name.  |
 | group | [`Group`](#monitor-groups-syntax-detail-group-object) JSON object | The group object associated with the event by its ARN, name, and unique ID. |
-| state-change | String | The type of state change that occurred. Can be any of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ARG/latest/userguide/monitor-groups-syntax-detail.html) |
+| state-change | String | The type of state change that occurred. Can be any of the following values:+  [`create`](#monitor-groups-syntax-detail-state-change-create) <br />+  [`update`](#monitor-groups-syntax-detail-state-change-update) <br />+  [`delete`](#monitor-groups-syntax-detail-state-change-delete)  |
 | old-state  | GroupState JSON object | The state of the group before the change. The object includes only the values of properties that changed.  |
 | `new-state` | GroupState JSON object | The state of the group after the change. The object includes only the values of properties that changed. |
 
@@ -185,7 +185,7 @@ The information included in the `details` section when this `detail-type` is spe
 | --- | --- | --- |
 | event-sequence | Double | A monotonically increasing number that indicates the sequence of events for a specific group. The number resets when the group is deleted and its unique ID changes.  |
 | group | Group JSON object | Identifies the group object associated with the event by its ARN, name, and unique ID. |
-| `resources` | Array of ResourceChange JSON objects | An array of resources whose group membership has changed.<br />This `ResourceChange` object contains the following fields for each resource:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ARG/latest/userguide/monitor-groups-syntax-detail.html) |
+| `resources` | Array of ResourceChange JSON objects | An array of resources whose group membership has changed.<br />This `ResourceChange` object contains the following fields for each resource:+  `membership-change` – The value is either `"add"` or `"remove"`. <br />+  `arn` – The ARN of the resource added or removed. <br />+  `resource-type` – The type of resource added or removed.  |
 
 The following code example illustrates the contents of the event for a typical membership change type. This example shows one resource being added to the group, and one resource being removed from the group.
 

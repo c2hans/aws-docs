@@ -27,7 +27,7 @@ You can use Amazon EKS with compute in AWS Regions, AWS Local Zones, and AWS Wav
 | --- | --- | --- |
 | Kubernetes control plane management |  AWS-managed |  AWS-managed |
 | Kubernetes control plane location |  AWS Regions |  AWS Regions |
-| Kubernetes data plane |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eks/latest/userguide/eks-deployment-options.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eks/latest/userguide/eks-deployment-options.html)  |
+| Kubernetes data plane |  +  Amazon EKS Auto Mode <br />+  Amazon EKS Managed Node Groups <br />+  Amazon EC2 self-managed nodes <br />+   AWS Fargate   |  +  Amazon EKS Managed Node Groups (Local Zones only) <br />+  Amazon EC2 self-managed nodes   |
 | Kubernetes data plane location |  AWS Regions |  AWS Local or Wavelength Zones |
 
 ## Amazon EKS in your data center or edge environments

@@ -11,8 +11,6 @@ There are two recording options for IVS real-time streaming:
 
 Individual participant recording incurs no additional Amazon IVS charges, while composite recording incurs charges for the hourly rate for the video encoded. Both recording options incur standard S3 storage and request costs. For more details, see [Amazon IVS pricing](https://aws.amazon.com/ivs/pricing/).
 
-For a more customizable solution, consider using the open-source [IVSStageSaver](https://github.com/aws-samples/amazon-ivs-stage-recorder)r project as the foundation for your own self-hosted recording service.
-
 ## Individual Participant Recording
 <a name="ind-par-rec"></a>
 

@@ -22,11 +22,11 @@ Each service type is further broken down into a qualifying service name, which c
 
 | Service name | Service type | Service operations |
 | --- | --- | --- |
-| user | Admin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
-| quorum | Admin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
-| cluster1 | Admin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
-| key-management | Crypto User |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
-| key-usage | Crypto User |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-qm-token-gen.html)  |
+| user | Admin |  + user create<br />+ user delete<br />+ user change-password<br />+ user change-mfa  |
+| quorum | Admin |  + quorum token-sign set-quorum-value  |
+| cluster1 | Admin |  + cluster mtls register-trust-anchor<br />+ cluster mtls deregister-trust-anchor<br />+ cluster mtls set-enforcement  |
+| key-management | Crypto User |  + key wrap<br />+ key unwrap<br />+ key share<br />+ key unshare<br />+ key set-attribute  |
+| key-usage | Crypto User |  + key sign  |
 
 [1] Cluster service is exclusively available on hsm2m.medium
 

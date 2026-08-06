@@ -21,16 +21,16 @@ Amazon Quick implements a hierarchical permission model for extensions that bala
 
 | User Type | Capabilities |
 | --- | --- |
-| Administrators |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Authors |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Readers (Reader Pro only) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Administrators |  +  Enable/remove extension access to their organization's workspaces and organizations <br />+  Create extensions for Slack, Teams, Word, and Outlook <br />+  Assign owners for extensions created <br />+  Control whether extensions are available for users in Amazon Quick <br />+  Use all enabled extensions   |
+| Authors |  +  Create and install extensions using administrator enabled extension access <br />+  Edit/delete extensions for which they are owners <br />+  Use all enabled extensions   |
+| Readers (Reader Pro only) |  +  Use all enabled extensions   |
 
 Beyond the broad user type categories, Amazon Quick implements granular permission controls that determine specific actions users can perform with individual extensions. These permissions operate independently of user types, allowing administrators to fine-tune access based on organizational needs and security requirements. The following table outlines how user permissions determine what you can do with a extension:
 
 | Permissions Type | Permissions |
 | --- | --- |
-| Owners |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Viewers |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Owners |  +  Edit extension name and description <br />+  Install the extension in a workspace or organization <br />+  Grant ownership and editing permissions to specific users and groups   |
+| Viewers |  +  View extension name and description <br />+  Access links to open in Slack, M365, and browser <br />+  Use the extensions   |
 
 **Important**
 The Amazon Quick browser extension extension doesn't need any admin setup to install and use.
@@ -47,8 +47,8 @@ Creating and adjusting extension access requires IAM administrator privileges. A
 
 | Responsibility area | Administrator capabilities |
 | --- | --- |
-| Infrastructure setup |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Security and compliance |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Infrastructure setup |  +  Connect extension applications to organizational systems (Slack workspaces, Microsoft 365 tenants) <br />+  Handle OAuth authorization and tenant-level permissions <br />+  Manage platform-specific installation methods: manifest-only for Word/Outlook, OAuth-only for Slack/Teams   |
+| Security and compliance |  +  Manage enterprise security and compliance settings <br />+  Control which extension types are available to the organization   |
 
 ## Amazon Quick author capabilities
 <a name="author-extension-role"></a>
@@ -65,8 +65,8 @@ This translates to two main setup flows:
 
 | Capability area | Author functions |
 | --- | --- |
-| Configuration and deployment |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Management and sharing |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Configuration and deployment |  +  Download and manage installation manifests for deployment (with full permissions) <br />+  Deploy extension instances using OAuth or manifest-based methods (with full permissions) <br />+  Complete app setup and installation (with full permissions)   |
+| Management and sharing |  +  Manage extension sharing and access permissions <br />+  View, share, and delete deployed extensions <br />+  Edit extensions and access creation features (with full permissions)   |
 
 ## Amazon Quick end user access
 <a name="user-extension-role"></a>
@@ -75,23 +75,23 @@ End users represent the primary beneficiaries of extension functionality, access
 
 | Access level | User capabilities |
 | --- | --- |
-| Daily usage and productivity |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Knowledge and actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Daily usage and productivity |  +  Access extensions directly within existing workflow applications <br />+  Use extensions for knowledge access, document analysis, and action taking <br />+  Benefit from seamless integration without context switching between applications   |
+| Knowledge and actions |  +  Access organizational knowledge bases and custom agents through extension interfaces <br />+  Perform external actions in third-party applications using configured [action connectors](https://docs.aws.amazon.com/quicksuite/latest/userguide/action-connectors.html) <br />+  Receive permissions-aware responses based on individual access levels   |
 
 The following table shows how each user type in Amazon Quick interacts with extensions.
 
 | User Type | Capabilities |
 | --- | --- |
-| Administrators |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Authors |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Readers (Reader Pro only) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Administrators |  +  Enable/remove extension access to their organization's workspaces and organizations <br />+  Create extensions for Slack, Teams, Word, and Outlook <br />+  Assign owners for extensions created <br />+  Control whether extensions are available for users in Amazon Quick <br />+  Use all enabled extensions   |
+| Authors |  +  Create and install extensions using administrator enabled extension access <br />+  Edit/delete extensions for which they are owners <br />+  Use all enabled extensions   |
+| Readers (Reader Pro only) |  +  Use all enabled extensions   |
 
 The following table outlines how user permissions determine what you can do with a extension:
 
 | Permissions Type | Permissions |
 | --- | --- |
-| Owners |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
-| Viewers |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/extension-roles-overview.html)  |
+| Owners |  +  Edit extension name and description <br />+  Install the extension in a workspace or organization <br />+  Grant ownership and editing permissions to specific users and groups   |
+| Viewers |  +  View extension name and description <br />+  Access links to open in Slack, M365, and browser <br />+  Use the extensions   |
 
 **Important**
 The Amazon Quick browser extension extension doesn't need any admin setup to install and use.

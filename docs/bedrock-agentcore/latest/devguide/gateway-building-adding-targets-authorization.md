@@ -51,7 +51,7 @@ The following table describes the fields in the `iamCredentialProvider` object:
 
 | Field | Required | Description |
 | --- | --- | --- |
-|  `service`  | Yes | The AWS service name used for SigV4 signing. This value must match the service name that the target expects when verifying the SigV4 signature. The following are common values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-building-adding-targets-authorization.html) |
+|  `service`  | Yes | The AWS service name used for SigV4 signing. This value must match the service name that the target expects when verifying the SigV4 signature. The following are common values:+   `bedrock-agentcore` – For MCP servers hosted on Amazon Bedrock AgentCore, such as the runtime (see [Deploy MCP servers in AgentCore Runtime](runtime-mcp.md)) or another gateway. <br />+   `execute-api` – For MCP servers or OpenAPI targets behind Amazon API Gateway. <br />+   `lambda` – For MCP servers behind Lambda Function URLs.  |
 |  `region`  | No | The AWS Region for SigV4 signing. If omitted, defaults to the gateway’s Region. |
 
 ## OAuth authorization

@@ -518,7 +518,7 @@ The following table describes the changes in each version of the connector.
 | 5 | <a name="isolation-mode-changelog"></a>Added the `IsolationMode` parameter to configure the containerization mode for the connector. |
 | 4 | <a name="upgrade-runtime-py3.7"></a>Upgraded the Lambda runtime to Python 3.7, which changes the runtime requirement. |
 | 3 | Fix to reduce excessive logging and other minor bug fixes. |
-| 2 | Added support for sending batched data records to Firehose at a specified interval.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/kinesis-firehose-connector.html) |
+| 2 | Added support for sending batched data records to Firehose at a specified interval.+ Also requires the `firehose:PutRecordBatch` action in the group role.<br />+ New `MemorySize`, `DeliveryStreamQueueSize`, and `PublishInterval` parameters.<br />+ Output message contains an array of status responses for the published data records. |
 | 1 | Initial release. |
 
 <a name="one-conn-version"></a>A Greengrass group can contain only one version of the connector at a time. For information about upgrading a connector version, see [Upgrading connector versions](connectors.md#upgrade-connector-versions).

@@ -24,4 +24,4 @@ To sign requests, we recommend that you use [Signature Version 4](https://docs.a
 +  [IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html). This topic presents a list of suggestions for using the IAM service to help secure your AWS resources.
 +  [Signing AWS API requests](https://docs.aws.amazon.com/general/latest/gr/signing_aws_api_requests.html). This set of topics walk you through the process of signing a request using an access key ID and secret access key.
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

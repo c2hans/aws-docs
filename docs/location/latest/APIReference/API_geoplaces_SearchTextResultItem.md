@@ -63,7 +63,7 @@ Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
 
  ** Contacts **   <a name="location-Type-geoplaces_SearchTextResultItem-Contacts"></a>
-List of potential contact methods for the result/place.
+List of potential contact methods for the place or result.
 Type: [Contacts](API_geoplaces_Contacts.md) object
 Required: No
 
@@ -93,7 +93,7 @@ Array Members: Fixed number of 4 items.
 Required: No
 
  ** OpeningHours **   <a name="location-Type-geoplaces_SearchTextResultItem-OpeningHours"></a>
- List of opening hours objects. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ List of opening hours objects. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [OpeningHours](API_geoplaces_OpeningHours.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No

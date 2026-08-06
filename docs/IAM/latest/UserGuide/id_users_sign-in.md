@@ -62,3 +62,4 @@ If users need programmatic access to work with your account, you can create an a
 The following resources can help you learn more about AWS sign-in.
 + The [AWS Sign-In User Guide](https://docs.aws.amazon.com/signin/latest/userguide/what-is-sign-in.html) helps you understand the different ways that you can sign in to Amazon Web Services (AWS), depending on what type of user you are.
 + You can sign in up to five different identities simultaneously in a single web browser in the AWS Management Console. For details, see [Signing in to multiple accounts](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/multisession.html) in the *AWS Management Console Getting Started Guide*.
++ To find the account ID or alias needed for sign-in, see [Viewing your AWS account ID](console-account-id.md) and [Using an alias for your AWS account ID](console-account-alias.md).

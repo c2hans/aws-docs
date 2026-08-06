@@ -27,7 +27,7 @@ This section provides release notes for the Amazon DCV Extension SDK by release 
 
 | Version | Release notes |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/extsdkguide/doc-history-release-notes.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/extsdkguide/doc-history-release-notes.html)  |
+|  +  Semantic version: 1.0.0   |  +  Added field `handle` to structure `StreamingView`. <br />+  Added field `ext_sdk_version` to structure `GetDcvInfoResponse`.   |
 
 ### 1.0.0 — April 3, 2023
 <a name="1.0.0"></a>
@@ -36,7 +36,7 @@ This section provides release notes for the Amazon DCV Extension SDK by release 
 
 | Version | Release notes |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/extsdkguide/doc-history-release-notes.html)  | Initial release of the Amazon DCV Extension SDK |
+|  +  Semantic version: 1.0.0   | Initial release of the Amazon DCV Extension SDK |
 
 ## Document History
 <a name="doc-history"></a>
@@ -47,5 +47,5 @@ The following table describes the documentation for this release of Amazon DCV E
 
 | Change | Description | Date |
 | --- | --- | --- |
-| Version 1.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/extsdkguide/doc-history-release-notes.html)  | October 22, 2025 |
+| Version 1.1.0 |  + Added field `handle` to structure `StreamingView`.<br />+ Added field `ext_sdk_version` to structure `GetDcvInfoResponse`.  | October 22, 2025 |
 | Initial release | First publication of this content. | April 3, 2023 |

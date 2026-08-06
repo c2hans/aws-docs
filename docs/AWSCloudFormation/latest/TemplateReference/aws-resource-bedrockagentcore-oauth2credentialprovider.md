@@ -110,3 +110,6 @@ Property description not available.
 
 `LastUpdatedTime`  <a name="LastUpdatedTime-fn::getatt"></a>
 Property description not available.
+
+`Status`  <a name="Status-fn::getatt"></a>
+Property description not available.

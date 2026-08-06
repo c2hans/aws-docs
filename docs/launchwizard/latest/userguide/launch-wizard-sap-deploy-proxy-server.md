@@ -37,27 +37,27 @@ Configure your Squid proxy server with the following steps.
 
 | Service name | Domains to be allowed |
 | --- | --- |
-| Amazon DynamoDB |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon EFS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon EBS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon EC2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon FSx |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| AWS Lambda |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon Route 53 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon CloudWatch |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| CloudFormation |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| AWS KMS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| AWS Secrets Manager |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| AWS Identity and Access Management |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| AWS Systems Manager |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon S3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| AWS CLI |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| SUSE infrastructure for SLES |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| SUSE packages | [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html) |
-| REDHAT repository |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Python packages |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon Cognito |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
-| Amazon Security Token Service |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-proxy-server.html)  |
+| Amazon DynamoDB |  **`.dynamodb.<<region>>.amazonaws.com``.dynamodb-fips.<<region>>.amazonaws.com`**<br />  |
+| Amazon EFS |  **`.elasticfilesystem.<<region>>.amazonaws.com``.elasticfilesystem-fips.<<region>>.amazonaws.com`**<br />  |
+| Amazon EBS |  **`.com.amazonaws.<<region>>.ebs`**<br />  |
+| Amazon EC2 |  **`.api.ec2.<<region>>.aws``.ec2.<<region>>.amazonaws.com``.ec2-fips.<<region>>.amazonaws.com``.ec2messages.<<region>>.amazonaws.com``.169.254.169.254`**<br />  |
+| Amazon FSx |  **`.fsx.<region>.amazonaws.com`**<br />  |
+| AWS Lambda |  **`.com.amazonaws.<<region>>.lambda``.lambda.<<region>>.amazonaws.com``.lambda-fips.<<region>>.amazonaws.com``.lambda.<<region>>.api.aws`**<br />  |
+| Amazon Route 53 |  **`.route53.amazonaws.com`**<br />  |
+| Amazon CloudWatch |  **`.com.amazonaws.<<region>>.evidently``.com.amazonaws.<<region>>.evidently-dataplane``.com.amazonaws.<<region>>.monitoring``.com.amazonaws.<<region>>.rum``.com.amazonaws.<<region>>.rum-dataplane``.com.amazonaws.<<region>>.synthetics``.com.amazonaws.<<region>>.events.monitoring.<<region>>.amazonaws.com``.logs.<<region>>.amazonaws.com``.monitoring-fips.<<region>>.amazonaws.com`**<br />  |
+| CloudFormation |  **`.cloudformation.<<region>>.amazonaws.com``.cloudformation-fips.<<region>>.amazonaws.com``.com.amazonaws.<<region>>.cloudformation`**<br />  |
+| AWS KMS |  **`.com.amazonaws.<<region>>.kms``.kms.<<region>>.amazonaws.com``.kms-fips.<<region>>.amazonaws.com`**<br />  |
+| AWS Secrets Manager |  **`.secretsmanager.<<region>>.amazonaws.com``.com.amazonaws.<<region>>.secretsmanager`**<br />  |
+| AWS Identity and Access Management |  **`.iam.amazonaws.com``.iam-fips.amazonaws.com`**<br />  |
+| AWS Systems Manager |  **`.ssm.<<region>>.amazonaws.com``.ssmmessages.<<region>>.amazonaws.com``amazon-ssm-us-east-1.s3.us-east-1.amazonaws.com`**<br />  |
+| Amazon S3 |  **`.s3.amazonaws.com``<<S3_bucket_for_HANA_backint_backups>>.s3.<<region>>.amazonaws.com``.s3.<<region>>.amazonaws.com``.s3.dualstack.us-east-1.amazonaws.com`**<br />  |
+| AWS CLI |  **`awscli.amazonaws.com`.**<br />  |
+| SUSE infrastructure for SLES |  **`.smt-ec2.susecloud.net``.54.225.105.144``.54.197.240.216``.107.22.231.220``.34.197.223.242`**<br />  |
+| SUSE packages | **`.scc.suse.com`**<br /> |
+| REDHAT repository |  **`.rhui.<<region>>.aws.ce.redhat.com`**<br />  |
+| Python packages |  **`.files.pythonhosted.org``.pypi.org``.python.org`**<br />  |
+| Amazon Cognito |  **`.cognito-identity.us-east-1.amazonaws.com`**<br />  |
+| Amazon Security Token Service |  **`.sts.amazonaws.com`**<br />  |
 
 ## Run Launch Wizard
 <a name="run-proxy-server"></a>

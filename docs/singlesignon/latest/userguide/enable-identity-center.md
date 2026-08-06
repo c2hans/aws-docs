@@ -39,6 +39,10 @@ Choose the tab for the type of IAM Identity Center instance you want to enable, 
 **Important**
 Perform this step only if you've configured the necessary permissions for use of the KMS customer managed key. Without proper permissions, this step may fail or disrupt IAM Identity Center administration and AWS managed applications.
 
+1. (Optional) By default, your instance has multi-account permissions enabled. If you plan to use IAM Identity Center only for application authentication and user management, turn off the **Enable multi-account permissions** toggle.
+
+   If you choose not to enable multi-account permissions now, the AWS accounts section does not appear in the IAM Identity Center console. IAM Identity Center does not deploy the service-linked role to member accounts. You can enable multi-account permissions later from the **Management** tab of the **Settings** page.
+
 1. Under **Enable IAM Identity Center**, choose **Enable**.
    + If you are signed in to the management account of an existing organization, IAM Identity Center begins enabling. Proceed to set up your environment.
    + If you have a standalone AWS account (not part of an organization), you see the **Enable IAM Identity Center with AWS Organizations** page. This option creates a new organization with your account as the management account. Review the information and choose **Enable** to complete the process.

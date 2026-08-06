@@ -5,19 +5,54 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/using-q-topics-on
 # Using Topics on sheets in Amazon Quick Sight
 <a name="using-q-topics-on-sheets"></a>
 
-Amazon Quick Sight provides a guided workflow for creating topics. You can step out of the guided workflow and come back to it later, without disrupting your work.
+You can use Quick Sight Topics as the data model for your analysis sheets. When you create an analysis from a Topic, you can select fields from any of the datasets in the Topic and Quick Sight automatically performs runtime inner joins based on the defined relationships. This eliminates the need to pre-join tables into a single flat dataset before building an analysis.
 
-By enabling one or more Quick Sight topics in your analysis workspace, you activate the ML-powered automated data prep , which speeds Natural Language (NL) topic creation. Automated data prep automatically selects high value fields, based on how they are used and on common Q&A needs. It automatically chooses user-friendly field names and synonyms, based on terms from existing analyses and on common dictionaries. It also automatically formats data, so it's immediately useful when presented.
+## Creating an analysis from a Topic
+<a name="topics-on-sheets-new"></a>
 
-Automated data prep binds the topic to your analysis and prepares an index for searching in natural language. A blue dot denotes this binding. Dashboard users find that the new Amazon Quick Sight topic is automatically selected, making it easier for them to query the dataset.
+To use a Topic as the data model for an analysis, use the following procedure.
 
-The following rules apply to working with topics:
-+ You must be an owner of the underlying dataset before you can create a topic using that dataset or an analysis that uses that dataset.
-+ You must be an owner of a topic before you can link the existing topic to an analysis.
+**To create an analysis from a Topic**
 
-**To enable a topic**
+1. On the Quick homepage, choose **Data** in the navigation pane, then choose the **Topics** tab.
 
-1. Open the analysis that you want to use with automated data prep .
+1. Open the Topic you want to use.
+
+1. Choose **Create analysis**.
+
+1. Select **Interactive sheet** and choose **Create**.
+
+1. In the analysis, the fields list shows columns from all datasets in the Topic. Select fields from multiple datasets and add them to a visual. Quick Sight performs runtime inner joins automatically based on the defined relationships.
+
+The following rules apply when working with Topics in analysis sheets:
++ You must have Owner or Viewer permissions on the Topic to use it in an analysis.
++ When a visual references fields from multiple datasets, Quick Sight uses the defined relationships to determine the join path and performs inner joins at runtime.
++ You can create calculated fields that reference columns from different datasets within the Topic.
++ Row-level security (RLS) rules are enforced during runtime joins. Users see only the intersection of rows they are permitted to access in each dataset.
++ Each dataset in the Topic can have its own independent refresh schedule. Visuals always reflect the latest data available in each dataset.
+
+**Note**
+Runtime joins in analysis sheets use inner join semantics only. Rows without matching keys in both datasets are excluded from visual results. If you need outer join behavior, use the Topic in Amazon Quick chat, where the LLM-powered chat agent can generate SQL with outer joins based on custom instructions.
+
+For more information about creating and configuring Topics, see [Working with Amazon Quick Sight Topics](topics.md).
+
+## Enabling legacy Topics in an analysis
+<a name="topics-on-sheets-legacy"></a>
+
+**Note**
+The following applies to legacy Topics only. For information about the differences between new Topics and legacy Topics, see [Working with legacy Topics](legacy-topics.md).
+
+For legacy Topics, you can enable a topic in an analysis to activate the ML-powered automated data prep, which speeds natural language topic creation. Automated data prep automatically selects high-value fields, chooses user-friendly field names and synonyms, and formats data for presentation.
+
+Automated data prep binds the legacy Topic to your analysis and prepares an index for searching in natural language. Dashboard users find that the linked topic is automatically selected in the search bar, making it easier for them to query the dataset.
+
+The following rules apply to working with legacy Topics in an analysis:
++ You must be an owner of the underlying dataset before you can create a legacy Topic using that dataset or an analysis that uses that dataset.
++ You must be an owner of a legacy Topic before you can link it to an analysis.
+
+**To enable a legacy Topic**
+
+1. Open the analysis that you want to use with automated data prep.
 
 1. On the top navigation bar, choose the topic icon.
 
@@ -31,8 +66,4 @@ The following rules apply to working with topics:
 
    Now, when users navigate to the dashboard, the linked topic is automatically selected in the search bar.
 
-After a topic is linked to an analysis, further updates to the analysis are not automatically synced to the topic. Authors need to manage updating topics manually from the **Topics** page.
-
-When you enable a topic for an analysis or dashboard, you are starting a process where automated data prep learns from how you analyze your data. Ask it questions, and provide feedback and further information by following the screen prompts. The more you interact with the topic, the better prepared it becomes to answer your questions.
-
-To learn more, see [https://docs.aws.amazon.com/quicksight/latest/user/quicksight-q-starting-from-sheets.html](https://docs.aws.amazon.com/quicksight/latest/user/quicksight-q-starting-from-sheets.html).
+After a legacy Topic is linked to an analysis, further updates to the analysis are not automatically synced to the topic. Authors need to manage updating topics manually from the **Topics** page.

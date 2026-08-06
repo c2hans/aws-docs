@@ -41,7 +41,7 @@ With this parameter, you can resize the capacity from 2x of instance memory up t
 - **Aurora PostgreSQL-Compatible Edition**
   - **Cluster storage configuration:** Standard / **Optimized Reads-enabled temporary objects:** Yes / **Optimized Reads-enabled tiered cache:** No
   - **Cluster storage configuration:** I/O-Optimized / **Optimized Reads-enabled temporary objects:** Yes / **Optimized Reads-enabled tiered cache:** Yes
-  - **Versions supported:** [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.optimized.reads.html)
+  - **Versions supported:** +  14.9 and higher versions, 15.4 and higher versions, 16.1 and all higher versions for r6gd and r6id instances <br />+  14.12 and higher versions, 15.7 and higher versions, 16.3 and higher versions, 17.4 and higher versions for r8gd instances
 
 **Note**
 A switch between IO-Optimized and Standard clusters on a NVMe-based DB instance class causes an immediate database engine restart.

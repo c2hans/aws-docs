@@ -87,15 +87,15 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 
 |  Question  |  WSP  |  PCoIP  |
 | --- | --- | --- |
-|  Will the identified WorkSpaces users need bi-directional audio / video?  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |   |
-|  Will zero clients be used as the remote endpoint (local device)?  |   |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |
-|  Will Windows or macOS be used for remote endpoint?  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |
-|  Will Ubuntu 18.04 be used for remote endpoint?  |   |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |
-|  Will the users access Amazon WorkSpaces via web access?  |   |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |
-|  Is pre-session or in-session smartcard support (PIC/CAC) needed?  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |   |
-|  Will WorkSpaces be used in China (Ningxia) Region?  |   |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |
-|  Will smart card pre-authentication or in-session support be required?  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |   |
-|  Are the end-users using unreliable, high-latency, or low-bandwidth connections?  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/best-practices-deploying-amazon-workspaces/design-considerations.html)  |   |
+|  Will the identified WorkSpaces users need bi-directional audio / video?  |    |   |
+|  Will zero clients be used as the remote endpoint (local device)?  |   |    |
+|  Will Windows or macOS be used for remote endpoint?  |    |    |
+|  Will Ubuntu 18.04 be used for remote endpoint?  |   |    |
+|  Will the users access Amazon WorkSpaces via web access?  |   |    |
+|  Is pre-session or in-session smartcard support (PIC/CAC) needed?  |    |   |
+|  Will WorkSpaces be used in China (Ningxia) Region?  |   |    |
+|  Will smart card pre-authentication or in-session support be required?  |    |   |
+|  Are the end-users using unreliable, high-latency, or low-bandwidth connections?  |    |   |
 
 The previous questions are critical to determine the protocol that should be used. Additional information on the recommended protocol use cases can be reviewed [here](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces-protocols.html). The protocol used can also be changed at a later time using the Amazon WorkSpaces Migrate feature. More information on the use of this feature can be reviewed [here](https://docs.aws.amazon.com/workspaces/latest/adminguide/migrate-workspaces.html).
 

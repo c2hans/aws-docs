@@ -9,6 +9,7 @@ Describes the status of the specified instances or all of your instances. By def
 
 Instance status includes the following components:
 +  **Status checks** - Amazon EC2 performs status checks on running EC2 instances to identify hardware and software issues. For more information, see [Status checks for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-system-instance-status-check.html) and [Troubleshoot instances with failed status checks](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/TroubleshootingInstances.html) in the *Amazon EC2 User Guide*.
++  **Application status checks** - Amazon EC2 reports application-level health status for instances, indicating whether applications running on the instance are functioning properly.
 +  **Scheduled events** - Amazon EC2 can schedule events (such as reboot, stop, or terminate) for your instances related to hardware issues, software updates, or system maintenance. For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.
 +  **Instance state** - You can manage your instances from the moment you launch them through their termination. For more information, see [Instance lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) in the *Amazon EC2 User Guide*.
 
@@ -46,6 +47,7 @@ The filters.
 +  `system-status.reachability` - Filters on system status where the name is `reachability` (`passed` \| `failed` \| `initializing` \| `insufficient-data`).
 +  `system-status.status` - The system status of the instance (`ok` \| `impaired` \| `initializing` \| `insufficient-data` \| `not-applicable`).
 +  `attached-ebs-status.status` - The status of the attached EBS volume for the instance (`ok` \| `impaired` \| `initializing` \| `insufficient-data` \| `not-applicable`).
++  `application-status.status` - The application status of the instance (`ok` \| `impaired` \| `initializing` \| `insufficient-data` \| `not-applicable`).
 Type: Array of [Filter](API_Filter.md) objects
 Required: No
 
@@ -183,6 +185,10 @@ Action=DescribeInstanceStatus
                     </item>
                 </details>
             </instanceStatus>
+            <applicationStatus>
+                <status>impaired</status>
+                <impairedSince>YYYY-MM-DDTHH:MM:SS.000Z</impairedSince>
+            </applicationStatus>
             <eventsSet>
               <item>
                 <code>instance-retirement</code>
@@ -217,6 +223,9 @@ Action=DescribeInstanceStatus
                     </item>
                 </details>
             </instanceStatus>
+            <applicationStatus>
+                <status>ok</status>
+            </applicationStatus>
             <eventsSet>
               <item>
                 <code>instance-reboot</code>
@@ -251,6 +260,9 @@ Action=DescribeInstanceStatus
                     </item>
                 </details>
             </instanceStatus>
+            <applicationStatus>
+                <status>ok</status>
+            </applicationStatus>
         </item>
         <item>
             <instanceId>i-0598c7d356eba48d8</instanceId>
@@ -277,6 +289,9 @@ Action=DescribeInstanceStatus
                     </item>
                 </details>
             </instanceStatus>
+            <applicationStatus>
+                <status>ok</status>
+            </applicationStatus>
          </item>
     </instanceStatusSet>
 </DescribeInstanceStatusResponse>

@@ -127,7 +127,7 @@ Navigation events contain the following properties.
 | Name | Type | Description | Notes |
 | --- | --- | --- | --- |
 | **initiatorType** | String | Represents the type of resource that initiated the performance event.  | **Value:** "navigation"<br />**Level 1:** "navigation"<br />**Level 2:** entryData.initiatorType |
-| **navigationType** | String | Represents the type of navigation. <br />This attribute is not required. | **Value:** The value must be one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-datacollected.html) |
+| **navigationType** | String | Represents the type of navigation. <br />This attribute is not required. | **Value:** The value must be one of the following:+  `navigate` is a navigation started by choosing a link, entering a URL in a browser's address bar, form submission, or initializing through a script operation other than `reload` or `back_forward `. <br />+  `reload` is a navigation through the browser's reload operation or `location.reload() `. <br />+  `back_forward` is a navigation through the browser's history traversal operation. <br />+  `prerender` is a navigation initiated by a prerender hint. For more information, see [Prerender](https://www.w3.org/TR/resource-hints/#prerender).  |
 | **startTime** | Number | Indicates when the event is triggered.  | **Value:** 0<br />**Level 1:** entryData.navigationStart - entryData.navigationStart <br />**Level 2:** entryData.startTime |
 | **unloadEventStart** | Number | Indicates the time when the previous document in the window began to unload after the `unload` event was thrown.  | **Value:** If there is no previous document or if the previous document or one of the needed redirects is not of the same origin, the value returned is 0.<br />**Level 1:**<pre>entryData.unloadEventStart > 0<br />  ? entryData.unloadEventStart - entryData.navigationStart<br />  : 0<br /></pre><br />**Level 2:** entryData.unloadEventStart |
 | **promptForUnload** | Number | The time taken to unload the document. In other words, the time between `unloadEventStart` and `unloadEventEnd`. `UnloadEventEnd` represents the moment in milliseconds when the unload event handler finishes.  | **Value:** If there is no previous document or if the previous document or one of the needed redirects is not of the same origin, the value returned is 0.<br />**Level 1:** entryData.unloadEventEnd - entryData.unloadEventStart<br />**Level 2:** entryData.unloadEventEnd - entryData.unloadEventStart |
@@ -219,9 +219,9 @@ These events are collected only if the app monitor has HTTP telemetry activated.
 
 | Name | Description |
 | --- | --- |
-| **Request** | The request field includes the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-datacollected.html) |
-| **Response** | The response field includes the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-datacollected.html) |
-| **Error** | The error field includes the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-datacollected.html) |
+| **Request** | The request field includes the following:+  The `Method` field, which can have values such as GET, POST, and so on. <br />+  The URL  |
+| **Response** | The response field includes the following:+  Status, such as 2xx, 4xx, or 5xx <br />+  Status text  |
+| **Error** | The error field includes the following:+  Type <br />+  Message <br />+  File name <br />+  Line number <br />+  Column number <br />+  Stack trace  |
 
 ### X-Ray trace event schema
 <a name="CloudWatch-RUM-datacollected-xraytraceEvent"></a>

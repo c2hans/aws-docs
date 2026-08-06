@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/suppor
 # Supported agent frameworks
 <a name="supported-frameworks"></a>
 
-Amazon Bedrock AgentCore Evaluations evaluates agents built with popular agent frameworks. What an agent emits as telemetry, and how that telemetry is structured, depends on the **agent framework** you build with and the **instrumentation library** you use to record it.
+Amazon Bedrock AgentCore Evaluations evaluates agents built with several agent frameworks. What an agent emits as telemetry, and how that telemetry is structured, depends on the **agent framework** you build with and the **instrumentation library** you use to record it.
 
 For each supported framework, this section describes:
 + The instrumentation libraries you can use.
@@ -27,36 +27,20 @@ AgentCore Evaluations supports the following frameworks and instrumentation libr
 | Google ADK | OpenInference (`openinference-instrumentation-google-adk`) |  `openinference.instrumentation.google_adk`  |  `>= 0.1.13`  |
 | Claude Agent SDK | OpenInference (`openinference-instrumentation-claude-agent-sdk`) |  `openinference.instrumentation.claude_agent_sdk`  |  `>= 0.1.3`  |
 
-The **scope name** is the value of the `scope.name` field on each span and event record. The evaluation service uses it to determine whether it can process a span.
+Each span your agent emits carries a **scope name**, which identifies the instrumentation library that produced it. The evaluation service reads this name to tell which library it is dealing with, and therefore whether it can process the span and which attributes to look for. The scope name is the value of the `scope.name` field on each span and event record.
 
-## How the service reads a session
-<a name="supported-frameworks-how-read"></a>
+The attribute names and the location of the conversation content differ by framework and instrumentation library. For the attributes and example spans of a single framework, see that framework’s page.
 
-Regardless of framework, the evaluation service reconstructs a session from two telemetry signals: **spans** and **event records**. It classifies each span by its type, then extracts content from it:
-
-1.  **Identify the span type** from framework-specific attributes. A span can be an **invoke agent span** (the top-level agent run), an **execute tool span** (a single tool call), or an **inference span** (a single model call).
-
-1.  **Extract the relevant values** from each span’s attributes or from its correlated event record. For example, the **user prompt** comes from the human (user-role) message in the agent input, and the **agent response** comes from the AI (assistant-role) message in the agent output.
-
-The exact attribute names and content locations differ by framework and instrumentation library. The [Spans, event records, and telemetry signals](supported-frameworks-telemetry.md) page explains the structure of spans and event records and where content lives. The per-framework pages describe the attributes and example data for each supported framework.
-
-## Set up observability
-<a name="supported-frameworks-setup"></a>
-
-Instrumenting your agent is one part of producing telemetry the evaluation service can read. Before evaluation works end to end, your agent must also have observability enabled and export its spans and event records to Amazon CloudWatch. Complete the following steps:
-
-1. Enable CloudWatch Transaction Search, which is a prerequisite for evaluation. See [Enabling AgentCore observability](observability-configure.md#observability-configure-builtin).
-
-1. Enable observability for your agent, based on where it is hosted:
-   + For agents hosted on Amazon Bedrock AgentCore Runtime, see [Enabling observability in agent code for AgentCore-hosted agents](observability-configure.md#observability-configure-custom).
-   + For agents hosted on Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), AWS Lambda, or other environments, see [Enabling observability for agents hosted outside of AgentCore](observability-configure.md#observability-configure-3p).
+**Note**
+Instrumenting your agent is only one part of producing telemetry that the evaluation service can read. Your agent must also have observability enabled, so that it exports its telemetry to Amazon CloudWatch.
+For how AgentCore delivers that telemetry, where the service finds the values it needs, and the setup steps for your hosting option, see [Telemetry setup and delivery](supported-frameworks-telemetry.md).
 
 ## Sample agents
 <a name="supported-frameworks-samples"></a>
 
-The following samples show Strands agents hosted outside Amazon Bedrock AgentCore Runtime, exporting telemetry to Amazon CloudWatch with ADOT. They focus on observability setup rather than the evaluation API. The samples use Strands, but the same hosting and telemetry-export pattern applies to other supported frameworks, such as LangGraph.
-+  **Amazon EKS:** [Observability for an EKS-hosted agent](https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/06-AgentCore-observability/06-Agentcore-observability-for-eks-hosted-agent) and [Strands agent on Amazon EKS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-eks).
-+  **Amazon ECS:** [Strands agent on Amazon ECS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-ecs).
-+  ** AWS Lambda:** [Strands agent in AWS Lambda](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-aws-lambda/02-agent-in-lambda).
+The following examples show how to instrument a Strands agent hosted outside Amazon Bedrock AgentCore Runtime to export telemetry to Amazon CloudWatch using ADOT. They focus on observability setup rather than the evaluation API. The examples use Strands, but the same hosting and telemetry-export pattern applies to other supported frameworks, such as LangGraph.
++  **Amazon EKS:** [Observability for an EKS-hosted agent](https://github.com/awslabs/agentcore-samples/tree/main/06-workshops/06-AgentCore-observability/06-Agentcore-observability-for-eks-hosted-agent) and [Strands agent on Amazon EKS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-eks), both on the GitHub website.
++  **Amazon ECS:** [Strands agent on Amazon ECS](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-ecs) on the GitHub website.
++  ** AWS Lambda:** [Strands agent in AWS Lambda](https://github.com/awslabs/agentcore-samples/tree/main/03-integrations/agents-hosted-outside-runtime/agents-on-aws-lambda/02-agent-in-lambda) on the GitHub website.
 
 **Topics**

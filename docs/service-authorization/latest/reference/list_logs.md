@@ -82,6 +82,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateLookupTable  **
   - **IAM action:**  [logs:CreateLookupTable](#list_logs-action-CreateLookupTable)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [logs:GetQueryResults](#list_logs-action-GetQueryResults)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [logs:TagResource](#list_logs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateScheduledQuery  **
@@ -687,10 +688,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UpdateLookupTable  **
-  - **IAM action:**  [logs:UpdateLookupTable](#list_logs-action-UpdateLookupTable)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [logs:GetQueryResults](#list_logs-action-GetQueryResults)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [logs:UpdateLookupTable](#list_logs-action-UpdateLookupTable)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UpdateScheduledQuery  **
   - **IAM action:**  [logs:UpdateScheduledQuery](#list_logs-action-UpdateScheduledQuery)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write

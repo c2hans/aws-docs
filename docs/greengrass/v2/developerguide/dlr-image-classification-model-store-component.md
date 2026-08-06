@@ -224,9 +224,9 @@ The following table describes the changes in each version of the component.
 | 2.1.8 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.1.7 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.1.6 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.1.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-image-classification-model-store-component.html)  |
+| 2.1.5 |  **New features**<br />   Adds sample image classification models for Windows core devices.   Version updated for Greengrass nucleus version 2.5.0 release.     |
 | 2.1.4 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.1.3 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.2.0 release. |
-| 2.1.1 |  <a name="changelog-dlr-image-classification-model-store-2.1.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/dlr-image-classification-model-store-component.html)  |
+| 2.1.1 |  <a name="changelog-dlr-image-classification-model-store-2.1.1"></a>**New features**<br />   Add a sample ResNet-50 image classification model for Armv8 (AArch64) platforms. This extends machine learning support for Greengrass core devices running NVIDIA Jetson, such as the Jetson Nano.     |
 | 2.0.4 | Initial version. |

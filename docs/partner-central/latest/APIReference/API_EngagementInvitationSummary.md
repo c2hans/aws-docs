@@ -39,7 +39,7 @@ Required: No
  ** EngagementTitle **   <a name="AWSPartnerCentral-Type-EngagementInvitationSummary-EngagementTitle"></a>
 Provides a short title or description of the Engagement Invitation. This title helps partners quickly identify and differentiate between multiple engagement opportunities.
 Type: String
-Pattern: `(?s).{1,40}`
+Pattern: `(?s).{0,40}`
 Required: No
 
  ** ExpirationDate **   <a name="AWSPartnerCentral-Type-EngagementInvitationSummary-ExpirationDate"></a>

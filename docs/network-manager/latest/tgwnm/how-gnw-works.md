@@ -64,25 +64,25 @@ After you register a transit gateway, you can view and monitor the resources in 
 | **Amazon VPC resources** |
 | --- |
 | Resource | Related resources |
-| Transit gateway |   Transit gateway attachment Transit gateway route table   |
-| Transit gateway attachment |   Direct Connect gateway Transit gateway Transit gateway attachment Transit Gateway Connect peer VPC VPN connection   |
-| Transit gateway route table |   Transit gateway   |
-| Transit Gateway Connect peer |   Device Transit gateway attachment   |
+| Transit gateway |  + Transit gateway attachment<br />+ Transit gateway route table  |
+| Transit gateway attachment |  + Direct Connect gateway<br />+ Transit gateway<br />+ Transit gateway attachment<br />+ Transit Gateway Connect peer<br />+ VPC<br />+ VPN connection  |
+| Transit gateway route table |  + Transit gateway  |
+| Transit Gateway Connect peer |  + Device<br />+ Transit gateway attachment  |
 | **Site-to-Site VPN resources** |
 | --- |
 | Resource | Related resources |
-| Customer gateway |   Device VPN connection   |
-| VPN connection |   Customer gateway Transit gateway attachment   |
+| Customer gateway |  + Device<br />+ VPN connection  |
+| VPN connection |  + Customer gateway<br />+ Transit gateway attachment  |
 | **Direct Connect resources** |
 | --- |
 | Resource | Related resources |
-| Direct Connect connection |   Virtual interface   |
-| Direct Connect gateway |   Transit gateway attachment Virtual interface   |
-| Virtual interface |   Direct Connect connection Direct Connect gateway   |
+| Direct Connect connection |  + Virtual interface  |
+| Direct Connect gateway |  + Transit gateway attachment<br />+ Virtual interface  |
+| Virtual interface |  + Direct Connect connection<br />+ Direct Connect gateway  |
 | **AWS Network Manager resources** |
 | --- |
 | Resource | Related resources |
-| Connection |   Device   |
-| Device |   Connection Customer gateway Link Site Transit Gateway Connect peer   |
-| Link |   Device Site   |
-| Site |   Device Link   |
+| Connection |  + Device  |
+| Device |  + Connection<br />+ Customer gateway<br />+ Link<br />+ Site<br />+ Transit Gateway Connect peer  |
+| Link |  + Device<br />+ Site  |
+| Site |  + Device<br />+ Link  |

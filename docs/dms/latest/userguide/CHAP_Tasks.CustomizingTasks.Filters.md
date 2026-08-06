@@ -41,8 +41,8 @@ The following table shows the parameters for specifying source filtering in a `f
 |  `filter-type`  | source |
 | `column-name` | A parameter with the name of the source column to which you want the filter applied. The name is case-sensitive. |
 | `filter-conditions` | An array of one or more objects containing a filter-operator parameter and zero or more associated value parameters, depending on the filter-operator value. |
-| `filter-operator` | A parameter with one of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.Filters.html) |
-| `value` or<br />`start-value` and `end-value` or<br />no values | Zero or more value parameters associated with `filter-operator`:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.Filters.html) |
+| `filter-operator` | A parameter with one of the following values:+  `lte` – less than or equal to one value <br />+  `ste` – less than or equal to one value (`lte` alias) <br />+  `gte` – greater than or equal to one value <br />+  `eq` – equal to one value <br />+  `noteq` – not equal to one value <br />+  `between` – equal to or between two values <br />+  `notbetween` – not equal to or between two values <br />+  `null` – `NULL` values <br />+  `notnull` – no `NULL` values  |
+| `value` or<br />`start-value` and `end-value` or<br />no values | Zero or more value parameters associated with `filter-operator`:+  If `filter-operator` is `lte`, `ste`, `gte`, `eq`, or `noteq`, use `value` to specify one value parameter. <br />+  If `filter-operator` is `between` or `notbetween`, use `start-value` and `end-value` to specify two value parameters. <br />+  If `filter-operator` is `null` or `notnull`, specify no value parameters.  |
 
 The following examples show some common ways to use source filters.
 

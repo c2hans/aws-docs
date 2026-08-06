@@ -13,7 +13,7 @@ Security vigilance is imperative at the database and application layers, as a ma
 
 | Database | Documentation |
 | --- | --- |
-| SAP HANA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-6-3.html)  |
+| SAP HANA |  +   AWS Documentation: [AWS SAP HANA Security](https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-security.html)  <br />+   SAP Documentation: [SAP HANA Security Guide](https://help.sap.com/viewer/b3ee5778bc2e4a089d3299b82ec762a7/latest)  <br />+   SAP Documentation: [SAP HANA Administration Guide](http://help.sap.com/hana/SAP_HANA_Administration_Guide_en.pdf)  <br />+   SAP Note: [2159014 - FAQ: SAP HANA Security](https://launchpad.support.sap.com/#/notes/2159014) [Requires SAP Portal Access]    |
 | SAP ASE |  SAP Documentation: [Security Administration in SAP ASE](https://help.sap.com/viewer/2705a3b1e3df4514ab089cfedf87750d/LATEST/en-US/a90b1f6cbc2b10148e32ab3706191414.html)  |
 | IBM Db2 | (Consult SAP or Vendor documentation for guidance) |
 | Oracle |  SAP Documentation: [SAP Database Guide - Oracle](https://help.sap.com/viewer/3ef1b95cacbf4f77a066797285371bb9/LATEST/en-US/4717849f6e8a21c3e10000000a114a6b.html)  |

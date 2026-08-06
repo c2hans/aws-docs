@@ -17,7 +17,7 @@ When a contact center sends a request to Amazon Lex V2 it includes platform-spec
 
 | Attribute | Value |
 | --- | --- |
-| x-amz-lex:channels:platform |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/contact-center-genesys.html) |
+| x-amz-lex:channels:platform |  +  `Genesys Cloud`  |
 
 *Learn more*
 + [Power your contact center with Amazon Lex and Genesys Cloud](https://aws.amazon.com/blogs/machine-learning/enhancing-customer-service-experiences-using-conversational-ai-power-your-contact-center-with-amazon-lex-and-genesys-cloud/)

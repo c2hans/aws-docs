@@ -13,5 +13,6 @@ You can also see the status of specific events that are scheduled for your insta
 
 **Topics**
 + [Status checks for Amazon EC2 instances](monitoring-system-instance-status-check.md)
++ [Application status checks](application-status-checks.md)
 + [State change events for Amazon EC2 instances](monitoring-instance-state-changes.md)
 + [Scheduled events for Amazon EC2 instances](monitoring-instances-status-check_sched.md)

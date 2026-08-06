@@ -71,24 +71,24 @@ You can also use [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/deve
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a VPC. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
+| Create a VPC. | 1. Sign in to the AWS Management Console and open the Amazon VPC console. Choose **Create VPC**, and choose **VPC and more**. <br />2. Enter a name for your VPC, and choose an appropriate CIDR block range. <br />3. Specify two Availability Zones, two public subnets, four private subnets. Two private subnets are for Amazon ECS tasks, and two private subnets are for Amazon RDS databases.<br />4. Specify one NAT gateway for each Availability Zone. <br />5. Choose **Create VPC**. | Cloud administrator |
 
 ### Create the load balancers
 <a name="create-the-load-balancers"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a Network Load Balancer.  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
-| Create an Application Load Balancer. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
+| Create a Network Load Balancer.  | 1. Open the Amazon EC2 console and choose the AWS Region that contains your VPC. <br />2. Under **Load balancing**, choose **Load balancers**, and choose **Create load balancer**. <br />3. Choose **Network Load Balancer**, and choose **Create**. <br />4. On the **Configure load balancer** page, configure your Network Load Balancer and listener.** Important:** Make sure you choose your Network Load Balancer's scheme as **Internal**. <br />5. Choose the applicable security settings, configure a security group and a target group. Choose **Instance** or **IP** as the **Target type** in the **Configure routing** section. Make sure you do not register a target. <br />6. When you have configured all the settings, choose **Next: Review**, and then choose **Create**. | Cloud administrator |
+| Create an Application Load Balancer. | 1. On the Amazon EC2 console, choose the same Region that contains your VPC.<br />2. Under **Load balancing**, choose **Load balancers**, and choose** Create load balancer**.<br />3. Choose **Application Load Balancer**, and choose **Create**. <br />4. Configure your Application Load Balancer and its listener. Make sure you choose your Application Load Balancer's scheme as **Internal**. <br />5. Choose the applicable security settings, configure a security group and a target group. Choose **Instance** or **IP** as the **Target type** in the **Configure routing** section. Make sure you do not register a target. <br />6. When you have configured all the settings, choose **Next: Review**, and then choose **Create**. | Cloud administrator |
 
 ### Create an Amazon EFS file system
 <a name="create-an-amazon-efs-file-system"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an Amazon EFS file system. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
-| Mount targets for the subnets. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
-| Verify that the subnets are mounted as targets.  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
+| Create an Amazon EFS file system. | 1. Open the Amazon EFS console, and choose **Create file system**. <br />2. In the **Create file system** dialog box, enter a name for your file system, and choose your VPC. <br />3. Choose **Create** to create the file system. <br />4. Set up and configure your Amazon EFS file system. | Cloud administrator |
+| Mount targets for the subnets. | 1. Return to the Amazon EFS console, and choose **File systems**. The **File systems** page shows the Amazon EFS file systems in your account. <br />2. Choose the file system that you created, and choose **Manage** to display the **Availability Zones**. To add a mount target, choose **Add mount target**, and add the four private subnets that you created. | Cloud administrator |
+| Verify that the subnets are mounted as targets.  | 1. On the Amazon EFS console, choose **File systems**. <br />2. Choose **Network** to display the list of existing mount targets. Make sure that these include the four subnets that you created. | Cloud administrator |
 
 ### Create an S3 bucket
 <a name="create-an-s3-bucket"></a>
@@ -103,14 +103,14 @@ You can also use [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/deve
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create an AWS KMS key to encrypt the Secrets Manager secret. | Open the AWS Key Management Service (AWS KMS) console and create a KMS key. | Cloud administrator |
-|  Create a Secrets Manager secret to store the Amazon RDS password. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud Administrator  |
+|  Create a Secrets Manager secret to store the Amazon RDS password. | 1. Open the AWS Secrets Manager console, and create a new secret by choosing **Store a new secret**. <br />2. Choose the KMS key that you created, and store your new secret. | Cloud Administrator  |
 
 ### Create an Amazon RDS instance
 <a name="create-an-amazon-rds-instance"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create a DB subnet group.  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
+| Create a DB subnet group.  | 1. Open the Amazon RDS console and choose **Subnet groups**. <br />2. Choose **Create DB subnet group**, and enter a name and description for your DB subnet group. <br />3. Choose the VPC that you created earlier, and choose the Availability Zones and subnets. Then choose **Create**. | Cloud administrator |
 | Create an Amazon RDS instance. | Create and configure an Amazon RDS instance within the private subnets. Make sure that **Multi-AZ** is turned on for HA. | Cloud administrator |
 | Load data to the Amazon RDS instance.  | Load the relational data required by your application into your Amazon RDS instance. This process will vary depending on your application's needs, as well as how your database schema is defined and designed. | Cloud administrator, DBA |
 
@@ -119,12 +119,12 @@ You can also use [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/deve
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an ECS cluster. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
+| Create an ECS cluster. | 1. Open the Amazon ECS console, and choose **Clusters**.<br />2. Choose **Create clusters**, and set up an ECS cluster according to your required specifications. | Cloud administrator |
 | Create the Docker images.  | Create the Docker images by following the instructions in the *Related resources* section. | Cloud administrator |
-| Create Amazon ECR repositories. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator, DevOps engineer |
+| Create Amazon ECR repositories. | 1. On the Amazon ECR console, choose **Repositories**. <br />2. Choose **Create repository**, and enter a unique name for your repository. <br />3. Configure the repository according to your specifications, including AWS KMS encryption if required. | Cloud administrator, DevOps engineer |
 | Authenticate your Docker client for the Amazon ECR repository.  | To authenticate your Docker client for the Amazon ECR repository, run the "`aws ecr get-login-password` command in the AWS CLI. | Cloud administrator |
-| Push the Docker images to the Amazon ECR repository.  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html) | Cloud administrator |
-| Create an Amazon ECS task definition.  | A task definition is required to run Docker containers in Amazon ECS. [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html)For help with setting up your task definition, see "Creating a task definition" in the *Related resources* section. Make sure you provide the Docker images that you pushed to Amazon ECR. | Cloud administrator |
+| Push the Docker images to the Amazon ECR repository.  | 1. Identify the Docker image you want to push, and run the `docker images` command in the AWS CLI. <br />2. Tag your image with the Amazon ECR registry, repository, and optional image tag name combination. <br />3. Push the Docker image by running the `docker push` command. <br />4. Repeat these steps for all required images. | Cloud administrator |
+| Create an Amazon ECS task definition.  | A task definition is required to run Docker containers in Amazon ECS. 1. Return to the Amazon ECS console, choose **Task definitions**, and then choose **Create new task definition**. <br />2. On the **Select compatibilities** page, select the launch type that your task should use, and choose **Next step**.For help with setting up your task definition, see "Creating a task definition" in the *Related resources* section. Make sure you provide the Docker images that you pushed to Amazon ECR. | Cloud administrator |
 | Create an Amazon ECS service.  | Create an Amazon ECS service by using the ECS cluster you created earlier. Make sure you choose Amazon EC2 as the launch type, and choose the task definition created in the previous step, as well as the target group of the Application Load Balancer. | Cloud administrator |
 
 ### Create an Amazon EC2 Auto Scaling group
@@ -140,7 +140,7 @@ You can also use [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/deve
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Set up the AWS PrivateLink endpoint. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/access-container-applications-privately-on-amazon-ecs-by-using-aws-privatelink-and-a-network-load-balancer.html)For more information, see the *Related resources* section. | Cloud administrator |
+| Set up the AWS PrivateLink endpoint. | 1. On the Amazon VPC console, create an AWS PrivateLink endpoint. <br />2. Associate this endpoint with the Network Load Balancer, which makes the application hosted on Amazon ECS available privately to customers. For more information, see the *Related resources* section. | Cloud administrator |
 
 ### Create a VPC endpoint
 <a name="create-a-vpc-endpoint"></a>

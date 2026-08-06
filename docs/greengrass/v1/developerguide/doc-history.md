@@ -112,7 +112,7 @@ The following table describes important changes to the AWS IoT Greengrass Develo
 
 | Change | Description | Date |
 | --- | --- | --- |
-| AWS IoT Greengrass Version 1.5.0 Released | New features:[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/doc-history.html)<br />For more information, see [AWS IoT Greengrass Core versions](what-is-gg.md#ggc-versions). | March 29, 2018 |
-| AWS IoT Greengrass Version 1.3.0 Released | New features:[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/doc-history.html) | November 27, 2017 |
-| AWS IoT Greengrass Version 1.1.0 Released | New features:[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v1/developerguide/doc-history.html) | September 20, 2017 |
+| AWS IoT Greengrass Version 1.5.0 Released | New features:+  Local machine learning inference using cloud-trained models. For more information, see [Perform machine learning inference](ml-inference.md). <br />+  Greengrass Lambda functions support binary input data, in addition to JSON. <br />For more information, see [AWS IoT Greengrass Core versions](what-is-gg.md#ggc-versions). | March 29, 2018 |
+| AWS IoT Greengrass Version 1.3.0 Released | New features:+  Over-the-air (OTA) update agent capable of handling cloud-deployed, Greengrass update jobs. For more information, see [OTA updates of AWS IoT Greengrass Core software](core-ota-update.md). <br />+  Access local peripherals and resources from Greengrass Lambda functions. For more information, see [Access local resources with Lambda functions and connectors](access-local-resources.md).  | November 27, 2017 |
+| AWS IoT Greengrass Version 1.1.0 Released | New features:+  Reset deployed AWS IoT Greengrass groups. For more information, see [Reset deployments](reset-deployments-scenario.md). <br />+  Support for Node.js 6.10 and Java 8 Lambda runtimes, in addition to Python 2.7.  | September 20, 2017 |
 | AWS IoT Greengrass Version 1.0.0 Released | AWS IoT Greengrass is generally available. | June 7, 2017 |

@@ -164,7 +164,7 @@ Provides information about an S3 object that Amazon Macie selected for analysis 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
 | arn | string | True | The Amazon Resource Name (ARN) of the object. |
-| classificationResultStatus | string | True | The status of the analysis. Possible values are:   `COMPLETE` - Amazon Macie successfully completed its analysis of the object.    `PARTIAL` - Macie analyzed only a subset of data in the object. For example, the object is an archive file that contains files in an unsupported format.    `SKIPPED` - Macie wasn't able to analyze the object. For example, the object is a malformed file.   |
+| classificationResultStatus | string | True | The status of the analysis. Possible values are:+   `COMPLETE` - Amazon Macie successfully completed its analysis of the object. <br />+   `PARTIAL` - Macie analyzed only a subset of data in the object. For example, the object is an archive file that contains files in an unsupported format. <br />+   `SKIPPED` - Macie wasn't able to analyze the object. For example, the object is a malformed file.  |
 | sensitive | boolean | False | Specifies whether Amazon Macie found sensitive data in the object. |
 
 ### ThrottlingException

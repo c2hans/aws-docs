@@ -62,4 +62,4 @@ In the following table, view details about updates to AWS managed policies for A
 | --- | --- | --- |
 | New Policy: AWSPrivateCAConnectorForKubernetesPolicy | New managed policy introduced for use with AWS Private CA Connector for Kubernetes. | May 19, 2025 |
 | AWSPrivateCAPrivilegedUser and AWSPrivateCAUser - Updated policy | Replaced `StringLike` with `ArnLike`, and `StringNotLike` with `ArnNotLike`.<br />Updated template arn to include wild cards `arn:aws:acm-pca:::template` to `arn:aws:acm-pca:*:*:template`. | January 22, 2025 |
-| New policy names:[See the AWS documentation website for more details](http://docs.aws.amazon.com/privateca/latest/userguide/auth-AwsManagedPolicies.html) | Policy name prefixes were changed from `AWSCertificateManagerPrivateCA` to `AWSPrivateCA`.<br />Functionality remains unchanged. | February 13, 2023 |
+| New policy names:+  `AWSPrivateCAFullAccess` <br />+  `AWSPrivateCAReadOnly` <br />+  `AWSPrivateCAPrivilegedUser` <br />+  `AWSPrivateCAAuditor` <br />+  `AWSPrivateCAUser`  | Policy name prefixes were changed from `AWSCertificateManagerPrivateCA` to `AWSPrivateCA`.<br />Functionality remains unchanged. | February 13, 2023 |

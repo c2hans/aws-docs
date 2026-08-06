@@ -17,4 +17,4 @@ The following tables list and describe the requirements for ordering and porting
 
 - **SIP Media Application Dial-In**
   - **Number types:** Local / **Required ID:** Not supported
-  - **Number types:** Toll-free / **Required ID:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-nz.html)
+  - **Number types:** Toll-free / **Required ID:**  +  Last invoice from current provider <br />+  Letter of Authorization

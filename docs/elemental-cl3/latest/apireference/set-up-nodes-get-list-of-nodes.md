@@ -36,7 +36,7 @@ The response is XML content consisting of one `nodes` element that contains:
 | hostname | String | The host name of the node, assigned via a network command during setup of this appliance. Note that you do *not* assign this name when adding the node to the cluster.<br />For example, “ecle-12345678” is a typical name for an Conductor Live node. “elae-12345678” is a typical name for an AWS Elemental Live node. |
 | ip\_addr | String | The IP address of the node on the network. |
 | status | String | The current status of the node: online, offline, failed, unknown. |
-| product\_name | String | The product name installed on this node. Always specifies:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-cl3/latest/apireference/set-up-nodes-get-list-of-nodes.html) |
+| product\_name | String | The product name installed on this node. Always specifies:+  “Conductor Live” for the Conductor Live node. <br />+ “Live” for an AWS Elemental Live node. <br />+ “Statmux” for an AWS Elemental Statmux node.  |
 | version | String | The version of the product name installed on this node. |
 | channels | Integer | The number of channels that are associated with this node.<br />Always “0” for the Conductor Live node.  |
 | inflight\_channels | Integer | Number of channels currently in use for encoding. Always 0 for a Conductor node, 0 or a number for a worker node. |

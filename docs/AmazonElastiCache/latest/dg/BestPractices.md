@@ -20,6 +20,7 @@ Below you can find recommended best practices for Amazon ElastiCache. Following 
 + [Best practices when working with Valkey and Redis OSS node-based clusters](BestPractices.SelfDesigned.md)
 + [Caching database query results](caching-database-query-results.md)
 + [Caching strategies for Memcached](Strategies.md)
++ [Amazon ElastiCache (Valkey) for e-commerce applications](ecommerce-caching-valkey.md)
 
 ## TLS enabled dual stack ElastiCache clusters
 <a name="network-type-configuring-tls-enabled-dual-stack"></a>

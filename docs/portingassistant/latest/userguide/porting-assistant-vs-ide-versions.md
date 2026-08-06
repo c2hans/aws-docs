@@ -11,20 +11,20 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 
 | Version | Details | Release date |
 | --- | --- | --- |
-| 1.3.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | November 23, 2022 |
-| 1.3.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | November 18, 2022 |
-| 1.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | October 25, 2022 |
-| 1.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | July 15, 2022 |
-| 1.1.10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | June 5, 2022 |
-| 1.1.9 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | April 15, 2022 |
-| 1.1.8 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | April 13, 2022 |
-| 1.1.7 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | April 4, 2022 |
-| 1.1.6 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | February 24, 2022 |
-| 1.1.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | January 14, 2022 |
-| 1.1.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | December 20, 2021 |
-| 1.1.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | December 1, 2021 |
-| 1.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | October 18, 2021 |
-| 1.0.5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | October 8, 2021 |
-| 1.0.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | September 17, 2021 |
-| 1.0.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/portingassistant/latest/userguide/porting-assistant-vs-ide-versions.html)  | August 13, 2021 |
+| 1.3.2 |  +  Adds support for .NET 7.   | November 23, 2022 |
+| 1.3.1 |  +  Removes banner that prompts customers to download AWS Toolkit for .NET Refactoring.   | November 18, 2022 |
+| 1.3.0 |  +  Removes the AWS profile requirement.   | October 25, 2022 |
+| 1.2.0 |  +  Adds support for assessment and porting of VB.NET projects that are Web API, Class Library, or console application type projects.   | July 15, 2022 |
+| 1.1.10 |  +  Fixes issue where multiple flashbars appear if short-term credentials are expired. <br />+  Fixes cascading task cancellations. <br />+  Fixes issue with duplicate logs.   | June 5, 2022 |
+| 1.1.9 |  +  Adds option to allow Porting Assistant for .NET to look for credentials using the default SDK chain. <br />+  Adds session token field in Add Profile modal to allow for the creation of profiles with short-term credentials.   | April 15, 2022 |
+| 1.1.8 |  + Fixes extension failure when closing and reopening solution in Visual Studio 2022.  | April 13, 2022 |
+| 1.1.7 |  +  Adds code behind conversions for WebForms controls. <br />+  Upgrades to .NET 6 from .NET Core 3.1.  + Projects with duplicate references will no longer fail to port.  | April 4, 2022 |
+| 1.1.6 |  +  Fixes log uploader to update log file only when share is turned on.   | February 24, 2022 |
+| 1.1.4 |  +  Adds support for using short-term credentials.   | January 14, 2022 |
+| 1.1.3 |  +  Adds support for porting Web Forms applications to .NET Core.   | December 20, 2021 |
+| 1.1.2 |  +  Adds support for Visual Studio 2022 and 2019. <br />+  Adds Visual Studio 2022 support for .NET 6.0 Framework.   | December 1, 2021 |
+| 1.1.0 |  +  Adds support for porting WCF, OWIN, and ASP.NET MVC applications to .NET Core.   | October 18, 2021 |
+| 1.0.5 |  +  Fixes NPE in assessment and porting. <br />+  "Port single project" no longer ports the entire solution.   | October 8, 2021 |
+| 1.0.4 |  +  Fixes porting hanging after running assessment.  <br />+  Supports Visual Studio versions later than 16.9.   | September 17, 2021 |
+| 1.0.3 |  +  Adds memory logging. <br />+  Fixes log uploader. <br />+  Adds default upgrade version of NuGet packages in porting recommendation. <br />+  Syncs metric types with Porting Assistant standalone tools. <br />+  Adds default porting package version in the porting request.   | August 13, 2021 |
 | 1.0 | Initial release | May 3, 2021 |

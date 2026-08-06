@@ -18,10 +18,10 @@ These patterns demonstrate how to leverage these capabilities to enhance teachin
 |
 | **Pattern** | **Complexity** | **Use Cases** | **Implementation Time** | **Key Benefits** |
 | --- |--- |--- |--- |--- |
-| Direct Model Access | Low | Text transformationSummarizationTranslation | Days | Quick implementationFlexible integration points |
-| Moodle AI Subsystem | Medium | Native Moodle integrationStandardized AI features | Days-Weeks | Native UIAdmin controlsPlatform integration |
-| Knowledge Base Integration | Medium-High | Context-aware Q&ACourse-specific assistance | Weeks | Improved accuracy with course contextPersonalized responses |
-| Agents Integration | High | Interactive tutoringComplex workflowsPersonalized support | Weeks-Months | Conversational experienceMulti-step task completion |
+| Direct Model Access | Low | + Text transformation<br />+ Summarization<br />+ Translation | Days | + Quick implementation<br />+ Flexible integration points |
+| Moodle AI Subsystem | Medium | + Native Moodle integration<br />+ Standardized AI features | Days-Weeks | + Native UI<br />+ Admin controls<br />+ Platform integration |
+| Knowledge Base Integration | Medium-High | + Context-aware Q&A<br />+ Course-specific assistance | Weeks | + Improved accuracy with course context<br />+ Personalized responses |
+| Agents Integration | High | + Interactive tutoring<br />+ Complex workflows<br />+ Personalized support | Weeks-Months | + Conversational experience<br />+ Multi-step task completion |
 
 ### Responsible AI
 <a name="responsible-ai"></a>
@@ -101,11 +101,11 @@ Moodle plugins are extensions that allow institutions to extend Moodle's core fu
 |
 | Plugin type | Description of plugin | Generative AI examples |
 | --- |--- |--- |
-| Block plugin | Small displays or tools that can be moved around pages | AI chatbot for Q&ADaily study recommendations |
-| Editor plugin | Alternative text editors | AI writing assistantIn line content generation (for example, text, code) |
-| Report plugin | Create reports for admins | Report generationSummarization |
-| Search engine | Enhance search functionality (supports systems like Elasticsearch) | AI enabled semantic search |
-| Assignment feedback plugin | Feedback to users about an assignment | AI generated feedback |
+| Block plugin | + Small displays or tools that can be moved around pages | + AI chatbot for Q&A<br />+ Daily study recommendations |
+| Editor plugin | + Alternative text editors | + AI writing assistant<br />+ In line content generation (for example, text, code) |
+| Report plugin | + Create reports for admins | + Report generation<br />+ Summarization |
+| Search engine | + Enhance search functionality (supports systems like Elasticsearch) | + AI enabled semantic search |
+| Assignment feedback plugin | + Feedback to users about an assignment | + AI generated feedback |
 
 The choice of plugin type depends on your specific use case, where in the Moodle interface you want the AI functionality to appear, and how deeply you need to integrate with Moodle's core systems. For more details on plugin types, see [Moodle Plugin Types](https://moodledev.io/docs/5.1/apis/plugintypes#naming-conventions).
 

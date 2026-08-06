@@ -26,8 +26,8 @@ The following table lists the changes included in this release.
 | **Platform** | **Update** |
 | --- | --- |
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-12-01-monthly-rt-release.html) |
-| **Corretto**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html) | Language runtime updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-12-01-monthly-rt-release.html)<br />No package updates. |
-| **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 22 to version 22.21.1.<br />Tools Updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/apprunner/latest/relnotes/release-2025-12-01-monthly-rt-release.html) |
+| **Corretto**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-java-releases.html) | Language runtime updates:+  Updated Corretto 8 to version 8.472.08.1. <br />No package updates. |
+| **Node.js**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html) | Updated Node.js 22 to version 22.21.1.<br />Tools Updates:+  Updated npm to version 10.9.4.  |
 | **Python**<br />[Supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-python-releases.html) | Updated Python 3.11 to version 3.11.14.<br />No package updates. |
 | **.NET Core**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-dotnet-releases.html) | No updates to language versions.<br />No package updates. |
 | **Ruby**<br />[Supported runtimes ](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-ruby-releases.html) | No updates to language versions.<br />No package updates. |

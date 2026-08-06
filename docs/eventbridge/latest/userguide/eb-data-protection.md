@@ -44,8 +44,8 @@ The following table lists the artifacts that EventBridge encrypts at rest, by re
 | [API destinations](eb-api-destinations.md) | Connection authorization parameters are stored in an AWS Secrets Manager secret. | Supported | [Supported](encryption-connections.md) |
 | [Archives](eb-archive.md) |  | Supported | [Supported](encryption-archives.md) |
 | [Connections](eb-target-connection.md) | Connection authorization parameters are stored in an AWS Secrets Manager secret. | Supported | [Supported](encryption-connections.md) |
-| [Event buses](eb-event-bus.md) | Includes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/eb-data-protection.html) | Supported | [Supported](eb-encryption-event-bus-cmkey.md) |
-| [Pipes](eb-pipes.md) | Includes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/eb-data-protection.html)<br />Events flowing through a pipe are never stored at rest. | Supported | [Supported](eb-encryption-pipes-cmkey.md) |
+| [Event buses](eb-event-bus.md) | Includes:+  Events from [custom](eb-putevents.md) and [partner](eb-saas.md) sources <br />Event data includes all fields contained in the `event-detail` element of the event. <br />EventBridge does not encrypt event metadata. <br />+ [Rule event patterns](eb-event-patterns.md).<br />+ Rule [target](eb-targets.md) information, including input, input transformers, and configuration parameters.<br />+ For [event bus logging](eb-event-bus-logs.md), the `detail` and `error` sections of log records. | Supported | [Supported](eb-encryption-event-bus-cmkey.md) |
+| [Pipes](eb-pipes.md) | Includes:+ [Event patterns](eb-event-patterns.md)<br />+ [Input transformers](eb-pipes-input-transformation.md)<br />+ [Execution data](eb-pipes-logs.md#eb-pipes-logs-execution-data) in logs<br />Events flowing through a pipe are never stored at rest. | Supported | [Supported](eb-encryption-pipes-cmkey.md) |
 
 **Important**
 We strongly recommend that you never put confidential or sensitive information in the following artifacts, as they are not encrypted at rest:

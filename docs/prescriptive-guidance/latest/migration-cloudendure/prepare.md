@@ -63,8 +63,8 @@ In general, there are three points of contact between CloudEndure components and
 | Client | Server | Description |
 | --- |--- |--- |
 | Agent | Outbound:  TCP 1500 | Replication server(s)  (private/public network) | Inbound:  TCP 1500 | Production instance status and data  (the actual data replication stream) |
-| Agent | Outbound:  TCP 1500 | Management  (public network) |   | REST APIs used during Agent installationAgent monitoringStatistics for Agents |
-| Replication server(s) | Outbound:  TCP 443 | Management  (public network) |   | Statistics for replication serversReplication server logsReplication server API |
+| Agent | Outbound:  TCP 1500 | Management  (public network) |   | + REST APIs used during Agent installation<br />+ Agent monitoring<br />+ Statistics for Agents |
+| Replication server(s) | Outbound:  TCP 443 | Management  (public network) |   | + Statistics for replication servers<br />+ Replication server logs<br />+ Replication server API |
 
 To prepare your network for running CloudEndure's solutions, you need to set the following connectivity settings:
 + Communication over TCP port 443:

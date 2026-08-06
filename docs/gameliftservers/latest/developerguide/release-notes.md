@@ -22,7 +22,7 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
   <tr><th></th><th>C\+\+</th><th>C\#</th><th>Unity (C\#)</th><th>C\+\+</th><th>Unreal (C\+\+)</th><th>Go</th><th></th><th></th><th>C\+\+</th><th>Unreal (C\+\+)</th><th>C\#</th><th>Unity (C\#)</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td>[2026-06-30](#release-notes-06302026)</td><td>[1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>3.3.0</td><td>3.3.0</td><td>1.0.1</td><td>1.0.0</td><td>1.0.0</td><td>1.0.0</td><td>1.2.0</td></tr>
+  <tr><td>[2026-08-04](#release-notes-08042026)</td><td>[1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later</td><td>5.5.0</td><td>5.5.0</td><td>5.6.0</td><td>5.6.0</td><td>5.5.0</td><td>3.4.0</td><td>3.3.0</td><td>1.0.1</td><td>1.0.1</td><td>1.0.0</td><td>1.0.0</td><td>1.2.0</td></tr>
 </tbody>
 </table>
 
@@ -37,6 +37,7 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
   <tr><th></th><th>C\+\+</th><th>C\#</th><th>C\# Unity</th><th>C\+\+</th><th>C\+\+ Unreal</th><th>Go</th><th></th><th></th><th>C\+\+</th><th>Unreal (C\+\+)</th><th>C\#</th><th>Unity (C\#)</th><th></th></tr>
 </thead>
 <tbody>
+  <tr><td>[2026-06-30](#release-notes-06302026)</td><td>[1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>3.3.0</td><td>3.3.0</td><td>1.0.1</td><td>1.0.0</td><td>1.0.0</td><td>1.0.0</td><td>1.2.0</td></tr>
   <tr><td>[2026-06-18](#release-notes-06182026)</td><td>[1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>5.5.0</td><td>3.3.0</td><td>3.3.0</td><td>1.0.1</td><td>1.0.0</td><td></td><td></td><td>1.2.0</td></tr>
   <tr><td>[2026-04-29](#release-notes-04292026)</td><td>[1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later</td><td>5.4.0</td><td>5.4.0</td><td>5.4.1</td><td>5.4.1</td><td>5.4.0</td><td>3.2.1</td><td>3.2.1</td><td>1.0.1</td><td>1.0.0</td><td></td><td></td><td>1.2.0</td></tr>
   <tr><td>[2026-03-04](#release-notes-03042026)</td><td>[1.11.762](https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762) or later</td><td>5.4.0</td><td>5.4.0</td><td>5.4.0</td><td>5.4.0</td><td>5.4.0</td><td>3.2.0</td><td>3.2.1</td><td>1.0.1</td><td>1.0.0</td><td></td><td></td><td>1.2.0</td></tr>
@@ -112,6 +113,23 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
 <a name="release-notes-summary"></a>
 
 The following release notes are in chronological order, with the latest updates listed first. Amazon GameLift Servers was first released in 2016. For release notes dated earlier than those listed here, see the release date links in [SDK versions](#release-notes-history).
+
+### August 4, 2026: Amazon GameLift Servers plugin for Unreal supports Unreal Engine 5.8
+<a name="release-notes-08042026"></a>
++ [Plugin for Unreal](https://github.com/amazon-gamelift/amazon-gamelift-plugin-unreal) on the GitHub website, version 3.4.0 (includes the server SDK for Unreal, version 5.6.0)
++ [Client SDK for Unreal](https://github.com/amazon-gamelift-for-unreal/amazon-gamelift-servers-client-sdk-for-unreal) on the GitHub website, version 1.0.1. To access this SDK, you must be a member of the Epic Games organization on GitHub. For details, see [Unreal Engine on GitHub](https://www.unrealengine.com/en-US/ue-on-github) on the Unreal Engine website.
+
+These versions include the following updates:
++ The plugin, server SDK, and client SDK now support Unreal Engine 5.8.
++ The server SDK logs stream through the Unreal Engine logging system by default, so they appear in your game server logs automatically.
++ The server SDK for Unreal Engine can now compile in non-unity mode with precompiled headers (PCH) files disabled.
+
+C\+\+ server SDK, version 5.6.0
++ New custom logging capability. You can now route the server SDK's log output to a custom logging callback by calling the new `InitCustomLogger()` action—for example, to integrate the server SDK logs with your game server's own logging system.
+
+Learn more:
++ [Integrating games with the Amazon GameLift Servers plugin for Unreal Engine](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/unreal-plugin.html), *Amazon GameLift Servers Developer Guide*
++ [Integrating Amazon GameLift Servers with an Unreal Engine project](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-engines-setup-unreal.html), *Amazon GameLift Servers Developer Guide*
 
 ### June 30, 2026: Amazon GameLift Servers releases C\# and Unity client SDKs for game clients
 <a name="release-notes-06302026"></a>

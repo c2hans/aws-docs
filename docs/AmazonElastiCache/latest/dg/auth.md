@@ -44,7 +44,7 @@ The following AWS CLI operation creates a replication group with encryption in t
 
 **Key parameters**
 + **--engine** – Must be `valkey` or `redis`.
-+ **--engine-version** – If engine is Redis OSS, must be 3.2.6, 4.0.10, or later.
++ **--engine-version** – If engine is Redis OSS, must be 4.0.10 or later.
 + **--transit-encryption-enabled** – Required for authentication and HIPAA eligibility.
 + **--auth-token** – Required for authentication when using AUTH tokens. For HIPAA eligibility, authentication is required (either via AUTH token or IAM authentication). This value must be the correct token for this token-protected Valkey or Redis OSS server.
 + **--cache-subnet-group** – Required for HIPAA eligibility.

@@ -80,7 +80,27 @@ source_url: https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_I
          "KMSMasterKeyId": "{{string}}",
          "SSEType": "{{string}}"
       },
-      "TableName": "{{string}}"
+      "TableName": "{{string}}",
+      "VectorIndexes": [
+         {
+            "Dimensions": {{number}},
+            "DistanceFunction": "{{string}}",
+            "IndexName": "{{string}}",
+            "Projection": {
+               "NonKeyAttributes": [ "{{string}}" ],
+               "ProjectionType": "{{string}}"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "{{string}}",
+                  "SearchSchemaElementType": "{{string}}"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "{{string}}"
+            }
+         }
+      ]
    }
 }
 ```
@@ -214,7 +234,27 @@ Required: No
             "KMSMasterKeyId": "string",
             "SSEType": "string"
          },
-         "TableName": "string"
+         "TableName": "string",
+         "VectorIndexes": [
+            {
+               "Dimensions": number,
+               "DistanceFunction": "string",
+               "IndexName": "string",
+               "Projection": {
+                  "NonKeyAttributes": [ "string" ],
+                  "ProjectionType": "string"
+               },
+               "SearchSchema": [
+                  {
+                     "AttributeName": "string",
+                     "SearchSchemaElementType": "string"
+                  }
+               ],
+               "VectorAttribute": {
+                  "AttributeName": "string"
+               }
+            }
+         ]
       },
       "TableId": "string"
    }

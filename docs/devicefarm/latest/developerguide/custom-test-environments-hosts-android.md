@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 # Test environment for Android devices
 <a name="custom-test-environments-hosts-android"></a>
 
+For the full list of available test hosts and how to select one, see [Hosts for custom test environments](custom-test-environments-hosts.md).
+
 AWS Device Farm utilizes Amazon Elastic Compute Cloud (EC2) host machines running Amazon Linux 2 to execute Android tests. When you schedule a test run, Device Farm allocates a dedicated host for each device to independently run tests. The host machines terminate after the test run along with any generated artifacts.
 
 The Amazon Linux 2 host provides several advantages:

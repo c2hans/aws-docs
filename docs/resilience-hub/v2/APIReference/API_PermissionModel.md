@@ -13,8 +13,8 @@ Defines the permission model for a service.
  ** invokerRoleName **   <a name="ngresiliencehub-Type-PermissionModel-invokerRoleName"></a>
 IAM role name (supports up to 64 characters per IAM limits).
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 64.
-Pattern: `[A-Za-z0-9_+=,.@\-]{1,64}`
+Length Constraints: Minimum length of 1. Maximum length of 576.
+Pattern: `([A-Za-z0-9_+=,.@\-]+/)*[A-Za-z0-9_+=,.@\-]+`
 Required: Yes
 
  ** crossAccountRoles **   <a name="ngresiliencehub-Type-PermissionModel-crossAccountRoles"></a>

@@ -65,7 +65,7 @@ aws amp create-scraper \
 ## View the automatic dashboard
 <a name="managed-prometheus-collectors-eks-dashboards"></a>
 
-After the collector begins delivering your Amazon EKS metrics to CloudWatch, the CloudWatch console provides an automatic dashboard named **EKS OTel**. To open it, sign in to the AWS Management Console, open the CloudWatch console, choose **Dashboards** in the navigation pane, choose **Automatic dashboards**, and then choose **EKS OTel**. You can start monitoring your clusters without building any widgets or dashboards yourself.
+After the collector begins delivering your Amazon EKS metrics to CloudWatch, the CloudWatch console provides an automatic dashboard named **EKS OTel**. To open it, see [EKS OTel](https://console.aws.amazon.com/cloudwatch/home?#dashboards/templates/eks-otel), or sign in to the AWS Management Console, open the CloudWatch console, choose **Dashboards** in the navigation pane, choose **Automatic dashboards**, and then choose **EKS OTel**. You can start monitoring your clusters without building any widgets or dashboards yourself.
 
 If the automatic dashboard meets your needs, you can use it as is. To build a tailored monitoring experience, you can add any of its widgets to a custom dashboard. For more information about custom dashboards, see [Using CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
 

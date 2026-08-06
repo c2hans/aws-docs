@@ -19,17 +19,18 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/regist
 + [Creating and managing registries](registry-managing-registries.md)
 + [Creating and managing registry records](registry-managing-records.md)
 + [Curating the registry](registry-curating.md)
-+ [Searching the registry](registry-searching.md)
++ [Discovering the registry](registry-searching.md)
 + [Notifications (Amazon EventBridge)](registry-eventbridge.md)
 + [Log Registry API calls with AWS CloudTrail](registry-cloudtrail.md)
 + [IAM Permissions](registry-iam-permissions.md)
++ [Using service-linked roles for AWS Agent Registry](using-service-linked-role-agent-registry.md)
 + [Troubleshooting](registry-troubleshooting.md)
 + [Comprehensive registry migration guide](registry-faq.md)
 
 ## What is AWS Agent Registry?
 <a name="registry-what-is"></a>
 
- AWS Agent Registry is a fully managed discovery service that provides a centralized catalog for organizing, curating, and discovering resources across your organization. With AWS Agent Registry, you can publish MCP servers, tools, agents, agent skills, and custom resources into a searchable registry, control access through an approval workflow, and enable both human users and AI agents to discover the right tools and agents using semantic and keyword search.
+ AWS Agent Registry is a fully managed discovery service that provides a centralized catalog for organizing, curating, and discovering resources across your organization. With AWS Agent Registry, you can publish MCP servers, tools, agents, agent skills, and custom resources into a searchable registry, control access through an approval workflow, and enable both human users and AI agents to discover the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint.
 
 ## Why use AWS Agent Registry?
 <a name="registry-why-use"></a>
@@ -39,8 +40,9 @@ As organizations scale their use of AI agents and tools, discovering the right r
 +  **Governance and curation** – An approval workflow that ensures only records meeting your organization’s criteria for security, compliance, and quality are discoverable. Administrators control what builders in their organization can discover and use, and can remove resources being discoverable at any time.
 +  **Flexible resource types** – Register MCP servers, agents, skills, and any custom resource. AWS Agent Registry validates MCP and agent records against their respective protocol schemas, and supports custom metadata for all resource types.
 +  **Hybrid search** – Combines semantic understanding with keyword matching so that both natural language queries and exact name lookups return relevant results.
++  **Catalog browsing** – Paginate through approved records with filters, or fetch details for many records at once, for building directory-style discovery experiences.
 +  **MCP-native access** – The Registry is available at a remote MCP endpoint that lets MCP-compatible clients interact with the registry directly using the Model Context Protocol.
-+  **Flexible authorization** – Choose between AWS IAM credentials or JSON Web Tokens (JWT) from your corporate identity provider to control who can search and invoke the registry’s MCP endpoint.
++  **Flexible authorization** – Choose between AWS IAM credentials or JSON Web Tokens (JWT) from your corporate identity provider to control who can search, browse, and invoke the registry’s MCP endpoint.
 
 ## How it works
 <a name="registry-how-it-works"></a>
@@ -58,7 +60,7 @@ As organizations scale their use of AI agents and tools, discovering the right r
 
 1.  **Curate the registry** – A curator (or the administrator) reviews records pending approval and approves or rejects them; They also deprecate records no longer in use.
 
-1.  **Discover resources** – Consumers/End-Users search for resources relevant to their needs in the registry.
+1.  **Discover resources** – Consumers/End-Users search, browse the approved-record catalog, or connect to the registry’s MCP endpoint to find resources relevant to their needs.
 
 You can learn more about how to configure IAM Permissions specific to each Persona in [Key Personas](registry-concepts.md#registry-concept-personas).
 

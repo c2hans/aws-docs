@@ -31,7 +31,7 @@ Use the [SHOW GRANTS](r_SHOW_GRANTS.md) command for permission discovery. SHOW G
 | identity\_name | text | The name of the identity. |
 | identity\_type | text | The type of the identity. Possible values are user, role, group, or public. |
 | admin\_option | boolean | A value that indicates whether the user can grant the permission to other users and roles. It is always false for the role and group identity type. |
-| privilege\_scope | text | The scope of the permission specified in privilege\_type. Possible values are as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_SVV_SCHEMA_PRIVILEGES.html) For information on scoped permissions, go to [Scoped permissions](t_scoped-permissions.md).  |
+| privilege\_scope | text | The scope of the permission specified in privilege\_type. Possible values are as follows: + SCHEMA<br />+ TABLES<br />+ FUNCTIONS For information on scoped permissions, go to [Scoped permissions](t_scoped-permissions.md).  |
 
 ## Sample query
 <a name="r_SVV_SCHEMA_PRIVILEGES-sample-query"></a>

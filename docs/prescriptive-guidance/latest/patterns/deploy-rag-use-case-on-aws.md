@@ -112,15 +112,15 @@ The code for this pattern is available in the GitHub [terraform-rag-template-usi
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repository. | To clone the GitHub repository provided with this pattern, use the following command:<pre>git clone https://github.com/aws-samples/terraform-rag-template-using-amazon-bedrock</pre> | AWS DevOps |
-| Configure the variables. | To configure the parameters for this pattern, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-rag-use-case-on-aws.html) | AWS DevOps |
-| Deploy the solution. | To deploy the solution, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-rag-use-case-on-aws.html)<br />The infrastructure deployment provisions an SageMaker AI instance inside the VPC and with the permissions to access the Aurora PostgreSQL database. | AWS DevOps |
+| Configure the variables. | To configure the parameters for this pattern, do the following:1. On your computer, in the GitHub repository, use the following command to open the `terraform` folder:<pre>cd terraform</pre><br />2. Open the `commons.tfvars` file, and customize the parameters according to your needs. | AWS DevOps |
+| Deploy the solution. | To deploy the solution, do the following:1. In the `terraform` folder, use the following command to run Terraform and pass in the variables that you customized:<pre>terraform init<br />terraform apply -var-file=commons.tfvars  </pre><br />2. Confirm that the resources shown in the [architecture](#deploy-rag-use-case-on-aws-architecture) diagram were deployed successfully.<br />The infrastructure deployment provisions an SageMaker AI instance inside the VPC and with the permissions to access the Aurora PostgreSQL database. | AWS DevOps |
 
 ### Test the solution
 <a name="test-the-solution"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Run the demo. | After the previous infrastructure deployment has succeeded, use the following steps to run the demo in a Jupyter notebook:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-rag-use-case-on-aws.html)<br />The Jupyter notebook guides you through the following process:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-rag-use-case-on-aws.html) | General AWS |
+| Run the demo. | After the previous infrastructure deployment has succeeded, use the following steps to run the demo in a Jupyter notebook:1. Sign in to the AWS Management Console of the AWS account where the infrastructure is deployed.<br />2. Open the SageMaker AI notebook instance `aws-sample-bedrock-rag-template`.<br />3. Move the `rag_demo.ipynb` Jupyter notebook onto the SageMaker AI notebook instance by using drag and drop.<br />4. Open the `rag_demo.ipynb` on the SageMaker AI notebook instance, and choose the `conda_python3` kernel.<br />5. To run the demo, run the cells of the notebook.<br />The Jupyter notebook guides you through the following process:+ Installing requirements<br />+ Embedding definition<br />+ Database connection<br />+ Data ingestion<br />+ Retrieval augmented text generation<br />+ Relevant document queries | General AWS |
 
 ### Clean up infrastucture
 <a name="clean-up-infrastucture"></a>

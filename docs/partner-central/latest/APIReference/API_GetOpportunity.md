@@ -142,6 +142,8 @@ Required: Yes
    "RelatedEntityIdentifiers": {
       "AwsMarketplaceOffers": [ "string" ],
       "AwsMarketplaceOfferSets": [ "string" ],
+      "AwsMarketplaceProducts": [ "string" ],
+      "AwsMarketplaceSolutions": [ "string" ],
       "AwsProducts": [ "string" ],
       "Solutions": [ "string" ]
    },

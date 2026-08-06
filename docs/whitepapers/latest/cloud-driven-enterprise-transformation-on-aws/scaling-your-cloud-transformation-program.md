@@ -13,7 +13,7 @@ Teams do not need to be configured or operate identically, even in a well-define
 
 |  Traditional view  |  Modern view  |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/scaling-your-cloud-transformation-program.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/scaling-your-cloud-transformation-program.html)  |
+|  +   Use traditional siloed operating model  <br />+   Command and control traditional wave planning  <br />+   Freeze change / baseline and protect initial scope / planned activities  <br />+   Maintain rigid separation of individual roles and responsibilities  <br />+   Enforce “hand off” approach through quality gates    |  +   Enable team autonomy with guardrails  <br />+   Use migration to activate team capabilities  <br />+   Reduce complexity by accelerating teams / portfolios through migration  <br />+   Run what you build (where it makes sense)  <br />+   Self-service access to reusable assets for speed and security  <br />+   Automated controls and code scans built into foundations    |
 
  **Launch a cloud enablement engine to foster engineering best practices and reuse**
 

@@ -199,7 +199,7 @@ Specifies attribute-based criteria for including or excluding endpoints from a s
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| AttributeType | string<br />Values: `INCLUSIVE \| EXCLUSIVE \| CONTAINS \| BEFORE \| AFTER \| BETWEEN \| NOT_BETWEEN \| ON` | False | The type of segment dimension to use. Valid values are:   `INCLUSIVE` – endpoints that have attributes matching the values are included in the segment.    `EXCLUSIVE` – endpoints that have attributes matching the values are excluded from the segment.    `CONTAINS` – endpoints that have attributes' substrings match the values are included in the segment.    `BEFORE` – endpoints with attributes read as ISO\_INSTANT datetimes before the value are included in the segment.    `AFTER` – endpoints with attributes read as ISO\_INSTANT datetimes after the value are included in the segment.    `BETWEEN` – endpoints with attributes read as ISO\_INSTANT datetimes between the values are included in the segment.    `ON` – endpoints with attributes read as ISO\_INSTANT dates on the value are included in the segment. Time is ignored in this comparison.   |
+| AttributeType | string<br />Values: `INCLUSIVE \| EXCLUSIVE \| CONTAINS \| BEFORE \| AFTER \| BETWEEN \| NOT_BETWEEN \| ON` | False | The type of segment dimension to use. Valid values are:+   `INCLUSIVE` – endpoints that have attributes matching the values are included in the segment. <br />+   `EXCLUSIVE` – endpoints that have attributes matching the values are excluded from the segment. <br />+   `CONTAINS` – endpoints that have attributes' substrings match the values are included in the segment. <br />+   `BEFORE` – endpoints with attributes read as ISO\_INSTANT datetimes before the value are included in the segment. <br />+   `AFTER` – endpoints with attributes read as ISO\_INSTANT datetimes after the value are included in the segment. <br />+   `BETWEEN` – endpoints with attributes read as ISO\_INSTANT datetimes between the values are included in the segment. <br />+   `ON` – endpoints with attributes read as ISO\_INSTANT dates on the value are included in the segment. Time is ignored in this comparison.  |
 | Values | Array of type string | True | The criteria values to use for the segment dimension. Depending on the value of the `AttributeType` property, endpoints are included or excluded from the segment if their attribute values match the criteria values. |
 
 ### CampaignEventFilter
@@ -221,7 +221,7 @@ Information about the default behavior for a button that appears in an in-app me
 | --- |--- |--- |--- |
 | BackgroundColor | string | False | The background color of a button, expressed as a string consisting of a hex color code (such as "\#000000" for black). |
 | BorderRadius | integer | False | The border radius of a button. |
-| ButtonAction | string<br />Values: `LINK \| DEEP_LINK \| CLOSE` | True | The action that occurs when a recipient chooses a button in an in-app message. You can specify one of the following:  `LINK` – A link to a web destination.   `DEEP_LINK` – A link to a specific page in an application.   `CLOSE` – Dismisses the message.   |
+| ButtonAction | string<br />Values: `LINK \| DEEP_LINK \| CLOSE` | True | The action that occurs when a recipient chooses a button in an in-app message. You can specify one of the following:+  `LINK` – A link to a web destination. <br />+  `DEEP_LINK` – A link to a specific page in an application. <br />+  `CLOSE` – Dismisses the message.  |
 | Link | string | False | The destination (such as a URL) for a button. |
 | Text | string | True | The text that appears on a button in an in-app message. |
 | TextColor | string | False | The color of the body text in a button, expressed as a string consisting of a hex color code (such as "\#000000" for black). |
@@ -253,7 +253,7 @@ Specifies the dimensions for an event filter that determines when a campaign is 
 | --- |--- |--- |--- |
 | Content | Array of type [InAppMessageContent](#apps-application-id-endpoints-endpoint-id-inappmessages-model-inappmessagecontent) | False | Contains information about the configuration of an in-app message template. |
 | CustomConfig | object | False | An object that contains custom data (in the form of key-value pairs) that is included in the in-app messaging payload. |
-| Layout | string<br />Values: `BOTTOM_BANNER \| TOP_BANNER \| OVERLAYS \| MOBILE_FEED \| MIDDLE_BANNER \| CAROUSEL` | False | A string that describes how the in-app message will appear. You can specify one of the following:  `BOTTOM_BANNER` – a message that appears as a banner at the bottom of the page.   `TOP_BANNER` – a message that appears as a banner at the top of the page.   `OVERLAYS` – a message that covers entire screen.   `MOBILE_FEED` – a message that appears in a window in front of the page.   `MIDDLE_BANNER` – a message that appears as a banner in the middle of the page.   `CAROUSEL` – a scrollable layout of up to five unique messages.   |
+| Layout | string<br />Values: `BOTTOM_BANNER \| TOP_BANNER \| OVERLAYS \| MOBILE_FEED \| MIDDLE_BANNER \| CAROUSEL` | False | A string that describes how the in-app message will appear. You can specify one of the following:+  `BOTTOM_BANNER` – a message that appears as a banner at the bottom of the page. <br />+  `TOP_BANNER` – a message that appears as a banner at the top of the page. <br />+  `OVERLAYS` – a message that covers entire screen. <br />+  `MOBILE_FEED` – a message that appears in a window in front of the page. <br />+  `MIDDLE_BANNER` – a message that appears as a banner in the middle of the page. <br />+  `CAROUSEL` – a scrollable layout of up to five unique messages.  |
 
 ### InAppMessageBodyConfig
 <a name="apps-application-id-endpoints-endpoint-id-inappmessages-model-inappmessagebodyconfig"></a>
@@ -353,7 +353,7 @@ Configuration information related to the configuration of a button with settings
 
 | Property | Type | Required | Description |
 | --- |--- |--- |--- |
-| ButtonAction | string<br />Values: `LINK \| DEEP_LINK \| CLOSE` | False | The action that occurs when a recipient chooses a button in an in-app message. You can specify one of the following:  `LINK` – A link to a web destination.   `DEEP_LINK` – A link to a specific page in an application.   `CLOSE` – Dismisses the message.   |
+| ButtonAction | string<br />Values: `LINK \| DEEP_LINK \| CLOSE` | False | The action that occurs when a recipient chooses a button in an in-app message. You can specify one of the following:+  `LINK` – A link to a web destination. <br />+  `DEEP_LINK` – A link to a specific page in an application. <br />+  `CLOSE` – Dismisses the message.  |
 | Link | string | False | The destination (such as a URL) for a button. |
 
 ### QuietTime

@@ -11,10 +11,10 @@ The *Amazon DynamoDB Developer Guide* uses sample tables to illustrate various a
 
 | Table name | Primary key |
 | --- | --- |
-| ProductCatalog | Simple primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
-| Forum | Simple primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
-| Thread | Composite primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
-| Reply | Composite primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
+| ProductCatalog | Simple primary key:+  `Id` (Number)  |
+| Forum | Simple primary key:+  `Name` (String)  |
+| Thread | Composite primary key:+  `ForumName` (String) <br />+  `Subject` (String)  |
+| Reply | Composite primary key:+  `Id` (String) <br />+   `ReplyDateTime` (String)  |
 
 The *Reply* table has a global secondary index named *PostedBy-Message-Index*. This index will facilitate queries on two non-key attributes of the *Reply* table.
 
@@ -22,7 +22,7 @@ The *Reply* table has a global secondary index named *PostedBy-Message-Index*. T
 
 | Index name | Primary key |
 | --- | --- |
-| PostedBy-Message-Index | Composite primary key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html) |
+| PostedBy-Message-Index | Composite primary key:+  `PostedBy` (String) <br />+  `Message` (String)  |
 
 For more information about these tables, see [Step 1: Create a table in DynamoDB](getting-started-step-1.md) and [Step 2: Write data to a DynamoDB table](getting-started-step-2.md).
 

@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/fargate-or-lambda
 | --- |--- |
 | **Purpose** | To explore whether AWS Fargate or AWS Lambda meet your needs for a serverless compute service. |
 | **Last updated** | November 15, 2024 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/fargate-or-lambda/fargate-or-lambda.html)  |
+| **Covered services** |  +  [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html)  <br />+  [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)   |
 
 ## Introduction
 <a name="introduction"></a>

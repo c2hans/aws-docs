@@ -11,4 +11,4 @@ The following tables list and describe the requirements for ordering phone numbe
 
 | Supported product types | Number types | ID requirements | Acceptable ID types |
 | --- | --- | --- | --- |
-| SIP Media Application Dial-In | Local | Yes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/chime-sdk/latest/ag/order-port-nigeria.html)Foreign address acceptable. |
+| SIP Media Application Dial-In | Local | Yes | +  Business address Foreign address acceptable. |

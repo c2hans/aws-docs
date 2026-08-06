@@ -11,4 +11,4 @@ This reference is intended to be used with the [https://docs.aws.amazon.com/syst
 +  [Setting up AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-setting-up.html)
 +  [Connect to a Windows Server managed instance using Remote Desktop](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet-rdp.html)
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

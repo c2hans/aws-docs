@@ -355,11 +355,11 @@ When transitioning to Iceberg format, the choice between in-place and full migra
 |
 | Question | Recommendation |
 | --- |--- |
-| **What is the data file format (for example, CSV or Apache Parquet)?** | Consider in-place migration if your table file format is Parquet, ORC, or Avro.For other formats such as CSV, JSON, and so on, use full data migration. |
-| **Do you want to update or consolidate the table schema?** | If you want to evolve the table schema by using Iceberg native capabilities, consider in-place migration. For example, you can rename columns after the migration. (The schema can be changed in the Iceberg metadata layer.)If you want to remove entire columns because they are no longer needed, we recommend that you use full data migration. |
-| **Would the table benefit from changing the partition strategy?** | If Iceberg's partitioning approach meets your requirements (for example, new data is stored by using the new partition layout while existing partitions remain as is), consider in-place migration.If you want to use hidden partitions in your table, consider full data migration. For more information about hidden partitions, see the [Best practices](best-practices-read.md#read-partitioning) section. |
-| **Would the table benefit from adding or changing the sort order strategy?** | Adding or changing the sort order of your data requires rewriting the dataset. In this case, consider using full data migration.For large tables where it's prohibitively expensive to rewrite all the table partitions, consider using in-place migration and run compaction (with sorting enabled) for the most frequently accessed partitions. |
-| **Does the table have many small files?** | Merging small files into larger files requires rewriting the dataset. In this case, consider using full data migration.For large tables where it's prohibitively expensive to rewrite all the table partitions, consider using in-place migration and run compaction (with sorting enabled) for the most frequently accessed partitions. |
+| **What is the data file format (for example, CSV or Apache Parquet)?** | + Consider in-place migration if your table file format is Parquet, ORC, or Avro.+ For other formats such as CSV, JSON, and so on, use full data migration. |
+| **Do you want to update or consolidate the table schema?** | + If you want to evolve the table schema by using Iceberg native capabilities, consider in-place migration. For example, you can rename columns after the migration. (The schema can be changed in the Iceberg metadata layer.)+ If you want to remove entire columns because they are no longer needed, we recommend that you use full data migration. |
+| **Would the table benefit from changing the partition strategy?** | + If Iceberg's partitioning approach meets your requirements (for example, new data is stored by using the new partition layout while existing partitions remain as is), consider in-place migration.+ If you want to use hidden partitions in your table, consider full data migration. For more information about hidden partitions, see the [Best practices](best-practices-read.md#read-partitioning) section. |
+| **Would the table benefit from adding or changing the sort order strategy?** | + Adding or changing the sort order of your data requires rewriting the dataset. In this case, consider using full data migration.+ For large tables where it's prohibitively expensive to rewrite all the table partitions, consider using in-place migration and run compaction (with sorting enabled) for the most frequently accessed partitions. |
+| **Does the table have many small files?** | + Merging small files into larger files requires rewriting the dataset. In this case, consider using full data migration.+ For large tables where it's prohibitively expensive to rewrite all the table partitions, consider using in-place migration and run compaction (with sorting enabled) for the most frequently accessed partitions. |
 
 ## Migration options summary
 <a name="migration-options"></a>
@@ -372,18 +372,18 @@ This table summarizes the main characteristics and considerations for each migra
 | --- |--- |--- |
 | [snapshot](#table-migration-inplace) | [migrate](#table-migration-inplace) | [CTAS or (CREATE TABLE \+ INSERT)](#table-migration-full) |
 | **Data layout improvements as part of the migration process** |  |  |  |
-| Re-sort data | No | No | Yes |
-| Change partitioning (for example, to use Iceberg hidden partitioning) | No | No | Yes |
-| Change table schema | No | No | Yes |
-| Optimize file size | No | No | Yes |
-| Validate the schema of existing data before adding the data | No | No | Yes |
+| + Re-sort data | No | No | Yes |
+| + Change partitioning (for example, to use Iceberg hidden partitioning) | No | No | Yes |
+| + Change table schema | No | No | Yes |
+| + Optimize file size | No | No | Yes |
+| + Validate the schema of existing data before adding the data | No | No | Yes |
 | **Supported file formats** | Parquet, Avro, ORC | Parquet, Avro, ORC | Parquet, Avro, ORC, JSON, CSV |
 | **Source table replacement by an Iceberg table** | No<br />(creates a new table,  but with additional steps you can replace the source table) | Yes<br />(creates a backup table and substitutes the source table with an Iceberg table) | No<br />(creates a new table) |
 | **Source table impact** |  |  |  |
-| File deletion operations on Iceberg table (`expire_snapshot `operations, dropping a table with purge) | Corrupts source table | Corrupts backup table | Safe, source unaffected |
+| + File deletion operations on Iceberg table (`expire_snapshot `operations, dropping a table with purge) | Corrupts source table | Corrupts backup table | Safe, source unaffected |
 | **Iceberg table impact** |  |  |  |
-| Impact if source table files are removed | Corrupts Iceberg table | Corrupts Iceberg table | No impact on Iceberg table |
-| Impact if new files are added on source table location | Not visible on new table<br />(need to incorporate partition with `add_files`) | Not visible on new table<br />(need to incorporate partition with `add_files`) | Not visible on new table<br />(need to `INSERT INTO` the new table) |
+| + Impact if source table files are removed | Corrupts Iceberg table | Corrupts Iceberg table | No impact on Iceberg table |
+| + Impact if new files are added on source table location | Not visible on new table<br />(need to incorporate partition with `add_files`) | Not visible on new table<br />(need to incorporate partition with `add_files`) | Not visible on new table<br />(need to `INSERT INTO` the new table) |
 | **Cost** | Low | Low | Higher (full data rewrite) |
 | **Migration speed** | Fast | Fast | Slower |
 | **Can be used to migrate to Amazon S3 Tables** | No | No | Yes |

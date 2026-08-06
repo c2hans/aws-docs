@@ -12,7 +12,7 @@ We recommend that you work through this checklist to prepare the service context
 | ☐ | C1 | Required | Clearly identify the service or system you want to review, which might include one or more end-user facing process flows. The term *service* is used in this context throughout the Government Lens review.  |
 | ☐ | C2 | Recommended | AWS recommends that all individual process flows have a review using the Well-Architected Framework lens prior to running a Government Lens review of the *service* as a whole. This helps verify that the individual flows meet the AWS best technical practices, which are then complemented by the service review done against the government context. |
 | ☐ | C3 | Required | Schedule at least three hours for the Gov Lens review (which could be spread over 2–3 shorter sessions, if desired). Invite the relevant AWS account executive and the customer product owners to participate in the entire Government Lens review session. |
-| ☐ | C4 | Recommended |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/government-lens/service-context-checklist.html)  |
+| ☐ | C4 | Recommended |  +  Enterprise risk representatives —for the last operational excellence pillar question, and the security and reliability pillar questions. <br />+  Security personnel —for the security and reliability pillar questions. <br />+  Relevant policy and program owners, frontline staff representatives (who understand the context of end users), and business and policy owners —for the reliability pillar and service outcomes for government questions.   |
 
 ## Using the Government Lens in AWS WA Tool
 <a name="using-the-government-lens"></a>

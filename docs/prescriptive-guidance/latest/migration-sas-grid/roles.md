@@ -11,5 +11,5 @@ The SAS Grid migration process involves the following roles and expertise.
 |
 | Role | Responsibilities |
 | --- |--- |
-| SAS SME or consultant | Provide SAS installation, technical architecture, security, and migration expertise. |
-| AWS architect | Advise and provision AWS services and infrastructure resources.Establish AWS Identity and Access Management (IAM) roles for users and groups.Provide security administration for all provisioned AWS services. |
+| SAS SME or consultant | + Provide SAS installation, technical architecture, security, and migration expertise. |
+| AWS architect | + Advise and provision AWS services and infrastructure resources.<br />+ Establish AWS Identity and Access Management (IAM) roles for users and groups.<br />+ Provide security administration for all provisioned AWS services. |

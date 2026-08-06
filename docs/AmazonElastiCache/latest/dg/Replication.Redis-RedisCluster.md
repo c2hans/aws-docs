@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Replication.
 # Replication: Valkey and Redis OSS Cluster Mode Disabled vs. Enabled
 <a name="Replication.Redis-RedisCluster"></a>
 
-Beginning with Valkey 7.2 and Redis OSS version 3.2, you have the ability to create one of two distinct types of clusters (API/CLI: replication groups). A Valkey or Redis OSS (cluster mode disabled) cluster always has a single shard (API/CLI: node group) with up to 5 read replica nodes. A Valkey or Redis OSS (cluster mode enabled) cluster has up to 500 shards with 1 to 5 read replica nodes in each.
+With Valkey and Redis OSS, you have the ability to create one of two distinct types of clusters (API/CLI: replication groups). A Valkey or Redis OSS (cluster mode disabled) cluster always has a single shard (API/CLI: node group) with up to 5 read replica nodes. A Valkey or Redis OSS (cluster mode enabled) cluster has up to 500 shards with 1 to 5 read replica nodes in each.
 
 ![Image: Valkey or Redis OSS (cluster mode disabled), and Valkey or Redis OSS (cluster mode enabled) clusters](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ElastiCache-NodeGroups.png)
 
@@ -24,12 +24,12 @@ The following table summarizes important differences between Valkey or Redis OSS
 | Multi-AZ  | Yes, with at least 1 replica. Optional. On by default. | YesOptional. On by default. |
 | Snapshots (Backups) | Yes, creating a single .rdb file. | Yes, creating a unique .rdb file for each shard. |
 | Restore | Yes, using a single .rdb file from a Valkey or Redis OSS (cluster mode disabled) cluster. | Yes, using .rdb files from either a Valkey or Redis OSS (cluster mode disabled) or a Valkey or Redis OSS (cluster mode enabled) cluster. |
-| Supported by | All Valkey and Redis OSS versions | All Valkey versions, and Redis OSS 3.2 and following |
+| Supported by | All Valkey and Redis OSS versions | All Valkey and Redis OSS versions |
 | Engine upgradeable | Yes, with some limits. For more information, see [Version Management for ElastiCache](VersionManagement.md). | Yes, with some limits. For more information, see [Version Management for ElastiCache](VersionManagement.md). |
-| Encryption | Versions 3.2.6 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and 4.0.10 and later. | Versions 3.2.6 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and 4.0.10 and later. |
-| HIPAA Eligible | Versions 3.2.6 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and 4.0.10 and later. | Versions 3.2.6 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and 4.0.10 and later. |
-| PCI DSS Compliant | Versions 3.2.6 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and 4.0.10 and later. | Versions 3.2.6 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and 4.0.10 and later. |
-| Online resharding | N/A | Version 3.2.10 (scheduled for EOL, see [Redis OSS versions end of life schedule](engine-versions.md#deprecated-engine-versions)) and later. |
+| Encryption | All Valkey versions, and Redis OSS 4.0.10 and later. | All Valkey versions, and Redis OSS 4.0.10 and later. |
+| HIPAA Eligible | All Valkey versions, and Redis OSS 4.0.10 and later. | All Valkey versions, and Redis OSS 4.0.10 and later. |
+| PCI DSS Compliant | All Valkey versions, and Redis OSS 4.0.10 and later. | All Valkey versions, and Redis OSS 4.0.10 and later. |
+| Online resharding | N/A | All Valkey versions, and Redis OSS 4.0.10 and later. |
 
 ## Which should I choose?
 <a name="Replication.Redis-RedisCluster.Choose"></a>

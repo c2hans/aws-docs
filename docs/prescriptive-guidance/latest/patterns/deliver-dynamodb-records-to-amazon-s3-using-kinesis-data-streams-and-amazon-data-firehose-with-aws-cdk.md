@@ -66,14 +66,14 @@ The code for this pattern is available in the GitHub [aws-dynamodb-kinesisfireho
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Install the dependencies. | On your local machine, install the dependencies from the `package.json` files in the `pattern/aws-dynamodb-kinesisstreams-s3` and `sample-application` directories by running the following commands:<pre>cd <project_root>/pattern/aws-dynamodb-kinesisstreams-s3 </pre><pre>npm install && npm run build</pre><pre>cd <project_root>/sample-application/</pre><pre>npm install && npm run build</pre><br />  | App developer, General AWS |
-| Generate the CloudFormation template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deliver-dynamodb-records-to-amazon-s3-using-kinesis-data-streams-and-amazon-data-firehose-with-aws-cdk.html) | App developer, General AWS, AWS DevOps |
+| Generate the CloudFormation template. | 1. Run the `cd <project_root>/sample-application/` command.<br />2. Run the `cdk synth` command to generate the CloudFormation template.<br />3. The `AwsDynamodbKinesisfirehoseS3IngestionStack.template.json` output is stored in the `cdk.out` directory.<br />4. Use AWS CDK or the AWS Management Console to process the template in CloudFormation. | App developer, General AWS, AWS DevOps |
 
 ### Deploy the resources
 <a name="deploy-the-resources"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Check and deploy the resources. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deliver-dynamodb-records-to-amazon-s3-using-kinesis-data-streams-and-amazon-data-firehose-with-aws-cdk.html) | App developer, General AWS, AWS DevOps |
+| Check and deploy the resources. | 1. Run the `cdk diff` command to identify the resource types that are created by the AWS CDK construct.<br />2. Run the `cdk deploy` command to deploy the resources. | App developer, General AWS, AWS DevOps |
 
 ### Ingest data into the DynamoDB table to test the solution
 <a name="ingest-data-into-the-dynamodb-table-to-test-the-solution"></a>

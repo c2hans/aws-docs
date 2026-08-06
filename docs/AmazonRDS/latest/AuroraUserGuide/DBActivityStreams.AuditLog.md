@@ -458,7 +458,7 @@ The database activity event records are in a JSON object that contains the follo
 | JSON Field | Data Type | Description |
 | --- | --- | --- |
 | `type` | string | The type of JSON record. The value is `DatabaseActivityMonitoringRecords`. |
-| version | string |  The version of the database activity monitoring records. The version of the generated database activity records depends on the engine version of the DB cluster:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DBActivityStreams.AuditLog.html)<br />All of the following fields are in both version 1.0 and version 1.1 except where specifically noted. |
+| version | string |  The version of the database activity monitoring records. The version of the generated database activity records depends on the engine version of the DB cluster:+  Version 1.1 database activity records are generated for Aurora PostgreSQL DB clusters running the engine versions 10.10 and later minor versions and engine versions 11.5 and later. <br />+  Version 1.0 database activity records are generated for Aurora PostgreSQL DB clusters running the engine versions 10.7 and 11.4. <br />All of the following fields are in both version 1.0 and version 1.1 except where specifically noted. |
 | [databaseActivityEvents](#DBActivityStreams.AuditLog.databaseActivityEvents) | string | A JSON object that contains the activity events. |
 | key | string | An encryption key that you use to decrypt the [databaseActivityEventList JSON array](DBActivityStreams.AuditLog.databaseActivityEventList.md)  |
 

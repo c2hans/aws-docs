@@ -20,7 +20,7 @@ STL\_WLM\_RULE\_ACTION is visible to all users. Superusers can see all rows; reg
 | query  | integer  | Query ID.  |
 | service\_class  | integer  | ID for the service class. Query queues are defined in the WLM configuration. Service classes greater than 5 are user-defined queues.  |
 | rule | character(256)  | Name of a query monitoring rule.  |
-| action | character(256)  | Resulting action. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_WLM_RULE_ACTION.html)<br />A value of `none` indicates that the rule’s predicates were met but the action was superseded by another rule with a higher severity action. |
+| action | character(256)  | Resulting action. Possible values are as follows:+  log <br />+  hop(reassign) <br />+  hop(restart) <br />+  abort <br />+  change\_query\_priority <br />+  none <br />A value of `none` indicates that the rule’s predicates were met but the action was superseded by another rule with a higher severity action. |
 | recordtime | timestamp | Time the action was logged in UTC. |
 | action\_value | character(256) | If action is change\_query\_priority, then possible values are highest, high, normal, low, and lowest. If `action` is `log`, `hop`, or `abort` then the value is empty.  |
 | service\_class\_name | character(64) | The name of the service class.  |

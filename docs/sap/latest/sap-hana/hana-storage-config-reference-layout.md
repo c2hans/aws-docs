@@ -158,7 +158,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 3,700 | 8,600 | 1,125 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 3,700 | 8,600 | 1,125 | gp3/io2 |  +   **gp3**: 2 x 1,650 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 4,300 IOPS, 625 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 300 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -174,7 +174,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 4,900 | 9,000 | 1,250 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 4,900 | 9,000 | 1,250 | gp3/io2 |  +   **gp3**: 2 x 2,450 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 4,500 IOPS, 625 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 300 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -190,7 +190,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 7,300 | 10,000 | 1,625 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 7,300 | 10,000 | 1,625 | gp3/io2 |  +   **gp3**: 2 x 3,650 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 5,000 IOPS, 875 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 300 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -206,7 +206,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 9,800 | 10,900 | 2,000 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 9,800 | 10,900 | 2,000 | gp3/io2 |  +   **gp3**: 2 x 4,900 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 5,500 IOPS, 1,000 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 300 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -222,7 +222,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 11,100 | 11,300 | 2,000 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 11,100 | 11,300 | 2,000 | gp3/io2 |  +   **gp3**: 2 x 5,550 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 5,700 IOPS, 1,000 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 300 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -238,7 +238,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 14,700 | 12,700 | 2,000 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 14,700 | 12,700 | 2,000 | gp3/io2 |  +   **gp3**: 2 x 7,350 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 6,400 IOPS, 1,000 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 500 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -254,7 +254,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 19,700 | 14,600 | 2,000 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 19,700 | 14,600 | 2,000 | gp3/io2 |  +   **gp3**: 2 x 9,850 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 7,300 IOPS, 1,000 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 500 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -270,7 +270,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 22,100 | 15,500 | 2,000 | gp3/io2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 22,100 | 15,500 | 2,000 | gp3/io2 |  +   **gp3**: 2 x 11,050 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 7,800 IOPS, 1,000 MB/s Throughput <br />+   **io2**: Not Required   |  |
 | HANA Log | 500 | 3,000 | 500 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -286,7 +286,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 29,500 | 18,300 | 2,000 | gp3/io2 (io2 recommended) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  | Throughput target can be met with 2 stripes for gp3, 3 recommended to reduce volume size. |
+| HANA Data | 29,500 | 18,300 | 2,000 | gp3/io2 (io2 recommended) |  +   **gp3**: 3 x 10,000 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 6,100 IOPS, 625 MB/s Throughput <br />+   **io2**: Not required, but consider striping for backup and start parallelism   | Throughput target can be met with 2 stripes for gp3, 3 recommended to reduce volume size. |
 | HANA Log | 500 | 3,000 | 500 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
@@ -302,7 +302,7 @@ Suggested Storage Configuration:
 | --- | --- | --- | --- | --- | --- | --- |
 | Root/OS | 50 | 3,000 | 125 | gp3 |  |  |
 | SAP Binaries | 50 | 3,000 | 125 | gp3 |  |  |
-| HANA Data | 39,300 | 21,900 | 4,000 | gp3/io2 (io2 recommended) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html)  |  |
+| HANA Data | 39,300 | 21,900 | 4,000 | gp3/io2 (io2 recommended) |  +   **gp3**: 4 x 9,900 GiB Filesystems. LVM Stripe Size 256 KB. Per Volume - 5,100 IOPS, 1000 MB/s Throughput <br />+   **io2**: 3 x 13,100 GiB. LVM Stripe Size 256 KB. Per Volume - 7,300 IOPS, 1,375 MB/s Throughput   |  |
 | HANA Log | 500 | 3,000 | 500 | gp3/io2 | Not Required |  |
 | HANA Shared | 1,024 | 3,000 | 125 | gp3 |  | For scale out, review formula or use EFS |
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |

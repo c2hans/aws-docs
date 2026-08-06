@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-
 |  |  |
 | --- |--- |
 | **Time to complete** | 10 minutes  |
-| **Get help** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-react-app-amplify-graphql/module-three.html)  |
+| **Get help** |  +  [Troubleshooting Amplify](https://docs.amplify.aws/react/build-a-backend/troubleshooting/)  <br />+  [Troubleshooting common issues using Amplify UI](https://ui.docs.amplify.aws/react/getting-started/troubleshooting)    |
 
 ## Overview
 <a name="overview"></a>

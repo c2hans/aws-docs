@@ -55,7 +55,7 @@ The following table lists the Connector for SCEP resource type for which you can
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| Connector |  AWS::PCAConnectorSCEP::Connector  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/privateca/latest/userguide/logging-using-cloudtrail-c4scep.html)  |
+| Connector |  AWS::PCAConnectorSCEP::Connector  |  + `PKIOperationGet` - Generated if an HTTP GET SCEP request containing a `PKCSReq` message is made to the dataplane endpoint of a connector, and the operation of that message is set to `PKIOperation`.<br />+ `PKIOperationPost` - Generated if an HTTP POST SCEP request containing a `PKCSReq` message is made to the dataplane endpoint of a connector, and the operation of that message is set to `PKIOperation`.<br />+ `GetCACaps` - Generated if a SCEP request containing a `GetCACaps` message is made to the dataplane endpoint of a connector.<br />+ `GetCACert` - Generated if a SCEP request containing a `GetCACert` message is made to the dataplane endpoint of a connector.  |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. The following example is the JSON view of a data event configuration that logs events for a specific function only. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

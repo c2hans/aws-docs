@@ -16,7 +16,7 @@ The `AWS/IPAM` namespace includes the following IPAM metrics.
 
 | Metric name | Description |
 | --- | --- |
-| TotalActiveIpCount  | The total active IP count is the number of active IP addresses in your IPAM that you would be charged if you switched from the Free Tier to the Advanced Tier. An active IP address is defined as an IP address or a prefix associated with an Elastic Network Interface (ENI) that is attached to a resource such as an EC2 Instance. [See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/ipam/cloudwatch-ipam-ip-address-usage.html) |
+| TotalActiveIpCount  | The total active IP count is the number of active IP addresses in your IPAM that you would be charged if you switched from the Free Tier to the Advanced Tier. An active IP address is defined as an IP address or a prefix associated with an Elastic Network Interface (ENI) that is attached to a resource such as an EC2 Instance. + This metric is only available to customers in the Free Tier.<br />+ If your IPAM is [integrated with AWS Organizations](enable-integ-ipam.md), the active IP count covers all the Organization accounts.<br />+ You cannot view a breakdown of the active IP count by IP type (public/private) or class (IPv4/IPv6).<br />+ IPAM only counts IPs from ENIs owned by monitored accounts. The count may be inaccurate for shared subnets. IP addresses are excluded if the subnet owner or ENI owner is not covered by IPAM. |
 
 ## IPAM pool metrics
 <a name="cloudwatch-ipam-pool-metrics"></a>

@@ -60,9 +60,9 @@ You can give user access to specific dead-letter queue actions by adding permiss
 
 | Minimum Permissions | Required API methods |
 | --- | --- |
-| To start a message redrive | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-dead-letter-queue-redrive.html) |
-| To cancel an in-progress message redrive | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-dead-letter-queue-redrive.html) |
-| To show a message move status | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-dead-letter-queue-redrive.html) |
+| To start a message redrive | +  Add the `sqs:StartMessageMoveTask`, `sqs:ReceiveMessage`, `sqs:DeleteMessage`, and `sqs:GetQueueAttributes` of the dead-letter queue. If either the dead-letter queue or the original source queue are encrypted (also known as an [SSE](sqs-server-side-encryption.md) queue), `kms:Decrypt` for any KMS key that has been used to encrypt the messages is also required. <br />+  Add the `sqs:SendMessage` of the destination queue. If the destination queue is encrypted, `kms:GenerateDataKey` and `kms:Decrypt`are also required.  |
+| To cancel an in-progress message redrive | +  Add the `sqs:CancelMessageMoveTask`, `sqs:ReceiveMessage`, `sqs:DeleteMessage`, and `sqs:GetQueueAttributes` of the dead-letter queue. If the dead-letter queue is encrypted (also known as an [SSE](sqs-server-side-encryption.md) queue), `kms:Decrypt` is also required.  |
+| To show a message move status | +  Add the `sqs:ListMessageMoveTasks` and `sqs:GetQueueAttributes` of the dead-letter queue.  |
 
 **To configure permissions for an encrypted queue pair (a source queue with a dead-letter queue)**
 

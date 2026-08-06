@@ -12,7 +12,7 @@ These stored procedures are only available with RDS for MySQL DB instances runni
 + 8.0.35 and higher minor versions
 + 5.7.44 and higher minor versions
 
-When using stored procedures to manage replication with a replication user configured with `caching_sha2_passwword`, you must configure TLS by specifying `SOURCE_SSL=1`. `caching_sha2_password` is the default authentication plugin for RDS for MySQL 8.4.
+When using stored procedures to manage replication with a replication user configured with `caching_sha2_password`, you must configure TLS by specifying `ssl_encryption=1`. `caching_sha2_password` is the default authentication plugin for RDS for MySQL 8.4.
 
 **Note**
 Although this documentation refers to source DB instances as RDS for MySQL DB instances, these procedures also work for MySQL instances running external to Amazon RDS.

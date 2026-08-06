@@ -3524,6 +3524,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
   - **Access level:** Read
 
+- **   [PassTopic](https://docs.aws.amazon.com/quicksight/latest/APIReference/qs-api-overview.html)  **
+  - **Description:** Grants permission to use a topic for a template
+  - **Resource types (\*required):** [topic\*](#list_quicksight-resource-topic)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_quicksight-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_quicksight-aws_TagKeys)
+  - **Access level:** Read
+
 - **   [QuickSuiteUsageMetrics](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
   - **Description:** Grants permission to get QuickSuite usage metrics
   - **Resource types (\*required):**

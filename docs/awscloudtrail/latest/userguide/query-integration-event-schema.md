@@ -23,36 +23,36 @@ The following fields are provided by CloudTrail after ingestion:
 | awsRegion | string | Required | The AWS Region where the `PutAuditEvents` call was made. |
 | recipientAccountId | string | Required | Represents the account ID that received this event. CloudTrail populates this field by calculating it from event payload. |
 | addendum | - | Optional | Shows information about why event processing was delayed. If information was missing from an existing event, the addendum block includes the missing information and a reason for why it was missing. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The reason that the event or some of its contents were missing. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The event record fields that are updated by the addendum. This is only provided if the reason is `UPDATED_DATA`. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The original event UID from the source. This is only provided if the reason is `UPDATED_DATA`. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The original event ID. This is only provided if the reason is `UPDATED_DATA`. |
+|  +  reason   | string | Optional | The reason that the event or some of its contents were missing. |
+|  +  updatedFields   | string | Optional | The event record fields that are updated by the addendum. This is only provided if the reason is `UPDATED_DATA`. |
+|  +  originalUID   | string | Optional | The original event UID from the source. This is only provided if the reason is `UPDATED_DATA`. |
+|  +  originalEventID   | string | Optional | The original event ID. This is only provided if the reason is `UPDATED_DATA`. |
 | metadata | - | Required | Information about the channel that the event used. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | The timestamp when the event was processed, in `yyyy-MM-DDTHH:mm:ss` format, in Universal Coordinated Time (UTC). |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | The ARN of the channel that the event used. | <a name="fields-event"></a>
+|  +  ingestionTime   | string | Required | The timestamp when the event was processed, in `yyyy-MM-DDTHH:mm:ss` format, in Universal Coordinated Time (UTC). |
+|  +  channelARN   | string | Required | The ARN of the channel that the event used. | <a name="fields-event"></a>
 
 The following fields are provided by customer events:
 
 | Field name | Input type | Requirement | Description |
 | --- | --- | --- | --- |
 | eventData | - | Required | The audit data sent to CloudTrail in a PutAuditEvents call. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | The version of the event from its source.<br />Length constraints: Maximum length of 256. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | - | Required | Information about the user who made a request. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | The type of user identity.<br />Length constraints: Maximum length of 128. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | A unique identifier for the actor of the event.<br />Length constraints: Maximum length of 1024. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | JSON object | Optional | Additional information about the identity. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The agent through which the request was made.<br />Length constraints: Maximum length of 1024. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | This is the partner event source, or the custom application about which events are logged.<br />Length constraints: Maximum length of 1024. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | The requested action, one of the actions in the API for the source service or application.<br />Length constraints: Maximum length of 1024. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | Event timestamp, in `yyyy-MM-DDTHH:mm:ss` format, in Universal Coordinated Time (UTC). |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | The UID value that identifies the request. The service or application that is called generates this value.<br />Length constraints: Maximum length of 1024. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | JSON object | Optional | The parameters, if any, that were sent with the request. This field has a maximum size of 100 kB, and content exceeding the limit is rejected. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | JSON object | Optional | The response element for actions that make changes (create, update, or delete actions). This field has a maximum size of 100 kB, and content exceeding the limit is rejected. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | A string representing an error for the event.<br />Length constraints: Maximum length of 256. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The description of the error.<br />Length constraints: Maximum length of 256. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Optional | The IP address from which the request was made. Both IPv4 and IPv6 addresses are accepted. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | string | Required | Represents the account ID that received this event. The account ID must be the same as the AWS account ID that owns the channel. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-integration-event-schema.html)  | JSON object | Optional | Additional data about the event that was not part of the request or response. This field has a maximum size of 28 kB, and content exceeding that limit is rejected. |
+|  +  version   | string | Required | The version of the event from its source.<br />Length constraints: Maximum length of 256. |
+|  +  userIdentity   | - | Required | Information about the user who made a request. |
+|  +    type     | string | Required | The type of user identity.<br />Length constraints: Maximum length of 128. |
+|  +    principalId     | string | Required | A unique identifier for the actor of the event.<br />Length constraints: Maximum length of 1024. |
+|  +    details     | JSON object | Optional | Additional information about the identity. |
+|  +  userAgent   | string | Optional | The agent through which the request was made.<br />Length constraints: Maximum length of 1024. |
+|  +  eventSource   | string | Required | This is the partner event source, or the custom application about which events are logged.<br />Length constraints: Maximum length of 1024. |
+|  +  eventName   | string | Required | The requested action, one of the actions in the API for the source service or application.<br />Length constraints: Maximum length of 1024. |
+|  +  eventTime   | string | Required | Event timestamp, in `yyyy-MM-DDTHH:mm:ss` format, in Universal Coordinated Time (UTC). |
+|  +  UID   | string | Required | The UID value that identifies the request. The service or application that is called generates this value.<br />Length constraints: Maximum length of 1024. |
+|  +  requestParameters   | JSON object | Optional | The parameters, if any, that were sent with the request. This field has a maximum size of 100 kB, and content exceeding the limit is rejected. |
+|  +  responseElements   | JSON object | Optional | The response element for actions that make changes (create, update, or delete actions). This field has a maximum size of 100 kB, and content exceeding the limit is rejected. |
+|  +  errorCode   | string | Optional | A string representing an error for the event.<br />Length constraints: Maximum length of 256. |
+|  +  errorMessage   | string | Optional | The description of the error.<br />Length constraints: Maximum length of 256. |
+|  +  sourceIPAddress   | string | Optional | The IP address from which the request was made. Both IPv4 and IPv6 addresses are accepted. |
+|  +  recipientAccountId   | string | Required | Represents the account ID that received this event. The account ID must be the same as the AWS account ID that owns the channel. |
+|  +  additionalEventData   | JSON object | Optional | Additional data about the event that was not part of the request or response. This field has a maximum size of 28 kB, and content exceeding that limit is rejected. |
 
 The following example shows the hierarchy of schema elements that match those in CloudTrail event records.
 

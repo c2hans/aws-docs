@@ -161,7 +161,7 @@ To see the power draw requirements for different Outpost resources, choose **Bro
 
 | Requirement | Specification |
 | --- | --- |
-| **AC line voltage** | **Single-phase** 208 to 277 VAC; 50 or 60 Hz<br />**Three-phase**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/outposts/latest/userguide/outposts-requirements.html) |
+| **AC line voltage** | **Single-phase** 208 to 277 VAC; 50 or 60 Hz<br />**Three-phase**:+  208 to 250 VAC (Delta); 50 to 60 Hz <br />+  346 to 480 VAC (Wye); 50 to 60 Hz  |
 | **Power consumption** | 5 kVA (4 kW), 10 kVA (9 kW), or 15 kVA (13 kW) |
 | **AC protection (upstream power breakers)** | For both 1N input (non-redundant) and 2N input (redundant): 30 A, 32 A, or 50 A with D-curve or K-curve circuit breaker.<br />For 2N input (redundant) only: C-curve, D-curve, or K-curve circuit breaker.<br />B-curve or lower is not supported. |
 | **AC inlet type (receptacle)** | **Single-phase** 3xL6-30P, P\+P\+E, 30A or 3xIEC60309 P\+N\+E, IP67, 32A plugs<br />**Three-phase, Wye** 1xIEC60309, 3P\+N\+E, IP67, clock position 7, 30A plug or 1xIEC60309, 3P\+N\+E, IP67, clock position 6, 32A plug <br />**Three-phase, Delta** 1xNon-NEMA twistlock Hubbell CS8365C, 3P\+E, center ground, 50A plug The best practice is to mate an IP67 plug with an IP67 receptacle. If that isn't possible, the IP67 plug will mate with an IP44 receptacle. The rating of the combined plug and socket will become the lower rating (IP44).  |

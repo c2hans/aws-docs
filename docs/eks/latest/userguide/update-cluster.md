@@ -15,7 +15,7 @@ To contribute to this user guide, choose the **Edit this page on GitHub** link t
 When a new Kubernetes version is available in Amazon EKS, you can update your Amazon EKS cluster to the latest version.
 
 **Important**
-After upgrading, you can roll back to the previous version within 7 days if issues arise. For more information, see [Rollback cluster to previous Kubernetes version](rollback-cluster.md). Before you update to a new Kubernetes version, we recommend that you review the information in [Understand the Kubernetes version lifecycle on EKS](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) and the update steps in this topic.
+After upgrading, you can roll back to the previous version within 7 days if issues arise. For more information, see [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md). Before you update to a new Kubernetes version, we recommend that you review the information in [Understand the Kubernetes version lifecycle on EKS](https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html) and the update steps in this topic.
 
 New Kubernetes versions sometimes introduce significant changes. Therefore, we recommend that you test the behavior of your applications against a new Kubernetes version before you update your production clusters. You can do this by building a continuous integration workflow to test your application behavior before moving to a new Kubernetes version.
 
@@ -34,7 +34,7 @@ To learn more about what goes into a cluster update, see [Best Practices for Clu
 + You do not have to manually upgrade the capabilities of Amazon EKS Auto Mode, including the compute autoscaling, block storage, and load balancing capabilities.
 
 **Note**
-If you encounter issues after upgrading, you can initiate a rollback. For clusters running EKS Auto Mode, EKS automatically rolls back worker nodes before reverting the control plane. For more information, see [Rollback cluster to previous Kubernetes version](rollback-cluster.md).
+If you encounter issues after upgrading, you can initiate a rollback. For clusters running EKS Auto Mode, EKS automatically rolls back worker nodes before reverting the control plane. For more information, see [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md).
 
 ## Summary
 <a name="update-cluster-summary"></a>
@@ -216,4 +216,4 @@ Continue to [Step 4: Update cluster components](#step4).
 ## Downgrade the Kubernetes version for an Amazon EKS cluster
 <a name="downgrade-cluster"></a>
 
-You can roll back the Kubernetes version of an Amazon EKS cluster to the previous minor version within 7 days of upgrading. For more information, see [Rollback cluster to previous Kubernetes version](rollback-cluster.md). After the 7-day window, you cannot downgrade. Instead, create a new cluster on a previous Amazon EKS version and migrate the workloads.
+You can roll back the Kubernetes version of an Amazon EKS cluster to the previous minor version within 7 days of upgrading. For more information, see [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md). After the 7-day window, you cannot downgrade. Instead, create a new cluster on a previous Amazon EKS version and migrate the workloads.

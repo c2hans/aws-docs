@@ -9,6 +9,8 @@ If you are not using Amazon Route 53 to manage your domain, you can add a custo
 
 If you are using GoDaddy, see [Updating DNS records for a domain managed by GoDaddy](to-add-a-custom-domain-managed-by-godaddy.md) for instructions specific to this provider.
 
+If you are using Cloudflare, see [Updating DNS records for a domain managed by Cloudflare](to-add-a-custom-domain-managed-by-cloudflare.md) for instructions specific to this provider.
+
 **To add a custom domain managed by a third-party DNS provider**
 
 1. Sign in to the AWS Management Console and open the [Amplify console](https://console.aws.amazon.com/amplify/).
@@ -66,6 +68,7 @@ If you are using GoDaddy, see [Updating DNS records for a domain managed by GoDa
 
 1. Do one of the following:
    + If you're using GoDaddy, go to [Updating DNS records for a domain managed by GoDaddy](to-add-a-custom-domain-managed-by-godaddy.md).
+   + If you're using Cloudflare, go to [Updating DNS records for a domain managed by Cloudflare](to-add-a-custom-domain-managed-by-cloudflare.md).
    + If you're using a different third-party DNS provider, go to the next step in this procedure.
 
 1. Go to your DNS provider's website, log in to your account, and locate the DNS management settings for your domain. You will configure two CNAME records.

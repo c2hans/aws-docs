@@ -11,10 +11,10 @@ VMware provides high availability through features like fault tolerance, requiri
 |
 | Aspect | VMware | AWS |
 | --- |--- |--- |
-| High-availability features | Fault tolerance with identical VM copiesvSAN stretched clustervSphere high-availability clusters | Automatic recovery for EC2 instancesEBS multi-attach and snapshotsEFS redundant storage across AZsMulti-AZ storage replicationS3 with 11 nines of durability |
-| Resource management | Admission control policiesReserved capacity for failover | Automatic scalingNo traditional resource reservation neededPay-as-you-go model |
-| Data protection | Real-time synchronization for fault toleranceVM snapshotsvSAN data replication across nodes | Automatic data replication (S3 and EFS) across AZsEBS snapshotsS3 cross-Region replication |
-| Recovery capabilities | Manual intervention may be requiredSecondary VM takes over with no downtime (fault tolerance)vSphere high availability | Automatic recovery across AZsVolume restoration from snapshots |
+| High-availability features | + Fault tolerance with identical VM copies<br />+ vSAN stretched cluster<br />+ vSphere high-availability clusters | + Automatic recovery for EC2 instances<br />+ EBS multi-attach and snapshots<br />+ EFS redundant storage across AZs<br />+ Multi-AZ storage replication<br />+ S3 with 11 nines of durability |
+| Resource management | + Admission control policies<br />+ Reserved capacity for failover | + Automatic scaling<br />+ No traditional resource reservation needed<br />+ Pay-as-you-go model |
+| Data protection | + Real-time synchronization for fault tolerance<br />+ VM snapshots<br />+ vSAN data replication across nodes | + Automatic data replication (S3 and EFS) across AZs<br />+ EBS snapshots<br />+ S3 cross-Region replication |
+| Recovery capabilities | + Manual intervention may be required<br />+ Secondary VM takes over with no downtime (fault tolerance)<br />+ vSphere high availability | + Automatic recovery across AZs<br />+ Volume restoration from snapshots |
 
 By default, AWS provides high availability for most storage services using Availability Zones and other mechanisms:
 + [https://docs.aws.amazon.com/s3/](https://docs.aws.amazon.com/s3/)** –** Automatically replicates data across multiple AZs within a Region, providing 99.999999999% (11 nines) of durability.

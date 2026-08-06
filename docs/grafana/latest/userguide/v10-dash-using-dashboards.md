@@ -34,9 +34,9 @@ You can use dashboards to customize the presentation of your data. The following
 | **10. Refresh dashboard** | Select to immediately trigger queries and refresh dashboard data. |
 | **11. Refresh dashboard time interval** | Select a dashboard auto refresh time interval. |
 | **12. View mode** | Select to display the dashboard on a large screen such as a TV or a kiosk. View mode hides irrelevant information such as navigation menus. |
-| **13. Dashboard panel** | The primary building block of a dashboard is the panel. To add a new panel, dashboard row, or library panel, select **Add panel**.[See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-using-dashboards.html) |
+| **13. Dashboard panel** | The primary building block of a dashboard is the panel. To add a new panel, dashboard row, or library panel, select **Add panel**.+  Library panels can be shared among many dashboards. <br />+  To move a panel, drag the panel header to another location. <br />+  To resize a panel, select and drag the lower right corner of the panel.  |
 | **14. Graph legend** | Change series colors, y-axis, and series visibility directly from the legend. |
-| **15. Dashboard row** | A dashboard row is a logical divider within a dashboard that groups panels together.[See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v10-dash-using-dashboards.html) |
+| **15. Dashboard row** | A dashboard row is a logical divider within a dashboard that groups panels together.+  Rows can be collapsed or expanded to hide parts of the dashboard. <br />+  Panels inside a collapsed row do not issue queries.  <br />+  Use repeating rows to create rows dynamically based on a template variable. For more information about repeating rows, see [Creating dashboards](v10-dash-creating.md).  |
 
 ## Keyboard shortcuts
 <a name="v10-dash-keyboard-shortcuts"></a>

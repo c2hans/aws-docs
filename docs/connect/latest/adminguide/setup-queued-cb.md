@@ -41,8 +41,8 @@ Use the steps provided in the following overview to set up queued callback.
 + (Optional) Provide a caller ID. This is what the customer sees when dialed. Must be a valid phone number claimed in your Connect Customer instance. This field is reflected as the system endpoint in contact records. The number set here takes precedence over the outbound phone number set on the queue.
 + Choose a dial mode between agent first and customer first.
 **Important**
-This option is available only when Next Generation Connect Customer is [enabled](enable-nextgeneration-amazonconnect.md) for your Connect Customer instance.
-If you disable Next Generation Connect Customer after you've already activated and started using customer first callback, customer first callback is also disabled. It is not available in the pay-per-feature pricing model.
+This option is available in [Connect Customer](enable-nextgeneration-amazonconnect.md) instances.
+If you switch from Connect Customer after you've already activated and started using customer first callbacks, customer first callbacks are also disabled.
 
 ## The routing process
 <a name="cb-routing"></a>
@@ -141,7 +141,7 @@ We strongly recommend that you double-check the number entered in **Maximum numb
 
 1. The callback is a new contact, separate from the original inbound voice contact. You can optionally choose which flow runs when this callback contact is created. To do so, set the **Set creation flow** option in the [Transfer to queue](transfer-to-queue.md) block, as shown in the following image.
 ![The properties page of the Transfer to queue block, the Transfer to Callback tab.](http://docs.aws.amazon.com/connect/latest/adminguide/images/transfer-to-queue-properties1a.png)
-   + If Next Generation Connect Customer is enabled for your Connect Customer instance (learn how to [check whether it's enabled](enable-nextgeneration-amazonconnect.md#how-to-enable-ac)), you can choose either agent first callback mode (the default) or customer first callback mode. For more information about these options, see [Use customer first callback mode](customer-first-cb.md).
+   + In [Connect Customer](enable-nextgeneration-amazonconnect.md) instances, you can choose either agent first callback mode (the default) or customer first callback mode. For more information about these options, see [Use customer first callback mode](customer-first-cb.md).
 ![The dial mode, either agent first callback (the default) or customer first callback mode.](http://docs.aws.amazon.com/connect/latest/adminguide/images/first-callbacks-choose-dial-mode-agent-and-customer.png)
    + (Optional) Create a callback creation flow. Use the **Set creation flow** dropdown menu to select the flow to be run when a callback contact is created.
 

@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated BatchServiceRolePolicy](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated the `BatchServiceRolePolicy` managed policy to add Amazon ECS capacity provider permissions, cluster update permissions, and tagging permissions for capacity provider resources. | August 5, 2026 |
 | [Updated AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated the `AWSBatchServiceRolePolicyForSageMaker` managed policy to add `sagemaker:DeleteTrainingJob` permission. | April 16, 2026 |
 | [Added default\_x86\_64 and default\_arm64](https://docs.aws.amazon.com/batch/latest/userguide/create-compute-environment-managed-ec2.html) | Added new `default_x86_64` and `default_arm64` for **Allowed instance types**. | August 15, 2025 |
 | [Added service environments and service jobs](https://docs.aws.amazon.com/batch/latest/userguide/service-environments.html) | Added service environments and service jobs for using AWS Batch with SageMaker AI.  | July 30, 2025 |
@@ -21,13 +22,7 @@ The following table describes the important changes to the documentation since t
 | [Automated job retries](https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html) | Corrected the code sample. | February 29, 2024 |
 | [Adds support for multi-container jobs for AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html) | Adds support for multi-container jobs for AWS Batch for Amazon Elastic Container Service, Amazon Elastic Kubernetes Service, and AWS Fargate. | February 28, 2024 |
 | [Updated AWS Batch supported Amazon EKS versions](https://docs.aws.amazon.com/batch/latest/userguide/eks.html#supported_kubernetes_version) | Updated the Amazon EKS versions that AWS Batch supports to include version 1.28 | January 27, 2024 |
-| [Updated BatchServiceRolePolicy and AWSBatchServiceRole](security-iam-awsmanpol.md#security-iam-awsmanpol-updates) |
-
-**BatchServiceRolePolicy**
-Updated to add support for describing Spot Fleet request history and Amazon EC2 Auto Scaling activities.
-
-**AWSBatchServiceRole**
-Updated to add statement IDs, grant AWS Batch permissions to `ec2:DescribeSpotFleetRequestHistory` and `autoscaling:DescribeScalingActivities`.  | December 5, 2023 |
+| [Updated BatchServiceRolePolicy and AWSBatchServiceRole](security-iam-awsmanpol.md#security-iam-awsmanpol-updates) | ****BatchServiceRolePolicy****<br /> Updated to add support for describing Spot Fleet request history and Amazon EC2 Auto Scaling activities. <br />****AWSBatchServiceRole****<br /> Updated to add statement IDs, grant AWS Batch permissions to `ec2:DescribeSpotFleetRequestHistory` and `autoscaling:DescribeScalingActivities`.  | December 5, 2023 |
 | [AWS Batch on Amazon EKS](https://docs.aws.amazon.com/batch/latest/userguide/eks.html) | AWS Batch adds support for running jobs on Amazon EKS clusters. | October 25, 2022 |
 | [Cross-service confused deputy prevention for AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/cross-service-confused-deputy-prevention.html) | AWS Batch now provides a workaround for the confused deputy security issue, which arises when an entity (a service or an account) is coerced by a different entity to perform an action. | June 6, 2022 |
 | [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/batch/latest/userguide/vpc-interface-endpoints.html) | Added support for configuring interface VPC endpoints powered by AWS PrivateLink. This means you can create a private connection between your VPC and AWS Batch without requiring access through a NAT instance, a VPN connection, or Direct Connect. | April 15, 2022 |

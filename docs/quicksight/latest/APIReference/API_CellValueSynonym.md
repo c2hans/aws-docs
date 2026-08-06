@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
  ** CellValue **   <a name="QS-Type-CellValueSynonym-CellValue"></a>
 The cell value.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** Synonyms **   <a name="QS-Type-CellValueSynonym-Synonyms"></a>

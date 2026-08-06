@@ -11,7 +11,7 @@ The following table describes input format requirements for Dolby Vision Profile
 
 | Supported inputs with Dolby Vision metadata | Supported inputs without Dolby Vision metadata | Supported output Dolby Vision profile |
 | --- | --- | --- |
-| IMF, MXF[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/dolby-vision-job-limitations-and-requirements.html)<br />QuickTime (.mov)[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/dolby-vision-job-limitations-and-requirements.html) | HDR10[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/dolby-vision-job-limitations-and-requirements.html)<br /> SDR [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/dolby-vision-job-limitations-and-requirements.html) | Profile 5<br />Profile 8.1 |
+| IMF, MXF+  Video codec: JPEG 2000 <br />+  Input Dolby Vision metadata: Frame-interleaved or XML file <br />QuickTime (.mov)+  Video codec: Apple ProRes <br />+  Input Dolby Vision metadata: XML file  | HDR10+   Video codec: Any capable of carrying HDR10  <br /> SDR +  Video codec: Any capable of carrying SDR   | Profile 5<br />Profile 8.1 |
 
 The following table describes feature limitations and job requirements for Dolby Vision outputs.
 

@@ -90,7 +90,7 @@ This section provides a mapping of the name changes of credentials provider clas
 | --- | --- | --- |
 | Package/class name | com.amazonaws.auth.profile.ProfileCredentialsProvider | software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider |
 | Creation | new ProfileCredentialsProvider | ProfileCredentialsProvider.create |
-| Location of custom profile |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migration-client-credentials.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migration-client-credentials.html)  |
+| Location of custom profile |  +  `AWS_CREDENTIAL_PROFILES_FILE` environment variable <br />+  `new ProfileCredentialsProvider`   |  +  `AWS_SHARED_CREDENTIALS_FILE` environment variable <br />+  `ProfileCredentialsProvider.builder`   |
 
 ### `ContainerCredentialsProvider`
 <a name="credentials-provider-changes-ContainerCredentialsProvider"></a>
@@ -118,7 +118,7 @@ This section provides a mapping of the name changes of credentials provider clas
 | Change category | 1.x | 2.x |
 | --- | --- | --- |
 | Package/class name | com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider | software.amazon.awssdk.services.sts.auth.StsAssumeRoleCredentialsProvider |
-| Creation |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/migration-client-credentials.html)  | StsAssumeRoleCredentialsProvider.builder |
+| Creation |  +  `new STSAssumeRoleSessionCredentialsProvider` <br />+  `new STSAssumeRoleSessionCredentialsProvider.Builder`   | StsAssumeRoleCredentialsProvider.builder |
 | Asynchronous refresh | Default behavior | Default behavior |
 | Configuration | new STSAssumeRoleSessionCredentialsProvider.Builder | Configure a StsClient and AssumeRoleRequest request |
 

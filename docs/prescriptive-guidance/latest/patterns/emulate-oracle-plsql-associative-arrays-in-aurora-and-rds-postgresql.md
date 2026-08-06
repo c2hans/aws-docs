@@ -124,8 +124,8 @@ The diagram shows the following:
 
 | Issue | Solution |
 | --- | --- |
-| **Index out of bounds error**[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql.html) | You can validate index existence before access by using a `WHERE` clause filter on the `idx` column when unnesting the array, or you can implement boundary checks in your PL/pgSQL code. |
-| **NULL value handling**[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql.html) | Make sure that both fields of the user-defined type are populated before using `array_append()`. Add explicit NULL checks as follows: `IF cc_append.val IS NOT NULL THEN cc := array_append(cc, cc_append); END IF;` |
+| **Index out of bounds error**+ **Issue**: `ERROR: array subscript out of bounds` when accessing array elements<br />+ **Cause**: Attempting to access an index position that doesn't exist in the user-defined type array | You can validate index existence before access by using a `WHERE` clause filter on the `idx` column when unnesting the array, or you can implement boundary checks in your PL/pgSQL code. |
+| **NULL value handling**+ **Issue**: Unexpected NULL values appearing in query results when iterating through the array<br />+ **Cause**: Array elements not properly initialized with both `idx` and `val` fields before appending | Make sure that both fields of the user-defined type are populated before using `array_append()`. Add explicit NULL checks as follows: `IF cc_append.val IS NOT NULL THEN cc := array_append(cc, cc_append); END IF;` |
 
 ## Related resources
 <a name="emulate-oracle-plsql-associative-arrays-in-aurora-and-rds-postgresql-resources"></a>

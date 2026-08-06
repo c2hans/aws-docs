@@ -93,4 +93,5 @@ You cannot use the same name for more than one root user or IAM MFA device.
 
 The following resources can help you learn more about MFA.
 + For more information about using MFA to access AWS, see [MFA enabled sign-in](console_sign-in-mfa.md).
-+  You can leverage IAM Identity Center to enable secure MFA access to your AWS access portal, IAM Identity Center integrated apps, and the AWS CLI. For more information, see [Enable MFA in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/mfa-getting-started.html).
++ You can use IAM Identity Center to enable secure MFA access to your AWS access portal, IAM Identity Center integrated apps, and the AWS CLI. For more information, see [Enable MFA in IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/mfa-getting-started.html).
++ To verify whether MFA is already enabled for your users, see [Check MFA status](id_credentials_mfa_checking-status.md).

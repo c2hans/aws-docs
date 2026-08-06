@@ -13,8 +13,10 @@ This tutorial walks you through the end-to-end workflow for creating your first 
 | 2 | Create your first system and service | 5 minutes |
 | 3 | Run your first failure mode assessment | 5–15 minutes (asynchronous) |
 | 4 | Review findings and recommendations | 10 minutes |
+| 5 | Enable dependency discovery (optional) | 5 minutes |
+| 6 | Run your first resilience test (optional) | 10 minutes |
 
-**Total time:** approximately 30–40 minutes.
+**Total time:** approximately 40–50 minutes.
 
 Before you begin this tutorial, ensure the following:
 + You have an AWS account with deployed resources (AWS CloudFormation stack, tagged resources, or Amazon EKS cluster).

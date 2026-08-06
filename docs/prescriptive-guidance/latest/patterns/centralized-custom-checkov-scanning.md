@@ -93,7 +93,7 @@ The code for this pattern is available in the GitHub [centralized-custom-checkov
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Determine policies that can be enforced with Checkov. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/centralized-custom-checkov-scanning.html)For more details about creating Checkov custom policies, see [Custom Policies Overview](https://www.checkov.io/3.Custom%20Policies/Custom%20Policies%20Overview.html) in the Checkov documentation. | Security and Compliance |
+| Determine policies that can be enforced with Checkov. | 1. Review company policies that are related to infrastructure security and which requirements should be in place.<br />2. Determine which requirements can be implemented by using Checkov custom policies.<br />3. Create a naming convention that maps the policy control to the Checkov custom policy. Typically, Checkov custom policies have an identifier with a Checkov name, the policy source (custom), and a policy number (for example, `CKV2_CUSTOM_123`).For more details about creating Checkov custom policies, see [Custom Policies Overview](https://www.checkov.io/3.Custom%20Policies/Custom%20Policies%20Overview.html) in the Checkov documentation. | Security and Compliance |
 | Add Checkov custom policies. | Convert the identified company policies to custom Checkov policies in the central repository. You can write simple Checkov policies in either Python or YAML. | Security |
 
 ### Implement centralized Checkov custom policies

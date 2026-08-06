@@ -17,14 +17,14 @@ Length Constraints: Minimum length of 0. Maximum length of 10.
 Required: No
 
  ** Block **   <a name="location-Type-geoplaces_Address-Block"></a>
- Name of the block. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Name of the block. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Example: `Sunny Mansion 203 block: 2 Chome`
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
 
  ** Building **   <a name="location-Type-geoplaces_Address-Building"></a>
- The name of the building at the address. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The name of the building at the address. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
@@ -41,7 +41,7 @@ Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
 
  ** Intersection **   <a name="location-Type-geoplaces_Address-Intersection"></a>
- Name of the streets in the intersection. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Name of the streets in the intersection. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Example: `["Friedrichstraße","Unter den Linden"]`
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
@@ -74,7 +74,7 @@ Type: [Region](API_geoplaces_Region.md) object
 Required: No
 
  ** SecondaryAddressComponents **   <a name="location-Type-geoplaces_Address-SecondaryAddressComponents"></a>
- Components that correspond to secondary identifiers on an Address. Secondary address components include information such as Suite or Unit Number, Building, or Floor. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Components that correspond to secondary identifiers on an Address. Secondary address components include information such as Suite or Unit Number, Building, or Floor. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Coverage for `Address.SecondaryAddressComponents` is available in the following countries:
 AUS, CAN, NZL, USA, PRI
 Type: Array of [SecondaryAddressComponent](API_geoplaces_SecondaryAddressComponent.md) objects
@@ -88,14 +88,14 @@ Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: No
 
  ** StreetComponents **   <a name="location-Type-geoplaces_Address-StreetComponents"></a>
- Components of the street. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Components of the street. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Example: Yonge from "Yonge street".
 Type: Array of [StreetComponents](API_geoplaces_StreetComponents.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
 
  ** SubBlock **   <a name="location-Type-geoplaces_Address-SubBlock"></a>
- Name of sub-block. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Name of sub-block. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Example: `Sunny Mansion 203 sub-block: 4`
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 200.

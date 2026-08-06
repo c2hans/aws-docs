@@ -32,7 +32,7 @@ Follow this procedure in each output.
 | **Video Codec** | If you are converting to HDR10, choose **MPEG-4 AVC (H.264)** or **HEVC (H.265)**.<br />If you are converting to Dolby Vision, choose **HEVC (H.265)**. |
 | **Advanced**, then **Insert Color Metadata** | Leave this field checked. <br />You should never remove the color metadata if you are converting the color space. |
 | **Advanced**, then **Profile**<br />This field is towards the end of the **Advanced** section | Choose a profile that includes the term **Main10**. |
-| **Preprocessors**, then **Video Range** | Choose the correct option, according to the information you [obtained from the content provider](color-space-input-procedure.md):[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/colorspace-output-hdr10.html) |
+| **Preprocessors**, then **Video Range** | Choose the correct option, according to the information you [obtained from the content provider](color-space-input-procedure.md):+  If the video input is full range, choose **Passthrough**. <br />+  If the video input is video range, choose **Full Swing**.  |
 | **Preprocessors**, then **Color Space Conversion** | Choose the correct conversion:<br />**Force HDR10** <br />**Dolby Vision Profile 5**<br />**Dolby Vision Profile 8.1** |
 | **Preprocessors**, then **HDR Master Display Information** | These fields appear after you complete the **Color Space Conversion**.<br />You can optionally complete the **HDR Master Display Information** fields. For information about master display information, see [Tips for HDR master display information](#hdr-tips-for-hdr-master-display-information).  |
 

@@ -95,7 +95,7 @@ The **Procurement** page, displays the following from your ERP or source system:
   - **Column:** Calculated by order planning and tracking.
 
 - ** Site Delivery Forecast **
-  - **Description:** Displays the current process of the order.[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/configuring-procurement.html)
+  - **Description:** Displays the current process of the order.+ **Late** – Displayed when the order is running late due to the underlying order material with the latest delivery date estimated to arrive late. This item is displayed in Red.<br />+ **On-time** – Displayed when the materials under the order is reaching the site within the required on-site date. This item is displayed in Green.<br />+ **At risk** – Displayed when the material with the latest arrival date has a process that is either delayed or is in a blocked milestone. This item can still make the required date and is displayed in Yellow.<br />+ **Watch** – Displayed when the material with the latest date is either blocked or late in a current supply chain process.<br />+ **Delivered** – Displayed after the last milestone of the last process is initiated indicating the completion of the process.
 
 - ** Recommended Action Due Date **
   - **Description:** Displays the current process of the order.

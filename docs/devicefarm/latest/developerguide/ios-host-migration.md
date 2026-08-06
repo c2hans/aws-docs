@@ -5,6 +5,8 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 # Migrating your custom test environments to the new iOS test hosts
 <a name="ios-host-migration"></a>
 
+ For the full list of available test hosts and how to select one, see [Hosts for custom test environments](custom-test-environments-hosts.md).
+
  To migrate existing tests from the legacy host to the new macOS test host, you will need to develop new test spec files based on your pre-existing ones.
 
  The recommended approach is to start with the example test spec file for your desired test types, then migrate relevant commands from your old test spec file to the new one. This lets you leverage new features and optimizations of the example test spec for the new host while reusing snippets your existing code.
@@ -20,6 +22,8 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 
 ### Step 1: Creating a new test spec files with the console
 <a name="ios-host-migration-console-tutorial-step1"></a>
+
+1. Decide which test host you want to use. For the list of available iOS test hosts and how to select one, see [Hosts for custom test environments](custom-test-environments-hosts.md).
 
 1. Sign in to the [AWS Device Farm console](https://console.aws.amazon.com/devicefarm).
 
@@ -41,10 +45,10 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 
 1. Modify the test specification that was selected by *default* in the text editor.
 
-   1.  If not already present, modify the test spec file to select the new host using:
+   1.  Set `ios_test_host` to the test host that fits your test requirements. For example:
 
       ```
-      ios_test_host: macos_sequoia
+      ios_test_host: macos_tahoe
       ```
 
    1. From the copy of your test spec downloaded in a prior step, review each ` phase`.
@@ -62,10 +66,10 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 
  In the new test host, pre-installed software versions are selected using a new standardized version management tool called `devicefarm-cli`. This tooling is now the recommended approach for using the various software we provide on the test hosts.
 
- As an example, you would add the following line to use a different JDK 17 your test environment:
+ For example, add the following line to use JDK 25 in your test environment:
 
 ```
-- devicefarm-cli use java 17
+- devicefarm-cli use java 25
 ```
 
  For more information on the software supported available, please review: [Supported software within custom test environments](custom-test-environments-hosts-software.md).
@@ -73,22 +77,16 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/ios-hos
 ### Step 3: Using Appium and its dependencies via the software selection tooling
 <a name="ios-host-migration-console-tutorial-step3"></a>
 
- The new test host only supports Appium 2.x and above. Please explicitly select the Appium version using the `devicefarm-cli`, while removing legacy tooling such as ` avm`. For example:
+ Explicitly select the Appium version using the `devicefarm-cli`. On the macos\_tahoe test host, Appium 3 is the default version:
 
 ```
-# This line using 'avm' should be removed
-# - avm 2.3.1
-
-# And the following lines should be added
-- devicefarm-cli use appium 2 # Selects the version
+- devicefarm-cli use appium 3 # Selects the version
 - appium --version            # Prints the version
 ```
 
 The Appium version selected with `devicefarm-cli` comes preinstalled with a compatible version of the XCUITest driver for iOS.
 
- Additionally, you will need to update your test spec to use ` DEVICEFARM_APPIUM_WDA_DERIVED_DATA_PATH_V9` instead of ` DEVICEFARM_WDA_DERIVED_DATA_PATH`. The new environment variable points to a pre-built version of WebDriverAgent 9.x, which is the latest supported version for Appium 2 tests.
-
-For more information, review [Selecting a WebDriverAgent version for iOS tests](test-types-appium.md#test-types-appium-select-wda) and [Environment variables for Appium tests](custom-test-environment-variables.md#custom-test-environment-variables-appium).
+When you use the default test spec, Device Farm automatically selects WebDriverAgent (WDA) to match your installed XCUITest driver. For more information about how this selection works, see [Selecting a WebDriverAgent version for iOS tests](test-types-appium.md#test-types-appium-select-wda) and [Environment variables for Appium tests](custom-test-environment-variables.md#custom-test-environment-variables-appium).
 
 ## Differences between the new and legacy test hosts
 <a name="ios-host-migration-differences"></a>

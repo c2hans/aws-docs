@@ -48,8 +48,8 @@ To connect the environment to the repository, and then upload your source code t
 
 |  **Repository type**  |  **Instructions**  |
 | --- | --- |
-| CodeCommit | Follow these instructions in the *AWS CodeCommit Sample*:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/codepipeline-repos.html) |
-| Amazon S3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/codepipeline-repos.html)  |
+| CodeCommit | Follow these instructions in the *AWS CodeCommit Sample*:+   [Step 3: Connect Your Environment to the Remote Repository](sample-codecommit.md#sample-codecommit-connect-repo)  <br />+   [Step 4: Clone the Remote Repository into Your Environment](sample-codecommit.md#sample-codecommit-clone-repo)  <br />+   [Step 5: Add Files to the Repository](sample-codecommit.md#sample-codecommit-add-files), substituting your own source code for this step  |
+| Amazon S3 |  +  Install and configure the AWS CLI or AWS CloudShell in the environment, as described in the [AWS CLI and AWS CloudShell Sample](sample-aws-cli.md). <br />+  To upload your source code to the bucket, use the AWS CLI or the AWS CloudShell in the environment to run the [aws s3 cp](https://docs.aws.amazon.com/cli/latest/reference/s3/cp.html) command. (For the AWS CloudShell, you can remove `aws` from the command.)   |
 | GitHub | You can clone a repository hosted on GitHub and interact with by using the [Git panel](source-control-gitpanel.md) interface. |
 
 After you connect the environment to the repository, whenever you push source code changes from the AWS Cloud9 IDE to the repository, CodePipeline automatically sends those changes through related pipelines to be built, tested, and deployed. You create a related pipeline later in this topic.

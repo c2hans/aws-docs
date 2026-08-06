@@ -35,7 +35,7 @@ As a best practice, make sure that members of your account follow a consistent n
 + For a list of all of the condition operators and a description of how they work, see [Condition operators](reference_policies_elements_condition_operators.md).
 + Unless otherwise specified, all context keys can have multiple values. For a description of how to handle context keys that have multiple values, see [Set operators for multivalued context keys](reference_policies_condition-single-vs-multi-valued-context-keys.md#reference_policies_condition-multi-valued-context-keys).
 + For a list of all of the globally available context keys, see [AWS global condition context keys](reference_policies_condition-keys.md).
-+ For condition context keys that are defined by each service, see [Actions, Resources, and Condition Keys for AWS Services](reference_policies_actions-resources-contextkeys.html).
++ For condition context keys that are defined by each service, see [Actions, Resources, and Condition Keys for AWS Services](https://docs.aws.amazon.com/reference_policies_actions-resources-contextkeys.html).
 
 ## The request context
 <a name="AccessPolicyLanguage_RequestContext"></a>

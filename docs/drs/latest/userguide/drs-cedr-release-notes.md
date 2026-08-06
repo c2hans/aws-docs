@@ -11,10 +11,10 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-no
 
 | Client Version | Details | Release date |
 | --- | --- | --- |
-| 5.28.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 27 February 2024 |
-| 5.20.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 8 January 2024 |
-| 5.14.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 18 November 2023 |
-| 5.12.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 12 November 2023 |
-| 5.3.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 13 August 2023 |
-| 5.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 2 August 2023 |
-| 3.7.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/drs/latest/userguide/drs-cedr-release-notes.html)  | 28 December 2022 |
+| 5.28.0 |  +  Fixed an issue preventing upgrades when source machines had very large PIT EBS Snapshots.   | 27 February 2024 |
+| 5.20.0 |  +  Fixed an issue preventing upgrades from non-Nitro instances running Windows Server 2022.   | 8 January 2024 |
+| 5.14.0 |  +  Fixed issue preventing upgrades when unencrypted EBS volumes were used for replication. <br />+  Fixed issue preventing upgrades when specifying devices using the `--drives` flag. <br />+  Fixed issue preventing upgrades in GovCloud when KMS keys were specified.   | 18 November 2023 |
+| 5.12.0 |  +  Fixed issue preventing DRS service tags from being applied when `--import-blueprint` was used.   | 12 November 2023 |
+| 5.3.1 |  +  Fixed issue preventing certain operating systems from installing the DRS agent after upgrade.   | 13 August 2023 |
+| 5.2.0 |  +  Added support for legacy operating systems.   | 2 August 2023 |
+| 3.7.0 |  +  Fixed issue preventing upgrade on CloudEndure servers with large disks.   | 28 December 2022 |

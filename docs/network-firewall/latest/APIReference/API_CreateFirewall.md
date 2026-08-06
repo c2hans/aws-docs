@@ -40,6 +40,20 @@ To generate a report on the last 30 days of traffic monitored by a firewall, use
    "FirewallName": "{{string}}",
    "FirewallPolicyArn": "{{string}}",
    "FirewallPolicyChangeProtection": {{boolean}},
+   "NatGatewayMappings": [
+      {
+         "NatGatewayId": "{{string}}"
+      }
+   ],
+   "NoSourcePreservation": {{boolean}},
+   "ProxySettings": {
+      "ListenerProperties": [
+         {
+            "Port": {{number}},
+            "Type": "{{string}}"
+         }
+      ]
+   },
    "SubnetChangeProtection": {{boolean}},
    "SubnetMappings": [
       {
@@ -54,6 +68,15 @@ To generate a report on the last 30 days of traffic monitored by a firewall, use
       }
    ],
    "TransitGatewayId": "{{string}}",
+   "VpcEndpoint": {
+      "SubnetMappings": [
+         {
+            "IPAddressType": "{{string}}",
+            "SubnetId": "{{string}}"
+         }
+      ],
+      "VpcId": "{{string}}"
+   },
    "VpcId": "{{string}}"
 }
 ```
@@ -119,6 +142,24 @@ A setting indicating whether the firewall is protected against a change to the f
 Type: Boolean
 Required: No
 
+ ** [NatGatewayMappings](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-NatGatewayMappings"></a>
+The NAT gateways that the firewall uses to proxy traffic when `NoSourcePreservation` is `TRUE`. Network Firewall attaches the firewall to each NAT gateway that you specify, so that egress traffic is proxied through the NAT gateway.
+Type: Array of [NatGatewayMapping](API_NatGatewayMapping.md) objects
+Required: No
+
+ ** [NoSourcePreservation](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-NoSourcePreservation"></a>
+Optional. Indicates whether the firewall operates in proxy mode, in which the source IP address of the traffic is not preserved. When set to `TRUE`, the firewall proxies traffic through a NAT gateway and the traffic reaching the destination uses the NAT gateway's IP address as the source.
+When you set this to `TRUE`, you must specify `NatGatewayMappings` and `VpcEndpoint` instead of a top-level `VpcId` and `SubnetMappings`.
+You can't change this setting after you create the firewall.
+Default value: `FALSE`
+Type: Boolean
+Required: No
+
+ ** [ProxySettings](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-ProxySettings"></a>
+The listener configuration for a proxy mode firewall, used when `NoSourcePreservation` is `TRUE`. This specifies the ports and protocols on which the firewall's proxy listens for traffic.
+Type: [ProxySettings](API_ProxySettings.md) object
+Required: No
+
  ** [SubnetChangeProtection](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-SubnetChangeProtection"></a>
 A setting indicating whether the firewall is protected against changes to the subnet associations. Use this setting to protect against accidentally modifying the subnet associations for a firewall that is in use. When you create a firewall, the operation initializes this setting to `TRUE`.
 Type: Boolean
@@ -142,6 +183,12 @@ For information about creating firewalls, see [CreateFirewall](#API_CreateFirewa
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 128.
 Pattern: `^tgw-[0-9a-z]+$`
+Required: No
+
+ ** [VpcEndpoint](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-VpcEndpoint"></a>
+The VPC and subnets for the firewall endpoint, used when `NoSourcePreservation` is `TRUE`. Network Firewall creates the firewall endpoint in the subnets that you specify here.
+For proxy mode firewalls, provide the firewall's VPC and endpoint subnets through this parameter instead of the top-level `VpcId` and `SubnetMappings`.
+Type: [VpcEndpoint](API_VpcEndpoint.md) object
 Required: No
 
  ** [VpcId](#API_CreateFirewall_RequestSyntax) **   <a name="networkfirewall-CreateFirewall-request-VpcId"></a>
@@ -176,7 +223,21 @@ Required: No
       "FirewallName": "string",
       "FirewallPolicyArn": "string",
       "FirewallPolicyChangeProtection": boolean,
+      "NatGatewayMappings": [
+         {
+            "NatGatewayId": "string"
+         }
+      ],
+      "NoSourcePreservation": boolean,
       "NumberOfAssociations": number,
+      "ProxySettings": {
+         "ListenerProperties": [
+            {
+               "Port": number,
+               "Type": "string"
+            }
+         ]
+      },
       "SubnetChangeProtection": boolean,
       "SubnetMappings": [
          {
@@ -192,6 +253,15 @@ Required: No
       ],
       "TransitGatewayId": "string",
       "TransitGatewayOwnerAccountId": "string",
+      "VpcEndpoint": {
+         "SubnetMappings": [
+            {
+               "IPAddressType": "string",
+               "SubnetId": "string"
+            }
+         ],
+         "VpcId": "string"
+      },
       "VpcId": "string"
    },
    "FirewallStatus": {
@@ -211,6 +281,7 @@ Required: No
       "SyncStates": {
          "string" : {
             "Attachment": {
+               "DnsName": "string",
                "EndpointId": "string",
                "Status": "string",
                "StatusMessage": "string",
@@ -221,7 +292,15 @@ Required: No
                   "SyncStatus": "string",
                   "UpdateToken": "string"
                }
-            }
+            },
+            "NatGatewayAttachments": [
+               {
+                  "DnsName": "string",
+                  "NatGatewayId": "string",
+                  "Status": "string",
+                  "StatusMessage": "string"
+               }
+            ]
          }
       },
       "TransitGatewayAttachmentSyncState": {

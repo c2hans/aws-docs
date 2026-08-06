@@ -96,7 +96,7 @@ Creates a new pricing plan subscription for one or more resources. For CloudFron
  **CLI syntax**
 
 ```
-aws pricingplanmanager create-subscription \
+aws pricing-plan-manager create-subscription \
     --plan-family <value> \
     --plan-tier <value> \
     [--usage-level <value>] \
@@ -119,7 +119,7 @@ aws pricingplanmanager create-subscription \
  **Example request (recommended two-phase pattern)**
 
 ```
-aws pricingplanmanager create-subscription \
+aws pricing-plan-manager create-subscription \
     --plan-family CloudFront \
     --plan-tier PRO \
     --resource-arns \
@@ -162,7 +162,7 @@ Approves a subscription that is in `PENDING_APPROVAL` status. This activates the
  **CLI syntax**
 
 ```
-aws pricingplanmanager approve-paid-subscription \
+aws pricing-plan-manager approve-paid-subscription \
     --arn <value> \
     --if-match <value> \
     [--client-token <value>]
@@ -179,7 +179,7 @@ aws pricingplanmanager approve-paid-subscription \
  **Example request**
 
 ```
-aws pricingplanmanager approve-paid-subscription \
+aws pricing-plan-manager approve-paid-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v1aXample1234"
 ```
@@ -216,7 +216,7 @@ Retrieves the details of a single pricing plan subscription.
  **CLI syntax**
 
 ```
-aws pricingplanmanager get-subscription \
+aws pricing-plan-manager get-subscription \
     --arn <value>
 ```
 
@@ -229,7 +229,7 @@ aws pricingplanmanager get-subscription \
  **Example request**
 
 ```
-aws pricingplanmanager get-subscription \
+aws pricing-plan-manager get-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111
 ```
 
@@ -264,8 +264,7 @@ Lists all pricing plan subscriptions in your account.
  **CLI syntax**
 
 ```
-aws pricingplanmanager list-subscriptions \
-    [--max-results <value>] \
+aws pricing-plan-manager list-subscriptions \
     [--next-token <value>]
 ```
 
@@ -273,13 +272,12 @@ aws pricingplanmanager list-subscriptions \
 
 | Parameter | Required | Description |
 | --- | --- | --- |
-|  `--max-results`  | No | The maximum number of subscriptions to return per page. Default and maximum: 100. |
 |  `--next-token`  | No | A pagination token returned by a previous `ListSubscriptions` call. Pass this value to retrieve the next page of results. |
 
  **Example request**
 
 ```
-aws pricingplanmanager list-subscriptions
+aws pricing-plan-manager list-subscriptions
 ```
 
  **Example response**
@@ -313,7 +311,7 @@ Changes the plan tier or usage level of an existing subscription.
  **CLI syntax**
 
 ```
-aws pricingplanmanager update-subscription \
+aws pricing-plan-manager update-subscription \
     --arn <value> \
     --if-match <value> \
     [--plan-tier <value>] \
@@ -327,8 +325,8 @@ aws pricingplanmanager update-subscription \
 | --- | --- | --- |
 |  `--arn`  | Yes | The ARN of the subscription to update. |
 |  `--if-match`  | Yes | The ETag value from a previous `GetSubscription`, `CreateSubscription`, or `ListSubscriptions` response. |
-|  `--plan-tier`  | No | The new plan tier. Valid values: `FREE`, `PRO`, `BUSINESS`, `PREMIUM`. |
-|  `--usage-level`  | No | The new usage level within the plan tier. Valid values depend on the plan family and tier. For CloudFront plans, see [Premium usage levels](#cf-premium-usage-levels). |
+|  `--plan-tier`  | Yes | The new plan tier. Valid values: `FREE`, `PRO`, `BUSINESS`, `PREMIUM`. |
+|  `--usage-level`  | No | The new usage level within the plan tier. Valid values depend on the plan family and tier. For CloudFront plans, see [Premium usage levels](#cf-premium-usage-levels).<br />If you omit this parameter, the usage level is reset to the default level — it is not left unchanged. To preserve your current usage level, always specify it explicitly. |
 |  `--client-token`  | No | A unique token for idempotency. |
 
 You must specify at least one of `--plan-tier` or `--usage-level`.
@@ -336,7 +334,7 @@ You must specify at least one of `--plan-tier` or `--usage-level`.
  **Example request (upgrade)**
 
 ```
-aws pricingplanmanager update-subscription \
+aws pricing-plan-manager update-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v3cXample9012" \
     --plan-tier PREMIUM \
@@ -367,7 +365,7 @@ aws pricingplanmanager update-subscription \
  **Example request (downgrade)**
 
 ```
-aws pricingplanmanager update-subscription \
+aws pricing-plan-manager update-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v4dXample3456" \
     --plan-tier PRO
@@ -410,7 +408,7 @@ Cancels a pricing plan subscription. For paid plans, the cancellation is schedul
  **CLI syntax**
 
 ```
-aws pricingplanmanager cancel-subscription \
+aws pricing-plan-manager cancel-subscription \
     --arn <value> \
     --if-match <value> \
     [--client-token <value>]
@@ -427,7 +425,7 @@ aws pricingplanmanager cancel-subscription \
  **Example request**
 
 ```
-aws pricingplanmanager cancel-subscription \
+aws pricing-plan-manager cancel-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v4dXample3456"
 ```
@@ -470,7 +468,7 @@ Cancels a pending scheduled change (downgrade or cancellation) on a subscription
  **CLI syntax**
 
 ```
-aws pricingplanmanager cancel-subscription-change \
+aws pricing-plan-manager cancel-subscription-change \
     --arn <value> \
     --if-match <value> \
     [--client-token <value>]
@@ -487,7 +485,7 @@ aws pricingplanmanager cancel-subscription-change \
  **Example request**
 
 ```
-aws pricingplanmanager cancel-subscription-change \
+aws pricing-plan-manager cancel-subscription-change \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v6fXample1234"
 ```
@@ -525,7 +523,7 @@ Adds one or more resources to an existing subscription. For CloudFront plans, us
  **CLI syntax**
 
 ```
-aws pricingplanmanager associate-resources-to-subscription \
+aws pricing-plan-manager associate-resources-to-subscription \
     --arn <value> \
     --if-match <value> \
     --resource-arns <value> [<value>...] \
@@ -544,7 +542,7 @@ aws pricingplanmanager associate-resources-to-subscription \
  **Example request**
 
 ```
-aws pricingplanmanager associate-resources-to-subscription \
+aws pricing-plan-manager associate-resources-to-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v3cXample9012" \
     --resource-arns \
@@ -563,7 +561,7 @@ Removes one or more optional resources from an existing subscription. You cannot
  **CLI syntax**
 
 ```
-aws pricingplanmanager disassociate-resources-from-subscription \
+aws pricing-plan-manager disassociate-resources-from-subscription \
     --arn <value> \
     --if-match <value> \
     --resource-arns <value> [<value>...] \
@@ -582,7 +580,7 @@ aws pricingplanmanager disassociate-resources-from-subscription \
  **Example request**
 
 ```
-aws pricingplanmanager disassociate-resources-from-subscription \
+aws pricing-plan-manager disassociate-resources-from-subscription \
     --arn arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111 \
     --if-match "v3cXample9012" \
     --resource-arns \
@@ -605,7 +603,7 @@ This workflow creates a subscription with manual approval, then approves it.
 
 ```
 # Step 1: Create the subscription
-read SUBSCRIPTION_ARN ETAG < <(aws pricingplanmanager create-subscription \
+read SUBSCRIPTION_ARN ETAG < <(aws pricing-plan-manager create-subscription \
     --plan-family CloudFront \
     --plan-tier BUSINESS \
     --resource-arns \
@@ -619,7 +617,7 @@ echo "Subscription created: $SUBSCRIPTION_ARN (status: PENDING_APPROVAL)"
 echo "ETag: $ETAG"
 
 # Step 2: Approve the subscription
-aws pricingplanmanager approve-paid-subscription \
+aws pricing-plan-manager approve-paid-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --if-match "$ETAG"
 ```
@@ -634,7 +632,7 @@ This workflow retrieves a subscription, then upgrades it to a higher tier.
 SUBSCRIPTION_ARN="arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 
 # Get current subscription — pull ETag and current tier in one call
-read ETAG CURRENT_TIER < <(aws pricingplanmanager get-subscription \
+read ETAG CURRENT_TIER < <(aws pricing-plan-manager get-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --query '[eTag, subscription.planTier]' \
     --output text)
@@ -642,7 +640,7 @@ read ETAG CURRENT_TIER < <(aws pricingplanmanager get-subscription \
 echo "Current tier: $CURRENT_TIER"
 
 # Step 2: Upgrade to Premium
-aws pricingplanmanager update-subscription \
+aws pricing-plan-manager update-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --if-match "$ETAG" \
     --plan-tier PREMIUM \
@@ -658,13 +656,13 @@ This workflow downgrades a subscription. The downgrade is scheduled for the end 
 # Step 1: Get the current subscription
 SUBSCRIPTION_ARN="arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 
-ETAG=$(aws pricingplanmanager get-subscription \
+ETAG=$(aws pricing-plan-manager get-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --query 'eTag' \
     --output text)
 
 # Step 2: Downgrade to Pro (takes effect at end of billing period)
-aws pricingplanmanager update-subscription \
+aws pricing-plan-manager update-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --if-match "$ETAG" \
     --plan-tier PRO \
@@ -680,14 +678,14 @@ This workflow cancels a paid subscription, then undoes the cancellation before i
 SUBSCRIPTION_ARN="arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 
 # Step 1: Get the current subscription
-ETAG=$(aws pricingplanmanager get-subscription \
+ETAG=$(aws pricing-plan-manager get-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --query 'eTag' \
     --output text)
 
 # Step 2: Cancel the subscription (scheduled for end of billing period)
 # Only the ETag is reliably present now — effectiveDate is not populated until sync completes.
-NEW_ETAG=$(aws pricingplanmanager cancel-subscription \
+NEW_ETAG=$(aws pricing-plan-manager cancel-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --if-match "$ETAG" \
     --query 'eTag' \
@@ -696,7 +694,7 @@ NEW_ETAG=$(aws pricingplanmanager cancel-subscription \
 # Step 2b: Poll until the resource is done syncing and the effective date appears
 echo "Waiting for scheduled change to sync..."
 while true; do
-    read STATUS EFFECTIVE_DATE LATEST_ETAG < <(aws pricingplanmanager get-subscription \
+    read STATUS EFFECTIVE_DATE LATEST_ETAG < <(aws pricing-plan-manager get-subscription \
         --arn "$SUBSCRIPTION_ARN" \
         --query '[subscription.status, subscription.scheduledChange.effectiveDate, eTag]' \
         --output text)
@@ -711,7 +709,7 @@ echo "Cancellation scheduled for: $EFFECTIVE_DATE"
 
 # Step 3: Changed your mind? Cancel the scheduled cancellation
 # Use the latest ETag from the poll — the ETag may have changed during sync.
-aws pricingplanmanager cancel-subscription-change \
+aws pricing-plan-manager cancel-subscription-change \
     --arn "$SUBSCRIPTION_ARN" \
     --if-match "$LATEST_ETAG"
 
@@ -858,7 +856,7 @@ The response includes the distribution’s ARN under `Distribution.ARN` and its 
 Create the subscription, passing both the distribution ARN and the web ACL ARN in `resourceArns`. When you run this interactively and are ready to start billing, use `IMMEDIATE` approval mode to create and activate the subscription in a single step.
 
 ```
-aws pricingplanmanager create-subscription \
+aws pricing-plan-manager create-subscription \
     --plan-family CloudFront \
     --plan-tier BUSINESS \
     --resource-arns \
@@ -911,11 +909,9 @@ The PricingPlanManager API returns the following error types. Handle these in yo
 | --- | --- | --- |
 |  `AccessDeniedException`  | 403 | You don’t have permission to perform this operation. Verify your IAM policy includes the required `pricingplanmanager` actions. |
 |  `ConflictException`  | 409 | The subscription was modified since you last retrieved it. The `ifMatch` ETag value is stale. Retrieve the subscription again to get the current ETag and retry the operation. |
-|  `InvalidInputException`  | 400 | One or more input parameters are invalid. Check the error message for details about which parameter is incorrect. |
-|  `PendingSyncException`  | 409 | The subscription has a pending synchronization operation in progress. Wait for the current operation to complete before making changes. |
 |  `ResourceNotFoundException`  | 404 | The specified subscription ARN does not exist. Verify the ARN is correct and that the subscription has not been deleted. |
 |  `ServiceQuotaExceededException`  | 402 | You have reached the maximum number of subscriptions for your account. |
-|  `ThrottledException`  | 429 | You exceeded the API request rate limit. Implement exponential backoff and retry. |
+|  `ThrottlingException`  | 429 | You exceeded the API request rate limit. Implement exponential backoff and retry. |
 |  `ValidationException`  | 400 | The request failed validation. This can occur when required fields are missing, field values are out of range, the operation is not valid for the current subscription state, or an associated resources uses features not available in the target plan tier. |
 
 ### Handling concurrency conflicts
@@ -927,13 +923,13 @@ Because the PricingPlanManager API uses optimistic concurrency, your application
 SUBSCRIPTION_ARN="arn:aws:pricingplanmanager:us-east-1:111122223333:subscription/a1b2c3d4-5678-90ab-cdef-EXAMPLE11111"
 
 # Get the latest ETag
-ETAG=$(aws pricingplanmanager get-subscription \
+ETAG=$(aws pricing-plan-manager get-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --query 'eTag' \
     --output text)
 
 # Retry the update with the fresh ETag
-aws pricingplanmanager update-subscription \
+aws pricing-plan-manager update-subscription \
     --arn "$SUBSCRIPTION_ARN" \
     --if-match "$ETAG" \
     --plan-tier PREMIUM
@@ -942,15 +938,15 @@ aws pricingplanmanager update-subscription \
 ### Handling throttling
 <a name="handling-throttling"></a>
 
-If you receive a `ThrottledException` (HTTP 429), wait before retrying. Implement exponential backoff in your scripts by increasing the wait time between retries:
+If you receive a `ThrottlingException` (HTTP 429), wait before retrying. Implement exponential backoff in your scripts by increasing the wait time between retries:
 
 ```
 MAX_RETRIES=5
 ATTEMPT=0
 
 while [ $ATTEMPT -lt $MAX_RETRIES ]; do
-    RESPONSE=$(aws pricingplanmanager list-subscriptions --output json 2>&1) && break
-    if echo "$RESPONSE" | grep -q "ThrottledException"; then
+    RESPONSE=$(aws pricing-plan-manager list-subscriptions --output json 2>&1) && break
+    if echo "$RESPONSE" | grep -q "ThrottlingException"; then
         DELAY=$((2 ** ATTEMPT))
         echo "Throttled. Retrying in ${DELAY}s (attempt $((ATTEMPT+1))/${MAX_RETRIES})..."
         sleep $DELAY

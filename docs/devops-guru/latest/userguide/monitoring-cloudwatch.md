@@ -43,7 +43,7 @@ The following dimension is supported for the DevOps Guru `Insight` metric.
 
 | Metric | Description |
 | --- | --- |
-| `CallCount` | The number of calls made by one of the following DevOps Guru methods. [See the AWS documentation website for more details](http://docs.aws.amazon.com/devops-guru/latest/userguide/monitoring-cloudwatch.html)<br />Valid dimensions: `Service`, `Class`, `Type`, `Resource`<br />Valid statistics: Sample count, Sum<br />Units: Count |
+| `CallCount` | The number of calls made by one of the following DevOps Guru methods. +  `[ListInsights](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_ListInsights.html)` <br />+  `[ListAnomaliesForInsight](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_ListAnomaliesForInsight.html)` <br />+  `[ListRecommendations](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_ListRecommendations.html)` <br />+  `[ListEvents](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_ListEvents.html)` <br />+  `[SearchInsights](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_SearchInsights.html)` <br />+  `[DescribeInsight](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_DescribeInsight.html)` <br />+  `[DescribeAnomaly](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_DescribeAnomaly.html)` <br />Valid dimensions: `Service`, `Class`, `Type`, `Resource`<br />Valid statistics: Sample count, Sum<br />Units: Count |
 
 The following dimensions are supported for the DevOps Guru usage metrics.
 

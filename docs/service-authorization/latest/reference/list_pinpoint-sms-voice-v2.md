@@ -38,6 +38,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   CarrierLookup  **
+  - **IAM action:**  [sms-voice:CarrierLookup](#list_pinpoint-sms-voice-v2-action-CarrierLookup)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   CreateConfigurationSet  **
   - **IAM action:**  [sms-voice:CreateConfigurationSet](#list_pinpoint-sms-voice-v2-action-CreateConfigurationSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [sms-voice:TagResource](#list_pinpoint-sms-voice-v2-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
@@ -47,10 +53,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** sms-voice.amazonaws.com / **Access level:** Write
 
 - **   CreateNotifyConfiguration  **
-  - **IAM action:**  [sms-voice:TagResource](#list_pinpoint-sms-voice-v2-action-TagResource)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Tagging, Write
+  - **IAM action:**  [sms-voice:CreateNotifyConfiguration](#list_pinpoint-sms-voice-v2-action-CreateNotifyConfiguration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [sms-voice:TagResource](#list_pinpoint-sms-voice-v2-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateOptOutList  **
   - **IAM action:**  [sms-voice:CreateOptOutList](#list_pinpoint-sms-voice-v2-action-CreateOptOutList)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -65,10 +69,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [sms-voice:TagResource](#list_pinpoint-sms-voice-v2-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateRcsAgent  **
-  - **IAM action:**  [sms-voice:TagResource](#list_pinpoint-sms-voice-v2-action-TagResource)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Tagging, Write
+  - **IAM action:**  [sms-voice:CreateRcsAgent](#list_pinpoint-sms-voice-v2-action-CreateRcsAgent)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [sms-voice:TagResource](#list_pinpoint-sms-voice-v2-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateRegistration  **
   - **IAM action:**  [sms-voice:CreateRegistration](#list_pinpoint-sms-voice-v2-action-CreateRegistration)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -136,6 +138,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   DeleteNotifyConfiguration  **
+  - **IAM action:**  [sms-voice:DeleteNotifyConfiguration](#list_pinpoint-sms-voice-v2-action-DeleteNotifyConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteNotifyMessageSpendLimitOverride  **
+  - **IAM action:**  [sms-voice:DeleteNotifyMessageSpendLimitOverride](#list_pinpoint-sms-voice-v2-action-DeleteNotifyMessageSpendLimitOverride)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteOptOutList  **
   - **IAM action:**  [sms-voice:DeleteOptOutList](#list_pinpoint-sms-voice-v2-action-DeleteOptOutList)
   - **Condition key:**
@@ -162,6 +176,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DeleteProtectConfigurationRuleSetNumberOverride  **
   - **IAM action:**  [sms-voice:DeleteProtectConfigurationRuleSetNumberOverride](#list_pinpoint-sms-voice-v2-action-DeleteProtectConfigurationRuleSetNumberOverride)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRcsAgent  **
+  - **IAM action:**  [sms-voice:DeleteRcsAgent](#list_pinpoint-sms-voice-v2-action-DeleteRcsAgent)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   DeleteRcsMessageSpendLimitOverride  **
+  - **IAM action:**  [sms-voice:DeleteRcsMessageSpendLimitOverride](#list_pinpoint-sms-voice-v2-action-DeleteRcsMessageSpendLimitOverride)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
@@ -232,6 +258,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   DescribeNotifyConfigurations  **
+  - **IAM action:**  [sms-voice:DescribeNotifyConfigurations](#list_pinpoint-sms-voice-v2-action-DescribeNotifyConfigurations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeNotifyTemplates  **
+  - **IAM action:**  [sms-voice:DescribeNotifyTemplates](#list_pinpoint-sms-voice-v2-action-DescribeNotifyTemplates)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   DescribeOptOutLists  **
   - **IAM action:**  [sms-voice:DescribeOptOutLists](#list_pinpoint-sms-voice-v2-action-DescribeOptOutLists)
   - **Condition key:**
@@ -258,6 +296,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   DescribeProtectConfigurations  **
   - **IAM action:**  [sms-voice:DescribeProtectConfigurations](#list_pinpoint-sms-voice-v2-action-DescribeProtectConfigurations)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeRcsAgentCountryLaunchStatus  **
+  - **IAM action:**  [sms-voice:DescribeRcsAgentCountryLaunchStatus](#list_pinpoint-sms-voice-v2-action-DescribeRcsAgentCountryLaunchStatus)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   DescribeRcsAgents  **
+  - **IAM action:**  [sms-voice:DescribeRcsAgents](#list_pinpoint-sms-voice-v2-action-DescribeRcsAgents)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -348,6 +398,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetResourcePolicy  **
   - **IAM action:**  [sms-voice:GetResourcePolicy](#list_pinpoint-sms-voice-v2-action-GetResourcePolicy)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
+- **   ListNotifyCountries  **
+  - **IAM action:**  [sms-voice:ListNotifyCountries](#list_pinpoint-sms-voice-v2-action-ListNotifyCountries)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
@@ -444,6 +500,24 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   SendNotifyTextMessage  **
+  - **IAM action:**  [sms-voice:SendNotifyTextMessage](#list_pinpoint-sms-voice-v2-action-SendNotifyTextMessage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   SendNotifyVoiceMessage  **
+  - **IAM action:**  [sms-voice:SendNotifyVoiceMessage](#list_pinpoint-sms-voice-v2-action-SendNotifyVoiceMessage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   SendRcsMessage  **
+  - **IAM action:**  [sms-voice:SendRcsMessage](#list_pinpoint-sms-voice-v2-action-SendRcsMessage)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   SendTextMessage  **
   - **IAM action:**  [sms-voice:SendTextMessage](#list_pinpoint-sms-voice-v2-action-SendTextMessage)
   - **Condition key:**
@@ -486,6 +560,18 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   SetNotifyMessageSpendLimitOverride  **
+  - **IAM action:**  [sms-voice:SetNotifyMessageSpendLimitOverride](#list_pinpoint-sms-voice-v2-action-SetNotifyMessageSpendLimitOverride)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   SetRcsMessageSpendLimitOverride  **
+  - **IAM action:**  [sms-voice:SetRcsMessageSpendLimitOverride](#list_pinpoint-sms-voice-v2-action-SetRcsMessageSpendLimitOverride)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   SetTextMessageSpendLimitOverride  **
   - **IAM action:**  [sms-voice:SetTextMessageSpendLimitOverride](#list_pinpoint-sms-voice-v2-action-SetTextMessageSpendLimitOverride)
   - **Condition key:**
@@ -520,6 +606,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [sms-voice:UpdateEventDestination](#list_pinpoint-sms-voice-v2-action-UpdateEventDestination)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** sms-voice.amazonaws.com / **Access level:** Write
 
+- **   UpdateNotifyConfiguration  **
+  - **IAM action:**  [sms-voice:UpdateNotifyConfiguration](#list_pinpoint-sms-voice-v2-action-UpdateNotifyConfiguration)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   UpdatePhoneNumber  **
   - **IAM action:**  [sms-voice:UpdatePhoneNumber](#list_pinpoint-sms-voice-v2-action-UpdatePhoneNumber)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** sms-voice.amazonaws.com / **Access level:** Write
@@ -541,10 +633,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UpdateRcsAgent  **
-  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)
-  - **Condition key:** iam:PassedToService
-  - **Possible value(s):** sms-voice.amazonaws.com
-  - **Access level:** Write
+  - **IAM action:**  [sms-voice:UpdateRcsAgent](#list_pinpoint-sms-voice-v2-action-UpdateRcsAgent)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** sms-voice.amazonaws.com / **Access level:** Write
 
 - **   UpdateSenderId  **
   - **IAM action:**  [sms-voice:UpdateSenderId](#list_pinpoint-sms-voice-v2-action-UpdateSenderId)
@@ -569,6 +659,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to associate an origination phone number or sender ID to a pool
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool\*](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -577,6 +668,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [ConfigurationSet\*](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ProtectConfiguration\*](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
+
+- **   [CarrierLookup](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CarrierLookup.html)  **
+  - **Description:** Grants permission to look up carrier information for a phone number
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
 
 - **   [CreateConfigurationSet](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateConfigurationSet.html)  **
   - **Description:** Grants permission to create a configuration set
@@ -588,6 +685,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create an event destination within a configuration set
   - **Resource types (\*required):** [ConfigurationSet\*](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [CreateNotifyConfiguration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateNotifyConfiguration.html)  **
+  - **Description:** Grants permission to create a notify configuration
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Access level:** Write
 
 - **   [CreateOptOutList](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateOptOutList.html)  **
@@ -608,6 +711,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Access level:** Write
 
+- **   [CreateRcsAgent](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateRcsAgent.html)  **
+  - **Description:** Grants permission to create an RCS agent
+  - **Resource types (\*required):**
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateRegistration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateRegistration.html)  **
   - **Description:** Grants permission to create a registration
   - **Resource types (\*required):**
@@ -617,6 +726,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [CreateRegistrationAssociation](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateRegistrationAssociation.html)  **
   - **Description:** Grants permission to associate a registration with a phone number or another registration
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Registration\*](#list_pinpoint-sms-voice-v2-resource-Registration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -680,6 +790,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [DeleteNotifyConfiguration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteNotifyConfiguration.html)  **
+  - **Description:** Grants permission to delete a notify configuration
+  - **Resource types (\*required):** [NotifyConfiguration\*](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteNotifyMessageSpendLimitOverride](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteNotifyMessageSpendLimitOverride.html)  **
+  - **Description:** Grants permission to delete an override for your account's notify messaging monthly spend limit
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [DeleteOptOutList](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteOptOutList.html)  **
   - **Description:** Grants permission to delete an opt-out list
   - **Resource types (\*required):** [OptOutList\*](#list_pinpoint-sms-voice-v2-resource-OptOutList)
@@ -708,6 +830,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to delete a phone number override for a protect configuration
   - **Resource types (\*required):** [ProtectConfiguration\*](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteRcsAgent](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteRcsAgent.html)  **
+  - **Description:** Grants permission to delete an RCS agent
+  - **Resource types (\*required):** [RcsAgent\*](#list_pinpoint-sms-voice-v2-resource-RcsAgent)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [DeleteRcsMessageSpendLimitOverride](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteRcsMessageSpendLimitOverride.html)  **
+  - **Description:** Grants permission to delete an override for your account's RCS messaging monthly spend limit
+  - **Resource types (\*required):**
+  - **Condition keys:**
   - **Access level:** Write
 
 - **   [DeleteRegistration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DeleteRegistration.html)  **
@@ -778,6 +912,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [DescribeNotifyConfigurations](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeNotifyConfigurations.html)  **
+  - **Description:** Grants permission to describe the notify configurations in your account
+  - **Resource types (\*required):** [NotifyConfiguration](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [DescribeNotifyTemplates](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeNotifyTemplates.html)  **
+  - **Description:** Grants permission to describe the notify templates available
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [DescribeOptOutLists](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeOptOutLists.html)  **
   - **Description:** Grants permission to describe the opt-out lists in your account
   - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList)
@@ -808,7 +954,19 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
-- **   [DescribeRegistrationAttachments](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribePools.html)  **
+- **   [DescribeRcsAgentCountryLaunchStatus](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeRcsAgentCountryLaunchStatus.html)  **
+  - **Description:** Grants permission to describe the country launch status for an RCS agent
+  - **Resource types (\*required):** [RcsAgent\*](#list_pinpoint-sms-voice-v2-resource-RcsAgent)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [DescribeRcsAgents](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeRcsAgents.html)  **
+  - **Description:** Grants permission to describe the RCS agents in your account
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
+- **   [DescribeRegistrationAttachments](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeRegistrationAttachments.html)  **
   - **Description:** Grants permission to describe the registration attachments in your account
   - **Resource types (\*required):** [RegistrationAttachment](#list_pinpoint-sms-voice-v2-resource-RegistrationAttachment)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
@@ -872,6 +1030,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to disassociate an origination phone number or sender ID from a pool
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool\*](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -901,6 +1060,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [ListNotifyCountries](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_ListNotifyCountries.html)  **
+  - **Description:** Grants permission to list countries that support notify messaging
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Read
+
 - **   [ListPoolOriginationIdentities](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_ListPoolOriginationIdentities.html)  **
   - **Description:** Grants permission to list all origination phone numbers and sender IDs associated to a pool
   - **Resource types (\*required):** [Pool\*](#list_pinpoint-sms-voice-v2-resource-Pool)
@@ -922,10 +1087,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [ListTagsForResource](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list the tags for a resource
   - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [NotifyConfiguration](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [ProtectConfiguration](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Registration](#list_pinpoint-sms-voice-v2-resource-Registration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [RegistrationAttachment](#list_pinpoint-sms-voice-v2-resource-RegistrationAttachment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
@@ -984,8 +1151,9 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [RequestPhoneNumber](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_RequestPhoneNumber.html)  **
   - **Description:** Grants permission to request an origination phone number
-  - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool)
-  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [Registration](#list_pinpoint-sms-voice-v2-resource-Registration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Access level:** Write
 
 - **   [RequestSenderId](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_RequestSenderId.html)  **
@@ -996,6 +1164,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [SendDestinationNumberVerificationCode](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendDestinationNumberVerificationCode.html)  **
   - **Description:** Grants permission to send a text or voice message containing a verification code to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
@@ -1003,19 +1172,46 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [SendMediaMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html)  **
   - **Description:** Grants permission to send a media message to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [ProtectConfiguration](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [SendNotifyTextMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendNotifyTextMessage.html)  **
+  - **Description:** Grants permission to send a notify text message to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [NotifyConfiguration\*](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [SendNotifyVoiceMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendNotifyVoiceMessage.html)  **
+  - **Description:** Grants permission to send a notify voice message to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [NotifyConfiguration\*](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [SendRcsMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendRcsMessage.html)  **
+  - **Description:** Grants permission to send an RCS message to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [ProtectConfiguration](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [SendTextMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html)  **
   - **Description:** Grants permission to send a text message to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [ProtectConfiguration](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [SendVoiceMessage](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendVoiceMessage.html)  **
   - **Description:** Grants permission to send a voice message to a destination phone number
+  - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
@@ -1050,6 +1246,18 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Write
 
+- **   [SetNotifyMessageSpendLimitOverride](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SetNotifyMessageSpendLimitOverride.html)  **
+  - **Description:** Grants permission to set an override for your account's notify messaging monthly spend limit
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
+- **   [SetRcsMessageSpendLimitOverride](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SetRcsMessageSpendLimitOverride.html)  **
+  - **Description:** Grants permission to set an override for your account's RCS messaging monthly spend limit
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** Write
+
 - **   [SetTextMessageSpendLimitOverride](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SetTextMessageSpendLimitOverride.html)  **
   - **Description:** Grants permission to set an override for your account's text messaging monthly spend limit
   - **Resource types (\*required):**
@@ -1071,10 +1279,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [TagResource](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_TagResource.html)  **
   - **Description:** Grants permission to add tags to a resource
   - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [NotifyConfiguration](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [ProtectConfiguration](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [Registration](#list_pinpoint-sms-voice-v2-resource-Registration) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [RegistrationAttachment](#list_pinpoint-sms-voice-v2-resource-RegistrationAttachment) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
@@ -1084,10 +1294,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UntagResource](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UntagResource.html)  **
   - **Description:** Grants permission to remove tags from a resource
   - **Resource types (\*required):** [ConfigurationSet](#list_pinpoint-sms-voice-v2-resource-ConfigurationSet) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [NotifyConfiguration](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [PhoneNumber](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [Pool](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [ProtectConfiguration](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
+  - **Resource types (\*required):** [RcsAgent](#list_pinpoint-sms-voice-v2-resource-RcsAgent) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [Registration](#list_pinpoint-sms-voice-v2-resource-Registration) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [RegistrationAttachment](#list_pinpoint-sms-voice-v2-resource-RegistrationAttachment) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
   - **Resource types (\*required):** [SenderId](#list_pinpoint-sms-voice-v2-resource-SenderId) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_pinpoint-sms-voice-v2-aws_TagKeys)
@@ -1100,16 +1312,22 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [UpdateNotifyConfiguration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UpdateNotifyConfiguration.html)  **
+  - **Description:** Grants permission to update a notify configuration
+  - **Resource types (\*required):** [NotifyConfiguration\*](#list_pinpoint-sms-voice-v2-resource-NotifyConfiguration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [UpdatePhoneNumber](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UpdatePhoneNumber.html)  **
   - **Description:** Grants permission to update an origination phone number's configuration
-  - **Resource types (\*required):** [PhoneNumber\*](#list_pinpoint-sms-voice-v2-resource-PhoneNumber)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [PhoneNumber\*](#list_pinpoint-sms-voice-v2-resource-PhoneNumber) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdatePool](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UpdatePool.html)  **
   - **Description:** Grants permission to update a pool's configuration
-  - **Resource types (\*required):** [Pool\*](#list_pinpoint-sms-voice-v2-resource-Pool)
-  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [OptOutList](#list_pinpoint-sms-voice-v2-resource-OptOutList) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Resource types (\*required):** [Pool\*](#list_pinpoint-sms-voice-v2-resource-Pool) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
 - **   [UpdateProtectConfiguration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UpdateProtectConfiguration.html)  **
@@ -1121,6 +1339,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [UpdateProtectConfigurationCountryRuleSet](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UpdateProtectConfigurationCountryRuleSet.html)  **
   - **Description:** Grants permission to update a country rule set for a protect configuration
   - **Resource types (\*required):** [ProtectConfiguration\*](#list_pinpoint-sms-voice-v2-resource-ProtectConfiguration)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [UpdateRcsAgent](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_UpdateRcsAgent.html)  **
+  - **Description:** Grants permission to update an RCS agent's configuration
+  - **Resource types (\*required):** [RcsAgent\*](#list_pinpoint-sms-voice-v2-resource-RcsAgent)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
@@ -1147,10 +1371,12 @@ The following resource types are defined by this service and can be used in the 
 | --- | --- | --- |
 |  [ConfigurationSet](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateConfigurationSet.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:configuration-set/${ConfigurationSetName} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [Message](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_PutMessageFeedback.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:message/${MessageId} |   |
+|  [NotifyConfiguration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateNotifyConfiguration.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:notify-configuration/${NotifyConfigurationId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [OptOutList](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateOptOutList.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:opt-out-list/${OptOutListName} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [PhoneNumber](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_RequestPhoneNumber.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:phone-number/${PhoneNumberId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [Pool](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreatePool.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:pool/${PoolId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [ProtectConfiguration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateProtectConfiguration.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:protect-configuration/${ProtectConfigurationId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
+|  [RcsAgent](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_CreateRcsAgent.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:rcs-agent/${RcsAgentId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [Registration](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeRegistrations.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:registration/${RegistrationId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [RegistrationAttachment](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeRegistrationAttachments.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:registration-attachment/${RegistrationAttachmentId} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |
 |  [SenderId](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_DescribeSenderIds.html)  | arn:${Partition}:sms-voice:${Region}:${Account}:sender-id/${SenderId}/${IsoCountryCode} | [aws:ResourceTag/${TagKey}](#list_pinpoint-sms-voice-v2-aws_ResourceTag___TagKey_) |

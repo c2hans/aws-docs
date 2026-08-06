@@ -46,8 +46,8 @@ You only need to allowlist the bucket in the AWS Region where the Amazon Q Devel
 
 | Amazon S3 bucket URL and ARN | Purpose |
 | --- | --- |
-| US East (N. Virginia):[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/firewall.html)<br />Europe (Frankfurt):[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/firewall.html) | An Amazon S3 bucket used to upload artifacts for [Amazon Q code reviews](code-reviews.md) |
-| US East (N. Virginia):[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/firewall.html)<br />Europe (Frankfurt):[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/firewall.html) | An Amazon S3 bucket used to upload artifacts for [Amazon Q code transformations](code-transformation.md) |
+| US East (N. Virginia):+  `https://amazonq-code-scan-us-east-1-29121b44f7b.s3.amazonaws.com/` <br />+  `arn:aws:s3:::amazonq-code-scan-us-east-1-29121b44f7b` <br />Europe (Frankfurt):+  `https://amazonq-code-scan-eu-central-1-9374e402cc5.s3.amazonaws.com/` <br />+  `arn:aws:s3:::amazonq-code-scan-eu-central-1-9374e402cc5`  | An Amazon S3 bucket used to upload artifacts for [Amazon Q code reviews](code-reviews.md) |
+| US East (N. Virginia):+  `https://amazonq-code-transformation-us-east-1-c6160f047e0.s3.amazonaws.com/` <br />+  `arn:aws:s3:::amazonq-code-transformation-us-east-1-c6160f047e0` <br />Europe (Frankfurt):+  `https://amazonq-code-transformation-eu-central-1-a0a89cc2b94.s3.amazonaws.com/` <br />+  `arn:aws:s3:::amazonq-code-transformation-eu-central-1-a0a89cc2b94`  | An Amazon S3 bucket used to upload artifacts for [Amazon Q code transformations](code-transformation.md) |
 
 ## Configuring a corporate proxy in Amazon Q
 <a name="corp-proxy"></a>

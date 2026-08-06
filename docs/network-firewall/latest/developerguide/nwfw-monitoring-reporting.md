@@ -11,8 +11,8 @@ Network Firewall provides the following features in the **Monitoring** section o
 
 | Monitoring feature | Description | Data source | Enabled by default? |
 | --- | --- | --- | --- |
-| Firewall requests | Provides a graph of the number of packets monitored by the firewall.[See the AWS documentation website for more details](http://docs.aws.amazon.com/network-firewall/latest/developerguide/nwfw-monitoring-reporting.html) | Stateless and stateful engine traffic. | Yes |
-| Firewall monitoring dashboard | Provides real-time analysis of flow and alert logs through multiple visualization options, including:[See the AWS documentation website for more details](http://docs.aws.amazon.com/network-firewall/latest/developerguide/nwfw-monitoring-reporting.html) | Amazon S3 and CloudWatch logs. | No. Must be enabled in your firewall's advanced settings. |
+| Firewall requests | Provides a graph of the number of packets monitored by the firewall.+  Stateless engine passed and dropped packets <br />+  Stateful engine passed, dropped, and rejected packets <br />+  Stream exception policy packets  | Stateless and stateful engine traffic. | Yes |
+| Firewall monitoring dashboard | Provides real-time analysis of flow and alert logs through multiple visualization options, including:+  PrivateLink endpoint graphs, showing top candidates for PrivateLink Endpoints <br />+  Enhanced filtering and sorting capabilities by IP addresses and protocols <br />+  Detailed flow and alert log metrics  | Amazon S3 and CloudWatch logs. | No. Must be enabled in your firewall's advanced settings. |
 | Traffic analysis mode and reports | Provides retroactive analysis and report generation. | HTTP or HTTPS traffic observed over the last 30 days, starting from when you enable **Traffic analysis mode** on your firewall. | No. Must be enabled in your firewall's advanced settings. |
 
 **Access Monitoring in the Network Firewall console**

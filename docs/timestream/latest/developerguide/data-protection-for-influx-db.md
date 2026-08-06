@@ -23,4 +23,5 @@ For more detailed information on Timestream for InfluxDB data protection topics 
 
 **Topics**
 + [Encryption at rest](EncryptionAtRest-InfluxDB.md)
++ [Encrypting resources with customer managed keys](influxdb2-cmk-encryption.md)
 + [Encryption in transit](EncryptionInTransit-for-influx-db.md)

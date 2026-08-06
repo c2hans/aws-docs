@@ -61,6 +61,8 @@ In order for the Journey to determine appropriate time to attempt communication 
 
   When you select **Recipient's local time zone**, you configure the following settings:
   + **Detect recipient's local time zone** — Choose the method used to detect the recipient's time zone. Connect Customer Outbound Campaigns use a profile's [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) and/or [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber)'s area code to infer the recipient's time zone.
+
+    To detect a recipient's time zone from their postal code, you must populate the profile's `Address.Country` together with `Address.PostalCode`. Postal code-based time zone detection requires `Country`; other detection methods do not require `Country`. If `Country` is missing, we cannot determine the recipient's time zone from the postal code. We drop the recipient from the Journey with a `DROPPED_MISSING_TIMEZONE` status.
   + **Profile attributes to use for time zone detection** — Choose the scope of profile attributes used for time zone detection:
     + **Primary only** — Uses only the primary phone number and/or address attributes from the recipient's customer profile to determine the time zone.
     + **All available** — Uses all phone number and/or address attributes from the recipient's customer profile to determine the time zone.

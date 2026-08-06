@@ -40,26 +40,26 @@ The following table shows the bucket capacity (or burst) and refill rate (or sus
 
 | API action category | Actions | Bucket maximum capacity (or Burst rate) | Bucket refill rate (or Sustained rate) |
 | --- | --- | --- | --- |
-| Cluster modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 20 | 1 |
-| Cluster read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Task definition modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 20 | 1 |
-| Task definition read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Task definition deletion actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 5 | 1 |
-| Capacity provider modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 10 | 1 |
-| Capacity provider read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Tag modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 20 | 10 |
-| Tag read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Setting modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 10 | 1 |
-| Setting read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Cluster resource modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 100 | 40 |
-| Cluster resource read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 100 | 20 |
-| Agent modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 200 | 120 |
-| Service modify actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 5 |
-| Service read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 100 | 20 |
-| Service deployment actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Service revision actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 50 | 20 |
-| Task protection actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 200 | 80 |
-| Cluster service resource read actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html)  | 10 | 1 |
+| Cluster modify actions |  +   `CreateCluster` <br />+   `DeleteCluster` <br />+   `PutClusterCapacityProviders` <br />+   `UpdateCluster` <br />+   `UpdateClusterSettings`   | 20 | 1 |
+| Cluster read actions |  +   `DescribeClusters` <br />+   `ListClusters`   | 50 | 20 |
+| Task definition modify actions |  +   `DeregisterTaskDefinition` <br />+   `RegisterTaskDefinition`   | 20 | 1 |
+| Task definition read actions |  +   `DescribeTaskDefinition` <br />+   `ListTaskDefinitions` <br />+   `ListTaskDefinitionFamilies`   | 50 | 20 |
+| Task definition deletion actions |  +  `DeleteTaskDefinitions`   | 5 | 1 |
+| Capacity provider modify actions |  +   `CreateCapacityProvider` <br />+   `DeleteCapacityProvider` <br />+   `UpdateCapacityProvider`   | 10 | 1 |
+| Capacity provider read actions |  +   `DescribeCapacityProviders`   | 50 | 20 |
+| Tag modify actions |  +   `TagResource` <br />+   `UntagResource`   | 20 | 10 |
+| Tag read actions |  +   `ListTagsForResource`   | 50 | 20 |
+| Setting modify actions |  +   `DeleteAccountSetting` <br />+   `PutAccountSetting` <br />+   `PutAccountSettingDefault`   | 10 | 1 |
+| Setting read actions |  +   `ListAccountSettings`   | 50 | 20 |
+| Cluster resource modify actions |  +  `DeleteAttributes` <br />+  `DeregisterContainerInstance` <br />+  `ExecuteCommand` <br />+  `PutAttributes` <br />+  `RunTask`[1](#note-1) <br />+  `StartTask` <br />+  `StopTask` <br />+  `UpdateContainerAgent` <br />+  `UpdateContainerInstancesStates`   | 100 | 40 |
+| Cluster resource read actions |  +  `DescribeContainerInstances` <br />+  `DescribeTasks` <br />+  `ListAttributes` <br />+  `ListContainerInstances` <br />+  `ListTasks`   | 100 | 20 |
+| Agent modify actions |  +  `RegisterContainerInstance` <br />+  `SubmitAttachmentStateChanges` <br />+  `SubmitContainerStateChange` <br />+  `SubmitTaskStateChange`   | 200 | 120 |
+| Service modify actions |  +  `CreateService` <br />+  `DeleteService` <br />+  `UpdateService`   | 50 | 5 |
+| Service read actions |  +  `DescribeServices` <br />+  `ListServices`   | 100 | 20 |
+| Service deployment actions |  +  `DescribeServiceDeployments` <br />+  `ListServiceDeployments`   | 50 | 20 |
+| Service revision actions |  +  `DescribeServiceRevisions`   | 50 | 20 |
+| Task protection actions |  +  `UpdateTaskProtection` <br />+  `GetTaskProtection`   | 200 | 80 |
+| Cluster service resource read actions |  +  `ListServicesByNamespace`   | 10 | 1 |
 
 <a name="note-1"></a>1 AWS Fargate additionally throttles Amazon ECS `RunTask` API to the rates listed [here](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/throttling.html) in the *Amazon ECS Developer Guide*.
 

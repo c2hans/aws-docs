@@ -25,7 +25,7 @@ The table below lists the column names supported by the data entity:
 | allocated\_inventory | double | No | Inventory allocated for some process. |
 | bound\_inventory | double | No | Inventory bound to some process. |
 | quantity\_uom | string | No | Quantity unit of measure for inventory. |
-| inv\_condition | string | Yes 1 | Condition of the inventory. Inventory in different conditions are displayed in different rows. You can also enter your own value.<br />Reserved inventory condition values in AWS Supply Chain are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/inventory_mgmnt-inv-level-entity.html) |
+| inv\_condition | string | Yes 1 | Condition of the inventory. Inventory in different conditions are displayed in different rows. You can also enter your own value.<br />Reserved inventory condition values in AWS Supply Chain are as follows:+  Unrestricted - Inventory is available. <br />+  Inspection - Below quality or any other inspection. <br />+  Returns - Inventory goes to return area. <br />+  Blocked - Inventory is blocked for a reason. <br />+  InTransfer - Used during inventory stock transfer. <br />+  Restricted - Restricted for other reasons but not blocked.  |
 | lot\_number | string | Yes1 | Lot number of the inventory. |
 | expiry\_date | timestamp | No | Expiry date of the inventory. |
 | source\_update\_dttm | timestamp | No | Date time stamp of the update made in the source system. |

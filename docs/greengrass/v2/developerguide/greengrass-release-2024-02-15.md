@@ -23,7 +23,7 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.12.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2024-02-15.html) |
-| Shadow manager | Version 2.3.6 of the [shadow manager component](shadow-manager-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2024-02-15.html) |
-| Lambda launcher | Version 2.0.13 of the [lambda launcher component](lambda-launcher-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2024-02-15.html) |
-| Disk spooler | Version 1.0.3 of the [disk spooler component](disk-spooler-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2024-02-15.html) |
+| Greengrass nucleus | Version 2.12.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where old logs weren't cleaned up properly.   General bug fixes and improvements.    |
+| Shadow manager | Version 2.3.6 of the [shadow manager component](shadow-manager-component.md) is available.**Bug fixes and improvements**<br /> Fixes an issue where shadow properties that are deleted through AWS Cloud updates while the device is offline continue to exist in the local shadow after regaining connectivity.  |
+| Lambda launcher | Version 2.0.13 of the [lambda launcher component](lambda-launcher-component.md) is available.**Bug fixes and improvements**<br /> General bug fixes and improvements.  |
+| Disk spooler | Version 1.0.3 of the [disk spooler component](disk-spooler-component.md) is available.**Bug fixes and improvements**<br /> Improves performance by reusing database connections.  |

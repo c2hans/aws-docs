@@ -148,7 +148,7 @@ Storage initialization is available only for instances in blue/green deployments
 
 During storage initialization, the instance remains fully available and usable for database operations, though storage might not reach full performance until initialization completes. While the storage initialization is underway, the overall instance status changes to **Storage-initialization**, and the progress indicator reflects the minimum initialization level across all volumes of the DB instance.
 
-Use the console, AWS CLI, or Amazon RDS API to monitor storage initialization.
+Use the console, AWS CLI, or Amazon RDS API to monitor storage initialization. Blue/green deployments are one of several workflows where you can use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response to observe per-volume progress. For details on all covered workflows and field semantics, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ------
 #### [ Console ]
@@ -160,7 +160,7 @@ Use the console, AWS CLI, or Amazon RDS API to monitor storage initialization.
 ------
 #### [ AWS CLI ]
 
-With the AWS CLI, you can monitor storage initialization with the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command. The `PercentProgress` field in the response shows what percentage of data has been retrieved from Amazon S3.
+With the AWS CLI, you can monitor storage initialization with the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) command. The `StorageOperationStatus` and `StorageOperationPercentProgress` fields report the per-volume state and progress. The legacy `PercentProgress` field continues to report the instance-level progress during storage initialization.
 
 ```
 aws rds describe-db-instances --db-instance-identifier my-db-instance
@@ -173,6 +173,8 @@ aws rds describe-db-instances --db-instance-identifier my-db-instance
             "Engine": "postgres",
             "DBInstanceStatus": "storage-initialization",
             ...
+            "StorageOperationStatus": "Initializing",
+            "StorageOperationPercentProgress": 34,
             "PercentProgress": "34"
         }
     ]
@@ -182,7 +184,7 @@ aws rds describe-db-instances --db-instance-identifier my-db-instance
 ------
 #### [ Amazon RDS API ]
 
- With the Amazon RDS API, you retrieve the status of storage initialization by calling the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) action.
+ With the Amazon RDS API, you retrieve the status of storage initialization by calling the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) action. Inspect the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the response.
 
 ------
 
@@ -264,4 +266,4 @@ The following table explains the settings that you can choose when you create a 
 | Provisioned IOPS | The amount of provisioned input/output operations per second (IOPS) to be initially allocated for the green database.<br />This value applies only to the green primary DB instance, not green replicas. | **CLI option:**<br />`--target-iops`<br />**RDS API parameter:**<br />`TargetIops` |
 | Storage configuration upgrade | Choose whether to upgrade your storage file system configuration. If you enable this setting, RDS migrates the green database from the old storage file system to the preferred configuration.<br />This option is only available if your blue database is *not* on the latest storage configuration, or if you're enabling RDS Optimized Writes within the same request. You can only upgrade the storage configuration when initially creating a blue/green deployment.<br />For more information, see [Upgrading the storage file system for a DB instance](USER_PIOPS.UpgradeFileSystem.md). | **CLI option:**<br />`--upgrade-target-storage-config`<br />**RDS API parameter:**<br />`UpgradeTargetStorageConfig` |
 | Storage throughput | The storage throughput value for the green database. This setting is visible only if you choose General Purpose SSD (gp3) for the storage type.<br />This value applies only to the green primary DB instance, not green replicas.<br />For more information, see [gp3 storage (recommended)](CHAP_Storage.md#gp3-storage). | **CLI option:**<br />`--target-storage-throughput`<br />**RDS API parameter:**<br />`TargetStorageThroughput` |
-| Storage type | The storage type for the green database. The following storage types are supported:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-creating.html)<br />This value applies only to the green primary DB instance, not green replicas.<br />For more information, see [Amazon RDS storage types](CHAP_Storage.md#Concepts.Storage). | **CLI option:**<br />`--target-storage-type`<br />**RDS API parameter:**<br />`TargetStorageType` |
+| Storage type | The storage type for the green database. The following storage types are supported:+ General Purpose SSD (gp2)<br />+  General Purpose SSD (gp3) <br />+  Provisioned IOPS (io1) <br />+  Provisioned IOPS SSD (io2) <br />This value applies only to the green primary DB instance, not green replicas.<br />For more information, see [Amazon RDS storage types](CHAP_Storage.md#Concepts.Storage). | **CLI option:**<br />`--target-storage-type`<br />**RDS API parameter:**<br />`TargetStorageType` |

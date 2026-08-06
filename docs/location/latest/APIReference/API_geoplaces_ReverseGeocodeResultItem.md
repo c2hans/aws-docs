@@ -29,7 +29,7 @@ Length Constraints: Minimum length of 0. Maximum length of 200.
 Required: Yes
 
  ** AccessPoints **   <a name="location-Type-geoplaces_ReverseGeocodeResultItem-AccessPoints"></a>
- Position of the access point in World Geodetic System (WGS 84) format: [longitude, latitude]. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Position of the access point in World Geodetic System (WGS 84) format: [longitude, latitude]. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [AccessPoint](API_geoplaces_AccessPoint.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No
@@ -40,7 +40,7 @@ Type: [Address](API_geoplaces_Address.md) object
 Required: No
 
  ** AddressNumberCorrected **   <a name="location-Type-geoplaces_ReverseGeocodeResultItem-AddressNumberCorrected"></a>
- Boolean indicating if the address provided has been corrected. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Boolean indicating if the address provided has been corrected. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Boolean
 Required: No
 
@@ -62,13 +62,13 @@ Type: Boolean
 Required: No
 
  ** FoodTypes **   <a name="location-Type-geoplaces_ReverseGeocodeResultItem-FoodTypes"></a>
- List of food types offered by this result. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ List of food types offered by this result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [FoodType](API_geoplaces_FoodType.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 Required: No
 
  ** Intersections **   <a name="location-Type-geoplaces_ReverseGeocodeResultItem-Intersections"></a>
- All Intersections that are near the provided address. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ All Intersections that are near the provided address. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [Intersection](API_geoplaces_Intersection.md) objects
 Array Members: Minimum number of 1 item.
 Required: No
@@ -86,7 +86,7 @@ Array Members: Fixed number of 4 items.
 Required: No
 
  ** PoliticalView **   <a name="location-Type-geoplaces_ReverseGeocodeResultItem-PoliticalView"></a>
- The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Fixed length of 3.
 Pattern: `[A-Z]{3}`
@@ -99,7 +99,7 @@ Array Members: Fixed number of 2 items.
 Required: No
 
  ** PostalCodeDetails **   <a name="location-Type-geoplaces_ReverseGeocodeResultItem-PostalCodeDetails"></a>
- Contains details about the postal code of the place/result. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Contains details about the postal code of the place or result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [PostalCodeDetails](API_geoplaces_PostalCodeDetails.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No

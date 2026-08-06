@@ -144,7 +144,7 @@ A list of the associated sheets with the unique identifier and name of each shee
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SourceEntity`  <a name="cfn-quicksight-analysis-sourceentity"></a>
-A source entity to use for the analysis that you're creating. This metadata structure contains details that describe a source template and one or more datasets.
+A source entity to use for the analysis that you're creating. This metadata structure contains details that describe a source template and one or more datasets or topics.
 Either a `SourceEntity` or a `Definition` must be provided in order for the request to be valid.
 *Required*: No
 *Type*: [AnalysisSourceEntity](aws-properties-quicksight-analysis-analysissourceentity.md)

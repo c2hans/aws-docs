@@ -80,7 +80,7 @@ View details about updates to AWS managed policies for Amazon EFS since this ser
 
 | Change | Description | Date |
 | --- | --- | --- |
-| Update to an existing policy | Policy: [AmazonElasticFileSystemFullAccess](#security-iam-awsmanpol-AmazonElasticFileSystemFullAccess)<br />Amazon EFS added the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/efs/latest/ug/security-iam-awsmanpol.html) | November 7, 2024 |
+| Update to an existing policy | Policy: [AmazonElasticFileSystemFullAccess](#security-iam-awsmanpol-AmazonElasticFileSystemFullAccess)<br />Amazon EFS added the following:+  `ReplicationRead` and `ReplicationWrite` to give permission to read and write file system data for replication.  <br />+  `iam:PassRole` to give permission for Amazon EFS to create replication configurations.  | November 7, 2024 |
 | Update to an existing policy | Policy: [AmazonElasticFileSystemServiceRolePolicy](using-service-linked-roles.md#slr-permissions)<br />Amazon EFS added `ReplicationRead` and `ReplicationWrite` to give permission to read and write file system data for replication. | November 7, 2024 |
 | Update to an existing policy | Policy: [AmazonElasticFileSystemReadOnlyAccess](#security-iam-awsmanpol-AmazonElasticFileSystemReadOnlyAccess)Amazon EFS added the `ReplicationRead` action to give permission to read file system data for replication. | November 7, 2024 |
 | Update to an existing policy | Policy: [AmazonElasticFileSystemReadOnlyAccess](#security-iam-awsmanpol-AmazonElasticFileSystemReadOnlyAccess)Amazon EFS added new permissions that give source and destination accounts access to file systems for cross-account replications.  | August 7, 2024 |

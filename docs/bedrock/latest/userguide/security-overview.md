@@ -19,3 +19,4 @@ Security in Amazon Bedrock encompasses multiple layers of protection for your da
 + [Configuration and vulnerability analysis in Amazon Bedrock](vulnerability-analysis-and-management.md)
 + [Amazon Bedrock abuse detection](abuse-detection.md)
 + [Prompt injection security](prompt-injection.md)
++ [Identity and access management for Web Search](security-web-search.md)

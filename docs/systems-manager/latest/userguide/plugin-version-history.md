@@ -33,7 +33,7 @@ We recommend you always run the latest version. The latest version includes enha
 | 1.2.764.0 | November 19, 2025 | **Enhancement**: Added support for signing OpenDataChannel request.<br />**Bug fix**: Fix checkstyle issues to support newer Go version. |
 | 1.2.707.0 | February 6, 2025 | **Enhancement**: Upgraded the Go version to 1.23 in the Dockerfile. Updated the version configuration step in the README. |
 | 1.2.694.0 | November 20, 2024 | **Bug fix**: Rolled back change that added credentials to OpenDataChannel requests. |
-| 1.2.688.0 | November 6, 2024 | **This version was deprecated on 11/20/2024.**<br />**Enhancements**:[See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/plugin-version-history.html) |
+| 1.2.688.0 | November 6, 2024 | **This version was deprecated on 11/20/2024.**<br />**Enhancements**:+  Added credentials to OpenDataChannel requests. <br />+  Upgraded the `testify` and `objx` dependent packages.  |
 | 1.2.677.0 | October 10, 2024 | **Enhancement**: Added support for passing the plugin version with OpenDataChannel requests. |
 | 1.2.650.0 | July 02, 2024 | **Enhancement**: Upgraded aws-sdk-go to 1.54.10.<br />**Bug fix**: Reformated comments for gofmt check. |
 | 1.2.633.0 | May 30, 2024 | Enhancement: Updated the Dockerfile to use an Amazon Elastic Container Registry (Amazon ECR) image. |

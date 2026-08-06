@@ -35,7 +35,7 @@ You add only one rule in a replication configuration in the following scenarios:
 + You want to replicate all objects.
 + You want to replicate only one subset of objects. You identify the object subset by adding a filter in the rule. In the filter, you specify an object key prefix, tags, or a combination of both to identify the subset of objects that the rule applies to. The filters target objects that match the exact values that you specify.
 
-If you want to replicate different subsets of objects, you add multiple rules in a replication configuration. In each rule, you specify a filter that selects a different subset. For example, you might choose to replicate objects that have either `tax/` or `document/` key prefixes. To do this, you add two rules, one that specifies the `tax/` key prefix filter and another that specifies the `document/` key prefix. For more information about object key prefixes, see [Organizing objects using prefixes](using-prefixes.md).
+If you want to replicate different subsets of objects, you add multiple rules in a replication configuration. In each rule, you specify a filter that selects a different subset. For example, you might choose to replicate objects that have either `tax/` or `document/` key prefixes. To do this, you add 2 rules, one that specifies the `tax/` key prefix filter and another that specifies the `document/` key prefix. For more information about object key prefixes, see [Organizing objects using prefixes](using-prefixes.md).
 
 The following sections provide additional information.
 
@@ -51,7 +51,7 @@ The following sections provide additional information.
 
 Each rule must include the rule's status and priority. The rule must also indicate whether to replicate delete markers.
 + The `<Status>` element indicates whether the rule is enabled or disabled by using the values `Enabled` or `Disabled`. If a rule is disabled, Amazon S3 doesn't perform the actions specified in the rule.
-+ The `<Priority>` element indicates which rule has precedence whenever two or more replication rules conflict. Amazon S3 attempts to replicate objects according to all replication rules. However, if there are two or more rules with the same destination bucket, then objects are replicated according to the rule with the highest priority. The higher the number, the higher the priority.
++ The `<Priority>` element indicates which rule has precedence whenever 2 or more replication rules conflict. Amazon S3 attempts to replicate objects according to all replication rules. However, if there are 2 or more rules with the same destination bucket, then objects are replicated according to the rule with the highest priority. The higher the number, the higher the priority.
 + The `<DeleteMarkerReplication>` element indicates whether to replicate delete markers by using the values `Enabled` or `Disabled`.
 
 In the `<Destination>` element configuration, you must provide the name of the destination bucket or buckets where you want Amazon S3 to replicate objects.
@@ -395,7 +395,7 @@ To choose a subset of objects to replicate, you can add a filter. In the followi
 </ReplicationConfiguration>
 ```
 If you specify the `<Filter>` element, you must also include the `<Priority>` and `<DeleteMarkerReplication>` elements. In this example, the value that you set for the `<Priority>` element is irrelevant because there is only one rule.
-In the following configuration, the filter specifies one prefix and two tags. The rule applies to the subset of objects that have the specified key prefix and tags. Specifically, it applies to objects that have the `{{Tax/}}` prefix in their key names and the two specified object tags. In this example, the value that you set for the `<Priority>` element is irrelevant because there is only one rule.
+In the following configuration, the filter specifies 1 prefix and 2 tags. The rule applies to the subset of objects that have the specified key prefix and tags. Specifically, it applies to objects that have the `{{Tax/}}` prefix in their key names and the 2 specified object tags. In this example, the value that you set for the `<Priority>` element is irrelevant because there is only one rule.
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -452,12 +452,12 @@ You can specify a storage class for the object replicas as follows:
 ```
 You can specify any storage class that Amazon S3 supports.
 
-**Example 2: Replication configuration with two rules**
+**Example 2: Replication configuration with 2 rules**
 
 **Example**
 In the following replication configuration, the rules specify the following:
 + Each rule filters on a different key prefix so that each rule applies to a distinct subset of objects. In this example, Amazon S3 replicates objects with the key names {{`Tax/doc1.pdf`}} and {{`Project/project1.txt`}}, but it doesn't replicate objects with the key name {{`PersonalDoc/documentA`}}.
-+ Although both rules specify a value for the `<Priority>` element, the rule priority is irrelevant because the rules apply to two distinct sets of objects. The next example shows what happens when rule priority is applied.
++ Although both rules specify a value for the `<Priority>` element, the rule priority is irrelevant because the rules apply to 2 distinct sets of objects. The next example shows what happens when rule priority is applied.
 + The second rule specifies the S3 Standard-IA storage class for object replicas. Amazon S3 uses the specified storage class for those object replicas.
 
 ```
@@ -500,8 +500,8 @@ In the following replication configuration, the rules specify the following:
 </ReplicationConfiguration>
 ```
 
-**Example 3: Replication configuration with two rules with overlapping prefixes**  <a name="overlap-rule-example"></a>
-In this configuration, the two rules specify filters with overlapping key prefixes, {{`star`}} and {{`starship`}}. Both rules apply to objects with the key name {{`starship-x`}}. In this case, Amazon S3 uses the rule priority to determine which rule to apply. The higher the number, the higher the priority.
+**Example 3: Replication configuration with 2 rules with overlapping prefixes**  <a name="overlap-rule-example"></a>
+In this configuration, the 2 rules specify filters with overlapping key prefixes, {{`star`}} and {{`starship`}}. Both rules apply to objects with the key name {{`starship-x`}}. In this case, Amazon S3 uses the rule priority to determine which rule to apply. The higher the number, the higher the priority.
 
 ```
 <ReplicationConfiguration>

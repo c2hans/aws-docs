@@ -41,7 +41,7 @@ For an explanation of each return value, see the following table.
 | RecurringCharges | The hourly rate for the reservation. |
 | UsagePrice | A legacy field. For OpenSearch Service, this value is always 0. |
 | PaymentOption | No Upfront, Partial Upfront, or All Upfront. |
-| Duration | Length of the term in seconds:[See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/ri-cli.html) |
+| Duration | Length of the term in seconds:+  31536000 seconds is one year. <br />+  94608000 seconds is three years.  |
 | InstanceType | The instance type for the reservation. For information about the hardware resources that are allocated to each instance type, see [Amazon OpenSearch Service pricing](https://aws.amazon.com/elasticsearch-service/pricing/). |
 | CurrencyCode | The currency for FixedPrice and RecurringChargeAmount. |
 

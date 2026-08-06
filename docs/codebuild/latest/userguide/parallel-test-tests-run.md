@@ -20,7 +20,7 @@ The following table describes the fields for the `codebuild-tests-run` CLI comma
 | --- | --- | --- | --- |
 | `test-command` | String | Required | This command is used for running the tests. |
 | `files-search` | String | Required | This command gives a list of test files. You can use the AWS CodeBuild provided [codebuild-glob-search](parallel-test-glob-search.md) CLI command or any other file search tool of your choice. Ensure that the `files-search` command outputs file names, each separated by a new line.  |
-| `sharding-strategy` | Enum | Optional | Valid values: `equal-distribution` (default), `stability`[See the AWS documentation website for more details](http://docs.aws.amazon.com/codebuild/latest/userguide/parallel-test-tests-run.html)<br />For more information, see [About test splitting](parallel-test-splitting.md). |
+| `sharding-strategy` | Enum | Optional | Valid values: `equal-distribution` (default), `stability`+  `equal-distribution`: Shard test files evenly based on test file names. <br />+  `stability`: Shard test files using consistent hashing of the file names. <br />For more information, see [About test splitting](parallel-test-splitting.md). |
 
 The `codebuild-tests-run` CLI works first to identify the list of test files using the command provided in the `files-search` parameter. It then determines a subset of test files designated for the current shard (environment) using the specified sharding strategy. Finally, this subset of test files is formatted into a space-separated list and appended to the end of the command provided in the `test-command` parameter before being executed.
 

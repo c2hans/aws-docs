@@ -103,6 +103,29 @@ Replace these placeholders: \* {{us-east-1}} with the AWS Region \* {{1234567890
 **Note**
 \* Additional permissions may be required depending on the Amazon Bedrock AgentCore Gateway integration type (e.g., Lambda functions, API Gateway endpoints). These permissions are not included here as they vary based on the specific integration. \* For Production: Replace the placeholders with specific resource IDs (e.g., `policy-engine/my-policy-engine-id` instead of `policy-engine/<policy-engine-id>` ) to follow least-privilege principles, or use wildcards ( \* ) to allow access to all resources of that type.
 
+### IAM permissions for temporal policies
+<a name="policy-permissions-session-temporal"></a>
+
+Temporal policies require the Gateway to propagate the caller’s session identity across the request by minting a Workload Access Token (WAT). On the AWS IAM inbound flow, this mint calls `GetWorkloadAccessToken`. Grant the Gateway Execution Role `bedrock-agentcore:GetWorkloadAccessToken`, scoped to the Gateway’s workload-identity directory. Add this permission in addition to the three Policy permissions (`AuthorizeAction`, `PartiallyAuthorizeActions`, `GetPolicyEngine`) already documented on this page. This permission is only required when temporal policy is active (a policy session ID is supplied and a Policy Engine is attached); it is not needed when temporal policy is disabled.
+
+Add the following statement to the Gateway Execution Role permission policy:
+
+```
+{
+  "Sid": "PolicySessionWorkloadIdentity",
+  "Effect": "Allow",
+  "Action": [
+    "bedrock-agentcore:GetWorkloadAccessToken"
+  ],
+  "Resource": [
+    "arn:aws:bedrock-agentcore:us-east-1:123456789012:workload-identity-directory/default",
+    "arn:aws:bedrock-agentcore:us-east-1:123456789012:workload-identity-directory/default/workload-identity/<gatewayId>*"
+  ]
+}
+```
+
+Without this permission, tool invocations fail at the token-mint step (`AccessDenied` on `GetWorkloadAccessToken`) once temporal policy is enabled. For production, replace `<gatewayId>` with the specific Gateway ID to follow least-privilege principles.
+
 ## Resource Management Role
 <a name="policy-permissions-management-role"></a>
 

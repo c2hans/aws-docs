@@ -76,28 +76,28 @@ The code for this pattern is available in the GitHub [aws-cloudfront-automation-
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Set up and configure the Git CLI. | To install and configure the Git command line interface (CLI) in your local workstation, follow the [Getting Started – Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) instructions in the Git documentation. | DevOps engineer |
-| Create the project folder and add the files. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-cloudfront-updates-when-load-balancer-endpoints-change.html) | DevOps engineer |
+| Create the project folder and add the files. | 1. Go to the pattern’s [GitHub repository](https://github.com/aws-samples/aws-cloudfront-automation-terraform-samples), and choose the **Code** button.<br />2. On the **Clone** dialog, choose the **HTTPS** tab. In **Clone using the web URL**, copy the URL that’s shown.<br />3. Create a folder on your local machine. Name it with your project name.<br />4. Open a terminal on your local machine, and navigate to this folder.<br />5. To clone this pattern’s git repository, run the following command: `git clone https://github.com/aws-samples/aws-cloudfront-automation-terraform-samples`<br />6. After the repository has been cloned, use the following command to go to the cloned directory: `cd <directory name>/cloudfront-update`<br />Open this project in an Integrated Development Environment (IDE) of your choice. | DevOps engineer |
 
 ### Provision the target architecture using the Terraform configuration
 <a name="provision-the-target-architecture-using-the-terraform-configuration"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the solution. | To deploy resources in the target AWS account, use the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-cloudfront-updates-when-load-balancer-endpoints-change.html) | DevOps engineer |
+| Deploy the solution. | To deploy resources in the target AWS account, use the following steps:1. Go to the `cloudfront-update` folder.<br />2. Update the `terraform.tfvars` file with the `cloudfront_distribution_id`.<br />3. To set the AWS Region for your AWS profile, run the following command:<pre>export AWS_REGION={{ REGION }}</pre><br />4. To initialize Terraform, run the following command:<pre>terraform init</pre><br />5. To validate Terraform, run the following command:<pre>terraform validate</pre><br />6. To create a Terraform execution plan, run the following command:<pre>terraform plan</pre><br />7. To apply the actions from `terraform plan`, run the following command:<pre>terraform apply</pre> | DevOps engineer |
 
 ### Verify the deployment
 <a name="verify-the-deployment"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Validate the deployment. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-cloudfront-updates-when-load-balancer-endpoints-change.html) | DevOps engineer |
+| Validate the deployment. | 1. Sign in to the AWS Management Console and open the Amazon CloudFront console at [https://console.aws.amazon.com/cloudfront/v4/home](https://console.aws.amazon.com/cloudfront/v4/home).<br />2. In the left navigation pane, choose **Distributions** and then open the CloudFront distribution.<br />3. On the **Origins** tab, verify that the origin name and origin mapping have the updated ALB DNS record. | DevOps engineer |
 
 ### Clean up infrastructure
 <a name="clean-up-infrastructure"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clean up the infrastructure. | To clean up the infrastructure that you created earlier, use the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-cloudfront-updates-when-load-balancer-endpoints-change.html) | DevOps engineer |
+| Clean up the infrastructure. | To clean up the infrastructure that you created earlier, use the following steps:1. Run the following command: `terraform destroy`<br />2. To confirm the destroy command, enter `yes`. | DevOps engineer |
 
 ## Troubleshooting
 <a name="automate-cloudfront-updates-when-load-balancer-endpoints-change-troubleshooting"></a>

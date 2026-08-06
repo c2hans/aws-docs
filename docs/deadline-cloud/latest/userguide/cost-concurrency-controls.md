@@ -71,19 +71,31 @@ For more information, see [Control costs with a budget](using-budget-manager.md)
 
 Priority does not limit concurrency or cost directly. Instead, it helps ensure that the most important work gets workers first when the fleet is at capacity. Combine priority with a fleet maximum worker count to control both which jobs run first and how much compute runs in total.
 
-## Choose the right controls for your workflow
+## Limit your spend rate
+<a name="cost-concurrency-spend-rate"></a>
+
+A fleet's cost comes from its running workers, so you can cap a fleet's spend rate by setting the maximum number of workers. Two controls work together:
++ The **fleet maximum worker count** sets your peak spend rate by capping how many workers can run at once. For more information about what makes up the hourly cost of a worker, see [Understand the cost model for service-managed fleets](cost-model-smf.md).
++ A **budget** caps cumulative spending. A budget tracks total estimated spending over a time period rather than a rate, so it adds a hard dollar limit alongside the fleet's capacity cap.
+
+## Mix Spot and On-Demand capacity
+<a name="cost-concurrency-market-options"></a>
+
+Each service-managed fleet uses a single instance market option: Spot, On-Demand, or Wait and Save. To combine market options, create a separate fleet for each option and associate the fleets with the same queue. For more information, see [Service-managed fleets](fleet-types.md#fleet-types-smf) and [Associate a queue and fleet](associate-a-queue-and-fleet.md).
+
+When a queue has more than one fleet, it distributes jobs evenly across those fleets. To instead treat one fleet as primary capacity and another as overflow, adjust the fleets' maximum worker counts. The [capacity manager](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/examples-cfn-capacity-manager.html) sample in the *Deadline Cloud Developer Guide* automates that adjustment for a hybrid Wait and Save plus Spot setup.
+
+## Temporarily raise limits during crunch
+<a name="cost-concurrency-crunch"></a>
+
+All of these controls are adjustable at any time. You can temporarily increase limits, sometimes called crunch mode, to use more workers during a deadline push. For example, before a delivery deadline you might raise a fleet's maximum worker count, increase a budget threshold, and add standby workers to reduce job start latency. After the deadline, lower the settings again.
+
+You can update fleet auto scaling settings and budgets from the Deadline Cloud console. To change capacity on a schedule, such as raising the standby worker count during working hours, use the sample CloudFormation template at [fleet\_standby\_scheduling](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/fleet_standby_scheduling) on GitHub. If you need more capacity than your account's service quotas allow, see [Quotas for Deadline Cloud](deadline-cloud-quotas.md).
+
+## Combine controls
 <a name="cost-concurrency-choosing"></a>
 
-The following scenarios illustrate common combinations:
-
-"I want a hard cap on what I spend per month"
-Create a budget on each queue with a monthly dollar limit and a stop-scheduling action.
-
-"I want to limit how many instances run at once, like my old fixed farm"
-Set the maximum worker count on your fleet. This directly replaces the natural concurrency limit of a fixed-size farm.
-
-"I have 50 licenses and don't want jobs to fail because they can't get one"
-Create a resource limit of 50 and associate it with the relevant queues. Jobs that declare the limit only schedule tasks when a license is available.
+Each control on its own addresses one need. The following scenarios show how to combine controls:
 
 "I don't want one huge job to starve smaller jobs"
 Set `--max-worker-count` on large jobs to reserve fleet capacity for other work. Optionally, set higher priority on the smaller jobs.

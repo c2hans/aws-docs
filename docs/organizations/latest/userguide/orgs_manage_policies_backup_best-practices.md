@@ -12,10 +12,10 @@ AWS recommends the following best practices for using backup policies.
 
 You can create backup policies in incomplete pieces that are inherited and merged to make a complete policy for each member account. If you do this, you risk ending up with an effective policy that is not complete if you make a change at one level without carefully considering the change's impact on all accounts below that level. To prevent this, we recommend that you instead ensure that the backup policies you implement at all levels are complete by themselves. Treat the parent policies as default policies that can be overridden by settings specified in child policies. That way, even if a child policy doesn't exist, the inherited policy is complete and uses the default values. You can control which settings can be added to, changed, or removed by child policies by using the [child control inheritance operators](policy-operators.md#child-control-operators).
 
-## Validate changes to your backup policies checking using `GetEffectivePolicy`
+## Validate changes to your backup policies checking using `DescribeEffectivePolicy`
 <a name="bp-bkp-workflow"></a>
 
-After you make a change to a backup policy, check the effective policies for representative accounts below the level where you made the change. You can [view the effective policy by using the AWS Management Console](orgs_manage_policies_effective.md), or by using the [GetEffectivePolicy](https://docs.aws.amazon.com/organizations/latest/APIReference/API_GetEffectivePolicy.html) API operation or one of its AWS CLI or AWS SDK variants. Ensure that the change you made had the intended impact on the effective policy.
+After you make a change to a backup policy, check the effective policies for representative accounts below the level where you made the change. You can [view the effective policy by using the AWS Management Console](orgs_manage_policies_effective.md), or by using the [DescribeEffectivePolicy](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DescribeEffectivePolicy.html) API operation or one of its AWS CLI or AWS SDK variants. Ensure that the change you made had the intended impact on the effective policy.
 
 ## Start simply and make small changes
 <a name="bp-bkp-rules"></a>

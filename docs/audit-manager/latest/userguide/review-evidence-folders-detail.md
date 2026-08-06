@@ -83,13 +83,13 @@ In this table, you can review the following information:
 | Name | Description |
 | --- | --- |
 | **Time** | Specifies when the evidence was collected. This also serves as the name of the evidence. The time is represented in Coordinated Universal Time (UTC).  |
-| **Compliance check** | The evaluation status for evidence that falls under the compliance check category. [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-evidence-folders-detail.html) |
-| Evidence by type | The type of evidence. [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-evidence-folders-detail.html) |
+| **Compliance check** | The evaluation status for evidence that falls under the compliance check category. +  For evidence that's collected from Security Hub CSPM, a **Pass** or **Fail** result is reported directly from Security Hub CSPM. <br />+  For evidence that's collected from AWS Config, a **Compliant** or **Non-compliant** result is reported directly from AWS Config. <br />+  If **Not applicable** is shown, this indicates that you either don't have AWS Config or Security Hub CSPM enabled, or the evidence comes from a different data source type.  |
+| Evidence by type | The type of evidence. +  **Compliance check** evidence is collected from AWS Config or AWS Security Hub CSPM. <br />+  **User activity** evidence is collected from AWS CloudTrail.  <br />+  **Configuration data** evidence is collected from API calls to other AWS services. <br />+  **Manual** evidence is evidence that you add manually.  |
 | Data source | The data source where the evidence is collected from. |
 | Event name | The name of the event that invoked the evidence collection.  |
 | Event source | The service principal that identifies the relevant AWS service for the event. |
 | Resources | The number of resources that were assessed when collecting the evidence. |
-| Assessment report selection | Indicates whether the evidence is included in the assessment report.[See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-evidence-folders-detail.html) |
+| Assessment report selection | Indicates whether the evidence is included in the assessment report.+  To include evidence, select the evidence and choose **Add to assessment report**.  <br />+  To exclude evidence, select the evidence and choose **Remove from assessment report**.   |
 
 ## Next steps
 <a name="review-evidence-folders-detail-next-steps"></a>

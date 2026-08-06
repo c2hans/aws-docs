@@ -13,12 +13,6 @@ A layer map visual.
 **Note**
 In the following list, the required parameters are described first.
 
- ** DataSetIdentifier **   <a name="QS-Type-LayerMapVisual-DataSetIdentifier"></a>
-The dataset that is used to create the layer map visual. You can't create a visual without a dataset.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Required: Yes
-
  ** VisualId **   <a name="QS-Type-LayerMapVisual-VisualId"></a>
 The ID of the visual.
 Type: String
@@ -31,6 +25,12 @@ The configuration settings of the visual.
 Type: [GeospatialLayerMapConfiguration](API_GeospatialLayerMapConfiguration.md) object
 Required: No
 
+ ** DataSetIdentifier **   <a name="QS-Type-LayerMapVisual-DataSetIdentifier"></a>
+The dataset that is used to create the layer map visual. You can't create a visual without a dataset or a topic.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
+
  ** Subtitle **   <a name="QS-Type-LayerMapVisual-Subtitle"></a>
 The subtitle label options for a visual.
 Type: [VisualSubtitleLabelOptions](API_VisualSubtitleLabelOptions.md) object
@@ -39,6 +39,12 @@ Required: No
  ** Title **   <a name="QS-Type-LayerMapVisual-Title"></a>
 The title label options for a visual.
 Type: [VisualTitleLabelOptions](API_VisualTitleLabelOptions.md) object
+Required: No
+
+ ** TopicIdentifier **   <a name="QS-Type-LayerMapVisual-TopicIdentifier"></a>
+The topic that is used in the layer map visual. You can't create a visual without a dataset or a topic.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** VisualContentAltText **   <a name="QS-Type-LayerMapVisual-VisualContentAltText"></a>

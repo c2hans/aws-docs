@@ -24,5 +24,5 @@ Supported file formats include common document types: plain text and structured 
 | --- | --- |
 | Maximum number of documents | Up to 5 documents per request (applies to both direct upload and Amazon S3) |
 | Text-based document size | Each text document (e.g., .txt, .csv, .md, .html, .doc) must be ≤ 4.5 MB |
-| Media-based document size | For .pdf and .docx files, there is no individual file size limit, but:[See the AWS documentation website for more details](http://docs.aws.amazon.com/nova/latest/userguide/modalities-document.html) |
+| Media-based document size | For .pdf and .docx files, there is no individual file size limit, but:+  When using direct upload, the combined size of all media documents must be ≤ 25 MB <br />+  When using Amazon S3, the combined size of all media documents must be ≤ 2 GB  |
 | Unsupported PDF content | PDFs containing CMYK color profiles or SVG images are not supported |

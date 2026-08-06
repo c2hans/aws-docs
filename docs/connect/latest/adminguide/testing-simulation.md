@@ -9,7 +9,7 @@ Connect Customer Testing and Simulation capabilities enable you to simulate your
 
 After test execution, you can review a summary of the results, highlighting where the tests deviated from the expected path or outcome of the interaction. This allows you to identify areas where changes in your contact flow are needed to ensure the desired experience is achieved. These simulation capabilities empower you to rapidly validate changes to your workflows and confidently deploy new experiences, adapting to your ever-changing business needs.
 
-You can create these configurations through the user interface using the new visual simulation designer or via programmatic APIs. This section explains the different UI components that enable the use of Connect Customer simulation capabilities.
+You can create these configurations through the user interface using the new visual simulation designer or through programmatic APIs. This section explains the different UI components that enable the use of Connect Customer simulation capabilities.
 
 For information about creating a test, see [Create test cases](testing-simulation-test-cases.md). For information about running a test, see [Execute test cases](testing-simulation-execute-test-cases.md). The following simulation concepts describe the building blocks that a test uses.
 

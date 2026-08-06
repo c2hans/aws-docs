@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/cost-optimizer-for-amazon-wor
 
 Monitor Amazon WorkSpaces usage and optimize costs
 
-- **Version**: 2.9.7
-- **Released**: 7/2026
+- **Version**: 2.9.8
+- **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 5-15 mins
 - **Estimated cost**: [See details](/solutions/latest/cost-optimizer-for-workspaces/cost.html)

@@ -50,6 +50,10 @@ For more information about launching Amazon EC2 instances, see [Get started with
 ## Launching AL2023 using the SSM parameter and AWS CLI
 <a name="launch-via-aws-cli"></a>
 
+**Important**
+ Starting August 17, 2026, the default kernel for AL2023 will change from 6.1 to 6.18. New instances launched from the `al2023-ami-kernel-default` AMIs will boot kernel 6.18. Already-running instances are not affected and will keep the kernel they booted with. To stay on a specific kernel version, launch from version-specific AMIs such as `al2023-ami-kernel-6.1`.
+ For FIPS workloads, note that the default kernel might not always be the FIPS-validated kernel. If you require FIPS mode, see the [AL2023 FIPS FAQ on the AWS website](https://aws.amazon.com/linux/amazon-linux-2023/faqs/#al2023-fips-faq--3m3tsn).
+
 In the AWS CLI, you can use an AMI's SSM parameter value to launch a new instance of AL2023. More specifically, use one of the dynamic SSM parameter values from the following list, and add `/aws/service/ami-amazon-linux-latest/` before the SSM parameter value/. You use this to launch the instance in the AWS CLI.
 + `al2023-ami-kernel-default-arm64` for arm64 architecture
 + `al2023-ami-minimal-kernel-default-arm64` for arm64 architecture (minimal AMI)
@@ -132,17 +136,36 @@ Resources:
       ImageId: !Ref LatestAmiId
 ```
 
-Make sure to replace the AMI parameter at the end of the "Default" section, if needed. The following parameter values are available:
-+ `al2023-ami-kernel-6.1-arm64` for arm64 architecture
-+ `al2023-ami-minimal-kernel-6.1-arm64` for arm64 architecture (minimal AMI)
-+ `al2023-ami-kernel-6.1-x86_64` for x86\_64 architecture
-+ `al2023-ami-minimal-kernel-6.1-x86_64` for x86\_64 architecture (minimal AMI)
+Make sure to replace the AMI parameter at the end of the "Default" section, if needed.
 
 The following are dynamic kernel specifications. The default kernel version automatically changes with each major kernel version update.
 + `al2023-ami-kernel-default-arm64` for arm64 architecture
 + `al2023-ami-minimal-kernel-default-arm64` for arm64 architecture (minimal AMI)
 + `al2023-ami-kernel-default-x86_64` for x86\_64 architecture
 + `al2023-ami-minimal-kernel-default-x86_64` for x86\_64 architecture (minimal AMI)
+
+The following version-specific parameter values are also available:
+
+### For kernel 6.18
+<a name="cfn-kernel6.18-params"></a>
++ `al2023-ami-kernel-6.18-arm64` for arm64 architecture
++ `al2023-ami-minimal-kernel-6.18-arm64` for arm64 architecture (minimal AMI)
++ `al2023-ami-kernel-6.18-x86_64` for x86\_64 architecture
++ `al2023-ami-minimal-kernel-6.18-x86_64` for x86\_64 architecture (minimal AMI)
+
+### For kernel 6.12
+<a name="cfn-kernel6.12-params"></a>
++ `al2023-ami-kernel-6.12-arm64` for arm64 architecture
++ `al2023-ami-minimal-kernel-6.12-arm64` for arm64 architecture (minimal AMI)
++ `al2023-ami-kernel-6.12-x86_64` for x86\_64 architecture
++ `al2023-ami-minimal-kernel-6.12-x86_64` for x86\_64 architecture (minimal AMI)
+
+### For kernel 6.1
+<a name="cfn-kernel6.1-params"></a>
++ `al2023-ami-kernel-6.1-arm64` for arm64 architecture
++ `al2023-ami-minimal-kernel-6.1-arm64` for arm64 architecture (minimal AMI)
++ `al2023-ami-kernel-6.1-x86_64` for x86\_64 architecture
++ `al2023-ami-minimal-kernel-6.1-x86_64` for x86\_64 architecture (minimal AMI)
 
 ## Launching AL2023 using a specific AMI ID
 <a name="launch-by-ami-id"></a>

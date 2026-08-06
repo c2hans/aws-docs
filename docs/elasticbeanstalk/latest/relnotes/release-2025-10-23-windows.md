@@ -27,7 +27,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | **Windows security updates** | Applied October 2025 security updates for Windows.<br />This release includes updates from the monthly Microsoft *Patch Tuesday* Windows release. Windows security updates in this release are current up to the second Tuesday of the month.<br />For more details and a list of security updates, see the Microsoft [Security Update Guide](https://portal.msrc.microsoft.com/en-us/security-guidance). |
 | **Framework updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-10-23-windows.html)  |
 | **AWS component updates** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-10-23-windows.html)  |
-| **Additional changes with this release** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2025-10-23-windows.html)  |
+| **Additional changes with this release** |  +   Updated WebDeploy to version 4.0.  <br />+   This release includes a change that prevents instance hostnames from being reset to the default hostname during reboots when manually updated.    |
 | **.NET Core** | Updated .NET 9 to version 9.0.10.<br />Updated .NET 8 to version 8.0.21 |
 | **AMI** | Updated the base AMI to version 2025.10.15. |
 | **AWS SDK for .NET** | Updated the SDK to version 3.7.1144.0. |

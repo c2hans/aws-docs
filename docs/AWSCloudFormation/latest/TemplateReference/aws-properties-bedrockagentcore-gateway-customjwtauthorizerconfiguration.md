@@ -23,8 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[AllowedClients](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-allowedclients)" : {{[ String, ... ]}},
   "[AllowedScopes](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-allowedscopes)" : {{[ String, ... ]}},
   "[CustomClaims](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-customclaims)" : {{[ CustomClaimValidationType, ... ]}},
-  "[DiscoveryUrl](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-discoveryurl)" : {{String}},
-  "[PrivateEndpoint](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-privateendpoint)" : {{PrivateEndpoint}}
+  "[DiscoveryUrl](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-discoveryurl)" : {{String}}
 }
 ```
 
@@ -41,8 +40,6 @@ To declare this entity in your CloudFormation template, use the following syntax
   [CustomClaims](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-customclaims): {{
     - CustomClaimValidationType}}
   [DiscoveryUrl](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-discoveryurl): {{String}}
-  [PrivateEndpoint](#cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-privateendpoint): {{
-    PrivateEndpoint}}
 ```
 
 ## Properties
@@ -81,10 +78,4 @@ This URL is used to fetch OpenID Connect configuration or authorization server m
 *Required*: Yes
 *Type*: String
 *Pattern*: `^.+/\.well-known/openid-configuration$`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
-`PrivateEndpoint`  <a name="cfn-bedrockagentcore-gateway-customjwtauthorizerconfiguration-privateendpoint"></a>
-Property description not available.
-*Required*: No
-*Type*: [PrivateEndpoint](aws-properties-bedrockagentcore-gateway-privateendpoint.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference
 # CreateLookupTable
 <a name="API_CreateLookupTable"></a>
 
-Creates a lookup table by uploading CSV data. You can use lookup tables to enrich log data in CloudWatch Logs Insights queries with reference data such as user details, application names, or error descriptions.
+Creates a lookup table by uploading CSV data or from CloudWatch Logs query results. You can use lookup tables to enrich log data in CloudWatch Logs queries with reference data such as user details, application names, or error descriptions.
 
-The table name must be unique within your account and Region. The CSV content must include a header row with column names, use UTF-8 encoding, and not exceed 10 MB.
+The table name must be unique within your account and Region. You must specify either `tableBody` or `queryId`, but not both. If you use `tableBody`, the CSV content must include a header row with column names, use UTF-8 encoding, and not exceed 10 MB.
 
 ## Request Syntax
 <a name="API_CreateLookupTable_RequestSyntax"></a>
@@ -17,6 +17,7 @@ The table name must be unique within your account and Region. The CSV content mu
    "description": "{{string}}",
    "kmsKeyId": "{{string}}",
    "lookupTableName": "{{string}}",
+   "queryId": "{{string}}",
    "tableBody": "{{string}}",
    "tags": {
       "{{string}}" : "{{string}}"
@@ -50,11 +51,19 @@ Length Constraints: Minimum length of 1. Maximum length of 256.
 Pattern: `^[a-zA-Z0-9_]+$`
 Required: Yes
 
+ ** [queryId](#API_CreateLookupTable_RequestSyntax) **   <a name="CWL-CreateLookupTable-request-queryId"></a>
+The ID of a completed or cancelled CloudWatch Logs query whose results populate the lookup table. A cancelled query populates the table with the partial results that were available when the query was stopped.
+You must specify either `tableBody` or `queryId`, but not both.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 256.
+Required: No
+
  ** [tableBody](#API_CreateLookupTable_RequestSyntax) **   <a name="CWL-CreateLookupTable-request-tableBody"></a>
 The CSV content of the lookup table. The first row must be a header row with column names. The content must use UTF-8 encoding and not exceed 10 MB.
+You must specify either `tableBody` or `queryId`, but not both.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 10485760.
-Required: Yes
+Required: No
 
  ** [tags](#API_CreateLookupTable_RequestSyntax) **   <a name="CWL-CreateLookupTable-request-tags"></a>
 A list of key-value pairs to associate with the lookup table. You can associate as many as 50 tags with a lookup table. Tags can help you organize and categorize your resources.

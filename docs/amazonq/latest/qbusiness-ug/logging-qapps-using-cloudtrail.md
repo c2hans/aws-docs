@@ -55,8 +55,8 @@ The following table shows theAmazon Q Apps API operations logged to CloudTrail a
 
 | Data event type (console) | Amazon Q Apps resource types | Supported data events |
 | --- | --- | --- |
-| Amazon Q Apps | AWS::QApps::QApp | [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/logging-qapps-using-cloudtrail.html)  |
-| Amazon Q Business application | AWS::QBusiness::Application |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/logging-qapps-using-cloudtrail.html)  |
+| Amazon Q Apps | AWS::QApps::QApp | +  `CreateQApp` <br />+  `CopyQApp` <br />+  `UpdateQApp` <br />+  `DeleteQApp` <br />+  `AssociateQAppWithUser` <br />+  `DisassociateQAppFromUser` <br />+  `ImportDocumentToQApp` <br />+  `ImportDocumentToQAppSession` <br />+  `CreateLibraryItemReview` <br />+  `StartQAppSession` <br />+  `StopQAppSession` <br />+  `GetQApp` <br />+  `ListQApps` <br />+  `ImportDocument` <br />+  `GetQAppSession` <br />+  `UpdateQAppSession` <br />+  `AssociateLibraryItemReview` <br />+  `DisassociateLibraryItemReview`   |
+| Amazon Q Business application | AWS::QBusiness::Application |  +  `CreateSubscriptionToken` <br />+  `PredictProblemStatementFromConversation` <br />+  `PredictQAppFromProblemStatement` <br />+  `PredictQApp`   |
 
 You can log these API operations by configuring advanced event selectors to record data events for theAmazon Q Apps resource types: `AWS::QApps::QApp` and `AWS::QBusiness::Application`. To configure advanced event selectors, you can use either the CloudTrail console or the AWS CLI:
 + From the CloudTrail console, choose the **Data event type** for which you want to log data events. Additionally, you can filter on the `eventName` and `resources.ARN` fields by choosing a custom log selector template. For more information, see [Logging data events with the AWS Management Console](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html#logging-data-events-console) in the *AWS CloudTrail User Guide*.

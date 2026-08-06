@@ -38,7 +38,7 @@ The following table lists the AWS End User Messaging Social resource types for w
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| Social-Messaging Phone Number ID |  AWS::SocialMessaging::PhoneNumberId  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/social-messaging/latest/userguide/logging-using-cloudtrail.html)  |
+| Social-Messaging Phone Number ID |  AWS::SocialMessaging::PhoneNumberId  |  +  [https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_DeleteWhatsAppMessageMedia.html](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_DeleteWhatsAppMessageMedia.html) <br />+  [https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_GetWhatsAppMessageMedia.html](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_GetWhatsAppMessageMedia.html) <br />+  [https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_PostWhatsAppMessageMedia.html](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_PostWhatsAppMessageMedia.html) <br />+  [https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_SendWhatsAppMessage.html](https://docs.aws.amazon.com/social-messaging/latest/APIReference/API_SendWhatsAppMessage.html)   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

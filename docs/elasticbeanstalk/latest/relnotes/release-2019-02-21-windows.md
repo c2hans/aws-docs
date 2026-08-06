@@ -20,7 +20,7 @@ This release updates Windows Server v1 and earlier platform versions. To learn m
 | --- | --- |
 | **Windows security updates** | Applied February 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-02-21-windows.html) |
-| **C5d, M5d, R5, R5d, T3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-02-21-windows.html)  |
+| **C5d, M5d, R5, R5d, T3** |  + Asia Pacific (Mumbai) – ap-south-1  |
 
 ## New platform versions
 <a name="release-2019-02-21-windows.platforms"></a>

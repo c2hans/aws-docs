@@ -90,6 +90,7 @@ Examples:
 + [IAM policy to grant read access for a DynamoDB stream only (not for the table)](iam-policy-read-stream-only.md)
 + [IAM policy to allow an AWS Lambda function to access DynamoDB stream records](iam-policy-example-lamda-process-dynamodb-streams.md)
 + [IAM policy for read and write access to a DynamoDB Accelerator (DAX) cluster](iam-policy-example-read-write-dax-access.md)
++ [IAM policy to grant access to search a vector index](iam-policy-example-search-vectors.md)
 
  The *IAM User Guide*, includes [three additional DynamoDB examples](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html):
 + [Amazon DynamoDB: Allows Access to a Specific Table](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_dynamodb_specific-table.html)

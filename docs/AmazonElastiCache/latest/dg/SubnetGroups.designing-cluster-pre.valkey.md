@@ -190,7 +190,7 @@ You have the option to supply a different encryption key by choosing **Customer 
              + **AUTH Default User** – An authentication mechanism for Redis OSS server. For more information, see [AUTH](auth.md).
            + **AUTH** – An authentication mechanism for Redis OSS server. For more information, see [AUTH](auth.md).
 **Note**
-For Valkey and for Redis OSS versions between 3.2.6 onward, excluding version 3.2.10, Redis OSS AUTH is the sole option.
+RBAC is available on Valkey, and on Redis OSS version 6.0 and later. On earlier Redis OSS versions, AUTH is the sole option.
 
         1. For **Security groups**, choose the security groups that you want for this cluster. A *security group* acts as a firewall to control network access to your cluster. You can use the default security group for your VPC or create a new one.
 

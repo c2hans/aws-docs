@@ -14,7 +14,7 @@ AWS IoT SiteWise supports the following logical operators.
 | `NOT` | `NOT` expression | `TRUE` if an expression is false, and `FALSE` if an expression is true |
 | `IN` | x `IN` expression | `TRUE` if value in expression |
 | `BETWEEN` | `BETWEEN` a `AND` b | `TRUE` if value between upper and lower limit, and includes both limits |
-| `LIKE` | `LIKE` pattern | `TRUE` if value is in pattern<br />`LIKE` supports wildcards. See below for examples:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-supported-logical.html) |
+| `LIKE` | `LIKE` pattern | `TRUE` if value is in pattern<br />`LIKE` supports wildcards. See below for examples:+ `%` substitutes one or more characters in a string.<br />+ `_` substitutes one character in a string.<br />+ `ESCAPE` is used with a character to designate an escape character in the LIKE pattern. |
 
 Examples of all logical operators:
 
@@ -25,4 +25,4 @@ Examples of all logical operators:
 | NOT |  <pre>SELECT ma.asset_id AS a_id<br />   FROM asset AS ma<br />   WHERE (ma.asset_id NOT LIKE 'some%patterna%' escape 'a') AND ma.asset_id='abc'<br /></pre>  |
 | IN |  <pre>SELECT a.asset_name <br />   FROM asset AS a<br />   WHERE a.asset_name IN ('abc', 'pqr')<br /></pre>  |
 | BETWEEN |  <pre>SELECT asset_id, int_value, event_timestamp AS i_v <br />   FROM raw_time_series<br />   WHERE event_timestamp BETWEEN TIMESTAMP '2025-04-15 00:00:01' and TIMESTAMP '2025-05-15 00:00:01'  <br /></pre>  |
-| LIKE |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-supported-logical.html)  |
+| LIKE |  + `%` pattern: <pre>SELECT POWER(rw.int_value, 5) AS raised_value<br />   FROM raw_time_series AS rw<br />   WHERE rw.asset_id LIKE 'some%pattern%' AND rw.int_value > 30<br /></pre> <br />+ `_` pattern: <pre>SELECT asset_id, property_id<br />  FROM asset_property<br />  WHERE string_attribute_value LIKE 'Floor_'<br /></pre> <br />+ `ESCAPE` pattern: <pre>SELECT asset_id <br />  FROM asset <br />  WHERE asset_name LIKE 'MyAsset/_%' ESCAPE '/'<br /></pre>   |

@@ -22,7 +22,7 @@ The following table explains the names and descriptions of the data feed's colum
 | line\_item\_id | A unique identifier for a customer bill line item. Refund transactions have the same line item ID as their forward tax transactions. |
 | customer\_bill\_id | The unique identifier of the customer bill. Buyers can share this identifier with the seller to help identify and resolve tax calculation questions.  |
 | tax\_liable\_party | Either `AWS` or `Seller`. If the seller is the tax liable party, taxes are collected. If AWS is the tax liable party, sales tax is collected and remitted by AWS. For more information, see [AWS Marketplace Sellers & Tax Collection](https://aws.amazon.com/tax-help/marketplace).<br />If no taxes are collected, there is no value shown here. The seller needs to determine whether some taxes were collected for each invoice, as the seller is liable for tax collection.  |
-| transaction\_type\_code | The type of transaction. Possible values are as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-tax-item.html)<br />Refund transactions share the line item ID with their original forward transactions. |
+| transaction\_type\_code | The type of transaction. Possible values are as follows:+  `AWS` – A forward tax transaction  <br />+  `REFUND` – A full or partial refund <br />+  `TAXONLYREFUND` – A tax-only refund <br />Refund transactions share the line item ID with their original forward transactions. |
 | product\_id | A foreign key to the product.Can be used to join to the `Product` data feed on the `product_id` field. |
 | product\_tax\_code | A standard code to identify the tax properties for a product. Sellers choose the properties when creating or modifying the product. |
 | invoice\_date | The date the invoice was created.  |
@@ -48,7 +48,7 @@ The following table explains the names and descriptions of the data feed's colum
 | customer\_exemption\_certificate\_level | The jurisdiction level that supplied the exemption. |
 | customer\_exemption\_code | The code that specifies the exemption; for example, RESALE. |
 | customer\_exemption\_domain | The Amazon system that is used to capture the customer exemption information, if available. |
-| transaction\_reference\_id | An identifier that allows you to cross-reference data from the following reports:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-tax-item.html) |
+| transaction\_reference\_id | An identifier that allows you to cross-reference data from the following reports:+  [Billed revenue dashboard](billed-revenue-dashboard.md)  |
 | legal\_amount | The tax amount in the legal currency for the tax to be paid. |
 | legal\_currency | The legal currency for the tax to be paid. |
 | tax\_invoice\_id | The tax invoice identifier for the tax line in cases of dual invoicing. This field will be null for unified invoicing scenarios. |

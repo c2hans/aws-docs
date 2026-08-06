@@ -72,8 +72,8 @@ The code for this pattern is available in the GitHub [Monitor AWS KMS keys disab
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repository. | Clone the GitHub [Monitor AWS KMS keys disable and scheduled deletion](https://github.com/aws-samples/aws-kms-deletion-notification) repository to your local machine by running the following command:<br />`git clone https://github.com/aws-samples/aws-kms-deletion-notification` | AWS administrator, Cloud architect |
-| Update the template's parameters. | In a code editor, open the `Alerting-KMS-Events.yaml` CloudFormation template that you cloned from the repository, and then update the following parameters:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes.html) | AWS administrator, Cloud architect |
-| Deploy the CloudFormation template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes.html) | AWS administrator, Cloud architect |
+| Update the template's parameters. | In a code editor, open the `Alerting-KMS-Events.yaml` CloudFormation template that you cloned from the repository, and then update the following parameters:+ For `DestinationEmailAddress`, enter an active email address that you plan to use for receiving the SNS notification.<br />+ For `SNSTopicName`, enter a name for your SNS topic. | AWS administrator, Cloud architect |
+| Deploy the CloudFormation template. | 1. Sign in to the AWS Management Console and open the [CloudFormation console](https://console.aws.amazon.com/cloudformation/).<br />2. In the navigation pane, choose **Create stack**, and then choose **With new resources (standard)**.<br />3. On the **Identify resources** page, choose **Next**.<br />4. On the **Specify template** page, for **Template source**,** **select **Upload a template file**.<br />5. Choose** Choose file**, select the `Alerting-KMS-Events.yaml` file from your cloned GitHub repository, and then choose **Next**.<br />6. For **Stack name**, enter your stack name.<br />7. Choose **Submit**. | AWS administrator, Cloud architect |
 
 ### Confirm the subscription
 <a name="confirm-the-subscription"></a>
@@ -87,7 +87,7 @@ The code for this pattern is available in the GitHub [Monitor AWS KMS keys disab
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Disable AWS KMS keys. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes.html) | AWS administrator |
+| Disable AWS KMS keys. | 1. Sign in to the AWS Management Console and open the [AWS KMS console](https://console.aws.amazon.com/kms).<br />2. To change the Region, choose the name of the currently displayed Region, and then choose the Region to which you want to switch.<br />3. In the navigation pane, choose **Customer managed keys**.<br />4. Select the check box for the AWS KMS key that you want to enable or disable.<br />5. To disable the AWS KMS key, choose **Key actions**, and then choose **Disable**. | AWS administrator |
 | Validate the subscription. | Confirm that you received the Amazon SNS notification email. | AWS administrator |
 
 ### Clean up resources
@@ -95,7 +95,7 @@ The code for this pattern is available in the GitHub [Monitor AWS KMS keys disab
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the CloudFormation stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes.html) | AWS administrator |
+| Delete the CloudFormation stack. | 1. Sign in to the AWS Management Console and open the [CloudFormation console](https://console.aws.amazon.com/cloudformation).<br />2. In the navigation pane, choose **Stacks**.<br />3. Select that stack that you created previously, and then choose **Delete**. | AWS administrator |
 
 ## Related resources
 <a name="get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes-resources"></a>

@@ -23,7 +23,7 @@ For example, when using Amazon S3 as a repository for backups and AWS Backint Ag
 
 | Database | Guidance |
 | --- | --- |
-| SAP HANA |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-practice-15-4.html)  |
+| SAP HANA |  +   AWS Documentation: [SAP HANA on AWS – Storage Configuration for SAP HANA](https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-storage-config.html) <br />+   SAP Note: [1842096 - HANA Backup & Restore Performance](https://launchpad.support.sap.com/#/notes/1842096) [Requires SAP Portal Access]  <br />+   SAP Note: [2945518 - Performance issues encountered on HANA when a data backup is running](https://launchpad.support.sap.com/#/notes/2945518) [Requires SAP Portal Access]    |
 | SAP ASE | (Consult SAP or Vendor documentation for guidance) |
 | IBM Db2 | (Consult SAP or Vendor documentation for guidance) |
 | Oracle |  SAP Note: [2084077 - How to plan backup cycle for Oracle database](https://launchpad.support.sap.com/#/notes/2084077) [Requires SAP Portal Access]  |

@@ -690,33 +690,33 @@ The following table describes the changes in each version of the component.
 
 |  Version  |  Changes  |
 | --- | --- |
-| 2.3.15 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
+| 2.3.15 | **Bug fixes and improvements**<br />   Fixes an issue where the shadow manager could stop working after a power outage corrupted its local database.   Validates the integrity of the local database on startup and recreates the database when it detects corruption.    |
 | 2.3.14 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
-| 2.3.13 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
-| 2.3.12 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
+| 2.3.13 | **Bug fixes and improvements**<br />   Fixes an issue where local shadow updates would intermittently fail to sync to the cloud even when sync direction configuration allows it.   Minor bug fixes and improvements.    |
+| 2.3.12 | **Bug fixes and improvements**<br />   Fixes an issue where deployments were blocked when more than 1024 device shadows were configured.    |
 | 2.3.11 | Version updated for Greengrass nucleus version 2.15.0 release. |
 | 2.3.10 | Version updated for Greengrass nucleus version 2.14.0 release. |
 | 2.3.9 | Version updated for Greengrass nucleus version 2.13.0 release. |
-| 2.3.8 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
-| 2.3.7 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
-| 2.3.6 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
+| 2.3.8 | **Bug fixes and improvements**<br />   Fixes an issue where shadow manager creates a deadlock situation during the MQTT client connection.    |
+| 2.3.7 | **Bug fixes and improvements**<br />   Fixes an issue where shadow manager periodically logs a `NullPointerException` error during a shadow manager sync.    |
+| 2.3.6 | **Bug fixes and improvements**<br />   Fixes an issue where shadow properties that are deleted through AWS Cloud updates while the device is offline continue to exist in the local shadow after regaining connectivity.    |
 | 2.3.5 | Version updated for Greengrass nucleus version 2.12.0 release. |
-| 2.3.4 |  <a name="changelog-shadow-manager-2.3.4"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html)  |
+| 2.3.4 |  <a name="changelog-shadow-manager-2.3.4"></a>**Bug fixes and improvements**<br />   Adds support for null and empty shadow state documents.     |
 | 2.3.3 | Version updated for Greengrass nucleus version 2.11.0 release. |
-| 2.3.2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
-| 2.3.1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
-| 2.3.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
-| 2.2.4 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html) |
+| 2.3.2 | **Bug fixes and improvements**<br />   Fixes an issue where shadow manager enters the `BROKEN` state when the local shadow database is corrupted.   Version updated for Greengrass nucleus version 2.10.0 release.    |
+| 2.3.1 | **Bug fixes and improvements**<br />   Fixes a condition that may prevent cloud shadow updates from syncing.   Fixes an issue where changes to named shadow sync configuration applies to only one named shadow.    |
+| 2.3.0 | **Bug fixes and improvements**<br />   Fixes an issue that might prevent shadows from syncing when the Greengrass device private key is stored in a hardware security module.    |
+| 2.2.4 | **Bug fixes and improvements**<br />   Fixes an issue where the validation of the shadow's size wasn't consistent with the cloud when updating the local shadow document.   Fixes an issue where the shadow manager stops listening to configuration updates if a deployment performs a `RESET` on the configuration nodes.    |
 | 2.2.3 | Version updated for Greengrass nucleus version 2.9.0 release. |
 | 2.2.2 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.2.1 | Version updated for Greengrass nucleus version 2.7.0 release. |
-| 2.2.0 |  <a name="changelog-shadow-manager-2.2.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html)  |
-| 2.1.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html)  |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html)  |
+| 2.2.0 |  <a name="changelog-shadow-manager-2.2.0"></a>**New features**<br />   Adds support for the local shadow service over the local publish/subscribe interface. You can now communicate with the local publish/subscribe message broker on [shadow MQTT topics](https://docs.aws.amazon.com/iot/latest/developerguide/reserved-topics.html#reserved-topics-shadow) to get, update, and delete shadows on the core device. This feature enables you to connect client devices to the local shadow service by using the MQTT bridge to relay messages on shadow topics between client devices and the local publish/subscribe interface. <br />This feature requires v2.6.0 or later of the [Greengrass nucleus component](greengrass-nucleus-component.md). To connect client devices to the local shadow service, you must also use v2.2.0 or later of the [MQTT bridge component](mqtt-bridge-component.md).   Adds the `direction` option that you can configure to customize the direction to sync shadows between the local shadow service and the AWS Cloud. You can configure this option to reduce bandwidth and connections to the AWS Cloud.     |
+| 2.1.1 |  **Bug fixes and improvements**<br />   Fixes an issue where the maximum depth in the `desired` and `reported` sections of the JSON device shadow state document was 4 levels instead of 5 levels.   Version updated for Greengrass nucleus version 2.6.0 release.     |
+| 2.1.0 |  **New features**<br />   Adds support for periodic shadow synchronization intervals, so you can configure the core device to reduce bandwidth usage and charges.     |
 | 2.0.6 | This version contains bug fixes and improvements. |
 | 2.0.5 | Version updated for Greengrass nucleus version 2.5.0 release. |
-| 2.0.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html)  |
+| 2.0.4 |  **Bug fixes and improvements**<br />   Fixes an issue that caused shadow manager to delete newly created versions of any shadow that was previously deleted.    Updates the `DeleteThingShadow` IPC operation to increment the shadow version when called.     |
 | 2.0.3 | Version updated for Greengrass nucleus version 2.4.0 release. |
-| 2.0.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/shadow-manager-component.html)  |
+| 2.0.2 |  **Bug fixes and improvements**<br />   Fixed an issue that caused shadow manager to not recognize the `delta` property when syncing shadow states from AWS IoT Core.   Fixed an issue that sometimes caused sync requests for a shadow to be merged incorrectly.      |
 | 2.0.1 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.0 | Initial version. |

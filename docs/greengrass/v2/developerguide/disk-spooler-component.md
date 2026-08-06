@@ -169,8 +169,8 @@ The following table describes the changes in each version of the component.
 | 1.0.7 | Version updated for Greengrass nucleus version 2.16.0 release. |
 | 1.0.6 | Version updated for Greengrass nucleus version 2.15.0 release. |
 | 1.0.5 | Version updated for Greengrass nucleus version 2.14.0 release. |
-| 1.0.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/disk-spooler-component.html)  |
-| 1.0.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/disk-spooler-component.html)  |
-| 1.0.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/disk-spooler-component.html)  |
+| 1.0.4 |  **Bug fixes and improvements**<br /> General bug fixes.   |
+| 1.0.3 |  **Bug fixes and improvements**<br /> Improves performance by reusing database connections.   |
+| 1.0.2 |  **Bug fixes and improvements**<br /> Fixes an issue where the MQTT message format field isn't persisted in certain cases.   |
 | 1.0.1 | Version updated for Greengrass nucleus version 2.12.0 release. |
 | 1.0.0 | Initial version. |

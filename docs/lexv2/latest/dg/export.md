@@ -32,13 +32,13 @@ For an example of exporting a bot using the console, see [Exporting a Lex V2 bot
 
 To export bots, bot locales, and custom vocabularies, the user running the export must have the following IAM permissions.
 
-| API |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html) | Resource |
+| API |  +  Required IAM actions   | Resource |
 | --- | --- | --- |
-| [CreateExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateExport.html) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html) | Bot |
-| [UpdateExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateExport.html) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html) | Bot |
-| [DescribeExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeExport.html) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html) | Bot |
-| [DescribeExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeExport.html) for custom vocabularies | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html)  | bot |
-| [DeleteExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteExport.html) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html) | Bot |
-| [ListExports](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListExports.html) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/export.html) | \* |
+| [CreateExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_CreateExport.html) | +  CreateExport  | Bot |
+| [UpdateExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_UpdateExport.html) | +  UpdateExport  | Bot |
+| [DescribeExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeExport.html) | +  DescribeExport <br />+  DescribeBot <br />+  DescribeCustomVocabulary <br />+  DescribeLocale <br />+  DescribeIntent <br />+  DescribeSlot <br />+  DescribeSlotType <br />+  ListLocale <br />+  ListIntent <br />+  ListSlot <br />+  ListSlotType  | Bot |
+| [DescribeExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeExport.html) for custom vocabularies | +  DescribeExport <br />+  DescribeCustomVocabulary   | bot |
+| [DeleteExport](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DeleteExport.html) | +  DeleteExport  | Bot |
+| [ListExports](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_ListExports.html) | +  ListExports  | \* |
 
 For an example IAM policy, see [Allow a user to export bots and bot locales](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-export).

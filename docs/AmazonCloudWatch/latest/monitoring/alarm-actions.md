@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm
 
 You can specify what actions an alarm takes when it changes state between the OK, ALARM, and INSUFFICIENT\_DATA states.
 
-Most actions can be set for the transition into each of the three states. Except for Auto Scaling actions, the actions happen only on state transitions, and are not performed again if the condition persists for hours or days.
+Most actions can be set for the transition into each of the 3 states. Except for Auto Scaling actions, the actions happen only on state transitions, and are not performed again if the condition persists for hours or days.
 
 The following are supported as alarm actions:
 + Notify one or more subscribers by using an Amazon Simple Notification Service topic. Subscribers can be applications as well as persons.

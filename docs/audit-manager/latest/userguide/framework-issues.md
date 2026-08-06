@@ -186,5 +186,5 @@ In the recipient’s AWS environment, Audit Manager doesn’t detect the rule up
 
 | Your role | Scenario | Recommended action |
 | --- | --- | --- |
-| Sender |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/framework-issues.html)  | Contact the recipient to let them know about the update. That way, they can make the same update and stay in sync with the latest rule definition. |
-| Recipient |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/framework-issues.html)  | Make the corresponding rule update in your own instance of AWS Config. |
+| Sender |  +  You shared a framework that uses custom rules as a data source mapping. <br />+  After you shared the framework, you updated or deleted one of those rules in AWS Config.   | Contact the recipient to let them know about the update. That way, they can make the same update and stay in sync with the latest rule definition. |
+| Recipient |  +  You accepted a shared framework that uses custom rules as a data source mapping. <br />+  After you recreated the custom rules in your instance of AWS Config, the sender updated or deleted one of those rules.   | Make the corresponding rule update in your own instance of AWS Config. |

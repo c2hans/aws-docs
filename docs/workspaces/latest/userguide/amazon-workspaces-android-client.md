@@ -208,47 +208,47 @@ The following table describes the changes to each release of the Android client 
 
 | Release | Date | Changes |
 | --- | --- | --- |
-| 5.1.3 | April 9, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 5.1.2 | February 5, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 5.1.1 | April 2, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 5.1.3 | April 9, 2026 |  +  Bug fixes and enhancements.    |
+| 5.1.2 | February 5, 2026 |  +  Added support for connecting to your WorkSpace via IPv6. <br />+  Updated the Android SDK and APIs to target Android 15.  <br />+  Updated the PCoIP SDK to add compatibility with Android 15.  <br />+  Updated the .NET Framework to .NET 9.  <br />+  Bug fixes and enhancements.    |
+| 5.1.1 | April 2, 2025 |  +  Updated PCoIP SDK for Android. <br />+  Updated the .NET SDK for Android.  <br />+  Bug fixes and enhancements.    |
 | 5.0.1 | November 6, 2024 |  Bug fixes and enhancements.  |
-| 5.0.0 | February 26, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 4.0.6 | August 18, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 4.0.5 | May 5, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 5.0.0 | February 26, 2024 |  +  Added support for the Israel (Tel Aviv) Region. <br />+  Updated PCoIP SDK for Android. <br />+  Added accessibility improvements, including screen reader support and keyboard-only navigation enhancement.    |
+| 4.0.6 | August 18, 2023 |  +  Improved client custom branding by storing assets in the same AWS Regions as provisioned WorkSpaces. <br />+  Resolved the Spanish keyboard mapping issues.   |
+| 4.0.5 | May 5, 2023 |  +  Added connection support to WorkSpaces provisioned in the AWS GovCloud (US-East) Region <br />+  Added accessibility enhancements   |
 | 4.0.4 | December 15, 2022 | Updated the .NET framework for the WorkSpaces Android client |
 | 4.0.3 | October 20, 2022 | Upgraded target Android API level to continue supporting 64-bit Android 12 and later versions |
 | 4.0.2 | August 3, 2022 | Resolved an issue that the touchpad scrolling was too sensitive within WorkSpaces on Chromebooks |
-| 4.0.1 | May 12, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 3.0.4 | October 14, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 4.0.1 | May 12, 2022 |  +  Updated PCoIP SDK for the WorkSpaces Android client <br />+  Updated WSP SDK for the WorkSpaces Android client   |
+| 3.0.4 | October 14, 2021 |  +  Resolves crashing issues related to invalid cursor data <br />+  Bug fixes   |
 | 3.0.2 | July 13, 2021 | Minor enhancements and fixes |
-| 3.0.1 | June 30, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.4.21 | May 20, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  Because the 32-bit PCoIP SDK for Android has reached the end of support, Version 2.4.21 is the final release of Amazon WorkSpaces Android client, which supports both 32-bit and 64-bit for Android 9 and above. Next release onwards, Amazon WorkSpaces Android client will only support 64-bit.   |
-| 2.4.20 | March 25, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 3.0.1 | June 30, 2021 |  +  Adds support for self-service WorkSpace management capabilities. <br />+  Adds support for certificate-based trusted devices.   |
+| 2.4.21 | May 20, 2021 |  +  Adds 2800x1752 and High DPI Mode in resolution options <br />+  Addresses a crash scenario related to cursor rendering <br />+  Minor enhancements and fixes   Because the 32-bit PCoIP SDK for Android has reached the end of support, Version 2.4.21 is the final release of Amazon WorkSpaces Android client, which supports both 32-bit and 64-bit for Android 9 and above. Next release onwards, Amazon WorkSpaces Android client will only support 64-bit.   |
+| 2.4.20 | March 25, 2021 |  +  Addresses a crash issue at login <br />+  Minor enhancements and fixes   |
 | 2.4.19 | February 22, 2021 | Enhanced support for resolution 2560x1440 |
-| 2.4.18 | October 19, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.18 | October 19, 2020 |  +  Adds support for certain Chromebook models that were previously not supported  <br />+  Fixes multiple key-mapping issues pertaining to English, French, and Japanese keyboard layouts <br />+  Adds support for faster reconnection to WorkSpaces on Chromebook devices when resuming from sleep mode   |
 | 2.4.17 | February 24, 2020 | Minor enhancements and fixes |
 | 2.4.16 | January 30, 2020 | Added support for versions above 64-bit Android 9 |
-| 2.4.15 | June 24, 2019 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.4.14 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.15 | June 24, 2019 |  +  Adds support for mouse cursor contextual shape changes <br />+  This is the last version that supports versions below Android 8   |
+| 2.4.14 |  |  +  Adds support for the Right alt key mapping with Japanese keyboard layouts <br />+  Resolves an occasional issue with blue overlay   |
 | 2.4.13 |  | Minor fixes |
-| 2.4.12 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.4.11 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.12 |  |  +  Resolves an issue that makes the login page bounce on a few devices <br />+  Minor fixes   |
+| 2.4.11 |  |  +  Resolves an issue with content being selected with two-finger scrolling <br />+  Minor fixes   |
 | 2.4.10 |  | Improves support for Japanese keyboard layouts |
 | 2.4.9 |  | Adds support for Samsung Galaxy Note 9 |
-| 2.4.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.7 |  |  +  Improves clipboard redirection <br />+  Improves DeX startup   |
 | 2.4.6 |  | Adds support for uniform resource identifiers (URIs), which enable login orchestration |
-| 2.4.5 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.5 |  |  +  Adds support for time zone redirection for more Regions: America/Indianapolis America/Indiana/Marengo America/Indiana/Vevay America/Indiana/Indianapolis <br />+  Includes text changes to the Login page user interface   |
 | 2.4.4 |  | Minor improvements to session provision handling |
-| 2.4.2 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.4.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.3.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.2 |  |  +  Minor fixes <br />+  Improves copy and paste   |
+| 2.4.0 |  |  +  New logo <br />+  Improves the user interface and stability   |
+| 2.3.4 |  |  +  Addresses a display overlay issue on Android Oreo when a mouse is connected to the device <br />+  Adds support for Samsung S8/S8\+ screen configurations <br />+  Resolves minor issues   |
 | 2.3.3 |  | Localization enhancements |
-| 2.2.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.1.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.0.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 1.0.15 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 1.0.11 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 1.0.10 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.2.0 |  |  +  Adds support for the German language <br />+  Improves the Japanese user interface <br />+  Improves stability   |
+| 2.1.0 |  |  +  Adds support for the following new WorkSpace states: STOPPING and STOPPED <br />+  Adds support for audio in, enabling you to make calls or attend web conferences <br />+  Resolves minor issues and improves stability   |
+| 2.0.0 |  |  +  Adds support for saving registration codes, enabling you to switch WorkSpaces without re-entering the registration codes <br />+  Improves usability and stability   |
+| 1.0.15 |  |  +  Adds advanced connection health checks, enabling you to troubleshoot connection issues <br />+  Improves stability   |
+| 1.0.11 |  |  +  Improves the user interface and login experience <br />+  Adds support for choosing the screen resolution <br />+  Adds support for choosing the scrolling direction   |
+| 1.0.10 |  |  +  Improves the login experience <br />+  Adds time zone synchronization between the local device and the WorkSpace   |
 | 1.0.9 |  | Improves the login experience |
 | 1.0 |  | Initial release |
 
@@ -267,15 +267,15 @@ Version 2.4.13 is the final release of the Amazon WorkSpaces Chromebook client a
 | 2.4.11 |  | Minor bug fixes |
 | 2.4.10 |  | Improves support for Japanese keyboard layouts |
 | 2.4.8 |  | Improves support for UK keyboards |
-| 2.4.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.4.6 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.4.5 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.7 |  |  +  Improves clipboard redirection <br />+  Adds support for tap-to-click for trackpads <br />+  Improves device resolution   |
+| 2.4.6 |  |  +  Resolves an issue that causes screens to freeze <br />+  Resolves trackpad issues   |
+| 2.4.5 |  |  +  Adds support for time zone redirection for more Regions: America/Indianapolis America/Indiana/Marengo America/Indiana/Vevay America/Indiana/Indianapolis <br />+  Includes text changes to the Login page user interface   |
 | 2.4.4 |  | Minor improvements to session provision handling |
 | 2.4.2 |  | Resolves a bug with Caps Lock |
-| 2.4.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.4.0 |  |  +  New logo <br />+  Improves the user interface and stability   |
 | 2.2.7 |  | Resolves minor issues |
 | 2.2.4 |  | Localization enhancements |
-| 2.2.1 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.1.3 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
-| 2.0.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-android-client.html)  |
+| 2.2.1 |  |  +  Adds support for the German language <br />+  Improves the Japanese user interface <br />+  Improves stability   |
+| 2.1.3 |  |  +  Adds support for the following new WorkSpace states: STOPPING and STOPPED <br />+  Adds support for audio in, enabling you to make calls or attend web conferences <br />+  Resolves minor bugs and improves stability   |
+| 2.0.0 |  |  +  Adds support for saving registration codes, enabling you to switch WorkSpaces without re-entering the registration codes <br />+  Improves usability and stability   |
 | 1.0 |  | Initial release |

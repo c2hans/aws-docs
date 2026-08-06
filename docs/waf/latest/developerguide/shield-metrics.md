@@ -30,7 +30,7 @@ While no events are underway, Shield Advanced reports metrics once a day, at a t
 **Alarm recommendations**
 We recommend that you create alarms to notify you of circumstances that require attention. As a starting point, you could create an alarm for each protected resource that reports when the `DDoSDetected` detection metric is non zero. A non-zero value in this metric doesn't necessarily imply that a DDoS attack is underway, but we recommend looking closer at the resource status when the metric is in this state.
 
-For request floods, we recommend that you create alarms for composite checks that also consider factors such as application health and web request volume. You may choose to alarm on the other three metrics that report on the volume of traffic for various attack vector dimensions. By considering the capacity of your application and alarming when traffic is approaching your application limitations, you can create a set of rules that notify you as needed, without too much unwanted noise.
+For request floods, we recommend that you create alarms for composite checks that also consider factors such as application health and web request volume. You may choose to alarm on the other 3 metrics that report on the volume of traffic for various attack vector dimensions. By considering the capacity of your application and alarming when traffic is approaching your application limitations, you can create a set of rules that notify you as needed, without too much unwanted noise.
 
 **Topics**
 + [Detection metrics](#ddos-metrics-detection)

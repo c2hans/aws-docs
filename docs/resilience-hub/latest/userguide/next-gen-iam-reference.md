@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/resilience-hub/latest/userguide/next-gen
 # IAM roles and permissions reference
 <a name="next-gen-iam-reference"></a>
 
-**IAM Role for assessment**
+**IAM role for assessment and resilience testing**
 
-In order to run an assessment, the next generation of Resilience Hub needs to be able to assume an IAM role with a number of read-only permissions to discover and understand configuration of your AWS resources.
+To run an assessment or a resilience test, the next generation of Resilience Hub needs to be able to assume an IAM role. Assessments require read-only permissions to discover and understand the configuration of your AWS resources. Resilience testing additionally requires permissions to start and manage AWS Fault Injection Service (AWS FIS) experiments on your behalf.
 
 You can create an IAM role in the AWS IAM console. Choose **Custom trust policy** and use a trust policy like this:
 
@@ -27,14 +27,19 @@ You can create an IAM role in the AWS IAM console. Choose **Custom trust policy*
 }
 ```
 
-For permissions, choose the `AWSResilienceHubV2AssessmentExecutionPolicy` managed policy. This policy grants read-only access to AWS services for resilience discovery, assessment, and management.
+For permissions, attach the `AWSResilienceHubV2AssessmentExecutionPolicy` managed policy. This policy grants read-only access to AWS services for resilience discovery, assessment, and management.
 
 **Note**
-The `AWSResilienceHubV2AssessmentExecutionPolicy` replaces the previous `AWSResilienceHubAsssessmentExecutionPolicy` for use with Next generation Resilience Hub. For details about the permissions included in this policy, see [AWSResilienceHubV2AssessmentExecutionPolicy](next-gen-security-iam-awsmanpol.md#next-gen-security_iam_aws-v2-assessment-policy).
+The `AWSResilienceHubV2AssessmentExecutionPolicy` replaces the previous `AWSResilienceHubAsssessmentExecutionPolicy` for use with the next generation of Resilience Hub. For details about the permissions included in this policy, see [AWSResilienceHubV2AssessmentExecutionPolicy](next-gen-security-iam-awsmanpol.md#next-gen-security_iam_aws-v2-assessment-policy).
+
+If you use resilience testing, also attach the `AWSResilienceHubResilienceTestingPolicy` managed policy. This policy grants Resilience Hub the AWS FIS permissions needed to start and manage experiments on your behalf.
+
+**Note**
+If the managed policy is not available in your account, create an inline policy with the same permissions. For the policy contents, see [AWSResilienceHubResilienceTestingPolicy](next-gen-security-iam-awsmanpol.md#next-gen-security_iam_aws-resilience-testing-policy).
 
 **IAM Service-Linked Role**
 
-Next generation Resilience Hub automatically creates a Service-Linked Role with the `AWSResilienceHubServiceRolePolicy` managed policy. This role is required only for AWS Organizations support.
+Next generation Resilience Hub automatically creates a Service-Linked Role with the `AWSResilienceHubServiceRolePolicy` managed policy.
 
 **Terraform state file access permissions**
 
@@ -57,6 +62,10 @@ If you are including Terraform state files into your Next generation Resilience 
   ]
 }
 ```
+
+**IAM execution role for resilience testing**
+
+Resilience tests run under an IAM role that AWS Fault Injection Service assumes to inject faults into your resources. The required permissions depend on the test template, and single-account and multi-account tests use different role structures. For the trust and permissions policies for each test, see [IAM execution roles for resilience testing](next-gen-resilience-testing-iam.md).
 
 **Amazon EKS Permissions**
 

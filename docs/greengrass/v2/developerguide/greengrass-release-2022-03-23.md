@@ -23,5 +23,5 @@ The following table lists AWS-provided components that include new and updated f
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.5.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.5.4"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2022-03-23.html) |
-| Lambda launcher | Version 2.0.10 of the [Lambda launcher](lambda-launcher-component.md) component is available.<a name="changelog-lambda-launcher-2.0.10"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2022-03-23.html) |
+| Greengrass nucleus | Version 2.5.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.5.4"></a>**Bug fixes and improvements**<br />   General bug fixes and improvements.    |
+| Lambda launcher | Version 2.0.10 of the [Lambda launcher](lambda-launcher-component.md) component is available.<a name="changelog-lambda-launcher-2.0.10"></a>**Bug fixes and improvements**<br />   General bug fixes and improvements.    |

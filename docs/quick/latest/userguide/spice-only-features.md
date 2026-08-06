@@ -11,13 +11,13 @@ Amazon Quick Sight's SPICE (Super-fast, Parallel, In-memory Calculation Engine) 
 
 | Steps | Other capabilities |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/spice-only-features.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/spice-only-features.html)  |
+|  + Append<br />+ Aggregate<br />+ Pivot<br />+ Unpivot  |  + Divergence  |
 
 **Features available in both SPICE and DirectQuery**
 
 | Steps | Other capabilities |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/spice-only-features.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/spice-only-features.html)  |
+|  + Input<br />+ Add Calculated Columns<br />+ Change Data Type<br />+ Rename Columns<br />+ Select Columns<br />+ Filter<br />+ Join  |  + Composite Datasets  |
 
 **Best practices**
 + Use SPICE for workflows requiring SPICE-only features.

@@ -40,8 +40,8 @@ This pattern describes how you can resolve these errors by turning off the Windo
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Turn off SNP features at the OS level. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/resolve-connection-errors-after-migrating-microsoft-sql-server-to-the-aws-cloud.html) | AWS administrator, AWS systems administrator, Migration engineer, Cloud administrator |
-| Turn off SNP features at the elastic network interface level. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/resolve-connection-errors-after-migrating-microsoft-sql-server-to-the-aws-cloud.html) | AWS administrator, Cloud administrator, AWS systems administrator |
+| Turn off SNP features at the OS level. | 1. Sign in to Windows Server and open a command prompt as an administrator.<br />2. Run the `netsh int tcp show global` command.<br />3. In the output, check if either `Receive-Side Scaling` or `Chimney Offload` is in `enabled` mode. If either of them is `enabled`, run the following commands:`netsh int tcp set global chimney=disabled``netsh int tcp set global rss=disabled` | AWS administrator, AWS systems administrator, Migration engineer, Cloud administrator |
+| Turn off SNP features at the elastic network interface level. | 1. Choose **Start**, enter `ncpa.cpl`, and then press **Enter**. <br />2. Right-click **Elastic Network Adapter**.<br />3. In the popup menu, choose **Properties**.<br />4. In the **Ethernet Adapter Properties** window, choose **Configure**.<br />5. In the **Amazon Elastic Network Adapter Properties** popup window, choose the **Advanced** tab.<br />6. In the **Property** section, turn off all offloads and RSS. | AWS administrator, Cloud administrator, AWS systems administrator |
 
 ## Related resources
 <a name="resolve-connection-errors-after-migrating-microsoft-sql-server-to-the-aws-cloud-resources"></a>

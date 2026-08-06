@@ -11,10 +11,9 @@ You can build complete Lex bots in the Connect Customer admin website without ev
 
 1. Log in to the Connect Customer admin website at https://{{instance name}}.my.connect.aws/. Use an Admin account or an account that has **Channels and Flows** - **Bots** - **Create** permission in its security profile.
 
-1. In the left navigation menu, choose **Routing**, **Flows**.
+1. In the navigation pane, choose **Conversational AI**, and then choose **Bots**.
 
-1. On the **Flows** page, choose **Bots**, **Create bot**.
-![The Flows page, the Bots tab, the Create bot button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/flows-bots-tab.png)
+1. On the **Bots** page, choose **Create bot**.
 
 1. In the **Details** dialog box, provide the following information:
    + **Bot name**: Enter a unique name for the bot.

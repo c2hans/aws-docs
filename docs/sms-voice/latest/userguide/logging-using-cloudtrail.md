@@ -38,8 +38,8 @@ The following table lists the AWS End User Messaging SMS resource types for whic
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| SMS Voice origination identity |  AWS::SMSVoice::OriginationIdentity  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sms-voice/latest/userguide/logging-using-cloudtrail.html)  |
-| SMS Voice Notify configuration |  AWS::SMSVoice::NotifyConfiguration  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sms-voice/latest/userguide/logging-using-cloudtrail.html)  |
+| SMS Voice origination identity |  AWS::SMSVoice::OriginationIdentity  |  +  [https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html) <br />+  [https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendTextMessage.html) <br />+  [https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html](https://docs.aws.amazon.com/pinpoint/latest/apireference_smsvoicev2/API_SendMediaMessage.html)   |
+| SMS Voice Notify configuration |  AWS::SMSVoice::NotifyConfiguration  |  +  SendNotifyTextMessage <br />+  SendNotifyVoiceMessage   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

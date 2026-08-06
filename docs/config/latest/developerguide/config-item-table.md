@@ -13,10 +13,10 @@ A configuration item consists of the following components.
 
 | Component | Description | Contains |
 | --- | --- | --- |
-| Metadata | Information about this configuration item | [See the AWS documentation website for more details](http://docs.aws.amazon.com/config/latest/developerguide/config-item-table.html) |
-| Attributes | Resource attributes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/config/latest/developerguide/config-item-table.html) |
+| Metadata | Information about this configuration item | +  Version ID <br />+  Time when the configuration item was captured <br />+  Status of the configuration item indicating whether the item was captured successfully  <br />+  State ID indicating the ordering of the configuration items of a resource  |
+| Attributes | Resource attributes | +  Resource ID <br />+  List of key–value tags for this resource <br />+  Resource type (see [Supported Resource Types for AWS Config](resource-config-reference.md)) <br />+  Amazon Resource Name (ARN) <br />+  Availability Zone that contains this resource, if applicable <br />+  Time the resource was created  |
 | Relationships | How the resource is related to other resources associated with the account | Description of the relationship, such as Amazon EBS volume vol-1234567 is attached to an Amazon EC2 instance i-a1b2c3d4 |
-| Current configuration | Information returned through a call to the Describe or List API of the resource | For example, DescribeVolumes API returns the following information about the volume: [See the AWS documentation website for more details](http://docs.aws.amazon.com/config/latest/developerguide/config-item-table.html) |
+| Current configuration | Information returned through a call to the Describe or List API of the resource | For example, DescribeVolumes API returns the following information about the volume: +  Availability Zone the volume is in <br />+  Time the volume was attached <br />+  ID of the EC2 instance it is attached to <br />+  Current status of the volume <br />+  State of DeleteOnTermination flag <br />+  Device the volume is attached to <br />+  Type of volume, such as `gp2, io1,` or `standard`  |
 
 **Notes**
 

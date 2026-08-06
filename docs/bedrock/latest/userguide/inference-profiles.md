@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profi
 *Inference profiles* are a resource in Amazon Bedrock that define a model and one or more Regions to which the inference profile can route model invocation requests. You can use inference profiles for the following tasks:
 + **Track usage metrics** – Set up CloudWatch logs and submit model invocation requests with an application inference profile to collect usage metrics for model invocation. You can examine these metrics when you view information about the inference profile and use them to inform your decisions. For more information about how to set up CloudWatch logs, see [Monitor model invocation using CloudWatch Logs and Amazon S3](model-invocation-logging.md).
 + **Use tags to monitor costs** – Attach tags to an application inference profile to track costs when you submit on-demand model invocation requests. For more information on how to use tags for cost allocation, see [Organizing and tracking costs using AWS cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the AWS Billing user guide.
-+ **Cross-Region inference** – Increase your throughput by using an inference profile that includes multiple AWS Regions. The inference profile will distribute model invocation requests across these Regions to increase throughput and performance. For more information about cross-Region inference, see [Increase throughput with cross-Region inference](cross-region-inference.md).
++ **Cross-Region inference** – Use an inference profile that includes multiple AWS Regions. The inference profile distributes model invocation requests across these Regions. For more information about cross-Region inference, see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).
 
 Amazon Bedrock offers the following types of inference profiles:
 + **Cross Region (system-defined) inference profiles** – Inference profiles that are predefined in Amazon Bedrock and include multiple Regions to which requests for a model can be routed.
@@ -25,7 +25,7 @@ You can use inference profiles with the following features to route requests to 
 
 The price for using an inference profile is calculated based on the price of the model in the Region from which you call the inference profile. For information about pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/).
 
-For more details about the throughput that a cross-Region inference profile can offer, see [Increase throughput with cross-Region inference](cross-region-inference.md).
+For more details about cross-Region inference profiles, see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).
 
 **Topics**
 + [Supported Regions and models for inference profiles](inference-profiles-support.md)

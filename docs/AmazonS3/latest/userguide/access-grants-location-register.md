@@ -70,7 +70,7 @@ Before you can register a specific bucket or prefix, make sure that you do the f
 + Create an IAM policy to attach Amazon S3 permissions to the IAM role that you created. See the following example `iam-policy.json` file and replace the `{{user input placeholders}}` with your own information.
 **Note**
 If you use server-side encryption with AWS Key Management Service (AWS KMS) keys to encrypt your data, the following example includes the necessary AWS KMS permissions for the IAM role in the policy. If you do not use this feature, you can remove these permissions from your IAM policy.
-You can restrict the IAM role to access S3 data only if the credentials are vended by S3 Access Grants. This example shows you how to add a `Condition` statement for a specific S3 Access Grants instance. To use this `Condition`, replace the S3 Access Grants instance ARN in the `Condition` statement with your S3 Access Grants instance ARN, which has the format: `arn:aws:s3:{{region}}:{{accountId}}:access-grants/default`
+You can restrict the IAM role to access S3 data only if the credentials are vended by S3 Access Grants. This example shows you how to add a `Condition` statement for a specific S3 Access Grants instance. To use this `Condition`, replace the S3 Access Grants instance ARN in the `Condition` statement with your S3 Access Grants instance ARN. This has the format: `arn:aws:s3:{{region}}:{{accountId}}:access-grants/default`
 
   *iam-policy.json*
 

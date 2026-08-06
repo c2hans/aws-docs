@@ -96,7 +96,7 @@ The Metrics utility in Powertools for AWS Lambda handles EMF formatting automati
 
 **Use structured JSON logging for better observability.** Structured logging makes it easier to search, filter, and analyze your function's logs. Consider using the Logger utility from Powertools for AWS Lambda to automatically format logs in JSON. For more information, see [Python](https://docs.aws.amazon.com/powertools/python/latest/core/logger/), [TypeScript](https://docs.aws.amazon.com/powertools/typescript/latest/features/logger/), [Java](https://docs.aws.amazon.com/powertools/java/latest/core/logging/), or [.NET](https://docs.aws.amazon.com/powertools/dotnet/core/logging/) Logger utilities in the Powertools for AWS Lambda documentation.
 
-**Use your logging library and [AWS Lambda Metrics and Dimensions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/lam-metricscollected.html)** to catch app errors (e.g. ERR, ERROR, WARNING, etc.)
+**Use your logging library and [AWS Lambda Metrics and Dimensions](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/lam-metricscollected.html)** to catch app errors (such as ERR, ERROR, and WARNING).
 
 **Use [AWS Cost Anomaly Detection](https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html)** to detect unusual activity on your account. Cost Anomaly Detection uses machine learning to continuously monitor your cost and usage while minimizing false positive alerts. Cost Anomaly Detection uses data from AWS Cost Explorer, which has a delay of up to 24 hours.
 

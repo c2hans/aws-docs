@@ -22,7 +22,7 @@ The following dimensions are used to refine the API usage metrics that are publi
 | --- | --- |
 | `Service` | The name of the AWS service containing the resource. For Amazon ECR usage metrics, the value for this dimension is `ECR`. |
 | `Type` | The type of entity that is being reported. Currently, the only valid value for Amazon ECR API usage metrics is `API`. |
-| `Resource` | The type of resource that is running. Currently, Amazon ECR returns information on your API usage for the following API actions.[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECR/latest/userguide/monitoring-usage.html) |
+| `Resource` | The type of resource that is running. Currently, Amazon ECR returns information on your API usage for the following API actions.+  `GetAuthorizationToken` <br />+  `BatchCheckLayerAvailability` <br />+  `InitiateLayerUpload` <br />+  `UploadLayerPart` <br />+  `CompleteLayerUpload` <br />+  `PutImage` <br />+  `BatchGetImage` <br />+  `GetDownloadUrlForLayer`  |
 |  Class  | The class of resource being tracked. Currently, Amazon ECR does not use the class dimension. |
 
 The following dimensions are used to refine the Resource usage metrics that are published by Amazon ECR.
@@ -31,5 +31,5 @@ The following dimensions are used to refine the Resource usage metrics that are 
 | --- | --- |
 | `Service` | The name of the AWS service containing the resource. For Amazon ECR usage metrics, the value for this dimension is `ECR`. |
 | `Type` | The type of entity that is being reported. Currently, the only valid value for Amazon ECR resource usage metrics is `RESOURCE`. |
-| `Resource` | The type of resource that is running. Currently, Amazon ECR returns information on your resource usage for the following metrics.[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECR/latest/userguide/monitoring-usage.html) |
+| `Resource` | The type of resource that is running. Currently, Amazon ECR returns information on your resource usage for the following metrics.+  `RepositoryCount` <br />+  `ImagesPerRepositoryCount`  |
 | `ResourceId` | The identifier for the resource that incurred the usage. Currently, ResourceId is only relevant to `ImagesPerRepositoryCount` and its value is formatted as repository/your\_repository\_name. For example: "repository/my-repo" returns the number of images in repository with name "my-repo". |

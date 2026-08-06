@@ -13,14 +13,14 @@ The following table lists the eight components of a TOM.
 |
 | TOM component | Component elements |
 | --- |--- |
-| Strategic alignment | Value driversBusiness goals alignmentAI roadmap |
-| Organizational structure | AI Centers of ExcellenceNew AI rolesCross-functional teams |
-| Talent and skills | Career pathsContinuous learningAI literacy requirementsSkills gap analysis |
-| Governance and ethics | Regulatory complianceData privacy frameworkAI ethics policies |
-| Performance measurement | Continuous monitoringBusiness impact reportingFeedback loopsAI-specific KPIs |
-| Partner ecosystem | Partner evaluation metricsData sharing protocolsAI capability requirementsCollaborative innovation |
-| Technology and tools | Data infrastructureAI tools ecosystemAI platforms selectionLegacy systems integration |
-| Processes | AI-enhanced SDLCAI model managementGovernance workflows |
+| Strategic alignment | + Value drivers<br />+ Business goals alignment<br />+ AI roadmap |
+| Organizational structure | + AI Centers of Excellence<br />+ New AI roles<br />+ Cross-functional teams |
+| Talent and skills | + Career paths<br />+ Continuous learning<br />+ AI literacy requirements<br />+ Skills gap analysis |
+| Governance and ethics | + Regulatory compliance<br />+ Data privacy framework<br />+ AI ethics policies |
+| Performance measurement | + Continuous monitoring<br />+ Business impact reporting<br />+ Feedback loops<br />+ AI-specific KPIs |
+| Partner ecosystem | + Partner evaluation metrics<br />+ Data sharing protocols<br />+ AI capability requirements<br />+ Collaborative innovation |
+| Technology and tools | + Data infrastructure<br />+ AI tools ecosystem<br />+ AI platforms selection<br />+ Legacy systems integration |
+| Processes | + AI-enhanced SDLC<br />+ AI model management<br />+ Governance workflows |
 
 Building an ADM TOM is a transformative process that affects every aspect of an organization. Consider each ADM component and its interdependencies carefully to create a robust foundation for your AI-powered SDLC.
 

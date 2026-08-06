@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-f
 |  |  |
 | --- |--- |
 | **Time to complete** | 5 minutes  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/set-up-an-aws-transfer-family-web-app/module-3.html)  |
+| **Requires** |  +  **An AWS account**: If you don't already have an account, follow the [Setting Up Your Environment](https://docs.aws.amazon.com/hands-on/latest/setup-environment/) tutorial.  <br />+  An internet browser    |
 | **Get help** | [Amazon S3 Access Grants Instance Troubleshooting](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-grants-instance.html)  |
 
 ## Overview

@@ -122,7 +122,7 @@ The following table shows information about the maximum database connections for
 
 | DB engine | Parameter | Allowed values | Default value | Description |
 | --- | --- | --- | --- | --- |
-| MariaDB | max\_connections | 1–100000 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Limits.html)  | Number of simultaneous client connections allowed |
+| MariaDB | max\_connections | 1–100000 |  +  For MariaDB 10.5 and higher versions, the default is: <br />LEAST({DBInstanceClassMemory/25165760},12000) <br />The formula is effectively equivalent to MB/25. <br />If the default value calculation results in a value greater than 12,000, Amazon RDS sets the limit to 12,000. <br />+  For MariaDB version 10.4: <br />{DBInstanceClassMemory/12582880} <br />The formula is effectively equivalent to MB/12.   | Number of simultaneous client connections allowed |
 | MySQL | max\_connections | 1–100000 | {DBInstanceClassMemory/12582880}<br />The formula is effectively equivalent to MB/12. | Number of simultaneous client connections allowed |
 | Oracle | processes | 80–20000 | LEAST({DBInstanceClassMemory/9868951}, 20000) | User processes |
 | Oracle | sessions | 100–65535 | Not applicable | User and system sessions |

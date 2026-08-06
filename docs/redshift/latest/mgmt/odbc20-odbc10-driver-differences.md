@@ -22,7 +22,8 @@ The following actions resolve the most common migration issues. Most application
 
 ### Query and schema
 <a name="odbc20-migrate-query-schema"></a>
-+ **Include `EXTERNAL TABLE` in `SQLTables` type filters.** In ODBC 2.x, both Amazon Redshift Spectrum tables and datashare tables are reported as `EXTERNAL TABLE`. If you filter `SQLTables` by type, add `EXTERNAL TABLE` to keep seeing these objects.
++ **Include `EXTERNAL TABLE` in `SQLTables` type filters.** In ODBC 2.x, both Amazon Redshift Spectrum tables and datashare tables are reported as `EXTERNAL TABLE`. If you filter `SQLTables` by type, add `EXTERNAL TABLE` to keep seeing these objects. Alternatively, set the `EnableTableTypes` option to 0 to normalize the detailed table type information into the generic TABLE and VIEW table types, as described in the following item.
++ **Detailed table types are enabled by default.** ODBC 2.x enables the `EnableTableTypes` option by default. The 1.x driver disabled this option by default. With the 2.x default, `SQLTables` reports detailed types such as SYSTEM TABLE, SYSTEM VIEW, EXTERNAL TABLE, and LOCAL TEMPORARY. To report every table as the generic type TABLE and every view as VIEW, set `EnableTableTypes` to 0.
 + **Cast `INTERVAL` to `VARCHAR` for applications that do not support the interval data type.** Some clients do not support ODBC interval types. For those clients, cast the column in your query: `SELECT col::VARCHAR FROM ...`
 
 ### Application code
@@ -45,8 +46,7 @@ The following table shows ODBC 1.x driver options that have either been renamed 
 The following 1.x options are not supported in the current 2.x driver. The 2.x driver ignores them, so they do not affect your connection. Removing them from your DSN is optional but recommended to avoid confusion.
 + `SingleRowMode` – to limit client memory, use `StreamingCursorRows` instead.
 + `UseSystemTrustStore` – not supported. On Windows, the 1.x driver could validate the server certificate against the Windows system certificate store. The 2.x driver validates against a CA certificate file: it uses the bundled Amazon Redshift root certificate by default, or the file you specify in `TrustStore` or `CaFile`.
-+ `BoolsAsChar` – if your application relied on BOOLEAN columns being returned as `"0"` and `"1"` strings (`SQL_VARCHAR`), cast the column to `VARCHAR` in your query, for example `SELECT col::VARCHAR FROM ...`.
-+ `TextAsLongVarchar`, `CheckCertRevocation`, `EnableAwsSdkLogs`, `UseLogPrefix`, `Locale`, `UseDeclareFetch`, `UseMultipleStatements`, `EnforceSingleStatement`, `EnableTableTypes` – no equivalent in the current release. The Amazon Redshift team is evaluating equivalents or alternatives for these options in future releases.
++ `TextAsLongVarchar`, `CheckCertRevocation`, `EnableAwsSdkLogs`, `UseLogPrefix`, `Locale`, `UseDeclareFetch`, `UseMultipleStatements`, `EnforceSingleStatement` – no equivalent in the current release. The Amazon Redshift team is evaluating equivalents or alternatives for these options in future releases.
 
 For the full list of supported 2.x options, see [ODBC driver options](odbc20-configuration-options.md).
 
@@ -72,7 +72,7 @@ The following table describes common issues you might encounter after migrating 
 
 | Symptom | Cause | What to do |
 | --- | --- | --- |
-| External tables not visible in schema browser | Spectrum and datashare tables are reported as EXTERNAL TABLE | Include EXTERNAL TABLE in SQLTables type filter. |
+| External tables not visible in schema browser | Spectrum and datashare tables are reported as EXTERNAL TABLE | Include EXTERNAL TABLE in your SQLTables type filter, or set EnableTableTypes to 0 to normalize the detailed table types into the generic TABLE and VIEW types. |
 | pyodbc errors on interval columns | pyodbc does not support ODBC interval types | Cast intervals to VARCHAR in queries. |
 | Character data displays as unexpected characters (mojibake) | UseUnicode default changed to false. Applications expecting wide-character (UTF-16) data might misinterpret narrow-character bytes as wide pairs, producing garbled output. The data itself is unchanged. | Set UseUnicode=true in your DSN, or update your application to bind columns as SQL\_C\_CHAR instead of SQL\_C\_WCHAR. |
 | Long-running queries return timeout errors | SQL\_ATTR\_QUERY\_TIMEOUT is now enforced. ODBC 1.x silently ignored this setting. | Increase or remove QueryTimeout from your DSN, or set SQL\_ATTR\_QUERY\_TIMEOUT to 0 in your application. |

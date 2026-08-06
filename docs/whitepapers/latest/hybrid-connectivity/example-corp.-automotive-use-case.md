@@ -21,25 +21,25 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/e
 
 - ** **Time to Deploy ****
   - **Requirement definition questions:**  What is the required timeline for the deployment? Hours, days, weeks, or months?
-  - **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Answers:**  +  **Dev/Test:** 1 month <br />+  **Production:** 3 months
 
 - ** **Security** **
-  - **Requirement definition questions:**  Do your security requirements and policies allow the usage of encrypted connections over the internet to connect to AWS or mandate the usage of private network connections?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Requirement definition questions:**  Do your security requirements and policies allow the usage of encrypted connections over the internet to connect to AWS or mandate the usage of private network connections?  / **Answers:**  +  **Dev/Test:** Site-to-Site VPN acceptable <br />+  **Production:** Private network required
   - **Requirement definition questions:**  When leveraging private network connections, does the network layer have to provide encryption in transit?  / **Answers:**  No, application layer encryption will be used.
 
 - ** **SLA** **
-  - **Requirement definition questions:**  Is hybrid connectivity SLA with service credits required?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  What is the uptime target?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  Does the entire hybrid network adhere to the uptime target?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Requirement definition questions:**  Is hybrid connectivity SLA with service credits required?  / **Answers:**  +  **Dev/Test:** No <br />+  **Production:** Yes
+  - **Requirement definition questions:**  What is the uptime target?  / **Answers:**  +  **Dev/Test:** N/A <br />+  **Production:** 99.99%
+  - **Requirement definition questions:**  Does the entire hybrid network adhere to the uptime target?  / **Answers:**  +  **Dev/Test:** N/A <br />+  **Production:** Yes
 
 - ** **Performance** **
-  - **Requirement definition questions:**  What is the required throughput?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  What is the maximum acceptable latency between AWS and on-premises network?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  What is the maximum acceptable network jitter?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Requirement definition questions:**  What is the required throughput?  / **Answers:**  +  **Dev/Test:** 100 Mbps <br />+  **Production:** 500 Mbps growing to 2 Gbps
+  - **Requirement definition questions:**  What is the maximum acceptable latency between AWS and on-premises network?  / **Answers:**  +  **Dev/Test:** No hard requirements <br />+  **Production:** Less than 30 ms
+  - **Requirement definition questions:**  What is the maximum acceptable network jitter?  / **Answers:**  +  **Dev/Test:** No hard requirements <br />+  **Production:** Minimum jitter required
 
 - ** **Cost** **
-  - **Requirement definition questions:**  How much data would you send to AWS per month?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  How much data would you send from AWS per month?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Requirement definition questions:**  How much data would you send to AWS per month?  / **Answers:**  +  **Dev/Test:** 2 TB <br />+  **Production:** 20 TB growing to 50 TB
+  - **Requirement definition questions:**  How much data would you send from AWS per month?  / **Answers:**  +  **Dev/Test:** 1 TB <br />+  **Production:** 10 TB growing to 25 TB
   - **Requirement definition questions:**  Is this connectivity permanent?  / **Answers:**  Yes
 
  Based on requirements received, the architecture team followed the connectivity type decision tree from Figure 9. It allowed the architecture team to decide on the connectivity type for the development and test and production environments. For the production environment, they considered the immediate as well as the upcoming requirements. For development and test Example Corp. Automotive will establish a site-to-site VPN over the internet. For production, they are going to work with a service provider to connect their corporate network with AWS Direct Connect. Example Corp. Automotive initially considered using a Direct Connect Hosted Connection, however due to the requirements for an [AWS provided SLA](https://aws.amazon.com/directconnect/sla/) they selected Direct Connect Dedicated Connections.
@@ -55,8 +55,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/e
   - **Requirement definition questions:**  Are these VPCs deployed in a single AWS Region or multiple Regions?  / **Answers:**  Single Region
   - **Requirement definition questions:**  How many on-premises sites need to be connected to AWS?  / **Answers:**  2 data centers
   - **Requirement definition questions:**  How many customer gateway devices do you have, per site, that need to connect to AWS?  / **Answers:**  2 routers per data center
-  - **Requirement definition questions:**  How many routes are expected to be advertised to AWS VPCs as well as the number of expected routes to be received from AWS side?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  Is there any plan to consider bandwidth increase of the connection to AWS in the near future?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Requirement definition questions:**  How many routes are expected to be advertised to AWS VPCs as well as the number of expected routes to be received from AWS side?  / **Answers:**  +  **Routes to be advertised to AWS**: 20 routes <br />+  **Routes to be received from AWS**: 1 `/16` route
+  - **Requirement definition questions:**  Is there any plan to consider bandwidth increase of the connection to AWS in the near future?  / **Answers:**  +   **Dev/Test**: 100 Mbps <br />+  **Production**: 500Mbps growing to 2Gbps.
 
 - ** **Connectivity design models** **
   - **Requirement definition questions:**  Is there a requirement for inter-VPC communication to be enabled (within a Region and/or across Regions)?  / **Answers:**  Yes, within an AWS Region
@@ -74,8 +74,8 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/e
 *Table 6 – Reliability requirement questions*
 
 - ** Reliability **
-  - **Requirement definition questions:**  What is the impact magnitude on the business in case of a connectivity failure to AWS?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
-  - **Requirement definition questions:**  From a business point of view, does the cost of following a connectivity failure to AWS outweigh the cost of deploying a highly reliable connectivity model to AWS?  / **Answers:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/example-corp.-automotive-use-case.html)
+  - **Requirement definition questions:**  What is the impact magnitude on the business in case of a connectivity failure to AWS?  / **Answers:**  +  **Dev/Test**: Low <br />+  **Production**: High
+  - **Requirement definition questions:**  From a business point of view, does the cost of following a connectivity failure to AWS outweigh the cost of deploying a highly reliable connectivity model to AWS?  / **Answers:**  +  **Dev/Test**: No <br />+  **Production**: Yes
 
  Based on inputs received, the architecture team followed the decision tree from the reliability considerations sections covered previously on this whitepaper. After considering the uptime target of 99.99% for the production connectivity and the high business impact if there was a service interruption, the architecture team decided to use 2 Direct Connect locations and have 2 links from each on-premises data center to each Direct Connect location (4 links in total). The VPN connectivity used for development and testing will also use two VPN connections for additional redundancy. Using route engineering techniques discussed in the reliability section, connectivity will be configured as follows:
 +  For development and testing, traffic is going to be load balanced using ECMP over the 2 tunnels going to the primary data center. This allows for higher throughput. The tunnels going to the secondary data center are going to be used in case of failure of the primary tunnels.

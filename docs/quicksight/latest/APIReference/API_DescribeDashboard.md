@@ -107,7 +107,8 @@ Content-type: application/json
                                              "SelectAllValueOptions": "string",
                                              "SourceColumn": {
                                                 "ColumnName": "string",
-                                                "DataSetIdentifier": "string"
+                                                "DataSetIdentifier": "string",
+                                                "TopicIdentifier": "string"
                                              },
                                              "SourceField": "string",
                                              "SourceParameterName": "string"
@@ -157,6 +158,7 @@ Content-type: application/json
          "SourceEntityArn": "string",
          "Status": "string",
          "ThemeArn": "string",
+         "TopicArns": [ "string" ],
          "VersionNumber": number
       }
    },

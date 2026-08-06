@@ -92,22 +92,22 @@ When you create a flow that uses Mixpanel as the data source, you can transfer a
 
 | Object | Mixpanel endpointThe following paths are appended to the base URI: `https://mixpanel.com/api/2.0`. | Supported filters |
 | --- | --- | --- |
-| Annotations | /annotations |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
+| Annotations | /annotations |  +  from\_date   |
 | Cohorts | /cohorts/list | None |
 | Engage | /engage | None |
-| Events | /events |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Events Names | /events/names |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Events Properties | /events/properties |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Events Properties Top | /events/properties/top |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Events Properties Values | /events/properties/values |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Events Top | /events/top |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Funnels | /funnels |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Profile Event Activity | /stream/query |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Retention | /retention/addiction |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Segmentation | /segmentation |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Segmentation Average | /segmentation/average |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Segmentation Numeric | /segmentation/numeric |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
-| Segmentation Sum | /segmentation/sum |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/connectors-mixpanel.html)  |
+| Events | /events |  +  event\* <br />+  from\_date\* <br />+  interval <br />+  to\_date\* <br />+  type\* <br />+  unit\* <br />+  workspace\_id   |
+| Events Names | /events/names |  +  limit <br />+  type\* <br />+  workspace\_id   |
+| Events Properties | /events/properties |  +  event\* <br />+  from\_date\* <br />+  interval <br />+  limit <br />+  name\* <br />+  to\_date\* <br />+  type\* <br />+  unit\* <br />+  workspace\_id   |
+| Events Properties Top | /events/properties/top |  +  event\* <br />+  limit <br />+  workspace\_id   |
+| Events Properties Values | /events/properties/values |  +  event\* <br />+  limit <br />+  name\* <br />+  workspace\_id   |
+| Events Top | /events/top |  +  limit <br />+  type\* <br />+  workspace\_id   |
+| Funnels | /funnels |  +  from\_date\* <br />+  funnel\_id\* <br />+  interval <br />+  length <br />+  length\_unit <br />+  limit <br />+  to\_date <br />+  unit\* <br />+  workspace\_id   |
+| Profile Event Activity | /stream/query |  +  distinct\_ids <br />+  from\_date\* <br />+  to\_date\* <br />+  workspace\_id   |
+| Retention | /retention/addiction |  +  addiction\_unit <br />+  event <br />+  from\_date\* <br />+  limit <br />+  to\_date\* <br />+  unit\* <br />+  workspace\_id   |
+| Segmentation | /segmentation |  +  event\* <br />+  from\_date\* <br />+  interval <br />+  limit <br />+  to\_date\* <br />+  type <br />+  unit <br />+  workspace\_id   |
+| Segmentation Average | /segmentation/average |  +  event\* <br />+  from\_date\* <br />+  on\* <br />+  to\_date\* <br />+  unit <br />+  workspace\_id   |
+| Segmentation Numeric | /segmentation/numeric |  +  event\* <br />+  from\_date\* <br />+  on\* <br />+  to\_date\* <br />+  type <br />+  unit <br />+  workspace\_id   |
+| Segmentation Sum | /segmentation/sum |  +  event\* <br />+  from\_date\* <br />+  on\* <br />+  to\_date\* <br />+  unit <br />+  workspace\_id   |
 
 \* You must specify this filter in your flow definition before Amazon AppFlow can successfully retrieve your data.
 

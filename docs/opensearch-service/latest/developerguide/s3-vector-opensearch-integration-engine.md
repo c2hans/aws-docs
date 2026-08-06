@@ -151,7 +151,7 @@ Consider the following limitations before using `s3vector` engine in an index:
 | Feature | Behavior |
 | --- | --- |
 | Split/Shrink/Clone index | These APIs fail when used with an index configured with `s3vector` engine in `knn_vector` field. |
-| Snapshots | Indices using `s3vector` engine don't support snapshots. For managed domains:[See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/s3-vector-opensearch-integration-engine.html) While snapshots aren't supported for point-in-time recovery, `s3vector` engine, along with OpenSearch Optimized instances, provide 11 nines of durability.  |
+| Snapshots | Indices using `s3vector` engine don't support snapshots. For managed domains:+  Automated snapshots only include indices not using `s3vector` engine. <br />+  Manual snapshot requests for `s3vector` indices fail.  While snapshots aren't supported for point-in-time recovery, `s3vector` engine, along with OpenSearch Optimized instances, provide 11 nines of durability.  |
 | UltraWarm tier | Indices configured with `s3vector` engine can't migrate to UltraWarm tier. |
 | Cross-cluster replication | Indices configured with `s3vector` engine don't support cross-cluster replication. |
 | Accidental delete protection | Because snapshots aren't supported for indices using `s3vector` engine, accidental delete protection isn't available. You can still restore other indices in the domain. |

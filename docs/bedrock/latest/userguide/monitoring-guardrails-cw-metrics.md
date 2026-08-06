@@ -29,14 +29,14 @@ You can view guardrail dimensions in the CloudWatch console based on the table b
 
 | Dimension name | Dimension values | Available for the following metrics |
 | --- | --- | --- |
-| Operation | ApplyGuardrail |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| GuardrailContentSource |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| GuardrailPolicyType |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| GuardrailArn, GuardrailVersion |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| FindingType \+ PolicyArn \+ PolicyVersion | FindingType \+ PolicyArn \+ PolicyVersion |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| FindingType \+ GuardrailArn \+ GuardrailVersion | FindingType \+ GuardrailArn \+ GuardrailVersion |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| PolicyArn \+ PolicyVersion | PolicyArn \+ PolicyVersion |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
-| GuardrailArn \+ GuardrailVersion | GuardrailArn \+ GuardrailVersion |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html)  |
+| Operation | ApplyGuardrail |  +  Invocations <br />+  InvocationLatency <br />+  InvocationClientErrors <br />+  InvocationServerErrors <br />+  InvocationThrottles <br />+  InvocationsIntervened <br />+  TextUnitCount   |
+| GuardrailContentSource |  +  Input <br />+  Output   |  +  Invocations <br />+  InvocationLatency <br />+  InvocationClientErrors <br />+  InvocationServerErrors <br />+  InvocationThrottles <br />+  InvocationsIntervened <br />+  TextUnitCount   |
+| GuardrailPolicyType |  +  ContentPolicy <br />+  TopicPolicy <br />+  WordPolicy <br />+  SensitiveInformationPolicy <br />+  ContextualGroundingPolicy   |  +  InvocationsIntervened <br />+  TextUnitCount   |
+| GuardrailArn, GuardrailVersion |  +  Guardrail ARN <br />+  Guardrail Version number or DRAFT   |  +  Invocations <br />+  InvocationLatency <br />+  InvocationClientErrors <br />+  InvocationServerErrors <br />+  InvocationThrottles <br />+  InvocationsIntervened <br />+  TextUnitCount   |
+| FindingType \+ PolicyArn \+ PolicyVersion | FindingType \+ PolicyArn \+ PolicyVersion |  +  FindingCounts   |
+| FindingType \+ GuardrailArn \+ GuardrailVersion | FindingType \+ GuardrailArn \+ GuardrailVersion |  +  FindingCounts   |
+| PolicyArn \+ PolicyVersion | PolicyArn \+ PolicyVersion |  +  TotalFindings <br />+  Invocations <br />+  Latency   |
+| GuardrailArn \+ GuardrailVersion | GuardrailArn \+ GuardrailVersion |  +  TotalFindings   |
 
 **Get CloudWatch metrics for guardrails**
 

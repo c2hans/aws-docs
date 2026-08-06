@@ -34,7 +34,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [organizations:AttachPolicy](#list_organizations-action-AttachPolicy)
   - **Condition key:**
   - **Possible value(s):**
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   CancelHandshake  **
   - **IAM action:**  [organizations:CancelHandshake](#list_organizations-action-CancelHandshake)
@@ -98,7 +98,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [organizations:DeleteResourcePolicy](#list_organizations-action-DeleteResourcePolicy)
   - **Condition key:**
   - **Possible value(s):**
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   DeregisterDelegatedAdministrator  **
   - **IAM action:**  [organizations:DeregisterDelegatedAdministrator](#list_organizations-action-DeregisterDelegatedAdministrator)
@@ -164,7 +164,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [organizations:DetachPolicy](#list_organizations-action-DetachPolicy)
   - **Condition key:**
   - **Possible value(s):**
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   DisableAWSServiceAccess  **
   - **IAM action:**  [organizations:DisableAWSServiceAccess](#list_organizations-action-DisableAWSServiceAccess)
@@ -337,7 +337,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   PutResourcePolicy  **
-  - **IAM action:**  [organizations:PutResourcePolicy](#list_organizations-action-PutResourcePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [organizations:PutResourcePolicy](#list_organizations-action-PutResourcePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [organizations:TagResource](#list_organizations-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   RegisterDelegatedAdministrator  **
@@ -380,7 +380,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [organizations:UpdatePolicy](#list_organizations-action-UpdatePolicy)
   - **Condition key:**
   - **Possible value(s):**
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   UpdateResponsibilityTransfer  **
   - **IAM action:**  [organizations:UpdateResponsibilityTransfer](#list_organizations-action-UpdateResponsibilityTransfer)
@@ -407,7 +407,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [organizationalunit](#list_organizations-resource-organizationalunit) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
   - **Resource types (\*required):** [policy\*](#list_organizations-resource-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
   - **Resource types (\*required):** [root](#list_organizations-resource-root) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   [CancelHandshake](https://docs.aws.amazon.com/organizations/latest/APIReference/API_CancelHandshake.html)  **
   - **Description:** Grants permission to cancel a handshake
@@ -447,7 +447,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [CreatePolicy](https://docs.aws.amazon.com/organizations/latest/APIReference/API_CreatePolicy.html)  **
   - **Description:** Grants permission to create a policy that you can attach to a root, an organizational unit (OU), or an individual AWS account
-  - **Resource types (\*required):**
+  - **Resource types (\*required):** [policy\*](#list_organizations-resource-policy)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_organizations-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_organizations-aws_TagKeys)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
   - **Access level:** Write
 
@@ -479,7 +479,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to delete a resource policy from your organization
   - **Resource types (\*required):**
   - **Condition keys:**
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   [DeregisterDelegatedAdministrator](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DeregisterDelegatedAdministrator.html)  **
   - **Description:** Grants permission to deregister the specified member AWS account as a delegated administrator for the AWS service that is specified by ServicePrincipal
@@ -547,7 +547,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [organizationalunit](#list_organizations-resource-organizationalunit) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
   - **Resource types (\*required):** [policy\*](#list_organizations-resource-policy) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
   - **Resource types (\*required):** [root](#list_organizations-resource-root) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   [DisableAWSServiceAccess](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DisableAWSServiceAccess.html)  **
   - **Description:** Grants permission to disable integration of an AWS service (the service that is specified by ServicePrincipal) with AWS Organizations
@@ -733,7 +733,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to create or update a resource policy
   - **Resource types (\*required):** [resourcepolicy\*](#list_organizations-resource-resourcepolicy)
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_organizations-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_organizations-aws_TagKeys)
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   [RegisterDelegatedAdministrator](https://docs.aws.amazon.com/organizations/latest/APIReference/API_RegisterDelegatedAdministrator.html)  **
   - **Description:** Grants permission to register the specified member account to administer the Organizations features of the AWS service that is specified by ServicePrincipal
@@ -783,7 +783,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to update an existing policy with a new name, description, or content
   - **Resource types (\*required):** [policy\*](#list_organizations-resource-policy)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_organizations-aws_ResourceTag___TagKey_)<br />[organizations:PolicyType](#list_organizations-organizations_PolicyType)
-  - **Access level:** Write
+  - **Access level:** Permissions management, Write
 
 - **   [UpdateResponsibilityTransfer](https://docs.aws.amazon.com/organizations/latest/APIReference/API_UpdateResponsibilityTransfer.html)  **
   - **Description:** Grants permission to rename a responsibility transfer to or from your organization

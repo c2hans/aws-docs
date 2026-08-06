@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/cloud-governance-
 | --- |--- |
 | **Purpose** | Help determine which AWS cloud governance services are the best fit for your organization. |
 | **Last updated** | December 23, 2024 |
-| **Covered services** | [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/cloud-governance-on-aws-how-to-choose/cloud-governance-on-aws-how-to-choose.html) |
+| **Covered services** | + [AWS Artifact](https://docs.aws.amazon.com/artifact/latest/ug/what-is-aws-artifact.html)<br />+ [AWS Audit Manager](https://docs.aws.amazon.com/audit-manager/latest/userguide/what-is.html)<br />+ [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)<br />+ [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)<br />+ [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html)<br />+ [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)<br />+ [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)<br />+ [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) <br />+ [AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/introduction.html)<br />+ [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)<br />+ [AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html)  |
 
 ## Introduction to AWS cloud governance
 <a name="introduction"></a>

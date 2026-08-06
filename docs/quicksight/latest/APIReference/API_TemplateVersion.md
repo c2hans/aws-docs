@@ -65,6 +65,12 @@ The ARN of the theme associated with this version of the template.
 Type: String
 Required: No
 
+ ** TopicConfigurations **   <a name="QS-Type-TemplateVersion-TopicConfigurations"></a>
+Schema of the topic identified by the placeholder. Any dashboard created from this template should be bound to new topics matching the same schema described through this API operation.
+Type: Array of [TopicConfiguration](API_TopicConfiguration.md) objects
+Array Members: Maximum number of 30 items.
+Required: No
+
  ** VersionNumber **   <a name="QS-Type-TemplateVersion-VersionNumber"></a>
 The version number of the template version.
 Type: Long

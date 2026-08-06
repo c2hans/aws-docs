@@ -16,7 +16,7 @@ You don’t have permission to perform this operation.
 HTTP Status Code: 403
 
 ConflictException
-The request conflicts with the current state of the resource (e.g., policy name already exists).
+The request conflicts with the current state of the resource. For example, the policy name already exists, or a request reused a policy session that was invalidated because a temporal policy on the engine was added or updated.
 HTTP Status Code: 409
 
 InternalServerException

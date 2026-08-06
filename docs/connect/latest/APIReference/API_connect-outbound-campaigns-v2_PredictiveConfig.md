@@ -13,8 +13,14 @@ Contains predictive outbound mode configuration.
  ** bandwidthAllocation **   <a name="connect-Type-connect-outbound-campaigns-v2_PredictiveConfig-bandwidthAllocation"></a>
 Bandwidth allocation for the predictive outbound mode.
 Type: Double
-Valid Range: Minimum value of 0. Maximum value of 1.
+Valid Range: Minimum value of 0. Maximum value of 2.
 Required: Yes
+
+ ** pacingStrategies **   <a name="connect-Type-connect-outbound-campaigns-v2_PredictiveConfig-pacingStrategies"></a>
+The pacing strategies that the dialer enforces for the predictive outbound mode. Currently, you can specify one pacing strategy.
+Type: Array of [PacingStrategy](API_connect-outbound-campaigns-v2_PacingStrategy.md) objects
+Array Members: Fixed number of 1 item.
+Required: No
 
 ## See Also
 <a name="API_connect-outbound-campaigns-v2_PredictiveConfig_SeeAlso"></a>

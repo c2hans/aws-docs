@@ -32,7 +32,7 @@ Removes one or more custom attributes, of the same attribute type, from the appl
 
 | Name | Type | Required | Description |
 | --- |--- |--- |--- |
-| {{attribute-type}} | String | True | The type of attribute or attributes to remove. Valid values are:   `endpoint-custom-attributes` – Custom attributes that describe endpoints, such as the date when an associated user opted in or out of receiving communications from you through a specific type of channel.    `endpoint-metric-attributes` – Custom metrics that your app reports to Amazon Pinpoint for endpoints, such as the number of app sessions or the number of items left in a cart.    `endpoint-user-attributes` – Custom attributes that describe users, such as first name, last name, and age.   |
+| {{attribute-type}} | String | True | The type of attribute or attributes to remove. Valid values are:+   `endpoint-custom-attributes` – Custom attributes that describe endpoints, such as the date when an associated user opted in or out of receiving communications from you through a specific type of channel. <br />+   `endpoint-metric-attributes` – Custom metrics that your app reports to Amazon Pinpoint for endpoints, such as the number of app sessions or the number of items left in a cart. <br />+   `endpoint-user-attributes` – Custom attributes that describe users, such as first name, last name, and age.  |
 | {{application-id}} | String | True | The unique identifier for the application. This identifier is displayed as the **Project ID** on the Amazon Pinpoint console. |
 
 **Header parameters**
@@ -63,7 +63,7 @@ Retrieves information about the communication requirements and options that are 
 
 | Name | Type | Required | Description |
 | --- |--- |--- |--- |
-| {{attribute-type}} | String | True | The type of attribute or attributes to remove. Valid values are:   `endpoint-custom-attributes` – Custom attributes that describe endpoints, such as the date when an associated user opted in or out of receiving communications from you through a specific type of channel.    `endpoint-metric-attributes` – Custom metrics that your app reports to Amazon Pinpoint for endpoints, such as the number of app sessions or the number of items left in a cart.    `endpoint-user-attributes` – Custom attributes that describe users, such as first name, last name, and age.   |
+| {{attribute-type}} | String | True | The type of attribute or attributes to remove. Valid values are:+   `endpoint-custom-attributes` – Custom attributes that describe endpoints, such as the date when an associated user opted in or out of receiving communications from you through a specific type of channel. <br />+   `endpoint-metric-attributes` – Custom metrics that your app reports to Amazon Pinpoint for endpoints, such as the number of app sessions or the number of items left in a cart. <br />+   `endpoint-user-attributes` – Custom attributes that describe users, such as first name, last name, and age.  |
 | {{application-id}} | String | True | The unique identifier for the application. This identifier is displayed as the **Project ID** on the Amazon Pinpoint console. |
 
 **Responses**
@@ -127,7 +127,7 @@ Provides information about the type and the names of attributes that were remove
 | --- |--- |--- |--- |
 | ApplicationId | string | True | The unique identifier for the application. |
 | Attributes | Array of type string | False | An array that specifies the names of the remaining attributes after any attributes were removed from the endpoints. |
-| AttributeType | string | True | The type of attribute or attributes that were removed from the endpoints. Valid values are:   `endpoint-custom-attributes` – Custom attributes that describe endpoints.    `endpoint-metric-attributes` – Custom metrics that your app reports to Amazon Pinpoint for endpoints.    `endpoint-user-attributes` – Custom attributes that describe users.   |
+| AttributeType | string | True | The type of attribute or attributes that were removed from the endpoints. Valid values are:+   `endpoint-custom-attributes` – Custom attributes that describe endpoints. <br />+   `endpoint-metric-attributes` – Custom metrics that your app reports to Amazon Pinpoint for endpoints. <br />+   `endpoint-user-attributes` – Custom attributes that describe users.  |
 
 ### MessageBody
 <a name="apps-application-id-attributes-attribute-type-model-messagebody"></a>

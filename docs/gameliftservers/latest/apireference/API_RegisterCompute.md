@@ -5,11 +5,11 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # RegisterCompute
 <a name="API_RegisterCompute"></a>
 
- **This API works with the following fleet types:** Anywhere, Container
+ **This API works with the following fleet types:** Anywhere
 
 Registers a compute resource in an Amazon GameLift Servers Anywhere fleet.
 
-For an Anywhere fleet or a container fleet that's running the Amazon GameLift Servers Agent, the Agent handles all compute registry tasks for you. For an Anywhere fleet that doesn't use the Agent, call this operation to register fleet computes.
+For an Anywhere fleet that's running the Amazon GameLift Servers Agent, the Agent handles all compute registry tasks for you. For an Anywhere fleet that doesn't use the Agent, call this operation to register fleet computes.
 
 To register a compute, give the compute a name (must be unique within the fleet) and specify the compute resource's DNS name or IP address. Provide a fleet ID and a fleet location to associate with the compute being registered. You can optionally include the path to a TLS certificate on the compute resource.
 

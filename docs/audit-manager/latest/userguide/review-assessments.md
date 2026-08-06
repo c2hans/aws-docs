@@ -71,7 +71,7 @@ In the assessment details section, you can review the following information:
 | 5. Assessment report selection | The number of evidence items that are selected to be included in the assessment report. |
 | 6. Date created | The date when the assessment was created. |
 | 7. Last updated | The date when the assessment was last edited. |
-| 8. Status | The status of the assessment. [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-assessments.html) |
+| 8. Status | The status of the assessment. +  **Active** - The assessment is currently collecting evidence.  <br />+  **Inactive** - The assessment is no longer collecting evidence.   |
 
 ### Controls tab
 <a name="review-assessment-controls"></a>
@@ -94,7 +94,7 @@ In this table, you can review the following information:
 | Name | Description |
 | --- | --- |
 | **Controls grouped by control sets** | The name of the control set. |
-| **Control status** | The status of the control. [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/review-assessments.html) |
+| **Control status** | The status of the control. +  **Under review** indicates that this control isn't already reviewed. Evidence is still being collected for this control, and you can add manual evidence. This is the default status. <br />+  **Reviewed** indicates that the evidence for this control was reviewed. Evidence is still being collected, and you can add manual evidence.  <br />+  **Inactive** indicates that automated evidence collection is stopped for this control. You can no longer add manual evidence.   |
 | Delegated to | The reviewer of this control, if it was assigned to a delegate for review. |
 | Total evidence | The number of evidence items that have been collected for this control. |
 

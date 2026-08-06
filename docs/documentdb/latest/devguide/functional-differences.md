@@ -249,8 +249,8 @@ Amazon DocumentDB is compatible with the MongoDB 3.6, 4.0, 5.0, and 8.0 APIs. Fo
 
 Amazon DocumentDB does not support an admin database and thus does not dump or restore the admin database when using the `mongodump` or `mongorestore` utilities. When you create a new database in Amazon DocumentDB using `mongorestore`, you need to re-create the user roles in addition to the restore operation.
 
-**Note**
-Use MongoDB Database Tools up to and including version 100.6.1 for Amazon DocumentDB. To download, see [MongoDB Database Tools releases](https://www.mongodb.com/download-center/database-tools/releases/archive).
+**MongoDB Database Tools version requirement**
+Use MongoDB Database Tools up to and including version 100.11.0 for Amazon DocumentDB. To download, see [MongoDB Database Tools releases](https://www.mongodb.com/download-center/database-tools/releases/archive) on the MongoDB website.
 
 ### Result ordering
 <a name="functional-differences.result-ordering"></a>

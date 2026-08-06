@@ -16,7 +16,7 @@ In the following list, the required parameters are described first.
  ** DataSetIdentifier **   <a name="QS-Type-MappedDataSetParameter-DataSetIdentifier"></a>
 A unique name that identifies a dataset within the analysis or dashboard.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: Yes
 
  ** DataSetParameterName **   <a name="QS-Type-MappedDataSetParameter-DataSetParameterName"></a>

@@ -25,5 +25,5 @@ This table shows where the parameters mentioned in this section are located. The
 
 | Location of parameter on web interface | Location of tag in XML |
 | --- | --- |
-| Stream – Video > Advanced > Framerate | stream\_assembly/video\_description/{{codec}}/framerate\_numerator<br />stream\_assembly/video\_description/{{codec}}/framerate\_denominator<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-framerate-conversion.html) |
-| Stream – Video > Advanced > Interpolated | stream\_assembly/video\_description/{{codec}}/interpolate\_frc<br />where {{codec}} is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-framerate-conversion.html) |
+| Stream – Video > Advanced > Framerate | stream\_assembly/video\_description/{{codec}}/framerate\_numerator<br />stream\_assembly/video\_description/{{codec}}/framerate\_denominator<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings** <br />+  **prores\_settings**  |
+| Stream – Video > Advanced > Interpolated | stream\_assembly/video\_description/{{codec}}/interpolate\_frc<br />where {{codec}} is:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings** <br />+  **prores\_settings**  |

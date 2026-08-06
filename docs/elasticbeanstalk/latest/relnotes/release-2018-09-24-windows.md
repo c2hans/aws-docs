@@ -18,10 +18,10 @@ This release applies Windows September 2018 security updates to the Windows Serv
 | --- | --- |
 | **Windows security updates** | Applied September 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-24-windows.html) |
-| **p3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-24-windows.html)  |
-| **c5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-24-windows.html)  |
-| **m5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-24-windows.html)  |
-| **t3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-09-24-windows.html)  |
+| **p3** |  + Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Canada (Central)—ca-central-1<br />+ China (Ningxia)—cn-northwest-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
+| **c5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
+| **m5d** |  + US West (N. California)—us-west-1<br />+ Asia Pacific (Seoul)—ap-northeast-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (London)—eu-west-2  |
+| **t3** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Sydney)—ap-southeast-2<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ Canada (Central)—ca-central-1<br />+ EU (Frankfurt)—eu-central-1<br />+ EU (Ireland)—eu-west-1<br />+ EU (London)—eu-west-2<br />+ South America (São Paulo)—sa-east-1  |
 
 ## Updated platform configurations
 <a name="release-2018-09-24-windows.platforms"></a>

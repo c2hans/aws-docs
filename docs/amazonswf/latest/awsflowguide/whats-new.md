@@ -21,5 +21,5 @@ The following table describes the important changes to the documentation since t
 | New feature | You can specify Lambda tasks in addition to traditional Activity tasks in your workflows. For more information, see [Implementing AWS Lambda Tasks](lambda-task.md). | July 21, 2015 |
 | New feature | Amazon SWF includes support for setting the task priority on a task list, attempting to deliver the tasks with a higher priority before tasks with lower priority. For more information, see [Setting task priority in Amazon SWF](programming-priority.md). | December 17, 2014 |
 | Update | Made updates and fixes. | August 1, 2013 |
-| Update |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/whats-new.html)  | June 28, 2013 |
+| Update |  +  Made updates and fixes, including updates of the [setup instructions](setup.md) for Eclipse 4.3 and AWS SDK for Java 1.4.7. <br />+  Added a new set of tutorials for building starter scenarios   | June 28, 2013 |
 | New feature | The initial release of the AWS Flow Framework for Java. | February 27, 2012 |

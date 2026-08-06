@@ -50,7 +50,7 @@ You can view the status of an Amazon FSx file system by using the Amazon FSx con
 | UPDATING | The file system is undergoing a customer-initiated update. |
 | MISCONFIGURED | The file system is in an impaired state due to a change in your Active Directory environment. Your file system is either currently unavailable or at risk of losing availability, and backups may not succeed. For information on restoring availability, see [File system is in a misconfigured state](misconfigured-ad-config.md). |
 | MISCONFIGURED\_UNAVAILABLE | The file system is currently unavailable due to a change in your Active Directory environment. For information on restoring availability, see [File system is in a misconfigured state](misconfigured-ad-config.md). |
-| FAILED |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/WindowsGuide/administering-file-systems.html)  |
+| FAILED |  + When creating a new file system, Amazon FSx was unable to create the new file system.<br />+ The file system is unavailable.<br />+ The file system has failed and Amazon FSx can't recover it.<br />+ Amazon FSx is unable to create backups.  |
 
 ## Using the Amazon FSx CLI for PowerShell
 <a name="remote-pwrshell"></a>

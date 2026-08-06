@@ -81,5 +81,5 @@ You can format the text in your proposal using the following Markdown styles.
 | Bold text | \*\*Apples\*\* | Apples |
 | Italic text | \*Apples\* or \_Apples\_ | Apples |
 | Hyperlinks | [Amazon](https://smile.amazon.com) | [Amazon](https://smile.amazon.com) |
-| Bulleted lists |  <pre>* Apples<br />* Oranges<br />* Pears</pre>  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-iq/latest/experts-user-guide/working-with-proposals.html)  |
-| Numbered lists |  <pre>1. Apples<br />2. Oranges<br />3. Pears</pre>  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/aws-iq/latest/experts-user-guide/working-with-proposals.html)  |
+| Bulleted lists |  <pre>* Apples<br />* Oranges<br />* Pears</pre>  |  +  Apples <br />+  Oranges <br />+  Pears   |
+| Numbered lists |  <pre>1. Apples<br />2. Oranges<br />3. Pears</pre>  |  1.  Apples <br />2.  Oranges <br />3.  Pears   |

@@ -61,7 +61,7 @@ Depending on how you provided input to the Distributed Map in the original execu
 | Input in the original execution attempt | Input used on Map Run redrive |
 | --- | --- |
 | Input passed from a previous state or the execution input. | The redriven Map Run uses the same input. |
-| Input passed using [ItemReader (Map)](input-output-itemreader.md) and the Map Run didn't start the child workflow executions because one of the following conditions is true: [See the AWS documentation website for more details](http://docs.aws.amazon.com/step-functions/latest/dg/redrive-map-run.html)  | The redriven Map Run uses the input in the Amazon S3 bucket. |
+| Input passed using [ItemReader (Map)](input-output-itemreader.md) and the Map Run didn't start the child workflow executions because one of the following conditions is true: +  Map Run failed with the `States.ItemReaderFailed` error. <br />+  Map Run failed with the `States.ResultWriterFailed` error. <br />+  The parent workflow execution was timed out or canceled before the Map Run was started.   | The redriven Map Run uses the input in the Amazon S3 bucket. |
 | Input passed using ItemReader. The Map Run failed after starting or attempting to start child workflow executions. | The redriven Map Run uses the same input provided in the original execution attempt. |
 
 ## IAM permission to redrive a Map Run

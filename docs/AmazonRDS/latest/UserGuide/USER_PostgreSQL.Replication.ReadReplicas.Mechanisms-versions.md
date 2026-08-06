@@ -15,8 +15,8 @@ In the following table, you can find a summary of differences between PostgreSQL
 
 | Version | In-Region | Cross-Region |
 | --- | --- | --- |
-| PostgreSQL 14.1 and higher versions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.Mechanisms-versions.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.Mechanisms-versions.html)  |
-| PostgreSQL 13 and lower versions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.Mechanisms-versions.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.Replication.ReadReplicas.Mechanisms-versions.html)  |
+| PostgreSQL 14.1 and higher versions |  +  Replication slots <br />+  Amazon S3 archive   |  +  Replication slots   |
+| PostgreSQL 13 and lower versions |  +  Amazon S3 archive   |  +  Replication slots   |
 
 For more information, see [Monitoring and tuning the replication process](USER_PostgreSQL.Replication.ReadReplicas.Monitor.md).
 

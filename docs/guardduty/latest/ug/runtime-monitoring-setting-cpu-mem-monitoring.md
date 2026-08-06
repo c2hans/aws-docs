@@ -21,7 +21,7 @@ The following steps from the *Amazon CloudWatch User Guide* can help you evaluat
 ## Setting up monitoring on Amazon EKS cluster
 <a name="eks-runtime-cpu-memory-monitoring-agent"></a>
 
-After the GuardDuty security agent gets deployed and you assess that the coverage status of your cluster is **Healthy**, you can set up and view the Container insight metrics.
+After the GuardDuty security agent gets deployed and you assess that the coverage status of your cluster is **Healthy**, you can set up and view the Container Insights metrics.
 
 **Evaluate performance of the security agent**
 

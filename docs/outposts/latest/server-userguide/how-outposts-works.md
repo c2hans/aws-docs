@@ -75,6 +75,9 @@ The service link is a connection from your Outpost back to your chosen AWS Regio
 Your service link is created when your Outpost is provisioned. If you have a server form factor, you create the connection. If you have a rack, AWS creates the service link. For more information, see:
 + [Application/workload routing ](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/applicationworkload-routing.html) in the *AWS Outposts High Availability Design and Architecture Considerations* AWS Whitepaper
 
+**IPv6 support**
+You can create dual-stack (IPv6) subnets on your Outpost. AWS Outposts supports IPv6 traffic only between subnets in the same Outpost. The service link does not support IPv6 between your Outpost and the AWS Region. In addition, AWS Outposts cannot use IPv6 over the internet gateway.
+
 ## Local network interfaces
 <a name="how-servers-work"></a>
 

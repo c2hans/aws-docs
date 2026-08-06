@@ -20,31 +20,31 @@ The `AWS/AOSS` namespace includes enriched metrics for the following resource ty
 
 | Metric | Dimensions |
 | --- | --- |
-| 2xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 3xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 4xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveCollection | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveCollection-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoOptimizeJob | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionDataRate-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionDocumentErrors-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionDocumentRate-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestErrors-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestRate-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRequestSuccess-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNRemoteIndexBuildFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNRemoteIndexBuildSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNRemoteIndexBuildTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchRequestErrors-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchRequestRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchRequestRate-Shadow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SemanticSearchOCU | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 2xx | + `ClientId`, `CollectionId`, `CollectionName` |
+| 3xx | + `ClientId`, `CollectionId`, `CollectionName` |
+| 4xx | + `ClientId`, `CollectionId`, `CollectionName` |
+| 5xx | + `ClientId`, `CollectionId`, `CollectionName` |
+| ActiveCollection | + `ClientId`, `CollectionId`, `CollectionName` |
+| ActiveCollection-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| AutoOptimizeJob | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionDataRate-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionDocumentErrors-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionDocumentRate-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestErrors | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestErrors-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestLatency | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestRate | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestRate-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestSuccess | + `ClientId`, `CollectionId`, `CollectionName` |
+| IngestionRequestSuccess-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| KNNRemoteIndexBuildFailureCount | + `ClientId`, `CollectionId`, `CollectionName` |
+| KNNRemoteIndexBuildSuccessCount | + `ClientId`, `CollectionId`, `CollectionName` |
+| KNNRemoteIndexBuildTime | + `ClientId`, `CollectionId`, `CollectionName` |
+| SearchRequestErrors-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| SearchRequestLatency | + `ClientId`, `CollectionId`, `CollectionName` |
+| SearchRequestRate | + `ClientId`, `CollectionId`, `CollectionName` |
+| SearchRequestRate-Shadow | + `ClientId`, `CollectionId`, `CollectionName` |
+| SemanticSearchOCU | + `AwsAccountId`, `CollectionId`<br />+ `ClientId`, `CollectionId`, `CollectionName` |
 
 ## AWS/ApiGateway
 <a name="supported-metrics-ns-aws-apigateway"></a>
@@ -57,17 +57,17 @@ The `AWS/ApiGateway` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| 4xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataProcessed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExecutionError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IntegrationError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IntegrationLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MessageCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 4xx | + `ApiId`<br />+ `ApiId`, `Method`, `Resource`, `Stage` |
+| 5xx | + `ApiId`<br />+ `ApiId`, `Method`, `Resource`, `Stage` |
+| ClientError | + `ApiId`<br />+ `ApiId`, `Route`, `Stage` |
+| ConnectCount | + `ApiId`<br />+ `ApiId`, `Route`, `Stage` |
+| Count | + `ApiId`<br />+ `ApiId`, `Method`, `Resource`, `Stage` |
+| DataProcessed | + `ApiId`<br />+ `ApiId`, `Method`, `Resource`, `Stage` |
+| ExecutionError | + `ApiId`<br />+ `ApiId`, `Route`, `Stage` |
+| IntegrationError | + `ApiId`<br />+ `ApiId`, `Route`, `Stage` |
+| IntegrationLatency | + `ApiId`<br />+ `ApiId`, `Method`, `Resource`, `Stage`<br />+ `ApiId`, `Route`, `Stage` |
+| Latency | + `ApiId`<br />+ `ApiId`, `Method`, `Resource`, `Stage` |
+| MessageCount | + `ApiId`<br />+ `ApiId`, `Route`, `Stage` |
 
 ## AWS/AppFlow
 <a name="supported-metrics-ns-aws-appflow"></a>
@@ -80,11 +80,11 @@ The `AWS/AppFlow` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| FlowExecutionRecordsProcessed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FlowExecutionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FlowExecutionsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FlowExecutionsStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FlowExecutionsSucceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| FlowExecutionRecordsProcessed | + `FlowName` |
+| FlowExecutionTime | + `FlowName` |
+| FlowExecutionsFailed | + `FlowName` |
+| FlowExecutionsStarted | + `FlowName` |
+| FlowExecutionsSucceeded | + `FlowName` |
 
 ## AWS/AppSync
 <a name="supported-metrics-ns-aws-appsync"></a>
@@ -97,44 +97,44 @@ The `AWS/AppSync` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| 4XXError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5XXError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveSubscriptions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CacheHit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CacheMiss | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectServerError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DisconnectClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DisconnectServerError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DisconnectSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GraphQLError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundMessageDelayed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundMessageDropped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundMessageError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundMessageFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundMessageSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidationRequestDropped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidationRequestError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidationRequestFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidationRequestSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidationSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutboundMessages | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublishDataMessageClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublishDataMessageServerError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublishDataMessageSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublishDataMessageSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeServerError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnsubscribeClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnsubscribeServerError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnsubscribeSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 4XXError | + `GraphQLAPIId` |
+| 5XXError | + `GraphQLAPIId` |
+| ActiveConnections | + `GraphQLAPIId` |
+| ActiveSubscriptions | + `GraphQLAPIId` |
+| CacheHit | + `GraphQLAPIId`, `Resolver` |
+| CacheMiss | + `GraphQLAPIId`, `Resolver` |
+| ConnectClientError | + `GraphQLAPIId` |
+| ConnectRequests | + `GraphQLAPIId` |
+| ConnectServerError | + `GraphQLAPIId` |
+| ConnectSuccess | + `GraphQLAPIId` |
+| ConnectionDuration | + `GraphQLAPIId` |
+| DisconnectClientError | + `GraphQLAPIId` |
+| DisconnectServerError | + `GraphQLAPIId` |
+| DisconnectSuccess | + `GraphQLAPIId` |
+| GraphQLError | + `DataSource`, `GraphQLAPIId`<br />+ `GraphQLAPIId`, `Operation`<br />+ `GraphQLAPIId`, `Resolver` |
+| InboundMessageDelayed | + `GraphQLAPIId` |
+| InboundMessageDropped | + `GraphQLAPIId` |
+| InboundMessageError | + `GraphQLAPIId` |
+| InboundMessageFailure | + `GraphQLAPIId` |
+| InboundMessageSuccess | + `GraphQLAPIId` |
+| InvalidationRequestDropped | + `GraphQLAPIId` |
+| InvalidationRequestError | + `GraphQLAPIId` |
+| InvalidationRequestFailure | + `GraphQLAPIId` |
+| InvalidationRequestSuccess | + `GraphQLAPIId` |
+| InvalidationSuccess | + `GraphQLAPIId` |
+| Latency | + `DataSource`, `GraphQLAPIId`<br />+ `GraphQLAPIId`<br />+ `GraphQLAPIId`, `Resolver` |
+| OutboundMessages | + `GraphQLAPIId` |
+| PublishDataMessageClientError | + `GraphQLAPIId` |
+| PublishDataMessageServerError | + `GraphQLAPIId` |
+| PublishDataMessageSize | + `GraphQLAPIId` |
+| PublishDataMessageSuccess | + `GraphQLAPIId` |
+| Requests | + `DataSource`, `GraphQLAPIId`<br />+ `GraphQLAPIId`, `Operation`<br />+ `GraphQLAPIId`, `Resolver` |
+| SubscribeClientError | + `GraphQLAPIId` |
+| SubscribeServerError | + `GraphQLAPIId` |
+| SubscribeSuccess | + `GraphQLAPIId` |
+| UnsubscribeClientError | + `GraphQLAPIId` |
+| UnsubscribeServerError | + `GraphQLAPIId` |
+| UnsubscribeSuccess | + `GraphQLAPIId` |
 
 ## AWS/ApplicationELB
 <a name="supported-metrics-ns-aws-applicationelb"></a>
@@ -148,80 +148,80 @@ The `AWS/ApplicationELB` namespace includes enriched metrics for the following r
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveConnectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveZonalShiftHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AnomalousHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AppCookieNonStickinessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientTLSNegotiationErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedLCUs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DesyncMitigationMode\_NonCompliant\_Request\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DroppedInvalidHeaderRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ELBAuthError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ELBAuthFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ELBAuthLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ELBAuthRefreshTokenSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ELBAuthSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ELBAuthUserClaimsSizeExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExcessiveLowReputationPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForwardedInvalidHeaderRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GrpcRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_3XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_4XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_500\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_502\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_503\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_504\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_5XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Target\_2XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Target\_3XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Target\_4XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Target\_5XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTP\_Fixed\_Response\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTP\_Redirect\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTP\_Redirect\_Url\_Limit\_Exceeded\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthyStateDNS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthyStateRouting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IPv6ProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IPv6RequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LambdaTargetProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LambdaUserError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowReputationPacketsDropped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowReputationRequestsDenied | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MitigatedHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewConnectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NonStickyRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PeakLCUs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RejectedConnectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestCountPerTarget | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReservedLCUs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleEvaluations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetConnectionErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlActiveChannelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlChannelErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlNewChannelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlRequestRejectCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetControlWorkQueueLength | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetResponseTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetTLSNegotiationErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnHealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnhealthyRoutingRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnhealthyStateDNS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnhealthyStateRouting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveConnectionCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ActiveZonalShiftHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| AnomalousHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| AppCookieNonStickinessCount | + `LoadBalancer` |
+| ClientTLSNegotiationErrorCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ConsumedLCUs | + `LoadBalancer` |
+| DesyncMitigationMode\_NonCompliant\_Request\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| DroppedInvalidHeaderRequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ELBAuthError | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ELBAuthFailure | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ELBAuthLatency | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ELBAuthRefreshTokenSuccess | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ELBAuthSuccess | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ELBAuthUserClaimsSizeExceeded | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ExcessiveLowReputationPackets | + `LoadBalancer` |
+| ForwardedInvalidHeaderRequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| GrpcRequestCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| HTTPCode\_ELB\_3XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_ELB\_4XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_ELB\_500\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_ELB\_502\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_ELB\_503\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_ELB\_504\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_ELB\_5XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTPCode\_Target\_2XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| HTTPCode\_Target\_3XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| HTTPCode\_Target\_4XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| HTTPCode\_Target\_5XX\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| HTTP\_Fixed\_Response\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTP\_Redirect\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HTTP\_Redirect\_Url\_Limit\_Exceeded\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| HealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| HealthyStateDNS | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| HealthyStateRouting | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| IPv6ProcessedBytes | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| IPv6RequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| LambdaTargetProcessedBytes | + `LoadBalancer` |
+| LambdaUserError | + `LoadBalancer`, `TargetGroup` |
+| LowReputationPacketsDropped | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| LowReputationRequestsDenied | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| MitigatedHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| NewConnectionCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| NonStickyRequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| PeakLCUs | + `LoadBalancer` |
+| ProcessedBytes | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| RejectedConnectionCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| RequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| RequestCountPerTarget | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| ReservedLCUs | + `LoadBalancer` |
+| RuleEvaluations | + `LoadBalancer` |
+| TargetConnectionErrorCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| TargetControlActiveChannelCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetControlChannelErrorCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetControlNewChannelCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetControlProcessedBytes | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetControlRequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetControlRequestRejectCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetControlWorkQueueLength | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetResponseTime | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| TargetTLSNegotiationErrorCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| UnHealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| UnhealthyRoutingRequestCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| UnhealthyStateDNS | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| UnhealthyStateRouting | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
 
 ### AWS::ElasticLoadBalancingV2::TargetGroup
 <a name="supported-metrics-aws-applicationelb-aws-elasticloadbalancingv2-targetgroup"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| GrpcRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LambdaInternalError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LambdaUserError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestCountPerTarget | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| GrpcRequestCount | + `AvailabilityZone`, `TargetGroup`<br />+ `TargetGroup` |
+| LambdaInternalError | + `TargetGroup` |
+| LambdaUserError | + `TargetGroup` |
+| RequestCountPerTarget | + `AvailabilityZone`, `TargetGroup`<br />+ `TargetGroup` |
 
 ## AWS/Athena
 <a name="supported-metrics-ns-aws-athena"></a>
@@ -234,15 +234,15 @@ The `AWS/Athena` namespace includes enriched metrics for the following resource 
 
 | Metric | Dimensions |
 | --- | --- |
-| DPUConsumed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DPUCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EngineExecutionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryPlanningTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryQueueTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ServicePreProcessingTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ServiceProcessingTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalExecutionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| DPUConsumed | + `WorkGroup` |
+| DPUCount | + `QueryState`, `QueryType`, `WorkGroup` |
+| EngineExecutionTime | + `QueryState`, `QueryType`, `WorkGroup` |
+| ProcessedBytes | + `QueryState`, `QueryType`, `WorkGroup`<br />+ `WorkGroup` |
+| QueryPlanningTime | + `QueryState`, `QueryType`, `WorkGroup` |
+| QueryQueueTime | + `QueryState`, `QueryType`, `WorkGroup` |
+| ServicePreProcessingTime | + `QueryState`, `QueryType`, `WorkGroup` |
+| ServiceProcessingTime | + `QueryState`, `QueryType`, `WorkGroup` |
+| TotalExecutionTime | + `QueryState`, `QueryType`, `WorkGroup` |
 
 ## AWS/Backup
 <a name="supported-metrics-ns-aws-backup"></a>
@@ -255,27 +255,27 @@ The `AWS/Backup` namespace includes enriched metrics for the following resource 
 
 | Metric | Dimensions |
 | --- | --- |
-| NumberOfBackupJobsCompleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfBackupJobsCreated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfBackupJobsExpired | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfBackupJobsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfBackupJobsPartial | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfBackupJobsPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfBackupJobsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfCopyJobsCompleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfCopyJobsCreated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfCopyJobsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfCopyJobsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRecoveryPointsCold | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRecoveryPointsCompleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRecoveryPointsCreating | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRecoveryPointsDeleting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRecoveryPointsExpired | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRecoveryPointsPartial | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRestoreJobsCompleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRestoreJobsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRestoreJobsPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfRestoreJobsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| NumberOfBackupJobsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfBackupJobsCreated | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfBackupJobsExpired | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfBackupJobsFailed | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfBackupJobsPartial | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfBackupJobsPending | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfBackupJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfCopyJobsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfCopyJobsCreated | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfCopyJobsFailed | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfCopyJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRecoveryPointsCold | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRecoveryPointsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRecoveryPointsCreating | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRecoveryPointsDeleting | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRecoveryPointsExpired | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRecoveryPointsPartial | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRestoreJobsCompleted | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRestoreJobsFailed | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRestoreJobsPending | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
+| NumberOfRestoreJobsRunning | + `BackupVaultName`<br />+ `BackupVaultName`, `ResourceType` |
 
 ## AWS/ClientVPN
 <a name="supported-metrics-ns-aws-clientvpn"></a>
@@ -288,21 +288,21 @@ The `AWS/ClientVPN` namespace includes enriched metrics for the following resour
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveConnectionsCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AuthenticationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnectHandlerDeniedConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnectHandlerFailedServiceErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnectHandlerInvalidResponses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnectHandlerOtherExecutionErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnectHandlerThrottlingErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnectHandlerTimeouts | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrlDaysToExpiry | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EgressBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EgressPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngressBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngressPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SelfServicePortalClientConfigurationDownloads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ZeroHealthItemsCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveConnectionsCount | + `Endpoint` |
+| AuthenticationFailures | + `Endpoint` |
+| ClientConnectHandlerDeniedConnections | + `Endpoint` |
+| ClientConnectHandlerFailedServiceErrors | + `Endpoint` |
+| ClientConnectHandlerInvalidResponses | + `Endpoint` |
+| ClientConnectHandlerOtherExecutionErrors | + `Endpoint` |
+| ClientConnectHandlerThrottlingErrors | + `Endpoint` |
+| ClientConnectHandlerTimeouts | + `Endpoint` |
+| CrlDaysToExpiry | + `Endpoint` |
+| EgressBytes | + `Endpoint` |
+| EgressPackets | + `Endpoint` |
+| IngressBytes | + `Endpoint` |
+| IngressPackets | + `Endpoint` |
+| SelfServicePortalClientConfigurationDownloads | + `Endpoint` |
+| ZeroHealthItemsCount | + `Endpoint` |
 
 ## AWS/CloudFront
 <a name="supported-metrics-ns-aws-cloudfront"></a>
@@ -316,25 +316,25 @@ The `AWS/CloudFront` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| 4xxErrorRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xxErrorRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesDownloaded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesUploaded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalErrorRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 4xxErrorRate | + `DistributionId`, `Region` |
+| 5xxErrorRate | + `DistributionId`, `Region` |
+| BytesDownloaded | + `DistributionId`, `Region` |
+| BytesUploaded | + `DistributionId`, `Region` |
+| Requests | + `DistributionId`, `Region` |
+| TotalErrorRate | + `DistributionId`, `Region` |
 
 ### AWS::CloudFront::Function
 <a name="supported-metrics-aws-cloudfront-aws-cloudfront-function"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| FunctionComputeUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FunctionExecutionErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FunctionInvocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FunctionThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FunctionValidationErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KvsReadErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KvsReadRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| FunctionComputeUtilization | + `DistributionId`, `FunctionName`, `Region` |
+| FunctionExecutionErrors | + `DistributionId`, `FunctionName`, `Region` |
+| FunctionInvocations | + `DistributionId`, `FunctionName`, `Region` |
+| FunctionThrottles | + `DistributionId`, `FunctionName`, `Region` |
+| FunctionValidationErrors | + `DistributionId`, `FunctionName`, `Region` |
+| KvsReadErrors | + `DistributionId`, `FunctionName`, `Region` |
+| KvsReadRequests | + `DistributionId`, `FunctionName`, `Region` |
 
 ## AWS/CloudWatch/MetricStreams
 <a name="supported-metrics-ns-aws-cloudwatch-metricstreams"></a>
@@ -347,9 +347,9 @@ The `AWS/CloudWatch/MetricStreams` namespace includes enriched metrics for the f
 
 | Metric | Dimensions |
 | --- | --- |
-| MetricUpdate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublishErrorRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalMetricUpdate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| MetricUpdate | + `MetricStreamName` |
+| PublishErrorRate | + `MetricStreamName` |
+| TotalMetricUpdate | + `MetricStreamName` |
 
 ## AWS/CodeGuruProfiler
 <a name="supported-metrics-ns-aws-codeguruprofiler"></a>
@@ -362,7 +362,7 @@ The `AWS/CodeGuruProfiler` namespace includes enriched metrics for the following
 
 | Metric | Dimensions |
 | --- | --- |
-| Recommendations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| Recommendations | + `ProfilingGroupName` |
 
 ## AWS/Cognito
 <a name="supported-metrics-ns-aws-cognito"></a>
@@ -375,18 +375,18 @@ The `AWS/Cognito` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| AccountTakeoverRisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CompromisedCredentialRisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FederationSuccesses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FederationThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NoRisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Risk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SignInSuccesses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SignInThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SignUpSuccesses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SignUpThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TokenRefreshSuccesses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TokenRefreshThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AccountTakeoverRisk | + `Operation`, `RiskLevel`, `UserPoolId` |
+| CompromisedCredentialRisk | + `Operation`, `RiskLevel`, `UserPoolId` |
+| FederationSuccesses | + `IdentityProvider`, `UserPool`, `UserPoolClient` |
+| FederationThrottles | + `IdentityProvider`, `UserPool`, `UserPoolClient` |
+| NoRisk | + `Operation`, `UserPoolId` |
+| Risk | + `Operation`, `UserPoolId` |
+| SignInSuccesses | + `UserPool`, `UserPoolClient` |
+| SignInThrottles | + `UserPool`, `UserPoolClient` |
+| SignUpSuccesses | + `UserPool`, `UserPoolClient` |
+| SignUpThrottles | + `UserPool`, `UserPoolClient` |
+| TokenRefreshSuccesses | + `UserPool`, `UserPoolClient` |
+| TokenRefreshThrottles | + `UserPool`, `UserPoolClient` |
 
 ## AWS/Connect
 <a name="supported-metrics-ns-aws-connect"></a>
@@ -399,26 +399,26 @@ The `AWS/Connect` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| CallRecordingUploadError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CallsBreachingConcurrencyQuota | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CallsPerInterval | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ChatsBreachingActiveChatQuota | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentActiveChats | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentActiveChatsPercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentCalls | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentCallsPercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentTasks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentTasksPercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ContactFlowErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LongestQueueWaitTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MisconfiguredPhoneNumbers | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MissedCalls | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublicSigningKeyUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueueCapacityExceededError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueueSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SuccessfulChatsPerInterval | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TasksBreachingConcurrencyQuota | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ToInstancePacketLossRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CallRecordingUploadError | + `InstanceId`, `MetricGroup` |
+| CallsBreachingConcurrencyQuota | + `InstanceId`, `MetricGroup` |
+| CallsPerInterval | + `InstanceId`, `MetricGroup` |
+| ChatsBreachingActiveChatQuota | + `InstanceId`, `MetricGroup` |
+| ConcurrentActiveChats | + `InstanceId`, `MetricGroup` |
+| ConcurrentActiveChatsPercentage | + `InstanceId`, `MetricGroup` |
+| ConcurrentCalls | + `InstanceId`, `MetricGroup` |
+| ConcurrentCallsPercentage | + `InstanceId`, `MetricGroup` |
+| ConcurrentTasks | + `InstanceId`, `MetricGroup` |
+| ConcurrentTasksPercentage | + `InstanceId`, `MetricGroup` |
+| ContactFlowErrors | + `ContactFlowName`, `InstanceId`, `MetricGroup` |
+| LongestQueueWaitTime | + `InstanceId`, `MetricGroup`, `QueueName` |
+| MisconfiguredPhoneNumbers | + `InstanceId`, `MetricGroup` |
+| MissedCalls | + `InstanceId`, `MetricGroup` |
+| PublicSigningKeyUsage | + `InstanceId`, `SigningKeyId` |
+| QueueCapacityExceededError | + `InstanceId`, `MetricGroup`, `QueueName` |
+| QueueSize | + `InstanceId`, `MetricGroup`, `QueueName` |
+| SuccessfulChatsPerInterval | + `InstanceId`, `MetricGroup` |
+| TasksBreachingConcurrencyQuota | + `InstanceId`, `MetricGroup` |
+| ToInstancePacketLossRate | + `InstanceId`, `Participant`, `Stream Type`, `Type of Connection` |
 
 ## AWS/DAX
 <a name="supported-metrics-ns-aws-dax"></a>
@@ -431,46 +431,46 @@ The `AWS/DAX` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| BaselineNetworkBytesInUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BaselineNetworkBytesOutUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BatchGetItemRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BatchWriteItemRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSurplusCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSurplusCreditsCharged | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CacheMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeleteItemRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ErrorRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EstimatedDbSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EvictedSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FaultRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetItemRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ItemCacheHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ItemCacheMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxBytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxBytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxPacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxPacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutItemRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryCacheHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryCacheMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScanCacheHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScanCacheMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScanRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactGetItemsCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactWriteItemsCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UpdateItemRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BaselineNetworkBytesInUtilization | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| BaselineNetworkBytesOutUtilization | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| BatchGetItemRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| BatchWriteItemRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| CPUCreditBalance | + `ClusterId`, `NodeId` |
+| CPUCreditUsage | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| CPUSurplusCreditBalance | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| CPUSurplusCreditsCharged | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| CPUUtilization | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| CacheMemoryUtilization | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ClientConnections | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| DeleteItemRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ErrorRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| EstimatedDbSize | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| EvictedSize | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| FailedRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| FaultRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| GetItemRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ItemCacheHits | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ItemCacheMisses | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkBytesIn | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkBytesOut | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkMaxBytesIn | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkMaxBytesOut | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkMaxPacketsIn | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkMaxPacketsOut | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkPacketsIn | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| NetworkPacketsOut | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| PutItemRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| QueryCacheHits | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| QueryCacheMisses | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| QueryRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ScanCacheHits | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ScanCacheMisses | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ScanRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| ThrottledRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| TotalRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| TransactGetItemsCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| TransactWriteItemsCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
+| UpdateItemRequestCount | + `ClusterId`<br />+ `ClusterId`, `NodeId` |
 
 ## AWS/DataSync
 <a name="supported-metrics-ns-aws-datasync"></a>
@@ -483,23 +483,23 @@ The `AWS/DataSync` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| BytesCompressed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesPreparedDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesPreparedSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesTransferred | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesVerifiedDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesVerifiedSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesWritten | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesDeleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesListedSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesPrepared | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesPreparedDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesPreparedSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesSkipped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesTransferred | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesVerified | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesVerifiedDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesVerifiedSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BytesCompressed | + `TaskId` |
+| BytesPreparedDestination | + `TaskId` |
+| BytesPreparedSource | + `TaskId` |
+| BytesTransferred | + `TaskId` |
+| BytesVerifiedDestination | + `TaskId` |
+| BytesVerifiedSource | + `TaskId` |
+| BytesWritten | + `TaskId` |
+| FilesDeleted | + `TaskId` |
+| FilesListedSource | + `TaskId` |
+| FilesPrepared | + `TaskId` |
+| FilesPreparedDestination | + `TaskId` |
+| FilesPreparedSource | + `TaskId` |
+| FilesSkipped | + `TaskId` |
+| FilesTransferred | + `TaskId` |
+| FilesVerified | + `TaskId` |
+| FilesVerifiedDestination | + `TaskId` |
+| FilesVerifiedSource | + `TaskId` |
 
 ## AWS/DocDB
 <a name="supported-metrics-ns-aws-docdb"></a>
@@ -512,61 +512,61 @@ The `AWS/DocDB` namespace includes enriched metrics for the following resource t
 
 | Metric | Dimensions |
 | --- | --- |
-| BackupRetentionPeriodStorageUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BufferCacheHitRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSurplusCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSurplusCreditsCharged | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ChangeStreamLogSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DBClusterReplicaLagMaximum | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DBClusterReplicaLagMinimum | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DBInstanceReplicaLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseConnectionsMax | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseCursors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseCursorsMax | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseCursorsTimedOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskQueueDepth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsDeleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsInserted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsReturned | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsUpdated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EngineUptime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeLocalStorage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeableMemory | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IndexBufferCacheHitRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowMemNumOperationsThrottled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowMemThrottleMaxQueueDepth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowMemThrottleQueueDepth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkReceiveThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkTransmitThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpcountersCommand | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpcountersDelete | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpcountersGetmore | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpcountersInsert | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpcountersQuery | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpcountersUpdate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SnapshotStorageUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SwapUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TTLDeletedDocuments | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalBackupStorageBilled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactionsAborted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactionsCommitted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactionsOpen | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactionsOpenMax | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactionsStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeBytesUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeReadIOPs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeWriteIOPs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BackupRetentionPeriodStorageUsed | + `DBClusterIdentifier` |
+| BufferCacheHitRatio | + `DBClusterIdentifier` |
+| CPUCreditBalance | + `DBClusterIdentifier` |
+| CPUCreditUsage | + `DBClusterIdentifier` |
+| CPUSurplusCreditBalance | + `DBClusterIdentifier` |
+| CPUSurplusCreditsCharged | + `DBClusterIdentifier` |
+| CPUUtilization | + `DBClusterIdentifier` |
+| ChangeStreamLogSize | + `DBClusterIdentifier` |
+| DBClusterReplicaLagMaximum | + `DBClusterIdentifier` |
+| DBClusterReplicaLagMinimum | + `DBClusterIdentifier` |
+| DBInstanceReplicaLag | + `DBClusterIdentifier` |
+| DatabaseConnections | + `DBClusterIdentifier` |
+| DatabaseConnectionsMax | + `DBClusterIdentifier` |
+| DatabaseCursors | + `DBClusterIdentifier` |
+| DatabaseCursorsMax | + `DBClusterIdentifier` |
+| DatabaseCursorsTimedOut | + `DBClusterIdentifier` |
+| DiskQueueDepth | + `DBClusterIdentifier` |
+| DocumentsDeleted | + `DBClusterIdentifier` |
+| DocumentsInserted | + `DBClusterIdentifier` |
+| DocumentsReturned | + `DBClusterIdentifier` |
+| DocumentsUpdated | + `DBClusterIdentifier` |
+| EngineUptime | + `DBClusterIdentifier` |
+| FreeLocalStorage | + `DBClusterIdentifier` |
+| FreeableMemory | + `DBClusterIdentifier` |
+| IndexBufferCacheHitRatio | + `DBClusterIdentifier` |
+| LowMemNumOperationsThrottled | + `DBClusterIdentifier` |
+| LowMemThrottleMaxQueueDepth | + `DBClusterIdentifier` |
+| LowMemThrottleQueueDepth | + `DBClusterIdentifier` |
+| NetworkReceiveThroughput | + `DBClusterIdentifier` |
+| NetworkThroughput | + `DBClusterIdentifier` |
+| NetworkTransmitThroughput | + `DBClusterIdentifier` |
+| OpcountersCommand | + `DBClusterIdentifier` |
+| OpcountersDelete | + `DBClusterIdentifier` |
+| OpcountersGetmore | + `DBClusterIdentifier` |
+| OpcountersInsert | + `DBClusterIdentifier` |
+| OpcountersQuery | + `DBClusterIdentifier` |
+| OpcountersUpdate | + `DBClusterIdentifier` |
+| ReadIOPS | + `DBClusterIdentifier` |
+| ReadLatency | + `DBClusterIdentifier` |
+| ReadThroughput | + `DBClusterIdentifier` |
+| SnapshotStorageUsed | + `DBClusterIdentifier` |
+| SwapUsage | + `DBClusterIdentifier` |
+| TTLDeletedDocuments | + `DBClusterIdentifier` |
+| TotalBackupStorageBilled | + `DBClusterIdentifier` |
+| TransactionsAborted | + `DBClusterIdentifier` |
+| TransactionsCommitted | + `DBClusterIdentifier` |
+| TransactionsOpen | + `DBClusterIdentifier` |
+| TransactionsOpenMax | + `DBClusterIdentifier` |
+| TransactionsStarted | + `DBClusterIdentifier` |
+| VolumeBytesUsed | + `DBClusterIdentifier` |
+| VolumeReadIOPs | + `DBClusterIdentifier` |
+| VolumeWriteIOPs | + `DBClusterIdentifier` |
+| WriteIOPS | + `DBClusterIdentifier` |
+| WriteLatency | + `DBClusterIdentifier` |
+| WriteThroughput | + `DBClusterIdentifier` |
 
 ## AWS/DynamoDB
 <a name="supported-metrics-ns-aws-dynamodb"></a>
@@ -579,22 +579,22 @@ The `AWS/DynamoDB` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| AgeOfOldestUnreplicatedRecord | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConditionalCheckFailedRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedChangeDataCaptureUnits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedReadCapacityUnits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedWriteCapacityUnits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedReadCapacityUnits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedWriteCapacityUnits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadThrottleEvents | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReturnedItemCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SuccessfulRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SystemErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledPutRecordCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToLiveDeletedItemCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TransactionConflict | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteThrottleEvents | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AgeOfOldestUnreplicatedRecord | + `DelegatedOperation`, `TableName` |
+| ConditionalCheckFailedRequests | + `TableName` |
+| ConsumedChangeDataCaptureUnits | + `DelegatedOperation`, `TableName` |
+| ConsumedReadCapacityUnits | + `TableName` |
+| ConsumedWriteCapacityUnits | + `GlobalSecondaryIndexName`, `Source`, `TableName`<br />+ `Source`, `TableName`<br />+ `TableName` |
+| ProvisionedReadCapacityUnits | + `TableName` |
+| ProvisionedWriteCapacityUnits | + `TableName` |
+| ReadThrottleEvents | + `TableName` |
+| ReturnedItemCount | + `Operation`, `TableName`<br />+ `Operation`, `TableName`, `Verb` |
+| SuccessfulRequestLatency | + `Operation`, `OperationType`, `TableName`<br />+ `Operation`, `TableName`<br />+ `Operation`, `TableName`, `Verb` |
+| SystemErrors | + `Operation`, `TableName` |
+| ThrottledPutRecordCount | + `DelegatedOperation`, `TableName` |
+| ThrottledRequests | + `Operation`, `TableName`<br />+ `Operation`, `TableName`, `Verb` |
+| TimeToLiveDeletedItemCount | + `TableName` |
+| TransactionConflict | + `TableName` |
+| WriteThrottleEvents | + `TableName` |
 
 ## AWS/EBS
 <a name="supported-metrics-ns-aws-ebs"></a>
@@ -607,22 +607,22 @@ The `AWS/EBS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| BurstBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeAvgIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeAvgReadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeAvgThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeAvgWriteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeIOPSExceededCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeIdleTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeQueueLength | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeReadOps | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeStalledIOCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeThroughputExceededCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeTotalReadTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeTotalWriteTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeWriteOps | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BurstBalance | + `VolumeId` |
+| VolumeAvgIOPS | + `InstanceId`, `VolumeId` |
+| VolumeAvgReadLatency | + `InstanceId`, `VolumeId` |
+| VolumeAvgThroughput | + `InstanceId`, `VolumeId` |
+| VolumeAvgWriteLatency | + `InstanceId`, `VolumeId` |
+| VolumeIOPSExceededCheck | + `InstanceId`, `VolumeId` |
+| VolumeIdleTime | + `VolumeId` |
+| VolumeQueueLength | + `VolumeId` |
+| VolumeReadBytes | + `VolumeId` |
+| VolumeReadOps | + `VolumeId` |
+| VolumeStalledIOCheck | + `InstanceId`, `VolumeId` |
+| VolumeThroughputExceededCheck | + `InstanceId`, `VolumeId` |
+| VolumeTotalReadTime | + `VolumeId` |
+| VolumeTotalWriteTime | + `VolumeId` |
+| VolumeWriteBytes | + `VolumeId` |
+| VolumeWriteOps | + `VolumeId` |
 
 ## AWS/EC2
 <a name="supported-metrics-ns-aws-ec2"></a>
@@ -637,44 +637,44 @@ The `AWS/EC2` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| DedicatedHostCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| DedicatedHostCPUUtilization | + `HostId` |
 
 ### AWS::EC2::Instance
 <a name="supported-metrics-aws-ec2-aws-ec2-instance"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSurplusCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSurplusCreditsCharged | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskReadOps | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskWriteOps | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EBSByteBalance% | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EBSIOBalance% | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstanceEBSIOPSExceededCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstanceEBSThroughputExceededCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MetadataNoToken | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MetadataNoTokenRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StatusCheckFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StatusCheckFailed\_AttachedEBS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StatusCheckFailed\_Instance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StatusCheckFailed\_System | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CPUCreditBalance | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| CPUCreditUsage | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| CPUSurplusCreditBalance | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| CPUSurplusCreditsCharged | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| CPUUtilization | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| DiskReadBytes | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| DiskReadOps | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| DiskWriteBytes | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| DiskWriteOps | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| EBSByteBalance% | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| EBSIOBalance% | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| InstanceEBSIOPSExceededCheck | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| InstanceEBSThroughputExceededCheck | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| MetadataNoToken | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| MetadataNoTokenRejected | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| NetworkIn | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| NetworkOut | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| NetworkPacketsIn | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| NetworkPacketsOut | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| StatusCheckFailed | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| StatusCheckFailed\_AttachedEBS | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| StatusCheckFailed\_Instance | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
+| StatusCheckFailed\_System | + `ImageId`, `InstanceId`, `InstanceType`<br />+ `InstanceId` |
 
 ### AWS::EC2::VPC
 <a name="supported-metrics-aws-ec2-aws-ec2-vpc"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| NetworkAddressUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkAddressUsagePeered | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| NetworkAddressUsage | + `Per-VPC Metrics` |
+| NetworkAddressUsagePeered | + `Per-VPC Metrics` |
 
 ## AWS/EC2CapacityReservations
 <a name="supported-metrics-ns-aws-ec2capacityreservations"></a>
@@ -687,10 +687,10 @@ The `AWS/EC2CapacityReservations` namespace includes enriched metrics for the fo
 
 | Metric | Dimensions |
 | --- | --- |
-| AvailableInstanceCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstanceUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalInstanceCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UsedInstanceCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AvailableInstanceCount | + `CapacityReservationId` |
+| InstanceUtilization | + `CapacityReservationId` |
+| TotalInstanceCount | + `CapacityReservationId` |
+| UsedInstanceCount | + `CapacityReservationId` |
 
 ## AWS/ECS
 <a name="supported-metrics-ns-aws-ecs"></a>
@@ -704,19 +704,19 @@ The `AWS/ECS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUReservation | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GPUReservation | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryReservation | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CPUReservation | + `ClusterName` |
+| CPUUtilization | + `ClusterName` |
+| GPUReservation | + `ClusterName` |
+| MemoryReservation | + `ClusterName` |
+| MemoryUtilization | + `ClusterName` |
 
 ### AWS::ECS::Service
 <a name="supported-metrics-aws-ecs-aws-ecs-service"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CPUUtilization | + `ClusterName`, `ServiceName` |
+| MemoryUtilization | + `ClusterName`, `ServiceName` |
 
 ## AWS/EFS
 <a name="supported-metrics-ns-aws-efs"></a>
@@ -729,17 +729,17 @@ The `AWS/EFS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| BurstCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadIOBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataWriteIOBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MetadataIOBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MeteredIOBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PercentIOLimit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PermittedThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeSinceLastSync | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalIOBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BurstCreditBalance | + `FileSystemId` |
+| ClientConnections | + `FileSystemId` |
+| DataReadIOBytes | + `FileSystemId` |
+| DataWriteIOBytes | + `FileSystemId` |
+| MetadataIOBytes | + `FileSystemId` |
+| MeteredIOBytes | + `FileSystemId` |
+| PercentIOLimit | + `FileSystemId` |
+| PermittedThroughput | + `FileSystemId` |
+| StorageBytes | + `FileSystemId`, `StorageClass` |
+| TimeSinceLastSync | + `DestinationFileSystemId`, `FileSystemId` |
+| TotalIOBytes | + `FileSystemId` |
 
 ## AWS/EKS
 <a name="supported-metrics-ns-aws-eks"></a>
@@ -752,36 +752,36 @@ The `AWS/EKS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| apiserver\_admission\_webhook\_rejection\_count\_ADMIT | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_admission\_webhook\_rejection\_count\_VALIDATING | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_admission\_webhook\_request\_total | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_admission\_webhook\_request\_total\_ADMIT | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_admission\_webhook\_request\_total\_VALIDATING | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_current\_inflight\_requests\_MUTATING | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_current\_inflight\_requests\_READONLY | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_flowcontrol\_current\_executing\_seats | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_duration\_seconds\_DELETE\_P99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_duration\_seconds\_GET\_P99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_duration\_seconds\_LIST\_P99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_duration\_seconds\_PATCH\_P99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_duration\_seconds\_POST\_P99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_duration\_seconds\_PUT\_P99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_total | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_total\_429 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_total\_4XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_total\_5XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_request\_total\_LIST\_PODS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| apiserver\_storage\_size\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| etcd\_mvcc\_db\_total\_size\_in\_use\_in\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_pending\_pods | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_pending\_pods\_ACTIVEQ | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_pending\_pods\_BACKOFF | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_pending\_pods\_GATED | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_pending\_pods\_UNSCHEDULABLE | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_schedule\_attempts\_ERROR | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_schedule\_attempts\_SCHEDULED | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_schedule\_attempts\_UNSCHEDULABLE | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| scheduler\_schedule\_attempts\_total | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| apiserver\_admission\_webhook\_rejection\_count\_ADMIT | + `ClusterName` |
+| apiserver\_admission\_webhook\_rejection\_count\_VALIDATING | + `ClusterName` |
+| apiserver\_admission\_webhook\_request\_total | + `ClusterName` |
+| apiserver\_admission\_webhook\_request\_total\_ADMIT | + `ClusterName` |
+| apiserver\_admission\_webhook\_request\_total\_VALIDATING | + `ClusterName` |
+| apiserver\_current\_inflight\_requests\_MUTATING | + `ClusterName` |
+| apiserver\_current\_inflight\_requests\_READONLY | + `ClusterName` |
+| apiserver\_flowcontrol\_current\_executing\_seats | + `ClusterName` |
+| apiserver\_request\_duration\_seconds\_DELETE\_P99 | + `ClusterName` |
+| apiserver\_request\_duration\_seconds\_GET\_P99 | + `ClusterName` |
+| apiserver\_request\_duration\_seconds\_LIST\_P99 | + `ClusterName` |
+| apiserver\_request\_duration\_seconds\_PATCH\_P99 | + `ClusterName` |
+| apiserver\_request\_duration\_seconds\_POST\_P99 | + `ClusterName` |
+| apiserver\_request\_duration\_seconds\_PUT\_P99 | + `ClusterName` |
+| apiserver\_request\_total | + `ClusterName` |
+| apiserver\_request\_total\_429 | + `ClusterName` |
+| apiserver\_request\_total\_4XX | + `ClusterName` |
+| apiserver\_request\_total\_5XX | + `ClusterName` |
+| apiserver\_request\_total\_LIST\_PODS | + `ClusterName` |
+| apiserver\_storage\_size\_bytes | + `ClusterName` |
+| etcd\_mvcc\_db\_total\_size\_in\_use\_in\_bytes | + `ClusterName` |
+| scheduler\_pending\_pods | + `ClusterName` |
+| scheduler\_pending\_pods\_ACTIVEQ | + `ClusterName` |
+| scheduler\_pending\_pods\_BACKOFF | + `ClusterName` |
+| scheduler\_pending\_pods\_GATED | + `ClusterName` |
+| scheduler\_pending\_pods\_UNSCHEDULABLE | + `ClusterName` |
+| scheduler\_schedule\_attempts\_ERROR | + `ClusterName` |
+| scheduler\_schedule\_attempts\_SCHEDULED | + `ClusterName` |
+| scheduler\_schedule\_attempts\_UNSCHEDULABLE | + `ClusterName` |
+| scheduler\_schedule\_attempts\_total | + `ClusterName` |
 
 ## AWS/ELB
 <a name="supported-metrics-ns-aws-elb"></a>
@@ -794,20 +794,20 @@ The `AWS/ELB` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| BackendConnectionErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DesyncMitigationMode\_NonCompliant\_Request\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Backend\_2XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Backend\_3XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Backend\_4XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_Backend\_5XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_4XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_ELB\_5XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SpilloverCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SurgeQueueLength | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnHealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BackendConnectionErrors | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| DesyncMitigationMode\_NonCompliant\_Request\_Count | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HTTPCode\_Backend\_2XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HTTPCode\_Backend\_3XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HTTPCode\_Backend\_4XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HTTPCode\_Backend\_5XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HTTPCode\_ELB\_4XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HTTPCode\_ELB\_5XX | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| HealthyHostCount | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| Latency | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| RequestCount | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| SpilloverCount | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| SurgeQueueLength | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
+| UnHealthyHostCount | + `AvailabilityZone`, `LoadBalancerName`<br />+ `LoadBalancerName` |
 
 ## AWS/EMRServerless
 <a name="supported-metrics-ns-aws-emrserverless"></a>
@@ -820,32 +820,32 @@ The `AWS/EMRServerless` namespace includes enriched metrics for the following re
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CancelledJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CancellingJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IdleWorkerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxCPUAllowed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxMemoryAllowed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxStorageAllowed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PendingCreationWorkerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PendingJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RunningJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RunningWorkerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScheduledJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubmittedJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SuccessJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalWorkerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerCpuAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerCpuUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerEphemeralStorageAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerEphemeralStorageUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerMemoryAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerMemoryUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerStorageReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkerStorageWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CPUAllocated | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| CancelledJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| CancellingJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| FailedJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| IdleWorkerCount | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| MaxCPUAllowed | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| MaxMemoryAllowed | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| MaxStorageAllowed | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| MemoryAllocated | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| PendingCreationWorkerCount | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| PendingJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| RunningJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| RunningWorkerCount | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| ScheduledJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| StorageAllocated | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| SubmittedJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| SuccessJobs | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName` |
+| TotalWorkerCount | + `ApplicationId`<br />+ `ApplicationId`, `ApplicationName`<br />+ `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `WorkerType` |
+| WorkerCpuAllocated | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerCpuUsed | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerEphemeralStorageAllocated | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerEphemeralStorageUsed | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerMemoryAllocated | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerMemoryUsed | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerStorageReadBytes | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
+| WorkerStorageWriteBytes | + `ApplicationId`, `ApplicationName`, `CapacityAllocationType`, `JobId`, `JobName`, `WorkerType`<br />+ `ApplicationId`, `CapacityAllocationType`, `JobId`, `WorkerType` |
 
 ## AWS/ES
 <a name="supported-metrics-ns-aws-es"></a>
@@ -858,422 +858,422 @@ The `AWS/ES` namespace includes enriched metrics for the following resource type
 
 | Metric | Dimensions |
 | --- | --- |
-| 2xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 3xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 4xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADAnomalyDetectorsIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADAnomalyDetectorsIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADAnomalyResultsIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADAnomalyResultsIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADExecuteFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADExecuteRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADHCExecuteFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADHCExecuteRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADModelsCheckpointIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADModelsCheckpointIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ADPluginUnhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveDataNode | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingDegraded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingIndexStatus.green | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingIndexStatus.yellow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingNodesNotOnSchedule | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingNodesOnSchedule | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertingScheduledJobEnabled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryCancelApiFailedRequestCusErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryCancelApiFailedRequestSysErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryCancelApiRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryCreateApiFailedRequestCusErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryCreateApiFailedRequestSysErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryCreateApiRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryGetApiFailedRequestCusErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryGetApiFailedRequestSysErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncQueryGetApiRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchCancelled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchCompletionRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchFailureRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchInitializedRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchPersistFailedRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchPersistRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchRunningCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchStoreHealthRed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchStoreSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchStoredResponseCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsynchronousSearchSubmissionRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoFollowLeaderCallFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoFollowNumFailedStartReplication | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoFollowNumSuccessStartReplication | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoTuneChangesHistoryHeapSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoTuneFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoTuneSucceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoTuneValue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutomatedSnapshotFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AvgPointInTimeAliveTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BurstBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CanMatchCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CanMatchTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CanMatchTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClusterIndexWritesBlocked | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClusterStatus.green | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClusterStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClusterStatus.yellow | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClusterUsedSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ColdStorageSpaceUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ColdToWarmMigrationFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ColdToWarmMigrationLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ColdToWarmMigrationQueueSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ColdToWarmMigrationSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ComponentTemplateCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentSearchLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentSearchRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatingWriteRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorFreeStorageSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorJVMGCOldCollectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorJVMGCOldCollectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorJVMGCYoungCollectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorJVMGCYoungCollectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorOldGenJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorSysMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolForce\_mergeQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolForce\_mergeRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolForce\_mergeThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolIndexQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolIndexRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolIndexThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolOpendistro\_monitor\_runnerQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolOpendistro\_monitor\_runnerRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolOpendistro\_monitor\_runnerThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolSearchQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolSearchRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolSearchThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolWriteQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolWriteRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolWriteThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolsql-workerQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolsql-workerRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoordinatorThreadpoolsql-workerThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterInboundReplicationRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterInboundRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterInboundSearchRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterOutboundConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterOutboundReplicationRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterOutboundRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CrossClusterOutboundSearchRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CurrentPointInTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataNodesShards.active | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataNodesShards.initialising | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataNodesShards.relocating | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataNodesShards.unassigned | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeletedDocuments | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DfsPreQueryCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DfsPreQueryTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DfsPreQueryTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DfsQueryCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DfsQueryTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DfsQueryTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskQueueDepth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ESReportingFailedRequestSysErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ESReportingFailedRequestUserErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ESReportingRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ESReportingSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ElasticsearchRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EnforcedWorkloadGroupCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExpandCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExpandTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExpandTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FetchCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FetchTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FetchTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FollowerCheckPoint | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastCheckpointIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastCheckpointIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastConfigIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastConfigIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastExecuteFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastExecuteRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastHCExecuteFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastHCExecuteRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastModelCorruptionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastResultsIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastResultsIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastStateIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastStateIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecastUnhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ForecasterCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeStorageSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HCForecasterCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HasActivePointInTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HasUsedPointInTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HighSwapUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotStorageSpaceUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationForceMergeLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationProcessingLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationQueueSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationSnapshotLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HotToWarmMigrationSuccessLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ISMPolicyCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InFlightFetches | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IndexingLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IndexingRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidHostHeaderRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IopsThrottle | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JVMGCOldCollectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JVMGCOldCollectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JVMGCYoungCollectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JVMGCYoungCollectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KMSKeyError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KMSKeyInaccessible | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNCacheCapacityReached | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNCircuitBreakerTriggered | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNEvictionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNFaissInitialized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNGraphIndexErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNGraphIndexRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNGraphMemoryUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNGraphMemoryUsagePercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNGraphQueryErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNGraphQueryRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNHitCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNLoadExceptionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNLoadSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNLuceneInitialized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNMissCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNNmslibInitialized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNQueryRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNRemoteBuildEnabled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNRemoteIndexBuildFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNRemoteIndexBuildSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNScriptCompilationErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNScriptCompilations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNScriptQueryErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNScriptQueryRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNTotalLoadTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNTrainingErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNTrainingMemoryUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNTrainingMemoryUsagePercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KNNTrainingRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaConcurrentConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaHealthyNode | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaHealthyNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaHeapTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaHeapUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaHeapUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaIndexMigrationFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaOS1MinuteLoad | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaRequestTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KibanaResponseTimesMaxInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRFeatureMemoryUsageInBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRFeaturesetMemoryUsageInBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRModelMemoryUsageInBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRPluginUnhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRRequestErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRRequestTotalCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LTRStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LeaderCheckPoint | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLCircuitBreakerTriggerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLCommonsPluginUnhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLConnectorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLConnectorIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLConnectorIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLDeployedModelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLExecutingTaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLModelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLModelIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLModelIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLTaskIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MLTaskIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterCPUCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterFreeStorageSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterOldGenJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterReachableFromNode | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterSysMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxProvisionedThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlCircuitBreakerTriggerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlConnectorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlConnectorIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlConnectorIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlDeployedModelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlExecutingTaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlModelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlModelIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlModelIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlNodeExecutingTaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlNodeTotalCircuitBreakerTriggerCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlNodeTotalFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlNodeTotalModelCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlNodeTotalRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlTaskIndexStatus.red | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MlTaskIndexStatusIndexExists | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Nodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OldGenJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenContexts | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenContexts-BeagleStone | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsConcurrentConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsHealthyNode | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsHealthyNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsHeapTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsHeapUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsHeapUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsIndexMigrationFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsOS1MinuteLoad | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsRequestTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchDashboardsResponseTimesMaxInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpenSearchRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpensearchDashboardsReportingFailedRequestSysErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpensearchDashboardsReportingFailedRequestUserErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpensearchDashboardsReportingRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OpensearchDashboardsReportingSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PPLFailedRequestCountByCusErr | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PPLFailedRequestCountBySysErr | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PPLRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PrimaryWriteRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryFailure-BeagleStone | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QuerySuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QuerySuccess-BeagleStone | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadIOPSMicroBursting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadThroughputMicroBursting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RemoteStorageUsedSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RemoteStorageWriteRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicaWriteRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationLagMaxTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationNumBootstrappingIndices | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationNumFailedIndices | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationNumIndexTasks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationNumPausedIndices | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationNumShardTasks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationNumSyncingIndices | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SQLDefaultCursorRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SQLFailedRequestCountByCusErr | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SQLFailedRequestCountBySysErr | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SQLRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SQLUnhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScrollCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScrollCurrent-BeagleStone | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScrollTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ScrollTotal-BeagleStone | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchIdleReactivateCountTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchPipelineRequestFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchPipelineRequestTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchPipelineUnhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchShardTaskCancelled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchTaskCancelled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchableDocuments | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SegmentCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ShardCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Shards.active | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Shards.activePrimary | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Shards.delayedUnassigned | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Shards.initializing | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Shards.relocating | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Shards.unassigned | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SingleStreamForecasterCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SnapshotCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SnapshotFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SoftWorkloadGroupCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SysMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSNegotiationError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolBulkQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolBulkRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolBulkThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolForce\_mergeQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolForce\_mergeRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolForce\_mergeThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolIndexQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolIndexRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolIndexSearcherQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolIndexSearcherRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolIndexSearcherThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolIndexThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolMergeQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolMergeRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolMergeThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolOpendistro\_monitor\_runnerQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolOpendistro\_monitor\_runnerRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolOpendistro\_monitor\_runnerThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolSearchQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolSearchRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolSearchThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolWriteQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolWriteRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThreadpoolWriteThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Threadpoolsql-workerQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Threadpoolsql-workerRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Threadpoolsql-workerThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThroughputThrottle | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TookCurrent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TookTimeInMillis | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TookTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalPointInTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalRemoteReindexCallsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalRemoteReindexCallsSucceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VolumeStalledIOCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmConcurrentSearchLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmConcurrentSearchRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmFreeStorageSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmJVMGCOldCollectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmJVMGCOldCollectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmJVMGCYoungCollectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmJVMGCYoungCollectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmOldGenJVMMemoryPressure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmSearchLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmSearchRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmSearchableDocuments | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmStorageSpaceUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmSysMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmThreadpoolIndexSearcherQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmThreadpoolIndexSearcherRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmThreadpoolIndexSearcherThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmThreadpoolSearchQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmThreadpoolSearchRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmThreadpoolSearchThreads | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmToColdMigrationFailureCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmToColdMigrationLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmToColdMigrationQueueSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmToColdMigrationSuccessCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WarmToHotMigrationQueueSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkloadCPUCancellations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkloadCPURejections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkloadManagementEnabled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkloadMemoryCancellations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WorkloadQueryCompletions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteIOPSMicroBursting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteThroughputMicroBursting | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| warmQueryFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| warmQuerySuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 2xx | + `ClientId`, `DomainName` |
+| 3xx | + `ClientId`, `DomainName` |
+| 4xx | + `ClientId`, `DomainName` |
+| 5xx | + `ClientId`, `DomainName` |
+| ADAnomalyDetectorsIndexStatus.red | + `ClientId`, `DomainName` |
+| ADAnomalyDetectorsIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ADAnomalyResultsIndexStatus.red | + `ClientId`, `DomainName` |
+| ADAnomalyResultsIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ADExecuteFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ADExecuteRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ADHCExecuteFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ADHCExecuteRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ADModelsCheckpointIndexStatus.red | + `ClientId`, `DomainName` |
+| ADModelsCheckpointIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ADPluginUnhealthy | + `ClientId`, `DomainName` |
+| ActiveDataNode | + `ClientId`, `DomainName`, `NodeId` |
+| AlertingDegraded | + `ClientId`, `DomainName` |
+| AlertingIndexExists | + `ClientId`, `DomainName` |
+| AlertingIndexStatus.green | + `ClientId`, `DomainName` |
+| AlertingIndexStatus.red | + `ClientId`, `DomainName` |
+| AlertingIndexStatus.yellow | + `ClientId`, `DomainName` |
+| AlertingNodesNotOnSchedule | + `ClientId`, `DomainName` |
+| AlertingNodesOnSchedule | + `ClientId`, `DomainName` |
+| AlertingScheduledJobEnabled | + `ClientId`, `DomainName` |
+| AsyncQueryCancelApiFailedRequestCusErrCount | + `ClientId`, `DomainName` |
+| AsyncQueryCancelApiFailedRequestSysErrCount | + `ClientId`, `DomainName` |
+| AsyncQueryCancelApiRequestCount | + `ClientId`, `DomainName` |
+| AsyncQueryCreateApiFailedRequestCusErrCount | + `ClientId`, `DomainName` |
+| AsyncQueryCreateApiFailedRequestSysErrCount | + `ClientId`, `DomainName` |
+| AsyncQueryCreateApiRequestCount | + `ClientId`, `DomainName` |
+| AsyncQueryGetApiFailedRequestCusErrCount | + `ClientId`, `DomainName` |
+| AsyncQueryGetApiFailedRequestSysErrCount | + `ClientId`, `DomainName` |
+| AsyncQueryGetApiRequestCount | + `ClientId`, `DomainName` |
+| AsynchronousSearchCancelled | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchCompletionRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchFailureRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchInitializedRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchPersistFailedRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchPersistRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchRunningCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AsynchronousSearchStoreHealthRed | + `ClientId`, `DomainName` |
+| AsynchronousSearchStoreSize | + `ClientId`, `DomainName` |
+| AsynchronousSearchStoredResponseCount | + `ClientId`, `DomainName` |
+| AsynchronousSearchSubmissionRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| AutoFollowLeaderCallFailure | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
+| AutoFollowNumFailedStartReplication | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
+| AutoFollowNumSuccessStartReplication | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
+| AutoTuneChangesHistoryHeapSize | + `AutotuningType`, `ClientId`, `DomainName`, `TargetId` |
+| AutoTuneFailed | + `AutotuningType`, `ClientId`, `DomainName`, `TargetId` |
+| AutoTuneSucceeded | + `AutotuningType`, `ClientId`, `DomainName`, `TargetId` |
+| AutoTuneValue | + `AutotuningType`, `ClientId`, `DomainName`, `TargetId` |
+| AutomatedSnapshotFailure | + `ClientId`, `DomainName` |
+| AvgPointInTimeAliveTime | + `ClientId`, `DomainName` |
+| BurstBalance | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CPUCreditBalance | + `ClientId`, `DomainName` |
+| CPUUtilization | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CanMatchCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CanMatchTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CanMatchTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ClusterIndexWritesBlocked | + `ClientId`, `DomainName` |
+| ClusterStatus.green | + `ClientId`, `DomainName` |
+| ClusterStatus.red | + `ClientId`, `DomainName` |
+| ClusterStatus.yellow | + `ClientId`, `DomainName` |
+| ClusterUsedSpace | + `ClientId`, `DomainName` |
+| ColdStorageSpaceUtilization | + `ClientId`, `DomainName` |
+| ColdToWarmMigrationFailureCount | + `ClientId`, `DomainName` |
+| ColdToWarmMigrationLatency | + `ClientId`, `DomainName` |
+| ColdToWarmMigrationQueueSize | + `ClientId`, `DomainName` |
+| ColdToWarmMigrationSuccessCount | + `ClientId`, `DomainName` |
+| ComponentTemplateCount | + `ClientId`, `DomainName` |
+| ConcurrentSearchLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ConcurrentSearchRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatingWriteRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorCPUUtilization | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorFreeStorageSpace | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorJVMGCOldCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorJVMGCOldCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorJVMGCYoungCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorJVMGCYoungCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorJVMMemoryPressure | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorOldGenJVMMemoryPressure | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorSysMemoryUtilization | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolForce\_mergeQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolForce\_mergeRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolForce\_mergeThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolIndexQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolIndexRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolIndexThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolOpendistro\_monitor\_runnerQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolOpendistro\_monitor\_runnerRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolOpendistro\_monitor\_runnerThreads | + `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolSearchQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolSearchRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolSearchThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolWriteQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolWriteRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolWriteThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolsql-workerQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolsql-workerRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CoordinatorThreadpoolsql-workerThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| CrossClusterInboundReplicationRequests | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CrossClusterInboundRequests | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CrossClusterInboundSearchRequests | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CrossClusterOutboundConnections | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CrossClusterOutboundReplicationRequests | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CrossClusterOutboundRequests | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CrossClusterOutboundSearchRequests | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName` |
+| CurrentPointInTime | + `ClientId`, `DomainName`, `NodeId` |
+| DataNodes | + `ActiveAZ`, `ClientId`, `DomainName` |
+| DataNodesShards.active | + `ActiveAZ`, `ClientId`, `DomainName` |
+| DataNodesShards.initialising | + `ActiveAZ`, `ClientId`, `DomainName` |
+| DataNodesShards.relocating | + `ActiveAZ`, `ClientId`, `DomainName` |
+| DataNodesShards.unassigned | + `ActiveAZ`, `ClientId`, `DomainName` |
+| DeletedDocuments | + `ClientId`, `DomainName` |
+| DfsPreQueryCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| DfsPreQueryTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| DfsPreQueryTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| DfsQueryCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| DfsQueryTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| DfsQueryTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| DiskQueueDepth | + `ClientId`, `DomainName` |
+| ESReportingFailedRequestSysErrCount | + `ClientId`, `DomainName` |
+| ESReportingFailedRequestUserErrCount | + `ClientId`, `DomainName` |
+| ESReportingRequestCount | + `ClientId`, `DomainName` |
+| ESReportingSuccessCount | + `ClientId`, `DomainName` |
+| ElasticsearchRequests | + `ClientId`, `DomainName` |
+| EnforcedWorkloadGroupCount | + `ClientId`, `DomainName` |
+| ExpandCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ExpandTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ExpandTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| FetchCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| FetchTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| FetchTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| FollowerCheckPoint | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
+| ForecastCheckpointIndexStatus.red | + `ClientId`, `DomainName` |
+| ForecastCheckpointIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ForecastConfigIndexStatus.red | + `ClientId`, `DomainName` |
+| ForecastConfigIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ForecastExecuteFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ForecastExecuteRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ForecastHCExecuteFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ForecastHCExecuteRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ForecastModelCorruptionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ForecastResultsIndexStatus.red | + `ClientId`, `DomainName` |
+| ForecastResultsIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ForecastStateIndexStatus.red | + `ClientId`, `DomainName` |
+| ForecastStateIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| ForecastUnhealthy | + `ClientId`, `DomainName` |
+| ForecasterCount | + `ClientId`, `DomainName` |
+| FreeStorageSpace | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| HCForecasterCount | + `ClientId`, `DomainName` |
+| HasActivePointInTime | + `ClientId`, `DomainName` |
+| HasUsedPointInTime | + `ClientId`, `DomainName` |
+| HighSwapUsage | + `ClientId`, `DomainName`, `NodeId` |
+| HotStorageSpaceUtilization | + `ClientId`, `DomainName` |
+| HotToWarmMigrationFailureCount | + `ClientId`, `DomainName` |
+| HotToWarmMigrationForceMergeLatency | + `ClientId`, `DomainName` |
+| HotToWarmMigrationProcessingLatency | + `ClientId`, `DomainName` |
+| HotToWarmMigrationQueueSize | + `ClientId`, `DomainName` |
+| HotToWarmMigrationSnapshotLatency | + `ClientId`, `DomainName` |
+| HotToWarmMigrationSuccessCount | + `ClientId`, `DomainName` |
+| HotToWarmMigrationSuccessLatency | + `ClientId`, `DomainName` |
+| ISMPolicyCount | + `ClientId`, `DomainName` |
+| InFlightFetches | + `ClientId`, `DomainName` |
+| IndexingLatency | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| IndexingRate | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| InvalidHostHeaderRequests | + `ClientId`, `DomainName` |
+| IopsThrottle | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| JVMGCOldCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| JVMGCOldCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| JVMGCYoungCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| JVMGCYoungCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| JVMMemoryPressure | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KMSKeyError | + `ClientId`, `DomainName` |
+| KMSKeyInaccessible | + `ClientId`, `DomainName` |
+| KNNCacheCapacityReached | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNCircuitBreakerTriggered | + `ClientId`, `DomainName` |
+| KNNEvictionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNFaissInitialized | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNGraphIndexErrors | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNGraphIndexRequests | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNGraphMemoryUsage | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNGraphMemoryUsagePercentage | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNGraphQueryErrors | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNGraphQueryRequests | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNHitCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNLoadExceptionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNLoadSuccessCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNLuceneInitialized | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNMissCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNNmslibInitialized | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNQueryRequests | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNRemoteBuildEnabled | + `ClientId`, `DomainName` |
+| KNNRemoteIndexBuildFailureCount | + `ClientId`, `DomainName` |
+| KNNRemoteIndexBuildSuccessCount | + `ClientId`, `DomainName` |
+| KNNScriptCompilationErrors | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNScriptCompilations | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNScriptQueryErrors | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNScriptQueryRequests | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNTotalLoadTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNTrainingErrors | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNTrainingMemoryUsage | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNTrainingMemoryUsagePercentage | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KNNTrainingRequests | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| KibanaConcurrentConnections | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaHealthyNode | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaHealthyNodes | + `ClientId`, `DomainName` |
+| KibanaHeapTotal | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaHeapUsed | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaHeapUtilization | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaIndexMigrationFailed | + `ClientId`, `DomainName` |
+| KibanaOS1MinuteLoad | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaRequestTotal | + `ClientId`, `DomainName`, `NodeId` |
+| KibanaResponseTimesMaxInMillis | + `ClientId`, `DomainName`, `NodeId` |
+| LTRFeatureMemoryUsageInBytes | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| LTRFeaturesetMemoryUsageInBytes | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| LTRModelMemoryUsageInBytes | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| LTRPluginUnhealthy | + `ClientId`, `DomainName` |
+| LTRRequestErrorCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| LTRRequestTotalCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| LTRStatus.red | + `ClientId`, `DomainName` |
+| LeaderCheckPoint | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
+| MLCircuitBreakerTriggerCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MLCommonsPluginUnhealthy | + `ClientId`, `DomainName` |
+| MLConnectorCount | + `ClientId`, `DomainName` |
+| MLConnectorIndexStatus.red | + `ClientId`, `DomainName` |
+| MLConnectorIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| MLDeployedModelCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MLExecutingTaskCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MLFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MLModelCount | + `ClientId`, `DomainName` |
+| MLModelIndexStatus.red | + `ClientId`, `DomainName` |
+| MLModelIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| MLRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MLTaskIndexStatus.red | + `ClientId`, `DomainName` |
+| MLTaskIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| MasterCPUCreditBalance | + `ClientId`, `DomainName` |
+| MasterCPUUtilization | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MasterFreeStorageSpace | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MasterJVMMemoryPressure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MasterOldGenJVMMemoryPressure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MasterReachableFromNode | + `ClientId`, `DomainName` |
+| MasterSysMemoryUtilization | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MaxProvisionedThroughput | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlCircuitBreakerTriggerCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlConnectorCount | + `ClientId`, `DomainName` |
+| MlConnectorIndexStatus.red | + `ClientId`, `DomainName` |
+| MlConnectorIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| MlDeployedModelCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlExecutingTaskCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlModelCount | + `ClientId`, `DomainName` |
+| MlModelIndexStatus.red | + `ClientId`, `DomainName` |
+| MlModelIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| MlNodeExecutingTaskCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlNodeTotalCircuitBreakerTriggerCount | + `ClientId`, `DomainName`, `NodeId` |
+| MlNodeTotalFailureCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlNodeTotalModelCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlNodeTotalRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlRequestCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| MlTaskIndexStatus.red | + `ClientId`, `DomainName` |
+| MlTaskIndexStatusIndexExists | + `ClientId`, `DomainName` |
+| Nodes | + `ClientId`, `DomainName` |
+| OldGenJVMMemoryPressure | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| OpenContexts | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| OpenContexts-BeagleStone | + `ClientId`, `DomainName` |
+| OpenSearchDashboardsConcurrentConnections | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsHealthyNode | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsHealthyNodes | + `ClientId`, `DomainName` |
+| OpenSearchDashboardsHeapTotal | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsHeapUsed | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsHeapUtilization | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsIndexMigrationFailed | + `ClientId`, `DomainName` |
+| OpenSearchDashboardsOS1MinuteLoad | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsRequestTotal | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchDashboardsResponseTimesMaxInMillis | + `ClientId`, `DomainName`, `NodeId` |
+| OpenSearchRequests | + `ClientId`, `DomainName` |
+| OpensearchDashboardsReportingFailedRequestSysErrCount | + `ClientId`, `DomainName` |
+| OpensearchDashboardsReportingFailedRequestUserErrCount | + `ClientId`, `DomainName` |
+| OpensearchDashboardsReportingRequestCount | + `ClientId`, `DomainName` |
+| OpensearchDashboardsReportingSuccessCount | + `ClientId`, `DomainName` |
+| PPLFailedRequestCountByCusErr | + `ClientId`, `DomainName` |
+| PPLFailedRequestCountBySysErr | + `ClientId`, `DomainName` |
+| PPLRequestCount | + `ClientId`, `DomainName` |
+| PrimaryWriteRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| QueryCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| QueryFailure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| QueryFailure-BeagleStone | + `ClientId`, `DomainName` |
+| QuerySuccess | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| QuerySuccess-BeagleStone | + `ClientId`, `DomainName` |
+| QueryTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| QueryTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReadIOPS | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReadIOPSMicroBursting | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReadLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReadThroughput | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReadThroughputMicroBursting | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| RemoteStorageUsedSpace | + `ClientId`, `DomainName` |
+| RemoteStorageWriteRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReplicaWriteRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReplicationLagMaxTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ReplicationNumBootstrappingIndices | + `ClientId`, `DomainName` |
+| ReplicationNumFailedIndices | + `ClientId`, `DomainName` |
+| ReplicationNumIndexTasks | + `ClientId`, `DomainName` |
+| ReplicationNumPausedIndices | + `ClientId`, `DomainName` |
+| ReplicationNumShardTasks | + `ClientId`, `DomainName` |
+| ReplicationNumSyncingIndices | + `ClientId`, `DomainName` |
+| ReplicationRate | + `ClientId`, `ConnectionId`, `DomainName`<br />+ `ClientId`, `DomainName`, `LeaderAlias` |
+| SQLDefaultCursorRequestCount | + `ClientId`, `DomainName` |
+| SQLFailedRequestCountByCusErr | + `ClientId`, `DomainName` |
+| SQLFailedRequestCountBySysErr | + `ClientId`, `DomainName` |
+| SQLRequestCount | + `ClientId`, `DomainName` |
+| SQLUnhealthy | + `ClientId`, `DomainName` |
+| ScrollCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ScrollCurrent-BeagleStone | + `ClientId`, `DomainName` |
+| ScrollTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ScrollTotal-BeagleStone | + `ClientId`, `DomainName` |
+| SearchIdleReactivateCountTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| SearchLatency | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| SearchPipelineRequestFailure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `Processor` |
+| SearchPipelineRequestTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `Processor` |
+| SearchPipelineUnhealthy | + `ClientId`, `DomainName` |
+| SearchRate | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| SearchShardTaskCancelled | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| SearchTaskCancelled | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| SearchableDocuments | + `ClientId`, `DomainName` |
+| SegmentCount | + `ClientId`, `DomainName`, `NodeId` |
+| ShardCount | + `ActiveAZ`, `ClientId`, `DomainName`, `NodeId`, `ShardRole`<br />+ `ActiveAZ`, `ClientId`, `DomainName`, `ShardRole`<br />+ `ClientId`, `DomainName`, `NodeId`, `ShardRole` |
+| Shards.active | + `ClientId`, `DomainName` |
+| Shards.activePrimary | + `ClientId`, `DomainName` |
+| Shards.delayedUnassigned | + `ClientId`, `DomainName` |
+| Shards.initializing | + `ClientId`, `DomainName` |
+| Shards.relocating | + `ClientId`, `DomainName` |
+| Shards.unassigned | + `ClientId`, `DomainName` |
+| SingleStreamForecasterCount | + `ClientId`, `DomainName` |
+| SnapshotCount | + `ClientId`, `DomainName`, `Repository` |
+| SnapshotFailures | + `ClientId`, `DomainName`, `Repository` |
+| SoftWorkloadGroupCount | + `ClientId`, `DomainName` |
+| SysMemoryUtilization | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| TLSNegotiationError | + `ClientId`, `DomainName` |
+| ThreadCount | + `ClientId`, `DomainName` |
+| ThreadpoolBulkQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolBulkRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolBulkThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolForce\_mergeQueue | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolForce\_mergeRejected | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolForce\_mergeThreads | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolIndexQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolIndexRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolIndexSearcherQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolIndexSearcherRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolIndexSearcherThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolIndexThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolMergeQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolMergeRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolMergeThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolOpendistro\_monitor\_runnerQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolOpendistro\_monitor\_runnerRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolOpendistro\_monitor\_runnerThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolSearchQueue | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolSearchRejected | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolSearchThreads | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolWriteQueue | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolWriteRejected | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThreadpoolWriteThreads | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| Threadpoolsql-workerQueue | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| Threadpoolsql-workerRejected | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| Threadpoolsql-workerThreads | + `ActiveAZ`, `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| ThroughputThrottle | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| TookCurrent | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| TookTimeInMillis | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| TookTotal | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `InstanceId`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| TotalPointInTime | + `ClientId`, `DomainName`, `NodeId` |
+| TotalRemoteReindexCallsFailed | + `ClientId`, `DomainName`, `RemoteDomain` |
+| TotalRemoteReindexCallsSucceeded | + `ClientId`, `DomainName`, `RemoteDomain` |
+| VolumeStalledIOCheck | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmCPUUtilization | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmConcurrentSearchLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmConcurrentSearchRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmFreeStorageSpace | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmJVMGCOldCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmJVMGCOldCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmJVMGCYoungCollectionCount | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmJVMGCYoungCollectionTime | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmJVMMemoryPressure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmNodes | + `ClientId`, `DomainName` |
+| WarmOldGenJVMMemoryPressure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmSearchLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmSearchRate | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmSearchableDocuments | + `ClientId`, `DomainName` |
+| WarmStorageSpaceUtilization | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmSysMemoryUtilization | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmThreadpoolIndexSearcherQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmThreadpoolIndexSearcherRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmThreadpoolIndexSearcherThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmThreadpoolSearchQueue | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmThreadpoolSearchRejected | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmThreadpoolSearchThreads | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WarmToColdMigrationFailureCount | + `ClientId`, `DomainName` |
+| WarmToColdMigrationLatency | + `ClientId`, `DomainName` |
+| WarmToColdMigrationQueueSize | + `ClientId`, `DomainName` |
+| WarmToColdMigrationSuccessCount | + `ClientId`, `DomainName` |
+| WarmToHotMigrationQueueSize | + `ClientId`, `DomainName` |
+| WorkloadCPUCancellations | + `ClientId`, `DomainName` |
+| WorkloadCPURejections | + `ClientId`, `DomainName` |
+| WorkloadManagementEnabled | + `ClientId`, `DomainName` |
+| WorkloadMemoryCancellations | + `ClientId`, `DomainName` |
+| WorkloadQueryCompletions | + `ClientId`, `DomainName` |
+| WriteIOPS | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WriteIOPSMicroBursting | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WriteLatency | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WriteThroughput | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| WriteThroughputMicroBursting | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| warmQueryFailure | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
+| warmQuerySuccess | + `ClientId`, `DomainName`<br />+ `ClientId`, `DomainName`, `NodeId` |
 
 ## AWS/ElastiCache
 <a name="supported-metrics-ns-aws-elasticache"></a>
@@ -1287,107 +1287,107 @@ The `AWS/ElastiCache` namespace includes enriched metrics for the following reso
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveDefragHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AuthenticationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesReadIntoMemcached | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesUsedForCache | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesUsedForCacheItems | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesUsedForHash | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesWrittenOutFromMemcached | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUCreditUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CacheHitRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CacheHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CacheMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CasBadval | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CasHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CasMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CmdConfigGet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CmdConfigSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CmdFlush | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CmdGet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CmdSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CmdTouch | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CommandAuthorizationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CurrConfig | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CurrConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CurrItems | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DB0AverageTTL | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseMemoryUsagePercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DecrHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DecrMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeleteHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeleteMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EngineCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EvalBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EvalBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EvictedUnfetched | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Evictions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExpiredUnfetched | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeableMemory | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GeoSpatialBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GeoSpatialBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetTypeCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetTypeCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HashBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HashBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HyperLogLogBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HyperLogLogBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncrHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncrMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IsMaster | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyAuthorizationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeysTracked | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ListBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ListBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MasterLinkHealthStatus | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryFragmentationRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBandwidthInAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBandwidthOutAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkConntrackAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkLinkLocalAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsPerSecondAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewItems | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PubSubBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PubSubBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Reclaimed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SaveInProgress | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SetBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SetBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SetTypeCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SetTypeCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SlabsMoved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SortedSetBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SortedSetBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StreamBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StreamBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StringBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StringBasedCmdsLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SwapUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TouchHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TouchMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnusedMemory | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveDefragHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| AuthenticationFailures | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| BytesReadIntoMemcached | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| BytesUsedForCache | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId`<br />+ `CacheClusterId`, `CacheNodeId`, `Tier` |
+| BytesUsedForCacheItems | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| BytesUsedForHash | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| BytesWrittenOutFromMemcached | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CPUCreditBalance | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CPUCreditUsage | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CPUUtilization | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CacheHitRate | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CacheHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CacheMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CasBadval | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CasHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CasMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CmdConfigGet | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CmdConfigSet | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CmdFlush | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CmdGet | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CmdSet | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CmdTouch | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CommandAuthorizationFailures | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CurrConfig | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CurrConnections | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| CurrItems | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId`<br />+ `CacheClusterId`, `CacheNodeId`, `Tier` |
+| DB0AverageTTL | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DatabaseMemoryUsagePercentage | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DecrHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DecrMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DeleteHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| DeleteMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| EngineCPUUtilization | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| EvalBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| EvalBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| EvictedUnfetched | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| Evictions | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ExpiredUnfetched | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| FreeableMemory | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| GeoSpatialBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| GeoSpatialBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| GetHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| GetMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| GetTypeCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| GetTypeCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| HashBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| HashBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| HyperLogLogBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| HyperLogLogBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| IncrHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| IncrMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| IsMaster | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| KeyAuthorizationFailures | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| KeyBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| KeyBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| KeysTracked | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ListBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ListBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| MasterLinkHealthStatus | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| MemoryFragmentationRatio | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkBandwidthInAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkBandwidthOutAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkBytesIn | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkBytesOut | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkConntrackAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkLinkLocalAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkPacketsIn | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkPacketsOut | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NetworkPacketsPerSecondAllowanceExceeded | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NewConnections | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| NewItems | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| PubSubBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| PubSubBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| Reclaimed | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ReplicationBytes | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| ReplicationLag | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SaveInProgress | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SetBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SetBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SetTypeCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SetTypeCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SlabsMoved | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SortedSetBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SortedSetBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| StreamBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| StreamBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| StringBasedCmds | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| StringBasedCmdsLatency | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| SwapUsage | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| TouchHits | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| TouchMisses | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
+| UnusedMemory | + `CacheClusterId`<br />+ `CacheClusterId`, `CacheNodeId` |
 
 ### AWS::ElastiCache::ReplicationGroup
 <a name="supported-metrics-aws-elasticache-aws-elasticache-replicationgroup"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| DatabaseCapacityUsageCountedForEvictPercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseMemoryUsageCountedForEvictPercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EngineCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| DatabaseCapacityUsageCountedForEvictPercentage | + `NodeGroupId`, `ReplicationGroupId`<br />+ `ReplicationGroupId` |
+| DatabaseMemoryUsageCountedForEvictPercentage | + `NodeGroupId`, `ReplicationGroupId`<br />+ `ReplicationGroupId` |
+| EngineCPUUtilization | + `NodeGroupId`, `ReplicationGroupId`<br />+ `ReplicationGroupId`<br />+ `ReplicationGroupId`, `Role` |
 
 ## AWS/ElasticBeanstalk
 <a name="supported-metrics-ns-aws-elasticbeanstalk"></a>
@@ -1400,40 +1400,40 @@ The `AWS/ElasticBeanstalk` namespace includes enriched metrics for the following
 
 | Metric | Dimensions |
 | --- | --- |
-| ApplicationLatencyP10 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP50 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP75 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP85 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP90 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP95 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP99 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationLatencyP99.9 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationRequests2xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationRequests3xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationRequests4xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationRequests5xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApplicationRequestsTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUIdle | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUIowait | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUIrq | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUNice | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUPrivileged | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSoftirq | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUSystem | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUser | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EnvironmentHealth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstanceHealth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesDegraded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesInfo | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesNoData | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesOk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesSevere | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesUnknown | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InstancesWarning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LoadAverage1min | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LoadAverage5min | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RootFilesystemUtil | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ApplicationLatencyP10 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP50 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP75 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP85 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP90 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP95 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP99 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationLatencyP99.9 | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationRequests2xx | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationRequests3xx | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationRequests4xx | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationRequests5xx | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| ApplicationRequestsTotal | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
+| CPUIdle | + `EnvironmentName`, `InstanceId` |
+| CPUIowait | + `EnvironmentName`, `InstanceId` |
+| CPUIrq | + `EnvironmentName`, `InstanceId` |
+| CPUNice | + `EnvironmentName`, `InstanceId` |
+| CPUPrivileged | + `EnvironmentName`, `InstanceId` |
+| CPUSoftirq | + `EnvironmentName`, `InstanceId` |
+| CPUSystem | + `EnvironmentName`, `InstanceId` |
+| CPUUser | + `EnvironmentName`, `InstanceId` |
+| EnvironmentHealth | + `EnvironmentName` |
+| InstanceHealth | + `EnvironmentName`, `InstanceId` |
+| InstancesDegraded | + `EnvironmentName` |
+| InstancesInfo | + `EnvironmentName` |
+| InstancesNoData | + `EnvironmentName` |
+| InstancesOk | + `EnvironmentName` |
+| InstancesPending | + `EnvironmentName` |
+| InstancesSevere | + `EnvironmentName` |
+| InstancesUnknown | + `EnvironmentName` |
+| InstancesWarning | + `EnvironmentName` |
+| LoadAverage1min | + `EnvironmentName`, `InstanceId` |
+| LoadAverage5min | + `EnvironmentName`, `InstanceId` |
+| RootFilesystemUtil | + `EnvironmentName`<br />+ `EnvironmentName`, `InstanceId` |
 
 ## AWS/ElasticMapReduce
 <a name="supported-metrics-ns-aws-elasticmapreduce"></a>
@@ -1446,62 +1446,62 @@ The `AWS/ElasticMapReduce` namespace includes enriched metrics for the following
 
 | Metric | Dimensions |
 | --- | --- |
-| AppsCompleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AppsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AppsKilled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AppsPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AppsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AppsSubmitted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AutoTerminationIsClusterIdle | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ContainerAllocated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ContainerPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ContainerPendingRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ContainerReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreNodesPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreNodesRequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreNodesRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreUnitsRequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreUnitsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreVCPURequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CoreVCPURunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HDFSBytesRead | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HDFSBytesWritten | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HDFSUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IsIdle | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JobsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JobsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LiveDataNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LiveTaskTrackers | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MRActiveNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MRDecommissionedNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MRLostNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MRTotalNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MRUnhealthyNodes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MapSlotsOpen | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MapTasksRemaining | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MapTasksRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MissingBlocks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReduceSlotsOpen | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReduceTasksRemaining | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReduceTasksRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RemainingMapTasksPerSlot | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| S3BytesRead | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| S3BytesWritten | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskNodesPending | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskNodesRequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskNodesRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskUnitsRequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskUnitsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskVCPURequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskVCPURunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalLoad | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalNodesRequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalNodesRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalNotebookKernels | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalUnitsRequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalUnitsRunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalVCPURequested | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalVCPURunning | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AppsCompleted | + `JobFlowId` |
+| AppsFailed | + `JobFlowId` |
+| AppsKilled | + `JobFlowId` |
+| AppsPending | + `JobFlowId` |
+| AppsRunning | + `JobFlowId` |
+| AppsSubmitted | + `JobFlowId` |
+| AutoTerminationIsClusterIdle | + `JobFlowId` |
+| ContainerAllocated | + `JobFlowId` |
+| ContainerPending | + `JobFlowId` |
+| ContainerPendingRatio | + `JobFlowId` |
+| ContainerReserved | + `JobFlowId` |
+| CoreNodesPending | + `JobFlowId` |
+| CoreNodesRequested | + `JobFlowId` |
+| CoreNodesRunning | + `JobFlowId` |
+| CoreUnitsRequested | + `JobFlowId` |
+| CoreUnitsRunning | + `JobFlowId` |
+| CoreVCPURequested | + `JobFlowId` |
+| CoreVCPURunning | + `JobFlowId` |
+| HDFSBytesRead | + `JobFlowId`<br />+ `JobFlowId`, `JobId` |
+| HDFSBytesWritten | + `JobFlowId`<br />+ `JobFlowId`, `JobId` |
+| HDFSUtilization | + `JobFlowId` |
+| IsIdle | + `JobFlowId` |
+| JobsFailed | + `JobFlowId` |
+| JobsRunning | + `JobFlowId` |
+| LiveDataNodes | + `JobFlowId` |
+| LiveTaskTrackers | + `JobFlowId` |
+| MRActiveNodes | + `JobFlowId` |
+| MRDecommissionedNodes | + `JobFlowId` |
+| MRLostNodes | + `JobFlowId` |
+| MRTotalNodes | + `JobFlowId` |
+| MRUnhealthyNodes | + `JobFlowId` |
+| MapSlotsOpen | + `JobFlowId` |
+| MapTasksRemaining | + `JobFlowId` |
+| MapTasksRunning | + `JobFlowId` |
+| MissingBlocks | + `JobFlowId` |
+| ReduceSlotsOpen | + `JobFlowId` |
+| ReduceTasksRemaining | + `JobFlowId` |
+| ReduceTasksRunning | + `JobFlowId` |
+| RemainingMapTasksPerSlot | + `JobFlowId` |
+| S3BytesRead | + `JobFlowId`<br />+ `JobFlowId`, `JobId` |
+| S3BytesWritten | + `JobFlowId`<br />+ `JobFlowId`, `JobId` |
+| TaskNodesPending | + `JobFlowId` |
+| TaskNodesRequested | + `JobFlowId` |
+| TaskNodesRunning | + `JobFlowId` |
+| TaskUnitsRequested | + `JobFlowId` |
+| TaskUnitsRunning | + `JobFlowId` |
+| TaskVCPURequested | + `JobFlowId` |
+| TaskVCPURunning | + `JobFlowId` |
+| TotalLoad | + `JobFlowId` |
+| TotalNodesRequested | + `JobFlowId` |
+| TotalNodesRunning | + `JobFlowId` |
+| TotalNotebookKernels | + `JobFlowId` |
+| TotalUnitsRequested | + `JobFlowId` |
+| TotalUnitsRunning | + `JobFlowId` |
+| TotalVCPURequested | + `JobFlowId` |
+| TotalVCPURunning | + `JobFlowId` |
 
 ## AWS/EventBridge/Pipes
 <a name="supported-metrics-ns-aws-eventbridge-pipes"></a>
@@ -1514,18 +1514,18 @@ The `AWS/EventBridge/Pipes` namespace includes enriched metrics for the followin
 
 | Metric | Dimensions |
 | --- | --- |
-| Duration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EnrichmentStageDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EnrichmentStageFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EventSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExecutionFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExecutionPartiallyFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExecutionTimeout | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetStageDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetStageFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetStagePartiallyFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetStageSkipped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| Duration | + `PipeName` |
+| EnrichmentStageDuration | + `PipeName` |
+| EnrichmentStageFailed | + `PipeName` |
+| EventCount | + `PipeName` |
+| EventSize | + `PipeName` |
+| ExecutionFailed | + `PipeName` |
+| ExecutionPartiallyFailed | + `PipeName` |
+| ExecutionTimeout | + `PipeName` |
+| TargetStageDuration | + `PipeName` |
+| TargetStageFailed | + `PipeName` |
+| TargetStagePartiallyFailed | + `PipeName` |
+| TargetStageSkipped | + `PipeName` |
 
 ## AWS/Events
 <a name="supported-metrics-ns-aws-events"></a>
@@ -1538,15 +1538,15 @@ The `AWS/Events` namespace includes enriched metrics for the following resource 
 
 | Metric | Dimensions |
 | --- | --- |
-| DeadLetterInvocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedInvocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestiontoInvocationCompleteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestiontoInvocationStartLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsFailedToBeSentToDlq | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsSentToDlq | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledRules | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TriggeredRules | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| DeadLetterInvocations | + `EventBusName`, `RuleName`<br />+ `RuleName` |
+| FailedInvocations | + `EventBusName`, `RuleName`<br />+ `RuleName` |
+| IngestiontoInvocationCompleteLatency | + `EventBusName`, `RuleName` |
+| IngestiontoInvocationStartLatency | + `EventBusName`, `RuleName` |
+| Invocations | + `EventBusName`, `RuleName`<br />+ `RuleName` |
+| InvocationsFailedToBeSentToDlq | + `EventBusName`, `RuleName`<br />+ `RuleName` |
+| InvocationsSentToDlq | + `EventBusName`, `RuleName`<br />+ `RuleName` |
+| ThrottledRules | + `EventBusName`, `RuleName`<br />+ `RuleName` |
+| TriggeredRules | + `EventBusName`, `RuleName`<br />+ `RuleName` |
 
 ## AWS/FSx
 <a name="supported-metrics-ns-aws-fsx"></a>
@@ -1559,55 +1559,55 @@ The `AWS/FSx` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| AgeOfOldestQueuedMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CapacityPoolReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CapacityPoolReadOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CapacityPoolWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CapacityPoolWriteOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CompressionRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadOperationTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataWriteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataWriteOperationTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataWriteOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DirectoryCreateOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DirectoryDeleteOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskIopsExceededCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskIopsUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskReadOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskThroughputBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskThroughputExceededCheck | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskThroughputUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskWriteOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileCreateOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileDeleteOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileOpenOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileServerCacheHitRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileServerDiskIopsBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileServerDiskIopsUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileServerDiskThroughputBalance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FileServerDiskThroughputUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeDataStorageCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeStorageCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MetadataOperationTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MetadataOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkReceivedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkSentBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkThroughputUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RepositoryRenameOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageCapacityUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UsedStorageCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AgeOfOldestQueuedMessage | + `FileSystemId`, `Publisher` |
+| CPUUtilization | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
+| CapacityPoolReadBytes | + `FileSystemId`, `VolumeId` |
+| CapacityPoolReadOperations | + `FileSystemId`, `VolumeId` |
+| CapacityPoolWriteBytes | + `FileSystemId`, `VolumeId` |
+| CapacityPoolWriteOperations | + `FileSystemId`, `VolumeId` |
+| ClientConnections | + `FileSystemId` |
+| CompressionRatio | + `FileSystemId`, `VolumeId` |
+| DataReadBytes | + `FileSystemId`<br />+ `FileSystemId`, `VolumeId` |
+| DataReadOperationTime | + `FileSystemId`, `VolumeId` |
+| DataReadOperations | + `FileSystemId`<br />+ `FileSystemId`, `VolumeId` |
+| DataWriteBytes | + `FileSystemId`<br />+ `FileSystemId`, `VolumeId` |
+| DataWriteLatency | + `FileSystemId`, `StorageTargetId` |
+| DataWriteOperationTime | + `FileSystemId`, `VolumeId` |
+| DataWriteOperations | + `FileSystemId`<br />+ `FileSystemId`, `VolumeId` |
+| DirectoryCreateOperations | + `FileSystemId`, `StorageTargetId` |
+| DirectoryDeleteOperations | + `FileSystemId`, `StorageTargetId` |
+| DiskIopsExceededCheck | + `FileSystemId`, `StorageTargetId` |
+| DiskIopsUtilization | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
+| DiskReadBytes | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
+| DiskReadOperations | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
+| DiskThroughputBalance | + `FileSystemId` |
+| DiskThroughputExceededCheck | + `FileSystemId`, `StorageTargetId` |
+| DiskThroughputUtilization | + `FileSystemId` |
+| DiskWriteBytes | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
+| DiskWriteOperations | + `Aggregate`, `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
+| FileCreateOperations | + `FileSystemId`, `StorageTargetId` |
+| FileDeleteOperations | + `FileSystemId`, `StorageTargetId` |
+| FileOpenOperations | + `FileSystemId`, `StorageTargetId` |
+| FileServerCacheHitRatio | + `CacheType`, `FileSystemId`<br />+ `FileServer`, `FileSystemId` |
+| FileServerDiskIopsBalance | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
+| FileServerDiskIopsUtilization | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
+| FileServerDiskThroughputBalance | + `FileServer`, `FileSystemId` |
+| FileServerDiskThroughputUtilization | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
+| FilesCapacity | + `FileSystemId`, `VolumeId` |
+| FilesUsed | + `FileSystemId`, `VolumeId` |
+| FreeDataStorageCapacity | + `FileSystemId`<br />+ `FileSystemId`, `StorageTargetId` |
+| FreeStorageCapacity | + `FileSystemId` |
+| MemoryUtilization | + `FileSystemId` |
+| MetadataOperationTime | + `FileSystemId`, `VolumeId` |
+| MetadataOperations | + `FileSystemId`<br />+ `FileSystemId`, `VolumeId` |
+| NetworkReceivedBytes | + `FileServer`, `FileSystemId` |
+| NetworkSentBytes | + `FileServer`, `FileSystemId` |
+| NetworkThroughputUtilization | + `FileServer`, `FileSystemId`<br />+ `FileSystemId` |
+| RepositoryRenameOperations | + `FileSystemId`, `Publisher` |
+| StorageCapacity | + `Aggregate`, `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`<br />+ `FileSystemId`, `VolumeId` |
+| StorageCapacityUtilization | + `Aggregate`, `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`, `VolumeId`<br />+ `FileSystemId`, `StorageTargetId`<br />+ `FileSystemId`, `VolumeId` |
+| StorageUsed | + `Aggregate`, `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`, `VolumeId`<br />+ `FileSystemId`, `VolumeId` |
+| UsedStorageCapacity | + `DataType`, `FileSystemId`, `StorageTier`<br />+ `DataType`, `FileSystemId`, `StorageTier`, `VolumeId`<br />+ `FileSystemId`, `VolumeId` |
 
 ## AWS/Firehose
 <a name="supported-metrics-ns-aws-firehose"></a>
@@ -1620,99 +1620,99 @@ The `AWS/Firehose` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| BackupToS3.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BackupToS3.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BackupToS3.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BackupToS3.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesPerSecondLimit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadFromKinesisStream.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadFromKinesisStream.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadFromSource.Backpressured | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadFromSource.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataReadFromSource.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchServerless.AuthFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchServerless.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchServerless.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchServerless.DeliveryRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchServerless.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchServerless.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchService.AuthFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchService.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchService.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchService.DeliveryRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchService.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToAmazonOpenSearchService.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToHttpEndpoint.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToHttpEndpoint.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToHttpEndpoint.ProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToHttpEndpoint.ProcessedRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToHttpEndpoint.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToHttpEndpoint.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToIceberg.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToIceberg.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToIceberg.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToIceberg.SuccessfulRowCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToRedshift.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToRedshift.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToRedshift.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToS3.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToS3.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToS3.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToS3.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSnowflake.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSnowflake.DataCommitLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSnowflake.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSnowflake.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSnowflake.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSplunk.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSplunk.DataAckLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSplunk.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSplunk.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeliveryToSplunk.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DescribeDeliveryStream.Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DescribeDeliveryStream.Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExecuteProcessing.Duration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ExecuteProcessing.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedConversion.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedConversion.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedValidation.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedValidation.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncomingBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncomingPutRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncomingRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KMSKeyAccessDenied | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KMSKeyDisabled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KMSKeyInvalidState | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KMSKeyNotFound | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KafkaOffsetLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KinesisMillisBehindLatest | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ListDeliveryStreams.Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ListDeliveryStreams.Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutputDecompressedBytes.Failed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutputDecompressedBytes.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutputDecompressedRecords.Failed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutputDecompressedRecords.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecord.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecord.Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecord.Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecordBatch.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecordBatch.Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecordBatch.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecordBatch.Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRequestsPerSecondLimit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RecordsPerSecondLimit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SourceThrottled.Delay | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SourceToDelivery.DataFreshness | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SucceedConversion.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SucceedConversion.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SucceedProcessing.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SucceedProcessing.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledDescribeStream | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledGetRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledGetShardIterator | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ThrottledRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UpdateDeliveryStream.Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UpdateDeliveryStream.Requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BackupToS3.Bytes | + `DeliveryStreamName` |
+| BackupToS3.DataFreshness | + `DeliveryStreamName` |
+| BackupToS3.Records | + `DeliveryStreamName` |
+| BackupToS3.Success | + `DeliveryStreamName` |
+| BytesPerSecondLimit | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DataReadFromKinesisStream.Bytes | + `DeliveryStreamName` |
+| DataReadFromKinesisStream.Records | + `DeliveryStreamName` |
+| DataReadFromSource.Backpressured | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DataReadFromSource.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DataReadFromSource.Records | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DeliveryToAmazonOpenSearchServerless.AuthFailure | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchServerless.Bytes | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchServerless.DataFreshness | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchServerless.DeliveryRejected | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchServerless.Records | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchServerless.Success | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchService.AuthFailure | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchService.Bytes | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchService.DataFreshness | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchService.DeliveryRejected | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchService.Records | + `DeliveryStreamName` |
+| DeliveryToAmazonOpenSearchService.Success | + `DeliveryStreamName` |
+| DeliveryToHttpEndpoint.Bytes | + `DeliveryStreamName` |
+| DeliveryToHttpEndpoint.DataFreshness | + `DeliveryStreamName` |
+| DeliveryToHttpEndpoint.ProcessedBytes | + `DeliveryStreamName` |
+| DeliveryToHttpEndpoint.ProcessedRecords | + `DeliveryStreamName` |
+| DeliveryToHttpEndpoint.Records | + `DeliveryStreamName` |
+| DeliveryToHttpEndpoint.Success | + `DeliveryStreamName` |
+| DeliveryToIceberg.Bytes | + `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.DataFreshness | + `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.Success | + `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToIceberg.SuccessfulRowCount | + `DeliveryStreamName`, `IcebergTableName` |
+| DeliveryToRedshift.Bytes | + `DeliveryStreamName` |
+| DeliveryToRedshift.Records | + `DeliveryStreamName` |
+| DeliveryToRedshift.Success | + `DeliveryStreamName` |
+| DeliveryToS3.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DeliveryToS3.DataFreshness | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DeliveryToS3.Records | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DeliveryToS3.Success | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| DeliveryToSnowflake.Bytes | + `DeliveryStreamName` |
+| DeliveryToSnowflake.DataCommitLatency | + `DeliveryStreamName` |
+| DeliveryToSnowflake.DataFreshness | + `DeliveryStreamName` |
+| DeliveryToSnowflake.Records | + `DeliveryStreamName` |
+| DeliveryToSnowflake.Success | + `DeliveryStreamName` |
+| DeliveryToSplunk.Bytes | + `DeliveryStreamName` |
+| DeliveryToSplunk.DataAckLatency | + `DeliveryStreamName` |
+| DeliveryToSplunk.DataFreshness | + `DeliveryStreamName` |
+| DeliveryToSplunk.Records | + `DeliveryStreamName` |
+| DeliveryToSplunk.Success | + `DeliveryStreamName` |
+| DescribeDeliveryStream.Latency | + `DeliveryStreamName` |
+| DescribeDeliveryStream.Requests | + `DeliveryStreamName` |
+| ExecuteProcessing.Duration | + `DeliveryStreamName` |
+| ExecuteProcessing.Success | + `DeliveryStreamName` |
+| FailedConversion.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| FailedConversion.Records | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| FailedValidation.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| FailedValidation.Records | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| IncomingBytes | + `DeliveryStreamName` |
+| IncomingPutRequests | + `DeliveryStreamName` |
+| IncomingRecords | + `DeliveryStreamName` |
+| KMSKeyAccessDenied | + `DeliveryStreamName` |
+| KMSKeyDisabled | + `DeliveryStreamName` |
+| KMSKeyInvalidState | + `DeliveryStreamName` |
+| KMSKeyNotFound | + `DeliveryStreamName` |
+| KafkaOffsetLag | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| KinesisMillisBehindLatest | + `DeliveryStreamName` |
+| ListDeliveryStreams.Latency | + `DeliveryStreamName` |
+| ListDeliveryStreams.Requests | + `DeliveryStreamName` |
+| OutputDecompressedBytes.Failed | + `DeliveryStreamName` |
+| OutputDecompressedBytes.Success | + `DeliveryStreamName` |
+| OutputDecompressedRecords.Failed | + `DeliveryStreamName` |
+| OutputDecompressedRecords.Success | + `DeliveryStreamName` |
+| PutRecord.Bytes | + `DeliveryStreamName` |
+| PutRecord.Latency | + `DeliveryStreamName` |
+| PutRecord.Requests | + `DeliveryStreamName` |
+| PutRecordBatch.Bytes | + `DeliveryStreamName` |
+| PutRecordBatch.Latency | + `DeliveryStreamName` |
+| PutRecordBatch.Records | + `DeliveryStreamName` |
+| PutRecordBatch.Requests | + `DeliveryStreamName` |
+| PutRequestsPerSecondLimit | + `DeliveryStreamName` |
+| RecordsPerSecondLimit | + `DeliveryStreamName` |
+| SourceThrottled.Delay | + `DeliveryStreamName` |
+| SourceToDelivery.DataFreshness | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| SucceedConversion.Bytes | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| SucceedConversion.Records | + `DeliveryStreamName`<br />+ `DeliveryStreamName`, `SourcePartitionId` |
+| SucceedProcessing.Bytes | + `DeliveryStreamName` |
+| SucceedProcessing.Records | + `DeliveryStreamName` |
+| ThrottledDescribeStream | + `DeliveryStreamName` |
+| ThrottledGetRecords | + `DeliveryStreamName` |
+| ThrottledGetShardIterator | + `DeliveryStreamName` |
+| ThrottledRecords | + `DeliveryStreamName` |
+| UpdateDeliveryStream.Latency | + `DeliveryStreamName` |
+| UpdateDeliveryStream.Requests | + `DeliveryStreamName` |
 
 ## AWS/FraudDetector
 <a name="supported-metrics-ns-aws-frauddetector"></a>
@@ -1725,21 +1725,21 @@ The `AWS/FraudDetector` namespace includes enriched metrics for the following re
 
 | Metric | Dimensions |
 | --- | --- |
-| GetEventPrediction | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetEventPrediction4xxError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetEventPrediction5xxError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetEventPredictionLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelInvocation | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelInvocationError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelInvocationLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutcomeReturned | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Prediction | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PredictionError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PredictionLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleEvaluateFalse | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleEvaluateTrue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleNotEvaluated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VariableUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| GetEventPrediction | + `DetectorID` |
+| GetEventPrediction4xxError | + `DetectorID` |
+| GetEventPrediction5xxError | + `DetectorID` |
+| GetEventPredictionLatency | + `DetectorID` |
+| ModelInvocation | + `DetectorID`, `DetectorVersionID`, `ModelEndpoint`<br />+ `DetectorID`, `DetectorVersionID`, `ModelID`, `ModelType`, `ModelVersionNumber` |
+| ModelInvocationError | + `DetectorID`, `DetectorVersionID`, `ModelEndpoint`<br />+ `DetectorID`, `DetectorVersionID`, `ModelID`, `ModelType`, `ModelVersionNumber` |
+| ModelInvocationLatency | + `DetectorID`, `DetectorVersionID`, `ModelEndpoint`<br />+ `DetectorID`, `DetectorVersionID`, `ModelID`, `ModelType`, `ModelVersionNumber` |
+| OutcomeReturned | + `DetectorID`, `DetectorVersionID`, `OutcomeName`<br />+ `DetectorID`, `OutcomeName` |
+| Prediction | + `DetectorID`, `DetectorVersionID` |
+| PredictionError | + `DetectorID`, `DetectorVersionID` |
+| PredictionLatency | + `DetectorID`, `DetectorVersionID` |
+| RuleEvaluateFalse | + `DetectorID`, `DetectorVersionID`, `RuleID` |
+| RuleEvaluateTrue | + `DetectorID`, `DetectorVersionID`, `RuleID` |
+| RuleNotEvaluated | + `DetectorID`, `DetectorVersionID`, `RuleID` |
+| VariableUsed | + `DetectorID`, `DetectorVersionID`, `VariableName` |
 
 ## AWS/GameLift
 <a name="supported-metrics-ns-aws-gamelift"></a>
@@ -1753,49 +1753,49 @@ The `AWS/GameLift` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| AverageWaitTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirstChoiceNotViable | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirstChoiceOutOfCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GameSessionPlaced | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowestLatencyPlacement | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LowestPricePlacement | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementApNortheast1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementApNortheast2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementApSouth1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementApSoutheast2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementEuCentral1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementEuNorth1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementEuWest1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementEuWest2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementMeSouth1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementSaEast1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementUsEast1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementUsEast2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementUsWest1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementUsWest2 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementsCanceled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementsStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementsSucceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlacementsTimedOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueueDepth | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AverageWaitTime | + `Location`, `QueueName`<br />+ `QueueName` |
+| FirstChoiceNotViable | + `QueueName` |
+| FirstChoiceOutOfCapacity | + `QueueName` |
+| GameSessionPlaced | + `LocationName`, `QueueName` |
+| LowestLatencyPlacement | + `QueueName` |
+| LowestPricePlacement | + `QueueName` |
+| PlacementApNortheast1 | + `QueueName` |
+| PlacementApNortheast2 | + `QueueName` |
+| PlacementApSouth1 | + `QueueName` |
+| PlacementApSoutheast2 | + `QueueName` |
+| PlacementEuCentral1 | + `QueueName` |
+| PlacementEuNorth1 | + `QueueName` |
+| PlacementEuWest1 | + `QueueName` |
+| PlacementEuWest2 | + `QueueName` |
+| PlacementMeSouth1 | + `QueueName` |
+| PlacementSaEast1 | + `QueueName` |
+| PlacementUsEast1 | + `QueueName` |
+| PlacementUsEast2 | + `QueueName` |
+| PlacementUsWest1 | + `QueueName` |
+| PlacementUsWest2 | + `QueueName` |
+| PlacementsCanceled | + `QueueName` |
+| PlacementsStarted | + `QueueName` |
+| PlacementsSucceeded | + `QueueName` |
+| PlacementsTimedOut | + `QueueName` |
+| QueueDepth | + `Location`, `QueueName`<br />+ `QueueName` |
 
 ### AWS::GameLift::MatchmakingConfiguration
 <a name="supported-metrics-aws-gamelift-aws-gamelift-matchmakingconfiguration"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| CurrentTickets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MatchesAccepted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MatchesCreated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MatchesPlaced | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MatchesRejected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MatchmakingSearchTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PlayersStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TicketsStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TicketsTimedOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToMatch | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToTicketCancel | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToTicketSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CurrentTickets | + `ConfigurationName` |
+| MatchesAccepted | + `ConfigurationName` |
+| MatchesCreated | + `ConfigurationName` |
+| MatchesPlaced | + `ConfigurationName` |
+| MatchesRejected | + `ConfigurationName` |
+| MatchmakingSearchTime | + `ConfigurationName` |
+| PlayersStarted | + `ConfigurationName` |
+| TicketsStarted | + `ConfigurationName` |
+| TicketsTimedOut | + `ConfigurationName` |
+| TimeToMatch | + `ConfigurationName` |
+| TimeToTicketCancel | + `ConfigurationName` |
+| TimeToTicketSuccess | + `ConfigurationName` |
 
 ## AWS/GatewayELB
 <a name="supported-metrics-ns-aws-gatewayelb"></a>
@@ -1808,12 +1808,12 @@ The `AWS/GatewayELB` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveFlowCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedLCUs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewFlowCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnHealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ConsumedLCUs | + `LoadBalancer` |
+| HealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| NewFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedBytes | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| UnHealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
 
 ## AWS/IVSChat
 <a name="supported-metrics-ns-aws-ivschat"></a>
@@ -1826,9 +1826,9 @@ The `AWS/IVSChat` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| LogDestinationAccessDeniedError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LogDestinationErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| LogDestinationResourceNotFoundErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| LogDestinationAccessDeniedError | + `LoggingConfiguration` |
+| LogDestinationErrors | + `LoggingConfiguration` |
+| LogDestinationResourceNotFoundErrors | + `LoggingConfiguration` |
 
 ## AWS/IoT
 <a name="supported-metrics-ns-aws-iot"></a>
@@ -1844,57 +1844,57 @@ The `AWS/IoT` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| ProvisionThing.ClientError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionThing.ServerError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionThing.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ProvisionThing.ClientError | + `CaCertificateId` |
+| ProvisionThing.ServerError | + `CaCertificateId` |
+| ProvisionThing.Success | + `CaCertificateId` |
 
 ### AWS::IoT::ScheduledAudit
 <a name="supported-metrics-aws-iot-aws-iot-scheduledaudit"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| MisconfiguredDeviceDefenderNotification | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NonCompliantResources | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ResourcesEvaluated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| MisconfiguredDeviceDefenderNotification | + `CheckName`, `ScheduledAuditName` |
+| NonCompliantResources | + `CheckName`, `ScheduledAuditName` |
+| ResourcesEvaluated | + `CheckName`, `ScheduledAuditName` |
 
 ### AWS::IoT::SecurityProfile
 <a name="supported-metrics-aws-iot-aws-iot-securityprofile"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| BehaviorEvaluationCompleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BehaviorEvaluationSkipped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MisconfiguredDeviceDefenderNotification | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumOfMetricsExceedingSizeLimit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumOfMetricsExported | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumOfMetricsSkipped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Violations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ViolationsCleared | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ViolationsInvalidated | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BehaviorEvaluationCompleted | + `BehaviorName`, `SecurityProfileName` |
+| BehaviorEvaluationSkipped | + `BehaviorName`, `SecurityProfileName` |
+| MisconfiguredDeviceDefenderNotification | + `BehaviorName`, `SecurityProfileName` |
+| NumOfMetricsExceedingSizeLimit | + `BehaviorName`, `SecurityProfileName` |
+| NumOfMetricsExported | + `BehaviorName`, `SecurityProfileName` |
+| NumOfMetricsSkipped | + `BehaviorName`, `SecurityProfileName` |
+| Violations | + `BehaviorName`, `SecurityProfileName`<br />+ `SecurityProfileName` |
+| ViolationsCleared | + `BehaviorName`, `SecurityProfileName`<br />+ `SecurityProfileName` |
+| ViolationsInvalidated | + `BehaviorName`, `SecurityProfileName`<br />+ `SecurityProfileName` |
 
 ### AWS::IoT::TopicRule
 <a name="supported-metrics-aws-iot-aws-iot-topicrule"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| ErrorActionFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ErrorActionHttpDestinationNotEnabled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ErrorActionSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Failure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpCode\_4XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpCode\_5XX | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpCode\_Other | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpInvalidUrl | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpRequestTimeout | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpUnknownHost | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ParseError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestTimeout | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleMessageThrottled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleNotFound | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RulesExecuted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SaslAuthFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TopicMatch | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ErrorActionFailure | + `ActionType`, `RuleName` |
+| ErrorActionHttpDestinationNotEnabled | + `ActionType`, `RuleName` |
+| ErrorActionSuccess | + `ActionType`, `RuleName` |
+| Failure | + `ActionType`, `RuleName` |
+| HttpCode\_4XX | + `ActionType`, `RuleName` |
+| HttpCode\_5XX | + `ActionType`, `RuleName` |
+| HttpCode\_Other | + `ActionType`, `RuleName` |
+| HttpInvalidUrl | + `ActionType`, `RuleName` |
+| HttpRequestTimeout | + `ActionType`, `RuleName` |
+| HttpUnknownHost | + `ActionType`, `RuleName` |
+| ParseError | + `RuleName` |
+| RequestTimeout | + `ActionType`, `RuleName` |
+| RuleMessageThrottled | + `RuleName` |
+| RuleNotFound | + `RuleName` |
+| RulesExecuted | + `RuleName` |
+| SaslAuthFailed | + `ActionType`, `RuleName` |
+| Success | + `ActionType`, `RuleName` |
+| TopicMatch | + `RuleName` |
 
 ## AWS/KMS
 <a name="supported-metrics-ns-aws-kms"></a>
@@ -1907,7 +1907,7 @@ The `AWS/KMS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| SecondsUntilKeyMaterialExpiration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| SecondsUntilKeyMaterialExpiration | + `KeyId` |
 
 ## AWS/Kendra
 <a name="supported-metrics-ns-aws-kendra"></a>
@@ -1921,40 +1921,40 @@ The `AWS/Kendra` namespace includes enriched metrics for the following resource 
 
 | Metric | Dimensions |
 | --- | --- |
-| DataSourceDocumentCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DataSourceSyncRuntime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsCrawled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsFailedToIndex | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsIndexed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsSkippedInvalidMetadata | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsSkippedNoChange | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsSubmittedForDeletion | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsSubmittedForDeletionFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsSubmittedForIndexing | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsSubmittedForIndexingFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsWithoutAcl | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MetadataFilesCrawled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PrincipalGroupsScanned | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| DataSourceDocumentCount | + `DataSourceId`, `IndexId` |
+| DataSourceSyncRuntime | + `DataSourceId`, `IndexId` |
+| DocumentsCrawled | + `AwsAccountId`, `DataSourceId`, `DataSourceType`, `IndexId`<br />+ `DataSourceId`, `IndexId` |
+| DocumentsFailedToIndex | + `DataSourceId`, `IndexId` |
+| DocumentsIndexed | + `DataSourceId`, `IndexId` |
+| DocumentsSkippedInvalidMetadata | + `DataSourceId`, `IndexId` |
+| DocumentsSkippedNoChange | + `DataSourceId`, `IndexId` |
+| DocumentsSubmittedForDeletion | + `AwsAccountId`, `DataSourceId`, `DataSourceType`, `IndexId`<br />+ `DataSourceId`, `IndexId` |
+| DocumentsSubmittedForDeletionFailed | + `AwsAccountId`, `DataSourceId`, `DataSourceType`, `IndexId`<br />+ `DataSourceId`, `IndexId` |
+| DocumentsSubmittedForIndexing | + `AwsAccountId`, `DataSourceId`, `DataSourceType`, `IndexId`<br />+ `DataSourceId`, `IndexId` |
+| DocumentsSubmittedForIndexingFailed | + `AwsAccountId`, `DataSourceId`, `DataSourceType`, `IndexId`<br />+ `DataSourceId`, `IndexId` |
+| DocumentsWithoutAcl | + `AwsAccountId`, `DataSourceId`, `DataSourceType`, `IndexId` |
+| MetadataFilesCrawled | + `DataSourceId`, `IndexId` |
+| PrincipalGroupsScanned | + `DataSourceId`, `IndexId` |
 
 ### AWS::Kendra::Index
 <a name="supported-metrics-aws-kendra-aws-kendra-index"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| ClickFeedbackSubmittedCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsFailedToIndex | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DocumentsIndexed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GroupProcessed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GroupProcessedButNotPersistent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GroupReceived | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GroupUpdateLatencyInMilliSeconds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GroupWithOlderOrderingIdSkipped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IndexDocumentCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IndexDocumentStorageSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IndexQueryCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedIndexDocumentCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedIndexStorageSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RelevantFeedbackSubmittedCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ClickFeedbackSubmittedCount | + `IndexId` |
+| DocumentsFailedToIndex | + `IndexId` |
+| DocumentsIndexed | + `IndexId` |
+| GroupProcessed | + `IndexId` |
+| GroupProcessedButNotPersistent | + `IndexId` |
+| GroupReceived | + `IndexId` |
+| GroupUpdateLatencyInMilliSeconds | + `IndexId` |
+| GroupWithOlderOrderingIdSkipped | + `IndexId` |
+| IndexDocumentCount | + `IndexId` |
+| IndexDocumentStorageSize | + `IndexId` |
+| IndexQueryCount | + `IndexId` |
+| ProvisionedIndexDocumentCount | + `IndexId` |
+| ProvisionedIndexStorageSize | + `IndexId` |
+| RelevantFeedbackSubmittedCount | + `IndexId` |
 
 ## AWS/Kinesis
 <a name="supported-metrics-ns-aws-kinesis"></a>
@@ -1967,27 +1967,27 @@ The `AWS/Kinesis` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| GetRecords.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetRecords.IteratorAgeMilliseconds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetRecords.Latency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetRecords.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetRecords.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncomingBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IncomingRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IteratorAgeMilliseconds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutgoingBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutgoingRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecord.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecords.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRecords.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadProvisionedThroughputExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeToShard.RateExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeToShard.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeToShardEvent.Bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeToShardEvent.MillisBehindLatest | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeToShardEvent.Records | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SubscribeToShardEvent.Success | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteProvisionedThroughputExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| GetRecords.Bytes | + `StreamName` |
+| GetRecords.IteratorAgeMilliseconds | + `StreamName` |
+| GetRecords.Latency | + `StreamName` |
+| GetRecords.Records | + `StreamName` |
+| GetRecords.Success | + `StreamName` |
+| IncomingBytes | + `ShardId`, `StreamName`<br />+ `StreamName` |
+| IncomingRecords | + `ShardId`, `StreamName`<br />+ `StreamName` |
+| IteratorAgeMilliseconds | + `ShardId`, `StreamName` |
+| OutgoingBytes | + `ShardId`, `StreamName` |
+| OutgoingRecords | + `ShardId`, `StreamName` |
+| PutRecord.Success | + `StreamName` |
+| PutRecords.Bytes | + `StreamName` |
+| PutRecords.Success | + `StreamName` |
+| ReadProvisionedThroughputExceeded | + `ShardId`, `StreamName`<br />+ `StreamName` |
+| SubscribeToShard.RateExceeded | + `ConsumerName`, `StreamName` |
+| SubscribeToShard.Success | + `ConsumerName`, `StreamName` |
+| SubscribeToShardEvent.Bytes | + `ConsumerName`, `StreamName` |
+| SubscribeToShardEvent.MillisBehindLatest | + `ConsumerName`, `StreamName` |
+| SubscribeToShardEvent.Records | + `ConsumerName`, `StreamName` |
+| SubscribeToShardEvent.Success | + `ConsumerName`, `StreamName` |
+| WriteProvisionedThroughputExceeded | + `ShardId`, `StreamName`<br />+ `StreamName` |
 
 ## AWS/KinesisAnalytics
 <a name="supported-metrics-ns-aws-kinesisanalytics"></a>
@@ -2000,53 +2000,53 @@ The `AWS/KinesisAnalytics` namespace includes enriched metrics for the following
 
 | Metric | Dimensions |
 | --- | --- |
-| KPUs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KPUs-Interactive | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| backPressuredTimeMsPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| busyTimeMsPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| bytesRequestedPerFetch | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| committedOffsets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| containerCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| containerDiskUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| containerMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| cpuUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| currentInputWatermark | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| currentOffsets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| currentOutputWatermark | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| downtime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| fullRestarts | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| heapMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| idleTimeMsPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| jobmanagerFileDescriptorsMax | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| jobmanagerFileDescriptorsOpen | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| jobmanagerHeapMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| jobmanagerMetaspaceMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| lastCheckpointDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| lastCheckpointSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| managedMemoryTotal | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| managedMemoryUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| managedMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| metaspaceMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| millisBehindLatest | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numLateRecordsDropped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numRecordsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numRecordsInPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numRecordsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numRecordsOutPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numRestarts | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| numberOfFailedCheckpoints | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| oldGenerationGCCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| oldGenerationGCTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| taskmanagerFileDescriptorsMax | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| taskmanagerFileDescriptorsOpen | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| threadCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| threadsCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| uptime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| zeppelinCpuUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| zeppelinHeapMemoryUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| zeppelinServerUptime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| zeppelinThreadCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| zeppelinWaitingJobs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| KPUs | + `Application` |
+| KPUs-Interactive | + `Application` |
+| backPressuredTimeMsPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| busyTimeMsPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| bytesRequestedPerFetch | + `Application`, `Flow`, `Id`<br />+ `Application`, `Flow`, `Id`, `ShardId` |
+| committedOffsets | + `Application`, `Flow`, `Topic` |
+| containerCPUUtilization | + `Application` |
+| containerDiskUtilization | + `Application` |
+| containerMemoryUtilization | + `Application` |
+| cpuUtilization | + `Application` |
+| currentInputWatermark | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| currentOffsets | + `Application`, `Flow`, `Topic` |
+| currentOutputWatermark | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
+| downtime | + `Application` |
+| fullRestarts | + `Application` |
+| heapMemoryUtilization | + `Application` |
+| idleTimeMsPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| jobmanagerFileDescriptorsMax | + `Application` |
+| jobmanagerFileDescriptorsOpen | + `Application` |
+| jobmanagerHeapMemoryUtilization | + `Application` |
+| jobmanagerMetaspaceMemoryUtilization | + `Application` |
+| lastCheckpointDuration | + `Application` |
+| lastCheckpointSize | + `Application` |
+| managedMemoryTotal | + `Application` |
+| managedMemoryUsed | + `Application` |
+| managedMemoryUtilization | + `Application` |
+| metaspaceMemoryUtilization | + `Application` |
+| millisBehindLatest | + `Application`, `Flow`, `Id`<br />+ `Application`, `Flow`, `Id`, `ShardId` |
+| numLateRecordsDropped | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex` |
+| numRecordsIn | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| numRecordsInPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| numRecordsOut | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| numRecordsOutPerSecond | + `Application`<br />+ `Application`, `Task`<br />+ `Application`, `Task`, `TaskOperator`<br />+ `Application`, `Task`, `TaskOperator`, `TaskOperatorParallelismIndex`<br />+ `Application`, `Task`, `TaskParallelismIndex` |
+| numRestarts | + `Application` |
+| numberOfFailedCheckpoints | + `Application` |
+| oldGenerationGCCount | + `Application` |
+| oldGenerationGCTime | + `Application` |
+| taskmanagerFileDescriptorsMax | + `Application` |
+| taskmanagerFileDescriptorsOpen | + `Application` |
+| threadCount | + `Application` |
+| threadsCount | + `Application` |
+| uptime | + `Application` |
+| zeppelinCpuUtilization | + `Application` |
+| zeppelinHeapMemoryUtilization | + `Application` |
+| zeppelinServerUptime | + `Application` |
+| zeppelinThreadCount | + `Application` |
+| zeppelinWaitingJobs | + `Application` |
 
 ## AWS/Lambda
 <a name="supported-metrics-ns-aws-lambda"></a>
@@ -2060,65 +2060,65 @@ The `AWS/Lambda` namespace includes enriched metrics for the following resource 
 
 | Metric | Dimensions |
 | --- | --- |
-| CommittedEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeletedEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DroppedEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EventPollerThroughputInBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EventPollerUnit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FailedInvokeEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilteredOutEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvokedEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IteratorAge | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxOffsetLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OnFailureDestinationDeliveredEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PolledEventCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedPollers | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SumOffsetLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CommittedEventCount | + `EventSourceMappingUUID` |
+| DeletedEventCount | + `EventSourceMappingUUID` |
+| DroppedEventCount | + `EventSourceMappingUUID` |
+| EventPollerThroughputInBytes | + `EventSourceMappingUUID` |
+| EventPollerUnit | + `EventSourceMappingUUID` |
+| FailedInvokeEventCount | + `EventSourceMappingUUID` |
+| FilteredOutEventCount | + `EventSourceMappingUUID` |
+| InvokedEventCount | + `EventSourceMappingUUID` |
+| IteratorAge | + `EventSourceMappingUUID` |
+| MaxOffsetLag | + `EventSourceMappingUUID` |
+| OnFailureDestinationDeliveredEventCount | + `EventSourceMappingUUID` |
+| PolledEventCount | + `EventSourceMappingUUID` |
+| ProvisionedPollers | + `EventSourceMappingUUID` |
+| SumOffsetLag | + `EventSourceMappingUUID` |
 
 ### AWS::Lambda::Function
 <a name="supported-metrics-aws-lambda-aws-lambda-function"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| AsyncEventAge | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncEventsDropped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AsyncEventsReceived | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrencyThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentExecutions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeadLetterErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DestinationDeliveryFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiskThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionOperations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionStopped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionStorageWrittenBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionSucceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DurableExecutionTimedOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Duration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Errors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IteratorAge | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryThrottles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OffsetLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PostRuntimeExtensionsDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedConcurrencyInvocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedConcurrencySpilloverInvocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedConcurrencyUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProvisionedConcurrentExecutions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RecursiveInvocationsDropped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SignatureValidationErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StreamedOutboundBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StreamedOutboundThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Throttles | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToFirstByteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToLastByteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Url4xxCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Url5xxCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UrlRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UrlRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AsyncEventAge | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| AsyncEventsDropped | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| AsyncEventsReceived | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| CPUThrottles | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| ConcurrencyThrottles | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| ConcurrentExecutions | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DeadLetterErrors | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DestinationDeliveryFailures | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DiskThrottles | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionDuration | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionFailed | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionOperations | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionStarted | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionStopped | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionStorageWrittenBytes | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionSucceeded | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| DurableExecutionTimedOut | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| Duration | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| Errors | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| Invocations | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| IteratorAge | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| MemoryThrottles | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| OffsetLag | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| PostRuntimeExtensionsDuration | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| ProvisionedConcurrencyInvocations | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| ProvisionedConcurrencySpilloverInvocations | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| ProvisionedConcurrencyUtilization | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| ProvisionedConcurrentExecutions | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| RecursiveInvocationsDropped | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| SignatureValidationErrors | + `FunctionName`<br />+ `FunctionName`, `Resource` |
+| StreamedOutboundBytes | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| StreamedOutboundThroughput | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| Throttles | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| TimeToFirstByteLatency | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| TimeToLastByteLatency | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| Url4xxCount | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| Url5xxCount | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| UrlRequestCount | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
+| UrlRequestLatency | + `ExecutedVersion`, `FunctionName`, `Resource`<br />+ `FunctionName`<br />+ `FunctionName`, `Resource` |
 
 ## AWS/MediaTailor
 <a name="supported-metrics-ns-aws-mediatailor"></a>
@@ -2131,10 +2131,10 @@ The `AWS/MediaTailor` namespace includes enriched metrics for the following reso
 
 | Metric | Dimensions |
 | --- | --- |
-| 4xxErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xxErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 4xxErrorCount | + `Channel`<br />+ `Channel`, `Output` |
+| 5xxErrorCount | + `Channel`<br />+ `Channel`, `Output` |
+| RequestCount | + `Channel`<br />+ `Channel`, `Output` |
+| TotalTime | + `Channel`<br />+ `Channel`, `Output` |
 
 ## AWS/MemoryDB
 <a name="supported-metrics-ns-aws-memorydb"></a>
@@ -2147,76 +2147,76 @@ The `AWS/MemoryDB` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveDefragHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AuthenticationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesReadFromDisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesUsedForMemoryDB | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesWrittenToDisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ChannelAuthorizationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CommandAuthorizationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CurrConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CurrItems | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DB0AverageTTL | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseCapacityUsagePercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseMemoryUsagePercentage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EngineCPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EvalBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Evictions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeableMemory | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetTypeCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HashBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IamAuthenticationExpirations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IamAuthenticationThrottling | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IsPrimary | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JsonBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JsonBasedGetCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JsonBasedSetCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyAuthorizationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeysTracked | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyspaceHits | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| KeyspaceMisses | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ListBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxReplicationThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryFragmentationRatio | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBandwidthInAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBandwidthOutAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkBytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkConntrackAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxBytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxBytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxPacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkMaxPacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkPacketsPerSecondAllowanceExceeded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NonKeyTypeCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumItemsReadFromDisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumItemsWrittenToDisk | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PrimaryLinkHealthStatus | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PubSubBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Reclaimed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationDelayedWriteCommands | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplicationLag | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchBasedGetCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchBasedSetCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchNumberOfIndexedKeys | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchNumberOfIndexes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SearchTotalIndexSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SetBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SetTypeCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SortedSetBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StreamBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StringBasedCmds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SuccessfulReadRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SuccessfulWriteRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SwapUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveDefragHits | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| AuthenticationFailures | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| BytesReadFromDisk | + `ClusterName`, `NodeName` |
+| BytesUsedForMemoryDB | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| BytesWrittenToDisk | + `ClusterName`, `NodeName` |
+| CPUUtilization | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| ChannelAuthorizationFailures | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| CommandAuthorizationFailures | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| CurrConnections | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| CurrItems | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| DB0AverageTTL | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| DatabaseCapacityUsagePercentage | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| DatabaseMemoryUsagePercentage | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| EngineCPUUtilization | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| ErrorCount | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| EvalBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| Evictions | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| FreeableMemory | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| GetTypeCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| HashBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| IamAuthenticationExpirations | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| IamAuthenticationThrottling | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| IsPrimary | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| JsonBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| JsonBasedGetCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| JsonBasedSetCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| KeyAuthorizationFailures | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| KeyBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| KeysTracked | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| KeyspaceHits | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| KeyspaceMisses | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| ListBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| MaxReplicationThroughput | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| MemoryFragmentationRatio | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkBandwidthInAllowanceExceeded | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkBandwidthOutAllowanceExceeded | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkBytesIn | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkBytesOut | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkConntrackAllowanceExceeded | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkMaxBytesIn | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkMaxBytesOut | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkMaxPacketsIn | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkMaxPacketsOut | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkPacketsIn | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkPacketsOut | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NetworkPacketsPerSecondAllowanceExceeded | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NewConnections | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NonKeyTypeCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NumItemsReadFromDisk | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| NumItemsWrittenToDisk | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| PrimaryLinkHealthStatus | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| PubSubBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| Reclaimed | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| ReplicationBytes | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| ReplicationDelayedWriteCommands | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| ReplicationLag | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SearchBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SearchBasedGetCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SearchBasedSetCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SearchNumberOfIndexedKeys | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SearchNumberOfIndexes | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SearchTotalIndexSize | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SetBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SetTypeCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SortedSetBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| StreamBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| StringBasedCmds | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SuccessfulReadRequestLatency | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SuccessfulWriteRequestLatency | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
+| SwapUsage | + `ClusterName`<br />+ `ClusterName`, `NodeName` |
 
 ## AWS/NATGateway
 <a name="supported-metrics-ns-aws-natgateway"></a>
@@ -2229,22 +2229,22 @@ The `AWS/NATGateway` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveConnectionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesInFromDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesInFromSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesOutToDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesOutToSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionAttemptCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionEstablishedCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ErrorPortAllocation | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IdleTimeoutCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsDropCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsInFromDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsInFromSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsOutToDestination | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsOutToSource | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PeakBytesPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PeakPacketsPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveConnectionCount | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| BytesInFromDestination | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| BytesInFromSource | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| BytesOutToDestination | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| BytesOutToSource | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| ConnectionAttemptCount | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| ConnectionEstablishedCount | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| ErrorPortAllocation | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| IdleTimeoutCount | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PacketsDropCount | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PacketsInFromDestination | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PacketsInFromSource | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PacketsOutToDestination | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PacketsOutToSource | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PeakBytesPerSecond | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
+| PeakPacketsPerSecond | + `AvailabilityZone`, `NatGatewayId`<br />+ `NatGatewayId` |
 
 ## AWS/NetworkELB
 <a name="supported-metrics-ns-aws-networkelb"></a>
@@ -2257,33 +2257,33 @@ The `AWS/NetworkELB` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveFlowCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveFlowCount\_TCP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveFlowCount\_TLS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveFlowCount\_UDP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveZonalShiftHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ClientTLSNegotiationErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedLCUs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedLCUs\_TCP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedLCUs\_TLS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConsumedLCUs\_UDP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewFlowCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewFlowCount\_TCP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewFlowCount\_TLS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NewFlowCount\_UDP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PeakPacketsPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PortAllocationErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes\_TCP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes\_TLS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedBytes\_UDP | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ProcessedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TCP\_Client\_Reset\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TCP\_ELB\_Reset\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TCP\_Target\_Reset\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetTLSNegotiationErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UnHealthyHostCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| ActiveFlowCount\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| ActiveFlowCount\_TLS | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer` |
+| ActiveFlowCount\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| ActiveZonalShiftHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| ClientTLSNegotiationErrorCount | + `LoadBalancer` |
+| ConsumedLCUs | + `LoadBalancer` |
+| ConsumedLCUs\_TCP | + `LoadBalancer` |
+| ConsumedLCUs\_TLS | + `LoadBalancer` |
+| ConsumedLCUs\_UDP | + `LoadBalancer` |
+| HealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
+| NewFlowCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| NewFlowCount\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| NewFlowCount\_TLS | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer` |
+| NewFlowCount\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`<br />+ `LoadBalancer`, `TargetGroup` |
+| PeakPacketsPerSecond | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| PortAllocationErrorCount | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedBytes | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedBytes\_TCP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedBytes\_TLS | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedBytes\_UDP | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| ProcessedPackets | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TCP\_Client\_Reset\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TCP\_ELB\_Reset\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TCP\_Target\_Reset\_Count | + `AvailabilityZone`, `LoadBalancer`<br />+ `LoadBalancer` |
+| TargetTLSNegotiationErrorCount | + `LoadBalancer` |
+| UnHealthyHostCount | + `AvailabilityZone`, `LoadBalancer`, `TargetGroup`<br />+ `LoadBalancer`, `TargetGroup` |
 
 ## AWS/NetworkFirewall
 <a name="supported-metrics-ns-aws-networkfirewall"></a>
@@ -2296,23 +2296,23 @@ The `AWS/NetworkFirewall` namespace includes enriched metrics for the following 
 
 | Metric | Dimensions |
 | --- | --- |
-| DroppedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvalidDroppedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OtherDroppedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Packets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PassedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReceivedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RejectedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StreamExceptionPolicyPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSDroppedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSPassedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSReceivedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSRejectedPackets | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSRevocationStatusOKConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSRevocationStatusRevokedConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSRevocationStatusUnknownConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TLSTimedOutConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| DroppedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| InvalidDroppedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| OtherDroppedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| Packets | + `AvailabilityZone`, `CustomAction`, `Engine`, `FirewallName` |
+| PassedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| ReceivedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| RejectedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| StreamExceptionPolicyPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSDroppedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSErrors | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSPassedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSReceivedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSRejectedPackets | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSRevocationStatusOKConnections | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSRevocationStatusRevokedConnections | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSRevocationStatusUnknownConnections | + `AvailabilityZone`, `Engine`, `FirewallName` |
+| TLSTimedOutConnections | + `AvailabilityZone`, `Engine`, `FirewallName` |
 
 ## AWS/Prometheus
 <a name="supported-metrics-ns-aws-prometheus"></a>
@@ -2326,30 +2326,30 @@ The `AWS/Prometheus` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| RuleEvaluationFailures | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleEvaluations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleGroupIterationsMissed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RuleGroupLastEvaluationDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| RuleEvaluationFailures | + `RuleGroup`, `Workspace` |
+| RuleEvaluations | + `RuleGroup`, `Workspace` |
+| RuleGroupIterationsMissed | + `RuleGroup`, `Workspace` |
+| RuleGroupLastEvaluationDuration | + `RuleGroup`, `Workspace` |
 
 ### AWS::APS::Workspace
 <a name="supported-metrics-aws-prometheus-aws-aps-workspace"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| ActiveSeriesLimitPerLabelSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ActiveSeriesPerLabelSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertManagerAlertsReceived | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertManagerNotificationsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertManagerNotificationsFailedByIntegration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertManagerNotificationsThrottled | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AlertManagerNotificationsThrottledByIntegration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiscardedSamples | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiscardedSamplesPerLabelSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiscardedSeries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DiscardedSeriesPerLabelSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| IngestionRatePerLabelSet | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QuerySamplesProcessed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SecretFetchFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ActiveSeriesLimitPerLabelSet | + `LabelSet`, `Workspace` |
+| ActiveSeriesPerLabelSet | + `LabelSet`, `Workspace` |
+| AlertManagerAlertsReceived | + `Workspace` |
+| AlertManagerNotificationsFailed | + `Workspace` |
+| AlertManagerNotificationsFailedByIntegration | + `Workspace` |
+| AlertManagerNotificationsThrottled | + `Workspace` |
+| AlertManagerNotificationsThrottledByIntegration | + `Workspace` |
+| DiscardedSamples | + `Reason`, `Workspace` |
+| DiscardedSamplesPerLabelSet | + `LabelSet`, `Reason`, `Workspace` |
+| DiscardedSeries | + `Reason`, `Workspace` |
+| DiscardedSeriesPerLabelSet | + `LabelSet`, `Reason`, `Workspace` |
+| IngestionRatePerLabelSet | + `LabelSet`, `Workspace` |
+| QuerySamplesProcessed | + `Workspace` |
+| SecretFetchFailure | + `Workspace` |
 
 ## AWS/RDS
 <a name="supported-metrics-ns-aws-rds"></a>
@@ -2362,16 +2362,16 @@ The `AWS/RDS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeStorageSpace | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FreeableMemory | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CPUUtilization | + `DBInstanceIdentifier` |
+| DatabaseConnections | + `DBInstanceIdentifier` |
+| FreeStorageSpace | + `DBInstanceIdentifier` |
+| FreeableMemory | + `DBInstanceIdentifier` |
+| ReadIOPS | + `DBInstanceIdentifier` |
+| ReadLatency | + `DBInstanceIdentifier` |
+| ReadThroughput | + `DBInstanceIdentifier` |
+| WriteIOPS | + `DBInstanceIdentifier` |
+| WriteLatency | + `DBInstanceIdentifier` |
+| WriteThroughput | + `DBInstanceIdentifier` |
 
 ## AWS/RUM
 <a name="supported-metrics-ns-aws-rum"></a>
@@ -2384,21 +2384,21 @@ The `AWS/RUM` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| Http4xxCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Http5xxCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HttpStatusCodeCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| JsErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NavigationFrustratedTransaction | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NavigationSatisfiedTransaction | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NavigationToleratedTransaction | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PageViewCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PerformanceNavigationDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PerformanceResourceDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RumEventPayloadSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SessionCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WebVitalsCumulativeLayoutShift | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WebVitalsFirstInputDelay | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WebVitalsLargestContentfulPaint | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| Http4xxCount | + `application_name` |
+| Http5xxCount | + `application_name` |
+| HttpStatusCodeCount | + `application_name`, `event_details.response.status`, `event_type` |
+| JsErrorCount | + `application_name` |
+| NavigationFrustratedTransaction | + `application_name` |
+| NavigationSatisfiedTransaction | + `application_name` |
+| NavigationToleratedTransaction | + `application_name` |
+| PageViewCount | + `application_name` |
+| PerformanceNavigationDuration | + `application_name` |
+| PerformanceResourceDuration | + `application_name`, `event_details.file.type`, `event_type` |
+| RumEventPayloadSize | + `application_name` |
+| SessionCount | + `application_name` |
+| WebVitalsCumulativeLayoutShift | + `application_name` |
+| WebVitalsFirstInputDelay | + `application_name` |
+| WebVitalsLargestContentfulPaint | + `application_name` |
 
 ## AWS/Redshift
 <a name="supported-metrics-ns-aws-redshift"></a>
@@ -2411,34 +2411,34 @@ The `AWS/Redshift` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| CPUUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CommitQueueLength | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrencyScalingActiveClusters | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrencyScalingSeconds | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DatabaseConnections | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthStatus | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaintenanceMode | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MaxConfiguredConcurrencyScalingClusters | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkReceiveThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkTransmitThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumExceededSchemaQuotas | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PercentageDiskSpaceUsed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueriesCompletedPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| QueryRuntimeBreakdown | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReadThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RedshiftManagedStorageTotalCapacity | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalTableCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WLMQueriesCompletedPerSecond | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WLMQueryDuration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WLMQueueLength | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WLMQueueWaitTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WLMRunningQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteIOPS | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| WriteThroughput | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CPUUtilization | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| CommitQueueLength | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| ConcurrencyScalingActiveClusters | + `ClusterIdentifier` |
+| ConcurrencyScalingSeconds | + `ClusterIdentifier` |
+| DatabaseConnections | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| HealthStatus | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| MaintenanceMode | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| MaxConfiguredConcurrencyScalingClusters | + `ClusterIdentifier` |
+| NetworkReceiveThroughput | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| NetworkTransmitThroughput | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| NumExceededSchemaQuotas | + `ClusterIdentifier` |
+| PercentageDiskSpaceUsed | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| QueriesCompletedPerSecond | + `ClusterIdentifier`, `NodeID`, `latency`<br />+ `ClusterIdentifier`, `latency` |
+| QueryDuration | + `ClusterIdentifier`, `NodeID`, `latency`<br />+ `ClusterIdentifier`, `latency` |
+| QueryRuntimeBreakdown | + `ClusterIdentifier`, `NodeID`, `stage`<br />+ `ClusterIdentifier`, `stage` |
+| ReadIOPS | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| ReadLatency | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| ReadThroughput | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| RedshiftManagedStorageTotalCapacity | + `ClusterIdentifier` |
+| TotalTableCount | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| WLMQueriesCompletedPerSecond | + `ClusterIdentifier`, `NodeID`, `wlmid`<br />+ `ClusterIdentifier`, `QueueName`<br />+ `ClusterIdentifier`, `wlmid` |
+| WLMQueryDuration | + `ClusterIdentifier`, `NodeID`, `wlmid`<br />+ `ClusterIdentifier`, `QueueName`<br />+ `ClusterIdentifier`, `wlmid` |
+| WLMQueueLength | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID`<br />+ `ClusterIdentifier`, `NodeID`, `QueueName`<br />+ `ClusterIdentifier`, `NodeID`, `service class`<br />+ `ClusterIdentifier`, `QueueName`<br />+ `ClusterIdentifier`, `service class` |
+| WLMQueueWaitTime | + `ClusterIdentifier`, `QueryPriority`<br />+ `ClusterIdentifier`, `QueueName`<br />+ `ClusterIdentifier`, `wlmid` |
+| WLMRunningQueries | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `QueueName`<br />+ `ClusterIdentifier`, `wlmid` |
+| WriteIOPS | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| WriteLatency | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
+| WriteThroughput | + `ClusterIdentifier`<br />+ `ClusterIdentifier`, `NodeID` |
 
 ## AWS/Route53
 <a name="supported-metrics-ns-aws-route53"></a>
@@ -2451,12 +2451,12 @@ The `AWS/Route53` namespace includes enriched metrics for the following resource
 
 | Metric | Dimensions |
 | --- | --- |
-| ChildHealthCheckHealthyCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthCheckPercentageHealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HealthCheckStatus | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SSLHandshakeTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeToFirstByte | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ChildHealthCheckHealthyCount | + `HealthCheckId` |
+| ConnectionTime | + `HealthCheckId`<br />+ `HealthCheckId`, `Region` |
+| HealthCheckPercentageHealthy | + `HealthCheckId` |
+| HealthCheckStatus | + `HealthCheckId` |
+| SSLHandshakeTime | + `HealthCheckId`<br />+ `HealthCheckId`, `Region` |
+| TimeToFirstByte | + `HealthCheckId`<br />+ `HealthCheckId`, `Region` |
 
 ## AWS/Route53Resolver
 <a name="supported-metrics-ns-aws-route53resolver"></a>
@@ -2470,39 +2470,39 @@ The `AWS/Route53Resolver` namespace includes enriched metrics for the following 
 
 | Metric | Dimensions |
 | --- | --- |
-| FirewallRuleGroupQueryVolume | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirewallRuleGroupVpcQueryVolume | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| FirewallRuleGroupQueryVolume | + `FirewallRuleGroupId` |
+| FirewallRuleGroupVpcQueryVolume | + `FirewallRuleGroupId`, `VpcId` |
 
 ### AWS::Route53Resolver::ResolverEndpoint
 <a name="supported-metrics-aws-route53resolver-aws-route53resolver-resolverendpoint"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| AverageResponseTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CapacityUsage\_BETA | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConntrackUtilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EndpointHealthyENICount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EndpointUnhealthyENICount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FormErrCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FormErrorQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundQueryVolume | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NXDomainCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NoErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NxDomainQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutboundQueryAggregateVolume | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutboundQueryVolume | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| P90ResponseTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RefusedCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RefusedQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ReplyCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ResolverEndpointCapacityStatus | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ServFailQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ServfailCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeoutCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TimeoutQueries | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| tcpRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| udpRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| AverageResponseTime | + `EndpointId`, `RniId` |
+| CapacityUsage\_BETA | + `EndpointId`, `RniId` |
+| ConntrackUtilization | + `EndpointId`, `RniId` |
+| EndpointHealthyENICount | + `EndpointId` |
+| EndpointUnhealthyENICount | + `EndpointId` |
+| FormErrCount | + `EndpointId`, `RniId` |
+| FormErrorQueries | + `EndpointId`, `RniId` |
+| InboundQueryVolume | + `EndpointId` |
+| NXDomainCount | + `EndpointId`, `RniId` |
+| NoErrorCount | + `EndpointId`, `RniId` |
+| NxDomainQueries | + `EndpointId`, `RniId` |
+| OutboundQueryAggregateVolume | + `EndpointId` |
+| OutboundQueryVolume | + `EndpointId` |
+| P90ResponseTime | + `EndpointID`, `TargetNameServerIP`<br />+ `EndpointId`, `RniId` |
+| RefusedCount | + `EndpointId`, `RniId` |
+| RefusedQueries | + `EndpointId`, `RniId` |
+| ReplyCount | + `EndpointId`, `RniId` |
+| RequestQueries | + `EndpointID`, `TargetNameServerIP` |
+| ResolverEndpointCapacityStatus | + `EndpointId` |
+| ServFailQueries | + `EndpointId`, `RniId` |
+| ServfailCount | + `EndpointId`, `RniId` |
+| TimeoutCount | + `EndpointId`, `RniId` |
+| TimeoutQueries | + `EndpointID`, `TargetNameServerIP`<br />+ `EndpointId`, `RniId` |
+| tcpRequestCount | + `EndpointId`, `RniId` |
+| udpRequestCount | + `EndpointId`, `RniId` |
 
 ## AWS/S3
 <a name="supported-metrics-ns-aws-s3"></a>
@@ -2515,21 +2515,21 @@ The `AWS/S3` namespace includes enriched metrics for the following resource type
 
 | Metric | Dimensions |
 | --- | --- |
-| 4xxErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xxErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| AllRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BucketSizeBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesDownloaded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesUploaded | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeleteRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirstByteLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| GetRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HeadRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ListRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfObjects | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PostRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PutRequests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalRequestLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 4xxErrors | + `BucketName`, `FilterId` |
+| 5xxErrors | + `BucketName`, `FilterId` |
+| AllRequests | + `BucketName`, `FilterId` |
+| BucketSizeBytes | + `BucketName`, `StorageType` |
+| BytesDownloaded | + `BucketName`, `FilterId` |
+| BytesUploaded | + `BucketName`, `FilterId` |
+| DeleteRequests | + `BucketName`, `FilterId` |
+| FirstByteLatency | + `BucketName`, `FilterId` |
+| GetRequests | + `BucketName`, `FilterId` |
+| HeadRequests | + `BucketName`, `FilterId` |
+| ListRequests | + `BucketName`, `FilterId` |
+| NumberOfObjects | + `BucketName`, `StorageType` |
+| PostRequests | + `BucketName`, `FilterId` |
+| PutRequests | + `BucketName`, `FilterId` |
+| TotalRequestLatency | + `BucketName`, `FilterId` |
 
 ## AWS/SNS
 <a name="supported-metrics-ns-aws-sns"></a>
@@ -2542,10 +2542,10 @@ The `AWS/SNS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| NumberOfMessagesPublished | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfNotificationsDelivered | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfNotificationsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PublishSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| NumberOfMessagesPublished | + `TopicName` |
+| NumberOfNotificationsDelivered | + `TopicName` |
+| NumberOfNotificationsFailed | + `TopicName` |
+| PublishSize | + `TopicName` |
 
 ## AWS/SQS
 <a name="supported-metrics-ns-aws-sqs"></a>
@@ -2558,15 +2558,15 @@ The `AWS/SQS` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| ApproximateAgeOfOldestMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApproximateNumberOfMessagesDelayed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApproximateNumberOfMessagesNotVisible | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ApproximateNumberOfMessagesVisible | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfEmptyReceives | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfMessagesDeleted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfMessagesReceived | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NumberOfMessagesSent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SentMessageSize | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ApproximateAgeOfOldestMessage | + `QueueName` |
+| ApproximateNumberOfMessagesDelayed | + `QueueName` |
+| ApproximateNumberOfMessagesNotVisible | + `QueueName` |
+| ApproximateNumberOfMessagesVisible | + `QueueName` |
+| NumberOfEmptyReceives | + `QueueName` |
+| NumberOfMessagesDeleted | + `QueueName` |
+| NumberOfMessagesReceived | + `QueueName` |
+| NumberOfMessagesSent | + `QueueName` |
+| SentMessageSize | + `QueueName` |
 
 ## AWS/SageMaker
 <a name="supported-metrics-ns-aws-sagemaker"></a>
@@ -2580,43 +2580,43 @@ The `AWS/SageMaker` namespace includes enriched metrics for the following resour
 
 | Metric | Dimensions |
 | --- | --- |
-| ConcurrentRequestsPerCopy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentRequestsPerModel | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirstChunkLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirstChunkModelLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FirstChunkOverheadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocation4XXErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocation5XXErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationModelErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsPerCopy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsPerInstance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MidStreamErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelCacheHit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelDownloadingTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelLoadingTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelLoadingWaitTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelSetupTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelUnloadingTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OverheadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ConcurrentRequestsPerCopy | + `EndpointName`, `VariantName` |
+| ConcurrentRequestsPerModel | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| FirstChunkLatency | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| FirstChunkModelLatency | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| FirstChunkOverheadLatency | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| Invocation4XXErrors | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `ContainerId`, `EndpointName`, `InferenceComponentName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| Invocation5XXErrors | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `ContainerId`, `EndpointName`, `InferenceComponentName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| InvocationModelErrors | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `ContainerId`, `EndpointName`, `InferenceComponentName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| Invocations | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `ContainerId`, `EndpointName`, `InferenceComponentName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| InvocationsPerCopy | + `EndpointName`, `VariantName` |
+| InvocationsPerInstance | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| MidStreamErrors | + `EndpointName`, `VariantName` |
+| ModelCacheHit | + `EndpointName`, `VariantName` |
+| ModelDownloadingTime | + `EndpointName`, `VariantName` |
+| ModelLatency | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `ContainerId`, `EndpointName`, `InferenceComponentName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
+| ModelLoadingTime | + `EndpointName`, `VariantName` |
+| ModelLoadingWaitTime | + `EndpointName`, `VariantName` |
+| ModelSetupTime | + `EndpointName`, `VariantName` |
+| ModelUnloadingTime | + `EndpointName`, `VariantName` |
+| OverheadLatency | + `AvailabilityZone`, `EndpointName`, `InstanceType`, `Region`, `VariantName`<br />+ `ContainerId`, `EndpointName`, `InferenceComponentName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `InstanceId`, `VariantName`<br />+ `EndpointName`, `VariantName` |
 
 ### AWS::SageMaker::InferenceComponent
 <a name="supported-metrics-aws-sagemaker-aws-sagemaker-inferencecomponent"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| ConcurrentRequestsPerCopy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentRequestsPerModel | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocation4XXErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocation5XXErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationModelErrors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Invocations | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsPerCopy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsPerInstance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ModelSetupTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OverheadLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ConcurrentRequestsPerCopy | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| ConcurrentRequestsPerModel | + `InferenceComponentName` |
+| Invocation4XXErrors | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| Invocation5XXErrors | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| InvocationModelErrors | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| Invocations | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| InvocationsPerCopy | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| InvocationsPerInstance | + `InferenceComponentName` |
+| ModelLatency | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
+| ModelSetupTime | + `InferenceComponentName` |
+| OverheadLatency | + `AvailabilityZone`, `InferenceComponentName`, `InstanceType`, `Region`<br />+ `InferenceComponentName` |
 
 ## AWS/Scheduler
 <a name="supported-metrics-ns-aws-scheduler"></a>
@@ -2629,16 +2629,16 @@ The `AWS/Scheduler` namespace includes enriched metrics for the following resour
 
 | Metric | Dimensions |
 | --- | --- |
-| InvocationAttemptCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationDroppedCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationThrottleCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsFailedToBeSentToDeadLetterCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsFailedToBeSentToDeadLetterCount\_AWS.SimpleQueueService.NonExistentQueue | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsFailedToBeSentToDeadLetterCount\_AccessDenied | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsFailedToBeSentToDeadLetterCount\_KMS.AccessDeniedException | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InvocationsSentToDeadLetterCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetErrorCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TargetErrorThrottledCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| InvocationAttemptCount | + `ScheduleGroup` |
+| InvocationDroppedCount | + `ScheduleGroup` |
+| InvocationThrottleCount | + `ScheduleGroup` |
+| InvocationsFailedToBeSentToDeadLetterCount | + `ScheduleGroup` |
+| InvocationsFailedToBeSentToDeadLetterCount\_AWS.SimpleQueueService.NonExistentQueue | + `ScheduleGroup` |
+| InvocationsFailedToBeSentToDeadLetterCount\_AccessDenied | + `ScheduleGroup` |
+| InvocationsFailedToBeSentToDeadLetterCount\_KMS.AccessDeniedException | + `ScheduleGroup` |
+| InvocationsSentToDeadLetterCount | + `ScheduleGroup` |
+| TargetErrorCount | + `ScheduleGroup` |
+| TargetErrorThrottledCount | + `ScheduleGroup` |
 
 ## AWS/Transfer
 <a name="supported-metrics-ns-aws-transfer"></a>
@@ -2652,25 +2652,25 @@ The `AWS/Transfer` namespace includes enriched metrics for the following resourc
 
 | Metric | Dimensions |
 | --- | --- |
-| OutboundFailedMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutboundMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| OutboundFailedMessage | + `ConnectorId` |
+| OutboundMessage | + `ConnectorId` |
 
 ### AWS::Transfer::Server
 <a name="supported-metrics-aws-transfer-aws-transfer-server"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| BytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConcurrentSessions | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| FilesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundFailedMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InboundMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OnUploadExecutionsFailed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OnUploadExecutionsStarted | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OnUploadExecutionsSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| OutboundFailedMessage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BytesIn | + `ServerId` |
+| BytesOut | + `ServerId` |
+| ConcurrentSessions | + `ServerId` |
+| FilesIn | + `ServerId` |
+| FilesOut | + `ServerId` |
+| InboundFailedMessage | + `ServerId` |
+| InboundMessage | + `ServerId` |
+| OnUploadExecutionsFailed | + `ServerId` |
+| OnUploadExecutionsStarted | + `ServerId` |
+| OnUploadExecutionsSuccess | + `ServerId` |
+| OutboundFailedMessage | + `ServerId` |
 
 ## AWS/TransitGateway
 <a name="supported-metrics-ns-aws-transitgateway"></a>
@@ -2683,19 +2683,19 @@ The `AWS/TransitGateway` namespace includes enriched metrics for the following r
 
 | Metric | Dimensions |
 | --- | --- |
-| BytesDropCountBlackhole | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesDropCountInternalError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesDropCountNoPolicy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesDropCountNoRoute | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| BytesOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketDropCountBlackhole | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketDropCountInternalError | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketDropCountNoPolicy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketDropCountNoRoute | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketDropCountTTLExpired | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PacketsOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| BytesDropCountBlackhole | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| BytesDropCountInternalError | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| BytesDropCountNoPolicy | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| BytesDropCountNoRoute | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| BytesIn | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| BytesOut | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketDropCountBlackhole | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketDropCountInternalError | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketDropCountNoPolicy | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketDropCountNoRoute | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketDropCountTTLExpired | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketsIn | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
+| PacketsOut | + `AvailabilityZone`, `TransitGateway`<br />+ `AvailabilityZone`, `TransitGateway`, `TransitGatewayAttachment`<br />+ `TransitGateway`<br />+ `TransitGateway`, `TransitGatewayAttachment` |
 
 ## AWS/VPN
 <a name="supported-metrics-ns-aws-vpn"></a>
@@ -2708,9 +2708,9 @@ The `AWS/VPN` namespace includes enriched metrics for the following resource typ
 
 | Metric | Dimensions |
 | --- | --- |
-| TunnelDataIn | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TunnelDataOut | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TunnelState | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| TunnelDataIn | + `VpnId` |
+| TunnelDataOut | + `VpnId` |
+| TunnelState | + `VpnId` |
 
 ## AWS/VpcLattice
 <a name="supported-metrics-ns-aws-vpclattice"></a>
@@ -2723,13 +2723,13 @@ The `AWS/VpcLattice` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| HTTPCode\_2XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_3XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_4XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| HTTPCode\_5XX\_Count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RequestTimeoutCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TotalRequestCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| HTTPCode\_2XX\_Count | + `AvailabilityZone`, `Service` |
+| HTTPCode\_3XX\_Count | + `AvailabilityZone`, `Service` |
+| HTTPCode\_4XX\_Count | + `AvailabilityZone`, `Service` |
+| HTTPCode\_5XX\_Count | + `AvailabilityZone`, `Service` |
+| RequestTime | + `AvailabilityZone`, `Service` |
+| RequestTimeoutCount | + `AvailabilityZone`, `Service` |
+| TotalRequestCount | + `AvailabilityZone`, `Service` |
 
 ## AWS/WorkSpaces
 <a name="supported-metrics-ns-aws-workspaces"></a>
@@ -2742,24 +2742,24 @@ The `AWS/WorkSpaces` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| Available | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CPUUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionAttempt | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionFailure | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ConnectionSuccess | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| InSessionLatency | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Maintenance | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Restoring | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RootVolumeDiskUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SessionDisconnect | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SessionLaunchTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Stopped | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UDPPacketLossRate | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Unhealthy | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UpTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UserConnected | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| UserVolumeDiskUsage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| Available | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| CPUUsage | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| ConnectionAttempt | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| ConnectionFailure | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| ConnectionSuccess | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| InSessionLatency | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| Maintenance | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| MemoryUsage | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| Restoring | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| RootVolumeDiskUsage | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| SessionDisconnect | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| SessionLaunchTime | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| Stopped | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| UDPPacketLossRate | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| Unhealthy | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| UpTime | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| UserConnected | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
+| UserVolumeDiskUsage | + `AwsAccountId`, `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `AwsAccountId`, `WorkspaceId`<br />+ `BundleId`, `ComputeType`, `Protocol`, `RunningMode`, `WorkspaceId`<br />+ `WorkspaceId` |
 
 ## CloudWatchSynthetics
 <a name="supported-metrics-ns-cloudwatchsynthetics"></a>
@@ -2772,16 +2772,16 @@ The `CloudWatchSynthetics` namespace includes enriched metrics for the following
 
 | Metric | Dimensions |
 | --- | --- |
-| 2xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 4xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| 5xx | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Duration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Error | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Failed | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| Failed requests | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| SuccessPercent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VisualMonitoringSuccessPercent | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| VisualMonitoringTotalComparisons | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| 2xx | + `CanaryName` |
+| 4xx | + `CanaryName` |
+| 5xx | + `CanaryName` |
+| Duration | + `CanaryName` |
+| Error | + `CanaryName` |
+| Failed | + `CanaryName` |
+| Failed requests | + `CanaryName` |
+| SuccessPercent | + `CanaryName` |
+| VisualMonitoringSuccessPercent | + `CanaryName` |
+| VisualMonitoringTotalComparisons | + `CanaryName` |
 
 ## ContainerInsights
 <a name="supported-metrics-ns-containerinsights"></a>
@@ -2794,17 +2794,17 @@ The `ContainerInsights` namespace includes enriched metrics for the following re
 
 | Metric | Dimensions |
 | --- | --- |
-| cluster\_failed\_node\_count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| cluster\_node\_count | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| node\_cpu\_limit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| node\_cpu\_usage\_total | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| node\_filesystem\_utilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| node\_memory\_limit | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| node\_memory\_working\_set | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| node\_network\_total\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| pod\_cpu\_utilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| pod\_network\_rx\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| pod\_network\_tx\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| cluster\_failed\_node\_count | + `ClusterName` |
+| cluster\_node\_count | + `ClusterName` |
+| node\_cpu\_limit | + `ClusterName` |
+| node\_cpu\_usage\_total | + `ClusterName` |
+| node\_filesystem\_utilization | + `ClusterName` |
+| node\_memory\_limit | + `ClusterName` |
+| node\_memory\_working\_set | + `ClusterName` |
+| node\_network\_total\_bytes | + `ClusterName` |
+| pod\_cpu\_utilization | + `ClusterName` |
+| pod\_network\_rx\_bytes | + `ClusterName` |
+| pod\_network\_tx\_bytes | + `ClusterName` |
 
 ## ECS/ContainerInsights
 <a name="supported-metrics-ns-ecs-containerinsights"></a>
@@ -2818,38 +2818,38 @@ The `ECS/ContainerInsights` namespace includes enriched metrics for the followin
 
 | Metric | Dimensions |
 | --- | --- |
-| ContainerInstanceCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CpuReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CpuUtilized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EphemeralStorageReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EphemeralStorageUtilized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryUtilized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkRxBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkTxBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| ServiceCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageReadBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| StorageWriteBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| ContainerInstanceCount | + `ClusterName` |
+| CpuReserved | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| CpuUtilized | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| EphemeralStorageReserved | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| EphemeralStorageUtilized | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| MemoryReserved | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| MemoryUtilized | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| NetworkRxBytes | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| NetworkTxBytes | + `ClusterName`<br />+ `ClusterName`, `TaskDefinitionFamily` |
+| ServiceCount | + `ClusterName` |
+| StorageReadBytes | + `ClusterName`, `TaskDefinitionFamily` |
+| StorageWriteBytes | + `ClusterName`, `TaskDefinitionFamily` |
+| TaskCount | + `ClusterName` |
 
 ### AWS::ECS::Service
 <a name="supported-metrics-ecs-containerinsights-aws-ecs-service"></a>
 
 | Metric | Dimensions |
 | --- | --- |
-| CpuReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| CpuUtilized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DeploymentCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| DesiredTaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EphemeralStorageReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| EphemeralStorageUtilized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryReserved | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| MemoryUtilized | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkRxBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| NetworkTxBytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| PendingTaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| RunningTaskCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| TaskSetCount | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| CpuReserved | + `ClusterName`, `ServiceName` |
+| CpuUtilized | + `ClusterName`, `ServiceName` |
+| DeploymentCount | + `ClusterName`, `ServiceName` |
+| DesiredTaskCount | + `ClusterName`, `ServiceName` |
+| EphemeralStorageReserved | + `ClusterName`, `ServiceName` |
+| EphemeralStorageUtilized | + `ClusterName`, `ServiceName` |
+| MemoryReserved | + `ClusterName`, `ServiceName` |
+| MemoryUtilized | + `ClusterName`, `ServiceName` |
+| NetworkRxBytes | + `ClusterName`, `ServiceName` |
+| NetworkTxBytes | + `ClusterName`, `ServiceName` |
+| PendingTaskCount | + `ClusterName`, `ServiceName` |
+| RunningTaskCount | + `ClusterName`, `ServiceName` |
+| TaskSetCount | + `ClusterName`, `ServiceName` |
 
 ## Glue
 <a name="supported-metrics-ns-glue"></a>
@@ -2862,30 +2862,30 @@ The `Glue` namespace includes enriched metrics for the following resource types.
 
 | Metric | Dimensions |
 | --- | --- |
-| glue.ALL.jvm.heap.usage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.ALL.jvm.heap.used | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.ALL.s3.filesystem.read\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.ALL.s3.filesystem.write\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.ALL.system.cpuSystemLoad | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.BlockManager.disk.diskSpaceUsed\_MB | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.ExecutorAllocationManager.executors.numberAllExecutors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.ExecutorAllocationManager.executors.numberMaxNeededExecutors | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.bytesRead | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.elapsedTime | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.numCompletedStages | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.numCompletedTasks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.numFailedTasks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.numKilledTasks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.recordsRead | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.shuffleBytesWritten | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.aggregate.shuffleLocalBytesRead | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.jvm.heap.usage | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.jvm.heap.used | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.s3.filesystem.read\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.s3.filesystem.write\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.streaming.batchProcessingTimeInMs | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.streaming.numRecords | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| glue.driver.system.cpuSystemLoad | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| glue.ALL.jvm.heap.usage | + `JobName`, `JobRunId`, `Type` |
+| glue.ALL.jvm.heap.used | + `JobName`, `JobRunId`, `Type` |
+| glue.ALL.s3.filesystem.read\_bytes | + `JobName`, `JobRunId`, `Type` |
+| glue.ALL.s3.filesystem.write\_bytes | + `JobName`, `JobRunId`, `Type` |
+| glue.ALL.system.cpuSystemLoad | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.BlockManager.disk.diskSpaceUsed\_MB | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.ExecutorAllocationManager.executors.numberAllExecutors | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.ExecutorAllocationManager.executors.numberMaxNeededExecutors | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.bytesRead | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.elapsedTime | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.numCompletedStages | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.numCompletedTasks | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.numFailedTasks | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.numKilledTasks | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.recordsRead | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.shuffleBytesWritten | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.aggregate.shuffleLocalBytesRead | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.jvm.heap.usage | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.jvm.heap.used | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.s3.filesystem.read\_bytes | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.s3.filesystem.write\_bytes | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.streaming.batchProcessingTimeInMs | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.streaming.numRecords | + `JobName`, `JobRunId`, `Type` |
+| glue.driver.system.cpuSystemLoad | + `JobName`, `JobRunId`, `Type` |
 
 ## LambdaInsights
 <a name="supported-metrics-ns-lambdainsights"></a>
@@ -2898,11 +2898,11 @@ The `LambdaInsights` namespace includes enriched metrics for the following resou
 
 | Metric | Dimensions |
 | --- | --- |
-| cpu\_total\_time | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| init\_duration | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| memory\_utilization | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| rx\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| total\_memory | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| total\_network | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| tx\_bytes | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
-| used\_memory\_max | [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/SupportedMetricsForResourceTagsForTelemetry.html) |
+| cpu\_total\_time | + `function_name` |
+| init\_duration | + `function_name` |
+| memory\_utilization | + `function_name` |
+| rx\_bytes | + `function_name` |
+| total\_memory | + `function_name` |
+| total\_network | + `function_name` |
+| tx\_bytes | + `function_name` |
+| used\_memory\_max | + `function_name` |

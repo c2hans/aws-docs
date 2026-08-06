@@ -27,7 +27,7 @@ Some or all of the data in this table can also be found in the SYS monitoring vi
 | user\_name | character(50) | User name associated with the session. |
 | db\_name | character(50) | Name of the database associated with the session. |
 | timeout\_sec | int | The maximum time in seconds that a session remains inactive or idle before timing out. 0 indicates that no timeout is set. |
-| timed\_out | int | A value that indicates why the connection was terminated. It can have the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_SESSIONS.html) |
+| timed\_out | int | A value that indicates why the connection was terminated. It can have the following values:+  `0`: The connection was terminated due to an unknown error. <br />+  `1`: The connection timed out. <br />+  `2`: The client side terminated the connection. <br />+  `3`: An Amazon Redshift backend internal error terminated the connection.  |
 
 ## Sample queries
 <a name="r_STL_SESSIONS-sample-queries"></a>

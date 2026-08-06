@@ -30,7 +30,7 @@ STL\_HASHJOIN only contains queries run on main provisioned clusters. It doesn't
 | rows | bigint | Total number of rows that were processed. |
 | tbl | integer | Table ID. |
 | num\_parts | integer | Total number of partitions that a hash table was divided into during a hash step.  |
-| join\_type | integer | The type of join for the step: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_HASHJOIN.html)  |
+| join\_type | integer | The type of join for the step: +  0. The query used an inner join. <br />+  1. The query used a left outer join. <br />+  2. The query used a full outer join. <br />+  3. The query used a right outer join. <br />+  4. The query used a UNION operator. <br />+  5. The query used an IN condition. <br />+  6. This information is for internal use only. <br />+  7. This information is for internal use only. <br />+  8. This information is for internal use only. <br />+  9. This information is for internal use only. <br />+  10. This information is for internal use only. <br />+  11. This information is for internal use only. <br />+  12. This information is for internal use only.   |
 | hash\_looped | character(1) | This information is for internal use only. |
 | switched\_parts | character(1) | Indicates whether the build (or outer) and probe (or inner) sides have switched. |
 | used\_prefetching | character(1) | This information is for internal use only. |

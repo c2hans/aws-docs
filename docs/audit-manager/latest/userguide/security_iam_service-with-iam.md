@@ -45,8 +45,8 @@ AWS Audit Manager enables you to maintain the segregation of duties among differ
 
 | Persona | Description and recommended policy |
 | --- | --- |
-| **Audit owner** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.html)  |
-| **Delegate** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/security_iam_service-with-iam.html)  |
+| **Audit owner** |  +  This persona must have the necessary permissions to manage assessments in AWS Audit Manager.  <br />+  The recommended policy to use for this persona is the managed policy named [AWSAuditManagerAdministratorAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSAuditManagerAdministratorAccess.html). You can use this policy as a starting point, and scope down these permissions as needed to fit your requirements.   |
+| **Delegate** |  +  This persona can access the delegated control sets in an assessment. They can update the control status, add comments, submit a control set for review, and add evidence to the assessment report. <br />+  The recommended policy to use for this persona is the following example policy: [Allow users management access to AWS Audit Manager](security_iam_id-based-policy-examples.md#management-access). You can use this policy as a starting point, and make changes as necessary to fit your requirements.   |
 
 ### Identity-based policy examples for AWS Audit Manager
 <a name="security_iam_service-with-iam-id-based-policies-examples"></a>

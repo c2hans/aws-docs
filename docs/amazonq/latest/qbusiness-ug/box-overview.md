@@ -13,15 +13,15 @@ The following table gives an overview of the Amazon Q Business Box connector and
 
 - ****Security****
   - **Feature:** Authentication type / **Support:** Token with JWT Auth by Box
-  - **Feature:** Authentication credentials / **Support:** [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/box-overview.html)  Admin privileges required.
+  - **Feature:** Authentication credentials / **Support:** +  Client ID <br />+  Client secret <br />+  Public Key ID <br />+  Private Key <br />+  Pass Phrase   Admin privileges required.
   - **Feature:** [Access Control List (ACL)](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) crawling / **Support:** Yes. For more information, see [ACL crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/box-user-management.html).
   - **Feature:** [Identity crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) / **Support:** Yes
   - **Feature:** [VPC](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-vpc) / **Support:** Yes
 
 - ****Crawl features****
   - **Feature:** Custom metadata / **Support:** Yes
-  - **Feature:** Entities / **Support:** Yes. The following entities are supported: [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/box-overview.html)See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
+  - **Feature:** Entities / **Support:** Yes. The following entities are supported: +  Files <br />+  Comments <br />+  Tasks <br />+  Web links See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
   - **Feature:** [Field mappings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-field-mappings) / **Support:** Yes. Supports both default and custom field mappings. For more information, see [Field mappings](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/box-field-mappings.html).
-  - **Feature:** Filters / **Support:** Yes. The following filters are supported: [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/box-overview.html)
+  - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Include web links <br />+  Include comments <br />+  Include tasks <br />+  Include/exclude by file name <br />+  Include/exclude by file type <br />+  Include/exclude by file path
   - **Feature:** [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) / **Support:** Supports full and incremental sync.
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all files supported by Amazon Q.

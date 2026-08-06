@@ -5,39 +5,58 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 # Get started with DynamoDB Mapper
 <a name="ddb-mapper-get-started"></a>
 
-**Important**
-DynamoDB Mapper is a Developer Preview release. It is not feature complete and is subject to change.
-
-The following tutorial introduces the basic components of DynamoDB Mapper and shows how to use it in your code.
+This tutorial introduces the basic components of DynamoDB Mapper and shows how to use it in your code. The examples use an online store domain whose flagship type is an `Order`.
 
 ## Add dependencies
-<a name="ddb-mapper-get-started-deps"></a>
+<a name="ddb-mapper-get-started-dependencies"></a>
 
-To begin working with DynamoDB Mapper in your Gradle project, add a plugin and two dependencies to your `build.gradle.kts` file.
+Add the DynamoDB Mapper dependencies to your project build file. Replace {{X.Y.Z}} with the [latest release of the SDK](https://github.com/aws/aws-sdk-kotlin/releases/latest).
 
-Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/awslabs/aws-sdk-kotlin/releases/latest).
+**Example**
+To use DynamoDB Mapper with annotation-based schema generation, apply the schema-generator plugin and add the runtime and annotations dependencies to your `build.gradle.kts` file:
 
 ```
 // build.gradle.kts
-val sdkVersion: String = {{X.Y.Z}}
+val sdkVersion: String = "{{X.Y.Z}}"
 
 plugins {
-    id("aws.sdk.kotlin.hll.dynamodbmapper.schema.generator") version "$sdkVersion-beta" // For the Developer Preview, use the beta version of the latest SDK.
+    id("aws.sdk.kotlin.hll.dynamodbmapper.schema.generator") version sdkVersion
 }
 
 dependencies {
-    implementation("aws.sdk.kotlin:dynamodb-mapper:$sdkVersion-beta")
-    implementation("aws.sdk.kotlin:dynamodb-mapper-annotations:$sdkVersion-beta")
+    implementation("aws.sdk.kotlin:dynamodb-mapper:$sdkVersion")
+    implementation("aws.sdk.kotlin:dynamodb-mapper-annotations:$sdkVersion")
 }
 ```
+The annotations dependency and the schema-generator plugin are needed only if you generate schemas from annotated classes (shown in this topic). If you define schemas manually, you need only the `dynamodb-mapper` dependency.
+Add the DynamoDB Mapper runtime dependency to the `<dependencies>` section of your `pom.xml` file:
 
-**Note**
-Some of these dependencies are optional if you plan to define schemas manually. See [Manually define schemas](ddb-mapper-code-schemas.md) for more information and the reduced set of dependencies.
+```
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>aws.sdk.kotlin</groupId>
+            <artifactId>bom</artifactId>
+            <version>{{X.Y.Z}}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+<dependencies>
+    <dependency>
+        <groupId>aws.sdk.kotlin</groupId>
+        <artifactId>dynamodb-mapper-jvm</artifactId>
+    </dependency>
+</dependencies>
+```
+The DynamoDB Mapper schema-generator plugin is available for Gradle only. Maven projects must define schemas manually in code. For instructions, see [Manually define schemas](ddb-mapper-code-schemas.md).
 
 ## Create and use a mapper
-<a name="ddb-mapper-get-started-mapper"></a>
+<a name="ddb-mapper-get-started-create-mapper"></a>
 
-DynamoDB Mapper uses the AWS SDK for Kotlin’s DynamoDB client to interact with DynamoDB. You need to provide a fully configured [DynamoDbClient](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) instance when you create a mapper instance as shown in the following code snippet:
+DynamoDB Mapper uses the SDK’s DynamoDB client to interact with DynamoDB. Provide a configured [/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html](/sdk-for-kotlin/api/latest/dynamodb/aws.sdk.kotlin.services.dynamodb/-dynamo-db-client/index.html) when you create a mapper:
 
 ```
 import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbMapper
@@ -48,132 +67,157 @@ val mapper = DynamoDbMapper(client)
 ```
 
 **Note**
- `DynamoDbMapper` doesn’t support table creation operations. Use the `DynamoDbClient` to create tables.
-
-After you have created the mapper instance, you can use it to get the table instance as shown next:
-
-```
-val carsTable = mapper.getTable("cars", CarSchema)
-```
-
-The previous code gets a reference to a table in `DynamoDB` named `cars` with a schema defined by `CarSchema` (we discuss schemas below). After you create a table instance, you can perform operations against it. The following code snippet show two example operations against the `cars` table:
-
-```
-carsTable.putItem {
-    item = Car(make = "Ford", model = "Model T", ...)
-}
-
-carsTable
-   .queryPaginated {
-        keyCondition = KeyFilter(partitionKey = "Peugeot")
-   }
-   .items()
-   .collect { car -> println(car) }
-```
-
-The previous code creates a new item in the `cars` table. The code creates a `Car` instance inline using the `Car` class, whose definition is shown below. Next, the code queries the `cars` table for items whose partition key is `Peugeot` and prints them. Operations are [described in more detail below](#ddb-mapper-gs-invoke-ops).
+DynamoDB Mapper doesn’t create tables. Use the `DynamoDbClient` to create tables and indexes.
 
 ## Define a schema with class annotations
-<a name="ddb-mapper-gs-anno-schema-def"></a>
+<a name="ddb-mapper-get-started-define-schema"></a>
 
-For a variety of Kotlin classes, the SDK can automatically generate schemas at build time by using the DynamoDB Mapper Schema Generator plugin for Gradle. When you use the schema generator, the SDK inspects your classes to infer the schema, which alleviates some of the boilerplate involved in manually defining schemas. You can customize the schema that is generated by using additional [annotations](ddb-mapper-anno-schema-gen.md#ddb-mapper-anno-schema-gen-annotate) and [configuration](ddb-mapper-anno-schema-gen.md#ddb-mapper-anno-schema-gen-conf-plugin).
+For many Kotlin classes, the SDK can generate a schema at build time using the DynamoDB Mapper schema generator plugin. The plugin inspects your annotated classes and emits the schema, which removes the boilerplate of defining schemas by hand.
 
-To generate a schema from annotations, first annotate your classes with `@DynamoDbItem` and any keys with `@DynamoDbPartitionKey` and `@DynamoDbSortKey`. The following code shows the annotated `Car` class:
+Annotate your class with `@DynamoDbItem`, mark the partition key with `@DynamoDbPartitionKey`, and (for a composite key) mark the sort key with `@DynamoDbSortKey`:
 
 ```
-// The annotations used in the Car class are used by the plugin to generate a schema.
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttribute
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbAttributeConverter
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbIgnore
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbItem
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbPartitionKey
+import aws.sdk.kotlin.hll.dynamodbmapper.DynamoDbSortKey
+import aws.smithy.kotlin.runtime.time.Instant
+import kotlin.uuid.Uuid
+
 @DynamoDbItem
-data class Car(
+data class Order(
     @DynamoDbPartitionKey
-    val make: String,
-
+    val customerId: String,
     @DynamoDbSortKey
-    val model: String,
+    val orderId: String,
+    val status: OrderStatus,
+    val totalCents: Long,
+    val productSkus: List<String>,
+    val tags: Set<String>,
+    @DynamoDbAttribute("created_at")
+    val placedAt: Instant,
+    @DynamoDbAttributeConverter(UuidConverter::class)
+    val idempotencyKey: Uuid,
+) {
+    @DynamoDbIgnore
+    val isLargeOrder: Boolean get() = totalCents >= 100_00
+}
 
-    val initialYear: Int
-)
+enum class OrderStatus { PENDING, PAID, SHIPPED, DELIVERED, CANCELED }
 ```
 
-After building, you can refer to the automatically generated `CarSchema`. You can use the reference in the mapper’s `getTable` method to get a table instance as shown in the following:
+This example previews a few field-level annotations that will be discussed in greater detail later:
++  `@DynamoDbAttribute` renames an attribute
++  `@DynamoDbAttributeConverter` supplies a custom converter for a type the generator doesn’t support on its own (here, `kotlin.uuid.Uuid`)
++  `@DynamoDbIgnore` excludes a property from mapping
+
+See [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md) and the [annotations reference](ddb-mapper-anno-index.md) for the full set.
+
+The custom converter is a small object that implements `convertRight`/`convertLeft`:
 
 ```
-import aws.sdk.kotlin.hll.dynamodbmapper.generatedschemas.CarSchema
+import aws.sdk.kotlin.hll.dynamodbmapper.values.ValueConverter
+import aws.sdk.kotlin.services.dynamodb.model.AttributeValue
+import kotlin.uuid.Uuid
 
-// `CarSchema` is generated at build time.
-val carsTable = mapper.getTable("cars", CarSchema)
+object UuidConverter : ValueConverter<Uuid> {
+    override fun convertRight(from: Uuid): AttributeValue = AttributeValue.S(from.toString())
+    override fun convertLeft(from: AttributeValue): Uuid = Uuid.parse(from.asS())
+}
 ```
 
-Alternatively, you can get the table instance by taking advantage of an extension method on `DynamoDbMapper` that is automatically generated at build time. By using this approach, you don’t need to refer to the schema by name. As shown in the following, the automatically generated `getCarsTable` extension method returns a reference to the table instance:
+After you build the project, the generator produces an `OrderSchema` and a convenience extension function. You can get a table reference with the generated `getOrderTable` extension. Note that the function name contains the class name (`Order`), while the string you pass is your actual table name (`orders`):
 
 ```
-val carsTable = mapper.getCarsTable("cars")
+val ordersTable = mapper.getOrderTable("orders")
 ```
 
-See [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md) for more details and examples.
+Equivalently, you can pass the generated schema to `getTable`:
+
+```
+import com.example.store.model.dynamodbmapper.generatedschemas.OrderSchema
+
+val ordersTable = mapper.getTable("orders", OrderSchema)
+```
 
 ## Invoke operations
-<a name="ddb-mapper-gs-invoke-ops"></a>
+<a name="ddb-mapper-get-started-invoke-operations"></a>
 
-DynamoDB Mapper supports a subset of the operations available on the SDK’s `DynamoDbClient`. Mapper operations are named the same as their counterparts on the SDK client. Many mapper request/response members are the same as their SDK client counterparts, although some have been renamed, re-typed, or dropped altogether.
+After you have a table reference, you can perform operations on it. The following sections show a few basics. For the complete operation surface and the different ways to invoke each operation, see the [Operations overview](ddb-mapper-operations.md).
 
-You invoke an operation on a table instance using a DSL syntax as shown in the following:
-
-```
-import aws.sdk.kotlin.hll.dynamodbmapper.operations.putItem
-import aws.sdk.kotlin.services.dynamodb.model.ReturnConsumedCapacity
-
-val putResponse = carsTable.putItem {
-    item = Car(make = "Ford", model = "Model T", ...)
-    returnConsumedCapacity = ReturnConsumedCapacity.Total
-}
-
-println(putResponse.consumedCapacity)
-```
-
-You can also invoke an operation by using an explicit request object:
+### Put an item
+<a name="ddb-mapper-get-started-put-item"></a>
 
 ```
-import aws.sdk.kotlin.hll.dynamodbmapper.operations.PutItemRequest
-import aws.sdk.kotlin.services.dynamodb.model.ReturnConsumedCapacity
+import aws.smithy.kotlin.runtime.time.Instant
+import kotlin.uuid.Uuid
 
-val putRequest = PutItemRequest<Car> {
-    item = Car(make = "Ford", model = "Model T", ...)
-    returnConsumedCapacity = ReturnConsumedCapacity.Total
-}
-
-val putResponse = carsTable.putItem(putRequest)
-println(putResponse.consumedCapacity)
-```
-
-The previous two code examples are equivalent.
-
-### Work with paginated responses
-<a name="ddb-mapper-gs-pagination"></a>
-
-Some operations like `query` and `scan` can return data collections that might be too large to return in a single response. To ensure that all objects are processed, DynamoDB Mapper provides paginating methods, which do not call DynamoDB immediately, but instead return a `Flow` of the operation response type, such as `Flow<ScanResponse<Car>>` shown in the following:
-
-```
-import aws.sdk.kotlin.hll.dynamodbmapper.operations.scanPaginated
-
-val scanResponseFlow = carsTable.scanPaginated { }
-
-scanResponseFlow.collect { response ->
-    val items = response.items.orEmpty()
-    println("Found page with ${items.size} items:")
-
-    items.forEach { car -> println(car) }
+ordersTable.putItem {
+    item = Order(
+        customerId = "customer-123",
+        orderId = "ORDER#2026-06-25#0042",
+        status = OrderStatus.PENDING,
+        totalCents = 4_999,
+        productSkus = listOf("SKU-1", "SKU-2"),
+        tags = setOf("gift"),
+        placedAt = Instant.now(),
+        idempotencyKey = Uuid.random(),
+    )
 }
 ```
 
-Often, a flow of objects is more useful to business logic than a flow of responses *containing* objects. The mapper provides an extension method on paginated responses to access the flow of objects. For example, the following code returns a `Flow<Car>` rather than a `Flow<ScanResponse<Car>>` as shown previously:
+### Get an item
+<a name="ddb-mapper-get-started-get-item"></a>
+
+ `getItem` returns a `GetItemResponse`; read the mapped object from its `item` property (which is `null` if no matching item exists). For a composite-key table, supply both keys, wrapping each key value with `Key(…​)`:
 
 ```
-import aws.sdk.kotlin.hll.dynamodbmapper.operations.items
-import aws.sdk.kotlin.hll.dynamodbmapper.operations.scanPaginated
+import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
 
-val carFlow = carsTable
-    .scanPaginated { }
+val response = ordersTable.getItem {
+    partitionKey = Key("customer-123")
+    sortKey = Key("ORDER#2026-06-25#0042")
+}
+
+println(response.item)   // the Order, or null
+```
+
+### Query with paginated results
+<a name="ddb-mapper-get-started-query"></a>
+
+ `query` and `scan` can match more items than fit in a single response. DynamoDB Mapper provides paginating variants (`queryPaginated` and `scanPaginated`) that return a [https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-flow/) of response pages and transparently fetch subsequent pages as you collect them.
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
+
+val responses = ordersTable.queryPaginated {
+    keyCondition = KeyFilter(partitionKey = "customer-123")
+}
+
+responses.collect { response ->
+    val orders = response.items.orEmpty()
+    println("Found a page of ${orders.size} orders")
+    orders.forEach { order -> println(order) }
+}
+```
+
+Often a flow of objects is more convenient than a flow of response pages. Call `items()` to flatten a paginated flow into a `Flow` of your objects (here, a `Flow<Order>` instead of a `Flow<QueryResponse<Order>>`):
+
+```
+val orders = ordersTable
+    .queryPaginated {
+        keyCondition = KeyFilter(partitionKey = "customer-123")
+        limit = 20
+    }
     .items()
 
-carFlow.collect { car -> println(car) }
+orders.collect { order -> println(order) }
 ```
+
+## Next steps
+<a name="ddb-mapper-get-started-next-steps"></a>
++ Learn the full operation surface in the [Operations overview](ddb-mapper-operations.md).
++ Customize schema generation in [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md).
++ Define schemas by hand in [Manually define schemas](ddb-mapper-code-schemas.md).

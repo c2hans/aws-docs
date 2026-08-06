@@ -23,7 +23,7 @@ The following table lists the permissions that a user needs in order to perform 
 | glue:GetDataQualityRuleset | Grants permission to retrieve a data quality ruleset. | ::dataQualityRuleset/<name> |
 | glue:ListDataQualityRulesets | Grants permission to retrieve all data quality rulesets. | ::dataQualityRuleset/\* |
 | glue:UpdateDataQualityRuleset | Grants permission to update a data quality ruleset. | ::dataQualityRuleset/<name> |
-| glue:GetDataQualityResult |  Grants permission to retrieve a data quality task run result. This IAM action also provides permissions to the following APIS: [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/data-quality-authorization.html)  | ::dataQualityRuleset/<name> |
+| glue:GetDataQualityResult |  Grants permission to retrieve a data quality task run result. This IAM action also provides permissions to the following APIS: +  `BatchGetDataQualityQualityResult` <br />+  `ListDataQualityStatistics` <br />+  `ListDataQualityStatisticAnnotations`   | ::dataQualityRuleset/<name> |
 | glue:ListDataQualityResults | Grants permission to retrieve all data quality task run results. | ::dataQualityRuleset/\* |
 | glue:CancelDataQualityRuleRecommendationRun | Grants permission to stop an in-progress data quality recommendation task run. | ::dataQualityRuleset/\* |
 | glue:GetDataQualityRuleRecommendationRun | Grants permission to retrieve a data quality recommendation task run. | ::dataQualityRuleset/\* |
@@ -36,7 +36,7 @@ The following table lists the permissions that a user needs in order to perform 
 | glue:PublishDataQuality | Grants permission to publish data quality results. | ::dataQualityRuleset/<name> |
 | glue:GetDataQualityModel | Grants permission to retrieve Data Quality Model. | ::dataQualityRuleset/<name>, ::job/<name>  |
 | glue:GetDataQualityModelResult | Grants permission to retrieve Data Quality Model Results. | ::dataQualityRuleset/<name>, ::job/<name>  |
-| glue:PutDataQualityStatisticAnnotation |  Grants permission to add annotations to Statistics. This IAM action also provides permissions to the following APIS: [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/data-quality-authorization.html)  | ::dataQualityRuleset/<name>, ::job/<name>  |
+| glue:PutDataQualityStatisticAnnotation |  Grants permission to add annotations to Statistics. This IAM action also provides permissions to the following APIS: +   `BatchPutDataQualityStatisticAnnotation`    | ::dataQualityRuleset/<name>, ::job/<name>  |
 | glue:PutDataQualityProfileAnnotation | Grants permission to put annotations to all Statistics in a Profile. | ::dataQualityRuleset/<name>, ::job/<name>  |
 
 ## IAM setup required for scheduling evaluation runs

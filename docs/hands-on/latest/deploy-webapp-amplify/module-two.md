@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/mo
 |  |  |
 | --- |--- |
 | **Time to complete** | 10 minutes  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/module-two.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/module-two.html)  |
+| **Requires** |  +  AWS profile [configured](https://docs.amplify.aws/react/start/account-setup/) for local development   +  A text editor. Here are a few free ones:    [Atom](https://atom.io/)    [Notepad\+\+](https://notepad-plus-plus.org/)    [Sublime](https://www.sublimetext.com/)    [Vim](https://www.vim.org/)    [Visual Studio Code](https://code.visualstudio.com/)      |
 | **Get help** | [Troubleshooting Amplify](https://docs.amplify.aws/react/build-a-backend/troubleshooting/)  |
 
 ## Overview

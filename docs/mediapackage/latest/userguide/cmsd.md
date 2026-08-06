@@ -19,9 +19,9 @@ The following table describes common CMSD keys that MediaPackage uses. For a ful
 | Key name | Value | CMSD header example |
 | --- | --- | --- |
 | n | The identifier for the MediaPackage origin endpoint of this object. | CMSD-Static: n="MediaPackage:<region>:<channelGroup>:<channel>:<endpoint>" |
-| st | The type of content being returned. Supported values are: [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/userguide/cmsd.html)  | CMSD-Static: st=l |
-| sf | The streaming format of the response. Supported values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/userguide/cmsd.html) | CMSD-Static: sf=(d h)  |
-| ot | The media role of the object being returned. Supported values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediapackage/latest/userguide/cmsd.html) | CMSD-Static: ot=v |
+| st | The type of content being returned. Supported values are: +  `l` = live content <br />+  `v` = VOD content   | CMSD-Static: st=l |
+| sf | The streaming format of the response. Supported values are:+  `d h` = MP4 <br />+  `h` = TS  | CMSD-Static: sf=(d h)  |
+| ot | The media role of the object being returned. Supported values are:+  `m` = text file (manifest or playlist) <br />+  `a` = audio only <br />+  `v` = video only <br />+  `av` = muxed audio and video <br />+  `i` = init segment <br />+  `c` = caption or subtitle <br />+  `tt` = ISOBMFF timed text track <br />+  `k` = cryptographic key, license, or certificate <br />+  `o` = other  | CMSD-Static: ot=v |
 | br | The average encoded bitrate of the object. | CMSD-Static: br=1000000 |
 | ht | The amount of time that MediaPackage waited to send this response to CloudFront.Measured in milliseconds. | CMSD-Static: ht=1000 |
 | d | The playback duration of the object.Measured in milliseconds. | CMSD-Static: d=2000 |

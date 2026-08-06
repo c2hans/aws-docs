@@ -99,7 +99,7 @@ db.runCommand(
 | **name** | optional | string | Specifies the name of the index. | Alphanumeric |
 | **type** | optional |  | Specifies the type of index. | Supported: hnsw or ivfflat<br />Default: HNSW (engine patch 3.0.4574 onwards) |
 | **dimensions** | required | integer | Specifies the number of dimensions in the vector data. | Maximum of 2,000 dimensions. |
-| **similarity** | required | string | Specifies the distance metric used for the similarity calculation. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/vector-search.html)  |
+| **similarity** | required | string | Specifies the distance metric used for the similarity calculation. |  + **euclidean**<br />+ **cosine**<br />+ **dotProduct**  |
 | **lists** | required for IVFFlat | integer | Specifies the number of clusters that the IVFFlat index uses to group the vector data. The recommended setting is the \# of documents/1000 for up to 1M documents and `sqrt(# of documents)` for over 1M documents. | Minimum: 1<br />Maximum: Refer to the lists per instance type table in [Features and limitations](#vector-limitations) below. |
 | **m** | optional | integer | Specifies the max number of connections for an HNSW index | Default: 16<br />Range [2, 100] |
 | **efConstruction** | optional | integer | Specifies the size of the dynamic candidate list for constructing the graph for HNSW index.<br />`efConstruction` must be greater than or equal to (2 \* m) | Default: 64<br />Range [4, 1000] |
@@ -218,7 +218,7 @@ db.collection.aggregate([
 | **vector** | required | array | Indicates the query vector that will be used to find similar vectors. |  |
 | **path** | required | string | Defines the name of the vector field. |  |
 | **k** | required | integer | Specifies the number of results that the search returns. |  |
-| **similarity** | required | string | Specifies the distance metric used for the similarity calculation. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/documentdb/latest/devguide/vector-search.html)  |
+| **similarity** | required | string | Specifies the distance metric used for the similarity calculation. |  + **euclidean**<br />+ **cosine**<br />+ **dotProduct**  |
 | **probes** | optional | integer | The number of clusters you want vector search to inspect. A higher value provides better recall at the cost of speed. It can be set to the number of lists for exact nearest neighbor search (at which point the planner won’t use the index). The recommended setting to start fine-tuning is `sqrt(# of lists)`. | Default: 1 |
 | **efSearch** | optional | integer | Specifies the size of the dynamic candidate list that HNSW index uses during search. A higher value of `efSearch` provides better recall at cost of speed. | Default: 40<br />Range [1, 1000] |
 

@@ -15,12 +15,6 @@ For more information, see [Working with insights](https://docs.aws.amazon.com/qu
 **Note**
 In the following list, the required parameters are described first.
 
- ** DataSetIdentifier **   <a name="QS-Type-InsightVisual-DataSetIdentifier"></a>
-The dataset that is used in the insight visual.
-Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
-Required: Yes
-
  ** VisualId **   <a name="QS-Type-InsightVisual-VisualId"></a>
 The unique identifier of a visual. This identifier must be unique within the context of a dashboard, template, or analysis. Two dashboards, analyses, or templates can have visuals with the same identifiers.
 Type: String
@@ -32,6 +26,12 @@ Required: Yes
 The list of custom actions that are configured for a visual.
 Type: Array of [VisualCustomAction](API_VisualCustomAction.md) objects
 Array Members: Maximum number of 10 items.
+Required: No
+
+ ** DataSetIdentifier **   <a name="QS-Type-InsightVisual-DataSetIdentifier"></a>
+The dataset that is used in the insight visual.
+Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
  ** InsightConfiguration **   <a name="QS-Type-InsightVisual-InsightConfiguration"></a>
@@ -47,6 +47,12 @@ Required: No
  ** Title **   <a name="QS-Type-InsightVisual-Title"></a>
 The title that is displayed on the visual.
 Type: [VisualTitleLabelOptions](API_VisualTitleLabelOptions.md) object
+Required: No
+
+ ** TopicIdentifier **   <a name="QS-Type-InsightVisual-TopicIdentifier"></a>
+The topic that is used in the insight visual.
+Type: String
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: No
 
  ** VisualContentAltText **   <a name="QS-Type-InsightVisual-VisualContentAltText"></a>

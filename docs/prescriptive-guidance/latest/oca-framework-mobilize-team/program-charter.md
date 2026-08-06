@@ -55,10 +55,10 @@ The following table identifies the key people and data that the OCA program char
 | Step | Focus | Activities and people accountable for process |
 | --- |--- |--- |
 | 1 | Supplier | AWS teams and customer teams |
-| 2 | Inputs | Business caseScopeTimelineCloud plan or roadmapAccount planProgram-level charter timelines or workplans by workstreamDesired business outcomesGuiding principlesStrategic initiatives |
-| 3 | Process | Assess key program leaders to confirm expectations, identify areas of concern related to the change acceleration workstream, and understand change landscape.Gather information related to program business case, timelines, schedules, and stakeholder information (if available).Develop initial charter draft.Review and validate initial charter draft.Gather sign-off on final charter. Implement the scope of work. |
-| 4 | Outputs | OCA program charterSign-off on charter |
-| 5 | Customer | Customer executive sponsorsLeadership teamsCustomer change acceleration teamAWS leads and teamsAll teams identified in RACI matrix |
+| 2 | Inputs | + Business case+ Scope+ Timeline+ Cloud plan or roadmap+ Account plan+ Program-level charter timelines or workplans by workstream+ Desired business outcomes+ Guiding principles+ Strategic initiatives |
+| 3 | Process | + Assess key program leaders to confirm expectations, identify areas of concern related to the change acceleration workstream, and understand change landscape.+ Gather information related to program business case, timelines, schedules, and stakeholder information (if available).+ Develop initial charter draft.+ Review and validate initial charter draft.+ Gather sign-off on final charter. + Implement the scope of work. |
+| 4 | Outputs | + OCA program charter+ Sign-off on charter |
+| 5 | Customer | + Customer executive sponsors+ Leadership teams+ Customer change acceleration team+ AWS leads and teams+ All teams identified in RACI matrix |
 
 ** **
 

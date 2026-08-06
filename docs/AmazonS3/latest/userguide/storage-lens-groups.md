@@ -126,7 +126,7 @@ You can use the following filters in an S3 Storage Lens group:
 ### Storage Lens group object tags
 <a name="storage-lens-group-object-tags"></a>
 
-You can [create a Storage Lens group](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-lens-groups-create.html) that includes up to 10 object tag filters. The following example includes two object tag key-value pairs as filters for a Storage Lens group that's named `{{Marketing-Department}}`. To use this example, replace `{{Marketing-Department}}` with the name of your group, and replace `{{object-tag-key-1}}`, `{{object-tag-value-1}}`, and so on with the object tag key-value pairs that you want to filter on.
+You can [Creating a Storage Lens group](storage-lens-groups-create.md) that includes up to 10 object tag filters. The following example includes two object tag key-value pairs as filters for a Storage Lens group that's named `{{Marketing-Department}}`. To use this example, replace `{{Marketing-Department}}` with the name of your group, and replace `{{object-tag-key-1}}`, `{{object-tag-value-1}}`, and so on with the object tag key-value pairs that you want to filter on.
 
 ```
 {

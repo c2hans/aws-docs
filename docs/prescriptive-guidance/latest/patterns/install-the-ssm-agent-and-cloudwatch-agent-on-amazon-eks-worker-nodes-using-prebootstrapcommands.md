@@ -64,7 +64,7 @@ The diagram shows the following workflow:
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Store the CloudWatch agent configuration file. | Store the CloudWatch agent configuration file in the [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) in the AWS Region where you want to create your Amazon EKS cluster. To do this, [create a parameter](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-create-console.html) in AWS Systems Manager Parameter Store and note the name of the parameter (for example, `AmazonCloudwatch-linux`).<br />For more information, see the *Example CloudWatch agent configuration file *code in the [Additional information](#install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands-additional) section of this pattern. | DevOps engineer |
-| Create the eksctl configuration file and cluster.  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands.html) | AWS DevOps |
+| Create the eksctl configuration file and cluster.  | 1. Create an `eksctl` configuration file that includes the CloudWatch agent and SSM Agent installation steps. For more information, see the *Example eksctl configuration file* code in the [Additional information](#install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands-additional) section of this pattern.<br />2. Create a cluster by running the `eksctl create cluster -f cluster.yaml` command. | AWS DevOps |
 
 ### Verify that the SSM Agent and CloudWatch agent work
 <a name="verify-that-the-ssm-agent-and-cloudwatch-agent-work"></a>
@@ -72,7 +72,7 @@ The diagram shows the following workflow:
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Test the SSM Agent. | Use SSH to connect to your Amazon EKS cluster nodes by using any of the methods covered in [Start a session](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-sessions-start.html#start-ec2-console%20%20or%20https:%2F%2Fdocs.aws.amazon.com%2Fsystems-manager%2Flatest%2Fuserguide%2Fsession-manager-working-with-sessions-start.html%23sessions-start-cli) from the AWS Systems Manager documentation. | AWS DevOps |
-| Test the CloudWatch agent. | Use the CloudWatch console to validate the CloudWatch agent:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands.html) | AWS DevOps |
+| Test the CloudWatch agent. | Use the CloudWatch console to validate the CloudWatch agent:1. Sign in to the AWS Management Console and open the [CloudWatch console](https://console.aws.amazon.com/cloudwatch/).<br />2. On the navigation pane, expand **Metrics** and then choose **All metrics**.<br />3. In the search box on the **Browse** tab, enter and then choose **CWAgent metrics **to** **see the memory and disk metrics. | AWS DevOps |
 
 ## Related resources
 <a name="install-the-ssm-agent-and-cloudwatch-agent-on-amazon-eks-worker-nodes-using-prebootstrapcommands-resources"></a>

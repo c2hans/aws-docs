@@ -108,7 +108,7 @@ ms-
 | 4.17 | Any AWS CloudShell permissions can be granted to customer roles as an alternative of CLI. |
 | 4.18 | An IAM role with an AWS service as a trusted principal also must be in compliance with the IAM technical standards. |
 | 4.19 |  Service Linked Roles (SLRs) are not subject to AMS IAM technical standards, as they are built and maintained by IAM Service Team. |
-| 4.20 | IAM policies must not allow unrestricted read access to Amazon S3 bucket objects (for example, Amazon S3:GetObject) across all buckets in an account: [See the AWS documentation website for more details](http://docs.aws.amazon.com/managedservices/latest/userguide/ams-sec-stand-controls.html)  |
+| 4.20 | IAM policies must not allow unrestricted read access to Amazon S3 bucket objects (for example, Amazon S3:GetObject) across all buckets in an account: + In Developer mode accounts: Violations result in a Risk Notification<br />+ In non-Developer mode accounts: Violations require Risk Acceptance  |
 | 4.21 | All the IAM permissions for resource type "savingsplan" can be granted to customers. |
 | 4.22 | AMS engineers aren't permitted to copy or move customer data (files, S3 objects, databases) manually in any of the data storage services, such as Amazon S3, Amazon Relational Database Service, Amazon DynamoDB, and so on, or in the OS file system. |
 | 4.23 | The SCP policy must not be modified to allow any additional access in any of the AMS managed account. |

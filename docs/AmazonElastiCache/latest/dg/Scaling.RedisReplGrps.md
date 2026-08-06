@@ -136,19 +136,19 @@ The amount of time it takes to scale up to a larger node type varies, depending 
    ```
    {
    	    "ScaleUpModifications": [
-   	        "cache.m3.2xlarge",
-   	        "cache.m3.large",
-   	        "cache.m3.xlarge",
+   	        "cache.m5.2xlarge",
+   	        "cache.m5.large",
+   	        "cache.m5.xlarge",
    	        "cache.m4.10xlarge",
    	        "cache.m4.2xlarge",
    	        "cache.m4.4xlarge",
    	        "cache.m4.large",
    	        "cache.m4.xlarge",
-   	        "cache.r3.2xlarge",
-   	        "cache.r3.4xlarge",
-   	        "cache.r3.8xlarge",
-   	        "cache.r3.large",
-   	        "cache.r3.xlarge"
+   	        "cache.r5.2xlarge",
+   	        "cache.r5.4xlarge",
+   	        "cache.r5.12xlarge",
+   	        "cache.r5.large",
+   	        "cache.r5.xlarge"
    	    ]
    	}
    ```
@@ -166,8 +166,8 @@ The amount of time it takes to scale up to a larger node type varies, depending 
    ```
    aws elasticache modify-replication-group \
    	    --replication-group-id {{my-repl-group}} \
-   	    --cache-node-type {{cache.m3.xlarge}} \
-   	    --cache-parameter-group-name {{redis32-m3-2xl}} \
+   	    --cache-node-type {{cache.m5.xlarge}} \
+   	    --cache-parameter-group-name {{redis7-cluster}} \
    	    --apply-immediately
    ```
 
@@ -176,8 +176,8 @@ The amount of time it takes to scale up to a larger node type varies, depending 
    ```
    aws elasticache modify-replication-group ^
    	    --replication-group-id {{my-repl-group}} ^
-   	    --cache-node-type {{cache.m3.xlarge}} ^
-   	    --cache-parameter-group-name {{redis32-m3-2xl}} \
+   	    --cache-node-type {{cache.m5.xlarge}} ^
+   	    --cache-parameter-group-name {{redis7-cluster}} \
    	    --apply-immediately
    ```
 
@@ -287,8 +287,8 @@ The amount of time it takes to scale up to a larger node type varies, depending 
    https://elasticache.us-west-2.amazonaws.com/
    	   ?Action=ModifyReplicationGroup
    	   &ApplyImmediately=true
-   	   &CacheNodeType=cache.m3.2xlarge
-   	   &CacheParameterGroupName=redis32-m3-2xl
+   	   &CacheNodeType=cache.m5.2xlarge
+   	   &CacheParameterGroupName=redis7-cluster
    	   &ReplicationGroupId=myReplGroup
    	   &SignatureVersion=4
    	   &SignatureMethod=HmacSHA256
@@ -399,19 +399,19 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
    ```
    {
    	    "ScaleDownModifications": [
-   	        "cache.m3.2xlarge",
-   	        "cache.m3.large",
-   	        "cache.m3.xlarge",
+   	        "cache.m5.2xlarge",
+   	        "cache.m5.large",
+   	        "cache.m5.xlarge",
    	        "cache.m4.10xlarge",
    	        "cache.m4.2xlarge",
    	        "cache.m4.4xlarge",
    	        "cache.m4.large",
    	        "cache.m4.xlarge",
-   	        "cache.r3.2xlarge",
-   	        "cache.r3.4xlarge",
-   	        "cache.r3.8xlarge",
-   	        "cache.r3.large",
-   	        "cache.r3.xlarge"
+   	        "cache.r5.2xlarge",
+   	        "cache.r5.4xlarge",
+   	        "cache.r5.12xlarge",
+   	        "cache.r5.large",
+   	        "cache.r5.xlarge"
    	    ]
    	}
    ```
@@ -430,7 +430,7 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
    aws elasticache modify-replication-group \
    	    --replication-group-id {{my-repl-group}} \
    	    --cache-node-type {{cache.t2.small }} \
-   	    --cache-parameter-group-name {{redis32-m3-2xl}} \
+   	    --cache-parameter-group-name {{redis7-cluster}} \
    	    --apply-immediately
    ```
 
@@ -440,7 +440,7 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
    aws elasticache modify-replication-group ^
    	    --replication-group-id {{my-repl-group}} ^
    	    --cache-node-type {{cache.t2.small }} ^
-   	    --cache-parameter-group-name {{redis32-m3-2xl}} \
+   	    --cache-parameter-group-name {{redis7-cluster}} \
    	    --apply-immediately
    ```
 
@@ -552,8 +552,8 @@ The amount of time it takes to scale down to a smaller node type varies, dependi
    https://elasticache.us-west-2.amazonaws.com/
    	   ?Action=ModifyReplicationGroup
    	   &ApplyImmediately=true
-   	   &CacheNodeType=cache.m3.2xlarge
-   	   &CacheParameterGroupName=redis32-m3-2xl
+   	   &CacheNodeType=cache.m5.2xlarge
+   	   &CacheParameterGroupName=redis7-cluster
    	   &ReplicationGroupId=myReplGroup
    	   &SignatureVersion=4
    	   &SignatureMethod=HmacSHA256

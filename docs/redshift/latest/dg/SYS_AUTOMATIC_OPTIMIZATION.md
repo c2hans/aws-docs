@@ -18,13 +18,13 @@ SYS\_AUTOMATIC\_OPTIMIZATION is visible only to superusers. For more information
 | --- | --- | --- |
 | session\_id | integer | Process ID executing the task queries. Initially set to 0 when the task is created, this value becomes non-zero only when event is set as Started. |
 | database\_name | character(128) | Name of the database where the task is executed. |
-| object\_type | character(30) | The type of object that the autonomics task operates on. Possible values are the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_AUTOMATIC_OPTIMIZATION.html)  |
+| object\_type | character(30) | The type of object that the autonomics task operates on. Possible values are the following: + table<br />+ mv<br />+ table\_column\_pairs  |
 | object\_ids | character(512) | The identifier of the objects that the autonomics task is operating on. This field can hold more than one object when the task runs on multiple database objects. In this case, the identifiers are separated by commas. |
-| task\_type | character(100) | The type of autonomics task run. Possible tasks are as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_AUTOMATIC_OPTIMIZATION.html)  |
-| event | character(50) | The type of state transition event for the autonomics task. Possible values are the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_AUTOMATIC_OPTIMIZATION.html)  |
+| task\_type | character(100) | The type of autonomics task run. Possible tasks are as follows: + AutoAlterTableTaskSortkey<br />+ AutoAlterTableTaskDistkey<br />+ VacuumSort<br />+ VacuumDelete<br />+ Analyze  |
+| event | character(50) | The type of state transition event for the autonomics task. Possible values are the following: + Queued<br />+ Started<br />+ Suspended<br />+ Completed<br />+ Failed  |
 | event\_time | timestamp | The time that the state transition occurred. |
 | status | character(512) | The execution status of the optimization task. Empty if the task did not try to run. |
-| compute\_type | character(100) | Compute resource type used by the task. Possible values for provisioned are the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_AUTOMATIC_OPTIMIZATION.html)The value can also be empty on provisioned if the task didn't use any compute. For more information on the different types of compute resource that you can use for autonomics, see [Allocating extra compute resources for automatic database optimization](t_extra-compute-autonomics.md). |
+| compute\_type | character(100) | Compute resource type used by the task. Possible values for provisioned are the following: + primary<br />+ primary-scaleThe value can also be empty on provisioned if the task didn't use any compute. For more information on the different types of compute resource that you can use for autonomics, see [Allocating extra compute resources for automatic database optimization](t_extra-compute-autonomics.md). |
 | task\_details | character(512) | Additional task details if any. This field can be empty. |
 
 ## Usage notes

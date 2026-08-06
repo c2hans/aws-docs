@@ -26,7 +26,7 @@ The following lists describe the default menu bar commands in the AWS Cloud9 IDE
 
 | Command | Description |
 | --- | --- |
-|  **Preferences**  | Do one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/menu-commands.html)<br />See [Working with Project Settings](settings-project.md), [Working with User Settings](settings-user.md), [Working with Keybindings](settings-keybindings.md), [Working with Themes](settings-theme.md), and [Working with Initialization Scripts](settings-init-script.md). |
+|  **Preferences**  | Do one of the following:+  Open the **Preferences** tab if it isn't open. <br />+  Make the **Preferences** tab active if it is open but not active. <br />+  Hide the **Preferences** tab if it is active. <br />See [Working with Project Settings](settings-project.md), [Working with User Settings](settings-user.md), [Working with Keybindings](settings-keybindings.md), [Working with Themes](settings-theme.md), and [Working with Initialization Scripts](settings-init-script.md). |
 |  **Go To Your Dashboard**  | Open the AWS Cloud9 console in a separate web browser tab. See [Creating an Environment](create-environment.md), [Opening an Environment](open-environment.md), [Changing Environment Settings](change-environment.md), and [Deleting an Environment](delete-environment.md). |
 |  **Welcome Page**  | Open the **Welcome** tab. |
 |  **Open Your Project Settings**  | Open the `project.settings` file for the current environment. See [Working with Project Settings](settings-project.md). |

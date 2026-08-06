@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/generative-ai-on-
 | --- |--- |
 |  Purpose  |  Determine which AWS generative AI services are the best fit for your organization.  |
 |  Last updated  |  February 14, 2025  |
-|  Covered services  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/generative-ai-on-aws-how-to-choose/guide.html)  |
+|  Covered services  |  +   [Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html)  <br />+   [Amazon Q Business](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html)  <br />+   [Amazon Q Developer](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html)  <br />+   [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html.html) <br />+   [Amazon Nova foundation models](https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html) <br />+  [Amazon Titan foundation models](https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html)  <br />+   [Public foundation models](https://aws.amazon.com/what-is/foundation-models/) <br />+  [AWS Trainium](https://aws.amazon.com/machine-learning/trainium/) <br />+   [AWS Inferentia](https://aws.amazon.com/machine-learning/inferentia/)   |
 
 ## Introduction
 <a name="introduction"></a>

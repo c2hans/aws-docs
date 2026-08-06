@@ -73,7 +73,7 @@ Pattern: `^[a-zA-Z0-9-]+$`
  ** [Status](#API_DeleteContainerAssociation_ResponseSyntax) **   <a name="networkfirewall-DeleteContainerAssociation-response-Status"></a>
 The current status of the container association. After deletion is initiated, the status is `DELETING`.
 Type: String
-Valid Values: `ACTIVE | CREATING | DELETING`
+Valid Values: `ACTIVE | CREATING | DELETING | UPDATING`
 
 ## Errors
 <a name="API_DeleteContainerAssociation_Errors"></a>

@@ -59,7 +59,7 @@ You can see the following metrics for protection packs (web ACLs), rules, rule g
 | Dimension | Description |
 | --- | --- |
 | `Region` | Required for all protected resource types except for Amazon CloudFront distributions. |
-| `Rule` | One of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/waf/latest/developerguide/waf-metrics.html) |
+| `Rule` | One of the following:+  The metric name of the `Rule`. <br />+  ALL, which represents all rules within a WebACL or `RuleGroup`. <br />+  `Default_Action` (only when combined with the `WebACL` dimension), which represents the action assigned to any request whose evaluation wasn't terminated by the action of a rule in the protection pack (web ACL).   |
 | `RuleGroup` | The metric name of the `RuleGroup`. |
 | `WebACL` | The metric name of the `WebACL`. |
 | `WebACLArn` | The Amazon Resource Name (ARN) of the web ACL. This dimension is only available when AWS WAF is enabled. |

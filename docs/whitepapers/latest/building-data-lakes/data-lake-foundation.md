@@ -34,7 +34,7 @@ The following table shows a recommended sample folder structure for your data la
 | Lifecycle policy | Driven by individual object tags | Can have a bucket or object-level policy | Driven by individual object tags |
 | Access | No user access. Use TBAC to enforce services principals access. | Users can have access to the bucket via AWS Lake Formation - AWS IAM | Users can have access to this data through AWS Lake Formation to a specific dataset or tables. (Column-level access is enabled and recommended for access policies.) |
 | Partitioning | By source process date | By business date | By business date |
-| File sizes | Source-defined | User defined (Recommended file size: 128 MB) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-lake-foundation.html)  |
+| File sizes | Source-defined | User defined (Recommended file size: 128 MB) |  +  128 MB recommended for use by Athena/Spectrum querying <br />+  Amazon Redshift load: Number of files of roughly equal size, which are a multiple of the total data slices on Amazon Redshift roughly. <br />Can range from 1 MB to 1 GB.   |
 | Encryption | AWS KMS/AWS CloudHSM/HSM | AWS KMS/AWS CloudHSM/HSM | AWS KMS/AWS CloudHSM/HSM |
 
 It is recommended you follow best practices when defining your bucket strategy for your data lake built on Amazon S3:

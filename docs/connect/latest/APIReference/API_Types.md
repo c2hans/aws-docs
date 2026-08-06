@@ -619,6 +619,7 @@ The following data types are supported by Amazon Connect Outbound Campaigns:
 +  [SuccessfulRequest](API_connect-outbound-campaigns_SuccessfulRequest.md)
 
 The following data types are supported by Amazon Connect Outbound Campaigns V2:
++  [AbandonmentRatePacingConfig](API_connect-outbound-campaigns-v2_AbandonmentRatePacingConfig.md)
 +  [AgentlessConfig](API_connect-outbound-campaigns-v2_AgentlessConfig.md)
 +  [AnswerMachineDetectionConfig](API_connect-outbound-campaigns-v2_AnswerMachineDetectionConfig.md)
 +  [Campaign](API_connect-outbound-campaigns-v2_Campaign.md)
@@ -657,6 +658,7 @@ The following data types are supported by Amazon Connect Outbound Campaigns V2:
 +  [LocalTimeZoneConfig](API_connect-outbound-campaigns-v2_LocalTimeZoneConfig.md)
 +  [OpenHours](API_connect-outbound-campaigns-v2_OpenHours.md)
 +  [OutboundRequest](API_connect-outbound-campaigns-v2_OutboundRequest.md)
++  [PacingStrategy](API_connect-outbound-campaigns-v2_PacingStrategy.md)
 +  [PredictiveConfig](API_connect-outbound-campaigns-v2_PredictiveConfig.md)
 +  [PreviewConfig](API_connect-outbound-campaigns-v2_PreviewConfig.md)
 +  [ProfileOutboundRequest](API_connect-outbound-campaigns-v2_ProfileOutboundRequest.md)

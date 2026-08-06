@@ -12,7 +12,7 @@ We recommend using mq.m7g instance types for both cluster and single-instance de
 Amazon MQ provides at least a 90 day notice before an instance type reaches end of support. We recommend upgrading your broker to a new instance type before the end-of-support date to prevent any disruptions.
 
 **Important**
-The `mq.t3.micro` instance type is deprecated and is no longer available for new broker creation. Existing brokers using `mq.t3.micro` are not affected, but we recommend upgrading to `mq.m5.large` or `mq.m7g.medium` or higher.
+The `mq.t3.micro` instance type is deprecated and is no longer available for new broker creation. Existing brokers using `mq.t3.micro` reach end of support on **October 1, 2026**. We recommend upgrading to `mq.m5.large` or `mq.m7g.medium` or higher before the end of support date to prevent disruptions.
 You cannot downgrade a broker from an `mq.m7g` or `mq.m5` instance type to a `mq.t3.micro` instance type.
 The `mq.t3.micro` instance type does not support cluster deployment.
 

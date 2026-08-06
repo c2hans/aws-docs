@@ -779,6 +779,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetMigration](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetMigration.html)  **
+  - **Description:** Grants permission to get the status and progress of a migration job for an OpenSearch Application
+  - **Resource types (\*required):** [application\*](#list_es-resource-application)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetPackageVersionHistory](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetPackageVersionHistory.html)  **
   - **Description:** Grants permission to fetch the version history for a package
   - **Resource types (\*required):**
@@ -873,6 +879,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Description:** Grants permission to list all instance types and available features for a given OpenSearch or Elasticsearch version
   - **Resource types (\*required):**
   - **Condition keys:**
+  - **Access level:** List
+
+- **   [ListMigrations](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListMigrations.html)  **
+  - **Description:** Grants permission to list migration jobs for an OpenSearch Application
+  - **Resource types (\*required):** [application\*](#list_es-resource-application)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
 - **   [ListPackagesForDomain](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListPackagesForDomain.html)  **
@@ -988,6 +1000,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 - **   [StartElasticsearchServiceSoftwareUpdate](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_StartServiceSoftwareUpdate.html)  **
   - **Description:** Grants permission to start a service software update of a domain. This permission is deprecated. Use StartServiceSoftwareUpdate instead
   - **Resource types (\*required):** [domain\*](#list_es-resource-domain)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
+- **   [StartMigration](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_StartMigration.html)  **
+  - **Description:** Grants permission to initiate a migration of saved objects to an OpenSearch Application
+  - **Resource types (\*required):** [application\*](#list_es-resource-application)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_es-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 

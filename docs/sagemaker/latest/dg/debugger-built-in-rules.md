@@ -36,16 +36,16 @@ Debugger built-in rules for generating training reports
 
 | Scope of Validity | Built-in Rules |
 | --- | --- |
-| Training Report for SageMaker AI XGboost training job |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html)  |
+| Training Report for SageMaker AI XGboost training job |  +  `create\_xgboost\_report`   |
 
 Debugger built-in rules for debugging model training data (output tensors)
 
 | Scope of Validity | Built-in Rules |
 | --- | --- |
-| Deep learning frameworks (TensorFlow, MXNet, and PyTorch) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html)  |
-| Deep learning frameworks (TensorFlow, MXNet, and PyTorch) and the XGBoost algorithm  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html)  |
-| Deep learning applications |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html)  |
-| XGBoost algorithm |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html)  |
+| Deep learning frameworks (TensorFlow, MXNet, and PyTorch) |  +  `dead\_relu` <br />+  `exploding\_tensor` <br />+  `poor\_weight\_initialization` <br />+  `saturated\_activation` <br />+  `vanishing\_gradient` <br />+  `weight\_update\_ratio`   |
+| Deep learning frameworks (TensorFlow, MXNet, and PyTorch) and the XGBoost algorithm  |  +  `all\_zero` <br />+  `class\_imbalance` <br />+  `loss\_not\_decreasing` <br />+  `overfit` <br />+  `overtraining` <br />+  `similar\_across\_runs` <br />+  `stalled\_training\_rule` <br />+  `tensor\_variance` <br />+  `unchanged\_tensor`   |
+| Deep learning applications |  +  `check\_input\_images` <br />+  `nlp\_sequence\_ratio`   |
+| XGBoost algorithm |  +  `confusion` <br />+  `feature\_importance\_overweight` <br />+  `tree\_depth`   |
 
 **To use the built-in rules with default parameter values** – use the following configuration format:
 

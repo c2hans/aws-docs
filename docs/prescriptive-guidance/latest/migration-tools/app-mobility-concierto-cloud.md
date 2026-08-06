@@ -20,9 +20,9 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Product website** | [Concierto.cloud](https://www.concierto.cloud/) |
 | **Product certifications**<br />[AWS Competency Program](https://aws.amazon.com/partners/offerings/) competencies and other certifications | AWS Migration and Modernization – Application Mobility |
 | **AWS Marketplace**<br />Link to subscribe or download | [Concierto.cloud on AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id=f4eb933a-efc0-4e94-a0da-9a28bc819cc4) |
-| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | SaaS on AWS (vendor VPC)Servers deployed on AWS (customer VPC)Servers deployed on premises in customer environmentSaaS or servers in other cloud provider environment |
-| **Compliance** | General Data Protection Regulation (GDPR)System and Organization Controls (SOC)International Organization for Standardization (ISO) 27001:2022National Institute of Standards and Technology (NIST) 800-53CSA Star Level 2 |
-| **Service model** | Full self-service – Deployment, management, and maintenance can be done by the customer or end-userManaged service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
+| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | + SaaS on AWS (vendor VPC)<br />+ Servers deployed on AWS (customer VPC)<br />+ Servers deployed on premises in customer environment<br />+ SaaS or servers in other cloud provider environment |
+| **Compliance** | + General Data Protection Regulation (GDPR)<br />+ System and Organization Controls (SOC)<br />+ International Organization for Standardization (ISO) 27001:2022<br />+ National Institute of Standards and Technology (NIST) 800-53<br />+ CSA Star Level 2 |
+| **Service model** | + Full self-service – Deployment, management, and maintenance can be done by the customer or end-user<br />+ Managed service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
 | **Pricing model** | Subscription |
 
 ## Application mobility capabilities
@@ -32,15 +32,15 @@ AWS Partner product descriptions and reported qualifications, including complian
 |
 | Category | Product capabilities |
 | --- |--- |
-| **Replication method**<br />The ability to support one or more of the following replication methods:Agentless – Uses protocols or interfaces such as SNMP or WMIAgent-based – Requires installation of software on the source resources, such as Linux or Windows serversLogin-based – Uses protocols, such as SSH and RDP, to log in to the source servers | AgentlessLogin-based |
-| **Supported sources**<br />The hosting environments that the product can migrate applications from | Container platforms, including Docker and Kubernetes-basedGoogle Cloud PlatformMicrosoft AzurePhysical serversVMware |
-| **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | Application anomaliesApplication environmentApplication errors and codesEnvironmentFrameworks and librariesMissing source code attributeNumber of lines of codeNumber of unique functions or modules at source level or binary levelPerformance data and metricsProgramming languageSoftware versionsSoftware vulnerabilities |
-| **Supported operating systems**<br />Operating systems that the product can migrate | LinuxWindows |
-| **Supported targets**<br />Resources that the product can migrate to | Amazon Elastic Compute Cloud (Amazon EC2)AWS LambdaAmazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS) |
-| **Source code repository integration**<br />Repositories that the product can analyze to support application transformation | BitbucketGitHubGitLab |
-| **Deployment integration**<br />Services that the product integrates with to support deployment | AWS CodePipelineBambooBuddyGitLabJenkins |
-| **Infrastructure as code templates**<br />Templates that the product can generate to support application deployment | AWS CloudFormationHashiCorp Terraform |
-| **Notifications**<br />Methods that the product can use to notify you of progress or issues | EmailLogsMetricsSMS |
+| **Replication method**<br />The ability to support one or more of the following replication methods:+ Agentless – Uses protocols or interfaces such as SNMP or WMI<br />+ Agent-based – Requires installation of software on the source resources, such as Linux or Windows servers<br />+ Login-based – Uses protocols, such as SSH and RDP, to log in to the source servers | + Agentless<br />+ Login-based |
+| **Supported sources**<br />The hosting environments that the product can migrate applications from | + Container platforms, including Docker and Kubernetes-based<br />+ Google Cloud Platform<br />+ Microsoft Azure<br />+ Physical servers<br />+ VMware |
+| **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | + Application anomalies<br />+ Application environment<br />+ Application errors and codes<br />+ Environment<br />+ Frameworks and libraries<br />+ Missing source code attribute<br />+ Number of lines of code<br />+ Number of unique functions or modules at source level or binary level<br />+ Performance data and metrics<br />+ Programming language<br />+ Software versions<br />+ Software vulnerabilities |
+| **Supported operating systems**<br />Operating systems that the product can migrate | + Linux<br />+ Windows |
+| **Supported targets**<br />Resources that the product can migrate to | + Amazon Elastic Compute Cloud (Amazon EC2)<br />+ AWS Lambda<br />+ Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS) |
+| **Source code repository integration**<br />Repositories that the product can analyze to support application transformation | + Bitbucket<br />+ GitHub<br />+ GitLab |
+| **Deployment integration**<br />Services that the product integrates with to support deployment | + AWS CodePipeline<br />+ Bamboo<br />+ Buddy<br />+ GitLab<br />+ Jenkins |
+| **Infrastructure as code templates**<br />Templates that the product can generate to support application deployment | + AWS CloudFormation<br />+ HashiCorp Terraform |
+| **Notifications**<br />Methods that the product can use to notify you of progress or issues | + Email<br />+ Logs<br />+ Metrics<br />+ SMS |
 | **Replication options, continuous asynchronous replication** | Available |
 | **Replication options, bandwidth consumption**<br />The ability to manage bandwidth consumption, such as by using throttling or parallel replication streams | Available |
 | **Replication options, storage types**<br />The ability to select storage types for both temporary and target replication disk volumes to manage performance and cost | Available |

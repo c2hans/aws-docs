@@ -23,8 +23,8 @@ There are three service deployment stages:
 | Stage | Definition | Associated states |
 | --- | --- | --- |
 | Pending | A service deployment has been created, but has not started | PENDING |
-| Ongoing | A service deployment is in-progress |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment.html)  |
-| Completed  | A service deployment has finished (successfully or unsuccessfully) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment.html)  |
+| Ongoing | A service deployment is in-progress |  + IN\_PROGRESS<br />+ STOP\_REQUESTED<br />+  ROLLBACK\_REQUESTED <br />+  ROLLBACK\_IN\_PROGRESS   |
+| Completed  | A service deployment has finished (successfully or unsuccessfully) |  +  SUCCESSFUL<br />+ STOPPED<br />+ ROLLBACK\_SUCCESSFUL<br />+  ROLLBACK\_FAILED  |
 
 You use service deployments to understand the lifecycle of your service and to determine if there are any actions you need to take. For example, if a rollback happened, you might need to investigate the service deployment and looking at service events.
 

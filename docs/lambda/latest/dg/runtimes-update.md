@@ -39,10 +39,10 @@ Consider the following scenarios:
 
 | Deployment | Patching compatible | Reason |
 | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html)  | Yes | Future runtime updates to packages A and B are backward compatible. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html)  | Yes | Your deployment takes precedence, so future runtime updates to packages A and B have no effect. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html)  | Yes\* | Future runtime updates to package B are backward compatible.<br />\*If A and B are tightly coupled, compatibility issues can occur. For example, the `boto3` and `botocore` packages in the AWS SDK for Python should be deployed together. |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lambda/latest/dg/runtimes-update.html)  | No | Future runtime updates to package A might require an updated version of package B. However, the deployed version of package B takes precedence, and might not be forward compatible with the updated version of package A. |
+|  +  **Package A:** Use from runtime <br />+  **Package B:** Use from runtime   | Yes | Future runtime updates to packages A and B are backward compatible. |
+|  +  **Package A:** In deployment package <br />+  **Package B:** In deployment package   | Yes | Your deployment takes precedence, so future runtime updates to packages A and B have no effect. |
+|  +  **Package A:** In deployment package <br />+  **Package B:** Use from runtime   | Yes\* | Future runtime updates to package B are backward compatible.<br />\*If A and B are tightly coupled, compatibility issues can occur. For example, the `boto3` and `botocore` packages in the AWS SDK for Python should be deployed together. |
+|  +  **Package A:** Use from runtime <br />+  **Package B:** In deployment package   | No | Future runtime updates to package A might require an updated version of package B. However, the deployed version of package B takes precedence, and might not be forward compatible with the updated version of package A. |
 
 To maintain compatibility with future runtime updates, follow these best practices:
 + **When possible, package all dependencies:** Include all required libraries, including the AWS SDK and its dependencies, in your deployment package. This ensures a stable, compatible set of components.

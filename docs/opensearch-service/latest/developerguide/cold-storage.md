@@ -173,7 +173,7 @@ When you migrate indexes to cold storage, you provide a time range for the data 
 | Parameter | Supported value | Description |
 | --- | --- | --- |
 | timestamp\_field | The date/time field from the index mapping. | The minimum and maximum values of the provided field are computed and stored as the `start_time` and `end_time` metadata for the cold index. |
-| start\_time and end\_time | One of the following formats:[See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/cold-storage.html) | The provided values are stored as the `start_time` and `end_time` metadata for the cold index.  |
+| start\_time and end\_time | One of the following formats:+  strict\_date\_optional\_time. For example: `yyyy-MM-dd'T'HH:mm:ss.SSSZ` or `yyyy-MM-dd` <br />+  Epoch time in milliseconds  | The provided values are stored as the `start_time` and `end_time` metadata for the cold index.  |
 
 If you don't want to specify a timestamp, add `?ignore=timestamp` to the request instead.
 

@@ -9,29 +9,29 @@ This checklist includes the configuration tasks that are necessary to prepare yo
 
 - **1**
   - **Task:** Review how to add tags to all your AWS resources. To implement ABAC in IAM Identity Center, you'll first need to add tags to all your AWS resources that you want to implement ABAC for.
-  - **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
+  - **Reference:**  +  [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html)
 
 - **2**
   - **Task:** Review how to configure your identity source in IAM Identity Center with the associated user identities and attributes in your identity store. IAM Identity Center lets you use user attributes from any supported IAM Identity Center identity source for ABAC in AWS.
-  - **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
+  - **Reference:**  +  [Manage your identity source](manage-your-identity-source.md)
 
 - **3**
-  - **Task:** Based on the following criteria, determine which attributes you want to use for making access control decisions in AWS and send them to IAM Identity Center.  / **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
-  - **Task:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)  / **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
-  - **Task:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)  / **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
-  - **Task:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)  / **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
-  - **Task:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)  / **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
+  - **Task:** Based on the following criteria, determine which attributes you want to use for making access control decisions in AWS and send them to IAM Identity Center.  / **Reference:**  +  [Getting started](attributesforaccesscontrol.md#abac-getting-started)
+  - **Task:**  +  If you are using an external identity provider (IdP), decide whether you want to use attributes passed from the IdP or select attributes from within IAM Identity Center.   / **Reference:**  +  [Choosing attributes when using an external identity provider as your identity source](attributesforaccesscontrol.md#abac-getting-started-idp)
+  - **Task:**  +  If you choose to have your IdP send attributes, configure your IdP to transmit the attributes in SAML assertions. See the `Optional` sections in the tutorial for your specific IdP.   / **Reference:**  +  [IAM Identity Center identity source tutorials](tutorials.md)
+  - **Task:**  +  If you use an IdP as your identity source and choose to select attributes in IAM Identity Center, investigate how to configure SCIM so that the attribute values come from your IdP. If you cannot use SCIM with your IdP, add the users and their attributes using the IAM Identity Center console **User** page.   / **Reference:**  +  [Provision users and groups from an external identity provider using SCIM](provision-automatically.md) <br />+  [Supported external identity provider attributes](attributemappingsconcept.md#supportedidpattributes)
+  - **Task:**  +  If you use Active Directory or IAM Identity Center as your identity source, or you use an IdP and choose to select attributes in IAM Identity Center, review the available attributes that you can configure. Then jump immediately to step 4 to start configuring your ABAC attributes using the IAM Identity Center console.   / **Reference:**  +  [Choosing attributes when using IAM Identity Center as your identity source](attributesforaccesscontrol.md#abac-getting-started-sso) <br />+  [Choosing attributes when using AWS Managed Microsoft AD as your identity source](attributesforaccesscontrol.md#abac-getting-started-ms-ad) <br />+  [Default mappings between IAM Identity Center and Microsoft AD](attributemappingsconcept.md#defaultattributemappings)
 
 - **4**
   - **Task:** Select the attributes to use for ABAC using the **Attributes for access control** page in the IAM Identity Center console. From this page you can select attributes for access control from the identity source that you configured in step 2. After your identities and their attributes are in IAM Identity Center, you must create key-value pairs (mappings) which will be passed to your AWS accounts for use in access control decisions.
-  - **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
+  - **Reference:**  +  [Enable and configure attributes for access control](configure-abac.md)
 
 - **5**
   - **Task:** Create custom permissions policies within your permission set and use access control attributes to create ABAC rules so that users can only access resources with matching tags. User attributes that you configured in step 4 are used as tags in AWS for access control decisions. You can refer to the access control attributes in the permissions policy using the `aws:PrincipalTag/key` condition.
-  - **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
+  - **Reference:**  +  [Create permission policies for ABAC in IAM Identity Center](configure-abac-policies.md)
 
 - **6**
   - **Task:** In your various AWS accounts, assign users to permissions sets you created in step 5. Doing so ensures that when they federate into their accounts and access AWS resources, they only get access based on matching tags.
-  - **Reference:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/singlesignon/latest/userguide/abac-checklist.html)
+  - **Reference:**  +  [Assign user or group access to AWS accounts](assignusers.md)
 
 After you complete these steps, users who federate into an AWS account using single sign-on will get access to their AWS resources based on matching attributes.

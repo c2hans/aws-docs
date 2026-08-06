@@ -48,7 +48,7 @@ The date and time when the user was created, in [ISO 8601 date-time format](http
 When the user has a password, this value is `TRUE`. Otherwise it is `FALSE`. This value is `FALSE` for new member accounts created as part of your organization as they have no root user credentials by default.
 
 **password\_last\_used**
-The date and time when the AWS account root user or user's password was last used to sign in to an AWS website, in [ISO 8601 date-time format](http://www.iso.org/iso/iso8601). AWS websites that capture a user's last sign-in time are the AWS Management Console, the AWS Discussion Forums, and the AWS Marketplace. When a password is used more than once in a 5-minute span, only the first use is recorded in this field.
+The date and time when the AWS account root user or user's password was last used to sign in to an AWS website, in [ISO 8601 date-time format](https://docs.aws.amazon.com/http://www.iso.org/iso/iso8601). AWS websites that capture a user's last sign-in time are the AWS Management Console, the AWS Discussion Forums, and the AWS Marketplace. When a password is used more than once in a 5-minute span, only the first use is recorded in this field.
 + The value in this field is `no_information` in these cases:
   + The user's password has never been used.
   + There is no sign-in data associated with the password, such as when user's password has not been used after IAM started tracking this information on October 20, 2014.

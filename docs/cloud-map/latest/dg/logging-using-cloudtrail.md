@@ -38,8 +38,8 @@ The following table lists the AWS Cloud Map resource types for which you can log
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| AwsApiCall |  AWS::ServiceDiscovery::Namespace  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud-map/latest/dg/logging-using-cloudtrail.html)  |
-| AwsApiCall |  AWS::ServiceDiscovery::Service  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud-map/latest/dg/logging-using-cloudtrail.html)  |
+| AwsApiCall |  AWS::ServiceDiscovery::Namespace  |  +  [https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstances.html](https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstances.html) <br />+  [https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstancesRevision.html](https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstancesRevision.html)   |
+| AwsApiCall |  AWS::ServiceDiscovery::Service  |  +  [https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstances.html](https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstances.html) <br />+  [https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstancesRevision.html](https://docs.aws.amazon.com/cloud-map/latest/api/API_DiscoverInstancesRevision.html) <br />+  [https://docs.aws.amazon.com/cloud-map/latest/api/API_GetServiceAttributes.html](https://docs.aws.amazon.com/cloud-map/latest/api/API_GetServiceAttributes.html)   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

@@ -27,8 +27,8 @@ Depending on your learning objectives, technical landscape, and organizational n
 |
 | Integration Approach | Description | Pros | Cons | Best For |
 | --- |--- |--- |--- |--- |
-| **Native LMS Plugin/Extension** | Custom code that extends LMS functionality directly within the platform's extension framework | Deep LMS integrationNative user experienceDirect access to LMS data models | LMS-specific developmentMaintenance challenges with LMS version updatesLimited by LMS plugin architecture constraints | Single LMS environmentsOrganizations with expertise in the specific LMS technology stack |
-| **Learning Tools Interoperability (LTI)** | Standards-based integration that embeds external tools while maintaining interoperability across LMS platforms | Cross-platform compatibilityIndependent release cyclesStandardized authentication and data exchange | Operates in iframe / separate context limiting some UX optionsRequires implementing LTI standards | Multi-LMS environments, vendors building tools for multiple institutionsStandardized deployments |
+| **Native LMS Plugin/Extension** | Custom code that extends LMS functionality directly within the platform's extension framework | + Deep LMS integration<br />+ Native user experience<br />+ Direct access to LMS data models | + LMS-specific development<br />+ Maintenance challenges with LMS version updates<br />+ Limited by LMS plugin architecture constraints | + Single LMS environments<br />+ Organizations with expertise in the specific LMS technology stack |
+| **Learning Tools Interoperability (LTI)** | Standards-based integration that embeds external tools while maintaining interoperability across LMS platforms | + Cross-platform compatibility<br />+ Independent release cycles<br />+ Standardized authentication and data exchange | + Operates in iframe / separate context limiting some UX options<br />+ Requires implementing LTI standards | + Multi-LMS environments, vendors building tools for multiple institutions<br />+ Standardized deployments |
 
 ## Back-end integration approaches
 <a name="untitled"></a>
@@ -39,9 +39,9 @@ The back-end integration approaches can be used in isolation or are often combin
 |
 | Integration Approach | Description | AWSServices | Best For |
 | --- |--- |--- |--- |
-| **API Integration** | Custom code running on AWS communicating with LMS services through APIs | [AWS Lambda](https://aws.amazon.com/lambda/)[Amazon EC2](https://aws.amazon.com/ec2/)Containers | Real-time data integration for external applications |
-| **ETL/ELT Data Pipeline** | Batch data extraction and transformation for analytics | [AWS Glue](https://aws.amazon.com/glue/)[Amazon S3](https://aws.amazon.com/s3/)[Amazon AppFlow](https://aws.amazon.com/appflow/) | Analytics use casesReporting |
-| **Event-Driven Architecture** | Event producers and consumers that react to changes in LMS or AWS systems | [Amazon EventBridge](https://aws.amazon.com/eventbridge/)[Amazon Simple Notification Service](https://aws.amazon.com/sns/)[Amazon Simple Queue Service](https://aws.amazon.com/sqs/) | Near real-time requirementsComplex workflows |
+| **API Integration** | Custom code running on AWS communicating with LMS services through APIs | + [AWS Lambda](https://aws.amazon.com/lambda/)<br />+ [Amazon EC2](https://aws.amazon.com/ec2/)<br />+ Containers | + Real-time data integration for external applications |
+| **ETL/ELT Data Pipeline** | Batch data extraction and transformation for analytics | + [AWS Glue](https://aws.amazon.com/glue/)<br />+ [Amazon S3](https://aws.amazon.com/s3/)<br />+ [Amazon AppFlow](https://aws.amazon.com/appflow/) | + Analytics use cases<br />+ Reporting |
+| **Event-Driven Architecture** | Event producers and consumers that react to changes in LMS or AWS systems | + [Amazon EventBridge](https://aws.amazon.com/eventbridge/)<br />+ [Amazon Simple Notification Service](https://aws.amazon.com/sns/)<br />+ [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) | + Near real-time requirements<br />+ Complex workflows |
 
 ## Use case mapping by integration option
 <a name="use-case-mapping-by-integration-option"></a>

@@ -35,7 +35,7 @@ Before you run the `shadow.py` sample app, you'll need the following information
 |  Parameter  |  Where to find the value  |
 | --- | --- |
 | {{your-iot-thing-name}} | Name of the AWS IoT thing that you created earlier in [Step 2: Create a thing resource and attach the policy to the thing](shadow-provision-cloud.md#create-thing-shadow).<br />To find this value, in the [AWS IoT console](https://console.aws.amazon.com/iot/home), choose **Manage**, and then choose **Things**. |
-| {{your-iot-endpoint}} |  The {{your-iot-endpoint}} value has a format of: `{{endpoint_id}}-ats.iot.{{region}}.amazonaws.com`, for example, `a3qj468EXAMPLE-ats.iot.us-west-2.amazonaws.com`. To find this value:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/lightbulb-shadow-application.html) |
+| {{your-iot-endpoint}} |  The {{your-iot-endpoint}} value has a format of: `{{endpoint_id}}-ats.iot.{{region}}.amazonaws.com`, for example, `a3qj468EXAMPLE-ats.iot.us-west-2.amazonaws.com`. To find this value:1.  In the [AWS IoT console](https://console.aws.amazon.com/iot/home), choose **Manage**, and then choose **Things**. <br />2.  Choose the IoT thing you created for your device, **My\_light\_bulb**, that you used earlier, and then choose **Interact**. On the thing details page, your endpoint is displayed in the ** HTTPS** section.  |
 
 **Install and run the sample app**
 

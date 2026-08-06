@@ -72,7 +72,7 @@ Follow the best practices and recommendations in [AWS Well-Architected DevOps Gu
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Review the standard Trunk process. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/implement-a-trunk-branching-strategy-for-multi-account-devops-environments.html) | DevOps engineer |
+| Review the standard Trunk process. | 1. In the sandbox environment, the developer creates a `feature` branch from the `main` branch and uses the naming pattern `feature/<ticket>_<initials>_<short description>`.<br />2. The developer develops code and deploys the code to the sandbox environment iteratively in order to complete the ticket.The developer can optionally create a `sandbox` branch to run an automated build or deploy pipeline in the sandbox environment.<br />3. The developer creates a merge request from the `feature` branch into the `main` branch by using a squash merge.<br />4. A continuous integration and continuous delivery (CI/CD) pipeline automatically builds and publishes the artifacts from the `main` branch to the development environment.<br />5. An approver manually approves the deployment of the release artifacts to the development environment.<br />6. An approver manually approves the deployment of the release artifacts to the testing environment.<br />7. An approver manually approves the deployment of the release artifacts to the staging environment.<br />8. An approver manually approves the deployment of the release artifacts to the production environment. | DevOps engineer |
 
 ## Troubleshooting
 <a name="implement-a-trunk-branching-strategy-for-multi-account-devops-environments-troubleshooting"></a>

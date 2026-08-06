@@ -34,7 +34,7 @@ Rate control modes define how the encoding engine uses the buffer model and how 
 
 | Location of Field on Web Interface | Location of Tag in XML |
 | --- | --- |
-| Streams – Video > Advanced > Rate Control Mode | stream\_assembly/video\_description/{{codec}}/rate\_control\_mode<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control-modes.html) |
-| Streams – Video > Advanced > Start QP | stream\_assembly/video\_description/{{codec}}/qp<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control-modes.html) |
-| Streams – Video > Advanced > Min QP | stream\_assembly/video\_description/{{codec}}/min\_qp<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control-modes.html) |
-| Streams – Video > Advanced > Max QP | stream\_assembly/video\_description/{{codec}}/max\_qp<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-rate-control-modes.html) |
+| Streams – Video > Advanced > Rate Control Mode | stream\_assembly/video\_description/{{codec}}/rate\_control\_mode<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Start QP | stream\_assembly/video\_description/{{codec}}/qp<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings**  |
+| Streams – Video > Advanced > Min QP | stream\_assembly/video\_description/{{codec}}/min\_qp<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings**  |
+| Streams – Video > Advanced > Max QP | stream\_assembly/video\_description/{{codec}}/max\_qp<br />where {{codec}} is one of the following:+  **h265\_settings** <br />+  **vc1\_settings** <br />+  **mpeg2\_settings**  |

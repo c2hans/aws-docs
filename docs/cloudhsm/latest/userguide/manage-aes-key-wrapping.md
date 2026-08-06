@@ -57,6 +57,6 @@ The following table describes permitted values for IVs, which the wrapping algor
 
 | AES Key Wrap Algorithm | PKCS \#11 Mechanism | Java Method | CloudHSM CLI Sub Command | Key Management Utility (KMU) Argument |
 | --- | --- | --- | --- | --- |
-| AES Key Wrap with Zero Padding  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-aes-key-wrapping.html)  | AESWrap/ECB/ZeroPadding | aes-zero-pad | m = 6 |
-| AES Key Wrap with No Padding |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-aes-key-wrapping.html)  | AESWrap/ECB/NoPadding | aes-no-pad | m = 5 |
-| AES Key Wrap with PKCS \#5 Padding  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/manage-aes-key-wrapping.html)  | AESWrap/ECB/PKCS5Padding | aes-pkcs5-pad | m = 4 |
+| AES Key Wrap with Zero Padding  |  +  `CKM_CLOUDHSM_AES_KEY_WRAP_ZERO_PAD` (Vendor Defined Mechanism)    | AESWrap/ECB/ZeroPadding | aes-zero-pad | m = 6 |
+| AES Key Wrap with No Padding |  +  `CKM_CLOUDHSM_AES_KEY_WRAP_NO_PAD` (Vendor Defined Mechanism)   | AESWrap/ECB/NoPadding | aes-no-pad | m = 5 |
+| AES Key Wrap with PKCS \#5 Padding  |  +  `CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD` (Vendor Defined Mechanism)   | AESWrap/ECB/PKCS5Padding | aes-pkcs5-pad | m = 4 |

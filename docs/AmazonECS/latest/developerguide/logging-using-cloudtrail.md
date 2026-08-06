@@ -45,7 +45,7 @@ The following table lists the Amazon ECS resource types for which you can log da
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| AwsApiCall |  AWS::ECS::ContainerInstance  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/logging-using-cloudtrail.html)  |
+| AwsApiCall |  AWS::ECS::ContainerInstance  |  +  `ecs:Poll` (for EC2 and Amazon ECS Managed Instances) <br />+  `ecs:StartTelemetrySession` (for EC2 and Amazon ECS Managed Instances) <br />+  `ecs:PutSystemLogEvents` (for Amazon ECS Managed Instances)   |
 
 You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html) in the *AWS CloudTrail API Reference*.
 

@@ -19,7 +19,7 @@ When in doubt, teams can over-size hardware, allow systems to run for a couple o
 
 |  **Traditional view**  |  **Modern view**  |
 | --- | --- |
-|  Architecture as one-way door [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/adopting-a-consistent-design-decision-approach.html) |  Modernize what matters—'V1 AWS design’ architecture approach [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/cloud-driven-enterprise-transformation-on-aws/adopting-a-consistent-design-decision-approach.html) |
+|  Architecture as one-way door +   Design for 5-year growth forecast (‘one and done’)  <br />+   Over-build to anticipate/guess future use patterns  <br />+   Led by infrastructure: business not involved  <br />+   Tool and technology focus   |  Modernize what matters—'V1 AWS design’ architecture approach +   Architect for cost, performance and operations  <br />+   “[Two-pizza teams](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html)” empowered to make decisions  <br />+   Based on business need, quickly determine first step  <br />+   Optimization backlog on V1 manifests design evolution over time   |
 
 ## V1 AWS design
 <a name="v1-aws-design"></a>

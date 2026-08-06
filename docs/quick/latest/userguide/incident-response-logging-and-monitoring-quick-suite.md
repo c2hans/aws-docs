@@ -36,7 +36,10 @@ To access the analytics dashboard, you need the following permission: `quicksigh
 
 | User type | Analytics capabilities |
 | --- | --- |
-| IAM administrators |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/incident-response-logging-and-monitoring-quick-suite.html)  |
+| IAM administrators |  +  View all analytics data for the entire instance <br />+  Access detailed query and response data <br />+  Monitor team adoption and engagement metrics   |
+
+**Important**
+If you have analytics access, you can view detailed query text, failed-query content, and the full conversation context associated with negative feedback. Grant analytics access only to authorized administrators, and apply your organization's data-handling and incident-response policies to analytics review workflows.
 
 ## Analytics dashboard overview
 <a name="analytics-dashboard-overview"></a>

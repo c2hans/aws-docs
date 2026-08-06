@@ -17,4 +17,4 @@ With Signer and the Notation CLI from the [Notary  Project](https://notaryproj
 
 For more information about Signer, see the [AWS Signer Developer Guide](http://docs.aws.amazon.com/signer/latest/developerguide/Welcome.html).
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

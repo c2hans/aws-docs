@@ -32,7 +32,7 @@ Process events represent information associated with the processes running on Am
 | Process Environment Variable | The environment variable made available to the process. Only `LD_PRELOAD` and `LD_LIBRARY_PATH` get collected. |
 | Process Present Working Directory (PWD) | Present working directory of the process. |
 | Parent process | Process details of the parent process. A parent process is a process that created the observed process. |
-| Command Line Arguments<br />Presently, this field is limited to specific agent versions corresponding to the resource type:[See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-collected-events.html)<br />For more information, see [GuardDuty security agent release versions](runtime-monitoring-agent-release-history.md). | Command-line arguments provided at the time of process execution. This field might contain sensitive customer data.  |
+| Command Line Arguments<br />Presently, this field is limited to specific agent versions corresponding to the resource type:+  Fargate (Amazon ECS only) with GuardDuty security agent v1.0.0 and above. <br />+  Amazon EC2 instances with GuardDuty security agent v1.0.0 and above. <br />+  Amazon EKS clusters with security agent v1.4.0 and above. <br />For more information, see [GuardDuty security agent release versions](runtime-monitoring-agent-release-history.md). | Command-line arguments provided at the time of process execution. This field might contain sensitive customer data.  |
 
 ## Container events
 <a name="eks-runtime-container-events"></a>
@@ -81,7 +81,7 @@ The Domain Name System (DNS) events includes details of the DNS queries made by 
 | Field name | Description |
 | --- | --- |
 | Socket Type | Type of socket to indicate communication semantics. For example, `SOCK_RAW`. |
-| Address Family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IP v4 protocol. |
+| Address Family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IPv4 protocol. |
 | Direction ID | The ID of the connection direction. |
 | Protocol Number | The layer 4 protocol number such as 17 for UDP and 6 for TCP. |
 | DNS Remote Endpoint IP | The remote IP of the connection. |
@@ -117,7 +117,7 @@ Mprotect events provide information about changes to the memory protection setti
 | Field name | Description |
 | --- | --- |
 | Address Range | The address range for which the access protections were modified. |
-| Memory Regions | Specifies the Region of a process's address space such as stack and heap. |
+| Memory Regions | Specifies the region of a process's address space such as stack and heap. |
 | Flags | Represents options that control the behavior of this event. |
 
 ## Mount events
@@ -182,7 +182,7 @@ Socket events provide information about the network socket connections used in t
 
 | Field name | Description |
 | --- | --- |
-| Address family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IP version of 4 protocol. |
+| Address family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IPv4 protocol. |
 | Socket Type | Type of socket to indicate communication semantics. For example, `SOCK_RAW`. |
 | Protocol number | Specifies a particular protocol within the address family. Usually there is a single protocol in address families. For example, the address family `AF_INET` only has the IP protocol. |
 
@@ -193,7 +193,7 @@ Connect events provide visibility into the network connections established by th
 
 | Field name | Description |
 | --- | --- |
-| Address family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IP v4 protocol. |
+| Address family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IPv4 protocol. |
 | Socket Type | Type of socket to indicate communication semantics. For example, `SOCK_RAW`. |
 | Protocol Number | Specifies a particular protocol within the address family. Usually there is a single protocol in address families. For example, the address family `AF_INET` only has the IP protocol. |
 | Filepath | Path of the socket file if the address family is `AF_UNIX`. |
@@ -247,7 +247,7 @@ Bind events provide visibility into binding of network sockets by processes runn
 
 | Field name | Description |
 | --- | --- |
-| Address Family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IP v4 protocol. |
+| Address Family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IPv4 protocol. |
 | Socket type | Type of socket to indicate communication semantics. For example, `SOCK_RAW`. |
 | Protocol number | The layer 4 protocol number such as 17 for UDP and 6 for TCP. |
 | Local endpoint IP | The local IP of the connection. |
@@ -260,7 +260,7 @@ Listen events provide visibility into the listening state of network sockets, in
 
 | Field name | Description |
 | --- | --- |
-| Address Family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IP v4 protocol. |
+| Address Family | Represents the communication protocol associated with the address. For example, the address family `AF_INET` is used for IPv4 protocol. |
 | Socket type | Type of socket to indicate communication semantics. For example, `SOCK_RAW`. |
 | Protocol number | The layer 4 protocol number such as 17 for UDP and 6 for TCP. |
 | Local endpoint IP | The local IP of the connection. |

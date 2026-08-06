@@ -46,8 +46,8 @@ The following character sets are generally safe for use in key names:
 
 |  |  |
 | --- |--- |
-| Alphanumeric characters |    0-9   a-z   A-Z    |
-| Special characters |    Exclamation point (`!`)   Hyphen (`-`)   Underscore (`_`)   Period (`.`)   Asterisk (`*`)   Single quotation mark (`'`)   Opening parenthesis (`(`)   Closing parenthesis (`)`)    |
+| Alphanumeric characters |  +  0-9 <br />+  a-z <br />+  A-Z   |
+| Special characters |  +  Exclamation point (`!`) <br />+  Hyphen (`-`) <br />+  Underscore (`_`) <br />+  Period (`.`) <br />+  Asterisk (`*`) <br />+  Single quotation mark (`'`) <br />+  Opening parenthesis (`(`) <br />+  Closing parenthesis (`)`)   |
 
 The following are examples of valid object key names:
 + `4my-organization`

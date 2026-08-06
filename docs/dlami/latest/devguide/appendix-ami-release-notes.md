@@ -31,6 +31,7 @@ Below are the release notes for X86 Base DLAMI:
 + [Base AMI with Single CUDA (Ubuntu 24.04)](aws-deep-learning-x86-base-with-single-cuda-ami-ubuntu-24-04.md)
 + [Base AMI with Single CUDA (Ubuntu 22.04)](aws-deep-learning-x86-base-with-single-cuda-ami-ubuntu-22-04.md)
 + [Base GPU AMI (Amazon Linux 2023)](aws-deep-learning-x86-base-gpu-ami-amazon-linux-2023.md)
++ [Base GPU AMI (Ubuntu 26.04)](aws-deep-learning-x86-base-gpu-ami-ubuntu-26-04.md)
 + [Base GPU AMI (Ubuntu 24.04)](aws-deep-learning-x86-base-gpu-ami-ubuntu-24-04.md)
 + [Base GPU AMI (Ubuntu 22.04)](aws-deep-learning-x86-base-gpu-ami-ubuntu-22-04.md)
 
@@ -44,6 +45,7 @@ Below are the release notes for ARM64 Base DLAMI:
 + [ARM64 Base AMI with Single CUDA (Ubuntu 24.04)](aws-deep-learning-arm64-base-with-single-cuda-ami-ubuntu-24-04.md)
 + [ARM64 Base AMI with Single CUDA (Ubuntu 22.04)](aws-deep-learning-arm64-base-with-single-cuda-ami-ubuntu-22-04.md)
 + [ARM64 Base GPU AMI (Amazon Linux 2023)](aws-deep-learning-arm64-base-gpu-ami-amazon-linux-2023.md)
++ [ARM64 Base GPU AMI (Ubuntu 26.04)](aws-deep-learning-arm64-base-gpu-ami-ubuntu-26-04.md)
 + [ARM64 Base GPU AMI (Ubuntu 24.04)](aws-deep-learning-arm64-base-gpu-ami-ubuntu-24-04.md)
 + [ARM64 Base GPU AMI (Ubuntu 22.04)](aws-deep-learning-arm64-base-gpu-ami-ubuntu-22-04.md)
 

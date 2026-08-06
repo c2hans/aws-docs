@@ -28,7 +28,7 @@ The number of pending job executions in your account can vary depending on wheth
 | API/notification name | Description | Without scheduling configuration | With scheduling configuration |
 | --- | --- | --- | --- |
 | ListNotification | A ListNotification is published whenever an old job execution enters a terminal status, or when a new job execution is queued or changes to a non-terminal status. It can display up to 15 pending job executions that are either QUEUED or IN\_PROGRESS. | 10 | 15 (Up to 5 job executions only appears in the ListNotification during a maintenace window). |
-| GetPendingJobExecutions | When you invoke the `GetPendingJobExecutions` API, it returns a list of job executions that have not yet started, and can be started after the API call. The API can return up to a maximum of 10 pending job executions.[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/job-limits.html) | 10 | 15 |
+| GetPendingJobExecutions | When you invoke the `GetPendingJobExecutions` API, it returns a list of job executions that have not yet started, and can be started after the API call. The API can return up to a maximum of 10 pending job executions.+  Out of the 10 pending job executions, executions that are `IN_PROGRESS` will be filtered from the result. <br />+  Out of the 10 pending job executions, if their jobs are in `SCHEDULED` status, they will be filtered from the result.  | 10 | 15 |
 
 ## Active and concurrent job limits
 <a name="job-limits-active-concurrent"></a>

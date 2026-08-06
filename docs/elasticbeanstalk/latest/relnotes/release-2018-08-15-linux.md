@@ -19,9 +19,9 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 | **Security updates** | Applied all security updates published in the [Amazon Linux Security Center](https://alas.aws.amazon.com/) on or before August 6, 2018 to all Linux-based platforms. |
 | **PHP** | Added support for PHP 7.2 in a [new PHP configuration](#release-2018-08-15-linux.platforms.PHP). It is released side-by-side with the existing supported PHP configurations. |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-15-linux.html) |
-| **z1d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-15-linux.html)  |
-| **r5** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-15-linux.html)  |
-| **r5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-08-15-linux.html)  |
+| **z1d** |  + US East (N. Virginia)—us-east-1<br />+ US West (N. California)—us-west-1<br />+ US West (Oregon)—us-west-2<br />+ Asia Pacific (Singapore)—ap-southeast-1<br />+ Asia Pacific (Tokyo)—ap-northeast-1<br />+ EU (Ireland)—eu-west-1  |
+| **r5** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2<br />+ EU (Ireland)—eu-west-1  |
+| **r5d** |  + US East (N. Virginia)—us-east-1<br />+ US East (Ohio)—us-east-2<br />+ US West (Oregon)—us-west-2  |
 
 ## Updated platform configurations
 <a name="release-2018-08-15-linux.platforms"></a>

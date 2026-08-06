@@ -5031,7 +5031,7 @@ main "$@"
   + [DeleteNamespace](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteNamespace)
   + [DeleteRole](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/DeleteRole)
   + [DeleteSecurityGroup](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/DeleteSecurityGroup)
-  + [DeleteService](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DeleteService)
+  + [DeleteService](https://docs.aws.amazon.com/goto/aws-cli/servicediscovery-2017-03-14/DeleteService)
   + [DeregisterTaskDefinition](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DeregisterTaskDefinition)
   + [DescribeClusters](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DescribeClusters)
   + [DescribeServices](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/DescribeServices)
@@ -6896,7 +6896,7 @@ main "$@"
   + [StopTask](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/StopTask)
   + [TerminateInstances](https://docs.aws.amazon.com/goto/aws-cli/ec2-2016-11-15/TerminateInstances)
   + [UpdateService](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/UpdateService)
-  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/ecs-2014-11-13/Wait)
+  + [Wait](https://docs.aws.amazon.com/goto/aws-cli/iam-2010-05-08/Wait)
 
 ### Creating a relational database instance
 <a name="rds_GettingStarted_036_bash_2_topic"></a>

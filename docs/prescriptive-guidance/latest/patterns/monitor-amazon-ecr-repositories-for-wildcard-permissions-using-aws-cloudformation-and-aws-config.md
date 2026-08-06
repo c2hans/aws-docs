@@ -82,7 +82,7 @@ The code for this pattern is available in the `aws-config-cloudformation.templat
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Test the AWS Config custom rule. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-amazon-ecr-repositories-for-wildcard-permissions-using-aws-cloudformation-and-aws-config.html) | AWS DevOps |
+| Test the AWS Config custom rule. | 1. Sign in to the AWS Management Console, open the AWS Config console, and then choose **Resources**.<br />2. On the **Resource inventory** page, you can filter by resource category, resource type, and compliance status.<br />3. An Amazon ECR repository that contains `ecr:*` is `NON-COMPLIANT?` and an Amazon ECR repository that doesn't contain `ecr:*` is `COMPLIANT`.<br />4. The email address subscribed to the SNS topic receives notifications if an Amazon ECR repository contains non-compliant policy statements. | AWS DevOps |
 
 ## Attachments
 <a name="attachments-01bbf5f8-27aa-4c64-9a03-7fcccc0955b8"></a>

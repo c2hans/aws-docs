@@ -74,7 +74,7 @@ The steps in this pattern can be automated by using AWS CloudFormation or the AW
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create an SNI certificate and import the certificate into ACM. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | Network administrator |
+| Create an SNI certificate and import the certificate into ACM. | 1. Create an SNI certificate for ui.domain.com and api.domain.com. For more information, see [Choosing how CloudFront serves HTTPS requests](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cnames-https-dedicated-ip-or-sni.html) in the Amazon CloudFront documentation.<br />2. Import the SNI certificates into AWS Certificate Manager (ACM). For more information, see [Importing certificates into AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the ACM documentation. | Network administrator |
 
 ### Deploy a VPC endpoint in a non-routable private subnet
 <a name="deploy-a-vpc-endpoint-in-a-non-routable-private-subnet"></a>
@@ -89,9 +89,9 @@ The steps in this pattern can be automated by using AWS CloudFormation or the AW
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create a target group for your application. | [Create a target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-target-group.html) for the UI resources of your application. | Cloud administrator |
-| Create a target group for the API Gateway endpoint. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | Cloud administrator |
-| Create an Application Load Balancer. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | Cloud administrator |
-| Create listeners rules. | Create [listener rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#listener-rules) to do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | Cloud administrator |
+| Create a target group for the API Gateway endpoint. | 1. [Create a target group with an IP address type](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html#target-group-ip-address-type), and then add the IP address of the VPC endpoint for the API Gateway endpoint to the target group.<br />2. [Configure health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/health-checks.html) for your target groups with success code 403. 403 is required because the VPC endpoint for the API Gateway returns a 403 code when it is invoked without any headers by the target group health check. | Cloud administrator |
+| Create an Application Load Balancer. | 1. [Create an Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-application-load-balancer.html) (internal) in a routable private subnet.<br />2. Add the 443 listener to the Application Load Balancer, and the choose the certificate from ACM.  | Cloud administrator |
+| Create listeners rules. | Create [listener rules](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html#listener-rules) to do the following:1. Forward the host api.domain.com to the API Gateway target group<br />2. Forward the host ui.domain.com to the target group for the UI resources | Cloud administrator |
 
 ### Configure Route 53
 <a name="configure-route-53"></a>
@@ -99,15 +99,15 @@ The steps in this pattern can be automated by using AWS CloudFormation or the AW
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Create a private hosted zone. | [Create a private hosted zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zone-private-creating.html) for domain.com. | Cloud administrator |
-| Create domain records. | [Create CNAME records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-creating.html) for the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | Cloud administrator |
+| Create domain records. | [Create CNAME records](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-creating.html) for the following:+ An API with the value set to the DNS name of the Application Load Balancer<br />+ A UI with the value set to the DNS name of the Application Load Balancer | Cloud administrator |
 
 ### Create a private API endpoint in API Gateway
 <a name="create-a-private-api-endpoint-in-api-gateway"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create and configure a private API endpoint. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | App developer, Cloud administrator |
-| Create a custom domain name. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer.html) | Cloud administrator |
+| Create and configure a private API endpoint. | 1. To create a private API endpoint, follow the instructions from [Creating a private API in Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-private-apis.html) in the API Gateway documentation. <br />2. Configure the resource policy to allow calls to only the API from the VPC endpoint. For more information, see [Controlling access to an API with API Gateway resource policies](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-resource-policies.html) in the API Gateway documentation. | App developer, Cloud administrator |
+| Create a custom domain name. | 1. Create a custom domain name for api.domain.com. For more information, see [Setting up custom domain names for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) in the API Gateway documentation.<br />2. Select the created API and stage. For more information, see [Working with API mappings for REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mappings.html) in the API Gateway documentation. | Cloud administrator |
 
 ## Related resources
 <a name="deploy-an-amazon-api-gateway-api-on-an-internal-website-using-private-endpoints-and-an-application-load-balancer-resources"></a>

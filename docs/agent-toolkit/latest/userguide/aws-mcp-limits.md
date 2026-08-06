@@ -24,18 +24,28 @@ The following quotas apply to connections and sessions for AWS MCP Server.
 
 | Quota | Default value | Adjustable | Description |
 | --- | --- | --- | --- |
-| Concurrent connections per account per Region | 27 | No | The maximum number of concurrent MCP connections per AWS account in a single Region. |
+| Concurrent connections per account per Region | 100 | No | The maximum number of concurrent MCP connections per AWS account in a single Region. This limit applies to authenticated requests. |
 | Concurrent active sessions per account per Region | 180 | Yes | The maximum number of concurrent active sessions per AWS account in a single Region. |
 | Concurrent active sessions per user per Region | 90 | Yes | The maximum number of concurrent active sessions per IAM user or role in a single Region. |
+
+**Note**
+The per-account and per-user quotas in the preceding table apply to authenticated requests. Unauthenticated requests are not subject to a per-account connection quota and have lower connection limits.
 
 ## Throttling quotas
 <a name="throttling-quotas"></a>
 
 The following quotas apply to request rates for AWS MCP Server. Requests that exceed these limits are throttled with a 429 response.
 
+Request rate limits for AWS MCP Server vary based on whether your request is authenticated. Authenticating your requests gives you more capacity:
++ **Authenticated requests** – When you authenticate with your AWS credentials, your requests receive a per-AWS-account request rate. You can authenticate using either SigV4 through the MCP Proxy for AWS or OAuth 2.1 through AWS Sign-in. Authenticated requests also have access to the full set of AWS MCP Server tools, including the tools that run AWS API calls and execute scripts. To get more capacity, authenticate your requests.
++ **Unauthenticated requests** – Requests that you send without AWS credentials share a lower rate limit. This limit applies per source IP address rather than per account. Unauthenticated access is limited to the read-only AWS knowledge tools, such as documentation search, documentation retrieval, and regional availability. Tools that run AWS API calls or execute scripts require authentication.
+
+For more information about authenticating with AWS MCP Server, see [OAuth 2.1 authentication for AWS MCP Server](oauth-authentication.md).
+
 | Quota | Default value | Adjustable | Description |
 | --- | --- | --- | --- |
-| Requests per account per Region | 3 per second (sustained) | No | The maximum number of requests per second to the AWS MCP Server per AWS account in a single Region. |
+| Authenticated requests per account per Region | 10 per second (sustained) | No | The maximum number of authenticated requests per second to the AWS MCP Server per AWS account in a single Region. AWS MCP Server does not count unauthenticated requests against this per-account quota; it limits them separately per source IP address. |
+| Unauthenticated requests per source IP address per Region | 5 per second (sustained) | No | The maximum number of unauthenticated requests per second from a single source IP address in a single Region. This limit is lower than the authenticated per-account rate and applies per source IP address rather than per account. To get more capacity, authenticate your requests. |
 
 ## Session limits
 <a name="session-limits"></a>

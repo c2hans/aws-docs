@@ -11,7 +11,7 @@ The following table describes quotas and limits for identity, permission, and ac
 
 | Resource | Information |
 | --- | --- |
-| Aliases in CodeCatalyst | Any combination of allowed characters between 3 and 100 characters in length and must start with a letter. Valid characters: A-Z, a-z, and 0-9. Aliases cannot:[See the AWS documentation website for more details](http://docs.aws.amazon.com/codecatalyst/latest/userguide/ipa-quotas.html) |
+| Aliases in CodeCatalyst | Any combination of allowed characters between 3 and 100 characters in length and must start with a letter. Valid characters: A-Z, a-z, and 0-9. Aliases cannot:+  contain fewer than 3 characters <br />+  contain spaces or any of the following characters: `? ^ * [ \ ~ :`  |
 | Maximum number of invitations sent by a user per day | 500 |
 | Maximum number of invitations sent to an email address per day | 25 |
 | Maximum number of Personal Access Tokens (PAT) per user | 100 |

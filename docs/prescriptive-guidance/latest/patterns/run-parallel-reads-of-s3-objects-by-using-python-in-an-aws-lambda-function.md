@@ -107,9 +107,9 @@ The code for this pattern is available in the [aws-lambda-parallel-download](htt
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the app. | Run `cdk deploy`.<br />Write down the AWS CDK outputs:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/run-parallel-reads-of-s3-objects-by-using-python-in-an-aws-lambda-function.html) | Cloud architect |
+| Deploy the app. | Run `cdk deploy`.<br />Write down the AWS CDK outputs:+ `ParallelDownloadStack.LambdaFunctionARN`<br />+ `ParallelDownloadStack.SampleS3BucketName`<br />+ `ParallelDownloadStack.StateMachineARN` | Cloud architect |
 | Upload an example JSON file. | The repository contains an example JSON file of about 9 KB. To upload the file to the S3 bucket of the created stack, run the following command:<pre>aws s3 cp sample.json s3://<ParallelDownloadStack.SampleS3BucketName></pre><br />Replace `<ParallelDownloadStack.SampleS3BucketName>` with the corresponding value from the AWS CDK output. | Cloud architect |
-| Run the app. | To run the app, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/run-parallel-reads-of-s3-objects-by-using-python-in-an-aws-lambda-function.html) | Cloud architect |
+| Run the app. | To run the app, do the following:1. Sign in to the AWS Management Console, navigate to the [Lambda console](https://console.aws.amazon.com/lambda/home), and locate the Lambda function that has the ARN from the AWS CDK output `ParallelDownloadStack.LambdaFunctionARN`.<br />2. On the **Test** tab, change the **Event JSON** to the following:<pre>{"objectKey": "sample.json"}</pre><br />3. Choose **Test**.<br />4. To see the result, choose **details**. The details will show the statistics of the parallel download, the information of the run, and the logs. | Cloud architect |
 | Add the number of downloads. | (Optional) To run 1,500 get object calls, use the following JSON in **Event JSON** of the `Test` parameter:<pre>{"repeat": 1500, "objectKey": "sample.json"}</pre> | Cloud architect |
 
 ### Optional: Run AWS Lambda Power Tuning
@@ -117,7 +117,7 @@ The code for this pattern is available in the [aws-lambda-parallel-download](htt
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Run the AWS Lambda Power Tuning tool. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/run-parallel-reads-of-s3-objects-by-using-python-in-an-aws-lambda-function.html)At the end of the run, the result will be on the **Execution input and output** tab. | Cloud architect |
+| Run the AWS Lambda Power Tuning tool. | 1. Sign in to the console, and navigate to [Step Functions](https://console.aws.amazon.com/states/home).<br />2. Locate the state machine with the ARN from the AWS CDK output `ParallelDownloadStack.StateMachineARN`.<br />3. Choose **Start execution**, and paste the following JSON:<pre>{<br />  "lambdaARN": "<ParallelDownloadStack.LambdaFunctionARN>",<br />  "num": 10,<br />  "strategy": "balanced",<br />  "payload": {"repeat": 2000, "objectKey": "sample.json"}<br />}</pre><br />Remember to replace `<ParallelDownloadStack.LambdaFunctionARN>` with the value from the AWS CDK output.At the end of the run, the result will be on the **Execution input and output** tab. | Cloud architect |
 | View the AWS Lambda Power Tuning results in a graph. | On the **Execution input and output** tab, copy the `visualization` property link, and paste it in a new browser tab. | Cloud architect |
 
 ### Clean up

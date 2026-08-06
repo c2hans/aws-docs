@@ -295,7 +295,7 @@ This operation also supports the following condition key:
 
 | Key | Valid action providers |
 | --- | --- |
-| `codeconnections:PassedToService` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html)  |
+| `codeconnections:PassedToService` |  +  `codeguru-reviewer` <br />+  `codepipeline.amazonaws.com` <br />+  `proton.amazonaws.com`   |
 
 ### Using a connection
 <a name="permissions-reference-connections-use"></a>
@@ -421,7 +421,7 @@ This operation also supports the following condition key:
 
 | Key | Valid action providers |
 | --- | --- |
-| `codeconnections:PassedToService` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html)  |
+| `codeconnections:PassedToService` |  +  `cloudformation.sync.codeconnections.amazonaws.com`   |
 
 ### Supported condition key for repository links
 <a name="permissions-reference-connections-branch"></a>
@@ -435,7 +435,7 @@ Operations for repository links and sync configuration resources are supported b
 
 | Key | Valid values |
 | --- | --- |
-| `codeconnections:Branch` | The following actions are supported for this condition key:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html) |
+| `codeconnections:Branch` | The following actions are supported for this condition key:+  CreateSyncConfiguration <br />+  UpdateSyncConfiguration <br />+  GetRepositorySyncStatus  |
 
 ### Supported permissions for connection sharing
 <a name="permissions-reference-connections-sharing"></a>

@@ -58,6 +58,7 @@ Required: Yes
       "AssociationSyncState": {
          "string" : {
             "Attachment": {
+               "DnsName": "string",
                "EndpointId": "string",
                "Status": "string",
                "StatusMessage": "string",

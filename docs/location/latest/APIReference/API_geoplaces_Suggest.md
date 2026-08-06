@@ -54,7 +54,7 @@ Length Constraints: Minimum length of 0. Maximum length of 1000.
 The request accepts the following data in JSON format.
 
  ** [AdditionalFeatures](#API_geoplaces_Suggest_RequestSyntax) **   <a name="location-geoplaces_Suggest-request-AdditionalFeatures"></a>
- A list of optional additional parameters, such as time zone, that can be requested for each result. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only the `Core` and `TimeZone` values.
+ A list of optional additional parameters, such as time zone, that can be requested for each result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the `Core` and `TimeZone` values.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `Core | TimeZone | Phonemes | Access | CrossReferences`
@@ -79,13 +79,13 @@ Valid Values: `SingleUse`
 Required: No
 
  ** [Language](#API_geoplaces_Suggest_RequestSyntax) **   <a name="location-geoplaces_Suggest-request-Language"></a>
- A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
+ A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 35.
 Required: No
 
  ** [MaxQueryRefinements](#API_geoplaces_Suggest_RequestSyntax) **   <a name="location-geoplaces_Suggest-request-MaxQueryRefinements"></a>
- Maximum number of query terms to be returned for use with a search text query. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Maximum number of query terms to be returned for use with a search text query. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 10.
 Required: No
@@ -98,7 +98,7 @@ Valid Range: Minimum value of 1. Maximum value of 100.
 Required: No
 
  ** [PoliticalView](#API_geoplaces_Suggest_RequestSyntax) **   <a name="location-geoplaces_Suggest-request-PoliticalView"></a>
- The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 3.
 Pattern: `([A-Z]{2}|[A-Z]{3})`
@@ -367,7 +367,7 @@ For more information on pricing, please visit [Amazon Location Service Pricing](
 The following data is returned in JSON format by the service.
 
  ** [QueryRefinements](#API_geoplaces_Suggest_ResponseSyntax) **   <a name="location-geoplaces_Suggest-response-QueryRefinements"></a>
- Maximum number of query terms to be returned for use with a search text query. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Maximum number of query terms to be returned for use with a search text query. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [QueryRefinement](API_geoplaces_QueryRefinement.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 10 items.
 

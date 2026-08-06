@@ -42,7 +42,7 @@ The `receipt` object has the following fields.
 | --- | --- |
 | [`action`](#receiving-email-notifications-contents-action-object) | Object that encapsulates information about the action that was executed. For a list of possible values, see [action object](#receiving-email-notifications-contents-action-object). |
 | [`dkimVerdict`](#receiving-email-notifications-contents-dkimverdict-object) | Object that indicates whether the DomainKeys Identified Mail (DKIM) check passed. For a list of possible values, see [dkimVerdict object](#receiving-email-notifications-contents-dkimverdict-object). |
-| dmarcPolicy | Indicates the Domain-based Message Authentication, Reporting & Conformance (DMARC) settings for the sending domain. This field only appears if the message fails DMARC authentication.<br />Possible values for this field are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-notifications-contents.html) |
+| dmarcPolicy | Indicates the Domain-based Message Authentication, Reporting & Conformance (DMARC) settings for the sending domain. This field only appears if the message fails DMARC authentication.<br />Possible values for this field are:+  `none`: The owner of the sending domain requests that no specific action be taken on messages that fail DMARC authentication. <br />+  `quarantine`: The owner of the sending domain requests that messages that fail DMARC authentication be treated by receivers as suspicious. <br />+  `reject`: The owner of the sending domain requests that messages that fail DMARC authentication be rejected.  |
 | [`dmarcVerdict`](#receiving-email-notifications-contents-dmarcverdict-object) | Object that indicates whether the Domain-based Message Authentication, Reporting & Conformance (DMARC) check passed. For a list of possible values, see [dmarcVerdict object](#receiving-email-notifications-contents-dmarcverdict-object). |
 |  processingTimeMillis  | String that specifies the period, in milliseconds, from the time Amazon SES received the message to the time it triggered the action. |
 |  recipients  | The recipients (specifically, the envelope RCPT TO addresses) that were matched by the active [receipt rule](receiving-email-receipt-rules-console-walkthrough.md). The addresses listed here may differ from those listed by the `destination` field in the [mail object](#receiving-email-notifications-contents-mail-object). |
@@ -77,7 +77,7 @@ The `dkimVerdict` object has the following fields.
 
 | Field Name | Description |
 | --- | --- |
-|  status  | String that contains the DKIM verdict. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-notifications-contents.html) |
+|  status  | String that contains the DKIM verdict. Possible values are:+  `PASS`: The message passed DKIM authentication. <br />+  `FAIL`: The message failed DKIM authentication. <br />+  `GRAY`: The message is not DKIM-signed or the from domain and DKIM-signature domain do not match. <br />+  `PROCESSING_FAILED`: There is an issue that prevents Amazon SES from checking the DKIM signature. For example, DNS queries are failing or the DKIM signature header is not formatted properly.  |
 
 ### dmarcVerdict object
 <a name="receiving-email-notifications-contents-dmarcverdict-object"></a>
@@ -86,7 +86,7 @@ The `dmarcVerdict` object has the following fields.
 
 | Field Name | Description |
 | --- | --- |
-|  status  | String that contains the DMARC verdict. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-notifications-contents.html) |
+|  status  | String that contains the DMARC verdict. Possible values are:+  `PASS`: The message passed DMARC authentication. <br />+  `FAIL`: The message failed DMARC authentication. <br />+  `GRAY`: At least one of SPF or DKIM passed authentication, but the sending domain does not have a DMARC policy or uses the `p=none` policy. <br />+  `PROCESSING_FAILED`: There is an issue that prevents Amazon SES from providing a DMARC verdict.  |
 
 ### spamVerdict object
 <a name="receiving-email-notifications-contents-spamverdict-object"></a>
@@ -95,7 +95,7 @@ The `spamVerdict` object has the following fields.
 
 | Field Name | Description |
 | --- | --- |
-|  status  | String that contains the result of spam scanning. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-notifications-contents.html) |
+|  status  | String that contains the result of spam scanning. Possible values are:+  `PASS`: The spam scan determined that the message is unlikely to contain spam. <br />+  `FAIL`: The spam scan determined that the message is likely to contain spam. <br />+  `GRAY`: Amazon SES scanned the email but could not determine with confidence whether it is spam. <br />+  `PROCESSING_FAILED`: Amazon SES was unable to scan the email. For example, the email is not a valid MIME message.  |
 
 ### spfVerdict object
 <a name="receiving-email-notifications-contents-spfverdict-object"></a>
@@ -104,7 +104,7 @@ The `spfVerdict` object has the following fields.
 
 | Field Name | Description |
 | --- | --- |
-|  status  | String that contains the SPF verdict. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-notifications-contents.html) |
+|  status  | String that contains the SPF verdict. Possible values are:+  `PASS`: The message passed SPF authentication. <br />+  `FAIL`: The message failed SPF authentication. <br />+  `GRAY`: The SPF result is `none`, `softfail`, or `neutral`. <br />+  `PROCESSING_FAILED`: There is an issue that prevents Amazon SES from checking the SPF record. For example, DNS queries are failing.  |
 
 ### virusVerdict object
 <a name="receiving-email-notifications-contents-virusverdict-object"></a>
@@ -113,7 +113,7 @@ The `virusVerdict` object has the following fields.
 
 | Field Name | Description |
 | --- | --- |
-|  status  | String that contains the result of virus scanning. Possible values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ses/latest/dg/receiving-email-notifications-contents.html) |
+|  status  | String that contains the result of virus scanning. Possible values are:+  `PASS`: The message does not contain a virus. <br />+  `FAIL`: The message contains a virus. <br />+  `GRAY`: Amazon SES scanned the email but could not determine with confidence whether it contains a virus. <br />+  `PROCESSING_FAILED`: Amazon SES is unable to scan the content of the email. For example, the email is not a valid MIME message.  |
 
 ## mail object
 <a name="receiving-email-notifications-contents-mail-object"></a>

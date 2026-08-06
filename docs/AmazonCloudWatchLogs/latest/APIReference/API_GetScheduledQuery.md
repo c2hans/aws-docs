@@ -37,6 +37,15 @@ Required: Yes
    "creationTime": number,
    "description": "string",
    "destinationConfiguration": {
+      "lookupTableConfiguration": {
+         "description": "string",
+         "kmsKeyId": "string",
+         "roleArn": "string",
+         "tableName": "string",
+         "tags": {
+            "string" : "string"
+         }
+      },
       "s3Configuration": {
          "destinationIdentifier": "string",
          "kmsKeyId": "string",

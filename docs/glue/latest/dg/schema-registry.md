@@ -141,10 +141,10 @@ You may use the default registry or create as many new registries as necessary.
 
 |  |
 | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/schema-registry.html)  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/schema-registry.html)  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/schema-registry.html)  |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/schema-registry.html)  |
+|  +  RegistryName: [string]   RegistryArn: [AWS ARN]   CreatedTime: [timestamp]   UpdatedTime: [timestamp]     |
+|  +  SchemaName: [string]   SchemaArn: [AWS ARN]   DataFormat: [Avro, Json, or Protobuf]   Compatibility: [eg. BACKWARD, BACKWARD\_ALL, FORWARD, FORWARD\_ALL, FULL, FULL\_ALL, NONE, DISABLED]   Status: [eg. PENDING, AVAILABLE, DELETING]   SchemaCheckpoint: [integer]   CreatedTime: [timestamp]   UpdatedTime: [timestamp]     |
+|  +  SchemaVersion: [string]   SchemaVersionNumber: [integer]   Status: [eg. PENDING, AVAILABLE, DELETING, FAILURE]   SchemaDefinition: [string, Value: JSON]   CreatedTime: [timestamp]     |
+|  +  SchemaVersionMetadata: [list]   MetadataKey: [string]   MetadataInfo   MetadataValue: [string]   CreatedTime: [timestamp]    |
 
 ## Schema versioning and compatibility
 <a name="schema-registry-compatibility"></a>

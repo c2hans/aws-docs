@@ -16,14 +16,14 @@ With inline actions, you can easily find and define properties for invoking Lamb
 | `type` | Specifies which extension manages the launch configuration. Always set to `aws-sam` to use the AWS SAM CLI to build and debug locally. |
 | `name` | Specifies a reader-friendly name to appear in the **Debug launch configuration** list. |
 | `request` | Specifies the type of configuration to be performed by the designated extension (`aws-sam`). Always set to `direct-invoke` to start the Lambda function. |
-| `invokeTarget` | Specifies the entry point for invoking the resource.<br />For invoking the Lambda function directly, set values for the following `invokeTarget` fields: [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/sam-debug-config-ref.html)<br />For invoking the Lambda resources with the SAM template, set values for the following `invokeTarget` fields:[See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/sam-debug-config-ref.html) |
+| `invokeTarget` | Specifies the entry point for invoking the resource.<br />For invoking the Lambda function directly, set values for the following `invokeTarget` fields: + `target` – Set to `code`.<br />+ `lambdaHandler` – The name of the Lambda function handler to invoke.<br />+ `projectRoot` – The path for the application file containing the Lambda handler.<br />For invoking the Lambda resources with the SAM template, set values for the following `invokeTarget` fields:+ `target` – Set to `template`.<br />+ `templatePath` – The path to the SAM template file.<br />+ `logicalId` – The resource name of the `AWS::Lambda::Function` or `AWS::Serverless::Function` to invoke. You can find the resource name in the YAML-formatted SAM template. |
 
 **Lambda (`"lambda"`) properties**
 
 |  Property | Description |
 | --- | --- |
 | `environmentVariables` | Passes operational parameters to your function. For example, if you're writing to an Amazon S3 bucket, configure the bucket name as an environment variable. Do not hard code the bucket name that you're writing to. |
-| `payload` | Provides two options for the event payload that you provide to your Lambda function as input.[See the AWS documentation website for more details](http://docs.aws.amazon.com/cloud9/latest/user-guide/sam-debug-config-ref.html) |
+| `payload` | Provides two options for the event payload that you provide to your Lambda function as input.+ `"json"`: JSON-formatted key-value pairs that define the event payload.<br />+ `"path"`: A path to the file that's used as the event payload. |
 | `memoryMB` | Specifies megabytes of memory provided for running an invoked Lambda function. |
 | `runtime` | Specifies the runtime used by the Lambda function. For more information, see [AWS Lambda runtimes](https://docs.aws.amazon.com/lambda/latest/dg/lambda-runtimes.html). |
 | `timeoutSec` | Sets the time allowed, in seconds, before the debug session times out. |

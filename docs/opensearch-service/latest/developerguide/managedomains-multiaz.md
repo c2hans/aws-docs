@@ -93,7 +93,7 @@ Availability Zone disruptions are rare, but do occur. The following table lists 
 | Number of Availability Zones in a region | Number of Availability Zones you chose | Number of dedicated master nodes | Behavior if one Availability Zone experiences a disruption |
 | --- | --- | --- | --- |
 | 2 or more | 2 | 0 | Downtime. Your cluster loses half of its data nodes and must replace at least one in the remaining Availability Zone before it can elect a master. |
-| 2 | 2 | 3 | 50/50 chance of downtime. OpenSearch Service distributes two dedicated master nodes into one Availability Zone and one into the other:[See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-multiaz.html) |
+| 2 | 2 | 3 | 50/50 chance of downtime. OpenSearch Service distributes two dedicated master nodes into one Availability Zone and one into the other:+  If the Availability Zone with one dedicated master node experiences a disruption, the two dedicated master nodes in the remaining Availability Zone can elect a master. <br />+  If the Availability Zone with two dedicated master nodes experiences a disruption, the cluster is unavailable until the remaining Availability Zone recovers.  |
 | 3 or more | 2 | 3 | No downtime. OpenSearch Service automatically distributes the dedicated master nodes across three Availability Zones, so the remaining two dedicated master nodes can elect a master. |
 | 3 or more | 3 | 0 | No downtime. Roughly two-thirds of your data nodes are still available to elect a master. |
 | 3 or more | 3 | 3 | No downtime. The remaining two dedicated master nodes can elect a master. |

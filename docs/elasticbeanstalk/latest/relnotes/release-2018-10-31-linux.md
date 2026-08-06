@@ -25,13 +25,13 @@ This release applies security updates to Linux-based platforms for AWS Elastic B
 | **Node.js** | Updated the Node.js platform to support [Node v8.12.0](https://nodejs.org/en/blog/release/v8.12.0/). |
 | **PHP** | Updated the PHP 7.2, 7.1, 7.0, and 5.6 configurations to PHP releases [7.2.11](http://php.net/archive/2018.php#id2018-10-11-2), [7.1.23](http://php.net/archive/2018.php#id2018-10-11-3), [7.0.32](http://php.net/archive/2018.php#id2018-09-13-3), and [5.6.38](http://php.net/archive/2018.php#id2018-09-13-5), respectively. |
 | **Ruby** | Updated the Ruby 2.5, 2.4, and 2.3 configurations to Ruby releases [2.5.3](https://www.ruby-lang.org/en/news/2018/10/18/ruby-2-5-3-released/), [2.4.5](https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-4-5-released/), and [2.3.8](https://www.ruby-lang.org/en/news/2018/10/17/ruby-2-3-8-released/), respectively. |
-| **c5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
-| **f1.4xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
-| **g3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
-| **g3s** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
-| **m5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
-| **r5** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
-| **r5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-10-31-linux.html)  |
+| **c5d** |  + AWS GovCloud (US-West) – us-gov-west-1  |
+| **f1.4xlarge** |  + US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Europe (Ireland) – eu-west-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **g3** |  + Canada (Central) – ca-central-1  |
+| **g3s** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1  |
+| **m5d** |  + AWS GovCloud (US-West) – us-gov-west-1  |
+| **r5** |  + US West (N. California) – us-west-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Canada (Central) – ca-central-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2<br />+ Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **r5d** |  + US West (N. California) – us-west-1<br />+ Asia Pacific (Seoul) – ap-northeast-2<br />+ Asia Pacific (Singapore) – ap-southeast-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Asia Pacific (Tokyo) – ap-northeast-1<br />+ Canada (Central) – ca-central-1<br />+ Europe (Frankfurt) – eu-central-1<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2  |
 
 ## Updated platform configurations
 <a name="release-2018-10-31-linux.platforms"></a>

@@ -86,6 +86,7 @@ Some applications, such as load balancers (including Elastic Load Balancing), we
 
 **Note**
 The `X-Forwarded-For` header contains IPv4 addresses (such as 192.0.2.44) and IPv6 addresses (such as 2001:0db8:85a3::8a2e:0370:7334).
+When parsing IPv6 addresses in the `X-Forwarded-For` header, use standard IP address parsing libraries that can handle any valid RFC 4291 IPv6 format.
 Also note that the `X-Forwarded-For` header may be modified by every node on the path to the current server (CloudFront). For more information, see section 8.1 in [RFC 7239](https://datatracker.ietf.org/doc/html/rfc7239). You can also modify the header using CloudFront edge compute functions.
 
 ### Client-side SSL authentication
@@ -187,7 +188,7 @@ For more information about caching based on header values, see [Cache content ba
 | `Accept-Charset` | CloudFront removes the header. | Yes |
 | `Accept-Encoding` | If the value contains `gzip` or `br`, CloudFront forwards a normalized `Accept-Encoding` header to your origin.<br />For more information, see [Compression support](cache-key-understand-cache-policy.md#cache-policy-compressed-objects) and [Serve compressed files](ServingCompressedFiles.md). | Yes |
 | `Accept-Language` | CloudFront removes the header. | Yes |
-| `Authorization` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/RequestAndResponseBehaviorCustomOrigin.html)  | Yes |
+| `Authorization` |  +  `GET` and `HEAD` requests – CloudFront removes the `Authorization` header field before forwarding the request to your origin. <br />+  `OPTIONS` requests – CloudFront removes the `Authorization` header field before forwarding the request to your origin if you configure CloudFront to cache responses to `OPTIONS` requests. <br />CloudFront forwards the `Authorization` header field to your origin if you do not configure CloudFront to cache responses to OPTIONS requests. <br />+  `DELETE`, `PATCH`, `POST`, and `PUT` requests – CloudFront does not remove the header field before forwarding the request to your origin.   | Yes |
 | `Cache-Control` | CloudFront forwards the header to your origin. | No |
 | `CloudFront-Forwarded-Proto` | CloudFront does not add the header before forwarding the request to your origin.<br />For more information, see [Configure caching based on the protocol of the request](header-caching.md#header-caching-web-protocol). | Yes |
 | `CloudFront-Is-Desktop-Viewer` | CloudFront does not add the header before forwarding the request to your origin.<br />For more information, see [Configure caching based on the device type](header-caching.md#header-caching-web-device). | Yes |

@@ -18,9 +18,9 @@ The following table identifies specific requirements for Elemental Inference.
 | --- | --- |
 | Media fragments | Fragmented CMAF Ingest containerized media fragments |
 | MovieFragmentBox | One per segment |
-| Initialization segment: naming | Include an initialization segment with each stream, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-inference/latest/userguide/source-format.html) |
+| Initialization segment: naming | Include an initialization segment with each stream, as follows:+  For video: `Streams(default-video.cmfv)/InitializationSegment` <br />+  For audio: `Streams(default-audio.cmfa)/InitializationSegment`  |
 | Media segments: naming | Media segments after the initialization segment must following this naming pattern:<br />`Streams default-<{{type}}>.<{{ext}}>/Segment(<{{sequence-number}}>)`<br />Where:<br /><type> is video or audio<br /><ext> is cmfv or cmfa<br /><sequence-number> must increase monotonically, although it doesn't have to be contiguous. Each sequence number must match the sequence number in the MovieFragmentHeader box.<br />For example:<br />`Streams default-video.cmfv/Segment(<{{sequence-number}}>)` |
-| End of Stream indicator | The last media segment in the session must be:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-inference/latest/userguide/source-format.html)<br />If you can't signal the end of stream in this way, there is a workaround. See [Step C: Deliver the source media](deliver-source.md). |
+| End of Stream indicator | The last media segment in the session must be:+  A media segment with the `lmsg` brand included in the compatible brands under the SegmentTypeBox. <br />If you can't signal the end of stream in this way, there is a workaround. See [Step C: Deliver the source media](deliver-source.md). |
 
 ## Example
 <a name="source-format-requirements-example"></a>

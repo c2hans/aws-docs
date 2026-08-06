@@ -42,8 +42,8 @@ The result of both options is the same: the IAM user can access Quick. However, 
 |
 | Approach | Advantages | Disadvantages |
 | --- |--- |--- |
-| Direct invitation | Administrators can control which email address is associated with the user record in QuickNo IAM policy management tasks | More manual |
-| Self-provisioned access | Can be integrated into existing IT operations processes for provisioning access through IAM policies, where the self-provisioning capability is already part of existing IAM policies | Administrators can't control which email address the user provides to Quick |
+| Direct invitation | + Administrators can control which email address is associated with the user record in Quick<br />+ No IAM policy management tasks | + More manual |
+| Self-provisioned access | + Can be integrated into existing IT operations processes for provisioning access through IAM policies, where the self-provisioning capability is already part of existing IAM policies | + Administrators can't control which email address the user provides to Quick |
 
 ### Direct invitation
 <a name="direct-invitation.d62dfb5a-f4f4-5308-bb54-b513dba4f2b6"></a>

@@ -23,5 +23,5 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.11.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.11.1"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-07-21.html) |
-| Lambda manager | Version 2.2.11 of the [Lambda manager](lambda-manager-component.md) is available.<a name="changelog-lambda-manager-2.2.11"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-07-21.html) |
+| Greengrass nucleus | Version 2.11.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.11.1"></a>**Bug fixes and improvements**<br />   Fixes an issue where the nucleus doesn't start if a bootstrap task fails and the deployment metadata file is corrupted.   Fixes an issue where on-demand Lambda components aren't reported in deployment status updates.   Adds support for duplicate authorization policy IDs.    |
+| Lambda manager | Version 2.2.11 of the [Lambda manager](lambda-manager-component.md) is available.<a name="changelog-lambda-manager-2.2.11"></a>**Bug fixes and improvements**<br />   Fixes an issue where the LegacySubscriptionRouter configuration does not update when the Lambda configuration changes.    |

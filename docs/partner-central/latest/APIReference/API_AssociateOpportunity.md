@@ -58,7 +58,7 @@ Required: Yes
  ** [RelatedEntityType](#API_AssociateOpportunity_RequestSyntax) **   <a name="AWSPartnerCentral-AssociateOpportunity-request-RelatedEntityType"></a>
 Specifies the entity type that you're associating with the ` Opportunity`. This helps to categorize and properly process the association.
 Type: String
-Valid Values: `Solutions | AwsProducts | AwsMarketplaceOffers | AwsMarketplaceOfferSets`
+Valid Values: `Solutions | AwsProducts | AwsMarketplaceOffers | AwsMarketplaceOfferSets | AwsMarketplaceSolutions | AwsMarketplaceProducts`
 Required: Yes
 
 ## Response Elements

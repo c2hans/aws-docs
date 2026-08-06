@@ -26,7 +26,7 @@ Get the code binding source URI.
 | --- |--- |--- |--- |
 | {{registryName}} | String | True | The name of the schema registry. |
 | {{schemaName}} | String | True | The name of the schema. |
-| {{language}} | String | True | The language of the code binding. The supported languages and corresponding values are as follows:  Java: Java8   Python: Python36   TypeScript: TypeScript3   Golang: Go1   |
+| {{language}} | String | True | The language of the code binding. The supported languages and corresponding values are as follows:+  Java: Java8 <br />+  Python: Python36 <br />+  TypeScript: TypeScript3 <br />+  Golang: Go1  |
 
 **Query parameters**
 
@@ -55,7 +55,7 @@ Get the code binding source URI.
 | --- |--- |--- |--- |
 | {{registryName}} | String | True | The name of the schema registry. |
 | {{schemaName}} | String | True | The name of the schema. |
-| {{language}} | String | True | The language of the code binding. The supported languages and corresponding values are as follows:  Java: Java8   Python: Python36   TypeScript: TypeScript3   Golang: Go1   |
+| {{language}} | String | True | The language of the code binding. The supported languages and corresponding values are as follows:+  Java: Java8 <br />+  Python: Python36 <br />+  TypeScript: TypeScript3 <br />+  Golang: Go1  |
 
 **Query parameters**
 

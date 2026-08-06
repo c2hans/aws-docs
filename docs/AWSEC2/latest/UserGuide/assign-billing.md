@@ -37,16 +37,16 @@ The following table shows which line items appear in the CUR for the Capacity Re
 
 | Account | CUR line items before billing is assigned |
 | --- | --- |
-| Capacity Reservation owner |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html)  |
-| Consumer accounts with which the Capacity Reservation is shared |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html)  |
+| Capacity Reservation owner |  +  `Reservation` <br />+  `BoxUsage` \* <br />+  `UnusedBox`   |
+| Consumer accounts with which the Capacity Reservation is shared |  +  `BoxUsage` \*   |
 
 The following table shows which line items appear in the CUR for the Capacity Reservation owner and consumer accounts **after** billing is assigned to another account.
 
 | Account | CUR line items after billing is assigned |
 | --- | --- |
-| Capacity Reservation owner |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html)  |
-| Consumer account to which billing is assigned |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html)  |
-| Other consumer accounts with which the Capacity Reservation is shared |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/assign-billing.html)  |
+| Capacity Reservation owner |  +  `BoxUsage` \*   |
+| Consumer account to which billing is assigned |  +  `Reservation` <br />+  `BoxUsage` \* <br />+  `UnusedBox`   |
+| Other consumer accounts with which the Capacity Reservation is shared |  +  `BoxUsage` \*   |
 
 **Note**
 \* The `BoxUsage` line item appears in an account's CUR only if they have running instances in the Capacity Reservation. For more information about the CUR line items, see [Monitoring Capacity Reservations](https://docs.aws.amazon.com/cur/latest/userguide/monitor-ondemand-reservations.html).

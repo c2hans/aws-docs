@@ -155,7 +155,7 @@ agent = Agent(
 
 @app.entrypoint
 def invoke(payload, context):
-    result = agent(payload.get("prompt", "Hello"))
+    result = agent(str(payload.get("prompt", "Hello")))
     return {"response": str(result)}
 
 if __name__ == "__main__":

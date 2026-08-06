@@ -20,9 +20,9 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Product website** | [RiverMeadow](https://www.rivermeadow.com/) |
 | **Product certifications**<br />[AWS Competency Program](https://aws.amazon.com/partners/offerings/) competencies and other certifications | Migration and Modernization ISV Competency |
 | **AWS Marketplace**<br />Link to subscribe or download | [RiverMeadow on AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-phol7wuzjdsgw?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) |
-| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | SaaS on AWS (vendor VPC)Servers deployed on AWS (customer VPC)Servers deployed on premises in customer environment |
+| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | + SaaS on AWS (vendor VPC)<br />+ Servers deployed on AWS (customer VPC)<br />+ Servers deployed on premises in customer environment |
 | **Compliance** | System and Organization Controls (SOC) |
-| **Service model** | Full self-service – Deployment, management, and maintenance can be done by the customer or end-userSelf-service with vendor support – Deployment, management, and maintenance can be done by customer or end-user with the option of vendor supportManaged service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
+| **Service model** | + Full self-service – Deployment, management, and maintenance can be done by the customer or end-user<br />+ Self-service with vendor support – Deployment, management, and maintenance can be done by customer or end-user with the option of vendor support<br />+ Managed service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
 | **Pricing model** | Subscription |
 
 ## Application mobility capabilities
@@ -32,15 +32,15 @@ AWS Partner product descriptions and reported qualifications, including complian
 |
 | Category | Product capabilities |
 | --- |--- |
-| **Replication method**<br />The ability to support one or more of the following replication methods:Agentless – Uses protocols or interfaces such as SNMP or WMIAgent-based – Requires installation of software on the source resources, such as Linux or Windows serversLogin-based – Uses protocols, such as SSH and RDP, to log in to the source servers | AgentlessAgent-based |
-| **Supported sources**<br />The hosting environments that the product can migrate applications from | Google Cloud PlatformHyper-VMicrosoft AzurePhysical serversVMwareOther – Oracle Cloud Infrastructure (OCI), IBM Cloud, Alibaba, Red Hat Virtualization (RHV), Kernel-based Virtual Machine (KVM), Nutanix AHV, Microsoft Azure Stack HCI |
-| **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | Software versions |
-| **Supported operating systems**<br />Operating systems that the product can migrate | LinuxWindows |
-| **Supported targets**<br />Resources that the product can migrate to | Amazon Elastic Compute Cloud (Amazon EC2)Amazon Elastic Block Store (Amazon EBS), Amazon Simple Storage Service (Amazon S3) |
+| **Replication method**<br />The ability to support one or more of the following replication methods:+ Agentless – Uses protocols or interfaces such as SNMP or WMI<br />+ Agent-based – Requires installation of software on the source resources, such as Linux or Windows servers<br />+ Login-based – Uses protocols, such as SSH and RDP, to log in to the source servers | + Agentless<br />+ Agent-based |
+| **Supported sources**<br />The hosting environments that the product can migrate applications from | + Google Cloud Platform<br />+ Hyper-V<br />+ Microsoft Azure<br />+ Physical servers<br />+ VMware<br />+ Other – Oracle Cloud Infrastructure (OCI), IBM Cloud, Alibaba, Red Hat Virtualization (RHV), Kernel-based Virtual Machine (KVM), Nutanix AHV, Microsoft Azure Stack HCI |
+| **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | + Software versions |
+| **Supported operating systems**<br />Operating systems that the product can migrate | + Linux<br />+ Windows |
+| **Supported targets**<br />Resources that the product can migrate to | + Amazon Elastic Compute Cloud (Amazon EC2)<br />+ Amazon Elastic Block Store (Amazon EBS), Amazon Simple Storage Service (Amazon S3) |
 | **Source code repository integration**<br />Repositories that the product can analyze to support application transformation | Not available |
 | **Deployment integration**<br />Services that the product integrates with to support deployment | Not available |
 | **Infrastructure as code templates**<br />Templates that the product can generate to support application deployment | AWS CloudFormation |
-| **Notifications**<br />Methods that the product can use to notify you of progress or issues | EmailLogs |
+| **Notifications**<br />Methods that the product can use to notify you of progress or issues | + Email<br />+ Logs |
 | **Replication options, continuous asynchronous replication** | Available |
 | **Replication options, bandwidth consumption**<br />The ability to manage bandwidth consumption, such as by using throttling or parallel replication streams | Available |
 | **Replication options, storage types**<br />The ability to select storage types for both temporary and target replication disk volumes to manage performance and cost | Available |

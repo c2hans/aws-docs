@@ -37,12 +37,12 @@ The following table shows the supported Aurora and Amazon RDS database versions 
 
 | Amazon Aurora and Amazon RDS DB engine | Supported engine versions |
 | --- | --- |
-| Aurora MySQL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html)  |
-| Aurora PostgreSQL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html)  |
-| RDS for PostgreSQL | [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html) |
-| Amazon Aurora PostgreSQL Limitless Database |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html)  |
-| Amazon RDS for MariaDB |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html)  |
-| Amazon RDS for MySQL |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/guardduty/latest/ug/rds-protection.html)  |
+| Aurora MySQL |  +  2.10.2 or later <br />+  3.02.1 or later <br />+  Subsequent major versions   |
+| Aurora PostgreSQL |  +  10.23 or later <br />+  11.12 or later <br />+  12.7 or later <br />+  13.3 or later <br />+  14.3 or later <br />+  15.2 or later <br />+  16.1 or later <br />+  Subsequent major versions   |
+| RDS for PostgreSQL | +  11.17 or later <br />+  12.12 or later <br />+  13.8 or later <br />+  14.5 or later <br />+  [RDS for PostgreSQL version 15](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-version15) <br />+  [RDS for PostgreSQL version 16](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-version16) <br />+  [RDS for PostgreSQL version 17](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-version17) <br />+  [RDS for PostgreSQL version 18](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-version18) <br />+  Subsequent major versions  |
+| Amazon Aurora PostgreSQL Limitless Database |  +  `16.4-limitless` <br />+  Subsequent major versions   |
+| Amazon RDS for MariaDB |  +  10.6.25 or later <br />+  10.11.16 or later <br />+  11.4.10 or later <br />+  11.8.6 or later <br />+  Subsequent major versions   |
+| Amazon RDS for MySQL |  +  8.0.45 or later <br />+  8.4.8 or later <br />+  Subsequent major versions   |
 
 ## RDS login activity
 <a name="guardduty-rds-login-events"></a>

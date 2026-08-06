@@ -26,10 +26,10 @@ The following table summarizes the values for these properties, depending on the
 | --- | --- | --- |
 | FILE\_GROUP (standard output) | not returned | File name and path of the media file.<br />Example: `s3://amzn-s3-demo-bucket/file/file.mp4` |
 | FILE\_GROUP (with additional frame capture output) | not returned | File name and path of the final captured image.<br />Example: `s3://amzn-s3-demo-bucket/frameoutput/file.0000036.jpg` |
-| HLS\_GROUP | File name and path of the multivariant playlist.<br />Example: `s3://amzn-s3-demo-bucket/hls/main.m3u8` | File name and path of the manifests for the individual outputs.<br />Examples:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/output-file-names-and-paths.html) |
+| HLS\_GROUP | File name and path of the multivariant playlist.<br />Example: `s3://amzn-s3-demo-bucket/hls/main.m3u8` | File name and path of the manifests for the individual outputs.<br />Examples:+  `s3://amzn-s3-demo-bucket/hls/mainv1.m3u8` <br />+  `s3://amzn-s3-demo-bucket/hls/mainv2.m3u8`  |
 | DASH\_ISO\_GROUP | File name and path of the manifest.<br />Example: `s3://amzn-s3-demo-bucket/dash/1.mpd` | not returned |
-| CMAF\_GROUP | File name and path for each of the top-level manifests.<br />Examples:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/output-file-names-and-paths.html) | not returned |
-| MS\_SMOOTH\_GROUP | File name and path of the server-side manifest.<br />Example: `s3://amzn-s3-demo-bucket/smooth/1.ism` | File name and path of the video manifests for each of the individual outputs.<br />Examples:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediaconvert/latest/ug/output-file-names-and-paths.html) |
+| CMAF\_GROUP | File name and path for each of the top-level manifests.<br />Examples:+  `s3://amzn-s3-demo-bucket/cmaf/1.mpd` <br />+  `s3://amzn-s3-demo-bucket/cmaf/1.m3u8`  | not returned |
+| MS\_SMOOTH\_GROUP | File name and path of the server-side manifest.<br />Example: `s3://amzn-s3-demo-bucket/smooth/1.ism` | File name and path of the video manifests for each of the individual outputs.<br />Examples:+  `s3://amzn-s3-demo-bucket/smooth/1_va.ismv` <br />+  `s3://amzn-s3-demo-bucket/smooth/2_va.ismv`  |
 
 For sample responses in JSON for each output group type, see the following topics:
 

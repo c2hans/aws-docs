@@ -11,7 +11,7 @@ Contains metadata describing the lexicon such as the number of lexemes, language
 <a name="API_LexiconAttributes_Contents"></a>
 
  ** Alphabet **   <a name="polly-Type-LexiconAttributes-Alphabet"></a>
-Phonetic alphabet used in the lexicon. Valid values are `ipa` and `x-sampa`.
+Phonetic alphabet used in the lexicon. Valid values are `ipa`, `x-sampa`, `x-amazon-pinyin`, `x-amazon-jyutping`, `x-amazon-pron-kana`, and `x-amazon-yomigana`.
 Type: String
 Required: No
 

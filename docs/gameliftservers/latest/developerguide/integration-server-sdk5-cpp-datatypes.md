@@ -15,6 +15,7 @@ This topic describes the Amazon GameLift Servers C\+\+ API that you can use when
 **Topics**
 + [LogParameters](#integration-server-sdk5-cpp-dataypes-log)
 + [MetricsParameters](#integration-server-sdk5-cpp-datatypes-metricsparameters)
++ [CustomLoggerConfiguration](#integration-server-sdk5-cpp-datatypes-customloggerconfiguration)
 + [ProcessParameters](#integration-server-sdk5-cpp-dataypes-process)
 + [UpdateGameSession](#integration-server-sdk5-cpp-dataypes-updategamesession)
 + [GameSession](#integration-server-sdk5-cpp-dataypes-gamesession)
@@ -70,6 +71,18 @@ Use this data type to configure metrics collection and crash reporting for the g
 | FlushIntervalMs | The interval in milliseconds for flushing metrics data to the server.<br />**Type:** `int`<br />**Required:** No |
 | MaxPacketSize | The maximum size in bytes for metrics packets sent to the server.<br />**Type:** `int`<br />**Required:** No |
 
+## CustomLoggerConfiguration
+<a name="integration-server-sdk5-cpp-datatypes-customloggerconfiguration"></a>
+
+Use this data type to route the server SDK's log output to a custom log callback. The game server communicates `CustomLoggerConfiguration` to Amazon GameLift Servers in an [InitCustomLogger()](integration-server-sdk5-cpp-actions.md#integration-server-sdk5-cpp-initcustomlogger) call.
+
+|  |  |
+| --- |--- |
+| **Properties** | Description |
+| callback | Amazon GameLift Servers invokes this callback function for each log message. The function receives the log level, the pre-formatted message string, and the `userData` context pointer. The message pointer is valid only for the duration of the callback invocation; copy the message if you need to retain it. The SDK serializes callback invocations, but any thread might invoke the callback. This value must not be `null`; the operation rejects a `null` callback with `BAD_REQUEST_EXCEPTION`.<br />**Type:** `Aws::GameLift::Server::LogCallback` (`void(*)(LogLevel level, const char* message, void* userData)`)<br />**Required:** Yes |
+| userData | A user-provided context pointer that Amazon GameLift Servers passes to the callback on each invocation. The SDK doesn't manage its lifetime. This pointer must remain valid until the process terminates.<br />**Type:** `void*`<br />**Required:** No |
+| minimumLogLevel | The minimum log level for the SDK. Amazon GameLift Servers will not invoke the provided callback for logs below this level. The default value is `LogLevel::Info`. To disable logging, set this value to `LogLevel::Off`.<br />**Type:** `Aws::GameLift::Server::LogLevel` enum value<br />**Required:** No |
+
 ## ProcessParameters
 <a name="integration-server-sdk5-cpp-dataypes-process"></a>
 
@@ -112,7 +125,7 @@ This data type provides details of a game session.
 | GameSessionData | A set of custom game session properties, formatted as a single string value. <br />**Type:** `std::string`<br />**Required**: No |
 | MatchmakerData | Information about the matchmaking process that was used to create the game session, in JSON syntax, formatted as a string. In addition to the matchmaking configuration used, it contains data on all players assigned to the match, including player attributes and team assignments.<br />**Type:** `std::string`<br />**Required**: No |
 | GameProperties | A set of custom properties for a game session, formatted as key:value pairs. These properties are passed with a request to start a new game session.<br />**Type:** `std :: vector < GameProperty >`<br />**Required**: No |
-| DnsName | The DNS identifier assigned to the instance that's running the game session. Values have the following format:[See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-cpp-datatypes.html)<br />When connecting to a game session that's running on a TLS-enabled fleet, you must use the DNS name, not the IP address.<br />**Type:** `std::string`<br />**Required**: No |
+| DnsName | The DNS identifier assigned to the instance that's running the game session. Values have the following format:+  TLS-enabled fleets: `<unique identifier>.<region identifier>.amazongamelift.com`.  <br />+  Non-TLS-enabled fleets: `ec2-<unique identifier>.compute.amazonaws.com`.  <br />When connecting to a game session that's running on a TLS-enabled fleet, you must use the DNS name, not the IP address.<br />**Type:** `std::string`<br />**Required**: No |
 
 ## ServerParameters
 <a name="integration-server-sdk5-cpp-dataypes-serverparameters"></a>
@@ -161,7 +174,7 @@ An object that specifies which player sessions to retrieve. The server process p
 | GameSessionId | A unique game session identifier. Use this parameter to request all player sessions for the specified game session. <br />Game session ID format is `arn:aws:gamelift:<region>::gamesession/fleet-<fleet ID>/<ID string>`. The `GameSessionID` is a custom ID string or a<br />**Type:** `std::string`<br />**Required**: No |
 | PlayerSessionId | The unique identifier for a player session. Use this parameter to request a single specific player session.<br />**Type:** `std::string`<br />**Required**: No |
 | PlayerId | The unique identifier for a player. Use this parameter to request all player sessions for a specific player. See [Generate player IDs](player-sessions-player-identifiers.md).<br />**Type:** `std::string`<br />**Required**: No |
-| PlayerSessionStatusFilter | The player session status to filter results on. Possible player session statuses include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-cpp-datatypes.html)<br />**Type:** `std::string`<br />**Required**: No |
+| PlayerSessionStatusFilter | The player session status to filter results on. Possible player session statuses include:+  RESERVED – The player session request was received, but the player hasn't connected to the server process or been validated. <br />+  ACTIVE – The player was validated by the server process and is connected. <br />+  COMPLETED – The player connection dropped. <br />+  TIMEDOUT – A player session request was received, but the player didn't connect or wasn't validated within the time-out limit (60 seconds). <br />**Type:** `std::string`<br />**Required**: No |
 | NextToken | The token indicating the start of the next page of results. To specify the start of the result set, don't provide a value. If you provide a player session ID, this parameter is ignored.<br />**Type:** `std::string`<br />**Required**: No |
 | Limit | The maximum number of results to return. If you provide a player session ID, this parameter is ignored.<br />**Type:** `int`<br />**Required**: No |
 
@@ -183,7 +196,7 @@ Use these values in [Player](#integration-server-sdk5-cpp-dataypes-player) attri
 
 | Properties | Description |
 | --- | --- |
-| AttrType | Specifies the type of attribute value. Possible attribute value types include: [See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-cpp-datatypes.html)<br />**Required:** No |
+| AttrType | Specifies the type of attribute value. Possible attribute value types include: + **NONE**<br />+ **STRING**<br />+ **DOUBLE**<br />+ **STRING\_LIST**<br />+ **STRING\_DOUBLE\_MAP**<br />**Required:** No |
 | S | Represents a string attribute value.<br />**Type:** `std::string`<br />**Required:** No |
 | N | Represents a numeric attribute value.<br />**Type:** `double`<br />**Required:** No |
 | SL | Represents an array of string attribute values.<br />**Type:** `std::vector<std::string>`<br />**Required:** No |
@@ -283,7 +296,7 @@ This data type represents a player session that Amazon GameLift Servers passes t
 | PlayerId | **Type:** `std::string`<br />**Required:** No |
 | PlayerSessionId | **Type:** `std::string`<br />**Required:** No |
 | Port | **Type:** `int`<br />**Required:** No |
-| Status | Player session status to filter results on. When a PlayerSessionId or PlayerId is provided, then the PlayerSessionStatusFilter has no effect on the response. <br />**Type:** A `PlayerSessionStatus` enum. Possible values include the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-cpp-datatypes.html)<br />**Required:** No |
+| Status | Player session status to filter results on. When a PlayerSessionId or PlayerId is provided, then the PlayerSessionStatusFilter has no effect on the response. <br />**Type:** A `PlayerSessionStatus` enum. Possible values include the following: + **ACTIVE**<br />+ **COMPLETED**<br />+ **NOT\_SET**<br />+ **RESERVED**<br />+ **TIMEDOUT**<br />**Required:** No |
 | TerminationTime | **Type:** `long`<br />**Required:** No |
 | DnsName | **Type:** `std::string`<br />**Required:** No |
 
@@ -327,7 +340,7 @@ The path to the TLS certificate on your compute and the compute's host name.
 
 | Properties | Description |
 | --- | --- |
-| CertificatePath | The path to the TLS certificate on your compute resource. When using an Amazon GameLift Servers managed fleet, this path contains: [See the AWS documentation website for more details](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/integration-server-sdk5-cpp-datatypes.html)<br />**Type:** `std::string`<br />**Required:** No |
+| CertificatePath | The path to the TLS certificate on your compute resource. When using an Amazon GameLift Servers managed fleet, this path contains: +  `certificate.pem`: The end-user certificate. The full certificate chain is the combination of `certificateChain.pem` appended to this certificate. <br />+  `certificateChain.pem`: The certificate chain that contains the root certificate and intermediate certificates. <br />+  `rootCertificate.pem`: The root certificate. <br />+  `privateKey.pem`: The private key for the end-user certificate. <br />**Type:** `std::string`<br />**Required:** No |
 | ComputeName | The name of your compute resource.<br />**Type:** `std::string`<br />**Required:** No |
 
 ## GetFleetRoleCredentialsOutcome
@@ -465,3 +478,13 @@ String value indicating whether the game session accepts new players. Valid valu
 + **ACCEPT\_ALL** – Accept all new player sessions.
 + **DENY\_ALL** – Deny all new player sessions.
 + **NOT\_SET** – The game session is not set to accept or deny new player sessions.
+
+**LogLevel**
+The severity level of a log message. Values increase in severity from `Trace` (most verbose) to `Fatal` (most severe). `Off` is not a log severity, but you can use it as the minimum log level in a [CustomLoggerConfiguration](#integration-server-sdk5-cpp-datatypes-customloggerconfiguration) to disable logging. Valid values include:
++ **Trace** – The most verbose level, used for fine-grained diagnostic messages.
++ **Debug** – Detailed information useful for debugging.
++ **Info** – General informational messages. This is the default minimum log level.
++ **Warn** – Messages that indicate a potential problem.
++ **Error** – Messages that indicate a recoverable error.
++ **Fatal** – The most severe level, used for unrecoverable errors.
++ **Off** – Disables all log callback dispatching.

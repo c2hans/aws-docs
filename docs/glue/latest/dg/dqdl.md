@@ -621,7 +621,7 @@ Analyzers = [
 | ColumnValues | Computes the minimum, maximum for numerical columns. Computes Minimum ColumnLength and Maximum ColumnLength for non-numeric columns |
 | ColumnCorrelation | Computes column correlations for given columns |
 | CustomSql | Computes statistics returned by the CustomSQL |
-| AllStatistics | Computes the following statistics: [See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/dqdl.html)  |
+| AllStatistics | Computes the following statistics: +   RowCount, ColumnCount  <br />+   Every column: Completeness, uniqueness  <br />+   Numerical: Min, Max, Entropy, Mean, Standard Dev, Sum  <br />+   String: MinLength, MaxLength    |
 
 #### Distribution Analyzer
 <a name="dqdl-analyzers-distribution"></a>

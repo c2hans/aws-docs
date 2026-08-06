@@ -24,7 +24,7 @@ The following procedure shows how to create a parameter group using the ElastiCa
 
 1. From the **Family** list, choose the parameter group family that will be the template for your parameter group.
 
-   The parameter group family, such as *memcached1.4* or *redis3.2* defines the actual parameters in your parameter group and their initial values. The parameter group family must coincide with the cluster's engine and version.
+   The parameter group family, such as *memcached1.6* or *redis7* defines the actual parameters in your parameter group and their initial values. The parameter group family must coincide with the cluster's engine and version.
 
 1. In the **Name** box, type in a unique name for this parameter group.
 
@@ -91,21 +91,21 @@ The output from this command should look something like this.
 ```
 
 **Example**
-The following example creates a parameter group named *myRed28* using the redis2.8 family as the template.
+The following example creates a parameter group named *myRed7* using the redis7 family as the template.
 For Linux, macOS, or Unix:
 
 ```
 aws elasticache create-cache-parameter-group \
-    --cache-parameter-group-name {{myRed28}}  \
-    --cache-parameter-group-family {{redis2.8}} \
+    --cache-parameter-group-name {{myRed7}}  \
+    --cache-parameter-group-family {{redis7}} \
     --description {{"My first parameter group"}}
 ```
 For Windows:
 
 ```
 aws elasticache create-cache-parameter-group ^
-    --cache-parameter-group-name {{myRed28}}  ^
-    --cache-parameter-group-family {{redis2.8}} ^
+    --cache-parameter-group-name {{myRed7}}  ^
+    --cache-parameter-group-family {{redis7}} ^
     --description {{"My first parameter group"}}
 ```
 The output from this command should look something like this.
@@ -113,8 +113,8 @@ The output from this command should look something like this.
 ```
 {
     "CacheParameterGroup": {
-        "CacheParameterGroupName": "myRed28",
-        "CacheParameterGroupFamily": "redis2.8",
+        "CacheParameterGroupName": "myRed7",
+        "CacheParameterGroupFamily": "redis7",
         "Description": "My first parameter group"
     }
 }
@@ -137,7 +137,7 @@ To create a parameter group using the ElastiCache API, use the `CreateCacheParam
   + Can't contain two consecutive hyphens.
   + Can't end with a hyphen.
 + `CacheParameterGroupFamily` — The engine and version family for the parameter group. For example, `memcached1.4`.
-+ `CacheParameterGroupFamily` — The engine and version family for the parameter group. For example, `redis2.8`.
++ `CacheParameterGroupFamily` — The engine and version family for the parameter group. For example, `redis7`.
 + `Description` — A user supplied description for the parameter group.
 
 **Example**
@@ -173,13 +173,13 @@ The response from this action should look something like this.
 ```
 
 **Example**
-The following example creates a parameter group named *myRed28* using the redis2.8 family as the template.
+The following example creates a parameter group named *myRed7* using the redis7 family as the template.
 
 ```
 https://elasticache.us-west-2.amazonaws.com/
    ?Action=CreateCacheParameterGroup
-   &CacheParameterGroupFamily={{redis2.8}}
-   &CacheParameterGroupName={{myRed28}}
+   &CacheParameterGroupFamily={{redis7}}
+   &CacheParameterGroupName={{myRed7}}
    &Description={{My%20first%20parameter%20group}}
    &SignatureVersion=4
    &SignatureMethod=HmacSHA256
@@ -193,8 +193,8 @@ The response from this action should look something like this.
 <CreateCacheParameterGroupResponse xmlns="http://elasticache.amazonaws.com/doc/2013-06-15/">
   <CreateCacheParameterGroupResult>
     <CacheParameterGroup>
-      <CacheParameterGroupName>myRed28</CacheParameterGroupName>
-      <CacheParameterGroupFamily>redis2.8</CacheParameterGroupFamily>
+      <CacheParameterGroupName>myRed7</CacheParameterGroupName>
+      <CacheParameterGroupFamily>redis7</CacheParameterGroupFamily>
       <Description>My first parameter group</Description>
     </CacheParameterGroup>
   </CreateCacheParameterGroupResult>

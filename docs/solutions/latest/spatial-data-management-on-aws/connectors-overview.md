@@ -20,6 +20,7 @@ With connectors, you can:
 +  **Integrate with external applications.** Maintain a governed relationship with an external application that spans both directions — create external records on project creation, enrich metadata from the external catalog, and publish derived content back. One connector, one set of credentials, one failure policy.
 +  **Expose external resources for guided workflows.** List available resources from a connected application — projects, collections, models — so users can select and link them during template authoring without leaving the Spatial Data Portal.
 +  **Chain connectors through the asset record.** When one connector produces a derived file or updates metadata, that change is a lifecycle event that can trigger other connectors. A format conversion connector can feed a quality analysis connector, which can feed a publishing connector — each governed independently, composing through the asset record without referencing each other.
++  **Wait for long-running external work.** A `wait` step suspends a trigger until an external job completes — whether that is a point-cloud import, a render, an inference job, or a third-party review. SDMA polls the external system on an interval, or the external system calls back when done. Results flow back into the asset automatically, and remaining steps resume. No running compute is held while waiting.
 
 **Important**
 Connectors execute the configuration you provide. SDMA validates the structure and security credentials of a connector, but does not evaluate the business logic of the configuration. For example, if a connector is configured to produce malformed data or send metadata to an unintended destination, SDMA executes those actions as configured. Test connector configurations thoroughly in a non-production environment before enabling them.
@@ -49,7 +50,7 @@ When a resource event occurs (for example, an asset is created or a file upload 
 
 1. For triggers with a `dependsOn` list, SDMA checks whether the upstream connectors have completed within the same lifecycle context before dispatching.
 
-1. Each trigger’s steps execute in order, sharing intermediate state through `$temp.*` variables.
+1. Each trigger’s steps execute in order, sharing intermediate state through `$temp.*` variables. If a step is a `wait` step, the trigger suspends until a terminal verdict arrives — subsequent steps do not execute until the wait resolves successfully. A wait holds no running compute while pending.
 
 1. SDMA routes results back to the asset record through output routing — as metadata attributes, derived files, or both.
 
@@ -67,7 +68,7 @@ A publish connector sends content from SDMA to an external system. It runs when 
 
 A publisher can be a single operation (one REST call, one S3 write, one EventBridge event) or a composed sequence of steps that together accomplish the publication. In a multi-step publisher, steps execute in order and share intermediate state through `$temp.*` variables. For example, a publisher might create a record in an external system, capture the returned ID, then use that ID to upload file content in a second step.
 
-Each step type is a reusable primitive. The same `rest` step type that powers a simple single-step publisher also participates in multi-step compositions alongside `s3PutObject`, `lambdaInvoke`, `eventBridgePutEvents`, and `deadlineJob` steps.
+Each step type is a reusable primitive. The same `rest` step type that powers a simple single-step publisher also participates in multi-step compositions alongside `s3PutObject`, `lambdaInvoke`, `eventBridgePutEvents`, `deadlineJob`, and `wait` steps.
 
 #### Derivers
 <a name="_derivers"></a>

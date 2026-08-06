@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/sql-server-mo
 # SQL Server modernization
 <a name="sql-server-modernization"></a>
 
-AWS Transform for SQL Server Modernization is an AI-powered service that automates the full-stack modernization of Microsoft SQL Server databases and their associated .NET applications to Amazon Aurora PostgreSQL. The service orchestrates the entire migration journey from schema conversion, data migration and modifying application code to match the new target PostgreSQL, making your teams more productive by automating complex and labor-intensive tasks.
+AWS Transform for SQL Server Modernization is an AI-powered service that automates the full-stack modernization of Microsoft SQL Server databases and their associated .NET applications to Amazon Aurora PostgreSQL. AWS Transform now converts SQL Server storage objects, powered by AWS DMS, and code objects (stored procedures) using an agentic, interactive experience. The service orchestrates the entire migration journey from schema conversion, data migration and modifying application code to match the new target PostgreSQL, making your teams more productive by automating complex and labor-intensive tasks.
 
 ## Supported regions
 <a name="supported-regions"></a>
@@ -27,7 +27,7 @@ AWS Transform for SQL Server is available in US East (N. Virginia) - us-east-1
 
 ### Application transformation
 <a name="application-transformation"></a>
-+ **Entity Framework transformation:** Updates Entity Framework 6.3-6.5 and EF Core 1.0-8.0 configurations for PostgreSQL
++ **Entity Framework transformation:** Updates Entity Framework 6.3-6.5 and EF Core 1.0-10.0 configurations for PostgreSQL
 + **ADO.NET transformation:** Converts ADO.NET data access code from SQL Server to PostgreSQL providers.
 + **Connection string updates:** Automatically updates all database connection strings to the new target PostgreSQL database
 + **Database provider changes:** Replaces SQL Server providers with Npgsql (PostgreSQL provider)
@@ -89,7 +89,7 @@ Legacy .NET Framework 4.x and earlier versions are not supported. If your applic
 | Framework | Supported Versions |
 | --- | --- |
 | Entity Framework 6 | 6.3, 6.4, 6.5 |
-| Entity Framework Core | 1.0 through 8.0 |
+| Entity Framework Core | 1.0 through 10.0 |
 | ADO.NET | All versions (GA) |
 
 ### Source code repositories
@@ -122,8 +122,8 @@ AWS Transform targets Amazon Aurora PostgreSQL (PostgreSQL 15\+ compatible) with
 
 #### Application requirements
 <a name="application-requirements"></a>
-+ .NET Core 6, 7, or 8 applications
-+ Entity Framework 6.3-6.5 or Entity Framework Core 1.0-8.0, or ADO.NET
++ .NET 6, 7, 8, or 10 applications
++ Entity Framework 6.3-6.5 or Entity Framework Core 1.0-10.0, or ADO.NET
 + Database connections discoverable in source code
 + Applications successfully build and run
 + Source code in supported repository platforms
@@ -161,53 +161,3 @@ The following items are stored in the service region:
 + Customer option for encryption using your own KMS keys
 + Defined TTL (time-to-live) period for all artifacts
 + Artifacts can be downloaded for offline storage
-
-## Application requirements
-<a name="source-application-requirements"></a>
-
-### Legacy .NET Framework
-<a name="legacy-dotnet-framework"></a>
-+ **Limitation:** .NET Framework 4.x and earlier versions are not supported.
-+ **Workaround:** Use AWS Transform for .NET to upgrade to .NET Core 6\+ first, then use SQL Server transformation.
-
-### Entity Framework versions
-<a name="entity-framework-version-requirements"></a>
-+ **Limitation:** Only Entity Framework 6.3-6.5 and EF Core 1.0-8.0 are supported.
-+ **Workaround:** Upgrade to a supported Entity Framework version before transformation.
-
-### VB.NET applications
-<a name="vbnet-applications"></a>
-+ **Limitation:** VB.NET is not supported.
-+ **Workaround:** Convert to C\# or use AWS Transform custom to convert from VB.NET to C\#.
-
-### Cross-database dependencies
-<a name="cross-database-dependencies"></a>
-+ **Limitation:** Challenges when database schemas interact across multiple databases.
-+ **Workaround:** Review and refactor cross-database queries before migration. Consider consolidating databases or using PostgreSQL schemas.
-+ **Impact:** May require human intervention for complex cross-database scenarios.
-
-### Repository-database coupling
-<a name="repository-database-coupling"></a>
-+ **Limitation:** Challenges when a single repository serves multiple databases.
-+ **Workaround:** Consider repository restructuring or phased migration approach.
-+ **Impact:** May require additional planning for wave-based migrations.
-
-## Infrastructure requirements
-<a name="infrastructure-requirements"></a>
-
-### Single account/region per job
-<a name="single-account-region-per-job"></a>
-+ **Limitation:** Each transformation job targets one AWS account and region.
-+ **Workaround:** Create multiple transformation jobs for multi-account or multi-region deployments.
-
-### Deployment targets
-<a name="deployment-targets"></a>
-+ **Limitation:** Amazon ECS and Amazon EC2 deployments are supported.
-
-## Repository requirements
-<a name="repository-requirements"></a>
-
-### Private NuGet packages
-<a name="private-nuget-packages"></a>
-+ **Limitation:** Private NuGet packages require additional configuration.
-+ **Workaround:** Configure private NuGet feeds in transformation settings before starting the job.

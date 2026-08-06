@@ -34,13 +34,13 @@ The following table lists the key attributes, possible values, defaults, and rel
 | never-extractable | The value is `True` if extractable has never been set to `False`.<br />The value is `False` if extractable has ever been set to `True`. | No | No |
 | private | Default: `True` | No | Yes |
 | public-exponent | Required for generating an RSA key pair.<br />Valid values: The value must be an odd number greater than or equal to `65537`. | No | Settable with RSA, not settable with EC |
-| sensitive |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-attributes-table.html)  | No | Settable with private keys, not settable with public keys. |
-| sign |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-attributes-table.html)  | Yes | Yes |
+| sensitive |  + The value is `True` for AES keys and EC and RSA private keys.<br />+ The value is `False` for EC and RSA public keys.  | No | Settable with private keys, not settable with public keys. |
+| sign |  + The value is `True` for AES keys.<br />+ The value is `False` for RSA and EC keys.  | Yes | Yes |
 | token | Default: `True` | Can be changed from false to true, but not from true to false. | Yes |
 | trusted | Default: `False` | Only admin users can set this parameter. | No |
 | unwrap | Default: False | Yes | Yes, except for public keys. |
 | unwrap-template | Values should use the attribute template applied to any key unwrapped using this wrapping key. | Yes | No |
-| verify |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm_cli-key-attributes-table.html)  | Yes | Yes |
+| verify |  + The value is `True` for AES keys.<br />+ The value is `False` for RSA and EC keys.  | Yes | Yes |
 | wrap | Default: False | Yes | Yes, except for private keys. |
 | wrap-template | Values should use the attribute template to match the key wrapped using this wrapping key. | Yes | No |
 | wrap-with-trusted | Default: `False` | Yes | Yes |

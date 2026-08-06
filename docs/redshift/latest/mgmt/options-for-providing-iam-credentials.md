@@ -167,7 +167,31 @@ To use a SAML-based credentials provider plugin, specify the following options u
 
 |  Option  | Description |
 | --- | --- |
-| plugin\_name | For JDBC, the class name that implements a credentials provider. Specify one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/options-for-providing-iam-credentials.html)<br />For ODBC, specify one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/options-for-providing-iam-credentials.html) |
+| plugin\_name | For JDBC, the class name that implements a credentials provider. Specify one of the following:+  For Active Directory Federation Services
+
+  ```
+  com.amazon.redshift.plugin.AdfsCredentialsProvider
+  ``` <br />+  For Okta
+
+  ```
+  com.amazon.redshift.plugin.OktaCredentialsProvider
+  ``` <br />+  For PingFederate
+
+  ```
+  com.amazon.redshift.plugin.PingCredentialsProvider
+  ``` <br />+  For Microsoft Azure Active Directory
+
+  ```
+  com.amazon.redshift.plugin.AzureCredentialsProvider
+  ``` <br />+  For SAML MFA
+
+  ```
+  com.amazon.redshift.plugin.BrowserSamlCredentialsProvider
+  ``` <br />+  For Microsoft Azure Active Directory single sign-on with MFA
+
+  ```
+  com.amazon.redshift.plugin.BrowserAzureCredentialsProvider
+  ``` <br />For ODBC, specify one of the following:+  For Active Directory Federation Services: `adfs` <br />+  For Okta: `okta` <br />+  For PingFederate: `ping` <br />+  For Microsoft Azure Active Directory: `azure` <br />+  For SAML MFA: `browser saml` <br />+  For Microsoft Azure Active Directory single sign-on with MFA: ` browser azure ad`  |
 | idp\_host  | The name of the corporate identity provider host. This name should not include any slashes (‘/’). For an Okta identity provider, the value for idp\_host should end with .okta.com. |
 | `idp_port`  | The port used by the identity provider. The default is 443. This port is ignored for Okta. |
 | `preferred_role`  | A role Amazon Resource Name (ARN) from the AttributeValue elements for the Role attribute in the SAML assertion. To find the appropriate value for the preferred role, work with your IdP administrator. For more information, see [Step 2: Configure SAML assertions for your IdP](generating-iam-credentials-steps.md#configuring-saml-assertions). |

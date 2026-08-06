@@ -27,6 +27,8 @@ After you add the SQL Server Audit option, you don't need to restart your DB ins
    + For **Enable Compression**, leave this option chosen to compress audit files. Compression is enabled by default. To disable compression, clear **Enable Compression**.
    + For **Audit log retention**, to keep audit records on the DB instance, choose this option. Specify a retention time in hours. The maximum retention time is 35 days.
 
+1. Optionally, add the **PUBLISH\_TO\_CLOUDWATCH** option to the option group so that the audit logs are accessible through CloudWatch (log streams).
+
 1. Apply the option group to a new or existing DB instance. Choose one of the following:
    + If you are creating a new DB instance, apply the option group when you launch the instance.
    + On an existing DB instance, apply the option group by modifying the instance and then attaching the new option group. For more information, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).

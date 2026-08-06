@@ -26,9 +26,9 @@ Specify queries in a query string using a query syntax. The queries are passed t
 |  attributes.attr1:abc AND attributes.attr2<5 NOT attributes.attr3>10  | Queries for things that combine terms using Boolean expressions. This query returns things that have an attribute named "attr1" with a value "abc", an attribute named "attr2" that's less than 5, and an attribute named "attr3" that' not greater than 10. |
 |  shadow.hasDelta:true  | Queries for things with an unnamed shadow that has a delta element. |
 |  NOT attributes.model:legacy  | Queries for things where the attribute named "model" is not "legacy". |
-|  shadow.reported.stats.battery:{70 TO 100} (v2 OR v3) NOT attributes.model:legacy  | Queries for things with the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/example-queries.html) |
+|  shadow.reported.stats.battery:{70 TO 100} (v2 OR v3) NOT attributes.model:legacy  | Queries for things with the following:+  The thing's shadow `stats.battery` attribute has a value between 70 and 100. <br />+  The text "v2" or "v3" occurs in a thing's name, type name, or attribute values. <br />+  The thing's `model` attribute is not set to "legacy".  |
 |  shadow.reported.myvalues:2  | Queries for things where the `myvalues` array in the shadow's reported section contains a value of 2. |
-|  shadow.reported.location:\* NOT shadow.desired.stats.battery:\*  | Queries for things with the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/example-queries.html) |
+|  shadow.reported.location:\* NOT shadow.desired.stats.battery:\*  | Queries for things with the following:+  The `location` attribute exists in the shadow's `reported` section. <br />+  The `stats.battery` attribute doesn't exist in the shadow's `desired` section.  |
 |  shadow.name.<shadowName>.hasDelta:true  | Queries for things that have a shadow with the given name and also a delta element.  |
 |  shadow.name.<shadowName>.desired.filament:\*  | Queries for things that have a shadow with the given name and also a desired filament property.  |
 |  shadow.name.<shadowName>.reported.location:\*  | Queries for things that have a shadow with the given name and where the `location` attribute exists in the named shadow's reported section. |

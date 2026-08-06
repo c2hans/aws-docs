@@ -18,6 +18,12 @@ The constant used in a relative date filter.
 Type: [TopicSingularFilterConstant](API_TopicSingularFilterConstant.md) object
 Required: No
 
+ ** NullFilter **   <a name="QS-Type-TopicRelativeDateFilter-NullFilter"></a>
+The `null` filter that is applied to the relative date filter.
+Type: String
+Valid Values: `ALL_VALUES | NON_NULLS_ONLY | NULLS_ONLY`
+Required: No
+
  ** RelativeDateFilterFunction **   <a name="QS-Type-TopicRelativeDateFilter-RelativeDateFilterFunction"></a>
 The function to be used in a relative date filter to determine the range of dates to include in the results. Valid values for this structure are `BEFORE`, `AFTER`, and `BETWEEN`.
 Type: String

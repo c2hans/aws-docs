@@ -51,3 +51,5 @@ For more information about these headers, errors returned, and the order S3 hand
 + `If-None-Match` — Copies the object only if its ETag does not match the one provided. `If-None-Match` expects the '\*' (asterisk) character.
 
 For more information about these headers, errors returned, and the order S3 handles multiple conditional headers in a single request, see [https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html](https://docs.aws.amazon.com/AmazonS3/latest/API/API_CopyObject.html) in the Amazon Simple Storage Service API Reference.
+
+For information about using conditional headers to prevent overwrites during write operations, see [How to prevent object overwrites with conditional writes](conditional-writes.md).

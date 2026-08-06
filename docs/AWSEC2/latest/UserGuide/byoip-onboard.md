@@ -277,7 +277,7 @@ It can take up to a day to deprovision an address range.
 
 1. Validate the creation of a ROA object
 
-   Validate the successful creation of the ROA objects using the RIPEstat Data API. Be sure to test your address range against the Amazon ASNs 16509 and 14618, plus the ASNs that are currently authorized to advertise the address range.
+   Validate the successful creation of the ROA objects using the RIPEstat Data API. Be sure to test your address range against the Amazon ASNs 16509 and 14618, plus the ASNs that are currently authorized to advertise the address range. For the AWS GovCloud (US) Regions, test against ASN 8987. For the AWS European Sovereign Cloud, test against ASNs 16509 and 214101.
 
    You can inspect the ROA objects from different Amazon ASNs with your address range by using the following command:
 

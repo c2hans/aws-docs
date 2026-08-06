@@ -24,7 +24,7 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 | **Go** | Updated to minor revision 1.11.5. For details, see [go1.11](https://golang.org/doc/devel/release.html#go1.11) in *The Go Programming Language Release History*.<br />Revision 1.11.5 includes a security fix. For details, see the [Go 1.11.5 milestone](https://github.com/golang/go/issues?q=milestone%3AGo1.11.5+label%3ACherryPickApproved) on the Go issue tracker. |
 | **Node.js** | Updated the Node.js platform to add support for Node version [10.15.1](https://nodejs.org/en/blog/release/v10.15.1/). |
 | **Ruby** | Updated Ruby 2.6 to [Ruby 2.6.1](https://www.ruby-lang.org/en/news/2019/01/30/ruby-2-6-1-released/). |
-| **C5d, M5d, R5, R5D, T3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-02-21-linux.html)  |
+| **C5d, M5d, R5, R5D, T3** |  + Asia Pacific (Mumbai) – ap-south-1  |
 
 ## New platform versions
 <a name="release-2019-02-21-linux.platforms"></a>

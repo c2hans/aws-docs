@@ -7,6 +7,25 @@ source_url: https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/re
 
 The following release notes are in reverse chronological order, with the latest updates listed first. Amazon GameLift Streams was first released in 2025.
 
+## July 31, 2026: Managed shader caching support & stream URL released
+<a name="release-notes-07312026"></a>
+
+### Managed shader caching
+<a name="release-notes-07312026-shader-caching"></a>
+
+ Amazon GameLift Streams now supports capturing shader caches from designated stream sessions. Captured shader caches are replicated to streaming locations of compatible stream groups and applied automatically in future sessions, reducing start-up times and in-game stuttering. Monitor cache status, storage usage, and stream group associations with the [ListApplicationShaderCaches](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_ListApplicationShaderCaches.html) API or the Amazon GameLift Streams console. You are only charged for storage of the latest shader cache.
+
+**Learn more:**
++ [Shader Cache](https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/shader-caches.html), *Amazon GameLift Streams Developer Guide*
+
+### Stream URL
+<a name="release-notes-07312026-stream-url"></a>
+
+ Amazon GameLift Streams now offers stream URLs, which give end users temporary, unauthenticated access to a stream session in supported web browsers. No AWS credentials or client integration required.
+
+**Learn more:**
++ [Stream URL](https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/stream-urls.html), *Amazon GameLift Streams Developer Guide*
+
 ## July 24, 2026: Custom aspect ratio and dynamic resolution released
 <a name="release-notes-07242026"></a>
 

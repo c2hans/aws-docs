@@ -154,7 +154,7 @@ The following table describes the fields in the `aurora_s3_load_history` table:
 
 | Field | Description |
 | --- | --- |
-| load\_prefix | The URI specified in the load statement. This URI can map to any of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/oracle-to-aurora-mysql-migration-playbook/chap-oracle-aurora-mysql.special.external.html) |
+| load\_prefix | The URI specified in the load statement. This URI can map to any of the following:+  A single data file for a `LOAD DATA FROM S3 FILE` statement. <br />+  An Amazon S3 prefix that maps to multiple data files for a `LOAD DATA FROM S3 PREFIX` statement. <br />+  A single manifest file containing the names of files to be loaded for a `LOAD DATA FROM S3 MANIFEST` statement.  |
 | file\_name | The name of a file loaded into Aurora from Amazon S3 using the URI identified in the `load_prefix` field. |
 | version\_number | The version number of the file identified by the file\_name field that was loaded if the Amazon S3 bucket has a version number. |
 | bytes\_loaded | The size of the file loaded in bytes. |

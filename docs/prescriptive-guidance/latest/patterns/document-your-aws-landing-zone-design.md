@@ -32,8 +32,8 @@ This pattern does not describe what a landing zone is or how to implement one. F
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Identify key stakeholders. | Identify key service and team managers that are linked to your landing zone. | Project manager |
-| Customize the template. | Download the template in the [Attachments](#attachments-9e39a05a-8f51-4fe3-8999-522feafed6ca) section, and then update the template as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-your-aws-landing-zone-design.html) | Project manager |
-| Complete the template. | In meetings with the stakeholders or by using a write-and-review process, complete the template as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-your-aws-landing-zone-design.html) | Project manager |
+| Customize the template. | Download the template in the [Attachments](#attachments-9e39a05a-8f51-4fe3-8999-522feafed6ca) section, and then update the template as follows:1. Remove any sections that don't apply to your organization's landing zone or processes.<br />2. Add any sections that are unique to your organization. | Project manager |
+| Complete the template. | In meetings with the stakeholders or by using a write-and-review process, complete the template as follows:1. Use the guidance and information in the blue boxes to complete each section.<br />2. Replace or remove any yellow fields with custom values for your organization.<br />3. Replace or remove any image fields with your custom architecture or flow diagrams.<br />4. Complete the *Revision history* and *Contributors *section of the template. | Project manager |
 | Share the design document. | When your landing zone design documentation is complete, save it in a shared repository or central location where all stakeholders can access it. We recommend that you use standard document control processes to record and approve revisions to the design document. | Project manager |
 
 ## Related resources

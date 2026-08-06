@@ -26,6 +26,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 ****
 
+- **   CreateDbBackup  **
+  - **IAM action:**  [timestream-influxdb:CreateDbBackup](#list_timestream-influxdb-action-CreateDbBackup)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   CreateDbCluster  **
   - **IAM action:**  [timestream-influxdb:CreateDbCluster](#list_timestream-influxdb-action-CreateDbCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [timestream-influxdb:CreateDbInstance](#list_timestream-influxdb-action-CreateDbInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -40,6 +46,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [timestream-influxdb:CreateDbParameterGroup](#list_timestream-influxdb-action-CreateDbParameterGroup)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [timestream-influxdb:TagResource](#list_timestream-influxdb-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
+- **   DeleteDbBackup  **
+  - **IAM action:**  [timestream-influxdb:DeleteDbBackup](#list_timestream-influxdb-action-DeleteDbBackup)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   DeleteDbCluster  **
   - **IAM action:**  [timestream-influxdb:DeleteDbCluster](#list_timestream-influxdb-action-DeleteDbCluster)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [timestream-influxdb:DeleteDbInstance](#list_timestream-influxdb-action-DeleteDbInstance)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
@@ -49,6 +61,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
+
+- **   GetDbBackup  **
+  - **IAM action:**  [timestream-influxdb:GetDbBackup](#list_timestream-influxdb-action-GetDbBackup)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   GetDbCluster  **
   - **IAM action:**  [timestream-influxdb:GetDbCluster](#list_timestream-influxdb-action-GetDbCluster)
@@ -67,6 +85,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
+
+- **   ListDbBackups  **
+  - **IAM action:**  [timestream-influxdb:ListDbBackups](#list_timestream-influxdb-action-ListDbBackups)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListDbClusters  **
   - **IAM action:**  [timestream-influxdb:ListDbClusters](#list_timestream-influxdb-action-ListDbClusters)
@@ -108,6 +132,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   RestoreFromDbBackup  **
+  - **IAM action:**  [timestream-influxdb:RestoreFromDbBackup](#list_timestream-influxdb-action-RestoreFromDbBackup)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   TagResource  **
   - **IAM action:**  [timestream-influxdb:TagResource](#list_timestream-influxdb-action-TagResource)
   - **Condition key:**
@@ -137,6 +167,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 ****
 
+- **   [CreateDbBackup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_CreateDbBackup.html)  **
+  - **Description:** Grants permission to create a Timestream InfluxDB Backup for a DbInstance or DbCluster
+  - **Resource types (\*required):** [db-backup\*](#list_timestream-influxdb-resource-db-backup)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [CreateDbCluster](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_CreateDbCluster.html)  **
   - **Description:** Grants permission to create a new Timestream InfluxDB Cluster
   - **Resource types (\*required):** [db-parameter-group](#list_timestream-influxdb-resource-db-parameter-group)
@@ -155,6 +191,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Access level:** Write
 
+- **   [DeleteDbBackup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_DeleteDbBackup.html)  **
+  - **Description:** Grants permission to delete a Timestream InfluxDB backup
+  - **Resource types (\*required):** [db-backup\*](#list_timestream-influxdb-resource-db-backup)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
+  - **Access level:** Write
+
 - **   [DeleteDbCluster](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_DeleteDbCluster.html)  **
   - **Description:** Grants permission to delete a Timestream InfluxDB Cluster
   - **Resource types (\*required):** [db-cluster\*](#list_timestream-influxdb-resource-db-cluster)
@@ -166,6 +208,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [db-instance\*](#list_timestream-influxdb-resource-db-instance)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
+
+- **   [GetDbBackup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_GetDbBackup.html)  **
+  - **Description:** Grants permission to get information about a Timestream InfluxDB Backup
+  - **Resource types (\*required):** [db-backup\*](#list_timestream-influxdb-resource-db-backup)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
 
 - **   [GetDbCluster](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_GetDbCluster.html)  **
   - **Description:** Grants permission to get information about a Timestream InfluxDB Cluster
@@ -184,6 +232,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [db-parameter-group\*](#list_timestream-influxdb-resource-db-parameter-group)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
   - **Access level:** Read
+
+- **   [ListDbBackups](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_ListDbBackups.html)  **
+  - **Description:** Grants permission to list information about all Timestream InfluxDB backups in the account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
 
 - **   [ListDbClusters](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_ListDbClusters.html)  **
   - **Description:** Grants permission to list information about all Timestream InfluxDB clusters in the account
@@ -211,6 +265,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [ListTagsForResource](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_ListTagsForResource.html)  **
   - **Description:** Grants permission to list tags for a Timestream InfluxDB resource
+  - **Resource types (\*required):** [db-backup](#list_timestream-influxdb-resource-db-backup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [db-cluster](#list_timestream-influxdb-resource-db-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [db-instance](#list_timestream-influxdb-resource-db-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
   - **Resource types (\*required):** [db-parameter-group](#list_timestream-influxdb-resource-db-parameter-group) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
@@ -228,8 +283,15 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [RestoreFromDbBackup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_RestoreFromDbBackup.html)  **
+  - **Description:** Grants permission to restore from a Timestream InfluxDB backup
+  - **Resource types (\*required):** [db-backup\*](#list_timestream-influxdb-resource-db-backup)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)<br />[timestream-influxdb:RestoreMode](#list_timestream-influxdb-timestream-influxdb_RestoreMode)
+  - **Access level:** Write
+
 - **   [TagResource](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_TagResource.html)  **
   - **Description:** Grants permission to tag a Timestream InfluxDB resource
+  - **Resource types (\*required):** [db-backup](#list_timestream-influxdb-resource-db-backup) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Resource types (\*required):** [db-cluster](#list_timestream-influxdb-resource-db-cluster) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Resource types (\*required):** [db-instance](#list_timestream-influxdb-resource-db-instance) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Resource types (\*required):** [db-parameter-group](#list_timestream-influxdb-resource-db-parameter-group) / **Condition keys:** [aws:RequestTag/${TagKey}](#list_timestream-influxdb-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
@@ -237,6 +299,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 
 - **   [UntagResource](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_UntagResource.html)  **
   - **Description:** Grants permission to untag a Timestream InfluxDB resource
+  - **Resource types (\*required):** [db-backup](#list_timestream-influxdb-resource-db-backup) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Resource types (\*required):** [db-cluster](#list_timestream-influxdb-resource-db-cluster) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Resource types (\*required):** [db-instance](#list_timestream-influxdb-resource-db-instance) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
   - **Resource types (\*required):** [db-parameter-group](#list_timestream-influxdb-resource-db-parameter-group) / **Condition keys:** [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_timestream-influxdb-aws_TagKeys)
@@ -263,6 +326,7 @@ The following resource types are defined by this service and can be used in the 
 
 | Resource types | ARN | Condition keys |
 | --- | --- | --- |
+|  [db-backup](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_DbBackupSummary.html)  | arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-backup/${DbBackupId} | [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_) |
 |  [db-cluster](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_DbClusterSummary.html)  | arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-cluster/${DbClusterId} | [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_) |
 |  [db-instance](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_DbInstanceSummary.html)  | arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-instance/${DbInstanceIdentifier} | [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_) |
 |  [db-parameter-group](https://docs.aws.amazon.com/ts-influxdb/latest/ts-influxdb-api/API_DbParameterGroupSummary.html)  | arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-parameter-group/${DbParameterGroupIdentifier} | [aws:ResourceTag/${TagKey}](#list_timestream-influxdb-aws_ResourceTag___TagKey_) |
@@ -279,3 +343,4 @@ Amazon Timestream InfluxDB defines the following condition keys that can be used
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by a tag key and value pair that is allowed in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by a tag key and value pair of a resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by a list of tag keys that are allowed in the request | ArrayOfString |
+|   [timestream-influxdb:RestoreMode](https://docs.aws.amazon.com/timestream/latest/developerguide/security-iam.html)  | Filters access by the restore mode specified in the request | String |

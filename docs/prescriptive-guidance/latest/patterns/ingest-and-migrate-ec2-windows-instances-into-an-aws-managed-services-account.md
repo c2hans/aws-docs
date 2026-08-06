@@ -64,19 +64,19 @@ Amazon EC2 Windows instance managed by AWS Managed Services (AMS)
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Change the DNS Client settings. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
-| Change the Windows Update settings. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
-| Enable the firewall. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
+| Change the DNS Client settings. | 1. On the source EC2 instance, open Command Prompt as an administrator, type `gpedit.msc`, and then press **Enter**.<br />2. In the Local Group Policy Editor, navigate to **Computer Configuration**, **Administrative Templates**,**Network**, **DNS Client**.<br />3. For **Primary DNS suffix**, choose **Not configured**.<br />4. For **Primary DNS suffix devolution**, choose **Not configured**.  | Migration engineer |
+| Change the Windows Update settings. | 1. In the Local Group Policy Editor, navigate to **Computer Configuration**, **Administrative Templates**, **Windows Components**, **Windows Update**.<br />2. For **Specify intranet Microsoft update service location**, choose **Not configured**.<br />3. For **Configure Automatic Updates**, choose **Not configured**.<br />4. For **Automatic Updates detection frequency**, choose **Not configured**.<br />5. Close the Local Group Policy Editor. | Migration engineer |
+| Enable the firewall. | 1. On the source EC2 instance, open Command Prompt as an administrator, type `services.msc`, and then press **Enter**.<br />2. In Windows Services, enable **Firewall**.<br />3. Close Windows Services. | Migration engineer |
 
 ### Prepare the instance for AMS WIGS
 <a name="prepare-the-instance-for-ams-wigs"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clean up and prepare the instance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
-| Repair the sppnp.dll file. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
-| Run the pre-WIG validation script. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
-| Create the failsafe AMI. | After the pre-WIG validation passes, create a pre-ingestion AMI as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html)<br />For more information, see [AMI \| Create](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-advanced-ami-create.html) in the AMS documentation. | Migration engineer |
+| Clean up and prepare the instance. | 1. Using a bastion host and local credentials, create a Remote Desktop Protocol (RDP) connection to the EC2 instance in the staging subnet.<br />2. Remove all legacy software, antivirus software, and backup solutions that aren’t required in AMS.  | Migration engineer |
+| Repair the sppnp.dll file. | 1. Go to `C:\Windows\System32\sppnp.dll`.<br />2. Rename `sppnp.dll` to` sppnp_old.dll`.<br />3. Using PowerShell and administrator credentials, enter the following commands:<pre>dism /online /cleanup-image /restorehealth<br />sfc /scannnow</pre><br />4. Restart the EC2 Windows instance. | Migration engineer |
+| Run the pre-WIG validation script. | 1. Download the Windows WIGS Pre-ingestion Validation zip file (`windows-prewings-valication.zip`) from [Migrating workloads: Windows pre-ingestion validation](https://docs.aws.amazon.com/managedservices/latest/appguide/ex-migrate-instance-win-validation.html) in the AMS documentation.<br />2. Run the Windows pre-WIG validation script and verify the results.<br />3. If the validation fails, fix the issue, and rerun the validation script until the validation succeeds. | Migration engineer |
+| Create the failsafe AMI. | After the pre-WIG validation passes, create a pre-ingestion AMI as follows:1. Choose **Deployment**, **Advanced stack components**, **AMI**, **Create**.<br />2. During creation, add a tag `Key=Name, Value=APPLICATION-ID_IngestReady`.<br />3. Wait until AMI is created before proceeding.<br />For more information, see [AMI \| Create](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-advanced-ami-create.html) in the AMS documentation. | Migration engineer |
 
 ### Ingest and validate the instance
 <a name="ingest-and-validate-the-instance"></a>
@@ -84,14 +84,14 @@ Amazon EC2 Windows instance managed by AWS Managed Services (AMS)
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Submit the RFC to create the workload ingest stack. | Submit a request for change (RFC) to start the AMS WIGS. For instructions, see [Workload Ingest Stack: Creating](https://docs.aws.amazon.com/managedservices/latest/appguide/ex-workload-ingest-col.html) in the AMS documentation. This starts the workload ingestion and installs all the software required by AMS, including backup tools, Amazon EC2 management software, and antivirus software. | Migration engineer |
-| Validate successful migration. | After the workload ingestion is complete, you can see the AMS-managed instance and AMS-ingested AMI.[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
+| Validate successful migration. | After the workload ingestion is complete, you can see the AMS-managed instance and AMS-ingested AMI.1. Log in to the AMS-managed instance with domain credentials.<br />2. Validate the domain joining as follows:In Windows Explorer, right-click **This PC**, and then choose **Properties**.In the Device Specification section, confirm that the domain appears in the **Full device name**.<br />3. Validate the source and target disk drives. | Migration engineer |
 
 ### Launch the instance in the target AMS account
 <a name="launch-the-instance-in-the-target-ams-account"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Submit the RFC to create an EC2 stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account.html) | Migration engineer |
+| Submit the RFC to create an EC2 stack. | 1. Using the AMS-ingested AMI of the Windows instance, prepare an RFC for an EC2 stack according to the instructions in [Create EC2 stack instance](https://docs.aws.amazon.com/managedservices/latest/ctexguide/ex-ec2-create-col.html) in AMS documentation. In the EC2 stack RFC, provide all the parameters, including the server name, tags, target VPC, target subnet, instance type, target security groups, ingestion AMI, and role.<br />2. Submit the RFC for the EC2 stack, and then wait for the instance to be successfully created. | Migration engineer |
 
 ## Related resources
 <a name="ingest-and-migrate-ec2-windows-instances-into-an-aws-managed-services-account-resources"></a>

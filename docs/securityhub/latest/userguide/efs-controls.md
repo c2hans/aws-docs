@@ -172,7 +172,7 @@ While Amazon EFS mount targets cannot be assigned public IPv4 addresses, placing
 Mount targets in subnets with auto-assign public IPv6 addresses enabled can receive globally-routable IPv6 addresses.
 
 **Note**
-On July 30, 2026, Security Hub CSPM will remove this control from the [AWS Foundational Security Best Practices (FSBP) standard](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html). This control will now be available in the [NIST SP 800-53 Rev. 5 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/nist-standard.html), the [NIST SP 800-171 Revision 2 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.html), and the [PCI DSS v4.0.1 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html).
+On Aug 3, 2026, Security Hub CSPM removed this control from the [AWS Foundational Security Best Practices (FSBP) standard](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html). This control will be available in the [NIST SP 800-53 Rev. 5 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/nist-standard.html), the [NIST SP 800-171 Revision 2 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference-nist-800-171.html), and the [PCI DSS v4.0.1 standard](https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html).
 
 ### Remediation
 <a name="efs-6-remediation"></a>

@@ -22,7 +22,7 @@ GET /v2/place/{{PlaceId}}?additional-features={{AdditionalFeatures}}&address-nam
 The request uses the following URI parameters.
 
  ** [AdditionalFeatures](#API_geoplaces_GetPlace_RequestSyntax) **   <a name="location-geoplaces_GetPlace-request-uri-AdditionalFeatures"></a>
- A list of optional additional parameters such as time zone that can be requested for each result. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only the `TimeZone` value.
+ A list of optional additional parameters such as time zone that can be requested for each result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the `TimeZone` value.
 Array Members: Minimum number of 1 item. Maximum number of 6 items.
 Valid Values: `TimeZone | Phonemes | Access | Contact | SecondaryAddresses | CrossReferences`
 
@@ -31,7 +31,7 @@ Specifies how address names are returned. When set to `Administrative`, the serv
 Valid Values: `Administrative`
 
  ** [IntendedUse](#API_geoplaces_GetPlace_RequestSyntax) **   <a name="location-geoplaces_GetPlace-request-uri-IntendedUse"></a>
- Indicates if the query results will be persisted in customer infrastructure. Defaults to `SingleUse` (not stored). Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Indicates if the query results will be persisted in customer infrastructure. Defaults to `SingleUse` (not stored). If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 When storing `GetPlace` responses, you *must* set this field to `Storage` to comply with the terms of service. These requests will be charged at a higher rate. Please review the [user agreement](https://aws.amazon.com/location/sla/) and [service pricing structure](https://aws.amazon.com/location/pricing/) to determine the correct setting for your use case.
 Valid Values: `SingleUse | Storage`
 
@@ -40,7 +40,7 @@ Optional: The API key to be used for authorization. Either an API key or valid S
 Length Constraints: Minimum length of 0. Maximum length of 1000.
 
  ** [Language](#API_geoplaces_GetPlace_RequestSyntax) **   <a name="location-geoplaces_GetPlace-request-uri-Language"></a>
- A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. For [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers, `ap-southeast-1` and `ap-southeast-5` regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
+ A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
 Length Constraints: Minimum length of 2. Maximum length of 35.
 
  ** [PlaceId](#API_geoplaces_GetPlace_RequestSyntax) **   <a name="location-geoplaces_GetPlace-request-uri-PlaceId"></a>
@@ -49,7 +49,7 @@ Length Constraints: Minimum length of 0. Maximum length of 500.
 Required: Yes
 
  ** [PoliticalView](#API_geoplaces_GetPlace_RequestSyntax) **   <a name="location-geoplaces_GetPlace-request-uri-PoliticalView"></a>
- The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Length Constraints: Minimum length of 2. Maximum length of 3.
 Pattern: `([A-Z]{2}|[A-Z]{3})`
 
@@ -482,12 +482,12 @@ For more information on pricing, please visit [Amazon Location Service Pricing](
 The following data is returned in JSON format by the service.
 
  ** [AccessPoints](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-AccessPoints"></a>
- Position of the access point in World Geodetic System (WGS 84) format: [longitude, latitude]. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Position of the access point in World Geodetic System (WGS 84) format: [longitude, latitude]. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [AccessPoint](API_geoplaces_AccessPoint.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** [AccessRestrictions](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-AccessRestrictions"></a>
- Indicates known access restrictions on a vehicle access point. The index correlates to an access point and indicates if access through this point has some form of restriction. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Indicates known access restrictions on a vehicle access point. The index correlates to an access point and indicates if access through this point has some form of restriction. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [AccessRestriction](API_geoplaces_AccessRestriction.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 
@@ -496,7 +496,7 @@ The place's address.
 Type: [Address](API_geoplaces_Address.md) object
 
  ** [AddressNumberCorrected](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-AddressNumberCorrected"></a>
- Boolean indicating if the address provided has been corrected. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Boolean indicating if the address provided has been corrected. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Boolean
 
  ** [BusinessChains](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-BusinessChains"></a>
@@ -510,7 +510,7 @@ Type: Array of [Category](API_geoplaces_Category.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 
  ** [Contacts](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-Contacts"></a>
- List of potential contact methods for the result/place. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ List of potential contact methods for the place or result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: [Contacts](API_geoplaces_Contacts.md) object
 
  ** [CrossReferences](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-CrossReferences"></a>
@@ -523,12 +523,12 @@ If `true`, indicates that the coordinates of the position and access points of t
 Type: Boolean
 
  ** [FoodTypes](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-FoodTypes"></a>
- List of food types offered by this result. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ List of food types offered by this result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [FoodType](API_geoplaces_FoodType.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 
  ** [MainAddress](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-MainAddress"></a>
- The main address corresponding to a place of type Secondary Address. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The main address corresponding to a place of type Secondary Address. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: [RelatedPlace](API_geoplaces_RelatedPlace.md) object
 
  ** [MapView](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-MapView"></a>
@@ -538,12 +538,12 @@ Type: Array of doubles
 Array Members: Fixed number of 4 items.
 
  ** [OpeningHours](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-OpeningHours"></a>
- List of opening hours objects. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ List of opening hours objects. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [OpeningHours](API_geoplaces_OpeningHours.md) objects
 Array Members: Minimum number of 1 item. Maximum number of 100 items.
 
  ** [Phonemes](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-Phonemes"></a>
- How the various components of the result's address are pronounced in various languages. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ How the various components of the result's address are pronounced in various languages. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: [PhonemeDetails](API_geoplaces_PhonemeDetails.md) object
 
  ** [PlaceAttributes](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-PlaceAttributes"></a>
@@ -563,7 +563,7 @@ Type: String
 Valid Values: `Country | Region | SubRegion | Locality | District | SubDistrict | PostalCode | Block | SubBlock | Intersection | Street | PointOfInterest | PointAddress | InterpolatedAddress | SecondaryAddress | InferredSecondaryAddress`
 
  ** [PoliticalView](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-PoliticalView"></a>
- The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Fixed length of 3.
 Pattern: `[A-Z]{3}`
@@ -574,12 +574,12 @@ Type: Array of doubles
 Array Members: Fixed number of 2 items.
 
  ** [PostalCodeDetails](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-PostalCodeDetails"></a>
- Contains details about the postal code of the place/result. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Contains details about the postal code of the place or result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: Array of [PostalCodeDetails](API_geoplaces_PostalCodeDetails.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 
  ** [SecondaryAddresses](#API_geoplaces_GetPlace_ResponseSyntax) **   <a name="location-geoplaces_GetPlace-response-SecondaryAddresses"></a>
- All secondary addresses that are associated with a main address. A secondary address is one that includes secondary designators, such as a Suite or Unit Number, Building, or Floor information. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ All secondary addresses that are associated with a main address. A secondary address is one that includes secondary designators, such as a Suite or Unit Number, Building, or Floor information. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Coverage for this functionality is available in the following countries: AUS, CAN, NZL, USA, PRI.
 Type: Array of [RelatedPlace](API_geoplaces_RelatedPlace.md) objects
 Array Members: Minimum number of 1 item.

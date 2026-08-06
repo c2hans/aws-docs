@@ -189,7 +189,7 @@ The following table shows some common responses that you might get for idempoten
 | Response | Recommendation | Comments |
 | --- | --- | --- |
 | 200 (OK) | Do not retry | The original request completed successfully. Any subsequent retries return successfully. |
-| 400-series response codes  | Do not retry | There is a problem with the request, from among the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html)<br />If the request involves a resource that is in the process of changing states, retrying the request could possibly succeed. |
+| 400-series response codes  | Do not retry | There is a problem with the request, from among the following: +  It includes a parameter or parameter combination that is not valid. <br />+  It uses an action or resource for which you do not have permissions. <br />+  It uses a resource that is in the process of changing states. <br />If the request involves a resource that is in the process of changing states, retrying the request could possibly succeed. |
 | 500-series response codes  | Retry | The error is caused by an AWS server-side issue and is generally transient. Repeat the request with an appropriate backoff strategy. |
 
 For information about Amazon Redshift response codes, see [Common Errors](https://docs.aws.amazon.com/redshift/latest/APIReference/CommonErrors.html) in the *Amazon Redshift API Reference*.

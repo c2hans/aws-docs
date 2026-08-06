@@ -60,22 +60,22 @@ During deployment, you can optionally attach all of the following managed rule g
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repository. | Enter the following command to clone the [IP and geolocation restriction with AWS WAF](https://github.com/aws-samples/ip-and-geolocation-restriction-with-waf-cdk) repository to your local workstation:<pre>git clone https://github.com/aws-samples/ip-and-geolocation-restriction-with-waf-cdk.git</pre> | Git |
-| Configure the rules. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/aws-waf-restrict-access-geolocation.html) | General AWS, Python |
+| Configure the rules. | 1. In the cloned repository, open the **app.py** file.<br />2. Modify the values of the following variables to customize the rules:<pre>aws_acccount = "AWS_ACCOUNT"<br />region = "AWS_REGION"<br />ip_list = ["CIDR_RANGE_1", "CIDR_RANGE_2"]<br />geo_list = ["COUNTRY_CODE_1", "COUNTRY_CODE_2"]<br />aws_managed_rules = True</pre><br />Where:`aws_account` is the ID of the target AWS account.`region` is the target AWS Region for the web ACL for API Gateway resources.The web ACL for CloudFront resources is global and will be deployed in the `us-east-1` Region.`ip_list` is the list of CIDR ranges that are allowed access.`geo_list` is the list of countries that are allowed access. For valid values, see the [AWS WAF documentation](https://docs.aws.amazon.com/waf/latest/APIReference/API_GeoMatchStatement.html).`aws_managed_rules` controls whether the managed rule groups are added to the web ACL. If this value is `True`, they are added. If this value is `False`, they are excluded.<br />3. Save and close the **app.py** file. | General AWS, Python |
 
 ### Bootstrap and deploy the code
 <a name="bootstrap-and-deploy-the-code"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Bootstrap your AWS environment. | If not already done, you need to [bootstrap](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping-env.html) your AWS environment before you can deploy the AWS CDK application.[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/aws-waf-restrict-access-geolocation.html) | General AWS |
-| Deploy the AWS CDK application. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/aws-waf-restrict-access-geolocation.html) | General AWS |
+| Bootstrap your AWS environment. | If not already done, you need to [bootstrap](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping-env.html) your AWS environment before you can deploy the AWS CDK application.1. In the AWS CDK CLI, enter the following command to bootstrap the `us-east-1` Region:<pre>cdk bootstrap aws://<account-id>/us-east-1</pre><br />2. If you're deploying the web ACL for API Gateway in a Region other than `us-east-1`, enter the following command to bootstrap the target Region:<pre>cdk bootstrap aws://<account-id>/<region></pre> | General AWS |
+| Deploy the AWS CDK application. | 1. Enter the following command to deploy the AWS CDK application:<pre>cdk deploy --all</pre><br />2. Wait until the AWS CloudFormation stack deployment is complete. | General AWS |
 
 ### Validate the deployment
 <a name="validate-the-deployment"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Confirm that the web ACLs successfully deployed. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/aws-waf-restrict-access-geolocation.html) | General AWS |
+| Confirm that the web ACLs successfully deployed. | 1. Sign in to the AWS Management Console, and then open the [AWS WAF console](https://console.aws.amazon.com/wafv2/).<br />2. In the navigation pane, choose **Web ACLs**.<br />3. In the list of AWS Regions, choose **Global (CloudFront)**.<br />4. Verify that the new CloudFront web ACL was deployed, and confirm that it has the IP address and geolocation rules that you defined. The default name of this web ACL is `WebACLCloudfront-<ID>`.<br />5. In the list of AWS Regions, choose the Region in which you deployed the stack.<br />6. Verify that a new web ACL for API Gateway resources was deployed. Confirm that it has the IP address and geolocation rules that you defined. The default name of this web ACL is `WebACLApiGW-<ID>`. | General AWS |
 | (Optional) Associate the web ACLs to your resources. | Associate the AWS WAF web ACLs with your AWS resources, such as an Application Load Balancer, API Gateway, or CloudFront distribution. For instructions, see [Associating or disassociating a web ACL with an ](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-associating-aws-resource.html)AWS[ resource](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-associating-aws-resource.html). For an example, see [class CfnWebACLAssociation (construct)](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_wafv2.CfnWebACLAssociation.html) in the AWS CDK documentation. | General AWS |
 
 ### Clean up resources
@@ -83,7 +83,7 @@ During deployment, you can optionally attach all of the following managed rule g
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Delete the stacks. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/aws-waf-restrict-access-geolocation.html) | General AWS |
+| Delete the stacks. | 1. Disassociate the web ACL from any AWS resources. For instructions, see the [AWS WAF documentation](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-associating-aws-resource.html).<br />2. In the AWS CDK CLI, enter the following command to delete the AWS CDK application.<pre>cdk destroy --all</pre> | General AWS |
 
 ## Related resources
 <a name="aws-waf-restrict-access-geolocation-resources"></a>

@@ -262,7 +262,7 @@ CREATE TABLE test1 (col1 text COLLATE "de_DE", col2 text COLLATE "es_ES");
 | Feature | SQL Server |  Aurora PostgreSQL  |
 | --- | --- | --- |
 | View database character set |  `SELECT collation_name FROM sys.databases;`  |  `select datname, pg_encoding_to_char(encoding), datcollate, datctype from pg_database;`  |
-| Modify the database character set |  `RECRATE` the database |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgresql-migration-playbook/chap-sql-server-aurora-pg.tsql.collations.html)  |
+| Modify the database character set |  `RECRATE` the database |  +  Export the database. <br />+  Drop or rename the database. <br />+  Re-create the database with the desired new character set. <br />+  Import database data from the exported file into the new database.   |
 | Character set granularity | Database | Database |
 | UTF8 | Supported | Supported |
 | UTF16 | Supported | Not Supported |

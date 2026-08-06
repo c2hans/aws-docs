@@ -194,7 +194,7 @@ aws rds modify-db-cluster ^
 | Prerequisite | Validate disk size and free space. | N/A |
 | Prerequisite | Disable all startup stored procedures (if applicable). | N/A |
 | Prerequisite | Stop application and connection. | N/A |
-| Prerequisite | Install new software and fix prerequisites errors raised. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/sql-server-to-aurora-postgresql-migration-playbook/chap-sql-server-aurora-pg.configuration.upgrades.html)  |
+| Prerequisite | Install new software and fix prerequisites errors raised. |  1.  Remove all uses of the reg\* data types. <br />2.  Upgrade certain extensions. <br />3.  Commit or roll back all open prepared transactions. <pre>SELECT count(*) FROM pg_catalog.pg_prepared_xacts;</pre>   |
 | Prerequisite | Select instances to upgrade. | Select the right Amazon RDS instance. |
 | Prerequisite | Review pre-upgrade summary. | N/A |
 | Runtime | Monitor upgrade progress. | You can review from the console. |

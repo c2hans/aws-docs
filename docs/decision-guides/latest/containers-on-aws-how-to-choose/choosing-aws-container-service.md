@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/containers-on-aws
 | --- |--- |
 | **Purpose** | Determine which AWS container service is the best fit for your organization. |
 | **Last updated** | May 16, 2025 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/containers-on-aws-how-to-choose/choosing-aws-container-service.html)  |
+| **Covered services** |  +  [Amazon EC2](https://docs.aws.amazon.com/ec2/index.html) <br />+  [Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html) <br />+  [Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html) <br />+  [Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html) <br />+  [Amazon Lightsail](https://docs.aws.amazon.com/lightsail/latest/userguide/amazon-lightsail-container-services.html) <br />+  [AWS App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html) <br />+  [AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html) <br />+  [AWS Fargate](https://docs.aws.amazon.com/AmazonECS/latest/userguide/what-is-fargate.html) <br />+  [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html) <br />+  [AWS Outposts](https://docs.aws.amazon.com/outposts/) <br />+  [Red Hat OpenShift Service on AWS (ROSA)](https://docs.aws.amazon.com/ROSA/latest/userguide/getting-started.html)   |
 
 ## Introduction
 <a name="intro"></a>

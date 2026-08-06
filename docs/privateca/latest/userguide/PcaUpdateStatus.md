@@ -25,7 +25,7 @@ For all status values except `DELETED` and `FAILED`, you are billed for the CA.
   <tr><td>DISABLED – You have manually disabled the CA.</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>EXPIRED – The CA certificate has expired.\*\*</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>FAILED</td><td colspan="6">The CreateCertificateAuthority action failed. This can occur because of a network outage, backend AWS failure, or other errors. A failed CA cannot be recovered. Delete the CA and create a new one.</td><td>No</td></tr>
-  <tr><td>DELETED</td><td colspan="6">Your CA is within the restoration period, which can have a length of 7-30 days. After this period, it is permanently deleted. [See the AWS documentation website for more details](http://docs.aws.amazon.com/privateca/latest/userguide/PcaUpdateStatus.html)</td><td>No</td></tr>
+  <tr><td>DELETED</td><td colspan="6">Your CA is within the restoration period, which can have a length of 7-30 days. After this period, it is permanently deleted. +  If you call the `RestoreCertificateAuthority` API on a CA with `DELETED` status and an expired certificate, the CA will be set to `EXPIRED`. <br />+  For more information about deleting a CA, see [Delete your private CA](PCADeleteCA.md). </td><td>No</td></tr>
 </tbody>
 </table>
 

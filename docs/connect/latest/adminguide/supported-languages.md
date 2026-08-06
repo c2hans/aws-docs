@@ -146,8 +146,8 @@ Guardrails for Connect AI agents support the same languages as Amazon Bedrock gu
 
 | CCP | Supported languages |
 | --- | --- |
-| Contact Control Panel - latest version |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html)  |
-| Contact Control Panel - earlier version |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html)  |
+| Contact Control Panel - latest version |  +  Chinese (Simplified) <br />+  Chinese (Traditional) <br />+  English <br />+  French <br />+  German <br />+  Italian <br />+  Japanese <br />+  Korean <br />+  Portuguese (Brazilian) <br />+  Spanish   |
+| Contact Control Panel - earlier version |  +  English <br />+  French <br />+  German <br />+  Italian <br />+  Japanese <br />+  Korean <br />+  Portuguese (Brazilian) <br />+  Spanish   |
 
 ## Chat message content
 <a name="supported-languages-chat"></a>

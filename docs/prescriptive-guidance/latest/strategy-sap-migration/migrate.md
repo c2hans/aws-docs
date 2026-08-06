@@ -13,9 +13,9 @@ The project team automates the infrastructure build and provisions the key AWS c
 
 |
 |
-|             Objectives:Migrate SAP workloads to AWSDeploy automated IaC systemsPut basic operational procedures in placeCut over to SAP on AWS and go live Run the SAP on AWS go-live assessment Go live with operations  |             Actions:Run IaC systems and set up the architecture on AWSSet up migration toolsAutomate provisioning of the operating system, file systems, and databasesMigrate SAP workloadsPerform testing, defect resolution, and basic performance-tuningAutomate operational procedures such as backups, automatic scaling, and monitoringCut over and go live |
+|             Objectives:+ Migrate SAP workloads to AWS<br />+ Deploy automated IaC systems<br />+ Put basic operational procedures in place<br />+ Cut over to SAP on AWS and go live <br />+ Run the SAP on AWS go-live assessment <br />+ Go live with operations  |             Actions:+ Run IaC systems and set up the architecture on AWS<br />+ Set up migration tools<br />+ Automate provisioning of the operating system, file systems, and databases<br />+ Migrate SAP workloads<br />+ Perform testing, defect resolution, and basic performance-tuning<br />+ Automate operational procedures such as backups, automatic scaling, and monitoring<br />+ Cut over and go live |
 | --- |--- |
-|             **Inputs:**Outputs from the mobilize phaseAWS best practices for migrationMigration tools<br />  |             **Outputs:**Report on enabled AWS servicesReport on running SAP workloads on AWSReport on open and resolved defectsTest reportsCutover report |
+|             **Inputs:**+ Outputs from the mobilize phase<br />+ AWS best practices for migration<br />+ Migration tools<br />  |             **Outputs:**+ Report on enabled AWS services<br />+ Report on running SAP workloads on AWS<br />+ Report on open and resolved defects<br />+ Test reports<br />+ Cutover report |
 
 The following diagram provides a simplified example of the migrate phase (in green) as part of the full migration process. It shows the SAP production systems being migrated in two waves.
 

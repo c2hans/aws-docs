@@ -28,7 +28,7 @@ STL\_UNIQUE only contains queries run on main provisioned clusters. It doesn't c
 | endtime | timestamp | Time in UTC that the query finished. Total time includes queuing and execution. with 6 digits of precision for fractional seconds. For example: 2009-06-12 11:29:19.131358. |
 | tasknum | integer | Number of the query task process that was assigned to run the step. |
 | rows | bigint | Total number of rows that were processed. |
-| type | character(6) | The type of step. Valid values are: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_UNIQUE.html)  |
+| type | character(6) | The type of step. Valid values are: +  HASHED. Indicates that the step used grouped, unsorted aggregation. <br />+  PLAIN. Indicates that the step used ungrouped, scalar aggregation. <br />+  SORTED. Indicates that the step used grouped, sorted aggregation.   |
 | is\_diskbased | character(1) | If true (t), the query was performed as a disk-based operation. If false (f), the query was performed in memory. |
 | slots | integer | Total number of hash buckets. |
 | workmem | bigint | Total number of bytes in working memory that were assigned to the step. |

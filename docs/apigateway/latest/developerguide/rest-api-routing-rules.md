@@ -45,12 +45,12 @@ You can only use wildcards in the header glob value, and the wildcard must be `*
 
 |  Header conditions  |  Requests that match the routing rule  |  Requests that don't match the routing rule  |
 | --- | --- | --- |
-| `x-version: a*` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |
-| `x-version: *a` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |
-| `x-version: *a*` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |
-| `x-version: *a*` and `x-version: *b*` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |
-| `x-version: b*` and `x-version: *a` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |
-| `x-version: *` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  | None |
+| `x-version: a*` |  + `x-version: account`<br />+ `x-version: alpha`  |  + `x-version: backup`<br />+ `x-version: beta`<br />+ `x-version: users`  |
+| `x-version: *a` |  + `x-version: alpha`<br />+ `x-version: beta`  |  + `x-version: account`<br />+ `x-version: backup`<br />+ `x-version: users`  |
+| `x-version: *a*` |  + `x-version: account`<br />+ `x-version: alpha`<br />+ `x-version: backup`<br />+ `x-version: beta`  |  + `x-version: users`  |
+| `x-version: *a*` and `x-version: *b*` |  + `x-version: backup`<br />+ `x-version: beta`  |  + `x-version: account`<br />+ `x-version: alpha`<br />+ `x-version: users`  |
+| `x-version: b*` and `x-version: *a` |  + `x-version: beta`  |  + `x-version: account`<br />+ `x-version: alpha`<br />+ `x-version: backup`<br />+ `x-version: users`  |
+| `x-version: *` |  + `x-version: account`<br />+ `x-version: alpha`<br />+ `x-version: backup`<br />+ `x-version: beta`<br />+ `x-version: users`  | None |
 
 If you create conditions for multiple header values, such as `Accept:application/json,text/xml`, we recommend that you use `*contains*` for your header conditions and avoid creating conditions using the comma (`,`) character.
 
@@ -58,8 +58,8 @@ Because API Gateway matches header conditions literally, semantic matches might 
 
 |  Header conditions  |  Requests that match the routing rule  |  Requests that don't match the routing rule  |
 | --- | --- | --- |
-| `Accept: *json` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  |
-| `Accept: *json*` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-rules.html)  | None |
+| `Accept: *json` |  + `Accept:application/json Accept:text/xml`  |  + `Accept:application/json,text/xml`  |
+| `Accept: *json*` |  +  `Accept:application/json Accept:text/xml` <br />+ `Accept:application/json,text/xml`  | None |
 
 ### Match base path conditions
 <a name="rest-api-routing-rules-condition-path"></a>

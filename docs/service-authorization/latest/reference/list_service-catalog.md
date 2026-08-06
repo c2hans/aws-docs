@@ -129,10 +129,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   CreateServiceAction  **
   - **SDK client:** servicecatalog
-  - **IAM action:**  [servicecatalog:CreateServiceAction](#list_service-catalog-action-CreateServiceAction)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [servicecatalog:CreateServiceAction](#list_service-catalog-action-CreateServiceAction)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** servicecatalog.amazonaws.com / **Access level:** Write
 
 - **   CreateTagOption  **
   - **SDK client:** servicecatalog
@@ -637,10 +635,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   UpdateServiceAction  **
   - **SDK client:** servicecatalog
-  - **IAM action:**  [servicecatalog:UpdateServiceAction](#list_service-catalog-action-UpdateServiceAction)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [servicecatalog:UpdateServiceAction](#list_service-catalog-action-UpdateServiceAction)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** servicecatalog.amazonaws.com / **Access level:** Write
 
 - **   UpdateTagOption  **
   - **SDK client:** servicecatalog

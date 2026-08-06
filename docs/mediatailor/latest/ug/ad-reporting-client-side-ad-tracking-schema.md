@@ -204,18 +204,18 @@ The following table lists the properties in the client-side tracking API, their 
 
 | Property | Definition | Value type | Example |
 | --- | --- | --- | --- |
-|   adID  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-client-side-ad-tracking-schema.html)Path: `/avails/ads/adId`<br />VAST mapping: None | String | 10 |
+|   adID  | +  HLS - the sequence number associated with the beginning of the ad <br />+  DASH - the period ID of the ad Path: `/avails/ads/adId`<br />VAST mapping: None | String | 10 |
 |   adBreakTrackingEvents  | An array that carries VMAP tracking events from the VAST response. For more information, see section 2.3.3 of the [VMAP 1.0 specification](https://www.iab.com/guidelines/vmap/).<br />Path: `/avails/ads/adBreakTrackingEvents` | Array |  []  |
 |   adMarkerDuration  | The avail duration observed from the ad marker in the manifest. | String |  30  |
 |   adParameters  | A string of ad parameters, from the VAST VPAID, that MediaTailor passes to the player.<br />Path: `/avails/ads/adParameters`<br />VAST mapping: `VAST/Ad/InLine/Creatives/Creative/Linear/AdParameters` | String |  |
-|   adProgramDateTime  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-client-side-ad-tracking-schema.html)  | String |  |
+|   adProgramDateTime  |  +  HLS - the date, in ISO/IEC 8601:2004 format, that represents the first media sequence of the ad. <br />+  DASH - [Not specified]   | String |  |
 |   ads  | An array containing the ad objects that make up the avail. The ads are listed in the order they appear in the manifest.<br />Path: `/avails/ads` | Array |  []  |
 |   adSystem  | The name of the system that serves the ad. Make sure to provide a value. If you don't provide a value, issues can arise.  | String |  myADS  |
 |   adTitle  | The title of the ad. | String |  ad1  |
 |   adVerifications  | Contains the resources and metadata required to execute third-party measurement code in order to verify creative playback. For more information about this property, see section 3.16 of the [VAST 4.2 specification](https://iabtechlab.com/standards/vast/).<br />MediaTailor supports `adVerifications` as VAST 3 extension nodes.<br />Path: `/avails/ads/adVerifications`<br />VAST mapping: `VAST/Ad/InLine/AdVerifications` | Array |  []  |
 |   altText  | The alternative text for an image of a companion ad. This text enables players with descriptive-audio support for the visually impaired to read back a description of the image.<br />Path: `/avails/ads/companionAds/altText` | String |  video sequence advertising sneakers  |
 |   apiFramework  | Set to `VPAID` to tell the player that this ad is a VPAID ad.<br />Can appear in multiple locations in the schema. | String |  VPAID  |
-|   availID  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-client-side-ad-tracking-schema.html)Path: `/avails/availID` | String |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-client-side-ad-tracking-schema.html)  |
+|   availID  | +  HLS - the sequence number associated with the start of the ad avail.  <br />+  DASH - the period ID of the ad avail, which is usually the period ID of the content that is to be replaced with an ad. Path: `/avails/availID` | String |  +   `34`  <br />+   `PT34S_1`    |
 |   avails  | An array containing ad-break objects, or *avails*, that are presented in the active manifest window. The avails are listed in the order they appear in the manifest.<br />Path: `/avails` | Array |  []  |
 |   adType  | The type of the ad.<br />Path: `/avails/adType` and `/avails/ads/adType` | String |  |
 |   dateTime  | Program date time, in ISO 8601 seconds format, for the start of the ad avail or ad.<br />Path: `/avails/dateTime` and `/avails/ads/dateTime` | String |  |
@@ -239,7 +239,7 @@ The following table lists the properties in the client-side tracking API, their 
 |   sequence  | The sequence value specified for the creative in the VAST response.<br />Path: `/avails/ads/companionAds/sequence` | String | 1 |
 |   startTime  | The time position, in ISO 8601 seconds format. For HLS, this is relative to the beginning of the playback session. For DASH, this is relative to the manifest's AST (Availability Start Time). The response includes start times for the entire ad avail and for each ad and beacon.<br />Path: `/avails/startTime` and `/avails/ads/startTime` | String | PT18.581355S |
 |   startTimeInSeconds  | The time position, in seconds format. For HLS, this is relative to the beginning of the playback session. For DASH, this is relative to the manifest's AST (Availability Start Time). The response includes start times for the entire ad avail and for each ad and beacon.<br />Path: `/avails/startTimeInSeconds` and `/avails/ads/startTimeInSeconds` | Number | 18.581 |
-|   eventId  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/ad-reporting-client-side-ad-tracking-schema.html)  | String |  |
+|   eventId  |  +  HLS - the sequence number associated with the beacon. <br />+  DASH - the `ptsTime` of the start of the ad.   | String |  |
 |   event  | The name of the tracking event.<br />Path: `/avails/ads/adVerifications/trackingEvents/event` or `/avails/ads/companionAds/trackingEvents/event` | String | impression, start, firstQuartile, midpoint, thirdQuartile, complete |
 |   beaconUrls  | The URL where MediaTailor sends the ad beacon.<br />Path: `/avails/ads/mediaFiles/trackingEvents/beaconUrls` | Array |  |
 |   bitrate  | The bitrate of the video asset. This property is not typically included for an executable asset. | String | 2048 |

@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_und
 ## AWS access level summary
 <a name="access_policies_access-level-summaries"></a>
 
-Policy summaries include an access level summary that describes the action permissions defined for each service that is mentioned in the policy. To learn about policy summaries, see [Policy summaries](access_policies_understand.md). Access level summaries indicate whether the actions in each access level (`List`, `Read`, `Tagging`, `Write`, and `Permissions management`) have `Full` or `Limited` permissions defined in the policy. To view the access level classification that is assigned to each action in a service, see [Actions, Resources, and Condition Keys for AWS Services](reference_policies_actions-resources-contextkeys.html).
+Policy summaries include an access level summary that describes the action permissions defined for each service that is mentioned in the policy. To learn about policy summaries, see [Policy summaries](access_policies_understand.md). Access level summaries indicate whether the actions in each access level (`List`, `Read`, `Tagging`, `Write`, and `Permissions management`) have `Full` or `Limited` permissions defined in the policy. To view the access level classification that is assigned to each action in a service, see [Actions, Resources, and Condition Keys for AWS Services](https://docs.aws.amazon.com/reference_policies_actions-resources-contextkeys.html).
 
 The following example describes the access provided by a policy for the given services. For examples of full JSON policy documents and their related summaries, see [Examples of policy summaries](access_policies_policy-summary-examples.md).
 
@@ -45,4 +45,4 @@ AWS defines the following access level classifications for the actions in a serv
 **Tip**
 To improve the security of your AWS account, restrict or regularly monitor policies that include the **Permissions management** access level classification.
 
-To view the access level classification for all of the actions in a service, see [Actions, Resources, and Condition Keys for AWS Services](reference_policies_actions-resources-contextkeys.html).
+To view the access level classification for all of the actions in a service, see [Actions, Resources, and Condition Keys for AWS Services](https://docs.aws.amazon.com/reference_policies_actions-resources-contextkeys.html).

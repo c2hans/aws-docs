@@ -8,6 +8,10 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/quicksight-gen-bi
 **Note**
  Powered by Amazon Bedrock: Amazon Q in Quick is built on Amazon Bedrock and includes [automated abuse detection](https://docs.aws.amazon.com//bedrock/latest/userguide/abuse-detection.html) implemented in Amazon Bedrock to enforce safety, security, and the responsible use of AI.
 
+**Important**
+For the latest Amazon Quick chat experience — including cross-dataset Q&A with multi-dataset Topics, agentic workflows, and LLM-powered natural language querying — see [Ask questions, explore data, and get insights with chat in Amazon Quick](using-quick-chat.md). To learn about the new multi-dataset Topics that serve as the semantic layer for both chat and analysis, see [Working with Amazon Quick Sight Topics](topics.md).
+The Generative BI features described on this page represent the earlier experience. They continue to work as before.
+
 With Amazon Quick chat, you can utilize the Generative BI authoring experience, create executive summaries of your data, ask and answer questions of data, and generate data stories.
 
 To access all Quick Sight Generative BI features that are relevant to your task, choose the sparkle icon at the top right of any Quick page. In the pane that opens, the chat displays all content that is available based on the context of the task that you are performing. For example, if you're working in an Analysis, you can build a calculation, edit visuals, set up Q&A, or ask questions about your data. If you're working in a Dashboard, you can build a data story, generate an executive summary, or ask questions about the dashboard.

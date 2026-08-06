@@ -17,7 +17,7 @@ The following table summarizes the roles and their permissions.
 | sys:operator | This role has the permissions to access catalog or system tables, analyze, vacuum, or cancel queries. |
 | sys:dba | This role has the permissions to create schemas, create tables, drop schemas, drop tables, and truncate tables. It has the permissions to create or replace stored procedures, drop procedures, create or replace functions, create or replace external functions, create views, and drop views. Also, this role inherits all the permissions from the sys:operator role. |
 | sys:superuser | This role has all the supported system permissions defined in [System permissions for RBAC](r_roles-system-privileges.md). |
-| sys:secadmin |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_roles-default.html) |
+| sys:secadmin |  + This role has the permissions to create users, alter users, drop users, create roles, drop roles, and grant roles.<br />+ This role has permissions to turn RLS ON or OFF on a relation and permissions to manage RLS and DDM policies (CREATE, DROP, ATTACH, DETACH, and ALTER). Also, note that EXPLAIN RLS, IGNORE RLS, and EXPLAIN MASKING permissions are granted to this role by default.<br />+ This role can have access to user tables only when the permission is explicitly granted to the role. |
 
 ## System-defined roles and users for data sharing
 <a name="r_roles-datashare"></a>

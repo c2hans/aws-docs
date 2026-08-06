@@ -77,8 +77,8 @@ This field appears for MPEG-4 AVC and MPEG-2 only if the Streams > Advanced > fr
 
 | Location of Field on Web Interface | Location of Tag in XML |
 | --- | --- |
-| Streams > Advanced > Telecine | stream\_assembly/video\_description/{{codec}}/telecine<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-scan-type-key.html) |
-| Streams > Advanced > Interlace Mode | stream\_assembly/video\_description/{{codec}}/interlace\_mode<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/vq-scan-type-key.html) |
+| Streams > Advanced > Telecine | stream\_assembly/video\_description/{{codec}}/telecine<br />where {{codec}} is one of the following:+  **h264\_settings ** <br />+  **mpeg2\_settings** <br />+  **h265\_settings** <br />+  **prores\_settings**  |
+| Streams > Advanced > Interlace Mode | stream\_assembly/video\_description/{{codec}}/interlace\_mode<br />where {{codec}} is one of the following:+  **vc1\_settings ** <br />+  **h264\_settings** <br />+  **mpeg2\_settings ** <br />+  **h265\_settings ** <br />+  **prores\_settings**  |
 | Streams > Advanced >Preprocessors > Deinterlacer > Deinterlace Mode | stream\_assembly/video\_description/video\_preprocessors/deinterlacer/deinterlace\_mode |
 | Streams > Advanced >Preprocessors > Deinterlacer > Deinterlace Algorithm | stream\_assembly/video\_description/video\_preprocessors/deinterlacer/algorithm |
 | Streams > Advanced >Preprocessors > Deinterlacer > Force Mode | stream\_assembly/video\_description/video\_preprocessors/deinterlacer/force |

@@ -22,8 +22,14 @@ Required: Yes
  ** DataSetIdentifier **   <a name="QS-Type-ColumnIdentifier-DataSetIdentifier"></a>
 The data set that the column belongs to.
 Type: String
+Length Constraints: Minimum length of 0. Maximum length of 2048.
+Required: No
+
+ ** TopicIdentifier **   <a name="QS-Type-ColumnIdentifier-TopicIdentifier"></a>
+The topic that the column belongs to.
+Type: String
 Length Constraints: Minimum length of 1. Maximum length of 2048.
-Required: Yes
+Required: No
 
 ## See Also
 <a name="API_ColumnIdentifier_SeeAlso"></a>

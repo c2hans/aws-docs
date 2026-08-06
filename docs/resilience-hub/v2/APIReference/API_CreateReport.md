@@ -41,7 +41,7 @@ Required: No
  ** [reportType](#API_CreateReport_RequestSyntax) **   <a name="ngresiliencehub-CreateReport-request-reportType"></a>
 The type of report to generate.
 Type: String
-Valid Values: `FAILURE_MODE`
+Valid Values: `FAILURE_MODE | TESTING`
 Required: Yes
 
  ** [serviceArn](#API_CreateReport_RequestSyntax) **   <a name="ngresiliencehub-CreateReport-request-serviceArn"></a>
@@ -65,7 +65,9 @@ Content-type: application/json
       "reportOutput": { ... },
       "reportType": "string",
       "serviceArn": "string",
-      "status": "string"
+      "status": "string",
+      "testRunId": "string",
+      "testTemplateArn": "string"
    }
 }
 ```

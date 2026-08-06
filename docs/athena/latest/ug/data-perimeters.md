@@ -15,4 +15,4 @@ Amazon Athena uses service-owned Amazon S3 buckets to store example queries and 
 
 | Resource ARN | Required permissions | Identity used for access | Access scenarios |
 | --- | --- | --- | --- |
-|  arn:aws:s3:::athena-examples-<region>  | s3:GetObjects3:ListBucket | The IAM principal accessing Athena. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/data-perimeters.html)  |
+|  arn:aws:s3:::athena-examples-<region>  | s3:GetObjects3:ListBucket | The IAM principal accessing Athena. |  +  Running example queries in the Athena console <br />+  Exploring sample datasets that Athena provides   |

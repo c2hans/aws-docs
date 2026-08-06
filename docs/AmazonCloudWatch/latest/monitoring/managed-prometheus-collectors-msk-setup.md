@@ -14,7 +14,7 @@ When a Amazon CloudWatch managed Prometheus collector delivers your Amazon MSK m
 <a name="managed-prometheus-collectors-msk-prerequisites"></a>
 
 This procedure assumes familiarity with Amazon MSK cluster administration and Amazon VPC networking concepts.
-+ Amazon MSK cluster in provisioned mode (managed collectors do not support Amazon MSK Serverless or Amazon MSK Express)
++ Amazon MSK cluster in provisioned mode, with standard or express brokers. Managed collectors do not support Amazon MSK Serverless.
 + Open Monitoring enabled on the cluster. For more information, see [Open Monitoring with Prometheus](https://docs.aws.amazon.com/msk/latest/developerguide/open-monitoring.html) in the *Amazon MSK Developer Guide*.
 + At least two subnets in different Availability Zones
 + Security group allowing the collector to reach broker ports 11001 and 11002
@@ -176,7 +176,7 @@ The following query returns host-level CPU utilization from the Node Exporter (p
 ## View the automatic dashboard
 <a name="managed-prometheus-collectors-msk-dashboards"></a>
 
-After the collector begins delivering your Amazon MSK metrics to CloudWatch, the CloudWatch console provides an automatic dashboard named **MSK OTel**. To open it, sign in to the AWS Management Console, open the CloudWatch console, choose **Dashboards** in the navigation pane, choose **Automatic dashboards**, and then choose **MSK OTel**. You can start monitoring your clusters without building any widgets or dashboards yourself.
+After the collector begins delivering your Amazon MSK metrics to CloudWatch, the CloudWatch console provides an automatic dashboard named **MSK OTel**. To open it, see [MSK OTel](https://console.aws.amazon.com/cloudwatch/home?#dashboards/templates/msk-otel), or sign in to the AWS Management Console, open the CloudWatch console, choose **Dashboards** in the navigation pane, choose **Automatic dashboards**, and then choose **MSK OTel**. You can start monitoring your clusters without building any widgets or dashboards yourself.
 
 If the automatic dashboard meets your needs, you can use it as is. To build a tailored monitoring experience, you can add any of its widgets to a custom dashboard. For more information about custom dashboards, see [Using CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html).
 
@@ -189,6 +189,6 @@ For alternative cross-account scraper configurations using role chaining, see [C
 
 ## Current limitations
 <a name="managed-prometheus-collectors-msk-limitations"></a>
-+ Managed collectors do not support Amazon MSK Serverless or Amazon MSK Express clusters.
++ Managed collectors do not support Amazon MSK Serverless clusters.
 + Managed collectors do not support public access combined with KRaft metadata mode.
 + Each Amazon MSK cluster and CloudWatch dataset combination requires one collector.

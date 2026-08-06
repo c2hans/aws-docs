@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # DeleteFleetLocations
 <a name="API_DeleteFleetLocations"></a>
 
- **This API works with the following fleet types:** EC2, Container
+ **This API works with the following fleet types:** EC2, Anywhere, Container
 
 Removes locations from a multi-location fleet. When deleting a location, all game server process and all instances that are still active in the location are shut down.
 

@@ -13,8 +13,8 @@ This page explains how to instrument a [Claude Agent SDK](https://docs.claude.co
 +  [How evaluation fields are extracted](#claude-agent-sdk-extraction)
   +  [From event records](#claude-agent-sdk-extraction-event-records)
   +  [From span attributes](#claude-agent-sdk-extraction-attributes)
-+  [Example spans with event records](#claude-agent-sdk-examples-with)
-+  [Example spans without event records](#claude-agent-sdk-examples-without)
++  [Example spans in split telemetry](#claude-agent-sdk-examples-split)
++  [Example spans in unified telemetry](#claude-agent-sdk-examples-unified)
 
 ## Instrument your agent
 <a name="claude-agent-sdk-instrument"></a>
@@ -44,7 +44,7 @@ dependencies = [
 ```
 
 **Note**
-Instrumentation is one step in setting up observability. To export telemetry for evaluation, complete the full setup in [Set up observability](supported-frameworks.md#supported-frameworks-setup).
+Instrumentation is one step in setting up observability. To export telemetry for evaluation, complete the full setup in [Set up observability](supported-frameworks-telemetry.md#supported-frameworks-setup).
 
 ## How spans are identified
 <a name="claude-agent-sdk-span-identification"></a>
@@ -63,30 +63,30 @@ The Claude Agent SDK emits only `AGENT` and `TOOL` spans; it does not emit separ
 
 The Claude Agent SDK produces clean, plain-text agent input and output, so the user prompt and agent response require no special parsing. Tool results, however, arrive as Anthropic content blocks in the form `[{"type": "text", "text": "…​"}]`. AgentCore Evaluations unwraps these blocks and concatenates their text.
 
-The location of this content depends on how telemetry was collected. The identifying attribute (`openinference.span.kind`) is on the span in both cases. For more information, see [Spans, event records, and telemetry signals](supported-frameworks-telemetry.md).
+The location of this content depends on how telemetry was collected. The identifying attribute (`openinference.span.kind`) is on the span in both cases. For more information, see [Telemetry setup and delivery](supported-frameworks-telemetry.md).
 
 ### From event records
 <a name="claude-agent-sdk-extraction-event-records"></a>
 
-When telemetry is split, AgentCore Evaluations reads content from the event record correlated to each span:
+With split telemetry, AgentCore Evaluations reads content from the event record correlated to each span:
 +  **User prompt** and **agent response**: from the invoke agent span’s event record, in `body.input` and `body.output`.
 +  **Tool call**: the tool name from the `tool.name` attribute and the tool call ID from `tool.id` on the execute tool span. The tool arguments and result come from that span’s event record, in `body.input` and `body.output`. AgentCore Evaluations unwraps the Anthropic content blocks in the tool result.
 
-For examples, see [Example spans with event records](#claude-agent-sdk-examples-with).
+For more information, see [Example spans in split telemetry](#claude-agent-sdk-examples-split).
 
 ### From span attributes
 <a name="claude-agent-sdk-extraction-attributes"></a>
 
-When telemetry is not split, the same content stays on the span as attributes:
+With unified telemetry, the same content stays on the span as attributes:
 +  **User prompt** and **agent response**: from `input.value` and `output.value` on the invoke agent span.
 +  **Tool call**: the tool name from `tool.name`, the tool call ID from `tool.id`, the arguments from `input.value`, and the result from `output.value`, on the execute tool span. AgentCore Evaluations unwraps the Anthropic content blocks in the tool result.
 
-For examples, see [Example spans without event records](#claude-agent-sdk-examples-without).
+For more information, see [Example spans in unified telemetry](#claude-agent-sdk-examples-unified).
 
-## Example spans with event records
-<a name="claude-agent-sdk-examples-with"></a>
+## Example spans in split telemetry
+<a name="claude-agent-sdk-examples-split"></a>
 
-When telemetry is split, the span carries the identifying attributes and the content lives in a correlated event record. The following examples are from a Claude Agent SDK travel-planning agent deployed on Amazon Bedrock AgentCore Runtime.
+With split telemetry, the span carries the identifying attributes and the content lives in a correlated event record. The following examples are from a Claude Agent SDK travel-planning agent deployed on Amazon Bedrock AgentCore Runtime.
 
 **Note**
 These examples are not complete spans. They show representative data from a real agent interaction, with some fields omitted and long values truncated for readability.
@@ -191,10 +191,10 @@ The `openinference.span.kind` attribute (`TOOL`) identifies this as an execute t
 }
 ```
 
-## Example spans without event records
-<a name="claude-agent-sdk-examples-without"></a>
+## Example spans in unified telemetry
+<a name="claude-agent-sdk-examples-unified"></a>
 
-When telemetry is not split, the same content stays on the span attributes and no separate event record is produced. The following examples are from a Claude Agent SDK travel-planning agent.
+With unified telemetry, the same content stays on the span attributes and no separate event record is produced. The following examples are from a Claude Agent SDK travel-planning agent.
 
 **Note**
 These examples are not complete spans. They show representative data from a real agent interaction, with some fields omitted and long values truncated for readability.

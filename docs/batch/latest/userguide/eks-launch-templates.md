@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/batch/latest/userguide/eks-launch-templa
 AWS Batch on Amazon EKS supports launch templates. There are constraints on what your launch template can do.
 
 **Important**
-For EKS AL2 AMIs, AWS Batch runs `/etc/eks/bootstrap.sh`. Don't run `/etc/eks/bootstrap.sh` in your launch template or cloud-init user-data scripts. You can add additional parameters besides the `--kubelet-extra-args` parameter to [bootstrap.sh](https://github.com/awslabs/amazon-eks-ami/blob/main/templates/al2/runtime/bootstrap.sh). To do this, set the `AWS_BATCH_KUBELET_EXTRA_ARGS` variable in the `/etc/aws-batch/batch.config` file. See the following example for details.
+For EKS AL2 AMIs, AWS Batch runs `/etc/eks/bootstrap.sh`. Don't run `/etc/eks/bootstrap.sh` in your launch template or cloud-init user-data scripts. You can add additional parameters besides the `--kubelet-extra-args` parameter to [bootstrap.sh](https://github.com/awslabs/amazon-eks-ami/blob/al2/templates/al2/runtime/bootstrap.sh). To do this, set the `AWS_BATCH_KUBELET_EXTRA_ARGS` variable in the `/etc/aws-batch/batch.config` file. See the following example for details.
 For EKS AL2023, AWS Batch utilizes the [NodeConfigSpec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) from EKS to make instances join the EKS cluster. AWS Batch populates [ClusterDetails](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#clusterdetails) in [NodeConfigSpec](https://awslabs.github.io/amazon-eks-ami/nodeadm/doc/api/#nodeconfigspec) for the EKS cluster and you don't need to specify them.
 
 **Note**

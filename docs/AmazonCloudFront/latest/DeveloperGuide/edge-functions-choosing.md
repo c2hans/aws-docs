@@ -29,7 +29,7 @@ To help you choose the option for your use case, use the following table to unde
 |  | CloudFront Functions | Lambda@Edge |
 | --- | --- | --- |
 | Programming languages | JavaScript (ECMAScript 5.1 compliant) | Node.js and Python |
-| Event sources |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-choosing.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-choosing.html)  |
+| Event sources |  +  Viewer request <br />+  Viewer response   |  +  Viewer request <br />+  Viewer response <br />+  Origin request <br />+  Origin response   |
 | Supports [Amazon CloudFront KeyValueStore](kvs-with-functions.md) | Yes<br />CloudFront KeyValueStore only supports [JavaScript runtime 2.0](functions-javascript-runtime-20.md) | No |
 | Scale | Up to millions of requests per second | Up to 10,000 requests per second per Region |
 | Function duration | Submillisecond | Up to 30 seconds (viewer request and viewer response)<br />Up to 30 seconds (origin request and origin response) |

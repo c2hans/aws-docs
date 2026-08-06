@@ -29,14 +29,14 @@ The following table describes the importance of key metrics related to observabi
 |
 | Metrics category | Metric | Why the metric is important |
 | --- |--- |--- |
-| Agent behavior | Tool selection rateInvalid tool invocations | Reveals misalignment between intent and action. |
+| Agent behavior | + Tool selection rate<br />+ Invalid tool invocations | Reveals misalignment between intent and action. |
 | Cost trends | Inference cost per user or session | Enables FinOps reporting and tiered model routing decisions. |
-| Invocation metrics | Lambda invocationsError rateCold starts | Validates pipeline stability and error resilience. |
-| Knowledge base retrieval | Hit/miss ratioGrounding relevance score | Measures how well the RAG pipeline is performing. |
-| Latency | Inference latency per model | Detects slowdowns in Amazon Bedrock or SageMaker.Optimizes user response time. |
-| Prompt and response quality | Hallucination rateFallback rate | Ensures grounding is working and prompts are behaving as expected. |
+| Invocation metrics | + Lambda invocations<br />+ Error rate<br />+ Cold starts | Validates pipeline stability and error resilience. |
+| Knowledge base retrieval | + Hit/miss ratio<br />+ Grounding relevance score | Measures how well the RAG pipeline is performing. |
+| Latency | Inference latency per model | + Detects slowdowns in Amazon Bedrock or SageMaker.<br />+ Optimizes user response time. |
+| Prompt and response quality | + Hallucination rate<br />+ Fallback rate | Ensures grounding is working and prompts are behaving as expected. |
 | Security and access | Agent and tool usage by IAM role | Ensures principle of least privilege and traceability. |
-| Token usage | Total input and output tokens (Amazon Bedrock) | Controls cost.Detects prompt bloat or model misuse. |
+| Token usage | Total input and output tokens (Amazon Bedrock) | + Controls cost.<br />+ Detects prompt bloat or model misuse. |
 | Workflow health | Step Functions workflow failures, retries, and timeouts | Surfaces orchestration issues and retry loops. |
 
 ## AWS services for observing serverless and generative AI
@@ -48,14 +48,14 @@ The following table describes AWS services and features that support observabili
 |
 | AWS service | Description | Ideal use case |
 | --- |--- |--- |
-| [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) | Captures logs from Lambda, Step Functions, Amazon Bedrock Agents, and Amazon API Gateway | DebuggingAudit trailsUser session tracing |
-| [Amazon CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) | Custom and service-generated key performance indicators (KPIs), such as invocation count, duration, and token count | DashboardingAlerts Trend analysis |
-| [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html) | Traces across serverless flows, including Lambda, API Gateway, and Step Functions | Root-cause analysisLatency trackingDependency mapping |
+| [Amazon CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) | Captures logs from Lambda, Step Functions, Amazon Bedrock Agents, and Amazon API Gateway | + Debugging<br />+ Audit trails<br />+ User session tracing |
+| [Amazon CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) | Custom and service-generated key performance indicators (KPIs), such as invocation count, duration, and token count | + Dashboarding<br />+ Alerts <br />+ Trend analysis |
+| [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html) | Traces across serverless flows, including Lambda, API Gateway, and Step Functions | + Root-cause analysis<br />+ Latency tracking<br />+ Dependency mapping |
 | [CloudWatch embedded metric format](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Embedded_Metric_Format.html) | Structured logging for advanced metrics in log streams | Enable analytics without separate metrics calls |
 | [Amazon Bedrock agent trace](https://docs.aws.amazon.com/bedrock/latest/userguide/trace-events.html) and [model invocation logging](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html) | Native Amazon Bedrock Agent execution trace, tool calls, and RAG insights | Monitor agent behavior and troubleshoot failures |
-| [Amazon EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html) and [schema registries](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schema-registry.html) | Tracks and validates event formats flowing through your pipeline | Prevent malformed events Ensure contract consistency |
-| [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) | Logs all API calls and identity context | ComplianceSecurity auditsAgent and tool usage by role |
-| [Amazon OpenSearch Service](https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/elasticsearch.html) | Indexes inference responses, structured logs, or audit records | Semantic search of responses Observability dashboards |
+| [Amazon EventBridge Pipes](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-pipes.html) and [schema registries](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-schema-registry.html) | Tracks and validates event formats flowing through your pipeline | + Prevent malformed events <br />+ Ensure contract consistency |
+| [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) | Logs all API calls and identity context | + Compliance<br />+ Security audits<br />+ Agent and tool usage by role |
+| [Amazon OpenSearch Service](https://docs.aws.amazon.com/whitepapers/latest/big-data-analytics-options/elasticsearch.html) | Indexes inference responses, structured logs, or audit records | + Semantic search of responses <br />+ Observability dashboards |
 | [Amazon CloudWatch Synthetics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html) | Simulates traffic to test endpoints or workflows proactively | Ensure uptime and regression monitoring across versions |
 
 ## Example: Monitoring an agent-based support workflow

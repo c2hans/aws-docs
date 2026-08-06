@@ -113,7 +113,7 @@ The code example provided is for proof-of-concept (PoC) or pilot purposes only. 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repo to your local workstation. | To clone the [genai-knowledge-capture](https://github.com/aws-samples/genai-knowledge-capture) repository, run the following command in your terminal.<pre>git clone https://github.com/aws-samples/genai-knowledge-capture</pre> | AWS DevOps, DevOps engineer |
-| (Optional) Replace the audio files. | To customize the sample application to incorporate your own data, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.html) | AWS DevOps, DevOps engineer |
+| (Optional) Replace the audio files. | To customize the sample application to incorporate your own data, do the following:1. Navigate to the `assets/audio_samples` folder in the cloned repository.<br />2. Delete the folders containing the sample audio files.<br />3. Create a folder for each topic you want to analyze.<br />4. Transfer your audio files to their respective folders. | AWS DevOps, DevOps engineer |
 | Set up the Python virtual environment. | To set up the Python virtual environment, run the following commands.<pre>cd genai-knowledge-capture<br />python3 -m venv .venv<br />source .venv/bin/activate<br />pip install -r requirements.txt</pre> | AWS DevOps, DevOps engineer |
 | Synthesize the AWS CDK code. | To convert the code to an AWS CloudFormation stack configuration, run the following command.<pre>cdk synth</pre> | AWS DevOps, DevOps engineer |
 
@@ -123,22 +123,22 @@ The code example provided is for proof-of-concept (PoC) or pilot purposes only. 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Provision foundation model access. | Enable access to the Anthropic Claude 3 Sonnet model for your AWS account. For instructions, see [Add model access](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html#model-access-add) in the Bedrock documentation. | AWS DevOps |
-| Deploy resources in the account. | To deploy resources in the AWS account by using the AWS CDK, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.html) | AWS DevOps, DevOps engineer |
-| Subscribe to the Amazon SNS topic. | To subscribe to the Amazon SNS topic for notification, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.html) | General AWS |
+| Deploy resources in the account. | To deploy resources in the AWS account by using the AWS CDK, do the following:1. (Optional) In the root of the cloned repository, in the `app.py` file, update the AWS CloudFormation stack name. The default stack name is `genai-knowledge-capture-stack`.<br />2. To deploy resources, run the command `cdk deploy`.<br />The `cdk deploy` command uses layer-3 constructs to create a set of Lambda functions, an S3 bucket, an Amazon SNS topic, and a Step Functions state machine. Audio files in the `assets/audio_samples` folder are copied into the S3 bucket during deployment.<br />3. Sign in to the AWS Management Console, and then open the CloudFormation console at [https://console.aws.amazon.com/cloudformation/]().<br />4. Confirm that the stack deployed successfully. For instructions, see [Reviewing your stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-console-create-stack-review.html). | AWS DevOps, DevOps engineer |
+| Subscribe to the Amazon SNS topic. | To subscribe to the Amazon SNS topic for notification, do the following:1. In the CloudFormation console, in the navigate pane, choose **Stacks**.<br />2. Choose the `genai-knowledge-capture-stack` stack.<br />3. Choose the **Outputs** tab.<br />4. Find the Amazon SNS topic name with the key `SNSTopicName`.<br />5. Configure an email address to receive notifications by following the instructions in [Subscribe an email address to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-email-notifications.html#create-subscribe-endpoint-to-topic-console). | General AWS |
 
 ### Test the solution
 <a name="test-the-solution"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Run the state machine. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.html) | App developer, General AWS |
+| Run the state machine. | 1. Open the [Step Functions console](https://console.aws.amazon.com/states/home).<br />2. On the **State machines** page, choose **genai-knowledge-capture-stack-state-machine**.<br />3. Choose **Start execution**.<br />4. (Optional) In the **Name** box, enter a name for the execution.<br />5. In the **Input** area, enter the following JSON object by replacing the placeholder text, where:`<Name>` is what you want to name the document.`<S3 bucket name>` is the name of the Amazon S3 bucket that contains the audio files.`<Folder path>` is the directory that contains the audio files.<pre>{<br />  "documentName": "<Name>",<br />  "audioFileFolderUri": "s3://<S3 bucket name>/<Folder path>"<br />}</pre><br />6. Choose **Start Execution**.<br />7. On the execution details page, review the results and wait for the execution to complete. | App developer, General AWS |
 
 ### Clean up all AWS resources in the solution
 <a name="clean-up-all-aws-resources-in-the-solution"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Remove the AWS resources. | After you test the solution, clean up the resources:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe.html) | AWS DevOps, DevOps engineer |
+| Remove the AWS resources. | After you test the solution, clean up the resources:1. Delete all objects from the S3 bucket, and then delete the bucket. For more information, see [Deleting a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-bucket.html).<br />2. From the cloned repository, run the command `cdk destroy`. | AWS DevOps, DevOps engineer |
 
 ## Related resources
 <a name="document-institutional-knowledge-from-voice-inputs-by-using-amazon-bedrock-and-amazon-transcribe-resources"></a>

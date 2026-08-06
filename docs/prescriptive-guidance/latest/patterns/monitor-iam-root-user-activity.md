@@ -96,23 +96,23 @@ The *Epics* section provides step-by-step instructions for deploying the templat
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clone the sample code repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-iam-root-user-activity.html) | General AWS |
-| Update the Terraform template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-iam-root-user-activity.html) | General AWS |
-| Deploy the resources to the AWS hub account. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-iam-root-user-activity.html) | General AWS |
+| Clone the sample code repository. | 1. Open the [AWS IAM Root User Activity Monitor](https://github.com/aws-samples/aws-iam-root-user-activity-monitor) repository.<br />2. On the Code tab, above the file list, choose **Code**, and then copy the HTTPS URL.<br />3. In a command-line interface, change your working directory to the location where you want to store the sample files.<br />4. Enter the following command:<pre>git clone <repoURL></pre> | General AWS |
+| Update the Terraform template. | 1. Retrieve your organization ID. For instructions, see [Viewing the details of an organization from the management account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_details.html#orgs_view_org) (AWS Organizations documentation).<br />2. In the cloned repository, open `hub.tf`.<br />3. Update the following with the appropriate values for your environment:`OrganizationId` – Add your organization ID.`SNSTopicName` – Add a name for the Amazon SNS topic.`SNSSubscriptions` – Add the email to which Amazon SNS notifications should be sent.`Region` – Add the AWS Region code where you are deploying the resources. For example, `eu-west-1`.`Tags` – Add your tags. For more information, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) (AWS General Reference).<br />4. Save and close the `hub.tf` file. | General AWS |
+| Deploy the resources to the AWS hub account. | 1. In the Terraform command-line interface, navigate to the root folder of the cloned repository, and then enter the following command.<pre>terraform init && terraform plan</pre><br />2. Review the output and confirm you want to create the resources described.<br />3. Enter the following command.<pre>terraform apply</pre><br />4. When prompted, confirm the deployment by entering `yes`. | General AWS |
 
 ### Deploy resources to your spoke accounts
 <a name="deploy-resources-to-your-spoke-accounts"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the CloudFormation template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-iam-root-user-activity.html)For more information and instructions, see [Create a stack set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-getting-started-create.html) (CloudFormation documentation). | General AWS |
+| Deploy the CloudFormation template. | 1. Sign in to the AWS Management Console, and open the [CloudFormation console](https://console.aws.amazon.com/cloudformation).<br />2. From the navigation pane, choose **StackSets**.<br />3. At the top of the **StackSets** page, choose **Create StackSet**.<br />4. Under **Permissions**, choose **Service-managed permissions**.** **CloudFormation automatically configures the permissions required to deploy to the target accounts managed by AWS Organizations.<br />5. Under **Prerequisite - Prepare template**, choose **Template is ready**.<br />6. Under **Specify Template**, choose **Upload a template file**.<br />7. Choose **Choose file**, and then in the cloned repository, select `spoke-stackset.yaml`.<br />8. Choose **Next**.<br />9. On the **Specify StackSet details** page, enter a name for the stack set.<br />10. Under **Parameters**, enter the account ID of the hub account, and then choose **Next.**<br />11. On the **Configure StackSet options** page, under **Tags**, add your tags.<br />12. Under **Execution configuration**, choose **Inactive**, and then choose ** Next.**<br />13. On the **Set deployment options** page, specify the organizational units and Regions where you want to deploy the stack set, then choose **Next**.<br />14. On the Review page, select **I acknowledge that AWS CloudFormation might create IAM resources**, and then choose **Submit**. CloudFormation starts deploying your stack set.For more information and instructions, see [Create a stack set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-getting-started-create.html) (CloudFormation documentation). | General AWS |
 
 ### (Optional) Test the notifications
 <a name="optional-test-the-notifications"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Use the root user credentials. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/monitor-iam-root-user-activity.html) | General AWS |
+| Use the root user credentials. | 1. Sign into a spoke account or the hub account by using the root user credentials.<br />2. Confirm that the email account you specified receives the Amazon SNS notification. | General AWS |
 
 ## Related resources
 <a name="monitor-iam-root-user-activity-resources"></a>

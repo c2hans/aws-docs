@@ -324,7 +324,7 @@ The following table shows the endpoint settings that you can use with Amazon Doc
 
 | Attribute name | Valid values | Default value and description |
 | --- | --- | --- |
-|  `replicateShardCollections`  | boolean<br />`true`<br />`false` | When `true`, this endpoint setting has the following effects and imposes the following limitations:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.DocumentDB.html) |
+|  `replicateShardCollections`  | boolean<br />`true`<br />`false` | When `true`, this endpoint setting has the following effects and imposes the following limitations:+ AWS DMS is allowed to replicate data to target shard collections. This setting is only applicable if the target DocumentDB endpoint is an Elastic Cluster.<br />+ You must set `TargetTablePrepMode` to `DO_NOTHING`.<br />+ AWS DMS automatically sets `useUpdateLookup` to `false` during migration. |
 
 ## Target data types for Amazon DocumentDB
 <a name="CHAP_Target.DocumentDB.datatypes"></a>

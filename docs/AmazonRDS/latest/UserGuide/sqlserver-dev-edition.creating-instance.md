@@ -15,6 +15,35 @@ Launching Developer Edition instance on RDS for SQL Server follows a two-step pr
 | `--engine-version` | Custom engine version (e.g., `17.00.4045.5.cev-dev-ss2025-cu5`) |
 | `--license-model` | bring-your-own-license |
 
+## Console
+<a name="sqlserver-dev-edition.creating-instance.CON"></a>
+
+To create a SQL Server Developer Edition DB instance using the AWS AWS Management Console:
+
+1. Sign in to the [AWS Management Console](https://console.aws.amazon.com/rds/) and open the Amazon RDS console.
+
+1. In the navigation pane, choose **Databases**, then choose **Create database**.
+
+1. For **Choose a database creation method**, choose **Full configuration**.
+
+1. For **Engine options**, choose **Microsoft SQL Server**.
+
+1. For **Edition**, choose one of the following:
+   + **SQL Server Developer Edition** – Provides Enterprise Edition capabilities. Corresponds to the `sqlserver-dev-ee` engine.
+   + **SQL Server Standard Developer Edition** – Provides Standard Edition capabilities. Corresponds to the `sqlserver-dev-se` engine. Available for SQL Server 2025 only.
+
+1. For **License model**, note that when you choose a Developer Edition, the console automatically selects **License: Not applicable**. You cannot change this value.
+
+1. For **Custom engine version**, choose the CEV that you created (for example, `{{17.00.4045.5.cev-dev-ss2025-cu5}}`).
+**Note**
+Only CEVs in the `available` state appear in the list. If your CEV is not listed, verify its status. For more information, see [Creating a custom engine version for RDS for SQL Server](sqlserver-dev-edition.creating-cev.md).
+
+1. For **DB instance identifier**, enter a unique name for your DB instance.
+
+1. Configure **DB instance class**, **Storage**, **Connectivity**, **Database authentication**, and other settings as needed. For more information, see [Creating a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html#USER_CreateDBInstance.Creating).
+
+1. Choose **Create database**.
+
 ## AWS CLI
 <a name="sqlserver-dev-edition.creating-instance.CLI"></a>
 
@@ -66,5 +95,3 @@ aws rds create-db-instance ^
 
 **Note**
 For Developer Edition (Standard Edition capabilities), use `--engine sqlserver-dev-se` with a `sqlserver-dev-se` CEV version.
-
-Refer to [Creating a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html#USER_CreateDBInstance.Creating) to create using the AWS console.

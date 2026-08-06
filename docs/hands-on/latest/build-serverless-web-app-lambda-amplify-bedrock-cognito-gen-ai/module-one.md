@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app
 |  |  |
 | --- |--- |
 | **Time to complete** | 5 minutes  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai/module-one.html)  |
+| **Requires** |  +  A GitHub account  <br />+  GitHub SSH connection    |
 | **Get help** | [Troubleshooting Amplify](https://docs.amplify.aws/react/build-a-backend/troubleshooting/) <br />[How Amplify works](https://docs.amplify.aws/react/how-amplify-works/) <br />[Learn about Hosting](https://docs.amplify.aws/react/deploy-and-host/hosting/)  |
 
 ## Overview

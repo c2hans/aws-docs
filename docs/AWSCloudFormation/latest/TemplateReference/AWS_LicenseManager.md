@@ -10,3 +10,4 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 **Resource types**
 + [AWS::LicenseManager::Grant](aws-resource-licensemanager-grant.md)
 + [AWS::LicenseManager::License](aws-resource-licensemanager-license.md)
++ [AWS::LicenseManager::LicenseAssetRuleSet](aws-resource-licensemanager-licenseassetruleset.md)

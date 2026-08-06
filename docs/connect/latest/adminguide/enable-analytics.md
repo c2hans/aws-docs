@@ -17,6 +17,9 @@ The following image shows a block that's configured for call recording and speec
 
 The procedures in this topic describe the steps to enable conversational analytics for calls, chats, or emails.
 
+**Note**
+For new flows, the [Set recording, analytics and processing behavior](set-recording-analytics-processing-behavior.md) block replaces the [Set recording and analytics behavior](set-recording-behavior.md) block. The new block reorganizes the analytics options. The following procedures and images describe the earlier block, which remains supported in existing flows. The steps to enable conversational analytics are equivalent in both blocks.
+
 **Topics**
 + [Important things to know](#important-set-behaviorblock)
 + [Enable Contact Lens for your Connect Customer instance](#enable-cl)

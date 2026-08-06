@@ -18,10 +18,10 @@ This release applies Windows December 2018 security updates to the Windows Serve
 | --- | --- |
 | **Windows security updates** | Applied December 2018 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-21-windows.html) |
-| **T3** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-21-windows.html)  |
-| **C5n** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-21-windows.html)  |
-| **R5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-21-windows.html)  |
-| **R5, C5d, M5d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-12-21-windows.html)  |
+| **T3** |  + Asia Pacific (Seoul) – ap-northeast-2<br />+ Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **C5n** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Europe (Ireland) – eu-west-1<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **R5d** |  + Europe (Paris) – eu-west-3<br />+ AWS GovCloud (US-West) – us-gov-west-1  |
+| **R5, C5d, M5d** |  + Europe (Paris) – eu-west-3  |
 
 ## Updated platform configurations
 <a name="release-2018-12-21-windows.platforms"></a>

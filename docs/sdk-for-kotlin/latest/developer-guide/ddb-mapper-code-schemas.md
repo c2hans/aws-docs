@@ -5,94 +5,231 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 # Manually define schemas
 <a name="ddb-mapper-code-schemas"></a>
 
-**Important**
-DynamoDB Mapper is a Developer Preview release. It is not feature complete and is subject to change.
+Instead of generating schemas from annotations, you can define them directly in code. Manual schemas give you full control over how objects map to items and don’t require the schema-generator plugin. They’re useful when you want explicit control over conversion, when you can’t annotate a type (for example, a class from another library), or when you map polymorphic or document-shaped data.
 
-## Define a schema in code
-<a name="ddb-mapper-gs-manual-schema-def"></a>
+A schema has two parts:
++ An **item converter** ([`ItemConverter`](#ddb-mapper-code-schemas-item-converters)) that converts between your object and a DynamoDB item.
++ A **key specification** ([`KeySpec`](#ddb-mapper-code-schemas-keyspec)) that identifies primary key fields.
 
-For maximum control and customizability, you can manually define and customize schemas in code.
-
-As shown in the following snippet, you need to include fewer dependencies in your `build.gradle.kts` file compared to using annotation-driven schema creation.
-
-Replace {{X.Y.Z}} with the version you’re using in your app or with the [latest version available](https://github.com/awslabs/aws-sdk-kotlin/releases/latest).
+You combine them into an [`ItemSchema`](#ddb-mapper-code-schemas-assemble), then pass that schema to `getTable`. This page builds a schema for the `Product` class (a partition-key-only item) as the worked example.
 
 ```
-// build.gradle.kts
-val sdkVersion: String = {{X.Y.Z}}
-
-dependencies {
-    implementation("aws.sdk.kotlin:dynamodb-mapper:$sdkVersion-beta") // For the Developer Preview, use the beta version of the latest SDK.
-}
-```
-
-Note that you don’t need the schema generator plugin nor the annotation package.
-
-The mapping between a Kotlin class and a DynamoDB item requires an `ItemSchema<T>` implementation, where `T` is the type of the Kotlin class. A schema consists of the following elements:
-+ An item converter, which defines how to convert between Kotlin object instances and DynamoDB items.
-+ A partition key specification, which defines the name and type of the partition key attribute.
-+ Optionally, a sort key specification, which defines the name and type of the sort key attribute.
-
-In the following code we manually create a `CarSchema` instance:
-
-```
-import aws.sdk.kotlin.hll.dynamodbmapper.items.ItemConverter
-import aws.sdk.kotlin.hll.dynamodbmapper.items.ItemSchema
-import aws.sdk.kotlin.hll.dynamodbmapper.model.itemOf
-
-// We define a schema for this data class.
-data class Car(val make: String, val model: String, val initialYear: Int)
-
-// First, define an item converter.
-val carConverter = object : ItemConverter<Car> {
-    override fun convertTo(from: Car, onlyAttributes: Set<String>?): Item  = itemOf(
-        "make" to AttributeValue.S(from.make),
-        "model" to AttributeValue.S(from.model),
-        "initialYear" to AttributeValue.N(from.initialYear.toString()),
-    )
-
-    override fun convertFrom(to: Item): Car = Car(
-        make = to["make"]?.asSOrNull() ?: error("Invalid attribute `make`"),
-        model = to["model"]?.asSOrNull() ?: error("Invalid attribute `model`"),
-        initialYear = to["initialYear"]?.asNOrNull()?.toIntOrNull()
-            ?: error("Invalid attribute `initialYear`"),
-    )
-}
-
-// Next, define the specifications for the partition key and sort key.
-val makeKey = KeySpec.String("make")
-val modelKey = KeySpec.String("model")
-
-// Finally, create the schema from the converter and key specifications.
-// Note that the KeySpec for the partition key comes first in the ItemSchema constructor.
-val CarSchema = ItemSchema(carConverter, makeKey, modelKey)
-```
-
-The previous code creates a converter named `carConverter`, which is defined as an anonymous implementation of `ItemConverter<Car>`. The converter’s `convertTo` method accepts a `Car` argument and returns an `Item` instance representing the literal keys and values of DynamoDB item attributes. The converter’s `convertFrom` method accepts an `Item` argument and returns a `Car` instance from the attribute values of the `Item` argument.
-
-Next the code creates two key specifications: one for the partition key and one for the sort key. Every DynamoDB table or index must have exactly one partition key and, correspondingly, so must every DynamoDB Mapper schema definition. Schemas may also have one sort key.
-
-In the last statement, the code creates a schema for the `cars` DynamoDB table from the converter and key specifications.
-
-The resulting schema is equivalent to the annotation-driven schema that we generated in the [Define a schema with class annotations](ddb-mapper-get-started.md#ddb-mapper-gs-anno-schema-def) section. For reference, the following is the annotated class we used:
-
-### Car class with DynamoDB Mapper annotations
-<a name="_car_class_with_dynamodb_mapper_annotations"></a>
-
-```
-@DynamoDbItem
-data class Car(
-    @DynamoDbPartitionKey
-    val make: String,
-
-    @DynamoDbSortKey
-    val model: String,
-
-    val initialYear: Int
+data class Product(
+    val sku: String,
+    val name: String,
+    val category: String,
+    val priceCents: Long,
 )
 ```
 
-In addition to implementing your own `ItemConverter`, DynamoDB Mapper includes several helpful implementations such as:
-+  `SimpleItemConverter`: provides simple conversion logic by using a builder class and attribute descriptors. See the example in the [Define a custom item converter](ddb-mapper-anno-schema-gen.md#ddb-mapper-anno-schema-custom) for how you can make use of this implementation.
-+  `HeterogeneousItemConverter`: provides polymorphic type conversion logic by using a discriminator attribute and delegate `ItemConverter` instances for subtypes.
-+  `DocumentConverter`: provides conversion logic for unstructured data in [Document](/smithy-kotlin/api/latest/runtime-core/aws.smithy.kotlin.runtime.content/-document.html) objects.
+## Item converters
+<a name="ddb-mapper-code-schemas-item-converters"></a>
+
+An `ItemConverter<T>` converts between objects of type `T` and DynamoDB items. It’s a type alias for `Converter<T, Item>` and defines two methods:
++  `convertRight(from: T): Item`: convert your object **to** an item for writes.
++  `convertLeft(from: Item): T`: convert an item **to** your object (for reads).
+
+You may implement `ItemConverter` from scratch or use one of the built-in implementations described in the following sections.
+
+### Build a converter with `SimpleItemConverter`
+<a name="ddb-mapper-code-schemas-simple-converter"></a>
+
+ `SimpleItemConverter` builds an item attribute by attribute. It separates the potentially-immutable **object** type `T` from a mutable **builder** type `B` used when reading items back. You provide:
++  `builderFactory`: a function which creates a fresh builder.
++  `build`: a function which finalizes a builder into a `T`.
++ One `AttributeDescriptor` per attribute, describing its name, how to read it from `T`, how to write it onto the builder, and which [value converter](#ddb-mapper-code-schemas-value-converters) handles its type.
+
+For example, assuming the type `Product` is immutable, define a small builder for it:
+
+```
+class ProductBuilder {
+    var sku: String? = null
+    var name: String? = null
+    var category: String? = null
+    var priceCents: Long? = null
+
+    fun build() = Product(
+        sku = requireNotNull(sku) { "sku is required" },
+        name = requireNotNull(name) { "name is required" },
+        category = requireNotNull(category) { "category is required" },
+        priceCents = requireNotNull(priceCents) { "priceCents is required" },
+    )
+}
+```
+
+Then assemble the converter. Each `AttributeDescriptor` pairs a property with a built-in value converter (`StringValueConverter` for the `String` attributes and `NumberValueConverters.Long` for the `Long` price):
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.items.AttributeDescriptor
+import aws.sdk.kotlin.hll.dynamodbmapper.items.SimpleItemConverter
+import aws.sdk.kotlin.hll.dynamodbmapper.values.scalars.NumberValueConverters
+import aws.sdk.kotlin.hll.dynamodbmapper.values.scalars.StringValueConverter
+
+val productConverter = SimpleItemConverter(
+    builderFactory = ::ProductBuilder,
+    build = ProductBuilder::build,
+    AttributeDescriptor(
+        name = "sku",
+        getter = Product::sku,
+        setter = ProductBuilder::sku::set,
+        converter = StringValueConverter,
+    ),
+    AttributeDescriptor(
+        name = "name",
+        getter = Product::name,
+        setter = ProductBuilder::name::set,
+        converter = StringValueConverter,
+    ),
+    AttributeDescriptor(
+        name = "category",
+        getter = Product::category,
+        setter = ProductBuilder::category::set,
+        converter = StringValueConverter,
+    ),
+    AttributeDescriptor(
+        name = "priceCents",
+        getter = Product::priceCents,
+        setter = ProductBuilder::priceCents::set,
+        converter = NumberValueConverters.Long,
+    ),
+)
+```
+
+By default, attributes present on a stored item but absent from the descriptors are ignored when reading. Pass `unknownValueHandling` to `SimpleItemConverter` to throw or handle them instead.
+
+## Define keys with `KeySpec`
+<a name="ddb-mapper-code-schemas-keyspec"></a>
+
+A `KeySpec` names the key attributes and their types, which DynamoDB Mapper needs in order to build key conditions for `query` and `scan`. Create a single-attribute spec with one of the `KeySpec` companion functions (in alphabetical order: `byte`, `byteArray`, `int`, `long`, `short`, and `string`):
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.items.KeySpec
+
+val skuKey = KeySpec.string("sku")   // KeySpec.Key1<String>
+```
+
+**Important**
+The attribute name you pass must exactly match the key attribute defined on your DynamoDB table or index.
+
+For a composite key, the partition and sort keys are two separate `KeySpec` instances (see [Assemble an `ItemSchema`](#ddb-mapper-code-schemas-assemble)). A single `KeySpec` can also describe up to four attributes by chaining `thenInt`, `thenLong`, `thenString`, and the like. This is used for [multi-attribute index keys](/amazondynamodb/latest/developerguide/GSI.DesignPattern.MultiAttributeKeys.html), not table primary keys.
+
+## Assemble an `ItemSchema`
+<a name="ddb-mapper-code-schemas-assemble"></a>
+
+Combine the converter and key spec into an `ItemSchema`. For a partition-key-only item like `Product`, pass the converter and a single partition key:
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.items.ItemSchema
+
+val productSchema = ItemSchema(
+    converter = productConverter,
+    partitionKey = KeySpec.string("sku"),
+)
+
+val productsTable = mapper.getTable("products", productSchema)
+```
+
+For a composite-key item, supply both keys:
+
+```
+val orderSchema = ItemSchema(
+    converter = orderConverter,
+    partitionKey = KeySpec.string("customerId"),
+    sortKey = KeySpec.string("orderId"),
+)
+```
+
+Equivalently, call `withKeySpec` on a converter:
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.items.withKeySpec
+
+val productSchema = productConverter.withKeySpec(KeySpec.string("sku"))
+```
+
+## Value converters
+<a name="ddb-mapper-code-schemas-value-converters"></a>
+
+A `ValueConverter<V>` converts a single value between your type `V` and a DynamoDB attribute value. Like `ItemConverter`, it defines `convertRight` (`V` → attribute value) and `convertLeft` (attribute value → `V`). The SDK ships value converters for the common types, so you usually reference an existing one rather than write your own. The following table lists representative built-in converters, in alphabetical order:
+
+| Converter | Kotlin type | Package |
+| --- | --- | --- |
+|  `BooleanValueConverter`  |  `Boolean`  |  `…​values.scalars`  |
+|  `ByteArrayValueConverter`  |  `ByteArray`  |  `…​values.scalars`  |
+|  `DocumentValueConverter`  |  `Document`  |  `…​values.smithytypes`  |
+|  `EnumValueConverter`  | enum types |  `…​values.scalars`  |
+|  `InstantValueConverter`  |  `Instant`  |  `…​values.smithytypes`  |
+|  `ListValueConverter`  |  `List`  |  `…​values.collections`  |
+|  `MapValueConverter`  |  `Map`  |  `…​values.collections`  |
+|  `NumberValueConverters.{Int, Long, Short, …​}`  | numeric types |  `…​values.scalars`  |
+|  `StringValueConverter`  |  `String`  |  `…​values.scalars`  |
+|  `UrlValueConverter`  |  `Url`  |  `…​values.smithytypes`  |
+
+The full package prefix is `aws.sdk.kotlin.hll.dynamodbmapper.values`. Set and number-set converters live in `…​values.collections`.
+
+To support a type that has no built-in converter, implement `ValueConverter` yourself. For example, a converter for `kotlin.uuid.Uuid` stored as a DynamoDB string:
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.values.ValueConverter
+import aws.sdk.kotlin.services.dynamodb.model.AttributeValue
+import kotlin.uuid.Uuid
+
+object UuidConverter : ValueConverter<Uuid> {
+    override fun convertRight(from: Uuid): AttributeValue = AttributeValue.S(from.toString())
+    override fun convertLeft(from: AttributeValue): Uuid = Uuid.parse(from.asS())
+}
+```
+
+You can reference a custom value converter from a `SimpleItemConverter` attribute descriptor, or, when generating schemas from annotations, from [`@DynamoDbAttributeConverter`](ddb-mapper-anno-schema-gen.md).
+
+## Other item converters
+<a name="ddb-mapper-code-schemas-other"></a>
+
+Two more built-in `ItemConverter` implementations cover specialized mappings:
+
+### HeterogeneousItemConverter
+<a name="_heterogeneousitemconverter"></a>
+
+ `HeterogeneousItemConverter` maps polymorphic or heterogeneous types by using a string discriminator attribute and delegating to per-subtype converters. You provide: \* `typeMapper`: a function which returns the discriminator value for an object \* `typeAttribute`: the item attribute name which stores the discriminator \* `subConverters`: a map from discriminator values to `ItemConverter`s for each subtype. Each subtype converter is an ordinary `ItemConverter` such as a `SimpleItemConverter` built as shown [earlier in this topic](#ddb-mapper-code-schemas-simple-converter)).
+
+For example:
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.items.HeterogeneousItemConverter
+
+sealed interface PaymentMethod {
+    data class CreditCard(val customerId: String, val methodId: String, val last4: String) : PaymentMethod
+    data class BankAccount(val customerId: String, val methodId: String, val routing: String) : PaymentMethod
+    data class GiftCard(val customerId: String, val methodId: String, val balanceCents: Long) : PaymentMethod
+}
+
+fun paymentType(p: PaymentMethod): String = when (p) {
+    is PaymentMethod.CreditCard -> "credit_card"
+    is PaymentMethod.BankAccount -> "bank_account"
+    is PaymentMethod.GiftCard -> "gift_card"
+}
+
+val paymentConverter = HeterogeneousItemConverter(
+    typeMapper = ::paymentType,
+    typeAttribute = "type",
+    subConverters = mapOf(
+        "bank_account" to bankAccountConverter,
+        "credit_card" to creditCardConverter,
+        "gift_card" to giftCardConverter,
+    ),
+)
+```
+
+Each object is stored using only the attributes relevant to its subtype, plus the discriminator.
+
+### DocumentItemConverter
+<a name="_documentitemconverter"></a>
+
+ `DocumentItemConverter` maps a smithy-kotlin `Document.Map` to and from an item, which is handy for schemaless or dynamically shaped data. Use `DocumentItemConverter.Default` for the standard configuration.
+
+## Related topics
+<a name="ddb-mapper-code-schemas-related"></a>
++  [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md): let the plugin generate schemas for you.
++  [DynamoDB Mapper annotations reference](ddb-mapper-anno-index.md): the annotations (such as `@DynamoDbItem` and `@DynamoDbAttributeConverter`) that the schema generator reads.
++  [Operations overview](ddb-mapper-operations.md): use the table you obtained from your schema.
++  [Use secondary indexes with DynamoDB Mapper](ddb-mapper-secondary-indexes.md): multi-attribute index keys with `KeySpec`.

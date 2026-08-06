@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[AmpConfiguration](#cfn-aps-scraper-destination-ampconfiguration)" : {{AmpConfiguration}}
+  "[AmpConfiguration](#cfn-aps-scraper-destination-ampconfiguration)" : {{AmpConfiguration}},
+  "[CloudWatchConfiguration](#cfn-aps-scraper-destination-cloudwatchconfiguration)" : {{CloudWatchConfiguration}}
 }
 ```
 
@@ -29,6 +30,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AmpConfiguration](#cfn-aps-scraper-destination-ampconfiguration): {{
     AmpConfiguration}}
+  [CloudWatchConfiguration](#cfn-aps-scraper-destination-cloudwatchconfiguration): {{
+    CloudWatchConfiguration}}
 ```
 
 ## Properties
@@ -38,4 +41,10 @@ To declare this entity in your CloudFormation template, use the following syntax
 The Amazon Managed Service for Prometheus workspace to send metrics to.
 *Required*: No
 *Type*: [AmpConfiguration](aws-properties-aps-scraper-ampconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`CloudWatchConfiguration`  <a name="cfn-aps-scraper-destination-cloudwatchconfiguration"></a>
+Property description not available.
+*Required*: No
+*Type*: [CloudWatchConfiguration](aws-properties-aps-scraper-cloudwatchconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)

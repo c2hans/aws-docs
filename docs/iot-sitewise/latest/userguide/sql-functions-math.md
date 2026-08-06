@@ -12,13 +12,13 @@ source_url: https://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functi
 |  **Function**  |  **Signature**  |  **Description**  |
 | --- | --- | --- |
 | `POWER` | POWER (int\|double, int\|double) | Returns the value of first argument raised to the power of the second argument. |
-| `ROUND` |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-math.html)  | Rounds to the nearest integer. |
+| `ROUND` |  +  ROUND (int\|double, decimal\_places\_int) <br />+  ROUND (int\|double)   | Rounds to the nearest integer. |
 | `FLOOR` |  FLOOR (int\|double)  | Returns the largest integer not greater than the value given. |
 
 Examples of all functions:
 
 |  **Function**  |  **Example**  |
 | --- | --- |
-| POWER |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/sql-functions-math.html)  |
+| POWER |  +  `POWER (3, 77)` <br />+  `POWER (2.3, 3.9)` <br />+  `POWER (1.0, 4.2)`   |
 | ROUND |  `ROUND (32.12435, 3)`  |
 | FLOOR |  `FLOOR (21.2)`  |

@@ -26,7 +26,7 @@ As shown in the preceding diagram, identity is the unique identification of an e
 
 |  |  |
 | --- |--- |
-| **Services covered** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/identity-on-aws-how-to-choose/identity-on-aws-how-to-choose.html)  |
+| **Services covered** |  +  [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.htm) <br />+  [AWS IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) <br />+  [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) <br />+  [AWS Directory Service](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/what_is.html) <br />+  [IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html) <br />+  [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html) <br />+  [Amazon Verified Permissions](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/what-is-avp.html)   |
 
  Though there are similarities between some identity services, these services address different scenarios. This decision guide helps you get started and choose the right AWS identity service for your use case.
 

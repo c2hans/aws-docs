@@ -25,15 +25,15 @@ You can use dashboards to customize the presentation of your data in the followi
 | **3. Sharing a dashboard** | Use this option to share the current dashboard by link or snapshot. You can also export the dashboard definition from the share modal. |
 | **4. Adding a new panel** | Use this option to add a panel, dashboard row, or library panel to the current dashboard. |
 | **5. Dashboard settings** | Use this option to change dashboard name, folder, and tags and manage variables and annotation queries. For more information about dashboard settings, see [Modifying dashboard settings](v9-dash-modify-settings.md). |
-| **6. Time picker dropdown** | Click to select relative time range options and set custom absolute time ranges.[See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v9-dash-using-dashboards.html) |
+| **6. Time picker dropdown** | Click to select relative time range options and set custom absolute time ranges.+  You can change the **Timezone** and **fiscal year** settings from the time range controls by clicking the **Change time settings** button. <br />+  Time settings are saved on a per-dashboard basis.  |
 | **7. Zooming out time range** | Click to zoom out the time range. For more information about how to use time range controls, see [Setting dashboard time range](#v9-dash-setting-dashboard-time-range). |
 | **8. Refreshing dashboard** | Click to immediately trigger queries and refresh dashboard data. |
 | **9. Refreshing dashboard time interval** | Click to select a dashboard auto refresh time interval. |
 | **10. View mode** | Click to display the dashboard on a large screen such as a TV or a kiosk. View mode hides irrelevant information such as navigation menus. |
-| **11. Dashboard panel** | The primary building block of a dashboard is the panel. To add a new panel, dashboard row, or library panel, click **Add panel**.[See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v9-dash-using-dashboards.html) |
+| **11. Dashboard panel** | The primary building block of a dashboard is the panel. To add a new panel, dashboard row, or library panel, click **Add panel**.+  Library panels can be shared among many dashboards. <br />+  To move a panel, drag the panel header to another location. <br />+  To resize a panel, click and drag the lower right corner of the panel.  |
 | **12. Graph legend** | Change series colors, y-axis, and series visibility directly from the legend. |
 | **13. Dashboard search** | Click **Search** to search for dashboards by name or panel title. |
-| **14. Dashboard row** | A dashboard row is a logical divider within a dashboard that groups panels together.[See the AWS documentation website for more details](http://docs.aws.amazon.com/grafana/latest/userguide/v9-dash-using-dashboards.html) |
+| **14. Dashboard row** | A dashboard row is a logical divider within a dashboard that groups panels together.+  Rows can be collapsed or expanded allowing you to hide parts of the dashboard. <br />+  Panels inside a collapsed row do not issue queries.  <br />+  Use repeating rows to create rows dynamically based on a template variable.  |
 
 ## Keyboard shortcuts
 <a name="v9-dash-keyboard-shortcuts"></a>

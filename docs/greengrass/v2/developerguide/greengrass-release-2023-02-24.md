@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.9.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.4"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-02-24.html) |
+| Greengrass nucleus | Version 2.9.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.4"></a>**Bug fixes and improvements**<br />   Checks for a null message before it drops QOS 0 messages.   Truncates job status detail values if they exceed the 1024 character limit.   Updates the bootstrap script for Windows to correctly read the Greengrass root path if that path includes spaces.   Updates subscribing to AWS IoT Core so that it drops client messages if the subscription response wasn't sent.   Ensures that the nucleus loads its configuration from backup files when the main configuration file is corrupt or missing.     |

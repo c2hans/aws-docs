@@ -25,17 +25,17 @@ The `AWS/EC2`namespace includes the following metrics for monitoring NAU.
 
 | Metric | Description |
 | --- | --- |
-|  NetworkAddressUsage  | The NAU count per VPC.<br />**Reporting criteria**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html)<br />**Dimensions**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html) |
-|  NetworkAddressUsagePeered  | The NAU count for the VPC and all VPCs that it's peered with.**Reporting criteria**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html)<br />**Dimensions**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html) |
+|  NetworkAddressUsage  | The NAU count per VPC.<br />**Reporting criteria**+  Every 24 hours. <br />**Dimensions**+  Name: `Per-VPC Metrics`, Value: The VPC ID.  |
+|  NetworkAddressUsagePeered  | The NAU count for the VPC and all VPCs that it's peered with.**Reporting criteria**+  Every 24 hours. <br />**Dimensions**+  Name: `Per-VPC Metrics`, Value: The VPC ID.  |
 
 The `AWS/Usage`namespace includes the following metrics for monitoring NAU.
 
 | Metric | Description |
 | --- | --- |
-|  ResourceCount  | The NAU count per VPC.<br />**Reporting criteria**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html)<br />**Dimensions**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html) |
-|  ResourceCount  | The NAU count for the VPC and all VPCs that it's peered with.<br />**Reporting criteria**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html)<br />**Dimensions**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html) |
-|  ResourceCount  | A combined view of NAU usage across VPCs.<br />**Reporting criteria**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html)<br />**Dimensions**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html) |
-|  ResourceCount  | A combined view of NAU usage across peered VPCs.<br />**Reporting criteria**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html)<br />**Dimensions**[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpc/latest/userguide/vpc-cloudwatch.html) |
+|  ResourceCount  | The NAU count per VPC.<br />**Reporting criteria**+  Every 24 hours. <br />**Dimensions**+ Name: `Service`, Value: `EC2`<br />+ Name: `Type`, Value: `Resource`<br />+ Name: `Resource`, Value: The VPC ID.<br />+ Name: `Class`, Value: `NetworkAddressUsage` |
+|  ResourceCount  | The NAU count for the VPC and all VPCs that it's peered with.<br />**Reporting criteria**+  Every 24 hours. <br />**Dimensions**+ Name: `Service`, Value: `EC2`<br />+ Name: `Type`, Value: `Resource`<br />+ Name: `Resource`, Value: The VPC ID.<br />+ Name: `Class`, Value: `NetworkAddressUsagePeered` |
+|  ResourceCount  | A combined view of NAU usage across VPCs.<br />**Reporting criteria**+  Every 24 hours. <br />**Dimensions**+ Name: `Service`, Value: `EC2`<br />+ Name: `Type`, Value: `Resource`<br />+ Name: `Resource`, Value: `VPC`<br />+ Name: `Class`, Value: `NetworkAddressUsage` |
+|  ResourceCount  | A combined view of NAU usage across peered VPCs.<br />**Reporting criteria**+  Every 24 hours. <br />**Dimensions**+ Name: `Service`, Value: `EC2`<br />+ Name: `Type`, Value: `Resource`<br />+ Name: `Resource`, Value: `VPC`<br />+ Name: `Class`, Value: `NetworkAddressUsagePeered` |
 
 ## Enable or disable NAU monitoring
 <a name="nau-monitoring-enable"></a>

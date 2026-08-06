@@ -542,7 +542,7 @@ The following table describes the changes in each version of the component.
 | 2.1.3 | Version updated for Greengrass nucleus version 2.8.0 release. |
 | 2.1.2 | Version updated for Greengrass nucleus version 2.7.0 release. |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.6.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/sns-component.html)  |
+| 2.1.0 |  **New features**<br />   Adds support for HTTPS network proxy configurations. For more information, see [Connect on port 443 or through a network proxy](configure-greengrass-core-v2.md#configure-alpn-network-proxy) and [Enable the core device to trust an HTTPS proxy](configure-greengrass-core-v2.md#https-proxy-certificate-trust).     |
 | 2.0.8 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 2.0.7 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.6 | Version updated for Greengrass nucleus version 2.3.0 release. |

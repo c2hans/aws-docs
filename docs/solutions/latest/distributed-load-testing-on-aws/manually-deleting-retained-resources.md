@@ -87,7 +87,7 @@ If you deployed regional stacks, repeat this process in each Region where a regi
 ## Deleting the CloudWatch dashboards
 <a name="deleting-the-cloudwatch-dashboards"></a>
 
-This solution creates a CloudWatch dashboard each time a load test runs. These dashboards follow the naming pattern `EcsLoadTesting-<testId>-<region>`. They are cleaned up when you delete a test through the DLT console, but will remain if the stack is deleted without first deleting all tests.
+This solution creates a CloudWatch dashboard for each test scenario in each Region where the test runs. These dashboards follow the naming pattern `EcsLoadTesting-<testId>-<region>` and incur a monthly charge for as long as they exist. They are cleaned up when you delete a test through the DLT console, but will remain if the stack is deleted without first deleting all tests.
 
 After uninstalling the solution, you can manually delete these dashboards if they were not already cleaned up. Follow these steps to delete the CloudWatch dashboards.
 

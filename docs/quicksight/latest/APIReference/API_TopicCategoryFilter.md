@@ -35,6 +35,12 @@ A Boolean value that indicates if the filter is inverse.
 Type: Boolean
 Required: No
 
+ ** NullFilter **   <a name="QS-Type-TopicCategoryFilter-NullFilter"></a>
+The `null` filter that is applied to the category filter.
+Type: String
+Valid Values: `ALL_VALUES | NON_NULLS_ONLY | NULLS_ONLY`
+Required: No
+
 ## See Also
 <a name="API_TopicCategoryFilter_SeeAlso"></a>
 

@@ -13,20 +13,20 @@ Accessing Bedrock foundation models in AWS GovCloud (US) requires initiating the
 **AWS CLI:** Run `aws bedrock list-foundation-models` to get the model ID, then `aws bedrock list-foundation-model-agreement-offers --model-id <model-id>` to get the offer token, and finally `aws bedrock create-foundation-model-agreement --model-id <model-id> --offer-token <offerToken>`.
 After completing either method, go to your GovCloud account and enable the model via the Model Access page. It may take a few minutes for entitlements to propagate. For the full walkthrough, see [Process to enabling Bedrock models in GovCloud](https://repost.aws/articles/ARUT8Sy76NTUmRN7kuiU0UXQ).
 + **In-Region:** Your requests never leave the AWS Region you specify. Use this when regulations require strict single-Region data processing.
-+ **Geographic (Geo):** Bedrock intelligently routes within a defined geography (US, EU, Japan, or Australia) to maximize throughput while keeping data within regional boundaries. Use this when you have data residency requirements tied to a geography rather than a single Region.
-+ **Global:** Bedrock routes across all commercial Regions worldwide for the highest throughput and lowest cost. Use this when you have no data residency constraints and want the best performance and price.
++ **Geographic (Geo):** Bedrock routes your request to a Region within a defined geography (US, EU, Japan, or Australia), keeping data within that geography. Use this when you have data residency requirements tied to a geography rather than a single Region.
++ **Global:** Bedrock routes your request to a supported commercial Region worldwide. For some models, global cross-Region inference is priced lower per token than geographic cross-Region inference. Use this when you have no data residency constraints.
 
 ## Inference options at a glance
 <a name="inference-options-glance"></a>
 
 |  | **In-Region** | **Geographic (Geo) Cross-Region** | **Global Cross-Region** |
 | --- | --- | --- | --- |
-| How it works | Request is processed entirely within the single AWS Region you specify | Bedrock automatically routes to the optimal Region within a defined geography (US, EU, APAC, JP, AU) | Bedrock routes to any commercial Region worldwide for optimal performance |
+| How it works | Request is processed entirely within the single AWS Region you specify | Bedrock routes the request to a Region within a defined geography (US, EU, APAC, JP, AU) | Bedrock routes the request to any supported commercial Region worldwide |
 | Data residency | Strictly within one Region | Within geographic boundaries (e.g., all EU Regions); prompts and outputs may move within the geography but not outside it | No geographic restrictions; data may be processed in any commercial Region |
-| Throughput | Limited to single-Region capacity; subject to per-Region service quotas | Higher than In-Region; absorbs regional traffic spikes within the geography | Highest throughput; uses global capacity |
-| Pricing | Standard on-demand pricing for that Region | Priced at source Region rates; no surcharge for cross-Region routing | Priced at source Region rates; no surcharge for cross-Region routing |
+| Request routing | Processed in the Region you specify; subject to per-Region service quotas | Routed to a Region within the geography | Routed to a supported commercial Region worldwide |
+| Pricing | Standard on-demand pricing for that Region | Priced at source Region rates; no surcharge for cross-Region routing | Priced at source Region rates; no surcharge for cross-Region routing. For some models, the per-token price is lower than geographic cross-Region inference |
 | modelId format | Direct model ID: anthropic.claude-3-5-sonnet-20241022-v2:0 | Geography prefix \+ model ID: us.anthropic.claude-3-5-sonnet-20241022-v2:0 | Global prefix \+ model ID: global.anthropic.claude-3-5-sonnet-20241022-v2:0 |
-| Best for | Strict single-Region compliance; Provisioned Throughput workloads | Data residency regulations scoped to a geography (e.g., GDPR in EU, data sovereignty requirements) | Maximum throughput and cost efficiency with no data residency constraints |
+| Best for | Strict single-Region compliance; Provisioned Throughput workloads | Data residency regulations scoped to a geography (e.g., GDPR in EU, data sovereignty requirements) | Cost efficiency with no data residency constraints |
 
 Now, let us look at Regional availability across all the models supported by Amazon Bedrock.
 
@@ -344,6 +344,8 @@ Now, let us look at Regional availability across all the models supported by Ama
 | af-south-1 (Cape Town) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | sa-east-1 (São Paulo) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
 | mx-central-1 (Mexico) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) |
+| us-gov-west-1 (GovCloud West) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| us-gov-east-1 (GovCloud East) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 **[Claude Mythos 5](model-card-anthropic-claude-mythos-5.md)**
 
@@ -742,8 +744,6 @@ Now, let us look at Regional availability across all the models supported by Ama
 | us-east-1 (N. Virginia) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-east-2 (Ohio) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-west-2 (Oregon) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| us-gov-east-1 (GovCloud) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| us-gov-west-1 (GovCloud) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | eu-central-1 (Frankfurt) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | eu-north-1 (Stockholm) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | eu-west-1 (Ireland) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
@@ -774,8 +774,6 @@ Now, let us look at Regional availability across all the models supported by Ama
 | us-east-1 (N. Virginia) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-east-2 (Ohio) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-west-2 (Oregon) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| us-gov-east-1 (GovCloud) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
-| us-gov-west-1 (GovCloud) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | eu-central-1 (Frankfurt) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | eu-central-2 (Zurich) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | eu-west-1 (Ireland) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |

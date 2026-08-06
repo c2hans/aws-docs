@@ -15,6 +15,8 @@ If you have a DB instance in a Single-AZ deployment and modify it to a Multi-AZ 
 
 1. Turns on synchronous block-level replication between the volumes of the primary and standby replicas.
 
+During the conversion, the DB instance status transitions from **available** to **modifying**, and returns to **available** while the new standby's volumes continue to hydrate in the background. To monitor volume initialization on the new standby, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+
 **Important**
 Creating a standby DB instance from a snapshot during a Single-AZ to Multi-AZ conversion avoids downtime but might impact performance, particularly for write-sensitive workloads. The synchronous replication can increase I/O latency, affecting database performance. As a best practice, avoid converting a production DB instance to a Multi-AZ DB instance.
 Instead, create a read replica, enable backups on it, convert it to Multi-AZ, load data into its volumes, and then promote it to the primary DB instance. For more information, see [Working with DB instance read replicas](USER_ReadRepl.md).

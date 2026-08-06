@@ -13,6 +13,20 @@ Represents other entities related to the AWS opportunity, such as AWS products, 
 **Note**
 In the following list, the required parameters are described first.
 
+ ** AwsMarketplaceProducts **   <a name="AWSPartnerCentral-Type-AwsOpportunityRelatedEntities-AwsMarketplaceProducts"></a>
+The AWS Marketplace product ARNs associated with this opportunity.
+Type: Array of strings
+Length Constraints: Minimum length of 4. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: No
+
+ ** AwsMarketplaceSolutions **   <a name="AWSPartnerCentral-Type-AwsOpportunityRelatedEntities-AwsMarketplaceSolutions"></a>
+The AWS Marketplace solution ARNs associated with this opportunity.
+Type: Array of strings
+Length Constraints: Minimum length of 4. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: No
+
  ** AwsProducts **   <a name="AWSPartnerCentral-Type-AwsOpportunityRelatedEntities-AwsProducts"></a>
 Specifies the AWS products associated with the opportunity. This field helps track the specific products that are part of the proposed solution.
 Type: Array of strings

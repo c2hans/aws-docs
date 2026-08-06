@@ -28,8 +28,7 @@ If you plan to delete a cache and it's important to preserve the data, you can t
 
 Consider the following constraints when planning or making backups:
 + Backup and restore are supported only for caches running on Valkey, Redis OSS or Serverless Memcached.
-+ For Valkey or Redis OSS (cluster mode disabled) clusters, backup and restore aren't supported on `cache.t1.micro` nodes. All other cache node types are supported.
-+ For Valkey or Redis OSS (cluster mode enabled) clusters, backup and restore are supported for all node types.
++ For Valkey or Redis OSS (cluster mode disabled) and Valkey or Redis OSS (cluster mode enabled) clusters, backup and restore are supported for all node types.
 + During any contiguous 24-hour period, you can create no more than 24 manual backups per serverless cache. For Valkey and Redis OSS node-based clusters, you can create no more than 20 manual backups per node in the cluster.
 + Valkey or Redis OSS (cluster mode enabled) only supports taking backups on the cluster level (for the API or CLI, the replication group level). Valkey or Redis OSS (cluster mode enabled) doesn't support taking backups at the shard level (for the API or CLI, the node group level).
 + During the backup process, you can't run any other API or CLI operations on serverless cache. You can run API or CLI operations on a node-based cluster during backup.

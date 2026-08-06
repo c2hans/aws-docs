@@ -110,7 +110,7 @@ The number of plans that were not faster than the best approved plan.
 | sql\_hash | The sql\_hash ID of the plan's managed SQL statement. |
 | plan\_hash | The managed plan's plan\_hash ID. Use NULL to mean all plans that have the same sql\_hash ID value. |
 | min\_speedup\_factor | The *minimum speedup factor* can be the number of times faster that a plan must be than the best of the already approved plans to approve it. Alternatively, this factor can be the number of times slower that a plan must be to reject or disable it.<br />This is a positive float value. |
-| action | The action the function is to perform. Valid values include the following. Case does not matter. [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Optimize.Functions.html) |
+| action | The action the function is to perform. Valid values include the following. Case does not matter. +  `'disable'` – Disable each matching plan that does not meet the minimum speedup factor. <br />+  `'approve'` – Enable each matching plan that meets the minimum speedup factor and set its status to `approved`. <br />+  `'reject'` – For each matching plan that does not meet the minimum speedup factor, set its status to `rejected`. <br />+  NULL – The function simply returns the number of plans that have no performance benefit because they do not meet the minimum speedup factor.  |
 
 ** Usage notes**
 
@@ -239,7 +239,7 @@ Returns 0 if the setting was successful or -1 if the setting failed.
 | --- | --- |
 | sql\_hash | The sql\_hash ID of the plan's managed SQL statement. |
 | plan\_hash | The managed plan's plan\_hash ID. |
-| enabled | Boolean value of true or false:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Optimize.Functions.html) |
+| enabled | Boolean value of true or false:+  A value of `true` enables the plan. <br />+  A value of `false` disables the plan.  |
 
 ## apg\_plan\_mgmt.set\_plan\_status
 <a name="AuroraPostgreSQL.Optimize.Functions.set_plan_status"></a>
@@ -268,7 +268,7 @@ Returns 0 if the setting was successful or -1 if the setting failed.
 | --- | --- |
 | sql\_hash | The sql\_hash ID of the plan's managed SQL statement. |
 | plan\_hash | The managed plan's plan\_hash ID. |
-| status | A string with one of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Optimize.Functions.html)<br />The case you use does not matter, however the status value is set to initial uppercase in the `apg_plan_mgmt.dba_plans` view. For more information about these values, see `status` in [Reference for the apg\_plan\_mgmt.dba\_plans view for Aurora PostgreSQL-Compatible Edition](AuroraPostgreSQL.Optimize.dba_plans_view_Reference.md).  |
+| status | A string with one of the following values:+  `'Approved'` <br />+  `'Unapproved'` <br />+  `'Rejected'` <br />+  `'Preferred'` <br />The case you use does not matter, however the status value is set to initial uppercase in the `apg_plan_mgmt.dba_plans` view. For more information about these values, see `status` in [Reference for the apg\_plan\_mgmt.dba\_plans view for Aurora PostgreSQL-Compatible Edition](AuroraPostgreSQL.Optimize.dba_plans_view_Reference.md).  |
 
 ## apg\_plan\_mgmt.update\_plans\_last\_used
 <a name="AuroraPostgreSQL.Optimize.Functions.update_plans_last_used"></a>
@@ -326,7 +326,7 @@ The number of invalid plans.
 | --- | --- |
 | sql\_hash | The sql\_hash ID of the plan's managed SQL statement. |
 | plan\_hash | The managed plan's plan\_hash ID. Use NULL to mean all plans for the same sql\_hash ID value. |
-| action | The action the function is to perform for invalid plans. Valid string values include the following. Case does not matter.[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Optimize.Functions.html)<br />Any other value is treated like the empty string. |
+| action | The action the function is to perform for invalid plans. Valid string values include the following. Case does not matter.+  `'disable'` – Each invalid plan is disabled. <br />+  `'delete'` – Each invalid plan is deleted. <br />+  `'update_plan_hash'` – Updates the `plan_hash` ID for plans that can't be reproduced exactly. It also allows you to fix a plan by rewriting the SQL. You can then register the good plan as an `Approved` plan for the original SQL. <br />+  NULL – The function simply returns the number of invalid plans. No other action is performed. <br />+  '' – An empty string produces a message indicating the number of both valid and invalid plans. <br />Any other value is treated like the empty string. |
 
 **Usage notes**
 

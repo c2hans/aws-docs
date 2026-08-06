@@ -12,6 +12,7 @@ Retrieves a list of Partner Solutions that the partner registered on Partner Cen
 
 ```
 {
+   "AwsMarketplaceSolutionArn": [ "{{string}}" ],
    "Catalog": "{{string}}",
    "Category": [ "{{string}}" ],
    "Identifier": [ "{{string}}" ],
@@ -40,6 +41,14 @@ Specifies the catalog associated with the request. This field takes a string val
 Type: String
 Pattern: `[a-zA-Z]+`
 Required: Yes
+
+ ** [AwsMarketplaceSolutionArn](#API_ListSolutions_RequestSyntax) **   <a name="AWSPartnerCentral-ListSolutions-request-AwsMarketplaceSolutionArn"></a>
+Filters results by AWS Marketplace solution ARN. You can provide up to 10 ARNs.
+Type: Array of strings
+Array Members: Minimum number of 0 items. Maximum number of 10 items.
+Length Constraints: Minimum length of 4. Maximum length of 2048.
+Pattern: `arn:.*`
+Required: No
 
  ** [Category](#API_ListSolutions_RequestSyntax) **   <a name="AWSPartnerCentral-ListSolutions-request-Category"></a>
 Filters the solutions based on the category to which they belong. This allows partners to search for solutions within specific categories, such as `Software`, `Consulting`, or `Managed Services`.
@@ -87,6 +96,7 @@ Required: No
    "SolutionSummaries": [
       {
          "Arn": "string",
+         "AwsMarketplaceSolutionArn": "string",
          "Catalog": "string",
          "Category": "string",
          "CreatedDate": "string",

@@ -57,7 +57,7 @@ The following are optional constructor arguments for the `Crawler` class.
 | --- | --- | --- |
 | DependsOn | dict | List of workflow entities that the crawler depends on. For more information, see [Using the DependsOn argument](developing-blueprints-code-layout.md#developing-blueprints-code-layout-depends-on). |
 | WaitForDependencies | str | Indicates whether the crawler should wait until all entities on which it depends complete before running or until any completes. For more information, see [Using the WaitForDependencies argument](developing-blueprints-code-layout.md#developing-blueprints-code-layout-wait-for-dependencies). Omit if the crawler depends on only one entity. |
-| (Crawler properties) | - | Any of the crawler properties listed in [Crawler structure](aws-glue-api-crawler-crawling.md#aws-glue-api-crawler-crawling-Crawler) in the AWS Glue API documentation, with the following exceptions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/glue/latest/dg/developing-blueprints-code-classes.html) |
+| (Crawler properties) | - | Any of the crawler properties listed in [Crawler structure](aws-glue-api-crawler-crawling.md#aws-glue-api-crawler-crawling-Crawler) in the AWS Glue API documentation, with the following exceptions:+  `State` <br />+  `CrawlElapsedTime` <br />+  `CreationTime` <br />+  `LastUpdated` <br />+  `LastCrawl` <br />+  `Version`  |
 
 ## Workflow class
 <a name="developing-blueprints-code-workflowclass"></a>

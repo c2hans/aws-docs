@@ -66,9 +66,9 @@ For request rate limiting purposes, API actions are grouped into the following c
 | API action category | Actions | Bucket maximum capacity | Bucket refill rate |
 | --- | --- | --- | --- |
 | Non-mutating actions | The `Describe*`, `List*`, `Search*`, and `Get*` API actions that are not included in another category. | 100 | 20 |
-| Unfiltered and unpaginated non-mutating actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-throttling.html)  | 50 | 10 |
+| Unfiltered and unpaginated non-mutating actions |  +  `DescribeInstances` <br />+  `DescribeInstanceStatus` <br />+  `DescribeNetworkInterfaces` <br />+  `DescribeSecurityGroups` <br />+  `DescribeSnapshots` <br />+  `DescribeSpotInstanceRequests` <br />+  `DescribeVolumes`   | 50 | 10 |
 | Mutating actions | All mutating API actions that are not *Resource-intensive actions* or *Uncategorized actions*. | 50 | 5 |
-| Resource-intensive actions |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ec2/latest/devguide/ec2-api-throttling.html)  | 50 | 5 |
+| Resource-intensive actions |  +  `AcceptVpcPeeringConnection` <br />+  `AuthorizeSecurityGroupIngress` <br />+  `CancelSpotInstanceRequests` <br />+  `CreateKeyPair` <br />+  `CreateVpcPeeringConnection` <br />+  `DeleteVpcPeeringConnection` <br />+  `RejectVpcPeeringConnection` <br />+  `RevokeSecurityGroupIngress` <br />+  `RequestSpotInstances`   | 50 | 5 |
 | Console non-mutating actions | The `Describe*`, `List*`, `Search*`, and `Get*` API actions, that are called by the Amazon EC2 console, but not included in another category. | 100 | 10 | <a name="uncategorized"></a>
 
 | Uncategorized actions | Bucket maximum capacity | Bucket refill rate |

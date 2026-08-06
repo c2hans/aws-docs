@@ -322,6 +322,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   ListVirtualInterfaceRoutes  **
+  - **IAM action:**  [directconnect:ListVirtualInterfaceRoutes](#list_directconnect-action-ListVirtualInterfaceRoutes)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
+
 - **   ListVirtualInterfaceTestHistory  **
   - **IAM action:**  [directconnect:ListVirtualInterfaceTestHistory](#list_directconnect-action-ListVirtualInterfaceTestHistory)
   - **Condition key:**

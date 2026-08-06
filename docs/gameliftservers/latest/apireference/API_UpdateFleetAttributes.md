@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # UpdateFleetAttributes
 <a name="API_UpdateFleetAttributes"></a>
 
- **This API works with the following fleet types:** EC2, Anywhere, Container
+ **This API works with the following fleet types:** EC2, Anywhere
 
 Updates a fleet's mutable attributes, such as game session protection and resource creation limits.
 

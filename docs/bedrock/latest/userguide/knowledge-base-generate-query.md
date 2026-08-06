@@ -34,7 +34,7 @@ Structured data retrieval uses cross-Region inference to select the optimal AWS 
 
   Cross-inference requests are kept within the AWS Regions that are part of the geography where the data originally resides. Your data remains stored within the source Region but the input prompts and output results might move outside of this Region. All data will be transmitted encrypted across Amazon’s secure network.
 
-  For more information, see [Increase throughput with cross-Region inference](cross-region-inference.md).
+  For more information, see [Route model inference requests across AWS Regions with cross-Region inference](cross-region-inference.md).
 +
 
 **Accuracy of generated SQL queries**

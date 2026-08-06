@@ -37,10 +37,10 @@ The following table provides suggestions and examples for an observability requi
 |
 | What needs to be observed | Link to observability tool | What is being observed |
 | --- |--- |--- |
-| Source of input | Grafana K6 dashboard | Running container countRequests per second |
-| Overall application health | Pet adoption CloudWatch dashboardPet adoption user experience dashboard (RUM) | Amazon EKS healthy node countAmazon EKS node CPU utilization |
+| Source of input | Grafana K6 dashboard | + Running container count+ Requests per second |
+| Overall application health | + Pet adoption CloudWatch dashboard<br />+ Pet adoption user experience dashboard (RUM) | + Amazon EKS healthy node count+ Amazon EKS node CPU utilization |
 | Workflow health | Pet adoption CloudWatch dashboard | LCP time, golden metrics |
-| Traces | Pet adoption X-Ray dashboard | Request latencyRequest countFailure count |
+| Traces | Pet adoption X-Ray dashboard | + Request latency+ Request count+ Failure count |
 | Logs | Pet adoption CloudWatch Logs | Any errors encountered by the pods will be issued to CloudWatch Logs. |
 
 ## Experiment definition
@@ -56,7 +56,7 @@ The following table provides suggestions and examples for an observability requi
 | Experiment duration | 10 minutes |
 | Environment | Alpha test environment |
 | Experiment target resources | PetSite application pods |
-| Experiment baseline that is introduced through the load generating tool | 54% of requests have an LCP of <2.5 seconds.46% of requests have an LCP of <4 seconds.No errors are observed. |
+| Experiment baseline that is introduced through the load generating tool | + 54% of requests have an LCP of <2.5 seconds.<br />+ 46% of requests have an LCP of <4 seconds.<br />+ No errors are observed. |
 | Backoff condition | None |
 
 ## Hypothesis
@@ -66,7 +66,7 @@ The following table provides suggestions and examples for an observability requi
 |
 | What if | Impact | Recovery |
 | --- |--- |--- |
-| What would happen to steady state if the PetSite application pods experienced or caused more than 60% CPU utilization for 10 minutes under normal production-level traffic?<br />** ** | LCP times will remain under 2.5 seconds for P50 of users with P99 of 4.0 seconds or less. The consumer should be able to load the PetSite landing page. | Detection:CPU stress will be detected by alarms that are configured in CloudWatch.LCP metrics will also generate alarms for the degradation of user experience.<br />Self-healing:The distributed nature of the microservice architecture means that many instances of pods are running across multiple Availability Zones. The EKS cluster control plane will shift traffic away from the affected pods, and will launch new pods on worker nodes.<br />Recovery:  <br />When CPU utilization returns to normal, the LCP should recover automatically. |
+| What would happen to steady state if the PetSite application pods experienced or caused more than 60% CPU utilization for 10 minutes under normal production-level traffic?<br />** ** | LCP times will remain under 2.5 seconds for P50 of users with P99 of 4.0 seconds or less. The consumer should be able to load the PetSite landing page. | Detection:+ CPU stress will be detected by alarms that are configured in CloudWatch.+ LCP metrics will also generate alarms for the degradation of user experience.<br />Self-healing:+ The distributed nature of the microservice architecture means that many instances of pods are running across multiple Availability Zones. + The EKS cluster control plane will shift traffic away from the affected pods, and will launch new pods on worker nodes.<br />Recovery:  <br />When CPU utilization returns to normal, the LCP should recover automatically. |
 
 ## Experiment process
 <a name="experiment-process"></a>

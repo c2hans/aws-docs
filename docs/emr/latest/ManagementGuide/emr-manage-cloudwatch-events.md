@@ -41,7 +41,7 @@ The events with event code `EC2 provisioning - Insufficient Instance Capacity` p
 
 | State or state change | Severity | Event type | Event code | Message |
 | --- | --- | --- | --- | --- |
-| TERMINATED  | The severity depends on the reason for the state change, as shown in the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-cloudwatch-events.html) | EMR cluster state change | *none* | Amazon EMR Cluster `ClusterId (ClusterName)` has terminated at `Time` with a reason of `StateChangeReason:Code`. |
+| TERMINATED  | The severity depends on the reason for the state change, as shown in the following:+  **`CRITICAL`** if the cluster terminated with any of the following state change reasons: `INTERNAL_ERROR`, `VALIDATION_ERROR`, `INSTANCE_FAILURE`, `BOOTSTRAP_FAILURE`, or `STEP_FAILURE`. <br />+  **`INFO`** if the cluster terminated with any of the following state change reasons: `USER_REQUEST` or `ALL_STEPS_COMPLETED`.  | EMR cluster state change | *none* | Amazon EMR Cluster `ClusterId (ClusterName)` has terminated at `Time` with a reason of `StateChangeReason:Code`. |
 | TERMINATED\_WITH\_ERRORS  | CRITICAL  | EMR cluster state change | *none* | Amazon EMR Cluster `ClusterId (ClusterName)` has terminated with errors at `Time` with a reason of `StateChangeReason:Code`. |
 | TERMINATED\_WITH\_ERRORS  | CRITICAL  | EMR cluster state change | *none* | Amazon EMR Cluster `ClusterId (ClusterName)` has terminated with errors at `Time` with a reason of `StateChangeReason:Code`. |
 

@@ -14,6 +14,15 @@ Creates a scheduled query that runs CloudWatch Logs Insights queries at regular 
 {
    "description": "{{string}}",
    "destinationConfiguration": {
+      "lookupTableConfiguration": {
+         "description": "{{string}}",
+         "kmsKeyId": "{{string}}",
+         "roleArn": "{{string}}",
+         "tableName": "{{string}}",
+         "tags": {
+            "{{string}}" : "{{string}}"
+         }
+      },
       "s3Configuration": {
          "destinationIdentifier": "{{string}}",
          "kmsKeyId": "{{string}}",
@@ -53,7 +62,7 @@ Length Constraints: Maximum length of 1024.
 Required: No
 
  ** [destinationConfiguration](#API_CreateScheduledQuery_RequestSyntax) **   <a name="CWL-CreateScheduledQuery-request-destinationConfiguration"></a>
-Configuration for where to deliver query results. Currently supports Amazon S3 destinations for storing query output.
+Configuration for where to deliver query results. Supports Amazon S3 destinations for storing query output and lookup table destinations for automatically refreshing lookup tables with query results. You can configure one or both destination types.
 Type: [DestinationConfiguration](API_DestinationConfiguration.md) object
 Required: No
 

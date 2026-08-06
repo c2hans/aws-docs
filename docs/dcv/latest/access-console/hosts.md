@@ -57,7 +57,7 @@ For more information about the requirements and details of the Amazon DCV server
 | Property | Description |
 | --- | --- |
 | ID | The unique ID of the Amazon DCV server (`Servers.Id` in the `DescribeServers` API). |
-| Availability | The availability of the Amazon DCV server (`Servers.Availability` in the `DescribeServers` API). Possible values include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/hosts.html) |
+| Availability | The availability of the Amazon DCV server (`Servers.Availability` in the `DescribeServers` API). Possible values include:+  AVAILABLE — The server is available and ready for session placement. <br />+  UNAVAILABLE — The server is unavailable and can't accept session placement.  |
 | Version | The version of the Amazon DCV server (`Servers.Version` in the `DescribeServers` API). |
 | Session Manager agent version | The version Session Manager agent running on the Amazon DCV server (`Servers.SessionManagerAgentVersion` in the `DescribeServers` API). |
 | Console session count | The number of console sessions on the Amazon DCV server (`Servers.ConsoleSessionCount` in the `DescribeServers` API). |
@@ -97,7 +97,7 @@ For more information about the requirements and details of the Amazon DCV server
 | Property | Description |
 | --- | --- |
 | IP | The IP address of the Amazon DCV server endpoint (`Servers.Endpoints.IpAddress` in the `DescribeServers` API). |
-| Protocol | The protocol used by the Amazon DCV server endpoint (`Servers.Endpoints.Protocol` in the `DescribeServers` API). Possible values include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dcv/latest/access-console/hosts.html) |
+| Protocol | The protocol used by the Amazon DCV server endpoint (`Servers.Endpoints.Protocol` in the `DescribeServers` API). Possible values include:+  HTTP — The endpoint uses the WebSocket (TCP) protocol. <br />+  QUIC — The endpoint uses the QUIC (UDP) protocol.  |
 | Port | The port of the Amazon DCV server endpoint (`Servers.Endpoints.Port` in the `DescribeServers` API). |
 | Web URL path | The web URL path of the Amazon DCV server endpoint. Available for the HTTP protocol only (`Servers.Endpoints.WebUrlPath` in the `DescribeServers` API). |
 | Tags | The tags assigned to the host server that the Amazon DCV server is running on (`Host.Tags` in the `DescribeServers` API). |

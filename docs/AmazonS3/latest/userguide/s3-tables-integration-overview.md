@@ -30,7 +30,7 @@ The following illustration shows how the `s3tablescatalog` catalog automatically
 
 ![The ways that table resources are represented in AWS Glue Data Catalog.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/S3Tables-glue-catalog.png)
 
-After integrating with Data Catalog, you can create Apache Iceberg tables in table buckets and access them via AWS analytics engines such as Amazon Athena, Amazon EMR, as well as third-party analytics engines.
+After integrating with Data Catalog, you can create Apache Iceberg tables in table buckets and access them through AWS analytics engines such as Amazon Athena, Amazon EMR, as well as third-party analytics engines.
 
 **How permissions work**
 We recommend integrating your table buckets with AWS analytics services so that you can work with your table data across services that use the AWS Glue Data Catalog as a metadata store. Once the integration is enabled, you can use AWS Identity and Access Management (IAM) permissions to grant access to S3 Tables resources and their associated Data Catalog objects.

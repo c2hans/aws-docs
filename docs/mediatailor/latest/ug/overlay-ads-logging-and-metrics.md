@@ -32,7 +32,7 @@ The following table describes CloudWatch metrics for overlay ads:
 | --- | --- |
 | AdDecisionServer.OverlayAds | The count of overlay ads included in the ADS responses within the CloudWatch time period that you specified. |
 | AdDecisionServer.OverlayErrors | The number of non-HTTP `200` status code responses, empty responses, and timed-out responses that MediaTailor received from the ADS within the CloudWatch time period that you specified. |
-| AdDecisionServer.OverlayFilled | The number of avails that were successfully filled with at least one overlay ad:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/overlay-ads-logging-and-metrics.html)<br />`SampleCount` tracks the number of avails filled.<br />`Sum` tracks the number of successfully filled overlay avails. |
+| AdDecisionServer.OverlayFilled | The number of avails that were successfully filled with at least one overlay ad:+  1 - There's at least one valid ad. <br />+  0 - Either MediaTailor didn't get any overlay ads, or there was some other failure. <br />`SampleCount` tracks the number of avails filled.<br />`Sum` tracks the number of successfully filled overlay avails. |
 | AdDecisionServer.OverlayMinSuggestedDuration | The sum of `minSuggestedDuration` durations, in milliseconds, of all ads that MediaTailor received from the ADS within the CloudWatch time period that you specified. If `minSuggestedDuration` isn't specified, the duration shown is the planned duration. |
 | AdDecisionServer.OverlayLatency | The response time, in milliseconds, for requests that MediaTailor makes to the ADS. |
 | AdDecisionServer.OverlayTimeouts | The number of timed-out requests to the ADS in the CloudWatch time period that you specified. |

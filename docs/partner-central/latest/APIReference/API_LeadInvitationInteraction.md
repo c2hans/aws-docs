@@ -22,25 +22,25 @@ Required: Yes
  ** SourceId **   <a name="AWSPartnerCentral-Type-LeadInvitationInteraction-SourceId"></a>
 The unique identifier of the specific source that generated the lead interaction. This provides traceability to the original lead generation activity for reference and follow-up purposes.
 Type: String
-Pattern: `(?s).{1,255}`
-Required: Yes
+Pattern: `(?s).{0,255}`
+Required: No
 
  ** SourceName **   <a name="AWSPartnerCentral-Type-LeadInvitationInteraction-SourceName"></a>
 The descriptive name of the source that generated the lead interaction. This human-readable identifier helps partners understand the specific lead generation channel or campaign that created the opportunity.
 Type: String
-Pattern: `(?s).{1,255}`
-Required: Yes
+Pattern: `(?s).{0,255}`
+Required: No
 
  ** SourceType **   <a name="AWSPartnerCentral-Type-LeadInvitationInteraction-SourceType"></a>
 Specifies the type of source that generated the lead interaction, such as "Event", "Website", or "Campaign". This helps partners understand the lead generation channel and assess lead quality based on the source type.
 Type: String
-Pattern: `(?s).{1,255}`
-Required: Yes
+Pattern: `(?s).{0,255}`
+Required: No
 
  ** Usecase **   <a name="AWSPartnerCentral-Type-LeadInvitationInteraction-Usecase"></a>
 Describes the specific use case or business scenario associated with the lead interaction. This information helps partners understand the customer's interests and potential solution requirements.
 Type: String
-Pattern: `(?s).{1,255}`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
 ## See Also

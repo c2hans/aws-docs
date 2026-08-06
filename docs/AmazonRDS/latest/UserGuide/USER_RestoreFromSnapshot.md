@@ -13,6 +13,8 @@ You can use the restored DB instance as soon as its status is `available`. The D
 
 To help mitigate the effects of lazy loading on tables to which you require quick access, you can perform operations that involve full-table scans, such as `SELECT *`. This allows Amazon RDS to download all of the backed-up table data from S3.
 
+To monitor initialization progress on the restored DB instance, use the `StorageOperationStatus` and `StorageOperationPercentProgress` fields in the [DescribeDBInstances](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html) response. During initialization, `StorageOperationStatus` is set to `Initializing`, and both fields are absent when initialization is complete. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
+
 **Important**
 Starting July 1, 2026, you can no longer restore a snapshot to magnetic storage. When you restore a snapshot of a magnetic volume, you must choose a different storage type, such as General Purpose SSD (gp3) or Provisioned IOPS SSD (io2 Block Express). For more information about Amazon RDS storage types, see [Amazon RDS DB instance storage](CHAP_Storage.md).
 

@@ -21,7 +21,7 @@ You can create up to 10 triggers for each CodeDeploy deployment group, for any o
   <tr><th>Deployment events</th><th>Instance events</th></tr>
 </thead>
 <tbody>
-  <tr><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications.html) </td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications.html) </td></tr>
+  <tr><td> +  Success <br />+  Failure <br />+  Started <br />+  Stopped <br />+  Rollback <br />+  Ready¹ <br />+  All deployment events  </td><td> +  Success <br />+  Failure <br />+  Started <br />+  Ready¹ <br />+  All instance events  </td></tr>
   <tr><td colspan="2">¹Applies to blue/green deployments only. Indicates that the latest application revision has been installed on instances in a replacement environment and traffic from the original environment can now be rerouted behind a load balancer. For more information see [Working with deployments in CodeDeploy](deployments.md).</td></tr>
 </tbody>
 </table>

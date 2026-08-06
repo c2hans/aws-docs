@@ -122,7 +122,27 @@ Required: Yes
          "TimeToLiveDescription": {
             "AttributeName": "string",
             "TimeToLiveStatus": "string"
-         }
+         },
+         "VectorIndexes": [
+            {
+               "Dimensions": number,
+               "DistanceFunction": "string",
+               "IndexName": "string",
+               "Projection": {
+                  "NonKeyAttributes": [ "string" ],
+                  "ProjectionType": "string"
+               },
+               "SearchSchema": [
+                  {
+                     "AttributeName": "string",
+                     "SearchSchemaElementType": "string"
+                  }
+               ],
+               "VectorAttribute": {
+                  "AttributeName": "string"
+               }
+            }
+         ]
       }
    }
 }

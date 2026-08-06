@@ -13,8 +13,8 @@ Use the following table to choose an authentication mode for EMR Studio.
 
 | If you are... | We recommend... |
 | --- | --- |
-| Already familiar with or have previously set up IAM authentication or federation | [IAM authentication mode](#emr-studio-iam-authentication), which offers the following benefits:[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-authentication.html) |
-| New to AWS or Amazon EMR | [IAM Identity Center authentication mode](#emr-studio-enable-sso), which provides the following features:[See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-authentication.html) |
+| Already familiar with or have previously set up IAM authentication or federation | [IAM authentication mode](#emr-studio-iam-authentication), which offers the following benefits:+  Provides quick setup for EMR Studio if you already manage identities such as users and groups in IAM. <br />+  Works with identity providers that are compatible with OpenID Connect (OIDC) or Security Assertion Markup Language 2.0 (SAML 2.0). <br />+  Supports using multiple identity providers with the same AWS account. <br />+  Available in a wide number of AWS Regions. <br />+  Compliant with SOC 2.  |
+| New to AWS or Amazon EMR | [IAM Identity Center authentication mode](#emr-studio-enable-sso), which provides the following features:+  Supports easy user and group assignment to AWS resources. <br />+  Works with Microsoft Active Directory and SAML 2.0 identity providers. <br />+  Facilitates multi-account federation setup so that you don't have to separately configure federation for each AWS account in your organization.  |
 
 ## Set up IAM authentication mode for Amazon EMR Studio
 <a name="emr-studio-iam-authentication"></a>

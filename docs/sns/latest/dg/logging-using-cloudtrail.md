@@ -38,8 +38,8 @@ The following table lists the SNS resource types for which you can log data even
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail |
 | --- | --- | --- |
-| SNS topic |  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/sns/latest/dg/logging-using-cloudtrail.html) |
-| SNS platform endpoint |  AWS::SNS::PlatformEndpoint  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sns/latest/dg/logging-using-cloudtrail.html)  |
+| SNS topic |  [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sns-topic.html)  | +  [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) <br />+  [https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html](https://docs.aws.amazon.com/sns/latest/api/API_PublishBatch.html)  |
+| SNS platform endpoint |  AWS::SNS::PlatformEndpoint  |  +  [https://docs.aws.amazon.com/sns/latest/api/API_Publish.html](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) <br />For additional details, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedEventSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedEventSelector.html) in the AWS CloudTrail API Reference.   |
 
 **Note**
 SNS resource type `AWS::SNS::PhoneNumber` is not logged by CloudTrail.

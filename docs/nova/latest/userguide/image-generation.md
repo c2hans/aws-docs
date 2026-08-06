@@ -26,7 +26,7 @@ Amazon Nova Canvas supports the following features:
 | Output Modalities | Image |
 | Max Prompt Length | 1024 characters |
 | Max Output Resolution (generation tasks) | 4.19 million pixels (that is, 2048x2048, 2816x1536) |
-| Max Output Resolution (editing tasks) | Must meet all of the following:  4096 pixels on its longest side   Aspect ratio between 1:4 and 4:1   Total pixel count of 4.19 million or smaller   |
+| Max Output Resolution (editing tasks) | Must meet all of the following:+  4096 pixels on its longest side <br />+  Aspect ratio between 1:4 and 4:1 <br />+  Total pixel count of 4.19 million or smaller  |
 | Supporting Input Image Types | PNG, JPEG |
 | Supported Languages | English |
 | Regions | US East (N. Virginia), Europe (Ireland), and Asia Pacific (Tokyo) |

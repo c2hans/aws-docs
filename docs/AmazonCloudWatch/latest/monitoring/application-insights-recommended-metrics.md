@@ -29,7 +29,7 @@ The following table lists the recommended metrics for each component type.
 
 - **EC2 instance group**
   - **Workload type:** SAP HANA multi-node or single node
-  - **Recommended metric:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html)
+  - **Recommended metric:**  +  hanadb\_server\_startup\_time\_variations\_seconds  <br />+  hanadb\_level\_5\_alerts\_count  <br />+  hanadb\_level\_4\_alerts\_count  <br />+  hanadb\_out\_of\_memory\_events\_count <br />+  hanadb\_max\_trigger\_read\_ratio\_percent <br />+  hanadb\_max\_trigger\_write\_ratio\_percent  <br />+  hanadb\_log\_switch\_race\_ratio\_percent <br />+  hanadb\_time\_since\_last\_savepoint\_seconds <br />+  hanadb\_disk\_usage\_highlevel\_percent <br />+  hanadb\_current\_allocation\_limit\_used\_percent <br />+  hanadb\_table\_allocation\_limit\_used\_percent <br />+  hanadb\_cpu\_usage\_percent <br />+  hanadb\_plan\_cache\_hit\_ratio\_percent <br />+  hanadb\_last\_data\_backup\_age\_days
 
 - **EBS volume**
   - **Workload type:** Any
@@ -69,11 +69,11 @@ The following table lists the recommended metrics for each component type.
 
 - **AWS Step Functions**
   - **Workload type:** Any
-  - **Recommended metric:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html) [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html)
+  - **Recommended metric:**  +  ExecutionThrottled <br />+  ExecutionsAborted <br />+  ProvisionedBucketSize <br />+  ProvisionedRefillRate <br />+  ConsumedCapacity  +  ExecutionsFailed <br />+  ExecutionsTimedOut  +  LambdaFunctionsFailed <br />+  LambdaFunctionsTimedOut  +  ActivitiesFailed <br />+  ActivitiesTimedOut <br />+  ActivitiesHeartbeatTimedOut  +  ServiceIntegrationsFailed <br />+  ServiceIntegrationsTimedOut
 
 - **API Gateway REST API stage**
   - **Workload type:** Any
-  - **Recommended metric:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/application-insights-recommended-metrics.html)
+  - **Recommended metric:**  +  4XXErrors <br />+  5XXErrors <br />+  Latency
 
 - ** ECS Cluster **
   - **Workload type:**  Any / **Recommended metric:** CpuUtilized<br />MemoryUtilized<br />NetworkRxBytes<br />NetworkTxBytes<br />RunningTaskCount<br />PendingTaskCount<br />StorageReadBytes<br />StorageWriteBytes<br />CPUReservation (EC2 Launch Type only)<br />CPUUtilization (EC2 Launch Type only)<br />MemoryReservation (EC2 Launch Type only)<br />MemoryUtilization (EC2 Launch Type only)<br />GPUReservation (EC2 Launch Type only)<br />instance\_cpu\_utilization (EC2 Launch Type only)<br />instance\_filesystem\_utilization (EC2 Launch Type only)<br />instance\_memory\_utilization (EC2 Launch Type only)<br />instance\_network\_total\_bytes (EC2 Launch Type only)

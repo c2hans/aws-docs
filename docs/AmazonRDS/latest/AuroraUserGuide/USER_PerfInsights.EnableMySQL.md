@@ -33,9 +33,9 @@ Performance Insights and the Performance Schema are separate features, but they 
 
 | Performance Schema turned on | Performance Insights management mode | Performance Insights behavior |
 | --- | --- | --- |
-| Yes | Automatic |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.EnableMySQL.html)  |
-| Yes | Manual |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.EnableMySQL.html)  |
-| No | N/A |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PerfInsights.EnableMySQL.html)  |
+| Yes | Automatic |  +  Collects detailed, low-level monitoring information  <br />+  Collects active session metrics every second <br />+  Displays DB load categorized by detailed wait events, which you can use to identify bottlenecks   |
+| Yes | Manual |  +  Collects wait events and per-SQL metrics <br />+  Collects active session metrics every second <br />+  Reports user states such as inserting and sending, which don't help you identify bottlenecks   |
+| No | N/A |  +  Doesn't collect wait events, per-SQL metrics, or other detailed, low-level monitoring information <br />+  Collects active session metrics every five seconds instead of every second <br />+  Reports user states such as inserting and sending, which don't help you identify bottlenecks   |
 
 ## Automatic management of the Performance Schema by Performance Insights
 <a name="USER_PerfInsights.EnableMySQL.options"></a>

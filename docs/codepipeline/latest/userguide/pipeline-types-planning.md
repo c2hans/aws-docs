@@ -13,7 +13,7 @@ The following is a summary of the use cases and characteristics available for ea
 
 |  | V1 type | V2 type | Characteristics |  |  |
 | --- | --- | --- | --- | --- | --- |
-| Use cases |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types-planning.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types-planning.html)  |
+| Use cases |  +  Standard deployments   |  +  Deployments with configuration from passing pipeline-level variables at runtime <br />+  Deployments where pipelines are configured to start on Git tags   |
 | [Action-level variables](https://docs.aws.amazon.com/codepipeline/latest/userguide/reference-variables.html) | Supported | Supported |
 | [PARALLEL execution mode](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html#concepts-how-it-works-executions-parallel) | Not supported | Supported |
 | [Pipeline-level variables](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-pipeline-variables.html) | Not supported | Supported |

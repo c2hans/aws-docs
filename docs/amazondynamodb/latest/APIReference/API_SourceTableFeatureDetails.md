@@ -38,6 +38,11 @@ Time to Live settings on the table when the backup was created.
 Type: [TimeToLiveDescription](API_TimeToLiveDescription.md) object
 Required: No
 
+ ** VectorIndexes **   <a name="DDB-Type-SourceTableFeatureDetails-VectorIndexes"></a>
+The vector index properties for the table at the time the backup was created, including the index name, vector attribute, dimensions, distance function, search schema, and projection.
+Type: Array of [VectorIndexInfo](API_VectorIndexInfo.md) objects
+Required: No
+
 ## See Also
 <a name="API_SourceTableFeatureDetails_SeeAlso"></a>
 

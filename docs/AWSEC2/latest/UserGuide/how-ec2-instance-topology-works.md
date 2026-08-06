@@ -167,6 +167,6 @@ The following table compares the key differences between the DescribeInstanceTop
 | Primary purpose | Optimize workloads on running instances | Capacity planning and Capacity Reservation management (merge, split, assign) before instance launch |
 | Number of network nodes | Shows all nodes for a running instance. If the instance is in a Capacity Reservation, the first nodes will match the corresponding Capacity Reservation topology, followed by additional nodes to connect to the instance. | Shows a partial set of nodes, which vary based on the Capacity Reservation state (`pending` or `active`) and type.\* |
 | State | Instances must be in `running` state | Capacity Reservations must be in `pending` or `active` state |
-| Use cases |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-ec2-instance-topology-works.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-ec2-instance-topology-works.html)  |
+| Use cases |  +  Workload optimization <br />+  Performance tuning <br />+  Runtime topology analysis   |  +  Capacity planning <br />+  Capacity Reservation management (merge/split/assign) <br />+  Pre-launch topology assessment   |
 
 \* For Capacity Blocks for Ultraservers, the network node set is the same when describing the topology for an `active` Capacity Reservation or its running instance.

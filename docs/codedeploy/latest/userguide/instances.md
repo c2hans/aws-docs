@@ -19,7 +19,7 @@ The following table compares Amazon EC2 instances and on-premises instances:
 | Requires you to install and run a version of the CodeDeploy agent that's compatible with the operating system running on the instance. | Yes | Yes |
 | Requires the instance to be able to connect to CodeDeploy. | Yes | Yes |
 | Requires an IAM instance profile to be attached to the instance. The IAM instance profile must have permissions to participate in CodeDeploy deployments. For information, see [Step 4: Create an IAM instance profile for your Amazon EC2 instances](getting-started-create-iam-instance-profile.md). | Yes | No |
-| Requires you to do one of the following to authenticate and register instances:[See the AWS documentation website for more details](http://docs.aws.amazon.com/codedeploy/latest/userguide/instances.html) | No | Yes |
+| Requires you to do one of the following to authenticate and register instances:+  Create an IAM role that can be assumed by an IAM user on each instance to retrieve periodically refreshed temporary credentials generated through AWS Security Token Service. <br />+  Create an IAM user for each instance and store the IAM user's account credentials in plain text on the instance.  | No | Yes |
 | Requires you to register each instance with CodeDeploy before you can deploy to it. | No | Yes |
 | Requires you to tag each instance before CodeDeploy can deploy to it. | Yes | Yes |
 | Can participate in Amazon EC2 Auto Scaling and Elastic Load Balancing scenarios as part of CodeDeploy deployments. | Yes | No |

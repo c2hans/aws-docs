@@ -24,7 +24,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | --- | --- |
 | **Security updates** | Applied security updates to the Docker and ECS-based platform branches based on Amazon Linux 2023 and Amazon Linux 2. The security updates address [CVE-2024-21626](https://aws.amazon.com/security/security-bulletins/AWS-2024-001/).  |
 | **Platform-specific updates** | Made these platform-specific updates:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-01-31-al-docker-ecs-cve.html) |
-| **Docker** | **AL2023 Docker platform branch**[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2024-01-31-al-docker-ecs-cve.html) |
+| **Docker** | **AL2023 Docker platform branch**+  Updated Docker Compose to version [2.24.3](https://docs.docker.com/compose/release-notes/#2243).  |
 
 ## New platform versions
 <a name="release-2024-01-31-al-docker-ecs-cve.platforms"></a>

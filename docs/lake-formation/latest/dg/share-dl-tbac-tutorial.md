@@ -31,9 +31,9 @@ This tutorial is intended for data stewards, data engineers, and data analysts. 
 
 | Role | Description |
 | --- | --- |
-| DataLakeAdminProducer | The data lake admin IAM user has the following access: [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/share-dl-tbac-tutorial.html) |
-| DataLakeAdminConsumer | The data lake admin IAM user has the following access: [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/share-dl-tbac-tutorial.html) |
-| DataAnalyst | The DataAnalyst user has the following access: [See the AWS documentation website for more details](http://docs.aws.amazon.com/lake-formation/latest/dg/share-dl-tbac-tutorial.html) |
+| DataLakeAdminProducer | The data lake admin IAM user has the following access: +  Full read, write, and update access to all resources in the Data Catalog <br />+  Ability to grant permissions to resources <br />+  Can create resource links for the shared table <br />+  Can attach LF-Tags to resources, which provides access to principals based on any policies created by data stewards   |
+| DataLakeAdminConsumer | The data lake admin IAM user has the following access: + Full read, write, and update access to all resources in the Data Catalog<br />+ Ability to grant permissions to resources<br />+ Can create resource links for the shared table<br />+ Can attach LF-Tags to resources, which provides access to principals based on any policies created by data stewards |
+| DataAnalyst | The DataAnalyst user has the following access: +  Fine-grained access to resources shared by Lake Formation tag-based access policies or using named resources method   |
 
 ## Configure Lake Formation Data Catalog settings in the producer account
 <a name="tut-share-tbac-LF-settings"></a>

@@ -17,7 +17,7 @@ This guide helps you optimize the costs of running SAP on AWS and highlights the
 
 |
 |
-| Important The AWS services mentioned in this guide might make recommendations to optimize your costs. However, these recommendations might not be compatible with operating SAP workloads. Before acting, confirm that the recommendations are compatible with operating SAP on AWS:[SAP Applications on AWS: Supported DB/OS and AWS EC2 products – 1656099](https://launchpad.support.sap.com/#/notes/1656099) (SAP note)[SAP on AWS: Support prerequisites - 1656250](https://launchpad.support.sap.com/#/notes/1656250) (SAP note) |
+| Important The AWS services mentioned in this guide might make recommendations to optimize your costs. However, these recommendations might not be compatible with operating SAP workloads. Before acting, confirm that the recommendations are compatible with operating SAP on AWS:+ [SAP Applications on AWS: Supported DB/OS and AWS EC2 products – 1656099](https://launchpad.support.sap.com/#/notes/1656099) (SAP note)<br />+ [SAP on AWS: Support prerequisites - 1656250](https://launchpad.support.sap.com/#/notes/1656250) (SAP note) |
 | --- |
 
 ## Intended audience

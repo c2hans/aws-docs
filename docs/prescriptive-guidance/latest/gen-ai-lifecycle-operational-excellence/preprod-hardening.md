@@ -69,12 +69,12 @@ The following table shows the core layers and components of a testing and evalua
 |
 | **Layer** | **Test** | **Recommended practices** |
 | --- |--- |--- |
-| Foundational | Unit testing | Use mock and stub dependenciesAim for high coverage on the logicTest for edge casesIntegrate with the CI/CD pipeline |
-| Foundational | Integration testing | Validate integration with the platformValidate the data flowValidate integration with external APIs |
-| Foundational | End-to-end testing | Focus on the workflowUse realistic dataAutomate the full flow from user interaction with the frontend to the entire backend systemTest variable response times from external APIsTest asynchronicity from external APIs |
-| Quality assessment | Offline evaluation | Often uses LLM-as-a-judge approachIntegrate with the CI/CD pipeline |
-| Quality assessment | Online evaluation | Use A/B testingUse canary releases |
-| Quality assessment | Human-in-the-loop evaluation | Collect explicit feedbackCollect implicit feedbackClose the loop |
+| Foundational | Unit testing | + Use mock and stub dependencies+ Aim for high coverage on the logic+ Test for edge cases+ Integrate with the CI/CD pipeline |
+| Foundational | Integration testing | + Validate integration with the platform+ Validate the data flow+ Validate integration with external APIs |
+| Foundational | End-to-end testing | + Focus on the workflow+ Use realistic data+ Automate the full flow from user interaction with the frontend to the entire backend system+ Test variable response times from external APIs+ Test asynchronicity from external APIs |
+| Quality assessment | Offline evaluation | + Often uses LLM-as-a-judge approach+ Integrate with the CI/CD pipeline |
+| Quality assessment | Online evaluation | + Use A/B testing+ Use canary releases |
+| Quality assessment | Human-in-the-loop evaluation | + Collect explicit feedback+ Collect implicit feedback+ Close the loop |
 
 ### Unit testing
 <a name="unit-testing.4dbcce31-e606-50d3-a400-b8f0b7b32c5c"></a>

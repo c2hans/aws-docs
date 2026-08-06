@@ -98,7 +98,7 @@ The multi-Region disaster recovery targets defined in the policy.
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Name`  <a name="cfn-resiliencehubv2-policy-name"></a>
-Property description not available.
+The name of the policy.
 *Required*: Yes
 *Type*: String
 *Pattern*: `^[A-Za-z0-9][A-Za-z0-9_\-]{1,59}$`

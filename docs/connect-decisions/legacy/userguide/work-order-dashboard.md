@@ -70,7 +70,7 @@ The **Orders** page, displays the following from your ERP or source system:
   - **Column:** Calculated by Order Planning and Tracking
 
 - **Site Delivery Forecast**
-  - **Description:** Displays one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/work-order-dashboard.html)
+  - **Description:** Displays one of the following:+ **At risk** – Displayed when the material with the latest arrival date has a process that is either delayed or is in a blocked milestone. This item can still make the required date and is displayed in Yellow.<br />+ **Delivered** – Displayed after the last milestone of the last process is initiated indicating the completion of the process.<br />+ **Early** – Displayed in green when all the order lines are early and includes the count of days of the earliest line.<br />+ **Late** – Displayed when the order is running late due to the underlying order material with the latest delivery date estimated to arrive late. This item is displayed in Red.<br />+ **On-time** – Displayed when the materials under the order is reaching the site within the required on-site date. This item is displayed in Green.<br />+ **Watch** – Displayed when the material with the latest date is either blocked or late in a current supply chain process.
 
 ## Viewing order materials
 <a name="materials"></a>

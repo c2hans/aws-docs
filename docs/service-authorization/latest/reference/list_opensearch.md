@@ -319,6 +319,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetMigration  **
+  - **IAM action:**  [es:GetMigration](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetMigration.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetPackageVersionHistory  **
   - **IAM action:**  [es:GetPackageVersionHistory](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_GetPackageVersionHistory.html)
   - **Condition key:**
@@ -394,6 +400,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 - **   ListInstanceTypeDetails  **
   - **IAM action:**  [es:ListElasticsearchInstanceTypeDetails](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListInstanceTypeDetails.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
   - **IAM action:**  [es:ListInstanceTypeDetails](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListInstanceTypeDetails.html)  / **Condition key:**  / **Possible value(s):**  / **Access level:** List
+
+- **   ListMigrations  **
+  - **IAM action:**  [es:ListMigrations](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListMigrations.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** List
 
 - **   ListPackagesForDomain  **
   - **IAM action:**  [es:ListPackagesForDomain](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_ListPackagesForDomain.html)
@@ -473,6 +485,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   StartDomainMaintenance  **
   - **IAM action:**  [es:StartDomainMaintenance](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_StartDomainMaintenance.html)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
+- **   StartMigration  **
+  - **IAM action:**  [es:StartMigration](https://docs.aws.amazon.com/opensearch-service/latest/APIReference/API_StartMigration.html)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write

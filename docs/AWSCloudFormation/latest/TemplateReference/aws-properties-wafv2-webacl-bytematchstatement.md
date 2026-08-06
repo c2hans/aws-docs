@@ -21,6 +21,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[FieldToMatch](#cfn-wafv2-webacl-bytematchstatement-fieldtomatch)" : {{FieldToMatch}},
   "[PositionalConstraint](#cfn-wafv2-webacl-bytematchstatement-positionalconstraint)" : {{String}},
+  "[PreParseTextTransformations](#cfn-wafv2-webacl-bytematchstatement-preparsetexttransformations)" : {{[ PreParseTextTransformation, ... ]}},
   "[SearchString](#cfn-wafv2-webacl-bytematchstatement-searchstring)" : {{String}},
   "[SearchStringBase64](#cfn-wafv2-webacl-bytematchstatement-searchstringbase64)" : {{String}},
   "[TextTransformations](#cfn-wafv2-webacl-bytematchstatement-texttransformations)" : {{[ TextTransformation, ... ]}}
@@ -34,6 +35,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [FieldToMatch](#cfn-wafv2-webacl-bytematchstatement-fieldtomatch): {{
     FieldToMatch}}
   [PositionalConstraint](#cfn-wafv2-webacl-bytematchstatement-positionalconstraint): {{String}}
+  [PreParseTextTransformations](#cfn-wafv2-webacl-bytematchstatement-preparsetexttransformations): {{
+    - PreParseTextTransformation}}
   [SearchString](#cfn-wafv2-webacl-bytematchstatement-searchstring): {{
     String}}
   [SearchStringBase64](#cfn-wafv2-webacl-bytematchstatement-searchstringbase64): {{
@@ -68,6 +71,12 @@ The value of `SearchString` must appear at the end of the specified part of the 
 *Required*: Yes
 *Type*: String
 *Allowed values*: `EXACTLY | STARTS_WITH | ENDS_WITH | CONTAINS | CONTAINS_WORD`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PreParseTextTransformations`  <a name="cfn-wafv2-webacl-bytematchstatement-preparsetexttransformations"></a>
+Pre-parse text transformations normalize the raw query string before AWS WAF parses it into individual query arguments. They are applied before the standard text transformations. Pre-parse text transformations are only supported when `FieldToMatch` is `SingleQueryArgument` or `AllQueryArguments`. You can specify up to 10 pre-parse text transformations per rule statement.
+*Required*: No
+*Type*: Array of [PreParseTextTransformation](aws-properties-wafv2-webacl-preparsetexttransformation.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SearchString`  <a name="cfn-wafv2-webacl-bytematchstatement-searchstring"></a>

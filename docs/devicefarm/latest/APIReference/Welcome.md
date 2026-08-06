@@ -13,4 +13,4 @@ Welcome to the AWS Device Farm API documentation, which contains APIs for:
 
   Device Farm makes it possible for you to test apps on physical phones, tablets, and other devices in the cloud. For more information, see the [Device Farm Developer Guide](https://docs.aws.amazon.com/devicefarm/latest/developerguide/).
 
-This document was last published on July 31, 2026.
+This document was last published on August 6, 2026.

@@ -13,7 +13,7 @@ This section reviews some of the following AWS services and tools, which can pro
 
 |
 |
-| Important These AWS services might make recommendations to optimize your costs. However, these recommendations might not be compatible with operating SAP workloads. Before acting, confirm that the recommendations are compatible with operating SAP on AWS:[SAP Applications on AWS: Supported DB/OS and AWS EC2 products – 1656099](https://launchpad.support.sap.com/#/notes/1656099) (SAP note)[SAP on AWS: Support prerequisites - 1656250](https://launchpad.support.sap.com/#/notes/1656250) (SAP note) |
+| Important These AWS services might make recommendations to optimize your costs. However, these recommendations might not be compatible with operating SAP workloads. Before acting, confirm that the recommendations are compatible with operating SAP on AWS:+ [SAP Applications on AWS: Supported DB/OS and AWS EC2 products – 1656099](https://launchpad.support.sap.com/#/notes/1656099) (SAP note)<br />+ [SAP on AWS: Support prerequisites - 1656250](https://launchpad.support.sap.com/#/notes/1656250) (SAP note) |
 | --- |
 
 ## AWS Cost Explorer

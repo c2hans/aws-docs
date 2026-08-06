@@ -25,6 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[ComparisonOperator](#cfn-wafv2-webacl-sizeconstraintstatement-comparisonoperator)" : {{String}},
   "[FieldToMatch](#cfn-wafv2-webacl-sizeconstraintstatement-fieldtomatch)" : {{FieldToMatch}},
+  "[PreParseTextTransformations](#cfn-wafv2-webacl-sizeconstraintstatement-preparsetexttransformations)" : {{[ PreParseTextTransformation, ... ]}},
   "[Size](#cfn-wafv2-webacl-sizeconstraintstatement-size)" : {{Number}},
   "[TextTransformations](#cfn-wafv2-webacl-sizeconstraintstatement-texttransformations)" : {{[ TextTransformation, ... ]}}
 }
@@ -37,6 +38,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [ComparisonOperator](#cfn-wafv2-webacl-sizeconstraintstatement-comparisonoperator): {{String}}
   [FieldToMatch](#cfn-wafv2-webacl-sizeconstraintstatement-fieldtomatch): {{
     FieldToMatch}}
+  [PreParseTextTransformations](#cfn-wafv2-webacl-sizeconstraintstatement-preparsetexttransformations): {{
+    - PreParseTextTransformation}}
   [Size](#cfn-wafv2-webacl-sizeconstraintstatement-size): {{Number}}
   [TextTransformations](#cfn-wafv2-webacl-sizeconstraintstatement-texttransformations): {{
     - TextTransformation}}
@@ -56,6 +59,12 @@ The operator to use to compare the request part to the size setting.
 The part of the web request that you want AWS WAF to inspect.
 *Required*: Yes
 *Type*: [FieldToMatch](aws-properties-wafv2-webacl-fieldtomatch.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`PreParseTextTransformations`  <a name="cfn-wafv2-webacl-sizeconstraintstatement-preparsetexttransformations"></a>
+Pre-parse text transformations normalize the raw query string before AWS WAF parses it into individual query arguments. They are applied before the standard text transformations. Pre-parse text transformations are only supported when `FieldToMatch` is `SingleQueryArgument` or `AllQueryArguments`. You can specify up to 10 pre-parse text transformations per rule statement.
+*Required*: No
+*Type*: Array of [PreParseTextTransformation](aws-properties-wafv2-webacl-preparsetexttransformation.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Size`  <a name="cfn-wafv2-webacl-sizeconstraintstatement-size"></a>

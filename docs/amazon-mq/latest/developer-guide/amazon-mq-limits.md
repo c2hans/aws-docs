@@ -21,7 +21,7 @@ The following table lists quotas related to Amazon MQ brokers.
 
 | Limit | Description |
 | --- | --- |
-| Broker name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-limits.html)  |
+| Broker name |  +  Must be unique in your AWS account. <br />+  Must be 1-50 characters long. <br />+  Must contain only characters specified in the [ASCII Printable Character Set](https://en.wikipedia.org/wiki/ASCII#Printable_characters). <br />+  Can contain only alphanumeric characters, dashes, periods, underscores, and tildes (`- . _ ~`).   |
 | Number of brokers, per region | 200 |
 | Wire-level connections per broker (ActiveMQ) |  300 for mq.\*.micro instance type brokers, per wire-level protocol.  |
 | Wire-level connections per broker (ActiveMQ) |  2,000 for mq.\*.\*large instance type brokers, per wire-level protocol.  |
@@ -38,7 +38,7 @@ The following table lists quotas related to Amazon MQ configurations.
 
 | Limit | Description |
 | --- | --- |
-| Configuration name |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-limits.html)  |
+| Configuration name |  +  Must be 1-150 characters long. <br />+  Must contain only characters specified in the [ASCII Printable Character Set](https://en.wikipedia.org/wiki/ASCII#Printable_characters). <br />+  Can contain only alphanumeric characters, dashes, periods, underscores, and tildes (`- . _ ~`).   |
 | Revisions per configuration | 300 |
 
 ## Users
@@ -48,8 +48,8 @@ The following table lists quotas related to Amazon MQ ActiveMQ broker users.
 
 | Limit | Description |
 | --- | --- |
-| Username |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-limits.html)  |
-| Password |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-limits.html)  |
+| Username |  +  Must be 1-100 characters long. <br />+  Must contain only characters specified in the [ASCII Printable Character Set](https://en.wikipedia.org/wiki/ASCII#Printable_characters). <br />+  Can contain only alphanumeric characters, dashes, periods, underscores, and tildes (`- . _ ~`). <br />+  Must not contain commas (`,`).   |
+| Password |  +  Must be 12-250 characters long. <br />+  Must contain only characters specified in the [ASCII Printable Character Set](https://en.wikipedia.org/wiki/ASCII#Printable_characters). <br />+  Must contain at least 4 unique characters. <br />+  Must not contain commas (`,`).   |
 | Users per broker (simple auth) | 250 |
 | Groups per user (simple auth) | 20 |
 

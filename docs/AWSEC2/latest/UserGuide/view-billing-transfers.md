@@ -78,5 +78,5 @@ A request can be in one of the following states.
 | accepted | The request was accepted by the specified account. Billing of available capacity of the Capacity Reservation is assigned to the consumer account. |
 | rejected | The request was rejected by the consumer account. |
 | cancelled | The request was cancelled by the Capacity Reservation owner while it was in the pending state. |
-| revoked | Billing was revoked from the consumer account for one of the following reasons: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/view-billing-transfers.html)  |
+| revoked | Billing was revoked from the consumer account for one of the following reasons: +  It was explicitly revoked by the Capacity Reservation owner. <br />+  The Capacity Reservation is no longer shared with the consumer account. <br />+  The consumer account is no longer part of the AWS organization.   |
 | expired | The request expired because the consumer account did not accept or reject it within 12 hours. |

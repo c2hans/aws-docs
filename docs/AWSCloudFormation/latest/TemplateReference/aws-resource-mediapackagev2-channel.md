@@ -29,6 +29,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[InputSwitchConfiguration](#cfn-mediapackagev2-channel-inputswitchconfiguration)" : {{InputSwitchConfiguration}},
       "[InputType](#cfn-mediapackagev2-channel-inputtype)" : {{String}},
       "[OutputHeaderConfiguration](#cfn-mediapackagev2-channel-outputheaderconfiguration)" : {{OutputHeaderConfiguration}},
+      "[OutputLockingMode](#cfn-mediapackagev2-channel-outputlockingmode)" : {{String}},
       "[Tags](#cfn-mediapackagev2-channel-tags)" : {{[ Tag, ... ]}}
     }
 }
@@ -48,6 +49,7 @@ Properties:
   [InputType](#cfn-mediapackagev2-channel-inputtype): {{String}}
   [OutputHeaderConfiguration](#cfn-mediapackagev2-channel-outputheaderconfiguration): {{
     OutputHeaderConfiguration}}
+  [OutputLockingMode](#cfn-mediapackagev2-channel-outputlockingmode): {{String}}
   [Tags](#cfn-mediapackagev2-channel-tags): {{
     - Tag}}
 ```
@@ -102,6 +104,16 @@ The settings for what common media server data (CMSD) headers AWS Elemental Medi
 *Required*: No
 *Type*: [OutputHeaderConfiguration](aws-properties-mediapackagev2-channel-outputheaderconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`OutputLockingMode`  <a name="cfn-mediapackagev2-channel-outputlockingmode"></a>
+The output locking mode configured for the channel.
+The allowed values are:
++ `EPOCH_LOCKED` - The channel uses epoch-locked behavior with deterministic sequence numbering and fixed segment boundaries aligned to epoch time.
++ `NON_EPOCH_LOCKED` - The channel uses non-epoch-locked behavior with duration-based segment combining and monotonically increasing sequence numbers starting from 0.
+*Required*: No
+*Type*: String
+*Allowed values*: `EPOCH_LOCKED | NON_EPOCH_LOCKED`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-mediapackagev2-channel-tags"></a>
 Property description not available.

@@ -95,15 +95,15 @@ Consider the following best practices:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Check the AWS KMS key configurations. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-encryption-enforcement-in-aws-glue-using-an-aws-cloudformation-template.html) | Cloud architect |
+| Check the AWS KMS key configurations. | 1. Sign in to the AWS Management Console and then open the [AWS Glue console](https://console.aws.amazon.com/glue/).<br />2. In the navigation pane, under **Data Catalog**, choose **Catalog settings**.<br />3. Verify that the **Metadata encryption** and **Encrypt connection passwords** settings are flagged and configured to use `KMSKeyGlue`. | Cloud architect |
 
 ### Test the encryption enforcement
 <a name="test-the-encryption-enforcement"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Identify the encryption setting in CloudFormation. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-encryption-enforcement-in-aws-glue-using-an-aws-cloudformation-template.html) | Cloud architect |
-| Switch the provisioned infrastructure to an uncompliant state. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-encryption-enforcement-in-aws-glue-using-an-aws-cloudformation-template.html)The guardrail detects the uncompliant state in AWS Glue after you clear the check boxes, and then enforces compliance by automatically remediating the encryption misconfiguration. As a result, the encryption check boxes should again be selected after you refresh the page. | Cloud architect |
+| Identify the encryption setting in CloudFormation. | 1. Sign in to the AWS Management Console and then open the [CloudFormation console](https://console.aws.amazon.com/cloudformation).<br />2. In the navigation pane, choose **Stacks**, and then choose your stack.<br />3. Choose the **Resources** tab.<br />4. In the **Resources** table, find the encryption setting by **Logical ID**. | Cloud architect |
+| Switch the provisioned infrastructure to an uncompliant state. | 1. Sign in to the AWS Management Console and then open the [AWS Glue console](https://console.aws.amazon.com/glue/).<br />2. In the navigation pane, under **Data Catalog**, choose **Catalog settings**.<br />3. Clear the **Metadata encryption **check box.<br />4. Clear the **Encrypt connection passwords** check box.<br />5. Choose **Save**.<br />6. Refresh the AWS Glue console.The guardrail detects the uncompliant state in AWS Glue after you clear the check boxes, and then enforces compliance by automatically remediating the encryption misconfiguration. As a result, the encryption check boxes should again be selected after you refresh the page. | Cloud architect |
 
 ## Related resources
 <a name="automate-encryption-enforcement-in-aws-glue-using-an-aws-cloudformation-template-resources"></a>

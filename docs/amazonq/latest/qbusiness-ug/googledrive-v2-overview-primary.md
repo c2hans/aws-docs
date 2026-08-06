@@ -17,6 +17,6 @@ The following table gives an overview of the Amazon Q Business Google Drive conn
   - **Feature:** [Identity crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) / **Support:** Yes.
 
 - ****Crawl features****
-  - **Feature:** Entities / **Support:** Yes. The following entities are supported: [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/googledrive-v2-overview-primary.html)See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
-  - **Feature:** Filters / **Support:** Yes. The following filters are supported: [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/googledrive-v2-overview-primary.html)
+  - **Feature:** Entities / **Support:** Yes. The following entities are supported: +  Files See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
+  - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Include/exclude by shared drive IDs <br />+  Include/exclude by MIME types (e.g., `application/pdf`, `application/vnd.google-apps.document`) <br />+  Date range filtering
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all file types supported by Amazon Q. For more information see [Doc types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html).

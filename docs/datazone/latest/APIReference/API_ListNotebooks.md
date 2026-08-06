@@ -47,7 +47,7 @@ Valid Values: `ASCENDING | DESCENDING`
 
  ** [status](#API_ListNotebooks_RequestSyntax) **   <a name="datazone-ListNotebooks-request-uri-status"></a>
 The status to filter notebooks by.
-Valid Values: `ACTIVE | ARCHIVED`
+Valid Values: `ACTIVE | ARCHIVED | SYNC_IN_PROGRESS | SYNC_FAILED`
 
 ## Request Body
 <a name="API_ListNotebooks_RequestBody"></a>

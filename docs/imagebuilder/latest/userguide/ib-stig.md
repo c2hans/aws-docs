@@ -1181,7 +1181,7 @@ The following table describes important changes to the SCAP environment and sett
 
 | Change | Description | Date |
 | --- | --- | --- |
-| 2025 Q1 SCAP Updates |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/ib-stig.html)  | April 11, 2025 |
-| 2023 Q4 SCAP Updates |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/ib-stig.html)  | December 20, 2021 |
-| 2023 Q3 SCAP Updates |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/ib-stig.html)  | November 13, 2023 |
-| Added SCAP components |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/ib-stig.html)  | December 20, 2021 |
+| 2025 Q1 SCAP Updates |  +  scap-compliance-checker-windows version 2024.03.0 (SCC Version: 5.10) <br />+  scap-compliance-checker-windows version 2025.01.0 (SCC Version: 5.10   | April 11, 2025 |
+| 2023 Q4 SCAP Updates |  +  scap-compliance-checker-windows version 2023.04.0 (SCC Version: 5.8) <br />+  scap-compliance-checker-windows version 2023.04.0 (SCC Version: 5.8)   | December 20, 2021 |
+| 2023 Q3 SCAP Updates |  +  scap-compliance-checker-windows version 2023.03.0 (SCC Version: 5.7.2) <br />+  scap-compliance-checker-linux version 2023.03.0 (SCC Version: 5.7.2   | November 13, 2023 |
+| Added SCAP components |  +  Created scap-compliance-checker-linux version 2021.04.0 (SCC Version: 5.4.2) <br />+  Created scap-compliance-checker-linux version 2021.04.0 (SCC Version: 5.4.2)   | December 20, 2021 |

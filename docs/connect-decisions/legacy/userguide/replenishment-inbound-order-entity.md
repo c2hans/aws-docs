@@ -20,7 +20,7 @@ The table below lists the column names supported by the data entity:
 | id | string | Yes 1 | Object ID. |
 | company\_id2 | string | No | Company ID. |
 | order\_creation\_date | timestamp | No | Order creation date. |
-| order\_type | string | No | Displays the type of order. Reserved order types in AWS Supply Chain:[See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/replenishment-inbound-order-entity.html) |
+| order\_type | string | No | Displays the type of order. Reserved order types in AWS Supply Chain:+  PO - Purchase order <br />+  TO - Transfer order <br />+  MO - Manufacturing order <br />+  BO - Blanket order <br />+  CO - Consumption order  |
 | order\_status | string | No | Status of the order. |
 | to\_site\_id2 | string | No | Site where the order will arrive. |
 | tpartner\_id2 | string | Yes1 | Trading partner that the order will be sent to. |

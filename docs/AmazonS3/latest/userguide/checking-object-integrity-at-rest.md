@@ -87,7 +87,7 @@ Under **Completion report**, make sure to confirm the acknowledgement statement.
 
 1. On the **Batch Operations** page, you can review job details such as the job priority, job completion rate, and total objects.
 
-1. If you want to manage or clone a specific **Compute checksum** job, click on the **Job ID** to review additional job information.
+1. If you want to manage or clone a specific **Compute checksum** job, choose the **Job ID** to review additional job information.
 
 1. On the specific **Compute checksum** job page, review the job details.
 

@@ -70,6 +70,12 @@ The ARN of the theme of the analysis.
 Type: String
 Required: No
 
+ ** TopicArns **   <a name="QS-Type-Analysis-TopicArns"></a>
+The ARNs of the topics associated with the analysis.
+Type: Array of strings
+Array Members: Maximum number of 100 items.
+Required: No
+
 ## See Also
 <a name="API_Analysis_SeeAlso"></a>
 

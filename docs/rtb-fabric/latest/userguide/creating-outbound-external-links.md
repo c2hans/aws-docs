@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/rtb-fabric/latest/userguide/creating-out
 Outbound external links enable connectivity between your requester gateway and external partner endpoints (such as DSPs), extending your RTB infrastructure beyond private VPC connections. Traffic is routed over the AWS Global Network where possible, falling back to public internet routing when required. You must provide the public HTTP or HTTPS endpoint URL of the external responder.
 
 Note the following about outbound external links:
-+ **Opt-in feature** – External link capability must be explicitly enabled for your account. Use the Service Quotas tool to request access to external link functionality.
++ **Quota** – By default, you can create up to two outbound external links per gateway. To request a quota increase, see [Quotas for AWS RTB Fabric](rtb-fabric-quotas.md).
 + **Multiple creation methods** – You can create outbound external links using the AWS Management Console, the RTB Fabric API, the AWS CLI, or AWS CloudFormation.
 
 For more information, see [CreateOutboundExternalLink](https://docs.aws.amazon.com/rtb-fabric/latest/api/API_CreateOutboundExternalLink.html) in the *RTB Fabric API Reference*.

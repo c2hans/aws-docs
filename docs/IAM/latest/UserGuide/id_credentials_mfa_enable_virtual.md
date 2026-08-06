@@ -48,7 +48,7 @@ You must have physical access to the hardware that will host the user's virtual 
 
    IAM generates and displays configuration information for the virtual MFA device, including a QR code graphic. The graphic is a representation of the "secret configuration key" that is available for manual entry on devices that do not support QR codes.
 
-1. Open your virtual MFA app. For a list of apps that you can use for hosting virtual MFA devices, see [Multi-Factor Authentication](http://aws.amazon.com/iam/details/mfa/).
+1. Open your virtual MFA app. For a list of apps that you can use for hosting virtual MFA devices, see [Multi-Factor Authentication](https://docs.aws.amazon.com/http://aws.amazon.com/iam/details/mfa/).
 
    If the virtual MFA app supports multiple virtual MFA devices or accounts, choose the option to create a new virtual MFA device or account.
 

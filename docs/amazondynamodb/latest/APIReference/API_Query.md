@@ -329,6 +329,12 @@ Required: No
          "WriteCapacityUnits": number
       },
       "TableName": "string",
+      "VectorIndexes": {
+         "string" : {
+            "VectorSearchRequestBytes": number,
+            "VectorWriteRequestBytes": number
+         }
+      },
       "WriteCapacityUnits": number
    },
    "Count": number,

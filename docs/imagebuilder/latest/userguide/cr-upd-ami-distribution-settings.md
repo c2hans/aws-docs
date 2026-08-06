@@ -34,6 +34,18 @@ We recommend that you don't pass the [AWSServiceRoleForImageBuilder](security-ia
 + To store the output AMI ID in an SSM parameter during distribution, you must specify the `ssm:PutParameter` action in your Image Builder execution role, with the parameter listed as a resource.
 + When you set the parameter data type to `AWS EC2 Image` to signal Systems Manager to validate the parameter value as an AMI ID, you must also add the `ec2:DescribeImages` action.
 
+**Opt-in Region**
+You must enable an [opt-in Region (Region that is disabled by default)](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs#optinregion) in the source account. This requirement applies when your distribution configuration targets that Region in `ssmParameterConfigurations`, whether you use the Image Builder service-linked role or a custom execution role.
+The AMI copy to an opt-in Region can succeed even when the source account hasn't enabled the Region. Only the SSM output parameter write fails.
+Without this prerequisite, the build fails with an error similar to the following:
+
+```
+In region 'af-south-1' - 'STS Client Error: The provided execution role does not exist or does not have sufficient permissions.'
+```
+To resolve this issue, do one of the following:
++ Enable the opt-in Regions in the source account. For instructions on enabling a Region, see [Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
++ Omit `ssmParameterConfigurations` for the opt-in Regions. Instead, use an Amazon EventBridge rule to react to the [EC2 Image Builder Image State Change](integ-eventbridge.md#eb-event-state-change) event and write the parameters yourself.
+
 ### Prerequisites for EC2 Fast Launch
 <a name="ami-distribution-prereqs-fast-launch"></a>
 

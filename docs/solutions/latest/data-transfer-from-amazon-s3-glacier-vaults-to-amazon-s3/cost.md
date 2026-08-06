@@ -46,7 +46,7 @@ The following table shows how the sample cost tables were calculated.
 |  Lambda  |   |  $140.00  |
 |  DynamoDB  |   |  $2.00  |
 |  Amazon S3  |  Transfer cost  |  $5.00  |
-|  Additional services: [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/cost.html) |   |  $6.50  |
+|  Additional services: +   Amazon SQS  <br />+   Amazon SNS  <br />+   AWS Glue  <br />+   CloudWatch   |   |  $6.50  |
 |   |  Total:  |  $153.57 [USD]  |
 
 If the destination bucket is in a different region than US East (Ohio), an additional price of $2048 ($0.02 x size of S3 Glacier vault in GBs) should be added to the total.
@@ -60,7 +60,7 @@ If the destination bucket is in a different region than US East (Ohio), an addit
 |  Lambda  |   |  $411.00  |
 |  DynamoDB  |   |  $221.00  |
 |  Amazon S3  |  Transfer cost  |  $465.00  |
-|  Additional services: [See the AWS documentation website for more details](http://docs.aws.amazon.com/solutions/latest/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3/cost.html) |   |  $129.00  |
+|  Additional services: +   Amazon SQS  <br />+   Amazon SNS  <br />+   AWS Glue  <br />+   CloudWatch   |   |  $129.00  |
 |   |  Total:  |  $1,229.21 [USD]  |
 
 If the destination bucket is in a different region than US East (Ohio), an additional price of $2048 ($0.02 x size of S3 Glacier vault in GBs) should be added to the total.

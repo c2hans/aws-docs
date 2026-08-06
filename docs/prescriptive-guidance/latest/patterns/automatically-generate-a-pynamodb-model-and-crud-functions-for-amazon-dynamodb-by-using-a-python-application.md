@@ -94,14 +94,14 @@ This Python directory contains the following Jinja templates:
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repository. | Enter the following command to clone the [Auto-generate PynamoDB models and CRUD functions](https://github.com/aws-samples/amazon-reverse-engineer-dynamodb) repository.<pre>git clone https://github.com/aws-samples/amazon-reverse-engineer-dynamodb.git</pre> | App developer |
-| Set up the Python environment. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application.html) | App developer |
+| Set up the Python environment. | 1. Navigate into the top-level directory in the cloned repository.<pre>cd amazon-reverse-engineer-dynamodb</pre><br />2. Enter the following command to install the required libraries and packages.<pre>pip install -r requirements.txt</pre> | App developer |
 
 ### Generate the PynamoDB model and CRUD functions
 <a name="generate-the-pynamodb-model-and-crud-functions"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Modify the JSON schema file. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application.html) | App developer |
+| Modify the JSON schema file. | 1. Navigate into the top-level directory in the cloned repository.<pre>cd amazon-reverse-engineer-dynamodb</pre><br />2. Open the `test.json` file in your preferred editor. You can use this file as a reference to create your own JSON schema file, or you can update the values in this file to match your environment.<br />3. Modify the name, AWS Region, and attributes values for your target DynamoDB tables.If you define a table that does not exist in the JSON schema file, this solution does not generate models or CRUD functions for that table.<br />4. Save and close the `test.json` file. We recommend that you save this file with a new name. | App developer |
 | Run the Python application. | Enter the following command to generate the PynamoDB models and CRUD functions, where `<input_schema.json>` is the name of your JSON schema file.<pre>python main.py --file <input_schema.json></pre> | App developer |
 
 ### Verify the PynamoDB model and CRUD functions
@@ -109,8 +109,8 @@ This Python directory contains the following Jinja templates:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Verify the generated PynamoDB model. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application.html) | App developer |
-| Verify the generated CRUD functions. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application.html) | App developer |
+| Verify the generated PynamoDB model. | 1. In the top-level directory of the cloned repository, enter the following command to navigate into the `models` repository.<pre>cd models</pre><br />2. By default, this solution names the PynamoDB model file `demo_model.py`. Validate that this file is present. | App developer |
+| Verify the generated CRUD functions. | 1. In the top-level directory of the cloned repository, enter the following command to navigate into the `crud` repository.<pre>cd crud</pre><br />2. By default, this solution names the script `demo_crud.py`. Validate that this file is present.<br />3. Use the Python classes in the `demo_crud.py` file to perform a CRUD operation on the target DynamoDB table. Confirm that the operation completed successfully. | App developer |
 
 ## Related resources
 <a name="automatically-generate-a-pynamodb-model-and-crud-functions-for-amazon-dynamodb-by-using-a-python-application-resources"></a>

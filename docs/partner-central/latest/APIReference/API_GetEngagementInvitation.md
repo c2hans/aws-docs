@@ -49,6 +49,32 @@ Required: Yes
    "EngagementDescription": "string",
    "EngagementId": "string",
    "EngagementTitle": "string",
+   "EnrichmentContext": {
+      "LeadInsights": {
+         "LeadReadinessScore": "string"
+      },
+      "ProspectingResultAws": {
+         "Customer": {
+            "AccountName": "string",
+            "CompanySize": "string",
+            "Country": "string",
+            "EligiblePrograms": [ "string" ],
+            "Geo": "string",
+            "Industry": "string",
+            "PublicProfileSummary": "string",
+            "Region": "string",
+            "Segment": "string",
+            "SubIndustry": "string",
+            "SubRegion": "string"
+         },
+         "Insights": {
+            "MarketplaceEngagementScore": "string",
+            "SolutionCategory": "string",
+            "SolutionScore": "string",
+            "SolutionSubCategory": "string"
+         }
+      }
+   },
    "ExistingMembers": [
       {
          "CompanyName": "string",
@@ -103,7 +129,11 @@ Pattern: `eng-[0-9a-z]{14}`
  ** [EngagementTitle](#API_GetEngagementInvitation_ResponseSyntax) **   <a name="AWSPartnerCentral-GetEngagementInvitation-response-EngagementTitle"></a>
 The title of the engagement invitation, summarizing the purpose or objectives of the opportunity shared by AWS.
 Type: String
-Pattern: `(?s).{1,40}`
+Pattern: `(?s).{0,40}`
+
+ ** [EnrichmentContext](#API_GetEngagementInvitation_ResponseSyntax) **   <a name="AWSPartnerCentral-GetEngagementInvitation-response-EnrichmentContext"></a>
+The enrichment data for the engagement associated with this invitation. You can view propensity scores, program eligibility, and lead readiness assessments before taking action on the invitation.
+Type: [EnrichmentContext](API_EnrichmentContext.md) object
 
  ** [ExistingMembers](#API_GetEngagementInvitation_ResponseSyntax) **   <a name="AWSPartnerCentral-GetEngagementInvitation-response-ExistingMembers"></a>
 A list of active members currently part of the Engagement. This array contains a maximum of 10 members, each represented by an object with the following properties.

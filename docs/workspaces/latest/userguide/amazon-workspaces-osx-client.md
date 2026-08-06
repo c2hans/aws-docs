@@ -300,104 +300,104 @@ The following table describes the changes to each release of the client applicat
 
 | Release | Date | Changes |
 | --- | --- | --- |
-| 5.33.0 | July 7, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.32.0 | April 23, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.31.0 | January 21, 2026 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.30.2 | November 3, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.30.1 | October 21, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.30.0 | October 13, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.29.1 | August 6, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.29.0 | July 31, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.28.1 | July 2, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.27.0 | April 30, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.33.0 | July 7, 2026 |  +  Updated the client application as a Universal app, enabling dual support for both Apple silicon and Intel-based Macs. <br />+  Added support for URL redirection, enabling administrators to configure certain websites to be redirected from the streaming session to the local device's web browser. <br />+  Fixed an issue with the username not being pre-populated in the new user login flow when "Remember me" is selected. <br />+  Fixed an issue that prevented changing the registration code when there is no network connectivity. <br />+  Fixed an application crash that occurred when using a YubiKey for signing in under certain conditions. <br />+  Fixed an issue that prevented connecting to a WorkSpace via custom proxy when credentials are not stored locally. <br />+  Updated the DCV SDK. <br />+  Additional bug fixes and enhancements.   |
+| 5.32.0 | April 23, 2026 |  +  Added support for connecting to WorkSpaces in the US East (Ohio) and Asia Pacific (Malaysia) regions. <br />+  Made an improvement that enables microphone audio streaming only when a remote application is using it, helping to optimize performance. <br />+  Fixed an issue that was preventing copying and pasting from the clipboard between the local client device and the WorkSpace in some scenarios. <br />+  Updated the DCV SDK. <br />+  Updated the PCoIP SDK. <br />+  Other bug fixes and enhancements.   |
+| 5.31.0 | January 21, 2026 |  +  Added support for real-time audio optimization for DCV-based WorkSpaces, which routes the audio from web applications running on the WorkSpace to the local device, improving the audio call quality. <br />+  Added improved error messaging in the case of a SAML session timeout. <br />+  Other bug fixes and enhancements.   |
+| 5.30.2 | November 3, 2025 |  + Bug fixes and enhancements.  |
+| 5.30.1 | October 21, 2025 |  + Added support for connecting to your WorkSpace via IPv6.  |
+| 5.30.0 | October 13, 2025 |  + Improved the international keyboard experience with new keyboard layout options (server or client) with DCV-based WorkSpaces.<br />+  Updated the DCV SDK. <br />+  Updated the PCoIP SDK. <br />+  Updated the .NET Framework.   |
+| 5.29.1 | August 6, 2025 |  +  Bug fixes and enhancements.   |
+| 5.29.0 | July 31, 2025 |  +  Added a new automatic client update feature that automatically checks for available updates and installs them when you're not using the client, helping you to get the latest features and bug fixes. <br />+  Bug fixes and enhancements.   |
+| 5.28.1 | July 2, 2025 |  +  Bug fixes and enhancements.   |
+| 5.27.0 | April 30, 2025 |  +  Updated the DCV SDK. <br />+  Updated the PCoIP SDK. <br />+  Bug fixes and enhancements.   |
 | 5.26.2  | April 1, 2025 | Bug fixes and enhancements. |
-| 5.26.0 | March 4, 2025 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.26.0 | March 4, 2025 |  +  Updated the DCV SDK. <br />+  Updated the .NET SDK. <br />+  Bug fixes and enhancements.   |
 | 5.25.0 | December 19, 2024 | Bug fixes and enhancements. |
-| 5.24.0 | November 22, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.24.0 | November 22, 2024 |  +  Added a progress bar to help users better understand the expected time during the loading of their WorkSpace. <br />+  Added a notification to warn idle users they will be disconnected from their DCV WorkSpaces due to inactivity. <br />+  Updated the DCV SDK. <br />+  Updated the RestSharp library. <br />+  Bug fixes and enhancements.   |
 | 5.23.1 | October 17, 2024 |  Bug fixes and enhancements.  |
-| 5.23.0 | September 30, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.23.0 | September 30, 2024 |  +  Renamed WSP protocol to Amazon DCV protocol. <br />+  Added support for streaming over port 443 for TCP and UDP protocols on DCV WorkSpaces. <br />+  Updated the .NET SDK. <br />+  Bug fixes and enhancements.   |
 | 5.22.1 | September 3, 2024 | Bug fixes and enhancements. |
 | 5.22.0 | August 16, 2024 | Updated the DCV SDK. |
 | 5.21.0 | July 3, 2024 | Bug fixes and enhancements. |
-| 5.20.0 | June 13, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.20.0 | June 13, 2024 |  +  Updated PCoIP SDK. <br />+  Updated DCV SDK. <br />+  Migrated the software framework to .NET 8 LTS. <br />+  Updated system to require macOS 12 or later.   |
 | 5.19.3 | April 30, 2024 |  Fixed issue where users get immediately disconnected from their DCV WorkSpaces when connecting to it.  |
-| 5.19.0 | February 28, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.18.0 | January 22, 2024 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.17.0 | November 16, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.16.0 | October 26, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.15.1 | September 20, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.12.0 | August 29, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.19.0 | February 28, 2024 |  +  Added WebAuthn support for in-session authentication. <br />+  Resolved a white screen issue for DCV WorkSpaces. <br />+  Fixed the pixelation issue for DCV WorkSpaces. <br />+  Resolved crash issues for DCV WorkSpaces. <br />+  Updated DCV SDK.   |
+| 5.18.0 | January 22, 2024 |  +  Updated PCoIP SDK. <br />+  Updated DCV SDK. <br />+  Added support for macOS 14 (Sonoma). <br />+  Fixed keyboard issue where the first keystrokes were not being transmitted after unlocking the screen.   |
+| 5.17.0 | November 16, 2023 |  +  Fixed a login issue due to a custom proxy error on macOS Ventura. <br />+  Added support to configure option key behavior on DCV client. <br />+  Fixed a client crash when users change running mode. <br />+  Fixed the screen freezing issue when using a Smart Card on DCV client. <br />+  Improve stability during resizes on DCV client. <br />+  Improved visual accessibility.   |
+| 5.16.0 | October 26, 2023 |  +  Improved visual accessibility. <br />+  Updated DCV SDK.   |
+| 5.15.1 | September 20, 2023 |  +  Enabled persistent Webcam connection after fast DCV WorkSpace reconnection. <br />+  Fixed connectivity issues on DCV WorkSpaces when using a proxy server. <br />+  Updated DCV SDK. <br />+  Bug fixes and enhancements.   |
+| 5.12.0 | August 29, 2023 |  +  Updated PCoIP SDK and DCV SDK. <br />+  Resolved an login page special character processing issue. <br />+  Added a link to Amazon WorkSpaces user guide under the Support menu.   |
 | 5.11.0 | June 29, 2023 | Added options to enable or disable **Ctrl** \+ left-click as right-click and enable or disable mapping the **Command** key to the **Ctrl** key. To access both options, from the menu bar, choose **Settings**, **Manage Modifier Keys**. |
-| 5.10.0 | June 19, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.10.0 | June 19, 2023 |  +  Improved client custom branding by storing assets in the same AWS Regions as provisioned WorkSpaces. <br />+  Resolved black screen issue when using multiple monitors with Ubuntu WorkSpaces. <br />+  Fixed client diagnostic log uploading issues, where proxy settings were not being persisted when connecting to WorkSpaces through a proxy server. <br />+  Added support for DCV extension SDK, which allows end users to customize their DCV WorkSpaces experience.   |
 | 5.9.0 | May 9, 2023 |  Updated DCV SDK to fix playback volume issues.  |
-| 5.8.0 | April 6, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.7.0 | February 23, 2023 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 5.6.0 | December 27, 2022 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 5.8.0 | April 6, 2023 |  +  Added accessibility improvements. <br />+  Added support for automatic diagnostic log uploads feature, which allows you to upload WorkSpaces client log files directly to WorkSpaces to troubleshoot issues without interrupting the use of the WorkSpaces client. <br />+  Updated the DCV v2 SDK to fix InSessionLatency reporting.   |
+| 5.7.0 | February 23, 2023 |  +  Updated the DCV SDK. <br />+  Enabled trimming leading or trailing allow list in sign-in credentials.   |
+| 5.6.0 | December 27, 2022 |  +  Added support for certificate-based authentication via SAML 2.0 integration, which removes the logon prompt for the Active Directory domain password. <br />+  Resolved the issue of the Workspace menu bar being inaccessible when maximizing the Workspace application window. <br />+  Updated PCoIP SDK for the WorkSpaces macOS client.   |
 | 5.5.0 | November 14, 2022 | Updated the DCV client SDK. |
 | 5.4.0 | November 10, 2022 | Added a shortcut Command\+Alt\+F12 to disconnect your WorkSpaces. |
 | 5.3.0 | September 15, 2022 | Bug fixes and enhancements. |
 | 5.2.0 | August 24, 2022 | Fixed WorkSpaces login issue when using Smart Card. |
 | 5.1.0 | June 30, 2022 | Updated PCoIP SDK for MacOS. |
 | 4.0.7 | March 3, 2022 | Fixed a WorkSpaces connection error caused by the Proxy settings on MacBook. |
-| 4.0.6 | December 21, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 4.0.5 | November 23, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 4.0.4 | November 3, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 4.0.6 | December 21, 2021 |  +  Resolves crashes and black screen issues related to video streaming for DCV <br />+  Updates to DCV version 1.9.8.18175   |
+| 4.0.5 | November 23, 2021 |  +  Optimizes the bandwidth and frame rates for DCV WorkSpaces <br />+  Resolves the shortcut mapping issue related to full screen mode   |
+| 4.0.4 | November 3, 2021 |  +  Resolves the spinning wheel problem on the Login screen in macOS Big Sur with PCoIP WorkSpaces <br />+  Video streaming improvements for WorkSpaces that support DCV <br />+  Bug fixes   |
 | 4.0.3 | October 4, 2021 | Bug fixes and enhancements. |
 | 4.0.2 | September 8, 2021 | Minor bug fixes and enhancements. |
 | 4.0.1 | August 5, 2021 | Minor bug fixes and enhancements. |
 | 3.1.9 | June 29, 2021 | Minor bug fixes and enhancements. |
-| 3.1.8 | May 28, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.1.7 | April 29, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 3.1.8 | May 28, 2021 |  +  Addresses a crash issue after disconnecting from PCoIP WorkSpaces <br />+  Addresses a connectivity issue with DCV WorkSpaces on M1 Mac hardware <br />+  Minor bug fixes and enhancements   |
+| 3.1.7 | April 29, 2021 |  +  Improves connectivity with WorkSpaces using the DCV <br />+  Minor bug fixes and enhancements   |
 | 3.1.6 | April 8, 2021 | Fixes for disconnects and crashes resulting from DCV audio traffic optimization |
-| 3.1.5 | April 2, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.1.4 | March 16, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.1.3 | February 15, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.1.2 | January 8, 2021 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 3.1.5 | April 2, 2021 |  +  Adds in-session and pre-session support for Common Access Card (CAC) and Personal Identity Verification (PIV) smart cards with DCV Windows WorkSpaces <br />+  Bidirectional video webcam support is now generally available for Windows WorkSpaces using the DCV <br />+  Minor bug fixes and enhancements   |
+| 3.1.4 | March 16, 2021 |  +  Addresses a few crash scenarios when users register, log in, and rebuild <br />+  Adds localization support for more UI elements <br />+  Minor bug fixes and enhancements   |
+| 3.1.3 | February 15, 2021 |  +  Adds support for mouse middle button dragging <br />+  Minor bug fixes and enhancements   |
+| 3.1.2 | January 8, 2021 |  +  The DCV is now generally available. Video-in functionality continues to be available as a beta feature on DCV WorkSpaces only <br />+  Minor bug fixes and enhancements   |
 | 3.1.0 | December 1, 2020 | Minor bug fixes and enhancements |
-| 3.0.12 | November 10, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.0.11 | October 02, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 3.0.12 | November 10, 2020 |  +  Adds enhancements to the session reconnect experience <br />+  Improves error messaging during session disconnects for DCV WorkSpaces <br />+  Fixes keyboard mapping issue with the **Shift** key for DCV WorkSpaces <br />+  Fixes an issue in the device-enumeration logic where video-in devices might not be shown on subsequent logins for DCV WorkSpaces   |
+| 3.0.11 | October 02, 2020 |  +  Resolves an intermittent crash issue when disconnecting from a DCV WorkSpace <br />+  Minor bug fixes and enhancements   |
 | 3.0.10 | September 16, 2020 | Adds support for health checks over port 4195 (UDP and TCP) |
 | 3.0.9 | August 14, 2020 | Minor bug fixes and enhancements |
-| 3.0.8 | July 30, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.0.7 | June 3, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.0.6 | April 28, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.0.5 | March 30, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.0.4 | March 3, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 3.0.8 | July 30, 2020 |  +  For improved diagnostics, displays round trip time (RTT) as part of the network health check information <br />+  Minor bug fixes and enhancements   |
+| 3.0.7 | June 3, 2020 |  +  Adds support for multiple monitors on DCV WorkSpaces <br />+  Minor bug fixes and enhancements   |
+| 3.0.6 | April 28, 2020 |  +  Adds support for toggling between high DPI and standard DPI displays <br />+  Minor bug fixes and enhancements   |
+| 3.0.5 | March 30, 2020 |  +  Resolves an issue with the user interface displaying a login prompt if single sign-on (SSO) is enabled for Amazon WorkDocs <br />+  Adds support to map the Command key to the Windows logo key   |
+| 3.0.4 | March 3, 2020 |  +  Adds support for connecting to DCV WorkSpaces <br />+  Minor bug fixes and enhancements   |
 | 3.0.3 | February 24, 2020 | Improves readability on high DPI devices |
-| 3.0.2 | February 14, 2020 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 3.0.0 | November 25, 2019 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.5.11 | November 4, 2019 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 3.0.2 | February 14, 2020 |  +  Adds keyboard shortcut to toggle full screen display <br />+  Minor bug fixes and enhancements   |
+| 3.0.0 | November 25, 2019 |  +  Improved user interface <br />+  Friendly registration code labels <br />+  Client-side GPU rendering <br />+  Minor bug fixes and enhancements   |
+| 2.5.11 | November 4, 2019 |  +  Resolves issues with support for the macOS Catalina keyboard <br />+  Minor bug fixes   |
 | 2.5.9 |  | Minor bug fixes |
-| 2.5.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.5.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.5.8 |  |  +  Resolves an intermittent crashing issue related to computer waking up when opening a laptop lid   |
+| 2.5.7 |  |  +  Adds support for German keyboard layouts with Linux WorkSpaces <br />+  Resolves an issue that results in a crash of Excel with clipboard direction   |
 | 2.5.6 |  | Minor fixes |
-| 2.5.5 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.5.2 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.5.1 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.5.5 |  |  +  Resolves an issue with sub-optimal resolution with external displays in full-screen mode connected using USB-C <br />+  Minor bug fixes   |
+| 2.5.2 |  |  +  Resolves an issue that results in crashes when multiple monitors are used and clients are connected to WorkSpaces running Amazon Linux 2 <br />+  Resolves an intermittent issue with the Caps lock key becoming stuck <br />+  Minor bug fixes   |
+| 2.5.1 |  |  +  Resolves an issue that periodically results in repeated key presses with WorkSpaces running Amazon Linux 2 <br />+  Adds support for localized date and time formats in the user interface <br />+  Adds handling for URIs that end with an extra '/'  <br />+  Minor user interface improvements    |
 | 2.5.0 |  | Adds support for user self-service WorkSpace management capabilities |
 | 2.4.10 |  | Minor fixes |
 | 2.4.9 |  | Minor fixes |
-| 2.4.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.4.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.4.6 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.4.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.4.8 |  |  +  Adds support for uniform resource identifiers (URIs), which enable login orchestration <br />+  Improves the behavior of function (Fn) keys on macOS  <br />+  Improves protocol handling <br />+  Minor fixes   |
+| 2.4.7 |  |  +  Adds support for time zone redirection for more Regions: America/Indianapolis America/Indiana/Marengo America/Indiana/Vevay America/Indiana/Indianapolis <br />+  Includes text changes to the Login page user interface   |
+| 2.4.6 |  |  +  Adds support for configuring the logging level to include advanced logging for debug scenarios  <br />+  Minor improvements to session provision handling  <br />+  Increases error handling for keyboard connections   |
+| 2.4.4 |  |  +  Minor fixes <br />+  Improves copy and paste   |
 | 2.4.2 |  | Minor fixes |
-| 2.4.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.3.7 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.4.0 |  |  +  New logo <br />+  Improves the user interface and stability   |
+| 2.3.7 |  |  +  Addresses a gray screen issue that occurs when displays are in different orientations <br />+  Resolves a crashing issue on macOS   |
 | 2.3.6 |  | Localization enhancements |
 | 2.3.5 |  | Minor improvements |
-| 2.3.3 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.3.3 |  |  +  Improves support for multiple monitors <br />+  Localization enhancements <br />+  Improves security and performance   |
 | 2.3.1 |  | Minor fixes |
-| 2.3.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.3.0 |  |  +  Improves support for multiple monitors <br />+  Improves security and stability   |
 | 2.2.3 |  | Resolves minor bugs and improves stability |
-| 2.2.1 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.2.1 |  |  +  Adds support for the German language <br />+  Resolves issues with time zone mapping for some Regions <br />+  Resolves a connection issue on Russian systems <br />+  Improves the Japanese user interface <br />+  Improves stability   |
 | 2.1.4 |  | Resolves a crash issue on macOS Sierra |
 | 2.1.3 |  | Closing the client expires the reconnect token. You can easily reconnect to your WorkSpace as long as the client is running. |
-| 2.1.0 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.0.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 2.0.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 1.1.80 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 1.1.6 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 1.1.4 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
-| 1.0.8 |  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html)  |
+| 2.1.0 |  |  +  Adds support for the following new WorkSpace states: STOPPING and STOPPED <br />+  Resolves minor bugs and improves stability   |
+| 2.0.8 |  |  +  Resolves an issue with out-of-app keyboard input passing to WorkSpaces <br />+  If Remember Me is disabled, the user name is not shown on restart <br />+  Adds a confirmation dialog box when deleting a registration code <br />+  Improves stability   |
+| 2.0.4 |  |  +  Adds support for audio in, enabling you to make calls or attend web conferences <br />+  Adds support for devices with high DPI screens <br />+  Adds support for saving registration codes, enabling you to switch WorkSpaces without re-entering the registration codes <br />+  Improves support for OS X El Capitan <br />+  Improves usability and stability   |
+| 1.1.80 |  |  +  Adds CloudWatch metrics for session latency, session launch time, and session disconnects <br />+  Improves auto session resume so that you are interrupted less frequently when network conditions are degraded <br />+  Resolves specific issues and improves stability   |
+| 1.1.6 |  |  +  Adds support for status notifications. The client application notifies you about the state of your WorkSpace when it cannot connect to the WorkSpace. <br />+  Improves the reconnect experience. The client automatically redirects to the login screen after 10 hours of inactivity. You can reconnect again if the client fails to launch a session using reconnect. <br />+  Adds support for auto session resume. The client application automatically attempts to resume your session if network connectivity is lost and then regained within the session resume timeout (default value is 20 minutes). <br />+  Improves network health checks so they are faster and more reliable <br />+  Adds client-side validation of registration codes <br />+  Improves the synchronization of Caps Lock and Num Lock status between the local device and the WorkSpace   |
+| 1.1.4 |  |  +  Adds support for saving your credentials, enabling you to easily reconnect to your WorkSpace <br />+  Improves advanced connection health checks <br />+  Improves stability   |
+| 1.0.8 |  |  +  Introduces a full-file installation package <br />+  Improves network connectivity checks <br />+  Adds version information to the **About** window   |
 | 1.0 |  | Initial release |

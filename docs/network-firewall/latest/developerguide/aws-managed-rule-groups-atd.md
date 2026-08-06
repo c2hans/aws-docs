@@ -16,7 +16,7 @@ In the console, Network Firewall automatically filters the managed rule groups a
 
 | Rule group name | Maximum rule capacity per rule group | Description |
 | --- | --- | --- |
-| `AttackInfrastructureStrictOrder`,<br />`AttackInfrastructureActionOrder` | 15,000 | Protects against threat activity by blocking communication with known harmful infrastructure tracked by AWS. This includes:[See the AWS documentation website for more details](http://docs.aws.amazon.com/network-firewall/latest/developerguide/aws-managed-rule-groups-atd.html)<br />Implements comprehensive filtering of both inbound and outbound traffic for multiple protocols, including TCP, TLS, HTTP, and outbound UDP.<br />Uses verified threat indicators to ensure high accuracy and minimize false positives. AWS automatically removes threat indicators when there is no evidence of related threat activity. |
+| `AttackInfrastructureStrictOrder`,<br />`AttackInfrastructureActionOrder` | 15,000 | Protects against threat activity by blocking communication with known harmful infrastructure tracked by AWS. This includes:+ Malware staging URLs<br />+ Botnet command and control servers<br />+ Crypto-mining pools<br />Implements comprehensive filtering of both inbound and outbound traffic for multiple protocols, including TCP, TLS, HTTP, and outbound UDP.<br />Uses verified threat indicators to ensure high accuracy and minimize false positives. AWS automatically removes threat indicators when there is no evidence of related threat activity. |
 
 **Important**
 Network Firewall active threat defense managed rule groups have rule capacity limits that differ from the rule capacity limits that apply to other rule groups.

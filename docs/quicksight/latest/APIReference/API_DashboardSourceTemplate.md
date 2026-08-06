@@ -21,8 +21,14 @@ Required: Yes
  ** DataSetReferences **   <a name="QS-Type-DashboardSourceTemplate-DataSetReferences"></a>
 Dataset references.
 Type: Array of [DataSetReference](API_DataSetReference.md) objects
-Array Members: Minimum number of 1 item.
+Array Members: Minimum number of 0 items.
 Required: Yes
+
+ ** TopicReferences **   <a name="QS-Type-DashboardSourceTemplate-TopicReferences"></a>
+The topic references for the source template of a dashboard.
+Type: Array of [TopicReference](API_TopicReference.md) objects
+Array Members: Minimum number of 1 item.
+Required: No
 
 ## See Also
 <a name="API_DashboardSourceTemplate_SeeAlso"></a>

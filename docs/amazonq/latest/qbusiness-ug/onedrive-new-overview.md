@@ -17,7 +17,7 @@ The following table gives an overview of the Amazon Q Business Microsoft OneDriv
   - **Feature:** [Identity crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) / **Support:** Yes.
 
 - ****Crawl features****
-  - **Feature:** Entities / **Support:** Yes. The following entities are supported: [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/onedrive-new-overview.html)See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
-  - **Feature:** Filters / **Support:** Yes. The following filters are supported: [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/onedrive-new-overview.html)
+  - **Feature:** Entities / **Support:** Yes. The following entities are supported: +  File See [What is a document?](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-doc-crawl.html) for more details on what each connector crawls as a document.
+  - **Feature:** Filters / **Support:** Yes. The following filters are supported: +  Filter by date <br />+  Include or exclude using file path
   - **Feature:** Sync mode / **Support:** Incremental sync only (automatic).
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all file types supported by Amazon Q.

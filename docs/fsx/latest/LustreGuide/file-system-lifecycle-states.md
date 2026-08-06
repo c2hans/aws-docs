@@ -14,4 +14,4 @@ You can view the status of an Amazon FSx file system by using the Amazon FSx con
 | DELETING | Amazon FSx is deleting an existing file system. |
 | UPDATING | The file system is undergoing a customer-initiated update. |
 | MISCONFIGURED | The file system is in a failed but recoverable state. |
-| FAILED | This status can mean either of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/LustreGuide/file-system-lifecycle-states.html) |
+| FAILED | This status can mean either of the following:+ The file system has failed and Amazon FSx can't recover it.<br />+ When creating a new file system, Amazon FSx couldn't create the file system. |

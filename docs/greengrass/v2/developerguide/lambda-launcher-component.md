@@ -118,13 +118,13 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.0.13 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-launcher-component.html)  |
-| 2.0.12 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-launcher-component.html)  |
+| 2.0.13 |  **Bug fixes and improvements**<br /> General bug fixes and improvements.   |
+| 2.0.12 |  **Bug fixes and improvements**<br /> Fixes an issue where the Lambda launcher could throw an error if the previous process was not stopped properly.   |
 | 2.0.11 | Support for Lambda manager 2.3.0. |
-| 2.0.10 |  <a name="changelog-lambda-launcher-2.0.10"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-launcher-component.html)  |
+| 2.0.10 |  <a name="changelog-lambda-launcher-2.0.10"></a>**Bug fixes and improvements**<br />   General bug fixes and improvements.     |
 | 2.0.9 | Version updated for Greengrass nucleus version 2.5.0 release. |
 | 2.0.8 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.7 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.6 | General performance improvements and bug fixes. |
-| 2.0.4 |  <a name="changelog-lambda-launcher-2.0.4"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/lambda-launcher-component.html)  |
+| 2.0.4 |  <a name="changelog-lambda-launcher-2.0.4"></a>**Bug fixes and improvements**<br />   Fixes an issue where the component doesn't correctly pass `AddGroupOwner` to the Lambda function container.     |
 | 2.0.3 | Initial version. |

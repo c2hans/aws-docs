@@ -348,11 +348,11 @@ The following table shows the authentication types for the connector and the sec
 
 | auth\_type | security.protocol | sasl.mechanism | Cluster type compatibility |
 | --- | --- | --- | --- |
-| SASL\_SSL\_PLAIN | SASL\_SSL | PLAIN |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html)  |
-| SASL\_PLAINTEXT\_PLAIN | SASL\_PLAINTEXT | PLAIN |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html)  |
-| SASL\_SSL\_SCRAM\_SHA512 | SASL\_SSL | SCRAM-SHA-512 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html)  |
-| SASL\_PLAINTEXT\_SCRAM\_SHA512 | SASL\_PLAINTEXT | SCRAM-SHA-512 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html)  |
-| SSL | SSL | N/A |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-kafka.html)  |
+| SASL\_SSL\_PLAIN | SASL\_SSL | PLAIN |  +  Self-managed Kafka <br />+  Confluent Platform <br />+  Confluent Cloud   |
+| SASL\_PLAINTEXT\_PLAIN | SASL\_PLAINTEXT | PLAIN |  +  Self-managed Kafka <br />+  Confluent Platform   |
+| SASL\_SSL\_SCRAM\_SHA512 | SASL\_SSL | SCRAM-SHA-512 |  +  Self-managed Kafka <br />+  Confluent Platform   |
+| SASL\_PLAINTEXT\_SCRAM\_SHA512 | SASL\_PLAINTEXT | SCRAM-SHA-512 |  +  Self-managed Kafka <br />+  Confluent Platform   |
+| SSL | SSL | N/A |  +  Self-managed Kafka <br />+  Confluent Platform   |
 
 #### SSL
 <a name="connectors-kafka-setup-configuring-authentication-tls"></a>

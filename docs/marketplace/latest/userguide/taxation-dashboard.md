@@ -86,7 +86,7 @@ This section of the dashboard displays the granular tax data for your organizati
 | Tax Invoice ID | The tax invoice identifier for the tax line in cases of dual invoicing. This field will be null for unified invoicing scenarios. |
 | Tax Invoice Date | The date of the tax invoice. This field will be null for unified invoicing scenarios. |
 | Tax liable party  | Either `AWS` or `Seller`. If the seller is the tax liable party, taxes are collected. If AWS is the tax liable party, sales tax is collected and remitted by AWS. For more information, see [AWS Marketplace Tax Help for Sellers](https://aws.amazon.com/tax-help/marketplace-sellers/).<br />If no taxes are collected, there's no value shown. The seller must determine whether some taxes were collected for each invoice, as the seller is liable for tax collection. |
-| Transaction type code | The type code of the transaction. Values include:[See the AWS documentation website for more details](http://docs.aws.amazon.com/marketplace/latest/userguide/taxation-dashboard.html)Refund transactions share the line item ID with their original forward transactions. |
+| Transaction type code | The type code of the transaction. Values include:+  `AWS` – A forward tax transaction. <br />+  `REFUND` – A full or partial refund. <br />+  `TAXONLYREFUND` – A tax-only refund. Refund transactions share the line item ID with their original forward transactions. |
 | Product ID | The friendly unique identifier for the software product. |
 | Product title | The name of the product purchased. |
 | Product tax code | A standard code to identify the tax properties for a product. You choose the properties when you create or modify the product. |

@@ -61,7 +61,7 @@ In the above example, the `curl -v -x OPTIONS` command is used to send a preflig
 **Note**
 When sending a preflight request, if any of the CORS request headers are not allowed, none of the response CORS headers are returned.
 
-In response to this preflight `OPTIONS` request, you will receive a `200 OK` response. For common error codes received when testing CORS and more information to solve CORS related issues, see [Troubleshooting CORS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/cors-troubleshooting.html).
+In response to this preflight `OPTIONS` request, you will receive a `200 OK` response. For common error codes received when testing CORS and more information to solve CORS related issues, see [Troubleshooting CORS](cors-troubleshooting.md).
 
 ```
 < HTTP/1.1 200 OK

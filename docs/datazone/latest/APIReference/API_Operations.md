@@ -170,6 +170,7 @@ The following actions are supported:
 +  [StartNotebookExport](API_StartNotebookExport.md)
 +  [StartNotebookImport](API_StartNotebookImport.md)
 +  [StartNotebookRun](API_StartNotebookRun.md)
++  [StartNotebookSync](API_StartNotebookSync.md)
 +  [StopNotebookRun](API_StopNotebookRun.md)
 +  [TagResource](API_TagResource.md)
 +  [UntagResource](API_UntagResource.md)

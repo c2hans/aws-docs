@@ -412,7 +412,7 @@ The following table shows the endpoint settings that you can use with Amazon Doc
 |  `NestingLevel`  | `"none"`<br />`"one"` | `"none"` – Specify `"none"` to use document mode. Specify `"one"` to use table mode. |
 |  `ExtractDocID`  | `true`<br />`false` | `false` – Use this attribute when `NestingLevel` is set to `"none"`. <br />When using CDC with sources that produce [multi-document transactions](https://www.mongodb.com/docs/manual/reference/method/Session.startTransaction/#mongodb-method-Session.startTransaction), the `ExtractDocId` parameter **must be** set to `true`. If this parameter is not enabled, the AWS DMS task will fail when it encounters a multi-document transaction. |
 |  `DocsToInvestigate`  | A positive integer greater than `0`. | `1000` – Use this attribute when `NestingLevel` is set to `"one"`.  |
-|  `ReplicateShardCollections `  | `true`<br />`false` | When true, AWS DMS replicates data to shard collections. AWS DMS only uses this setting if the target endpoint is a DocumentDB elastic cluster.<br />When this setting is true, note the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.DocumentDB.html) |
+|  `ReplicateShardCollections `  | `true`<br />`false` | When true, AWS DMS replicates data to shard collections. AWS DMS only uses this setting if the target endpoint is a DocumentDB elastic cluster.<br />When this setting is true, note the following:+ You must set `TargetTablePrepMode` to `nothing`.<br />+ AWS DMS automatically sets `useUpdateLookup` to `false`. |
 
 ## Source data types for Amazon DocumentDB
 <a name="CHAP_Source.DocumentDB.DataTypes"></a>

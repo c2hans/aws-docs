@@ -253,10 +253,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Access level:** Write
 
 - **   UpdateWorkspace  **
-  - **IAM action:**  [iottwinmaker:UpdateWorkspace](#list_iottwinmaker-action-UpdateWorkspace)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [iottwinmaker:UpdateWorkspace](#list_iottwinmaker-action-UpdateWorkspace)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** iottwinmaker.amazonaws.com / **Access level:** Write
 
 ## Actions defined by AWS IoT TwinMaker
 <a name="list_iottwinmaker-actions-as-permissions"></a>

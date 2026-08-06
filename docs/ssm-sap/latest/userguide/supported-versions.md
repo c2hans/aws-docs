@@ -19,9 +19,9 @@ The following table provides details of the operating systems supported by AWS S
 
 | Operating System | Supported Versions |
 | --- | --- |
-| Red Hat Enterprise Linux (RHEL) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ssm-sap/latest/userguide/supported-versions.html)  |
-| SUSE Linux Enterprise Server for SAP Applications (SLES for SAP) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ssm-sap/latest/userguide/supported-versions.html)  |
-| SUSE Linux Enterprise Server (SLES) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ssm-sap/latest/userguide/supported-versions.html)  |
+| Red Hat Enterprise Linux (RHEL) |  +  9.6, 9.4, 9.2, 9.0 <br />+  8.10, 8.8, 8.6   |
+| SUSE Linux Enterprise Server for SAP Applications (SLES for SAP) |  +  15 SP7, 15 SP6, 15 SP5, 15 SP4, 15 SP3 <br />+  12 SP5   |
+| SUSE Linux Enterprise Server (SLES) |  +  15 SP7, 15 SP6, 15 SP5, 15 SP4, 15 SP3 <br />+  12 SP5   |
 
 ## Databases
 <a name="supported-versions-databases"></a>

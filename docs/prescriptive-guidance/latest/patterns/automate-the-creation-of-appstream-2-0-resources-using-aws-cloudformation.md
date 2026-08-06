@@ -66,15 +66,15 @@ The diagram shows the following workflow:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Install custom software and create an image. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation.html)Consider using the Windows AppLocker feature to further lock down the image. | AWS DevOps, Cloud architect |
+| Install custom software and create an image. | 1. Launch[ image builder](https://docs.aws.amazon.com/appstream2/latest/developerguide/tutorial-image-builder-create.html) and choose the relevant instance types, subnet, security group, and so on.<br />2. Use admin mode while connecting to the instance.<br />3. Use the [Image assistant](https://docs.aws.amazon.com/appstream2/latest/developerguide/tutorial-image-builder.html) or a PowerShell script to create a new Windows image for your custom software.Consider using the Windows AppLocker feature to further lock down the image. | AWS DevOps, Cloud architect |
 
 ### Deploy the CloudFormation template
 <a name="deploy-the-cfn-template"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Update the CloudFormation template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation.html) | AWS systems administrator, Cloud administrator, Cloud architect, General AWS, AWS administrator |
-| Create a CloudFormation stack by using the template. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation.html) | App owner, AWS systems administrator, Windows Engineer |
+| Update the CloudFormation template. | 1. Use the code in the [Additional information](#automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation-additional) section of this pattern as a YAML file.<br />2. Update the YAML file with the required values for the parameters in your environment. | AWS systems administrator, Cloud administrator, Cloud architect, General AWS, AWS administrator |
+| Create a CloudFormation stack by using the template. | 1. Sign in to the AWS Management Console and open the [CloudFormation console](https://console.aws.amazon.com/cloudformation/).<br />2. On the navigation pane, choose **Stacks**.<br />3. Choose **Create stack** and then choose **With new resources (standard)**.<br />4. In the **Prerequisite – Prepare template** section, choose **Template is ready**.<br />5. In the **Specify template** section, choose **Upload a template** **file**.<br />6. Choose **Choose file** and then choose your updated CloudFormation template.<br />7. Complete the rest of the steps in the wizard to create your stack. | App owner, AWS systems administrator, Windows Engineer |
 
 ## Troubleshooting
 <a name="automate-the-creation-of-appstream-2-0-resources-using-aws-cloudformation-troubleshooting"></a>

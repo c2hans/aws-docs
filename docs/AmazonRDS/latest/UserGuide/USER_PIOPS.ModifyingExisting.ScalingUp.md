@@ -14,7 +14,7 @@ To monitor the amount of free storage for your DB instance so you can respond wh
 
 Scaling storage usually doesn't cause any outage or performance degradation of the DB instance. After you modify the storage size for a DB instance, the status of the DB instance is **storage-optimization**.
 
-Storage optimization can take several hours. After storage optimization completes on the instance, you can make additional storage modifications. You can perform a maximum of four storage modifications within any 24-hour period. You can view the storage optimization progress in the AWS Management Console or by using the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) AWS CLI command.
+Storage optimization can take several hours. After storage optimization completes on the instance, you can make additional storage modifications. You can perform a maximum of four storage modifications within any 24-hour period. You can view the storage optimization progress in the AWS Management Console or by using the [describe-db-instances](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-instances.html) AWS CLI command. During optimization, the response includes `StorageOperationStatus="Optimizing"` and a `StorageOperationPercentProgress` value on the affected volume. The per-volume fields also appear on each entry in the `AdditionalStorageVolumes` array, so you can identify which volume is being optimized. For more information, see [Viewing Amazon RDSDB instance status](accessing-monitoring.md#Overview.DBInstance.Status).
 
 ## Console
 <a name="USER_PIOPS.ModifyingExisting.console"></a>

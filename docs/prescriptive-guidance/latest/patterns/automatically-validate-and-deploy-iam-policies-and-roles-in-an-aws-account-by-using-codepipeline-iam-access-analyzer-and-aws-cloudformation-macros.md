@@ -87,16 +87,16 @@ The source code and templates for this pattern are available in the GitHub [IAM 
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the pipeline. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-validate-and-deploy-iam-policies-and-roles-in-an-aws-account-by-using-codepipeline-iam-access-analyzer-and-aws-cloudformation-macros.html) | App developer, General AWS |
-| Clone the pipeline’s repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-validate-and-deploy-iam-policies-and-roles-in-an-aws-account-by-using-codepipeline-iam-access-analyzer-and-aws-cloudformation-macros.html) | App developer, General AWS |
+| Deploy the pipeline. | 1. Navigate to the directory that contains the cloned repository.<br />2. Run the `make deploy bucket=<bucket_name>` command. : you must replace `<bucket_name>` with the bucket name for your existing S3 bucket.<br />3. Run the `aws codepipeline get-pipeline –name RolesPipeline` command to check if your deployment is successful. | App developer, General AWS |
+| Clone the pipeline’s repository. | 1. The `RolesPipeline` AWS CloudFormation stack creates the `roles-pipeline-repo` CodeCommit repository.<br />2. Sign in to the AWS Management Console, open the AWS CodeCommit console, and then copy the CodeCommit repository’s URL to clone it to your local machine. For more information about this, see [Connect to an AWS CodeCommit repository](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-connect.html) in the AWS CodeCommit documentation. | App developer, General AWS |
 
 ### Test the RolesPipeline pipeline
 <a name="test-the-rolespipeline-pipeline"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Test the RolesPipeline pipeline with valid IAM policies and roles. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-validate-and-deploy-iam-policies-and-roles-in-an-aws-account-by-using-codepipeline-iam-access-analyzer-and-aws-cloudformation-macros.html) | App developer, General AWS |
-| Test the RolesPipeline pipeline with invalid IAM policies and roles. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-validate-and-deploy-iam-policies-and-roles-in-an-aws-account-by-using-codepipeline-iam-access-analyzer-and-aws-cloudformation-macros.html) | App developer, General AWS |
+| Test the RolesPipeline pipeline with valid IAM policies and roles. | 1. Create JSON files for your IAM policies and roles. You can use the samples in the `role-example` directory from the GitHub `IAM roles pipeline` repository.<br />2. Define your IAM policies and roles with the required configurations. : Make sure that you follow the format described in the `ReadMe` file from the GitHub `IAM roles pipeline` repository.<br />3. Push the modifications into the `roles-pipeline-repo` CodeCommit repository.<br />4. Verify the implementation of the `RolesPipeline` pipeline.<br />5. Make sure that the IAM policies and roles are correctly deployed in the account.<br />6. Validate if there is a permissions boundary associated to the IAM policies or roles. For more information about this, see [Permissions boundaries for IAM entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html) in the IAM documentation. | App developer, General AWS |
+| Test the RolesPipeline pipeline with invalid IAM policies and roles. | 1. Modify the `roles-pipeline-repo` CodeCommit repository and include invalid IAM roles or policies. For example, you can use an action that doesn’t exist or an invalid IAM policy version.<br />2. Verify the pipeline implementation. IAM Access Analyzer stops the pipeline during the validation stage if it detects invalid IAM policies or roles. | App developer, General AWS |
 
 ### Clean up your resources
 <a name="clean-up-your-resources"></a>
@@ -104,7 +104,7 @@ The source code and templates for this pattern are available in the GitHub [IAM 
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Prepare for cleanup. | Empty the S3 buckets and then run the `destroy` command. | App developer, General AWS |
-| Delete the RolesStack stack. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/automatically-validate-and-deploy-iam-policies-and-roles-in-an-aws-account-by-using-codepipeline-iam-access-analyzer-and-aws-cloudformation-macros.html) | App developer, General AWS |
+| Delete the RolesStack stack. | 1. The `RolesPipeline` pipeline creates a `RolesStack` AWS CloudFormation stack that deploys the IAM policies and roles. You must delete this stack before deleting the `RolesPipeline` pipeline.<br />2. Sign in to the AWS Management Console, open the AWS CloudFormation console, and then choose the `RolesStack` stack and choose **Delete**. | App developer, General AWS |
 | Delete the RolesPipeline stack. | To delete the `RolesPipeline` AWS CloudFormation stack, follow the instructions from the [ReadMe](https://github.com/aws-samples/iam-roles-pipeline/blob/main/README.md) file in the Github `IAM roles pipeline` repository. | App developer, General AWS |
 
 ## Related resources

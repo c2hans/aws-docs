@@ -13,7 +13,7 @@ Contains preview outbound mode configuration.
  ** bandwidthAllocation **   <a name="connect-Type-connect-outbound-campaigns-v2_PreviewConfig-bandwidthAllocation"></a>
 Bandwidth allocation for the preview outbound mode.
 Type: Double
-Valid Range: Minimum value of 0. Maximum value of 1.
+Valid Range: Minimum value of 0. Maximum value of 2.
 Required: Yes
 
  ** timeoutConfig **   <a name="connect-Type-connect-outbound-campaigns-v2_PreviewConfig-timeoutConfig"></a>

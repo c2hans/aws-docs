@@ -9,7 +9,7 @@ This section contains information about how to troubleshoot order planning and t
 
 | Issue | Resolution |
 | --- | --- |
-| Order planning and tracking page is blank |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/Troubleshooting.html)  |
+| Order planning and tracking page is blank |  + Make sure data ingestion is complete.<br />+ Check the data quality tab under *Data Lake* for missing required entities or any specific errors. For information on required entities for order planning and tracking, see [Order Planning and Tracking](entities-work-order-insights.md).<br />+ Make sure the order planning and tracking configuration is complete. For more information, see [Orders settings](work-order-settings.md).  |
 | A specific column is not displayed under orders or order lines | Hover over on any column name and select the three vertical dots. Choose *Manage columns* and make sure the required column is selected. |
-| Column or field values are not displayed under orders or orders insights |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/Troubleshooting.html)  |
-| A column or field is not displayed under Material Summary |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/Troubleshooting.html)  |
+| Column or field values are not displayed under orders or orders insights |  + Make sure the column name has a value in the dataset.<br />+ Check the data mapping between the source and destination fields in the data lake page. For more information, see [Uploading files for the first time](uploading_files.md).  |
+| A column or field is not displayed under Material Summary |  + Make sure the column name has a value in the dataset.<br />+ Check the data mapping between the source and destination fields in the data lake page. For more information, see [Uploading files for the first time](uploading_files.md).<br />+ Choose **Edit** on the material summary page to see if the data entity is enabled to view on the material summary page.  |

@@ -9,7 +9,7 @@ Amazon RDS supports several versions and editions of Microsoft SQL Server. The f
 
 | Major version | Service Pack / GDR | Cumulative Update | Minor version | Knowledge Base Article | Release Date |
 | --- | --- | --- | --- | --- | --- |
-| SQL Server 2025 | Not applicable | CU5 | 17.0.4045.5 | [KB5084896](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate5) | May 20, 2026 |
+| SQL Server 2025 | Not applicable | CU6 | 17.0.4055.5 | [KB5093421](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate6) | June 17, 2026 |
 | SQL Server 2022 | Not applicable | CU25 | 16.0.4255.1 | [KB5081477](https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate25) | May 20, 2026 |
 | SQL Server 2019 | GDR | CU32 GDR | 15.0.4470.1 | [KB5090407](https://support.microsoft.com/en-US/servicing/SQL/sql-server-2019/cumulative-update/kb5090407-description-of-the-security-update-for-sql-server-2019-cu32-may-12-2026) | May 12, 2026 |
 | SQL Server 2017 | GDR | CU31 GDR | 14.0.3530.2 | [KB5090354](https://support.microsoft.com/en-US/servicing/SQL/sql-server-2017/cumulative-update/kb5090354-description-of-the-security-update-for-sql-server-2017-cu31-may-12-2026) | May 12, 2026 |
@@ -156,7 +156,7 @@ To enable HIPAA support on your DB instance, set up the following three componen
 | --- | --- |
 | Auditing | To set up auditing, set the parameter `rds.sqlserver_audit` to the value `fedramp_hipaa`. If your DB instance is not already using a custom DB parameter group, you must create a custom parameter group and attach it to your DB instance before you can modify the `rds.sqlserver_audit` parameter. For more information, see [Parameter groups for Amazon RDS](USER_WorkingWithParamGroups.md). |
 | Transport encryption | To set up transport encryption, force all connections to your DB instance to use Secure Sockets Layer (SSL). For more information, see [Forcing connections to your DB instance to use SSL](SQLServer.Concepts.General.SSL.Using.md#SQLServer.Concepts.General.SSL.Forcing). |
-| Encryption at rest | To set up encryption at rest, you have two options:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html) |
+| Encryption at rest | To set up encryption at rest, you have two options:1.  If you're running SQL Server 2016–2022 Enterprise Edition or 2022 Standard Edition, you can use Transparent Data Encryption (TDE) to achieve encryption at rest. For more information, see [Support for Transparent Data Encryption in SQL Server](Appendix.SQLServer.Options.TDE.md). <br />2.  You can set up encryption at rest by using AWS Key Management Service (AWS KMS) encryption keys. For more information, see [Encrypting Amazon RDS resources](Overview.Encryption.md).  |
 
 ## Multi-AZ deployments using Microsoft SQL Server Database Mirroring or Always On availability groups
 <a name="SQLServer.Concepts.General.Mirroring"></a>

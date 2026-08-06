@@ -26,7 +26,7 @@ This release provides new Windows Server platform versions for AWS Elastic Beans
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-28-windows.html)<br />For more information about G4 instances, see [Amazon EC2 G4 Instances](https://aws.amazon.com/ec2/instance-types/g4/). |
 | **Windows 2008 Server** | Removed Windows 2008 Server platform versions. They had been previously available as retiring platforms, with an announced end date of October 16, 2019. For more information from Microsoft, see [Prepare for Windows Server 2008 end of support](https://www.microsoft.com/en-us/cloud-platform/windows-server-2008). |
 | **.NET Core 3.0** *New* | Added support for .NET Core 3.0. For details from Microsoft, see [What's new in .NET Core 3.0](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0).<br />.NET Core 3.0 supports Windows Server 2012 R2 or later. We don't support it on the Windows Server 2012 platform versions. |
-| **g4dn.xlarge, g4dn.2xlarge, g4dn.12xlarge** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-10-28-windows.html)  |
+| **g4dn.xlarge, g4dn.2xlarge, g4dn.12xlarge** |  + US East (Ohio) – us-east-2<br />+ US West (N. California) – us-west-1<br />+ Asia Pacific (Sydney) – ap-southeast-2<br />+ Europe (Ireland) – eu-west-1<br />+ Europe (London) – eu-west-2  |
 
 ## New platform versions
 <a name="release-2019-10-28-windows.platforms"></a>

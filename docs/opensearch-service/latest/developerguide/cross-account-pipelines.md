@@ -25,7 +25,7 @@ Before you configure VPCs to share OpenSearch Ingestion pipelines across AWS acc
 | Task | Details |
 | --- | --- |
 | Create one or more OpenSearch Ingestion pipelines | Set the minimum OpenSearch Compute Units (OSUs) to 2 or higher. For more information, see [Creating Amazon OpenSearch Ingestion pipelines](creating-pipeline.md). For information about updating a pipeline, see [Updating Amazon OpenSearch Ingestion pipelines](update-pipeline.md). |
-| Create one or more VPCs for OpenSearch Ingestion | To enable cross-account pipeline sharing, any VPC involved for the pipeline and the pipeline endpoints must be configured with the following DNS values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/opensearch-service/latest/developerguide/cross-account-pipelines.html)<br />For more information, see [DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) in the *Amazon VPC User Guide*. |
+| Create one or more VPCs for OpenSearch Ingestion | To enable cross-account pipeline sharing, any VPC involved for the pipeline and the pipeline endpoints must be configured with the following DNS values:+  `enableDnsSupport=true` <br />+  `enableDnsHostnames=true` <br />For more information, see [DNS attributes for your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html) in the *Amazon VPC User Guide*. |
 
 ## Grant connecting accounts access to a pipeline
 <a name="cross-account-pipelines-setting-up-grant-access"></a>

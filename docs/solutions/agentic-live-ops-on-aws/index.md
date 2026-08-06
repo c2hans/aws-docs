@@ -76,4 +76,12 @@ Step 2A Schema Agent Lambda uses Amazon Bedrock Claude to parse schemas and gene
 
 Step 3A daily Amazon EventBridge rule triggers a Hydration AWS Lambda that re-indexes the Schema Amazon Bedrock Knowledge Base and syncs table/column relationships to Amazon Neptune.
 
+## Deploy with confidence
+
+Everything you need to launch this Guidance in your account is right here.
+
+- **Let's make it happen**: Ready to deploy? Review the sample code on GitHub for detailed deployment instructions to deploy as-is or customize to fit your needs.
+
+[Go to sample code](https://github.com/aws-solutions-library-samples/guidance-for-agentic-live-ops-on-aws)
+
 [Read usage guidelines](/solutions/guidance-disclaimers/)

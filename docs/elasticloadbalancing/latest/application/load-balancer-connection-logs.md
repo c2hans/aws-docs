@@ -99,10 +99,10 @@ The following table describes the fields of a connection log entry, in order. Al
 | listener\_port (4) | The port of the load balancer listener receiving the client request. |
 | tls\_protocol (5) | [HTTPS listener] The SSL/TLS protocol used during handshakes. This field is set to `-` for non SSL/TLS requests. |
 | tls\_cipher (6) | [HTTPS listener] The SSL/TLS protocol used during handshakes. This field is set to `-` for non SSL/TLS requests. |
-| tls\_handshake\_latency (7) | [HTTPS listener] The total time in seconds, with a millisecond precision, elapsed while establishing a successful handshake. This field is set to `-` when:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-connection-logs.html) |
-| leaf\_client\_cert\_subject (8) | [HTTPS listener] The subject name of the leaf client certificate. This field is set to `-` when:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-connection-logs.html) |
-| leaf\_client\_cert\_validity (9) | [HTTPS listener] The validity, with `not-before` and `not-after` in ISO 8601 format, of the leaf client certificate. This field is set to `-` when:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-connection-logs.html) |
-| leaf\_client\_cert\_serial\_number (10) | [HTTPS listener] The serial number of the leaf client certificate. This field is set to `-` when:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-connection-logs.html) |
+| tls\_handshake\_latency (7) | [HTTPS listener] The total time in seconds, with a millisecond precision, elapsed while establishing a successful handshake. This field is set to `-` when:+  The incoming request is not a SSL/TLS request. <br />+  The handshake is not established successfully.  |
+| leaf\_client\_cert\_subject (8) | [HTTPS listener] The subject name of the leaf client certificate. This field is set to `-` when:+  The incoming request is not a SSL/TLS request. <br />+  The load balancer listener is not configured with mTLS enabled. <br />+  The server is not able to load/parse the leaf client certificate.  |
+| leaf\_client\_cert\_validity (9) | [HTTPS listener] The validity, with `not-before` and `not-after` in ISO 8601 format, of the leaf client certificate. This field is set to `-` when:+  The incoming request is not a SSL/TLS request. <br />+  The load balancer listener is not configured with mTLS enabled. <br />+  The server is not able to load/parse the leaf client certificate.  |
+| leaf\_client\_cert\_serial\_number (10) | [HTTPS listener] The serial number of the leaf client certificate. This field is set to `-` when:+  The incoming request is not a SSL/TLS request. <br />+  The load balancer listener is not configured with mTLS enabled. <br />+  The server is not able to load/parse the leaf client certificate.  |
 | tls\_verify\_status (11) | [HTTPS listener] The status of the connection request. This value is `Success` if the connection is established successfully. On an unsuccessful connection the value is `Failed:$error_code`. |
 | conn\_trace\_id (12) | The connection traceability ID is a **unique opaque ID** used to identify each connection. After a connection is established with a client, subsequent requests from this client contain this ID in their respective access log entries. This ID acts as a foreign key to create a link between the connection and access logs. |
 | tls\_keyexchange (13) | [HTTPS listener] The key exchange used during handshakes for TLS or PQ-TLS . This field is set to `-` for non SSL/TLS requests.  |
@@ -128,6 +128,7 @@ If the load balancer is unable to establish a connection, the load balancer stor
 | `ClientCertPurposeInvalid` | Client certificate purpose is invalid |
 | `ClientCertRejected` | Client certificate is rejected by custom server validation |
 | `UnmappedConnectionError` | Unmapped runtime connection error |
+| `ClientCertIncompatible` | Client certificate is incompatible with the chosen listener security policy |
 
 ## Example log entries
 <a name="connection-log-entry-examples"></a>

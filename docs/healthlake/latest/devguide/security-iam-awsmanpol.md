@@ -65,7 +65,7 @@ This policy includes the following statement.
 ## AWS managed policy: AmazonHealthLakeReadOnlyAccess
 <a name="security-iam-awsmanpol-AmazonHealthLakeReadOnlyAccess"></a>
 
-`AmazonHealthLakeReadOnlyAccess` policy grants read-only access and permissions to HealthLake and related resources in other AWS services. Apply this policy to users who you want to grant the ability to query and view HealthLake data store, but not the ability to create or make changes to them.
+With the `AmazonHealthLakeReadOnlyAccess` policy, you have read-only access to HealthLake. You can view and query HealthLake data stores. You can also view HealthLake Data Transformation Agent profiles and transformation jobs. You can't create, modify, or delete these resources.
 
 You can attach the `AmazonHealthLakeReadOnlyAccess` policy to your IAM identities.
 
@@ -73,37 +73,7 @@ This policy grants {{read-only}} permissions that allow users and roles to query
 
 **Permissions details**
 
-This policy includes the following statement.
-
-------
-#### [ JSON ]
-
-****
-
-```
-{
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Action": [
-                "healthlake:ListFHIRDatastores",
-                "healthlake:DescribeFHIRDatastore",
-                "healthlake:DescribeFHIRImportJob",
-                "healthlake:DescribeFHIRExportJob",
-                "healthlake:GetCapabilities",
-                "healthlake:ReadResource",
-                "healthlake:SearchWithGet",
-                "healthlake:SearchWithPost",
-                "healthlake:SearchEverything"
-            ],
-            "Effect": "Allow",
-            "Resource": "*"
-        }
-    ]
-}
-```
-
-------
+For more information about the permissions for this policy, see [AmazonHealthLakeReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonHealthLakeReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 ## HealthLake operations and permissions
 <a name="security-iam-awsmanpol-operations-and-permissions"></a>
@@ -118,6 +88,9 @@ The following table lists typical operations in HealthLake and the permissions n
 | Query a data store using Amazon Athena | `AmazonAthenaFullAccess`, `AmazonS3FullAccess`, AWS Lake Formation `Select` and `Describe` permissions on tables managed by AWS Lake Formation |
 | Import data from HealthLake | See [Setting up permissions for import jobs](getting-started-setting-up.md#setting-up-import-permissions). |
 | Export data from HealthLake | See [Setting up permissions for export jobs](getting-started-setting-up.md#setting-up-export-permissions). |
+| View or list HealthLake Data Transformation Agent profiles | `AmazonHealthLakeReadOnlyAccess` |
+| View or list HealthLake Data Transformation Agent jobs | `AmazonHealthLakeReadOnlyAccess` |
+| Validate a source C-CDA file for HealthLake Data Transformation Agent | `AmazonHealthLakeReadOnlyAccess` |
 
 ## HealthLake updates to AWS managed policies
 <a name="security-iam-awsmanpol-updates"></a>
@@ -126,6 +99,7 @@ View details about updates to AWS managed policies for HealthLake from the time 
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AmazonHealthLakeReadOnlyAccess](#security-iam-awsmanpol-AmazonHealthLakeReadOnlyAccess) – Update to an existing policy | We added permissions to allow read-only access to HealthLake Data Transformation Agent profiles and jobs.<br />Added the `healthlake:GetDataTransformationProfile`, `healthlake:ListDataTransformationProfiles`, `healthlake:ListDataTransformationProfileVersions`, `healthlake:DescribeDataTransformationJob`, `healthlake:ListDataTransformationJobs`, and `healthlake:ValidateSource` permissions.<br />You can now view transformation profiles and profile versions, view transformation job status, and validate source C-CDA files. | August 4, 2026 |
 | [AmazonHealthLakeFullAccess](#security-iam-awsmanpol-AmazonHealthLakeFullAccess) | `AmazonHealthLakeFullAccess` policy required to allow full access to HealthLake. | November, 14, 2022 |
 | [AmazonHealthLakeReadOnlyAccess](#security-iam-awsmanpol-AmazonHealthLakeReadOnlyAccess)  | `AmazonHealthLakeReadOnlyAccess` policy required for read-only access to HealthLake. | November, 14, 2022 |
 | HealthLake started tracking changes | HealthLake started tracking changes for its AWS managed policies. | November, 14, 2022 |

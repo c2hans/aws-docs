@@ -59,7 +59,7 @@ The architecture includes the following services and resources:
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Create and configure the ECS cluster. | To create the ECS cluster, follow the instructions in the [AWS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create_cluster.html), including the following steps:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/run-amazon-ecs-tasks-on-amazon-workspaces-with-amazon-ecs-anywhere.html) | Cloud architect |
+| Create and configure the ECS cluster. | To create the ECS cluster, follow the instructions in the [AWS documentation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create_cluster.html), including the following steps:+ For **Select cluster compatibility**, choose **Networking only**, which will support an Amazon WorkSpace as an external instance to the ECS cluster.<br />+ Choose to create a new VPC. | Cloud architect |
 
 ### Launch Amazon WorkSpaces
 <a name="launch-amazon-workspaces"></a>

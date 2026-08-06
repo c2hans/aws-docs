@@ -31,9 +31,9 @@ You need the following information to set up and configure the components of a V
 | Item | Information |
 | --- | --- |
 | Customer gateway device | The physical or software device on your side of the VPN connection. You need the vendor (for example, Cisco), platform (for example, ISR Series Routers), and software version (for example, IOS 12.4). |
-| Customer gateway | To create the customer gateway resource in AWS, you need the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html)For more information, see [Customer gateway options](cgw-options.md). |
+| Customer gateway | To create the customer gateway resource in AWS, you need the following information:+  The internet-routable IP address for the device's external interface <br />+  The type of routing: [static or dynamic](VPNRoutingTypes.md) <br />+  For dynamic routing, the Border Gateway Protocol (BGP) Autonomous System Number (ASN) <br />+  (Optional) Private certificate from AWS Private Certificate Authority to authenticate your VPN For more information, see [Customer gateway options](cgw-options.md). |
 | (Optional) The ASN for the AWS side of the BGP session | You specify this when you create a virtual private gateway or transit gateway. If you do not specify a value, the default ASN applies. For more information, see [Virtual private gateway](how_it_works.md#VPNGateway). |
-| VPN connection | To create the VPN connection, you need the following information:[See the AWS documentation website for more details](http://docs.aws.amazon.com/vpn/latest/s2svpn/SetUpVPNConnections.html) |
+| VPN connection | To create the VPN connection, you need the following information:+  For static routing, the IP prefixes for your private network. <br />+  (Optional) Tunnel options for each VPN tunnel. For more information, see [Tunnel options for your AWS Site-to-Site VPN connection](VPNTunnels.md).  |
 
 ## Step 1: Create a customer gateway
 <a name="vpn-create-cgw"></a>

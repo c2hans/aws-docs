@@ -60,7 +60,7 @@ Attempt to resolve your error by the going through these sections in the followi
 
 | Error | Solution |
 | --- | --- |
-|  `InputConfiguration: We are unable to extract DataInputConfig from the model due to {{input_config_derivation_error}}. Please override by providing a DataInputConfig during compilation job creation.` | Do either of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/neo-troubleshooting-compilation.html) |
+|  `InputConfiguration: We are unable to extract DataInputConfig from the model due to {{input_config_derivation_error}}. Please override by providing a DataInputConfig during compilation job creation.` | Do either of the following:+  Specify the name and shape of the expected inputs by providing a `DataInputConfig` definition in your compilation request.  <br />+  Investigate the error in Amazon CloudWatch Logs. Check the `/aws/sagemaker/CompilationJobs` log group and look for a log stream named `{{compilationJobName}}/model-info-extraction`.  |
 
 ## Infrastructure-Related Errors
 <a name="neo-troubleshooting-compilation-infrastructure-errors"></a>

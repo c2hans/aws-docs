@@ -142,7 +142,7 @@ Quick Setup uses the prefix `ssm-quicksetup:` before actions.
 | Managed node | arn:aws:ssm:{{region}}:{{account-id}}:managed-instance/{{managed-node-id}} |
 | Managed node inventory | arn:aws:ssm:{{region}}:{{account-id}}:managed-instance-inventory/{{managed-node-id}} |
 | OpsItem | arn:aws:ssm:{{region}}:{{account-id}}:opsitem/{{OpsItem-id}} |
-| Parameter | A one-level parameter:[See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/security_iam_service-with-iam.html)<br />A parameter named with a hierarchical construction:[See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/security_iam_service-with-iam.html) |
+| Parameter | A one-level parameter:+  arn:aws:ssm:{{region}}:{{account-id}}:parameter/{{parameter-name}}/ <br />A parameter named with a hierarchical construction:+  arn:aws:ssm:{{region}}:{{account-id}}:parameter/{{parameter-name-root}}/{{level-2}}/{{level-3}}/{{level-4}}/{{level-5}} **2**  |
 | Patch baseline | arn:aws:ssm:{{region}}:{{account-id}}:patchbaseline/{{patch-baseline-id}}  |
 | Response plan | arn:aws:ssm-incidents:{{region}}:{{account-id}}:response-plan/{{response-plan-name}} |
 | Session | arn:aws:ssm:{{region}}:{{account-id}}:session/{{session-id}} **3** |

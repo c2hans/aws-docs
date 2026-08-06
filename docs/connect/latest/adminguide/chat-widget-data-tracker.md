@@ -171,7 +171,7 @@ To associate tracking with an authenticated user, use one of the following appro
   ```
 
 **Important**
-If an authenticated user ID is passed, it links to existing profiles via the account key. Since data tracker events accumulate over time, set object limits for `WebAnalytics-Clickstream` and `_webAnalytics` to prevent new events from overwriting other object types once the profile object limit is reached. For configuration guidance, see [Customer Profiles data limits](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-data-limits.html).
+If an authenticated user ID is passed, it links to existing profiles through the account key. Since data tracker events accumulate over time, set object limits for `WebAnalytics-Clickstream` and `_webAnalytics` to prevent new events from overwriting other object types once the profile object limit is reached. For configuration guidance, see [Customer Profiles data limits](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profiles-data-limits.html).
 
 ## What is captured
 <a name="chat-widget-data-tracker-what-is-captured"></a>

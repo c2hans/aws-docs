@@ -128,6 +128,9 @@ Choose the link in the **AWS service** column to see the documentation for servi
 - **[Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)**
   - com.amazonaws.cloudfront
 
+- **[Amazon CloudFront Flat-Rate Pricing Plans](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/flat-rate-pricing-plan.html)**
+  - com.amazonaws.us-east-1.pricingplanmanager
+
 - ** [AWS CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/cloudhsm-vpc-endpoint.html) **
   - com.amazonaws.{{region}}.cloudhsmv2
 

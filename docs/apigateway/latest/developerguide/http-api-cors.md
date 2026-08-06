@@ -18,7 +18,7 @@ You can specify the following parameters in a CORS configuration. To add these p
 
 | CORS headers | CORS configuration property | Example values |
 | --- | --- | --- |
-| Access-Control-Allow-Origin | allowOrigins |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html)  |
+| Access-Control-Allow-Origin | allowOrigins |  +  `https://www.example.com` <br />+  `*` (allow all origins) <br />+  `https://*` (allow any origin that begins with https://) <br />+  `http://*` (allow any origin that begins with http://)   |
 | Access-Control-Allow-Credentials | allowCredentials | true |
 | Access-Control-Expose-Headers | exposeHeaders | date, x-api-id, \* |
 | Access-Control-Max-Age | maxAge | 300 |

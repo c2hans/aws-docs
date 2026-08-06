@@ -13,7 +13,7 @@ The following table gives an overview of the Gmail connector and its supported f
 
 - ****Security****
   - **Feature:** Authentication type / **Latest Connector:** Google Service Account / **Legacy Connector:** Google Service Account
-  - **Feature:** Authentication credentials / **Latest Connector:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/gmail-overview.html)  / **Legacy Connector:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/gmail-overview.html)
+  - **Feature:** Authentication credentials / **Latest Connector:**  +  Google service account <br />+  Admin account email <br />+  Client email <br />+  Private key   / **Legacy Connector:**  +  Google service account <br />+  Admin account email <br />+  Client email <br />+  Private key
   - **Feature:** [Access Control List (ACL)](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-authorization) crawling / **Latest Connector:** Yes (Automatic) / **Legacy Connector:** Yes (Manual configuration)
   - **Feature:** [Identity crawling](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-identity-crawler) / **Latest Connector:** Yes (Automatic) / **Legacy Connector:** Yes (Manual configuration)
   - **Feature:** [VPC](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-vpc) / **Latest Connector:** No / **Legacy Connector:** Yes

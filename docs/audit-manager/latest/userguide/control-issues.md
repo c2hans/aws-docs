@@ -156,5 +156,5 @@ If a custom rule is updated outside of your AWS environment, Audit Manager doesn
 
 | Your role | Scenario | Recommended action |
 | --- | --- | --- |
-| Sender |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/control-issues.html)  | Let the recipient know about your update. That way, they can apply the same update and stay in sync with the latest rule definition. |
-| Recipient |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/audit-manager/latest/userguide/control-issues.html)  | Make the corresponding rule update in your own instance of AWS Config. |
+| Sender |  +  You shared a framework that uses custom rules as a data source mapping. <br />+  After you shared the framework, you updated or deleted one of those rules in AWS Config.   | Let the recipient know about your update. That way, they can apply the same update and stay in sync with the latest rule definition. |
+| Recipient |  +  You accepted a shared framework that uses custom rules as a data source mapping. <br />+  After you recreated the custom rules in your instance of AWS Config, the sender updated or deleted one of those rules.   | Make the corresponding rule update in your own instance of AWS Config. |

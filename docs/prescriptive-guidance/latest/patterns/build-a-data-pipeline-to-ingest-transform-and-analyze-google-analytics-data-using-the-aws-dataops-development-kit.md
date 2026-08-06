@@ -93,7 +93,7 @@ The code for this pattern is available in the GitHub [AWS DataOps Development Ki
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Bootstrap the environment. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-a-data-pipeline-to-ingest-transform-and-analyze-google-analytics-data-using-the-aws-dataops-development-kit.html) | DevOps engineer |
+| Bootstrap the environment. | 1. Confirm that the AWS CLI is set up with valid credentials for your AWS account. For more information, see [Using named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html#cli-configure-files-using-profiles) in the AWS CLI documentation.<br />2. Run the `cdk bootstrap --profile [AWS_PROFILE]` command. | DevOps engineer |
 | Deploy the data. | To deploy the data pipeline, run the `cdk deploy --profile [AWS_PROFILE]` command. | DevOps engineer |
 
 ### Test the deployment
@@ -101,7 +101,7 @@ The code for this pattern is available in the GitHub [AWS DataOps Development Ki
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Validate stack status. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/build-a-data-pipeline-to-ingest-transform-and-analyze-google-analytics-data-using-the-aws-dataops-development-kit.html) | DevOps engineer |
+| Validate stack status. | 1. Open the [CloudFormation console](https://console.aws.amazon.com/cloudformation/).<br />2. On the **Stacks** page, confirm that the status of the stack `DdkAppflowAthenaStack` is `CREATE_COMPLETE`. | DevOps engineer |
 
 ## Troubleshooting
 <a name="build-a-data-pipeline-to-ingest-transform-and-analyze-google-analytics-data-using-the-aws-dataops-development-kit-troubleshooting"></a>

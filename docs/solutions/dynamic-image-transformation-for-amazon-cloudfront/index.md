@@ -140,6 +140,12 @@ Step 7The viewer request is proxied through an Amazon CloudFront function to nor
 
 **Vishal Gandhi, CTO, Perpetual**
 
+### Mwave
+
+Since moving to Amazon CloudFront, Mwave has recorded a 15% improvement in website performance, with Dynamic Image Transformation (DIT) delivering smaller image sizes and higher cache hit ratios on image-heavy pages.
+
+**[Mwave](https://aws.amazon.com/solutions/case-studies/mwave-case-study/)**
+
 ---
 
 ## AWS Support

@@ -103,9 +103,9 @@ The code for this pattern is available in the GitHub [Test AWS infrastructure us
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Clone the repository. | In a bash shell, enter the following command. This clones the [Test AWS infrastructure using LocalStack and Terraform Tests](https://github.com/aws-samples/localstack-terraform-test) repository from GitHub:<pre>git clone https://github.com/aws-samples/localstack-terraform-test.git</pre> | DevOps engineer |
-| Run the LocalStack container. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/test-aws-infra-localstack-terraform.html) | DevOps engineer |
+| Run the LocalStack container. | 1. Enter the following command to navigate into the cloned repository:<pre>cd localstack-terraform-test</pre><br />2. Enter the following command to start the LocalStack Docker container in detached mode:<pre>docker-compose up -d</pre><br />3. Wait until the LocalStack Docker container is operational. | DevOps engineer |
 | Initialize Terraform. | Enter the following command to initialize Terraform:<pre>terraform init</pre> | DevOps engineer |
-| Run Terraform Tests. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/test-aws-infra-localstack-terraform.html) | DevOps engineer |
+| Run Terraform Tests. | 1. Enter the following command to run Terraform Tests:<pre>terraform test</pre><br />2. Verify that all tests completed successfully. The output should be similar to the following:<pre>Success! 3 passed, 0 failed.</pre> | DevOps engineer |
 | Clean up resources. | Enter the following command to destroy the LocalStack container:<pre>docker-compose down</pre> | DevOps engineer |
 
 ## Troubleshooting
@@ -113,7 +113,7 @@ The code for this pattern is available in the GitHub [Test AWS infrastructure us
 
 | Issue | Solution |
 | --- | --- |
-| `Error: reading DynamoDB Table Item (Files\|README.md): empty` result when running the `terraform test` command. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/test-aws-infra-localstack-terraform.html) |
+| `Error: reading DynamoDB Table Item (Files\|README.md): empty` result when running the `terraform test` command. | 1. Reenter the `terraform test` command.<br />2. If that doesn't resolve the error, edit the **main.tf** file to increase the sleep timeout to a value greater than 15 seconds:<pre>resource "time_sleep" "wait" {<br />  create_duration = "15s"<br />  triggers = {<br />    s3_object = local.key_json<br />  }<br />}</pre> |
 
 ## Related resources
 <a name="test-aws-infra-localstack-terraform-resources"></a>

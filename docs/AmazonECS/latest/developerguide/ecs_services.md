@@ -52,7 +52,7 @@ Amazon ECS services hosted on AWS Fargate support the Application Load Balancers
 
 | Load Balancer type | Use in these cases |
 | --- | --- |
-| Application Load Balancer | Route HTTP/HTTPS (or layer 7) traffic.Application Load Balancers offer several features that make them attractive for use with Amazon ECS services:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html) |
+| Application Load Balancer | Route HTTP/HTTPS (or layer 7) traffic.Application Load Balancers offer several features that make them attractive for use with Amazon ECS services:+  Each service can serve traffic from multiple load balancers and expose multiple load balanced ports by specifying multiple target groups. <br />+  They are supported by tasks hosted on both Fargate and EC2 instances. <br />+  Application Load Balancers allow containers to use dynamic host port mapping (so that multiple tasks from the same service are allowed per container instance). <br />+  Application Load Balancers support path-based routing and priority rules (so that multiple services can use the same listener port on a single Application Load Balancer).  |
 | Network Load Balancer | Route TCP or UDP (or layer 4) traffic. |
 | Gateway Load Balancer | Route TCP or UDP (or layer 4) traffic. Use virtual appliances, such as firewalls, intrusion detection and prevention systems, and deep packet inspection systems. |
 

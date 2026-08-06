@@ -12,7 +12,7 @@ The `BatchWriteItem` operation puts or deletes multiple items in one or more tab
 
 The individual `PutItem` and `DeleteItem` operations specified in `BatchWriteItem` are atomic; however `BatchWriteItem` as a whole is not. If any requested operations fail because the table's provisioned throughput is exceeded or an internal processing failure occurs, the failed operations are returned in the `UnprocessedItems` response parameter. You can investigate and optionally resend the requests. Typically, you would call `BatchWriteItem` in a loop. Each iteration would check for unprocessed items and submit a new `BatchWriteItem` request with those unprocessed items until all items have been processed.
 
-For tables and indexes with provisioned capacity, if none of the items can be processed due to insufficient provisioned throughput on all of the tables in the request, then `BatchWriteItem` returns a `ProvisionedThroughputExceededException`. For all tables and indexes, if none of the items can be processed due to other throttling scenarios (such as exceeding partition level limits), then `BatchWriteItem` returns a `ThrottlingException`.
+If `BatchWriteItem` cannot process any items due to throttling (for example, insufficient provisioned throughput on the tables in the request, or partition-level or account-level limits), it returns a `ProvisionedThroughputExceededException` or a `ThrottlingException`. Both indicate that the request was throttled; check the `ThrottlingReason` field in the returned exception for details.
 
 **Important**
 If DynamoDB returns any unprocessed items, you should retry the batch operation on those items. However, *we strongly recommend that you use an exponential backoff algorithm*. If you retry the batch operation immediately, the underlying read or write requests can still fail due to throttling on the individual tables. If you delay the batch operation using exponential backoff, the individual requests in the batch are much more likely to succeed.
@@ -158,6 +158,12 @@ Required: No
             "WriteCapacityUnits": number
          },
          "TableName": "string",
+         "VectorIndexes": {
+            "string" : {
+               "VectorSearchRequestBytes": number,
+               "VectorWriteRequestBytes": number
+            }
+         },
          "WriteCapacityUnits": number
       }
    ],
@@ -247,6 +253,7 @@ The capacity units consumed by the entire `BatchWriteItem` operation.
 Each element consists of:
 +  `TableName` - The table that consumed the provisioned throughput.
 +  `CapacityUnits` - The total number of capacity units consumed.
+If the table has vector indexes, each element also includes a `VectorIndexes` field with `VectorWriteRequestBytes` consumed for each affected vector index.
 Type: Array of [ConsumedCapacity](API_ConsumedCapacity.md) objects
 
  ** [ItemCollectionMetrics](#API_BatchWriteItem_ResponseSyntax) **   <a name="DDB-BatchWriteItem-response-ItemCollectionMetrics"></a>

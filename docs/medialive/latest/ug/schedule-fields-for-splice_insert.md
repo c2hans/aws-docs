@@ -16,7 +16,7 @@ This table shows the fields that apply for an action to insert a splice\_insert 
 | Reference action name | If the **Start type** is **Follow**, choose the input to follow. The dropdown list shows all existing input switches that are file inputs. Remember that a SCTE 35 action can follow input A only if input A is a file input and the source end behavior for input A is *continue*.<br />For information about these switching rules, see [Fixed, immediate, and follow switches](ips-switch-types.md). |
 | Follow point | If the Start type is Follow, complete this field. The follow point is always End, to indicate that the switch will occur when the input in Reference action name has finished. |
 | Splice event id | The ID for the splice event. Enter an ID for the splice event that is unique among all scheduled and active splice\_insert messages in this channel. A message is active if the schedule action is in process in the channel and has not completed.  |
-| Duration | The duration for the splice event. Complete in one of these ways:[See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/schedule-fields-for-splice_insert.html) |
+| Duration | The duration for the splice event. Complete in one of these ways:+  Enter the duration, in 90-kHz ticks. For example, 1350000, which is equal to 15 seconds. <br />+  Leave empty to create a message with no duration.  |
 
 The splice\_insert inserted in the transport stream will have the following:
 

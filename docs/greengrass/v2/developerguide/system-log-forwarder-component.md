@@ -168,6 +168,6 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/system-log-forwarder-component.html)  |
-| 2.0.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/system-log-forwarder-component.html)  |
+| 2.1.0 |  **Bug fixes and improvements**<br />   Updates the component recipe to properly support Greengrass nucleus.   Improved logging output when there are no logs to upload.   General bug fixes and improvements.     |
+| 2.0.1 |  **Bug fixes and improvements**<br /> Updates the component recipe to properly support aarch64 (arm64) systems.   |
 | 2.0.0 | Initial version. |

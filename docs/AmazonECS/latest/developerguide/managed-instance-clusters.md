@@ -11,7 +11,7 @@ Amazon ECS Managed Instances has the following capacity providers.
 
 | Type | Criteria used to choose instances |
 | --- | --- |
-| Default | The most cost-effective instances that meet the following task definition and service parameter requirements: [See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-clusters.html) |
+| Default | The most cost-effective instances that meet the following task definition and service parameter requirements: +  Task definition   operatingSystemFamily   cpuArchitecture   cpu   memory   <br />+  Service definition   placementConstraints   placementStrategy    |
 | Custom | The instances that meet the attribute and type requirements that you specify when you create the cluster. For information about attributes, see [Amazon ECS container instance attributes](task-placement-constraints.md#attributes). For information about instance types, see [Amazon EC2 instance type specifications](https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-type-specifications.html) in Amazon EC2 Instance Types. |
 
 Amazon ECS launches the instances and associates them with the Amazon ECS Managed Instances capacity provider. For the custom capacity provider, Amazon ECS also creates the capacity provider.

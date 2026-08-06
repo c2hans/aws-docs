@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_
 # CreateFleetLocations
 <a name="API_CreateFleetLocations"></a>
 
- **This API works with the following fleet types:** EC2, Container
+ **This API works with the following fleet types:** EC2, Anywhere, Container
 
 Adds remote locations to an EC2 and begins populating the new locations with instances. The new instances conform to the fleet's instance type, auto-scaling, and other configuration settings.
 

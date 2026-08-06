@@ -29,8 +29,8 @@ Review the following table for common Inference Recommender errors and their sol
 | Total Traffic duration (across) should not be more than Job duration. | The total duration of all your Phases cannot exceed the Job duration. |
 | Burstable instance type ml.t2.medium is not allowed. | Inference Recommender doesn't support load testing on t2 instance family because burstable instances do not provide consistent performance. |
 | ResourceLimitExceeded when calling CreateEndpoint operation | You have exceeded a SageMaker AI resource limit. For example, Inference Recommender might be unable to provision endpoints for benchmarking if the account has reached the endpoint quota. For more information about SageMaker AI limits and quotas, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html). |
-| ModelError when calling InvokeEndpoint operation | A model error can happen for the following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommender-troubleshooting.html) |
-| PayloadError when calling InvokeEndpoint operation | A payload error can happen for following reasons:[See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/inference-recommender-troubleshooting.html) |
+| ModelError when calling InvokeEndpoint operation | A model error can happen for the following reasons:+  The invocation timed out while waiting for a response from the model container. <br />+  The model couldn't process the input payload.  |
+| PayloadError when calling InvokeEndpoint operation | A payload error can happen for following reasons:+  The payload source isn't in the Amazon S3 bucket. <br />+  The payload is in a non-file object format. <br />+  The payload is in an invalid file type. For example, a model expects an image type payload but is passed a text file. <br />+  The payload is empty.  |
 
 ## Check CloudWatch
 <a name="inference-recommender-troubleshooting-check-cw"></a>

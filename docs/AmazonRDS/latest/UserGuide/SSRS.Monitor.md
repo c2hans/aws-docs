@@ -24,11 +24,11 @@ The `rds_fn_task_status` function returns the following information.
 | Output parameter | Description |
 | --- | --- |
 | `task_id` | The ID of the task. |
-| `task_type` | For SSRS, tasks can have the following task types:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Monitor.html)<br />For PBIRS, tasks can have the following task types:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Monitor.html) |
+| `task_type` | For SSRS, tasks can have the following task types:+ `SSRS_GRANT_PORTAL_PERMISSION`<br />+ `SSRS_REVOKE_PORTAL_PERMISSION`<br />For PBIRS, tasks can have the following task types:+ `PBIRS_GRANT_PORTAL_PERMISSION`<br />+ `PBIRS_REVOKE_PORTAL_PERMISSION` |
 | `database_name` | Not applicable to SSRS or PBIRS tasks. |
 | `% complete` | The progress of the task as a percentage. |
 | `duration (mins)` | The amount of time spent on the task, in minutes. |
-| `lifecycle` | The status of the task. Possible statuses are the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SSRS.Monitor.html) |
+| `lifecycle` | The status of the task. Possible statuses are the following:+  `CREATED` – After you call one of the SSRS stored procedures, a task is created and the status is set to `CREATED`. <br />+  `IN_PROGRESS` – After a task starts, the status is set to `IN_PROGRESS`. It can take up to five minutes for the status to change from `CREATED` to `IN_PROGRESS`. <br />+  `SUCCESS` – After a task completes, the status is set to `SUCCESS`. <br />+  `ERROR` – If a task fails, the status is set to `ERROR`. For more information about the error, see the `task_info` column. <br />+  `CANCEL_REQUESTED` – After you call the `rds_cancel_task` stored procedure, the status of the task is set to `CANCEL_REQUESTED`. <br />+  `CANCELLED` – After a task is successfully canceled, the status of the task is set to `CANCELLED`.   |
 | `task_info` | Additional information about the task. If an error occurs during processing, this column contains information about the error.  |
 | `last_updated` | The date and time that the task status was last updated.  |
 | `created_at` | The date and time that the task was created. |

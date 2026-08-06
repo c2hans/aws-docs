@@ -13,39 +13,39 @@ Contains detailed information about the customer associated with the lead, inclu
 **Note**
 In the following list, the required parameters are described first.
 
- ** Address **   <a name="AWSPartnerCentral-Type-LeadCustomer-Address"></a>
-An object that contains an `Address` object's subset of fields.
-Type: [AddressSummary](API_AddressSummary.md) object
-Required: Yes
-
  ** CompanyName **   <a name="AWSPartnerCentral-Type-LeadCustomer-CompanyName"></a>
 The name of the lead customer's company. This field is essential for identifying and tracking the customer organization associated with the lead.
 Type: String
 Pattern: `(?s).{1,120}`
 Required: Yes
 
+ ** Address **   <a name="AWSPartnerCentral-Type-LeadCustomer-Address"></a>
+The address information for the lead customer.
+Type: [LeadAddress](API_LeadAddress.md) object
+Required: No
+
  ** AwsMaturity **   <a name="AWSPartnerCentral-Type-LeadCustomer-AwsMaturity"></a>
 Indicates the customer's level of experience and adoption with AWS services. This assessment helps determine the appropriate engagement approach and solution complexity.
 Type: String
-Pattern: `(?s).{1,20}`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** Industry **   <a name="AWSPartnerCentral-Type-LeadCustomer-Industry"></a>
 Specifies the industry sector to which the lead customer's company belongs. This categorization helps in understanding the customer's business context and tailoring appropriate solutions.
 Type: String
-Valid Values: `Aerospace | Agriculture | Automotive | Computers and Electronics | Consumer Goods | Education | Energy - Oil and Gas | Energy - Power and Utilities | Financial Services | Gaming | Government | Healthcare | Hospitality | Life Sciences | Manufacturing | Marketing and Advertising | Media and Entertainment | Mining | Non-Profit Organization | Professional Services | Real Estate and Construction | Retail | Software and Internet | Telecommunications | Transportation and Logistics | Travel | Wholesale and Distribution | Other`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** MarketSegment **   <a name="AWSPartnerCentral-Type-LeadCustomer-MarketSegment"></a>
 Specifies the market segment classification of the lead customer, such as enterprise, mid-market, or small business. This segmentation helps in targeting appropriate solutions and engagement strategies.
 Type: String
-Valid Values: `Enterprise | Large | Medium | Small | Micro`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
  ** WebsiteUrl **   <a name="AWSPartnerCentral-Type-LeadCustomer-WebsiteUrl"></a>
 The website URL of the lead customer's company. This provides additional context about the customer organization and helps verify company legitimacy and size.
 Type: String
-Pattern: `(?=.{4,255}$)((http|https)://)??(www[.])??([a-zA-Z0-9]|-)+?([.][a-zA-Z0-9(-|/|=|?)??]+?)+?`
+Length Constraints: Minimum length of 0. Maximum length of 255.
 Required: No
 
 ## See Also

@@ -189,7 +189,7 @@ uname -r
 | Linux upstream | Kernel version 5.9 |
 | Amazon Linux 2 | Kernel 4.14.186 |
 | Red Hat Enterprise Linux (RHEL) | RHEL 8.4 kernel 4.18.0-305 |
-| SUSE Linux Enterprise Server (SLES) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-nitro-instances.html)  |
+| SUSE Linux Enterprise Server (SLES) |  +  SLE 12 SP4 kernel 4.12.14-95.99.3 <br />+  SLE 12 SP5 kernel 4.12.14-122.116.1 <br />+  SLE 15 kernel 4.12.14-150000.150.92.2 <br />+  SLE 15 SP1 kernel 4.12.14-150100.197.114.2 <br />+  SLE 15 SP2 kernel 5.3.18-24.15.1   |
 | Linux Ubuntu | 20.04 kernel 5.4.0-1025-aws |
 | Debian | 11 (Bullseye) kernel 5.10.0 |
 | DPDK | v20.11 |

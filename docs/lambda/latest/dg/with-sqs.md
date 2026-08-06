@@ -45,11 +45,11 @@ For more information about configuration parameters that Lambda supports for SQS
 ## Using provisioned mode with Amazon SQS event source mappings
 <a name="sqs-provisioned-mode"></a>
 
-For workloads where you need to fine-tune the throughput of your event source mapping, you can use provisioned mode. In provisioned mode, you define minimum and maximum limits for the amount of provisioned event pollers. These provisioned event pollers are dedicated to your event source mapping, and can handle unexpected message spikes through responsive autoscaling. Amazon SQS event source mapping configured with Provisioned Mode scales 3x faster (up to 1,000 concurrent invokes per minute) and supports 16x higher concurrency (up to 20,000 concurrent invokes) than default Amazon SQS event source mapping capability.
+For workloads where you need to fine-tune the throughput of your event source mapping, you can use provisioned mode. In provisioned mode, you define minimum and maximum limits for the amount of provisioned event pollers. These provisioned event pollers are dedicated to your event source mapping, and can handle unexpected message spikes through responsive autoscaling. Amazon SQS event source mapping configured with Provisioned Mode scales 3x faster (up to 1,000 concurrent invokes per minute) and supports 80x higher concurrency (up to 100,000 concurrent invokes) than default Amazon SQS event source mapping capability.
 
 We recommend that you use provisioned mode for Amazon SQS event- driven workloads that have strict performance requirements, such as financial services firms processing market data feeds, e-commerce platforms providing real-time personalized recommendations, and gaming companies managing live player interactions. Using provisioned mode incurs additional costs. For detailed pricing, see [AWS Lambda pricing](https://aws.amazon.com/lambda/pricing/).
 
-Each event poller in provisioned mode can handle up to 1 MB/s of throughput, up to 10 concurrent invokes, or up to 10 Amazon SQS polling API calls per second. The range of accepted values for the minimum number of event pollers (MinimumPollers) is between 2 and 200, with default of 2. The range of accepted values for the maximum number of event pollers (MaximumPollers) is between 2 and 2,000, with default of 200. MaximumPollers must be greater than or equal to MinimumPollers.
+Each event poller in provisioned mode can handle up to 1 MB/s of throughput, up to 10 concurrent invokes, or up to 10 Amazon SQS polling API calls per second. The range of accepted values for the minimum number of event pollers (MinimumPollers) is between 2 and 200, with default of 2. The range of accepted values for the maximum number of event pollers (MaximumPollers) is between 2 and 10,000, with default of 200. MaximumPollers must be greater than or equal to MinimumPollers.
 
 ### Determining required event pollers
 <a name="sqs-determining-event-pollers"></a>
@@ -94,7 +94,7 @@ You can configure provisioned mode for your Amazon SQS event source mapping usin
 
 1. Under **Event source mapping configuration**, choose **Configure provisioned mode**.
    + For **Minimum event pollers**, enter a value between 2 and 200. If you don't specify a value, Lambda chooses a default value of 2.
-   + For **Maximum event pollers**, enter a value between 2 and 2,000. This value must be greater than or equal to your value for **Minimum event pollers**. If you don't specify a value, Lambda chooses a default value of 200.
+   + For **Maximum event pollers**, enter a value between 2 and 10,000. This value must be greater than or equal to your value for **Minimum event pollers**. If you don't specify a value, Lambda chooses a default value of 200.
 
 1. Choose **Save**.
 

@@ -166,8 +166,8 @@ Use this metric to track the error rate of KMS keys in your external key store. 
 | KmsOperation | Value for each AWS KMS API operation that generated a request to the XKS proxy. |
 | XksOperation | Value for each [external key store proxy API operation](keystore-external.md#concept-proxy-apis). |
 | KeySpec | Value for each type of KMS key. The only supported [key spec](create-keys.md#key-spec) for KMS keys in an external key store is SYMMETRIC\_DEFAULT. |
-| ErrorType | Values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/monitoring-cloudwatch.html) |
-| ExceptionName | Values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/monitoring-cloudwatch.html) |
+| ErrorType | Values:+  Retryable errors: Likely to be transient, such as networking errors. <br />+  Non-retryable errors: Likely to indicate a problem with the custom key store configuration or external components. <br />+  N/A: Successful request; no errors  |
+| ExceptionName | Values:+  Name of the exception <br />+  None: Successful request; no errors  |
 
 You can create CloudWatch alarms based on the metrics for external key stores and KMS keys in external key stores. For instructions, see [Monitor external key stores](xks-monitoring.md).
 

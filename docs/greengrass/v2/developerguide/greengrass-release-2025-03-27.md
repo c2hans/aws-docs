@@ -23,5 +23,5 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.14.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-03-27.html) |
-| Greengrass CLI | Version 2.14.2 of the [Greengrass CLI](greengrass-cli-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-03-27.html) |
+| Greengrass nucleus | Version 2.14.2 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where an HTTP client isn't configured with mutual auth.    |
+| Greengrass CLI | Version 2.14.2 of the [Greengrass CLI](greengrass-cli-component.md) is available.**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.14.2 release.    |

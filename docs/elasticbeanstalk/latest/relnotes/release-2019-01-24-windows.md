@@ -19,7 +19,7 @@ This release applies Windows January 2019 security updates to the Windows Server
 | **Windows security updates** | Applied January 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **.NET Core updates** | Added support for .NET Core 2.2 for configurations with Windows Server 2012 or later. For details, see [Announcing .NET Core 2.2](https://devblogs.microsoft.com/dotnet/announcing-net-core-2-2/) in the *.NET Blog*. |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions, as follows:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-24-windows.html) |
-| **X1e** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-01-24-windows.html)  |
+| **X1e** |  + Asia Pacific (Seoul) – ap-northeast-2  |
 
 ## Updated platform configurations
 <a name="release-2019-01-24-windows.platforms"></a>

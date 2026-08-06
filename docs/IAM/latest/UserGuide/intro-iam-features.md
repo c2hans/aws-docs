@@ -25,7 +25,7 @@ You can use IAM features to securely provide credentials for applications that r
 ## Multi-factor authentication (MFA)
 <a name="intro-mfa-iam"></a>
 
-You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured device. If you already use a FIDO security key with other services, and it has an AWS supported configuration, you can use WebAuthn for MFA security. For more information, see [Supported configurations for using passkeys and security keys](id_credentials_mfa_fido_supported_configurations)
+You can add two-factor authentication to your account and to individual users for extra security. With MFA you or your users must provide not only a password or access key to work with your account, but also a code from a specially configured device. If you already use a FIDO security key with other services, and it has an AWS supported configuration, you can use WebAuthn for MFA security. For more information, see [Supported configurations for using passkeys and security keys](https://docs.aws.amazon.com/id_credentials_mfa_fido_supported_configurations)
 
 ## Identity federation
 <a name="intro-identity-federation-iam"></a>

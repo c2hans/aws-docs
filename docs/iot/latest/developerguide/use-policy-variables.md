@@ -66,7 +66,7 @@ The following table provides details of how certificate issuer attributes will b
 
 | Certificate issuer attributes | Certificate policy variables |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |
+|  +  C=US <br />+  O=IoT Devices <br />+  OU=SmartHome <br />+  ST=WA <br />+  CN=IoT Devices Primary CA <br />+  GN=Primary CA1 <br />+  initials=XY <br />+  dnQualifier=Example corp <br />+  SN=SmartHome  <br />+  title=CA1 <br />+  pseudonym=Primary\_CA <br />+  generationQualifier=2 <br />+  serialNumber=987   |  +  `iot:Certificate.Issuer.Country = US` <br />+  `iot:Certificate.Issuer.Organization = IoT Devices` <br />+  `iot:Certificate.Issuer.OrganizationalUnit = SmartHome` <br />+  `iot:Certificate.Issuer.State = WA` <br />+  `iot:Certificate.Issuer.CommonName = IoT Devices Primary CA` <br />+  `iot:Certificate.Issuer.GivenName = Primary CA1` <br />+  `iot:Certificate.Issuer.initials = XY` <br />+  `iot:Certificate.Issuer.DistinguishedNameQualifier = Example corp` <br />+  `iot:Certificate.Issuer.Surname = SmartHome` <br />+  `iot:Certificate.Issuer.Title = CA1` <br />+  `iot:Certificate.Issuer.Pseudonym = Primary_CA` <br />+  `iot:Certificate.Issuer.GenerationQualifier = 2` <br />+  `iot:Certificate.Issuer.SerialNumber = 987`   |
 
 ## Using certificate subject attributes as certificate policy variables
 <a name="subject-attributes-policy"></a>
@@ -77,7 +77,7 @@ The following table provides details of how certificate subject attributes will 
 
 | Certificate subject attributes | Certificate policy variables |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |
+|  +  C=US <br />+  O=IoT Devices <br />+  ST=NY <br />+  CN=LightBulb Device Cert <br />+  GN=Bulb <br />+  initials=ZZ <br />+  dnQualifier=Bulb001 <br />+  SN=Multi Color <br />+  title=RGB <br />+  pseudonym=RGB Device <br />+  generationQualifier=4 <br />+  serialNumber=123   |  +  `iot:Certificate.Subject.Country = US` <br />+  `iot:Certificate.Subject.Organization = IoT Devices` <br />+  `iot:Certificate.Subject.State = NY` <br />+  `iot:Certificate.Subject.CommonName = LightBulb Device Cert` <br />+  `iot:Certificate.Subject.GivenName = Bulb` <br />+  `iot:Certificate.Subject.initials = ZZ` <br />+  `iot:Certificate.Subject.DistinguishedNameQualifier = Bulb001` <br />+  `iot:Certificate.Subject.Surname = Multi Color` <br />+  `iot:Certificate.Subject.Title = RGB` <br />+  `iot:Certificate.Subject.Pseudonym = RGB Device` <br />+  `iot:Certificate.Subject.GenerationQualifier = 4` <br />+  `iot:Certificate.Subject.SerialNumber = 123`   |
 
 ## Using certificate Issuer alternate name attributes as certificate policy variables
 <a name="issuer-alternate-name-attributes-policy"></a>
@@ -88,7 +88,7 @@ The following table provides details of how certificate issuer alternate name at
 
 | X509v3 Issuer Alternative Name | Attribute in a policy |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |
+|  +  DNS:issuer.com <br />+  IP Address:5.6.7.8 <br />+  URI:PrimarySignerCA <br />+  email:primary@issuer.com <br />+  DirName:/C=US/O=Issuer/OU=IoT Devices/CN=Primary Issuer CA   |  +  `iot:Certificate.Issuer.AlternativeName.DNSName = issuer.com` <br />+  `iot:Certificate.Issuer.AlternativeName.IPAddress = 5.6.7.8` <br />+  `iot:Certificate.Issuer.AlternativeName.UniformResourceIdentifier = PrimarySignerCA` <br />+  `iot:Certificate.Issuer.AlternativeName.RFC822Name = primary@issuer.com` <br />+  `iot:Certificate.Issuer.AlternativeName.DirectoryName = cn=Primary Issuer CA,ou=IoT Devices,o=Issuer,c=US`   |
 
 ## Using certificate subject alternate name attributes as certificate policy variables
 <a name="subject-alternate-name-attributes-policy"></a>
@@ -99,7 +99,7 @@ The following table provides details of how certificate subject alternate name a
 
 | X509v3 Subject Alternative Name | Attribute in a policy |
 | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot/latest/developerguide/use-policy-variables.html)  |
+|  +  DNS:example.com <br />+  IP Address:1.2.3.4 <br />+  URI:ResourceIdentifier001 <br />+  email:device1@example.com <br />+  DirName:/C=US/O=IoT/OU=SmartHome/CN=LightBulbCert   |  +  `iot:Certificate.Subject.AlternativeName.DNSName = example.com` <br />+  `iot:Certificate.Subject.AlternativeName.IPAddress = 1.2.3.4` <br />+  `iot:Certificate.Subject.AlternativeName.UniformResourceIdentifier = ResourceIdentifier001` <br />+  `iot:Certificate.Subject.AlternativeName.RFC822Name = device1@example.com` <br />+  `iot:Certificate.Subject.AlternativeName.DirectoryName = cn=LightBulbCert,ou=SmartHome,o=IoT,c=US`   |
 
 ## Using other certificate attribute as a certificate policy variable
 <a name="other-attributes-policy"></a>

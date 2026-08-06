@@ -18,7 +18,7 @@ The deployed resource consists of the following:
 <a name="tutorial_saml-federated-role-prereqs"></a>
 
 This tutorial assumes that you have the following already in place:
-+ An existing SAML IdP configured in your AWS account. If you don't have one, you can create it using the [IAM tutorial: Use an CloudFormation template to create a SAML Identity Provider (IdP)](tutorial_saml-idp.md) tutorial.
++ An existing SAML IdP configured in your AWS account. If you don't have one, you can create it using the [IAM tutorial: Use a CloudFormation template to create a SAML Identity Provider (IdP)](tutorial_saml-idp.md) tutorial.
 + The ARN of your SAML IdP, which you'll need to specify as a parameter when creating the stack.
 + Python 3.6 or later installed on your local machine to run the Python command used in this tutorial for formatting your IdP's SAML metadata XML file.
 
@@ -65,7 +65,7 @@ Next, use the template you've saved to provision a CloudFormation stack.
 
       Example: `arn:aws:iam::123456789012:saml-provider/CompanyIdP`
 **Note**
-If you created your SAML IdP using the [IAM tutorial: Use an CloudFormation template to create a SAML Identity Provider (IdP)](tutorial_saml-idp.md) tutorial, you can find the provider ARN in the Outputs tab of that CloudFormation stack.
+If you created your SAML IdP using the [IAM tutorial: Use a CloudFormation template to create a SAML Identity Provider (IdP)](tutorial_saml-idp.md) tutorial, you can find the provider ARN in the Outputs tab of that CloudFormation stack.
 
    1. For **RoleName**, you can leave this empty to auto-generate a name based on the stack name, or enter a custom name for the IAM role.
 

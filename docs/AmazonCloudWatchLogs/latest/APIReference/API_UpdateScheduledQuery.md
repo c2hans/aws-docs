@@ -14,6 +14,15 @@ Updates an existing scheduled query with new configuration. This operation uses 
 {
    "description": "{{string}}",
    "destinationConfiguration": {
+      "lookupTableConfiguration": {
+         "description": "{{string}}",
+         "kmsKeyId": "{{string}}",
+         "roleArn": "{{string}}",
+         "tableName": "{{string}}",
+         "tags": {
+            "{{string}}" : "{{string}}"
+         }
+      },
       "s3Configuration": {
          "destinationIdentifier": "{{string}}",
          "kmsKeyId": "{{string}}",
@@ -134,6 +143,15 @@ Required: No
    "creationTime": number,
    "description": "string",
    "destinationConfiguration": {
+      "lookupTableConfiguration": {
+         "description": "string",
+         "kmsKeyId": "string",
+         "roleArn": "string",
+         "tableName": "string",
+         "tags": {
+            "string" : "string"
+         }
+      },
       "s3Configuration": {
          "destinationIdentifier": "string",
          "kmsKeyId": "string",

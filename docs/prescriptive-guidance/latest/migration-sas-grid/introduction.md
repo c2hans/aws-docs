@@ -18,11 +18,11 @@ This guide is intended for organizations that want to rehost or replatform their
 
 |  |  |
 | --- |--- |
-| Workload | Source workload | SAS Grid Manager for PlatformSAS Grid Manager |
+| Workload | Source workload | + SAS Grid Manager for Platform<br />+ SAS Grid Manager |
 | --- |--- |--- |
-| Source environment | Unix, LinuxOn-premises/co-location/non-AWS environment |
-| Destination workload | SAS Grid ManagerDeployment: SAS Intelligence Platform software on a multi-machine host |
-| Destination environment | AWSOperating model: customer/MSP (ISV) |
+| Source environment | + Unix, Linux<br />+ On-premises/co-location/non-AWS environment |
+| Destination workload | + SAS Grid Manager<br />+ Deployment: SAS Intelligence Platform software on a multi-machine host |
+| Destination environment | + AWS<br />+ Operating model: customer/MSP (ISV) |
 | **Migration** | Migration strategy (7 Rs) | Rehost/replatform |
 | Is this an upgrade in workload version? | No |
 | Is the source workload different from the ISV workload? | No |
@@ -33,9 +33,9 @@ This guide is intended for organizations that want to rehost or replatform their
 | Service-level agreements (SLAs) | [SAS Technical Support Services and Policies](https://support.sas.com/en/technical-support/services-policies.html) |
 | Recovery time objective (RTO) | [SAS 9.4 Disaster Recovery Policy](https://support.sas.com/en/technical-support/services-policies/disaster-recovery-policy.html) |
 | Recovery point objective (RPO) | [SAS 9.4 Disaster Recovery Policy](https://support.sas.com/en/technical-support/services-policies/disaster-recovery-policy.html) |
-| Licensing and operating model for the target AWS account | Bring Your Own License (BYOL)Managed services |
-| Migration tooling | [SAS Migration Utility](https://documentation.sas.com/doc/en/bicdc/9.4/bimig/n08001intelplatform00migrate.htm)[AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/) |
-| AWS services used | [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)[FSx for Lustre](https://aws.amazon.com/fsx/lustre/)[Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/)[Amazon Virtual Private Cloud (Amazon VPC)](https://aws.amazon.com/vpc/)NAT gatewayInternet gateway[Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/)[AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) |
+| Licensing and operating model for the target AWS account | + Bring Your Own License (BYOL)<br />+ Managed services |
+| Migration tooling | + [SAS Migration Utility](https://documentation.sas.com/doc/en/bicdc/9.4/bimig/n08001intelplatform00migrate.htm)<br />+ [AWS Database Migration Service (AWS DMS)](https://aws.amazon.com/dms/) |
+| AWS services used | + [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/)<br />+ [FSx for Lustre](https://aws.amazon.com/fsx/lustre/)<br />+ [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/)<br />+ [Amazon Virtual Private Cloud (Amazon VPC)](https://aws.amazon.com/vpc/)NAT gatewayInternet gateway<br />+ [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/)<br />+ [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) |
 | Benchmarks | Contact the SAS Enterprise Excellence Center for benchmark information relevant to your site. |
 | **Compliance** | Security and compliance requirements | [SAS 9.4 Intelligence Platform: Security Administration Guide](https://documentation.sas.com/doc/en/bicdc/9.4/bisecag/titlepage.htm) |
 | Other [compliance certifications](https://aws.amazon.com/compliance/programs) | [SAS Governance and Compliance Manager](https://support.sas.com/documentation/prod-p/gcm/index.html) |

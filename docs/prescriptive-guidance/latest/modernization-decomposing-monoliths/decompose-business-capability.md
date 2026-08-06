@@ -11,7 +11,7 @@ You can use your organization's business process or capabilities to decompose a 
 |
 | Advantages | Disadvantages |
 | --- |--- |
-| Generates a stable microservices architecture if the business capabilities are relatively stable.Development teams are cross-functional and organized around delivering business value instead of technical features.Services are loosely coupled. | Application design is tightly coupled with the business model.Requires an in-depth understanding of the overall business, because it can be difficult to identify business capabilities and services. |
+| + Generates a stable microservices architecture if the business capabilities are relatively stable.<br />+ Development teams are cross-functional and organized around delivering business value instead of technical features.<br />+ Services are loosely coupled. | + Application design is tightly coupled with the business model.<br />+ Requires an in-depth understanding of the overall business, because it can be difficult to identify business capabilities and services. |
 
 In the following diagram, an insurance monolith is decomposed into four microservices based on business capabilities.
 

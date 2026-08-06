@@ -294,7 +294,7 @@ IAM provides two ways that David can use to enter the **Switch Role** page:
 ### Switch roles (AWS CLI)
 <a name="switch-cli-tutorial_cross-account-with-roles"></a>
 
- If David needs to work in the **Destination** environment at the command line, he can do so by using the [AWS CLI](http://aws.amazon.com/cli/). He runs the `aws sts assume-role` command and passes the role ARN to get temporary security credentials for that role. He then configures those credentials in environment variables so subsequent AWS CLI commands work using the role's permissions. While David uses the role, he cannot use his power-user privileges in the **Originating** account, because only one set of permissions can be in effect at a time.
+ If David needs to work in the **Destination** environment at the command line, he can do so by using the [AWS CLI](https://docs.aws.amazon.com/http://aws.amazon.com/cli/). He runs the `aws sts assume-role` command and passes the role ARN to get temporary security credentials for that role. He then configures those credentials in environment variables so subsequent AWS CLI commands work using the role's permissions. While David uses the role, he cannot use his power-user privileges in the **Originating** account, because only one set of permissions can be in effect at a time.
 
 Note that all access keys and tokens are examples only and cannot be used as shown. Replace with the appropriate values from your live environment.
 

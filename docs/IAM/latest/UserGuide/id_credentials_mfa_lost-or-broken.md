@@ -19,7 +19,7 @@ If your [multi-factor authentication (MFA) device](id_credentials_mfa.md) is los
 
 **To sign in using another MFA device**
 
-1. Sign in to the [AWS Management Console](url-comsole-domain;iam) with your AWS account ID or account alias and password.
+1. Sign in to the [AWS Management Console](https://docs.aws.amazon.com/url-comsole-domain;iam) with your AWS account ID or account alias and password.
 
 1. On the **Additional verification required** page or **Multi-factor authentication** page, choose **Try another MFA method**.
 
@@ -69,8 +69,8 @@ You might see alternative text, such as **Sign in using MFA**, **Troubleshoot yo
 
 1. The next step varies depending on the type of MFA you are using:
    + For a virtual MFA device, remove the account from your device. Then go to the [AWS Security Credentials](https://console.aws.amazon.com/iam/home?#security_credential) page and delete the old MFA virtual device entity before you create a new one.
-   + For a FIDO security key, go to the [AWS Security Credentials](https://console.aws.amazon.com/iam/home?#security_credential) page and deactivate the old FIDO security key before enabling a new one.
-   + For a hardware TOTP token, contact the third-party provider for help with fixing or replacing the device. You can continue to sign in using alternative factors of authentication until you receive your new device. After you have the new hardware MFA device, go to the [AWS Security Credentials](https://console.aws.amazon.com/iam/home?#security_credential) page and delete the old MFA device.
+   + For a FIDO security key, see the [AWS Security Credentials](https://console.aws.amazon.com/iam/home?#security_credential) page and deactivate the old FIDO security key before enabling a new one.
+   + For a hardware TOTP token, contact the third-party provider for help with fixing or replacing the device. You can continue to sign in using alternative factors of authentication until you receive your new device. After you have the new hardware MFA device, see the [AWS Security Credentials](https://console.aws.amazon.com/iam/home?#security_credential) page and delete the old MFA device.
 **Note**
 You don't have to replace a lost or stolen MFA device with the same type of device. For example, if you break your FIDO security key and order a new one, you can use virtual MFA or a hardware TOTP token until the new FIDO key arrives.
 

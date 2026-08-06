@@ -31,8 +31,8 @@ For WorkSpaces Thin Client administrator console to work properly with Amazon Wo
 | Feature | Requirement |
 | --- | --- |
 | Web access | Enabled |
-| Supported operating system |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/configuring-WSP.html)  |
-| Supported bundles |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/configuring-WSP.html)  |
+| Supported operating system |  + Windows 10<br />+ Windows 10 (Bring Your Own License)<br />+ Windows 11<br />+ Windows 11 (Bring Your Own License)  |
+| Supported bundles |  + Microsoft Power with Windows 10 (Server 2016, 2019, and 2022 based)<br />+ Microsoft Power with Windows 10 (Server 2016, 2019, and 2022 based) w Office<br />+ Microsoft PowerPro with Windows 10 (Server 2016, 2019, and 2022 based)<br />+ Microsoft PowerPro with Windows 10 (Server 2016, 2019, and 2022 based) w Office<br />+ Microsoft Performance with Windows 10 (Server 2016, 2019, and 2022 based)<br />+ Microsoft Performance with Windows 10 (Server 2016, 2019, and 2022 based) w Office  |
 | Supported protocol | DCV only |
 
 ## Step 2: Use advanced setup to launch your WorkSpace

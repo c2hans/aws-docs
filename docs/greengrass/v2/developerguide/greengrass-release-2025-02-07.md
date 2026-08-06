@@ -23,6 +23,6 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.14.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-02-07.html) |
-| Greengrass CLI | Version 2.14.1 of the [Greengrass CLI](greengrass-cli-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-02-07.html) |
-| Secure tunneling | Version 1.1.1 of the [secure tunneling](secret-manager-component.md) component is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-02-07.html) |
+| Greengrass nucleus | Version 2.14.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where components weren't stopped properly on new installations of Greengrass.    |
+| Greengrass CLI | Version 2.14.1 of the [Greengrass CLI](greengrass-cli-component.md) is available.**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.14.1 release.    |
+| Secure tunneling | Version 1.1.1 of the [secure tunneling](secret-manager-component.md) component is available.**Bug fixes and improvements**<br />   Adds a configuration to support Greengrass nucleus lite.    |

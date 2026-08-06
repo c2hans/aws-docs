@@ -93,7 +93,7 @@ The following table lists Amazon Lex V2 features that are limited to certain lan
 | [AMAZON.KendraSearchIntent](built-in-intent-kendra-search.md) | English (US) (en\_US) |
 | [Improving speech recognition with a custom vocabulary](vocab.md) | English (UK) (en\_GB)<br />English (US) (en\_US) |
 | [Automated Chatbot Designer](https://docs.aws.amazon.com/lexv2/latest/dg/designing.html) | English (US) (en\_US) |
-| Region availability | The following languages and locales are not available in the Asia Pacific (Singapore) (ap-southeast-1) and Africa (Cape Town) (ap-south-1) Regions:[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html) |
+| Region availability | The following languages and locales are not available in the Asia Pacific (Singapore) (ap-southeast-1) and Africa (Cape Town) (ap-south-1) Regions:+  Gulf Arabic (United Arab Emirates) (ar\_AE) <br />+  Catalan (Spain) (ca\_ES) <br />+  Finnish (Finland) (fi\_FI) <br />+  Hindi (India) (hi\_IN) <br />+  Dutch (The Netherlands) (nl\_NL) <br />+  Norwegian (Norway) (no\_NO) <br />+  Polish (pl\_PL) <br />+  Portuguese (Brazil) (pt\_BR) <br />+  Portuguese (Portugal) (pt\_PT) <br />+  Swedish (sv\_SE) <br />+  Mandarin (PRC) (zh\_CN) <br />+  Cantonese (Hong Kong) (zh\_HK)  |
 | [Setting intent context for your Lex V2 bot](context-mgmt-active-context.md) | English (US) (en\_US) |
 | [Grammar slot type](building-srgs.md) | English (Australia) (en\_AU)<br />English (UK) (en\_GB)<br />English (US) (en\_US) |
 | [Using multiple values in a slot](multi-valued-slots.md) | English (US) (en\_US) |

@@ -259,7 +259,7 @@ If the broadcast software does not implement GetClientConfiguration or FindInges
 
 |  User UI Selection  |  Connect to ingest endpoint specified by …  |
 | --- | --- |
-| Auto | Global ingest URL: [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html) |
+| Auto | Global ingest URL: +  For RTMP: rtmp://ingest.global-contribute.live-video.net/app <br />+  For RTMPS: rtmps://ingest.global-contribute.live-video.net:443/app  |
 | Specify Custom Server | User's selection |
 
 See [Using a FindIngest Server for Auto Streaming Destination](#multitrack-video-sw-integration-recommended-features-using-findingest) for more information about using ingest endpoints specified by FindIngest.
@@ -319,19 +319,19 @@ The BPM TS SEI message conveys one or more related timestamps. For example, the 
 |  |  |  |
 | --- |--- |--- |
 | `user_data_unregistered_bpm_ts( payloadSize ) {` | **C** | **Descriptor** |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(128) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | st(v) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(64) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | i(64) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
+|  +  `uuid_iso_iec_11578`   | 5 | u(128) |
+|  +  `ts_reserved_zero_4bits`   | 5 | b(4) |
+|  +  `num_timestamps_minus1`   | 5 | u(4) |
+|  +  `for( i = 0; i <= num_timestamps_minus1; i++ ) {`   |   |   |
+|  +    `timestamp_type[i]`     | 5 | u(8) |
+|  +    `timestamp_event[i]`     | 5 | u(8) |
+|  +    `if (timestamp_type[i] == 1)`     |   |   |
+|  +      `rfc3339_ts[i]`       | 5 | st(v) |
+|  +    `else if (timestamp_type[i] == 2)`     |   |   |
+|  +      `duration_since_epoch_ts[i]`       | 5 | u(64) |
+|  +    `else if (timestamp_type[i] == 3)`     |   |   |
+|  +      `delta_ts[i]`       | 5 | i(64) |
+|  +  `}`   |   |   |
 | `}` |   |   |
 
 #### BPM TS SEI Field Description Table
@@ -343,7 +343,7 @@ The BPM TS SEI message conveys one or more related timestamps. For example, the 
 | `ts_reserved_zero_4bits` | Reserved for future use. Set to `b('0000')`. Receiver shall ignore these bits. |
 | `num_timestamps_minus1` | `num_timestamps=num_timestamps_minus1+1`<br />`num_timestamps_minus1` shall be between 0 and 15, meaning between 1 and 16 timestamps can be signaled. |
 | `timestamp_type` | See [timestamp\_type Table](#multitrack-video-sw-integration-performance-metrics-definitions-bpm-ts-types). |
-| `timestamp_event` | One of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)<br />There is no syntactic discriminator to identify uniqueness in cases where `num_timestamps_minus1` is greater than 0 (i.e., more than one timestamp is signaled); hence, `timestamp_event` should be unique within the SEI loop. Signaling multiple timestamps with the same `timestamp_event` is not precluded; however, the interpretation of the timestamps is outside the scope of the message. |
+| `timestamp_event` | One of the following:+  `BPM_TS_EVENT_CTS = 1` // Composition Time Event <br />+  `BPM_TS_EVENT_FER = 2` // Frame Encode Request Event <br />+  `BPM_TS_EVENT_FERC = 3` // Frame Encode Request Complete Event <br />+  `BPM_TS_EVENT_PIR = 4` // Packet Interleave Request Event <br />There is no syntactic discriminator to identify uniqueness in cases where `num_timestamps_minus1` is greater than 0 (i.e., more than one timestamp is signaled); hence, `timestamp_event` should be unique within the SEI loop. Signaling multiple timestamps with the same `timestamp_event` is not precluded; however, the interpretation of the timestamps is outside the scope of the message. |
 
 #### timestamp\_type Table
 <a name="multitrack-video-sw-integration-performance-metrics-definitions-bpm-ts-types"></a>
@@ -378,25 +378,25 @@ This SEI message also includes a timestamp. This is redundant with the BPM TS SE
 |  |  |  |
 | --- |--- |--- |
 | `user_data_unregistered_bpm_sm( payloadSize ) {` | **C** | **Descriptor** |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(128) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | st(v) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(64) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | i(64) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(32) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
+|  +  `uuid_iso_iec_11578`   | 5 | u(128) |
+|  +  `ts_reserved_zero_4bits`   | 5 | b(4) |
+|  +  `num_timestamps_minus1`   | 5 | u(4) |
+|  +  `for( i = 0; i <= num_timestamps_minus1; i++ ) {`   |   |   |
+|  +    `timestamp_type[i]`     | 5 | u(8) |
+|  +    `timestamp_event[i]`     | 5 | u(8) |
+|  +    `if (timestamp_type[i] == 1)`     |   |   |
+|  +      `rfc3339_ts[i]`       | 5 | st(v) |
+|  +    `else if (timestamp_type[i] == 2)`     |   |   |
+|  +      `duration_since_epoch_ts[i]`       | 5 | u(64) |
+|  +    `else if (timestamp_type[i] == 3)`     |   |   |
+|  +      `delta_ts[i]`       | 5 | i(64) |
+|  +  `}`   |   |   |
+|  +  `ts_reserved_zero_4bits`   | 5 | b(4) |
+|  +  `num_counters_minus1`   | 5 | u(4) |
+|  +  `for( i = 0; i <= num_counters_minus1; i++ ) {`   |   |   |
+|  +    `counter_tag[i]`     | 5 | b(8) |
+|  +    `counter_value[i]`     | 5 | b(32) |
+|  +  `}`   |   |   |
 | `}` |   |   |
 
 #### BPM SM SEI Field Description Table
@@ -410,9 +410,9 @@ Many fields in this SEI message are similar to BPM TS SEI fields. The significan
 | `ts_reserved_zero_4bits` | Reserved for future use. Set to `b('0000')`. Receiver shall ignore these bits. |
 | `num_timestamps_minus1` | `num_timestamps=num_timestamps_minus1+1`<br />`num_timestamps_minus1` shall be between 0 and 15, meaning between 1 and 16 timestamps can be signaled.<br />Currently, this should be 0 (indicating a single timestamp). |
 | `timestamp_type` | See [timestamp\_type Table](#multitrack-video-sw-integration-performance-metrics-definitions-bpm-ts-types). For BPM SM SEI, this shall be type 1 - RFC3339 string. |
-| `timestamp_event` | One of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)<br />There is no syntactic discriminator to identify uniqueness in cases where `num_timestamps_minus1` is greater than 0 (i.e., more than one timestamp is signaled); hence, `timestamp_event` should be unique within the SEI loop. Signaling multiple timestamps with the same `timestamp_event` is not precluded; however, the interpretation of the timestamps is outside the scope of the message.<br />**Note:** Amazon IVS expects BPM SM SEI using `timestamp_event` only set to 4 (`BPM_TS_EVENT_PIR`). This will evolve as support for additional timestamp events are added. |
+| `timestamp_event` | One of the following:+  `BPM_TS_EVENT_CTS = 1` // Composition Time Event <br />+  `BPM_TS_EVENT_FER = 2` // Frame Encode Request Event <br />+  `BPM_TS_EVENT_FERC = 3` // Frame Encode Request Complete Event <br />+  `BPM_TS_EVENT_PIR = 4` // Packet Interleave Request Event <br />There is no syntactic discriminator to identify uniqueness in cases where `num_timestamps_minus1` is greater than 0 (i.e., more than one timestamp is signaled); hence, `timestamp_event` should be unique within the SEI loop. Signaling multiple timestamps with the same `timestamp_event` is not precluded; however, the interpretation of the timestamps is outside the scope of the message.<br />**Note:** Amazon IVS expects BPM SM SEI using `timestamp_event` only set to 4 (`BPM_TS_EVENT_PIR`). This will evolve as support for additional timestamp events are added. |
 | `num_counters_minus1` | `num_counters=num_counters_minus1+1`<br />`num_counters_minus1` shall be between 0 and 15, meaning between 1 and 16 counters can be signaled.<br />For BPM SM SEI, this should be 3 (meaning 4 counters). |
-| `counter_tag` | One of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html) |
+| `counter_tag` | One of the following:+  `BPM_SM_FRAMES_RENDERED = 1` // Frames rendered by compositor <br />+  `BPM_SM_FRAMES_LAGGED = 2` // Frames lagged by compositor <br />+  `BPM_SM_FRAMES_DROPPED = 3` // Frames dropped due to network congestion <br />+  `BPM_SM_FRAMES_OUTPUT = 4` // Total frames output (sum of all video encoder rendition sinks)  |
 | `counter_value` | The 32-bit difference value for the specified `counter_tag`, relative to the last time it was sent. For example, with 60 fps rendering, each 2 seconds `counter_value` should be 120. |
 
 #### BPM SM Example
@@ -449,25 +449,25 @@ This SEI message also includes a timestamp. This is redundant with the BPM TS SE
 |  |  |  |
 | --- |--- |--- |
 | `user_data_unregistered_bpm_erm( payloadSize ) {` | **C** | **Descriptor** |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(128) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | st(v) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(64) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | i(64) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | u(4) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(8) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  | 5 | b(32) |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)  |   |   |
+|  +  `uuid_iso_iec_11578`   | 5 | u(128) |
+|  +  `ts_reserved_zero_4bits`   | 5 | b(4) |
+|  +  `num_timestamps_minus1`   | 5 | u(4) |
+|  +  `for( i = 0; i <= num_timestamps_minus1; i++ ) {`   |   |   |
+|  +    `timestamp_type[i]`     | 5 | u(8) |
+|  +    `timestamp_event[i]`     | 5 | u(8) |
+|  +    `if (timestamp_type[i] == 1)`     |   |   |
+|  +      `rfc3339_ts[i]`       | 5 | st(v) |
+|  +    `else if (timestamp_type[i] == 2)`     |   |   |
+|  +      `duration_since_epoch_ts[i]`       | 5 | u(64) |
+|  +    `else if (timestamp_type[i] == 3)`     |   |   |
+|  +      `delta_ts[i]`       | 5 | i(64) |
+|  +  `}`   |   |   |
+|  +  `ts_reserved_zero_4bits`   | 5 | b(4) |
+|  +  `num_counters_minus1`   | 5 | u(4) |
+|  +  `for( i = 0; i <= num_counters_minus1; i++ ) {`   |   |   |
+|  +    `counter_tag[i]`     | 5 | b(8) |
+|  +    `counter_value[i]`     | 5 | b(32) |
+|  +  `}`   |   |   |
 | `}` |   |   |
 
 #### BPM ERM SEI Field Description Table
@@ -481,9 +481,9 @@ Many fields in this SEI message are similar to the BPM TS SEI fields and the BPM
 | `ts_reserved_zero_4bits` | Reserved for future use. Set to `b('0000')`. Receiver shall ignore these bits. |
 | `num_timestamps_minus1` | `num_timestamps=num_timestamps_minus1+1`<br />`num_timestamps_minus1` shall be between 0 and 15, meaning between 1 and 16 timestamps can be signaled.<br />Currently, this should be 0 (indicating a single timestamp). |
 | `timestamp_type` | See [timestamp\_type Table](#multitrack-video-sw-integration-performance-metrics-definitions-bpm-ts-types).<br />This shall be a type 1 - RFC3339 string. |
-| `timestamp_event` | One of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html)<br />There is no syntactic discriminator to identify uniqueness in cases where `num_timestamps_minus1` is greater than 0 (i.e., more than one timestamp is signaled); hence, `timestamp_event` should be unique within the SEI loop. Signaling multiple timestamps with the same `timestamp_event` is not precluded; however, the interpretation of the timestamps is outside the scope of the message.<br />**Note:** Amazon IVS expects BPM ERM SEI using `timestamp_event` set only to 4 (`BPM_TS_EVENT_PIR`). This will evolve as support for additional timestamp events are added. |
+| `timestamp_event` | One of the following:+  `BPM_TS_EVENT_CTS = 1` // Composition Time Event <br />+  `BPM_TS_EVENT_FER = 2` // Frame Encode Request Event <br />+  `BPM_TS_EVENT_FERC = 3` // Frame Encode Request Complete Event <br />+  `BPM_TS_EVENT_PIR = 4` // Packet Interleave Request Event <br />There is no syntactic discriminator to identify uniqueness in cases where `num_timestamps_minus1` is greater than 0 (i.e., more than one timestamp is signaled); hence, `timestamp_event` should be unique within the SEI loop. Signaling multiple timestamps with the same `timestamp_event` is not precluded; however, the interpretation of the timestamps is outside the scope of the message.<br />**Note:** Amazon IVS expects BPM ERM SEI using `timestamp_event` set only to 4 (`BPM_TS_EVENT_PIR`). This will evolve as support for additional timestamp events are added. |
 | `num_counters_minus1` | `num_counters=num_counters_minus1+1`<br />`num_counters_minus1` shall be between 0 and 15, meaning between 1 and 16 counters can be signaled.<br />For BPM ERM SEI, this should be 2 (meaning 3 counters). |
-| `counter_tag` | One of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/multitrack-video-sw-integration.html) |
+| `counter_tag` | One of the following:+  `BPM_ERM_FRAMES_INPUT = 1` // Frames input to the encoder rendition <br />+  `BPM_ERM_FRAMES_SKIPPED = 2` // Frames skipped by the encoder rendition <br />+  `BPM_ERM_FRAMES_OUTPUT = 3` // Frames output (encoded) by the encoder rendition  |
 | `counter_value` | The 32-bit difference value for the specified `counter_tag`, relative to the last time it was sent. For example, with 60 fps rendering, each 2 seconds `counter_value` should be 120. |
 
 #### BPM ERM Example

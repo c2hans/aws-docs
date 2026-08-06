@@ -50,7 +50,7 @@ The following table lists the AWS AppConfig resource types. The **Data event typ
 
 | Data event type (console) | resources.type value | Data APIs logged to CloudTrail\* |
 | --- | --- | --- |
-| AWS AppConfig |  AWS::AppConfig::Configuration  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appconfig/latest/userguide/logging-using-cloudtrail.html)  |
+| AWS AppConfig |  AWS::AppConfig::Configuration  |  +  [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_GetLatestConfiguration.html) <br />+  [https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_StartConfigurationSession.html](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_appconfigdata_StartConfigurationSession.html)   |
 
 \*You can configure advanced event selectors to filter on the `eventName`, `readOnly`, and `resources.ARN` fields to log only those events that are important to you. For more information about these fields, see [https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_AdvancedFieldSelector.html).
 

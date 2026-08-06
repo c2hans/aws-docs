@@ -150,14 +150,14 @@ The code for this pattern is available in the GitHub [EKS Auto Mode Enablement v
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Configure the GitHub repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/enable-eks-auto-mode-using-github-actions.html) | AWS DevOps, Cloud architect |
+| Configure the GitHub repository. | 1. Clone and fork the GitHub repository. Once cloned, copy the workflow file to your GitHub repository <pre>git clone https://github.com/aws-samples/sample-enable-eks-auto-mode-using-github-actions.git</pre><pre>cd sample-enable-eks-auto-mode-using-github-actions</pre><pre>cp .github/workflows/enable-eks-auto-mode.yml /path/to/your/repository/.github/workflows</pre><br />2. Commit and push the changes to **your GitHub repo**<pre>cd <path/to/your/repository><br />git add .<br />git commit -m "Added EKS Auto Mode configurations"<br />git push origin main</pre><br />3. Set Up the git secrets for the repository:<pre>gh auth login --web  #authenticate to your github account using web</pre><pre>#create secrets<br />gh secret set AWS_REGION --body "us-east-1" </pre><pre>gh secret set AWS_ROLE_ARN --body "arn:aws:iam:ACCOUNT_ID:role/GitHubActionsEKSRole" <br />#replace the account id with your account ID</pre> | AWS DevOps, Cloud architect |
 
 ### (Optional) Set up an IAM role
 <a name="optional-set-up-an-iam-role"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Set up IAM for backup and node group deletion | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/enable-eks-auto-mode-using-github-actions.html)<pre>eksctl create iamidentitymapping \ --cluster $CLUSTER_NAME\ --region us-east-1 \ --arn arn:aws:iam::$ACCOUNT_ID:role/GitHubActionsEKSRole \ --group system:masters \ --username github-actions</pre>Replace the **$CLUSTER\_NAME** and **$ACCOUNT\_ID** with the appropriate values. [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/enable-eks-auto-mode-using-github-actions.html)<pre>CLUSTERS=$(aws eks list-clusters --region $AWS_REGION --query 'clusters[]' --output text)<br /><br />CLUSTERS_NEEDING_AUTO_MODE=""<br /><br />for cluster in $CLUSTERS; do<br />    <br />    <br />    AUTO_MODE=$(aws eks describe-cluster --name $cluster --region $AWS_REGION --query 'cluster.computeConfig.enabled' --output text 2>/dev/null || echo "false")<br />    <br />    if [ "$AUTO_MODE" != "True" ]; then<br />       <br />        CLUSTERS_NEEDING_AUTO_MODE="$CLUSTERS_NEEDING_AUTO_MODE $cluster"<br />        <br />        echo " Adding role access to cluster..."<br />        eksctl create iamidentitymapping \<br />          --cluster $cluster \<br />          --region $AWS_REGION \<br />          --arn $ROLE_ARN \<br />          --group system:masters\<br />          --username github-actions || echo "  ⚠️  Role mapping may already exist"<br />        <br />        echo "  ✅ Role access configured for $cluster"<br />done</pre><br />Replace the **$AWS\_REGION** and **$ROLE\_ARN** with the specific region and the arn of the IAM role created above respectively.  | AWS DevOps, Cloud architect |
+| Set up IAM for backup and node group deletion | 1. Add the role to the aws-auth ConfigMap using your terminal:<pre>eksctl create iamidentitymapping \ --cluster $CLUSTER_NAME\ --region us-east-1 \ --arn arn:aws:iam::$ACCOUNT_ID:role/GitHubActionsEKSRole \ --group system:masters \ --username github-actions</pre>Replace the **$CLUSTER\_NAME** and **$ACCOUNT\_ID** with the appropriate values. 1. For more than one cluster, you can run the following commands in the terminal assuming a role that has Admin or equivalent level access to your account:<pre>CLUSTERS=$(aws eks list-clusters --region $AWS_REGION --query 'clusters[]' --output text)<br /><br />CLUSTERS_NEEDING_AUTO_MODE=""<br /><br />for cluster in $CLUSTERS; do<br />    <br />    <br />    AUTO_MODE=$(aws eks describe-cluster --name $cluster --region $AWS_REGION --query 'cluster.computeConfig.enabled' --output text 2>/dev/null || echo "false")<br />    <br />    if [ "$AUTO_MODE" != "True" ]; then<br />       <br />        CLUSTERS_NEEDING_AUTO_MODE="$CLUSTERS_NEEDING_AUTO_MODE $cluster"<br />        <br />        echo " Adding role access to cluster..."<br />        eksctl create iamidentitymapping \<br />          --cluster $cluster \<br />          --region $AWS_REGION \<br />          --arn $ROLE_ARN \<br />          --group system:masters\<br />          --username github-actions || echo "  ⚠️  Role mapping may already exist"<br />        <br />        echo "  ✅ Role access configured for $cluster"<br />done</pre><br />Replace the **$AWS\_REGION** and **$ROLE\_ARN** with the specific region and the arn of the IAM role created above respectively.  | AWS DevOps, Cloud architect |
 
 ### Execute and validate
 <a name="execute-and-validate"></a>
@@ -171,14 +171,14 @@ The code for this pattern is available in the GitHub [EKS Auto Mode Enablement v
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Implementation of multi-environment deployment. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/enable-eks-auto-mode-using-github-actions.html) |  |
+| Implementation of multi-environment deployment. | + The solution can be made environment-specific by leveraging branch-based deployments.<br />+ Different branches (main, dev, feat/\*) trigger workflows with environment-specific configurations through GitHub secrets (AWS\_REGION, AWS\_ROLE\_ARN, S3\_BACKUP\_BUCKET).<br />+ This allows for separate AWS regions, IAM roles, and cluster sets per environment while maintaining consistent automation logic across all environments. |  |
 
 ### Cleanup
 <a name="cleanup"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clean up resources. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/enable-eks-auto-mode-using-github-actions.html) | General AWS, Cloud architect |
+| Clean up resources. | 1.  To detach the IAM role from the aws-auth ConfigMap, use the following terminal command:<pre>eksctl delete iamidentitymapping \   --cluster $cluster \   --region $AWS_REGION \   --arn $ROLE_ARN  </pre> | General AWS, Cloud architect |
 
 ## Troubleshooting
 <a name="enable-eks-auto-mode-using-github-actions-troubleshooting"></a>

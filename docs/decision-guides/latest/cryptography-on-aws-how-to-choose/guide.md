@@ -11,7 +11,7 @@ source_url: https://docs.aws.amazon.com/decision-guides/latest/cryptography-on-a
 | --- |--- |
 | **Purpose** | Help determine which AWS cryptography services are the best fit for your organization. |
 | **Last updated** | January 31, 2025 |
-| **Covered services** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/decision-guides/latest/cryptography-on-aws-how-to-choose/guide.html)  |
+| **Covered services** |  + [AWS Certificate Manager](https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html) <br />+ [AWS CloudHSM](https://docs.aws.amazon.com/cloudhsm/latest/userguide/introduction.html) <br />+ [AWS Database Encryption SDK](https://docs.aws.amazon.com/database-encryption-sdk/latest/devguide/what-is-database-encryption-sdk.html) <br />+ [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/introduction.html) <br />+ [AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) <br />+ [AWS Private CA](https://docs.aws.amazon.com/privateca/latest/userguide/PcaWelcome.html) <br />+ [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html)   |
 | **Related guides** | [ Choosing AWS security, identity, and governance services](https://docs.aws.amazon.com/decision-guides/latest/security-on-aws-how-to-choose/choosing-aws-security-services.html) |
 
 ## Introduction

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/location/latest/APIReference/API_geoplac
 # SearchNearby
 <a name="API_geoplaces_SearchNearby"></a>
 
- `SearchNearby` queries for points of interest within a radius from a central coordinates, returning place results with optional filters such as categories, business chains, food types and more. The API returns details such as a place name, address, phone, category, food type, contact, opening hours. Also, the API can return phonemes, time zones and more based on requested parameters. Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ `SearchNearby` queries for points of interest within a radius from a central coordinates, returning place results with optional filters such as categories, business chains, food types and more. The API returns details such as a place name, address, phone, category, food type, contact, opening hours. Also, the API can return phonemes, time zones and more based on requested parameters.
 
 For more information, see [Search Nearby](https://docs.aws.amazon.com/location/latest/developerguide/search-nearby.html) in the *Amazon Location Service Developer Guide*.
 
@@ -53,7 +53,7 @@ Length Constraints: Minimum length of 0. Maximum length of 1000.
 The request accepts the following data in JSON format.
 
  ** [AdditionalFeatures](#API_geoplaces_SearchNearby_RequestSyntax) **   <a name="location-geoplaces_SearchNearby-request-AdditionalFeatures"></a>
-A list of optional additional parameters, such as time zone, that can be requested for each result.
+A list of optional additional parameters, such as time zone, that can be requested for each result. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the `TimeZone` value.
 Type: Array of strings
 Array Members: Minimum number of 1 item. Maximum number of 5 items.
 Valid Values: `TimeZone | Phonemes | Access | Contact | CrossReferences`
@@ -65,14 +65,14 @@ Type: [SearchNearbyFilter](API_geoplaces_SearchNearbyFilter.md) object
 Required: No
 
  ** [IntendedUse](#API_geoplaces_SearchNearby_RequestSyntax) **   <a name="location-geoplaces_SearchNearby-request-IntendedUse"></a>
- Indicates if the query results will be persisted in customer infrastructure. Defaults to `SingleUse` (not stored). Not supported in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Indicates if the query results will be persisted in customer infrastructure. Defaults to `SingleUse` (not stored).
 When storing `SearchNearby` responses, you *must* set this field to `Storage` to comply with the terms of service. These requests will be charged at a higher rate. Please review the [user agreement](https://aws.amazon.com/location/sla/) and [service pricing structure](https://aws.amazon.com/location/pricing/) to determine the correct setting for your use case.
 Type: String
 Valid Values: `SingleUse | Storage`
 Required: No
 
  ** [Language](#API_geoplaces_SearchNearby_RequestSyntax) **   <a name="location-geoplaces_SearchNearby-request-Language"></a>
-A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry.
+A list of [BCP 47](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry) compliant language codes for the results to be rendered in. If there is no data for the result in the requested language, data will be returned in the default language for the entry. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only the following codes: `en, id, km, lo, ms, my, pt, th, tl, vi, zh`
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 35.
 Required: No
@@ -91,7 +91,7 @@ Length Constraints: Minimum length of 1. Maximum length of 2000.
 Required: No
 
  ** [PoliticalView](#API_geoplaces_SearchNearby_RequestSyntax) **   <a name="location-geoplaces_SearchNearby-request-PoliticalView"></a>
-The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country.
+The alpha-2 or alpha-3 character code for the political view of a country. The political view applies to the results of the request to represent unresolved territorial claims through the point of view of the specified country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Type: String
 Length Constraints: Minimum length of 2. Maximum length of 3.
 Pattern: `([A-Z]{2}|[A-Z]{3})`
@@ -104,8 +104,7 @@ Array Members: Fixed number of 2 items.
 Required: Yes
 
  ** [QueryRadius](#API_geoplaces_SearchNearby_RequestSyntax) **   <a name="location-geoplaces_SearchNearby-request-QueryRadius"></a>
-The maximum distance in meters from the QueryPosition from which a result will be returned.
-The fields `QueryText`, and `QueryID` are mutually exclusive.
+The maximum distance in meters from the QueryPosition from which a result will be returned. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions support only up to a maximum value of 100,000.
 Type: Long
 Valid Range: Minimum value of 1. Maximum value of 21000000.
 Required: No

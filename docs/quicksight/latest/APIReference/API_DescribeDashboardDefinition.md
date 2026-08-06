@@ -127,6 +127,7 @@ Content-type: application/json
          "ExcludedDataSetArns": [ "string" ],
          "QBusinessInsightsStatus": "string",
          "Timezone": "string",
+         "VisualMessages": { ... },
          "WeekStart": "string"
       },
       "ParameterDeclarations": [
@@ -139,6 +140,9 @@ Content-type: application/json
          { ... }
       ],
       "TooltipSheets": [
+         { ... }
+      ],
+      "TopicIdentifierDeclarations": [
          { ... }
       ]
    },

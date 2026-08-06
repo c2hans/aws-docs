@@ -20,8 +20,8 @@ AWS Partner product descriptions and reported qualifications, including complian
 | **Product website** | [Deloitte ATADATA](https://www2.deloitte.com/us/en/pages/consulting/topics/atadata-automated-cloud-management-platform.html) |
 | **Product certifications**<br />[AWS Competency Program](https://aws.amazon.com/partners/offerings/) competencies and other certifications | Migration and Modernization ISV Competency |
 | **AWS Marketplace**<br />Link to subscribe or download | [Deloitte ATADATA on AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id=f6c626d1-60f5-46bf-af5d-67508a35ac25) |
-| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | Servers deployed on AWS (customer VPC)Servers deployed on premises in customer environmentSaaS or servers in other cloud provider environment |
-| **Compliance** | General Data Protection Regulation (GDPR)Health Insurance Portability and Accountability Act (HIPAA)Payment card industry (PCI)System and Organization Controls (SOC) |
+| **Tool deployment model**<br />Product can be SaaS-based or customer-deployed | + Servers deployed on AWS (customer VPC)<br />+ Servers deployed on premises in customer environment<br />+ SaaS or servers in other cloud provider environment |
+| **Compliance** | + General Data Protection Regulation (GDPR)<br />+ Health Insurance Portability and Accountability Act (HIPAA)<br />+ Payment card industry (PCI)<br />+ System and Organization Controls (SOC) |
 | **Service model** | Managed service (including partner-enabled service) – Deployment, management, and maintenance require professional services |
 | **Pricing model** | Subscription |
 
@@ -32,15 +32,15 @@ AWS Partner product descriptions and reported qualifications, including complian
 |
 | Category | Product capabilities |
 | --- |--- |
-| **Replication method**<br />The ability to support one or more of the following replication methods:Agentless – Uses protocols or interfaces such as SNMP or WMIAgent-based – Requires installation of software on the source resources, such as Linux or Windows serversLogin-based – Uses protocols, such as SSH and RDP, to log in to the source servers | Agentless |
-| **Supported sources**<br />The hosting environments that the product can migrate applications from | Container platforms, including Docker and Kubernetes-basedGoogle Cloud PlatformHyper-VMicrosoft AzurePhysical serversVMware |
-| **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | Application environmentPerformance dataSoftware versions |
-| **Supported operating systems**<br />Operating systems that the product can migrate | IBM AIXHP-UXLinuxSolarisWindows |
-| **Supported targets**<br />Resources that the product can migrate to | Amazon Elastic Compute Cloud (Amazon EC2)Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS) |
+| **Replication method**<br />The ability to support one or more of the following replication methods:+ Agentless – Uses protocols or interfaces such as SNMP or WMI<br />+ Agent-based – Requires installation of software on the source resources, such as Linux or Windows servers<br />+ Login-based – Uses protocols, such as SSH and RDP, to log in to the source servers | Agentless |
+| **Supported sources**<br />The hosting environments that the product can migrate applications from | + Container platforms, including Docker and Kubernetes-based<br />+ Google Cloud Platform<br />+ Hyper-V<br />+ Microsoft Azure<br />+ Physical servers<br />+ VMware |
+| **Application data collection**<br />The ability to collect data to support application transformation, such as code from .NET legacy to .NET core, monolith-to-microservices code conversions, or server-to-container conversions | + Application environment<br />+ Performance data<br />+ Software versions |
+| **Supported operating systems**<br />Operating systems that the product can migrate | + IBM AIX<br />+ HP-UX<br />+ Linux<br />+ Solaris<br />+ Windows |
+| **Supported targets**<br />Resources that the product can migrate to | + Amazon Elastic Compute Cloud (Amazon EC2)<br />+ Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS) |
 | **Source code repository integration**<br />Repositories that the product can analyze to support application transformation | Not available |
 | **Deployment integration**<br />Services that the product integrates with to support deployment | Not available |
 | **Infrastructure as code templates**<br />Templates that the product can generate to support application deployment | Not available |
-| **Notifications**<br />Methods that the product can use to notify you of progress or issues | LogsMetrics |
+| **Notifications**<br />Methods that the product can use to notify you of progress or issues | + Logs<br />+ Metrics |
 | **Replication options, continuous asynchronous replication** | Available |
 | **Replication options, bandwidth consumption**<br />The ability to manage bandwidth consumption, such as by using throttling or parallel replication streams | Available |
 | **Replication options, storage types**<br />The ability to select storage types for both temporary and target replication disk volumes to manage performance and cost | Available |

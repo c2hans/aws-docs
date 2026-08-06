@@ -14,7 +14,7 @@ This guidance demonstrates how the AWS Security Reference Architecture (AWS SRA)
 |
 | Principle | Guidance |
 | --- |--- |
-| Scoping drives everything | A well-designed OU and account structure — segmenting CDE, Connected-To, and Out-of-Scope accounts — is one of the most impactful lever for reducing assessment surface and clarifying control ownership. |
+| 1. Scoping drives everything | A well-designed OU and account structure — segmenting CDE, Connected-To, and Out-of-Scope accounts — is one of the most impactful lever for reducing assessment surface and clarifying control ownership. |
 | AWS SRA is necessary foundation with extension to meet PCI DSS | Each domain distinguishes "within the AWS SRA" (baseline already met) from "beyond the AWS SRA" (additional PCI-specific configuration required). Use this to target gaps without over-engineering. |
 | Automate for continuous compliance | AWS Config, Security Hub, CloudTrail, and EventBridge enable a shift from point-in-time audits to continuous monitoring and automated remediation — essential for PCI DSS v4.0's emphasis on ongoing security. |
 | Identity is the cloud perimeter | IAM, Organizations SCPs, and centralized federation enforce least privilege and strong authentication at the platform level (Requirements 7, 8). |

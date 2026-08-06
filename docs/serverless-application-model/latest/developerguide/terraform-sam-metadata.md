@@ -26,9 +26,9 @@ This page contains reference information for the **sam metadata resource** resou
 | docker\_file | The path to the Docker file. This path is relative to the `docker_context` path.<br />This argument is optional. Default value is `Dockerfile`. |
 | docker\_tag | The value of the created Docker image tag. This value is optional. |
 | depends\_on | The path to the building resource for your Lambda function or layer. To learn more, see [The **depends\_on** argument](https://developer.hashicorp.com/terraform/language/meta-arguments/depends_on) in the Terraform registry. |
-| original\_source\_code | The path to where your Lambda function is defined. This value can be a string, array of strings, or a decoded JSON object as a string.[See the AWS documentation website for more details](http://docs.aws.amazon.com/serverless-application-model/latest/developerguide/terraform-sam-metadata.html) |
+| original\_source\_code | The path to where your Lambda function is defined. This value can be a string, array of strings, or a decoded JSON object as a string.+  For string arrays, only the first value is used since multiple code paths are not supported. <br />+  For JSON objects, the `source_code_property` must also be defined.  |
 | resource\_name | The Lambda function name. |
-| resource\_type | The format of your Lambda function package type. Accepted values are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/serverless-application-model/latest/developerguide/terraform-sam-metadata.html) |
+| resource\_type | The format of your Lambda function package type. Accepted values are:+  `IMAGE_LAMBDA_FUNCTION` <br />+  `LAMBDA_LAYER` <br />+  `ZIP_LAMBDA_FUNCTION`  |
 | source\_code\_property | The path to the Lambda resource code in the JSON object. Define this property when original\_source\_code is a JSON object. |
 
 ## Examples

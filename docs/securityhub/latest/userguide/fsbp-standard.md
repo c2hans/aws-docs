@@ -284,8 +284,6 @@ The following list specifies which AWS Security Hub CSPM controls apply to the A
 
  [[EFS.4] EFS access points should enforce a user identity](efs-controls.md#efs-4)
 
- [[EFS.6] EFS mount targets should not be associated with subnets that assign public IP addresses on launch](efs-controls.md#efs-6)
-
  [[EFS.7] EFS file systems should have automatic backups enabled](efs-controls.md#efs-7)
 
  [[EFS.8] EFS file systems should be encrypted at rest](efs-controls.md#efs-8)

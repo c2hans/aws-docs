@@ -42,9 +42,9 @@ The following table shows example instance type combinations:
 
 | Instance family | Example instance type combinations |
 | --- | --- |
-| R5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-limits.html)  |
-| C5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-limits.html)  |
-| M5 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-limits.html)  |
+| R5 |  +  Example 1: 4 x `r5.4xlarge` \+ 4 x `r5.2xlarge` <br />+  Example 2: 1 x `r5.12xlarge` \+ 1 x `r5.4xlarge` \+ 1 x `r5.2xlarge` \+ 5 x `r5.xlarge` \+ 2 x `r5.large`   |
+| C5 |  +  Example 1: 1 x `c5.9xlarge` \+ 2 x `c5.4xlarge` \+ 1 x `c5.xlarge` <br />+  Example 2: 4 x `c5.4xlarge` \+ 1 x `c5.xlarge` \+ 2 x `c5.large`   |
+| M5 |  +  Example 1: 4 x `m5.4xlarge` \+ 4 x `m5.2xlarge` <br />+  Example 2: 1 x `m5.12xlarge` \+ 1 x `m5.4xlarge` \+ 1 x `m5.2xlarge` \+ 5 x `m5.xlarge` \+ 2 x `m5.large`   |
 
 **Considerations**
 Keep the following in mind when working with Dedicated Hosts that support multiple instance types:

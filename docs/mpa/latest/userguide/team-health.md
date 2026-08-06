@@ -66,8 +66,8 @@ As a Multi-party approval admin, the monthly team report is sent to you to help 
 
 | Section | Details |
 | --- | --- |
-| Approval team summary |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mpa/latest/userguide/team-health.html)  |
-| Operation summary |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/mpa/latest/userguide/team-health.html)  |
+| Approval team summary |  + Number of teams with all active approvers<br />+ Number of teams with inactive approvers<br />+ List of team names and Amazon Resource Names (ARNs) for teams with inactive approvers  |
+| Operation summary |  + Number of total requested operations<br />+ Number of total responses to requested operations<br />+ Number of total expired requested operations<br />+ Number of total canceled requested operations  |
 
 ![AWS Multi-party approval teams monthly report showing team status and operation metrics.](http://docs.aws.amazon.com/mpa/latest/userguide/images/team-summary.png)
 

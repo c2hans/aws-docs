@@ -591,18 +591,18 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.3.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
+| 2.3.3 |  **Bug fixes and improvements**<br />   Fixes an issue where high concurrent device load could cause the MQTT bridge to stop relaying messages after a dropped PUBACK.     |
 | 2.3.2 | Version updated for [client device auth](client-device-auth-component.md) version 2.5.0 release. |
-| 2.3.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
-| 2.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
-| 2.2.6 |  <a name="changelog-mqtt-bridge-2.2.6"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
+| 2.3.1 |  **Bug fixes and improvements**<br /> Fixes an issue where the local MQTT client gets into a disconnect loop.   |
+| 2.3.0 |  **New features**<br /> Adds MQTT5 support for bridging between AWS IoT Core and local MQTT sources.   |
+| 2.2.6 |  <a name="changelog-mqtt-bridge-2.2.6"></a>**New features**<br /> Adds a new `startupTimeoutSeconds` configuration option.   |
 | 2.2.5 | Version updated for [client device auth](client-device-auth-component.md) version 2.4.0 release. |
 | 2.2.4 | Version updated for Greengrass [client device auth](client-device-auth-component.md) version 2.3.0 release. |
 | 2.2.3 | This version contains bug fixes and improvements. |
-| 2.2.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
-| 2.2.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
-| 2.2.0 |  <a name="changelog-mqtt-bridge-2.2.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
-| 2.1.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/mqtt-bridge-component.html)  |
+| 2.2.2 |  **Bug fixes and improvements**<br />   Logging adjustments.     |
+| 2.2.1 |  **Bug fixes and improvements**<br /> Fixes issues that can result in the MQTT bridge failing to subscribe to MQTT topics.   |
+| 2.2.0 |  <a name="changelog-mqtt-bridge-2.2.0"></a>**New features**<br />   Adds support for MQTT topic wildcards (`#` and `+`) when you specify local publish/subscribe as the source message broker. <br />This feature requires v2.6.0 or later of the [Greengrass nucleus component](greengrass-nucleus-component.md).   Adds the `targetTopicPrefix` option, which you can specify to configure the MQTT bridge to add a prefix to the target topic when it relays a message.     |
+| 2.1.1 |  **Bug fixes and improvements**<br />   Fixes issues with how this component handles configuration reset updates.   Reduces the frequency of MQTT client disconnects when certificates rotate.     |
+| 2.1.0 |  **New features**<br />   Adds the `brokerUri` parameter, which enables you to use a non-default MQTT broker port.     |
 | 2.0.1 | This version includes bug fixes and improvements. |
 | 2.0.0 | Initial version. |

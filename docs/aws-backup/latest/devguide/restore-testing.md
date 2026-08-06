@@ -172,6 +172,8 @@ The testing plan must contain:
 
   [https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html](https://docs.aws.amazon.com/aws-backup/latest/devguide/API_RestoreTestingRecoveryPointSelection.html) has five parameters (three required and two optional). The values you specify determine which recovery point is included in the restore test. You must indicate with `Algorithm` if you want the latest recovery point within your `SelectionWindowDays` or if you want a random recovery point, and you must indicate through `IncludeVaults` from which vaults the recovery points can be chosen.
 
+  `SelectionWindowDays`: The selection window is calculated from the actual job execution time, not the plan's scheduled start time. Because jobs can start anywhere within the `StartWindowHours` period, set `SelectionWindowDays` to be greater than your backup frequency interval plus your `StartWindowHours` value to avoid edge-case recovery point exclusions.
+
 A selection can have one or more protected resource ARNs or can have one or more conditions, but it cannot have not both.
 
 You can also include:

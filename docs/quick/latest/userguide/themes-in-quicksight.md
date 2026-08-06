@@ -19,7 +19,7 @@ The following table defines the different settings.
 | Main  | Primary foreground | The color of text and other foreground elements that appear over the primary background regions such as grid lines, borders, table banding, icons, and so on.   |
 | Main  | Secondary background | The background color used for the sheet background and sheet controls. |
 | Main  | Secondary foreground | The foreground color used for any sheet title, sheet control text, or UI that appears over the secondary background. |
-| Main  | Accent | This setting is used as an interactive hint for the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/quick/latest/userguide/themes-in-quicksight.html) |
+| Main  | Accent | This setting is used as an interactive hint for the following:+  Buttons <br />+  Borders around the selected visual <br />+  Loading indicators <br />+  Narration customizations <br />+  Links <br />+  Filter panes for embedded dashboards   |
 | Main  | Accent foreground | The foreground color applies to any text or other elements that appear over the accent color. |
 | Main | Font | The font to use for all of the text. You can choose from a variety of fonts supported by Amazon Quick Sight. |
 | Data  | Data colors | These are the data colors that charts rotate through when assigning colors to groups. You can add or remove colors to this list, or choose a color to change it. |

@@ -86,7 +86,7 @@ The attached code includes:
 | Specify the S3 bucket name. | For the **S3 Bucket** parameter, specify the name of the S3 bucket that you created in the first epic. | Cloud architect |
 | Specify the Amazon S3 key name for the Lambda file. | For the **S3 Key** parameter, specify the Amazon S3 location of the Lambda code .zip file in your S3 bucket. Do not include leading slashes (for example, you can enter lambda.zip or controls/lambda.zip). | Cloud architect |
 | Provide a notification email address. | For the **Notification email** parameter, provide an email address where you would like to receive the violation notifications. | Cloud architect |
-| Define the logging level. | For the **Lambda Logging level** parameter, define the logging level for your Lambda function. Choose one of the following values: [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/check-an-amazon-cloudfront-distribution-for-access-logging-https-and-tls-version.html) | Cloud architect |
+| Define the logging level. | For the **Lambda Logging level** parameter, define the logging level for your Lambda function. Choose one of the following values: + **INFO **to get detailed informational messages on the application’s progress.<br />+ **ERROR **to get information about error events that could still allow the application to continue running.<br />+ **WARNING **to get information about potentially harmful situations. | Cloud architect |
 
 ### Confirm the subscription
 <a name="confirm-the-subscription"></a>

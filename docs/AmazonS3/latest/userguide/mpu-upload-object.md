@@ -19,7 +19,7 @@ The following section show how to use multipart upload with the AWS Command Line
 
 You can upload any file type—images, backups, data, movies, and so on—into an S3 bucket. The maximum size of a file that you can upload by using the Amazon S3 console is 160 GB. To upload a file larger than 160 GB, use the AWS Command Line Interface (AWS CLI), AWS SDKs, or Amazon S3 REST API.
 
-For instructions on uploading an object via the AWS Management Console, see [Uploading objects](upload-objects.md).
+For instructions on uploading an object through the AWS Management Console, see [Uploading objects](upload-objects.md).
 
 ## Using the AWS CLI
 <a name="UsingCLImpUpload"></a>

@@ -21,7 +21,7 @@ The **BatchServiceRolePolicy** managed IAM policy is used by the [`AWSServiceRol
 This policy allows AWS Batch to complete the following actions on specific resources:
 + `autoscaling` – Allows AWS Batch to create and manage Amazon EC2 Auto Scaling resources. AWS Batch creates and manages Amazon EC2 Auto Scaling groups for most compute environments.
 + `ec2` – Allows AWS Batch to control the lifecycle of Amazon EC2 instances as well as create and manage launch templates and tags. AWS Batch creates and manages EC2 Spot Fleet requests for some EC2 Spot compute environments.
-+ `ecs` - Allows AWS Batch to create and managed Amazon ECS clusters, task definitions and tasks for job execution.
++ `ecs` – Allows AWS Batch to create and manage Amazon ECS clusters, capacity providers, task definitions, and tasks for job execution.
 + `eks` - Allows AWS Batch to describe the Amazon EKS cluster resource for validations.
 + `iam` - Allows AWS Batch to validate and pass roles provided by owner to Amazon EC2, Amazon EC2 Auto Scaling and Amazon ECS.
 + `logs` – Allows AWS Batch to create and manage log groups and log streams for AWS Batch jobs.
@@ -69,6 +69,7 @@ View details about updates to AWS managed policies for AWS Batch since this serv
 
 | Change | Description | Date |
 | --- | --- | --- |
+| ****[BatchServiceRolePolicy](#security-iam-awsmanpol-BatchServiceRolePolicy)**** policy updated | Updated to add Amazon ECS capacity provider permissions, cluster update permissions, and tagging permissions for capacity provider resources. | August 5, 2026 |
 | ****[ AWSBatchServiceRolePolicyForSageMaker](#security-iam-awsmanpol-sagemaker-service-role-policy)**** policy updated | Updated to add `sagemaker:DeleteTrainingJob` permission to allow AWS Batch to delete SageMaker AI training jobs. | April 16, 2026 |
 | ****[ AWSBatchServiceRolePolicyForSageMaker](using-service-linked-roles-batch-sagemaker.md)**** policy added | Added new AWS managed policy for the ** AWSBatchServiceRolePolicyForSageMaker** service-linked role that allows AWS Batch to manage SageMaker AI on your behalf. | July 31, 2025 |
 | ****[BatchServiceRolePolicy](#security-iam-awsmanpol-BatchServiceRolePolicy)**** policy updated | Updated to add support for describing Spot Fleet request history and Amazon EC2 Auto Scaling activities. | December 5, 2023 |

@@ -213,6 +213,31 @@ Required: Yes
       "TableName": "string",
       "TableSizeBytes": number,
       "TableStatus": "string",
+      "VectorIndexes": [
+         {
+            "Backfilling": boolean,
+            "Dimensions": number,
+            "DistanceFunction": "string",
+            "IndexArn": "string",
+            "IndexName": "string",
+            "IndexSizeBytes": number,
+            "IndexStatus": "string",
+            "ItemCount": number,
+            "Projection": {
+               "NonKeyAttributes": [ "string" ],
+               "ProjectionType": "string"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "string",
+                  "SearchSchemaElementType": "string"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "string"
+            }
+         }
+      ],
       "WarmThroughput": {
          "ReadUnitsPerSecond": number,
          "Status": "string",

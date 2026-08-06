@@ -21,7 +21,7 @@ S3 Object Ownership is an Amazon S3 bucket-level setting that you can use to bot
 If your general purpose bucket uses the Bucket owner enforced setting for S3 Object Ownership, you must use policies to grant access to your general purpose bucket and the objects in it. With the Bucket owner enforced setting enabled, requests to set access control lists (ACLs) or update ACLs fail and return the `AccessControlListNotSupported` error code. Requests to read ACLs are still supported.
 
 **Warning**
-We highly recommend that you avoid granting write access to the **Everyone (public access)** or **Authenticated Users group (all AWS authenticated users)** groups. For more information about the effects of granting write access to these groups, see [Amazon S3 predefined groups](acl-overview.md#specifying-grantee-predefined-groups).
+Do not grant write access to the **Everyone (public access)** or **Authenticated Users group (all AWS authenticated users)** groups. For more information about the effects of granting write access to these groups, see [Amazon S3 predefined groups](acl-overview.md#specifying-grantee-predefined-groups).
 
 ## Using the S3 console to set ACL permissions for a bucket
 <a name="set-bucket-permissions"></a>
@@ -64,7 +64,7 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
    + **List** – Allows a grantee to list the objects in the bucket.
    + **Write** – Allows grantee to create new objects in the bucket. For the bucket and object owners of existing objects, also allows deletions and overwrites of those objects.
 
-     In the S3 console, you can only grant write access to the S3 log delivery group and the bucket owner (your AWS account). We highly recommend that you do not grant write access for other grantees. However, if you need to grant write access, you can use the AWS CLI, AWS SDKs, or the REST API.
+     In the S3 console, you can only grant write access to the S3 log delivery group and the bucket owner (your AWS account). Do not grant write access for other grantees. However, if you need to grant write access, you can use the AWS CLI, AWS SDKs, or the REST API.
 
 **Bucket ACL**
    + **Read** – Allows grantee to read the bucket ACL.
@@ -80,7 +80,7 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
    + **Objects** – **List**
    + **Bucket ACL** – **Read**
 **Warning**
-Use caution when granting the **Everyone** group public access to your S3 bucket. When you grant access to this group, anyone in the world can access your bucket. We highly recommend that you never grant any kind of public write access to your S3 bucket.
+Use caution when granting the **Everyone** group public access to your S3 bucket. When you grant access to this group, anyone in the world can access your bucket. Never grant any kind of public write access to your S3 bucket.
 
 1. To grant or undo permissions for anyone with an AWS account, beside **Authenticated Users group (anyone with an AWS account)**, clear or select from the following ACL permissions:
    + **Objects** – **List**
@@ -90,7 +90,7 @@ Use caution when granting the **Everyone** group public access to your S3 bucket
    + **Objects** – **List** or **Write**
    + **Bucket ACL** – **Read** or **Write**
 
-     If a bucket is set up as the target bucket to receive access logs, the bucket permissions must allow the **Log Delivery** group write access to the bucket. When you enable server access logging on a bucket, the Amazon S3 console grants write access to the **Log Delivery** group for the target bucket that you choose to receive the logs. For more information about server access logging, see [Enabling Amazon S3 server access logging](enable-server-access-logging.md).
+     If a bucket is set up as the target to receive access logs, the bucket permissions must allow the **Log Delivery** group write access. When you enable server access logging on a bucket, the Amazon S3 console grants write access to the **Log Delivery** group for the target bucket that you choose. For more information about server access logging, see [Enabling Amazon S3 server access logging](enable-server-access-logging.md).
 
 1. To grant access to another AWS account, do the following:
 
@@ -145,7 +145,7 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
 
 **Object ACL**
    + **Read** – Allows grantee to read the object ACL.
-   + **Write** – Allows grantee to write the ACL for the applicable object. In the S3 console, you can only grant write access to the bucket owner (your AWS account). We highly recommend that you do not grant write access for other grantees. However, if you need to grant write access, you can use the AWS CLI, AWS SDKs, or the REST API.
+   + **Write** – Allows grantee to write the ACL for the applicable object. In the S3 console, you can only grant write access to the bucket owner (your AWS account). Do not grant write access for other grantees. However, if you need to grant write access, you can use the AWS CLI, AWS SDKs, or the REST API.
 
 1. You can manage object access permissions for the following:
 
@@ -176,12 +176,12 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
       Select the check boxes for the permissions that you want to grant, and then choose **Save**.
 **Warning**
 Use caution when granting the **Everyone** group anonymous access to your Amazon S3 objects. When you grant access to this group, anyone in the world can access your object. If you need to grant access to everyone, we highly recommend that you only grant permissions to **Read objects**.
-We highly recommend that you *do not* grant the **Everyone** group write object permissions. Doing so allows anyone to overwrite the ACL permissions for the object.
+*Do not* grant the **Everyone** group write object permissions. Doing so allows anyone to overwrite the ACL permissions for the object.
 
 ## Using the AWS SDKs
 <a name="acl-using-sdk"></a>
 
-This section provides examples of how to configure access control list (ACL) grants on buckets and objects.
+The following examples show how to set access control list (ACL) grants on buckets and objects.
 
 **Important**
 If your general purpose bucket uses the Bucket owner enforced setting for S3 Object Ownership, you must use policies to grant access to your general purpose bucket and the objects in it. With the Bucket owner enforced setting enabled, requests to set access control lists (ACLs) or update ACLs fail and return the `AccessControlListNotSupported` error code. Requests to read ACLs are still supported.
@@ -189,7 +189,7 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
 ------
 #### [ Java ]
 
-This section provides examples of how to configure access control list (ACL) grants on buckets and objects. The first example creates a bucket with a canned ACL (see [Canned ACL](acl-overview.md#canned-acl)), creates a list of custom permission grants, and then replaces the canned ACL with an ACL containing the custom grants. The second example shows how to modify an ACL using the `AccessControlList.grantPermission()` method.
+The following examples show how to set access control list (ACL) grants on buckets and objects. The first example creates a bucket with a canned ACL (see [Canned ACL](acl-overview.md#canned-acl)), creates a list of custom grants, and then replaces the canned ACL with the custom grants. The second example shows how to modify an ACL using the `AccessControlList.grantPermission()` method.
 
 **Example Create a bucket and specify a canned ACL that grants permission to the S3 log delivery group**
 This example creates a bucket. In the request, the example specifies a canned ACL that grants the Log Delivery group permission to write logs to the bucket.
@@ -494,7 +494,7 @@ If your general purpose bucket uses the Bucket owner enforced setting for S3 Obj
 ### Access Control List (ACL)-Specific Request Headers
 <a name="acl-headers-rest-api"></a>
 
-You can use headers to grant access control list (ACL)-based permissions. By default, all objects are private. Only the owner has full access control. When adding a new object, you can grant permissions to individual AWS accounts or to predefined groups defined by Amazon S3. These permissions are then added to the Access Control List (ACL) on the object. For more information, see [Access control list (ACL) overview](acl-overview.md).
+You can use headers to grant access control list (ACL)-based permissions. By default, all objects are private. Only the owner has full access control. When you add a new object, you can grant permissions to individual AWS accounts or to predefined groups that Amazon S3 defines. These permissions are then added to the ACL on the object. For more information, see [Access control list (ACL) overview](acl-overview.md).
 
 With this operation, you can grant access permissions using one these two methods:
 + **Canned ACL (`x-amz-acl`)** — Amazon S3 supports a set of predefined ACLs, known as canned ACLs. Each canned ACL has a predefined set of grantees and permissions. For more information, see [Canned ACL](acl-overview.md#canned-acl).

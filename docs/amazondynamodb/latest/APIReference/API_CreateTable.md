@@ -102,6 +102,26 @@ You can use the `DescribeTable` action to check the table status.
          "Value": "{{string}}"
       }
    ],
+   "VectorIndexes": [
+      {
+         "Dimensions": {{number}},
+         "DistanceFunction": "{{string}}",
+         "IndexName": "{{string}}",
+         "Projection": {
+            "NonKeyAttributes": [ "{{string}}" ],
+            "ProjectionType": "{{string}}"
+         },
+         "SearchSchema": [
+            {
+               "AttributeName": "{{string}}",
+               "SearchSchemaElementType": "{{string}}"
+            }
+         ],
+         "VectorAttribute": {
+            "AttributeName": "{{string}}"
+         }
+      }
+   ],
    "WarmThroughput": {
       "ReadUnitsPerSecond": {{number}},
       "WriteUnitsPerSecond": {{number}}
@@ -244,6 +264,17 @@ Required: No
  ** [Tags](#API_CreateTable_RequestSyntax) **   <a name="DDB-CreateTable-request-Tags"></a>
 A list of key-value pairs to label the table. For more information, see [Tagging for DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html).
 Type: Array of [Tag](API_Tag.md) objects
+Required: No
+
+ ** [VectorIndexes](#API_CreateTable_RequestSyntax) **   <a name="DDB-CreateTable-request-VectorIndexes"></a>
+One or more vector indexes to be created on the table. Each vector index enables similarity search on a vector attribute. Each element in the list consists of:
++  `IndexName` - The name of the vector index. Must be unique within the table.
++  `VectorAttribute` - The attribute that contains vector embeddings. If multiple vector indexes reference the same attribute, they must all use the same number of dimensions.
++  `Dimensions` - The number of dimensions in each vector.
++  `DistanceFunction` - The distance function used to calculate similarity. Valid values: `COSINE`, `EUCLIDEAN`, `DOT_PRODUCT`.
++  `Projection` - Specifies attributes that are copied (projected) from the table into the vector index. The total number of projected non-key attributes is shared across the vector attribute (counts as 1) and `INLINE_FILTER` search schema elements (each counts as 1). `HASH` search schema elements do not count toward this limit.
++  `SearchSchema` - (Optional) Defines the partition key (`HASH`) and inline filter (`INLINE_FILTER`) attributes for the vector index.
+Type: Array of [VectorIndex](API_VectorIndex.md) objects
 Required: No
 
  ** [WarmThroughput](#API_CreateTable_RequestSyntax) **   <a name="DDB-CreateTable-request-WarmThroughput"></a>
@@ -425,6 +456,31 @@ Required: No
       "TableName": "string",
       "TableSizeBytes": number,
       "TableStatus": "string",
+      "VectorIndexes": [
+         {
+            "Backfilling": boolean,
+            "Dimensions": number,
+            "DistanceFunction": "string",
+            "IndexArn": "string",
+            "IndexName": "string",
+            "IndexSizeBytes": number,
+            "IndexStatus": "string",
+            "ItemCount": number,
+            "Projection": {
+               "NonKeyAttributes": [ "string" ],
+               "ProjectionType": "string"
+            },
+            "SearchSchema": [
+               {
+                  "AttributeName": "string",
+                  "SearchSchemaElementType": "string"
+               }
+            ],
+            "VectorAttribute": {
+               "AttributeName": "string"
+            }
+         }
+      ],
       "WarmThroughput": {
          "ReadUnitsPerSecond": number,
          "Status": "string",

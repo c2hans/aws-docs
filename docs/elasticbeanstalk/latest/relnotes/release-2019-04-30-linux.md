@@ -34,9 +34,9 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 | **Node.js** | Updated the Node.js platform to add support for Node versions [8.16.0](https://nodejs.org/en/blog/release/v8.16.0/), [6.17.1](https://nodejs.org/en/blog/release/v6.17.1/). |
 | **PHP** | Released new PHP 7.2, 7.1, and 5.6 versions: [7.2.17](https://www.php.net/releases/7_2_17.php), [7.1.28](https://www.php.net/releases/7_1_28.php), and [5.6.40](https://www.php.net/releases/5_6_40.php), respectively. These releases include security updates. |
 | **Ruby** | Released new Ruby 2.6 and 2.4 versions: [2.6.3](https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/) and [2.4.6](https://www.ruby-lang.org/en/news/2019/04/01/ruby-2-4-6-released/), respectively. The Ruby 2.4.6 release includes security updates. |
-| **m5ad** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-30-linux.html)  |
-| **r5ad** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-30-linux.html)  |
-| **z1d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-04-30-linux.html)  |
+| **m5ad** |  + US East (Ohio) – us-east-2<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1  |
+| **r5ad** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1  |
+| **z1d** |  + Asia Pacific (Sydney) – ap-southeast-2<br />+ Europe (Frankfurt) – eu-central-1  |
 
 ## New platform versions
 <a name="release-2019-04-30-linux.platforms"></a>

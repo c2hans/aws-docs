@@ -22,7 +22,7 @@ Required: Yes
  ** DataSetIdentifier **   <a name="QS-Type-RollingDateConfiguration-DataSetIdentifier"></a>
 The data set that is used in the rolling date configuration.
 Type: String
-Length Constraints: Minimum length of 1. Maximum length of 2048.
+Length Constraints: Minimum length of 0. Maximum length of 2048.
 Required: No
 
 ## See Also

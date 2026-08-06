@@ -109,7 +109,7 @@ Array Members: Fixed number of 2 items.
 Required: No
 
  ** PostalCodeDetails **   <a name="location-Type-geoplaces_GeocodeResultItem-PostalCodeDetails"></a>
-Contains details about the postal code of the place/result.
+Contains details about the postal code of the place or result.
 Type: Array of [PostalCodeDetails](API_geoplaces_PostalCodeDetails.md) objects
 Array Members: Minimum number of 0 items. Maximum number of 100 items.
 Required: No

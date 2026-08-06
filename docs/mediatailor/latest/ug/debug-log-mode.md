@@ -68,7 +68,7 @@ If the maximum active debug log sessions limit has been reached, debug logs aren
 | awsAccountId | Your AWS account ID. |
 | customerId | Your MediaTailor customer ID. |
 | eventTimestamp | The ISO 8601 timestamp associated with the debug log event. |
-| eventType | The type of debug log event. Values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/mediatailor/latest/ug/debug-log-mode.html) |
+| eventType | The type of debug log event. Values:+  `ORIGIN_INTERACTION` – Details about MediaTailor interactions with the origin server. For example, the origin manifest response, manifest type, and origin URL. <br />+  `GENERATED_MANIFEST` – Details about the playback session response from MediaTailor. For example, the manifest that MediaTailor generates. <br />+  `SESSION_INITIALIZED` – Session initialization details, such as the session ID.  |
 | originRequestUrl | The URL of your origin server that is retrieved for this request. |
 | mediaTailorPath | The MediaTailor endpoint that was called, including any parameters passed to MediaTailor in the initial manifest request. |
 | requestId | The ID of a specific HTTP request to MediaTailor. |

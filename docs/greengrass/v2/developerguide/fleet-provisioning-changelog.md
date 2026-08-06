@@ -9,8 +9,8 @@ The following table describes the changes in each version of the AWS IoT fleet p
 
 |  Version  |  Changes  |
 | --- | --- |
-| 1.2.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provisioning-changelog.html)  |
-| 1.2.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provisioning-changelog.html)  |
-| 1.2.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provisioning-changelog.html)  |
-| 1.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/fleet-provisioning-changelog.html)  |
+| 1.2.2 |  **Bug fixes and improvements**<br />   Adds support for custom core device certificate (`certificatePath`) and private key (`privateKeyPath`) paths.     |
+| 1.2.1 |  **Bug fixes and improvements**<br />   Fixes an issue where the fleet provisioning plugin is offline during a Greengrass nucleus startup. The fleet provisioning plugin now indefinitely retries MQTT connect calls.     |
+| 1.2.0 |  **Bug fixes and improvements**<br />   Adds support for device provisioning via certificate signing request with configurable private key path.   Minor fixes and improvements.     |
+| 1.1.0 |  **Bug fixes and improvements**<br />   Adds support for additional file path formats when you configure the plugin on Windows devices.   Adds support for HTTPS network proxy configurations. For more information, see [Connect on port 443 or through a network proxy](configure-greengrass-core-v2.md#configure-alpn-network-proxy) and [Enable the core device to trust an HTTPS proxy](configure-greengrass-core-v2.md#https-proxy-certificate-trust).     |
 | 1.0.0 | Initial version. |

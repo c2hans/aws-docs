@@ -7,6 +7,11 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Release notes
 <a name="mgn-release-notes"></a>
 
+## August 2026
+<a name="release-notes-aug-2026"></a>
+
+Added support for Amazon Linux 2023 with kernel 6.18.
+
 ## July 2026
 <a name="release-notes-jul-2026"></a>
 

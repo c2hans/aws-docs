@@ -5,220 +5,208 @@ source_url: https://docs.aws.amazon.com/sdk-for-kotlin/latest/developer-guide/dd
 # Use expressions
 <a name="ddb-mapper-expressions"></a>
 
+DynamoDB Mapper provides Kotlin DSLs for building the two kinds of [DynamoDB expressions](/amazondynamodb/latest/developerguide/Expressions.html) you use most:
++  **Filter and condition expressions**: boolean conditions that narrow the results of a `query` or `scan`, or that gate a write. You build these in a `filter { }` block.
++  **Update expressions**: instructions that describe how `updateItem` modifies an item. You build these in an `update { }` block.
+
+This topic uses the `Order` item type (partition key `customerId`, sort key `orderId`) for its examples.
+
 **Important**
-DynamoDB Mapper is a Developer Preview release. It is not feature complete and is subject to change.
+These DSLs build **low-level** expressions: they are not restricted by or adherent to any defined schema. Instead, they are a convenience layer over literal DynamoDB expression strings and expression attribute value maps. As such they provide **minimal type correctness** and might allow you to form expressions that are invalid given the shape of your data, such as referencing attributes that don’t exist or comparing mismatched data types. Because they’re schema-unaware, expressions reference **stored attribute names**, not Kotlin property names. For example, a property annotated with [`@DynamoDbAttribute`](ddb-mapper-anno-index.md) (such as `@DynamoDbAttribute("created_at")`) is referenced by its stored name: `attr["created_at"]`.
 
-Certain DynamoDB operations accept [expressions](/amazondynamodb/latest/developerguide/Expressions.html) that you can use to specify constraints or conditions. DynamoDB Mapper provides an idiomatic Kotlin DSL to create expressions. The DSL brings greater structure and readability to your code and also makes it easier to write expressions.
+## Reference attributes
+<a name="ddb-mapper-expressions-attributes"></a>
 
-This section describes the DSL syntax and provides various examples.
-
-## Use expressions in operations
-<a name="ddb-mapper-expressions-basic-usage"></a>
-
-You use expressions in operations like `scan`, where they filter the returned items based on criteria that you define. To use expressions with DynamoDB Mapper, add the expression component in the operation request.
-
-The following snippet shows an example of a filter expression that is used in a `scan` operation. It uses a lambda argument to describe the filter criteria that limits the items to be returned to those with a `year` attribute value of 2001:
+Every expression references at least one attribute through the `attr` accessor. A top-level attribute is `attr["name"]`. Nested values inside maps and lists are reached by chaining the `[]` operator with string keys and integer indexes:
 
 ```
-val table = // A table instance.
+attr["status"]              // a top-level attribute
+attr["shipping"]["city"]    // the "city" entry of the "shipping" map attribute
+attr["productSkus"][0]      // the first element of the "productSkus" list attribute
+```
 
-table.scanPaginated {
-    filter {
-        attr("year") eq 2001
+## Filter expressions
+<a name="ddb-mapper-expressions-filter"></a>
+
+Set a `filter { }` on a `query` or `scan` to drop items that don’t match a condition. The filter is applied by DynamoDB after items are read, so it narrows results but doesn’t reduce read cost.
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.expressions.KeyFilter
+
+val largeShipped = ordersTable
+    .queryPaginated {
+        keyCondition = KeyFilter("customer-123")
+        filter {
+            and(
+                attr["status"] eq "SHIPPED",
+                attr["totalCents"] gt 10_000L,
+            )
+        }
+    }
+    .items()
+```
+
+### Operators and functions
+<a name="ddb-mapper-expressions-operators"></a>
+
+Inside a `filter { }` block, the following are available on attribute references.
+
+#### Comparisons
+<a name="ddb-mapper-expressions-comparisons"></a>
+
+The following equality/inequality comparison operators are available:
++  `A eq B`: true if `A` is equal to `B`
++  `A gt B`: true if `A` is greater than `B`
++  `A gte B`: true if `A` is greater than or equal to `B`
++  `A lt B`: true if `A` is less than `B`
++  `A lte B`: true if `A` is less than or equal to `B`
++  `A neq B`: true if `A` is not equal to `B`
+
+```
+filter { attr["totalCents"] gte 5_000L } // totalCents is greater than or equal to 5,000
+```
+
+#### Ranges and membership
+<a name="ddb-mapper-expressions-ranges-memberships"></a>
+
+The following operators work on ranges and collections:
++  `A.isBetween(B, C)`: true if `A` is greater than or equal to `B` **and** less than or equal to `C`
++  `A isIn B`: true if `A` is an element in the collection/range `B`
+
+```
+filter { attr["totalCents"] isIn 1_000L..5_000L }       // totalCents is between 1,000 and 5,000
+filter { attr["status"] isIn setOf("PAID", "SHIPPED") } // status is either PAID or SHIPPED
+```
+
+#### Functions
+<a name="ddb-mapper-expressions-functions"></a>
+
+The following functions are available:
++  `A contains B`: true if `A` contains `B` as an element or substring
++  `A.exists()`: true if the item contains attribute `A`
++  `A isOfType B`: true if `A`'s attribute type is `B`
++  `A.notExists()`: true if the item *does not* contain attribute `A`
++  `A.size`: computes the string length or collection size of `A`. Note that this is not a boolean expression and must be combined with another operator or function to form a valid filter expression.
++  `A startsWith B`: true if `A` begins with `B`
+
+```
+filter { attr["productSkus"] contains "SKU-1" }    // SKU-1 is an element in productSkus
+filter { attr["couponCode"].exists() }             // the item has a couponCode
+filter { attr["orderId"] startsWith "ORDER#2026" } // orderId begins with ORDER#2026
+filter { attr["productSkus"].size gte 2 }          // there are at least 2 productSkus
+```
+
+#### Boolean logic
+<a name="ddb-mapper-expressions-boolean-logic"></a>
+
+The following boolean logic operations are available:
++  `and(A, B, C, …​)`: true if all of `A`, `B`, `C`, `…​` are true
++  `or(A, B, C, …​)`: true if at least one of `A`, `B`, `C`, `…​` is true
++  `not(A)`: true if `A` is false; false if `A` is true
+
+```
+filter {
+    or(
+        attr["status"] eq "PENDING",
+        and(
+            attr["status"] eq "PAID",
+            not(attr["couponCode"].exists()),
+        ),
+    )
+}
+```
+
+### Key conditions
+<a name="ddb-mapper-expressions-key-conditions"></a>
+
+A `query` also takes a `keyCondition`, built with `KeyFilter`. Unlike a filter, a key condition is evaluated by DynamoDB to select which items to read. It always specifies the partition key and can add a condition on the sort key through a lambda argument:
+
+```
+// All orders for a customer:
+keyCondition = KeyFilter("customer-123")
+
+// Orders for a customer whose orderId begins with a prefix:
+keyCondition = KeyFilter("customer-123", { sortKey startsWith "ORDER#2026" })
+```
+
+Within the sort-key lambda you can use the following operators and functions:
++  [Comparisons](#ddb-mapper-expressions-comparisons): `eq`, `gt`, `gte`, `lt`, `lte`, `neq`
++  [Ranges and membership](#ddb-mapper-expressions-ranges-memberships): `isBetween` and `isIn`
++  [Functions](#ddb-mapper-expressions-functions): `startsWith`
+
+## Update expressions
+<a name="ddb-mapper-expressions-update"></a>
+
+Set an `update { }` on `updateItem` to modify an item in place without reading and rewriting it. An update expression contains one or more of four clauses, which may appear in any order:
++  `add { }`: increment numbers or add elements to sets
++  `delete { }`: remove elements from sets
++  `remove { }`: delete attributes or elements
++  `set { }`: add or modify attributes
+
+```
+import aws.sdk.kotlin.hll.dynamodbmapper.items.Key
+
+ordersTable.updateItem {
+    partitionKey = Key("customer-123")
+    sortKey = Key("ORDER#2026-06-25#0042")
+    update {
+        set {
+            attr["status"] = "SHIPPED"
+            attr["totalCents"] = attr["totalCents"] - 500 // apply a $5.00 discount
+            attr["notes"] = attr["notes"] orElse "none"   // set only if not already present
+        }
+        remove {
+            -attr["couponCode"]                           // remove the coupon code
+        }
+        add {
+            attr["tags"] += setOf("priority")             // add elements to the "tags" set
+        }
+        delete {
+            attr["tags"] -= setOf("gift")                 // remove an element from the "tags" set
+        }
     }
 }
 ```
 
-The following example shows a `query` operation that supports expressions in two places—sort key filtering and non-key filtering:
+### Clause details
+<a name="ddb-mapper-expressions-clause-details"></a>
+
+ ** `add` ** increments a number or adds elements to a set with `+=`. Unlike a `set` increment, this maps to the low-level `ADD` action, which also creates the attribute if it’s absent.
 
 ```
-table.queryPaginated {
-    keyCondition = KeyFilter(partitionKey = 1000) { sortKey startsWith "M" }
-    filter {
-        attr("year") eq 2001
-    }
+add {
+    attr["tags"] += setOf("backordered")
 }
 ```
 
-The previous code filters results to those that meet all three criteria:
-+ Partition key attribute value is 1000 *-AND-*
-+ Sort key attribute value starts with the letter *M* *-AND-*
-+ year attribute value is 2001
-
-## DSL components
-<a name="ddb-mapper-expressions-dsl"></a>
-
-The DSL syntax exposes several types of components—described below—that you use to build expressions.
-
-### Attributes
-<a name="ddb-mapper-expressions-dsl-attrs"></a>
-
-Most conditions reference attributes, which are identified by their key or document path. With the DSK, you create all attribute references by using the `attr` function and optionally make additional modifications.
-
-The following code shows a range of example attribute references from simple to complex, such as list dereferencing by index and map dereferencing by key
+ ** `delete` ** removes elements from a set with `-=`:
 
 ```
-attr("foo")           // Refers to the value of top-level attribute `foo`.
-
-attr("foo")[3]        // Refers to the value at index 3 in the list value of
-                      // attribute `foo`.
-
-attr("foo")[3]["bar"] // Refers to the value of key `bar` in the map value at
-                      // index 3 of the list value of attribute `foo`.
+delete {
+    attr["tags"] -= setOf("gift", "priority")
+}
 ```
 
-### Equalities and inequalities
-<a name="ddb-mapper-expressions-dsl-eq-and-ineq"></a>
-
-You can compare attribute values in an expression by equalities and inequalities. You can compare attribute values to literal values or other attribute values. The functions that you use to specify the conditions are:
-+  `eq`: is equal to (equivalent to `==`)
-+  `neq`: is not equal to (equivalent to `!=`)
-+  `gt`: is greater than (equivalent to `>`)
-+  `gte`: is greater than or equal to (equivalent to `>=`)
-+  `lt`: is less than (equivalent to `<`)
-+  `lte`: is less than or equal to (equivalent to `⇐`)
-
-You combine the comparison function with arguments by using infix notation as shown in the following examples:
+ ** `remove` ** deletes attributes, map entries, or list elements with the unary `-` operator:
 
 ```
-attr("foo") eq 42           // Uses a literal. Specifies that the attribute value `foo` must be
-                            // equal to 42.
-
-attr("bar") gte attr("baz") // Uses another attribute value. Specifies that the attribute
-                            // value `bar` must be greater than or equal to the
-                            // attribute value of `baz`.
+remove {
+    -attr["couponCode"]
+    -attr["productSkus"][0]
+}
 ```
 
-### Ranges and sets
-<a name="ddb-mapper-expressions-dsl-ranges-sets"></a>
-
-In addition to single values, you can compare attribute values to multiple values in ranges or sets. You use the infix `isIn` function to do the comparison as shown in the following examples:
+ ** `set` ** adds or replaces attributes and elements. Assign a literal value or an expression with `=`. Derive numeric values with `+`/`-` (or `+=`/`-=`), fall back to a default for a missing attribute with `orElse`, and concatenate lists with `appending`:
 
 ```
-attr("foo") isIn 0..99  // Specifies that the attribute value `foo` must be
-                        // in the range of `0` to `99` (inclusive).
-
-attr("foo") isIn setOf( // Specifies that the attribute value `foo` must be
-    "apple",            // one of `apple`, `banana`, or `cherry`.
-    "banana",
-    "cherry",
-)
+set {
+    attr["status"] = "PAID"
+    attr["totalCents"] += 250
+    attr["productSkus"] = attr["productSkus"] appending listOf("SKU-9")
+}
 ```
 
-The `isIn` function provides overloads for collections (such as `Set<String>`) and for bounds that you can express as a Kotlin `ClosedRange<T>` (such as `IntRange`). For bounds that you cannot express as a `ClosedRange<T>` (such as byte arrays or other attribute references), you can use the `isBetween` function:
-
-```
-val lowerBytes = byteArrayOf(0x48, 0x65, 0x6c)  // Specifies that the attribute value
-val upperBytes = byteArrayOf(0x6c, 0x6f, 0x21)  // `foo` is between the values
-attr("foo").isBetween(lowerBytes, upperBytes)   // `0x48656c` and `0x6c6f21`
-
-attr("foo").isBetween(attr("bar"), attr("baz")) // Specifies that the attribute value
-                                                // `foo` is between the values of
-                                                // attributes `bar` and `baz`.
-```
-
-### Boolean logic
-<a name="ddb-mapper-expressions-dsl-boolean"></a>
-
-You can combine individual conditions or altered using boolean logic by using the following functions:
-+  `and`: every condition must be true (equivalent to `&&`)
-+  `or`: at least one condition must be true (equivalent to `||`)
-+  `not`: the given condition must be false (equivalent to `!`)
-
-The follow examples show each function:
-
-```
-and(                           // Both conditions must be met:
-    attr("foo") eq "banana",   // * attribute value `foo` must equal `banana`
-    attr("bar") isIn 0..99,    // * attribute value `bar` must be between
-)                              //   0 and 99 (inclusive)
-
-or(                            // At least one condition must be met:
-    attr("foo") eq "cherry",   // * attribute value `foo` must equal `cherry`
-    attr("bar") isIn 100..199, // * attribute value `bar` must be between
-)                              //   100 and 199 (inclusive)
-
-not(                           // The attribute value `foo` must *not* be
-    attr("baz") isIn setOf(    // one of `apple`, `banana`, or `cherry`.
-        "apple",               // Stated another way, the attribute value
-        "banana",              // must be *anything except* `apple`, `banana`,
-        "cherry",              // or `cherry`--including potentially a
-    ),                         // non-string value or no value at all.
-)
-```
-
-You can further combine boolean conditions by boolean functions to create nested logic as shown in the following expression:
-
-```
-or(
-    and(
-        attr("foo") eq 123,
-        attr("bar") eq "abc",
-    ),
-    and(
-        attr("foo") eq 234,
-        attr("bar") eq "bcd",
-    ),
-)
-```
-
-The previous expression filters results to those that meet either of these conditions:
-+ Both of these conditions are true:
-  +  `foo` attribute value is 123 *-AND-*
-  +  `bar` attribute value is "abc"
-+ Both of these conditions are true:
-  +  `foo` attribute value is 234 *-AND-*
-  +  `bar` attribute value is "bcd"
-
-This is equivalent to the following Kotlin boolean expression:
-
-```
-(foo == 123 && bar == "abc") || (foo == 234 && bar == "bcd")
-```
-
-### Functions and properties
-<a name="ddb-mapper-expressions-dsl-functions"></a>
-
-The following functions and properties provide additional expression capabilities:
-+  `contains`: checks if a string/list attribute value contains a given value
-+  `exists`: checks if an attribute is defined and holds any value (including `null`)
-+  `notExists`: checks if an attribute is undefined
-+  `isOfType`: checks if an attribute value is of a given type, such as string, number, boolean, and so on
-+  `size`: gets the size of an attribute, such as the number of elements in a collection or the length of a string
-+  `startsWith`: checks if a string attribute value starts with a given substring
-
-The following examples show use of additional functions and properties that you can use in expressions:
-
-```
-attr("foo") contains "apple" // Specifies that the attribute value `foo` must be
-                             // a list that contains an `apple` element or a string
-                             // which contains the substring `apple`.
-
-attr("bar").exists()         // Specifies that the `bar` must exist and have a
-                             // value (including potentially `null`).
-
-attr("baz").size lt 100      // Specifies that the attribute value `baz` must have
-                             // a size of less than 100.
-
-attr("qux") isOfType AttributeType.String // Specifies that the attribute `qux`
-                                          // must have a string value.
-```
-
-### Sort key filters
-<a name="ddb-mapper-expressions-dsl-sort-key"></a>
-
-Filter expressions on sort keys (such as in the `query` operation’s `keyCondition` parameter) do not use named attribute values. To use a sort key in a filter, you must use the keyword `sortKey` in all comparisons. The `sortKey` keyword replaces `attr("<sort key name>")` as shown in the following examples:
-
-```
-sortKey startsWith "abc" // The sort key attribute value must begin with the
-                         // substring `abc`.
-
-sortKey isIn 0..99       // The sort key attribute value must be between 0
-                         // and 99 (inclusive).
-```
-
-You cannot combine sort key filters with boolean logic and they support only a subset of the comparisons described above:
-+  [Equalities and inequalities](#ddb-mapper-expressions-dsl-eq-and-ineq): all comparisons supported
-+  [Ranges and sets](#ddb-mapper-expressions-dsl-ranges-sets): all comparisons supported
-+  [Boolean logic](#ddb-mapper-expressions-dsl-boolean): not supported
-+  [Functions and properties](#ddb-mapper-expressions-dsl-functions): only `startsWith` is supported
+## Related topics
+<a name="ddb-mapper-expressions-related"></a>
++  [Operations overview](ddb-mapper-operations.md): the `query`, `scan`, and `updateItem` operations these expressions feed.
++  [Use secondary indexes with DynamoDB Mapper](ddb-mapper-secondary-indexes.md): key conditions and filters on indexes.

@@ -10,6 +10,10 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/kernel-update.html
 + [Updating AL2023 to a Newer Kernel Version](#kernelup)
 + [AL2023 kernels - Frequently Asked Questions](#al2023-kernel-faq)
 
+**Important**
+ Starting August 17, 2026, the default kernel for AL2023 will change from 6.1 to 6.18. New instances launched from the `al2023-ami-kernel-default` AMIs will boot kernel 6.18. Already-running instances are not affected and will keep the kernel they booted with. To stay on a specific kernel version, launch from version-specific AMIs such as `al2023-ami-kernel-6.1`.
+ For FIPS workloads, note that the default kernel might not always be the FIPS-validated kernel. If you require FIPS mode, see the [AL2023 FIPS FAQ on the AWS website](https://aws.amazon.com/linux/amazon-linux-2023/faqs/#al2023-fips-faq--3m3tsn).
+
 ## Linux Kernel Versions on AL2023
 <a name="al2023-kernels"></a>
 
@@ -24,21 +28,14 @@ In March 2026, AL2023 added support for Linux kernel 6.18. The updated kernel 6.
 ## Updating AL2023 to a Newer Kernel Version
 <a name="kernelup"></a>
 
-Starting in June 2026, AL2023 will update the default kernel annually. The [`al2023-ami-kernel-default`](ec2.md#launch-via-aws-cli) set of AMIs will be updated to the latest LTS kernel, so that newly launched instances will automatically come up with the new kernel version — this is the simplest way to stay current with the latest security fixes and performance improvements.
+AL2023 now updates the default kernel to the latest version annually. The `al2023-ami-kernel-default` AMIs will move to the latest LTS kernel. Newly launched instances will automatically use the new kernel version, which is the simplest way to stay current with the latest security fixes and performance improvements.
 
-If you prefer to choose a specific kernel version, you can run AL2023 with kernel 6.12 or 6.18 either by selecting an AMI with the desired kernel pre-installed or by upgrading an existing AL2023 EC2 instance.
+If you prefer to stay on an earlier kernel version or choose a specific version, you can run AL2023 with kernel 6.1, 6.12, or 6.18 either by selecting an AMI with the desired kernel pre-installed or by upgrading an existing AL2023 EC2 instance. For details on the support window and scope of AL2023 kernels, see the [AL2023 kernel lifecycle](kernel-lifecycle.md).
 
 ### Running an AL2023 AMI with a specific kernel version
 <a name="kernelup-ami"></a>
 
 You may select to run an AL2023 AMI with a specific kernel pre-installed through the AWS Console or by querying SSM for specific parameters. The SSM keys to query start with `/aws/service/ami-amazon-linux-latest/` followed by one of
-
-#### For kernel 6.12
-<a name="kernel6.12-ami"></a>
-+ `al2023-ami-kernel-6.12-arm64` for arm64 architecture
-+ `al2023-ami-minimal-kernel-6.12-arm64` for arm64 architecture (minimal AMI)
-+ `al2023-ami-kernel-6.12-x86_64` for x86\_64 architecture
-+ `al2023-ami-minimal-kernel-6.12-x86_64` for x86\_64 architecture (minimal AMI)
 
 #### For kernel 6.18
 <a name="kernel6.18-ami"></a>
@@ -47,12 +44,26 @@ You may select to run an AL2023 AMI with a specific kernel pre-installed through
 + `al2023-ami-kernel-6.18-x86_64` for x86\_64 architecture
 + `al2023-ami-minimal-kernel-6.18-x86_64` for x86\_64 architecture (minimal AMI)
 
+#### For kernel 6.12
+<a name="kernel6.12-ami"></a>
++ `al2023-ami-kernel-6.12-arm64` for arm64 architecture
++ `al2023-ami-minimal-kernel-6.12-arm64` for arm64 architecture (minimal AMI)
++ `al2023-ami-kernel-6.12-x86_64` for x86\_64 architecture
++ `al2023-ami-minimal-kernel-6.12-x86_64` for x86\_64 architecture (minimal AMI)
+
+#### For kernel 6.1
+<a name="kernel6.1-ami"></a>
++ `al2023-ami-kernel-6.1-arm64` for arm64 architecture
++ `al2023-ami-minimal-kernel-6.1-arm64` for arm64 architecture (minimal AMI)
++ `al2023-ami-kernel-6.1-x86_64` for x86\_64 architecture
++ `al2023-ami-minimal-kernel-6.1-x86_64` for x86\_64 architecture (minimal AMI)
+
 Please see [Launching AL2023 using the SSM parameter and AWS CLI](ec2.md#launch-via-aws-cli) for details on selecting AL2023 AMIs.
 
 ### Updating an AL2023 instance to a newer kernel
 <a name="kernel-ipu"></a>
 
-You can in-place upgrade a running AL2023 instance to kernel 6.12 or 6.18 with the following steps:
+You can in-place upgrade a running AL2023 instance from kernel 6.1 or 6.12 to kernel 6.18 with the following steps:
 
 1. Detect current kernel and set target version:
 
@@ -72,8 +83,8 @@ You can in-place upgrade a running AL2023 instance to kernel 6.12 or 6.18 with t
    ```
 
    ```
-   # Set your target version (change this to your desired kernel: 6.12 or 6.18)
-   $ TARGET_VERSION="6.12"
+   # Set your target version
+   $ TARGET_VERSION="6.18"
    ```
 
    ```
@@ -118,8 +129,8 @@ You can in-place upgrade a running AL2023 instance to kernel 6.12 or 6.18 with t
 1. Replace extra kernel packages with their target kernel equivalents:
 
    ```
-   # Set your target version (change this to your desired kernel: 6.12 or 6.18)
-   $ TARGET_VERSION="6.12"
+   # Set your target version
+   $ TARGET_VERSION="6.18"
    ```
 
    ```
@@ -247,17 +258,17 @@ If at any point in time you need to downgrade back to an earlier kernel version,
 <a name="al2023-kernel-faq"></a>
 
 ### 1. Do I need to reboot after a kernel update?
-<a name="w2aac39c19b9b3"></a>
+<a name="w2aac39c19c11b3"></a>
 
 Every change to the running kernel requires a reboot.
 
 ### 2. How do I keep kernels up-to-date across multiple instances?
-<a name="w2aac39c19b9b5"></a>
+<a name="w2aac39c19c11b5"></a>
 
 Amazon Linux does not provide facilities to manage fleets of instances. We recommend you patch large fleets using tools like [AWS Systems Manager](https://aws.amazon.com/systems-manager/).
 
 ### 3. How do I check which kernel version I am running right now?
-<a name="w2aac39c19b9b7"></a>
+<a name="w2aac39c19c11b7"></a>
 
 Execute this command on your AL2023 instance:
 
@@ -266,17 +277,17 @@ $ uname -r
 ```
 
 ### 4. Which kernel does AL2023 recommend me to use?
-<a name="w2aac39c19b9b9"></a>
+<a name="w2aac39c19c11b9"></a>
 
-It is recommended to upgrade to latest AL2023 kernel 6.18 while all the other AL2023 kernels are still supported. Customers are recommended to test their workloads before they upgrade.
+We recommend that you upgrade to the latest AL2023 kernel 6.18, although all other AL2023 kernels are still supported. Test your workloads before you upgrade.
 
 ### 5. Will my existing applications work with any AL2023 kernel?
-<a name="w2aac39c19b9c11"></a>
+<a name="w2aac39c19c11c11"></a>
 
-AL2023 supports a newer kernel (6.12 or 6.18) the same way as kernel 6.1. Applications will work and improvements are happening under the hood. Customers should in any case test their specific workloads before switching to a newer kernel.
+Yes. AL2023 supports all available kernels (6.1, 6.12, and 6.18) with the same userspace packages and compatibility. We recommend that you test your workloads before switching to a newer kernel.
 
 ### 6. How do I install kernel headers, development packages, and extra modules for kernel 6.12 or 6.18?
-<a name="w2aac39c19b9c13"></a>
+<a name="w2aac39c19c11c13"></a>
 
 Please run:
 
@@ -285,7 +296,17 @@ $ version=$(uname -r | grep -oP '^\d+\.\d+')
 $ sudo dnf install -y kernel${version}-modules-extra-$(uname -r) kernel${version}-headers-$(uname -r) kernel${version}-devel-$(uname -r)
 ```
 
-### 7. How long kernel 6.12 and 6.18 will be supported?
-<a name="w2aac39c19b9c15"></a>
+### 7. How long will AL2023 kernels be supported?
+<a name="w2aac39c19c11c15"></a>
 
-Kernel 6.12 and 6.18 will be supported until the planned end of life of Amazon Linux 2023, which is 2029-06-30.
+All supported kernels (6.1, 6.12, and 6.18) continue to receive security and maintenance updates according to the defined [AL2023 kernel lifecycle](kernel-lifecycle.md).
+
+### 8. What happens when the default kernel changes?
+<a name="w2aac39c19c11c17"></a>
+
+The `al2023-ami-kernel-default-*` SSM parameters resolve to the AMI that runs the latest kernel version. Already running instances are not affected; only new instances launched from the default AMI will boot the new kernel. To stay on a specific kernel version, use a version-specific SSM parameter such as `al2023-ami-kernel-6.1-*` instead of the default. See [Launching AL2023 using the SSM parameter and AWS CLI](ec2.md#launch-via-aws-cli) for details.
+
+### 9. Which kernel should I use if I need FIPS validated cryptography?
+<a name="w2aac39c19c11c19"></a>
+
+Currently, only the cryptography in kernel 6.1 has completed FIPS 140-3 validation ([Certificate \#5369 on the NIST Cryptographic Module Validation Program website](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369)). The cryptography used in kernels 6.12 and 6.18 is progressing through the FIPS validation process. Consult your organization's security team for advice on selecting the right kernel for FIPS operation. For current validation status and guidance, see the [AL2023 FIPS FAQ on the AWS website](https://aws.amazon.com/linux/amazon-linux-2023/faqs/#al2023-fips-faq--3m3tsn).

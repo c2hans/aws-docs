@@ -76,14 +76,14 @@ The module configuration is specified inside the `openRtbAttribute` object withi
 <a name="openrtb-attribute-module-filter-criteria"></a>
 
 A *filter criterion* is the smallest unit of a filter. Each criterion is a predicate on a single field in the OpenRTB bid request. A criterion contains two fields:
-+ `key` – A JSON path expression that identifies a field in the bid request body. Use standard JSON path syntax starting with `$.` to navigate the OpenRTB request structure (for example, `$.device.geo.country`).
++ `path` – A JSON path expression that identifies a field in the bid request body. Use standard JSON path syntax starting with `$.` to navigate the OpenRTB request structure (for example, `$.device.geo.country`).
 + `values` – An array of strings representing the desired values. A criterion matches when the value retrieved from the bid request field is contained in this array.
 
 The following example criterion matches bid requests where the COPPA (Children's Online Privacy Protection Act) flag is set to `1` (true):
 
 ```
 {
-    "key": "$.regs.coppa",
+    "path": "$.regs.coppa",
     "values": ["1"]
 }
 ```
@@ -92,7 +92,7 @@ The following example criterion matches bid requests originating from the United
 
 ```
 {
-    "key": "$.device.geo.country",
+    "path": "$.device.geo.country",
     "values": ["USA", "CAN"]
 }
 ```
@@ -112,11 +112,11 @@ The following example filter matches bid requests that have the COPPA flag set t
 {
     "criteria": [
         {
-            "key": "$.regs.coppa",
+            "path": "$.regs.coppa",
             "values": ["1"]
         },
         {
-            "key": "$.device.geo.country",
+            "path": "$.device.geo.country",
             "values": ["USA", "CAN"]
         }
     ]
@@ -138,11 +138,11 @@ By combining AND logic within each filter and OR logic across filters, you can e
     {
         "criteria": [
             {
-                "key": "$.regs.coppa",
+                "path": "$.regs.coppa",
                 "values": ["1"]
             },
             {
-                "key": "$.device.geo.country",
+                "path": "$.device.geo.country",
                 "values": ["USA", "CAN"]
             }
         ]
@@ -150,7 +150,7 @@ By combining AND logic within each filter and OR logic across filters, you can e
     {
         "criteria": [
             {
-                "key": "$.site.domain",
+                "path": "$.site.domain",
                 "values": ["example.com"]
             }
         ]
@@ -230,11 +230,11 @@ $ aws rtbfabric update-link-module-flow \
                     {
                         "criteria": [
                             {
-                                "key": "$.regs.coppa",
+                                "path": "$.regs.coppa",
                                 "values": ["1"]
                             },
                             {
-                                "key": "$.device.geo.country",
+                                "path": "$.device.geo.country",
                                 "values": ["USA", "CAN"]
                             }
                         ]
@@ -273,11 +273,11 @@ $ aws rtbfabric update-link-module-flow \
                     {
                         "criteria": [
                             {
-                                "key": "$.regs.coppa",
+                                "path": "$.regs.coppa",
                                 "values": ["1"]
                             },
                             {
-                                "key": "$.device.geo.country",
+                                "path": "$.device.geo.country",
                                 "values": ["USA", "CAN"]
                             }
                         ]
@@ -285,7 +285,7 @@ $ aws rtbfabric update-link-module-flow \
                     {
                         "criteria": [
                             {
-                                "key": "$.site.domain",
+                                "path": "$.site.domain",
                                 "values": ["example.com"]
                             }
                         ]
@@ -324,7 +324,7 @@ $ aws rtbfabric update-link-module-flow \
                     {
                         "criteria": [
                             {
-                                "key": "$.device.devicetype",
+                                "path": "$.device.devicetype",
                                 "values": ["1", "4"]
                             }
                         ]
@@ -364,7 +364,7 @@ $ aws rtbfabric update-link-module-flow \
                     {
                         "criteria": [
                             {
-                                "key": "$.site.domain",
+                                "path": "$.site.domain",
                                 "values": ["trusted-publisher.com", "premium-ads.com"]
                             }
                         ]
@@ -416,7 +416,7 @@ $ aws rtbfabric update-link-module-flow \
                     {
                         "criteria": [
                             {
-                                "key": "$.regs.coppa",
+                                "path": "$.regs.coppa",
                                 "values": ["1"]
                             }
                         ]

@@ -224,7 +224,7 @@ The loop iterates over a string containing values separated by a delimiter. To i
 | --- | --- | --- | --- | --- |
 | `name` | Unique name given to the loop. It should be unique when compared to other loop names in the same phase. | String | No | "" |
 | `list` | A string that is composed of constituent strings joined by a common delimiter character. Also accepts chained expressions. In case of chained expressions, ensure that those are enclosed by double quotes for correct interpretation by the YAML compiler. | String | Yes | n/a |
-| `delimiter` | Character used to separate out strings within a block. Default is the comma character. Only one delimiter character is allowed from the given list: [See the AWS documentation website for more details](http://docs.aws.amazon.com/imagebuilder/latest/userguide/toe-looping-constructs.html)Chaining expressions cannot be used. | String | No | Comma: "," |
+| `delimiter` | Character used to separate out strings within a block. Default is the comma character. Only one delimiter character is allowed from the given list: +  Dot: `"."` <br />+  Comma: `","` <br />+  Semicolon: `";"` <br />+  Colon: `":"` <br />+  New line: `"\n"` <br />+  Tab: `"\t"` <br />+  Space: `" "` <br />+  Hyphen: `"-"` <br />+  Underscore: `"_"` Chaining expressions cannot be used. | String | No | Comma: "," |
 
 **Note**
 The value of `list` is treated as an immutable string. If the source of `list` is changed during runtime, it will not be reflected during the run.

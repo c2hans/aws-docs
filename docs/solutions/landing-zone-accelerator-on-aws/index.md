@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/landing-zone-accelerator-on-a
 
 Deploy a cloud foundation to support highly-regulated workloads and complex compliance requirements
 
-- **Version**: 1.15.5
-- **Released**: 6/2026
+- **Version**: 1.16.0
+- **Released**: 7/2026
 - **Author**: AWS
 - **Est. deployment time**: 50 mins
 - **Estimated cost**: [See details](/solutions/latest/landing-zone-accelerator-on-aws/cost.html)

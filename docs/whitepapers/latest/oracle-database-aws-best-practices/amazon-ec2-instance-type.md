@@ -25,8 +25,8 @@ Choose the instance type that matches the Oracle Database licenses you are plann
 
 |  **Instance family**  |  **Features**  |
 | --- | --- |
-|  M family  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/amazon-ec2-instance-type.html)  |
-|  X family  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/amazon-ec2-instance-type.html)  |
-|  R family  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/amazon-ec2-instance-type.html)  |
-|  I family  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/amazon-ec2-instance-type.html)  |
-|  Z1d family  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-best-practices/amazon-ec2-instance-type.html)  |
+|  M family  |  +   EBS-optimized by default at no additional cost  <br />+   Support for [Enhanced Networking](https://aws.amazon.com/ec2/faqs/#Enhanced_Networking)  <br />+   Balance of compute, memory, and network resources    |
+|  X family  | +   Lowest price per GiB of RAM  <br />+   SSD Storage and EBS-optimized by default and at no additional cost  <br />+   Ability to control processor C-state and P-state configuration    |
+|  R family  | +   Optimized for memory-intensive applications  <br />+   High-frequency Intel Xeon E5-2686 v4 (Broadwell) Processors  <br />+   DDR4 Memory  <br />+   Support for [Enhanced Networking](https://aws.amazon.com/ec2/faqs/#Enhanced_Networking)  <br />+ R5b instances support bandwidth up to 60Gbps and EBS performance of 260K IOPS, providing 3x higher [EBS-Optimized](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html) performance compared to R5 instances  |
+|  I family  | +   Optimized for low latency, very high random I/O performance, high sequential read throughput, and provides high IOPS at a low cost  <br />+   NVMe SSD ephemeral storage  <br />+   Support for [TRIM](https://aws.amazon.com/ec2/faqs/#Do_High_IO_Instances_Support_Trim)  <br />+   Support for [Enhanced Networking](https://aws.amazon.com/ec2/faqs/#Enhanced_Networking)    |
+|  Z1d family  |  +   Sustained all core frequency of 4.0 GHz  <br />+   Delivers a 1:8 vCPU to memory ratio    |

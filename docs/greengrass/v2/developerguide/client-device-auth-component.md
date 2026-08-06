@@ -1914,26 +1914,26 @@ The following table describes the changes in each version of the component.
 | 2.5.6 | Updates the component version for the Greengrass nucleus version 2.17.0 release. |
 | 2.5.5 | Version updated for Greengrass nucleus version 2.16.0 release. |
 | 2.5.4 | Version updated for Greengrass nucleus version 2.15.0 release. |
-| 2.5.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
+| 2.5.3 |  **Bug fixes and improvements**<br />   Fixes an issue where client devices are unable to connect to the core device due to out of date client certificates.     |
 | 2.5.2 | Version updated for Greengrass nucleus version 2.14.0 release. |
-| 2.5.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
-| 2.5.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
-| 2.4.5 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html) |
+| 2.5.1 |  **Bug fixes and improvements**<br />   Supports FIPS endpoint.     |
+| 2.5.0 |  **New features**<br />   Allows `${iot:Connection.Thing.ThingName}` variable substitution for policy resources.   Allows policy resources with wildcards such as `mqtt:topic:my*`.     |
+| 2.4.5 | **New features**<br /> Adds support for wildcard prefixes for selecting thing names with the `selectionRule` parameter. <br />**Bug fixes and improvements**<br /> Fixes an issue where certificates aren't updated with new connectivity information in certain cases.  |
 | 2.4.4 | Version updated for Greengrass nucleus version 2.12.0 release. |
 | 2.4.3 | Version updated for Greengrass nucleus version 2.11.0 release. |
-| 2.4.2 |  <a name="changelog-client-device-auth-2.4.2"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
+| 2.4.2 |  <a name="changelog-client-device-auth-2.4.2"></a>**New features**<br /> Adds a new `startupTimeoutSeconds` configuration option.   |
 | 2.4.1 | Version updated for Greengrass nucleus version 2.10.0 release. |
-| 2.4.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
-| 2.3.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
-| 2.3.1 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
-| 2.3.0 |  This version is no longer available. The improvements in this version are available in later versions of this component. New features[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html) |
+| 2.4.0 |  **New features**<br />   Adds support for client device auth to emit operational metrics that will be published by the telemetry agent.   <br />**Bug fixes and improvements**<br />   Fixes an issue where the client device auth takes more than 10 seconds to verify a client device's identity.   Additional minor fixes and improvements.     |
+| 2.3.2 |  **Bug fixes and improvements**<br />   Adds support for caching hostname information so that the component correctly generates certificate subjects when restarted when offline.     |
+| 2.3.1 |  **Bug fixes and improvements**<br />   Fixes a memory leak.     |
+| 2.3.0 |  This version is no longer available. The improvements in this version are available in later versions of this component. New features+  Adds support for offline authentication of client devices so that they can continue to connect to the core device when the core device isn't connected to the Internet.  <br />+  Adds support for customer-provided certificate authority that the core device uses as the root certificate to generate MQTT broker certificates.  |
 | 2.2.3 | Version updated for Greengrass nucleus version 2.8.0 release. |
-| 2.2.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
+| 2.2.2 |  **Bug fixes and improvements**<br />   Fixes an issue where the local MQTT server certificate rotates more often than intended in certain scenarios.     |
 | 2.2.1 |  Version updated for Greengrass nucleus version 2.7.0 release.  |
-| 2.2.0 |  <a name="changelog-client-device-auth-2.2.0"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
+| 2.2.0 |  <a name="changelog-client-device-auth-2.2.0"></a>**New features**<br />   Adds support for custom components to call interprocess communication (IPC) operations to authenticate and authorize client devices. You can use these operations in a custom MQTT broker component, for example. For more information, see [IPC: Authenticate and authorize client devices](ipc-client-device-auth.md).   Adds the `maxActiveAuthTokens`, `cloudQueueSize`, and `threadPoolSize` options that you can configure to tune how this component performs.     |
+| 2.1.0 |  **New features**<br />   Adds the `serverCertificateValiditySeconds` option that you can configure to customize when the MQTT broker server certificate expires. You can configure the server certificate to expire after 2 to 10 days.   <br />**Bug fixes and improvements**<br />   Fixes issues with how this component handles configuration reset updates.   Fixes an issue where the local MQTT server certificate rotates more often than intended in certain scenarios. <br />To apply this fix, you must also use v2.1.0 or later of the [Moquette MQTT broker component](mqtt-broker-moquette-component.md).   Improves messages that this component logs when it rotates certificates.   Version updated for Greengrass nucleus version 2.6.0 release.     |
 | 2.0.4 | Version updated for Greengrass nucleus version 2.5.0 release. |
-| 2.0.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/client-device-auth-component.html)  |
+| 2.0.3 |  **Bug fixes and improvements**<br />   Credentials now refresh if you rotate the core device's private key.   Updates to make log messages more clear.     |
 | 2.0.2 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.1 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.0 | Initial version. |

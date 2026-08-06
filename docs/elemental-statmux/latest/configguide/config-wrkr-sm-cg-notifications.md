@@ -11,7 +11,7 @@ AWS Elemental Statmux provides status information through alerts. You can config
 
 |  | Alerts |
 | --- | --- |
-| Access options |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-statmux/latest/configguide/config-wrkr-sm-cg-notifications.html)  |
+| Access options |  + Web interface<br />+ REST API calls<br />+ SNMP poll<br />+ SNMP trap<br />+ Email notification<br />+ Web callback notification  |
 | Information conveyed | Alerts are feedback on a problem that must be fixed.<br />The “Channel Error” alert informs you that a channel has moved to an Error state.<br />This can be helpful when you are receiving automatic email notifications, letting you know to check for related messages on the web interface. |
 | Active or inactive | Alerts are active until the underlying problem is resolved. When the cause of the alert is no longer present, the system clears the alert and it becomes inactive. |
 | Visibility (web interface only) | You can toggle the visibility of active alerts on the web interface. Suppressing an alert this way is similar to marking an email as read.<br />Alerts are available through the other access options, regardless of their visibility in the web interface. |

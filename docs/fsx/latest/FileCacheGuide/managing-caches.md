@@ -140,4 +140,4 @@ You can view the status of a cache by using the AWS Management Console, the AWS 
 | CREATING | A new cache is being created. |
 | DELETING | An existing cache is being deleted. |
 | UPDATING | The cache is undergoing a customer-initiated update. |
-| FAILED | This status can mean either of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/fsx/latest/FileCacheGuide/managing-caches.html) |
+| FAILED | This status can mean either of the following:+ The cache has failed and cannot be recovered.<br />+  The cache couldn't be created.  |

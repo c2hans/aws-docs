@@ -201,8 +201,8 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 1.3.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/systems-manager-agent-component.html)  |
-| 1.2.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/systems-manager-agent-component.html)  |
-| 1.2.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/systems-manager-agent-component.html)  |
+| 1.3.0 |  **Bug fixes and improvments**<br /> Updates this component to get the Agent version 3.3.1142.0.   |
+| 1.2.4 |  **Bug fixes and improvments**<br /> Updates this component to get the Agent version 3.2.2303.0.   |
+| 1.2.3 |  **Bug fixes and improvements**<br />   Adds retries for the Agent component's installation with snap on Greengrass.   Updates the Agent component's configuration to use only the Onprem Identity in Greengrass.   Updates this component to update the Agent only when the installed Agent version doesn't match the Greengrass SSM Agent component's version.     |
 | 1.1.0 | This version contains bug fixes and improvements. |
 | 1.0.0 | Initial version. |

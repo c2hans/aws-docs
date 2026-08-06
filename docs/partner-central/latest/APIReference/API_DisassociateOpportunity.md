@@ -57,7 +57,7 @@ The type of the entity that you're disassociating from the opportunity. When you
 Examples of entity types include Partner Solution, AWS product, and AWS Marketplaceoffer. Ensure that the value matches one of the expected entity types.
 Validation: Provide a valid entity type to help ensure successful disassociation. An invalid or incorrect entity type results in an error.
 Type: String
-Valid Values: `Solutions | AwsProducts | AwsMarketplaceOffers | AwsMarketplaceOfferSets`
+Valid Values: `Solutions | AwsProducts | AwsMarketplaceOffers | AwsMarketplaceOfferSets | AwsMarketplaceSolutions | AwsMarketplaceProducts`
 Required: Yes
 
 ## Response Elements

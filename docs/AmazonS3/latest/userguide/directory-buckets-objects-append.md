@@ -25,7 +25,7 @@ Each successful append operation is billed as a `PutObject` request. To learn mo
 **Note**
 Starting with the 1.12 release, Mountpoint for Amazon S3 supports appending data to objects stored in S3 Express One Zone. To get started, you must opt-in by setting the `--incremental-upload ` flag. For more information on Mountpoint, see [Working with Mountpoint](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint.html).
 
- If you use a CRC (Cyclic Redundancy Check) algorithm while uploading the appended data, you can retrieve full object CRC-based checksums using the `HeadObject` or `GetObject` request. If you use the SHA-1 or SHA-256 algorithm while uploading your appended data, you can retrieve a checksum of the appended parts and verify their integrity using the SHA checksums returned on prior PutObject responses. For more information, see [Data protection and encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-data-protection.html.html).
+ If you use a CRC (Cyclic Redundancy Check) algorithm while uploading the appended data, you can retrieve full object CRC-based checksums using the `HeadObject` or `GetObject` request. If you use the SHA-1 or SHA-256 algorithm while uploading your appended data, you can retrieve a checksum of the appended parts and verify their integrity using the SHA checksums returned on prior PutObject responses. For more information, see [Data protection and encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-data-protection.html).
 
 ## Appending data to your objects by using the AWS CLI, AWS SDKs and the REST API
 <a name="directory-bucket-append"></a>

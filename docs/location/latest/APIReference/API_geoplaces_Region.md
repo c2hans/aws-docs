@@ -13,14 +13,14 @@ Example: `North Rhine-Westphalia`.
 <a name="API_geoplaces_Region_Contents"></a>
 
  ** Code **   <a name="location-Type-geoplaces_Region-Code"></a>
- Abbreviated code for a the state, province or region of the country. Not available in `ap-southeast-1` and `ap-southeast-5` regions for [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html) customers.
+ Abbreviated code for the state, province or region of the country. If you use [GrabMaps](https://docs.aws.amazon.com/location/latest/developerguide/GrabMaps.html), the `ap-southeast-1` and `ap-southeast-5` AWS Regions do not support this parameter.
 Example: `BC`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 3.
 Required: No
 
  ** Name **   <a name="location-Type-geoplaces_Region-Name"></a>
-Name for a the state, province, or region of the country.
+Name for the state, province, or region of the country.
 Example: `British Columbia`.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 200.

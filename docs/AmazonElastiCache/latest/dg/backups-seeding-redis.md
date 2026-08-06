@@ -10,7 +10,7 @@ When you create a new Valkey or Redis OSS node-based cluster, you can seed it wi
 To seed a new Valkey or Redis OSS node-based cluster from a Valkey or Redis OSS backup created within Amazon ElastiCache, see [Restoring from a backup into a new cache](backups-restoring.md).
 
 When you use a Valkey or Redis OSS .rdb file to seed a new node-based cluster, you can do the following:
-+ Upgrade from a nonpartitioned cluster to a Valkey or Redis OSS (cluster mode enabled) node-based cluster running Redis OSS version 3.2.4.
++ Upgrade from a nonpartitioned cluster to a Valkey or Redis OSS (cluster mode enabled) node-based cluster.
 + Specify a number of shards (called node groups in the API and CLI) in the new node-based cluster. This number can be different from the number of shards in the node-based cluster that was used to create the backup file.
 + Specify a different node type for the new node-based cluster—larger or smaller than that used in the cluster that made the backup. If you scale to a smaller node type, be sure that the new node type has sufficient memory for your data and Valkey or Redis OSS overhead. For more information, see [Ensuring you have enough memory to make a Valkey or Redis OSS snapshot](BestPractices.BGSAVE.md).
 + Distribute your keys in the slots of the new Valkey or Redis OSS (cluster mode enabled) cluster differently than in the cluster that was used to create the backup file.
@@ -19,7 +19,7 @@ When you use a Valkey or Redis OSS .rdb file to seed a new node-based cluster, y
 You can't seed a Valkey or Redis OSS (cluster mode disabled) cluster from an .rdb file created from a Valkey or Redis OSS (cluster mode enabled) cluster.
 
 **Important**
-You must ensure that your Valkey or Redis OSS backup data doesn't exceed the resources of the node. For example, you can't upload an .rdb file with 5 GB of Valkey or Redis OSS data to a cache.m3.medium node that has 2.9 GB of memory.
+You must ensure that your Valkey or Redis OSS backup data doesn't exceed the resources of the node. For example, you can't upload an .rdb file with 5 GB of Valkey or Redis OSS data to a cache.t3.medium node that has 3.09 GB of memory.
 If the backup is too large, the resulting cluster has a status of `restore-failed`. If this happens, you must delete the cluster and start over.
 For a complete listing of node types and specifications, see [Redis OSS node-type specific parameters](ParameterGroups.Engine.md#ParameterGroups.Redis.NodeSpecific) and [Amazon ElastiCache product features and details](https://aws.amazon.com/elasticache/details/).
 You can encrypt a Valkey or Redis OSS .rdb file with Amazon S3 server-side encryption using Amazon S3 managed keys (SSE-S3) or AWS KMS keys (SSE-KMS). If you use SSE-KMS, you must grant ElastiCache decrypt permissions on the KMS key and disable Amazon S3 Bucket Keys. For more information, see [Grant ElastiCache access to a KMS-encrypted .rdb file](#backups-seeding-redis-kms-encryption). For general information about server-side encryption, see [Protecting data using server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html).

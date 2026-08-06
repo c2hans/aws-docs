@@ -264,7 +264,7 @@ You can get the distillation recipe from the [ recipes](https://github.com/aws/s
 | maxInputFileSizeInGB | The Maximum size of the input file (in GB). |
 | maxLineLengthInKB | The Maximum size of a single line in the input file (in KB). |
 | maxStudentModelFineTuningContextLengthInTokens | The Maximum context window size (tokens) for student model. The is value must not exceed student model capacity. You can set this value to 32k or 64k based on student model capacity. |
-| teacherModelId | When you set Teacher Model Id, select from two: [See the AWS documentation website for more details](http://docs.aws.amazon.com/nova/latest/userguide/nova-distillation.html)[See the AWS documentation website for more details](http://docs.aws.amazon.com/nova/latest/userguide/nova-distillation.html) |
+| teacherModelId | When you set Teacher Model Id, select from two: +  For Amazon Nova Premier: "us.amazon.nova-premier-v1:0" for IAD region. Note: This is only available in IAD region. +  For Amazon Nova Pro: "us.amazon.nova-pro-v1:0" for IAD region and "eu.amazon.nova-pro-v1:0" for ARN region.  |
 | temperature | Controls response randomness (0.7 recommended for balance). |
 | top\_p | Cumulative probability threshold for token sampling (0.9 is recommended). |
 | customer\_bucket | Amazon S3 bucket for input/output data. |

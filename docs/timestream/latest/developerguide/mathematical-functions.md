@@ -30,7 +30,7 @@ Timestream for LiveAnalytics supports the following mathematical functions.
 | random(n) | [same as input] | Returns a pseudo-random number between 0 and n (exclusive). |
 | round(x) | [same as input] | Returns x rounded to the nearest integer. |
 | round(x,d) | [same as input] | Returns x rounded to d decimal places. |
-| sign(x) | [same as input] | Returns the signum function of x, that is:[See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/mathematical-functions.html)<br />For double arguments, the function additionally returns:[See the AWS documentation website for more details](http://docs.aws.amazon.com/timestream/latest/developerguide/mathematical-functions.html) |
+| sign(x) | [same as input] | Returns the signum function of x, that is:+  0 if the argument is 0 <br />+  1 if the argument is greater than 0 <br />+  -1 if the argument is less than 0. <br />For double arguments, the function additionally returns:+  NaN if the argument is NaN <br />+  1 if the argument is \+Infinity <br />+  -1 if the argument is -Infinity.  |
 | sqrt(x)  | double | Returns the square root of x. |
 | to\_base(x, radix)  | varchar | Returns the base-radix representation of x. |
 | truncate(x)  | double | Returns x rounded to integer by dropping digits after decimal point. |

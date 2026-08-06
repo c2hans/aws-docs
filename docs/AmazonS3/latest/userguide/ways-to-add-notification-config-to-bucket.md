@@ -201,7 +201,7 @@ Using the Amazon S3 console, add a notification configuration requesting Amazon 
 + Publish events of the **All object create events** type to your Amazon SQS queue.
 + Publish events of the **Object in RRS lost** type to your Amazon SNS topic.
 
-After you save the notification configuration, Amazon S3 posts a test message, which you get via email.
+After you save the notification configuration, Amazon S3 posts a test message, which you get through email.
 
 For instructions, see [Enabling and configuring event notifications using the Amazon S3 console](enable-event-notifications.md).
 

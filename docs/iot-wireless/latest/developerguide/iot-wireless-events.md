@@ -24,7 +24,7 @@ The following table shows the different types of events for which you'll receive
 
 - **Wireless device**
   - **Resource type:** LoRaWAN / **Event type:** Join
-  - **Resource type:** Sidewalk / **Event type:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)
+  - **Resource type:** Sidewalk / **Event type:**  +  Device registration state <br />+  Proximity
 
 - **Wireless gateway**
   - **Resource type:** LoRaWAN
@@ -32,7 +32,7 @@ The following table shows the different types of events for which you'll receive
 
 - **Sidewalk account**
   - **Resource type:** Sidewalk
-  - **Event type:**  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)
+  - **Event type:**  +  Device registration state <br />+  Proximity
 
 ### Policy for receiving wireless event notifications
 <a name="iot-wireless-events-policy"></a>
@@ -94,10 +94,10 @@ The following table shows examples of MQTT topics for the various events:
 
 | Event | MQTT topic | Notes |
 | --- | --- | --- |
-| Sidewalk device registration state |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
-| Sidewalk proximity |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
-| LoRaWAN join |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
-| LoRaWAN gateway connection status |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html)  | [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-wireless-events.html) |
+| Sidewalk device registration state |  +   Resource-level topic `$aws/iotwireless/events/device_registration_state/{eventType}/sidewalk/wireless_devices`  <br />+   Identifier-level topic `$aws/iotwireless/events/device_registration_state/{eventType}/sidewalk/{resourceType}/{resourceID}/{id}`    | +  `{eventType}` can be `registered` or `provisioned` <br />+  `{resourceType}` can be `sidewalk_accounts` or `wireless_devices` <br />+  `{resourceID}` is the `amazon_id` for `sidewalk_accounts` and `wireless_device_id` for `wireless_devices`  |
+| Sidewalk proximity |  +   Resource-level topic `$aws/iotwireless/events/proximity/{eventType}/sidewalk/wireless_devices`  <br />+   Identifier-level topic `$aws/iotwireless/events/proximity/{eventType}/sidewalk/{resourceType}/{resourceID}/{id}`    | +  `{eventType}` can be `beacon_discovered` or `beacon_lost` <br />+  `{resourceType}` can be `sidewalk_accounts` or `wireless_devices` <br />+  `{resourceID}` is the `amazon_id` for `sidewalk_accounts` and `wireless_device_id` for `wireless_devices`  |
+| LoRaWAN join |  +   Resource-level topic `$aws/iotwireless/events/join/{eventType}/lorawan/wireless_devices`  <br />+   Identifier-level topic `$aws/iotwireless/events/join/{eventType}/lorawan/wireless_devices/{resourceID}/{id}`    | +  `{eventType}` can be `join_req_0_received` or `join_req_2_received` or `join_accepted` <br />+  `{resourceID}` can be `wireless_device_id` or `dev_eui`  |
+| LoRaWAN gateway connection status |  +   Resource-level topic `$aws/iotwireless/events/join/{eventType}/lorawan/wireless_gateways`  <br />+   Identifier-level topic `$aws/iotwireless/events/join/{eventType}/lorawan/wireless_gateways/{resourceID}/{id}`    | +  `{eventType}` can be `connected` or `disconnected` <br />+  `{resourceID}` can be `wireless_gateway_id` or `gateway_eui`  |
 
 For more information about the different events, see [Event notifications for LoRaWAN resources](iot-wireless-events-notifications.md#iot-lorawan-events) and [Event notifications for Sidewalk resources](iot-wireless-events-notifications.md#iot-sidewalk-events).
 

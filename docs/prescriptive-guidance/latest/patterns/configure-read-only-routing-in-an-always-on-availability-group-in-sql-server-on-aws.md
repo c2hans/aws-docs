@@ -90,8 +90,8 @@ For more information about Always On availability groups, see the [SQL Server do
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Connect by using the `ApplicationIntent` parameter. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/configure-read-only-routing-in-an-always-on-availability-group-in-sql-server-on-aws.html) | DBA |
-| Perform a failover. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/configure-read-only-routing-in-an-always-on-availability-group-in-sql-server-on-aws.html) | DBA |
+| Connect by using the `ApplicationIntent` parameter. | 1. From SSMS, connect to the Always On availability group listener name with `ApplicationIntent=ReadOnly;Initial Catalog=test`.<br />2. The connection is established with the secondary replica. To test this, run the following command to show the connected server name.<pre>SELECT SERVERPROPERTY('ComputernamePhysicalNetBios')</pre><br />The output will show the current secondary replica name (`WSFCNODE2`). | DBA |
+| Perform a failover. | 1. From SSMS, connect to the Always On availability group listener name.<br />2. Verify that the primary and secondary database are in sync, with no data loss.<br />3. Perform a failover so that the current primary replica becomes the secondary replica, and the secondary replica becomes the primary replica.<br />4. From SSMS, connect to the Always On availability group listener name with `ApplicationIntent=ReadOnly;Initial Catalog=test`.<br />5. The connection is established with the secondary replica. To test this, show the connected server name by running the following command.<pre>SELECT SERVERPROPERTY('ComputernamePhysicalNetBios')</pre><br />It will display the current secondary replica name (`WSFCNODE1`). | DBA |
 
 ### Connect by using the sqlcmd command-line utility
 <a name="connect-by-using-the-sqlcmd-command-line-utility"></a>

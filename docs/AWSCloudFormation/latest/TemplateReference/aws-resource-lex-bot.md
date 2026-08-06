@@ -29,7 +29,9 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[AutoBuildBotLocales](#cfn-lex-bot-autobuildbotlocales)" : {{Boolean}},
       "[BotFileS3Location](#cfn-lex-bot-botfiles3location)" : {{S3Location}},
       "[BotLocales](#cfn-lex-bot-botlocales)" : {{[ BotLocale, ... ]}},
+      "[BotMembers](#cfn-lex-bot-botmembers)" : {{[ BotMember, ... ]}},
       "[BotTags](#cfn-lex-bot-bottags)" : {{[ Tag, ... ]}},
+      "[BotType](#cfn-lex-bot-bottype)" : {{String}},
       "[DataPrivacy](#cfn-lex-bot-dataprivacy)" : {{DataPrivacy}},
       "[Description](#cfn-lex-bot-description)" : {{String}},
       "[ErrorLogSettings](#cfn-lex-bot-errorlogsettings)" : {{ErrorLogSettings}},
@@ -54,8 +56,11 @@ Properties:
     S3Location}}
   [BotLocales](#cfn-lex-bot-botlocales): {{
     - BotLocale}}
+  [BotMembers](#cfn-lex-bot-botmembers): {{
+    - BotMember}}
   [BotTags](#cfn-lex-bot-bottags): {{
     - Tag}}
+  [BotType](#cfn-lex-bot-bottype): {{String}}
   [DataPrivacy](#cfn-lex-bot-dataprivacy): {{
     DataPrivacy}}
   [Description](#cfn-lex-bot-description): {{String}}
@@ -93,12 +98,26 @@ A list of locales for the bot.
 *Type*: Array of [BotLocale](aws-properties-lex-bot-botlocale.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`BotMembers`  <a name="cfn-lex-bot-botmembers"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [BotMember](aws-properties-lex-bot-botmember.md)
+*Maximum*: `10`
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `BotTags`  <a name="cfn-lex-bot-bottags"></a>
 A list of tags to add to the bot. You can only add tags when you import a bot. You can't use the `UpdateBot` operation to update tags. To update tags, use the `TagResource` operation.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-lex-bot-tag.md)
 *Maximum*: `200`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`BotType`  <a name="cfn-lex-bot-bottype"></a>
+The type of the bot.
+*Required*: No
+*Type*: String
+*Allowed values*: `Bot | BotNetwork`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `DataPrivacy`  <a name="cfn-lex-bot-dataprivacy"></a>
 By default, data stored by Amazon Lex is encrypted. The `DataPrivacy` structure provides settings that determine how Amazon Lex handles special cases of securing the data for your bot.

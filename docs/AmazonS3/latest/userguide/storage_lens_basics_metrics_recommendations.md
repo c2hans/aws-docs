@@ -240,7 +240,7 @@ S3 Storage Lens offers two metrics selections that you can choose for your dashb
 Prefix delimiters determine how Storage Lens counts prefix depth, by separating the hierarchical levels within object keys. You can only specify a single character to indicate each level within your prefixes. If the prefix delimiter is undefined, Amazon S3 uses "`/`" as the default delimiter.
 
 **Note**
-When you're updating your Storage Lens dashboard configuration via API, the *delimiter* and the updated *prefix delimiter* must be defined in the same way, or you'll receive an error. The delimiter only applies to prefix-level metrics that are exported to the default metrics report. The prefix delimiter applies to all prefixes that are exported to the expanded prefixes metrics report.
+When you're updating your Storage Lens dashboard configuration through the API, the *delimiter* and the updated *prefix delimiter* must be defined in the same way, or you'll receive an error. The delimiter only applies to prefix-level metrics that are exported to the default metrics report. The prefix delimiter applies to all prefixes that are exported to the expanded prefixes metrics report.
 
 ### S3 Storage Lens and AWS Organizations
 <a name="storage_lens_basics_organizations"></a>

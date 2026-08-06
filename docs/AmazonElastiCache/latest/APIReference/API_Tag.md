@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/APIReference/AP
 # Tag
 <a name="API_Tag"></a>
 
-A tag that can be added to an ElastiCache cluster or replication group. Tags are composed of a Key/Value pair. You can use tags to categorize and track all your ElastiCache resources, with the exception of global replication group. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. A tag with a null Value is permitted.
+A tag that can be added to an ElastiCache cluster or replication group. Tags are composed of a Key/Value pair. You can use tags to categorize and track all your ElastiCache resources. When you add or remove tags on replication groups, those actions will be replicated to all nodes in the replication group. A tag with a null Value is permitted.
 
 ## Contents
 <a name="API_Tag_Contents"></a>

@@ -80,7 +80,7 @@ The following table summarizes the availability of customization for Amazon Nova
 
 | Model name | Model ID | Fine-tuning | Notes |
 | --- |--- |--- |--- |
-| Amazon Nova Lite 2.0 | amazon.nova-2-lite-v1:0:256k | Yes |    SFT - Accepts either text and/or image or text and/or video as the input and produces text as output. A single job can't combine text, image, and video in the same run.   RFT - Accepts text and image as input for single-turn conversations and produces text as output. Improved reward optimization capabilities.   CPT    |
+| Amazon Nova Lite 2.0 | amazon.nova-2-lite-v1:0:256k | Yes |  +  SFT - Accepts either text and/or image or text and/or video as the input and produces text as output. A single job can't combine text, image, and video in the same run. <br />+  RFT - Accepts text and image as input for single-turn conversations and produces text as output. Improved reward optimization capabilities. <br />+  CPT   |
 
 ## Amazon Nova 2.0 Lite
 <a name="nova-model-recipes-reference-novalite2"></a>

@@ -51,7 +51,7 @@ Required: No
  ** FilterClass **   <a name="QS-Type-TopicIRFilterOption-FilterClass"></a>
 The filter class for the `TopicIRFilterOption`.
 Type: String
-Valid Values: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER`
+Valid Values: `ENFORCED_VALUE_FILTER | CONDITIONAL_VALUE_FILTER | NAMED_VALUE_FILTER | DASHBOARD_DEFAULT_FILTER`
 Required: No
 
  ** FilterType **   <a name="QS-Type-TopicIRFilterOption-FilterType"></a>

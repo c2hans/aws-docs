@@ -210,8 +210,8 @@ The following tables show the supported data types for CSV and for Parquet.
 | ENUM | VARCHAR |
 | FIXED\_LEN\_BYTE\_ARRAY | DECIMAL |
 | FLOAT | FLOAT (32-bit) |
-| INT32 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-gcs.html)  |
-| INT64 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/athena/latest/ug/connectors-gcs.html)  |
+| INT32 |  1.  INT32 <br />2.  DATEDAY (when the Parquet column logical type is DATE)   |
+| INT64 |  1.  INT64 <br />2.  TIMESTAMP (when the Parquet column logical type is TIMESTAMP)   |
 | INT96 | Timestamp |
 | MAP | MAP |
 | STRUCT | STRUCT |

@@ -343,28 +343,28 @@ The following table describes the changes in each version of the component.
 
 |  **Version**  |  **Changes**  |
 | --- | --- |
-| 2.3.1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) |
-| 2.3.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) |
-| 2.2.1 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) |
-| 2.2.0 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) |
-| 2.1.13 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) |
-| 2.1.12 | [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html) |
+| 2.3.1 | **Bug fixes and improvements**<br />   Improves the throughput of stream manager exports to Kinesis Data Streams destinations, especially for small record sizes.   Adds shard-aware pacing that distributes records across the shards of the target data stream. This pacing keeps requests within the per-shard limits of Kinesis Data Streams to reduce throttling. To use shard-aware pacing, grant the `kinesis:ListShards` permission in the [Greengrass token exchange role](device-service-role.md). Without this permission, stream manager assigns a random partition key to each record.   Adds the `STREAM_MANAGER_EXPORTER_KINESIS_INTER_CALL_DELAY_MS` configuration parameter, which sets a fallback delay between export requests when stream manager cannot determine the shard layout of the target data stream.    |
+| 2.3.0 | **Bug fixes and improvements**<br />   Updates to the AWS SDK for Java v2 for improved performance and compatibility.   Changes proxy precedence behavior to align with standard AWS SDK proxy configuration.    |
+| 2.2.1 | **Bug fixes and improvements**<br />   Fixes an issue where stream manager fails to export messages to Kinesis Data Streams destinations.   Additional improvements to the performance of the stream manager exports to Kinesis Data Streams destinations.    |
+| 2.2.0 | **New features**<br />   Adds a new configuration key for startup timeout. Default value is 120 seconds.   Adds recipe supports for Greengrass nucleus lite.    |
+| 2.1.13 | **Bug fixes and improvements**<br /> Supports FIPS endpoints for AWS IoT SiteWise  |
+| 2.1.12 | **Bug fixes and improvements**<br /> Updates the order that credentials are used so that Greengrass credentials are preferred for AWS service requests.  |
 | 2.1.11 | Version updated for Greengrass nucleus version 2.12.0 release. |
-| 2.1.10 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
+| 2.1.10 |  **Bug fixes and improvements**<br /> Fixes an issue where the HTTPS proxy configuration doesn't trust the Greengrass certificate authority (CA) certificate chain.   |
 | 2.1.9 | Version updated for Greengrass nucleus version 2.11.0 release. |
-| 2.1.8 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
-| 2.1.7 |  <a name="changelog-stream-manager-2.1.7"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
-| 2.1.6 |  <a name="changelog-stream-manager-2.1.6"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
+| 2.1.8 |  **Bug fixes and improvements**<br /> Fixes an issue where stream manager infinitely retries SiteWise exports failing with `InvalidRequestException`.   |
+| 2.1.7 |  <a name="changelog-stream-manager-2.1.7"></a>**Bug fixes and improvements**<br /> Fixes an issue where stream manager fails to read the proxy configuration correctly.   |
+| 2.1.6 |  <a name="changelog-stream-manager-2.1.6"></a>**Bug fixes and improvements**<br /> Fixes an issue that could cause a crash at startup on certain ARMv8 processors, including the Jetson Nano.   |
 | 2.1.5 | Version updated for Greengrass nucleus version 2.10.0 release. |
-| 2.1.4 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
-| 2.1.3 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
-| 2.1.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
+| 2.1.4 |  **Bug fixes and improvements**<br />   Fixes an issue where entries for the same property asset with the same timestamp within a single batch return `ConflictingOperationException` from the SiteWise API which causes stream manager to continuously retry.   Updates default connection timeout from 3 seconds to 1 minute.     |
+| 2.1.3 |  **Bug fixes and improvements**<br /> Fixes a startup issue on Windows OS when running as the SYSTEM user.   |
+| 2.1.2 |  **Bug fixes and improvements**<br />   Fixes an issue on Windows OS that use a non-English language.   Version updated for Greengrass nucleus version 2.9.0 release.     |
 | 2.1.1 | Version updated for Greengrass nucleus version 2.8.0 release. |
-| 2.1.0 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
+| 2.1.0 |  **New features**<br />   Updates this component to automatically send telemetry metrics to Amazon EventBridge. For more information, see [Gather system health telemetry data from AWS IoT Greengrass core devices](telemetry.md). <br />This feature requires v2.7.0 or later of the [Greengrass nucleus component](greengrass-nucleus-component.md).   Version updated for Greengrass nucleus version 2.7.0 release.     |
 | 2.0.15 | Version updated for Greengrass nucleus version 2.6.0 release. |
 | 2.0.14 | This version contains bug fixes and improvements. |
 | 2.0.13 | Version updated for Greengrass nucleus version 2.5.0 release. |
-| 2.0.12 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/stream-manager-component.html)  |
+| 2.0.12 |  **Bug fixes and improvements**<br /> Fixes an issue that prevented upgrading stream manager v2.0.7 to a version between v2.0.8 and v2.0.11. If you use stream manager to export data to the cloud, you can now upgrade to v2.0.12.   |
 | 2.0.11 | Version updated for Greengrass nucleus version 2.4.0 release. |
 | 2.0.10 | Version updated for Greengrass nucleus version 2.3.0 release. |
 | 2.0.9 | Version updated for Greengrass nucleus version 2.2.0 release. |

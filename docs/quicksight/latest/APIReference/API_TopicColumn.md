@@ -45,7 +45,7 @@ Required: No
  ** ColumnDescription **   <a name="QS-Type-TopicColumn-ColumnDescription"></a>
 A description of the column and its contents.
 Type: String
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 500.
 Required: No
 
  ** ColumnFriendlyName **   <a name="QS-Type-TopicColumn-ColumnFriendlyName"></a>
@@ -57,7 +57,7 @@ Required: No
  ** ColumnSynonyms **   <a name="QS-Type-TopicColumn-ColumnSynonyms"></a>
 The other names or aliases for the column.
 Type: Array of strings
-Length Constraints: Maximum length of 256.
+Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** ComparativeOrder **   <a name="QS-Type-TopicColumn-ComparativeOrder"></a>

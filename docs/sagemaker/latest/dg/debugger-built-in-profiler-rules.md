@@ -32,19 +32,19 @@ Debugger built-in rule for generating the profiling report
 
 | Scope of Validity | Built-in Rules |
 | --- | --- |
-| Profiling Report for any SageMaker training job |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-profiler-rules.html)  |
+| Profiling Report for any SageMaker training job |  +  `ProfilerReport`   |
 
 Debugger built-in rules for profiling hardware system resource utilization (system metrics)
 
 | Scope of Validity | Built-in Rules |
 | --- | --- |
-| Generic system monitoring rules for any SageMaker training job |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-profiler-rules.html)  |
+| Generic system monitoring rules for any SageMaker training job |  +  `BatchSize` <br />+  `CPUBottleneck` <br />+  `GPUMemoryIncrease` <br />+  `IOBottleneck` <br />+  `LoadBalancing` <br />+  `LowGPUUtilization` <br />+  `OverallSystemUsage`   |
 
 Debugger built-in rules for profiling framework metrics
 
 | Scope of Validity | Built-in Rules |
 | --- | --- |
-| Profiling rules for deep learning frameworks (TensorFlow and PyTorch) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-profiler-rules.html)  |
+| Profiling rules for deep learning frameworks (TensorFlow and PyTorch) |  +  `MaxInitializationTime` <br />+  `OverallFrameworkMetrics` <br />+  `StepOutlier`   |
 
 **Warning**
 In favor of [Amazon SageMaker Profiler](train-use-sagemaker-profiler.md), SageMaker AI Debugger deprecates the framework profiling feature starting from TensorFlow 2.11 and PyTorch 2.0. You can still use the feature in the previous versions of the frameworks and SDKs as follows.

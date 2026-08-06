@@ -11,9 +11,9 @@ The following table provides an overview of the features for managing and monito
 
 | Feature | Use case | Key benefits |
 | --- | --- | --- |
-| [AMI usage reports](your-ec2-ami-usage.md) | Gain visibility into which AWS accounts are using your AMIs and how much each AMI is being used. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ami-usage.html)  |
-| [Last used tracking](ami-last-launched-time.md) | Check when your AMI was last used. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ami-usage.html)  |
-| [AMI reference check](ec2-ami-references.md) | Ensure your AWS resources are using the latest compliant AMIs. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-ami-usage.html)  |
+| [AMI usage reports](your-ec2-ami-usage.md) | Gain visibility into which AWS accounts are using your AMIs and how much each AMI is being used. |  +  Identify the AWS accounts and resource types referencing your AMIs so that you can safely deregister or disable AMIs. <br />+  Identify unused AMIs for deregistration to reduce storage costs. <br />+  Identify your most used AMIs.   |
+| [Last used tracking](ami-last-launched-time.md) | Check when your AMI was last used. |  +  Identify unused AMIs so that you can safely deregister AMIs. <br />+  Identify unused AMIs for deregistration to reduce storage costs.   |
+| [AMI reference check](ec2-ami-references.md) | Ensure your AWS resources are using the latest compliant AMIs. |  +  Audit the use of AMIs in your account. <br />+  Check where specific AMIs are being referenced. <br />+  Maintain compliance by updating your resources to reference the latest AMIs.   |
 
 **Topics**
 + [View your AMI usage](your-ec2-ami-usage.md)

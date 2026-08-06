@@ -80,16 +80,16 @@ The code for this pattern is available in the GitHub [Cluster Sample Application
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Clone the remote repository. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-containers-by-using-elastic-beanstalk.html) | App developer, AWS administrator, AWS DevOps |
-| Initialize the Elastic Beanstalk Docker project. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-containers-by-using-elastic-beanstalk.html) | App developer, AWS administrator, AWS DevOps |
-| Test the project locally. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-containers-by-using-elastic-beanstalk.html) | App developer, AWS administrator, AWS DevOps |
+| Clone the remote repository. | + To clone the repository, run the command `git clone https://github.com/aws-samples/cluster-sample-app.git`.< /p> | App developer, AWS administrator, AWS DevOps |
+| Initialize the Elastic Beanstalk Docker project. | 1. Create a file called `aws.json` at the root.<br />2. In the `aws.json` file, add the following code.<pre>{<br />         "AWSEBDockerrunVersion":"1",<br />         "Image":{<br />            "Name":"cluster-sample-app"<br />         },<br />         "Ports":[<br />            {<br />               "ContainerPort":80,<br />               "HostPort":8080<br />            }<br />         ]<br />      }</pre><br />3. Run the command `eb init -p docker `at the root of the project. | App developer, AWS administrator, AWS DevOps |
+| Test the project locally. | 1. Run the command `eb local run` at the root of the project.<br />2. Test the application by navigating to `http://localhost`. | App developer, AWS administrator, AWS DevOps |
 
 ### Deploy using EB CLI
 <a name="deploy-using-eb-cli"></a>
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Run deployment command | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-containers-by-using-elastic-beanstalk.html) | App developer, AWS administrator, AWS DevOps |
+| Run deployment command | 1. Run the command `eb create docker-sample-cluster-app `at the root of the project. | App developer, AWS administrator, AWS DevOps |
 | Access the deployed version. | After the deployment command has finished, access the project using the `eb open` command. | App developer, AWS administrator, AWS DevOps |
 
 ### Deploy using the console
@@ -97,7 +97,7 @@ The code for this pattern is available in the GitHub [Cluster Sample Application
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Deploy the application by using the browser. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/deploy-containers-by-using-elastic-beanstalk.html) | App developer, AWS administrator, AWS DevOps |
+| Deploy the application by using the browser. | 1. Open the console.<br />2. Navigate to the Elastic Beanstalk console.<br />3. Choose **Create Application.**<br />4. For the **Application Name**, enter **Cluster-Sample-App**.<br />5. Choose **Docker** as the platform.<br />6. Choose **Upload your code.**<br />7. Choose your local .zip file (in the root of the cloned project) or a public Amazon Simple Storage Service (Amazon S3) URL. | App developer, AWS administrator, AWS DevOps |
 | Access the deployed version. | After deployment, access the deployed application, and choose the URL provided. | App developer, AWS administrator, AWS DevOps |
 
 ## Related resources

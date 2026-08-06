@@ -37,6 +37,7 @@ Required: No
  ** Recommendations **   <a name="AWSPartnerCentral-Type-AwsOpportunityInsights-Recommendations"></a>
 List of recommendations from various agent-driven sources.
 Type: Array of [Recommendation](API_Recommendation.md) objects
+Array Members: Minimum number of 0 items. Maximum number of 5 items.
 Required: No
 
 ## See Also

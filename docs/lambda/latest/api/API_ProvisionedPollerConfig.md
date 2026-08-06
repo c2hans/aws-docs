@@ -11,7 +11,7 @@ The [ provisioned mode](https://docs.aws.amazon.com/lambda/latest/dg/invocation-
 <a name="API_ProvisionedPollerConfig_Contents"></a>
 
  ** MaximumPollers **   <a name="lambda-Type-ProvisionedPollerConfig-MaximumPollers"></a>
-The maximum number of event pollers this event source can scale up to. For Amazon SQS events source mappings, default is 200, and minimum value allowed is 2. For Amazon MSK and self-managed Apache Kafka event source mappings, default is 200, and minimum value allowed is 1.
+The maximum number of event pollers this event source can scale up to. For Amazon SQS event source mappings, the accepted range is between 2 and 10,000, with a default of 200. For Amazon MSK and self-managed Apache Kafka event source mappings, the accepted range is between 1 and 2,000, with a default of 200.
 Type: Integer
 Valid Range: Minimum value of 1. Maximum value of 2000.
 Required: No

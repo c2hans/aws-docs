@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app
 | **AWS experience** | Beginner  |
 | **Time to complete** | 35 minutes  |
 | **Cost to complete** | [Free tier](https://aws.amazon.com/free/) eligible  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai/build-serverless-web-app-lambda-amplify-bedrock-cognito-gen-ai.html) Accounts created within the past 24 hours might not yet have access to the services required for this tutorial.  |
+| **Requires** |  +  AWS account with administrator-level access  <br />+  AWS profile [configured](https://docs.amplify.aws/react/start/account-setup/)  <br />+  [Nodejs](https://nodejs.org/en/download) and [npm](https://www.npmjs.com/)  <br />+  A [Github](https://github.com/) account   Accounts created within the past 24 hours might not yet have access to the services required for this tutorial.  |
 | **Last updated** | July 19, 2024  |
 
 ## Overview

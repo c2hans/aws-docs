@@ -119,13 +119,13 @@ The execution of the example image processing workflow and the corresponding his
 </thead>
 <tbody>
   <tr><td colspan="2">Initial execution</td></tr>
-  <tr><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td></tr>
+  <tr><td> 1.  Dispatch loop <br />2.  *getImageUrls* <br />3.  downloadImage <br />4.  createThumbnail (task in wait queue) <br />5.  uploadImage (task in wait queue) <br />6.  <next iteration of the loop>  </td><td> 1.  Workflow instance started, id="1"  <br />2.  downloadImage scheduled  </td></tr>
   <tr><td colspan="2">Replay</td></tr>
-  <tr><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td></tr>
+  <tr><td> 1.  Dispatch loop <br />2.  *getImageUrls* <br />3.  *downloadImage image* path="foo" <br />4.  createThumbnail <br />5.  uploadImage (task in wait queue) <br />6.  <next iteration of the loop>  </td><td> 1.  Workflow instance started, id="1"  <br />2.  downloadImage scheduled <br />3.  downloadImage completed, return="foo" <br />4.  createThumbnail scheduled   </td></tr>
   <tr><td colspan="2">Replay</td></tr>
-  <tr><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td></tr>
+  <tr><td> 1.  Dispatch loop <br />2.  *getImageUrls* <br />3.  *downloadImage image* path="foo" <br />4.  *createThumbnail* thumbnail path="bar" <br />5.  uploadImage <br />6.  <next iteration of the loop>  </td><td> 1.  Workflow instance started, id="1"  <br />2.  downloadImage scheduled <br />3.  downloadImage completed, return="foo" <br />4.  createThumbnail scheduled  <br />5. createThumbnail completed, return="bar"<br />6. uploadImage scheduled </td></tr>
   <tr><td colspan="2">Replay</td></tr>
-  <tr><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td><td> [See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonswf/latest/awsflowguide/details.html) </td></tr>
+  <tr><td> 1.  Dispatch loop <br />2.  *getImageUrls* <br />3.  *downloadImage image* path="foo" <br />4.  *createThumbnail* thumbnail path="bar" <br />5.  *uploadImage* <br />6.  <next iteration of the loop>  </td><td> 1.  Workflow instance started, id="1"  <br />2.  downloadImage scheduled <br />3.  downloadImage completed, return="foo" <br />4.  createThumbnail scheduled  <br />5. createThumbnail completed, return="bar"<br />6. uploadImage scheduled<br />7. uploadImage completed <br />... </td></tr>
 </tbody>
 </table>
 

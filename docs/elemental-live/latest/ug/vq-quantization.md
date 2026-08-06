@@ -53,9 +53,9 @@ This table shows where the parameters mentioned in this section are located. The
 
 | Location of parameter on web interface | Location of tag in XML |
 | --- | --- |
-| Streams – Video > Advanced > Adaptive Quantization | stream\_assembly/video\_description/{{codec}}/adaptive\_quantization<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-quantization.html) |
-| Streams – Video > Advanced > Spatial AQ | stream\_assembly/video\_description/{{codec}}/spatial\_aq<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-quantization.html) |
-| Streams – Video > Advanced > Temporal AQ | stream\_assembly/video\_description/{{codec}}/temporal\_aq<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-quantization.html) |
-| Streams – Video > Advanced > Flicker AQ | stream\_assembly/video\_description/{{codec}}/flicker\_aq<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-quantization.html) |
+| Streams – Video > Advanced > Adaptive Quantization | stream\_assembly/video\_description/{{codec}}/adaptive\_quantization<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Spatial AQ | stream\_assembly/video\_description/{{codec}}/spatial\_aq<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Temporal AQ | stream\_assembly/video\_description/{{codec}}/temporal\_aq<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
+| Streams – Video > Advanced > Flicker AQ | stream\_assembly/video\_description/{{codec}}/flicker\_aq<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **h265\_settings**  |
 | Streams – Video > Advanced > Framing AQ | stream\_assembly/video\_description/mpeg2\_settings/framing\_aq |
-| Streams – Video > Advanced > Softness | stream\_assembly/video\_description/{{codec}}/softness<br />where {{codec}} is one of the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-live/latest/ug/vq-quantization.html) |
+| Streams – Video > Advanced > Softness | stream\_assembly/video\_description/{{codec}}/softness<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings**  |

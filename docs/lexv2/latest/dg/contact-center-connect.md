@@ -22,4 +22,4 @@ When a contact center sends a request to Amazon Lex V2, it includes platform-spe
 
 | Attribute | Value |
 | --- | --- |
-| x-amz-lex:channels:platform | One of the following values:[See the AWS documentation website for more details](http://docs.aws.amazon.com/lexv2/latest/dg/contact-center-connect.html) |
+| x-amz-lex:channels:platform | One of the following values:+  `Connect` <br />+  `Connect Chat`  |

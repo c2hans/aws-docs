@@ -195,7 +195,7 @@ For additional information about AWS DMS data types, see [Data types for AWS Dat
 | NUMERIC  | NUMERIC(p,s) |
 | REAL4 | REAL |
 | REAL8 | FLOAT |
-| STRING | If the column is a date or time column, then do the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.Babelfish.html)<br />If the column is not a date or time column, use VARCHAR (length). |
+| STRING | If the column is a date or time column, then do the following: +  For SQL Server 2008 and higher, use DATETIME2. <br />+  For earlier versions, if the scale is 3 or less use DATETIME. In all other cases, use VARCHAR (37). <br />If the column is not a date or time column, use VARCHAR (length). |
 | UINT1 | TINYINT |
 | UINT2 | SMALLINT |
 | UINT4 | INT |

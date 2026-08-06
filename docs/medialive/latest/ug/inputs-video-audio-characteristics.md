@@ -17,4 +17,4 @@ MediaLive only supports constant frame rate (CFR) inputs. It does not support va
 
 | Container | Video characteristics | Audio characteristics |
 | --- | --- | --- |
-| CDI—MediaLive only supports these characteristics for CDI inputs. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/inputs-video-audio-characteristics.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/medialive/latest/ug/inputs-video-audio-characteristics.html)  |
+| CDI—MediaLive only supports these characteristics for CDI inputs. |  +  Uncompressed YCbCr 4:2:2 8-bit <br />+  Uncompressed YCbCr 4:2:2 10-bit   |  +  24-bit Big-Endian PCM <br />+  Mono (1.0), Dual mono (2.0), Stereo (2.0), 5.1, 7.1 <br />+  222, SGRP <br />+  48kHz, 96 kHz   |

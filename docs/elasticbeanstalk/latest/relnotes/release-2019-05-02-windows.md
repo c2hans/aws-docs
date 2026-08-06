@@ -18,9 +18,9 @@ This release applies Windows April 2019 security updates to the Windows Server p
 | --- | --- |
 | **Windows security updates** | Applied April 2019 security updates for Windows.<br />See Microsoft's [Security TechCenter](https://portal.msrc.microsoft.com/en-us/) and [Security Advisories and Bulletins](https://technet.microsoft.com/en-us/library/security/). |
 | **Instance types** | Added support for more Amazon EC2 instance types in some AWS Regions. In particular, we added support for the new M5ad and R5ad instances. They add high-speed, low latency local (physically connected) block storage to the existing M5a and R5a instances. For more information, see [New AMD EPYC-Powered Amazon EC2 M5ad and R5ad Instances](https://aws.amazon.com/blogs/aws/new-amd-epyc-powered-amazon-ec2-m5ad-and-r5ad-instances/).<br />The added instance types are listed in the following table.[See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-05-02-windows.html) |
-| **m5ad** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-05-02-windows.html)  |
-| **r5ad** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-05-02-windows.html)  |
-| **z1d** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2019-05-02-windows.html)  |
+| **m5ad** |  + US East (Ohio) – us-east-2<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1  |
+| **r5ad** |  + US East (Ohio) – us-east-2<br />+ US East (N. Virginia) – us-east-1<br />+ US West (Oregon) – us-west-2<br />+ Asia Pacific (Singapore) – ap-southeast-1  |
+| **z1d** |  + Asia Pacific (Sydney) – ap-southeast-2<br />+ Europe (Frankfurt) – eu-central-1  |
 
 ## New platform versions
 <a name="release-2019-05-02-windows.platforms"></a>

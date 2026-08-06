@@ -32,7 +32,9 @@ The recommended limit for concurrent users based on default settings is 200 user
 ## Concurrent tests
 <a name="concurrent-tests"></a>
 
-This solution creates an Amazon CloudWatch dashboard for each test that displays the combined output of all tasks running in the Amazon ECS cluster in real time. The CloudWatch dashboard shows average response time, number of concurrent users, number of successful requests, and number of failed requests. The solution aggregates each metric by the second and updates the dashboard every minute.
+Each time a load test runs, the task-runner AWS Lambda function creates an Amazon CloudWatch dashboard named `EcsLoadTesting-<testId>-<region> ` in each Region where the test runs. The CloudWatch dashboard displays the combined output of all tasks running in the Amazon ECS cluster in real time: average response time, number of concurrent users, number of successful requests, and number of failed requests. The solution aggregates each metric by the second and updates the dashboard every minute.
+
+Subsequent runs of the same test scenario update the same dashboard, so your account contains one dashboard for each test scenario in each Region. These dashboards remain in your account after tests complete and incur a monthly charge until they are deleted; refer to [CloudWatch dashboard costs per test scenario](cost.md#cloudwatch-dashboard-cost). The solution deletes a scenario’s dashboards when you delete the test scenario (for example, through the web console); the dashboards are not deleted when you delete the solution’s CloudFormation stacks. For manual deletion steps, refer to the [Manually deleting retained resources](manually-deleting-retained-resources.md) section of this guide.
 
 ## Amazon EC2 testing policy
 <a name="amazon-ec2-testing-policy"></a>

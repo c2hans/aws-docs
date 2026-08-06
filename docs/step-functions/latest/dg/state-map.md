@@ -43,7 +43,7 @@ The following table highlights the differences between the Inline and Distribute
 | --- |--- |
 | **Supported data sources** |
 | --- |
-| Accepts a JSON array passed from a previous step in the workflow as input. | Accepts the following data sources as input:  JSON array passed from a previous step in the workflow   JSON file in an Amazon S3 bucket that contains an array   CSV file in an Amazon S3 bucket   Amazon S3 object list   Amazon S3 inventory   |
+| Accepts a JSON array passed from a previous step in the workflow as input. | Accepts the following data sources as input:+  JSON array passed from a previous step in the workflow <br />+  JSON file in an Amazon S3 bucket that contains an array <br />+  CSV file in an Amazon S3 bucket <br />+  Amazon S3 object list <br />+  Amazon S3 inventory  |
 | **Map iterations** |
 | --- |
 | In this mode, each iteration of the `Map` state runs in the context of the workflow that contains the `Map` state. Step Functions adds the execution history of these iterations to the parent workflow's execution history. | In this mode, the `Map` state runs each iteration as a child workflow execution, which enables high concurrency of up to 10,000 parallel child workflow executions. Each child workflow execution has its own, separate execution history from that of the parent workflow. |

@@ -96,7 +96,7 @@ After a **Get metrics** block, add a [Check contact attributes](check-contact-at
 
 **Contact-level metrics**
 **Contact estimated wait time** and **Contact position in queue** are contact-level metrics. They appear in the **Queue metrics** namespace only when you turn on **Get contact metrics** in the **Get metrics** block. In a flow, you reference them as `$.Metrics.Contact.EstimatedWaitTime` and `$.Metrics.Contact.PositionInQueue`. For a full list of the returned attributes, see [Contact Metric attributes](connect-attrib-list.md#attribs-contact-metrics-table).
-**Contact estimated wait time** requires [Next Generation Connect Customer](enable-nextgeneration-amazonconnect.md).
+**Contact estimated wait time** requires [Connect Customer](enable-nextgeneration-amazonconnect.md).
 
 ### Why Get metrics block throws an error
 <a name="get-metrics-tips3"></a>

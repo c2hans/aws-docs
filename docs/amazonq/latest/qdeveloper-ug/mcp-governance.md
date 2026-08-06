@@ -139,7 +139,7 @@ To disable MCP for your account or organization:
 |     value | HTTP header value. |  | "Bearer mF\_9.B5f-4.1JqM" |
 | **Local (stdio) server attributes** |  |  |  |
 | packages | Array with exactly one entry containing the MCP server definition. |  | - |
-|   registryType | Must be one of "npm", "pypi", or "oci".<br />The following package runners are used to download and run the MCP server package:[See the AWS documentation website for more details](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/mcp-governance.html)<br />Client machines must have the appropriate package runners pre-installed. |  | “npm” |
+|   registryType | Must be one of "npm", "pypi", or "oci".<br />The following package runners are used to download and run the MCP server package:+ For registry type "npm", the "npx" runner is used<br />+ For "pypi", "uvx" is used<br />+ For "oci", "docker" is used<br />Client machines must have the appropriate package runners pre-installed. |  | “npm” |
 |   registryBaseUrl | Package registry URL. | Yes | "https://npm.acme.com" |
 |   identifier | Server package identifier. |  | "@acme/my-server" |
 |   transport | Object with exactly one property, "type". |  | - |

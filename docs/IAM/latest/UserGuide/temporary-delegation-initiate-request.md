@@ -15,7 +15,7 @@ You can review delegation request details such as the specific IAM roles, polici
 
 1. Select *Deploy with IAM temporary delegation*. Note that the option name may vary across supported products. Refer to the documentation of the product provider for details.
 **Note**
-If you are not already signed in to the AWS Management Console, a new window opens to the AWS sign-in page. We recommend that you sign in to your AWS account before initiating the temporary delegation request from the product console. For more information about how to sign in based on your user type and the AWS resources that you want to access, see the [AWS Sign-In User Guide](docs.aws.amazon.comsignin/latest/userguide/what-is-sign-in.html).
+If you are not already signed in to the AWS Management Console, a new window opens to the AWS sign-in page. We recommend that you sign in to your AWS account before initiating the temporary delegation request from the product console. For more information about how to sign in based on your user type and the AWS resources that you want to access, see the [AWS Sign-In User Guide](https://docs.aws.amazon.com/docs.aws.amazon.comsignin/latest/userguide/what-is-sign-in.html).
 
 1. Review the request details to confirm the product provider's product name and AWS account. You can also review the AWS identity that the product provider will use to perform actions on your behalf.
 

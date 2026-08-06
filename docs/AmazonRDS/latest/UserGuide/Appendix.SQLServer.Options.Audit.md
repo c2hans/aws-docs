@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLS
 
 In Amazon RDS, you can audit Microsoft SQL Server databases by using the built-in SQL Server auditing mechanism. You can create audits and audit specifications in the same way that you create them for on-premises database servers.
 
-RDS uploads the completed audit logs to your S3 bucket, using the IAM role that you provide. If you enable retention, RDS keeps your audit logs on your DB instance for the configured period of time.
+RDS uploads the completed audit logs to your S3 bucket, using the IAM role that you provide. If you enable retention, RDS keeps your audit logs on your DB instance for the configured period of time. Additionally, you may also choose to forward them to CloudWatch (log streams) or to both destinations simultaneously.
 
 For more information, see [SQL Server Audit (database engine)](https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-database-engine) in the Microsoft SQL Server documentation.
 
@@ -24,6 +24,7 @@ You can use Database Activity Streams for RDS to integrate SQL Server Audit even
 + [Viewing audit logs](Appendix.SQLServer.Options.Audit.AuditRecords.md)
 + [Using SQL Server Audit with Multi-AZ instances](#Appendix.SQLServer.Options.Audit.Multi-AZ)
 + [Configuring an S3 bucket](Appendix.SQLServer.Options.Audit.S3bucket.md)
++ [Configuring CloudWatch Log Stream](Appendix.SQLServer.Options.Audit.CloudWatch.md)
 + [Manually creating an IAM role for SQL Server Audit](Appendix.SQLServer.Options.Audit.IAM.md)
 
 ## Support for SQL Server Audit

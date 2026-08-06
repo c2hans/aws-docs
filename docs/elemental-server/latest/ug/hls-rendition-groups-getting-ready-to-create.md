@@ -46,12 +46,12 @@ Set the **Alternate Audio Track Selection ** as follows.
 
 | Desired Result | How to Set |
 | --- | --- |
-| There is a default. The player can auto-select any of the other audios. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition-groups-getting-ready-to-create.html)  |
-| There is a default. The player cannot auto-select any of the other audios. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition-groups-getting-ready-to-create.html)  |
-| There is a default. There are specific audios that the player can auto-select. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition-groups-getting-ready-to-create.html)  |
-| There is no default. The player can auto-select any audio it chooses. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition-groups-getting-ready-to-create.html)  |
-| There is no default. The player cannot auto-select any audio. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition-groups-getting-ready-to-create.html)  |
-| There is no default. There are specific audios that the player can auto-select. |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/hls-rendition-groups-getting-ready-to-create.html)  |
+| There is a default. The player can auto-select any of the other audios. |  +  Set only one audio stream to “Default Audio.” <br />+  Set every other audio stream to “Alternate Audio, Auto-Select.”   |
+| There is a default. The player cannot auto-select any of the other audios. |  +  Set only one audio stream to “Default Audio.” <br />+  Set every other audio stream to “Alternate Audio, not Auto-Select.”   |
+| There is a default. There are specific audios that the player can auto-select. |  +  Set only one audio stream to “Default Audio.” <br />+  Set some of the other audio streams to “Alternate Audio, Auto-Select.” <br />+  Set some of the other audio streams to “Alternate Audio, not Auto-Select.”   |
+| There is no default. The player can auto-select any audio it chooses. |  +  Set every audio stream to “Alternate Audio, Auto-Select.”   |
+| There is no default. The player cannot auto-select any audio. |  +  Set every audio stream to “Alternate Audio, not Auto-Select.”   |
+| There is no default. There are specific audios that the player can auto-select. |  +  Set some audio streams to “Alternate Audio, Auto-Select.” <br />+  Set some audio streams to “Alternate Audio, not Auto-Select.”   |
 
 ## Determine Defaults and Auto-Selection Behavior
 <a name="hls-rendition-groups-determine-defaults-version-2-10-plus"></a>

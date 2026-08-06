@@ -25,11 +25,11 @@ Amazon EC2 Auto Scaling can determine the health status of an `InService` instan
 
 | Health check type | What it checks |
 | --- | --- |
-| Amazon EC2 status checks and scheduled events | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)This is the default health check type for an Auto Scaling group.  |
-| Elastic Load Balancing health checks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)To run this health check type, you must turn it on for your Auto Scaling group. |
-| VPC Lattice health checks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)To run this health check type, you must turn it on for your Auto Scaling group. |
-| Amazon EBS health checks | [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)To run this health check type, you must turn it on for your Auto Scaling group. |
-| Custom health checks |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/autoscaling/ec2/userguide/health-checks-overview.html)  |
+| Amazon EC2 status checks and scheduled events | +  Checks that the instance is running. <br />+  Checks for underlying hardware or software issues that might impair the instance. This is the default health check type for an Auto Scaling group.  |
+| Elastic Load Balancing health checks | +  Checks whether the load balancer reports the instance as healthy, confirming whether the instance is available to handle requests. To run this health check type, you must turn it on for your Auto Scaling group. |
+| VPC Lattice health checks | +  Checks whether VPC Lattice reports the instance as healthy, confirming whether the instance is available to handle requests. To run this health check type, you must turn it on for your Auto Scaling group. |
+| Amazon EBS health checks | +  Checks whether EBS volumes are reachable and passing I/O status checks. To run this health check type, you must turn it on for your Auto Scaling group. |
+| Custom health checks |  +  Checks for any other problems that might indicate instance health issues, according to your custom health checks.   |
 
 ## Amazon EC2 health checks
 <a name="instance-health-detection"></a>
@@ -50,6 +50,11 @@ The Amazon EC2 status checks do not require any special configuration and are al
 **Important**
 Amazon EC2 Auto Scaling lets the status checks fail occasionally, without taking any action. When a status check fails, Amazon EC2 Auto Scaling waits a few minutes for AWS to fix the issue. It does not immediately mark an instance `Unhealthy` when its status for the status checks becomes `impaired`. Additionally, EC2 Auto Scaling doesn't mark the instance as `Unhealthy` if a status check returns `insufficient-data`.
 However, if Amazon EC2 Auto Scaling detects that an instance is no longer in the `running` state, this situation is treated as an immediate failure. In this case, it immediately marks the instance as `Unhealthy` and replaces it.
+
+**Application status checks**
+Application status checks extend the Amazon EC2 status check signal to your application. They monitor whether an application on your instance responds to HTTP or HTTPS calls. When an instance in your Auto Scaling group has application status checks associated and included in aggregation, Amazon EC2 Auto Scaling evaluates the overall application status. If the status reports `impaired`, Amazon EC2 Auto Scaling considers the instance unhealthy and replaces it. No additional Auto Scaling group configuration is required.
+
+Application status checks are created and managed in Amazon EC2, not in Amazon EC2 Auto Scaling. For more information about setting up application status checks for your group, see [Use application status checks with an Auto Scaling group](use-application-status-checks-auto-scaling-group.md).
 
 **Scheduled events**
 Amazon EC2 can occasionally schedule events on your instances to be run after a particular timestamp. For more information, see [Scheduled events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html) in the *Amazon EC2 User Guide*.

@@ -89,7 +89,7 @@ This pattern walks you through the migration of a source Oracle database on Amaz
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Install Oracle Database on Amazon EC2 with required users and roles. |  | DBA |
-|  Perform the three steps in the next column to access Oracle from outside the EC2 instance. | [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-from-oracle-on-amazon-ec2-to-amazon-rds-for-mysql-using-aws-dms-and-aws-sct.html) | DBA |
+|  Perform the three steps in the next column to access Oracle from outside the EC2 instance. | 1. Change the local host in `tnsnames` to the Amazon EC2 public DNS.<br />2. Change the local host in `listener` to the Amazon EC2 public DNS.<br />3. Stop and restart the listener. | DBA |
 | When Amazon EC2 is restarted, the public DNS changes. Make sure to update Amazon EC2 public DNS in 'tnsnames' and 'listener' or use an Elastic IP address. |  | DBA/Developer |
 | Configure the EC2 instance security group so that the replication instance and required clients can access the source database. |  | DBA/Developer |
 

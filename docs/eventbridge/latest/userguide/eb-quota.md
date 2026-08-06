@@ -70,6 +70,6 @@ EventBridge Pipes has the following quotas. If you have requirements for higher 
 
 | Resource | Regions | Default limit |
 | --- | --- | --- |
-| Concurrent pipe executions per account |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.html)  | 1000 |
-| Concurrent pipe executions per account |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.html)  | 3000 |
+| Concurrent pipe executions per account |  +  AWS GovCloud (US-West) <br />+  AWS GovCloud (US-East) <br />+  China (Ningxia) <br />+  China (Beijing) <br />+  Asia Pacific (Osaka) <br />+  Africa (Cape Town) <br />+  Europe (Milan) <br />+  US East (Ohio) <br />+  Europe (Frankfurt) <br />+  US West (N. California) <br />+  Europe (London) <br />+  Asia Pacific (Sydney) <br />+  Asia Pacific (Tokyo) <br />+  Asia Pacific (Singapore) <br />+  Canada (Central) <br />+  Europe (Paris) <br />+  Europe (Stockholm) <br />+  South America (São Paulo) <br />+  Asia Pacific (Seoul) <br />+  Asia Pacific (Mumbai) <br />+  Asia Pacific (Hong Kong) <br />+  Middle East (Bahrain) <br />+  China (Ningxia) <br />+  China (Beijing) <br />+  Asia Pacific (Osaka) <br />+  Africa (Cape Town) <br />+  Europe (Milan)   | 1000 |
+| Concurrent pipe executions per account |  +  US East (N. Virginia) <br />+  US West (Oregon) <br />+  Europe (Ireland)   | 3000 |
 | Pipes per account | All | 1000 |

@@ -104,7 +104,7 @@ The following image shows the pacing controls section.
 
 ![Pacing controls section showing max ring time, dialing capacity allocation, and agent allocation fields for a predictive voice campaign.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create-campaign-pacing-controls.png)
 
-+ **Maximum ring time for unanswered calls** – The maximum number of seconds a call will ring before ending. Valid values: 15 to 100 seconds.
++ **Maximum ring time for unanswered calls** – The maximum number of seconds a call will ring before ending. Valid values: 15 to 60 seconds.
 + **Dialing capacity allocation** – Allocates telecom dialing capacity for this campaign relative to other active campaigns. When multiple campaigns run concurrently, the dialer distributes capacity proportionally based on each campaign's allocation value. Valid values: 1% to 100%.
 + **Agent allocation** – A weight assigned to this campaign that determines the proportion of available agents belonging to the provided queue for which outbound calls are placed. Valid values: 1% to 200%.
 
@@ -115,8 +115,8 @@ The following image shows the abandonment controls settings.
 ![Abandonment controls settings showing abandonment time start point, connection threshold, target abandonment rate, and measurement window.](http://docs.aws.amazon.com/connect/latest/adminguide/images/create-campaign-abandonment-controls.png)
 
 + **Abandonment time start point** – When the abandonment timer starts. The available options depend on whether call classification is enabled:
-  + **Greeting start time** – Timer starts when the customer begins speaking. Requires call classification to be enabled.
-  + **Greeting end time** – Timer starts when the customer finishes their greeting. Requires call classification to be enabled.
+  + **Greeting start time** – Timer starts when the customer begins speaking.
+  + **Greeting end time** – Timer starts when the customer finishes their greeting.
   + **Connected to system time** – Timer starts when the customer is connected to the system. This option is only available when call classification is disabled.
 **Important**
 The start point options change based on the call classification setting:
@@ -326,6 +326,8 @@ Priority dialing order (in Customer Profile):
 
   When you select **Recipient's local time zone**, you configure the following settings:
   + **Detect recipient's local time zone** — Choose the method used to detect the recipient's time zone. Connect Customer Outbound Campaigns use a profile's [Address](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-Address) and/or [Phone Number](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-customer-profiles_CreateProfile.html#connect-connect-customer-profiles_CreateProfile-request-PhoneNumber)'s area code to infer the recipient's time zone.
+
+    To detect a recipient's time zone from their postal code, you must populate the profile's `Address.Country` together with `Address.PostalCode`. Postal code-based time zone detection requires `Country`; other detection methods do not require `Country`. If `Country` is missing, we cannot determine the recipient's time zone from the postal code. We drop the recipient from the Campaign with a `DROPPED_MISSING_TIMEZONE` status.
   + **Profile attributes to use for time zone detection** — Choose the scope of profile attributes used for time zone detection:
     + **Primary only** — Uses only the primary phone number and/or address attributes from the recipient's customer profile to determine the time zone.
     + **All available** — Uses all phone number and/or address attributes from the recipient's customer profile to determine the time zone.

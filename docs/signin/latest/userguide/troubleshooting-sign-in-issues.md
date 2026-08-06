@@ -103,7 +103,7 @@ If you can't see your sign-in page, the domain might be blocked by a firewall. C
 | --- |--- |
 | Root user and IAM users | \*.signin.aws.amazon.com |
 | Amazon.com account sign-in | www.amazon.com |
-| IAM Identity Center users and first-party application sign-in | [See the AWS documentation website for more details](http://docs.aws.amazon.com/signin/latest/userguide/troubleshooting-sign-in-issues.html) |
+| IAM Identity Center users and first-party application sign-in | +  \*.awsapps.com (http://awsapps.com/) <br />+  \*.signin.aws  |
 
 ## I cannot sign in due to network conditions in Sign-in resource-based policies
 <a name="troubleshoot-rbp-network"></a>

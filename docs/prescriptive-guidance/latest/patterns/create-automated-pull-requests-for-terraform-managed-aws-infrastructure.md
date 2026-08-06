@@ -118,7 +118,7 @@ The code for this pattern is available in the GitHub [Automated Terraform Infras
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Run the automation utility by using the GitHub Actions UI. | To run the automation utility using the GitHub Actions UI, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-automated-pull-requests-for-terraform-managed-aws-infrastructure.html) | AWS DevOps |
+| Run the automation utility by using the GitHub Actions UI. | To run the automation utility using the GitHub Actions UI, do the following:1. Navigate to your repository on GitHub.<br />2. Choose the **Actions** tab.<br />3. Choose the **Terraform Infrastructure Update Automation** workflow.<br />4. Choose **Run workflow**.<br />5. Configure the following workflow inputs:**Source configuration**:Select the target branch for automation.Specify the path to the configuration file (`config.yaml`) that contains the desired changes.**Preview controls**:Choose the **Preview** option to review changes without applying them.**Branch management**:Enter the base branch for creating new feature branches.Enter the branch prefix configuration.Choose the **Automatically close obsolete pull requests** checkbox.**Notifications setup**:Enter your URL for **Slack webhook URL for rich notifications (overrides repository secret)**.Choose the **Test Slack integration before processing (dry run only)** checkbox.Enter your information for an **Override default Slack channel (e. g., \#infrastructure-test)**.**Advanced settings**:Choose the **Enable debug logging for troubleshooting** checkbox. | AWS DevOps |
 | (Alternative) Run the automation utility from the command line. | If you prefer, you can run the automation utility from the command line instead of by using the GitHub Actions UI. Use the following command:<pre># Run actual automation<br />python3 main.py</pre> | AWS DevOps |
 
 ### Validate PRs and changes
@@ -126,7 +126,7 @@ The code for this pattern is available in the GitHub [Automated Terraform Infras
 
 | Task | Description | Skills required |
 | --- | --- | --- |
-| Review the created PRs and changes. | To monitor the results of the GitHub workflow execution, do the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/create-automated-pull-requests-for-terraform-managed-aws-infrastructure.html) | AWS DevOps |
+| Review the created PRs and changes. | To monitor the results of the GitHub workflow execution, do the following:+ Check the [workflow run logs](https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs) for processing status.<br />+ Review the PRs that the automation utility created.<br />+ Monitor Slack notifications (if configured). | AWS DevOps |
 
 ### Clean up
 <a name="clean-up"></a>

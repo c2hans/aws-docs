@@ -38,9 +38,9 @@ The default qualities and layers provided for mobile and web users are as follow
 
 | Mobile (Android, iOS) | Web (Chrome) |
 | --- | --- |
-| High layer (or custom):[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) | High layer (or custom):[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) |
-| Mid layer: none (not needed, because the difference between the high- and low-layer bitrates on mobile is narrow) | Mid layer:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) |
-| Low layer:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) | Low layer:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/real-time-streaming-optimization.html) |
+| High layer (or custom):+  Max bitrate: 900,000 bps <br />+  Framerate: 15 fps  | High layer (or custom):+  Max bitrate: 1,700,000 bps <br />+  Framerate: 30 fps  |
+| Mid layer: none (not needed, because the difference between the high- and low-layer bitrates on mobile is narrow) | Mid layer:+  Max bitrate: 700,000 bps <br />+  Framerate: 20 fps  |
+| Low layer:+  Max bitrate: 100,000 bps <br />+  Framerate: 15 fps  | Low layer:+  Max bitrate: 200,000 bps <br />+  Framerate: 15 fps  |
 
 ### Resolution of Layers
 <a name="real-time-streaming-optimization-layer-resolution"></a>

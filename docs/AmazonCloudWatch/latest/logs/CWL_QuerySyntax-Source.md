@@ -12,13 +12,13 @@ Including `SOURCE` in a query is a useful way to specify the log groups and/or d
 To use `SOURCE` to specify the log groups to query, you can use the following keywords:
 + `namePrefix` runs the query against log groups that have names that start with the string that you specify. If you omit this, all log groups are queried.
 
-  You can include as many as five prefixes in the list.
+  You can include as many as 5 prefixes in the list.
 + `accountIdentifier` runs the query against log groups in the specified AWS account. This works only when you run the query in a monitoring account. If you omit this, the default is to query all linked source accounts and the current monitoring account. For more information about cross-account observability, see [CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html).
 
   You can include as many as 20 account identifiers in the list.
 + `logGroupClass` runs the query against log groups that are in the specified log class, either Standard or Infrequent Access. If you omit this, the default of Standard log class is used. For more information about log classes, see [Log classes](CloudWatch_Logs_Log_Classes.md).
 
-Because you can specify large numbers of log groups to query this way, we recommend that you use `SOURCE` only in queries that leverage field indexes that you have created. For more information about indexing fields in log groups, see [Create field indexes to improve query performance and reduce scan volume](CloudWatchLogs-Field-Indexing.md)
+Because you can specify large numbers of log groups to query this way, we recommend that you use `SOURCE` only in queries that use field indexes that you have created. For more information about indexing fields in log groups, see [Create field indexes to improve query performance and reduce scan volume](CloudWatchLogs-Field-Indexing.md)
 
 The following example selects all log groups in the account. If this is a monitoring account then the log groups across monitoring and all the source accounts will be selected. If the total number of log groups exceed 10,000 then you will see an error prompting you to reduce the number of log groups by using a different log group selection method.
 
@@ -83,7 +83,7 @@ To use `SOURCE` to filter log groups by their tags, use the `logGroupTags` funct
 + Multiple values within the same tag filter are combined with OR logic.
 + Use `*` for wildcard matching. For example, `payment*` matches values that start with `payment`.
 + Use `!` as a prefix for negation. For example, `!production` matches values that are not `production`.
-+ You can include as many as five tag filters, each with up to five values.
++ You can include as many as 5 tag filters, each with up to 5 values.
 
 The following example selects all log groups tagged with `team=team1 OR team=team2`.
 

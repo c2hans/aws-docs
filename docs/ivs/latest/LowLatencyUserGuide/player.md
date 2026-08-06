@@ -55,7 +55,7 @@ The IVS Player Web SDK (including the Video.js and Player JW integrations) is no
 | Mobile Browser | Supported Versions |
 | --- | --- |
 | Chrome for iOS, Safari for iOS | Two major versions (current and most recent prior version)<br />(Low-latency playback is not supported. Normal latency playback is supported. This constraint applies to all browsers for iOS.) <br />(Timed metadata is supported only in Player 1.3.0 and later.) |
-| Chrome for iPadOS, Safari for iPadOS | Two major versions (current and most recent prior version)<br />(When "Request Mobile Website" is selected:[See the AWS documentation website for more details](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/player.html) |
+| Chrome for iPadOS, Safari for iPadOS | Two major versions (current and most recent prior version)<br />(When "Request Mobile Website" is selected:+  Low-latency playback is not supported. <br />+  Timed metadata is supported only in Player 1.3.0 and later.)  |
 | Chrome for Android | Two major versions (current and most recent prior version) |
 
 ### Native Platforms

@@ -238,8 +238,8 @@ The following table lists the relay state endpoints for the Regions where WorkSp
 
 | Region | Relay state endpoint |
 | --- | --- |
-| US East (N. Virginia) Region | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/setting-up-saml.html) |
-| US West (Oregon) Region | [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/setting-up-saml.html) |
+| US East (N. Virginia) Region | +  workspaces.euc-sso.us-east-1.aws.amazon.com <br />+  (FIPS) workspaces.euc-sso-fips.us-east-1.aws.amazon.com  |
+| US West (Oregon) Region | +  workspaces.euc-sso.us-west-2.aws.amazon.com <br />+  (FIPS) workspaces.euc-sso-fips.us-west-2.aws.amazon.com  |
 | Africa (Cape Town) Region | workspaces.euc-sso.af-south-1.aws.amazon.com |
 | Asia Pacific (Mumbai) Region | workspaces.euc-sso.ap-south-1.aws.amazon.com |
 | Asia Pacific (Seoul) Region | workspaces.euc-sso.ap-northeast-2.aws.amazon.com |
@@ -252,8 +252,8 @@ The following table lists the relay state endpoints for the Regions where WorkSp
 | Europe (London) Region | workspaces.euc-sso.eu-west-2.aws.amazon.com |
 | South America (São Paulo) Region | workspaces.euc-sso.sa-east-1.aws.amazon.com |
 | Israel (Tel Aviv) Region | workspaces.euc-sso.il-central-1.aws.amazon.com |
-| AWS GovCloud (US-West) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/setting-up-saml.html)  For more information about, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
-| AWS GovCloud (US-East) |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces/latest/adminguide/setting-up-saml.html)  For more information about, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
+| AWS GovCloud (US-West) |  +  workspaces.euc-sso.us-gov-west-1.amazonaws-us-gov.com <br />+  (FIPS) workspaces.euc-sso-fips.us-gov-west-1.amazonaws-us-gov.com   For more information about, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
+| AWS GovCloud (US-East) |  +  workspaces.euc-sso.us-gov-east-1.amazonaws-us-gov.com <br />+  (FIPS) workspaces.euc-sso-fips.us-gov-east-1.amazonaws-us-gov.com   For more information about, see [ Amazon WorkSpaces](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-workspaces.html) in the *AWS GovCloud (US) User Guide*.   |
 
 With an identity provider (IdP)-initiated flow, you can opt to specify the client you want to use for SAML 2.0 federation. To do so, specify either `native` or `web` at end of the relay state URL, after `&client=`. When the parameter is specified in a relay state URL, the corresponding sessions will automatically start in the specified client.
 

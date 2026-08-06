@@ -34,19 +34,19 @@ The following table lists the token bucket sizes and refill rates for each API a
 
 |  Categories/API actions  |  Bucket maximum capacity (per API action)  |  Bucket refill rate  |
 | --- | --- | --- |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 20 | 10 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 20 | 5 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 20 | 1 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 10 | 1 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 1 | 1 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 5 | 2 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 1 | 0.5 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 2 | 0.2 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 5 | 1 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 40 | 10 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 20 | 4 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 7 | 5 |
-|  [See the AWS documentation website for more details](http://docs.aws.amazon.com/lightsail/latest/userguide/lightsail-api-throttling.html)  | 10 | 2 |
+|  +  Disk mutating actions <br />+  KeyPair mutating actions <br />+  Start, stop, or reboot instance actions   | 20 | 10 |
+|  +  Put, close, or open instance public ports actions <br />+  Domain mutating actions <br />+  `GetBuckets` <br />+  `GetContainerImages` <br />+  `GetContainerServiceDeployments` <br />+  `GetContainerServices` <br />+  `GetDisks` <br />+  `GetInstance` <br />+  `GetInstanceSnapshot` <br />+  `GetInstanceSnapshots` <br />+  `GetInstanceState` <br />+  `GetInstances` <br />+  `GetLoadBalancer` <br />+  `GetLoadBalancers` <br />+  `GetOperations` <br />+  `GetStaticIp` <br />+  `GetStaticIps`   | 20 | 5 |
+|  +  `CopyInstanceSnapshot` <br />+  `CreateInstanceSnapshot` <br />+  `DeleteInstance` <br />+  `DeleteInstanceSnapshot` <br />+  `PeerVpc` <br />+  `UnpeerVpc`   | 20 | 1 |
+|  +  `AttachLoadBalancerTlsCertificate` <br />+  `CreateInstances` <br />+  `CreateInstancesFromSnapshot` <br />+  `DeleteLoadBalancerTlsCertificate` <br />+  `GetBucketAccessKeys`   | 10 | 1 |
+|  +  StaticIp mutating actions <br />+  Contact method mutating actions <br />+  `SetIpAddressType` <br />+  Create or delete certificate actions <br />+  Copy or export snapshot actions <br />+  `DeleteKnownHostKeys` <br />+  `UpdateInstanceMetadataOptions`   | 1 | 1 |
+|  +  All Bucket mutating actions except `DeleteBucket` <br />+  `DeleteRelationalDatabase`   | 5 | 2 |
+|  +  All Container mutating actions except `DeleteContainerImage` <br />+  `CreateCloudFormationStack` <br />+  `ResetDistributionCache` <br />+  `TestAlarm`   | 1 | 0.5 |
+|  +  `AttachCertificateToDistribution` <br />+  `CreateDistribution` <br />+  `DeleteBucket` <br />+  `DeleteDistribution` <br />+  `DetachCertificateFromDistribution` <br />+  `UpdateDistribution`   | 2 | 0.2 |
+|  +  `DeleteAutoSnapshot` <br />+  `DeleteContainerImage` <br />+  `DisableAddOn` <br />+  `EnableAddOn` <br />+  `GetAlarms` <br />+  `GetAutoSnapshots` <br />+  `GetContactMethods` <br />+  `GetContainerLog` <br />+  `IsVpcPeered`   | 5 | 1 |
+|  +  `TagResource` <br />+  `UntagResource`   | 40 | 10 |
+|  +  `CreateRelationalDatabaseSnapshot` <br />+  `GetRelationalDatabase` <br />+  `GetRelationalDatabaseEvents` <br />+  `GetRelationalDatabaseSnapshot` <br />+  `GetRelationalDatabaseSnapshots` <br />+  `GetRelationalDatabases`   | 20 | 4 |
+|  +  `GetBucketMetricData` <br />+  `GetContainerServiceMetricData` <br />+  `GetDistributionBundles` <br />+  `GetDistributionLatestCacheReset` <br />+  `GetDistributionMetricData` <br />+  `GetDistributions` <br />+  `UpdateDistributionBundle`   | 7 | 5 |
+|  +  `AttachInstancesToLoadBalancer` <br />+  `DetachInstancesFromLoadBalancer`   | 10 | 2 |
 | `CreateGUISessionAccessDetails` | 20 | 20 |
 | `CreateLoadBalancer` | 3 | 1 |
 | `CreateRelationalDatabaseFromSnapshot` | 15 | 1 |

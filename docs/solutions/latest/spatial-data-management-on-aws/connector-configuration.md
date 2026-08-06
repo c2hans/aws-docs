@@ -107,6 +107,18 @@ The `metadataAttributes` target uses `fieldMappings` to control which response f
 
 Mappings with `asset. ` targets write to asset-level metadata. Mappings with `file.` targets write to file-level metadata on the triggering file. An optional `filter` on `metadataAttributes` narrows which files' attributes the connector processes.
 
+The `metadataAttributes` target also supports an optional `uri` field. When present, SDMA reads the JSON file at that S3 location as the source for `fieldMappings` instead of using the step’s response body directly. This is used with output-driven `wait` steps (see [Working with wait steps](connector-wait.md)): SDMA watches S3 for the file to appear, then reads and maps its contents.
+
+```
+"metadataAttributes": {
+  "uri": "s3://my-bucket/results/${invocation.id}/",
+  "filter": { "fileNameRegex": ".*_summary\\.json$" },
+  "fieldMappings": [
+    { "source": "score", "target": "asset.metadataAttributes.qualityScore:number" }
+  ]
+}
+```
+
 ### Combining metadata and derived files
 <a name="_combining-metadata-and-derived-files"></a>
 
@@ -251,6 +263,37 @@ This creates one output entry per file, using the file path as the key.
 
 You can define field mappings at the connector level as a default and override them per step when different events require different output shapes.
 
+### Correlate mapping
+<a name="correlate-mapping"></a>
+
+When a step response contains a collection (object or array) whose entries correspond to individual files on the asset, use a `correlate` block on a `fieldMapping` to write per-file metadata by matching each response entry to an existing file.
+
+```
+"metadataAttributes": {
+  "fieldMappings": [
+    {
+      "source": "tables.${asset.metadataAttributes.table_name}.file_metadata[*]",
+      "target": "file.metadataAttributes.external_id:string",
+      "correlate": {
+        "responseField": "stripExtension:original_filename",
+        "resourceField": "file.hash"
+      }
+    }
+  ]
+}
+```
+
+In this example, the response contains a collection of file metadata entries keyed by identifier. For each entry, SDMA strips the file extension from `original_filename`, matches the result against the `file.hash` of existing files on the asset, and writes the entry’s key as the `external_id` metadata attribute on the matched file.
+
+| Field | Required | Description |
+| --- | --- | --- |
+|  `responseField`  | Yes | Path within each response entry whose value identifies the file. Supports prefix transforms in canonical form: `stripExtension:field_name`, `basename:field_name`, `tolower:field_name`. |
+|  `resourceField`  | Yes | SDMA file field to match against. Supported values: `file.hash`, `file.path`. |
+|  `valueField`  | No | Field within each response entry whose value is written to the matched file’s target attribute. Required for list-shaped source collections. For dict-shaped (object) collections, the entry key is used when `valueField` is omitted. |
+
+**Note**
+For list-shaped source collections (arrays), `valueField` is required. Without it, there is no meaningful identifier to write and the entry is skipped. For dict-shaped collections (objects), the entry key serves as the default value.
+
 ## Payload fields
 <a name="payload-fields"></a>
 
@@ -278,6 +321,16 @@ Examples:
 +  `assets/${project.projectId}/${asset.assetId}.json` resolves to `assets/proj-abc123/asset-def456.json`
 +  `${asset.metadataAttributes.customField}` resolves to the value of a custom metadata attribute
 +  `${secret.password}` resolves to a value from the referenced Secrets Manager secret
+
+### Invocation built-in variables
+<a name="invocation-variables"></a>
+
+SDMA injects the following variables at trigger execution time. They are available in step paths, body templates, output `uri` fields, and anywhere else that supports `${variable}` substitution.
+
+| Variable | Description |
+| --- | --- |
+|  `${invocation.id}`  | The connector invocation ID for the current execution. Use this to construct unique output paths (for example, an S3 prefix per invocation). |
+|  `${invocation.callbackUrl}`  | The fully-qualified URL a third party should call to resolve a `wait` step’s external completion. Resolves to the `UpdateConnectorInvocation` endpoint for this invocation. Empty if the API endpoint cannot be resolved. |
 
 ### Type coercion
 <a name="type-coercion"></a>
@@ -337,6 +390,9 @@ Use `responseFieldMapping` on a step to capture response values into `$temp.*` v
  `$temp.*` variables apply only to a single trigger execution. SDMA does not share them across triggers or across connectors. Each trigger invocation starts with an empty `$temp` namespace.
 
  `$temp.*` variables work anywhere that `${variable}` substitution is supported: step paths, query parameters, body templates, and field mapping sources.
+
+**Note**
+ `$temp.*` variables captured before a `wait` step are preserved across the wait and available to steps that resume after the wait resolves. SDMA persists them alongside the wait state, so a multi-hour wait does not lose intermediate context.
 
 ## Security configuration
 <a name="security-configuration"></a>
@@ -606,7 +662,7 @@ Triggers define when and how the connector runs. Each trigger specifies which re
 | --- | --- | --- |
 |  `resources`  | Yes | Which resource types activate this trigger. One or more of: `project`, `asset`, `file`, `derivedFile`. |
 |  `events`  | Yes | Which events activate this trigger. One or more of: `create`, `update`, `delete`, `upload`, `uploadComplete`, `derivationComplete`, `onDemand`. |
-|  `stepType`  | No | Default step type for all steps in this trigger. One of: `rest`, `lambdaInvoke`, `eventBridgePutEvents`, `s3PutObject`, `s3DeleteObject`, `deadlineJob`. |
+|  `stepType`  | No | Default step type for all steps in this trigger. One of: `rest`, `lambdaInvoke`, `eventBridgePutEvents`, `s3PutObject`, `s3DeleteObject`, `deadlineJob`, `wait`. |
 |  `steps`  | Yes | Array of step objects to execute when the trigger fires. |
 |  `filter`  | No | Optional filter to restrict which files activate the trigger. Supports `fileExtensionFilter` (for example, `.laz`), `fileNameRegex` (regex against filename), `pathRegex` (regex against full path), `minFileSizeMB`, and `maxFileSizeMB`. |
 |  `output`  | No | Output routing configuration for the trigger. The eligible output targets depend on the trigger’s `resources` scope: `metadataAttributes` (project, asset, file, derivedFile), `derivedFiles` (asset, file, derivedFile), `files` (asset only), `assets` (project only). |
@@ -624,6 +680,7 @@ Each step defines a single action. The step type determines which fields are rel
 |  `s3PutObject`  | Writes a JSON object to Amazon S3. Configure `s3Config.objectKey` and optionally `s3Config.bucketName`. |
 |  `s3DeleteObject`  | Deletes an object from Amazon S3. Configure `s3Config.objectKey` and optionally `s3Config.bucketName`. |
 |  `deadlineJob`  | Submits a batch processing job to AWS Deadline Cloud. Configure `deadlineConfig` at the connector level and `deadlineJob` (template, parameters, output) at the trigger level. |
+|  `wait`  | Pauses the trigger while an asynchronous task completes, then resumes the remaining steps. Configure a `wait` block with exactly one of `poll` (SDMA periodically checks whether the task is done — either by querying an HTTP endpoint or by watching for output files in S3) or `externalCompletion` (waiting for a callback from the external system). No running compute is held while waiting. See [Working with wait steps](connector-wait.md). |
 
 Common step fields:
 +  `s3Config` — for S3 steps, set `objectKey` (supports `${variable}` interpolation) and optionally `bucketName` to override the connector-level bucket.
@@ -660,7 +717,7 @@ SDMA automatically records connector invocation results. Each invocation tracks:
   +  `SUCCEEDED` – The invocation completed successfully.
   +  `FAILED` – The invocation failed during execution.
   +  `NOT_APPLICABLE` – The connector was attached but no trigger matched the event, so no work was performed.
-  +  `WAITING` – The invocation is waiting for an upstream connector to complete (see `dependsOn` in trigger configuration).
+  +  `WAITING` – The invocation is suspended. This occurs when a trigger executes a `wait` step with `externalCompletion` and is blocked until a third party posts its result via `UpdateConnectorInvocation`, or when the invocation is waiting for an upstream connector to complete (see `dependsOn` in trigger configuration).
   +  `DEPENDENCY_BLOCKED` – An upstream connector that this invocation depends on has failed, so this invocation was not executed.
 +  **Exception details** – Error message, type, and context for failed invocations
 

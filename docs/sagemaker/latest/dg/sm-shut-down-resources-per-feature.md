@@ -16,18 +16,18 @@ This is not a complete list of active resources on your domain. For all active S
 | --- | --- |
 |  [Canvas](canvas.md)  |  [Logging out of Amazon SageMaker Canvas](canvas-log-out.md)  |
 |  [Code Editor](code-editor.md)  |  [Shut down Code Editor resources](code-editor-use-log-out.md)  |
-|  [Domain](sm-domain.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [Domain](sm-domain.md)  |  +   [Delete an Amazon SageMaker AI domain](gs-studio-delete-domain.md)  <br />+   [Remove user profiles](domain-user-profile-remove.md)    |
 |  [EMR in Studio Classic](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-notebooks-emr-cluster.html)  |  [Terminate an Amazon EMR cluster from Studio or Studio Classic](terminate-emr-clusters.md)  |
 |  [Experiments](mlflow.md)  |  [Clean up MLflow resources](mlflow-cleanup.md)  |
-|  [HyperPod](sagemaker-hyperpod.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [HyperPod](sagemaker-hyperpod.md)  |  +   [Delete a SageMaker HyperPod cluster](sagemaker-hyperpod-operate-slurm-console-ui.md#sagemaker-hyperpod-operate-slurm-console-ui-delete-cluster)  <br />+   [Delete a cluster](sagemaker-hyperpod-operate-slurm-cli-command.md#sagemaker-hyperpod-operate-slurm-cli-command-delete-cluster)    |
 |  [Inference endpoints](realtime-endpoints-options.md)  |  [Delete Endpoints and Resources](realtime-endpoints-delete-resources.md)  |
 |  [JupyterLab](studio-updated-jl.md)  |  [Delete unused resources](studio-updated-jl-admin-guide-clean-up.md)  |
 |  [MLOps](mlops.md)  |  [Delete a MLOps Project using Amazon SageMaker Studio or Studio Classic](sagemaker-projects-delete.md)  |
 |  [Notebook instances](nbi.md)  |  [Clean up Amazon SageMaker notebook instance resources](ex1-cleanup.md)  |
 |  [Pipelines](pipelines.md)  |  [Stop a pipeline](pipelines-studio-stop.md)  |
 |  [Projects](sagemaker-projects.md)  |  [Delete a MLOps Project using Amazon SageMaker Studio or Studio Classic](sagemaker-projects-delete.md)  |
-|  [RStudio on Amazon SageMaker AI](rstudio.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [RStudio on Amazon SageMaker AI](rstudio.md)  |  +   [Clean up image resources](rstudio-byoi-sdk-cleanup.md)  <br />+   [Shut down RStudio](rstudio-shutdown.md)  <br />+   [Launch RSessions from the RStudio Launcher](rstudio-launcher.md)    |
 |  [Studio](studio-updated.md)  |  [View your Studio running instances, applications, and spaces](studio-updated-running.md)  |
-|  [Studio Classic](studio.md)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/sagemaker/latest/dg/sm-shut-down-resources-per-feature.html)  |
+|  [Studio Classic](studio.md)  |  +   [Stacks with CloudFormation](notebooks-run-and-manage-shut-down.md)  <br />+   [Clean Up Resources for Custom Images in Amazon SageMaker Studio Classic](studio-byoi-cleanup.md): images <br />+   [Stop a Training Job in Amazon SageMaker Studio Classic](studio-tasks-stop-training-job.md)  <br />+   [Delete a shared space](domain-space-delete.md)    |
 |  [Stacks in AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html)  |  [Deleting a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html)  |
 |  [TensorBoard in SageMaker AI](tensorboard-on-sagemaker.md)  |  [Delete unused TensorBoard applications](debugger-htb-delete-app.md)  |

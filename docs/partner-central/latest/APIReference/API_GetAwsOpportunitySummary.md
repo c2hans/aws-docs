@@ -164,6 +164,8 @@ Required: Yes
       ]
    },
    "RelatedEntityIds": {
+      "AwsMarketplaceProducts": [ "string" ],
+      "AwsMarketplaceSolutions": [ "string" ],
       "AwsProducts": [ "string" ],
       "Solutions": [ "string" ]
    },

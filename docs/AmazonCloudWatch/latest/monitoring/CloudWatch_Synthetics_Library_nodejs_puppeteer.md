@@ -13,8 +13,8 @@ Runtime versions with the same major version number are backward compatible.
 
 The Lambda code in a canary is configured to have a maximum memory of 1 GB. Each run of a canary times out after a configured timeout value. If no timeout value is specified for a canary, CloudWatch chooses a timeout value based on the canary's frequency. If you configure a timeout value, make it no shorter than 15 seconds to allow for Lambda cold starts and the time it takes to boot up the canary instrumentation.
 
-## syn-nodejs-puppeteer-16.1
-<a name="CloudWatch_Synthetics_runtimeversion-nodejs-puppeteer-16.1"></a>
+## syn-nodejs-puppeteer-17.0
+<a name="CloudWatch_Synthetics_runtimeversion-nodejs-puppeteer-17.0"></a>
 
 **Important**
 Starting Synthetics `syn-nodejs-puppeteer-13.1` and later, Synthetics runtime uses the new namespace. Please migrate the canary script to use new namespaces. Legacy namespaces will be deprecated in a future release.
@@ -36,6 +36,42 @@ Synthetics runtime `syn-nodejs-puppeteer-11.0` and later versions support only t
 
 **Major dependencies**:
 + Lambda runtime Node.js 22.x
++ Puppeteer-core version 25.2.1
++ Chromium version 150.0.7871.24
++ Firefox version 152.0.2
+
+ **Changes in syn-nodejs-puppeteer-17.0**
++ Upgrade `Chromium` to 150.0.7871.24 to address the following CVEs:
+  + CVE-2026-11645
++ Upgrade `ws` to 8.21.0 to address the following CVEs:
+  + CVE-2026-48779
++ Upgrade `ImageMagick` to 7.1.2-27 to address the following CVEs:
+  + CVE-2026-28494
+  + CVE-2026-28691
+  + CVE-2026-28693
+  + CVE-2026-30883
+  + CVE-2026-30929
+  + CVE-2026-30931
+  + CVE-2026-32636
+  + CVE-2026-33900
+  + CVE-2026-33901
+  + CVE-2026-33905
+  + CVE-2026-33908
+
+For more information, see the following:
++  [Puppeteer changelog](https://pptr.dev/CHANGELOG) on the Puppeteer website
++  [Puppeteer API reference](https://pptr.dev/api) on the Puppeteer website
+
+## Previous runtime versions for Node.js and Puppeteer
+<a name="Previousversions-nodejs-puppeteer"></a>
+
+The following earlier runtime versions for Node.js and Puppeteer are still supported.
+
+### syn-nodejs-puppeteer-16.1
+<a name="CloudWatch_Synthetics_runtimeversion-nodejs-puppeteer-16.1"></a>
+
+**Major dependencies**:
++ Lambda runtime Node.js 22.x
 + Puppeteer-core version 24.42.0
 + Chromium version 147.0.7727.57
 + Firefox version 147.0.4
@@ -46,15 +82,6 @@ Synthetics runtime `syn-nodejs-puppeteer-11.0` and later versions support only t
   + CVE-2026-42338
 + Upgrade `ws` to 8.20.1 to address the following CVEs:
   + CVE-2026-45736
-
-For more information, see the following:
-+  [Puppeteer Change log](https://pptr.dev/CHANGELOG#24420-2026-04-20)
-+  [Puppeteer API reference](https://github.com/puppeteer/puppeteer/blob/puppeteer-v24.42.0/docs/api/index.md)
-
-## Previous runtime versions for Node.js and Puppeteer
-<a name="Previousversions-nodejs-puppeteer"></a>
-
-The following earlier runtime versions for Node.js and Puppeteer are still supported.
 
 ### syn-nodejs-puppeteer-16.0
 <a name="CloudWatch_Synthetics_runtimeversion-nodejs-puppeteer-16.0"></a>

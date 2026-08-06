@@ -21,3 +21,4 @@ This section covers the following aspects of Data Catalog management:
 + [Encrypting your Data Catalog](catalog-encryption.md)
 + [Securing your Data Catalog using Lake Formation](secure-catalog.md)
 + [Working with AWS Glue Data Catalog views in AWS Glue](catalog-views.md)
++ [Export metadata to S3 Tables (preview)](catalog-export-s3-tables.md)

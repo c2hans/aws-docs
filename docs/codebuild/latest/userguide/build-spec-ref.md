@@ -703,5 +703,5 @@ The following table lists the buildspec versions and the changes between version
 
 | Version | Changes |
 | --- | --- |
-| 0.2 |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)  |
+| 0.2 |  +   `environment_variables` has been renamed to `env`.  <br />+   `plaintext` has been renamed to `variables`.  <br />+   The `type` property for `artifacts` has been deprecated.  <br />+  In version 0.1, AWS CodeBuild runs each build command in a separate instance of the default shell in the build environment. In version 0.2, CodeBuild runs all build commands in the same instance of the default shell in the build environment.   |
 | 0.1 | This is the initial definition of the build specification format. |

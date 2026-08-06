@@ -72,9 +72,9 @@ If you aren’t connected successfully, ensure that you have followed the instru
 
 | Setting name | Description |
 | --- | --- |
-| **Insert new records** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/zendesk.html)  |
-| **Update existing records** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/zendesk.html)  |
-| **Upsert records ** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/appflow/latest/userguide/zendesk.html)  |
+| **Insert new records** |  +  This is the default data transfer option. <br />+  When you choose this setting, Amazon AppFlow inserts your source data into the chosen Zendesk object as a new record.   |
+| **Update existing records** |  +  When you choose this setting, Amazon AppFlow uses your source data to update existing records in Zendesk. For every source record, Amazon AppFlow looks for a matching record in Zendesk based on your criteria. You can specify matching criteria on the Map data fields page. To do so, select a field in the source application and map it to a Zendesk record ID or external field using the dropdown list. <br />+  When a matching record is found, Amazon AppFlow updates the record in Zendesk. If no matching record is found, Amazon AppFlow ignores the record or fails the flow per your chosen error handling option. You can specify your error handling preferences on the Configure flow page.   |
+| **Upsert records ** |  +  When you choose this setting, Amazon AppFlow performs an upsert operation in Zendesk. For every source record, Amazon AppFlow looks for a matching record in Zendesk based on your criteria. You can specify matching criteria on the Map data fields page. To do so, select a field in the source application and map it to a Zendesk external field using the dropdown list. <br />+  When a matching record is found, Amazon AppFlow updates the record in Zendesk. If no matching record is found, Amazon AppFlow inserts the data as a new record. Any errors in performing the operation are handled per your chosen error handling option. You can specify your error handling preferences on the Configure flow page.   |
 
 ## Supported destinations
 <a name="zendesk-destinations"></a>

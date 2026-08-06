@@ -10,7 +10,7 @@ source_url: https://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/backup-
 | **AWS experience** | Beginner  |
 | **Time to complete** | 10 minutes  |
 | **Cost to complete** | [Free Tier](https://aws.amazon.com/free/?e=gs2020&p=build-a-web-app-intro) eligible  |
-| **Requires** |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/hands-on/latest/backup-to-s3-cli/backup-to-s3-cli.html)  |
+| **Requires** |  +  AWS Account   Accounts created within the past 24 hours might not yet have access to the services required for this tutorial.  <br />+  Recommended browser: The latest version of Chrome or Firefox    |
 | **Last updated** | Aug 9, 2022  |
 
 ## Overview

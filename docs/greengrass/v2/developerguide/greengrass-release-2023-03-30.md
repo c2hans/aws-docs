@@ -23,4 +23,4 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| Greengrass nucleus | Version 2.9.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.5"></a>[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2023-03-30.html) |
+| Greengrass nucleus | Version 2.9.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.5"></a>**New features**<br />   Adds support for Greengrass nucleus software signature verification.   <br />**Bug fixes and improvements**<br />   Fixes an issue where a deployment fails when the local recipe metadata region doesn't match the Greengrass nucleus launch region. The Greengrass nucleus now renegotiates with the cloud when this happens.   Fixes an issue where the MQTT message spooler fills up and never removes messages.   Additional minor fixes and improvements.    |

@@ -145,11 +145,11 @@ Replace {{my-cluster}} with the name of your cluster in a case where the cluster
             "CacheParameterGroup": {
                 "CacheNodeIdsToReboot": [],
                 "ParameterApplyStatus": "in-sync",
-                "CacheParameterGroupName": "default.redis3.2"
+                "CacheParameterGroupName": "default.redis7"
             },
             "SnapshotRetentionLimit": 0,
             "AutoMinorVersionUpgrade": true,
-            "EngineVersion": "3.2.10",
+            "EngineVersion": "7.1",
             "CacheSecurityGroups": [],
             "NumCacheNodes": 1
         }
@@ -253,10 +253,10 @@ Replace {{my-cluster}} with the name of your cluster in a case where the cluster
             "CacheParameterGroup": {
                 "CacheNodeIdsToReboot": [],
                 "ParameterApplyStatus": "in-sync",
-                "CacheParameterGroupName": "default.redis3.2"
+                "CacheParameterGroupName": "default.redis7"
             },
             "SnapshotRetentionLimit": 0,
-            "EngineVersion": "3.2.10",
+            "EngineVersion": "7.1",
             "CacheSecurityGroups": [],
             "NumCacheNodes": 1
         }
@@ -326,10 +326,10 @@ Replace {{my-cluster}} with the name of your cluster in a case where the cluster
             "CacheParameterGroup": {
                 "CacheNodeIdsToReboot": [],
                 "ParameterApplyStatus": "in-sync",
-                "CacheParameterGroupName": "default.redis3.2.cluster.on"
+                "CacheParameterGroupName": "default.redis7.cluster.on"
             },
             "SnapshotRetentionLimit": 0,
-            "EngineVersion": "3.2.6",
+            "EngineVersion": "7.1",
             "CacheSecurityGroups": [],
             "NumCacheNodes": 1
         },
@@ -428,10 +428,10 @@ Replace {{my-cluster}} with the name of your cluster in a case where the cluster
             "CacheParameterGroup": {
                 "CacheNodeIdsToReboot": [],
                 "ParameterApplyStatus": "in-sync",
-                "CacheParameterGroupName": "default.redis3.2.cluster.on"
+                "CacheParameterGroupName": "default.redis7.cluster.on"
             },
             "SnapshotRetentionLimit": 0,
-            "EngineVersion": "3.2.6",
+            "EngineVersion": "7.1",
             "CacheSecurityGroups": [],
             "NumCacheNodes": 1
         },

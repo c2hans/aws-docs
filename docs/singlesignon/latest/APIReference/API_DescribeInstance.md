@@ -49,6 +49,7 @@ Required: Yes
    "InstanceArn": "string",
    "Name": "string",
    "OwnerAccountId": "string",
+   "PermissionSetsEnabled": boolean,
    "Status": "string",
    "StatusReason": "string"
 }
@@ -92,6 +93,10 @@ The identifier of the AWS account for which the instance was created.
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `\d{12}`
+
+ ** [PermissionSetsEnabled](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-PermissionSetsEnabled"></a>
+Indicates whether permission sets are enabled for this Identity Center instance.
+Type: Boolean
 
  ** [Status](#API_DescribeInstance_ResponseSyntax) **   <a name="singlesignon-DescribeInstance-response-Status"></a>
 The status of the instance.

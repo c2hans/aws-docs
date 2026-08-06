@@ -66,12 +66,12 @@ You can use Oracle Database@AWS in the following AWS Regions:
 | --- | --- | --- |
 | Europe (Frankfurt) | eu-central-1 | euc1-az1, euc1-az2 |
 | Europe (Zurich) | eu-central-2 | euc2-az1, euc2-az3 |
-| Europe (Stockholm) | eu-north-1 | eun1-az2 |
+| Europe (Stockholm) | eu-north-1 | eun1-az1, eun1-az2 |
 | Europe (Milan) | eu-south-1 | eus1-az3 |
 | Europe (Spain) | eu-south-2 | eus2-az1, eus2-az3 |
 | Europe (Ireland) | eu-west-1 | euw1-az1, euw1-az3 |
 | Europe (London) | eu-west-2 | euw2-az1, euw2-az3 |
-| Europe (Paris) | eu-west-3 | euw3-az2 |
+| Europe (Paris) | eu-west-3 | euw3-az1, euw3-az2 |
 
 **Asia Pacific**
 
@@ -145,7 +145,7 @@ In the following table, you can find the number of IP addresses consumed by the 
 
 | Number of IP addresses | Consumed by | Notes |
 | --- | --- | --- |
-| 6 | Oracle Database@AWS | These IP addresses are reserved regardless of how many VM clusters you provision in the ODB network. Oracle Database@AWS consumes the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/odb/latest/UserGuide/getting-started.html) |
+| 6 | Oracle Database@AWS | These IP addresses are reserved regardless of how many VM clusters you provision in the ODB network. Oracle Database@AWS consumes the following:+  3 IP addresses reserved for the ODB network resources in AWS <br />+  3 IP addresses reserved for the OCI networking service  |
 | 3 | Each VM cluster | These IP addresses are reserved for Single Client Access Names (SCANs) regardless of how many VMs are present in each VM cluster. |
 | 4 | Each VM | These IP addresses depend solely on the number of VMs in the infrastructure. |
 
@@ -156,7 +156,7 @@ In the following table, you can find the number of IP addresses consumed by the 
 
 | Number of IP addresses | Consumed by | Notes |
 | --- | --- | --- |
-| 3 | Oracle Database@AWS | These IP addresses are reserved regardless of how many VM clusters you provision in the ODB network. Oracle Database@AWS consumes the following:[See the AWS documentation website for more details](http://docs.aws.amazon.com/odb/latest/UserGuide/getting-started.html) |
+| 3 | Oracle Database@AWS | These IP addresses are reserved regardless of how many VM clusters you provision in the ODB network. Oracle Database@AWS consumes the following:+  2 IP addresses at the beginning of the CIDR range <br />+  1 IP address at the end of the CIDR range  |
 | 3 | Each VM | These IP addresses depend solely on the number of VMs in the infrastructure. |
 
 ### IP consumption scenarios for the ODB network

@@ -43,7 +43,7 @@ AWS Organizations is a global service that is physically hosted in the US East (
 | OU maximum nesting in a root | Five levels of OUs deep under a root. |
 | Maximum number of invitation attempts you can perform in a 24-hour period | Either 20 or the maximum number of accounts allowed in your organization, whichever is greater. Accepted invitations don't count against this quota. As soon as one invitation is accepted, you can send another invitation that same day.<br />If the maximum number of accounts allowed in your organization is less than 20, then you get an "account limit exceeded" exception if you attempt to invite more accounts than your organization can contain. However, you can cancel invitations and send new ones up to the maximum of 20 attempts in one day. |
 | Number of member accounts you can create concurrently | 5 — As soon as one finishes, you can start another, but only five can be in progress at a time. |
-| <a name="number-of-accounts-you-can-close"></a>Number of accounts you can close within a 30-day period | 20% of member accounts in organizations or 250, whichever is higher, with a maximum of 1,000. This quota is not adjustable.[See the AWS documentation website for more details](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html)<br />After you reach this quota, you can close additional accounts or wait until your quota resets. For more information, see [Close an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management Guide*. |
+| <a name="number-of-accounts-you-can-close"></a>Number of accounts you can close within a 30-day period | 20% of member accounts in organizations or 250, whichever is higher, with a maximum of 1,000. This quota is not adjustable.+  ** < 1,250 accounts** – You can close up to 250 member accounts <br />+  ** 1,250 - 5,000 accounts** – You can close up to 20% of your member accounts <br />+  ** > 5,000 accounts** – You can close up to 1,000 member accounts <br />After you reach this quota, you can close additional accounts or wait until your quota resets. For more information, see [Close an AWS account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management Guide*. |
 | Number of member accounts you can close concurrently | 3 — Only three account closures can be in progress at the same time. As soon as one finishes, you can close another account.  |
 | Number of targets a policy can be attached to | Unlimited |
 | Number of tags that you can attach to a root, OU, or account | 50 |
@@ -119,7 +119,7 @@ AWS Organizations uses the [token bucket algorithm](https://en.wikipedia.org/wik
 
 *Rate* is the fixed pace that tokens are added to the token bucket per second.
 
-*Burst* is the maximum number of token that can be added and the maximum number of token that can be used per second.
+*Burst* is the maximum number of tokens that can be added and the maximum number of tokens that can be used per second.
 
 For example, the `DescribeAccount` API is limited for a single AWS account to 20 requests per second as the baseline rate and to 30 requests per second as the burst rate. The burst rate of 30 requests per second allows you to temporarily exceed the baseline rate of 20 requests per second.
 

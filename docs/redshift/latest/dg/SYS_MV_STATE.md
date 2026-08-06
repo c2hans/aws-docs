@@ -19,14 +19,14 @@ SYS\_MV\_STATE is visible to all users. Superusers can see all rows; regular use
 | user\_id | bigint | The ID of the user who created the event. |
 | transaction\_id | bigint | The transaction ID of the event. |
 | database\_name | char(128) | The database that contains the materialized view. |
-| event\_desc | char(500) | The event that prompted the state change. Example values include the following: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_MV_STATE.html)Note that there are other possible values for this column. |
+| event\_desc | char(500) | The event that prompted the state change. Example values include the following: +  Column type was changed <br />+  Column was dropped <br />+  Column was renamed <br />+  Schema name was changed <br />+  Small-table conversion <br />+  TRUNCATE <br />+  Vacuum Note that there are other possible values for this column. |
 | start\_time | timestamp | The start time of the event. |
 | base\_table\_database\_name | char(128) | The database name for the base table. |
 | base\_table\_schema | char(128) | The schema of the base table. |
 | base\_table\_name | char(128) | The name of the base table. |
 | mv\_schema | char(128) | The schema of the materialized view. |
 | mv\_name | char(128) | The name of the materialized view. |
-| state | character(32) | The changed state of the materialized view, which are as follows: [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/SYS_MV_STATE.html) |
+| state | character(32) | The changed state of the materialized view, which are as follows: +  Recompute <br />+  Unrefreshable  |
 
 ## Sample queries
 <a name="SYS_MV_STATE-sample-queries"></a>

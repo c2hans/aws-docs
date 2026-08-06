@@ -26,7 +26,7 @@ Some or all of the data in this table can also be found in the SYS monitoring vi
 | col | integer | The index of the column in the table that was analyzed to determine the compression encoding. |
 | old\_encoding | character(15) | The encoding type before compression analysis. |
 | new\_encoding | character(15) | The encoding type after compression analysis. |
-| mode | character(14) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/redshift/latest/dg/r_STL_ANALYZE_COMPRESSION.html)  |
+| mode | character(14) | **PRESET**<br /> Specifies that the `new_encoding` is determined by the Amazon Redshift COPY command based on the column data type. No data is sampled.  <br />**ON**<br /> Specifies that the `new_encoding` is determined by the Amazon Redshift COPY command based on an analysis of sample data. <br />**ANALYZE ONLY**<br /> Specifies that the `new_encoding` is determined by the Amazon Redshift ANALYZE COMPRESSION command based on an analysis of sample data. However, the encoding type of the analyzed column is not changed.   |
 | best\_compression\_encoding | character(15) | The encoding type that gives the best compression ratio. |
 | recommended\_bytes | character(15) | The bytes used by adopting the new encoding. |
 | best\_compression\_bytes | character(15) | The bytes used by adopting the best compression encoding. |

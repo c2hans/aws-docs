@@ -20,5 +20,5 @@ The following table lists components provided by AWS that include new and update
 
 | **Component** | **Details** |
 | --- | --- |
-| [Greengrass nucleus](greengrass-nucleus-component.md) | Version 2.16.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.[See the AWS documentation website for more details](http://docs.aws.amazon.com/greengrass/v2/developerguide/greengrass-release-2025-12-23-2.16.1.html) |
+| [Greengrass nucleus](greengrass-nucleus-component.md) | Version 2.16.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Adds configuration for credential retry intervals after Token Exchange Service failures.    |
 | [Greengrass CLI](greengrass-cli-component.md) | <a name="changelog-cli-2.16.1"></a>Version 2.16.1 of the [Greengrass CLI](greengrass-cli-component.md) is available.<br />Version updated for the Greengrass Nucleus v2.16.1 release. |

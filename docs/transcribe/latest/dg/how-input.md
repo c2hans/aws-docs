@@ -27,8 +27,8 @@ Supported media types differ between batch transcriptions and streaming transcri
 
 |  | Batch | Streaming |
 | --- | --- | --- |
-| Supported formats |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/transcribe/latest/dg/how-input.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/transcribe/latest/dg/how-input.html)  |
-| Recommended formats |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/transcribe/latest/dg/how-input.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/transcribe/latest/dg/how-input.html)  |
+| Supported formats |  + AMR<br />+ FLAC<br />+ M4A<br />+ MP3<br />+ MP4<br />+ Ogg<br />+ WebM<br />+ WAV  |  + FLAC<br />+ Ogg Opus<br />+ PCM encoding  |
+| Recommended formats |  + FLAC<br />+ WAV with PCM 16-bit encoding  |  + FLAC<br />+ PCM signed 16-bit little-endian audio (note that this does **not** include WAV)  |
 
 For best results, use a lossless format, such as FLAC or WAV with PCM 16-bit encoding.
 

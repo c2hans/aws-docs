@@ -1,0 +1,29 @@
+---
+source_url: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_HealthCheckPathDestinationRequestObject.html
+---
+
+# HealthCheckPathDestinationRequestObject
+<a name="API_HealthCheckPathDestinationRequestObject"></a>
+
+Describes a destination for a health check path in a request. Destinations can be in a different Availability Zone than the source (cross-AZ) or in a Local Zone (AZ to Local Zone), enabling remote health validation of your application.
+
+## Contents
+<a name="API_HealthCheckPathDestinationRequestObject_Contents"></a>
+
+ ** SecurityGroupId **
+The ID of the security group for the destination.
+Type: String
+Required: No
+
+ ** SubnetId **
+The ID of the subnet for the destination.
+Type: String
+Required: No
+
+## See Also
+<a name="API_HealthCheckPathDestinationRequestObject_SeeAlso"></a>
+
+For more information about using this API in one of the language-specific AWS SDKs, see the following:
++  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/ec2-2016-11-15/HealthCheckPathDestinationRequestObject)
++  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/ec2-2016-11-15/HealthCheckPathDestinationRequestObject)
++  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/ec2-2016-11-15/HealthCheckPathDestinationRequestObject)

@@ -13,6 +13,7 @@ Modifies the properties of the specified Amazon WorkSpaces clients.
 ```
 {
    "ClientProperties": {
+      "ClientExperiencePolicy": "{{string}}",
       "LogUploadEnabled": "{{string}}",
       "ReconnectEnabled": "{{string}}"
    },

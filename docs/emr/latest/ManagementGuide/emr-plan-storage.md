@@ -55,10 +55,10 @@ With Amazon EMR releases 6.15 and higher, Amazon EMR automatically attaches an A
 
 |  | 6.15 and higher | 6.14 and lower |
 | --- | --- | --- |
-| Default root volume type |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage.html) | [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage.html) |
-| Default size |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage.html)  |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage.html)  |
-| Default IOPS |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage.html)  |   |
-| Default throughput |  [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-storage.html)  |   |
+| Default root volume type |  +  gp3  | +  gp2  |
+| Default size |  +  15 GiB <br />+  (configurable)   |  +  6.10 and higher = 15 GiB <br />+  6.9 and lower = 10 GiB <br />+  (configurable)   |
+| Default IOPS |  +  3000 <br />+  (configurable)   |   |
+| Default throughput |  +  125 MiB/s <br />+  (configurable)   |   |
 
 For information on how to customize the Amazon EBS root device volume, see [Specifying additional EBS storage volumes](#emr-plan-storage-additional-ebs-volumes).
 

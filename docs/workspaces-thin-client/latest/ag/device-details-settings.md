@@ -36,7 +36,7 @@ WorkSpaces Thin Client device details provide a list of any connected peripheral
 
 | Element | Description |
 | --- | --- |
-| Bluetooth | The Bluetooth status of the device. The two status states are:[See the AWS documentation website for more details](http://docs.aws.amazon.com/workspaces-thin-client/latest/ag/device-details-settings.html) |
+| Bluetooth | The Bluetooth status of the device. The two status states are:+ Enabled<br />+ Disabled |
 | Connected peripheral devices | The list of names of the connected peripherals, such as Logitech mouse, and the type of the connected peripherals, such as Mouse (USB). |
 
 ## Power and sleep
